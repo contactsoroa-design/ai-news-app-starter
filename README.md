@@ -39,9 +39,9 @@ cp .env.example .env
 `.env` の各項目:
 - `SUMMARY_API_KEY`: 要約生成に使うLLMのAPIキー（スクリプト専用。**アプリ側には一切入らない**）
 - `SUMMARY_MODEL`: 要約モデル名（既定: `gemini-3.1-flash-lite`。比較例: `gemini-3.8-flash` / `gemini-3.6-flash`）
-- `MAX_ARTICLES_PER_DAY`: 1日の最大要約件数（無料枠 Lite 当面の既定: `80`）
-- `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `10`。毎時実行で分割しレート制限を回避）
-- `INGEST_ARTICLE_DELAY_MS`: 記事ごとのLLM間隔ミリ秒（デフォルト: `5000`）
+- `MAX_ARTICLES_PER_DAY`: 1日の最大要約件数（無料枠 Lite 既定: `120`）
+- `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `15`。毎時実行で分割しレート制限を回避）
+- `INGEST_ARTICLE_DELAY_MS`: 記事ごとのLLM間隔ミリ秒（デフォルト: `4000`）
 - `MAX_MONTHLY_COST_JPY`: 月間の費用上限（デフォルト: `3000`。無料枠中は実質 $0）
 - `EXPO_PUBLIC_FEED_URL`: （任意）本番等でリモートの静的JSON URLから記事を取得する場合に指定。未指定でも **開発中（`expo start`）は `public/articles.json` を都度取得**する。
 - 表示は **日本語 / 英語のネイティブ要約**（`translations`）。ko/es や端末側機械翻訳は使わない。
@@ -75,21 +75,23 @@ npm run quality:check  # 英語95語未満など不合格を検出
 
 ### B. 毎時自動更新（無料枠 Lite）
 
-**手元 Mac（すぐ有効・推奨の当面手段）**
+**GitHub Actions（本線・PCオフでも動く）**
+1. Secret `SUMMARY_API_KEY` と Variables（`SUMMARY_MODEL=gemini-3.1-flash-lite` 等）を設定
+2. 毎時 cron（UTC `:15`）が `data/articles.json` / `public/articles.json` を更新して push
+3. 手動実行: Actions タブ → `Ingest AI news (JA+EN)` → Run workflow
+
+**手元 Mac（毎時 `:00` に Actions をキック）**  
+Desktop 配下は macOS TCC で LaunchAgent から `npm` 実行できないため、ローカル収集ではなく `gh workflow run` で Actions を起動します。  
+`gh auth login` のキーチェーン認証は LaunchAgent だと切れやすいので、**一度だけ PAT をファイルに置く方式**です（毎回の再ログイン不要）。
 ```bash
-./scripts/install-local-hourly-ingest.sh   # 毎時 :00 に npm run ingest
-# ログ: tmp/ingest-logs/
+./scripts/install-local-hourly-ingest.sh
+# PAT（repo + workflow / No expiration 推奨）を一度だけ:
+#   pbpaste > ~/Library/Application\ Support/ai-news-ingest/github_token && chmod 600 $_
+# ログ: ~/Library/Logs/ai-news-ingest/
 ```
+※ GitHub Actions の cron（UTC `:15`）だけ使う場合は Mac 側の認証は不要です。
 
-**GitHub Actions（workflow スコープ付与後）**
-1. Secret `SUMMARY_API_KEY` と Variables（`SUMMARY_MODEL=gemini-3.1-flash-lite` 等）を設定済みなら
-2. 一度だけ OAuth に `workflow` スコープを付与して workflow を push:
-   ```bash
-   ./scripts/push-github-actions.sh
-   ```
-3. 以降は毎時 cron が `data/articles.json` と `public/articles.json` を更新して push する
-
-ワークフロー（ローカルにあり、上記スクリプトで push）: `.github/workflows/ingest.yml`
+ワークフロー: `.github/workflows/ingest.yml`
 
 ### C. アプリに新着を届ける
 1. **開発中**: 上記 A/B のあと、アプリ起動またはフォアグラウンド復帰で `public/articles.json` を再取得（手動再読み込みも可）。

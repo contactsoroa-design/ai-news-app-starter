@@ -35,9 +35,11 @@ type LlmProvider = 'gemini' | 'openai' | 'anthropic' | 'openrouter';
 const ESTIMATED_COST_PER_ARTICLE_JPY = 0.15;
 
 /** 本番向け: 記事ごとのLLM間隔（ミリ秒）。連続呼び出しで 429 を避ける */
-const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '5000');
-/** 1回の ingest 実行あたりの新規追加上限（毎時 cron で残りを拾う） */
-const DEFAULT_ARTICLES_PER_RUN = 20;
+const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
+/** 無料枠 Lite: 毎時実行で分割しつつ取りこぼしを減らす既定 */
+const DEFAULT_ARTICLES_PER_RUN = 15;
+/** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
+const RSS_ITEMS_PER_SOURCE = 6;
 
 class LlmHttpError extends Error {
   readonly status: number;
@@ -714,7 +716,11 @@ async function main() {
         clearTimeout(timer);
         if (!res.ok) return;
         const xml = await res.text();
-        const feedItems = parseRssItems(xml, source.site_url).slice(0, 3);
+        // 最新寄りの候補を多めに拾い、1実行上限・1日上限で実際の要約件数は抑える
+        const feedItems = parseRssItems(xml, source.site_url).slice(
+          0,
+          RSS_ITEMS_PER_SOURCE
+        );
         if (feedItems.length > 0) {
           sourceQueues.push({ source, items: feedItems });
         }
@@ -724,9 +730,9 @@ async function main() {
     })
   );
 
-  // ラウンドロビンで各ソースの1件目 → 2件目 → 3件目の順に並べる（後半のソースの取りこぼしをゼロにする）
+  // ラウンドロビンで各ソースの1件目 → 2件目…の順に並べる（後半ソースの取りこぼしを防ぐ）
   const roundRobinCandidates: Array<{ source: Source; item: RawFeedItem }> = [];
-  for (let depth = 0; depth < 3; depth++) {
+  for (let depth = 0; depth < RSS_ITEMS_PER_SOURCE; depth++) {
     for (const q of sourceQueues) {
       if (q.items[depth]) {
         roundRobinCandidates.push({ source: q.source, item: q.items[depth] });
