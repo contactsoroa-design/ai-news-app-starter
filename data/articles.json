@@ -1,5 +1,420 @@
 [
   {
+    "id": "art-1792933468360-qxo3o",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/vercel-connect-adds-managed-stripe-api-keys",
+    "published_at": "2026-10-23T17:00:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/2LbnsC2Wg0YUHbvUO0lqcl/47adfabad64ec91f06365dda9914b5f2/image__50_.png",
+    "title_ja": "Vercel Connectが「管理型Stripe APIキー」に対応、エージェントごとに権限を最小化しセキュリティリスクを低減",
+    "summary_ja": "Vercel Connectが新たに「Managed API Key」オプションを導入し、StripeのAPIキーをエージェントやタスクごとに分離・発行可能になった。 従来のアカウント全体のシークレットキーを使用する方式と異なり、レポート用なら読み取り専用、顧客管理用なら書き込み専用といった「最小権限の原則」を適用できる。 AIエージェントの自律化が進む中で、こうしたキーのライフサイクル管理とスコープ制限は、漏洩時の影響範囲を抑えるための必須のベストプラクティスとなる。",
+    "translations": {
+      "ja": {
+        "title": "Vercel Connectが「管理型Stripe APIキー」に対応、エージェントごとに権限を最小化しセキュリティリスクを低減",
+        "summary": "Vercel Connectが新たに「Managed API Key」オプションを導入し、StripeのAPIキーをエージェントやタスクごとに分離・発行可能になった。 従来のアカウント全体のシークレットキーを使用する方式と異なり、レポート用なら読み取り専用、顧客管理用なら書き込み専用といった「最小権限の原則」を適用できる。 AIエージェントの自律化が進む中で、こうしたキーのライフサイクル管理とスコープ制限は、漏洩時の影響範囲を抑えるための必須のベストプラクティスとなる。"
+      },
+      "en": {
+        "title": "Vercel Connect debuts managed Stripe API keys, enabling per-agent permission scoping to minimize security exposure",
+        "summary": "Vercel Connect has introduced a managed API key feature that generates distinct, restricted Stripe credentials for individual agents or specific tasks. Unlike the common practice of using a single global secret key with full account access, developers can now enforce the principle of least privilege by scoping keys to specific actions, such as read-only access for reporting agents or write-only permissions for onboarding bots. This approach significantly reduces the potential impact of credential leakage, which is critical as AI agents become more autonomous. For builders integrating payment workflows, shifting away from monolithic API keys toward fine-grained, task-specific authorization is an essential security hardening step that prevents a single compromised agent from exposing your entire payment infrastructure."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-25T13:04:28.360Z"
+  },
+  {
+    "id": "art-1792933462310-ma87y",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/ushio/articles/osewa-care-vision-camera",
+    "published_at": "2026-10-25T08:48:49.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--8LMDBhiY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25A6%258B%25E5%25AE%2588%25E3%2582%258A%25E3%2582%25AB%25E3%2583%25A1%25E3%2583%25A9%25E3%2581%25AE%25E6%2598%25A0%25E5%2583%258F%25E3%2581%258B%25E3%2582%2589%25E3%2580%2581%25E3%2583%259F%25E3%2583%25AB%25E3%2582%25AF%25E3%2581%25AE%25E8%25A8%2598%25E9%258C%25B2%25E3%2582%2592%25E4%25B8%258B%25E6%259B%25B8%25E3%2581%258D%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2582%25E3%2582%2589%25E3%2581%2586%25E8%25A9%25A6%25E4%25BD%259C%25E3%2582%25923%25E6%2597%25A5%25E5%259B%259E%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ushio%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2hhWE5KSmlGbEFLbDJoeXFtcmljRy1QdVdIUEdPbmFqVFVFd0JERXc9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "見守りカメラの映像とAIでミルク授乳記録を自動化、3日間の検証でわかったコスト約0.09ドルと誤検出の課題",
+    "summary_ja": "自宅の見守りカメラ映像から授乳タイミングをAIで判定し、育児記録アプリ「Osewa」に自動で下書きを作成する仕組みを3日間検証した。 12時間の運用コストは約0.089ドルで済んだものの、誤検出も発生しており実用化には精度改善が鍵となる。 育児中の「手が塞がっていて記録できない」というペインを解消する手段として、特定行動のAI判定とアプリ連携による自動化は有効なアプローチといえる。",
+    "translations": {
+      "ja": {
+        "title": "見守りカメラの映像とAIでミルク授乳記録を自動化、3日間の検証でわかったコスト約0.09ドルと誤検出の課題",
+        "summary": "自宅の見守りカメラ映像から授乳タイミングをAIで判定し、育児記録アプリ「Osewa」に自動で下書きを作成する仕組みを3日間検証した。 12時間の運用コストは約0.089ドルで済んだものの、誤検出も発生しており実用化には精度改善が鍵となる。 育児中の「手が塞がっていて記録できない」というペインを解消する手段として、特定行動のAI判定とアプリ連携による自動化は有効なアプローチといえる。"
+      },
+      "en": {
+        "title": "Automating baby feeding logs with home camera footage and AI: A 3-day test shows $0.09 operational costs",
+        "summary": "The developer prototyped a system that analyzes home security camera footage to detect breastfeeding events and automatically creates draft entries in the \"Osewa\" parenting app. Running the analysis for 12 hours cost roughly $0.089, confirming the financial viability of offloading manual logging via AI. However, the initial three-day trial revealed accuracy hurdles, including at least one false positive that reached the draft stage. For builders targeting daily pain points, this experiment demonstrates that linking specific behavioral detection to existing app workflows can effectively solve the \"hands-full\" problem, provided that false detection rates are tuned to avoid manual cleanup. The key takeaway for similar automation projects is balancing low API overhead against the reliability of event classification in home environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-10-25T13:04:22.310Z"
+  },
+  {
+    "id": "art-1792933455623-dhfpa",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+    "published_at": "2026-10-22T18:09:56.000Z",
+    "og_image_url": null,
+    "title_ja": "Anthropicが「Agent Skills」仕様をLinux Foundation傘下のAAIFへ寄贈、MCPに続きAIエージェントの相互運用性を推進",
+    "summary_ja": "Anthropicは、同社が推進するAIエージェント向けのスキル定義規格「Agent Skills」を、Linux Foundation傘下のAgentic AI Foundation（AAIF）へ寄贈した。 これは昨年立ち上げたモデルコンテキストプロトコル（MCP）に続く動きであり、特定のAIベンダーに依存しないオープンな標準化を加速させる狙いがある。 開発者にとっては、将来的に異なるエージェント間でスキルや機能を相互運用可能にするための重要な布石となる。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicが「Agent Skills」仕様をLinux Foundation傘下のAAIFへ寄贈、MCPに続きAIエージェントの相互運用性を推進",
+        "summary": "Anthropicは、同社が推進するAIエージェント向けのスキル定義規格「Agent Skills」を、Linux Foundation傘下のAgentic AI Foundation（AAIF）へ寄贈した。 これは昨年立ち上げたモデルコンテキストプロトコル（MCP）に続く動きであり、特定のAIベンダーに依存しないオープンな標準化を加速させる狙いがある。 開発者にとっては、将来的に異なるエージェント間でスキルや機能を相互運用可能にするための重要な布石となる。"
+      },
+      "en": {
+        "title": "Anthropic donates Agent Skills standard to Linux Foundation’s AAIF to push vendor-neutral interoperability for AI agents",
+        "summary": "Anthropic has officially donated its 'Agent Skills' standard to the Agentic AI Foundation (AAIF), an organization operating under the Linux Foundation. This move follows the donation of the Model Context Protocol (MCP) last year, signaling a major push to ensure that AI agent development remains community-driven and vendor-neutral rather than siloed within individual model providers. By centralizing these specifications under the AAIF, the industry is creating a universal layer that allows agents to share capabilities across different platforms. For developers, this represents a significant step toward a standardized ecosystem where agentic workflows are portable, enabling smarter, more interconnected tools that don't lock you into a single closed-source architecture as the agentic web continues to evolve rapidly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-25T13:04:15.623Z"
+  },
+  {
+    "id": "art-1792933436474-ao8xy",
+    "source_id": "source-posthog",
+    "source_name": "PostHog Blog (Product for Engineers)",
+    "url": "https://posthog.com/blog/build-or-buy-feature-flags",
+    "published_at": "2026-09-16T00:00:00.000Z",
+    "og_image_url": "https://d36j3rcgc2qfsv.cloudfront.net/blogbuild-or-buy-feature-flags.jpeg",
+    "title_ja": "フィーチャーフラグを自社開発するか購入すべきか：エンジニアが直面する運用コストとスケーリングの罠",
+    "summary_ja": "AIエージェントの普及に伴い、フィーチャーフラグ等のツールを自作すべきか、既存サービスを購入すべきか議論が再燃している。 単純なトグル実装は容易だが、権限管理やリアルタイムの変更伝播、数十億規模の評価数に対応する高可用なインフラを維持するのは難易度が高い。 自社開発のメンテナンスコストは単なる工数計算を超え、複雑な依存関係やエッジケースへの対応がボトルネックとなり得る。 将来的な機能要件の増大と運用リソースを考慮し、開発のコア領域に注力すべきかを慎重に判断する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "フィーチャーフラグを自社開発するか購入すべきか：エンジニアが直面する運用コストとスケーリングの罠",
+        "summary": "AIエージェントの普及に伴い、フィーチャーフラグ等のツールを自作すべきか、既存サービスを購入すべきか議論が再燃している。 単純なトグル実装は容易だが、権限管理やリアルタイムの変更伝播、数十億規模の評価数に対応する高可用なインフラを維持するのは難易度が高い。 自社開発のメンテナンスコストは単なる工数計算を超え、複雑な依存関係やエッジケースへの対応がボトルネックとなり得る。 将来的な機能要件の増大と運用リソースを考慮し、開発のコア領域に注力すべきかを慎重に判断する必要がある。"
+      },
+      "en": {
+        "title": "To build or buy feature flags: Engineering teams face hidden operational costs and scaling traps",
+        "summary": "As AI agents expand team capabilities, developers are rethinking whether to build internal tooling for feature flags or purchase established solutions. While a simple toggle implementation seems trivial, engineering a production-ready system requires complex permission management, real-time propagation, and highly available infrastructure that can handle billions of evaluations without latency. The maintenance cost of a homegrown solution often outweighs initial estimates, as teams eventually struggle with complex edge cases, technical debt, and the burden of supporting internal developers. Builders should objectively assess the true cost of infrastructure ownership against their product roadmap; unless flags are a core business differentiator, dedicating engineering resources to maintain this non-core functionality often diverts attention from the high-value features your users are actually paying for."
+      }
+    },
+    "tool_tags": [
+      "PostHog"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-25T13:03:56.474Z"
+  },
+  {
+    "id": "art-1792933403628-j5ps8",
+    "source_id": "source-n8n",
+    "source_name": "n8n Blog (AI Automation)",
+    "url": "https://blog.n8n.io/self-hosted-llm/",
+    "published_at": "2026-10-22T15:01:32.000Z",
+    "og_image_url": "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/size/w1200/2026/10/TL--22--1.jpeg",
+    "title_ja": "n8nが解説、自前ホスト型LLMとクラウドAPIの賢い使い分け──コスト対効果を最大化するルーティング戦略とハードウェア選定",
+    "summary_ja": "n8nは自前ホストのLLMが必ずしもクラウドAPIより安価とは限らないと警鐘を鳴らし、両者を併用するルーティング手法を公開した。 推論タスクの複雑さや処理量に応じ、単純な処理は安価なローカルモデルへ、複雑な推論は高性能なAPIへ動的に振り分ける設計が肝要となる。 オンプレミス環境の構築コストとAPI利用料の損益分岐点を見極め、システム要件に応じて使い分けることが、スケーラブルなAI自動化パイプラインを構築する上での最適解だ。",
+    "translations": {
+      "ja": {
+        "title": "n8nが解説、自前ホスト型LLMとクラウドAPIの賢い使い分け──コスト対効果を最大化するルーティング戦略とハードウェア選定",
+        "summary": "n8nは自前ホストのLLMが必ずしもクラウドAPIより安価とは限らないと警鐘を鳴らし、両者を併用するルーティング手法を公開した。 推論タスクの複雑さや処理量に応じ、単純な処理は安価なローカルモデルへ、複雑な推論は高性能なAPIへ動的に振り分ける設計が肝要となる。 オンプレミス環境の構築コストとAPI利用料の損益分岐点を見極め、システム要件に応じて使い分けることが、スケーラブルなAI自動化パイプラインを構築する上での最適解だ。"
+      },
+      "en": {
+        "title": "n8n breaks down the economic trade-offs between self-hosted LLMs and cloud APIs, plus how to route traffic between them",
+        "summary": "n8n clarifies that self-hosting an LLM isn't automatically cheaper than using cloud APIs, emphasizing the need for a hybrid routing architecture. By intelligently directing simple tasks to low-cost local models and routing complex reasoning problems to high-tier cloud APIs, teams can maximize both efficiency and performance. The guide details how to calculate the true cost of on-prem infrastructure against variable API expenses, pinpointing the exact inflection point where each approach becomes profitable. For builders designing scalable automation pipelines, the core takeaway is that a rigid commitment to one infrastructure model is a bottleneck; implementing dynamic routing based on task complexity allows for granular cost control while maintaining the model quality required for your specific use cases."
+      }
+    },
+    "tool_tags": [
+      "n8n"
+    ],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-25T13:03:23.628Z"
+  },
+  {
+    "id": "art-1792933394994-oj39c",
+    "source_id": "source-supabase",
+    "source_name": "Supabase Blog",
+    "url": "https://supabase.com/blog/how-a-new-branch-gets-its-config-migrations-and-functions",
+    "published_at": "2026-10-15T07:00:00.000Z",
+    "og_image_url": "https://supabase.com/images/blog/how-a-new-branch-gets-its-config-migrations-and-functions/og-v2.png",
+    "title_ja": "Supabaseがブランチ機能の刷新を発表、設定コピーやマイグレーション処理を高速化し、開発環境の構築時間が大幅短縮へ",
+    "summary_ja": "Supabaseがブランチ作成時の動作を最適化し、設定値のコピーやマイグレーション、エッジ関数の展開プロセスを高速化した。 ブランチ作成時、どの設定が引き継がれ、どの順序で処理が実行されるかを明確に定義したことで、開発者はGitHub上のPR作成から環境構築までの待ち時間を削減できる。 今回の刷新により、データベースのスキーマ変更を含む実験的な機能開発やテストが、より低コストかつ高速に実行可能となり、開発サイクル全体の効率向上が見込める。",
+    "translations": {
+      "ja": {
+        "title": "Supabaseがブランチ機能の刷新を発表、設定コピーやマイグレーション処理を高速化し、開発環境の構築時間が大幅短縮へ",
+        "summary": "Supabaseがブランチ作成時の動作を最適化し、設定値のコピーやマイグレーション、エッジ関数の展開プロセスを高速化した。 ブランチ作成時、どの設定が引き継がれ、どの順序で処理が実行されるかを明確に定義したことで、開発者はGitHub上のPR作成から環境構築までの待ち時間を削減できる。 今回の刷新により、データベースのスキーマ変更を含む実験的な機能開発やテストが、より低コストかつ高速に実行可能となり、開発サイクル全体の効率向上が見込める。"
+      },
+      "en": {
+        "title": "Supabase overhauls branch creation process to significantly speed up config copying, migrations, and edge function deployments",
+        "summary": "Supabase has optimized its branch creation workflow, drastically reducing the time required to spin up new environments by accelerating configuration copying, migrations, and edge function deployments. By clearly defining which settings are inherited and strictly ordering execution steps, the platform eliminates unnecessary overhead when testing database schema changes or new features in isolation. This update ensures that developers spend less time waiting for infrastructure to provision and more time iterating on code. For builders managing complex backends, this means your preview environments are now ready faster, allowing for tighter feedback loops on PRs. The shift represents a crucial step in maturing Supabase's Git-based workflow, making it practical to treat every feature branch as a fully functional production replica."
+      }
+    },
+    "tool_tags": [
+      "Supabase"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-25T13:03:14.994Z"
+  },
+  {
+    "id": "art-1792933381105-glj2t",
+    "source_id": "source-cloudflare-ai",
+    "source_name": "Cloudflare Workers AI / Blog",
+    "url": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
+    "published_at": "2026-10-15T13:00:00.000Z",
+    "og_image_url": "https://blog.cloudflare.com/_emdash/api/media/file/01M4ZW7X8KGSZJHDCDSMPABH8P.01M4ZW7YDPC4VWS7X23DWFNBKR.png",
+    "title_ja": "CloudflareとOpenAIが提携、AIクローラーによるWebトラフィックの最適化へ。サイト管理者向けの新制御ツールとAPI連携を強化",
+    "summary_ja": "CloudflareとOpenAIが戦略的提携を発表。 Cloudflareのインフラを活用し、AIクローラーのアクセス制御やWebコンテンツの発見プロセスを最適化することで、サイト運営者が意図しない過剰なクローリング負荷を軽減する仕組みを導入する。 開発者やサイト管理者は、AIモデルの学習や推論に必要な情報へ効率的にアクセスさせるための新たな制御権と可視性を得ることになる。",
+    "translations": {
+      "ja": {
+        "title": "CloudflareとOpenAIが提携、AIクローラーによるWebトラフィックの最適化へ。サイト管理者向けの新制御ツールとAPI連携を強化",
+        "summary": "CloudflareとOpenAIが戦略的提携を発表。 Cloudflareのインフラを活用し、AIクローラーのアクセス制御やWebコンテンツの発見プロセスを最適化することで、サイト運営者が意図しない過剰なクローリング負荷を軽減する仕組みを導入する。 開発者やサイト管理者は、AIモデルの学習や推論に必要な情報へ効率的にアクセスさせるための新たな制御権と可視性を得ることになる。"
+      },
+      "en": {
+        "title": "Cloudflare and OpenAI partner to optimize AI crawling and site discovery with new granular traffic controls",
+        "summary": "Cloudflare and OpenAI have entered a strategic partnership to modernize how AI crawlers interact with web infrastructure, aiming to balance site discoverability with performance stability. By integrating Cloudflare’s network intelligence, the collaboration provides site administrators with deeper control over how AI models crawl their content, effectively preventing unnecessary traffic spikes while ensuring AI tools can access relevant data. For builders and web owners, this marks a shift from reactive blocking toward a collaborative model where site traffic can be managed via API, preserving server resources without sacrificing AI-driven visibility. The practical takeaway is that standardizing crawler interactions at the infrastructure layer is becoming essential for maintaining site performance as AI-driven search and training workloads scale globally."
+      }
+    },
+    "tool_tags": [
+      "Cloudflare"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-25T13:03:01.105Z"
+  },
+  {
+    "id": "art-1792933367012-d7ehl",
+    "source_id": "source-stripe",
+    "source_name": "Stripe Blog / Sessions",
+    "url": "https://stripe.com/blog/economics-of-ai-monetization",
+    "published_at": "2026-10-13T00:00:00.000Z",
+    "og_image_url": "https://images.stripeassets.com/fzn2n1nzq965/2OYQdh2j4co80OKuF4nPte/bc3d837fce55b72dfba8344dea9d805b/Social_Image_-_Kyle_-_826kb.png?q=80",
+    "title_ja": "Stripeが分析するAI時代の課金経済「Alien Economics」：サブスクと従量課金のハイブリッド戦略とAIエージェントへの対応策",
+    "summary_ja": "StripeはAIサービスの収益化において、従来のSaaSモデルからサブスクリプションと従量課金を組み合わせた「ハイブリッド課金」への転換が不可欠であると指摘する。 AIエージェントが顧客となる時代を見据え、プロダクトへの支出管理機能の統合や、AIが理解可能な価格体系の設計が求められる。 単なる定額制ではなく、価値指標に基づく柔軟なパッケージングこそが、AIスタートアップが急成長を遂げるための経済的基盤となる。",
+    "translations": {
+      "ja": {
+        "title": "Stripeが分析するAI時代の課金経済「Alien Economics」：サブスクと従量課金のハイブリッド戦略とAIエージェントへの対応策",
+        "summary": "StripeはAIサービスの収益化において、従来のSaaSモデルからサブスクリプションと従量課金を組み合わせた「ハイブリッド課金」への転換が不可欠であると指摘する。 AIエージェントが顧客となる時代を見据え、プロダクトへの支出管理機能の統合や、AIが理解可能な価格体系の設計が求められる。 単なる定額制ではなく、価値指標に基づく柔軟なパッケージングこそが、AIスタートアップが急成長を遂げるための経済的基盤となる。"
+      },
+      "en": {
+        "title": "Stripe reveals 'alien' economics of AI: Moving beyond SaaS to hybrid billing and AI-native pricing models",
+        "summary": "Stripe analysis suggests that the era of AI monetization demands a departure from traditional SaaS pricing, pushing developers toward hybrid models that combine fixed subscriptions with dynamic, usage-based billing. Because AI agents are rapidly becoming the primary customers, builders must now integrate real-time spend controls directly into their products and design pricing structures that are transparent not just to humans, but to algorithmic buyers. Relying on outdated flat-rate packaging is no longer sufficient; success in this new economic landscape requires flexible, value-based metrics that align costs with the specific outcomes agents deliver. For founders, the core takeaway is that the 'alien' economics of AI require rethinking how your product architecture handles billing, making cost predictability a fundamental feature rather than an administrative afterthought."
+      }
+    },
+    "tool_tags": [
+      "Stripe"
+    ],
+    "genre_tags": [
+      "課金・ペイウォール",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-10-25T13:02:47.012Z"
+  },
+  {
+    "id": "art-1792933358959-69geq",
+    "source_id": "source-github-copilot",
+    "source_name": "GitHub Copilot Changelog",
+    "url": "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available",
+    "published_at": "2026-10-22T20:44:28.000Z",
+    "og_image_url": "https://github.blog/wp-content/uploads/2026/10/658446301-3cc026e6-3fe9-4cf3-8d6c-36d90d6c665a.jpeg",
+    "title_ja": "GitHub Copilot、法人向けプランで新機能のグローバルデフォルト設定を適用開始—「Business」および「Enterprise」ユーザーが対象",
+    "summary_ja": "GitHubは、Copilot BusinessおよびEnterpriseプラン向けに、一般提供（GA）された新機能を自動的に有効化する「グローバルデフォルトポリシー」の展開を開始した。 これまで個別に有効化が必要だった機能が、デフォルトで適用されることで、組織内でのAI導入スピードが向上する。 管理者は引き続きポリシー制御で特定の機能を無効化できるため、開発スピードとガバナンスのバランスを保ちつつ、チーム全体で最新のAI開発環境を即座に享受できるようになる。",
+    "translations": {
+      "ja": {
+        "title": "GitHub Copilot、法人向けプランで新機能のグローバルデフォルト設定を適用開始—「Business」および「Enterprise」ユーザーが対象",
+        "summary": "GitHubは、Copilot BusinessおよびEnterpriseプラン向けに、一般提供（GA）された新機能を自動的に有効化する「グローバルデフォルトポリシー」の展開を開始した。 これまで個別に有効化が必要だった機能が、デフォルトで適用されることで、組織内でのAI導入スピードが向上する。 管理者は引き続きポリシー制御で特定の機能を無効化できるため、開発スピードとガバナンスのバランスを保ちつつ、チーム全体で最新のAI開発環境を即座に享受できるようになる。"
+      },
+      "en": {
+        "title": "GitHub Copilot rolls out global default policy for new features on Business and Enterprise plans",
+        "summary": "GitHub has officially launched a new global default policy for generally available Copilot features specifically designed for users on Business and Enterprise tiers. Moving forward, these AI capabilities will be automatically enabled by default, eliminating the friction of manual rollout and allowing engineering teams to access the latest productivity tools immediately upon release. While this update streamlines the adoption of new features across large organizations, GitHub retains administrative controls, ensuring that IT teams can still disable specific tools to maintain compliance and security standards. This change signals a shift toward faster feature velocity for enterprise developers, balancing the need for rapid technological advancement with the granular governance required in professional software development environments."
+      }
+    },
+    "tool_tags": [
+      "GitHub Copilot"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-10-25T13:02:38.959Z"
+  },
+  {
+    "id": "art-1792933348039-05hyt",
+    "source_id": "source-deepmind",
+    "source_name": "Google DeepMind / Gemini",
+    "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+    "published_at": "2026-10-13T16:01:58.000Z",
+    "og_image_url": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/argon__robotics__hero.2e16d0ba.fill-1200x600.png",
+    "title_ja": "Google DeepMind、ロボティクス専用モデル「Gemini 4 Argon」発表。身体化AIの意思決定と操作精度が劇的に向上",
+    "summary_ja": "Google DeepMindが発表した「Gemini 4 Argon」は、複雑な物理環境での推論と操作を最適化したロボティクス向けモデルだ。 従来の汎用LLMとは異なり、センサー入力を直接処理するマルチモーダル統合により、未知の環境でのタスク遂行能力を大幅に高めた。 開発者にとっての最大の注目点は、単なる命令理解を超えた「環境認識に基づくリアルタイム補正」が可能になったことであり、今後、自己学習型の自律ロボット開発の要となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Google DeepMind、ロボティクス専用モデル「Gemini 4 Argon」発表。身体化AIの意思決定と操作精度が劇的に向上",
+        "summary": "Google DeepMindが発表した「Gemini 4 Argon」は、複雑な物理環境での推論と操作を最適化したロボティクス向けモデルだ。 従来の汎用LLMとは異なり、センサー入力を直接処理するマルチモーダル統合により、未知の環境でのタスク遂行能力を大幅に高めた。 開発者にとっての最大の注目点は、単なる命令理解を超えた「環境認識に基づくリアルタイム補正」が可能になったことであり、今後、自己学習型の自律ロボット開発の要となるだろう。"
+      },
+      "en": {
+        "title": "Google DeepMind unveils Gemini 4 Argon, a specialized model built to accelerate robotics reasoning and physical manipulation",
+        "summary": "Google DeepMind just announced Gemini 4 Argon, a specialized model tailored to solve reasoning and precise object manipulation within complex physical environments. Unlike general-purpose large language models, Argon is built with native multimodal integration that processes high-frequency sensor streams, dramatically improving task success rates in dynamic, previously unseen settings. The breakthrough allows robots to move beyond simple command following, enabling real-time, perception-based adjustments that were previously impossible with slower feedback loops. For builders working on embodied AI, this model suggests the next frontier isn't just about language reasoning, but about tightening the loop between environment perception and motor execution. Implementing these native multimodal architectures will likely be the standard for developing truly autonomous agents capable of operating effectively in messy, unstructured human environments."
+      }
+    },
+    "tool_tags": [
+      "Gemini"
+    ],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-10-25T13:02:28.039Z"
+  },
+  {
+    "id": "art-1792933326508-y1ms9",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/forward-deployed-engineering-means",
+    "published_at": "2026-10-22T06:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAIの「FDE（Forward Deployed Engineering）」とは何か：エンジニアが現場で顧客のAI実装を直接支援する独自の開発体制を解説",
+    "summary_ja": "OpenAIは、顧客の現場で直接AIの実装や統合を支援する独自のエンジニアリング職種「FDE（Forward Deployed Engineering）」の役割を公開した。 FDEは製品開発と顧客エンジニアリングの橋渡し役となり、複雑なAI統合プロジェクトを単なるAPI提供ではなく、パートナーとして成功へ導く役割を果たす。 開発者にとって、製品を売るだけでなく、クライアントの環境に合わせて最適化し、導入のハードルを根本から取り除くことが、AI時代の真の差別化要因となる。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIの「FDE（Forward Deployed Engineering）」とは何か：エンジニアが現場で顧客のAI実装を直接支援する独自の開発体制を解説",
+        "summary": "OpenAIは、顧客の現場で直接AIの実装や統合を支援する独自のエンジニアリング職種「FDE（Forward Deployed Engineering）」の役割を公開した。 FDEは製品開発と顧客エンジニアリングの橋渡し役となり、複雑なAI統合プロジェクトを単なるAPI提供ではなく、パートナーとして成功へ導く役割を果たす。 開発者にとって、製品を売るだけでなく、クライアントの環境に合わせて最適化し、導入のハードルを根本から取り除くことが、AI時代の真の差別化要因となる。"
+      },
+      "en": {
+        "title": "What is Forward Deployed Engineering at OpenAI? How a specialized engineering role bridges the gap between AI research and production deployment",
+        "summary": "OpenAI has formalized the role of Forward Deployed Engineers (FDEs) to act as technical partners who sit directly within client environments to solve critical integration challenges. Unlike traditional customer support or sales engineering, FDEs build custom tooling, bridge AI research gaps, and refactor client architectures to ensure successful, production-grade deployment of large-scale models. This unique team structure allows OpenAI to learn from real-world constraints while accelerating adoption for mission-critical enterprise customers. For builders, the takeaway is clear: the bottleneck for AI isn't just model capability but the ability to translate those capabilities into functional, robust codebases within specific business constraints. Prioritizing deep integration and collaborative engineering is becoming the ultimate differentiator in the enterprise AI market."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-25T13:02:06.508Z"
+  },
+  {
+    "id": "art-1792933317345-637u8",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2610/23/2000002552/",
+    "published_at": "2026-10-23T08:37:57.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2610/23/2000002552/10010299/2048",
+    "title_ja": "中国発の自律型攻撃AI「ARTEX」に悪用の実態：日本企業20社も標的、作者は公開停止も改変版が闇市場で拡散中",
+    "summary_ja": "中国語話者が「研究目的」で公開したAI自律型侵入テストツール「ARTEX」が、日本を含む各国の企業攻撃に悪用されていることが判明した。 MicrosoftやCrowdStrikeの報告によりその脅威が浮き彫りとなり、作者は公開を停止したものの、ソースコードの改変版が地下市場で拡散し続けている。 AIを活用した攻撃の自動化は、既存のセキュリティ境界を即座に突破するリスクを孕んでおり、防御側はAIによる高速な脆弱性探索を前提とした新たなインシデント対応を迫られている。",
+    "translations": {
+      "ja": {
+        "title": "中国発の自律型攻撃AI「ARTEX」に悪用の実態：日本企業20社も標的、作者は公開停止も改変版が闇市場で拡散中",
+        "summary": "中国語話者が「研究目的」で公開したAI自律型侵入テストツール「ARTEX」が、日本を含む各国の企業攻撃に悪用されていることが判明した。 MicrosoftやCrowdStrikeの報告によりその脅威が浮き彫りとなり、作者は公開を停止したものの、ソースコードの改変版が地下市場で拡散し続けている。 AIを活用した攻撃の自動化は、既存のセキュリティ境界を即座に突破するリスクを孕んでおり、防御側はAIによる高速な脆弱性探索を前提とした新たなインシデント対応を迫られている。"
+      },
+      "en": {
+        "title": "China-linked autonomous cyberattack tool ARTEX fuels surge in malicious exploits targeting Japanese firms and global enterprises",
+        "summary": "Researchers have identified ARTEX, an autonomous AI penetration testing tool originally released by Chinese-speaking developers under the guise of security research, as a major driver for recent automated cyberattacks. Microsoft and CrowdStrike confirmed the tool has already targeted at least 20 Japanese companies, highlighting how easily accessible offensive AI lowers the barrier for complex breaches. Although the original authors have discontinued the project, modified variants of the source code are proliferating across underground channels. This incident underscores a critical shift for engineering teams: as bad actors leverage AI to automate vulnerability scanning and exploitation, traditional defensive perimeters are no longer sufficient. Builders must now prioritize AI-resilient security architectures that assume rapid, autonomous scanning as the new baseline threat vector."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-25T13:01:57.345Z"
+  },
+  {
+    "id": "art-1792933257115-99lpy",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/koenokakaku/articles/dd1e7214839ce9",
+    "published_at": "2026-10-25T08:55:55.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cAtpB9_p--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%25BF%25E3%2582%258F%25E3%2581%259A%25E3%2580%2581SVG%25E3%2581%25A7%25E4%25BE%25A1%25E6%25A0%25BC%25E6%258E%25A8%25E7%25A7%25BB%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%2595%25E3%2582%2592%25E6%258F%258F%25E3%2581%258F%25E3%2580%2590%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25A3%25B0%25E3%2581%25AE%25E4%25BE%25A1%25E6%25A0%25BC%2540%25E9%259F%25B3%25E5%25A3%25B0%25E4%25BD%259C%25E5%2593%2581%25E3%2581%25AE%25E8%25B2%25B7%25E3%2581%2584%25E6%2599%2582%25E3%2581%25AB%25E9%2580%259A%25E7%259F%25A5%25E3%2581%2599%25E3%2582%258B%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSTY1akU0Wk1KOHlCZEhLMFFfaGt6Nm8zTGk1c0p6SFNZMUV0SFk4Ul9nVW11dEpDMD1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ライブラリ不使用でSVGとJSのみで描く価格推移グラフ実装：個人開発サービス「声の価格」における描画負荷とUXの最適化手法",
+    "summary_ja": "音声作品の価格追跡サービス「声の価格」運営者が、外部ライブラリを使わずSVGとJavaScriptのみで価格推移グラフを実装したノウハウを公開。 単にデータを線でつなぐだけでなく、価格取得不能日のハンドリング、マウスホバー時のインタラクション、描画負荷の軽減までを考慮した設計を詳述する。 肥大化しがちなフロントエンドにおいて、軽量化を追求する個人開発者にとって、車輪の再発明を厭わず自前実装することで得られるパフォーマンスと柔軟性の利点を提示している。",
+    "translations": {
+      "ja": {
+        "title": "ライブラリ不使用でSVGとJSのみで描く価格推移グラフ実装：個人開発サービス「声の価格」における描画負荷とUXの最適化手法",
+        "summary": "音声作品の価格追跡サービス「声の価格」運営者が、外部ライブラリを使わずSVGとJavaScriptのみで価格推移グラフを実装したノウハウを公開。 単にデータを線でつなぐだけでなく、価格取得不能日のハンドリング、マウスホバー時のインタラクション、描画負荷の軽減までを考慮した設計を詳述する。 肥大化しがちなフロントエンドにおいて、軽量化を追求する個人開発者にとって、車輪の再発明を厭わず自前実装することで得られるパフォーマンスと柔軟性の利点を提示している。"
+      },
+      "en": {
+        "title": "Building custom price history charts with just SVG and JavaScript for personal projects without heavy charting libraries",
+        "summary": "The creator of the price tracking service 'Koenokakaku' details how they implemented interactive price history charts using only vanilla JavaScript and SVG, eschewing bulky charting libraries. The article covers practical implementation challenges, including managing gaps in historical data, building responsive hover interactions, and optimizing rendering performance for a smooth user experience. For solo developers wary of excessive bundle sizes, this approach highlights the benefits of writing custom SVG visualizations: full control over component weight and specialized behavior. By avoiding dependencies, builders can ship fast, lightweight frontends that are tailored strictly to the specific needs of their application, proving that reinventing the wheel is often the superior choice for performance-critical personal projects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-10-25T13:00:57.115Z"
+  },
+  {
+    "id": "art-1792933242831-f589y",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/locallab/items/6e4b00247e7de325052d",
+    "published_at": "2026-10-25T12:01:02.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS2ZuWlN6eUZwRTRLWEppdXNpakx5dm5aczlKMVgxdXlJX0ZCZGFxaXdDbC1yMXVjUSUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0wNmU4ZDAzNjI5N2Q0NTRmOGMzMDk1MTQ3ZDQ4OTg1OQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6b9dd9d4b2cb70a5b4abb956c8bd7df5?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVDMyU5NyUyME9wZW5Sb3V0ZXIlMjBGcmVlJTIwJUUzJTgzJUEyJUUzJTgzJTg3JUUzJTgzJUFCJUVGJUJDJTlBJUUzJTgyJUIzJUUzJTgyJUI5JUUzJTgzJTg4MCVFNSU4NiU4NiVFMyU4MSVBNyVFNSVBNyU4QiVFMyU4MiU4MSVFMyU4MiU4QkFJJUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTg3JUUzJTgyJUEzJUUzJTgzJUIzJUUzJTgyJUIwJUU3JTkyJUIwJUU1JUEyJTgzJUUzJTgxJUFFJUU0JUJEJTlDJUUzJTgyJThBJUU2JTk2JUI5NSVFMyU4MiVCOSVFMyU4MyU4NiVFMyU4MyU4MyVFMyU4MyU5NyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTEwOGE2NzI3MTNmMzcwMThlMWYzZThkYWEwOGUwM2I4&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsb2NhbGxhYiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM1NGIxN2U0ZjAxZTM1M2Q5ZDAwZDk5OWQ3NTZmMzQ1&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=dce9b10c5178b5e16644e5531b51f96c",
+    "title_ja": "Claude CodeのバックエンドをOpenRouterの無料モデルに置換：APIコスト0円で構築するAI開発環境の5ステップ術",
+    "summary_ja": "AnthropicのCLIツール「Claude Code」は、デフォルトでは有料のClaude APIを利用するが、OpenRouterの「free」カテゴリにあるモデル群へバックエンドを切り替えることで、完全無料でAIコーディング環境を構築できる。 ANTHROPIC_API_KEYを差し替えるだけでQwen3やGemini 2.0 Flashといったモデルへ接続可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude CodeのバックエンドをOpenRouterの無料モデルに置換：APIコスト0円で構築するAI開発環境の5ステップ術",
+        "summary": "AnthropicのCLIツール「Claude Code」は、デフォルトでは有料のClaude APIを利用するが、OpenRouterの「free」カテゴリにあるモデル群へバックエンドを切り替えることで、完全無料でAIコーディング環境を構築できる。 ANTHROPIC_API_KEYを差し替えるだけでQwen3やGemini 2.0 Flashといったモデルへ接続可能だ。"
+      },
+      "en": {
+        "title": "Replacing Claude Code’s Backend with OpenRouter Free Models: A 5-Step Guide to Zero-Cost AI Development",
+        "summary": "While Anthropic’s CLI tool, Claude Code, is designed for their paid API by default, developers can construct a completely free AI coding environment by rerouting the backend to the 'free' tier models hosted on OpenRouter. By simply swapping the ANTHROPIC_API_KEY, users can tap into capable models like Qwen3 or Gemini 2.0 Flash without incurring subscription fees. While users must navigate specific rate limits and terms of service regarding commercial usage, this approach is the optimal solution for solo builders who want to leverage powerful LLM agents for coding tasks without the barrier of per-token API costs. It transforms the expensive workflow of automated agents into a sustainable, budget-friendly setup for local development iteration."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-25T13:00:42.831Z"
+  },
+  {
+    "id": "art-1792933233304-q3ork",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/CiciSee/items/12143c1ffe5fc9531da5",
+    "published_at": "2026-10-25T12:20:05.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jTG9TZ3k5a3ZnVExlX3Joa2lBNEtOdmpQQ2s5OVN4SzFnWHdSRHJMVEdSb1BpMFZRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTI1Yzc1ZWE1MzhjOGYwZWJmOTYyYzExNTk3NmE1YzU2%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D3f40c768a41c4911f194076f36a1a250?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JTlGJUIzJUU1JUEzJUIwJUU3JUI3JUE4JUU5JTlCJTg2JUUzJTgxJUFGJUUzJTgxJUE5JUUzJTgxJTkzJUUzJTgxJUJFJUUzJTgxJUE3JUU3JUIwJUExJUU1JThEJTk4JUUzJTgxJUFCJUUzJTgxJUFBJUUzJTgyJThCJUVGJUJDJTlGQUklRTMlODElQUIlRTMlODIlODglRTMlODIlOEIlRTYlOTYlODclRTUlQUQlOTclRTglQjUlQjclRTMlODElOTMlRTMlODElOTclRTMlODElQTglRTglODclQUElRTclODQlQjYlRTglQTglODAlRTglQUElOUUlRTclQjclQTglRTklOUIlODYlRTMlODElQTclRTUlQTQlODklRTMlODIlOEYlRTMlODIlOEIlRTklOUYlQjMlRTUlQTMlQjAlRTMlODMlQUYlRTMlODMlQkMlRTMlODIlQUYlRTMlODMlOTUlRTMlODMlQUQlRTMlODMlQkMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz05ZWE2ZDRhNDc1YmZlODZjYmI2NWUwYzE4ZDExM2IyYg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBDaWNpU2VlJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YWJkZWZmNGZlZTViMjBkMzdmNGZkNWFjMzA3NzZlOWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=0b116237fc40ce5e757f2b3a961d762b",
+    "title_ja": "音声編集は「波形」から「テキスト」へ：AIによる文字起こしと自然言語処理で変わる、エンジニア不要の編集ワークフロー",
+    "summary_ja": "従来の波形ベースの音声編集から、AIによる文字起こしと自然言語編集を活用した新しいワークフローへの移行が加速している。 FFmpegやPythonを用いたエンジニア主導の加工処理を不要とし、テキストを削除するだけで音声自体がカットされる技術が標準化されつつある。 開発者にとっても、APIを活用した自動編集パイプラインの構築や、クリエイター向けツールの内製化における技術スタックの再考が求められている。",
+    "translations": {
+      "ja": {
+        "title": "音声編集は「波形」から「テキスト」へ：AIによる文字起こしと自然言語処理で変わる、エンジニア不要の編集ワークフロー",
+        "summary": "従来の波形ベースの音声編集から、AIによる文字起こしと自然言語編集を活用した新しいワークフローへの移行が加速している。 FFmpegやPythonを用いたエンジニア主導の加工処理を不要とし、テキストを削除するだけで音声自体がカットされる技術が標準化されつつある。 開発者にとっても、APIを活用した自動編集パイプラインの構築や、クリエイター向けツールの内製化における技術スタックの再考が求められている。"
+      },
+      "en": {
+        "title": "Audio editing moves from waveforms to text: How natural language processing and AI transcription are replacing manual workflows",
+        "summary": "Audio production is undergoing a paradigm shift, moving away from tedious waveform manipulation toward text-based editing driven by AI transcription and natural language processing. Technologies that automatically trim audio based on text deletion are rendering traditional engineer-heavy workflows—like manual slicing in FFmpeg or custom Python scripts—obsolete for most common editing tasks. This transformation forces builders and developers to reconsider their own toolkits, specifically regarding how they might leverage existing APIs to automate post-production pipelines or build integrated, creator-focused tooling. The takeaway for those in the space is that accessibility to high-quality audio editing now favors natural language interfaces over low-level signal processing, demanding a shift in both product feature sets and backend automation strategies."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "音声",
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-25T13:00:33.304Z"
+  },
+  {
     "id": "art-1792930370149-de04v",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
