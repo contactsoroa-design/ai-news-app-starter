@@ -23,11 +23,16 @@ export function writeArticlesJson(
   const payload = `${JSON.stringify(list, null, 2)}\n`;
   const dataPath = path.join(rootDir, 'data', 'articles.json');
   const publicPath = path.join(rootDir, 'public', 'articles.json');
+  // GitHub raw のCDNキャッシュ回避用（本番 FEED_URL はこちらを向ける）
+  const feedDataPath = path.join(rootDir, 'data', 'feed.json');
+  const feedPublicPath = path.join(rootDir, 'public', 'feed.json');
 
   fs.mkdirSync(path.dirname(dataPath), { recursive: true });
   fs.mkdirSync(path.dirname(publicPath), { recursive: true });
   fs.writeFileSync(dataPath, payload, 'utf-8');
   fs.writeFileSync(publicPath, payload, 'utf-8');
+  fs.writeFileSync(feedDataPath, payload, 'utf-8');
+  fs.writeFileSync(feedPublicPath, payload, 'utf-8');
 
   return { dataPath, publicPath };
 }

@@ -1,0 +1,943 @@
+[
+  {
+    "id": "art-1792922477378-bsfur",
+    "source_id": "source-hf",
+    "source_name": "Hugging Face Blog / Papers",
+    "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+    "published_at": "2026-10-23T00:00:00.000Z",
+    "og_image_url": "https://huggingface.co/blog/assets/torch-neuronx-model-support/thumbnail.jpg",
+    "title_ja": "Hugging FaceがAWS Trainiumモデル対応状況の検索ツールを公開、Neuron SDK環境への移行を支援するモデル互換性確認リスト",
+    "summary_ja": "Hugging Faceは、AWSのAIアクセラレータ「AWS Trainium」および「Neuron SDK」に対応するモデルを即座に確認できる検索・フィルタリング機能を公開した。 これまでTrainium環境への最適化には手動での検証が不可欠だったが、このツールにより、利用可能なモデルの特定から学習コストの最適化までの時間を大幅に短縮できる。",
+    "translations": {
+      "ja": {
+        "title": "Hugging FaceがAWS Trainiumモデル対応状況の検索ツールを公開、Neuron SDK環境への移行を支援するモデル互換性確認リスト",
+        "summary": "Hugging Faceは、AWSのAIアクセラレータ「AWS Trainium」および「Neuron SDK」に対応するモデルを即座に確認できる検索・フィルタリング機能を公開した。 これまでTrainium環境への最適化には手動での検証が不可欠だったが、このツールにより、利用可能なモデルの特定から学習コストの最適化までの時間を大幅に短縮できる。"
+      },
+      "en": {
+        "title": "Hugging Face releases AWS Trainium model compatibility lookup tool to streamline Neuron SDK transition and deployment",
+        "summary": "Hugging Face has launched a new search and filtering interface that identifies which models are natively compatible with AWS Trainium and the Neuron SDK, simplifying the path to high-performance AI infrastructure. Previously, verifying whether a specific model architecture could leverage AWS’s custom silicon required manual testing, often stalling migration timelines. This tool now allows developers to quickly query the repository for Trainium-ready models, significantly reducing the time spent on compatibility validation and cost-efficient cloud scaling. For builders aiming to optimize GPU costs, this registry provides the clarity needed to make architectural decisions between traditional instances and Trainium-based hardware before starting, ensuring that resource selection is aligned with model support right from the initial development phase."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-25T10:01:17.378Z"
+  },
+  {
+    "id": "art-1792922467042-x5sig",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/komlock_lab/articles/japan-cyberattacks-ai-bank-risk-2026",
+    "published_at": "2026-10-25T09:35:52.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hbtyDMjK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%259B%25B8%25E6%25AC%25A1%25E3%2581%2590%25E6%2583%2585%25E5%25A0%25B1%25E6%25BC%258F%25E6%25B4%25A9%25E3%2581%25A8AI%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E6%2594%25BB%25E6%2592%2583%25E3%2580%2581%25E9%258A%2580%25E8%25A1%258C%25E3%2581%25AE%25E8%25A2%25AB%25E5%25AE%25B3%25E3%2581%25AF%25E9%2587%2591%25E8%259E%258D%25E5%258D%25B1%25E6%25A9%259F%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%25AA%25E3%2581%258C%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Kobara%2520Toi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM4OTQ5NWM0ZmEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Komlock%2520lab%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2U4MjYwMWZiMGQuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "相次ぐ企業の情報漏洩とAI攻撃、もし銀行が狙われれば金融危機に直結するのか？セキュリティの限界とエンジニアがとるべき対策",
+    "summary_ja": "近年、タイムズカーやGMOなど日本企業での情報漏洩が急増しており、LLMを活用した巧妙な攻撃も増えている。 もし銀行が大規模な漏洩やシステム攻撃を受ければ、社会的な信頼は失墜し、リーマンショック級の金融危機を招くリスクすらある。 開発者は脆弱性を前提としたゼロトラストアーキテクチャの導入と、機密情報を単一障害点に置かない分散管理を再考する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "相次ぐ企業の情報漏洩とAI攻撃、もし銀行が狙われれば金融危機に直結するのか？セキュリティの限界とエンジニアがとるべき対策",
+        "summary": "近年、タイムズカーやGMOなど日本企業での情報漏洩が急増しており、LLMを活用した巧妙な攻撃も増えている。 もし銀行が大規模な漏洩やシステム攻撃を受ければ、社会的な信頼は失墜し、リーマンショック級の金融危機を招くリスクすらある。 開発者は脆弱性を前提としたゼロトラストアーキテクチャの導入と、機密情報を単一障害点に置かない分散管理を再考する必要がある。"
+      },
+      "en": {
+        "title": "Are rising data breaches and AI-driven cyberattacks a prelude to a financial crisis if banks are targeted?",
+        "summary": "Data breaches across major Japanese services like Times Car and GMO are accelerating, fueled by increasingly sophisticated LLM-powered attack vectors. This trend poses a catastrophic risk: if a major banking institution were compromised by similar leaks or system exploits, the collapse of public trust could trigger a financial crisis on the scale of the 2008 Lehman shock. For developers and architects, this isn't just about patching bugs but rethinking security models. The practical takeaway is that you must operate under the assumption of breach; implementing strict zero-trust architectures and avoiding the centralization of sensitive data into single points of failure are no longer optional best practices but critical safeguards against systemic failure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-25T10:01:07.042Z"
+  },
+  {
+    "id": "art-1792922455857-0fty7",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/OfoxAI/items/35a8d0fe187266230e90",
+    "published_at": "2026-10-25T09:53:49.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZlNGNlMWJhOGJhMWQwMjE1M2M0ZjAyMGZjMzllMmU4Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9M2JlMmYyMjAzOGVmOGE5NjI2Njg0YzlkMmEwNTQwYTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D3e12a3e1e0a7cbbf02fe282b297b690d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q29kZXglRTMlODElQTclRTMlODMlQUYlRTMlODMlQkMlRTMlODIlQUYlRTMlODIlQjklRTMlODMlOUElRTMlODMlQkMlRTMlODIlQjklRTglQTglQUQlRTUlQUUlOUElRTMlODIlOTIlRTglQUElQUQlRTMlODElQkYlRTglQkUlQkMlRTMlODIlODElRTMlODElQUElRTMlODElODQlRTMlODElQTglRTMlODElOEQlRUYlQkMlOUElRTMlODMlQUQlRTMlODIlQjAlRTMlODElQTglRTYlOTMlOEQlRTQlQkQlOUMlRTMlODIlOTIlRTUlODglODYlRTMlODElOTElRTMlODElQTYlRTUlODglODclRTMlODIlOEElRTUlODglODYlRTMlODElOTElRTMlODIlOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03ODRiZDI1NTVjM2E2OTZkNDM2MWE2NWMyY2JkZGJlNw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBPZm94QUkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0xNjhhODQyNGYxMzI2YTdkZDg3NjRjNGMyMzAyZGQzMg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b117764f52925dd23969e197540f1ae3",
+    "title_ja": "Codexの「Couldn't load workspace settings」エラー対策：config編集の前に実施すべきログ切り分けと原因特定の手順",
+    "summary_ja": "Codexで「Couldn't load workspace settings」エラーが発生した際、安易に設定ファイル修正や再インストールを行うのは非効率的です。 まずはエラーログを精査し、アプリの起動処理とモデルの返答処理を切り分けて原因を特定するのが先決です。 無駄な作業時間を削減し、迅速に開発環境を復旧させるためのデバッグ手順を。",
+    "translations": {
+      "ja": {
+        "title": "Codexの「Couldn't load workspace settings」エラー対策：config編集の前に実施すべきログ切り分けと原因特定の手順",
+        "summary": "Codexで「Couldn't load workspace settings」エラーが発生した際、安易に設定ファイル修正や再インストールを行うのは非効率的です。 まずはエラーログを精査し、アプリの起動処理とモデルの返答処理を切り分けて原因を特定するのが先決です。 無駄な作業時間を削減し、迅速に開発環境を復旧させるためのデバッグ手順を。"
+      },
+      "en": {
+        "title": "Debugging 'Couldn't load workspace settings' in Codex: Why you should check logs before modifying config files",
+        "summary": "When encountering the 'Couldn't load workspace settings' error in Codex, developers often rush to edit config.toml files or reinstall the application prematurely, wasting valuable time. This article argues that the correct initial approach is to perform a systematic triage of the error logs to isolate whether the failure stems from the application startup process or the model response stream. By distinguishing between these two layers before altering system configurations, you can pinpoint the specific bottleneck and restore your development environment much faster. For builders, this workflow emphasizes that structured diagnostics should always precede manual configuration changes when dealing with opaque editor errors, ultimately preventing unnecessary downtime and potential file corruption during troubleshooting sessions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-25T10:00:55.857Z"
+  },
+  {
+    "id": "art-1792922444758-osi9z",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/yoru_build/articles/42e6c0a575d75d",
+    "published_at": "2026-10-25T09:32:50.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--LXF27whd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E3%2581%25AF%25E3%2581%2598%25E3%2582%2581%25E3%2581%25AB%25E3%2580%2591AI%25E3%2581%25A8%25E4%25B8%2580%25E7%25B7%2592%25E3%2581%25AB%25E4%25BD%259C%25E3%2582%258B%25E8%2587%25AA%25E5%258B%2595%25E5%25A3%25B2%25E8%25B2%25B7%25E3%2580%2582%25E6%2589%258B%25E5%258B%2595%25E5%25A3%25B2%25E8%25B2%25B7%25E3%2581%25A8%25E3%2581%25AE%25E9%2581%2595%25E3%2581%2584%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2588%25E3%2582%258B%25E3%2583%2593%25E3%2583%25AB%25E3%2583%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NiZTFmNTU5NmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIと構築する自動売買システム開発の全記録：市場分析からプログラムによる自動発注実装までのステップを完全公開",
+    "summary_ja": "本連載は、AIを活用して株価指数連動商品の自動売買システムを一から構築する挑戦の記録である。 プログラムが過去データを検証し、売買判断と発注を自動実行する仕組みを実装していく過程で、具体的なシステム構成や開発順序、実際に直面した技術的課題を共有する。 手動売買との違いや設計思想に焦点を当て、個人開発者が複雑な金融ロジックを実装する際の「躓きポイント」を回避するための実践的なロードマップを提示する。",
+    "translations": {
+      "ja": {
+        "title": "AIと構築する自動売買システム開発の全記録：市場分析からプログラムによる自動発注実装までのステップを完全公開",
+        "summary": "本連載は、AIを活用して株価指数連動商品の自動売買システムを一から構築する挑戦の記録である。 プログラムが過去データを検証し、売買判断と発注を自動実行する仕組みを実装していく過程で、具体的なシステム構成や開発順序、実際に直面した技術的課題を共有する。 手動売買との違いや設計思想に焦点を当て、個人開発者が複雑な金融ロジックを実装する際の「躓きポイント」を回避するための実践的なロードマップを提示する。"
+      },
+      "en": {
+        "title": "Building an AI-Powered Automated Trading System: Documenting the End-to-End Implementation of Algorithmic Market Execution",
+        "summary": "This new series chronicles the end-to-end development of an automated trading system built in partnership with AI agents. The project focuses on creating a program that reads market data for index-linked assets, performs backtesting on historical price action, and autonomously executes buy or sell orders. By documenting each phase—from system architecture and component selection to the specific roadblocks encountered during implementation—this series offers a practical roadmap for developers attempting to bridge the gap between human trading and algorithmic automation. It prioritizes clear, modular development steps, aiming to help independent builders avoid common pitfalls when designing complex logic for live financial markets, ensuring they can move from concept to a functioning, automated trading environment efficiently."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-25T10:00:44.758Z"
+  },
+  {
+    "id": "art-1792922433076-xgeku",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/chenfeng/articles/993f185ac0873c",
+    "published_at": "2026-10-25T09:36:19.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--_wiQ1Ae1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2599%25AE%25E9%2580%259A%25E3%2581%25AE%25E4%25BA%25BA%25E3%2581%258C%25E3%2583%2590%25E3%2582%25A4%25E3%2583%2596%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25EF%25BC%2588Vibe%2520Coding%25EF%25BC%2589%25E3%2581%25A8%25E5%2590%2591%25E3%2581%258D%25E5%2590%2588%25E3%2581%2586%25E3%2581%25AA%25E3%2582%2589%25E3%2580%2581%25E3%2580%258C%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AE%25E5%2595%258F%25E9%25A1%258C%25E3%2581%25A0%25E3%2581%2591%25E3%2582%2592%25E8%25A7%25A3%25E3%2581%258F%25E3%2580%258D%25E3%2581%25AE%25E3%2581%258C%25E4%25B8%2580%25E7%2595%25AA%25E3%2581%2584%25E3%2581%2584%25E3%2581%25AE%25E3%2581%258B%25E3%2582%2582%25E3%2581%2597%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Feng%2520Chen%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3dDMS11UHZOOWJkY2ZiV1l2NDg2V1lrNlVtLW9ONkpVaEhMbkU0VnFDektOZ2hnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "「バイブコーディング」の罠を回避する：AI開発で挫折しないための唯一の解は『自分の不満を解消するツール』を作ることだ",
+    "summary_ja": "バイブコーディング（Vibe Coding）という新しい生産性パラダイムにおいて、世間のトレンドを追うだけの開発は、往々にして実用性に乏しく、熱量を維持できないという課題がある。 本稿では、AIのコード生成能力を最大限に活かす秘訣は、市場のニーズを予測することではなく、自分自身が直面している小さな不満や使い勝手の悪さを解消するツールを自作することにあると説く。",
+    "translations": {
+      "ja": {
+        "title": "「バイブコーディング」の罠を回避する：AI開発で挫折しないための唯一の解は『自分の不満を解消するツール』を作ることだ",
+        "summary": "バイブコーディング（Vibe Coding）という新しい生産性パラダイムにおいて、世間のトレンドを追うだけの開発は、往々にして実用性に乏しく、熱量を維持できないという課題がある。 本稿では、AIのコード生成能力を最大限に活かす秘訣は、市場のニーズを予測することではなく、自分自身が直面している小さな不満や使い勝手の悪さを解消するツールを自作することにあると説く。"
+      },
+      "en": {
+        "title": "Escaping the Vibe Coding Trap: Why Solving Your Own Problems Is the Secret to Sustained AI Development Success",
+        "summary": "As Vibe Coding introduces a new paradigm of productivity, many developers fall into the trap of chasing hype-driven builds that lack genuine utility and fail to hold their interest long-term. This article argues that the most effective way to leverage AI-assisted coding is not by forecasting market needs, but by focusing on solving one's own specific, immediate frustrations and usability pain points. Building tools for oneself acts as a powerful fuel for motivation, creating a feedback loop where the developer is also the power user. For builders struggling to maintain momentum, the takeaway is simple: discard grand product ambitions and instead embrace personal problem-solving as your primary engine for growth, satisfaction, and long-term technical execution in the age of AI."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-25T10:00:33.076Z"
+  },
+  {
+    "id": "art-1792919535841-wg7c9",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/specsight",
+    "published_at": "2026-10-18T18:03:42.000Z",
+    "og_image_url": null,
+    "title_ja": "AI製品開発のボトルネックを解消する「Specsight」登場：開発速度と品質を両立するプロダクト可観測性プラットフォームの全貌",
+    "summary_ja": "AIアプリケーションの急速な開発とリリースを支えるための新たな可観測性ツール「Specsight」が公開された。 本ツールは、AI製品特有のブラックボックス化しがちな挙動を詳細に追跡し、パフォーマンスのボトルネックや異常動作を迅速に特定可能にする。 チームのリリースサイクルを高速化しつつ、品質を維持したい開発者にとって、AIモデルの挙動を監視・分析するための強力なインフラとなり得るだろう。",
+    "translations": {
+      "ja": {
+        "title": "AI製品開発のボトルネックを解消する「Specsight」登場：開発速度と品質を両立するプロダクト可観測性プラットフォームの全貌",
+        "summary": "AIアプリケーションの急速な開発とリリースを支えるための新たな可観測性ツール「Specsight」が公開された。 本ツールは、AI製品特有のブラックボックス化しがちな挙動を詳細に追跡し、パフォーマンスのボトルネックや異常動作を迅速に特定可能にする。 チームのリリースサイクルを高速化しつつ、品質を維持したい開発者にとって、AIモデルの挙動を監視・分析するための強力なインフラとなり得るだろう。"
+      },
+      "en": {
+        "title": "Specsight Launches Product Observability Platform to Help AI-First Teams Ship Faster Without Sacrificing Performance",
+        "summary": "Specsight has officially launched, positioning itself as a specialized observability platform designed explicitly for teams shipping AI-first applications at high velocity. The platform tackles the unique challenge of monitoring AI behaviors that frequently turn into black boxes, enabling developers to pinpoint performance bottlenecks, latent errors, and abnormal model outputs in production environments with granular precision. By surfacing deep telemetry on how models interact with user input and system architecture, Specsight reduces the time engineers spend debugging non-deterministic AI behavior. For teams struggling to balance rapid iteration cycles with reliable output quality, this tool acts as a critical observability layer, ensuring that scaling AI products does not compromise the stability or the user experience of the final deployment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-10-25T09:12:15.841Z"
+  },
+  {
+    "id": "art-1792919528990-47uza",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.youtube.com/watch?v=kspZP5BgkEU",
+    "published_at": "2026-10-25T08:52:03.000Z",
+    "og_image_url": null,
+    "title_ja": "AIがコードを書く時代、エンジニアの役割はどこへ向かうのか？コーディング自動化が進む中で直面する「技術的判断」の新たな重要性",
+    "summary_ja": "AIによるコード生成が標準化する中、エンジニアの仕事は実装から「システム設計とアーキテクチャ選定」へと大きくシフトしている。 AIは構文の正確さやボイラープレートの生成には長けているが、要件に応じた最適解の判断や、長期的保守性を見越した設計は依然として人間の領域だ。 開発者はAIを作業ツールとして操り、複雑なシステム統合やビジネス価値の創造に注力する役割が求められている。",
+    "translations": {
+      "ja": {
+        "title": "AIがコードを書く時代、エンジニアの役割はどこへ向かうのか？コーディング自動化が進む中で直面する「技術的判断」の新たな重要性",
+        "summary": "AIによるコード生成が標準化する中、エンジニアの仕事は実装から「システム設計とアーキテクチャ選定」へと大きくシフトしている。 AIは構文の正確さやボイラープレートの生成には長けているが、要件に応じた最適解の判断や、長期的保守性を見越した設計は依然として人間の領域だ。 開発者はAIを作業ツールとして操り、複雑なシステム統合やビジネス価値の創造に注力する役割が求められている。"
+      },
+      "en": {
+        "title": "As AI Agents Automate Code Generation, What Is Actually Left for Human Software Engineers to Build and Manage?",
+        "summary": "With AI agents increasingly handling syntax and boilerplate, the role of the software engineer is shifting from active coding toward high-level system architecture and rigorous technical judgment. While LLMs excel at generating valid snippets, they lack the nuanced understanding required to navigate complex trade-offs, system integration, and long-term maintainability of production-grade software. The core value for modern engineers is no longer just typing characters into an IDE, but rather acting as an architect who directs AI to solve specific business problems. As coding becomes a commodity, the human capacity to define system requirements, debug logic flaws, and ensure overall architectural integrity becomes the primary differentiator for engineering teams shipping complex, scalable, and reliable digital products in an AI-assisted ecosystem."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-25T09:12:08.991Z"
+  },
+  {
+    "id": "art-1792919510711-nkap3",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/ItsukiYokoyama/items/bf94614ec899d7b5894e",
+    "published_at": "2026-10-25T09:04:49.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNjc5NDY1JTJGcHJvZmlsZS1pbWFnZXMlMkYxNzkyMzg2NTk3P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1lNTE2ZjE2NTQ2YmRhZTdlOTFkMDQyMjhkOTg4MjYzYg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D8a4b586db304510dbf2191afea86b500?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUUzJTgzJTg5JUUzJTgzJTkxJUU2JUE5JTlGJUU4JTgzJUJEJUU2JTkwJUFEJUU4JUJDJTg5JUUzJTgwJTkxJUU4JUJFJTlFJUUzJTgyJTgxJUU2JTk5JTgyJUUzJTgxJUFCJUU1JTlCJUIwJUUzJTgyJThCJUU0JUJCJUE0JUU1JTkyJThDJUU1JUJDJThGJUUzJTgzJThCJUUzJTgzJUE1JUUzJTgzJUJDJUUzJTgyJUI5JUUzJTgzJUFBJUUzJTgzJUJDJUUzJTgzJTgwJUUzJTgzJUJDJUUzJTgyJUEyJUUzJTgzJTk3JUUzJTgzJUFBJUUzJTgyJUIxJUUzJTgzJUJDJUUzJTgyJUI3JUUzJTgzJUE3JUUzJTgzJUIzJUUzJTgyJTkyJUUzJTgzJUFBJUUzJTgzJUFBJUUzJTgzJUJDJUUzJTgyJUI5JUUzJTgxJTk3JUUzJTgxJUJFJUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgwJTgyJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MjgyNGMzYjk5YWRmN2NlOTMwMjI3MzE2ZWRmMjIwODI&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBJdHN1a2lZb2tveWFtYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTM2NzhhMjQ0ZjIwNjBiMmZlZThhOGEzMDlhYjJmYWI1&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=01d961bb24a916e68703ca2c8a2b25ac",
+    "title_ja": "PC用ニュースリーダー「Swipe News」リリース：スワイプ仕分けで興味を学習、読みたい記事を自動優先表示する令和式RSS体験",
+    "summary_ja": "「Swipe News」は、RSSで集めたニュースをカード形式で表示し、PCのキーボード操作で左右にスワイプして仕分けることで好みを学習する個人開発のニュースリーダーだ。 「興味なし」「開く」「タイトルで十分」と選別するたび、AIアルゴリズムが個人の読書傾向を解析し、次に表示すべき記事を動的に並び替える。 情報の洪水に溺れがちな現代において、単なる閲覧ツールではなく、ユーザーの関心に最適化された体験を構築する個人開発の好例といえる。",
+    "translations": {
+      "ja": {
+        "title": "PC用ニュースリーダー「Swipe News」リリース：スワイプ仕分けで興味を学習、読みたい記事を自動優先表示する令和式RSS体験",
+        "summary": "「Swipe News」は、RSSで集めたニュースをカード形式で表示し、PCのキーボード操作で左右にスワイプして仕分けることで好みを学習する個人開発のニュースリーダーだ。 「興味なし」「開く」「タイトルで十分」と選別するたび、AIアルゴリズムが個人の読書傾向を解析し、次に表示すべき記事を動的に並び替える。 情報の洪水に溺れがちな現代において、単なる閲覧ツールではなく、ユーザーの関心に最適化された体験を構築する個人開発の好例といえる。"
+      },
+      "en": {
+        "title": "Swipe News debuts as a Tinder-style PC reader that learns your interest via simple swipe-to-sort gestures",
+        "summary": "Swipe News is a newly released PC news reader that transforms traditional RSS feeds into a swipe-to-sort interface, mimicking familiar dating app mechanics to curate content. By sorting articles into buckets like \"Not Interested,\" \"Open,\" or \"Title Enough,\" the application continuously learns user preferences and dynamically reorders future feeds to prioritize relevant content. This approach addresses the modern challenge of information overload, shifting the paradigm from passive scrolling to active, intent-based curation. For independent developers, this project offers a masterclass in rethinking UI/UX for legacy consumption tools, proving that simple, interaction-heavy mechanics can dramatically improve content discovery for power users overwhelmed by the daily flood of headlines and RSS updates."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-10-25T09:11:50.711Z"
+  },
+  {
+    "id": "art-1792919503064-530g6",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/myntai/articles/decerna-approval-boundary",
+    "published_at": "2026-10-25T02:51:40.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xxT_cQWV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%25E6%259C%25AC%25E7%2595%25AA%25E3%2581%25AE%25E5%25A4%2589%25E6%259B%25B4%25E3%2582%2592%25E4%25BB%25BB%25E3%2581%259B%25E3%2582%258B%25E3%2581%25A8%25E3%2581%258D%25E3%2580%2581%25E3%2580%258C%25E4%25BA%25BA%25E3%2581%258C%25E6%2589%25BF%25E8%25AA%258D%25E3%2581%2597%25E3%2581%259F%25E3%2580%258D%25E3%2582%2592%25E3%2581%25A9%25E3%2581%2593%25E3%2581%25A7%25E4%25BF%259D%25E8%25A8%25BC%25E3%2581%2599%25E3%2582%258B%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B0%25B8%25E4%25BA%2595%25E4%25BD%2591%25E6%25A8%25B9%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2VhYmM0NTM1NzguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントにコード変更を任せる際の落とし穴：追加コミット発生時の「承認」を安全に無効化するGitHub設定の重要性",
+    "summary_ja": "AIエージェントが生成したPRを人間が承認した後、エージェントが自律的に追加コミットを行うと、承認済みステータスと実際のコードに乖離が生じ、セキュリティリスクを招く。 これを防ぐには、GitHubのブランチ保護設定で「Dismiss stale pull request approvals when new commits are pushed」を有効にするのが不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントにコード変更を任せる際の落とし穴：追加コミット発生時の「承認」を安全に無効化するGitHub設定の重要性",
+        "summary": "AIエージェントが生成したPRを人間が承認した後、エージェントが自律的に追加コミットを行うと、承認済みステータスと実際のコードに乖離が生じ、セキュリティリスクを招く。 これを防ぐには、GitHubのブランチ保護設定で「Dismiss stale pull request approvals when new commits are pushed」を有効にするのが不可欠だ。"
+      },
+      "en": {
+        "title": "Managing AI Agents in CI/CD: Why You Must Enable Stale Approval Dismissal to Prevent Unauthorized Code Merges",
+        "summary": "When using coding agents to generate pull requests, a dangerous race condition often arises: an agent might push an additional commit to fix linting errors or minor bugs after a human has already approved the original PR. This creates a security gap where the final merged code contains changes that were never human-reviewed. To mitigate this, engineering teams must configure GitHub branch protection rules to enable \"Dismiss stale pull request approvals when new commits are pushed.\" This critical setting automatically revokes human approval whenever new code is committed to the branch. By forcing a re-review of the delta, teams ensure that AI agents never bypass the final human quality gate, maintaining strict security and trust in automated workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-25T09:11:43.064Z"
+  },
+  {
+    "id": "art-1792919495886-5g6zp",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/seanishunter/articles/6d5379bc95136b",
+    "published_at": "2026-10-25T06:59:26.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--IxTQ4CbJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LINE%25E5%2585%25AC%25E5%25BC%258F%25E3%2582%25A2%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E7%2584%25A1%25E6%2596%2599%25E6%259E%25A0%25EF%25BC%2588%25E6%259C%2588200%25E9%2580%259A%25EF%25BC%2589%25E3%2582%2592%25E6%25B8%259B%25E3%2582%2589%25E3%2581%2595%25E3%2581%259A%25E3%2581%25AB%25E3%2580%2581%25E3%2583%2588%25E3%2583%25BC%25E3%2582%25AF%25E3%2581%25AE%25E4%25B8%25AD%25E3%2581%25A7%25E6%258A%2595%25E7%25A5%25A8%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Sean_Hunter%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NjNjBhZTc4NTQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "LINE公式アカウントの月200通制限を回避する実装術：プッシュ通知を避け、ユーザー主導のReply APIで投票機能を実現する方法",
+    "summary_ja": "LINE公式アカウントの無料プラン（月200通制限）を維持しつつ、ユーザーの投票機能を提供する方法を解説。 プッシュメッセージは課金対象のため最小限に抑え、ユーザーからのメッセージをトリガーとする「Reply API」を活用する実装が鍵となる。 この設計により、メッセージ制限を消費せずに対話型インターフェースを拡張でき、個人開発のLINEボット運用コストを劇的に抑制できる。",
+    "translations": {
+      "ja": {
+        "title": "LINE公式アカウントの月200通制限を回避する実装術：プッシュ通知を避け、ユーザー主導のReply APIで投票機能を実現する方法",
+        "summary": "LINE公式アカウントの無料プラン（月200通制限）を維持しつつ、ユーザーの投票機能を提供する方法を解説。 プッシュメッセージは課金対象のため最小限に抑え、ユーザーからのメッセージをトリガーとする「Reply API」を活用する実装が鍵となる。 この設計により、メッセージ制限を消費せずに対話型インターフェースを拡張でき、個人開発のLINEボット運用コストを劇的に抑制できる。"
+      },
+      "en": {
+        "title": "How to Implement Voting on LINE Official Accounts Without Consuming the Free 200-Message Monthly Quota via Reply API Strategies",
+        "summary": "To maintain a free LINE Official Account tier while adding interactive voting features, developers must navigate the strict 200-message monthly limit. This implementation note demonstrates how to avoid push-notification consumption by relying entirely on the Reply API, which triggers exclusively in response to user inputs. By designing the bot architecture to prioritize reactive communication rather than proactive push updates, you can effectively host complex interactive features without triggering usage charges or hitting monthly caps. This approach is essential for individual developers building LINE-integrated services, as it allows for sustainable, feature-rich bot experiences that operate indefinitely within the platform's free communication plan constraints, effectively side-stepping the costly messaging tier upgrade."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-25T09:11:35.886Z"
+  },
+  {
+    "id": "art-1792917339309-g57p9",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+    "published_at": "2026-10-23T21:35:13.000Z",
+    "og_image_url": "https://static.simonwillison.net/static/2026/heron-oil.webp",
+    "title_ja": "Claude 3.5 Opusで実現する「Quick Study」：外部ライブラリ不要のSobelエッジ検出による高速描画キャンバス実装",
+    "summary_ja": "Simon Willison氏が公開した「Quick Study」は、Claude 3.5 OpusのArtifact機能を活用し、写真から即座に油彩風の絵画を生成する実験プロジェクトである。 外部ライブラリを一切使わず、ブラウザのCanvas APIとSobelエッジ検出アルゴリズムのみで実装されている点が特徴だ。 大規模モデルによるコード生成は単なるUI作成にとどまらず、数学的処理を含む複雑なブラウザ内画像処理を数秒でコード化できることを証明している。",
+    "translations": {
+      "ja": {
+        "title": "Claude 3.5 Opusで実現する「Quick Study」：外部ライブラリ不要のSobelエッジ検出による高速描画キャンバス実装",
+        "summary": "Simon Willison氏が公開した「Quick Study」は、Claude 3.5 OpusのArtifact機能を活用し、写真から即座に油彩風の絵画を生成する実験プロジェクトである。 外部ライブラリを一切使わず、ブラウザのCanvas APIとSobelエッジ検出アルゴリズムのみで実装されている点が特徴だ。 大規模モデルによるコード生成は単なるUI作成にとどまらず、数学的処理を含む複雑なブラウザ内画像処理を数秒でコード化できることを証明している。"
+      },
+      "en": {
+        "title": "Claude 3.5 Opus powers 'Quick Study': An artifact-based painting simulator using zero external dependencies",
+        "summary": "Simon Willison’s 'Quick Study' project demonstrates how Claude 3.5 Opus can generate complex, high-performance web tools directly within an Artifact. By leveraging the Canvas API and a custom Sobel edge detection algorithm, the tool rapidly transforms user-uploaded photos into simulated oil paintings entirely in the browser without relying on external libraries like P5.js or OpenCV. This experiment underscores a critical shift for builders: LLMs are now capable of architecting sophisticated mathematical image-processing logic from scratch, bypassing the need for heavy dependencies. It validates that modern code generation is moving beyond simple UI scaffolds into performant, logic-heavy browser utilities, suggesting developers can rapidly prototype complex graphic effects that would have previously required specialized knowledge of image processing kernels."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-25T08:35:39.309Z"
+  },
+  {
+    "id": "art-1792917332138-uix7s",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/agentgrid-io",
+    "published_at": "2026-10-25T05:39:16.000Z",
+    "og_image_url": null,
+    "title_ja": "人間とAIエージェントの協働を最適化する「AgentGrid.io」、共有ワークスペースで自律型タスクの実行と管理を一元化",
+    "summary_ja": "AgentGrid.ioは、人間と自律型AIエージェントが同じ環境でプロジェクトを進めるための共有ワークスペースだ。 チャットベースの管理ではなく、タスクの状態や進捗を可視化することで、AIの実行結果に対するフィードバックや修正をリアルタイムに行える設計になっている。 AIをブラックボックスとして扱うのではなく、ワークフローの中に組み込み、人間が適宜介入して調整できる環境を構築することが、複雑なタスクを成功させるための新たな開発スタンダードとなりそうだ。",
+    "translations": {
+      "ja": {
+        "title": "人間とAIエージェントの協働を最適化する「AgentGrid.io」、共有ワークスペースで自律型タスクの実行と管理を一元化",
+        "summary": "AgentGrid.ioは、人間と自律型AIエージェントが同じ環境でプロジェクトを進めるための共有ワークスペースだ。 チャットベースの管理ではなく、タスクの状態や進捗を可視化することで、AIの実行結果に対するフィードバックや修正をリアルタイムに行える設計になっている。 AIをブラックボックスとして扱うのではなく、ワークフローの中に組み込み、人間が適宜介入して調整できる環境を構築することが、複雑なタスクを成功させるための新たな開発スタンダードとなりそうだ。"
+      },
+      "en": {
+        "title": "AgentGrid.io launches shared workspaces designed to align human workflows with autonomous agent task execution",
+        "summary": "AgentGrid.io is a new collaborative workspace platform built to bridge the gap between human operators and autonomous AI agents. Instead of treating agent interactions as disconnected chat threads, the platform provides a shared environment where humans can monitor task states, inspect outputs, and inject corrections or feedback in real-time. This approach moves beyond the simple chatbot interface, allowing teams to integrate autonomous agents directly into production workflows while maintaining human oversight. For builders developing agent-driven systems, the lesson is clear: long-term utility depends on providing transparency into agent decision-making processes. By creating interfaces that prioritize visibility and intervention, developers can effectively mitigate the reliability issues that currently plague most autonomous agent implementations in complex real-world projects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-25T08:35:32.138Z"
+  },
+  {
+    "id": "art-1792917322140-rjis9",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/send-feedback-from-vercel-mcp",
+    "published_at": "2026-10-23T20:53:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5zUPDbfsi6JNUM6IRgNFRQ/d3a2f741d6d947709a347712fc2ce8ee/vercel-mcp-feedback-og.png",
+    "title_ja": "Vercel MCPがアップデート、AIエージェントから直接バグ報告や機能要望を送れるツール「submit_feedback」を提供開始",
+    "summary_ja": "VercelはMCP（Model Context Protocol）に「submit_feedback」を追加し、AIエージェントから直接フィードバックを送信可能にした。 ユーザーはデプロイエラーの具体的な状況や機能改善の要望を、自然言語でエージェントに伝えるだけでチームへ報告できる。 エージェントがコンテキストを構造化して送信するため、従来の手動報告よりも開発チームが問題を再現しやすく、エージェント駆動開発の効率化と改善サイクルの加速が見込める。",
+    "translations": {
+      "ja": {
+        "title": "Vercel MCPがアップデート、AIエージェントから直接バグ報告や機能要望を送れるツール「submit_feedback」を提供開始",
+        "summary": "VercelはMCP（Model Context Protocol）に「submit_feedback」を追加し、AIエージェントから直接フィードバックを送信可能にした。 ユーザーはデプロイエラーの具体的な状況や機能改善の要望を、自然言語でエージェントに伝えるだけでチームへ報告できる。 エージェントがコンテキストを構造化して送信するため、従来の手動報告よりも開発チームが問題を再現しやすく、エージェント駆動開発の効率化と改善サイクルの加速が見込める。"
+      },
+      "en": {
+        "title": "Vercel MCP adds submit_feedback tool, enabling AI agents to send bug reports and feature requests directly to the team",
+        "summary": "Vercel has integrated a new submit_feedback tool into the Model Context Protocol, allowing developers to route bug reports and feature requests directly from their AI agents to the Vercel team. By simply describing issues like missing deployment environment variables in plain language, users can instruct their assistants to bundle structured context—including task descriptions and expected behaviors—into a formal submission. This capability removes the manual friction of reporting issues, as agents automatically capture the necessary metadata that engineering teams need for rapid debugging. For builders leveraging MCP, this update drastically shortens the feedback loop in agent-assisted workflows, ensuring that critical edge cases are documented with precise telemetry without the developer ever leaving their coding environment."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-10-25T08:35:22.140Z"
+  },
+  {
+    "id": "art-1792917314855-avq2u",
+    "source_id": "source-deepmind",
+    "source_name": "Google DeepMind / Gemini",
+    "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+    "published_at": "2026-10-15T16:08:03.000Z",
+    "og_image_url": null,
+    "title_ja": "Google DeepMind、新規抗菌ペプチド探索を高速化する「Antigravity」を公開――創薬AIにおける検索空間の大幅な効率化を実現",
+    "summary_ja": "Google DeepMindは、新規抗菌ペプチド（AMP）の探索を加速させるAIプラットフォーム「Antigravity」を発表した。 このシステムは、膨大な化学空間から有望な候補を効率的に絞り込む検索アルゴリズムを採用しており、従来のスクリーニング手法と比較して創薬の成功確率と速度を劇的に向上させる。 バイオテック分野のエンジニアにとって、Antigravityは単なる探索ツールではなく、生成AIを活用した実験パイプラインの設計における新たなベンチマークとなる。",
+    "translations": {
+      "ja": {
+        "title": "Google DeepMind、新規抗菌ペプチド探索を高速化する「Antigravity」を公開――創薬AIにおける検索空間の大幅な効率化を実現",
+        "summary": "Google DeepMindは、新規抗菌ペプチド（AMP）の探索を加速させるAIプラットフォーム「Antigravity」を発表した。 このシステムは、膨大な化学空間から有望な候補を効率的に絞り込む検索アルゴリズムを採用しており、従来のスクリーニング手法と比較して創薬の成功確率と速度を劇的に向上させる。 バイオテック分野のエンジニアにとって、Antigravityは単なる探索ツールではなく、生成AIを活用した実験パイプラインの設計における新たなベンチマークとなる。"
+      },
+      "en": {
+        "title": "Google DeepMind unveils Antigravity, an AI platform accelerating the search for novel antimicrobial peptides within vast chemical spaces",
+        "summary": "Google DeepMind has introduced Antigravity, a new AI-driven platform designed to drastically accelerate the identification of novel antimicrobial peptides (AMPs) for drug discovery. By leveraging sophisticated search algorithms that navigate immense chemical landscapes more efficiently than traditional high-throughput screening, the system significantly increases both the speed and success rate of finding promising clinical candidates. For biotech engineers and researchers building generative AI workflows, Antigravity demonstrates how AI-guided search can transform discovery pipelines from brute-force experimentation into targeted optimization. This development marks a critical shift for builders in the life sciences, establishing a new benchmark for how computational tools can reduce discovery cycles and navigate complex chemical spaces with far higher precision than previous automated methods."
+      }
+    },
+    "tool_tags": [
+      "Gemini"
+    ],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-10-25T08:35:14.855Z"
+  },
+  {
+    "id": "art-1792917287960-30a91",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kimshoshi/articles/php2shell-shared-hosting-check",
+    "published_at": "2026-10-25T03:01:40.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hVfSI3pz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25AC%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25AB%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2581%25AEWordPress%25E3%2581%25AFPHP%25E3%2581%25AE%25E8%2584%2586%25E5%25BC%25B1%25E6%2580%25A7%25E3%2581%25AB%25E4%25BD%2595%25E3%2582%2592%25E3%2581%2599%25E3%2581%25B9%25E3%2581%258D%25E3%2581%258B%25E3%2580%2582%25E8%25A6%258B%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AF%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%25AEPHP%25E3%2583%2590%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%25A7%25E3%2583%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:KIM%2520SEONGSU%25EF%25BD%259C%25E4%25BB%25A4%25E5%2592%258C8%25E5%25B9%25B4%25E5%25BA%25A6%2520...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2IxMGJhNDUwMDQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "レンタルサーバー上のWordPressにおけるPHP脆弱性対策：利用者が管理画面で確認・更新すべきバージョン要件と生存戦略",
+    "summary_ja": "レンタルサーバー上のWordPressでPHPの緊急脆弱性が報じられた際、利用者が自らPHPをビルドし直す必要はありません。 サーバー会社側で修正が行われるため、利用者が行うべきは、自身のサイトで稼働しているPHPバージョンが現在公式サポートされている8.2〜8.5の範囲内かを確認し、古い8.1以下であればサーバー管理画面から即座に切り替えることだけです。",
+    "translations": {
+      "ja": {
+        "title": "レンタルサーバー上のWordPressにおけるPHP脆弱性対策：利用者が管理画面で確認・更新すべきバージョン要件と生存戦略",
+        "summary": "レンタルサーバー上のWordPressでPHPの緊急脆弱性が報じられた際、利用者が自らPHPをビルドし直す必要はありません。 サーバー会社側で修正が行われるため、利用者が行うべきは、自身のサイトで稼働しているPHPバージョンが現在公式サポートされている8.2〜8.5の範囲内かを確認し、古い8.1以下であればサーバー管理画面から即座に切り替えることだけです。"
+      },
+      "en": {
+        "title": "Managing PHP Vulnerabilities on Shared WordPress Hosting: Why Version Updates Are Your Only Responsibility",
+        "summary": "When emergency PHP vulnerabilities hit headlines, WordPress users on shared hosting often panic, mistakenly thinking they must rebuild their server environment. In reality, patching the PHP core is the host’s job, not yours. Your responsibility is verifying your site’s PHP version in the hosting dashboard; if you are still running 8.1 or older, you must immediately switch to 8.2 or higher, as official security fixes are exclusively targeted at modern versions. Failing to upgrade leaves your infrastructure exposed to automated exploits. For builders and site maintainers, the critical takeaway is that your primary defensive layer is simply ensuring your runtime environment remains within the actively supported release window, as legacy versions are essentially open doors for attackers."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-25T08:34:47.960Z"
+  },
+  {
+    "id": "art-1792916630974-0h5zp",
+    "source_id": "source-posthog",
+    "source_name": "PostHog Blog (Product for Engineers)",
+    "url": "https://posthog.com/blog/6-years-at-posthog",
+    "published_at": "2026-10-16T00:00:00.000Z",
+    "og_image_url": "https://d36j3rcgc2qfsv.cloudfront.net/blog6-years-at-posthog.jpeg",
+    "title_ja": "PostHogでの6年間から学んだ「6つの教訓」：エンジニアリング組織における採用の重要性と80/20ルールの本質を公開",
+    "summary_ja": "PostHogでの6年間の経験を通じて得られた重要な洞察が共有された。 特にマネジメントの質の8割は採用の質で決まるという原則に加え、優れた組織を構築するための具体的な知見が語られている。 スタートアップの急速な成長期において、エンジニアリングカルチャーを維持し、個人のパフォーマンスを最大化させるためには、プロセス以上に採用プロセスそのものの精度を極めることが最優先事項である。 エンジニアが組織で成果を出すための本質的な問いを投げかける。",
+    "translations": {
+      "ja": {
+        "title": "PostHogでの6年間から学んだ「6つの教訓」：エンジニアリング組織における採用の重要性と80/20ルールの本質を公開",
+        "summary": "PostHogでの6年間の経験を通じて得られた重要な洞察が共有された。 特にマネジメントの質の8割は採用の質で決まるという原則に加え、優れた組織を構築するための具体的な知見が語られている。 スタートアップの急速な成長期において、エンジニアリングカルチャーを維持し、個人のパフォーマンスを最大化させるためには、プロセス以上に採用プロセスそのものの精度を極めることが最優先事項である。 エンジニアが組織で成果を出すための本質的な問いを投げかける。"
+      },
+      "en": {
+        "title": "Six key lessons from six years at PostHog: Why engineering management success is 80% hiring quality and 20% culture",
+        "summary": "Reflecting on six years of growth at PostHog, the engineering leadership team shares six actionable takeaways on what actually builds a high-performing technical organization. The primary insight highlights that eighty percent of management effectiveness stems directly from the caliber of hiring, leaving the remaining twenty percent for everything else. For founders and engineering leads, the core argument is that obsessing over hiring quality is far more impactful than tweaking internal processes or organizational structure. Navigating hyper-growth requires a disciplined focus on bringing the right people into the fold, as culture eventually becomes an output of who is hired rather than a set of rules enforced by management. Prioritize talent acquisition today to avoid costly operational debt tomorrow."
+      }
+    },
+    "tool_tags": [
+      "PostHog"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-25T08:23:50.974Z"
+  },
+  {
+    "id": "art-1792916623488-npkb3",
+    "source_id": "source-github-copilot",
+    "source_name": "GitHub Copilot Changelog",
+    "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams",
+    "published_at": "2026-10-23T21:29:58.000Z",
+    "og_image_url": "https://github.blog/wp-content/uploads/2026/10/Issue_notification_social.jpeg",
+    "title_ja": "GitHub CopilotがMicrosoft Teamsと直接統合、通知からコード修正へのシームレスな移行で開発サイクルを加速",
+    "summary_ja": "GitHubはMicrosoft Teams向けの公式アプリをアップデートし、GitHub CopilotをTeams内で直接利用可能にした。 開発者はTeamsの通知から直接GitHub Issuesの内容をCopilotに参照させ、コードの修正案生成までをチャット上で完結できる。 GitHubのコンテキストを離れることなく、迅速にコードレビューやバグ修正を行えるため、チーム間のコミュニケーションコスト削減と開発スピードの向上が期待できる。",
+    "translations": {
+      "ja": {
+        "title": "GitHub CopilotがMicrosoft Teamsと直接統合、通知からコード修正へのシームレスな移行で開発サイクルを加速",
+        "summary": "GitHubはMicrosoft Teams向けの公式アプリをアップデートし、GitHub CopilotをTeams内で直接利用可能にした。 開発者はTeamsの通知から直接GitHub Issuesの内容をCopilotに参照させ、コードの修正案生成までをチャット上で完結できる。 GitHubのコンテキストを離れることなく、迅速にコードレビューやバグ修正を行えるため、チーム間のコミュニケーションコスト削減と開発スピードの向上が期待できる。"
+      },
+      "en": {
+        "title": "GitHub Copilot integrates with Microsoft Teams to turn channel notifications directly into code fixes and accelerate dev workflows",
+        "summary": "GitHub has updated its Microsoft Teams integration, allowing developers to leverage GitHub Copilot directly within the Teams interface to bridge the gap between communication and coding. Users can now pull context from issue notifications inside a channel and have Copilot generate code solutions immediately without switching environments. By bringing repository insights and AI-assisted drafting directly into the collaboration flow, the integration aims to slash context-switching overhead, enabling teams to triage, review, and patch issues faster. For development teams heavily reliant on Teams, this creates a tighter feedback loop where project alerts are actionable, ensuring that engineering momentum remains steady even when discussions happen outside of the core IDE or GitHub's dashboard."
+      }
+    },
+    "tool_tags": [
+      "GitHub Copilot"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-25T08:23:43.488Z"
+  },
+  {
+    "id": "art-1792916615655-j6lfg",
+    "source_id": "source-supabase",
+    "source_name": "Supabase Blog",
+    "url": "https://supabase.com/blog/getting-started-with-the-supabase-dotnet-sdk",
+    "published_at": "2026-10-21T07:00:00.000Z",
+    "og_image_url": "https://supabase.com/images/blog/2026-10-21-getting-started-with-the-supabase-dotnet-sdk/og.png",
+    "title_ja": "Supabase、公式.NET SDKを公開。ASP.NET CoreからUnity、モバイルまでC#環境でのバックエンド構築がより容易に",
+    "summary_ja": "Supabaseが公式の.NET SDKをリリースし、ASP.NET Coreやコンソールアプリだけでなく、Unityやモバイル開発まで広範なC#環境での統合が可能になった。 認証やデータベース操作がネイティブなC#コードで完結するため、クロスプラットフォーム開発のバックエンド構築が大幅に効率化される。 静的型付け言語の強みを活かし、型安全な開発体験をSupabaseエコシステム全体で享受できるのが最大のメリットだ。",
+    "translations": {
+      "ja": {
+        "title": "Supabase、公式.NET SDKを公開。ASP.NET CoreからUnity、モバイルまでC#環境でのバックエンド構築がより容易に",
+        "summary": "Supabaseが公式の.NET SDKをリリースし、ASP.NET Coreやコンソールアプリだけでなく、Unityやモバイル開発まで広範なC#環境での統合が可能になった。 認証やデータベース操作がネイティブなC#コードで完結するため、クロスプラットフォーム開発のバックエンド構築が大幅に効率化される。 静的型付け言語の強みを活かし、型安全な開発体験をSupabaseエコシステム全体で享受できるのが最大のメリットだ。"
+      },
+      "en": {
+        "title": "Supabase releases official .NET SDK for seamless backend integration across ASP.NET Core, Unity, and mobile environments",
+        "summary": "Supabase has officially launched its .NET SDK, enabling developers to integrate Supabase services directly into C#-based projects including ASP.NET Core web applications, desktop software, mobile apps, and Unity game development. This release abstracts the complexity of authentication, real-time database queries, and storage management into native C# patterns, significantly reducing the overhead of backend boilerplate code in cross-platform stacks. By leveraging static typing, developers can now achieve a more robust and type-safe workflow when interfacing with Supabase features. For teams building in the .NET ecosystem, this integration removes the friction of managing disparate backend services, allowing for a unified, type-safe development experience that streamlines the transition from local prototypes to production-grade distributed applications."
+      }
+    },
+    "tool_tags": [
+      "Supabase"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-10-25T08:23:35.655Z"
+  },
+  {
+    "id": "art-1792916608252-5vi0t",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "published_at": "2026-10-23T10:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAI、フロンティアモデルの学習・評価環境におけるセキュリティを強化：オフライン環境と高度なレッドチーミングの導入で保護を徹底",
+    "summary_ja": "OpenAIはフロンティアモデルの学習および評価プロセスを保護するため、隔離されたオフライン環境の構築と、計算負荷の高い高度なレッドチーミング体制を整備した。 機密データの漏洩リスクを最小化しつつモデル開発を加速させるこのアプローチは、セキュリティと開発速度を両立させるための新たな業界標準といえる。 セキュアなAI開発パイプラインの構築を目指すチームにとって、物理的な隔離と継続的な検証は必須の戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "OpenAI、フロンティアモデルの学習・評価環境におけるセキュリティを強化：オフライン環境と高度なレッドチーミングの導入で保護を徹底",
+        "summary": "OpenAIはフロンティアモデルの学習および評価プロセスを保護するため、隔離されたオフライン環境の構築と、計算負荷の高い高度なレッドチーミング体制を整備した。 機密データの漏洩リスクを最小化しつつモデル開発を加速させるこのアプローチは、セキュリティと開発速度を両立させるための新たな業界標準といえる。 セキュアなAI開発パイプラインの構築を目指すチームにとって、物理的な隔離と継続的な検証は必須の戦略となる。"
+      },
+      "en": {
+        "title": "OpenAI bolsters security for frontier model training and evaluation with isolated offline environments and advanced red-teaming",
+        "summary": "OpenAI has overhauled its security architecture for training and evaluating frontier models, implementing strictly isolated offline environments and integrating high-compute red-teaming protocols. By decoupling sensitive training data from external networks, the organization aims to mitigate model theft and data leakage while maintaining rapid iteration cycles. This shift highlights a critical evolution in AI infrastructure: effective security at the frontier level requires not just software patches, but fundamental physical and logical isolation combined with constant stress-testing. For builders developing sensitive AI workflows or managing proprietary weights, the core lesson here is that air-gapped environments and proactive, adversarial testing are no longer optional—they are foundational components for enterprise-grade safety in the era of large-scale generative models."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "セキュリティ",
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-10-25T08:23:28.252Z"
+  },
+  {
+    "id": "art-1792916601032-nd7iw",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.youtube.com/watch?v=iIm3f1qTvp8",
+    "published_at": "2026-10-25T07:51:59.000Z",
+    "og_image_url": null,
+    "title_ja": "AIが生成する歴史コンテンツの「デタラメさ」を検証――正確性を欠く情報の拡散リスクと、信頼性担保に向けた開発者が今すぐとるべき対策",
+    "summary_ja": "生成AIが歴史的事実を捏造するハルシネーション問題が顕在化している。 膨大な歴史データを学習する一方で、LLMは文脈や因果関係の欠如により、もっともらしい嘘を生成しやすいためだ。 開発者やコンテンツ作成者は、生成AIを一次ソースとして過信せず、必ず外部検証データベースと照合するRAGパイプラインを組み込むなど、信頼性を担保するための防壁を設計段階で構築しなければならない。",
+    "translations": {
+      "ja": {
+        "title": "AIが生成する歴史コンテンツの「デタラメさ」を検証――正確性を欠く情報の拡散リスクと、信頼性担保に向けた開発者が今すぐとるべき対策",
+        "summary": "生成AIが歴史的事実を捏造するハルシネーション問題が顕在化している。 膨大な歴史データを学習する一方で、LLMは文脈や因果関係の欠如により、もっともらしい嘘を生成しやすいためだ。 開発者やコンテンツ作成者は、生成AIを一次ソースとして過信せず、必ず外部検証データベースと照合するRAGパイプラインを組み込むなど、信頼性を担保するための防壁を設計段階で構築しなければならない。"
+      },
+      "en": {
+        "title": "Examining the severe unreliability of AI-generated history content and the urgent need for verifiable RAG-based mitigation strategies",
+        "summary": "Recent investigations into AI-generated history content reveal a pervasive issue: LLMs frequently fabricate events, citing them with authoritative confidence while lacking genuine contextual understanding of causal history. Because these models prioritize probabilistic token prediction over verified factual accuracy, they are prone to producing hallucinations that seem perfectly plausible to general users. Developers building educational or historical applications must stop treating generative output as a primary source of truth. The practical takeaway is to strictly implement RAG architectures that tether AI responses to curated, authoritative historical databases. Without explicit verification layers and attribution mechanisms, building AI tools for historical information remains a high-risk venture that can actively degrade public information ecosystems rather than support them."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-25T08:23:21.032Z"
+  },
+  {
+    "id": "art-1792916592733-rlyn1",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Ciel_lab/items/c691182d8c8d6a83ceb7",
+    "published_at": "2026-10-25T08:14:01.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSmhQN1RMU0Z4aHNseWZjaWtnUW9qbWc3NWQ1VXNCZDlOQThLNWU5ak1XTlNZRXJ3JTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWY3MzUxNTk4NGE3MzY4NDY3NmRhNmIwY2I2YmJkMjQy%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df7b94acd16fbccbf7cca5eb41c710aad?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFMyU4MSVBOCUyMENvZGV4JTIwJUUzJTgyJTkyJUU1JTkwJThDJUU2JTk5JTgyJUUzJTgxJUFCJUU1JThCJTk1JUUzJTgxJThCJUUzJTgxJTk5JTIwQ2llbCUyMCVFMyU4MiU5MiVFMyU4MCU4MSVFMyU4MiVCRiVFMyU4MyU5NiVFMyU4MSU5NCVFMyU4MSVBOCVFMyU4MSVBQiVFNyU5RiVBRCVFMyU4MSU4NCVFNSU4QiU5NSVFNyU5NCVCQiVFMyU4MSVBQiVFMyU4MSU5NyVFMyU4MSU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWY5ZTJkMGUwMzlmNTAxNjYwY2NmM2UwODIwMzcwNzhk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBDaWVsX2xhYiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTQzMzg4MzM2Y2JmNTdmOGE4ODM4MThlM2E0NTg4OWQx&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=61e2827238fd14bfeb208f0d98a46ac8",
+    "title_ja": "Claude CodeとCodexを同時並行で操るマルチウィンドウ制御ツール「Ciel」の開発経緯と実用的な活用術",
+    "summary_ja": "「Ciel」は、Claude CodeとCodexという2つのAI開発エージェントを同一画面上の別タブで同時に管理し、並行して作業を指示できるデスクトップ向け制御ツールだ。 PCに向かえる時間が極端に短い忙しい開発者のために、AIへタスクを分散投入して効率を最大化する設計となっている。 複数のAI環境を1か所で統合的に運用することで、コード生成の文脈を切り替えながら並行処理を最適化する新たな開発スタイルを提案するツールである。",
+    "translations": {
+      "ja": {
+        "title": "Claude CodeとCodexを同時並行で操るマルチウィンドウ制御ツール「Ciel」の開発経緯と実用的な活用術",
+        "summary": "「Ciel」は、Claude CodeとCodexという2つのAI開発エージェントを同一画面上の別タブで同時に管理し、並行して作業を指示できるデスクトップ向け制御ツールだ。 PCに向かえる時間が極端に短い忙しい開発者のために、AIへタスクを分散投入して効率を最大化する設計となっている。 複数のAI環境を1か所で統合的に運用することで、コード生成の文脈を切り替えながら並行処理を最適化する新たな開発スタイルを提案するツールである。"
+      },
+      "en": {
+        "title": "Ciel: A multi-window dashboard that lets developers orchestrate Claude Code and Codex side-by-side for parallel workflows",
+        "summary": "Ciel is a purpose-built desktop dashboard that allows developers to run Claude Code and Codex simultaneously in separate, managed tabs. Designed for builders with limited screen time, the tool focuses on parallelizing AI workflows, letting users dispatch complex coding tasks to multiple agents at once without context switching. By centralizing the management of these disparate AI agents within a single, unified interface, Ciel enables a more efficient development loop. For those managing heavy workloads, the practical takeaway is clear: don't just rely on one LLM agent. Instead, build or use orchestrators that treat your coding assistants as parallelized workers, allowing you to maximize output even during short, fragmented bursts of productivity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-25T08:23:12.733Z"
+  },
+  {
+    "id": "art-1792916582459-2sgj6",
+    "source_id": "source-hf",
+    "source_name": "Hugging Face Blog / Papers",
+    "url": "https://huggingface.co/blog/allenai/litpivot",
+    "published_at": "2026-10-23T16:15:50.000Z",
+    "og_image_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/7F9q8BZloWigwe7m5YGLG.png",
+    "title_ja": "Hugging Faceが研究アイデア創出を自動化するAIツール「LitPivot」を発表。動的コンテキスト化による先行研究とのギャップ発見手法を公開",
+    "summary_ja": "Hugging Faceが公開した「LitPivot」は、膨大な学術文献を動的にコンテキスト化し、研究者が未開拓のニッチな領域や新しいアイデアを見つけるための探索を支援するフレームワークだ。 単なる検索ではなく、文献間の関係性や空白領域を可視化することで、研究の方向性をデータドリブンに決定できる。 AI研究者やインディー開発者は、本ツールを活用して既存の膨大な知見から自身のプロジェクトに応用可能な独自の着眼点を効率的に抽出することが可能になる。",
+    "translations": {
+      "ja": {
+        "title": "Hugging Faceが研究アイデア創出を自動化するAIツール「LitPivot」を発表。動的コンテキスト化による先行研究とのギャップ発見手法を公開",
+        "summary": "Hugging Faceが公開した「LitPivot」は、膨大な学術文献を動的にコンテキスト化し、研究者が未開拓のニッチな領域や新しいアイデアを見つけるための探索を支援するフレームワークだ。 単なる検索ではなく、文献間の関係性や空白領域を可視化することで、研究の方向性をデータドリブンに決定できる。 AI研究者やインディー開発者は、本ツールを活用して既存の膨大な知見から自身のプロジェクトに応用可能な独自の着眼点を効率的に抽出することが可能になる。"
+      },
+      "en": {
+        "title": "Hugging Face releases LitPivot to automate research ideation by mapping gaps in the academic literature landscape",
+        "summary": "Hugging Face has introduced LitPivot, a new framework designed to accelerate the research ideation process by dynamically contextualizing vast amounts of academic literature. Unlike standard search tools, LitPivot maps relationships between papers to help researchers visualize the specific intellectual gaps and unexplored niches within a crowded field. This data-driven approach allows builders and academics to identify high-potential directions that are often missed during manual literature reviews. By surfacing these connection points automatically, the tool empowers indie researchers to refine their project scopes faster and ground their innovative ideas in established scientific context. For those working on experimental product features or niche AI agents, LitPivot effectively turns the overwhelming noise of current research into a structured map for discovery."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-10-25T08:23:02.459Z"
+  },
+  {
+    "id": "art-1792916574907-hrp4u",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/hotto_ken/articles/gh-api-raw-field-posted-temp-path",
+    "published_at": "2026-10-25T04:11:54.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--sscXkDbr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:gh%2520api%2520-f%2520body%253D%2540file%2520%25E3%2581%25A7%25E3%2580%2581PR%2520%25E3%2581%25AB%25E4%25B8%2580%25E6%2599%2582%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2581%25AE%25E3%2583%2591%25E3%2582%25B9%25E3%2581%258C%25E8%25BC%2589%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BB%25E3%2581%25A3%25E3%2581%25A8%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM2ZWYyYzFiMTQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "GitHub CLI「gh api」で起きるファイル送信の罠：-f body=@fileで中身が読み込まれない原因と検証手法",
+    "summary_ja": "GitHub CLIの「gh api -f body=@file」を実行した際、ファイルの中身ではなくファイルパスそのものがAPIへ送信されるという予期せぬ挙動が発生した。 これは「エラーが出ていない＝成功」と判断した開発者の盲点を突く事例である。 本記事では、終了コードや完了メッセージを鵜呑みにせず、生データダンプやファイル確認を通じて、AIやツールが「成功」と報告する裏側の事実を検証する重要性を説く。",
+    "translations": {
+      "ja": {
+        "title": "GitHub CLI「gh api」で起きるファイル送信の罠：-f body=@fileで中身が読み込まれない原因と検証手法",
+        "summary": "GitHub CLIの「gh api -f body=@file」を実行した際、ファイルの中身ではなくファイルパスそのものがAPIへ送信されるという予期せぬ挙動が発生した。 これは「エラーが出ていない＝成功」と判断した開発者の盲点を突く事例である。 本記事では、終了コードや完了メッセージを鵜呑みにせず、生データダンプやファイル確認を通じて、AIやツールが「成功」と報告する裏側の事実を検証する重要性を説く。"
+      },
+      "en": {
+        "title": "GitHub CLI's 'gh api' file upload trap: Why -f body=@file sends the path instead of content",
+        "summary": "Developers frequently fall into the trap of assuming success when a CLI tool exits without an explicit error code, yet this reliance often masks subtle failures. A prime example involves the GitHub CLI's 'gh api -f body=@file' command, which can inadvertently send the local file path as the request body rather than the actual content of the file. This incident serves as a crucial lesson in verifying internal states beyond simple completion signals. By mastering techniques like raw data dumping and byte-level verification, builders can catch failures that tools report as successful. Always audit the actual transmission data instead of trusting automated success reports, especially when integrating LLMs or scripts into mission-critical deployment pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-25T08:22:54.907Z"
+  },
+  {
+    "id": "art-1792916567554-r7d0f",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/deyama_wfh/articles/e4c0b5db30a28c",
+    "published_at": "2026-10-25T05:43:40.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--V-lNxEmx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E8%25AD%25A6%25E5%2591%258A%25E3%2580%2591%25E3%2580%258Cnpm%2520install%25E3%2580%258D%25E3%2581%2597%25E3%2581%259F%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E6%2584%259F%25E6%259F%2593%25EF%25BC%259F%2520AI%25E9%25A0%25BC%25E3%2581%25BF%25E3%2581%25AE%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E8%2580%2585%25E3%2581%258C%25E9%259C%2587%25E3%2581%2588%25E3%2581%259F%25E3%2580%25812026%25E5%25B9%25B410%25E6%259C%2588%25E3%2581%25AE%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2590%25E3%2583%25BC%25E6%2594%25BB%25E6%2592%2583%25E3%2581%25A8%25E8%2584%2586%25E5%25BC%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A7%25E3%2582%2584%25E3%2581%25BE%25EF%25BD%259C%25E7%258C%25AB%25E3%2581%25A8AI%25E3%2581%25A8%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25EF%25BD%259C%25E5%2587%25BA%25E5%25B1%25B1IT%25E4%25BA%258B%25E5%258B%2599%25E6%2589%2580%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzlkNzRmOGEyMWIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "【警告】npmパッケージ経由でPC乗っ取り？AI頼みの個人開発者が陥りやすい「見えない依存関係」によるサプライチェーン攻撃の脅威",
+    "summary_ja": "AIを活用してコード生成を行う個人開発者が増加する中、npmなどの依存ライブラリをインストールしただけでPCが乗っ取られるサプライチェーン攻撃が深刻化している。 AIが提案するコードを盲信し、依存関係の脆弱性確認を怠ると、悪意あるコードを直接取り込んでしまうリスクがある。 効率を重視するだけでなく、npm auditの定期実行や信頼できるパッケージの選別など、最低限のセキュリティチェックを開発フローに組み込むことが不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "【警告】npmパッケージ経由でPC乗っ取り？AI頼みの個人開発者が陥りやすい「見えない依存関係」によるサプライチェーン攻撃の脅威",
+        "summary": "AIを活用してコード生成を行う個人開発者が増加する中、npmなどの依存ライブラリをインストールしただけでPCが乗っ取られるサプライチェーン攻撃が深刻化している。 AIが提案するコードを盲信し、依存関係の脆弱性確認を怠ると、悪意あるコードを直接取り込んでしまうリスクがある。 効率を重視するだけでなく、npm auditの定期実行や信頼できるパッケージの選別など、最低限のセキュリティチェックを開発フローに組み込むことが不可欠だ。"
+      },
+      "en": {
+        "title": "Warning: Supply chain attacks target AI-assisted devs via malicious npm packages that compromise local development machines",
+        "summary": "As more indie developers rely heavily on AI to generate code, they are becoming prime targets for supply chain attacks where malicious npm dependencies silently compromise local machines upon installation. Because AI often suggests code blocks without auditing the underlying security risks of imported libraries, developers are inadvertently creating backdoors while trying to boost their velocity. Relying blindly on generated snippets without checking dependencies is a dangerous shortcut. To protect your workflow, you must integrate security hygiene—such as running regular 'npm audit' commands, vetting library sources, and scrutinizing third-party packages before injection. For builders, security is no longer an optional layer; it is a critical prerequisite to avoid becoming the next victim of automated dependency exploits."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-25T08:22:47.554Z"
+  },
+  {
+    "id": "art-1792916556533-e580u",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/lexmount-browser",
+    "published_at": "2026-10-13T06:39:58.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェント特化の最速ヘッドレスブラウザ「Moli」が登場。従来の自動化ツールを凌駕する実行速度と安定性を実現",
+    "summary_ja": "Lexmountが開発した「Moli」は、AIエージェントの操作に最適化された最速のヘッドレスブラウザである。 従来のブラウザ自動化手法よりも実行速度と安定性を大幅に高め、AIエージェントが複雑なWebサイトを効率的にナビゲートできるように設計されている。 AIによるWebスクレイピングやタスク自動化を構築するエンジニアにとって、信頼性の高いブラウザ基盤として開発体験を劇的に向上させるツールとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント特化の最速ヘッドレスブラウザ「Moli」が登場。従来の自動化ツールを凌駕する実行速度と安定性を実現",
+        "summary": "Lexmountが開発した「Moli」は、AIエージェントの操作に最適化された最速のヘッドレスブラウザである。 従来のブラウザ自動化手法よりも実行速度と安定性を大幅に高め、AIエージェントが複雑なWebサイトを効率的にナビゲートできるように設計されている。 AIによるWebスクレイピングやタスク自動化を構築するエンジニアにとって、信頼性の高いブラウザ基盤として開発体験を劇的に向上させるツールとなるだろう。"
+      },
+      "en": {
+        "title": "Lexmount launches Moli, a purpose-built headless browser designed specifically to accelerate AI agent performance and stability",
+        "summary": "Lexmount has introduced Moli, a specialized headless browser engineered to handle the unique demands of AI agents navigating the modern web. By stripping away non-essential overhead and focusing on raw execution speed, Moli offers significantly higher reliability than standard browser automation tools, effectively reducing the time-to-action for complex workflows. This utility is a critical advancement for builders developing agents that perform real-time scraping, data extraction, or automated site navigation, as it eliminates the frequent crashes and latency issues inherent in general-purpose browsing frameworks. For developers tired of fighting brittle automation scripts, adopting an agent-optimized browser layer like Moli is the most practical path to scaling autonomous systems that actually work without constant maintenance."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-25T08:22:36.533Z"
+  },
+  {
+    "id": "art-1792914706822-zj2vd",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/yutakacraft/articles/a7f208fc206874",
+    "published_at": "2026-10-25T02:58:26.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FjBtuWxm--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AB%25B6%25E8%25BC%25AA%25E3%2581%25AE%25E3%2580%258C%25E4%25B8%25A6%25E3%2581%25B3%25E3%2580%258D%25E3%2582%2592%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%2520%25E2%2594%2580%25E2%2594%2580%2520%25E5%2585%2588%25E9%25A0%25AD%25E3%2583%25BB%25E7%2595%25AA%25E6%2589%258B%25E3%2583%25BB3%2520%25E7%2595%25AA%25E6%2589%258B%25E3%2581%25AB%25E5%2588%2586%25E3%2581%2591%25E3%2581%25A6%25E6%258C%2581%25E3%2581%25A4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yutakacraft%2Cx_90%2Cy_121/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "競輪予想アプリ開発：選手たちの「ライン」を構造化データに変換し、分析可能な形式へ落とし込むための設計手法",
+    "summary_ja": "競輪固有の戦略である「ライン（複数の選手による縦の隊列）」を予想アプリで扱うため、文字情報として提供される並びを、先頭・番手・3番手といった位置情報を持つ構造化データへと変換する手法を解説する。 単に文字列をパースするのではなく、ラインを区切り記号で分割し、選手ごとの役割をインデックス化することで、データ分析や勝率予測が可能な形へ正規化する設計上のポイントを詳述する。 個人開発において特有のドメイン知識をDB設計に落とし込む際のヒントとなる。",
+    "translations": {
+      "ja": {
+        "title": "競輪予想アプリ開発：選手たちの「ライン」を構造化データに変換し、分析可能な形式へ落とし込むための設計手法",
+        "summary": "競輪固有の戦略である「ライン（複数の選手による縦の隊列）」を予想アプリで扱うため、文字情報として提供される並びを、先頭・番手・3番手といった位置情報を持つ構造化データへと変換する手法を解説する。 単に文字列をパースするのではなく、ラインを区切り記号で分割し、選手ごとの役割をインデックス化することで、データ分析や勝率予測が可能な形へ正規化する設計上のポイントを詳述する。 個人開発において特有のドメイン知識をDB設計に落とし込む際のヒントとなる。"
+      },
+      "en": {
+        "title": "Modeling Keirin strategy: Architecting structured data pipelines to convert unstructured cycling 'Line' formations for betting analysis",
+        "summary": "Building a Keirin prediction app requires transforming the unique strategic formation known as a 'Line'—where cyclists draft in columns—from unstructured text into structured, analyzable database records. The author details a design approach that segments these text strings by specific delimiters, mapping each rider into distinct roles such as the leader (sensu), the second (bante), and the third position. Instead of relying on raw string parsing, this method normalizes player roles into indexed data points, enabling sophisticated win-rate modeling and predictive analytics. For solo developers, this breakdown serves as a practical blueprint for embedding domain-specific sports logic into relational database architectures, turning complex, legacy human-readable event formats into scalable, queryable intelligence."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-10-25T07:51:46.822Z"
+  },
+  {
+    "id": "art-1792894768396-e6f1k",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/24/news006.html",
+    "published_at": "2026-10-23T23:15:00.000Z",
+    "og_image_url": "https://image.itmedia.co.jp/ait/articles/2610/24/cover_news006.jpg",
+    "title_ja": "Gartner予測：2028年までに企業AIの7割が放棄される？「FDE」の正体は深刻なベンダーロックイン問題である",
+    "summary_ja": "Gartnerは、現場配備エンジニアリング（FDE）を活用した企業向けエージェントAIの7割が、2028年までに放棄されるとの予測を発表した。 実態は技術革新ではなく、特定のベンダーに依存しすぎる「ラベルを貼り替えただけのロックイン」である可能性が高い。 内製化やポータブルなアーキテクチャの構築を軽視し、即効性のみを求めてベンダー主導のブラックボックスなAI導入を進めることは、長期的には技術的負債を増大させ、コスト効率を悪化させるリスクがある。",
+    "translations": {
+      "ja": {
+        "title": "Gartner予測：2028年までに企業AIの7割が放棄される？「FDE」の正体は深刻なベンダーロックイン問題である",
+        "summary": "Gartnerは、現場配備エンジニアリング（FDE）を活用した企業向けエージェントAIの7割が、2028年までに放棄されるとの予測を発表した。 実態は技術革新ではなく、特定のベンダーに依存しすぎる「ラベルを貼り替えただけのロックイン」である可能性が高い。 内製化やポータブルなアーキテクチャの構築を軽視し、即効性のみを求めてベンダー主導のブラックボックスなAI導入を進めることは、長期的には技術的負債を増大させ、コスト効率を悪化させるリスクがある。"
+      },
+      "en": {
+        "title": "Gartner predicts 70% of enterprise AI agents built via FDE will be abandoned by 2028 due to lock-in",
+        "summary": "Gartner predicts that 70% of enterprise AI agents utilizing Forward Deployed Engineering (FDE) will be abandoned by 2028. The core issue is that many of these deployments are not true architectural innovations but rather rebranded vendor lock-in masquerading as specialized solutions. Companies sacrificing long-term portability for short-term ease are effectively ceding control of their data and operational logic to proprietary black-box systems. For builders and enterprise architects, the takeaway is clear: over-reliance on external vendor-driven AI layers creates catastrophic technical debt that eventually cripples scalability. Instead of chasing vendor-provided turnkey AI agents that trap you in walled gardens, engineering teams must prioritize decoupled, portable architectures that allow swapping underlying LLM providers without tearing down the entire infrastructure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-10-25T02:19:28.396Z"
+  },
+  {
+    "id": "art-1792894757051-5vos3",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+    "published_at": "2026-10-24T03:59:57.000Z",
+    "og_image_url": "https://raw.githubusercontent.com/simonw/battledrones/v14/progress-shots/v14/compass-rose.jpg",
+    "title_ja": "Battledrones v14が4人対戦に対応、Claude Opus 3.5で生成したマップ「Compass Rose」とWebSocketの同期コード刷新",
+    "summary_ja": "Battledronesはオンライン対戦機能をアップデートし、従来の2人制限から最大4人の同時プレイに対応した。 新マップ「Compass Rose」の生成やWebSocketを用いた同期通信コードの修正にはClaude Opus 3.5を活用しており、4方向の回転対称レイアウトとAIによる自動補完機能を実現している。 今回のアップデートにより、共有リンクやQRコードを通じて最大4名の人間が参加し、枠が余ればAIが埋めるマルチプレイヤー体験が可能となった。",
+    "translations": {
+      "ja": {
+        "title": "Battledrones v14が4人対戦に対応、Claude Opus 3.5で生成したマップ「Compass Rose」とWebSocketの同期コード刷新",
+        "summary": "Battledronesはオンライン対戦機能をアップデートし、従来の2人制限から最大4人の同時プレイに対応した。 新マップ「Compass Rose」の生成やWebSocketを用いた同期通信コードの修正にはClaude Opus 3.5を活用しており、4方向の回転対称レイアウトとAIによる自動補完機能を実現している。 今回のアップデートにより、共有リンクやQRコードを通じて最大4名の人間が参加し、枠が余ればAIが埋めるマルチプレイヤー体験が可能となった。"
+      },
+      "en": {
+        "title": "Battledrones v14 adds four-player online support, using Claude Opus 3.5 for map generation and WebSocket syncing",
+        "summary": "Battledrones has expanded its online multiplayer capabilities, moving from the previous two-player limit to full support for up to four simultaneous combatants. The developer utilized Claude Opus 3.5 to engineer the new 'Compass Rose' map, which features four-way rotational symmetry, while simultaneously refactoring the WebSocket networking stack to handle the expanded player state. This update enables human players to join via share links or QR codes, with AI entities filling any empty slots to maintain a full lobby. By offloading complex networking logic and procedural level design to an LLM, the project demonstrates how solo builders can rapidly scale multiplayer infrastructure and content complexity, turning local prototypes into scalable web-based battle arenas without heavy manual backend heavy-lifting."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-25T02:19:17.051Z"
+  },
+  {
+    "id": "art-1792894740226-4uu78",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/sideos-ai",
+    "published_at": "2026-10-23T13:28:40.000Z",
+    "og_image_url": "https://ph-files.imgix.net/1d888193-9ca3-4526-ba0e-e77d2d81f9ba.png?auto=format&fit=crop&frame=1&h=512&w=1024",
+    "title_ja": "ローカルLLM活用でプライバシーを守る「sideOS.ai」が登場、会議の文字起こしやバックグラウンドタスクを全てデバイス内で完結",
+    "summary_ja": "「sideOS.ai」は、ローカルLLMを基盤として会議の文字起こしや背景での自動タスク処理を実現するAIツールだ。 クラウドへのデータ転送を一切行わず、完全にデバイス内で完結させる設計により、セキュリティとプライバシーを最大化している。 API連携に依存しないローカルAIの活用は、機密性の高いビジネスデータや個人情報を扱うアプリ開発者にとって、信頼性とUXを両立させる新たなスタンダードとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "ローカルLLM活用でプライバシーを守る「sideOS.ai」が登場、会議の文字起こしやバックグラウンドタスクを全てデバイス内で完結",
+        "summary": "「sideOS.ai」は、ローカルLLMを基盤として会議の文字起こしや背景での自動タスク処理を実現するAIツールだ。 クラウドへのデータ転送を一切行わず、完全にデバイス内で完結させる設計により、セキュリティとプライバシーを最大化している。 API連携に依存しないローカルAIの活用は、機密性の高いビジネスデータや個人情報を扱うアプリ開発者にとって、信頼性とUXを両立させる新たなスタンダードとなるだろう。"
+      },
+      "en": {
+        "title": "sideOS.ai launches as a local-first AI agent for secure meeting dictation, task automation, and background processing",
+        "summary": "sideOS.ai introduces a local-first AI agent designed to handle intensive workflows like meeting dictation and background task automation without leaking sensitive data to cloud servers. By running large language models entirely on-device, the platform eliminates the risks associated with third-party API dependencies, offering a hardened environment for handling confidential information. For builders and developers, sideOS demonstrates a viable pathway toward building privacy-centric AI tools that satisfy enterprise-grade security requirements while maintaining snappy, real-time performance. This shift toward edge-based processing proves that developers no longer have to sacrifice data sovereignty to deliver sophisticated automation, suggesting that local-first architecture is becoming an essential design pattern for future-proof business applications that prioritize user trust and high performance in sensitive contexts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-25T02:19:00.226Z"
+  },
+  {
+    "id": "art-1792893833899-0pgcd",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/career65/articles/225c0e5a21b56f",
+    "published_at": "2026-10-24T14:23:40.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MVje5YCg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:65%25E6%25AD%25B3%25E4%25BB%25A5%25E4%25B8%258A%25E3%2581%25AE%25E3%2582%25B7%25E3%2583%258B%25E3%2582%25A2%25E4%25B8%2596%25E4%25BB%25A3%25E3%2581%258C%25E8%25BF%25B7%25E3%2582%258F%25E3%2581%25AA%25E3%2581%2584%25E6%25B1%2582%25E4%25BA%25BA%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%25AEUI%252FUX%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25A8%25E3%2580%2581SEO%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2584%25E3%2581%25AE%25E5%2593%2581%25E8%25B3%25AA%25E7%25AE%25A1%25E7%2590%2586%25E6%2589%258B%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25AA%25E3%2582%25A265%2520%25E9%2596%258B%25E7%2599%25BA%25E3%2583%25BB%25E9%2581%258B%25E5%2596%25B6%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%25EF%25BC%2588%25E5%2590%2588%25E5%2590%258C...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzEyZTQ2ZmM1YWMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "65歳以上特化型求人『キャリア65』のUI/UX設計と生成AIによるSEO品質管理手法",
+    "summary_ja": "合同会社福祉人事が開発する65歳以上向け求人サイト『キャリア65』は、シニア層のUX課題を解決するため文字サイズや情報密度の最適化を行い、直感的な求人応募フローを実現した。 さらに、生成AIを活用したコラムコンテンツの生成および人間による誤情報チェック体制を自動化・標準化することで、高い検索順位とコンテンツ品質を両立。 ターゲット特化のUI設計とAI運用自動化の知見を提供する。",
+    "translations": {
+      "ja": {
+        "title": "65歳以上特化型求人『キャリア65』のUI/UX設計と生成AIによるSEO品質管理手法",
+        "summary": "合同会社福祉人事が開発する65歳以上向け求人サイト『キャリア65』は、シニア層のUX課題を解決するため文字サイズや情報密度の最適化を行い、直感的な求人応募フローを実現した。 さらに、生成AIを活用したコラムコンテンツの生成および人間による誤情報チェック体制を自動化・標準化することで、高い検索順位とコンテンツ品質を両立。 ターゲット特化のUI設計とAI運用自動化の知見を提供する。"
+      },
+      "en": {
+        "title": "How Senior Job Platform Career65 Designed UI/UX for Users Aged 65+ and Managed AI-Generated SEO Content Quality",
+        "summary": "Fukushi Jinji launched Career65, a niche job board engineered specifically for seniors aged 65 and older who struggle with dense layouts and small typography on conventional hiring platforms. To solve these accessibility challenges, the product team overhauled standard job application flows by increasing font sizes, reducing visual clutter, and streamlining navigation. Alongside UI enhancements, the team implemented a dual-layer SEO content pipeline that uses generative AI for drafting informative articles, paired with automated human-in-the-loop editorial checks to prevent inaccuracies. For builders launching specialized products, this approach demonstrates how combining senior-friendly accessibility design with AI-assisted, strictly verified content generation can effectively build audience trust while driving sustainable organic search growth."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-10-25T02:03:53.899Z"
+  },
+  {
+    "id": "art-1792893825136-i5ykk",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ai_nexus_jp/articles/vscode-structured-data-editor",
+    "published_at": "2026-10-24T14:28:54.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--8YYvyEkB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590VS%2520Code%25E6%258B%25A1%25E5%25BC%25B5%25E8%2587%25AA%25E4%25BD%259C%25E3%2580%2591AI%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25AE%25E8%25A1%25A8%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E7%25B7%25A8%25E9%259B%2586%25E3%2581%25A7%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E7%25A0%25B4%25E5%25A3%258A%25E3%2582%2592%25E9%2598%25B2%25E3%2581%2590%25E3%2580%258CStructured%2520Data%2520Editor%25E3%2580%258D...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%2520Nexus%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NmNGZkNDA2NjcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "生成AIのデータ破壊を防ぐVS Code拡張機能「Structured Data Editor」が公開、安全な表データ編集を実現",
+    "summary_ja": "AI導入現場でのプロンプト開発やデータ管理時に生じるデータ破壊リスクを回避するため、VS Code拡張機能「Structured Data Editor」が開発・公開された。 生成AIへのデータ投入時やJSON/CSVの直接編集時にありがちなフォーマット崩れや誤入力を、視覚的な表データ編集とバリデーション機能によって未然に防ぐ。 AI開発やLLM連携におけるデータ安全性を担保する設計が大きな魅力だ。",
+    "translations": {
+      "ja": {
+        "title": "生成AIのデータ破壊を防ぐVS Code拡張機能「Structured Data Editor」が公開、安全な表データ編集を実現",
+        "summary": "AI導入現場でのプロンプト開発やデータ管理時に生じるデータ破壊リスクを回避するため、VS Code拡張機能「Structured Data Editor」が開発・公開された。 生成AIへのデータ投入時やJSON/CSVの直接編集時にありがちなフォーマット崩れや誤入力を、視覚的な表データ編集とバリデーション機能によって未然に防ぐ。 AI開発やLLM連携におけるデータ安全性を担保する設計が大きな魅力だ。"
+      },
+      "en": {
+        "title": "New VS Code Extension 'Structured Data Editor' Prevents AI Data Corruption During Prompt Engineering",
+        "summary": "To eliminate the risk of accidental data corruption during prompt engineering and dataset management, a new VS Code extension named 'Structured Data Editor' has been released. Working with raw JSON or CSV files when feeding data into generative AI models frequently leads to syntax errors, broken formatting, and accidental deletions. This extension provides a visual table interface alongside real-time validation to guarantee data integrity before sending inputs to LLMs. For developers building AI-powered workflows and managing complex prompt datasets, adopting structured visual editors prevents costly runtime errors and ensures consistent model behavior without sacrificing the speed of directly editing configuration files inside the IDE."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-25T02:03:45.136Z"
+  },
+  {
+    "id": "art-1792893815582-ap1kx",
+    "source_id": "source-cloudflare-ai",
+    "source_name": "Cloudflare Workers AI / Blog",
+    "url": "https://blog.cloudflare.com/webmcp-commerce/",
+    "published_at": "2026-10-21T13:00:00.000Z",
+    "og_image_url": "https://blog.cloudflare.com/_emdash/api/media/file/01M5AYSBKT78Q7W6234MGTKVKA.png",
+    "title_ja": "Commerce.com、約10万ドメインのECサイトをWebMCPとCloudflareでAIエージェント対応化へ",
+    "summary_ja": "Commerce.comはCloudflareと提携し、約10万件の既存オンラインストアをWebMCPプロトコルでAIエージェント対応化した。 商品検索や決済連携の標準化ツールを全ドメインへ一斉適用しつつ、加盟店側の制御権を維持するアーキテクチャを実現している。 自社ECやエージェント開発者はWeb標準に準拠したAPI層を構築することで、自律AIプロセスの直接介入とコンバージョン向上が期待できる。",
+    "translations": {
+      "ja": {
+        "title": "Commerce.com、約10万ドメインのECサイトをWebMCPとCloudflareでAIエージェント対応化へ",
+        "summary": "Commerce.comはCloudflareと提携し、約10万件の既存オンラインストアをWebMCPプロトコルでAIエージェント対応化した。 商品検索や決済連携の標準化ツールを全ドメインへ一斉適用しつつ、加盟店側の制御権を維持するアーキテクチャを実現している。 自社ECやエージェント開発者はWeb標準に準拠したAPI層を構築することで、自律AIプロセスの直接介入とコンバージョン向上が期待できる。"
+      },
+      "en": {
+        "title": "Commerce.com and Cloudflare deploy WebMCP across 100k storefronts to give AI agents native shopping capabilities",
+        "summary": "Commerce.com partnered with Cloudflare to enable native AI agent interaction across nearly 100,000 active e-commerce domains using the WebMCP protocol. By deploying standardized agent toolsets at the network edge, the platform allows autonomous AI assistants to search product catalogs, check inventory, and initiate checkout flows directly while maintaining strict merchant-level access controls. The implementation demonstrates how edge infrastructure can retroactively upgrade legacy storefronts into agent-friendly interfaces without requiring manual site overhauls. For developers building AI agents or e-commerce integrations, adopting WebMCP and edge middleware provides a scalable model for making existing web applications programmatically actionable for agentic workflows."
+      }
+    },
+    "tool_tags": [
+      "Cloudflare"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-25T02:03:35.582Z"
+  },
+  {
+    "id": "art-1792893574331-jbdk3",
+    "source_id": "source-deepmind",
+    "source_name": "Google DeepMind / Gemini",
+    "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+    "published_at": "2026-10-22T14:30:24.000Z",
+    "og_image_url": null,
+    "title_ja": "Google DeepMind、地球全域の森林タイプを10メートル精度で分類するグローバルマップおよび新AIモデルを発表",
+    "summary_ja": "Google DeepMindは、地球上のあらゆる10メートル区画を詳細な森林タイプに分類する新たなグローバルマップおよびAIモデルを発表した。 従来の単なる被覆率計測を超え、生物多様性や炭素貯蔵量のより精緻な解析を可能にしている。 環境モニタリングや気候変動対策アプリケーションを構築する開発者にとって、高解像度の地理空間データを活用した新プロダクト開発の重要な基盤となる。",
+    "translations": {
+      "ja": {
+        "title": "Google DeepMind、地球全域の森林タイプを10メートル精度で分類するグローバルマップおよび新AIモデルを発表",
+        "summary": "Google DeepMindは、地球上のあらゆる10メートル区画を詳細な森林タイプに分類する新たなグローバルマップおよびAIモデルを発表した。 従来の単なる被覆率計測を超え、生物多様性や炭素貯蔵量のより精緻な解析を可能にしている。 環境モニタリングや気候変動対策アプリケーションを構築する開発者にとって、高解像度の地理空間データを活用した新プロダクト開発の重要な基盤となる。"
+      },
+      "en": {
+        "title": "Google DeepMind releases 10-meter resolution global forest map to advance biodiversity tracking and precision climate modeling",
+        "summary": "Google DeepMind has introduced a novel AI-powered global mapping system that categorizes every 10-meter patch of land on Earth into specific forest types. Moving beyond standard tree cover metrics, this model provides high-resolution insights into canopy composition, enabling far more precise carbon accounting and biodiversity monitoring worldwide. The system leverages satellite imagery combined with advanced machine learning to resolve subtle ecosystem variations that were previously impossible to detect at scale. For engineers and developers building satellite analysis pipelines or climate-tech applications, this dataset offers a highly granular foundation to build actionable environmental tracking dashboards and data products."
+      }
+    },
+    "tool_tags": [
+      "Gemini"
+    ],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-10-25T01:59:34.331Z"
+  },
+  {
+    "id": "art-1792893530631-pemjp",
+    "source_id": "source-github-copilot",
+    "source_name": "GitHub Copilot Changelog",
+    "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode",
+    "published_at": "2026-10-23T23:42:03.000Z",
+    "og_image_url": "https://github.blog/wp-content/uploads/2026/10/682164468-bde58abd-ebed-4a21-983d-e7ea362b9ed5.jpeg",
+    "title_ja": "GitHub Copilotの使用状況計測APIが拡張、OpenCodeなどのサードパーティツール経由のモデル利用データ取得に対応",
+    "summary_ja": "GitHubは、Copilotの使用状況分析API（Usage Metrics API）をアップデートし、これまで集計対象外だったOpenCodeなどの外部ツールのモデル利用量を正しく取得できる仕様へと拡張した。 組織全体のAI活用状況やトークン消費量を正確にモニタリング可能になり、開発チームのシャドーIT防止やコスト最適化、エンジニアリング組織の生産性計測に直接役立つアップデートである。",
+    "translations": {
+      "ja": {
+        "title": "GitHub Copilotの使用状況計測APIが拡張、OpenCodeなどのサードパーティツール経由のモデル利用データ取得に対応",
+        "summary": "GitHubは、Copilotの使用状況分析API（Usage Metrics API）をアップデートし、これまで集計対象外だったOpenCodeなどの外部ツールのモデル利用量を正しく取得できる仕様へと拡張した。 組織全体のAI活用状況やトークン消費量を正確にモニタリング可能になり、開発チームのシャドーIT防止やコスト最適化、エンジニアリング組織の生産性計測に直接役立つアップデートである。"
+      },
+      "en": {
+        "title": "GitHub Copilot expands Usage Metrics API to track developer model consumption across third-party extensions like OpenCode",
+        "summary": "GitHub updated the Copilot Usage Metrics API to capture model consumption originating from third-party developer extensions like OpenCode that were previously omitted from aggregate reporting. Engineering managers and operations teams can now monitor overall API usage, token consumption patterns, and developer seat adoption across their entire toolchain from a single API endpoint. Accurately tracking non-standard editor integrations helps prevent unmonitored shadow IT while giving leadership real visibility into real-world AI utility across mixed development stacks. For engineering leaders and platform builders managing Copilot deployments at scale, this API enhancement simplifies enterprise cost allocation, license auditability, and team-wide productivity benchmarking."
+      }
+    },
+    "tool_tags": [
+      "GitHub Copilot"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-25T01:58:50.631Z"
+  },
+  {
+    "id": "art-1792891086994-exkh2",
+    "source_id": "source-stripe",
+    "source_name": "Stripe Blog / Sessions",
+    "url": "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services",
+    "published_at": "2026-10-22T00:00:00.000Z",
+    "og_image_url": "https://images.stripeassets.com/fzn2n1nzq965/4bzNRA72QZNagUqXGkEHZQ/799e053aecd8374decb31abdcb129970/social_image_Specs__2000x1000px-1.png?q=80",
+    "title_ja": "Stripeが分析するMoney20/20最新動向：ステーブルコイン・AIエージェント決済・常時稼働マネーが金融基盤を不可視化へ",
+    "summary_ja": "Money20/20の議論を受け、Stripeはステーブルコインの普及、自律型AIエージェントによる決済、そして24時間365日稼働する金融インフラの台頭を指摘した。 高度な決済機能が製品の裏側に溶け込むことで、ユーザーは金融手続きを意識せずに取引を完了できるようになる。 開発者にとっては、自前で複雑な決済網を組むのではなく、AI自律決済や即時精算APIを組み込んだ体験設計が今後の差別化要因となる。",
+    "translations": {
+      "ja": {
+        "title": "Stripeが分析するMoney20/20最新動向：ステーブルコイン・AIエージェント決済・常時稼働マネーが金融基盤を不可視化へ",
+        "summary": "Money20/20の議論を受け、Stripeはステーブルコインの普及、自律型AIエージェントによる決済、そして24時間365日稼働する金融インフラの台頭を指摘した。 高度な決済機能が製品の裏側に溶け込むことで、ユーザーは金融手続きを意識せずに取引を完了できるようになる。 開発者にとっては、自前で複雑な決済網を組むのではなく、AI自律決済や即時精算APIを組み込んだ体験設計が今後の差別化要因となる。"
+      },
+      "en": {
+        "title": "Stripe highlights Money20/20 trends: How stablecoins, AI agents, and always-on money hide financial rails",
+        "summary": "Analyzing the latest Money20/20 shifts, Stripe highlights how financial infrastructure is quickly fading into the background behind modern digital experiences. The transition is driven by three key pillars: cross-border stablecoin rails, autonomous AI agents executing programmatic payments on behalf of users, and always-on financial architecture operating 24/7 without legacy banking delays. As these underlying mechanisms become invisible, end users experience frictionless value exchange without navigating complex checkout flows or traditional banking interfaces. For product builders and fintech engineers, the takeaway is clear: competitive advantage no longer lies in exposing custom payment plumbing. Instead, teams should leverage modern embedded settlement APIs and autonomous payment protocols to craft seamless, automated user workflows."
+      }
+    },
+    "tool_tags": [
+      "Stripe"
+    ],
+    "genre_tags": [
+      "ビジネス",
+      "開発",
+      "課金・ペイウォール"
+    ],
+    "created_at": "2026-10-25T01:18:06.994Z"
+  }
+]

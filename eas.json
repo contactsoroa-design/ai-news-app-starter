@@ -15,13 +15,22 @@
       }
     },
     "production": {
-      "environment": "production"
+      "environment": "production",
+      "autoIncrement": false,
+      "env": {
+        "EXPO_PUBLIC_FEED_URL": "https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/feed.json"
+      },
+      "ios": {
+        "resourceClass": "m-medium"
+      }
     }
   },
   "submit": {
     "production": {
       "ios": {
-        "language": "ja-JP"
+        "ascAppId": "6826796016",
+        "language": "ja-JP",
+        "companyName": "Soroa"
       }
     }
   }
