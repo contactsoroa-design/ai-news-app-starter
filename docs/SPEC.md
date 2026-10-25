@@ -31,7 +31,7 @@ AIニュースだけを、1枚ずつ縦スワイプで一目で読めるアプ�
    - `summary_en`（95〜140語、日本語と同密度のネイティブ英語）
    - `tool_tags` / `genre_tags`
 5. 要約は記事ごとに1回だけ作り、`data/articles.json`（`translations.ja` / `translations.en`）に保存して全ユーザーで共有する。品質ゲート（`npm run quality:check`）で英語の薄さを弾く。
-6. 1日の件数（`MAX_ARTICLES_PER_DAY`、デフォルト **240**、**Asia/Tokyo** 日付）と月の費用（`MAX_MONTHLY_COST_JPY`）に上限を設け、超えたら止める。1実行は `MAX_ARTICLES_PER_RUN`（既定15）＋記事間隔 `INGEST_ARTICLE_DELAY_MS` で分割し、429時は待機再試行する。
+6. 1日の件数（`MAX_ARTICLES_PER_DAY`、デフォルト **240**、**Asia/Tokyo** 日付）と月の費用（`MAX_MONTHLY_COST_JPY`）に上限を設け、超えたら止める。収集は **20分おき**、1実行は `MAX_ARTICLES_PER_RUN`（既定 **5**、時間あたり約15件）＋記事間隔 `INGEST_ARTICLE_DELAY_MS` で分割し、429時は待機再試行する。
 7. 品質失敗時の再試行は最大数回。レート制限（429）は指数バックオフで再試行する。
 8. フィードは直近30日を保持（件数制限なしのスライディング。ツール別最低件数の保護あり）。
 9. アプリへの配信は `EXPO_PUBLIC_FEED_URL` 経由が本番想定（起動・再読み込みで新着を取得）。開発中は未設定でも `public/articles.json`（ingest/seed が `data/` と同期）を都度取得。本番ビルドで未設定時は同梱JSONのみ。

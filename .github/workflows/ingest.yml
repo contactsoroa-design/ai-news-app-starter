@@ -4,8 +4,8 @@ name: Ingest AI news (JA+EN)
 
 on:
   schedule:
-    # 毎時15分（UTC）。日本時間では毎時 :15
-    - cron: '15 * * * *'
+    # 20分おき（UTC）。1実行を薄く分けて無料枠429を避ける（時間あたり件数は維持）
+    - cron: '*/20 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -18,8 +18,8 @@ concurrency:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    # 記事間隔＋429待機を見込む（1実行15件想定）
-    timeout-minutes: 90
+    # 記事間隔＋429待機を見込む（1実行5件想定）
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,9 +48,9 @@ jobs:
             echo "SUMMARY_API_KEY secret が未設定です。GitHub → Settings → Secrets に追加してください。"
             exit 1
           fi
-          # 無料枠 gemini-3.1-flash-lite 前提（1日上限は Asia/Tokyo でカウント）
+          # 無料枠: 20分×5件 ≒ 旧・毎時15件。1日上限は Asia/Tokyo
           export MAX_ARTICLES_PER_DAY="${MAX_ARTICLES_PER_DAY:-240}"
-          export MAX_ARTICLES_PER_RUN="${MAX_ARTICLES_PER_RUN:-15}"
+          export MAX_ARTICLES_PER_RUN="${MAX_ARTICLES_PER_RUN:-5}"
           export MAX_MONTHLY_COST_JPY="${MAX_MONTHLY_COST_JPY:-3000}"
           export SUMMARY_MODEL="${SUMMARY_MODEL:-gemini-3.1-flash-lite}"
           export SUMMARY_PROVIDER="${SUMMARY_PROVIDER:-gemini}"

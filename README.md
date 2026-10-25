@@ -40,7 +40,7 @@ cp .env.example .env
 - `SUMMARY_API_KEY`: 要約生成に使うLLMのAPIキー（スクリプト専用。**アプリ側には一切入らない**）
 - `SUMMARY_MODEL`: 要約モデル名（既定: `gemini-3.1-flash-lite`。比較例: `gemini-3.8-flash` / `gemini-3.6-flash`）
 - `MAX_ARTICLES_PER_DAY`: 1日の最大要約件数（Asia/Tokyo、無料枠 Lite 既定: `240`）
-- `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `15`。毎時実行で分割しレート制限を回避）
+- `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `5`。20分おき実行で分割しレート制限を回避。時間あたり約15件）
 - `INGEST_ARTICLE_DELAY_MS`: 記事ごとのLLM間隔ミリ秒（デフォルト: `4000`）
 - `MAX_MONTHLY_COST_JPY`: 月間の費用上限（デフォルト: `3000`。無料枠中は実質 $0）
 - `EXPO_PUBLIC_FEED_URL`: （任意）本番等でリモートの静的JSON URLから記事を取得する場合に指定。未指定でも **開発中（`expo start`）は `public/articles.json` を都度取得**する。
@@ -77,7 +77,7 @@ npm run quality:check  # 英語95語未満など不合格を検出
 
 **GitHub Actions（本線・PCオフでも動く）**
 1. Secret `SUMMARY_API_KEY` と Variables（`SUMMARY_MODEL=gemini-3.1-flash-lite` 等）を設定
-2. 毎時 cron（UTC `:15`）が `data/articles.json` / `public/articles.json` を更新して push
+2. 20分おき cron（UTC `*/20`）が `data/articles.json` / `public/articles.json` を更新して push
 3. 手動実行: Actions タブ → `Ingest AI news (JA+EN)` → Run workflow
 
 **手元 Mac（毎時 `:00` に Actions をキック）**  
@@ -89,7 +89,7 @@ Desktop 配下は macOS TCC で LaunchAgent から `npm` 実行できないた�
 #   pbpaste > ~/Library/Application\ Support/ai-news-ingest/github_token && chmod 600 $_
 # ログ: ~/Library/Logs/ai-news-ingest/
 ```
-※ GitHub Actions の cron（UTC `:15`）だけ使う場合は Mac 側の認証は不要です。
+※ GitHub Actions の cron（UTC `*/20`）だけ使う場合は Mac 側の認証は不要です。
 
 ワークフロー: `.github/workflows/ingest.yml`
 

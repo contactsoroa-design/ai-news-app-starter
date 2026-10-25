@@ -36,8 +36,8 @@ const ESTIMATED_COST_PER_ARTICLE_JPY = 0.15;
 
 /** 本番向け: 記事ごとのLLM間隔（ミリ秒）。連続呼び出しで 429 を避ける */
 const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
-/** 無料枠 Lite: 毎時実行で分割しつつ取りこぼしを減らす既定 */
-const DEFAULT_ARTICLES_PER_RUN = 15;
+/** 無料枠 Lite: 20分おき実行×5件 ≒ 時間あたり15件（429を避けつつ件数維持） */
+const DEFAULT_ARTICLES_PER_RUN = 5;
 /** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
 const RSS_ITEMS_PER_SOURCE = 6;
 
@@ -652,7 +652,7 @@ async function main() {
   const sourcesPath = path.join(rootDir, 'data', 'sources.json');
   const articlesPath = path.join(rootDir, 'data', 'articles.json');
 
-  // ソース取りこぼし防止。毎時 cron で分割取得してレート制限を避ける
+  // ソース取りこぼし防止。20分おき cron × 少数件で分割しレート制限を避ける
   const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '240');
   const maxPerRun = Math.min(
     Number(process.env.MAX_ARTICLES_PER_RUN || DEFAULT_ARTICLES_PER_RUN),
