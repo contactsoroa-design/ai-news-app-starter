@@ -73,19 +73,23 @@ npm run ingest         # RSS収集 → 日英ネイティブ要約
 npm run quality:check  # 英語95語未満など不合格を検出
 ```
 
-### B. GitHub Actions で毎時自動更新（推奨・無料枠 Lite）
-1. このリポジトリを GitHub に push する
-2. **Settings → Secrets and variables → Actions** に `SUMMARY_API_KEY` を追加
-3. Variables（推奨）:
-   - `SUMMARY_MODEL=gemini-3.1-flash-lite`
-   - `SUMMARY_PROVIDER=gemini`
-   - `MAX_ARTICLES_PER_RUN=10`
-   - `MAX_ARTICLES_PER_DAY=80`
-   - `INGEST_ARTICLE_DELAY_MS=5000`
-4. **Actions → “Ingest AI news (JA+EN)” → Run workflow** で初回確認
-5. 以降は毎時 cron が `data/articles.json` と `public/articles.json` を更新して push する
+### B. 毎時自動更新（無料枠 Lite）
 
-ワークフロー: `.github/workflows/ingest.yml`
+**手元 Mac（すぐ有効・推奨の当面手段）**
+```bash
+./scripts/install-local-hourly-ingest.sh   # 毎時 :00 に npm run ingest
+# ログ: tmp/ingest-logs/
+```
+
+**GitHub Actions（workflow スコープ付与後）**
+1. Secret `SUMMARY_API_KEY` と Variables（`SUMMARY_MODEL=gemini-3.1-flash-lite` 等）を設定済みなら
+2. 一度だけ OAuth に `workflow` スコープを付与して workflow を push:
+   ```bash
+   ./scripts/push-github-actions.sh
+   ```
+3. 以降は毎時 cron が `data/articles.json` と `public/articles.json` を更新して push する
+
+ワークフロー（ローカルにあり、上記スクリプトで push）: `.github/workflows/ingest.yml`
 
 ### C. アプリに新着を届ける
 1. **開発中**: 上記 A/B のあと、アプリ起動またはフォアグラウンド復帰で `public/articles.json` を再取得（手動再読み込みも可）。
