@@ -5,14 +5,27 @@ import { localizeArticlesBatch } from './translate';
 import { genres as allGenres, tools as allTools } from '../theme/tokens';
 import type { AppLocale, Article, Source, UserPrefs } from './types';
 
+/** GitHub raw が落ちても読めるよう、本番フィードのミラー候補 */
+const PRODUCTION_FEED_MIRRORS = [
+  'https://cdn.jsdelivr.net/gh/contactsoroa-design/ai-news-app-starter@main/data/articles.json',
+  'https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/articles.json',
+  'https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/feed.json',
+] as const;
+
 /**
- * フィードJSONの取得先。
+ * フィードJSONの取得先一覧。
  * EXPO_PUBLIC_FEED_URL 優先。未設定の開発時は Metro が配信する
  * public/articles.json を都度取得し、同梱 import のキャッシュを避ける。
  * （ingest 等の Node からもこのファイルを読むため、expo-constants は遅延 require）
  */
-function resolveFeedUrl(): string {
-  if (env.feedUrl) return env.feedUrl;
+function resolveFeedUrls(): string[] {
+  const urls: string[] = [];
+  const pushUnique = (url: string) => {
+    const trimmed = url.trim();
+    if (trimmed && !urls.includes(trimmed)) urls.push(trimmed);
+  };
+
+  if (env.feedUrl) pushUnique(env.feedUrl);
 
   if (typeof __DEV__ !== 'undefined' && __DEV__) {
     try {
@@ -28,13 +41,21 @@ function resolveFeedUrl(): string {
         Constants.manifest?.debuggerHost ||
         null;
       if (hostUri) {
-        return `http://${hostUri}/articles.json`;
+        pushUnique(`http://${hostUri}/articles.json`);
       }
     } catch {
       // Node スクリプトや Constants 未初期化時は同梱JSONへフォールバック
     }
   }
-  return '';
+
+  // 本番ビルド（FEED_URL あり）でも raw CDN障害に備えミラーを末尾に足す
+  if (env.feedUrl) {
+    for (const mirror of PRODUCTION_FEED_MIRRORS) {
+      pushUnique(mirror);
+    }
+  }
+
+  return urls;
 }
 
 function withCacheBust(url: string): string {
@@ -46,7 +67,7 @@ function withCacheBust(url: string): string {
  * 見出しに含まれる余計な記号やプレフィックスノイズを除去する
  */
 export function cleanArticleTitle(rawTitle: string): string {
-  return rawTitle
+  return String(rawTitle ?? '')
     .replace(/\s+/g, ' ')
     .replace(/\b(?:Read more|Continue reading)\b/gi, '')
     .replace(/続きを(?:みる|見る)|続きを読む/g, '')
@@ -62,7 +83,7 @@ export function cleanArticleSummary(
   titleJa = '',
   sourceName = ''
 ): string {
-  let s = rawSummary
+  let s = String(rawSummary ?? '')
     // 1. アプリ独自の旧案内定型文・操作説明・汎用フィラー文を除去（入れ子のカギ括弧にも対応）
     .replace(/右下の「元記事」[^。]*。?/g, '')
     .replace(/^[^。]{1,60}で公開された「[\s\S]+?」の個別記事。\s*/g, '')
@@ -187,6 +208,25 @@ function unwrapArticlesPayload(data: unknown): Article[] {
   throw new Error('Invalid articles feed shape');
 }
 
+async function loadRawArticlesFromRemote(urls: string[]): Promise<Article[]> {
+  let lastError: unknown;
+  for (const url of urls) {
+    try {
+      const response = await fetch(withCacheBust(url));
+      if (!response.ok) {
+        lastError = new Error(`HTTP ${response.status} for ${url}`);
+        continue;
+      }
+      return unwrapArticlesPayload(await response.json());
+    } catch (err) {
+      lastError = err;
+    }
+  }
+  throw lastError instanceof Error
+    ? lastError
+    : new Error('All feed URLs failed');
+}
+
 export async function fetchArticles(
   targetLocale: AppLocale = 'ja',
   onProgress?: (
@@ -196,13 +236,14 @@ export async function fetchArticles(
   ) => void
 ): Promise<Article[]> {
   let rawArticles: Article[];
-  const feedUrl = resolveFeedUrl();
-  if (feedUrl) {
-    const response = await fetch(withCacheBust(feedUrl));
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
+  const feedUrls = resolveFeedUrls();
+  if (feedUrls.length > 0) {
+    try {
+      rawArticles = await loadRawArticlesFromRemote(feedUrls);
+    } catch {
+      // リモート不通・壊れたJSONでも起動できるように同梱フィードへフォールバック
+      rawArticles = unwrapArticlesPayload(seedArticlesData);
     }
-    rawArticles = unwrapArticlesPayload(await response.json());
   } else {
     rawArticles = unwrapArticlesPayload(seedArticlesData);
   }
