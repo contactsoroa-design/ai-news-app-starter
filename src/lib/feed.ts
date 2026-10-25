@@ -9,6 +9,7 @@ import type { AppLocale, Article, Source, UserPrefs } from './types';
 const PRODUCTION_FEED_MIRRORS = [
   'https://cdn.jsdelivr.net/gh/contactsoroa-design/ai-news-app-starter@main/data/articles.json',
   'https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/articles.json',
+  'https://github.com/contactsoroa-design/ai-news-app-starter/raw/refs/heads/main/data/articles.json',
   'https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/feed.json',
 ] as const;
 
@@ -315,6 +316,7 @@ export function createDefaultUserPrefs(sources: Source[]): UserPrefs {
     region_locale: 'ja',
     source_language: 'both',
     show_original_button: true,
+    show_sponsored: true,
     updated_at: new Date().toISOString(),
   };
 }
@@ -386,6 +388,10 @@ export function hydrateUserPrefs(
       typeof stored.show_original_button === 'boolean'
         ? stored.show_original_button
         : defaults.show_original_button,
+    show_sponsored:
+      typeof stored.show_sponsored === 'boolean'
+        ? stored.show_sponsored
+        : defaults.show_sponsored,
     updated_at: stored.updated_at || defaults.updated_at,
     seen_source_ids: sources.map((s) => s.id),
   };

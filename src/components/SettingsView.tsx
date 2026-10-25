@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Svg, { Circle, Path, Rect } from 'react-native-svg';
-import { copy, regionLocales } from '../lib/config';
+import {
+  getCopy,
+  getGenreLabel,
+  getSourceCategoryLabel,
+  regionLocales,
+} from '../lib/config';
 import { getFaviconUrl } from '../lib/feed';
 import type { AppLocale, Source, SourceLanguageFilter, UserPrefs } from '../lib/types';
 import {
@@ -312,6 +317,8 @@ export function SettingsView({
   onResetHidden,
   onStartSwiping,
 }: SettingsViewProps) {
+  const locale = prefs.region_locale;
+  const t = getCopy(locale);
   const [subScreen, setSubScreen] = useState<'root' | 'manage'>(
     initialSubScreen === 'root' ? 'root' : 'manage'
   );
@@ -421,29 +428,44 @@ export function SettingsView({
     }));
   };
 
+  const toggleShowSponsored = () => {
+    onUpdatePrefs((prev) => ({
+      ...prev,
+      show_sponsored: !prev.show_sponsored,
+      updated_at: new Date().toISOString(),
+    }));
+  };
+
   // 設定 > 1枚に統合された「ジャンル × ツール × 情報源（ソース）」絞り込み画面
   if (subScreen === 'manage') {
     const categories = Array.from(
       new Set(sources.map((s) => s.category || 'その他'))
     );
 
+    const listJoin = locale === 'en' ? ', ' : '・';
     const previewSourcesText =
       prefs.enabled_source_ids.length === sources.length
-        ? `全${sources.length}情報源`
-        : `選択した${prefs.enabled_source_ids.length}情報源`;
+        ? t.manage.allSources(sources.length)
+        : t.manage.selectedSources(prefs.enabled_source_ids.length);
     const previewToolsText =
-      prefs.tools.length > 0 ? prefs.tools.join('・') : '全ツール';
+      prefs.tools.length > 0
+        ? prefs.tools.join(listJoin)
+        : t.manage.allToolsShort;
     const previewGenresText =
-      prefs.genres.length > 0 ? prefs.genres.join('・') : '全ジャンル';
+      prefs.genres.length > 0
+        ? prefs.genres.map((g) => getGenreLabel(g, locale)).join(listJoin)
+        : t.manage.allGenresShort;
 
     const countSuffix =
-      typeof matchingCount === 'number' ? `（該当 ${matchingCount}件）` : '';
+      typeof matchingCount === 'number'
+        ? t.manage.matchCountSuffix(matchingCount)
+        : '';
 
     const previewSummary =
       prefs.tools.length === 0 &&
       prefs.genres.length === 0 &&
       prefs.enabled_source_ids.length === sources.length
-        ? `${copy.manage.previewAll}${countSuffix}`
+        ? `${t.manage.previewAll}${countSuffix}`
         : `${previewSourcesText} × ${previewToolsText} × ${previewGenresText}${countSuffix}`;
 
     const allSourcesEnabled = prefs.enabled_source_ids.length === sources.length;
@@ -457,19 +479,19 @@ export function SettingsView({
               style={styles.backButton}
               onPress={() => setSubScreen('root')}
               accessibilityRole="button"
-              accessibilityLabel={copy.manage.backToSettingsAria}
+              accessibilityLabel={t.manage.backToSettingsAria}
             >
-              <Text style={styles.backButtonText}>{copy.manage.backToSettings}</Text>
+              <Text style={styles.backButtonText}>{t.manage.backToSettings}</Text>
             </Pressable>
 
             <Pressable
               style={styles.headerApplyPill}
               onPress={onStartSwiping}
               accessibilityRole="button"
-              accessibilityLabel={copy.manage.applyAndStart}
+              accessibilityLabel={t.manage.applyAndStart}
             >
               <Text style={styles.headerApplyPillText}>
-                {copy.manage.applyAndStart}
+                {t.manage.applyAndStart}
               </Text>
             </Pressable>
           </View>
@@ -478,7 +500,7 @@ export function SettingsView({
           <View style={styles.previewBox}>
             <View style={styles.previewHeaderRow}>
               <View style={styles.previewLiveDot} />
-              <Text style={styles.previewHeading}>{copy.manage.previewHeading}</Text>
+              <Text style={styles.previewHeading}>{t.manage.previewHeading}</Text>
             </View>
             <Text style={styles.previewBody} numberOfLines={2}>
               {previewSummary}
@@ -491,18 +513,18 @@ export function SettingsView({
           contentContainerStyle={styles.manageContent}
           showsVerticalScrollIndicator={false}
         >
-          <Text style={styles.pageTitle}>{copy.manage.unifiedTitle}</Text>
-          <Text style={styles.pageDescription}>{copy.manage.unifiedDesc}</Text>
+          <Text style={styles.pageTitle}>{t.manage.unifiedTitle}</Text>
+          <Text style={styles.pageDescription}>{t.manage.unifiedDesc}</Text>
 
           {/* ① ジャンル選択セクション（分野アイコン付き） */}
           <View style={styles.filterSectionCard}>
             <View style={styles.filterSectionHeader}>
               <View style={styles.filterSectionTitleCol}>
                 <Text style={styles.filterSectionTitle}>
-                  {copy.manage.genresHeading}
+                  {t.manage.genresHeading}
                 </Text>
                 <Text style={styles.filterSectionSub}>
-                  {copy.manage.genresSub}
+                  {t.manage.genresSub}
                 </Text>
               </View>
               {prefs.genres.length > 0 ? (
@@ -512,7 +534,7 @@ export function SettingsView({
                   accessibilityRole="button"
                 >
                   <Text style={styles.batchToggleBtnText}>
-                    {copy.manage.clearAll}
+                    {t.manage.clearAll}
                   </Text>
                 </Pressable>
               ) : null}
@@ -520,6 +542,7 @@ export function SettingsView({
 
             <View style={styles.chipWrap}>
               {allGenres.map((genre) => {
+                const genreLabel = getGenreLabel(genre, locale);
                 const selected = prefs.genres.includes(genre);
                 const iconColor = selected
                   ? themes.neutral.background
@@ -535,7 +558,7 @@ export function SettingsView({
                     ]}
                     onPress={() => toggleGenre(genre)}
                     accessibilityRole="button"
-                    accessibilityLabel={genre}
+                    accessibilityLabel={genreLabel}
                     accessibilityState={{ selected }}
                   >
                     <GenreIcon genre={genre} color={iconColor} />
@@ -545,7 +568,7 @@ export function SettingsView({
                         selected && styles.filterChipTextSelected,
                       ]}
                     >
-                      {selected ? `${genre} ✓` : genre}
+                      {selected ? `${genreLabel} ✓` : genreLabel}
                     </Text>
                   </Pressable>
                 );
@@ -558,10 +581,10 @@ export function SettingsView({
             <View style={styles.filterSectionHeader}>
               <View style={styles.filterSectionTitleCol}>
                 <Text style={styles.filterSectionTitle}>
-                  {copy.manage.toolsHeading}
+                  {t.manage.toolsHeading}
                 </Text>
                 <Text style={styles.filterSectionSub}>
-                  {copy.manage.toolsSub}
+                  {t.manage.toolsSub}
                 </Text>
               </View>
               {prefs.tools.length > 0 ? (
@@ -571,7 +594,7 @@ export function SettingsView({
                   accessibilityRole="button"
                 >
                   <Text style={styles.batchToggleBtnText}>
-                    {copy.manage.clearAll}
+                    {t.manage.clearAll}
                   </Text>
                 </Pressable>
               ) : null}
@@ -625,10 +648,13 @@ export function SettingsView({
             <View style={styles.filterSectionHeader}>
               <View style={styles.filterSectionTitleCol}>
                 <Text style={styles.filterSectionTitle}>
-                  {copy.manage.sourcesHeading}
+                  {t.manage.sourcesHeading}
                 </Text>
                 <Text style={styles.filterSectionSub}>
-                  {`${copy.manage.sourcesSub}（${prefs.enabled_source_ids.length} / ${sources.length}件ON）`}
+                  {`${t.manage.sourcesSub}${t.manage.sourcesOnSuffix(
+                    prefs.enabled_source_ids.length,
+                    sources.length
+                  )}`}
                 </Text>
               </View>
               <Pressable
@@ -637,7 +663,7 @@ export function SettingsView({
                 accessibilityRole="button"
               >
                 <Text style={styles.batchToggleBtnText}>
-                  {allSourcesEnabled ? copy.manage.clearAll : copy.manage.selectAll}
+                  {allSourcesEnabled ? t.manage.clearAll : t.manage.selectAll}
                 </Text>
               </Pressable>
             </View>
@@ -650,14 +676,18 @@ export function SettingsView({
                 prefs.enabled_source_ids.includes(s.id)
               ).length;
               const allCatEnabled = enabledInCat === catSources.length;
+              const categoryLabel = getSourceCategoryLabel(category, locale);
 
               return (
                 <View key={category} style={styles.categoryGroupBox}>
                   <View style={styles.categoryHeaderRow}>
                     <View style={styles.categoryTitleCol}>
-                      <Text style={styles.sectionLabel}>{category}</Text>
+                      <Text style={styles.sectionLabel}>{categoryLabel}</Text>
                       <Text style={styles.categoryCountText}>
-                        {`${enabledInCat} / ${catSources.length} 件オン`}
+                        {t.manage.categoryOnSuffix(
+                          enabledInCat,
+                          catSources.length
+                        )}
                       </Text>
                     </View>
                     <Pressable
@@ -668,7 +698,7 @@ export function SettingsView({
                       accessibilityRole="button"
                     >
                       <Text style={styles.batchToggleBtnText}>
-                        {allCatEnabled ? copy.manage.clearAll : copy.manage.selectAll}
+                        {allCatEnabled ? t.manage.clearAll : t.manage.selectAll}
                       </Text>
                     </Pressable>
                   </View>
@@ -729,9 +759,9 @@ export function SettingsView({
             style={styles.applyButton}
             onPress={onStartSwiping}
             accessibilityRole="button"
-            accessibilityLabel={copy.manage.applyAndStart}
+            accessibilityLabel={t.manage.applyAndStart}
           >
-            <Text style={styles.applyButtonText}>{copy.manage.applyAndStart}</Text>
+            <Text style={styles.applyButtonText}>{t.manage.applyAndStart}</Text>
           </Pressable>
         </ScrollView>
       </View>
@@ -739,19 +769,29 @@ export function SettingsView({
   }
 
   // 設定トップ画面
+  const listJoin = locale === 'en' ? ', ' : '・';
   const activeToolsSummary =
     prefs.tools.length > 0
-      ? `ツール: ${prefs.tools.slice(0, 4).join('・')}${
-          prefs.tools.length > 4 ? ` ほか+${prefs.tools.length - 4}` : ''
+      ? `${t.settings.toolsPrefix}: ${prefs.tools
+          .slice(0, 4)
+          .join(listJoin)}${
+          prefs.tools.length > 4
+            ? t.settings.andMore(prefs.tools.length - 4)
+            : ''
         }`
-      : copy.settings.allToolsActive;
+      : t.settings.allToolsActive;
 
   const activeGenresSummary =
     prefs.genres.length > 0
-      ? `ジャンル: ${prefs.genres.join('・')}`
-      : copy.settings.allGenresActive;
+      ? `${t.settings.genresPrefix}: ${prefs.genres
+          .map((g) => getGenreLabel(g, locale))
+          .join(listJoin)}`
+      : t.settings.allGenresActive;
 
-  const activeSourcesSummary = `情報源: ${prefs.enabled_source_ids.length} / ${sources.length} メディアON`;
+  const activeSourcesSummary = `${t.settings.sourcesPrefix}: ${t.settings.mediaOnSuffix(
+    prefs.enabled_source_ids.length,
+    sources.length
+  )}`;
 
   return (
     <ScrollView
@@ -759,28 +799,28 @@ export function SettingsView({
       contentContainerStyle={styles.rootContent}
       showsVerticalScrollIndicator={false}
     >
-      <Text style={styles.pageSubtitle}>{copy.settings.subtitle}</Text>
-      <Text style={styles.pageTitle}>{copy.settings.title}</Text>
+      <Text style={styles.pageSubtitle}>{t.settings.subtitle}</Text>
+      <Text style={styles.pageTitle}>{t.settings.title}</Text>
 
       {/* 目立つフィード絞り込み・カスタマイズ大型パネル（1画面統合） */}
       <View style={styles.filterHeroCard}>
         <View style={styles.filterHeroBadgeRow}>
           <View style={styles.filterHeroBadge}>
             <Text style={styles.filterHeroBadgeText}>
-              {copy.settings.filterHeroBadge}
+              {t.settings.filterHeroBadge}
             </Text>
           </View>
         </View>
 
-        <Text style={styles.filterHeroTitle}>{copy.settings.filterHeroTitle}</Text>
-        <Text style={styles.filterHeroDesc}>{copy.settings.filterHeroDesc}</Text>
+        <Text style={styles.filterHeroTitle}>{t.settings.filterHeroTitle}</Text>
+        <Text style={styles.filterHeroDesc}>{t.settings.filterHeroDesc}</Text>
 
         {/* 現在の掛け算ステータス一覧バッジ */}
         <View style={styles.activeStatusBox}>
           <Text style={styles.activeStatusHeading}>
-            {copy.settings.activeFilterHeading}
+            {t.settings.activeFilterHeading}
             {typeof matchingCount === 'number'
-              ? ` — 該当ニュース ${matchingCount}件`
+              ? t.settings.matchingNewsSuffix(matchingCount)
               : ''}
           </Text>
           <View style={styles.activeStatusPillsRow}>
@@ -841,7 +881,7 @@ export function SettingsView({
           style={styles.heroActionCardPrimary}
           onPress={() => setSubScreen('manage')}
           accessibilityRole="button"
-          accessibilityLabel={copy.settings.unifiedActionTitle}
+          accessibilityLabel={t.settings.unifiedActionTitle}
         >
           <View style={styles.heroActionIconBoxPrimary}>
             <Svg width={22} height={22} viewBox="0 0 24 24" fill="none">
@@ -855,10 +895,10 @@ export function SettingsView({
           </View>
           <View style={styles.heroActionTextCol}>
             <Text style={styles.heroActionTitlePrimary}>
-              {copy.settings.unifiedActionTitle}
+              {t.settings.unifiedActionTitle}
             </Text>
             <Text style={styles.heroActionSubPrimary}>
-              {copy.settings.unifiedActionSub}
+              {t.settings.unifiedActionSub}
             </Text>
           </View>
           <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
@@ -875,7 +915,7 @@ export function SettingsView({
 
       {/* 地域・翻訳言語 */}
       <Text style={[styles.sectionLabel, styles.sectionSpacing]}>
-        {copy.settings.regionLocaleLabel}
+        {t.settings.regionLocaleLabel}
       </Text>
       <View style={styles.chipWrap}>
         {regionLocales.map((loc) => {
@@ -909,14 +949,14 @@ export function SettingsView({
 
       {/* ソースの言語 */}
       <Text style={[styles.sectionLabel, styles.sectionSpacing]}>
-        {copy.settings.sourceLanguageLabel}
+        {t.settings.sourceLanguageLabel}
       </Text>
       <View style={styles.chipWrap}>
         {(
           [
-            { key: 'ja', label: copy.settings.langJaOnly },
-            { key: 'en', label: copy.settings.langEnOnly },
-            { key: 'both', label: copy.settings.langBoth },
+            { key: 'ja', label: t.settings.langJaOnly },
+            { key: 'en', label: t.settings.langEnOnly },
+            { key: 'both', label: t.settings.langBoth },
           ] as const
         ).map((opt) => {
           const selected = prefs.source_language === opt.key;
@@ -947,17 +987,17 @@ export function SettingsView({
 
       {/* 表示オプション */}
       <Text style={[styles.sectionLabel, styles.sectionSpacing]}>
-        {copy.settings.displaySectionLabel}
+        {t.settings.displaySectionLabel}
       </Text>
       <View style={styles.settingRow}>
         <Text style={styles.settingRowLabel}>
-          {copy.settings.showOriginalButtonLabel}
+          {t.settings.showOriginalButtonLabel}
         </Text>
         <Pressable
           style={styles.switchHitArea}
           onPress={toggleShowOriginalButton}
           accessibilityRole="switch"
-          accessibilityLabel={copy.settings.showOriginalButtonLabel}
+          accessibilityLabel={t.settings.showOriginalButtonLabel}
           accessibilityState={{ checked: prefs.show_original_button }}
         >
           <View
@@ -982,26 +1022,61 @@ export function SettingsView({
         </Pressable>
       </View>
 
+      <View style={styles.settingRow}>
+        <Text style={styles.settingRowLabel}>
+          {t.settings.showSponsoredLabel}
+        </Text>
+        <Pressable
+          style={styles.switchHitArea}
+          onPress={toggleShowSponsored}
+          accessibilityRole="switch"
+          accessibilityLabel={t.settings.showSponsoredLabel}
+          accessibilityState={{ checked: prefs.show_sponsored }}
+        >
+          <View
+            style={[
+              styles.switchTrack,
+              {
+                backgroundColor: prefs.show_sponsored
+                  ? themes.neutral.accent
+                  : themes.neutral.line,
+              },
+            ]}
+          >
+            <View
+              style={[
+                styles.switchThumb,
+                prefs.show_sponsored
+                  ? styles.switchThumbOn
+                  : styles.switchThumbOff,
+              ]}
+            />
+          </View>
+        </Pressable>
+      </View>
+
       {hiddenCount > 0 ? (
         <View style={styles.settingRow}>
           <Text style={styles.settingRowLabel}>
-            {`${copy.settings.hiddenResetLabel}（${hiddenCount}件）`}
+            {`${t.settings.hiddenResetLabel}${t.settings.hiddenCountSuffix(
+              hiddenCount
+            )}`}
           </Text>
           <Pressable
             style={styles.resetButton}
             onPress={onResetHidden}
             accessibilityRole="button"
-            accessibilityLabel={copy.settings.hiddenResetButton}
+            accessibilityLabel={t.settings.hiddenResetButton}
           >
             <Text style={styles.resetButtonText}>
-              {copy.settings.hiddenResetButton}
+              {t.settings.hiddenResetButton}
             </Text>
           </Pressable>
         </View>
       ) : null}
 
       <View style={styles.privacyBox}>
-        <Text style={styles.privacyText}>{copy.settings.privacyNote}</Text>
+        <Text style={styles.privacyText}>{t.settings.privacyNote}</Text>
       </View>
     </ScrollView>
   );

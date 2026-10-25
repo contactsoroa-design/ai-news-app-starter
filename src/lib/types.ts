@@ -35,6 +35,32 @@ export type Article = {
   created_at: string;
 };
 
+/** 自前スポンサード（アフィリ／直契約）。AdMob は使わない */
+export type SponsoredItem = {
+  kind: 'sponsored';
+  id: string;
+  advertiser_name: string;
+  /** テーマ用（tokens の tools 名）。任意 */
+  tool_tag?: string | null;
+  url: string;
+  image_url: string | null;
+  title_ja: string;
+  summary_ja: string;
+  cta_label_ja: string;
+  cta_label_en: string;
+  translations?: Partial<Record<AppLocale, LocalizedArticleText>>;
+  active: boolean;
+  weight?: number;
+  start_at?: string | null;
+  end_at?: string | null;
+};
+
+export type FeedCardItem = Article | SponsoredItem;
+
+export function isSponsoredItem(item: FeedCardItem): item is SponsoredItem {
+  return (item as SponsoredItem).kind === 'sponsored';
+}
+
 export type SourceLanguageFilter = 'ja' | 'en' | 'both';
 
 export type UserPrefs = {
@@ -44,6 +70,8 @@ export type UserPrefs = {
   region_locale: AppLocale;
   source_language: SourceLanguageFilter;
   show_original_button: boolean;
+  /** フィードへの自前スポンサード差し込み（既定 ON） */
+  show_sponsored: boolean;
   updated_at: string;
   /**
    * 端末が最後に認識したソースID一覧。

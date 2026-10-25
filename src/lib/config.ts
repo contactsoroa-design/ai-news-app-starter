@@ -1,5 +1,6 @@
 // アプリ共通の文言・設定値（直書きを避けるためここに集約）
 import type { AppLocale } from './types';
+import { genres as genreIds } from '../theme/tokens';
 
 export const regionLocales: ReadonlyArray<{
   code: AppLocale;
@@ -10,7 +11,7 @@ export const regionLocales: ReadonlyArray<{
   { code: 'en', label: 'English (US/Global)', regionName: 'US / Global' },
 ] as const;
 
-export const copy = {
+const copyJa = {
   /** ホーム画面・アプリ内表示用の短い名前 */
   appName: 'AIニュース',
   /** App Store 表示名（ASO: 生成AI・最新・速報を前方配置、30字以内） */
@@ -51,6 +52,12 @@ export const copy = {
     openOriginalFromModal: '元記事をブラウザで開く',
     translatingBadge: '翻訳中...',
   },
+  sponsored: {
+    badge: '広告',
+    badgeAria: 'スポンサー広告',
+    openCtaAria: 'スポンサーの公式ページを開く',
+    longPressHint: '長押しで公式ページへ',
+  },
   explore: {
     title: '探索（一覧）',
     subtitle: '気になる記事をタップするとカード表示で読めます',
@@ -64,7 +71,8 @@ export const copy = {
     title: '保存済み',
     subtitle: 'この端末に保存したAIニュース（オフラインでも閲覧可能）',
     emptyTitle: '保存した記事はまだありません',
-    emptyDescription: 'フィード画面の右下にある「保存」ボタンを押すと、この端末内に記事データが保存されます。',
+    emptyDescription:
+      'フィード画面の右下にある「保存」ボタンを押すと、この端末内に記事データが保存されます。',
     removeLabel: '解除',
     removeAria: '保存を解除',
     backToList: '‹ 保存済み一覧に戻る',
@@ -91,9 +99,19 @@ export const copy = {
     langBoth: '両方（日英どちらも取り込む）',
     displaySectionLabel: '表示オプション',
     showOriginalButtonLabel: '「元記事」ボタンを表示',
+    showSponsoredLabel: 'スポンサー枠（広告）を表示',
     hiddenResetLabel: '「興味なし」で非表示にした記事を戻す',
     hiddenResetButton: 'リセット',
-    privacyNote: '保存済み・興味なし・地域設定はすべてこの端末内にのみ保存され、外部サーバーには送信されません。',
+    privacyNote:
+      '保存済み・興味なし・地域設定はすべてこの端末内にのみ保存され、外部サーバーには送信されません。',
+    toolsPrefix: 'ツール',
+    genresPrefix: 'ジャンル',
+    sourcesPrefix: '情報源',
+    mediaOnSuffix: (on: number, total: number) =>
+      `${on} / ${total} メディアON`,
+    andMore: (n: number) => ` ほか+${n}`,
+    matchingNewsSuffix: (n: number) => ` — 該当ニュース ${n}件`,
+    hiddenCountSuffix: (n: number) => `（${n}件）`,
   },
   manage: {
     backToSettings: '‹ 設定に戻る',
@@ -113,13 +131,227 @@ export const copy = {
     previewAll: '全情報源 × 全ツール × 全ジャンルのAIニュース（フル表示）',
     applyAndStart: 'この設定でスワイプ開始',
     pendingSourceLabel: '準備中（利用条件を確認中）',
+    otherCategory: 'その他',
+    allSources: (n: number) => `全${n}情報源`,
+    selectedSources: (n: number) => `選択した${n}情報源`,
+    allToolsShort: '全ツール',
+    allGenresShort: '全ジャンル',
+    matchCountSuffix: (n: number) => `（該当 ${n}件）`,
+    sourcesOnSuffix: (on: number, total: number) =>
+      `（${on} / ${total}件ON）`,
+    categoryOnSuffix: (on: number, total: number) =>
+      `${on} / ${total} 件オン`,
   },
   emptyFeed: '条件に合うニュースがありません。情報源を編集してください',
   editSourcesButton: '情報源を編集',
   resetHiddenButton: '非表示をリセット',
   errorNetwork: '通信に失敗しました。接続を確認して再試行してください。',
   retryButton: '再読み込み',
+  refreshingFeed: '最新のニュースを取得中…',
 } as const;
+
+type CopyShape = {
+  -readonly [K in keyof typeof copyJa]: (typeof copyJa)[K] extends string
+    ? string
+    : (typeof copyJa)[K] extends (...args: infer A) => string
+      ? (...args: A) => string
+      : {
+          -readonly [P in keyof (typeof copyJa)[K]]: (typeof copyJa)[K][P] extends (
+            ...args: infer A
+          ) => string
+            ? (...args: A) => string
+            : string;
+        };
+};
+
+const copyEn: CopyShape = {
+  appName: 'AI News',
+  storeName: 'AI News - Generative AI briefs',
+  storeSubtitle: 'Official digests, one swipe at a time',
+  topTabs: {
+    recommended: 'For you',
+    bySource: 'By source',
+    byTool: 'By tool',
+  },
+  chips: {
+    all: 'All',
+    edit: '+ Edit',
+    editAria: 'Edit sources and tools',
+  },
+  bottomTabs: {
+    home: 'Home',
+    explore: 'Explore',
+    saved: 'Saved',
+    settings: 'Settings',
+  },
+  rail: {
+    save: 'Save',
+    saved: 'Saved',
+    share: 'Share',
+    openOriginal: 'Original',
+    openOriginalAria: 'Open original article',
+    notInterested: 'Not for me',
+  },
+  card: {
+    ogpFallbackLabel: 'Article thumbnail (OGP image)',
+    longPressHint: 'Long-press for original',
+    longPressAriaHint: 'Long-press to open the original article in a browser',
+    readFullSummary: 'Read full summary',
+    readFullSummaryAria: 'Show the full summary',
+    closeFullSummary: 'Close',
+    openOriginalFromModal: 'Open original article',
+    translatingBadge: 'Translating…',
+  },
+  sponsored: {
+    badge: 'Ad',
+    badgeAria: 'Sponsored advertisement',
+    openCtaAria: 'Open sponsor page',
+    longPressHint: 'Long-press to open sponsor page',
+  },
+  explore: {
+    title: 'Explore',
+    subtitle: 'Tap a story to open it in card view',
+    searchPlaceholder: 'Search AI news, tools, or keywords',
+    clearSearchAria: 'Clear search',
+    emptySearchTitle: 'No matching news',
+    emptySearchDescription: 'Try another tool name or keyword.',
+    defaultTag: 'AI news',
+  },
+  saved: {
+    title: 'Saved',
+    subtitle: 'AI news saved on this device (available offline)',
+    emptyTitle: 'No saved articles yet',
+    emptyDescription:
+      'Tap Save on the lower right of the feed to keep an article on this device.',
+    removeLabel: 'Remove',
+    removeAria: 'Remove from saved',
+    backToList: '‹ Back to saved list',
+    backToListAria: 'Back to saved list',
+  },
+  settings: {
+    title: 'Settings',
+    subtitle: 'Feed, language, and display preferences',
+    filterHeroBadge: 'Recommended feed filters (AND)',
+    filterHeroTitle: 'Tune the news that reaches you',
+    filterHeroDesc:
+      'Filter by AI tool × genre × source on one screen. Only stories matching every selected condition appear.',
+    unifiedActionTitle: 'Filter tools, genres, and sources',
+    unifiedActionSub: 'Combine AI tools, topics, and publishers in one place',
+    activeFilterHeading: 'Active filters (AND applied)',
+    allToolsActive: 'All tools (32)',
+    allGenresActive: 'All genres (13)',
+    sourcesSectionLabel: 'Sources',
+    sourcesCardTitle: 'Sources, genres, and tools',
+    regionLocaleLabel: 'Display language (JA / EN native summaries)',
+    sourceLanguageLabel: 'Source languages to include',
+    langJaOnly: 'Japanese only',
+    langEnOnly: 'English only',
+    langBoth: 'Both (Japanese and English)',
+    displaySectionLabel: 'Display options',
+    showOriginalButtonLabel: 'Show “Original” button',
+    showSponsoredLabel: 'Show sponsor cards (ads)',
+    hiddenResetLabel: 'Restore articles marked “Not for me”',
+    hiddenResetButton: 'Reset',
+    privacyNote:
+      'Saved items, hidden articles, and region settings stay on this device only and are never sent to a server.',
+    toolsPrefix: 'Tools',
+    genresPrefix: 'Genres',
+    sourcesPrefix: 'Sources',
+    mediaOnSuffix: (on: number, total: number) => `${on} / ${total} publishers on`,
+    andMore: (n: number) => ` +${n} more`,
+    matchingNewsSuffix: (n: number) => ` — ${n} matching articles`,
+    hiddenCountSuffix: (n: number) => ` (${n})`,
+  },
+  manage: {
+    backToSettings: '‹ Back to settings',
+    backToSettingsAria: 'Back to settings',
+    unifiedTitle: 'Filter your feed (AND)',
+    unifiedDesc:
+      'Stories must match every selected “① genre × ② AI tool × ③ source”. Unselected groups mean “all”.',
+    selectAll: 'Turn all on',
+    clearAll: 'Clear all',
+    genresHeading: '① Filter by genre',
+    genresSub: 'Multi-select · leave empty for all genres',
+    toolsHeading: '② Filter by AI tool / model',
+    toolsSub: 'Multi-select · leave empty for all tools',
+    sourcesHeading: '③ Sources to follow',
+    sourcesSub: 'Only articles from enabled publishers',
+    previewHeading: 'News that will flow with ①×②×③',
+    previewAll: 'All sources × all tools × all genres (full feed)',
+    applyAndStart: 'Apply and start swiping',
+    pendingSourceLabel: 'Pending (terms under review)',
+    otherCategory: 'Other',
+    allSources: (n: number) => `All ${n} sources`,
+    selectedSources: (n: number) => `${n} sources selected`,
+    allToolsShort: 'All tools',
+    allGenresShort: 'All genres',
+    matchCountSuffix: (n: number) => ` (${n} matches)`,
+    sourcesOnSuffix: (on: number, total: number) => ` (${on} / ${total} on)`,
+    categoryOnSuffix: (on: number, total: number) => `${on} / ${total} on`,
+  },
+  emptyFeed: 'No news matches your filters. Edit your sources.',
+  editSourcesButton: 'Edit sources',
+  resetHiddenButton: 'Reset hidden',
+  errorNetwork: 'Couldn’t load the feed. Check your connection and try again.',
+  retryButton: 'Reload',
+  refreshingFeed: 'Fetching the latest news…',
+};
+
+export type AppCopy = CopyShape;
+
+/** 表示言語に合わせた UI 文言 */
+export function getCopy(locale: AppLocale = 'ja'): AppCopy {
+  return locale === 'en' ? copyEn : copyJa;
+}
+
+/** 後方互換（日本語）。新規コードは getCopy(locale) を使う */
+export const copy = copyJa;
+
+const genreLabelsEn: Record<(typeof genreIds)[number], string> = {
+  アップデート: 'Updates',
+  '個人開発・収益化': 'Indie & monetization',
+  'マーケ・集客・ASO': 'Marketing & ASO',
+  'SNS・ショート動画': 'Social & short video',
+  '課金・ペイウォール': 'Billing & paywalls',
+  'コスト・API料金': 'Cost & API pricing',
+  開発: 'Development',
+  ビジネス: 'Business',
+  画像生成: 'Image generation',
+  動画: 'Video',
+  音声: 'Audio',
+  研究: 'Research',
+  セキュリティ: 'Security',
+};
+
+/** 保存用ジャンルID（日本語）を表示言語のラベルへ */
+export function getGenreLabel(genreId: string, locale: AppLocale = 'ja'): string {
+  if (locale !== 'en') return genreId;
+  return genreLabelsEn[genreId as (typeof genreIds)[number]] ?? genreId;
+}
+
+const sourceCategoryLabelsEn: Record<string, string> = {
+  '主要AI・LLM公式': 'Major AI / LLM official',
+  '個人開発マーケ・ASO・課金・グロース': 'Indie marketing, ASO, billing & growth',
+  'AIエディタ・開発エージェント（個人開発定番）':
+    'AI editors & coding agents',
+  '個人開発インフラ・自動化・ローカルLLM':
+    'Indie infra, automation & local LLM',
+  '個人開発トレンド・収益化・ランキング':
+    'Indie trends, monetization & rankings',
+  'クリエイティブ・業務AIツール': 'Creative & productivity AI',
+  '日本語メディア・個人開発コミュニティ': 'Japanese media & indie community',
+  '研究・海外まとめ': 'Research & global digests',
+  その他: 'Other',
+};
+
+/** 情報源カテゴリ名の表示用ラベル */
+export function getSourceCategoryLabel(
+  category: string,
+  locale: AppLocale = 'ja'
+): string {
+  if (locale !== 'en') return category;
+  return sourceCategoryLabelsEn[category] ?? category;
+}
 
 export const limits = {
   // フィードの保持日数（直近30日以内の記事は件数制限なしで全件ストックし、31日以上前の記事を自動ローテーション）
@@ -132,9 +364,22 @@ export const limits = {
   maxSavedArticles: 500,
   // 端末内の「興味なし（非表示ID）」最大保持件数
   maxHiddenIds: 500,
+  /** おすすめフィードでスポンサードを差し込む間隔（記事N件ごと） */
+  sponsoredEveryN: 8,
+  /** 先頭から何件記事を出してから最初のスポンサードを出すか */
+  sponsoredMinArticlesBeforeFirst: 4,
 } as const;
 
+/** 本番ビルドで EXPO_PUBLIC_FEED_URL が空でも確実にリモート取得する既定 */
+const PRODUCTION_FEED_URL_FALLBACK =
+  'https://cdn.jsdelivr.net/gh/contactsoroa-design/ai-news-app-starter@main/data/articles.json';
+
 export const env = {
-  // リモート配信用の静的JSON URL（未設定時は開発中 Metro の public/、本番ビルドは同梱JSON）
-  feedUrl: (process.env.EXPO_PUBLIC_FEED_URL ?? '').trim(),
+  // リモート配信用の静的JSON URL（未設定時は開発中 Metro の public/、本番はフォールバックURL）
+  feedUrl: (() => {
+    const fromEnv = (process.env.EXPO_PUBLIC_FEED_URL ?? '').trim();
+    if (fromEnv) return fromEnv;
+    if (typeof __DEV__ !== 'undefined' && __DEV__) return '';
+    return PRODUCTION_FEED_URL_FALLBACK;
+  })(),
 } as const;

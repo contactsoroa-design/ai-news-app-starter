@@ -1,12 +1,15 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
+  ActivityIndicator,
   AppState,
   type AppStateStatus,
   FlatList,
   LayoutChangeEvent,
   NativeScrollEvent,
   NativeSyntheticEvent,
+  Platform,
   Pressable,
+  RefreshControl,
   ScrollView,
   StyleSheet,
   Text,
@@ -22,8 +25,9 @@ import {
   SettingsView,
   SiteFaviconBadge,
 } from '../src/components/SettingsView';
+import { SponsoredCard } from '../src/components/SponsoredCard';
 import { TabBarIcon } from '../src/components/TabBarIcon';
-import { copy } from '../src/lib/config';
+import { getCopy } from '../src/lib/config';
 import {
   articleMatchesPrefsFilter,
   cleanArticleSummary,
@@ -37,6 +41,10 @@ import {
   hydrateUserPrefs,
   normalizeAppLocale,
 } from '../src/lib/feed';
+import {
+  fetchSponsoredItems,
+  interleaveSponsoredCards,
+} from '../src/lib/sponsored';
 import { looksLikeLocale, relocalizeArticles } from '../src/lib/translate';
 import {
   getHiddenArticleIds,
@@ -48,7 +56,14 @@ import {
   setSavedArticlesData,
   setUserPrefs,
 } from '../src/lib/storage';
-import type { Article, Source, UserPrefs } from '../src/lib/types';
+import type {
+  Article,
+  FeedCardItem,
+  Source,
+  SponsoredItem,
+  UserPrefs,
+} from '../src/lib/types';
+import { isSponsoredItem } from '../src/lib/types';
 import {
   getThemeForArticle,
   size,
@@ -68,10 +83,11 @@ export default function HomeScreen() {
   const [feedHeight, setFeedHeight] = useState(
     Math.max(windowDims.height - size.tabBarHeight, 500)
   );
-  const flatListRef = useRef<FlatList<Article> | null>(null);
+  const flatListRef = useRef<FlatList<FeedCardItem> | null>(null);
 
   const sources = useMemo<Source[]>(() => getAllSources(), []);
   const [articles, setArticles] = useState<Article[]>([]);
+  const [sponsoredItems, setSponsoredItems] = useState<SponsoredItem[]>([]);
   const [savedIds, setSavedIds] = useState<string[]>([]);
   const [savedArticlesData, setSavedArticlesDataState] = useState<Article[]>([]);
   const [hiddenIds, setHiddenIds] = useState<string[]>([]);
@@ -89,13 +105,23 @@ export default function HomeScreen() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
   /** 探索から開いた記事を、絞り込みを壊さず一時的に先頭表示するためのID */
   const [previewArticleId, setPreviewArticleId] = useState<string | null>(null);
+  const lastFeedRefreshAtRef = useRef(0);
 
-  const loadData = useCallback(async () => {
-    setLoading(true);
+  const loadData = useCallback(async (
+    mode: 'initial' | 'refresh' | 'silent' = 'initial'
+  ) => {
+    const refreshStartedAt = mode === 'refresh' ? Date.now() : 0;
+    if (mode === 'refresh') {
+      setRefreshing(true);
+    } else if (mode === 'initial') {
+      setLoading(true);
+    }
     setError(null);
+    let uiLocale = prefs.region_locale;
     try {
       const [storedSaved, storedSavedArticles, storedHidden, storedPrefs] =
         await Promise.all([
@@ -110,58 +136,92 @@ export default function HomeScreen() {
         detectDeviceDefaultLocale()
       );
       const targetLocale = nextPrefs.region_locale;
+      uiLocale = targetLocale;
       setPrefs(nextPrefs);
       // 移行後の seen_source_ids などを端末へ書き戻し、次回以降の誤マージを防ぐ
       await setUserPrefs(nextPrefs);
       setSavedIds(storedSaved);
       setHiddenIds(storedHidden);
 
-      const fetchedArticles = await fetchArticles(targetLocale, (partial) => {
-        setArticles(partial);
-      });
+      const [fetchedArticles, fetchedSponsored] = await Promise.all([
+        fetchArticles(targetLocale, (partial) => {
+          setArticles(partial);
+        }),
+        fetchSponsoredItems(),
+      ]);
       setArticles(fetchedArticles);
+      setSponsoredItems(fetchedSponsored);
 
       // 端末保存済みの記事データを復元・同期（日本語原文のみクリーンアップ。他言語訳を壊さない）
-      const articleById = new Map<string, Article>();
-      for (const a of storedSavedArticles) {
-        const cleanedTitle = cleanArticleTitle(a.title_ja);
-        const summaryNeedsJaClean = looksLikeLocale(a.summary_ja, 'ja');
-        articleById.set(a.id, {
-          ...a,
-          title_ja: cleanedTitle,
-          summary_ja: summaryNeedsJaClean
-            ? cleanArticleSummary(
-                a.summary_ja,
-                cleanedTitle,
-                a.source_name
-              )
-            : a.summary_ja,
-        });
+      try {
+        const articleById = new Map<string, Article>();
+        for (const a of storedSavedArticles) {
+          const cleanedTitle = cleanArticleTitle(a.title_ja);
+          const summaryNeedsJaClean = looksLikeLocale(a.summary_ja, 'ja');
+          articleById.set(a.id, {
+            ...a,
+            title_ja: cleanedTitle,
+            summary_ja: summaryNeedsJaClean
+              ? cleanArticleSummary(
+                  a.summary_ja,
+                  cleanedTitle,
+                  a.source_name
+                )
+              : a.summary_ja,
+          });
+        }
+        for (const a of fetchedArticles) {
+          if (storedSaved.includes(a.id)) {
+            articleById.set(a.id, a);
+          }
+        }
+        const syncedSavedArticles = storedSaved
+          .map((id) => articleById.get(id))
+          .filter((a): a is Article => Boolean(a));
+        setSavedArticlesDataState(syncedSavedArticles);
+        await setSavedArticlesData(syncedSavedArticles);
+      } catch {
+        // 保存同期の失敗でフィード全体を落とさない
       }
-      for (const a of fetchedArticles) {
-        if (storedSaved.includes(a.id)) {
-          articleById.set(a.id, a);
+      setCurrentIndex(0);
+      lastFeedRefreshAtRef.current = Date.now();
+      if (mode === 'refresh') {
+        flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
+      }
+    } catch {
+      // 最終手段: 同梱フィードだけでも表示する
+      try {
+        const fallback = await fetchArticles(uiLocale);
+        if (fallback.length > 0) {
+          setArticles(fallback);
+          setError(null);
+        } else {
+          setError(getCopy(uiLocale).errorNetwork);
+        }
+      } catch {
+        setError(getCopy(uiLocale).errorNetwork);
+      }
+    } finally {
+      // 通信が速すぎてもスピナーが見えるよう最短表示
+      if (mode === 'refresh') {
+        const elapsed = Date.now() - refreshStartedAt;
+        const minVisibleMs = 800;
+        if (elapsed < minVisibleMs) {
+          await new Promise((resolve) =>
+            setTimeout(resolve, minVisibleMs - elapsed)
+          );
         }
       }
-      const syncedSavedArticles = storedSaved
-        .map((id) => articleById.get(id))
-        .filter((a): a is Article => Boolean(a));
-      setSavedArticlesDataState(syncedSavedArticles);
-      await setSavedArticlesData(syncedSavedArticles);
-      setCurrentIndex(0);
-    } catch {
-      setError(copy.errorNetwork);
-    } finally {
       setLoading(false);
+      setRefreshing(false);
     }
   }, [sources]);
 
   useEffect(() => {
-    loadData();
+    void loadData('initial');
   }, [loadData]);
 
   // フォアグラウンド復帰時にフィードを再取得（短時間の連続復帰はスキップ）
-  const lastFeedRefreshAtRef = useRef(0);
   const appStateRef = useRef<AppStateStatus>(AppState.currentState);
   useEffect(() => {
     const FEED_REFRESH_COOLDOWN_MS = 60_000;
@@ -174,12 +234,31 @@ export default function HomeScreen() {
       const now = Date.now();
       if (now - lastFeedRefreshAtRef.current < FEED_REFRESH_COOLDOWN_MS) return;
       lastFeedRefreshAtRef.current = now;
-      void loadData();
+      void loadData('silent');
     };
     const sub = AppState.addEventListener('change', onChange);
     lastFeedRefreshAtRef.current = Date.now();
     return () => sub.remove();
   }, [loadData]);
+
+  const handlePullRefresh = useCallback(() => {
+    if (refreshing || loading) return;
+    void loadData('refresh');
+  }, [loadData, refreshing, loading]);
+
+  const t = getCopy(prefs.region_locale);
+  const refreshProgressOffset = size.topTabsTop + size.minTap + 8;
+  const feedRefreshControl = (
+    <RefreshControl
+      refreshing={refreshing}
+      onRefresh={handlePullRefresh}
+      tintColor={themes.neutral.accent}
+      colors={[themes.neutral.accent]}
+      progressBackgroundColor={themes.neutral.panel}
+      progressViewOffset={refreshProgressOffset}
+      accessibilityLabel={t.retryButton}
+    />
+  );
 
   // 有効なソース・ツール一覧（チップ表示用）
   const enabledSources = useMemo(() => {
@@ -210,7 +289,7 @@ export default function HomeScreen() {
   }, [articles, hiddenIdSet, enabledSourceIdSet, prefs]);
 
   // ホーム画面の上部タブ（おすすめ / ソース別 / ツール別）の表示記事
-  const visibleArticles = useMemo(() => {
+  const visibleArticles = useMemo((): FeedCardItem[] => {
     let filtered = baseFilteredArticles.filter((article) => {
       if (topTab === 'source' && selectedSourceId) {
         return article.source_id === selectedSourceId;
@@ -241,7 +320,23 @@ export default function HomeScreen() {
       .sort(
         (a, b) => articleFeedTimestamp(b) - articleFeedTimestamp(a)
       );
-    return preview ? [preview, ...rest] : rest;
+    const ordered = preview ? [preview, ...rest] : rest;
+
+    // スポンサードはおすすめタブのみ（ソース別・ツール別には混ぜない）
+    if (
+      topTab === 'recommended' &&
+      prefs.show_sponsored &&
+      sponsoredItems.length > 0
+    ) {
+      const activeSponsored = sponsoredItems.filter(
+        (s) => !hiddenIdSet.has(s.id)
+      );
+      return interleaveSponsoredCards(ordered, activeSponsored, {
+        locale: prefs.region_locale,
+      });
+    }
+
+    return ordered;
   }, [
     baseFilteredArticles,
     topTab,
@@ -250,6 +345,9 @@ export default function HomeScreen() {
     previewArticleId,
     articles,
     hiddenIdSet,
+    prefs.show_sponsored,
+    prefs.region_locale,
+    sponsoredItems,
   ]);
 
   // 端末に保存された記事データ（フィードから消えた過去記事も含めて保持）
@@ -272,14 +370,18 @@ export default function HomeScreen() {
     visibleArticles.length > 0
       ? Math.min(currentIndex, visibleArticles.length - 1)
       : 0;
-  const activeArticle = visibleArticles[safeIndex];
+  const activeCard = visibleArticles[safeIndex];
+  const activeArticle =
+    activeCard && !isSponsoredItem(activeCard) ? activeCard : null;
+  const activeSponsored =
+    activeCard && isSponsoredItem(activeCard) ? activeCard : null;
 
   const overrideToolForTheme = topTab === 'tool' ? selectedTool : null;
   const verifiedActiveTool = activeArticle
     ? getVerifiedArticleTool(activeArticle, overrideToolForTheme)
-    : '';
+    : activeSponsored?.tool_tag?.trim() || '';
   const activeTheme =
-    bottomTab === 'home' && activeArticle
+    bottomTab === 'home' && (activeArticle || activeSponsored)
       ? getThemeForArticle(
           verifiedActiveTool ? [verifiedActiveTool] : [],
           verifiedActiveTool || null
@@ -458,43 +560,60 @@ export default function HomeScreen() {
       <View style={styles.mainArea} onLayout={handleFeedLayout}>
         {bottomTab === 'home' ? (
           <>
-            {loading ? (
+            {loading && !refreshing ? (
               <CardSkeleton />
             ) : error ? (
-              <EmptyState
-                title={error}
-                actionLabel={copy.retryButton}
-                onAction={loadData}
-              />
+              <ScrollView
+                contentContainerStyle={styles.pullRefreshFill}
+                refreshControl={feedRefreshControl}
+              >
+                <EmptyState
+                  title={error}
+                  actionLabel={t.retryButton}
+                  onAction={handlePullRefresh}
+                />
+              </ScrollView>
             ) : visibleArticles.length === 0 ? (
-              <EmptyState
-                title={copy.emptyFeed}
-                actionLabel={
-                  hiddenIds.length > 0
-                    ? copy.resetHiddenButton
-                    : copy.editSourcesButton
-                }
-                onAction={
-                  hiddenIds.length > 0
-                    ? handleResetHidden
-                    : () =>
-                        handleOpenManage(
-                          topTab === 'tool' ? 'manage_tools' : 'manage_sources'
-                        )
-                }
-              />
+              <ScrollView
+                contentContainerStyle={styles.pullRefreshFill}
+                refreshControl={feedRefreshControl}
+              >
+                <EmptyState
+                  title={t.emptyFeed}
+                  actionLabel={
+                    hiddenIds.length > 0
+                      ? t.resetHiddenButton
+                      : t.editSourcesButton
+                  }
+                  onAction={
+                    hiddenIds.length > 0
+                      ? handleResetHidden
+                      : () =>
+                          handleOpenManage(
+                            topTab === 'tool' ? 'manage_tools' : 'manage_sources'
+                          )
+                  }
+                />
+              </ScrollView>
             ) : (
               <FlatList
                 key={feedFilterKey}
                 ref={flatListRef}
                 data={visibleArticles}
-                extraData={feedFilterKey}
+                extraData={`${feedFilterKey}:${refreshing ? '1' : '0'}`}
                 keyExtractor={(item) => item.id}
-                pagingEnabled
+                pagingEnabled={!refreshing}
+                bounces
+                alwaysBounceVertical
+                overScrollMode="always"
                 showsVerticalScrollIndicator={false}
                 decelerationRate="fast"
-                snapToInterval={feedHeight}
-                snapToAlignment="start"
+                {...(refreshing
+                  ? {}
+                  : {
+                      snapToInterval: feedHeight,
+                      snapToAlignment: 'start' as const,
+                    })}
                 initialScrollIndex={
                   visibleArticles.length > 0
                     ? Math.max(0, Math.min(safeIndex, visibleArticles.length - 1))
@@ -515,31 +634,65 @@ export default function HomeScreen() {
                     animated: false,
                   });
                 }}
-                renderItem={({ item, index }) => (
-                  <NewsCard
-                    article={item}
-                    index={index}
-                    total={visibleArticles.length}
-                    cardHeight={feedHeight}
-                    hasChipRow={hasChipRow}
-                    showOriginalButton={prefs.show_original_button}
-                    overrideTool={overrideToolForTheme}
-                    highlightGenres={prefs.genres}
-                    isSaved={savedIds.includes(item.id)}
-                    onToggleSave={handleToggleSave}
-                    onHideArticle={handleHideArticle}
-                  />
-                )}
+                refreshControl={feedRefreshControl}
+                renderItem={({ item, index }) =>
+                  isSponsoredItem(item) ? (
+                    <SponsoredCard
+                      item={item}
+                      index={index}
+                      total={visibleArticles.length}
+                      cardHeight={feedHeight}
+                      hasChipRow={hasChipRow}
+                      locale={prefs.region_locale}
+                      onHide={handleHideArticle}
+                    />
+                  ) : (
+                    <NewsCard
+                      article={item}
+                      index={index}
+                      total={visibleArticles.length}
+                      cardHeight={feedHeight}
+                      hasChipRow={hasChipRow}
+                      showOriginalButton={prefs.show_original_button}
+                      overrideTool={overrideToolForTheme}
+                      highlightGenres={prefs.genres}
+                      locale={prefs.region_locale}
+                      isSaved={savedIds.includes(item.id)}
+                      onToggleSave={handleToggleSave}
+                      onHideArticle={handleHideArticle}
+                    />
+                  )
+                }
               />
             )}
+
+            {refreshing ? (
+              <View
+                style={[
+                  styles.refreshBanner,
+                  { top: refreshProgressOffset },
+                ]}
+                pointerEvents="none"
+                accessibilityLiveRegion="polite"
+                accessibilityLabel={t.refreshingFeed}
+              >
+                <ActivityIndicator
+                  size="small"
+                  color={themes.neutral.accent}
+                />
+                <Text style={styles.refreshBannerText}>
+                  {t.refreshingFeed}
+                </Text>
+              </View>
+            ) : null}
 
             {/* 上部タブ (top 54 / 15px bold / 選択中は accent の下線2px) */}
             <View style={styles.topTabs} pointerEvents="box-none">
               {(
                 [
-                  { key: 'recommended', label: copy.topTabs.recommended },
-                  { key: 'source', label: copy.topTabs.bySource },
-                  { key: 'tool', label: copy.topTabs.byTool },
+                  { key: 'recommended', label: t.topTabs.recommended },
+                  { key: 'source', label: t.topTabs.bySource },
+                  { key: 'tool', label: t.topTabs.byTool },
                 ] as const
               ).map((tab) => {
                 const selected = topTab === tab.key;
@@ -613,7 +766,7 @@ export default function HomeScreen() {
                         },
                       ]}
                     >
-                      {copy.chips.all}
+                      {t.chips.all}
                     </Text>
                   </Pressable>
 
@@ -663,9 +816,9 @@ export default function HomeScreen() {
                   style={styles.editChipButton}
                   onPress={() => handleOpenManage('manage_sources')}
                   accessibilityRole="button"
-                  accessibilityLabel={copy.chips.editAria}
+                  accessibilityLabel={t.chips.editAria}
                 >
-                  <Text style={styles.chipText}>{copy.chips.edit}</Text>
+                  <Text style={styles.chipText}>{t.chips.edit}</Text>
                 </Pressable>
               </View>
             ) : null}
@@ -703,7 +856,7 @@ export default function HomeScreen() {
                         },
                       ]}
                     >
-                      {copy.chips.all}
+                      {t.chips.all}
                     </Text>
                   </Pressable>
 
@@ -757,9 +910,9 @@ export default function HomeScreen() {
                   style={styles.editChipButton}
                   onPress={() => handleOpenManage('manage_tools')}
                   accessibilityRole="button"
-                  accessibilityLabel={copy.chips.editAria}
+                  accessibilityLabel={t.chips.editAria}
                 >
-                  <Text style={styles.chipText}>{copy.chips.edit}</Text>
+                  <Text style={styles.chipText}>{t.chips.edit}</Text>
                 </Pressable>
               </View>
             ) : null}
@@ -769,11 +922,13 @@ export default function HomeScreen() {
             articles={baseFilteredArticles}
             onSelectArticle={handleSelectArticleFromExplore}
             onOpenSaved={() => setBottomTab('saved')}
+            locale={prefs.region_locale}
           />
         ) : bottomTab === 'saved' ? (
           <SavedView
             savedArticles={savedArticles}
             showOriginalButton={prefs.show_original_button}
+            locale={prefs.region_locale}
             onRemoveSaved={handleToggleSave}
           />
         ) : (
@@ -815,10 +970,10 @@ export default function HomeScreen() {
       >
         {(
           [
-            { key: 'home', label: copy.bottomTabs.home, icon: 'home' },
-            { key: 'explore', label: copy.bottomTabs.explore, icon: 'explore' },
-            { key: 'saved', label: copy.bottomTabs.saved, icon: 'saved' },
-            { key: 'settings', label: copy.bottomTabs.settings, icon: 'settings' },
+            { key: 'home', label: t.bottomTabs.home, icon: 'home' },
+            { key: 'explore', label: t.bottomTabs.explore, icon: 'explore' },
+            { key: 'saved', label: t.bottomTabs.saved, icon: 'saved' },
+            { key: 'settings', label: t.bottomTabs.settings, icon: 'settings' },
           ] as const
         ).map((tab) => {
           const selected = bottomTab === tab.key;
@@ -860,6 +1015,41 @@ const styles = StyleSheet.create({
   mainArea: {
     flex: 1,
     position: 'relative',
+  },
+  pullRefreshFill: {
+    flexGrow: 1,
+  },
+  refreshBanner: {
+    position: 'absolute',
+    left: size.pageSide,
+    right: size.pageSide,
+    zIndex: 20,
+    minHeight: size.minTap,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: 12,
+    backgroundColor: uiColors.cardSurface,
+    borderWidth: 1,
+    borderColor: uiColors.cardBorder,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOpacity: 0.35,
+        shadowRadius: 10,
+        shadowOffset: { width: 0, height: 4 },
+      },
+      android: { elevation: 6 },
+      default: {},
+    }),
+  },
+  refreshBannerText: {
+    flex: 1,
+    color: text.primary,
+    fontSize: 14,
+    fontWeight: '700',
   },
   topTabs: {
     position: 'absolute',
