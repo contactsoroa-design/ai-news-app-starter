@@ -41,6 +41,16 @@ const DEFAULT_ARTICLES_PER_RUN = 15;
 /** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
 const RSS_ITEMS_PER_SOURCE = 6;
 
+/** Asia/Tokyo の YYYY-MM-DD（日次上限の判定用） */
+function tokyoDatePrefix(date: Date): string {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Tokyo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(date);
+}
+
 class LlmHttpError extends Error {
   readonly status: number;
   readonly retryAfterMs: number | null;
@@ -642,9 +652,8 @@ async function main() {
   const sourcesPath = path.join(rootDir, 'data', 'sources.json');
   const articlesPath = path.join(rootDir, 'data', 'articles.json');
 
-  // ソース取りこぼし防止のため、1日のデフォルト上限は120件
-  // 1実行あたりは少なめにし、毎時 cron で分割取得してレート制限を避ける
-  const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '120');
+  // ソース取りこぼし防止。毎時 cron で分割取得してレート制限を避ける
+  const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '240');
   const maxPerRun = Math.min(
     Number(process.env.MAX_ARTICLES_PER_RUN || DEFAULT_ARTICLES_PER_RUN),
     maxPerDay
@@ -682,18 +691,19 @@ async function main() {
     );
   } else {
     console.log(
-      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件 / 1日上限=${maxPerDay}件`
+      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件 / 1日上限=${maxPerDay}件（Asia/Tokyo）`
     );
   }
 
   const now = new Date();
-  const monthPrefix = now.toISOString().slice(0, 7);
-  const dayPrefix = now.toISOString().slice(0, 10);
-  const monthCount = existingArticles.filter((a) =>
-    a.created_at.startsWith(monthPrefix)
+  // 日次・月次上限は日本時間で数える（UTC日付だと深夜〜朝に枠が枯渇しやすい）
+  const dayPrefix = tokyoDatePrefix(now);
+  const monthPrefix = dayPrefix.slice(0, 7);
+  const monthCount = existingArticles.filter(
+    (a) => tokyoDatePrefix(new Date(a.created_at)).startsWith(monthPrefix)
   ).length;
-  const alreadyToday = existingArticles.filter((a) =>
-    a.created_at.startsWith(dayPrefix)
+  const alreadyToday = existingArticles.filter(
+    (a) => tokyoDatePrefix(new Date(a.created_at)) === dayPrefix
   ).length;
   let estimatedMonthlyCost = apiKey
     ? monthCount * ESTIMATED_COST_PER_ARTICLE_JPY

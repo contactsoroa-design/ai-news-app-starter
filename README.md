@@ -39,7 +39,7 @@ cp .env.example .env
 `.env` の各項目:
 - `SUMMARY_API_KEY`: 要約生成に使うLLMのAPIキー（スクリプト専用。**アプリ側には一切入らない**）
 - `SUMMARY_MODEL`: 要約モデル名（既定: `gemini-3.1-flash-lite`。比較例: `gemini-3.8-flash` / `gemini-3.6-flash`）
-- `MAX_ARTICLES_PER_DAY`: 1日の最大要約件数（無料枠 Lite 既定: `120`）
+- `MAX_ARTICLES_PER_DAY`: 1日の最大要約件数（Asia/Tokyo、無料枠 Lite 既定: `240`）
 - `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `15`。毎時実行で分割しレート制限を回避）
 - `INGEST_ARTICLE_DELAY_MS`: 記事ごとのLLM間隔ミリ秒（デフォルト: `4000`）
 - `MAX_MONTHLY_COST_JPY`: 月間の費用上限（デフォルト: `3000`。無料枠中は実質 $0）
