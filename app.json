@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "AIニュース - 生成AI・最新速報",
+    "slug": "ai-news-app",
+    "owner": "soroa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0E1117",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0E1117"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.soroa.ainews",
+      "buildNumber": "1",
+      "infoPlist": {
+        "CFBundleDisplayName": "AIニュース",
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleDevelopmentRegion": "ja"
+      },
+      "privacyManifests": {
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
+          }
+        ]
+      }
+    },
+    "android": {
+      "package": "com.soroa.ainews",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0E1117",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ecab0037-bf75-471c-99fe-2c7c9c845814"
+      }
+    }
+  }
+}

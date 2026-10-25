@@ -1,0 +1,230 @@
+// デザインは仮。ここを直せば全画面の色・寸法が変わるようにする。
+export type ThemeName = 'neutral' | 'claude' | 'gpt' | 'gemini';
+
+export type ThemePalette = {
+  accent: string;
+  background: string;
+  panel: string;
+  line: string;
+};
+
+export const themes: Record<ThemeName, ThemePalette> = {
+  neutral: { accent: '#B6F24A', background: '#0E1117', panel: '#1B2230', line: '#2E3748' },
+  claude: { accent: '#D97757', background: '#17110E', panel: '#2A1D17', line: '#3A2A21' },
+  gpt: { accent: '#10A37F', background: '#0B1512', panel: '#12251F', line: '#1E3A31' },
+  gemini: { accent: '#4285F4', background: '#0B1020', panel: '#131B33', line: '#22305A' },
+};
+
+export const toolToTheme: Record<string, ThemeName> = {
+  Claude: 'claude',
+  ChatGPT: 'gpt',
+  OpenAI: 'gpt',
+  Gemini: 'gemini',
+};
+
+export const toolBadgeColors: Record<string, { bg: string; fg: string; initial: string }> = {
+  ChatGPT: { bg: '#10A37F', fg: '#0E1117', initial: 'O' },
+  OpenAI: { bg: '#10A37F', fg: '#0E1117', initial: 'O' },
+  Claude: { bg: '#D97757', fg: '#0E1117', initial: 'C' },
+  Gemini: { bg: '#4285F4', fg: '#0E1117', initial: 'G' },
+  Cursor: { bg: '#B6F24A', fg: '#0E1117', initial: 'Cu' },
+  Windsurf: { bg: '#00D1B2', fg: '#0E1117', initial: 'W' },
+  Bolt: { bg: '#FACC15', fg: '#0E1117', initial: 'B' },
+  Lovable: { bg: '#FF5E7E', fg: '#0E1117', initial: 'Lv' },
+  Devin: { bg: '#38BDF8', fg: '#0E1117', initial: 'Dv' },
+  RevenueCat: { bg: '#F2545B', fg: '#F2F3F5', initial: 'RC' },
+  Stripe: { bg: '#635BFF', fg: '#F2F3F5', initial: 'St' },
+  PostHog: { bg: '#F9BD2B', fg: '#0E1117', initial: 'PH' },
+  Appfigures: { bg: '#FF6B35', fg: '#F2F3F5', initial: 'AF' },
+  Resend: { bg: '#38BDF8', fg: '#0E1117', initial: 'Re' },
+  CapCut: { bg: '#00F0FF', fg: '#0E1117', initial: 'CC' },
+  HeyGen: { bg: '#7C3AED', fg: '#F2F3F5', initial: 'HG' },
+  Framer: { bg: '#0099FF', fg: '#F2F3F5', initial: 'Fr' },
+  Copilot: { bg: '#8B5CF6', fg: '#F2F3F5', initial: 'GH' },
+  'GitHub Copilot': { bg: '#8B5CF6', fg: '#F2F3F5', initial: 'GH' },
+  Vercel: { bg: '#E2E8F0', fg: '#0E1117', initial: 'V' },
+  Supabase: { bg: '#3ECF8E', fg: '#0E1117', initial: 'Sb' },
+  Cloudflare: { bg: '#F6821F', fg: '#0E1117', initial: 'CF' },
+  Dify: { bg: '#3B82F6', fg: '#F2F3F5', initial: 'Df' },
+  n8n: { bg: '#EA4B71', fg: '#F2F3F5', initial: 'n8' },
+  Ollama: { bg: '#A3E635', fg: '#0E1117', initial: 'Ol' },
+  OpenRouter: { bg: '#A855F7', fg: '#F2F3F5', initial: 'OR' },
+  Perplexity: { bg: '#20B8CD', fg: '#0E1117', initial: 'P' },
+  Grok: { bg: '#E2E8F0', fg: '#0E1117', initial: 'X' },
+  Midjourney: { bg: '#6366F1', fg: '#F2F3F5', initial: 'MJ' },
+  Runway: { bg: '#FF3366', fg: '#F2F3F5', initial: 'R' },
+  ElevenLabs: { bg: '#F59E0B', fg: '#0E1117', initial: '11' },
+  Notion: { bg: '#E2E8F0', fg: '#0E1117', initial: 'N' },
+  Mistral: { bg: '#FA520F', fg: '#0E1117', initial: 'M' },
+  'Meta AI': { bg: '#0866FF', fg: '#F2F3F5', initial: 'M' },
+};
+
+// 各ツールごとの専用カラーパレット（バナー・アクセント・背景・枠線が記事の主役ツールに完全一致するようにする）
+export const toolPalettes: Record<string, ThemePalette> = {
+  Claude: themes.claude,
+  ChatGPT: themes.gpt,
+  OpenAI: themes.gpt,
+  Gemini: themes.gemini,
+  Cursor: themes.neutral,
+  Windsurf: { accent: '#00D1B2', background: '#091514', panel: '#112624', line: '#1C3D39' },
+  Bolt: { accent: '#FACC15', background: '#141209', panel: '#242011', line: '#3B341C' },
+  Lovable: { accent: '#FF5E7E', background: '#170D11', panel: '#29161D', line: '#42232E' },
+  Devin: { accent: '#38BDF8', background: '#0A131A', panel: '#122330', line: '#1E384D' },
+  RevenueCat: { accent: '#F2545B', background: '#170D0E', panel: '#291719', line: '#422427' },
+  Stripe: { accent: '#818CF8', background: '#0D0E1A', panel: '#181A30', line: '#282B4D' },
+  PostHog: { accent: '#F9BD2B', background: '#161209', panel: '#262011', line: '#3D331B' },
+  Appfigures: { accent: '#FF6B35', background: '#170F0B', panel: '#291B14', line: '#422B20' },
+  Resend: { accent: '#38BDF8', background: '#0B1319', panel: '#14222E', line: '#21374A' },
+  CapCut: { accent: '#00F0FF', background: '#081417', panel: '#102429', line: '#1A3A42' },
+  HeyGen: { accent: '#A78BFA', background: '#110D1A', panel: '#1E1730', line: '#31254D' },
+  Framer: { accent: '#0099FF', background: '#09121A', panel: '#112030', line: '#1C344D' },
+  'GitHub Copilot': { accent: '#A78BFA', background: '#110D1A', panel: '#1E1730', line: '#31254D' },
+  Vercel: { accent: '#E2E8F0', background: '#0E1117', panel: '#1B2230', line: '#2E3748' },
+  Supabase: { accent: '#3ECF8E', background: '#0A1510', panel: '#12261D', line: '#1E3D2E' },
+  Cloudflare: { accent: '#F6821F', background: '#17100A', panel: '#291D12', line: '#422E1D' },
+  Dify: { accent: '#60A5FA', background: '#0B111C', panel: '#141F33', line: '#213252' },
+  n8n: { accent: '#EA4B71', background: '#170C10', panel: '#29161C', line: '#42232D' },
+  Ollama: { accent: '#A3E635', background: '#0F140A', panel: '#1B2412', line: '#2C3B1E' },
+  OpenRouter: { accent: '#C084FC', background: '#130D1A', panel: '#221730', line: '#37254D' },
+  Perplexity: { accent: '#20B8CD', background: '#091417', panel: '#112429', line: '#1C3A42' },
+  Grok: { accent: '#E2E8F0', background: '#0E1117', panel: '#1B2230', line: '#2E3748' },
+  Midjourney: { accent: '#818CF8', background: '#0D0E1A', panel: '#181A30', line: '#282B4D' },
+  Runway: { accent: '#FF3366', background: '#170B10', panel: '#29141C', line: '#42202D' },
+  ElevenLabs: { accent: '#F59E0B', background: '#171109', panel: '#292010', line: '#42331A' },
+  Notion: { accent: '#E2E8F0', background: '#0E1117', panel: '#1B2230', line: '#2E3748' },
+  Mistral: { accent: '#FA520F', background: '#170E09', panel: '#291910', line: '#42281A' },
+  'Meta AI': { accent: '#3B82F6', background: '#0A101C', panel: '#131D33', line: '#1F2F52' },
+};
+
+export const uiColors = {
+  cardSurface: '#161C28',
+  cardBorder: '#232A38',
+  chipBorder: '#4A556B',
+  dashedBorder: '#6B7690',
+  avatarSurface: '#262D3B',
+  overlayDark: 'rgba(0,0,0,0.55)',
+} as const;
+
+export const text = { primary: '#F2F3F5', muted: '#A9B0BC', body: '#D5DBE3', rail: '#D3D8E0' };
+
+export const size = {
+  screen: { width: 390, height: 844 },
+  pageSide: 20,
+  thumbHeight: 160,
+  thumbRadius: 18,
+  tabBarHeight: 84,
+  railButton: 52,
+  minTap: 44,
+  topTabsTop: 54,
+  chipRowTop: 100,
+  chipHeight: 44,
+  thumbTop: 104,
+  thumbTopWithChips: 152,
+  contentTop: 280,
+  contentTopWithChips: 328,
+  contentRight: 80,
+  railRight: 10,
+  railBottom: 100,
+  railGap: 14,
+  sourceIcon: 38,
+  manageIcon: 36,
+  headline: { fontSize: 20, lineHeight: 1.42 },
+  summary: { fontSize: 16, lineHeight: 1.62 },
+};
+
+export const tools = [
+  'Claude',
+  'ChatGPT',
+  'Gemini',
+  'Cursor',
+  'Windsurf',
+  'Bolt',
+  'Lovable',
+  'Devin',
+  'RevenueCat',
+  'Stripe',
+  'PostHog',
+  'Appfigures',
+  'Resend',
+  'CapCut',
+  'HeyGen',
+  'Framer',
+  'Vercel',
+  'Supabase',
+  'Cloudflare',
+  'Dify',
+  'n8n',
+  'Ollama',
+  'OpenRouter',
+  'GitHub Copilot',
+  'Perplexity',
+  'Grok',
+  'Midjourney',
+  'Runway',
+  'ElevenLabs',
+  'Notion',
+  'Mistral',
+  'Meta AI',
+] as const;
+
+export const toolSiteUrls: Record<string, string> = {
+  Claude: 'https://www.anthropic.com',
+  ChatGPT: 'https://openai.com',
+  OpenAI: 'https://openai.com',
+  Gemini: 'https://deepmind.google',
+  Cursor: 'https://www.cursor.com',
+  Windsurf: 'https://windsurf.com',
+  Bolt: 'https://bolt.new',
+  Lovable: 'https://lovable.dev',
+  Devin: 'https://cognition.ai',
+  RevenueCat: 'https://www.revenuecat.com',
+  Stripe: 'https://stripe.com',
+  PostHog: 'https://posthog.com',
+  Appfigures: 'https://appfigures.com',
+  Resend: 'https://resend.com',
+  CapCut: 'https://www.capcut.com',
+  HeyGen: 'https://www.heygen.com',
+  Framer: 'https://www.framer.com',
+  Vercel: 'https://vercel.com',
+  Supabase: 'https://supabase.com',
+  Cloudflare: 'https://www.cloudflare.com',
+  Dify: 'https://dify.ai',
+  n8n: 'https://n8n.io',
+  Ollama: 'https://ollama.com',
+  OpenRouter: 'https://openrouter.ai',
+  'GitHub Copilot': 'https://github.com',
+  Perplexity: 'https://www.perplexity.ai',
+  Grok: 'https://x.ai',
+  Midjourney: 'https://www.midjourney.com',
+  Runway: 'https://runwayml.com',
+  ElevenLabs: 'https://elevenlabs.io',
+  Notion: 'https://www.notion.com',
+  Mistral: 'https://mistral.ai',
+  'Meta AI': 'https://ai.meta.com',
+};
+
+export const genres = [
+  'アップデート',
+  '個人開発・収益化',
+  'マーケ・集客・ASO',
+  'SNS・ショート動画',
+  '課金・ペイウォール',
+  'コスト・API料金',
+  '開発',
+  'ビジネス',
+  '画像生成',
+  '動画',
+  '音声',
+  '研究',
+  'セキュリティ',
+] as const;
+
+export function getThemeForArticle(toolTags: string[], overrideTool?: string | null): {
+  name: ThemeName;
+  colors: ThemePalette;
+} {
+  const key = overrideTool || toolTags[0];
+  const themeName: ThemeName = (key && toolToTheme[key]) || 'neutral';
+  const colors = (key && toolPalettes[key]) || themes[themeName];
+  return { name: themeName, colors };
+}

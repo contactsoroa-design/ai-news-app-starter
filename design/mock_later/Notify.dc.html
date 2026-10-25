@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>通知の細かい設定（仮）</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+<style>body{margin:0}button{font-family:inherit;cursor:pointer}</style>
+</helmet>
+<div style="position:relative;width:390px;height:844px;overflow:hidden;background:#0E1117;color:#F2F3F5;font-family:'Noto Sans JP',sans-serif">
+<div style="position:absolute;left:20px;right:20px;top:64px">
+<div style="font-size:12px;font-weight:700;color:#B6F24A">プレミアム ・ 通知の細かい設定（仮）</div>
+<h1 style="margin:6px 0 14px;font-size:26px;font-weight:900">通知をととのえる</h1>
+<div style="font-size:12px;font-weight:700;color:#B6F24A;margin-bottom:2px">ツール別</div>
+<div style="display:flex;align-items:center;justify-content:space-between;padding:2px 0;border-bottom:1px solid #1B2230"><span style="font-size:15px">Claude</span><button role="switch" aria-checked="true" aria-label="Claude" style="background:none;border:0;width:56px;min-height:48px;display:flex;align-items:center;justify-content:center"><div style="position:relative;width:46px;height:26px;border-radius:13px;background:#B6F24A"><div style="position:absolute;top:3px;right:3px;background:#0E1117;width:20px;height:20px;border-radius:50%"></div></div></button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:2px 0;border-bottom:1px solid #1B2230"><span style="font-size:15px">ChatGPT</span><button role="switch" aria-checked="true" aria-label="ChatGPT" style="background:none;border:0;width:56px;min-height:48px;display:flex;align-items:center;justify-content:center"><div style="position:relative;width:46px;height:26px;border-radius:13px;background:#B6F24A"><div style="position:absolute;top:3px;right:3px;background:#0E1117;width:20px;height:20px;border-radius:50%"></div></div></button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:2px 0;border-bottom:1px solid #1B2230"><span style="font-size:15px">Gemini</span><button role="switch" aria-checked="false" aria-label="Gemini" style="background:none;border:0;width:56px;min-height:48px;display:flex;align-items:center;justify-content:center"><div style="position:relative;width:46px;height:26px;border-radius:13px;background:#2E3748"><div style="position:absolute;top:3px;left:3px;background:#A9B0BC;width:20px;height:20px;border-radius:50%"></div></div></button></div><div style="display:flex;align-items:center;justify-content:space-between;padding:2px 0;border-bottom:1px solid #1B2230"><span style="font-size:15px">Grok</span><button role="switch" aria-checked="false" aria-label="Grok" style="background:none;border:0;width:56px;min-height:48px;display:flex;align-items:center;justify-content:center"><div style="position:relative;width:46px;height:26px;border-radius:13px;background:#2E3748"><div style="position:absolute;top:3px;left:3px;background:#A9B0BC;width:20px;height:20px;border-radius:50%"></div></div></button></div>
+<div style="font-size:12px;font-weight:700;color:#B6F24A;margin:18px 0 8px">通知する内容</div>
+<div style="display:flex;gap:8px"><button aria-pressed="true" style="min-height:44px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:700;white-space:nowrap;background:#B6F24A;color:#0E1117;border:1px solid #B6F24A">重要な発表だけ</button><button aria-pressed="false" style="min-height:44px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:700;white-space:nowrap;background:none;color:#F2F3F5;border:1px solid #4A556B">すべて</button></div>
+<div style="font-size:12px;font-weight:700;color:#B6F24A;margin:18px 0 8px">時間帯</div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><button aria-pressed="true" style="min-height:44px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:700;white-space:nowrap;background:#B6F24A;color:#0E1117;border:1px solid #B6F24A">朝 8:00</button><button aria-pressed="false" style="min-height:44px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:700;white-space:nowrap;background:none;color:#F2F3F5;border:1px solid #4A556B">昼 12:00</button><button aria-pressed="true" style="min-height:44px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:700;white-space:nowrap;background:#B6F24A;color:#0E1117;border:1px solid #B6F24A">夜 20:00</button></div>
+<div style="margin-top:10px"><div style="display:flex;align-items:center;justify-content:space-between;padding:2px 0;border-bottom:1px solid #1B2230"><span style="font-size:15px">静かな時間（23:00〜7:00）</span><button role="switch" aria-checked="true" aria-label="静かな時間（23:00〜7:00）" style="background:none;border:0;width:56px;min-height:48px;display:flex;align-items:center;justify-content:center"><div style="position:relative;width:46px;height:26px;border-radius:13px;background:#B6F24A"><div style="position:absolute;top:3px;right:3px;background:#0E1117;width:20px;height:20px;border-radius:50%"></div></div></button></div></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;border-top:1px solid #232A38;background:#0E1117;display:flex;justify-content:space-around;align-items:center;font-size:11px;color:#A9B0BC"><div>ホーム</div><div>保存済み</div><div>ソース管理</div><div style="color:#F2F3F5;font-weight:700">設定</div></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

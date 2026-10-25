@@ -1,0 +1,38 @@
+{
+  "name": "ai-news-app-starter",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "start": "ulimit -n 65536 && EXPO_OFFLINE=1 expo start",
+    "android": "ulimit -n 65536 && EXPO_OFFLINE=1 expo start --android",
+    "ios": "ulimit -n 65536 && EXPO_OFFLINE=1 expo start --ios",
+    "web": "ulimit -n 65536 && EXPO_OFFLINE=1 expo start --web",
+    "seed": "node --import tsx scripts/seed.ts",
+    "ingest": "node --import tsx scripts/ingest.ts",
+    "backfill:en": "node --import tsx scripts/backfill-en.ts",
+    "quality:check": "node --import tsx scripts/check-summary-quality.ts",
+    "articles:list": "node --import tsx scripts/list-articles.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~57.0.0",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.31",
+    "expo-constants": "~57.0.22",
+    "expo-status-bar": "~57.0.1",
+    "expo-web-browser": "~57.0.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "~0.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/react": "~19.2.2",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.3",
+    "typescript": "~6.0.3"
+  }
+}
