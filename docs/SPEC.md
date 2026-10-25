@@ -21,7 +21,7 @@ AIニュースだけを、1枚ずつ縦スワイプで一目で読めるアプ�
 6. **探索**: 絞り込み後の記事をグリッド表示。簡易キーワード検索可（スポンサードは探索に出さない）。
 
 ## 収集・要約
-1. 1時間ごとに、有効なソースのRSS等を取得する（GitHub Actions 可）。
+1. GitHub Actions の定期実行で、有効なソースのRSS等を取得する（Mac／端末に依存しない）。
 2. URLとタイトルの類似で重複を除く。
 3. 記事ページから og:image のURLを取得する（画像は保存しない）。
 4. モデルに見出しと冒頭を渡し、JSONで返させる:
@@ -31,10 +31,10 @@ AIニュースだけを、1枚ずつ縦スワイプで一目で読めるアプ�
    - `summary_en`（95〜140語、日本語と同密度のネイティブ英語）
    - `tool_tags` / `genre_tags`
 5. 要約は記事ごとに1回だけ作り、`data/articles.json`（`translations.ja` / `translations.en`）に保存して全ユーザーで共有する。品質ゲート（`npm run quality:check`）で英語の薄さを弾く。
-6. 1日の件数（`MAX_ARTICLES_PER_DAY`、デフォルト **240**、**Asia/Tokyo** 日付）と月の費用（`MAX_MONTHLY_COST_JPY`）に上限を設け、超えたら止める。収集は **20分おき**、1実行は `MAX_ARTICLES_PER_RUN`（既定 **5**、時間あたり約15件）＋記事間隔 `INGEST_ARTICLE_DELAY_MS` で分割し、429時は待機再試行する。
+6. 1日の件数（`MAX_ARTICLES_PER_DAY`、デフォルト **240**、**Asia/Tokyo** 日付）と月の費用（`MAX_MONTHLY_COST_JPY`）に上限を設け、超えたら止める。収集は **GitHub Actions のみ**（Mac不要）。UTC **:05 / :25 / :45**、1実行は `MAX_ARTICLES_PER_RUN`（既定 **5**）＋記事間隔 `INGEST_ARTICLE_DELAY_MS` で分割し、429時は待機再試行する。
 7. 品質失敗時の再試行は最大数回。レート制限（429）は指数バックオフで再試行する。
 8. フィードは直近30日を保持（件数制限なしのスライディング。ツール別最低件数の保護あり）。
-9. アプリへの配信は `EXPO_PUBLIC_FEED_URL` 経由が本番想定（起動・再読み込みで新着を取得）。開発中は未設定でも `public/articles.json`（ingest/seed が `data/` と同期）を都度取得。本番ビルドで未設定時は同梱JSONのみ。
+9. アプリへの配信は `EXPO_PUBLIC_FEED_URL` 経由が本番想定（**GitHub raw 優先**。jsDelivr はキャッシュ遅れしやすいので主経路にしない）。開発中は未設定でも `public/articles.json` を都度取得。
 
 ツール: `src/theme/tokens.ts` の `tools`（Claude, ChatGPT, Gemini, Cursor など）
 ジャンル: `src/theme/tokens.ts` の `genres`（アップデート, 個人開発・収益化, マーケ・集客・ASO, SNS・ショート動画, 課金・ペイウォール, コスト・API料金, 開発, ビジネス, 画像生成, 動画, 音声, 研究, セキュリティ）

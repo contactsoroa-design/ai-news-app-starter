@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
-# 20分おきに GitHub Actions の ingest を起動する LaunchAgent を（再）インストールする。
-# （Desktop TCC 回避。実収集は Actions 側の secrets / vars を使う）
+# 【非推奨・任意】Mac LaunchAgent で Actions を起こす。
+# 通常運用は GitHub Actions の schedule のみ（Mac 起動不要）。
+# どうしても補助が必要なときだけ使う。
 set -euo pipefail
+echo "注意: 通常は不要です。収集は GitHub Actions cron（UTC :05/:25/:45）が担当します。"
+echo "この LaunchAgent を入れると Mac 依存になります。続行しますか？ Ctrl+C で中止。"
+sleep 2
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 LABEL="com.soroa.ainews.ingest"

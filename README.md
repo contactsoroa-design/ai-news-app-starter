@@ -77,7 +77,7 @@ npm run quality:check  # 英語95語未満など不合格を検出
 
 **GitHub Actions（本線・PCオフでも動く）**
 1. Secret `SUMMARY_API_KEY` と Variables（`SUMMARY_MODEL=gemini-3.1-flash-lite` 等）を設定
-2. 20分おき cron（UTC `*/20`）が `data/articles.json` / `public/articles.json` を更新して push
+2. GitHub Actions が UTC `:05` / `:25` / `:45` に収集し、`data/articles.json` / `public/articles.json` を更新して push（Mac不要）
 3. 手動実行: Actions タブ → `Ingest AI news (JA+EN)` → Run workflow
 
 **手元 Mac（毎時 `:00` に Actions をキック）**  
@@ -89,7 +89,7 @@ Desktop 配下は macOS TCC で LaunchAgent から `npm` 実行できないた�
 #   pbpaste > ~/Library/Application\ Support/ai-news-ingest/github_token && chmod 600 $_
 # ログ: ~/Library/Logs/ai-news-ingest/
 ```
-※ GitHub Actions の cron（UTC `*/20`）だけ使う場合は Mac 側の認証は不要です。
+※ 収集は GitHub Actions のみで完結します（Mac の LaunchAgent は不要・使わない想定）。
 
 ワークフロー: `.github/workflows/ingest.yml`
 

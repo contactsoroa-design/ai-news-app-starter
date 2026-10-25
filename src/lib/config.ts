@@ -55,8 +55,9 @@ const copyJa = {
   sponsored: {
     badge: '広告',
     badgeAria: 'スポンサー広告',
+    cta: '公式へ',
     openCtaAria: 'スポンサーの公式ページを開く',
-    longPressHint: '長押しで公式ページへ',
+    longPressHint: '長押しで公式へ',
   },
   explore: {
     title: '探索（一覧）',
@@ -99,7 +100,7 @@ const copyJa = {
     langBoth: '両方（日英どちらも取り込む）',
     displaySectionLabel: '表示オプション',
     showOriginalButtonLabel: '「元記事」ボタンを表示',
-    showSponsoredLabel: 'スポンサー枠（広告）を表示',
+    showSponsoredLabel: 'スポンサー枠（常時表示）',
     hiddenResetLabel: '「興味なし」で非表示にした記事を戻す',
     hiddenResetButton: 'リセット',
     privacyNote:
@@ -205,8 +206,9 @@ const copyEn: CopyShape = {
   sponsored: {
     badge: 'Ad',
     badgeAria: 'Sponsored advertisement',
+    cta: 'Official',
     openCtaAria: 'Open sponsor page',
-    longPressHint: 'Long-press to open sponsor page',
+    longPressHint: 'Long-press for sponsor',
   },
   explore: {
     title: 'Explore',
@@ -249,7 +251,7 @@ const copyEn: CopyShape = {
     langBoth: 'Both (Japanese and English)',
     displaySectionLabel: 'Display options',
     showOriginalButtonLabel: 'Show “Original” button',
-    showSponsoredLabel: 'Show sponsor cards (ads)',
+    showSponsoredLabel: 'Sponsor cards (always on)',
     hiddenResetLabel: 'Restore articles marked “Not for me”',
     hiddenResetButton: 'Reset',
     privacyNote:
@@ -370,9 +372,9 @@ export const limits = {
   sponsoredMinArticlesBeforeFirst: 4,
 } as const;
 
-/** 本番ビルドで EXPO_PUBLIC_FEED_URL が空でも確実にリモート取得する既定 */
+/** 本番ビルドで EXPO_PUBLIC_FEED_URL が空でも確実にリモート取得する既定（raw優先。jsDelivrは古い@mainを長くキャッシュする） */
 const PRODUCTION_FEED_URL_FALLBACK =
-  'https://cdn.jsdelivr.net/gh/contactsoroa-design/ai-news-app-starter@main/data/articles.json';
+  'https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/articles.json';
 
 export const env = {
   // リモート配信用の静的JSON URL（未設定時は開発中 Metro の public/、本番はフォールバックURL）

@@ -5,12 +5,12 @@ import { localizeArticlesBatch } from './translate';
 import { genres as allGenres, tools as allTools } from '../theme/tokens';
 import type { AppLocale, Article, Source, UserPrefs } from './types';
 
-/** GitHub raw が落ちても読めるよう、本番フィードのミラー候補 */
+/** 本番フィードのミラー候補（raw を優先し、jsDelivr は最後＝キャッシュ遅れ対策） */
 const PRODUCTION_FEED_MIRRORS = [
-  'https://cdn.jsdelivr.net/gh/contactsoroa-design/ai-news-app-starter@main/data/articles.json',
   'https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/articles.json',
   'https://github.com/contactsoroa-design/ai-news-app-starter/raw/refs/heads/main/data/articles.json',
   'https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/feed.json',
+  'https://cdn.jsdelivr.net/gh/contactsoroa-design/ai-news-app-starter@main/data/articles.json',
 ] as const;
 
 /**
@@ -388,10 +388,8 @@ export function hydrateUserPrefs(
       typeof stored.show_original_button === 'boolean'
         ? stored.show_original_button
         : defaults.show_original_button,
-    show_sponsored:
-      typeof stored.show_sponsored === 'boolean'
-        ? stored.show_sponsored
-        : defaults.show_sponsored,
+    // 広告枠は常時表示（設定でのOFFは不可）
+    show_sponsored: true,
     updated_at: stored.updated_at || defaults.updated_at,
     seen_source_ids: sources.map((s) => s.id),
   };

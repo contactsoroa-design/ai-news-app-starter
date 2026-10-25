@@ -4,8 +4,11 @@ name: Ingest AI news (JA+EN)
 
 on:
   schedule:
-    # 20分おき（UTC）。1実行を薄く分けて無料枠429を避ける（時間あたり件数は維持）
-    - cron: '*/20 * * * *'
+    # Mac 非依存。*/20 は GitHub 側で間引かれやすいので、明示3本に分ける
+    # （1実行5件 × 最大3回/時 ≒ 時間あたり最大15件）
+    - cron: '5 * * * *'
+    - cron: '25 * * * *'
+    - cron: '45 * * * *'
   workflow_dispatch:
 
 permissions:
