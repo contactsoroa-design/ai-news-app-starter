@@ -73,4 +73,13 @@ jobs:
             exit 0
           fi
           git commit -m "chore(feed): ingest bilingual AI news $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          # main への並行 push（手動コミット等）と衝突しても捨てない
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "push rejected (attempt $i); pull --rebase and retry"
+            git pull --rebase origin main
+          done
+          echo "failed to push feed after retries"
+          exit 1
