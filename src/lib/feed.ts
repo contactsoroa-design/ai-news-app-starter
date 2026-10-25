@@ -172,6 +172,21 @@ export function normalizeAppLocale(value: unknown): AppLocale {
   return 'en';
 }
 
+/** articles.json は配列、または誤って包まれた { articles: [...] } のどちらでも読む */
+function unwrapArticlesPayload(data: unknown): Article[] {
+  if (Array.isArray(data)) {
+    return data as Article[];
+  }
+  if (
+    data &&
+    typeof data === 'object' &&
+    Array.isArray((data as { articles?: unknown }).articles)
+  ) {
+    return (data as { articles: Article[] }).articles;
+  }
+  throw new Error('Invalid articles feed shape');
+}
+
 export async function fetchArticles(
   targetLocale: AppLocale = 'ja',
   onProgress?: (
@@ -187,9 +202,9 @@ export async function fetchArticles(
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
-    rawArticles = (await response.json()) as Article[];
+    rawArticles = unwrapArticlesPayload(await response.json());
   } else {
-    rawArticles = seedArticlesData as Article[];
+    rawArticles = unwrapArticlesPayload(seedArticlesData);
   }
 
   const sourceById = new Map<string, Source>(
@@ -672,9 +687,24 @@ function sortArticles(articles: Article[]): Article[] {
 }
 
 export function formatShortDateJa(isoDate: string | null): string {
+  return formatShortDate(isoDate, 'ja');
+}
+
+/** 表示言語に合わせた短い日付（UTC基準） */
+export function formatShortDate(
+  isoDate: string | null,
+  locale: AppLocale = 'ja'
+): string {
   if (!isoDate) return '';
   const d = new Date(isoDate);
   if (Number.isNaN(d.getTime())) return '';
+  if (locale === 'en') {
+    return d.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      timeZone: 'UTC',
+    });
+  }
   return `${d.getUTCMonth() + 1}月${d.getUTCDate()}日`;
 }
 
