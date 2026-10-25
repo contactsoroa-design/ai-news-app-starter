@@ -1,5 +1,148 @@
 [
   {
+    "id": "art-1792969107167-glij2",
+    "source_id": "source-hf",
+    "source_name": "Hugging Face Blog / Papers",
+    "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+    "published_at": "2026-10-21T17:35:36.000Z",
+    "og_image_url": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/OWGtXjnbBov-7SI_04o4z.png",
+    "title_ja": "Hugging Faceが提案するSLM最適化手法：語彙の「特化」で推論コストを77%削減し、実用アプリケーションの高速化を実現",
+    "summary_ja": "Hugging Faceは、小規模言語モデル（SLM）の語彙を特定のタスクやドメインに最適化して制限することで、推論コストを最大77%削減する手法を公開した。 モデル全体を巨大化させるのではなく、語彙空間をタスクに特化させて再学習させることで、メモリ効率と計算速度を劇的に改善する。 このアプローチは、限られたリソースで特定の業務やアプリを運用する開発者にとって、モデルの軽量化とパフォーマンス最適化を両立させる極めて現実的な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "Hugging Faceが提案するSLM最適化手法：語彙の「特化」で推論コストを77%削減し、実用アプリケーションの高速化を実現",
+        "summary": "Hugging Faceは、小規模言語モデル（SLM）の語彙を特定のタスクやドメインに最適化して制限することで、推論コストを最大77%削減する手法を公開した。 モデル全体を巨大化させるのではなく、語彙空間をタスクに特化させて再学習させることで、メモリ効率と計算速度を劇的に改善する。 このアプローチは、限られたリソースで特定の業務やアプリを運用する開発者にとって、モデルの軽量化とパフォーマンス最適化を両立させる極めて現実的な選択肢となる。"
+      },
+      "en": {
+        "title": "Hugging Face reveals how shrinking and specializing SLM vocabularies can slash inference costs by 77%",
+        "summary": "Hugging Face has released new findings demonstrating that customizing and limiting the vocabulary of Small Language Models (SLMs) to specific domain tasks can reduce inference costs by up to 77%. Instead of simply scaling up total parameter counts, this technique involves redefining the vocabulary space and fine-tuning the model to align with target data, which dramatically improves memory efficiency and raw compute throughput. For builders and engineers struggling with API latency or hosting expenses in production environments, this architectural tweak offers a pragmatic path forward. It proves that massive general-purpose models are often inefficient for niche applications; instead, vocabulary specialization provides a lean, high-performance alternative that maintains accuracy while drastically lowering the cost per request."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "研究"
+    ],
+    "created_at": "2026-10-25T22:58:27.167Z"
+  },
+  {
+    "id": "art-1792969005386-yovkn",
+    "source_id": "source-deepmind",
+    "source_name": "Google DeepMind / Gemini",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+    "published_at": "2026-10-13T16:01:52.000Z",
+    "og_image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__2784x1566.width-1300.png",
+    "title_ja": "Googleが次世代モデル「Gemini 4 Argon」を発表、推論能力を大幅強化し複雑なマルチステップ推論やエージェントタスクの完遂力を飛躍的に向上",
+    "summary_ja": "Google DeepMindは、推論と実行能力に特化した次世代AIモデル「Gemini 4 Argon」を公開した。 本モデルは大規模なマルチステップ推論や、複雑なタスクを自律的に完遂するエージェント機能を強化し、従来のモデルで課題だった「幻覚」や「計画の破綻」を大幅に抑制する。 開発者は、複雑なロジックを必要とするアプリケーション開発において、より高い精度と信頼性を持ってエージェントを構築できるようになるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Googleが次世代モデル「Gemini 4 Argon」を発表、推論能力を大幅強化し複雑なマルチステップ推論やエージェントタスクの完遂力を飛躍的に向上",
+        "summary": "Google DeepMindは、推論と実行能力に特化した次世代AIモデル「Gemini 4 Argon」を公開した。 本モデルは大規模なマルチステップ推論や、複雑なタスクを自律的に完遂するエージェント機能を強化し、従来のモデルで課題だった「幻覚」や「計画の破綻」を大幅に抑制する。 開発者は、複雑なロジックを必要とするアプリケーション開発において、より高い精度と信頼性を持ってエージェントを構築できるようになるだろう。"
+      },
+      "en": {
+        "title": "Google DeepMind unveils Gemini 4 Argon: A next-generation model optimized for complex multi-step reasoning and autonomous agent execution",
+        "summary": "Google DeepMind has introduced Gemini 4 Argon, a new AI model engineered specifically to handle sophisticated multi-step reasoning and autonomous agentic workflows. By prioritizing task completion accuracy and significantly reducing the planning failures and hallucinations common in previous iterations, Argon allows developers to build more reliable, long-running agent systems. This release marks a shift away from simple chat-based interactions toward robust execution engines capable of handling complex, chained logic without constant supervision. For builders, Argon provides the necessary reasoning depth to transition from building passive AI assistants to deploying active agents that reliably solve multi-stage problems, making it a critical foundation for next-generation automation and advanced application architectures."
+      }
+    },
+    "tool_tags": [
+      "Gemini"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-25T22:56:45.386Z"
+  },
+  {
+    "id": "art-1792968903014-uyw2n",
+    "source_id": "source-cloudflare-ai",
+    "source_name": "Cloudflare Workers AI / Blog",
+    "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+    "published_at": "2026-10-09T18:27:34.000Z",
+    "og_image_url": "https://blog.cloudflare.com/_emdash/api/media/file/01M4HE412EXF8WEMZGXMF07M7P.01M4HE430AWZQNNMNXJE05KDNG.png",
+    "title_ja": "Cloudflare、マルチモーダル対応の「Clef-omni」発表。標準モデルの推論速度は最大2倍、Clef-flashのAPI価格改定も同時実施",
+    "summary_ja": "CloudflareのWorkers AIに、音声・動画・画像・テキストを単一パイプラインで処理するマルチモーダルAI「Clef-omni」が新たに追加された。 同時に既存の標準モデル「Clef」の推論速度が最大2倍に高速化され、軽量版の「Clef-flash」についてはAPI料金の値下げも実施されている。 開発者は、単一エンドポイントで複雑なデータを統合処理できる環境が整ったことで、エッジコンピューティング上でのAI実装コストとパフォーマンスを最適化できる。",
+    "translations": {
+      "ja": {
+        "title": "Cloudflare、マルチモーダル対応の「Clef-omni」発表。標準モデルの推論速度は最大2倍、Clef-flashのAPI価格改定も同時実施",
+        "summary": "CloudflareのWorkers AIに、音声・動画・画像・テキストを単一パイプラインで処理するマルチモーダルAI「Clef-omni」が新たに追加された。 同時に既存の標準モデル「Clef」の推論速度が最大2倍に高速化され、軽量版の「Clef-flash」についてはAPI料金の値下げも実施されている。 開発者は、単一エンドポイントで複雑なデータを統合処理できる環境が整ったことで、エッジコンピューティング上でのAI実装コストとパフォーマンスを最適化できる。"
+      },
+      "en": {
+        "title": "Cloudflare launches multimodal 'Clef-omni' model, while doubling inference speed for standard Clef and cutting Clef-flash pricing",
+        "summary": "Cloudflare has expanded its Workers AI lineup with 'Clef-omni,' a new multimodal model capable of natively processing audio, video, images, and text through a unified pipeline. Alongside this launch, the company boosted the inference speed of its standard Clef model by up to 2.0x and reduced API pricing for the lightweight Clef-flash variant. This update significantly lowers the barrier for developers needing to handle heterogeneous data streams directly at the network edge. By consolidating processing power into a single endpoint, builders can now architect more responsive AI applications without the usual latency penalties of multi-model chaining. For those scaling serverless AI backends, this mix of performance gains and cost reduction provides a more viable path for integrating complex perception features into existing edge applications."
+      }
+    },
+    "tool_tags": [
+      "Cloudflare"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-10-25T22:55:03.014Z"
+  },
+  {
+    "id": "art-1792968500391-ou15m",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/blog/how-interfaze-serves-50-million-requests-a-month-on-vercel",
+    "published_at": "2026-10-23T04:00:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/6h86OtyTqrCzE6OGe6cBRT/e5bf944321812e0ff33e87a1d0b518bf/li_card_for_webinar_promotion_og_card.jpg",
+    "title_ja": "月間5000万リクエストを処理する「Interfaze」がVercel上でAIゲートウェイを活用し、決定論的モデルの可用性を最大化した手法",
+    "summary_ja": "ドキュメント処理やOCRなど、LLMが苦手とする「決定論的な作業」に特化したInterfazeは、Vercelのインフラ上で月間5000万件のリクエストを安定して処理している。 同社はAIゲートウェイを経由して複数のモデルプロバイダーを統合し、フォールバック層を構築することで、単一モデルの障害を回避するアーキテクチャを実現した。",
+    "translations": {
+      "ja": {
+        "title": "月間5000万リクエストを処理する「Interfaze」がVercel上でAIゲートウェイを活用し、決定論的モデルの可用性を最大化した手法",
+        "summary": "ドキュメント処理やOCRなど、LLMが苦手とする「決定論的な作業」に特化したInterfazeは、Vercelのインフラ上で月間5000万件のリクエストを安定して処理している。 同社はAIゲートウェイを経由して複数のモデルプロバイダーを統合し、フォールバック層を構築することで、単一モデルの障害を回避するアーキテクチャを実現した。"
+      },
+      "en": {
+        "title": "How Interfaze serves 50 million monthly requests on Vercel using AI Gateway for deterministic model stability",
+        "summary": "Interfaze, a platform specializing in deterministic AI tasks like OCR and document classification that general LLMs often struggle to handle accurately, currently processes 50 million requests monthly on Vercel. To maintain high availability, they implemented an AI Gateway that orchestrates multiple model providers, allowing for a robust fallback layer if a primary model fails. Unlike general chatbots that might hallucinate invoice totals, Interfaze returns verifiable data, such as bounding boxes linked to source documents. This architectural pattern demonstrates how to scale AI pipelines for enterprise clients in law or healthcare where precision is mandatory. For developers, the lesson is that abstracting providers through a unified gateway is critical for replacing non-deterministic LLMs with reliable production systems."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-10-25T22:48:20.391Z"
+  },
+  {
+    "id": "art-1792968482466-k964u",
+    "source_id": "source-supabase",
+    "source_name": "Supabase Blog",
+    "url": "https://supabase.com/blog/stripe-data-pipeline-now-syncs-real-time-data-to-supabase",
+    "published_at": "2026-10-15T07:00:00.000Z",
+    "og_image_url": "https://supabase.com/images/blog/2026-10-15-stripe-data-pipeline-now-syncs-real-time-data-to-supabase/og.png",
+    "title_ja": "Supabaseが「Stripe Data Pipeline」を公開、Webhook不要でStripe決済データをリアルタイム同期・バックフィル可能に",
+    "summary_ja": "Supabaseは、Stripeの決済データをデータベースへ直接同期する新機能「Stripe Data Pipeline」を発表した。 これまで必要だったWebhookの設定やレート制限の管理を不要にし、過去データのバックフィルも自動で行う。 複雑なインフラ構築に時間を割くことなく、認証やユーザー管理に必要なStripeデータを迅速にアプリケーションへ統合できる点が、開発効率を重視するエンジニアにとっての大きな強みだ。",
+    "translations": {
+      "ja": {
+        "title": "Supabaseが「Stripe Data Pipeline」を公開、Webhook不要でStripe決済データをリアルタイム同期・バックフィル可能に",
+        "summary": "Supabaseは、Stripeの決済データをデータベースへ直接同期する新機能「Stripe Data Pipeline」を発表した。 これまで必要だったWebhookの設定やレート制限の管理を不要にし、過去データのバックフィルも自動で行う。 複雑なインフラ構築に時間を割くことなく、認証やユーザー管理に必要なStripeデータを迅速にアプリケーションへ統合できる点が、開発効率を重視するエンジニアにとっての大きな強みだ。"
+      },
+      "en": {
+        "title": "Supabase launches Stripe Data Pipeline to sync payments data in real-time without managing webhooks or rate limits",
+        "summary": "Supabase has introduced Stripe Data Pipeline, a new native integration that syncs Stripe payment and customer data directly into Supabase databases. By handling the complex ingestion logic internally, this pipeline eliminates the typical overhead associated with managing custom webhooks, monitoring API rate limits, and manually triggering error-prone backfills for historical data. For builders, this abstraction means Stripe data arrives ready-to-query immediately, without the constant maintenance burden of maintaining event listeners. The practical takeaway is that integrating billing state into your application logic is now a configuration task rather than an ongoing infrastructure project, allowing developers to prioritize shipping features over wrestling with third-party data synchronization pipelines and event delivery failures."
+      }
+    },
+    "tool_tags": [
+      "Supabase"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "課金・ペイウォール"
+    ],
+    "created_at": "2026-10-25T22:48:02.466Z"
+  },
+  {
     "id": "art-1792968113507-q24s0",
     "source_id": "source-simonwillison",
     "source_name": "Simon Willison's Weblog",
