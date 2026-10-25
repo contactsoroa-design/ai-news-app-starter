@@ -833,20 +833,39 @@ async function main() {
     sourceCounts,
     rotateSlot
   );
-  console.log(
-    `公平巡回: 不足ソース優先 / 回転スロット=${rotateSlot} / 1ソース上限=${maxPerSourcePerRun}件（枠余り時は緩和）`
+  // 件数中央値以下を「不足側」とし、その深さ全部を先に回す（人気ソースの depth0 が先に枠を取るのを防ぐ）
+  const countSnapshot = sourceQueues
+    .map((q) => sourceCounts.get(q.source.id) ?? 0)
+    .sort((a, b) => a - b);
+  const medianCount =
+    countSnapshot.length === 0
+      ? 0
+      : countSnapshot[Math.floor(countSnapshot.length / 2)];
+  const primaryQueues = sourceQueues.filter(
+    (q) => (sourceCounts.get(q.source.id) ?? 0) <= medianCount
+  );
+  const overflowQueues = sourceQueues.filter(
+    (q) => (sourceCounts.get(q.source.id) ?? 0) > medianCount
   );
   console.log(
-    `  処理順: ${sourceQueues
+    `公平巡回: 不足ソース優先 (中央値≤${medianCount}) / 回転スロット=${rotateSlot} / 1ソース上限=${maxPerSourcePerRun}件（枠余り時は緩和）`
+  );
+  console.log(
+    `  優先: ${primaryQueues
       .map((q) => `${q.source.name}(${sourceCounts.get(q.source.id) ?? 0})`)
-      .join(' → ')}`
+      .join(' → ') || '（なし）'}`
+  );
+  console.log(
+    `  後回し: ${overflowQueues
+      .map((q) => `${q.source.name}(${sourceCounts.get(q.source.id) ?? 0})`)
+      .join(' → ') || '（なし）'}`
   );
 
-  // ラウンドロビンで各ソースの1件目 → 2件目…（並びは不足優先済み）
-  const roundRobinCandidates = buildRoundRobinCandidates(
-    sourceQueues,
-    RSS_ITEMS_PER_SOURCE
-  );
+  // 不足側の RR を先に、人気側は枠が余ったときだけ
+  const roundRobinCandidates = [
+    ...buildRoundRobinCandidates(primaryQueues, RSS_ITEMS_PER_SOURCE),
+    ...buildRoundRobinCandidates(overflowQueues, RSS_ITEMS_PER_SOURCE),
+  ];
 
   let todayCount = 0;
   const newArticles: Article[] = [];
