@@ -40,6 +40,85 @@ const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
 const DEFAULT_ARTICLES_PER_RUN = 5;
 /** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
 const RSS_ITEMS_PER_SOURCE = 6;
+/**
+ * 1実行あたり同一ソースから取る上限（既定1）。
+ * 高頻度コミュニティ系（Zenn/Qiita/HN）が枠を独占しないようにする。
+ * 枠が余ったときだけ 2 件目以降を許可する（soft fill）。
+ */
+const DEFAULT_MAX_PER_SOURCE_PER_RUN = 1;
+
+type SourceQueue = { source: Source; items: RawFeedItem[] };
+
+/** フィード内のソース別件数（偏り補正の並び替え用） */
+function countArticlesBySourceId(articles: Article[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const article of articles) {
+    const key = article.source_id || article.source_name;
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  }
+  return counts;
+}
+
+/**
+ * 不足ソースを先に回し、**同件数のグループ内だけ**実行スロットで回転させる。
+ * （全体回転だと件数0のソースが末尾に回り、偏り補正が壊れる）
+ */
+function orderSourceQueuesForFairness(
+  queues: SourceQueue[],
+  counts: Map<string, number>,
+  rotateSlot: number
+): SourceQueue[] {
+  const sorted = [...queues].sort((a, b) => {
+    const ca = counts.get(a.source.id) ?? 0;
+    const cb = counts.get(b.source.id) ?? 0;
+    if (ca !== cb) return ca - cb;
+    return a.source.id.localeCompare(b.source.id);
+  });
+
+  const result: SourceQueue[] = [];
+  let i = 0;
+  while (i < sorted.length) {
+    const groupCount = counts.get(sorted[i].source.id) ?? 0;
+    let j = i + 1;
+    while (
+      j < sorted.length &&
+      (counts.get(sorted[j].source.id) ?? 0) === groupCount
+    ) {
+      j += 1;
+    }
+    const group = sorted.slice(i, j);
+    const offset =
+      group.length === 0
+        ? 0
+        : ((rotateSlot % group.length) + group.length) % group.length;
+    result.push(...group.slice(offset), ...group.slice(0, offset));
+    i = j;
+  }
+  return result;
+}
+
+/** UTC 時刻から実行スロット番号（:05/:25/:45 と手動実行を区別） */
+function ingestRotateSlot(now: Date): number {
+  const hour = now.getUTCHours();
+  const minute = now.getUTCMinutes();
+  const slot = minute < 15 ? 0 : minute < 35 ? 1 : 2;
+  return hour * 3 + slot;
+}
+
+function buildRoundRobinCandidates(
+  queues: SourceQueue[],
+  maxDepth: number
+): Array<{ source: Source; item: RawFeedItem }> {
+  const candidates: Array<{ source: Source; item: RawFeedItem }> = [];
+  for (let depth = 0; depth < maxDepth; depth++) {
+    for (const q of queues) {
+      if (q.items[depth]) {
+        candidates.push({ source: q.source, item: q.items[depth] });
+      }
+    }
+  }
+  return candidates;
+}
 
 /** Asia/Tokyo の YYYY-MM-DD（日次上限の判定用） */
 function tokyoDatePrefix(date: Date): string {
@@ -658,6 +737,13 @@ async function main() {
     Number(process.env.MAX_ARTICLES_PER_RUN || DEFAULT_ARTICLES_PER_RUN),
     maxPerDay
   );
+  const maxPerSourcePerRun = Math.max(
+    1,
+    Number(
+      process.env.MAX_ARTICLES_PER_SOURCE_PER_RUN ||
+        DEFAULT_MAX_PER_SOURCE_PER_RUN
+    )
+  );
   const maxMonthlyCostJpy = Number(process.env.MAX_MONTHLY_COST_JPY || '3000');
   const apiKey =
     process.env.SUMMARY_API_KEY ||
@@ -709,9 +795,9 @@ async function main() {
     ? monthCount * ESTIMATED_COST_PER_ARTICLE_JPY
     : 0;
 
-  // 全ソースから並列で最新RSSを取得し、特定のソースだけで枠が埋まらないよう「ラウンドロビン（1件ずつ均等）」で処理する
+  // 全ソースから並列で最新RSSを取得し、件数の少ないソース優先＋1実行1ソース上限で偏りを抑える
   console.log(`全 ${activeSources.length} 件のRSSフィードを巡回中...`);
-  const sourceQueues: Array<{ source: Source; items: RawFeedItem[] }> = [];
+  const fetchedQueues: SourceQueue[] = [];
 
   await Promise.all(
     activeSources.map(async (source) => {
@@ -732,7 +818,7 @@ async function main() {
           RSS_ITEMS_PER_SOURCE
         );
         if (feedItems.length > 0) {
-          sourceQueues.push({ source, items: feedItems });
+          fetchedQueues.push({ source, items: feedItems });
         }
       } catch {
         // 通信失敗したソースはスキップ
@@ -740,18 +826,31 @@ async function main() {
     })
   );
 
-  // ラウンドロビンで各ソースの1件目 → 2件目…の順に並べる（後半ソースの取りこぼしを防ぐ）
-  const roundRobinCandidates: Array<{ source: Source; item: RawFeedItem }> = [];
-  for (let depth = 0; depth < RSS_ITEMS_PER_SOURCE; depth++) {
-    for (const q of sourceQueues) {
-      if (q.items[depth]) {
-        roundRobinCandidates.push({ source: q.source, item: q.items[depth] });
-      }
-    }
-  }
+  const sourceCounts = countArticlesBySourceId(existingArticles);
+  const rotateSlot = ingestRotateSlot(now);
+  const sourceQueues = orderSourceQueuesForFairness(
+    fetchedQueues,
+    sourceCounts,
+    rotateSlot
+  );
+  console.log(
+    `公平巡回: 不足ソース優先 / 回転スロット=${rotateSlot} / 1ソース上限=${maxPerSourcePerRun}件（枠余り時は緩和）`
+  );
+  console.log(
+    `  処理順: ${sourceQueues
+      .map((q) => `${q.source.name}(${sourceCounts.get(q.source.id) ?? 0})`)
+      .join(' → ')}`
+  );
+
+  // ラウンドロビンで各ソースの1件目 → 2件目…（並びは不足優先済み）
+  const roundRobinCandidates = buildRoundRobinCandidates(
+    sourceQueues,
+    RSS_ITEMS_PER_SOURCE
+  );
 
   let todayCount = 0;
   const newArticles: Article[] = [];
+  const acceptedBySource = new Map<string, number>();
 
   if (alreadyToday >= maxPerDay) {
     console.log(
@@ -759,37 +858,29 @@ async function main() {
     );
   }
 
-  for (const { source, item } of roundRobinCandidates) {
-    if (alreadyToday >= maxPerDay) {
-      break;
-    }
-    if (todayCount >= maxPerRun) {
-      console.log(
-        `1実行の上限件数 (${maxPerRun}件) に達したため停止します（残りは次回 ingest で処理）。`
-      );
-      break;
-    }
-    if (alreadyToday + todayCount >= maxPerDay) {
-      console.log(
-        `1日の上限件数 (${maxPerDay}件) に達したため停止します。`
-      );
-      break;
-    }
+  const tryAcceptCandidate = async (
+    source: Source,
+    item: RawFeedItem,
+    perSourceCap: number
+  ): Promise<'accepted' | 'skipped' | 'stop'> => {
+    if (alreadyToday >= maxPerDay) return 'stop';
+    if (todayCount >= maxPerRun) return 'stop';
+    if (alreadyToday + todayCount >= maxPerDay) return 'stop';
     if (
       apiKey &&
       estimatedMonthlyCost + ESTIMATED_COST_PER_ARTICLE_JPY > maxMonthlyCostJpy
     ) {
-      console.log(
-        `月間費用上限 (${maxMonthlyCostJpy}円) に達したため停止します。`
-      );
-      break;
+      return 'stop';
     }
+
+    const taken = acceptedBySource.get(source.id) ?? 0;
+    if (taken >= perSourceCap) return 'skipped';
 
     const allKnown = [...existingArticles, ...newArticles];
     const isDuplicate = allKnown.some(
       (a) => a.url === item.link || isSimilarTitle(a.title_ja, item.title)
     );
-    if (isDuplicate) continue;
+    if (isDuplicate) return 'skipped';
 
     try {
       // OGP取得とLLMを同時に叩くとレート制限しやすいので直列にする
@@ -797,7 +888,7 @@ async function main() {
       const summary = await summarizeWithRetry(item, source, apiKey, model, 3);
       if (!summary) {
         if (articleDelayMs > 0 && apiKey) await sleep(articleDelayMs);
-        continue;
+        return 'skipped';
       }
 
       const article = sanitizeArticleToolTags({
@@ -820,18 +911,52 @@ async function main() {
 
       newArticles.push(article);
       todayCount += 1;
+      acceptedBySource.set(source.id, taken + 1);
       if (apiKey) {
         estimatedMonthlyCost += ESTIMATED_COST_PER_ARTICLE_JPY;
       }
       console.log(`  + 保存: [${source.name}] ${article.title_ja}`);
+      if (articleDelayMs > 0 && apiKey) {
+        await sleep(articleDelayMs);
+      }
+      return 'accepted';
     } catch (err) {
       console.warn(`  ! 処理失敗: ${item.title}`, err);
+      if (articleDelayMs > 0 && apiKey) {
+        await sleep(articleDelayMs);
+      }
+      return 'skipped';
     }
+  };
 
-    // 記事間に間隔を空けて 429 を予防（最終記事の後は不要だが単純化のため常に待つ）
-    if (articleDelayMs > 0 && apiKey) {
-      await sleep(articleDelayMs);
+  // Pass 1: ソースあたり上限厳守で偏りを抑える
+  for (const { source, item } of roundRobinCandidates) {
+    const result = await tryAcceptCandidate(
+      source,
+      item,
+      maxPerSourcePerRun
+    );
+    if (result === 'stop') break;
+  }
+
+  // Pass 2: 枠が余ったら上限を緩めて埋める（更新のあるソースだけ）
+  if (todayCount < maxPerRun && alreadyToday < maxPerDay) {
+    const softCap = Math.max(maxPerSourcePerRun + 2, maxPerRun);
+    console.log(
+      `枠余り (${todayCount}/${maxPerRun}) のためソース上限を ${softCap} に緩和して再巡回します`
+    );
+    for (const { source, item } of roundRobinCandidates) {
+      const result = await tryAcceptCandidate(source, item, softCap);
+      if (result === 'stop') break;
     }
+  }
+
+  if (todayCount >= maxPerRun) {
+    console.log(
+      `1実行の上限件数 (${maxPerRun}件) に達しました（残りは次回 ingest で処理）。`
+    );
+  } else if (alreadyToday + todayCount >= maxPerDay && alreadyToday < maxPerDay) {
+    console.log(`1日の上限件数 (${maxPerDay}件) に達しました。`);
   }
 
   const mergedAll = [...newArticles, ...existingArticles];
