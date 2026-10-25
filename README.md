@@ -90,9 +90,10 @@ npm run quality:check  # 英語95語未満など不合格を検出
 ### C. アプリに新着を届ける
 1. **開発中**: 上記 A/B のあと、アプリ起動またはフォアグラウンド復帰で `public/articles.json` を再取得（手動再読み込みも可）。
 2. **本番リモート配信（推奨）**  
-   - `data/articles.json` を raw URL で公開（例: `https://raw.githubusercontent.com/<owner>/<repo>/main/data/articles.json`）  
+   - `data/articles.json` を raw URL で公開（このリポジトリ例:  
+     `https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/articles.json`）  
    - EAS ビルドの環境変数に  
-     `EXPO_PUBLIC_FEED_URL=https://raw.githubusercontent.com/<owner>/<repo>/main/data/articles.json`
+     `EXPO_PUBLIC_FEED_URL=https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/articles.json`
 3. **本番で URL 未設定**  
    - 同梱 JSON のみ。新着は次のアプリアップデートまで反映されない
 
