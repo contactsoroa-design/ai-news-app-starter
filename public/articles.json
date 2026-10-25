@@ -1,5 +1,137 @@
 [
   {
+    "id": "art-1792922477378-bsfur",
+    "source_id": "source-hf",
+    "source_name": "Hugging Face Blog / Papers",
+    "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+    "published_at": "2026-10-23T00:00:00.000Z",
+    "og_image_url": "https://huggingface.co/blog/assets/torch-neuronx-model-support/thumbnail.jpg",
+    "title_ja": "Hugging FaceがAWS Trainiumモデル対応状況の検索ツールを公開、Neuron SDK環境への移行を支援するモデル互換性確認リスト",
+    "summary_ja": "Hugging Faceは、AWSのAIアクセラレータ「AWS Trainium」および「Neuron SDK」に対応するモデルを即座に確認できる検索・フィルタリング機能を公開した。 これまでTrainium環境への最適化には手動での検証が不可欠だったが、このツールにより、利用可能なモデルの特定から学習コストの最適化までの時間を大幅に短縮できる。",
+    "translations": {
+      "ja": {
+        "title": "Hugging FaceがAWS Trainiumモデル対応状況の検索ツールを公開、Neuron SDK環境への移行を支援するモデル互換性確認リスト",
+        "summary": "Hugging Faceは、AWSのAIアクセラレータ「AWS Trainium」および「Neuron SDK」に対応するモデルを即座に確認できる検索・フィルタリング機能を公開した。 これまでTrainium環境への最適化には手動での検証が不可欠だったが、このツールにより、利用可能なモデルの特定から学習コストの最適化までの時間を大幅に短縮できる。"
+      },
+      "en": {
+        "title": "Hugging Face releases AWS Trainium model compatibility lookup tool to streamline Neuron SDK transition and deployment",
+        "summary": "Hugging Face has launched a new search and filtering interface that identifies which models are natively compatible with AWS Trainium and the Neuron SDK, simplifying the path to high-performance AI infrastructure. Previously, verifying whether a specific model architecture could leverage AWS’s custom silicon required manual testing, often stalling migration timelines. This tool now allows developers to quickly query the repository for Trainium-ready models, significantly reducing the time spent on compatibility validation and cost-efficient cloud scaling. For builders aiming to optimize GPU costs, this registry provides the clarity needed to make architectural decisions between traditional instances and Trainium-based hardware before starting, ensuring that resource selection is aligned with model support right from the initial development phase."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-25T10:01:17.378Z"
+  },
+  {
+    "id": "art-1792922467042-x5sig",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/komlock_lab/articles/japan-cyberattacks-ai-bank-risk-2026",
+    "published_at": "2026-10-25T09:35:52.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hbtyDMjK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%259B%25B8%25E6%25AC%25A1%25E3%2581%2590%25E6%2583%2585%25E5%25A0%25B1%25E6%25BC%258F%25E6%25B4%25A9%25E3%2581%25A8AI%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E6%2594%25BB%25E6%2592%2583%25E3%2580%2581%25E9%258A%2580%25E8%25A1%258C%25E3%2581%25AE%25E8%25A2%25AB%25E5%25AE%25B3%25E3%2581%25AF%25E9%2587%2591%25E8%259E%258D%25E5%258D%25B1%25E6%25A9%259F%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%25AA%25E3%2581%258C%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Kobara%2520Toi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM4OTQ5NWM0ZmEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Komlock%2520lab%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2U4MjYwMWZiMGQuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "相次ぐ企業の情報漏洩とAI攻撃、もし銀行が狙われれば金融危機に直結するのか？セキュリティの限界とエンジニアがとるべき対策",
+    "summary_ja": "近年、タイムズカーやGMOなど日本企業での情報漏洩が急増しており、LLMを活用した巧妙な攻撃も増えている。 もし銀行が大規模な漏洩やシステム攻撃を受ければ、社会的な信頼は失墜し、リーマンショック級の金融危機を招くリスクすらある。 開発者は脆弱性を前提としたゼロトラストアーキテクチャの導入と、機密情報を単一障害点に置かない分散管理を再考する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "相次ぐ企業の情報漏洩とAI攻撃、もし銀行が狙われれば金融危機に直結するのか？セキュリティの限界とエンジニアがとるべき対策",
+        "summary": "近年、タイムズカーやGMOなど日本企業での情報漏洩が急増しており、LLMを活用した巧妙な攻撃も増えている。 もし銀行が大規模な漏洩やシステム攻撃を受ければ、社会的な信頼は失墜し、リーマンショック級の金融危機を招くリスクすらある。 開発者は脆弱性を前提としたゼロトラストアーキテクチャの導入と、機密情報を単一障害点に置かない分散管理を再考する必要がある。"
+      },
+      "en": {
+        "title": "Are rising data breaches and AI-driven cyberattacks a prelude to a financial crisis if banks are targeted?",
+        "summary": "Data breaches across major Japanese services like Times Car and GMO are accelerating, fueled by increasingly sophisticated LLM-powered attack vectors. This trend poses a catastrophic risk: if a major banking institution were compromised by similar leaks or system exploits, the collapse of public trust could trigger a financial crisis on the scale of the 2008 Lehman shock. For developers and architects, this isn't just about patching bugs but rethinking security models. The practical takeaway is that you must operate under the assumption of breach; implementing strict zero-trust architectures and avoiding the centralization of sensitive data into single points of failure are no longer optional best practices but critical safeguards against systemic failure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-25T10:01:07.042Z"
+  },
+  {
+    "id": "art-1792922455857-0fty7",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/OfoxAI/items/35a8d0fe187266230e90",
+    "published_at": "2026-10-25T09:53:49.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZlNGNlMWJhOGJhMWQwMjE1M2M0ZjAyMGZjMzllMmU4Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9M2JlMmYyMjAzOGVmOGE5NjI2Njg0YzlkMmEwNTQwYTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D3e12a3e1e0a7cbbf02fe282b297b690d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q29kZXglRTMlODElQTclRTMlODMlQUYlRTMlODMlQkMlRTMlODIlQUYlRTMlODIlQjklRTMlODMlOUElRTMlODMlQkMlRTMlODIlQjklRTglQTglQUQlRTUlQUUlOUElRTMlODIlOTIlRTglQUElQUQlRTMlODElQkYlRTglQkUlQkMlRTMlODIlODElRTMlODElQUElRTMlODElODQlRTMlODElQTglRTMlODElOEQlRUYlQkMlOUElRTMlODMlQUQlRTMlODIlQjAlRTMlODElQTglRTYlOTMlOEQlRTQlQkQlOUMlRTMlODIlOTIlRTUlODglODYlRTMlODElOTElRTMlODElQTYlRTUlODglODclRTMlODIlOEElRTUlODglODYlRTMlODElOTElRTMlODIlOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03ODRiZDI1NTVjM2E2OTZkNDM2MWE2NWMyY2JkZGJlNw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBPZm94QUkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0xNjhhODQyNGYxMzI2YTdkZDg3NjRjNGMyMzAyZGQzMg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b117764f52925dd23969e197540f1ae3",
+    "title_ja": "Codexの「Couldn't load workspace settings」エラー対策：config編集の前に実施すべきログ切り分けと原因特定の手順",
+    "summary_ja": "Codexで「Couldn't load workspace settings」エラーが発生した際、安易に設定ファイル修正や再インストールを行うのは非効率的です。 まずはエラーログを精査し、アプリの起動処理とモデルの返答処理を切り分けて原因を特定するのが先決です。 無駄な作業時間を削減し、迅速に開発環境を復旧させるためのデバッグ手順を。",
+    "translations": {
+      "ja": {
+        "title": "Codexの「Couldn't load workspace settings」エラー対策：config編集の前に実施すべきログ切り分けと原因特定の手順",
+        "summary": "Codexで「Couldn't load workspace settings」エラーが発生した際、安易に設定ファイル修正や再インストールを行うのは非効率的です。 まずはエラーログを精査し、アプリの起動処理とモデルの返答処理を切り分けて原因を特定するのが先決です。 無駄な作業時間を削減し、迅速に開発環境を復旧させるためのデバッグ手順を。"
+      },
+      "en": {
+        "title": "Debugging 'Couldn't load workspace settings' in Codex: Why you should check logs before modifying config files",
+        "summary": "When encountering the 'Couldn't load workspace settings' error in Codex, developers often rush to edit config.toml files or reinstall the application prematurely, wasting valuable time. This article argues that the correct initial approach is to perform a systematic triage of the error logs to isolate whether the failure stems from the application startup process or the model response stream. By distinguishing between these two layers before altering system configurations, you can pinpoint the specific bottleneck and restore your development environment much faster. For builders, this workflow emphasizes that structured diagnostics should always precede manual configuration changes when dealing with opaque editor errors, ultimately preventing unnecessary downtime and potential file corruption during troubleshooting sessions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-25T10:00:55.857Z"
+  },
+  {
+    "id": "art-1792922444758-osi9z",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/yoru_build/articles/42e6c0a575d75d",
+    "published_at": "2026-10-25T09:32:50.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--LXF27whd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E3%2581%25AF%25E3%2581%2598%25E3%2582%2581%25E3%2581%25AB%25E3%2580%2591AI%25E3%2581%25A8%25E4%25B8%2580%25E7%25B7%2592%25E3%2581%25AB%25E4%25BD%259C%25E3%2582%258B%25E8%2587%25AA%25E5%258B%2595%25E5%25A3%25B2%25E8%25B2%25B7%25E3%2580%2582%25E6%2589%258B%25E5%258B%2595%25E5%25A3%25B2%25E8%25B2%25B7%25E3%2581%25A8%25E3%2581%25AE%25E9%2581%2595%25E3%2581%2584%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2588%25E3%2582%258B%25E3%2583%2593%25E3%2583%25AB%25E3%2583%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NiZTFmNTU5NmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIと構築する自動売買システム開発の全記録：市場分析からプログラムによる自動発注実装までのステップを完全公開",
+    "summary_ja": "本連載は、AIを活用して株価指数連動商品の自動売買システムを一から構築する挑戦の記録である。 プログラムが過去データを検証し、売買判断と発注を自動実行する仕組みを実装していく過程で、具体的なシステム構成や開発順序、実際に直面した技術的課題を共有する。 手動売買との違いや設計思想に焦点を当て、個人開発者が複雑な金融ロジックを実装する際の「躓きポイント」を回避するための実践的なロードマップを提示する。",
+    "translations": {
+      "ja": {
+        "title": "AIと構築する自動売買システム開発の全記録：市場分析からプログラムによる自動発注実装までのステップを完全公開",
+        "summary": "本連載は、AIを活用して株価指数連動商品の自動売買システムを一から構築する挑戦の記録である。 プログラムが過去データを検証し、売買判断と発注を自動実行する仕組みを実装していく過程で、具体的なシステム構成や開発順序、実際に直面した技術的課題を共有する。 手動売買との違いや設計思想に焦点を当て、個人開発者が複雑な金融ロジックを実装する際の「躓きポイント」を回避するための実践的なロードマップを提示する。"
+      },
+      "en": {
+        "title": "Building an AI-Powered Automated Trading System: Documenting the End-to-End Implementation of Algorithmic Market Execution",
+        "summary": "This new series chronicles the end-to-end development of an automated trading system built in partnership with AI agents. The project focuses on creating a program that reads market data for index-linked assets, performs backtesting on historical price action, and autonomously executes buy or sell orders. By documenting each phase—from system architecture and component selection to the specific roadblocks encountered during implementation—this series offers a practical roadmap for developers attempting to bridge the gap between human trading and algorithmic automation. It prioritizes clear, modular development steps, aiming to help independent builders avoid common pitfalls when designing complex logic for live financial markets, ensuring they can move from concept to a functioning, automated trading environment efficiently."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-25T10:00:44.758Z"
+  },
+  {
+    "id": "art-1792922433076-xgeku",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/chenfeng/articles/993f185ac0873c",
+    "published_at": "2026-10-25T09:36:19.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--_wiQ1Ae1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2599%25AE%25E9%2580%259A%25E3%2581%25AE%25E4%25BA%25BA%25E3%2581%258C%25E3%2583%2590%25E3%2582%25A4%25E3%2583%2596%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25EF%25BC%2588Vibe%2520Coding%25EF%25BC%2589%25E3%2581%25A8%25E5%2590%2591%25E3%2581%258D%25E5%2590%2588%25E3%2581%2586%25E3%2581%25AA%25E3%2582%2589%25E3%2580%2581%25E3%2580%258C%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AE%25E5%2595%258F%25E9%25A1%258C%25E3%2581%25A0%25E3%2581%2591%25E3%2582%2592%25E8%25A7%25A3%25E3%2581%258F%25E3%2580%258D%25E3%2581%25AE%25E3%2581%258C%25E4%25B8%2580%25E7%2595%25AA%25E3%2581%2584%25E3%2581%2584%25E3%2581%25AE%25E3%2581%258B%25E3%2582%2582%25E3%2581%2597%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Feng%2520Chen%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3dDMS11UHZOOWJkY2ZiV1l2NDg2V1lrNlVtLW9ONkpVaEhMbkU0VnFDektOZ2hnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "「バイブコーディング」の罠を回避する：AI開発で挫折しないための唯一の解は『自分の不満を解消するツール』を作ることだ",
+    "summary_ja": "バイブコーディング（Vibe Coding）という新しい生産性パラダイムにおいて、世間のトレンドを追うだけの開発は、往々にして実用性に乏しく、熱量を維持できないという課題がある。 本稿では、AIのコード生成能力を最大限に活かす秘訣は、市場のニーズを予測することではなく、自分自身が直面している小さな不満や使い勝手の悪さを解消するツールを自作することにあると説く。",
+    "translations": {
+      "ja": {
+        "title": "「バイブコーディング」の罠を回避する：AI開発で挫折しないための唯一の解は『自分の不満を解消するツール』を作ることだ",
+        "summary": "バイブコーディング（Vibe Coding）という新しい生産性パラダイムにおいて、世間のトレンドを追うだけの開発は、往々にして実用性に乏しく、熱量を維持できないという課題がある。 本稿では、AIのコード生成能力を最大限に活かす秘訣は、市場のニーズを予測することではなく、自分自身が直面している小さな不満や使い勝手の悪さを解消するツールを自作することにあると説く。"
+      },
+      "en": {
+        "title": "Escaping the Vibe Coding Trap: Why Solving Your Own Problems Is the Secret to Sustained AI Development Success",
+        "summary": "As Vibe Coding introduces a new paradigm of productivity, many developers fall into the trap of chasing hype-driven builds that lack genuine utility and fail to hold their interest long-term. This article argues that the most effective way to leverage AI-assisted coding is not by forecasting market needs, but by focusing on solving one's own specific, immediate frustrations and usability pain points. Building tools for oneself acts as a powerful fuel for motivation, creating a feedback loop where the developer is also the power user. For builders struggling to maintain momentum, the takeaway is simple: discard grand product ambitions and instead embrace personal problem-solving as your primary engine for growth, satisfaction, and long-term technical execution in the age of AI."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-25T10:00:33.076Z"
+  },
+  {
     "id": "art-1792919535841-wg7c9",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
