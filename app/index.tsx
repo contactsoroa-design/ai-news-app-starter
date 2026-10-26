@@ -494,20 +494,29 @@ export default function HomeScreen() {
     []
   );
 
-  const handleSelectArticleFromExplore = useCallback(
-    (articleId: string) => {
-      // 非表示リストに入っていた記事を開いた場合のみ非表示を解除（絞り込み設定は絶対に触らない）
-      if (hiddenIds.includes(articleId)) {
-        const nextHidden = hiddenIds.filter((id) => id !== articleId);
-        setHiddenIds(nextHidden);
-        void setHiddenArticleIds(nextHidden);
-      }
+  const scrollHomeToTop = useCallback(() => {
+    setPreviewArticleId(null);
+    setCurrentIndex(0);
+    requestAnimationFrame(() => {
+      flatListRef.current?.scrollToOffset({
+        offset: 0,
+        animated: true,
+      });
+    });
+  }, []);
 
-      // 絞り込み内外どちらでもプレビュー先頭に載せ、ホームでその記事を開く
-      // （以前は絞り込み内だと index=0＝別記事になり「飛べない」ように見えていた）
-      setPreviewArticleId(articleId);
-      setTopTab('recommended');
-      setSelectedSourceId(null);
+  /** 記事の情報源アイコン／名から「ソース別」タブへ */
+  const handleOpenSourceFeed = useCallback(
+    (article: Article) => {
+      const sourceId =
+        article.source_id ||
+        sources.find((s) => s.name === article.source_name)?.id ||
+        null;
+      if (!sourceId) return;
+
+      setPreviewArticleId(null);
+      setTopTab('source');
+      setSelectedSourceId(sourceId);
       setSelectedTool(null);
       setCurrentIndex(0);
       setBottomTab('home');
@@ -519,19 +528,8 @@ export default function HomeScreen() {
         });
       });
     },
-    [hiddenIds]
+    [sources]
   );
-
-  const scrollHomeToTop = useCallback(() => {
-    setPreviewArticleId(null);
-    setCurrentIndex(0);
-    requestAnimationFrame(() => {
-      flatListRef.current?.scrollToOffset({
-        offset: 0,
-        animated: true,
-      });
-    });
-  }, []);
 
   const handleMomentumScrollEnd = (
     e: NativeSyntheticEvent<NativeScrollEvent>
@@ -659,6 +657,7 @@ export default function HomeScreen() {
                       isSaved={savedIds.includes(item.id)}
                       onToggleSave={handleToggleSave}
                       onHideArticle={handleHideArticle}
+                      onPressSource={handleOpenSourceFeed}
                     />
                   )
                 }
@@ -919,8 +918,12 @@ export default function HomeScreen() {
         ) : bottomTab === 'explore' ? (
           <ExploreView
             articles={baseFilteredArticles}
-            onSelectArticle={handleSelectArticleFromExplore}
+            savedIds={savedIds}
+            showOriginalButton={prefs.show_original_button}
+            onToggleSave={handleToggleSave}
+            onHideArticle={handleHideArticle}
             onOpenSaved={() => setBottomTab('saved')}
+            onPressSource={handleOpenSourceFeed}
             locale={prefs.region_locale}
           />
         ) : bottomTab === 'saved' ? (

@@ -67,6 +67,9 @@ const copyJa = {
     emptySearchTitle: '一致するニュースが見つかりません',
     emptySearchDescription: '別のツール名やキーワードで検索してみてください。',
     defaultTag: 'AI動向',
+    backToList: '‹ 探索一覧に戻る',
+    backToListAria: '探索一覧に戻る',
+    openSourceAria: 'この情報源のソース別フィードを開く',
   },
   saved: {
     title: '保存済み',
@@ -218,6 +221,9 @@ const copyEn: CopyShape = {
     emptySearchTitle: 'No matching news',
     emptySearchDescription: 'Try another tool name or keyword.',
     defaultTag: 'AI news',
+    backToList: '‹ Back to explore',
+    backToListAria: 'Back to explore grid',
+    openSourceAria: 'Open this source in the By Source feed',
   },
   saved: {
     title: 'Saved',

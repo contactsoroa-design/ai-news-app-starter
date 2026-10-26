@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useMemo, useRef, useState } from 'react';
+import React, { memo, useEffect, useRef, useState } from 'react';
 import {
   Image,
   Linking,
@@ -10,27 +10,39 @@ import {
   StyleSheet,
   Text,
   View,
+  type ImageSourcePropType,
 } from 'react-native';
 import Svg, { Circle, Path } from 'react-native-svg';
 import * as WebBrowser from 'expo-web-browser';
-import { copy } from '../lib/config';
+import { getCopy, getGenreLabel } from '../lib/config';
 import {
   cleanArticleSummary,
   cleanArticleTitle,
-  formatShortDateJa,
+  formatShortDate,
   getDisplayGenre,
   getFaviconUrl,
   getVerifiedArticleTool,
 } from '../lib/feed';
 import { looksLikeLocale } from '../lib/translate';
-import type { Article } from '../lib/types';
+import type { AppLocale, Article } from '../lib/types';
+
 import {
   getThemeForArticle,
   size,
   text,
+  themes,
   toolBadgeColors,
   uiColors,
 } from '../theme/tokens';
+
+const SUMMARY_LINE_HEIGHT = Math.round(
+  size.summary.fontSize * size.summary.lineHeight
+);
+/** 全文ボタン＋summaryBlock内gap分。見切れないよう確保する */
+const READ_FULL_BUTTON_RESERVE = size.minTap + 4;
+
+type SummaryAreaSize = { width: number; height: number };
+type SummaryFullMetrics = { lines: number; height: number };
 
 let isOpeningInAppBrowser = false;
 
@@ -81,9 +93,23 @@ type NewsCardProps = {
   overrideTool?: string | null;
   /** 設定で選中のジャンル。一致タグをメタ表示で優先する */
   highlightGenres?: readonly string[];
+  /** 表示言語（ボタン文言の日英切替） */
+  locale?: AppLocale;
+  /** 記事と同じ見た目のスポンサード枠 */
+  variant?: 'article' | 'sponsored';
+  /** 右レール「元記事」相当の文言（スポンサードCTA） */
+  openOriginalLabel?: string;
+  /** 上部サムネ（公式ブランド素材など）。指定時は og_image_url より優先 */
+  thumbnailSource?: ImageSourcePropType | null;
+  /** 情報源アイコン。指定時は favicon より優先（記事と同じ位置） */
+  iconSource?: ImageSourcePropType | null;
+  /** false のとき興味なしを出さない（広告枠）。レール位置はスペーサーで維持 */
+  showNotInterested?: boolean;
   isSaved: boolean;
   onToggleSave: (articleId: string) => void;
   onHideArticle: (articleId: string) => void;
+  /** 情報源アイコン／名前タップでソース別へ */
+  onPressSource?: (article: Article) => void;
 };
 
 export const NewsCard = memo(function NewsCard({
@@ -95,9 +121,16 @@ export const NewsCard = memo(function NewsCard({
   showOriginalButton = true,
   overrideTool = null,
   highlightGenres = [],
+  locale = 'ja',
+  variant = 'article',
+  openOriginalLabel,
+  thumbnailSource = null,
+  iconSource = null,
+  showNotInterested = true,
   isSaved,
   onToggleSave,
   onHideArticle,
+  onPressSource,
 }: NewsCardProps) {
   const primaryTool = getVerifiedArticleTool(article, overrideTool);
   const { colors } = getThemeForArticle(
@@ -106,19 +139,24 @@ export const NewsCard = memo(function NewsCard({
   );
   const [ogImageFailed, setOgImageFailed] = useState(false);
   const [faviconFailed, setFaviconFailed] = useState(false);
-  const [summaryTruncated, setSummaryTruncated] = useState(false);
+  const [summaryAreaSize, setSummaryAreaSize] = useState<SummaryAreaSize>({
+    width: 0,
+    height: 0,
+  });
+  const [fullSummaryMetrics, setFullSummaryMetrics] =
+    useState<SummaryFullMetrics>({ lines: 0, height: 0 });
   const [summaryModalOpen, setSummaryModalOpen] = useState(false);
   /** 全文モーダルを閉じたあとで開く元記事URL（Modal上での WebBrowser 重ね表示を避ける） */
   const pendingOriginalUrlRef = useRef<string | null>(null);
 
-  // 記事が切り替わった際に必ず画像の失敗状態をリセットする
+  // 記事・要約・言語が切り替わった際に状態をリセットする
   useEffect(() => {
     setOgImageFailed(false);
     setFaviconFailed(false);
-    setSummaryTruncated(false);
+    setFullSummaryMetrics({ lines: 0, height: 0 });
     setSummaryModalOpen(false);
     pendingOriginalUrlRef.current = null;
-  }, [article.id, article.og_image_url, article.url]);
+  }, [article.id, article.og_image_url, article.url, article.summary_ja, locale]);
 
   // モーダルが完全に閉じたあとで外部ブラウザを開く（iOS の表示競合対策）
   useEffect(() => {
@@ -145,9 +183,23 @@ export const NewsCard = memo(function NewsCard({
     };
   }, [summaryModalOpen]);
 
-  const faviconUrl = getFaviconUrl(article.url);
-  const showOgImage = Boolean(article.og_image_url) && !ogImageFailed;
-  const showFavicon = Boolean(faviconUrl) && !faviconFailed;
+  const faviconUrl = iconSource ? null : getFaviconUrl(article.url);
+  const showBundledThumb = Boolean(thumbnailSource) && !ogImageFailed;
+  const showOgImage =
+    showBundledThumb || (Boolean(article.og_image_url) && !ogImageFailed);
+  const showBundledIcon = Boolean(iconSource) && !faviconFailed;
+  const showFavicon =
+    showBundledIcon || (Boolean(faviconUrl) && !faviconFailed);
+  const thumbImageSource: ImageSourcePropType | null = showBundledThumb
+    ? (thumbnailSource as ImageSourcePropType)
+    : article.og_image_url
+      ? { uri: article.og_image_url }
+      : null;
+  const iconImageSource: ImageSourcePropType | null = showBundledIcon
+    ? (iconSource as ImageSourcePropType)
+    : faviconUrl
+      ? { uri: faviconUrl }
+      : null;
 
   const primaryGenre = getDisplayGenre(article, highlightGenres);
   const secondaryGenre =
@@ -164,19 +216,30 @@ export const NewsCard = memo(function NewsCard({
       initial: sourceShortLabel.slice(0, 2).toUpperCase(),
     };
 
-  const dateStr = formatShortDateJa(article.published_at);
+  const t = getCopy(locale);
+  const isSponsored = variant === 'sponsored';
+  const dateStr = formatShortDate(article.published_at, locale);
+  const primaryGenreLabel = primaryGenre
+    ? getGenreLabel(primaryGenre, locale)
+    : '';
+  const secondaryGenreLabel = secondaryGenre
+    ? getGenreLabel(secondaryGenre, locale)
+    : '';
   // ジャンル絞り込み中は選んだジャンルを必ずメタに出し、絞り込みが効いていると分かるようにする
   const tagLabel =
-    highlightGenres.length > 0 && primaryGenre
-      ? primaryGenre
-      : primaryTool || primaryGenre || '';
-  const metaParts = [dateStr, tagLabel, `${index + 1}/${total}`].filter(Boolean);
-  const metaText = metaParts.join(' ・ ');
+    highlightGenres.length > 0 && primaryGenreLabel
+      ? primaryGenreLabel
+      : primaryTool || primaryGenreLabel || '';
+  const metaParts = isSponsored
+    ? [t.sponsored.badge, tagLabel, `${index + 1}/${total}`].filter(Boolean)
+    : [dateStr, tagLabel, `${index + 1}/${total}`].filter(Boolean);
+  const metaText = metaParts.join(locale === 'en' ? ' · ' : ' ・ ');
 
   const initialChar = article.source_name.trim().slice(0, 2).toUpperCase();
 
   const displayTitle = cleanArticleTitle(article.title_ja);
   // 英語ネイティブ要約は ingest 済みの文面を優先（日本語向けクリーンで壊さない）
+  // スポンサードも記事と同じ整形ルールを通す
   const displaySummary = looksLikeLocale(article.summary_ja, 'en')
     ? article.summary_ja.trim()
     : cleanArticleSummary(
@@ -185,18 +248,55 @@ export const NewsCard = memo(function NewsCard({
         article.source_name
       );
 
-  // 1画面想定を大きく超えたときだけ全文ボタン（表示行数を多めにして収まるケースを増やす）
-  // 行数判定だけだと「行には収まるがカード下端で切れる」ケースを拾えない。
-  const summaryOverBudget = useMemo(() => {
-    const s = displaySummary.trim();
-    if (!s) return false;
-    if (looksLikeLocale(s, 'en')) {
-      return s.split(/\s+/).filter(Boolean).length > 135;
-    }
-    return s.length > 220;
-  }, [displaySummary]);
-
-  const showReadFullSummary = summaryTruncated || summaryOverBudget;
+  const isEnUi = locale === 'en';
+  // 実測の要約高さで判定（英文は折り返しが多く、固定行高換算だと見切れてもボタンが出ない）
+  const measuredLineHeight =
+    fullSummaryMetrics.lines > 0
+      ? fullSummaryMetrics.height / fullSummaryMetrics.lines
+      : SUMMARY_LINE_HEIGHT;
+  const linesThatFit = Math.max(
+    1,
+    Math.floor(summaryAreaSize.height / measuredLineHeight)
+  );
+  const measuredOverflow =
+    summaryAreaSize.height > 0 &&
+    fullSummaryMetrics.height > 0 &&
+    fullSummaryMetrics.height > summaryAreaSize.height + 1;
+  // 計測が遅延・欠落したとき用。英文はおおよそ 7.5語/行で行数を見積もる
+  const enWordCount = isEnUi
+    ? displaySummary.trim().split(/\s+/).filter(Boolean).length
+    : 0;
+  const enFallbackOverflow =
+    isEnUi &&
+    fullSummaryMetrics.height <= 0 &&
+    summaryAreaSize.height > 0 &&
+    summaryAreaSize.width > 0 &&
+    Math.ceil(enWordCount / 7.5) > linesThatFit;
+  const showReadFullSummary = measuredOverflow || enFallbackOverflow;
+  const summaryDisplayLines = showReadFullSummary
+    ? Math.max(
+        1,
+        Math.floor(
+          (summaryAreaSize.height - READ_FULL_BUTTON_RESERVE) / measuredLineHeight
+        )
+      )
+    : undefined;
+  const readFullLabel = t.card.readFullSummary;
+  const readFullAria = t.card.readFullSummaryAria;
+  const closeFullLabel = t.card.closeFullSummary;
+  const railOpenLabel =
+    openOriginalLabel?.trim() || t.rail.openOriginal;
+  const openOriginalModalLabel =
+    openOriginalLabel?.trim() || t.card.openOriginalFromModal;
+  const longPressHintLabel = isSponsored
+    ? t.sponsored.longPressHint
+    : t.card.longPressHint;
+  const longPressAriaHint = isSponsored
+    ? t.sponsored.longPressHint
+    : t.card.longPressAriaHint;
+  const openOriginalAria = isSponsored
+    ? t.sponsored.openCtaAria
+    : t.rail.openOriginalAria;
 
   const handleOpenOriginal = () => {
     void openInAppArticleBrowser(article.url);
@@ -249,7 +349,12 @@ export const NewsCard = memo(function NewsCard({
       <Pressable
         onLongPress={handleOpenOriginal}
         delayLongPress={500}
-        accessibilityHint={copy.card.longPressAriaHint}
+        accessibilityHint={longPressAriaHint}
+        accessibilityLabel={
+          isSponsored
+            ? `${t.sponsored.badgeAria}. ${displayTitle}`
+            : undefined
+        }
         style={styles.cardBodyPressable}
       >
         {/* 上部ビジュアル領域（記事に1対1で対応したテーマバナー＋個別記事OGPがある場合は重ねて表示） */}
@@ -263,69 +368,77 @@ export const NewsCard = memo(function NewsCard({
             },
           ]}
         >
-          {showOgImage && article.og_image_url ? (
+          {showOgImage && thumbImageSource ? (
             <>
               <Image
-                key={article.og_image_url}
-                source={{ uri: article.og_image_url }}
+                key={
+                  typeof thumbImageSource === 'number'
+                    ? `thumb-local-${article.id}`
+                    : article.og_image_url || `thumb-${article.id}`
+                }
+                source={thumbImageSource}
                 style={styles.thumbnailImage}
                 resizeMode="cover"
                 onError={() => setOgImageFailed(true)}
               />
-              {/* 画像の上にもツール＋ジャンルを並べて表示（テーマバナーと同じ情報） */}
-              <View style={styles.imageTopOverlay}>
-                {bannerPrimaryLabel ? (
-                  <View
-                    style={[
-                      styles.bannerToolPill,
-                      { backgroundColor: colors.accent },
-                    ]}
-                  >
-                    <Text
-                      style={[
-                        styles.bannerToolPillText,
-                        { color: colors.background },
-                      ]}
-                    >
-                      {bannerPrimaryLabel}
-                    </Text>
-                  </View>
-                ) : null}
-                {primaryGenre ? (
-                  <View
-                    style={[
-                      styles.bannerGenrePill,
-                      {
-                        backgroundColor: uiColors.overlayDark,
-                        borderColor: colors.accent,
-                      },
-                    ]}
-                  >
+              {/* 記事OGP上のツール／ジャンル。スポンサードはプレゼン画像を優先して重ねない */}
+              {!isSponsored ? (
+                <View style={styles.imageTopOverlay}>
+                  {bannerPrimaryLabel ? (
                     <View
                       style={[
-                        styles.bannerGenreDot,
+                        styles.bannerToolPill,
                         { backgroundColor: colors.accent },
                       ]}
-                    />
-                    <Text style={styles.bannerGenreText}>{primaryGenre}</Text>
-                  </View>
-                ) : null}
-                {secondaryGenre ? (
-                  <View
-                    style={[
-                      styles.bannerGenrePill,
-                      {
-                        backgroundColor: uiColors.overlayDark,
-                        borderColor: colors.line,
-                      },
-                    ]}
-                  >
-                    <Text style={styles.bannerGenreTextMuted}>
-                      {secondaryGenre}
-                    </Text>
-                  </View>
-                ) : null}
-              </View>
+                    >
+                      <Text
+                        style={[
+                          styles.bannerToolPillText,
+                          { color: colors.background },
+                        ]}
+                      >
+                        {bannerPrimaryLabel}
+                      </Text>
+                    </View>
+                  ) : null}
+                  {primaryGenre ? (
+                    <View
+                      style={[
+                        styles.bannerGenrePill,
+                        {
+                          backgroundColor: uiColors.overlayDark,
+                          borderColor: colors.accent,
+                        },
+                      ]}
+                    >
+                      <View
+                        style={[
+                          styles.bannerGenreDot,
+                          { backgroundColor: colors.accent },
+                        ]}
+                      />
+                      <Text style={styles.bannerGenreText}>
+                        {primaryGenreLabel}
+                      </Text>
+                    </View>
+                  ) : null}
+                  {secondaryGenre ? (
+                    <View
+                      style={[
+                        styles.bannerGenrePill,
+                        {
+                          backgroundColor: uiColors.overlayDark,
+                          borderColor: colors.line,
+                        },
+                      ]}
+                    >
+                      <Text style={styles.bannerGenreTextMuted}>
+                        {secondaryGenreLabel}
+                      </Text>
+                    </View>
+                  ) : null}
+                </View>
+              ) : null}
             </>
           ) : (
             <View style={styles.themeBannerContainer}>
@@ -401,7 +514,9 @@ export const NewsCard = memo(function NewsCard({
                         { backgroundColor: colors.accent },
                       ]}
                     />
-                    <Text style={styles.bannerGenreText}>{primaryGenre}</Text>
+                    <Text style={styles.bannerGenreText}>
+                      {primaryGenreLabel}
+                    </Text>
                   </View>
                 ) : null}
                 {secondaryGenre ? (
@@ -415,7 +530,7 @@ export const NewsCard = memo(function NewsCard({
                     ]}
                   >
                     <Text style={styles.bannerGenreTextMuted}>
-                      {secondaryGenre}
+                      {secondaryGenreLabel}
                     </Text>
                   </View>
                 ) : null}
@@ -427,16 +542,25 @@ export const NewsCard = memo(function NewsCard({
                   style={[
                     styles.bannerToolIcon,
                     {
-                      backgroundColor: showFavicon ? colors.panel : toolBadge.bg,
+                      // 公式シンボル（黒）は明るいホルダー上に置く（ブランド推奨）
+                      backgroundColor: showBundledIcon
+                        ? '#FFFFFF'
+                        : showFavicon
+                          ? colors.panel
+                          : toolBadge.bg,
                       borderWidth: showFavicon ? 1 : 0,
                       borderColor: colors.line,
                     },
                   ]}
                 >
-                  {showFavicon && faviconUrl ? (
+                  {showFavicon && iconImageSource ? (
                     <Image
-                      key={`banner-${faviconUrl}`}
-                      source={{ uri: faviconUrl }}
+                      key={
+                        typeof iconImageSource === 'number'
+                          ? `banner-icon-local-${article.id}`
+                          : `banner-${faviconUrl}`
+                      }
+                      source={iconImageSource}
                       style={styles.faviconImage}
                       onError={() => setFaviconFailed(true)}
                     />
@@ -465,28 +589,52 @@ export const NewsCard = memo(function NewsCard({
 
           <View style={styles.longPressBadge}>
             <Text style={styles.longPressBadgeText}>
-              {copy.card.longPressHint}
+              {longPressHintLabel}
             </Text>
           </View>
         </View>
 
         {/* 文字ブロック (left 20, right 80 — 常に同じ高さから始まり、右下ボタン列と重ねない) */}
         <View style={[styles.contentBlock, { top: contentTop }]}>
-          {/* 情報源の行 */}
-          <View style={styles.sourceRow}>
+          {/* 情報源の行（アイコン／名前タップでソース別へ） */}
+          <Pressable
+            style={styles.sourceRow}
+            onPress={
+              onPressSource && variant === 'article'
+                ? () => onPressSource(article)
+                : undefined
+            }
+            disabled={!onPressSource || variant !== 'article'}
+            accessibilityRole={
+              onPressSource && variant === 'article' ? 'button' : undefined
+            }
+            accessibilityLabel={
+              onPressSource && variant === 'article'
+                ? t.explore.openSourceAria
+                : undefined
+            }
+          >
             <View
               style={[
                 styles.sourceIconBox,
                 {
-                  backgroundColor: showFavicon ? colors.panel : colors.accent,
+                  backgroundColor: showBundledIcon
+                    ? '#FFFFFF'
+                    : showFavicon
+                      ? colors.panel
+                      : colors.accent,
                   borderColor: colors.line,
                 },
               ]}
             >
-              {showFavicon && faviconUrl ? (
+              {showFavicon && iconImageSource ? (
                 <Image
-                  key={faviconUrl}
-                  source={{ uri: faviconUrl }}
+                  key={
+                    typeof iconImageSource === 'number'
+                      ? `source-icon-local-${article.id}`
+                      : faviconUrl || `source-icon-${article.id}`
+                  }
+                  source={iconImageSource}
                   style={styles.faviconImage}
                   onError={() => setFaviconFailed(true)}
                 />
@@ -506,44 +654,84 @@ export const NewsCard = memo(function NewsCard({
                 {metaText}
               </Text>
             </View>
-          </View>
+          </Pressable>
 
           {/* 見出し */}
           <Text style={styles.headline} numberOfLines={4}>
             {displayTitle}
           </Text>
 
-          {/* 要約（長い場合は切り詰め、「全文を見る」でモーダル表示） */}
+          {/* 要約（全文の実測高さが領域を超えるときだけ全文ボタン） */}
+          <View style={styles.summarySection}>
+            <View
+              style={styles.summaryBlock}
+              onLayout={(e) => {
+                const { width, height } = e.nativeEvent.layout;
+                const next = {
+                  width: Math.round(width),
+                  height: Math.round(height),
+                };
+                setSummaryAreaSize((prev) =>
+                  prev.width === next.width && prev.height === next.height
+                    ? prev
+                    : next
+                );
+              }}
+            >
+              <Text style={styles.summary} numberOfLines={summaryDisplayLines}>
+                {displaySummary}
+              </Text>
+              {showReadFullSummary ? (
+                <Pressable
+                  onPress={() => setSummaryModalOpen(true)}
+                  accessibilityRole="button"
+                  accessibilityLabel={readFullAria}
+                  hitSlop={8}
+                  style={styles.readFullButton}
+                >
+                  <Text style={styles.readFullButtonText} numberOfLines={1}>
+                    {readFullLabel}
+                  </Text>
+                </Pressable>
+              ) : null}
+            </View>
+          </View>
+        </View>
+      </Pressable>
+
+      {/* カード直下・画面外で全文高さを計測（ネスト overflow による英文行欠け対策） */}
+      {summaryAreaSize.width > 0 ? (
+        <View
+          pointerEvents="none"
+          collapsable={false}
+          style={[
+            styles.summaryMeasureWrap,
+            { width: summaryAreaSize.width },
+          ]}
+        >
           <Text
-            style={[styles.summary, styles.summaryMeasure]}
+            key={`sum-measure-${article.id}-${locale}`}
+            style={[styles.summary, { width: summaryAreaSize.width }]}
             onTextLayout={(e) => {
-              // 実測行数が表示上限を超えたときもボタンを出す（文字数判定の保険）
-              const truncated = e.nativeEvent.lines.length > 12;
-              setSummaryTruncated((prev) =>
-                prev === truncated ? prev : truncated
+              const lines = e.nativeEvent.lines;
+              if (lines.length === 0) return;
+              const last = lines[lines.length - 1];
+              const next = {
+                lines: lines.length,
+                height: last.y + last.height,
+              };
+              setFullSummaryMetrics((prev) =>
+                prev.lines === next.lines &&
+                Math.abs(prev.height - next.height) < 0.5
+                  ? prev
+                  : next
               );
             }}
           >
             {displaySummary}
           </Text>
-          <Text style={styles.summary} numberOfLines={12}>
-            {displaySummary}
-          </Text>
-          {showReadFullSummary ? (
-            <Pressable
-              onPress={() => setSummaryModalOpen(true)}
-              accessibilityRole="button"
-              accessibilityLabel={copy.card.readFullSummaryAria}
-              hitSlop={8}
-              style={styles.readFullButton}
-            >
-              <Text style={[styles.readFullButtonText, { color: colors.accent }]}>
-                {copy.card.readFullSummary}
-              </Text>
-            </Pressable>
-          ) : null}
         </View>
-      </Pressable>
+      ) : null}
 
       <Modal
         visible={summaryModalOpen}
@@ -564,14 +752,14 @@ export const NewsCard = memo(function NewsCard({
             <Pressable
               onPress={() => setSummaryModalOpen(false)}
               accessibilityRole="button"
-              accessibilityLabel={copy.card.closeFullSummary}
+              accessibilityLabel={closeFullLabel}
               hitSlop={12}
               style={styles.summaryModalClose}
             >
               <Text
                 style={[styles.summaryModalCloseText, { color: colors.accent }]}
               >
-                {copy.card.closeFullSummary}
+                {closeFullLabel}
               </Text>
             </Pressable>
           </View>
@@ -586,7 +774,7 @@ export const NewsCard = memo(function NewsCard({
             <Pressable
               onPress={handleOpenOriginalFromModal}
               accessibilityRole="button"
-              accessibilityLabel={copy.card.openOriginalFromModal}
+              accessibilityLabel={openOriginalModalLabel}
               style={[
                 styles.summaryModalPrimary,
                 { backgroundColor: colors.accent },
@@ -598,7 +786,7 @@ export const NewsCard = memo(function NewsCard({
                   { color: colors.background },
                 ]}
               >
-                {copy.card.openOriginalFromModal}
+                {openOriginalModalLabel}
               </Text>
             </Pressable>
           ) : null}
@@ -611,7 +799,7 @@ export const NewsCard = memo(function NewsCard({
           style={styles.railButton}
           onPress={() => onToggleSave(article.id)}
           accessibilityRole="button"
-          accessibilityLabel={copy.rail.save}
+          accessibilityLabel={t.rail.save}
           accessibilityState={{ selected: isSaved }}
         >
           <Svg width={30} height={30} viewBox="0 0 24 24" fill="none">
@@ -630,7 +818,7 @@ export const NewsCard = memo(function NewsCard({
               isSaved && { color: colors.accent, fontWeight: '700' },
             ]}
           >
-            {isSaved ? copy.rail.saved : copy.rail.save}
+            {isSaved ? t.rail.saved : t.rail.save}
           </Text>
         </Pressable>
 
@@ -638,7 +826,7 @@ export const NewsCard = memo(function NewsCard({
           style={styles.railButton}
           onPress={handleShare}
           accessibilityRole="button"
-          accessibilityLabel={copy.rail.share}
+          accessibilityLabel={t.rail.share}
         >
           <Svg width={30} height={30} viewBox="0 0 24 24" fill="none">
             <Path
@@ -649,7 +837,7 @@ export const NewsCard = memo(function NewsCard({
               strokeLinejoin="round"
             />
           </Svg>
-          <Text style={styles.railLabel}>{copy.rail.share}</Text>
+          <Text style={styles.railLabel}>{t.rail.share}</Text>
         </Pressable>
 
         {showOriginalButton ? (
@@ -657,7 +845,7 @@ export const NewsCard = memo(function NewsCard({
             style={styles.railButton}
             onPress={handleOpenOriginal}
             accessibilityRole="button"
-            accessibilityLabel={copy.rail.openOriginalAria}
+            accessibilityLabel={openOriginalAria}
           >
             <Svg width={30} height={30} viewBox="0 0 24 24" fill="none">
               <Path
@@ -668,33 +856,38 @@ export const NewsCard = memo(function NewsCard({
                 strokeLinejoin="round"
               />
             </Svg>
-            <Text style={styles.railLabel}>{copy.rail.openOriginal}</Text>
+            <Text style={styles.railLabel}>{railOpenLabel}</Text>
           </Pressable>
         ) : null}
 
-        <Pressable
-          style={styles.railButton}
-          onPress={() => onHideArticle(article.id)}
-          accessibilityRole="button"
-          accessibilityLabel={copy.rail.notInterested}
-        >
-          <Svg width={30} height={30} viewBox="0 0 24 24" fill="none">
-            <Circle
-              cx={12}
-              cy={12}
-              r={9}
-              stroke={text.primary}
-              strokeWidth={2}
-            />
-            <Path
-              d="M8 8l8 8"
-              stroke={text.primary}
-              strokeWidth={2}
-              strokeLinecap="round"
-            />
-          </Svg>
-          <Text style={styles.railLabel}>{copy.rail.notInterested}</Text>
-        </Pressable>
+        {showNotInterested ? (
+          <Pressable
+            style={styles.railButton}
+            onPress={() => onHideArticle(article.id)}
+            accessibilityRole="button"
+            accessibilityLabel={t.rail.notInterested}
+          >
+            <Svg width={30} height={30} viewBox="0 0 24 24" fill="none">
+              <Circle
+                cx={12}
+                cy={12}
+                r={9}
+                stroke={text.primary}
+                strokeWidth={2}
+              />
+              <Path
+                d="M8 8l8 8"
+                stroke={text.primary}
+                strokeWidth={2}
+                strokeLinecap="round"
+              />
+            </Svg>
+            <Text style={styles.railLabel}>{t.rail.notInterested}</Text>
+          </Pressable>
+        ) : (
+          // 興味なし非表示でも保存・共有・開くの縦位置を記事カードと揃える
+          <View style={styles.railButton} pointerEvents="none" />
+        )}
       </View>
     </View>
   );
@@ -724,6 +917,8 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     left: 0,
+    width: '100%',
+    height: '100%',
   },
   imageTopOverlay: {
     position: 'absolute',
@@ -877,13 +1072,30 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: size.pageSide,
     right: size.contentRight,
-    bottom: 12,
+    bottom: 20,
     gap: 10,
+  },
+  summarySection: {
+    flex: 1,
+    minHeight: 0,
+  },
+  summaryBlock: {
+    flex: 1,
+    minHeight: 0,
+    gap: 4,
+    overflow: 'hidden',
+  },
+  summaryMeasureWrap: {
+    position: 'absolute',
+    left: size.pageSide,
+    top: 0,
+    opacity: 0,
   },
   sourceRow: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
+    flexShrink: 0,
   },
   sourceIconBox: {
     width: size.sourceIcon,
@@ -922,29 +1134,25 @@ const styles = StyleSheet.create({
     fontSize: size.headline.fontSize,
     lineHeight: Math.round(size.headline.fontSize * size.headline.lineHeight),
     fontWeight: '700',
+    flexShrink: 0,
   },
   summary: {
     color: text.body,
     fontSize: size.summary.fontSize,
-    lineHeight: Math.round(size.summary.fontSize * size.summary.lineHeight),
+    lineHeight: SUMMARY_LINE_HEIGHT,
     fontWeight: '500',
-  },
-  summaryMeasure: {
-    position: 'absolute',
-    opacity: 0,
-    left: 0,
-    right: 0,
-    zIndex: -1,
   },
   readFullButton: {
     alignSelf: 'flex-start',
     minHeight: 44,
     justifyContent: 'center',
-    paddingVertical: 4,
+    paddingVertical: 6,
+    paddingRight: 8,
   },
   readFullButtonText: {
     fontSize: 14,
     fontWeight: '700',
+    color: themes.neutral.accent,
   },
   summaryModalRoot: {
     flex: 1,

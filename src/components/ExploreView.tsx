@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useMemo, useState } from 'react';
+import React, { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   FlatList,
   Image,
@@ -7,11 +7,13 @@ import {
   Text,
   TextInput,
   View,
+  type LayoutChangeEvent,
+  type ViewToken,
 } from 'react-native';
 import Svg, { Circle, Path } from 'react-native-svg';
-import { copy } from '../lib/config';
-import { formatShortDateJa, getVerifiedArticleTool } from '../lib/feed';
-import type { Article } from '../lib/types';
+import { getCopy, getGenreLabel } from '../lib/config';
+import { formatShortDate, getVerifiedArticleTool } from '../lib/feed';
+import type { AppLocale, Article } from '../lib/types';
 import {
   getThemeForArticle,
   size,
@@ -21,22 +23,31 @@ import {
   uiColors,
 } from '../theme/tokens';
 import { EmptyState } from './EmptyState';
+import { NewsCard } from './NewsCard';
 
 type ExploreViewProps = {
   articles: Article[];
-  onSelectArticle: (articleId: string) => void;
+  savedIds: string[];
+  showOriginalButton?: boolean;
+  onToggleSave: (articleId: string) => void;
+  onHideArticle: (articleId: string) => void;
   onOpenSaved: () => void;
+  onPressSource?: (article: Article) => void;
+  locale?: AppLocale;
 };
 
 type ExploreGridCellProps = {
   article: Article;
   onSelect: (articleId: string) => void;
+  locale: AppLocale;
 };
 
 const ExploreGridCell = memo(function ExploreGridCell({
   article,
   onSelect,
+  locale,
 }: ExploreGridCellProps) {
+  const t = getCopy(locale);
   const primaryTool = getVerifiedArticleTool(article);
   const { colors } = getThemeForArticle(primaryTool ? [primaryTool] : []);
   const [imgFailed, setImgFailed] = useState(false);
@@ -48,10 +59,14 @@ const ExploreGridCell = memo(function ExploreGridCell({
   const showImage = Boolean(article.og_image_url) && !imgFailed;
 
   const primaryGenre = (article.genre_tags ?? [])[0] || '';
+  const primaryGenreLabel = primaryGenre
+    ? getGenreLabel(primaryGenre, locale)
+    : '';
   const sourceShortLabel =
     article.source_name.split(/[（(]/)[0]?.trim() || article.source_name;
-  const badgeText = primaryTool || sourceShortLabel || primaryGenre || copy.explore.defaultTag;
-  const dateStr = formatShortDateJa(article.published_at);
+  const badgeText =
+    primaryTool || sourceShortLabel || primaryGenreLabel || t.explore.defaultTag;
+  const dateStr = formatShortDate(article.published_at, locale);
 
   const toolBadge =
     (primaryTool && toolBadgeColors[primaryTool]) || {
@@ -60,7 +75,6 @@ const ExploreGridCell = memo(function ExploreGridCell({
       initial: sourceShortLabel.slice(0, 2).toUpperCase(),
     };
 
-  // サムネイルの中だけで「何の記事か」がすぐわかるよう、見出しの主題を抽出
   const afterColon = article.title_ja.includes('：')
     ? article.title_ja.split('：').slice(1).join('：').trim()
     : '';
@@ -103,7 +117,6 @@ const ExploreGridCell = memo(function ExploreGridCell({
             </>
           ) : (
             <View style={styles.customThumbContent}>
-              {/* ツールカラーの装飾背景 */}
               <View
                 style={[
                   styles.circleFilled,
@@ -123,7 +136,6 @@ const ExploreGridCell = memo(function ExploreGridCell({
                 {toolBadge.initial}
               </Text>
 
-              {/* 右上：ジャンルサブバッジ */}
               {primaryGenre && primaryTool ? (
                 <View
                   style={[
@@ -135,12 +147,11 @@ const ExploreGridCell = memo(function ExploreGridCell({
                   ]}
                 >
                   <Text style={styles.genreMiniBadgeText} numberOfLines={1}>
-                    {primaryGenre}
+                    {primaryGenreLabel}
                   </Text>
                 </View>
               ) : null}
 
-              {/* 中央〜下部：記事の核心キーワードと情報源 */}
               <View style={styles.customThumbBottom}>
                 <Text style={styles.customThumbTopic} numberOfLines={2}>
                   {shortTopic}
@@ -160,7 +171,6 @@ const ExploreGridCell = memo(function ExploreGridCell({
             </View>
           )}
 
-          {/* 左上：メインツールピル */}
           <View style={[styles.tagPill, { backgroundColor: colors.accent }]}>
             <Text
               style={[styles.tagPillText, { color: colors.background }]}
@@ -171,13 +181,14 @@ const ExploreGridCell = memo(function ExploreGridCell({
           </View>
         </View>
 
-        {/* 見出しがしっかり読めるテキスト領域（2列カード幅・最大4行） */}
         <View style={styles.cardBody}>
           <Text style={styles.gridTitle} numberOfLines={4}>
             {article.title_ja}
           </Text>
           <Text style={styles.gridMeta} numberOfLines={1}>
-            {[dateStr, article.source_name].filter(Boolean).join(' ・ ')}
+            {[dateStr, article.source_name]
+              .filter(Boolean)
+              .join(locale === 'en' ? ' · ' : ' ・ ')}
           </Text>
         </View>
       </View>
@@ -187,12 +198,23 @@ const ExploreGridCell = memo(function ExploreGridCell({
 
 export function ExploreView({
   articles,
-  onSelectArticle,
+  savedIds,
+  showOriginalButton = true,
+  onToggleSave,
+  onHideArticle,
   onOpenSaved,
+  onPressSource,
+  locale = 'ja',
 }: ExploreViewProps) {
+  const t = getCopy(locale);
   const [query, setQuery] = useState('');
+  const [selectedArticleId, setSelectedArticleId] = useState<string | null>(
+    null
+  );
+  const [feedHeight, setFeedHeight] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const cardListRef = useRef<FlatList<Article>>(null);
 
-  // 検索用インデックス文字列をarticles変更時に1回だけ事前生成し、キー入力ごとの文字列結合コストをゼロにする
   const indexedArticles = useMemo(
     () =>
       articles.map((art) => ({
@@ -219,16 +241,172 @@ export function ExploreView({
       .map((entry) => entry.article);
   }, [articles, indexedArticles, query]);
 
+  const selectedIndex = selectedArticleId
+    ? filteredArticles.findIndex((a) => a.id === selectedArticleId)
+    : -1;
+  const isShowingCard = selectedArticleId !== null && selectedIndex >= 0;
+
+  // 検索で選択中記事が消えたらグリッドへ戻す
+  useEffect(() => {
+    if (selectedArticleId && selectedIndex < 0) {
+      setSelectedArticleId(null);
+    }
+  }, [selectedArticleId, selectedIndex]);
+
+  const handleSelect = useCallback((articleId: string) => {
+    const idx = filteredArticles.findIndex((a) => a.id === articleId);
+    if (idx < 0) return;
+    setSelectedArticleId(articleId);
+    setCurrentIndex(idx);
+  }, [filteredArticles]);
+
+  const handleBackToList = useCallback(() => {
+    setSelectedArticleId(null);
+  }, []);
+
+  const handleLayout = (e: LayoutChangeEvent) => {
+    const h = e.nativeEvent.layout.height;
+    if (h > 0 && Math.abs(h - feedHeight) > 1) {
+      setFeedHeight(h);
+    }
+  };
+
+  const onViewableItemsChanged = useCallback(
+    ({ viewableItems }: { viewableItems: ViewToken[] }) => {
+      if (viewableItems.length > 0 && viewableItems[0].index != null) {
+        const idx = viewableItems[0].index;
+        setCurrentIndex(idx);
+        const item = filteredArticles[idx];
+        if (item) {
+          setSelectedArticleId(item.id);
+        }
+      }
+    },
+    [filteredArticles]
+  );
+
+  const viewabilityConfig = useRef({
+    itemVisiblePercentThreshold: 60,
+  }).current;
+
   const renderItem = useCallback(
     ({ item }: { item: Article }) => (
-      <ExploreGridCell article={item} onSelect={onSelectArticle} />
+      <ExploreGridCell
+        article={item}
+        onSelect={handleSelect}
+        locale={locale}
+      />
     ),
-    [onSelectArticle]
+    [handleSelect, locale]
   );
+
+  if (isShowingCard) {
+    const activeIndex = Math.min(currentIndex, filteredArticles.length - 1);
+    const activeArticle =
+      filteredArticles[activeIndex] ?? filteredArticles[selectedIndex];
+    const verifiedTool = activeArticle
+      ? getVerifiedArticleTool(activeArticle)
+      : '';
+    const activeTheme = activeArticle
+      ? getThemeForArticle(verifiedTool ? [verifiedTool] : []).colors
+      : themes.neutral;
+
+    return (
+      <View
+        style={[
+          styles.cardModeContainer,
+          { backgroundColor: activeTheme.background },
+        ]}
+        onLayout={handleLayout}
+      >
+        {feedHeight > 0 ? (
+          <FlatList
+            ref={cardListRef}
+            data={filteredArticles}
+            keyExtractor={(item) => item.id}
+            pagingEnabled
+            showsVerticalScrollIndicator={false}
+            decelerationRate="fast"
+            snapToInterval={feedHeight}
+            snapToAlignment="start"
+            initialScrollIndex={
+              filteredArticles.length > 0
+                ? Math.max(
+                    0,
+                    Math.min(selectedIndex, filteredArticles.length - 1)
+                  )
+                : 0
+            }
+            initialNumToRender={3}
+            maxToRenderPerBatch={3}
+            windowSize={5}
+            onViewableItemsChanged={onViewableItemsChanged}
+            viewabilityConfig={viewabilityConfig}
+            getItemLayout={(_, index) => ({
+              length: feedHeight,
+              offset: feedHeight * index,
+              index,
+            })}
+            onScrollToIndexFailed={({ index }) => {
+              cardListRef.current?.scrollToOffset({
+                offset: feedHeight * index,
+                animated: false,
+              });
+            }}
+            renderItem={({ item, index }) => (
+              <NewsCard
+                article={item}
+                index={index}
+                total={filteredArticles.length}
+                cardHeight={feedHeight}
+                hasChipRow={false}
+                isSaved={savedIds.includes(item.id)}
+                showOriginalButton={showOriginalButton}
+                locale={locale}
+                onToggleSave={onToggleSave}
+                onHideArticle={onHideArticle}
+                onPressSource={onPressSource}
+              />
+            )}
+          />
+        ) : null}
+
+        <View style={styles.cardTopBar} pointerEvents="box-none">
+          <Pressable
+            style={[
+              styles.backButton,
+              {
+                backgroundColor: activeTheme.panel,
+                borderColor: activeTheme.line,
+              },
+            ]}
+            onPress={handleBackToList}
+            accessibilityRole="button"
+            accessibilityLabel={t.explore.backToListAria}
+          >
+            <Text style={styles.backButtonText}>{t.explore.backToList}</Text>
+          </Pressable>
+
+          <View
+            style={[
+              styles.counterPill,
+              {
+                backgroundColor: activeTheme.panel,
+                borderColor: activeTheme.line,
+              },
+            ]}
+          >
+            <Text style={[styles.counterText, { color: activeTheme.accent }]}>
+              {activeIndex + 1} / {filteredArticles.length}
+            </Text>
+          </View>
+        </View>
+      </View>
+    );
+  }
 
   return (
     <View style={styles.container}>
-      {/* 上部検索バー＋保存済みボタン */}
       <View style={styles.searchHeaderRow}>
         <View style={styles.searchBox}>
           <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
@@ -249,20 +427,20 @@ export function ExploreView({
           <TextInput
             value={query}
             onChangeText={setQuery}
-            placeholder={copy.explore.searchPlaceholder}
+            placeholder={t.explore.searchPlaceholder}
             placeholderTextColor={text.muted}
             style={styles.searchInput}
             returnKeyType="search"
             autoCapitalize="none"
             autoCorrect={false}
-            accessibilityLabel={copy.explore.searchPlaceholder}
+            accessibilityLabel={t.explore.searchPlaceholder}
           />
           {query.length > 0 ? (
             <Pressable
               style={styles.clearButton}
               onPress={() => setQuery('')}
               accessibilityRole="button"
-              accessibilityLabel={copy.explore.clearSearchAria}
+              accessibilityLabel={t.explore.clearSearchAria}
             >
               <Text style={styles.clearButtonText}>✕</Text>
             </Pressable>
@@ -273,7 +451,7 @@ export function ExploreView({
           style={styles.savedIconButton}
           onPress={onOpenSaved}
           accessibilityRole="button"
-          accessibilityLabel={copy.bottomTabs.saved}
+          accessibilityLabel={t.bottomTabs.saved}
         >
           <Svg width={26} height={26} viewBox="0 0 24 24" fill="none">
             <Path
@@ -288,9 +466,9 @@ export function ExploreView({
 
       {filteredArticles.length === 0 ? (
         <EmptyState
-          title={copy.explore.emptySearchTitle}
-          description={copy.explore.emptySearchDescription}
-          actionLabel={query.length > 0 ? copy.chips.all : undefined}
+          title={t.explore.emptySearchTitle}
+          description={t.explore.emptySearchDescription}
+          actionLabel={query.length > 0 ? t.chips.all : undefined}
           onAction={query.length > 0 ? () => setQuery('') : undefined}
         />
       ) : (
@@ -318,6 +496,46 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: themes.neutral.background,
     paddingTop: size.topTabsTop,
+  },
+  cardModeContainer: {
+    flex: 1,
+  },
+  cardTopBar: {
+    position: 'absolute',
+    top: 52,
+    left: size.pageSide,
+    right: size.pageSide,
+    zIndex: 30,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  backButton: {
+    minHeight: 40,
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 999,
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  backButtonText: {
+    color: text.primary,
+    fontSize: 13,
+    fontWeight: '800',
+  },
+  counterPill: {
+    minHeight: 34,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 999,
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  counterText: {
+    fontSize: 12,
+    fontWeight: '800',
   },
   searchHeaderRow: {
     paddingHorizontal: 12,
