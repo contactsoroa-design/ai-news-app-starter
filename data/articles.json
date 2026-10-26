@@ -1,5 +1,139 @@
 [
   {
+    "id": "art-1793000644624-ygctz",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/sktt_panda/articles/json-to-typescript-optional-inference-browser",
+    "published_at": "2026-10-25T23:38:21.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--CRk-h0MI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:JSON%25E3%2581%258B%25E3%2582%2589TypeScript%25E3%2581%25AEinterface%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25E5%25AE%259F%25E8%25A3%2585%2520%25E2%2580%2594%2520%25E3%2582%25AD%25E3%2583%25BC%25E5%2587%25BA%25E7%258F%25BE%25E7%258E%2587%25E3%2581%25A7optional%25E3%2582%2592%25E5%2588%25A4%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25B5%25E3%2582%25AF%25E3%2583%2583%25E3%2581%25A8%25E3%2581%25B1%25E3%2582%2593%25E3%2581%25A0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2MzZmQ3ZjA3ZjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "JSONからTypeScriptのinterfaceを自動生成するツールを開発—配列内のキー出現率でoptional判定しネストの重複を排除するロジック",
+    "summary_ja": "APIレスポンスのJSONからTypeScriptのinterface定義を自動生成するツールを開発。 配列内の全要素を走査してキーの存在確認を行い、必須かoptionalかを判定するロジックを採用した。 null混在はUnion型で処理し、全オブジェクトを一度に処理することでネストされたinterfaceの重複定義も防ぐ設計だ。",
+    "translations": {
+      "ja": {
+        "title": "JSONからTypeScriptのinterfaceを自動生成するツールを開発—配列内のキー出現率でoptional判定しネストの重複を排除するロジック",
+        "summary": "APIレスポンスのJSONからTypeScriptのinterface定義を自動生成するツールを開発。 配列内の全要素を走査してキーの存在確認を行い、必須かoptionalかを判定するロジックを採用した。 null混在はUnion型で処理し、全オブジェクトを一度に処理することでネストされたinterfaceの重複定義も防ぐ設計だ。"
+      },
+      "en": {
+        "title": "Developer builds auto-generator for TypeScript interfaces from JSON with logic for optional field detection and deduplication",
+        "summary": "A new developer tool auto-generates TypeScript interface definitions directly from raw API response JSON, streamlining backend integration workflows. The tool scans every element within an array to determine if a key is truly optional, while handling nullability by appending to Union types. To keep the generated codebase clean, the architecture processes all nested objects in a single pass, which effectively prevents redundant interface generation for identical nested structures. This approach significantly reduces the manual overhead of drafting complex type definitions from scratch. For builders frequently interacting with messy third-party APIs, this implementation provides a robust pattern for converting dynamic response data into strict TypeScript types without the headache of duplicate declarations or manually tracking field requirements across inconsistent data sets."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-26T07:44:04.624Z"
+  },
+  {
+    "id": "art-1793000637887-bmb2t",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/enterprise/articles/2610/26/news060.html",
+    "published_at": "2026-10-26T06:00:00.000Z",
+    "og_image_url": "https://image.itmedia.co.jp/enterprise/articles/2610/26/cover_news060.jpg",
+    "title_ja": "米Dataikuが提示する「AIガバナンス一元化」の理想と限界：マルチベンダー環境での管理戦略と技術的な現実",
+    "summary_ja": "米Dataikuの新サービスは、他社のAIエージェント基盤も含めたマルチベンダー環境のガバナンスを一元管理するという野心的なアプローチを提示した。 しかし、プラットフォームを横断してセキュリティガードレールや攻撃防御の強度を均一化することは技術的に困難であり、依然として「ガバナンスの断片化」が残る可能性がある。 企業はツールの統合だけに頼らず、自社独自のセキュリティ要件と各AIモデルの特性に応じた多層的な防御戦略を構築することが、真のAIガバナンス実現への鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "米Dataikuが提示する「AIガバナンス一元化」の理想と限界：マルチベンダー環境での管理戦略と技術的な現実",
+        "summary": "米Dataikuの新サービスは、他社のAIエージェント基盤も含めたマルチベンダー環境のガバナンスを一元管理するという野心的なアプローチを提示した。 しかし、プラットフォームを横断してセキュリティガードレールや攻撃防御の強度を均一化することは技術的に困難であり、依然として「ガバナンスの断片化」が残る可能性がある。 企業はツールの統合だけに頼らず、自社独自のセキュリティ要件と各AIモデルの特性に応じた多層的な防御戦略を構築することが、真のAIガバナンス実現への鍵となる。"
+      },
+      "en": {
+        "title": "Dataiku’s Centralized AI Governance Attempt: Balancing Cross-Vendor Management with Practical Security Realities",
+        "summary": "Dataiku’s latest service ambitiously attempts to unify governance across diverse, multi-vendor AI agent platforms, aiming to centralize control in increasingly fragmented enterprise environments. However, this raises critical questions about whether true uniformity is possible across heterogenous stacks; while orchestration is feasible, maintaining consistent strength in cyber security guardrails and threat defense remains technically elusive. The reality is that simply centralizing management does not automatically level out security posture across different model architectures. For enterprise builders and architects, the key takeaway is that platform-level governance is merely the first step. Organizations must continue to implement multi-layered defense strategies tailored to specific model risks rather than assuming that a single dashboard provides a universal shield against complex AI security vulnerabilities."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-26T07:43:57.887Z"
+  },
+  {
+    "id": "art-1793000631491-82c08",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/kiwi-7",
+    "published_at": "2026-10-24T23:19:29.000Z",
+    "og_image_url": null,
+    "title_ja": "ユーザーの先回りで行動するAIアシスタント「Kiwi」公開——通知を待たず生活習慣に基づき能動的にテキストメッセージで提案を行う新体験",
+    "summary_ja": "「Kiwi」は、指示を待つのではなくユーザーの行動習慣を学習し、能動的にテキストメッセージを送ることで生活をサポートするAIアシスタントだ。 単なる受動的なチャットボットと異なり、状況に応じた提案を自発的に行うことで、ユーザーはタスク実行の手間を最小限に抑えられる。 開発者はAIとの対話において「待ち」のUXから「提案」型のUXへ移行するヒントを得るべきだろう。",
+    "translations": {
+      "ja": {
+        "title": "ユーザーの先回りで行動するAIアシスタント「Kiwi」公開——通知を待たず生活習慣に基づき能動的にテキストメッセージで提案を行う新体験",
+        "summary": "「Kiwi」は、指示を待つのではなくユーザーの行動習慣を学習し、能動的にテキストメッセージを送ることで生活をサポートするAIアシスタントだ。 単なる受動的なチャットボットと異なり、状況に応じた提案を自発的に行うことで、ユーザーはタスク実行の手間を最小限に抑えられる。 開発者はAIとの対話において「待ち」のUXから「提案」型のUXへ移行するヒントを得るべきだろう。"
+      },
+      "en": {
+        "title": "Kiwi launches as a proactive AI assistant that messages you first based on your daily behavioral patterns",
+        "summary": "Kiwi is an AI assistant designed to flip the standard interaction model by messaging users proactively rather than waiting for prompts. By learning personal habits and daily routines, the system sends relevant text suggestions before the user even thinks to ask, aiming to reduce the cognitive load of managing tasks. Unlike reactive chatbots that sit idle until queried, Kiwi functions as an ambient partner that pushes information at the optimal moment. For builders in the agentic space, this signals a critical pivot away from purely conversational UI toward autonomous, event-driven interfaces. The core takeaway is that the future of agent utility lies in minimizing user friction through timing and context, not just model intelligence."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-26T07:43:51.491Z"
+  },
+  {
+    "id": "art-1793000624970-poxmu",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2610.31808",
+    "published_at": "2026-10-26T04:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "脆弱な人々を軽視する「上から目線」な有害表現を自動検知する研究：BERTを活用した最新のアプローチでF1スコア0.528を達成",
+    "summary_ja": "本研究は、脆弱な立場の人々を憐れむような「上から目線」の有害表現（PCL）を自動検知する手法を提案した。 従来のCNNを用いた手法に対し、BERTの事前学習済みモデルをファインチューニングする手法が極めて有効で、F1スコア0.528を記録した。 悪意あるヘイトスピーチと異なり、PCLは隠微で検知が困難だが、今回のNLPによる自動判別モデルは、オンライン上の有害コンテンツ対策において重要な技術基盤となる。",
+    "translations": {
+      "ja": {
+        "title": "脆弱な人々を軽視する「上から目線」な有害表現を自動検知する研究：BERTを活用した最新のアプローチでF1スコア0.528を達成",
+        "summary": "本研究は、脆弱な立場の人々を憐れむような「上から目線」の有害表現（PCL）を自動検知する手法を提案した。 従来のCNNを用いた手法に対し、BERTの事前学習済みモデルをファインチューニングする手法が極めて有効で、F1スコア0.528を記録した。 悪意あるヘイトスピーチと異なり、PCLは隠微で検知が困難だが、今回のNLPによる自動判別モデルは、オンライン上の有害コンテンツ対策において重要な技術基盤となる。"
+      },
+      "en": {
+        "title": "Automated Detection of Patronizing and Condescending Language: BERT-Based Models Achieve F1 Score of 0.528 in Identifying Subtle Harmful Speech",
+        "summary": "This research addresses the detection of patronizing and condescending language (PCL), a subtle but harmful form of speech that belittles vulnerable groups and reinforces societal stereotypes. Unlike overt hate speech, PCL is notoriously difficult for human annotators to identify consistently. The researchers evaluated two automated classification approaches: a static word embedding model with a convolutional neural network, and a fine-tuned BERT architecture. The BERT-based approach proved significantly more successful, achieving an F1 score of 0.528 on the development dataset. For builders developing moderation tools, the practical takeaway is that standard keyword-based filters fail to capture this specific nuance, and leveraging transformer-based models is essential for mitigating the impact of condescending rhetoric in online communities and public discourse."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-26T07:43:44.970Z"
+  },
+  {
+    "id": "art-1793000618812-t6ryq",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/faster-pnpm-installs",
+    "published_at": "2026-10-26T00:00:00.000Z",
+    "og_image_url": "https://vercel.com/api/dynamic-og?title=Faster%20pnpm%20installs&format=changelog",
+    "title_ja": "Vercel、pnpmの依存関係インストール処理を高速化。依存関係検証の再利用によりビルド時間を平均14%削減、キャッシュヒット時はミリ秒単位で完了へ",
+    "summary_ja": "Vercelはpnpmを利用したプロジェクトのデプロイ時、依存関係の検証プロセスを再利用する最適化を導入した。 これによりProプランのビルドにおけるインストール時間が平均14%短縮され、変更のない依存関係であればミリ秒単位でのインストール完了が可能となる。 設定不要で全プランに自動適用されるため、複雑なCI/CD構成を組まずともビルドパイプラインのボトルネックを解消できる。",
+    "translations": {
+      "ja": {
+        "title": "Vercel、pnpmの依存関係インストール処理を高速化。依存関係検証の再利用によりビルド時間を平均14%削減、キャッシュヒット時はミリ秒単位で完了へ",
+        "summary": "Vercelはpnpmを利用したプロジェクトのデプロイ時、依存関係の検証プロセスを再利用する最適化を導入した。 これによりProプランのビルドにおけるインストール時間が平均14%短縮され、変更のない依存関係であればミリ秒単位でのインストール完了が可能となる。 設定不要で全プランに自動適用されるため、複雑なCI/CD構成を組まずともビルドパイプラインのボトルネックを解消できる。"
+      },
+      "en": {
+        "title": "Vercel accelerates pnpm installs by reusing dependency verification, slashing build times by 14% on average and enabling millisecond completion",
+        "summary": "Vercel has rolled out significant optimizations for pnpm dependency installation by reusing successful verification steps across deployments. This update reduces average installation times by 14% for Pro deployments using build cache, and allows installs to complete in mere milliseconds when dependencies remain unchanged between pushes. Because this optimization is applied automatically across all plans without requiring any manual configuration, builders can immediately benefit from faster CI/CD pipelines without tweaking their existing project setup. It effectively removes a common bottleneck where redundant verification cycles slowed down rapid deployment loops. For developers managing high-frequency release cycles, this shift underscores how intelligently caching metadata—rather than just downloading binaries—can substantially decrease the latency between committing code and seeing it live in production."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-10-26T07:43:38.812Z"
+  },
+  {
     "id": "art-1792996026157-80tx0",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
