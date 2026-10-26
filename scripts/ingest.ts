@@ -43,11 +43,82 @@ const RSS_ITEMS_PER_SOURCE = 6;
 /** RSS取得タイムアウト（arXiv 等は遅いことがある） */
 const RSS_FETCH_TIMEOUT_MS = Number(process.env.RSS_FETCH_TIMEOUT_MS || '20000');
 const RSS_FETCH_HEADERS: Record<string, string> = {
+  // データセンターIP向けにボットUAだと 403 になるソース（Substack等）がある
   'User-Agent':
-    'Mozilla/5.0 (compatible; AINewsBot/1.0; +https://github.com/contactsoroa-design/ai-news-app-starter)',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
   Accept:
     'application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.1',
+  'Accept-Language': 'en-US,en;q=0.9',
 };
+
+/** RSSが死んでいる／Actionsから弾かれるソース向けのサイトマップフォールバック */
+const SITEMAP_FEED_FALLBACKS: Record<
+  string,
+  { sitemapUrl: string; pathIncludes: string }
+> = {
+  'source-marketingexamples': {
+    sitemapUrl: 'https://marketingexamples.com/sitemap.xml',
+    pathIncludes: '/content/',
+  },
+};
+
+function titleFromUrlSlug(url: string): string {
+  try {
+    const slug = new URL(url).pathname.split('/').filter(Boolean).pop() ?? url;
+    return slug
+      .replace(/[-_]+/g, ' ')
+      .replace(/\b\w/g, (ch) => ch.toUpperCase());
+  } catch {
+    return url;
+  }
+}
+
+async function fetchText(
+  url: string,
+  timeoutMs: number
+): Promise<{ ok: true; text: string; status: number } | { ok: false; error: string }> {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: RSS_FETCH_HEADERS,
+      redirect: 'follow',
+    });
+    clearTimeout(timer);
+    if (!res.ok) {
+      return { ok: false, error: `HTTP ${res.status}` };
+    }
+    return { ok: true, text: await res.text(), status: res.status };
+  } catch (err) {
+    return {
+      ok: false,
+      error: err instanceof Error ? err.message : String(err),
+    };
+  }
+}
+
+async function itemsFromSitemapFallback(
+  sourceId: string
+): Promise<RawFeedItem[] | null> {
+  const conf = SITEMAP_FEED_FALLBACKS[sourceId];
+  if (!conf) return null;
+  const fetched = await fetchText(conf.sitemapUrl, RSS_FETCH_TIMEOUT_MS);
+  if (!fetched.ok) {
+    console.warn(`  ! sitemap失敗: [${sourceId}] ${fetched.error}`);
+    return null;
+  }
+  const locs = [
+    ...fetched.text.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/gi),
+  ].map((m) => m[1].trim());
+  const links = locs.filter((u) => u.includes(conf.pathIncludes));
+  return links.slice(0, RSS_ITEMS_PER_SOURCE).map((link) => ({
+    title: titleFromUrlSlug(link),
+    link,
+    pubDate: null,
+    snippet: '',
+  }));
+}
 /**
  * 1実行あたり同一ソースから取る上限（既定1）。
  * 高頻度コミュニティ系（Zenn/Qiita/HN）が枠を独占しないようにする。
@@ -810,53 +881,49 @@ async function main() {
   await Promise.all(
     activeSources.map(async (source) => {
       if (!source.feed_url) return;
-      let lastErr: unknown = null;
+      let lastErr: string | null = null;
+      let feedItems: RawFeedItem[] = [];
+
       for (let attempt = 0; attempt < 2; attempt++) {
-        try {
-          const controller = new AbortController();
-          const timer = setTimeout(
-            () => controller.abort(),
-            RSS_FETCH_TIMEOUT_MS
-          );
-          const res = await fetch(source.feed_url, {
-            signal: controller.signal,
-            headers: RSS_FETCH_HEADERS,
-            redirect: 'follow',
-          });
-          clearTimeout(timer);
-          if (!res.ok) {
-            lastErr = new Error(`HTTP ${res.status}`);
-            continue;
-          }
-          const xml = await res.text();
-          const looksLikeFeed =
-            /<(rss|feed|rdf:RDF)\b/i.test(xml) ||
-            /<item[\s>]/i.test(xml) ||
-            /<entry[\s>]/i.test(xml);
-          if (!looksLikeFeed) {
-            lastErr = new Error('not an RSS/Atom document');
-            break;
-          }
-          // 最新寄りの候補を多めに拾い、1実行上限・1日上限で実際の要約件数は抑える
-          const feedItems = parseRssItems(xml, source.site_url).slice(
-            0,
-            RSS_ITEMS_PER_SOURCE
-          );
-          if (feedItems.length > 0) {
-            fetchedQueues.push({ source, items: feedItems });
-          } else {
-            console.warn(`  ! RSS 0件: [${source.name}] ${source.feed_url}`);
-          }
-          lastErr = null;
-          break;
-        } catch (err) {
-          lastErr = err;
+        const fetched = await fetchText(source.feed_url, RSS_FETCH_TIMEOUT_MS);
+        if (!fetched.ok) {
+          lastErr = fetched.error;
           if (attempt === 0) await sleep(800);
+          continue;
+        }
+        const looksLikeFeed =
+          /<(rss|feed|rdf:RDF)\b/i.test(fetched.text) ||
+          /<item[\s>]/i.test(fetched.text) ||
+          /<entry[\s>]/i.test(fetched.text);
+        if (!looksLikeFeed) {
+          lastErr = 'not an RSS/Atom document';
+          break;
+        }
+        feedItems = parseRssItems(fetched.text, source.site_url).slice(
+          0,
+          RSS_ITEMS_PER_SOURCE
+        );
+        lastErr = null;
+        break;
+      }
+
+      if (feedItems.length === 0) {
+        const fallback = await itemsFromSitemapFallback(source.id);
+        if (fallback && fallback.length > 0) {
+          console.warn(
+            `  ~ RSS不可のため sitemap フォールバック: [${source.name}]`
+          );
+          feedItems = fallback;
+          lastErr = null;
         }
       }
-      if (lastErr) {
-        const msg = lastErr instanceof Error ? lastErr.message : String(lastErr);
-        console.warn(`  ! RSS失敗: [${source.name}] ${msg}`);
+
+      if (feedItems.length > 0) {
+        fetchedQueues.push({ source, items: feedItems });
+      } else if (lastErr) {
+        console.warn(`  ! RSS失敗: [${source.name}] ${lastErr}`);
+      } else {
+        console.warn(`  ! RSS 0件: [${source.name}] ${source.feed_url}`);
       }
     })
   );
