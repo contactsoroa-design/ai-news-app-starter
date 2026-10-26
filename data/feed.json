@@ -1,5 +1,135 @@
 [
   {
+    "id": "art-1792975475304-8nbn1",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/matsushima_a/articles/day-026-openshell-default-deny-network-policy",
+    "published_at": "2026-10-25T14:10:26.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--5x3M6TM---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:NVIDIA%2520OpenShell%25E3%2581%25AEdefault-deny%25E3%2583%258D%25E3%2583%2583%25E3%2583%2588%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%259D%25E3%2583%25AA%25E3%2582%25B7%25E3%2583%25BC%25E3%2582%2592%25E5%25AE%259F%25E6%25A9%259F%25E3%2581%25A7%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:matsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkY2YwMTZjYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "NVIDIAのAIエージェント向けランタイム「OpenShell」を検証：デフォルト拒否のネットワークポリシー設定と挙動を実機で確認",
+    "summary_ja": "AIエージェントの隔離環境を提供するNVIDIA製ランタイム「OpenShell」を実機で検証し、ポリシー未設定時に全てのアウトバウンド通信が遮断されることや、読み取り専用ルールの適用でGETリクエストのみ許可される挙動をコマンドログと共に解説。 Landlockやseccompを活用した本ツールは、LLMエージェントのリスク管理に不可欠なサンドボックス環境を構築するための強力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "NVIDIAのAIエージェント向けランタイム「OpenShell」を検証：デフォルト拒否のネットワークポリシー設定と挙動を実機で確認",
+        "summary": "AIエージェントの隔離環境を提供するNVIDIA製ランタイム「OpenShell」を実機で検証し、ポリシー未設定時に全てのアウトバウンド通信が遮断されることや、読み取り専用ルールの適用でGETリクエストのみ許可される挙動をコマンドログと共に解説。 Landlockやseccompを活用した本ツールは、LLMエージェントのリスク管理に不可欠なサンドボックス環境を構築するための強力な選択肢となる。"
+      },
+      "en": {
+        "title": "NVIDIA OpenShell Deep Dive: Verifying Default-Deny Network Policies and Sandbox Runtime Security for AI Agents",
+        "summary": "This technical deep dive explores NVIDIA’s OpenShell runtime, an open-source solution designed to isolate autonomous AI agents within containerized, MicroVM-based sandboxes. By testing the runtime directly, the author demonstrates that without explicit policies, all outbound network traffic is blocked by default, and applying read-only rules successfully limits traffic to GET requests. The article walks through the command-line implementation using YAML-based declarations, showcasing how OpenShell leverages Landlock LSM and seccomp to enforce granular system-level constraints. For developers building AI agents, understanding OpenShell is crucial for risk management, as it offers a robust, declarative approach to securing potentially dangerous agent environments against unauthorized network access or system interference before they reach production."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-26T00:44:35.304Z"
+  },
+  {
+    "id": "art-1792975468617-owo5k",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/blinkgroup_jp/items/7f26f325c17bca1a37c0",
+    "published_at": "2026-10-26T00:22:01.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDcyNTc2JTJGNDBiZTViMjA3MmFhYWE2NjMwOTEyMjJjZWZkZTNlOGJiYzFmMjYxYyUyRnhfbGFyZ2UucG5nJTNGMTc4NDc5MzM0Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZjY0OGY3MTdiMDMzYjY1Y2EzZWMxYWI4MTgzNWNmNjM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D9b1bf1d9cc7ed2925bc924055a22dd24?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9TUNQJUVGJUJDJTg4TW9kZWwlMjBDb250ZXh0JTIwUHJvdG9jb2wlRUYlQkMlODklRTMlODElQUUlRTYlQTYlODIlRTglQTYlODElRTMlODElQThQeXRob24lRTMlODElQUIlRTMlODIlODglRTMlODIlOEIlRTMlODIlQUIlRTMlODIlQjklRTMlODIlQkYlRTMlODMlQTBNQ1AlRTMlODIlQjUlRTMlODMlQkMlRTMlODMlOTAlRTMlODMlQkMlRTMlODElQUUlRTUlQUUlOUYlRTglQTMlODUlRTYlODklOEIlRTklQTAlODYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03ZGYzZGQ5MTU5MGZhNjBlYmI0NWNlZDRhZTJlZGMzZg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBibGlua2dyb3VwX2pwJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9N2UwY2VjMTdkOTNhNjYyZDZhZTc4NzU5ZWQwY2NhYWM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=502fbfdbeca6a501f446921ceea55062",
+    "title_ja": "MCP（Model Context Protocol）の全貌とPythonによるカスタムサーバー実装ガイド：LLMと外部ツール連携の標準化を解説",
+    "summary_ja": "AIエージェント開発において、モデルごとに外部APIやDBとの連携を個別実装するのは保守性と汎用性を損なう大きな課題だ。 本記事では、Anthropicが提唱する標準規格「MCP（Model Context Protocol）」の構造を詳解し、Pythonを用いてローカルファイルや社内ツールと連携するカスタムMCPサーバーを実装する具体的なステップを提示する。",
+    "translations": {
+      "ja": {
+        "title": "MCP（Model Context Protocol）の全貌とPythonによるカスタムサーバー実装ガイド：LLMと外部ツール連携の標準化を解説",
+        "summary": "AIエージェント開発において、モデルごとに外部APIやDBとの連携を個別実装するのは保守性と汎用性を損なう大きな課題だ。 本記事では、Anthropicが提唱する標準規格「MCP（Model Context Protocol）」の構造を詳解し、Pythonを用いてローカルファイルや社内ツールと連携するカスタムMCPサーバーを実装する具体的なステップを提示する。"
+      },
+      "en": {
+        "title": "Mastering Model Context Protocol (MCP): How to Build Custom Python Servers to Standardize LLM Access to External Tools",
+        "summary": "Integrating LLMs with external systems like local files, private databases, or specialized APIs often creates a maintenance nightmare, as developers frequently rebuild custom connectors for every new model. This guide breaks down the Model Context Protocol (MCP) by Anthropic, which standardizes how AI agents interface with data sources. We detail the end-to-end process of building a custom MCP server using Python, allowing you to expose your tools once and consume them across various LLM-powered environments. By decoupling the interface from the specific model, developers can bypass redundant integration logic. This architectural shift significantly improves long-term codebase maintainability and provides a unified, reusable plugin layer for any AI agent ecosystem you happen to be building today."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-26T00:44:28.617Z"
+  },
+  {
+    "id": "art-1792975446075-djnhl",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/Clivern/Sloth",
+    "published_at": "2026-10-26T00:38:22.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェントとMCPサーバーを統合管理する「Sloth」、APIゲートウェイ機能でLLMアプリケーション開発を効率化",
+    "summary_ja": "GitHubで公開された「Sloth」は、AIエージェント、API、MCPサーバーを単一のゲートウェイで統合管理できるツールだ。 レート制限、認証、モニタリング機能を備え、分散するLLM基盤を安全に集約できる。 複雑化するAIアプリケーションのインフラを効率化し、開発者が本来のロジック構築に専念するための共通インターフェースを提供する。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントとMCPサーバーを統合管理する「Sloth」、APIゲートウェイ機能でLLMアプリケーション開発を効率化",
+        "summary": "GitHubで公開された「Sloth」は、AIエージェント、API、MCPサーバーを単一のゲートウェイで統合管理できるツールだ。 レート制限、認証、モニタリング機能を備え、分散するLLM基盤を安全に集約できる。 複雑化するAIアプリケーションのインフラを効率化し、開発者が本来のロジック構築に専念するための共通インターフェースを提供する。"
+      },
+      "en": {
+        "title": "Sloth launches as an all-in-one gateway for managing your AI agents, standard APIs, and MCP servers",
+        "summary": "Sloth has emerged as a unified gateway designed to streamline infrastructure for AI agents, standard APIs, and Model Context Protocol (MCP) servers. By centralizing these disparate components behind a single interface, it handles critical tasks like rate limiting, authentication, and request monitoring out of the box. This architectural pattern allows builders to decouple infrastructure logic from application code, ensuring that complex AI service stacks remain maintainable and secure as they scale. For engineers struggling with the fragmentation of agent-based backends and MCP integrations, Sloth offers a drop-in solution to centralize traffic management without rebuilding core routing logic. It is a necessary abstraction layer for anyone productionizing modular AI agents that rely on multiple external data sources and tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-26T00:44:06.075Z"
+  },
+  {
+    "id": "art-1792975439111-qa9u7",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://monoist.itmedia.co.jp/mn/articles/2610/26/news017.html",
+    "published_at": "2026-10-26T00:00:00.000Z",
+    "og_image_url": "https://image.itmedia.co.jp/mn/articles/2610/26/cover_news017.jpg",
+    "title_ja": "ギリア、設計開発ナレッジ基盤「GHELIA AutoDeck」Ver.1.1を公開。AI対話による知識蓄積と、複数ファイル横断検索による高度な回答生成に対応",
+    "summary_ja": "ギリアが提供する設計開発向けナレッジ基盤「GHELIA AutoDeck」の最新版Ver.1.1がリリースされた。 本アップデートでは、AIとの対話を通して設計ナレッジを自動生成・蓄積できる機能に加え、複数のドキュメントを横断的に検索し回答を生成するRAG機能が実装された。 社内に散在する設計文書をAIに学習させずとも即座に活用できるため、属人化しやすい設計プロセスを組織的な資産へと転換したい開発チームにとって強力なツールとなる。",
+    "translations": {
+      "ja": {
+        "title": "ギリア、設計開発ナレッジ基盤「GHELIA AutoDeck」Ver.1.1を公開。AI対話による知識蓄積と、複数ファイル横断検索による高度な回答生成に対応",
+        "summary": "ギリアが提供する設計開発向けナレッジ基盤「GHELIA AutoDeck」の最新版Ver.1.1がリリースされた。 本アップデートでは、AIとの対話を通して設計ナレッジを自動生成・蓄積できる機能に加え、複数のドキュメントを横断的に検索し回答を生成するRAG機能が実装された。 社内に散在する設計文書をAIに学習させずとも即座に活用できるため、属人化しやすい設計プロセスを組織的な資産へと転換したい開発チームにとって強力なツールとなる。"
+      },
+      "en": {
+        "title": "Ghelia Updates AutoDeck Knowledge Platform to Ver. 1.1, Introducing AI-Driven Knowledge Synthesis and Cross-Document Search for Engineering Teams",
+        "summary": "Ghelia has released version 1.1 of its engineering knowledge platform, AutoDeck, focusing on streamlining how design expertise is captured and queried. The update introduces conversational AI features that generate and store institutional knowledge through simple interaction, alongside a robust cross-document search capability. By synthesizing information across multiple files, the system delivers precise, context-aware answers without requiring cumbersome fine-tuning or AI training cycles. For engineering teams struggling with siloed documentation and tribal knowledge, this release offers a scalable way to transform fragmented design data into an actionable, queryable asset. The result is a more resilient development environment where critical design context remains accessible, searchable, and reusable across the entire organization, significantly reducing the burden of manual information retrieval."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-10-26T00:43:59.111Z"
+  },
+  {
+    "id": "art-1792975431614-5mzsx",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/basedash",
+    "published_at": "2026-10-23T17:51:50.000Z",
+    "og_image_url": null,
+    "title_ja": "Basedash、定期CSVエクスポート機能をリリース：Slackやメールへの自動配信で運用工数を削減し、データ分析フローを自動化",
+    "summary_ja": "Basedashは、データベースのクエリ結果を毎週指定した日時にCSVとして抽出・送信できる定期エクスポート機能を公開した。 Slackやメールへの自動配信に対応しており、手動でクエリを実行してレポートを作成する運用工数を劇的に削減できる。 定型的なデータ抽出作業を自動化することで、エンジニアやアナリストは分析業務により注力できるようになる。",
+    "translations": {
+      "ja": {
+        "title": "Basedash、定期CSVエクスポート機能をリリース：Slackやメールへの自動配信で運用工数を削減し、データ分析フローを自動化",
+        "summary": "Basedashは、データベースのクエリ結果を毎週指定した日時にCSVとして抽出・送信できる定期エクスポート機能を公開した。 Slackやメールへの自動配信に対応しており、手動でクエリを実行してレポートを作成する運用工数を劇的に削減できる。 定型的なデータ抽出作業を自動化することで、エンジニアやアナリストは分析業務により注力できるようになる。"
+      },
+      "en": {
+        "title": "Basedash launches scheduled CSV exports to automate weekly reporting to Slack and email, cutting down manual database query maintenance",
+        "summary": "Basedash has introduced a scheduled CSV export feature that allows teams to automatically extract and deliver database query results on a weekly basis directly to Slack or email. This release addresses the common friction of manually running recurring reports, enabling developers and data teams to replace repetitive manual query execution with automated, timely delivery. By streamlining these data extraction workflows, Basedash helps engineering teams reduce operational overhead and ensure that stakeholders receive fresh data insights without any ongoing intervention. For product builders and data managers, the practical lesson is that automating the 'last mile' of data reporting is just as critical for efficiency as optimizing the database queries themselves."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-26T00:43:51.614Z"
+  },
+  {
     "id": "art-1792974576709-xy6tw",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
