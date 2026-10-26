@@ -322,16 +322,9 @@ export default function HomeScreen() {
       );
     const ordered = preview ? [preview, ...rest] : rest;
 
-    // スポンサードはおすすめタブのみ（ソース別・ツール別には混ぜない）
-    if (
-      topTab === 'recommended' &&
-      prefs.show_sponsored &&
-      sponsoredItems.length > 0
-    ) {
-      const activeSponsored = sponsoredItems.filter(
-        (s) => !hiddenIdSet.has(s.id)
-      );
-      return interleaveSponsoredCards(ordered, activeSponsored, {
+    // スポンサードはおすすめタブのみ。表示OFF・興味なしでの除外は不可。
+    if (topTab === 'recommended' && sponsoredItems.length > 0) {
+      return interleaveSponsoredCards(ordered, sponsoredItems, {
         locale: prefs.region_locale,
       });
     }
@@ -345,7 +338,6 @@ export default function HomeScreen() {
     previewArticleId,
     articles,
     hiddenIdSet,
-    prefs.show_sponsored,
     prefs.region_locale,
     sponsoredItems,
   ]);
@@ -508,17 +500,12 @@ export default function HomeScreen() {
       if (hiddenIds.includes(articleId)) {
         const nextHidden = hiddenIds.filter((id) => id !== articleId);
         setHiddenIds(nextHidden);
-        setHiddenArticleIds(nextHidden);
+        void setHiddenArticleIds(nextHidden);
       }
 
-      const inFilter = articles.find(
-        (a) =>
-          a.id === articleId &&
-          articleMatchesPrefsFilter(a, prefs, enabledSourceIdSet)
-      );
-
-      // 絞り込み外でも prefs は維持し、一時プレビューとして先頭表示する
-      setPreviewArticleId(inFilter ? null : articleId);
+      // 絞り込み内外どちらでもプレビュー先頭に載せ、ホームでその記事を開く
+      // （以前は絞り込み内だと index=0＝別記事になり「飛べない」ように見えていた）
+      setPreviewArticleId(articleId);
       setTopTab('recommended');
       setSelectedSourceId(null);
       setSelectedTool(null);
@@ -532,8 +519,19 @@ export default function HomeScreen() {
         });
       });
     },
-    [articles, hiddenIds, prefs, enabledSourceIdSet, feedHeight]
+    [hiddenIds]
   );
+
+  const scrollHomeToTop = useCallback(() => {
+    setPreviewArticleId(null);
+    setCurrentIndex(0);
+    requestAnimationFrame(() => {
+      flatListRef.current?.scrollToOffset({
+        offset: 0,
+        animated: true,
+      });
+    });
+  }, []);
 
   const handleMomentumScrollEnd = (
     e: NativeSyntheticEvent<NativeScrollEvent>
@@ -644,6 +642,7 @@ export default function HomeScreen() {
                       cardHeight={feedHeight}
                       hasChipRow={hasChipRow}
                       locale={prefs.region_locale}
+                      overrideTool={overrideToolForTheme}
                       onHide={handleHideArticle}
                     />
                   ) : (
@@ -983,6 +982,10 @@ export default function HomeScreen() {
               key={tab.key}
               style={styles.bottomTabItem}
               onPress={() => {
+                if (tab.key === 'home' && bottomTab === 'home') {
+                  scrollHomeToTop();
+                  return;
+                }
                 if (tab.key === 'settings') {
                   setSettingsSubScreen('root');
                 }

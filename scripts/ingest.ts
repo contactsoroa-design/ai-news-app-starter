@@ -40,6 +40,14 @@ const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
 const DEFAULT_ARTICLES_PER_RUN = 5;
 /** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
 const RSS_ITEMS_PER_SOURCE = 6;
+/** RSS取得タイムアウト（arXiv 等は遅いことがある） */
+const RSS_FETCH_TIMEOUT_MS = Number(process.env.RSS_FETCH_TIMEOUT_MS || '20000');
+const RSS_FETCH_HEADERS: Record<string, string> = {
+  'User-Agent':
+    'Mozilla/5.0 (compatible; AINewsBot/1.0; +https://github.com/contactsoroa-design/ai-news-app-starter)',
+  Accept:
+    'application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.1',
+};
 /**
  * 1実行あたり同一ソースから取る上限（既定1）。
  * 高頻度コミュニティ系（Zenn/Qiita/HN）が枠を独占しないようにする。
@@ -802,26 +810,53 @@ async function main() {
   await Promise.all(
     activeSources.map(async (source) => {
       if (!source.feed_url) return;
-      try {
-        const controller = new AbortController();
-        const timer = setTimeout(() => controller.abort(), 6000);
-        const res = await fetch(source.feed_url, {
-          signal: controller.signal,
-          headers: { 'User-Agent': 'Mozilla/5.0' },
-        });
-        clearTimeout(timer);
-        if (!res.ok) return;
-        const xml = await res.text();
-        // 最新寄りの候補を多めに拾い、1実行上限・1日上限で実際の要約件数は抑える
-        const feedItems = parseRssItems(xml, source.site_url).slice(
-          0,
-          RSS_ITEMS_PER_SOURCE
-        );
-        if (feedItems.length > 0) {
-          fetchedQueues.push({ source, items: feedItems });
+      let lastErr: unknown = null;
+      for (let attempt = 0; attempt < 2; attempt++) {
+        try {
+          const controller = new AbortController();
+          const timer = setTimeout(
+            () => controller.abort(),
+            RSS_FETCH_TIMEOUT_MS
+          );
+          const res = await fetch(source.feed_url, {
+            signal: controller.signal,
+            headers: RSS_FETCH_HEADERS,
+            redirect: 'follow',
+          });
+          clearTimeout(timer);
+          if (!res.ok) {
+            lastErr = new Error(`HTTP ${res.status}`);
+            continue;
+          }
+          const xml = await res.text();
+          const looksLikeFeed =
+            /<(rss|feed|rdf:RDF)\b/i.test(xml) ||
+            /<item[\s>]/i.test(xml) ||
+            /<entry[\s>]/i.test(xml);
+          if (!looksLikeFeed) {
+            lastErr = new Error('not an RSS/Atom document');
+            break;
+          }
+          // 最新寄りの候補を多めに拾い、1実行上限・1日上限で実際の要約件数は抑える
+          const feedItems = parseRssItems(xml, source.site_url).slice(
+            0,
+            RSS_ITEMS_PER_SOURCE
+          );
+          if (feedItems.length > 0) {
+            fetchedQueues.push({ source, items: feedItems });
+          } else {
+            console.warn(`  ! RSS 0件: [${source.name}] ${source.feed_url}`);
+          }
+          lastErr = null;
+          break;
+        } catch (err) {
+          lastErr = err;
+          if (attempt === 0) await sleep(800);
         }
-      } catch {
-        // 通信失敗したソースはスキップ
+      }
+      if (lastErr) {
+        const msg = lastErr instanceof Error ? lastErr.message : String(lastErr);
+        console.warn(`  ! RSS失敗: [${source.name}] ${msg}`);
       }
     })
   );
