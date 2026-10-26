@@ -1,5 +1,138 @@
 [
   {
+    "id": "art-1793051705946-2ljiq",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/pollenjp/articles/2026-10-22-ai-harness",
+    "published_at": "2026-10-26T14:40:59.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--RwnllXxh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25AE%25E3%2583%258F%25E3%2583%25BC%25E3%2583%258D%25E3%2582%25B9%25E3%2581%25A3%25E3%2581%25A6%25E7%25B5%2590%25E5%25B1%2580%25E4%25BD%2595%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%258B%25E3%2580%2581%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AE%2520Claude%2520Code%2520%25E3%2581%25AE%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%258B%25E3%2582%2589%25E6%2595%25B4%25E7%2590%2586%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pollenjp%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2kydDRtSXd1ZWI4dzNsUzhOQjZwamJsNlRoMlZFTFFPUnctOFIyOUE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Code運用の現場から解説：AIエージェントの挙動を制御する「ハーネス」の定義と具体的設計手法",
+    "summary_ja": "Claude Codeのdaily運用の中で、CLAUDE.mdやskillファイル、hook設定を駆使し、AIエージェントの挙動を安全かつ意図通りに制御する仕組みが「ハーネス」である。 本記事では、コーディングエージェントにおけるハーネスの定義を再整理し、特定の指示や安全策をどう実装に落とし込むか、実例を交えて解説する。 エージェントを道具として使いこなすには、環境設定だけでなくこうしたガードレール設計が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code運用の現場から解説：AIエージェントの挙動を制御する「ハーネス」の定義と具体的設計手法",
+        "summary": "Claude Codeのdaily運用の中で、CLAUDE.mdやskillファイル、hook設定を駆使し、AIエージェントの挙動を安全かつ意図通りに制御する仕組みが「ハーネス」である。 本記事では、コーディングエージェントにおけるハーネスの定義を再整理し、特定の指示や安全策をどう実装に落とし込むか、実例を交えて解説する。 エージェントを道具として使いこなすには、環境設定だけでなくこうしたガードレール設計が不可欠だ。"
+      },
+      "en": {
+        "title": "Defining the 'AI Harness': Practical architectures for controlling Claude Code agents via prompts and scripts",
+        "summary": "As developers integrate AI coding agents like Claude Code into daily workflows, the term 'harness' has emerged to describe the collection of constraints that steer agent behavior. A harness essentially functions as the control layer, comprised of CLAUDE.md instruction sets, modular skill files, and automated hooks that intervene during dangerous file edits. By codifying specific procedural requirements and safety checks, developers can reliably guide agents away from common pitfalls and force adherence to project standards. Rather than letting models operate on loose heuristics, implementing a structured harness allows builders to treat the AI as a programmable tool with predictable boundaries, transforming arbitrary chat sessions into a robust, repeatable development pipeline for complex codebases."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-26T21:55:05.946Z"
+  },
+  {
+    "id": "art-1793051698336-e4azb",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/plateworks/items/e0e86aea789f2e8be47b",
+    "published_at": "2026-10-26T21:28:27.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjI2OTgyNzE1NCUzRnYlM0Q0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0xMTlmODg2NjgyYzUxNzVmNTViMWI2Zjk5MGJlMDYyZg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D7a424646153d1084e4c1d84c8cd850e2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9RGVlcGVyQUklRTMlODElQTdDbGF1ZGUlRTMlODIlOTIlRTQlQkQlQkYlRTMlODElODYlRUYlQkMlOEZNYWMlRTclQjclQTglRUYlQkMlODglRUYlQkMlOTQlRUYlQkMlODklRUYlQkMlOUElRTMlODIlQjklRTMlODIlQjElRTMlODIlQjglRTMlODMlQTUlRTMlODMlQkMlRTMlODMlQUIlRTMlODElQTglRTMlODIlQjclRTMlODIlQjklRTMlODMlODYlRTMlODMlQTAlRTklODAlQTMlRTYlOTAlQkEmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yYTg3NzY5YTk0YWNhNWM5YzI2MzBiY2ZkYzc0ZTdhMA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwbGF0ZXdvcmtzJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZDY5OWRmODZlM2JlNzJhM2Y2MDdiNDdhNDRlY2QyZDA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=d6a921e2883eda89f355bef2e188a7aa",
+    "title_ja": "DeeperAI×Claude活用術：Mac環境における自動化スケジュール設定とシステム間連携の実装テクニックを徹底解説",
+    "summary_ja": "DeeperAIをMacで活用するシリーズ第4弾では、タスクの自動実行を可能にするスケジュール機能と、外部システムとの連携手法に焦点を当てる。 AIモデルをOSレベルのワークフローに組み込み、定期的な情報収集や定型業務を自動化する実装を詳解。 単なるチャット利用を超え、Claudeを実務の司令塔として機能させるための実践的なパイプライン構築スキルが身に付く。",
+    "translations": {
+      "ja": {
+        "title": "DeeperAI×Claude活用術：Mac環境における自動化スケジュール設定とシステム間連携の実装テクニックを徹底解説",
+        "summary": "DeeperAIをMacで活用するシリーズ第4弾では、タスクの自動実行を可能にするスケジュール機能と、外部システムとの連携手法に焦点を当てる。 AIモデルをOSレベルのワークフローに組み込み、定期的な情報収集や定型業務を自動化する実装を詳解。 単なるチャット利用を超え、Claudeを実務の司令塔として機能させるための実践的なパイプライン構築スキルが身に付く。"
+      },
+      "en": {
+        "title": "Advanced Automation with DeeperAI and Claude on macOS: Mastering Scheduling and Cross-System Integration Workflows",
+        "summary": "The fourth installment of our DeeperAI for macOS series focuses on critical automation features: scheduling autonomous tasks and engineering robust system integrations. We walk through how to weave AI models into the OS-level workflow, allowing users to trigger periodic data collection or repetitive operations without manual intervention. By bridging the gap between Claude and your local environment, this approach shifts the tool from a simple chatbot into a central command hub for your productivity stack. Developers will learn the exact pipeline configurations required to make LLMs act as operational agents, ensuring that complex tasks run reliably in the background, which is a vital step for scaling personal AI workflows effectively."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-26T21:54:58.336Z"
+  },
+  {
+    "id": "art-1793051660632-e82ou",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.zdnet.com/innovation/ai-reverse-engineering-old-gadgets-smart-tvs/",
+    "published_at": "2026-10-26T21:32:10.000Z",
+    "og_image_url": "https://www.zdnet.com/wp-content/uploads/sites/3/Scary-TV.jpg",
+    "title_ja": "AIを活用したレガシーデバイスの解析と脆弱性調査：古いスマートテレビをハッキングする手法と法的・倫理的リスク",
+    "summary_ja": "AIの普及により、従来は専門知識が必要だった古いスマートテレビや家電製品のファームウェア逆解析が容易になっている。 大規模言語モデルを用いれば、複雑なバイナリコードの解読や未知の脆弱性探索を短時間で実行できるが、セキュリティ研究の範囲を超えた悪用には法的リスクも伴う。 開発者やエンジニアにとって、この技術は製品のセキュリティ耐性を評価する強力なツールとなる一方で、デバイスの所有権や倫理的な境界線を慎重に管理することが求められる。",
+    "translations": {
+      "ja": {
+        "title": "AIを活用したレガシーデバイスの解析と脆弱性調査：古いスマートテレビをハッキングする手法と法的・倫理的リスク",
+        "summary": "AIの普及により、従来は専門知識が必要だった古いスマートテレビや家電製品のファームウェア逆解析が容易になっている。 大規模言語モデルを用いれば、複雑なバイナリコードの解読や未知の脆弱性探索を短時間で実行できるが、セキュリティ研究の範囲を超えた悪用には法的リスクも伴う。 開発者やエンジニアにとって、この技術は製品のセキュリティ耐性を評価する強力なツールとなる一方で、デバイスの所有権や倫理的な境界線を慎重に管理することが求められる。"
+      },
+      "en": {
+        "title": "Using AI to reverse-engineer legacy smart TVs: New techniques for finding vulnerabilities and the emerging legal risks",
+        "summary": "Recent advancements in AI are democratizing the reverse engineering of legacy smart TVs and IoT gadgets, tasks that previously required years of specialized firmware knowledge. Developers can now leverage large language models to deconstruct binary code and rapidly identify security vulnerabilities within obsolete hardware far faster than manual auditing. While this technology provides a powerful sandbox for security researchers to test device defenses, it also introduces significant legal and ethical complications if applied to unauthorized systems. For builders, this trend highlights how transparent your firmware security must be, as AI tools make proprietary obscurity a flawed defense. The practical takeaway is that hardware security is no longer protected by complexity alone, and manufacturers must prioritize vulnerability management throughout the entire product lifecycle."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-26T21:54:20.632Z"
+  },
+  {
+    "id": "art-1793051602116-n9h84",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://kn.itmedia.co.jp/kn/article/2610/27/2000002583/",
+    "published_at": "2026-10-26T21:00:00.000Z",
+    "og_image_url": "https://kn.itmedia.co.jp/kn/article/ogp/2610/27/2000002583/10010448/2048",
+    "title_ja": "伊藤忠インタラクティブ、ClaudeとClaude Codeを活用した「AIエージェント実装研修」を開始：業務自動化への転換へ",
+    "summary_ja": "伊藤忠インタラクティブは、ClaudeおよびClaude Codeを駆使して自社の業務を自動化する法人向け「AIエージェント実装研修」の提供を開始した。 単なる生成AIの対話的な利用にとどまらず、提案書作成やリサーチ業務など、実際の業務プロセスを題材にエージェントを構築することで、AIを「使う」から「業務を任せる」レベルへの変革を目指す。",
+    "translations": {
+      "ja": {
+        "title": "伊藤忠インタラクティブ、ClaudeとClaude Codeを活用した「AIエージェント実装研修」を開始：業務自動化への転換へ",
+        "summary": "伊藤忠インタラクティブは、ClaudeおよびClaude Codeを駆使して自社の業務を自動化する法人向け「AIエージェント実装研修」の提供を開始した。 単なる生成AIの対話的な利用にとどまらず、提案書作成やリサーチ業務など、実際の業務プロセスを題材にエージェントを構築することで、AIを「使う」から「業務を任せる」レベルへの変革を目指す。"
+      },
+      "en": {
+        "title": "Itochu Interactive Launches Corporate AI Agent Training Leveraging Claude and Claude Code for Workflow Automation",
+        "summary": "Itochu Interactive has rolled out a new corporate training program focused on implementing AI agents using Claude and Claude Code, aiming to shift organizations from simply 'using' generative AI to fully delegating complex workflows. Rather than generic prompt engineering, the curriculum centers on building custom agents to automate specific, high-value tasks such as drafting proposals and compiling research reports based on the participants' own job functions. By transforming daily operational processes into AI-driven workflows, the initiative helps teams move beyond simple chat-based assistance to true task automation. For enterprises aiming to optimize white-collar operations, mastering the implementation of these specialized agents has become an essential competitive skill rather than an optional technical luxury for developers alone."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-26T21:53:22.116Z"
+  },
+  {
+    "id": "art-1793051548875-fuagg",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+    "published_at": "2026-10-26T13:45:00.000Z",
+    "og_image_url": null,
+    "title_ja": "CodeRabbitがOpenAIの「GPT-6.1 Sol」を導入、大規模かつ複雑なコードベースにおける脆弱性検知と自動修正提案の精度を大幅に強化",
+    "summary_ja": "コードレビュー自動化ツール「CodeRabbit」は、OpenAIの最新モデル「GPT-6.1 Sol」を統合し、複雑なコードベース全域を横断した高度なセキュリティ解析を実現した。 この新機能により、単なる脆弱性の指摘にとどまらず、開発者と連携して具体的な修正コードの生成までを自動化できる。 大規模プロジェクトのセキュリティ監査負荷を軽減し、手動レビューのボトルネックを解消する実戦的な手法として、今後AIによるコード保守のスタンダードになりそうだ。",
+    "translations": {
+      "ja": {
+        "title": "CodeRabbitがOpenAIの「GPT-6.1 Sol」を導入、大規模かつ複雑なコードベースにおける脆弱性検知と自動修正提案の精度を大幅に強化",
+        "summary": "コードレビュー自動化ツール「CodeRabbit」は、OpenAIの最新モデル「GPT-6.1 Sol」を統合し、複雑なコードベース全域を横断した高度なセキュリティ解析を実現した。 この新機能により、単なる脆弱性の指摘にとどまらず、開発者と連携して具体的な修正コードの生成までを自動化できる。 大規模プロジェクトのセキュリティ監査負荷を軽減し、手動レビューのボトルネックを解消する実戦的な手法として、今後AIによるコード保守のスタンダードになりそうだ。"
+      },
+      "en": {
+        "title": "CodeRabbit integrates OpenAI's GPT-6.1 Sol to drastically improve security vulnerability scanning and remediation in complex codebases",
+        "summary": "CodeRabbit has integrated OpenAI’s latest GPT-6.1 Sol model to power its security agent, enabling deep analysis of vulnerabilities across sprawling, complex codebases that were previously difficult to parse. Beyond merely flagging potential security risks, the agent actively assists developers by generating precise remediation code, turning static scanning into an interactive audit loop. This integration demonstrates that as AI models become more context-aware, the workflow for enterprise security is shifting from manual inspection to collaborative AI-driven remediation. For teams managing massive repos, adopting specialized security agents is no longer just a productivity boost but a necessity to maintain code integrity without crushing velocity."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-26T21:52:28.875Z"
+  },
+  {
     "id": "art-1793048487133-9vkad",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
