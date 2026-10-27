@@ -39,10 +39,10 @@ const ESTIMATED_COST_PER_ARTICLE_JPY = 0.15;
 const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
 /**
  * 1実行の追加上限。
- * Actions cron は間引かれやすいので、走った回で多めに拾い、ソース間は公平枠で分散する。
- * （理論上 :05/:25/:45 が全部動けば日上限 240 で自然に頭打ち）
+ * cron が全部動けば 10×3回/時=30件/時 → 日上限240で約8時間で頭打ち。
+ * 実運用では間引きが多いので、旧5件より厚めにして取りこぼしを減らす。
  */
-const DEFAULT_ARTICLES_PER_RUN = 15;
+const DEFAULT_ARTICLES_PER_RUN = 10;
 /** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
 const RSS_ITEMS_PER_SOURCE = 6;
 /** RSS取得タイムアウト（arXiv 等は遅いことがある） */
