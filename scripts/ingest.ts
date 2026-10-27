@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
+import * as zlib from 'node:zlib';
 import { limits } from '../src/lib/config';
 import {
   cleanArticleSummary,
@@ -99,6 +100,12 @@ const SITEMAP_FEED_FALLBACKS: Record<string, SitemapFeedFallback> = {
     ],
     minPathSegments: 2,
   },
+  // 公式RSSは死んでいるが、sitemap（gzip）に /stories/ と lastmod がある
+  'source-starterstory': {
+    sitemapUrl: 'https://www.starterstory.com/sitemap',
+    pathIncludes: '/stories/',
+    minPathSegments: 2,
+  },
 };
 
 function titleFromUrlSlug(url: string): string {
@@ -137,26 +144,58 @@ async function fetchText(
   }
 }
 
-function filterSitemapLinks(
-  locs: string[],
-  conf: SitemapFeedFallback
-): string[] {
-  return locs.filter((u) => {
-    if (!u.includes(conf.pathIncludes)) return false;
-    let pathname = u;
-    try {
-      pathname = new URL(u).pathname.replace(/\/$/, '') || '/';
-    } catch {
-      /* keep raw */
+/** sitemap.xml / sitemap.xml.gz 両対応（Starter Story 等） */
+async function fetchSitemapXml(
+  url: string,
+  timeoutMs: number
+): Promise<{ ok: true; text: string } | { ok: false; error: string }> {
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        ...RSS_FETCH_HEADERS,
+        Accept: 'application/xml, text/xml, application/gzip, */*;q=0.1',
+      },
+      redirect: 'follow',
+    });
+    clearTimeout(timer);
+    if (!res.ok) {
+      return { ok: false, error: `HTTP ${res.status}` };
     }
-    // カテゴリページそのものは除外（子記事 /news/company-news/foo は残す）
-    if (conf.pathExcludes?.some((ex) => pathname === ex)) return false;
-    if (typeof conf.minPathSegments === 'number') {
-      const segments = pathname.split('/').filter(Boolean);
-      if (segments.length < conf.minPathSegments) return false;
-    }
-    return true;
-  });
+    const buf = Buffer.from(await res.arrayBuffer());
+    const looksGzip =
+      res.url.endsWith('.gz') ||
+      (res.headers.get('content-type') || '').includes('gzip') ||
+      (buf.length >= 2 && buf[0] === 0x1f && buf[1] === 0x8b);
+    const text = looksGzip
+      ? zlib.gunzipSync(buf).toString('utf8')
+      : buf.toString('utf8');
+    return { ok: true, text };
+  } catch (err) {
+    return {
+      ok: false,
+      error: err instanceof Error ? err.message : String(err),
+    };
+  }
+}
+
+function sitemapPathMatches(url: string, conf: SitemapFeedFallback): boolean {
+  if (!url.includes(conf.pathIncludes)) return false;
+  let pathname = url;
+  try {
+    pathname = new URL(url).pathname.replace(/\/$/, '') || '/';
+  } catch {
+    /* keep raw */
+  }
+  // カテゴリページそのものは除外（子記事 /news/company-news/foo は残す）
+  if (conf.pathExcludes?.some((ex) => pathname === ex)) return false;
+  if (typeof conf.minPathSegments === 'number') {
+    const segments = pathname.split('/').filter(Boolean);
+    if (segments.length < conf.minPathSegments) return false;
+  }
+  return true;
 }
 
 async function itemsFromSitemapFallback(
@@ -164,19 +203,30 @@ async function itemsFromSitemapFallback(
 ): Promise<RawFeedItem[] | null> {
   const conf = SITEMAP_FEED_FALLBACKS[sourceId];
   if (!conf) return null;
-  const fetched = await fetchText(conf.sitemapUrl, RSS_FETCH_TIMEOUT_MS);
+  const fetched = await fetchSitemapXml(conf.sitemapUrl, RSS_FETCH_TIMEOUT_MS);
   if (!fetched.ok) {
     console.warn(`  ! sitemap失敗: [${sourceId}] ${fetched.error}`);
     return null;
   }
-  const locs = [
-    ...fetched.text.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/gi),
-  ].map((m) => m[1].trim());
-  const links = filterSitemapLinks(locs, conf);
-  return links.slice(0, RSS_ITEMS_PER_SOURCE).map((link) => ({
-    title: titleFromUrlSlug(link),
-    link,
-    pubDate: null,
+  type SitemapEntry = { link: string; pubDate: string | null };
+  const entries: SitemapEntry[] = [];
+  for (const m of fetched.text.matchAll(
+    /<url>\s*<loc>\s*([^<\s]+)\s*<\/loc>\s*(?:<lastmod>\s*([^<\s]+)\s*<\/lastmod>)?/gi
+  )) {
+    const link = m[1].trim();
+    if (!sitemapPathMatches(link, conf)) continue;
+    entries.push({ link, pubDate: m[2]?.trim() || null });
+  }
+  // lastmod がある場合は新しい順（Starter Story 等で先頭が古い問題を防ぐ）
+  entries.sort((a, b) => {
+    const ta = a.pubDate ? Date.parse(a.pubDate) : 0;
+    const tb = b.pubDate ? Date.parse(b.pubDate) : 0;
+    return tb - ta;
+  });
+  return entries.slice(0, RSS_ITEMS_PER_SOURCE).map((entry) => ({
+    title: titleFromUrlSlug(entry.link),
+    link: entry.link,
+    pubDate: entry.pubDate,
     snippet: '',
   }));
 }
