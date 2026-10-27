@@ -402,6 +402,8 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-openrouter': 'OpenRouter',
   'source-runway': 'Runway',
   'source-elevenlabs': 'ElevenLabs',
+  'source-koala-ai': 'Koala AI',
+  'source-copyai': 'Copy.ai',
   'source-midjourney': 'Midjourney',
   'source-notion': 'Notion',
 };

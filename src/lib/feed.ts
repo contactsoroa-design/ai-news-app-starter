@@ -228,27 +228,45 @@ async function loadRawArticlesFromRemote(urls: string[]): Promise<Article[]> {
     : new Error('All feed URLs failed');
 }
 
-export async function fetchArticles(
-  targetLocale: AppLocale = 'ja',
+/**
+ * Show HN / Product Hunt 等は記事リンクが外部サイトになるため、
+ * site_url ドメイン一致チェックをしない。
+ */
+const AGGREGATOR_SOURCE_IDS = new Set([
+  'source-hn',
+  'source-producthunt-ai',
+]);
+
+function registrableDomain(hostname: string): string {
+  const host = hostname.replace(/^www\./i, '').toLowerCase();
+  const parts = host.split('.').filter(Boolean);
+  if (parts.length <= 2) return host;
+  return parts.slice(-2).join('.');
+}
+
+/** blog.langchain.com と langchain.com のような同一サイト内サブドメイン差を許容 */
+function articleHostMatchesSource(articleUrl: string, siteUrl: string): boolean {
+  const artHost = new URL(articleUrl).hostname.replace(/^www\./i, '');
+  const siteHost = new URL(siteUrl).hostname.replace(/^www\./i, '');
+  if (artHost === siteHost) return true;
+  if (artHost.endsWith(`.${siteHost}`) || siteHost.endsWith(`.${artHost}`)) {
+    return true;
+  }
+  return registrableDomain(artHost) === registrableDomain(siteHost);
+}
+
+/**
+ * 生の articles 配列をサニタイズ・ソート・ロケール適用する（同梱／リモート共通）
+ */
+function prepareArticles(
+  rawArticles: Article[],
+  targetLocale: AppLocale,
   onProgress?: (
     localizedSoFar: Article[],
     done: number,
     total: number
   ) => void
-): Promise<Article[]> {
-  let rawArticles: Article[];
-  const feedUrls = resolveFeedUrls();
-  if (feedUrls.length > 0) {
-    try {
-      rawArticles = await loadRawArticlesFromRemote(feedUrls);
-    } catch {
-      // リモート不通・壊れたJSONでも起動できるように同梱フィードへフォールバック
-      rawArticles = unwrapArticlesPayload(seedArticlesData);
-    }
-  } else {
-    rawArticles = unwrapArticlesPayload(seedArticlesData);
-  }
-
+): Article[] {
   const sourceById = new Map<string, Source>(
     (seedSourcesData as Source[]).map((s) => [s.id, s])
   );
@@ -258,17 +276,14 @@ export async function fetchArticles(
       if (!art.source_id || !art.url) return true;
       const src = sourceById.get(art.source_id);
       if (!src) return true;
+      // HN / PH は元記事が外部ドメインになるのが正常
+      if (AGGREGATOR_SOURCE_IDS.has(src.id)) return true;
       try {
-        const siteHost = new URL(src.site_url).hostname.replace(/^www\./, '');
-        const artHost = new URL(art.url).hostname.replace(/^www\./, '');
-        // ソースの公式ドメイン（site_url）と記事URLのドメインが一致しないもの（別ソースへGitHubやZennが混入したもの）を完全に排除
-        if (artHost !== siteHost && !artHost.endsWith(`.${siteHost}`)) {
-          return false;
-        }
+        // 公式系は同一登録ドメイン（サブドメイン差含む）のみ残す
+        return articleHostMatchesSource(art.url, src.site_url);
       } catch {
         return false;
       }
-      return true;
     })
     .map((art) => {
       const canonicalSourceName =
@@ -300,8 +315,43 @@ export async function fetchArticles(
     });
 
   const sorted = trimFeedArticles(sortArticles(sanitized), limits.maxFeedArticles);
-  const localized = localizeArticlesBatch(sorted, targetLocale, { onProgress });
-  return localized;
+  return localizeArticlesBatch(sorted, targetLocale, { onProgress });
+}
+
+/**
+ * 同梱 articles.json を同期で返す。起動直後にカードを出して OGP 先読みを始める用。
+ */
+export function getBundledArticles(
+  targetLocale: AppLocale = 'ja'
+): Article[] {
+  return prepareArticles(
+    unwrapArticlesPayload(seedArticlesData),
+    targetLocale
+  );
+}
+
+export async function fetchArticles(
+  targetLocale: AppLocale = 'ja',
+  onProgress?: (
+    localizedSoFar: Article[],
+    done: number,
+    total: number
+  ) => void
+): Promise<Article[]> {
+  let rawArticles: Article[];
+  const feedUrls = resolveFeedUrls();
+  if (feedUrls.length > 0) {
+    try {
+      rawArticles = await loadRawArticlesFromRemote(feedUrls);
+    } catch {
+      // リモート不通・壊れたJSONでも起動できるように同梱フィードへフォールバック
+      rawArticles = unwrapArticlesPayload(seedArticlesData);
+    }
+  } else {
+    rawArticles = unwrapArticlesPayload(seedArticlesData);
+  }
+
+  return prepareArticles(rawArticles, targetLocale, onProgress);
 }
 
 export function getAllSources(): Source[] {
@@ -532,6 +582,8 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-openrouter': 'OpenRouter',
   'source-runway': 'Runway',
   'source-elevenlabs': 'ElevenLabs',
+  'source-koala-ai': 'Koala AI',
+  'source-copyai': 'Copy.ai',
   'source-midjourney': 'Midjourney',
   'source-notion': 'Notion',
 };
@@ -572,6 +624,8 @@ const SOURCE_ALLOWED_TOOLS: Record<string, readonly string[]> = {
   'source-openrouter': ['OpenRouter'],
   'source-runway': ['Runway'],
   'source-elevenlabs': ['ElevenLabs'],
+  'source-koala-ai': ['Koala AI'],
+  'source-copyai': ['Copy.ai'],
   'source-midjourney': ['Midjourney'],
   'source-notion': ['Notion'],
 };
@@ -594,13 +648,22 @@ export function isToolRelevantToArticle(tool: string, article: Article): boolean
 }
 
 /**
- * 記事に付与された tool_tags から、記事内容と無関係なツールタグを除去する
+ * 記事に付与された tool_tags から、記事内容と無関係なツールタグを除去する。
+ * 公式ソースでタグ欠落時は SOURCE_PRIMARY_TOOL を補完（ツール別チップ用）。
  */
 export function sanitizeArticleToolTags(article: Article): Article {
-  const validTools = (article.tool_tags ?? []).filter((t) =>
-    isToolRelevantToArticle(t, article)
-  );
-  if (validTools.length === (article.tool_tags ?? []).length) {
+  const primaryFromSource = article.source_id
+    ? SOURCE_PRIMARY_TOOL[article.source_id]
+    : undefined;
+  const rawTags = [...(article.tool_tags ?? [])];
+  if (primaryFromSource && !rawTags.includes(primaryFromSource)) {
+    rawTags.unshift(primaryFromSource);
+  }
+  const validTools = rawTags.filter((t) => isToolRelevantToArticle(t, article));
+  if (
+    validTools.length === (article.tool_tags ?? []).length &&
+    validTools.every((t, i) => t === (article.tool_tags ?? [])[i])
+  ) {
     return article;
   }
   return {

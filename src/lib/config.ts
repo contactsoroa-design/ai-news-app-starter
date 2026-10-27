@@ -1,6 +1,7 @@
 // アプリ共通の文言・設定値（直書きを避けるためここに集約）
 import type { AppLocale } from './types';
 import { genres as genreIds } from '../theme/tokens';
+import { sourceKindLabelsEn } from './sourceKindLabelsEn';
 
 export const regionLocales: ReadonlyArray<{
   code: AppLocale;
@@ -13,9 +14,9 @@ export const regionLocales: ReadonlyArray<{
 
 const copyJa = {
   /** ホーム画面・アプリ内表示用の短い名前 */
-  appName: 'AIニュース',
+  appName: 'Fast News AI',
   /** App Store 表示名（ASO: 生成AI・最新・速報を前方配置、30字以内） */
-  storeName: 'AIニュース - 生成AI・最新速報',
+  storeName: 'Fast News AI - 生成AI・最新速報',
   /** ASC サブタイトル案（30字以内・名前と語を重複させない） */
   storeSubtitle: '公式まとめをスワイプで1枚要約',
   topTabs: {
@@ -92,7 +93,7 @@ const copyJa = {
     unifiedActionTitle: 'ツール・ジャンル・情報源を絞り込む',
     unifiedActionSub: '1画面でAIツール・分野・購読メディアを掛け算で絞り込み',
     activeFilterHeading: '現在の絞り込み状態（掛け算適用中）',
-    allToolsActive: '全ツール対象（32種）',
+    allToolsActive: '全ツール対象（34種）',
     allGenresActive: '全ジャンル対象（13分野）',
     sourcesSectionLabel: '情報源',
     sourcesCardTitle: 'ソース・ジャンル・ツール',
@@ -108,6 +109,11 @@ const copyJa = {
     hiddenResetButton: 'リセット',
     privacyNote:
       '保存済み・興味なし・地域設定はすべてこの端末内にのみ保存され、外部サーバーには送信されません。',
+    legalSectionLabel: 'サポート・法務',
+    openPrivacy: 'プライバシーポリシー',
+    openTerms: '利用規約',
+    openSupport: 'サポート・お問い合わせ',
+    openLegalAria: (label: string) => `${label}をブラウザで開く`,
     toolsPrefix: 'ツール',
     genresPrefix: 'ジャンル',
     sourcesPrefix: '情報源',
@@ -169,8 +175,8 @@ type CopyShape = {
 };
 
 const copyEn: CopyShape = {
-  appName: 'AI News',
-  storeName: 'AI News - Generative AI briefs',
+  appName: 'Fast News AI',
+  storeName: 'Fast News AI - Generative AI briefs',
   storeSubtitle: 'Official digests, one swipe at a time',
   topTabs: {
     recommended: 'For you',
@@ -246,7 +252,7 @@ const copyEn: CopyShape = {
     unifiedActionTitle: 'Filter tools, genres, and sources',
     unifiedActionSub: 'Combine AI tools, topics, and publishers in one place',
     activeFilterHeading: 'Active filters (AND applied)',
-    allToolsActive: 'All tools (32)',
+    allToolsActive: 'All tools (34)',
     allGenresActive: 'All genres (13)',
     sourcesSectionLabel: 'Sources',
     sourcesCardTitle: 'Sources, genres, and tools',
@@ -262,6 +268,11 @@ const copyEn: CopyShape = {
     hiddenResetButton: 'Reset',
     privacyNote:
       'Saved items, hidden articles, and region settings stay on this device only and are never sent to a server.',
+    legalSectionLabel: 'Support & legal',
+    openPrivacy: 'Privacy Policy',
+    openTerms: 'Terms of Use',
+    openSupport: 'Support & contact',
+    openLegalAria: (label: string) => `Open ${label} in browser`,
     toolsPrefix: 'Tools',
     genresPrefix: 'Genres',
     sourcesPrefix: 'Sources',
@@ -361,6 +372,55 @@ export function getSourceCategoryLabel(
   return sourceCategoryLabelsEn[category] ?? category;
 }
 
+/** 情報源の表示名（英語UIでは「公式」などを Official に） */
+const sourceNameLabelsEn: Record<string, string> = {
+  'OpenAI 公式': 'OpenAI Official',
+  'Anthropic 公式': 'Anthropic Official',
+  'xAI (Grok) 公式': 'xAI (Grok) Official',
+  'Mistral AI 公式': 'Mistral AI Official',
+  'CapCut 公式（AI動画編集）': 'CapCut Official (AI video)',
+  'Claude / Claude Code リリースノート': 'Claude / Claude Code Release Notes',
+  'Framer Blog (AI LP制作)': 'Framer Blog (AI landing pages)',
+  'Zenn (個人開発 × AI)': 'Zenn (Indie × AI)',
+  'Zenn (AI・LLMトピック)': 'Zenn (AI / LLM)',
+  'Qiita (AI・個人開発)': 'Qiita (AI / Indie)',
+  'note (AI・個人開発マガジン)': 'note (AI / Indie magazine)',
+  'BenchLM（モデル動向）': 'BenchLM (model trends)',
+};
+
+export function getSourceDisplayName(
+  sourceName: string,
+  locale: AppLocale = 'ja'
+): string {
+  if (locale !== 'en' || !sourceName) return sourceName;
+  const mapped = sourceNameLabelsEn[sourceName];
+  if (mapped) return mapped;
+  // 未登録でも「公式」だけは英語化（記事JSON側の canonical 名ずれ対策）
+  return sourceName
+    .replace(/\s*公式/g, ' Official')
+    .replace(/（/g, '(')
+    .replace(/）/g, ')')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/** 情報源の kind（説明文）表示用 */
+export function getSourceKindLabel(
+  kind: string,
+  locale: AppLocale = 'ja'
+): string {
+  if (locale !== 'en' || !kind) return kind;
+  return (
+    sourceKindLabelsEn[kind] ??
+    kind
+      .replace(/\s*公式/g, ' Official')
+      .replace(/（/g, '(')
+      .replace(/）/g, ')')
+      .replace(/\s+/g, ' ')
+      .trim()
+  );
+}
+
 export const limits = {
   // フィードの保持日数（直近30日以内の記事は件数制限なしで全件ストックし、31日以上前の記事を自動ローテーション）
   retentionDays: 30,
@@ -390,4 +450,15 @@ export const env = {
     if (typeof __DEV__ !== 'undefined' && __DEV__) return '';
     return PRODUCTION_FEED_URL_FALLBACK;
   })(),
+} as const;
+
+/**
+ * App Store Connect / アプリ内法務リンク用（独自ドメイン。vercel.app は使わない）
+ * 公開 HTML の正本: landing/ainews/
+ */
+export const legalUrls = {
+  support: 'https://soroa-studio.com/ainews/',
+  privacy: 'https://soroa-studio.com/ainews/privacy.html',
+  terms: 'https://soroa-studio.com/ainews/terms.html',
+  contactEmail: 'support@soroa-studio.com',
 } as const;
