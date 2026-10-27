@@ -38,8 +38,11 @@ jobs:
 
       - name: Run ingest (bilingual native summaries)
         env:
+          # Repository secrets のみ参照（Environment は使わない）
           SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
-          # 未設定時は scripts/ingest.ts 側のデフォルト
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # Variables が未設定のとき空文字になり :- が効かないので、下で明示フォールバック
           SUMMARY_PROVIDER: ${{ vars.SUMMARY_PROVIDER }}
           SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
           MAX_ARTICLES_PER_DAY: ${{ vars.MAX_ARTICLES_PER_DAY }}
@@ -47,17 +50,31 @@ jobs:
           MAX_MONTHLY_COST_JPY: ${{ vars.MAX_MONTHLY_COST_JPY }}
           INGEST_ARTICLE_DELAY_MS: ${{ vars.INGEST_ARTICLE_DELAY_MS }}
         run: |
-          if [ -z "$SUMMARY_API_KEY" ]; then
-            echo "SUMMARY_API_KEY secret が未設定です。GitHub → Settings → Secrets に追加してください。"
+          set -euo pipefail
+          # キー本文は出さない。有無と長さだけ（切り分け用）
+          if [ -n "${SUMMARY_API_KEY:-}" ]; then
+            echo "Secret SUMMARY_API_KEY: present (len=${#SUMMARY_API_KEY})"
+          elif [ -n "${GEMINI_API_KEY:-}" ]; then
+            echo "Secret GEMINI_API_KEY: present (len=${#GEMINI_API_KEY}) — SUMMARY_API_KEY にコピーして使います"
+            export SUMMARY_API_KEY="$GEMINI_API_KEY"
+          elif [ -n "${OPENAI_API_KEY:-}" ]; then
+            echo "Secret OPENAI_API_KEY: present (len=${#OPENAI_API_KEY}) — SUMMARY_API_KEY にコピーして使います"
+            export SUMMARY_API_KEY="$OPENAI_API_KEY"
+          else
+            echo "::error::APIキー系 Repository secret が空です。"
+            echo "Settings → Secrets and variables → Actions → Repository secrets"
+            echo "に SUMMARY_API_KEY（または GEMINI_API_KEY）を追加してください。"
+            echo "Environments / Variables タブではありません。キー本文はログに出しません。"
             exit 1
           fi
-          # 1実行10件・ソース公平枠。1日上限は Asia/Tokyo
-          export MAX_ARTICLES_PER_DAY="${MAX_ARTICLES_PER_DAY:-360}"
-          export MAX_ARTICLES_PER_RUN="${MAX_ARTICLES_PER_RUN:-10}"
-          export MAX_MONTHLY_COST_JPY="${MAX_MONTHLY_COST_JPY:-3000}"
-          export SUMMARY_MODEL="${SUMMARY_MODEL:-gemini-3.1-flash-lite}"
-          export SUMMARY_PROVIDER="${SUMMARY_PROVIDER:-gemini}"
-          export INGEST_ARTICLE_DELAY_MS="${INGEST_ARTICLE_DELAY_MS:-4000}"
+          # 空の Actions Variable を無視して既定値を使う
+          [ -n "${MAX_ARTICLES_PER_DAY:-}" ] || export MAX_ARTICLES_PER_DAY=360
+          [ -n "${MAX_ARTICLES_PER_RUN:-}" ] || export MAX_ARTICLES_PER_RUN=10
+          [ -n "${MAX_MONTHLY_COST_JPY:-}" ] || export MAX_MONTHLY_COST_JPY=3000
+          [ -n "${SUMMARY_MODEL:-}" ] || export SUMMARY_MODEL=gemini-3.1-flash-lite
+          [ -n "${SUMMARY_PROVIDER:-}" ] || export SUMMARY_PROVIDER=gemini
+          [ -n "${INGEST_ARTICLE_DELAY_MS:-}" ] || export INGEST_ARTICLE_DELAY_MS=4000
+          echo "limits: per_run=${MAX_ARTICLES_PER_RUN} per_day=${MAX_ARTICLES_PER_DAY} model=${SUMMARY_MODEL}"
           npm run ingest
 
       - name: Quality gate (EN density == JA)
