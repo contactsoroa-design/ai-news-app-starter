@@ -39,7 +39,7 @@ const ESTIMATED_COST_PER_ARTICLE_JPY = 0.15;
 const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
 /**
  * 1実行の追加上限。
- * cron が全部動けば 10×3回/時=30件/時 → 日上限240で約8時間で頭打ち。
+ * cron が全部動けば 10×3回/時=30件/時 → 日上限360で約12時間ぶん。
  * 実運用では間引きが多いので、旧5件より厚めにして取りこぼしを減らす。
  */
 const DEFAULT_ARTICLES_PER_RUN = 10;
@@ -935,7 +935,7 @@ async function main() {
   const articlesPath = path.join(rootDir, 'data', 'articles.json');
 
   // ソース取りこぼし防止。20分おき cron × 少数件で分割しレート制限を避ける
-  const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '240');
+  const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '360');
   const maxPerRun = Math.min(
     Number(process.env.MAX_ARTICLES_PER_RUN || DEFAULT_ARTICLES_PER_RUN),
     maxPerDay

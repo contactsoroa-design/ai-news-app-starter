@@ -28,7 +28,7 @@ AdMob 等の広告ネットワーク、雑多なバナー枠、有料プラン�
 - ソースは `terms_checked = true` のものだけ有効にする。Reddit と X のAPIは使わない。
 - 公式ロゴを自分で描かない。アイコンはサイトのfavicon等を取得して表示し、色や形を加工しない。
 - APIキーはサーバー側（収集・要約スクリプト実行環境）の環境変数だけに置く。アプリ側には一切入れない。`.env` はコミットしない。
-- 1日の収集上限デフォルトは `MAX_ARTICLES_PER_DAY=240`（Asia/Tokyo でカウント。ソース取りこぼし防止）。収集は **GitHub Actions のみ**（Mac起動不要）。UTC :05/:25/:45 に実行・`MAX_ARTICLES_PER_RUN=10`（理論上最大30件/時だが cron 間引きが多い。日上限でブレーキ）。同一ソースは原則1実行1件（`MAX_ARTICLES_PER_SOURCE_PER_RUN`、件数の少ないソース優先）。月額上限は `MAX_MONTHLY_COST_JPY`。
+- 1日の収集上限デフォルトは `MAX_ARTICLES_PER_DAY=360`（Asia/Tokyo でカウント。ソース取りこぼし防止）。収集は **GitHub Actions のみ**（Mac起動不要）。UTC :05/:25/:45 に実行・`MAX_ARTICLES_PER_RUN=10`（理論上最大30件/時だが cron 間引きが多い。日上限でブレーキ）。同一ソースは原則1実行1件（`MAX_ARTICLES_PER_SOURCE_PER_RUN`、件数の少ないソース優先）。月額上限は `MAX_MONTHLY_COST_JPY`。フィード保持は直近30日＋安全上限2000件（新しい順に残し、古いものから外す）。
 - 色・文言・寸法は `src/theme/tokens.ts` と設定ファイルにまとめる（直書きしない）。
 - ボタンは44px以上、読み上げ用ラベルを付ける、文字のコントラストを十分にとる。
 - TypeScriptはstrict。エラー処理（通信失敗・空の状態）を必ず入れる。
