@@ -51,14 +51,53 @@ const RSS_FETCH_HEADERS: Record<string, string> = {
   'Accept-Language': 'en-US,en;q=0.9',
 };
 
-/** RSSが死んでいる／Actionsから弾かれるソース向けのサイトマップフォールバック */
-const SITEMAP_FEED_FALLBACKS: Record<
-  string,
-  { sitemapUrl: string; pathIncludes: string }
-> = {
+/** RSSが死んでいる／無い／Actionsから弾かれるソース向けのサイトマップフォールバック */
+type SitemapFeedFallback = {
+  sitemapUrl: string;
+  pathIncludes: string;
+  /** 除外するパス（前方一致 or 完全一致） */
+  pathExcludes?: string[];
+  /** pathname のセグメント数下限（カテゴリページ除外用） */
+  minPathSegments?: number;
+};
+
+const SITEMAP_FEED_FALLBACKS: Record<string, SitemapFeedFallback> = {
   'source-marketingexamples': {
     sitemapUrl: 'https://marketingexamples.com/sitemap.xml',
     pathIncludes: '/content/',
+  },
+  'source-framer': {
+    sitemapUrl: 'https://www.framer.com/sitemap_en.xml',
+    pathIncludes: '/blog/',
+    pathExcludes: [
+      '/blog/product',
+      '/blog/company',
+      '/blog/engineering',
+      '/blog/resources',
+      '/blog/inspiration',
+      '/blog/tutorials',
+      '/blog/press',
+    ],
+    minPathSegments: 2,
+  },
+  'source-capcut': {
+    sitemapUrl:
+      'https://www.capcut.com/sitemap/new/348188/default/index0.xml',
+    pathIncludes: '/blog/',
+    minPathSegments: 2,
+  },
+  'source-runway': {
+    sitemapUrl: 'https://runway.com/sitemap.xml',
+    pathIncludes: '/news/',
+    pathExcludes: [
+      '/news/customers',
+      '/news/company-news',
+      '/news/safety',
+      '/news/research',
+      '/news/engineering',
+      '/news/developers',
+    ],
+    minPathSegments: 2,
   },
 };
 
@@ -98,6 +137,28 @@ async function fetchText(
   }
 }
 
+function filterSitemapLinks(
+  locs: string[],
+  conf: SitemapFeedFallback
+): string[] {
+  return locs.filter((u) => {
+    if (!u.includes(conf.pathIncludes)) return false;
+    let pathname = u;
+    try {
+      pathname = new URL(u).pathname.replace(/\/$/, '') || '/';
+    } catch {
+      /* keep raw */
+    }
+    // カテゴリページそのものは除外（子記事 /news/company-news/foo は残す）
+    if (conf.pathExcludes?.some((ex) => pathname === ex)) return false;
+    if (typeof conf.minPathSegments === 'number') {
+      const segments = pathname.split('/').filter(Boolean);
+      if (segments.length < conf.minPathSegments) return false;
+    }
+    return true;
+  });
+}
+
 async function itemsFromSitemapFallback(
   sourceId: string
 ): Promise<RawFeedItem[] | null> {
@@ -111,7 +172,7 @@ async function itemsFromSitemapFallback(
   const locs = [
     ...fetched.text.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/gi),
   ].map((m) => m[1].trim());
-  const links = locs.filter((u) => u.includes(conf.pathIncludes));
+  const links = filterSitemapLinks(locs, conf);
   return links.slice(0, RSS_ITEMS_PER_SOURCE).map((link) => ({
     title: titleFromUrlSlug(link),
     link,
@@ -842,13 +903,15 @@ async function main() {
     ? JSON.parse(fs.readFileSync(articlesPath, 'utf-8'))
     : [];
 
+  const isIngestible = (s: Source) =>
+    Boolean(s.feed_url) || Boolean(SITEMAP_FEED_FALLBACKS[s.id]);
   const checkedSources = sources.filter(
-    (s) => s.terms_checked && Boolean(s.feed_url)
+    (s) => s.terms_checked && isIngestible(s)
   );
   const activeSources =
     checkedSources.length > 0
       ? checkedSources
-      : sources.filter((s) => Boolean(s.feed_url));
+      : sources.filter((s) => isIngestible(s));
 
   if (!apiKey) {
     console.log(
@@ -880,31 +943,32 @@ async function main() {
 
   await Promise.all(
     activeSources.map(async (source) => {
-      if (!source.feed_url) return;
       let lastErr: string | null = null;
       let feedItems: RawFeedItem[] = [];
 
-      for (let attempt = 0; attempt < 2; attempt++) {
-        const fetched = await fetchText(source.feed_url, RSS_FETCH_TIMEOUT_MS);
-        if (!fetched.ok) {
-          lastErr = fetched.error;
-          if (attempt === 0) await sleep(800);
-          continue;
-        }
-        const looksLikeFeed =
-          /<(rss|feed|rdf:RDF)\b/i.test(fetched.text) ||
-          /<item[\s>]/i.test(fetched.text) ||
-          /<entry[\s>]/i.test(fetched.text);
-        if (!looksLikeFeed) {
-          lastErr = 'not an RSS/Atom document';
+      if (source.feed_url) {
+        for (let attempt = 0; attempt < 2; attempt++) {
+          const fetched = await fetchText(source.feed_url, RSS_FETCH_TIMEOUT_MS);
+          if (!fetched.ok) {
+            lastErr = fetched.error;
+            if (attempt === 0) await sleep(800);
+            continue;
+          }
+          const looksLikeFeed =
+            /<(rss|feed|rdf:RDF)\b/i.test(fetched.text) ||
+            /<item[\s>]/i.test(fetched.text) ||
+            /<entry[\s>]/i.test(fetched.text);
+          if (!looksLikeFeed) {
+            lastErr = 'not an RSS/Atom document';
+            break;
+          }
+          feedItems = parseRssItems(fetched.text, source.site_url).slice(
+            0,
+            RSS_ITEMS_PER_SOURCE
+          );
+          lastErr = null;
           break;
         }
-        feedItems = parseRssItems(fetched.text, source.site_url).slice(
-          0,
-          RSS_ITEMS_PER_SOURCE
-        );
-        lastErr = null;
-        break;
       }
 
       if (feedItems.length === 0) {
@@ -923,7 +987,9 @@ async function main() {
       } else if (lastErr) {
         console.warn(`  ! RSS失敗: [${source.name}] ${lastErr}`);
       } else {
-        console.warn(`  ! RSS 0件: [${source.name}] ${source.feed_url}`);
+        console.warn(
+          `  ! RSS 0件: [${source.name}] ${source.feed_url ?? '(sitemap only)'}`
+        );
       }
     })
   );
