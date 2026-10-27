@@ -31,7 +31,7 @@ AIニュースだけを、1枚ずつ縦スワイプで一目で読めるアプ�
    - `summary_en`（95〜140語、日本語と同密度のネイティブ英語）
    - `tool_tags` / `genre_tags`
 5. 要約は記事ごとに1回だけ作り、`data/articles.json`（`translations.ja` / `translations.en`）に保存して全ユーザーで共有する。品質ゲート（`npm run quality:check`）で英語の薄さを弾く。
-6. 1日の件数（`MAX_ARTICLES_PER_DAY`、デフォルト **240**、**Asia/Tokyo** 日付）と月の費用（`MAX_MONTHLY_COST_JPY`）に上限を設け、超えたら止める。収集は **GitHub Actions のみ**（Mac不要）。UTC **:05 / :25 / :45**、1実行は `MAX_ARTICLES_PER_RUN`（既定 **5**）＋記事間隔 `INGEST_ARTICLE_DELAY_MS` で分割し、429時は待機再試行する。
+6. 1日の件数（`MAX_ARTICLES_PER_DAY`、デフォルト **240**、**Asia/Tokyo** 日付）と月の費用（`MAX_MONTHLY_COST_JPY`）に上限を設け、超えたら止める。収集は **GitHub Actions のみ**（Mac不要）。UTC **:05 / :25 / :45**、1実行は `MAX_ARTICLES_PER_RUN`（既定 **15**）＋記事間隔 `INGEST_ARTICLE_DELAY_MS` で分割し、429時は待機再試行する。
 6b. **ソース偏りの抑制**: フィード内件数が中央値以下のソースを先に全深さ巡回し、件数の多いソース（Zenn/Qiita/HN 等）は後回し。1実行あたり同一ソースは原則 `MAX_ARTICLES_PER_SOURCE_PER_RUN`（既定 **1**）まで。枠が余ったときだけ緩和して埋める。同件数グループ内は実行スロットで開始位置を回転する。
 7. 品質失敗時の再試行は最大数回。レート制限（429）は指数バックオフで再試行する。
 8. フィードは直近30日を保持（件数制限なしのスライディング。ツール別最低件数の保護あり）。

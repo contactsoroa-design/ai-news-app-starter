@@ -37,8 +37,12 @@ const ESTIMATED_COST_PER_ARTICLE_JPY = 0.15;
 
 /** 本番向け: 記事ごとのLLM間隔（ミリ秒）。連続呼び出しで 429 を避ける */
 const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
-/** 無料枠 Lite: 20分おき実行×5件 ≒ 時間あたり15件（429を避けつつ件数維持） */
-const DEFAULT_ARTICLES_PER_RUN = 5;
+/**
+ * 1実行の追加上限。
+ * Actions cron は間引かれやすいので、走った回で多めに拾い、ソース間は公平枠で分散する。
+ * （理論上 :05/:25/:45 が全部動けば日上限 240 で自然に頭打ち）
+ */
+const DEFAULT_ARTICLES_PER_RUN = 15;
 /** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
 const RSS_ITEMS_PER_SOURCE = 6;
 /** RSS取得タイムアウト（arXiv 等は遅いことがある） */
@@ -1042,6 +1046,12 @@ async function main() {
       }
 
       if (feedItems.length > 0) {
+        // 各ソース内は新しい順（最新のもれを減らす）
+        feedItems.sort((a, b) => {
+          const ta = a.pubDate ? Date.parse(a.pubDate) : 0;
+          const tb = b.pubDate ? Date.parse(b.pubDate) : 0;
+          return tb - ta;
+        });
         fetchedQueues.push({ source, items: feedItems });
       } else if (lastErr) {
         console.warn(`  ! RSS失敗: [${source.name}] ${lastErr}`);

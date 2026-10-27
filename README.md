@@ -10,7 +10,8 @@ AI関連のニュースだけを、1枚ずつ縦スワイプで読めるモバ�
 - `src/theme/tokens.ts` … 配色・寸法・タグ定義（直書き禁止）
 - `scripts/` … 記事収集・要約・シード生成スクリプト
 - `data/` … サンプル記事（`seed_articles.json`）、初期ソース（`sources.seed.json`）、およびアプリが読み込む生成済みデータ（`articles.json`, `sources.json`）
-- `docs/` … 仕様（`SPEC.md`）とデザイン定義（`DESIGN.md`）
+- `docs/` … 仕様（`SPEC.md`）・デザイン（`DESIGN.md`）・App Store提出（`ストア提出チェックリスト.md` ほか）
+- `landing/ainews/` … Support / Privacy / Terms（独自ドメイン `soroa-studio.com/ainews/` へデプロイ）
 
 ---
 
@@ -40,7 +41,7 @@ cp .env.example .env
 - `SUMMARY_API_KEY`: 要約生成に使うLLMのAPIキー（スクリプト専用。**アプリ側には一切入らない**）
 - `SUMMARY_MODEL`: 要約モデル名（既定: `gemini-3.1-flash-lite`。比較例: `gemini-3.8-flash` / `gemini-3.6-flash`）
 - `MAX_ARTICLES_PER_DAY`: 1日の最大要約件数（Asia/Tokyo、無料枠 Lite 既定: `240`）
-- `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `5`。20分おき実行で分割しレート制限を回避。時間あたり約15件）
+- `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `15`。cron 間引き時もまとめて拾い、ソース間は公平枠で分散）
 - `INGEST_ARTICLE_DELAY_MS`: 記事ごとのLLM間隔ミリ秒（デフォルト: `4000`）
 - `MAX_MONTHLY_COST_JPY`: 月間の費用上限（デフォルト: `3000`。無料枠中は実質 $0）
 - `EXPO_PUBLIC_FEED_URL`: （任意）本番等でリモートの静的JSON URLから記事を取得する場合に指定。未指定でも **開発中（`expo start`）は `public/articles.json` を都度取得**する。

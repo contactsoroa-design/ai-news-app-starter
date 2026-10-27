@@ -5,7 +5,7 @@ name: Ingest AI news (JA+EN)
 on:
   schedule:
     # Mac 非依存。*/20 は GitHub 側で間引かれやすいので、明示3本に分ける
-    # （1実行5件 × 最大3回/時 ≒ 時間あたり最大15件）
+    # cron は間引かれやすい。1実行15件×公平枠で、走った回に最新を広く拾う
     - cron: '5 * * * *'
     - cron: '25 * * * *'
     - cron: '45 * * * *'
@@ -21,8 +21,8 @@ concurrency:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    # 記事間隔＋429待機を見込む（1実行5件想定）
-    timeout-minutes: 45
+    # 記事間隔＋429待機を見込む（1実行15件想定）
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -51,9 +51,9 @@ jobs:
             echo "SUMMARY_API_KEY secret が未設定です。GitHub → Settings → Secrets に追加してください。"
             exit 1
           fi
-          # 無料枠: 20分×5件 ≒ 旧・毎時15件。1日上限は Asia/Tokyo
+          # 1実行15件・ソース公平枠。1日上限は Asia/Tokyo
           export MAX_ARTICLES_PER_DAY="${MAX_ARTICLES_PER_DAY:-240}"
-          export MAX_ARTICLES_PER_RUN="${MAX_ARTICLES_PER_RUN:-5}"
+          export MAX_ARTICLES_PER_RUN="${MAX_ARTICLES_PER_RUN:-15}"
           export MAX_MONTHLY_COST_JPY="${MAX_MONTHLY_COST_JPY:-3000}"
           export SUMMARY_MODEL="${SUMMARY_MODEL:-gemini-3.1-flash-lite}"
           export SUMMARY_PROVIDER="${SUMMARY_PROVIDER:-gemini}"
