@@ -1,22 +1,22 @@
-import React, { memo, useState } from 'react';
-import {
-  Image,
-  Linking,
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import * as WebBrowser from 'expo-web-browser';
+import React, { memo, useMemo } from 'react';
+import type { ImageSourcePropType } from 'react-native';
+import { NewsCard } from './NewsCard';
 import { getCopy } from '../lib/config';
-import type { AppLocale, SponsoredItem } from '../lib/types';
-import {
-  getThemeForArticle,
-  size,
-  text,
-  themes,
-  toolBadgeColors,
-} from '../theme/tokens';
+import { localizeSponsoredItem } from '../lib/sponsored';
+import type { AppLocale, Article, SponsoredItem } from '../lib/types';
+
+/** ElevenLabs 公式ブランドキット由来（https://elevenlabs.io/brand ）。ロゴ／シンボルは未加工 */
+const ELEVENLABS_MEDIA = {
+  thumbnail: require('../../assets/sponsors/elevenlabs-og.jpg') as ImageSourcePropType,
+  icon: require('../../assets/sponsors/elevenlabs-symbol.png') as ImageSourcePropType,
+};
+
+const SPONSOR_MEDIA: Record<
+  string,
+  { thumbnail: ImageSourcePropType; icon: ImageSourcePropType }
+> = {
+  'sponsor-elevenlabs-1': ELEVENLABS_MEDIA,
+};
 
 type SponsoredCardProps = {
   item: SponsoredItem;
@@ -25,26 +25,26 @@ type SponsoredCardProps = {
   cardHeight: number;
   hasChipRow?: boolean;
   locale?: AppLocale;
+  overrideTool?: string | null;
   onHide: (sponsoredId: string) => void;
 };
 
-async function openSponsorUrl(rawUrl: string): Promise<void> {
-  const trimmed = rawUrl.trim();
-  if (!/^https?:\/\//i.test(trimmed)) return;
-  try {
-    await WebBrowser.openBrowserAsync(trimmed, {
-      presentationStyle: WebBrowser.WebBrowserPresentationStyle.PAGE_SHEET,
-      dismissButtonStyle: 'done',
-      controlsColor: '#B6F24A',
-      toolbarColor: '#0E1117',
-    });
-  } catch {
-    try {
-      await Linking.openURL(trimmed);
-    } catch {
-      // ignore
-    }
-  }
+/** 記事カードと同じ NewsCard レイアウトに載せるため Article 形へ変換する */
+function toArticle(item: SponsoredItem): Article {
+  return {
+    id: item.id,
+    source_id: item.source_id ?? null,
+    source_name: item.advertiser_name,
+    url: item.url,
+    published_at: null,
+    og_image_url: item.image_url,
+    title_ja: item.title_ja,
+    summary_ja: item.summary_ja,
+    translations: item.translations,
+    tool_tags: item.tool_tag ? [item.tool_tag] : [],
+    genre_tags: item.tool_tag === 'ElevenLabs' ? ['音声'] : [],
+    created_at: new Date(0).toISOString(),
+  };
 }
 
 export const SponsoredCard = memo(function SponsoredCard({
@@ -54,208 +54,55 @@ export const SponsoredCard = memo(function SponsoredCard({
   cardHeight,
   hasChipRow = false,
   locale = 'ja',
+  overrideTool = null,
   onHide,
 }: SponsoredCardProps) {
+  const localizedItem = useMemo(
+    () => localizeSponsoredItem(item, locale),
+    [item, locale]
+  );
+  const article = useMemo(
+    () => toArticle(localizedItem),
+    [localizedItem]
+  );
+  // interleave が同一案件を複数差し込むとき id に __slot_N を付ける
+  const mediaBaseId = item.id.replace(/__slot_\d+$/, '');
+  const media = SPONSOR_MEDIA[mediaBaseId] ?? null;
   const t = getCopy(locale);
-  const tool = item.tool_tag?.trim() || '';
-  const { colors } = getThemeForArticle(tool ? [tool] : [], tool || null);
-  const badge = tool ? toolBadgeColors[tool] : null;
-  const [imgFailed, setImgFailed] = useState(false);
   const ctaLabel =
-    locale === 'en' ? item.cta_label_en || item.cta_label_ja : item.cta_label_ja;
-
-  const open = () => {
-    void openSponsorUrl(item.url);
-  };
+    (locale === 'en'
+      ? localizedItem.cta_label_en || localizedItem.cta_label_ja
+      : localizedItem.cta_label_ja
+    )?.trim() || t.sponsored.cta;
 
   return (
-    <View
-      style={[
-        styles.card,
-        {
-          height: cardHeight,
-          backgroundColor: colors.background,
-          paddingTop: hasChipRow ? 52 : 12,
-        },
-      ]}
-      accessibilityLabel={`${t.sponsored.badgeAria}. ${item.title_ja}`}
-    >
-      <Pressable
-        style={styles.body}
-        onPress={open}
-        onLongPress={open}
-        delayLongPress={380}
-        accessibilityRole="link"
-        accessibilityHint={t.sponsored.longPressHint}
-      >
-        <View style={styles.mediaWrap}>
-          {item.image_url && !imgFailed ? (
-            <Image
-              source={{ uri: item.image_url }}
-              style={styles.media}
-              resizeMode="contain"
-              onError={() => setImgFailed(true)}
-              accessibilityIgnoresInvertColors
-            />
-          ) : (
-            <View
-              style={[
-                styles.mediaFallback,
-                { backgroundColor: colors.panel, borderColor: colors.line },
-              ]}
-            >
-              <Text style={[styles.mediaFallbackText, { color: colors.accent }]}>
-                {badge?.initial || item.advertiser_name.slice(0, 2)}
-              </Text>
-            </View>
-          )}
-        </View>
-
-        <View style={styles.metaRow}>
-          <View
-            style={[styles.adBadge, { backgroundColor: colors.accent }]}
-            accessibilityLabel={t.sponsored.badgeAria}
-          >
-            <Text style={styles.adBadgeText}>{t.sponsored.badge}</Text>
-          </View>
-          <Text style={[styles.advertiser, { color: text.primary }]} numberOfLines={1}>
-            {item.advertiser_name}
-          </Text>
-          <Text style={[styles.counter, { color: text.muted }]}>
-            {index + 1}/{total}
-          </Text>
-        </View>
-
-        <Text style={[styles.title, { color: text.primary }]} numberOfLines={3}>
-          {item.title_ja}
-        </Text>
-        <Text style={[styles.summary, { color: text.body }]} numberOfLines={5}>
-          {item.summary_ja}
-        </Text>
-      </Pressable>
-
-      <View style={styles.rail}>
-        <Pressable
-          style={[styles.ctaButton, { backgroundColor: colors.accent }]}
-          onPress={open}
-          accessibilityRole="button"
-          accessibilityLabel={t.sponsored.openCtaAria}
-        >
-          <Text style={styles.ctaText} numberOfLines={2}>
-            {ctaLabel}
-          </Text>
-        </Pressable>
-        <Pressable
-          style={[styles.hideButton, { borderColor: colors.line }]}
-          onPress={() => onHide(item.id)}
-          accessibilityRole="button"
-          accessibilityLabel={t.rail.notInterested}
-        >
-          <Text style={[styles.hideText, { color: text.muted }]}>
-            {t.rail.notInterested}
-          </Text>
-        </Pressable>
-      </View>
-    </View>
+    <NewsCard
+      article={article}
+      index={index}
+      total={total}
+      cardHeight={cardHeight}
+      hasChipRow={hasChipRow}
+      showOriginalButton
+      overrideTool={overrideTool ?? item.tool_tag ?? null}
+      locale={locale}
+      variant="sponsored"
+      openOriginalLabel={ctaLabel}
+      thumbnailSource={
+        media?.thumbnail ??
+        (item.image_url ? { uri: item.image_url } : null)
+      }
+      iconSource={
+        media?.icon ??
+        (item.tool_tag === 'ElevenLabs'
+          ? ELEVENLABS_MEDIA.icon
+          : null)
+      }
+      showNotInterested={false}
+      isSaved={false}
+      onToggleSave={() => {
+        // スポンサードは保存対象外。レール形状だけ記事と揃える
+      }}
+      onHideArticle={onHide}
+    />
   );
-});
-
-const styles = StyleSheet.create({
-  card: {
-    width: '100%',
-    paddingHorizontal: size.pageSide,
-    paddingBottom: size.pageSide,
-    justifyContent: 'flex-start',
-  },
-  body: {
-    flex: 1,
-  },
-  mediaWrap: {
-    height: 120,
-    marginBottom: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  media: {
-    width: 96,
-    height: 96,
-  },
-  mediaFallback: {
-    width: 96,
-    height: 96,
-    borderRadius: 20,
-    borderWidth: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  mediaFallbackText: {
-    fontSize: 28,
-    fontWeight: '700',
-  },
-  metaRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-    marginBottom: 10,
-  },
-  adBadge: {
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 6,
-    minHeight: 28,
-    justifyContent: 'center',
-  },
-  adBadgeText: {
-    color: themes.neutral.background,
-    fontSize: 12,
-    fontWeight: '800',
-  },
-  advertiser: {
-    flex: 1,
-    fontSize: 13,
-    fontWeight: '600',
-  },
-  counter: {
-    fontSize: 12,
-  },
-  title: {
-    fontSize: size.headline.fontSize,
-    lineHeight: Math.round(size.headline.fontSize * size.headline.lineHeight),
-    fontWeight: '700',
-    marginBottom: 8,
-  },
-  summary: {
-    fontSize: size.summary.fontSize,
-    lineHeight: Math.round(size.summary.fontSize * size.summary.lineHeight),
-  },
-  rail: {
-    gap: 10,
-    paddingTop: 12,
-  },
-  ctaButton: {
-    minHeight: size.minTap,
-    borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-  },
-  ctaText: {
-    color: themes.neutral.background,
-    fontSize: 16,
-    fontWeight: '800',
-    textAlign: 'center',
-  },
-  hideButton: {
-    minHeight: size.minTap,
-    borderRadius: 12,
-    borderWidth: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 12,
-  },
-  hideText: {
-    fontSize: 14,
-    fontWeight: '600',
-  },
 });

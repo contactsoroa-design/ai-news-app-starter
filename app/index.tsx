@@ -5,6 +5,7 @@ import {
   type AppStateStatus,
   FlatList,
   LayoutChangeEvent,
+  Linking,
   NativeScrollEvent,
   NativeSyntheticEvent,
   Platform,
@@ -16,6 +17,8 @@ import {
   useWindowDimensions,
   View,
 } from 'react-native';
+import { Image } from 'expo-image';
+import { SCREENSHOT_TAB } from '../store/screenshots/target';
 import { CardSkeleton } from '../src/components/CardSkeleton';
 import { EmptyState } from '../src/components/EmptyState';
 import { ExploreView } from '../src/components/ExploreView';
@@ -27,7 +30,8 @@ import {
 } from '../src/components/SettingsView';
 import { SponsoredCard } from '../src/components/SponsoredCard';
 import { TabBarIcon } from '../src/components/TabBarIcon';
-import { getCopy } from '../src/lib/config';
+import { getCopy, getSourceDisplayName } from '../src/lib/config';
+import { DEMO_SWIPE_ENABLED } from '../src/lib/demoSwipe';
 import {
   articleMatchesPrefsFilter,
   cleanArticleSummary,
@@ -37,12 +41,15 @@ import {
   articleFeedTimestamp,
   fetchArticles,
   getAllSources,
+  getBundledArticles,
+  getFaviconUrl,
   getVerifiedArticleTool,
   hydrateUserPrefs,
   normalizeAppLocale,
 } from '../src/lib/feed';
 import {
   fetchSponsoredItems,
+  filterSponsoredForContext,
   interleaveSponsoredCards,
 } from '../src/lib/sponsored';
 import { looksLikeLocale, relocalizeArticles } from '../src/lib/translate';
@@ -78,12 +85,33 @@ import {
 type BottomTab = 'home' | 'explore' | 'saved' | 'settings';
 type HomeTopTab = 'recommended' | 'source' | 'tool';
 
+/** 先頭付近の OGP だけ先読み（favicon は帯域を奪うので後回し） */
+function prefetchOgImages(
+  items: ReadonlyArray<Article | FeedCardItem>,
+  fromIndex: number,
+  count: number
+) {
+  const urls: string[] = [];
+  const end = Math.min(items.length, fromIndex + count);
+  for (let i = Math.max(0, fromIndex); i < end; i += 1) {
+    const item = items[i];
+    if (!item || isSponsoredItem(item)) continue;
+    if (item.og_image_url) urls.push(item.og_image_url);
+  }
+  if (urls.length > 0) {
+    void Image.prefetch(urls, 'memory-disk');
+  }
+}
+
 export default function HomeScreen() {
   const windowDims = useWindowDimensions();
   const [feedHeight, setFeedHeight] = useState(
     Math.max(windowDims.height - size.tabBarHeight, 500)
   );
   const flatListRef = useRef<FlatList<FeedCardItem> | null>(null);
+  const sourceChipScrollRef = useRef<ScrollView | null>(null);
+  /** ソースチップの content 内 x（ScrollView.scrollTo 用） */
+  const sourceChipOffsetXRef = useRef<Record<string, number>>({});
 
   const sources = useMemo<Source[]>(() => getAllSources(), []);
   const [articles, setArticles] = useState<Article[]>([]);
@@ -99,6 +127,20 @@ export default function HomeScreen() {
   const [settingsSubScreen, setSettingsSubScreen] = useState<
     'root' | 'manage_sources' | 'manage_tools'
   >('root');
+
+  /** スクショ撮影用（__DEV__ + store/screenshots/target.ts）。本番では無視 */
+  useEffect(() => {
+    if (typeof __DEV__ === 'undefined' || !__DEV__) return;
+    if (
+      SCREENSHOT_TAB === 'home' ||
+      SCREENSHOT_TAB === 'explore' ||
+      SCREENSHOT_TAB === 'saved' ||
+      SCREENSHOT_TAB === 'settings'
+    ) {
+      setBottomTab(SCREENSHOT_TAB);
+      if (SCREENSHOT_TAB === 'settings') setSettingsSubScreen('root');
+    }
+  }, []);
   const [topTab, setTopTab] = useState<HomeTopTab>('recommended');
   const [selectedSourceId, setSelectedSourceId] = useState<string | null>(null);
   const [selectedTool, setSelectedTool] = useState<string | null>(null);
@@ -119,17 +161,37 @@ export default function HomeScreen() {
       setRefreshing(true);
     } else if (mode === 'initial') {
       setLoading(true);
+      // 同梱フィードを即表示し、リモート待ち中でも OGP の取得を開始する
+      const bootLocale = normalizeAppLocale(
+        prefs.region_locale ?? detectDeviceDefaultLocale()
+      );
+      const bundled = getBundledArticles(bootLocale);
+      if (bundled.length > 0) {
+        setArticles(bundled);
+        prefetchOgImages(bundled, 0, 3);
+      }
     }
     setError(null);
     let uiLocale = prefs.region_locale;
     try {
+      const localeGuess = normalizeAppLocale(
+        prefs.region_locale ?? detectDeviceDefaultLocale()
+      );
+      // ストレージとフィード取得を並行。prefs 書き戻しは待たない
+      const storagePromise = Promise.all([
+        getSavedArticleIds(),
+        getSavedArticlesData(),
+        getHiddenArticleIds(),
+        getUserPrefs(),
+      ]);
+      const feedPromise = fetchArticles(localeGuess, (partial) => {
+        setArticles(partial);
+        prefetchOgImages(partial, 0, 3);
+      });
+      const sponsoredPromise = fetchSponsoredItems();
+
       const [storedSaved, storedSavedArticles, storedHidden, storedPrefs] =
-        await Promise.all([
-          getSavedArticleIds(),
-          getSavedArticlesData(),
-          getHiddenArticleIds(),
-          getUserPrefs(),
-        ]);
+        await storagePromise;
       const nextPrefs = hydrateUserPrefs(
         storedPrefs,
         sources,
@@ -139,17 +201,20 @@ export default function HomeScreen() {
       uiLocale = targetLocale;
       setPrefs(nextPrefs);
       // 移行後の seen_source_ids などを端末へ書き戻し、次回以降の誤マージを防ぐ
-      await setUserPrefs(nextPrefs);
+      void setUserPrefs(nextPrefs);
       setSavedIds(storedSaved);
       setHiddenIds(storedHidden);
 
       const [fetchedArticles, fetchedSponsored] = await Promise.all([
-        fetchArticles(targetLocale, (partial) => {
-          setArticles(partial);
-        }),
-        fetchSponsoredItems(),
+        feedPromise,
+        sponsoredPromise,
       ]);
-      setArticles(fetchedArticles);
+      const localizedArticles =
+        targetLocale === localeGuess
+          ? fetchedArticles
+          : relocalizeArticles(fetchedArticles, targetLocale);
+      setArticles(localizedArticles);
+      prefetchOgImages(localizedArticles, 0, 3);
       setSponsoredItems(fetchedSponsored);
 
       // 端末保存済みの記事データを復元・同期（日本語原文のみクリーンアップ。他言語訳を壊さない）
@@ -220,6 +285,36 @@ export default function HomeScreen() {
   useEffect(() => {
     void loadData('initial');
   }, [loadData]);
+
+  /** スクショ用: exp://…/?tab=explore&lang=en */
+  useEffect(() => {
+    const applyFromUrl = (url: string | null) => {
+      if (!url) return;
+      const tabMatch = url.match(/[?&]tab=(home|explore|saved|settings)\b/);
+      if (tabMatch) {
+        setBottomTab(tabMatch[1] as BottomTab);
+        if (tabMatch[1] === 'settings') setSettingsSubScreen('root');
+      }
+      const langMatch = url.match(/[?&]lang=(ja|en)\b/);
+      if (langMatch) {
+        const nextLocale = langMatch[1] as 'ja' | 'en';
+        setPrefs((prev) => {
+          if (prev.region_locale === nextLocale) return prev;
+          const stamped = {
+            ...prev,
+            region_locale: nextLocale,
+            updated_at: new Date().toISOString(),
+          };
+          void setUserPrefs(stamped);
+          return stamped;
+        });
+        setArticles((prev) => relocalizeArticles(prev, nextLocale));
+      }
+    };
+    void Linking.getInitialURL().then(applyFromUrl);
+    const sub = Linking.addEventListener('url', ({ url }) => applyFromUrl(url));
+    return () => sub.remove();
+  }, []);
 
   // フォアグラウンド復帰時にフィードを再取得（短時間の連続復帰はスキップ）
   const appStateRef = useRef<AppStateStatus>(AppState.currentState);
@@ -322,14 +417,23 @@ export default function HomeScreen() {
       );
     const ordered = preview ? [preview, ...rest] : rest;
 
-    // スポンサードはおすすめタブのみ。表示OFF・興味なしでの除外は不可。
-    if (topTab === 'recommended' && sponsoredItems.length > 0) {
-      return interleaveSponsoredCards(ordered, sponsoredItems, {
-        locale: prefs.region_locale,
-      });
-    }
+    // スポンサード: おすすめ＋該当ツール別／ソース別。表示OFF・興味なし除外は不可。
+    if (sponsoredItems.length === 0) return ordered;
 
-    return ordered;
+    const matchMode =
+      topTab === 'source' ? 'source' : topTab === 'tool' ? 'tool' : 'recommended';
+    const matchedSponsored = filterSponsoredForContext(sponsoredItems, {
+      mode: matchMode,
+      selectedTool,
+      selectedSourceId,
+      prefsTools: prefs.tools,
+      enabledSourceIds: enabledSourceIdSet,
+    });
+    if (matchedSponsored.length === 0) return ordered;
+
+    return interleaveSponsoredCards(ordered, matchedSponsored, {
+      locale: prefs.region_locale,
+    });
   }, [
     baseFilteredArticles,
     topTab,
@@ -339,6 +443,8 @@ export default function HomeScreen() {
     articles,
     hiddenIdSet,
     prefs.region_locale,
+    prefs.tools,
+    enabledSourceIdSet,
     sponsoredItems,
   ]);
 
@@ -362,6 +468,20 @@ export default function HomeScreen() {
     visibleArticles.length > 0
       ? Math.min(currentIndex, visibleArticles.length - 1)
       : 0;
+
+  /** 表示中カード周辺の OGP を先読み（favicon は現在カードのみ） */
+  useEffect(() => {
+    if (visibleArticles.length === 0) return;
+    prefetchOgImages(visibleArticles, Math.max(0, safeIndex - 1), 4);
+    const current = visibleArticles[safeIndex];
+    if (current && !isSponsoredItem(current)) {
+      const favicon = getFaviconUrl(current.url);
+      if (favicon) {
+        void Image.prefetch([favicon], 'memory-disk');
+      }
+    }
+  }, [safeIndex, visibleArticles]);
+
   const activeCard = visibleArticles[safeIndex];
   const activeArticle =
     activeCard && !isSponsoredItem(activeCard) ? activeCard : null;
@@ -505,6 +625,40 @@ export default function HomeScreen() {
     });
   }, []);
 
+  /** LP録画用: 実フィードをループ自動スワイプ（demoSwipe.ts のフラグ） */
+  useEffect(() => {
+    if (!DEMO_SWIPE_ENABLED) return;
+    if (bottomTab !== 'home' || topTab !== 'recommended') return;
+    if (feedHeight <= 0 || visibleArticles.length < 2) return;
+    let step = 0;
+    const maxSteps = Math.min(6, visibleArticles.length - 1);
+    const timer = setInterval(() => {
+      step += 1;
+      if (step > maxSteps) {
+        step = 0;
+      }
+      flatListRef.current?.scrollToIndex({
+        index: step,
+        animated: true,
+      });
+      setCurrentIndex(step);
+    }, 1400);
+    return () => clearInterval(timer);
+  }, [bottomTab, topTab, feedHeight, visibleArticles.length]);
+
+  const scrollSourceChipIntoView = useCallback(
+    (sourceId: string | null, animated = true) => {
+      const key = sourceId ?? '__all__';
+      const x = sourceChipOffsetXRef.current[key];
+      if (typeof x !== 'number') return;
+      sourceChipScrollRef.current?.scrollTo({
+        x: Math.max(0, x - 12),
+        animated,
+      });
+    },
+    []
+  );
+
   /** 記事の情報源アイコン／名から「ソース別」タブへ */
   const handleOpenSourceFeed = useCallback(
     (article: Article) => {
@@ -526,10 +680,28 @@ export default function HomeScreen() {
           offset: 0,
           animated: false,
         });
+        // チップ列マウント後に選択ソースまで横スクロール
+        setTimeout(() => scrollSourceChipIntoView(sourceId, true), 80);
       });
     },
-    [sources]
+    [sources, scrollSourceChipIntoView]
   );
+
+  // ソース別表示中に選択が変わったらチップ列を追従（レイアウト遅延にも対応）
+  useEffect(() => {
+    if (bottomTab !== 'home' || topTab !== 'source') return;
+    const timer = setTimeout(
+      () => scrollSourceChipIntoView(selectedSourceId, true),
+      60
+    );
+    return () => clearTimeout(timer);
+  }, [
+    bottomTab,
+    topTab,
+    selectedSourceId,
+    enabledSources.length,
+    scrollSourceChipIntoView,
+  ]);
 
   const handleMomentumScrollEnd = (
     e: NativeSyntheticEvent<NativeScrollEvent>
@@ -556,7 +728,7 @@ export default function HomeScreen() {
       <View style={styles.mainArea} onLayout={handleFeedLayout}>
         {bottomTab === 'home' ? (
           <>
-            {loading && !refreshing ? (
+            {loading && !refreshing && visibleArticles.length === 0 ? (
               <CardSkeleton />
             ) : error ? (
               <ScrollView
@@ -616,8 +788,8 @@ export default function HomeScreen() {
                     : 0
                 }
                 initialNumToRender={3}
-                maxToRenderPerBatch={3}
-                windowSize={5}
+                maxToRenderPerBatch={4}
+                windowSize={7}
                 onMomentumScrollEnd={handleMomentumScrollEnd}
                 getItemLayout={(_, index) => ({
                   length: feedHeight,
@@ -734,6 +906,7 @@ export default function HomeScreen() {
             {topTab === 'source' ? (
               <View style={styles.chipRowContainer}>
                 <ScrollView
+                  ref={sourceChipScrollRef}
                   horizontal
                   showsHorizontalScrollIndicator={false}
                   style={styles.chipScroll}
@@ -749,6 +922,10 @@ export default function HomeScreen() {
                           }
                         : { borderColor: activeTheme.line },
                     ]}
+                    onLayout={(e) => {
+                      sourceChipOffsetXRef.current.__all__ =
+                        e.nativeEvent.layout.x;
+                    }}
                     onPress={() => {
                       setSelectedSourceId(null);
                       setCurrentIndex(0);
@@ -770,7 +947,11 @@ export default function HomeScreen() {
 
                   {enabledSources.map((src) => {
                     const selected = selectedSourceId === src.id;
-                    const initial = src.name.slice(0, 2).toUpperCase();
+                    const displayName = getSourceDisplayName(
+                      src.name,
+                      prefs.region_locale
+                    );
+                    const initial = displayName.slice(0, 2).toUpperCase();
                     return (
                       <Pressable
                         key={src.id}
@@ -783,12 +964,27 @@ export default function HomeScreen() {
                               }
                             : { borderColor: activeTheme.line },
                         ]}
+                        onLayout={(e) => {
+                          const x = e.nativeEvent.layout.x;
+                          sourceChipOffsetXRef.current[src.id] = x;
+                          // 遷移直後はレイアウト後に選択チップへ寄せる
+                          if (selected) {
+                            sourceChipScrollRef.current?.scrollTo({
+                              x: Math.max(0, x - 12),
+                              animated: true,
+                            });
+                          }
+                        }}
                         onPress={() => {
                           setSelectedSourceId(src.id);
                           setCurrentIndex(0);
+                          requestAnimationFrame(() => {
+                            scrollSourceChipIntoView(src.id, true);
+                          });
                         }}
                         accessibilityRole="button"
                         accessibilityState={{ selected }}
+                        accessibilityLabel={displayName}
                       >
                         <SiteFaviconBadge
                           siteUrl={src.site_url}
@@ -803,7 +999,7 @@ export default function HomeScreen() {
                             selected && { color: activeTheme.background },
                           ]}
                         >
-                          {src.name}
+                          {displayName}
                         </Text>
                       </Pressable>
                     );

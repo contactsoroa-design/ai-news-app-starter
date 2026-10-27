@@ -24,6 +24,20 @@ function resolveSponsoredUrls(): string[] {
     if (t && !urls.includes(t)) urls.push(t);
   };
 
+  // 開発時は Metro の public/ を最優先（未pushのリモート古文面で本文が戻らないようにする）
+  if (typeof __DEV__ !== 'undefined' && __DEV__) {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const Constants = require('expo-constants').default as {
+        expoConfig?: { hostUri?: string | null };
+      };
+      const hostUri = Constants.expoConfig?.hostUri;
+      if (hostUri) push(`http://${hostUri}/sponsored.json`);
+    } catch {
+      // ignore
+    }
+  }
+
   if (env.feedUrl) {
     try {
       const base = new URL(env.feedUrl);
@@ -41,19 +55,6 @@ function resolveSponsoredUrls(): string[] {
     push(
       'https://raw.githubusercontent.com/contactsoroa-design/ai-news-app-starter/main/data/sponsored.json'
     );
-  }
-
-  if (typeof __DEV__ !== 'undefined' && __DEV__) {
-    try {
-      // eslint-disable-next-line @typescript-eslint/no-require-imports
-      const Constants = require('expo-constants').default as {
-        expoConfig?: { hostUri?: string | null };
-      };
-      const hostUri = Constants.expoConfig?.hostUri;
-      if (hostUri) push(`http://${hostUri}/sponsored.json`);
-    } catch {
-      // ignore
-    }
   }
 
   return urls;
@@ -74,6 +75,17 @@ function isActiveSponsored(item: SponsoredItem, now = Date.now()): boolean {
 }
 
 export async function fetchSponsoredItems(): Promise<SponsoredItem[]> {
+  const fromSeed = () =>
+    unwrapSponsoredPayload(seedSponsoredData).filter((s) =>
+      isActiveSponsored(s)
+    );
+
+  // 開発中は同梱 data/sponsored.json を正とする（リモートCDNの古い本文で上書きしない）
+  if (typeof __DEV__ !== 'undefined' && __DEV__) {
+    const local = fromSeed();
+    if (local.length > 0) return local;
+  }
+
   const urls = resolveSponsoredUrls();
   for (const url of urls) {
     try {
@@ -81,14 +93,13 @@ export async function fetchSponsoredItems(): Promise<SponsoredItem[]> {
       const res = await fetch(`${url}${sep}_=${Date.now()}`);
       if (!res.ok) continue;
       const list = unwrapSponsoredPayload(await res.json());
-      return list.filter((s) => isActiveSponsored(s));
+      const active = list.filter((s) => isActiveSponsored(s));
+      if (active.length > 0) return active;
     } catch {
       // try next
     }
   }
-  return unwrapSponsoredPayload(seedSponsoredData).filter((s) =>
-    isActiveSponsored(s)
-  );
+  return fromSeed();
 }
 
 export function localizeSponsoredItem(
@@ -116,9 +127,57 @@ export function localizeSponsoredItem(
   return item;
 }
 
+/** ホーム上部タブ／設定絞り込みに対するスポンサードの出し分け */
+export type SponsoredMatchContext = {
+  mode: 'recommended' | 'source' | 'tool';
+  selectedTool?: string | null;
+  selectedSourceId?: string | null;
+  /** おすすめのツール prefs（空＝全ツール対象） */
+  prefsTools?: readonly string[];
+  enabledSourceIds?: ReadonlySet<string>;
+};
+
+/**
+ * 該当ツール／ソースの絞り込み時だけ出す。
+ * - ツール別: tool_tag 一致
+ * - ソース別: source_id 一致
+ * - おすすめ: tool_tag / source_id がある案件は prefs・有効ソースに合うものだけ。
+ *   どちらも無い汎用案件はおすすめに常時可。
+ */
+export function sponsoredMatchesContext(
+  item: SponsoredItem,
+  ctx: SponsoredMatchContext
+): boolean {
+  if (ctx.mode === 'tool') {
+    if (!ctx.selectedTool) return false;
+    return Boolean(item.tool_tag && item.tool_tag === ctx.selectedTool);
+  }
+  if (ctx.mode === 'source') {
+    if (!ctx.selectedSourceId) return false;
+    return Boolean(item.source_id && item.source_id === ctx.selectedSourceId);
+  }
+
+  if (item.tool_tag) {
+    const tools = ctx.prefsTools ?? [];
+    if (tools.length > 0 && !tools.includes(item.tool_tag)) return false;
+  }
+  if (item.source_id && ctx.enabledSourceIds) {
+    if (!ctx.enabledSourceIds.has(item.source_id)) return false;
+  }
+  return true;
+}
+
+export function filterSponsoredForContext(
+  sponsored: SponsoredItem[],
+  ctx: SponsoredMatchContext
+): SponsoredItem[] {
+  return sponsored.filter((s) => sponsoredMatchesContext(s, ctx));
+}
+
 /**
  * 記事リストへスポンサードを差し込む。
- * 先頭直後は出さず、everyN 件ごとに1枚。おすすめタブ向け。
+ * 先頭直後は出さず、everyN 件ごとに1枚を繰り返し（案件が1件でも周期表示）。
+ * おすすめ／該当ツール別／該当ソース別向け。
  */
 export function interleaveSponsoredCards(
   articles: Article[],
@@ -129,9 +188,11 @@ export function interleaveSponsoredCards(
     locale?: AppLocale;
   }
 ): FeedCardItem[] {
-  const everyN = options?.everyN ?? limits.sponsoredEveryN;
-  const minBefore =
-    options?.minArticlesBeforeFirst ?? limits.sponsoredMinArticlesBeforeFirst;
+  const everyN = Math.max(1, options?.everyN ?? limits.sponsoredEveryN);
+  const minBefore = Math.max(
+    1,
+    options?.minArticlesBeforeFirst ?? limits.sponsoredMinArticlesBeforeFirst
+  );
   const locale = options?.locale ?? 'ja';
 
   if (sponsored.length === 0 || articles.length === 0) {
@@ -150,13 +211,14 @@ export function interleaveSponsoredCards(
     out.push(articles[i]);
     articlesSinceSponsor++;
 
-    const canInsert =
-      i + 1 >= minBefore &&
-      articlesSinceSponsor >= everyN &&
-      sponsorIdx < pool.length;
-
-    if (canInsert) {
-      out.push(pool[sponsorIdx % pool.length]);
+    // 初回は minBefore 件のあと、以降は everyN 件ごと。案件が1件でもプールを循環する。
+    const threshold = sponsorIdx === 0 ? minBefore : everyN;
+    if (articlesSinceSponsor >= threshold) {
+      const base = pool[sponsorIdx % pool.length];
+      out.push({
+        ...base,
+        id: `${base.id}__slot_${sponsorIdx}`,
+      });
       sponsorIdx++;
       articlesSinceSponsor = 0;
     }

@@ -40,8 +40,10 @@ export type SponsoredItem = {
   kind: 'sponsored';
   id: string;
   advertiser_name: string;
-  /** テーマ用（tokens の tools 名）。任意 */
+  /** テーマ用（tokens の tools 名）。ツール別タブ／設定のツール絞り込みと対応 */
   tool_tag?: string | null;
+  /** data/sources.json の id。ソース別タブ／有効情報源と対応 */
+  source_id?: string | null;
   url: string;
   image_url: string | null;
   title_ja: string;
@@ -70,7 +72,7 @@ export type UserPrefs = {
   region_locale: AppLocale;
   source_language: SourceLanguageFilter;
   show_original_button: boolean;
-  /** フィードへの自前スポンサード差し込み（既定 ON） */
+  /** 互換用。常に true（広告OFFは不可） */
   show_sponsored: boolean;
   updated_at: string;
   /**
