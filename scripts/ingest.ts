@@ -106,6 +106,13 @@ const SITEMAP_FEED_FALLBACKS: Record<string, SitemapFeedFallback> = {
     pathIncludes: '/stories/',
     minPathSegments: 2,
   },
+  // Copy.ai は公式RSSなし。sitemap に /blog/* が大量にある
+  'source-copyai': {
+    sitemapUrl: 'https://www.copy.ai/sitemap.xml',
+    pathIncludes: '/blog/',
+    pathExcludes: ['/blog'],
+    minPathSegments: 2,
+  },
 };
 
 function titleFromUrlSlug(url: string): string {
