@@ -39,8 +39,8 @@ const ESTIMATED_COST_PER_ARTICLE_JPY = 0.15;
 const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
 /**
  * 1実行の追加上限。
- * cron が全部動けば 10×3回/時=30件/時 → 日上限360で約12時間ぶん。
- * 実運用では間引きが多いので、旧5件より厚めにして取りこぼしを減らす。
+ * schedule は間引かれる前提。チャンスが増えた分、成功した回で厚めに拾う。
+ * 日上限 MAX_ARTICLES_PER_DAY（既定360）でブレーキ。
  */
 const DEFAULT_ARTICLES_PER_RUN = 10;
 /** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
@@ -298,12 +298,12 @@ function orderSourceQueuesForFairness(
   return result;
 }
 
-/** UTC 時刻から実行スロット番号（:05/:25/:45 と手動実行を区別） */
+/** UTC 時刻から実行スロット番号（約10分枠×6。時刻ぴったりには依存しない） */
 function ingestRotateSlot(now: Date): number {
   const hour = now.getUTCHours();
   const minute = now.getUTCMinutes();
-  const slot = minute < 15 ? 0 : minute < 35 ? 1 : 2;
-  return hour * 3 + slot;
+  const slot = Math.min(5, Math.floor(minute / 10));
+  return hour * 6 + slot;
 }
 
 function buildRoundRobinCandidates(
@@ -934,7 +934,7 @@ async function main() {
   const sourcesPath = path.join(rootDir, 'data', 'sources.json');
   const articlesPath = path.join(rootDir, 'data', 'articles.json');
 
-  // ソース取りこぼし防止。20分おき cron × 少数件で分割しレート制限を避ける
+  // ソース取りこぼし防止。間引き前提の分散 cron × 少数件で分割しレート制限を避ける
   const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '360');
   const maxPerRun = Math.min(
     Number(process.env.MAX_ARTICLES_PER_RUN || DEFAULT_ARTICLES_PER_RUN),

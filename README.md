@@ -78,7 +78,7 @@ npm run quality:check  # 英語95語未満など不合格を検出
 
 **GitHub Actions（本線・PCオフでも動く）**
 1. Secret `SUMMARY_API_KEY` と Variables（`SUMMARY_MODEL=gemini-3.1-flash-lite` 等）を設定
-2. GitHub Actions が UTC `:05` / `:25` / `:45` に収集し、`data/articles.json` / `public/articles.json` を更新して push（Mac不要）
+2. GitHub Actions が分散スケジュールで収集し（時刻ぴったりは保証しない）、`data/articles.json` / `public/articles.json` を更新して push（Mac不要）
 3. 手動実行: Actions タブ → `Ingest AI news (JA+EN)` → Run workflow
 
 **手元 Mac（毎時 `:00` に Actions をキック）**  

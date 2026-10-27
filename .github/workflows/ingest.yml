@@ -1,15 +1,24 @@
 # 日英ネイティブ要約つきで RSS を収集し、data/articles.json を自動更新する
 # Secrets に SUMMARY_API_KEY を設定してから有効になる
+#
+# 時刻ぴったりにはこだわらない。GitHub の schedule は間引かれる前提で、
+# 混雑しにくい分に分散して「起動機会」を増やす（成功した回だけ収集）。
 name: Ingest AI news (JA+EN)
 
 on:
   schedule:
-    # Mac 非依存。*/20 は GitHub 側で間引かれやすいので、明示3本に分ける
-    # cron は間引かれやすい。1実行10件×公平枠（理論上最大30件/時、日上限360でブレーキ）
-    - cron: '5 * * * *'
-    - cron: '25 * * * *'
-    - cron: '45 * * * *'
+    # 混雑しやすい :00/:05/:15/:30/:45 を避け、1時間に6回チャンス
+    # 実際の間隔は GitHub 都合で揺れる。日上限 MAX_ARTICLES_PER_DAY でブレーキ
+    - cron: '3 * * * *'
+    - cron: '13 * * * *'
+    - cron: '23 * * * *'
+    - cron: '33 * * * *'
+    - cron: '43 * * * *'
+    - cron: '53 * * * *'
   workflow_dispatch:
+  # 外部cron等から起こす用（時刻厳密でなくてよい）
+  repository_dispatch:
+    types: [ingest]
 
 permissions:
   contents: write
@@ -75,6 +84,7 @@ jobs:
           [ -n "${SUMMARY_PROVIDER:-}" ] || export SUMMARY_PROVIDER=gemini
           [ -n "${INGEST_ARTICLE_DELAY_MS:-}" ] || export INGEST_ARTICLE_DELAY_MS=4000
           echo "limits: per_run=${MAX_ARTICLES_PER_RUN} per_day=${MAX_ARTICLES_PER_DAY} model=${SUMMARY_MODEL}"
+          echo "trigger=${{ github.event_name }}"
           npm run ingest
 
       - name: Quality gate (EN density == JA)
