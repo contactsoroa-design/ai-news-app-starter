@@ -13,7 +13,8 @@
     "backfill:en": "node --import tsx scripts/backfill-en.ts",
     "quality:check": "node --import tsx scripts/check-summary-quality.ts",
     "articles:list": "node --import tsx scripts/list-articles.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "feed:merge-push": "node --import tsx scripts/merge-feed-on-push.ts"
   },
   "dependencies": {
     "@expo/metro-runtime": "~57.0.0",

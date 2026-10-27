@@ -34,6 +34,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # repository_dispatch はトリガー時点の SHA を掴むため、
+          # キュー待ちのあいだに別 ingest が push すると古い JSON のまま走る。
+          # ジョブ開始時に必ず最新 main へ揃える。
+          ref: main
+          fetch-depth: 0
+
+      - name: Sync to latest main
+        run: |
+          git fetch origin main
+          git checkout -B main origin/main
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -93,6 +104,7 @@ jobs:
 
       - name: Commit updated feed
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/articles.json public/articles.json data/feed.json public/feed.json
@@ -101,13 +113,25 @@ jobs:
             exit 0
           fi
           git commit -m "chore(feed): ingest bilingual AI news $(date -u +%Y-%m-%dT%H:%MZ)"
-          # main への並行 push（手動コミット等）と衝突しても捨てない
+          # 並行 push で articles.json が衝突すると rebase では解けない。
+          # ours を退避 → origin/main に載せ替え → URL キーで JSON マージ → 再 commit/push。
           for i in 1 2 3 4 5; do
-            if git push; then
+            if git push origin HEAD:main; then
               exit 0
             fi
-            echo "push rejected (attempt $i); pull --rebase and retry"
-            git pull --rebase origin main
+            echo "push rejected (attempt $i); merge feed JSON onto latest main"
+            git rebase --abort 2>/dev/null || true
+            mkdir -p /tmp/ingest-feed
+            cp data/articles.json /tmp/ingest-feed/ours-articles.json
+            git fetch origin main
+            git reset --hard origin/main
+            npm run feed:merge-push -- /tmp/ingest-feed/ours-articles.json
+            git add data/articles.json public/articles.json data/feed.json public/feed.json
+            if git diff --staged --quiet; then
+              echo "merge produced no net change; done"
+              exit 0
+            fi
+            git commit -m "chore(feed): ingest bilingual AI news $(date -u +%Y-%m-%dT%H:%MZ) (merge retry $i)"
           done
           echo "failed to push feed after retries"
           exit 1
