@@ -78,21 +78,14 @@ npm run quality:check  # 英語95語未満など不合格を検出
 
 **GitHub Actions（本線・PCオフでも動く）**
 1. Secret `SUMMARY_API_KEY` と Variables（`SUMMARY_MODEL=gemini-3.1-flash-lite` 等）を設定
-2. GitHub Actions が分散スケジュールで収集し（時刻ぴったりは保証しない）、`data/articles.json` / `public/articles.json` を更新して push（Mac不要）
-3. 手動実行: Actions タブ → `Ingest AI news (JA+EN)` → Run workflow
+2. **主起動**: Vercel Cron（`ops/ingest-wake`）が約15分ごとに `repository_dispatch` → Actions が収集・push（手順: `docs/収集-外部cron手順.md`）
+3. **保険**: GitHub Actions の `schedule`（間引きあり）も残す
+4. 手動デバッグ: Actions タブ → `Ingest AI news (JA+EN)` → Run workflow（または `gh workflow run`）
 
-**手元 Mac（毎時 `:00` に Actions をキック）**  
-Desktop 配下は macOS TCC で LaunchAgent から `npm` 実行できないため、ローカル収集ではなく `gh workflow run` で Actions を起動します。  
-`gh auth login` のキーチェーン認証は LaunchAgent だと切れやすいので、**一度だけ PAT をファイルに置く方式**です（毎回の再ログイン不要）。
-```bash
-./scripts/install-local-hourly-ingest.sh
-# PAT（repo + workflow / No expiration 推奨）を一度だけ:
-#   pbpaste > ~/Library/Application\ Support/ai-news-ingest/github_token && chmod 600 $_
-# ログ: ~/Library/Logs/ai-news-ingest/
-```
-※ 収集は GitHub Actions のみで完結します（Mac の LaunchAgent は不要・使わない想定）。
+※ 収集の実行本体は GitHub Actions のみ（Mac 不要）。無名 cron SaaS への PAT 設置はしない。
 
-ワークフロー: `.github/workflows/ingest.yml`
+ワークフロー: `.github/workflows/ingest.yml`  
+起こし用: `ops/ingest-wake/`
 
 ### C. アプリに新着を届ける
 1. **開発中**: 上記 A/B のあと、アプリ起動またはフォアグラウンド復帰で `public/articles.json` を再取得（手動再読み込みも可）。

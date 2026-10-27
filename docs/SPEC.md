@@ -31,8 +31,9 @@ AIニュースだけを、1枚ずつ縦スワイプで一目で読めるアプ�
    - `summary_en`（95〜140語、日本語と同密度のネイティブ英語）
    - `tool_tags` / `genre_tags`
 5. 要約は記事ごとに1回だけ作り、`data/articles.json`（`translations.ja` / `translations.en`）に保存して全ユーザーで共有する。品質ゲート（`npm run quality:check`）で英語の薄さを弾く。
-6. 1日の件数（`MAX_ARTICLES_PER_DAY`、デフォルト **360**、**Asia/Tokyo** 日付）と月の費用（`MAX_MONTHLY_COST_JPY`）に上限を設け、超えたら止める。収集は **GitHub Actions のみ**（Mac不要）。schedule は混雑しにくい分に分散（UTC おおよそ10分ごと・6枠/時）。時刻ぴったりは保証されない（GitHub の間引き前提）。1実行は `MAX_ARTICLES_PER_RUN`（既定 **10**）＋記事間隔 `INGEST_ARTICLE_DELAY_MS` で分割し、429時は待機再試行する。
-6b. **ソース偏りの抑制**: フィード内件数が中央値以下のソースを先に全深さ巡回し、件数の多いソース（Zenn/Qiita/HN 等）は後回し。1実行あたり同一ソースは原則 `MAX_ARTICLES_PER_SOURCE_PER_RUN`（既定 **1**）まで。枠が余ったときだけ緩和して埋める。同件数グループ内は実行スロットで開始位置を回転する。
+6. 1日の件数（`MAX_ARTICLES_PER_DAY`、デフォルト **360**、**Asia/Tokyo** 日付）と月の費用（`MAX_MONTHLY_COST_JPY`）に上限を設け、超えたら止める。収集の**実行本体**は **GitHub Actions のみ**（Mac不要）。**主起動**は Cloudflare Workers Cron（`ops/ingest-wake-cf` → `repository_dispatch`、約15分。Vercel Hobby は日次制限のため主にしない。`docs/収集-外部cron手順.md`）。GitHub `schedule` は保険（間引きあり）。無名 cron SaaS への PAT は使わない。1実行は `MAX_ARTICLES_PER_RUN`（既定 **10**）＋記事間隔 `INGEST_ARTICLE_DELAY_MS` で分割し、429時は待機再試行する。
+6b. **ソース偏りの抑制**: フィード内件数が中央値以下のソースを先に巡回し、件数の多いソース（Zenn/Qiita/HN 等）は後回し。1実行あたり同一ソースは原則 `MAX_ARTICLES_PER_SOURCE_PER_RUN`（既定 **1**）まで。**枠が余ったら後回しソース全般を同じ実行内で拾い**、さらに余れば上限を緩和して埋める。同件数グループ内は実行スロットで開始位置を回転する。
+6c. **公開日ゲート**: 公開日（`pubDate`）が `MAX_ARTICLE_AGE_DAYS`（既定 **7**）より前の候補は、未登録でも取り込まない（古い公式投稿が枠を使うのを防ぐ）。日付が取れない候補はこのゲート対象外。
 7. 品質失敗時の再試行は最大数回。レート制限（429）は指数バックオフで再試行する。
 8. フィードは直近30日を保持。件数が安全上限（`maxFeedArticles` 既定 **2000**）を超える場合は新しい順に残し、古いものから外す（ツール／ソースの最低保証あり）。
 9. アプリへの配信は `EXPO_PUBLIC_FEED_URL` 経由が本番想定（**GitHub raw 優先**。jsDelivr はキャッシュ遅れしやすいので主経路にしない）。開発中は未設定でも `public/articles.json` を都度取得。

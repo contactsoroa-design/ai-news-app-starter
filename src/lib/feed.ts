@@ -773,19 +773,22 @@ export function trimFeedArticles(
 }
 
 /**
- * フィード上の「新しさ」。元記事の公開日と、アプリへの取り込み時刻の遅い方。
- * （公開日が数日前でも、いま ingest したカードを先頭付近に出す）
+ * フィード上の「新しさ」。原則は元記事の公開日。
+ * created_at（取り込み時刻）で max すると、数日前〜数ヶ月前の公式投稿が
+ * 再ingestされただけで先頭に上がる（Anthropic / 古い Windsurf 等）。
+ * 公開日が無いときだけ取り込み時刻にフォールバックする。
  */
 export function articleFeedTimestamp(article: Article): number {
   const published = article.published_at
     ? new Date(article.published_at).getTime()
-    : 0;
+    : NaN;
+  if (Number.isFinite(published) && published > 0) {
+    return published;
+  }
   const created = article.created_at
     ? new Date(article.created_at).getTime()
     : 0;
-  const pub = Number.isFinite(published) ? published : 0;
-  const cre = Number.isFinite(created) ? created : 0;
-  return Math.max(pub, cre);
+  return Number.isFinite(created) ? created : 0;
 }
 
 function sortArticles(articles: Article[]): Article[] {
@@ -826,4 +829,20 @@ export function getFaviconUrl(articleUrl: string): string | null {
   } catch {
     return null;
   }
+}
+
+/**
+ * カード上の情報源アイコン用。記事のリンク先ではなく source の公式 site_url を使う。
+ * （HN 等のアグリゲータで GitHub/Medium など外部 favicon がばらつくのを防ぐ）
+ */
+export function getArticleSourceFaviconUrl(article: Article): string | null {
+  if (article.source_id) {
+    const src = (seedSourcesData as Source[]).find(
+      (s) => s.id === article.source_id
+    );
+    if (src?.site_url) {
+      return getFaviconUrl(src.site_url);
+    }
+  }
+  return getFaviconUrl(article.url);
 }

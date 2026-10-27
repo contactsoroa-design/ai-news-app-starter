@@ -42,6 +42,7 @@ import {
   fetchArticles,
   getAllSources,
   getBundledArticles,
+  getArticleSourceFaviconUrl,
   getFaviconUrl,
   getVerifiedArticleTool,
   hydrateUserPrefs,
@@ -50,7 +51,9 @@ import {
 import {
   fetchSponsoredItems,
   filterSponsoredForContext,
+  findNearestSponsoredIndex,
   interleaveSponsoredCards,
+  pickRelatedSponsored,
 } from '../src/lib/sponsored';
 import { looksLikeLocale, relocalizeArticles } from '../src/lib/translate';
 import {
@@ -475,7 +478,7 @@ export default function HomeScreen() {
     prefetchOgImages(visibleArticles, Math.max(0, safeIndex - 1), 4);
     const current = visibleArticles[safeIndex];
     if (current && !isSponsoredItem(current)) {
-      const favicon = getFaviconUrl(current.url);
+      const favicon = getArticleSourceFaviconUrl(current);
       if (favicon) {
         void Image.prefetch([favicon], 'memory-disk');
       }
@@ -624,6 +627,22 @@ export default function HomeScreen() {
       });
     });
   }, []);
+
+  /** 記事レールの製品アイコン → フィード内の該当広告カードへ */
+  const scrollHomeToSponsoredIndex = useCallback(
+    (index: number) => {
+      if (index < 0 || feedHeight <= 0) return;
+      setBottomTab('home');
+      setCurrentIndex(index);
+      requestAnimationFrame(() => {
+        flatListRef.current?.scrollToIndex({
+          index,
+          animated: true,
+        });
+      });
+    },
+    [feedHeight]
+  );
 
   /** LP録画用: 実フィードをループ自動スワイプ（demoSwipe.ts のフラグ） */
   useEffect(() => {
@@ -803,19 +822,48 @@ export default function HomeScreen() {
                   });
                 }}
                 refreshControl={feedRefreshControl}
-                renderItem={({ item, index }) =>
-                  isSponsoredItem(item) ? (
-                    <SponsoredCard
-                      item={item}
-                      index={index}
-                      total={visibleArticles.length}
-                      cardHeight={feedHeight}
-                      hasChipRow={hasChipRow}
-                      locale={prefs.region_locale}
-                      overrideTool={overrideToolForTheme}
-                      onHide={handleHideArticle}
-                    />
-                  ) : (
+                renderItem={({ item, index }) => {
+                  if (isSponsoredItem(item)) {
+                    return (
+                      <SponsoredCard
+                        item={item}
+                        index={index}
+                        total={visibleArticles.length}
+                        cardHeight={feedHeight}
+                        hasChipRow={hasChipRow}
+                        locale={prefs.region_locale}
+                        overrideTool={overrideToolForTheme}
+                        onHide={handleHideArticle}
+                      />
+                    );
+                  }
+
+                  const related = pickRelatedSponsored(item, sponsoredItems);
+                  const jumpIndex = related
+                    ? findNearestSponsoredIndex(
+                        visibleArticles,
+                        index,
+                        related
+                      )
+                    : -1;
+                  const siteForIcon = related?.tool_tag
+                    ? toolSiteUrls[related.tool_tag]
+                    : null;
+                  const relatedSponsor =
+                    related && jumpIndex >= 0
+                      ? {
+                          name: related.advertiser_name,
+                          iconUrl:
+                            (siteForIcon
+                              ? getFaviconUrl(siteForIcon)
+                              : null) ||
+                            getFaviconUrl(related.url) ||
+                            related.image_url,
+                          onPress: () => scrollHomeToSponsoredIndex(jumpIndex),
+                        }
+                      : null;
+
+                  return (
                     <NewsCard
                       article={item}
                       index={index}
@@ -826,13 +874,14 @@ export default function HomeScreen() {
                       overrideTool={overrideToolForTheme}
                       highlightGenres={prefs.genres}
                       locale={prefs.region_locale}
+                      relatedSponsor={relatedSponsor}
                       isSaved={savedIds.includes(item.id)}
                       onToggleSave={handleToggleSave}
                       onHideArticle={handleHideArticle}
                       onPressSource={handleOpenSourceFeed}
                     />
-                  )
-                }
+                  );
+                }}
               />
             )}
 

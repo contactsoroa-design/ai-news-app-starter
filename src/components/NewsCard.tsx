@@ -1,6 +1,5 @@
 import React, { memo, useEffect, useRef, useState } from 'react';
 import {
-  Image,
   Linking,
   Modal,
   Platform,
@@ -12,15 +11,16 @@ import {
   View,
   type ImageSourcePropType,
 } from 'react-native';
+import { Image } from 'expo-image';
 import Svg, { Circle, Path } from 'react-native-svg';
 import * as WebBrowser from 'expo-web-browser';
-import { getCopy, getGenreLabel } from '../lib/config';
+import { getCopy, getGenreLabel, getSourceDisplayName } from '../lib/config';
 import {
   cleanArticleSummary,
   cleanArticleTitle,
   formatShortDate,
   getDisplayGenre,
-  getFaviconUrl,
+  getArticleSourceFaviconUrl,
   getVerifiedArticleTool,
 } from '../lib/feed';
 import { looksLikeLocale } from '../lib/translate';
@@ -105,6 +105,15 @@ type NewsCardProps = {
   iconSource?: ImageSourcePropType | null;
   /** false のとき興味なしを出さない（広告枠）。レール位置はスペーサーで維持 */
   showNotInterested?: boolean;
+  /**
+   * 記事のツール／ソースに対応する広告があるとき右レールに製品アイコンを出す。
+   * タップでフィード内の該当広告カードへスクロールする。
+   */
+  relatedSponsor?: {
+    name: string;
+    iconUrl: string | null;
+    onPress: () => void;
+  } | null;
   isSaved: boolean;
   onToggleSave: (articleId: string) => void;
   onHideArticle: (articleId: string) => void;
@@ -127,6 +136,7 @@ export const NewsCard = memo(function NewsCard({
   thumbnailSource = null,
   iconSource = null,
   showNotInterested = true,
+  relatedSponsor = null,
   isSaved,
   onToggleSave,
   onHideArticle,
@@ -139,6 +149,7 @@ export const NewsCard = memo(function NewsCard({
   );
   const [ogImageFailed, setOgImageFailed] = useState(false);
   const [faviconFailed, setFaviconFailed] = useState(false);
+  const [sponsorIconFailed, setSponsorIconFailed] = useState(false);
   const [summaryAreaSize, setSummaryAreaSize] = useState<SummaryAreaSize>({
     width: 0,
     height: 0,
@@ -153,10 +164,19 @@ export const NewsCard = memo(function NewsCard({
   useEffect(() => {
     setOgImageFailed(false);
     setFaviconFailed(false);
+    setSponsorIconFailed(false);
     setFullSummaryMetrics({ lines: 0, height: 0 });
     setSummaryModalOpen(false);
     pendingOriginalUrlRef.current = null;
-  }, [article.id, article.og_image_url, article.url, article.summary_ja, locale]);
+  }, [
+    article.id,
+    article.og_image_url,
+    article.url,
+    article.summary_ja,
+    locale,
+    relatedSponsor?.iconUrl,
+    relatedSponsor?.name,
+  ]);
 
   // モーダルが完全に閉じたあとで外部ブラウザを開く（iOS の表示競合対策）
   useEffect(() => {
@@ -183,7 +203,7 @@ export const NewsCard = memo(function NewsCard({
     };
   }, [summaryModalOpen]);
 
-  const faviconUrl = iconSource ? null : getFaviconUrl(article.url);
+  const faviconUrl = iconSource ? null : getArticleSourceFaviconUrl(article);
   const showBundledThumb = Boolean(thumbnailSource) && !ogImageFailed;
   const showOgImage =
     showBundledThumb || (Boolean(article.og_image_url) && !ogImageFailed);
@@ -205,8 +225,9 @@ export const NewsCard = memo(function NewsCard({
   const secondaryGenre =
     (article.genre_tags ?? []).find((g) => g !== primaryGenre) || '';
 
+  const displaySourceName = getSourceDisplayName(article.source_name, locale);
   const sourceShortLabel =
-    article.source_name.split(/[（(]/)[0]?.trim() || article.source_name;
+    displaySourceName.split(/[（(]/)[0]?.trim() || displaySourceName;
   const bannerPrimaryLabel = primaryTool || sourceShortLabel;
 
   const toolBadge =
@@ -235,7 +256,7 @@ export const NewsCard = memo(function NewsCard({
     : [dateStr, tagLabel, `${index + 1}/${total}`].filter(Boolean);
   const metaText = metaParts.join(locale === 'en' ? ' · ' : ' ・ ');
 
-  const initialChar = article.source_name.trim().slice(0, 2).toUpperCase();
+  const initialChar = displaySourceName.trim().slice(0, 2).toUpperCase();
 
   const displayTitle = cleanArticleTitle(article.title_ja);
   // 英語ネイティブ要約は ingest 済みの文面を優先（日本語向けクリーンで壊さない）
@@ -371,14 +392,13 @@ export const NewsCard = memo(function NewsCard({
           {showOgImage && thumbImageSource ? (
             <>
               <Image
-                key={
-                  typeof thumbImageSource === 'number'
-                    ? `thumb-local-${article.id}`
-                    : article.og_image_url || `thumb-${article.id}`
-                }
+                recyclingKey={`thumb-${article.id}`}
                 source={thumbImageSource}
                 style={styles.thumbnailImage}
-                resizeMode="cover"
+                contentFit="cover"
+                cachePolicy="memory-disk"
+                priority="high"
+                transition={0}
                 onError={() => setOgImageFailed(true)}
               />
               {/* 記事OGP上のツール／ジャンル。スポンサードはプレゼン画像を優先して重ねない */}
@@ -555,13 +575,12 @@ export const NewsCard = memo(function NewsCard({
                 >
                   {showFavicon && iconImageSource ? (
                     <Image
-                      key={
-                        typeof iconImageSource === 'number'
-                          ? `banner-icon-local-${article.id}`
-                          : `banner-${faviconUrl}`
-                      }
+                      recyclingKey={`banner-icon-${article.id}`}
                       source={iconImageSource}
                       style={styles.faviconImage}
+                      contentFit="contain"
+                      cachePolicy="memory-disk"
+                      transition={0}
                       onError={() => setFaviconFailed(true)}
                     />
                   ) : (
@@ -580,7 +599,7 @@ export const NewsCard = memo(function NewsCard({
                     {bannerHighlight}
                   </Text>
                   <Text style={styles.bannerSourceSub} numberOfLines={1}>
-                    {article.source_name}
+                    {displaySourceName}
                   </Text>
                 </View>
               </View>
@@ -629,13 +648,12 @@ export const NewsCard = memo(function NewsCard({
             >
               {showFavicon && iconImageSource ? (
                 <Image
-                  key={
-                    typeof iconImageSource === 'number'
-                      ? `source-icon-local-${article.id}`
-                      : faviconUrl || `source-icon-${article.id}`
-                  }
+                  recyclingKey={`source-icon-${article.id}`}
                   source={iconImageSource}
                   style={styles.faviconImage}
+                  contentFit="contain"
+                  cachePolicy="memory-disk"
+                  transition={0}
                   onError={() => setFaviconFailed(true)}
                 />
               ) : (
@@ -648,7 +666,7 @@ export const NewsCard = memo(function NewsCard({
             </View>
             <View style={styles.sourceTextCol}>
               <Text style={styles.sourceName} numberOfLines={1}>
-                {article.source_name}
+                {displaySourceName}
               </Text>
               <Text style={styles.sourceMeta} numberOfLines={1}>
                 {metaText}
@@ -747,7 +765,7 @@ export const NewsCard = memo(function NewsCard({
         >
           <View style={styles.summaryModalHeader}>
             <Text style={styles.summaryModalSource} numberOfLines={1}>
-              {article.source_name}
+              {displaySourceName}
             </Text>
             <Pressable
               onPress={() => setSummaryModalOpen(false)}
@@ -857,6 +875,53 @@ export const NewsCard = memo(function NewsCard({
               />
             </Svg>
             <Text style={styles.railLabel}>{railOpenLabel}</Text>
+          </Pressable>
+        ) : null}
+
+        {relatedSponsor && !isSponsored ? (
+          <Pressable
+            style={styles.railButton}
+            onPress={relatedSponsor.onPress}
+            accessibilityRole="button"
+            accessibilityLabel={t.rail.relatedSponsorAria(relatedSponsor.name)}
+          >
+            {relatedSponsor.iconUrl && !sponsorIconFailed ? (
+              <Image
+                source={{ uri: relatedSponsor.iconUrl }}
+                style={styles.railSponsorIcon}
+                contentFit="cover"
+                onError={() => setSponsorIconFailed(true)}
+                accessibilityIgnoresInvertColors
+              />
+            ) : (
+              <View
+                style={[
+                  styles.railSponsorFallback,
+                  {
+                    backgroundColor:
+                      toolBadgeColors[relatedSponsor.name]?.bg ??
+                      themes.neutral.accent,
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.railSponsorFallbackText,
+                    {
+                      color:
+                        toolBadgeColors[relatedSponsor.name]?.fg ??
+                        themes.neutral.background,
+                    },
+                  ]}
+                >
+                  {(toolBadgeColors[relatedSponsor.name]?.initial ??
+                    relatedSponsor.name.slice(0, 2)).slice(0, 2)}
+                </Text>
+              </View>
+            )}
+            <Text style={styles.railLabel} numberOfLines={1}>
+              {t.rail.relatedSponsor}
+            </Text>
           </Pressable>
         ) : null}
 
@@ -1226,6 +1291,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 4,
+  },
+  railSponsorIcon: {
+    width: 30,
+    height: 30,
+    borderRadius: 8,
+    backgroundColor: uiColors.avatarSurface,
+  },
+  railSponsorFallback: {
+    width: 30,
+    height: 30,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  railSponsorFallbackText: {
+    fontSize: 11,
+    fontWeight: '700',
   },
   railLabel: {
     color: text.rail,

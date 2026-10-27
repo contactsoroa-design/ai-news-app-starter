@@ -247,8 +247,22 @@ async function itemsFromSitemapFallback(
  * 枠が余ったときだけ 2 件目以降を許可する（soft fill）。
  */
 const DEFAULT_MAX_PER_SOURCE_PER_RUN = 1;
+/** 公開日がこの日数より前の候補は未登録でも取り込まない（古い公式が枠を使うのを防ぐ） */
+const DEFAULT_MAX_ARTICLE_AGE_DAYS = 7;
 
 type SourceQueue = { source: Source; items: RawFeedItem[] };
+
+function isArticleTooOld(
+  pubDate: string | null,
+  maxAgeDays: number,
+  now: Date
+): boolean {
+  if (!pubDate) return false;
+  const publishedMs = Date.parse(pubDate);
+  if (!Number.isFinite(publishedMs)) return false;
+  const cutoffMs = now.getTime() - maxAgeDays * 24 * 60 * 60 * 1000;
+  return publishedMs < cutoffMs;
+}
 
 /** フィード内のソース別件数（偏り補正の並び替え用） */
 function countArticlesBySourceId(articles: Article[]): Map<string, number> {
@@ -947,6 +961,12 @@ async function main() {
         DEFAULT_MAX_PER_SOURCE_PER_RUN
     )
   );
+  const maxArticleAgeDays = Math.max(
+    1,
+    Number(
+      process.env.MAX_ARTICLE_AGE_DAYS || DEFAULT_MAX_ARTICLE_AGE_DAYS
+    )
+  );
   const maxMonthlyCostJpy = Number(process.env.MAX_MONTHLY_COST_JPY || '3000');
   const apiKey =
     process.env.SUMMARY_API_KEY ||
@@ -1085,7 +1105,7 @@ async function main() {
     (q) => (sourceCounts.get(q.source.id) ?? 0) > medianCount
   );
   console.log(
-    `公平巡回: 不足ソース優先 (中央値≤${medianCount}) / 回転スロット=${rotateSlot} / 1ソース上限=${maxPerSourcePerRun}件（枠余り時は緩和）`
+    `公平巡回: 不足ソース優先 (中央値≤${medianCount}) / 回転スロット=${rotateSlot} / 1ソース上限=${maxPerSourcePerRun}件（枠余り時は緩和） / 公開${maxArticleAgeDays}日以内のみ`
   );
   console.log(
     `  優先: ${primaryQueues
@@ -1098,11 +1118,16 @@ async function main() {
       .join(' → ') || '（なし）'}`
   );
 
-  // 不足側の RR を先に、人気側は枠が余ったときだけ
-  const roundRobinCandidates = [
-    ...buildRoundRobinCandidates(primaryQueues, RSS_ITEMS_PER_SOURCE),
-    ...buildRoundRobinCandidates(overflowQueues, RSS_ITEMS_PER_SOURCE),
-  ];
+  // 不足側と後回し側を分離。不足側の深い候補で枠を埋め切ると
+  // 件数の多いソース（Zenn/Qiita/HN 等）が同じ実行で後回しのまま枠を取れないため。
+  const primaryCandidates = buildRoundRobinCandidates(
+    primaryQueues,
+    RSS_ITEMS_PER_SOURCE
+  );
+  const overflowCandidates = buildRoundRobinCandidates(
+    overflowQueues,
+    RSS_ITEMS_PER_SOURCE
+  );
 
   let todayCount = 0;
   const newArticles: Article[] = [];
@@ -1137,6 +1162,13 @@ async function main() {
       (a) => a.url === item.link || isSimilarTitle(a.title_ja, item.title)
     );
     if (isDuplicate) return 'skipped';
+
+    if (isArticleTooOld(item.pubDate, maxArticleAgeDays, now)) {
+      console.log(
+        `  ~ 古いためスキップ (${maxArticleAgeDays}日超): [${source.name}] ${item.title}`
+      );
+      return 'skipped';
+    }
 
     try {
       // OGP取得とLLMを同時に叩くとレート制限しやすいので直列にする
@@ -1185,26 +1217,43 @@ async function main() {
     }
   };
 
-  // Pass 1: ソースあたり上限厳守で偏りを抑える
-  for (const { source, item } of roundRobinCandidates) {
-    const result = await tryAcceptCandidate(
-      source,
-      item,
+  const runPass = async (
+    label: string,
+    candidates: Array<{ source: Source; item: RawFeedItem }>,
+    perSourceCap: number
+  ) => {
+    if (todayCount >= maxPerRun || alreadyToday >= maxPerDay) return;
+    if (candidates.length === 0) return;
+    console.log(
+      `${label}: 候補 ${candidates.length} / ソース上限 ${perSourceCap}（現在 ${todayCount}/${maxPerRun}）`
+    );
+    for (const { source, item } of candidates) {
+      const result = await tryAcceptCandidate(source, item, perSourceCap);
+      if (result === 'stop') break;
+    }
+  };
+
+  // Pass 1: 不足ソースのみ・1ソース1件（偏り抑制）
+  await runPass('Pass1 不足ソース', primaryCandidates, maxPerSourcePerRun);
+
+  // Pass 1b: 枠余りなら後回しソース全般を同じ厳格上限で先に拾う
+  // （不足側の depth 2〜6 で枠を埋め切る前に overflow の最新へ回す）
+  if (todayCount < maxPerRun && alreadyToday < maxPerDay) {
+    await runPass(
+      'Pass1b 後回しソース',
+      overflowCandidates,
       maxPerSourcePerRun
     );
-    if (result === 'stop') break;
   }
 
-  // Pass 2: 枠が余ったら上限を緩めて埋める（更新のあるソースだけ）
+  // Pass 2: まだ余りなら緩和上限。後回し側を先に埋め、その後不足側
   if (todayCount < maxPerRun && alreadyToday < maxPerDay) {
     const softCap = Math.max(maxPerSourcePerRun + 2, maxPerRun);
     console.log(
-      `枠余り (${todayCount}/${maxPerRun}) のためソース上限を ${softCap} に緩和して再巡回します`
+      `枠余り (${todayCount}/${maxPerRun}) のためソース上限を ${softCap} に緩和します`
     );
-    for (const { source, item } of roundRobinCandidates) {
-      const result = await tryAcceptCandidate(source, item, softCap);
-      if (result === 'stop') break;
-    }
+    await runPass('Pass2 後回しソース', overflowCandidates, softCap);
+    await runPass('Pass2 不足ソース', primaryCandidates, softCap);
   }
 
   if (todayCount >= maxPerRun) {

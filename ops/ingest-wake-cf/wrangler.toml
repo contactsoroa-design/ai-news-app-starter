@@ -1,0 +1,12 @@
+name = "ainews-ingest-wake"
+main = "src/index.ts"
+compatibility_date = "2026-10-27"
+
+# Free plan: cron triggers OK (unlike Vercel Hobby daily-only)
+[triggers]
+crons = ["*/15 * * * *"]
+
+# Secrets (set via wrangler secret put — never commit):
+#   INGEST_DISPATCH_TOKEN  Fine-grained PAT (Contents R/W on ai-news-app-starter)
+# Optional vars:
+#   INGEST_GITHUB_REPO     default contactsoroa-design/ai-news-app-starter
