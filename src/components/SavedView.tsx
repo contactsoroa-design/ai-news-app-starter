@@ -8,9 +8,9 @@ import {
   type LayoutChangeEvent,
   type ViewToken,
 } from 'react-native';
-import { copy } from '../lib/config';
-import { formatShortDateJa, getVerifiedArticleTool } from '../lib/feed';
-import type { Article } from '../lib/types';
+import { getCopy, getSourceDisplayName } from '../lib/config';
+import { formatShortDate, getVerifiedArticleTool } from '../lib/feed';
+import type { AppLocale, Article } from '../lib/types';
 import { getThemeForArticle, size, text, themes, uiColors } from '../theme/tokens';
 import { EmptyState } from './EmptyState';
 import { NewsCard } from './NewsCard';
@@ -18,14 +18,17 @@ import { NewsCard } from './NewsCard';
 type SavedViewProps = {
   savedArticles: Article[];
   showOriginalButton: boolean;
+  locale?: AppLocale;
   onRemoveSaved: (articleId: string) => void;
 };
 
 export function SavedView({
   savedArticles,
   showOriginalButton,
+  locale = 'ja',
   onRemoveSaved,
 }: SavedViewProps) {
+  const t = getCopy(locale);
   const [selectedArticleId, setSelectedArticleId] = useState<string | null>(null);
   const [feedHeight, setFeedHeight] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -73,8 +76,13 @@ export function SavedView({
 
   const renderSavedListItem = useCallback(
     ({ item: article, index }: { item: Article; index: number }) => {
-      const dateStr = formatShortDateJa(article.published_at);
-      const meta = [dateStr, article.source_name].filter(Boolean).join(' ・ ');
+      const dateStr = formatShortDate(article.published_at, locale);
+      const meta = [
+        dateStr,
+        getSourceDisplayName(article.source_name, locale),
+      ]
+        .filter(Boolean)
+        .join(locale === 'en' ? ' · ' : ' ・ ');
       return (
         <View style={styles.itemCard}>
           <Pressable
@@ -90,14 +98,14 @@ export function SavedView({
             style={styles.removeButton}
             onPress={() => onRemoveSaved(article.id)}
             accessibilityRole="button"
-            accessibilityLabel={copy.saved.removeAria}
+            accessibilityLabel={t.saved.removeAria}
           >
-            <Text style={styles.removeButtonText}>{copy.saved.removeLabel}</Text>
+            <Text style={styles.removeButtonText}>{t.saved.removeLabel}</Text>
           </Pressable>
         </View>
       );
     },
-    [handleOpenCard, onRemoveSaved]
+    [handleOpenCard, onRemoveSaved, locale, t]
   );
 
   if (isShowingCard) {
@@ -153,6 +161,7 @@ export function SavedView({
                 hasChipRow={false}
                 isSaved={true}
                 showOriginalButton={showOriginalButton}
+                locale={locale}
                 onToggleSave={onRemoveSaved}
                 onHideArticle={onRemoveSaved}
               />
@@ -172,9 +181,9 @@ export function SavedView({
             ]}
             onPress={handleBackToList}
             accessibilityRole="button"
-            accessibilityLabel={copy.saved.backToListAria}
+            accessibilityLabel={t.saved.backToListAria}
           >
-            <Text style={styles.backButtonText}>{copy.saved.backToList}</Text>
+            <Text style={styles.backButtonText}>{t.saved.backToList}</Text>
           </Pressable>
 
           <View
@@ -198,14 +207,14 @@ export function SavedView({
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.subtitle}>{copy.saved.subtitle}</Text>
-        <Text style={styles.title}>{copy.saved.title}</Text>
+        <Text style={styles.subtitle}>{t.saved.subtitle}</Text>
+        <Text style={styles.title}>{t.saved.title}</Text>
       </View>
 
       {savedArticles.length === 0 ? (
         <EmptyState
-          title={copy.saved.emptyTitle}
-          description={copy.saved.emptyDescription}
+          title={t.saved.emptyTitle}
+          description={t.saved.emptyDescription}
         />
       ) : (
         <FlatList

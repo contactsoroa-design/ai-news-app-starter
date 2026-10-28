@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="impact-site-verification"
+      value="ad461d8b-138c-4053-9bb1-1cc0cec6ed3e"
+    />
+    <title>Fast News AI — AIニュースを、1枚ずつ</title>
+    <meta
+      name="description"
+      content="AI関連ニュースだけを縦スワイプで読めるアプリ。日本語と英語のネイティブ要約、情報源とツールの絞り込み。ログイン不要。"
+    />
+    <meta property="og:title" content="Fast News AI — AIニュースを、1枚ずつ" />
+    <meta
+      property="og:description"
+      content="AI関連ニュースだけを縦スワイプで。日英ネイティブ要約。情報源とツールを自分で選べる。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/icon.png" />
+    <link rel="icon" href="./assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f7f7f5;
+        --bg-soft: #ffffff;
+        --ink: #0e1117;
+        --muted: #5c6573;
+        --line: #e4e6ea;
+        --accent: #b6f24a;
+        --accent-ink: #0e1117;
+        --panel: #0e1117;
+        --panel-2: #1b2230;
+        --lime: #b6f24a;
+        --radius: 22px;
+        --max: 1080px;
+        --font-display: "Syne", "Noto Sans JP", system-ui, sans-serif;
+        --font-body: "Noto Sans JP", system-ui, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font-body);
+        color: var(--ink);
+        background: var(--bg);
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .wrap {
+        width: min(100% - 40px, var(--max));
+        margin-inline: auto;
+      }
+
+      /* Nav */
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        backdrop-filter: blur(14px);
+        background: color-mix(in srgb, var(--bg) 86%, transparent);
+        border-bottom: 1px solid transparent;
+      }
+
+      .nav.is-scrolled {
+        border-bottom-color: var(--line);
+      }
+
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 64px;
+        gap: 16px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--font-body);
+        font-weight: 800;
+        font-size: 1.05rem;
+        letter-spacing: -0.01em;
+      }
+
+      .brand img {
+        width: 34px;
+        height: 34px;
+        border-radius: 9px;
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .lang {
+        display: inline-flex;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        overflow: hidden;
+        background: var(--bg-soft);
+      }
+
+      .lang button {
+        border: 0;
+        background: transparent;
+        padding: 8px 12px;
+        font: inherit;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--muted);
+        cursor: pointer;
+        min-height: 36px;
+      }
+
+      .lang button[aria-pressed="true"] {
+        background: var(--ink);
+        color: #fff;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 48px;
+        padding: 0 18px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        font-weight: 700;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: transform 0.15s ease, opacity 0.15s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+
+      .btn-dark {
+        background: var(--ink);
+        color: #fff;
+      }
+
+      .btn-lime {
+        background: var(--accent);
+        color: var(--accent-ink);
+      }
+
+      .btn-ghost {
+        background: transparent;
+        border-color: var(--line);
+        color: var(--ink);
+      }
+
+      /* Hero — Cal AI inspired: centered copy + store CTAs + phone stage */
+      .hero {
+        padding: 36px 0 8px;
+        text-align: center;
+      }
+
+      .proof {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: var(--bg-soft);
+        border: 1px solid var(--line);
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 1.4;
+        color: var(--muted);
+        margin-bottom: 28px;
+        max-width: 100%;
+      }
+
+      .proof-dots {
+        display: flex;
+      }
+
+      .proof-dots span {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin-left: -8px;
+      }
+
+      .proof-dots span:first-child {
+        margin-left: 0;
+        background: #10a37f;
+      }
+      .proof-dots span:nth-child(2) {
+        background: #d97757;
+      }
+      .proof-dots span:nth-child(3) {
+        background: #4285f4;
+      }
+      .proof-dots span:nth-child(4) {
+        background: #b6f24a;
+      }
+
+      .hero h1 {
+        /* 日本語が潰れないよう表示は本文フォント＋余裕のある行間 */
+        font-family: var(--font-body);
+        font-weight: 900;
+        font-size: clamp(1.85rem, 5.2vw, 3.15rem);
+        line-height: 1.28;
+        letter-spacing: -0.01em;
+        margin: 0 auto 22px;
+        max-width: 18em;
+      }
+
+      .hero h1 .line2 {
+        display: block;
+        margin-top: 0.18em;
+        font-weight: 800;
+        font-size: 0.92em;
+        line-height: 1.35;
+        letter-spacing: 0;
+        color: var(--ink);
+      }
+
+      .hero-lead {
+        max-width: 36rem;
+        margin: 0 auto 32px;
+        color: var(--muted);
+        font-size: clamp(1.02rem, 2.2vw, 1.18rem);
+        font-weight: 500;
+        line-height: 1.75;
+      }
+
+      .store-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+
+      .store-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 54px;
+        padding: 8px 16px 8px 14px;
+        border-radius: 12px;
+        background: #000;
+        color: #fff;
+        text-align: left;
+        min-width: 180px;
+      }
+
+      .store-badge small {
+        display: block;
+        font-size: 0.68rem;
+        opacity: 0.8;
+        font-weight: 500;
+      }
+
+      .store-badge strong {
+        display: block;
+        font-size: 1.05rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .store-badge.secondary {
+        background: #fff;
+        color: #000;
+        border: 1px solid var(--line);
+      }
+
+      .phone-stage {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 18px;
+        padding: 10px 0 48px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 820px) {
+        .phone-stage {
+          grid-template-columns: repeat(2, minmax(0, 280px));
+          justify-content: center;
+          gap: 28px;
+        }
+      }
+
+      .phone {
+        width: min(100%, 280px);
+        aspect-ratio: 9 / 19.2;
+        border-radius: 36px;
+        background: var(--panel);
+        border: 3px solid #222833;
+        box-shadow: 0 30px 60px rgba(14, 17, 23, 0.22);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .phone-notch {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 88px;
+        height: 18px;
+        border-radius: 999px;
+        background: #000;
+        z-index: 2;
+      }
+
+      .phone-screen {
+        position: absolute;
+        inset: 0;
+        padding: 42px 14px 18px;
+        background: linear-gradient(180deg, #0e1117 0%, #141a24 100%);
+        color: #f2f3f5;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 14px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: #a9b0bc;
+      }
+
+      .tabs .on {
+        color: var(--lime);
+        border-bottom: 2px solid var(--lime);
+        padding-bottom: 2px;
+      }
+
+      .thumb {
+        height: 88px;
+        border-radius: 14px;
+        border: 1px solid #2e3748;
+        background: #1b2230;
+        margin-bottom: 12px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .thumb::before {
+        content: "";
+        position: absolute;
+        inset: auto -20% -40% 40%;
+        height: 120%;
+        background: radial-gradient(circle, rgba(182, 242, 74, 0.35), transparent 65%);
+      }
+
+      .thumb-label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: var(--lime);
+        color: #0e1117;
+        font-size: 0.62rem;
+        font-weight: 800;
+        padding: 4px 8px;
+        border-radius: 999px;
+      }
+
+      .meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+
+      .meta-icon {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #10a37f;
+        display: grid;
+        place-items: center;
+        font-size: 0.55rem;
+        font-weight: 800;
+      }
+
+      .meta strong {
+        font-size: 0.68rem;
+      }
+
+      .meta span {
+        display: block;
+        font-size: 0.55rem;
+        color: #a9b0bc;
+      }
+
+      .card-title {
+        font-size: 0.78rem;
+        font-weight: 800;
+        line-height: 1.35;
+        margin: 0 0 8px;
+      }
+
+      .card-body {
+        font-size: 0.62rem;
+        line-height: 1.55;
+        color: #b8bec9;
+        margin: 0;
+      }
+
+      .rail {
+        position: absolute;
+        right: 10px;
+        bottom: 64px;
+        display: grid;
+        gap: 10px;
+        text-align: center;
+        font-size: 0.48rem;
+        color: #d7dbe3;
+      }
+
+      .rail i {
+        display: grid;
+        place-items: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid #2e3748;
+        margin-inline: auto;
+        font-style: normal;
+        font-size: 0.7rem;
+      }
+
+      /* Sections */
+      section {
+        padding: 72px 0;
+      }
+
+      .section-head {
+        text-align: center;
+        margin-bottom: 36px;
+      }
+
+      .section-head h2 {
+        font-family: var(--font-body);
+        font-weight: 900;
+        font-size: clamp(1.55rem, 3.6vw, 2.35rem);
+        letter-spacing: -0.01em;
+        margin: 0 0 12px;
+        line-height: 1.3;
+      }
+
+      .section-head p {
+        margin: 0 auto;
+        max-width: 36rem;
+        color: var(--muted);
+      }
+
+      .features {
+        display: grid;
+        gap: 16px;
+      }
+
+      @media (min-width: 800px) {
+        .features {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .feature {
+        background: var(--bg-soft);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 24px;
+        min-height: 100%;
+      }
+
+      .feature-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: #111;
+        color: var(--lime);
+        font-weight: 800;
+        margin-bottom: 16px;
+      }
+
+      .feature h3 {
+        margin: 0 0 8px;
+        font-size: 1.15rem;
+        letter-spacing: -0.02em;
+      }
+
+      .feature p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      /* Why */
+      .why-grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      @media (min-width: 860px) {
+        .why-grid {
+          grid-template-columns: 1.05fr 0.95fr;
+          align-items: center;
+        }
+      }
+
+      .why-copy h2 {
+        font-family: var(--font-body);
+        font-weight: 900;
+        font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+        letter-spacing: -0.01em;
+        margin: 0 0 12px;
+        line-height: 1.3;
+      }
+
+      .why-copy > p {
+        color: var(--muted);
+        margin: 0 0 22px;
+      }
+
+      .why-list {
+        display: grid;
+        gap: 14px;
+      }
+
+      .why-item {
+        background: var(--bg-soft);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 16px 18px;
+      }
+
+      .why-item h3 {
+        margin: 0 0 6px;
+        font-size: 1.02rem;
+      }
+
+      .why-item p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .why-visual {
+        border-radius: 28px;
+        background: var(--panel);
+        min-height: 360px;
+        padding: 28px;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #222;
+      }
+
+      .why-visual::after {
+        content: "";
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        right: -40px;
+        bottom: -40px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(182, 242, 74, 0.35), transparent 70%);
+      }
+
+      .why-visual h3 {
+        font-family: var(--font-display);
+        font-size: 1.6rem;
+        margin: 0 0 10px;
+        letter-spacing: -0.03em;
+        position: relative;
+        z-index: 1;
+      }
+
+      .why-visual p {
+        margin: 0;
+        color: #b8bec9;
+        max-width: 28ch;
+        position: relative;
+        z-index: 1;
+      }
+
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 22px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .chip {
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        background: #1b2230;
+        border: 1px solid #2e3748;
+      }
+
+      .chip.on {
+        background: var(--lime);
+        color: #0e1117;
+        border-color: transparent;
+      }
+
+      /* Audience strip like influencer section */
+      .audience {
+        background: #fff;
+        border-block: 1px solid var(--line);
+      }
+
+      .audience-grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      @media (min-width: 760px) {
+        .audience-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .audience-card {
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 20px;
+        background: var(--bg);
+        min-height: 160px;
+      }
+
+      .audience-card .tag {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 800;
+        color: #0e1117;
+        background: var(--lime);
+        border-radius: 999px;
+        padding: 4px 10px;
+        margin-bottom: 12px;
+      }
+
+      .audience-card p {
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+
+      /* FAQ */
+      .faq {
+        max-width: 720px;
+        margin-inline: auto;
+      }
+
+      details {
+        background: var(--bg-soft);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 4px 16px;
+        margin-bottom: 10px;
+      }
+
+      summary {
+        cursor: pointer;
+        list-style: none;
+        min-height: 56px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details[open] summary {
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 10px;
+      }
+
+      details .answer {
+        color: var(--muted);
+        padding: 0 0 14px;
+        font-size: 0.95rem;
+      }
+
+      /* Bottom CTA */
+      .cta-band {
+        background: var(--panel);
+        color: #fff;
+        text-align: center;
+        padding: 72px 0;
+      }
+
+      .cta-band h2 {
+        font-family: var(--font-body);
+        font-weight: 900;
+        font-size: clamp(1.6rem, 3.8vw, 2.55rem);
+        letter-spacing: -0.01em;
+        margin: 0 0 14px;
+        line-height: 1.3;
+      }
+
+      .cta-band p {
+        margin: 0 auto 24px;
+        max-width: 34rem;
+        color: #a9b0bc;
+      }
+
+      .cta-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+      }
+
+      /* Footer */
+      footer {
+        padding: 36px 0 48px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .footer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px 28px;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 18px;
+      }
+
+      .footer-links a:hover {
+        color: var(--ink);
+      }
+
+      [data-i18n-en] {
+        display: none !important;
+      }
+
+      html[lang="en"] [data-i18n-ja] {
+        display: none !important;
+      }
+
+      html[lang="en"] [data-i18n-en] {
+        display: block !important;
+      }
+
+      html[lang="en"] span[data-i18n-en].inline,
+      html[lang="en"] a[data-i18n-en].inline,
+      html[lang="en"] summary[data-i18n-en] {
+        display: flex !important;
+      }
+
+      /* store badge labels stay stacked */
+      html[lang="en"] .store-badge [data-i18n-en] {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav" id="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top" aria-label="Fast News AI">
+          <img src="./assets/icon.png" alt="" width="34" height="34" />
+          Fast News AI
+        </a>
+        <div class="nav-actions">
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" id="lang-ja" aria-pressed="true">JA</button>
+            <button type="button" id="lang-en" aria-pressed="false">EN</button>
+          </div>
+          <a class="btn btn-dark" href="#download">
+            <span data-i18n-ja>入手する</span>
+            <span data-i18n-en>Get the app</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap">
+          <div class="proof">
+            <div class="proof-dots" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span data-i18n-ja>日英ネイティブ要約 · ログイン不要 · 縦スワイプ</span>
+            <span data-i18n-en>JA+EN native summaries · No login · Vertical swipe</span>
+          </div>
+
+          <h1>
+            <span data-i18n-ja>
+              Meet Fast News AI
+              <span class="line2">AIニュースを、1枚ずつ</span>
+            </span>
+            <span data-i18n-en>
+              Meet Fast News AI
+              <span class="line2">AI news, one card at a time</span>
+            </span>
+          </h1>
+
+          <p class="hero-lead" data-i18n-ja>
+            AI関連のニュースだけを集めて、短い要約で読めます。情報源とツールを自分で選び、保存や興味なしも端末内だけで完結。毎日のキャッチアップを、スワイプ一枚に。
+          </p>
+          <p class="hero-lead" data-i18n-en>
+            Only AI news, in short native summaries. Pick your sources and tools, save or skip on-device, and catch up with one vertical swipe at a time.
+          </p>
+
+          <div class="store-row" id="download">
+            <a class="store-badge" href="#download" aria-disabled="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
+                />
+              </svg>
+              <span>
+                <small data-i18n-ja>Download on the</small>
+                <small data-i18n-en>Download on the</small>
+                <strong data-i18n-ja>App Store · まもなく</strong>
+                <strong data-i18n-en>App Store · Soon</strong>
+              </span>
+            </a>
+            <a class="store-badge secondary" href="#download" aria-disabled="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="#EA4335"
+                  d="M3.6 2.1 13.3 12 3.6 21.9c-.4-.2-.6-.6-.6-1V3.1c0-.4.2-.8.6-1z"
+                />
+                <path
+                  fill="#FBBC04"
+                  d="m13.3 12 2.5-2.5 5.3 3c.7.4.7 1.5 0 1.9l-5.3 3L13.3 12z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M3.6 21.9 13.3 12l2.5 2.5-10.6 6.1c-.6.4-1.4-.1-1.6-.7z"
+                />
+                <path
+                  fill="#4285F4"
+                  d="M3.6 2.1c.2-.6 1-.9 1.6-.5l10.6 6.1L13.3 12 3.6 2.1z"
+                />
+              </svg>
+              <span>
+                <small data-i18n-ja>GET IT ON</small>
+                <small data-i18n-en>GET IT ON</small>
+                <strong data-i18n-ja>Google Play · まもなく</strong>
+                <strong data-i18n-en>Google Play · Soon</strong>
+              </span>
+            </a>
+          </div>
+
+          <div class="phone-stage" aria-hidden="true">
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="tabs">
+                  <span class="on">おすすめ</span><span>ソース別</span><span>ツール別</span>
+                </div>
+                <div class="thumb">
+                  <span class="thumb-label">Claude</span>
+                </div>
+                <div class="meta">
+                  <div class="meta-icon">C</div>
+                  <div>
+                    <strong>Anthropic</strong>
+                    <span>開発 · 2/24</span>
+                  </div>
+                </div>
+                <p class="card-title">
+                  Claude の新機能が個人開発の実装速度をどう変えるか
+                </p>
+                <p class="card-body">
+                  公式アップデートの要点と、ビルダーが今日から試せる使い方を短く整理。
+                </p>
+                <div class="rail">
+                  <div><i>⤓</i>保存</div>
+                  <div><i>↗</i>共有</div>
+                  <div><i>⎋</i>元記事</div>
+                </div>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="tabs">
+                  <span class="on">For You</span><span>Sources</span><span>Tools</span>
+                </div>
+                <div class="thumb" style="background: #12251f">
+                  <span class="thumb-label" style="background: #10a37f; color: #fff"
+                    >ChatGPT</span
+                  >
+                </div>
+                <div class="meta">
+                  <div class="meta-icon">O</div>
+                  <div>
+                    <strong>OpenAI</strong>
+                    <span>Product · 5/24</span>
+                  </div>
+                </div>
+                <p class="card-title">
+                  What builders should know about the latest OpenAI shipping wave
+                </p>
+                <p class="card-body">
+                  A native English brief on the mechanism, limits, and practical takeaway.
+                </p>
+                <div class="rail">
+                  <div><i>⤓</i>Save</div>
+                  <div><i>↗</i>Share</div>
+                  <div><i>⎋</i>Open</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="audience">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 data-i18n-ja>こんな人の毎日に合わせて作っています</h2>
+            <h2 data-i18n-en>Built for people who live in the AI stack</h2>
+            <p data-i18n-ja>
+              タイムラインを漁る代わりに、必要なニュースだけをカードで消化する。
+            </p>
+            <p data-i18n-en>
+              Skip the noisy timeline. Keep only the AI updates that matter on cards.
+            </p>
+          </div>
+          <div class="audience-grid">
+            <article class="audience-card">
+              <span class="tag">Indie</span>
+              <p data-i18n-ja>
+                個人開発者・アプリ制作者。Claude / Cursor / 収益化の動きを短時間で追う。
+              </p>
+              <p data-i18n-en>
+                Indie builders shipping apps. Catch Claude, Cursor, and monetization moves fast.
+              </p>
+            </article>
+            <article class="audience-card">
+              <span class="tag">Creators</span>
+              <p data-i18n-ja>
+                動画・音声・画像生成の新ツールをチェックし、制作フローに落とすクリエイター。
+              </p>
+              <p data-i18n-en>
+                Creators scanning voice, video, and image tools to upgrade production workflows.
+              </p>
+            </article>
+            <article class="audience-card">
+              <span class="tag">Operators</span>
+              <p data-i18n-ja>
+                マーケ・ASO・課金設計など、プロダクト成長に効くAI動向を拾う人。
+              </p>
+              <p data-i18n-en>
+                Operators watching ASO, pricing, and growth tactics shaped by AI products.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head">
+            <h2 data-i18n-ja>Fast News AI に入っているもの</h2>
+            <h2 data-i18n-en>What Fast News AI includes</h2>
+            <p data-i18n-ja>最初の画面で、何ができるかを言い切ります。</p>
+            <p data-i18n-en>Clear product promises up front—what you get on day one.</p>
+          </div>
+          <div class="features">
+            <article class="feature">
+              <div class="feature-icon">1</div>
+              <h3 data-i18n-ja>1枚ずつ縦スワイプ</h3>
+              <h3 data-i18n-en>One-card vertical swipe</h3>
+              <p data-i18n-ja>
+                フィードはページング。見出し・要約・出典を一画面で把握し、次へ進みます。
+              </p>
+              <p data-i18n-en>
+                Paged feed. Title, summary, and source on one screen—then swipe to the next.
+              </p>
+            </article>
+            <article class="feature">
+              <div class="feature-icon">あA</div>
+              <h3 data-i18n-ja>日英ネイティブ要約</h3>
+              <h3 data-i18n-en>Native JA + EN summaries</h3>
+              <p data-i18n-ja>
+                収集時に日本語と英語の要約を同時生成。端末側の機械翻訳には依存しません。
+              </p>
+              <p data-i18n-en>
+                Summaries are authored at ingest time in Japanese and English—no on-device MT.
+              </p>
+            </article>
+            <article class="feature">
+              <div class="feature-icon">絞</div>
+              <h3 data-i18n-ja>ソース × ツール × ジャンル</h3>
+              <h3 data-i18n-en>Sources × tools × genres</h3>
+              <p data-i18n-ja>
+                見たい情報源とツールだけをON。おすすめ／探索は掛け算で絞り込みます。
+              </p>
+              <p data-i18n-en>
+                Turn on the sources and tools you care about. Home and Explore filter by AND.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap why-grid">
+          <div class="why-copy">
+            <h2 data-i18n-ja>なぜ Fast News AI か</h2>
+            <h2 data-i18n-en>Why Fast News AI</h2>
+            <p data-i18n-ja>
+              AIニュース専用。全文は持たず、要約と出典リンクだけを渡す設計です。
+            </p>
+            <p data-i18n-en>
+              AI news only. We store short summaries and source links—not full articles.
+            </p>
+            <div class="why-list">
+              <div class="why-item">
+                <h3 data-i18n-ja>時間を空ける</h3>
+                <h3 data-i18n-en>Free up your time</h3>
+                <p data-i18n-ja>
+                  長文を開く前に、事実・仕組み・ビルダー向けの結論がカードに入っています。
+                </p>
+                <p data-i18n-en>
+                  Before you open the original, you already get facts, mechanism, and a builder takeaway.
+                </p>
+              </div>
+              <div class="why-item">
+                <h3 data-i18n-ja>データを外に出さない</h3>
+                <h3 data-i18n-en>Keep prefs on device</h3>
+                <p data-i18n-ja>
+                  保存・興味なし・選択ソースは端末内のみ。ログインや外部DBはありません。
+                </p>
+                <p data-i18n-en>
+                  Saves, skips, and source picks stay in on-device storage. No login, no user DB.
+                </p>
+              </div>
+              <div class="why-item">
+                <h3 data-i18n-ja>ツールの文脈で読む</h3>
+                <h3 data-i18n-en>Read in tool context</h3>
+                <p data-i18n-ja>
+                  Claude / ChatGPT / Gemini など、追っているツール色でカードが切り替わります。
+                </p>
+                <p data-i18n-en>
+                  Cards shift accent by tool—Claude, ChatGPT, Gemini, and more—so context sticks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="why-visual">
+            <h3 data-i18n-ja>ダークで、読み切る</h3>
+            <h3 data-i18n-en>Dark mode, built to finish</h3>
+            <p data-i18n-ja>
+              夜のキャッチアップ向けの暗いUI。アクセントはライム。視線は常に同じ高さから始まります。
+            </p>
+            <p data-i18n-en>
+              A dark UI for late catch-up. Lime accents. Eye line stays consistent card to card.
+            </p>
+            <div class="chip-row">
+              <span class="chip on">Claude</span>
+              <span class="chip">ChatGPT</span>
+              <span class="chip">Gemini</span>
+              <span class="chip">Cursor</span>
+              <span class="chip">音声</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head">
+            <h2 data-i18n-ja>よくある質問</h2>
+            <h2 data-i18n-en>Frequently asked questions</h2>
+            <p data-i18n-ja>アフィリエイト審査や初回ユーザー向けに、いま聞かれること。</p>
+            <p data-i18n-en>What partners and first users usually ask.</p>
+          </div>
+          <div class="faq">
+            <details open>
+              <summary data-i18n-ja>アプリはどこで入手できますか？</summary>
+              <summary data-i18n-en>Where can I get the app?</summary>
+              <div class="answer" data-i18n-ja>
+                App Store と Google Play
+                への公開を準備中です。公開URLが付き次第、このページのダウンロードボタンを差し替えます。
+              </div>
+              <div class="answer" data-i18n-en>
+                We’re preparing App Store and Google Play listings. Download buttons on this page
+                will update as soon as the public store URLs are live.
+              </div>
+            </details>
+            <details>
+              <summary data-i18n-ja>記事の全文は保存・表示しますか？</summary>
+              <summary data-i18n-en>Do you store or show full articles?</summary>
+              <div class="answer" data-i18n-ja>
+                しません。短い要約、出典名、元記事リンク、OGP画像URLのみです。詳細は元記事へ。
+              </div>
+              <div class="answer" data-i18n-en>
+                No. We only keep short summaries, source name, original URL, and OGP image URL.
+                Open the source for the full piece.
+              </div>
+            </details>
+            <details>
+              <summary data-i18n-ja>ユーザーデータはどこに送られますか？</summary>
+              <summary data-i18n-en>Where does user data go?</summary>
+              <div class="answer" data-i18n-ja>
+                保存済み・興味なし・選択した情報源やツールは端末内（AsyncStorage）のみ。外部送信しません。
+              </div>
+              <div class="answer" data-i18n-en>
+                Saves, skips, and preference picks stay in on-device AsyncStorage. Nothing is
+                uploaded to our servers.
+              </div>
+            </details>
+            <details>
+              <summary data-i18n-ja>スポンサー枠はありますか？</summary>
+              <summary data-i18n-en>Do you show sponsored cards?</summary>
+              <div class="answer" data-i18n-ja>
+                自前のスポンサードカードのみ（AdMobなし）。必ず「広告」表示します（表示OFFはできません）。
+              </div>
+              <div class="answer" data-i18n-en>
+                Only first-party sponsored cards (no AdMob). Always labeled as ads and cannot be
+                turned off.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="wrap">
+          <h2 data-i18n-ja>今日のAIニュースを、<br />スワイプ一枚で</h2>
+          <h2 data-i18n-en>Today’s AI news,<br />one swipe away</h2>
+          <p data-i18n-ja>
+            App Store / Google Play 公開を準備中です。ストアリンクが入り次第、上のボタンから入手できます。
+          </p>
+          <p data-i18n-en>
+            App Store and Google Play listings are in progress. Download buttons above will go live
+            with the store links.
+          </p>
+          <div class="cta-actions">
+            <a class="btn btn-lime" href="#download">
+              <span data-i18n-ja>ストアを見る</span>
+              <span data-i18n-en>See store buttons</span>
+            </a>
+            <a class="btn btn-ghost" href="#top" style="border-color: #2e3748; color: #fff">
+              <span data-i18n-ja>ページ上部へ</span>
+              <span data-i18n-en>Back to top</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom: 8px">
+            <img src="./assets/icon.png" alt="" width="28" height="28" />
+            Fast News AI
+          </div>
+          <div data-i18n-ja>© Fast News AI. AIニュースを、1枚ずつ。</div>
+          <div data-i18n-en>© Fast News AI. AI news, one card at a time.</div>
+        </div>
+        <div class="footer-links">
+          <a href="https://soroa-studio.com/ainews/privacy.html">
+            <span data-i18n-ja class="inline">プライバシー</span>
+            <span data-i18n-en class="inline">Privacy</span>
+          </a>
+          <a href="https://soroa-studio.com/ainews/terms.html">
+            <span data-i18n-ja class="inline">利用規約</span>
+            <span data-i18n-en class="inline">Terms</span>
+          </a>
+          <a href="https://soroa-studio.com/ainews/">
+            <span data-i18n-ja class="inline">サポート</span>
+            <span data-i18n-en class="inline">Support</span>
+          </a>
+          <a href="mailto:support@soroa-studio.com">
+            <span class="inline">support@soroa-studio.com</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var jaBtn = document.getElementById("lang-ja");
+        var enBtn = document.getElementById("lang-en");
+        var nav = document.getElementById("nav");
+
+        function setLang(lang) {
+          root.lang = lang;
+          jaBtn.setAttribute("aria-pressed", lang === "ja" ? "true" : "false");
+          enBtn.setAttribute("aria-pressed", lang === "en" ? "true" : "false");
+          try {
+            localStorage.setItem("fnai-lp-lang", lang);
+          } catch (e) {}
+        }
+
+        jaBtn.addEventListener("click", function () {
+          setLang("ja");
+        });
+        enBtn.addEventListener("click", function () {
+          setLang("en");
+        });
+
+        try {
+          var saved = localStorage.getItem("fnai-lp-lang");
+          if (saved === "en" || saved === "ja") setLang(saved);
+        } catch (e) {}
+
+        window.addEventListener(
+          "scroll",
+          function () {
+            nav.classList.toggle("is-scrolled", window.scrollY > 8);
+          },
+          { passive: true }
+        );
+      })();
+    </script>
+  </body>
+</html>

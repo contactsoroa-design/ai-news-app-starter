@@ -6,6 +6,8 @@ const KEYS = {
   SAVED_IDS: '@ai_news/saved_article_ids',
   SAVED_ARTICLES: '@ai_news/saved_articles_data',
   HIDDEN_IDS: '@ai_news/hidden_article_ids',
+  /** 「完全に消す」後の非表示ID（戻す対象外） */
+  PURGED_IDS: '@ai_news/purged_article_ids',
   USER_PREFS: '@ai_news/user_prefs',
 } as const;
 
@@ -52,6 +54,21 @@ export async function getHiddenArticleIds(): Promise<string[]> {
 export async function setHiddenArticleIds(ids: string[]): Promise<void> {
   const trimmed = ids.slice(-limits.maxHiddenIds);
   await AsyncStorage.setItem(KEYS.HIDDEN_IDS, JSON.stringify(trimmed));
+}
+
+export async function getPurgedArticleIds(): Promise<string[]> {
+  try {
+    const raw = await AsyncStorage.getItem(KEYS.PURGED_IDS);
+    const parsed = raw ? (JSON.parse(raw) as string[]) : [];
+    return parsed.slice(-limits.maxHiddenIds);
+  } catch {
+    return [];
+  }
+}
+
+export async function setPurgedArticleIds(ids: string[]): Promise<void> {
+  const trimmed = ids.slice(-limits.maxHiddenIds);
+  await AsyncStorage.setItem(KEYS.PURGED_IDS, JSON.stringify(trimmed));
 }
 
 export async function getUserPrefs(): Promise<UserPrefs | null> {

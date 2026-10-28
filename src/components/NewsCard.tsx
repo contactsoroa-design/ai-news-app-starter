@@ -112,6 +112,8 @@ type NewsCardProps = {
   relatedSponsor?: {
     name: string;
     iconUrl: string | null;
+    /** 公式アセットなどローカル画像（ネットワーク失敗時より優先） */
+    iconSource?: ImageSourcePropType | null;
     onPress: () => void;
   } | null;
   isSaved: boolean;
@@ -885,14 +887,31 @@ export const NewsCard = memo(function NewsCard({
             accessibilityRole="button"
             accessibilityLabel={t.rail.relatedSponsorAria(relatedSponsor.name)}
           >
-            {relatedSponsor.iconUrl && !sponsorIconFailed ? (
-              <Image
-                source={{ uri: relatedSponsor.iconUrl }}
-                style={styles.railSponsorIcon}
-                contentFit="cover"
-                onError={() => setSponsorIconFailed(true)}
-                accessibilityIgnoresInvertColors
-              />
+            {relatedSponsor.iconSource ||
+            (relatedSponsor.iconUrl && !sponsorIconFailed) ? (
+              <View
+                style={[
+                  styles.railSponsorIconWrap,
+                  // 情報源アイコンと同じ白マット。暗い avatarSurface だと黒シンボルが潰れる
+                  { backgroundColor: '#FFFFFF' },
+                ]}
+              >
+                <Image
+                  source={
+                    relatedSponsor.iconSource ?? {
+                      uri: relatedSponsor.iconUrl as string,
+                    }
+                  }
+                  style={
+                    relatedSponsor.iconSource
+                      ? styles.railSponsorIconLocal
+                      : styles.railSponsorIcon
+                  }
+                  contentFit="contain"
+                  onError={() => setSponsorIconFailed(true)}
+                  accessibilityIgnoresInvertColors
+                />
+              </View>
             ) : (
               <View
                 style={[
@@ -1292,11 +1311,22 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 4,
   },
+  railSponsorIconWrap: {
+    width: 30,
+    height: 30,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
+  },
   railSponsorIcon: {
     width: 30,
     height: 30,
     borderRadius: 8,
-    backgroundColor: uiColors.avatarSurface,
+  },
+  railSponsorIconLocal: {
+    width: 20,
+    height: 20,
   },
   railSponsorFallback: {
     width: 30,

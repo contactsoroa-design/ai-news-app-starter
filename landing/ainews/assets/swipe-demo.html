@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=390, height=844, initial-scale=1" />
+    <title>Swipe demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 390px;
+        height: 844px;
+        overflow: hidden;
+        background: #0e1117;
+        font-family: "Noto Sans JP", system-ui, sans-serif;
+        color: #f4f5f7;
+      }
+      .phone {
+        width: 390px;
+        height: 844px;
+        position: relative;
+        background: #0e1117;
+        overflow: hidden;
+      }
+      .status {
+        height: 54px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 22px 8px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #f4f5f7;
+      }
+      .status__right {
+        display: flex;
+        gap: 6px;
+        opacity: 0.85;
+        font-size: 12px;
+      }
+      .tabs {
+        display: flex;
+        gap: 18px;
+        padding: 6px 20px 10px;
+        font-size: 13px;
+        font-weight: 800;
+        color: #9aa3b2;
+      }
+      .tabs span.active {
+        color: #b6f24a;
+      }
+      .feed {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 96px;
+        bottom: 72px;
+        overflow: hidden;
+      }
+      .track {
+        will-change: transform;
+        transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .card {
+        height: 676px;
+        padding: 8px 16px 16px;
+        display: flex;
+        flex-direction: column;
+      }
+      .thumb {
+        width: 100%;
+        height: 210px;
+        border-radius: 18px;
+        object-fit: cover;
+        background: #1b2230;
+        border: 1px solid #2e3748;
+      }
+      .meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 14px;
+        color: #9aa3b2;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 999px;
+        background: #b6f24a;
+      }
+      .title {
+        margin: 10px 0 0;
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        line-height: 1.35;
+      }
+      .summary {
+        margin: 12px 0 0;
+        color: #c4cad4;
+        font-size: 15px;
+        line-height: 1.65;
+        flex: 1;
+      }
+      .actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 12px;
+      }
+      .btn {
+        flex: 1;
+        min-height: 44px;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        font-size: 13px;
+        font-weight: 800;
+        border: 1px solid #2e3748;
+        background: #1b2230;
+      }
+      .btn.primary {
+        background: #b6f24a;
+        color: #0e1117;
+        border-color: #b6f24a;
+      }
+      .rail {
+        position: absolute;
+        right: 14px;
+        bottom: 110px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        z-index: 2;
+      }
+      .rail__btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 999px;
+        background: rgba(27, 34, 48, 0.92);
+        border: 1px solid #2e3748;
+        display: grid;
+        place-items: center;
+        font-size: 11px;
+        font-weight: 800;
+        color: #f4f5f7;
+      }
+      .hint {
+        position: absolute;
+        left: 50%;
+        bottom: 88px;
+        transform: translateX(-50%);
+        color: #9aa3b2;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 3;
+      }
+      .hint.show {
+        opacity: 1;
+      }
+      .tabbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 72px;
+        border-top: 1px solid #2e3748;
+        background: #0e1117;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 700;
+        color: #9aa3b2;
+      }
+      .tabbar span.on {
+        color: #b6f24a;
+      }
+      .swipe-finger {
+        position: absolute;
+        left: 50%;
+        top: 58%;
+        width: 44px;
+        height: 44px;
+        margin-left: -22px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.22);
+        border: 2px solid rgba(255, 255, 255, 0.55);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        z-index: 4;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone" id="phone">
+      <div class="status">
+        <span>9:41</span>
+        <span class="status__right">LTE · 100%</span>
+      </div>
+      <div class="tabs"><span class="active">ホーム</span><span>探索</span><span>保存</span><span>設定</span></div>
+      <div class="feed">
+        <div class="track" id="track"></div>
+      </div>
+      <div class="rail" aria-hidden="true">
+        <div class="rail__btn">保存</div>
+        <div class="rail__btn">共有</div>
+        <div class="rail__btn">元記事</div>
+      </div>
+      <div class="hint" id="hint">上にスワイプ</div>
+      <div class="swipe-finger" id="finger"></div>
+      <div class="tabbar">
+        <span class="on">ホーム</span><span>探索</span><span>保存</span><span>設定</span>
+      </div>
+    </div>
+    <script>
+      const ARTICLES = [
+        {
+          title: "LangChainが提唱する「Context Engineering」：AIエージェントの長期記憶を効率化",
+          summary:
+            "長期間動作するAIエージェントのコンテキスト溢れに対し、オフロード・要約・スキル・サブエージェント・外部メモリの5戦略でウィンドウをクリーンに保つ設計手法。",
+          source: "LangChain Blog",
+          image:
+            "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ac6d12e05f73fc9690266a8_dark-74%20characters%20max.png",
+          accent: "#B6F24A",
+        },
+        {
+          title: "Appfiguresが解説：アプリストア収益を最大化する上級者向けASO戦略",
+          summary:
+            "キーワード最適化・メタデータABテスト・CVR改善まで。露出だけでなくダウンロードに繋げる具体戦術を公開。",
+          source: "Appfigures",
+          image:
+            "https://resources-cdn.appfigures.com/guides/advanced-aso-tips-secrets/advanced-aso-tips-secrets.png",
+          accent: "#FF6B35",
+        },
+        {
+          title: "マーケティングの「シェア」をハックせよ：バイラルを生む5つの戦術",
+          summary:
+            "Harry Dry氏が共有の心理を分析。自尊心・社会的評価・帰属意識を刺激するフック設計が拡散の鍵。",
+          source: "Marketing Examples",
+          image: "https://s3.amazonaws.com/harrydry/gdmarketing/cards/paul.jpg",
+          accent: "#4285F4",
+        },
+        {
+          title: "AI動画編集「Aivs」登場：生成から編集までを一元化",
+          summary:
+            "スクリプト作成から映像生成・編集まで一気通貫。動画制作の参入障壁を下げるAIスタジオ。",
+          source: "Hacker News",
+          image:
+            "https://yapern.com/images/blog/aivs-the-ai-video-studio/directed-shot-frame.webp",
+          accent: "#38BDF8",
+        },
+      ];
+
+      const track = document.getElementById("track");
+      const hint = document.getElementById("hint");
+      const finger = document.getElementById("finger");
+      const CARD_H = 676;
+
+      track.innerHTML = ARTICLES.map(
+        (a, i) => `
+        <article class="card" data-i="${i}">
+          <img class="thumb" src="${a.image}" alt="" onerror="this.style.background='linear-gradient(135deg,#1b2230,#2e3748)'" />
+          <div class="meta"><span class="dot" style="background:${a.accent}"></span>${a.source} · AIニュース</div>
+          <h1 class="title">${a.title}</h1>
+          <p class="summary">${a.summary}</p>
+          <div class="actions">
+            <div class="btn primary">全文を読む</div>
+            <div class="btn">興味なし</div>
+          </div>
+        </article>`
+      ).join("");
+
+      let index = 0;
+      function go(i) {
+        index = Math.max(0, Math.min(ARTICLES.length - 1, i));
+        track.style.transform = `translateY(${-index * CARD_H}px)`;
+      }
+
+      async function sleep(ms) {
+        return new Promise((r) => setTimeout(r, ms));
+      }
+
+      async function animateFinger() {
+        finger.style.transition = "none";
+        finger.style.opacity = "0";
+        finger.style.transform = "translateY(0)";
+        await sleep(30);
+        finger.style.transition = "opacity 0.2s ease, transform 0.55s cubic-bezier(0.22,1,0.36,1)";
+        finger.style.opacity = "1";
+        await sleep(120);
+        finger.style.transform = "translateY(-140px)";
+        await sleep(560);
+        finger.style.opacity = "0";
+      }
+
+      async function runLoop() {
+        document.documentElement.setAttribute("data-ready", "1");
+        while (true) {
+          go(0);
+          await sleep(900);
+          hint.classList.add("show");
+          await sleep(400);
+          for (let i = 1; i < ARTICLES.length; i++) {
+            hint.classList.remove("show");
+            await animateFinger();
+            go(i);
+            await sleep(1100);
+          }
+          await sleep(700);
+        }
+      }
+
+      // wait fonts/images a bit then start
+      window.addEventListener("load", () => {
+        setTimeout(runLoop, 400);
+      });
+    </script>
+  </body>
+</html>

@@ -42,6 +42,8 @@ const copyJa = {
     openOriginal: '元記事',
     openOriginalAria: '元記事を開く',
     notInterested: '興味なし',
+    relatedSponsor: '製品',
+    relatedSponsorAria: (name: string) => `${name}の広告カードへ移動`,
   },
   card: {
     ogpFallbackLabel: '元記事のサムネイル（OGP画像）',
@@ -74,10 +76,11 @@ const copyJa = {
   },
   saved: {
     title: '保存済み',
-    subtitle: 'この端末に保存したAIニュース（オフラインでも閲覧可能）',
+    subtitle:
+      'この端末に保存したAIニュース。フィードや元記事から消えても、解除するまで端末内に残ります（オフライン可）',
     emptyTitle: '保存した記事はまだありません',
     emptyDescription:
-      'フィード画面の右下にある「保存」ボタンを押すと、この端末内に記事データが保存されます。',
+      'フィード画面の右下にある「保存」を押すと、この端末内に記事データが残ります。フィードから外れても、解除するまで保存済みに残ります。',
     removeLabel: '解除',
     removeAria: '保存を解除',
     backToList: '‹ 保存済み一覧に戻る',
@@ -98,21 +101,28 @@ const copyJa = {
     sourcesSectionLabel: '情報源',
     sourcesCardTitle: 'ソース・ジャンル・ツール',
     regionLocaleLabel: '表示言語（日本語 / 英語のネイティブ要約）',
-    sourceLanguageLabel: '取得するソースの元言語',
-    langJaOnly: '日本語のみ',
-    langEnOnly: '英語のみ',
-    langBoth: '両方（日英どちらも取り込む）',
     displaySectionLabel: '表示オプション',
     showOriginalButtonLabel: '「元記事」ボタンを表示',
     showSponsoredLabel: 'スポンサー枠（常時表示）',
+    hiddenExplainTitle: '「興味なし」について',
+    hiddenExplain:
+      'カード右下の「興味なし」を押すと、その記事だけフィードから非表示になります（この端末のみ）。間違えたときは「戻す」で復元できます。「完全に消す」を押すと戻せなくなり、非表示のままです。',
     hiddenResetLabel: '「興味なし」で非表示にした記事を戻す',
-    hiddenResetButton: 'リセット',
+    hiddenResetButton: '戻す',
+    hiddenPurgeLabel: '非表示を確定する（戻せなくする）',
+    hiddenPurgeButton: '完全に消す',
+    hiddenPurgeConfirmTitle: '完全に消しますか？',
+    hiddenPurgeConfirmMessage:
+      'いま非表示の記事は戻せなくなります。フィードにも再表示されません。',
+    hiddenPurgeConfirmCancel: 'キャンセル',
     privacyNote:
-      '保存済み・興味なし・地域設定はすべてこの端末内にのみ保存され、外部サーバーには送信されません。',
+      '保存済み・興味なし・地域設定はすべてこの端末内にのみ保存され、外部サーバーには送信されません。保存した記事はフィードから外れても、解除するまで端末に残ります。',
     legalSectionLabel: 'サポート・法務',
     openPrivacy: 'プライバシーポリシー',
     openTerms: '利用規約',
-    openSupport: 'サポート・お問い合わせ',
+    /** 問い合わせ・要望・不具合はメール1本に集約 */
+    sendFeedback: 'お問い合わせ・ご要望',
+    sendFeedbackAria: 'メールでお問い合わせ・ご要望・不具合を送る',
     openLegalAria: (label: string) => `${label}をブラウザで開く`,
     toolsPrefix: 'ツール',
     genresPrefix: 'ジャンル',
@@ -154,7 +164,7 @@ const copyJa = {
   },
   emptyFeed: '条件に合うニュースがありません。情報源を編集してください',
   editSourcesButton: '情報源を編集',
-  resetHiddenButton: '非表示をリセット',
+  resetHiddenButton: '非表示を戻す',
   errorNetwork: '通信に失敗しました。接続を確認して再試行してください。',
   retryButton: '再読み込み',
   refreshingFeed: '最新のニュースを取得中…',
@@ -201,6 +211,8 @@ const copyEn: CopyShape = {
     openOriginal: 'Original',
     openOriginalAria: 'Open original article',
     notInterested: 'Not for me',
+    relatedSponsor: 'Product',
+    relatedSponsorAria: (name: string) => `Jump to ${name} sponsored card`,
   },
   card: {
     ogpFallbackLabel: 'Article thumbnail (OGP image)',
@@ -233,10 +245,11 @@ const copyEn: CopyShape = {
   },
   saved: {
     title: 'Saved',
-    subtitle: 'AI news saved on this device (available offline)',
+    subtitle:
+      'AI news saved on this device. Stays here until you remove it—even if it leaves the feed or the original page (works offline)',
     emptyTitle: 'No saved articles yet',
     emptyDescription:
-      'Tap Save on the lower right of the feed to keep an article on this device.',
+      'Tap Save on the lower right of the feed to keep an article on this device. It remains in Saved after it drops off the feed, until you remove it.',
     removeLabel: 'Remove',
     removeAria: 'Remove from saved',
     backToList: '‹ Back to saved list',
@@ -257,21 +270,28 @@ const copyEn: CopyShape = {
     sourcesSectionLabel: 'Sources',
     sourcesCardTitle: 'Sources, genres, and tools',
     regionLocaleLabel: 'Display language (JA / EN native summaries)',
-    sourceLanguageLabel: 'Source languages to include',
-    langJaOnly: 'Japanese only',
-    langEnOnly: 'English only',
-    langBoth: 'Both (Japanese and English)',
     displaySectionLabel: 'Display options',
     showOriginalButtonLabel: 'Show “Original” button',
     showSponsoredLabel: 'Sponsor cards (always on)',
+    hiddenExplainTitle: 'About “Not for me”',
+    hiddenExplain:
+      'Tap “Not for me” on the lower-right of a card to hide that story from your feed on this device. Use Restore if you hid something by mistake. Hide permanently makes the change irreversible.',
     hiddenResetLabel: 'Restore articles marked “Not for me”',
-    hiddenResetButton: 'Reset',
+    hiddenResetButton: 'Restore',
+    hiddenPurgeLabel: 'Make hidden permanent',
+    hiddenPurgeButton: 'Hide permanently',
+    hiddenPurgeConfirmTitle: 'Hide permanently?',
+    hiddenPurgeConfirmMessage:
+      'Hidden stories cannot be restored and will stay out of your feed.',
+    hiddenPurgeConfirmCancel: 'Cancel',
     privacyNote:
-      'Saved items, hidden articles, and region settings stay on this device only and are never sent to a server.',
+      'Saved items, hidden articles, and region settings stay on this device only and are never sent to a server. Saved articles remain after they leave the feed, until you remove them.',
     legalSectionLabel: 'Support & legal',
     openPrivacy: 'Privacy Policy',
     openTerms: 'Terms of Use',
-    openSupport: 'Support & contact',
+    /** Single mailto for contact / requests / bugs */
+    sendFeedback: 'Contact & feedback',
+    sendFeedbackAria: 'Email support with questions, requests, or bugs',
     openLegalAria: (label: string) => `Open ${label} in browser`,
     toolsPrefix: 'Tools',
     genresPrefix: 'Genres',
@@ -310,7 +330,7 @@ const copyEn: CopyShape = {
   },
   emptyFeed: 'No news matches your filters. Edit your sources.',
   editSourcesButton: 'Edit sources',
-  resetHiddenButton: 'Reset hidden',
+  resetHiddenButton: 'Restore hidden',
   errorNetwork: 'Couldn’t load the feed. Check your connection and try again.',
   retryButton: 'Reload',
   refreshingFeed: 'Fetching the latest news…',
@@ -460,5 +480,38 @@ export const legalUrls = {
   support: 'https://soroa-studio.com/ainews/',
   privacy: 'https://soroa-studio.com/ainews/privacy.html',
   terms: 'https://soroa-studio.com/ainews/terms.html',
+  mediaKit: 'https://soroa-studio.com/ainews/media-kit.html',
   contactEmail: 'support@soroa-studio.com',
 } as const;
+
+/** 設定の要望インボックス（計測SDKなし。mailto のみ） */
+export function feedbackMailto(locale: AppLocale): string {
+  const isEn = locale === 'en';
+  const subject = isEn
+    ? '[Fast News AI] Feedback'
+    : '[Fast News AI] Feedback';
+  const body = isEn
+    ? [
+        'Thanks for helping improve Fast News AI.',
+        '',
+        'Type (pick one): bug / free-fix / plus-candidate / other',
+        'Device / OS:',
+        'What happened or what you want:',
+        '',
+        '(We tag plus-candidate weekly. Core swipe reading stays free.)',
+        '',
+      ].join('\n')
+    : [
+        'Fast News AI へのご意見ありがとうございます。',
+        '',
+        '種別（どれか残す）: bug / free-fix / plus-candidate / other',
+        '端末・OS:',
+        '内容:',
+        '',
+        '（plus-candidate は週次でタグ付けします。スワイプで読む体験は無料のままです）',
+        '',
+      ].join('\n');
+  return `mailto:${legalUrls.contactEmail}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
+}

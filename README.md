@@ -11,7 +11,8 @@ AI関連のニュースだけを、1枚ずつ縦スワイプで読めるモバ�
 - `scripts/` … 記事収集・要約・シード生成スクリプト
 - `data/` … サンプル記事（`seed_articles.json`）、初期ソース（`sources.seed.json`）、およびアプリが読み込む生成済みデータ（`articles.json`, `sources.json`）
 - `docs/` … 仕様（`SPEC.md`）・デザイン（`DESIGN.md`）・App Store提出（`ストア提出チェックリスト.md` ほか）
-- `landing/ainews/` … Support / Privacy / Terms（独自ドメイン `soroa-studio.com/ainews/` へデプロイ）
+- `landing/ainews/` … Support / Privacy / Terms / Media kit / 告知登録（独自ドメイン `soroa-studio.com/ainews/` へデプロイ）
+- 収益・ローンチ運用: `docs/ソフトローンチ手順.md` · `docs/スポンサー候補リスト.md` · `docs/アフィリエイト運用ルール.md` · `docs/週次KPI.md`
 
 ---
 

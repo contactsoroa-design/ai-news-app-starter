@@ -33,16 +33,23 @@ if [[ -z "${PROJECT_ID}" ]]; then
   exit 1
 fi
 
+ASC_APP_ID="$(node -e "const c=require('./eas.json'); console.log(c.submit?.production?.ios?.ascAppId||'')")"
+
 echo "=== AIニュース iOS → TestFlight 提出 ==="
-echo "  app:     AIニュース"
+echo "  app:     Fast News AI / AIニュース"
 echo "  bundle:  ${BUNDLE}"
 echo "  project: ${PROJECT_ID}"
+echo "  ascApp:  ${ASC_APP_ID:-'(未設定)'}"
 echo "  version: ${VER}"
+echo ""
+echo "※ 初回は Apple アカウントログインが必要です（対話モード）"
+echo "  「Do you want to log in to your Apple account?」→ Y"
 
 "${EAS[@]}" whoami
 
-echo "1) EAS iOS production ビルドを開始します..."
-"${EAS[@]}" build --platform ios --profile production --non-interactive
+echo "1) EAS iOS production ビルドを開始します（対話・証明書セットアップ可）..."
+# 新規 Bundle では --non-interactive だと credentials 未設定で落ちる
+"${EAS[@]}" build --platform ios --profile production
 
 BUILD_ID="$("${EAS[@]}" build:list --platform ios --limit 1 --non-interactive --json 2>/dev/null | node -e "let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{const s=d.indexOf('[');const j=JSON.parse(s>=0?d.slice(s):d);console.log(j[0]?.id||'')})")"
 if [[ -z "${BUILD_ID}" ]]; then
@@ -51,18 +58,24 @@ if [[ -z "${BUILD_ID}" ]]; then
 fi
 echo "BUILD_ID=${BUILD_ID}"
 
+ASC_APP_ID="${ASC_APP_ID:-6826796016}"
 echo "2) App Store Connect (TestFlight) へ提出します..."
-echo "   ※ 初回は App Store Connect に com.soroa.ainews の新規アプリが必要です"
+echo "  ASC App ID: ${ASC_APP_ID}（eas.json submit.production.ios.ascAppId）"
+echo "  ※ API Key は既存のものを選んでOK（アプリ番号とは別物）"
 set +e
-"${EAS[@]}" submit --platform ios --id "${BUILD_ID}" --profile production --non-interactive --verbose
+# ascAppId は eas.json の submit プロファイルで指定
+"${EAS[@]}" submit --platform ios --id "${BUILD_ID}" --profile production \
+  --non-interactive --wait --verbose
 SUBMIT_RC=$?
 set -e
 
-LIST="$("${EAS[@]}" submit:list --platform ios --limit 3 --non-interactive 2>&1 || true)"
+LIST="$("${EAS[@]}" submit:list --platform ios --limit 3 2>&1 || true)"
 echo "$LIST"
 
 if [[ "$SUBMIT_RC" -ne 0 ]]; then
   echo "ERROR: submit failed (rc=$SUBMIT_RC)"
+  echo "ビルド自体は成功している場合があります。再提出だけなら:"
+  echo "  eas submit --platform ios --id ${BUILD_ID} --profile production"
   exit 1
 fi
 

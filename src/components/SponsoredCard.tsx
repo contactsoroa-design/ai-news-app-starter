@@ -5,17 +5,29 @@ import { getCopy } from '../lib/config';
 import { localizeSponsoredItem } from '../lib/sponsored';
 import type { AppLocale, Article, SponsoredItem } from '../lib/types';
 
-/** ElevenLabs 公式ブランドキット由来（https://elevenlabs.io/brand ）。ロゴ／シンボルは未加工 */
-const ELEVENLABS_MEDIA = {
-  thumbnail: require('../../assets/sponsors/elevenlabs-og.jpg') as ImageSourcePropType,
-  icon: require('../../assets/sponsors/elevenlabs-symbol.png') as ImageSourcePropType,
-};
+/** アイコンのみ公式シンボル（未加工・黒）。白マットに載せる。サムネはパターン別に差し替え */
+const ELEVENLABS_ICON = require('../../assets/sponsors/elevenlabs-symbol.png') as ImageSourcePropType;
 
 const SPONSOR_MEDIA: Record<
   string,
   { thumbnail: ImageSourcePropType; icon: ImageSourcePropType }
 > = {
-  'sponsor-elevenlabs-1': ELEVENLABS_MEDIA,
+  'sponsor-elevenlabs-1': {
+    thumbnail: require('../../assets/sponsors/elevenlabs-1-api.jpg') as ImageSourcePropType,
+    icon: ELEVENLABS_ICON,
+  },
+  'sponsor-elevenlabs-2': {
+    thumbnail: require('../../assets/sponsors/elevenlabs-2-agents.jpg') as ImageSourcePropType,
+    icon: ELEVENLABS_ICON,
+  },
+  'sponsor-elevenlabs-3': {
+    thumbnail: require('../../assets/sponsors/elevenlabs-3-creative.jpg') as ImageSourcePropType,
+    icon: ELEVENLABS_ICON,
+  },
+  'sponsor-elevenlabs-4': {
+    thumbnail: require('../../assets/sponsors/elevenlabs-4-everyday.jpg') as ImageSourcePropType,
+    icon: ELEVENLABS_ICON,
+  },
 };
 
 type SponsoredCardProps = {
@@ -93,9 +105,7 @@ export const SponsoredCard = memo(function SponsoredCard({
       }
       iconSource={
         media?.icon ??
-        (item.tool_tag === 'ElevenLabs'
-          ? ELEVENLABS_MEDIA.icon
-          : null)
+        (item.tool_tag === 'ElevenLabs' ? ELEVENLABS_ICON : null)
       }
       showNotInterested={false}
       isSaved={false}

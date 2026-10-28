@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "AIニュース",
+    "name": "Fast News AI",
     "slug": "ai-news-app",
     "owner": "soroa",
     "version": "1.0.0",
@@ -13,13 +13,17 @@
       "resizeMode": "contain",
       "backgroundColor": "#0E1117"
     },
+    "locales": {
+      "ja": "./locales/ja.json",
+      "en": "./locales/en.json"
+    },
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.soroa.ainews",
-      "buildNumber": "2",
+      "buildNumber": "6",
       "infoPlist": {
-        "CFBundleDisplayName": "AIニュース",
-        "CFBundleName": "AIニュース",
+        "CFBundleDisplayName": "Fast News AI",
+        "CFBundleName": "Fast News AI",
         "ITSAppUsesNonExemptEncryption": false,
         "CFBundleDevelopmentRegion": "ja"
       },
@@ -52,6 +56,9 @@
       "eas": {
         "projectId": "ecab0037-bf75-471c-99fe-2c7c9c845814"
       }
-    }
+    },
+    "plugins": [
+      "expo-image"
+    ]
   }
 }

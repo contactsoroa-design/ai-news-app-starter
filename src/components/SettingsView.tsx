@@ -1,14 +1,27 @@
 import React, { useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import {
+  Alert,
+  Linking,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
+import { Image } from 'expo-image';
 import Svg, { Circle, Path, Rect } from 'react-native-svg';
 import {
+  feedbackMailto,
   getCopy,
   getGenreLabel,
   getSourceCategoryLabel,
+  getSourceDisplayName,
+  getSourceKindLabel,
+  legalUrls,
   regionLocales,
 } from '../lib/config';
 import { getFaviconUrl } from '../lib/feed';
-import type { AppLocale, Source, SourceLanguageFilter, UserPrefs } from '../lib/types';
+import type { AppLocale, Source, UserPrefs } from '../lib/types';
 import {
   genres as allGenres,
   size,
@@ -259,11 +272,15 @@ export function SiteFaviconBadge({
       >
         <Image
           source={{ uri: faviconUrl }}
+          recyclingKey={faviconUrl}
           style={{
             width: Math.round(sizePx * 0.76),
             height: Math.round(sizePx * 0.76),
             borderRadius: 3,
           }}
+          contentFit="contain"
+          cachePolicy="memory-disk"
+          transition={0}
           onError={() => setFailed(true)}
         />
       </View>
@@ -304,6 +321,7 @@ type SettingsViewProps = {
     next: UserPrefs | ((prev: UserPrefs) => UserPrefs)
   ) => void;
   onResetHidden: () => void;
+  onPurgeHidden: () => void;
   onStartSwiping: () => void;
 };
 
@@ -315,6 +333,7 @@ export function SettingsView({
   initialSubScreen = 'root',
   onUpdatePrefs,
   onResetHidden,
+  onPurgeHidden,
   onStartSwiping,
 }: SettingsViewProps) {
   const locale = prefs.region_locale;
@@ -403,14 +422,6 @@ export function SettingsView({
     }));
   };
 
-  const setSourceLanguage = (lang: SourceLanguageFilter) => {
-    onUpdatePrefs((prev) => ({
-      ...prev,
-      source_language: lang,
-      updated_at: new Date().toISOString(),
-    }));
-  };
-
   const setRegionLocale = (locale: AppLocale) => {
     // ja / en のみ（旧 ko/es 設定は呼び出し側で正規化済み）
     onUpdatePrefs((prev) => ({
@@ -424,14 +435,6 @@ export function SettingsView({
     onUpdatePrefs((prev) => ({
       ...prev,
       show_original_button: !prev.show_original_button,
-      updated_at: new Date().toISOString(),
-    }));
-  };
-
-  const toggleShowSponsored = () => {
-    onUpdatePrefs((prev) => ({
-      ...prev,
-      show_sponsored: !prev.show_sponsored,
       updated_at: new Date().toISOString(),
     }));
   };
@@ -705,14 +708,15 @@ export function SettingsView({
 
                   {catSources.map((src) => {
                     const enabled = prefs.enabled_source_ids.includes(src.id);
-                    const initial = src.name.slice(0, 2).toUpperCase();
+                    const displayName = getSourceDisplayName(src.name, locale);
+                    const initial = displayName.slice(0, 2).toUpperCase();
                     return (
                       <Pressable
                         key={src.id}
                         style={styles.sourceRow}
                         onPress={() => toggleSource(src.id)}
                         accessibilityRole="switch"
-                        accessibilityLabel={src.name}
+                        accessibilityLabel={displayName}
                         accessibilityState={{ checked: enabled }}
                       >
                         <SiteFaviconBadge
@@ -723,9 +727,11 @@ export function SettingsView({
                           sizePx={size.manageIcon}
                         />
                         <View style={styles.sourceInfo}>
-                          <Text style={styles.sourceRowName}>{src.name}</Text>
+                          <Text style={styles.sourceRowName}>{displayName}</Text>
                           <Text style={styles.sourceRowKind}>
-                            {src.kind || src.site_url}
+                            {src.kind
+                              ? getSourceKindLabel(src.kind, locale)
+                              : src.site_url}
                           </Text>
                         </View>
                         <View style={styles.switchHitArea}>
@@ -947,44 +953,6 @@ export function SettingsView({
         })}
       </View>
 
-      {/* ソースの言語 */}
-      <Text style={[styles.sectionLabel, styles.sectionSpacing]}>
-        {t.settings.sourceLanguageLabel}
-      </Text>
-      <View style={styles.chipWrap}>
-        {(
-          [
-            { key: 'ja', label: t.settings.langJaOnly },
-            { key: 'en', label: t.settings.langEnOnly },
-            { key: 'both', label: t.settings.langBoth },
-          ] as const
-        ).map((opt) => {
-          const selected = prefs.source_language === opt.key;
-          return (
-            <Pressable
-              key={opt.key}
-              style={[
-                styles.filterChip,
-                selected ? styles.filterChipSelected : styles.filterChipUnselected,
-              ]}
-              onPress={() => setSourceLanguage(opt.key)}
-              accessibilityRole="button"
-              accessibilityLabel={opt.label}
-              accessibilityState={{ selected }}
-            >
-              <Text
-                style={[
-                  styles.filterChipText,
-                  selected && styles.filterChipTextSelected,
-                ]}
-              >
-                {opt.label}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </View>
-
       {/* 表示オプション */}
       <Text style={[styles.sectionLabel, styles.sectionSpacing]}>
         {t.settings.displaySectionLabel}
@@ -1022,62 +990,103 @@ export function SettingsView({
         </Pressable>
       </View>
 
-      <View style={styles.settingRow}>
-        <Text style={styles.settingRowLabel}>
-          {t.settings.showSponsoredLabel}
-        </Text>
-        <Pressable
-          style={styles.switchHitArea}
-          onPress={toggleShowSponsored}
-          accessibilityRole="switch"
-          accessibilityLabel={t.settings.showSponsoredLabel}
-          accessibilityState={{ checked: prefs.show_sponsored }}
-        >
-          <View
-            style={[
-              styles.switchTrack,
-              {
-                backgroundColor: prefs.show_sponsored
-                  ? themes.neutral.accent
-                  : themes.neutral.line,
-              },
-            ]}
-          >
-            <View
-              style={[
-                styles.switchThumb,
-                prefs.show_sponsored
-                  ? styles.switchThumbOn
-                  : styles.switchThumbOff,
-              ]}
-            />
-          </View>
-        </Pressable>
+      <View style={styles.privacyBox}>
+        <Text style={styles.explainTitle}>{t.settings.hiddenExplainTitle}</Text>
+        <Text style={styles.privacyText}>{t.settings.hiddenExplain}</Text>
       </View>
 
       {hiddenCount > 0 ? (
-        <View style={styles.settingRow}>
-          <Text style={styles.settingRowLabel}>
-            {`${t.settings.hiddenResetLabel}${t.settings.hiddenCountSuffix(
-              hiddenCount
-            )}`}
-          </Text>
-          <Pressable
-            style={styles.resetButton}
-            onPress={onResetHidden}
-            accessibilityRole="button"
-            accessibilityLabel={t.settings.hiddenResetButton}
-          >
-            <Text style={styles.resetButtonText}>
-              {t.settings.hiddenResetButton}
+        <>
+          <View style={styles.settingRow}>
+            <Text style={styles.settingRowLabel}>
+              {`${t.settings.hiddenResetLabel}${t.settings.hiddenCountSuffix(
+                hiddenCount
+              )}`}
             </Text>
-          </Pressable>
-        </View>
+            <Pressable
+              style={styles.resetButton}
+              onPress={onResetHidden}
+              accessibilityRole="button"
+              accessibilityLabel={t.settings.hiddenResetButton}
+            >
+              <Text style={styles.resetButtonText}>
+                {t.settings.hiddenResetButton}
+              </Text>
+            </Pressable>
+          </View>
+          <View style={styles.settingRow}>
+            <Text style={styles.settingRowLabel}>
+              {`${t.settings.hiddenPurgeLabel}${t.settings.hiddenCountSuffix(
+                hiddenCount
+              )}`}
+            </Text>
+            <Pressable
+              style={styles.resetButton}
+              onPress={() => {
+                Alert.alert(
+                  t.settings.hiddenPurgeConfirmTitle,
+                  t.settings.hiddenPurgeConfirmMessage,
+                  [
+                    {
+                      text: t.settings.hiddenPurgeConfirmCancel,
+                      style: 'cancel',
+                    },
+                    {
+                      text: t.settings.hiddenPurgeButton,
+                      style: 'destructive',
+                      onPress: onPurgeHidden,
+                    },
+                  ]
+                );
+              }}
+              accessibilityRole="button"
+              accessibilityLabel={t.settings.hiddenPurgeButton}
+            >
+              <Text style={styles.resetButtonText}>
+                {t.settings.hiddenPurgeButton}
+              </Text>
+            </Pressable>
+          </View>
+        </>
       ) : null}
 
       <View style={styles.privacyBox}>
         <Text style={styles.privacyText}>{t.settings.privacyNote}</Text>
       </View>
+
+      <Text style={[styles.sectionLabel, styles.sectionSpacing]}>
+        {t.settings.legalSectionLabel}
+      </Text>
+      <Pressable
+        style={styles.legalLinkRow}
+        onPress={() => {
+          void Linking.openURL(feedbackMailto(locale));
+        }}
+        accessibilityRole="button"
+        accessibilityLabel={t.settings.sendFeedbackAria}
+      >
+        <Text style={styles.legalLinkText}>{t.settings.sendFeedback}</Text>
+        <Text style={styles.legalLinkChevron}>›</Text>
+      </Pressable>
+      {(
+        [
+          { label: t.settings.openPrivacy, url: legalUrls.privacy },
+          { label: t.settings.openTerms, url: legalUrls.terms },
+        ] as const
+      ).map((item) => (
+        <Pressable
+          key={item.url}
+          style={styles.legalLinkRow}
+          onPress={() => {
+            void Linking.openURL(item.url);
+          }}
+          accessibilityRole="link"
+          accessibilityLabel={t.settings.openLegalAria(item.label)}
+        >
+          <Text style={styles.legalLinkText}>{item.label}</Text>
+          <Text style={styles.legalLinkChevron}>›</Text>
+        </Pressable>
+      ))}
     </ScrollView>
   );
 }
@@ -1509,6 +1518,31 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: '700',
   },
+  legalLinkRow: {
+    marginTop: 8,
+    minHeight: size.minTap,
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: themes.neutral.line,
+    backgroundColor: uiColors.cardSurface,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 12,
+  },
+  legalLinkText: {
+    flex: 1,
+    color: text.primary,
+    fontSize: 15,
+    fontWeight: '700',
+  },
+  legalLinkChevron: {
+    color: text.muted,
+    fontSize: 20,
+    fontWeight: '600',
+  },
   privacyBox: {
     marginTop: 24,
     padding: 14,
@@ -1516,6 +1550,12 @@ const styles = StyleSheet.create({
     backgroundColor: uiColors.cardSurface,
     borderWidth: 1,
     borderColor: uiColors.cardBorder,
+  },
+  explainTitle: {
+    color: text.primary,
+    fontSize: 13,
+    fontWeight: '800',
+    marginBottom: 6,
   },
   privacyText: {
     color: text.muted,

@@ -119,6 +119,64 @@ const SITEMAP_FEED_FALLBACKS: Record<string, SitemapFeedFallback> = {
   },
 };
 
+/**
+ * 公式ブログのカテゴリ一覧HTMLから記事URL＋日付を取る（Webflow等でRSSが弱いソース向け）。
+ * Noticeable RSS（製品Updates）と併用し、新しい会社ブログも取りこぼさない。
+ */
+type ListingFeedFallback = {
+  listingUrl: string;
+  origin: string;
+};
+
+const LISTING_FEED_FALLBACKS: Record<string, ListingFeedFallback> = {
+  'source-synthesia': {
+    listingUrl: 'https://www.synthesia.io/blog/category/synthesia',
+    origin: 'https://www.synthesia.io',
+  },
+};
+
+function parseEnglishMonthDayYear(raw: string): string | null {
+  const ms = Date.parse(raw);
+  if (!Number.isFinite(ms)) return null;
+  return new Date(ms).toISOString();
+}
+
+async function itemsFromListingFallback(
+  sourceId: string
+): Promise<RawFeedItem[] | null> {
+  const conf = LISTING_FEED_FALLBACKS[sourceId];
+  if (!conf) return null;
+  const fetched = await fetchText(conf.listingUrl, RSS_FETCH_TIMEOUT_MS);
+  if (!fetched.ok) {
+    console.warn(`  ! listing失敗: [${sourceId}] ${fetched.error}`);
+    return null;
+  }
+  const items: RawFeedItem[] = [];
+  const seen = new Set<string>();
+  const cardRe =
+    /href="(\/post\/[^"]+)"[^>]*>[\s\S]*?paragraph-xlarge[^>]*>([^<]+)<[\s\S]*?text-color-tertiary">([A-Za-z]+ \d{1,2}, 202\d)</g;
+  for (const m of fetched.text.matchAll(cardRe)) {
+    const path = m[1];
+    const title = m[2].replace(/&#x27;/g, "'").replace(/&amp;/g, '&').trim();
+    const pubDate = parseEnglishMonthDayYear(m[3]);
+    const link = `${conf.origin}${path}`;
+    if (seen.has(link)) continue;
+    seen.add(link);
+    items.push({
+      title: title || titleFromUrlSlug(link),
+      link,
+      pubDate,
+      snippet: '',
+    });
+  }
+  items.sort((a, b) => {
+    const ta = a.pubDate ? Date.parse(a.pubDate) : 0;
+    const tb = b.pubDate ? Date.parse(b.pubDate) : 0;
+    return tb - ta;
+  });
+  return items.slice(0, RSS_ITEMS_PER_SOURCE);
+}
+
 function titleFromUrlSlug(url: string): string {
   try {
     const slug = new URL(url).pathname.split('/').filter(Boolean).pop() ?? url;
@@ -422,7 +480,7 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-elevenlabs': 'ElevenLabs',
   'source-koala-ai': 'Koala AI',
   'source-copyai': 'Copy.ai',
-  'source-midjourney': 'Midjourney',
+  'source-synthesia': 'Synthesia',
   'source-notion': 'Notion',
 };
 
@@ -1061,6 +1119,25 @@ async function main() {
             `  ~ RSS不可のため sitemap フォールバック: [${source.name}]`
           );
           feedItems = fallback;
+          lastErr = null;
+        }
+      }
+
+      // ブログ一覧フォールバック（Synthesia 等）。RSSとマージして新しい公式記事も拾う
+      const listing = await itemsFromListingFallback(source.id);
+      if (listing && listing.length > 0) {
+        const seen = new Set(feedItems.map((i) => i.link));
+        let added = 0;
+        for (const item of listing) {
+          if (seen.has(item.link)) continue;
+          feedItems.push(item);
+          seen.add(item.link);
+          added += 1;
+        }
+        if (added > 0) {
+          console.warn(
+            `  ~ listing併用: [${source.name}] +${added}件（公式ブログ）`
+          );
           lastErr = null;
         }
       }

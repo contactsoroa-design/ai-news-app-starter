@@ -1,7 +1,7 @@
 import React, { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   FlatList,
-  Image,
+  Linking,
   Pressable,
   StyleSheet,
   Text,
@@ -10,25 +10,55 @@ import {
   type LayoutChangeEvent,
   type ViewToken,
 } from 'react-native';
+import { Image } from 'expo-image';
 import Svg, { Circle, Path } from 'react-native-svg';
-import { getCopy, getGenreLabel } from '../lib/config';
-import { formatShortDate, getVerifiedArticleTool } from '../lib/feed';
-import type { AppLocale, Article } from '../lib/types';
+import { getCopy, getGenreLabel, getSourceDisplayName, limits } from '../lib/config';
+import {
+  formatShortDate,
+  getFaviconUrl,
+  getVerifiedArticleTool,
+} from '../lib/feed';
+import {
+  filterSponsoredForContext,
+  findNearestSponsoredIndex,
+  interleaveSponsoredCards,
+  isSponsoredItem,
+  pickRelatedSponsored,
+} from '../lib/sponsored';
+import type {
+  AppLocale,
+  Article,
+  FeedCardItem,
+  SponsoredItem,
+  UserPrefs,
+} from '../lib/types';
 import {
   getThemeForArticle,
   size,
   text,
   themes,
   toolBadgeColors,
+  toolSiteUrls,
   uiColors,
 } from '../theme/tokens';
 import { EmptyState } from './EmptyState';
 import { NewsCard } from './NewsCard';
+import { SponsoredCard } from './SponsoredCard';
+
+const RELATED_SPONSOR_LOCAL_ICON: Record<
+  string,
+  ReturnType<typeof require>
+> = {
+  ElevenLabs: require('../../assets/sponsors/elevenlabs-symbol.png'),
+};
 
 type ExploreViewProps = {
   articles: Article[];
   savedIds: string[];
   showOriginalButton?: boolean;
+  sponsoredItems?: SponsoredItem[];
+  prefsTools?: UserPrefs['tools'];
+  enabledSourceIds?: ReadonlySet<string>;
   onToggleSave: (articleId: string) => void;
   onHideArticle: (articleId: string) => void;
   onOpenSaved: () => void;
@@ -62,8 +92,9 @@ const ExploreGridCell = memo(function ExploreGridCell({
   const primaryGenreLabel = primaryGenre
     ? getGenreLabel(primaryGenre, locale)
     : '';
+  const displaySourceName = getSourceDisplayName(article.source_name, locale);
   const sourceShortLabel =
-    article.source_name.split(/[（(]/)[0]?.trim() || article.source_name;
+    displaySourceName.split(/[（(]/)[0]?.trim() || displaySourceName;
   const badgeText =
     primaryTool || sourceShortLabel || primaryGenreLabel || t.explore.defaultTag;
   const dateStr = formatShortDate(article.published_at, locale);
@@ -103,15 +134,17 @@ const ExploreGridCell = memo(function ExploreGridCell({
           {showImage && article.og_image_url ? (
             <>
               <Image
-                key={article.og_image_url}
+                recyclingKey={`explore-${article.id}`}
                 source={{ uri: article.og_image_url }}
                 style={styles.thumbImage}
-                resizeMode="cover"
+                contentFit="cover"
+                cachePolicy="memory-disk"
+                transition={0}
                 onError={() => setImgFailed(true)}
               />
               <View style={styles.imageBottomGradient}>
                 <Text style={styles.imageSourceText} numberOfLines={1}>
-                  {article.source_name}
+                  {displaySourceName}
                 </Text>
               </View>
             </>
@@ -164,7 +197,7 @@ const ExploreGridCell = memo(function ExploreGridCell({
                     ]}
                   />
                   <Text style={styles.customThumbSource} numberOfLines={1}>
-                    {article.source_name}
+                    {displaySourceName}
                   </Text>
                 </View>
               </View>
@@ -186,7 +219,7 @@ const ExploreGridCell = memo(function ExploreGridCell({
             {article.title_ja}
           </Text>
           <Text style={styles.gridMeta} numberOfLines={1}>
-            {[dateStr, article.source_name]
+            {[dateStr, displaySourceName]
               .filter(Boolean)
               .join(locale === 'en' ? ' · ' : ' ・ ')}
           </Text>
@@ -200,6 +233,9 @@ export function ExploreView({
   articles,
   savedIds,
   showOriginalButton = true,
+  sponsoredItems = [],
+  prefsTools = [],
+  enabledSourceIds,
   onToggleSave,
   onHideArticle,
   onOpenSaved,
@@ -213,7 +249,7 @@ export function ExploreView({
   );
   const [feedHeight, setFeedHeight] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardListRef = useRef<FlatList<Article>>(null);
+  const cardListRef = useRef<FlatList<FeedCardItem>>(null);
 
   const indexedArticles = useMemo(
     () =>
@@ -241,8 +277,32 @@ export function ExploreView({
       .map((entry) => entry.article);
   }, [articles, indexedArticles, query]);
 
+  /** 探索のカード閲覧でもホーム同様に広告を差し込む */
+  const exploreFeedCards = useMemo((): FeedCardItem[] => {
+    if (sponsoredItems.length === 0) return filteredArticles;
+    const matched = filterSponsoredForContext(sponsoredItems, {
+      mode: 'recommended',
+      prefsTools,
+      enabledSourceIds,
+    });
+    if (matched.length === 0) return filteredArticles;
+    return interleaveSponsoredCards(filteredArticles, matched, {
+      locale,
+      everyN: limits.sponsoredEveryN,
+      minArticlesBeforeFirst: limits.sponsoredMinArticlesBeforeFirst,
+    });
+  }, [
+    filteredArticles,
+    sponsoredItems,
+    prefsTools,
+    enabledSourceIds,
+    locale,
+  ]);
+
   const selectedIndex = selectedArticleId
-    ? filteredArticles.findIndex((a) => a.id === selectedArticleId)
+    ? exploreFeedCards.findIndex(
+        (item) => !isSponsoredItem(item) && item.id === selectedArticleId
+      )
     : -1;
   const isShowingCard = selectedArticleId !== null && selectedIndex >= 0;
 
@@ -253,12 +313,17 @@ export function ExploreView({
     }
   }, [selectedArticleId, selectedIndex]);
 
-  const handleSelect = useCallback((articleId: string) => {
-    const idx = filteredArticles.findIndex((a) => a.id === articleId);
-    if (idx < 0) return;
-    setSelectedArticleId(articleId);
-    setCurrentIndex(idx);
-  }, [filteredArticles]);
+  const handleSelect = useCallback(
+    (articleId: string) => {
+      const idx = exploreFeedCards.findIndex(
+        (item) => !isSponsoredItem(item) && item.id === articleId
+      );
+      if (idx < 0) return;
+      setSelectedArticleId(articleId);
+      setCurrentIndex(idx);
+    },
+    [exploreFeedCards]
+  );
 
   const handleBackToList = useCallback(() => {
     setSelectedArticleId(null);
@@ -276,13 +341,13 @@ export function ExploreView({
       if (viewableItems.length > 0 && viewableItems[0].index != null) {
         const idx = viewableItems[0].index;
         setCurrentIndex(idx);
-        const item = filteredArticles[idx];
-        if (item) {
+        const item = exploreFeedCards[idx];
+        if (item && !isSponsoredItem(item)) {
           setSelectedArticleId(item.id);
         }
       }
     },
-    [filteredArticles]
+    [exploreFeedCards]
   );
 
   const viewabilityConfig = useRef({
@@ -301,15 +366,20 @@ export function ExploreView({
   );
 
   if (isShowingCard) {
-    const activeIndex = Math.min(currentIndex, filteredArticles.length - 1);
-    const activeArticle =
-      filteredArticles[activeIndex] ?? filteredArticles[selectedIndex];
+    const activeIndex = Math.min(currentIndex, exploreFeedCards.length - 1);
+    const activeItem =
+      exploreFeedCards[activeIndex] ?? exploreFeedCards[selectedIndex];
+    const activeArticle = activeItem && !isSponsoredItem(activeItem)
+      ? activeItem
+      : null;
     const verifiedTool = activeArticle
       ? getVerifiedArticleTool(activeArticle)
-      : '';
-    const activeTheme = activeArticle
-      ? getThemeForArticle(verifiedTool ? [verifiedTool] : []).colors
-      : themes.neutral;
+      : isSponsoredItem(activeItem)
+        ? activeItem.tool_tag ?? ''
+        : '';
+    const activeTheme = getThemeForArticle(
+      verifiedTool ? [verifiedTool] : []
+    ).colors;
 
     return (
       <View
@@ -322,7 +392,7 @@ export function ExploreView({
         {feedHeight > 0 ? (
           <FlatList
             ref={cardListRef}
-            data={filteredArticles}
+            data={exploreFeedCards}
             keyExtractor={(item) => item.id}
             pagingEnabled
             showsVerticalScrollIndicator={false}
@@ -330,10 +400,10 @@ export function ExploreView({
             snapToInterval={feedHeight}
             snapToAlignment="start"
             initialScrollIndex={
-              filteredArticles.length > 0
+              exploreFeedCards.length > 0
                 ? Math.max(
                     0,
-                    Math.min(selectedIndex, filteredArticles.length - 1)
+                    Math.min(selectedIndex, exploreFeedCards.length - 1)
                   )
                 : 0
             }
@@ -353,21 +423,71 @@ export function ExploreView({
                 animated: false,
               });
             }}
-            renderItem={({ item, index }) => (
-              <NewsCard
-                article={item}
-                index={index}
-                total={filteredArticles.length}
-                cardHeight={feedHeight}
-                hasChipRow={false}
-                isSaved={savedIds.includes(item.id)}
-                showOriginalButton={showOriginalButton}
-                locale={locale}
-                onToggleSave={onToggleSave}
-                onHideArticle={onHideArticle}
-                onPressSource={onPressSource}
-              />
-            )}
+            renderItem={({ item, index }) => {
+              if (isSponsoredItem(item)) {
+                return (
+                  <SponsoredCard
+                    item={item}
+                    index={index}
+                    total={exploreFeedCards.length}
+                    cardHeight={feedHeight}
+                    hasChipRow={false}
+                    locale={locale}
+                    onHide={onHideArticle}
+                  />
+                );
+              }
+              const related = pickRelatedSponsored(
+                item,
+                sponsoredItems.filter((s) => s.active !== false)
+              );
+              const jumpIndex = related
+                ? findNearestSponsoredIndex(exploreFeedCards, index, related)
+                : -1;
+              const siteForIcon = related?.tool_tag
+                ? toolSiteUrls[related.tool_tag]
+                : null;
+              const localIcon = related?.tool_tag
+                ? RELATED_SPONSOR_LOCAL_ICON[related.tool_tag]
+                : undefined;
+              const relatedSponsor = related
+                ? {
+                    name: related.advertiser_name,
+                    iconUrl:
+                      (siteForIcon ? getFaviconUrl(siteForIcon) : null) ||
+                      getFaviconUrl(related.url) ||
+                      related.image_url,
+                    iconSource: localIcon ?? null,
+                    onPress: () => {
+                      if (jumpIndex >= 0 && feedHeight > 0) {
+                        setCurrentIndex(jumpIndex);
+                        cardListRef.current?.scrollToIndex({
+                          index: jumpIndex,
+                          animated: true,
+                        });
+                        return;
+                      }
+                      void Linking.openURL(related.url);
+                    },
+                  }
+                : null;
+              return (
+                <NewsCard
+                  article={item}
+                  index={index}
+                  total={exploreFeedCards.length}
+                  cardHeight={feedHeight}
+                  hasChipRow={false}
+                  isSaved={savedIds.includes(item.id)}
+                  showOriginalButton={showOriginalButton}
+                  locale={locale}
+                  relatedSponsor={relatedSponsor}
+                  onToggleSave={onToggleSave}
+                  onHideArticle={onHideArticle}
+                  onPressSource={onPressSource}
+                />
+              );
+            }}
           />
         ) : null}
 
@@ -397,7 +517,7 @@ export function ExploreView({
             ]}
           >
             <Text style={[styles.counterText, { color: activeTheme.accent }]}>
-              {activeIndex + 1} / {filteredArticles.length}
+              {activeIndex + 1} / {exploreFeedCards.length}
             </Text>
           </View>
         </View>

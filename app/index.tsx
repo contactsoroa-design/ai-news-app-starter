@@ -30,7 +30,7 @@ import {
 } from '../src/components/SettingsView';
 import { SponsoredCard } from '../src/components/SponsoredCard';
 import { TabBarIcon } from '../src/components/TabBarIcon';
-import { getCopy, getSourceDisplayName } from '../src/lib/config';
+import { getCopy, getSourceDisplayName, limits } from '../src/lib/config';
 import { DEMO_SWIPE_ENABLED } from '../src/lib/demoSwipe';
 import {
   articleMatchesPrefsFilter,
@@ -53,15 +53,18 @@ import {
   filterSponsoredForContext,
   findNearestSponsoredIndex,
   interleaveSponsoredCards,
+  listSponsoredThenArticles,
   pickRelatedSponsored,
 } from '../src/lib/sponsored';
 import { looksLikeLocale, relocalizeArticles } from '../src/lib/translate';
 import {
   getHiddenArticleIds,
+  getPurgedArticleIds,
   getSavedArticleIds,
   getSavedArticlesData,
   getUserPrefs,
   setHiddenArticleIds,
+  setPurgedArticleIds,
   setSavedArticleIds,
   setSavedArticlesData,
   setUserPrefs,
@@ -87,6 +90,14 @@ import {
 
 type BottomTab = 'home' | 'explore' | 'saved' | 'settings';
 type HomeTopTab = 'recommended' | 'source' | 'tool';
+
+/** 製品レール用。情報源アイコンと同じ黒シンボル（白マットに載せる） */
+const RELATED_SPONSOR_LOCAL_ICON: Record<
+  string,
+  ReturnType<typeof require>
+> = {
+  ElevenLabs: require('../assets/sponsors/elevenlabs-symbol.png'),
+};
 
 /** 先頭付近の OGP だけ先読み（favicon は帯域を奪うので後回し） */
 function prefetchOgImages(
@@ -122,6 +133,8 @@ export default function HomeScreen() {
   const [savedIds, setSavedIds] = useState<string[]>([]);
   const [savedArticlesData, setSavedArticlesDataState] = useState<Article[]>([]);
   const [hiddenIds, setHiddenIds] = useState<string[]>([]);
+  /** 「完全に消す」後の非表示（戻す対象外） */
+  const [purgedIds, setPurgedIds] = useState<string[]>([]);
   const [prefs, setPrefs] = useState<UserPrefs>(() =>
     createDefaultUserPrefs(sources)
   );
@@ -149,6 +162,9 @@ export default function HomeScreen() {
   const [selectedTool, setSelectedTool] = useState<string | null>(null);
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  /** silent 更新後に同じ記事へ戻すための ID */
+  const currentArticleIdRef = useRef<string | null>(null);
+  const pendingRestoreArticleIdRef = useRef<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -185,6 +201,7 @@ export default function HomeScreen() {
         getSavedArticleIds(),
         getSavedArticlesData(),
         getHiddenArticleIds(),
+        getPurgedArticleIds(),
         getUserPrefs(),
       ]);
       const feedPromise = fetchArticles(localeGuess, (partial) => {
@@ -193,8 +210,13 @@ export default function HomeScreen() {
       });
       const sponsoredPromise = fetchSponsoredItems();
 
-      const [storedSaved, storedSavedArticles, storedHidden, storedPrefs] =
-        await storagePromise;
+      const [
+        storedSaved,
+        storedSavedArticles,
+        storedHidden,
+        storedPurged,
+        storedPrefs,
+      ] = await storagePromise;
       const nextPrefs = hydrateUserPrefs(
         storedPrefs,
         sources,
@@ -207,6 +229,7 @@ export default function HomeScreen() {
       void setUserPrefs(nextPrefs);
       setSavedIds(storedSaved);
       setHiddenIds(storedHidden);
+      setPurgedIds(storedPurged);
 
       const [fetchedArticles, fetchedSponsored] = await Promise.all([
         feedPromise,
@@ -251,7 +274,13 @@ export default function HomeScreen() {
       } catch {
         // 保存同期の失敗でフィード全体を落とさない
       }
-      setCurrentIndex(0);
+      // silent: 読んでいた記事 ID を覚えて再描画後に復帰。initial/refresh だけ先頭へ
+      if (mode === 'silent') {
+        pendingRestoreArticleIdRef.current = currentArticleIdRef.current;
+      } else {
+        pendingRestoreArticleIdRef.current = null;
+        setCurrentIndex(0);
+      }
       lastFeedRefreshAtRef.current = Date.now();
       if (mode === 'refresh') {
         flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
@@ -361,20 +390,19 @@ export default function HomeScreen() {
   // 有効なソース・ツール一覧（チップ表示用）
   const enabledSources = useMemo(() => {
     const map = new Set(prefs.enabled_source_ids);
-    return sources.filter((s) => {
-      if (!map.has(s.id)) return false;
-      if (prefs.source_language === 'ja' && s.language !== 'ja') return false;
-      if (prefs.source_language === 'en' && s.language !== 'en') return false;
-      return true;
-    });
-  }, [sources, prefs.enabled_source_ids, prefs.source_language]);
+    return sources.filter((s) => map.has(s.id));
+  }, [sources, prefs.enabled_source_ids]);
 
   const availableTools = useMemo(() => {
     return prefs.tools.length > 0 ? prefs.tools : [...allTools];
   }, [prefs.tools]);
 
   // 設定の「情報源 × ジャンル × ツール」の掛け算（AND条件）に一致するベース記事リスト
-  const hiddenIdSet = useMemo(() => new Set(hiddenIds), [hiddenIds]);
+  // 一時非表示（hidden）＋完全非表示（purged）の両方をフィードから除外
+  const hiddenIdSet = useMemo(
+    () => new Set([...hiddenIds, ...purgedIds]),
+    [hiddenIds, purgedIds]
+  );
   const enabledSourceIdSet = useMemo(
     () => new Set(enabledSources.map((s) => s.id)),
     [enabledSources]
@@ -420,12 +448,26 @@ export default function HomeScreen() {
       );
     const ordered = preview ? [preview, ...rest] : rest;
 
-    // スポンサード: おすすめ＋該当ツール別／ソース別。表示OFF・興味なし除外は不可。
+    // スポンサード:
+    // - おすすめ: 設定絞り込みに関係なく差し込み
+    // - ソース別／ツール別「すべて」: prefs に合う案件を差し込み
+    // - 個別選択: そのツール／ソース専用の広告があるときだけ先頭一覧＋記事
     if (sponsoredItems.length === 0) return ordered;
 
     const matchMode =
       topTab === 'source' ? 'source' : topTab === 'tool' ? 'tool' : 'recommended';
-    const matchedSponsored = filterSponsoredForContext(sponsoredItems, {
+    const sourceOrToolNarrowed =
+      (topTab === 'source' && selectedSourceId !== null) ||
+      (topTab === 'tool' && selectedTool !== null);
+    const activeSponsored = sponsoredItems.filter((s) => {
+      if (s.active === false) return false;
+      if (hiddenIdSet.has(s.id)) return false;
+      for (const hid of hiddenIdSet) {
+        if (hid.startsWith(`${s.id}__`)) return false;
+      }
+      return true;
+    });
+    const matchedSponsored = filterSponsoredForContext(activeSponsored, {
       mode: matchMode,
       selectedTool,
       selectedSourceId,
@@ -433,6 +475,12 @@ export default function HomeScreen() {
       enabledSourceIds: enabledSourceIdSet,
     });
     if (matchedSponsored.length === 0) return ordered;
+
+    if (sourceOrToolNarrowed) {
+      return listSponsoredThenArticles(ordered, matchedSponsored, {
+        locale: prefs.region_locale,
+      });
+    }
 
     return interleaveSponsoredCards(ordered, matchedSponsored, {
       locale: prefs.region_locale,
@@ -536,8 +584,9 @@ export default function HomeScreen() {
 
   const handleHideArticle = useCallback((articleId: string) => {
     setHiddenIds((prev) => {
+      if (prev.includes(articleId)) return prev;
       const next = [...prev, articleId];
-      setHiddenArticleIds(next);
+      void setHiddenArticleIds(next);
       return next;
     });
   }, []);
@@ -547,6 +596,24 @@ export default function HomeScreen() {
     await setHiddenArticleIds([]);
     setCurrentIndex(0);
   }, []);
+
+  /** 非表示を確定 → purged へ移し、戻す対象から外す */
+  const handlePurgeHidden = useCallback(async () => {
+    const moving = hiddenIds;
+    if (moving.length === 0) return;
+    setPurgedIds((prev) => {
+      const merged = [...prev];
+      for (const id of moving) {
+        if (!merged.includes(id)) merged.push(id);
+      }
+      const next = merged.slice(-limits.maxHiddenIds);
+      void setPurgedArticleIds(next);
+      return next;
+    });
+    setHiddenIds([]);
+    await setHiddenArticleIds([]);
+    setCurrentIndex(0);
+  }, [hiddenIds]);
 
   const handleUpdatePrefs = useCallback(
     async (next: UserPrefs | ((prev: UserPrefs) => UserPrefs)) => {
@@ -729,8 +796,29 @@ export default function HomeScreen() {
     const nextIdx = Math.round(e.nativeEvent.contentOffset.y / feedHeight);
     if (nextIdx >= 0 && nextIdx < visibleArticles.length) {
       setCurrentIndex(nextIdx);
+      const item = visibleArticles[nextIdx];
+      currentArticleIdRef.current =
+        item && !isSponsoredItem(item) ? item.id : currentArticleIdRef.current;
     }
   };
+
+  // silent 更新後、同じ記事が見える位置へ戻す（先頭固定の体感を防ぐ）
+  useEffect(() => {
+    const restoreId = pendingRestoreArticleIdRef.current;
+    if (!restoreId || feedHeight <= 0 || visibleArticles.length === 0) return;
+    const idx = visibleArticles.findIndex(
+      (item) => !isSponsoredItem(item) && item.id === restoreId
+    );
+    pendingRestoreArticleIdRef.current = null;
+    if (idx < 0) return;
+    setCurrentIndex(idx);
+    requestAnimationFrame(() => {
+      flatListRef.current?.scrollToOffset({
+        offset: feedHeight * idx,
+        animated: false,
+      });
+    });
+  }, [visibleArticles, feedHeight]);
 
   const handleFeedLayout = (e: LayoutChangeEvent) => {
     const h = e.nativeEvent.layout.height;
@@ -838,7 +926,10 @@ export default function HomeScreen() {
                     );
                   }
 
-                  const related = pickRelatedSponsored(item, sponsoredItems);
+                  const related = pickRelatedSponsored(
+                    item,
+                    sponsoredItems.filter((s) => s.active !== false)
+                  );
                   const jumpIndex = related
                     ? findNearestSponsoredIndex(
                         visibleArticles,
@@ -849,19 +940,29 @@ export default function HomeScreen() {
                   const siteForIcon = related?.tool_tag
                     ? toolSiteUrls[related.tool_tag]
                     : null;
-                  const relatedSponsor =
-                    related && jumpIndex >= 0
-                      ? {
-                          name: related.advertiser_name,
-                          iconUrl:
-                            (siteForIcon
-                              ? getFaviconUrl(siteForIcon)
-                              : null) ||
-                            getFaviconUrl(related.url) ||
-                            related.image_url,
-                          onPress: () => scrollHomeToSponsoredIndex(jumpIndex),
-                        }
-                      : null;
+                  const localIcon = related?.tool_tag
+                    ? RELATED_SPONSOR_LOCAL_ICON[related.tool_tag]
+                    : undefined;
+                  // フィード内に広告カードが無くてもアイコンは出す（タップでジャンプ or 公式へ）
+                  const relatedSponsor = related
+                    ? {
+                        name: related.advertiser_name,
+                        iconUrl:
+                          (siteForIcon
+                            ? getFaviconUrl(siteForIcon)
+                            : null) ||
+                          getFaviconUrl(related.url) ||
+                          related.image_url,
+                        iconSource: localIcon ?? null,
+                        onPress: () => {
+                          if (jumpIndex >= 0) {
+                            scrollHomeToSponsoredIndex(jumpIndex);
+                            return;
+                          }
+                          void Linking.openURL(related.url);
+                        },
+                      }
+                    : null;
 
                   return (
                     <NewsCard
@@ -1165,6 +1266,16 @@ export default function HomeScreen() {
             articles={baseFilteredArticles}
             savedIds={savedIds}
             showOriginalButton={prefs.show_original_button}
+            sponsoredItems={sponsoredItems.filter((s) => {
+              if (s.active === false) return false;
+              if (hiddenIdSet.has(s.id)) return false;
+              for (const hid of hiddenIdSet) {
+                if (hid.startsWith(`${s.id}__`)) return false;
+              }
+              return true;
+            })}
+            prefsTools={prefs.tools}
+            enabledSourceIds={enabledSourceIdSet}
             onToggleSave={handleToggleSave}
             onHideArticle={handleHideArticle}
             onOpenSaved={() => setBottomTab('saved')}
@@ -1188,6 +1299,7 @@ export default function HomeScreen() {
             initialSubScreen={settingsSubScreen}
             onUpdatePrefs={handleUpdatePrefs}
             onResetHidden={handleResetHidden}
+            onPurgeHidden={handlePurgeHidden}
             onStartSwiping={() => {
               setSettingsSubScreen('root');
               setPreviewArticleId(null);

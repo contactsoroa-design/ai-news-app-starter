@@ -14,7 +14,9 @@ AI関連のニュースだけを、1枚ずつ縦スワイプで読めるモバ�
 - 落ち要因の読み替え: `docs/AppStore審査-落ち要因ナレッジ.md`（Compath実録ベース）
 - 提出チェック: `docs/ストア提出チェックリスト.md`
 - Connect貼り付け文: `docs/ストア掲載文-貼り付け用.md`
-- Support / PP / Terms は **独自ドメイン**（`https://soroa-studio.com/ainews/`）。`*.vercel.app` を Connect に書かない。HTML正本は `landing/ainews/`。
+- ソフトローンチ: `docs/ソフトローンチ手順.md`（ウェイトリスト閉門なし・Approved 後すぐ公開・無料＋自前広告）
+- Support / PP / Terms / Media kit は **独自ドメイン**（`https://soroa-studio.com/ainews/`）。`*.vercel.app` を Connect に書かない。HTML正本は `landing/ainews/`。
+- 収益運用メモ: `docs/スポンサー候補リスト.md` / `docs/アフィリエイト運用ルール.md` / `docs/週次KPI.md` / `docs/要望インボックス運用.md`
 
 ## 今回やらないこと
 AdMob 等の広告ネットワーク、雑多なバナー枠、有料プラン、韓国語・スペイン語など日英以外の追加言語、ランキング、Reddit・X(Twitter)連携、プッシュ通知、ログイン、外部データベース（Supabase等）。

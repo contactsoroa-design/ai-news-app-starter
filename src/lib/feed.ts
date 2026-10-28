@@ -28,7 +28,11 @@ function resolveFeedUrls(): string[] {
 
   if (env.feedUrl) pushUnique(env.feedUrl);
 
+  // 開発時も GitHub raw を先に試し、ローカル public/ 未同期でも本番と同じ新着を見られるようにする
   if (typeof __DEV__ !== 'undefined' && __DEV__) {
+    for (const mirror of PRODUCTION_FEED_MIRRORS) {
+      pushUnique(mirror);
+    }
     try {
       // eslint-disable-next-line @typescript-eslint/no-require-imports
       const Constants = require('expo-constants').default as {
@@ -229,12 +233,16 @@ async function loadRawArticlesFromRemote(urls: string[]): Promise<Article[]> {
 }
 
 /**
- * Show HN / Product Hunt 等は記事リンクが外部サイトになるため、
- * site_url ドメイン一致チェックをしない。
+ * アグリゲータ／ニュースレター系は記事リンクが外部サイトになるため、
+ * site_url ドメイン一致チェックをしない（落とすとソース別が空になる）。
  */
 const AGGREGATOR_SOURCE_IDS = new Set([
   'source-hn',
   'source-producthunt-ai',
+  'source-bensbites',
+  'source-digg-ai',
+  'source-ai-unraveled',
+  'source-hf',
 ]);
 
 function registrableDomain(hostname: string): string {
@@ -428,12 +436,8 @@ export function hydrateUserPrefs(
     enabled_source_ids,
     tools,
     genres,
-    source_language:
-      stored.source_language === 'ja' ||
-      stored.source_language === 'en' ||
-      stored.source_language === 'both'
-        ? stored.source_language
-        : defaults.source_language,
+    // UI からソース元言語の絞り込みは外した。常に日英両方を対象にする
+    source_language: 'both',
     show_original_button:
       typeof stored.show_original_button === 'boolean'
         ? stored.show_original_button
@@ -584,7 +588,7 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-elevenlabs': 'ElevenLabs',
   'source-koala-ai': 'Koala AI',
   'source-copyai': 'Copy.ai',
-  'source-midjourney': 'Midjourney',
+  'source-synthesia': 'Synthesia',
   'source-notion': 'Notion',
 };
 
@@ -626,7 +630,7 @@ const SOURCE_ALLOWED_TOOLS: Record<string, readonly string[]> = {
   'source-elevenlabs': ['ElevenLabs'],
   'source-koala-ai': ['Koala AI'],
   'source-copyai': ['Copy.ai'],
-  'source-midjourney': ['Midjourney'],
+  'source-synthesia': ['Synthesia'],
   'source-notion': ['Notion'],
 };
 
@@ -773,22 +777,55 @@ export function trimFeedArticles(
 }
 
 /**
+ * RSS が日付だけ（UTC 00:00 / 12:00）のとき、その日のあいだ先頭が張り付く。
+ * 同じ UTC 日の取り込み時刻があればそちらで並びを補正する。
+ */
+function isCoarseUtcTimestamp(ms: number): boolean {
+  const d = new Date(ms);
+  return (
+    d.getUTCMinutes() === 0 &&
+    d.getUTCSeconds() === 0 &&
+    d.getUTCMilliseconds() === 0 &&
+    (d.getUTCHours() === 0 || d.getUTCHours() === 12)
+  );
+}
+
+function sameUtcCalendarDay(aMs: number, bMs: number): boolean {
+  const a = new Date(aMs);
+  const b = new Date(bMs);
+  return (
+    a.getUTCFullYear() === b.getUTCFullYear() &&
+    a.getUTCMonth() === b.getUTCMonth() &&
+    a.getUTCDate() === b.getUTCDate()
+  );
+}
+
+/**
  * フィード上の「新しさ」。原則は元記事の公開日。
  * created_at（取り込み時刻）で max すると、数日前〜数ヶ月前の公式投稿が
  * 再ingestされただけで先頭に上がる（Anthropic / 古い Windsurf 等）。
  * 公開日が無いときだけ取り込み時刻にフォールバックする。
+ * 日付粒度だけの公開日は、同日の created_at で並びを補正する。
  */
 export function articleFeedTimestamp(article: Article): number {
   const published = article.published_at
     ? new Date(article.published_at).getTime()
     : NaN;
-  if (Number.isFinite(published) && published > 0) {
-    return published;
-  }
   const created = article.created_at
     ? new Date(article.created_at).getTime()
-    : 0;
-  return Number.isFinite(created) ? created : 0;
+    : NaN;
+  if (Number.isFinite(published) && published > 0) {
+    if (
+      isCoarseUtcTimestamp(published) &&
+      Number.isFinite(created) &&
+      created > 0 &&
+      sameUtcCalendarDay(published, created)
+    ) {
+      return created;
+    }
+    return published;
+  }
+  return Number.isFinite(created) && created > 0 ? created : 0;
 }
 
 function sortArticles(articles: Article[]): Article[] {
