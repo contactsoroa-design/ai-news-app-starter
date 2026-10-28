@@ -30,7 +30,7 @@ AdMob 等の広告ネットワーク、雑多なバナー枠、有料プラン�
 - ソースは `terms_checked = true` のものだけ有効にする。Reddit と X のAPIは使わない。
 - 公式ロゴを自分で描かない。アイコンはサイトのfavicon等を取得して表示し、色や形を加工しない。
 - APIキーはサーバー側（収集・要約スクリプト実行環境）の環境変数だけに置く。アプリ側には一切入れない。`.env` はコミットしない。
-- 1日の収集上限デフォルトは `MAX_ARTICLES_PER_DAY=400`（`America/Los_Angeles`＝Gemini RPD でカウント。無料枠の余白。軽さ優先で保持上限は上げない）。`MAX_ARTICLES_PER_HOUR=17` で時間帯バジェット。収集の**実行本体**は **GitHub Actions のみ**（Mac起動不要・要約APIキーは Actions secrets）。**主起動**は Cloudflare Workers Cron（`ops/ingest-wake-cf` → `repository_dispatch`、約15分。Vercel Hobby は日次制限のため不可。手順は `docs/収集-外部cron手順.md`）。GitHub `schedule` と Vercel 日2回は保険。無名 cron SaaS への PAT 設置はしない。`MAX_ARTICLES_PER_RUN=4`、日・時間上限でブレーキ。429連続時は実行停止（空打ち防止）。同一ソースは原則1実行1件（件数の少ないソース優先。枠余り時は後回しソース全般へ回す）。公開日が `MAX_ARTICLE_AGE_DAYS`（既定7日）より前の候補は取り込まない。月額上限は `MAX_MONTHLY_COST_JPY`（既定3000。日400でも見積内）。フィード保持は直近30日＋安全上限2000件（≒数日分。新しい順に残し、古いものから外す。JSON肥大防止）。
+- 1日の収集上限デフォルトは `MAX_ARTICLES_PER_DAY=450`（`America/Los_Angeles`＝Gemini RPD でカウント。無料目安500との中間・余白約50。軽さ優先で保持上限は上げない）。`MAX_ARTICLES_PER_HOUR=19` で時間帯バジェット。収集の**実行本体**は **GitHub Actions のみ**（Mac起動不要・要約APIキーは Actions secrets）。**主起動**は Cloudflare Workers Cron（`ops/ingest-wake-cf` → `repository_dispatch`、約15分。Vercel Hobby は日次制限のため不可。手順は `docs/収集-外部cron手順.md`）。GitHub `schedule` と Vercel 日2回は保険。無名 cron SaaS への PAT 設置はしない。`MAX_ARTICLES_PER_RUN=4`、日・時間上限でブレーキ。429連続時は実行停止（空打ち防止）。同一ソースは原則1実行1件（件数の少ないソース優先。枠余り時は後回しソース全般へ回す）。公開日が `MAX_ARTICLE_AGE_DAYS`（既定7日）より前の候補は取り込まない。月額上限は `MAX_MONTHLY_COST_JPY`（既定3000。日450でも見積内）。フィード保持は直近30日＋安全上限2000件（≒数日分。新しい順に残し、古いものから外す。JSON肥大防止）。
 - 色・文言・寸法は `src/theme/tokens.ts` と設定ファイルにまとめる（直書きしない）。
 - ボタンは44px以上、読み上げ用ラベルを付ける、文字のコントラストを十分にとる。
 - TypeScriptはstrict。エラー処理（通信失敗・空の状態）を必ず入れる。

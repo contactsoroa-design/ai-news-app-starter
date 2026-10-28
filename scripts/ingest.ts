@@ -48,14 +48,13 @@ const INGEST_SOFT_DEADLINE_MS = Number(
 /**
  * 1実行の追加上限。
  * 15分 cron × 時間バジェット前提。ドカ取りせず均等配信する。
- * 日上限 MAX_ARTICLES_PER_DAY（既定400）でブレーキ。
+ * 日上限 MAX_ARTICLES_PER_DAY（既定450）でブレーキ。
  */
 const DEFAULT_ARTICLES_PER_RUN = 4;
 /**
- * Gemini 無料 RPD に合わせた余白付き日上限（成功件数）。
- * 失敗リトライ用に 500 ぴったりにはしない。
+ * Gemini 無料 RPD（目安500）との中間。成功寄りに寄せつつリトライ余白約50。
  */
-const DEFAULT_ARTICLES_PER_DAY = 400;
+const DEFAULT_ARTICLES_PER_DAY = 450;
 /**
  * 1時間あたり上限。未指定時は ceil(日上限/24)。
  * クォータ日（America/Los_Angeles＝Gemini RPD）で数える。
