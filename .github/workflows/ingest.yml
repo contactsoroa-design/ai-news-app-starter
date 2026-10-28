@@ -24,13 +24,14 @@ permissions:
 
 concurrency:
   group: ingest-articles
-  cancel-in-progress: false
+  # ハングした実行を次の wake（約15分）で自動打ち切り、自己修復する
+  cancel-in-progress: true
 
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    # 記事間隔＋429待機を見込む（1実行10件想定）
-    timeout-minutes: 55
+    # 平常は1〜7分。LLMハング対策で20分超は打ち切り（soft deadline はスクリプト側12分）
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4

@@ -37,6 +37,14 @@ const ESTIMATED_COST_PER_ARTICLE_JPY = 0.15;
 
 /** 本番向け: 記事ごとのLLM間隔（ミリ秒）。連続呼び出しで 429 を避ける */
 const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
+/** 要約API 1回あたりの上限。未設定だとハングして Actions が埋まってしまう */
+const LLM_FETCH_TIMEOUT_MS = Number(
+  process.env.LLM_FETCH_TIMEOUT_MS || '60000'
+);
+/** 1実行のソフト締切。過ぎたら途中結果を書いて終了（次の wake に回す） */
+const INGEST_SOFT_DEADLINE_MS = Number(
+  process.env.INGEST_SOFT_DEADLINE_MS || String(12 * 60 * 1000)
+);
 /**
  * 1実行の追加上限。
  * schedule は間引かれる前提。チャンスが増えた分、成功した回で厚めに拾う。
@@ -428,11 +436,32 @@ function isRateLimitError(err: unknown): boolean {
 }
 
 function rateLimitWaitMs(err: unknown, attempt: number): number {
+  // 旧上限3分×多数回だと1実行が何十分も埋まる。自己修復のため短く抑える
+  const hardCap = 45_000;
   if (err instanceof LlmHttpError && err.retryAfterMs && err.retryAfterMs > 0) {
-    return Math.min(err.retryAfterMs, 180_000);
+    return Math.min(err.retryAfterMs, hardCap);
   }
-  // 30s → 60s → 120s …（上限3分）
-  return Math.min(30_000 * 2 ** attempt, 180_000);
+  // 12s → 24s → 45s …
+  return Math.min(12_000 * 2 ** attempt, hardCap);
+}
+
+async function fetchWithTimeout(
+  url: string,
+  init: RequestInit,
+  timeoutMs = LLM_FETCH_TIMEOUT_MS
+): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...init, signal: controller.signal });
+  } catch (err) {
+    if (err instanceof Error && err.name === 'AbortError') {
+      throw new Error(`LLM fetch timeout after ${timeoutMs}ms`);
+    }
+    throw err;
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 function parseRetryAfterMs(res: Response): number | null {
@@ -793,7 +822,7 @@ async function callLlmJson(
       geminiModel
     )}:generateContent`;
 
-    const res = await fetch(url, {
+    const res = await fetchWithTimeout(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -847,7 +876,7 @@ async function callLlmJson(
     const claudeModel = model.includes('claude')
       ? model
       : 'claude-3-5-haiku-latest';
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
+    const res = await fetchWithTimeout('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -880,7 +909,7 @@ async function callLlmJson(
       ? 'https://openrouter.ai/api/v1/chat/completions'
       : 'https://api.openai.com/v1/chat/completions';
 
-  const res = await fetch(endpoint, {
+  const res = await fetchWithTimeout(endpoint, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -925,7 +954,8 @@ async function summarizeWithRetry(
   let lastErr: unknown;
   let qualityAttempt = 0;
   let rateAttempt = 0;
-  const maxRateRetries = 6;
+  // 旧6回×最大3分待機だとハング時に数十分配信が止まる。自己修復のため短く
+  const maxRateRetries = 3;
 
   while (qualityAttempt <= maxQualityRetries) {
     try {
@@ -1005,6 +1035,14 @@ async function main() {
   const rootDir = path.resolve(__dirname, '..');
   const sourcesPath = path.join(rootDir, 'data', 'sources.json');
   const articlesPath = path.join(rootDir, 'data', 'articles.json');
+  const runStartedAt = Date.now();
+  const softDeadlineMs = Math.max(
+    60_000,
+    Number(
+      process.env.INGEST_SOFT_DEADLINE_MS || INGEST_SOFT_DEADLINE_MS
+    )
+  );
+  const pastSoftDeadline = () => Date.now() - runStartedAt >= softDeadlineMs;
 
   // ソース取りこぼし防止。間引き前提の分散 cron × 少数件で分割しレート制限を避ける
   const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '500');
@@ -1060,7 +1098,7 @@ async function main() {
     );
   } else {
     console.log(
-      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件 / 1日上限=${maxPerDay}件（Asia/Tokyo）`
+      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件 / 1日上限=${maxPerDay}件（Asia/Tokyo） / LLMタイムアウト=${LLM_FETCH_TIMEOUT_MS}ms / ソフト締切=${Math.round(softDeadlineMs / 1000)}s`
     );
   }
 
@@ -1221,6 +1259,12 @@ async function main() {
     item: RawFeedItem,
     perSourceCap: number
   ): Promise<'accepted' | 'skipped' | 'stop'> => {
+    if (pastSoftDeadline()) {
+      console.warn(
+        `ソフト締切（${Math.round(softDeadlineMs / 1000)}s）に達したため残りは次回へ回します（途中結果は保存）`
+      );
+      return 'stop';
+    }
     if (alreadyToday >= maxPerDay) return 'stop';
     if (todayCount >= maxPerRun) return 'stop';
     if (alreadyToday + todayCount >= maxPerDay) return 'stop';
