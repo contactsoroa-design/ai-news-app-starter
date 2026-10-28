@@ -47,10 +47,22 @@ const INGEST_SOFT_DEADLINE_MS = Number(
 );
 /**
  * 1実行の追加上限。
- * schedule は間引かれる前提。チャンスが増えた分、成功した回で厚めに拾う。
- * 日上限 MAX_ARTICLES_PER_DAY（既定500）でブレーキ。
+ * 15分 cron × 時間バジェット前提。ドカ取りせず均等配信する。
+ * 日上限 MAX_ARTICLES_PER_DAY（既定400）でブレーキ。
  */
-const DEFAULT_ARTICLES_PER_RUN = 10;
+const DEFAULT_ARTICLES_PER_RUN = 4;
+/**
+ * Gemini 無料 RPD に合わせた余白付き日上限（成功件数）。
+ * 失敗リトライ用に 500 ぴったりにはしない。
+ */
+const DEFAULT_ARTICLES_PER_DAY = 400;
+/**
+ * 1時間あたり上限。未指定時は ceil(日上限/24)。
+ * クォータ日（America/Los_Angeles＝Gemini RPD）で数える。
+ */
+const DEFAULT_QUOTA_TIMEZONE = 'America/Los_Angeles';
+/** 連続でレート制限スキップしたら実行全体を止める（空打ち防止） */
+const DEFAULT_RATE_LIMIT_STOP_STREAK = 2;
 /** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
 const RSS_ITEMS_PER_SOURCE = 6;
 /** RSS取得タイムアウト（arXiv 等は遅いことがある） */
@@ -401,7 +413,7 @@ function buildRoundRobinCandidates(
   return candidates;
 }
 
-/** Asia/Tokyo の YYYY-MM-DD（日次上限の判定用） */
+/** Asia/Tokyo の YYYY-MM-DD（月次費用見積用） */
 function tokyoDatePrefix(date: Date): string {
   return new Intl.DateTimeFormat('en-CA', {
     timeZone: 'Asia/Tokyo',
@@ -410,6 +422,30 @@ function tokyoDatePrefix(date: Date): string {
     day: '2-digit',
   }).format(date);
 }
+
+type ZonedDateHour = { day: string; hour: string };
+
+/** クォータ用タイムゾーンの日付・時（Gemini RPD は America/Los_Angeles 深夜リセット） */
+function zonedDayAndHour(date: Date, timeZone: string): ZonedDateHour {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    hourCycle: 'h23',
+  }).formatToParts(date);
+  const get = (type: Intl.DateTimeFormatPartTypes) =>
+    parts.find((p) => p.type === type)?.value ?? '';
+  const day = `${get('year')}-${get('month')}-${get('day')}`;
+  const hour = `${day}T${get('hour')}`;
+  return { day, hour };
+}
+
+type SummarizeOutcome =
+  | { status: 'ok'; summary: SummaryResult }
+  | { status: 'rate_limited' }
+  | { status: 'skipped' };
 
 class LlmHttpError extends Error {
   readonly status: number;
@@ -945,17 +981,17 @@ async function summarizeWithRetry(
   apiKey: string,
   model: string,
   maxQualityRetries = 3
-): Promise<SummaryResult | null> {
+): Promise<SummarizeOutcome> {
   if (!apiKey) {
-    return fallbackSummarize(item, source);
+    return { status: 'ok', summary: await fallbackSummarize(item, source) };
   }
 
   const provider = detectProvider(apiKey, model);
   let lastErr: unknown;
   let qualityAttempt = 0;
   let rateAttempt = 0;
-  // 旧6回×最大3分待機だとハング時に数十分配信が止まる。自己修復のため短く
-  const maxRateRetries = 3;
+  // 枠枯渇時の空打ちを減らす。連続失敗は呼び出し側で実行停止する
+  const maxRateRetries = 1;
 
   while (qualityAttempt <= maxQualityRetries) {
     try {
@@ -1003,7 +1039,7 @@ async function summarizeWithRetry(
         genre_tags: validGenres.length > 0 ? validGenres : ['開発'],
       };
       assertBilingualSummaryQuality(result);
-      return result;
+      return { status: 'ok', summary: result };
     } catch (err) {
       lastErr = err;
       if (isRateLimitError(err) && rateAttempt < maxRateRetries) {
@@ -1025,10 +1061,10 @@ async function summarizeWithRetry(
   const msg = lastErr instanceof Error ? lastErr.message : String(lastErr);
   if (isRateLimitError(lastErr)) {
     console.warn('レート制限が続きこの記事はスキップします:', msg);
-  } else {
-    console.warn('品質ゲート未達のためこの記事はスキップします:', msg);
+    return { status: 'rate_limited' };
   }
-  return null;
+  console.warn('品質ゲート未達のためこの記事はスキップします:', msg);
+  return { status: 'skipped' };
 }
 
 async function main() {
@@ -1044,11 +1080,29 @@ async function main() {
   );
   const pastSoftDeadline = () => Date.now() - runStartedAt >= softDeadlineMs;
 
-  // ソース取りこぼし防止。間引き前提の分散 cron × 少数件で分割しレート制限を避ける
-  const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '500');
+  // 無料 RPD 余白＋時間バジェットで均等配信（ドカ取りしない）
+  const maxPerDay = Number(
+    process.env.MAX_ARTICLES_PER_DAY || DEFAULT_ARTICLES_PER_DAY
+  );
   const maxPerRun = Math.min(
     Number(process.env.MAX_ARTICLES_PER_RUN || DEFAULT_ARTICLES_PER_RUN),
     maxPerDay
+  );
+  const maxPerHour = Math.max(
+    1,
+    Number(
+      process.env.MAX_ARTICLES_PER_HOUR ||
+        String(Math.ceil(maxPerDay / 24))
+    )
+  );
+  const quotaTimeZone =
+    process.env.INGEST_QUOTA_TIMEZONE || DEFAULT_QUOTA_TIMEZONE;
+  const rateLimitStopStreak = Math.max(
+    1,
+    Number(
+      process.env.INGEST_RATE_LIMIT_STOP_STREAK ||
+        DEFAULT_RATE_LIMIT_STOP_STREAK
+    )
   );
   const maxPerSourcePerRun = Math.max(
     1,
@@ -1098,19 +1152,27 @@ async function main() {
     );
   } else {
     console.log(
-      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件 / 1日上限=${maxPerDay}件（Asia/Tokyo） / LLMタイムアウト=${LLM_FETCH_TIMEOUT_MS}ms / ソフト締切=${Math.round(softDeadlineMs / 1000)}s`
+      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件 / 1時間上限=${maxPerHour}件 / 1日上限=${maxPerDay}件（${quotaTimeZone}＝Gemini RPD） / 429連続停止=${rateLimitStopStreak} / LLMタイムアウト=${LLM_FETCH_TIMEOUT_MS}ms / ソフト締切=${Math.round(softDeadlineMs / 1000)}s`
     );
   }
 
   const now = new Date();
-  // 日次・月次上限は日本時間で数える（UTC日付だと深夜〜朝に枠が枯渇しやすい）
-  const dayPrefix = tokyoDatePrefix(now);
-  const monthPrefix = dayPrefix.slice(0, 7);
+  // 日次・時間上限は Gemini RPD（既定 America/Los_Angeles）に合わせる。月次費用は Tokyo。
+  const { day: dayPrefix, hour: hourPrefix } = zonedDayAndHour(
+    now,
+    quotaTimeZone
+  );
+  const tokyoDay = tokyoDatePrefix(now);
+  const monthPrefix = tokyoDay.slice(0, 7);
   const monthCount = existingArticles.filter(
     (a) => tokyoDatePrefix(new Date(a.created_at)).startsWith(monthPrefix)
   ).length;
   const alreadyToday = existingArticles.filter(
-    (a) => tokyoDatePrefix(new Date(a.created_at)) === dayPrefix
+    (a) => zonedDayAndHour(new Date(a.created_at), quotaTimeZone).day === dayPrefix
+  ).length;
+  const alreadyThisHour = existingArticles.filter(
+    (a) =>
+      zonedDayAndHour(new Date(a.created_at), quotaTimeZone).hour === hourPrefix
   ).length;
   let estimatedMonthlyCost = apiKey
     ? monthCount * ESTIMATED_COST_PER_ARTICLE_JPY
@@ -1245,12 +1307,23 @@ async function main() {
   );
 
   let todayCount = 0;
+  let hourCount = 0;
+  let rateLimitStreak = 0;
+  let stoppedForRateLimit = false;
   const newArticles: Article[] = [];
   const acceptedBySource = new Map<string, number>();
 
+  const atDayCap = () => alreadyToday + todayCount >= maxPerDay;
+  const atHourCap = () => alreadyThisHour + hourCount >= maxPerHour;
+  const atRunCap = () => todayCount >= maxPerRun;
+
   if (alreadyToday >= maxPerDay) {
     console.log(
-      `本日すでに ${alreadyToday} 件追加済み（1日上限 ${maxPerDay}）のため新規処理をスキップします。`
+      `クォータ日ですでに ${alreadyToday} 件追加済み（1日上限 ${maxPerDay} / ${quotaTimeZone}）のため新規処理をスキップします。`
+    );
+  } else if (alreadyThisHour >= maxPerHour) {
+    console.log(
+      `この時間帯ですでに ${alreadyThisHour} 件追加済み（1時間上限 ${maxPerHour}）のため残りは次の時間へ回します。`
     );
   }
 
@@ -1265,9 +1338,8 @@ async function main() {
       );
       return 'stop';
     }
-    if (alreadyToday >= maxPerDay) return 'stop';
-    if (todayCount >= maxPerRun) return 'stop';
-    if (alreadyToday + todayCount >= maxPerDay) return 'stop';
+    if (stoppedForRateLimit) return 'stop';
+    if (atDayCap() || atHourCap() || atRunCap()) return 'stop';
     if (
       apiKey &&
       estimatedMonthlyCost + ESTIMATED_COST_PER_ARTICLE_JPY > maxMonthlyCostJpy
@@ -1294,12 +1366,26 @@ async function main() {
     try {
       // OGP取得とLLMを同時に叩くとレート制限しやすいので直列にする
       const ogImageUrl = await fetchOgImageUrl(item.link);
-      const summary = await summarizeWithRetry(item, source, apiKey, model, 3);
-      if (!summary) {
+      const outcome = await summarizeWithRetry(item, source, apiKey, model, 3);
+      if (outcome.status !== 'ok') {
+        if (outcome.status === 'rate_limited') {
+          rateLimitStreak += 1;
+          if (rateLimitStreak >= rateLimitStopStreak) {
+            stoppedForRateLimit = true;
+            console.warn(
+              `レート制限が ${rateLimitStreak} 件連続したため、残りは次回（枠回復後）へ回します`
+            );
+            return 'stop';
+          }
+        } else {
+          rateLimitStreak = 0;
+        }
         if (articleDelayMs > 0 && apiKey) await sleep(articleDelayMs);
         return 'skipped';
       }
 
+      rateLimitStreak = 0;
+      const summary = outcome.summary;
       const article = sanitizeArticleToolTags({
         id: `art-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
         source_id: source.id,
@@ -1320,6 +1406,7 @@ async function main() {
 
       newArticles.push(article);
       todayCount += 1;
+      hourCount += 1;
       acceptedBySource.set(source.id, taken + 1);
       if (apiKey) {
         estimatedMonthlyCost += ESTIMATED_COST_PER_ARTICLE_JPY;
@@ -1343,10 +1430,10 @@ async function main() {
     candidates: Array<{ source: Source; item: RawFeedItem }>,
     perSourceCap: number
   ) => {
-    if (todayCount >= maxPerRun || alreadyToday >= maxPerDay) return;
+    if (atRunCap() || atDayCap() || atHourCap() || stoppedForRateLimit) return;
     if (candidates.length === 0) return;
     console.log(
-      `${label}: 候補 ${candidates.length} / ソース上限 ${perSourceCap}（現在 ${todayCount}/${maxPerRun}）`
+      `${label}: 候補 ${candidates.length} / ソース上限 ${perSourceCap}（現在 ${todayCount}/${maxPerRun}・時間 ${alreadyThisHour + hourCount}/${maxPerHour}）`
     );
     for (const { source, item } of candidates) {
       const result = await tryAcceptCandidate(source, item, perSourceCap);
@@ -1359,7 +1446,12 @@ async function main() {
 
   // Pass 1b: 枠余りなら後回しソース全般を同じ厳格上限で先に拾う
   // （不足側の depth 2〜6 で枠を埋め切る前に overflow の最新へ回す）
-  if (todayCount < maxPerRun && alreadyToday < maxPerDay) {
+  if (
+    !atRunCap() &&
+    !atDayCap() &&
+    !atHourCap() &&
+    !stoppedForRateLimit
+  ) {
     await runPass(
       'Pass1b 後回しソース',
       overflowCandidates,
@@ -1368,7 +1460,12 @@ async function main() {
   }
 
   // Pass 2: まだ余りなら緩和上限。後回し側を先に埋め、その後不足側
-  if (todayCount < maxPerRun && alreadyToday < maxPerDay) {
+  if (
+    !atRunCap() &&
+    !atDayCap() &&
+    !atHourCap() &&
+    !stoppedForRateLimit
+  ) {
     const softCap = Math.max(maxPerSourcePerRun + 2, maxPerRun);
     console.log(
       `枠余り (${todayCount}/${maxPerRun}) のためソース上限を ${softCap} に緩和します`
@@ -1377,12 +1474,20 @@ async function main() {
     await runPass('Pass2 不足ソース', primaryCandidates, softCap);
   }
 
-  if (todayCount >= maxPerRun) {
+  if (stoppedForRateLimit) {
+    console.log('レート制限のため途中終了（途中結果は保存）。');
+  } else if (atRunCap()) {
     console.log(
       `1実行の上限件数 (${maxPerRun}件) に達しました（残りは次回 ingest で処理）。`
     );
-  } else if (alreadyToday + todayCount >= maxPerDay && alreadyToday < maxPerDay) {
-    console.log(`1日の上限件数 (${maxPerDay}件) に達しました。`);
+  } else if (atHourCap() && alreadyThisHour < maxPerHour) {
+    console.log(
+      `1時間の上限件数 (${maxPerHour}件) に達しました（残りは次の時間へ）。`
+    );
+  } else if (atDayCap() && alreadyToday < maxPerDay) {
+    console.log(
+      `1日の上限件数 (${maxPerDay}件 / ${quotaTimeZone}) に達しました。`
+    );
   }
 
   const mergedAll = [...newArticles, ...existingArticles];

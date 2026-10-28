@@ -41,8 +41,9 @@ cp .env.example .env
 `.env` の各項目:
 - `SUMMARY_API_KEY`: 要約生成に使うLLMのAPIキー（スクリプト専用。**アプリ側には一切入らない**）
 - `SUMMARY_MODEL`: 要約モデル名（既定: `gemini-3.1-flash-lite`。比較例: `gemini-3.8-flash` / `gemini-3.6-flash`）
-- `MAX_ARTICLES_PER_DAY`: 1日の最大要約件数（Asia/Tokyo、既定: `500`。保持上限2000のまま軽さを優先）
-- `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `10`。cron 間引き対策と日上限500のバランス。ソース間は公平枠で分散）
+- `MAX_ARTICLES_PER_DAY`: 1日の最大要約件数（既定タイムゾーン `America/Los_Angeles`＝Gemini RPD、既定: `400`。無料枠の余白用）
+- `MAX_ARTICLES_PER_HOUR`: 1時間あたり上限（既定: `17` ≒ 日上限/24。均等配信）
+- `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `4`。15分 cron × 時間バジェット。ソース間は公平枠で分散）
 - `INGEST_ARTICLE_DELAY_MS`: 記事ごとのLLM間隔ミリ秒（デフォルト: `4000`）
 - `MAX_MONTHLY_COST_JPY`: 月間の費用上限（デフォルト: `3000`。無料枠中は実質 $0）
 - `EXPO_PUBLIC_FEED_URL`: （任意）本番等でリモートの静的JSON URLから記事を取得する場合に指定。未指定でも **開発中（`expo start`）は `public/articles.json` を都度取得**する。
