@@ -1,5 +1,33 @@
 [
   {
+    "id": "art-1793220491507-60ou9",
+    "source_id": "source-openrouter",
+    "source_name": "OpenRouter Announcements",
+    "url": "https://openrouter.ai/blog/tutorials/claude-529-overloaded/",
+    "published_at": "2026-10-28T00:00:00.000Z",
+    "og_image_url": "https://openrouter.ai/blog/images/claude-529-overloaded.png",
+    "title_ja": "Claudeの「529 Overloaded」エラーの原因と対策：API容量制限を回避するリトライ戦略とフォールバック構築術",
+    "summary_ja": "AnthropicのAPIで頻発する「529 Overloaded」エラーは、認証やプランの問題ではなく、サーバー側の容量枯渇を指す。 このエラーを回避するためには、指数バックオフを用いたリトライ処理の実装に加え、OpenRouterを活用した他プロバイダーへの自動ルーティング、または代替モデルへのフォールバック設定が不可欠だ。 APIの可用性を維持し、安定したアプリケーション運用を実現するために、単一モデルへの依存を避けた冗長なアーキテクチャ設計を推奨する。",
+    "translations": {
+      "ja": {
+        "title": "Claudeの「529 Overloaded」エラーの原因と対策：API容量制限を回避するリトライ戦略とフォールバック構築術",
+        "summary": "AnthropicのAPIで頻発する「529 Overloaded」エラーは、認証やプランの問題ではなく、サーバー側の容量枯渇を指す。 このエラーを回避するためには、指数バックオフを用いたリトライ処理の実装に加え、OpenRouterを活用した他プロバイダーへの自動ルーティング、または代替モデルへのフォールバック設定が不可欠だ。 APIの可用性を維持し、安定したアプリケーション運用を実現するために、単一モデルへの依存を避けた冗長なアーキテクチャ設計を推奨する。"
+      },
+      "en": {
+        "title": "How to Handle Claude's '529 Overloaded' API Error: Routing Strategies and Fallback Architectures for Stable Integration",
+        "summary": "The '529 overloaded_error' from Anthropic's API signals temporary capacity exhaustion for a specific model, not an issue with your credentials or rate limits. To maintain reliable uptime, builders must move beyond simple requests by implementing exponential backoff for retries and diversifying infrastructure. OpenRouter allows developers to seamlessly reroute traffic to different providers or automatically switch to fallback models when primary capacity hits a wall. For applications relying on Claude for critical workflows, embedding these redundancy layers is essential. The strategy effectively decoupling your core app from a single provider's capacity limitations is the only way to avoid service interruptions during high-traffic periods, ensuring that user-facing features remain performant regardless of upstream availability."
+      }
+    },
+    "tool_tags": [
+      "OpenRouter"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-28T20:48:11.507Z"
+  },
+  {
     "id": "art-1793213408561-6azdq",
     "source_id": "source-heygen-ugc",
     "source_name": "HeyGen Blog",
