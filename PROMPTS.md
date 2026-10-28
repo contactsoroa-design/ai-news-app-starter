@@ -18,7 +18,7 @@
 やること:
 - `scripts/ingest.ts` を作る。有効なソースのRSS取得 → 重複除外 → og:image のURL取得 → モデルで **日英ネイティブ要約** → `data/articles.json` へ保存。
 - 要約は `docs/SPEC.md` の仕様（`title_ja` / `summary_ja` / `title_en` / `summary_en` / タグ。英語は95〜140語で日本語と同密度）。見出しと冒頭をモデルに渡す。端末側機械翻訳は使わない。
-- 件数と費用の上限（`.env`、1日デフォルト360件・Asia/Tokyo）を守り、超えたら止める。失敗時の再試行は最大2回。品質は `npm run quality:check`。
+- 件数と費用の上限（`.env`、1日デフォルト500件・Asia/Tokyo）を守り、超えたら止める。失敗時の再試行は最大2回。品質は `npm run quality:check`。
 - `terms_checked = false` のソースは、取得しない。
 完了条件: コマンド1つで実行でき、日英要約つきで保存される。保存結果を一覧で表示するコマンドも作る。人が目で確認する。
 

@@ -40,7 +40,7 @@ const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
 /**
  * 1実行の追加上限。
  * schedule は間引かれる前提。チャンスが増えた分、成功した回で厚めに拾う。
- * 日上限 MAX_ARTICLES_PER_DAY（既定360）でブレーキ。
+ * 日上限 MAX_ARTICLES_PER_DAY（既定500）でブレーキ。
  */
 const DEFAULT_ARTICLES_PER_RUN = 10;
 /** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
@@ -949,7 +949,7 @@ async function main() {
   const articlesPath = path.join(rootDir, 'data', 'articles.json');
 
   // ソース取りこぼし防止。間引き前提の分散 cron × 少数件で分割しレート制限を避ける
-  const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '360');
+  const maxPerDay = Number(process.env.MAX_ARTICLES_PER_DAY || '500');
   const maxPerRun = Math.min(
     Number(process.env.MAX_ARTICLES_PER_RUN || DEFAULT_ARTICLES_PER_RUN),
     maxPerDay
