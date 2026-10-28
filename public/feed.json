@@ -1,5 +1,190 @@
 [
   {
+    "id": "art-1793175413896-3q37o",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/akaringo1109/articles/gemini-notebook-scheduled-actions",
+    "published_at": "2026-10-28T08:15:43.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--RNZxsFqE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2596%25B0%25E3%2581%2597%25E3%2581%258F%25E5%2587%25BA%25E3%2581%259F%2520%2540Gemini%2520Notebook%2520%25E3%2581%25A7%25E3%2580%2581%25E3%2583%259D%25E3%2583%2583%25E3%2583%2589%25E3%2582%25AD%25E3%2583%25A3%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E6%25AF%258E%25E6%2597%25A5%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E4%25BD%259C%25E3%2582%258D%25E3%2581%2586%25E3%2581%25A8%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%258B%25E3%2582%258A%25E3%2582%2593%25E3%2581%2594%2528Akaringo%2529%25EF%25BD%259C%25E3%2582%25B3%25E3%2583%25B3...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2JlYWMzOTViZjYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Gemini NotebookのAI音声機能でニュースポッドキャストを完全自動化する実験、API制限や実装の壁を越えた運用ノウハウ",
+    "summary_ja": "Geminiのチャットに統合された「@Gemini Notebook」を活用し、特定のニューステーマを自動で要約・音声解説化するポッドキャスト生成パイプラインの構築事例。 PCを介さず全自動化を目指したものの、チャット経由での音声解説生成の不可や、ソース追加における予約機能の挙動不安定さなど、現状の機能制約が判明した。 手軽な自動化ツールとして有望だが、現段階ではAPI的アプローチの欠如がボトルネックであり、運用の際にはそれらの挙動を前提としたワークフロー設計が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "Gemini NotebookのAI音声機能でニュースポッドキャストを完全自動化する実験、API制限や実装の壁を越えた運用ノウハウ",
+        "summary": "Geminiのチャットに統合された「@Gemini Notebook」を活用し、特定のニューステーマを自動で要約・音声解説化するポッドキャスト生成パイプラインの構築事例。 PCを介さず全自動化を目指したものの、チャット経由での音声解説生成の不可や、ソース追加における予約機能の挙動不安定さなど、現状の機能制約が判明した。 手軽な自動化ツールとして有望だが、現段階ではAPI的アプローチの欠如がボトルネックであり、運用の際にはそれらの挙動を前提としたワークフロー設計が不可欠となる。"
+      },
+      "en": {
+        "title": "Automating news podcasts with Gemini Notebook: Real-world trials, limitations, and the friction of building without a public API",
+        "summary": "This case study explores an attempt to build a fully automated podcast pipeline using the newly integrated '@Gemini Notebook' feature within Gemini to convert news feeds into synthesized audio summaries. While the goal was a serverless, PC-free automation flow, the experiment exposed significant limitations: specifically, the inability to trigger audio generation via standard chat prompts and inconsistent behavior when adding new sources to existing notebooks. Although Gemini Notebook shows promise as a rapid content generation tool, the lack of an exposed API forces developers into brittle, manual-heavy workarounds. For builders looking to replicate this, the practical takeaway is that while the AI engine is powerful, current product constraints make robust, fully autonomous production pipelines difficult to maintain without further platform maturity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "音声"
+    ],
+    "created_at": "2026-10-28T08:16:53.896Z"
+  },
+  {
+    "id": "art-1793175404842-rur4q",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/jobmore_dev/items/1d1041e1ae1b38f7cbcf",
+    "published_at": "2026-10-28T08:09:44.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzcwNDAwJTJGYjkxZWNjNjdhZWUyOTcwMWZiODU5ZDZmMTE2M2ZkMjJlZWQ2NTRmYiUyRmxhcmdlLnBuZyUzRjE3NzI0MzUzNTM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWEyZDcwMzAzZTRkYjc4MWVlZmQyNzJkMjdlOWQwZmVj%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZhYjZjZWY5MTc1ODQ2ZDMxZDEwZWEwNGVlMGM2NTIzMmZkODJlNDQzJTJGb3JpZ2luYWwuanBnJTNGMTc3NDI1NDE1NT9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz04MDY2N2QyMzUzMjcxM2JkNzUzMTY3Y2M4OGYzZjg3Nw%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dfc196d690dae4f25154e0f1ff8dc5a2f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFMyU4MiU5MiVFNiVCMSU4MiVFNCVCQSVCQSVFNyVBNSVBOCVFMyU4MSVBQiVFNiU5QiVCOCVFMyU4MSU4RiVFNCVCQyU5QSVFNyVBNCVCRSVFMyU4MSVBRiVFMyU4MCU4MSVFMyU4MiVBOCVFMyU4MyVCMyVFMyU4MiVCOCVFMyU4MyU4QiVFMyU4MiVBMiVFNSU4QiU5RiVFOSU5QiU4NiVFMyU4MSVBRTQzJUU3JUE0JUJFJUUzJTgxJUFCMSVFNyVBNCVCRSVFMyU4MSVBNyVFMyU4MSU5NyVFMyU4MSU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWMxMTIzZDI3MjM5ZDEzMWVkMWRiZjU4OGUxZmZkMWE3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBqb2Jtb3JlX2RldiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWQ5NDhjYTJlYjkwZDViOTIzZGE3ZjM0YjBiM2JkMTRm&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=44K444On44OW44Oi44Ki5qCq5byP5Lya56S-&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=ca3c952fb7fa5e0be2722b7d39282665",
+    "title_ja": "エンジニア求人票における「Claude Code」導入企業の割合を調査、募集企業43社中1社で採用実績（または要件）として明記される現状",
+    "summary_ja": "求人検索エンジン「JOBMORE」のエンジニアが、開発環境の項目に「Claude Code」を記載している求人票の割合を独自調査した。 結果、調査対象のエンジニア募集求人のうち約43社に1社がClaude Codeの名称を挙げており、AIコーディングツールが実際の開発現場の採用要件や技術スタックとして定着し始めていることが明らかになった。 AIツール活用のスキルが、エンジニアの市場価値を左右する新たな指標となりつつある。",
+    "translations": {
+      "ja": {
+        "title": "エンジニア求人票における「Claude Code」導入企業の割合を調査、募集企業43社中1社で採用実績（または要件）として明記される現状",
+        "summary": "求人検索エンジン「JOBMORE」のエンジニアが、開発環境の項目に「Claude Code」を記載している求人票の割合を独自調査した。 結果、調査対象のエンジニア募集求人のうち約43社に1社がClaude Codeの名称を挙げており、AIコーディングツールが実際の開発現場の採用要件や技術スタックとして定着し始めていることが明らかになった。 AIツール活用のスキルが、エンジニアの市場価値を左右する新たな指標となりつつある。"
+      },
+      "en": {
+        "title": "Analysis of job postings reveals 1 in 43 companies now explicitly lists Claude Code in their tech stacks",
+        "summary": "An engineer from the job search engine JOBMORE conducted a deep dive into recruitment data to quantify how often Claude Code appears within the development environment sections of job postings. The analysis found that approximately one in every 43 engineering listings now explicitly cites Claude Code as part of their workflow. This trend highlights that AI-powered coding agents are rapidly moving from novelty tools to established components of professional technical stacks. For developers, the data suggests that proficiency in AI-assisted coding is increasingly becoming a tangible hiring requirement, signaling a shift where familiarity with tools like Claude Code significantly impacts one's marketability and professional standing within the modern software engineering landscape."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-28T08:16:44.842Z"
+  },
+  {
+    "id": "art-1793175459948-sguug",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/jobmore/articles/claude-code-in-job-postings",
+    "published_at": "2026-10-28T08:09:40.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OmGXJp3v--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2582%2592%25E6%25B1%2582%25E4%25BA%25BA%25E7%25A5%25A8%25E3%2581%25AB%25E6%259B%25B8%25E3%2581%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2581%25AF%25E3%2580%2581%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E5%258B%259F%25E9%259B%2586%25E3%2581%25AE43%25E7%25A4%25BE%25E3%2581%25AB1%25E7%25A4%25BE%25E3%2581%25A7%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25B8%25E3%2583%25A7%25E3%2583%2596%25E3%2583%25A2%25E3%2582%25A2%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ZlODkwMGQzY2YuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "エンジニア求人における「Claude Code」記載状況を調査—12,562社中290社（43社に1社）が導入を明記する現状",
+    "summary_ja": "求人検索エンジン「JOBMORE」のデータによれば、エンジニアを募集する12,562社のうち、開発環境に「Claude Code」の記載があるのは290社で、割合にして約43社に1社となった。 開発者の約4割が業務利用するツールであるにもかかわらず、求人票での言及率は依然として低い。 企業側は、こうした先端ツールの活用を明示することが、技術志向の高いエンジニアへの強力なアピール材料になることを認識すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "エンジニア求人における「Claude Code」記載状況を調査—12,562社中290社（43社に1社）が導入を明記する現状",
+        "summary": "求人検索エンジン「JOBMORE」のデータによれば、エンジニアを募集する12,562社のうち、開発環境に「Claude Code」の記載があるのは290社で、割合にして約43社に1社となった。 開発者の約4割が業務利用するツールであるにもかかわらず、求人票での言及率は依然として低い。 企業側は、こうした先端ツールの活用を明示することが、技術志向の高いエンジニアへの強力なアピール材料になることを認識すべきだ。"
+      },
+      "en": {
+        "title": "Data reveals only 1 in 43 engineer job postings explicitly mention Claude Code usage, despite broad adoption",
+        "summary": "An analysis of 12,562 tech job listings on the search engine JOBMORE reveals that only 290 companies—roughly 1 in 43—explicitly list Claude Code in their development stack. This represents a significant disconnect given that nearly 40% of professional developers now incorporate such AI agentic tools into their daily workflows. The findings suggest that many hiring organizations are failing to signal their technological maturity to prospective talent. For engineering managers and recruiters, explicitly highlighting the use of cutting-edge AI coding agents in job descriptions is an underutilized strategy for attracting high-caliber engineers who prioritize modern, AI-assisted development environments over traditional, manual coding workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-28T08:17:39.948Z"
+  },
+  {
+    "id": "art-1793175396433-q11ys",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shiroi1229/n/na6a48b8892b9",
+    "published_at": "2026-10-28T08:08:14.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/329475174/rectangle_large_type_2_4c7cfb84a71beb8e33b30b3dca6d39b2.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI実装の手戻りを防ぐ「トークン消費予測」の重要性：SPOアルゴリズムの境界条件定義と本番運用に向けた設計の最適化手法",
+    "summary_ja": "AIシステム開発において、論文通りの構成をそのまま実装すると本番環境で破綻するリスクが高い。 特にトークン消費予測を怠ることで強化学習ロールアウト時の最適化が失敗し、設計のやり直しという手戻りが発生する。 これを防ぐ鍵は、SPO（Aligned）に基づいた境界条件を事前に定義し、トラフィック予測とトークンコストを掛け合わせた「採否判断表」を用いて実装を評価することだ。",
+    "translations": {
+      "ja": {
+        "title": "AI実装の手戻りを防ぐ「トークン消費予測」の重要性：SPOアルゴリズムの境界条件定義と本番運用に向けた設計の最適化手法",
+        "summary": "AIシステム開発において、論文通りの構成をそのまま実装すると本番環境で破綻するリスクが高い。 特にトークン消費予測を怠ることで強化学習ロールアウト時の最適化が失敗し、設計のやり直しという手戻りが発生する。 これを防ぐ鍵は、SPO（Aligned）に基づいた境界条件を事前に定義し、トラフィック予測とトークンコストを掛け合わせた「採否判断表」を用いて実装を評価することだ。"
+      },
+      "en": {
+        "title": "Why AI algorithm implementations fail in production: Defining token consumption limits and SPO boundary conditions to avoid costly rework",
+        "summary": "Many AI implementations fail in production because developers mirror academic papers without accounting for operational realities, particularly token consumption and latency bottlenecks. Without defining clear boundary conditions for token usage, the reinforcement learning rollout inevitably collapses under real traffic, forcing expensive redesigns. The solution is to integrate a rigorous 'Acceptance/Rejection Matrix'—leveraging SPO and Aligned methodologies—during the prototyping phase to forecast token costs against expected user load. For indie builders, failing to map these constraints early creates a technical debt trap that destroys profit margins. You must evaluate every algorithm not just for accuracy, but for its predictable token overhead, ensuring that your core logic stays sustainable as traffic scales without requiring a complete architecture overhaul."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-28T08:16:36.433Z"
+  },
+  {
+    "id": "art-1793175450368-8kh5k",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/murabo/n/n22cce3ec65b3",
+    "published_at": "2026-10-28T08:07:58.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/329352132/rectangle_large_type_2_1d250f749ba97ed42623957dacba065b.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIで10万円稼ぐ個人開発実験の現在地：90日で検証する「指示出し」から「共創」へのパラダイムシフトと収益のリアル",
+    "summary_ja": "「90日間で10万円を稼ぐ」というテーマで継続してきた個人開発実験が残り14日を迎えた。 当初はAIに全ての作業を任せるアプローチをとっていたが、実運用を通じて「指示出し」するだけの関係性では限界があることが判明。 現在はAIをパートナーとして共にサービスを作り上げる「共創」スタイルへ転換し、収益構造を安定させている。 AI主導の開発でいかに品質を担保しつつマネタイズに繋げるか、現場で得られた実践的なノウハウと収益の壁を共有する。",
+    "translations": {
+      "ja": {
+        "title": "AIで10万円稼ぐ個人開発実験の現在地：90日で検証する「指示出し」から「共創」へのパラダイムシフトと収益のリアル",
+        "summary": "「90日間で10万円を稼ぐ」というテーマで継続してきた個人開発実験が残り14日を迎えた。 当初はAIに全ての作業を任せるアプローチをとっていたが、実運用を通じて「指示出し」するだけの関係性では限界があることが判明。 現在はAIをパートナーとして共にサービスを作り上げる「共創」スタイルへ転換し、収益構造を安定させている。 AI主導の開発でいかに品質を担保しつつマネタイズに繋げるか、現場で得られた実践的なノウハウと収益の壁を共有する。"
+      },
+      "en": {
+        "title": "Monetizing AI: Analyzing a 90-Day Experiment Moving from Prompting AI to Co-Creating Digital Products for Sustainable Revenue",
+        "summary": "With only 14 days left in a 90-day experiment to generate 100,000 yen through AI-assisted indie development, the results reveal a crucial shift in methodology. While the project began by treating AI as a black box to delegate tasks, the operator discovered that mere prompting hit a ceiling in product quality and market fit. The strategy evolved into a collaborative 'co-creation' model, where the developer works alongside the AI to refine and pivot the product. This shift highlights that purely hands-off AI development struggles to generate consistent revenue. The findings offer a candid look at the technical and creative walls encountered when building with LLMs, providing valuable lessons on balancing automated workflows with human-led strategic product design."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-28T08:17:30.368Z"
+  },
+  {
+    "id": "art-1793175476964-gj7u3",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tiesplayhub/articles/1c1037b11d0c0c",
+    "published_at": "2026-10-28T08:07:38.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--5JijPInz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%2589%25E3%2581%25AE%25E6%2596%2599%25E9%2587%2591%25E3%2582%2592%25E5%25BA%25A6%25E5%25A4%2596%25E8%25A6%2596%25E3%2581%2597%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AF%25E3%2580%2581AI%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%258F%25E6%258C%2587%25E7%25A4%25BA%25E3%2581%2597%25E3%2581%259F%25E7%25A7%2581%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2582%258B%25E3%2581%25B1%25E3%2581%258B%25EF%25BD%259CAI%25E9%25A7%2586%25E5%258B%2595%25E9%2596%258B%25E7%2599%25BA%2520%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%259E%25E3%2583%25BC%25E5%2590%2591%25E3%2581%2591...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ViMjBhYjUzMTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "「AI任せの開発」で陥るクラウド高額請求の罠：コスト意識なき指示が招いた従量課金の落とし穴と対策",
+    "summary_ja": "AIによる設計開発では、指示側が明示しない限りコスト最適化が後回しにされ、従量課金が高額化するリスクがある。 リアルタイム通知の実装例では、APIの呼び出し頻度を考慮しない設計が即座にコストへ反映された。 AIは技術的に妥当な設計を提案できるが、それは「安価な構成」とイコールではない。 開発者は実装をAIに委ねつつも、インフラの課金モデルを前提条件として提示し、コスト効率を設計の評価軸に組み込む必要がある。",
+    "translations": {
+      "ja": {
+        "title": "「AI任せの開発」で陥るクラウド高額請求の罠：コスト意識なき指示が招いた従量課金の落とし穴と対策",
+        "summary": "AIによる設計開発では、指示側が明示しない限りコスト最適化が後回しにされ、従量課金が高額化するリスクがある。 リアルタイム通知の実装例では、APIの呼び出し頻度を考慮しない設計が即座にコストへ反映された。 AIは技術的に妥当な設計を提案できるが、それは「安価な構成」とイコールではない。 開発者は実装をAIに委ねつつも、インフラの課金モデルを前提条件として提示し、コスト効率を設計の評価軸に組み込む必要がある。"
+      },
+      "en": {
+        "title": "The Cloud Cost Trap: Why Relying on AI Development Without Cost-Aware Prompts Leads to Massive Bills",
+        "summary": "When using AI for architecture, developers often fall into the trap of assuming efficiency, only to find that AI prioritizes functionality over cost-effective billing models. A real-world example involving a real-time notification system shows how an AI-suggested architecture blindly ignored API call frequency, leading to unnecessary usage spikes. While AI can draft technically sound solutions, it does not inherently optimize for your specific cloud budget unless explicitly instructed to do so. The practical takeaway for builders is that you cannot treat infrastructure costs as an afterthought. You must bake cost constraints directly into your prompts and treat architecture efficiency as a primary project requirement, rather than assuming the AI model will naturally favor the most economical solution for your specific scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-10-28T08:17:56.964Z"
+  },
+  {
+    "id": "art-1793175467864-jpcrz",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/yomitoka/n/nc2c1ed22582e",
+    "published_at": "2026-10-28T08:04:44.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/329431938/rectangle_large_type_2_46a21fe5ec69980a7286c3d91c31ce22.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "日本企業分析AI「yomitoka」のテスト手法：段階的なクエリ変容をどう評価し、検索精度を担保するか",
+    "summary_ja": "企業情報検索サービス「yomitoka」では、ユーザーの検索意図が「小売の会社を探す」から「利益率10%以上の企業を絞り込む」へと動的に変化するプロセスを重要視している。 開発チームは、この一連の対話におけるクエリ変容をテストするため、単発の回答精度ではなく、コンテキストを維持した状態での追従性を評価指標として重視する。 AIエージェントが複雑なビジネス条件を解釈し、段階的に要件を絞り込めるかを確認することが、実用的なエンタープライズ検索を構築する鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "日本企業分析AI「yomitoka」のテスト手法：段階的なクエリ変容をどう評価し、検索精度を担保するか",
+        "summary": "企業情報検索サービス「yomitoka」では、ユーザーの検索意図が「小売の会社を探す」から「利益率10%以上の企業を絞り込む」へと動的に変化するプロセスを重要視している。 開発チームは、この一連の対話におけるクエリ変容をテストするため、単発の回答精度ではなく、コンテキストを維持した状態での追従性を評価指標として重視する。 AIエージェントが複雑なビジネス条件を解釈し、段階的に要件を絞り込めるかを確認することが、実用的なエンタープライズ検索を構築する鍵となる。"
+      },
+      "en": {
+        "title": "Testing yomitoka’s AI-driven enterprise search: Evaluating multi-turn query refinement for Japanese business data",
+        "summary": "The developers behind the Japanese corporate intelligence platform yomitoka are refining their evaluation strategy by focusing on how users dynamically shift their search intent—moving from broad queries like “find retail companies” to specific constraints like “filter by profit margins over 10%.” Instead of measuring isolated chatbot accuracy, the team prioritizes evaluating the agent's ability to track and adapt to these conversational refinements across multiple turns. The practical takeaway for builders is that enterprise search is not about single-shot retrieval; it is about maintaining context while handling evolving business conditions. This testing framework ensures the AI can reliably narrow down complex criteria, proving that robustness in conversational state management is the true differentiator for professional-grade RAG and search applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-28T08:17:47.864Z"
+  },
+  {
     "id": "art-1793174528059-6w3jz",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -50,6 +235,33 @@
       "開発"
     ],
     "created_at": "2026-10-28T08:02:52.293Z"
+  },
+  {
+    "id": "art-1793175425200-c0rs3",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://fleetingswallow.com/claude-vs-gpuless-ai-a-reasoning-showdown/",
+    "published_at": "2026-10-28T07:55:42.000Z",
+    "og_image_url": null,
+    "title_ja": "Claudeと「GPUレスAIアーキテクチャ」の推論能力を徹底比較：低リソース環境下でのモデル選定と構築の最適解を探る",
+    "summary_ja": "この記事は、Claudeのような大規模言語モデルと、GPUを必要としない効率的なAIアーキテクチャの推論性能を対決させた技術検証です。 高コストなGPUリソースに依存せず、いかに推論精度を維持しつつスループットを最大化するかという、個人開発者やコスト重視のスタートアップにとって重要な設計課題を掘り下げています。",
+    "translations": {
+      "ja": {
+        "title": "Claudeと「GPUレスAIアーキテクチャ」の推論能力を徹底比較：低リソース環境下でのモデル選定と構築の最適解を探る",
+        "summary": "この記事は、Claudeのような大規模言語モデルと、GPUを必要としない効率的なAIアーキテクチャの推論性能を対決させた技術検証です。 高コストなGPUリソースに依存せず、いかに推論精度を維持しつつスループットを最大化するかという、個人開発者やコスト重視のスタートアップにとって重要な設計課題を掘り下げています。"
+      },
+      "en": {
+        "title": "Claude versus 'GPU-less AI architecture': A deep-dive reasoning showdown to determine optimal deployment strategies for low-resource environments",
+        "summary": "This technical investigation pits the reasoning capabilities of Claude against streamlined, GPU-less AI architectures to evaluate real-world performance trade-offs. The analysis confronts the critical challenge faced by indie hackers and budget-conscious engineering teams: how to maintain high inference accuracy while slashing reliance on expensive, compute-heavy hardware. By stress-testing these disparate systems, the article provides actionable benchmarks on whether non-GPU environments can genuinely scale for modern production needs. For builders, the key takeaway is that architecture design often trumps raw model size; understanding the limits of CPU-based inference versus hosted LLM APIs is essential for controlling costs and latency without sacrificing the core reasoning quality required for sophisticated application logic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-28T08:17:05.200Z"
   },
   {
     "id": "art-1793174534279-leky4",
@@ -1262,6 +1474,32 @@
       "コスト・API料金"
     ],
     "created_at": "2026-10-28T07:48:23.974Z"
+  },
+  {
+    "id": "art-1793175443389-048t1",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/gzh1994/articles/quantg-replay-strategy",
+    "published_at": "2026-10-28T01:22:04.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--00A5M8UV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:QuantG%2520%25E3%2581%25AE%25E3%2583%25AA%25E3%2583%2597%25E3%2583%25AC%25E3%2582%25A4%25E6%2588%25A6%25E7%2595%25A5%25E3%2581%25AE%25E7%25B4%25B9%25E4%25BB%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AB%25E3%2583%25B3%25E3%2583%2581%25E3%2583%258F%25E3%2583%25B3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmJhU3AyVG1UQV9vOVVmNHZzQ3NfLXlzZkluaFNfcHNTZUcwNlgydVA3MU1oLXNnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発の日本株AIクオンツ「QuantG」が採用する、当時の情報を厳密に再現しバックテスト精度を高めるヒストリカルリプレイ戦略",
+    "summary_ja": "個人開発の日本株AIクオンツシステム「QuantG」は、LLMが生成した因子を基に銘柄を選定するが、その信頼性を担保するためヒストリカルリプレイ機能を実装している。 この機能の核心は「未来の情報をリークさせないこと」であり、株価だけでなく過去の因子生成環境までも完全に再現する点にある。 バックテストにおいて、当時知り得なかったデータが予測に混入するのを防ぐ徹底した時系列の分離こそが、AIによるトレード戦略の有効性を客観的に評価する際の必須条件となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発の日本株AIクオンツ「QuantG」が採用する、当時の情報を厳密に再現しバックテスト精度を高めるヒストリカルリプレイ戦略",
+        "summary": "個人開発の日本株AIクオンツシステム「QuantG」は、LLMが生成した因子を基に銘柄を選定するが、その信頼性を担保するためヒストリカルリプレイ機能を実装している。 この機能の核心は「未来の情報をリークさせないこと」であり、株価だけでなく過去の因子生成環境までも完全に再現する点にある。 バックテストにおいて、当時知り得なかったデータが予測に混入するのを防ぐ徹底した時系列の分離こそが、AIによるトレード戦略の有効性を客観的に評価する際の必須条件となる。"
+      },
+      "en": {
+        "title": "Individual developer behind 'QuantG' details historical replay strategy for rigorous, leak-free backtesting of AI-driven Japanese stock quant models",
+        "summary": "The individual developer behind 'QuantG,' an AI-driven quantitative system for Japanese stocks, outlines their implementation of historical replay, a mechanism designed to validate LLM-generated trading factors. The core of this strategy is a strict prohibition on look-ahead bias; the system meticulously recreates the environment of past dates, including not just historical price data but the specific state of factor generation at that time. By isolating information to exactly what was known on that day, the developer ensures that backtesting results are not inflated by future insights. This rigorous separation of time-series data serves as a critical benchmark for any builder attempting to evaluate the true predictive performance of AI models in volatile financial markets."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-10-28T08:17:23.389Z"
   },
   {
     "id": "art-1793172740870-ukeuf",
@@ -5552,6 +5790,33 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-27T18:55:28.819Z"
+  },
+  {
+    "id": "art-1793175433753-glg1c",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/open-for-sales",
+    "published_at": "2026-10-27T15:27:12.000Z",
+    "og_image_url": null,
+    "title_ja": "AI営業キャンペーン生成ツール「Open For Sales」が登場、プロンプトひとつで数分以内にリード獲得用コンテンツを自動構築へ",
+    "summary_ja": "「Open For Sales」は、テキストプロンプトを入力するだけで、パーソナライズされた営業キャンペーンを即座に作成できるAIプラットフォームだ。 ターゲット顧客の選定から訴求メッセージの生成までを自動化し、数分でアウトリーチを開始できる。 手動でのコンテンツ作成やコールドメールの構成に時間を奪われていた個人開発者や小規模チームにとって、営業活動の障壁を下げ、より本質的な商談に集中できる環境を提供する。",
+    "translations": {
+      "ja": {
+        "title": "AI営業キャンペーン生成ツール「Open For Sales」が登場、プロンプトひとつで数分以内にリード獲得用コンテンツを自動構築へ",
+        "summary": "「Open For Sales」は、テキストプロンプトを入力するだけで、パーソナライズされた営業キャンペーンを即座に作成できるAIプラットフォームだ。 ターゲット顧客の選定から訴求メッセージの生成までを自動化し、数分でアウトリーチを開始できる。 手動でのコンテンツ作成やコールドメールの構成に時間を奪われていた個人開発者や小規模チームにとって、営業活動の障壁を下げ、より本質的な商談に集中できる環境を提供する。"
+      },
+      "en": {
+        "title": "Open For Sales launches an AI-powered campaign generator that builds targeted outreach and lead-gen materials from simple text prompts in minutes",
+        "summary": "Open For Sales is a new AI-powered platform designed to streamline the sales process by generating personalized outreach campaigns directly from simple text prompts. By automating the transition from target audience definition to high-converting copy, it allows teams to launch their sales efforts in just a few minutes. For solo founders and small teams frequently bottlenecked by the repetitive manual work of cold email drafting and content creation, this tool effectively lowers the barrier to entry for effective outreach. It effectively minimizes the time spent on administrative sales tasks, allowing builders to focus their energy on closing leads and managing high-value customer relationships rather than staring at a blinking cursor in a document editor."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-10-28T08:17:13.753Z"
   },
   {
     "id": "art-1793126546244-kevuc",
