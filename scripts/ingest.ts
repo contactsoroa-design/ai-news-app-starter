@@ -616,6 +616,19 @@ function isTopPageOrIndexUrl(urlStr: string, siteUrl?: string): boolean {
   }
 }
 
+/** 記事URL候補から画像・preload を除外する（Resend 等の content:encoded 内 <link href=画像> 誤採用防止） */
+function isLikelyArticleUrl(url: string): boolean {
+  if (!/^https?:\/\//i.test(url)) return false;
+  const clean = url.split('#')[0].split('?')[0];
+  if (/\.(jpe?g|png|gif|webp|svg|avif|bmp|ico)$/i.test(clean)) return false;
+  if (/\/vi\/[\w-]+\/(?:hq|mq|sd)?default/i.test(clean)) return false;
+  if (/\/static\/avatars\//i.test(clean)) return false;
+  if (/cdn\.resend\.com\/posts\//i.test(clean) && /\.(jpe?g|png|webp)$/i.test(clean)) {
+    return false;
+  }
+  return true;
+}
+
 function parseRssItems(xml: string, siteUrl?: string): RawFeedItem[] {
   const items: RawFeedItem[] = [];
   const itemMatches = xml.match(/<(item|entry)[\s>][\s\S]*?<\/\1>/gi) ?? [];
@@ -625,13 +638,15 @@ function parseRssItems(xml: string, siteUrl?: string): RawFeedItem[] {
     const altLinkMatch = block.match(
       /<link[^>]*rel=["']alternate["'][^>]*href=["']([^"']+)["'][^>]*\/?>/i
     );
-    const hrefLinkMatch = block.match(
-      /<link[^>]*href=["']([^"']+)["'][^>]*\/?>/i
-    );
-    const textLinkMatch = block.match(/<link[^>]*>([\s\S]*?)<\/link>/i);
-    const guidMatch = block.match(
-      /<guid[^>]*isPermaLink=["']true["'][^>]*>([\s\S]*?)<\/guid>/i
-    );
+    // Atom 等の href 付き link。preload / stylesheet は除外
+    const hrefLinkMatches = [
+      ...block.matchAll(
+        /<link\b(?![^>]*rel=["'](?:preload|stylesheet|icon|shortlink)["'])[^>]*href=["']([^"']+)["'][^>]*\/?>/gi
+      ),
+    ].map((m) => m[1]);
+    // RSS 2.0 の本文リンク（content:encoded 内の <link rel=preload> より優先）
+    const textLinkMatch = block.match(/<link(?:\s[^>]*)?>([\s\S]*?)<\/link>/i);
+    const guidMatch = block.match(/<guid[^>]*>([\s\S]*?)<\/guid>/i);
 
     const pubDateMatch =
       block.match(/<(pubDate|published|updated)[^>]*>([\s\S]*?)<\/\1>/i);
@@ -639,13 +654,15 @@ function parseRssItems(xml: string, siteUrl?: string): RawFeedItem[] {
       block.match(/<(description|summary|content:encoded|content)[^>]*>([\s\S]*?)<\/\1>/i);
 
     const title = titleMatch ? decodeEntities(titleMatch[1]) : '';
-    const rawLink =
-      altLinkMatch?.[1] ||
-      hrefLinkMatch?.[1] ||
-      textLinkMatch?.[1] ||
-      guidMatch?.[1] ||
-      '';
-    const link = decodeEntities(rawLink).split('#')[0];
+    const candidates = [
+      altLinkMatch?.[1],
+      textLinkMatch?.[1],
+      guidMatch?.[1],
+      ...hrefLinkMatches,
+    ]
+      .map((raw) => (raw ? decodeEntities(raw).split('#')[0].trim() : ''))
+      .filter((u) => isLikelyArticleUrl(u));
+    const link = candidates[0] ?? '';
     const pubDateRaw = pubDateMatch ? decodeEntities(pubDateMatch[2]) : null;
     const snippet = descMatch ? decodeEntities(descMatch[2]).slice(0, 900) : '';
 
