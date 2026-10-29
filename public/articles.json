@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1793261829958-c3ybb",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/quiet_leaf_apps/n/n8e5f7e8ba012",
+    "published_at": "2026-10-29T08:15:04.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/329813476/rectangle_large_type_2_08f058ff89c6bd1789d05a19109e9014.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "医療AIによるカルテ自動生成の「余計な饒舌さ」問題――AI自動記録の精度と、本当に必要な情報の取捨選択を考えるための開発的考察",
+    "summary_ja": "診察の音声をAIで文字起こしし、自動でカルテを作成するシステムを実装した結果、AIは不要な会話まで過剰に要約する「饒舌すぎるカルテ」を生成した。 効率化を目指して導入したAIが、かえって情報のノイズを増やし、本来の業務負荷を上げてしまう逆転現象が起きている。 開発者はAIの要約設定において、プロンプトでの情報の重要度付けや、医師が求めているフォーマットの厳密な定義など、情報の「引き算」を可能にする制御機能の実装が不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "医療AIによるカルテ自動生成の「余計な饒舌さ」問題――AI自動記録の精度と、本当に必要な情報の取捨選択を考えるための開発的考察",
+        "summary": "診察の音声をAIで文字起こしし、自動でカルテを作成するシステムを実装した結果、AIは不要な会話まで過剰に要約する「饒舌すぎるカルテ」を生成した。 効率化を目指して導入したAIが、かえって情報のノイズを増やし、本来の業務負荷を上げてしまう逆転現象が起きている。 開発者はAIの要約設定において、プロンプトでの情報の重要度付けや、医師が求めているフォーマットの厳密な定義など、情報の「引き算」を可能にする制御機能の実装が不可欠である。"
+      },
+      "en": {
+        "title": "The Over-Explanation Problem in AI-Generated Medical Records: Why Automation Requires Precision Tuning to Avoid Data Noise",
+        "summary": "I recently experimented with automating medical record creation by transcribing patient consultations via AI, only to discover a persistent issue: the system generates overly verbose summaries that clutter charts with irrelevant, non-medical dialogue. The irony of this automation is that it aims to streamline clinical workflows but instead creates significant information noise, paradoxically increasing the doctor's workload by forcing them to edit out unnecessary details. For developers building vertical AI tools for healthcare, this highlights that basic summarization is insufficient. To provide real value, you must implement sophisticated prompt engineering and filtering constraints that prioritize clinical relevance over raw text density. The crucial feature is 'subtraction'—giving users control to strictly define what information gets excluded, ensuring the AI records only the medical essentials."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-29T08:17:09.958Z"
+  },
+  {
+    "id": "art-1793261822496-x16mh",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/kab_ai_lab/items/d2ca990eb95083168b3a",
+    "published_at": "2026-10-29T08:11:03.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTIzNjM3JTJGYTgyNDgyNmJhYzhkM2VjOWEwZGJhZmY5MDM1MTU0Y2JlZDVkNDY1ZCUyRmxhcmdlLnBuZyUzRjE3OTMyMDg3Njg_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTY1MTU0ODkzMTA1MTUyNGI1NjFlODRlNDQ1MGRhYjc4%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D82dfe3d0ac69a04da93497b8f53e0f01?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JUFFJTlBJUU1JTlFJThCJUU1JTg3JUE2JUU3JTkwJTg2JUUzJTgxJUFCJUU1JTg4JUE0JUU2JTk2JUFEJUUzJTgyJTkyJUU2JThDJTgxJUUzJTgxJTlGJUUzJTgxJTlCJUUzJTgyJThCJUUzJTgxJUE4JUU3JUI1JTkwJUU2JTlFJTlDJUUzJTgxJThDJUU2JThGJUJBJUUzJTgyJThDJUUzJTgyJThCJUUyJTgwJTk0JUUyJTgwJTk0JUU1JUFFJTlGJUU4JUExJThDJUU1JUJEJUI5JUUzJTgyJTkyJUUzJTgwJThDJUU4JTgwJTgzJUUzJTgxJTg4JUUzJTgxJTk1JUUzJTgxJTlCJUUzJTgxJUFBJUUzJTgxJTg0JUUzJTgwJThEJUU2JUE3JThCJUU2JTg4JTkwJUUzJTgxJUFCJUUzJTgxJTk3JUUzJTgxJTlGJUU3JTkwJTg2JUU3JTk0JUIxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YzQ0YTliOWVmOTI4MWNmM2VkZGNiMzMzODZkNzhkZWI&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrYWJfYWlfbGFiJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MDc4ZWJjN2IxMDlkNmIxM2Q5OThhMTA2ZmFjZDQ4Mzc&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=fcfaac35ebf6e0dffc9b59df2d392118",
+    "title_ja": "自作AIアシスタント「Jarvis」開発記：定型処理の実行役に判断させず「考えさせない」設計に切り替えた理由と再現性の担保",
+    "summary_ja": "自作AIアシスタント「Jarvis」の開発を通じて、定型処理をAIに行わせる際、実行役に判断ロジックを持たせると結果が揺らぎやすく、不安定になる問題に直面した。 そこで「判断（思考）」と「実行」のプロセスを分離し、実行役には一切の意思決定をさせない設計に刷新したところ、処理の再現性が劇的に向上した。 AIアプリ開発においては、LLMの推論能力を過信せず、定型的なタスクほど「考えさせない」アーキテクチャに落とし込むことが、安定稼働を実現する鉄則となる。",
+    "translations": {
+      "ja": {
+        "title": "自作AIアシスタント「Jarvis」開発記：定型処理の実行役に判断させず「考えさせない」設計に切り替えた理由と再現性の担保",
+        "summary": "自作AIアシスタント「Jarvis」の開発を通じて、定型処理をAIに行わせる際、実行役に判断ロジックを持たせると結果が揺らぎやすく、不安定になる問題に直面した。 そこで「判断（思考）」と「実行」のプロセスを分離し、実行役には一切の意思決定をさせない設計に刷新したところ、処理の再現性が劇的に向上した。 AIアプリ開発においては、LLMの推論能力を過信せず、定型的なタスクほど「考えさせない」アーキテクチャに落とし込むことが、安定稼働を実現する鉄則となる。"
+      },
+      "en": {
+        "title": "Building Jarvis: Why you should separate AI decision-making from execution to stop routine tasks from becoming unreliable",
+        "summary": "While building a custom AI assistant named Jarvis, I realized that allowing AI execution agents to handle both decision-making and routine tasks leads to flaky, unpredictable outcomes. By separating the logic layer from the execution layer and forcing the execution agent to operate without making any independent judgments, I drastically improved result reproducibility. In AI application development, over-relying on an LLM's general reasoning capability for rote tasks is a common trap. The critical takeaway for builders is to adopt an architecture that explicitly restricts agent 'thinking' during routine operations. Reducing the scope of AI decisions within critical workflows isn't a limitation; it is the most effective way to ensure stable, repeatable performance in production-grade AI systems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-29T08:17:02.496Z"
+  },
+  {
+    "id": "art-1793261839918-l1evd",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://checker.visiblebyagents.com/self-check.html",
+    "published_at": "2026-10-29T08:05:41.000Z",
+    "og_image_url": null,
+    "title_ja": "AIの視認性を最適化する無料診断ツール「16-point check」公開、AI検索やチャットボットでの自社サイトの認識精度を向上",
+    "summary_ja": "AIエージェントや検索エンジンが自社サイトをどう解釈しているかを可視化する無料の「16ポイント診断ツール」が公開された。 HTML構造、robots.txtの記述、主要AIのクローラー制限など、AIの閲覧性を損なう技術的負債を迅速に特定できる。 AI検索からの流入を重視する開発者にとって、自サイトを「AIフレンドリー」に設計するための初期診断として有用なリソースとなる。",
+    "translations": {
+      "ja": {
+        "title": "AIの視認性を最適化する無料診断ツール「16-point check」公開、AI検索やチャットボットでの自社サイトの認識精度を向上",
+        "summary": "AIエージェントや検索エンジンが自社サイトをどう解釈しているかを可視化する無料の「16ポイント診断ツール」が公開された。 HTML構造、robots.txtの記述、主要AIのクローラー制限など、AIの閲覧性を損なう技術的負債を迅速に特定できる。 AI検索からの流入を重視する開発者にとって、自サイトを「AIフレンドリー」に設計するための初期診断として有用なリソースとなる。"
+      },
+      "en": {
+        "title": "Free 16-point check tool launches to optimize how AI agents and LLMs interpret your website content",
+        "summary": "A new diagnostic tool offers a free 16-point checklist designed to reveal exactly how AI agents, search-based chatbots, and LLM crawlers perceive your website. The tool flags critical technical bottlenecks—ranging from inefficient HTML structure and metadata to misconfigured robots.txt files—that often prevent AI from correctly ingesting or summarizing site content. For developers and builders aiming to capture traffic from the evolving AI search ecosystem, this audit provides a straightforward roadmap to ensuring their domain remains AI-accessible. By isolating these specific friction points, creators can prioritize the structural changes necessary to improve visibility in AI-driven results, effectively treating AI interpretability as a foundational requirement rather than an afterthought in modern web development."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-10-29T08:17:19.918Z"
+  },
+  {
     "id": "art-1793260878873-glkr5",
     "source_id": "source-lovable",
     "source_name": "Lovable Blog / Changelog",
@@ -562,6 +640,32 @@
       "アップデート"
     ],
     "created_at": "2026-10-28T23:01:45.042Z"
+  },
+  {
+    "id": "art-1793261811286-xmyok",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/polylane",
+    "published_at": "2026-10-28T22:04:42.000Z",
+    "og_image_url": null,
+    "title_ja": "ChatGPT向けデバッグツール「Polylane」が登場、本番環境のスタックトレースを自然言語で即座に解析しボトルネックを特定",
+    "summary_ja": "Polylaneは、本番環境で発生したエラーやスタックトレースをChatGPTへ直接取り込み、原因解析や修正提案を自動化する新しい開発支援ツールである。 複雑なログ解析を自然言語で対話的に行えるため、インシデント発生時のトリアージ時間を大幅に短縮できる。 開発者はブラウザやIDEから離れずに、AIをデバッグの相棒として活用して迅速なリカバリーを実現できる。",
+    "translations": {
+      "ja": {
+        "title": "ChatGPT向けデバッグツール「Polylane」が登場、本番環境のスタックトレースを自然言語で即座に解析しボトルネックを特定",
+        "summary": "Polylaneは、本番環境で発生したエラーやスタックトレースをChatGPTへ直接取り込み、原因解析や修正提案を自動化する新しい開発支援ツールである。 複雑なログ解析を自然言語で対話的に行えるため、インシデント発生時のトリアージ時間を大幅に短縮できる。 開発者はブラウザやIDEから離れずに、AIをデバッグの相棒として活用して迅速なリカバリーを実現できる。"
+      },
+      "en": {
+        "title": "Polylane Integrates Directly with ChatGPT to Analyze Production Stack Traces and Surface Root Causes Instantly for Developers",
+        "summary": "Polylane launches as a specialized bridge between production environments and ChatGPT, allowing developers to pipe raw stack traces and error logs directly into the AI for immediate troubleshooting. By translating dense, cryptic error logs into plain-language analysis and actionable fix suggestions, it drastically reduces the time spent on incident triaging during critical outages. This utility effectively turns ChatGPT into a dedicated on-call debugger that understands your specific application context. For teams struggling with alert fatigue, the tool offers a way to move past simple log grepping and toward automated root cause identification. It enables engineers to resolve production bottlenecks by chatting with the codebase rather than manually parsing thousands of lines of legacy server output during high-pressure downtime."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-29T08:16:51.286Z"
   },
   {
     "id": "art-1793252121714-ly48p",
