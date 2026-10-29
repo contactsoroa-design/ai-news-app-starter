@@ -56,6 +56,33 @@
     "created_at": "2026-10-29T01:02:07.588Z"
   },
   {
+    "id": "art-1793257345694-cnve0",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
+    "published_at": "2026-10-28T23:23:21.000Z",
+    "og_image_url": null,
+    "title_ja": "LLMの性能は多次元的だが結局は「サイズ」が全てを決める—Simon Willisonが語るモデルの信頼性、コスト、そしてバージョン管理の真実",
+    "summary_ja": "LLMの性能は多次元的であり、数学が得意なモデルがユーモアも得意とは限らない。 しかしSimon Willison氏の考察によれば、モデルの性能変動の多くは「サイズ」という単一変数で説明可能だ。 サイズが大きいモデルほど、信頼性や推論コスト、マニアックな事実の再現性が向上する。 現代のモデルにおけるバージョン番号は単なるリリース順序ではなく、改善の規模や関係性を示す重要な指標として機能しており、開発者はこの相関関係を理解した上でモデル選定を行う必要がある。",
+    "translations": {
+      "ja": {
+        "title": "LLMの性能は多次元的だが結局は「サイズ」が全てを決める—Simon Willisonが語るモデルの信頼性、コスト、そしてバージョン管理の真実",
+        "summary": "LLMの性能は多次元的であり、数学が得意なモデルがユーモアも得意とは限らない。 しかしSimon Willison氏の考察によれば、モデルの性能変動の多くは「サイズ」という単一変数で説明可能だ。 サイズが大きいモデルほど、信頼性や推論コスト、マニアックな事実の再現性が向上する。 現代のモデルにおけるバージョン番号は単なるリリース順序ではなく、改善の規模や関係性を示す重要な指標として機能しており、開発者はこの相関関係を理解した上でモデル選定を行う必要がある。"
+      },
+      "en": {
+        "title": "LLM Performance Is Multidimensional, but Model Size Dictates Reliability, Cost, and Accuracy: A Deep Dive into Model Scaling and Versioning",
+        "summary": "LLM performance remains incredibly multidimensional, meaning excellence in complex mathematics does not guarantee proficiency in creative writing or humor. Despite this nuance, Simon Willison notes that a single variable—total model size—explains the vast majority of performance variance. Larger models reliably deliver superior fact recall and reasoning, though they simultaneously increase token costs. Modern versioning conventions now signal more than just release chronology; they map the magnitude of architectural improvements and lineage relationships. For builders integrating AI, understanding this correlation between physical parameter scale and output quality is essential for choosing the right model for production workloads, rather than relying solely on arbitrary version numbers that often obscure the underlying cost-to-performance trade-offs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-29T07:02:25.694Z"
+  },
+  {
     "id": "art-1793229446535-na4o4",
     "source_id": "source-posthog",
     "source_name": "PostHog Blog (Product for Engineers)",
@@ -251,6 +278,34 @@
       "コスト・API料金"
     ],
     "created_at": "2026-10-28T23:17:03.594Z"
+  },
+  {
+    "id": "art-1793257331952-zm889",
+    "source_id": "source-github-copilot",
+    "source_name": "GitHub Copilot Changelog",
+    "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+    "published_at": "2026-10-28T16:00:00.000Z",
+    "og_image_url": "https://github.blog/wp-content/uploads/2026/11/683299408-b1d020a6-0c6d-49a5-ab57-5434d64fb7f9.png",
+    "title_ja": "GitHub Copilotの新機能「Fusion」が正式リリース：AIモデルの自動選定とオーケストレーションにより最適な回答をリアルタイムで生成",
+    "summary_ja": "GitHub Copilot Fusionが一般提供を開始した。 タスクごとに手動でAIモデルを選択する必要はなく、Copilotがリクエスト内容に応じて最適なモデルを動的にルーティングし、複雑なクエリにも協調的に回答を生成する。 開発者はモデルの選定に悩む時間を減らし、AIを統合的なワークフローの一部として活用できるため、より生産性の高いコーディング体験が可能になる。",
+    "translations": {
+      "ja": {
+        "title": "GitHub Copilotの新機能「Fusion」が正式リリース：AIモデルの自動選定とオーケストレーションにより最適な回答をリアルタイムで生成",
+        "summary": "GitHub Copilot Fusionが一般提供を開始した。 タスクごとに手動でAIモデルを選択する必要はなく、Copilotがリクエスト内容に応じて最適なモデルを動的にルーティングし、複雑なクエリにも協調的に回答を生成する。 開発者はモデルの選定に悩む時間を減らし、AIを統合的なワークフローの一部として活用できるため、より生産性の高いコーディング体験が可能になる。"
+      },
+      "en": {
+        "title": "GitHub Copilot Fusion enters general availability, automating intelligent model routing and orchestration for more precise coding tasks",
+        "summary": "GitHub Copilot Fusion is now generally available, introducing an intelligent orchestration layer that removes the need for manual model selection. Instead of developers choosing a specific engine for every query, Copilot Fusion automatically routes tasks to the most appropriate models and orchestrates their output to deliver a unified, high-quality result. This approach significantly streamlines the developer experience, allowing teams to leverage the strengths of various AI architectures without managing the underlying complexity of specific model swaps or versioning. For builders integrating AI into their daily stack, this move signals a shift toward abstracting model selection entirely, effectively treating multi-model reasoning as a single, seamless utility rather than a manual configuration task."
+      }
+    },
+    "tool_tags": [
+      "GitHub Copilot"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-10-29T07:02:11.952Z"
   },
   {
     "id": "art-1793228496094-m6uoo",
@@ -779,6 +834,35 @@
       "研究"
     ],
     "created_at": "2026-10-28T13:23:52.329Z"
+  },
+  {
+    "id": "art-1793257360911-cvfds",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+    "published_at": "2026-10-28T13:15:00.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAIとServiceNowが提携拡大、企業ワークフローへのAIエージェント統合とChatGPT連携を強化し業務効率化を加速",
+    "summary_ja": "OpenAIとServiceNowはパートナーシップを拡大し、OpenAIの最新モデルとAIエージェント機能をServiceNowの企業向けワークフローに直接組み込む。 さらに、ServiceNowの業務プロセスをChatGPT上で直接操作可能にすることで、エンタープライズ領域におけるデータ活用と自動化のシームレスな融合を目指す。 開発者やDX担当者は、基幹業務システムとLLMを分断させず、高度なエージェント機能を既存ツール内で完結させる設計が求められる。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIとServiceNowが提携拡大、企業ワークフローへのAIエージェント統合とChatGPT連携を強化し業務効率化を加速",
+        "summary": "OpenAIとServiceNowはパートナーシップを拡大し、OpenAIの最新モデルとAIエージェント機能をServiceNowの企業向けワークフローに直接組み込む。 さらに、ServiceNowの業務プロセスをChatGPT上で直接操作可能にすることで、エンタープライズ領域におけるデータ活用と自動化のシームレスな融合を目指す。 開発者やDX担当者は、基幹業務システムとLLMを分断させず、高度なエージェント機能を既存ツール内で完結させる設計が求められる。"
+      },
+      "en": {
+        "title": "OpenAI and ServiceNow expand partnership to embed advanced AI agents into enterprise workflows and bridge ChatGPT with platform processes",
+        "summary": "OpenAI and ServiceNow have deepened their strategic partnership, focusing on integrating OpenAI's latest models and autonomous AI agents directly into the ServiceNow enterprise workflow ecosystem. This collaboration enables developers to trigger complex ServiceNow actions from within ChatGPT while simultaneously embedding LLM-powered insights into the enterprise service management layer. For builders, this signifies a major shift toward 'agentic' enterprise software where AI is not just a chat interface but an operational actor within the backend system. The key takeaway is the necessity of building agent architectures that can bridge disjointed data silos; enterprise products must now move beyond simple API wrappers to orchestrate actions directly within internal operational workflows to provide real business value."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-29T07:02:40.911Z"
   },
   {
     "id": "art-1793193634753-ou4o8",
@@ -1807,6 +1891,35 @@
       "研究"
     ],
     "created_at": "2026-10-28T12:17:31.495Z"
+  },
+  {
+    "id": "art-1793257317238-lv5bc",
+    "source_id": "source-elevenlabs",
+    "source_name": "ElevenLabs Blog",
+    "url": "https://elevenlabs.io/blog/conversational-ai-in-banking",
+    "published_at": "2026-10-28T12:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "ElevenLabsが解説、銀行・フィンテックのDXを加速する「音声AIエージェント」の活用事例と導入効果：顧客対応自動化の最前線",
+    "summary_ja": "ElevenLabsは、銀行やフィンテック業界における対話型音声AIの実装と具体的な活用事例を公開した。 電話応対の自動化から本人確認、複雑な口座関連の問い合わせまで、音声エージェントがどのように処理を最適化し、人的コストを削減しているかを解説する。 開発者やDX担当者にとって、APIを活用した音声エージェントの導入は、24時間対応のカスタマーエクスペリエンス構築とオペレーション効率化を同時に実現する現実的な選択肢となっている。",
+    "translations": {
+      "ja": {
+        "title": "ElevenLabsが解説、銀行・フィンテックのDXを加速する「音声AIエージェント」の活用事例と導入効果：顧客対応自動化の最前線",
+        "summary": "ElevenLabsは、銀行やフィンテック業界における対話型音声AIの実装と具体的な活用事例を公開した。 電話応対の自動化から本人確認、複雑な口座関連の問い合わせまで、音声エージェントがどのように処理を最適化し、人的コストを削減しているかを解説する。 開発者やDX担当者にとって、APIを活用した音声エージェントの導入は、24時間対応のカスタマーエクスペリエンス構築とオペレーション効率化を同時に実現する現実的な選択肢となっている。"
+      },
+      "en": {
+        "title": "ElevenLabs outlines how voice AI agents are transforming banking and fintech operations by automating customer service and complex call handling",
+        "summary": "ElevenLabs recently detailed the strategic role of conversational AI within the banking and fintech sectors, focusing on how voice agents handle inbound calls, automated authentication, and intricate account inquiries. By deploying these agents, financial institutions are effectively offloading high-volume support tasks while maintaining compliance, which significantly lowers operational overhead. For developers and technical leads in the financial space, the documentation highlights how modern voice APIs enable 24/7 customer service without the friction of traditional interactive voice response systems. The practical takeaway is that integrating these AI agents is no longer just an experimental experiment; it is now a standard architecture for organizations aiming to scale support capacity while simultaneously improving the overall responsiveness of their financial service offerings."
+      }
+    },
+    "tool_tags": [
+      "ElevenLabs"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "音声"
+    ],
+    "created_at": "2026-10-29T07:01:57.238Z"
   },
   {
     "id": "art-1793188941516-qoa1v",
