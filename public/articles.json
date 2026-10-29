@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-1793285237742-s3xt7",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/shingokumon/articles/c5456656511ae7",
+    "published_at": "2026-10-29T14:40:31.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Zn5VgKEk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25A7%25E3%2580%258C%25E8%25A8%2598%25E9%258C%25B2%25E3%2581%25A7%25E3%2581%258D%25E3%2581%25AA%25E3%2581%2584%25E6%2593%258D%25E4%25BD%259C%25E3%2582%2592%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%25E3%2580%258D%25E2%2594%2580%25E2%2594%2580SUMI%2520Guard%25E3%2581%25AE%25E5%25AE%259F%25E6%25A9%259F%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:shingokumon%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzlmYjg2MWJkOGIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの実行を監査する「SUMI Guard」—記録なしのコマンド実行を遮断するセーフティレイヤーをWindowsで実装",
+    "summary_ja": "AIによるコード生成頻度の増加に伴い、実行されるコマンドの透明性が課題となる中、Windows向けローカル監査ツール「SUMI Guard」が開発された。 Claude CodeなどのAIエージェントから受け取る実行前イベントを捕捉し、メタデータやハッシュを記録する仕組みを構築。 さらに、指定したログ保存経路で記録が完了しない場合にコマンド実行自体を停止するフェイルセーフ機能を実装し、AIの無人実行におけるセキュリティリスクを低減させている。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの実行を監査する「SUMI Guard」—記録なしのコマンド実行を遮断するセーフティレイヤーをWindowsで実装",
+        "summary": "AIによるコード生成頻度の増加に伴い、実行されるコマンドの透明性が課題となる中、Windows向けローカル監査ツール「SUMI Guard」が開発された。 Claude CodeなどのAIエージェントから受け取る実行前イベントを捕捉し、メタデータやハッシュを記録する仕組みを構築。 さらに、指定したログ保存経路で記録が完了しない場合にコマンド実行自体を停止するフェイルセーフ機能を実装し、AIの無人実行におけるセキュリティリスクを低減させている。"
+      },
+      "en": {
+        "title": "Building SUMI Guard: A Windows safety layer to block unlogged command execution for Claude Code",
+        "summary": "As reliance on AI-assisted coding grows, the lack of transparency in automated command execution becomes a critical risk. To solve this, the developer of SUMI Guard built a local Windows auditing tool designed to intercept pre-execution events from agents like Claude Code. Instead of blindly trusting AI outputs, the tool logs essential metadata and hashes locally. The system has evolved beyond simple passive observation to include an active safety mechanism: if the tool cannot confirm that the command execution logs were successfully saved to a specified path, it aborts the execution entirely. For developers relying on AI agents for deployment tasks, this implementation offers a practical template for ensuring accountability and preventing unmonitored code changes in local development environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-29T14:47:17.742Z"
+  },
+  {
+    "id": "art-1793285364666-ps2ao",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/ponponpon888/items/c18c1186dedb1d19855a",
+    "published_at": "2026-10-29T14:38:52.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjI0NDEwNjYwOCUzRnYlM0Q0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1kMTg3Y2U1OTNhMzNiNzNkNGRjMmY3Mzg2Zjg2MGMyYw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Ddcac55ff1340db54ff8b68d0af1da0e8?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQUIlRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODklRTMlODIlOTIlRTYlOUIlQjglRTMlODElODQlRTMlODElQTYlRTMlODIlODIlRTMlODIlODklRTMlODElODYlRTMlODIlODglRTMlODElODYlRTMlODElQUIlRTMlODElQUElRTMlODElQTMlRTMlODElQTYlRTMlODAlODElRTglODclQUElRTUlODglODYlRTMlODElQUUlRTQlQkIlOTUlRTQlQkElOEIlRTMlODElOEMlRTUlQTQlODklRTMlODIlOEYlRTMlODElQTMlRTMlODElOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1jNzkzNzk1NTNlNDQzYjc4NjE3Nzc4OTA1MDRjNzUzNQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwb25wb25wb244ODgmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1jYTFkMmY4ZjQxOTc5ODNmYTAxZjAzZjEzYzY2YTdiMA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=daf5da368aaad4a4b5ec855ab10fac3d",
+    "title_ja": "AIコーディング導入で変化するエンジニアの役割：「コードを書く」作業から「要件と設計を定義する」意思決定者へシフトすべき理由",
+    "summary_ja": "AIを日常的に活用してWebサービスや開発ツールを構築する中で、著者は開発体験の大きな変化を実感している。 AIにコード生成を任せるようになっても思考量自体は減らず、むしろ「AIに何を任せ、何を決定するか」という要件定義や設計の重要性が飛躍的に高まっている。 AI時代の開発者は、単なるコーダーから、複雑なシステムをAIという強力なエンジンの上で組み立てるアーキテクトやPMに近い役割へ進化することが求められている。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディング導入で変化するエンジニアの役割：「コードを書く」作業から「要件と設計を定義する」意思決定者へシフトすべき理由",
+        "summary": "AIを日常的に活用してWebサービスや開発ツールを構築する中で、著者は開発体験の大きな変化を実感している。 AIにコード生成を任せるようになっても思考量自体は減らず、むしろ「AIに何を任せ、何を決定するか」という要件定義や設計の重要性が飛躍的に高まっている。 AI時代の開発者は、単なるコーダーから、複雑なシステムをAIという強力なエンジンの上で組み立てるアーキテクトやPMに近い役割へ進化することが求められている。"
+      },
+      "en": {
+        "title": "Why AI coding tools are shifting the engineer's role from writing syntax to designing system architecture",
+        "summary": "Integrating AI into daily software development transforms the job description of modern builders. While AI excels at generating code, the actual mental effort required for development hasn't diminished; it has simply migrated. The primary bottleneck is no longer syntax, but the critical decision-making processes regarding product requirements and system architecture that occur before a single line is generated. The author argues that in this new paradigm, developers must evolve from mere coders into architects or product managers who specialize in setting the guardrails for AI agents. Success now relies on clear definitions and high-level strategy, as the ability to effectively delegate tasks to AI has become the defining skill for shipping complex products at speed."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-29T14:49:24.666Z"
+  },
+  {
     "id": "art-1793285014286-ep0eo",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -105,6 +157,32 @@
       "コスト・API料金"
     ],
     "created_at": "2026-10-29T14:41:26.200Z"
+  },
+  {
+    "id": "art-1793285439393-zwpwi",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tappers/articles/ai-labo-e05-subagent-folding",
+    "published_at": "2026-10-29T14:29:49.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--agC6dZy8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E3%2580%258C%25E5%25BD%25B9%25E5%2589%25B2%25E5%2588%25A5%25E3%2582%25B5%25E3%2583%2596%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E5%2588%2586%25E5%2589%25B2%25E3%2580%258Dvs%25E3%2580%258C%25E5%258D%2598%25E4%25B8%2580%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2597%25E7%25B5%25B1%25E5%2590%2588%25EF%25BC%258B%25E6%25AE%25B5%25E9%259A%258E%25E7%259A%2584%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25AB%25E9%2596%258B%25E7%25A4%25BA%25E3%2580%258D%25E3%2582%2592%25E5%25AE%259F%25E6%25A9%259F%25E3%2582%25B5%25E3%2583%25B3%25E3%2583%2589%25E3%2583%259C%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%25E3%2581%25A7A%252FB%25E6%25A4%259C%25E8%25A8%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tappers%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVE5OTlrenNDTS1ESVpIUGl4SUpHVGoxeVNyT2V4Tmc2SF96NTI5ZFJuTkNVZU5nPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェント設計のA/B検証：サブエージェント分割 vs 単一ループ＋段階的スキル開示、実機20ケースで判明した「勝者」の設計パターン",
+    "summary_ja": "AIエージェントの構築において「役割別サブエージェント分割」と「単一ループ統合＋段階的スキル開示」のどちらが有効か、完全オフライン環境で20種の課題を用いて定量A/Bテストを実施した。 検証の結果、タスクの複雑度に応じてエージェントのスキルを逐次的に解禁する後者のアーキテクチャが、推論コストを抑えつつ成功率を大幅に上回ることが判明した。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント設計のA/B検証：サブエージェント分割 vs 単一ループ＋段階的スキル開示、実機20ケースで判明した「勝者」の設計パターン",
+        "summary": "AIエージェントの構築において「役割別サブエージェント分割」と「単一ループ統合＋段階的スキル開示」のどちらが有効か、完全オフライン環境で20種の課題を用いて定量A/Bテストを実施した。 検証の結果、タスクの複雑度に応じてエージェントのスキルを逐次的に解禁する後者のアーキテクチャが、推論コストを抑えつつ成功率を大幅に上回ることが判明した。"
+      },
+      "en": {
+        "title": "A/B Testing AI Agent Architectures: Why Single-Loop Staged Skill Disclosure Outperforms Multi-Agent Splitting in 20 Practical Scenarios",
+        "summary": "To determine the optimal architecture for AI coding agents, this study conducted rigorous A/B testing across twenty controlled, offline sandbox scenarios comparing 'role-based sub-agent splitting' against 'single-loop integration with staged skill disclosure.' The data reveals that the single-loop approach, which progressively reveals skills based on task complexity, consistently outperforms the multi-agent model by maintaining higher success rates while reducing total inference costs. The research indicates that while sub-agent architectures appear modular, they often suffer from excessive orchestration overhead and state management fragility. For builders developing production agents, this finding suggests that sticking to a sophisticated single-loop controller—one that dynamically manages context and skill availability—is a far more reliable pattern than fragmenting logic into multiple independent agents."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-29T14:50:39.393Z"
   },
   {
     "id": "art-1793284315645-a0r8l",
