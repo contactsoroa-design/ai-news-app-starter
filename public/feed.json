@@ -1,5 +1,33 @@
 [
   {
+    "id": "art-1793236725327-c0x4h",
+    "source_id": "source-openrouter",
+    "source_name": "OpenRouter Announcements",
+    "url": "https://openrouter.ai/blog/tutorials/extract-tables-from-pdf-llm/",
+    "published_at": "2026-10-29T00:00:00.000Z",
+    "og_image_url": "https://openrouter.ai/blog/images/extract-tables-from-pdf-llm.png",
+    "title_ja": "OpenRouter、PDFテーブル抽出の最適解を解説：構造化JSON出力によるマルチページ読み取りとエラー検知のベストプラクティスを公開",
+    "summary_ja": "OpenRouterは、PDF内のテーブルをLLMで正確に抽出するための技術検証を公開した。 厳格なJSONスキーマを定義しモデルに送信することで、スキャン画像や複数ページに跨がる表データでも型付きの行データとして取得できる。 ただし5つのルートを検証した結果、エラーを出さずに誤った応答を返すケースが確認されたため、応答検証を実装する重要性が浮き彫りになった。",
+    "translations": {
+      "ja": {
+        "title": "OpenRouter、PDFテーブル抽出の最適解を解説：構造化JSON出力によるマルチページ読み取りとエラー検知のベストプラクティスを公開",
+        "summary": "OpenRouterは、PDF内のテーブルをLLMで正確に抽出するための技術検証を公開した。 厳格なJSONスキーマを定義しモデルに送信することで、スキャン画像や複数ページに跨がる表データでも型付きの行データとして取得できる。 ただし5つのルートを検証した結果、エラーを出さずに誤った応答を返すケースが確認されたため、応答検証を実装する重要性が浮き彫りになった。"
+      },
+      "en": {
+        "title": "OpenRouter details robust PDF table extraction using strict JSON schemas to handle multi-page layouts and scanning errors",
+        "summary": "OpenRouter has detailed a reliable method for extracting tabular data from PDF files using LLMs by mandating strict JSON schemas for row outputs. This approach effectively converts scanned documents or complex, multi-page tables into cleanly typed data structures. However, in their benchmark of five different model routes, they encountered silent failures where models returned incorrectly formatted responses without raising errors, underscoring the critical need for explicit verification checks. For developers integrating PDF parsing into their pipelines, the takeaway is that model output alone is insufficient for production-grade data pipelines. You must implement independent validation layers to catch these silent errors, ensuring your system logic remains robust even when the underlying LLM provides unreliable or hallucinated table content."
+      }
+    },
+    "tool_tags": [
+      "OpenRouter"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-29T01:18:45.327Z"
+  },
+  {
     "id": "art-1793235727588-32fx1",
     "source_id": "source-openrouter",
     "source_name": "OpenRouter Announcements",
