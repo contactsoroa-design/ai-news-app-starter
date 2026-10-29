@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1793266295784-5r9rs",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kathoc/n/n2a0b9654e91e",
+    "published_at": "2026-10-29T09:30:48.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/329835336/rectangle_large_type_2_40fd464174ffa4c2e628b377b54ab8b1.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "ゲームボーイ開発で「同じソースなのにROMのハッシュ値が毎回変わる」謎を解明：ビルドの再現性を阻む“2バイト”の正体",
+    "summary_ja": "ゲームボーイ用ROM開発において、同じソースコードからビルドしているにもかかわらず毎回異なるファイルが生成される現象が発生した。 調査の結果、タイトル画面に表示している時計の分単位データがビルド時刻を反映し、わずか2バイトの差異を生んでいたことが判明した。 配布物の整合性を保証するには、時刻情報を固定するなどのビルドプロセスの決定論的な制御が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "ゲームボーイ開発で「同じソースなのにROMのハッシュ値が毎回変わる」謎を解明：ビルドの再現性を阻む“2バイト”の正体",
+        "summary": "ゲームボーイ用ROM開発において、同じソースコードからビルドしているにもかかわらず毎回異なるファイルが生成される現象が発生した。 調査の結果、タイトル画面に表示している時計の分単位データがビルド時刻を反映し、わずか2バイトの差異を生んでいたことが判明した。 配布物の整合性を保証するには、時刻情報を固定するなどのビルドプロセスの決定論的な制御が不可欠となる。"
+      },
+      "en": {
+        "title": "Why do Game Boy ROM builds yield different hashes from identical source code? Decoding the mystery of non-deterministic builds",
+        "summary": "A developer building Game Boy ROMs encountered a frustrating issue where identical source code generated different output files with every build, resulting in mismatched cryptographic hashes. The culprit was revealed to be a mere two-byte timestamp embedded directly into the title screen, which updated the minute counter based on the exact moment the compiler ran. This subtle inconsistency highlights the importance of deterministic build environments, especially when distributing binaries where users expect verified, reproducible integrity. For developers working on embedded systems or retro hardware, relying on system-time-dependent assets creates non-reproducible artifacts. The practical takeaway is to explicitly freeze timestamps or external environment variables during compilation; otherwise, you cannot mathematically prove that two ROMs are identical without manual reverse engineering."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-10-29T09:31:35.784Z"
+  },
+  {
+    "id": "art-1793266289055-ms1dm",
+    "source_id": "source-ai-unraveled",
+    "source_name": "AI Unraveled",
+    "url": "https://rss.com/podcasts/djamgatech/3276405",
+    "published_at": "2026-10-29T09:24:29.000Z",
+    "og_image_url": "https://img.rss.com/djamgatech/900/ep_cover_20261029_092114_651efa0a59f94d88569428c7399227ab.jpg",
+    "title_ja": "OpenAIが1999年以来の計算理論の仮説「指数時間仮説(ETH)」を反証と主張、AIが科学的発見を加速する新たなマイルストーンへ",
+    "summary_ja": "OpenAIは、過去数十年にわたり数百本の論文の基礎となってきた1999年提唱の計算理論「指数時間仮説（ETH）」をAIが反証したと発表した。 これはAIが理論計算機科学の限界を突破しうる能力を示す事例だが、同時にAnthropicで発生したベンダー経由の不正アクセス事例など、AI開発におけるサプライチェーンのリスクも浮き彫りになっている。 開発者はAIの知的能力の向上を追い風にする一方で、ツールやモデルの外部依存におけるセキュリティ要件を再定義する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIが1999年以来の計算理論の仮説「指数時間仮説(ETH)」を反証と主張、AIが科学的発見を加速する新たなマイルストーンへ",
+        "summary": "OpenAIは、過去数十年にわたり数百本の論文の基礎となってきた1999年提唱の計算理論「指数時間仮説（ETH）」をAIが反証したと発表した。 これはAIが理論計算機科学の限界を突破しうる能力を示す事例だが、同時にAnthropicで発生したベンダー経由の不正アクセス事例など、AI開発におけるサプライチェーンのリスクも浮き彫りになっている。 開発者はAIの知的能力の向上を追い風にする一方で、ツールやモデルの外部依存におけるセキュリティ要件を再定義する必要がある。"
+      },
+      "en": {
+        "title": "OpenAI Claims AI Disproves 1999 Computing Assumption, Marking a Major Shift in Theoretical Computer Science",
+        "summary": "OpenAI reports its latest AI models have successfully disproved the Exponential Time Hypothesis (ETH), a foundational 1999 computing assumption underpinning hundreds of academic papers. This breakthrough suggests AI is evolving beyond pattern matching into active discovery within theoretical computer science. However, this progress is countered by emerging operational risks; for instance, hackers recently exploited a third-party vendor to infiltrate Anthropic’s systems. For builders, this dual narrative presents a critical takeaway: as AI capability scales to solve deep, scientific problems, the attack surface expands into your software supply chain. Integrating AI into your stack now requires not just measuring model performance, but aggressively hardening external vendor integrations against potential, high-stakes supply chain compromises that AI-driven threats are increasingly exploiting."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-10-29T09:31:29.055Z"
+  },
+  {
+    "id": "art-1793266303768-e9j9f",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://georgiker.com/blog/ai-did-not-break-education/",
+    "published_at": "2026-10-29T09:20:57.000Z",
+    "og_image_url": null,
+    "title_ja": "「AIが教育を破壊したのではなく、バグを露呈させただけ」— 従来の画一的評価手法の限界とAI時代の学習変革",
+    "summary_ja": "「AIが教育を壊した」のではなく、AIによって従来の記憶や定型作業を重視する教育システムの欠陥が露呈したという論考。 現在、教育の評価軸は、画一的なテストによる知識の定着確認から、AIを活用した創造的な問題解決能力の育成へとシフトを迫られている。 開発者や教育サービス構築者は、効率化ツールとしてのAI提供だけでなく、思考プロセスそのものを強化するプラットフォーム設計にこそ、次世代の学習価値が宿ることを理解すべきである。",
+    "translations": {
+      "ja": {
+        "title": "「AIが教育を破壊したのではなく、バグを露呈させただけ」— 従来の画一的評価手法の限界とAI時代の学習変革",
+        "summary": "「AIが教育を壊した」のではなく、AIによって従来の記憶や定型作業を重視する教育システムの欠陥が露呈したという論考。 現在、教育の評価軸は、画一的なテストによる知識の定着確認から、AIを活用した創造的な問題解決能力の育成へとシフトを迫られている。 開発者や教育サービス構築者は、効率化ツールとしてのAI提供だけでなく、思考プロセスそのものを強化するプラットフォーム設計にこそ、次世代の学習価値が宿ることを理解すべきである。"
+      },
+      "en": {
+        "title": "AI didn't break education; it revealed the system's foundational design bug: Why legacy assessment models are failing",
+        "summary": "The argument here isn't that AI is destroying the educational landscape, but rather that it has exposed deep, pre-existing flaws in systems heavily reliant on rote memorization and standardized testing. By automating basic knowledge retrieval, AI demonstrates that our current metrics for academic success are fundamentally outdated and obsolete. For builders developing EdTech or AI-assisted learning tools, this shifts the product requirement significantly. Instead of creating simple cheating detectors or automated homework helpers, the real opportunity lies in designing platforms that augment critical thinking, synthesis, and complex problem-solving capabilities. If you are building in this space, treat the 'AI crisis' as a signal that the market is ready for tools that fundamentally transform how students interact with knowledge, rather than just optimizing the old, flawed workflow."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-10-29T09:31:43.768Z"
+  },
+  {
     "id": "art-1793265485162-9zkrl",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -3980,6 +4059,35 @@
       "ビジネス"
     ],
     "created_at": "2026-10-28T11:01:31.343Z"
+  },
+  {
+    "id": "art-1793266309966-1s0c0",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/the-future-of-the-firm",
+    "published_at": "2026-10-28T10:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAIが描く「AI時代の組織図」：AIが単なるツールを超え、業務プロセスの深部で自律的に協働する新たなパートナーとして定着する未来",
+    "summary_ja": "OpenAIは、今後の企業組織においてAIが「ツール」の枠を超え、意思決定プロセスや業務フローの深部にまで統合される未来を提唱している。 単なる作業代行にとどまらず、部門間を横断して調整を行う「デジタルワーカー」としてAIが組織図に組み込まれることで、人間の役割は管理や創造性へとシフトする。 開発者やリーダー層は、APIの統合のみならず、AIエージェントが人間のチームメンバーと同等に業務権限を持つ新しい組織構造を設計する準備が必要だ。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIが描く「AI時代の組織図」：AIが単なるツールを超え、業務プロセスの深部で自律的に協働する新たなパートナーとして定着する未来",
+        "summary": "OpenAIは、今後の企業組織においてAIが「ツール」の枠を超え、意思決定プロセスや業務フローの深部にまで統合される未来を提唱している。 単なる作業代行にとどまらず、部門間を横断して調整を行う「デジタルワーカー」としてAIが組織図に組み込まれることで、人間の役割は管理や創造性へとシフトする。 開発者やリーダー層は、APIの統合のみならず、AIエージェントが人間のチームメンバーと同等に業務権限を持つ新しい組織構造を設計する準備が必要だ。"
+      },
+      "en": {
+        "title": "OpenAI maps the future of the organizational chart where AI evolves from a simple tool into an autonomous collaborator",
+        "summary": "OpenAI outlines a shift in the corporate landscape where AI transcends being a mere utility, becoming fully integrated into decision-making and operational flows as a core organizational entity. Instead of just automating specific tasks, AI agents will eventually function as 'digital workers' capable of coordinating across departments, fundamentally altering how we structure our org charts. This shift forces human roles to evolve, focusing strictly on oversight, high-level strategy, and creative direction. For builders and engineering leaders, this implies that the next stage of development moves beyond simple API integrations; we must now design architectures where AI agents possess autonomous execution authority equivalent to human peers, requiring a completely new framework for organizational governance and collaborative security."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "ビジネス",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-29T09:31:49.966Z"
   },
   {
     "id": "art-1793185476617-jbcoc",
