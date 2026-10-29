@@ -456,6 +456,11 @@ export const limits = {
   sponsoredEveryN: 8,
   /** 先頭から何件記事を出してから最初のスポンサードを出すか */
   sponsoredMinArticlesBeforeFirst: 4,
+  /**
+   * expo-image ディスクキャッシュ上限（バイト）。
+   * OGP無制限蓄積を防ぎつつ、直近表示分は残してスワイプ／探索の体感を維持する。
+   */
+  imageDiskCacheMaxBytes: 100 * 1024 * 1024,
 } as const;
 
 /** 本番ビルドで EXPO_PUBLIC_FEED_URL が空でも確実にリモート取得する既定（raw優先。jsDelivrは古い@mainを長くキャッシュする） */

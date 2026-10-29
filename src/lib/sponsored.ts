@@ -307,7 +307,7 @@ export function findNearestSponsoredIndex(
 
 /**
  * 複数広告主がいるとき、広告主単位で交互に並べる（A→B→A→B…）。
- * おすすめフィードで ElevenLabs / Synthesia が固まるのを防ぐ。
+ * おすすめフィードで ElevenLabs / Synthesia / Firecrawl が固まるのを防ぐ。
  */
 export function alternateSponsoredByAdvertiser(
   sponsored: SponsoredItem[]

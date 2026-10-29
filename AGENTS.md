@@ -16,6 +16,7 @@ AI関連のニュースだけを、1枚ずつ縦スワイプで読めるモバ�
 - Connect貼り付け文: `docs/ストア掲載文-貼り付け用.md`
 - ソフトローンチ: `docs/ソフトローンチ手順.md`（ウェイトリスト閉門なし・Approved 後すぐ公開・無料＋自前広告）
 - Support / PP / Terms / Media kit は **独自ドメイン**（`https://soroa-studio.com/ainews/`）。`*.vercel.app` を Connect に書かない。HTML正本は `landing/ainews/`。
+- **Google Play（Android）:** 個人→組織は `docs/GooglePlay-個人から組織へ-手順.md`（URLつき）。提出は `docs/GooglePlay提出チェックリスト.md` / 掲載文 `docs/GooglePlay掲載文-貼り付け用.md`（優先は iOS 後でも可）
 - 収益運用メモ: `docs/スポンサー候補リスト.md` / `docs/アフィリエイト運用ルール.md` / `docs/週次KPI.md` / `docs/要望インボックス運用.md`
 
 ## 今回やらないこと

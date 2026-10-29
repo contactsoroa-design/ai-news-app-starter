@@ -110,19 +110,7 @@ const SITEMAP_FEED_FALLBACKS: Record<string, SitemapFeedFallback> = {
     pathIncludes: '/blog/',
     minPathSegments: 2,
   },
-  'source-runway': {
-    sitemapUrl: 'https://runway.com/sitemap.xml',
-    pathIncludes: '/news/',
-    pathExcludes: [
-      '/news/customers',
-      '/news/company-news',
-      '/news/safety',
-      '/news/research',
-      '/news/engineering',
-      '/news/developers',
-    ],
-    minPathSegments: 2,
-  },
+  // source-runway は feed なし・更新見込み薄のため source-firecrawl（releases.atom）へ置換済み
   // 公式RSSは死んでいるが、sitemap（gzip）に /stories/ と lastmod がある
   'source-starterstory': {
     sitemapUrl: 'https://www.starterstory.com/sitemap',
@@ -541,6 +529,7 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-ollama': 'Ollama',
   'source-openrouter': 'OpenRouter',
   'source-runway': 'Runway',
+  'source-firecrawl': 'Firecrawl',
   'source-elevenlabs': 'ElevenLabs',
   'source-koala-ai': 'Koala AI',
   'source-copyai': 'Copy.ai',

@@ -78,6 +78,20 @@ TestFlight で自分確認 → Connect で「審査へ提出」。
 - [ ] メディアキット送付開始: `docs/スポンサー候補リスト.md`
 - [ ] 週次KPI: `docs/週次KPI.md`
 
+## Google Play（Android・並行準備可）
+
+正本: `docs/GooglePlay提出チェックリスト.md` / 掲載文 `docs/GooglePlay掲載文-貼り付け用.md`
+
+- [ ] **URLつき手順どおり**個人→組織: `docs/GooglePlay-個人から組織へ-手順.md`  
+  （D-U-N-S → Search Console → Play サイト検証 → 種類変更 → 72h待ち）
+- [ ] Search Console: `https://soroa-studio.com/` を **URLプレフィックス**で追加 → メタタグをルート HTML に入れるか、ドメインTXTをお名前.comへ（NSは GMO）
+- [ ] 変換完了後 **72時間** あけてから新規アプリ提出
+- [ ] Play にアプリ作成（パッケージ `com.soroa.ainews`）→ 同手順 §5
+- [ ] Data safety / コンテンツレーティング / プライバシー URL
+- [x] スクショ＋フィーチャー: `store/play/`（アップロードは人手）
+- [ ] `eas build --platform android --profile production`（明示してから）
+- [ ] 初回は **内部テスト** トラックへ（`eas.json` submit.android は internal/draft）
+
 ## 注意（名前）
 
 - ストア名（JA/EN）: **Fast News AI**

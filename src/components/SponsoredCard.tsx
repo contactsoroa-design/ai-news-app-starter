@@ -5,8 +5,9 @@ import { getCopy } from '../lib/config';
 import { localizeSponsoredItem } from '../lib/sponsored';
 import type { AppLocale, Article, SponsoredItem } from '../lib/types';
 
-/** アイコンのみ公式シンボル（未加工・黒）。白マットに載せる。サムネはパターン別に差し替え */
+/** アイコンのみ公式シンボル（未加工）。白マットに載せる。サムネはパターン別に差し替え */
 const ELEVENLABS_ICON = require('../../assets/sponsors/elevenlabs-symbol.png') as ImageSourcePropType;
+const FIRECRAWL_ICON = require('../../assets/sponsors/firecrawl-symbol.png') as ImageSourcePropType;
 
 const SPONSOR_MEDIA: Record<
   string,
@@ -27,6 +28,38 @@ const SPONSOR_MEDIA: Record<
   'sponsor-elevenlabs-4': {
     thumbnail: require('../../assets/sponsors/elevenlabs-4-everyday.jpg') as ImageSourcePropType,
     icon: ELEVENLABS_ICON,
+  },
+  'sponsor-firecrawl-1': {
+    thumbnail: require('../../assets/sponsors/firecrawl-1.jpg') as ImageSourcePropType,
+    icon: FIRECRAWL_ICON,
+  },
+  'sponsor-firecrawl-2': {
+    thumbnail: require('../../assets/sponsors/firecrawl-2.jpg') as ImageSourcePropType,
+    icon: FIRECRAWL_ICON,
+  },
+  'sponsor-firecrawl-3': {
+    thumbnail: require('../../assets/sponsors/firecrawl-3.jpg') as ImageSourcePropType,
+    icon: FIRECRAWL_ICON,
+  },
+  'sponsor-firecrawl-4': {
+    thumbnail: require('../../assets/sponsors/firecrawl-4.jpg') as ImageSourcePropType,
+    icon: FIRECRAWL_ICON,
+  },
+  'sponsor-firecrawl-5': {
+    thumbnail: require('../../assets/sponsors/firecrawl-5.jpg') as ImageSourcePropType,
+    icon: FIRECRAWL_ICON,
+  },
+  'sponsor-firecrawl-6': {
+    thumbnail: require('../../assets/sponsors/firecrawl-6.jpg') as ImageSourcePropType,
+    icon: FIRECRAWL_ICON,
+  },
+  'sponsor-firecrawl-7': {
+    thumbnail: require('../../assets/sponsors/firecrawl-7.jpg') as ImageSourcePropType,
+    icon: FIRECRAWL_ICON,
+  },
+  'sponsor-firecrawl-8': {
+    thumbnail: require('../../assets/sponsors/firecrawl-8.jpg') as ImageSourcePropType,
+    icon: FIRECRAWL_ICON,
   },
 };
 
@@ -54,7 +87,12 @@ function toArticle(item: SponsoredItem): Article {
     summary_ja: item.summary_ja,
     translations: item.translations,
     tool_tags: item.tool_tag ? [item.tool_tag] : [],
-    genre_tags: item.tool_tag === 'ElevenLabs' ? ['音声'] : [],
+    genre_tags:
+      item.tool_tag === 'ElevenLabs'
+        ? ['音声']
+        : item.tool_tag === 'Firecrawl'
+          ? ['個人開発・収益化']
+          : [],
     created_at: new Date(0).toISOString(),
   };
 }
@@ -105,7 +143,11 @@ export const SponsoredCard = memo(function SponsoredCard({
       }
       iconSource={
         media?.icon ??
-        (item.tool_tag === 'ElevenLabs' ? ELEVENLABS_ICON : null)
+        (item.tool_tag === 'ElevenLabs'
+          ? ELEVENLABS_ICON
+          : item.tool_tag === 'Firecrawl'
+            ? FIRECRAWL_ICON
+            : null)
       }
       showNotInterested={false}
       isSaved={false}

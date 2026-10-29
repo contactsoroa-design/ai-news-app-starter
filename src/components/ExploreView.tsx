@@ -50,6 +50,7 @@ const RELATED_SPONSOR_LOCAL_ICON: Record<
   ReturnType<typeof require>
 > = {
   ElevenLabs: require('../../assets/sponsors/elevenlabs-symbol.png'),
+  Firecrawl: require('../../assets/sponsors/firecrawl-symbol.png'),
 };
 
 type ExploreViewProps = {
@@ -139,6 +140,8 @@ const ExploreGridCell = memo(function ExploreGridCell({
                 style={styles.thumbImage}
                 contentFit="cover"
                 cachePolicy="memory-disk"
+                // ホームの大きなカードより優先度を下げ、スワイプ体感を守る（画質は同じ）
+                priority="low"
                 transition={0}
                 onError={() => setImgFailed(true)}
               />
