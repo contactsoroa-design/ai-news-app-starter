@@ -1,5 +1,32 @@
 [
   {
+    "id": "art-1793300195696-bwxve",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+    "published_at": "2026-10-29T18:47:56.000Z",
+    "og_image_url": "https://media.wired.com/photos/6ae113e3b0a8ac98a8d177dc/191:100/w_1280,c_limit/102726-department-of-defense-ai-agent.jpg",
+    "title_ja": "米国防委託先企業が機密の国防総省システムにAIエージェントを接続し、重大なセキュリティリスクを露呈：自動化の盲点",
+    "summary_ja": "ある米国防関連企業が、社内のAIエージェントに国防総省の機密システムへの直接アクセス権を付与していたことが判明し、サプライチェーンを通じたセキュリティの脆弱性が浮き彫りになった。 AIの自律的な操作能力を制限せず、境界のないアクセス許可を与えたことが、機密データ流出のリスクを増大させている。 開発者は、外部APIやツールと連携するAIの権限管理を厳格化し、「最小権限の原則」をAIのワークフローにこそ適用する仕組みを再考すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "米国防委託先企業が機密の国防総省システムにAIエージェントを接続し、重大なセキュリティリスクを露呈：自動化の盲点",
+        "summary": "ある米国防関連企業が、社内のAIエージェントに国防総省の機密システムへの直接アクセス権を付与していたことが判明し、サプライチェーンを通じたセキュリティの脆弱性が浮き彫りになった。 AIの自律的な操作能力を制限せず、境界のないアクセス許可を与えたことが、機密データ流出のリスクを増大させている。 開発者は、外部APIやツールと連携するAIの権限管理を厳格化し、「最小権限の原則」をAIのワークフローにこそ適用する仕組みを再考すべきだ。"
+      },
+      "en": {
+        "title": "US Defense Contractor Exposes Pentagon Systems by Granting AI Agents Excessive Access, Highlighting Critical Security Blind Spots",
+        "summary": "A US defense contractor recently granted their internal AI agent direct access to secure Pentagon systems, inadvertently creating a significant security vulnerability within the defense supply chain. This incident demonstrates that failing to restrict an AI's autonomous operation capabilities while providing broad access creates massive risks for sensitive data exposure. By allowing agents to interface with restricted infrastructure without rigorous credential isolation, the contractor effectively bypassed established security perimeters. For builders deploying autonomous agents, the core lesson is that standard access controls are insufficient; developers must enforce the 'principle of least privilege' strictly within the AI's execution environment. Moving forward, robust middleware that audits and gates every API call made by an LLM is a non-negotiable requirement for secure production systems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-29T18:56:35.696Z"
+  },
+  {
     "id": "art-1793299594613-87ix0",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -1675,6 +1702,32 @@
       "開発"
     ],
     "created_at": "2026-10-29T14:31:49.140Z"
+  },
+  {
+    "id": "art-1793300208972-ifpeo",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kimshoshi/articles/ai-production-deploy-permission",
+    "published_at": "2026-10-29T14:22:46.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--rzBPkG-C--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E6%2589%25BF%25E8%25AA%258D%25E3%2581%25AF%25E3%2581%25A9%25E3%2581%2593%25E3%2581%25AB%25E7%25BD%25AE%25E3%2581%258F%25E3%2581%25B9%25E3%2581%258D%25E3%2581%258B%25E3%2580%2582%25E5%258F%2596%25E3%2582%258A%25E6%25B6%2588%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E6%2593%258D%25E4%25BD%259C%25E3%2581%25A0%25E3%2581%2591%25E3%2582%2592%25E4%25BA%25BA%25E3%2581%258C%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:KIM%2520SEONGSU%25EF%25BD%259C%25E4%25BB%25A4%25E5%2592%258C8%25E5%25B9%25B4%25E5%25BA%25A6%2520...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2IxMGJhNDUwMDQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントの人間による承認プロセス設計：取り消し不能な操作を特定し、意思決定のボトルネックを防ぐ最適化手法",
+    "summary_ja": "AIエージェントの自律化が進む中で、過剰な確認は「思考停止の承認」を招き、不足すれば重大な事故を誘発する。 本記事は、AIの操作を「可逆性」の軸で3分類し、取り消し不能なアクションのみに人間が介入するという設計指針を提示する。 操作の重要度に応じた承認フローを構築することで、人間の注意リソースを浪費せず、システムの自律性と安全性のバランスを最大化できる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの人間による承認プロセス設計：取り消し不能な操作を特定し、意思決定のボトルネックを防ぐ最適化手法",
+        "summary": "AIエージェントの自律化が進む中で、過剰な確認は「思考停止の承認」を招き、不足すれば重大な事故を誘発する。 本記事は、AIの操作を「可逆性」の軸で3分類し、取り消し不能なアクションのみに人間が介入するという設計指針を提示する。 操作の重要度に応じた承認フローを構築することで、人間の注意リソースを浪費せず、システムの自律性と安全性のバランスを最大化できる。"
+      },
+      "en": {
+        "title": "Human-in-the-loop design for AI agents: Optimizing approval workflows by identifying irreversible actions to prevent bottlenecking",
+        "summary": "As autonomous AI agents become more prevalent, developers face a critical dilemma: frequent manual approvals lead to 'confirmation bias' where users click 'Yes' without reading, while insufficient checkpoints risk disastrous actions like data loss. This guide proposes a robust framework for classifying agent tasks based on their reversibility, arguing that human oversight should be strictly reserved for non-reversible actions. By segmenting operations into irreversible, critical, and low-risk tiers, teams can preserve human cognitive bandwidth and maintain system safety without stifling agent autonomy. For builders, the takeaway is to architect agentic workflows that minimize human fatigue by automating low-stakes decisions and only triggering interventions when the state changes cannot be undone, ensuring both security and scalability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-29T18:56:48.972Z"
   },
   {
     "id": "art-1793283456354-g0iop",
@@ -4140,6 +4193,35 @@
       "動画"
     ],
     "created_at": "2026-10-29T17:32:18.423Z"
+  },
+  {
+    "id": "art-1793300202351-95ujg",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/vercel-flags-starts-7x-faster-and-no-longer-extends-function-duration",
+    "published_at": "2026-10-29T06:00:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4fYJWEtWkbQkxgpJFLQyP0/df11a858727d7d25e08480c89808443c/flags_7x_faster.png",
+    "title_ja": "Vercel FlagsのSDKがアップデート、コールドスタート時の初期化速度が7倍高速化され、関数実行時間の延長も解消",
+    "summary_ja": "Vercelは「Vercel Flags」SDKを刷新し、コールドスタート時の初期化処理を7倍高速化（70msから10msへ短縮）した。 SDKの読み込み・解析を先行させ、データファイルの改訂版数を関数呼び出しに含めることで、不要なネットワークリクエストを排除している。 また、レスポンス後の計測用ポーリングを廃止したことで、関数実行時間の延長も解消された。 フラグ管理を多用するサーバーサイドのパフォーマンス最適化において重要な改善となる。",
+    "translations": {
+      "ja": {
+        "title": "Vercel FlagsのSDKがアップデート、コールドスタート時の初期化速度が7倍高速化され、関数実行時間の延長も解消",
+        "summary": "Vercelは「Vercel Flags」SDKを刷新し、コールドスタート時の初期化処理を7倍高速化（70msから10msへ短縮）した。 SDKの読み込み・解析を先行させ、データファイルの改訂版数を関数呼び出しに含めることで、不要なネットワークリクエストを排除している。 また、レスポンス後の計測用ポーリングを廃止したことで、関数実行時間の延長も解消された。 フラグ管理を多用するサーバーサイドのパフォーマンス最適化において重要な改善となる。"
+      },
+      "en": {
+        "title": "Vercel Flags SDK update delivers 7× faster cold starts and eliminates residual function duration overhead",
+        "summary": "Vercel has shipped a significant performance update to the Vercel Flags SDK, slashing cold-start initialization times by 7×, dropping latency from over 70ms to just 10ms. This improvement stems from bundling and parsing the flags datafile immediately upon client creation, alongside passing the current datafile revision directly within function invocations to eliminate unnecessary network round-trips. Furthermore, the SDK no longer extends function duration after the response is sent, as it has removed the previous reliance on persistent post-response reporting. For developers heavily relying on feature flagging for A/B testing or configuration, this optimization effectively removes the performance tax typically associated with dynamic runtime flag evaluation, ensuring that serverless function execution remains lean and responsive at scale."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-29T18:56:42.351Z"
   },
   {
     "id": "art-1793273554358-qaba1",
