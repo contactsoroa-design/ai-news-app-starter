@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1793264531297-j4qhl",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/gentle_hawk873/n/n8b132ffd54b6",
+    "published_at": "2026-10-29T08:58:47.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/329817142/rectangle_large_type_2_0545d724eb4bb75a04d0b4d516405b9c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発AI動画アプリ「Irodori-TTS」Vol.10：画像取得エラーと向き合う「作り直せる設計」の重要性",
+    "summary_ja": "AI動画アプリ開発「Irodori-TTS」の第10回レポート。 画像取得に成功しているのに動画生成には反映されないというトラブルを題材に、特定のバグに対処するだけでなく、システム全体をいつでも再構築可能な状態に保つ「作り直せる設計」の重要性を説く。 複雑なAI連携アプリにおいて、泥沼化を避けて実装を安定させるには、コンポーネントを疎結合にし、いつでも作り直せる柔軟性を持たせることが個人の開発体験を長期的に守る。",
+    "translations": {
+      "ja": {
+        "title": "個人開発AI動画アプリ「Irodori-TTS」Vol.10：画像取得エラーと向き合う「作り直せる設計」の重要性",
+        "summary": "AI動画アプリ開発「Irodori-TTS」の第10回レポート。 画像取得に成功しているのに動画生成には反映されないというトラブルを題材に、特定のバグに対処するだけでなく、システム全体をいつでも再構築可能な状態に保つ「作り直せる設計」の重要性を説く。 複雑なAI連携アプリにおいて、泥沼化を避けて実装を安定させるには、コンポーネントを疎結合にし、いつでも作り直せる柔軟性を持たせることが個人の開発体験を長期的に守る。"
+      },
+      "en": {
+        "title": "Building an AI video app: Learning the value of modular, 'rebuildable' architecture after hitting image processing bottlenecks",
+        "summary": "This tenth development log for the AI video app 'Irodori-TTS' tackles a frustrating specific bug: images were successfully fetched but failed to render within the final video output. The author reflects on this troubleshooting process to advocate for 'rebuildable architecture'—a design philosophy where system components are loosely coupled enough to be ripped out and rebuilt individually. In complex AI-integrated apps, the path to stability isn't just patching errors but ensuring the codebase remains flexible enough that you aren't trapped by your own technical debt. For solo builders, maintaining this modularity is critical; it prevents the development process from stalling when integrating opaque AI APIs and ensures your application remains scalable and resilient in the face of unexpected integration failures."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-10-29T09:02:11.297Z"
+  },
+  {
+    "id": "art-1793264524613-chqhy",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/ReQ_HY/items/944b778a818fb835c27f",
+    "published_at": "2026-10-29T08:52:37.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzk1NjM4NiUyRnByb2ZpbGUtaW1hZ2VzJTJGMTczNjkwNzU3Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YjI3NmZlNGEzZjM1MjgwZmU3Y2I0ZGU5Y2JhMTUwZTY%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkYxNjU2NTg0YzQ3YjQ2Y2YxNGVlZjhiNDJkMjZiYjViOTE2MTY5NzViJTJGb3JpZ2luYWwuanBnJTNGMTc5MjEzNjg3OD9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz0xMTE5YjIyNmI1ZTYwZWE0Y2ExZjgxYWQ4NzVkMmI5Ng%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3D4eb46564363f264694f5dd1af0725b84?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwT3JhY2xlJTIwQUklMjBXb3JsZCUyMDIwMjYlRTclOEYlQkUlRTUlOUMlQjAlRTUlOEYlODIlRTUlOEElQTAlRTMlODMlQUMlRTMlODMlOUQlRTMlODMlQkMlRTMlODMlODglRTIlOTElQTclRTMlODAlOTFBSSVFMyU4MSU4QyVFNSVBRSU5RiVFNyU5NCVBOCVFNSU4QyU5NiVFMyU4MSU5NSVFMyU4MiU4QyVFMyU4MSU5RiVFNCVCQiU4QSVFMyU4MCU4MSVFNyVBNyU4MSVFMyU4MSU5RiVFMyU4MSVBMSVFMyU4MSVBRiVFMyU4MSVBOSVFMyU4MSU4NiVFNiVCNCVCQiVFNyU5NCVBOCVFMyU4MSU5NyVFMyU4MSVBNiVFMyU4MSU4NCVFMyU4MSU4RiVFMyU4MSVBRSVFMyU4MSU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTFmNGVkMmVkOGU2Zjg2MTM4NTMxOTBiMDI2MjZmOTc1&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBSZVFfSFkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1jYTI3Y2MzNDI0NTk4YmFmNWFmNmNkY2I0ZDU3MGNhZA&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=44Os44OD44Kv44O744OG44Kv44OO44Ot44K444O844O744Kz44Oz44K144Or44OG44Kj44Oz44Kw5qCq5byP5Lya56S-&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=481484751ef2888c47b8bd4bcf0c9587",
+    "title_ja": "Oracle AI World 2026現地参加レポート：AI実用化フェーズにおける企業導入とエンジニアが注力すべき技術スタックとは",
+    "summary_ja": "ラスベガスで開催された「Oracle AI World 2026」の3日目キーノートでは、AIがPoC（概念実証）の段階を終え、いよいよ本格的な実用化フェーズに移行したことが強調されました。 基調講演では、企業が独自のデータを用いてAIの推論精度を最大化する「RAGの高度化」や「自律型エージェント」の重要性が説かれています。",
+    "translations": {
+      "ja": {
+        "title": "Oracle AI World 2026現地参加レポート：AI実用化フェーズにおける企業導入とエンジニアが注力すべき技術スタックとは",
+        "summary": "ラスベガスで開催された「Oracle AI World 2026」の3日目キーノートでは、AIがPoC（概念実証）の段階を終え、いよいよ本格的な実用化フェーズに移行したことが強調されました。 基調講演では、企業が独自のデータを用いてAIの推論精度を最大化する「RAGの高度化」や「自律型エージェント」の重要性が説かれています。"
+      },
+      "en": {
+        "title": "Oracle AI World 2026: Moving past AI hype to enterprise-grade practical integration and agentic workflows",
+        "summary": "Reporting live from Las Vegas, the Oracle AI World 2026 keynote confirmed that the industry has decisively shifted from experimental AI proof-of-concepts to full-scale production enterprise deployment. The sessions highlighted that current success no longer relies on merely selecting a foundational model, but on optimizing RAG architectures for precision and orchestrating autonomous agent workflows that interface with mission-critical systems. For software engineers and builders, the technical challenge has evolved: the focus must now center on creating resilient, secure pipelines that ground AI outputs in proprietary enterprise data. The clear takeaway is that competitive advantage will be determined by how effectively developers integrate these intelligent agents into core business logic rather than just running generic AI wrappers."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "アップデート"
+    ],
+    "created_at": "2026-10-29T09:02:04.613Z"
+  },
+  {
+    "id": "art-1793264517169-imkn1",
+    "source_id": "source-digg-ai",
+    "source_name": "Digg AI",
+    "url": "https://digg.com/ai/kf8fyql3",
+    "published_at": "2026-10-29T08:52:25.000Z",
+    "og_image_url": null,
+    "title_ja": "Hugging Faceが公開、AIエージェントの推論能力を劇的に向上させる「ポストトレーニング」5ステップ・カリキュラムの全貌",
+    "summary_ja": "Hugging Faceは、AIエージェントのタスク遂行能力を強化するための「ポストトレーニング」に関する包括的な5段階のカリキュラムを公開した。 教師あり微調整（SFT）からDPO（直接選好最適化）、さらには外部ツール使用の学習まで、モデルの推論を実用レベルへ引き上げる一連の工程を体系化している。",
+    "translations": {
+      "ja": {
+        "title": "Hugging Faceが公開、AIエージェントの推論能力を劇的に向上させる「ポストトレーニング」5ステップ・カリキュラムの全貌",
+        "summary": "Hugging Faceは、AIエージェントのタスク遂行能力を強化するための「ポストトレーニング」に関する包括的な5段階のカリキュラムを公開した。 教師あり微調整（SFT）からDPO（直接選好最適化）、さらには外部ツール使用の学習まで、モデルの推論を実用レベルへ引き上げる一連の工程を体系化している。"
+      },
+      "en": {
+        "title": "Hugging Face releases a 5-step curriculum for post-training AI agents to maximize real-world reasoning and reliability",
+        "summary": "Hugging Face has released a comprehensive five-step curriculum detailing how to post-train AI agents to maximize their reliability and task-execution capabilities. The guide moves beyond basic pre-training, systematically outlining the pipeline from supervised fine-tuning (SFT) and direct preference optimization (DPO) to specialized training for external tool utilization and error correction. By formalizing these steps, Hugging Face provides developers with a clear roadmap for transforming raw base models into robust, autonomous agents capable of navigating complex user environments. For builders moving beyond simple chat interfaces, this curriculum is an essential blueprint for ensuring that agentic workflows remain stable, predictable, and effective when deployed in production scenarios where model reasoning accuracy is the primary bottleneck for user adoption."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-29T09:01:57.169Z"
+  },
+  {
     "id": "art-1793263592354-muxnm",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -826,6 +905,32 @@
       "アップデート"
     ],
     "created_at": "2026-10-28T20:48:11.507Z"
+  },
+  {
+    "id": "art-1793264510147-8xrjb",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/floot",
+    "published_at": "2026-10-28T20:14:10.000Z",
+    "og_image_url": null,
+    "title_ja": "ChatGPT上でアプリ構築から公開まで完結──ノーコード開発プラットフォーム「Floot」がプラグイン提供を開始",
+    "summary_ja": "Flootは、ChatGPTのインターフェース内で直接アプリの構築、テスト、そしてライブ公開までを実行可能にする開発ツールだ。 対話型の指示によってフロントエンドのデザインからバックエンドの連携までを自動生成し、ローカル開発環境や公開サーバーのセットアップを不要にする。 AIを活用して開発サイクルを極限まで短縮したい個人開発者や、プロトタイプを即座に共有・検証したいクリエイターにとって、シームレスな統合環境として有力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "ChatGPT上でアプリ構築から公開まで完結──ノーコード開発プラットフォーム「Floot」がプラグイン提供を開始",
+        "summary": "Flootは、ChatGPTのインターフェース内で直接アプリの構築、テスト、そしてライブ公開までを実行可能にする開発ツールだ。 対話型の指示によってフロントエンドのデザインからバックエンドの連携までを自動生成し、ローカル開発環境や公開サーバーのセットアップを不要にする。 AIを活用して開発サイクルを極限まで短縮したい個人開発者や、プロトタイプを即座に共有・検証したいクリエイターにとって、シームレスな統合環境として有力な選択肢となる。"
+      },
+      "en": {
+        "title": "Floot launches ChatGPT integration to let users build, test, and publish production-ready apps entirely within chat",
+        "summary": "Floot has introduced a new ChatGPT plugin that enables developers to build, test, and deploy functional applications without ever leaving the conversational interface. By streamlining the entire lifecycle—from initial prompt-based interface design to automated backend integration—Floot removes the friction of configuring local development environments or external hosting servers. This integration allows users to rapidly iterate on ideas and push live builds instantly from within the chat window. For independent builders and product teams focused on velocity, Floot represents a significant shift toward 'zero-setup' development, providing a streamlined pathway to launch functional software prototypes while keeping the entire technical workflow centralized inside the familiar ChatGPT experience for maximum efficiency."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-29T09:01:50.147Z"
   },
   {
     "id": "art-1793258194352-x85t3",
