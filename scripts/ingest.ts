@@ -47,19 +47,22 @@ const INGEST_SOFT_DEADLINE_MS = Number(
 );
 /**
  * 1実行の追加上限。
- * 無料枠は午後前に枯れやすいので、生きている時間帯で取り逃しにくい件数にする。
- * 日上限 MAX_ARTICLES_PER_DAY（既定450）でブレーキ。
+ * 15分 cron 前提。日次ペース（時刻比例）＋時間上限で均等化し、遅れ分だけここで取り戻す。
  */
-const DEFAULT_ARTICLES_PER_RUN = 10;
+const DEFAULT_ARTICLES_PER_RUN = 4;
 /**
- * Gemini 無料 RPD（目安500）との中間。成功寄りに寄せつつリトライ余白約50。
+ * 無料枠の実効天井に合わせる（実績だいたい230〜270）。450は有料向けに env で上げる。
+ * 高すぎる日上限＋薄い時間枠は「午後用に残して使えない」取りこぼしの元。
  */
-const DEFAULT_ARTICLES_PER_DAY = 450;
+const DEFAULT_ARTICLES_PER_DAY = 260;
 /**
- * 1時間あたり上限。未指定時はこの既定（無料枠の実効天井付近まで午前〜昼で埋められる幅）。
- * クォータ日（America/Los_Angeles＝Gemini RPD）で数える。
+ * 1時間あたり上限。≈ 日上限/24 ＋遅れ取り戻し余白。
  */
-const DEFAULT_ARTICLES_PER_HOUR = 40;
+const DEFAULT_ARTICLES_PER_HOUR = 14;
+/**
+ * 線形ペースより何件まで先行してよいか。小さすぎると取りこぼし、大きすぎると前倒れ。
+ */
+const DEFAULT_PACE_SLACK = 10;
 const DEFAULT_QUOTA_TIMEZONE = 'America/Los_Angeles';
 /** 連続でレート制限スキップしたら実行全体を止める（空打ち防止） */
 const DEFAULT_RATE_LIMIT_STOP_STREAK = 2;
@@ -428,6 +431,21 @@ function zonedDayAndHour(date: Date, timeZone: string): ZonedDateHour {
   const day = `${get('year')}-${get('month')}-${get('day')}`;
   const hour = `${day}T${get('hour')}`;
   return { day, hour };
+}
+
+/** クォータ日の経過割合 0..1（その TZ のローカル時刻） */
+function zonedDayFraction(date: Date, timeZone: string): number {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hourCycle: 'h23',
+  }).formatToParts(date);
+  const get = (type: Intl.DateTimeFormatPartTypes) =>
+    Number(parts.find((p) => p.type === type)?.value ?? '0');
+  const elapsed = get('hour') * 3600 + get('minute') * 60 + get('second');
+  return Math.min(1, Math.max(0, elapsed / 86400));
 }
 
 type SummarizeOutcome =
@@ -1086,7 +1104,7 @@ async function main() {
   );
   const pastSoftDeadline = () => Date.now() - runStartedAt >= softDeadlineMs;
 
-  // 無料枠が早い時間帯に枯れる前提で、生きている枠を取り逃しにくくする
+  // 日上限は無料の実効天井に合わせ、時刻比例ペース＋slack で均等＆遅れ取り戻し
   const maxPerDay = Number(
     process.env.MAX_ARTICLES_PER_DAY || DEFAULT_ARTICLES_PER_DAY
   );
@@ -1099,6 +1117,10 @@ async function main() {
     Number(
       process.env.MAX_ARTICLES_PER_HOUR || String(DEFAULT_ARTICLES_PER_HOUR)
     )
+  );
+  const paceSlack = Math.max(
+    0,
+    Number(process.env.INGEST_PACE_SLACK || DEFAULT_PACE_SLACK)
   );
   const quotaTimeZone =
     process.env.INGEST_QUOTA_TIMEZONE || DEFAULT_QUOTA_TIMEZONE;
@@ -1151,22 +1173,13 @@ async function main() {
       ? checkedSources
       : sources.filter((s) => isIngestible(s));
 
-  if (!apiKey) {
-    console.log(
-      '情報: SUMMARY_API_KEY が未設定のため、ローカルフォールバック（API費用0円）で動作します。'
-    );
-  } else {
-    console.log(
-      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件 / 1時間上限=${maxPerHour}件 / 1日上限=${maxPerDay}件（${quotaTimeZone}＝Gemini RPD） / 429連続停止=${rateLimitStopStreak} / LLMタイムアウト=${LLM_FETCH_TIMEOUT_MS}ms / ソフト締切=${Math.round(softDeadlineMs / 1000)}s`
-    );
-  }
-
   const now = new Date();
   // 日次・時間上限は Gemini RPD（既定 America/Los_Angeles）に合わせる。月次費用は Tokyo。
   const { day: dayPrefix, hour: hourPrefix } = zonedDayAndHour(
     now,
     quotaTimeZone
   );
+  const dayFraction = zonedDayFraction(now, quotaTimeZone);
   const tokyoDay = tokyoDatePrefix(now);
   const monthPrefix = tokyoDay.slice(0, 7);
   const monthCount = existingArticles.filter(
@@ -1179,9 +1192,27 @@ async function main() {
     (a) =>
       zonedDayAndHour(new Date(a.created_at), quotaTimeZone).hour === hourPrefix
   ).length;
+  // 線形ペース＋slack まで。遅れ分はこの実行の maxPerRun / 時間枠で取り戻す
+  const pacedBudgetNow = Math.min(
+    maxPerDay,
+    Math.floor(maxPerDay * dayFraction) + paceSlack
+  );
+  const pacedRoom = Math.max(0, pacedBudgetNow - alreadyToday);
+  const hourRoom = Math.max(0, maxPerHour - alreadyThisHour);
+  const effectiveRunCap = Math.min(maxPerRun, pacedRoom, hourRoom);
   let estimatedMonthlyCost = apiKey
     ? monthCount * ESTIMATED_COST_PER_ARTICLE_JPY
     : 0;
+
+  if (!apiKey) {
+    console.log(
+      '情報: SUMMARY_API_KEY が未設定のため、ローカルフォールバック（API費用0円）で動作します。'
+    );
+  } else {
+    console.log(
+      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件（ペース後=${effectiveRunCap}） / 1時間上限=${maxPerHour}件 / 1日上限=${maxPerDay}件（${quotaTimeZone}＝Gemini RPD） / ペース=${Math.round(dayFraction * 100)}%予算${pacedBudgetNow}(+slack${paceSlack}) 済${alreadyToday} / 429連続停止=${rateLimitStopStreak} / LLMタイムアウト=${LLM_FETCH_TIMEOUT_MS}ms / ソフト締切=${Math.round(softDeadlineMs / 1000)}s`
+    );
+  }
 
   // 全ソースから並列で最新RSSを取得し、件数の少ないソース優先＋1実行1ソース上限で偏りを抑える
   console.log(`全 ${activeSources.length} 件のRSSフィードを巡回中...`);
@@ -1320,7 +1351,8 @@ async function main() {
 
   const atDayCap = () => alreadyToday + todayCount >= maxPerDay;
   const atHourCap = () => alreadyThisHour + hourCount >= maxPerHour;
-  const atRunCap = () => todayCount >= maxPerRun;
+  const atRunCap = () => todayCount >= effectiveRunCap;
+  const atPaceCap = () => alreadyToday + todayCount >= pacedBudgetNow;
 
   if (alreadyToday >= maxPerDay) {
     console.log(
@@ -1329,6 +1361,10 @@ async function main() {
   } else if (alreadyThisHour >= maxPerHour) {
     console.log(
       `この時間帯ですでに ${alreadyThisHour} 件追加済み（1時間上限 ${maxPerHour}）のため残りは次の時間へ回します。`
+    );
+  } else if (effectiveRunCap <= 0) {
+    console.log(
+      `ペース維持のため待機（済 ${alreadyToday} / いまの予算 ${pacedBudgetNow}、日 ${maxPerDay}）。遅れが出た時間帯で取り戻します。`
     );
   }
 
@@ -1344,7 +1380,7 @@ async function main() {
       return 'stop';
     }
     if (stoppedForRateLimit) return 'stop';
-    if (atDayCap() || atHourCap() || atRunCap()) return 'stop';
+    if (atDayCap() || atHourCap() || atRunCap() || atPaceCap()) return 'stop';
     if (
       apiKey &&
       estimatedMonthlyCost + ESTIMATED_COST_PER_ARTICLE_JPY > maxMonthlyCostJpy
