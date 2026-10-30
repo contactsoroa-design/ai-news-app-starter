@@ -615,6 +615,10 @@ function isTopPageOrIndexUrl(urlStr: string, siteUrl?: string): boolean {
   try {
     const u = new URL(urlStr);
     const cleanPath = u.pathname.replace(/\/+$/, '');
+    // #2-1-314 のようなバージョン／日付アンカー付きは個別エントリとして扱う
+    if (u.hash && u.hash.length > 1) {
+      return false;
+    }
     if (
       !cleanPath ||
       /^\/(blog|news|changelog|releases|updates|hub|topics|tags|trending)$/i.test(
@@ -680,7 +684,11 @@ function parseRssItems(xml: string, siteUrl?: string): RawFeedItem[] {
       guidMatch?.[1],
       ...hrefLinkMatches,
     ]
-      .map((raw) => (raw ? decodeEntities(raw).split('#')[0].trim() : ''))
+      .map((raw) => {
+        if (!raw) return '';
+        // changelog / release-notes は #version で記事を区別する。落とすと全件同一URLになり取りこぼす
+        return decodeEntities(raw).trim();
+      })
       .filter((u) => isLikelyArticleUrl(u));
     const link = candidates[0] ?? '';
     const pubDateRaw = pubDateMatch ? decodeEntities(pubDateMatch[2]) : null;
