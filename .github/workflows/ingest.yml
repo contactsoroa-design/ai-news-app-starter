@@ -1,21 +1,17 @@
 # 日英ネイティブ要約つきで RSS を収集し、data/articles.json を自動更新する
 # Secrets に SUMMARY_API_KEY を設定してから有効になる
 #
-# 主起動: Vercel Cron（ops/ingest-wake）→ repository_dispatch
-# 保険: 下の schedule（GitHub は間引くことがある。docs/収集-外部cron手順.md）
+# 主起動: Cloudflare Workers Cron（ops/ingest-wake-cf）→ repository_dispatch
+# 保険: 下の schedule は Sparse（dispatch との二重叩きで無料枠を溶かさない）
 name: Ingest AI news (JA+EN)
 
 on:
   schedule:
-    # 保険枠。混雑しやすい :00/:05/:15/:30/:45 を避け、1時間に6回チャンス
-    - cron: '3 * * * *'
-    - cron: '13 * * * *'
-    - cron: '23 * * * *'
-    - cron: '33 * * * *'
-    - cron: '43 * * * *'
-    - cron: '53 * * * *'
+    # 保険のみ（UTC）。主は CF ~15分 wake。頻繁な schedule は cancel/二重消費の元
+    - cron: '17 2 * * *'
+    - cron: '17 14 * * *'
   workflow_dispatch:
-  # 主: Vercel Cron（ops/ingest-wake）から
+  # 主: CF Cron（ops/ingest-wake-cf）から
   repository_dispatch:
     types: [ingest]
 
@@ -91,10 +87,10 @@ jobs:
             echo "Environments / Variables タブではありません。キー本文はログに出しません。"
             exit 1
           fi
-          # 空の Actions Variable を無視して既定値を使う（均等配信＋無料RPD余白）
+          # 空の Actions Variable を無視して既定値を使う（無料枠の取り逃し抑制）
           [ -n "${MAX_ARTICLES_PER_DAY:-}" ] || export MAX_ARTICLES_PER_DAY=450
-          [ -n "${MAX_ARTICLES_PER_RUN:-}" ] || export MAX_ARTICLES_PER_RUN=4
-          [ -n "${MAX_ARTICLES_PER_HOUR:-}" ] || export MAX_ARTICLES_PER_HOUR=19
+          [ -n "${MAX_ARTICLES_PER_RUN:-}" ] || export MAX_ARTICLES_PER_RUN=10
+          [ -n "${MAX_ARTICLES_PER_HOUR:-}" ] || export MAX_ARTICLES_PER_HOUR=40
           [ -n "${MAX_ARTICLE_AGE_DAYS:-}" ] || export MAX_ARTICLE_AGE_DAYS=7
           [ -n "${MAX_MONTHLY_COST_JPY:-}" ] || export MAX_MONTHLY_COST_JPY=3000
           [ -n "${SUMMARY_MODEL:-}" ] || export SUMMARY_MODEL=gemini-3.1-flash-lite

@@ -47,18 +47,19 @@ const INGEST_SOFT_DEADLINE_MS = Number(
 );
 /**
  * 1実行の追加上限。
- * 15分 cron × 時間バジェット前提。ドカ取りせず均等配信する。
+ * 無料枠は午後前に枯れやすいので、生きている時間帯で取り逃しにくい件数にする。
  * 日上限 MAX_ARTICLES_PER_DAY（既定450）でブレーキ。
  */
-const DEFAULT_ARTICLES_PER_RUN = 4;
+const DEFAULT_ARTICLES_PER_RUN = 10;
 /**
  * Gemini 無料 RPD（目安500）との中間。成功寄りに寄せつつリトライ余白約50。
  */
 const DEFAULT_ARTICLES_PER_DAY = 450;
 /**
- * 1時間あたり上限。未指定時は ceil(日上限/24)。
+ * 1時間あたり上限。未指定時はこの既定（無料枠の実効天井付近まで午前〜昼で埋められる幅）。
  * クォータ日（America/Los_Angeles＝Gemini RPD）で数える。
  */
+const DEFAULT_ARTICLES_PER_HOUR = 40;
 const DEFAULT_QUOTA_TIMEZONE = 'America/Los_Angeles';
 /** 連続でレート制限スキップしたら実行全体を止める（空打ち防止） */
 const DEFAULT_RATE_LIMIT_STOP_STREAK = 2;
@@ -1085,7 +1086,7 @@ async function main() {
   );
   const pastSoftDeadline = () => Date.now() - runStartedAt >= softDeadlineMs;
 
-  // 無料 RPD 余白＋時間バジェットで均等配信（ドカ取りしない）
+  // 無料枠が早い時間帯に枯れる前提で、生きている枠を取り逃しにくくする
   const maxPerDay = Number(
     process.env.MAX_ARTICLES_PER_DAY || DEFAULT_ARTICLES_PER_DAY
   );
@@ -1096,8 +1097,7 @@ async function main() {
   const maxPerHour = Math.max(
     1,
     Number(
-      process.env.MAX_ARTICLES_PER_HOUR ||
-        String(Math.ceil(maxPerDay / 24))
+      process.env.MAX_ARTICLES_PER_HOUR || String(DEFAULT_ARTICLES_PER_HOUR)
     )
   );
   const quotaTimeZone =
