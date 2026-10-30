@@ -1,5 +1,119 @@
 [
   {
+    "id": "art-1793377977656-ao7op",
+    "source_id": "source-n8n",
+    "source_name": "n8n Blog (AI Automation)",
+    "url": "https://blog.n8n.io/throttling-vs-rate-limiting/",
+    "published_at": "2026-10-30T16:30:34.000Z",
+    "og_image_url": "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/size/w1200/2026/10/TL--23-.jpeg",
+    "title_ja": "n8nが解説、API制限を回避する「スロットリング」と「レート制限」の仕組み。指数バックオフとジッターで自動化ワークフローを堅牢に保つ設計術",
+    "summary_ja": "n8nが公開した記事によると、API制限への対応にはスロットリングとレート制限の適切な使い分けが不可欠です。 Retry-Afterヘッダーの活用に加え、指数バックオフとジッター（ランダムな遅延）を組み合わせることで、リトライ処理が集中する「サンダリング・ハード問題」を回避できます。 自動化ワークフローを開発する際は、単なる再試行ロジックの実装ではなく、サービス側の制限に配慮した設計がサービスの安定性を大きく左右します。",
+    "translations": {
+      "ja": {
+        "title": "n8nが解説、API制限を回避する「スロットリング」と「レート制限」の仕組み。指数バックオフとジッターで自動化ワークフローを堅牢に保つ設計術",
+        "summary": "n8nが公開した記事によると、API制限への対応にはスロットリングとレート制限の適切な使い分けが不可欠です。 Retry-Afterヘッダーの活用に加え、指数バックオフとジッター（ランダムな遅延）を組み合わせることで、リトライ処理が集中する「サンダリング・ハード問題」を回避できます。 自動化ワークフローを開発する際は、単なる再試行ロジックの実装ではなく、サービス側の制限に配慮した設計がサービスの安定性を大きく左右します。"
+      },
+      "en": {
+        "title": "n8n breaks down throttling vs. rate limiting: How to use backoff strategies and jitter to build robust API workflows",
+        "summary": "n8n has released a technical guide clarifying the differences between throttling and rate limiting when building automated workflows. For builders, the durable takeaway is to treat n8n as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
+      }
+    },
+    "tool_tags": [
+      "n8n"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-30T16:32:57.656Z"
+  },
+  {
+    "id": "art-1793377945296-fsatd",
+    "source_id": "source-meta-ai",
+    "source_name": "Meta Engineering",
+    "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+    "published_at": "2026-10-26T16:00:07.000Z",
+    "og_image_url": "https://engineering.fb.com/wp-content/uploads/2026/10/OCP-2026-Santosh-Meta.jpg",
+    "title_ja": "MetaがOCP Summitで公開した次世代AIインフラ、102.4T級スイッチ「IcePack」と液冷ネットワークでギガワット級AIクラスターを支える",
+    "summary_ja": "MetaはOCP Global Summit 2026にて、最新AIモデル「Muse Wonder」や「Muse Spark」を支えるネットワーク技術を公開した。 中核となる「IcePack」と「IceCube」は、102.4Tのスイッチブレード（800Gポートを128基搭載）を液冷システムで冷却し、ギガワット級クラスターの密度と効率を最大化する。",
+    "translations": {
+      "ja": {
+        "title": "MetaがOCP Summitで公開した次世代AIインフラ、102.4T級スイッチ「IcePack」と液冷ネットワークでギガワット級AIクラスターを支える",
+        "summary": "MetaはOCP Global Summit 2026にて、最新AIモデル「Muse Wonder」や「Muse Spark」を支えるネットワーク技術を公開した。 中核となる「IcePack」と「IceCube」は、102.4Tのスイッチブレード（800Gポートを128基搭載）を液冷システムで冷却し、ギガワット級クラスターの密度と効率を最大化する。"
+      },
+      "en": {
+        "title": "Meta unveils 102.4T IcePack network switches and liquid-cooled AI infrastructure supporting gigawatt-scale clusters at OCP 2026",
+        "summary": "At the 2026 OCP Global Summit, Meta detailed the networking infrastructure powering its latest AI models, Muse Wonder and Muse Spark. Central to this architecture are IcePack and IceCube, the company's first liquid-cooled network racks featuring 102.4T switch blades, each packing 128 ports of 800G capacity using Broadcom Tomahawk 6C and NVIDIA Spectrum-6 silicon. These designs prioritize thermal management and interconnect density, which are critical requirements for sustaining stable, gigawatt-scale GPU clusters. For infrastructure engineers and AI builders, the takeaway is clear: as compute density accelerates, network bottlenecks shift from raw bandwidth to power and cooling constraints. Mastering liquid-cooled network topology is now a mandatory competency for managing the massive clusters required for next-generation generative AI training and inference workflows."
+      }
+    },
+    "tool_tags": [
+      "Meta AI"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-30T16:32:25.296Z"
+  },
+  {
+    "id": "art-1793377920704-qo96t",
+    "source_id": "source-claude-release",
+    "source_name": "Claude Code Changelog",
+    "url": "https://code.claude.com/docs/en/changelog#2-1-310",
+    "published_at": "2026-10-23T23:49:22.000Z",
+    "og_image_url": "https://claude-code.mintlify.app/_mintlify/api/og/v2?division=Getting+started&title=Claude+Code+changelog&description=Release+notes+for+Claude+Code%2C+including+new+features%2C+improvements%2C+and+bug+fixes+by+version.&theme=8d9812df31da293aba4e8103&signature=b530ac886c82b93ae600770b632e93cd5e65b1895873efc12a624a244deee76b",
+    "title_ja": "Claude Code v2.1.310アップデート：クラウドセッションの権限管理強化と、Bedrock・Vertex・Foundry向けモニター機能の拡充",
+    "summary_ja": "Claude Code v2.1.310では、Bedrock、Vertex、Foundry上でのプラグイン監視やテレメトリ無効時のモニタリング機能を強化。 さらに、エンタープライズ版では「クラウドセッション」および「リモートコントロール」のアクセス権限をロール単位で制御可能となり、企業導入におけるガバナンスとセキュリティが一層高まっている。 管理者向けの運用機能が充実したことで、大規模開発チームでの安全なAIエージェント活用がさらに進むだろう。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code v2.1.310アップデート：クラウドセッションの権限管理強化と、Bedrock・Vertex・Foundry向けモニター機能の拡充",
+        "summary": "Claude Code v2.1.310では、Bedrock、Vertex、Foundry上でのプラグイン監視やテレメトリ無効時のモニタリング機能を強化。 さらに、エンタープライズ版では「クラウドセッション」および「リモートコントロール」のアクセス権限をロール単位で制御可能となり、企業導入におけるガバナンスとセキュリティが一層高まっている。 管理者向けの運用機能が充実したことで、大規模開発チームでの安全なAIエージェント活用がさらに進むだろう。"
+      },
+      "en": {
+        "title": "Claude Code v2.1.310 brings granular Enterprise role-based access for Cloud sessions plus new Bedrock, Vertex, and Foundry monitoring",
+        "summary": "Claude Code version 2.1.310 introduces critical enhancements for Enterprise users, allowing admins to map Cloud sessions and Remote Control permissions directly to specific custom roles for tighter access governance. Beyond identity, the update adds a dedicated Monitor tool and support for monitoring plugins on Bedrock, Vertex, and Foundry, even when telemetry is disabled. It also improves error handling for MCP tool timeouts, preventing infinite loops by notifying the model when an elicitation goes unanswered. These changes represent a maturing workflow, shifting Claude Code from a solo-developer tool toward a secure, enterprise-ready environment. For engineering leads, the ability to control infrastructure access via role-based policies is a vital step toward scaling AI-assisted coding across organizational boundaries."
+      }
+    },
+    "tool_tags": [
+      "Claude"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-30T16:32:00.704Z"
+  },
+  {
+    "id": "art-1793377903084-m3tql",
+    "source_id": "source-xai",
+    "source_name": "xAI / Grok Release Notes",
+    "url": "https://docs.x.ai/developers/release-notes#october-grok-voice-2-0-deprecation",
+    "published_at": "2026-10-28T16:00:00.000Z",
+    "og_image_url": "https://docs.x.ai/api/og?t=eyJ0aXRsZSI6IlJlbGVhc2UgTm90ZXMiLCJ2IjoiNyIsInNjb3BlIjoiZGV2ZWxvcGVycyIsInNlY3Rpb24iOiJEZXZlbG9wZXJzIn0.UOuwQ0E7fr20uDDdbCdzOFhiGE9dGykBsL1U1gJuhMA",
+    "title_ja": "xAIが「Grok Voice 2.0」の提供を終了、新版「3.0/latest」へ移行推奨（価格据え置きで利用可能）",
+    "summary_ja": "xAIは音声モデル「grok-voice-2.0」の提供を終了し、非推奨化を発表した。 開発者はAPIモデル指定を「grok-voice-3.0」または「grok-voice-latest」へ速やかに変更する必要がある。 今回のアップデートに伴う追加コストはなく、現行の課金体系のまま最新の音声認識・合成機能を利用可能だ。 音声関連機能の実装を進めるエンジニアは、動作安定性の維持のため直ちにエンドポイントの更新を推奨する。",
+    "translations": {
+      "ja": {
+        "title": "xAIが「Grok Voice 2.0」の提供を終了、新版「3.0/latest」へ移行推奨（価格据え置きで利用可能）",
+        "summary": "xAIは音声モデル「grok-voice-2.0」の提供を終了し、非推奨化を発表した。 開発者はAPIモデル指定を「grok-voice-3.0」または「grok-voice-latest」へ速やかに変更する必要がある。 今回のアップデートに伴う追加コストはなく、現行の課金体系のまま最新の音声認識・合成機能を利用可能だ。 音声関連機能の実装を進めるエンジニアは、動作安定性の維持のため直ちにエンドポイントの更新を推奨する。"
+      },
+      "en": {
+        "title": "xAI deprecates Grok Voice 2.0; developers should migrate to the 3.0 or latest model versions immediately",
+        "summary": "xAI has officially deprecated the grok-voice-2.0 endpoint, mandating that developers transition their integrations to either the grok-voice-3.0 or grok-voice-latest models. This update does not incur any price adjustments, allowing teams to leverage the latest speech-to-speech capabilities at the same cost as the previous iteration. For engineers building voice-driven applications on top of the xAI platform, it is critical to update your model references in your codebase immediately to prevent service disruptions and ensure access to improved inference performance. This change highlights the necessity of tracking model lifecycles and maintaining flexible endpoint configurations in production environments to avoid downtime when deprecated models are eventually phased out from the infrastructure."
+      }
+    },
+    "tool_tags": [
+      "Grok"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-30T16:31:43.084Z"
+  },
+  {
     "id": "art-1793377027093-mr01l",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
