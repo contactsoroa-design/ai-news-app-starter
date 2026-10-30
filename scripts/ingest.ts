@@ -51,18 +51,18 @@ const INGEST_SOFT_DEADLINE_MS = Number(
  */
 const DEFAULT_ARTICLES_PER_RUN = 4;
 /**
- * 無料枠の実効天井に合わせる（実績だいたい230〜270）。450は有料向けに env で上げる。
- * 高すぎる日上限＋薄い時間枠は「午後用に残して使えない」取りこぼしの元。
+ * 無料 Flash-Lite をやや攻める（RPD余裕を見て350。有料なら env で450等へ）。
+ * 時間枠とセットで上げ、先行しすぎによる空白を抑える。
  */
-const DEFAULT_ARTICLES_PER_DAY = 260;
+const DEFAULT_ARTICLES_PER_DAY = 350;
 /**
  * 1時間あたり上限。≈ 日上限/24 ＋遅れ取り戻し余白。
  */
-const DEFAULT_ARTICLES_PER_HOUR = 14;
+const DEFAULT_ARTICLES_PER_HOUR = 15;
 /**
  * 線形ペースより何件まで先行してよいか。小さすぎると取りこぼし、大きすぎると前倒れ。
  */
-const DEFAULT_PACE_SLACK = 10;
+const DEFAULT_PACE_SLACK = 6;
 const DEFAULT_QUOTA_TIMEZONE = 'America/Los_Angeles';
 /** 連続でレート制限スキップしたら実行全体を止める（空打ち防止） */
 const DEFAULT_RATE_LIMIT_STOP_STREAK = 2;
@@ -526,6 +526,7 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-perplexity': 'Perplexity',
   'source-mistral': 'Mistral',
   'source-meta-ai': 'Meta AI',
+  'source-pytorch': 'PyTorch',
   'source-revenuecat': 'RevenueCat',
   'source-appfigures': 'Appfigures',
   'source-posthog': 'PostHog',

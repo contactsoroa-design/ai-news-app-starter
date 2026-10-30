@@ -63,10 +63,22 @@ function resolveFeedUrls(): string[] {
   return urls;
 }
 
-function withCacheBust(url: string): string {
-  const sep = url.includes('?') ? '&' : '?';
-  return `${url}${sep}_=${Date.now()}`;
-}
+/** 直近の成功レスポンス。304 や同一セッションの再取得でフルJSONを避ける */
+type RemoteFeedCache = {
+  url: string;
+  etag: string | null;
+  lastModified: string | null;
+  articles: Article[];
+  fetchedAt: number;
+};
+
+let remoteFeedCache: RemoteFeedCache | null = null;
+
+/**
+ * 変更がなければネットワークを省略するTTL（フォアグラウンド復帰の連打対策）。
+ * pull更新でもこの秒数内ならキャッシュを返し、無駄な3MB再取得を止める。
+ */
+const FEED_CACHE_TTL_MS = 60_000;
 
 /**
  * 見出しに含まれる余計な記号やプレフィックスノイズを除去する
@@ -213,20 +225,77 @@ function unwrapArticlesPayload(data: unknown): Article[] {
   throw new Error('Invalid articles feed shape');
 }
 
+function feedCacheForUrl(url: string): RemoteFeedCache | null {
+  if (!remoteFeedCache) return null;
+  // ミラー切替時は ETag が一致しないので、同一URLのキャッシュだけ使う
+  return remoteFeedCache.url === url ? remoteFeedCache : null;
+}
+
+function rememberRemoteFeed(
+  url: string,
+  response: Response,
+  articles: Article[]
+): void {
+  remoteFeedCache = {
+    url,
+    etag: response.headers.get('ETag') ?? response.headers.get('etag'),
+    lastModified:
+      response.headers.get('Last-Modified') ??
+      response.headers.get('last-modified'),
+    articles,
+    fetchedAt: Date.now(),
+  };
+}
+
 async function loadRawArticlesFromRemote(urls: string[]): Promise<Article[]> {
+  // 直近に取ったばかりならフル再取得しない（AppState silent / 連打 pull）
+  if (
+    remoteFeedCache &&
+    Date.now() - remoteFeedCache.fetchedAt < FEED_CACHE_TTL_MS
+  ) {
+    return remoteFeedCache.articles;
+  }
+
   let lastError: unknown;
   for (const url of urls) {
     try {
-      const response = await fetch(withCacheBust(url));
+      const cached = feedCacheForUrl(url);
+      const headers: Record<string, string> = {
+        Accept: 'application/json',
+      };
+      // キャッシュバスティングはしない（毎回3MB落とす元凶）。条件付きGETで変更検知する
+      if (cached?.etag) {
+        headers['If-None-Match'] = cached.etag;
+      }
+      if (cached?.lastModified) {
+        headers['If-Modified-Since'] = cached.lastModified;
+      }
+
+      const response = await fetch(url, { headers });
+
+      if (response.status === 304 && cached) {
+        remoteFeedCache = { ...cached, fetchedAt: Date.now() };
+        return cached.articles;
+      }
+
       if (!response.ok) {
         lastError = new Error(`HTTP ${response.status} for ${url}`);
         continue;
       }
-      return unwrapArticlesPayload(await response.json());
+
+      const articles = unwrapArticlesPayload(await response.json());
+      rememberRemoteFeed(url, response, articles);
+      return articles;
     } catch (err) {
       lastError = err;
     }
   }
+
+  // 全URL失敗でもセッション内キャッシュがあればそれを使う（オフライン耐性）
+  if (remoteFeedCache && remoteFeedCache.articles.length > 0) {
+    return remoteFeedCache.articles;
+  }
+
   throw lastError instanceof Error
     ? lastError
     : new Error('All feed URLs failed');
@@ -563,6 +632,7 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-perplexity': 'Perplexity',
   'source-mistral': 'Mistral',
   'source-meta-ai': 'Meta AI',
+  'source-pytorch': 'PyTorch',
   'source-revenuecat': 'RevenueCat',
   'source-appfigures': 'Appfigures',
   'source-posthog': 'PostHog',
@@ -606,6 +676,7 @@ const SOURCE_ALLOWED_TOOLS: Record<string, readonly string[]> = {
   'source-perplexity': ['Perplexity'],
   'source-mistral': ['Mistral'],
   'source-meta-ai': ['Meta AI'],
+  'source-pytorch': ['PyTorch', 'Meta AI'],
   'source-revenuecat': ['RevenueCat'],
   'source-appfigures': ['Appfigures'],
   'source-posthog': ['PostHog'],

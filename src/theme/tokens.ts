@@ -55,11 +55,13 @@ export const toolBadgeColors: Record<string, { bg: string; fg: string; initial: 
   Runway: { bg: '#FF3366', fg: '#F2F3F5', initial: 'R' },
   Firecrawl: { bg: '#FF4D00', fg: '#F2F3F5', initial: 'Fc' },
   ElevenLabs: { bg: '#F59E0B', fg: '#0E1117', initial: '11' },
+  Transkriptor: { bg: '#6C5CE7', fg: '#F2F3F5', initial: 'Tk' },
   'Koala AI': { bg: '#22C55E', fg: '#0E1117', initial: 'Ko' },
   'Copy.ai': { bg: '#FF6A3D', fg: '#0E1117', initial: 'Ca' },
   Notion: { bg: '#E2E8F0', fg: '#0E1117', initial: 'N' },
   Mistral: { bg: '#FA520F', fg: '#0E1117', initial: 'M' },
   'Meta AI': { bg: '#0866FF', fg: '#F2F3F5', initial: 'M' },
+  PyTorch: { bg: '#EE4C2C', fg: '#F2F3F5', initial: 'Pt' },
 };
 
 // 各ツールごとの専用カラーパレット（バナー・アクセント・背景・枠線が記事の主役ツールに完全一致するようにする）
@@ -95,11 +97,13 @@ export const toolPalettes: Record<string, ThemePalette> = {
   Runway: { accent: '#FF3366', background: '#170B10', panel: '#29141C', line: '#42202D' },
   Firecrawl: { accent: '#FF4D00', background: '#140A06', panel: '#2A140C', line: '#4A2414' },
   ElevenLabs: { accent: '#F59E0B', background: '#171109', panel: '#292010', line: '#42331A' },
+  Transkriptor: { accent: '#6C5CE7', background: '#100E1A', panel: '#1C1730', line: '#2E264D' },
   'Koala AI': { accent: '#22C55E', background: '#0A140E', panel: '#14261A', line: '#1F3D29' },
   'Copy.ai': { accent: '#FF6A3D', background: '#170E0B', panel: '#291912', line: '#42281D' },
   Notion: { accent: '#E2E8F0', background: '#0E1117', panel: '#1B2230', line: '#2E3748' },
   Mistral: { accent: '#FA520F', background: '#170E09', panel: '#291910', line: '#42281A' },
   'Meta AI': { accent: '#3B82F6', background: '#0A101C', panel: '#131D33', line: '#1F2F52' },
+  PyTorch: { accent: '#EE4C2C', background: '#170C09', panel: '#291611', line: '#42241C' },
 };
 
 export const uiColors = {
@@ -169,11 +173,13 @@ export const tools = [
   'Runway',
   'Firecrawl',
   'ElevenLabs',
+  'Transkriptor',
   'Koala AI',
   'Copy.ai',
   'Notion',
   'Mistral',
   'Meta AI',
+  'PyTorch',
 ] as const;
 
 export const toolSiteUrls: Record<string, string> = {
@@ -208,11 +214,13 @@ export const toolSiteUrls: Record<string, string> = {
   Runway: 'https://runwayml.com',
   Firecrawl: 'https://www.firecrawl.dev',
   ElevenLabs: 'https://elevenlabs.io',
+  Transkriptor: 'https://transkriptor.com',
   'Koala AI': 'https://koala.sh',
   'Copy.ai': 'https://www.copy.ai',
   Notion: 'https://www.notion.com',
   Mistral: 'https://mistral.ai',
   'Meta AI': 'https://ai.meta.com',
+  PyTorch: 'https://pytorch.org',
 };
 
 export const genres = [
