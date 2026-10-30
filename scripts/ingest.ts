@@ -199,6 +199,104 @@ function titleFromUrlSlug(url: string): string {
   }
 }
 
+const ENGLISH_MONTH_INDEX: Record<string, number> = {
+  january: 0,
+  february: 1,
+  march: 2,
+  april: 3,
+  may: 4,
+  june: 5,
+  july: 6,
+  august: 7,
+  september: 8,
+  october: 9,
+  november: 10,
+  december: 11,
+};
+
+function slugifyHeading(title: string): string {
+  return title
+    .toLowerCase()
+    .replace(/\\_/g, '_')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/**
+ * docs.x.ai 等の「## Month / ### Entry」形式リリースノート Markdown を RawFeedItem へ。
+ * 公式RSSが無い Grok/xAI 向け。
+ */
+function parseMarkdownReleaseNotes(
+  md: string,
+  pageUrl: string
+): RawFeedItem[] {
+  const base = pageUrl.replace(/\.md$/i, '').replace(/\/+$/, '');
+  const now = new Date();
+  const items: RawFeedItem[] = [];
+  let monthIndex: number | null = null;
+  let year = now.getFullYear();
+  let monthName = '';
+
+  const lines = md.split(/\r?\n/);
+  for (let i = 0; i < lines.length; i++) {
+    const monthMatch = lines[i].match(/^##\s+([A-Za-z]+)\s*$/);
+    if (monthMatch) {
+      const idx = ENGLISH_MONTH_INDEX[monthMatch[1].toLowerCase()];
+      if (idx == null) {
+        monthIndex = null;
+        continue;
+      }
+      monthIndex = idx;
+      monthName = monthMatch[1].toLowerCase();
+      year = now.getFullYear();
+      if (idx > now.getMonth()) year -= 1;
+      continue;
+    }
+
+    const titleMatch = lines[i].match(/^###\s+(.+?)\s*$/);
+    if (!titleMatch || monthIndex == null) continue;
+
+    const title = titleMatch[1].replace(/\\_/g, '_').trim();
+    const snippetParts: string[] = [];
+    i += 1;
+    while (
+      i < lines.length &&
+      !/^##\s/.test(lines[i]) &&
+      !/^###\s/.test(lines[i])
+    ) {
+      const t = lines[i].trim();
+      if (t) snippetParts.push(t);
+      i += 1;
+    }
+    i -= 1;
+
+    const day =
+      monthIndex === now.getMonth() && year === now.getFullYear()
+        ? Math.min(Math.max(1, now.getUTCDate()), 28)
+        : 15;
+    const pubDate = new Date(
+      Date.UTC(year, monthIndex, day, 16, 0, 0)
+    ).toISOString();
+    const slug = `${monthName}-${slugifyHeading(title)}`;
+    items.push({
+      title: `xAI Release Notes: ${title}`,
+      link: `${base}#${slug}`,
+      pubDate,
+      snippet: snippetParts.join(' ').slice(0, 900),
+    });
+  }
+  return items;
+}
+
+function looksLikeMarkdownReleaseNotes(text: string, feedUrl: string): boolean {
+  if (/\.md(\?|$)/i.test(feedUrl)) return true;
+  return (
+    /^#{1,4}\s*Release Notes/m.test(text) &&
+    /^##\s+[A-Za-z]+\s*$/m.test(text) &&
+    /^###\s+/m.test(text)
+  );
+}
+
 async function fetchText(
   url: string,
   timeoutMs: number
@@ -1244,15 +1342,32 @@ async function main() {
             /<(rss|feed|rdf:RDF)\b/i.test(fetched.text) ||
             /<item[\s>]/i.test(fetched.text) ||
             /<entry[\s>]/i.test(fetched.text);
-          if (!looksLikeFeed) {
-            lastErr = 'not an RSS/Atom document';
+          if (looksLikeFeed) {
+            feedItems = parseRssItems(fetched.text, source.site_url).slice(
+              0,
+              RSS_ITEMS_PER_SOURCE
+            );
+            lastErr = null;
             break;
           }
-          feedItems = parseRssItems(fetched.text, source.site_url).slice(
-            0,
-            RSS_ITEMS_PER_SOURCE
-          );
-          lastErr = null;
+          if (looksLikeMarkdownReleaseNotes(fetched.text, source.feed_url)) {
+            const pageUrl =
+              source.site_url || source.feed_url.replace(/\.md$/i, '');
+            feedItems = parseMarkdownReleaseNotes(fetched.text, pageUrl).slice(
+              0,
+              RSS_ITEMS_PER_SOURCE
+            );
+            if (feedItems.length > 0) {
+              console.warn(
+                `  ~ Markdownリリースノートとして取得: [${source.name}] ${feedItems.length}件`
+              );
+              lastErr = null;
+              break;
+            }
+            lastErr = 'markdown release notes parsed to 0 items';
+            break;
+          }
+          lastErr = 'not an RSS/Atom document';
           break;
         }
       }
