@@ -1,5 +1,32 @@
 [
   {
+    "id": "art-1793375227669-06id3",
+    "source_id": "source-digg-ai",
+    "source_name": "Digg AI",
+    "url": "https://digg.com/world-business/gyxezwff",
+    "published_at": "2026-10-30T15:38:44.000Z",
+    "og_image_url": null,
+    "title_ja": "中国、AI関連技術23項目に輸出規制を検討へ――生成AIモデルや画像認識などの最先端技術が対象に",
+    "summary_ja": "中国商務省は、生成AIモデルや高度な画像認識技術を含む23のAI関連技術を輸出規制の対象とする草案を発表した。 この規制は、国家安全保障を名目に技術流出を厳格に管理する狙いがあり、AIスタートアップや国際的な開発チームのサプライチェーンに影響を及ぼす可能性がある。 グローバルでAI開発を推進するエンジニアにとっては、地政学リスクを考慮したモデルの選定やサーバー配置、API利用先の見直しが急務となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "中国、AI関連技術23項目に輸出規制を検討へ――生成AIモデルや画像認識などの最先端技術が対象に",
+        "summary": "中国商務省は、生成AIモデルや高度な画像認識技術を含む23のAI関連技術を輸出規制の対象とする草案を発表した。 この規制は、国家安全保障を名目に技術流出を厳格に管理する狙いがあり、AIスタートアップや国際的な開発チームのサプライチェーンに影響を及ぼす可能性がある。 グローバルでAI開発を推進するエンジニアにとっては、地政学リスクを考慮したモデルの選定やサーバー配置、API利用先の見直しが急務となるだろう。"
+      },
+      "en": {
+        "title": "China proposes strict export controls on 23 critical AI technologies, targeting generative models and vision",
+        "summary": "China's Ministry of Commerce has released a draft proposal to impose strict export controls on 23 AI-related technologies, explicitly targeting advanced generative AI models and sophisticated computer vision systems. By framing these controls around national security, the policy aims to restrict the outflow of pivotal research and operational capabilities. This shift introduces significant geopolitical friction for international AI startups and global engineering teams, potentially disrupting supply chains and model deployment pipelines. For developers operating across borders, this signals an urgent need to re-evaluate their model sourcing strategies, infrastructure hosting regions, and API providers to mitigate sudden regulatory compliance risks. Navigating these regional restrictions is now a core requirement for architects building resilient, global-scale AI applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-30T15:47:07.669Z"
+  },
+  {
     "id": "art-1793374300805-a19aw",
     "source_id": "source-ai-unraveled",
     "source_name": "AI Unraveled",
@@ -2556,6 +2583,35 @@
       "開発"
     ],
     "created_at": "2026-10-30T11:32:44.039Z"
+  },
+  {
+    "id": "art-1793375207474-07sh6",
+    "source_id": "source-claude-release",
+    "source_name": "Claude Code Changelog",
+    "url": "https://code.claude.com/docs/en/changelog#2-1-314",
+    "published_at": "2026-10-30T01:16:56.000Z",
+    "og_image_url": "https://claude-code.mintlify.app/_mintlify/api/og/v2?division=Getting+started&title=Claude+Code+changelog&description=Release+notes+for+Claude+Code%2C+including+new+features%2C+improvements%2C+and+bug+fixes+by+version.&theme=8d9812df31da293aba4e8103&signature=b530ac886c82b93ae600770b632e93cd5e65b1895873efc12a624a244deee76b",
+    "title_ja": "Claude Code アップデート(2.1.314)：作業ディレクトリ外への書き込み禁止、IdPグループ別ルーティング、大規模コンテキスト自動圧縮機能を追加",
+    "summary_ja": "Claude Codeの最新版では、作業ディレクトリ外への書き込みを拒否するセキュリティ制限が導入された。 また、Claude Apps GatewayではIdPグループに応じたトラフィックの振り分けが可能になり、Bedrock連携におけるガードレール検知ログ機能も強化されている。 特に注目すべきは、20万トークンを超える長時間放置された会話を自動要約する「アイドル・コンパクション」の実装で、プロンプトキャッシュ切れの際も文脈を維持できる仕組みが整った。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code アップデート(2.1.314)：作業ディレクトリ外への書き込み禁止、IdPグループ別ルーティング、大規模コンテキスト自動圧縮機能を追加",
+        "summary": "Claude Codeの最新版では、作業ディレクトリ外への書き込みを拒否するセキュリティ制限が導入された。 また、Claude Apps GatewayではIdPグループに応じたトラフィックの振り分けが可能になり、Bedrock連携におけるガードレール検知ログ機能も強化されている。 特に注目すべきは、20万トークンを超える長時間放置された会話を自動要約する「アイドル・コンパクション」の実装で、プロンプトキャッシュ切れの際も文脈を維持できる仕組みが整った。"
+      },
+      "en": {
+        "title": "Claude Code 2.1.314 adds strict file path blocking, IdP-based routing, and automated 200k+ token conversation summarization",
+        "summary": "The latest Claude Code release introduces critical security constraints, preventing write operations outside working directories to protect file integrity. For teams using the Claude Apps Gateway, this update adds IdP group-based upstream routing and detailed guardrail logging for Amazon Bedrock, allowing developers to track filter triggers without exposing sensitive content. Most notably for UX, the team implemented 'idle compaction' for long-running sessions: if a conversation exceeds 200,000 tokens and goes idle, the system automatically summarizes the history. This ensures that context remains preserved even when the prompt cache expires, preventing unnecessary token bloat on subsequent messages. For developers managing AI agents, this release emphasizes balancing tighter operational security controls with intelligent memory management for high-context workflows."
+      }
+    },
+    "tool_tags": [
+      "Claude"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-30T15:46:47.474Z"
   },
   {
     "id": "art-1793344589164-z839j",
@@ -8740,6 +8796,35 @@
       "開発"
     ],
     "created_at": "2026-10-29T08:46:59.807Z"
+  },
+  {
+    "id": "art-1793375220262-j74fe",
+    "source_id": "source-meta-ai",
+    "source_name": "Meta Engineering",
+    "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
+    "published_at": "2026-10-28T16:00:01.000Z",
+    "og_image_url": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Andromeda-co-design-Hero.png",
+    "title_ja": "Metaが次世代広告検索エンジン「Andromeda」を公開：モデル・システム・GPUのフルスタック統合でランキング精度と推論速度を両立",
+    "summary_ja": "Metaが公開した次世代広告検索エンジン「Andromeda」は、モデルアーキテクチャ、分散システム、GPUハードウェアを垂直統合する「コデザイン」アプローチを採用し、広告検索の効率を劇的に向上させた。 これにより、従来の検索フェーズでもランキングレベルの高精度な推論が可能となり、膨大な候補から最適な広告をミリ秒単位で抽出できるようになった。",
+    "translations": {
+      "ja": {
+        "title": "Metaが次世代広告検索エンジン「Andromeda」を公開：モデル・システム・GPUのフルスタック統合でランキング精度と推論速度を両立",
+        "summary": "Metaが公開した次世代広告検索エンジン「Andromeda」は、モデルアーキテクチャ、分散システム、GPUハードウェアを垂直統合する「コデザイン」アプローチを採用し、広告検索の効率を劇的に向上させた。 これにより、従来の検索フェーズでもランキングレベルの高精度な推論が可能となり、膨大な候補から最適な広告をミリ秒単位で抽出できるようになった。"
+      },
+      "en": {
+        "title": "Meta unveils Andromeda: A full-stack retrieval engine using model-system-hardware co-design to boost ad ranking performance",
+        "summary": "Meta has detailed its next-gen ad retrieval engine, Andromeda, which achieves massive efficiency gains by strictly co-designing model architectures, distributed systems, and GPU hardware together. By unifying these layers, the system can perform near-ranking-level inference directly at the retrieval stage, identifying the most relevant ads from a massive pool within milliseconds. For builders handling large-scale data pipelines, the primary lesson is that performance bottlenecks are rarely solved by tweaking single layers; instead, integrating model structures with underlying hardware and system-level scheduling creates a new frontier for throughput. This approach demonstrates why treating infrastructure, hardware, and machine learning models as distinct silos limits potential, while a full-stack design enables the advanced inference speeds necessary for serving complex, personalized content at global scale."
+      }
+    },
+    "tool_tags": [
+      "Meta AI"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-30T15:47:00.262Z"
   },
   {
     "id": "art-1793257331952-zm889",
@@ -22414,6 +22499,35 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-27T01:42:16.624Z"
+  },
+  {
+    "id": "art-1793375213961-c2weg",
+    "source_id": "source-pytorch",
+    "source_name": "PyTorch Blog",
+    "url": "https://pytorch.org/blog/optimizing-streaming-speech-recognition-on-arm-edge-devices-with-executorch/",
+    "published_at": "2026-10-26T18:27:27.000Z",
+    "og_image_url": null,
+    "title_ja": "PyTorch、Armエッジデバイス向けにリアルタイム音声を最適化する「ExecuTorch」の活用手法を公開：ストリーミングASRの推論効率を大幅改善",
+    "summary_ja": "PyTorchは、Armデバイス上でストリーミング自動音声認識（ASR）を高速化するための「ExecuTorch」最適化手法を公開した。 バッチ処理と異なり、リアルタイム性が求められる音声入力に対して、モデルの量子化やエッジ向けのメモリ管理を適用することで、推論レイテンシを最小化する。 デバイス側で音声を即座にテキスト化するエッジAI製品を開発するエンジニアにとって、ExecuTorchのパイプライン活用は計算リソースと応答精度の両立を図る実用的な指針となる。",
+    "translations": {
+      "ja": {
+        "title": "PyTorch、Armエッジデバイス向けにリアルタイム音声を最適化する「ExecuTorch」の活用手法を公開：ストリーミングASRの推論効率を大幅改善",
+        "summary": "PyTorchは、Armデバイス上でストリーミング自動音声認識（ASR）を高速化するための「ExecuTorch」最適化手法を公開した。 バッチ処理と異なり、リアルタイム性が求められる音声入力に対して、モデルの量子化やエッジ向けのメモリ管理を適用することで、推論レイテンシを最小化する。 デバイス側で音声を即座にテキスト化するエッジAI製品を開発するエンジニアにとって、ExecuTorchのパイプライン活用は計算リソースと応答精度の両立を図る実用的な指針となる。"
+      },
+      "en": {
+        "title": "PyTorch unveils ExecuTorch optimization guide for low-latency streaming ASR on Arm-based edge hardware",
+        "summary": "PyTorch has released a detailed guide on utilizing ExecuTorch to optimize streaming automatic speech recognition (ASR) specifically for Arm-powered edge devices. Unlike traditional batch transcription, streaming ASR demands near-instantaneous text generation, which requires rigorous model quantization and fine-tuned memory management to keep inference latency minimal. By applying these specific ExecuTorch optimizations, developers can significantly reduce the computational overhead typically associated with real-time audio processing. For builders working on local voice-to-text applications, this framework provides a crucial roadmap for balancing strict resource constraints with the low-latency performance required for fluid user interaction. Ultimately, the methodology demonstrates that efficient edge deployment relies on optimizing the entire execution pipeline rather than just shrinking the model architecture itself."
+      }
+    },
+    "tool_tags": [
+      "PyTorch"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-30T15:46:53.961Z"
   },
   {
     "id": "art-1793097814796-ltaw2",
