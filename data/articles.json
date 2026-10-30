@@ -54,6 +54,32 @@
     "created_at": "2026-10-30T04:31:23.158Z"
   },
   {
+    "id": "art-1793343699414-4wqfs",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2610.37720",
+    "published_at": "2026-10-30T04:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "メモリ制約下のMoE学習を効率化する新手法「LRMoE」が登場：バックプロパゲーションの負荷再調整でGPUリソース不足を解消",
+    "summary_ja": "大規模なMoEモデルの学習では、ルーティングの偏りが通信ボトルネックを生む一方、専門家モデルの複製はGPUメモリを逼迫させる。 新手法「LRMoE」は、メモリ制約を考慮しつつ、フォワード実行時の配置計画とバックプロパゲーション時の負荷再調整を統合的に最適化する。 これにより、限られたGPUメモリ内で計算リソースを維持しながら、トークンと専門家モデル間の計算負荷を効率的に分散させ、学習効率を飛躍的に高める。",
+    "translations": {
+      "ja": {
+        "title": "メモリ制約下のMoE学習を効率化する新手法「LRMoE」が登場：バックプロパゲーションの負荷再調整でGPUリソース不足を解消",
+        "summary": "大規模なMoEモデルの学習では、ルーティングの偏りが通信ボトルネックを生む一方、専門家モデルの複製はGPUメモリを逼迫させる。 新手法「LRMoE」は、メモリ制約を考慮しつつ、フォワード実行時の配置計画とバックプロパゲーション時の負荷再調整を統合的に最適化する。 これにより、限られたGPUメモリ内で計算リソースを維持しながら、トークンと専門家モデル間の計算負荷を効率的に分散させ、学習効率を飛躍的に高める。"
+      },
+      "en": {
+        "title": "LRMoE framework optimizes memory-constrained MoE training by balancing backward demand and expert placement on limited GPU hardware",
+        "summary": "Sparse Mixture-of-Experts (MoE) models scale well, but uneven routing often creates massive computation and communication bottlenecks. While replicating expert models helps distribute workloads, doing so rapidly consumes limited GPU memory, creating a direct conflict between storage and performance. The new LRMoE framework resolves this by jointly optimizing expert placement during forward passes and dynamically recalibrating load demand during backpropagation. Instead of static resource allocation, it uses a memory-aware approach to estimate token-expert contributions, balancing the workload within strict hardware constraints. For builders training large-scale sparse models, this demonstrates that memory efficiency isn't just about compression, but about strategically scheduling backward demands to keep training throughput stable without hitting out-of-memory errors on smaller GPU clusters."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-10-30T07:01:39.414Z"
+  },
+  {
     "id": "art-1793329323039-gnt8t",
     "source_id": "source-openrouter",
     "source_name": "OpenRouter Announcements",
@@ -307,6 +333,33 @@
       "開発"
     ],
     "created_at": "2026-10-30T00:01:53.628Z"
+  },
+  {
+    "id": "art-1793343715808-4h1x4",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
+    "published_at": "2026-10-29T22:48:29.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAI、高額サブスクユーザー向けに同額のAPIクレジット付与を開始。Anthropic追随で開発者のAPI利用コストを実質無料化へ",
+    "summary_ja": "OpenAIはChatGPTの「Plus」等の高額サブスクリプション加入者に対し、月額料金と同額のAPI利用クレジットを付与する新制度を開始した。 これはAnthropicが先行して導入した施策と同様の動きである。 既存のChatGPTユーザーは、追加コストなしでAPI経由のアプリ開発やパブリックデモの公開が可能になり、個人開発者にとっては実験的なプロジェクトを推進する絶好の追い風となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "OpenAI、高額サブスクユーザー向けに同額のAPIクレジット付与を開始。Anthropic追随で開発者のAPI利用コストを実質無料化へ",
+        "summary": "OpenAIはChatGPTの「Plus」等の高額サブスクリプション加入者に対し、月額料金と同額のAPI利用クレジットを付与する新制度を開始した。 これはAnthropicが先行して導入した施策と同様の動きである。 既存のChatGPTユーザーは、追加コストなしでAPI経由のアプリ開発やパブリックデモの公開が可能になり、個人開発者にとっては実験的なプロジェクトを推進する絶好の追い風となるだろう。"
+      },
+      "en": {
+        "title": "OpenAI matches Anthropic by granting API credits to high-tier ChatGPT subscribers, effectively subsidizing developer prototyping costs",
+        "summary": "OpenAI has officially launched a new benefit mirroring Anthropic’s recent move, granting users on $100, $200, and $500 monthly ChatGPT subscription tiers an equivalent amount of API credits each month. These expiring credits can be applied to any single API organization, effectively lowering the barrier to entry for building and testing custom AI applications. By aligning their pricing model with Anthropic, OpenAI is incentivizing heavy power users to transition from chat interfaces into API-driven development without incurring additional overhead. For independent builders, this shift means you can now ship public-facing AI demos and agentic workflows using your existing personal subscription budget, removing the primary friction point of escalating inference costs during the early experimental phases of product development."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-30T07:01:55.808Z"
   },
   {
     "id": "art-1793317601123-sstw5",
@@ -630,6 +683,34 @@
       "ビジネス"
     ],
     "created_at": "2026-10-29T18:56:35.696Z"
+  },
+  {
+    "id": "art-1793343730862-qh2ey",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/strix-now-supports-vercel-ai-gateway",
+    "published_at": "2026-10-29T18:44:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5hP6XyTw37NFtqCzw0RE5L/c386587f2388996e44852bb210a3e8ee/strix-vercel-ai-gateway-og.png",
+    "title_ja": "AIペネトレーションテストツール「Strix」がVercel AI Gatewayに対応、400種以上のLLMを単一APIでシームレスに検証可能に",
+    "summary_ja": "オープンソースのAIペネトレーションテストツール「Strix」がVercel AI Gatewayを正式サポートした。 これにより、OpenAI、Anthropic、Deepseekなど400以上のモデルに対し、プロバイダーごとの契約不要で単一API経由の脆弱性検証が可能になる。 AIゲートウェイ経由の統一的なコスト・利用状況追跡とあわせ、ペネトレーションテストの運用効率とカバレッジを大幅に高める開発者必見の統合だ。",
+    "translations": {
+      "ja": {
+        "title": "AIペネトレーションテストツール「Strix」がVercel AI Gatewayに対応、400種以上のLLMを単一APIでシームレスに検証可能に",
+        "summary": "オープンソースのAIペネトレーションテストツール「Strix」がVercel AI Gatewayを正式サポートした。 これにより、OpenAI、Anthropic、Deepseekなど400以上のモデルに対し、プロバイダーごとの契約不要で単一API経由の脆弱性検証が可能になる。 AIゲートウェイ経由の統一的なコスト・利用状況追跡とあわせ、ペネトレーションテストの運用効率とカバレッジを大幅に高める開発者必見の統合だ。"
+      },
+      "en": {
+        "title": "Open-source AI pentesting tool Strix adds support for Vercel AI Gateway to streamline testing across 400+ models",
+        "summary": "The open-source AI penetration testing framework Strix has officially integrated with Vercel AI Gateway, allowing developers to route security probes through over 400 distinct LLMs using a unified API interface. By eliminating the friction of managing separate API keys for providers like Anthropic, OpenAI, and DeepSeek, Strix now enables security teams to automate vulnerability assessments at scale while centralizing cost and usage monitoring directly within Vercel. For builders, this integration represents a significant efficiency gain, removing the manual overhead of handling diverse vendor authentication methods. It simplifies the setup of robust testing pipelines, ensuring that security evaluations remain consistent, cost-effective, and easy to deploy across diverse model infrastructures without custom API wrappers."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-30T07:02:10.862Z"
   },
   {
     "id": "art-1793299594613-87ix0",
@@ -3230,6 +3311,34 @@
       "研究"
     ],
     "created_at": "2026-10-29T14:16:27.267Z"
+  },
+  {
+    "id": "art-1793343709335-qwawy",
+    "source_id": "source-elevenlabs",
+    "source_name": "ElevenLabs Blog",
+    "url": "https://elevenlabs.io/blog/what-is-turn-taking",
+    "published_at": "2026-10-29T12:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "ElevenLabsが解説、AI音声対話の自然さを決定づける「ターンテーキング」技術の仕組みと最適な制御手法",
+    "summary_ja": "ElevenLabsは、音声AIエージェントが発話、一時停止、聞き取りのタイミングを制御する「ターンテーキング」の技術的要点を公開した。 ユーザーの割り込み（Barge-in）をいかにスムーズに検知・処理し、会話の自然な流れを維持するかが鍵となる。 開発者はレイテンシの測定と微調整を通じて、不自然な間や被りを最小化し、人間同士のようなシームレスな対話体験を構築すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "ElevenLabsが解説、AI音声対話の自然さを決定づける「ターンテーキング」技術の仕組みと最適な制御手法",
+        "summary": "ElevenLabsは、音声AIエージェントが発話、一時停止、聞き取りのタイミングを制御する「ターンテーキング」の技術的要点を公開した。 ユーザーの割り込み（Barge-in）をいかにスムーズに検知・処理し、会話の自然な流れを維持するかが鍵となる。 開発者はレイテンシの測定と微調整を通じて、不自然な間や被りを最小化し、人間同士のようなシームレスな対話体験を構築すべきだ。"
+      },
+      "en": {
+        "title": "ElevenLabs details turn taking mechanics for voice AI to master natural conversational timing and flow",
+        "summary": "ElevenLabs has released a technical guide on turn taking, the critical process that dictates when an AI voice agent speaks, pauses, or listens during interaction. The core challenge lies in managing barge-in events—where users interrupt the AI—requiring precise detection and immediate state handling to maintain a natural rhythm. The guide explains that achieving human-like flow is not just about raw model speed but about mastering the subtle timing of conversational cues. Developers building real-time voice agents must rigorously measure latency and fine-tune their turn-taking logic to minimize awkward pauses or speech overlaps. By prioritizing these subtle timing adjustments, engineers can finally bridge the gap between robotic, stilted exchanges and truly fluid, conversational AI experiences that users expect today."
+      }
+    },
+    "tool_tags": [
+      "ElevenLabs"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-30T07:01:49.335Z"
   },
   {
     "id": "art-1793275346482-9n2w9",
