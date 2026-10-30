@@ -8,6 +8,7 @@ import type { AppLocale, Article, SponsoredItem } from '../lib/types';
 /** アイコンのみ公式シンボル（未加工）。白マットに載せる。サムネはパターン別に差し替え */
 const ELEVENLABS_ICON = require('../../assets/sponsors/elevenlabs-symbol.png') as ImageSourcePropType;
 const FIRECRAWL_ICON = require('../../assets/sponsors/firecrawl-symbol.png') as ImageSourcePropType;
+const TRANSKRIPTOR_ICON = require('../../assets/sponsors/transkriptor-symbol.png') as ImageSourcePropType;
 
 const SPONSOR_MEDIA: Record<
   string,
@@ -88,7 +89,7 @@ function toArticle(item: SponsoredItem): Article {
     translations: item.translations,
     tool_tags: item.tool_tag ? [item.tool_tag] : [],
     genre_tags:
-      item.tool_tag === 'ElevenLabs'
+      item.tool_tag === 'ElevenLabs' || item.tool_tag === 'Transkriptor'
         ? ['音声']
         : item.tool_tag === 'Firecrawl'
           ? ['個人開発・収益化']
@@ -147,7 +148,9 @@ export const SponsoredCard = memo(function SponsoredCard({
           ? ELEVENLABS_ICON
           : item.tool_tag === 'Firecrawl'
             ? FIRECRAWL_ICON
-            : null)
+            : item.tool_tag === 'Transkriptor'
+              ? TRANSKRIPTOR_ICON
+              : null)
       }
       showNotInterested={false}
       isSaved={false}

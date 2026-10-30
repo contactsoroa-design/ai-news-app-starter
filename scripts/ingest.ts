@@ -222,10 +222,7 @@ function slugifyHeading(title: string): string {
     .replace(/^-+|-+$/g, '');
 }
 
-/**
- * docs.x.ai 等の「## Month / ### Entry」形式リリースノート Markdown を RawFeedItem へ。
- * 公式RSSが無い Grok/xAI 向け。
- */
+/** docs.x.ai 等の「## Month / ### Entry」形式リリースノート Markdown を RawFeedItem へ。 */
 function parseMarkdownReleaseNotes(
   md: string,
   pageUrl: string

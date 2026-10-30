@@ -850,55 +850,22 @@ export function trimFeedArticles(
 }
 
 /**
- * RSS が日付だけ（UTC 00:00 / 12:00）のとき、その日のあいだ先頭が張り付く。
- * 同じ UTC 日の取り込み時刻があればそちらで並びを補正する。
- */
-function isCoarseUtcTimestamp(ms: number): boolean {
-  const d = new Date(ms);
-  return (
-    d.getUTCMinutes() === 0 &&
-    d.getUTCSeconds() === 0 &&
-    d.getUTCMilliseconds() === 0 &&
-    (d.getUTCHours() === 0 || d.getUTCHours() === 12)
-  );
-}
-
-function sameUtcCalendarDay(aMs: number, bMs: number): boolean {
-  const a = new Date(aMs);
-  const b = new Date(bMs);
-  return (
-    a.getUTCFullYear() === b.getUTCFullYear() &&
-    a.getUTCMonth() === b.getUTCMonth() &&
-    a.getUTCDate() === b.getUTCDate()
-  );
-}
-
-/**
- * フィード上の「新しさ」。原則は元記事の公開日。
- * created_at（取り込み時刻）で max すると、数日前〜数ヶ月前の公式投稿が
- * 再ingestされただけで先頭に上がる（Anthropic / 古い Windsurf 等）。
- * 公開日が無いときだけ取り込み時刻にフォールバックする。
- * 日付粒度だけの公開日は、同日の created_at で並びを補正する。
+ * フィード上の「新しさ」＝取り込み時刻（created_at）優先。
+ * 公開日順だと、数日前の公式投稿を新規取得しても数百枚下に沈み見えない。
+ * 取り込みは MAX_ARTICLE_AGE_DAYS（既定7日）以内だけなので、取得順でも差は小さい。
+ * created_at が無いときだけ公開日にフォールバックする。
  */
 export function articleFeedTimestamp(article: Article): number {
-  const published = article.published_at
-    ? new Date(article.published_at).getTime()
-    : NaN;
   const created = article.created_at
     ? new Date(article.created_at).getTime()
     : NaN;
-  if (Number.isFinite(published) && published > 0) {
-    if (
-      isCoarseUtcTimestamp(published) &&
-      Number.isFinite(created) &&
-      created > 0 &&
-      sameUtcCalendarDay(published, created)
-    ) {
-      return created;
-    }
-    return published;
+  if (Number.isFinite(created) && created > 0) {
+    return created;
   }
-  return Number.isFinite(created) && created > 0 ? created : 0;
+  const published = article.published_at
+    ? new Date(article.published_at).getTime()
+    : NaN;
+  return Number.isFinite(published) && published > 0 ? published : 0;
 }
 
 function sortArticles(articles: Article[]): Article[] {

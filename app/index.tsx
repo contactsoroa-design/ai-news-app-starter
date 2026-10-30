@@ -97,6 +97,8 @@ const RELATED_SPONSOR_LOCAL_ICON: Record<
   ReturnType<typeof require>
 > = {
   ElevenLabs: require('../assets/sponsors/elevenlabs-symbol.png'),
+  Firecrawl: require('../assets/sponsors/firecrawl-symbol.png'),
+  Transkriptor: require('../assets/sponsors/transkriptor-symbol.png'),
 };
 
 /** 先頭付近の OGP だけ先読み（favicon は帯域を奪うので後回し） */
@@ -204,10 +206,16 @@ export default function HomeScreen() {
         getPurgedArticleIds(),
         getUserPrefs(),
       ]);
-      const feedPromise = fetchArticles(localeGuess, (partial) => {
-        setArticles(partial);
-        prefetchOgImages(partial, 0, 3);
-      });
+      // 初回だけ途中経過を流す。refresh/silent 中の差し替えはスワイプ位置を壊しやすい
+      const feedPromise = fetchArticles(
+        localeGuess,
+        mode === 'initial'
+          ? (partial) => {
+              setArticles(partial);
+              prefetchOgImages(partial, 0, 3);
+            }
+          : undefined
+      );
       const sponsoredPromise = fetchSponsoredItems();
 
       const [
@@ -274,17 +282,14 @@ export default function HomeScreen() {
       } catch {
         // 保存同期の失敗でフィード全体を落とさない
       }
-      // silent: 読んでいた記事 ID を覚えて再描画後に復帰。initial/refresh だけ先頭へ
-      if (mode === 'silent') {
+      // silent/refresh: 読んでいた記事 ID を覚えて再描画後に復帰。initial だけ先頭へ
+      if (mode === 'silent' || mode === 'refresh') {
         pendingRestoreArticleIdRef.current = currentArticleIdRef.current;
       } else {
         pendingRestoreArticleIdRef.current = null;
         setCurrentIndex(0);
       }
       lastFeedRefreshAtRef.current = Date.now();
-      if (mode === 'refresh') {
-        flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
-      }
     } catch {
       // 最終手段: 同梱フィードだけでも表示する
       try {
@@ -437,7 +442,7 @@ export default function HomeScreen() {
       }
     }
 
-    // 公開日と取り込み時刻の遅い方で新しい順。preview 先頭は維持する
+    // 取り込み時刻（取得順）で新しい順。preview 先頭は維持する
     const preview = previewArticleId
       ? filtered.find((a) => a.id === previewArticleId)
       : undefined;
@@ -526,6 +531,7 @@ export default function HomeScreen() {
     prefetchOgImages(visibleArticles, Math.max(0, safeIndex - 1), 4);
     const current = visibleArticles[safeIndex];
     if (current && !isSponsoredItem(current)) {
+      currentArticleIdRef.current = current.id;
       const favicon = getArticleSourceFaviconUrl(current);
       if (favicon) {
         void Image.prefetch([favicon], 'memory-disk');
@@ -802,7 +808,7 @@ export default function HomeScreen() {
     }
   };
 
-  // silent 更新後、同じ記事が見える位置へ戻す（先頭固定の体感を防ぐ）
+  // silent/refresh 更新後、同じ記事が見える位置へ戻す（先頭固定・スワイプ崩れを防ぐ）
   useEffect(() => {
     const restoreId = pendingRestoreArticleIdRef.current;
     if (!restoreId || feedHeight <= 0 || visibleArticles.length === 0) return;
@@ -875,20 +881,17 @@ export default function HomeScreen() {
                 key={feedFilterKey}
                 ref={flatListRef}
                 data={visibleArticles}
-                extraData={`${feedFilterKey}:${refreshing ? '1' : '0'}`}
+                extraData={feedFilterKey}
                 keyExtractor={(item) => item.id}
-                pagingEnabled={!refreshing}
+                pagingEnabled
                 bounces
                 alwaysBounceVertical
                 overScrollMode="always"
                 showsVerticalScrollIndicator={false}
                 decelerationRate="fast"
-                {...(refreshing
-                  ? {}
-                  : {
-                      snapToInterval: feedHeight,
-                      snapToAlignment: 'start' as const,
-                    })}
+                snapToInterval={feedHeight}
+                snapToAlignment="start"
+                disableIntervalMomentum
                 initialScrollIndex={
                   visibleArticles.length > 0
                     ? Math.max(0, Math.min(safeIndex, visibleArticles.length - 1))

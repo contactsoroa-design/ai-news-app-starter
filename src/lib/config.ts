@@ -453,9 +453,9 @@ export const limits = {
   // 端末内の「興味なし（非表示ID）」最大保持件数
   maxHiddenIds: 500,
   /** おすすめフィードでスポンサードを差し込む間隔（記事N件ごと） */
-  sponsoredEveryN: 8,
+  sponsoredEveryN: 5,
   /** 先頭から何件記事を出してから最初のスポンサードを出すか */
-  sponsoredMinArticlesBeforeFirst: 4,
+  sponsoredMinArticlesBeforeFirst: 3,
   /**
    * expo-image ディスクキャッシュ上限（バイト）。
    * OGP無制限蓄積を防ぎつつ、直近表示分は残してスワイプ／探索の体感を維持する。

@@ -51,6 +51,7 @@ const RELATED_SPONSOR_LOCAL_ICON: Record<
 > = {
   ElevenLabs: require('../../assets/sponsors/elevenlabs-symbol.png'),
   Firecrawl: require('../../assets/sponsors/firecrawl-symbol.png'),
+  Transkriptor: require('../../assets/sponsors/transkriptor-symbol.png'),
 };
 
 type ExploreViewProps = {
