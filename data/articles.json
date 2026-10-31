@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793422998451-2q0h6",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/mameresearcher/articles/api-says-public-but-comment-invisible",
+    "published_at": "2026-10-31T02:07:52.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--b2jr1uTu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:API%2520%25E3%2581%25A7%25E3%2581%25AF%25E3%2580%258C%25E5%2585%25AC%25E9%2596%258B%25E3%2580%258D%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E8%25AA%25B0%25E3%2581%25AB%25E3%2582%2582%25E8%25A6%258B%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2520YouTube%2520%25E3%2581%25AE%25E5%259B%25BA%25E5%25AE%259A%25E3%2582%25B3%25E3%2583%25A1%25E3%2583%25B3%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BE%25E3%2582%2581%25E7%25A0%2594%25E7%25A9%25B6%25E5%2593%25A1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ViMjEyODk5ZWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "YouTube APIで「公開」と判定された固定コメントが実際には非表示になるバグの罠と、開発者が学ぶべき仕様の盲点",
+    "summary_ja": "YouTubeショート動画の自動投稿・固定コメント付与を行う個人開発において、YouTube Data APIで「公開済み」と判定されたコメントが、実際には視聴ページで誰にも見えていないという事象が発生した。 APIのレスポンスが常に最新の表示状態を反映するとは限らず、公開設定の伝播遅延やスパム判定が非同期に働く場合がある。",
+    "translations": {
+      "ja": {
+        "title": "YouTube APIで「公開」と判定された固定コメントが実際には非表示になるバグの罠と、開発者が学ぶべき仕様の盲点",
+        "summary": "YouTubeショート動画の自動投稿・固定コメント付与を行う個人開発において、YouTube Data APIで「公開済み」と判定されたコメントが、実際には視聴ページで誰にも見えていないという事象が発生した。 APIのレスポンスが常に最新の表示状態を反映するとは限らず、公開設定の伝播遅延やスパム判定が非同期に働く場合がある。"
+      },
+      "en": {
+        "title": "YouTube API shows 'public' pinned comments as visible when they are actually hidden: A builder's warning",
+        "summary": "A solo developer automating YouTube Short uploads discovered a critical discrepancy: YouTube Data API marked pinned comments as 'publicly visible,' yet the comments were completely invisible on the actual video watch page. This highlights that API response statuses do not always reflect real-time front-end rendering, often due to propagation delays or invisible spam filtering applied asynchronously. For builders automating channel management, trusting API success signals alone is insufficient. Implementing a validation layer that verifies actual browser-side visibility—or cross-referencing API state with live page scraping—is essential to prevent silent failures where engagement loops are broken. Do not assume 'API success' equals 'user visible' when dealing with complex, legacy platforms like YouTube."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "SNS・ショート動画"
+    ],
+    "created_at": "2026-10-31T05:03:18.451Z"
+  },
+  {
+    "id": "art-1793422925777-6eqf1",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/fond_magpie7530/n/n59bdead3aae9",
+    "published_at": "2026-10-31T04:58:39.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330480986/rectangle_large_type_2_532194702cd5324c766484caf0b50497.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "プログラミング未経験からAI活用でスマホアプリ開発・ストア公開まで完遂——広告実装や審査対応含む全実体験ログ",
+    "summary_ja": "AIを活用することで、プログラミング経験ゼロの状態からAndroid・iOSアプリを開発し、広告実装やストア申請、審査通過までを完遂した実体験記録。 クラウドビルドの活用から審査時の差し戻し対応まで、AI時代のアプリ開発における現実的なプロセスと回避すべき罠を詳細に解説する。 これからAIツールを使って個人開発に挑む層にとって、技術的な障壁をどう乗り越えるべきかを示す貴重なロードマップとなる。",
+    "translations": {
+      "ja": {
+        "title": "プログラミング未経験からAI活用でスマホアプリ開発・ストア公開まで完遂——広告実装や審査対応含む全実体験ログ",
+        "summary": "AIを活用することで、プログラミング経験ゼロの状態からAndroid・iOSアプリを開発し、広告実装やストア申請、審査通過までを完遂した実体験記録。 クラウドビルドの活用から審査時の差し戻し対応まで、AI時代のアプリ開発における現実的なプロセスと回避すべき罠を詳細に解説する。 これからAIツールを使って個人開発に挑む層にとって、技術的な障壁をどう乗り越えるべきかを示す貴重なロードマップとなる。"
+      },
+      "en": {
+        "title": "From zero coding to app store launch: A full breakdown of building, monetizing, and submitting AI-powered mobile apps",
+        "summary": "This comprehensive guide documents a non-programmer’s journey from conceptualizing a smartphone app with AI tools to successfully navigating the Google Play and Apple App Store submission process. The author breaks down the entire lifecycle, including implementing ad networks, managing cloud-based builds, and troubleshooting rejections during app review. The piece offers a pragmatic look at the current reality of AI-assisted development, highlighting specific pain points that arise when moving from an LLM-generated prototype to a production-ready application. For indie hackers and builders starting today, this serves as an essential roadmap for managing technical constraints, handling platform-specific requirements, and pushing through the final hurdles of app store compliance without deep software engineering experience."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-31T05:02:05.777Z"
+  },
+  {
+    "id": "art-1793422916182-pd8jc",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/yasuakiomokawa/articles/3d1f83458053d9",
+    "published_at": "2026-10-31T03:32:35.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--E1HjYd_7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%2598%25E3%2582%2581%25E3%2582%258B%25E3%2582%25BB%25E3%2583%25AB%25E3%2583%2595QA%25EF%25BC%259A%25E8%25A6%2581%25E6%25B1%2582%25E3%2582%2592MECE%25E3%2581%25AB%25E3%2581%2597%25E3%2582%2588%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yasuaki%2520Omokawa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNmOTUyODI3YjYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI時代のエンジニア必須スキル「セルフQA」：実装前に仕様の穴を埋めるAgent活用術「define-done」の全容",
+    "summary_ja": "AIはプロンプトや計画に書かれた指示のみを忠実に実装するため、要求定義に漏れがあれば、コードベースを読み込むまで見つからない致命的なバグを招く。 この記事では、実装前に要件をMECE（漏れなくダブりなく）に分解し、仕様の穴を自動検知するエージェントスキル「define-done」の設計手法を解説する。 開発者自らがQAの視点を持つことで、手戻りを防ぎAI実装の品質を飛躍的に高めることが可能となる。",
+    "translations": {
+      "ja": {
+        "title": "AI時代のエンジニア必須スキル「セルフQA」：実装前に仕様の穴を埋めるAgent活用術「define-done」の全容",
+        "summary": "AIはプロンプトや計画に書かれた指示のみを忠実に実装するため、要求定義に漏れがあれば、コードベースを読み込むまで見つからない致命的なバグを招く。 この記事では、実装前に要件をMECE（漏れなくダブりなく）に分解し、仕様の穴を自動検知するエージェントスキル「define-done」の設計手法を解説する。 開発者自らがQAの視点を持つことで、手戻りを防ぎAI実装の品質を飛躍的に高めることが可能となる。"
+      },
+      "en": {
+        "title": "Leveling up AI development: How to build a 'define-done' agent to catch requirement gaps before you code",
+        "summary": "Because AI models implement instructions literally based on provided plans, any missing requirement definition leads directly to flawed code that stays hidden until final testing. This post introduces an essential agent-based skill called 'define-done,' which systematically decomposes requirements to ensure they are mutually exclusive and collectively exhaustive (MECE) before a single line of code is written. By treating requirement verification as a critical automated step rather than an afterthought, developers can proactively patch logical holes in the spec. The author provides a repository to demonstrate this workflow, arguing that shifting QA responsibility to the engineering phase is the only way to minimize expensive rework and ensure AI-generated features actually behave as expected in production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-10-31T05:01:56.182Z"
+  },
+  {
+    "id": "art-1793422895371-fzf4r",
+    "source_id": "source-digg-ai",
+    "source_name": "Digg AI",
+    "url": "https://digg.com/ai/us6pzt8o",
+    "published_at": "2026-10-31T04:50:27.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAIが資金調達目標を下方修正、巨大なAIインフラ投資に対する市場の懸念やコスト意識の広がりが影響か",
+    "summary_ja": "OpenAIは、当初予定していた巨額の資金調達目標を下方修正した。 背景には、生成AIモデルの学習や推論維持にかかる膨大なインフラコストに対する市場の慎重な見方や、収益化に向けた現実的な道筋を求める投資家側の姿勢の変化がある。 開発者にとっては、AIスタートアップに対する評価基準が、単なる成長性から、持続可能なユニットエコノミクスを証明するステージへと移行していることを強く示唆している。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIが資金調達目標を下方修正、巨大なAIインフラ投資に対する市場の懸念やコスト意識の広がりが影響か",
+        "summary": "OpenAIは、当初予定していた巨額の資金調達目標を下方修正した。 背景には、生成AIモデルの学習や推論維持にかかる膨大なインフラコストに対する市場の慎重な見方や、収益化に向けた現実的な道筋を求める投資家側の姿勢の変化がある。 開発者にとっては、AIスタートアップに対する評価基準が、単なる成長性から、持続可能なユニットエコノミクスを証明するステージへと移行していることを強く示唆している。"
+      },
+      "en": {
+        "title": "OpenAI cuts funding round target as investor scrutiny grows over massive AI infrastructure capital expenditures",
+        "summary": "OpenAI has reportedly lowered its target for its latest massive funding round, signaling a cooling market sentiment regarding the ballooning capital expenditures required to train and maintain cutting-edge AI models. Investors are increasingly questioning the long-term path to profitability, shifting their focus away from pure scaling toward demonstrable sustainable unit economics and tangible revenue streams. For builders, this pivot represents a critical market signal: the era of funding growth at any cost is waning, replaced by a mandate to prove efficient inference and viable business models. To secure long-term backing, projects must now articulate clear strategies for managing operational costs while delivering consistent, scalable value rather than relying solely on aggressive compute-heavy growth narratives."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-10-31T05:01:35.371Z"
+  },
+  {
     "id": "art-1793422013554-c5her",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
