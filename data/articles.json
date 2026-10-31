@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793480513898-p5h21",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/asagiman/articles/metered-api-unknown-cost",
+    "published_at": "2026-10-31T15:03:04.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9Vl6hxOM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BE%2593%25E9%2587%258F%25E8%25AA%25B2%25E9%2587%2591API%25E3%2581%25A7timeout%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2582%25E3%2580%258C0%25E5%2586%2586%25E3%2580%258D%25E3%2581%25A8%25E6%25B1%25BA%25E3%2582%2581%25E3%2581%25A4%25E3%2581%2591%25E3%2581%25AA%25E3%2581%2584%25E2%2580%2594%25E2%2580%2594unknown%2520cost%25E3%2583%25BBlease%25E3%2583%25BBreconci...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:asagiman%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FmMjFjMGUxMTcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "従量課金APIでのタイムアウトを「コスト0」と即断するのは危険──Unknown Costを防ぐためのLease/Reconcile設計パターン",
+    "summary_ja": "従量課金APIをAgent等から呼び出す際、タイムアウト＝コスト0と判断するのは危険だ。 クライアントが待機を中断しても、プロバイダー側では推論処理や課金が発生している可能性があるからだ。 これを防ぐためには、リクエスト発行前に租借（Lease）を行い、後に照合（Reconcile）を行う設計パターンを導入すべきだ。 単なるリトライ戦略だけでなく、未知のコスト（Unknown Cost）を制御する堅牢なバックエンド実装が、予期せぬ高額請求を回避する鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "従量課金APIでのタイムアウトを「コスト0」と即断するのは危険──Unknown Costを防ぐためのLease/Reconcile設計パターン",
+        "summary": "従量課金APIをAgent等から呼び出す際、タイムアウト＝コスト0と判断するのは危険だ。 クライアントが待機を中断しても、プロバイダー側では推論処理や課金が発生している可能性があるからだ。 これを防ぐためには、リクエスト発行前に租借（Lease）を行い、後に照合（Reconcile）を行う設計パターンを導入すべきだ。 単なるリトライ戦略だけでなく、未知のコスト（Unknown Cost）を制御する堅牢なバックエンド実装が、予期せぬ高額請求を回避する鍵となる。"
+      },
+      "en": {
+        "title": "Why assuming API timeouts equal zero usage is a dangerous anti-pattern for developers building agentic workflows and usage-based backends",
+        "summary": "For developers building agents on usage-based APIs, assuming a timeout equals zero cost is a dangerous, common anti-pattern. When a client aborts a request, it only proves the client stopped waiting; the provider may have already processed the inference or billed the usage. To prevent unexpected runaway costs, implement explicit lease and reconciliation patterns rather than naive retry loops. Before executing expensive calls, secure a lease, and later reconcile state to confirm actual consumption. This architectural approach decouples network failure from billing logic, ensuring your backend accurately tracks costs even when communication channels break down. Building robust \"unknown cost\" handling is essential for production-grade agentic systems that rely on high-latency third-party model inference."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-31T21:01:53.898Z"
+  },
+  {
+    "id": "art-1793480505142-liet9",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/hiromin_ai/n/n9b5f5b435ba5",
+    "published_at": "2026-10-31T20:56:21.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330741838/rectangle_large_type_2_2dca80397bf0dcabde623f198839a29b.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI競馬予想ソフト開発の教訓：8万レースの検証で判明した「人気薄の激走」予測と「利益」の決定的なギャップ",
+    "summary_ja": "AIを用いて競馬の穴馬を予測するソフトを開発する過程で、過去約8万レースのデータを分析した。 AIが「激走する人気薄」を抽出可能であることは証明されたが、それが必ずしも収益に直結しないという現実が浮き彫りになった。 モデルの的中精度と「回収率」の間のジレンマをどう解決するか。 技術的な予測能力と、賭けとしてのビジネスモデル設計には決定的な差があることを、実戦開発から学ぶ。",
+    "translations": {
+      "ja": {
+        "title": "AI競馬予想ソフト開発の教訓：8万レースの検証で判明した「人気薄の激走」予測と「利益」の決定的なギャップ",
+        "summary": "AIを用いて競馬の穴馬を予測するソフトを開発する過程で、過去約8万レースのデータを分析した。 AIが「激走する人気薄」を抽出可能であることは証明されたが、それが必ずしも収益に直結しないという現実が浮き彫りになった。 モデルの的中精度と「回収率」の間のジレンマをどう解決するか。 技術的な予測能力と、賭けとしてのビジネスモデル設計には決定的な差があることを、実戦開発から学ぶ。"
+      },
+      "en": {
+        "title": "Building AI Horse Racing Software: The Critical Gap Between Predicting Longshots and Achieving Real-World Profitability",
+        "summary": "In this deep dive into building AI-driven horse racing prediction software, the developer analyzes approximately 80,000 race records to determine if AI can consistently identify longshots before the race begins. While the experiment proves that machine learning models can successfully flag high-probability dark horses, it reveals a harsh reality: technical accuracy does not automatically translate into consistent financial returns. The core issue lies in the chasm between predictive precision and actual return-on-investment metrics. For builders, this case study underscores that developing a model capable of finding hidden gems is vastly different from designing a profitable betting strategy. It serves as a stark reminder that even a high-performing AI system requires a sound financial framework to generate genuine monetary value."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "研究"
+    ],
+    "created_at": "2026-10-31T21:01:45.142Z"
+  },
+  {
+    "id": "art-1793480497503-a8z90",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/quotidia/items/aab08b0a4f86918ef9ae",
+    "published_at": "2026-10-31T21:01:09.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQzMzI3MSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc3OTAwNzIzNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YWY5NDIyNzdmMjZlOGJhMzVmYmZlY2IwOGU2ZWQ2NTA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df59d4b48280797c581d3f62880665fc3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9TElORSVFMyU4MSVBQiVFOSVBMyU5RiVFNCVCQSU4QiVFMyU4MSVBRSVFNSU4NiU5OSVFNyU5QyU5RiVFMyU4MiU5MiVFOSU4MCU4MSVFMyU4MiU4QiVFMyU4MSVBOCVFMyU4MCU4MUFJJUUzJTgxJThDJUUzJTgyJUFCJUUzJTgzJUFEJUUzJTgzJUFBJUUzJTgzJUJDJUUzJTgxJUE4JUU2JUEwJTg0JUU5JUE0JThBJUU3JUI0JUEwJUUzJTgyJTkyJUU1JTg4JTg2JUU2JTlFJTkwJUUzJTgwJTgyTElORSVFMyU4MyVBNCVFMyU4MyU5NSVFMyU4MyVCQyVFMyU4MSU4QyVFMyU4MCU4QyVFOSVBMyU5RiVFNCVCQSU4QiVFNyVBRSVBMSVFNyU5MCU4NiVFMyU4MCU4RCVFMyU4MiVBOCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MiU5MiVFOSU5NiU4QiVFNSVBNyU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTBmOTgzMDc3MDA4MGMzMDk1NDg3MjYwZDU5MGE4ZWM4&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBxdW90aWRpYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTRhNjI0NjUzMTU4ODhjZWUzZDIxNjI0N2Q4Y2JjZDY2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a82dda18f2c7da4b7d0c8d321d08cd03",
+    "title_ja": "LINEヤフー、食事写真を送るだけで栄養を自動解析する「食事管理」AIエージェントの提供をLINE内で開始",
+    "summary_ja": "LINEヤフーは、LINEのチャット画面に食事の写真を送信するだけで、AIがカロリーや主要な栄養素を瞬時に分析する「食事管理」エージェントのサービス提供を開始した。 ユーザーは複雑な入力作業なしで毎日の食事記録が可能になる。 日常的に利用するSNSアプリをフロントエンドとして活用し、特定のニッチなタスクをAPI連携で解決するUI設計は、AIサービスのUXにおける一つの成功パターンといえる。",
+    "translations": {
+      "ja": {
+        "title": "LINEヤフー、食事写真を送るだけで栄養を自動解析する「食事管理」AIエージェントの提供をLINE内で開始",
+        "summary": "LINEヤフーは、LINEのチャット画面に食事の写真を送信するだけで、AIがカロリーや主要な栄養素を瞬時に分析する「食事管理」エージェントのサービス提供を開始した。 ユーザーは複雑な入力作業なしで毎日の食事記録が可能になる。 日常的に利用するSNSアプリをフロントエンドとして活用し、特定のニッチなタスクをAPI連携で解決するUI設計は、AIサービスのUXにおける一つの成功パターンといえる。"
+      },
+      "en": {
+        "title": "LINE Yahoo Launches AI Meal Management Agent That Automatically Analyzes Nutritional Content from User-Submitted Food Photos",
+        "summary": "LINE Yahoo has officially rolled out a new meal management agent that allows users to send photos of their food directly within the LINE chat interface to receive instant AI-powered analyses of calories and key nutritional values. By removing the friction of manual logging, the service streamlines health tracking significantly for everyday users. This implementation serves as a strong case study for AI developers, illustrating how embedding specialized agents directly into high-frequency communication platforms—rather than forcing users into a standalone health app—drastically improves adoption rates. For builders, the takeaway is that successful AI utility often lies not in building new interfaces, but in meeting users where they already spend their time."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-31T21:01:37.503Z"
+  },
+  {
+    "id": "art-1793480490711-qkqcg",
+    "source_id": "source-digg-ai",
+    "source_name": "Digg AI",
+    "url": "https://digg.com/ai/rgzej54h",
+    "published_at": "2026-10-31T20:36:12.000Z",
+    "og_image_url": null,
+    "title_ja": "GPUレンタル価格が高騰し、AI APIトークン単価は下落という「逆転現象」が開発者のコスト戦略を激変させる",
+    "summary_ja": "AIインフラ市場で、GPUレンタル価格の上昇とLLMの推論トークン単価の下落という二極化が進んでいる。 NVIDIAチップの需要増がクラウドGPUのコストを押し上げる一方、モデル提供各社の価格競争が激化しAPI利用料は下がっているためだ。 自前でLLMをホスティングする選択肢はコスト面で不利になりつつあり、小規模から中規模のサービス開発において、API活用へシフトする判断が財務的な合理性を帯びている。",
+    "translations": {
+      "ja": {
+        "title": "GPUレンタル価格が高騰し、AI APIトークン単価は下落という「逆転現象」が開発者のコスト戦略を激変させる",
+        "summary": "AIインフラ市場で、GPUレンタル価格の上昇とLLMの推論トークン単価の下落という二極化が進んでいる。 NVIDIAチップの需要増がクラウドGPUのコストを押し上げる一方、モデル提供各社の価格競争が激化しAPI利用料は下がっているためだ。 自前でLLMをホスティングする選択肢はコスト面で不利になりつつあり、小規模から中規模のサービス開発において、API活用へシフトする判断が財務的な合理性を帯びている。"
+      },
+      "en": {
+        "title": "GPU rental prices are rising while AI token prices fall, forcing a pivot in developer infrastructure strategy",
+        "summary": "The AI infrastructure market is experiencing a stark divergence: the cost to rent high-performance GPUs is climbing due to supply constraints, while the cost of consuming LLM inference tokens through APIs continues to plummet. As NVIDIA chips become pricier to secure in the cloud, major model providers are locked in aggressive price wars that drive API expenses downward. This trend makes self-hosting models increasingly difficult to justify financially for startups compared to simpler API integration. For builders looking to maximize their runway and ROI, the math has shifted; relying on managed API endpoints is becoming the fiscally prudent path over provisioning expensive, volatile GPU capacity for workloads that could be offloaded to cheaper, faster commodity inference services."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-31T21:01:30.711Z"
+  },
+  {
     "id": "art-1793479624615-vg7dl",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
