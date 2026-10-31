@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793431904751-owg2g",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/raki/articles/2026-10-31_mermaid_venn",
+    "published_at": "2026-10-31T06:15:59.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--HdOjZtHV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%2520mermaid%2520%25E3%2581%25A7%25E3%2583%2599%25E3%2583%25B3%25E5%259B%25B3%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259B%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:raki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dLekxDZzlSWjJVT0VQSlhhdUJiazBnS29DYVR2cVpoVmVEUlNFa3c9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIにMermaid記法でベン図生成を依頼しても失敗する理由と、プロンプトエンジニアリングの限界",
+    "summary_ja": "AIにMermaid記法を用いたベン図の生成を依頼しても、意図とは異なるチャートが返されるケースが多発している。 複雑な関係性をコードで表現する際はAIのハルシネーションや解釈のズレが避けられず、結局手動で修正する工数が発生する。 AIに複雑な視覚情報を正確に出力させるには、プロンプトの工夫以前に、LLMの得意・不得意な表現形式を理解し、あえて「生成させない」という判断もエンジニアリングの一部となる。",
+    "translations": {
+      "ja": {
+        "title": "AIにMermaid記法でベン図生成を依頼しても失敗する理由と、プロンプトエンジニアリングの限界",
+        "summary": "AIにMermaid記法を用いたベン図の生成を依頼しても、意図とは異なるチャートが返されるケースが多発している。 複雑な関係性をコードで表現する際はAIのハルシネーションや解釈のズレが避けられず、結局手動で修正する工数が発生する。 AIに複雑な視覚情報を正確に出力させるには、プロンプトの工夫以前に、LLMの得意・不得意な表現形式を理解し、あえて「生成させない」という判断もエンジニアリングの一部となる。"
+      },
+      "en": {
+        "title": "Why asking AI to generate Venn diagrams via Mermaid syntax consistently fails and what it reveals",
+        "summary": "Developers often find that asking AI to generate complex Venn diagrams using Mermaid syntax results in incorrect chart types or hallucinations, rather than the requested logic. Despite attempts to force the output through refined prompting, the models struggle to map conceptual intersections into valid diagram code, ultimately requiring significant manual correction by the developer to get the desired result. This cycle highlights a critical limitation in current LLMs: they may possess deep knowledge of concepts like the Ikigai framework, but they lack the structural reasoning needed to render accurate, logic-bound visualizations. For builders, the lesson is clear: recognizing when a task exceeds the model's spatial reasoning capability and handling it manually is just as essential as crafting effective prompts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-31T07:31:44.751Z"
+  },
+  {
+    "id": "art-1793431898332-1us0k",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/koreangyoseishoshi/items/406bfd4e0b9c6bd047b5",
+    "published_at": "2026-10-31T07:24:08.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDU4ODIzJTJGYjZkZjA2ODAzZDE4ZjUyNzJhY2EwODdiN2M2OTRlZTk4YjkxM2RiMSUyRmxhcmdlLnBuZyUzRjE3ODI5MTIxOTQ_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTRiYWU5MjU3ODhhZDExNDc3NDVlMWYxMWIyOGYzNGM5%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D5063c74a1498a85760964fc6612fb0ae?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q1RSJUUzJTgxJThDJUU0JUI4JThCJUUzJTgxJThDJUUzJTgxJUEzJUUzJTgxJTlGJUUzJTgxJUFFJUUzJTgxJUFGJUU4JUE4JTk4JUU0JUJBJThCJUUzJTgxJUFFJUUzJTgxJTlCJUUzJTgxJTg0JUUzJTgxJThCJUUzJTgwJTgxJUU2JUE3JThCJUU2JTg4JTkwJUUzJTgxJUFFJUUzJTgxJTlCJUUzJTgxJTg0JUUzJTgxJThCJUUzJTgwJTgyJUU1JTg1JUE4JUU0JUJEJTkzJUUzJTgxJUFFJUU2JTk1JUIwJUU1JUFEJTk3JUUzJTgyJTkyMiVFMyU4MSVBNCVFMyU4MSVBQiVFNSU4OCU4NiVFMyU4MSU5MSVFMyU4MSVBNiVFOCVBQSVBRCVFMyU4MiU4MCVFNiU5NiVCOSVFNiVCMyU5NSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTgwNGQwZjliZWIzZGFhNTYyNWNiNmNiNDQ3YmU5Njcy&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrb3JlYW5neW9zZWlzaG9zaGkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yYzQ2MGVmYWQzNzcyNTI0YzcxNGQ4OTg2YTA4NGE4ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4eeea9c8bc89759ce46adf36fd334d29",
+    "title_ja": "CTR低下の原因を切り分ける：Search Consoleデータの「2分割分析」でタイトル修正の是非を正しく判断する手法",
+    "summary_ja": "Search ConsoleのCTR低下を単なる記事の質の問題と決めつけ、即座にタイトルや説明文を修正するのは危険だ。 データ全体を「ブランド指名検索」と「一般キーワード」の2つに分割して集計することで、CTR変動の真因がコンテンツにあるのか、あるいは検索クエリの構成変化にあるのかを正確に切り分けられる。 闇雲なABテストや修正の前に、まずはこの分析で真の課題を特定しよう。",
+    "translations": {
+      "ja": {
+        "title": "CTR低下の原因を切り分ける：Search Consoleデータの「2分割分析」でタイトル修正の是非を正しく判断する手法",
+        "summary": "Search ConsoleのCTR低下を単なる記事の質の問題と決めつけ、即座にタイトルや説明文を修正するのは危険だ。 データ全体を「ブランド指名検索」と「一般キーワード」の2つに分割して集計することで、CTR変動の真因がコンテンツにあるのか、あるいは検索クエリの構成変化にあるのかを正確に切り分けられる。 闇雲なABテストや修正の前に、まずはこの分析で真の課題を特定しよう。"
+      },
+      "en": {
+        "title": "Stop Guessing Why CTR Dropped: Use a Two-Segment Analysis in Search Console to Validate SEO Fixes",
+        "summary": "When your Search Console CTR drops, resist the urge to immediately rewrite titles or descriptions, as this often treats symptoms rather than the root cause. Instead, split your data into two distinct segments: brand-name queries and generic keyword searches. This segmentation reveals whether your performance dip stems from poor content quality or a shift in the composition of your traffic sources. By analyzing these buckets separately, you isolate whether users are abandoning your content or if search intent has simply drifted. Don't waste time on premature AB tests; apply this granular analytical framework first to determine if your SEO strategy actually needs a fix or if your audience composition has simply evolved."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-10-31T07:31:38.332Z"
+  },
+  {
+    "id": "art-1793431891993-tqaeo",
+    "source_id": "source-digg-ai",
+    "source_name": "Digg AI",
+    "url": "https://digg.com/tech/vogrt43v",
+    "published_at": "2026-10-31T07:21:00.000Z",
+    "og_image_url": null,
+    "title_ja": "Apple Intelligenceが中国市場に本格展開、iOS 18.2で「Qwen」等のローカルLLMを統合し規制対応と性能を両立",
+    "summary_ja": "Appleは最新のiOS 18.2アップデートを通じて、中国市場向けにApple Intelligenceの提供を開始しました。 現地規制を遵守するため、Alibaba傘下のQwenをはじめとする主要な中国AIモデルを統合し、グローバル仕様とは異なるローカルLLM環境を構築しています。 巨大テック企業がどのように特定の国におけるデータ主権や規制要件をクリアしつつ、AI機能を実装するのかという戦略は、他市場への展開を検討するエンジニアにとって重要なケーススタディとなるでしょう。",
+    "translations": {
+      "ja": {
+        "title": "Apple Intelligenceが中国市場に本格展開、iOS 18.2で「Qwen」等のローカルLLMを統合し規制対応と性能を両立",
+        "summary": "Appleは最新のiOS 18.2アップデートを通じて、中国市場向けにApple Intelligenceの提供を開始しました。 現地規制を遵守するため、Alibaba傘下のQwenをはじめとする主要な中国AIモデルを統合し、グローバル仕様とは異なるローカルLLM環境を構築しています。 巨大テック企業がどのように特定の国におけるデータ主権や規制要件をクリアしつつ、AI機能を実装するのかという戦略は、他市場への展開を検討するエンジニアにとって重要なケーススタディとなるでしょう。"
+      },
+      "en": {
+        "title": "Apple Intelligence enters China with iOS 18.2, integrating local models like Qwen to bypass regulatory hurdles",
+        "summary": "Apple has officially brought Apple Intelligence to the Chinese market with the release of iOS 18.2. To navigate the country's strict AI regulations while maintaining functionality, the company is integrating local large language models, specifically Alibaba’s Qwen, rather than relying solely on global infrastructure. This strategic move highlights how major tech players must balance global feature consistency with local data sovereignty requirements to successfully ship products in highly regulated regions. For developers building AI applications with cross-border ambitions, this deployment serves as a crucial case study in modular model architecture, demonstrating that adapting your backend to support regional, compliant LLMs is becoming an essential prerequisite for entering restrictive markets without compromising core performance."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-10-31T07:31:31.993Z"
+  },
+  {
+    "id": "art-1793431885446-3p0l0",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/ac-bridge",
+    "published_at": "2026-10-31T04:20:01.000Z",
+    "og_image_url": null,
+    "title_ja": "スマート照明がAIコーディングの進捗を通知：Claude Code等の待ち時間を可視化するデバイス「AC Bridge」が登場",
+    "summary_ja": "「AC Bridge」は、Claude CodeやCodexなどのAIコーディングツールと連動し、タスクの完了やユーザーの入力を待つステータスをスマート照明の点灯で通知する物理インターフェースだ。 開発中に画面から目を離していても、照明の変化だけでAIの応答や手動承認が必要なタイミングを直感的に把握できる。 常にコンテキストスイッチを強いられるコーディング作業において、画面を見続けずに生産性を維持したいエンジニア向けのユニークな物理通知ソリューションといえる。",
+    "translations": {
+      "ja": {
+        "title": "スマート照明がAIコーディングの進捗を通知：Claude Code等の待ち時間を可視化するデバイス「AC Bridge」が登場",
+        "summary": "「AC Bridge」は、Claude CodeやCodexなどのAIコーディングツールと連動し、タスクの完了やユーザーの入力を待つステータスをスマート照明の点灯で通知する物理インターフェースだ。 開発中に画面から目を離していても、照明の変化だけでAIの応答や手動承認が必要なタイミングを直感的に把握できる。 常にコンテキストスイッチを強いられるコーディング作業において、画面を見続けずに生産性を維持したいエンジニア向けのユニークな物理通知ソリューションといえる。"
+      },
+      "en": {
+        "title": "AC Bridge turns your smart lights into physical status indicators for Claude Code and Codex processes",
+        "summary": "AC Bridge is a new physical interface that integrates directly with AI coding tools like Claude Code or Codex, signaling progress and status changes via your existing smart lighting system. Instead of constantly monitoring a terminal window or alt-tabbing to check for task completion, developers get immediate, peripheral awareness of when the AI requires human input or has finished a long-running generation. By mapping agent states to ambient light changes, the device helps maintain deep work flow and reduces cognitive load during repetitive coding sessions. This offers a compelling, non-intrusive solution for builders who want to stay focused on code logic while keeping a tangible pulse on their automated development agents without being tethered to an active monitoring screen."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-31T07:31:25.446Z"
+  },
+  {
     "id": "art-1793431129379-e98go",
     "source_id": "source-github-trending",
     "source_name": "GitHub Trending (AI / TypeScript / Python)",
