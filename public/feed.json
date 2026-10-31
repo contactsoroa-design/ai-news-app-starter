@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793406729083-mno9q",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/takao19791012/n/nf00b67d04c8d",
+    "published_at": "2026-10-31T00:12:29.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/322650840/rectangle_large_type_2_6334d67ed5f02c4137e529c7d87a87d7.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "自作AIエージェントの検索機能が「エラーなしで静かに壊れる」現象と、Claudeを活用したデバッグで判明した根本原因",
+    "summary_ja": "AIエージェントを自作する際、エラーログは出ないが検索結果が的外れになるという「静かな故障」に直面した。 コード自体は正常に動作しているように見えても、ベクトル検索の精度やLLM側の解釈ズレにより、意図した回答が生成されないケースが増えている。 Claudeとの壁打ちを通じて判明したのは、評価指標（Evals）の欠如こそが開発の盲点であるということだ。",
+    "translations": {
+      "ja": {
+        "title": "自作AIエージェントの検索機能が「エラーなしで静かに壊れる」現象と、Claudeを活用したデバッグで判明した根本原因",
+        "summary": "AIエージェントを自作する際、エラーログは出ないが検索結果が的外れになるという「静かな故障」に直面した。 コード自体は正常に動作しているように見えても、ベクトル検索の精度やLLM側の解釈ズレにより、意図した回答が生成されないケースが増えている。 Claudeとの壁打ちを通じて判明したのは、評価指標（Evals）の欠如こそが開発の盲点であるということだ。"
+      },
+      "en": {
+        "title": "Silent AI Agent Failure: Why Successful Vector Searches Don’t Guarantee Correct Answers or Useful Output",
+        "summary": "The developer encountered a frustrating \"silent failure\" in an AI agent where code executed perfectly without errors, yet search results were completely irrelevant. This scenario highlights a specific trap in LLM-powered development: logic runs successfully, but semantic mismatches in vector databases or hallucinated interpretations break functionality without throwing exceptions. By debugging with Claude, the author identified that the missing link was a lack of automated evaluation frameworks to catch non-obvious regressions. Unlike traditional software, AI apps require validation logic beyond just stack traces. For builders, this underscores that relying on runtime stability isn't enough; you must implement rigorous semantic testing to detect silent degradations before they derail the entire user experience."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-31T00:32:09.083Z"
+  },
+  {
+    "id": "art-1793406719038-vxvy6",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+    "published_at": "2026-10-31T00:11:32.000Z",
+    "og_image_url": "https://www.datocms-assets.com/75231/1793387884-threat-update-large-title_custom.jpeg?fm=webp",
+    "title_ja": "10月のAIプラットフォーム受難：AI開発者向けサービス少なくとも9社で大規模なセキュリティ侵害が発生、APIキー流出が深刻化",
+    "summary_ja": "10月だけで少なくとも9社のAI開発者向けプラットフォームが不正アクセスを受け、データ漏洩が発生した。 多くの場合、開発者が設定したAPIキーや機密情報が公開リポジトリやクラウド環境から盗まれる「構成ミス」が根本原因となっている。 AIツールを構築する際は、単にモデルを統合するだけでなく、シークレット管理の自動化やIAM権限の最小化といったセキュリティ基盤を開発プロセスの初期段階から組み込むことが、サービスの信頼を守る絶対条件となる。",
+    "translations": {
+      "ja": {
+        "title": "10月のAIプラットフォーム受難：AI開発者向けサービス少なくとも9社で大規模なセキュリティ侵害が発生、APIキー流出が深刻化",
+        "summary": "10月だけで少なくとも9社のAI開発者向けプラットフォームが不正アクセスを受け、データ漏洩が発生した。 多くの場合、開発者が設定したAPIキーや機密情報が公開リポジトリやクラウド環境から盗まれる「構成ミス」が根本原因となっている。 AIツールを構築する際は、単にモデルを統合するだけでなく、シークレット管理の自動化やIAM権限の最小化といったセキュリティ基盤を開発プロセスの初期段階から組み込むことが、サービスの信頼を守る絶対条件となる。"
+      },
+      "en": {
+        "title": "Black October for AI Infrastructure: At least 9 developer platforms breached as API key exposure incidents spike",
+        "summary": "Security researchers recently revealed that at least nine major AI developer platforms suffered significant breaches throughout October, underscoring a systemic vulnerability in how AI services handle credentials. The report highlights that the primary attack vector is not necessarily deep exploitation, but rather common misconfigurations where API keys and infrastructure secrets are inadvertently exposed in public repositories or improperly secured cloud environments. For developers and teams building with AI models, this serves as a critical wake-up call to move beyond simple integration and prioritize automated secret management and strict IAM least-privilege policies. Ultimately, treating infrastructure security as an afterthought while rushing to ship new AI features is becoming the single greatest liability for modern development teams."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-31T00:31:59.038Z"
+  },
+  {
+    "id": "art-1793406711604-fjrev",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/DnD-inc/items/d9b6316a31361e79da19",
+    "published_at": "2026-10-31T00:26:57.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDYxMDA5JTJGNTdlYzdiNDVjOTdmY2RhNDc2MDFjNTA5YTczYmQxYzE2MDQ0YjQ0OCUyRnhfbGFyZ2UucG5nJTNGMTc4NjEwNDM3Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YjFhMTU0Y2FiZWJhY2RiYWI5ODY4ZTBhOGM3NzIyYWM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dfa736dfdb8fb73b3aa012875ab077cae?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUJBJTkwJUU2JUIzJTg5JUU1JUJFJUI0JUU1JThGJThFJUU3JUE1JUE4JUUzJTgxJUFFJUU5JTlCJUJCJUU1JUFEJTkwJUU2JThGJTkwJUU1JTg3JUJBJUU3JUJFJUE5JUU1JThCJTk5JUUzJTgxJThDMjAyNyVFNSVCOSVCNDElRTYlOUMlODglRTMlODElOEIlRTMlODIlODkzMCVFNiU5RSU5QSVFNCVCQiVBNSVFNCVCOCU4QSVFMyU4MSVBQiVFNiU4QiVBMSVFNSVBNCVBNyVFRiVCRCU5QyVFNCVCQiU4QSVFNSVCOSVCNCVFMyU4MSVBRSVFNSVCOSVCNCVFNiU5QyVBQiVFOCVBQSVCRiVFNiU5NSVCNCVFMyU4MSU4QiVFMyU4MiU4OSVFMyU4MiVCNyVFMyU4MiVCOSVFMyU4MyU4NiVFMyU4MyVBMCVFMyU4MiU5MiVFNiU5NSVCNCVFMyU4MSU4OCVFMyU4MiU4QjMlRTMlODElQTQlRTMlODElQUUlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1iYzQ3OWU4YzcwZmM3NzExMzIzMjI5MDdkYjNjZWQ2Yw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBEbkQtaW5jJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NzRmYzk0NjNhNjc1YWQ5ZDExOGM5ZGQwMTE3YmM5YWY&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4d1a5c6c38d3e766a1b7a47ffa2f9ea7",
+    "title_ja": "2027年1月から源泉徴収票の電子提出義務が「30枚以上」に拡大、今年の年末調整から始めるべきシステム移行の3ステップ",
+    "summary_ja": "2027年1月より、源泉徴収票や給与支払報告書の電子提出義務対象が「年間30枚以上」の提出者へと大幅に拡大される。 現在の提出基準である「100枚以上」から対象者が激増するため、年末調整ソフトの導入やクラウド給与システムへの移行が急務だ。 これから数年かけて既存の紙ベース業務をデジタル化し、法改正に備えるためのステップと具体的なツール選びの指針を解説する。",
+    "translations": {
+      "ja": {
+        "title": "2027年1月から源泉徴収票の電子提出義務が「30枚以上」に拡大、今年の年末調整から始めるべきシステム移行の3ステップ",
+        "summary": "2027年1月より、源泉徴収票や給与支払報告書の電子提出義務対象が「年間30枚以上」の提出者へと大幅に拡大される。 現在の提出基準である「100枚以上」から対象者が激増するため、年末調整ソフトの導入やクラウド給与システムへの移行が急務だ。 これから数年かけて既存の紙ベース業務をデジタル化し、法改正に備えるためのステップと具体的なツール選びの指針を解説する。"
+      },
+      "en": {
+        "title": "Japan mandates electronic filing for withholding tax slips starting 2027: How to scale your payroll tech now",
+        "summary": "Starting January 2027, Japan will significantly lower the threshold for mandatory electronic filing of withholding tax slips and salary payment reports to just 30 slips per year. This shift from the previous 100-slip threshold forces a massive wave of small and mid-sized businesses to abandon paper-based workflows. To ensure compliance, companies must act now by prioritizing the implementation of payroll software and cloud-based accounting systems. The piece outlines three critical steps for builders and business owners: auditing current paper volumes, selecting digital HRIS tools, and integrating cloud payroll flows before the deadline hits. Preparing the digital infrastructure today prevents last-minute filing panics when the legal requirement becomes unavoidable for even small-scale operations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-10-31T00:31:51.604Z"
+  },
+  {
+    "id": "art-1793406703460-9fjtq",
+    "source_id": "source-openrouter",
+    "source_name": "OpenRouter Announcements",
+    "url": "https://openrouter.ai/blog/tutorials/build-always-on-ai-agent/",
+    "published_at": "2026-10-31T00:00:00.000Z",
+    "og_image_url": "https://openrouter.ai/blog/images/build-always-on-ai-agent.png",
+    "title_ja": "OpenRouterがTypeScript SDKを活用した常時稼働AIエージェントの構築手法を公開：Hacker News監視・自動実行・予算管理を実装",
+    "summary_ja": "OpenRouterは、TypeScript SDKを用いた「常時稼働AIエージェント」の構築チュートリアルを公開した。 このエージェントはHacker Newsを定期監視し、再起動後も履歴を保持しつつ、予算上限（5セント）の設定や実行前の承認フローを組み込むことが可能だ。 単なるチャットボットを超え、ツール呼び出しと永続ストレージを組み合わせることで、自律的な情報収集や通知を行う実用的なバックグラウンド処理を実装できる。",
+    "translations": {
+      "ja": {
+        "title": "OpenRouterがTypeScript SDKを活用した常時稼働AIエージェントの構築手法を公開：Hacker News監視・自動実行・予算管理を実装",
+        "summary": "OpenRouterは、TypeScript SDKを用いた「常時稼働AIエージェント」の構築チュートリアルを公開した。 このエージェントはHacker Newsを定期監視し、再起動後も履歴を保持しつつ、予算上限（5セント）の設定や実行前の承認フローを組み込むことが可能だ。 単なるチャットボットを超え、ツール呼び出しと永続ストレージを組み合わせることで、自律的な情報収集や通知を行う実用的なバックグラウンド処理を実装できる。"
+      },
+      "en": {
+        "title": "OpenRouter Tutorial Shows How to Build Always-On AI Agents with TypeScript SDK for Autonomous Monitoring and Task Execution",
+        "summary": "OpenRouter published a technical guide on building always-on AI agents using their TypeScript SDK, designed to function independently of active user prompts. The tutorial details how to implement an agent that monitors Hacker News, maintains state across restarts, enforces strict budget caps at five cents per run, and requires human approval before posting actions. Unlike standard request-response chatbots, this architecture leverages persistent storage and tool-calling to facilitate background workflows like periodic data scraping or automated research tasks. For developers building autonomous systems, the primary takeaway is how to safely integrate budget constraints and manual override checkpoints into agentic loops to prevent runaway API costs while maintaining effective background utility."
+      }
+    },
+    "tool_tags": [
+      "OpenRouter"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-31T00:31:43.460Z"
+  },
+  {
     "id": "art-1793405818165-2bz7i",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
