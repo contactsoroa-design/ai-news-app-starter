@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1793476010426-1wver",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kensho_ya/articles/fh-presence-check-standard-items-threshold",
+    "published_at": "2026-10-31T11:12:09.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--RtNO7lMs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:FH%25E7%2594%25BB%25E5%2583%258F%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B5%25E3%2581%25AE%25E6%259C%2589%25E7%2584%25A1%25E5%2588%25A4%25E5%25AE%259A%25E3%2582%2592%25E6%25A8%2599%25E6%25BA%2596%25E5%2587%25A6%25E7%2590%2586%25E9%25A0%2585%25E7%259B%25AE%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E7%25B5%2584%25E3%2582%2580%25E2%2580%2594%25E2%2580%2594%25E3%2581%2597%25E3%2581%258D%25E3%2581%2584%25E5%2580%25A4%25E3%2581%25AFOK%25EF%25BC%258FNG%25E7%2594%25BB%25E5%2583%258F%25E3%2581%25A8%25E5%25B0%2582%25E7%2594%25A8%25E3%2581%25AE%25E8%25A8%2588%25E6%25B8%25AC%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25BC%25E3%2581%25A7%25E6%25B1%25BA%25E3%2582%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25A4%259C%25E8%25A8%25BC%25E5%25B1%258B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZjNTZiOGFmYzcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "FH画像センサで「有無判定」を標準機能だけで構築—Claudeと組む高精度・高効率な計測フロー設計術",
+    "summary_ja": "寸法や位置精度を必要としない部品の有無や欠品判定において、FH画像センサの標準処理項目のみを活用して実装する手法を解説する。 AI系の複雑な機能に頼らず、OK・NG画像からしきい値を算出する専用の計測フローをClaudeのプロンプトスキルとして構築することで、シンプルかつ堅牢な検査ロジックを実現する。 複雑な処理を避け標準機能に徹することで、開発工数を抑えつつ確実な検査環境を構築するためのエンジニア向けの実践的ガイドである。",
+    "translations": {
+      "ja": {
+        "title": "FH画像センサで「有無判定」を標準機能だけで構築—Claudeと組む高精度・高効率な計測フロー設計術",
+        "summary": "寸法や位置精度を必要としない部品の有無や欠品判定において、FH画像センサの標準処理項目のみを活用して実装する手法を解説する。 AI系の複雑な機能に頼らず、OK・NG画像からしきい値を算出する専用の計測フローをClaudeのプロンプトスキルとして構築することで、シンプルかつ堅牢な検査ロジックを実現する。 複雑な処理を避け標準機能に徹することで、開発工数を抑えつつ確実な検査環境を構築するためのエンジニア向けの実践的ガイドである。"
+      },
+      "en": {
+        "title": "Building robust presence detection with standard FH image sensors: Streamlined logic design using Claude-defined calibration flows",
+        "summary": "This guide outlines an efficient approach for presence and defect detection—where precision geometry is unnecessary—using only standard processing functions in FH image sensors rather than complex AI features. The methodology relies on a defined Claude prompt skill, 'fh-gazou-hantei-kyotsu,' which codifies the steps to calculate optimal thresholds using distinct OK and NG sample images. By prioritizing standard image sensor processing blocks over heavy AI alternatives, engineers can build robust, repeatable inspection logic that avoids unnecessary complexity. For developers managing industrial vision systems, the key takeaway is that narrowing scope to non-positional detection allows for simpler, more maintainable workflows that significantly reduce engineering overhead while maintaining consistent inspection accuracy for simple pass/fail manufacturing tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-31T19:46:50.426Z"
+  },
+  {
+    "id": "art-1793476003292-or574",
+    "source_id": "source-context-dev",
+    "source_name": "Context.dev Blog",
+    "url": "https://www.context.dev/blog/headless-scraping-at-scale",
+    "published_at": "2026-10-31",
+    "og_image_url": "https://www.context.dev/api/og?variant=post&title=Headless+Scraping+at+Scale%3A+Playwright%2C+Browserless%2C+Zyte%2C+and+Context.dev&highlight=Playwright%2C+Browserless%2C+Zyte%2C+and+Context.dev&collection=blog&minutes=11",
+    "title_ja": "Context.devが解説する大規模ヘッドレススクレイピングの最適化、PuppeteerやPlaywrightのメモリ枯渇と不安定さを解消する技術的アプローチ",
+    "summary_ja": "Context.devは、大規模なヘッドレスブラウザ実行時に発生するPuppeteerやPlaywrightのメモリ枯渇問題や不安定さを解決する、並列処理とリソース管理のベストプラクティスを公開した。 ブラウザのライフサイクルを厳密に制御し、Workerノード間で負荷を分散させるアーキテクチャこそが、スクレイピングの成功率と速度を維持する鍵となる。 開発者はリソース消費を抑える設計を取り入れることで、複雑な動的サイトでも安定したデータ抽出基盤を構築可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Context.devが解説する大規模ヘッドレススクレイピングの最適化、PuppeteerやPlaywrightのメモリ枯渇と不安定さを解消する技術的アプローチ",
+        "summary": "Context.devは、大規模なヘッドレスブラウザ実行時に発生するPuppeteerやPlaywrightのメモリ枯渇問題や不安定さを解決する、並列処理とリソース管理のベストプラクティスを公開した。 ブラウザのライフサイクルを厳密に制御し、Workerノード間で負荷を分散させるアーキテクチャこそが、スクレイピングの成功率と速度を維持する鍵となる。 開発者はリソース消費を抑える設計を取り入れることで、複雑な動的サイトでも安定したデータ抽出基盤を構築可能だ。"
+      },
+      "en": {
+        "title": "Context.dev details architecture patterns for high-scale headless scraping, solving memory leaks and instability in Puppeteer and Playwright browser clusters",
+        "summary": "Context.dev has published deep technical guidance on managing headless browser execution at scale, specifically addressing the notorious memory leaks and process instability often seen when deploying Puppeteer or Playwright in production. For builders, the durable takeaway is to treat Context.dev as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
+      }
+    },
+    "tool_tags": [
+      "Context.dev"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-31T19:46:43.292Z"
+  },
+  {
+    "id": "art-1793475989773-urdim",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts",
+    "published_at": "2026-10-31T19:25:06.000Z",
+    "og_image_url": "https://cdn.mos.cms.futurecdn.net/VWRdrgLNKxcnN3hENdERW4-1024-80.jpg",
+    "title_ja": "Cisco、27歳の元スタートアップ創業者にAIトークンを無制限提供し、レガシーコードの98％を24ヶ月で刷新する大規模プロジェクトを始動",
+    "summary_ja": "Ciscoはレガシーコードの98％を24ヶ月以内に刷新するプロジェクトを立ち上げ、担当する27歳のエンジニアに対し、AIツール使用のためのトークンを無制限で提供した。 同社は生成AIによるコード変換を全面的に採用し、開発スピードの抜本的な改善を狙っている。 組織全体でAIを開発ワークフローに組み込むには、予算の制約を取り払った大胆な権限委譲と、特定のプロジェクトへの集中的なリソース投下が不可欠であることを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "Cisco、27歳の元スタートアップ創業者にAIトークンを無制限提供し、レガシーコードの98％を24ヶ月で刷新する大規模プロジェクトを始動",
+        "summary": "Ciscoはレガシーコードの98％を24ヶ月以内に刷新するプロジェクトを立ち上げ、担当する27歳のエンジニアに対し、AIツール使用のためのトークンを無制限で提供した。 同社は生成AIによるコード変換を全面的に採用し、開発スピードの抜本的な改善を狙っている。 組織全体でAIを開発ワークフローに組み込むには、予算の制約を取り払った大胆な権限委譲と、特定のプロジェクトへの集中的なリソース投下が不可欠であることを示唆している。"
+      },
+      "en": {
+        "title": "Cisco authorizes 27-year-old engineer with unlimited AI tokens to rewrite 98% of its legacy code in just 24 months",
+        "summary": "Cisco has launched an aggressive initiative to rewrite 98% of its legacy codebase within a two-year timeframe, empowering a 27-year-old former startup founder with unlimited access to AI tokens to accelerate the effort. The project represents a massive bet on generative AI, effectively outsourcing the bulk of the manual migration work to automated code conversion models. This move suggests that for large enterprises attempting to modernize massive technical debt, the winning strategy requires more than just tools—it demands radical autonomy and the removal of budget constraints for developers. By treating token usage as a near-zero marginal cost compared to traditional engineering hours, Cisco aims to prove that AI-driven refactoring can fundamentally compress enterprise development timelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-10-31T19:46:29.774Z"
+  },
+  {
     "id": "art-1793475113193-cn06m",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
