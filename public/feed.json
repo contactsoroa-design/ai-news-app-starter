@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1793417989333-7u3by",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/neoru/articles/708bc41869d5a5",
+    "published_at": "2026-10-30T23:03:18.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jaruD3ps--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25AD%25A3%25E5%25B8%25B8%25E7%25B5%2582%25E4%25BA%2586%25E3%2583%25BB%25E6%25A4%259C%25E8%25A8%25BC%25E6%25B8%2588%25E3%2581%25BF%25E3%2583%25BB%25E4%25BF%259D%25E7%2595%2599%25E3%2582%2592%25E5%2588%2586%25E3%2581%2591%25E3%2582%258B%25E7%258A%25B6%25E6%2585%258B%25E7%25AE%25A1%25E7%2590%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:NEORU%25EF%25BD%259CAI%2520Business%2520OS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E0NDUzYzJmODUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI自動化で陥る「正常終了＝成功」の罠：処理状態と検証結果を切り分けるステート設計の勘所",
+    "summary_ja": "AIエージェントの自動化フローにおいて「エラーなし＝成功」と判断するのは危険であり、通知の未達や古いデータの取得といった「正常終了だが目的未達」のケースを見逃す原因となる。 これを防ぐには、システム的な終了状態（プロセスが止まらなかった事実）と、論理的な検証状態（目的を達成した事実）を明確に分離すべきだ。 両者を区別してステートを管理することで、AIの後続処理が不確実な結果に基づいて実行される事態を防ぎ、システムの堅牢性を高めることが可能となる。",
+    "translations": {
+      "ja": {
+        "title": "AI自動化で陥る「正常終了＝成功」の罠：処理状態と検証結果を切り分けるステート設計の勘所",
+        "summary": "AIエージェントの自動化フローにおいて「エラーなし＝成功」と判断するのは危険であり、通知の未達や古いデータの取得といった「正常終了だが目的未達」のケースを見逃す原因となる。 これを防ぐには、システム的な終了状態（プロセスが止まらなかった事実）と、論理的な検証状態（目的を達成した事実）を明確に分離すべきだ。 両者を区別してステートを管理することで、AIの後続処理が不確実な結果に基づいて実行される事態を防ぎ、システムの堅牢性を高めることが可能となる。"
+      },
+      "en": {
+        "title": "Why 'Success' isn't just 'No Errors': Decoupling process status from verification state in AI automation",
+        "summary": "In AI agent automation, conflating an error-free execution with actual success creates a dangerous blind spot where tasks may finish technically but fail to achieve the desired outcome, such as silent API delivery failures or stale data retrieval. The core of robust system design lies in decoupling the execution status—confirming the process did not crash—from the verification state—confirming the goal was actually satisfied. By managing these as distinct states, developers ensure that downstream AI processes never rely on unverified or false-positive results. This separation is crucial for maintaining system integrity and reliability, allowing builders to create automation workflows that explicitly distinguish between a system that functioned correctly and a task that fulfilled its business intent."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-31T03:39:49.333Z"
+  },
+  {
+    "id": "art-1793417957651-3y8p8",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://terrytao.wordpress.com/2026/10/30/__trashed/",
+    "published_at": "2026-10-31T03:08:55.000Z",
+    "og_image_url": "https://secure.gravatar.com/blavatar/bd4bda4207561b6998f10dec44b570f04ff4072b20f89162d525b186dfca3e49?s=200&#038;ts=1793416545",
+    "title_ja": "テレンス・タオらがAI時代の数学研究を総括―「人間とAIの協調」が導く発見の民主化と数学的検証の新たなパラダイム",
+    "summary_ja": "テレンス・タオ氏らが開催したAI時代の数学研究サミットでは、AIが単なる計算補助にとどまらず、定理の証明支援や新しい数学的対象の発見にどう貢献できるかが議論された。 AIによる「形式的検証」と人間の直感が組み合わさることで、複雑な問題解決の速度が飛躍的に高まる可能性が示唆されている。 数学コミュニティにとって、AIを信頼できる共同研究者として迎え入れるための標準化されたワークフローと検証基盤の構築が喫緊の課題となる。",
+    "translations": {
+      "ja": {
+        "title": "テレンス・タオらがAI時代の数学研究を総括―「人間とAIの協調」が導く発見の民主化と数学的検証の新たなパラダイム",
+        "summary": "テレンス・タオ氏らが開催したAI時代の数学研究サミットでは、AIが単なる計算補助にとどまらず、定理の証明支援や新しい数学的対象の発見にどう貢献できるかが議論された。 AIによる「形式的検証」と人間の直感が組み合わさることで、複雑な問題解決の速度が飛躍的に高まる可能性が示唆されている。 数学コミュニティにとって、AIを信頼できる共同研究者として迎え入れるための標準化されたワークフローと検証基盤の構築が喫緊の課題となる。"
+      },
+      "en": {
+        "title": "Terence Tao and peers detail how AI-driven formal verification is transforming mathematical discovery and collaborative proof generation",
+        "summary": "A recent summit on mathematics in the age of AI, led by Terence Tao, explored how AI models are evolving from basic calculators into active partners in generating proofs and discovering new mathematical structures. The discussions highlighted that the synergy between human intuition and AI-driven formal verification could drastically accelerate the resolution of complex, long-standing problems. The group emphasized that for mathematicians, the next vital frontier is not just developing smarter models, but establishing standardized workflows and verification protocols that turn AI into a reliable co-researcher. This marks a paradigm shift where the democratization of discovery depends heavily on building robust, trusted infrastructure for AI-human collaborative reasoning rather than relying on solo effort."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-10-31T03:39:17.651Z"
+  },
+  {
+    "id": "art-1793417947714-6t2un",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/color_garden/n/nce90c6873c4a",
+    "published_at": "2026-10-31T03:36:42.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330324645/rectangle_large_type_2_52972fe2f6bc9456165b04b0cf358afe.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeを「放置」で回すための自動実行術：許可プロンプト回避・コンテキスト維持・終了判定のテンプレート設定",
+    "summary_ja": "毎日Claude Codeを自律稼働させている個人開発者が、作業効率を最大化する自動実行構成を共有。 コマンド実行時の承認プロンプトを事前にバイパスし、セッションの中断を防ぐコンテキスト維持、さらにタスク完了後の自動終了処理を実装するテンプレートを解説する。 エンジニア不在の環境でAIエージェントに依存する開発者は、手動監視のボトルネックを排除し、AIへの信頼度を高めるための「放置前提」の運用設計が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを「放置」で回すための自動実行術：許可プロンプト回避・コンテキスト維持・終了判定のテンプレート設定",
+        "summary": "毎日Claude Codeを自律稼働させている個人開発者が、作業効率を最大化する自動実行構成を共有。 コマンド実行時の承認プロンプトを事前にバイパスし、セッションの中断を防ぐコンテキスト維持、さらにタスク完了後の自動終了処理を実装するテンプレートを解説する。 エンジニア不在の環境でAIエージェントに依存する開発者は、手動監視のボトルネックを排除し、AIへの信頼度を高めるための「放置前提」の運用設計が不可欠だ。"
+      },
+      "en": {
+        "title": "How to Automate Claude Code for Hands-Off Development: Templates for Bypassing Prompts, Maintaining Context, and Auto-Termination",
+        "summary": "A solo developer sharing a workflow for running Claude Code autonomously, moving away from the bottleneck of manually approving every tool-use command. This guide provides actionable configuration templates to pre-authorize repetitive commands, maintain long-running context sessions without interruption, and cleanly terminate processes once tasks complete. For solo builders who rely on AI agents as their primary engineering team, the practical lesson is to treat agent execution like a CI/CD pipeline rather than a chat interface. By shifting to a 'monitor, don't watch' mindset and proactively managing authorization and memory limits, you can integrate Claude Code into daily development loops that run without manual babysitting, significantly increasing your overall shipping velocity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-31T03:39:07.714Z"
+  },
+  {
+    "id": "art-1793417875567-q5reu",
+    "source_id": "source-digg-ai",
+    "source_name": "Digg AI",
+    "url": "https://digg.com/world-business/6o4ea85w",
+    "published_at": "2026-10-31T03:21:47.000Z",
+    "og_image_url": null,
+    "title_ja": "Alphabet株が第3四半期決算を受け10〜13%急落、AIへの巨額投資と検索広告の伸び悩みが投資家の警戒を誘発",
+    "summary_ja": "Alphabetの第3四半期決算発表後、同社株は10%から13%急落し、ハイテク株全体の売りを誘発した。 主な要因は、AIインフラへの莫大な設備投資（Capex）継続と、コア事業である検索広告の成長鈍化懸念である。 AIへの先行投資がいつ収益化に直結するのかという投資家の不透明感は強まっており、開発者や事業者はAI製品のROIをどのように証明するかが、今後の市場評価を左右する重要な課題となりそうだ。",
+    "translations": {
+      "ja": {
+        "title": "Alphabet株が第3四半期決算を受け10〜13%急落、AIへの巨額投資と検索広告の伸び悩みが投資家の警戒を誘発",
+        "summary": "Alphabetの第3四半期決算発表後、同社株は10%から13%急落し、ハイテク株全体の売りを誘発した。 主な要因は、AIインフラへの莫大な設備投資（Capex）継続と、コア事業である検索広告の成長鈍化懸念である。 AIへの先行投資がいつ収益化に直結するのかという投資家の不透明感は強まっており、開発者や事業者はAI製品のROIをどのように証明するかが、今後の市場評価を左右する重要な課題となりそうだ。"
+      },
+      "en": {
+        "title": "Alphabet stock tumbles 10–13% on Q3 results as AI CapEx spend and search ad deceleration worry investors",
+        "summary": "Alphabet shares tumbled 10% to 13% following its Q3 earnings release, triggering a broader selloff across the technology sector. The market reaction stems primarily from persistent, massive capital expenditure on AI infrastructure paired with mounting concerns regarding slowing growth in the company's core search advertising business. Investors are increasingly skeptical about the timeline for when these heavy AI outlays will yield concrete profitability, creating a tangible valuation risk. For builders and AI-focused teams, this shift highlights a critical market pivot: the era of valuing AI solely based on experimental spend is cooling, and demonstrating clear ROI and direct revenue impact from AI products is becoming the mandatory requirement for sustaining investor confidence and long-term capital support."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-10-31T03:37:55.567Z"
+  },
+  {
     "id": "art-1793416629263-vj0i1",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
