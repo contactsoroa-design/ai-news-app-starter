@@ -2,15 +2,20 @@ import seedArticlesData from '../../data/articles.json';
 import seedSourcesData from '../../data/sources.json';
 import { env, limits } from './config';
 import {
-  readFeedDiskCache,
-  writeFeedDiskCache,
-} from './feedDiskCache';
-import {
   localizeArticlesBatch,
   looksLikeChineseNotJapanese,
 } from './translate';
 import { genres as allGenres, tools as allTools } from '../theme/tokens';
 import type { AppLocale, Article, Source, UserPrefs } from './types';
+
+/**
+ * 端末フィードキャッシュはアプリ実行時だけ読む。
+ * トップレベル import すると ingest（Node/tsx）が expo-file-system → react-native で落ちる。
+ */
+function loadFeedDiskCache() {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  return require('./feedDiskCache') as typeof import('./feedDiskCache');
+}
 
 /** 本番フィードのミラー候補（raw を優先し、jsDelivr は最後＝キャッシュ遅れ対策） */
 const PRODUCTION_FEED_MIRRORS = [
@@ -93,28 +98,36 @@ function ensureRemoteFeedHydratedFromDisk(): Promise<void> {
   if (!remoteFeedDiskHydrate) {
     remoteFeedDiskHydrate = (async () => {
       if (remoteFeedCache) return;
-      const disk = await readFeedDiskCache();
-      if (!disk || disk.articles.length === 0) return;
-      remoteFeedCache = {
-        url: disk.url,
-        etag: disk.etag,
-        lastModified: disk.lastModified,
-        articles: disk.articles,
-        fetchedAt: disk.fetchedAt,
-      };
+      try {
+        const disk = await loadFeedDiskCache().readFeedDiskCache();
+        if (!disk || disk.articles.length === 0) return;
+        remoteFeedCache = {
+          url: disk.url,
+          etag: disk.etag,
+          lastModified: disk.lastModified,
+          articles: disk.articles,
+          fetchedAt: disk.fetchedAt,
+        };
+      } catch {
+        // Node ingest や未対応環境ではスキップ
+      }
     })();
   }
   return remoteFeedDiskHydrate;
 }
 
 function persistRemoteFeedToDisk(cache: RemoteFeedCache): void {
-  void writeFeedDiskCache({
-    url: cache.url,
-    etag: cache.etag,
-    lastModified: cache.lastModified,
-    fetchedAt: cache.fetchedAt,
-    articles: cache.articles,
-  });
+  try {
+    void loadFeedDiskCache().writeFeedDiskCache({
+      url: cache.url,
+      etag: cache.etag,
+      lastModified: cache.lastModified,
+      fetchedAt: cache.fetchedAt,
+      articles: cache.articles,
+    });
+  } catch {
+    // Node ingest や未対応環境ではスキップ
+  }
 }
 
 /**
