@@ -2,6 +2,8 @@
  * 日英ネイティブ要約の品質ゲート（日本語カードと同密度を英語でも要求する）
  */
 
+import { looksLikeChineseNotJapanese } from '../src/lib/translate';
+
 export type BilingualSummaryFields = {
   title_ja: string;
   summary_ja: string;
@@ -23,12 +25,15 @@ function wordCount(text: string): number {
 }
 
 function hasJapanese(text: string): boolean {
-  return /[\u3040-\u30ff\u4e00-\u9faf]/.test(text);
+  // 漢字だけでは中国語と区別できないので、かなを必須にする
+  return /[\u3040-\u30ff]/.test(text);
 }
 
 function hasLatin(text: string): boolean {
   return /[A-Za-z]/.test(text);
 }
+
+export { looksLikeChineseNotJapanese };
 
 /**
  * 品質を満たさなければ Error を投げる（ingest のリトライ対象になる）
@@ -44,7 +49,13 @@ export function assertBilingualSummaryQuality(
   } = fields;
 
   if (!hasJapanese(titleJa) || !hasJapanese(summaryJa)) {
-    throw new Error('日本語要約に日本語スクリプトが不足しています');
+    throw new Error('日本語要約にひらがな／カタカナが不足しています');
+  }
+  if (
+    looksLikeChineseNotJapanese(titleJa) ||
+    looksLikeChineseNotJapanese(summaryJa)
+  ) {
+    throw new Error('日本語欄に中国語本文が入っています');
   }
   if (titleJa.length < JA_TITLE_MIN || titleJa.length > JA_TITLE_MAX) {
     throw new Error(

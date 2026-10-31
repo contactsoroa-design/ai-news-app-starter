@@ -83,8 +83,12 @@ const RSS_FETCH_HEADERS: Record<string, string> = {
 type SitemapFeedFallback = {
   sitemapUrl: string;
   pathIncludes: string;
-  /** 除外するパス（前方一致 or 完全一致） */
+  /** 除外するパス（完全一致） */
   pathExcludes?: string[];
+  /** pathname に含まれると除外（例: /blog/category/） */
+  pathContainsExcludes?: string[];
+  /** pathname が一致したら除外（例: ページネーション /blog/2） */
+  pathRejectRegex?: RegExp;
   /** pathname のセグメント数下限（カテゴリページ除外用） */
   minPathSegments?: number;
 };
@@ -128,21 +132,52 @@ const SITEMAP_FEED_FALLBACKS: Record<string, SitemapFeedFallback> = {
     pathExcludes: ['/blog'],
     minPathSegments: 2,
   },
+  // Context.dev は公式RSSなし。sitemap の /blog/*（lastmod あり）を使う
+  'source-context-dev': {
+    sitemapUrl: 'https://www.context.dev/sitemap.xml',
+    pathIncludes: '/blog/',
+    pathExcludes: ['/blog', '/blog/archive'],
+    pathContainsExcludes: ['/blog/category/'],
+    // /blog/2 などの一覧ページネーションを除外
+    pathRejectRegex: /^\/blog\/\d+$/,
+    minPathSegments: 2,
+  },
 };
 
 /**
- * 公式ブログのカテゴリ一覧HTMLから記事URL＋日付を取る（Webflow等でRSSが弱いソース向け）。
- * Noticeable RSS（製品Updates）と併用し、新しい会社ブログも取りこぼさない。
+ * 公式ブログの一覧HTMLから記事URL＋日付を取る（RSSが無い／死んでいるソース向け）。
+ * Atom/RSSと併用し、新しい公式記事も取りこぼさない。
  */
 type ListingFeedFallback = {
   listingUrl: string;
   origin: string;
+  /** synthesia=Webflow /post、bolt=bolt.new/blog、dify=dify.ai/blog、openai-changelog=API Changelog */
+  parser: 'synthesia' | 'bolt' | 'dify' | 'openai-changelog';
 };
 
 const LISTING_FEED_FALLBACKS: Record<string, ListingFeedFallback> = {
   'source-synthesia': {
     listingUrl: 'https://www.synthesia.io/blog/category/synthesia',
     origin: 'https://www.synthesia.io',
+    parser: 'synthesia',
+  },
+  // StackBlitz 社ブログRSSは Bolt 更新がほぼ来ない → 公式 bolt.new/blog 一覧へ
+  'source-bolt': {
+    listingUrl: 'https://bolt.new/blog',
+    origin: 'https://bolt.new',
+    parser: 'bolt',
+  },
+  // GitHub releases に加え、更新の多い公式ブログ一覧も拾う
+  'source-dify': {
+    listingUrl: 'https://dify.ai/blog',
+    origin: 'https://dify.ai',
+    parser: 'dify',
+  },
+  // developers.openai.com/rss.xml は cookbook/ガイド中心で API Changelog ではない
+  'source-openai-changelog': {
+    listingUrl: 'https://developers.openai.com/api/docs/changelog',
+    origin: 'https://developers.openai.com',
+    parser: 'openai-changelog',
   },
 };
 
@@ -150,6 +185,106 @@ function parseEnglishMonthDayYear(raw: string): string | null {
   const ms = Date.parse(raw);
   if (!Number.isFinite(ms)) return null;
   return new Date(ms).toISOString();
+}
+
+function decodeBasicHtmlEntities(text: string): string {
+  return text
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/gi, "'")
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .trim();
+}
+
+function parseListingItems(
+  html: string,
+  conf: ListingFeedFallback
+): RawFeedItem[] {
+  const items: RawFeedItem[] = [];
+  const seen = new Set<string>();
+  const push = (path: string, titleRaw: string, pubDate: string | null) => {
+    if (!path.startsWith('/')) return;
+    const link = `${conf.origin}${path}`;
+    if (seen.has(link)) return;
+    seen.add(link);
+    const title = decodeBasicHtmlEntities(titleRaw) || titleFromUrlSlug(link);
+    items.push({ title, link, pubDate, snippet: '' });
+  };
+
+  if (conf.parser === 'synthesia') {
+    const cardRe =
+      /href="(\/post\/[^"]+)"[^>]*>[\s\S]*?paragraph-xlarge[^>]*>([^<]+)<[\s\S]*?text-color-tertiary">([A-Za-z]+ \d{1,2}, 202\d)</g;
+    for (const m of html.matchAll(cardRe)) {
+      push(m[1], m[2], parseEnglishMonthDayYear(m[3]));
+    }
+  } else if (conf.parser === 'bolt') {
+    const heroRe =
+      /href="(\/blog\/[^"?#]+)" class="blog-hero-content"[\s\S]*?blog-hero-date">([^<]+)<[\s\S]*?blog-hero-title">([^<]+)</g;
+    for (const m of html.matchAll(heroRe)) {
+      push(m[1], m[3], parseEnglishMonthDayYear(m[2]));
+    }
+    const listRe =
+      /href="(\/blog\/[^"?#]+)" class="blog-list-item"[\s\S]*?blog-list-date">([^<]+)<[\s\S]*?blog-list-title">([^<]+)</g;
+    for (const m of html.matchAll(listRe)) {
+      push(m[1], m[3], parseEnglishMonthDayYear(m[2]));
+    }
+  } else if (conf.parser === 'dify') {
+    const cardRe =
+      /<a href="(\/blog\/[^"/]+)" class="[^"]*"[\s\S]*?<\/a>/g;
+    for (const m of html.matchAll(cardRe)) {
+      const path = m[1];
+      const block = m[0];
+      const dt = block.match(/datetime="([^"]+)"/);
+      if (!dt) continue;
+      const titleMatch =
+        block.match(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/i) ||
+        block.match(
+          /<(?:p|div)[^>]*font-semibold[^>]*>([\s\S]*?)<\/(?:p|div)>/i
+        );
+      const titleRaw = titleMatch
+        ? titleMatch[1].replace(/<[^>]+>/g, '')
+        : titleFromUrlSlug(path);
+      const pubMs = Date.parse(dt[1]);
+      push(
+        path,
+        titleRaw,
+        Number.isFinite(pubMs) ? new Date(pubMs).toISOString() : null
+      );
+    }
+  } else if (conf.parser === 'openai-changelog') {
+    // 単一ページの日付エントリ。#hash で URL を区別する（Claude Code changelog と同型）
+    const sectionRe =
+      /<h3[^>]*>\s*((?:January|February|March|April|May|June|July|August|September|October|November|December),\s*20\d{2})\s*<\/h3>([\s\S]*?)(?=<h3[^>]*>\s*(?:January|February|March|April|May|June|July|August|September|October|November|December),\s*20\d{2}|$)/gi;
+    const entryRe =
+      /<div class="_Badge_[^"]+"[^>]*>((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2})<\/div><\/div><div><div class="flex flex-wrap[\s\S]*?<div class="_MarkdownContent_[^"]+[^>]*>([\s\S]*?)<\/div><\/div><\/div><\/div>/g;
+    for (const section of html.matchAll(sectionRe)) {
+      const monthYear = section[1];
+      const yearMatch = monthYear.match(/20\d{2}/);
+      const year = yearMatch ? yearMatch[0] : String(new Date().getFullYear());
+      for (const m of section[2].matchAll(entryRe)) {
+        const dayLabel = m[1];
+        const bodyHtml = m[2];
+        const text = decodeBasicHtmlEntities(
+          bodyHtml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
+        ).trim();
+        if (!text) continue;
+        const pubDate = parseEnglishMonthDayYear(`${dayLabel}, ${year}`);
+        const title =
+          text.length > 110 ? `${text.slice(0, 107).trim()}…` : text;
+        const slug = slugifyHeading(`${dayLabel}-${year}-${text.slice(0, 48)}`);
+        push(`/api/docs/changelog#${slug}`, title, pubDate);
+      }
+    }
+  }
+
+  items.sort((a, b) => {
+    const ta = a.pubDate ? Date.parse(a.pubDate) : 0;
+    const tb = b.pubDate ? Date.parse(b.pubDate) : 0;
+    return tb - ta;
+  });
+  return items.slice(0, RSS_ITEMS_PER_SOURCE);
 }
 
 async function itemsFromListingFallback(
@@ -162,30 +297,8 @@ async function itemsFromListingFallback(
     console.warn(`  ! listing失敗: [${sourceId}] ${fetched.error}`);
     return null;
   }
-  const items: RawFeedItem[] = [];
-  const seen = new Set<string>();
-  const cardRe =
-    /href="(\/post\/[^"]+)"[^>]*>[\s\S]*?paragraph-xlarge[^>]*>([^<]+)<[\s\S]*?text-color-tertiary">([A-Za-z]+ \d{1,2}, 202\d)</g;
-  for (const m of fetched.text.matchAll(cardRe)) {
-    const path = m[1];
-    const title = m[2].replace(/&#x27;/g, "'").replace(/&amp;/g, '&').trim();
-    const pubDate = parseEnglishMonthDayYear(m[3]);
-    const link = `${conf.origin}${path}`;
-    if (seen.has(link)) continue;
-    seen.add(link);
-    items.push({
-      title: title || titleFromUrlSlug(link),
-      link,
-      pubDate,
-      snippet: '',
-    });
-  }
-  items.sort((a, b) => {
-    const ta = a.pubDate ? Date.parse(a.pubDate) : 0;
-    const tb = b.pubDate ? Date.parse(b.pubDate) : 0;
-    return tb - ta;
-  });
-  return items.slice(0, RSS_ITEMS_PER_SOURCE);
+  const items = parseListingItems(fetched.text, conf);
+  return items.length > 0 ? items : null;
 }
 
 function titleFromUrlSlug(url: string): string {
@@ -366,6 +479,12 @@ function sitemapPathMatches(url: string, conf: SitemapFeedFallback): boolean {
   }
   // カテゴリページそのものは除外（子記事 /news/company-news/foo は残す）
   if (conf.pathExcludes?.some((ex) => pathname === ex)) return false;
+  if (conf.pathContainsExcludes?.some((ex) => pathname.includes(ex))) {
+    return false;
+  }
+  if (conf.pathRejectRegex && conf.pathRejectRegex.test(pathname)) {
+    return false;
+  }
   if (typeof conf.minPathSegments === 'number') {
     const segments = pathname.split('/').filter(Boolean);
     if (segments.length < conf.minPathSegments) return false;
@@ -645,6 +764,7 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-openrouter': 'OpenRouter',
   'source-runway': 'Runway',
   'source-firecrawl': 'Firecrawl',
+  'source-context-dev': 'Context.dev',
   'source-elevenlabs': 'ElevenLabs',
   'source-koala-ai': 'Koala AI',
   'source-copyai': 'Copy.ai',
@@ -672,17 +792,19 @@ const EDITORIAL_SYSTEM_PROMPT = [
   '【Japanese rules】',
   '1. title_ja: 50–72 chars, newspaper/tech-headline style, include proper nouns and concrete numbers.',
   '2. summary_ja: 150–200 Japanese chars, 2–3 sentences. Facts/mechanism first, then a natural conclusion for developers/builders.',
+  '3. title_ja and summary_ja MUST be Japanese with hiragana/katakana. Never write Simplified/Traditional Chinese in the ja fields (even if the source page is Chinese).',
   '',
   '【English rules — native, SAME information density as Japanese (not a short gloss)】',
-  '3. title_en: 14–24 words, crisp English tech headline with the same facts/numbers as title_ja.',
-  '4. summary_en: 95–140 words, 3–4 sentences. Must carry THE SAME facts, mechanisms, numbers, and builder takeaway as summary_ja — do not shorten or omit the conclusion. Prefer a slightly richer explanation than Japanese when English needs more words for equal clarity.',
-  '5. English must feel like a native US tech newsletter card, not a compressed translation of the Japanese.',
+  '4. title_en: 14–24 words, crisp English tech headline with the same facts/numbers as title_ja.',
+  '5. summary_en: 95–140 words, 3–4 sentences. Must carry THE SAME facts, mechanisms, numbers, and builder takeaway as summary_ja — do not shorten or omit the conclusion. Prefer a slightly richer explanation than Japanese when English needs more words for equal clarity.',
+  '6. English must feel like a native US tech newsletter card, not a compressed translation of the Japanese.',
   '',
   '【Forbidden in all languages】',
   '- Empty filler endings (“explains…”, “is introduced…”, “read more”).',
   '- App UI instructions (“tap the original article button”, etc.).',
   '- Label words like “Conclusion:”.',
   '- Thin English that drops numbers or the practical takeaway present in Japanese.',
+  '- Chinese prose in title_ja / summary_ja.',
   '',
   '【Few-shot example — match this density in BOTH languages】',
   '{"title_ja":"OpenAI、10億人超のChatGPTユーザーを支えるオンラインストレージ基盤「Habitat」の高速化設計（読み取り12倍高速化）を公開","summary_ja":"OpenAIは10億人超のChatGPTユーザーからのアクセスを捌くため、オンラインストレージ基盤「Habitat」にマルチテナント分離とグローバルキャッシュを導入し、読み取り速度を従来の12倍に引き上げた。単一DBのスケールアップに頼らずキャッシュ層とパーティション設計を工夫することが、巨大AIサービスのレスポンス遅延を防ぐ鍵となる。","title_en":"OpenAI details Habitat storage redesign that makes ChatGPT reads 12× faster for 1B+ users","summary_en":"OpenAI published the internals of Habitat, the online storage layer that serves more than a billion ChatGPT users, explaining how multi-tenant isolation plus a global cache lifted read throughput by about 12× versus the prior design. The piece walks through why a single primary database stops scaling once chat traffic becomes both hot and globally distributed, and how partition boundaries plus cache tiers absorb the spike without pushing every request back to origin. The write-up argues that chasing a bigger single database is the wrong bet at this scale; careful cache tiers and tenancy isolation are what actually keep interactive latency under control for massive AI products. For builders shipping agent backends, the practical lesson is to budget for caching and tenancy isolation early instead of treating storage as an afterthought once traffic spikes.","tool_tags":["ChatGPT"],"genre_tags":["開発","セキュリティ"]}',

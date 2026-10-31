@@ -21,7 +21,10 @@ import { Image } from 'expo-image';
 import { SCREENSHOT_TAB } from '../store/screenshots/target';
 import { CardSkeleton } from '../src/components/CardSkeleton';
 import { EmptyState } from '../src/components/EmptyState';
-import { ExploreView } from '../src/components/ExploreView';
+import {
+  ExploreView,
+  type ExploreViewHandle,
+} from '../src/components/ExploreView';
 import { NewsCard } from '../src/components/NewsCard';
 import { SavedView } from '../src/components/SavedView';
 import {
@@ -33,6 +36,10 @@ import { TabBarIcon } from '../src/components/TabBarIcon';
 import { getCopy, getSourceDisplayName, limits } from '../src/lib/config';
 import { DEMO_SWIPE_ENABLED } from '../src/lib/demoSwipe';
 import {
+  prefetchOgAroundIndex,
+  prefetchOgImages,
+} from '../src/lib/imagePrefetch';
+import {
   articleMatchesPrefsFilter,
   cleanArticleSummary,
   cleanArticleTitle,
@@ -41,7 +48,7 @@ import {
   articleFeedTimestamp,
   fetchArticles,
   getAllSources,
-  getBundledArticles,
+  getBootArticles,
   getArticleSourceFaviconUrl,
   getFaviconUrl,
   getVerifiedArticleTool,
@@ -56,6 +63,7 @@ import {
   listSponsoredThenArticles,
   pickRelatedSponsored,
 } from '../src/lib/sponsored';
+import { resolveSponsoredLocalIcon } from '../src/lib/sponsorIcons';
 import { looksLikeLocale, relocalizeArticles } from '../src/lib/translate';
 import {
   getHiddenArticleIds,
@@ -91,34 +99,6 @@ import {
 type BottomTab = 'home' | 'explore' | 'saved' | 'settings';
 type HomeTopTab = 'recommended' | 'source' | 'tool';
 
-/** 製品レール用。情報源アイコンと同じ黒シンボル（白マットに載せる） */
-const RELATED_SPONSOR_LOCAL_ICON: Record<
-  string,
-  ReturnType<typeof require>
-> = {
-  ElevenLabs: require('../assets/sponsors/elevenlabs-symbol.png'),
-  Firecrawl: require('../assets/sponsors/firecrawl-symbol.png'),
-  Transkriptor: require('../assets/sponsors/transkriptor-symbol.png'),
-};
-
-/** 先頭付近の OGP だけ先読み（favicon は帯域を奪うので後回し） */
-function prefetchOgImages(
-  items: ReadonlyArray<Article | FeedCardItem>,
-  fromIndex: number,
-  count: number
-) {
-  const urls: string[] = [];
-  const end = Math.min(items.length, fromIndex + count);
-  for (let i = Math.max(0, fromIndex); i < end; i += 1) {
-    const item = items[i];
-    if (!item || isSponsoredItem(item)) continue;
-    if (item.og_image_url) urls.push(item.og_image_url);
-  }
-  if (urls.length > 0) {
-    void Image.prefetch(urls, 'memory-disk');
-  }
-}
-
 export default function HomeScreen() {
   const windowDims = useWindowDimensions();
   const [feedHeight, setFeedHeight] = useState(
@@ -132,6 +112,10 @@ export default function HomeScreen() {
   const sources = useMemo<Source[]>(() => getAllSources(), []);
   const [articles, setArticles] = useState<Article[]>([]);
   const [sponsoredItems, setSponsoredItems] = useState<SponsoredItem[]>([]);
+  /** フィード／広告JSON更新のたびに進め、差し込み順だけ入れ替える（スワイプ中は固定） */
+  const [sponsoredShuffleKey, setSponsoredShuffleKey] = useState(() =>
+    Date.now() & 0xffffffff
+  );
   const [savedIds, setSavedIds] = useState<string[]>([]);
   const [savedArticlesData, setSavedArticlesDataState] = useState<Article[]>([]);
   const [hiddenIds, setHiddenIds] = useState<string[]>([]);
@@ -142,6 +126,9 @@ export default function HomeScreen() {
   );
 
   const [bottomTab, setBottomTab] = useState<BottomTab>('home');
+  /** 一度開いた探索はアンマウントせず位置を保持する */
+  const [exploreMounted, setExploreMounted] = useState(false);
+  const exploreRef = useRef<ExploreViewHandle | null>(null);
   const [settingsSubScreen, setSettingsSubScreen] = useState<
     'root' | 'manage_sources' | 'manage_tools'
   >('root');
@@ -155,6 +142,7 @@ export default function HomeScreen() {
       SCREENSHOT_TAB === 'saved' ||
       SCREENSHOT_TAB === 'settings'
     ) {
+      if (SCREENSHOT_TAB === 'explore') setExploreMounted(true);
       setBottomTab(SCREENSHOT_TAB);
       if (SCREENSHOT_TAB === 'settings') setSettingsSubScreen('root');
     }
@@ -182,14 +170,14 @@ export default function HomeScreen() {
       setRefreshing(true);
     } else if (mode === 'initial') {
       setLoading(true);
-      // 同梱フィードを即表示し、リモート待ち中でも OGP の取得を開始する
+      // 端末の前回フィード（なければ同梱）を即表示し、リモート待ち中でも OGP を開始
       const bootLocale = normalizeAppLocale(
         prefs.region_locale ?? detectDeviceDefaultLocale()
       );
-      const bundled = getBundledArticles(bootLocale);
-      if (bundled.length > 0) {
-        setArticles(bundled);
-        prefetchOgImages(bundled, 0, 3);
+      const bootArticles = await getBootArticles(bootLocale);
+      if (bootArticles.length > 0) {
+        setArticles(bootArticles);
+        prefetchOgImages(bootArticles, 0, limits.imagePrefetchBootCount);
       }
     }
     setError(null);
@@ -212,9 +200,11 @@ export default function HomeScreen() {
         mode === 'initial'
           ? (partial) => {
               setArticles(partial);
-              prefetchOgImages(partial, 0, 3);
+              prefetchOgImages(partial, 0, limits.imagePrefetchBootCount);
             }
-          : undefined
+          : undefined,
+        // pull 更新は TTL キャッシュを飛ばして最新 JSON を取り直す
+        mode === 'refresh' ? { forceRefresh: true } : undefined
       );
       const sponsoredPromise = fetchSponsoredItems();
 
@@ -248,8 +238,12 @@ export default function HomeScreen() {
           ? fetchedArticles
           : relocalizeArticles(fetchedArticles, targetLocale);
       setArticles(localizedArticles);
-      prefetchOgImages(localizedArticles, 0, 3);
+      prefetchOgImages(localizedArticles, 0, limits.imagePrefetchBootCount);
       setSponsoredItems(fetchedSponsored);
+      // 更新単位で広告の並びを入れ替え（同一セッションのスワイプ中は key 固定）
+      setSponsoredShuffleKey(
+        (Date.now() ^ (fetchedSponsored.length * 2654435761)) >>> 0
+      );
 
       // 端末保存済みの記事データを復元・同期（日本語原文のみクリーンアップ。他言語訳を壊さない）
       try {
@@ -484,11 +478,13 @@ export default function HomeScreen() {
     if (sourceOrToolNarrowed) {
       return listSponsoredThenArticles(ordered, matchedSponsored, {
         locale: prefs.region_locale,
+        shuffleSeed: sponsoredShuffleKey,
       });
     }
 
     return interleaveSponsoredCards(ordered, matchedSponsored, {
       locale: prefs.region_locale,
+      shuffleSeed: sponsoredShuffleKey,
     });
   }, [
     baseFilteredArticles,
@@ -502,6 +498,7 @@ export default function HomeScreen() {
     prefs.tools,
     enabledSourceIdSet,
     sponsoredItems,
+    sponsoredShuffleKey,
   ]);
 
   // 端末に保存された記事データ（フィードから消えた過去記事も含めて保持）
@@ -525,16 +522,16 @@ export default function HomeScreen() {
       ? Math.min(currentIndex, visibleArticles.length - 1)
       : 0;
 
-  /** 表示中カード周辺の OGP を先読み（favicon は現在カードのみ） */
+  /** 表示中カード周辺の OGP を先読み（favicon は現在カードのみ・帯域を奪わない） */
   useEffect(() => {
     if (visibleArticles.length === 0) return;
-    prefetchOgImages(visibleArticles, Math.max(0, safeIndex - 1), 4);
+    prefetchOgAroundIndex(visibleArticles, safeIndex);
     const current = visibleArticles[safeIndex];
     if (current && !isSponsoredItem(current)) {
       currentArticleIdRef.current = current.id;
       const favicon = getArticleSourceFaviconUrl(current);
       if (favicon) {
-        void Image.prefetch([favicon], 'memory-disk');
+        void Image.prefetch([favicon], { cachePolicy: 'memory-disk' });
       }
     }
   }, [safeIndex, visibleArticles]);
@@ -701,6 +698,10 @@ export default function HomeScreen() {
     });
   }, []);
 
+  const scrollExploreToTop = useCallback(() => {
+    exploreRef.current?.scrollToTop();
+  }, []);
+
   /** 記事レールの製品アイコン → フィード内の該当広告カードへ */
   const scrollHomeToSponsoredIndex = useCallback(
     (index: number) => {
@@ -839,7 +840,13 @@ export default function HomeScreen() {
     <View style={[styles.screen, { backgroundColor: activeTheme.background }]}>
       {/* メイン領域 */}
       <View style={styles.mainArea} onLayout={handleFeedLayout}>
-        {bottomTab === 'home' ? (
+        <View
+          style={[
+            styles.tabPane,
+            bottomTab !== 'home' ? styles.tabPaneHidden : null,
+          ]}
+          pointerEvents={bottomTab === 'home' ? 'auto' : 'none'}
+        >
           <>
             {loading && !refreshing && visibleArticles.length === 0 ? (
               <CardSkeleton />
@@ -897,9 +904,9 @@ export default function HomeScreen() {
                     ? Math.max(0, Math.min(safeIndex, visibleArticles.length - 1))
                     : 0
                 }
-                initialNumToRender={3}
-                maxToRenderPerBatch={4}
-                windowSize={7}
+                initialNumToRender={4}
+                maxToRenderPerBatch={5}
+                windowSize={9}
                 onMomentumScrollEnd={handleMomentumScrollEnd}
                 getItemLayout={(_, index) => ({
                   length: feedHeight,
@@ -943,9 +950,7 @@ export default function HomeScreen() {
                   const siteForIcon = related?.tool_tag
                     ? toolSiteUrls[related.tool_tag]
                     : null;
-                  const localIcon = related?.tool_tag
-                    ? RELATED_SPONSOR_LOCAL_ICON[related.tool_tag]
-                    : undefined;
+                  // 全広告主共通: ローカル公式シンボル → favicon → 画像
                   // フィード内に広告カードが無くてもアイコンは出す（タップでジャンプ or 公式へ）
                   const relatedSponsor = related
                     ? {
@@ -956,7 +961,7 @@ export default function HomeScreen() {
                             : null) ||
                           getFaviconUrl(related.url) ||
                           related.image_url,
-                        iconSource: localIcon ?? null,
+                        iconSource: resolveSponsoredLocalIcon(related),
                         onPress: () => {
                           if (jumpIndex >= 0) {
                             scrollHomeToSponsoredIndex(jumpIndex);
@@ -1264,35 +1269,52 @@ export default function HomeScreen() {
               </View>
             ) : null}
           </>
-        ) : bottomTab === 'explore' ? (
-          <ExploreView
-            articles={baseFilteredArticles}
-            savedIds={savedIds}
-            showOriginalButton={prefs.show_original_button}
-            sponsoredItems={sponsoredItems.filter((s) => {
-              if (s.active === false) return false;
-              if (hiddenIdSet.has(s.id)) return false;
-              for (const hid of hiddenIdSet) {
-                if (hid.startsWith(`${s.id}__`)) return false;
-              }
-              return true;
-            })}
-            prefsTools={prefs.tools}
-            enabledSourceIds={enabledSourceIdSet}
-            onToggleSave={handleToggleSave}
-            onHideArticle={handleHideArticle}
-            onOpenSaved={() => setBottomTab('saved')}
-            onPressSource={handleOpenSourceFeed}
-            locale={prefs.region_locale}
-          />
-        ) : bottomTab === 'saved' ? (
+        </View>
+
+        {exploreMounted || bottomTab === 'explore' ? (
+          <View
+            style={[
+              styles.tabPane,
+              bottomTab !== 'explore' ? styles.tabPaneHidden : null,
+            ]}
+            pointerEvents={bottomTab === 'explore' ? 'auto' : 'none'}
+          >
+            <ExploreView
+              ref={exploreRef}
+              articles={baseFilteredArticles}
+              savedIds={savedIds}
+              showOriginalButton={prefs.show_original_button}
+              isActive={bottomTab === 'explore'}
+              sponsoredItems={sponsoredItems.filter((s) => {
+                if (s.active === false) return false;
+                if (hiddenIdSet.has(s.id)) return false;
+                for (const hid of hiddenIdSet) {
+                  if (hid.startsWith(`${s.id}__`)) return false;
+                }
+                return true;
+              })}
+              sponsoredShuffleKey={sponsoredShuffleKey}
+              prefsTools={prefs.tools}
+              enabledSourceIds={enabledSourceIdSet}
+              onToggleSave={handleToggleSave}
+              onHideArticle={handleHideArticle}
+              onOpenSaved={() => setBottomTab('saved')}
+              onPressSource={handleOpenSourceFeed}
+              locale={prefs.region_locale}
+            />
+          </View>
+        ) : null}
+
+        {bottomTab === 'saved' ? (
           <SavedView
             savedArticles={savedArticles}
             showOriginalButton={prefs.show_original_button}
             locale={prefs.region_locale}
             onRemoveSaved={handleToggleSave}
           />
-        ) : (
+        ) : null}
+
+        {bottomTab === 'settings' ? (
           <SettingsView
             key={settingsSubScreen}
             sources={sources}
@@ -1317,7 +1339,7 @@ export default function HomeScreen() {
               });
             }}
           />
-        )}
+        ) : null}
       </View>
 
       {/* 下タブ (高さ84 / ホーム 探索 保存済み 設定) */}
@@ -1348,6 +1370,13 @@ export default function HomeScreen() {
                 if (tab.key === 'home' && bottomTab === 'home') {
                   scrollHomeToTop();
                   return;
+                }
+                if (tab.key === 'explore' && bottomTab === 'explore') {
+                  scrollExploreToTop();
+                  return;
+                }
+                if (tab.key === 'explore') {
+                  setExploreMounted(true);
                 }
                 if (tab.key === 'settings') {
                   setSettingsSubScreen('root');
@@ -1381,6 +1410,12 @@ const styles = StyleSheet.create({
   mainArea: {
     flex: 1,
     position: 'relative',
+  },
+  tabPane: {
+    flex: 1,
+  },
+  tabPaneHidden: {
+    display: 'none',
   },
   pullRefreshFill: {
     flexGrow: 1,

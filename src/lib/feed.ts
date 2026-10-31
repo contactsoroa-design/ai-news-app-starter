@@ -1,7 +1,14 @@
 import seedArticlesData from '../../data/articles.json';
 import seedSourcesData from '../../data/sources.json';
 import { env, limits } from './config';
-import { localizeArticlesBatch } from './translate';
+import {
+  readFeedDiskCache,
+  writeFeedDiskCache,
+} from './feedDiskCache';
+import {
+  localizeArticlesBatch,
+  looksLikeChineseNotJapanese,
+} from './translate';
 import { genres as allGenres, tools as allTools } from '../theme/tokens';
 import type { AppLocale, Article, Source, UserPrefs } from './types';
 
@@ -73,12 +80,42 @@ type RemoteFeedCache = {
 };
 
 let remoteFeedCache: RemoteFeedCache | null = null;
+let remoteFeedDiskHydrate: Promise<void> | null = null;
 
 /**
  * 変更がなければネットワークを省略するTTL（フォアグラウンド復帰の連打対策）。
  * pull更新でもこの秒数内ならキャッシュを返し、無駄な3MB再取得を止める。
  */
 const FEED_CACHE_TTL_MS = 60_000;
+
+/** 端末キャッシュをメモリへ載せる（起動時・リモート取得前）。1プロセス1回。 */
+function ensureRemoteFeedHydratedFromDisk(): Promise<void> {
+  if (!remoteFeedDiskHydrate) {
+    remoteFeedDiskHydrate = (async () => {
+      if (remoteFeedCache) return;
+      const disk = await readFeedDiskCache();
+      if (!disk || disk.articles.length === 0) return;
+      remoteFeedCache = {
+        url: disk.url,
+        etag: disk.etag,
+        lastModified: disk.lastModified,
+        articles: disk.articles,
+        fetchedAt: disk.fetchedAt,
+      };
+    })();
+  }
+  return remoteFeedDiskHydrate;
+}
+
+function persistRemoteFeedToDisk(cache: RemoteFeedCache): void {
+  void writeFeedDiskCache({
+    url: cache.url,
+    etag: cache.etag,
+    lastModified: cache.lastModified,
+    fetchedAt: cache.fetchedAt,
+    articles: cache.articles,
+  });
+}
 
 /**
  * 見出しに含まれる余計な記号やプレフィックスノイズを除去する
@@ -245,11 +282,20 @@ function rememberRemoteFeed(
     articles,
     fetchedAt: Date.now(),
   };
+  // 最新JSONで丸ごと上書き（消えた記事は端末からも消える）
+  persistRemoteFeedToDisk(remoteFeedCache);
 }
 
-async function loadRawArticlesFromRemote(urls: string[]): Promise<Article[]> {
+async function loadRawArticlesFromRemote(
+  urls: string[],
+  options?: { forceRefresh?: boolean }
+): Promise<Article[]> {
+  await ensureRemoteFeedHydratedFromDisk();
+
   // 直近に取ったばかりならフル再取得しない（AppState silent / 連打 pull）
+  // ユーザーの明示的な pull 更新（forceRefresh）では TTL を無視する
   if (
+    !options?.forceRefresh &&
     remoteFeedCache &&
     Date.now() - remoteFeedCache.fetchedAt < FEED_CACHE_TTL_MS
   ) {
@@ -275,6 +321,7 @@ async function loadRawArticlesFromRemote(urls: string[]): Promise<Article[]> {
 
       if (response.status === 304 && cached) {
         remoteFeedCache = { ...cached, fetchedAt: Date.now() };
+        persistRemoteFeedToDisk(remoteFeedCache);
         return cached.articles;
       }
 
@@ -350,6 +397,10 @@ function prepareArticles(
 
   const sanitized = rawArticles
     .filter((art) => {
+      // 日本語欄が中国語本文のままのカードは出さない（品質ゲート漏れの保険）
+      const jaText = `${art.title_ja ?? ''}${art.summary_ja ?? ''}${art.translations?.ja?.title ?? ''}${art.translations?.ja?.summary ?? ''}`;
+      if (looksLikeChineseNotJapanese(jaText)) return false;
+
       if (!art.source_id || !art.url) return true;
       const src = sourceById.get(art.source_id);
       if (!src) return true;
@@ -407,19 +458,34 @@ export function getBundledArticles(
   );
 }
 
+/**
+ * 起動直後の表示用。端末の前回フィード（あれば）→ 同梱の順。
+ * 品質はリモートと同じ prepare 経路。件数チラつきを抑える。
+ */
+export async function getBootArticles(
+  targetLocale: AppLocale = 'ja'
+): Promise<Article[]> {
+  await ensureRemoteFeedHydratedFromDisk();
+  if (remoteFeedCache && remoteFeedCache.articles.length > 0) {
+    return prepareArticles(remoteFeedCache.articles, targetLocale);
+  }
+  return getBundledArticles(targetLocale);
+}
+
 export async function fetchArticles(
   targetLocale: AppLocale = 'ja',
   onProgress?: (
     localizedSoFar: Article[],
     done: number,
     total: number
-  ) => void
+  ) => void,
+  options?: { forceRefresh?: boolean }
 ): Promise<Article[]> {
   let rawArticles: Article[];
   const feedUrls = resolveFeedUrls();
   if (feedUrls.length > 0) {
     try {
-      rawArticles = await loadRawArticlesFromRemote(feedUrls);
+      rawArticles = await loadRawArticlesFromRemote(feedUrls, options);
     } catch {
       // リモート不通・壊れたJSONでも起動できるように同梱フィードへフォールバック
       rawArticles = unwrapArticlesPayload(seedArticlesData);
@@ -656,6 +722,7 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-openrouter': 'OpenRouter',
   'source-runway': 'Runway',
   'source-firecrawl': 'Firecrawl',
+  'source-context-dev': 'Context.dev',
   'source-elevenlabs': 'ElevenLabs',
   'source-koala-ai': 'Koala AI',
   'source-copyai': 'Copy.ai',
@@ -700,6 +767,7 @@ const SOURCE_ALLOWED_TOOLS: Record<string, readonly string[]> = {
   'source-openrouter': ['OpenRouter'],
   'source-runway': ['Runway'],
   'source-firecrawl': ['Firecrawl'],
+  'source-context-dev': ['Context.dev'],
   'source-elevenlabs': ['ElevenLabs'],
   'source-koala-ai': ['Koala AI'],
   'source-copyai': ['Copy.ai'],

@@ -36,6 +36,8 @@ Draft sponsored cards (active:false until affiliate URL is approved):
 See docs/アフィリエイト運用ルール.md 「申請キュー」.
 
 Synthesia sponsored (active, ?via=kaki-fura) — official CDN, 8 viewpoints / 8 images:
+- synthesia-symbol.png — official webclip (website-files …/6618fd69…_webclip.png), unmodified
+  Product rail + sponsored card icon (shared via src/lib/sponsorIcons.ts)
 - synthesia-1 launch/explainer — OG-Image-EN.jpg
 - synthesia-2 docs→video / Assistant — GTM_Assistant_Blog-Header.jpg
 - synthesia-3 JA/EN localization — Pronunciation-Controls-Promo-Video-Thumbnail.png
@@ -45,7 +47,14 @@ Synthesia sponsored (active, ?via=kaki-fura) — official CDN, 8 viewpoints / 8 
 - synthesia-7 Express avatar series — Express-2 avatars.jpg
 - synthesia-8 deck→pitch video — Multiverse-Synthesia-LI-banner-p-2000.png
 
-Feed interleave: alternate advertisers (ElevenLabs ↔ Synthesia ↔ Firecrawl ↔ Transkriptor) in recommended feed.
+Feed interleave: alternate advertisers (ElevenLabs ↔ Synthesia ↔ Firecrawl ↔ Transkriptor ↔ Context.dev) in recommended feed.
+
+Context.dev sponsored (active, https://link.context.dev/kaki) — official assets only, unmodified.
+- context-symbol.png — https://www.context.dev/android-chrome-512x512.png (official)
+- Remote image_url: https://www.context.dev/api/og?title=… (official OG API, 8 titles)
+- Copy: Transkriptor寄り記事調。4/6/8 は新規6か月25%オフ＋「こちらの記事から購入すると」
+- tool_tag Context.dev / source_id source-context-dev
+Feed source: source-context-dev — RSSなし。sitemap https://www.context.dev/sitemap.xml の /blog/*（カテゴリ・ページ番号除外）
 
 Transkriptor sponsored (active, Impact https://textintelfze.pxf.io/GbJ5N9) — official assets only, unmodified.
 - transkriptor-symbol.png — https://transkriptor.com/favicon-96x96.png (official favicon)

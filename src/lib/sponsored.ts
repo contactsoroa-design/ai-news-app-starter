@@ -209,12 +209,15 @@ export function filterSponsoredForContext(
 export function listSponsoredThenArticles(
   articles: Article[],
   sponsored: SponsoredItem[],
-  options?: { locale?: AppLocale }
+  options?: { locale?: AppLocale; shuffleSeed?: number }
 ): FeedCardItem[] {
   const locale = options?.locale ?? 'ja';
   if (sponsored.length === 0) return articles;
 
-  const ads: FeedCardItem[] = sponsored.map((s, i) => {
+  const ordered = alternateSponsoredByAdvertiser(sponsored, {
+    shuffleSeed: options?.shuffleSeed,
+  });
+  const ads: FeedCardItem[] = ordered.map((s, i) => {
     const base = localizeSponsoredItem(s, locale);
     return {
       ...base,
@@ -305,12 +308,42 @@ export function findNearestSponsoredIndex(
   return -1;
 }
 
+/** 決定的シャッフル（同じ seed なら同じ順。スワイプ中の再計算でもぶれない） */
+function shuffleWithSeed<T>(items: readonly T[], seed: number): T[] {
+  const out = [...items];
+  let s = seed >>> 0;
+  if (s === 0) s = 1;
+  const next = () => {
+    // LCG
+    s = (Math.imul(s, 1664525) + 1013904223) >>> 0;
+    return s / 0x100000000;
+  };
+  for (let i = out.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(next() * (i + 1));
+    const tmp = out[i];
+    out[i] = out[j];
+    out[j] = tmp;
+  }
+  return out;
+}
+
+function hashString(input: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < input.length; i += 1) {
+    h ^= input.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
 /**
  * 複数広告主がいるとき、広告主単位で交互に並べる（A→B→A→B…）。
- * おすすめフィードで ElevenLabs / Synthesia / Firecrawl / Transkriptor が固まるのを防ぐ。
+ * shuffleSeed あり: 広告主順＋各広告主内の文言パターンを更新単位でシャッフル。
+ * おすすめフィードで同一広告主が固まるのを防ぎつつ、毎回同じ並びに固定されないようにする。
  */
 export function alternateSponsoredByAdvertiser(
-  sponsored: SponsoredItem[]
+  sponsored: SponsoredItem[],
+  options?: { shuffleSeed?: number }
 ): SponsoredItem[] {
   if (sponsored.length <= 1) return sponsored;
   const queues = new Map<string, SponsoredItem[]>();
@@ -323,14 +356,30 @@ export function alternateSponsoredByAdvertiser(
     }
     queues.get(key)!.push(item);
   }
-  if (order.length <= 1) return sponsored;
+
+  const seed = options?.shuffleSeed;
+  if (typeof seed === 'number' && Number.isFinite(seed)) {
+    for (const key of order) {
+      const q = queues.get(key)!;
+      queues.set(key, shuffleWithSeed(q, seed ^ hashString(key)));
+    }
+  }
+
+  const advertiserOrder =
+    typeof seed === 'number' && Number.isFinite(seed)
+      ? shuffleWithSeed(order, seed ^ 0x9e3779b9)
+      : order;
+
+  if (advertiserOrder.length <= 1) {
+    return queues.get(advertiserOrder[0]!) ?? sponsored;
+  }
 
   const out: SponsoredItem[] = [];
-  const pointers = new Map(order.map((k) => [k, 0]));
+  const pointers = new Map(advertiserOrder.map((k) => [k, 0]));
   let remaining = sponsored.length;
   while (remaining > 0) {
     let progressed = false;
-    for (const key of order) {
+    for (const key of advertiserOrder) {
       const q = queues.get(key)!;
       const i = pointers.get(key)!;
       if (i < q.length) {
@@ -357,6 +406,8 @@ export function interleaveSponsoredCards(
     everyN?: number;
     minArticlesBeforeFirst?: number;
     locale?: AppLocale;
+    /** フィード更新ごとに変える。同じ値なら差し込み順は安定 */
+    shuffleSeed?: number;
   }
 ): FeedCardItem[] {
   const everyN = Math.max(1, options?.everyN ?? limits.sponsoredEveryN);
@@ -375,9 +426,9 @@ export function interleaveSponsoredCards(
     return articles;
   }
 
-  const pool = alternateSponsoredByAdvertiser(sponsored).map((s) =>
-    localizeSponsoredItem(s, locale)
-  );
+  const pool = alternateSponsoredByAdvertiser(sponsored, {
+    shuffleSeed: options?.shuffleSeed,
+  }).map((s) => localizeSponsoredItem(s, locale));
 
   const out: FeedCardItem[] = [];
   let sponsorIdx = 0;

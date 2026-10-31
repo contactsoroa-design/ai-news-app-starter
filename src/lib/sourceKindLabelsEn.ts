@@ -3,6 +3,8 @@ export const sourceKindLabelsEn: Record<string, string> = {
   '公式ブログ・新モデル発表': 'Official blog & model launches',
   'API・開発者向けリリースノート・料金改定':
     'API / developer release notes & pricing',
+  'OpenAI API 公式Changelog（モデル・エンドポイント・料金更新）':
+    'OpenAI API official changelog (models, endpoints, pricing)',
   'Claude公式アナウンス・研究発表': 'Claude official announcements & research',
   'Claude / Claude Code・MCP 機能更新ログ':
     'Claude / Claude Code & MCP changelog',
@@ -40,6 +42,8 @@ export const sourceKindLabelsEn: Record<string, string> = {
     'Windsurf / Cascade agentic IDE updates',
   'ブラウザ完結フルスタックAI生成 Bolt.new 更新':
     'Bolt.new in-browser full-stack AI updates',
+  'ブラウザ完結フルスタックAI生成 Bolt.new 公式ブログ・製品更新':
+    'Bolt.new official blog & product updates',
   '個人開発で人気のAIアプリビルダー Lovable 新機能':
     'Lovable AI app builder features',
   '自律型AIエンジニア Devin アップデート・料金':
@@ -53,6 +57,8 @@ export const sourceKindLabelsEn: Record<string, string> = {
     'Affordable edge AI, Workers, R2 & D1 features',
   'OSSのAIワークフロー・エージェント構築 Dify':
     'Dify open-source AI workflows & agents',
+  'OSSのAIワークフロー・エージェント構築 Dify（公式ブログ＋GitHub Releases）':
+    'Dify official blog & GitHub releases',
   'セルフホスト可能なAI自動化・マーケ自動化連携':
     'Self-hosted AI automation & marketing ops',
   'Mac/PCで動かすローカルLLM・APIコストゼロ運用':

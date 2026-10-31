@@ -1,18 +1,32 @@
 import type { AppLocale, Article, LocalizedArticleText } from './types';
 
-function hasJapaneseScript(text: string): boolean {
-  return /[\u3040-\u309f\u30a0-\u30ff\u4e00-\u9faf]/.test(text);
+/** ひらがな／カタカナ（漢字だけでは中国語と区別できない） */
+function hasJapaneseKana(text: string): boolean {
+  return /[\u3040-\u30ff]/.test(text);
 }
 
 function hasLatinLetters(text: string): boolean {
   return /[A-Za-z]/.test(text);
 }
 
+/**
+ * 日本語欄に中国語本文が入っていないか。
+ * 漢字が多くかな比率が極端に低いとき true。
+ */
+export function looksLikeChineseNotJapanese(text: string): boolean {
+  const han = (text.match(/[\u4e00-\u9fff]/g) || []).length;
+  const kana = (text.match(/[\u3040-\u30ff]/g) || []).length;
+  if (han < 12) return false;
+  return kana / (han + kana) < 0.12;
+}
+
 /** 表示テキストが目標言語として妥当か */
 export function looksLikeLocale(text: string, targetLocale: AppLocale): boolean {
   if (!text) return false;
-  if (targetLocale === 'ja') return hasJapaneseScript(text);
-  return hasLatinLetters(text) && !hasJapaneseScript(text);
+  if (targetLocale === 'ja') {
+    return hasJapaneseKana(text) && !looksLikeChineseNotJapanese(text);
+  }
+  return hasLatinLetters(text) && !hasJapaneseKana(text);
 }
 
 export function isAlreadyInLocale(text: string, targetLocale: AppLocale): boolean {
@@ -26,7 +40,7 @@ export function getCanonicalJapaneseText(article: Article): LocalizedArticleText
   if (
     stored?.title &&
     stored?.summary &&
-    hasJapaneseScript(`${stored.title}${stored.summary}`)
+    looksLikeLocale(`${stored.title}${stored.summary}`, 'ja')
   ) {
     return stored;
   }

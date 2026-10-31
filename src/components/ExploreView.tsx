@@ -1,4 +1,13 @@
-import React, { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, {
+  forwardRef,
+  memo,
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import {
   FlatList,
   Linking,
@@ -6,6 +15,7 @@ import {
   StyleSheet,
   Text,
   TextInput,
+  useWindowDimensions,
   View,
   type LayoutChangeEvent,
   type ViewToken,
@@ -19,12 +29,17 @@ import {
   getVerifiedArticleTool,
 } from '../lib/feed';
 import {
+  prefetchOgAroundIndex,
+  prefetchOgForArticles,
+} from '../lib/imagePrefetch';
+import {
   filterSponsoredForContext,
   findNearestSponsoredIndex,
   interleaveSponsoredCards,
   isSponsoredItem,
   pickRelatedSponsored,
 } from '../lib/sponsored';
+import { resolveSponsoredLocalIcon } from '../lib/sponsorIcons';
 import type {
   AppLocale,
   Article,
@@ -45,27 +60,27 @@ import { EmptyState } from './EmptyState';
 import { NewsCard } from './NewsCard';
 import { SponsoredCard } from './SponsoredCard';
 
-const RELATED_SPONSOR_LOCAL_ICON: Record<
-  string,
-  ReturnType<typeof require>
-> = {
-  ElevenLabs: require('../../assets/sponsors/elevenlabs-symbol.png'),
-  Firecrawl: require('../../assets/sponsors/firecrawl-symbol.png'),
-  Transkriptor: require('../../assets/sponsors/transkriptor-symbol.png'),
-};
-
 type ExploreViewProps = {
   articles: Article[];
   savedIds: string[];
   showOriginalButton?: boolean;
   sponsoredItems?: SponsoredItem[];
+  /** ホームと同じ更新単位のシード（探索でも差し込み順を同期） */
+  sponsoredShuffleKey?: number;
   prefsTools?: UserPrefs['tools'];
   enabledSourceIds?: ReadonlySet<string>;
+  /** 下タブで探索が表示中のときだけ強めに画像先読みする */
+  isActive?: boolean;
   onToggleSave: (articleId: string) => void;
   onHideArticle: (articleId: string) => void;
   onOpenSaved: () => void;
   onPressSource?: (article: Article) => void;
   locale?: AppLocale;
+};
+
+/** 親（下タブの再タップ）からグリッド先頭へ戻す */
+export type ExploreViewHandle = {
+  scrollToTop: () => void;
 };
 
 type ExploreGridCellProps = {
@@ -141,8 +156,7 @@ const ExploreGridCell = memo(function ExploreGridCell({
                 style={styles.thumbImage}
                 contentFit="cover"
                 cachePolicy="memory-disk"
-                // ホームの大きなカードより優先度を下げ、スワイプ体感を守る（画質は同じ）
-                priority="low"
+                priority="high"
                 transition={0}
                 onError={() => setImgFailed(true)}
               />
@@ -233,27 +247,56 @@ const ExploreGridCell = memo(function ExploreGridCell({
   );
 });
 
-export function ExploreView({
-  articles,
-  savedIds,
-  showOriginalButton = true,
-  sponsoredItems = [],
-  prefsTools = [],
-  enabledSourceIds,
-  onToggleSave,
-  onHideArticle,
-  onOpenSaved,
-  onPressSource,
-  locale = 'ja',
-}: ExploreViewProps) {
+export const ExploreView = forwardRef<ExploreViewHandle, ExploreViewProps>(
+  function ExploreView(
+    {
+      articles,
+      savedIds,
+      showOriginalButton = true,
+      sponsoredItems = [],
+      sponsoredShuffleKey = 1,
+      prefsTools = [],
+      enabledSourceIds,
+      isActive = true,
+      onToggleSave,
+      onHideArticle,
+      onOpenSaved,
+      onPressSource,
+      locale = 'ja',
+    },
+    ref
+  ) {
   const t = getCopy(locale);
+  const windowDims = useWindowDimensions();
   const [query, setQuery] = useState('');
   const [selectedArticleId, setSelectedArticleId] = useState<string | null>(
     null
   );
-  const [feedHeight, setFeedHeight] = useState(0);
+  /** ルート計測前でもカード FlatList を出せるよう、画面高さから仮置きする */
+  const [feedHeight, setFeedHeight] = useState(() =>
+    Math.max(windowDims.height - size.tabBarHeight, 500)
+  );
   const [currentIndex, setCurrentIndex] = useState(0);
   const cardListRef = useRef<FlatList<FeedCardItem>>(null);
+  const gridListRef = useRef<FlatList<Article>>(null);
+
+  useImperativeHandle(
+    ref,
+    () => ({
+      scrollToTop: () => {
+        // カード閲覧中なら一覧へ戻し、グリッドを先頭へ
+        setSelectedArticleId(null);
+        setCurrentIndex(0);
+        requestAnimationFrame(() => {
+          gridListRef.current?.scrollToOffset({
+            offset: 0,
+            animated: true,
+          });
+        });
+      },
+    }),
+    []
+  );
 
   const indexedArticles = useMemo(
     () =>
@@ -294,6 +337,7 @@ export function ExploreView({
       locale,
       everyN: limits.sponsoredEveryN,
       minArticlesBeforeFirst: limits.sponsoredMinArticlesBeforeFirst,
+      shuffleSeed: sponsoredShuffleKey,
     });
   }, [
     filteredArticles,
@@ -301,6 +345,7 @@ export function ExploreView({
     prefsTools,
     enabledSourceIds,
     locale,
+    sponsoredShuffleKey,
   ]);
 
   const selectedIndex = selectedArticleId
@@ -317,6 +362,12 @@ export function ExploreView({
     }
   }, [selectedArticleId, selectedIndex]);
 
+  // 探索タブ表示中だけ先頭付近をまとめて先読み（ホームの帯域を奪わない）
+  useEffect(() => {
+    if (!isActive || filteredArticles.length === 0) return;
+    prefetchOgForArticles(filteredArticles, limits.imagePrefetchExploreVisible);
+  }, [filteredArticles, isActive]);
+
   const handleSelect = useCallback(
     (articleId: string) => {
       const idx = exploreFeedCards.findIndex(
@@ -325,6 +376,7 @@ export function ExploreView({
       if (idx < 0) return;
       setSelectedArticleId(articleId);
       setCurrentIndex(idx);
+      prefetchOgAroundIndex(exploreFeedCards, idx);
     },
     [exploreFeedCards]
   );
@@ -345,6 +397,7 @@ export function ExploreView({
       if (viewableItems.length > 0 && viewableItems[0].index != null) {
         const idx = viewableItems[0].index;
         setCurrentIndex(idx);
+        prefetchOgAroundIndex(exploreFeedCards, idx);
         const item = exploreFeedCards[idx];
         if (item && !isSponsoredItem(item)) {
           setSelectedArticleId(item.id);
@@ -353,6 +406,34 @@ export function ExploreView({
     },
     [exploreFeedCards]
   );
+
+  const onGridViewableItemsChanged = useCallback(
+    ({ viewableItems }: { viewableItems: ViewToken[] }) => {
+      const seen = new Set<string>();
+      const nearby: Article[] = [];
+      for (const token of viewableItems) {
+        if (token.index == null) continue;
+        // 2列グリッドなので、先の行まで厚めに先読みする
+        const start = Math.max(0, token.index - 4);
+        const end = Math.min(filteredArticles.length, token.index + 16);
+        for (let i = start; i < end; i += 1) {
+          const a = filteredArticles[i];
+          if (!a || seen.has(a.id)) continue;
+          seen.add(a.id);
+          nearby.push(a);
+        }
+      }
+      if (nearby.length > 0) {
+        prefetchOgForArticles(nearby, limits.imagePrefetchExploreVisible);
+      }
+    },
+    [filteredArticles]
+  );
+
+  const gridViewabilityConfig = useRef({
+    itemVisiblePercentThreshold: 20,
+    minimumViewTime: 80,
+  }).current;
 
   const viewabilityConfig = useRef({
     itemVisiblePercentThreshold: 60,
@@ -369,31 +450,131 @@ export function ExploreView({
     [handleSelect, locale]
   );
 
-  if (isShowingCard) {
-    const activeIndex = Math.min(currentIndex, exploreFeedCards.length - 1);
-    const activeItem =
-      exploreFeedCards[activeIndex] ?? exploreFeedCards[selectedIndex];
-    const activeArticle = activeItem && !isSponsoredItem(activeItem)
-      ? activeItem
-      : null;
-    const verifiedTool = activeArticle
-      ? getVerifiedArticleTool(activeArticle)
-      : isSponsoredItem(activeItem)
-        ? activeItem.tool_tag ?? ''
-        : '';
-    const activeTheme = getThemeForArticle(
-      verifiedTool ? [verifiedTool] : []
-    ).colors;
+  const activeIndex = Math.min(currentIndex, Math.max(exploreFeedCards.length - 1, 0));
+  const activeItem =
+    exploreFeedCards[activeIndex] ?? exploreFeedCards[selectedIndex];
+  const activeArticle =
+    activeItem && !isSponsoredItem(activeItem) ? activeItem : null;
+  const verifiedTool = activeArticle
+    ? getVerifiedArticleTool(activeArticle)
+    : isSponsoredItem(activeItem)
+      ? activeItem.tool_tag ?? ''
+      : '';
+  const activeTheme = getThemeForArticle(
+    verifiedTool ? [verifiedTool] : []
+  ).colors;
 
-    return (
+  const cardListHeight = Math.max(feedHeight, 1);
+
+  return (
+    <View style={styles.root} onLayout={handleLayout}>
+      {/*
+        一覧は flex で常にマウントしたまま（スクロール位置・サムネ維持）。
+        フィードは absolute で重ねるだけ。
+      */}
       <View
         style={[
-          styles.cardModeContainer,
-          { backgroundColor: activeTheme.background },
+          styles.container,
+          isShowingCard ? styles.layerHidden : null,
         ]}
-        onLayout={handleLayout}
+        pointerEvents={isShowingCard ? 'none' : 'auto'}
+        accessibilityElementsHidden={isShowingCard}
+        importantForAccessibility={
+          isShowingCard ? 'no-hide-descendants' : 'auto'
+        }
       >
-        {feedHeight > 0 ? (
+        <View style={styles.searchHeaderRow}>
+          <View style={styles.searchBox}>
+            <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
+              <Circle
+                cx={11}
+                cy={11}
+                r={7}
+                stroke={text.muted}
+                strokeWidth={2}
+              />
+              <Path
+                d="M20 20l-4-4"
+                stroke={text.muted}
+                strokeWidth={2}
+                strokeLinecap="round"
+              />
+            </Svg>
+            <TextInput
+              value={query}
+              onChangeText={setQuery}
+              placeholder={t.explore.searchPlaceholder}
+              placeholderTextColor={text.muted}
+              style={styles.searchInput}
+              returnKeyType="search"
+              autoCapitalize="none"
+              autoCorrect={false}
+              accessibilityLabel={t.explore.searchPlaceholder}
+            />
+            {query.length > 0 ? (
+              <Pressable
+                style={styles.clearButton}
+                onPress={() => setQuery('')}
+                accessibilityRole="button"
+                accessibilityLabel={t.explore.clearSearchAria}
+              >
+                <Text style={styles.clearButtonText}>✕</Text>
+              </Pressable>
+            ) : null}
+          </View>
+
+          <Pressable
+            style={styles.savedIconButton}
+            onPress={onOpenSaved}
+            accessibilityRole="button"
+            accessibilityLabel={t.bottomTabs.saved}
+          >
+            <Svg width={26} height={26} viewBox="0 0 24 24" fill="none">
+              <Path
+                d="M6 3h12v18l-6-4-6 4z"
+                stroke={text.primary}
+                strokeWidth={2}
+                strokeLinejoin="round"
+              />
+            </Svg>
+          </Pressable>
+        </View>
+
+        {filteredArticles.length === 0 ? (
+          <EmptyState
+            title={t.explore.emptySearchTitle}
+            description={t.explore.emptySearchDescription}
+            actionLabel={query.length > 0 ? t.chips.all : undefined}
+            onAction={query.length > 0 ? () => setQuery('') : undefined}
+          />
+        ) : (
+          <FlatList
+            ref={gridListRef}
+            key="explore-2col"
+            data={filteredArticles}
+            keyExtractor={(item) => item.id}
+            numColumns={2}
+            renderItem={renderItem}
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={styles.gridContent}
+            initialNumToRender={14}
+            maxToRenderPerBatch={10}
+            windowSize={11}
+            removeClippedSubviews={false}
+            keyboardShouldPersistTaps="handled"
+            onViewableItemsChanged={onGridViewableItemsChanged}
+            viewabilityConfig={gridViewabilityConfig}
+          />
+        )}
+      </View>
+
+      {isShowingCard ? (
+        <View
+          style={[
+            styles.cardModeContainer,
+            { backgroundColor: activeTheme.background },
+          ]}
+        >
           <FlatList
             ref={cardListRef}
             data={exploreFeedCards}
@@ -401,7 +582,7 @@ export function ExploreView({
             pagingEnabled
             showsVerticalScrollIndicator={false}
             decelerationRate="fast"
-            snapToInterval={feedHeight}
+            snapToInterval={cardListHeight}
             snapToAlignment="start"
             initialScrollIndex={
               exploreFeedCards.length > 0
@@ -411,19 +592,19 @@ export function ExploreView({
                   )
                 : 0
             }
-            initialNumToRender={3}
-            maxToRenderPerBatch={3}
-            windowSize={5}
+            initialNumToRender={4}
+            maxToRenderPerBatch={5}
+            windowSize={9}
             onViewableItemsChanged={onViewableItemsChanged}
             viewabilityConfig={viewabilityConfig}
             getItemLayout={(_, index) => ({
-              length: feedHeight,
-              offset: feedHeight * index,
+              length: cardListHeight,
+              offset: cardListHeight * index,
               index,
             })}
             onScrollToIndexFailed={({ index }) => {
               cardListRef.current?.scrollToOffset({
-                offset: feedHeight * index,
+                offset: cardListHeight * index,
                 animated: false,
               });
             }}
@@ -434,7 +615,7 @@ export function ExploreView({
                     item={item}
                     index={index}
                     total={exploreFeedCards.length}
-                    cardHeight={feedHeight}
+                    cardHeight={cardListHeight}
                     hasChipRow={false}
                     locale={locale}
                     onHide={onHideArticle}
@@ -451,9 +632,6 @@ export function ExploreView({
               const siteForIcon = related?.tool_tag
                 ? toolSiteUrls[related.tool_tag]
                 : null;
-              const localIcon = related?.tool_tag
-                ? RELATED_SPONSOR_LOCAL_ICON[related.tool_tag]
-                : undefined;
               const relatedSponsor = related
                 ? {
                     name: related.advertiser_name,
@@ -461,9 +639,9 @@ export function ExploreView({
                       (siteForIcon ? getFaviconUrl(siteForIcon) : null) ||
                       getFaviconUrl(related.url) ||
                       related.image_url,
-                    iconSource: localIcon ?? null,
+                    iconSource: resolveSponsoredLocalIcon(related),
                     onPress: () => {
-                      if (jumpIndex >= 0 && feedHeight > 0) {
+                      if (jumpIndex >= 0 && cardListHeight > 0) {
                         setCurrentIndex(jumpIndex);
                         cardListRef.current?.scrollToIndex({
                           index: jumpIndex,
@@ -480,7 +658,7 @@ export function ExploreView({
                   article={item}
                   index={index}
                   total={exploreFeedCards.length}
-                  cardHeight={feedHeight}
+                  cardHeight={cardListHeight}
                   hasChipRow={false}
                   isSaved={savedIds.includes(item.id)}
                   showOriginalButton={showOriginalButton}
@@ -493,136 +671,58 @@ export function ExploreView({
               );
             }}
           />
-        ) : null}
 
-        <View style={styles.cardTopBar} pointerEvents="box-none">
-          <Pressable
-            style={[
-              styles.backButton,
-              {
-                backgroundColor: activeTheme.panel,
-                borderColor: activeTheme.line,
-              },
-            ]}
-            onPress={handleBackToList}
-            accessibilityRole="button"
-            accessibilityLabel={t.explore.backToListAria}
-          >
-            <Text style={styles.backButtonText}>{t.explore.backToList}</Text>
-          </Pressable>
+          <View style={styles.cardTopBar} pointerEvents="box-none">
+            <Pressable
+              style={[
+                styles.backButton,
+                {
+                  backgroundColor: activeTheme.panel,
+                  borderColor: activeTheme.line,
+                },
+              ]}
+              onPress={handleBackToList}
+              accessibilityRole="button"
+              accessibilityLabel={t.explore.backToListAria}
+            >
+              <Text style={styles.backButtonText}>{t.explore.backToList}</Text>
+            </Pressable>
 
-          <View
-            style={[
-              styles.counterPill,
-              {
-                backgroundColor: activeTheme.panel,
-                borderColor: activeTheme.line,
-              },
-            ]}
-          >
-            <Text style={[styles.counterText, { color: activeTheme.accent }]}>
-              {activeIndex + 1} / {exploreFeedCards.length}
-            </Text>
+            <View
+              style={[
+                styles.counterPill,
+                {
+                  backgroundColor: activeTheme.panel,
+                  borderColor: activeTheme.line,
+                },
+              ]}
+            >
+              <Text style={[styles.counterText, { color: activeTheme.accent }]}>
+                {activeIndex + 1} / {exploreFeedCards.length}
+              </Text>
+            </View>
           </View>
         </View>
-      </View>
-    );
-  }
-
-  return (
-    <View style={styles.container}>
-      <View style={styles.searchHeaderRow}>
-        <View style={styles.searchBox}>
-          <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
-            <Circle
-              cx={11}
-              cy={11}
-              r={7}
-              stroke={text.muted}
-              strokeWidth={2}
-            />
-            <Path
-              d="M20 20l-4-4"
-              stroke={text.muted}
-              strokeWidth={2}
-              strokeLinecap="round"
-            />
-          </Svg>
-          <TextInput
-            value={query}
-            onChangeText={setQuery}
-            placeholder={t.explore.searchPlaceholder}
-            placeholderTextColor={text.muted}
-            style={styles.searchInput}
-            returnKeyType="search"
-            autoCapitalize="none"
-            autoCorrect={false}
-            accessibilityLabel={t.explore.searchPlaceholder}
-          />
-          {query.length > 0 ? (
-            <Pressable
-              style={styles.clearButton}
-              onPress={() => setQuery('')}
-              accessibilityRole="button"
-              accessibilityLabel={t.explore.clearSearchAria}
-            >
-              <Text style={styles.clearButtonText}>✕</Text>
-            </Pressable>
-          ) : null}
-        </View>
-
-        <Pressable
-          style={styles.savedIconButton}
-          onPress={onOpenSaved}
-          accessibilityRole="button"
-          accessibilityLabel={t.bottomTabs.saved}
-        >
-          <Svg width={26} height={26} viewBox="0 0 24 24" fill="none">
-            <Path
-              d="M6 3h12v18l-6-4-6 4z"
-              stroke={text.primary}
-              strokeWidth={2}
-              strokeLinejoin="round"
-            />
-          </Svg>
-        </Pressable>
-      </View>
-
-      {filteredArticles.length === 0 ? (
-        <EmptyState
-          title={t.explore.emptySearchTitle}
-          description={t.explore.emptySearchDescription}
-          actionLabel={query.length > 0 ? t.chips.all : undefined}
-          onAction={query.length > 0 ? () => setQuery('') : undefined}
-        />
-      ) : (
-        <FlatList
-          key="explore-2col"
-          data={filteredArticles}
-          keyExtractor={(item) => item.id}
-          numColumns={2}
-          renderItem={renderItem}
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={styles.gridContent}
-          initialNumToRender={8}
-          maxToRenderPerBatch={6}
-          windowSize={5}
-          removeClippedSubviews
-          keyboardShouldPersistTaps="handled"
-        />
-      )}
+      ) : null}
     </View>
   );
-}
+});
 
 const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+  },
+  layerHidden: {
+    opacity: 0,
+  },
   container: {
     flex: 1,
     backgroundColor: themes.neutral.background,
     paddingTop: size.topTabsTop,
   },
   cardModeContainer: {
-    flex: 1,
+    ...StyleSheet.absoluteFillObject,
+    zIndex: 3,
   },
   cardTopBar: {
     position: 'absolute',

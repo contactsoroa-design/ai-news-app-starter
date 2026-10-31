@@ -879,12 +879,17 @@
                 muted
                 loop
                 playsinline
-                preload="auto"
+                webkit-playsinline
+                preload="metadata"
                 poster="./assets/swipe-demo-ja-poster.jpg"
                 width="390"
                 height="844"
-                src="./assets/swipe-demo-ja.mp4"
-              ></video>
+              >
+                <source
+                  src="./assets/swipe-demo-ja.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </div>
         </div>
@@ -1054,14 +1059,6 @@
           <div data-i18n-en>© Soroa Studio</div>
         </div>
         <div class="footer-links">
-          <a href="./privacy.html">
-            <span data-i18n-ja>プライバシーポリシー</span>
-            <span data-i18n-en>Privacy Policy</span>
-          </a>
-          <a href="./terms.html">
-            <span data-i18n-ja>利用規約</span>
-            <span data-i18n-en>Terms of use</span>
-          </a>
           <a href="./media-kit.html">
             <span data-i18n-ja>メディアキット</span>
             <span data-i18n-en>Media kit</span>
@@ -1070,9 +1067,17 @@
             <span data-i18n-ja>お知らせ登録</span>
             <span data-i18n-en>Notify me</span>
           </a>
+          <a href="./terms.html">
+            <span data-i18n-ja>利用規約</span>
+            <span data-i18n-en>Terms of use</span>
+          </a>
           <a href="/">
             <span data-i18n-ja>Soroa Studio</span>
             <span data-i18n-en>Soroa Studio</span>
+          </a>
+          <a href="./privacy.html">
+            <span data-i18n-ja>プライバシーポリシー</span>
+            <span data-i18n-en>Privacy Policy</span>
           </a>
           <a href="mailto:support@soroa-studio.com">
             <span class="inline">support@soroa-studio.com</span>
@@ -1102,16 +1107,48 @@
 
         function playDemo(lang) {
           if (!video) return;
-          var next = demos[lang];
+          var next = demos[lang] || demos.ja;
           var changed = video.getAttribute("data-lang") !== lang;
           if (changed) {
             video.setAttribute("data-lang", lang);
             video.setAttribute("poster", next.poster);
+            // <source> と src の両方を揃え、古いキャッシュ経路でも再生できるようにする
+            var sourceEl = video.querySelector("source");
+            if (sourceEl) sourceEl.setAttribute("src", next.src);
             video.src = next.src;
-            video.load();
+            try {
+              video.load();
+            } catch (e) {}
           }
+          video.muted = true;
+          video.defaultMuted = true;
+          video.setAttribute("muted", "");
+          video.setAttribute("playsinline", "");
+          video.setAttribute("webkit-playsinline", "");
           var play = video.play();
-          if (play && play.catch) play.catch(function () {});
+          if (play && play.catch) {
+            play.catch(function () {
+              // 自動再生が弾かれてもポスターは残る。可視時に再試行
+            });
+          }
+        }
+
+        if (video && "IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  playDemo(root.lang === "en" ? "en" : "ja");
+                } else if (video) {
+                  try {
+                    video.pause();
+                  } catch (e) {}
+                }
+              });
+            },
+            { threshold: 0.25 }
+          );
+          io.observe(video);
         }
 
         function setLang(lang) {

@@ -461,6 +461,14 @@ export const limits = {
    * OGP無制限蓄積を防ぎつつ、直近表示分は残してスワイプ／探索の体感を維持する。
    */
   imageDiskCacheMaxBytes: 100 * 1024 * 1024,
+  /** 起動・フィード取得直後に先頭から先読みする OGP 枚数（画質はそのまま） */
+  imagePrefetchBootCount: 8,
+  /** 表示位置より手前に何枚分さかのぼって先読みするか */
+  imagePrefetchBehind: 1,
+  /** 表示位置から先に何枚分先読みするか（現在カード含む） */
+  imagePrefetchAhead: 8,
+  /** 探索グリッドで可視・先頭付近に先読みする OGP 枚数（2列なので多め） */
+  imagePrefetchExploreVisible: 28,
 } as const;
 
 /** 本番ビルドで EXPO_PUBLIC_FEED_URL が空でも確実にリモート取得する既定（raw優先。jsDelivrは古い@mainを長くキャッシュする） */
