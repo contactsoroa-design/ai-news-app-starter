@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793490402100-e2muz",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.npr.org/2026/10/31/nx-s1-5963520/ai-writing-detectors-pangram",
+    "published_at": "2026-10-31T23:37:51.000Z",
+    "og_image_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5898x3318+0+303/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F35%2F9a%2F2f31b6a24aeb969541bdd8961363%2Fgettyimages-2264559974.jpg",
+    "title_ja": "AI文章検知ツールの「誤判定」が招く混乱と限界、米国メディアNPRがその科学的根拠の薄さを検証",
+    "summary_ja": "ChatGPT等のAI生成テキストを判別する「AI検知ツール」が、実際には人間が執筆した文書を誤ってAI判定するケースが相次いでいる。 NPRの調査によれば、これらのアルゴリズムは言語パターンを確率的に予測しているに過ぎず、決定的な証拠にはなり得ないことが明らかになった。 開発者や教育現場がAIツールを導入する際は、その結果を絶対視せず、あくまで参考指標として扱う慎重な姿勢が求められる。",
+    "translations": {
+      "ja": {
+        "title": "AI文章検知ツールの「誤判定」が招く混乱と限界、米国メディアNPRがその科学的根拠の薄さを検証",
+        "summary": "ChatGPT等のAI生成テキストを判別する「AI検知ツール」が、実際には人間が執筆した文書を誤ってAI判定するケースが相次いでいる。 NPRの調査によれば、これらのアルゴリズムは言語パターンを確率的に予測しているに過ぎず、決定的な証拠にはなり得ないことが明らかになった。 開発者や教育現場がAIツールを導入する際は、その結果を絶対視せず、あくまで参考指標として扱う慎重な姿勢が求められる。"
+      },
+      "en": {
+        "title": "NPR investigation reveals why AI detection tools fail and why their false positive rates remain scientifically unreliable",
+        "summary": "AI writing detectors are increasingly flagging human-authored text as machine-generated, causing significant real-world friction for students and writers. An NPR investigation underscores that these tools function on probabilistic linguistic patterns rather than definitive proof of artificial origin, making their outputs fundamentally unreliable. The core issue is that these detectors often misinterpret complex human writing styles as predictable patterns common in LLMs, leading to damaging false positives. For builders integrating or relying on AI verification, the takeaway is clear: these algorithms should never be used as a sole arbiter of truth. Over-reliance on flawed detection mechanisms creates systemic injustice for users, and until detection science significantly matures, developers must prioritize transparency and human oversight in any automated evaluation pipeline."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-10-31T23:46:42.100Z"
+  },
+  {
+    "id": "art-1793490395509-uidub",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/numarn/articles/claude-cleanup-period-days-precedence-handson",
+    "published_at": "2026-10-31T23:44:33.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--doIqeeYv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25AE%25E4%25BC%259A%25E8%25A9%25B1%25E5%25B1%25A5%25E6%25AD%25B4%25E3%2581%258C%25E6%25B6%2588%25E3%2581%2588%25E3%2582%258B%25E6%2597%25A5%25E6%2595%25B0%25E3%2582%25924%25E3%2581%258B%25E6%2589%2580%25E3%2581%25AB%25E5%2588%25A5%25E3%2580%2585%25E3%2581%25AB%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581--settings%2520%25E3%2581%258C%25E5%258B%259D%25E3%2581%25A3%25E3%2581%259F%2528%25E6%2597%25A2%25E5%25AE%259A%25E3%2581%25AF30%25E6%2597%25A5%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AC%25E3%2581%25BE%25E3%2583%25BC%25E3%2582%2593%25E3%2581%25AEZenn%25E8%25A8%2598%25E4%25BA%258B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTG44LWtDRklOak05ZW5oWjhTb2xTdWdEeGhaM3RpemJHZTRVYWxJbEZ6MGtwb3dUTzk9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの会話履歴自動削除設定を検証：優先順位は--settingsが1位、既定は30日",
+    "summary_ja": "Claude Codeはセッションごとに履歴を保存し、一定期間で自動削除する。 この期間設定（cleanupPeriodDays）は4か所に記述可能だが、検証の結果「--settings」フラグが最優先されることが判明した。 本物の設定ファイルを汚さず、偽の履歴ファイルを作成して動作確認を行うのが安全な運用への第一歩となる。 既定値の30日を調整したいエンジニアは、設定ファイルの競合に注意が必要だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの会話履歴自動削除設定を検証：優先順位は--settingsが1位、既定は30日",
+        "summary": "Claude Codeはセッションごとに履歴を保存し、一定期間で自動削除する。 この期間設定（cleanupPeriodDays）は4か所に記述可能だが、検証の結果「--settings」フラグが最優先されることが判明した。 本物の設定ファイルを汚さず、偽の履歴ファイルを作成して動作確認を行うのが安全な運用への第一歩となる。 既定値の30日を調整したいエンジニアは、設定ファイルの競合に注意が必要だ。"
+      },
+      "en": {
+        "title": "Testing Claude Code’s Automatic Conversation Cleanup: How to Configure `cleanupPeriodDays` and Avoid Data Loss",
+        "summary": "Claude Code automatically purges conversation logs based on the `cleanupPeriodDays` setting, which can be defined across four distinct locations. By running controlled experiments with dummy history files—rather than risking actual data in `~/.claude/`—the author determined that `--settings` command-line arguments take precedence over other configuration files. This discovery is critical for developers who want to adjust the default 30-day retention window without accidentally purging valuable terminal context. When managing local AI agent persistence, builders should test cleanup triggers with mock files to understand priority chains. Verifying these configurations manually prevents silent data deletion while ensuring that agent history adheres to specific project retention policies, avoiding unexpected losses during routine local session cleanup cycles."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-10-31T23:46:35.509Z"
+  },
+  {
+    "id": "art-1793490385892-ntpqs",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Sidejob/items/a3874b09491ec82146d4",
+    "published_at": "2026-10-31T23:45:02.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmMDQ5MjEyODEwOWJhMDVlNTliMTA5ZDE2MTMzMjNkNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OTkwYjdmNWE0MWU2OTk3ZDY3ZDNiNmI0YjIwZDcxODI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De6ff48aefdddde06dce7529f66f49f1d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU3JTk0JTlGJUU2JTg4JTkwQUklRTMlODElQUUlRTglOTElOTclRTQlQkQlOUMlRTYlQTglQTklRTUlOTUlOEYlRTklQTElOEMlRTMlODIlOTIlRTUlQUUlOUYlRTUlOEIlOTklRTglODAlODUlRTMlODElQTglRTMlODElOTclRTMlODElQTYlRTYlOTUlQjQlRTclOTAlODYlRTMlODElOTklRTMlODIlOEIlRTIlODAlOTQlRTIlODAlOTQyMDI2JUU1JUI5JUI0JUU2JTk5JTgyJUU3JTgyJUI5JUUzJTgxJUE3JUU3JTlGJUE1JUUzJTgxJUEzJUUzJTgxJUE2JUUzJTgxJThBJUUzJTgxJThGJUUzJTgxJUI5JUUzJTgxJThEMyVFMyU4MSVBNCVFMyU4MSVBRSVFOCVBQiU5NiVFNyU4MiVCOSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWQ5MzY5OGFmNjBmNTBjYTc3ODRkMzNjZDE5ODBmZWIw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBTaWRlam9iJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MThiMWNjMmFmNjk0Mzk4YTgyOTk5NWFmZmVkMWY2MGQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=d66c6a3b4b7a7035e2d42f5a19a38510",
+    "title_ja": "生成AIの著作権問題を実務者視点で整理：2026年現在押さえるべき「学習データ・出力物・利用規約」の3大論点",
+    "summary_ja": "生成AIの著作権を巡る議論は、学習データへの利用、生成物の権利帰属、各サービスの利用規約という3つの軸に集約される。 特に、生成物が既存作品と酷似した場合のリスクや、商用利用における契約上の免責範囲については、単なる法解釈を超えた実務的な判断が求められる。 開発者やクリエイターは、AIの出力をそのまま製品に組み込む前に、各プラットフォームが定める利用規約と最新の法的議論を照らし合わせ、適切なリスク評価を行う必要がある。",
+    "translations": {
+      "ja": {
+        "title": "生成AIの著作権問題を実務者視点で整理：2026年現在押さえるべき「学習データ・出力物・利用規約」の3大論点",
+        "summary": "生成AIの著作権を巡る議論は、学習データへの利用、生成物の権利帰属、各サービスの利用規約という3つの軸に集約される。 特に、生成物が既存作品と酷似した場合のリスクや、商用利用における契約上の免責範囲については、単なる法解釈を超えた実務的な判断が求められる。 開発者やクリエイターは、AIの出力をそのまま製品に組み込む前に、各プラットフォームが定める利用規約と最新の法的議論を照らし合わせ、適切なリスク評価を行う必要がある。"
+      },
+      "en": {
+        "title": "Copyright and Generative AI: 3 Critical Frameworks for Practitioners to Navigate Learning Data, Outputs, and Terms in 2026",
+        "summary": "Copyright discourse regarding generative AI is now consolidated around three distinct pillars: the legality of using data for training, the ownership status of AI-generated content, and the restrictive nature of platform-specific terms of service. For practitioners, the core challenge lies in navigating liability when outputs closely resemble existing protected works and understanding the limits of indemnification clauses within commercial agreements. Developers and creators must move beyond abstract legal debates to conduct practical risk assessments before integrating AI outputs into commercial products. It is essential to reconcile platform usage policies with the current, evolving legal consensus to ensure that both creative autonomy and legal compliance remain intact as you build and ship AI-powered features."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-10-31T23:46:25.892Z"
+  },
+  {
+    "id": "art-1793490379535-i6elk",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hakumaigenki/articles/automation-indie-supabase-2344",
+    "published_at": "2026-10-31T23:21:50.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--usI_qAqs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BD%259C%25E6%25A5%25AD%25E8%25A8%2598%25E9%258C%25B2%25E3%2582%2592%25E6%2589%258B%25E9%25A0%2586%25E6%259B%25B8%25E3%2581%25AB%25E5%25A4%2589%25E3%2581%2588%25E3%2582%258B%25E7%25BD%25AE%25E3%2581%258D%25E5%25A0%25B4%25E6%2589%2580%25E3%2581%25A8%25E5%259E%258B%25E3%2580%2581%25E8%2587%25AA%25E7%25A4%25BE%25E9%2581%258B%25E7%2594%25A8%25E3%2581%258B%25E3%2582%2589%25E6%2595%25B4%25E7%2590%2586%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%2599%25BD%25E7%25B1%25B3%25E5%2585%2583%25E6%25B0%2597%25EF%25BD%259CLLM%2520Oops%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSi0xR3k1Zl84dVEyOEZ0NV96cUY2cU10OWZTbm5EbFFjNWk1OG9odHEwbzVZSkNwZ1I9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "作業記録が「手順書」にならない理由：置き場所ではなく「型」を定義すれば、ナレッジ資産化できる",
+    "summary_ja": "作業記録を手順書へ昇華させるには、書き場所の指定だけでは不十分で「型の定義」が不可欠です。 多くのメモは「何をしたか」だけが記され、「どこで躓き、どう解決したか」という再現可能なプロセスが抜け落ちているため、再利用が困難になります。 トラブルシューティングの内容と作業文脈をセットで記述する構造的なフォーマットを導入することで、個人の作業ログは検索性が高く、他者や将来の自分が参照できる資産価値の高いナレッジへと変わります。",
+    "translations": {
+      "ja": {
+        "title": "作業記録が「手順書」にならない理由：置き場所ではなく「型」を定義すれば、ナレッジ資産化できる",
+        "summary": "作業記録を手順書へ昇華させるには、書き場所の指定だけでは不十分で「型の定義」が不可欠です。 多くのメモは「何をしたか」だけが記され、「どこで躓き、どう解決したか」という再現可能なプロセスが抜け落ちているため、再利用が困難になります。 トラブルシューティングの内容と作業文脈をセットで記述する構造的なフォーマットを導入することで、個人の作業ログは検索性が高く、他者や将来の自分が参照できる資産価値の高いナレッジへと変わります。"
+      },
+      "en": {
+        "title": "Why work logs fail to become SOPs: Moving beyond documentation storage to defining a repeatable 'Template' structure",
+        "summary": "Work logs often fail to evolve into standard operating procedures because builders focus on where to write, rather than enforcing a rigorous template. Most rough notes capture actions taken but omit the critical ‘stumbling block and resolution’ context required for reproducibility. When you fail to document the intersection of specific error patterns and contextual work flow, your logs become unsearchable archives that provide zero value during future troubleshooting. By adopting a structured format that forces documentation of the problem, the specific blockage, and the definitive fix as a single unit, you transform scattered notes into high-leverage knowledge assets. For solo developers, this structured approach is the key to creating an internal knowledge base that actually scales."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-31T23:46:19.535Z"
+  },
+  {
     "id": "art-1793489505910-ncw1p",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
