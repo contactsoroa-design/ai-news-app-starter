@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1793410326910-c49vm",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/gingamitsumitsu/n/ne4886632eb1a",
+    "published_at": "2026-10-31T01:26:47.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330420095/rectangle_large_type_2_faacc24ef5d6540e66115922095c6dba.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "【Codex開発記】テスト件数101件の不一致、AIの推論を疑う前に学ぶべき「独立監査」の重要性",
+    "summary_ja": "AI開発の伝言ゲームで仕様の矛盾を解消する過程で、テストケースの件数が101件合わないという事態が発生。 AIの予測や推論を鵜呑みにせず、あえて別のAIを投入して仕様書を独立監査させることで、隠れた要件の欠落を特定した。 AIの生成物をそのまま実装に繋げるのではなく、検証者としてのAIを並走させる「マルチAI監査」の設計こそが、複雑なシステム構築のバグを最小化する鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "【Codex開発記】テスト件数101件の不一致、AIの推論を疑う前に学ぶべき「独立監査」の重要性",
+        "summary": "AI開発の伝言ゲームで仕様の矛盾を解消する過程で、テストケースの件数が101件合わないという事態が発生。 AIの予測や推論を鵜呑みにせず、あえて別のAIを投入して仕様書を独立監査させることで、隠れた要件の欠落を特定した。 AIの生成物をそのまま実装に繋げるのではなく、検証者としてのAIを並走させる「マルチAI監査」の設計こそが、複雑なシステム構築のバグを最小化する鍵となる。"
+      },
+      "en": {
+        "title": "Codex Dev Logs: Debugging a 101-test case mismatch and why you need independent AI auditing",
+        "summary": "During a project to standardize specifications for AI development, a discrepancy of 101 test cases surfaced, revealing significant gaps in logic. Instead of blindly trusting the initial AI model's deductions, the author implemented a parallel workflow where a separate, independent AI agent audited the documentation. This revealed that the source of the error wasn't a calculation bug, but missing requirement definitions that the primary model had hallucinated around. The core lesson is that treating LLMs as infallible engineers is a mistake. Builders should integrate a second, distinct AI agent purely for auditing and verification purposes, ensuring that complex system requirements are validated by multiple perspectives before moving to implementation. This multi-AI verification pattern is essential for stabilizing large-scale AI projects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-10-31T01:32:06.910Z"
+  },
+  {
+    "id": "art-1793410318576-x32qs",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/aakan/items/a19315bc691b6257e083",
+    "published_at": "2026-10-31T01:27:31.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQwNDEyMSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc3ODA3MjY3ND9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTI1NGNkNzA1NjExMDNjZGE4MjVlMGM5MmM0MTM4MjA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D4ac52d34f7a0cc5509164774d8b64542?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTk2QUklMjBOZXdzJTIwJUUzJTgxJUJFJUUzJTgxJUE4JUUzJTgyJTgxJUUzJTgwJTk3JUU3JTk0JTlGJUU2JTg4JTkwQUklMjAlRTMlODMlOEIlRTMlODMlQTUlRTMlODMlQkMlRTMlODIlQjklRTMlODMlQUMlRTMlODMlOUQlRTMlODMlQkMlRTMlODMlODglMjAlRTIlODAlOTQlMjAyMDI2LTEwLTMxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9Njg0NmIwMGEyNTUyZGVhZmMwNDA3NGFhMmM2YjFiMDU&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhYWthbiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTQyYjM3ZjBmMTEwODUwNDFhNjRmYTlkODhlNGU3NmQx&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=0d0bf822f18979b2d258c777c487733d",
+    "title_ja": "2026年10月末AI動向まとめ：LambdaがExpressを直接実行可能に、API Gatewayが不要になるサーバーレス新時代の幕開け",
+    "summary_ja": "AWS LambdaがExpress.jsアプリケーションを直接実行できるようになり、API Gatewayを介さないサーバーレス構成が可能となった。 これにより、インフラ管理の手間とレイテンシーが劇的に削減される。 個人開発者にとって、バックエンド開発はより軽量かつ高速化し、複雑な設定なしでスケーラブルなAPIを即座にデプロイできる時代が到来している。",
+    "translations": {
+      "ja": {
+        "title": "2026年10月末AI動向まとめ：LambdaがExpressを直接実行可能に、API Gatewayが不要になるサーバーレス新時代の幕開け",
+        "summary": "AWS LambdaがExpress.jsアプリケーションを直接実行できるようになり、API Gatewayを介さないサーバーレス構成が可能となった。 これにより、インフラ管理の手間とレイテンシーが劇的に削減される。 個人開発者にとって、バックエンド開発はより軽量かつ高速化し、複雑な設定なしでスケーラブルなAPIを即座にデプロイできる時代が到来している。"
+      },
+      "en": {
+        "title": "Lambda now executes Express.js directly without API Gateway, marking a major shift for serverless backend architecture",
+        "summary": "AWS Lambda has introduced native support for running Express.js applications directly, effectively removing the need for an API Gateway in many serverless architectures. This architectural change significantly reduces both infrastructure complexity and request latency by streamlining the deployment path. For solo builders and developers, this means backend development is becoming lighter and faster, allowing for immediate, scalable deployment without wrestling with intricate configuration layers. By cutting out the middleware, teams can focus entirely on application logic rather than routing infrastructure. This update represents a major shift toward leaner, high-performance serverless patterns, where the barrier to launching production-grade APIs is lower than ever before, ensuring that small teams can operate with the efficiency of larger engineering organizations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-31T01:31:58.576Z"
+  },
+  {
+    "id": "art-1793410312325-8jo64",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/tyuya/articles/haiku55-line-bot-cache-cost",
+    "published_at": "2026-10-31T01:28:37.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--HdtUW1DA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Haiku%25204.5%25E2%2586%25925.5%25E3%2581%25A7%25E8%25B2%25BB%25E7%2594%25A8%25E3%2581%25AF1%252F41%25E3%2580%2582%25E3%2581%259F%25E3%2581%25A0%25E3%2581%2597%25E5%2595%258F%25E3%2581%2584%25E5%2590%2588%25E3%2582%258F%25E3%2581%259B%25E3%2581%258C%25E3%2581%25BE%25E3%2581%25B0%25E3%2582%2589%25E3%2581%25AA%25E3%2582%25891%252F8%25E2%2580%2594%25E2%2580%2594%25E5%25B7%25AE%25E3%2581%25AF%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2581%25AE%25E6%259B%25B8%25E3%2581%258D%25E8%25BE%25BC%25E3%2581%25BF%25E4%25BB%25A3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yuya0620%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg4MGEzZTQwNTQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Haiku 4.5から5.5へ移行でコスト最大41分の1に削減。API利用頻度とキャッシュ書き込み料金の仕組みを理解して最適化する実例と洞察",
+    "summary_ja": "Claude Haiku 4.5から5.5への移行により、公式LINEボットの運用コストが最大41分の1に削減された。 ただし問い合わせがまばらな場合の効果は8分の1に留まる。 この差はキャッシュ書き込みコストの発生有無に起因する。 APIの公式単価だけでは見えない実際の運用コストを計算するには、キャッシュヒット率と書き込みコストを考慮したプロファイリングが不可欠だ。 実装をAIに任せつつも、こうした挙動を把握することで真の運用効率化が可能になる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Haiku 4.5から5.5へ移行でコスト最大41分の1に削減。API利用頻度とキャッシュ書き込み料金の仕組みを理解して最適化する実例と洞察",
+        "summary": "Claude Haiku 4.5から5.5への移行により、公式LINEボットの運用コストが最大41分の1に削減された。 ただし問い合わせがまばらな場合の効果は8分の1に留まる。 この差はキャッシュ書き込みコストの発生有無に起因する。 APIの公式単価だけでは見えない実際の運用コストを計算するには、キャッシュヒット率と書き込みコストを考慮したプロファイリングが不可欠だ。 実装をAIに任せつつも、こうした挙動を把握することで真の運用効率化が可能になる。"
+      },
+      "en": {
+        "title": "Migrating Claude Haiku 4.5 to 5.5 Cuts Bot API Costs by 41x; Understanding Cache Write Dynamics is Essential for Optimization",
+        "summary": "Transitioning a LINE bot backend from Claude Haiku 4.5 to 5.5 reduced API expenses by 41x during high-traffic periods, though efficiency gains stabilized at 8x during sporadic usage. The disparity highlights a critical nuance: cache write costs frequently outweigh the raw model pricing advertised on vendor scorecards. While relying on AI agents like Claude Code to handle the implementation is highly efficient, developers must still perform granular cost profiling to distinguish between raw token prices and the hidden overhead of cache utilization. The practical lesson for builders is that performance gains are not just about model selection, but about analyzing cache hit strategies versus write penalties to truly minimize operational overhead in serverless environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-31T01:31:52.325Z"
+  },
+  {
+    "id": "art-1793410301895-3vyfv",
+    "source_id": "source-claude-release",
+    "source_name": "Claude Code Changelog",
+    "url": "https://code.claude.com/docs/en/changelog#2-1-316",
+    "published_at": "2026-10-31T01:06:03.000Z",
+    "og_image_url": "https://claude-code.mintlify.app/_mintlify/api/og/v2?division=Getting+started&title=Claude+Code+changelog&description=Release+notes+for+Claude+Code%2C+including+new+features%2C+improvements%2C+and+bug+fixes+by+version.&theme=8d9812df31da293aba4e8103&signature=b530ac886c82b93ae600770b632e93cd5e65b1895873efc12a624a244deee76b",
+    "title_ja": "Claude Code 2.1.316が公開、チーム共有予算や「レイヤード」ポリシー管理機能を追加し大規模運用の柔軟性を強化（サブエージェント設定も拡充）",
+    "summary_ja": "Claude Code 2.1.316では、チーム全体で予算を共有できる「pooled group budgets」や、複数のポリシーを階層的に適用する「layered」モードが導入された。 さらに、サブエージェントの処理負荷設定やプライベートCA環境向けの証明書保持オプションも追加されている。 組織単位でのガバナンスと細かい挙動制御が可能になったことで、単なる個人利用からチーム開発への統合がより現実的になっている。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code 2.1.316が公開、チーム共有予算や「レイヤード」ポリシー管理機能を追加し大規模運用の柔軟性を強化（サブエージェント設定も拡充）",
+        "summary": "Claude Code 2.1.316では、チーム全体で予算を共有できる「pooled group budgets」や、複数のポリシーを階層的に適用する「layered」モードが導入された。 さらに、サブエージェントの処理負荷設定やプライベートCA環境向けの証明書保持オプションも追加されている。 組織単位でのガバナンスと細かい挙動制御が可能になったことで、単なる個人利用からチーム開発への統合がより現実的になっている。"
+      },
+      "en": {
+        "title": "Claude Code 2.1.316 Debuts Pooled Team Budgets, Layered Policy Management, and Fine-Grained Subagent Controls to Support Large-Scale Deployment",
+        "summary": "The Claude Code 2.1.316 release introduces significant infrastructure upgrades for enterprise deployment, headlined by pooled group budgets that let teams share spending limits on top of individual caps. Developers now have more granular control over runtime behavior, including a new layered policy mode that merges multiple matches instead of taking the first, and a dedicated environment variable to set default subagent effort levels. It also adds a loop-retention option for system cross-certificates in private CA environments. For engineering leads, these features transform Claude Code from a personal productivity tool into a governance-ready platform where team-wide cost control and complex internal policy integration are standard rather than edge cases."
+      }
+    },
+    "tool_tags": [
+      "Claude"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-31T01:31:41.895Z"
+  },
+  {
     "id": "art-1793409439251-uanue",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
