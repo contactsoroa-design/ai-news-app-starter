@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1793455326390-plgr8",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sunsun_eng/articles/japanese-string-manipulation-2023",
+    "published_at": "2026-10-31T11:37:11.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--edRu0TC_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:50%25E9%259F%25B3%25E3%2582%2592%25E7%25B9%258B%25E3%2581%2584%25E3%2581%25A0%25E7%25B5%2590%25E6%259E%259C%25EF%25BC%2588%25E3%2580%2580%25C2%25B4%25E2%2588%2580%25EF%25BD%2580%25EF%25BC%2589%25EF%25BC%2581%25EF%25BC%259F%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E5%2587%25A6%25E7%2590%2586%25E3%2581%258B%25E3%2582%2589%25E5%25AD%25A6%25E3%2581%25B6%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2599%25E3%2582%2593%25E3%2581%2599%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTF80ZkxYZ0xXTVlnNF9DSE1BTGQ0akRZdFB2am9UZjBTOVFldkdwak9uMmJlZDBJcHk9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "日本語処理の落とし穴：50音順を繋げて見えてきたプログラムでの文字列操作と文字エンコーディングの複雑な深淵",
+    "summary_ja": "日本語の50音をプログラムで単純に結合・処理する際、ひらがな、カタカナ、漢字が混在する日本語特有の表記ゆれや文字コードの問題がエンジニアの前に立ち塞がる。 この記事では、単純な文字列操作すら困難にする日本語の構造的な複雑さを解説し、文字コードの正規化やロケール設定など、実務で必須となる日本語処理の基礎的かつ重要な視点を提供する。 開発者は、ライブラリ任せにせず文字の内部表現を理解することが、バグを防ぐ唯一の手段である。",
+    "translations": {
+      "ja": {
+        "title": "日本語処理の落とし穴：50音順を繋げて見えてきたプログラムでの文字列操作と文字エンコーディングの複雑な深淵",
+        "summary": "日本語の50音をプログラムで単純に結合・処理する際、ひらがな、カタカナ、漢字が混在する日本語特有の表記ゆれや文字コードの問題がエンジニアの前に立ち塞がる。 この記事では、単純な文字列操作すら困難にする日本語の構造的な複雑さを解説し、文字コードの正規化やロケール設定など、実務で必須となる日本語処理の基礎的かつ重要な視点を提供する。 開発者は、ライブラリ任せにせず文字の内部表現を理解することが、バグを防ぐ唯一の手段である。"
+      },
+      "en": {
+        "title": "The Hidden Pitfalls of Japanese String Processing: Lessons Learned from Concatenating the 50-On Syllabary in Code",
+        "summary": "Programmatically concatenating the Japanese 50-on syllabary exposes the deep, often invisible complexities of Japanese text processing. Developers frequently encounter stubborn issues ranging from character encoding mismatches to the diverse stylistic variations between Hiragana, Katakana, and Kanji. This article unpacks why naive string operations fail when handling Japanese and provides essential guidance on managing text normalization, locale settings, and Unicode intricacies that are critical for robust software. The core takeaway for builders is that relying blindly on language libraries is a recipe for silent bugs; understanding the internal binary representation of characters is the only way to ensure reliable text handling in production environments where Japanese inputs are expected."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-31T14:02:06.390Z"
+  },
+  {
+    "id": "art-1793455309624-zuewm",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shinsei99/n/n0b7adf9c00c1",
+    "published_at": "2026-10-31T14:00:48.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/65f91190b263296ca69ea065569b310f36269d7e.png",
+    "title_ja": "賃貸用間取り図作成ツール開発記：部品配置型UIの設計と『図面の再編集』という最大の難所を克服する方法",
+    "summary_ja": "賃貸募集用の間取り図を直感的に作成できる部品配置型ツールを個人開発する際、単に図面を「描く」だけでなく、保存されたデータを後から正確に再ロードし編集可能にする仕様設計が最大の障壁となる。 部屋名や扉の位置を後日修正したいというニーズに応えるには、図面を画像として保存するのではなく、配置座標や属性情報を保持したJSON形式でのシリアライズが不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "賃貸用間取り図作成ツール開発記：部品配置型UIの設計と『図面の再編集』という最大の難所を克服する方法",
+        "summary": "賃貸募集用の間取り図を直感的に作成できる部品配置型ツールを個人開発する際、単に図面を「描く」だけでなく、保存されたデータを後から正確に再ロードし編集可能にする仕様設計が最大の障壁となる。 部屋名や扉の位置を後日修正したいというニーズに応えるには、図面を画像として保存するのではなく、配置座標や属性情報を保持したJSON形式でのシリアライズが不可欠だ。"
+      },
+      "en": {
+        "title": "Building a Rental Floor Plan Editor: Tackling the Critical Challenge of State Serialization for Re-editing",
+        "summary": "When building a drag-and-drop tool for creating rental floor plans, the biggest technical hurdle isn't just placing components like doors and rooms on a canvas, but ensuring those drawings can be re-opened for later edits. Simply exporting an image fails when a user needs to update a room name or adjust a window placement; the solution requires serializing the floor plan into JSON format, capturing all object coordinates, attributes, and relationships. Developers must architect their data schema to perfectly reconstruct the original editing state from saved JSON data from day one. For builders creating layout tools, the lesson is clear: treat the underlying data structure and re-hydration logic as the primary feature, not an afterthought to the visual interface."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-31T14:01:49.624Z"
+  },
+  {
+    "id": "art-1793455299755-sa2y2",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+    "published_at": "2026-10-31T13:51:32.000Z",
+    "og_image_url": "https://nolanlawson.com/_astro/frameworks.B14_z7MF_2lv3q1.webp",
+    "title_ja": "JavaScriptフレームワークにおける「AIのコスト」とは？バンドルサイズ増大とランタイム負荷の再考",
+    "summary_ja": "Nolan Lawson氏が、最新のJavaScriptフレームワークが抱える「AI時代のコスト」を鋭く指摘している。 AI統合に伴うツールチェーンの複雑化や依存関係の増大は、Webアプリケーションの初期ロード時間やランタイムのパフォーマンスを著しく低下させている。 開発者は便利さを追求するだけでなく、フレームワークが暗黙のうちに導入するオーバーヘッドを厳密に評価し、真に軽量な設計を選択する判断が求められている。",
+    "translations": {
+      "ja": {
+        "title": "JavaScriptフレームワークにおける「AIのコスト」とは？バンドルサイズ増大とランタイム負荷の再考",
+        "summary": "Nolan Lawson氏が、最新のJavaScriptフレームワークが抱える「AI時代のコスト」を鋭く指摘している。 AI統合に伴うツールチェーンの複雑化や依存関係の増大は、Webアプリケーションの初期ロード時間やランタイムのパフォーマンスを著しく低下させている。 開発者は便利さを追求するだけでなく、フレームワークが暗黙のうちに導入するオーバーヘッドを厳密に評価し、真に軽量な設計を選択する判断が求められている。"
+      },
+      "en": {
+        "title": "Nolan Lawson analyzes the hidden AI cost of modern JavaScript frameworks and their impact on runtime bloat",
+        "summary": "Nolan Lawson investigates the hidden costs of integrating AI tooling into modern JavaScript frameworks, arguing that the push for automated developer convenience is significantly bloating bundle sizes and degrading runtime performance. As developers flock to complex AI-driven scaffolding, they often inherit substantial overhead that delays initial page loads and complicates maintenance. Lawson urges engineers to look past the marketing of 'AI-native' features and rigorously evaluate the underlying dependencies that frameworks silently impose. The core takeaway is that developers must stop treating framework bloat as an inevitable trade-off and instead prioritize lightweight architectural choices, ensuring that AI capabilities do not come at the expense of fundamental web performance or long-term application sustainability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-10-31T14:01:39.755Z"
+  },
+  {
+    "id": "art-1793455283182-v14aj",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/sponge841841/items/34851299b71564ca68d5",
+    "published_at": "2026-10-31T13:56:14.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzNTI4NjU1JTJGZjMxNjllZjQ1YzFmZDk4MmFmZDNhZjVhYjMwODYyNTU3YzYxMjI3MSUyRmxhcmdlLnBuZyUzRjE3Njk1Nzc2MDM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWEyZmEyM2M3Y2UzYjIzMGUzZTQ4YmExNjA2OGQ4ZjY5%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Da81768531f10a06bbf4a803630c98130?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q29kZXglMjBEYXklMjAyNiVFNSVCRSVCOSVFNSVCQSU5NSVFOCVBNyVBMyVFOCVBQSVBQyVFRiVCQyU5QSVFMyU4MyVBMiVFMyU4MyU5MCVFMyU4MiVBNCVFMyU4MyVBQiVFMyU4MSVBRSVFMyU4MiVBMiVFMyU4MiVBQiVFMyU4MiVBNiVFMyU4MyVCMyVFMyU4MyU4OCVFNSU4OCU4NyVFMyU4MiU4QSVFNiU5QiVCRiVFMyU4MSU4OCVFMyU4MSVBOCVFNCVCRiU5RCVFNSVBRCU5OCVFNSU5RSU4QiVFMyU4MyVBQSVFMyU4MiVCQiVFMyU4MyU4MyVFMyU4MyU4OCVFNCVCQSU4OCVFNSU5MSU4QSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTBhMGZlZGFkZWUxMWY3ODBkYTg4ZjdhMWQyZGE1Yjli&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzcG9uZ2U4NDE4NDEmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1lNWRjMDUyODc0OGNmOTA2NTYwNDM3YjYyZWVlYzAzZg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=62d7f008efdaa1adabf5fe98ef527f77",
+    "title_ja": "個人開発アプリのUX改善：Codex Day 26で解説されたモバイル向けアカウント切り替え機能とデータ保持型リセットの実装術",
+    "summary_ja": "個人開発アプリにおいて、ユーザーの離脱を防ぐためのUX改善が重要性を増している。 本記事では、アプリ運用における「アカウント切り替え機能」の導入と、既存データを保持したままアプリの状態を初期化する「リセット機能」の設計手法を解説。 認証周りの複雑な状態管理をスムーズに処理することで、ユーザーが複数アカウントを使い分けやすくなり、アプリの継続率向上が見込める。 開発者は、こうした細かなUI/UXの積み重ねが個人アプリの競争力を左右することを理解すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリのUX改善：Codex Day 26で解説されたモバイル向けアカウント切り替え機能とデータ保持型リセットの実装術",
+        "summary": "個人開発アプリにおいて、ユーザーの離脱を防ぐためのUX改善が重要性を増している。 本記事では、アプリ運用における「アカウント切り替え機能」の導入と、既存データを保持したままアプリの状態を初期化する「リセット機能」の設計手法を解説。 認証周りの複雑な状態管理をスムーズに処理することで、ユーザーが複数アカウントを使い分けやすくなり、アプリの継続率向上が見込める。 開発者は、こうした細かなUI/UXの積み重ねが個人アプリの競争力を左右することを理解すべきだ。"
+      },
+      "en": {
+        "title": "Boosting Indie App UX: Implementing Seamless Account Switching and State-Preserving Resets for Mobile Users",
+        "summary": "As mobile competition intensifies, indie developers must prioritize subtle UX improvements to prevent churn. This deep dive into Codex Day 26 outlines the architecture for implementing robust account-switching flows and data-preserving reset features in mobile apps. By effectively managing complex authentication states, developers can allow users to toggle between profiles without friction while providing a clean slate option that doesn't wipe critical user data. Mastering these interaction patterns is essential for keeping multi-account users engaged and satisfied. For indie builders, these granular UX enhancements often serve as the primary differentiator in crowded markets, directly impacting long-term retention metrics and overall product stickiness far more effectively than adding new, unpolished features to the backlog."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-31T14:01:23.182Z"
+  },
+  {
     "id": "art-1793454408975-per7l",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
