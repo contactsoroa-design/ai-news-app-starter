@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793420305236-31wba",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2610.37809",
+    "published_at": "2026-10-31T04:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "LLMエージェントの推論を監視する「オントロジー型チェッカー」の精度検証：人間が作成した schema と AI 生成の schema を比較",
+    "summary_ja": "ナレッジグラフ上のLLMエージェントにおいて、正解判定の「監視役」としてオントロジー（スキーマ）を用いる手法が普及している。 研究チームは、専門家による厳格な定義、LLMが自動生成した定義、そしてデータからマイニングした定義の3種を比較検証した。 結果、自動生成やデータ由来の簡易なスキーマでも既存の厳格なチェッカーと同等の制御が可能な場合があることが判明。 開発者は、コストの高い手動オントロジー作成に固執せず、タスクの性質に応じて軽量な動的スキーマを監視に活用すべきである。",
+    "translations": {
+      "ja": {
+        "title": "LLMエージェントの推論を監視する「オントロジー型チェッカー」の精度検証：人間が作成した schema と AI 生成の schema を比較",
+        "summary": "ナレッジグラフ上のLLMエージェントにおいて、正解判定の「監視役」としてオントロジー（スキーマ）を用いる手法が普及している。 研究チームは、専門家による厳格な定義、LLMが自動生成した定義、そしてデータからマイニングした定義の3種を比較検証した。 結果、自動生成やデータ由来の簡易なスキーマでも既存の厳格なチェッカーと同等の制御が可能な場合があることが判明。 開発者は、コストの高い手動オントロジー作成に固執せず、タスクの性質に応じて軽量な動的スキーマを監視に活用すべきである。"
+      },
+      "en": {
+        "title": "Can LLM-generated schemas actually check AI agents? A comparative study of curated vs. synthetic ontologies for knowledge graph guardrails",
+        "summary": "As LLM agents increasingly rely on knowledge graphs, developers often employ formal ontologies as guardrails to verify agent accuracy. This paper investigates whether costly, manually curated ontologies actually outperform cheaper alternatives like LLM-generated or data-mined schemas. The authors evaluate these methods across various proprietary and open-weight models, challenging the assumption that only rigorous, human-crafted schemas serve as reliable checkers. The findings reveal that lighter, synthetically derived ontologies often provide sufficient constraints, effectively flagging errors without the massive overhead of manual curation. For builders constructing RAG pipelines or agentic workflows, the lesson is clear: don't over-engineer static knowledge structures if a dynamically generated schema provides comparable guardrail performance and saves significant development time."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "セキュリティ"
+    ],
+    "created_at": "2026-10-31T04:18:25.236Z"
+  },
+  {
+    "id": "art-1793420298624-g1k61",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/joinclass/articles/skills-hooks-mcp-claude-md-20260916220024-25755",
+    "published_at": "2026-10-30T23:00:15.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--eHtWK_fT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Skills%2520%252F%2520Hooks%2520%252F%2520MCP%2520%252F%2520CLAUDE.md%2520%25E3%2581%25AE%25E4%25BD%25BF%25E3%2581%2584%25E5%2588%2586%25E3%2581%2591%2520%25E2%2580%2594%2520%25E5%2588%25A4%25E6%2596%25AD%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2581%25E3%2583%25A3%25E3%2583%25BC%25E3%2583%2588%25E4%25BB%2598%25E3%2581%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JOINCLASS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NhOWUwY2FiYmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの拡張設定：CLAUDE.md、Skills、Hooks、MCPの役割と使い分けを完全攻略する判断フローチャート",
+    "summary_ja": "Claude Codeを用いた開発運用で、設定の置き場に迷う問題を解消するためのガイド。 CLAUDE.md、Skills、Hooks、MCPサーバーの4つの拡張ポイントには明確な発火条件の違いがあり、これらを理解せず混同すると「指示が無視される」「不要な実行で邪魔になる」といった非効率を招く。 本記事では、各機能の適切な適用範囲と選択基準をフローチャート化し、AIエージェントの自律性を最大化する構成管理の手法を解説する。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの拡張設定：CLAUDE.md、Skills、Hooks、MCPの役割と使い分けを完全攻略する判断フローチャート",
+        "summary": "Claude Codeを用いた開発運用で、設定の置き場に迷う問題を解消するためのガイド。 CLAUDE.md、Skills、Hooks、MCPサーバーの4つの拡張ポイントには明確な発火条件の違いがあり、これらを理解せず混同すると「指示が無視される」「不要な実行で邪魔になる」といった非効率を招く。 本記事では、各機能の適切な適用範囲と選択基準をフローチャート化し、AIエージェントの自律性を最大化する構成管理の手法を解説する。"
+      },
+      "en": {
+        "title": "Mastering Claude Code: A Decision Flowchart for CLAUDE.md, Skills, Hooks, and MCP Integrations",
+        "summary": "Operating a solo business primarily through Claude Code inevitably leads to confusion over configuration hierarchy: where should specific instructions live? Misunderstanding the distinct trigger conditions of CLAUDE.md, Skills, Hooks, and MCP servers often results in ignored prompts, redundant execution cycles, or broken agent autonomy. This guide clarifies the specific operational scope of each extension point, providing a practical decision-making flowchart to determine when to implement a dedicated MCP server versus a simple script or system instruction. By mapping these tools against specific workflow requirements, developers can stop wasting time on configuration debugging and build more resilient, context-aware agent loops that consistently follow project-specific constraints without conflicting with the core Claude model behavior."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-10-31T04:18:18.624Z"
+  },
+  {
+    "id": "art-1793420269403-7uf8n",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/mafu_00/n/n88600ac85430",
+    "published_at": "2026-10-31T04:15:02.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330472129/rectangle_large_type_2_bd6492a8953df68b8bf7954a73741a46.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "【競馬AI開発】ファンタジーS2026でAIが「110.5点」の本命馬を提示しながら馬券購入を拒否した理由：外回りコースの計算ロジックにおける致命的エラー",
+    "summary_ja": "ファンタジーS2026において、開発した予想AIが110.5点という高スコアの本命馬を弾き出したにもかかわらず、馬券購入を自動停止した。 事後のログ解析により、コース形態の変則的な外回り処理において、AIが架空の走行距離を算出するバグが含まれていたことが判明。 モデルが理論上の数値を完璧に最適化しても、実世界におけるコースの物理的特性を正しくマッピングできていなければ、AIの判断は容易に無効化されるという教訓を如実に示している。",
+    "translations": {
+      "ja": {
+        "title": "【競馬AI開発】ファンタジーS2026でAIが「110.5点」の本命馬を提示しながら馬券購入を拒否した理由：外回りコースの計算ロジックにおける致命的エラー",
+        "summary": "ファンタジーS2026において、開発した予想AIが110.5点という高スコアの本命馬を弾き出したにもかかわらず、馬券購入を自動停止した。 事後のログ解析により、コース形態の変則的な外回り処理において、AIが架空の走行距離を算出するバグが含まれていたことが判明。 モデルが理論上の数値を完璧に最適化しても、実世界におけるコースの物理的特性を正しくマッピングできていなければ、AIの判断は容易に無効化されるという教訓を如実に示している。"
+      },
+      "en": {
+        "title": "Why a 110.5-point horse racing AI refused to bet on Fantasy Stakes 2026: Debugging logic errors in track mapping",
+        "summary": "During the Fantasy Stakes 2026, a custom horse racing prediction AI generated a strong 110.5-point favorite but automatically blocked the actual wager. Post-event log analysis revealed that the model contained a critical logical bug in its processing of outer track configurations, causing it to hallucinate an impossible running distance. Even when a machine learning model perfectly optimizes its internal probability scores, failing to accurately map real-world physical constraints—like specific track geometry—leads to immediate failure. For builders, this incident serves as a stark reminder that high-confidence algorithmic outputs are only as valuable as the underlying environmental data; rigorous validation of external real-world variables is mandatory before letting any AI automate financial decisions based on complex physical inputs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-10-31T04:17:49.403Z"
+  },
+  {
+    "id": "art-1793420178720-amw6b",
+    "source_id": "source-digg-ai",
+    "source_name": "Digg AI",
+    "url": "https://digg.com/ai/2oyy0avq",
+    "published_at": "2026-10-31T03:50:49.000Z",
+    "og_image_url": null,
+    "title_ja": "AI駆動科学研究における「人間による説明責任」の再定義―Nature誌が提唱するAI時代の学術的誠実さと研究者側の新たな役割",
+    "summary_ja": "Nature誌は、AIをツールとして活用する科学研究において、AI出力の根拠を人間が検証し、その妥当性に全責任を負う「人間による説明責任」の重要性を強調している。 AIは推論の加速器となり得るが、事実確認の代替にはならない。 開発者や研究者は、AI生成物のブラックボックス化を防ぎ、科学的エビデンスとしてのトレーサビリティを確保する設計思想をプロセスに組み込むことが不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "AI駆動科学研究における「人間による説明責任」の再定義―Nature誌が提唱するAI時代の学術的誠実さと研究者側の新たな役割",
+        "summary": "Nature誌は、AIをツールとして活用する科学研究において、AI出力の根拠を人間が検証し、その妥当性に全責任を負う「人間による説明責任」の重要性を強調している。 AIは推論の加速器となり得るが、事実確認の代替にはならない。 開発者や研究者は、AI生成物のブラックボックス化を防ぎ、科学的エビデンスとしてのトレーサビリティを確保する設計思想をプロセスに組み込むことが不可欠だ。"
+      },
+      "en": {
+        "title": "Nature editorial redefines human accountability in AI-assisted scientific research and demands researcher-led validation",
+        "summary": "A new Nature editorial argues that as scientific research adopts AI, the burden of truth remains firmly with human authors who must verify AI-generated conclusions rather than blindly trusting black-box outputs. While AI effectively accelerates hypothesis generation and data synthesis, it cannot act as a proxy for academic integrity or scientific accountability. For builders creating AI tools for research, this underscores a critical requirement: systems must prioritize interpretability and provide clear provenance for data sources. The takeaway for developers is clear—you cannot design AI workflows as autonomous black boxes if they impact academic rigor; you must incorporate human-in-the-loop audit trails and transparent reasoning paths to ensure that the scientific method remains verifiable and trustworthy, regardless of model speed."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-10-31T04:16:18.720Z"
+  },
+  {
     "id": "art-1793419361967-zlj14",
     "source_id": "source-github-copilot",
     "source_name": "GitHub Copilot Changelog",
