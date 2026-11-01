@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793517425655-o4yy8",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/ELIXIR/items/2c5630f2c607b1cf756d",
+    "published_at": "2026-11-01T06:37:11.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFtYXpvbmF3cy5jb20lMkYwJTJGNTk5MTElMkZwcm9maWxlLWltYWdlcyUyRjE0NzM2OTUwNzM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTIyMWQyMzExNzMxYzk1YTAyZjUzMGMyZTZlZjJiMTk3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D26f075d815454f0c3504ef7ee9c6152a?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JTVCVnNjb2RlJTVEJUU3JTk0JUJCJUU1JTgzJThGJUUzJTgzJTk1JUUzJTgyJUExJUUzJTgyJUE0JUUzJTgzJUFCJUUzJTgxJThDJUUzJTgzJTk1JUUzJTgyJUE5JUUzJTgzJUFCJUUzJTgzJTgwJUU0JUI4JThCJUUzJTgxJUFCJUU4JUExJUE4JUU3JUE0JUJBJUUzJTgxJTk1JUUzJTgyJThDJUUzJTgxJUFBJUUzJTgxJTg0JUUzJTgxJUE4JUUzJTgxJThEJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MTFhNTRiOWI0NGM1Yzk5MGY1YzU5YTQwZTFlNzZkNTE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBFTElYSVImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05M2U0YzU0NzE0YTY4ZWViZGQzMjJiMGU3MmNmOTAzZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b93292bcd817871995b790c277bd9b90",
+    "title_ja": "VS Codeのサイドバーに画像が表示されない原因と解決策――Unity自動生成の「files.exclude」設定が犯人だった",
+    "summary_ja": "UnityプロジェクトをVS Codeで開いた際、画像ファイルがサイドバーに表示されない場合、原因はUnityが自動生成する.vscode/settings.json内の「files.exclude」設定にある。 デフォルトで「**/*.png」などが除外対象に設定されているため、VS Code上からはファイルが見えなくなる。 解決には該当設定を削除するかfalseに修正する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "VS Codeのサイドバーに画像が表示されない原因と解決策――Unity自動生成の「files.exclude」設定が犯人だった",
+        "summary": "UnityプロジェクトをVS Codeで開いた際、画像ファイルがサイドバーに表示されない場合、原因はUnityが自動生成する.vscode/settings.json内の「files.exclude」設定にある。 デフォルトで「**/*.png」などが除外対象に設定されているため、VS Code上からはファイルが見えなくなる。 解決には該当設定を削除するかfalseに修正する必要がある。"
+      },
+      "en": {
+        "title": "Why your images are missing from the VS Code sidebar in Unity projects and how to fix it",
+        "summary": "When opening Unity projects in VS Code, image files often vanish from the explorer sidebar, causing confusion for developers expecting to see their assets. The culprit is the .vscode/settings.json file, which Unity auto-generates to clean up your workspace by adding glob patterns like \"**/*.png\" to the \"files.exclude\" configuration. Because VS Code honors these exclusion rules, the files effectively disappear from your view even though they exist on disk. To fix this, you simply need to remove these patterns or set them to false within the JSON. Understanding how third-party tools manipulate your IDE configuration is essential for maintaining a predictable development environment and troubleshooting these common hidden file issues quickly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-01T07:17:05.655Z"
+  },
+  {
+    "id": "art-1793517415355-egpgn",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/chililikobo/articles/8c5d2fe2e0989d",
+    "published_at": "2026-11-01T05:09:45.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--AyuglMM6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%25AB%2598DPI%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AEWindows%25E3%2581%25A7%25E8%2587%25AA%25E4%25BD%259C%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25AE%25E3%2582%25A2%25E3%2582%25A4%25E3%2582%25B3%25E3%2583%25B3%25E3%2581%258C%25E3%2583%259C%25E3%2582%25B1%25E3%2582%258B%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A8%25E3%2580%2581%25E5%2585%25A811%25E3%2582%25B5%25E3%2582%25A4%25E3%2582%25BA%25E3%2582%2592D%2526D%25E3%2581%25A7%25E4%25B8%2580%25E7%2599%25BA%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:chilili%2520kobo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjBmem8tRUMwS3J4WjYtVVUxX2RJT3VWbGNHYXhGa1Qya0xjVFd0YWxqUkhlMkRvaz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Windowsの高DPI環境で自作アプリのアイコンがボケる技術的要因と、11サイズを一括生成して画質を担保するワークフローの設計",
+    "summary_ja": "Windowsアプリ開発でアイコンがボヤける主因は、高DPI環境でOSが古い形式の.icoを不適切にスケーリングすることにある。 これを防ぐには、単なるリサイズではなく16pxから256pxまで全11サイズのマルチ解像度を正しく含めた.ico形式の生成が不可欠だ。 本稿では、生成AIで作成した高解像度画像から、適切な全11サイズのアイコンセットをドラッグ＆ドロップで一括変換・生成し、視認性を維持するための設計手法を解説する。",
+    "translations": {
+      "ja": {
+        "title": "Windowsの高DPI環境で自作アプリのアイコンがボケる技術的要因と、11サイズを一括生成して画質を担保するワークフローの設計",
+        "summary": "Windowsアプリ開発でアイコンがボヤける主因は、高DPI環境でOSが古い形式の.icoを不適切にスケーリングすることにある。 これを防ぐには、単なるリサイズではなく16pxから256pxまで全11サイズのマルチ解像度を正しく含めた.ico形式の生成が不可欠だ。 本稿では、生成AIで作成した高解像度画像から、適切な全11サイズのアイコンセットをドラッグ＆ドロップで一括変換・生成し、視認性を維持するための設計手法を解説する。"
+      },
+      "en": {
+        "title": "Solving icon blur in high-DPI Windows apps: How to generate multi-size ICO files for pixel-perfect clarity",
+        "summary": "Blurry icons on modern high-DPI Windows displays often stem from the OS improperly scaling legacy, single-resolution icons rather than using appropriately sized assets. To maintain sharp visuals across the taskbar, title bars, and Explorer views, developers must package all 11 standard icon sizes—ranging from 16px to 256px—into a single .ico file. This guide explores the architectural necessity of supporting these specific resolution tiers when building desktop applications. It details a streamlined workflow that converts high-resolution AI-generated assets into a compliant, multi-layer icon set via a simple drag-and-drop tool. For solo developers, the key takeaway is that icon quality is the final polish; automating the multi-size export process is essential to avoiding scaling artifacts on modern monitors."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-01T07:16:55.355Z"
+  },
+  {
+    "id": "art-1793517405610-z9uic",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/ernd",
+    "published_at": "2026-10-31T08:07:30.000Z",
+    "og_image_url": null,
+    "title_ja": "AI特化型法人カード「ernd」が登場。API利用料やGPUサーバー代の支払いに最適化し、AI開発チームの支出管理と報酬還元を最大化",
+    "summary_ja": "AI開発チーム向けに特化した法人クレジットカード「ernd」が登場した。 OpenAIやAnthropicなどのAPI利用料、AWSやGCPといったGPUクラウドの支払い、そしてGPUサーバー購入に最適化されており、高額なインフラコストに対する報酬還元や支出管理をシームレスに行える。 開発チームの予算管理が煩雑化する中で、AIスタック特有のコスト構造を理解した金融ソリューションは、効率的な開発エコシステムの維持に不可欠となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "AI特化型法人カード「ernd」が登場。API利用料やGPUサーバー代の支払いに最適化し、AI開発チームの支出管理と報酬還元を最大化",
+        "summary": "AI開発チーム向けに特化した法人クレジットカード「ernd」が登場した。 OpenAIやAnthropicなどのAPI利用料、AWSやGCPといったGPUクラウドの支払い、そしてGPUサーバー購入に最適化されており、高額なインフラコストに対する報酬還元や支出管理をシームレスに行える。 開発チームの予算管理が煩雑化する中で、AIスタック特有のコスト構造を理解した金融ソリューションは、効率的な開発エコシステムの維持に不可欠となるだろう。"
+      },
+      "en": {
+        "title": "Meet ernd: A corporate credit card purpose-built for AI stacks, optimizing API spending, GPU cloud costs, and developer rewards",
+        "summary": "ernd is a new corporate credit card specifically designed for AI development teams to handle the massive costs associated with modern AI infrastructure. It provides tailored features for paying API bills from providers like OpenAI and Anthropic, managing GPU cloud expenditures on platforms like AWS or GCP, and optimizing server procurement workflows. As AI engineering teams grapple with increasingly complex billing and unpredictable infrastructure costs, ernd offers a specialized financial tool that integrates directly with these high-volume expenses to maximize rewards and streamline budget visibility. For builders and AI startups, this provides a critical financial layer that recognizes the unique consumption patterns of the AI era, rather than relying on standard corporate cards ill-equipped for massive token consumption or server scaling."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-01T07:16:45.610Z"
+  },
+  {
+    "id": "art-1793517399503-27i0t",
+    "source_id": "source-copyai",
+    "source_name": "Copy.ai Blog",
+    "url": "https://www.copy.ai/blog/manual-tasks-your-sales-team-still-does-for-no-reason",
+    "published_at": "2026-10-30T01:57:26.148Z",
+    "og_image_url": null,
+    "title_ja": "Copy.aiが提言、営業チームが今すぐ自動化すべき「無駄な手作業」とAI活用による商談獲得率向上へのロードマップ",
+    "summary_ja": "Copy.aiは、依然として多くの営業チームがリサーチやデータ入力といった「手作業」に時間を浪費していると指摘し、これらをAIで自動化するメリットを解説する。 CRMの更新から見込み客の調査までを自動化することで、営業担当者は単なる事務処理から解放され、顧客とのエンゲージメントや戦略的な商談に集中できる。 本記事は、AIを単なるツールとしてではなく、営業プロセス全体のレバレッジを高める戦力として組み込むための具体的な戦略を提示している。",
+    "translations": {
+      "ja": {
+        "title": "Copy.aiが提言、営業チームが今すぐ自動化すべき「無駄な手作業」とAI活用による商談獲得率向上へのロードマップ",
+        "summary": "Copy.aiは、依然として多くの営業チームがリサーチやデータ入力といった「手作業」に時間を浪費していると指摘し、これらをAIで自動化するメリットを解説する。 CRMの更新から見込み客の調査までを自動化することで、営業担当者は単なる事務処理から解放され、顧客とのエンゲージメントや戦略的な商談に集中できる。 本記事は、AIを単なるツールとしてではなく、営業プロセス全体のレバレッジを高める戦力として組み込むための具体的な戦略を提示している。"
+      },
+      "en": {
+        "title": "Copy.ai outlines the manual sales tasks your team should automate right now to reclaim time for high-value closing",
+        "summary": "Copy.ai argues that modern sales teams are still bleeding hours on manual, repetitive tasks like manual CRM updates and lead research that AI tools can handle instantly. By shifting this operational load to intelligent automation, sales professionals are freed from administrative drudgery to focus entirely on customer relationships and complex closing strategies. The piece serves as a roadmap for teams looking to integrate AI not just as a productivity plugin, but as a structural component of their sales funnel, allowing human talent to engage where it matters most. For builders and operations leaders, the takeaway is that automating the boring stuff isn't just about saving time; it is about scaling your team's capacity for strategic revenue growth without headcount bloat."
+      }
+    },
+    "tool_tags": [
+      "Copy.ai"
+    ],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-01T07:16:39.503Z"
+  },
+  {
     "id": "art-1793516519545-kd9v9",
     "source_id": "source-context-dev",
     "source_name": "Context.dev Blog",
