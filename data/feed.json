@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793531861273-wodzz",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/naozi/articles/ba6b3dcb82c736",
+    "published_at": "2026-11-01T00:06:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--bMR8DCTq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%25E3%2581%25A7%25E9%2580%25B1%25E6%25AC%25A1SEO%25E3%2583%25AC%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2582%25E9%2581%258B%25E7%2594%25A8%25E3%2581%25A7%25E8%25A9%25B0%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25A8%25E3%2581%2593%25E3%2582%258D%25E5%2585%25A8%25E9%2583%25A8%25E6%259B%25B8%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:naozi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjlERFZGa25ybXBNeGtjSzEybnJ4cEZjRE9qQ19EWlFMRjdUeUY2Z2JPN2w4QWtFM2k9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claudeを活用した週次SEO診断「サイトドック」開発、運用開始後に直面した「静かに壊れる」3つの落とし穴と教訓",
+    "summary_ja": "Webサイトの技術SEOを診断する「サイトドック」で、Claudeを使い毎週の自動レポート機能を実装。 個人開発での運用開始後、API利用料の予期せぬ増大やバッチ処理の静かな停止など、開発時には想定しづらい「エラーログに出ない故障」が多発した。 これら3つの失敗事例を通じて、AI自動化ワークフローを継続的に稼働させるために不可欠な監視体制と、依存先APIの仕様変化に対する防衛策を解説する。",
+    "translations": {
+      "ja": {
+        "title": "Claudeを活用した週次SEO診断「サイトドック」開発、運用開始後に直面した「静かに壊れる」3つの落とし穴と教訓",
+        "summary": "Webサイトの技術SEOを診断する「サイトドック」で、Claudeを使い毎週の自動レポート機能を実装。 個人開発での運用開始後、API利用料の予期せぬ増大やバッチ処理の静かな停止など、開発時には想定しづらい「エラーログに出ない故障」が多発した。 これら3つの失敗事例を通じて、AI自動化ワークフローを継続的に稼働させるために不可欠な監視体制と、依存先APIの仕様変化に対する防衛策を解説する。"
+      },
+      "en": {
+        "title": "Building weekly SEO diagnostics with Claude: Lessons from three operational pitfalls that quietly broke my automated service",
+        "summary": "I built 'SiteDock,' an automated technical SEO diagnostic tool that generates weekly reports using Claude, only to encounter three critical failures after launch that were notoriously difficult to debug. These issues—ranging from silent batch process stalls to unexpected API cost spikes—never threw traditional error logs, making them invisible until users reported missing data. This deep dive dissects how AI-driven workflows fail silently when external dependencies shift or long-running tasks time out. The key takeaway for builders is that automated pipelines require robust heartbeats and monitoring beyond standard error logging. For anyone integrating LLMs into recurring SaaS tasks, you must architect defensive guardrails around your API calls to prevent the system from quietly crumbling under real-world usage."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-01T11:17:41.273Z"
+  },
+  {
+    "id": "art-1793531854771-25yyh",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/harakorea/n/ncd4a4c65da01",
+    "published_at": "2026-11-01T11:15:48.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330250619/rectangle_large_type_2_d78be4833a894441a50caea2eb35eae8.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "100日開発チャレンジDay54：UI改善でリストから直接タスクを完了可能に、クリック数削減によるユーザー体験の向上",
+    "summary_ja": "個人開発の100日チャレンジ54日目、ユーザー体験の改善を目的にリスト画面のUIをアップデートした。 これまで個別ページを開く必要があった「完了」操作を、一覧上の行から直接実行できるように改修し、操作ステップを大幅に削減した。 Claudeを活用して実装を最適化しており、細かなクリック数の減少が、継続率や満足度に直結するという仮説に基づいた実装である。 開発の後半戦においても、ユーザーの些細なストレスを取り除く地道なUX改善の重要性を改めて示している。",
+    "translations": {
+      "ja": {
+        "title": "100日開発チャレンジDay54：UI改善でリストから直接タスクを完了可能に、クリック数削減によるユーザー体験の向上",
+        "summary": "個人開発の100日チャレンジ54日目、ユーザー体験の改善を目的にリスト画面のUIをアップデートした。 これまで個別ページを開く必要があった「完了」操作を、一覧上の行から直接実行できるように改修し、操作ステップを大幅に削減した。 Claudeを活用して実装を最適化しており、細かなクリック数の減少が、継続率や満足度に直結するという仮説に基づいた実装である。 開発の後半戦においても、ユーザーの些細なストレスを取り除く地道なUX改善の重要性を改めて示している。"
+      },
+      "en": {
+        "title": "Building in Public Day 54: Optimizing Task UI to allow completion directly from the list view",
+        "summary": "On day 54 of the 100-day build challenge, the developer focused on optimizing the user interface to streamline daily workflows. By introducing a direct 'complete' action within the list row, users no longer need to open individual detail pages to mark tasks, significantly reducing the required interaction steps. Leveraging Claude to guide the implementation, this update prioritizes minimizing friction, acting on the hypothesis that small reductions in click counts directly improve user retention and satisfaction. As the 100-day journey moves into its latter half, this work serves as a reminder that consistent, incremental UX polishing is essential to maintaining momentum and building a truly usable product, rather than just chasing new feature expansion alone."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-01T11:17:34.771Z"
+  },
+  {
+    "id": "art-1793531848292-yyqw3",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/matricphase-dot/aiops",
+    "published_at": "2026-11-01T10:48:39.000Z",
+    "og_image_url": null,
+    "title_ja": "オープンソース「AIOps Cockpit」公開：人間介入型の安全性を備えたAIベースのSRE自動運用ツールが登場",
+    "summary_ja": "AIOps Cockpitは、複雑化するインフラ運用を効率化するオープンソースのAI SREツールだ。 最大の特徴は、AIが推奨する修正アクションに対して、人間が最終承認を行う「ヒューマン・イン・ザ・ループ」設計を採用し、運用ミスのリスクを最小限に抑えている点にある。 フルオートメーションではなく、AIの判断能力と人間の責任範囲を明確に切り分けることで、DevOpsチームは安全かつ確実にAI運用環境へ移行できる。",
+    "translations": {
+      "ja": {
+        "title": "オープンソース「AIOps Cockpit」公開：人間介入型の安全性を備えたAIベースのSRE自動運用ツールが登場",
+        "summary": "AIOps Cockpitは、複雑化するインフラ運用を効率化するオープンソースのAI SREツールだ。 最大の特徴は、AIが推奨する修正アクションに対して、人間が最終承認を行う「ヒューマン・イン・ザ・ループ」設計を採用し、運用ミスのリスクを最小限に抑えている点にある。 フルオートメーションではなく、AIの判断能力と人間の責任範囲を明確に切り分けることで、DevOpsチームは安全かつ確実にAI運用環境へ移行できる。"
+      },
+      "en": {
+        "title": "AIOps Cockpit launches as an open-source AI SRE tool featuring human-in-the-loop safety protocols",
+        "summary": "AIOps Cockpit has launched as an open-source AI SRE platform designed to streamline complex infrastructure management while prioritizing operational safety. The core mechanism centers on a robust human-in-the-loop architecture, requiring manual approval for all AI-recommended remediation actions to mitigate the risks inherent in automated patching or configuration changes. Rather than pursuing dangerous, blind autonomy, this tool draws a clear line between AI-assisted analysis and human decision-making, allowing DevOps teams to adopt AI-driven operations without sacrificing reliability. For engineering organizations scaling their infrastructure, this approach provides a necessary safeguard against automated failures, proving that controlled AI integration is the most sustainable path for modern site reliability engineering workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-01T11:17:28.292Z"
+  },
+  {
+    "id": "art-1793531841867-hzeil",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/helpkit",
+    "published_at": "2026-10-31T22:28:07+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/qw1yki8yjnd9gkwxb582pwwrozjc",
+    "title_ja": "Notionを即座にナレッジベース化するSaaS「Helpkit」、個人開発から月間経常収益(MRR) 2.5万ドル超えまでの軌跡",
+    "summary_ja": "Helpkitは、Notionページをそのまま高機能なカスタマーサポート用ナレッジベースに変換するSaaSツールだ。 開発者は、API連携やドメイン設定といった面倒な作業をNotionで一元管理できるようにし、既存のワークフローを維持したい企業層の支持を獲得した。 ニッチながらも「Notion愛好家」という明確なペルソナに向けた機能特化戦略が、月間経常収益2.5万ドル（約375万円）超えの安定成長を支える鍵となっている。",
+    "translations": {
+      "ja": {
+        "title": "Notionを即座にナレッジベース化するSaaS「Helpkit」、個人開発から月間経常収益(MRR) 2.5万ドル超えまでの軌跡",
+        "summary": "Helpkitは、Notionページをそのまま高機能なカスタマーサポート用ナレッジベースに変換するSaaSツールだ。 開発者は、API連携やドメイン設定といった面倒な作業をNotionで一元管理できるようにし、既存のワークフローを維持したい企業層の支持を獲得した。 ニッチながらも「Notion愛好家」という明確なペルソナに向けた機能特化戦略が、月間経常収益2.5万ドル（約375万円）超えの安定成長を支える鍵となっている。"
+      },
+      "en": {
+        "title": "How Helpkit, a Notion-to-Knowledge Base SaaS, Scaled to Over $25,000 Monthly Recurring Revenue as a Solo Venture",
+        "summary": "Helpkit is a dedicated SaaS platform that instantly transforms Notion documents into professional, fully functional customer support knowledge bases. By abstracting away the technical friction of custom domains and complex integrations, the developer successfully captured enterprise users who wanted to keep their documentation workflows entirely inside Notion. This focused strategy, targeting the passionate Notion power-user community, has been the primary driver behind scaling the product to over $25,000 in monthly recurring revenue. For solo builders, the key lesson is that narrowing the scope to enhance a specific existing ecosystem—rather than building a generic standalone tool—creates a defensible, high-value product that users are eager to pay for immediately."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-01T11:17:21.867Z"
+  },
+  {
     "id": "art-1793530908906-lyq4z",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
