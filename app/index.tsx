@@ -60,11 +60,16 @@ import {
   fetchSponsoredItems,
   filterSponsoredForContext,
   findNearestSponsoredIndex,
+  findNextSponsoredIndex,
   interleaveSponsoredCards,
   listSponsoredThenArticles,
   pickRelatedSponsored,
 } from '../src/lib/sponsored';
-import { resolveSponsoredLocalIcon } from '../src/lib/sponsorIcons';
+import {
+  getSponsorLocalIcon,
+  getSponsorLocalIconForSourceId,
+  resolveSponsoredLocalIcon,
+} from '../src/lib/sponsorIcons';
 import { looksLikeLocale, relocalizeArticles } from '../src/lib/translate';
 import {
   getHiddenArticleIds,
@@ -195,15 +200,10 @@ export default function HomeScreen() {
         getPurgedArticleIds(),
         getUserPrefs(),
       ]);
-      // 初回だけ途中経過を流す。refresh/silent 中の差し替えはスワイプ位置を壊しやすい
+      // 起動時の途中経過で件数を減らして見せない（フル取得完了後に一括差し替え）
       const feedPromise = fetchArticles(
         localeGuess,
-        mode === 'initial'
-          ? (partial) => {
-              setArticles(partial);
-              prefetchOgImages(partial, 0, limits.imagePrefetchBootCount);
-            }
-          : undefined,
+        undefined,
         // pull 更新は TTL キャッシュを飛ばして最新 JSON を取り直す
         mode === 'refresh' ? { forceRefresh: true } : undefined
       );
@@ -400,21 +400,26 @@ export default function HomeScreen() {
   }, [loadData]);
 
   const handlePullRefresh = useCallback(() => {
+    // 起動の裏同期中はすでに取得中。二重起動せず、表示中の同期バナーに任せる
     if (refreshing || loading) return;
     void loadData('refresh');
   }, [loadData, refreshing, loading]);
 
   const t = getCopy(prefs.region_locale);
   const refreshProgressOffset = size.topTabsTop + size.minTap + 8;
+  /** 起動直後：キャッシュ表示中にリモートを取りに行っている */
+  const isBootSyncing = loading && articles.length > 0 && !refreshing;
+  const isFeedUpdating = refreshing || isBootSyncing;
   const feedRefreshControl = (
     <RefreshControl
-      refreshing={refreshing}
+      // 裏同期中も refreshing=true にして、プルしても空振りアニメにならないようにする
+      refreshing={isFeedUpdating}
       onRefresh={handlePullRefresh}
       tintColor={themes.neutral.accent}
       colors={[themes.neutral.accent]}
       progressBackgroundColor={themes.neutral.panel}
       progressViewOffset={refreshProgressOffset}
-      accessibilityLabel={t.retryButton}
+      accessibilityLabel={isBootSyncing ? t.syncingFeed : t.refreshingFeed}
     />
   );
 
@@ -954,6 +959,11 @@ export default function HomeScreen() {
                 refreshControl={feedRefreshControl}
                 renderItem={({ item, index }) => {
                   if (isSponsoredItem(item)) {
+                    const nextSponsoredIndex = findNextSponsoredIndex(
+                      visibleArticles,
+                      index,
+                      item
+                    );
                     return (
                       <SponsoredCard
                         item={item}
@@ -964,6 +974,12 @@ export default function HomeScreen() {
                         locale={prefs.region_locale}
                         overrideTool={overrideToolForTheme}
                         onHide={handleHideArticle}
+                        onNextSponsored={
+                          nextSponsoredIndex >= 0
+                            ? () =>
+                                scrollHomeToSponsoredIndex(nextSponsoredIndex)
+                            : null
+                        }
                       />
                     );
                   }
@@ -1026,7 +1042,7 @@ export default function HomeScreen() {
               />
             )}
 
-            {refreshing ? (
+            {isFeedUpdating ? (
               <View
                 style={[
                   styles.refreshBanner,
@@ -1034,14 +1050,16 @@ export default function HomeScreen() {
                 ]}
                 pointerEvents="none"
                 accessibilityLiveRegion="polite"
-                accessibilityLabel={t.refreshingFeed}
+                accessibilityLabel={
+                  isBootSyncing ? t.syncingFeed : t.refreshingFeed
+                }
               >
                 <ActivityIndicator
                   size="small"
                   color={themes.neutral.accent}
                 />
                 <Text style={styles.refreshBannerText}>
-                  {t.refreshingFeed}
+                  {isBootSyncing ? t.syncingFeed : t.refreshingFeed}
                 </Text>
               </View>
             ) : null}
@@ -1178,6 +1196,7 @@ export default function HomeScreen() {
                       >
                         <SiteFaviconBadge
                           siteUrl={src.site_url}
+                          localSource={getSponsorLocalIconForSourceId(src.id)}
                           fallbackInitial={initial}
                           fallbackBg={uiColors.avatarSurface}
                           fallbackFg={text.primary}
@@ -1272,6 +1291,7 @@ export default function HomeScreen() {
                       >
                         <SiteFaviconBadge
                           siteUrl={toolSiteUrls[tool]}
+                          localSource={getSponsorLocalIcon(tool)}
                           fallbackInitial={badge.initial}
                           fallbackBg={badge.bg}
                           fallbackFg={badge.fg}
@@ -1317,6 +1337,7 @@ export default function HomeScreen() {
               savedIds={savedIds}
               showOriginalButton={prefs.show_original_button}
               isActive={bottomTab === 'explore'}
+              viewportHeight={feedHeight}
               sponsoredItems={sponsoredItems.filter((s) => {
                 if (s.active === false) return false;
                 if (hiddenIdSet.has(s.id)) return false;
@@ -1442,6 +1463,8 @@ const styles = StyleSheet.create({
   mainArea: {
     flex: 1,
     position: 'relative',
+    // 探索カード等の absolute レイヤーが下タブの上に描画されないようにする
+    overflow: 'hidden',
   },
   tabPane: {
     flex: 1,
@@ -1569,6 +1592,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
+    zIndex: 50,
+    elevation: 50,
   },
   bottomTabItem: {
     minWidth: size.minTap,

@@ -11,13 +11,13 @@ import React, {
 import {
   FlatList,
   Linking,
+  NativeScrollEvent,
+  NativeSyntheticEvent,
   Pressable,
   StyleSheet,
   Text,
   TextInput,
-  useWindowDimensions,
   View,
-  type LayoutChangeEvent,
   type ViewToken,
 } from 'react-native';
 import { Image } from 'expo-image';
@@ -35,6 +35,7 @@ import {
 import {
   filterSponsoredForContext,
   findNearestSponsoredIndex,
+  findNextSponsoredIndex,
   interleaveSponsoredCards,
   isSponsoredItem,
   pickRelatedSponsored,
@@ -71,6 +72,11 @@ type ExploreViewProps = {
   enabledSourceIds?: ReadonlySet<string>;
   /** 下タブで探索が表示中のときだけ強めに画像先読みする */
   isActive?: boolean;
+  /**
+   * ホームと同じ mainArea 高さ。カード1枚の高さ／スナップに使い、
+   * 探索だけ下にズレてタブに見切れるのを防ぐ。
+   */
+  viewportHeight: number;
   onToggleSave: (articleId: string) => void;
   onHideArticle: (articleId: string) => void;
   onOpenSaved: () => void;
@@ -258,6 +264,7 @@ export const ExploreView = forwardRef<ExploreViewHandle, ExploreViewProps>(
       prefsTools = [],
       enabledSourceIds,
       isActive = true,
+      viewportHeight,
       onToggleSave,
       onHideArticle,
       onOpenSaved,
@@ -267,18 +274,16 @@ export const ExploreView = forwardRef<ExploreViewHandle, ExploreViewProps>(
     ref
   ) {
   const t = getCopy(locale);
-  const windowDims = useWindowDimensions();
   const [query, setQuery] = useState('');
   const [selectedArticleId, setSelectedArticleId] = useState<string | null>(
     null
   );
-  /** ルート計測前でもカード FlatList を出せるよう、画面高さから仮置きする */
-  const [feedHeight, setFeedHeight] = useState(() =>
-    Math.max(windowDims.height - size.tabBarHeight, 500)
-  );
   const [currentIndex, setCurrentIndex] = useState(0);
   const cardListRef = useRef<FlatList<FeedCardItem>>(null);
   const gridListRef = useRef<FlatList<Article>>(null);
+  /** フィード往復で一覧のスクロール位置を戻す */
+  const gridOffsetRef = useRef(0);
+  const cardHeight = Math.max(viewportHeight, 1);
 
   useImperativeHandle(
     ref,
@@ -383,14 +388,20 @@ export const ExploreView = forwardRef<ExploreViewHandle, ExploreViewProps>(
 
   const handleBackToList = useCallback(() => {
     setSelectedArticleId(null);
+    requestAnimationFrame(() => {
+      gridListRef.current?.scrollToOffset({
+        offset: gridOffsetRef.current,
+        animated: false,
+      });
+    });
   }, []);
 
-  const handleLayout = (e: LayoutChangeEvent) => {
-    const h = e.nativeEvent.layout.height;
-    if (h > 0 && Math.abs(h - feedHeight) > 1) {
-      setFeedHeight(h);
-    }
-  };
+  const handleGridScroll = useCallback(
+    (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+      gridOffsetRef.current = e.nativeEvent.contentOffset.y;
+    },
+    []
+  );
 
   const onViewableItemsChanged = useCallback(
     ({ viewableItems }: { viewableItems: ViewToken[] }) => {
@@ -464,265 +475,269 @@ export const ExploreView = forwardRef<ExploreViewHandle, ExploreViewProps>(
     verifiedTool ? [verifiedTool] : []
   ).colors;
 
-  const cardListHeight = Math.max(feedHeight, 1);
-
-  return (
-    <View style={styles.root} onLayout={handleLayout}>
-      {/*
-        一覧は flex で常にマウントしたまま（スクロール位置・サムネ維持）。
-        フィードは absolute で重ねるだけ。
-      */}
+  if (isShowingCard) {
+    return (
       <View
         style={[
-          styles.container,
-          isShowingCard ? styles.layerHidden : null,
+          styles.cardModeRoot,
+          { backgroundColor: activeTheme.background },
         ]}
-        pointerEvents={isShowingCard ? 'none' : 'auto'}
-        accessibilityElementsHidden={isShowingCard}
-        importantForAccessibility={
-          isShowingCard ? 'no-hide-descendants' : 'auto'
-        }
       >
-        <View style={styles.searchHeaderRow}>
-          <View style={styles.searchBox}>
-            <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
-              <Circle
-                cx={11}
-                cy={11}
-                r={7}
-                stroke={text.muted}
-                strokeWidth={2}
-              />
-              <Path
-                d="M20 20l-4-4"
-                stroke={text.muted}
-                strokeWidth={2}
-                strokeLinecap="round"
-              />
-            </Svg>
-            <TextInput
-              value={query}
-              onChangeText={setQuery}
-              placeholder={t.explore.searchPlaceholder}
-              placeholderTextColor={text.muted}
-              style={styles.searchInput}
-              returnKeyType="search"
-              autoCapitalize="none"
-              autoCorrect={false}
-              accessibilityLabel={t.explore.searchPlaceholder}
-            />
-            {query.length > 0 ? (
-              <Pressable
-                style={styles.clearButton}
-                onPress={() => setQuery('')}
-                accessibilityRole="button"
-                accessibilityLabel={t.explore.clearSearchAria}
-              >
-                <Text style={styles.clearButtonText}>✕</Text>
-              </Pressable>
-            ) : null}
-          </View>
-
-          <Pressable
-            style={styles.savedIconButton}
-            onPress={onOpenSaved}
-            accessibilityRole="button"
-            accessibilityLabel={t.bottomTabs.saved}
-          >
-            <Svg width={26} height={26} viewBox="0 0 24 24" fill="none">
-              <Path
-                d="M6 3h12v18l-6-4-6 4z"
-                stroke={text.primary}
-                strokeWidth={2}
-                strokeLinejoin="round"
-              />
-            </Svg>
-          </Pressable>
-        </View>
-
-        {filteredArticles.length === 0 ? (
-          <EmptyState
-            title={t.explore.emptySearchTitle}
-            description={t.explore.emptySearchDescription}
-            actionLabel={query.length > 0 ? t.chips.all : undefined}
-            onAction={query.length > 0 ? () => setQuery('') : undefined}
-          />
-        ) : (
-          <FlatList
-            ref={gridListRef}
-            key="explore-2col"
-            data={filteredArticles}
-            keyExtractor={(item) => item.id}
-            numColumns={2}
-            renderItem={renderItem}
-            showsVerticalScrollIndicator={false}
-            contentContainerStyle={styles.gridContent}
-            initialNumToRender={14}
-            maxToRenderPerBatch={10}
-            windowSize={11}
-            removeClippedSubviews={false}
-            keyboardShouldPersistTaps="handled"
-            onViewableItemsChanged={onGridViewableItemsChanged}
-            viewabilityConfig={gridViewabilityConfig}
-          />
-        )}
-      </View>
-
-      {isShowingCard ? (
-        <View
-          style={[
-            styles.cardModeContainer,
-            { backgroundColor: activeTheme.background },
-          ]}
-        >
-          <FlatList
-            ref={cardListRef}
-            data={exploreFeedCards}
-            keyExtractor={(item) => item.id}
-            pagingEnabled
-            showsVerticalScrollIndicator={false}
-            decelerationRate="fast"
-            snapToInterval={cardListHeight}
-            snapToAlignment="start"
-            initialScrollIndex={
-              exploreFeedCards.length > 0
-                ? Math.max(
-                    0,
-                    Math.min(selectedIndex, exploreFeedCards.length - 1)
-                  )
-                : 0
-            }
-            initialNumToRender={4}
-            maxToRenderPerBatch={5}
-            windowSize={9}
-            onViewableItemsChanged={onViewableItemsChanged}
-            viewabilityConfig={viewabilityConfig}
-            getItemLayout={(_, index) => ({
-              length: cardListHeight,
-              offset: cardListHeight * index,
-              index,
-            })}
-            onScrollToIndexFailed={({ index }) => {
-              cardListRef.current?.scrollToOffset({
-                offset: cardListHeight * index,
-                animated: false,
-              });
-            }}
-            renderItem={({ item, index }) => {
-              if (isSponsoredItem(item)) {
-                return (
-                  <SponsoredCard
-                    item={item}
-                    index={index}
-                    total={exploreFeedCards.length}
-                    cardHeight={cardListHeight}
-                    hasChipRow={false}
-                    locale={locale}
-                    onHide={onHideArticle}
-                  />
-                );
-              }
-              const related = pickRelatedSponsored(
-                item,
-                sponsoredItems.filter((s) => s.active !== false)
+        <FlatList
+          ref={cardListRef}
+          key={`explore-card-${selectedArticleId ?? 'none'}`}
+          data={exploreFeedCards}
+          keyExtractor={(item) => item.id}
+          style={styles.cardList}
+          pagingEnabled
+          bounces
+          showsVerticalScrollIndicator={false}
+          decelerationRate="fast"
+          snapToInterval={cardHeight}
+          snapToAlignment="start"
+          disableIntervalMomentum
+          initialScrollIndex={
+            exploreFeedCards.length > 0
+              ? Math.max(
+                  0,
+                  Math.min(selectedIndex, exploreFeedCards.length - 1)
+                )
+              : 0
+          }
+          initialNumToRender={4}
+          maxToRenderPerBatch={5}
+          windowSize={9}
+          onViewableItemsChanged={onViewableItemsChanged}
+          viewabilityConfig={viewabilityConfig}
+          getItemLayout={(_, index) => ({
+            length: cardHeight,
+            offset: cardHeight * index,
+            index,
+          })}
+          onScrollToIndexFailed={({ index }) => {
+            cardListRef.current?.scrollToOffset({
+              offset: cardHeight * index,
+              animated: false,
+            });
+          }}
+          renderItem={({ item, index }) => {
+            if (isSponsoredItem(item)) {
+              const nextSponsoredIndex = findNextSponsoredIndex(
+                exploreFeedCards,
+                index,
+                item
               );
-              const jumpIndex = related
-                ? findNearestSponsoredIndex(exploreFeedCards, index, related)
-                : -1;
-              const siteForIcon = related?.tool_tag
-                ? toolSiteUrls[related.tool_tag]
-                : null;
-              const relatedSponsor = related
-                ? {
-                    name: related.advertiser_name,
-                    iconUrl:
-                      (siteForIcon ? getFaviconUrl(siteForIcon) : null) ||
-                      getFaviconUrl(related.url) ||
-                      related.image_url,
-                    iconSource: resolveSponsoredLocalIcon(related),
-                    onPress: () => {
-                      if (jumpIndex >= 0 && cardListHeight > 0) {
-                        setCurrentIndex(jumpIndex);
-                        cardListRef.current?.scrollToIndex({
-                          index: jumpIndex,
-                          animated: true,
-                        });
-                        return;
-                      }
-                      void Linking.openURL(related.url);
-                    },
-                  }
-                : null;
               return (
-                <NewsCard
-                  article={item}
+                <SponsoredCard
+                  item={item}
                   index={index}
                   total={exploreFeedCards.length}
-                  cardHeight={cardListHeight}
+                  cardHeight={cardHeight}
                   hasChipRow={false}
-                  isSaved={savedIds.includes(item.id)}
-                  showOriginalButton={showOriginalButton}
                   locale={locale}
-                  relatedSponsor={relatedSponsor}
-                  onToggleSave={onToggleSave}
-                  onHideArticle={onHideArticle}
-                  onPressSource={onPressSource}
+                  onHide={onHideArticle}
+                  onNextSponsored={
+                    nextSponsoredIndex >= 0 && cardHeight > 0
+                      ? () => {
+                          setCurrentIndex(nextSponsoredIndex);
+                          cardListRef.current?.scrollToIndex({
+                            index: nextSponsoredIndex,
+                            animated: true,
+                          });
+                        }
+                      : null
+                  }
                 />
               );
-            }}
-          />
+            }
+            const related = pickRelatedSponsored(
+              item,
+              sponsoredItems.filter((s) => s.active !== false)
+            );
+            const jumpIndex = related
+              ? findNearestSponsoredIndex(exploreFeedCards, index, related)
+              : -1;
+            const siteForIcon = related?.tool_tag
+              ? toolSiteUrls[related.tool_tag]
+              : null;
+            const relatedSponsor = related
+              ? {
+                  name: related.advertiser_name,
+                  iconUrl:
+                    (siteForIcon ? getFaviconUrl(siteForIcon) : null) ||
+                    getFaviconUrl(related.url) ||
+                    related.image_url,
+                  iconSource: resolveSponsoredLocalIcon(related),
+                  onPress: () => {
+                    if (jumpIndex >= 0 && cardHeight > 0) {
+                      setCurrentIndex(jumpIndex);
+                      cardListRef.current?.scrollToIndex({
+                        index: jumpIndex,
+                        animated: true,
+                      });
+                      return;
+                    }
+                    void Linking.openURL(related.url);
+                  },
+                }
+              : null;
+            return (
+              <NewsCard
+                article={item}
+                index={index}
+                total={exploreFeedCards.length}
+                cardHeight={cardHeight}
+                hasChipRow={false}
+                isSaved={savedIds.includes(item.id)}
+                showOriginalButton={showOriginalButton}
+                locale={locale}
+                relatedSponsor={relatedSponsor}
+                onToggleSave={onToggleSave}
+                onHideArticle={onHideArticle}
+                onPressSource={onPressSource}
+              />
+            );
+          }}
+        />
 
-          <View style={styles.cardTopBar} pointerEvents="box-none">
-            <Pressable
-              style={[
-                styles.backButton,
-                {
-                  backgroundColor: activeTheme.panel,
-                  borderColor: activeTheme.line,
-                },
-              ]}
-              onPress={handleBackToList}
-              accessibilityRole="button"
-              accessibilityLabel={t.explore.backToListAria}
-            >
-              <Text style={styles.backButtonText}>{t.explore.backToList}</Text>
-            </Pressable>
+        <View style={styles.cardTopBar} pointerEvents="box-none">
+          <Pressable
+            style={[
+              styles.backButton,
+              {
+                backgroundColor: activeTheme.panel,
+                borderColor: activeTheme.line,
+              },
+            ]}
+            onPress={handleBackToList}
+            accessibilityRole="button"
+            accessibilityLabel={t.explore.backToListAria}
+          >
+            <Text style={styles.backButtonText}>{t.explore.backToList}</Text>
+          </Pressable>
 
-            <View
-              style={[
-                styles.counterPill,
-                {
-                  backgroundColor: activeTheme.panel,
-                  borderColor: activeTheme.line,
-                },
-              ]}
-            >
-              <Text style={[styles.counterText, { color: activeTheme.accent }]}>
-                {activeIndex + 1} / {exploreFeedCards.length}
-              </Text>
-            </View>
+          <View
+            style={[
+              styles.counterPill,
+              {
+                backgroundColor: activeTheme.panel,
+                borderColor: activeTheme.line,
+              },
+            ]}
+          >
+            <Text style={[styles.counterText, { color: activeTheme.accent }]}>
+              {activeIndex + 1} / {exploreFeedCards.length}
+            </Text>
           </View>
         </View>
-      ) : null}
+      </View>
+    );
+  }
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.searchHeaderRow}>
+        <View style={styles.searchBox}>
+          <Svg width={20} height={20} viewBox="0 0 24 24" fill="none">
+            <Circle
+              cx={11}
+              cy={11}
+              r={7}
+              stroke={text.muted}
+              strokeWidth={2}
+            />
+            <Path
+              d="M20 20l-4-4"
+              stroke={text.muted}
+              strokeWidth={2}
+              strokeLinecap="round"
+            />
+          </Svg>
+          <TextInput
+            value={query}
+            onChangeText={setQuery}
+            placeholder={t.explore.searchPlaceholder}
+            placeholderTextColor={text.muted}
+            style={styles.searchInput}
+            returnKeyType="search"
+            autoCapitalize="none"
+            autoCorrect={false}
+            accessibilityLabel={t.explore.searchPlaceholder}
+          />
+          {query.length > 0 ? (
+            <Pressable
+              style={styles.clearButton}
+              onPress={() => setQuery('')}
+              accessibilityRole="button"
+              accessibilityLabel={t.explore.clearSearchAria}
+            >
+              <Text style={styles.clearButtonText}>✕</Text>
+            </Pressable>
+          ) : null}
+        </View>
+
+        <Pressable
+          style={styles.savedIconButton}
+          onPress={onOpenSaved}
+          accessibilityRole="button"
+          accessibilityLabel={t.bottomTabs.saved}
+        >
+          <Svg width={26} height={26} viewBox="0 0 24 24" fill="none">
+            <Path
+              d="M6 3h12v18l-6-4-6 4z"
+              stroke={text.primary}
+              strokeWidth={2}
+              strokeLinejoin="round"
+            />
+          </Svg>
+        </Pressable>
+      </View>
+
+      {filteredArticles.length === 0 ? (
+        <EmptyState
+          title={t.explore.emptySearchTitle}
+          description={t.explore.emptySearchDescription}
+          actionLabel={query.length > 0 ? t.chips.all : undefined}
+          onAction={query.length > 0 ? () => setQuery('') : undefined}
+        />
+      ) : (
+        <FlatList
+          ref={gridListRef}
+          key="explore-2col"
+          data={filteredArticles}
+          keyExtractor={(item) => item.id}
+          numColumns={2}
+          renderItem={renderItem}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.gridContent}
+          initialNumToRender={14}
+          maxToRenderPerBatch={10}
+          windowSize={11}
+          removeClippedSubviews={false}
+          keyboardShouldPersistTaps="handled"
+          onScroll={handleGridScroll}
+          scrollEventThrottle={16}
+          onViewableItemsChanged={onGridViewableItemsChanged}
+          viewabilityConfig={gridViewabilityConfig}
+        />
+      )}
     </View>
   );
 });
 
 const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-  },
-  layerHidden: {
-    opacity: 0,
-  },
   container: {
     flex: 1,
     backgroundColor: themes.neutral.background,
     paddingTop: size.topTabsTop,
   },
-  cardModeContainer: {
-    ...StyleSheet.absoluteFillObject,
-    zIndex: 3,
+  /** ホームと同じ mainArea 内 flex。高さは親の viewportHeight をカードに使う */
+  cardModeRoot: {
+    flex: 1,
+    overflow: 'hidden',
+  },
+  cardList: {
+    flex: 1,
   },
   cardTopBar: {
     position: 'absolute',

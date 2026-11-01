@@ -160,6 +160,12 @@ const SITEMAP_FEED_FALLBACKS: Record<string, SitemapFeedFallback> = {
     pathRejectRegex: /^\/blog\/\d+$/,
     minPathSegments: 2,
   },
+  // Arcads 公式ブログは更新が細い。Help Center（Intercom）sitemap の /articles/* を主水源に
+  'source-arcads': {
+    sitemapUrl: 'https://help.arcads.ai/sitemap.xml',
+    pathIncludes: '/articles/',
+    minPathSegments: 3,
+  },
 };
 
 /**
@@ -169,8 +175,20 @@ const SITEMAP_FEED_FALLBACKS: Record<string, SitemapFeedFallback> = {
 type ListingFeedFallback = {
   listingUrl: string;
   origin: string;
-  /** synthesia=Webflow /post、bolt=bolt.new/blog、dify=dify.ai/blog、openai-changelog=API Changelog */
-  parser: 'synthesia' | 'bolt' | 'dify' | 'openai-changelog';
+  /**
+   * synthesia=Webflow /post、bolt=bolt.new/blog、dify=dify.ai/blog、
+   * openai-changelog=API Changelog、cursor-blog=cursor.com/blog、
+   * perplexity-blog=perplexity.ai/hub/blog、
+   * windsurf-changelog=windsurf.com/changelog（Devin Desktop 系）
+   */
+  parser:
+    | 'synthesia'
+    | 'bolt'
+    | 'dify'
+    | 'openai-changelog'
+    | 'cursor-blog'
+    | 'perplexity-blog'
+    | 'windsurf-changelog';
 };
 
 const LISTING_FEED_FALLBACKS: Record<string, ListingFeedFallback> = {
@@ -196,6 +214,24 @@ const LISTING_FEED_FALLBACKS: Record<string, ListingFeedFallback> = {
     listingUrl: 'https://developers.openai.com/api/docs/changelog',
     origin: 'https://developers.openai.com',
     parser: 'openai-changelog',
+  },
+  // changelog RSS は更新間隔が空きやすい → 更新の多い公式ブログへ
+  'source-cursor': {
+    listingUrl: 'https://cursor.com/blog',
+    origin: 'https://cursor.com',
+    parser: 'cursor-blog',
+  },
+  // 第三者ミラーRSSは更新が止まる → 公式 Hub ブログへ
+  'source-perplexity': {
+    listingUrl: 'https://www.perplexity.ai/hub/blog',
+    origin: 'https://www.perplexity.ai',
+    parser: 'perplexity-blog',
+  },
+  // windsurf.com/feed.xml は Blog が止まり更新ゼロ → 公式 changelog（ほぼ日次）へ
+  'source-windsurf': {
+    listingUrl: 'https://windsurf.com/changelog',
+    origin: 'https://windsurf.com',
+    parser: 'windsurf-changelog',
   },
 };
 
@@ -294,6 +330,61 @@ function parseListingItems(
         const slug = slugifyHeading(`${dayLabel}-${year}-${text.slice(0, 48)}`);
         push(`/api/docs/changelog#${slug}`, title, pubDate);
       }
+    }
+  } else if (conf.parser === 'cursor-blog') {
+    // Next.js 埋め込み JSON（エスケープ済み）から公式ブログ記事を取る
+    const entryRe =
+      /\{\\"slug\\":\\"([^\\"]+)\\",\\"href\\":\\"(\/blog\/[^\\"]+)\\",\\"title\\":\\"((?:\\\\.|[^\\"])*)\\",\\"date\\":\\"([^\\"]+)\\"/g;
+    for (const m of html.matchAll(entryRe)) {
+      const path = m[2];
+      if (path.includes('/topic/')) continue;
+      const title = decodeBasicHtmlEntities(
+        m[3].replace(/\\"/g, '"').replace(/\\u([\dA-Fa-f]{4})/g, (_, h) =>
+          String.fromCharCode(parseInt(h, 16))
+        )
+      );
+      const pubMs = Date.parse(m[4]);
+      push(
+        path,
+        title || titleFromUrlSlug(path),
+        Number.isFinite(pubMs) ? new Date(pubMs).toISOString() : null
+      );
+    }
+  } else if (conf.parser === 'perplexity-blog') {
+    // Hub ブログ埋め込み JSON: publishedAt → slug → title
+    const entryRe =
+      /"publishedAt":"(20\d{2}-\d{2}-\d{2})","slug":"([^"]+)","summary":"(?:\\.|[^"\\])*","title":"((?:\\.|[^"\\])*)"/g;
+    for (const m of html.matchAll(entryRe)) {
+      const slug = m[2];
+      if (slug.startsWith('category')) continue;
+      const title = decodeBasicHtmlEntities(
+        m[3].replace(/\\"/g, '"').replace(/\\u([\dA-Fa-f]{4})/g, (_, h) =>
+          String.fromCharCode(parseInt(h, 16))
+        )
+      );
+      const pubMs = Date.parse(`${m[1]}T12:00:00.000Z`);
+      push(
+        `/hub/blog/${slug}`,
+        title || titleFromUrlSlug(slug),
+        Number.isFinite(pubMs) ? new Date(pubMs).toISOString() : null
+      );
+    }
+  } else if (conf.parser === 'windsurf-changelog') {
+    // Mintlify 系 changelog: バージョンラベル + 日付 + 本文（Claude Code と同型の差分更新）
+    const entryRe =
+      /data-component-part="update-label">([^<]+)<\/button>[\s\S]*?data-component-part="update-description">((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2})<\/div>[\s\S]*?data-component-part="update-content">([\s\S]*?)(?=data-component-part="update-label"|$)/gi;
+    for (const m of html.matchAll(entryRe)) {
+      const version = decodeBasicHtmlEntities(m[1]).trim();
+      const dateLabel = m[2].trim();
+      const body = decodeBasicHtmlEntities(
+        m[3].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
+      ).trim();
+      if (!body) continue;
+      const summary =
+        body.length > 100 ? `${body.slice(0, 97).trim()}…` : body;
+      const title = version ? `${version}: ${summary}` : summary;
+      const slug = slugifyHeading(`${version}-${dateLabel}-${body.slice(0, 40)}`);
+      push(`/changelog#${slug}`, title, parseEnglishMonthDayYear(dateLabel));
     }
   }
 
@@ -842,6 +933,7 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-koala-ai': 'Koala AI',
   'source-copyai': 'Copy.ai',
   'source-synthesia': 'Synthesia',
+  'source-arcads': 'Arcads',
   'source-notion': 'Notion',
 };
 
@@ -1467,7 +1559,9 @@ async function main() {
     : [];
 
   const isIngestible = (s: Source) =>
-    Boolean(s.feed_url) || Boolean(SITEMAP_FEED_FALLBACKS[s.id]);
+    Boolean(s.feed_url) ||
+    Boolean(SITEMAP_FEED_FALLBACKS[s.id]) ||
+    Boolean(LISTING_FEED_FALLBACKS[s.id]);
   const checkedSources = sources.filter(
     (s) => s.terms_checked && isIngestible(s)
   );
@@ -1579,20 +1673,38 @@ async function main() {
         }
       }
 
-      // ブログ一覧フォールバック（Synthesia 等）。RSSとマージして新しい公式記事も拾う
+      // ブログ一覧フォールバック（Synthesia / Arcads 等）。RSS・sitemap とマージ
       const listing = await itemsFromListingFallback(source.id);
       if (listing && listing.length > 0) {
-        const seen = new Set(feedItems.map((i) => i.link));
+        const byLink = new Map(feedItems.map((i) => [i.link, i]));
         let added = 0;
+        let titled = 0;
         for (const item of listing) {
-          if (seen.has(item.link)) continue;
+          const existing = byLink.get(item.link);
+          if (existing) {
+            // sitemap のスラッグ見出しより一覧の正式タイトルを優先
+            if (
+              item.title &&
+              item.title.trim() &&
+              item.title !== existing.title
+            ) {
+              existing.title = item.title;
+              titled += 1;
+            }
+            if (!existing.pubDate && item.pubDate) {
+              existing.pubDate = item.pubDate;
+            }
+            continue;
+          }
           feedItems.push(item);
-          seen.add(item.link);
+          byLink.set(item.link, item);
           added += 1;
         }
-        if (added > 0) {
+        if (added > 0 || titled > 0) {
           console.warn(
-            `  ~ listing併用: [${source.name}] +${added}件（公式ブログ）`
+            `  ~ listing併用: [${source.name}] +${added}件` +
+              (titled > 0 ? `・タイトル更新${titled}` : '') +
+              `（公式ブログ）`
           );
           lastErr = null;
         }

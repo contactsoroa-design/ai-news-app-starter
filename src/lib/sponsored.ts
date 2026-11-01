@@ -308,6 +308,32 @@ export function findNearestSponsoredIndex(
   return -1;
 }
 
+/**
+ * 広告カードから「他の広告」へ。
+ * 同じ製品（tool_tag / advertiser_name 等）のカードだけ対象。次以降優先、無ければ先頭側へ循環。
+ */
+export function findNextSponsoredIndex(
+  feed: FeedCardItem[],
+  fromIndex: number,
+  current: SponsoredItem
+): number {
+  if (feed.length < 2) return -1;
+  const start = Math.max(0, Math.min(fromIndex, feed.length - 1));
+  for (let i = start + 1; i < feed.length; i++) {
+    const item = feed[i];
+    if (isSponsoredItem(item) && sponsoredFeedIdMatches(item, current)) {
+      return i;
+    }
+  }
+  for (let i = 0; i < start; i++) {
+    const item = feed[i];
+    if (isSponsoredItem(item) && sponsoredFeedIdMatches(item, current)) {
+      return i;
+    }
+  }
+  return -1;
+}
+
 /** 決定的シャッフル（同じ seed なら同じ順。スワイプ中の再計算でもぶれない） */
 function shuffleWithSeed<T>(items: readonly T[], seed: number): T[] {
   const out = [...items];

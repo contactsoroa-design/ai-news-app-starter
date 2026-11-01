@@ -740,6 +740,7 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-koala-ai': 'Koala AI',
   'source-copyai': 'Copy.ai',
   'source-synthesia': 'Synthesia',
+  'source-arcads': 'Arcads',
   'source-notion': 'Notion',
 };
 
@@ -785,6 +786,7 @@ const SOURCE_ALLOWED_TOOLS: Record<string, readonly string[]> = {
   'source-koala-ai': ['Koala AI'],
   'source-copyai': ['Copy.ai'],
   'source-synthesia': ['Synthesia'],
+  'source-arcads': ['Arcads'],
   'source-notion': ['Notion'],
 };
 

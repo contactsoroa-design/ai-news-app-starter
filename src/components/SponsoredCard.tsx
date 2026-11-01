@@ -20,6 +20,14 @@ const SPONSOR_THUMBNAILS: Record<string, ImageSourcePropType> = {
   'sponsor-firecrawl-6': require('../../assets/sponsors/firecrawl-6.jpg'),
   'sponsor-firecrawl-7': require('../../assets/sponsors/firecrawl-7.jpg'),
   'sponsor-firecrawl-8': require('../../assets/sponsors/firecrawl-8.jpg'),
+  'sponsor-arcads-1': require('../../assets/sponsors/arcads-card-1.jpg'),
+  'sponsor-arcads-2': require('../../assets/sponsors/arcads-card-2.jpg'),
+  'sponsor-arcads-3': require('../../assets/sponsors/arcads-card-3.jpg'),
+  'sponsor-arcads-4': require('../../assets/sponsors/arcads-card-4.jpg'),
+  'sponsor-arcads-5': require('../../assets/sponsors/arcads-card-5.jpg'),
+  'sponsor-arcads-6': require('../../assets/sponsors/arcads-card-6.jpg'),
+  'sponsor-arcads-7': require('../../assets/sponsors/arcads-card-7.jpg'),
+  'sponsor-arcads-8': require('../../assets/sponsors/arcads-card-8.jpg'),
 };
 
 type SponsoredCardProps = {
@@ -31,6 +39,8 @@ type SponsoredCardProps = {
   locale?: AppLocale;
   overrideTool?: string | null;
   onHide: (sponsoredId: string) => void;
+  /** フィード内の別の広告カードへ（無いときは非表示） */
+  onNextSponsored?: (() => void) | null;
 };
 
 /** 記事カードと同じ NewsCard レイアウトに載せるため Article 形へ変換する */
@@ -65,6 +75,7 @@ export const SponsoredCard = memo(function SponsoredCard({
   locale = 'ja',
   overrideTool = null,
   onHide,
+  onNextSponsored = null,
 }: SponsoredCardProps) {
   const localizedItem = useMemo(
     () => localizeSponsoredItem(item, locale),
@@ -74,8 +85,9 @@ export const SponsoredCard = memo(function SponsoredCard({
     () => toArticle(localizedItem),
     [localizedItem]
   );
-  // interleave が同一案件を複数差し込むとき id に __slot_N を付ける
-  const mediaBaseId = item.id.replace(/__slot_\d+$/, '');
+  // 差し込み時 id に __slot_N / ツール・ソース先頭一覧時に __list_N が付く。
+  // どちらも外さないと SPONSOR_THUMBNAILS が外れ、remote image_url（別クロップ）になる。
+  const mediaBaseId = item.id.replace(/__(?:slot|list)_\d+$/, '');
   const localThumb = SPONSOR_THUMBNAILS[mediaBaseId] ?? null;
   const sponsorIcon = resolveSponsoredLocalIcon(item);
   const t = getCopy(locale);
@@ -102,6 +114,7 @@ export const SponsoredCard = memo(function SponsoredCard({
       }
       iconSource={sponsorIcon}
       showNotInterested={false}
+      onNextSponsored={onNextSponsored}
       isSaved={false}
       onToggleSave={() => {
         // スポンサードは保存対象外。レール形状だけ記事と揃える

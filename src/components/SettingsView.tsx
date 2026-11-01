@@ -7,6 +7,7 @@ import {
   StyleSheet,
   Text,
   View,
+  type ImageSourcePropType,
 } from 'react-native';
 import { Image } from 'expo-image';
 import Svg, { Circle, Path, Rect } from 'react-native-svg';
@@ -21,6 +22,10 @@ import {
   regionLocales,
 } from '../lib/config';
 import { getFaviconUrl } from '../lib/feed';
+import {
+  getSponsorLocalIcon,
+  getSponsorLocalIconForSourceId,
+} from '../lib/sponsorIcons';
 import type { AppLocale, Source, UserPrefs } from '../lib/types';
 import {
   genres as allGenres,
@@ -244,12 +249,15 @@ function GenreIcon({ genre, color }: { genre: string; color: string }) {
  */
 export function SiteFaviconBadge({
   siteUrl,
+  localSource = null,
   fallbackInitial,
   fallbackBg,
   fallbackFg,
   sizePx = 22,
 }: {
   siteUrl: string | undefined;
+  /** 公式シンボル（未加工）。ある場合は favicon より優先 */
+  localSource?: ImageSourcePropType | null;
   fallbackInitial: string;
   fallbackBg: string;
   fallbackFg: string;
@@ -257,6 +265,34 @@ export function SiteFaviconBadge({
 }) {
   const [failed, setFailed] = useState(false);
   const faviconUrl = siteUrl ? getFaviconUrl(siteUrl) : null;
+  const iconSize = Math.round(sizePx * 0.76);
+
+  if (localSource) {
+    return (
+      <View
+        style={[
+          styles.faviconWrap,
+          {
+            width: sizePx,
+            height: sizePx,
+            borderRadius: sizePx / 2,
+          },
+        ]}
+      >
+        <Image
+          source={localSource}
+          style={{
+            width: iconSize,
+            height: iconSize,
+            borderRadius: 3,
+          }}
+          contentFit="contain"
+          cachePolicy="memory-disk"
+          transition={0}
+        />
+      </View>
+    );
+  }
 
   if (faviconUrl && !failed) {
     return (
@@ -274,8 +310,8 @@ export function SiteFaviconBadge({
           source={{ uri: faviconUrl }}
           recyclingKey={faviconUrl}
           style={{
-            width: Math.round(sizePx * 0.76),
-            height: Math.round(sizePx * 0.76),
+            width: iconSize,
+            height: iconSize,
             borderRadius: 3,
           }}
           contentFit="contain"
@@ -627,6 +663,7 @@ export function SettingsView({
                   >
                     <SiteFaviconBadge
                       siteUrl={toolSiteUrls[tool]}
+                      localSource={getSponsorLocalIcon(tool)}
                       fallbackInitial={badge.initial}
                       fallbackBg={badge.bg}
                       fallbackFg={badge.fg}
@@ -721,6 +758,7 @@ export function SettingsView({
                       >
                         <SiteFaviconBadge
                           siteUrl={src.site_url}
+                          localSource={getSponsorLocalIconForSourceId(src.id)}
                           fallbackInitial={initial}
                           fallbackBg={uiColors.avatarSurface}
                           fallbackFg={text.primary}

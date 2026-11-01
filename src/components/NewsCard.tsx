@@ -123,6 +123,11 @@ type NewsCardProps = {
     iconSource?: ImageSourcePropType | null;
     onPress: () => void;
   } | null;
+  /**
+   * スポンサードカード右レール: フィード内の別広告へジャンプ。
+   * 興味なしの空き枠に置き、他に広告が無いときは出さない。
+   */
+  onNextSponsored?: (() => void) | null;
   isSaved: boolean;
   onToggleSave: (articleId: string) => void;
   onHideArticle: (articleId: string) => void;
@@ -146,6 +151,7 @@ export const NewsCard = memo(function NewsCard({
   iconSource = null,
   showNotInterested = true,
   relatedSponsor = null,
+  onNextSponsored = null,
   isSaved,
   onToggleSave,
   onHideArticle,
@@ -213,7 +219,11 @@ export const NewsCard = memo(function NewsCard({
   }, [summaryModalOpen]);
 
   const faviconUrl = iconSource ? null : getArticleSourceFaviconUrl(article);
-  const showBundledThumb = Boolean(thumbnailSource) && !ogImageFailed;
+  // require() のローカルサムネは number。失敗しても縦長 remote OG へ落とさない
+  const isBundledLocalThumb =
+    typeof thumbnailSource === 'number' || Array.isArray(thumbnailSource);
+  const showBundledThumb =
+    Boolean(thumbnailSource) && (isBundledLocalThumb || !ogImageFailed);
   const showOgImage =
     showBundledThumb || (Boolean(article.og_image_url) && !ogImageFailed);
   const showBundledIcon = Boolean(iconSource) && !faviconFailed;
@@ -221,7 +231,7 @@ export const NewsCard = memo(function NewsCard({
     showBundledIcon || (Boolean(faviconUrl) && !faviconFailed);
   const thumbImageSource: ImageSourcePropType | null = showBundledThumb
     ? (thumbnailSource as ImageSourcePropType)
-    : article.og_image_url
+    : !ogImageFailed && article.og_image_url
       ? { uri: article.og_image_url }
       : null;
   const iconImageSource: ImageSourcePropType | null = showBundledIcon
@@ -975,8 +985,33 @@ export const NewsCard = memo(function NewsCard({
             </Svg>
             <Text style={styles.railLabel}>{t.rail.notInterested}</Text>
           </Pressable>
+        ) : isSponsored && onNextSponsored ? (
+          <Pressable
+            style={styles.railButton}
+            onPress={onNextSponsored}
+            accessibilityRole="button"
+            accessibilityLabel={t.rail.nextSponsoredAria}
+          >
+            <Svg width={30} height={30} viewBox="0 0 24 24" fill="none">
+              <Path
+                d="M4 5h11v11H4z"
+                stroke={text.primary}
+                strokeWidth={2}
+                strokeLinejoin="round"
+              />
+              <Path
+                d="M9 16v3h11V8h-3"
+                stroke={text.primary}
+                strokeWidth={2}
+                strokeLinejoin="round"
+              />
+            </Svg>
+            <Text style={styles.railLabel} numberOfLines={1}>
+              {t.rail.nextSponsored}
+            </Text>
+          </Pressable>
         ) : (
-          // 興味なし非表示でも保存・共有・開くの縦位置を記事カードと揃える
+          // 興味なし／他の広告が無いときも保存・共有・開くの縦位置を記事カードと揃える
           <View style={styles.railButton} pointerEvents="none" />
         )}
       </View>

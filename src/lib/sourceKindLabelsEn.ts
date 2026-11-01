@@ -11,7 +11,8 @@ export const sourceKindLabelsEn: Record<string, string> = {
   'Gemini・Google AI Studio 公式発表':
     'Gemini & Google AI Studio announcements',
   'Grok 新モデル・APIアナウンス': 'Grok model & API announcements',
-  'Perplexity 新機能・Sonar API更新': 'Perplexity features & Sonar API updates',
+  'Perplexity 公式Hubブログ（製品・API・研究の更新）':
+    'Perplexity Hub blog (product, API, research)',
   'Mistral 新モデル・軽量モデル発表':
     'Mistral model & lightweight model launches',
   'Llama・オープンモデル研究発表': 'Llama & open-model research',
@@ -37,9 +38,10 @@ export const sourceKindLabelsEn: Record<string, string> = {
     'HeyGen official: AI avatars, dubbing & short video',
   'TikTok / Reels / Shorts 向けのAI字幕・ショート動画編集 CapCut公式':
     'CapCut official: AI captions & short-form editing',
-  'AIコードエディタ Cursor 新機能・更新': 'Cursor AI editor updates',
-  'エージェント型IDE Windsurf / Cascade 更新':
-    'Windsurf / Cascade agentic IDE updates',
+  'AIコードエディタ Cursor 公式ブログ（製品・研究・セキュリティ更新）':
+    'Cursor official blog (product, research, security)',
+  'Windsurf / Devin Desktop 公式Changelog（バージョンごとの更新）':
+    'Windsurf / Devin Desktop official changelog (per version)',
   'ブラウザ完結フルスタックAI生成 Bolt.new 更新':
     'Bolt.new in-browser full-stack AI updates',
   'ブラウザ完結フルスタックAI生成 Bolt.new 公式ブログ・製品更新':
@@ -82,6 +84,8 @@ export const sourceKindLabelsEn: Record<string, string> = {
   '動画生成AI Genシリーズ公式発表': 'Official Gen video-AI announcements',
   '音声生成・吹き替え・会話AIアナウンス':
     'Speech, dubbing & conversational AI announcements',
+  'AI UGC動画広告・合成アクター・広告クリエイティブの公式ブログ':
+    'AI UGC video ads, synthetic actors & ad creative blog',
   '画像生成AI 新バージョン・Web機能発表':
     'Image-gen model & web feature launches',
   'Notion AI・ワークスペース新機能': 'Notion AI & workspace features',

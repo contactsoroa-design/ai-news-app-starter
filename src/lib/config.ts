@@ -44,6 +44,8 @@ const copyJa = {
     notInterested: '興味なし',
     relatedSponsor: '製品',
     relatedSponsorAria: (name: string) => `${name}の広告カードへ移動`,
+    nextSponsored: '他の広告',
+    nextSponsoredAria: '同じ製品の別の広告カードへ移動',
   },
   card: {
     ogpFallbackLabel: '元記事のサムネイル（OGP画像）',
@@ -168,6 +170,8 @@ const copyJa = {
   errorNetwork: '通信に失敗しました。接続を確認して再試行してください。',
   retryButton: '再読み込み',
   refreshingFeed: '最新のニュースを取得中…',
+  /** 起動直後：端末キャッシュ表示中に裏でリモート取得しているとき */
+  syncingFeed: '最新のニュースを同期中…',
 } as const;
 
 type CopyShape = {
@@ -213,6 +217,8 @@ const copyEn: CopyShape = {
     notInterested: 'Not for me',
     relatedSponsor: 'Product',
     relatedSponsorAria: (name: string) => `Jump to ${name} sponsored card`,
+    nextSponsored: 'More ads',
+    nextSponsoredAria: 'Jump to another ad for the same product',
   },
   card: {
     ogpFallbackLabel: 'Article thumbnail (OGP image)',
@@ -334,6 +340,7 @@ const copyEn: CopyShape = {
   errorNetwork: 'Couldn’t load the feed. Check your connection and try again.',
   retryButton: 'Reload',
   refreshingFeed: 'Fetching the latest news…',
+  syncingFeed: 'Syncing the latest news…',
 };
 
 export type AppCopy = CopyShape;
@@ -453,9 +460,9 @@ export const limits = {
   // 端末内の「興味なし（非表示ID）」最大保持件数
   maxHiddenIds: 500,
   /** おすすめフィードでスポンサードを差し込む間隔（記事N件ごと） */
-  sponsoredEveryN: 5,
+  sponsoredEveryN: 4,
   /** 先頭から何件記事を出してから最初のスポンサードを出すか */
-  sponsoredMinArticlesBeforeFirst: 3,
+  sponsoredMinArticlesBeforeFirst: 2,
   /**
    * expo-image ディスクキャッシュ上限（バイト）。
    * OGP無制限蓄積を防ぎつつ、直近表示分は残してスワイプ／探索の体感を維持する。
