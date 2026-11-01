@@ -21,6 +21,16 @@ type RawFeedItem = {
   snippet: string;
 };
 
+/** 429や締切で今回拾えなかった候補（次回 ingest の先頭で再試行） */
+type DeferredFeedItem = {
+  url: string;
+  source_id: string;
+  title: string;
+  pubDate: string | null;
+  snippet?: string;
+  saved_at: string;
+};
+
 type SummaryResult = {
   title_ja: string;
   summary_ja: string;
@@ -64,10 +74,18 @@ const DEFAULT_ARTICLES_PER_HOUR = 15;
  */
 const DEFAULT_PACE_SLACK = 6;
 const DEFAULT_QUOTA_TIMEZONE = 'America/Los_Angeles';
-/** 連続でレート制限スキップしたら実行全体を止める（空打ち防止） */
+/**
+ * 連続でレート制限スキップしたら、まず実行内クールダウン1回を挟んで継続。
+ * クールダウン後にもう一度連続したら実行停止（空打ち防止）。
+ */
 const DEFAULT_RATE_LIMIT_STOP_STREAK = 2;
-/** 各RSSから見る最新件数（要約するのは maxPerRun まで） */
-const RSS_ITEMS_PER_SOURCE = 6;
+/** 429 連続後の実行内クールダウン（枠が残っているあいだは待って拾う） */
+const DEFAULT_RATE_COOLDOWN_MS = 75_000;
+/** 各RSSから見る最新件数（要約するのは maxPerRun まで）。窓落ち取りこぼし低減 */
+const RSS_ITEMS_PER_SOURCE = 10;
+/** 429／締切で残せなかった候補の次回優先キュー上限 */
+const DEFERRED_QUEUE_MAX = 40;
+const DEFERRED_FILE_NAME = 'ingest-deferred.json';
 /** RSS取得タイムアウト（arXiv 等は遅いことがある） */
 const RSS_FETCH_TIMEOUT_MS = Number(process.env.RSS_FETCH_TIMEOUT_MS || '20000');
 const RSS_FETCH_HEADERS: Record<string, string> = {
@@ -692,13 +710,68 @@ function isRateLimitError(err: unknown): boolean {
 }
 
 function rateLimitWaitMs(err: unknown, attempt: number): number {
-  // 旧上限3分×多数回だと1実行が何十分も埋まる。自己修復のため短く抑える
-  const hardCap = 45_000;
+  // 枠が余っているのに即諦めるのを避ける。Actions 20分／soft 12分の範囲で待つ
+  const hardCap = 90_000;
   if (err instanceof LlmHttpError && err.retryAfterMs && err.retryAfterMs > 0) {
     return Math.min(err.retryAfterMs, hardCap);
   }
-  // 12s → 24s → 45s …
+  // 12s → 24s → 48s → 90s …
   return Math.min(12_000 * 2 ** attempt, hardCap);
+}
+
+function deferredFilePath(rootDir: string): string {
+  return path.join(rootDir, 'data', DEFERRED_FILE_NAME);
+}
+
+function loadDeferredQueue(rootDir: string): DeferredFeedItem[] {
+  const filePath = deferredFilePath(rootDir);
+  if (!fs.existsSync(filePath)) return [];
+  try {
+    const raw = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as unknown;
+    if (!Array.isArray(raw)) return [];
+    return raw.filter(
+      (row): row is DeferredFeedItem =>
+        Boolean(row) &&
+        typeof row === 'object' &&
+        typeof (row as DeferredFeedItem).url === 'string' &&
+        typeof (row as DeferredFeedItem).source_id === 'string' &&
+        typeof (row as DeferredFeedItem).title === 'string'
+    );
+  } catch {
+    console.warn('ingest-deferred.json が読めないため空キューから開始します');
+    return [];
+  }
+}
+
+function writeDeferredQueue(rootDir: string, items: DeferredFeedItem[]): void {
+  const filePath = deferredFilePath(rootDir);
+  const trimmed = items.slice(0, DEFERRED_QUEUE_MAX);
+  fs.writeFileSync(filePath, `${JSON.stringify(trimmed, null, 2)}\n`, 'utf-8');
+}
+
+function enqueueDeferred(
+  queue: DeferredFeedItem[],
+  item: {
+    url: string;
+    source_id: string;
+    title: string;
+    pubDate: string | null;
+    snippet?: string;
+  }
+): void {
+  const url = item.url.trim();
+  if (!url || queue.some((q) => q.url === url)) return;
+  queue.unshift({
+    url,
+    source_id: item.source_id,
+    title: item.title,
+    pubDate: item.pubDate,
+    snippet: item.snippet,
+    saved_at: new Date().toISOString(),
+  });
+  if (queue.length > DEFERRED_QUEUE_MAX) {
+    queue.length = DEFERRED_QUEUE_MAX;
+  }
 }
 
 async function fetchWithTimeout(
@@ -1240,8 +1313,8 @@ async function summarizeWithRetry(
   let lastErr: unknown;
   let qualityAttempt = 0;
   let rateAttempt = 0;
-  // 枠枯渇時の空打ちを減らす。連続失敗は呼び出し側で実行停止する
-  const maxRateRetries = 1;
+  // 枠が残っているあいだは待って拾う（連続失敗の実行停止は呼び出し側）
+  const maxRateRetries = 3;
 
   while (qualityAttempt <= maxQualityRetries) {
     try {
@@ -1357,6 +1430,10 @@ async function main() {
         DEFAULT_RATE_LIMIT_STOP_STREAK
     )
   );
+  const rateCooldownMs = Math.max(
+    15_000,
+    Number(process.env.INGEST_RATE_COOLDOWN_MS || DEFAULT_RATE_COOLDOWN_MS)
+  );
   const maxPerSourcePerRun = Math.max(
     1,
     Number(
@@ -1436,7 +1513,7 @@ async function main() {
     );
   } else {
     console.log(
-      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件（ペース後=${effectiveRunCap}） / 1時間上限=${maxPerHour}件 / 1日上限=${maxPerDay}件（${quotaTimeZone}＝Gemini RPD） / ペース=${Math.round(dayFraction * 100)}%予算${pacedBudgetNow}(+slack${paceSlack}) 済${alreadyToday} / 429連続停止=${rateLimitStopStreak} / LLMタイムアウト=${LLM_FETCH_TIMEOUT_MS}ms / ソフト締切=${Math.round(softDeadlineMs / 1000)}s`
+      `情報: プロバイダ=${detectProvider(apiKey, model)} / モデル=${model} / 記事間隔=${articleDelayMs}ms / 1実行上限=${maxPerRun}件（ペース後=${effectiveRunCap}） / 1時間上限=${maxPerHour}件 / 1日上限=${maxPerDay}件（${quotaTimeZone}＝Gemini RPD） / ペース=${Math.round(dayFraction * 100)}%予算${pacedBudgetNow}(+slack${paceSlack}) 済${alreadyToday} / 429連続→クールダウン1回後停止=${rateLimitStopStreak} / クールダウン=${Math.round(rateCooldownMs / 1000)}s / LLMタイムアウト=${LLM_FETCH_TIMEOUT_MS}ms / ソフト締切=${Math.round(softDeadlineMs / 1000)}s / RSS窓=${RSS_ITEMS_PER_SOURCE}`
     );
   }
 
@@ -1589,8 +1666,22 @@ async function main() {
   let hourCount = 0;
   let rateLimitStreak = 0;
   let stoppedForRateLimit = false;
+  /** 実行内で 429 連続時の長め待機を使えるのは1回まで */
+  let rateCooldownUsed = false;
   const newArticles: Article[] = [];
   const acceptedBySource = new Map<string, number>();
+  const sourceById = new Map(activeSources.map((s) => [s.id, s]));
+  const knownUrls = new Set(existingArticles.map((a) => a.url));
+  const deferredQueue = loadDeferredQueue(rootDir).filter((row) => {
+    if (knownUrls.has(row.url)) return false;
+    if (isArticleTooOld(row.pubDate, maxArticleAgeDays, now)) return false;
+    return Boolean(sourceById.get(row.source_id));
+  });
+  if (deferredQueue.length > 0) {
+    console.log(
+      `優先キュー: 前回持ち越し ${deferredQueue.length} 件を先に試します`
+    );
+  }
 
   const atDayCap = () => alreadyToday + todayCount >= maxPerDay;
   const atHourCap = () => alreadyThisHour + hourCount >= maxPerHour;
@@ -1620,6 +1711,13 @@ async function main() {
       console.warn(
         `ソフト締切（${Math.round(softDeadlineMs / 1000)}s）に達したため残りは次回へ回します（途中結果は保存）`
       );
+      enqueueDeferred(deferredQueue, {
+        url: item.link,
+        source_id: source.id,
+        title: item.title,
+        pubDate: item.pubDate,
+        snippet: item.snippet,
+      });
       return 'stop';
     }
     if (stoppedForRateLimit) return 'stop';
@@ -1653,13 +1751,32 @@ async function main() {
       const outcome = await summarizeWithRetry(item, source, apiKey, model, 3);
       if (outcome.status !== 'ok') {
         if (outcome.status === 'rate_limited') {
+          enqueueDeferred(deferredQueue, {
+            url: item.link,
+            source_id: source.id,
+            title: item.title,
+            pubDate: item.pubDate,
+            snippet: item.snippet,
+          });
           rateLimitStreak += 1;
           if (rateLimitStreak >= rateLimitStopStreak) {
-            stoppedForRateLimit = true;
-            console.warn(
-              `レート制限が ${rateLimitStreak} 件連続したため、残りは次回（枠回復後）へ回します`
-            );
-            return 'stop';
+            const remainingMs = softDeadlineMs - (Date.now() - runStartedAt);
+            const canCooldown =
+              !rateCooldownUsed && remainingMs > rateCooldownMs + 15_000;
+            if (canCooldown) {
+              console.warn(
+                `レート制限が ${rateLimitStreak} 件連続。枠が残っているため ${Math.round(rateCooldownMs / 1000)}s クールダウンして継続します`
+              );
+              await sleep(rateCooldownMs);
+              rateCooldownUsed = true;
+              rateLimitStreak = 0;
+            } else {
+              stoppedForRateLimit = true;
+              console.warn(
+                `レート制限が ${rateLimitStreak} 件連続したため、残りは次回（枠回復後）へ回します（優先キューへ退避）`
+              );
+              return 'stop';
+            }
           }
         } else {
           rateLimitStreak = 0;
@@ -1689,9 +1806,13 @@ async function main() {
       });
 
       newArticles.push(article);
+      knownUrls.add(article.url);
       todayCount += 1;
       hourCount += 1;
       acceptedBySource.set(source.id, taken + 1);
+      // 成功した URL は優先キューから外す
+      const di = deferredQueue.findIndex((d) => d.url === article.url);
+      if (di >= 0) deferredQueue.splice(di, 1);
       if (apiKey) {
         estimatedMonthlyCost += ESTIMATED_COST_PER_ARTICLE_JPY;
       }
@@ -1724,6 +1845,29 @@ async function main() {
       if (result === 'stop') break;
     }
   };
+
+  // Pass 0: 前回 429／締切で残せなかった候補を先に消化（枠余り取りこぼし対策）
+  if (deferredQueue.length > 0 && effectiveRunCap > 0) {
+    const deferredCandidates: Array<{ source: Source; item: RawFeedItem }> = [];
+    for (const row of [...deferredQueue]) {
+      const source = sourceById.get(row.source_id);
+      if (!source) continue;
+      deferredCandidates.push({
+        source,
+        item: {
+          title: row.title,
+          link: row.url,
+          pubDate: row.pubDate,
+          snippet: row.snippet ?? '',
+        },
+      });
+    }
+    await runPass(
+      'Pass0 優先キュー',
+      deferredCandidates,
+      Math.max(maxPerSourcePerRun, maxPerRun)
+    );
+  }
 
   // Pass 1: 不足ソースのみ・1ソース1件（偏り抑制）
   await runPass('Pass1 不足ソース', primaryCandidates, maxPerSourcePerRun);
@@ -1760,6 +1904,22 @@ async function main() {
 
   if (stoppedForRateLimit) {
     console.log('レート制限のため途中終了（途中結果は保存）。');
+    // 枠は余っているので、まだ見ていない新着候補を優先キューへ退避
+    for (const { source, item } of [
+      ...overflowCandidates,
+      ...primaryCandidates,
+    ]) {
+      if (deferredQueue.length >= DEFERRED_QUEUE_MAX) break;
+      if (knownUrls.has(item.link)) continue;
+      if (isArticleTooOld(item.pubDate, maxArticleAgeDays, now)) continue;
+      enqueueDeferred(deferredQueue, {
+        url: item.link,
+        source_id: source.id,
+        title: item.title,
+        pubDate: item.pubDate,
+        snippet: item.snippet,
+      });
+    }
   } else if (atRunCap()) {
     console.log(
       `1実行の上限件数 (${maxPerRun}件) に達しました（残りは次回 ingest で処理）。`
@@ -1782,8 +1942,17 @@ async function main() {
   );
 
   writeArticlesJson(rootDir, merged);
+  // 取り込み済み・古すぎを落としてキューを保存（次回の枠で先に拾う）
+  const remainingDeferred = deferredQueue.filter((row) => {
+    if (knownUrls.has(row.url) || merged.some((a) => a.url === row.url)) {
+      return false;
+    }
+    if (isArticleTooOld(row.pubDate, maxArticleAgeDays, now)) return false;
+    return Boolean(sourceById.get(row.source_id));
+  });
+  writeDeferredQueue(rootDir, remainingDeferred);
   console.log(
-    `完了: 新規 ${newArticles.length} 件追加（直近 ${limits.retentionDays} 日間ストック合計: ${merged.length} 件） / data+public 同期済み`
+    `完了: 新規 ${newArticles.length} 件追加（直近 ${limits.retentionDays} 日間ストック合計: ${merged.length} 件） / data+public 同期済み / 優先キュー残 ${remainingDeferred.length} 件`
   );
 }
 
