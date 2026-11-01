@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1793520144874-98ozb",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/monkey_gineer/articles/auth-study-03-authorization-models",
+    "published_at": "2026-11-01T00:40:16.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hUL09txj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25AA%258D%25E8%25A8%25BC%25E8%25AA%258D%25E5%258F%25AF%25E3%2582%2592%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589%25E5%25AD%25A6%25E3%2581%25B6%2520%25233%2520%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%25A4%25E3%2583%25B3%25E3%2581%25A7%25E3%2581%258D%25E3%2581%259F%25E4%25BA%25BA%25E3%2581%25AB%25E3%2580%2581%25E4%25BD%2595%25E3%2582%2592%25E8%25A8%25B1%25E3%2581%2599%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%2588ACL%25E3%2583%25BBRBAC%25E3%2583%25BBABAC%25E3%2583%25BBReBAC%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:monkey-gineer%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Q1MWU3YjgyOGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "認証・認可の基礎講座第3回：ログイン後の「何ができるか」を制御するACL・RBAC・ABAC・ReBACの概念と設計戦略",
+    "summary_ja": "本連載第3回では、「誰か」を確認する認証の次にくる「何をしてよいか」を制御する認可の仕組みを解説する。 ACL、RBAC、ABAC、ReBACという主要な認可モデルを取り上げ、権限管理の粒度や複雑性を比較。 オフィスビルで社員証があってもサーバー室には入れないのと同様、安全なアプリケーションには適切な認可設計が不可欠である。 単にログインさせるだけでなく、リソースへのアクセスを「最小権限の原則」に基づき制御するためのエンジニア向け実践ガイド。",
+    "translations": {
+      "ja": {
+        "title": "認証・認可の基礎講座第3回：ログイン後の「何ができるか」を制御するACL・RBAC・ABAC・ReBACの概念と設計戦略",
+        "summary": "本連載第3回では、「誰か」を確認する認証の次にくる「何をしてよいか」を制御する認可の仕組みを解説する。 ACL、RBAC、ABAC、ReBACという主要な認可モデルを取り上げ、権限管理の粒度や複雑性を比較。 オフィスビルで社員証があってもサーバー室には入れないのと同様、安全なアプリケーションには適切な認可設計が不可欠である。 単にログインさせるだけでなく、リソースへのアクセスを「最小権限の原則」に基づき制御するためのエンジニア向け実践ガイド。"
+      },
+      "en": {
+        "title": "AuthN vs. AuthZ Series Part 3: Mastering ACL, RBAC, ABAC, and ReBAC for Granular Resource Access Control",
+        "summary": "Following previous sessions on authentication, this article explores authorization: the critical layer that decides what authenticated users are allowed to do. Much like possessing an office ID doesn't grant access to the server room, successful login does not equal permission to execute all operations. The piece evaluates core authorization models including ACL (Access Control Lists), RBAC (Role-Based), ABAC (Attribute-Based), and ReBAC (Relationship-Based) to help builders select the right model for their application complexity. For developers, the practical takeaway is that granular authorization is a security requirement, not an afterthought. Implementing these patterns ensures adherence to the principle of least privilege, protecting sensitive data by explicitly defining exactly who can access specific resources within your system architecture."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-01T08:02:24.874Z"
+  },
+  {
+    "id": "art-1793520124846-o79cn",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/takujo/n/n0adaf55d005d",
+    "published_at": "2026-11-01T07:57:56.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/0114a9e7a762d888d3cba557c260b82556899deb.png",
+    "title_ja": "Twitch配信の視認性を向上させるカスタム時計・ステータスウィジェットを開発――ゲームプレイ映像に埋め込み視聴者へ状況を伝える工夫とは",
+    "summary_ja": "Twitch配信でゲーム映像だけでは状況が伝わりにくい課題を解決するため、現在のステータスや時刻を表示するカスタムウィジェットを開発。 配信画面のUXを改善する目的で、視聴者が今何をしているのかを直感的に把握できる仕組みを構築した。 小規模な個人開発であっても、配信体験という特定のニッチなUX課題に対してソリューションを提供することは、固定ファン獲得や視聴者維持に大きく貢献する。",
+    "translations": {
+      "ja": {
+        "title": "Twitch配信の視認性を向上させるカスタム時計・ステータスウィジェットを開発――ゲームプレイ映像に埋め込み視聴者へ状況を伝える工夫とは",
+        "summary": "Twitch配信でゲーム映像だけでは状況が伝わりにくい課題を解決するため、現在のステータスや時刻を表示するカスタムウィジェットを開発。 配信画面のUXを改善する目的で、視聴者が今何をしているのかを直感的に把握できる仕組みを構築した。 小規模な個人開発であっても、配信体験という特定のニッチなUX課題に対してソリューションを提供することは、固定ファン獲得や視聴者維持に大きく貢献する。"
+      },
+      "en": {
+        "title": "Developer Builds Custom Twitch Clock and Status Widget to Improve Stream UX and Viewer Clarity During Gameplay Sessions",
+        "summary": "Frustrated that standard gameplay footage alone often failed to communicate current stream context to his audience, a developer built a custom clock and status widget specifically for Twitch. The tool overlays essential information directly onto the stream, ensuring viewers can instantly grasp the player's activity without needing to ask or guess. This project demonstrates how identifying small, specific UX friction points within one's own community—like stream clarity—can drive meaningful improvements in viewer retention. For builders, it is a reminder that you do not need to ship massive platforms to add value; creating simple, utilitarian tools that solve immediate visibility problems for creators can be a highly effective way to refine the streaming experience."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-01T08:02:04.846Z"
+  },
+  {
+    "id": "art-1793520114705-wra9h",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.theguardian.com/technology/ng-interactive/2026/oct/30/ai-ghost-hunting",
+    "published_at": "2026-11-01T07:46:28.000Z",
+    "og_image_url": "https://i.guim.co.uk/img/media/1d39796c4dc7d5a873ed01119d02771c61581e07/414_0_1885_1508/master/1885.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=940e1e976c2901c34dcfb9cd3adf1600",
+    "title_ja": "「心霊現象」の探求にAIを導入—ガーディアン紙が明かすAIによる超常現象調査の現状と技術的・倫理的限界",
+    "summary_ja": "ガーディアン紙の特集は、歴史的に「超常現象」の証拠探しにAIがどう活用されているかを検証し、その現状と限界を浮き彫りにした。 AIは音声や映像解析でノイズを除去してパターンを抽出する一方で、ハルシネーション（幻覚）による「偽の幽霊」を生成するリスクを孕んでいる。 技術の発展が未解明な現象の解釈にどのようなバイアスをもたらすか、また科学的探求においてAIが出力する結果をどこまで信頼すべきかという倫理的な問いを投げかける。",
+    "translations": {
+      "ja": {
+        "title": "「心霊現象」の探求にAIを導入—ガーディアン紙が明かすAIによる超常現象調査の現状と技術的・倫理的限界",
+        "summary": "ガーディアン紙の特集は、歴史的に「超常現象」の証拠探しにAIがどう活用されているかを検証し、その現状と限界を浮き彫りにした。 AIは音声や映像解析でノイズを除去してパターンを抽出する一方で、ハルシネーション（幻覚）による「偽の幽霊」を生成するリスクを孕んでいる。 技術の発展が未解明な現象の解釈にどのようなバイアスをもたらすか、また科学的探求においてAIが出力する結果をどこまで信頼すべきかという倫理的な問いを投げかける。"
+      },
+      "en": {
+        "title": "Ghost in the machine: The Guardian explores the intersection of AI, data analysis, and the hunt for the supernatural",
+        "summary": "The Guardian’s interactive feature investigates how AI is currently transforming the search for supernatural phenomena, detailing its role in analyzing audio and video data to uncover patterns often dismissed as noise. While AI tools excel at clearing up ambiguous footage, the report highlights the critical risks posed by generative hallucinations, which frequently fabricate digital \"ghosts\" out of random artifacts. This intersection of machine learning and paranormal research raises significant questions about verification standards and the inherent bias introduced when algorithms interpret unexplained phenomena. For builders, the core takeaway is the danger of blind trust in pattern recognition—demonstrating how even sophisticated analysis can lead to confidently wrong conclusions when applied to chaotic, unverified input data."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-01T08:01:54.705Z"
+  },
+  {
+    "id": "art-1793520107869-s09j9",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/agentmash",
+    "published_at": "2026-10-31T18:08:19.000Z",
+    "og_image_url": null,
+    "title_ja": "チーム開発を加速するオープンソースのマルチプレイヤーAI「agentmash」が登場、複数のコーディングエージェントによる共同作業を統合",
+    "summary_ja": "agentmashは、チームのエンジニアリングワークフローにおいて複数のコーディングAIエージェントを協調させるためのオープンソースプラットフォームだ。 個々のエージェントが断片的にタスクを処理するのではなく、チームのコンテキストを共有して共同作業を行う仕組みを実現する。 開発者はこのプラットフォームを活用することで、孤立したエージェント環境を統合し、大規模なコードベースに対してチーム全体でAIの恩恵を最大化できるようになる。",
+    "translations": {
+      "ja": {
+        "title": "チーム開発を加速するオープンソースのマルチプレイヤーAI「agentmash」が登場、複数のコーディングエージェントによる共同作業を統合",
+        "summary": "agentmashは、チームのエンジニアリングワークフローにおいて複数のコーディングAIエージェントを協調させるためのオープンソースプラットフォームだ。 個々のエージェントが断片的にタスクを処理するのではなく、チームのコンテキストを共有して共同作業を行う仕組みを実現する。 開発者はこのプラットフォームを活用することで、孤立したエージェント環境を統合し、大規模なコードベースに対してチーム全体でAIの恩恵を最大化できるようになる。"
+      },
+      "en": {
+        "title": "Agentmash Launches as an Open-Source Multiplayer Framework to Coordinate Multiple Coding Agents for Collaborative Software Engineering Teams",
+        "summary": "Agentmash has launched as a new open-source platform designed to transform AI coding from isolated tasks into a coordinated, multi-agent effort for software engineering teams. Instead of having individual models work blindly, this framework provides a shared context layer that allows multiple coding agents to collaborate within the same development ecosystem. By creating a multi-player environment, Agentmash enables agents to handle complex, cross-functional tasks that were previously too fragmented for single models to manage effectively. For engineering leads, the key takeaway is that orchestrating multiple agents into a unified, shared-context architecture is the next necessary evolution for scaling AI productivity, rather than relying on disparate agents to guess the broader project requirements."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-01T08:01:47.869Z"
+  },
+  {
     "id": "art-1793519203590-70w5t",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
