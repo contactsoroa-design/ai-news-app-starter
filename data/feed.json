@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793492218247-qsa9w",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+    "published_at": "2026-10-31T22:10:01.000Z",
+    "og_image_url": null,
+    "title_ja": "Datasette-LLM 0.1a9公開：LLMプラグインのデフォルトモデル自動認識でDatasette Agentの導入設定が簡素化",
+    "summary_ja": "Datasette-LLM 0.1a9がリリースされ、CLIツール「LLM」で設定されたデフォルトモデルを自動的に継承できるようになった。 これにより、Datasette Agentを利用する際、個別にモデル設定を記述する必要がなくなり、`uvx --with datasette-agent datasette content.db`といったコマンドのみで迅速にセットアップが完了する。",
+    "translations": {
+      "ja": {
+        "title": "Datasette-LLM 0.1a9公開：LLMプラグインのデフォルトモデル自動認識でDatasette Agentの導入設定が簡素化",
+        "summary": "Datasette-LLM 0.1a9がリリースされ、CLIツール「LLM」で設定されたデフォルトモデルを自動的に継承できるようになった。 これにより、Datasette Agentを利用する際、個別にモデル設定を記述する必要がなくなり、`uvx --with datasette-agent datasette content.db`といったコマンドのみで迅速にセットアップが完了する。"
+      },
+      "en": {
+        "title": "Datasette-LLM 0.1a9 released, enabling Datasette Agent to automatically inherit your default LLM model configuration",
+        "summary": "Simon Willison has released version 0.1a9 of the datasette-llm plugin, introducing a minor but impactful user experience improvement: it now automatically inherits the default model configured in the underlying LLM CLI tool. Previously, developers were required to explicitly pass a model argument like `-s plugins.datasette-agent.default_model` to initialize Datasette Agent, adding friction to setup. With this release, you can spin up an agent environment instantly using commands like `uvx --with datasette-agent datasette content.db` without manual model declarations. This update significantly lowers the barrier for developers building agentic workflows directly on top of their local SQLite data stores, ensuring that the initial setup phase is as frictionless as possible for rapid iteration and experimentation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-01T00:16:58.247Z"
+  },
+  {
+    "id": "art-1793492211416-lsg6g",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/proper_clover730/n/na2a82532fb9f",
+    "published_at": "2026-11-01T00:15:16.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330785697/rectangle_large_type_2_096bb6c538552e716290e19d8b5e82ee.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「数字を疑いきれなかった」と確信した2日後の急転：指標の集計期間による認識の歪みとChatGPT流入激減の衝撃",
+    "summary_ja": "28日間のローリング平均で成長を確信していた指標が、カレンダー月単位で集計し直した途端、9月から10月にかけて約72%の激減を見せた。 原因は9月末以降のChatGPT経由の参照トラフィックがほぼ消滅したことにあり、集計期間という「窓」を変えただけでデータの意味が劇的に反転した。 開発者や個人開発者は、好調な数字を見た時こそ集計ロジックを再確認し、外部プラットフォームからの流入という「借り物のトラフィック」が持つ脆弱性を常に意識すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "「数字を疑いきれなかった」と確信した2日後の急転：指標の集計期間による認識の歪みとChatGPT流入激減の衝撃",
+        "summary": "28日間のローリング平均で成長を確信していた指標が、カレンダー月単位で集計し直した途端、9月から10月にかけて約72%の激減を見せた。 原因は9月末以降のChatGPT経由の参照トラフィックがほぼ消滅したことにあり、集計期間という「窓」を変えただけでデータの意味が劇的に反転した。 開発者や個人開発者は、好調な数字を見た時こそ集計ロジックを再確認し、外部プラットフォームからの流入という「借り物のトラフィック」が持つ脆弱性を常に意識すべきだ。"
+      },
+      "en": {
+        "title": "Why my data metric collapsed 72% overnight: How changing your aggregation window can hide critical user traffic trends",
+        "summary": "Just two days after publishing a post celebrating consistent growth based on a 28-day rolling window, I re-analyzed the same data using calendar months and discovered a 72% drop in hotel page clicks between September and October. The discrepancy revealed that nearly all of September’s traffic was driven by ChatGPT referrals, which effectively vanished by the end of the month. This experience serves as a stark reminder that data narratives are fragile; changing the aggregation window can completely invert your perceived performance. For indie hackers and developers, this is a lesson in skepticism: verify your cohort logic before celebrating, and never rely on 'borrowed traffic' from AI platforms as a sustainable growth channel without accounting for sudden referral shifts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-01T00:16:51.416Z"
+  },
+  {
+    "id": "art-1793492204888-su684",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.youtube.com/watch?v=kON2ZI2BNj8",
+    "published_at": "2026-11-01T00:05:14.000Z",
+    "og_image_url": null,
+    "title_ja": "AIデータセンターの隠された環境負荷を指摘、『Honest Government Ad』が問う「脱炭素と巨大AI開発」の矛盾と現実",
+    "summary_ja": "オーストラリアの人気動画シリーズ『Honest Government Ad』が、AIデータセンターが消費する膨大な電力と水資源を鋭く風刺。 AIモデルのトレーニングと推論には都市一つ分に匹敵するエネルギーが不可欠であり、IT企業の「グリーンなAI」という謳い文句と、実態としての炭素排出量増加の矛盾を告発している。 AIサービスを構築する開発者は、提供する機能の社会的コストが環境負荷に直結しているという事実を認識し、計算資源の効率化を技術選定の前提条件として組み込む必要がある。",
+    "translations": {
+      "ja": {
+        "title": "AIデータセンターの隠された環境負荷を指摘、『Honest Government Ad』が問う「脱炭素と巨大AI開発」の矛盾と現実",
+        "summary": "オーストラリアの人気動画シリーズ『Honest Government Ad』が、AIデータセンターが消費する膨大な電力と水資源を鋭く風刺。 AIモデルのトレーニングと推論には都市一つ分に匹敵するエネルギーが不可欠であり、IT企業の「グリーンなAI」という謳い文句と、実態としての炭素排出量増加の矛盾を告発している。 AIサービスを構築する開発者は、提供する機能の社会的コストが環境負荷に直結しているという事実を認識し、計算資源の効率化を技術選定の前提条件として組み込む必要がある。"
+      },
+      "en": {
+        "title": "Honest Government Ad critiques the massive energy and water costs of AI data centers and their environmental impact",
+        "summary": "The latest episode of 'Honest Government Ad' takes a critical look at the astronomical energy and water consumption required to fuel modern AI data centers. By highlighting how model training and ongoing inference demand the same power grid load as entire cities, the video exposes the disconnect between corporate greenwashing and the actual carbon footprint of the current AI boom. For builders and engineers, this serves as a sober reminder that every prompt has a physical cost. As regulations tighten and public scrutiny grows, developers must stop treating computational efficiency as an optional optimization and start considering the long-term environmental sustainability of their architectures and model selection as a core part of their product's design requirements."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-01T00:16:44.888Z"
+  },
+  {
+    "id": "art-1793492190082-bqum3",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/news/article/2611/01/2000002776/",
+    "published_at": "2026-10-31T23:31:07.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/news/article/ogp/2611/01/2000002776/10011089/2048",
+    "title_ja": "OpenAIやGoogleがAI学習用クローラーを共通制御へ：robots.txtでの一括拒否設定に対応",
+    "summary_ja": "OpenAI、Google、Microsoftは、Webサイト運営者がAI学習へのデータ利用可否をrobots.txtで一括制御できる共通規格への対応を正式に表明した。 Anthropicもこれに追随する姿勢を示しており、開発者やサイト管理者は特定のトークンを記述するだけで、主要なAI各社のクローラーを一元的に拒否・管理できる。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIやGoogleがAI学習用クローラーを共通制御へ：robots.txtでの一括拒否設定に対応",
+        "summary": "OpenAI、Google、Microsoftは、Webサイト運営者がAI学習へのデータ利用可否をrobots.txtで一括制御できる共通規格への対応を正式に表明した。 Anthropicもこれに追随する姿勢を示しており、開発者やサイト管理者は特定のトークンを記述するだけで、主要なAI各社のクローラーを一元的に拒否・管理できる。"
+      },
+      "en": {
+        "title": "OpenAI and Google to Support Unified robots.txt Controls for Blocking AI Model Training Crawlers",
+        "summary": "OpenAI, Google, and Microsoft have announced support for a standardized method allowing website operators to control AI training access via a unified robots.txt token. Anthropic has also indicated implementation plans, effectively allowing site owners to manage crawler access across major AI platforms without configuring individual agents. For builders managing content-heavy sites, this standardization drastically simplifies scraping prevention and data governance by replacing fragmented blocking rules with a single, reliable mechanism. This move signals a crucial shift toward giving creators more autonomy over their proprietary data in an era where AI training demand often overrides site-level restrictions. Implementing this common token is now a best practice for any developer looking to protect their site's data rights efficiently."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-01T00:16:30.082Z"
+  },
+  {
     "id": "art-1793491345095-q4jwe",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
