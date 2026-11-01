@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1793530908906-lyq4z",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Waipe/items/d42dd853953753e20122",
+    "published_at": "2026-11-01T09:04:32.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTA3NjU0JTJGNTA2YmNjOGZkNWZiNjc5Yzc3MWNkODI1YzgwMDJhNDQ1MWZkMzZiMCUyRnhfbGFyZ2UucG5nJTNGMTc5MjQ4MTcwOD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDk4Y2E3NzBmNDNiZjE2MTkyNmExNDM4OWM4MTI5NjI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1dceb914a3276b1895782f2c3ddb6709?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU3JUFDJUFDMDQ5JUU1JTlCJTlFJUUzJTgwJTkxJUUzJTgwJThDJUU5JTgzJUE4JUU1JUIxJThCJUUzJTgxJUFCJUU1JTg1JUE1JUUzJTgyJThDJUUzJTgxJUFBJUUzJTgxJTg0JUUzJTgwJThEJUU4JUFDJThFJUUzJTgxJUFFJUUzJTgzJTk1JUUzJTgzJUFBJUUzJTgzJUJDJUUzJTgyJUJBJUUzJTgyJTkyJUU4JUJGJUJEJUUzJTgxJTg4JUVGJUJDJTgxJUUzJTgyJUI3JUUzJTgyJUIwJUUzJTgzJThBJUUzJTgzJUFBJUUzJTgzJUIzJUUzJTgyJUIwJUU3JThBJUI2JUU2JTg1JThCJUUzJTgxJUFFJUU3JUFCJUI2JUU1JTkwJTg4JUU4JUE3JUEzJUU2JUI2JTg4JUUzJTgxJUE4JUUzJTgyJUIzJUUzJTgzJThEJUUzJTgyJUFGJUUzJTgyJUI3JUUzJTgzJUE3JUUzJTgzJUIzJUUzJTgzJUFBJUUzJTgzJTg4JUUzJTgzJUE5JUUzJTgyJUE0JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZTFhMDJhMDM0MWY1NjM2YWQ5Yjg3MWNiNTY3ODU5NzE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBXYWlwZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTc2ZTVmYWY5ZjBiYmY3NjlhYTMwOWEyYzEzMDM4MjE0&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=9582865cc4aaece393c87942943a061d",
+    "title_ja": "【第49回】掲示板システム「つゔぁいちゃんねる」の謎のフリーズを追え！シグナリング競合の解消と堅牢なリトライ処理の実装",
+    "summary_ja": "Webアプリ開発で最も厄介なのはエラーログが出ない「無言のフリーズ」だ。 本記事では、2ちゃんねる互換掲示板システム「つゔぁいちゃんねる」で発生した、シグナリング状態の競合による接続固着の特定プロセスを解説する。 根本原因はコネクションリトライ時の同期ズレにあった。 通信エラー非依存のデバッグ手法や、ステート管理の競合を防ぐ排他制御の設計は、大規模なリアルタイム通信を扱うサービス開発において、極めて重要な知見となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "【第49回】掲示板システム「つゔぁいちゃんねる」の謎のフリーズを追え！シグナリング競合の解消と堅牢なリトライ処理の実装",
+        "summary": "Webアプリ開発で最も厄介なのはエラーログが出ない「無言のフリーズ」だ。 本記事では、2ちゃんねる互換掲示板システム「つゔぁいちゃんねる」で発生した、シグナリング状態の競合による接続固着の特定プロセスを解説する。 根本原因はコネクションリトライ時の同期ズレにあった。 通信エラー非依存のデバッグ手法や、ステート管理の競合を防ぐ排他制御の設計は、大規模なリアルタイム通信を扱うサービス開発において、極めて重要な知見となるだろう。"
+      },
+      "en": {
+        "title": "Debugging silent freezes in a BBS system: Solving signaling race conditions and implementing robust connection retries",
+        "summary": "The most harrowing bugs in web development are silent freezes that trigger no error logs and zero network activity. This case study from the development of 'Zwei Channel,' a 2ch-compatible bulletin board, dives into troubleshooting a persistent connection lock-up caused by a signaling race condition. The investigation reveals that the root cause stemmed from synchronization drift during connection retries, which standard logging failed to capture. By implementing specific exclusivity controls for state management and refining the retry logic to be collision-aware, the developer resolved the deadlock. For builders shipping real-time applications, this deep dive provides essential patterns for handling state-machine transitions that appear stable but fail under specific timing conditions, moving beyond basic request-response debugging."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T11:01:48.906Z"
+  },
+  {
+    "id": "art-1793530902668-un3he",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/garplab/articles/938997a2614b17",
+    "published_at": "2026-11-01T05:41:37.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---OSIF5yo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%258B%2595%25E3%2581%258B%25E3%2581%2595%25E3%2581%25AA%25E3%2581%2584%25E6%258A%2580%25E8%25A1%2593%2520%25E7%25AC%25AC2%25E5%259B%259E%25EF%25BC%259A%25E3%2583%25A9%25E3%2583%2583%25E3%2583%2591%25E3%2583%25BC%25E3%2582%2592%25E4%25BD%25BF%25E3%2582%258F%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E6%258A%2580%25E8%25A1%2593%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:garplab%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSnJLclpvV19BYkZLd2xYTHI3UHp3M01HQVc3OVNHWTVQU0F5OUh3NmRxX3pCUVZCU1g9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "「動かさない技術」第2回：プロジェクト固有のラッパーを排除し、AIに標準コマンドを直接叩かせるための1行指示",
+    "summary_ja": "本記事は、AIエンジニアリングの連載「動かさない技術」の第2回。 プロジェクト固有のラッパー（例：scripts/test.sh）をAIに使わせず、標準コマンド（例：rails test）で操作させるためのアプローチを解説する。 AIへのシステムプロンプトに「環境変数はこれを使え」といった制約を1行加えるだけで、ラッパーへの依存を解消し、プロジェクトの可搬性を高める仕組みだ。",
+    "translations": {
+      "ja": {
+        "title": "「動かさない技術」第2回：プロジェクト固有のラッパーを排除し、AIに標準コマンドを直接叩かせるための1行指示",
+        "summary": "本記事は、AIエンジニアリングの連載「動かさない技術」の第2回。 プロジェクト固有のラッパー（例：scripts/test.sh）をAIに使わせず、標準コマンド（例：rails test）で操作させるためのアプローチを解説する。 AIへのシステムプロンプトに「環境変数はこれを使え」といった制約を1行加えるだけで、ラッパーへの依存を解消し、プロジェクトの可搬性を高める仕組みだ。"
+      },
+      "en": {
+        "title": "Strategies for LLM automation: Why you should ban project-specific wrappers and force AI to use standard commands",
+        "summary": "This piece, the second in a series on \"static architecture,\" argues for removing project-specific wrapper scripts (like scripts/test.sh) in favor of standard system commands (like rails test). The author demonstrates that instead of creating custom wrappers to handle environment variables or concurrency, developers can simply include a single, precise instruction within the LLM's system prompt to enforce necessary configurations. By avoiding custom abstractions and forcing AI agents to interact with the codebase via standard interfaces, teams ensure better portability and stability. For engineers automating agentic workflows, the lesson is that simplicity in the interface layer beats complex script-based wrappers, significantly reducing error rates and friction during AI-driven development cycles."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T11:01:42.668Z"
+  },
+  {
+    "id": "art-1793530896110-jcdtq",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/charge0315/articles/f1d468184486cb",
+    "published_at": "2026-11-01T04:40:07.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Dw08z2XK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%259D%25E3%2581%25AEAI%25E3%2583%2590%25E3%2583%2583%25E3%2583%258130%25E5%2588%2586%25E3%2580%25819%25E5%2589%25B2%25E3%2581%25AF%25E6%25A0%25AA%25E4%25BE%25A1%25E3%2581%25AE%25E5%258F%2596%25E3%2582%258A%25E5%25AF%2584%25E3%2581%259B%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2520%2520%25E5%2589%258D%25E3%2581%25AE%25E6%2599%25A9%25E3%2581%25AB%25E6%25B8%2588%25E3%2581%25BE%25E3%2581%259B%25E3%2581%25A62%25E5%2588%258635%25E7%25A7%2592%25E3%2581%25AB%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%2585%25AB%25E5%2592%25AB%25E7%2583%258F%25EF%25BC%2588%25E3%2582%2584%25E3%2581%259F%25E3%2581%258C%25E3%2582%2589%25E3%2581%2599%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzYxMzVhZDkyMDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIアプリの朝バッチ処理を30分から2分35秒に短縮——9割の時間を浪費していた「株価APIの逐次取得」を夜間実行に切り替えた最適化の教訓",
+    "summary_ja": "個人開発するAI銘柄分析端末「ALPHA FORGE」で、毎朝30分かかっていたバッチ処理を2分35秒まで短縮した。 調査の結果、処理時間の9割がAPIでの株価逐次取得に費やされていることが判明し、取得タイミングを夜間に変更するだけで劇的に改善した。 AIの推論速度を疑う前に、データI/Oのボトルネックを計測することが、バッチ処理を高速化するエンジニアの鉄則である。",
+    "translations": {
+      "ja": {
+        "title": "AIアプリの朝バッチ処理を30分から2分35秒に短縮——9割の時間を浪費していた「株価APIの逐次取得」を夜間実行に切り替えた最適化の教訓",
+        "summary": "個人開発するAI銘柄分析端末「ALPHA FORGE」で、毎朝30分かかっていたバッチ処理を2分35秒まで短縮した。 調査の結果、処理時間の9割がAPIでの株価逐次取得に費やされていることが判明し、取得タイミングを夜間に変更するだけで劇的に改善した。 AIの推論速度を疑う前に、データI/Oのボトルネックを計測することが、バッチ処理を高速化するエンジニアの鉄則である。"
+      },
+      "en": {
+        "title": "Optimizing AI Batch Processing: Reducing 30 Minutes of Job Time to 2 Minutes 35 Seconds by Moving API Data Fetching Overnight",
+        "summary": "While optimizing \"ALPHA FORGE,\" a personal AI stock screening project, the developer discovered that their 30-minute morning batch job was largely wasted time. Profiling revealed that 90% of the duration was spent sequentially fetching individual stock prices via API calls rather than on AI inference itself. By shifting these data-heavy retrieval tasks to run during the previous night, processing time plummeted to just 2 minutes and 35 seconds. For solo developers building scheduled backend services, the primary lesson is clear: never assume slow performance stems from heavy AI models until you strictly measure your I/O bottlenecks. Proactive, asynchronous data gathering is the true key to snappy, efficient scheduled workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-01T11:01:36.110Z"
+  },
+  {
+    "id": "art-1793530887735-ipqm3",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/alma_core/n/n81a2079f02dc",
+    "published_at": "2026-11-01T11:00:31.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331001193/rectangle_large_type_2_82dc3c646639a2995ccb5e95c71af4a1.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「転生したらイーロン・マスクが大統領だった件」第9話：現場仕込みのPLCハックと修羅場で学ぶAI開発の限界と突破口",
+    "summary_ja": "AI開発小説『転生したらイーロン・マスクが大統領だった件』の第9話では、主人公が自身の内なるAIアシスタントの制約と、現実世界のハードウェア（PLC）制御というハードな現場に直面する。 システムアップデートに伴う機能不全という絶体絶命の状況下で、いかに理論上のAIソリューションを現場の泥臭い修羅場に適応させるかが描かれる。 技術的な理想と現実のギャップを埋めるための、エンジニアリングにおける現場対応力と思考の柔軟性の重要さをテーマにした物語。",
+    "translations": {
+      "ja": {
+        "title": "「転生したらイーロン・マスクが大統領だった件」第9話：現場仕込みのPLCハックと修羅場で学ぶAI開発の限界と突破口",
+        "summary": "AI開発小説『転生したらイーロン・マスクが大統領だった件』の第9話では、主人公が自身の内なるAIアシスタントの制約と、現実世界のハードウェア（PLC）制御というハードな現場に直面する。 システムアップデートに伴う機能不全という絶体絶命の状況下で、いかに理論上のAIソリューションを現場の泥臭い修羅場に適応させるかが描かれる。 技術的な理想と現実のギャップを埋めるための、エンジニアリングにおける現場対応力と思考の柔軟性の重要さをテーマにした物語。"
+      },
+      "en": {
+        "title": "Episode 9 of 'Reincarnated as Elon Musk' explores the critical limits of AI when facing real-world PLC hardware hacks",
+        "summary": "The ninth installment of the fictional engineering saga 'Reincarnated as Elon Musk' tackles a high-stakes scenario where the protagonist encounters a critical system failure during an update, rendering their AI assistant useless. Stuck in a crisis involving real-world PLC (Programmable Logic Controller) hardware, the narrative shifts focus from theoretical AI capabilities to gritty, field-tested troubleshooting under pressure. It illustrates the stark contrast between digital AI logic and physical industrial systems, highlighting that while AI is powerful, a builder’s true value lies in hands-on adaptability and the ability to navigate chaotic, unexpected outages when automated tools are unavailable. For developers, it emphasizes that understanding underlying hardware layers remains as crucial as mastering high-level artificial intelligence workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T11:01:27.735Z"
+  },
+  {
     "id": "art-1793530009244-ocwrq",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
