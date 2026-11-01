@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793495819147-j715b",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/takumi_shida/articles/2026-11-01-zenn-llm-basics-part3-tools",
+    "published_at": "2026-10-31T22:00:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jhHCq-W2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E4%25BB%258A%25E6%259B%25B4%25E8%2581%259E%25E3%2581%2591%25E3%2581%25AA%25E3%2581%2584LLM%2520%25E5%25BE%258C%25E7%25B7%25A8%25E3%2580%2591AI%25E3%2581%258C%25E7%2594%25BB%25E5%2583%258F%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E8%25A3%258F%25E5%2581%25B4%25E3%2581%25AF%25EF%25BC%259FFunction%2520Calling%25E3%2583%25BB%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2597%25E3%2583%25B3%25E3%2582%25A6%25E3%2582%25A7%25E3%2582%25A4%25E3%2583%2588%25E3%2583%25BB%25E8%2592%25B8%25E7%2595%2599%25E3%2582%2592%25E3%2582%2584%25E3%2581%2595...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:takumi%2520shida%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjN2YxYWNjYjMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "LLMの重要概念を徹底解説：Function Callingの実装、画像生成の仕組み、オープンウェイトと蒸留の違いを網羅",
+    "summary_ja": "LLMの主要概念を深掘りする連載後編。 Function CallingはAIがツールを起動するのではなく実行依頼を生成する仕組みであり、画像生成にはモデルが自ら描画する型と別ツールを呼ぶ型がある。 さらに「オープンウェイト」の定義や、他モデルの知識を効率的に学習させる「蒸留」のメカニズムを解説。 LLMを活用したアプリ開発において、これらの用語を正しく理解し適切なアーキテクチャを選択することは、コスト最適化と機能実装の成否を分ける極めて重要なスキルとなる。",
+    "translations": {
+      "ja": {
+        "title": "LLMの重要概念を徹底解説：Function Callingの実装、画像生成の仕組み、オープンウェイトと蒸留の違いを網羅",
+        "summary": "LLMの主要概念を深掘りする連載後編。 Function CallingはAIがツールを起動するのではなく実行依頼を生成する仕組みであり、画像生成にはモデルが自ら描画する型と別ツールを呼ぶ型がある。 さらに「オープンウェイト」の定義や、他モデルの知識を効率的に学習させる「蒸留」のメカニズムを解説。 LLMを活用したアプリ開発において、これらの用語を正しく理解し適切なアーキテクチャを選択することは、コスト最適化と機能実装の成否を分ける極めて重要なスキルとなる。"
+      },
+      "en": {
+        "title": "Deep dive into LLM internals: Understanding function calling, image generation pipelines, open weights, and model distillation techniques",
+        "summary": "This piece clarifies essential LLM concepts for developers, starting with Function Calling, which acts as a structured request mechanism rather than the AI directly executing external code. It further breaks down image generation architectures—distinguishing between models that generate pixels natively versus those that act as orchestrators for external image tools. The discussion extends to the nuanced definitions of open weights versus open source, and the mechanics of model distillation for transferring knowledge efficiently. For builders, mastering these architectural patterns is critical; choosing the right approach between self-contained generation and tool orchestration is a major factor in balancing latency, cost-efficiency, and output quality when deploying LLM-powered applications in production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T01:16:59.147Z"
+  },
+  {
+    "id": "art-1793495811762-z2z5c",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://opensource.googleblog.com/2026/10/introducing-elephant-goldfish-model-plugin.html",
+    "published_at": "2026-11-01T00:39:58.000Z",
+    "og_image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5fPnFY8APqGn7lfOL9j_Ly0Z2bSI_XOnSagYahYRjfg7YG1pFbtZfRJDBv4t9m66nElyG96hyphenhyphenoAcOGcq2TdZGWytHpXNBW0cr1HZoqTcBibvL3jUBG9d7njzYpiIlE3KDtgpBZaQF722RC48bA2KX-rJUCBGo3RuGyrdja2P_3ARiaYluwBv01tm0JTw/w1200-h630-p-k-no-nu/og-egm.png",
+    "title_ja": "Google、AI駆動開発を加速させる「Elephant-Goldfishモデル」プラグインを公開：仕様ベースのコード生成と一貫性を強化",
+    "summary_ja": "Googleが公開した「Elephant-Goldfishモデル」プラグインは、仕様書に基づいた厳格なコード生成を支援し、AI開発におけるコンテキスト維持と整合性の問題を解消する新ツールだ。 巨大な仕様を記憶しつつ、タスク実行時の集中力を最適化するこのアプローチにより、AIエージェントは長期的なプロジェクト構造を損なわず正確なコードを出力できる。 プロンプトエンジニアリングやコード生成の品質に課題を感じる開発者にとって、開発効率を飛躍させる強力な一手となるはずだ。",
+    "translations": {
+      "ja": {
+        "title": "Google、AI駆動開発を加速させる「Elephant-Goldfishモデル」プラグインを公開：仕様ベースのコード生成と一貫性を強化",
+        "summary": "Googleが公開した「Elephant-Goldfishモデル」プラグインは、仕様書に基づいた厳格なコード生成を支援し、AI開発におけるコンテキスト維持と整合性の問題を解消する新ツールだ。 巨大な仕様を記憶しつつ、タスク実行時の集中力を最適化するこのアプローチにより、AIエージェントは長期的なプロジェクト構造を損なわず正確なコードを出力できる。 プロンプトエンジニアリングやコード生成の品質に課題を感じる開発者にとって、開発効率を飛躍させる強力な一手となるはずだ。"
+      },
+      "en": {
+        "title": "Google releases Elephant-Goldfish model plugin to enable spec-driven AI development with high-fidelity consistency",
+        "summary": "Google has open-sourced the Elephant-Goldfish model plugin, a new tool designed to enforce strict adherence to design specifications during AI-driven coding tasks. By balancing the ability to maintain long-term architectural context with focused, task-specific retrieval, the plugin solves the common issue of AI hallucination or deviation in complex projects. This structural approach ensures that AI agents produce highly accurate, consistent code that remains tightly coupled with the initial project requirements. For builders struggling with model drift or context window saturation in large codebases, this tool offers a robust way to guide AI agents toward reliable output, effectively bridging the gap between high-level documentation and executable production-ready code."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "研究"
+    ],
+    "created_at": "2026-11-01T01:16:51.762Z"
+  },
+  {
+    "id": "art-1793495803445-dvxgm",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/nonkuri_yubiri/n/nba2a03e9e4b6",
+    "published_at": "2026-11-01T01:14:50.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/323029136/rectangle_large_type_2_e8fd0f48a69f55069c713f3f5d07ff60.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude CodeとCodexで構築する個人開発システムの現在地：PC故障のトラブルを乗り越え、効率的なプログラミング体験を再考する",
+    "summary_ja": "メインPCの深刻な不具合により作業環境の再構築を迫られるなか、著者はClaude CodeやCodexを活用した個人開発の最適化プロセスを振り返る。 AIを駆使したコーディング環境では、試行錯誤の過程自体が知的な愉しみであり、一見すると微妙な成果物であっても、その構築体験こそが技術的成長の鍵となる。 ハードウェアの制約やOSのフルリセットという苦難に直面しても、クラウドやAIツールに依存した開発スタイルを洗練させることの重要性が浮き彫りとなっている。",
+    "translations": {
+      "ja": {
+        "title": "Claude CodeとCodexで構築する個人開発システムの現在地：PC故障のトラブルを乗り越え、効率的なプログラミング体験を再考する",
+        "summary": "メインPCの深刻な不具合により作業環境の再構築を迫られるなか、著者はClaude CodeやCodexを活用した個人開発の最適化プロセスを振り返る。 AIを駆使したコーディング環境では、試行錯誤の過程自体が知的な愉しみであり、一見すると微妙な成果物であっても、その構築体験こそが技術的成長の鍵となる。 ハードウェアの制約やOSのフルリセットという苦難に直面しても、クラウドやAIツールに依存した開発スタイルを洗練させることの重要性が浮き彫りとなっている。"
+      },
+      "en": {
+        "title": "Leveraging Claude Code and Codex for Personal Dev Systems: A Developer’s Reflections Amidst Hardware Failure",
+        "summary": "Following a major PC hardware failure that forced a full system reset, the author reflects on their recent workflow improvements leveraging Claude Code and Codex for personal development projects. Even when early iterations yield underwhelming results, the process of iteratively building with AI agents remains a profoundly engaging experience for individual creators. The author highlights how these automated coding tools shift the development paradigm, allowing builders to explore complex system architectures even while dealing with the fragility of local environments. For builders, the key takeaway is that the value lies not just in the final shipped code, but in the rapid, AI-assisted feedback loop that accelerates learning and system exploration regardless of local hardware reliability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-01T01:16:43.445Z"
+  },
+  {
+    "id": "art-1793495796989-kkwrt",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/aokikenichi/items/a7ca4591772a973ec52b",
+    "published_at": "2026-11-01T01:01:27.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFtYXpvbmF3cy5jb20lMkYwJTJGMTE2MDQ5JTJGcHJvZmlsZS1pbWFnZXMlMkYxNDczNzEzMTIyP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1kNjc3ODJiM2I0OTlhMmQxODRlYTAzZGViZWJjYmZiOA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D904c882823d2c1d5aa4ba6744ebae7d2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JTgzJTk1JUUzJTgxJUFGJUU0JUI4JTk2JUU3JTk1JThDJUUzJTgyJTkyJUU3JTlGJUE1JUUzJTgyJThEJUUzJTgxJTg2JUUzJTgxJUE4JUU2JTgwJTlEJUUzJTgxJTg2JUUzJTgzJUJDQUklRTMlODElQTglRTglODQlQjMlRTclQTclOTElRTUlQUQlQTYlRTMlODElQUUlRTYlOTUlQjAlRTUlQkMlOEYyMCVFMyU4MyVCQyVFNyVBQyVBQzYlRTglQTklQjElRTMlODAlOEMlRTQlQkElOEMlRTMlODElQTQlRTMlODElQUUlRTQlQjglOTYlRTclOTUlOEMlRTMlODElQUYlRTMlODElQTklRTMlODIlOEMlRTMlODElQkIlRTMlODElQTklRTklODElOTUlRTMlODElODYlRTMlODElOEIlMDklRTMlODAlOEVLTCVFMyU4MyU4MCVFMyU4MiVBNCVFMyU4MyU5MCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTFiODdjMTBhODE2ZjhjMTc4Mzk3MTM2NmVjM2Y4YTc3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhb2tpa2VuaWNoaSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWEwZjBkYjM5M2FlZDZiYTlhNGI2NmI3MDk4ZjZiYWNk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=259a55afc6980fe0643866e7c25557a6",
+    "title_ja": "AIと脳科学の数式第6話：確率分布の差異を測る「KLダイバージェンス」の直感的理解と情報理論的アプローチ",
+    "summary_ja": "AIと脳科学の関連を数式で紐解く連載の第6回。 本稿では、二つの確率分布PとQがどれほど異なるかを定量化する「KLダイバージェンス」を、赤と青のボールの箱という直感的な例題を用いて解説する。 情報理論において、真の分布Pに対する推測Qの効率性を示す指標として不可欠なこの概念は、LLMの学習プロセスでも頻出する。 機械学習エンジニアは、単なる数式の計算にとどまらず、モデルの出力分布とターゲットの乖離を最小化するための直観としてKLダイバージェンスを理解しておく必要がある。",
+    "translations": {
+      "ja": {
+        "title": "AIと脳科学の数式第6話：確率分布の差異を測る「KLダイバージェンス」の直感的理解と情報理論的アプローチ",
+        "summary": "AIと脳科学の関連を数式で紐解く連載の第6回。 本稿では、二つの確率分布PとQがどれほど異なるかを定量化する「KLダイバージェンス」を、赤と青のボールの箱という直感的な例題を用いて解説する。 情報理論において、真の分布Pに対する推測Qの効率性を示す指標として不可欠なこの概念は、LLMの学習プロセスでも頻出する。 機械学習エンジニアは、単なる数式の計算にとどまらず、モデルの出力分布とターゲットの乖離を最小化するための直観としてKLダイバージェンスを理解しておく必要がある。"
+      },
+      "en": {
+        "title": "Decoding AI and Neuroscience Part 6: How KL Divergence Quantifies Probability Distribution Differences in Machine Learning Models",
+        "summary": "This sixth installment in the series connecting AI and brain science explores the Kullback–Leibler (KL) divergence, a fundamental metric for quantifying the difference between two probability distributions, P and Q. Using an intuitive scenario involving boxes of red and blue balls, the article demystifies the information-theoretic basis of how we measure the inefficiency of assuming distribution Q when the true underlying distribution is P. As this concept is critical to training processes in large language models, the author argues that engineers must move beyond rote memorization of the formula. Building robust models requires a deep, intuitive grasp of KL divergence to effectively minimize the gap between predicted outputs and target distributions during optimization."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T01:16:36.989Z"
+  },
+  {
     "id": "art-1793494912391-65udj",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
