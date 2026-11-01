@@ -39,6 +39,7 @@ import {
   prefetchOgAroundIndex,
   prefetchOgImages,
 } from '../src/lib/imagePrefetch';
+import { shouldDeferFeedSilentRefresh } from '../src/lib/inAppBrowserSession';
 import {
   articleMatchesPrefsFilter,
   cleanArticleSummary,
@@ -276,12 +277,14 @@ export default function HomeScreen() {
       } catch {
         // 保存同期の失敗でフィード全体を落とさない
       }
-      // silent/refresh: 読んでいた記事 ID を覚えて再描画後に復帰。initial だけ先頭へ
-      if (mode === 'silent' || mode === 'refresh') {
+      // silent（裏更新）だけ読んでいた記事へ復帰。
+      // pull refresh は「最新を見る」操作なので先頭へ（復帰すると新着の下＝数枚目から始まる）
+      if (mode === 'silent') {
         pendingRestoreArticleIdRef.current = currentArticleIdRef.current;
       } else {
         pendingRestoreArticleIdRef.current = null;
         setCurrentIndex(0);
+        currentArticleIdRef.current = null;
       }
       lastFeedRefreshAtRef.current = Date.now();
     } catch {
@@ -307,6 +310,10 @@ export default function HomeScreen() {
             setTimeout(resolve, minVisibleMs - elapsed)
           );
         }
+        // リスト差し替え後もスクロール位置が残ることがあるので先頭へ
+        requestAnimationFrame(() => {
+          flatListRef.current?.scrollToOffset({ offset: 0, animated: false });
+        });
       }
       setLoading(false);
       setRefreshing(false);
@@ -348,9 +355,11 @@ export default function HomeScreen() {
   }, []);
 
   // フォアグラウンド復帰時にフィードを再取得（短時間の連続復帰はスキップ）
+  // 元記事シート表示中〜直後はスキップ（長押し操作感は維持しつつリスト差し替え競合を避ける）
   const appStateRef = useRef<AppStateStatus>(AppState.currentState);
   useEffect(() => {
     const FEED_REFRESH_COOLDOWN_MS = 60_000;
+    let deferredSilentTimer: ReturnType<typeof setTimeout> | null = null;
     const onChange = (nextState: AppStateStatus) => {
       const wasBackgrounded =
         appStateRef.current === 'background' ||
@@ -359,12 +368,35 @@ export default function HomeScreen() {
       if (!wasBackgrounded || nextState !== 'active') return;
       const now = Date.now();
       if (now - lastFeedRefreshAtRef.current < FEED_REFRESH_COOLDOWN_MS) return;
-      lastFeedRefreshAtRef.current = now;
-      void loadData('silent');
+
+      const runSilent = () => {
+        if (shouldDeferFeedSilentRefresh()) {
+          if (deferredSilentTimer) clearTimeout(deferredSilentTimer);
+          deferredSilentTimer = setTimeout(() => {
+            deferredSilentTimer = null;
+            if (shouldDeferFeedSilentRefresh()) return;
+            if (
+              Date.now() - lastFeedRefreshAtRef.current <
+              FEED_REFRESH_COOLDOWN_MS
+            ) {
+              return;
+            }
+            lastFeedRefreshAtRef.current = Date.now();
+            void loadData('silent');
+          }, 3200);
+          return;
+        }
+        lastFeedRefreshAtRef.current = Date.now();
+        void loadData('silent');
+      };
+      runSilent();
     };
     const sub = AppState.addEventListener('change', onChange);
     lastFeedRefreshAtRef.current = Date.now();
-    return () => sub.remove();
+    return () => {
+      sub.remove();
+      if (deferredSilentTimer) clearTimeout(deferredSilentTimer);
+    };
   }, [loadData]);
 
   const handlePullRefresh = useCallback(() => {
@@ -809,7 +841,7 @@ export default function HomeScreen() {
     }
   };
 
-  // silent/refresh 更新後、同じ記事が見える位置へ戻す（先頭固定・スワイプ崩れを防ぐ）
+  // silent 更新後、同じ記事が見える位置へ戻す（スワイプ中の裏更新で先頭に飛ばないように）
   useEffect(() => {
     const restoreId = pendingRestoreArticleIdRef.current;
     if (!restoreId || feedHeight <= 0 || visibleArticles.length === 0) return;

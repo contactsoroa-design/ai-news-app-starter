@@ -5,8 +5,10 @@ import {
   configureImageDiskCache,
   trimImageDiskCacheOnce,
 } from './src/lib/imageCache';
+import { installJsErrorGuard } from './src/lib/jsErrorGuard';
 
 configureImageDiskCache();
+installJsErrorGuard();
 
 export default function App() {
   useEffect(() => {

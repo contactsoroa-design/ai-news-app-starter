@@ -24,6 +24,10 @@ import {
   getVerifiedArticleTool,
 } from '../lib/feed';
 import { looksLikeLocale } from '../lib/translate';
+import {
+  beginInAppBrowserSession,
+  endInAppBrowserSession,
+} from '../lib/inAppBrowserSession';
 import type { AppLocale, Article } from '../lib/types';
 
 import {
@@ -63,7 +67,9 @@ async function openInAppArticleBrowser(
   }
 
   isOpeningInAppBrowser = true;
+  beginInAppBrowserSession();
   try {
+    // 操作感はそのまま（PAGE_SHEET）。表示中〜直後のフィード差し替えは App 側で抑止。
     await WebBrowser.openBrowserAsync(normalizedUrl, {
       presentationStyle: WebBrowser.WebBrowserPresentationStyle.PAGE_SHEET,
       dismissButtonStyle: 'done',
@@ -77,6 +83,7 @@ async function openInAppArticleBrowser(
       // キャンセル時は無視
     }
   } finally {
+    endInAppBrowserSession();
     setTimeout(() => {
       isOpeningInAppBrowser = false;
     }, 500);
