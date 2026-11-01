@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://zenn.dev/joemike/articles/supabase-rls-service-role-silent-failure-2026",
-    "source_id": "source-zenn-indie",
-    "title": "Supabase RLS で TO service_role が PostgREST 経由では silent に失敗する",
-    "pubDate": "2026-11-01T10:44:03.000Z",
-    "snippet": "結論：TO service_role は PostgREST 経由では機能しない -- ❌ 動かない CREATE POLICY \"insert\" ON my_table FOR INSERT TO service_role WITH CHECK (true); -- ✅ 正しい書き方 CREATE POLICY \"insert\" ON my_table FOR INSERT TO public WITH CHECK (auth.role() = 'service_role'); 症状と原因 症状: supabase.from('table').insert({}) が er...",
-    "saved_at": "2026-11-01T21:55:07.410Z"
-  },
-  {
-    "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002684/",
-    "source_id": "source-itmedia-ai",
-    "title": "Meta Ray-Banで向かいの席から撮影→指の動きからスマホのパスワードを解読する盗み見攻撃",
-    "pubDate": "2026-10-30T03:00:00.000Z",
-    "snippet": "イスラエルのテルアビブ大学に所属する研究者らが発表した論文「Watch and Crack: Password Inference from Smart-Glasses Video」は、スマートグラスで撮影された指の動きから、パスワードを解読する手法を実証した研究報告だ。",
-    "saved_at": "2026-11-01T21:55:07.410Z"
-  },
-  {
-    "url": "https://www.starterstory.com/stories/ratepunk",
-    "source_id": "source-starterstory",
-    "title": "Ratepunk",
-    "pubDate": "2026-10-31T13:27:21+00:00",
-    "snippet": "",
-    "saved_at": "2026-11-01T21:55:07.410Z"
-  },
-  {
-    "url": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
-    "source_id": "source-github-copilot",
-    "title": "GitHub Copilot Fusion now supports selection of local models",
-    "pubDate": "2026-10-28T15:30:42.000Z",
-    "snippet": "Today we are shipping intelligent routing for local models into experimental preview. GitHub Copilot Fusion can now choose between supported on-device models and cloud models, enabling intelligent local model routing The post GitHub Copilot Fusion now supports selection of local models appeared first on The GitHub Blog .",
-    "saved_at": "2026-11-01T21:55:07.410Z"
-  },
-  {
     "url": "https://elevenlabs.io/blog/voice-ai-for-karnataka",
     "source_id": "source-elevenlabs",
     "title": "Voice AI for Karnataka",
