@@ -1,5 +1,117 @@
 [
   {
+    "id": "art-1793555348205-oktjp",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+    "published_at": "2026-11-01T16:49:04.000Z",
+    "og_image_url": null,
+    "title_ja": "LLMの普及がソフトウェア信頼性を揺るがす――Kyle Kingsbury氏が警告する「AI生成時代」のエンジニアリング品質保証のあり方",
+    "summary_ja": "LLMによるドキュメントやコードの自動生成が一般化するにつれ、開発者が過去の経験則で判断してきたソフトウェアの信頼性が大きく揺らいでいる。 Kyle Kingsbury氏は、AIが「成熟したシステム」のシグナルを容易に偽装できる時代において、エンジニアは新たな疑念を持ってプロジェクトを評価すべきだと説く。 今後は、自動生成された情報と実証された品質をどう峻別し、ユーザーにその真偽を証明し続けるかが、メンテナンスの根幹を問う重要な課題となる。",
+    "translations": {
+      "ja": {
+        "title": "LLMの普及がソフトウェア信頼性を揺るがす――Kyle Kingsbury氏が警告する「AI生成時代」のエンジニアリング品質保証のあり方",
+        "summary": "LLMによるドキュメントやコードの自動生成が一般化するにつれ、開発者が過去の経験則で判断してきたソフトウェアの信頼性が大きく揺らいでいる。 Kyle Kingsbury氏は、AIが「成熟したシステム」のシグナルを容易に偽装できる時代において、エンジニアは新たな疑念を持ってプロジェクトを評価すべきだと説く。 今後は、自動生成された情報と実証された品質をどう峻別し、ユーザーにその真偽を証明し続けるかが、メンテナンスの根幹を問う重要な課題となる。"
+      },
+      "en": {
+        "title": "Kyle Kingsbury warns that LLM-driven automation erodes engineering trust and forces a rethink of software quality verification",
+        "summary": "As LLMs accelerate the creation of documentation and code, Kyle Kingsbury warns that the implicit trust engineers once placed in software ecosystems is rapidly degrading. The core issue is that the traditional signals used to identify mature, reliable systems—like comprehensive documentation and clear codebases—are now trivial to counterfeit via generative AI. This forces a shift where every new dependency must be treated with suspicion rather than assumed competence. The critical challenge for maintainers in this new era is how to effectively distinguish human-verified, robust engineering from AI-generated noise and prove the authenticity of their work to skeptical users. For builders, this necessitates a fundamental strategy shift: establishing verifiable quality standards that cannot be easily spoofed by models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-01T17:49:08.205Z"
+  },
+  {
+    "id": "art-1793555331583-9v93i",
+    "source_id": "source-perplexity",
+    "source_name": "Perplexity Hub Blog",
+    "url": "https://www.perplexity.ai/hub/blog/rag-implementation",
+    "published_at": "2026-10-28T12:00:00.000Z",
+    "og_image_url": "https://cdn.sanity.io/images/aqo64vfr/production/46d32dfe08af833e32a9aaf013681da479ce2d9d-1320x740.png?rect=0,24,1320,693&w=1200&h=630&fm=jpg&q=80&fit=crop",
+    "title_ja": "Perplexity公式がRAG実装の基礎ガイドを公開。ベクトル検索を用いた外部データ参照とLLM生成を組み合わせるための設計手法をステップバイステップで解説",
+    "summary_ja": "Perplexityの公式ブログが、RAG（検索拡張生成）システムの基本実装プロセスを徹底解説。 文書のベクトル化とインデックス作成から、検索クエリ実行時の関連データ取得、最終的な回答生成までのパイプライン構築手順を網羅する。 単にLLMを呼び出すだけでなく、外部知識を適切に組み込み精度を高めるためのアーキテクチャの基本を学びたい開発者にとって、必読のエンジニアリングガイドとなっている。",
+    "translations": {
+      "ja": {
+        "title": "Perplexity公式がRAG実装の基礎ガイドを公開。ベクトル検索を用いた外部データ参照とLLM生成を組み合わせるための設計手法をステップバイステップで解説",
+        "summary": "Perplexityの公式ブログが、RAG（検索拡張生成）システムの基本実装プロセスを徹底解説。 文書のベクトル化とインデックス作成から、検索クエリ実行時の関連データ取得、最終的な回答生成までのパイプライン構築手順を網羅する。 単にLLMを呼び出すだけでなく、外部知識を適切に組み込み精度を高めるためのアーキテクチャの基本を学びたい開発者にとって、必読のエンジニアリングガイドとなっている。"
+      },
+      "en": {
+        "title": "Perplexity Official Guide Details Step-by-Step Implementation of Basic RAG Architectures for Retrieval-Augmented Generation and LLM Data Synthesis",
+        "summary": "Perplexity has released a comprehensive guide detailing the fundamental architecture required to implement a basic Retrieval-Augmented Generation (RAG) system. The tutorial breaks down the entire pipeline, starting from document vectorization and index creation, moving through efficient retrieval processes, and concluding with the final synthesis of answers by an LLM. By focusing on how to combine vector search with generative models, the piece provides clear instructions for developers looking to move beyond simple LLM prompting. It serves as a necessary blueprint for engineers who need to ground their AI outputs in specific, private, or real-time data sources to significantly reduce hallucination rates while maximizing retrieval performance in production applications."
+      }
+    },
+    "tool_tags": [
+      "Perplexity"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T17:48:51.583Z"
+  },
+  {
+    "id": "art-1793555306330-976lm",
+    "source_id": "source-arcads",
+    "source_name": "Arcads",
+    "url": "https://help.arcads.ai/en/articles/17759807-how-to-upscale-images-and-videos",
+    "published_at": "2026-10-28T20:03:06Z",
+    "og_image_url": "https://help.arcads.ai/assets/favicon",
+    "title_ja": "Arcadsが解説、低画質素材をAIで4K化するアップスケーリング技術の基礎と動画制作の品質を劇的に高めるプロのワークフロー",
+    "summary_ja": "動画生成AIツール「Arcads」が、低解像度の画像や動画をAIの推論処理で高精細化するアップスケーリングの仕組みと実践的な手順を公開した。 単なる拡大補完ではなく、テクスチャの再生成やノイズ除去を組み合わせることで、実写に近い品質へ引き上げることが可能だ。 SNS運用や広告クリエイティブで画質不足に悩むクリエイターにとって、既存素材を最新の高品質フォーマットへ最適化する手法は、制作コストを抑えつつエンゲージメントを高めるための必須スキルとなる。",
+    "translations": {
+      "ja": {
+        "title": "Arcadsが解説、低画質素材をAIで4K化するアップスケーリング技術の基礎と動画制作の品質を劇的に高めるプロのワークフロー",
+        "summary": "動画生成AIツール「Arcads」が、低解像度の画像や動画をAIの推論処理で高精細化するアップスケーリングの仕組みと実践的な手順を公開した。 単なる拡大補完ではなく、テクスチャの再生成やノイズ除去を組み合わせることで、実写に近い品質へ引き上げることが可能だ。 SNS運用や広告クリエイティブで画質不足に悩むクリエイターにとって、既存素材を最新の高品質フォーマットへ最適化する手法は、制作コストを抑えつつエンゲージメントを高めるための必須スキルとなる。"
+      },
+      "en": {
+        "title": "Arcads shares professional workflows for AI-powered image and video upscaling to drastically enhance resolution quality for modern social media creatives",
+        "summary": "The AI video generation platform Arcads has released a guide detailing how to leverage AI upscaling to transform low-resolution assets into high-definition, 4K-quality content. Rather than simple interpolation, this process utilizes generative inference to reconstruct textures and intelligently remove compression noise, effectively revitalizing legacy footage for modern viewing standards. For developers and content creators struggling with asset fidelity, this workflow demonstrates that modern upscaling is about more than resizing; it is about refining underlying details to maintain audience engagement. Understanding these AI-driven enhancement techniques allows builders to maintain professional visual output without the excessive overhead of re-shooting or sourcing high-budget original stock, making it a critical optimization skill for high-performing digital marketing and ad campaigns."
+      }
+    },
+    "tool_tags": [
+      "Arcads"
+    ],
+    "genre_tags": [
+      "動画",
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-11-01T17:48:26.330Z"
+  },
+  {
+    "id": "art-1793555292341-8ya6x",
+    "source_id": "source-windsurf",
+    "source_name": "Windsurf Changelog",
+    "url": "https://windsurf.com/changelog#v3-11-234-october-29-2026-fixed-reduced-memory-usage-for-large-dev",
+    "published_at": "2026-10-29T00:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "Windsurf v3.11.234アップデート：大規模なローカルセッションのメモリ消費を大幅削減、マルチ選択機能も復旧",
+    "summary_ja": "Windsurf v3.11.234では、大規模なローカルセッション実行時のメモリ使用量が最適化され、安定性が向上した。 また、開発者から報告されていたマルチ選択機能の不具合が修正され、IDE上の操作性が改善されている。 大規模なコードベースを扱う開発者にとっては、リソース効率と操作の信頼性を同時に高める重要なアップデートとなる。",
+    "translations": {
+      "ja": {
+        "title": "Windsurf v3.11.234アップデート：大規模なローカルセッションのメモリ消費を大幅削減、マルチ選択機能も復旧",
+        "summary": "Windsurf v3.11.234では、大規模なローカルセッション実行時のメモリ使用量が最適化され、安定性が向上した。 また、開発者から報告されていたマルチ選択機能の不具合が修正され、IDE上の操作性が改善されている。 大規模なコードベースを扱う開発者にとっては、リソース効率と操作の信頼性を同時に高める重要なアップデートとなる。"
+      },
+      "en": {
+        "title": "Windsurf v3.11.234 update optimizes memory footprint for large local sessions and fixes UI multi-select regression",
+        "summary": "The Windsurf v3.11.234 release focuses on stability and performance, specifically targeting memory consumption when handling large local session contexts. By optimizing how the IDE manages resources during these intensive tasks, users working on massive codebases should see improved stability and reduced overhead. Additionally, the team addressed a regression where multi-select functionality was broken, restoring standard interaction patterns that developers rely on daily. For those building with large-scale projects, this patch is critical as it balances the need for heavy local agent compute with the necessity of keeping the underlying IDE performant and responsive. It underscores the importance of managing memory constraints proactively as local AI-driven coding environments continue to grow in complexity."
+      }
+    },
+    "tool_tags": [
+      "Windsurf"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-01T17:48:12.341Z"
+  },
+  {
     "id": "art-1793554308217-vogdw",
     "source_id": "source-perplexity",
     "source_name": "Perplexity Hub Blog",
