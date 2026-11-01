@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793550714489-bxgo8",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/highfar/articles/tailscale-wake-on-lan-relay",
+    "published_at": "2026-11-01T14:27:58.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--W0OJoRUr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Tailscale%2520%25E8%25B6%258A%25E3%2581%2597%25E3%2581%25AB%25E5%25AF%259D%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%2520PC%2520%25E3%2581%25AF%25E8%25B5%25B7%25E3%2581%2593%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2582LAN%2520%25E3%2581%25AB%25E4%25B8%25AD%25E7%25B6%2599%25E3%2582%2592%25E7%25BD%25AE%25E3%2581%2584%25E3%2581%25A6%25E3%2580%2581%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2581%258B%25E3%2582%2589%25E8%25B5%25B7%25E3%2581%2593%25E3%2581%2597%25E3%2581%25A6%25E4%25BC%2591%25E6%25AD%25A2%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:highfar%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzdjNTk5NjBjZTguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Tailscale環境で「休止PC」を遠隔起動・制御するRust製ツール「okiteru」開発、マジックパケット中継でスマホから快適運用へ",
+    "summary_ja": "外出先からAIコーディング環境へアクセスするため、Rust製の制御ツール「okiteru」を開発した。 PCが休止状態にあるとWake-on-LANのパケットがTailscale経由で届かない課題に対し、LAN内に常時起動のデバイスを中継役として設置し、スマホからHTTP経由で「起動・監視・休止」を制御する仕組みを構築。 モバイル回線でもリモートデスクトップを使わずに軽量な操作が可能となり、自宅のAI開発環境を外出先から効率的に運用できるようになった。",
+    "translations": {
+      "ja": {
+        "title": "Tailscale環境で「休止PC」を遠隔起動・制御するRust製ツール「okiteru」開発、マジックパケット中継でスマホから快適運用へ",
+        "summary": "外出先からAIコーディング環境へアクセスするため、Rust製の制御ツール「okiteru」を開発した。 PCが休止状態にあるとWake-on-LANのパケットがTailscale経由で届かない課題に対し、LAN内に常時起動のデバイスを中継役として設置し、スマホからHTTP経由で「起動・監視・休止」を制御する仕組みを構築。 モバイル回線でもリモートデスクトップを使わずに軽量な操作が可能となり、自宅のAI開発環境を外出先から効率的に運用できるようになった。"
+      },
+      "en": {
+        "title": "Building 'okiteru': A Rust-based relay tool to remotely wake and manage sleeping PCs via Tailscale without heavy remote desktop",
+        "summary": "To access home AI coding agents from mobile networks without the latency of heavy remote desktop clients, I built 'okiteru,' a Rust-based tool that manages sleeping PCs. Because Wake-on-LAN magic packets cannot traverse Tailscale overlays when the target host is hibernated, I deployed an always-on relay device within the local network. This setup allows me to trigger power states, monitor status, and hibernate the target machine via simple HTTP requests from my smartphone. This architecture effectively bridges the gap between secure overlay networks and hardware-level power management, enabling reliable remote control of local development workstations even when I am off-site, ultimately providing a streamlined, lightweight workflow for mobile AI agent interaction."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-01T16:31:54.489Z"
+  },
+  {
+    "id": "art-1793550707187-ngh8v",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/nihu_keiba/n/nb3b632da579f",
+    "published_at": "2026-11-01T16:21:47.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331087601/rectangle_large_type_2_09eafe9282212195567527d464a1a346.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "一口馬主の勝率を予測するデータ分析指標の構築記録：Pythonと統計モデルによる「小さな改善」の積み重ねがもたらした開発知見",
+    "summary_ja": "一口馬主の出資選定を支援する「独自指数」構築の全記録。 Pythonを活用し、過去の膨大な出走データから勝率に寄与する要因を統計モデルで分析・可視化するプロセスを詳解する。 一気に高精度なモデルを作るのではなく、仮説検証と小さな改善のループを回し続ける開発手法こそが、精度向上と機能実装を両立させる鍵となった。 個人開発者がデータ分析機能を製品に組み込むための実践的なアプローチとして非常に示唆に富んでいる。",
+    "translations": {
+      "ja": {
+        "title": "一口馬主の勝率を予測するデータ分析指標の構築記録：Pythonと統計モデルによる「小さな改善」の積み重ねがもたらした開発知見",
+        "summary": "一口馬主の出資選定を支援する「独自指数」構築の全記録。 Pythonを活用し、過去の膨大な出走データから勝率に寄与する要因を統計モデルで分析・可視化するプロセスを詳解する。 一気に高精度なモデルを作るのではなく、仮説検証と小さな改善のループを回し続ける開発手法こそが、精度向上と機能実装を両立させる鍵となった。 個人開発者がデータ分析機能を製品に組み込むための実践的なアプローチとして非常に示唆に富んでいる。"
+      },
+      "en": {
+        "title": "Building a predictive data index for horse ownership: How iterative model refinement with Python creates competitive advantages in race selection",
+        "summary": "This post details the end-to-end development journey of creating a proprietary predictive index for selecting high-performance racehorses. Using Python and statistical modeling, the author analyzes massive datasets to pinpoint key variables that drive win rates, transforming raw metrics into actionable investment insights. Instead of aiming for a perfect model on day one, the author emphasizes a disciplined, iterative cycle of hypothesis testing and incremental improvements. This approach proves that consistent, small refinements are more effective for feature implementation than chasing complex, monolithic upgrades. For individual developers, the key takeaway is that data-driven product success relies on the continuous loop of validation and practical iteration, rather than waiting for ideal conditions to launch a feature."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-01T16:31:47.187Z"
+  },
+  {
+    "id": "art-1793550700515-oq1i9",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/KeyroIME/items/12b932620d9089a83433",
+    "published_at": "2026-11-01T16:24:09.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTAyNTE0JTJGYzYxYzE1YjQ0MDNhOTNlMjhjMWMwOWVhZTkxNzQ2NDdkZmZmMTMyNyUyRnhfbGFyZ2UucG5nJTNGMTc4OTUyOTI1Nj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MTI3ZmRkYzgwYzk5ZTQ0OTNlMmU4NGJmYTM4ZTY0NmU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D452d78f104f5a893fc36c1da98ce4b32?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9MjAlRTUlODglODYlRTMlODElQTclRTclQjQlODQ2MyVFNSU4NCU4NCVFMyU4MyU4OSVFMyU4MyVBQiVFMyU4MSU4QyVFNiVCNSU4MSVFNSU4NyVCQSVFMiU4MCU5NCVFMiU4MCU5NEJpbmFuY2UlRTQlQkElOEIlRTQlQkIlQjYlRTMlODElOEIlRTMlODIlODklRTglODAlODMlRTMlODElODglRTMlODIlOEIlRTMlODAlODFBSSVFNiU5OSU4MiVFNCVCQiVBMyVFMyU4MSVBRSVFMyU4MiVCQiVFMyU4MiVBRCVFMyU4MyVBNSVFMyU4MyVBQSVFMyU4MyU4NiVFMyU4MiVBMyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTlmZWEyZjExNWFiMjhjZjEzZjA2ODJlZmJkY2JlOTFh&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBLZXlyb0lNRSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTEwYWU3ZmYyZjI3ZWIzNDE0OWE5NmZiNmFkY2ZlMGY5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=365fbb67f5e7e601a8862541fa5e5f49",
+    "title_ja": "Binanceホットウォレットから20分で63億ドルが流出——AI時代の鍵管理とオンチェーンセキュリティへの警鐘",
+    "summary_ja": "2026年10月29日、暗号資産取引所Binanceのホットウォレットから約63億6,000万ドル相当がわずか20分で流出した。 ブロックチェーン分析企業TRM Labsによると、攻撃者は驚異的なスピードで資産を移動させており、AIを活用した高度な自動攻撃が疑われている。 開発者やエンジニアにとって、この事件は従来のマルチシグやコールドストレージ管理だけでは不十分であることを突きつけている。",
+    "translations": {
+      "ja": {
+        "title": "Binanceホットウォレットから20分で63億ドルが流出——AI時代の鍵管理とオンチェーンセキュリティへの警鐘",
+        "summary": "2026年10月29日、暗号資産取引所Binanceのホットウォレットから約63億6,000万ドル相当がわずか20分で流出した。 ブロックチェーン分析企業TRM Labsによると、攻撃者は驚異的なスピードで資産を移動させており、AIを活用した高度な自動攻撃が疑われている。 開発者やエンジニアにとって、この事件は従来のマルチシグやコールドストレージ管理だけでは不十分であることを突きつけている。"
+      },
+      "en": {
+        "title": "Binance Hot Wallet Breach: $6.36 Billion Stolen in 20 Minutes Highlights Urgent Need for AI-Driven Security",
+        "summary": "On October 29, 2026, cryptocurrency exchange Binance suffered a massive security breach, with approximately $6.36 billion in assets drained from its hot wallet in just 20 minutes. According to blockchain analytics firm TRM Labs, the speed of the exfiltration suggests the use of advanced AI-driven attack vectors capable of bypassing standard safeguards. For builders, this event serves as a grim reminder that traditional multi-sig and cold storage solutions are no longer sufficient against automated, high-velocity threats. The incident underscores that future-proofing Web3 infrastructure requires implementing strict least-privilege API controls alongside real-time monitoring agents designed to detect and freeze suspicious transaction patterns instantly. Relying solely on perimeter security is a failing strategy in the age of AI."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-01T16:31:40.515Z"
+  },
+  {
+    "id": "art-1793550693527-e62qi",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/upgradetech/articles/2026-11-kiro-crew-api-key-intro",
+    "published_at": "2026-11-01T14:43:42.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MmG1JAZU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Kiro%2520CLI%25E3%2581%25A8Kiro%2520Crew%25E3%2582%2592%25E6%2594%25B9%25E3%2582%2581%25E3%2581%25A6%25E5%2585%25A5%25E9%2596%2580%25E3%2581%2597%25E3%2581%25A6AWS%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%2599%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:nachi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzI4NmJmMzNhODkuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:UPGRADE%2520tech%2520blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ1NmQ1MTgxNTUuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "KiroがIDEからCLI・エージェントへ拡張：5つの実行環境を網羅し、APIキーによるヘッドレス実行と常駐型エージェント「Kiro Crew」を徹底解説",
+    "summary_ja": "2026年11月現在、Kiroは従来のIDEだけでなくCLI、Web、Mobile、そして常駐エージェントの「Kiro Crew」を含む5つの実行インターフェースへと進化を遂げた。 特にCLIのAPIキー対応によりヘッドレス環境でのCI/CD連携が容易になり、Crewがローカルマシン上で自律的にタスクを消化する仕組みが構築可能だ。",
+    "translations": {
+      "ja": {
+        "title": "KiroがIDEからCLI・エージェントへ拡張：5つの実行環境を網羅し、APIキーによるヘッドレス実行と常駐型エージェント「Kiro Crew」を徹底解説",
+        "summary": "2026年11月現在、Kiroは従来のIDEだけでなくCLI、Web、Mobile、そして常駐エージェントの「Kiro Crew」を含む5つの実行インターフェースへと進化を遂げた。 特にCLIのAPIキー対応によりヘッドレス環境でのCI/CD連携が容易になり、Crewがローカルマシン上で自律的にタスクを消化する仕組みが構築可能だ。"
+      },
+      "en": {
+        "title": "Kiro expands beyond IDE: Analyzing the new CLI, Headless API, and the 'Kiro Crew' autonomous agent architecture for developers",
+        "summary": "As of November 2026, Kiro has evolved far beyond its IDE roots into a comprehensive ecosystem comprising five entry points: IDE, CLI, Web, Mobile, and the resident 'Kiro Crew' agent. This transformation enables developers to shift from passive coding assistance to proactive, autonomous workflows. With the new API key support in the CLI, headless execution is now seamless, allowing for tighter integration within CI/CD pipelines. Meanwhile, Kiro Crew operates as a persistent agent on local machines, handling tasks independently. For developers who previously used Kiro only for specs, the current platform offers a robust, multi-interface environment, effectively turning it into an end-to-end automation engine for modern software engineering stacks and complex system development lifecycle management."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-01T16:31:33.527Z"
+  },
+  {
     "id": "art-1793549853688-9qfws",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
