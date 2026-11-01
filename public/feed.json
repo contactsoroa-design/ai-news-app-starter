@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1793501207303-28avy",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/yukihayama/items/d3bcd74f45bf30e7040d",
+    "published_at": "2026-11-01T02:02:37.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDgyOTc2JTJGZjUyOTZjMDNiMTdmZGU1MjVkNmQyMjEwMGRmMzdkMDAyYjBiMzZkMyUyRmxhcmdlLnBuZyUzRjE3ODczNTM0NzQ_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWZlNTQxODMxMjJhNTVkYTRkOWIwZTJmNmI2ZDU2N2Nh%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dbdaf24d66ff8a8c92b75d7c2d240f0e6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9bjhuJUUzJTgxJUFFSFRUUCUyMFJlcXVlc3QlRTMlODElQTclRTklODAlODElRTQlQkYlQTElRTUlODUlODhBUEklRTMlODElOEM0MDAlRTMlODIlOTIlRTglQkYlOTQlRTMlODElOTclRTclQjYlOUElRTMlODElOTElRTMlODElOUYlMjAlRTIlODAlOTQlMjBKU09OJTIwQm9keSVFNSU4NiU4NUV4cHJlc3Npb24lRTMlODElOEMlRTglQTklOTUlRTQlQkUlQTElRTMlODElOTUlRTMlODIlOEMlRTMlODElQUElRTMlODElODQzJUUzJTgxJUE0JUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZjNkZTY1NTFhOGU4NjBlMzIwZmRiMTMzMDA5NTM5NmQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5dWtpaGF5YW1hJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YWU2NTU0YzlkMzVkMTlhY2RiZjIyNTBhMzQxZTc4ODA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b44224658ea2ffdc15314226b33c849c",
+    "title_ja": "n8nのHTTP Requestで「400エラー」が頻発する罠：JSON Body内のExpression評価漏れを防ぐための3つの確認ポイント",
+    "summary_ja": "n8nのHTTP Requestノードで外部APIへPOST送信する際、テスト成功にもかかわらず本番で400エラーが続くケースがある。 原因の多くはJSON Body内でのExpressionの評価失敗や、ネスト構造の記述ミスによるものだ。 本稿では、ワークフロー実行データからエラー箇所を特定し、型変換やパース処理を確実に行うためのデバッグ手順を解説する。",
+    "translations": {
+      "ja": {
+        "title": "n8nのHTTP Requestで「400エラー」が頻発する罠：JSON Body内のExpression評価漏れを防ぐための3つの確認ポイント",
+        "summary": "n8nのHTTP Requestノードで外部APIへPOST送信する際、テスト成功にもかかわらず本番で400エラーが続くケースがある。 原因の多くはJSON Body内でのExpressionの評価失敗や、ネスト構造の記述ミスによるものだ。 本稿では、ワークフロー実行データからエラー箇所を特定し、型変換やパース処理を確実に行うためのデバッグ手順を解説する。"
+      },
+      "en": {
+        "title": "Debugging 400 errors in n8n HTTP Request nodes: Avoiding common pitfalls when Expression evaluation fails inside JSON bodies",
+        "summary": "Developers frequently encounter 400 errors when passing data from n8n to external CRM APIs via HTTP Request nodes, even after initial tests appear to pass successfully. These issues typically stem from failed Expression evaluations within the JSON body or subtle syntax errors when handling nested structures. This guide demonstrates how to inspect raw execution data to identify where the payload construction fails and offers strategies to ensure correct type casting and JSON parsing before the request hits the endpoint. Mastering the evaluation lifecycle within these nodes is essential for reliable workflow automation; without verifying the final output structure, developers often face silent failures during production migrations when inputs vary from original test assumptions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-01T02:46:47.303Z"
+  },
+  {
+    "id": "art-1793501199626-ma217",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shiroi1229/n/nb841904be92c",
+    "published_at": "2026-11-01T02:28:23.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330829246/rectangle_large_type_2_eb727a896f217b1cfcff6185f1fc189c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIモデル統合時の「退行診断」検証設計：コストと品質を両立し、リリース直前のサイレント障害を防ぐ実装パターン",
+    "summary_ja": "AIの実装現場で論文通りの構成が破綻する主因は、モデル統合時の退行診断が疎かなことにある。 特に権限管理や検収境界が曖昧なシステムでは、例外入力による計算資源の暴走や、不整合による本番直前のサイレント障害が致命的となる。 本稿では、入出力スキーマを厳格化し、Fail-Closedな制御を組み込むことで、リソースを適正化しつつモデル転移時の信頼性を担保する実戦的な検証設計手法を解説する。",
+    "translations": {
+      "ja": {
+        "title": "AIモデル統合時の「退行診断」検証設計：コストと品質を両立し、リリース直前のサイレント障害を防ぐ実装パターン",
+        "summary": "AIの実装現場で論文通りの構成が破綻する主因は、モデル統合時の退行診断が疎かなことにある。 特に権限管理や検収境界が曖昧なシステムでは、例外入力による計算資源の暴走や、不整合による本番直前のサイレント障害が致命的となる。 本稿では、入出力スキーマを厳格化し、Fail-Closedな制御を組み込むことで、リソースを適正化しつつモデル転移時の信頼性を担保する実戦的な検証設計手法を解説する。"
+      },
+      "en": {
+        "title": "Advanced Regression Diagnostics for AI Model Integration: Balancing Cost, Quality, and Fail-Safe Production Readiness",
+        "summary": "AI implementations often fail because developers treat model integration as a simple swap rather than a rigorous verification challenge. The primary bottleneck involves insufficient regression diagnosis, where ambiguous input/output schemas and lack of Fail-Closed control mechanisms lead to catastrophic resource spikes during edge cases or silent downstream failures detected only at the final hour. This guide details a robust validation framework that enforces strict schema contracts and boundary acceptance conditions between AI components. By shifting focus from pure performance metrics to structured regression testing and robust error boundary definitions, teams can stabilize AI transitions. For builders, the takeaway is clear: production stability relies less on the model itself and more on the engineering discipline surrounding boundary control and systematic validation patterns."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-01T02:46:39.626Z"
+  },
+  {
+    "id": "art-1793501192556-h4fg4",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://medium.com/effortless-programming/ai-made-me-homeless-a7266d716e59",
+    "published_at": "2026-11-01T02:38:11.000Z",
+    "og_image_url": null,
+    "title_ja": "AI活用で収益化を目指した個人開発の悲劇：ツールへの過信とビジネスモデル崩壊から学べる「持続可能な開発」の教訓",
+    "summary_ja": "個人開発者がAIを駆使してアプリ開発と収益化を試みたものの、AIツールの過信と市場需要の誤認により、結果として生活基盤を失うという破滅的な結末を迎えた体験談。 技術スタックをAIに頼り切るリスクと、プロダクト検証を行わずにリリースを繰り返すことの危険性を警鐘する。 個人開発者は技術的な自動化に走る前に、解決すべき真の顧客課題と持続可能な収益モデルの確立を最優先すべきだという教訓である。",
+    "translations": {
+      "ja": {
+        "title": "AI活用で収益化を目指した個人開発の悲劇：ツールへの過信とビジネスモデル崩壊から学べる「持続可能な開発」の教訓",
+        "summary": "個人開発者がAIを駆使してアプリ開発と収益化を試みたものの、AIツールの過信と市場需要の誤認により、結果として生活基盤を失うという破滅的な結末を迎えた体験談。 技術スタックをAIに頼り切るリスクと、プロダクト検証を行わずにリリースを繰り返すことの危険性を警鐘する。 個人開発者は技術的な自動化に走る前に、解決すべき真の顧客課題と持続可能な収益モデルの確立を最優先すべきだという教訓である。"
+      },
+      "en": {
+        "title": "The harsh reality of solo AI-driven development: Why relying solely on AI agents without market validation leads to total failure",
+        "summary": "A cautionary tale from a solo developer who attempted to automate their entire product pipeline using AI agents, only to end up facing homelessness due to a complete lack of real market validation. By over-relying on automated tools to build products that nobody actually needed, the developer burned through their savings on infrastructure and subscription costs without generating a single cent of sustainable revenue. This post serves as a visceral reminder for the builder community: AI is a powerful force multiplier for engineering, but it is not a substitute for product-market fit or a viable business strategy. Before you automate your next launch, ensure your solution solves a genuine customer problem rather than just satisfying your own desire to build quickly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-01T02:46:32.556Z"
+  },
+  {
     "id": "art-1793500362127-zon9r",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
