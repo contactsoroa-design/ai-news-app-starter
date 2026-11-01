@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1793529113253-xuk5d",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/pitaspot/items/2afa82c7ce3d56a65724",
+    "published_at": "2026-11-01T09:09:58.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS1ZodHNjUngwYWJwQTZiT1RtZ0Q2dlJWaUVJWVh3Mm9KekotYUVZaTVObHFNVyUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0yZTM0NTA4ZDlhOGEyNGJkOTQwMDhmMGVkYTQxNjliMg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd099b8cb112ca9b236bfd8322927e5ea?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQUUlRTglQUElQUMlRTYlOTglOEUlRTYlOTYlODclRTMlODIlOTIlRTclOUIlQjQlRTMlODElOTkmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0xNzdmY2RhMzFhZTIxYzM5NDkxOTVlMDhjNzdmNTE1Mg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwaXRhc3BvdCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM4MzViNzIzMWNmOGM5ZjNiMzI2NjY1MTEzMTYyZjQy&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b058eff24cbc0c9042746963e4179614",
+    "title_ja": "AIの「否定から入る説明文」を回避するプロンプト技術：出力精度を高めポジティブなUXを構築するための思考法",
+    "summary_ja": "AIへの指示出しにおいて「〜ではないことを意味するわけではありません」といった否定形や冗長な説明文が出力される事象は、ユーザー体験を損なう要因となる。 本記事では、スライド生成ツールの自作経験を基に、出力の要件を具体的に指定し「肯定的な表現」や「簡潔な箇条書き」を強制するプロンプト設計術を解説する。 複雑なLLM出力を制御するには、単なる指示ではなく、出力形式とトーンの制約を構造的に定義することが不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "AIの「否定から入る説明文」を回避するプロンプト技術：出力精度を高めポジティブなUXを構築するための思考法",
+        "summary": "AIへの指示出しにおいて「〜ではないことを意味するわけではありません」といった否定形や冗長な説明文が出力される事象は、ユーザー体験を損なう要因となる。 本記事では、スライド生成ツールの自作経験を基に、出力の要件を具体的に指定し「肯定的な表現」や「簡潔な箇条書き」を強制するプロンプト設計術を解説する。 複雑なLLM出力を制御するには、単なる指示ではなく、出力形式とトーンの制約を構造的に定義することが不可欠だ。"
+      },
+      "en": {
+        "title": "Refining AI Prompts to Eliminate Passive-Aggressive Negative Phrasing and Improve Output Clarity for Better User Experience",
+        "summary": "Large language models frequently default to overly cautious, negative phrasing, such as explicitly stating what a result 'does not mean,' which clutter user interfaces and degrade experience. Drawing on experience from building custom markdown-based slide generation tools, this guide examines how to suppress verbose, negative output by strictly enforcing constraint-based prompting. The strategy involves moving beyond general requests by structurally defining the required tone, output format, and banned phrasing patterns directly within the system instructions. For developers building AI-integrated apps, the practical takeaway is that controlling the 'voice' of your AI requires treating tone as a strict schema constraint rather than a suggestion, ensuring the final output remains concise, professional, and directly actionable for your end users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-01T10:31:53.253Z"
+  },
+  {
+    "id": "art-1793529106470-hdq7s",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/deft_lupine6439/n/ncb6828f1dbe3",
+    "published_at": "2026-11-01T10:26:18.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330842252/rectangle_large_type_2_fe0955bc5c406a6b961c14e2c5d24775.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "メール送信失敗通知の誤検知問題を検証：デモトレード通知基盤における再送制御と到達遅延の隠れたボトルネック",
+    "summary_ja": "仮想株取引のメール通知システムを構築する過程で発生した「未達通知」の誤検知と、その後の遅延問題を検証する。 ログを追跡すると通知エラーが出ても数分後には自動送信されていた事例があり、システム上の不整合が浮き彫りになった。 さらに修正後の10月30日には到達まで約1時間を要するなど、非同期処理の再試行ロジックやメール配信プラットフォームのキュー滞留を考慮した堅牢なステータス管理が、個人開発の自動化ツールにおいても不可欠であると再認識させられる。",
+    "translations": {
+      "ja": {
+        "title": "メール送信失敗通知の誤検知問題を検証：デモトレード通知基盤における再送制御と到達遅延の隠れたボトルネック",
+        "summary": "仮想株取引のメール通知システムを構築する過程で発生した「未達通知」の誤検知と、その後の遅延問題を検証する。 ログを追跡すると通知エラーが出ても数分後には自動送信されていた事例があり、システム上の不整合が浮き彫りになった。 さらに修正後の10月30日には到達まで約1時間を要するなど、非同期処理の再試行ロジックやメール配信プラットフォームのキュー滞留を考慮した堅牢なステータス管理が、個人開発の自動化ツールにおいても不可欠であると再認識させられる。"
+      },
+      "en": {
+        "title": "Debugging email delivery bottlenecks: Analyzing false negative alerts and retry latency in automated stock trading notification systems",
+        "summary": "While building an automated email notification system for demo stock trading, a persistent issue with false-negative delivery alerts highlighted critical flaws in status tracking. Reviewing logs revealed instances where 'failure' alerts were triggered, yet the emails arrived successfully just minutes later, suggesting that initial reports were inaccurate. Furthermore, post-patch analysis showed delivery delays hitting one hour on October 30th, indicating deeper synchronization issues. For individual developers, this experience underscores that building reliable automated backends requires more than just a trigger; it demands rigorous handling of retry logic, API queuing, and precise status monitoring to distinguish between transient network glitches and genuine delivery failures before users are misled by phantom error messages."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-01T10:31:46.470Z"
+  },
+  {
+    "id": "art-1793529099605-ev099",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://huggingface.co/divagr1925/QwenPU",
+    "published_at": "2026-11-01T10:15:39.000Z",
+    "og_image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/divagr1925/QwenPU.png",
+    "title_ja": "LLMの重みの中で別のLLMを動かす「QwenPU」が登場、既存モデルの内部でプログラム実行を可能にする画期的な技術アーキテクチャ",
+    "summary_ja": "「QwenPU」は、LLMの重み（ウェイト）領域をメモリとして活用し、その内部で別のLLMを実行可能にする実験的な試みである。 既存のモデルを汎用的なコンピューティング基盤のように扱い、計算処理をニューラルネットワーク層内に埋め込むことで、従来の推論アーキテクチャの枠を超えた演算手法を提示している。 LLMが計算機としての可能性をどこまで拡張できるか、その境界線を探るユニークなプロジェクトとして、モデルの内部構造と実行環境の新しい関係性を示唆している。",
+    "translations": {
+      "ja": {
+        "title": "LLMの重みの中で別のLLMを動かす「QwenPU」が登場、既存モデルの内部でプログラム実行を可能にする画期的な技術アーキテクチャ",
+        "summary": "「QwenPU」は、LLMの重み（ウェイト）領域をメモリとして活用し、その内部で別のLLMを実行可能にする実験的な試みである。 既存のモデルを汎用的なコンピューティング基盤のように扱い、計算処理をニューラルネットワーク層内に埋め込むことで、従来の推論アーキテクチャの枠を超えた演算手法を提示している。 LLMが計算機としての可能性をどこまで拡張できるか、その境界線を探るユニークなプロジェクトとして、モデルの内部構造と実行環境の新しい関係性を示唆している。"
+      },
+      "en": {
+        "title": "QwenPU project reveals technical proof of concept for executing an LLM directly inside the weight layers of another base model",
+        "summary": "The QwenPU project explores a novel architectural experiment where the weight parameters of an existing LLM are repurposed to function as a runtime environment for executing a secondary LLM. By treating the underlying model’s parameters as a specialized memory and compute fabric, the approach essentially turns a static neural network into a dynamic execution substrate. This technique pushes beyond conventional inference paradigms, raising fundamental questions about the limits of neural computation and where the boundary between stored knowledge and active logic really resides. For AI researchers, this serves as a fascinating proof of concept demonstrating how static model structures can be re-engineered to perform programmatic tasks, effectively turning a pre-trained model into a host computer for further computation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-01T10:31:39.605Z"
+  },
+  {
+    "id": "art-1793529093194-oq1vp",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/deepai/articles/claude-code-windows-native-or-wsl",
+    "published_at": "2026-11-01T08:43:03.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--mGIwfL6n--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Windows%2520%25E3%2581%25AE%2520Claude%2520Code%25EF%25BC%259A%25E3%2583%258D%25E3%2582%25A4%25E3%2583%2586%25E3%2582%25A3%25E3%2583%2596%25E7%2589%2588%25E3%2581%258B%2520WSL%25202%2520%25E3%2581%258B%25E3%2581%25AF%25E3%2580%258C%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E3%2581%25AE%25E7%25BD%25AE%25E3%2581%258D%25E5%25A0%25B4%25E6%2589%2580%25E3%2580%258D%25E3%2581%25A7%25E6%25B1%25BA%25E3%2582%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:deepai%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSk1VNndCSGFIRWRIQTl1aV9PRU5ZcnpTUUJxd1dlcDh4am9VOHF3cHpTU00wWTVnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "WindowsでClaude Codeを導入する際の最適解：ネイティブ版とWSL 2の使い分け基準を徹底解説",
+    "summary_ja": "Windows環境でClaude Codeを利用する際、ネイティブ版かWSL 2かで迷うケースが増えている。 公式ドキュメントに基づくと、選択の決定打はプロジェクトの保存場所だ。 ネイティブ版はWindowsネイティブのファイルシステムに最適化されている一方、WSL 2はLinux依存のツールチェーンや特定のサンドボックス環境が必要な場合に適している。 開発者はプロジェクトの構成とツール要件を照らし合わせ、適切な実行環境を選択することでパフォーマンスと互換性を最大化できる。",
+    "translations": {
+      "ja": {
+        "title": "WindowsでClaude Codeを導入する際の最適解：ネイティブ版とWSL 2の使い分け基準を徹底解説",
+        "summary": "Windows環境でClaude Codeを利用する際、ネイティブ版かWSL 2かで迷うケースが増えている。 公式ドキュメントに基づくと、選択の決定打はプロジェクトの保存場所だ。 ネイティブ版はWindowsネイティブのファイルシステムに最適化されている一方、WSL 2はLinux依存のツールチェーンや特定のサンドボックス環境が必要な場合に適している。 開発者はプロジェクトの構成とツール要件を照らし合わせ、適切な実行環境を選択することでパフォーマンスと互換性を最大化できる。"
+      },
+      "en": {
+        "title": "Choosing between native Windows and WSL 2 for Claude Code: A practical guide for builders",
+        "summary": "Deploying Claude Code on Windows requires a choice between native execution or WSL 2, and the decision hinge primarily on where your project files live. The official guidance clarifies that native Windows setups are ideal for standard Windows file system workflows, whereas WSL 2 is necessary when your project stack relies on Linux-specific toolchains or specific sandbox environment requirements. By mapping your existing project structure and dependency needs against these two execution profiles, you can effectively avoid cross-filesystem performance bottlenecks. For builders, aligning your environment choice with your project's storage location early is the most reliable way to ensure smooth integration without wrestling with compatibility issues during active development sessions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-01T10:31:33.194Z"
+  },
+  {
     "id": "art-1793528217506-di676",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
