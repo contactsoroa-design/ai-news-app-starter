@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1793548031795-nebml",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/atasino/articles/4a689b859d1922",
+    "published_at": "2026-11-01T11:29:13.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9u0a7QhI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25A7%25E3%2580%258C%25E3%2581%2593%25E3%2581%2593%25E3%2582%2592%25E7%259B%25B4%25E3%2581%2597%25E3%2581%25A6%25E3%2580%258D%25E3%2582%2592%25E9%2587%258D%25E3%2581%25AD%25E3%2581%25A6%25E3%2582%2582%25E7%25B5%2582%25E3%2582%258F%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E6%2599%2582%25E3%2580%2581%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E3%2582%2588%25E3%2582%258A%25E5%2589%258D%25E3%2581%25AB%25E6%25B1%25BA%25E3%2582%2581%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Tomoaki%2520Fujimura%2520%252F...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0ZnOGFhMVVocWNBS05GWnlHN3d4MzBCdWhmeW5EVk5aNW5XM0paYWJ5N000MDFBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeで「ここを直して」の無限ループに陥る理由—AIに完成形を伝えるための具体的設計図の渡し方",
+    "summary_ja": "Claude CodeなどのAIコーディングツールに対し「ここを直して」という指示を繰り返しても修正が終わらない場合、その根本原因はAIに対する「完成形の定義」の欠如にある。 特に複雑なUI修正では、人間側の曖昧な認識がAIの迷走を招く。 対策として、ブラウザの開発ツールを用いた要素の特定や、修正箇所をピンポイントで言語化する手法が不可欠だ。 指示の前に「何をもって完了とするか」を物理的・論理的に定義することが、AIエージェントを使いこなすための唯一の近道となる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeで「ここを直して」の無限ループに陥る理由—AIに完成形を伝えるための具体的設計図の渡し方",
+        "summary": "Claude CodeなどのAIコーディングツールに対し「ここを直して」という指示を繰り返しても修正が終わらない場合、その根本原因はAIに対する「完成形の定義」の欠如にある。 特に複雑なUI修正では、人間側の曖昧な認識がAIの迷走を招く。 対策として、ブラウザの開発ツールを用いた要素の特定や、修正箇所をピンポイントで言語化する手法が不可欠だ。 指示の前に「何をもって完了とするか」を物理的・論理的に定義することが、AIエージェントを使いこなすための唯一の近道となる。"
+      },
+      "en": {
+        "title": "Breaking the 'fix this' loop in Claude Code: How to stop AI rework by explicitly defining completion",
+        "summary": "When using AI coding agents like Claude Code, repetitive 'fix this' prompts often spiral into infinite rework loops because the human developer hasn't clearly defined the 'done' state. The article identifies the root issue as the gap between human intuition and AI instruction; humans often struggle to articulate specific UI behaviors. To fix this, builders must move beyond vague requests by using browser dev tools to pinpoint target elements or explicitly defining expected logic before engaging the AI. The takeaway is that AI agents cannot guess your finished product vision. You must architect your instructions to define exact boundaries and behavior requirements first, effectively treating the AI as a junior developer who lacks your implicit context."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-01T15:47:11.796Z"
+  },
+  {
+    "id": "art-1793548024911-oxjgd",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/earmemo/n/n7044805655d2",
+    "published_at": "2026-11-01T15:18:03.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331103274/rectangle_large_type_2_60a478b7ccd6e4b724075da947f9b529.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発のiOSアプリ「EarMemo」が登場：聞き逃した1秒に即座にメモと印を残せる学習・分析向けオーディオプレイヤーの全貌",
+    "summary_ja": "iPhoneやiPadで活用できる個人開発のオーディオプレイヤー「EarMemo」は、再生中に聞き取れなかった箇所へ瞬時にメモと印を残せる機能に特化したアプリだ。 単なる再生ツールではなく、語学学習や会議の振り返りなど、詳細な分析が必要な音声コンテンツの「1秒」を逃さない設計が強み。 開発者はこのアプリを通じて、ユーザーが音声データをより効率的かつ能動的に活用できるよう、シンプルながらも深いインサイトが得られるUI体験の提供を目指している。",
+    "translations": {
+      "ja": {
+        "title": "個人開発のiOSアプリ「EarMemo」が登場：聞き逃した1秒に即座にメモと印を残せる学習・分析向けオーディオプレイヤーの全貌",
+        "summary": "iPhoneやiPadで活用できる個人開発のオーディオプレイヤー「EarMemo」は、再生中に聞き取れなかった箇所へ瞬時にメモと印を残せる機能に特化したアプリだ。 単なる再生ツールではなく、語学学習や会議の振り返りなど、詳細な分析が必要な音声コンテンツの「1秒」を逃さない設計が強み。 開発者はこのアプリを通じて、ユーザーが音声データをより効率的かつ能動的に活用できるよう、シンプルながらも深いインサイトが得られるUI体験の提供を目指している。"
+      },
+      "en": {
+        "title": "Individual Developer Launches EarMemo for iOS: A Specialized Audio Player for Adding Precise Notes and Markers to Audio Files",
+        "summary": "EarMemo is a new, indie-developed audio player for iOS and iPadOS designed for listeners who need more than just playback. The app focuses on the specific pain point of missing details during audio review, allowing users to instantly drop markers and notes on exact timestamps they find difficult to comprehend. Whether it is language learning or deep-diving into long meeting recordings, EarMemo transforms passive listening into an active, note-taking experience by ensuring no critical segment is lost or forgotten. For fellow solo builders, the project highlights the value of narrowing a broad category like audio playback into a hyper-specific utility that solves one tangible problem exceptionally well for a focused niche user base."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-01T15:47:04.911Z"
+  },
+  {
+    "id": "art-1793548009381-oded9",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://medium.com/@MirArshadTalpur/how-to-prove-what-your-ai-agent-did-in-minutes-zizkadbs-two-github-actions-and-mcp-listing-7d3d6669dab6",
+    "published_at": "2026-11-01T15:05:16.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェントの実行履歴を改ざん不可にする「ZizkaDB」活用術：GitHub Actions連携で追跡可能性を確保する手法",
+    "summary_ja": "AIエージェントの判断や処理内容を証明可能にする「ZizkaDB」の導入手法が公開された。 GitHub Actionsを活用し、エージェントのログを外部データベースに自動で書き込むことで、実行内容を追跡・監査可能な状態にする。 ブラックボックス化しがちなAI処理の挙動を可視化し、責任あるAI開発を実現するための重要な設計パターンとして注目される。 開発者はこのログ構造を導入することで、エージェントが何を実行したかを正確に検証できる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの実行履歴を改ざん不可にする「ZizkaDB」活用術：GitHub Actions連携で追跡可能性を確保する手法",
+        "summary": "AIエージェントの判断や処理内容を証明可能にする「ZizkaDB」の導入手法が公開された。 GitHub Actionsを活用し、エージェントのログを外部データベースに自動で書き込むことで、実行内容を追跡・監査可能な状態にする。 ブラックボックス化しがちなAI処理の挙動を可視化し、責任あるAI開発を実現するための重要な設計パターンとして注目される。 開発者はこのログ構造を導入することで、エージェントが何を実行したかを正確に検証できる。"
+      },
+      "en": {
+        "title": "How to verify AI agent actions using ZizkaDB and GitHub Actions for tamper-proof audit trails",
+        "summary": "The ZizkaDB project offers a practical framework for proving exactly what an AI agent performed by leveraging dedicated GitHub Actions to log activity. By automating the export of agent decisions and process logs into an external, immutable database, developers gain a verifiable audit trail that addresses the black-box nature of AI execution. This approach effectively bridges the gap between opaque agent reasoning and the accountability requirements needed for production-grade applications. For builders managing complex agentic workflows, implementing this observability pattern is critical; it ensures every step of an agent’s logic can be audited, validated, and debugged after the fact, rather than guessing what triggered a specific output."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-01T15:46:49.381Z"
+  },
+  {
+    "id": "art-1793547991706-1cauv",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hydenori24/articles/css-dark-mode-oklab-postcss",
+    "published_at": "2026-11-01T15:12:44.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--HBR0WmEg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%259B%25BA%25E5%25AE%259A%25E8%2589%25B2990%25E3%2581%258B%25E6%2589%2580%25E3%2581%25AECSS%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258D%25E6%258F%259B%25E3%2581%2588%25E3%2581%259A%25E3%2581%25AB%25E3%2583%2580%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%25A2%25E3%2583%25BC%25E3%2583%2589%25E5%25AF%25BE%25E5%25BF%259C%25E3%2581%2597%25E3%2581%259F%25EF%25BC%2588OKLab%25E3%2581%25A7%25E6%2598%258E%25E5%25BA%25A6%25E3%2581%25A0%25E3%2581%2591%25E5%258F%258D%25E8%25BB%25A2%25E3%2581%2599%25E3%2582%258BPostCSS%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B0%25E3%2582%25A4%25E3%2583%25B3%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B2%25E3%2581%25A7%25E3%2581%25AE%25E3%2582%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0ZGZTMmpxVko2OFozSkxJNWdiRGc1cV9oMld0N0JBdXVvZGRwbGR6aXFNPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "990か所のハードコードされたCSSを自動でダークモード対応へ：Oklab空間で明度を反転させるPostCSSプラグイン活用術",
+    "summary_ja": "Webツール群をダークモード対応させる際、ハードコードされた990個もの色設定を修正する工数を回避するため、ビルド時に自動変換する手法を採用した。 Oklab色空間を用いて明度だけを反転させ、元のCSSに手を加えずにダークモード用のスタイルを生成するPostCSSプラグインを開発。 既存のコードベースに多数の固定色がある場合でも、このアプローチなら大規模なリファクタリングなしに安全かつ短期間でUIを最適化できる。",
+    "translations": {
+      "ja": {
+        "title": "990か所のハードコードされたCSSを自動でダークモード対応へ：Oklab空間で明度を反転させるPostCSSプラグイン活用術",
+        "summary": "Webツール群をダークモード対応させる際、ハードコードされた990個もの色設定を修正する工数を回避するため、ビルド時に自動変換する手法を採用した。 Oklab色空間を用いて明度だけを反転させ、元のCSSに手を加えずにダークモード用のスタイルを生成するPostCSSプラグインを開発。 既存のコードベースに多数の固定色がある場合でも、このアプローチなら大規模なリファクタリングなしに安全かつ短期間でUIを最適化できる。"
+      },
+      "en": {
+        "title": "Automating dark mode for 990+ hardcoded CSS rules using a custom PostCSS plugin to invert lightness in Oklab",
+        "summary": "Adding dark mode to a legacy suite of web tools became a massive technical hurdle due to over 990 hardcoded color values. Instead of manual refactoring, the developer built a custom PostCSS plugin that automatically generates a dark-mode variant at build time. By mapping colors into the Oklab color space and programmatically inverting the lightness channel, the system creates a high-contrast dark theme without altering any original CSS source files. This approach effectively demonstrates how to modernize legacy UI assets without incurring the debt of large-scale style rewrites. For developers struggling with rigid color systems, treating color inversion as a build-time transformation rather than a manual CSS update is a far more scalable and error-proof strategy."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-01T15:46:31.706Z"
+  },
+  {
     "id": "art-1793547118947-hscbq",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
