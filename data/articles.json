@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1793530009244-ocwrq",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tappers/articles/ai-labo-e19-error-trace-pruning",
+    "published_at": "2026-11-01T01:24:09.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--BmHZrtF5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25A4%25B1%25E6%2595%2597%25E3%2581%2597%25E3%2581%259F%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E5%25B1%25A5%25E6%25AD%25B4%25E3%2582%2592%25E6%25AE%258B%25E3%2581%2599%25E3%2581%25A8AI%25E3%2581%258C%25E3%2581%25BE%25E3%2581%259F%25E5%2590%258C%25E3%2581%2598%25E3%2583%259F%25E3%2582%25B9%25E3%2582%2592%25E3%2581%2599%25E3%2582%258B%25EF%25BC%2581%25E3%2580%258C%25E5%25A4%25B1%25E6%2595%2597%25E5%25B1%25A5%25E6%25AD%25B4%25E3%2581%25AE%25E7%25B4%25AF%25E7%25A9%258D%25E3%2580%258Dvs%25E3%2580%258C%25E5%25A4%25B1%25E6%2595%2597%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%25B3%25E3%2581%25AE%25E5%2589%25AA%25E5%25AE%259A%25EF%25BC%2588Pruning%25EF%25BC%2589%25E3%2580%258D%25E5%25AE%259F%25E6%25A9%259F%25E6%25A4%259C%25E8%25A8%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tappers%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVE5OTlrenNDTS1ESVpIUGl4SUpHVGoxeVNyT2V4Tmc2SF96NTI5ZFJuTkNVZU5nPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIコーディングの失敗履歴は残すべき？「累積」vs「剪定（Pruning）」の実機検証：20ケースでわかった最適な文脈管理術",
+    "summary_ja": "AIコーディングエージェントにおいて、失敗したコード履歴をプロンプトに残すべきか、それとも剪定（Pruning）すべきか。 20の非公開テストケースを用いて隔離サンドボックス環境で検証した結果、過去の失敗をそのまま累積させるとAIが同じミスを繰り返す確率が有意に高いことが判明した。 失敗ターンを適宜削除する方が、エージェントの推論精度とタスク成功率が向上する。 効率的なAIエージェント構築には、文脈の肥大化を防ぐ戦略的な履歴管理が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングの失敗履歴は残すべき？「累積」vs「剪定（Pruning）」の実機検証：20ケースでわかった最適な文脈管理術",
+        "summary": "AIコーディングエージェントにおいて、失敗したコード履歴をプロンプトに残すべきか、それとも剪定（Pruning）すべきか。 20の非公開テストケースを用いて隔離サンドボックス環境で検証した結果、過去の失敗をそのまま累積させるとAIが同じミスを繰り返す確率が有意に高いことが判明した。 失敗ターンを適宜削除する方が、エージェントの推論精度とタスク成功率が向上する。 効率的なAIエージェント構築には、文脈の肥大化を防ぐ戦略的な履歴管理が不可欠だ。"
+      },
+      "en": {
+        "title": "Keep failed code history or prune it? Testing 20 agent tasks shows why clearing failure turns boosts AI coding accuracy",
+        "summary": "Should AI coding agents retain failed code history, or is pruning better for context management? This controlled A/B test across 20 private, sandboxed tasks reveals that simply accumulating failure history significantly increases the likelihood of an AI repeating the same mistakes. The experiment demonstrates that strategic pruning of failed turns results in higher task success rates and improved reasoning performance compared to keeping the full trace. The core takeaway for developers is that larger context windows are not a panacea; letting an agent wallow in past failures degrades output quality. For high-performing agent pipelines, implement a pruning strategy that strips ineffective attempts, as this cleaner state dramatically focuses the model on successful problem-solving paths."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T10:46:49.244Z"
+  },
+  {
+    "id": "art-1793530002499-ixnl7",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tanje/n/ne688d5e1fdd2",
+    "published_at": "2026-11-01T10:09:48.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/330822807/rectangle_large_type_2_283b5e5c33c222bc1893b5b69dd17d03.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発アプリ「大喜利なう」の運営者が仕掛ける、noteコメント欄を活用したユーザーエンゲージメント施策と開発者の心得",
+    "summary_ja": "個人開発アプリ「大喜利なう」の運営者が、note上で大喜利のお題を出し、ユーザー参加型の企画を開催した。 アプリ機能に依存せず、外部プラットフォームのコメント欄を活用してコミュニティの熱量を高める手法は、資金力のない個人開発者がファンを獲得する有効な戦略となる。 開発はプロダクト作りだけでなく、既存SNSやブログとの連携による「巻き込み型の集客」が、ファンベース構築の成否を分ける鍵といえる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリ「大喜利なう」の運営者が仕掛ける、noteコメント欄を活用したユーザーエンゲージメント施策と開発者の心得",
+        "summary": "個人開発アプリ「大喜利なう」の運営者が、note上で大喜利のお題を出し、ユーザー参加型の企画を開催した。 アプリ機能に依存せず、外部プラットフォームのコメント欄を活用してコミュニティの熱量を高める手法は、資金力のない個人開発者がファンを獲得する有効な戦略となる。 開発はプロダクト作りだけでなく、既存SNSやブログとの連携による「巻き込み型の集客」が、ファンベース構築の成否を分ける鍵といえる。"
+      },
+      "en": {
+        "title": "How the Solo Developer of “Oogiri Now” is Driving User Engagement and Community Growth via Off-Platform Campaigns on Note",
+        "summary": "The developer behind the solo-built comedy app “Oogiri Now” is experimenting with off-platform growth by hosting a caption contest directly within a note blog post. Rather than relying solely on in-app features, leveraging the comment threads of external platforms can effectively build community energy and user retention from scratch. For solo builders, this strategy highlights the importance of going where your audience already hangs out rather than waiting for them to find your app. Ultimately, effective product distribution for indie developers is less about features and more about building a participatory culture that turns passive readers into active contributors, proving that community-first marketing is a vital growth engine."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-01T10:46:42.499Z"
+  },
+  {
+    "id": "art-1793529993755-i4uv2",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/fl0ri0/fruth",
+    "published_at": "2026-11-01T10:14:07.000Z",
+    "og_image_url": null,
+    "title_ja": "AI向けセマンティック状態推論エンジン「Fruth」公開、複雑なデータ状態を自然言語でリアルタイム解析・追跡可能に",
+    "summary_ja": "Fruthは、AIシステムが実行中に生成する複雑なデータやイベントの状態を、セマンティック（意味的）に推論・監視するための新しいエンジンです。 従来のログ解析とは異なり、LLMを活用して非構造化データから動的な状態変化を抽出・追跡することで、AIエージェントや自律型システムのデバッグおよび観測性を飛躍的に向上させます。",
+    "translations": {
+      "ja": {
+        "title": "AI向けセマンティック状態推論エンジン「Fruth」公開、複雑なデータ状態を自然言語でリアルタイム解析・追跡可能に",
+        "summary": "Fruthは、AIシステムが実行中に生成する複雑なデータやイベントの状態を、セマンティック（意味的）に推論・監視するための新しいエンジンです。 従来のログ解析とは異なり、LLMを活用して非構造化データから動的な状態変化を抽出・追跡することで、AIエージェントや自律型システムのデバッグおよび観測性を飛躍的に向上させます。"
+      },
+      "en": {
+        "title": "Fruth launches as a semantic state inference engine to track complex AI system behaviors and data flow",
+        "summary": "Fruth has debuted as an innovative semantic state inference engine designed to monitor and interpret the complex internal states generated by modern AI systems during execution. Unlike traditional logging approaches that rely on rigid syntax, this engine leverages LLMs to parse unstructured runtime data, transforming raw events into observable, semantic state changes. This enables developers to peek inside the black box of autonomous agents and complex workflows, making agentic behaviors interpretable via natural language. By providing a clear window into how logic evolves in real-time, Fruth helps builders effectively debug autonomous applications and maintain control over non-deterministic outputs. For developers working on AI agents, it is a significant step toward solving the observability crisis in agentic architectures."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T10:46:33.755Z"
+  },
+  {
     "id": "art-1793529113253-xuk5d",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
