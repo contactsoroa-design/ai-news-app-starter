@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793539926189-bsyx7",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/toyama0919/items/ad145691fac9a6e8bb34",
+    "published_at": "2026-11-01T12:34:41.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFtYXpvbmF3cy5jb20lMkYwJTJGMjY2NzAlMkZwcm9maWxlLWltYWdlcyUyRjE0NzM2ODQ2NTk_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWVlNDhhYTE2MjdiYTFhYzhiMjc5YWU2NGU2ZTVlZWUx%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1a6f9ba3c2f0a10f9e56e0ef6685711d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9R29vZ2xlJTIwQURLJTIwJUUzJTgxJUFFJTIwdGVsZW1ldHJ5JTIwc2NoZW1hJTIwdjIlMjAlRTMlODElQUIlRTclQTclQkIlRTglQTElOEMlRTMlODElOTclRTMlODElOUYlRTMlODIlODklRTUlODglODYlRTYlOUUlOTAlRTUlOUYlQkElRTclOUIlQTQlRTMlODElOEMlRTUlODUlQTglRTYlQkIlODUlRTMlODElOTclRTMlODElOUYlRTglQTklQjEmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yZmRiZDExODhhODk4MjlkZGI2MzNlMWRhMDA2YmQ4MQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB0b3lhbWEwOTE5JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9Y2U2NmM2ZjVhNWJmNjI0YmQ5MzVkYmFhMjZhMmNjODA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=52bbda68db2f62b679fb4ff27772597d",
+    "title_ja": "Google ADKの2.7から2.13への移行でtelemetry schema v2導入、分析基盤が全滅した原因と教訓",
+    "summary_ja": "Google ADKを2.7から2.13へ更新した際、OpenTelemetry GenAIセマンティック規則に基づいたtelemetry schema v2への移行を強行した結果、既存の分析基盤がデータ構造の不一致で全滅する事態に陥った。 スキーマ変更には破壊的変更が含まれる場合があり、特にテレメトリ周りの更新では上位互換性の検証が不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "Google ADKの2.7から2.13への移行でtelemetry schema v2導入、分析基盤が全滅した原因と教訓",
+        "summary": "Google ADKを2.7から2.13へ更新した際、OpenTelemetry GenAIセマンティック規則に基づいたtelemetry schema v2への移行を強行した結果、既存の分析基盤がデータ構造の不一致で全滅する事態に陥った。 スキーマ変更には破壊的変更が含まれる場合があり、特にテレメトリ周りの更新では上位互換性の検証が不可欠である。"
+      },
+      "en": {
+        "title": "Google ADK upgrade to 2.7 from 2.13 breaks entire analytics stack due to telemetry schema v2 changes",
+        "summary": "Upgrading the Google ADK from 2.7 to 2.13 triggered a catastrophic failure of the entire analytics pipeline after the team migrated to the new telemetry schema v2, which aligns with OpenTelemetry GenAI semantic conventions. The core issue was an unexpected breaking change within the schema definition that rendered existing ingestion logic incompatible with the new data structure. This incident serves as a critical reminder that updating telemetry layers requires rigorous validation for backward compatibility, as minor version bumps can sometimes hide breaking changes in log formatting. For developers, the lesson is clear: when updating foundational SDKs in production, always isolate telemetry and logging impact to avoid total data loss and ensure your analytics foundation remains stable during rapid product iterations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-01T13:32:06.189Z"
+  },
+  {
+    "id": "art-1793539919378-lx2o1",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/akuad/n/n6f3edc27914a",
+    "published_at": "2026-11-01T13:26:10.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/6de76676e1dbb9a9c313b796645f177d27d79aa2.png",
+    "title_ja": "開発効率を蝕む「インフラ整備への寄り道」を断つ：TypeScriptによるシェルスクリプトテスト環境の構築とAI生成コードの最適化",
+    "summary_ja": "個人開発において、ライブラリの選定や実装よりもインフラ整備に時間を費やしてしまう「寄り道」は開発速度を著しく低下させる要因だ。 本稿ではシェルスクリプト（.sh）をTypeScript環境でテスト駆動開発する仕組みを解説し、AIが生成したコードの最適度を評価・修正する重要性を説く。 本来の目的であるプロダクト開発に注力するためには、自動化ツールの導入により環境構築の迷宮から脱出し、アウトプットの品質を自ら検証するスキルが不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "開発効率を蝕む「インフラ整備への寄り道」を断つ：TypeScriptによるシェルスクリプトテスト環境の構築とAI生成コードの最適化",
+        "summary": "個人開発において、ライブラリの選定や実装よりもインフラ整備に時間を費やしてしまう「寄り道」は開発速度を著しく低下させる要因だ。 本稿ではシェルスクリプト（.sh）をTypeScript環境でテスト駆動開発する仕組みを解説し、AIが生成したコードの最適度を評価・修正する重要性を説く。 本来の目的であるプロダクト開発に注力するためには、自動化ツールの導入により環境構築の迷宮から脱出し、アウトプットの品質を自ら検証するスキルが不可欠である。"
+      },
+      "en": {
+        "title": "Breaking the Infrastructure Rabbit Hole: Building TypeScript-Based Shell Script Testing to Optimize AI-Generated Code Output",
+        "summary": "Individual developers often fall into the trap of obsessing over infrastructure setup, neglecting actual feature development to fiddle with tooling configurations. This deep dive explores implementing a testing framework using TypeScript to validate shell scripts (.sh), effectively replacing manual tweaks with reproducible tests. Beyond just automating scripts, the guide emphasizes the critical need for developers to scrutinize the quality of AI-generated code snippets rather than blindly integrating them into the production codebase. To maintain velocity, builders must escape the labyrinth of environmental setup and prioritize rigorous verification of AI outputs. By treating infrastructure as a testable product component, you ensure that your development focus stays on the actual utility of your project rather than the maintenance of its plumbing."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-01T13:31:59.378Z"
+  },
+  {
+    "id": "art-1793539911992-t5kne",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://joshbocanegra.medium.com/a-90-chance-of-ai-saving-humanity-bf12fb7914ee",
+    "published_at": "2026-11-01T13:19:04.000Z",
+    "og_image_url": null,
+    "title_ja": "AIが人類を救う確率は90%？楽観的未来論が示唆するAI開発の方向性と私たちが注力すべき課題とは",
+    "summary_ja": "ジョシュ・ボカネグラ氏は、AIが人類を滅ぼすリスクよりも救済する可能性が圧倒的に高いとし、その確率を90%と予測する論考を発表した。 技術的特異点への恐怖ではなく、人類の課題解決におけるAIの貢献に着目すべきだと説く。 開発者にとって重要なのは、AIの存続リスクを過度に懸念して開発を停滞させることではなく、ポジティブな社会実装を加速させるためのツール構築にリソースを集中することだという示唆だ。",
+    "translations": {
+      "ja": {
+        "title": "AIが人類を救う確率は90%？楽観的未来論が示唆するAI開発の方向性と私たちが注力すべき課題とは",
+        "summary": "ジョシュ・ボカネグラ氏は、AIが人類を滅ぼすリスクよりも救済する可能性が圧倒的に高いとし、その確率を90%と予測する論考を発表した。 技術的特異点への恐怖ではなく、人類の課題解決におけるAIの貢献に着目すべきだと説く。 開発者にとって重要なのは、AIの存続リスクを過度に懸念して開発を停滞させることではなく、ポジティブな社会実装を加速させるためのツール構築にリソースを集中することだという示唆だ。"
+      },
+      "en": {
+        "title": "Why one tech observer calculates a 90% probability that AI will save humanity rather than destroy it",
+        "summary": "Josh Bocanegra recently published a thesis arguing that the probability of AI saving humanity far outweighs extinction risks, placing that likelihood at roughly 90%. Instead of fixating on existential dread regarding the technological singularity, the piece urges builders to refocus on how artificial intelligence can tangibly address intractable human problems. For developers and AI founders, the practical takeaway is clear: do not let speculative doom-mongering derail product roadmaps or stifle innovation. Instead, the focus should remain on accelerating positive, utility-driven social implementation. The argument suggests that the greatest risk today isn't necessarily superintelligence going rogue, but rather an unnecessary retreat from the massive potential AI offers to improve human welfare and solve long-standing global challenges."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-01T13:31:51.992Z"
+  },
+  {
+    "id": "art-1793539891091-aznq2",
+    "source_id": "source-ai-unraveled",
+    "source_name": "AI Unraveled",
+    "url": "https://rss.com/podcasts/djamgatech/3284333",
+    "published_at": "2026-11-01T13:25:17.000Z",
+    "og_image_url": "https://img.rss.com/djamgatech/900/ep_cover_20261101_132106_a9c0c3fc5d996e47785ad621de087b7c.jpg",
+    "title_ja": "AnthropicがIPO申請で売上14倍増を報告、一方でAI投資総額は3兆ドル突破──巨大テック企業とAI産業の今週の動向まとめ",
+    "summary_ja": "Anthropicが公開したIPO申請資料によると、売上高は前年比で約14倍に急増したものの、約807億ドルの評価損を計上していることが判明しました。 一方、ブルームバーグの調査では、巨大テック5社によるAI関連投資総額が3兆ドルに達しています。 Gemini 4 Carbonの性能向上や国防ネットワークでのClaudeエージェント採用など、AI業界全体が急速なスケールアップと巨額投資のフェーズへ移行していることを示しています。",
+    "translations": {
+      "ja": {
+        "title": "AnthropicがIPO申請で売上14倍増を報告、一方でAI投資総額は3兆ドル突破──巨大テック企業とAI産業の今週の動向まとめ",
+        "summary": "Anthropicが公開したIPO申請資料によると、売上高は前年比で約14倍に急増したものの、約807億ドルの評価損を計上していることが判明しました。 一方、ブルームバーグの調査では、巨大テック5社によるAI関連投資総額が3兆ドルに達しています。 Gemini 4 Carbonの性能向上や国防ネットワークでのClaudeエージェント採用など、AI業界全体が急速なスケールアップと巨額投資のフェーズへ移行していることを示しています。"
+      },
+      "en": {
+        "title": "Anthropic reports 14× revenue surge in IPO filing as big tech AI spending crosses $3 trillion milestone",
+        "summary": "Anthropic’s recent IPO filing revealed a staggering 14× revenue increase alongside an $80.7 billion paper loss, highlighting the massive capital intensity currently required to scale frontier models. Concurrently, Bloomberg analysis tracks over $3 trillion in aggregate AI commitments across the industry's five largest tech giants, underscoring the unprecedented pace of infrastructure spending. These developments coincide with the release of the high-performing Gemini 4 Carbon and the integration of Claude agents within Pentagon networks. For builders, this signals a market shifting from experimental prototypes to massive, high-stakes infrastructure dominance, where even triple-digit revenue growth is secondary to the astronomical compute contracts required to sustain AI dominance in the current trillion-dollar arms race."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-01T13:31:31.091Z"
+  },
+  {
     "id": "art-1793539014094-r0k0j",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
