@@ -1,5 +1,90 @@
 [
   {
+    "id": "art-1793551607157-u584h",
+    "source_id": "source-perplexity",
+    "source_name": "Perplexity Hub Blog",
+    "url": "https://www.perplexity.ai/hub/blog/fine-tuning-llm",
+    "published_at": "2026-10-30T12:00:00.000Z",
+    "og_image_url": "https://cdn.sanity.io/images/aqo64vfr/production/b1d0fb5aaca00ae7f5f264e7fce1b7a20f584bfe-1320x740.png?rect=0,24,1320,693&w=1200&h=630&fm=jpg&q=80&fit=crop",
+    "title_ja": "Perplexityが教えるLLMファインチューニングの極意：RAGやプロンプトエンジニアリングとの使い分け基準を徹底解説",
+    "summary_ja": "Perplexityが、大規模言語モデル（LLM）の微調整（ファインチューニング）を行うべきタイミングと、RAGやプロンプトエンジニアリングで代替可能なケースを明確に定義した。 ファインチューニングは特定のタスクフォーマットや専門的な振る舞いを固定する際に有効だが、知識の更新や最新情報への追従には向いていない。 開発者はモデルの重みを変更する前に、まずはプロンプトの洗練や適切なコンテキスト取得（RAG）が最適解ではないかを検証すべきである。",
+    "translations": {
+      "ja": {
+        "title": "Perplexityが教えるLLMファインチューニングの極意：RAGやプロンプトエンジニアリングとの使い分け基準を徹底解説",
+        "summary": "Perplexityが、大規模言語モデル（LLM）の微調整（ファインチューニング）を行うべきタイミングと、RAGやプロンプトエンジニアリングで代替可能なケースを明確に定義した。 ファインチューニングは特定のタスクフォーマットや専門的な振る舞いを固定する際に有効だが、知識の更新や最新情報への追従には向いていない。 開発者はモデルの重みを変更する前に、まずはプロンプトの洗練や適切なコンテキスト取得（RAG）が最適解ではないかを検証すべきである。"
+      },
+      "en": {
+        "title": "Perplexity engineers detail when to fine-tune LLMs versus prioritizing RAG and prompt engineering for optimal performance",
+        "summary": "Perplexity has released a comprehensive guide on deciding whether to fine-tune an LLM or rely on RAG and prompt engineering for specific use cases. While fine-tuning effectively locks in a specific tone or rigid output format, it fails at handling dynamic knowledge updates, where RAG remains superior. For builders, the durable takeaway is to treat Perplexity as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
+      }
+    },
+    "tool_tags": [
+      "Perplexity"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T16:46:47.157Z"
+  },
+  {
+    "id": "art-1793551600091-0fucw",
+    "source_id": "source-openai-changelog",
+    "source_name": "OpenAI API Changelog",
+    "url": "https://developers.openai.com/api/docs/changelog#oct-30-2026-released-gpt-6-rosalind-bringing-specialized-b",
+    "published_at": "2026-10-30T00:00:00.000Z",
+    "og_image_url": "https://developers.openai.com/og/api/docs/changelog.png",
+    "title_ja": "OpenAIが生物科学特化型モデル「GPT-6 Rosalind」を発表、科学研究ツールと高度な推論を統合し難解なライフサイエンス領域を支援",
+    "summary_ja": "OpenAIは、生物学的推論に特化した最新モデル「GPT-6 Rosalind」をAPI経由で公開した。 このモデルは、高度なタンパク質構造解析やゲノムデータ処理などの科学ツールをネイティブに活用可能で、従来モデルでは困難だった専門的なライフサイエンス領域の複雑なタスクを効率的に実行できる。 開発者にとっては、単なる汎用モデルの利用を超え、ドメイン特化型推論エンジンの活用が研究開発の生産性を左右する次世代のアプリケーション構築における鍵となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIが生物科学特化型モデル「GPT-6 Rosalind」を発表、科学研究ツールと高度な推論を統合し難解なライフサイエンス領域を支援",
+        "summary": "OpenAIは、生物学的推論に特化した最新モデル「GPT-6 Rosalind」をAPI経由で公開した。 このモデルは、高度なタンパク質構造解析やゲノムデータ処理などの科学ツールをネイティブに活用可能で、従来モデルでは困難だった専門的なライフサイエンス領域の複雑なタスクを効率的に実行できる。 開発者にとっては、単なる汎用モデルの利用を超え、ドメイン特化型推論エンジンの活用が研究開発の生産性を左右する次世代のアプリケーション構築における鍵となるだろう。"
+      },
+      "en": {
+        "title": "OpenAI Releases GPT-6 Rosalind, Integrating Specialized Biological Reasoning and Scientific Tool-Use for Complex Life Sciences Research",
+        "summary": "OpenAI has officially released GPT-6 Rosalind via its API, a new model architecture engineered specifically for deep biological reasoning and scientific workflows. Unlike general-purpose models, Rosalind integrates directly with complex scientific toolsets, allowing it to perform high-fidelity protein structural analysis and genomic data processing with significantly higher accuracy. For builders and researchers in the life sciences sector, this release marks a shift toward adopting domain-specific reasoning engines over generic LLMs to handle critical laboratory tasks. The integration suggests that the future of specialized AI software lies in the tighter coupling of reasoning models with domain-specific computational tools rather than relying purely on context window scaling. It is time for developers to reassess their infrastructure for research-heavy AI applications."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-01T16:46:40.091Z"
+  },
+  {
+    "id": "art-1793551589836-7eymh",
+    "source_id": "source-arcads",
+    "source_name": "Arcads",
+    "url": "https://help.arcads.ai/en/articles/17780172-kling-4-0-video-edit",
+    "published_at": "2026-10-30T13:17:20Z",
+    "og_image_url": "https://help.arcads.ai/assets/favicon",
+    "title_ja": "Kling 4.0が動画編集機能を大幅強化、AI動画生成の精度と一貫性が向上し複雑なシーン構築が可能に",
+    "summary_ja": "AI動画生成モデル「Kling 4.0」がアップデートされ、動画編集およびシーン生成の精度と一貫性が飛躍的に向上した。 プロンプトから生成される映像の動きがより自然になり、複数シーンをまたぐキャラクターの一貫性も改善されている。 クリエイターにとって、AIによる高品質な映像制作が従来よりも短時間で完結可能となり、特にショート動画や広告制作のワークフローを根本から変える可能性がある。",
+    "translations": {
+      "ja": {
+        "title": "Kling 4.0が動画編集機能を大幅強化、AI動画生成の精度と一貫性が向上し複雑なシーン構築が可能に",
+        "summary": "AI動画生成モデル「Kling 4.0」がアップデートされ、動画編集およびシーン生成の精度と一貫性が飛躍的に向上した。 プロンプトから生成される映像の動きがより自然になり、複数シーンをまたぐキャラクターの一貫性も改善されている。 クリエイターにとって、AIによる高品質な映像制作が従来よりも短時間で完結可能となり、特にショート動画や広告制作のワークフローを根本から変える可能性がある。"
+      },
+      "en": {
+        "title": "Kling 4.0 updates video editing capabilities to significantly improve generation accuracy and scene consistency for creators",
+        "summary": "The Kling 4.0 AI video generation model has received a major update, drastically enhancing its video editing and scene generation accuracy while significantly boosting visual consistency. By refining how the model interprets prompts, Kling 4.0 produces more natural, fluid motion and maintains character continuity across multiple complex scenes. For builders and content creators, these improvements mean that high-quality AI video production can now be completed in a fraction of the time previously required. This evolution is poised to transform workflows for short-form video creation and digital advertising, allowing users to move from concept to polished cinematic output with fewer artifacts, effectively lowering the barrier to producing professional-grade AI video content at scale."
+      }
+    },
+    "tool_tags": [
+      "Arcads"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "動画"
+    ],
+    "created_at": "2026-11-01T16:46:29.836Z"
+  },
+  {
     "id": "art-1793550714489-bxgo8",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
