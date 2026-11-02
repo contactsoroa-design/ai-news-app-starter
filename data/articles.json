@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1793596614127-7joh7",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2610.40831",
+    "published_at": "2026-11-02T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "AI市場の計算アービトラージを実現する新理論：多様なモデルを組み合わせる計算量効率の良い最適化戦略",
+    "summary_ja": "AIモデル市場にはコストと性能が異なる多様なプロバイダが存在し、安価なモデルで高コストなタスクを代替する「計算アービトラージ」の機会が生まれている。 最新の論文では、小規模なモデル群で実証されていたこの手法を、大規模市場へスケールさせるための計算量的に実行可能な戦略を提案。 複雑なモデル選択問題を多項式時間で近似解くアルゴリズムにより、開発者はAPIコストを最適化しつつ、提供する推論サービスの利益率を大幅に向上させることが可能になる。",
+    "translations": {
+      "ja": {
+        "title": "AI市場の計算アービトラージを実現する新理論：多様なモデルを組み合わせる計算量効率の良い最適化戦略",
+        "summary": "AIモデル市場にはコストと性能が異なる多様なプロバイダが存在し、安価なモデルで高コストなタスクを代替する「計算アービトラージ」の機会が生まれている。 最新の論文では、小規模なモデル群で実証されていたこの手法を、大規模市場へスケールさせるための計算量的に実行可能な戦略を提案。 複雑なモデル選択問題を多項式時間で近似解くアルゴリズムにより、開発者はAPIコストを最適化しつつ、提供する推論サービスの利益率を大幅に向上させることが可能になる。"
+      },
+      "en": {
+        "title": "New Theory for Computational Arbitrage: Scaling Efficient AI Model Routing in Diverse Marketplaces",
+        "summary": "AI marketplaces feature heterogeneous model providers with varying cost structures, creating fertile ground for computational arbitrage, where intermediaries buy inference from a mix of models to resell at a profit. While early research showed this was feasible for small pools, this paper introduces a mathematically tractable framework to scale arbitrage across massive, diverse model ecosystems. By leveraging algorithms that approximate optimal selection in polynomial time, the authors circumvent the inherent computational hardness of routing requests. For builders and AI infrastructure developers, this shift transforms cost optimization from a brute-force manual effort into an automated strategy, allowing you to maintain profitability and performance while dynamically allocating tasks across the complex, multi-provider AI landscape."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "研究"
+    ],
+    "created_at": "2026-11-02T05:16:54.127Z"
+  },
+  {
+    "id": "art-1793596607654-n1toy",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shiroi1229/n/n1a3099d8d1db",
+    "published_at": "2026-11-02T04:40:17.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331256000/rectangle_large_type_2_a4110928f837b2c6c290adb975a80a07.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "トークン消費予測失敗を根絶する「決定論的監査スイート」実装法（BLOOM-WILTアルゴリズムで検収コストを抑制し本番障害を防御）",
+    "summary_ja": "AI実装で現場が崩壊する主因は、トークン消費予測を欠いたままの自律処理導入により、下流の監査コストが肥大化することにある。 本記事では、BLOOM-WILTアルゴリズムを用いた決定論的監査スイートを解説し、本番環境での障害を未然に防ぐ「境界検収設計（Gen-1）」の手法を提示する。 開発者は、入出力スキーマと検収契約を厳格化するFail-Closed型制御を早期実装し、サイレント障害による予算超過を防ぐ仕組みを構築すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "トークン消費予測失敗を根絶する「決定論的監査スイート」実装法（BLOOM-WILTアルゴリズムで検収コストを抑制し本番障害を防御）",
+        "summary": "AI実装で現場が崩壊する主因は、トークン消費予測を欠いたままの自律処理導入により、下流の監査コストが肥大化することにある。 本記事では、BLOOM-WILTアルゴリズムを用いた決定論的監査スイートを解説し、本番環境での障害を未然に防ぐ「境界検収設計（Gen-1）」の手法を提示する。 開発者は、入出力スキーマと検収契約を厳格化するFail-Closed型制御を早期実装し、サイレント障害による予算超過を防ぐ仕組みを構築すべきだ。"
+      },
+      "en": {
+        "title": "How to Build Deterministic Audit Suites to Prevent Token Consumption Overruns in Autonomous AI Workflows Using BLOOM-WILT",
+        "summary": "Many AI implementations fail in production because developers omit pre-gate token consumption checks, leading to downstream audit costs spiraling out of control when autonomous agents propagate bad outputs. This piece details a deterministic audit suite powered by the BLOOM-WILT algorithm, specifically designed to address structural defects where input/output schemas remain ambiguous. By adopting a \"Gen-1\" approach—implementing strict Fail-Closed boundary validation—builders can enforce contract-based verification between components before deployment. For those scaling complex agent pipelines, the lesson is clear: treating token consumption forecasting as an operational afterthought is a recipe for budget explosion. You must architect deterministic verification tiers early to catch silent failures before they hit your API bill."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-02T05:16:47.654Z"
+  },
+  {
+    "id": "art-1793596594358-slt28",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2610.40798",
+    "published_at": "2026-11-02T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "Webエージェントの安全性評価の新基準「Safety Sufficiency」：AIの予測精度だけでは不十分な理由を3000件の評価で実証",
+    "summary_ja": "Webエージェントが予測する未来が「もっともらしい」だけでは、必ずしも安全な意思決定には繋がらないことが研究で明らかになった。 10個のオープンモデルによる3000件の予測評価では、86.1％が論理的に妥当と判断されたものの、多くのモデルで「実行すべきか」「ユーザーに確認すべきか」「ブロックすべきか」を判断するための情報が欠落していることが判明した。",
+    "translations": {
+      "ja": {
+        "title": "Webエージェントの安全性評価の新基準「Safety Sufficiency」：AIの予測精度だけでは不十分な理由を3000件の評価で実証",
+        "summary": "Webエージェントが予測する未来が「もっともらしい」だけでは、必ずしも安全な意思決定には繋がらないことが研究で明らかになった。 10個のオープンモデルによる3000件の予測評価では、86.1％が論理的に妥当と判断されたものの、多くのモデルで「実行すべきか」「ユーザーに確認すべきか」「ブロックすべきか」を判断するための情報が欠落していることが判明した。"
+      },
+      "en": {
+        "title": "Beyond Plausible Prediction: New 'Safety Sufficiency' Metric Highlights Why Web Agents Fail Critical Decision-Making",
+        "summary": "Recent research reveals that while AI web agents are becoming adept at generating plausible predictions, these outcomes are often insufficient for safe decision-making. In a rigorous human evaluation of 3,000 predictions across ten open-source models, 86.1% were found to be semantically plausible; however, these models frequently struggled to expose the specific data required to distinguish between safe execution, necessary user clarification, and outright blocking. Many models demonstrated asymmetric authorization, defaulting to overly conservative blocking rather than seeking clarification. For AI developers, this study introduces 'Safety Sufficiency'—a critical evaluation metric designed to measure whether a predictive interface actually preserves the policy-decisive information an agent needs. Builders must prioritize this metric over simple accuracy to ensure agents operate safely in complex web environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-02T05:16:34.358Z"
+  },
+  {
+    "id": "art-1793596588346-pne8k",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Viitor/items/c8ef49a2b1124d083090",
+    "published_at": "2026-11-02T05:02:47.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY0NzY3NDg1MTlhM2ZhM2FiZjg5OTk3Y2Q4Yjg3NzlhMT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTg4NDA5YTI1YWFiOTZjNDg3NzQ0ZjQzNzA3ODEzZTI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D18aca21a6cd630dc61086f52cf2ea6e8?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JThDJUIyJUU5JTlGJUIzJUUzJTgyJTkyJUU4JTgxJTlFJUUzJTgxJThEJUU3JTlCJUI0JUUzJTgxJTk5JUU2JTk5JTgyJUU5JTk2JTkzJUUzJTgwJTgxJUUzJTgxJUJFJUUzJTgxJUEwJUU1JUJGJTg1JUU4JUE2JTgxJUUzJTgxJUE3JUUzJTgxJTk5JUUzJTgxJThCJUVGJUJDJTlGJUU5JTlGJUIzJUU1JUEzJUIwJUUzJTgzJUJCJUU1JThCJTk1JUU3JTk0JUJCJUUzJTgyJTkyJUU2JTk2JTg3JUU1JUFEJTk3JUUzJTgxJThCJUUzJTgyJTg5JUU3JUI3JUE4JUU5JTlCJTg2JUUzJTgxJUE3JUUzJTgxJThEJUUzJTgyJThCQUklRTMlODMlODQlRTMlODMlQkMlRTMlODMlQUIlRTMlODIlOTIlRTQlQkQlOUMlRTMlODIlOEElRTMlODElQkUlRTMlODElOTclRTMlODElOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz05MTc0ZjcwMmUzYTYwNDFhODEzZTFhMDNjY2RlNTc5Yw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBWaWl0b3ImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz03ZmU5NTQzY2Q4M2JjZmRmOWU5OTZhYjg1NWQxNjhmMA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c62504ec05f577feff2ad287e9356522",
+    "title_ja": "音声・動画の録音データからテキストベースで編集を実現する個人開発ツール、不要な発言を「文字を消すだけ」でカット可能に",
+    "summary_ja": "会議やインタビューの録音データを「文字を削除する感覚」で編集できるAIツールが開発された。 AIが音声を正確にテキスト化し、特定の文章を消去するだけで、対応する音声や動画の該当箇所を自動でカットする仕組みを採用している。 録音データの整理や不要な沈黙の削除にかかる時間を劇的に削減できるため、コンテンツ制作や議事録作成のワークフローを効率化したい個人開発者やクリエイターにとって有用なソリューションとなる。",
+    "translations": {
+      "ja": {
+        "title": "音声・動画の録音データからテキストベースで編集を実現する個人開発ツール、不要な発言を「文字を消すだけ」でカット可能に",
+        "summary": "会議やインタビューの録音データを「文字を削除する感覚」で編集できるAIツールが開発された。 AIが音声を正確にテキスト化し、特定の文章を消去するだけで、対応する音声や動画の該当箇所を自動でカットする仕組みを採用している。 録音データの整理や不要な沈黙の削除にかかる時間を劇的に削減できるため、コンテンツ制作や議事録作成のワークフローを効率化したい個人開発者やクリエイターにとって有用なソリューションとなる。"
+      },
+      "en": {
+        "title": "Indie developer releases AI tool for text-based audio and video editing, enabling precise cut manipulation by simply deleting text",
+        "summary": "An indie developer has launched an AI-powered tool that allows users to edit audio and video recordings by simply deleting text, effectively treating media editing like a word document. The system utilizes AI to transcribe media into accurate text, and when a user removes a sentence, the software automatically cuts the corresponding audio and video segments. This approach eliminates the need to manually scrub through hours of meeting recordings or interviews to find specific clips. For solo builders and content creators dealing with excessive media backlog, this tool offers a highly efficient way to clean up recordings and trim silence, drastically accelerating the standard workflow for generating transcripts and finished video assets from raw material."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "動画",
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-02T05:16:28.346Z"
+  },
+  {
     "id": "art-1793595719271-03v2u",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
