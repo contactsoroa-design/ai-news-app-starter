@@ -249,6 +249,7 @@ function GenreIcon({ genre, color }: { genre: string; color: string }) {
  */
 export function SiteFaviconBadge({
   siteUrl,
+  iconUrl = null,
   localSource = null,
   fallbackInitial,
   fallbackBg,
@@ -256,6 +257,8 @@ export function SiteFaviconBadge({
   sizePx = 22,
 }: {
   siteUrl: string | undefined;
+  /** site_url 由来以外の公式favicon（加工なし）。ある場合は siteUrl より優先 */
+  iconUrl?: string | null;
   /** 公式シンボル（未加工）。ある場合は favicon より優先 */
   localSource?: ImageSourcePropType | null;
   fallbackInitial: string;
@@ -264,7 +267,7 @@ export function SiteFaviconBadge({
   sizePx?: number;
 }) {
   const [failed, setFailed] = useState(false);
-  const faviconUrl = siteUrl ? getFaviconUrl(siteUrl) : null;
+  const faviconUrl = iconUrl || (siteUrl ? getFaviconUrl(siteUrl) : null);
   const iconSize = Math.round(sizePx * 0.76);
 
   if (localSource) {
@@ -758,6 +761,7 @@ export function SettingsView({
                       >
                         <SiteFaviconBadge
                           siteUrl={src.site_url}
+                          iconUrl={src.icon_url}
                           localSource={getSponsorLocalIconForSourceId(src.id)}
                           fallbackInitial={initial}
                           fallbackBg={uiColors.avatarSurface}

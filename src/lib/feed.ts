@@ -1131,6 +1131,10 @@ export function getArticleSourceFaviconUrl(article: Article): string | null {
     const src = (seedSourcesData as Source[]).find(
       (s) => s.id === article.source_id
     );
+    // Mintlify 等で site_url の favicon が製品ロゴと違うとき用（加工なしの公式favicon URL）
+    if (src?.icon_url) {
+      return src.icon_url;
+    }
     if (src?.site_url) {
       return getFaviconUrl(src.site_url);
     }
