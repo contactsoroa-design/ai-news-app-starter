@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1793602923879-efowi",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2610.40890",
+    "published_at": "2026-11-02T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "ChatGPTは監視社会を加速させるか？LLMによる監視支援リスクを分類した7つのカテゴリーと110のプロンプト検証結果",
+    "summary_ja": "大規模言語モデル（LLM）が監視業務に悪用される懸念を検証するため、研究チームは監視関連のプロンプト110個を用いてChatGPTの応答を分析した。 その結果、標的追跡や個人特定などのリスクを7つのカテゴリーに分類し、AIが監視活動を容易にする具体的な手口を明らかにした。 開発者やAIエンジニアは、モデルの安全性設計において、単なる攻撃防御だけでなく、監視という社会的な害悪をもたらす「支援」機能としての悪用可能性を考慮すべきである。",
+    "translations": {
+      "ja": {
+        "title": "ChatGPTは監視社会を加速させるか？LLMによる監視支援リスクを分類した7つのカテゴリーと110のプロンプト検証結果",
+        "summary": "大規模言語モデル（LLM）が監視業務に悪用される懸念を検証するため、研究チームは監視関連のプロンプト110個を用いてChatGPTの応答を分析した。 その結果、標的追跡や個人特定などのリスクを7つのカテゴリーに分類し、AIが監視活動を容易にする具体的な手口を明らかにした。 開発者やAIエンジニアは、モデルの安全性設計において、単なる攻撃防御だけでなく、監視という社会的な害悪をもたらす「支援」機能としての悪用可能性を考慮すべきである。"
+      },
+      "en": {
+        "title": "Is ChatGPT enabling mass surveillance? A new study benchmarks LLM risks across 110 prompts and 7 surveillance categories",
+        "summary": "Researchers have analyzed how large language models facilitate surveillance, creating a taxonomy of seven risk categories—such as target tracking and personal identification—evaluated against 110 distinct prompts on ChatGPT’s public interface. This exploratory case study demonstrates that consumer-grade LLMs can provide actionable, detailed guidance for intrusive monitoring tasks, effectively lowering the barrier for potential bad actors. The findings underscore that current safety guardrails may fail to catch surveillance-oriented assistance, which is fundamentally different from traditional cyberattack vectors. For developers and AI safety engineers, the takeaway is clear: model alignment strategies must expand beyond direct exploitation prevention to explicitly account for 'surveillance assistance' as a distinct, actionable risk category that could significantly undermine user privacy and safety."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-02T07:02:03.879Z"
+  },
+  {
+    "id": "art-1793602917550-v5g8d",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/shacikku3/articles/cline-auto-approve-settings",
+    "published_at": "2026-11-02T00:08:39.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--S6UUyK7n--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cline%2520%25E3%2581%25AE%25E8%2587%25AA%25E5%258B%2595%25E6%2589%25BF%25E8%25AA%258D%25E3%2580%2581%25E3%2581%25A9%25E3%2581%2593%25E3%2581%25BE%25E3%2581%25A7%25E3%2582%25AA%25E3%2583%25B3%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259F%25205%25E3%2581%25A4%25E3%2581%25AE%25E9%25A0%2585%25E7%259B%25AE%25E3%2582%2592%25E3%2580%258C%25E6%2588%25BB%25E3%2581%259B%25E3%2582%258B%25E3%2581%258B%25E3%2583%25BB%25E5%25A4%2596%25E3%2581%25AB%25E5%2587%25BA%25E3%2582%258B%25E3%2581%258B%25E3%2580%258D%25E3%2581%25A7%25E6%25B1%25BA%25E3%2582%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25B7%25E3%2583%25A3%25E3%2583%2581%25E3%2583%25A9%25E3%2583%259C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QzNWI4MWNkZWUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "VSCode拡張「Cline」の自動承認設定ガイド：5つの項目を「可逆性」と「外部通信」で評価し、開発効率と安全性を両立する最適解",
+    "summary_ja": "VSCodeのAIエージェント拡張機能「Cline」は操作ごとに承認が求められるため、自動承認設定の導入が効率化の鍵となる。 しかし闇雲な有効化は危険だ。 本記事では、自動承認すべき5つの項目を「元に戻せるか（可逆性）」と「外部へ通信するか」という2つの指標で分類・評価する判断基準を解説する。 最終的には「読み取り操作のみ自動承認」という推奨設定に落ち着く論理を提示し、承認ボタンに頼り切らないための安全フックの設計思想までを網羅している。",
+    "translations": {
+      "ja": {
+        "title": "VSCode拡張「Cline」の自動承認設定ガイド：5つの項目を「可逆性」と「外部通信」で評価し、開発効率と安全性を両立する最適解",
+        "summary": "VSCodeのAIエージェント拡張機能「Cline」は操作ごとに承認が求められるため、自動承認設定の導入が効率化の鍵となる。 しかし闇雲な有効化は危険だ。 本記事では、自動承認すべき5つの項目を「元に戻せるか（可逆性）」と「外部へ通信するか」という2つの指標で分類・評価する判断基準を解説する。 最終的には「読み取り操作のみ自動承認」という推奨設定に落ち着く論理を提示し、承認ボタンに頼り切らないための安全フックの設計思想までを網羅している。"
+      },
+      "en": {
+        "title": "Optimizing Cline’s Auto-Approve Settings: A Framework for Balancing Developer Velocity Against Security Risks Using Reversibility and External Access Metrics",
+        "summary": "Cline, the VSCode AI agent extension, halts workflow with frequent approval prompts, prompting developers to enable auto-approval settings for smoother operation. However, blindly granting permissions creates critical security vectors. This guide establishes a rigorous decision framework for the five auto-approve categories, evaluating each based on two specific questions: Can the action be reversed, and does it interact with the outside world? The article advocates for a conservative posture, recommending that builders enable auto-approval exclusively for read operations, while implementing additional safety hooks. By adopting this granular assessment model, developers can reclaim significant velocity without compromising their local environment's integrity or accidentally exposing sensitive data to unauthorized external execution flows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-02T07:01:57.550Z"
+  },
+  {
+    "id": "art-1793602910628-ycvs1",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shiroi1229/n/nb20d1970b73e",
+    "published_at": "2026-11-02T06:54:18.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331310094/rectangle_large_type_2_140490544e92ffad080da9d5247fbef6.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "自律エージェントの「ColluSkill」適用で手戻りを防ぐ：本番稼働率98%超を実現する検収ゲートとFail-Closed設計",
+    "summary_ja": "AI開発における最大のボトルネックは、自律エージェントの実装が論文通りの構成で進んでも、本番運用で障害や手戻りが発生することだ。 特にColluSkillのような手法ではスキル進化の前提条件が検証されず、権限管理や検収境界が曖昧なまま公開されるリスクが高い。 本記事では、コンポーネント間の入出力スキーマを厳格化し、Fail-Closed契約型ゲートを導入することで、本番直前のサイレント障害を未然に防ぐアーキテクチャを解説する。",
+    "translations": {
+      "ja": {
+        "title": "自律エージェントの「ColluSkill」適用で手戻りを防ぐ：本番稼働率98%超を実現する検収ゲートとFail-Closed設計",
+        "summary": "AI開発における最大のボトルネックは、自律エージェントの実装が論文通りの構成で進んでも、本番運用で障害や手戻りが発生することだ。 特にColluSkillのような手法ではスキル進化の前提条件が検証されず、権限管理や検収境界が曖昧なまま公開されるリスクが高い。 本記事では、コンポーネント間の入出力スキーマを厳格化し、Fail-Closed契約型ゲートを導入することで、本番直前のサイレント障害を未然に防ぐアーキテクチャを解説する。"
+      },
+      "en": {
+        "title": "Building fail-safe autonomous agents: implementing ColluSkill verification gates to prevent late-stage regression and production failures",
+        "summary": "The primary bottleneck in modern AI implementation isn't the model itself, but the tendency for autonomous agents to fail in production due to unchecked skill evolution assumptions. Using ColluSkill's framework as a baseline, developers frequently neglect robust governance, leading to silent, costly failures during deployment. This guide details how to implement a rigid Fail-Closed contract gate, ensuring component input/output schemas are strictly verified before execution. By separating agent autonomy from governance gates and treating verification as a hard constraint rather than an afterthought, engineers can achieve up to 98% operational stability. For builders working with agentic workflows, the lesson is clear: your system must enforce rigorous boundaries to prevent recursive errors when autonomous agents evolve their logic in real-time."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-02T07:01:50.628Z"
+  },
+  {
     "id": "art-1793602038052-qmfiv",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
