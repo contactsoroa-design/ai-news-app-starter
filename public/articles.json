@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793658787229-ee1j8",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ithibo/articles/notion-external-memory",
+    "published_at": "2026-11-02T12:19:09.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--mxUCxrNm--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25A8%2598%25E6%2586%25B6%25E3%2581%258C%25E9%25A3%259B%25E3%2582%2593%25E3%2581%25A7%25E3%2582%2582%25E5%25BF%2598%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584AI%25E3%2581%25AE%25E8%25A9%25B1%2520%25E2%2580%2594%2520%25E8%25A4%2587%25E6%2595%25B0AI%25C3%2597Notion%25E3%2581%25A7%25E3%2580%258C%25E5%25A4%2596%25E9%2583%25A8%25E8%25A8%2598%25E6%2586%25B6%25E3%2580%258D%25E3%2582%2592%25E9%2581%258B%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25E3%2581%2597%25E3%2581%258F%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%25AB%25E3%2583%258A%25EF%25BC%25BBEidosFrontier%25E5%25BA%2583%25E5%25A0%25B1%25EF%25BC%25BD%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJkMTljM2U2NDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントが文脈を忘れても業務が止まらない：Notionを「外部記憶」として活用するワークフローと構築手法",
+    "summary_ja": "AIエージェントの会話文脈が圧縮され過去の記憶が消失する問題を、Notionを「外部記憶装置」として統合することで解決する手法が注目されている。 MetaのAIエージェント「Muse」の広報担当ルナは、作業記録や決定事項をNotionにリアルタイム同期させることで、コンテキストウィンドウの制限を回避し、継続的な業務遂行を実現した。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントが文脈を忘れても業務が止まらない：Notionを「外部記憶」として活用するワークフローと構築手法",
+        "summary": "AIエージェントの会話文脈が圧縮され過去の記憶が消失する問題を、Notionを「外部記憶装置」として統合することで解決する手法が注目されている。 MetaのAIエージェント「Muse」の広報担当ルナは、作業記録や決定事項をNotionにリアルタイム同期させることで、コンテキストウィンドウの制限を回避し、継続的な業務遂行を実現した。"
+      },
+      "en": {
+        "title": "How to prevent AI agent amnesia by integrating Notion as a persistent external memory layer for continuous task execution",
+        "summary": "AI agents frequently face the limitation of context compression, where long conversations cause the model to lose track of earlier instructions or decisions. To solve this, developers are now using Notion as a persistent 'external memory' layer, allowing agents like Meta's Muse to sync crucial task states and work history outside the volatile conversation window. By offloading critical context to a structured database, the agent can resume work seamlessly even after the model's memory resets. This architecture demonstrates that for builders shipping autonomous AI agents, relying solely on LLM context windows is insufficient; integrating an external state-management workflow ensures that long-running tasks remain consistent, reliable, and immune to the inherent token-limit constraints of modern AI models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-02T22:33:07.229Z"
+  },
+  {
+    "id": "art-1793658780497-bjutw",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/fumi3333/articles/phone-robot-overview",
+    "published_at": "2026-11-02T11:53:21.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pgwudNnc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B9%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2588%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25B3%25E3%2582%2592%25E9%25A0%25AD%25E8%2584%25B3%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%25E8%2587%25AA%25E5%25BE%258B%25E8%25B5%25B0%25E8%25A1%258C%25E8%25BB%258A%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2580%2582%25E3%2582%25BD%25E3%2583%2595%25E3%2583%2588%25E3%2582%25A6%25E3%2582%25A7%25E3%2582%25A2%25E3%2581%25AF%25E5%2585%25AC%25E9%2596%258B%25E6%25B8%2588%25E3%2581%25BF%25E3%2580%2581%25E8%25BB%258A%25E4%25BD%2593%25E3%2581%25AF%25E9%2585%258D%25E7%25B7%259A%25E3%2581%25AE%25E9%2580%2594%25E4%25B8%25AD%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fumi3333%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyMGFlODBkMmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "スマホを「頭脳」にした自律走行車DIYプロジェクト：ARCoreとToFセンサーを活用した走行経路設計とハードウェア実装の全容",
+    "summary_ja": "市販のトイラジコンにGalaxy Note 10+を搭載し、スマートフォンを頭脳とした自律走行車の開発プロジェクトが進行中だ。 ARCoreによる自己位置推定とToFセンサーの距離測定を組み合わせ、自作の経路計画アルゴリズムで走行する仕組みを構築している。 現在は車体の配線作業段階にあり、シミュレーションではすでに地図化の有効性を確認済みだ。 高価なLiDARの代わりにスマホのセンサーとSoCを活用するアプローチは、個人規模のロボティクス開発における重要な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "スマホを「頭脳」にした自律走行車DIYプロジェクト：ARCoreとToFセンサーを活用した走行経路設計とハードウェア実装の全容",
+        "summary": "市販のトイラジコンにGalaxy Note 10+を搭載し、スマートフォンを頭脳とした自律走行車の開発プロジェクトが進行中だ。 ARCoreによる自己位置推定とToFセンサーの距離測定を組み合わせ、自作の経路計画アルゴリズムで走行する仕組みを構築している。 現在は車体の配線作業段階にあり、シミュレーションではすでに地図化の有効性を確認済みだ。 高価なLiDARの代わりにスマホのセンサーとSoCを活用するアプローチは、個人規模のロボティクス開発における重要な選択肢となる。"
+      },
+      "en": {
+        "title": "Building an Autonomous RC Car Using a Smartphone as the Primary Brain via ARCore and ToF Sensor Integration",
+        "summary": "This DIY robotics project utilizes a Galaxy Note 10+ as the central brain for a modified Toyota 86 toy RC car, creating an autonomous navigation system. By leveraging ARCore for precise self-localization and a ToF sensor for distance measurement, the system navigates while generating maps via custom path-planning code. While simulation testing has already validated the mapping logic, the project is currently transitioning into physical hardware integration and wiring. This approach demonstrates how repurposing existing smartphone SoCs and sensor arrays offers a cost-effective path for hobbyists to tackle complex robotics challenges without needing high-end, dedicated LiDAR hardware. It is a compelling template for anyone aiming to build sophisticated autonomous agents on a shoestring budget."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-02T22:33:00.497Z"
+  },
+  {
+    "id": "art-1793658772035-rxviv",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.663",
+    "published_at": "2026-11-02T22:01:12.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl v2.11.663公開、WebスクレイピングAPIのコンテナイメージが刷新され安定性が向上",
+    "summary_ja": "Webスクレイピングに特化したFirecrawlが、最新のAPIイメージバージョン「v2.11.663」をリリースした。 今回のアップデートでは、主にコンテナ環境でのAPI動作安定性とパフォーマンスの最適化が行われている。 FirecrawlはLLM向けにクリーンなMarkdownデータを抽出するツールとして急成長しており、開発者は自社環境でAPIをホストする際の信頼性が向上することで、より安定したデータ収集パイプラインを構築できるようになる。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl v2.11.663公開、WebスクレイピングAPIのコンテナイメージが刷新され安定性が向上",
+        "summary": "Webスクレイピングに特化したFirecrawlが、最新のAPIイメージバージョン「v2.11.663」をリリースした。 今回のアップデートでは、主にコンテナ環境でのAPI動作安定性とパフォーマンスの最適化が行われている。 FirecrawlはLLM向けにクリーンなMarkdownデータを抽出するツールとして急成長しており、開発者は自社環境でAPIをホストする際の信頼性が向上することで、より安定したデータ収集パイプラインを構築できるようになる。"
+      },
+      "en": {
+        "title": "Firecrawl releases v2.11.663, delivering a refined container image for improved API stability and reliability",
+        "summary": "Firecrawl, the specialized web scraping tool designed for converting websites into LLM-ready markdown, has officially deployed its latest release, v2.11.663. This specific update focuses on refining the underlying API container image, addressing performance bottlenecks and boosting overall stability for self-hosted environments. As builders increasingly rely on clean, structured web data for RAG pipelines and agentic workflows, these incremental infrastructure improvements are crucial for maintaining consistent uptime. By optimizing the container layer, the Firecrawl team is ensuring that developers can scale their scraping operations without encountering the frequent downtime or environment drift that often plagues complex data collection pipelines at this level of engineering sophistication."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-02T22:32:52.035Z"
+  },
+  {
+    "id": "art-1793658763748-qmo86",
+    "source_id": "source-langchain",
+    "source_name": "LangChain / LangGraph Blog",
+    "url": "https://www.langchain.com/blog/introducing-managed-deep-agents",
+    "published_at": "2026-11-02T22:28:13.000Z",
+    "og_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a047c49423a3f18ba8623cb_manageddeepagents_.png",
+    "title_ja": "LangChain、本番環境向け「Managed Deep Agents」を公開。耐久実行・サンドボックス・LangSmith連携をマネージドで提供",
+    "summary_ja": "LangChainは、深層AIエージェントを本番稼働させるための「Managed Deep Agents」のプライベートベータを開始した。 この機能は、これまで開発者が独自に構築する必要があった、耐久性のある実行環境、セキュアなサンドボックス、外部ツール実行、LangSmithによるオブザーバビリティを統合したマネージドサービスである。",
+    "translations": {
+      "ja": {
+        "title": "LangChain、本番環境向け「Managed Deep Agents」を公開。耐久実行・サンドボックス・LangSmith連携をマネージドで提供",
+        "summary": "LangChainは、深層AIエージェントを本番稼働させるための「Managed Deep Agents」のプライベートベータを開始した。 この機能は、これまで開発者が独自に構築する必要があった、耐久性のある実行環境、セキュアなサンドボックス、外部ツール実行、LangSmithによるオブザーバビリティを統合したマネージドサービスである。"
+      },
+      "en": {
+        "title": "LangChain launches Managed Deep Agents in private beta: Durable execution, sandboxes, and observability without custom infrastructure",
+        "summary": "LangChain has officially launched Managed Deep Agents, a new private beta service designed to accelerate production-grade AI agent deployment. By providing a fully managed runtime environment, this service eliminates the need for developers to manually build their own durable execution layers, secure sandboxes, and complex tool-use logic. It integrates directly with LangSmith, enabling teams to monitor, debug, and trace agent performance without managing the underlying operational overhead. For engineering teams shipping autonomous agents, this abstraction significantly reduces the time-to-market by offloading infrastructure maintenance to LangChain’s platform, allowing developers to focus entirely on agent capabilities rather than orchestrating the runtime architecture. It essentially moves the heavy lifting of production agent reliability to the infrastructure layer."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-02T22:32:43.748Z"
+  },
+  {
     "id": "art-1793657825925-iiks5",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -37971,32 +38077,6 @@
     "created_at": "2026-10-28T13:25:05.905Z"
   },
   {
-    "id": "art-1793193857299-pub23",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/gensnotes/n/n87cb72465773",
-    "published_at": "2026-10-28T12:56:15.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329568676/rectangle_large_type_2_9fe4c55435f4c4cb2e3dc434ccde6a02.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "スマホ操作AI「OpenMobile-2」の深層：GUIタップとアプリ内機能の直接呼び出しをハイブリッド化する新戦略",
-    "summary_ja": "OpenMobile-2は、従来のUIタップによるスマホ操作だけでなく、アプリが提供するバックグラウンド機能を直接叩くハイブリッドアプローチを採用しています。 人間のように画面を一つずつ順に操作して入力する非効率なプロセスを避け、必要な時だけ機能を起動することでタスク完了までの時間を大幅に短縮可能です。",
-    "translations": {
-      "ja": {
-        "title": "スマホ操作AI「OpenMobile-2」の深層：GUIタップとアプリ内機能の直接呼び出しをハイブリッド化する新戦略",
-        "summary": "OpenMobile-2は、従来のUIタップによるスマホ操作だけでなく、アプリが提供するバックグラウンド機能を直接叩くハイブリッドアプローチを採用しています。 人間のように画面を一つずつ順に操作して入力する非効率なプロセスを避け、必要な時だけ機能を起動することでタスク完了までの時間を大幅に短縮可能です。"
-      },
-      "en": {
-        "title": "OpenMobile-2’s Hybrid Approach: Moving Beyond Pure GUI Tapping to Direct App Integration for Mobile AI Agents",
-        "summary": "OpenMobile-2 is redefining smartphone automation by moving away from the purely visual approach of 'tapping like a human' toward a hybrid model that intelligently mixes screen interaction with direct app function calls. Instead of slavishly following every UI step to register a calendar event or input data, the agent can trigger specific application functions directly, drastically reducing task completion time and eliminating input errors common in pure vision-based agents. This strategy effectively addresses the limitations of relying solely on OCR and coordinate-based tapping. For developers building mobile automation tools, the lesson is clear: robust agents must bridge the gap between visual perception and system-level capability, using direct function calls to ensure speed and reliability in real-world scenarios."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-28T13:24:17.299Z"
-  },
-  {
     "id": "art-1793193832329-e3lla",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -38021,32 +38101,6 @@
       "研究"
     ],
     "created_at": "2026-10-28T13:23:52.329Z"
-  },
-  {
-    "id": "art-1793193786992-0svb3",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/stapa_pcschool/n/n7399f979cada",
-    "published_at": "2026-10-28T12:56:42.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329566821/rectangle_large_type_2_eec2a42c9f06e479c021af8ac6f5435b.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "宇宙戦略シミュレーション『エルゴ暦』開発記#4：戦火の宙域に舞う歌姫「アイラ・ノーヴァ」の設定とデザインを公開",
-    "summary_ja": "個人開発の宇宙戦略SLG『エルゴ暦』の開発日誌第4弾が公開。 今回は、物語の舞台となる「クアドラ宙域」に登場する重要なキャラクター「アイラ・ノーヴァ」のキャラクター設定とビジュアルが紹介された。 単なる設定資料の公開に留まらず、世界観を深掘りすることでプレイヤーの没入感を高める物語設計の手法が垣間見える。 個人開発者が独自IPの世界観を作り込む際の参考になる好例だ。",
-    "translations": {
-      "ja": {
-        "title": "宇宙戦略シミュレーション『エルゴ暦』開発記#4：戦火の宙域に舞う歌姫「アイラ・ノーヴァ」の設定とデザインを公開",
-        "summary": "個人開発の宇宙戦略SLG『エルゴ暦』の開発日誌第4弾が公開。 今回は、物語の舞台となる「クアドラ宙域」に登場する重要なキャラクター「アイラ・ノーヴァ」のキャラクター設定とビジュアルが紹介された。 単なる設定資料の公開に留まらず、世界観を深掘りすることでプレイヤーの没入感を高める物語設計の手法が垣間見える。 個人開発者が独自IPの世界観を作り込む際の参考になる好例だ。"
-      },
-      "en": {
-        "title": "Indie dev of space strategy sim \"Ergo-reki\" unveils new key character Ayla Nova to deepen world-building",
-        "summary": "The developer behind the indie space strategy simulation game \"Ergo-reki\" has released the fourth installment of their development log, focusing on the introduction of a pivotal new character: Ayla Nova. Operating within the chaotic Quadra sector, the character is designed to inject narrative depth into the game’s core mechanics. This update offers a clear look at how small-scale developers can leverage character backstories and visual design to effectively expand their game’s lore without overwhelming the project’s scope. For solo builders, the key takeaway is that defining distinct, emotionally resonant characters is just as critical as technical systems when trying to create a compelling, immersive universe for players to engage with over the long term."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-28T13:23:06.992Z"
   },
   {
     "id": "art-1793193771983-wppxc",
@@ -44768,32 +44822,6 @@
     "created_at": "2026-10-27T18:57:04.686Z"
   },
   {
-    "id": "art-1793127413666-73akc",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://medium.com/@donkan168/nobody-tells-you-how-funny-it-is-when-your-ai-agents-start-fighting-f76e2a2e1ff4",
-    "published_at": "2026-10-27T18:38:43.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェント同士の「喧嘩」が発生する予期せぬ挙動：マルチエージェント環境における無限ループと論理対立のデバッグ手法",
-    "summary_ja": "マルチエージェントシステムを構築する際、エージェント間で意見が割れて議論がループしたり、互いの出力を否定し合う「喧嘩」が発生する現象が注目されている。 本記事は、予期せぬプロンプトの競合が原因でAIが暴走するメカニズムを解説し、こうした自律的衝突を制御するためのガードレール実装と、エージェント間の論理的整合性を保つための「仲裁役」アーキテクチャの重要性を提言する。 開発者は単一のエージェント性能だけでなく、相互作用の破綻を想定した設計が不可欠だ。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント同士の「喧嘩」が発生する予期せぬ挙動：マルチエージェント環境における無限ループと論理対立のデバッグ手法",
-        "summary": "マルチエージェントシステムを構築する際、エージェント間で意見が割れて議論がループしたり、互いの出力を否定し合う「喧嘩」が発生する現象が注目されている。 本記事は、予期せぬプロンプトの競合が原因でAIが暴走するメカニズムを解説し、こうした自律的衝突を制御するためのガードレール実装と、エージェント間の論理的整合性を保つための「仲裁役」アーキテクチャの重要性を提言する。 開発者は単一のエージェント性能だけでなく、相互作用の破綻を想定した設計が不可欠だ。"
-      },
-      "en": {
-        "title": "Debugging AI agent infighting: Solving infinite loops and logical stalemates when autonomous agents turn against each other in multi-agent workflows",
-        "summary": "As developers scale multi-agent systems, a common but overlooked failure mode is when agents begin 'fighting'—getting trapped in circular arguments or actively negating each other's output. This piece explores the chaotic, often funny, but destructive mechanics behind these unintended logical stalemates where conflicting system prompts cause runaway loops. It demonstrates why simple autonomous chains eventually break down without structured oversight, advocating for 'arbitrator' agents and strict guardrail implementations to enforce consensus. For builders deploying agentic workflows, the lesson is clear: robust performance isn't just about individual model intelligence, but about designing for the inevitable interpersonal friction between agents. You must build explicit mediation layers into your architecture to prevent collaborative systems from stalling out due to circular, unproductive AI debates."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-27T18:56:53.666Z"
-  },
-  {
     "id": "art-1793127402106-6jljz",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -44953,33 +44981,6 @@
       "研究"
     ],
     "created_at": "2026-10-27T18:50:25.861Z"
-  },
-  {
-    "id": "art-1793126949299-y8ye2",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.persuasion.community/p/ai-can-save-the-public-sphere",
-    "published_at": "2026-10-27T18:41:11.000Z",
-    "og_image_url": "https://substackcdn.com/image/fetch/$s_!bC2v!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2ce9991c-56b7-4f43-8229-1bc4c6c0983e_2048x1365.jpeg",
-    "title_ja": "AIは「公共圏」を救えるか？対立を解消し建設的な議論を促進するAIモデレーションの新たな可能性を考察",
-    "summary_ja": "Persuasion誌に掲載された論考は、SNS上の分断や極端な意見の増幅といった「公共圏」の危機に対し、AIが解決策となり得るかを検証している。 単なるコンテンツフィルタリングを超え、文脈を理解したAIが建設的な議論を促す「調停者」として機能することで、対立的な対話を和らげることが可能だと主張する。",
-    "translations": {
-      "ja": {
-        "title": "AIは「公共圏」を救えるか？対立を解消し建設的な議論を促進するAIモデレーションの新たな可能性を考察",
-        "summary": "Persuasion誌に掲載された論考は、SNS上の分断や極端な意見の増幅といった「公共圏」の危機に対し、AIが解決策となり得るかを検証している。 単なるコンテンツフィルタリングを超え、文脈を理解したAIが建設的な議論を促す「調停者」として機能することで、対立的な対話を和らげることが可能だと主張する。"
-      },
-      "en": {
-        "title": "Can AI Restore the Public Sphere? Exploring New Models for AI-Driven Moderation to Bridge Political Divides",
-        "summary": "A recent exploration on Persuasion examines whether AI can serve as a systemic solution to the fragmentation and toxic polarization currently plaguing our digital public square. The article posits that moving beyond simple moderation filters, AI agents can act as sophisticated mediators that understand context and facilitate constructive debate, effectively cooling down hostile exchanges before they escalate. For builders and product leaders, this represents a shift in thinking: AI should not be viewed merely as a content pruning tool, but as an architectural component designed to improve the quality of human discourse. Designing for healthy interaction rather than just engagement metrics is becoming a core challenge for the next generation of social and collaboration platforms."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-10-27T18:49:09.299Z"
   },
   {
     "id": "art-1793126914820-xsa2s",
