@@ -44,7 +44,7 @@ cp .env.example .env
 - `MAX_ARTICLES_PER_DAY`: 1日の最大要約件数（既定タイムゾーン `America/Los_Angeles`＝Gemini RPD、既定: `350`。無料をやや攻める。有料なら上げる）
 - `MAX_ARTICLES_PER_HOUR`: 1時間あたり上限（既定: `15` ≒ 日上限/24）
 - `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `4`。ペース予算の範囲。ソース間は公平枠で分散）
-- `SOURCE_SHARE_WINDOW` / `MAX_SOURCE_SHARE`: 直近N件の同一ソース占有ソフト上限（既定: `100` / `0.08`。Pass1/1bのみ。枠余り時は解除して鮮度を優先。`0` で無効）
+- `SOURCE_SHARE_WINDOW` / `MAX_SOURCE_SHARE`: 直近N件の同一ソース占有ソフト上限（既定: `100` / `0.08`。優先度ソートの本走査で後回し。枠余り時は解除して鮮度を優先。`0` で無効）
 - `INGEST_PACE_SLACK`: 線形ペースより先行してよい件数（既定: `6`。大きいと空白時間が伸びやすい）
 - `INGEST_ARTICLE_DELAY_MS`: 記事ごとのLLM間隔ミリ秒（デフォルト: `4000`）
 - `MAX_MONTHLY_COST_JPY`: 月間の費用上限（デフォルト: `3000`。無料枠中は実質 $0）

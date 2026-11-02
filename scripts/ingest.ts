@@ -695,17 +695,77 @@ async function itemsFromSitemapFallback(
 }
 /**
  * 1実行あたり同一ソースから取る上限（既定1）。
- * 高頻度コミュニティ系（Zenn/Qiita/HN）が枠を独占しないようにする。
- * 枠が余ったときだけ 2 件目以降を許可する（soft fill）。
+ * 同じソースに候補が複数あっても「落とす」のではなく、今回は1件だけ載せて残りは次回へ。
+ * 枠がどうしても余る最終パスだけ 2 件目以降を許可する（soft fill）。
  */
 const DEFAULT_MAX_PER_SOURCE_PER_RUN = 1;
 /**
  * 直近 N 件（作成時刻）に占める同一ソースの上限割合。
- * Pass1/1b だけで効かせ、枠余り（Pass2）と優先キューでは外す → 最新が途切れない。
+ * 優先度ソートの本走査で効かせ、枠余り時だけ解除 → 最新が途切れない。
  * 0 で無効。
  */
 const DEFAULT_SOURCE_SHARE_WINDOW = 100;
 const DEFAULT_MAX_SOURCE_SHARE = 0.08;
+
+type IngestCandidate = {
+  source: Source;
+  item: RawFeedItem;
+  fromDeferred: boolean;
+};
+
+/**
+ * レーン分割ではなく優先度で1列に並べる。
+ * 1. 占有ソフト上限未満を先
+ * 2. 累計件数の少ないソースを先
+ * 3. 公開が新しいものを先
+ * 4. deferred は同条件ならわずかに先（取りこぼし救済。1〜3よりは弱い）
+ * 同一ソース1実行1件は受理時に強制（ソートでは落とさない）。
+ */
+function compareIngestCandidates(
+  a: IngestCandidate,
+  b: IngestCandidate,
+  sourceCounts: Map<string, number>,
+  shareWindowCounts: Map<string, number>,
+  sourceShareCap: number,
+  shareCapEnabled: boolean
+): number {
+  if (shareCapEnabled && Number.isFinite(sourceShareCap)) {
+    const aOver =
+      (shareWindowCounts.get(a.source.id) ?? 0) >= sourceShareCap ? 1 : 0;
+    const bOver =
+      (shareWindowCounts.get(b.source.id) ?? 0) >= sourceShareCap ? 1 : 0;
+    if (aOver !== bOver) return aOver - bOver;
+  }
+  const ca = sourceCounts.get(a.source.id) ?? 0;
+  const cb = sourceCounts.get(b.source.id) ?? 0;
+  if (ca !== cb) return ca - cb;
+  const ta = a.item.pubDate ? Date.parse(a.item.pubDate) : 0;
+  const tb = b.item.pubDate ? Date.parse(b.item.pubDate) : 0;
+  const sa = Number.isFinite(ta) ? ta : 0;
+  const sb = Number.isFinite(tb) ? tb : 0;
+  if (sa !== sb) return sb - sa;
+  if (a.fromDeferred !== b.fromDeferred) return a.fromDeferred ? -1 : 1;
+  return a.source.id.localeCompare(b.source.id);
+}
+
+function sortIngestCandidates(
+  candidates: IngestCandidate[],
+  sourceCounts: Map<string, number>,
+  shareWindowCounts: Map<string, number>,
+  sourceShareCap: number,
+  shareCapEnabled: boolean
+): IngestCandidate[] {
+  return [...candidates].sort((a, b) =>
+    compareIngestCandidates(
+      a,
+      b,
+      sourceCounts,
+      shareWindowCounts,
+      sourceShareCap,
+      shareCapEnabled
+    )
+  );
+}
 /** 公開日がこの日数より前の候補は未登録でも取り込まない（古い公式が枠を使うのを防ぐ） */
 const DEFAULT_MAX_ARTICLE_AGE_DAYS = 7;
 
@@ -1828,46 +1888,11 @@ async function main() {
     sourceCounts,
     rotateSlot
   );
-  // 件数中央値以下を「不足側」とし、その深さ全部を先に回す（人気ソースの depth0 が先に枠を取るのを防ぐ）
-  const countSnapshot = sourceQueues
-    .map((q) => sourceCounts.get(q.source.id) ?? 0)
-    .sort((a, b) => a - b);
-  const medianCount =
-    countSnapshot.length === 0
-      ? 0
-      : countSnapshot[Math.floor(countSnapshot.length / 2)];
-  const primaryQueues = sourceQueues.filter(
-    (q) => (sourceCounts.get(q.source.id) ?? 0) <= medianCount
-  );
-  const overflowQueues = sourceQueues.filter(
-    (q) => (sourceCounts.get(q.source.id) ?? 0) > medianCount
-  );
   console.log(
-    `公平巡回: 不足ソース優先 (中央値≤${medianCount}) / 回転スロット=${rotateSlot} / 1ソース上限=${maxPerSourcePerRun}件（枠余り時は緩和） / 公開${maxArticleAgeDays}日以内のみ` +
+    `優先度順: 占有未満→件数少→新しい→deferred微優先 / 回転スロット=${rotateSlot} / 1ソース上限=${maxPerSourcePerRun}件（最終の枠余りのみ緩和） / 公開${maxArticleAgeDays}日以内のみ` +
       (shareCapEnabled
         ? ` / 占有ソフト上限=直近${sourceShareWindow}件の${Math.round(maxSourceShare * 100)}%（≤${sourceShareCap}件・枠余り時は解除）`
         : ' / 占有ソフト上限=オフ')
-  );
-  console.log(
-    `  優先: ${primaryQueues
-      .map((q) => `${q.source.name}(${sourceCounts.get(q.source.id) ?? 0})`)
-      .join(' → ') || '（なし）'}`
-  );
-  console.log(
-    `  後回し: ${overflowQueues
-      .map((q) => `${q.source.name}(${sourceCounts.get(q.source.id) ?? 0})`)
-      .join(' → ') || '（なし）'}`
-  );
-
-  // 不足側と後回し側を分離。不足側の深い候補で枠を埋め切ると
-  // 件数の多いソース（Zenn/Qiita/HN 等）が同じ実行で後回しのまま枠を取れないため。
-  const primaryCandidates = buildRoundRobinCandidates(
-    primaryQueues,
-    RSS_ITEMS_PER_SOURCE
-  );
-  const overflowCandidates = buildRoundRobinCandidates(
-    overflowQueues,
-    RSS_ITEMS_PER_SOURCE
   );
 
   let todayCount = 0;
@@ -1918,9 +1943,53 @@ async function main() {
   });
   if (deferredQueue.length > 0) {
     console.log(
-      `優先キュー: 前回持ち越し ${deferredQueue.length} 件を先に試します`
+      `持ち越し候補: ${deferredQueue.length} 件を優先度ソートに合流（同一ソースは今回1件まで）`
     );
   }
+
+  // RSS＋deferred を1列にまとめ、優先度で並べる（レーン分割しない）
+  const rssCandidates = buildRoundRobinCandidates(
+    sourceQueues,
+    RSS_ITEMS_PER_SOURCE
+  );
+  const candidateByUrl = new Map<string, IngestCandidate>();
+  for (const row of deferredQueue) {
+    const source = sourceById.get(row.source_id);
+    if (!source) continue;
+    candidateByUrl.set(row.url, {
+      source,
+      item: {
+        title: row.title,
+        link: row.url,
+        pubDate: row.pubDate,
+        snippet: row.snippet ?? '',
+      },
+      fromDeferred: true,
+    });
+  }
+  for (const { source, item } of rssCandidates) {
+    if (candidateByUrl.has(item.link)) continue;
+    candidateByUrl.set(item.link, { source, item, fromDeferred: false });
+  }
+  const rankedCandidates = sortIngestCandidates(
+    [...candidateByUrl.values()],
+    sourceCounts,
+    getShareWindowCounts(),
+    sourceShareCap,
+    shareCapEnabled
+  );
+  console.log(
+    `候補 ${rankedCandidates.length} 件を優先度順に整列` +
+      (rankedCandidates.length > 0
+        ? `（先頭: ${rankedCandidates
+            .slice(0, Math.min(5, rankedCandidates.length))
+            .map(
+              (c) =>
+                `${c.source.name}${c.fromDeferred ? '*' : ''}#${sourceCounts.get(c.source.id) ?? 0}`
+            )
+            .join(' → ')}）`
+        : '')
+  );
 
   const atDayCap = () => alreadyToday + todayCount >= maxPerDay;
   const atHourCap = () => alreadyThisHour + hourCount >= maxPerHour;
@@ -2107,56 +2176,38 @@ async function main() {
     }
   };
 
-  // Pass 0: 前回 429／締切で残せなかった候補を先に消化（枠余り取りこぼし対策）
-  if (deferredQueue.length > 0 && effectiveRunCap > 0) {
-    const deferredCandidates: Array<{ source: Source; item: RawFeedItem }> = [];
-    for (const row of [...deferredQueue]) {
-      const source = sourceById.get(row.source_id);
-      if (!source) continue;
-      deferredCandidates.push({
-        source,
-        item: {
-          title: row.title,
-          link: row.url,
-          pubDate: row.pubDate,
-          snippet: row.snippet ?? '',
-        },
-      });
-    }
-    // 優先キューは鮮度回復優先（占有キャップは掛けない）
-    await runPass(
-      'Pass0 優先キュー',
-      deferredCandidates,
-      Math.max(maxPerSourcePerRun, maxPerRun),
-      false
-    );
-  }
+  const flatCandidates = rankedCandidates.map(({ source, item }) => ({
+    source,
+    item,
+  }));
 
-  // Pass 1: 不足ソースのみ・1ソース1件（偏り抑制＋占有ソフト上限）
+  // 本走査: 優先度順・占有キャップあり・同一ソースは今回1件
   await runPass(
-    'Pass1 不足ソース',
-    primaryCandidates,
+    '優先度順',
+    flatCandidates,
     maxPerSourcePerRun,
     true
   );
 
-  // Pass 1b: 枠余りなら後回しソース全般を同じ厳格上限で先に拾う
-  // （不足側の depth 2〜6 で枠を埋め切る前に overflow の最新へ回す）
+  // 枠余り: 占有だけ外す（同一ソース1件は維持）。他ソースの新着を拾う
   if (
     !atRunCap() &&
     !atDayCap() &&
     !atHourCap() &&
     !stoppedForRateLimit
   ) {
+    console.log(
+      `枠余り (${todayCount}/${effectiveRunCap}) のため占有ソフト上限のみ解除（1ソース1件は維持）`
+    );
     await runPass(
-      'Pass1b 後回しソース',
-      overflowCandidates,
+      '枠余り・占有解除',
+      flatCandidates,
       maxPerSourcePerRun,
-      true
+      false
     );
   }
 
-  // Pass 2: まだ余りなら緩和上限＋占有解除。他に新着が無い時間でも最新が途切れない
+  // それでも余り: 同一ソース2件目以降を許可（新着が他に無いときの鮮度確保）
   if (
     !atRunCap() &&
     !atDayCap() &&
@@ -2165,19 +2216,15 @@ async function main() {
   ) {
     const softCap = Math.max(maxPerSourcePerRun + 2, maxPerRun);
     console.log(
-      `枠余り (${todayCount}/${maxPerRun}) のためソース上限を ${softCap} に緩和し、占有ソフト上限も解除します（鮮度優先）`
+      `枠余り (${todayCount}/${effectiveRunCap}) のためソース上限を ${softCap} に緩和します（鮮度優先）`
     );
-    await runPass('Pass2 後回しソース', overflowCandidates, softCap, false);
-    await runPass('Pass2 不足ソース', primaryCandidates, softCap, false);
+    await runPass('枠余り・ソース緩和', flatCandidates, softCap, false);
   }
 
   if (stoppedForRateLimit) {
     console.log('レート制限のため途中終了（途中結果は保存）。');
     // 枠は余っているので、まだ見ていない新着候補を優先キューへ退避
-    for (const { source, item } of [
-      ...overflowCandidates,
-      ...primaryCandidates,
-    ]) {
+    for (const { source, item } of flatCandidates) {
       if (deferredQueue.length >= DEFERRED_QUEUE_MAX) break;
       if (knownUrls.has(item.link)) continue;
       if (isArticleTooOld(item.pubDate, maxArticleAgeDays, now)) continue;
