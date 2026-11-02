@@ -1,5 +1,118 @@
 [
   {
+    "id": "art-1793629057834-fcu12",
+    "source_id": "source-revenuecat",
+    "source_name": "RevenueCat Blog / Sub Club",
+    "url": "https://www.revenuecat.com/blog/company/app-growth-annual-2026-workshops",
+    "published_at": "2026-11-02T13:25:11.000Z",
+    "og_image_url": "https://cdn.sanity.io/images/c3qnx9b0/production/3d714f6342db9f2f28384f8f5dfcf756715f8562-1600x800.png?w=1200&fit=max",
+    "title_ja": "RevenueCatが「App Growth Annual」の全6ワークショップを無料公開、AI広告活用や顧客心理分析からアプリを話題にする戦略まで詳細に解説",
+    "summary_ja": "RevenueCatは、アプリ成長に関する年次カンファレンス「App Growth Annual」で行われた6つのワークショップ動画と発表資料を完全無料で公開した。 AIを活用したクリエイティブ制作、顧客言語の分析、さらにはユーザー間で話題になるアプリ作りの具体的なフレームワークが学べる内容だ。 集客やマーケティングに課題を持つ個人開発者やスタートアップにとって、トップ層の知見を無料で獲得できる貴重な機会となっている。",
+    "translations": {
+      "ja": {
+        "title": "RevenueCatが「App Growth Annual」の全6ワークショップを無料公開、AI広告活用や顧客心理分析からアプリを話題にする戦略まで詳細に解説",
+        "summary": "RevenueCatは、アプリ成長に関する年次カンファレンス「App Growth Annual」で行われた6つのワークショップ動画と発表資料を完全無料で公開した。 AIを活用したクリエイティブ制作、顧客言語の分析、さらにはユーザー間で話題になるアプリ作りの具体的なフレームワークが学べる内容だ。 集客やマーケティングに課題を持つ個人開発者やスタートアップにとって、トップ層の知見を無料で獲得できる貴重な機会となっている。"
+      },
+      "en": {
+        "title": "RevenueCat Releases 6 Free Workshops From App Growth Annual, Covering AI Ad Creative, User Psychology, and Strategies to Drive Organic Virality",
+        "summary": "RevenueCat has released six specialized workshops from their \"App Growth Annual\" conference, providing full video replays and presenter slides for free. These hands-on sessions dive into critical growth tactics, including how to produce high-performing AI ad creatives, refine customer-facing language, and engineer app experiences that naturally encourage organic user conversation. For solo developers and growth engineers struggling to cut through acquisition noise, these resources provide a direct blueprint from industry leaders on matching product value with psychological triggers. Instead of guessing your messaging, these structured workshops offer concrete frameworks for aligning your marketing with actual user intent, effectively saving you from wasting ad spend on unproven strategies."
+      }
+    },
+    "tool_tags": [
+      "RevenueCat"
+    ],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "ビジネス",
+      "アップデート"
+    ],
+    "created_at": "2026-11-02T14:17:37.834Z"
+  },
+  {
+    "id": "art-1793629049421-g4b1a",
+    "source_id": "source-heygen-ugc",
+    "source_name": "HeyGen API Changelog",
+    "url": "https://developers.heygen.com/changelog#shared-reference-video-budget",
+    "published_at": "2026-10-27T23:09:25.000Z",
+    "og_image_url": "https://heygen-1fa696a7.mintlify.app/_mintlify/api/og/v2?division=Documentation&title=Changelog&description=Track+every+HeyGen+API+change%2C+new+endpoint%2C+deprecation%2C+and+version+bump+in+the+API+changelog.+Subscribe+via+RSS+or+webhook+to+get+notified+on+the+next.&theme=409ebfea156913020ba408b2&signature=9bc8a37c2eac2191bca96ad15a146ac91820605b6c3175bba20cf5221f17e509",
+    "title_ja": "HeyGen API、参照動画の合計15秒制限を導入。複数動画利用時のリソース配分ロジックを最適化し、課金対象となる入力時間の透明性を向上",
+    "summary_ja": "HeyGenはAPI（/v3/models/videos）において、参照動画の利用時間に合計15秒の制限を導入した。 最大3つまでの動画でこの枠を共有し、超過分は各動画の最初の5秒を優先しつつ残りを均等配分する仕組みだ。 入力動画の合計時間は請求対象の`input_video_duration`として明示されるため、開発者は課金コストを正確に把握し、モデルへの入力効率を最適化できるようになった。",
+    "translations": {
+      "ja": {
+        "title": "HeyGen API、参照動画の合計15秒制限を導入。複数動画利用時のリソース配分ロジックを最適化し、課金対象となる入力時間の透明性を向上",
+        "summary": "HeyGenはAPI（/v3/models/videos）において、参照動画の利用時間に合計15秒の制限を導入した。 最大3つまでの動画でこの枠を共有し、超過分は各動画の最初の5秒を優先しつつ残りを均等配分する仕組みだ。 入力動画の合計時間は請求対象の`input_video_duration`として明示されるため、開発者は課金コストを正確に把握し、モデルへの入力効率を最適化できるようになった。"
+      },
+      "en": {
+        "title": "HeyGen API updates reference-video pipeline with a 15-second shared input budget and refined allocation logic for better cost management",
+        "summary": "HeyGen has updated its video model API endpoint (`/v3/models/videos`) to enforce a 15-second total input budget for reference footage, regardless of whether developers submit one or three source files. The new allocation logic prioritizes the first five seconds of each video if the combined total exceeds the limit, distributing the remaining capacity equally among files. Crucially, the API now explicitly reports `input_video_duration` in polling responses, allowing builders to audit billing costs against their actual input usage. For developers integrating HeyGen, this change enforces stricter resource management but provides the transparency needed to fine-tune API requests and avoid unexpected overages when chaining multiple reference assets."
+      }
+    },
+    "tool_tags": [
+      "HeyGen"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-02T14:17:29.421Z"
+  },
+  {
+    "id": "art-1793629031654-zgh86",
+    "source_id": "source-devin",
+    "source_name": "Devin Release Notes",
+    "url": "https://docs.devin.ai/release-notes/overview#october-28-2026",
+    "published_at": "2026-10-29T13:35:50.000Z",
+    "og_image_url": "https://cognitionai.mintlify.app/_mintlify/api/og/v2?division=Release+Notes&title=Recent+Updates&description=The+latest+Devin+updates%3A+recently+released+features%2C+improvements%2C+and+bug+fixes+across+the+product%2C+updated+with+each+release.&theme=82174942d7047708bb73f83a&signature=970cb27f783b763232e8467289452b1dc01b27a6ba3cd427ce4d198db835e687",
+    "title_ja": "Devinの進捗管理が「Progressタブ」に統合、リアルタイムタスク追跡が可能に。コマンド表示や差分ファイル確認などUIの大幅刷新を実施",
+    "summary_ja": "Devinは進捗管理機能を「Progressタブ」に統合し、セッション中のタスクをリアルタイムに追跡できるライブドロワー機能を実装しました。 また、タスクをクリックすることでActivityストリームが該当作業のみにフィルタリングされるようになり、状況把握が容易になっています。 さらに、コマンドラインのステップ出力表示、差分ファイルの変更リストレンダリング、Slackスタイルの画像拡大表示など、開発体験を向上させるUI改善も多数追加されました。",
+    "translations": {
+      "ja": {
+        "title": "Devinの進捗管理が「Progressタブ」に統合、リアルタイムタスク追跡が可能に。コマンド表示や差分ファイル確認などUIの大幅刷新を実施",
+        "summary": "Devinは進捗管理機能を「Progressタブ」に統合し、セッション中のタスクをリアルタイムに追跡できるライブドロワー機能を実装しました。 また、タスクをクリックすることでActivityストリームが該当作業のみにフィルタリングされるようになり、状況把握が容易になっています。 さらに、コマンドラインのステップ出力表示、差分ファイルの変更リストレンダリング、Slackスタイルの画像拡大表示など、開発体験を向上させるUI改善も多数追加されました。"
+      },
+      "en": {
+        "title": "Devin Launches Live Progress Tab to Track Tasks in Real-Time Alongside Significant UI Refinements for Commands and File Diffs",
+        "summary": "Devin just overhauled its workflow management, replacing the legacy Tasks tab with a new live Progress drawer that tracks session activity in real-time. By clicking any specific task, users can now instantly filter the Activity stream to isolate relevant work, making it significantly easier to audit progress during complex sessions. Alongside this navigation shift, the update introduces several developer-centric refinements, such as granular shell card outputs for chained commands, a revamped rendering engine for .diff and .patch files, and Slack-style lightbox viewing for images. The composer now preserves text during loading states, and error toasts have been streamlined to auto-dismiss, resulting in a cleaner, more fluid coding environment for long-running AI agent tasks."
+      }
+    },
+    "tool_tags": [
+      "Devin"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-02T14:17:11.654Z"
+  },
+  {
+    "id": "art-1793628998246-msr03",
+    "source_id": "source-notion",
+    "source_name": "Notion API Changelog (Agent / MCP)",
+    "url": "https://developers.notion.com/page/changelog#october-29-2026",
+    "published_at": "2026-10-29T17:46:37.000Z",
+    "og_image_url": "https://notion-demo.mintlify.app/images/og-image.png",
+    "title_ja": "Notion API更新：データベースのプロパティコメントにIDが追加、差分追跡用MCPツール「notion-get-version-changes」も公開",
+    "summary_ja": "Notion APIの最新アップデートにより、データベースのプロパティに対するコメントに「property_id」が含まれるようになった。 これにより、コメントがどのプロパティに関連付けられているかを、ページオブジェクトのIDと照合して一意に特定できる。 SDK（v5.29.0）も更新され、Webhookペイロードでも取得可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Notion API更新：データベースのプロパティコメントにIDが追加、差分追跡用MCPツール「notion-get-version-changes」も公開",
+        "summary": "Notion APIの最新アップデートにより、データベースのプロパティに対するコメントに「property_id」が含まれるようになった。 これにより、コメントがどのプロパティに関連付けられているかを、ページオブジェクトのIDと照合して一意に特定できる。 SDK（v5.29.0）も更新され、Webhookペイロードでも取得可能だ。"
+      },
+      "en": {
+        "title": "Notion API Adds Property IDs to Comments and Releases New 'notion-get-version-changes' MCP Tool for Auditing",
+        "summary": "The latest Notion API update introduces property_id to comments made on database page properties, allowing developers to precisely map comments to specific property IDs within page objects. This addition is now fully supported in SDK v5.29.0 and is included in comment-related webhook payloads, simplifying data synchronization logic. Alongside this change, Notion has released the notion-get-version-changes MCP tool, which enables builders to programmatically query version history to identify specific modifications and the users responsible for them across a given timeframe. For teams relying on Notion as a backend or CMS, these enhancements significantly improve the granularity of data auditing and event tracking, moving beyond simple page-level observations toward more robust, property-specific automation workflows for complex knowledge bases."
+      }
+    },
+    "tool_tags": [
+      "Notion"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-02T14:16:38.246Z"
+  },
+  {
     "id": "art-1793626355362-taiel",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -42223,32 +42336,6 @@
     "created_at": "2026-10-27T20:46:34.625Z"
   },
   {
-    "id": "art-1793133986827-b205x",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/human_koala9002/n/n755daa613831",
-    "published_at": "2026-10-27T20:44:53.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329299925/rectangle_large_type_2_a823a06d9f6922f8d2ffc4cbf935eafc.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "購入済みKindle本をPDF化するWindowsアプリ「Kindle PDF Desktop」公開｜一覧から選択・変換で書籍保存を効率化（700円）",
-    "summary_ja": "個人開発者が公開したWindows用アプリ「Kindle PDF Desktop」は、購入・ダウンロード済みのKindle本を選択してPDF形式へ一括変換するツールだ。 独自のライブラリ管理や難しい設定は不要で、直感的なデスクトップ操作だけで電子書籍のバックアップやオフライン閲覧用のPDF化を実現する。 特定のDRMフリーコンテンツや個人ライブラリの利便性向上を目指す個人開発者にとって、同様のニッチな需要を解決するツール販売のモデルケースとも言える。",
-    "translations": {
-      "ja": {
-        "title": "購入済みKindle本をPDF化するWindowsアプリ「Kindle PDF Desktop」公開｜一覧から選択・変換で書籍保存を効率化（700円）",
-        "summary": "個人開発者が公開したWindows用アプリ「Kindle PDF Desktop」は、購入・ダウンロード済みのKindle本を選択してPDF形式へ一括変換するツールだ。 独自のライブラリ管理や難しい設定は不要で、直感的なデスクトップ操作だけで電子書籍のバックアップやオフライン閲覧用のPDF化を実現する。 特定のDRMフリーコンテンツや個人ライブラリの利便性向上を目指す個人開発者にとって、同様のニッチな需要を解決するツール販売のモデルケースとも言える。"
-      },
-      "en": {
-        "title": "Individual dev launches 'Kindle PDF Desktop' for Windows: A tool to convert your purchased Kindle library into portable PDF files for 700 yen",
-        "summary": "A solo developer has released 'Kindle PDF Desktop,' a Windows utility that simplifies the workflow of converting purchased and downloaded Kindle books into unified PDF documents. The application removes friction by allowing users to select books directly from an interface to trigger conversion, catering to those who need to back up their digital libraries for offline access or personal archiving. By focusing on a clear, single-purpose utility, the developer addresses specific user pain points regarding proprietary format locking. This project serves as a compelling case study for solo builders on how to monetize niche desktop utilities by solving tangible workflow problems for a specific user base, demonstrating that even simple, targeted automation tools can find a paying audience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-27T20:46:26.827Z"
-  },
-  {
     "id": "art-1793133220809-ac27c",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -43092,33 +43179,6 @@
     "created_at": "2026-10-27T19:40:59.640Z"
   },
   {
-    "id": "art-1793130051877-xgrf2",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/legacytools_dev/n/n18af4b737fbd",
-    "published_at": "2026-10-27T19:39:50.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329293761/rectangle_large_type_2_bc66eb19c933a0cfb32ef730196d12b8.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発アプリに突如訪れた謎の急成長、Dashboard上の異常値「381」の正体を探るためのアクセス解析と流入経路特定の手順",
-    "summary_ja": "ある日突然、個人開発アプリのユーザー数が急増し、ダッシュボードに381という異常な数値が記録された。 どこでバズったのかを確認するため、アクセスログを徹底的に分析し、参照元サイトや検索クエリを特定する必要がある。 急な流入はチャンスだが、Botの可能性もゼロではない。 冷静にリファラーを精査し、そのトラフィックがSNS経由なのか、特定のメディア掲載によるものなのかを突き止め、今後の集客戦略へと繋げることが重要だ。",
-    "translations": {
-      "ja": {
-        "title": "個人開発アプリに突如訪れた謎の急成長、Dashboard上の異常値「381」の正体を探るためのアクセス解析と流入経路特定の手順",
-        "summary": "ある日突然、個人開発アプリのユーザー数が急増し、ダッシュボードに381という異常な数値が記録された。 どこでバズったのかを確認するため、アクセスログを徹底的に分析し、参照元サイトや検索クエリを特定する必要がある。 急な流入はチャンスだが、Botの可能性もゼロではない。 冷静にリファラーを精査し、そのトラフィックがSNS経由なのか、特定のメディア掲載によるものなのかを突き止め、今後の集客戦略へと繋げることが重要だ。"
-      },
-      "en": {
-        "title": "Debugging a sudden traffic spike: How to identify the source of anomalous user growth in your indie app analytics",
-        "summary": "A sudden, unexplained jump in users—hitting an anomalous '381' on the dashboard—can be both thrilling and terrifying for an indie dev. Identifying where you went viral is critical, as you need to differentiate between organic user growth, strategic media coverage, or potentially malicious bot traffic. Builders must dive deep into server logs, referrer headers, and traffic patterns to trace exactly where the surge originated. Once the specific platform or search query is identified, you can validate the quality of that traffic and pivot your marketing efforts accordingly. If you don't trace the source immediately, you risk misinterpreting a temporary bot glitch as sustainable product-market fit, leading to wasted effort on the wrong growth channels."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "マーケ・集客・ASO",
-      "開発"
-    ],
-    "created_at": "2026-10-27T19:40:51.877Z"
-  },
-  {
     "id": "art-1793129553249-5j2af",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -43752,33 +43812,6 @@
       "研究"
     ],
     "created_at": "2026-10-27T19:01:48.939Z"
-  },
-  {
-    "id": "art-1793127699567-tvgww",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/keiba_kansoku/n/n45c3fb2edd24",
-    "published_at": "2026-10-27T18:42:42.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329289198/rectangle_large_type_2_802a94cf56da571bb31e89b1f5008f61.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "競馬予測AI開発プロジェクトが「V18」でモデルを固定、バックテストから未来のレースを対象としたLIVE検証フェーズへ移行",
-    "summary_ja": "JRA-VANからのデータ取得から特徴量設計、払戻評価までを重ねた競馬予測AI開発プロジェクトが、ついにモデルを「V18」に固定。 過去データでの検証を終え、実際のレース結果を対象とするLIVE検証フェーズへ移行した。 過去データへの過学習を避けて予測精度を実証するため、未知の未来データで性能を測るプロセスは、AIモデルを実運用に乗せる上での重要なマイルストーンとなる。",
-    "translations": {
-      "ja": {
-        "title": "競馬予測AI開発プロジェクトが「V18」でモデルを固定、バックテストから未来のレースを対象としたLIVE検証フェーズへ移行",
-        "summary": "JRA-VANからのデータ取得から特徴量設計、払戻評価までを重ねた競馬予測AI開発プロジェクトが、ついにモデルを「V18」に固定。 過去データでの検証を終え、実際のレース結果を対象とするLIVE検証フェーズへ移行した。 過去データへの過学習を避けて予測精度を実証するため、未知の未来データで性能を測るプロセスは、AIモデルを実運用に乗せる上での重要なマイルストーンとなる。"
-      },
-      "en": {
-        "title": "Horse Racing Prediction AI Project Locks Model Version at V18, Pivots From Backtesting to Live Future Race Validation",
-        "summary": "After extensively iterating on data ingestion via JRA-VAN, feature engineering, and payout-based evaluation metrics, the developer behind this horse racing prediction project has officially locked the model at V18. Moving beyond historical backtesting, the project is now entering a live validation phase that tests the model against upcoming, unseen race results. This shift is critical because it forces the AI to demonstrate generalization capabilities in real-time environments, effectively mitigating the risks of overfitting to historical datasets. For solo builders, this transition to live forecasting represents a vital milestone, as it separates theoretical performance from the reality of operational deployment where the model must contend with unpredictable future variables rather than static past data."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-27T19:01:39.567Z"
   },
   {
     "id": "art-1793127431743-glz2p",
@@ -44524,32 +44557,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-27T18:20:40.206Z"
-  },
-  {
-    "id": "art-1793125228933-7u3sd",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/game_system_alex/n/nc67932911371",
-    "published_at": "2026-10-27T17:54:22.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329250189/rectangle_large_type_2_1717811a88fb7c22b97f391143096414.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "「神経衰弱」アプリに推し活特化機能を実装、ユーザー自身の画像アップロードで愛着を高めエンゲージメントを最大化するUI設計のポイント",
-    "summary_ja": "シンプルな神経衰弱ゲームに、ユーザーが自分のスマホ内の「推し」の画像を用いて遊べるカスタマイズ機能を実装。 汎用的なゲームアプリに特定のエンタメ要素（推し活）を付加することで、ユーザーの滞在時間や再訪率を向上させるアプローチである。 個人開発において、既存の定番ゲームにニッチな需要を掛け合わせることは、少ない開発工数で高いエンゲージメントを維持する有効なUX戦略だ。",
-    "translations": {
-      "ja": {
-        "title": "「神経衰弱」アプリに推し活特化機能を実装、ユーザー自身の画像アップロードで愛着を高めエンゲージメントを最大化するUI設計のポイント",
-        "summary": "シンプルな神経衰弱ゲームに、ユーザーが自分のスマホ内の「推し」の画像を用いて遊べるカスタマイズ機能を実装。 汎用的なゲームアプリに特定のエンタメ要素（推し活）を付加することで、ユーザーの滞在時間や再訪率を向上させるアプローチである。 個人開発において、既存の定番ゲームにニッチな需要を掛け合わせることは、少ない開発工数で高いエンゲージメントを維持する有効なUX戦略だ。"
-      },
-      "en": {
-        "title": "Indie Dev Adds Fan-Centric Customization to Classic Memory Game Allowing Users to Load Their Own 'Oshi' Images",
-        "summary": "This developer has updated a standard concentration memory game by adding a specific feature allowing users to upload and use their own images of favorite idols or characters. By integrating this personalized 'Oshi-katsu' element—a massive trend in fan-driven digital engagement—the developer transforms a generic utility into a highly sticky, personal experience. For indie builders, this case demonstrates that you do not always need complex mechanics to succeed; adding a layer of user-generated content or emotional customization to classic, well-understood gameplay mechanics can significantly increase session time and user retention. The lesson here is that targeting specific user passions allows small projects to compete by offering a deeper, more personal engagement loop than mass-market titles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-27T18:20:28.933Z"
   },
   {
     "id": "art-1793125218271-fv2hw",
