@@ -64,6 +64,11 @@ export const toolBadgeColors: Record<string, { bg: string; fg: string; initial: 
   Mistral: { bg: '#FA520F', fg: '#0E1117', initial: 'M' },
   'Meta AI': { bg: '#0866FF', fg: '#F2F3F5', initial: 'M' },
   PyTorch: { bg: '#EE4C2C', fg: '#F2F3F5', initial: 'Pt' },
+  Braintrust: { bg: '#6366F1', fg: '#F2F3F5', initial: 'Bt' },
+  Intercom: { bg: '#1F8DED', fg: '#F2F3F5', initial: 'In' },
+  Clay: { bg: '#6E5BFF', fg: '#F2F3F5', initial: 'Cl' },
+  Fireflies: { bg: '#FF5A5F', fg: '#F2F3F5', initial: 'Ff' },
+  Weaviate: { bg: '#00D37F', fg: '#0E1117', initial: 'Wv' },
 };
 
 // 各ツールごとの専用カラーパレット（バナー・アクセント・背景・枠線が記事の主役ツールに完全一致するようにする）
@@ -108,6 +113,11 @@ export const toolPalettes: Record<string, ThemePalette> = {
   Mistral: { accent: '#FA520F', background: '#170E09', panel: '#291910', line: '#42281A' },
   'Meta AI': { accent: '#3B82F6', background: '#0A101C', panel: '#131D33', line: '#1F2F52' },
   PyTorch: { accent: '#EE4C2C', background: '#170C09', panel: '#291611', line: '#42241C' },
+  Braintrust: { accent: '#818CF8', background: '#0E0F1C', panel: '#181A30', line: '#282B4D' },
+  Intercom: { accent: '#1F8DED', background: '#0A121A', panel: '#122030', line: '#1C344D' },
+  Clay: { accent: '#8B7CFF', background: '#100E1A', panel: '#1C1730', line: '#2E264D' },
+  Fireflies: { accent: '#FF5A5F', background: '#170C0E', panel: '#291619', line: '#422427' },
+  Weaviate: { accent: '#00D37F', background: '#07140F', panel: '#10241A', line: '#1A3A29' },
 };
 
 export const uiColors = {
@@ -140,6 +150,12 @@ export const size = {
   railRight: 10,
   railBottom: 100,
   railGap: 14,
+  /** 探索一覧右のスクロールバー（一覧に重ねる。レイアウト幅は取らない） */
+  exploreScrollBarHit: 16,
+  exploreScrollBarTrack: 2,
+  exploreScrollBarThumb: 3,
+  /** サム高さはコンテンツ量に依らず固定 */
+  exploreScrollBarThumbHeight: 36,
   sourceIcon: 38,
   manageIcon: 36,
   headline: { fontSize: 20, lineHeight: 1.42 },
@@ -186,6 +202,11 @@ export const tools = [
   'Mistral',
   'Meta AI',
   'PyTorch',
+  'Braintrust',
+  'Intercom',
+  'Clay',
+  'Fireflies',
+  'Weaviate',
 ] as const;
 
 export const toolSiteUrls: Record<string, string> = {
@@ -229,6 +250,11 @@ export const toolSiteUrls: Record<string, string> = {
   Mistral: 'https://mistral.ai',
   'Meta AI': 'https://ai.meta.com',
   PyTorch: 'https://pytorch.org',
+  Braintrust: 'https://www.braintrust.dev',
+  Intercom: 'https://www.intercom.com',
+  Clay: 'https://www.clay.com',
+  Fireflies: 'https://fireflies.ai',
+  Weaviate: 'https://weaviate.io',
 };
 
 export const genres = [

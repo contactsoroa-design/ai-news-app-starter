@@ -745,6 +745,11 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-synthesia': 'Synthesia',
   'source-arcads': 'Arcads',
   'source-notion': 'Notion',
+  'source-braintrust': 'Braintrust',
+  'source-intercom': 'Intercom',
+  'source-clay': 'Clay',
+  'source-fireflies': 'Fireflies',
+  'source-weaviate': 'Weaviate',
 };
 
 // 各情報源（source_id）が表示を許可される公式ツール名の厳密な1対1（または1対2）マッピング。
@@ -794,6 +799,11 @@ const SOURCE_ALLOWED_TOOLS: Record<string, readonly string[]> = {
   'source-synthesia': ['Synthesia'],
   'source-arcads': ['Arcads'],
   'source-notion': ['Notion'],
+  'source-braintrust': ['Braintrust'],
+  'source-intercom': ['Intercom'],
+  'source-clay': ['Clay'],
+  'source-fireflies': ['Fireflies'],
+  'source-weaviate': ['Weaviate'],
 };
 
 /**
