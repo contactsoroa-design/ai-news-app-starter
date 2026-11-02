@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1793625410358-l9doc",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/jessica1007/articles/800fbd891a010e",
+    "published_at": "2026-11-02T04:04:27.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--p4Kb1VlP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25AD%258C%25E8%25A9%259E%25E3%2582%2592%25E3%2580%258C%25E6%259B%25B8%25E3%2581%258F%25E3%2580%258D%25E3%2581%258B%25E3%2580%258C%25E8%25AA%258D%25E8%25AD%2598%25E3%2581%2599%25E3%2582%258B%25E3%2580%258D%25E3%2581%258B%25EF%25BC%259A%25E3%2582%25AB%25E3%2583%2590%25E3%2583%25BC%25EF%25BC%258F%25E3%2583%25AA%25E3%2583%259F%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%25E5%2589%258D%25E3%2581%25AE%25E7%259F%25AD%25E3%2581%2584%25E6%2589%258B%25E9%25A0%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Jessica%2520AI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3Nhby1QNUtHLWVYYUZWOHNuTlNpaTk3SU9vVDYzZGpqZU83cUotU0lrck5iRzc3VT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "カバー曲制作における「作詞」と「書き起こし」のワークフロー分離：Doremiで整理する楽曲制作の最適手順",
+    "summary_ja": "カバーやリミックス制作時に陥りやすいのが、作詞プロセスと音声認識の混同です。 楽曲のテーマや物語を新規生成する「書く」作業と、既存の音源から文言を抽出する「認識する」作業を明確に分けることで、仮歌詞のままミックスが進むといった手戻りを防げます。 著者は「Doremi」を用いて入力と出力を整理し、ツールを開く順序を最適化しています。 クリエイターは、作業の起点で目的を峻別することで、楽曲制作の精度とスピードを大幅に向上させることが可能です。",
+    "translations": {
+      "ja": {
+        "title": "カバー曲制作における「作詞」と「書き起こし」のワークフロー分離：Doremiで整理する楽曲制作の最適手順",
+        "summary": "カバーやリミックス制作時に陥りやすいのが、作詞プロセスと音声認識の混同です。 楽曲のテーマや物語を新規生成する「書く」作業と、既存の音源から文言を抽出する「認識する」作業を明確に分けることで、仮歌詞のままミックスが進むといった手戻りを防げます。 著者は「Doremi」を用いて入力と出力を整理し、ツールを開く順序を最適化しています。 クリエイターは、作業の起点で目的を峻別することで、楽曲制作の精度とスピードを大幅に向上させることが可能です。"
+      },
+      "en": {
+        "title": "Standardizing Lyrics Workflows for Covers: Why You Must Separate Creative Writing from Audio Transcription",
+        "summary": "When producing covers or remixes, creators often stumble by blurring the lines between creative lyric writing and technical audio transcription. Failing to distinguish whether you need original storytelling or accurate extraction from existing vocals leads to common mistakes, such as mixing tracks with placeholder lyrics or incorrect captions. This workflow guide uses 'Doremi' to strictly categorize the production process into two distinct pipelines: inputting themes for generation versus ingesting audio for recognition. By defining the input and output requirements before opening any tools, you prevent inefficient revisions and maintain project focus. For music producers and AI builders, the key lesson is that treating these tasks as separate operational streams is essential for maintaining both high sound quality and consistent creative pacing."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-02T13:16:50.358Z"
+  },
+  {
+    "id": "art-1793625402958-rmyul",
+    "source_id": "source-context-dev",
+    "source_name": "Context.dev Blog",
+    "url": "https://www.context.dev/blog/claude-code-webfetch-robots-disallowed",
+    "published_at": "2026-11-02",
+    "og_image_url": "https://www.context.dev/api/og?variant=post&title=Claude+Code+ROBOTS_DISALLOWED%3A+Why+WebFetch+Cannot+Read+Some+Links&highlight=Why+WebFetch+Cannot+Read+Some+Links&collection=blog&minutes=11",
+    "title_ja": "Claude CodeのWeb取得機能がrobots.txtを尊重、クローリング制限の遵守で開発者が直面する新たな挙動と制約について",
+    "summary_ja": "AnthropicのCLIツール「Claude Code」がWeb取得機能においてrobots.txtを正式に尊重するようになった。 これにより、サイト側が指定するクロール禁止設定をツールが認識し、特定のコンテンツへのアクセスを自動的にブロックする。 開発者はWebサイトのスクレイピング時に予期せぬ403エラーに遭遇する可能性があるため、自身のWeb取得処理がrobots.txtの制約下にあることを認識し、クローリングの挙動を調整する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Claude CodeのWeb取得機能がrobots.txtを尊重、クローリング制限の遵守で開発者が直面する新たな挙動と制約について",
+        "summary": "AnthropicのCLIツール「Claude Code」がWeb取得機能においてrobots.txtを正式に尊重するようになった。 これにより、サイト側が指定するクロール禁止設定をツールが認識し、特定のコンテンツへのアクセスを自動的にブロックする。 開発者はWebサイトのスクレイピング時に予期せぬ403エラーに遭遇する可能性があるため、自身のWeb取得処理がrobots.txtの制約下にあることを認識し、クローリングの挙動を調整する必要がある。"
+      },
+      "en": {
+        "title": "Claude Code now strictly respects robots.txt directives, enforcing new crawl constraints for all automated web fetch operations",
+        "summary": "Anthropic has updated its Claude Code CLI tool to strictly respect robots.txt directives during web fetch operations, marking a shift toward standardized web crawling behavior. The tool now automatically parses and adheres to site-specific disallow rules, which means development tasks involving automated content extraction may trigger unexpected 403 errors if the target site blocks such agents. For builders utilizing Claude Code for research or data gathering, this means access is no longer guaranteed for restricted pages, necessitating a shift in strategy when automating information retrieval. This update underscores the necessity for developers to proactively check robots.txt policies before initiating scraping tasks, ensuring their automated workflows remain compliant with site-level access controls rather than bypassing them."
+      }
+    },
+    "tool_tags": [
+      "Context.dev"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-02T13:16:42.958Z"
+  },
+  {
+    "id": "art-1793625396550-jy4og",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/build-a-repeatable-php-to-java-migration-engine-with-kiro/",
+    "published_at": "2026-10-29T18:14:17.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/28/ML-21579-featured-image.png",
+    "title_ja": "AWS、レガシーなPHPからJavaへの移行を自動化・反復可能にするエンジン「Kiro」を公開—8フェーズの検証フレームワークでパリティを担保",
+    "summary_ja": "AWSが公開した「Kiro」は、PHPからJavaへの移行を一過性のプロジェクトから、測定可能で反復可能なプロセスへと変革するエンジンだ。 この仕組みは、PHPアプリケーションを仕様書と見なし、8つのフェーズで構成された検証ハーネスを通じてJava移植版の動作整合性を厳密に確認する。 単なるコード変換に留まらず、機械的なスキャンと段階的なパラリティ（等価性）チェックを組み合わせることで、大規模なレガシーシステムの移行リスクを大幅に低減させる。",
+    "translations": {
+      "ja": {
+        "title": "AWS、レガシーなPHPからJavaへの移行を自動化・反復可能にするエンジン「Kiro」を公開—8フェーズの検証フレームワークでパリティを担保",
+        "summary": "AWSが公開した「Kiro」は、PHPからJavaへの移行を一過性のプロジェクトから、測定可能で反復可能なプロセスへと変革するエンジンだ。 この仕組みは、PHPアプリケーションを仕様書と見なし、8つのフェーズで構成された検証ハーネスを通じてJava移植版の動作整合性を厳密に確認する。 単なるコード変換に留まらず、機械的なスキャンと段階的なパラリティ（等価性）チェックを組み合わせることで、大規模なレガシーシステムの移行リスクを大幅に低減させる。"
+      },
+      "en": {
+        "title": "AWS introduces Kiro, a repeatable engineering framework that automates PHP-to-Java migrations through an eight-phase parity verification engine",
+        "summary": "AWS has introduced Kiro, a structured migration engine that transforms the high-risk leap from PHP to Java into a measurable, repeatable engineering process. The framework treats the existing PHP application as the source of truth, utilizing an automated discovery scanner to map functionality before driving a rigorous eight-phase parity-first workflow. By deploying a dedicated verification harness to ensure functional equivalence, Kiro allows teams to move from monolithic legacy code to a modern Java stack without sacrificing system integrity. For platform engineers and architects, this provides a repeatable blueprint for tackling technical debt, effectively replacing ad-hoc porting efforts with a verifiable pipeline that guarantees feature parity at every step of the migration journey."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-02T13:16:36.550Z"
+  },
+  {
     "id": "art-1793624571767-dmltu",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -46004,32 +46083,6 @@
     "created_at": "2026-10-27T17:05:50.501Z"
   },
   {
-    "id": "art-1793120288200-vty0c",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/deft_llama956/n/n559e5bc55d93",
-    "published_at": "2026-10-27T16:57:17.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329281086/rectangle_large_type_2_ede321c4317d31a5f1e385a77d5885d5.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "「自家用ソフト」だけを開発する。ChatGPTとの対話から見出した、販売を目的としない新たなエンジニアの生き方とスタイル",
-    "summary_ja": "「自家用ソフト開発者」と名乗るカリン氏は、ChatGPTとの対話をきっかけに、販売や収益化を目的とせず、自身の利便性や欲求だけを満たすソフトウェアを作り続けるという独自のスタンスを確立した。 市場のニーズや競合を気にせず、完全に個人のために実装するスタイルは、開発本来の純粋な楽しさとクリエイティビティを取り戻す鍵となる。 特定のターゲットを持たない個人開発のあり方は、効率化重視の現代において、作り手の幸福度を最大化する一つのオルタナティブな選択肢だ。",
-    "translations": {
-      "ja": {
-        "title": "「自家用ソフト」だけを開発する。ChatGPTとの対話から見出した、販売を目的としない新たなエンジニアの生き方とスタイル",
-        "summary": "「自家用ソフト開発者」と名乗るカリン氏は、ChatGPTとの対話をきっかけに、販売や収益化を目的とせず、自身の利便性や欲求だけを満たすソフトウェアを作り続けるという独自のスタンスを確立した。 市場のニーズや競合を気にせず、完全に個人のために実装するスタイルは、開発本来の純粋な楽しさとクリエイティビティを取り戻す鍵となる。 特定のターゲットを持たない個人開発のあり方は、効率化重視の現代において、作り手の幸福度を最大化する一つのオルタナティブな選択肢だ。"
-      },
-      "en": {
-        "title": "Building Only for Yourself: Why One Developer Quit Commercial Goals to Embrace the 'Private-Use Only' Software Philosophy",
-        "summary": "Identifying as a 'private-use developer,' Karin-chan established a unique philosophy after deep reflection with ChatGPT: building software purely for personal utility and satisfaction, with zero intention to sell or monetize. By stripping away the pressure of market fit, revenue goals, and external user support, this approach restores the raw, unfiltered joy of creation that is often lost in commercial software engineering. This methodology emphasizes the personal problem-solving journey over scalability or market trends, offering a refreshing alternative to traditional indie hacking. For builders feeling burnt out by the constant pursuit of growth, this stance highlights how reclaiming the freedom to build 'just for you' can be the ultimate metric of long-term developer sustainability and creative fulfillment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-27T16:58:08.200Z"
-  },
-  {
     "id": "art-1793120251731-ywr0q",
     "source_id": "source-revenuecat",
     "source_name": "RevenueCat Blog / Sub Club",
@@ -46084,32 +46137,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-27T16:57:24.266Z"
-  },
-  {
-    "id": "art-1793120234103-3dji1",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tabou0428/n/n065a3610b0d0",
-    "published_at": "2026-10-27T16:02:29.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329273480/rectangle_large_type_2_2c0058ebc3939cbabcea5d28c1c9d122.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "Androidブラウザ「CIE」開発記⑩：Claude活用で広告ブロック機能を実装するも、実機テストで発覚した「違和感」の修正に苦戦する舞台裏",
-    "summary_ja": "AIアシスタントClaudeと共にAndroid向け広告ブロックブラウザ「CIE」を開発中だが、Claudeの週間利用制限の解除を機にリリース作業を加速しようとした矢先、実機での使い込みによって「操作感が何か変」という細かなバグが続出。 設計の根本ではなく、UIや挙動の微妙な違和感を徹底的に潰すデバッグ作業は、リリース直前の避けて通れない泥臭い現実だ。 AIコーディングといえど、結局最後は開発者の手による実機検証が製品の質を決める。",
-    "translations": {
-      "ja": {
-        "title": "Androidブラウザ「CIE」開発記⑩：Claude活用で広告ブロック機能を実装するも、実機テストで発覚した「違和感」の修正に苦戦する舞台裏",
-        "summary": "AIアシスタントClaudeと共にAndroid向け広告ブロックブラウザ「CIE」を開発中だが、Claudeの週間利用制限の解除を機にリリース作業を加速しようとした矢先、実機での使い込みによって「操作感が何か変」という細かなバグが続出。 設計の根本ではなく、UIや挙動の微妙な違和感を徹底的に潰すデバッグ作業は、リリース直前の避けて通れない泥臭い現実だ。 AIコーディングといえど、結局最後は開発者の手による実機検証が製品の質を決める。"
-      },
-      "en": {
-        "title": "Developing Android browser CIE with Claude: How real-world device testing exposed subtle UI bugs before launch",
-        "summary": "While building \"CIE,\" an ad-blocking Android browser, I have been leaning heavily on Claude to accelerate development. Just as the weekly usage limits lifted, allowing me to push toward a final release, intensive physical device testing revealed that the user experience felt fundamentally \"off.\" These aren't just crashing bugs; they are subtle, nuanced issues that only emerge when physically interacting with the interface. This phase highlights that no matter how much help you get from LLMs, final polishing and UX refinement still require manual, hands-on validation. Ultimately, the difference between a prototype and a ship-ready product lies in the tedious, ground-level work of fixing these invisible inconsistencies before deployment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-27T16:57:14.103Z"
   },
   {
     "id": "art-1793120211021-ve6xb",
@@ -46523,33 +46550,6 @@
       "開発"
     ],
     "created_at": "2026-10-27T16:31:52.020Z"
-  },
-  {
-    "id": "art-1793118661747-f363r",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tonbi_fun/n/ncd7d969ae4cb",
-    "published_at": "2026-10-27T16:07:25.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/325512119/rectangle_large_type_2_97da33d7c8e875745ff3300c48bbb76f.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claudeで検証した個人開発の16のアイデアが全滅した理由と、収益化の壁を突破するための「5つの評価指標」を徹底解説",
-    "summary_ja": "著者は10月、個人開発の16個のプロジェクト案をClaudeで徹底検証した結果、全案が独自の「5つの必須評価基準」をクリアできず没となった。 市場需要の低さや競合優位性の欠如など、AIが弾き出した具体的な却下理由と数値を公開する。 趣味の制作を収益化プロジェクトに変えるには、アイデアを形にする前にAIを活用して、マーケットの生存可能性を冷静に数値分析するプロセスが不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "Claudeで検証した個人開発の16のアイデアが全滅した理由と、収益化の壁を突破するための「5つの評価指標」を徹底解説",
-        "summary": "著者は10月、個人開発の16個のプロジェクト案をClaudeで徹底検証した結果、全案が独自の「5つの必須評価基準」をクリアできず没となった。 市場需要の低さや競合優位性の欠如など、AIが弾き出した具体的な却下理由と数値を公開する。 趣味の制作を収益化プロジェクトに変えるには、アイデアを形にする前にAIを活用して、マーケットの生存可能性を冷静に数値分析するプロセスが不可欠である。"
-      },
-      "en": {
-        "title": "Why 16 of my personal dev project ideas failed Claude’s rigorous vetting process and the 5 criteria for success",
-        "summary": "In October, I ran 16 potential personal development project ideas through Claude, using a strict five-point framework to filter them before writing a single line of code. To my surprise, zero ideas passed the screening process. This breakdown details the specific metrics—such as market saturation, competitive moats, and monetization feasibility—that caused every concept to fail. The analysis highlights that most side projects crumble because builders skip pre-validation, choosing to code first instead of analyzing market viability. By leveraging AI to pressure-test concepts against real-world demand metrics, indie hackers can avoid months of wasted labor. The final takeaway is a replicable evaluation checklist for developers to objectively assess their next product before committing to building it."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-27T16:31:01.747Z"
   },
   {
     "id": "art-1793118433368-n3lju",
