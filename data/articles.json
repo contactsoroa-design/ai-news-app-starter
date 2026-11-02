@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1793611924268-i3zmk",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/aiofficelab/articles/3b78ce039ba19d",
+    "published_at": "2026-11-02T00:08:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--NfcLCCll--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E5%2587%25A6%25E7%2590%2586%25E7%25B5%2590%25E6%259E%259C%25E3%2581%258C%25E6%25AD%25A3%25E3%2581%2597%25E3%2581%258F%25E3%2581%25A6%25E3%2582%2582%25E4%25B8%258D%25E5%2590%2588%25E6%25A0%25BC%25EF%25BC%259F%25E2%2580%2595%25E6%2589%25BF%25E8%25AA%258D%25E6%25BC%258F%25E3%2582%258C%25E3%2582%2592%25E6%25A4%259C%25E5%2587%25BA%25E3%2581%2599%25E3%2582%258B%25E6%25A5%25AD%25E5%258B%2599%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25AE%25E4%25BD%259C%25E3%2582%258A%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AiOfficeLab%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzcyY2QzMDJhN2IuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントの業務フロー検証術：正しい数値出力でも「承認漏れ」を見逃さないテスト設計の勘所とPython実装例",
+    "summary_ja": "AIエージェントが生成した業務データは数値が正しくても、承認プロセスという「業務上の要件」を満たしていない場合がある。 本記事では、海外の検証事例を基に、支払依頼などの業務フローにおいて承認状態と停止理由を論理的に判定するテストの重要性を解説。 後半では、Pythonを用いて承認チェックが欠落した不具合を検出し、業務ロジックの抜け漏れを防ぐための実践的なコード実装を紹介する。 数値の正しさだけでなく、プロセスの完全性を検証することがAI運用において不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの業務フロー検証術：正しい数値出力でも「承認漏れ」を見逃さないテスト設計の勘所とPython実装例",
+        "summary": "AIエージェントが生成した業務データは数値が正しくても、承認プロセスという「業務上の要件」を満たしていない場合がある。 本記事では、海外の検証事例を基に、支払依頼などの業務フローにおいて承認状態と停止理由を論理的に判定するテストの重要性を解説。 後半では、Pythonを用いて承認チェックが欠落した不具合を検出し、業務ロジックの抜け漏れを防ぐための実践的なコード実装を紹介する。 数値の正しさだけでなく、プロセスの完全性を検証することがAI運用において不可欠である。"
+      },
+      "en": {
+        "title": "Beyond Correct Outputs: Testing AI Agent Workflows for Process Integrity and Approval Gaps with Python Implementations",
+        "summary": "While AI agents can reliably generate mathematically correct data, they often fail to satisfy critical business process constraints like mandatory approvals. This piece explores how to design robust validation tests for AI workflows, using payment processing examples to demonstrate why verified figures are insufficient without enforced approval steps. The author walks through common edge cases where AI agents bypass organizational logic, even when output data remains accurate. Using Python, the article provides a practical framework for identifying these approval gaps by modeling distinct process states and rejection criteria. For builders deploying AI agents in enterprise environments, the takeaway is clear: testing must extend beyond result verification to include full-cycle compliance checks, ensuring that automated actions never circumvent essential organizational oversight protocols."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-02T09:32:04.268Z"
+  },
+  {
+    "id": "art-1793611914878-quy50",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/lain2772/n/nf81e8460983b",
+    "published_at": "2026-11-02T08:57:12.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331352212/rectangle_large_type_2_e5bd369fe5e22ba02b3e77b81bb162b2.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Rust実戦連載第10弾：OSを跨ぐパス操作とUTF-8/OSエンコーディングの泥沼を回避する型安全な設計術",
+    "summary_ja": "Rust学習連載の第10回では、OSごとに異なるパス表現や文字コードの互換性を扱う際の落とし穴を解説する。 RustのPath/PathBuf型を用いたOS非依存の安全なパス操作と、文字列のエンコーディング変換で発生しがちなパニックを防ぐための設計思想を深掘りした。 言語仕様の深淵に触れつつ、クロスプラットフォーム開発で遭遇しやすい境界値エラーや文字化けを未然に防ぐためのベストプラクティスを共有する。 堅牢なシステムを作るためのRustエンジニア必読の構成。",
+    "translations": {
+      "ja": {
+        "title": "Rust実戦連載第10弾：OSを跨ぐパス操作とUTF-8/OSエンコーディングの泥沼を回避する型安全な設計術",
+        "summary": "Rust学習連載の第10回では、OSごとに異なるパス表現や文字コードの互換性を扱う際の落とし穴を解説する。 RustのPath/PathBuf型を用いたOS非依存の安全なパス操作と、文字列のエンコーディング変換で発生しがちなパニックを防ぐための設計思想を深掘りした。 言語仕様の深淵に触れつつ、クロスプラットフォーム開発で遭遇しやすい境界値エラーや文字化けを未然に防ぐためのベストプラクティスを共有する。 堅牢なシステムを作るためのRustエンジニア必読の構成。"
+      },
+      "en": {
+        "title": "Rust deep dive: Mastering OS-agnostic path handling and safe cross-platform character encoding strategies",
+        "summary": "In this tenth installment of our Rust series, we tackle the complexities of managing cross-platform paths and character encoding discrepancies that often derail production code. The guide explores safe, non-panicking patterns for handling file system paths using Rust’s native Path and PathBuf types, effectively decoupling your application logic from OS-specific path separators. We also dive into the critical handling of character encoding boundaries, ensuring that UTF-8 conversions and system-specific string representations do not trigger unexpected crashes. For builders aiming to write portable, robust Rust applications, understanding these low-level memory and string abstractions is crucial to avoiding the subtle, high-impact bugs that typically arise when code moves from local development to production Linux or Windows environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-02T09:31:54.878Z"
+  },
+  {
+    "id": "art-1793611901756-k0ih0",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://twitter.com/bookwormengr/status/2116705246856741114",
+    "published_at": "2026-11-02T09:16:24.000Z",
+    "og_image_url": "https://pbs.twimg.com/media/HV_4eyga4AAjV2D?format=webp&name=large",
+    "title_ja": "「AIのジェヴォンズのパラドックス」は怠慢な分析か？AI過剰構築リスクとリソース効率の真実を再考する",
+    "summary_ja": "「AI利用の効率化が需要を爆発させ、最終的にリソース消費を増大させる」というジェヴォンズのパラドックスをAI開発の文脈に当てはめる議論は、現時点では表面的な分析に過ぎない。 AIの計算リソースの過剰構築リスクを論じる際、多くの人はこの経済理論を安易に引用するが、技術的なスケーリング則や収益化の限界を考慮していない場合が多い。 開発者は市場がAI導入に求める具体的な価値を精査し、単に計算資源を拡張するのではなく、効率的な推論基盤の構築と真のビジネス課題解決を優先すべきである。",
+    "translations": {
+      "ja": {
+        "title": "「AIのジェヴォンズのパラドックス」は怠慢な分析か？AI過剰構築リスクとリソース効率の真実を再考する",
+        "summary": "「AI利用の効率化が需要を爆発させ、最終的にリソース消費を増大させる」というジェヴォンズのパラドックスをAI開発の文脈に当てはめる議論は、現時点では表面的な分析に過ぎない。 AIの計算リソースの過剰構築リスクを論じる際、多くの人はこの経済理論を安易に引用するが、技術的なスケーリング則や収益化の限界を考慮していない場合が多い。 開発者は市場がAI導入に求める具体的な価値を精査し、単に計算資源を拡張するのではなく、効率的な推論基盤の構築と真のビジネス課題解決を優先すべきである。"
+      },
+      "en": {
+        "title": "Why calling AI overbuilding 'Jevons paradox' is lazy analysis: Rethinking resource efficiency risks in modern development",
+        "summary": "Applying the 'Jevons paradox'—the idea that efficiency gains inevitably trigger exploding demand and massive resource consumption—to current AI development often serves as a lazy substitute for rigorous economic analysis. While critics frequently cite this paradox to warn about AI overbuilding, such arguments often ignore the fundamental constraints of inference costs, scaling laws, and actual market revenue ceilings. Developers should avoid the trap of using macroeconomic theories as a crutch to predict software infrastructure needs. Instead, the focus must remain on the granular reality of unit economics, inference performance, and actual user value. For builders, the real risk is not a theoretical paradox of consumption, but failing to align compute investment with tangible, scalable product ROI."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-02T09:31:41.756Z"
+  },
+  {
+    "id": "art-1793611893475-81jqe",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/cedric",
+    "published_at": "2026-10-27T13:40:39.000Z",
+    "og_image_url": null,
+    "title_ja": "会議自動化の「Cedric AI」が登場、スライド資料の提示からWeb会議の代理出席までをこなす初の実践的AIエージェントが公開",
+    "summary_ja": "Cedric AIは、単なる会議の議事録作成ツールを超え、スライド資料の提示や会議への代理出席を行う初の自律型AIエージェントとして登場した。 ユーザーに代わって議論に参加し、プレゼンを代行することで、マルチタスクをこなすビジネスパーソンの時間を劇的に解放する。 単なる「情報の記録」から「タスクの実行」へとAIの役割が進化する中、ビジネス自動化ツールを開発する個人開発者やスタートアップにとって、会議インターフェースへの「能動的な介入」は次なる差別化の鍵となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "会議自動化の「Cedric AI」が登場、スライド資料の提示からWeb会議の代理出席までをこなす初の実践的AIエージェントが公開",
+        "summary": "Cedric AIは、単なる会議の議事録作成ツールを超え、スライド資料の提示や会議への代理出席を行う初の自律型AIエージェントとして登場した。 ユーザーに代わって議論に参加し、プレゼンを代行することで、マルチタスクをこなすビジネスパーソンの時間を劇的に解放する。 単なる「情報の記録」から「タスクの実行」へとAIの役割が進化する中、ビジネス自動化ツールを開発する個人開発者やスタートアップにとって、会議インターフェースへの「能動的な介入」は次なる差別化の鍵となるだろう。"
+      },
+      "en": {
+        "title": "Cedric AI Launches as First Autonomous Agent Capable of Delivering Slide Presentations and Attending Meetings on Your Behalf",
+        "summary": "Cedric AI has launched as the first autonomous agent designed to go beyond mere transcription by actively delivering slide presentations and attending meetings on the user’s behalf. By taking over the responsibility of live presentation and active participation, the platform aims to free up significant time for professionals juggling high-volume calendars. As the AI paradigm shifts from passive information recording toward active task execution, Cedric represents a strategic evolution in productivity software. For developers and founders building business automation tools, this signals that the next generation of meeting tech isn't just about indexing conversation history; it is about providing agents the agency to interface directly with stakeholders, making the \"agent-in-the-room\" capability a critical new benchmark for value."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-02T09:31:33.475Z"
+  },
+  {
     "id": "art-1793611022294-0apo0",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
