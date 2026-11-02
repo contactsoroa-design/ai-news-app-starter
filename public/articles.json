@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1793597507653-a6huu",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/autocamp/articles/tech-exposure-check-head",
+    "published_at": "2026-11-02T03:06:37.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--_Okpy9Og--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:.env%25E3%2582%2584.git%252Fconfig%25E3%2581%25AE%25E9%259C%25B2%25E5%2587%25BA%25E3%2582%2592HEAD%25E3%2583%25AA%25E3%2582%25AF%25E3%2582%25A8%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25A7%25E6%25AF%258E%25E9%2580%25B1%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2582%258B%25E3%2580%2582%25E5%2585%25A8%25E9%2583%25A8404%25E3%2581%25A7%25E3%2582%2582%25E8%25A8%2580%25E3%2581%2588%25E3%2581%25AA%25E3%2581%2584%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2588%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZlMmM0YTcyYjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発サイトを保護する「HEADリクエスト巡回」の全手法：.envや.git/config露出を毎週検知する自動化スクリプトの全貌",
+    "summary_ja": "個人開発サイトの脆弱性を突く攻撃を早期検知するため、.envや.git/configなど狙われやすい13のパスに対し、毎週HEADリクエストを自動送信する監視手法を解説する。 調査レポートによれば侵害の約3割が脆弱性の悪用によるもので、修正パッチ公開前の「マイナス7日」という攻撃開始時間に抗うには、受け身の監視体制が不可欠だ。 全て404で終わる日常の監視が、開発者のセキュリティ意識を保つ最小コストな防衛線となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発サイトを保護する「HEADリクエスト巡回」の全手法：.envや.git/config露出を毎週検知する自動化スクリプトの全貌",
+        "summary": "個人開発サイトの脆弱性を突く攻撃を早期検知するため、.envや.git/configなど狙われやすい13のパスに対し、毎週HEADリクエストを自動送信する監視手法を解説する。 調査レポートによれば侵害の約3割が脆弱性の悪用によるもので、修正パッチ公開前の「マイナス7日」という攻撃開始時間に抗うには、受け身の監視体制が不可欠だ。 全て404で終わる日常の監視が、開発者のセキュリティ意識を保つ最小コストな防衛線となる。"
+      },
+      "en": {
+        "title": "Defending indie apps: Automating weekly HEAD request audits to detect exposure of .env and .git/config files across production hosts",
+        "summary": "To proactively secure indie projects, this guide details a monitoring strategy that automatically executes HEAD requests against 13 high-risk paths, including .env and .git/config, across production endpoints every week. With major reports like Mandiant’s M-Trends indicating that roughly 30% of breaches stem from vulnerability exploitation—often beginning a week before patches exist—relying solely on reactive patching is insufficient. While consistent '404' responses provide baseline peace of mind, the true value lies in establishing a persistent, low-cost defensive habit. This approach turns security from a periodic afterthought into a routine hygiene practice, ensuring developers remain aware of their attack surface before automated scanners find a way in. For solo builders, automation is the only scalable defense."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-02T05:31:47.653Z"
+  },
+  {
+    "id": "art-1793597501173-vxmyl",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/easy_quince4923/n/nfd0b4fa1791f",
+    "published_at": "2026-11-02T05:31:25.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331276302/rectangle_large_type_2_b4f3748a99a85b9206d5fff7f19b2ead.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeを活用した株トレードアプリ開発：テクニカル指標「ゴールデンクロス」の信頼性を自作ロジックで再検証する",
+    "summary_ja": "AIエージェント「Claude Code」を用いて株トレードアプリを構築する開発連載の第3弾。 本稿では、一般的に買いシグナルとされる「ゴールデンクロス」を実装し、その有効性を自作のバックテスト環境で徹底検証する。 過去データに基づいたシミュレーションの結果、単なる指標の追従が必ずしも利益に直結しないという現実が浮き彫りになる。 個人開発者が自動運用を目指す際、既存のテクニカル指標を鵜呑みにせず、AIコード生成を活用して独自の判断ロジックを組み込む重要性が示されている。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを活用した株トレードアプリ開発：テクニカル指標「ゴールデンクロス」の信頼性を自作ロジックで再検証する",
+        "summary": "AIエージェント「Claude Code」を用いて株トレードアプリを構築する開発連載の第3弾。 本稿では、一般的に買いシグナルとされる「ゴールデンクロス」を実装し、その有効性を自作のバックテスト環境で徹底検証する。 過去データに基づいたシミュレーションの結果、単なる指標の追従が必ずしも利益に直結しないという現実が浮き彫りになる。 個人開発者が自動運用を目指す際、既存のテクニカル指標を鵜呑みにせず、AIコード生成を活用して独自の判断ロジックを組み込む重要性が示されている。"
+      },
+      "en": {
+        "title": "Building an automated stock trading app with Claude Code: Testing the reliability of 'Golden Cross' signals",
+        "summary": "In the third installment of this series on building an automated stock trading application, the author leverages Claude Code to implement the popular 'Golden Cross' indicator and rigorously stress-test its actual predictive value. By building a custom backtesting environment, the developer reveals that blindly following standard market indicators often fails to yield profitable results, effectively debunking the signal as a reliable 'lottery ticket.' This project highlights the critical takeaway for individual developers: don't simply trust off-the-shelf technical indicators. Instead, use AI-assisted coding to build your own proprietary validation logic and backtesting frameworks to truly understand the risk behind automated trading strategies before putting real capital on the line."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-02T05:31:41.173Z"
+  },
+  {
+    "id": "art-1793597494527-26dyu",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.645",
+    "published_at": "2026-11-02T05:17:26.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、最新アップデートv2.11.645を公開。API経由での画像抽出とクローリング処理を大幅に最適化",
+    "summary_ja": "Firecrawlがアップデートv2.11.645をリリースし、APIを通じた画像取得プロセスを刷新した。 LLMがWeb上のビジュアル情報を正確に読み取れるよう、クローリングの効率と抽出精度を強化している。 開発者はこのアップデートにより、マルチモーダルAIエージェントのWebデータソースとしての信頼性をより高く確保できる。 Webスクレイピングの自動化を構築するエンジニアにとって、動的コンテンツと画像解析を組み合わせたパイプライン構築がさらに容易になる。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、最新アップデートv2.11.645を公開。API経由での画像抽出とクローリング処理を大幅に最適化",
+        "summary": "Firecrawlがアップデートv2.11.645をリリースし、APIを通じた画像取得プロセスを刷新した。 LLMがWeb上のビジュアル情報を正確に読み取れるよう、クローリングの効率と抽出精度を強化している。 開発者はこのアップデートにより、マルチモーダルAIエージェントのWebデータソースとしての信頼性をより高く確保できる。 Webスクレイピングの自動化を構築するエンジニアにとって、動的コンテンツと画像解析を組み合わせたパイプライン構築がさらに容易になる。"
+      },
+      "en": {
+        "title": "Firecrawl releases v2.11.645 update with major optimizations for API-driven image extraction and crawling performance",
+        "summary": "Firecrawl has officially launched version 2.11.645, introducing critical enhancements to its API-driven image extraction and web crawling pipeline. This update streamlines how visual content is captured from complex web pages, ensuring that LLMs can ingest structured visual data with significantly higher accuracy and speed. For developers building multimodal AI agents, this release improves the reliability of web-based data sources, reducing the friction typically associated with dynamic content scraping. By optimizing the ingestion layer, Firecrawl enables builders to construct more robust automated pipelines that effectively bridge the gap between real-time web environments and generative model inference, making it easier to integrate rich visual context into production-grade agentic applications without custom engineering overhead."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-02T05:31:34.527Z"
+  },
+  {
     "id": "art-1793596614127-7joh7",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
