@@ -180,7 +180,8 @@ type ListingFeedFallback = {
    * openai-changelog=API Changelog、cursor-blog=cursor.com/blog、
    * perplexity-blog=perplexity.ai/hub/blog、
    * windsurf-changelog=windsurf.com/changelog（Devin Desktop 系）、
-   * notion-changelog=developers.notion.com Agent/MCP changelog
+   * mintlify-day-changelog=日付ラベル型 Mintlify changelog、
+   * heygen-changelog=機能ラベル型 HeyGen developers changelog
    */
   parser:
     | 'synthesia'
@@ -190,7 +191,12 @@ type ListingFeedFallback = {
     | 'cursor-blog'
     | 'perplexity-blog'
     | 'windsurf-changelog'
-    | 'notion-changelog';
+    | 'mintlify-day-changelog'
+    | 'heygen-changelog';
+  /** mintlify-day: `#hash` の前のパス（例: /page/changelog） */
+  changelogPath?: string;
+  /** mintlify-day: Agent/MCP/AI キーワードがある日だけ残す（Notion 用） */
+  requireAiKeywords?: boolean;
 };
 
 const LISTING_FEED_FALLBACKS: Record<string, ListingFeedFallback> = {
@@ -239,7 +245,22 @@ const LISTING_FEED_FALLBACKS: Record<string, ListingFeedFallback> = {
   'source-notion': {
     listingUrl: 'https://developers.notion.com/page/changelog',
     origin: 'https://developers.notion.com',
-    parser: 'notion-changelog',
+    parser: 'mintlify-day-changelog',
+    changelogPath: '/page/changelog',
+    requireAiKeywords: true,
+  },
+  // ブログRSSは更新が空く → 公式リリースノート（ほぼ日次・AI製品そのもの）
+  'source-devin': {
+    listingUrl: 'https://docs.devin.ai/release-notes/overview',
+    origin: 'https://docs.devin.ai',
+    parser: 'mintlify-day-changelog',
+    changelogPath: '/release-notes/overview',
+  },
+  // noticeable は更新が薄い → developers changelog（AI動画API・ほぼ週次以上）
+  'source-heygen-ugc': {
+    listingUrl: 'https://developers.heygen.com/changelog',
+    origin: 'https://developers.heygen.com',
+    parser: 'heygen-changelog',
   },
 };
 
@@ -404,9 +425,8 @@ function parseListingItems(
       const slug = slugifyHeading(`${version}-${dateLabel}-${body.slice(0, 40)}`);
       push(`/changelog#${slug}`, title, parseEnglishMonthDayYear(dateLabel));
     }
-  } else if (conf.parser === 'notion-changelog') {
-    // Mintlify changelog: 日付ラベル + update-content。RSSは日付タイトルのみなので一覧から補完。
-    // Agent / MCP / AI search 等に触れる日だけ残す。
+  } else if (conf.parser === 'mintlify-day-changelog') {
+    // 日付ラベル + update-content。RSSは日付タイトル・本文空になりがちなので一覧から補完。
     const month =
       'January|February|March|April|May|June|July|August|September|October|November|December';
     const entryRe = new RegExp(
@@ -415,23 +435,44 @@ function parseListingItems(
     );
     const aiRe =
       /\b(Notion MCP|MCP|Agent API|Custom Agent|AI search|Notion Agent|assistant)\b/i;
+    const pathPrefix = conf.changelogPath || '/changelog';
     for (const m of html.matchAll(entryRe)) {
       const dateLabel = m[1].trim();
       const contentHtml = m[2];
       const body = decodeBasicHtmlEntities(
         contentHtml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
       ).trim();
-      if (!body || !aiRe.test(body)) continue;
+      if (!body) continue;
+      if (conf.requireAiKeywords && !aiRe.test(body)) continue;
       const feature =
         contentHtml.match(/cursor-pointer">([^<]+)<\/span><\/h3>/)?.[1]?.trim() ||
         body.slice(0, 100);
       const title = `${dateLabel}: ${feature}`;
       push(
-        `/page/changelog#${slugifyHeading(dateLabel)}`,
+        `${pathPrefix}#${slugifyHeading(dateLabel)}`,
         title,
         parseEnglishMonthDayYear(dateLabel),
         body
       );
+    }
+  } else if (conf.parser === 'heygen-changelog') {
+    // 機能ラベル + update-content。日付は description「Updated - October 2026」または RSS 側で補完。
+    const entryRe =
+      /data-component-part="update-label">([^<]+)<\/button>[\s\S]*?data-component-part="update-description">([^<]*)<\/div>[\s\S]*?data-component-part="update-content">([\s\S]*?)(?=data-component-part="update-label"|$)/gi;
+    for (const m of html.matchAll(entryRe)) {
+      const label = decodeBasicHtmlEntities(m[1]).trim();
+      const dateHint = decodeBasicHtmlEntities(m[2]).trim();
+      const body = decodeBasicHtmlEntities(
+        m[3].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
+      ).trim();
+      if (!label || !body) continue;
+      const monthMatch = dateHint.match(
+        /(January|February|March|April|May|June|July|August|September|October|November|December)\s+(20\d{2})/i
+      );
+      const pubDate = monthMatch
+        ? parseEnglishMonthDayYear(`${monthMatch[1]} 15, ${monthMatch[2]}`)
+        : null;
+      push(`/changelog#${slugifyHeading(label)}`, label, pubDate, body);
     }
   }
 
@@ -1874,13 +1915,43 @@ async function main() {
       }
 
       // ブログ一覧フォールバック（Synthesia / Arcads 等）。RSS・sitemap とマージ
+      // HeyGen changelog RSS は mintlify.app ホストになることがある → 公式ドメインへ寄せる
+      if (source.id === 'source-heygen-ugc') {
+        feedItems = feedItems.map((item) => {
+          try {
+            const u = new URL(item.link);
+            if (u.hostname.endsWith('mintlify.app')) {
+              u.protocol = 'https:';
+              u.hostname = 'developers.heygen.com';
+              return { ...item, link: u.toString() };
+            }
+          } catch {
+            // keep original
+          }
+          return item;
+        });
+      }
+
       const listing = await itemsFromListingFallback(source.id);
       if (listing && listing.length > 0) {
-        const byLink = new Map(feedItems.map((i) => [i.link, i]));
+        const feedItemMergeKey = (item: RawFeedItem): string => {
+          try {
+            const u = new URL(item.link);
+            return `${u.pathname}${u.hash}`;
+          } catch {
+            return item.link;
+          }
+        };
+        const byLink = new Map(feedItems.map((i) => [feedItemMergeKey(i), i]));
+        const byTitle = new Map(
+          feedItems.map((i) => [i.title.trim().toLowerCase(), i])
+        );
         let added = 0;
         let titled = 0;
         for (const item of listing) {
-          const existing = byLink.get(item.link);
+          const existing =
+            byLink.get(feedItemMergeKey(item)) ||
+            byTitle.get(item.title.trim().toLowerCase());
           if (existing) {
             // sitemap のスラッグ見出しより一覧の正式タイトルを優先
             if (
@@ -1900,10 +1971,20 @@ async function main() {
             ) {
               existing.snippet = item.snippet;
             }
+            // Mintlify プレビューホストより公式 origin の URL を優先
+            const listingOrigin = LISTING_FEED_FALLBACKS[source.id]?.origin;
+            if (
+              listingOrigin &&
+              item.link.startsWith(listingOrigin) &&
+              !existing.link.startsWith(listingOrigin)
+            ) {
+              existing.link = item.link;
+            }
             continue;
           }
           feedItems.push(item);
-          byLink.set(item.link, item);
+          byLink.set(feedItemMergeKey(item), item);
+          byTitle.set(item.title.trim().toLowerCase(), item);
           added += 1;
         }
         if (added > 0 || titled > 0) {
