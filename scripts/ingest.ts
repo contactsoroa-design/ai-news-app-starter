@@ -2251,10 +2251,13 @@ async function main() {
   }
 
   const mergedAll = [...newArticles, ...existingArticles];
+  // 上限超過は新規1件につき最大1件だけ押し出す（一括削減しない）
   const merged = trimFeedArticles(
     mergedAll,
     limits.maxFeedArticles,
-    limits.retentionDays
+    limits.retentionDays,
+    limits.maxArticlesPerSourceInFeed,
+    newArticles.length
   );
 
   writeArticlesJson(rootDir, merged);

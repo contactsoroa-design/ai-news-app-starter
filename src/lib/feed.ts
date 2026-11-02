@@ -875,18 +875,80 @@ export async function fetchLiveRssUpdates(
   };
 }
 
+function sourceKey(article: Article): string {
+  return article.source_id || article.source_name || article.id;
+}
+
+/**
+ * 上限超過を1件だけ解消する。優先: ソース上限オーバーの最古 → 全体上限時は一番太いソースの最古。
+ * 返せたら true。
+ */
+function evictOneOverCap(
+  buckets: Map<string, Article[]>,
+  perSourceCap: number,
+  maxTotal: number
+): boolean {
+  let overKey: string | null = null;
+  let overAmount = 0;
+  for (const [key, list] of buckets) {
+    const excess = list.length - perSourceCap;
+    if (excess > overAmount) {
+      overAmount = excess;
+      overKey = key;
+    }
+  }
+  if (overKey && overAmount > 0) {
+    buckets.get(overKey)!.pop();
+    return true;
+  }
+
+  const total = [...buckets.values()].reduce((n, list) => n + list.length, 0);
+  if (total <= maxTotal) return false;
+
+  let fattestKey: string | null = null;
+  let fattestCount = 1;
+  for (const [key, list] of buckets) {
+    if (list.length > fattestCount) {
+      fattestCount = list.length;
+      fattestKey = key;
+    }
+  }
+  if (fattestKey) {
+    buckets.get(fattestKey)!.pop();
+    return true;
+  }
+
+  let oldestKey: string | null = null;
+  let oldestMs = Number.POSITIVE_INFINITY;
+  for (const [key, list] of buckets) {
+    if (list.length === 0) continue;
+    const oldest = list[list.length - 1];
+    const ms = articleFeedTimestamp(oldest);
+    if (ms < oldestMs) {
+      oldestMs = ms;
+      oldestKey = key;
+    }
+  }
+  if (!oldestKey) return false;
+  buckets.get(oldestKey)!.pop();
+  return true;
+}
+
 /**
  * フィード在庫の整理:
- * 1. 直近 retentionDays 以外を外す
- * 2. ソースごとに maxArticlesPerSourceInFeed まで（超分はそのソースの最古から）
- * 3. 全体が safetyMaxCount 超なら、本数の多いソースの最古から削る（各ソース最低1は残す）
- * 4. ツール最低件数・ソース最低1件の保護（枠に余裕がある／太いソースから1枠譲れるとき）
+ * 1. 直近 retentionDays 以外を外す（期間切れは一括で可）
+ * 2. ソース上限・全体上限の超過は、maxEvictions 件までだけ最古から押し出す
+ *    （新規1件に対し最大1件。一括で100/2000まで削らない）
+ * 3. ツール最低件数・ソース最低1件の保護
+ *
+ * @param maxEvictions 上限押し出しの最大回数。ingest は新規件数を渡す。0 なら期間切れのみ。
  */
 export function trimFeedArticles(
   articles: Article[],
   safetyMaxCount: number = limits.maxFeedArticles,
   retentionDays: number = limits.retentionDays,
-  maxPerSource: number = limits.maxArticlesPerSourceInFeed
+  maxPerSource: number = limits.maxArticlesPerSourceInFeed,
+  maxEvictions: number = 0
 ): Article[] {
   const sorted = sortArticles(articles);
   if (sorted.length === 0) return [];
@@ -897,77 +959,41 @@ export function trimFeedArticles(
     : Math.max(Date.now(), newestMs);
   const cutoffMs = referenceNowMs - retentionDays * 24 * 60 * 60 * 1000;
 
-  // 1. 保持期間内
+  // 1. 保持期間内（期間切れのみ一括）
   const withinRetention = sorted.filter((article) => {
     const feedMs = articleFeedTimestamp(article) || referenceNowMs;
     return !Number.isNaN(feedMs) && feedMs >= cutoffMs;
   });
 
-  // 2. ソース上限（新しい順に残す）
   const perSourceCap = Math.max(1, maxPerSource);
-  const keptBySource = new Map<string, Article[]>();
-  for (const article of withinRetention) {
-    const key = article.source_id || article.source_name || article.id;
-    const bucket = keptBySource.get(key) ?? [];
-    if (bucket.length < perSourceCap) {
-      bucket.push(article);
-      keptBySource.set(key, bucket);
-    }
-  }
-
-  let result = sortArticles([...keptBySource.values()].flat());
-
-  // 3. 全体上限: 一番太いソースの最古から（最低1は残す）
   const maxTotal = Math.max(1, safetyMaxCount);
-  if (result.length > maxTotal) {
-    const buckets = new Map<string, Article[]>();
-    for (const article of result) {
-      const key = article.source_id || article.source_name || article.id;
-      const list = buckets.get(key) ?? [];
-      list.push(article);
-      buckets.set(key, list);
-    }
-    for (const list of buckets.values()) {
-      list.sort(
-        (a, b) => articleFeedTimestamp(b) - articleFeedTimestamp(a)
-      );
-    }
-    while (
-      [...buckets.values()].reduce((n, list) => n + list.length, 0) > maxTotal
-    ) {
-      let fattestKey: string | null = null;
-      let fattestCount = 1;
-      for (const [key, list] of buckets) {
-        if (list.length > fattestCount) {
-          fattestCount = list.length;
-          fattestKey = key;
-        }
-      }
-      if (!fattestKey) {
-        // 全ソース1件ずつでも溢れる極端ケース: 全体の最古を落とす
-        let oldestKey: string | null = null;
-        let oldestMs = Number.POSITIVE_INFINITY;
-        for (const [key, list] of buckets) {
-          if (list.length === 0) continue;
-          const oldest = list[list.length - 1];
-          const ms = articleFeedTimestamp(oldest);
-          if (ms < oldestMs) {
-            oldestMs = ms;
-            oldestKey = key;
-          }
-        }
-        if (!oldestKey) break;
-        buckets.get(oldestKey)!.pop();
-        continue;
-      }
-      buckets.get(fattestKey)!.pop();
-    }
-    result = sortArticles([...buckets.values()].flat());
+
+  const buckets = new Map<string, Article[]>();
+  for (const article of withinRetention) {
+    const key = sourceKey(article);
+    const list = buckets.get(key) ?? [];
+    list.push(article);
+    buckets.set(key, list);
+  }
+  for (const list of buckets.values()) {
+    list.sort((a, b) => articleFeedTimestamp(b) - articleFeedTimestamp(a));
   }
 
+  // 2. 超過は maxEvictions 回まで（1回=1件）。既定0＝取り込み時以外は触らない
+  const evictionBudget =
+    maxEvictions === Number.POSITIVE_INFINITY
+      ? Number.MAX_SAFE_INTEGER
+      : Math.max(0, Math.floor(maxEvictions));
+  let evicted = 0;
+  while (evicted < evictionBudget) {
+    if (!evictOneOverCap(buckets, perSourceCap, maxTotal)) break;
+    evicted += 1;
+  }
+
+  let result = sortArticles([...buckets.values()].flat());
   const keptIds = new Set(result.map((a) => a.id));
 
-  // 4a. ツール最低保証（枠に空きがあるときだけ）
+  // 3a. ツール最低保証（枠に空きがあるときだけ）
   const minPerTool = limits.minArticlesPerTool;
   for (const tool of allTools) {
     let countForTool = result.filter((a) => a.tool_tags[0] === tool).length;
@@ -982,7 +1008,7 @@ export function trimFeedArticles(
     }
   }
 
-  // 4b. ソース最低1: 保持期間内にあったソースが0なら、太いソースから1枠譲って復元
+  // 3b. ソース最低1: 保持期間内にあったソースが0なら復元（満杯なら太いソースから1枠）
   const sourcesInRetention = new Set(
     withinRetention.map((a) => a.source_id || a.source_name)
   );
@@ -997,7 +1023,6 @@ export function trimFeedArticles(
       result.push(rep);
       continue;
     }
-    // 満杯: 2件以上ある一番太いソースの最古を1つ外して枠を空ける
     const counts = new Map<string, number>();
     for (const article of result) {
       const key = article.source_id || article.source_name;
