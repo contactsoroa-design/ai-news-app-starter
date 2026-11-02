@@ -180,8 +180,7 @@ type ListingFeedFallback = {
    * openai-changelog=API Changelog、cursor-blog=cursor.com/blog、
    * perplexity-blog=perplexity.ai/hub/blog、
    * windsurf-changelog=windsurf.com/changelog（Devin Desktop 系）、
-   * mintlify-day-changelog=日付ラベル型 Mintlify changelog、
-   * heygen-changelog=機能ラベル型 HeyGen developers changelog
+   * mintlify-day-changelog=日付ラベル型 Mintlify changelog
    */
   parser:
     | 'synthesia'
@@ -191,8 +190,7 @@ type ListingFeedFallback = {
     | 'cursor-blog'
     | 'perplexity-blog'
     | 'windsurf-changelog'
-    | 'mintlify-day-changelog'
-    | 'heygen-changelog';
+    | 'mintlify-day-changelog';
   /** mintlify-day: `#hash` の前のパス（例: /page/changelog） */
   changelogPath?: string;
   /** mintlify-day: Agent/MCP/AI キーワードがある日だけ残す（Notion 用） */
@@ -255,12 +253,6 @@ const LISTING_FEED_FALLBACKS: Record<string, ListingFeedFallback> = {
     origin: 'https://docs.devin.ai',
     parser: 'mintlify-day-changelog',
     changelogPath: '/release-notes/overview',
-  },
-  // noticeable は更新が薄い → developers changelog（AI動画API・ほぼ週次以上）
-  'source-heygen-ugc': {
-    listingUrl: 'https://developers.heygen.com/changelog',
-    origin: 'https://developers.heygen.com',
-    parser: 'heygen-changelog',
   },
 };
 
@@ -455,27 +447,6 @@ function parseListingItems(
         body
       );
     }
-  } else if (conf.parser === 'heygen-changelog') {
-    // 機能ラベル + update-content。日付は description「Updated - October 2026」または RSS 側で補完。
-    const entryRe =
-      /data-component-part="update-label">([^<]+)<\/button>[\s\S]*?data-component-part="update-description">([^<]*)<\/div>[\s\S]*?data-component-part="update-content">([\s\S]*?)(?=data-component-part="update-label"|$)/gi;
-    for (const m of html.matchAll(entryRe)) {
-      const label = decodeBasicHtmlEntities(m[1]).trim();
-      const dateHint = decodeBasicHtmlEntities(m[2]).trim();
-      const body = decodeBasicHtmlEntities(
-        m[3].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
-      ).trim();
-      if (!label || !body) continue;
-      const monthMatch = dateHint.match(
-        /(January|February|March|April|May|June|July|August|September|October|November|December)\s+(20\d{2})/i
-      );
-      const pubDate = monthMatch
-        ? parseEnglishMonthDayYear(`${monthMatch[1]} 15, ${monthMatch[2]}`)
-        : null;
-      push(`/changelog#${slugifyHeading(label)}`, label, pubDate, body);
-    }
-  }
-
   items.sort((a, b) => {
     const ta = a.pubDate ? Date.parse(a.pubDate) : 0;
     const tb = b.pubDate ? Date.parse(b.pubDate) : 0;
@@ -1920,23 +1891,6 @@ async function main() {
       }
 
       // ブログ一覧フォールバック（Synthesia / Arcads 等）。RSS・sitemap とマージ
-      // HeyGen changelog RSS は mintlify.app ホストになることがある → 公式ドメインへ寄せる
-      if (source.id === 'source-heygen-ugc') {
-        feedItems = feedItems.map((item) => {
-          try {
-            const u = new URL(item.link);
-            if (u.hostname.endsWith('mintlify.app')) {
-              u.protocol = 'https:';
-              u.hostname = 'developers.heygen.com';
-              return { ...item, link: u.toString() };
-            }
-          } catch {
-            // keep original
-          }
-          return item;
-        });
-      }
-
       const listing = await itemsFromListingFallback(source.id);
       if (listing && listing.length > 0) {
         const feedItemMergeKey = (item: RawFeedItem): string => {
