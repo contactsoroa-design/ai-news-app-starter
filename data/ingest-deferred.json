@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://zenn.dev/sktt_panda/articles/csv-to-qr-bulk-zip-browser",
-    "source_id": "source-zenn-indie",
-    "title": "CSVからQRコードを一括生成してZIP保存する — ファイル名衝突と容量超過をブラウザで捌く実装",
-    "pubDate": "2026-11-02T01:04:12.000Z",
-    "snippet": "3行まとめ CSVの1列をQRコードに一括変換し、PNG/SVGをZIPでまとめて保存するツールをぱんだツールズに追加した。商品URLや会員番号のリストをそのまま放り込める 実装の大半は「QRを描く」部分ではなく、ファイル名の安全化と衝突回避（Windows予約名・大文字小文字を区別しないOS）と、容量超過の2段階チェック（計画時のバイト数判定＋生成時の例外捕捉）に費やしている 1行の失敗で全体を止めず、行番号つきでスキップ理由を返す設計にした。ZIPは無圧縮（STORE）、25件ごとにメインスレッドを譲って進捗とキャンセルを効かせている QRコードを1個作るツールはいくらでも...",
-    "saved_at": "2026-11-02T09:45:07.897Z"
-  },
-  {
-    "url": "https://arxiv.org/abs/2610.40938",
-    "source_id": "source-arxiv",
-    "title": "DiRAFT: Privacy-Aware Financial Transcript Synthesis from Aggregate Discourse Priors",
-    "pubDate": "2026-11-02T05:00:00.000Z",
-    "snippet": "arXiv:2610.40938v1 Announce Type: new Abstract: Using customer conversations to train and evaluate financial language models raises confidentiality concerns because non-public financial facts can remain after direct identifiers are masked. Synthetic transcripts offer an alternative data source, but their discourse fidelity and residual confidentiality risks require assessment. We introduce DiRAFT (Discourse Realization from Aggregate First-order Transitions), which extracts financial concept graphs and records the order in which concepts are first introduced. It pools adjacent concept transitions across training records and samples new graph plans from aggregate transition, starting-concept, and plan-length priors. A discourse layer guides text realization without supplying an individual source passage or graph. We assess privacy-related risks through two complementary evaluations: corpu",
-    "saved_at": "2026-11-02T09:45:07.897Z"
-  },
-  {
-    "url": "https://note.com/dandy_quoll1027/n/n93949bd5b76f",
-    "source_id": "source-note-ai",
-    "title": "現場監督の自動売買週報 #002｜システム再構築へ！今週の運用実績",
-    "pubDate": "2026-11-02T09:13:12.000Z",
-    "snippet": "こんにちは！現場監督×チャッピーの開発記録です。 ChatGPTと開発した株式自動売買システムの週間運用記録。今回は10月26日〜30日分です！ 📊 ① 週間の運用実績 期間 取引・勝敗 約定損益 10/26〜30 2回・1勝1敗 +2,030円 費用引当控除後の暫定損益は +1,830円 でした。 📅 ② 日別の取引結果・不具合 10/26（月）｜1取引・0勝1敗｜−1,570円 買い注文が約定 → 保有状況のデータ更新遅れを検知 → 決済が約定 → 保有・注文なしでシステム停止。 10/27（火）｜1取引・1勝0敗｜+3,600円 朝に株価データの鮮度異常を検知 → 売り注文が約定 → 決済情報の鮮度異常を検知して決済 → システム停止。 市場終了後、繰り返すデータ鮮度異常の改善に向け、システムの大規模再構築を決定し、修正作業を開始。 10/28（水）｜再構築作業・売買停止 大規模再構築に伴い、データ収集と自動売買を意図的に停止。 10/29（木）｜再構築作業・売買停止 引き続き再構築作業のため、データ収集・自動売買を停止。 10/30（金）｜再構築作業・売買停止 再構築作業を継続し、データ収集・自動売買は停止したまま週末へ。 ※損益は確認済み約定の費用確定前の数値です。週間JSONは一部不完全（PARTIAL）で、証券会社の最終確定損益ではありません。 🔧 ③ 今後について 繰り返し発生するデータ鮮度異常を改善するため、部分的な修正から大規模なシステム再構築へ方針転換しました。 今後も安全性と安定稼働を優先し、修正・検証を進めていきます。 実市場での改善結果は、確認でき次第、週報で報告します！ ⸻ ※本記事は個人の開発・運用記録であり、特定銘柄の売買を推奨するものではありません。投資には損失のリスクがあります。 🔗 関連記事 自動売買システムの開発経緯はこちら。 続きをみる",
-    "saved_at": "2026-11-02T09:45:07.897Z"
-  },
-  {
-    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
-    "source_id": "source-hn",
-    "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
-    "pubDate": "2026-11-02T07:27:28.000Z",
-    "snippet": "Article URL: https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/ Comments URL: https://news.ycombinator.com/item?id=50334038 Points: 24 # Comments: 17",
-    "saved_at": "2026-11-02T09:45:07.897Z"
-  },
-  {
     "url": "https://zenn.dev/teo_k/articles/929600c83d0912",
     "source_id": "source-zenn",
     "title": "GitHub Universe 2026のアップデートで個人的に気になった機能を使ってみた",
