@@ -639,6 +639,13 @@ async function itemsFromSitemapFallback(
  * 枠が余ったときだけ 2 件目以降を許可する（soft fill）。
  */
 const DEFAULT_MAX_PER_SOURCE_PER_RUN = 1;
+/**
+ * 直近 N 件（作成時刻）に占める同一ソースの上限割合。
+ * Pass1/1b だけで効かせ、枠余り（Pass2）と優先キューでは外す → 最新が途切れない。
+ * 0 で無効。
+ */
+const DEFAULT_SOURCE_SHARE_WINDOW = 100;
+const DEFAULT_MAX_SOURCE_SHARE = 0.08;
 /** 公開日がこの日数より前の候補は未登録でも取り込まない（古い公式が枠を使うのを防ぐ） */
 const DEFAULT_MAX_ARTICLE_AGE_DAYS = 7;
 
@@ -664,6 +671,11 @@ function countArticlesBySourceId(articles: Article[]): Map<string, number> {
     counts.set(key, (counts.get(key) ?? 0) + 1);
   }
   return counts;
+}
+
+function maxArticlesForSourceShare(window: number, share: number): number {
+  if (window <= 0 || share <= 0) return Number.POSITIVE_INFINITY;
+  return Math.max(1, Math.floor(window * share));
 }
 
 /**
@@ -1533,6 +1545,22 @@ async function main() {
         DEFAULT_MAX_PER_SOURCE_PER_RUN
     )
   );
+  const sourceShareWindow = Math.max(
+    0,
+    Number(
+      process.env.SOURCE_SHARE_WINDOW || DEFAULT_SOURCE_SHARE_WINDOW
+    )
+  );
+  const maxSourceShare = Math.max(
+    0,
+    Number(process.env.MAX_SOURCE_SHARE || DEFAULT_MAX_SOURCE_SHARE)
+  );
+  const sourceShareCap = maxArticlesForSourceShare(
+    sourceShareWindow,
+    maxSourceShare
+  );
+  const shareCapEnabled =
+    Number.isFinite(sourceShareCap) && sourceShareCap < Number.POSITIVE_INFINITY;
   const maxArticleAgeDays = Math.max(
     1,
     Number(
@@ -1750,7 +1778,10 @@ async function main() {
     (q) => (sourceCounts.get(q.source.id) ?? 0) > medianCount
   );
   console.log(
-    `公平巡回: 不足ソース優先 (中央値≤${medianCount}) / 回転スロット=${rotateSlot} / 1ソース上限=${maxPerSourcePerRun}件（枠余り時は緩和） / 公開${maxArticleAgeDays}日以内のみ`
+    `公平巡回: 不足ソース優先 (中央値≤${medianCount}) / 回転スロット=${rotateSlot} / 1ソース上限=${maxPerSourcePerRun}件（枠余り時は緩和） / 公開${maxArticleAgeDays}日以内のみ` +
+      (shareCapEnabled
+        ? ` / 占有ソフト上限=直近${sourceShareWindow}件の${Math.round(maxSourceShare * 100)}%（≤${sourceShareCap}件・枠余り時は解除）`
+        : ' / 占有ソフト上限=オフ')
   );
   console.log(
     `  優先: ${primaryQueues
@@ -1782,8 +1813,39 @@ async function main() {
   let rateCooldownUsed = false;
   const newArticles: Article[] = [];
   const acceptedBySource = new Map<string, number>();
+  let shareWindowCountsCache: Map<string, number> | null = null;
+  let shareWindowCountsForNewLen = -1;
+  const shareCapLogged = new Set<string>();
   const sourceById = new Map(activeSources.map((s) => [s.id, s]));
   const knownUrls = new Set(existingArticles.map((a) => a.url));
+
+  const getShareWindowCounts = (): Map<string, number> => {
+    if (
+      shareWindowCountsCache &&
+      shareWindowCountsForNewLen === newArticles.length
+    ) {
+      return shareWindowCountsCache;
+    }
+    const allKnown = [...existingArticles, ...newArticles];
+    const recent =
+      sourceShareWindow <= 0
+        ? []
+        : allKnown.length <= sourceShareWindow
+          ? allKnown
+          : [...allKnown]
+              .sort(
+                (a, b) => Date.parse(b.created_at) - Date.parse(a.created_at)
+              )
+              .slice(0, sourceShareWindow);
+    const counts = new Map<string, number>();
+    for (const article of recent) {
+      const key = article.source_id || article.source_name;
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    }
+    shareWindowCountsCache = counts;
+    shareWindowCountsForNewLen = newArticles.length;
+    return counts;
+  };
   const deferredQueue = loadDeferredQueue(rootDir).filter((row) => {
     if (knownUrls.has(row.url)) return false;
     if (isArticleTooOld(row.pubDate, maxArticleAgeDays, now)) return false;
@@ -1817,7 +1879,8 @@ async function main() {
   const tryAcceptCandidate = async (
     source: Source,
     item: RawFeedItem,
-    perSourceCap: number
+    perSourceCap: number,
+    enforceShareCap: boolean
   ): Promise<'accepted' | 'skipped' | 'stop'> => {
     if (pastSoftDeadline()) {
       console.warn(
@@ -1843,6 +1906,19 @@ async function main() {
 
     const taken = acceptedBySource.get(source.id) ?? 0;
     if (taken >= perSourceCap) return 'skipped';
+
+    if (enforceShareCap && shareCapEnabled) {
+      const inWindow = getShareWindowCounts().get(source.id) ?? 0;
+      if (inWindow >= sourceShareCap) {
+        if (!shareCapLogged.has(source.id)) {
+          shareCapLogged.add(source.id);
+          console.log(
+            `  ~ 占有ソフト上限: [${source.name}] 直近${sourceShareWindow}件中${inWindow}件（上限${sourceShareCap}）→他ソース優先（枠余り時は解除）`
+          );
+        }
+        return 'skipped';
+      }
+    }
 
     const allKnown = [...existingArticles, ...newArticles];
     const isDuplicate = allKnown.some(
@@ -1945,15 +2021,23 @@ async function main() {
   const runPass = async (
     label: string,
     candidates: Array<{ source: Source; item: RawFeedItem }>,
-    perSourceCap: number
+    perSourceCap: number,
+    enforceShareCap: boolean
   ) => {
     if (atRunCap() || atDayCap() || atHourCap() || stoppedForRateLimit) return;
     if (candidates.length === 0) return;
     console.log(
-      `${label}: 候補 ${candidates.length} / ソース上限 ${perSourceCap}（現在 ${todayCount}/${maxPerRun}・時間 ${alreadyThisHour + hourCount}/${maxPerHour}）`
+      `${label}: 候補 ${candidates.length} / ソース上限 ${perSourceCap}` +
+        (enforceShareCap && shareCapEnabled ? ' / 占有ソフト上限あり' : '') +
+        `（現在 ${todayCount}/${maxPerRun}・時間 ${alreadyThisHour + hourCount}/${maxPerHour}）`
     );
     for (const { source, item } of candidates) {
-      const result = await tryAcceptCandidate(source, item, perSourceCap);
+      const result = await tryAcceptCandidate(
+        source,
+        item,
+        perSourceCap,
+        enforceShareCap
+      );
       if (result === 'stop') break;
     }
   };
@@ -1974,15 +2058,22 @@ async function main() {
         },
       });
     }
+    // 優先キューは鮮度回復優先（占有キャップは掛けない）
     await runPass(
       'Pass0 優先キュー',
       deferredCandidates,
-      Math.max(maxPerSourcePerRun, maxPerRun)
+      Math.max(maxPerSourcePerRun, maxPerRun),
+      false
     );
   }
 
-  // Pass 1: 不足ソースのみ・1ソース1件（偏り抑制）
-  await runPass('Pass1 不足ソース', primaryCandidates, maxPerSourcePerRun);
+  // Pass 1: 不足ソースのみ・1ソース1件（偏り抑制＋占有ソフト上限）
+  await runPass(
+    'Pass1 不足ソース',
+    primaryCandidates,
+    maxPerSourcePerRun,
+    true
+  );
 
   // Pass 1b: 枠余りなら後回しソース全般を同じ厳格上限で先に拾う
   // （不足側の depth 2〜6 で枠を埋め切る前に overflow の最新へ回す）
@@ -1995,11 +2086,12 @@ async function main() {
     await runPass(
       'Pass1b 後回しソース',
       overflowCandidates,
-      maxPerSourcePerRun
+      maxPerSourcePerRun,
+      true
     );
   }
 
-  // Pass 2: まだ余りなら緩和上限。後回し側を先に埋め、その後不足側
+  // Pass 2: まだ余りなら緩和上限＋占有解除。他に新着が無い時間でも最新が途切れない
   if (
     !atRunCap() &&
     !atDayCap() &&
@@ -2008,10 +2100,10 @@ async function main() {
   ) {
     const softCap = Math.max(maxPerSourcePerRun + 2, maxPerRun);
     console.log(
-      `枠余り (${todayCount}/${maxPerRun}) のためソース上限を ${softCap} に緩和します`
+      `枠余り (${todayCount}/${maxPerRun}) のためソース上限を ${softCap} に緩和し、占有ソフト上限も解除します（鮮度優先）`
     );
-    await runPass('Pass2 後回しソース', overflowCandidates, softCap);
-    await runPass('Pass2 不足ソース', primaryCandidates, softCap);
+    await runPass('Pass2 後回しソース', overflowCandidates, softCap, false);
+    await runPass('Pass2 不足ソース', primaryCandidates, softCap, false);
   }
 
   if (stoppedForRateLimit) {

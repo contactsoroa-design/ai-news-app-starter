@@ -16,7 +16,11 @@ AI関連のニュースだけを、1枚ずつ縦スワイプで読めるモバ�
 - Connect貼り付け文: `docs/ストア掲載文-貼り付け用.md`
 - ソフトローンチ: `docs/ソフトローンチ手順.md`（ウェイトリスト閉門なし・Approved 後すぐ公開・無料＋自前広告）
 - Support / PP / Terms / Media kit は **独自ドメイン**（`https://soroa-studio.com/ainews/`）。`*.vercel.app` を Connect に書かない。HTML正本は `landing/ainews/`。
+- **Web本番デプロイ（Vercel Hobby・課金前提にしない）:** 直近24時間100回上限はチーム合算。LP修正のたびに `vercel deploy` しない。ローカル／`SYNC_ONLY=1 ./scripts/deploy-ainews-landing.sh` で同期し、本番はまとめて1回（`scripts/deploy-ainews-landing.sh`）。失敗時の連打禁止。アプリの要約品質・収集上限はデプロイ節約のために下げない。
 - **Google Play（Android）:** 個人→組織は `docs/GooglePlay-個人から組織へ-手順.md`（URLつき）。提出は `docs/GooglePlay提出チェックリスト.md` / 掲載文 `docs/GooglePlay掲載文-貼り付け用.md`（優先は iOS 後でも可）
+- **事業戦略の正本:** `docs/事業戦略書.md`（月粗利目安・三層・ストア耐性。チャット合意はここに書いて正式化）
+- **認知・拡散の正本:** `docs/認知・拡散戦略書.md`（ASO・ローンチ・X。バズ必須にしない）
+- **フェーズ別冊:** `docs/事業戦略-Phase0.md` 〜 `Phase3.md`（各期のチェックリスト・KPI・やらないこと）
 - 収益運用メモ: `docs/スポンサー候補リスト.md` / `docs/アフィリエイト運用ルール.md` / `docs/週次KPI.md` / `docs/要望インボックス運用.md`
 
 ## 今回やらないこと
@@ -31,7 +35,7 @@ AdMob 等の広告ネットワーク、雑多なバナー枠、有料プラン�
 - ソースは `terms_checked = true` のものだけ有効にする。Reddit と X のAPIは使わない。
 - 公式ロゴを自分で描かない。アイコンはサイトのfavicon等を取得して表示し、色や形を加工しない。
 - APIキーはサーバー側（収集・要約スクリプト実行環境）の環境変数だけに置く。アプリ側には一切入れない。`.env` はコミットしない。
-- 1日の収集上限デフォルトは `MAX_ARTICLES_PER_DAY=350`（`America/Los_Angeles`＝Gemini RPD。無料 Flash-Lite をやや攻める。有料なら env で450等へ。軽さ優先で保持上限は上げない）。`MAX_ARTICLES_PER_HOUR=15` / `MAX_ARTICLES_PER_RUN=4`＋`INGEST_PACE_SLACK=6`（時刻比例ペースで均等配信し、先行しすぎによる空白時間を抑える。遅れ分は時間枠内で取り戻す。要約の質・モデルは変えない）。収集の**実行本体**は **GitHub Actions のみ**（Mac起動不要・要約APIキーは Actions secrets）。**主起動**は Cloudflare Workers Cron（`ops/ingest-wake-cf` → `repository_dispatch`、約15分。Vercel Hobby は日次制限のため不可。手順は `docs/収集-外部cron手順.md`）。GitHub `schedule` は Sparse 保険（日2回。頻繁だと dispatch と二重消費）。Vercel 日2回も保険。無名 cron SaaS への PAT 設置はしない。日・時間・実行・ペース上限でブレーキ。429時は記事単位で待機再試行し、連続時は実行内クールダウン1回のうえ継続。それでもだめなら停止し `data/ingest-deferred.json` に退避して次回先頭で拾う（枠余り取りこぼし防止。空打ちはソフト締切／2波目停止で抑える）。同一ソースは原則1実行1件（件数の少ないソース優先。枠余り時は後回しソース全般へ回す）。RSS窓はソースあたり最新10件。公開日が `MAX_ARTICLE_AGE_DAYS`（既定7日）より前の候補は取り込まない。月額上限は `MAX_MONTHLY_COST_JPY`（既定3000）。フィード保持は直近30日＋安全上限2000件（≒数日分。新しい順に残し、古いものから外す。JSON肥大防止）。
+- 1日の収集上限デフォルトは `MAX_ARTICLES_PER_DAY=350`（`America/Los_Angeles`＝Gemini RPD。無料 Flash-Lite をやや攻める。有料なら env で450等へ。軽さ優先で保持上限は上げない）。`MAX_ARTICLES_PER_HOUR=15` / `MAX_ARTICLES_PER_RUN=4`＋`INGEST_PACE_SLACK=6`（時刻比例ペースで均等配信し、先行しすぎによる空白時間を抑える。遅れ分は時間枠内で取り戻す。要約の質・モデルは変えない）。収集の**実行本体**は **GitHub Actions のみ**（Mac起動不要・要約APIキーは Actions secrets）。**主起動**は Cloudflare Workers Cron（`ops/ingest-wake-cf` → `repository_dispatch`、約15分。Vercel Hobby は日次制限のため不可。手順は `docs/収集-外部cron手順.md`）。GitHub `schedule` は Sparse 保険（日2回。頻繁だと dispatch と二重消費）。Vercel 日2回も保険。無名 cron SaaS への PAT 設置はしない。日・時間・実行・ペース上限でブレーキ。429時は記事単位で待機再試行し、連続時は実行内クールダウン1回のうえ継続。それでもだめなら停止し `data/ingest-deferred.json` に退避して次回先頭で拾う（枠余り取りこぼし防止。空打ちはソフト締切／2波目停止で抑える）。同一ソースは原則1実行1件（件数の少ないソース優先。枠余り時は後回しソース全般へ回す）。直近 `SOURCE_SHARE_WINDOW`（既定100）件の占有が `MAX_SOURCE_SHARE`（既定8%）以上のソースは Pass1/1b でスキップし、枠余り時は解除して最新が途切れないようにする（公式優先ではない）。RSS窓はソースあたり最新10件。公開日が `MAX_ARTICLE_AGE_DAYS`（既定7日）より前の候補は取り込まない。月額上限は `MAX_MONTHLY_COST_JPY`（既定3000）。フィード保持は直近30日＋安全上限2000件（≒数日分。新しい順に残し、古いものから外す。JSON肥大防止）。
 - 色・文言・寸法は `src/theme/tokens.ts` と設定ファイルにまとめる（直書きしない）。
 - ボタンは44px以上、読み上げ用ラベルを付ける、文字のコントラストを十分にとる。
 - TypeScriptはstrict。エラー処理（通信失敗・空の状態）を必ず入れる。
