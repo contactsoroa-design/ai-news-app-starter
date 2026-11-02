@@ -1,5 +1,58 @@
 [
   {
+    "id": "art-1793613000189-g6fka",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2610.40939",
+    "published_at": "2026-11-02T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "大規模言語モデルの思考プロセスを制御不能にする「思考開始直後のエントロピー崩壊」とは？ 推論制御を高める2つの手法",
+    "summary_ja": "大規模言語モデル（LLM）の思考過程（CoT）を制御できない原因は、思考開始タグ直後のわずかなトークンにおける「エントロピー崩壊」にあることが判明した。 研究チームは、このメカニズムを逆手に取り、推論開始時に特定のトークンを事前入力（Prefilling）する手法や、頻出する思考開始トークンを禁止してコンテキスト例を追加する介入を行うことで、命令遵守率を34〜41ポイント向上させることに成功した。",
+    "translations": {
+      "ja": {
+        "title": "大規模言語モデルの思考プロセスを制御不能にする「思考開始直後のエントロピー崩壊」とは？ 推論制御を高める2つの手法",
+        "summary": "大規模言語モデル（LLM）の思考過程（CoT）を制御できない原因は、思考開始タグ直後のわずかなトークンにおける「エントロピー崩壊」にあることが判明した。 研究チームは、このメカニズムを逆手に取り、推論開始時に特定のトークンを事前入力（Prefilling）する手法や、頻出する思考開始トークンを禁止してコンテキスト例を追加する介入を行うことで、命令遵守率を34〜41ポイント向上させることに成功した。"
+      },
+      "en": {
+        "title": "Why early tokens determine LLM reasoning: Entropy collapse at the start of Chain-of-Thought explains controllability limits",
+        "summary": "Researchers have identified that the inherent inability to control LLM reasoning traces stems from 'entropy collapse' occurring in the tokens immediately following the opening thought tag. This critical bottleneck restricts model steering, but can be overcome through specific inference-time interventions. The study demonstrates that by utilizing prefilling—injecting even a single token at the start—or banning frequent opening tokens combined with in-context examples, developers can dramatically improve compliance rates by 34 to 41 percentage points. This research highlights that the reasoning trajectory is locked in within the first few tokens of the trace. For developers building agentic workflows, these findings suggest that manipulating early-stage token generation is a powerful, low-overhead lever for enforcing reliability and consistent output structure in complex reasoning tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-02T09:50:00.189Z"
+  },
+  {
+    "id": "art-1793612987535-58jxx",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/3yu_ro/articles/7521a2ebf8566b",
+    "published_at": "2026-11-02T00:42:19.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--abnbpbC7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Mac%25E3%2582%2592%25E6%258C%2581%25E3%2581%259F%25E3%2581%259A%25E3%2581%25AB%25E3%2580%2581Windows%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7Web%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2582%2592iPhone%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25AB%25E3%2581%2597%25E3%2581%25A6%25E5%25AF%25A9%25E6%259F%25BB%25E3%2582%2592%25E9%2580%259A%25E3%2581%2597%25E3%2581%259F%25E6%2589%258B%25E9%25A0%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E6%25AD%25A3%25E7%25A4%25BE%25E5%2593%25A1%25E3%2581%25AE%25E5%2589%25AF%25E6%25A5%25AD%25E3%2581%25A7%25E3%2581%25AE%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25EF%25BC%2588%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUF0RmtzSklQaHMzWU9xdUE1amlpZWFUb3NqeHp0Zmw2NnVHSWw2NEZVUktFVW5nPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Mac不要でiOSゲームを開発・リリース：Windows環境でVite/PhaserアプリをCapacitor経由でApp Store審査通過させる全手順",
+    "summary_ja": "Macを持たずWindows環境のみで、ViteとPhaserで作ったWebゲームをCapacitorによりiOSアプリへ変換し、App Storeの審査を通過させる手順が公開された。 広告実装や課金機能を含め、実機検証には中古iPhoneとTestFlightを活用して開発コストを徹底的に抑えている。 高額なApple製品への先行投資を避けつつ、個人開発でiOS市場への展開を目指すエンジニアにとって、開発環境の制約を技術で突破するための現実的なロードマップとなる。",
+    "translations": {
+      "ja": {
+        "title": "Mac不要でiOSゲームを開発・リリース：Windows環境でVite/PhaserアプリをCapacitor経由でApp Store審査通過させる全手順",
+        "summary": "Macを持たずWindows環境のみで、ViteとPhaserで作ったWebゲームをCapacitorによりiOSアプリへ変換し、App Storeの審査を通過させる手順が公開された。 広告実装や課金機能を含め、実機検証には中古iPhoneとTestFlightを活用して開発コストを徹底的に抑えている。 高額なApple製品への先行投資を避けつつ、個人開発でiOS市場への展開を目指すエンジニアにとって、開発環境の制約を技術で突破するための現実的なロードマップとなる。"
+      },
+      "en": {
+        "title": "Building and Publishing iOS Games Without a Mac: How to Push Phaser Web Apps to App Store via Capacitor on Windows",
+        "summary": "A developer has detailed a workflow for taking a Vite and Phaser-based web game and wrapping it as a native iOS app using Capacitor—entirely on a Windows machine. The process covers the integration of AdMob and in-app purchases, utilizing a cheap second-hand iPhone for TestFlight validation instead of investing in high-end development hardware upfront. This guide provides a practical roadmap for indie developers who want to target the App Store without the financial barrier of a macOS ecosystem. By focusing on hybrid development and remote testing, the author demonstrates how to successfully navigate the strict Apple review process while keeping initial infrastructure and hardware costs minimal for solo product builders."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-02T09:49:47.535Z"
+  },
+  {
     "id": "art-1793612255130-0c5fh",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
