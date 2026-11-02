@@ -1,5 +1,116 @@
 [
   {
+    "id": "art-1793635428463-3atox",
+    "source_id": "source-perplexity",
+    "source_name": "Perplexity Hub Blog",
+    "url": "https://www.perplexity.ai/hub/blog/ai-agent-memory",
+    "published_at": "2026-11-02T12:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "Perplexityが解説する「AIエージェントの記憶」構築術：永続的なコンテキストを維持しタスク実行能力を最大化させるアーキテクチャ",
+    "summary_ja": "Perplexityは、AIエージェントに永続的な記憶（メモリ）を持たせるための設計指針を公開した。 単なるRAGを超え、セッションを跨いでユーザーの好みや作業履歴を保持するコンテキスト管理手法が中心となる。 開発者は、ベクトルデータベースを活用した長期記憶の統合と、エージェントが過去の文脈から現在のタスクへ適応する「動的検索」を実装することで、汎用的なチャットボットから真の「エージェント」へと進化させることが可能になる。",
+    "translations": {
+      "ja": {
+        "title": "Perplexityが解説する「AIエージェントの記憶」構築術：永続的なコンテキストを維持しタスク実行能力を最大化させるアーキテクチャ",
+        "summary": "Perplexityは、AIエージェントに永続的な記憶（メモリ）を持たせるための設計指針を公開した。 単なるRAGを超え、セッションを跨いでユーザーの好みや作業履歴を保持するコンテキスト管理手法が中心となる。 開発者は、ベクトルデータベースを活用した長期記憶の統合と、エージェントが過去の文脈から現在のタスクへ適応する「動的検索」を実装することで、汎用的なチャットボットから真の「エージェント」へと進化させることが可能になる。"
+      },
+      "en": {
+        "title": "Perplexity outlines architecture for building AI agents with persistent memory to maintain context across complex user sessions",
+        "summary": "Perplexity details the architectural patterns required to move beyond stateless chatbots toward AI agents capable of retaining persistent, cross-session memory. The guide explains that true agency requires more than simple RAG; developers must implement structured long-term storage, typically using vector databases, to manage user preferences and historical task states dynamically. By enabling the model to retrieve past context and adapt it to current objectives, builders can drastically improve reliability and task-completion rates in complex workflows. The core takeaway is that persistent memory, when combined with intelligent retrieval strategies, is the foundational building block for transforming basic prompt-response systems into autonomous agents that actually understand and evolve alongside the user."
+      }
+    },
+    "tool_tags": [
+      "Perplexity"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-02T16:03:48.463Z"
+  },
+  {
+    "id": "art-1793635401302-zuy2y",
+    "source_id": "source-notion",
+    "source_name": "Notion API Changelog (Agent / MCP)",
+    "url": "https://developers.notion.com/page/changelog#october-26-2026",
+    "published_at": "2026-10-26T16:17:36.000Z",
+    "og_image_url": "https://notion-demo.mintlify.app/images/og-image.png",
+    "title_ja": "Notion APIに接続ヘルス監視機能が登場、開発ポータルで過去24時間の失敗率とレート制限を可視化",
+    "summary_ja": "Notionは開発者ポータルを刷新し、内部および公開接続のステータスを確認できる「Health」タブを追加した。 これにより、過去24時間分のAPIリクエスト成功・失敗数や、レート制限およびクライアントエラーの詳細を直接追跡可能になる。 さらに、notion-fetchツールがMCPセッションに対応し、GitHubやGoogleドライブなどの外部ソースをNotion内で直接読み取れるようになった。",
+    "translations": {
+      "ja": {
+        "title": "Notion APIに接続ヘルス監視機能が登場、開発ポータルで過去24時間の失敗率とレート制限を可視化",
+        "summary": "Notionは開発者ポータルを刷新し、内部および公開接続のステータスを確認できる「Health」タブを追加した。 これにより、過去24時間分のAPIリクエスト成功・失敗数や、レート制限およびクライアントエラーの詳細を直接追跡可能になる。 さらに、notion-fetchツールがMCPセッションに対応し、GitHubやGoogleドライブなどの外部ソースをNotion内で直接読み取れるようになった。"
+      },
+      "en": {
+        "title": "Notion adds connection health monitoring to Developer portal plus MCP support for hosted data fetching",
+        "summary": "Notion has updated its Developer portal with a dedicated Health tab, allowing developers to monitor API connection stability by viewing request metrics, failure rates, and specific error codes from the last 24 hours. The dashboard proactively flags rate limits and client-side issues, simplifying debugging for internal and public integrations. Simultaneously, the notion-fetch tool now supports hosted Notion MCP sessions, enabling developers to programmatically retrieve full content—such as GitHub issues or Google Drive files—directly within their MCP workflows. By leveraging these visibility tools to catch failures early and using MCP sessions for seamless cross-platform data retrieval, teams can significantly improve the reliability of their Notion-integrated agents and automation pipelines while reducing friction in cross-tool data access."
+      }
+    },
+    "tool_tags": [
+      "Notion"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-02T16:03:21.302Z"
+  },
+  {
+    "id": "art-1793635392060-trsih",
+    "source_id": "source-clay",
+    "source_name": "Clay Blog (GTM AI)",
+    "url": "https://www.clay.com/blog/automode-for-claygent",
+    "published_at": "2026-10-28T02:19:36.000Z",
+    "og_image_url": "https://cdn.prod.website-files.com/61702af2e3966e09c4101538/6adfb7f6808ba3dc4f8b5a93_Blog%20Cover.png",
+    "title_ja": "Clayが「Claygent auto-mode」を発表：タスクごとにモデルを動的選択し、コストを最大47%削減",
+    "summary_ja": "GTMプラットフォームのClayは、AIエージェント「Claygent」に自動最適化モードを追加した。 この機能は各タスクの複雑さを評価し、最適なAIモデルを動的に割り当てることで、最高性能モデルを使用する場合と比較して実行コストを平均47%削減する。 開発者がAIワークフローを構築する際、精度とコストのバランスを自動で最適化することは運用効率を高めるための必須戦略となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Clayが「Claygent auto-mode」を発表：タスクごとにモデルを動的選択し、コストを最大47%削減",
+        "summary": "GTMプラットフォームのClayは、AIエージェント「Claygent」に自動最適化モードを追加した。 この機能は各タスクの複雑さを評価し、最適なAIモデルを動的に割り当てることで、最高性能モデルを使用する場合と比較して実行コストを平均47%削減する。 開発者がAIワークフローを構築する際、精度とコストのバランスを自動で最適化することは運用効率を高めるための必須戦略となるだろう。"
+      },
+      "en": {
+        "title": "Clay debuts Claygent auto-mode: Dynamically selecting models per task to cut costs by 47%",
+        "summary": "Clay has launched a new auto-mode for its AI agent, Claygent, designed to intelligently route individual row tasks to the most efficient model available. By evaluating task complexity on the fly, the system optimizes performance while slashing operating costs by an average of 47% compared to using top-tier models exclusively. This post-trained model router ensures that compute power is never wasted on simple operations, maintaining high data enrichment accuracy without the overhead of premium model pricing. For builders and GTM teams integrating AI into workflows, this underscores a critical shift: moving from static model selection to automated, cost-aware routing is the only sustainable path to scaling agentic operations effectively in production environments."
+      }
+    },
+    "tool_tags": [
+      "Clay"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-02T16:03:12.060Z"
+  },
+  {
+    "id": "art-1793635303832-wovd6",
+    "source_id": "source-aismiley",
+    "source_name": "AISmiley（AIニュース）",
+    "url": "https://aismiley.co.jp/ai_news/anthropic-gsa-claude-government-discount/",
+    "published_at": "2026-10-30T07:56:46.000Z",
+    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/10/anthropic-gsa-claude-government-discount.png",
+    "title_ja": "Anthropic、米政府機関向けにClaude全製品を40%割引で提供へ。GSAとの提携拡大により公務のAI導入と効率化を加速",
+    "summary_ja": "Anthropicは米連邦政府の一般調達局（GSA）との提携を拡大し、「Claude Enterprise」「Claude for Government」「Claude API」の全製品を40%割引で提供すると発表した。 政府業務でのClaude活用を促進することで、複雑な文書作成やデータ分析などの公務効率化を目指す。 開発者やSaaSベンダーにとって、政府調達のハードル低下は公共セクター向けAIソリューション開発における新たな商機となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Anthropic、米政府機関向けにClaude全製品を40%割引で提供へ。GSAとの提携拡大により公務のAI導入と効率化を加速",
+        "summary": "Anthropicは米連邦政府の一般調達局（GSA）との提携を拡大し、「Claude Enterprise」「Claude for Government」「Claude API」の全製品を40%割引で提供すると発表した。 政府業務でのClaude活用を促進することで、複雑な文書作成やデータ分析などの公務効率化を目指す。 開発者やSaaSベンダーにとって、政府調達のハードル低下は公共セクター向けAIソリューション開発における新たな商機となるだろう。"
+      },
+      "en": {
+        "title": "Anthropic partners with GSA to offer all Claude products at 40% discount to US government agencies",
+        "summary": "Anthropic has expanded its partnership with the US General Services Administration (GSA), launching a program that provides US government agencies a 40% discount across its entire suite, including Claude Enterprise, Claude for Government, and the Claude API. This move is designed to lower the barrier for adopting advanced AI within the public sector, aiming to accelerate administrative efficiency in tasks ranging from complex document analysis to data processing. For developers and SaaS builders, this aggressive pricing strategy signals that the federal government is becoming a viable, large-scale buyer of commercial LLM solutions. It serves as a clear indicator that public sector procurement is shifting from experimental trials to standardized, long-term AI infrastructure adoption, opening significant opportunities for B2G integrations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-02T16:01:43.833Z"
+  },
+  {
     "id": "art-1793634508568-2vtlk",
     "source_id": "source-publickey",
     "source_name": "Publickey",
@@ -41345,32 +41456,6 @@
     "created_at": "2026-10-27T22:48:21.784Z"
   },
   {
-    "id": "art-1793141294456-y2uk0",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/atom_mota/n/nb388df5ac321",
-    "published_at": "2026-10-27T22:39:49.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329320740/rectangle_large_type_2_0dac7d62a1902321f94b2fe56d03749c.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Code v2.1.309の検証：sed -iコマンドが「通常のBash」扱いに変更、/rewindでの巻き戻し挙動を実機で徹底検証",
-    "summary_ja": "Claude Code v2.1.309より、sed -iコマンドが従来の「編集プレビュー」から「通常のBashコマンド」へ変更され、実行時に確認が求められるようになった。 公式ドキュメントではEditツールで編集済みのファイルはBash変更後も/rewind可能とあるが、実際のリポジトリで試した結果、一部のBash操作との整合性には注意が必要だ。 AIエージェントの操作履歴管理と復元能力を正確に理解しておくことが、安全な開発運用の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code v2.1.309の検証：sed -iコマンドが「通常のBash」扱いに変更、/rewindでの巻き戻し挙動を実機で徹底検証",
-        "summary": "Claude Code v2.1.309より、sed -iコマンドが従来の「編集プレビュー」から「通常のBashコマンド」へ変更され、実行時に確認が求められるようになった。 公式ドキュメントではEditツールで編集済みのファイルはBash変更後も/rewind可能とあるが、実際のリポジトリで試した結果、一部のBash操作との整合性には注意が必要だ。 AIエージェントの操作履歴管理と復元能力を正確に理解しておくことが、安全な開発運用の鍵となる。"
-      },
-      "en": {
-        "title": "Validating Claude Code v2.1.309: sed -i is now standard Bash and how it affects /rewind state management",
-        "summary": "Claude Code v2.1.309 has updated its behavior for the sed -i command, shifting it from a specialized file edit preview to a standard Bash command that requires explicit user confirmation. While official documentation suggests that files previously modified by the Edit tool remain compatible with /rewind even after subsequent Bash changes, real-world repository testing reveals nuances in how these operations interact. Understanding the precise boundaries between AI-agent file edit tools and standard terminal commands is critical for developers relying on history states for debugging. For those building with Claude Code, verifying rollback behavior after shell operations is essential to ensure that your development environment remains predictable and easily recoverable during automated coding sessions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-10-27T22:48:14.456Z"
-  },
-  {
     "id": "art-1793141285563-ge7cv",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -41505,33 +41590,6 @@
     "created_at": "2026-10-27T22:47:35.966Z"
   },
   {
-    "id": "art-1793141246608-ridyq",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/lirispp/n/n4c3432361932",
-    "published_at": "2026-10-27T22:41:09.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329204104/rectangle_large_type_2_06d0eb881e0bb65bb4fc40203f115229.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発のテスト自動化：Claude Codeを活用し、Windowsアプリ「Jotteo」の2,400個のテストと性能計測をほぼ全自動化する手法",
-    "summary_ja": "Windows向けノートアプリ「Jotteo」の開発において、Claude Codeを実機操作させることで2,400個のテストと性能計測をほぼ自動化した。 開発者は仕様策定と意思決定に集中し、AIに実機テストの反復作業を任せることで、リリースまでの期間を劇的に短縮している。 AI時代における個人の生産性は、コードを書く速度だけでなく、AIにどれだけの手動テストを代行させられるかで決まることを実証した事例である。",
-    "translations": {
-      "ja": {
-        "title": "個人開発のテスト自動化：Claude Codeを活用し、Windowsアプリ「Jotteo」の2,400個のテストと性能計測をほぼ全自動化する手法",
-        "summary": "Windows向けノートアプリ「Jotteo」の開発において、Claude Codeを実機操作させることで2,400個のテストと性能計測をほぼ自動化した。 開発者は仕様策定と意思決定に集中し、AIに実機テストの反復作業を任せることで、リリースまでの期間を劇的に短縮している。 AI時代における個人の生産性は、コードを書く速度だけでなく、AIにどれだけの手動テストを代行させられるかで決まることを実証した事例である。"
-      },
-      "en": {
-        "title": "Individual dev automates 2,400 Windows app tests using Claude Code, cutting manual labor for Jotteo v1.2",
-        "summary": "A solo developer behind the Windows note-taking app Jotteo successfully automated 2,400 individual tests and performance benchmarks by integrating Claude Code to directly operate a physical Windows machine. Rather than manually validating every update, the developer shifted to a role focused solely on defining product specifications and resolving high-level decision points, leaving the tedious task of test execution to the AI. This transition reduced the release cycle for v1.2 to just five days. The result proves that AI-augmented individual development is evolving past simple code generation; the real productivity gains now lie in offloading comprehensive physical device testing and quality assurance cycles to autonomous agents, allowing a single developer to maintain the velocity of a much larger team."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "アップデート"
-    ],
-    "created_at": "2026-10-27T22:47:26.608Z"
-  },
-  {
     "id": "art-1793141191155-d1jfy",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -41586,57 +41644,6 @@
       "音声"
     ],
     "created_at": "2026-10-27T22:46:22.207Z"
-  },
-  {
-    "id": "art-1793140381269-t9668",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/snoooo/n/nfcc4e6efef4f",
-    "published_at": "2026-10-27T22:29:40.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329318354/rectangle_large_type_2_6291f5756d4fcd0f1027ab2e1e81c205.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "UI実装の「一覧表示」に潜む5つの落とし穴：誤削除やスクロール位置リセットを防ぐためのAI活用デバッグと設計手法",
-    "summary_ja": "リスト表示機能では、項目削除時のインデックスのズレ、更新時のスクロール位置ロスト、重複読み込みといった問題が頻発する。 これらは状態管理と識別子の不一致が根本原因だ。 LLMを壁打ち相手に、キー設計の厳密化や仮想スクロールの適切な導入を設計段階で検証することが、バグを未然に防ぐ開発の定石となる。",
-    "translations": {
-      "ja": {
-        "title": "UI実装の「一覧表示」に潜む5つの落とし穴：誤削除やスクロール位置リセットを防ぐためのAI活用デバッグと設計手法",
-        "summary": "リスト表示機能では、項目削除時のインデックスのズレ、更新時のスクロール位置ロスト、重複読み込みといった問題が頻発する。 これらは状態管理と識別子の不一致が根本原因だ。 LLMを壁打ち相手に、キー設計の厳密化や仮想スクロールの適切な導入を設計段階で検証することが、バグを未然に防ぐ開発の定石となる。"
-      },
-      "en": {
-        "title": "Common UI Pitfalls in List Implementations: Preventing Indexing Bugs, Scroll Resets, and Duplicate Data with AI-Assisted Debugging",
-        "summary": "List-based interfaces frequently plague builders with subtle bugs like accidental deletions due to index shifts, scroll positions resetting on re-renders, and duplicate entries during lazy loading. These issues usually stem from inconsistent state management or unreliable unique identifiers in the data model. To prevent these regressions, developers should use LLMs as a sounding board to stress-test their list architecture against edge cases, such as rapid updates or large datasets. By verifying the strictness of keys and implementing robust virtualization early, you avoid the common trap of patching UI list glitches after they have already frustrated users. Proactive design review with AI helps enforce architectural integrity before a single line of logic is written."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-10-27T22:33:01.269Z"
-  },
-  {
-    "id": "art-1793140348547-hhafx",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/snoooo/n/nf49c90084e17",
-    "published_at": "2026-10-27T22:29:46.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329318424/rectangle_large_type_2_89ba05c830f241c425224dd630d40412.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "アプリ停止中のバックグラウンド処理失敗を防ぐ：iOS/Android制限の仕組みとAIを活用した堅牢な実装戦略",
-    "summary_ja": "「更新されない」というユーザーの苦情は、iOSやAndroidのOSによるバックグラウンド処理の強制終了が原因であることが多い。 バッテリー保護やリソース管理の観点から、OSはアプリがアクティブでない時の通信やファイル保存を厳しく制限している。 単に処理を投げるのではなく、Background Tasks APIの利用や通知による明示的なトリガー、進捗の可視化を組み合わせることが重要だ。",
-    "translations": {
-      "ja": {
-        "title": "アプリ停止中のバックグラウンド処理失敗を防ぐ：iOS/Android制限の仕組みとAIを活用した堅牢な実装戦略",
-        "summary": "「更新されない」というユーザーの苦情は、iOSやAndroidのOSによるバックグラウンド処理の強制終了が原因であることが多い。 バッテリー保護やリソース管理の観点から、OSはアプリがアクティブでない時の通信やファイル保存を厳しく制限している。 単に処理を投げるのではなく、Background Tasks APIの利用や通知による明示的なトリガー、進捗の可視化を組み合わせることが重要だ。"
-      },
-      "en": {
-        "title": "Solving mobile background processing failures: Understanding OS constraints for reliable iOS and Android background execution",
-        "summary": "User complaints regarding failed data refreshes or backups often stem from iOS and Android strictly throttling background processing to conserve battery life and system resources. Developers cannot assume processes will continue running indefinitely; the OS frequently suspends or kills tasks once an app is closed. Effective solutions require using official Background Tasks APIs, implementing push notifications to wake processes, and designing granular progress visualization to maintain user trust. Using AI to generate and debug error handling specifically for these OS-level constraints is now critical. For builders, the key lesson is moving away from continuous background assumptions and instead architecting your app’s state machine to handle aggressive OS-level interruption, re-queuing tasks efficiently whenever the user reopens the interface."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-27T22:32:28.547Z"
   },
   {
     "id": "art-1793140332433-9mb0d",
