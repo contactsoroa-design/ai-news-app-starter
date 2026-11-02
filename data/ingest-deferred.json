@@ -1,37 +1,5 @@
 [
   {
-    "url": "https://zenn.dev/modelflare_dev/articles/974adc39061d9c",
-    "source_id": "source-zenn",
-    "title": "LLM API の負荷テスト：誤解を招く結果を避けるための実践ガイド",
-    "pubDate": "2026-11-02T02:07:11.000Z",
-    "snippet": "この記事は Modelflare ブログ の英語記事を翻訳・再構成したものです。 本番運用のためのガイド：誤解を招かない LLM API の負荷テスト。決定的に再現できる成果物、失敗の境界、ロールアウト時のチェック、出典を明示した制約事項をまとめています。 まず判断基準を決める 誤解を招かない LLM API の負荷テストは、単発のコード変更ではなく、本番環境における明示的な契約です。トラフィックを移す前に、成功のシグナル、最終的な失敗状態、ロールバックの条件を定義してください。以下の成果物は、エビデンスと推測を切り分け、すべての試行がどこから来たのかを追跡できるようにします。 まず...",
-    "saved_at": "2026-11-02T09:45:07.897Z"
-  },
-  {
-    "url": "https://zenn.dev/harieshokunin/articles/claude-org-5h-failover",
-    "source_id": "source-zenn-indie",
-    "title": "Team の上限に当たっても止まらない。Claude Code を個人の Max へ自動で乗り換える CLI を作った",
-    "pubDate": "2026-11-02T01:56:43.000Z",
-    "snippet": "! 本記事は個人の運用記録です。複数 org の切替・トークン運用・ローカル proxy による認証ヘッダ差し替えは、各読者の環境・契約で利用規約に照らして自己責任で判断してください。本ツールは自分が所属する org の、自分のトークン同士の切替だけを扱い、他人のリクエストは中継しません。 TL;DR 会社の Team org と個人の Max org を併用していると、片方の上限で Claude Code が止まり、org の選び直しとセッションの引き継ぎが毎回発生する claude の代わりに claude-org proxy と打つだけで、上限（429）に当たった瞬間に同...",
-    "saved_at": "2026-11-02T09:45:07.897Z"
-  },
-  {
-    "url": "https://note.com/aiai_lab/n/ne630890652a9",
-    "source_id": "source-note-ai",
-    "title": "レースが終わっても順位は変わる。AI秘書が「確かめ方」を2回まちがえたF1の朝",
-    "pubDate": "2026-11-02T09:21:08.000Z",
-    "snippet": "AIのClaude（Claude Code）を「秘書」にして、個人開発とYouTubeを続けています。今日は月曜日。日本時間の朝にF1メキシコGPの決勝があり、秘書はレース後の動画を何本も作りました。その中で、 「確かめ方」を2回まちがえました 。どちらも、あとから気づいて直した話です。 失敗1：動画を出したあとで、レース結果が変わった 続きをみる",
-    "saved_at": "2026-11-02T09:45:07.896Z"
-  },
-  {
-    "url": "https://zenn.dev/ryuyanishino/articles/0e09a4de21d74587b081b2b444681364",
-    "source_id": "source-zenn",
-    "title": "CLAUDE.mdに「絶対」と書いても守られないとき：指示文に残すルールと、hook・denyルールで止めるルール",
-    "pubDate": "2026-11-02T02:40:22.000Z",
-    "snippet": "CLAUDE.mdに「.envは読まない」「migrationsフォルダは触らない」と書いても、それだけでファイルへのアクセスを禁止できるわけではありません。 「絶対に」「必ず」と文言を強める前に見直したいのが、ルールの置き場所です。Claude Codeでは、モデルへの指示と、ツール側で実行を制限する設定が分かれています。 この記事では、Claude Codeの公式文書をもとに、守らせたいルールを「指示文に残すもの」と「設定で強制するもの」に分ける目安と、強制にも効かない範囲があることを整理します。 ! ここで扱うのはClaude Codeの設定です。denyルールやhookの効く範囲...",
-    "saved_at": "2026-11-02T09:45:07.896Z"
-  },
-  {
     "url": "https://note.com/hajimetwi3/n/n0128ce621247",
     "source_id": "source-note-ai",
     "title": "OpenAIのAPI(GPT-Live)とSuno Speechで音声生成テスト",

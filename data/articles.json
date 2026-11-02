@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1793617339839-38ist",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ryuyanishino/articles/0e09a4de21d74587b081b2b444681364",
+    "published_at": "2026-11-02T02:40:22.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--yyPw70zy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:CLAUDE.md%25E3%2581%25AB%25E3%2580%258C%25E7%25B5%25B6%25E5%25AF%25BE%25E3%2580%258D%25E3%2581%25A8%25E6%259B%25B8%25E3%2581%2584%25E3%2581%25A6%25E3%2582%2582%25E5%25AE%2588%25E3%2582%2589%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E3%2581%25A8%25E3%2581%258D%25EF%25BC%259A%25E6%258C%2587%25E7%25A4%25BA%25E6%2596%2587%25E3%2581%25AB%25E6%25AE%258B%25E3%2581%2599%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25A8%25E3%2580%2581hook%25E3%2583%25BBdeny%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25A7%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryuya%2520Nishino%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhmOWQ1MjJhYmEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeで「絶対」を守らせるには？CLAUDE.md指示と強制設定の使い分けで防ぐ意図しないファイルアクセス",
+    "summary_ja": "Claude Codeにおいて、CLAUDE.mdへの記述だけで「.envやmigrationsフォルダへのアクセス禁止」を強制するのは困難である。 モデルの指示文（プロンプト）による制御と、システム側のdenyルールやhook設定による実行制御を明確に分ける必要があるからだ。 開発者は指示文でガイドラインを示すだけでなく、ツール側の設定で物理的にアクセスを遮断する強制力を持たせるべきだ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeで「絶対」を守らせるには？CLAUDE.md指示と強制設定の使い分けで防ぐ意図しないファイルアクセス",
+        "summary": "Claude Codeにおいて、CLAUDE.mdへの記述だけで「.envやmigrationsフォルダへのアクセス禁止」を強制するのは困難である。 モデルの指示文（プロンプト）による制御と、システム側のdenyルールやhook設定による実行制御を明確に分ける必要があるからだ。 開発者は指示文でガイドラインを示すだけでなく、ツール側の設定で物理的にアクセスを遮断する強制力を持たせるべきだ。"
+      },
+      "en": {
+        "title": "How to strictly enforce rules in Claude Code: separating LLM instructions from hard deny policies to prevent unauthorized file access",
+        "summary": "Using CLAUDE.md to strictly ban access to sensitive files like .env or migrations folders often fails because text-based instructions cannot inherently block execution. To secure your environment, developers must distinguish between soft guideline instructions for the model and hard, system-level deny rules or hook configurations within Claude Code. While prompt-based rules guide model behavior, they cannot override the tool’s underlying ability to read files; thus, critical access restrictions must be enforced through formal configuration files rather than just documentation. This guide breaks down the division of labor between instructions and hard constraints, showing builders how to implement robust policies that effectively lock down restricted directories against unintended agent modification and access."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-02T11:02:19.839Z"
+  },
+  {
+    "id": "art-1793617324130-glwlr",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/aiai_lab/n/ne630890652a9",
+    "published_at": "2026-11-02T09:21:08.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331360878/rectangle_large_type_2_80404fc2b68e0e7417a92f6d5baa8abb.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeを「AI秘書」として活用する個人開発者の誤算。F1速報動画生成で発生した2度のファクトチェックミスとその教訓",
+    "summary_ja": "個人開発でClaude CodeをAI秘書として活用する際、F1メキシコGPの速報動画生成で2度のファクトチェックミスが発生した。 公式順位の確定前や情報の二重確認を怠り、AIが提案したデータをそのまま採用したことが原因だ。 AIを「完全な秘書」と過信せず、最終的な真偽検証プロセスを人間が担保することの重要性を再認識させる事例である。 開発スピードを優先しても、検証フェーズは自動化の外に置くべきだ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを「AI秘書」として活用する個人開発者の誤算。F1速報動画生成で発生した2度のファクトチェックミスとその教訓",
+        "summary": "個人開発でClaude CodeをAI秘書として活用する際、F1メキシコGPの速報動画生成で2度のファクトチェックミスが発生した。 公式順位の確定前や情報の二重確認を怠り、AIが提案したデータをそのまま採用したことが原因だ。 AIを「完全な秘書」と過信せず、最終的な真偽検証プロセスを人間が担保することの重要性を再認識させる事例である。 開発スピードを優先しても、検証フェーズは自動化の外に置くべきだ。"
+      },
+      "en": {
+        "title": "Personal developer's lesson in Claude Code automation: Two failed fact-checks during F1 race report generation",
+        "summary": "A personal developer relying on Claude Code as an 'AI secretary' recently faced a reality check after the tool committed two major errors while generating F1 Mexico GP summary videos. The AI hallucinated race results because it didn't verify if final standings were official, demonstrating the danger of trusting LLM outputs without human oversight in fast-paced content workflows. This experience highlights that even as agents handle heavy lifting, the final validation layer must remain strictly manual to prevent spreading misinformation. For builders automating content production, the key takeaway is clear: efficiency gains from AI code agents cannot replace critical verification steps, especially when dealing with live, evolving data streams that can shift instantly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "動画"
+    ],
+    "created_at": "2026-11-02T11:02:04.130Z"
+  },
+  {
+    "id": "art-1793617314482-wlfna",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/harieshokunin/articles/claude-org-5h-failover",
+    "published_at": "2026-11-02T01:56:43.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FFxzlUiG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude2%25E3%2582%25A2%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%25E6%2594%25AF%25E6%2589%2595%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%258B%25E4%25BA%25BA%25E3%2581%258C%25E6%25A5%25BD%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2582%25B3%25E3%2583%259E%25E3%2583%25B3%25E3%2583%2589%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E8%25B2%25BC%25E3%2582%258A%25E7%25B5%25B5%25E8%2581%25B7%25E4%25BA%25BA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pmWmJmZWxybVEtLV84eDVjeFA4QklXc1dIdmhOZDFiWXNfd095b0E9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの利用上限回避術。Team/Max契約を動的に切り替えるCLIツール「claude-org-proxy」を開発・公開",
+    "summary_ja": "Claude Codeで「Team」プランの上限に達した際、手動での組織切り替えが煩雑なため、自動で「Max（個人）」アカウントへフォールバックするプロキシCLIを開発した。 このツールは429エラーを検知して認証情報を差し替える仕組みで、セッションの引き継ぎもスムーズに行える。 API制限を回避しながら開発フローを止めないためには、このように認証層を抽象化し、契約プランを動的にスイッチする工夫が実戦的な解となる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの利用上限回避術。Team/Max契約を動的に切り替えるCLIツール「claude-org-proxy」を開発・公開",
+        "summary": "Claude Codeで「Team」プランの上限に達した際、手動での組織切り替えが煩雑なため、自動で「Max（個人）」アカウントへフォールバックするプロキシCLIを開発した。 このツールは429エラーを検知して認証情報を差し替える仕組みで、セッションの引き継ぎもスムーズに行える。 API制限を回避しながら開発フローを止めないためには、このように認証層を抽象化し、契約プランを動的にスイッチする工夫が実戦的な解となる。"
+      },
+      "en": {
+        "title": "Developer builds CLI proxy to auto-switch between Claude Team and Pro plans to bypass rate limits",
+        "summary": "When hitting rate limits on Claude Team plans, manual org switching disrupts development flow. To solve this, a developer created a proxy CLI that automatically intercepts 429 errors and flips the session to a Claude Pro (Max) account without manual intervention. By handling authentication header swapping locally, the tool ensures continuous agent operation even when organizational token limits are exhausted. This approach demonstrates how developers can maintain productivity in multi-org environments by abstracting the authentication layer and implementing smart fallback logic. For builders relying on Claude Code, this serves as a robust pattern for avoiding workflow bottlenecks caused by rigid plan limits while navigating complex enterprise and personal subscription configurations safely."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-02T11:01:54.482Z"
+  },
+  {
+    "id": "art-1793617301845-dqqhs",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/modelflare_dev/articles/974adc39061d9c",
+    "published_at": "2026-11-02T02:07:11.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--WkQuqLuu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LLM%2520API%2520%25E3%2581%25AE%25E8%25B2%25A0%25E8%258D%25B7%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25EF%25BC%259A%25E8%25AA%25A4%25E8%25A7%25A3%25E3%2582%2592%25E6%258B%259B%25E3%2581%258F%25E7%25B5%2590%25E6%259E%259C%25E3%2582%2592%25E9%2581%25BF%25E3%2581%2591%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25E5%25AE%259F%25E8%25B7%25B5%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ModelFlare%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UxZTFmMzM5OTEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Modelflare%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvbS5wbmc=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "LLM APIの負荷テスト実践ガイド：本番運用で誤解を招かないための成功基準とロールアウト戦略を徹底解説",
+    "summary_ja": "LLM APIの本番運用のための負荷テストは、単発的な調整ではなく明確な契約として設計すべきです。 トラフィック移行前に成功シグナルと失敗の境界条件を定義し、再現可能な成果物を作成することで、推測とエビデンスを厳格に分離します。 開発者は本番投入時のロールバック条件や制約事項を明示することで、AIサービスの信頼性を担保できます。 単なるコード変更の検証に留まらず、運用の安全性を高めるための実戦的なテスト設計手法を習得しましょう。",
+    "translations": {
+      "ja": {
+        "title": "LLM APIの負荷テスト実践ガイド：本番運用で誤解を招かないための成功基準とロールアウト戦略を徹底解説",
+        "summary": "LLM APIの本番運用のための負荷テストは、単発的な調整ではなく明確な契約として設計すべきです。 トラフィック移行前に成功シグナルと失敗の境界条件を定義し、再現可能な成果物を作成することで、推測とエビデンスを厳格に分離します。 開発者は本番投入時のロールバック条件や制約事項を明示することで、AIサービスの信頼性を担保できます。 単なるコード変更の検証に留まらず、運用の安全性を高めるための実戦的なテスト設計手法を習得しましょう。"
+      },
+      "en": {
+        "title": "A Practical Guide to LLM API Load Testing: Setting Success Criteria and Rollout Strategies for Production Reliability",
+        "summary": "Load testing LLM APIs for production environments should be treated as a definitive contract rather than just checking code performance. Before shifting traffic, you must explicitly define success signals, clear failure boundaries, and rollback conditions to ensure reliability. By creating reproducible artifacts, teams can effectively separate speculative assumptions from hard evidence, ensuring every test run is traceable. The guide emphasizes that robust AI services require established constraints before deployment, moving beyond simple latency checks. For developers, the practical takeaway is that rigorous pre-deployment planning—specifically defining where a system fails under load—is the most reliable way to prevent production outages. Treat your load test suite as a living document that enforces strict operational safety for every API rollout."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-02T11:01:41.845Z"
+  },
+  {
     "id": "art-1793616423694-bf4yk",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -53150,110 +53254,5 @@
       "アップデート"
     ],
     "created_at": "2026-10-25T08:22:36.533Z"
-  },
-  {
-    "id": "art-1792914706822-zj2vd",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/yutakacraft/articles/a7f208fc206874",
-    "published_at": "2026-10-25T02:58:26.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FjBtuWxm--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AB%25B6%25E8%25BC%25AA%25E3%2581%25AE%25E3%2580%258C%25E4%25B8%25A6%25E3%2581%25B3%25E3%2580%258D%25E3%2582%2592%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%2520%25E2%2594%2580%25E2%2594%2580%2520%25E5%2585%2588%25E9%25A0%25AD%25E3%2583%25BB%25E7%2595%25AA%25E6%2589%258B%25E3%2583%25BB3%2520%25E7%2595%25AA%25E6%2589%258B%25E3%2581%25AB%25E5%2588%2586%25E3%2581%2591%25E3%2581%25A6%25E6%258C%2581%25E3%2581%25A4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yutakacraft%2Cx_90%2Cy_121/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "競輪予想アプリ開発：選手たちの「ライン」を構造化データに変換し、分析可能な形式へ落とし込むための設計手法",
-    "summary_ja": "競輪固有の戦略である「ライン（複数の選手による縦の隊列）」を予想アプリで扱うため、文字情報として提供される並びを、先頭・番手・3番手といった位置情報を持つ構造化データへと変換する手法を解説する。 単に文字列をパースするのではなく、ラインを区切り記号で分割し、選手ごとの役割をインデックス化することで、データ分析や勝率予測が可能な形へ正規化する設計上のポイントを詳述する。 個人開発において特有のドメイン知識をDB設計に落とし込む際のヒントとなる。",
-    "translations": {
-      "ja": {
-        "title": "競輪予想アプリ開発：選手たちの「ライン」を構造化データに変換し、分析可能な形式へ落とし込むための設計手法",
-        "summary": "競輪固有の戦略である「ライン（複数の選手による縦の隊列）」を予想アプリで扱うため、文字情報として提供される並びを、先頭・番手・3番手といった位置情報を持つ構造化データへと変換する手法を解説する。 単に文字列をパースするのではなく、ラインを区切り記号で分割し、選手ごとの役割をインデックス化することで、データ分析や勝率予測が可能な形へ正規化する設計上のポイントを詳述する。 個人開発において特有のドメイン知識をDB設計に落とし込む際のヒントとなる。"
-      },
-      "en": {
-        "title": "Modeling Keirin strategy: Architecting structured data pipelines to convert unstructured cycling 'Line' formations for betting analysis",
-        "summary": "Building a Keirin prediction app requires transforming the unique strategic formation known as a 'Line'—where cyclists draft in columns—from unstructured text into structured, analyzable database records. The author details a design approach that segments these text strings by specific delimiters, mapping each rider into distinct roles such as the leader (sensu), the second (bante), and the third position. Instead of relying on raw string parsing, this method normalizes player roles into indexed data points, enabling sophisticated win-rate modeling and predictive analytics. For solo developers, this breakdown serves as a practical blueprint for embedding domain-specific sports logic into relational database architectures, turning complex, legacy human-readable event formats into scalable, queryable intelligence."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-25T07:51:46.822Z"
-  },
-  {
-    "id": "art-1792894768396-e6f1k",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/24/news006.html",
-    "published_at": "2026-10-23T23:15:00.000Z",
-    "og_image_url": "https://image.itmedia.co.jp/ait/articles/2610/24/cover_news006.jpg",
-    "title_ja": "Gartner予測：2028年までに企業AIの7割が放棄される？「FDE」の正体は深刻なベンダーロックイン問題である",
-    "summary_ja": "Gartnerは、現場配備エンジニアリング（FDE）を活用した企業向けエージェントAIの7割が、2028年までに放棄されるとの予測を発表した。 実態は技術革新ではなく、特定のベンダーに依存しすぎる「ラベルを貼り替えただけのロックイン」である可能性が高い。 内製化やポータブルなアーキテクチャの構築を軽視し、即効性のみを求めてベンダー主導のブラックボックスなAI導入を進めることは、長期的には技術的負債を増大させ、コスト効率を悪化させるリスクがある。",
-    "translations": {
-      "ja": {
-        "title": "Gartner予測：2028年までに企業AIの7割が放棄される？「FDE」の正体は深刻なベンダーロックイン問題である",
-        "summary": "Gartnerは、現場配備エンジニアリング（FDE）を活用した企業向けエージェントAIの7割が、2028年までに放棄されるとの予測を発表した。 実態は技術革新ではなく、特定のベンダーに依存しすぎる「ラベルを貼り替えただけのロックイン」である可能性が高い。 内製化やポータブルなアーキテクチャの構築を軽視し、即効性のみを求めてベンダー主導のブラックボックスなAI導入を進めることは、長期的には技術的負債を増大させ、コスト効率を悪化させるリスクがある。"
-      },
-      "en": {
-        "title": "Gartner predicts 70% of enterprise AI agents built via FDE will be abandoned by 2028 due to lock-in",
-        "summary": "Gartner predicts that 70% of enterprise AI agents utilizing Forward Deployed Engineering (FDE) will be abandoned by 2028. The core issue is that many of these deployments are not true architectural innovations but rather rebranded vendor lock-in masquerading as specialized solutions. Companies sacrificing long-term portability for short-term ease are effectively ceding control of their data and operational logic to proprietary black-box systems. For builders and enterprise architects, the takeaway is clear: over-reliance on external vendor-driven AI layers creates catastrophic technical debt that eventually cripples scalability. Instead of chasing vendor-provided turnkey AI agents that trap you in walled gardens, engineering teams must prioritize decoupled, portable architectures that allow swapping underlying LLM providers without tearing down the entire infrastructure."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-10-25T02:19:28.396Z"
-  },
-  {
-    "id": "art-1792894757051-5vos3",
-    "source_id": "source-simonwillison",
-    "source_name": "Simon Willison's Weblog",
-    "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
-    "published_at": "2026-10-24T03:59:57.000Z",
-    "og_image_url": "https://raw.githubusercontent.com/simonw/battledrones/v14/progress-shots/v14/compass-rose.jpg",
-    "title_ja": "Battledrones v14が4人対戦に対応、Claude Opus 3.5で生成したマップ「Compass Rose」とWebSocketの同期コード刷新",
-    "summary_ja": "Battledronesはオンライン対戦機能をアップデートし、従来の2人制限から最大4人の同時プレイに対応した。 新マップ「Compass Rose」の生成やWebSocketを用いた同期通信コードの修正にはClaude Opus 3.5を活用しており、4方向の回転対称レイアウトとAIによる自動補完機能を実現している。 今回のアップデートにより、共有リンクやQRコードを通じて最大4名の人間が参加し、枠が余ればAIが埋めるマルチプレイヤー体験が可能となった。",
-    "translations": {
-      "ja": {
-        "title": "Battledrones v14が4人対戦に対応、Claude Opus 3.5で生成したマップ「Compass Rose」とWebSocketの同期コード刷新",
-        "summary": "Battledronesはオンライン対戦機能をアップデートし、従来の2人制限から最大4人の同時プレイに対応した。 新マップ「Compass Rose」の生成やWebSocketを用いた同期通信コードの修正にはClaude Opus 3.5を活用しており、4方向の回転対称レイアウトとAIによる自動補完機能を実現している。 今回のアップデートにより、共有リンクやQRコードを通じて最大4名の人間が参加し、枠が余ればAIが埋めるマルチプレイヤー体験が可能となった。"
-      },
-      "en": {
-        "title": "Battledrones v14 adds four-player online support, using Claude Opus 3.5 for map generation and WebSocket syncing",
-        "summary": "Battledrones has expanded its online multiplayer capabilities, moving from the previous two-player limit to full support for up to four simultaneous combatants. The developer utilized Claude Opus 3.5 to engineer the new 'Compass Rose' map, which features four-way rotational symmetry, while simultaneously refactoring the WebSocket networking stack to handle the expanded player state. This update enables human players to join via share links or QR codes, with AI entities filling any empty slots to maintain a full lobby. By offloading complex networking logic and procedural level design to an LLM, the project demonstrates how solo builders can rapidly scale multiplayer infrastructure and content complexity, turning local prototypes into scalable web-based battle arenas without heavy manual backend heavy-lifting."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-25T02:19:17.051Z"
-  },
-  {
-    "id": "art-1792894740226-4uu78",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/sideos-ai",
-    "published_at": "2026-10-23T13:28:40.000Z",
-    "og_image_url": "https://ph-files.imgix.net/1d888193-9ca3-4526-ba0e-e77d2d81f9ba.png?auto=format&fit=crop&frame=1&h=512&w=1024",
-    "title_ja": "ローカルLLM活用でプライバシーを守る「sideOS.ai」が登場、会議の文字起こしやバックグラウンドタスクを全てデバイス内で完結",
-    "summary_ja": "「sideOS.ai」は、ローカルLLMを基盤として会議の文字起こしや背景での自動タスク処理を実現するAIツールだ。 クラウドへのデータ転送を一切行わず、完全にデバイス内で完結させる設計により、セキュリティとプライバシーを最大化している。 API連携に依存しないローカルAIの活用は、機密性の高いビジネスデータや個人情報を扱うアプリ開発者にとって、信頼性とUXを両立させる新たなスタンダードとなるだろう。",
-    "translations": {
-      "ja": {
-        "title": "ローカルLLM活用でプライバシーを守る「sideOS.ai」が登場、会議の文字起こしやバックグラウンドタスクを全てデバイス内で完結",
-        "summary": "「sideOS.ai」は、ローカルLLMを基盤として会議の文字起こしや背景での自動タスク処理を実現するAIツールだ。 クラウドへのデータ転送を一切行わず、完全にデバイス内で完結させる設計により、セキュリティとプライバシーを最大化している。 API連携に依存しないローカルAIの活用は、機密性の高いビジネスデータや個人情報を扱うアプリ開発者にとって、信頼性とUXを両立させる新たなスタンダードとなるだろう。"
-      },
-      "en": {
-        "title": "sideOS.ai launches as a local-first AI agent for secure meeting dictation, task automation, and background processing",
-        "summary": "sideOS.ai introduces a local-first AI agent designed to handle intensive workflows like meeting dictation and background task automation without leaking sensitive data to cloud servers. By running large language models entirely on-device, the platform eliminates the risks associated with third-party API dependencies, offering a hardened environment for handling confidential information. For builders and developers, sideOS demonstrates a viable pathway toward building privacy-centric AI tools that satisfy enterprise-grade security requirements while maintaining snappy, real-time performance. This shift toward edge-based processing proves that developers no longer have to sacrifice data sovereignty to deliver sophisticated automation, suggesting that local-first architecture is becoming an essential design pattern for future-proof business applications that prioritize user trust and high performance in sensitive contexts."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-25T02:19:00.226Z"
   }
 ]
