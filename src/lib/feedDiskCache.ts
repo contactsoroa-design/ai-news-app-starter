@@ -20,7 +20,8 @@ export type FeedDiskCache = {
   articles: Article[];
 };
 
-const FILE_NAME = 'feed-cache-v1.json';
+/** v2: 一括 trim 事故後の 1238 件キャッシュを捨て、復元済み 2000 件を取り直す */
+const FILE_NAME = 'feed-cache-v2.json';
 
 function cacheFileUri(): string | null {
   const base = cacheDirectory ?? documentDirectory;
