@@ -445,11 +445,25 @@ function slugifyHeading(title: string): string {
 }
 
 /** docs.x.ai 等の「## Month / ### Entry」形式リリースノート Markdown を RawFeedItem へ。 */
+function markdownReleaseNotesBaseUrl(pageUrl: string): string {
+  return pageUrl
+    .replace(/\.md\.txt$/i, '')
+    .replace(/\.md$/i, '')
+    .replace(/\/+$/, '');
+}
+
+/**
+ * Markdown リリースノート。
+ * - xAI 型: `## Month` + `### Title`
+ * - Gemini API 型: `## Month Day, Year` + 箇条書き（日付ごと1件）
+ */
 function parseMarkdownReleaseNotes(
   md: string,
-  pageUrl: string
+  pageUrl: string,
+  titlePrefix?: string
 ): RawFeedItem[] {
-  const base = pageUrl.replace(/\.md$/i, '').replace(/\/+$/, '');
+  const base = markdownReleaseNotesBaseUrl(pageUrl);
+  const prefix = (titlePrefix || 'Release Notes').trim();
   const now = new Date();
   const items: RawFeedItem[] = [];
   let monthIndex: number | null = null;
@@ -458,6 +472,47 @@ function parseMarkdownReleaseNotes(
 
   const lines = md.split(/\r?\n/);
   for (let i = 0; i < lines.length; i++) {
+    // Gemini API changelog など: ## October 30, 2026
+    const datedMatch = lines[i].match(
+      /^##\s+((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2})\s*$/i
+    );
+    if (datedMatch) {
+      const dateLabel = datedMatch[1];
+      const pubDate = parseEnglishMonthDayYear(dateLabel);
+      const bodyLines: string[] = [];
+      i += 1;
+      while (i < lines.length && !/^##\s/.test(lines[i])) {
+        const t = lines[i].trim();
+        if (t) bodyLines.push(t);
+        i += 1;
+      }
+      i -= 1;
+      const bodyJoined = bodyLines.join('\n');
+      const bodyText = bodyJoined
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/\*\*/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+      if (!bodyText) continue;
+      const boldTitle = bodyJoined.match(/[-*]\s+\*\*([^*]+)\*\*/);
+      const firstBullet = boldTitle
+        ? boldTitle[1].replace(/\s+/g, ' ').trim()
+        : bodyText;
+      const summary =
+        firstBullet.length > 110
+          ? `${firstBullet.slice(0, 107).trim()}…`
+          : firstBullet;
+      const slug = slugifyHeading(dateLabel);
+      items.push({
+        title: `${prefix}: ${summary}`,
+        link: `${base}#${slug}`,
+        pubDate,
+        snippet: bodyText.slice(0, 900),
+      });
+      monthIndex = null;
+      continue;
+    }
+
     const monthMatch = lines[i].match(/^##\s+([A-Za-z]+)\s*$/);
     if (monthMatch) {
       const idx = ENGLISH_MONTH_INDEX[monthMatch[1].toLowerCase()];
@@ -498,7 +553,7 @@ function parseMarkdownReleaseNotes(
     ).toISOString();
     const slug = `${monthName}-${slugifyHeading(title)}`;
     items.push({
-      title: `xAI Release Notes: ${title}`,
+      title: `${prefix}: ${title}`,
       link: `${base}#${slug}`,
       pubDate,
       snippet: snippetParts.join(' ').slice(0, 900),
@@ -508,7 +563,12 @@ function parseMarkdownReleaseNotes(
 }
 
 function looksLikeMarkdownReleaseNotes(text: string, feedUrl: string): boolean {
-  if (/\.md(\?|$)/i.test(feedUrl)) return true;
+  if (/\.md(\.txt)?(\?|$)/i.test(feedUrl)) return true;
+  const hasDatedSections =
+    /^##\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}\s*$/m.test(
+      text
+    );
+  if (hasDatedSections && /^[-*]\s+\*\*/m.test(text)) return true;
   return (
     /^#{1,4}\s*Release Notes/m.test(text) &&
     /^##\s+[A-Za-z]+\s*$/m.test(text) &&
@@ -911,7 +971,10 @@ const SOURCE_PRIMARY_TOOL: Record<string, string> = {
   'source-openai-changelog': 'ChatGPT',
   'source-anthropic': 'Claude',
   'source-claude-release': 'Claude',
+  'source-claude-platform': 'Claude',
   'source-deepmind': 'Gemini',
+  'source-gemini-changelog': 'Gemini',
+  'source-google-ai-blog': 'Gemini',
   'source-xai': 'Grok',
   'source-perplexity': 'Perplexity',
   'source-mistral': 'Mistral',
@@ -1670,11 +1733,13 @@ async function main() {
           }
           if (looksLikeMarkdownReleaseNotes(fetched.text, source.feed_url)) {
             const pageUrl =
-              source.site_url || source.feed_url.replace(/\.md$/i, '');
-            feedItems = parseMarkdownReleaseNotes(fetched.text, pageUrl).slice(
-              0,
-              RSS_ITEMS_PER_SOURCE
-            );
+              source.site_url ||
+              markdownReleaseNotesBaseUrl(source.feed_url);
+            feedItems = parseMarkdownReleaseNotes(
+              fetched.text,
+              pageUrl,
+              source.name
+            ).slice(0, RSS_ITEMS_PER_SOURCE);
             if (feedItems.length > 0) {
               console.warn(
                 `  ~ Markdownリリースノートとして取得: [${source.name}] ${feedItems.length}件`
