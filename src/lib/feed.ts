@@ -880,7 +880,10 @@ function sourceKey(article: Article): string {
 }
 
 /**
- * 上限超過を1件だけ解消する。優先: ソース上限オーバーの最古 → 全体上限時は一番太いソースの最古。
+ * 押し出し1件。優先:
+ * 1. ソース上限以上（>=100）を持つソースの最古（本数がいちばん多いソースから）
+ *    → 100未満のソースが増えるときも、100以上のソースから先に枠を空ける（合計のじわ増を防ぐ）
+ * 2. どちらも上限未満で全体だけ溢れているとき → 一番太いソースの最古
  * 返せたら true。
  */
 function evictOneOverCap(
@@ -888,17 +891,16 @@ function evictOneOverCap(
   perSourceCap: number,
   maxTotal: number
 ): boolean {
-  let overKey: string | null = null;
-  let overAmount = 0;
+  let atOrOverKey: string | null = null;
+  let atOrOverCount = 0;
   for (const [key, list] of buckets) {
-    const excess = list.length - perSourceCap;
-    if (excess > overAmount) {
-      overAmount = excess;
-      overKey = key;
+    if (list.length >= perSourceCap && list.length > atOrOverCount) {
+      atOrOverCount = list.length;
+      atOrOverKey = key;
     }
   }
-  if (overKey && overAmount > 0) {
-    buckets.get(overKey)!.pop();
+  if (atOrOverKey) {
+    buckets.get(atOrOverKey)!.pop();
     return true;
   }
 
@@ -937,8 +939,8 @@ function evictOneOverCap(
 /**
  * フィード在庫の整理:
  * 1. 直近 retentionDays 以外を外す（期間切れは一括で可）
- * 2. ソース上限・全体上限の超過は、maxEvictions 件までだけ最古から押し出す
- *    （新規1件に対し最大1件。一括で100/2000まで削らない）
+ * 2. maxEvictions 件まで押し出し（新規1件につき最大1件。一括削減しない）
+ *    100件以上のソースがいれば、100未満の新規でもそちらから先に最古を落とす
  * 3. ツール最低件数・ソース最低1件の保護
  *
  * @param maxEvictions 上限押し出しの最大回数。ingest は新規件数を渡す。0 なら期間切れのみ。
