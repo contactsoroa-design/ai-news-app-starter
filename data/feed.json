@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1793598421937-2cttr",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2610.40883",
+    "published_at": "2026-11-02T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "音声対話LLMの感情認識精度低下の原因を解明、発話内容と音調の「不一致度」が誤認識を誘発する仕組みを特定",
+    "summary_ja": "音声対話型LLMは言葉の意味と音調を処理するが、両者の不一致が感情認識の精度を低下させる。 本研究では、テキストと音声から「価・覚醒・支配度」空間を構築し、ガウス混合モデルを用いて不一致度を数値化。 eNTERFACE'05等のデータセットで検証した結果、内容と音調の乖離が大きいほど、モデルの感情推論エラーが増加することが判明した。 開発者は単なるマルチモーダル統合ではなく、発話チャネル間の矛盾検知をアーキテクチャに組み込む必要がある。",
+    "translations": {
+      "ja": {
+        "title": "音声対話LLMの感情認識精度低下の原因を解明、発話内容と音調の「不一致度」が誤認識を誘発する仕組みを特定",
+        "summary": "音声対話型LLMは言葉の意味と音調を処理するが、両者の不一致が感情認識の精度を低下させる。 本研究では、テキストと音声から「価・覚醒・支配度」空間を構築し、ガウス混合モデルを用いて不一致度を数値化。 eNTERFACE'05等のデータセットで検証した結果、内容と音調の乖離が大きいほど、モデルの感情推論エラーが増加することが判明した。 開発者は単なるマルチモーダル統合ではなく、発話チャネル間の矛盾検知をアーキテクチャに組み込む必要がある。"
+      },
+      "en": {
+        "title": "New study reveals how modal incongruence between speech content and tone degrades emotion recognition in audio-capable LLMs",
+        "summary": "Researchers have identified a critical failure point in audio-interactive LLMs: when the semantic content and acoustic prosody do not align, emotion recognition accuracy suffers. By mapping text and audio into a shared valence-arousal-dominance space, the team developed a continuous incongruence score using a two-component Gaussian mixture model. Evaluations across datasets like MELD and CMU-MOSEI confirm that higher incongruence levels directly correlate with increased inference errors in multimodal emotion tasks. The core takeaway for AI builders is that simple fusion architectures are insufficient for sophisticated speech tasks. To improve reliability in agentic voice interfaces, developers must implement mechanisms that explicitly detect and reconcile contradictions between verbal and non-verbal channels, rather than relying solely on naive multimodal input integration."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-02T05:47:01.937Z"
+  },
+  {
+    "id": "art-1793598415433-nlxjg",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/hanahana157cm/n/nc42b7837c9d3",
+    "published_at": "2026-11-02T05:46:06.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331284760/rectangle_large_type_2_0835d10a8151b31e39cf639cf90d88ee.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI開発アプリで発生した「検索に8分かかる」致命的ボトルネックの改善記録――非効率なSQLクエリとデータ処理の見直しで実現した高速化の実践手法",
+    "summary_ja": "AIで構築したアプリで検索処理が完了するまでに8分も要するという致命的なパフォーマンス問題に直面した開発者が、その原因特定と改善のプロセスを公開した。 ボトルネックは非効率なSQLクエリと冗長なデータ処理にあり、クエリの最適化やインデックス設計、処理フローの抜本的な見直しによって、数分レベルの遅延を劇的に短縮した。 AIによるコーディングは爆速だが、アルゴリズムやデータベースの最適化は依然として開発者の深い理解と調整が不可欠であるという教訓が示されている。",
+    "translations": {
+      "ja": {
+        "title": "AI開発アプリで発生した「検索に8分かかる」致命的ボトルネックの改善記録――非効率なSQLクエリとデータ処理の見直しで実現した高速化の実践手法",
+        "summary": "AIで構築したアプリで検索処理が完了するまでに8分も要するという致命的なパフォーマンス問題に直面した開発者が、その原因特定と改善のプロセスを公開した。 ボトルネックは非効率なSQLクエリと冗長なデータ処理にあり、クエリの最適化やインデックス設計、処理フローの抜本的な見直しによって、数分レベルの遅延を劇的に短縮した。 AIによるコーディングは爆速だが、アルゴリズムやデータベースの最適化は依然として開発者の深い理解と調整が不可欠であるという教訓が示されている。"
+      },
+      "en": {
+        "title": "Fixing an 8-Minute Search Bottleneck in an AI-Built App: Optimizing SQL Queries and Data Processing for Scalable Performance",
+        "summary": "A solo developer building an application using AI encountered a catastrophic performance bottleneck where search requests took eight minutes to complete, rendering the feature unusable. This case study details the investigation process, revealing that the primary culprits were inefficient SQL queries and poorly structured data processing logic that AI models had generated. By manually refactoring the database schemas, refining indexes, and rewriting the query execution flow, the developer successfully reduced search times from minutes to milliseconds. The takeaway is that while AI accelerates initial feature scaffolding, it often fails to implement optimized, scalable backend logic. Developers must remain deeply involved in database design and performance tuning to bridge the gap between functional prototypes and truly performant production software."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-02T05:46:55.433Z"
+  },
+  {
+    "id": "art-1793598398329-f4qb6",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/like-mountain/items/e110f0ca62c2dccc39c2",
+    "published_at": "2026-11-02T05:37:53.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzODgxMDE5JTJGYjUwYjc2NDE2NmZjMTk2MDljZmY3ZTVhZGZjZjY1MzUwZmQ5ZWExNCUyRmxhcmdlLnBuZyUzRjE3MjU3ODgzODM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWRlNTFjMDkwNjFjZjNmODIwYzdlZGY3ODAwYTZiZGQ3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D179ba3454836443f2e3120b9e7519aaa?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJThDUWlpdGElMjBDb25mZXJlbmNlJTIwMjAyNiUyMEF1dHVtbiVFMyU4MCU4RCVFMyU4MiVBMiVFMyU4MyU5NSVFMyU4MiVCRiVFMyU4MyVCQyVFMyU4MiVBNCVFMyU4MyU5OSVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MSVBQiVFNSU4RiU4MiVFNSU4QSVBMCVFMyU4MSU5NyVFMyU4MSVCRSVFMyU4MSU5NyVFMyU4MSU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTAyNjJkNjIwOWVhMTAxMjkyMGMzODM5ZGFjODhhMDA1&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsaWtlLW1vdW50YWluJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9OTA2M2Q3OTIyNzNkZDk5ZDgzNGY5NWFlODdmOWYwZTc&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=aa5d1841d3f8038d4cda66294b158468",
+    "title_ja": "Qiita Conference 2026 Autumnアフターイベント詳報：ミノ駆動氏の基調講演から開発者コミュニティの未来を紐解く",
+    "summary_ja": "Qiita Conference 2026 Autumnのアフターイベントが開催され、ミノ駆動氏による基調講演や、こにふぁー氏、みのるん氏らが登壇したパネルディスカッションを通じて、最新の開発トレンドと技術者コミュニティの現状が共有された。 登壇者らの知見は、属人化を防ぐ設計思想やチーム開発の在り方を再考する良い機会となった。 個人開発者やチームリーダーにとって、設計のベストプラクティスを言語化する重要性を改めて認識する貴重な知見となっている。",
+    "translations": {
+      "ja": {
+        "title": "Qiita Conference 2026 Autumnアフターイベント詳報：ミノ駆動氏の基調講演から開発者コミュニティの未来を紐解く",
+        "summary": "Qiita Conference 2026 Autumnのアフターイベントが開催され、ミノ駆動氏による基調講演や、こにふぁー氏、みのるん氏らが登壇したパネルディスカッションを通じて、最新の開発トレンドと技術者コミュニティの現状が共有された。 登壇者らの知見は、属人化を防ぐ設計思想やチーム開発の在り方を再考する良い機会となった。 個人開発者やチームリーダーにとって、設計のベストプラクティスを言語化する重要性を改めて認識する貴重な知見となっている。"
+      },
+      "en": {
+        "title": "Recapping Qiita Conference 2026 Autumn: Insights from Mino-D the Keynote and Developer Community Panel Discussions",
+        "summary": "The Qiita Conference 2026 Autumn after-event brought together industry leaders including Mino-D, Conifer, and Minorun to dissect the current state of software engineering and developer culture. Through the keynote and panel discussions, attendees gained practical insights into architecture patterns that prevent knowledge silos and strategies for building more effective, scalable engineering teams. For individual developers and team leads, the event emphasized the critical necessity of articulating design principles rather than relying on tribal knowledge. The takeaway for builders is clear: technical excellence in modern development is increasingly tied to how well teams document their decision-making processes and foster open communication standards to support long-term maintainability across distributed systems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-02T05:46:38.329Z"
+  },
+  {
+    "id": "art-1793598391743-oqpkx",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/zundokobaum/articles/2026-11-02_pointer_dictionary_mcp_architecture",
+    "published_at": "2026-11-02T05:29:36.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--0cjK5JW5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25BC%25E3%2581%258F%25E3%2581%25AE%25E3%2581%258B%25E3%2582%2593%25E3%2581%258C%25E3%2581%2588%25E3%2581%259F%25E3%2581%2595%25E3%2581%2584%25E3%2581%258D%25E3%2582%2587%25E3%2581%2586%25E3%2581%25AEAI%25C3%2597%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2580%2590%25E7%25AC%25AC2%25E5%25BC%25BE%25EF%25BC%259A%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E8%2582%25A5%25E5%25A4%25A7%25E5%258C%2596%25E3%2581%25A8%25E8%25BE%259E%25E6%259B%25B8MCP%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B0%25E3%2581%2582%25E3%2582%2580%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2M5NWMyZGRmMzkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発のAI環境を最適化する「辞書MCP」の設計手法：プロンプト肥大化を防ぎ、指示書の保守性を高める戦略",
+    "summary_ja": "AI開発において増大し続けるプロンプトや指示ファイルの肥大化を解決するため、特定のコンテキストをモジュール化した「辞書MCP」の活用法を紹介する。 HubとSpokeの構成において、共通の指示書や定義をMCPとして切り出すことで、各プロダクトの実装効率と保守性を劇的に向上させる手法を解説。 プロンプト管理に悩む開発者が、複雑なAI開発環境を整然と整理し、手戻りを防ぐための実践的な知見を提示する。",
+    "translations": {
+      "ja": {
+        "title": "個人開発のAI環境を最適化する「辞書MCP」の設計手法：プロンプト肥大化を防ぎ、指示書の保守性を高める戦略",
+        "summary": "AI開発において増大し続けるプロンプトや指示ファイルの肥大化を解決するため、特定のコンテキストをモジュール化した「辞書MCP」の活用法を紹介する。 HubとSpokeの構成において、共通の指示書や定義をMCPとして切り出すことで、各プロダクトの実装効率と保守性を劇的に向上させる手法を解説。 プロンプト管理に悩む開発者が、複雑なAI開発環境を整然と整理し、手戻りを防ぐための実践的な知見を提示する。"
+      },
+      "en": {
+        "title": "Managing AI Prompt Bloat in Solo Dev with Dictionary MCPs: A Modular Approach to Context Management",
+        "summary": "As AI-driven development scales, instructions like GEMINI.md or CLAUDE.md often become bloated and unmanageable. This article proposes a solution using 'Dictionary MCPs' to modularize shared context in a Hub-and-Spoke architecture. By abstracting core definitions and logic into standalone Model Context Protocol servers, developers can significantly reduce prompt maintenance overhead while ensuring consistency across multiple products. This decoupling strategy allows solo builders to keep instruction sets clean, searchable, and versionable rather than fighting monolithic prompt files. It serves as a practical guide for engineers looking to structure their AI development environments to prevent technical debt and streamline rapid, multi-product iteration without losing control over their evolving system constraints."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-02T05:46:31.743Z"
+  },
+  {
     "id": "art-1793597507653-a6huu",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
