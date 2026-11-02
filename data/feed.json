@@ -1,5 +1,113 @@
 [
   {
+    "id": "art-1793583175506-0xxv0",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://avartha.ai/blog/introducing-avartha/",
+    "published_at": "2026-11-01T22:28:27.000Z",
+    "og_image_url": "https://avartha.ai/assets/shared/brand/avartha-link-preview.jpg",
+    "title_ja": "オープンソース音声AI「Avartha」公開：OpenAIやGoogleを上回る推論速度を実現した最速モデルの実力とは",
+    "summary_ja": "Avarthaは、OpenAIやGoogle、xAIのモデルを凌駕する推論速度を誇る、最速クラスのオープンウェイト音声AIモデルだ。 本モデルは、リアルタイム対話におけるレイテンシを極限まで削減しており、高精度かつ低遅延な音声生成を実現している。 音声AIのボトルネックである推論時間を大幅に短縮したことで、ボイスチャットやリアルタイム翻訳アプリの開発において、ユーザー体験を飛躍的に向上させる新たな選択肢となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "オープンソース音声AI「Avartha」公開：OpenAIやGoogleを上回る推論速度を実現した最速モデルの実力とは",
+        "summary": "Avarthaは、OpenAIやGoogle、xAIのモデルを凌駕する推論速度を誇る、最速クラスのオープンウェイト音声AIモデルだ。 本モデルは、リアルタイム対話におけるレイテンシを極限まで削減しており、高精度かつ低遅延な音声生成を実現している。 音声AIのボトルネックである推論時間を大幅に短縮したことで、ボイスチャットやリアルタイム翻訳アプリの開発において、ユーザー体験を飛躍的に向上させる新たな選択肢となるだろう。"
+      },
+      "en": {
+        "title": "Avartha unveils fastest open-weight voice AI, outperforming OpenAI, Google, and xAI in raw inference speed",
+        "summary": "Avartha has officially launched a new open-weight voice AI model, claiming superior inference speeds that outpace leading proprietary solutions from OpenAI, Google, and xAI. By optimizing the underlying architecture for high-concurrency environments, the model achieves ultra-low latency, crucial for maintaining natural, real-time conversational flows. For developers building voice-first applications or real-time translation tools, this development signifies a major shift, as inference overhead has historically hindered smooth voice interactions. Integrating Avartha offers a highly performant alternative for those looking to bypass the latency bottlenecks found in traditional cloud-based speech APIs. Builders should evaluate this model for their upcoming voice-agent projects, as it provides a robust, scalable way to deliver near-instantaneous responses without sacrificing the voice quality and prosody required for production-grade applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "音声",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-02T01:32:55.506Z"
+  },
+  {
+    "id": "art-1793583114538-n28yt",
+    "source_id": "source-context-dev",
+    "source_name": "Context.dev Blog",
+    "url": "https://www.context.dev/blog/playwright-mcp-browser-evaluate-hangs",
+    "published_at": "2026-11-01",
+    "og_image_url": "https://www.context.dev/api/og?variant=post&title=Playwright+MCP+browser_evaluate+Hangs%3F+The+CSP+Sandbox+Bug+Explained&highlight=Sandbox+Bug+Explained&collection=blog&minutes=10",
+    "title_ja": "PlaywrightのMCPサーバー構築で「browser.evaluate」がハングする原因と解決策：非同期処理の競合とセッション管理の罠",
+    "summary_ja": "LLM向けのModel Context Protocol（MCP）サーバー内でPlaywrightを実行する際、「page.evaluate」がハングする事象が報告されている。 主な原因は、セッションの多重化による非同期処理の競合や、ブラウザの通信ソケットが正しくクローズされないことによるリソースの枯渇である。 ビルドする際は、明示的なタイムアウト設定とページ単位での独立したライフサイクル管理を徹底することが、AIエージェントの安定稼働には不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "PlaywrightのMCPサーバー構築で「browser.evaluate」がハングする原因と解決策：非同期処理の競合とセッション管理の罠",
+        "summary": "LLM向けのModel Context Protocol（MCP）サーバー内でPlaywrightを実行する際、「page.evaluate」がハングする事象が報告されている。 主な原因は、セッションの多重化による非同期処理の競合や、ブラウザの通信ソケットが正しくクローズされないことによるリソースの枯渇である。 ビルドする際は、明示的なタイムアウト設定とページ単位での独立したライフサイクル管理を徹底することが、AIエージェントの安定稼働には不可欠だ。"
+      },
+      "en": {
+        "title": "Solving the 'browser.evaluate' hang issue when integrating Playwright into Model Context Protocol servers for AI agent workflows",
+        "summary": "Developers building AI agents with the Model Context Protocol (MCP) are encountering critical hangs when calling 'page.evaluate' within Playwright integration layers. The issue typically stems from improper session isolation and race conditions where multiple async evaluations block the browser socket, failing to release the event loop. To resolve this, builders must implement explicit execution timeouts and ensure strict lifecycle management per page instance, preventing resource exhaustion during concurrent AI tasks. Relying on default settings often leads to deadlocks when the LLM triggers rapid-fire evaluations. Prioritizing robust error handling and decoupling the browser context from the main server loop is essential for maintaining a responsive MCP-compatible agent environment."
+      }
+    },
+    "tool_tags": [
+      "Context.dev"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-02T01:31:54.538Z"
+  },
+  {
+    "id": "art-1793583104716-bx59e",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/takaden1981/n/n6e0397cedcf8",
+    "published_at": "2026-11-02T01:24:00.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331172583/rectangle_large_type_2_607835b82d441653bfc08db1bed46358.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Anthropic、ClaudeのAPI利用料と使用量を可視化する「Usage and Cost Analytics API」を10月29日にベータ公開",
+    "summary_ja": "Anthropicは、Claude APIの利用料金と使用量をモデル別やAPIキー単位で集計・取得できる「Usage and Cost Analytics API」を10月29日にベータ公開した。 これまで開発者が手動で行っていたコスト管理や利用傾向の分析がAPI経由で自動化可能となり、大規模プロジェクトでの予算監視が容易になる。 開発チームは、このAPIを活用することでコスト上限アラートの精度を高め、AIインフラの運用負荷を大幅に削減できる。",
+    "translations": {
+      "ja": {
+        "title": "Anthropic、ClaudeのAPI利用料と使用量を可視化する「Usage and Cost Analytics API」を10月29日にベータ公開",
+        "summary": "Anthropicは、Claude APIの利用料金と使用量をモデル別やAPIキー単位で集計・取得できる「Usage and Cost Analytics API」を10月29日にベータ公開した。 これまで開発者が手動で行っていたコスト管理や利用傾向の分析がAPI経由で自動化可能となり、大規模プロジェクトでの予算監視が容易になる。 開発チームは、このAPIを活用することでコスト上限アラートの精度を高め、AIインフラの運用負荷を大幅に削減できる。"
+      },
+      "en": {
+        "title": "Anthropic launches Usage and Cost Analytics API in beta, offering granular breakdown of Claude API expenses",
+        "summary": "Anthropic has released its new Usage and Cost Analytics API in beta, allowing developers to programmatically track Claude API usage and associated costs aggregated by model and API key. Previously, monitoring spend required manual oversight, but this update enables automated real-time tracking, making it significantly easier to audit usage patterns in large-scale production environments. For teams building on Claude, this API is a critical addition that allows for tighter budget control and more precise cost-anomaly detection. Integrating these data points directly into your backend architecture helps move away from reactive billing checks toward proactive infrastructure management, ensuring that API usage remains aligned with your project's scaling goals and budget constraints."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-02T01:31:44.716Z"
+  },
+  {
+    "id": "art-1793583090298-z3kwy",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Ikechom/items/a6c3424d3a14bf673a35",
+    "published_at": "2026-11-02T01:24:34.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDc5NTI2JTJGZmJmNjg0Mzg3ZjMyYTNlOTg1Zjk5NTMzMjE1NDI4MjMzZTRlNDNhMSUyRnhfbGFyZ2UucG5nJTNGMTc5MzQ2MzgzOD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NTA4OTFhZDkwYjMwNWY1NTk2ZjYzZjg4MmFlZTdmNGU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db9edc11bedd25a7cae516e370f3d5ae2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUJDJUFCJUU3JTk0JUJCJUU3JTk0JTlGJUU2JTg4JTkwQUklRTMlODIlOTIlRTMlODElQTklRTMlODElODYlRTklODElQjglRTMlODElQjYlRUYlQkMlOUZMeXJhJUUzJTgzJUJCQ2FudmElRTMlODMlQkJBZG9iZSUyMEZpcmVmbHklRTMlODElQUUlRTUlODUlQTUlRTUlOEElOUIlRTQlQkUlOEIlRTMlODIlOTIlRTYlQUYlOTQlRTglQkMlODMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03YmFjZWQ0N2FhNmVkNDBmNjlkNGVkMWIwZGEyMTBiZQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBJa2VjaG9tJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MjUyOWIxYmJhYWFkOGU0MjRjMWM4NWI4MDVlZGJhNWE&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=83a15ff1347c3b1aff299afbbc6436c5",
+    "title_ja": "漫画生成AIの最適解を探る：Lyra・Canva・Adobe Fireflyの特性比較と、ワークフローに応じたツール選択の勘所",
+    "summary_ja": "漫画生成AIの選定において重要なのは、全工程を自動化することではなく、どの作業をAIに任せたいかという明確な目的設定だ。 物語の構成からページレイアウトまでを行うのか、吹き出し配置まで含めるのか、あるいはキャラクターの画作りを重視するのかで最適なツールは異なる。 Lyra、Canva、Adobe Fireflyを比較すると、求められる入力形式や得意領域が大きく異なることがわかる。",
+    "translations": {
+      "ja": {
+        "title": "漫画生成AIの最適解を探る：Lyra・Canva・Adobe Fireflyの特性比較と、ワークフローに応じたツール選択の勘所",
+        "summary": "漫画生成AIの選定において重要なのは、全工程を自動化することではなく、どの作業をAIに任せたいかという明確な目的設定だ。 物語の構成からページレイアウトまでを行うのか、吹き出し配置まで含めるのか、あるいはキャラクターの画作りを重視するのかで最適なツールは異なる。 Lyra、Canva、Adobe Fireflyを比較すると、求められる入力形式や得意領域が大きく異なることがわかる。"
+      },
+      "en": {
+        "title": "Choosing the Right AI Manga Generator: Comparing Lyra, Canva, and Adobe Firefly Based on Your Specific Creative Workflow Needs",
+        "summary": "Selecting an AI manga generation tool requires moving beyond service names to define exactly which creative phase you need to outsource. Whether you are focusing on page layout and narrative structure, typography and speech bubble placement, or pure character illustration, your toolset selection should change accordingly. Comparing platforms like Lyra, Canva, and Adobe Firefly reveals that each requires distinct input formats and serves unique bottlenecks in the production pipeline. For creators and developers, the key lesson is not to hunt for a perfect all-in-one generator, but to treat AI as a modular assistant. By mapping your specific creative blockers against a tool's core strengths, you can integrate these services to optimize output without sacrificing control over your project's visual consistency."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "画像生成",
+      "開発"
+    ],
+    "created_at": "2026-11-02T01:31:30.298Z"
+  },
+  {
     "id": "art-1793582214450-m5dfh",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
