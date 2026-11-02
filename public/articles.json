@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793653455022-8iy2f",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/dgtlchika/articles/41bf9f94396ecb",
+    "published_at": "2026-11-02T12:19:32.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wuPFzesb--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:robots.txt%25E3%2581%25A7%25E3%2580%258C%25E6%25A4%259C%25E7%25B4%25A2%25E3%2581%25AFOK%25E3%2580%2581AI%25E5%25AD%25A6%25E7%25BF%2592%25E3%2581%25AFNG%25E3%2580%258D%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258D%25E5%2588%2586%25E3%2581%2591%25E3%2582%258B%25EF%25BC%259A__usage_ai-training%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%2592%25E8%25AA%25AD%25E3%2582%2580%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%25E5%259C%25B0%25E4%25B8%258B%25E5%25AE%25A4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvZC5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "robots.txt新規格「__usage_ai-training」：検索用とAI学習用クローラーを分離する設計の重要性",
+    "summary_ja": "ウェブサイト管理者が「検索エンジンには載せたいが、AIの学習データには使われたくない」という相反する要望を叶える新規格「__usage_ai-training」がIETFに提案された。 従来のボット名指定方式では個別のクロール対策が必要だったが、新仕様では取得（検索）と利用（学習）を明確に分離する仕組みが導入される。 Web制作者は、将来的なクローラー対策としてボットごとの制限から目的ベースの制御へ移行する準備が必要だ。",
+    "translations": {
+      "ja": {
+        "title": "robots.txt新規格「__usage_ai-training」：検索用とAI学習用クローラーを分離する設計の重要性",
+        "summary": "ウェブサイト管理者が「検索エンジンには載せたいが、AIの学習データには使われたくない」という相反する要望を叶える新規格「__usage_ai-training」がIETFに提案された。 従来のボット名指定方式では個別のクロール対策が必要だったが、新仕様では取得（検索）と利用（学習）を明確に分離する仕組みが導入される。 Web制作者は、将来的なクローラー対策としてボットごとの制限から目的ベースの制御へ移行する準備が必要だ。"
+      },
+      "en": {
+        "title": "IETF proposes __usage_ai-training: Separating search indexing from AI data scraping in robots.txt",
+        "summary": "To address the growing tension between allowing search engine visibility and preventing unauthorized AI model training, the IETF has introduced a new draft specification: __usage_ai-training. This mechanism allows site owners to distinguish between a crawler’s intent to index content for search and its intent to harvest data for training, solving the limitations of current blocklists where developers must manually update countless bot names. By separating ingestion from usage, this standard provides a more sustainable, intent-based control layer for site operators. Builders should move beyond simple User-agent blocks and adopt these intent-based directives to future-proof their sites against evolving AI scrapers, as relying on catch-all blocking will become increasingly ineffective and maintenance-heavy as more specialized AI bots emerge."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-02T21:04:15.022Z"
+  },
+  {
+    "id": "art-1793653386865-dacgy",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/studio_zaiya/n/na6b10493eb15",
+    "published_at": "2026-11-02T20:23:25.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331355686/rectangle_large_type_2_452a64d2d7c68eb940f52cdfe8fbf83a.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「育休クエスト」難易度調整の舞台裏：男性育休ゲームがリアル育児より理不尽すぎた問題とEASYモード実装の教訓",
+    "summary_ja": "Studio ZaiYaが開発する男性育休体験ブラウザゲーム『育休クエスト』が、ユーザーデータ分析の結果、想定以上に高難易度であることが判明した。 仕事・家事・育児のバランスを崩すと即ゲームオーバーになる理不尽さを解消すべく、新たにEASYモードを実装し、進行不能バグも修正した。 個人開発のゲームにおいて、ログやプレイ動画からユーザーの離脱ポイントを特定し、素早くゲームバランスを再調整するフィードバックループの重要性を示している。",
+    "translations": {
+      "ja": {
+        "title": "「育休クエスト」難易度調整の舞台裏：男性育休ゲームがリアル育児より理不尽すぎた問題とEASYモード実装の教訓",
+        "summary": "Studio ZaiYaが開発する男性育休体験ブラウザゲーム『育休クエスト』が、ユーザーデータ分析の結果、想定以上に高難易度であることが判明した。 仕事・家事・育児のバランスを崩すと即ゲームオーバーになる理不尽さを解消すべく、新たにEASYモードを実装し、進行不能バグも修正した。 個人開発のゲームにおいて、ログやプレイ動画からユーザーの離脱ポイントを特定し、素早くゲームバランスを再調整するフィードバックループの重要性を示している。"
+      },
+      "en": {
+        "title": "Studio ZaiYa overhauls Paternity Leave Quest with EASY mode after user data reveals the original was punishingly difficult",
+        "summary": "The browser-based survival game 'Paternity Leave Quest' has received a major update to implement an 'EASY' mode after logs and playtesting revealed the original simulation was far too unforgiving for casual users. Players balance career, domestic chores, and parenting, but early metrics showed that too many people failed due to unexpected difficulty spikes or progression-breaking bugs. By acting on these telemetry insights, the developer smoothed out the learning curve while maintaining the game's core premise of realistic trade-offs. For solo developers, this serves as a critical reminder that player telemetry isn't just for metrics; it is the most reliable tool for identifying where your game's mechanics actually break the intended user experience during the vital early-game phase."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-02T21:03:06.865Z"
+  },
+  {
+    "id": "art-1793653327401-q6msu",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://openai.com/index/lifeval/",
+    "published_at": "2026-11-02T20:54:47.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAIが発表した新評価フレームワーク「LifeVal」：日常生活におけるAIの推論・実行能力をベンチマーク化",
+    "summary_ja": "OpenAIは、LLMの真の能力を評価するための新たなベンチマーク「LifeVal」を公開した。 これは特定のタスク解決能力ではなく、日常生活で発生する複雑な状況判断やマルチステップの推論タスクをAIがどの程度遂行できるかを測定する。 既存のベンチマークが知識の暗記に偏りがちな中、実生活の文脈を理解するAIモデルの開発に向けた評価指標として注目される。 開発者は、自身のモデルが実際の生活課題に対してどの程度の適応力を持つかを検証するツールとして活用できる。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIが発表した新評価フレームワーク「LifeVal」：日常生活におけるAIの推論・実行能力をベンチマーク化",
+        "summary": "OpenAIは、LLMの真の能力を評価するための新たなベンチマーク「LifeVal」を公開した。 これは特定のタスク解決能力ではなく、日常生活で発生する複雑な状況判断やマルチステップの推論タスクをAIがどの程度遂行できるかを測定する。 既存のベンチマークが知識の暗記に偏りがちな中、実生活の文脈を理解するAIモデルの開発に向けた評価指標として注目される。 開発者は、自身のモデルが実際の生活課題に対してどの程度の適応力を持つかを検証するツールとして活用できる。"
+      },
+      "en": {
+        "title": "OpenAI introduces LifeVal to benchmark AI reasoning and task execution capabilities within everyday real-world scenarios",
+        "summary": "OpenAI has unveiled LifeVal, a novel evaluation framework designed to shift AI benchmarking from static knowledge retrieval to complex, real-world reasoning. Unlike traditional benchmarks that often emphasize fact memorization or narrow problem-solving, LifeVal tests how well models navigate the nuanced, multi-step constraints found in everyday human life. By focusing on situational understanding and practical execution, this framework aims to provide a more accurate metric for how AI might actually assist users in daily tasks. For developers building agentic workflows, this offers a rigorous standard to validate whether their models possess the robust reasoning required for real-world reliability rather than just high scores on academic exams. It marks a clear move toward evaluating practical utility over theoretical benchmarks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-02T21:02:07.401Z"
+  },
+  {
+    "id": "art-1793653320665-b4huk",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/",
+    "published_at": "2026-10-29T16:11:08.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/28/ML-21105-featured-image.png",
+    "title_ja": "AWS、1200億パラメータの「NVIDIA Nemotron 3.5」をEKSとSageMakerで展開する高速化基盤を解説",
+    "summary_ja": "AWSが1200億パラメータを持つ「NVIDIA Nemotron 3.5 Super VL」のデプロイガイドを公開した。 このモデルは推論能力、ツール利用、マルチモーダル理解を統合したMixture-of-Expertsアーキテクチャを採用している。 本稿では、Amazon EKS（Auto Mode含む）およびSageMaker HyperPod EKS上で、NVIDIA DynamoとvLLMを活用してこの巨大モデルを効率的に動かす最適化手法が詳述されている。",
+    "translations": {
+      "ja": {
+        "title": "AWS、1200億パラメータの「NVIDIA Nemotron 3.5」をEKSとSageMakerで展開する高速化基盤を解説",
+        "summary": "AWSが1200億パラメータを持つ「NVIDIA Nemotron 3.5 Super VL」のデプロイガイドを公開した。 このモデルは推論能力、ツール利用、マルチモーダル理解を統合したMixture-of-Expertsアーキテクチャを採用している。 本稿では、Amazon EKS（Auto Mode含む）およびSageMaker HyperPod EKS上で、NVIDIA DynamoとvLLMを活用してこの巨大モデルを効率的に動かす最適化手法が詳述されている。"
+      },
+      "en": {
+        "title": "AWS details deploying 120B-parameter NVIDIA Nemotron 3.5 on Amazon EKS and SageMaker HyperPod for agentic workflows",
+        "summary": "AWS released a guide for deploying the 120B-parameter NVIDIA Nemotron 3.5 Super VL, a mixture-of-experts model optimized for reasoning, tool use, and multimodal perception. The technical deep dive focuses on maximizing inference efficiency within Amazon EKS—including EKS Auto Mode—and Amazon SageMaker HyperPod EKS environments. By leveraging NVIDIA Dynamo alongside vLLM, the documentation demonstrates how to orchestrate these large-scale models to maintain latency targets in production agentic AI applications. For engineering teams building complex, tool-calling AI agents, this guide provides a vital blueprint for choosing the right underlying infrastructure and inference optimization stack to balance performance with the high computational demands inherent in modern, large-scale multimodal models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-02T21:02:00.665Z"
+  },
+  {
     "id": "art-1793652446971-qsrmm",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -38335,32 +38440,6 @@
     "created_at": "2026-10-28T12:32:37.242Z"
   },
   {
-    "id": "art-1793190750074-4thqx",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/potenekolab/n/nb29ac3858f5b",
-    "published_at": "2026-10-28T12:18:41.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329554753/rectangle_large_type_2_56a01ecf6c09c423cc32218c3a27aeb7.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ブラウザゲーム「ぴったりストップ」開発記：直感と体内時計を試すシンプルなUIゲームが、なぜユーザーを夢中にさせるのか",
-    "summary_ja": "「ぴったりストップ」は、タイマーが消えた状態で指定された秒数に正確に止めるという、シンプルかつ中毒性の高いブラウザゲームだ。 余計な装飾を排し、ユーザーの直感に訴えるメカニズムと操作フィードバックに焦点を当てることで、短い隙間時間でも繰り返したくなる設計を実現した。 個人開発において「何を作るか」と同じくらい「どう遊ばせるか」というUXのチューニングがいかに重要かを証明している事例である。",
-    "translations": {
-      "ja": {
-        "title": "ブラウザゲーム「ぴったりストップ」開発記：直感と体内時計を試すシンプルなUIゲームが、なぜユーザーを夢中にさせるのか",
-        "summary": "「ぴったりストップ」は、タイマーが消えた状態で指定された秒数に正確に止めるという、シンプルかつ中毒性の高いブラウザゲームだ。 余計な装飾を排し、ユーザーの直感に訴えるメカニズムと操作フィードバックに焦点を当てることで、短い隙間時間でも繰り返したくなる設計を実現した。 個人開発において「何を作るか」と同じくらい「どう遊ばせるか」というUXのチューニングがいかに重要かを証明している事例である。"
-      },
-      "en": {
-        "title": "Building 'Perfect Stop': Why a simple browser game testing your internal clock can become surprisingly addictive for users",
-        "summary": "Perfect Stop is a minimalist browser game that challenges players to halt a hidden timer at an exact target time, demonstrating how a singular, polished mechanic can drive high engagement. By removing visual clutter and focusing exclusively on precise user feedback loops and intuitive timing, the developer created an experience that compels players to retry instantly. This project highlights a crucial lesson for indie builders: the UX tuning around your core loop is just as vital as the game concept itself. When building interactive web apps, success often lies in simplifying controls so deeply that the user’s focus remains entirely on the challenge, proving that refined, lightweight mechanics frequently outperform feature-heavy alternatives in short-form gameplay."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-28T12:32:30.074Z"
-  },
-  {
     "id": "art-1793190743566-b5z9l",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -38385,32 +38464,6 @@
       "研究"
     ],
     "created_at": "2026-10-28T12:32:23.566Z"
-  },
-  {
-    "id": "art-1793190736972-soixc",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/snow_bear/n/ne316836c596b",
-    "published_at": "2026-10-28T12:20:00.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329555087/rectangle_large_type_2_367fbce019e4cb56e064ab00568c10c5.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "unityroomからAWSへ移行する個人開発の軌跡：ゲーム6本の独自ホスティング化とBrotli圧縮活用による通信量28%削減の最適化手法",
-    "summary_ja": "unityroomで公開していた6本のボードゲームをAWS上の自社サイトへ完全移行。 WebGLビルドのロード時間を改善するためBrotli圧縮を導入し、ファイルサイズを28%削減することに成功した。 プラットフォーム依存からの脱却は、長期的なユーザー体験の管理において重要だ。 個人開発者にとって、配信インフラを自前で構築することは、パフォーマンスチューニングの裁量権を確保し、サイト全体の読み込み速度を最適化するための不可欠なステップとなる。",
-    "translations": {
-      "ja": {
-        "title": "unityroomからAWSへ移行する個人開発の軌跡：ゲーム6本の独自ホスティング化とBrotli圧縮活用による通信量28%削減の最適化手法",
-        "summary": "unityroomで公開していた6本のボードゲームをAWS上の自社サイトへ完全移行。 WebGLビルドのロード時間を改善するためBrotli圧縮を導入し、ファイルサイズを28%削減することに成功した。 プラットフォーム依存からの脱却は、長期的なユーザー体験の管理において重要だ。 個人開発者にとって、配信インフラを自前で構築することは、パフォーマンスチューニングの裁量権を確保し、サイト全体の読み込み速度を最適化するための不可欠なステップとなる。"
-      },
-      "en": {
-        "title": "Migrating board games from unityroom to AWS: Hosting 6 titles independently and optimizing assets with Brotli compression for 28% savings",
-        "summary": "In this installment of his migration series, the developer moves six board games away from unityroom to a custom AWS-hosted environment. To ensure the performance of these WebGL builds matched or exceeded the previous platform, he implemented Brotli compression, which successfully cut total file sizes by 28%. This architectural shift demonstrates why moving away from third-party hosting is crucial for developers who want full control over the asset pipeline and loading speeds. For independent creators, building your own hosting infrastructure is not just about independence—it is an essential operational step to reclaim control over critical performance metrics like initial load times. Mastering server-side compression is a key lever for delivering high-quality web-based gaming experiences that perform smoothly across diverse network conditions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-28T12:32:16.972Z"
   },
   {
     "id": "art-1793190720024-nbbhu",
@@ -48748,33 +48801,6 @@
     "created_at": "2026-10-27T00:25:21.682Z"
   },
   {
-    "id": "art-1793060681379-m7gep",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://cje.io/2026/10/26/some-cyber-ai-dichotomies/",
-    "published_at": "2026-10-27T00:01:35.000Z",
-    "og_image_url": "https://storage.ghost.io/c/ec/8a/ec8abb38-39b9-4422-95b9-695b2a5e652e/content/images/size/w1200/2026/10/goats-montage-1.png",
-    "title_ja": "AIとサイバーセキュリティの矛盾と真実：自動化がもたらす防御の脆弱性と、開発者が知るべきセキュリティ上の二項対立",
-    "summary_ja": "AIの導入はセキュリティ対策を自動化する一方で、新たな攻撃ベクトルを生むという二項対立的な構造にある。 AIを活用した防御システムは迅速な対応を可能にするが、同時に攻撃者もまたAIを用いてコード脆弱性を迅速に発見している。 開発者は、単にAIツールを統合するだけでなく、AIモデル特有の推論エラーやプロンプト注入攻撃を考慮した、多層的なセキュリティアーキテクチャの設計が求められている。",
-    "translations": {
-      "ja": {
-        "title": "AIとサイバーセキュリティの矛盾と真実：自動化がもたらす防御の脆弱性と、開発者が知るべきセキュリティ上の二項対立",
-        "summary": "AIの導入はセキュリティ対策を自動化する一方で、新たな攻撃ベクトルを生むという二項対立的な構造にある。 AIを活用した防御システムは迅速な対応を可能にするが、同時に攻撃者もまたAIを用いてコード脆弱性を迅速に発見している。 開発者は、単にAIツールを統合するだけでなく、AIモデル特有の推論エラーやプロンプト注入攻撃を考慮した、多層的なセキュリティアーキテクチャの設計が求められている。"
-      },
-      "en": {
-        "title": "The cybersecurity and AI dichotomy: Analyzing how automated defense systems simultaneously create new attack surfaces and vulnerabilities for modern software development",
-        "summary": "The integration of AI into cybersecurity creates a complex dichotomy where automated defense mechanisms inevitably introduce novel attack vectors. While AI-driven security tools enable rapid threat detection and automated remediation, the exact same technologies allow adversaries to scan and exploit code vulnerabilities faster than ever before. Developers must recognize that simply patching with AI is insufficient; building resilient systems now requires accounting for model-specific inference errors and sophisticated prompt injection attacks that bypass traditional perimeter defenses. Ultimately, the industry must pivot toward a multi-layered architecture that treats AI components not as silver-bullet security patches, but as software dependencies that require their own rigorous security lifecycle, testing, and isolated governance frameworks to remain robust against AI-powered threats."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-27T00:24:41.379Z"
-  },
-  {
     "id": "art-1793060577670-v0ltv",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -48851,32 +48877,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-26T23:59:59.170Z"
-  },
-  {
-    "id": "art-1793059179080-q7sul",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/jdavid465/JDA-ZIP-PROTOCOL",
-    "published_at": "2026-10-26T23:23:55.000Z",
-    "og_image_url": null,
-    "title_ja": "LLMのコンテキスト制限を突破する決定論的圧縮プロトコル「JDA-Zip」公開：トークン効率と再現性を両立",
-    "summary_ja": "「JDA-Zip」は、LLMのコンテキストウィンドウを効率的に活用するために開発された決定論的圧縮プロトコルである。 この手法は、情報を単に短縮するだけでなく、LLMが理解可能な形式でトークンを最適化し、プロンプトのコンテキスト圧縮と高い再現性を両立させる。 開発者は、長大な履歴やドキュメントをLLMに読み込ませる際のトークン消費を抑えつつ、モデルの回答品質を維持する新たな選択肢を得ることになる。",
-    "translations": {
-      "ja": {
-        "title": "LLMのコンテキスト制限を突破する決定論的圧縮プロトコル「JDA-Zip」公開：トークン効率と再現性を両立",
-        "summary": "「JDA-Zip」は、LLMのコンテキストウィンドウを効率的に活用するために開発された決定論的圧縮プロトコルである。 この手法は、情報を単に短縮するだけでなく、LLMが理解可能な形式でトークンを最適化し、プロンプトのコンテキスト圧縮と高い再現性を両立させる。 開発者は、長大な履歴やドキュメントをLLMに読み込ませる際のトークン消費を抑えつつ、モデルの回答品質を維持する新たな選択肢を得ることになる。"
-      },
-      "en": {
-        "title": "Introducing JDA-Zip: A new deterministic compression protocol designed to optimize LLM context usage and token efficiency",
-        "summary": "JDA-Zip has emerged as a novel deterministic compression protocol specifically engineered to push the boundaries of current LLM context windows. Unlike standard compression methods that might sacrifice semantic integrity, this approach optimizes tokens into a structure that preserves model understanding while significantly reducing the overhead of prompts. For developers working with massive chat histories or extensive documentation, the protocol offers a reliable way to maintain response quality while strictly minimizing token consumption costs. By enabling consistent, reproducible compression, JDA-Zip provides a robust alternative to basic summarization or truncation strategies, serving as a critical tool for any builder trying to pack more relevant data into limited context windows without degrading AI reasoning performance."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-26T23:59:39.080Z"
   },
   {
     "id": "art-1793059172265-4pclf",
