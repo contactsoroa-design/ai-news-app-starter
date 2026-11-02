@@ -179,7 +179,8 @@ type ListingFeedFallback = {
    * synthesia=Webflow /post、bolt=bolt.new/blog、dify=dify.ai/blog、
    * openai-changelog=API Changelog、cursor-blog=cursor.com/blog、
    * perplexity-blog=perplexity.ai/hub/blog、
-   * windsurf-changelog=windsurf.com/changelog（Devin Desktop 系）
+   * windsurf-changelog=windsurf.com/changelog（Devin Desktop 系）、
+   * notion-changelog=developers.notion.com Agent/MCP changelog
    */
   parser:
     | 'synthesia'
@@ -188,7 +189,8 @@ type ListingFeedFallback = {
     | 'openai-changelog'
     | 'cursor-blog'
     | 'perplexity-blog'
-    | 'windsurf-changelog';
+    | 'windsurf-changelog'
+    | 'notion-changelog';
 };
 
 const LISTING_FEED_FALLBACKS: Record<string, ListingFeedFallback> = {
@@ -233,6 +235,12 @@ const LISTING_FEED_FALLBACKS: Record<string, ListingFeedFallback> = {
     origin: 'https://windsurf.com',
     parser: 'windsurf-changelog',
   },
+  // releases RSS は更新が薄い → Agent/MCP 中心の API Changelog（ほぼ日次）へ
+  'source-notion': {
+    listingUrl: 'https://developers.notion.com/page/changelog',
+    origin: 'https://developers.notion.com',
+    parser: 'notion-changelog',
+  },
 };
 
 function parseEnglishMonthDayYear(raw: string): string | null {
@@ -258,13 +266,23 @@ function parseListingItems(
 ): RawFeedItem[] {
   const items: RawFeedItem[] = [];
   const seen = new Set<string>();
-  const push = (path: string, titleRaw: string, pubDate: string | null) => {
+  const push = (
+    path: string,
+    titleRaw: string,
+    pubDate: string | null,
+    snippet = ''
+  ) => {
     if (!path.startsWith('/')) return;
     const link = `${conf.origin}${path}`;
     if (seen.has(link)) return;
     seen.add(link);
     const title = decodeBasicHtmlEntities(titleRaw) || titleFromUrlSlug(link);
-    items.push({ title, link, pubDate, snippet: '' });
+    items.push({
+      title,
+      link,
+      pubDate,
+      snippet: snippet.replace(/\s+/g, ' ').trim().slice(0, 900),
+    });
   };
 
   if (conf.parser === 'synthesia') {
@@ -385,6 +403,35 @@ function parseListingItems(
       const title = version ? `${version}: ${summary}` : summary;
       const slug = slugifyHeading(`${version}-${dateLabel}-${body.slice(0, 40)}`);
       push(`/changelog#${slug}`, title, parseEnglishMonthDayYear(dateLabel));
+    }
+  } else if (conf.parser === 'notion-changelog') {
+    // Mintlify changelog: 日付ラベル + update-content。RSSは日付タイトルのみなので一覧から補完。
+    // Agent / MCP / AI search 等に触れる日だけ残す。
+    const month =
+      'January|February|March|April|May|June|July|August|September|October|November|December';
+    const entryRe = new RegExp(
+      `data-component-part="update-label">((?:${month})\\s+\\d{1,2},\\s+20\\d{2})<\\/button>[\\s\\S]*?data-component-part="update-content">([\\s\\S]*?)(?=data-component-part="update-label"|$)`,
+      'gi'
+    );
+    const aiRe =
+      /\b(Notion MCP|MCP|Agent API|Custom Agent|AI search|Notion Agent|assistant)\b/i;
+    for (const m of html.matchAll(entryRe)) {
+      const dateLabel = m[1].trim();
+      const contentHtml = m[2];
+      const body = decodeBasicHtmlEntities(
+        contentHtml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')
+      ).trim();
+      if (!body || !aiRe.test(body)) continue;
+      const feature =
+        contentHtml.match(/cursor-pointer">([^<]+)<\/span><\/h3>/)?.[1]?.trim() ||
+        body.slice(0, 100);
+      const title = `${dateLabel}: ${feature}`;
+      push(
+        `/page/changelog#${slugifyHeading(dateLabel)}`,
+        title,
+        parseEnglishMonthDayYear(dateLabel),
+        body
+      );
     }
   }
 
@@ -1846,6 +1893,12 @@ async function main() {
             }
             if (!existing.pubDate && item.pubDate) {
               existing.pubDate = item.pubDate;
+            }
+            if (
+              (!existing.snippet || !existing.snippet.trim()) &&
+              item.snippet?.trim()
+            ) {
+              existing.snippet = item.snippet;
             }
             continue;
           }
