@@ -75,6 +75,7 @@ const copyJa = {
     backToList: '‹ 探索一覧に戻る',
     backToListAria: '探索一覧に戻る',
     openSourceAria: 'この情報源のソース別フィードを開く',
+    scrollBarAria: '探索一覧をスクロール',
   },
   saved: {
     title: '保存済み',
@@ -248,6 +249,7 @@ const copyEn: CopyShape = {
     backToList: '‹ Back to explore',
     backToListAria: 'Back to explore grid',
     openSourceAria: 'Open this source in the By Source feed',
+    scrollBarAria: 'Scroll the explore list',
   },
   saved: {
     title: 'Saved',
@@ -449,11 +451,16 @@ export function getSourceKindLabel(
 }
 
 export const limits = {
-  // フィードの保持日数（直近30日以内の記事は件数制限なしで全件ストックし、31日以上前の記事を自動ローテーション）
+  // フィードの保持日数（直近30日より前はソース問わず外す）
   retentionDays: 30,
   // 30日以内に更新がなかったツールでもタブが空にならないよう保護するツール別最低保証件数
   minArticlesPerTool: 3,
-  // 万が一のRSS暴走時のみ作動するメモリ保護の安全上限（通常運用では到達しない安全弁）
+  /**
+   * 1ソースあたりのフィード内上限。超えた分はそのソースの最古（フィード時刻）から外す。
+   * 高頻度ソースが全体枠を独占して希少ソースが絶滅するのを防ぐ。
+   */
+  maxArticlesPerSourceInFeed: 100,
+  // 全体の安全上限（JSON肥大防止）。超えたら本数の多いソースの最古から削り、各ソース最低1は残す
   maxFeedArticles: 2000,
   // 端末内の「保存済み」最大保持件数
   maxSavedArticles: 500,

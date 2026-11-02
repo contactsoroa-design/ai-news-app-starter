@@ -876,63 +876,151 @@ export async function fetchLiveRssUpdates(
 }
 
 /**
- * 直近30日（limits.retentionDays）以内の記事を件数制限なしで全件ストックし、
- * 31日以上前の古い記事を自動ローテーションして除外する。
- * また、30日間に更新が少なかったツールでもタブが空にならないよう各ツール最低件数（minArticlesPerTool）を保護する。
+ * フィード在庫の整理:
+ * 1. 直近 retentionDays 以外を外す
+ * 2. ソースごとに maxArticlesPerSourceInFeed まで（超分はそのソースの最古から）
+ * 3. 全体が safetyMaxCount 超なら、本数の多いソースの最古から削る（各ソース最低1は残す）
+ * 4. ツール最低件数・ソース最低1件の保護（枠に余裕がある／太いソースから1枠譲れるとき）
  */
 export function trimFeedArticles(
   articles: Article[],
   safetyMaxCount: number = limits.maxFeedArticles,
-  retentionDays: number = limits.retentionDays
+  retentionDays: number = limits.retentionDays,
+  maxPerSource: number = limits.maxArticlesPerSourceInFeed
 ): Article[] {
   const sorted = sortArticles(articles);
   if (sorted.length === 0) return [];
 
-  // 最新記事のフィード時刻（または現在時刻）を基準に、直近30日間のカットオフ時刻を算出
   const newestMs = sorted[0] ? articleFeedTimestamp(sorted[0]) : Date.now();
   const referenceNowMs = Number.isNaN(newestMs)
     ? Date.now()
     : Math.max(Date.now(), newestMs);
   const cutoffMs = referenceNowMs - retentionDays * 24 * 60 * 60 * 1000;
 
-  const keptIds = new Set<string>();
-  const result: Article[] = [];
-
-  // 1. まず直近30日以内（公開または取り込み）の記事をすべてストックする
-  for (const article of sorted) {
-    if (result.length >= safetyMaxCount) break;
+  // 1. 保持期間内
+  const withinRetention = sorted.filter((article) => {
     const feedMs = articleFeedTimestamp(article) || referenceNowMs;
-    if (!Number.isNaN(feedMs) && feedMs >= cutoffMs) {
-      keptIds.add(article.id);
-      result.push(article);
+    return !Number.isNaN(feedMs) && feedMs >= cutoffMs;
+  });
+
+  // 2. ソース上限（新しい順に残す）
+  const perSourceCap = Math.max(1, maxPerSource);
+  const keptBySource = new Map<string, Article[]>();
+  for (const article of withinRetention) {
+    const key = article.source_id || article.source_name || article.id;
+    const bucket = keptBySource.get(key) ?? [];
+    if (bucket.length < perSourceCap) {
+      bucket.push(article);
+      keptBySource.set(key, bucket);
     }
   }
 
-  // 2. 万が一30日以内に更新が少なかったツールや情報源があっても、タブが空にならないよう最新記事を保護して残す
+  let result = sortArticles([...keptBySource.values()].flat());
+
+  // 3. 全体上限: 一番太いソースの最古から（最低1は残す）
+  const maxTotal = Math.max(1, safetyMaxCount);
+  if (result.length > maxTotal) {
+    const buckets = new Map<string, Article[]>();
+    for (const article of result) {
+      const key = article.source_id || article.source_name || article.id;
+      const list = buckets.get(key) ?? [];
+      list.push(article);
+      buckets.set(key, list);
+    }
+    for (const list of buckets.values()) {
+      list.sort(
+        (a, b) => articleFeedTimestamp(b) - articleFeedTimestamp(a)
+      );
+    }
+    while (
+      [...buckets.values()].reduce((n, list) => n + list.length, 0) > maxTotal
+    ) {
+      let fattestKey: string | null = null;
+      let fattestCount = 1;
+      for (const [key, list] of buckets) {
+        if (list.length > fattestCount) {
+          fattestCount = list.length;
+          fattestKey = key;
+        }
+      }
+      if (!fattestKey) {
+        // 全ソース1件ずつでも溢れる極端ケース: 全体の最古を落とす
+        let oldestKey: string | null = null;
+        let oldestMs = Number.POSITIVE_INFINITY;
+        for (const [key, list] of buckets) {
+          if (list.length === 0) continue;
+          const oldest = list[list.length - 1];
+          const ms = articleFeedTimestamp(oldest);
+          if (ms < oldestMs) {
+            oldestMs = ms;
+            oldestKey = key;
+          }
+        }
+        if (!oldestKey) break;
+        buckets.get(oldestKey)!.pop();
+        continue;
+      }
+      buckets.get(fattestKey)!.pop();
+    }
+    result = sortArticles([...buckets.values()].flat());
+  }
+
+  const keptIds = new Set(result.map((a) => a.id));
+
+  // 4a. ツール最低保証（枠に空きがあるときだけ）
   const minPerTool = limits.minArticlesPerTool;
   for (const tool of allTools) {
     let countForTool = result.filter((a) => a.tool_tags[0] === tool).length;
-    if (countForTool < minPerTool) {
-      for (const article of sorted) {
-        if (countForTool >= minPerTool || result.length >= safetyMaxCount) break;
-        if (article.tool_tags[0] === tool && !keptIds.has(article.id)) {
-          keptIds.add(article.id);
-          result.push(article);
-          countForTool++;
-        }
+    if (countForTool >= minPerTool) continue;
+    for (const article of sorted) {
+      if (countForTool >= minPerTool || result.length >= maxTotal) break;
+      if (article.tool_tags[0] === tool && !keptIds.has(article.id)) {
+        keptIds.add(article.id);
+        result.push(article);
+        countForTool++;
       }
     }
   }
 
+  // 4b. ソース最低1: 保持期間内にあったソースが0なら、太いソースから1枠譲って復元
+  const sourcesInRetention = new Set(
+    withinRetention.map((a) => a.source_id || a.source_name)
+  );
   for (const src of seedSourcesData as Source[]) {
-    const hasSourceArticle = result.some((a) => a.source_id === src.id);
-    if (!hasSourceArticle) {
-      const rep = sorted.find((a) => a.source_id === src.id);
-      if (rep && !keptIds.has(rep.id) && result.length < safetyMaxCount) {
-        keptIds.add(rep.id);
-        result.push(rep);
+    if (!sourcesInRetention.has(src.id)) continue;
+    if (result.some((a) => a.source_id === src.id)) continue;
+    const rep = withinRetention.find((a) => a.source_id === src.id);
+    if (!rep || keptIds.has(rep.id)) continue;
+
+    if (result.length < maxTotal) {
+      keptIds.add(rep.id);
+      result.push(rep);
+      continue;
+    }
+    // 満杯: 2件以上ある一番太いソースの最古を1つ外して枠を空ける
+    const counts = new Map<string, number>();
+    for (const article of result) {
+      const key = article.source_id || article.source_name;
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    }
+    let donorKey: string | null = null;
+    let donorCount = 1;
+    for (const [key, n] of counts) {
+      if (n > donorCount) {
+        donorCount = n;
+        donorKey = key;
       }
     }
+    if (!donorKey) continue;
+    const donorArticles = result
+      .filter((a) => (a.source_id || a.source_name) === donorKey)
+      .sort((a, b) => articleFeedTimestamp(a) - articleFeedTimestamp(b));
+    const victim = donorArticles[0];
+    if (!victim) continue;
+    result = result.filter((a) => a.id !== victim.id);
+    keptIds.delete(victim.id);
+    keptIds.add(rep.id);
+    result.push(rep);
   }
 
   return sortArticles(result);
