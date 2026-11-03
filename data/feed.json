@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793710026628-1uyac",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.00242",
+    "published_at": "2026-11-03T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "科学論文VQAを効率化する「RE-SciVQA」登場—軽量MLLMと文脈検索の組み合わせで計算コストを劇的に削減",
+    "summary_ja": "科学論文の図表理解には高い計算リソースが必要だが、新手法「RE-SciVQA」はクエリ拡張による関連文脈の取得と、小規模MLLMへのLoRA微調整を組み合わせることで、低コストな推論を実現した。 複雑なアーキテクチャに依存せず、検索精度の向上とパラメータ効率の高い学習というシンプルなアプローチを採用することで、大規模AIモデルを使わずに専門的な科学知識抽出を可能にする。 開発者にとって、計算リソースを制限された環境でVQAを実装する際の有力な選択肢となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "科学論文VQAを効率化する「RE-SciVQA」登場—軽量MLLMと文脈検索の組み合わせで計算コストを劇的に削減",
+        "summary": "科学論文の図表理解には高い計算リソースが必要だが、新手法「RE-SciVQA」はクエリ拡張による関連文脈の取得と、小規模MLLMへのLoRA微調整を組み合わせることで、低コストな推論を実現した。 複雑なアーキテクチャに依存せず、検索精度の向上とパラメータ効率の高い学習というシンプルなアプローチを採用することで、大規模AIモデルを使わずに専門的な科学知識抽出を可能にする。 開発者にとって、計算リソースを制限された環境でVQAを実装する際の有力な選択肢となるだろう。"
+      },
+      "en": {
+        "title": "RE-SciVQA introduces efficient scientific visual question answering using context-aware retrieval and lightweight LoRA fine-tuning",
+        "summary": "Scientific Visual Question Answering (VQA) often demands heavy compute, but the new RE-SciVQA framework bypasses this by pairing query expansion-based context retrieval with parameter-efficient LoRA fine-tuning on smaller multimodal LLMs. Instead of building massive, resource-intensive architectures, the authors demonstrate that refining the quality of retrieved context and optimizing lightweight models can achieve high-performance results in parsing complex scientific figures. This approach drastically lowers the computational barrier for scientific knowledge discovery. For builders creating domain-specific AI applications, the practical takeaway is that optimizing data retrieval and using LoRA for lightweight model adaptation is a far more sustainable strategy than chasing larger, unoptimized foundational models when working within strictly defined resource constraints."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-03T12:47:06.628Z"
+  },
+  {
+    "id": "art-1793710019019-blpxw",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/kentaro_tak/articles/claude-code-allowedtools-does-not-restrict",
+    "published_at": "2026-11-03T03:45:57.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--GAcVsfKv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:claude%2520-p%2520%25E3%2581%25AE%2520--allowedTools%2520%25E3%2581%25AF%25E9%2581%2593%25E5%2585%25B7%25E3%2582%2592%25E7%25B5%259E%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2582settings%25E3%2581%25AE%25E8%25A8%25B1%25E5%258F%25AF%25E3%2581%258C%25E3%2581%2582%25E3%2582%258C%25E3%2581%25B0%25E3%2580%258C%25E8%25AA%25AD%25E3%2582%2580%25E3%2581%25A0%25E3%2581%2591%25E3%2580%258D...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kentaro%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDZYajdUeUd2S3FCYkVpeS1kRUQ4MUVpZVVzOVZVcTFKZ2dueFZsdWJuOVdCc3ZBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの「--allowedTools」設定の落とし穴、プロンプト次第で許可外のシェル実行が可能に",
+    "summary_ja": "Claude Codeのオプション「--allowedTools」は指定ツールを制限する意図で使われるが、設定次第ではシェル操作を完全にブロックできないことが判明した。 プロンプトに攻撃的なコマンドが含まれると、許可されたツール以外でもOSコマンドが実行されるリスクがある。 セキュリティを重視する自動化スクリプトを組む際は、入力内容を完全に信頼せず、サンドボックス環境の分離や権限の最小化を徹底する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの「--allowedTools」設定の落とし穴、プロンプト次第で許可外のシェル実行が可能に",
+        "summary": "Claude Codeのオプション「--allowedTools」は指定ツールを制限する意図で使われるが、設定次第ではシェル操作を完全にブロックできないことが判明した。 プロンプトに攻撃的なコマンドが含まれると、許可されたツール以外でもOSコマンドが実行されるリスクがある。 セキュリティを重視する自動化スクリプトを組む際は、入力内容を完全に信頼せず、サンドボックス環境の分離や権限の最小化を徹底する必要がある。"
+      },
+      "en": {
+        "title": "Claude Code's '--allowedTools' flag is insufficient for security; shell commands can still execute via malicious prompts",
+        "summary": "It has been discovered that the --allowedTools flag in Claude Code does not reliably restrict tool usage as intended, potentially allowing unauthorized shell command execution. Even when users restrict tool access to benign functions like 'Read' or 'Grep', a cleverly crafted prompt can force the agent to execute arbitrary system commands if the underlying settings aren't strictly isolated. This vulnerability highlights the danger of automating scripts that process external, untrusted input. For builders utilizing Claude Code for automated workflows, the core takeaway is that tool-level restriction is not a sufficient security barrier. You must implement robust environment sandboxing and strict privilege minimization, rather than assuming that flag-based configuration will prevent malicious code execution from external prompts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-03T12:46:59.019Z"
+  },
+  {
+    "id": "art-1793710012626-83bwe",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+    "published_at": "2026-11-03T12:31:23.000Z",
+    "og_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2202649793-2560x1440.jpg",
+    "title_ja": "富士フイルムが磁気テープ生産能力を5倍に増強、AI学習データ急増に伴うアーカイブ需要の爆発に対応へ",
+    "summary_ja": "富士フイルムはAIモデルの学習データセットやログの長期保存需要急増を受け、磁気テープの生産能力を従来の5倍に引き上げる計画を発表した。 クラウド上のアクティブなストレージコスト削減が課題となる中、低コストかつ高耐久なテープストレージは、PB級のデータを扱うAIインフラの「コールドストレージ」として再評価されている。 開発者は、頻繁にアクセスしない大容量データをいかに効率よくアーカイブ層へオフロードするかが、AIサービス運用の経済性を左右することを再認識すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "富士フイルムが磁気テープ生産能力を5倍に増強、AI学習データ急増に伴うアーカイブ需要の爆発に対応へ",
+        "summary": "富士フイルムはAIモデルの学習データセットやログの長期保存需要急増を受け、磁気テープの生産能力を従来の5倍に引き上げる計画を発表した。 クラウド上のアクティブなストレージコスト削減が課題となる中、低コストかつ高耐久なテープストレージは、PB級のデータを扱うAIインフラの「コールドストレージ」として再評価されている。 開発者は、頻繁にアクセスしない大容量データをいかに効率よくアーカイブ層へオフロードするかが、AIサービス運用の経済性を左右することを再認識すべきだ。"
+      },
+      "en": {
+        "title": "Fujifilm to quintuple magnetic tape production capacity as AI model training fuels massive demand for long-term data archiving",
+        "summary": "Fujifilm has announced plans to ramp up magnetic tape production by 5×, responding to a massive surge in demand for archiving the massive datasets and logs required for modern AI model training. While cloud-based active storage creates ballooning operational costs, high-durability tape remains the standard for cold storage at the petabyte scale, offering a significantly cheaper footprint for archival. For engineers managing massive AI infrastructure, this shift highlights that optimizing data lifecycle management—specifically offloading infrequently accessed, massive datasets to archival tiers—is no longer optional but critical for cost-efficient scaling. Relying solely on hot cloud storage for long-term AI data will quickly break budgets, making intelligent archival strategies a foundational component of modern production machine learning pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "研究"
+    ],
+    "created_at": "2026-11-03T12:46:52.626Z"
+  },
+  {
+    "id": "art-1793710000518-y3veu",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/blend",
+    "published_at": "2026-11-02T18:54:56+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/mafl6k8qmjlvz81nwblvah6zr012",
+    "title_ja": "個人開発者が「Blend」で月間3000ドルを達成した舞台裏：ニッチな市場を特定し、MVPを最小構成で市場投入するまでのロードマップ",
+    "summary_ja": "個人開発者がローンチした「Blend」は、特定のニッチ市場における課題を解決するシンプルなツールとして、運用開始から着実に成長し月間収益3000ドルを突破した。 開発者は大規模な機能を詰め込むのではなく、ユーザーの要望を直接聞き取り、最小限の機能で検証を繰り返す「MVP戦略」を徹底している。 個人開発で継続的な収益を狙うなら、最初から完璧を目指さず、まずはニッチな課題を持つユーザー層を特定し、彼らの痛みに寄り添う小さなツールを素早くリリースすることが成功への近道だ。",
+    "translations": {
+      "ja": {
+        "title": "個人開発者が「Blend」で月間3000ドルを達成した舞台裏：ニッチな市場を特定し、MVPを最小構成で市場投入するまでのロードマップ",
+        "summary": "個人開発者がローンチした「Blend」は、特定のニッチ市場における課題を解決するシンプルなツールとして、運用開始から着実に成長し月間収益3000ドルを突破した。 開発者は大規模な機能を詰め込むのではなく、ユーザーの要望を直接聞き取り、最小限の機能で検証を繰り返す「MVP戦略」を徹底している。 個人開発で継続的な収益を狙うなら、最初から完璧を目指さず、まずはニッチな課題を持つユーザー層を特定し、彼らの痛みに寄り添う小さなツールを素早くリリースすることが成功への近道だ。"
+      },
+      "en": {
+        "title": "How a solo developer scaled 'Blend' to $3,000 MRR by mastering MVP speed and niche audience targeting",
+        "summary": "The solo developer behind 'Blend' successfully scaled the platform to $3,000 in monthly recurring revenue by focusing on a specific, underserved niche rather than building a bloated, general-purpose application. Instead of spending months chasing perfection, the founder relied on a strict MVP approach, shipping essential functionality rapidly and iterating based directly on user feedback loops. This case study demonstrates that successful indie projects often thrive by solving one acute pain point exceptionally well for a small, dedicated cohort. For builders looking to monetize, the key takeaway is to prioritize market validation over complex features; by identifying a niche early and shipping a minimal, responsive product, you can start generating revenue while refining the tool based on actual user behavior and real-world demand."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-03T12:46:40.518Z"
+  },
+  {
     "id": "art-1793709302879-jr3xq",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -33730,32 +33836,6 @@
     "created_at": "2026-10-29T21:01:40.201Z"
   },
   {
-    "id": "art-1793305035063-wpnxx",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/nozomi_ai_ai/n/n021c844c46dd",
-    "published_at": "2026-10-29T18:59:55.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329978381/rectangle_large_type_2_9402c0c3c7bf56b944e44946780a61e8.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "知識ゼロからのアプリ開発：写真断捨離ツールをAIで形にするまでの「プロンプト以前」の壁と具体的なロードマップ",
-    "summary_ja": "プログラミング未経験者がAI活用でアプリを開発する際、最初にぶつかる「作りたいものをどう言語化し、誰にどう依頼すべきか」というハードルを解説。 単なるAIへの指示出しではなく、機能要件の整理からMVP策定、開発スキルの補完まで、個人開発者が最初に通るべきステップを実体験ベースで紐解く。 技術力ゼロでも、AIを「優秀なエンジニア」として扱い、開発プロセスを論理的に分解する手法が、個人アプリ完成への最短ルートだ。",
-    "translations": {
-      "ja": {
-        "title": "知識ゼロからのアプリ開発：写真断捨離ツールをAIで形にするまでの「プロンプト以前」の壁と具体的なロードマップ",
-        "summary": "プログラミング未経験者がAI活用でアプリを開発する際、最初にぶつかる「作りたいものをどう言語化し、誰にどう依頼すべきか」というハードルを解説。 単なるAIへの指示出しではなく、機能要件の整理からMVP策定、開発スキルの補完まで、個人開発者が最初に通るべきステップを実体験ベースで紐解く。 技術力ゼロでも、AIを「優秀なエンジニア」として扱い、開発プロセスを論理的に分解する手法が、個人アプリ完成への最短ルートだ。"
-      },
-      "en": {
-        "title": "From zero to launch: How non-technical founders use AI to build apps like photo organizers",
-        "summary": "For non-technical founders, the biggest barrier to building a photo-organizing app isn't just coding, but knowing how to articulate complex product requirements so AI can actually execute them. This breakdown explores the gap between having a rough idea and generating a working MVP, focusing on how to decompose features, structure logic, and manage development without writing a single line of code. Instead of hoping for magic, the key is treating your AI as a senior engineering partner who requires clear, modular task descriptions to succeed. The practical takeaway for indie builders is that mastering 'AI-native' requirement engineering is a more valuable skill than learning syntax, as it allows you to architect full-scale applications from scratch."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-29T20:17:15.063Z"
-  },
-  {
     "id": "art-1793304999632-obq33",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -41184,33 +41264,6 @@
     "created_at": "2026-10-28T11:04:29.002Z"
   },
   {
-    "id": "art-1793185424263-dvbh0",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.theregister.com/security/2026/10/27/ai-hacker-finds-4-severe-bugs-in-popular-industrial-control-software-in-under-4-hours/5305811",
-    "published_at": "2026-10-28T10:17:34.000Z",
-    "og_image_url": "https://image.theregister.com/5305858.jpg?imageId=5305858&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683",
-    "title_ja": "AIが主要な産業用制御ソフトウェアの脆弱性を4時間以内に4件特定、自動化攻撃の脅威が現実的に",
-    "summary_ja": "最新のAIエージェントが、広く導入されている産業用制御システムを対象としたセキュリティテストを実施し、4時間足らずで4つの深刻な脆弱性を自動的に特定した。 専門家の介入なしに未知のコードベースからゼロデイに近い欠陥を掘り起こすこの能力は、サイバー攻撃の効率を劇的に高める懸念がある。 開発者は、従来の静的解析に頼るだけでなく、AIによる能動的な攻撃シナリオを前提としたセキュリティ・バイ・デザインの強化が急務となっている。",
-    "translations": {
-      "ja": {
-        "title": "AIが主要な産業用制御ソフトウェアの脆弱性を4時間以内に4件特定、自動化攻撃の脅威が現実的に",
-        "summary": "最新のAIエージェントが、広く導入されている産業用制御システムを対象としたセキュリティテストを実施し、4時間足らずで4つの深刻な脆弱性を自動的に特定した。 専門家の介入なしに未知のコードベースからゼロデイに近い欠陥を掘り起こすこの能力は、サイバー攻撃の効率を劇的に高める懸念がある。 開発者は、従来の静的解析に頼るだけでなく、AIによる能動的な攻撃シナリオを前提としたセキュリティ・バイ・デザインの強化が急務となっている。"
-      },
-      "en": {
-        "title": "AI automates discovery of 4 severe vulnerabilities in industrial control software in under 4 hours",
-        "summary": "A sophisticated AI agent recently demonstrated the potential for automated cyber exploitation by uncovering four severe vulnerabilities in widely deployed industrial control software in less than four hours. This feat highlights a significant escalation in offensive capabilities, as the AI autonomously parsed complex, unfamiliar codebases to identify exploitable flaws without any human intervention. For software engineers and security architects, this shift necessitates moving beyond traditional static analysis tools. The practical takeaway is that relying on conventional perimeter defense is no longer sufficient; builders must now anticipate AI-driven offensive scenarios during the development lifecycle, emphasizing security-by-design principles that assume an intelligent, relentless attacker is actively probing for logic flaws in production-grade code."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-28T11:03:44.263Z"
-  },
-  {
     "id": "art-1793185381499-wpd47",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -41368,33 +41421,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-28T11:01:31.343Z"
-  },
-  {
-    "id": "art-1793179032529-3pzh1",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://nlnet.nl/news/2026/20261020-AI-policy.html",
-    "published_at": "2026-10-28T09:12:34.000Z",
-    "og_image_url": null,
-    "title_ja": "オランダの非営利団体NLnetが生成AI利用ポリシーを厳格化、透明性と倫理規定を強化しオープンソースエコシステムへの影響を明文化",
-    "summary_ja": "オランダの助成団体NLnetが生成AIの利用ポリシーを改定し、透明性と説明責任を大幅に強化した。 AI生成コンテンツの利用には明示的なラベル付けを必須とし、著作権や倫理的な懸念を考慮した厳格なガイドラインを定めている。 オープンソースプロジェクトを支援する立場として、コード生成や文書作成におけるAIの利用がプロジェクトの完全性を損なわないための基準を策定しており、OSS開発に携わるエンジニアは今後のプロジェクト管理においてこの新たな基準への準拠が求められることになるだろう。",
-    "translations": {
-      "ja": {
-        "title": "オランダの非営利団体NLnetが生成AI利用ポリシーを厳格化、透明性と倫理規定を強化しオープンソースエコシステムへの影響を明文化",
-        "summary": "オランダの助成団体NLnetが生成AIの利用ポリシーを改定し、透明性と説明責任を大幅に強化した。 AI生成コンテンツの利用には明示的なラベル付けを必須とし、著作権や倫理的な懸念を考慮した厳格なガイドラインを定めている。 オープンソースプロジェクトを支援する立場として、コード生成や文書作成におけるAIの利用がプロジェクトの完全性を損なわないための基準を策定しており、OSS開発に携わるエンジニアは今後のプロジェクト管理においてこの新たな基準への準拠が求められることになるだろう。"
-      },
-      "en": {
-        "title": "NLnet tightens generative AI usage policies for open-source grants, mandating stricter disclosure and ethical compliance standards",
-        "summary": "The Dutch non-profit funding body NLnet has updated its generative AI policy to implement far more stringent requirements regarding transparency and accountability. The new guidelines now mandate explicit labeling for any AI-generated content, placing heavy emphasis on mitigating copyright risks and addressing ethical concerns within supported open-source projects. By defining clear boundaries for how AI tools can assist with code generation or documentation without compromising project integrity, NLnet is setting a distinct standard for the ecosystem. For builders reliant on grant-based funding for open-source development, this shift signals that demonstrating provenance and ethical AI utilization will become a crucial requirement for maintaining eligibility and project governance in the upcoming development cycles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-10-28T09:17:12.529Z"
   },
   {
     "id": "art-1793178985451-7zw7t",
@@ -53081,32 +53107,6 @@
       "研究"
     ],
     "created_at": "2026-10-25T11:51:51.070Z"
-  },
-  {
-    "id": "art-1792929095143-me9ac",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/rikachiii/articles/03c7f77393a772",
-    "published_at": "2026-10-25T10:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--tMtOtD3e--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:POPOPO%2520%25E3%2581%25A8%2520AI%2520%25E9%2596%258B%25E7%2599%25BA%2520-%252003.%2520AI%2520%25E3%2582%2592%25E6%25B4%25BB%25E3%2581%258B%25E3%2581%2599%25E5%25BF%2583%25E6%25A7%258B%25E3%2581%2588%25E3%2583%25BB%25E3%2583%258E%25E3%2582%25A6%25E3%2583%258F%25E3%2582%25A6%2520-AI%2520%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E6%2596%25B0%25E4%25BA%25BA%25E3%2582%2592%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25AB%25E8%25BF%258E%25E3%2581%2588%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB-%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:rikachiii%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QzOTQ5NmZmOWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Devinをチームに迎える心得：AI開発で「知見とコンテキスト」を共有し、自律的な開発環境を構築するための具体的ノウハウ",
-    "summary_ja": "POPOPO社のバックエンドチームは、コーディングエージェントDevinを「AIという新人」として迎え入れ、開発コンテキストの共有と開発手法の透明化を実現した。 AIを単なる作業ツールではなくチームの一員と見なすことで、個人の知見が組織全体に蓄積されるフローを確立している。 AIエージェントを最大限活用するには、ツール導入後の運用ルール策定と、開発プロセスそのもののオープン化が不可欠だという教訓である。",
-    "translations": {
-      "ja": {
-        "title": "Devinをチームに迎える心得：AI開発で「知見とコンテキスト」を共有し、自律的な開発環境を構築するための具体的ノウハウ",
-        "summary": "POPOPO社のバックエンドチームは、コーディングエージェントDevinを「AIという新人」として迎え入れ、開発コンテキストの共有と開発手法の透明化を実現した。 AIを単なる作業ツールではなくチームの一員と見なすことで、個人の知見が組織全体に蓄積されるフローを確立している。 AIエージェントを最大限活用するには、ツール導入後の運用ルール策定と、開発プロセスそのもののオープン化が不可欠だという教訓である。"
-      },
-      "en": {
-        "title": "How to effectively integrate Devin into your engineering team: Best practices for sharing AI context and scaling development",
-        "summary": "The backend team at POPOPO chose Devin not merely as a coding tool but as a 'new hire' that acts as an integrated team member. By treating the AI agent this way, they ensure that development context is automatically captured and technical knowledge is democratized across the organization, rather than siloed within individual developers. The team highlights that the true value of AI agents emerges when the development process becomes transparent and parallelized. For teams looking to scale, the core takeaway is that tool selection is secondary to defining rigorous operational habits that treat AI as a persistent entity. Success relies on structuring workflows so that AI-driven insights remain accessible, actionable, and part of the team's shared memory."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-25T11:51:35.143Z"
   },
   {
     "id": "art-1792929060059-d6g8k",
