@@ -1,5 +1,58 @@
 [
   {
+    "id": "art-1793699714124-t59og",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.00165",
+    "published_at": "2026-11-03T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "オンライン小売の動的価格設定と入札を最適化：在庫状況と連動した「事後サンプリングエージェント」の研究発表",
+    "summary_ja": "arXivで公開された研究では、生鮮品などの販売において、スポンサー広告の入札額とバンドル割引を同時に最適化する「事後サンプリングエージェント」を提案している。 販売者は市場反応や需要の不確実性を抱え、自身の行動によるデータ欠損（選択しなかった行動の結果が観測できない問題）に直面するが、このモデルは各期間の事後分布から市場状態をサンプリングし、最適な戦略を決定する。 これにより、限られたデータから効率的に学習し、収益を最大化する実用的な意思決定フレームワークを実現している。",
+    "translations": {
+      "ja": {
+        "title": "オンライン小売の動的価格設定と入札を最適化：在庫状況と連動した「事後サンプリングエージェント」の研究発表",
+        "summary": "arXivで公開された研究では、生鮮品などの販売において、スポンサー広告の入札額とバンドル割引を同時に最適化する「事後サンプリングエージェント」を提案している。 販売者は市場反応や需要の不確実性を抱え、自身の行動によるデータ欠損（選択しなかった行動の結果が観測できない問題）に直面するが、このモデルは各期間の事後分布から市場状態をサンプリングし、最適な戦略を決定する。 これにより、限られたデータから効率的に学習し、収益を最大化する実用的な意思決定フレームワークを実現している。"
+      },
+      "en": {
+        "title": "Researchers introduce posterior-sampling agents to optimize bidding and bundling for perishable goods in online retail",
+        "summary": "A new paper on arXiv introduces a posterior-sampling agent designed for online retailers handling perishable inventory, specifically optimizing sponsored-search bidding alongside bundling strategies. Retailers often struggle with censored data where market responses are only visible for chosen actions, and this agent solves that by drawing from a market's exact posterior distribution each period to execute an optimal plan. By treating each action as one a fully informed seller would take, the model overcomes the dual challenges of unknown click-through rates and dispersed market demand. For builders working on algorithmic commerce or dynamic pricing tools, the approach highlights how Bayesian methods can effectively close the feedback loop in environments where experimental data is incomplete and costly to obtain."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-03T09:55:14.124Z"
+  },
+  {
+    "id": "art-1793699602644-5qmn1",
+    "source_id": "source-github-trending",
+    "source_name": "GitHub Trending (AI / TypeScript / Python)",
+    "url": "https://github.com/JustVugg/colibri",
+    "published_at": "2026-11-03T09:53:22.644Z",
+    "og_image_url": null,
+    "title_ja": "GPU不要・依存なしの純C言語エンジン「colibri」、巨大MoEモデルをディスクストリーミングでローカル実行可能に",
+    "summary_ja": "「colibri」は、数百億パラメータ規模のMoE（Mixture-of-Experts）モデルを、GPUや複雑な依存関係なしにローカル環境で実行するための軽量エンジン。 モデル全体をメモリに展開するのではなく、推論に必要な専門家（Expert）パラメータのみをディスクから随時読み込むことで、一般的なハードウェアでの動作を実現している。 大規模言語モデルをコストや環境の制約なく、手元のPCで動かしたいエンジニアにとって、メモリ効率を劇的に改善する有力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "GPU不要・依存なしの純C言語エンジン「colibri」、巨大MoEモデルをディスクストリーミングでローカル実行可能に",
+        "summary": "「colibri」は、数百億パラメータ規模のMoE（Mixture-of-Experts）モデルを、GPUや複雑な依存関係なしにローカル環境で実行するための軽量エンジン。 モデル全体をメモリに展開するのではなく、推論に必要な専門家（Expert）パラメータのみをディスクから随時読み込むことで、一般的なハードウェアでの動作を実現している。 大規模言語モデルをコストや環境の制約なく、手元のPCで動かしたいエンジニアにとって、メモリ効率を劇的に改善する有力な選択肢となる。"
+      },
+      "en": {
+        "title": "Colibri: A pure C engine that runs massive MoE models locally without GPUs by streaming experts from disk",
+        "summary": "Colibri is a lightweight, dependency-free inference engine built in pure C that enables running massive Mixture-of-Experts (MoE) models on standard consumer hardware. Instead of requiring massive VRAM to load entire parameters, Colibri keeps only the necessary experts active in RAM while streaming the remaining model components on-demand directly from the disk. By bypassing the need for high-end GPUs and complex software stacks, it drastically reduces hardware barriers for local model deployment. For builders seeking to integrate large open-source LLMs without the overhead of massive memory clusters or specialized acceleration, this architecture provides a highly efficient and portable path to production, demonstrating that sophisticated model serving can often be achieved through optimized disk-to-RAM streaming strategies rather than brute-force VRAM scaling."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-03T09:53:22.644Z"
+  },
+  {
     "id": "art-1793697662168-joz3g",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -35215,32 +35268,6 @@
     "created_at": "2026-10-29T14:32:02.051Z"
   },
   {
-    "id": "art-1793284315645-a0r8l",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yuki_log1225/n/na2421ab7bd38",
-    "published_at": "2026-10-29T14:29:10.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/321559421/rectangle_large_type_2_a2c3a3786953dadb76d98707209a2d3e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発アプリへの「変動費見える化」実装、2ヶ月の運用で見えた「残金表示」より重要な指標とは",
-    "summary_ja": "個人開発の日記アプリに変動費の可視化機能を実装し、2ヶ月間運用した結果、多くの人が期待する「残金表示」は浪費防止にほとんど効果がないことが判明した。 一方で、単純に「今期使った総額」を即座に把握できる仕組みは、家計管理における有効な指標として機能した。 開発者は機能の「それっぽい効能」を鵜呑みにせず、実際に自分が継続利用した際の実体験に基づいて、本当に価値のある指標だけをアプリに残すべきである。",
-    "translations": {
-      "ja": {
-        "title": "個人開発アプリへの「変動費見える化」実装、2ヶ月の運用で見えた「残金表示」より重要な指標とは",
-        "summary": "個人開発の日記アプリに変動費の可視化機能を実装し、2ヶ月間運用した結果、多くの人が期待する「残金表示」は浪費防止にほとんど効果がないことが判明した。 一方で、単純に「今期使った総額」を即座に把握できる仕組みは、家計管理における有効な指標として機能した。 開発者は機能の「それっぽい効能」を鵜呑みにせず、実際に自分が継続利用した際の実体験に基づいて、本当に価値のある指標だけをアプリに残すべきである。"
-      },
-      "en": {
-        "title": "Building a 'Variable Expense' feature for a personal app: Why showing remaining budget failed, but total spent succeeded",
-        "summary": "After integrating a variable expense visualization feature into a personal diary app and dogfooding it for two months, I discovered that the common 'remaining budget' display had almost zero impact on preventing overspending. However, the ability to see the total amount spent for the period at a glance proved to be a highly effective metric for financial awareness. For independent developers, the key lesson is not to bake features based on speculative utility or popular trends. Instead, you must rigorously validate whether a feature actually changes your own behavior before keeping it in your codebase. Sometimes, stripping away the complex logic and focusing only on the raw, simple data that actually influences daily decisions creates a much stronger product."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-29T14:31:55.645Z"
-  },
-  {
     "id": "art-1793284309140-mbj74",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -52314,32 +52341,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-25T13:00:33.304Z"
-  },
-  {
-    "id": "art-1792930370149-de04v",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/minegishirei_v2/items/328c61ae7f634a128037",
-    "published_at": "2026-10-25T10:51:22.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMTY3ODIyOCUyRnByb2ZpbGUtaW1hZ2VzJTJGMTY4MzI3MTQwMz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NTE5MTlkMzk3MmNjM2Y2YzEzOGU0ZmM5MWFhYmNmMTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D8a90aeb67b2ca4f584da764e56361265?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9TUxPcHMlRTUlODUlQTUlRTklOTYlODAlRUYlQkMlOUElRTUlQUQlQTYlRTclQkYlOTIlRTMlODMlOTElRTMlODIlQTQlRTMlODMlOTclRTMlODMlQTklRTMlODIlQTQlRTMlODMlQjMlRTMlODElOEIlRTMlODIlODlNTGZsb3clRTMlODElQTclRTMlODElQUUlRTMlODMlQTIlRTMlODMlODclRTMlODMlQUIlRTclQUUlQTElRTclOTAlODYlRTMlODAlODFCZW50b01MJUUzJTgzJUJCRmxhc2slRTMlODElQUIlRTMlODIlODglRTMlODIlOEIlRTMlODIlQjUlRTMlODMlQkMlRTMlODMlOTMlRTMlODMlQjMlRTMlODIlQjAlRTMlODElQkUlRTMlODElQTclRTMlODIlOTJEJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YjZhNzNmNTk3MjY5NTQ4MDgxZDI5YTQ4MzAxNTVlZDQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtaW5lZ2lzaGlyZWlfdjImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05MjVmOTcwZTE2NzkwODgxMGQ4YTdmZjBmZGE1ODBkNw&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a1579389a44fc239a3f3fbb9cd40adb8",
-    "title_ja": "MLOpsの全工程をDockerで構築：学習パイプラインからMLflowでのモデル管理、BentoML・Flaskでのサービングまでの一気通貫実装手法",
-    "summary_ja": "機械学習モデルの開発では、モデル作成後の実験管理やデプロイ、サービングの自動化といったMLOpsの設計が重要となる。 本記事では、Iris分類モデルを題材に、学習パイプラインからMLflowによる実験管理、BentoMLとFlaskを組み合わせた推論APIのサービングまでをDockerコンテナで一気通貫に構築する手法を解説する。 開発環境から本番デプロイまでを再現可能な形でパッケージ化することは、属人化を防ぎ、モデル運用の効率を最大化する鍵である。",
-    "translations": {
-      "ja": {
-        "title": "MLOpsの全工程をDockerで構築：学習パイプラインからMLflowでのモデル管理、BentoML・Flaskでのサービングまでの一気通貫実装手法",
-        "summary": "機械学習モデルの開発では、モデル作成後の実験管理やデプロイ、サービングの自動化といったMLOpsの設計が重要となる。 本記事では、Iris分類モデルを題材に、学習パイプラインからMLflowによる実験管理、BentoMLとFlaskを組み合わせた推論APIのサービングまでをDockerコンテナで一気通貫に構築する手法を解説する。 開発環境から本番デプロイまでを再現可能な形でパッケージ化することは、属人化を防ぎ、モデル運用の効率を最大化する鍵である。"
-      },
-      "en": {
-        "title": "Building an End-to-End MLOps Pipeline: From Training to MLflow Model Management and Serving with BentoML and Flask via Docker",
-        "summary": "Effective MLOps goes beyond merely training models; it requires robust automation for experimentation, tracking, and seamless deployment. This guide walks through constructing an end-to-end machine learning pipeline using the classic Iris dataset, utilizing Docker to package every critical component. The workflow demonstrates how to integrate MLflow for centralized experiment management and version control, then exposes the model as an inference API using BentoML and Flask. By containerizing the full lifecycle—from data preprocessing and model training to serving—engineers can eliminate environment drift and accelerate delivery cycles. For builders focused on shipping AI features, mastering these containerized patterns is essential for ensuring that research-phase models translate reliably into scalable, production-ready production services with minimal friction during deployment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-25T12:12:50.149Z"
   },
   {
     "id": "art-1792930356366-0spze",
