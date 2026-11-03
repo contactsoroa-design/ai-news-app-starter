@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1793709302879-jr3xq",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tango_lab/n/n0d0a4b7fcd2a",
+    "published_at": "2026-11-03T12:16:29.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/2c512026e389e695570ae73dbe811a7d0ead006f.png",
+    "title_ja": "JSからSwiftへゲームロジックを移植：黄金ベクタと1ULPの浮動小数点差異を克服し「着順不変」を実証する検証手法",
+    "summary_ja": "JavaScriptからSwiftへの育成レースゲーム移植において、開発者は「黄金ベクタ」テストを導入し、19件のレースと4件の育成シナリオでJS版との完全一致を確認した。 浮動小数点演算の差異による影響を検証するため、Math.hypotの代替やsin/cosの1ULP（最小有効ビット）偏差を強制したシミュレーションを計7,000レース実施。 その結果、どちらの場合も最終的なレースの着順に変化がないことを実測で証明した。",
+    "translations": {
+      "ja": {
+        "title": "JSからSwiftへゲームロジックを移植：黄金ベクタと1ULPの浮動小数点差異を克服し「着順不変」を実証する検証手法",
+        "summary": "JavaScriptからSwiftへの育成レースゲーム移植において、開発者は「黄金ベクタ」テストを導入し、19件のレースと4件の育成シナリオでJS版との完全一致を確認した。 浮動小数点演算の差異による影響を検証するため、Math.hypotの代替やsin/cosの1ULP（最小有効ビット）偏差を強制したシミュレーションを計7,000レース実施。 その結果、どちらの場合も最終的なレースの着順に変化がないことを実測で証明した。"
+      },
+      "en": {
+        "title": "Porting Game Logic from JS to Swift: Validating Deterministic Race Outcomes Despite Floating-Point Differences and 1ULP Deviations",
+        "summary": "To port a horse-racing simulation from JavaScript to Swift, the developer utilized a \"Golden Vector\" strategy, capturing JS outputs as JSON to serve as a strict baseline for Swift unit tests across 19 race scenarios and 4 training cycles. Since floating-point arithmetic varies between environments, the author performed stress tests—swapping Math.hypot with manual calculations and injecting 1ULP deviations into sin/cos functions—to verify if these discrepancies altered race outcomes. Across 7,000 simulated races, the ranking remained consistent. For developers, this demonstrates that maintaining strict bit-perfect equality across languages is often less critical than mathematically proving that slight floating-point drifts do not cascade into significant behavioral changes within game logic or core business algorithms."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-03T12:35:02.879Z"
+  },
+  {
+    "id": "art-1793709296340-jb1bl",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/fnao/items/bce5e38205ad8f52fab5",
+    "published_at": "2026-11-03T12:26:49.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDAyNTYwJTJGOGE0NTU3MDc2YzllOTNkMTIyZjMyOGQyMmQxZjUyZTk0YThmMGExMCUyRnhfbGFyZ2UucG5nJTNGMTc4MjEzNDI1Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MzExY2M5NDU3NzRhOGQ2MWFiYWVjNzliZWUwMTdiZmQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dbe4fcf5e119c894dc255284c0f6bfbcc?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU3JTk0JTlGJUU2JTg4JTkwQUklRTMlODIlQTIlRTMlODMlOTclRTMlODMlQUElRTMlODIlQjElRTMlODMlQkMlRTMlODIlQjclRTMlODMlQTclRTMlODMlQjMlRTklOTYlOEIlRTclOTklQkElRTMlODAlOTAlRTMlODIlQjclRTMlODIlQjklRTMlODMlODYlRTMlODMlQTAlRTMlODMlOTclRTMlODMlQUQlRTMlODMlQjMlRTMlODMlOTclRTMlODMlODg3JUUzJTgxJThCJUU2JTlEJUExJUUzJTgwJTkxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YjNkNTJiYzliYmU5ZWJiMmFjMjJmZDIwNWRkOTU1MDc&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmbmFvJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9M2I4MDA4ZDdhNTk4MWFkYTg4MWYyYzk2NWVkN2U2NjY&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=439e158f9cd34a3c418fd1c6bd8da759",
+    "title_ja": "生成AIアプリ開発におけるシステムプロンプト最適化の7か条：回答精度を劇的に向上させる構造化と制約設定のベストプラクティス",
+    "summary_ja": "生成AIアプリケーション開発において、回答精度と挙動の安定性を左右する「システムプロンプト」の設計原則がまとめられた。 AIの役割定義、出力フォーマットの厳格化、コンテキスト制約など、開発者が陥りやすい曖昧さを排除する7つのチェックポイントを提示。 プロンプトエンジニアリングを単なる試行錯誤で終わらせず、仕様として実装することで、プロダクトのUX品質を底上げするための実践的なガイドラインとなる。",
+    "translations": {
+      "ja": {
+        "title": "生成AIアプリ開発におけるシステムプロンプト最適化の7か条：回答精度を劇的に向上させる構造化と制約設定のベストプラクティス",
+        "summary": "生成AIアプリケーション開発において、回答精度と挙動の安定性を左右する「システムプロンプト」の設計原則がまとめられた。 AIの役割定義、出力フォーマットの厳格化、コンテキスト制約など、開発者が陥りやすい曖昧さを排除する7つのチェックポイントを提示。 プロンプトエンジニアリングを単なる試行錯誤で終わらせず、仕様として実装することで、プロダクトのUX品質を底上げするための実践的なガイドラインとなる。"
+      },
+      "en": {
+        "title": "Seven essential principles for optimizing system prompts in generative AI applications to drastically improve response accuracy and behavioral consistency",
+        "summary": "Building production-grade AI applications requires moving beyond casual prompting toward structured system prompt engineering. This guide outlines seven critical principles for defining model roles, strict output formatting, and context constraints that eliminate common hallucinations and vague behaviors. By treating system instructions as functional specifications rather than conversational guidelines, developers can significantly stabilize outputs and improve end-user experiences. The core takeaway for builders is that consistent app performance depends on codifying clear boundaries within the system prompt early in the development lifecycle. Instead of relying on iterative adjustments, implementing these documented constraints ensures the AI maintains a predictable persona and reliably returns the specific data formats your application logic requires to function correctly at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-03T12:34:56.340Z"
+  },
+  {
+    "id": "art-1793709286562-hiz6r",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.nordicsemi.com/Nordic-news/2026/11/Nordic-brings-edge-AI-to-battery-powered-WiFi-devices-20-times-lower-standby-power-with-nRF71-Series",
+    "published_at": "2026-11-03T12:03:33.000Z",
+    "og_image_url": null,
+    "title_ja": "Nordicが新チップ「nRF71」を発表、Wi-Fi/BLE/Thread対応で待機電力を従来比20分の1に削減しエッジAI処理も実現",
+    "summary_ja": "Nordic Semiconductorが発表した「nRF71」シリーズは、Wi-Fi、Bluetooth LE、Threadを単一チップでサポートする初の製品だ。 最大の特徴は待機電力を従来製品比で20分の1に抑えつつ、オンデバイスでのAI推論実行を可能にした点にある。 バッテリー駆動のIoTデバイスにおいて、接続性とAI処理の両立はこれまで大きな壁であったが、本チップにより省電力かつインテリジェントなエッジ推論の実装が現実的な選択肢となった。",
+    "translations": {
+      "ja": {
+        "title": "Nordicが新チップ「nRF71」を発表、Wi-Fi/BLE/Thread対応で待機電力を従来比20分の1に削減しエッジAI処理も実現",
+        "summary": "Nordic Semiconductorが発表した「nRF71」シリーズは、Wi-Fi、Bluetooth LE、Threadを単一チップでサポートする初の製品だ。 最大の特徴は待機電力を従来製品比で20分の1に抑えつつ、オンデバイスでのAI推論実行を可能にした点にある。 バッテリー駆動のIoTデバイスにおいて、接続性とAI処理の両立はこれまで大きな壁であったが、本チップにより省電力かつインテリジェントなエッジ推論の実装が現実的な選択肢となった。"
+      },
+      "en": {
+        "title": "Nordic Semiconductor unveils nRF71 Series, combining Wi-Fi, BLE, and Thread with 20× lower standby power and on-device AI",
+        "summary": "Nordic Semiconductor has announced the nRF71 Series, its latest system-on-chip solution that integrates Wi-Fi, Bluetooth LE, and Thread connectivity into a single, power-efficient package. The standout capability is a massive 20× reduction in standby power consumption compared to previous hardware, all while providing the compute headroom required for on-device AI inference tasks. For developers building battery-powered IoT hardware, this removes the historic trade-off between wireless connectivity and local intelligence. By enabling sophisticated AI inference without sacrificing long-term battery autonomy, the nRF71 paves the way for smarter, autonomous edge devices that do not rely on constant cloud uplinks for data processing, simplifying the architecture for next-generation smart home and industrial sensor deployments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-03T12:34:46.562Z"
+  },
+  {
+    "id": "art-1793709273302-rel86",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/automemes-ai-create-viral-memes-in-seconds",
+    "published_at": "2026-11-02T19:06:35+00:00",
+    "og_image_url": null,
+    "title_ja": "AIでバイラルなミームを瞬時に生成する「Automemes AI」：個人開発者が語るSNS運用を効率化するAI自動化戦略とマネタイズ術",
+    "summary_ja": "Automemes AIは、トレンドのトピックからSNS向けミームを数秒で自動生成し、投稿運用を劇的に効率化するツールだ。 個人開発者が構築した本サービスは、手動でのクリエイティブ作成に追われる運用担当者の課題をAIで解決し、バイラル性の高いコンテンツ供給を実現する。 SNS集客における「投稿のネタ切れ」や「作成コスト」というボトルネックを技術で解消し、一貫性のあるブランド発信を支援する開発者の視点が示されている。",
+    "translations": {
+      "ja": {
+        "title": "AIでバイラルなミームを瞬時に生成する「Automemes AI」：個人開発者が語るSNS運用を効率化するAI自動化戦略とマネタイズ術",
+        "summary": "Automemes AIは、トレンドのトピックからSNS向けミームを数秒で自動生成し、投稿運用を劇的に効率化するツールだ。 個人開発者が構築した本サービスは、手動でのクリエイティブ作成に追われる運用担当者の課題をAIで解決し、バイラル性の高いコンテンツ供給を実現する。 SNS集客における「投稿のネタ切れ」や「作成コスト」というボトルネックを技術で解消し、一貫性のあるブランド発信を支援する開発者の視点が示されている。"
+      },
+      "en": {
+        "title": "Automemes AI: How a solo developer built a tool to generate viral social media memes in seconds to automate growth",
+        "summary": "Automemes AI leverages generative models to create viral-ready social media memes in mere seconds, effectively eliminating the bottleneck of manual content creation for busy creators. Built by a solo developer, the tool addresses the persistent pain point of content exhaustion by automating the visual design process, allowing brands to maintain high posting frequencies without sacrificing quality. The service demonstrates how focused AI wrappers can solve specific workflow gaps in social media marketing, transforming repetitive design tasks into an automated pipeline. For independent builders, this journey underscores the value of identifying high-friction operational tasks in content strategy and automating them into a scalable, revenue-generating SaaS product that directly boosts user engagement metrics."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-11-03T12:34:33.302Z"
+  },
+  {
     "id": "art-1793707372471-txac0",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -33837,32 +33941,6 @@
     "created_at": "2026-10-29T19:02:42.318Z"
   },
   {
-    "id": "art-1793300555588-89ruk",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/carewave/n/na1110c953410",
-    "published_at": "2026-10-29T17:48:33.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329974600/rectangle_large_type_2_5c4df8f1ec46b5e1ca0246662c68e385.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Codeが開発した「釣りゲーム」、AI自らがプレイして効率化成功（人間：43投3匹 vs AI：11投9匹）",
-    "summary_ja": "Claude Codeを活用し、AIがGodotエンジンを操作して一から釣りゲームを開発した。 AIは投げ釣りから魚の図鑑機能、巻き上げの仕組みまでを実装し、さらに自らゲームをプレイして改善を重ねた。 結果として、人間が操作した際に43回投げて3匹だった釣果を、AI自身が作った仕組みでは11回で9匹にまで向上させている。 AIが単なるコード生成に留まらず、テストプレイと最適化までをループさせることで、ゲームバランスの調整効率が飛躍的に高まることを証明した。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeが開発した「釣りゲーム」、AI自らがプレイして効率化成功（人間：43投3匹 vs AI：11投9匹）",
-        "summary": "Claude Codeを活用し、AIがGodotエンジンを操作して一から釣りゲームを開発した。 AIは投げ釣りから魚の図鑑機能、巻き上げの仕組みまでを実装し、さらに自らゲームをプレイして改善を重ねた。 結果として、人間が操作した際に43回投げて3匹だった釣果を、AI自身が作った仕組みでは11回で9匹にまで向上させている。 AIが単なるコード生成に留まらず、テストプレイと最適化までをループさせることで、ゲームバランスの調整効率が飛躍的に高まることを証明した。"
-      },
-      "en": {
-        "title": "Claude Code builds a fishing game in Godot, then optimizes play mechanics to outperform humans (9 fish in 11 casts)",
-        "summary": "A developer utilized Claude Code to engineer a complete fishing simulation within the Godot game engine, allowing the AI to autonomously navigate the interface, implement core mechanics like casting and reeling, and build features including a fish encyclopedia and timed challenges. The AI didn't just write the code; it continuously play-tested its own build to refine game difficulty. By iterating based on its own gameplay data, the agent dramatically improved performance, moving from a baseline of 3 fish in 43 casts to an impressive 9 fish in just 11 casts. This experiment highlights how AI agents that can observe, code, and play-test in a loop can drastically accelerate game balancing and mechanic optimization, moving beyond simple code generation into actual game design and tuning."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-29T19:02:35.588Z"
-  },
-  {
     "id": "art-1793300536786-o4kw3",
     "source_id": "source-openai",
     "source_name": "OpenAI 公式",
@@ -41448,32 +41526,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-10-28T09:04:40.426Z"
-  },
-  {
-    "id": "art-1793178238065-0c6he",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.theguardian.com/technology/2026/oct/27/reviewers-slate-musk-ai-grok-odyssey-film-nolan",
-    "published_at": "2026-10-28T08:49:11.000Z",
-    "og_image_url": "https://i.guim.co.uk/img/media/f5bb844cbf76398948b5d3efa0fb0e79205a0c23/408_0_1983_1586/master/1983.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a766dd6103b58ad8cdf8e2385dd80db2",
-    "title_ja": "イーロン・マスク氏のAI制作映画「Odyssey」、酷評により公開直後に炎上──「スクリーンセーバー並みの無意味さ」と批判",
-    "summary_ja": "イーロン・マスク氏がGrok AIを用いて制作した短編映画「Odyssey」が、公開直後に批評家から「スクリーンセーバー以下の出来」「中身が空っぽ」と酷評を受け大きな波紋を呼んでいる。 映画はクリストファー・ノーラン監督作品へのオマージュを謳っていたが、生成AI特有の描写の不自然さや物語の整合性の欠如が露呈する結果となった。",
-    "translations": {
-      "ja": {
-        "title": "イーロン・マスク氏のAI制作映画「Odyssey」、酷評により公開直後に炎上──「スクリーンセーバー並みの無意味さ」と批判",
-        "summary": "イーロン・マスク氏がGrok AIを用いて制作した短編映画「Odyssey」が、公開直後に批評家から「スクリーンセーバー以下の出来」「中身が空っぽ」と酷評を受け大きな波紋を呼んでいる。 映画はクリストファー・ノーラン監督作品へのオマージュを謳っていたが、生成AI特有の描写の不自然さや物語の整合性の欠如が露呈する結果となった。"
-      },
-      "en": {
-        "title": "Elon Musk’s AI-generated film ‘Odyssey’ panned by critics as ‘meaningless’ and devoid of cinematic soul",
-        "summary": "Elon Musk’s short film 'Odyssey,' created entirely using Grok AI, has faced immediate backlash, with critics describing the final product as 'meaningless' and visually akin to a generic laptop screensaver. Despite marketing the project as a tribute to Christopher Nolan’s style, the film suffers from the common pitfalls of generative media, including uncanny, disjointed imagery and a complete lack of narrative cohesion. The harsh reception serves as a stark reminder that while generative models can mimic aesthetic high-fidelity, they currently fail to replicate the intentional storytelling, emotional resonance, and structural logic required for compelling cinema. For AI developers, the incident underscores the growing divide between raw visual output and the human-centric craft needed to truly engage an audience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "動画",
-      "研究"
-    ],
-    "created_at": "2026-10-28T09:03:58.065Z"
   },
   {
     "id": "art-1793178229969-sce00",
@@ -51631,32 +51683,6 @@
     "created_at": "2026-10-25T22:01:42.937Z"
   },
   {
-    "id": "art-1792965677808-gjzib",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/quotidia/items/792a3bc859dd738facee",
-    "published_at": "2026-10-25T21:01:10.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQzMzI3MSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc3OTAwNzIzNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YWY5NDIyNzdmMjZlOGJhMzVmYmZlY2IwOGU2ZWQ2NTA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df59d4b48280797c581d3f62880665fc3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODIlOTIlRTQlQkQlQkYlRTMlODElQTMlRTMlODElOUYlRTglQUElQkYlRTYlOUYlQkIlRTMlODElQTclRTglQTYlOEIlRTMlODElQTQlRTMlODElOEIlRTMlODElQTMlRTMlODElOUZQSFAlRTMlODElQUUlRTYlQUMlQTAlRTklOTklQTUlRTMlODAlOENQSFAyU2hlbGwlRTMlODAlOEQlRTMlODAlODElRTQlQkYlQUUlRTYlQUQlQTMlRTUlODUlQUMlRTklOTYlOEIlRTMlODElQUUlRTUlQTQlOUMlRTMlODElQUIlRTUlOUIlQkQlRTUlODYlODUlRTMlODElQUUlRTMlODIlQjUlRTMlODMlQkMlRTMlODMlOTMlRTMlODIlQjklRTMlODElOEMlRTQlQkElODglRTklOTglQjIlRTMlODElQUUlRTMlODElOUYlRTMlODIlODElRTclOUIlQjglRTYlQUMlQTElRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1iMzA0MWRmYzcxMTE1MzIxODEzMGFmYTE3M2QwMDg5NQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBxdW90aWRpYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTRhNjI0NjUzMTU4ODhjZWUzZDIxNjI0N2Q4Y2JjZDY2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=8c2cd39c5db8568332bef8e17b72f2bc",
-    "title_ja": "PHPに深刻な脆弱性「PHP2Shell」が発覚、修正版公開の直後に国内サービスが相次いで緊急メンテナンスへ",
-    "summary_ja": "PHPで中核となる深刻な脆弱性「PHP2Shell」が2026年10月21日に修正され、詳細が公開された。 これを受け、国内の主要Webサービスでは予防的なメンテナンスやサービス停止が相次いでいる。 OSSの言語ランタイムの脆弱性は全アプリケーションに直結するため、パッチ適用の迅速化だけでなく、影響範囲を可視化する構成管理体制の重要性が改めて問われている。",
-    "translations": {
-      "ja": {
-        "title": "PHPに深刻な脆弱性「PHP2Shell」が発覚、修正版公開の直後に国内サービスが相次いで緊急メンテナンスへ",
-        "summary": "PHPで中核となる深刻な脆弱性「PHP2Shell」が2026年10月21日に修正され、詳細が公開された。 これを受け、国内の主要Webサービスでは予防的なメンテナンスやサービス停止が相次いでいる。 OSSの言語ランタイムの脆弱性は全アプリケーションに直結するため、パッチ適用の迅速化だけでなく、影響範囲を可視化する構成管理体制の重要性が改めて問われている。"
-      },
-      "en": {
-        "title": "Critical 'PHP2Shell' vulnerabilities force immediate emergency maintenance across major Japanese web services following rapid patch release",
-        "summary": "On October 21, 2026, the PHP development project released patches for two severe vulnerabilities collectively dubbed 'PHP2Shell,' which compromised the core of the widespread programming language. Following the disclosure, many domestic web services in Japan entered emergency maintenance to prevent potential exploits. Because vulnerabilities in core language runtimes threaten the entire application stack, the incident highlights why simple patch management is insufficient. For engineers, this event serves as a stark reminder that beyond rapid patching, maintaining a clear map of your dependency infrastructure and automated deployment pipelines is essential to surviving zero-day events. Relying on outdated runtimes in production is no longer just a technical debt issue—it is a critical business liability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-25T22:01:17.808Z"
-  },
-  {
     "id": "art-1792965671674-re8j1",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -51759,32 +51785,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-25T19:44:23.059Z"
-  },
-  {
-    "id": "art-1792957393729-b8k1r",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/songchong/items/235bed0f8c72f268477e",
-    "published_at": "2026-10-25T19:00:21.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNTY2NzAlMkZwcm9maWxlLWltYWdlcyUyRjE3ODcyMzgxODE_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWU3NzQ3ZjMzNzE4MDJjYjI2M2FjMjM3NzUzODlmOTE5%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dc73920274995f5a321a69858db1e61f3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklMjAlRTMlODElQUIlRTglQjMlODclRTYlOTYlOTklRTMlODIlOTIlRTYlQUYlOEUlRTUlOUIlOUUlRTglQjIlQkMlRTMlODIlOEIlRTMlODElQUElRUYlQkMlODElRTMlODMlOTUlRTMlODIlQTElRTMlODIlQTQlRTMlODMlQUIlRTMlODMlQkJTS0lMTCVFMyU4MyVCQkFHRU5UUy5tZCUyMCVFNiVCNCVCQiVFNyU5NCVBOCVFMyU4MSVBNyVFMyU4MyU4OCVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MyVCMyVFOCVBQSVCMiVFOSU4NyU5MSVFNiU5QyU4MCVFNSVBNCVBNyUyMDYlMjAlRTUlODklQjIlRTYlQjglOUIlRUYlQkMlOUYlMjA2JTIwJUUzJTgxJUE0JUUzJTgxJUFFJUU2JTk2JUI5JUU2JUIzJTk1JUUzJTgyJTkyJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NmU5YWJmOWQ2ZjE3MGNiYTVlZGZmMWQzNDNkZDk3ZjY&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzb25nY2hvbmcmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1jYThhODE5MGI3ZTMyOWM0MDRkZTcyYjU3YzZiNzYwNA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=149e4dc654a7533426fe568d6a5bf213",
-    "title_ja": "プロンプトキャッシュでAIコストを6割削減：毎回資料を貼らずに「ファイル・SKILL・AGENTS.md」でコンテキストを最適化する6つの手法",
-    "summary_ja": "AIへの資料入力を最適化し、プロンプトキャッシュを活用してトークン料金を最大6割削減する6つの実践的手法を検証した。 毎回長大な資料を貼り付けるのではなく、外部ファイル参照やSKILL定義、AGENTS.mdによるコンテキスト管理を導入することで、AIの入力冗長性を劇的に排除できる。 開発者は、APIコストを抑えつつAIの推論精度を維持するための構造化データ設計を最優先すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "プロンプトキャッシュでAIコストを6割削減：毎回資料を貼らずに「ファイル・SKILL・AGENTS.md」でコンテキストを最適化する6つの手法",
-        "summary": "AIへの資料入力を最適化し、プロンプトキャッシュを活用してトークン料金を最大6割削減する6つの実践的手法を検証した。 毎回長大な資料を貼り付けるのではなく、外部ファイル参照やSKILL定義、AGENTS.mdによるコンテキスト管理を導入することで、AIの入力冗長性を劇的に排除できる。 開発者は、APIコストを抑えつつAIの推論精度を維持するための構造化データ設計を最優先すべきだ。"
-      },
-      "en": {
-        "title": "Slash AI token costs by 60% with prompt caching and context optimization using files, skills, and agents.md",
-        "summary": "This technical deep dive explores six practical methods to optimize context input, leveraging prompt caching to reduce token usage by up to 60%. Instead of pasting redundant documentation into every prompt, builders can utilize external file references, modular SKILL definitions, and AGENTS.md documentation to manage context state effectively. These strategies prevent the AI from repeatedly re-processing identical prompt headers, thereby capitalizing on cache hits. For developers and AI engineers, the core takeaway is that structuring data inputs via static manifests and modular tool definitions is no longer just about organization—it is a mandatory architectural step to keep inference costs sustainable while maintaining high model performance as project complexity scales."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-10-25T19:43:13.729Z"
   },
   {
     "id": "art-1792936947593-4bet0",
