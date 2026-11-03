@@ -1,5 +1,13 @@
 [
   {
+    "url": "https://docs.devin.ai/release-notes/overview#november-2-2026",
+    "source_id": "source-devin",
+    "title": "November 2, 2026: Clearer Read-only Access in the Composer Viewers who can read but not write to a session now see tha",
+    "pubDate": "2026-11-03T01:16:22.000Z",
+    "snippet": "Clearer Read-only Access in the Composer Viewers who can read but not write to a session now see that they lack write access in the composer, and \"Continue in a new session\" is offered only when the new session will be able to read this one. \"Fix with Devin\" Links to the Session On a blueprint build page, the \"Fix with Devin\" toast links straight to the session handling the fix when the batch lands in one session, and points at the rows otherwise. Multi-repo Scans up to 1,000 Repositories The per-scan repository cap for code scans is raised from 500 to 1,000 in the UI and the API. Auto-scan Controls and Schedules Auto-scan can be turned on or off from a session's Findings tab, a scan's auto-scan schedule is shown in the scan detail and the Devin MCP get_scan tool, and the threat-model lead offers weekly or monthly incremental scans when it finishes. Findings Improvements The Findings tab",
+    "saved_at": "2026-11-03T01:32:51.294Z"
+  },
+  {
     "url": "https://zenn.dev/ichiro_ai90/books/ichiro-90days-v2",
     "source_id": "source-zenn",
     "title": "止まらず・暴走しないAI定期実行の設計図 ― 指示書15項目と、毎時起きるAIを16日回して分かったこと",
@@ -54,14 +62,6 @@
     "pubDate": "2026-11-03T00:07:42.000Z",
     "snippet": "AIエージェントをCIに入れると、アプリの依存関係だけでなく、エージェント本体の更新も運用対象になります。「最新版へ自動更新」と「安全に更新」は同じではありません。更新直後の不具合を避けたい一方、修正版まで一律に待たせると危険が残ることもあります。 GitHub Agentic Workflowsの11月2日付週次更新では、新しく公開されたエンジンの導入を3日待たせる、設定可能なクールダウンが注目PRとして紹介されました。本稿はこの話題を入り口に、公開からの経過時間、固定した版、承認済みハッシュを別々に確認する運用を考えます。 重要なのは日付の区別です。同じ記事が取り上げるv1.0.1の...",
     "saved_at": "2026-11-03T01:21:56.759Z"
-  },
-  {
-    "url": "https://zenn.dev/aac/articles/bc0d70b9de067a",
-    "source_id": "source-zenn",
-    "title": "Raspberry Piで24時間自律稼働するAIメディアを1日100円以下で運用する「3階層マルチモデル設計」と最新AIトレンド解説",
-    "pubDate": "2026-11-03T00:14:42.000Z",
-    "snippet": "はじめに：自律型AIエージェントを24時間動かすとAPI代が破産する問題 「AIエージェントに市場調査・コーディング・サイト更新・SNS集客まで24時間自動で回させたい」と考えたとき、最大の壁になるのが LLMのAPIコスト です。 すべてを単一のフラッグシップモデル（Claude Opus や GPTの上位モデルなど）で毎時ループさせると、1日あたり数千円〜月数万円のAPI費用が吹き飛んでしまいます。 そこで私が自宅の Raspberry Pi 4（4GB RAM） 上で構築・実稼働させているのが、役割に応じて3つのモデル階層を使い分ける 「CEO・CTO・Worker 3階層マル...",
-    "saved_at": "2026-11-03T01:19:48.161Z"
   },
   {
     "url": "https://qiita.com/rikunagano/items/71192862fae3eece2dd5",
@@ -158,14 +158,6 @@
     "pubDate": "2026-11-02T05:10:31.000Z",
     "snippet": "会議の録音、インタビュー、講義、ポッドキャスト、動画素材。 気づけば、パソコンやスマートフォンの中にたくさんの音声・動画ファイルが保存されていませんか？ 「あとで内容を整理しよう」と思って保存したものの、結局そのままになっている。必要な発言を探すために、何十分も録音を聞き直す。そんな経験がある方も多いと思います。 私たちも、まさに同じ悩みを抱えていました。 そこで開発したのが、AI音声・動画文字起こしツール ViiTor Live です。 今回は、どんな課題を解決したくて開発したのか、そして実際にどんなことができるのかをご紹介します。 録音を残しても、結局聞き直さなければならない 会...",
     "saved_at": "2026-11-02T14:41:37.121Z"
-  },
-  {
-    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.646",
-    "source_id": "source-firecrawl",
-    "title": "v2.11.646",
-    "pubDate": "2026-11-02T13:58:34.000Z",
-    "snippet": "Release API image v2.11.646",
-    "saved_at": "2026-11-02T14:14:13.696Z"
   },
   {
     "url": "https://note.com/ryo_7biz/n/n0a481240e991",
@@ -309,14 +301,6 @@
     "title": "Improve AI Visibility",
     "pubDate": "2026-11-02T13:34:22.000Z",
     "snippet": "Article URL: https://shodenltd.com/free-ai-visibility-report/ Comments URL: https://news.ycombinator.com/item?id=50336621 Points: 1 # Comments: 1",
-    "saved_at": "2026-11-02T13:55:57.042Z"
-  },
-  {
-    "url": "https://qiita.com/fukukei23/items/09e10b64bd085fd3e44f",
-    "source_id": "source-qiita",
-    "title": "CLI版とDesktop版でGLM/MiniMaxの役割がまるで違う話",
-    "pubDate": "2026-11-02T13:07:29.000Z",
-    "snippet": "はじめに Claude CodeのCLI版でGLMを使っている、という話を以前書きました。同じ流れでDesktop版にも設定しようとしたのですが、CLIとDesktopではGLM/MiniMaxの立ち位置がまったく別物でした。 同じ単語が使われているのに役割が逆転していて...",
     "saved_at": "2026-11-02T13:55:57.042Z"
   }
 ]
