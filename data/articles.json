@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1793693246090-h7dj0",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/",
+    "published_at": "2026-11-03T05:32:25.000Z",
+    "og_image_url": null,
+    "title_ja": "OSINTの新手法：動画内の微かな飛行機音とドップラー効果を利用して正確な撮影場所を特定する技術が判明",
+    "summary_ja": "セキュリティ研究者のColsto氏が、動画の背景音から飛行機の飛行特性を解析し、撮影場所を特定するOSINT手法を公開した。 飛行機が発する微細な音のドップラー曲線をADS-Bデータと照合することで、飛行機の速度や距離、航路から動画の正確な位置を割り出すというものだ。 これは単なる都市伝説ではなく、公開されたデータと音響解析が組み合わせられる現代において、プライバシー保護の前提を根本から覆す可能性を示唆している。",
+    "translations": {
+      "ja": {
+        "title": "OSINTの新手法：動画内の微かな飛行機音とドップラー効果を利用して正確な撮影場所を特定する技術が判明",
+        "summary": "セキュリティ研究者のColsto氏が、動画の背景音から飛行機の飛行特性を解析し、撮影場所を特定するOSINT手法を公開した。 飛行機が発する微細な音のドップラー曲線をADS-Bデータと照合することで、飛行機の速度や距離、航路から動画の正確な位置を割り出すというものだ。 これは単なる都市伝説ではなく、公開されたデータと音響解析が組み合わせられる現代において、プライバシー保護の前提を根本から覆す可能性を示唆している。"
+      },
+      "en": {
+        "title": "Researchers demonstrate how background airplane noise in videos can reveal your exact location using Doppler curves and ADS-B data",
+        "summary": "Security researcher Colsto has unveiled a sophisticated OSINT technique that identifies the precise physical location of a video by analyzing the barely perceptible background noise of passing airplanes. By calculating the Doppler shifts in engine pitch and cross-referencing these unique frequency curves against global ADS-B flight tracking data, it is possible to determine the exact flight path, distance, and relative speed of the aircraft captured on audio. This breakthrough effectively triangulates the video's origin point with high accuracy. For privacy-conscious builders and creators, the technical takeaway is that ambient noise is no longer just static; it serves as a high-fidelity data stream that can deanonymize geographic data points in publicly shared media, challenging long-held assumptions about location privacy."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "研究"
+    ],
+    "created_at": "2026-11-03T08:07:26.090Z"
+  },
+  {
+    "id": "art-1793693220352-15h6r",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/tssdev/articles/tssgrid-rowclass-xss",
+    "published_at": "2026-11-03T05:53:56.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--APKGkCVd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25B9%25E5%2590%258D%25E3%2582%2592%25E8%25BF%2594%25E3%2581%2599%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25AE%25E9%2596%25A2%25E6%2595%25B0%25E3%2581%258C%25E3%2580%2581XSS%25E3%2581%25AE%25E5%2585%25A5%25E5%258F%25A3%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2520%25E2%2580%2595%2520%25E3%2582%25A8%25E3%2582%25B9%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2597%25E6%25B8%2588%25E3%2581%25BF%25E3%2581%25AE%25E3%2581%25AF%25E3%2581%259A%25E3%2581%25AE%25E5%25B1%259E%25E6%2580%25A7%25E3%2582%2582%25E3%2580%2581%25E5%25AE%259F%25E3%2581%25AF%25E6%258A%259C%25E3%2581%2591%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ThreeStarSoftware%25EF%25BC%2588...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmI4RDNlaGlXWERxMXk5b0JnX2Z6SHZScnRxWlBNcm5jU0tKcUlqUmtoQXlVSVZnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "クラス名を返すだけの単純な関数がXSSの温床に。エスケープ済みと過信した属性処理が招いた致命的な脆弱性事例",
+    "summary_ja": "TssGrid開発における、クラス名を返すだけの関数を起点としたXSS脆弱性の事例。 開発者は属性値のエスケープを徹底していたつもりだったが、特定の条件下でクラス名に悪意あるスクリプトが含まれるケースを見落としていた。 見た目には変化がないため発見が困難なタイプであり、ユーザー入力がUIコンポーネントに反映される箇所では、ライブラリの内部処理を過信せず、出力直前のサニタイズを徹底する重要性が改めて浮き彫りとなった。",
+    "translations": {
+      "ja": {
+        "title": "クラス名を返すだけの単純な関数がXSSの温床に。エスケープ済みと過信した属性処理が招いた致命的な脆弱性事例",
+        "summary": "TssGrid開発における、クラス名を返すだけの関数を起点としたXSS脆弱性の事例。 開発者は属性値のエスケープを徹底していたつもりだったが、特定の条件下でクラス名に悪意あるスクリプトが含まれるケースを見落としていた。 見た目には変化がないため発見が困難なタイプであり、ユーザー入力がUIコンポーネントに反映される箇所では、ライブラリの内部処理を過信せず、出力直前のサニタイズを徹底する重要性が改めて浮き彫りとなった。"
+      },
+      "en": {
+        "title": "How a simple class-name function became an XSS vector: A deep dive into flawed attribute escaping in grid components",
+        "summary": "A deep dive into a subtle XSS vulnerability discovered within the TssGrid library, where a function responsible for returning CSS class names became a critical security vector. Although the developer assumed that attribute values were properly sanitized throughout the component's lifecycle, they failed to account for malicious scripts embedded within class names under specific conditions. Because the UI remained visually intact, the breach was nearly impossible to detect through standard manual testing. This case serves as a stark reminder for builders: when user inputs are dynamically reflected in component attributes, blindly trusting internal library functions is dangerous. Always enforce strict sanitization immediately before output to prevent cross-site scripting, regardless of previous assumptions about data safety in your stack."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-03T08:07:00.352Z"
+  },
+  {
+    "id": "art-1793693211109-9qqyy",
+    "source_id": "source-github-trending",
+    "source_name": "GitHub Trending (AI / TypeScript / Python)",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "published_at": "2026-11-03T08:06:51.109Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/1161958643/83055b28-992e-4176-b5d6-89b56aa22dde",
+    "title_ja": "Vercelが「agent-desktop」を公開。OSのアクセシビリティツリーを活用しAIエージェントがデスクトップ操作を可能に",
+    "summary_ja": "Vercelが公開した「agent-desktop」は、macOS・Windows・Linux上でAIエージェントがデスクトップアプリを直接操作するためのCLIおよびCライブラリだ。 画面ピクセルを解析するのではなく、OSのアクセシビリティツリーを参照してJSON形式で要素を特定し、正確な操作ループを実現する。 ヘッドレス環境でも動作し、スクリーンショットやクリップボードの内容が含まれるため、開発者は機密情報のログ漏洩を防ぐ厳重なセキュリティ対策が求められる。",
+    "translations": {
+      "ja": {
+        "title": "Vercelが「agent-desktop」を公開。OSのアクセシビリティツリーを活用しAIエージェントがデスクトップ操作を可能に",
+        "summary": "Vercelが公開した「agent-desktop」は、macOS・Windows・Linux上でAIエージェントがデスクトップアプリを直接操作するためのCLIおよびCライブラリだ。 画面ピクセルを解析するのではなく、OSのアクセシビリティツリーを参照してJSON形式で要素を特定し、正確な操作ループを実現する。 ヘッドレス環境でも動作し、スクリーンショットやクリップボードの内容が含まれるため、開発者は機密情報のログ漏洩を防ぐ厳重なセキュリティ対策が求められる。"
+      },
+      "en": {
+        "title": "Vercel releases agent-desktop, a tool enabling AI agents to control desktop applications via OS accessibility trees",
+        "summary": "Vercel has released agent-desktop, a robust CLI and C library that empowers AI agents to read and interact with desktop applications across macOS, Windows, and Linux. Unlike vision-only models that rely on pixel matching, this tool hooks into the OS accessibility tree, returning structured JSON refs for elements an agent can manipulate. This approach provides higher reliability for UI automation by maintaining a concrete loop between actions and state snapshots. Because the tool captures sensitive data like clipboard contents, screenshots, and system command outputs, builders must be extremely careful to exclude these artifacts from public logs. It serves as a powerful foundational layer for any developer aiming to ship autonomous agents that need to navigate local desktop environments securely."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-03T08:06:51.109Z"
+  },
+  {
+    "id": "art-1793692916780-tbb7h",
+    "source_id": "source-hf",
+    "source_name": "Hugging Face Blog / Papers",
+    "url": "https://huggingface.co/blog/transformers-mic",
+    "published_at": "2026-11-03T00:00:00.000Z",
+    "og_image_url": "https://huggingface.co/blog/assets/transformers-mic/mic-logo.png",
+    "title_ja": "Hugging Faceが「モデル統合契約」を発表。PyTorch/Transformersエコシステム内の主要モデルの互換性維持と検証を自動化する新基準へ",
+    "summary_ja": "Hugging Faceは、Transformersライブラリ上で動作するモデルの互換性を担保するため「モデル統合契約」を導入する。 これにより、モデル提供者と保守担当者が共有可能な品質基準と検証スイートを定義し、ライブラリのアップデートによる破壊的変更を未然に防ぐ。 モデル供給者側にとってエコシステムでの安定性が向上し、開発者側にとってはより堅牢で予測可能な推論環境が実現される。",
+    "translations": {
+      "ja": {
+        "title": "Hugging Faceが「モデル統合契約」を発表。PyTorch/Transformersエコシステム内の主要モデルの互換性維持と検証を自動化する新基準へ",
+        "summary": "Hugging Faceは、Transformersライブラリ上で動作するモデルの互換性を担保するため「モデル統合契約」を導入する。 これにより、モデル提供者と保守担当者が共有可能な品質基準と検証スイートを定義し、ライブラリのアップデートによる破壊的変更を未然に防ぐ。 モデル供給者側にとってエコシステムでの安定性が向上し、開発者側にとってはより堅牢で予測可能な推論環境が実現される。"
+      },
+      "en": {
+        "title": "Hugging Face introduces Model Integration Contracts to formalize maintenance and automated testing for the Transformers ecosystem",
+        "summary": "Hugging Face has introduced Model Integration Contracts, a new framework designed to solve the fragmentation of model implementation maintenance within the Transformers ecosystem. By formalizing testing suites and compatibility benchmarks between model providers and library maintainers, this initiative ensures that future library updates do not introduce breaking changes to existing model architectures. For developers and model creators, these contracts provide a shared, reliable protocol for verifying model performance and stability, moving away from ad-hoc maintenance patches. This shift creates a more predictable integration lifecycle, ensuring that as PyTorch and Transformers evolve, third-party model implementations remain functional, thoroughly validated, and consistent across the massive open-source library landscape."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-03T08:01:56.780Z"
+  },
+  {
     "id": "art-1793681272498-mhyir",
     "source_id": "source-openai",
     "source_name": "OpenAI 公式",
@@ -35349,32 +35453,6 @@
     "created_at": "2026-10-29T13:02:46.509Z"
   },
   {
-    "id": "art-1793278933723-1qo2h",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/vast_beetle8776/n/n1ed3dc9a480a",
-    "published_at": "2026-10-29T12:45:24.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/c9fcd5b81f735cdef0311004588b181acfe86bcd.png",
-    "title_ja": "個人開発カードゲームアプリ「デッキビルド戦記」、11月中旬の正式リリースが決定――開発期間の完遂とローンチに向けた最終調整の記録",
-    "summary_ja": "個人開発者のso氏は、約半年間にわたり開発を続けてきたカードゲームアプリ『デッキビルド戦記』を、11月中旬に正式リリースすることを発表した。 継続的な開発のモチベーション維持と、ユーザー体験を損なわないための最終調整の工程が進行中である。 個人の熱量をプロダクトのリリースまで繋げるためには、開発ロードマップの可視化とリリース時期の明確なコミットメントが、停滞を防ぐための重要な推進力となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発カードゲームアプリ「デッキビルド戦記」、11月中旬の正式リリースが決定――開発期間の完遂とローンチに向けた最終調整の記録",
-        "summary": "個人開発者のso氏は、約半年間にわたり開発を続けてきたカードゲームアプリ『デッキビルド戦記』を、11月中旬に正式リリースすることを発表した。 継続的な開発のモチベーション維持と、ユーザー体験を損なわないための最終調整の工程が進行中である。 個人の熱量をプロダクトのリリースまで繋げるためには、開発ロードマップの可視化とリリース時期の明確なコミットメントが、停滞を防ぐための重要な推進力となる。"
-      },
-      "en": {
-        "title": "Solo developer sets mid-November launch for new card game app 'Deck Build Senki' after half-year development sprint",
-        "summary": "Solo developer 'so' has officially locked in a mid-November release date for their card game application, 'Deck Build Senki,' marking the completion of an intensive six-month development cycle. The project is now in its final phase of polish, where the focus has shifted from core mechanic implementation to ensuring a smooth launch experience for early users. For independent builders, this milestone highlights that sustaining momentum on long-term projects requires consistent accountability and a concrete, public deadline to prevent feature creep. The key takeaway for developers shipping solo titles is that locking in a launch window early acts as a crucial forcing function, helping to bridge the gap between initial creative passion and a viable, marketable product ready for app store distribution."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-29T13:02:13.723Z"
-  },
-  {
     "id": "art-1793278901287-o98l2",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -35425,33 +35503,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-29T13:01:33.714Z"
-  },
-  {
-    "id": "art-1793278206849-jxf92",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ideal_elk4628/n/n950816a629f2",
-    "published_at": "2026-10-29T12:45:28.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/324791848/rectangle_large_type_2_012ec90f26e3f6a0d84ef284120a91da.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "英語学習アプリ「英語L&R スコアスプリント」がダークモードを実装、開発者は『夜専用』のUXデザインとして訴求",
-    "summary_ja": "英語学習アプリ「英語L&R スコアスプリント」は、UIアップデートとしてダークモードを実装した。 アプリ内キャラクターの「富田先輩」による解説を通じて、この機能を単なるデザイン変更ではなく「夜間の学習に集中するための専用モード」としてブランディングしている点が特徴。 UXにおいて機能を実装する際、単なるオプション追加で終わらせず、どのような利用シーンで活用すべきかをユーザーに具体的に提示することで、機能の利用動機を高める設計思想が垣間見える。",
-    "translations": {
-      "ja": {
-        "title": "英語学習アプリ「英語L&R スコアスプリント」がダークモードを実装、開発者は『夜専用』のUXデザインとして訴求",
-        "summary": "英語学習アプリ「英語L&R スコアスプリント」は、UIアップデートとしてダークモードを実装した。 アプリ内キャラクターの「富田先輩」による解説を通じて、この機能を単なるデザイン変更ではなく「夜間の学習に集中するための専用モード」としてブランディングしている点が特徴。 UXにおいて機能を実装する際、単なるオプション追加で終わらせず、どのような利用シーンで活用すべきかをユーザーに具体的に提示することで、機能の利用動機を高める設計思想が垣間見える。"
-      },
-      "en": {
-        "title": "English Learning App Adds Dark Mode, Branding the Feature as a Night-Only UX Solution",
-        "summary": "The English learning application 'English L&R Score Sprint' recently pushed a UI update implementing Dark Mode. Notably, the team is branding the feature via an in-app character, 'Senpai Tomita,' specifically positioning it as a 'night-only' mode to foster focused study during evening hours. This strategy highlights a key UX principle: when shipping new interface features, builders shouldn't treat them as mere toggles but as contextual tools. By clearly guiding users on the intended use case, developers can drive feature adoption far more effectively than with passive release notes. For individual builders, this serves as a reminder that how you communicate the intent behind a feature update is often as critical as the code itself for driving user engagement."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-29T12:50:06.849Z"
   },
   {
     "id": "art-1793278197387-czs5k",
@@ -43467,32 +43518,6 @@
     "created_at": "2026-10-27T22:16:22.551Z"
   },
   {
-    "id": "art-1793138511594-fteme",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/timjonez/new-english-dictionary",
-    "published_at": "2026-10-27T21:44:13.000Z",
-    "og_image_url": null,
-    "title_ja": "AIサブスクの余剰枠を活用し「New English Dictionary」を共同でテキスト化するプロジェクトが登場、文字起こしタスクの分散処理を実験",
-    "summary_ja": "個人のAIサブスクリプションで余っているAPIやトークン枠を活用し、膨大な歴史的資料である「New English Dictionary（NED）」をテキスト化するコミュニティプロジェクトが始動した。 単なる暇つぶしではなく、AIの推論能力をOCRや校正作業に割り当て、巨大な公的ドキュメントを民主的にデジタルアーカイブ化する試みである。",
-    "translations": {
-      "ja": {
-        "title": "AIサブスクの余剰枠を活用し「New English Dictionary」を共同でテキスト化するプロジェクトが登場、文字起こしタスクの分散処理を実験",
-        "summary": "個人のAIサブスクリプションで余っているAPIやトークン枠を活用し、膨大な歴史的資料である「New English Dictionary（NED）」をテキスト化するコミュニティプロジェクトが始動した。 単なる暇つぶしではなく、AIの推論能力をOCRや校正作業に割り当て、巨大な公的ドキュメントを民主的にデジタルアーカイブ化する試みである。"
-      },
-      "en": {
-        "title": "Developer launches crowdsourced project to transcribe the New English Dictionary using spare AI subscription compute",
-        "summary": "A new community project invites users to donate their unused AI subscription quotas and leftover API tokens toward the massive task of transcribing the historic 'New English Dictionary' (NED). Rather than letting AI compute sit idle, this initiative orchestrates crowdsourced inference power to perform accurate OCR and proofreading on vast historical archives, effectively democratizing the digitisation of public knowledge. For builders, this demonstrates a creative approach to resource pooling, where personal AI overhead is bundled to solve large-scale data processing problems that traditional OCR struggles to handle alone. It offers a practical model for how developers might leverage distributed inference capacity to tackle complex, long-tail data archival projects that are otherwise too resource-intensive for centralized institutional efforts to manage efficiently."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-27T22:01:51.594Z"
-  },
-  {
     "id": "art-1793138501481-9sphl",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -43544,32 +43569,6 @@
       "研究"
     ],
     "created_at": "2026-10-27T22:01:32.703Z"
-  },
-  {
-    "id": "art-1793137704781-ou1z5",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
-    "published_at": "2026-10-27T21:08:59.000Z",
-    "og_image_url": "https://image.cnbcfm.com/api/v1/image/108039168-1745940414655-108039168-17272881332024-09-25t181332z_2097001546_rc2u7aaih91n_rtrmadp_0_meta-platforms-virtual-reality.jpg?v=1745940424&w=1920&h=1080",
-    "title_ja": "Meta、AIインフラへの巨額投資を加速──950億ドル規模の増資計画を発表し、AIモデル開発とデータセンター増強に充当へ",
-    "summary_ja": "MetaはAI開発およびインフラ拡充を加速するため、950億ドル規模の新規株式発行計画を発表した。 この調達資金は、LLMの次世代モデル開発や、世界各地のデータセンター増強に直接充てられる予定である。 大手テック企業によるAI投資競争が激化する中、MetaはGPU調達や独自シリコン開発のコスト増を見据え、資本市場からの巨額調達で主導権を握る構えだ。",
-    "translations": {
-      "ja": {
-        "title": "Meta、AIインフラへの巨額投資を加速──950億ドル規模の増資計画を発表し、AIモデル開発とデータセンター増強に充当へ",
-        "summary": "MetaはAI開発およびインフラ拡充を加速するため、950億ドル規模の新規株式発行計画を発表した。 この調達資金は、LLMの次世代モデル開発や、世界各地のデータセンター増強に直接充てられる予定である。 大手テック企業によるAI投資競争が激化する中、MetaはGPU調達や独自シリコン開発のコスト増を見据え、資本市場からの巨額調達で主導権を握る構えだ。"
-      },
-      "en": {
-        "title": "Meta unveils massive $95 billion stock offering plan to accelerate AI infrastructure, LLM development, and global data center expansion",
-        "summary": "Meta has officially announced a sweeping $95 billion equity offering aimed squarely at funding an aggressive expansion of its AI infrastructure and model capabilities. This massive capital injection is explicitly earmarked for the development of next-generation LLMs and the rapid scaling of data center capacity worldwide. As the race among Big Tech giants to dominate AI intelligence intensifies, Meta is securing its war chest to cover soaring GPU procurement costs and proprietary silicon development initiatives. For observers, this signals that the AI arms race is moving beyond pure research into a phase requiring unprecedented physical capital expenditure, with the company betting that dominating the underlying infrastructure will secure its long-term competitive moat against rivals."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-10-27T21:48:24.781Z"
   },
   {
     "id": "art-1793137631111-lxomx",
