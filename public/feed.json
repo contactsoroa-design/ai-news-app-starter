@@ -1,5 +1,60 @@
 [
   {
+    "id": "art-1793676896271-4p4lm",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/hidekimori/articles/dcd90b7e34c55f",
+    "published_at": "2026-11-03T00:00:07.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--v4Z0CmdF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2595%25B0%25E3%2581%2588%25E3%2582%2589%25E3%2582%258C%25E3%2582%258B%25E3%2582%2582%25E3%2581%25AE%25E3%2581%25AF%25E5%25A3%258A%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hideki%2520Mori%25EF%25BC%2588%25E6%25A3%25AE%25E7%25A7%2580%25E6%25A8%25B9%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJlODc5NTcxYjMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "JSONスキーマの複雑化が招く指数関数的なコンパイルコスト：StructFlow開発者が直面した「ユニオン型27個」の罠と回避策",
+    "summary_ja": "文書処理API「StructFlow」において、JSONスキーマのユニオン型パラメータが27個に達したことでコンパイルコストが指数関数的に増大し、処理が停止する事象が発生した。 単なるエラー発生ではなく、スキーマ定義の肥大化がシステム全体をクラッシュさせる要因となった。 開発者にとって重要な教訓は「数えられるものは壊れない」という原則だ。 複雑なデータ構造を抱える際は、型定義を細分化し、過度な柔軟性を持たせないことがスケーラブルなAPI設計の肝となる。",
+    "translations": {
+      "ja": {
+        "title": "JSONスキーマの複雑化が招く指数関数的なコンパイルコスト：StructFlow開発者が直面した「ユニオン型27個」の罠と回避策",
+        "summary": "文書処理API「StructFlow」において、JSONスキーマのユニオン型パラメータが27個に達したことでコンパイルコストが指数関数的に増大し、処理が停止する事象が発生した。 単なるエラー発生ではなく、スキーマ定義の肥大化がシステム全体をクラッシュさせる要因となった。 開発者にとって重要な教訓は「数えられるものは壊れない」という原則だ。 複雑なデータ構造を抱える際は、型定義を細分化し、過度な柔軟性を持たせないことがスケーラブルなAPI設計の肝となる。"
+      },
+      "en": {
+        "title": "How over-complex JSON schemas caused exponential compilation costs in StructFlow, forcing a critical rewrite of schema validation logic",
+        "summary": "A developer building the document processing API StructFlow recently encountered a system failure triggered by a JSON schema containing 27 union type parameters. This excessive complexity caused exponential compilation costs, crashing the service's validation engine and highlighting a critical fragility in API design. The core lesson here is that bounded, countable data structures are robust, whereas overly flexible schemas eventually become liabilities that degrade performance or cause hard crashes. For builders working with LLM-structured outputs or complex API schemas, the practical takeaway is to rigorously limit schema depth and variety. Avoid the trap of infinite flexibility early on; modularizing your definitions is essential to ensure that your backend infrastructure remains performant and stable under heavy, unpredictable document processing loads."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-03T03:34:56.271Z"
+  },
+  {
+    "id": "art-1793676730517-l4u8u",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+    "published_at": "2026-11-02T18:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAI、セキュリティ強化に向けた次期スプリント計画を発表—AI活用で Cathedral Systems と協力し防御体制を刷新へ",
+    "summary_ja": "OpenAIは、Cathedral Systemsと協力し、AIを活用した次期セキュリティスプリントを準備している。 この取り組みでは、AIモデルを用いた脆弱性診断や脅威検知能力の強化を通じて、プラットフォーム全体の防御体制をより堅牢に刷新することが目的だ。 AI製品の急速な普及に伴い、サービス提供側のセキュリティ要件が高度化する中、防御の自動化とAIによる検証フローの構築は、全開発者にとって模範となるべきアプローチである。",
+    "translations": {
+      "ja": {
+        "title": "OpenAI、セキュリティ強化に向けた次期スプリント計画を発表—AI活用で Cathedral Systems と協力し防御体制を刷新へ",
+        "summary": "OpenAIは、Cathedral Systemsと協力し、AIを活用した次期セキュリティスプリントを準備している。 この取り組みでは、AIモデルを用いた脆弱性診断や脅威検知能力の強化を通じて、プラットフォーム全体の防御体制をより堅牢に刷新することが目的だ。 AI製品の急速な普及に伴い、サービス提供側のセキュリティ要件が高度化する中、防御の自動化とAIによる検証フローの構築は、全開発者にとって模範となるべきアプローチである。"
+      },
+      "en": {
+        "title": "OpenAI unveils next internal security sprint to harden platform defenses with AI and Cathedral Systems",
+        "summary": "OpenAI is preparing its next major internal security sprint, partnering with Cathedral Systems to stress-test and reinforce its defenses using AI-driven methodologies. The initiative focuses on leveraging sophisticated AI models to identify vulnerabilities, automate threat detection, and harden the underlying platform against emerging attack vectors. As the usage of large-scale AI applications continues to accelerate, security perimeters must evolve from reactive patching to proactive, AI-assisted verification flows. For builders and engineering teams, the takeaway is clear: as your infrastructure scales, manual auditing is no longer sustainable. Integrating automated AI security agents into the CI/CD pipeline is now a critical prerequisite for maintaining enterprise-grade safety in high-stakes AI production environments."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-03T03:32:10.517Z"
+  },
+  {
     "id": "art-1793674903333-4bhl4",
     "source_id": "source-heygen-ugc",
     "source_name": "HeyGen API Changelog",
@@ -35717,32 +35772,6 @@
     "created_at": "2026-10-29T12:16:29.869Z"
   },
   {
-    "id": "art-1793275346482-9n2w9",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/d_quest/n/n407d4e0bc25e",
-    "published_at": "2026-10-29T11:56:59.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/93b5633dbdb02fa6f30a6ff0e1a88ee94bfb7676.png",
-    "title_ja": "電気工事士が挑む「電験クエスト」開発：難関資格「電験三種」取得者がゲームで学ぶ理由とは？（目標は電気の頂・電験一種）",
-    "summary_ja": "現役電気工事士が、難関資格「電験三種」合格の知見を活かし、学習ゲーム「電験クエスト」を開発中だ。 自身も現在「電気の頂」である電験二種・一種合格を目指して研鑽を積むなかで、その過程をプロダクトへ昇華させている。 実務と並行した開発は困難を極めるが、自身の学習体験をコンテンツに変えるアプローチは、ニッチな専門領域における学習プロダクトの作り方として示唆に富む。",
-    "translations": {
-      "ja": {
-        "title": "電気工事士が挑む「電験クエスト」開発：難関資格「電験三種」取得者がゲームで学ぶ理由とは？（目標は電気の頂・電験一種）",
-        "summary": "現役電気工事士が、難関資格「電験三種」合格の知見を活かし、学習ゲーム「電験クエスト」を開発中だ。 自身も現在「電気の頂」である電験二種・一種合格を目指して研鑽を積むなかで、その過程をプロダクトへ昇華させている。 実務と並行した開発は困難を極めるが、自身の学習体験をコンテンツに変えるアプローチは、ニッチな専門領域における学習プロダクトの作り方として示唆に富む。"
-      },
-      "en": {
-        "title": "Electrician turns professional exam study into an indie game called Denken Quest while pursuing top-tier engineering credentials",
-        "summary": "An active electrician is channeling their journey toward the prestigious Denken engineering certifications into Denken Quest, a study-focused indie game. Currently preparing for the rigorous Type 2 and Type 1 exams, the developer is translating complex electrical engineering study material directly into interactive gameplay mechanics. This concurrent development strategy—building tools to solve your own professional learning gaps—is a masterclass for solo builders. By tackling highly specialized, niche domains, developers can leverage their unique domain expertise to build products that serve a passionate, underserved audience. For developers everywhere, the takeaway is that your most difficult personal challenges are often the best indicators for profitable, high-engagement micro-SaaS or educational tools that competitors cannot easily replicate."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-29T12:02:26.482Z"
-  },
-  {
     "id": "art-1793275318225-rdids",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -43540,33 +43569,6 @@
       "開発"
     ],
     "created_at": "2026-10-27T21:48:14.244Z"
-  },
-  {
-    "id": "art-1793137687069-vspqv",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.adriankrebs.ch/blog/ai-and-the-doorman-fallacy/",
-    "published_at": "2026-10-27T21:31:42.000Z",
-    "og_image_url": "https://www.adriankrebs.ch/_astro/og-default.B6BqwTMP.svg",
-    "title_ja": "AI時代の「ドアマンの誤謬」：AIが単純作業を自動化しても、なぜ複雑なタスクの負荷は人間に押し付けられるのか",
-    "summary_ja": "AIの普及により単純なタスクが自動化されると、かえって人間にはAIが処理しきれないエッジケースや複雑な調整作業が集中するという「ドアマンの誤謬」が指摘されている。 これは、AIが「高級なドアマン」として入り口の作業を請け負うことで、その先にいる人間がより一層複雑で手に負えない課題の対応に追われる現象を指す。 エンジニアや事業者は、AI導入が単なる効率化ではなく、業務のボトルネックを専門的な人間へとシフトさせるリスクがあることを認識し、システム設計を行う必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AI時代の「ドアマンの誤謬」：AIが単純作業を自動化しても、なぜ複雑なタスクの負荷は人間に押し付けられるのか",
-        "summary": "AIの普及により単純なタスクが自動化されると、かえって人間にはAIが処理しきれないエッジケースや複雑な調整作業が集中するという「ドアマンの誤謬」が指摘されている。 これは、AIが「高級なドアマン」として入り口の作業を請け負うことで、その先にいる人間がより一層複雑で手に負えない課題の対応に追われる現象を指す。 エンジニアや事業者は、AI導入が単なる効率化ではなく、業務のボトルネックを専門的な人間へとシフトさせるリスクがあることを認識し、システム設計を行う必要がある。"
-      },
-      "en": {
-        "title": "The Doorman Fallacy in the age of AI: Why automating simple tasks shifts the burden of complexity onto human operators",
-        "summary": "The 'Doorman Fallacy' describes a counterintuitive phenomenon in the AI era where automating simple, front-line tasks does not necessarily reduce total workload, but instead forces humans to handle only the most complex, unautomatable edge cases. Just as a fancy doorman allows a building's elite to ignore the messy reality of the street, AI acts as a filter that leaves human operators managing the most chaotic, difficult problems that the system cannot solve. For builders and engineering teams, the takeaway is critical: implementing AI is not merely an efficiency play but a fundamental shift in operations. You must anticipate that your team will spend their time solely on the high-entropy anomalies that break the AI, requiring more specialized support structures than before."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-10-27T21:48:07.069Z"
   },
   {
     "id": "art-1793137631111-lxomx",
