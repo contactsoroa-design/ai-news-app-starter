@@ -1,5 +1,113 @@
 [
   {
+    "id": "art-1793737079773-lw97x",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/likeseadive/articles/053669f038749b",
+    "published_at": "2026-11-03T11:22:41.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--iqYE9veH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25A5%25AD%25E5%258B%2599%25E8%25A8%2598%25E9%258C%25B2%25E3%2581%25A8%25E5%2586%2599%25E7%259C%259F%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E9%25A1%258C%25E6%259D%2590%25E3%2581%25AB%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%25E3%2580%2581%25E6%2597%25A2%25E5%25AD%2598%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E5%25AE%2588%25E3%2582%258B%25E6%25A9%259F%25E8%2583%25BD%25E8%25BF%25BD%25E5%258A%25A0%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:LikeSeaDive%25EF%25BD%259C%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2583%25BBWeb%25E9%2596%258B%25E7%2599%25BA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkzMjFjOWExYTUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "既存データを破壊しない機能拡張術：営業支援・事務・写真アプリ開発で実践する「データ保持とUI表示」の分離設計",
+    "summary_ja": "個人開発アプリの機能追加において、既存データの整合性を保ちつつ新機能を提供する設計手法を解説。 営業支援、事務管理、写真カード作成という異なる3つのアプリを例に、ユーザーが入力した「保存済みデータ」と「画面上の表示状態」を明確に分離する重要性を説く。 データ構造とUIを直結させず、モデル層で抽象化しておくことが、将来的な仕様変更やストア審査時のトラブルを回避する堅牢な開発につながる。",
+    "translations": {
+      "ja": {
+        "title": "既存データを破壊しない機能拡張術：営業支援・事務・写真アプリ開発で実践する「データ保持とUI表示」の分離設計",
+        "summary": "個人開発アプリの機能追加において、既存データの整合性を保ちつつ新機能を提供する設計手法を解説。 営業支援、事務管理、写真カード作成という異なる3つのアプリを例に、ユーザーが入力した「保存済みデータ」と「画面上の表示状態」を明確に分離する重要性を説く。 データ構造とUIを直結させず、モデル層で抽象化しておくことが、将来的な仕様変更やストア審査時のトラブルを回避する堅牢な開発につながる。"
+      },
+      "en": {
+        "title": "Defensive Architecture for App Updates: Decoupling Data Storage from UI to Protect Existing User Records",
+        "summary": "When shipping new features for existing apps, managing state without corrupting user data is critical. Using three distinct examples—a sales tracker, an admin management tool, and a photo card creator—this guide explores why developers must decouple stored user data from the specific UI representation. The core lesson is to avoid hard-coding UI logic directly into data models, which often leads to rigid systems prone to regression during updates. By implementing a clear abstraction layer between the raw database entries and what the user sees on screen, developers can iterate safely, maintain backward compatibility, and avoid common pitfalls during App Store review processes. For individual builders, this architectural discipline acts as essential insurance against technical debt."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-03T20:17:59.773Z"
+  },
+  {
+    "id": "art-1793737056068-7tesb",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/traccia-ai/traccia-py",
+    "published_at": "2026-11-03T20:06:53.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/1139177212/4e63ab74-dd5e-4353-9cf4-db6f8789fdad",
+    "title_ja": "AIエージェント向けランタイム制御基盤「Traccia」公開。LLMプロバイダーを切り替えてもコード変更不要なベンダー中立フレームワーク",
+    "summary_ja": "Tracciaは、AIエージェントのランタイムを抽象化し、ベンダー依存を排除するPython向け制御ライブラリです。 AnthropicやOpenAIといったLLMプロバイダーの切り替えや、障害発生時の回路遮断（サーキットブレーカー）を、アプリケーションコードを一切書き換えることなく実現できます。 開発者は単一のAPI実装に縛られず、複数のLLMを動的にルーティングしたり、信頼性の高いエージェント基盤を容易に構築可能です。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント向けランタイム制御基盤「Traccia」公開。LLMプロバイダーを切り替えてもコード変更不要なベンダー中立フレームワーク",
+        "summary": "Tracciaは、AIエージェントのランタイムを抽象化し、ベンダー依存を排除するPython向け制御ライブラリです。 AnthropicやOpenAIといったLLMプロバイダーの切り替えや、障害発生時の回路遮断（サーキットブレーカー）を、アプリケーションコードを一切書き換えることなく実現できます。 開発者は単一のAPI実装に縛られず、複数のLLMを動的にルーティングしたり、信頼性の高いエージェント基盤を容易に構築可能です。"
+      },
+      "en": {
+        "title": "Traccia Launches Vendor-Neutral Runtime Control for AI Agents, Enabling Seamless Provider Switching Without Rewriting Core Application Logic",
+        "summary": "Traccia has released a vendor-neutral runtime control library for Python designed to decouple AI agent logic from specific large language model providers. By introducing an abstraction layer, developers can switch seamlessly between vendors like OpenAI or Anthropic without altering the underlying application code. The tool also provides built-in circuit breaking and logging capabilities, ensuring that agent behavior remains consistent even when specific upstream services experience downtime or latency spikes. This approach allows teams to implement dynamic routing and fallback strategies effortlessly. For developers building agent-based systems, this addresses the critical risk of vendor lock-in and service instability, offering a robust architectural pattern to maintain uptime and flexibility in rapidly evolving production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-03T20:17:36.068Z"
+  },
+  {
+    "id": "art-1793737047510-6rxa1",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.676",
+    "published_at": "2026-11-03T20:07:27.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、APIイメージバージョンv2.11.676をリリース ― Webスクレイピング基盤の安定性とデータ抽出効率を大幅に向上",
+    "summary_ja": "Firecrawlは最新アップデートとなるAPIイメージ「v2.11.676」を公開した。 今回のリリースでは、Webスクレイピング実行時の安定性を強化し、LLM向けに最適化されたマークダウン変換におけるデータ抽出効率が向上している。 APIベースのデータ収集を構築している開発者は、このイメージへ更新することで、複雑なWeb構造を持つサイトに対するクローリングの成功率改善や、予期せぬエラーの低減が期待できる。 継続的なインフラの改善として、最新版への早期移行が推奨される。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、APIイメージバージョンv2.11.676をリリース ― Webスクレイピング基盤の安定性とデータ抽出効率を大幅に向上",
+        "summary": "Firecrawlは最新アップデートとなるAPIイメージ「v2.11.676」を公開した。 今回のリリースでは、Webスクレイピング実行時の安定性を強化し、LLM向けに最適化されたマークダウン変換におけるデータ抽出効率が向上している。 APIベースのデータ収集を構築している開発者は、このイメージへ更新することで、複雑なWeb構造を持つサイトに対するクローリングの成功率改善や、予期せぬエラーの低減が期待できる。 継続的なインフラの改善として、最新版への早期移行が推奨される。"
+      },
+      "en": {
+        "title": "Firecrawl rolls out API image v2.11.676, enhancing overall stability and data extraction efficiency for LLM-ready web scraping workflows",
+        "summary": "Firecrawl has officially pushed API image version v2.11.676, delivering key refinements to its core web scraping engine. This latest release prioritizes increased stability during heavy scraping operations and improves data extraction efficiency specifically for LLM-optimized markdown outputs. For builders relying on Firecrawl to ingest web data into agentic pipelines, this update significantly boosts success rates on complex, dynamic sites while simultaneously reducing runtime errors. As the platform continues to iterate on its infrastructure, upgrading to this latest image is essential to maintain high-fidelity data parsing and reliable crawl consistency. Developers managing data ingestion stacks should prioritize this deployment to ensure their scraping services remain resilient against evolving web structures."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-03T20:17:27.510Z"
+  },
+  {
+    "id": "art-1793737040737-wh0lj",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/cisco-cyber",
+    "published_at": "2026-11-03T08:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "シスコとOpenAIが提携、ネットワーク攻撃をAIが「マシン速度」で防御する次世代エンタープライズセキュリティ基盤を公開",
+    "summary_ja": "シスコはOpenAIのモデルを統合し、膨大なネットワークインテリジェンスと連携した高度な脅威検知・防御システムを構築した。 この基盤は攻撃の予兆を瞬時に解析し、人手を介さず適応的な防衛策を展開することを可能にする。 セキュリティ担当者の負担を減らしつつ、未知の攻撃に対しても組織の防御力を底上げするこの設計は、AIを活用した企業防衛の新たな指針となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "シスコとOpenAIが提携、ネットワーク攻撃をAIが「マシン速度」で防御する次世代エンタープライズセキュリティ基盤を公開",
+        "summary": "シスコはOpenAIのモデルを統合し、膨大なネットワークインテリジェンスと連携した高度な脅威検知・防御システムを構築した。 この基盤は攻撃の予兆を瞬時に解析し、人手を介さず適応的な防衛策を展開することを可能にする。 セキュリティ担当者の負担を減らしつつ、未知の攻撃に対しても組織の防御力を底上げするこの設計は、AIを活用した企業防衛の新たな指針となるだろう。"
+      },
+      "en": {
+        "title": "Cisco partners with OpenAI to unveil next-generation enterprise security infrastructure that defends against network attacks at machine speed",
+        "summary": "Cisco has integrated OpenAI’s advanced models with its existing network intelligence to develop a high-performance threat detection and mitigation system designed for the enterprise. By combining vast telemetry data with generative AI capabilities, the infrastructure can now analyze indicators of compromise in real time, enabling organizations to deploy adaptive, autonomous defenses without manual intervention. This approach significantly reduces the operational burden on security teams while substantially improving an organization’s ability to proactively neutralize unknown threats. For developers and architects building modern security stacks, the practical lesson here is that moving defense decisions closer to machine speed—by pairing raw network traffic with LLM reasoning—is becoming the new standard for resilient enterprise architecture against sophisticated actors."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-03T20:17:20.737Z"
+  },
+  {
     "id": "art-1793736164664-sxnzv",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -30388,32 +30496,6 @@
     "created_at": "2026-10-30T23:16:52.495Z"
   },
   {
-    "id": "art-1793402206206-6hve2",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/hige123456789/n/n05d99f3fed99",
-    "published_at": "2026-10-30T23:15:17.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330376886/rectangle_large_type_2_b8c028296748bf8df969e7f27850ecf4.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "11月から始める年末大掃除、AIで作成した理想の「完成図」から逆算する1日1ヶ所タスク管理術",
-    "summary_ja": "年末の負担を減らすため、11月から開始する「1日1ヶ所」の小分け大掃除計画をAIで効率化する手法を提案する。 まずAIに理想の部屋の完成図を描かせ、それを達成するために必要な作業を細分化することで、心理的ハードルを下げて確実に実行できるタスクリストへと落とし込む。 タスク管理にAIを組み込むことで、漫然とした「片付け」をプロジェクト管理のように進め、年末を心穏やかに過ごすための具体的な実践ガイドとなっている。",
-    "translations": {
-      "ja": {
-        "title": "11月から始める年末大掃除、AIで作成した理想の「完成図」から逆算する1日1ヶ所タスク管理術",
-        "summary": "年末の負担を減らすため、11月から開始する「1日1ヶ所」の小分け大掃除計画をAIで効率化する手法を提案する。 まずAIに理想の部屋の完成図を描かせ、それを達成するために必要な作業を細分化することで、心理的ハードルを下げて確実に実行できるタスクリストへと落とし込む。 タスク管理にAIを組み込むことで、漫然とした「片付け」をプロジェクト管理のように進め、年末を心穏やかに過ごすための具体的な実践ガイドとなっている。"
-      },
-      "en": {
-        "title": "Start Your Year-End Cleanup in November: Using AI Visualizations to Reverse-Engineer a Manageable Daily Task List",
-        "summary": "To eliminate the stress of year-end cleaning, this guide proposes an early-start strategy that breaks tasks into manageable, single-spot goals beginning in November. By utilizing generative AI to visualize the 'ideal completion state' of each room, creators can reverse-engineer the specific steps required to get there, effectively lowering the psychological barrier to starting. This approach treats household organization like a software project by converting vague cleaning goals into a concrete, executable task list. Applying this systematic AI-assisted planning transforms an overwhelming annual chore into a structured routine, allowing developers and busy professionals to clear their mental clutter and enjoy a peaceful, stress-free holiday season without the usual end-of-year rush."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-30T23:16:46.206Z"
-  },
-  {
     "id": "art-1793401343433-zi7cr",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -41688,59 +41770,6 @@
     "created_at": "2026-10-28T13:31:46.266Z"
   },
   {
-    "id": "art-1793193905905-f0z5p",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://hitmind.ai/research/ai-crawler-access-2026/",
-    "published_at": "2026-10-28T12:57:54.000Z",
-    "og_image_url": "https://hitmind.ai/og/research-ai-crawler-access-2026.png",
-    "title_ja": "2026年版：トップ1万サイトにおけるAIクローラー制御状況の調査が公開――robots.txtでBotアクセスを遮断するサイトの実態が明らかに",
-    "summary_ja": "本調査は、Web上のトラフィック上位1万サイトを対象に、robots.txtを用いたAIクローラーのアクセス制御状況を2026年時点で分析したものである。 調査結果から、主要なパブリッシャーや大手サービスがBot排除を選択する割合が急増しており、クローリングとコンテンツ利用のバランスを巡る攻防が激化していることが判明した。 開発者は、Webスクレイピングに依存するAIサービスの構築において、今後さらに厳格化するBot検知とアクセス拒否への対策を再考する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "2026年版：トップ1万サイトにおけるAIクローラー制御状況の調査が公開――robots.txtでBotアクセスを遮断するサイトの実態が明らかに",
-        "summary": "本調査は、Web上のトラフィック上位1万サイトを対象に、robots.txtを用いたAIクローラーのアクセス制御状況を2026年時点で分析したものである。 調査結果から、主要なパブリッシャーや大手サービスがBot排除を選択する割合が急増しており、クローリングとコンテンツ利用のバランスを巡る攻防が激化していることが判明した。 開発者は、Webスクレイピングに依存するAIサービスの構築において、今後さらに厳格化するBot検知とアクセス拒否への対策を再考する必要がある。"
-      },
-      "en": {
-        "title": "2026 Study of Top 10,000 Websites Reveals Current Trends in AI Crawler Blocking via Robots.txt Configuration",
-        "summary": "This new 2026 study analyzes the robots.txt configurations of the web’s top 10,000 websites to quantify how aggressively publishers are now blocking AI crawlers. The findings reveal a significant surge in sites actively shielding their content from automated model training, highlighting a deepening conflict between web scrapers and intellectual property holders. For developers building AI-powered products that rely on massive datasets or real-time web scraping, this research serves as a critical warning. You can no longer assume public availability for data; as major domains tighten their bot exclusion policies, building robust AI agents now requires moving beyond simple scraping toward more resilient data sourcing strategies and sophisticated bot-evasion tactics that respect emerging industry standards."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-28T13:25:05.905Z"
-  },
-  {
-    "id": "art-1793193832329-e3lla",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.tomshardware.com/tech-industry/robotics/japan-experiments-with-autonomous-ai-chainsaw-wielding-robots-video-shows-rail-truck-mounted-metal-humanoid-cutting-down-tree-branches",
-    "published_at": "2026-10-28T13:15:32.000Z",
-    "og_image_url": "https://cdn.mos.cms.futurecdn.net/GNdgn4uQJSieHfhRki6Xdn-1920-80.jpg",
-    "title_ja": "日本の研究者が開発、AIで自律的に枝払いを行う「チェーンソー搭載型人型ロボット」の実用化実験が進行中",
-    "summary_ja": "日本の研究グループが、鉄道メンテナンス用のトラックに搭載された人型ロボットにチェーンソーを持たせ、AIで自律的に樹木の枝を伐採する実験を公開した。 画像認識と動作計画技術を統合することで、人間が危険な高所作業を行う必要性を排除し、インフラ維持管理を効率化するのが狙いだ。 ロボットアーム制御と環境認識の高度な連携は、過酷な屋外環境における人型ロボットの新たな活用モデルとして注目される。",
-    "translations": {
-      "ja": {
-        "title": "日本の研究者が開発、AIで自律的に枝払いを行う「チェーンソー搭載型人型ロボット」の実用化実験が進行中",
-        "summary": "日本の研究グループが、鉄道メンテナンス用のトラックに搭載された人型ロボットにチェーンソーを持たせ、AIで自律的に樹木の枝を伐採する実験を公開した。 画像認識と動作計画技術を統合することで、人間が危険な高所作業を行う必要性を排除し、インフラ維持管理を効率化するのが狙いだ。 ロボットアーム制御と環境認識の高度な連携は、過酷な屋外環境における人型ロボットの新たな活用モデルとして注目される。"
-      },
-      "en": {
-        "title": "Japan tests autonomous AI-driven humanoid robots equipped with chainsaws for automated tree branch clearing operations",
-        "summary": "Researchers in Japan are testing a new approach to infrastructure maintenance by deploying humanoid robots mounted on rail-maintenance trucks, equipped with chainsaws to autonomously trim tree branches. By integrating advanced computer vision and motion planning, the system aims to eliminate the need for human personnel to perform hazardous work at height. This experiment demonstrates a significant leap in robotics, moving beyond static manufacturing floors into unstructured, dangerous outdoor environments. For engineers, the project highlights how combining real-time environmental perception with precise robotic arm control can solve labor-intensive maintenance problems. It serves as a compelling case study on operationalizing AI-driven robotics in the real world, prioritizing worker safety while automating complex physical labor tasks previously requiring human intuition."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-28T13:23:52.329Z"
-  },
-  {
     "id": "art-1793193719723-qhsq7",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -46961,32 +46990,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-10-27T18:23:07.754Z"
-  },
-  {
-    "id": "art-1793125374377-vnjy9",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/pcnotonari/articles/b8ad8393b85c51",
-    "published_at": "2026-10-27T12:04:16.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fuJlOtKx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AE%25E8%2587%25AA%25E5%258B%2595%25E6%259B%25B4%25E6%2596%25B0%25E3%2582%2592%25E3%2580%2581%25E3%2582%25B3%25E3%2583%2594%25E3%2583%25BC%25E3%2581%258C%25E6%25AD%25A2%25E3%2582%2581%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pcnotonari%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ1NTkyYTQwMmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「Claude Code」の自動更新による運用停止トラブル—バックアップ実行との干渉で発生した意図しない停止原因とその対策",
-    "summary_ja": "Claude Codeを日次業務に組み込み、中古PC貸出事業の在庫管理を自動化していた開発者が、バックアップスクリプトの影響でClaude Codeの自動更新が干渉し、プロセスが停止する事象を報告した。 更新プロセス中にファイルが書き換わったことで整合性が失われたのが原因だ。 CLIツールをミッションクリティカルな環境で運用する際は、自動アップデートを無効化し、特定のバージョンで環境を固定する「バージョン固定」が必須であると教訓を示している。",
-    "translations": {
-      "ja": {
-        "title": "「Claude Code」の自動更新による運用停止トラブル—バックアップ実行との干渉で発生した意図しない停止原因とその対策",
-        "summary": "Claude Codeを日次業務に組み込み、中古PC貸出事業の在庫管理を自動化していた開発者が、バックアップスクリプトの影響でClaude Codeの自動更新が干渉し、プロセスが停止する事象を報告した。 更新プロセス中にファイルが書き換わったことで整合性が失われたのが原因だ。 CLIツールをミッションクリティカルな環境で運用する際は、自動アップデートを無効化し、特定のバージョンで環境を固定する「バージョン固定」が必須であると教訓を示している。"
-      },
-      "en": {
-        "title": "Claude Code automated updates break production workflows: Critical lessons on version pinning for CLI-driven AI automation tasks",
-        "summary": "A developer automating equipment inventory via Claude Code discovered that frequent background updates can catastrophically interfere with stable production scripts. After adding a full-directory backup job, their automated tasks began failing twice daily because the CLI tool attempted an auto-update while the backup was in progress, creating file locking and consistency conflicts. This incident underscores that while CLI AI agents like Claude Code excel at executing routine tasks, they are not inherently idempotent or stable in production environments without strict configuration. For builders deploying agentic workflows, the lesson is clear: never allow production CLI tools to auto-update. Always implement strict version pinning and local environment isolation to prevent invisible breaking changes from halting mission-critical background automation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-27T18:22:54.377Z"
   },
   {
     "id": "art-1793125323514-kydgw",
