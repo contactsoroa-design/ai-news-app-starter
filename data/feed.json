@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1793728035063-dfo9m",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+    "published_at": "2026-11-03T17:22:37.000Z",
+    "og_image_url": null,
+    "title_ja": "Postmanが同意なくAIプラグインを自動インストールし、全APIデータを収集・送信する仕様が判明しユーザーから猛反発",
+    "summary_ja": "API開発プラットフォームのPostmanにおいて、ユーザーの明示的な同意なしにAIプラグインが自動インストールされ、APIデータが収集・送信されているとの報告がGitHub上で波紋を広げている。 機密性の高いAPIキーやエンドポイント情報が含まれるデータが開発元のサーバーへ転送される懸念に対し、セキュリティ意識の高い開発者から強い不信感と懸念が噴出。 API開発ツールにおけるAI機能の統合プロセスとデフォルト設定の透明性が改めて問われる事態となっている。",
+    "translations": {
+      "ja": {
+        "title": "Postmanが同意なくAIプラグインを自動インストールし、全APIデータを収集・送信する仕様が判明しユーザーから猛反発",
+        "summary": "API開発プラットフォームのPostmanにおいて、ユーザーの明示的な同意なしにAIプラグインが自動インストールされ、APIデータが収集・送信されているとの報告がGitHub上で波紋を広げている。 機密性の高いAPIキーやエンドポイント情報が含まれるデータが開発元のサーバーへ転送される懸念に対し、セキュリティ意識の高い開発者から強い不信感と懸念が噴出。 API開発ツールにおけるAI機能の統合プロセスとデフォルト設定の透明性が改めて問われる事態となっている。"
+      },
+      "en": {
+        "title": "Postman faces backlash after reports confirm silent AI plugin installation and potential unauthorized API data harvesting",
+        "summary": "Postman, the widely used API development platform, is facing intense scrutiny after reports revealed that AI plugins are being silently installed without explicit user consent, subsequently harvesting API traffic and endpoint data. Developers have raised alarms regarding the potential exposure of sensitive API keys and proprietary request payloads being transmitted to Postman's backend infrastructure. This incident has triggered a significant trust crisis, forcing the community to demand more transparency regarding how AI-enabled telemetry is implemented in developer tools. The controversy highlights a critical tension for builders: when a tool designed for managing secure API environments suddenly defaults to data-scraping, it compromises the fundamental security posture that API developers rely on, making auditability and strict opt-in defaults mandatory for enterprise-grade tooling."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-03T17:47:15.063Z"
+  },
+  {
+    "id": "art-1793728026731-o8mog",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/building-ultra-low-latency-voice-ai-applications-on-aws/",
+    "published_at": "2026-11-03T16:40:54.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/22/ML-21700-featured-image.png",
+    "title_ja": "AWSとCartesiaの連携：SSMモデルを活用したサブ100msの超低遅延音声AIアプリ構築手法",
+    "summary_ja": "AWSパートナーであるCartesiaは、独自開発の「Sonic」モデル（状態空間モデル：SSM）とAWSのインフラを組み合わせ、テキスト読み上げおよび音声認識で100ミリ秒を切る超低遅延を実現している。 Amazon SageMaker AIや自前のAmazon EC2 GPUインスタンス上でのデプロイが可能だ。",
+    "translations": {
+      "ja": {
+        "title": "AWSとCartesiaの連携：SSMモデルを活用したサブ100msの超低遅延音声AIアプリ構築手法",
+        "summary": "AWSパートナーであるCartesiaは、独自開発の「Sonic」モデル（状態空間モデル：SSM）とAWSのインフラを組み合わせ、テキスト読み上げおよび音声認識で100ミリ秒を切る超低遅延を実現している。 Amazon SageMaker AIや自前のAmazon EC2 GPUインスタンス上でのデプロイが可能だ。"
+      },
+      "en": {
+        "title": "Building sub-100ms voice AI: How Cartesia and AWS leverage state space models for ultra-low latency",
+        "summary": "AWS partner Cartesia is pushing the boundaries of real-time voice interaction by leveraging custom State Space Models (SSMs) on AWS infrastructure to achieve sub-100ms latency for both text-to-speech and speech-to-text. The technical deep dive details how developers can deploy the high-performance Sonic model onto either managed Amazon SageMaker AI endpoints or self-managed Amazon EC2 GPU instances to meet strict performance requirements. For builders architecting conversational AI platforms, this highlights a critical architectural shift: moving from standard transformer architectures to SSMs can significantly reduce inference latency and computational overhead. The takeaway for high-scale applications is that optimizing for speed at the model architecture level is now a requirement for delivering truly natural, stutter-free AI voice experiences."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "音声",
+      "アップデート"
+    ],
+    "created_at": "2026-11-03T17:47:06.731Z"
+  },
+  {
+    "id": "art-1793728020525-wwqoo",
+    "source_id": "source-langchain",
+    "source_name": "LangChain / LangGraph Blog",
+    "url": "https://www.langchain.com/blog/how-we-optimized-browser-use-for-deep-agents",
+    "published_at": "2026-11-03T17:43:22.000Z",
+    "og_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae92cbfdaa7db704c3d4a3d_6ae92ca005e2086fc1f08eb4_browser-use-deep-dive-webflow-cover-1200x675.png",
+    "title_ja": "LangChainが深層エージェント向けブラウザツール7種を比較、Browserbaseの「Stagehand」採用による自動操作最適化の知見を公開",
+    "summary_ja": "LangChainは、自律的にWeb操作を行う深層エージェント（Deep Agents）向けに7種類のブラウザツールセットを評価し、Browserbaseが提供する「Stagehand」が最も安定していると結論づけた。 LangSmithのトレース機能と評価フレームワークを用いて、エージェントの操作精度を最適化する手法もあわせて公開している。 複雑なWebタスクの成功率を高めるには、ツール選定だけでなく、適切な評価環境の構築とトレースを通じた継続的なチューニングが必須となる。",
+    "translations": {
+      "ja": {
+        "title": "LangChainが深層エージェント向けブラウザツール7種を比較、Browserbaseの「Stagehand」採用による自動操作最適化の知見を公開",
+        "summary": "LangChainは、自律的にWeb操作を行う深層エージェント（Deep Agents）向けに7種類のブラウザツールセットを評価し、Browserbaseが提供する「Stagehand」が最も安定していると結論づけた。 LangSmithのトレース機能と評価フレームワークを用いて、エージェントの操作精度を最適化する手法もあわせて公開している。 複雑なWebタスクの成功率を高めるには、ツール選定だけでなく、適切な評価環境の構築とトレースを通じた継続的なチューニングが必須となる。"
+      },
+      "en": {
+        "title": "LangChain compares seven browser toolsets for Deep Agents, selecting Browserbase’s Stagehand for optimized web automation and stable performance",
+        "summary": "LangChain recently benchmarked seven different browser toolsets specifically for Deep Agents, ultimately selecting Browserbase’s Stagehand as the most reliable solution for complex web automation tasks. By leveraging LangSmith’s sophisticated tracing and evaluation frameworks, the team demonstrated how to methodically tune agent performance and increase task success rates. The research underscores that simply implementing a browser tool is insufficient; for developers building robust autonomous agents, success requires a combination of superior tool selection and a rigorous evaluation cycle driven by real-time traces. This study provides a blueprint for any engineering team struggling with agent reliability, emphasizing that visibility into the browser-agent interaction layer is just as critical as the underlying model capabilities when solving real-world, dynamic web navigation challenges."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-03T17:47:00.525Z"
+  },
+  {
     "id": "art-1793727221724-baxy1",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -31400,33 +31479,6 @@
     "created_at": "2026-10-30T18:01:36.846Z"
   },
   {
-    "id": "art-1793382426941-iv6zv",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yuyan_1129/n/n5c31d560925a",
-    "published_at": "2026-10-30T17:34:04.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/f01cc5788d42588bd8412633d09d0d556f440821.png",
-    "title_ja": "【個人開発・4ヶ月報告】副業bot運用での8,000円赤字と、本業で得た知見の収支バランスを振り返る（2026年7月〜10月期）",
-    "summary_ja": "4ヶ月間の沈黙を破り、個人開発しているbotの運用収支を公開。 bot自体は本番環境で稼働し続けているものの、直近4ヶ月の収支は8,000円の赤字となった。 収益化の難しさを痛感しつつも、安定稼働を維持する技術的知見は蓄積できた。 本業での成果と副業の赤字を照らし合わせ、個人のサイドプロジェクトをいかに持続可能な形へとシフトすべきか、冷静に現状分析を行う。",
-    "translations": {
-      "ja": {
-        "title": "【個人開発・4ヶ月報告】副業bot運用での8,000円赤字と、本業で得た知見の収支バランスを振り返る（2026年7月〜10月期）",
-        "summary": "4ヶ月間の沈黙を破り、個人開発しているbotの運用収支を公開。 bot自体は本番環境で稼働し続けているものの、直近4ヶ月の収支は8,000円の赤字となった。 収益化の難しさを痛感しつつも、安定稼働を維持する技術的知見は蓄積できた。 本業での成果と副業の赤字を照らし合わせ、個人のサイドプロジェクトをいかに持続可能な形へとシフトすべきか、冷静に現状分析を行う。"
-      },
-      "en": {
-        "title": "4-Month Developer Report: Analyzing the ¥8,000 Loss in Side Project Bot Operations and Career Balance (July–Oct 2026)",
-        "summary": "Breaking a four-month silence, this monthly report details the financial reality of maintaining a production-grade automated bot. Despite keeping the service online consistently, the side project resulted in a net loss of ¥8,000 over the past four months. While the financial results highlight the harsh realities of independent monetization, the technical learnings from maintaining long-term stability proved valuable. By contrasting main job performance against side project expenses, the analysis provides a candid look at how builders must weigh operational costs against personal time. It serves as a grounded guide for developers struggling to reconcile technical passion with the economic challenges of sustaining a side hustle in an increasingly competitive automated landscape."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-30T17:47:06.941Z"
-  },
-  {
     "id": "art-1793382416468-59ixp",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -41597,32 +41649,6 @@
     "created_at": "2026-10-28T12:32:37.242Z"
   },
   {
-    "id": "art-1793190743566-b5z9l",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://zamechek.com/blog/the-sieve-growing-from-a-seed/",
-    "published_at": "2026-10-28T12:14:52.000Z",
-    "og_image_url": "https://zamechek.com/blog/the-sieve-growing-from-a-seed.png",
-    "title_ja": "わずか12個のシードデータからLLMで数千規模へ：LLMをフィルタとして活用する「LLM Sieve」手法によるデータ拡張の成功例",
-    "summary_ja": "わずか12個の名前リストから、LLMを活用して数千規模のデータセットを構築する「LLM Sieve」という手法が注目されている。 LLMにフィルタリングと推論を繰り返し実行させ、シードデータを徐々に拡張・洗練させることで、専門的な知識ベースやニッチな市場データの収集コストを劇的に削減できる。 LLMは単なるテキスト生成機ではなく、構造化データの探索と検証を自動化する効率的なデータパイプラインの核心として機能する。",
-    "translations": {
-      "ja": {
-        "title": "わずか12個のシードデータからLLMで数千規模へ：LLMをフィルタとして活用する「LLM Sieve」手法によるデータ拡張の成功例",
-        "summary": "わずか12個の名前リストから、LLMを活用して数千規模のデータセットを構築する「LLM Sieve」という手法が注目されている。 LLMにフィルタリングと推論を繰り返し実行させ、シードデータを徐々に拡張・洗練させることで、専門的な知識ベースやニッチな市場データの収集コストを劇的に削減できる。 LLMは単なるテキスト生成機ではなく、構造化データの探索と検証を自動化する効率的なデータパイプラインの核心として機能する。"
-      },
-      "en": {
-        "title": "Scaling from 12 seeds to thousands: How an LLM Sieve pipeline can automate high-quality data expansion",
-        "summary": "Starting with only 12 names, a new approach called 'LLM Sieve' uses language models to iteratively filter, validate, and expand limited seed datasets into thousands of high-quality records. By chaining LLMs to perform logical inference and data refinement, developers can dramatically reduce the cost of building specialized knowledge bases or niche market lists. The technique moves beyond simple text generation, positioning the LLM as the engine of an automated data pipeline that performs continuous discovery. This strategy is incredibly potent for indie hackers and data engineers looking to generate high-fidelity training data or targeted leads from sparse beginnings. For builders, it proves that the real value of LLMs often lies in their ability to act as reliable, iterative data filtering agents."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-28T12:32:23.566Z"
-  },
-  {
     "id": "art-1793190720024-nbbhu",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -41647,33 +41673,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-28T12:32:00.024Z"
-  },
-  {
-    "id": "art-1793190702022-4rfe5",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://arxiv.org/abs/2610.37467",
-    "published_at": "2026-10-28T12:15:16.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "AIチャットプラットフォームにおける「コンテキスト漏洩」を測定した最新研究公開、プロンプト履歴が予期せず混入するリスクを実証",
-    "summary_ja": "AIチャットプラットフォームにおける「コンテキスト漏洩」を分析した研究が公開された。 この調査では、あるチャットセッションの情報が、別のセッションや意図しないプロンプト処理に混入する脆弱性を実証している。 LLMを組み込んだアプリケーションを開発するエンジニアにとって、コンテキストウィンドウの管理と適切なデータ分離は、ユーザーのプライバシーを守るための喫緊の課題となる。",
-    "translations": {
-      "ja": {
-        "title": "AIチャットプラットフォームにおける「コンテキスト漏洩」を測定した最新研究公開、プロンプト履歴が予期せず混入するリスクを実証",
-        "summary": "AIチャットプラットフォームにおける「コンテキスト漏洩」を分析した研究が公開された。 この調査では、あるチャットセッションの情報が、別のセッションや意図しないプロンプト処理に混入する脆弱性を実証している。 LLMを組み込んだアプリケーションを開発するエンジニアにとって、コンテキストウィンドウの管理と適切なデータ分離は、ユーザーのプライバシーを守るための喫緊の課題となる。"
-      },
-      "en": {
-        "title": "New Research Quantifies Contextual Leakage in AI Chat Platforms, Exposing Critical Risks of Unintended Prompt History Exposure",
-        "summary": "A new research study investigates the prevalence of contextual leakage within popular AI chat platforms, identifying critical vulnerabilities where sensitive data from one session bleeds into another. The findings expose the inherent risks of unintended prompt history exposure, which could lead to severe privacy breaches for enterprise and consumer users alike. For engineers building LLM-powered applications, this research underscores that relying on default context management is insufficient. Developers must implement strict data isolation, thorough context cleansing, and careful API-side handling to ensure that prior user sessions or private instructions do not contaminate future inference tasks. Building secure AI products requires treating the context window as a potential attack vector rather than just a memory buffer."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "セキュリティ",
-      "開発"
-    ],
-    "created_at": "2026-10-28T12:31:42.022Z"
   },
   {
     "id": "art-1793190679969-os36f",
