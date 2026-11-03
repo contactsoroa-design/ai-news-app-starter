@@ -1,5 +1,114 @@
 [
   {
+    "id": "art-1793741649215-tfhzi",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kaeyuki/articles/d2ddf3c709bdfb",
+    "published_at": "2026-11-03T17:27:37.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---5tmoIhn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E5%2590%258C%25E5%25A3%25AB%25E3%2581%25A7%25E9%2596%258B%25E7%2599%25BA%25E7%25B5%2584%25E7%25B9%2594%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E4%25BD%2595%25E3%2581%258C%25E8%25B5%25B7%25E3%2581%258D%25E3%2581%259F%25E3%2581%258B%25EF%25BC%259F%25E3%2580%258C%25E7%25B5%25B1%25E6%258B%25ACDirector%25E2%2586%2592Director%25E2%2586%2592PM%25E2%2586%2592%25E9%2596%258B%25E7%2599%25BA%25E3%2580%258D%25E3%2581%25AE24%25E6%2597%25A5%25E9%2596%2593%25E3%2583%25BB%25E9%259A%258E%25E5%25B1%25A4%25E9%2581%258B...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hiroyuki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzkzRUZPNlZxbGo0ZnBCTHhHaF84bkZiMG9ybXJfbWd0OFFSM1dSQndLWlNqanRzVHdFQT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIによる階層型開発組織の実験：Directorからエンジニアまでを自律運用した24日間の全記録と成功・失敗の教訓",
+    "summary_ja": "AI単体で「統括Director→担当Director→PM→開発」という階層組織を構築し、24日間で516コミット・7万6000行以上の開発を自律実行させる実験が行われた。 人間は経営と最終承認のみに専念する形態で、AI組織の構築は可能だが、そのままでは破綻する現実も浮き彫りになった。 AI同士の対話による役割分担と、人間による適切な介入・制御こそが、AI駆動開発の次なるフェーズとなる。",
+    "translations": {
+      "ja": {
+        "title": "AIによる階層型開発組織の実験：Directorからエンジニアまでを自律運用した24日間の全記録と成功・失敗の教訓",
+        "summary": "AI単体で「統括Director→担当Director→PM→開発」という階層組織を構築し、24日間で516コミット・7万6000行以上の開発を自律実行させる実験が行われた。 人間は経営と最終承認のみに専念する形態で、AI組織の構築は可能だが、そのままでは破綻する現実も浮き彫りになった。 AI同士の対話による役割分担と、人間による適切な介入・制御こそが、AI駆動開発の次なるフェーズとなる。"
+      },
+      "en": {
+        "title": "Building a Hierarchical AI Development Organization: 24 Days of Autonomous Director-to-Dev Workflow Experiments and Real-World Failure Lessons",
+        "summary": "In a bold 24-day experiment, researchers simulated a hierarchical software development organization composed entirely of AI agents, featuring roles ranging from Directors and PMs to individual contributors. Managing three repositories across 10+ sessions, the system yielded 516 commits and over 76,000 lines of code. The findings reveal that while purely autonomous hierarchical AI execution is theoretically possible, it inherently fails without structured human intervention at key decision points. The study suggests that instead of letting AI run wild, builders should focus on establishing clear hierarchies where humans hold veto power and high-level strategy, while AI handles the execution flow. The primary takeaway for the future of agentic workflows is that oversight, not pure automation, is the path to stability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-03T21:34:09.215Z"
+  },
+  {
+    "id": "art-1793741593542-bhm9b",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor",
+    "published_at": "2026-11-03T00:00:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4Qq1edetewS59zvCuHHGI0/d5787b9ebff64a8fdf4df5104f1a6a78/slack-imgs.jpg",
+    "title_ja": "Vercel CLIにデバッグツール「vercel doctor」が登場、環境設定の問題を自動検出し修正コマンドを提案して開発効率を改善",
+    "summary_ja": "Vercelは新たにCLIデバッグツール「vercel doctor」を導入した。 この機能はCLIのバージョン、ログイン状態、プロジェクト設定、そしてサービスステータスを自動診断し、問題箇所への具体的な修正コマンドを提示する。 インタラクティブな操作を必要とせず、JSON出力も可能なため、開発者が自身のローカル環境のトラブルシューティングを迅速化できるだけでなく、AIエージェントによる自動修復プロセスの基盤としても活用できるのが強みだ。",
+    "translations": {
+      "ja": {
+        "title": "Vercel CLIにデバッグツール「vercel doctor」が登場、環境設定の問題を自動検出し修正コマンドを提案して開発効率を改善",
+        "summary": "Vercelは新たにCLIデバッグツール「vercel doctor」を導入した。 この機能はCLIのバージョン、ログイン状態、プロジェクト設定、そしてサービスステータスを自動診断し、問題箇所への具体的な修正コマンドを提示する。 インタラクティブな操作を必要とせず、JSON出力も可能なため、開発者が自身のローカル環境のトラブルシューティングを迅速化できるだけでなく、AIエージェントによる自動修復プロセスの基盤としても活用できるのが強みだ。"
+      },
+      "en": {
+        "title": "Vercel CLI introduces 'doctor' command to automatically diagnose environment configuration issues and suggest immediate, actionable fixes for developers",
+        "summary": "Vercel has officially rolled out the `vercel doctor` command, a new diagnostic utility built directly into the CLI to automate environment troubleshooting. This tool validates critical configurations including CLI versions, authentication, project linking, and `vercel.json` syntax while simultaneously pulling live status page incidents. Critically, it provides specific, actionable shell commands to resolve any detected failures. Designed to operate without requiring interactive prompts or authentication, it supports `--json` flags, making it perfectly suited for automated coding agents that need to inspect environments before attempting fixes. For engineers, this eliminates manual debugging cycles by surfacing the exact command needed to restore a broken local pipeline, significantly reducing time spent wrestling with tooling mismatches and configuration drift."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-03T21:33:13.542Z"
+  },
+  {
+    "id": "art-1793741562631-jyvw5",
+    "source_id": "source-langchain",
+    "source_name": "LangChain / LangGraph Blog",
+    "url": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents",
+    "published_at": "2026-11-03T21:20:15.000Z",
+    "og_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea4e47eeb653c872a6eaa7_Why%20human%20insight%20is%20a%20strategic%20advantage%20for%20building%20better%20agents.png",
+    "title_ja": "LangChainが提唱する「人間介入(HITL)」の3原則：実運用環境でのエージェント性能を最大化する戦略的なヒューマンレビュー",
+    "summary_ja": "LangChainは、実運用環境でエージェントの精度を担保するため、人間がプロセスに介入する「Human-in-the-Loop」の重要性を強調し、3つの設計原則を公開した。 単なる自動化ではなく、重要な判断ポイントでの人間によるレビューをワークフローに組み込むことが、予期せぬ挙動を抑え信頼性を高める鍵となる。 開発者は、エージェントが自律的に動く際のリスク管理として、人間の介入フローを戦略的な差別化要因として再定義すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "LangChainが提唱する「人間介入(HITL)」の3原則：実運用環境でのエージェント性能を最大化する戦略的なヒューマンレビュー",
+        "summary": "LangChainは、実運用環境でエージェントの精度を担保するため、人間がプロセスに介入する「Human-in-the-Loop」の重要性を強調し、3つの設計原則を公開した。 単なる自動化ではなく、重要な判断ポイントでの人間によるレビューをワークフローに組み込むことが、予期せぬ挙動を抑え信頼性を高める鍵となる。 開発者は、エージェントが自律的に動く際のリスク管理として、人間の介入フローを戦略的な差別化要因として再定義すべきだ。"
+      },
+      "en": {
+        "title": "LangChain outlines 3 principles for human-in-the-loop workflows to ensure agent reliability and strategic performance in production",
+        "summary": "LangChain argues that human insight remains a massive strategic advantage, detailing three core principles for effective human-in-the-loop workflows to ensure production-grade reliability. Rather than viewing autonomous agents as fully hands-off systems, developers must strategically inject human review at critical decision points to mitigate hallucination risks and operational failures. The guidance suggests that building feedback loops into agent architecture transforms human intervention from a bottleneck into a competitive differentiator that drastically improves task success rates. For builders scaling AI agents, the key takeaway is that engineering for human oversight isn't a step backward in automation; it is the fundamental mechanism required to safely deploy agents in high-stakes environments where accuracy, context, and intent alignment are non-negotiable."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-03T21:32:42.631Z"
+  },
+  {
+    "id": "art-1793741546233-allo6",
+    "source_id": "source-heygen-ugc",
+    "source_name": "HeyGen API Changelog",
+    "url": "https://developers.heygen.com/changelog#edit-video",
+    "published_at": "2026-11-03T21:28:17.000Z",
+    "og_image_url": "https://heygen-1fa696a7.mintlify.app/_mintlify/api/og/v2?division=Documentation&title=Changelog&description=Track+every+HeyGen+API+change%2C+new+endpoint%2C+deprecation%2C+and+version+bump+in+the+API+changelog.+Subscribe+via+RSS+or+webhook+to+get+notified+on+the+next.&theme=409ebfea156913020ba408b2&signature=9bc8a37c2eac2191bca96ad15a146ac91820605b6c3175bba20cf5221f17e509",
+    "title_ja": "HeyGen APIが動画の「部分修正・再レンダリング」に対応。変更したシーンのみを再生成・課金対象とし、修正コストと時間を劇的に削減へ",
+    "summary_ja": "HeyGen APIのアップデートにより、既存動画の特定のシーンのみを修正・再レンダリングできるようになった。 POST /v3/videos/{video_id}を介してスクリプト、音声、アバター設定を変更することで、対象外のシーンはそのまま保持されるため、編集作業の効率化とコスト削減に直結する。 動画生成APIを扱うエンジニアにとって、全編再生成を回避し、差分のみを処理できるこの仕様は、頻繁な更新が必要なAI動画生成ワークフロー構築における重要な設計改善となる。",
+    "translations": {
+      "ja": {
+        "title": "HeyGen APIが動画の「部分修正・再レンダリング」に対応。変更したシーンのみを再生成・課金対象とし、修正コストと時間を劇的に削減へ",
+        "summary": "HeyGen APIのアップデートにより、既存動画の特定のシーンのみを修正・再レンダリングできるようになった。 POST /v3/videos/{video_id}を介してスクリプト、音声、アバター設定を変更することで、対象外のシーンはそのまま保持されるため、編集作業の効率化とコスト削減に直結する。 動画生成APIを扱うエンジニアにとって、全編再生成を回避し、差分のみを処理できるこの仕様は、頻繁な更新が必要なAI動画生成ワークフロー構築における重要な設計改善となる。"
+      },
+      "en": {
+        "title": "HeyGen API adds partial video re-rendering: Edit specific scenes without re-generating the entire video to cut costs and time",
+        "summary": "HeyGen has launched an API update allowing developers to modify and re-render specific scenes of an existing video via the /v3/videos/{video_id} endpoint. By targeting only the specific script, voice, or avatar engine updates for individual scene IDs, the system retains the original video identity while processing and billing only for the modified segments. This architectural shift significantly reduces latency and API costs for builders maintaining dynamic content pipelines. For developers shipping automated video workflows, this capability effectively eliminates the need for expensive full-video regenerations, enabling a much tighter iteration loop for AI-generated media. Implementing this granular update logic is now the best practice for any scalable video generation system that requires frequent script or asset adjustments."
+      }
+    },
+    "tool_tags": [
+      "HeyGen"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-03T21:32:26.233Z"
+  },
+  {
     "id": "art-1793740795797-zgm4e",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -30236,32 +30345,6 @@
     "created_at": "2026-10-31T01:02:03.333Z"
   },
   {
-    "id": "art-1793408515652-z5n8z",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/hermitstudio/n/nee48048f63e8",
-    "published_at": "2026-10-31T01:00:27.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330409279/rectangle_large_type_2_65f12d3dbdfc41ac56924741727df594.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "完全オフラインAI環境「HermitNode v2」で全8章のSF短編を自動執筆、プロット駆動型長編生成の新たな可能性",
-    "summary_ja": "自作の完全オフラインAI執筆環境『HermitNode v2』を活用し、8章構成のSF恋愛小説をノンストップで自動生成した事例。 従来のクラウド依存型AIサービスと異なり、ローカル環境でプロットから本文執筆までを完結させることで、表現の制約を排除した独自の世界観構築が可能になった。 開発者は、ローカルLLMを駆使したクリエイティブな執筆フローを構築することで、外部APIの制限を受けない自由度の高い創作エコシステムを個人の手元に実現できる。",
-    "translations": {
-      "ja": {
-        "title": "完全オフラインAI環境「HermitNode v2」で全8章のSF短編を自動執筆、プロット駆動型長編生成の新たな可能性",
-        "summary": "自作の完全オフラインAI執筆環境『HermitNode v2』を活用し、8章構成のSF恋愛小説をノンストップで自動生成した事例。 従来のクラウド依存型AIサービスと異なり、ローカル環境でプロットから本文執筆までを完結させることで、表現の制約を排除した独自の世界観構築が可能になった。 開発者は、ローカルLLMを駆使したクリエイティブな執筆フローを構築することで、外部APIの制限を受けない自由度の高い創作エコシステムを個人の手元に実現できる。"
-      },
-      "en": {
-        "title": "HermitNode v2: Building a fully offline AI writing studio to generate an 8-chapter SF novel",
-        "summary": "This case study details the use of 'HermitNode v2,' a self-built, fully offline AI writing environment, to automate the non-stop creation of an eight-chapter SF romance novel. Unlike typical cloud-dependent AI writing tools, this local setup allows writers to manage the entire workflow, from plot development to final text generation, without external censorship or connectivity constraints. By utilizing local large language models (LLMs), developers can construct a highly creative writing pipeline that functions entirely on their own hardware. This project demonstrates how maintaining a local stack for AI-assisted creative writing grants total control over the artistic process, proving that powerful narrative generation is entirely feasible without relying on expensive, restrictive public AI APIs."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-31T01:01:55.652Z"
-  },
-  {
     "id": "art-1793408507270-tbjli",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -45007,32 +45090,6 @@
     "created_at": "2026-10-28T07:00:22.183Z"
   },
   {
-    "id": "art-1793142948081-em7c1",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/DanArcherOnline/items/4cba78fd81d7ac902ca5",
-    "published_at": "2026-10-27T23:11:02.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjQ2NDgzNzE4JTNGdiUzRDQ_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTlhN2NmOWY0ZDNiMjZmNjU4NjdhZDVmOThjNzFhZWJm%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De315e37ba6b206d1bf36574527017e9f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JUEwJUFEJUU4JTg0JUIzJUUzJTgwJTgxJUU0JUJEJTkzJUUyJTgwJUE2JUUzJTgyJUE4JUUzJTgzJUJDJUUzJTgyJUI4JUUzJTgyJUE3JUUzJTgzJUIzJUUzJTgzJTg4JUVGJUJDJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MzNhMTI0Zjg0N2RhZGQ1ZDQyZTY2YzAxNjFjYTc0ZGY&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBEYW5BcmNoZXJPbmxpbmUmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05MTc4MzBjYTQ2YzgwOWM3NGNkODZjOWY0ZTdkODU0Yg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=462984e14aca16c1bf1ea28c381af5a0",
-    "title_ja": "AIエージェント開発の新機軸：「頭脳」と「体」を分離するアーキテクチャが実装の複雑性をどう解決するか",
-    "summary_ja": "AIエージェント開発において、LLMの推論能力を担う「頭脳」と、API実行やブラウジング等の操作を行う「体」の役割を明確に分ける設計思想が注目されている。 この分離は、モデルの変更やツールの追加を独立して行えるようにし、複雑なタスクの安定稼働を可能にする。 LLMへの依存度を下げ、堅牢なシステムを構築するための重要なパラダイムシフトと言える。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント開発の新機軸：「頭脳」と「体」を分離するアーキテクチャが実装の複雑性をどう解決するか",
-        "summary": "AIエージェント開発において、LLMの推論能力を担う「頭脳」と、API実行やブラウジング等の操作を行う「体」の役割を明確に分ける設計思想が注目されている。 この分離は、モデルの変更やツールの追加を独立して行えるようにし、複雑なタスクの安定稼働を可能にする。 LLMへの依存度を下げ、堅牢なシステムを構築するための重要なパラダイムシフトと言える。"
-      },
-      "en": {
-        "title": "The Mind-Body Architecture for AI Agents: Decoupling LLM Reasoning from Tool Execution to Improve System Scalability",
-        "summary": "Modern AI agent development is shifting toward a structural \"Mind-Body\" paradigm that explicitly decouples the LLM's reasoning engine from the agent's mechanical actuators. In this architecture, the \"Mind\" serves as the central planner and decision-making logic, while the \"Body\" encapsulates tools, API integrations, and environment interactions. By maintaining this strict separation, developers can swap out underlying reasoning models or upgrade specific tools without triggering catastrophic failure across the entire orchestration layer. This framework drastically reduces the complexity of maintenance and testing in production environments. For builders, the key lesson is to architect agents as modular services rather than monolithic prompt loops, allowing for higher reliability and faster iteration when dealing with unpredictable real-world inputs."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-27T23:15:48.081Z"
-  },
-  {
     "id": "art-1793142163643-19uxs",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -46340,31 +46397,6 @@
     "created_at": "2026-10-27T19:22:03.399Z"
   },
   {
-    "id": "art-1793128611426-d9ynh",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/aiworkdeck/articles/40ad0cdb2b2610",
-    "published_at": "2026-10-27T14:20:37.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--uZ4csivz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25B0%2582%25E9%2596%2580%25E6%2596%2587%25E6%259B%25B8%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E3%2582%25B9%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B9%25E3%2582%2592%25E6%258B%25A1%25E5%25BC%25B5%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259AAI%2520WorkDeck%25E3%2581%25AE%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B0%25E3%2582%25A4%25E3%2583%25B3%25E6%25A7%258B%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%2520WorkDeck%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzVfYkxCbjRWNzhYTkFxeWJvemNPbEpaekI5bVItTHZ2UmZnNnJ4cDFhUkNraldBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "専門文書ワークスペース「AI WorkDeck」がプラグイン構成を公開：サンドボックス型iframeで独自UIを容易に組み込み可能に",
-    "summary_ja": "AI WorkDeckは、文書エディタやAIエージェント、ソース参照を統合するオープンソースの専門職向けワークスペースである。 今回公開されたプラグイン機能では、サンドボックス化されたiframeを利用し、プレーンなHTML/JSでビルド不要の独自Webペインを拡張できる。 権限チェック付きのブリッジを介した安全なドキュメント操作が可能であり、法的業務以外の専門領域にも適応できる柔軟な開発基盤を提供している。",
-    "translations": {
-      "ja": {
-        "title": "専門文書ワークスペース「AI WorkDeck」がプラグイン構成を公開：サンドボックス型iframeで独自UIを容易に組み込み可能に",
-        "summary": "AI WorkDeckは、文書エディタやAIエージェント、ソース参照を統合するオープンソースの専門職向けワークスペースである。 今回公開されたプラグイン機能では、サンドボックス化されたiframeを利用し、プレーンなHTML/JSでビルド不要の独自Webペインを拡張できる。 権限チェック付きのブリッジを介した安全なドキュメント操作が可能であり、法的業務以外の専門領域にも適応できる柔軟な開発基盤を提供している。"
-      },
-      "en": {
-        "title": "AI WorkDeck releases plugin architecture for its open-source workspace, enabling sandboxed iframe integrations for specialized documentation workflows",
-        "summary": "AI WorkDeck is an extensible, open-source workspace that merges document editors, AI agents, and source referencing into a unified environment for legal and technical professionals. Their newly documented plugin architecture utilizes sandboxed iframes, allowing developers to extend the workbench with custom UI panes using only plain HTML and JavaScript, bypassing complex build steps. These plugins interact with the core workspace through a secure, permission-validated bridge, facilitating safe document manipulation and metadata access. By decoupling the core document handling from the UI extensions, the platform provides a modular foundation that builders can adapt to vertical-specific document workflows beyond the legal domain. It serves as a practical blueprint for developers building specialized AI-assisted productivity tools."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-10-27T19:16:51.426Z"
-  },
-  {
     "id": "art-1793128601713-qrik7",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -46523,32 +46555,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-27T19:03:00.499Z"
-  },
-  {
-    "id": "art-1793127757692-1y9pn",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/kimshoshi/articles/wrap-the-data-key",
-    "published_at": "2026-10-27T14:36:55.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xBz95YbJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2591%25E3%2582%25B9%25E3%2583%25AF%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E5%25A4%2589%25E3%2581%2588%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E6%259A%2597%25E5%258F%25B7%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25AF%25E3%2581%25A9%25E3%2581%2586%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25E3%2580%2582%25E5%2585%25A8%25E4%25BB%25B6%25E3%2582%2584%25E3%2582%258A%25E7%259B%25B4%25E3%2581%2595%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258C%25E9%258D%25B5%25E3%2582%2592%25E5%258C%2585%25E3%2582%2580%25E3%2580%258D%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:KIM%2520SEONGSU%25EF%25BD%259C%25E4%25BB%25A4%25E5%2592%258C8%25E5%25B9%25B4%25E5%25BA%25A6%2520...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2IxMGJhNDUwMDQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "暗号化データはパスワード変更で再処理不要に。管理コストを極小化する「エンベロープ暗号化（鍵を包む仕組み）」の実装術",
-    "summary_ja": "暗号化データの保存時、単に管理者パスワードから生成した鍵を用いると、パスワード変更や管理者交代のたびに全データの再暗号化が発生し運用が破綻する。 解決策となるのが「エンベロープ暗号化」という設計だ。 データ自体はランダムな「データ暗号化鍵（DEK）」で保護し、そのDEKをさらに「鍵暗号化鍵（KEK）」で包むことで、アクセス権限の変更時にDEKのみを再暗号化すれば済み、データ本体には一切触れずに安全な運用が可能になる。",
-    "translations": {
-      "ja": {
-        "title": "暗号化データはパスワード変更で再処理不要に。管理コストを極小化する「エンベロープ暗号化（鍵を包む仕組み）」の実装術",
-        "summary": "暗号化データの保存時、単に管理者パスワードから生成した鍵を用いると、パスワード変更や管理者交代のたびに全データの再暗号化が発生し運用が破綻する。 解決策となるのが「エンベロープ暗号化」という設計だ。 データ自体はランダムな「データ暗号化鍵（DEK）」で保護し、そのDEKをさらに「鍵暗号化鍵（KEK）」で包むことで、アクセス権限の変更時にDEKのみを再暗号化すれば済み、データ本体には一切触れずに安全な運用が可能になる。"
-      },
-      "en": {
-        "title": "Stop Re-encrypting Everything: How Envelope Encryption Makes Password Rotations and Access Management Seamless for Builders",
-        "summary": "Storing encrypted data by deriving keys directly from an admin password creates a maintenance nightmare: every password rotation or new admin addition forces a total re-encryption of your entire dataset. The professional solution is envelope encryption, a pattern where you protect sensitive data with a random Data Encryption Key (DEK), then wrap that DEK with a Key Encryption Key (KEK). When an admin changes their password or access permissions shift, you only re-encrypt the small DEK file rather than the bulk payload. This decoupled architecture keeps your storage operations lightweight, secure, and instant, ensuring that your core data remains untouched and performant even as your administrative access policies evolve over the long term."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-27T19:02:37.692Z"
   },
   {
     "id": "art-1793127743979-wvoso",
