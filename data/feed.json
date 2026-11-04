@@ -1,5 +1,34 @@
 [
   {
+    "id": "art-1793755120731-xh6mp",
+    "source_id": "source-claude-release",
+    "source_name": "Claude Code Changelog",
+    "url": "https://code.claude.com/docs/en/changelog#2-1-318",
+    "published_at": "2026-11-04T00:08:56.000Z",
+    "og_image_url": "https://claude-code.mintlify.app/_mintlify/api/og/v2?division=Getting+started&title=Claude+Code+changelog&description=Release+notes+for+Claude+Code%2C+including+new+features%2C+improvements%2C+and+bug+fixes+by+version.&theme=8d9812df31da293aba4e8103&signature=b530ac886c82b93ae600770b632e93cd5e65b1895873efc12a624a244deee76b",
+    "title_ja": "Claude Codeアップデート：AWSスイッチロール対応やセッション認証期限の可視化など、エンタープライズ運用を強化する新機能を追加",
+    "summary_ja": "Claude Codeの最新版（v2.1.318）では、エンタープライズ環境での開発を円滑にするため、AWSアカウント間での「assume_role」対応や、開発者ごとのAWSコスト管理機能が強化された。 さらに、Claude.aiのログイン認証期限が確認可能となり、期限10日前からの警告表示や、モデル操作時の「effort」オプションによる処理負荷の調整など、運用効率とセキュリティ管理が大きく向上した。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeアップデート：AWSスイッチロール対応やセッション認証期限の可視化など、エンタープライズ運用を強化する新機能を追加",
+        "summary": "Claude Codeの最新版（v2.1.318）では、エンタープライズ環境での開発を円滑にするため、AWSアカウント間での「assume_role」対応や、開発者ごとのAWSコスト管理機能が強化された。 さらに、Claude.aiのログイン認証期限が確認可能となり、期限10日前からの警告表示や、モデル操作時の「effort」オプションによる処理負荷の調整など、運用効率とセキュリティ管理が大きく向上した。"
+      },
+      "en": {
+        "title": "Claude Code 2.1.318 adds AWS role assumption support, session expiration tracking, and fine-grained effort control for enterprise teams",
+        "summary": "The latest Claude Code update (v2.1.318) significantly improves enterprise-grade operations by introducing AWS 'assume_role' support across its gateway, enabling cross-account access and detailed per-developer AWS cost attribution. Developers can now also monitor Claude.ai session expiration dates directly via CLI, with automated stderr warnings triggered ten days prior to credential expiry. Additionally, a new 'effort' option in model forks allows users to fine-tune execution load for quick side tasks, reporting the specific effort used during the session. For teams scaling CLI-based AI workflows, these updates reduce operational friction by centralizing identity management and providing better visibility into session health, ensuring that authenticated development tasks do not unexpectedly fail due to expired credentials or unmonitored AWS resource spending."
+      }
+    },
+    "tool_tags": [
+      "Claude"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-04T01:18:40.731Z"
+  },
+  {
     "id": "art-1793751756364-t1grn",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -30237,32 +30266,6 @@
       "開発"
     ],
     "created_at": "2026-10-31T03:46:39.947Z"
-  },
-  {
-    "id": "art-1793418391868-v9dju",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/sanjimonica/n/n7c6f042713bd",
-    "published_at": "2026-10-31T03:03:43.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330449044/rectangle_large_type_2_0cad4bed1bf339f2907a4f6bb1b756a4.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "甥っ子・姪っ子のための「うんこゲームセンター」開発記：広告・課金・チャットを排除し、子供が安心して遊べる安全なゲームサイトの作り方",
-    "summary_ja": "甥っ子や姪っ子にスマホを貸す際、既存の無料ゲームサイトには不適切な広告や課金誘導、不特定多数とのチャット機能が混在し、監視なしでは遊ばせられないことに課題を感じた開発者が、これらを完全に排除したWebゲームサイト「うんこゲームセンター」を制作。 安全なUXを最優先に設計し、子供がのびのびと遊べる環境を作ることで、親が目を離しても安心して渡せるWebプロダクトとして完成させた。 個人開発者が特定のペルソナ（子供）のために機能を削ぎ落とすことの重要性を示す実例である。",
-    "translations": {
-      "ja": {
-        "title": "甥っ子・姪っ子のための「うんこゲームセンター」開発記：広告・課金・チャットを排除し、子供が安心して遊べる安全なゲームサイトの作り方",
-        "summary": "甥っ子や姪っ子にスマホを貸す際、既存の無料ゲームサイトには不適切な広告や課金誘導、不特定多数とのチャット機能が混在し、監視なしでは遊ばせられないことに課題を感じた開発者が、これらを完全に排除したWebゲームサイト「うんこゲームセンター」を制作。 安全なUXを最優先に設計し、子供がのびのびと遊べる環境を作ることで、親が目を離しても安心して渡せるWebプロダクトとして完成させた。 個人開発者が特定のペルソナ（子供）のために機能を削ぎ落とすことの重要性を示す実例である。"
-      },
-      "en": {
-        "title": "Building 'Unko Game Center': A Secure, Ad-Free Web Portal Designed for Kids Without In-App Purchases or Unsafe Chat",
-        "summary": "When lending smartphones to children, the developer faced a recurring friction: free game sites are saturated with deceptive ads, predatory in-app purchase prompts, and risky chat features that require constant adult supervision. To solve this, the creator launched 'Unko Game Center,' a web-based portal explicitly stripped of advertisements, payment gateways, and social interaction layers to prioritize user safety and autonomy. By aggressively removing common monetization and engagement patterns that clutter standard gaming sites, the developer built a sandbox where kids can play freely without parental monitoring. For solo builders, this project demonstrates how identifying a specific, high-friction problem in user experience allows for a focused, niche product that offers genuine utility while bypassing standard industry clutter."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-31T03:46:31.868Z"
   },
   {
     "id": "art-1793418380012-ssq8o",
