@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793807442368-15c3m",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/bricks/articles/review-copy-must-match-revision",
+    "published_at": "2026-11-04T04:48:41.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--dPImdfjO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2594%25B9%25E7%25A8%25BF%25E3%2581%25AF%25E7%25B5%2582%25E3%2582%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E3%2580%2582%25E7%25A2%25BA%25E8%25AA%258D%25E7%2594%25A8%25E3%2582%25B3%25E3%2583%2594%25E3%2583%25BC%25E3%2581%25AF%25E6%2597%25A7%25E7%25A8%25BF%25E3%2581%25AE%25E3%2581%25BE%25E3%2581%25BE%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Renga%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2IyYzI4MDZiNDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "技術記事の版管理の盲点：ファイル名やURLが同じでも中身が古いままになっている「同期不一致」を防ぐためのチェック手法",
+    "summary_ja": "技術記事の改稿作業において、ローカルでの修正完了とクラウド上の確認用コピーへの反映が同期されていない事態が発生した。 URLやファイル名が一致していても、バイトサイズやハッシュ値による厳密な照合を怠ると、古い版を参照し続けるリスクがある。 開発者は成果物の更新時に、単なる上書き保存だけでなく、メタデータの照合プロセスを自動化・習慣化することで、こうしたケアレスミスによる情報の不一致を防ぐ必要がある。",
+    "translations": {
+      "ja": {
+        "title": "技術記事の版管理の盲点：ファイル名やURLが同じでも中身が古いままになっている「同期不一致」を防ぐためのチェック手法",
+        "summary": "技術記事の改稿作業において、ローカルでの修正完了とクラウド上の確認用コピーへの反映が同期されていない事態が発生した。 URLやファイル名が一致していても、バイトサイズやハッシュ値による厳密な照合を怠ると、古い版を参照し続けるリスクがある。 開発者は成果物の更新時に、単なる上書き保存だけでなく、メタデータの照合プロセスを自動化・習慣化することで、こうしたケアレスミスによる情報の不一致を防ぐ必要がある。"
+      },
+      "en": {
+        "title": "Beyond the URL: How failing to verify content hashes during technical editing leads to silent synchronization errors",
+        "summary": "A common but subtle failure mode in technical documentation workflows occurs when local source files are updated, but the shared cloud staging copy remains stale despite sharing the same URL or filename. In this case, the author's local file had grown to 5,387 bytes with added verification steps, while the shared version remained stuck at 3,171 bytes with outdated explanations. Builders relying on simple file overwrites often skip strict validation, creating a silent discrepancy where reviewers audit the wrong information. To prevent this, developers must implement checksum verification or automated diffing between their working directory and staging environments. Relying on path names alone is insufficient; engineers should treat content versions with the same rigorous state management applied to production code deployments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-04T15:50:42.368Z"
+  },
+  {
+    "id": "art-1793807435804-fsmod",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/boot-dev",
+    "published_at": "2026-11-03T20:53:48+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/6yjauh6dk04b9id98vyl702iv60v",
+    "title_ja": "バックエンド開発特化型学習プラットフォーム「Boot.dev」が語る、初心者がエンジニア職に就くための実務直結スキルとゲーミフィケーションの役割",
+    "summary_ja": "Boot.devは、多くのブートキャンプがカバーしきれない「深いバックエンド知識」に特化した学習プラットフォームだ。 単なるコーディング練習ではなく、分散システムやアルゴリズムをゲーム形式で学ばせることで、エンジニアの離脱を防ぎ学習効率を最大化している。 理論と実務の橋渡しを重視する設計は、理論偏重になりがちな独学者が採用面接を突破する際、強力な武器となる。",
+    "translations": {
+      "ja": {
+        "title": "バックエンド開発特化型学習プラットフォーム「Boot.dev」が語る、初心者がエンジニア職に就くための実務直結スキルとゲーミフィケーションの役割",
+        "summary": "Boot.devは、多くのブートキャンプがカバーしきれない「深いバックエンド知識」に特化した学習プラットフォームだ。 単なるコーディング練習ではなく、分散システムやアルゴリズムをゲーム形式で学ばせることで、エンジニアの離脱を防ぎ学習効率を最大化している。 理論と実務の橋渡しを重視する設計は、理論偏重になりがちな独学者が採用面接を突破する際、強力な武器となる。"
+      },
+      "en": {
+        "title": "How Boot.dev bridges the gap between bootcamps and senior backend engineering roles through gamified curriculum and deep theory",
+        "summary": "Boot.dev has carved out a distinct niche in the ed-tech market by pivoting away from typical frontend-heavy bootcamp curriculums to focus entirely on deep backend engineering. The platform treats learning like an RPG, gamifying complex topics like algorithms, distributed systems, and system design to ensure high completion rates among self-taught developers. By prioritizing foundational computer science and practical backend architecture over quick-fix syntax tutorials, Boot.dev effectively prepares engineers for the technical rigor of enterprise interviews. For builders looking to upskill, the takeaway is that deep, theory-driven learning paths—when packaged with high engagement loops—are surprisingly effective for learners seeking long-term career stability in an increasingly competitive job market for backend roles."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-04T15:50:35.804Z"
+  },
+  {
+    "id": "art-1793807417289-g1nuh",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/openai-to-acquire-pierre",
+    "published_at": "2026-11-04T14:30:00.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAIがコード生成・レビュー特化の「Pierre」を買収、Codexベースの開発支援ツール統合でコーディング体験を刷新へ",
+    "summary_ja": "OpenAIは、コードの記述、理解、レビューを最適化するツール群を提供するスタートアップ「Pierre」の買収を発表した。 今回の統合により、OpenAIの基盤モデルであるCodexを活用した開発支援機能が強化され、コードベース全体の解析能力やレビュープロセスの自動化が一段と加速する見込みだ。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIがコード生成・レビュー特化の「Pierre」を買収、Codexベースの開発支援ツール統合でコーディング体験を刷新へ",
+        "summary": "OpenAIは、コードの記述、理解、レビューを最適化するツール群を提供するスタートアップ「Pierre」の買収を発表した。 今回の統合により、OpenAIの基盤モデルであるCodexを活用した開発支援機能が強化され、コードベース全体の解析能力やレビュープロセスの自動化が一段と加速する見込みだ。"
+      },
+      "en": {
+        "title": "OpenAI Acquires Pierre to Boost Codex with Advanced Code Comprehension and Automated Review Tools",
+        "summary": "OpenAI has officially acquired Pierre, a startup specialized in tools for writing, understanding, and reviewing complex codebases. This strategic move aims to supercharge OpenAI’s existing Codex models by integrating Pierre’s deep code analysis and automated review workflows directly into their developer offerings. By merging these capabilities, OpenAI is positioning its AI not just as a code generator, but as a comprehensive engineering partner capable of parsing entire project contexts and managing software safety standards. For developers, this acquisition signals a pivotal shift where AI assistance is evolving beyond simple autocomplete into full-lifecycle code management, fundamentally changing how teams build, debug, and maintain software at scale in increasingly complex repositories."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-04T15:50:17.289Z"
+  },
+  {
+    "id": "art-1793807410253-x4dpr",
+    "source_id": "source-publickey",
+    "source_name": "Publickey",
+    "url": "https://www.publickey1.jp/blog/26/github_copilot_dreaminggithub_universe_2026.html",
+    "published_at": "2026-11-04T15:15:49.000Z",
+    "og_image_url": "https://www.publickey1.jp/2026/copilot-fusion-githubuniverse2602.png",
+    "title_ja": "GitHubが新機能「GitHub Copilot Dreaming」を発表、過去のコーディング履歴から背景知識を整理し開発を先回り支援へ",
+    "summary_ja": "GitHubは「GitHub Universe 2026」にて、コーディング作業の背景や意図をバックグラウンドで整理する新機能「GitHub Copilot Dreaming」をパブリックプレビューとして公開した。 開発者が過去に行ったコード変更や思考プロセスを「パーソナルメモリ」として蓄積し、次に必要なタスクを先回りして提案する。 断片的な作業記憶をAIが整理・構造化することで、コンテキストスイッチのコストを劇的に下げ、開発者の思考の中断を防ぐ狙いがある。",
+    "translations": {
+      "ja": {
+        "title": "GitHubが新機能「GitHub Copilot Dreaming」を発表、過去のコーディング履歴から背景知識を整理し開発を先回り支援へ",
+        "summary": "GitHubは「GitHub Universe 2026」にて、コーディング作業の背景や意図をバックグラウンドで整理する新機能「GitHub Copilot Dreaming」をパブリックプレビューとして公開した。 開発者が過去に行ったコード変更や思考プロセスを「パーソナルメモリ」として蓄積し、次に必要なタスクを先回りして提案する。 断片的な作業記憶をAIが整理・構造化することで、コンテキストスイッチのコストを劇的に下げ、開発者の思考の中断を防ぐ狙いがある。"
+      },
+      "en": {
+        "title": "GitHub launches 'GitHub Copilot Dreaming' to process past coding sessions into structured background context for predictive developer guidance",
+        "summary": "At GitHub Universe 2026, GitHub announced the public preview of 'GitHub Copilot Dreaming,' a feature designed to handle the cognitive load of context switching by processing past coding activity in the background. By accumulating a 'personal memory' of code changes and developer intent, the tool constructs a persistent knowledge base that anticipates the next logical step in a workflow. Instead of forcing developers to manually recall previous work states or re-establish context after a break, the AI structures historical data to provide proactive, relevant suggestions. The ultimate goal is to minimize the friction of context switching, allowing engineers to maintain flow state more effectively even across disjointed development sessions or lengthy, complex project tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-04T15:50:10.253Z"
+  },
+  {
     "id": "art-1793807002423-81g4a",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -39282,32 +39387,6 @@
     "created_at": "2026-10-29T19:16:52.038Z"
   },
   {
-    "id": "art-1793301404862-i9q9m",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://united24media.com/war-in-ukraine/ukraines-new-ai-powered-turret-sky-sentinel-is-already-shooting-down-russias-fastest-drones-23750",
-    "published_at": "2026-10-29T19:01:37.000Z",
-    "og_image_url": "https://storage.united24media.com/og/e/bb/e6f815852426d1404455b04c93f41bbe.jpg",
-    "title_ja": "ウクライナ軍が配備したAI搭載迎撃砲塔「Sky Sentinel」が公開、高速移動するロシア製ドローンを次々と撃墜",
-    "summary_ja": "ウクライナ軍が実戦配備したAI搭載型迎撃砲塔「Sky Sentinel」は、高度なコンピュータビジョンを活用し、高速移動するロシア製ドローンを自律的に標的として識別・追尾する。 従来の対空砲システムとは異なり、AIが着弾点までをリアルタイムで計算・補正することで、極めて高い命中精度を実現している。 過酷な戦場環境における低遅延な推論処理とハードウェア制御の統合は、今後の自律防衛システムの開発において重要なリファレンスとなるだろう。",
-    "translations": {
-      "ja": {
-        "title": "ウクライナ軍が配備したAI搭載迎撃砲塔「Sky Sentinel」が公開、高速移動するロシア製ドローンを次々と撃墜",
-        "summary": "ウクライナ軍が実戦配備したAI搭載型迎撃砲塔「Sky Sentinel」は、高度なコンピュータビジョンを活用し、高速移動するロシア製ドローンを自律的に標的として識別・追尾する。 従来の対空砲システムとは異なり、AIが着弾点までをリアルタイムで計算・補正することで、極めて高い命中精度を実現している。 過酷な戦場環境における低遅延な推論処理とハードウェア制御の統合は、今後の自律防衛システムの開発において重要なリファレンスとなるだろう。"
-      },
-      "en": {
-        "title": "Ukraine deploys AI-powered 'Sky Sentinel' turret capable of autonomously tracking and downing high-speed Russian drones",
-        "summary": "The Ukrainian military has deployed the 'Sky Sentinel,' an AI-integrated defensive turret designed to autonomously identify and neutralize high-speed, maneuvering drones using advanced computer vision. Unlike conventional anti-aircraft hardware, this system leverages real-time AI inference to calculate ballistic trajectories and adjust aim points dynamically, resulting in unprecedented engagement accuracy. This deployment underscores a critical shift toward edge-deployed, latency-critical inference models that must survive extreme, high-stress environments. For engineers building autonomous defensive or safety-critical robotics, the success of Sky Sentinel serves as a compelling proof-of-concept for how localized, low-latency AI processing can replace human reaction times in tactical scenarios, fundamentally changing the economics of drone defense where every millisecond of calculation matters for kinetic impact."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-29T19:16:44.862Z"
-  },
-  {
     "id": "art-1793301397604-i8f9z",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -44179,32 +44258,6 @@
     "created_at": "2026-10-28T11:32:24.360Z"
   },
   {
-    "id": "art-1793187127409-u5nam",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/kazuki_okura/articles/claude-code-harness-review",
-    "published_at": "2026-10-28T09:14:08.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--8bnu7zxV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25AE%25E5%2580%258B%25E4%25BA%25BA%25E8%25A8%25AD%25E5%25AE%259A%25E3%2582%2592%2520Claude%2520%25E8%2587%25AA%25E8%25BA%25AB%25E3%2581%25AB%25E7%2582%25B9%25E6%25A4%259C%25E3%2581%2595%25E3%2581%259B%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2583%2595%25E3%2583%2583%25E3%2582%25AF%25E3%2581%25AB%25E6%258A%259C%25E3%2581%2591%25E7%25A9%25B4%25E3%2581%258C%25E8%25A6%258B%25E3%2581%25A4%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kazuki%2520Okura%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFmMjI4YWNjM2IuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの個人設定をAIに自己点検させたら発覚したGitフックの脆弱性と、設定を安全に管理するための実践的なGit管理術",
-    "summary_ja": "Claude Codeの利用に伴い蓄積される設定ファイルやフック、自動メモ機能をClaude自身に監査させたところ、git pushを阻止するべきフックにすり抜けが見つかった。 公式仕様の変化や設定の陳腐化が脆弱性を招く原因となる。 教訓は、AIの監査結果を過信せず、必ず手動コマンドやテストで挙動を検証すること。 また、設定ファイルをGitで管理し、変更履歴を追跡可能にすることで安全な運用環境を構築できる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの個人設定をAIに自己点検させたら発覚したGitフックの脆弱性と、設定を安全に管理するための実践的なGit管理術",
-        "summary": "Claude Codeの利用に伴い蓄積される設定ファイルやフック、自動メモ機能をClaude自身に監査させたところ、git pushを阻止するべきフックにすり抜けが見つかった。 公式仕様の変化や設定の陳腐化が脆弱性を招く原因となる。 教訓は、AIの監査結果を過信せず、必ず手動コマンドやテストで挙動を検証すること。 また、設定ファイルをGitで管理し、変更履歴を追跡可能にすることで安全な運用環境を構築できる。"
-      },
-      "en": {
-        "title": "Auditing Claude Code settings with AI reveals Git hook vulnerabilities: Implementing safer version-controlled configuration practices",
-        "summary": "After auditing growing Claude Code configuration files—including hooks, auto-memory, and sub-agents—using Claude itself, the model uncovered a significant bypass in a hook intended to block unauthorized git pushes. This highlights how relying on stale settings or evolving official specs creates silent security gaps. The practical takeaway is two-fold: never trust AI self-audits implicitly without verifying behavior through manual commands and rigorous testing. Furthermore, builders should move sensitive configuration files into version control to track modifications over time. Treating AI-generated agent configs as immutable code rather than ephemeral notes is the only way to ensure that security controls like push hooks function as intended as projects scale and complexity grows over time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-28T11:32:07.409Z"
-  },
-  {
     "id": "art-1793187106798-ng9el",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -44229,58 +44282,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-10-28T11:31:46.798Z"
-  },
-  {
-    "id": "art-1793187100079-dskhx",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/peggykang/articles/16fbfd69f4bdb1",
-    "published_at": "2026-10-28T09:23:20.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--oRB-LZBe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%25BB%25E9%259D%25A2%25E9%258C%25B2%25E7%2594%25BB%25E3%2582%2592%25E5%2585%25B1%25E6%259C%2589%25E3%2581%2599%25E3%2582%258B%25E3%2581%25A8%25E3%2581%258D%25E3%2581%25AB%25E5%259B%25B0%25E3%2582%258B%25E3%2580%258C%25E5%25AE%25B9%25E9%2587%258F%25E3%2581%258C%25E5%25A4%25A7%25E3%2581%258D%25E3%2581%2584%25E3%2580%258D%25E3%2580%258C%25E5%25BD%25A2%25E5%25BC%258F%25E3%2581%258C%25E5%2590%2588%25E3%2582%258F%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D%25E3%2582%2592%25E7%25B0%25A1%25E5%258D%2598%25E3%2581%25AB%25E8%25A7%25A3%25E6%25B1%25BA%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:peggykang%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzBlNDA2Mjk1OTIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "画面録画の共有トラブルをブラウザで解決：巨大ファイル圧縮や形式変換を専用ソフト不要で爆速化するワークフロー",
-    "summary_ja": "開発中のバグ報告や機能デモで頻発する、録画動画の「容量超過」や「再生不可」という共有トラブル。 これらは専用ソフトをインストールせず、ブラウザ完結型のWebツールを活用することで即座に解消できる。 特に数百MBを超える高解像度動画を圧縮したり、MOV形式をMP4に変換したりする作業は、オンラインの変換・圧縮サイトを適切に選ぶだけで手間を最小限に抑えられる。 開発者はこれらをブックマークしておくことで、チームやクライアントへの共有スピードを格段に向上させられるだろう。",
-    "translations": {
-      "ja": {
-        "title": "画面録画の共有トラブルをブラウザで解決：巨大ファイル圧縮や形式変換を専用ソフト不要で爆速化するワークフロー",
-        "summary": "開発中のバグ報告や機能デモで頻発する、録画動画の「容量超過」や「再生不可」という共有トラブル。 これらは専用ソフトをインストールせず、ブラウザ完結型のWebツールを活用することで即座に解消できる。 特に数百MBを超える高解像度動画を圧縮したり、MOV形式をMP4に変換したりする作業は、オンラインの変換・圧縮サイトを適切に選ぶだけで手間を最小限に抑えられる。 開発者はこれらをブックマークしておくことで、チームやクライアントへの共有スピードを格段に向上させられるだろう。"
-      },
-      "en": {
-        "title": "Streamline Your Dev Workflow: Browser-Based Tools to Compress and Convert Screen Recordings Instantly Without Specialized Software",
-        "summary": "Sharing screen recordings for bug reports or feature demos often hits common friction points: file size limits on Slack or Discord and incompatible MOV formats that fail to play on Windows environments. Rather than installing heavy editing software, developers can leverage browser-based utilities to instantly compress high-resolution files and transcode formats on the fly. By bookmarking a reliable suite of web-native compression and conversion tools, you bypass the need for desktop installations and dramatically accelerate your feedback loops with clients and teams. The takeaway for builders is to treat 'shareability' as part of your dev stack; lightweight, browser-accessible media tools allow for immediate, frictionless collaboration without bloating your OS with dedicated video software."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "動画"
-    ],
-    "created_at": "2026-10-28T11:31:40.079Z"
-  },
-  {
-    "id": "art-1793186305316-6ybj2",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/growl/books/7e6c5140cd8299",
-    "published_at": "2026-10-28T10:14:58.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Vf0YEOXi--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci80YzYzMTI0MTg3LmpwZWc=%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
-    "title_ja": "AIエージェントの暴走と二重実行を防ぐ：Python標準ライブラリで構築する5つの安全装置と実戦的防御設計の全解説",
-    "summary_ja": "AIエージェントへの自動タスク委任時、通信リトライによる二重メール送信や無限ループ等のトラブルが懸念される。 本書は、単なるプロンプト制御を超え、Python標準ライブラリ（SQLiteやHMAC等）を活用した5つの安全装置（二重実行防止、順序制御、承認フロー、権限分離、破壊的テスト）を解説。 実稼働環境での不意の暴走を防ぎ、開発者が安心してAIに操作を任せるための堅牢なシステム設計手法を網羅する。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの暴走と二重実行を防ぐ：Python標準ライブラリで構築する5つの安全装置と実戦的防御設計の全解説",
-        "summary": "AIエージェントへの自動タスク委任時、通信リトライによる二重メール送信や無限ループ等のトラブルが懸念される。 本書は、単なるプロンプト制御を超え、Python標準ライブラリ（SQLiteやHMAC等）を活用した5つの安全装置（二重実行防止、順序制御、承認フロー、権限分離、破壊的テスト）を解説。 実稼働環境での不意の暴走を防ぎ、開発者が安心してAIに操作を任せるための堅牢なシステム設計手法を網羅する。"
-      },
-      "en": {
-        "title": "Building safer AI agents: Implementing five Python-native safety rails to stop unauthorized actions and accidental double-executions",
-        "summary": "When delegating autonomous tasks to AI agents, hazards like redundant email dispatches during retry cycles or infinite API loop errors are inevitable. Moving beyond simple prompt-based guardrails, this guide details how to implement five critical safety mechanisms using native Python libraries like SQLite and HMAC. The author covers essential patterns including idempotent execution locks, ordered task sequencing, human-in-the-loop mobile verification, granular permission handling, and eighteen destructive testing scenarios to expose vulnerabilities. By integrating these systems directly into your application architecture, developers can mitigate the risks of agent runaway and unauthorized filesystem access. This comprehensive manual provides the architectural blueprint for builders who need to safely offload sensitive operations to AI without risking production integrity or incurring unexpected costs."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-28T11:18:25.316Z"
   },
   {
     "id": "art-1793186247063-9iyzo",
