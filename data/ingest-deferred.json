@@ -1,5 +1,37 @@
 [
   {
+    "url": "https://arxiv.org/abs/2611.03684",
+    "source_id": "source-arxiv",
+    "title": "Functional-Group Knowledge Is Structured in Language Models Before It Is Spoken",
+    "pubDate": "2026-11-04T05:00:00.000Z",
+    "snippet": "arXiv:2611.03684v1 Announce Type: new Abstract: Language models serve as the reasoning core of agents for chemistry and materials science, where they must interpret molecular structure before planning syntheses or proposing materials. Yet their outputs show only what they say, not what they know. Given a prompt such as ``The primary functional group in 1-Fluorobutane (CCCCF) is'', a small general-purpose model may answer ``the alkyne group'' instead of an alkyl fluoride. The output alone cannot tell whether the model failed to recognize the fluorine or recognized it and failed to say so. We address this by reading the internal representations of five open-source models on prompts covering 92 molecules and 20 functional groups. Even without chemistry training, the models organize functional groups by chemical family, and they encode chemical differences as consistent directions. The shift",
+    "saved_at": "2026-11-04T05:23:52.615Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2611.03662",
+    "source_id": "source-arxiv",
+    "title": "MCPGuard: Finding Conformance Gaps in MCP SDKs via Dual-Track Analysis and Dynamic Adjudication",
+    "pubDate": "2026-11-04T05:00:00.000Z",
+    "snippet": "arXiv:2611.03662v1 Announce Type: new Abstract: The Model Context Protocol (MCP) connects large language model agents to external tools and services through official SDKs that implement message validation and session logic. Specification constraints omitted by these SDKs may propagate to downstream applications, highlighting the importance of SDK-level conformance testing. Yet existing MCP conformance tools mainly exercise running endpoints and reveal little about whether SDK models enforce specification requirements. We present MCPGuard, an automated LLM-based framework for detecting specification-to-SDK conformance gaps. Its structural track aligns JSON Schema constraints with normalized SDK models and produces constraint-specific evidence. Its behavioral track extracts normative prose rules, retrieves bounded function-level slices, and audits them with LLMs for candidate omissions. An",
+    "saved_at": "2026-11-04T05:22:23.936Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2611.03651",
+    "source_id": "source-arxiv",
+    "title": "CARD: A Proof-Carrying Certificate-to-Action Interface for Relative-Measurement Graphs",
+    "pubDate": "2026-11-04T05:00:00.000Z",
+    "snippet": "arXiv:2611.03651v1 Announce Type: new Abstract: Geometric certificates make mathematical claims about specified estimator objects, while robotic action requires a physical transform, a service decision, and timely proof support. We present CARD, a proof-carrying interface that keeps these objects distinct and records how they combine. Its lifted-fiber formulation separates semantic motion from witness repair and characterizes when projected and proof-carrying costs coincide. Its actionability result gives an exact useful-service law: uniform sampling without replacement produces a hypergeometric yield, while sampling from the eligible population gives one useful service per request under the observed live-confirmation condition. The primary study contains 404 Full16 cases from 20 sorties of an AA15-X500 airborne survey system. All 404 checker-confirmed optimizer points are reference-disc",
+    "saved_at": "2026-11-04T05:19:40.127Z"
+  },
+  {
+    "url": "https://arxiv.org/abs/2611.03650",
+    "source_id": "source-arxiv",
+    "title": "Alignment Faking Depends on the Value, Not Just the Model",
+    "pubDate": "2026-11-04T05:00:00.000Z",
+    "snippet": "arXiv:2611.03650v1 Announce Type: new Abstract: Language models can follow a directive when they believe they are monitored and abandon it when they believe they are not, a pattern termed Alignment Faking. Prior work establishes this for harmful-content objectives and a handful of moral-foundations values, leaving open how it distributes across a wider value space. We argue it is value-dependent: whether compliance survives a change in perceived oversight is a property of the model--value pairing, not of the model alone. Our framework profiles Alignment Faking per value, scoring each model-value pair under three conditions: bare (no system prompt), unmonitored, and monitored. On 32 ValueBench dimensions across ten open- and closed-weight models (8B-~675B), compliance gaps span 0.05-0.50, with a distilled 70B above a ~675B model. We observe that majority of the structural variance depends",
+    "saved_at": "2026-11-04T05:18:11.315Z"
+  },
+  {
     "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002869/",
     "source_id": "source-itmedia-ai",
     "title": "GitHub、「Copilot Fusion」正式リリース タスクに応じて最適なAIモデル選択、高性能・低コスト両立",
@@ -54,14 +86,6 @@
     "pubDate": "2026-11-04T00:00:00.000Z",
     "snippet": "Noahlogyは、AVEVAとパートナー契約を締結した。AVEVAの3Dモデルデータを対象に、AIを活用して設計者の確認作業を支援する技術の開発／検証を進め、造船設計業務での実用化を目指す。",
     "saved_at": "2026-11-04T00:53:38.175Z"
-  },
-  {
-    "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
-    "source_id": "source-github-copilot",
-    "title": "BYOK and enterprise custom models in the Copilot usage API",
-    "pubDate": "2026-11-04T00:32:19.000Z",
-    "snippet": "The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of The post BYOK and enterprise custom models in the Copilot usage API appeared first on The GitHub Blog .",
-    "saved_at": "2026-11-04T00:49:24.388Z"
   },
   {
     "url": "https://qiita.com/himajisan/items/20bebee7a4dbc8c970fd",
@@ -294,29 +318,5 @@
     "pubDate": "2026-11-02T23:27:59.000Z",
     "snippet": "Opus 5.5 をはじめ、最近のモデルに文章を書かせていて、こういう回答を見たことはないだろうか。 原因はメモリ不足ではありません。ディスク容量の問題でもなく、ネットワークの遅延も該当しません。設定ファイルの記述ミスでもないことを確認しました。原因はログのローテーションが止まっていたことです。 コミットメッセージだとこうなる。 Fix parseTimeout to handle empty values The AI reviewer flagged that TIMEOUT can be an empty string in CI. Per that feedback, I ...",
     "saved_at": "2026-11-03T01:26:10.287Z"
-  },
-  {
-    "url": "https://qiita.com/rikunagano/items/71192862fae3eece2dd5",
-    "source_id": "source-qiita",
-    "title": "【AIで2万人分の業務能力を創出】生産性向上が変える人材の役割と企業の収益モデル",
-    "pubDate": "2026-11-02T23:05:19.000Z",
-    "snippet": "図：AIによる業務能力の創出と、人材・収益モデルの変化を示した導入画像。 AIの導入によって、企業の生産性はどこまで向上するのでしょうか。 2026年9月、インドのITサービス大手Wipro（ウィプロ）が、AIの活用によって従業員約2万人分に相当する業務遂行能力を生み出し...",
-    "saved_at": "2026-11-02T23:39:41.833Z"
-  },
-  {
-    "url": "https://www.bcbs.com/about-us/association-news/bcbsa-analysis-ai-coding-tools-affects-healthcare-costs",
-    "source_id": "source-hn",
-    "title": "Bcbsa Analysis How AI Coding Tools Affect Healthcare Costs",
-    "pubDate": "2026-11-02T20:06:59.000Z",
-    "snippet": "Article URL: https://www.bcbs.com/about-us/association-news/bcbsa-analysis-ai-coding-tools-affects-healthcare-costs Comments URL: https://news.ycombinator.com/item?id=50342912 Points: 1 # Comments: 0",
-    "saved_at": "2026-11-02T21:25:06.208Z"
-  },
-  {
-    "url": "https://www.paidintoken.com/ai/hardware",
-    "source_id": "source-hn",
-    "title": "PaidinToken – Open LLM Token Pricing and Local GPU VRAM Calculator",
-    "pubDate": "2026-11-02T20:12:54.000Z",
-    "snippet": "Article URL: https://www.paidintoken.com/ai/hardware Comments URL: https://news.ycombinator.com/item?id=50342999 Points: 1 # Comments: 1",
-    "saved_at": "2026-11-02T21:25:06.208Z"
   }
 ]
