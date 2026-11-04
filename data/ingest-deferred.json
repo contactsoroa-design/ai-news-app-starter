@@ -48,14 +48,6 @@
     "saved_at": "2026-11-04T13:58:24.089Z"
   },
   {
-    "url": "https://zenn.dev/itaraiguma/articles/pytest-test-db-isolation-why",
-    "source_id": "source-zenn-indie",
-    "title": "テストを流すと開発用DBのファイルが残っていた ─ .gitignoreで隠さずに原因を追った話",
-    "pubDate": "2026-11-04T00:16:54.000Z",
-    "snippet": "はじめに 個人開発している技術記事キュレーションサービス「DevPick」のバックエンドは、FastAPIとSQLAlchemyで書いています。本番はMySQLですが、ローカルの開発とテストはSQLiteで動かしていて、テストはpytest-xdistで並列に約8,800件流しています。 2026年10月31日、別の作業をworktreeで進めていたところ、全テストを流したあとに開発用のDBファイルと、その-shm・-walファイルが作られていました。.gitignoreは*.dbだけを無視していたので、-shmと-walは未追跡ファイルとしてgit statusに出てきます。コミッ...",
-    "saved_at": "2026-11-04T13:58:24.089Z"
-  },
-  {
     "url": "https://zenn.dev/onestruction/articles/260c1d42239901",
     "source_id": "source-zenn",
     "title": "【建設AI】Construction AI Leaderboardの概要と評価の詳細",
@@ -77,14 +69,6 @@
     "title": "AIの回答に含まれるLaTeX数式をWordへ移す：PandocとTODOCを比較",
     "pubDate": "2026-11-04T03:43:41.000Z",
     "snippet": "AIの回答に含まれる数式をWordへ貼り付けると、LaTeXの記号がそのまま残ったり、数式の配置が崩れたりすることがあります。回答を画像として貼る方法もありますが、あとから編集しにくくなります。 そこで、数式を含むMarkdownをWord文書へ変換する方法を2つ比べます。ひとつはローカルで動くPandoc、もうひとつはブラウザーで使えるTODOCです。どちらも数式を含む文書を作れますが、作業の流れが違います。 変換前に確認すること 回答にある数式の元データを残しておきます。Markdownでは、文中の数式は $...$、独立した数式は $$...$$ の形で書かれることがあります。...",
-    "saved_at": "2026-11-04T13:58:24.089Z"
-  },
-  {
-    "url": "https://zenn.dev/hachihou_system/articles/muse-claude-drive-relay",
-    "source_id": "source-zenn",
-    "title": "MuseとClaudeをGoogleドライブ経由で連携する: ファイルを伝言板にしたAI間の受け渡し",
-    "pubDate": "2026-11-04T04:45:12.000Z",
-    "snippet": "Metaのパーソナルエージェント「Muse」が日本で使えるようになりました。普段の入口をMuseに絞り、処理はClaudeに任せる構成を、Googleドライブのフォルダを介して試しました。 架空のレシートでの検証で、本番運用はこれからです。 構成 MuseとClaudeを直接つなぐのではなく、両方が読み書きできるフォルダをキューとして使います。 役割 担当 処理 処理 Claude レシートを読み取り、不明点を question_NNN.txt に書く 通知 Muse 定時に未回答を探し、質問と画像を人に伝える 判断 人 Museに返答する 書き戻し Mus...",
     "saved_at": "2026-11-04T13:58:24.089Z"
   },
   {
