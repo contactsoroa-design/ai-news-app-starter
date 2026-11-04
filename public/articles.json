@@ -1,5 +1,88 @@
 [
   {
+    "id": "art-1793810815511-7yvdv",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/bague/articles/9a7a168a7ec85c",
+    "published_at": "2026-11-04T08:07:21.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--IDhMW3nP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ChatGPT%25E3%2583%25BBGemini%25E3%2583%25BBClaude%25E3%2581%25A7%25E5%2590%258C%25E3%2581%2598%25E8%25A8%2598%25E6%2586%25B6%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2582%2592%25E3%2580%2581%25E8%2587%25AA%25E7%25A4%25BE%25E7%2594%25A8%25E3%2581%25AB%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E5%25A3%25B2%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:BAGUE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E0MTc0YTYyODAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIの「記憶」を共有する自社ツール「BAGUE Memory」開発記：ChatGPT・Claude・Gemini間でコンテキストを統一する技術設計",
+    "summary_ja": "BAGUEは、ChatGPTやClaude、Geminiなど異なるAIサービス間で同一の記憶を共有・参照できる基盤「BAGUE Memory」を開発し、販売を開始した。 AIごとに個別のプロンプトやメモリー設定が必要だった課題に対し、AIの外部にナレッジベースを配置する設計を採用し、シームレスな文脈維持を実現した。 個別チャットに依存せず、ツールを跨いで一貫した指示や顧客データを活用する設計思想は、AI業務効率化を目指すエンジニアにとって重要な知見となる。",
+    "translations": {
+      "ja": {
+        "title": "AIの「記憶」を共有する自社ツール「BAGUE Memory」開発記：ChatGPT・Claude・Gemini間でコンテキストを統一する技術設計",
+        "summary": "BAGUEは、ChatGPTやClaude、Geminiなど異なるAIサービス間で同一の記憶を共有・参照できる基盤「BAGUE Memory」を開発し、販売を開始した。 AIごとに個別のプロンプトやメモリー設定が必要だった課題に対し、AIの外部にナレッジベースを配置する設計を採用し、シームレスな文脈維持を実現した。 個別チャットに依存せず、ツールを跨いで一貫した指示や顧客データを活用する設計思想は、AI業務効率化を目指すエンジニアにとって重要な知見となる。"
+      },
+      "en": {
+        "title": "BAGUE Memory: Building a Unified Context Layer to Share AI Knowledge Across ChatGPT, Claude, and Gemini",
+        "summary": "BAGUE has launched 'BAGUE Memory,' a platform that enables consistent context retention across heterogeneous AI services like ChatGPT, Claude, and Gemini. The core issue addressed is the fragmented nature of AI 'memory,' where users repeatedly manually re-inject company policies or customer history when switching models. By externalizing knowledge storage into a centralized architecture, BAGUE ensures that instructions and data remain available regardless of the underlying LLM. For developers building AI-assisted workflows, this architecture demonstrates that decoupling memory from specific chat interfaces is essential for enterprise productivity. Instead of relying on vendor-locked features, treating context as a primary, portable data layer allows teams to maintain stateful, high-quality interactions across any AI backend, effectively solving the constant onboarding overhead."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-04T16:46:55.511Z"
+  },
+  {
+    "id": "art-1793810798443-efaga",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/",
+    "published_at": "2026-11-04T16:33:03.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/04/ML-22232-featured-image-1.png",
+    "title_ja": "Amazon Qに「スマート承認」機能が追加、エージェント操作の重要度を自動判定し承認プロセスを最適化",
+    "summary_ja": "Amazon Qに導入された「スマート承認」は、エージェントによるアクションの重要度を自動評価し、人による確認が必要な操作のみを抽出する機能だ。 ポリシーベースの境界設定と分類器が不要な承認プロンプトを削減し、CloudTrailやCloudWatch Logsによる監査も標準対応する。 重要な決定権を維持しつつ、AIエージェントの自律性を高めたい開発者にとって、運用の効率化とリスク制御を両立させるための不可欠な仕組みとなる。",
+    "translations": {
+      "ja": {
+        "title": "Amazon Qに「スマート承認」機能が追加、エージェント操作の重要度を自動判定し承認プロセスを最適化",
+        "summary": "Amazon Qに導入された「スマート承認」は、エージェントによるアクションの重要度を自動評価し、人による確認が必要な操作のみを抽出する機能だ。 ポリシーベースの境界設定と分類器が不要な承認プロンプトを削減し、CloudTrailやCloudWatch Logsによる監査も標準対応する。 重要な決定権を維持しつつ、AIエージェントの自律性を高めたい開発者にとって、運用の効率化とリスク制御を両立させるための不可欠な仕組みとなる。"
+      },
+      "en": {
+        "title": "Amazon Q introduces Smart Approvals to automatically filter agent actions and streamline human oversight workflows",
+        "summary": "Amazon Q has launched Smart Approvals, a feature designed to intelligently filter agent actions based on criticality, ensuring human review only occurs for high-stakes decisions. By leveraging policy-based boundary settings and advanced classifiers, the system successfully eliminates unnecessary approval prompts while maintaining rigorous oversight for consequential tasks. It integrates directly with AWS CloudTrail and CloudWatch Logs to ensure robust auditability for compliance. For developers scaling AI agents in production, this mechanism provides a necessary middle ground between full automation and manual bottlenecks. It proves that embedding policy enforcement directly into the agent workflow is the most reliable way to mitigate operational risk without sacrificing the speed and efficiency that AI agents promise for enterprise workloads."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-04T16:46:38.443Z"
+  },
+  {
+    "id": "art-1793810790547-y7jzq",
+    "source_id": "source-context-dev",
+    "source_name": "Context.dev Blog",
+    "url": "https://www.context.dev/blog/best-news-search-api-ai-apps",
+    "published_at": "2026-11-03",
+    "og_image_url": "https://www.context.dev/api/og?variant=post&title=How+to+Build+a+News+Search+Feed+for+AI+Apps+with+the+Context.dev+News+API&highlight=with+the+Context.dev+News+API&collection=blog&minutes=14",
+    "title_ja": "Context.devが分析する「ニュース検索API×AI」の潮流：開発者が即座に実装可能な次世代リサーチツールの構築手法とAPI選定の勘所",
+    "summary_ja": "Context.devは、ニュース検索APIを活用してAI搭載の検索アプリを構築するための最新エコシステムを詳細に解説した。 PerplexityやGoogle Search APIをはじめ、リアルタイム性と信頼性を担保するデータソースの選定、およびRAGパイプライン構築におけるAPI統合の重要性が中心的なトピックだ。 開発者は単なる検索機能の実装にとどまらず、いかにノイズを除去し、ユーザーの意図を汲み取ったコンテキストを提供できるかがプロダクトの差別化要因となる。",
+    "translations": {
+      "ja": {
+        "title": "Context.devが分析する「ニュース検索API×AI」の潮流：開発者が即座に実装可能な次世代リサーチツールの構築手法とAPI選定の勘所",
+        "summary": "Context.devは、ニュース検索APIを活用してAI搭載の検索アプリを構築するための最新エコシステムを詳細に解説した。 PerplexityやGoogle Search APIをはじめ、リアルタイム性と信頼性を担保するデータソースの選定、およびRAGパイプライン構築におけるAPI統合の重要性が中心的なトピックだ。 開発者は単なる検索機能の実装にとどまらず、いかにノイズを除去し、ユーザーの意図を汲み取ったコンテキストを提供できるかがプロダクトの差別化要因となる。"
+      },
+      "en": {
+        "title": "Context.dev explores the ecosystem of news search APIs and AI: How to build next-generation research tools and integrate reliable data sources",
+        "summary": "Context.dev explores the rapidly evolving ecosystem of news search APIs, outlining how developers can integrate these tools to power sophisticated AI-driven research applications. The analysis highlights key providers like Perplexity and Google Search API, emphasizing that the true value lies not just in fetching data, but in building robust RAG pipelines that filter noise to deliver relevant, high-quality insights. For builders, the takeaway is that architectural choices regarding API selection and latency directly impact product differentiation. Successfully balancing retrieval costs against information freshness and data reliability is the critical engineering challenge for those creating AI search agents. Investing in thoughtful API integration strategies today is the most effective way to establish a durable competitive advantage in the AI research space."
+      }
+    },
+    "tool_tags": [
+      "Context.dev"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-04T16:46:30.547Z"
+  },
+  {
     "id": "art-1793809962434-1kdez",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -38230,33 +38313,6 @@
     "created_at": "2026-10-30T08:46:55.515Z"
   },
   {
-    "id": "art-1793349999130-h7n9f",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://winder.ai/timestral-ai-demand-forecasting/",
-    "published_at": "2026-10-30T08:34:52.000Z",
-    "og_image_url": "https://winder.ai/timestral-ai-demand-forecasting/feature_hu_7da626a453c71cee.png",
-    "title_ja": "需要予測AI「Timestral」徹底検証：高精度な未来予測に必要なデータ量と学習効率の境界線（従来モデルとの比較分析）",
-    "summary_ja": "AI需要予測モデル「Timestral」を実データで検証した結果、従来の手法と比較して少ないデータセットでも十分な予測精度を維持できることが明らかになった。 特に季節変動やトレンドを捉える能力において、教師あり学習の効率が大幅に向上している。 小規模データでの運用が求められるサプライチェーン最適化や在庫管理システムにおいて、高コストな学習データを最小限に抑えつつ実用的な予測モデルを構築するための重要な指針となる。",
-    "translations": {
-      "ja": {
-        "title": "需要予測AI「Timestral」徹底検証：高精度な未来予測に必要なデータ量と学習効率の境界線（従来モデルとの比較分析）",
-        "summary": "AI需要予測モデル「Timestral」を実データで検証した結果、従来の手法と比較して少ないデータセットでも十分な予測精度を維持できることが明らかになった。 特に季節変動やトレンドを捉える能力において、教師あり学習の効率が大幅に向上している。 小規模データでの運用が求められるサプライチェーン最適化や在庫管理システムにおいて、高コストな学習データを最小限に抑えつつ実用的な予測モデルを構築するための重要な指針となる。"
-      },
-      "en": {
-        "title": "Timestral Tested: Analyzing the Minimal Dataset Size Required for High-Performance AI Demand Forecasting and Training Efficiency",
-        "summary": "An in-depth evaluation of the Timestral AI demand forecasting model reveals that it maintains high predictive accuracy even when trained on significantly smaller datasets compared to legacy statistical methods. The analysis highlights marked improvements in training efficiency, particularly in capturing complex seasonal fluctuations and long-term market trends with limited historical data. For builders developing supply chain optimization tools or inventory management systems where high-quality training data is often scarce or expensive, this research provides a vital blueprint for balancing performance with resource constraints. By demonstrating that robust forecasting doesn't always require massive data ingestion, the study offers actionable strategies for maintaining practical predictive utility while drastically lowering data collection costs and infrastructure overhead."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-30T08:46:39.130Z"
-  },
-  {
     "id": "art-1793349990908-zcn9r",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -44098,32 +44154,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-28T12:40:55.904Z"
-  },
-  {
-    "id": "art-1793190720024-nbbhu",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/salt2/articles/babfcda3505a2c",
-    "published_at": "2026-10-28T08:49:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1hwxQ1HZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E9%25A7%2586%25E5%258B%2595%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25A8%25E9%259D%2599%25E7%259A%2584%25E8%25A7%25A3%25E6%259E%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%259F%25E3%2581%2593%25E7%2584%25BC%25E3%2581%258D%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzk5NmFmNjRkOTMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:SALT2%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2M2NjIyZGI5NDUuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI駆動開発の罠を打破する静的解析の再評価：生成コードの品質保証と「書いて・確かめて・直す」サイクルに潜むリスク",
-    "summary_ja": "AIによる開発高速化で「書いて・確かめて・直す」のサイクルは短縮されたが、生成コードの品質が自動的に保証されるわけではない。 AIは自ら生成したコードの範囲でしか検証を行わず、副作用や長期的な保守性の欠落を見逃すリスクがある。 開発の高速化を享受しつつ真の品質を維持するには、静的解析ツールをCIパイプラインに組み込み、AI生成コードに対する客観的な第三者のチェック体制を強制することが不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "AI駆動開発の罠を打破する静的解析の再評価：生成コードの品質保証と「書いて・確かめて・直す」サイクルに潜むリスク",
-        "summary": "AIによる開発高速化で「書いて・確かめて・直す」のサイクルは短縮されたが、生成コードの品質が自動的に保証されるわけではない。 AIは自ら生成したコードの範囲でしか検証を行わず、副作用や長期的な保守性の欠落を見逃すリスクがある。 開発の高速化を享受しつつ真の品質を維持するには、静的解析ツールをCIパイプラインに組み込み、AI生成コードに対する客観的な第三者のチェック体制を強制することが不可欠である。"
-      },
-      "en": {
-        "title": "Reevaluating Static Analysis in the Age of AI Development: Why Faster Coding Cycles Require Rigorous Automated Quality Gates",
-        "summary": "AI-driven development has radically accelerated the cycle of writing, verifying, and fixing code, but this speed often masks a dangerous oversight: the assumption that generated code is inherently high quality. Because AI models primarily validate within the narrow context of their own generation sessions, they frequently ignore side effects, architectural debt, or deeper logic flaws that only manifest later. Relying solely on AI to verify its own output creates a false sense of security. To maintain actual stability while shipping faster, developers must integrate robust static analysis tools into their CI/CD pipelines to enforce objective, third-party validation gates that catch what AI models consistently miss, ensuring that speed does not come at the cost of long-term maintainability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-28T12:32:00.024Z"
   },
   {
     "id": "art-1793189870810-j4mfi",
@@ -53761,33 +53791,6 @@
       "研究"
     ],
     "created_at": "2026-10-25T11:48:56.485Z"
-  },
-  {
-    "id": "art-1792928923893-iblnv",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/lnkiai/articles/d5942b2f251e7d",
-    "published_at": "2026-10-25T10:59:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KKGxX-Mu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2584%25A1%25E6%2596%2599%25E3%2581%25AEAI%25E8%25A8%25BA%25E6%2596%25AD%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E4%25BD%25BF%25E3%2582%258F%25E3%2582%258C%25E3%2582%258B%25E3%2581%25BB%25E3%2581%25A9%25E3%2581%258A%25E9%2587%2591%25E3%2581%258C%25E6%25B8%259B%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:inori%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FkNGE4YjY5NzYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "6000人が熱狂したAI診断サイト、人気が出るほど赤字が膨らむ「API課金の落とし穴」と個人開発者が学ぶべきコスト設計",
-    "summary_ja": "個人開発で「あなたをAIモデルに例える」診断サイトを公開したところ、6000人超が利用する人気を集めたが、収益はゼロでAPI利用料のみが嵩む大赤字となった。 人気が出れば出るほど運営コストが増加する「逆転現象」に直面した開発者は、収益化モデルなきままのAIサービス公開が抱える財務的リスクを痛感している。 無料のAIツールを個人で運用する際は、ユーザーの熱狂を維持しつつ持続可能な課金や広告モデルを早期に組み込む設計力が不可欠となる。",
-    "translations": {
-      "ja": {
-        "title": "6000人が熱狂したAI診断サイト、人気が出るほど赤字が膨らむ「API課金の落とし穴」と個人開発者が学ぶべきコスト設計",
-        "summary": "個人開発で「あなたをAIモデルに例える」診断サイトを公開したところ、6000人超が利用する人気を集めたが、収益はゼロでAPI利用料のみが嵩む大赤字となった。 人気が出れば出るほど運営コストが増加する「逆転現象」に直面した開発者は、収益化モデルなきままのAIサービス公開が抱える財務的リスクを痛感している。 無料のAIツールを個人で運用する際は、ユーザーの熱狂を維持しつつ持続可能な課金や広告モデルを早期に組み込む設計力が不可欠となる。"
-      },
-      "en": {
-        "title": "Building a Viral AI Diagnosis App with 6,000+ Users: Why Unmonetized Popularity Led to Crushing API Costs",
-        "summary": "A solo developer launched an AI-powered diagnostic tool that went viral, attracting over 6,000 users, only to face a harsh reality: popularity directly fueled financial loss. Because the service lacked any monetization, the mounting volume of API calls to power the AI backend transformed user engagement into pure expense. The creator reflects on this painful lesson, highlighting that scaling an AI project without an immediate revenue stream essentially subsidizes your users at the expense of your wallet. This post serves as a cautionary tale for builders: scaling without a business model turns virality into a liability. The key takeaway is that sustainable AI development requires baking in cost control, subscription models, or advertising from day one, rather than focusing solely on user experience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-10-25T11:48:43.893Z"
   },
   {
     "id": "art-1792928900240-e94gk",
