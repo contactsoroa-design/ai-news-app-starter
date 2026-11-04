@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1793819229124-9938u",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/_bobtabo_/n/n4d6427a6adc5",
+    "published_at": "2026-11-04T17:41:19.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332305813/rectangle_large_type_2_73b8e8b3798c38503cbabb676585da38.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "【AI開発手法】複数プロダクトを支える認可サーバーの設計とマルチテナント化の実装戦略（AI活用で爆速開発を実現）",
+    "summary_ja": "複数プロダクトの認証・認可を一元管理するため、AIツールをフル活用して認可サーバーを構築する手法が注目されている。 本記事では、マルチテナント対応の認可基盤を短期間で設計・実装するための具体的なワークフローと、異なる言語やフレームワークを横断する際の設計指針を解説。 複数のSaaSやアプリを個人で運営するエンジニアにとって、認可を別建てにする「認可サーバー」の分離戦略は、将来的なスケールと開発効率を両立する最適解となり得る。",
+    "translations": {
+      "ja": {
+        "title": "【AI開発手法】複数プロダクトを支える認可サーバーの設計とマルチテナント化の実装戦略（AI活用で爆速開発を実現）",
+        "summary": "複数プロダクトの認証・認可を一元管理するため、AIツールをフル活用して認可サーバーを構築する手法が注目されている。 本記事では、マルチテナント対応の認可基盤を短期間で設計・実装するための具体的なワークフローと、異なる言語やフレームワークを横断する際の設計指針を解説。 複数のSaaSやアプリを個人で運営するエンジニアにとって、認可を別建てにする「認可サーバー」の分離戦略は、将来的なスケールと開発効率を両立する最適解となり得る。"
+      },
+      "en": {
+        "title": "Building scalable authorization servers for multi-product architectures: A guide to leveraging AI for rapid multi-tenant backend development",
+        "summary": "Managing authentication and authorization across multiple products often creates massive technical debt, so developers are now turning to standalone, multi-tenant authorization servers. This article explores how to architect this layer by leveraging AI coding assistants to scaffold the logic, allowing solo builders to implement robust security across various languages and frameworks simultaneously. By decoupling auth into a dedicated service, you isolate user management from business logic, ensuring that your architecture can scale as you launch new products. For indie developers juggling multiple SaaS apps, the key takeaway is that treating authorization as a centralized, language-agnostic infrastructure component early on avoids the headache of migrating tightly coupled auth flows when traffic inevitably starts to scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-04T19:07:09.124Z"
+  },
+  {
+    "id": "art-1793819115851-9vpqn",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/67spp/sentinsentinel-ai-gateway",
+    "published_at": "2026-11-04T18:30:45.000Z",
+    "og_image_url": null,
+    "title_ja": "LLMゲートウェイ「Sentinel」が登場：PII自動マスキングとFinOps最適化を両立するオープンソースのセキュリティ基盤",
+    "summary_ja": "Sentinelは、LLMアプリケーション向けに設計されたオープンソースのゲートウェイで、PII（個人特定情報）の可逆的なマスキング機能と、コストを抑制するFinOpsルーティングを統合している。 LLMのAPI呼び出しを傍受し、機密データを保護しつつ、プロンプトに応じた最適なコスト管理を自動化できるのが特徴だ。 AI製品を開発する際、セキュリティと予算管理を後付けで実装するのはリスクが高い。",
+    "translations": {
+      "ja": {
+        "title": "LLMゲートウェイ「Sentinel」が登場：PII自動マスキングとFinOps最適化を両立するオープンソースのセキュリティ基盤",
+        "summary": "Sentinelは、LLMアプリケーション向けに設計されたオープンソースのゲートウェイで、PII（個人特定情報）の可逆的なマスキング機能と、コストを抑制するFinOpsルーティングを統合している。 LLMのAPI呼び出しを傍受し、機密データを保護しつつ、プロンプトに応じた最適なコスト管理を自動化できるのが特徴だ。 AI製品を開発する際、セキュリティと予算管理を後付けで実装するのはリスクが高い。"
+      },
+      "en": {
+        "title": "Sentinel AI Gateway Launches: Open-Source LLM Firewall Featuring Reversible PII Scrubbing and Integrated FinOps Routing",
+        "summary": "Sentinel is a new open-source LLM gateway that helps developers secure LLM applications by combining reversible PII (Personally Identifiable Information) masking with active FinOps routing. By intercepting API calls, the tool shields sensitive data from model providers while automatically optimizing costs based on prompt characteristics. For engineers building production AI systems, managing data privacy and token spend as afterthoughts is a major liability. Sentinel provides a middleware layer that centralizes security and budget controls at the gateway level, rather than leaving them inside application logic. The practical takeaway for builders is that abstracting these concerns into a unified proxy layer is now essential to maintaining both compliance and predictable infrastructure costs in scale-sensitive environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-04T19:05:15.851Z"
+  },
+  {
+    "id": "art-1793819011179-r5k8h",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/4/datasette-llm/",
+    "published_at": "2026-11-04T15:26:02.000Z",
+    "og_image_url": null,
+    "title_ja": "Datasette LLMプラグイン「0.1a10」公開、設定外のモデルが利用可能になるバグを修正しエージェント構築の安全性を向上",
+    "summary_ja": "Datasette向けLLM統合プラグインの最新版「0.1a10」がリリースされた。 本アップデートでは、エージェント環境「agent.datasette.io」で発生していた、設定ファイルで制限したはずのLLMモデルが選択可能になってしまうという権限管理上のバグが修正された。 マルチモデル環境でエージェントを構築する際は、利用可能なモデルを明示的にホワイトリスト化し、設定と実際の利用可能範囲を厳密に同期させる設計が重要となる。",
+    "translations": {
+      "ja": {
+        "title": "Datasette LLMプラグイン「0.1a10」公開、設定外のモデルが利用可能になるバグを修正しエージェント構築の安全性を向上",
+        "summary": "Datasette向けLLM統合プラグインの最新版「0.1a10」がリリースされた。 本アップデートでは、エージェント環境「agent.datasette.io」で発生していた、設定ファイルで制限したはずのLLMモデルが選択可能になってしまうという権限管理上のバグが修正された。 マルチモデル環境でエージェントを構築する際は、利用可能なモデルを明示的にホワイトリスト化し、設定と実際の利用可能範囲を厳密に同期させる設計が重要となる。"
+      },
+      "en": {
+        "title": "Datasette LLM plugin 0.1a10 released, patching a critical configuration bug that exposed restricted models to agents",
+        "summary": "Simon Willison has released version 0.1a10 of his Datasette LLM plugin, addressing a significant configuration vulnerability found on the agent.datasette.io demo instance. Previously, the plugin failed to properly restrict the available LLM models to the specific subset defined in the configuration, potentially allowing unauthorized model access. This patch enforces strict isolation between defined model configurations and agent execution environments, preventing unintentional model availability. For developers building agent-based interfaces on top of Datasette, this update serves as a critical reminder to audit model access policies regularly. When managing multiple LLM endpoints, always verify that your application layer explicitly filters available models against your whitelist, rather than assuming backend defaults will safely constrain your agent’s capabilities during runtime."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-04T19:03:31.179Z"
+  },
+  {
+    "id": "art-1793818938463-vmn2k",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations/",
+    "published_at": "2026-11-04T18:46:36.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/04/ML-22136-featured-image.png",
+    "title_ja": "AWS、Bedrock AgentCoreでの「Jev」や「Strands Decider」利用を解説：意思決定モデルを組み込んだ評価フローの構築法",
+    "summary_ja": "AWSは、Amazon Bedrock AgentCore Evaluationsにおいて、外部の意思決定モデルを統合する新しいアプローチを公開した。 具体的には「Jev」や「Strands Decider」といったモデルをコードベースの評価器として接続し、自動評価パイプラインに組み込む手法を提示している。 リリース前に特定の意思決定チェックを検証するワークフローを導入することで、AIエージェントの出力品質を予測可能にし、デプロイ時の不確実性を排除する。",
+    "translations": {
+      "ja": {
+        "title": "AWS、Bedrock AgentCoreでの「Jev」や「Strands Decider」利用を解説：意思決定モデルを組み込んだ評価フローの構築法",
+        "summary": "AWSは、Amazon Bedrock AgentCore Evaluationsにおいて、外部の意思決定モデルを統合する新しいアプローチを公開した。 具体的には「Jev」や「Strands Decider」といったモデルをコードベースの評価器として接続し、自動評価パイプラインに組み込む手法を提示している。 リリース前に特定の意思決定チェックを検証するワークフローを導入することで、AIエージェントの出力品質を予測可能にし、デプロイ時の不確実性を排除する。"
+      },
+      "en": {
+        "title": "AWS demonstrates using Jev and Strands Decider with Amazon Bedrock AgentCore for reliable AI agent evaluation",
+        "summary": "AWS has unveiled a workflow for integrating external decision models directly into Amazon Bedrock AgentCore Evaluations, using specific tools like Jev and Strands Decider as code-based evaluators. By connecting these models to the evaluation pipeline, developers can build robust gates that validate specific decision-making logic before any production release occurs. This integration effectively automates the verification process, transforming evaluation from a manual task into a predictable, repeatable step. The core takeaway for builders is that relying solely on general evaluation isn't enough for complex agents; implementing explicit, validated decision-model checks within your testing suite is critical to maintaining high output quality and operational safety before pushing AI updates to end users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-04T19:02:18.463Z"
+  },
+  {
     "id": "art-1793818025218-ngnpf",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -31021,31 +31128,6 @@
     "created_at": "2026-10-31T12:46:24.551Z"
   },
   {
-    "id": "art-1793449908356-82nhb",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yuki_bouzu/n/n21d0d8804787",
-    "published_at": "2026-10-31T12:01:18.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329803892/rectangle_large_type_2_6c2bc12aca5e3a50ed4f8ee4d325413f.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "食事記録のデータモデリング：『唐揚げは完食・ご飯は半分』という曖昧な入力を正確に構造化する設計手法",
-    "summary_ja": "「唐揚げは全部、ご飯は半分」といった日常的な食事の記録をアプリで正確に扱うためのデータ構造を考察する。 単なる「摂取カロリー」の総量保存では、ユーザーが実際に何をどれだけ食べたかの履歴が失われるため、メニュー単位での粒度管理と摂取比率（0.0〜1.0）を保持する設計が重要となる。 複雑な入力を極力簡素化しつつ、後から分析可能な粒度を確保するデータ設計は、ヘルスケア系プロダクトの継続率を高める鍵だ。",
-    "translations": {
-      "ja": {
-        "title": "食事記録のデータモデリング：『唐揚げは完食・ご飯は半分』という曖昧な入力を正確に構造化する設計手法",
-        "summary": "「唐揚げは全部、ご飯は半分」といった日常的な食事の記録をアプリで正確に扱うためのデータ構造を考察する。 単なる「摂取カロリー」の総量保存では、ユーザーが実際に何をどれだけ食べたかの履歴が失われるため、メニュー単位での粒度管理と摂取比率（0.0〜1.0）を保持する設計が重要となる。 複雑な入力を極力簡素化しつつ、後から分析可能な粒度を確保するデータ設計は、ヘルスケア系プロダクトの継続率を高める鍵だ。"
-      },
-      "en": {
-        "title": "Data Modeling for Meal Tracking: Structuring Ambiguous Inputs Like 'Ate Half the Rice, Finished the Chicken'",
-        "summary": "Managing user inputs like 'ate half the rice but finished the chicken' requires shifting from simple aggregate calorie tracking to granular menu-based structures. Storing a completion percentage (0.0 to 1.0) per item ensures that historical consumption data remains accurate without overwhelming the user during entry. This approach preserves the semantic intent of a meal while keeping the backend data ripe for future nutritional analysis or habit tracking. For builders creating health or diet applications, the takeaway is that capturing precise consumption ratios early is critical; if you rely on single-value total calorie entries, you lose the ability to provide meaningful insights later. Prioritize flexible schema design that handles partial consumption states natively to improve retention and utility in your next health tech project."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-10-31T12:31:48.356Z"
-  },
-  {
     "id": "art-1793449899986-76hbz",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -37825,32 +37907,6 @@
     "created_at": "2026-10-30T11:16:46.925Z"
   },
   {
-    "id": "art-1793358999696-9rz49",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://dailybusinessgroup.co.uk/2026/10/9-strategies-senior-ai-developers-use-to-deliver-high-quality-code-for-startups-in-2026/",
-    "published_at": "2026-10-30T10:43:36.000Z",
-    "og_image_url": null,
-    "title_ja": "2026年のシニアAIエンジニアが実践する、スタートアップ向け高品質コード生成のための9つの戦略的アプローチ",
-    "summary_ja": "2026年の開発現場において、シニアエンジニアはAIによるコード生成を単なる補助ツールとせず、自律的なワークフローに統合している。 本稿では、AIのハルシネーションを最小化しつつ複雑なコンポーネントを設計するための具体的な戦略を解説する。 プロンプトエンジニアリングを超えて、AIを活用したユニットテストの自動生成や、リファクタリングを前提としたモジュール設計が、現代の開発スピードと品質を両立させる不可欠な要件となっている。",
-    "translations": {
-      "ja": {
-        "title": "2026年のシニアAIエンジニアが実践する、スタートアップ向け高品質コード生成のための9つの戦略的アプローチ",
-        "summary": "2026年の開発現場において、シニアエンジニアはAIによるコード生成を単なる補助ツールとせず、自律的なワークフローに統合している。 本稿では、AIのハルシネーションを最小化しつつ複雑なコンポーネントを設計するための具体的な戦略を解説する。 プロンプトエンジニアリングを超えて、AIを活用したユニットテストの自動生成や、リファクタリングを前提としたモジュール設計が、現代の開発スピードと品質を両立させる不可欠な要件となっている。"
-      },
-      "en": {
-        "title": "9 Strategic Approaches Senior AI Developers Use to Ship High-Quality Startup Code in 2026",
-        "summary": "As we enter 2026, senior engineers are shifting AI usage from basic autocomplete to a core architectural layer for shipping robust startup products. This guide details nine specific strategies for maintaining high code quality while accelerating velocity, moving well beyond simple prompting. The article demonstrates that the key to managing AI hallucinations lies in integrating automated unit testing pipelines and prioritizing modular architecture, which ensures the generated code remains refactorable and maintainable. For modern builders, the ultimate takeaway is that AI is no longer a shortcut for writing boilerplate but a partner for system design, requiring developers to shift their focus from manual syntax production to high-level verification, architectural oversight, and test-driven development workflows for scalable software products."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-30T11:16:39.696Z"
-  },
-  {
     "id": "art-1793358983498-uw9in",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -38774,32 +38830,6 @@
       "研究"
     ],
     "created_at": "2026-10-30T08:01:50.781Z"
-  },
-  {
-    "id": "art-1793347302086-scbi1",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Yusg_6/items/fc5febd35a43c6283905",
-    "published_at": "2026-10-30T07:50:48.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzOTcyOTc4JTJGZTI4YTA2MDk0N2U0ZjcwZjJhYWEwNWI4NTcyZGQ1YzE5ZDY5MGJmZiUyRmxhcmdlLnBuZyUzRjE3OTEzMzU3ODI_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTA0NWY5MGY2NDMwNTcxY2MxOTlmYjNhZjljNDM0MmY0%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df10af0ecffc85beaddf3447e19c8b84c?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQUIlRTklQTAlQkMlRTMlODIlOEElRTclQjYlOUElRTMlODElOTElRTMlODElOUYlRTMlODIlQTglRTMlODMlQjMlRTMlODIlQjglRTMlODMlOEIlRTMlODIlQTIlRTMlODElQUUlRTYlOUMlODAlRTYlODIlQUElRTMlODElQUUlRTYlOUMlQUElRTYlOUQlQTUmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1hMzcwM2YwN2YzZWE5YmYyYWIzYTMwYWFhZGM2ZTc5Ng&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBZdXNnXzYmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz03MDJjZDczNzkxNDUyZjNjNzk2MDc5ZWU4ZjY0YzE0MA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=169b6882d27ed267eac808f5dbc234fc",
-    "title_ja": "AI依存が招く「実装のブラックボックス化」：コード生成を自動化しすぎたエンジニアが陥る専門性の空洞化と危機的思考",
-    "summary_ja": "AIエージェントに実装のほぼ全てを委ねる開発手法は、生産性を高める一方で、エンジニア自身から設計判断や細かな実装根拠を理解する機会を奪っている。 AIが生成したコードのレビューを繰り返すだけでは、基礎的な技術力が向上せず、万が一のシステム障害時に根本原因を特定できない「専門性の空洞化」を招く。 AIツールを使いこなすには、出力されたコードの意図を自力で完全に言語化できるだけの技術的土台を維持し続ける必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AI依存が招く「実装のブラックボックス化」：コード生成を自動化しすぎたエンジニアが陥る専門性の空洞化と危機的思考",
-        "summary": "AIエージェントに実装のほぼ全てを委ねる開発手法は、生産性を高める一方で、エンジニア自身から設計判断や細かな実装根拠を理解する機会を奪っている。 AIが生成したコードのレビューを繰り返すだけでは、基礎的な技術力が向上せず、万が一のシステム障害時に根本原因を特定できない「専門性の空洞化」を招く。 AIツールを使いこなすには、出力されたコードの意図を自力で完全に言語化できるだけの技術的土台を維持し続ける必要がある。"
-      },
-      "en": {
-        "title": "The Black Box Trap: Why over-relying on AI agents for implementation leads to critical engineering skill atrophy",
-        "summary": "Outsourcing almost all code implementation to AI agents boosts short-term productivity, yet it inadvertently strips engineers of the opportunity to internalize critical design decisions and implementation rationales. Relying solely on reviewing AI-generated code prevents developers from sharpening their fundamental technical skills, creating a dangerous dependency where they lack the expertise to troubleshoot core system failures. The warning is clear: when you stop doing the manual work, your mental model of the codebase degrades. To truly leverage AI tools effectively, engineers must maintain a technical foundation robust enough to deconstruct, explain, and rebuild the logic without assistance. Avoiding 'skill atrophy' means treating AI as a pair programmer, not a complete replacement for human cognitive engagement in architectural decision-making."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-30T08:01:42.086Z"
   },
   {
     "id": "art-1793347292211-tk7od",
@@ -52971,32 +53001,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-25T13:01:57.345Z"
-  },
-  {
-    "id": "art-1792933257115-99lpy",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/koenokakaku/articles/dd1e7214839ce9",
-    "published_at": "2026-10-25T08:55:55.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cAtpB9_p--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%25BF%25E3%2582%258F%25E3%2581%259A%25E3%2580%2581SVG%25E3%2581%25A7%25E4%25BE%25A1%25E6%25A0%25BC%25E6%258E%25A8%25E7%25A7%25BB%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%2595%25E3%2582%2592%25E6%258F%258F%25E3%2581%258F%25E3%2580%2590%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25A3%25B0%25E3%2581%25AE%25E4%25BE%25A1%25E6%25A0%25BC%2540%25E9%259F%25B3%25E5%25A3%25B0%25E4%25BD%259C%25E5%2593%2581%25E3%2581%25AE%25E8%25B2%25B7%25E3%2581%2584%25E6%2599%2582%25E3%2581%25AB%25E9%2580%259A%25E7%259F%25A5%25E3%2581%2599%25E3%2582%258B%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSTY1akU0Wk1KOHlCZEhLMFFfaGt6Nm8zTGk1c0p6SFNZMUV0SFk4Ul9nVW11dEpDMD1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ライブラリ不使用でSVGとJSのみで描く価格推移グラフ実装：個人開発サービス「声の価格」における描画負荷とUXの最適化手法",
-    "summary_ja": "音声作品の価格追跡サービス「声の価格」運営者が、外部ライブラリを使わずSVGとJavaScriptのみで価格推移グラフを実装したノウハウを公開。 単にデータを線でつなぐだけでなく、価格取得不能日のハンドリング、マウスホバー時のインタラクション、描画負荷の軽減までを考慮した設計を詳述する。 肥大化しがちなフロントエンドにおいて、軽量化を追求する個人開発者にとって、車輪の再発明を厭わず自前実装することで得られるパフォーマンスと柔軟性の利点を提示している。",
-    "translations": {
-      "ja": {
-        "title": "ライブラリ不使用でSVGとJSのみで描く価格推移グラフ実装：個人開発サービス「声の価格」における描画負荷とUXの最適化手法",
-        "summary": "音声作品の価格追跡サービス「声の価格」運営者が、外部ライブラリを使わずSVGとJavaScriptのみで価格推移グラフを実装したノウハウを公開。 単にデータを線でつなぐだけでなく、価格取得不能日のハンドリング、マウスホバー時のインタラクション、描画負荷の軽減までを考慮した設計を詳述する。 肥大化しがちなフロントエンドにおいて、軽量化を追求する個人開発者にとって、車輪の再発明を厭わず自前実装することで得られるパフォーマンスと柔軟性の利点を提示している。"
-      },
-      "en": {
-        "title": "Building custom price history charts with just SVG and JavaScript for personal projects without heavy charting libraries",
-        "summary": "The creator of the price tracking service 'Koenokakaku' details how they implemented interactive price history charts using only vanilla JavaScript and SVG, eschewing bulky charting libraries. The article covers practical implementation challenges, including managing gaps in historical data, building responsive hover interactions, and optimizing rendering performance for a smooth user experience. For solo developers wary of excessive bundle sizes, this approach highlights the benefits of writing custom SVG visualizations: full control over component weight and specialized behavior. By avoiding dependencies, builders can ship fast, lightweight frontends that are tailored strictly to the specific needs of their application, proving that reinventing the wheel is often the superior choice for performance-critical personal projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-25T13:00:57.115Z"
   },
   {
     "id": "art-1792930356366-0spze",
