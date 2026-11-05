@@ -46,7 +46,7 @@ cp .env.example .env
 - `MAX_ARTICLES_PER_RUN`: 1回の ingest で追加する件数（既定: `4`。ペース予算の範囲。ソース間は公平枠で分散）
 - `SOURCE_SHARE_WINDOW` / `MAX_SOURCE_SHARE`: 直近N件の同一ソース占有ソフト上限（既定: `100` / `0.08`。優先度ソートの本走査で後回し。枠余り時は解除して鮮度を優先。`0` で無効）
 - `INGEST_PACE_SLACK`: 線形ペースより先行してよい件数（既定: `6`。大きいと空白時間が伸びやすい）
-- `INGEST_ARTICLE_DELAY_MS`: 記事ごとのLLM間隔ミリ秒（デフォルト: `4000`）
+- `INGEST_ARTICLE_DELAY_MS`: 記事ごとのLLM間隔ミリ秒（デフォルト: `6000`）
 - `MAX_MONTHLY_COST_JPY`: 月間の費用上限（デフォルト: `3000`。無料枠中は実質 $0）
 - `EXPO_PUBLIC_FEED_URL`: （任意）本番等でリモートの静的JSON URLから記事を取得する場合に指定。未指定でも **開発中（`expo start`）は `public/articles.json` を都度取得**する。
 - 表示は **日本語 / 英語のネイティブ要約**（`translations`）。ko/es や端末側機械翻訳は使わない。

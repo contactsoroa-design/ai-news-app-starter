@@ -45,8 +45,8 @@ type LlmProvider = 'gemini' | 'openai' | 'anthropic' | 'openrouter';
 /** 日英ネイティブ要約を1回のLLM呼び出しで作る想定の記事あたり概算（円） */
 const ESTIMATED_COST_PER_ARTICLE_JPY = 0.15;
 
-/** 本番向け: 記事ごとのLLM間隔（ミリ秒）。連続呼び出しで 429 を避ける */
-const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '4000');
+/** 本番向け: 記事ごとのLLM間隔（ミリ秒）。連続呼び出しで 429/503 を避ける */
+const ARTICLE_DELAY_MS = Number(process.env.INGEST_ARTICLE_DELAY_MS || '6000');
 /** 要約API 1回あたりの上限。未設定だとハングして Actions が埋まってしまう */
 const LLM_FETCH_TIMEOUT_MS = Number(
   process.env.LLM_FETCH_TIMEOUT_MS || '60000'
@@ -1017,7 +1017,18 @@ function isRateLimitError(err: unknown): boolean {
     return err.status === 429 || err.status === 503;
   }
   const msg = err instanceof Error ? err.message : String(err);
-  return /\b429\b|RESOURCE_EXHAUSTED|rate limit|quota/i.test(msg);
+  return /\b429\b|\b503\b|RESOURCE_EXHAUSTED|UNAVAILABLE|rate limit|quota/i.test(
+    msg
+  );
+}
+
+/** 503 系は短時間では戻りにくいので、記事あたり再試行を抑えて次回へ回す */
+function isUnavailableOverload(err: unknown): boolean {
+  if (err instanceof LlmHttpError) {
+    return err.status === 503;
+  }
+  const msg = err instanceof Error ? err.message : String(err);
+  return /\b503\b|UNAVAILABLE/i.test(msg);
 }
 
 function rateLimitWaitMs(err: unknown, attempt: number): number {
@@ -1025,6 +1036,10 @@ function rateLimitWaitMs(err: unknown, attempt: number): number {
   const hardCap = 90_000;
   if (err instanceof LlmHttpError && err.retryAfterMs && err.retryAfterMs > 0) {
     return Math.min(err.retryAfterMs, hardCap);
+  }
+  // 503 は待ちを短くし、空打ち時間を deferred に回す
+  if (isUnavailableOverload(err)) {
+    return Math.min(8_000 * 2 ** attempt, 24_000);
   }
   // 12s → 24s → 48s → 90s …
   return Math.min(12_000 * 2 ** attempt, hardCap);
@@ -1623,7 +1638,9 @@ async function summarizeWithRetry(
   source: Source,
   apiKey: string,
   model: string,
-  maxQualityRetries = 3
+  maxQualityRetries = 3,
+  /** 429 の記事内再試行上限。503 はこの値と 1 の小さい方 */
+  maxRateRetries = 2
 ): Promise<SummarizeOutcome> {
   if (!apiKey) {
     return { status: 'ok', summary: await fallbackSummarize(item, source) };
@@ -1633,8 +1650,7 @@ async function summarizeWithRetry(
   let lastErr: unknown;
   let qualityAttempt = 0;
   let rateAttempt = 0;
-  // 枠が残っているあいだは待って拾う（連続失敗の実行停止は呼び出し側）
-  const maxRateRetries = 3;
+  // 枠が残っているあいだは短く待って拾う（長時間の空打ちは呼び出し側で打ち切り）
 
   while (qualityAttempt <= maxQualityRetries) {
     try {
@@ -1685,11 +1701,14 @@ async function summarizeWithRetry(
       return { status: 'ok', summary: result };
     } catch (err) {
       lastErr = err;
-      if (isRateLimitError(err) && rateAttempt < maxRateRetries) {
+      const rateBudget = isUnavailableOverload(err)
+        ? Math.min(maxRateRetries, 1)
+        : maxRateRetries;
+      if (isRateLimitError(err) && rateAttempt < rateBudget) {
         const waitMs = rateLimitWaitMs(err, rateAttempt);
         rateAttempt += 1;
         console.warn(
-          `  … レート制限のため ${Math.round(waitMs / 1000)}s 待機して再試行 (${rateAttempt}/${maxRateRetries})`
+          `  … レート制限のため ${Math.round(waitMs / 1000)}s 待機して再試行 (${rateAttempt}/${rateBudget})`
         );
         await sleep(waitMs);
         continue;
@@ -2209,7 +2228,16 @@ async function main() {
     try {
       // OGP取得とLLMを同時に叩くとレート制限しやすいので直列にする
       const ogImageUrl = await fetchOgImageUrl(item.link);
-      const outcome = await summarizeWithRetry(item, source, apiKey, model, 3);
+      // クールダウン後は記事内再試行を抑え、空打ちより deferred 優先
+      const rateRetriesThisArticle = rateCooldownUsed ? 1 : 2;
+      const outcome = await summarizeWithRetry(
+        item,
+        source,
+        apiKey,
+        model,
+        3,
+        rateRetriesThisArticle
+      );
       if (outcome.status !== 'ok') {
         if (outcome.status === 'rate_limited') {
           enqueueDeferred(deferredQueue, {
@@ -2220,7 +2248,9 @@ async function main() {
             snippet: item.snippet,
           });
           rateLimitStreak += 1;
-          if (rateLimitStreak >= rateLimitStopStreak) {
+          // クールダウン済みなら 1 件で打ち切り（制限中の枠余り走査を避ける）
+          const stopThreshold = rateCooldownUsed ? 1 : rateLimitStopStreak;
+          if (rateLimitStreak >= stopThreshold) {
             const remainingMs = softDeadlineMs - (Date.now() - runStartedAt);
             const canCooldown =
               !rateCooldownUsed && remainingMs > rateCooldownMs + 15_000;

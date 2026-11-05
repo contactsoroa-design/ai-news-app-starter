@@ -96,7 +96,7 @@ jobs:
           [ -n "${MAX_MONTHLY_COST_JPY:-}" ] || export MAX_MONTHLY_COST_JPY=3000
           [ -n "${SUMMARY_MODEL:-}" ] || export SUMMARY_MODEL=gemini-3.1-flash-lite
           [ -n "${SUMMARY_PROVIDER:-}" ] || export SUMMARY_PROVIDER=gemini
-          [ -n "${INGEST_ARTICLE_DELAY_MS:-}" ] || export INGEST_ARTICLE_DELAY_MS=4000
+          [ -n "${INGEST_ARTICLE_DELAY_MS:-}" ] || export INGEST_ARTICLE_DELAY_MS=6000
           [ -n "${INGEST_QUOTA_TIMEZONE:-}" ] || export INGEST_QUOTA_TIMEZONE=America/Los_Angeles
           [ -n "${INGEST_RATE_LIMIT_STOP_STREAK:-}" ] || export INGEST_RATE_LIMIT_STOP_STREAK=2
           [ -n "${INGEST_PACE_SLACK:-}" ] || export INGEST_PACE_SLACK=6
