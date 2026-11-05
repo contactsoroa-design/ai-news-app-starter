@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793865735653-h6a0w",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/yunisuta/articles/claude-code-sessionstart-sessionend-2v5are",
+    "published_at": "2026-11-05T01:24:59.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--IOCzFDAg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25C3%2597%2520SessionStart%252FSessionEnd%2520Hooks%2520%257C%2520%25E3%2582%25BB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E9%2596%2593%25E3%2581%25AE%25E6%2596%2587%25E8%2584%2588%25E3%2582%2592%25E8%2587%25AA...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yukito%2520%252F%2520%25E9%2583%25B7%25E7%2594%25B1%25E7%25A8%2580%25E6%2596%2597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QzYjhiYTg3ZjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeのセッション管理術：Hooks活用で「前日の文脈」を自動継承する自作メモリの実装手法",
+    "summary_ja": "Claude Codeはセッションごとにコンテキストがリセットされるため、以前の経緯を説明し直す手間が発生しがちだ。 本記事では、SessionStart/SessionEndフックを活用し、セッション終了時に情報をファイルへ保存、開始時に読み込むシンプルな自作メモリ実装を解説する。 外部ツールに頼らず仕組みを自前で構築することで、保存される情報の可視化とセキュリティ制御が可能になり、効率的な開発ワークフローを実現できる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeのセッション管理術：Hooks活用で「前日の文脈」を自動継承する自作メモリの実装手法",
+        "summary": "Claude Codeはセッションごとにコンテキストがリセットされるため、以前の経緯を説明し直す手間が発生しがちだ。 本記事では、SessionStart/SessionEndフックを活用し、セッション終了時に情報をファイルへ保存、開始時に読み込むシンプルな自作メモリ実装を解説する。 外部ツールに頼らず仕組みを自前で構築することで、保存される情報の可視化とセキュリティ制御が可能になり、効率的な開発ワークフローを実現できる。"
+      },
+      "en": {
+        "title": "Building Custom Memory for Claude Code: Automating Session Context Persistence via Hooks",
+        "summary": "Claude Code wipes its context with every new session, forcing developers to repeatedly explain previous decisions or repository-specific test conventions. This technical guide demonstrates how to implement a lightweight memory system using SessionStart and SessionEnd hooks to persist context across sessions. By writing session summaries to local files at the end of a run and injecting them upon restart, you can automate state retention without relying on external plugins. Building this mechanism yourself provides total transparency over exactly which data is stored and fed back into your prompts, which is essential for both data security and effective debugging. It offers a practical, transparent alternative to off-the-shelf OSS wrappers for maintaining long-term development context."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-05T08:02:15.653Z"
+  },
+  {
+    "id": "art-1793865729583-w1nyq",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/scrollsnacks",
+    "published_at": "2026-11-04T21:46:13.000Z",
+    "og_image_url": null,
+    "title_ja": "動画広告の構成を1秒単位で徹底分析する「Scrollsnacks」が登場。なぜバズるのかを解明し、高コンバージョンなクリエイティブ制作を支援する。",
+    "summary_ja": "「Scrollsnacks」は、公開された動画広告の構成を1秒単位で分解し、視聴者の反応を惹きつける要素を可視化するマーケティング分析ツール。 フックの掛け方やテンポ、CTAのタイミングを競合事例と比較分析できる。 ショート動画時代のクリエイティブ制作において、感覚頼みの構成ではなく、成功要因を論理的に抽出して再現性を高めたい個人開発者やマーケターにとって強力な武器となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "動画広告の構成を1秒単位で徹底分析する「Scrollsnacks」が登場。なぜバズるのかを解明し、高コンバージョンなクリエイティブ制作を支援する。",
+        "summary": "「Scrollsnacks」は、公開された動画広告の構成を1秒単位で分解し、視聴者の反応を惹きつける要素を可視化するマーケティング分析ツール。 フックの掛け方やテンポ、CTAのタイミングを競合事例と比較分析できる。 ショート動画時代のクリエイティブ制作において、感覚頼みの構成ではなく、成功要因を論理的に抽出して再現性を高めたい個人開発者やマーケターにとって強力な武器となるだろう。"
+      },
+      "en": {
+        "title": "Scrollsnacks Debuts to Deconstruct Viral Video Ads Second-by-Second and Pinpoint the Hooks Driving Real Conversions",
+        "summary": "Scrollsnacks enters the market as a targeted analysis platform designed to deconstruct viral video ads second-by-second, uncovering exactly what keeps viewers engaged. By meticulously mapping out hook duration, pacing shifts, and the precise timing of call-to-action buttons, the tool allows builders to reverse-engineer successful creative strategies rather than relying on guesswork. For developers and marketers overwhelmed by the rapid churn of short-form content, this granular visibility turns opaque viral trends into actionable data points. It is essentially a playbook for maximizing conversion rates in the attention economy, ensuring your next video launch isn't just creative, but architected to perform based on proven engagement patterns observed in high-performing competitors."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "SNS・ショート動画",
+      "開発"
+    ],
+    "created_at": "2026-11-05T08:02:09.583Z"
+  },
+  {
+    "id": "art-1793865721456-4yxbf",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2611/05/2000002903/",
+    "published_at": "2026-11-05T04:05:02.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/05/2000002903/10011383/2048",
+    "title_ja": "フジテレビ、2027年10月までに全ドラマ制作へAI導入を完了へ――「救命病棟24時」で先行運用を開始し、業務効率化と創造性向上へ",
+    "summary_ja": "フジテレビは2027年10月を目標に、制作する全ドラマ番組でAIを活用できる体制の構築を発表した。 まずは名作ドラマ「救命病棟24時」の新作で先行導入を行い、脚本執筆や演出の補助といった制作ワークフローへのAI組み込みを推進する。 単なる効率化に留まらず、人間とAIが共創することで新たな映像体験やコンテンツの質的向上を狙う方針だ。 エンタメ業界における生成AIの本格活用が、大手メディアの制作現場でいよいよ標準化されようとしている。",
+    "translations": {
+      "ja": {
+        "title": "フジテレビ、2027年10月までに全ドラマ制作へAI導入を完了へ――「救命病棟24時」で先行運用を開始し、業務効率化と創造性向上へ",
+        "summary": "フジテレビは2027年10月を目標に、制作する全ドラマ番組でAIを活用できる体制の構築を発表した。 まずは名作ドラマ「救命病棟24時」の新作で先行導入を行い、脚本執筆や演出の補助といった制作ワークフローへのAI組み込みを推進する。 単なる効率化に留まらず、人間とAIが共創することで新たな映像体験やコンテンツの質的向上を狙う方針だ。 エンタメ業界における生成AIの本格活用が、大手メディアの制作現場でいよいよ標準化されようとしている。"
+      },
+      "en": {
+        "title": "Fuji TV commits to full AI integration across all drama productions by October 2027, starting with 'Kyumei Byoto 24 Ji'",
+        "summary": "Fuji TV has officially committed to integrating generative AI into every drama production within its pipeline by October 2027. The broadcaster will use the upcoming revival of the hit series 'Kyumei Byoto 24 Ji' as a testbed for these workflows, specifically targeting efficiencies in script development and direction assistance. The initiative focuses on moving beyond simple cost-cutting, aiming instead to foster human-AI collaboration that enhances overall creative quality and unlocks new narrative formats. By standardizing AI tools across its massive production apparatus, Fuji TV is signaling a major shift in how traditional media conglomerates will operate, suggesting that AI co-pilots are set to become a fundamental component of professional high-end television production in the coming years."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "動画"
+    ],
+    "created_at": "2026-11-05T08:02:01.456Z"
+  },
+  {
+    "id": "art-1793865697636-68205",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.05393",
+    "published_at": "2026-11-05T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "医療AIの推論を強化する新手法「Challenge-Aware」：推論過程から不足知識を動的に補完し、難問解決率を向上",
+    "summary_ja": "医療系大規模言語モデルは標準的なQAには強いが、高度な推論タスクではマルチエージェント方式でも限界がある。 そこで研究チームは、推論プロセスを監視し、不足している専門知識や事実をリアルタイムで特定・補完する「Challenge-Aware」なメタエージェント手法を提案した。 MEDAGENTSBENCH等の難関データセットで検証した結果、事前の知識検索に頼る従来方式よりも高い精度を達成。",
+    "translations": {
+      "ja": {
+        "title": "医療AIの推論を強化する新手法「Challenge-Aware」：推論過程から不足知識を動的に補完し、難問解決率を向上",
+        "summary": "医療系大規模言語モデルは標準的なQAには強いが、高度な推論タスクではマルチエージェント方式でも限界がある。 そこで研究チームは、推論プロセスを監視し、不足している専門知識や事実をリアルタイムで特定・補完する「Challenge-Aware」なメタエージェント手法を提案した。 MEDAGENTSBENCH等の難関データセットで検証した結果、事前の知識検索に頼る従来方式よりも高い精度を達成。"
+      },
+      "en": {
+        "title": "Challenge-Aware Meta-Agent Supervision: Dynamic Medical Knowledge Recruitment Boosts Reasoning Accuracy in Multi-Agent AI Systems",
+        "summary": "Current medical large language models excel at straightforward Q&A but frequently struggle with complex reasoning, where even multi-agent debate systems often fail to outperform single-model prompting. The researchers identify that existing frameworks retrieve knowledge solely from initial prompts, ignoring gaps that emerge during active reasoning. To solve this, they propose a 'Challenge-Aware' architecture where an external meta-agent inspects the evolving reasoning trace to trigger targeted knowledge retrieval or specialist recruitment in real-time. Testing on the MEDAGENTSBENCH dataset reveals significant accuracy improvements over standard upfront retrieval methods. For builders of agentic AI workflows, this highlights a critical design pattern: dynamic, context-sensitive knowledge injection during the reasoning phase is far superior to static context loading for handling high-stakes medical or technical reasoning tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-05T08:01:37.636Z"
+  },
+  {
     "id": "art-1793864874808-jjc9n",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -30810,32 +30916,6 @@
     "created_at": "2026-10-31T18:02:14.317Z"
   },
   {
-    "id": "art-1793469720717-gek9w",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/genial_zephyr426/n/n017d5171fbf1",
-    "published_at": "2026-10-31T17:59:08.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330726936/rectangle_large_type_2_da1c3b20be7a085c7c0c8a79e919f01c.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ChatGPTの背景を動かす拡張機能開発：収益化を見据えたUI/UXブラッシュアップと販売準備の舞台裏",
-    "summary_ja": "ChatGPTのUIをカスタマイズし背景を動的に変化させるChrome拡張機能の開発記録。 現在は単なる技術検証を超え、実際に販売・収益化するためのパッケージング作業や、配布に向けたUI/UXの最終調整段階に入っている。 ブラウザ拡張機能を個人開発し、マネタイズまで漕ぎ着けるための設計思想や、ストア公開前の準備プロセスの重要性が示唆される。 開発者にとって、技術の面白さをプロダクトの価値へと変換する「販売」というフェーズの重要性を再認識させる事例である。",
-    "translations": {
-      "ja": {
-        "title": "ChatGPTの背景を動かす拡張機能開発：収益化を見据えたUI/UXブラッシュアップと販売準備の舞台裏",
-        "summary": "ChatGPTのUIをカスタマイズし背景を動的に変化させるChrome拡張機能の開発記録。 現在は単なる技術検証を超え、実際に販売・収益化するためのパッケージング作業や、配布に向けたUI/UXの最終調整段階に入っている。 ブラウザ拡張機能を個人開発し、マネタイズまで漕ぎ着けるための設計思想や、ストア公開前の準備プロセスの重要性が示唆される。 開発者にとって、技術の面白さをプロダクトの価値へと変換する「販売」というフェーズの重要性を再認識させる事例である。"
-      },
-      "en": {
-        "title": "Building a Dynamic Background ChatGPT Extension: Behind the Scenes of UI/UX Refinement and Commercialization Strategy",
-        "summary": "This development log documents the process of creating a Chrome extension that adds dynamic, animated backgrounds to the ChatGPT interface. Having moved past the initial technical prototyping phase, the project is now entering the final stages of packaging and UI/UX refinement specifically for commercial distribution. It highlights the essential steps required to transition a side project into a viable digital product, including preparation for store deployment and strategic monetization. For individual developers, this serves as a practical look at the often-overlooked phase of transforming technical experiments into marketable assets. The project emphasizes that while building features is the first step, planning the productization and distribution logistics is what truly bridges the gap to successfully launching a paid tool."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-31T18:02:00.717Z"
-  },
-  {
     "id": "art-1793469713251-dcv5e",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -43118,31 +43198,6 @@
     "created_at": "2026-10-29T08:16:51.286Z"
   },
   {
-    "id": "art-1793260907903-1cdsd",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/neoru/articles/38abd78007dace",
-    "published_at": "2026-10-29T03:32:20.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jLGatAdI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25A4%25B1%25E6%2595%2597%25E3%2581%2597%25E3%2581%259F%25E5%25B7%25A5%25E7%25A8%258B%25E3%2581%258B%25E3%2582%2589%25E5%2586%258D%25E9%2596%258B%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2583%2581%25E3%2582%25A7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%259D%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E4%25BD%259C%25E3%2582%258A%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:NEORU%25EF%25BD%259CAI%2520Business%2520OS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRjNTQ1YTE5YjEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "失敗した工程から再開できる「チェックポイント」の設計手法：処理の中断とやり直しを最小化し、自動化パイプラインの堅牢性を高める",
-    "summary_ja": "自動化パイプラインが外部要因や検証エラーで停止した際、最初からやり直すのは非効率だ。 チェックポイントは単なる途中保存ではなく、完了済みのタスクを再実行せず、未完了の工程から安全に再開するための状態管理手法である。 本稿では、処理の冪等性を担保しながら、どこまで完了したかを正確に記録し、複雑なワークフローでも中断からの復帰を確実に自動化する具体的な設計パターンを解説する。",
-    "translations": {
-      "ja": {
-        "title": "失敗した工程から再開できる「チェックポイント」の設計手法：処理の中断とやり直しを最小化し、自動化パイプラインの堅牢性を高める",
-        "summary": "自動化パイプラインが外部要因や検証エラーで停止した際、最初からやり直すのは非効率だ。 チェックポイントは単なる途中保存ではなく、完了済みのタスクを再実行せず、未完了の工程から安全に再開するための状態管理手法である。 本稿では、処理の冪等性を担保しながら、どこまで完了したかを正確に記録し、複雑なワークフローでも中断からの復帰を確実に自動化する具体的な設計パターンを解説する。"
-      },
-      "en": {
-        "title": "Designing robust checkpoint systems to resume failed automated workflows: minimizing rework and ensuring reliable state management for complex pipeline processes",
-        "summary": "Automated pipelines often fail due to transient external service outages or validation errors, leading to the common and costly mistake of restarting the entire process from scratch. Real checkpointing isn't just about saving intermediate data; it requires implementing a rigorous state management pattern that identifies exactly which tasks are complete, allowing the system to skip finished steps and resume only from the point of failure. This approach guarantees idempotency while preventing redundant execution, which is essential for scaling complex workflows. For developers, the practical takeaway is to architect pipelines where state is decoupled from execution, ensuring that interruptions become manageable edge cases rather than catastrophic failures that force manual intervention and total reprocessing of successful steps."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-10-29T08:01:47.903Z"
-  },
-  {
     "id": "art-1793260900895-g4s26",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -43223,32 +43278,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-29T08:01:18.873Z"
-  },
-  {
-    "id": "art-1793260007585-bvn22",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ai_shihan/articles/24c8c19d1bdd92",
-    "published_at": "2026-10-29T06:07:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fn_A-h7Y--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E8%25B3%25AA%25E5%2595%258F%25E3%2581%25AB%25E5%25A3%25B0%25E3%2581%25A7%25E7%25AD%2594%25E3%2581%2588%25E3%2581%259F%25E3%2582%2589%25E3%2580%258C%25E6%2596%2587%25E5%25AD%2597%25E3%2581%25A7%25E9%2580%2581%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%258F%25E3%2581%25A0%25E3%2581%2595%25E3%2581%2584%25E3%2580%258D%25E3%2581%25A8%25E8%25BF%2594%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%258D%25E3%2581%259F%2520%25E2%2580%2594%25E2%2580%2594%2520%25E6%25B7%25BB%25E4%25BB%2598%25E3%2582%2592%25E6%258D%25A8%25E3%2581%25A6%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E5%258F%2597%25E3%2581%2591%25E6%2589%258B%25E3%2581%25A8%25E3%2580%2581%25E8%25B6%25B3%25E3%2582%258A%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E6%25A8%25A9%25E9%2599%25901%25E3%2581%25A4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ai_shihan%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvYS5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeで「広報部」を自動化したはずが…音声回答を拒絶された失敗談。AIのワークフローに不可欠な権限設定と「添付ファイル読み取り」の落とし穴",
-    "summary_ja": "Claude Codeで広報業務を自動化する際、Slack経由の音声メモ回答が「文字で送れ」と拒否される事態が発生した。 原因はAIがPC側のファイル読み取り権限（添付ファイルアクセス）を欠いていたことにある。 ツールを導入する際、AIの推論能力に注目しがちだが、実際のワークフローではOSやSlack APIレベルでのファイルシステム権限付与こそが、自動化を停滞させないための必須要件となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeで「広報部」を自動化したはずが…音声回答を拒絶された失敗談。AIのワークフローに不可欠な権限設定と「添付ファイル読み取り」の落とし穴",
-        "summary": "Claude Codeで広報業務を自動化する際、Slack経由の音声メモ回答が「文字で送れ」と拒否される事態が発生した。 原因はAIがPC側のファイル読み取り権限（添付ファイルアクセス）を欠いていたことにある。 ツールを導入する際、AIの推論能力に注目しがちだが、実際のワークフローではOSやSlack APIレベルでのファイルシステム権限付与こそが、自動化を停滞させないための必須要件となる。"
-      },
-      "en": {
-        "title": "Why my Claude Code 'PR Department' rejected my voice notes: A cautionary tale on missing permissions and workflow automation gaps",
-        "summary": "Automating my PR workflow with Claude Code hit a wall when my voice-memo responses were flatly rejected by the AI, which demanded text input instead. The issue wasn't the AI's logic, but a missing permission: the agent lacked the necessary access to read attached media files directly from my Slack integration. Builders often fixate on the reasoning capabilities of LLM-based agents, but this failure highlights a critical operational reality. Without granting explicit file system or API-level attachment permissions, even the smartest agents remain blind to crucial context. When setting up autonomous departments, ensuring the agent has full read/write rights to your communication channels is just as important as the prompting strategy itself."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-29T07:46:47.585Z"
   },
   {
     "id": "art-1793260000974-h3yot",
@@ -52566,32 +52595,6 @@
       "開発"
     ],
     "created_at": "2026-10-25T22:01:42.937Z"
-  },
-  {
-    "id": "art-1792965665127-2310e",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/daichi01278/articles/camper-cost-first-weekly-pipeline-launch",
-    "published_at": "2026-10-25T17:22:23.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--i0qXXW8Y--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2580%25B1%25E6%25AC%25A1%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2581%258C%25E5%2588%259D%25E3%2582%2581%25E3%2581%25A6%25E5%2585%25AC%25E9%2596%258B%25E3%2581%25BE%25E3%2581%25A7%25E9%2580%25B2%25E3%2582%2593%25E3%2581%25A0%253A%2520%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25B3%25E3%2583%2594%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%25AB%25E3%2583%25BC%25288%25E3%2583%258A%25E3%2583%25B3%25E3%2583%2590%25E3%2583%25BC%2529%25E7%25B6%25AD%25E6%258C%2581%25E8%25B2%25BB%25E3%2582%25B7%25E3%2583%259F%25E3%2583%25A5%25E3%2583%25AC%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:daichi01278%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2RISkoxeFBNcjlZRlpFaG5LS2dFeFc5UDNuM2piRTZoNXpxN1pDVWlLbkV5ZFpBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェント「Autonomous Studio」が初の自動公開を実現：キャンピングカー維持費シミュレーターを開発からデプロイまで完全自律化",
-    "summary_ja": "Autonomous Studioは、Claudeを活用して製品アイデアの調査・採点・開発・公開までを自律的に行うスタジオだ。 これまで週次パイプラインは審査段階で止まっていたが、ルール改善を経て初の製品「キャンピングカー維持費シミュレーター」を自動公開した。 単なるツール開発ではなく、評価基準の再定義とプロセスの自動化が、AIエージェントに実用的な成果物を生成させるための不可欠な設計思想である。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント「Autonomous Studio」が初の自動公開を実現：キャンピングカー維持費シミュレーターを開発からデプロイまで完全自律化",
-        "summary": "Autonomous Studioは、Claudeを活用して製品アイデアの調査・採点・開発・公開までを自律的に行うスタジオだ。 これまで週次パイプラインは審査段階で止まっていたが、ルール改善を経て初の製品「キャンピングカー維持費シミュレーター」を自動公開した。 単なるツール開発ではなく、評価基準の再定義とプロセスの自動化が、AIエージェントに実用的な成果物を生成させるための不可欠な設計思想である。"
-      },
-      "en": {
-        "title": "Autonomous Studio hits first production milestone as Claude agent autonomously deploys a camper van cost simulator",
-        "summary": "Autonomous Studio, an experiment using Claude agents to research, score, and ship products, has successfully pushed its first live application: a maintenance cost simulator for 8-number camper vans. After an initial week of zero output, the team refined their scoring rules to overcome evaluation paralysis, allowing the AI to finally proceed from ideation to static site deployment. This achievement demonstrates that the bottleneck for autonomous development often lies in rigid evaluation criteria rather than coding capability alone. For builders exploring agentic workflows, the lesson is that crafting precise, failure-tolerant prompts for the 'decision-making' phase is just as critical as the final implementation code if you want to move from prototype to production."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-25T22:01:05.127Z"
   },
   {
     "id": "art-1792936062936-vi6sg",
