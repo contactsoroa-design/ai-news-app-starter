@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1793879239133-atb6d",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/autocamp/articles/tech-http-401-403-curl",
+    "published_at": "2026-11-05T03:06:09.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--7j2I-ISG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:401%25E3%2581%25A8403%25E3%2581%25AF%25E3%2580%2581%25E3%2583%2591%25E3%2582%25B9%25E3%2583%25AF%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E5%2585%25A5%25E3%2582%258C%25E7%259B%25B4%25E3%2581%2597%25E3%2581%25A6%25E7%259B%25B4%25E3%2582%258B%25E3%2581%258B%25E3%2581%25A7%25E5%2588%2586%25E3%2581%258B%25E3%2582%258C%25E3%2582%258B%25E3%2580%2582curl%2520-I%2520%25E3%2581%25A7%25E8%25A6%258B%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AF%2520WWW-Authentica...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2588%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZlMmM0YTcyYjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "HTTP 401と403の決定的違い：curl -IとWWW-Authenticateヘッダーで識別する認証と認可の境界線",
+    "summary_ja": "HTTPエラー401と403はどちらもアクセス拒否を示すが、401は「認証不足（正しい認証で解決可）」、403は「認可拒否（解決不可）」という明確な違いがある。 開発現場では`curl -I`コマンドでステータスコードと共に`WWW-Authenticate`ヘッダーの有無を確認することで、修正可能な認証エラーか、権限設定を見直すべき認可エラーかを迅速に切り分けられる。",
+    "translations": {
+      "ja": {
+        "title": "HTTP 401と403の決定的違い：curl -IとWWW-Authenticateヘッダーで識別する認証と認可の境界線",
+        "summary": "HTTPエラー401と403はどちらもアクセス拒否を示すが、401は「認証不足（正しい認証で解決可）」、403は「認可拒否（解決不可）」という明確な違いがある。 開発現場では`curl -I`コマンドでステータスコードと共に`WWW-Authenticate`ヘッダーの有無を確認することで、修正可能な認証エラーか、権限設定を見直すべき認可エラーかを迅速に切り分けられる。"
+      },
+      "en": {
+        "title": "Distinguishing HTTP 401 vs. 403: Debugging Authentication and Authorization Errors with curl and WWW-Authenticate",
+        "summary": "While HTTP 401 and 403 status codes both signal access denial, they differ fundamentally: 401 denotes insufficient authentication that can be resolved with correct credentials, whereas 403 indicates a permanent authorization rejection. Developers can easily diagnose these errors using `curl -I` to inspect the response status and the presence of the `WWW-Authenticate` header, which signals a request for credentials. Understanding this distinction is critical for backend engineers, as it separates transient authentication issues from structural permission roadblocks. Mastering this basic HTTP specification allows builders to quickly isolate whether the problem requires a password retry or a deep dive into access control lists and server-side configurations, ultimately saving hours of unnecessary debugging on API integrations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-05T11:47:19.133Z"
+  },
+  {
+    "id": "art-1793879232606-il3lx",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://art.camilleroux.com/writing/making-art-with-code-in-the-age-of-ai/",
+    "published_at": "2026-11-05T11:26:28.000Z",
+    "og_image_url": "https://art.camilleroux.com/og/writing-making-art-with-code-in-the-age-of-ai.jpg",
+    "title_ja": "AIがコードを書く時代、アルゴリズム・アートの真価とは？創作プロセスと「誰が芸術家か」という哲学的な問い",
+    "summary_ja": "AIがコーディングを代替するようになった現代において、アルゴリズム・アートの定義と芸術的価値を再考する試み。 筆者は、AI生成のコードを実行するだけでは不十分であり、プログラマー自身の美意識や意図的な制約こそが作品を「アート」へと昇華させると主張する。 自動化ツールを駆使しつつも、人間がどのようにコードを制御し、芸術的プロセスに介入できるかが、今後クリエイターにとって決定的な差別化要因となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "AIがコードを書く時代、アルゴリズム・アートの真価とは？創作プロセスと「誰が芸術家か」という哲学的な問い",
+        "summary": "AIがコーディングを代替するようになった現代において、アルゴリズム・アートの定義と芸術的価値を再考する試み。 筆者は、AI生成のコードを実行するだけでは不十分であり、プログラマー自身の美意識や意図的な制約こそが作品を「アート」へと昇華させると主張する。 自動化ツールを駆使しつつも、人間がどのようにコードを制御し、芸術的プロセスに介入できるかが、今後クリエイターにとって決定的な差別化要因となるだろう。"
+      },
+      "en": {
+        "title": "Algorithmic Art in the Age of AI: Does AI coding diminish the creative spirit or define a new medium?",
+        "summary": "In an era where AI can write code instantly, we must re-evaluate what defines algorithmic art and where true creative value lies. The author argues that simply executing AI-generated code lacks the soul of artistic inquiry; instead, the artist’s unique aesthetic constraints and intent are what transform mere output into genuine art. While AI accelerates the mechanical process of coding, the human ability to curate, iterate, and impose subjective boundaries remains paramount. For creative developers, the lesson is clear: automation does not replace the artist's vision, but rather demands a more deliberate approach to how we guide machines. Success now depends on leveraging code as a medium for personal expression rather than just a functional script."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-05T11:47:12.606Z"
+  },
+  {
+    "id": "art-1793879226324-9fgli",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/i-turned-a-viral-idea-into-a-25k-month-app",
+    "published_at": "2026-11-04T20:02:40+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/wrs5s19v32jhwoyhizwtbfb68cy3",
+    "title_ja": "個人開発で月収250万円を突破：SNSでのバイラルをきっかけにしたSaaS開発の成長戦略と収益化までのステップを公開",
+    "summary_ja": "ある個人開発者が、SNSでのバイラルヒットを契機に開発したアプリで月収2万5,000ドルを達成した軌跡を解説。 当初はシンプルな課題解決ツールとしてリリースし、ユーザーのフィードバックを基に機能を絞り込み、課金モデルを最適化することで収益を拡大した。 市場のトレンドを捉えるだけでなく、初期ユーザーとの深い対話を通じてプロダクトの市場適合（PMF）を加速させることが、個人が持続可能な高収益SaaSを構築する最も現実的なアプローチとなる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発で月収250万円を突破：SNSでのバイラルをきっかけにしたSaaS開発の成長戦略と収益化までのステップを公開",
+        "summary": "ある個人開発者が、SNSでのバイラルヒットを契機に開発したアプリで月収2万5,000ドルを達成した軌跡を解説。 当初はシンプルな課題解決ツールとしてリリースし、ユーザーのフィードバックを基に機能を絞り込み、課金モデルを最適化することで収益を拡大した。 市場のトレンドを捉えるだけでなく、初期ユーザーとの深い対話を通じてプロダクトの市場適合（PMF）を加速させることが、個人が持続可能な高収益SaaSを構築する最も現実的なアプローチとなる。"
+      },
+      "en": {
+        "title": "How a solo developer scaled a viral side project into a sustainable SaaS business generating $25,000 in monthly recurring revenue",
+        "summary": "A solo developer shares the roadmap behind transforming a viral social media moment into a scalable SaaS business now generating $25,000 in monthly revenue. The journey began with solving a specific, niche pain point, followed by a rigorous feedback loop that narrowed the feature set and optimized monetization channels. Instead of building a massive suite of features upfront, the developer focused on iterating rapidly based on user data, proving that finding product-market fit through direct engagement with early adopters is the most viable path to profit. For independent builders, the takeaway is clear: leverage initial viral traction to fuel product discovery rather than just vanity metrics, as sustainable growth comes from tightening the connection between core user problems and paid value."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-05T11:47:06.324Z"
+  },
+  {
     "id": "art-1793878322905-3pw2s",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -36548,32 +36626,6 @@
     "created_at": "2026-10-30T23:01:58.313Z"
   },
   {
-    "id": "art-1793401311560-v6lx7",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/mgasparin67-cmd/Agent-verification_Assure",
-    "published_at": "2026-10-30T22:48:05.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェントの「完了しました」は本当か？実行結果を自動検証するOSS「Assure」が開発者のハルシネーション対策に有効",
-    "summary_ja": "AIエージェントがタスク完了を報告しても、実際には実行されていないケースを検知する検証ツール「Assure」が登場した。 このOSSは、エージェントの操作ログや実行環境の状態を分析し、指示通りの成果物や操作が完遂されたかを客観的に照合する。 AIエージェントの実運用における信頼性を担保し、ハルシネーションや不完全なワークフローによる誤動作を防ぐためのガードレールとして非常に有用だ。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの「完了しました」は本当か？実行結果を自動検証するOSS「Assure」が開発者のハルシネーション対策に有効",
-        "summary": "AIエージェントがタスク完了を報告しても、実際には実行されていないケースを検知する検証ツール「Assure」が登場した。 このOSSは、エージェントの操作ログや実行環境の状態を分析し、指示通りの成果物や操作が完遂されたかを客観的に照合する。 AIエージェントの実運用における信頼性を担保し、ハルシネーションや不完全なワークフローによる誤動作を防ぐためのガードレールとして非常に有用だ。"
-      },
-      "en": {
-        "title": "Assure: An open-source verification framework that confirms if your AI agent actually finished the task it promised",
-        "summary": "Assure is an emerging open-source tool designed to tackle a critical blind spot in AI agent deployments: the mismatch between an agent claiming a task is done and the reality of the executed result. By analyzing system logs and the state of the execution environment, Assure objectively verifies whether the promised actions were actually completed or if the model is simply hallucinating success. For developers building autonomous workflows, this framework serves as an essential validation layer, adding much-needed reliability by acting as an automated gatekeeper. It prevents broken pipelines caused by agents skipping steps or silently failing, effectively acting as a safeguard that ensures your AI's reported progress matches the actual output."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-30T23:01:51.560Z"
-  },
-  {
     "id": "art-1793401297000-kiakz",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -50769,32 +50821,6 @@
     "created_at": "2026-10-27T13:22:25.587Z"
   },
   {
-    "id": "art-1793097822605-x1515",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/mitsukida/articles/b7a15e470e3049",
-    "published_at": "2026-10-27T03:19:31.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Mo9QevYK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25BF%25E3%2582%25B9%25E3%2582%25AF%25E7%25AE%25A1%25E7%2590%2586%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E4%25B8%2580%25E9%2580%259A%25E3%2582%258A%25E7%2582%25B9%25E6%25A4%259C%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%2588%25E3%2582%258A%25E3%2580%258C%25E6%2593%258D%25E4%25BD%259C%25E3%2581%25AE%25E3%2581%25A4%25E3%2581%25AA%25E3%2581%258E%25E7%259B%25AE%25E3%2580%258D%25E3%2581%258C%25E6%25B0%2597%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%25E3%2580%2590tsk%2520v1.3.2%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mitsukida%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2VhZGNkYmFkOWUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "タスク管理ツール「tsk v1.3.2」開発記：機能追加を止めて見えた、操作の「つなぎ目」に潜むUXの違和感と改善の優先順位",
-    "summary_ja": "黒い画面のタスク管理ツール「tsk」を開発する中で、機能追加をあえて停止し、既存の操作フローを徹底的に見直した。 単体で動く機能も、連続して操作すると違和感が生まれる「操作のつなぎ目」にUXのボトルネックが潜んでいる。 機能追加よりも、登録・編集・完了といった一連の流れを滑らかにする改善こそが、CLIツールの日常的な使い心地を決定づける最優先事項であると気づかされた。",
-    "translations": {
-      "ja": {
-        "title": "タスク管理ツール「tsk v1.3.2」開発記：機能追加を止めて見えた、操作の「つなぎ目」に潜むUXの違和感と改善の優先順位",
-        "summary": "黒い画面のタスク管理ツール「tsk」を開発する中で、機能追加をあえて停止し、既存の操作フローを徹底的に見直した。 単体で動く機能も、連続して操作すると違和感が生まれる「操作のつなぎ目」にUXのボトルネックが潜んでいる。 機能追加よりも、登録・編集・完了といった一連の流れを滑らかにする改善こそが、CLIツールの日常的な使い心地を決定づける最優先事項であると気づかされた。"
-      },
-      "en": {
-        "title": "Why I paused feature development for my CLI task manager 'tsk v1.3.2' to fix the 'operational seams'",
-        "summary": "While building 'tsk,' my terminal-based task manager, I decided to stop adding features and instead audit the operational flow of existing ones. I realized that even if individual functions work perfectly, the 'seams'—the friction points between consecutive actions like creating, editing, and completing tasks—often ruin the overall UX. My deep dive into the code revealed that usability isn't about having the most features; it is about how smoothly tasks flow from one state to another. For solo developers, the lesson is clear: prioritizing the refinement of these interaction gaps often yields a significantly higher quality of life for your daily users than shipping another complex feature or integration."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-27T10:43:42.605Z"
-  },
-  {
     "id": "art-1793097814796-ltaw2",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -50871,32 +50897,6 @@
       "開発"
     ],
     "created_at": "2026-10-27T06:51:50.483Z"
-  },
-  {
-    "id": "art-1793083904397-xrwrb",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/utsumi/books/7930747b0fa88e",
-    "published_at": "2026-10-26T15:48:35.000Z",
-    "og_image_url": "https://static.zenn.studio/images/logo-only-dark.png",
-    "title_ja": "Claude Codeを活用した自動開発パイプライン「Flowgen」入門：一行のアイデアから本番コード生成までの全工程を無料枠で検証する方法",
-    "summary_ja": "Claude Codeをエンジンに据えた自動開発パイプライン「Flowgen」は、アイデアのプロンプト入力から設計、コード生成、コスト見積もりまでをシームレスに完結させる。 本稿では、複雑な環境構築なしで本番コードを生成するFlowgenの全体像と、最初のパイプラインを無料で構築する実践手順を解説。 アイデアを即座に形にしたい個人開発者にとって、開発効率を飛躍的に高める自動化基盤の構築ガイドとなる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeを活用した自動開発パイプライン「Flowgen」入門：一行のアイデアから本番コード生成までの全工程を無料枠で検証する方法",
-        "summary": "Claude Codeをエンジンに据えた自動開発パイプライン「Flowgen」は、アイデアのプロンプト入力から設計、コード生成、コスト見積もりまでをシームレスに完結させる。 本稿では、複雑な環境構築なしで本番コードを生成するFlowgenの全体像と、最初のパイプラインを無料で構築する実践手順を解説。 アイデアを即座に形にしたい個人開発者にとって、開発効率を飛躍的に高める自動化基盤の構築ガイドとなる。"
-      },
-      "en": {
-        "title": "Getting Started with Flowgen: Building an Automated Development Pipeline with Claude Code for Concept-to-Production Workflows",
-        "summary": "Flowgen leverages Claude Code to create a streamlined automated development pipeline that transforms a single line of input into a production-ready application. This guide details the end-to-end workflow, covering how to iterate from an initial prompt through architectural design, code generation, and even automated cost estimation without complex local infrastructure setup. The tutorial provides a practical roadmap for independent developers to spin up their first automated pipeline using Flowgen’s free-tier capabilities. For builders, this represents a significant shift in speed, moving from raw conceptual ideas to functional codebases while maintaining clear oversight of the underlying cost and logic. It is a powerful tool for accelerating the prototype-to-deployment cycle in modern AI-assisted software engineering environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-27T06:51:44.397Z"
   },
   {
     "id": "art-1793081792779-ji4z1",
