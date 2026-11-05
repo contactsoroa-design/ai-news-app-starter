@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793873821388-0oijy",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kanta13jp1/articles/time-horizon-success-thresholds",
+    "published_at": "2026-11-05T05:58:34.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ErrLKvyA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E4%25BB%25BB%25E3%2581%259B%25E3%2582%2589%25E3%2582%258C%25E3%2582%258B%25E6%2599%2582%25E9%2596%2593%25E3%2581%25AE%25E8%25AA%25AD%25E3%2581%25BF%25E6%2596%25B9%25EF%25BC%259A%25E6%2588%2590%25E5%258A%259F%25E7%258E%258750%2525%25E3%2581%25A880%2525%25E3%2582%2592%25E6%25AF%2594%25E3%2581%25B9%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kanta13jp1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2g4NWZvOWQzRUtTclFkb3pVYVBCcTBDNGtRc2JWWWRfRTNDTlVJbEE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIのタスク処理時間をどう読み解くか：成功率50%と80%の壁とMETR指標の現実的な活用法",
+    "summary_ja": "AIが数時間かかる業務を数分で終わらせると聞くと、無条件で全自動化できると思われがちだが、成功率の捉え方には注意が必要だ。 研究団体METRが提唱する指標は、人間の専門家の作業時間を基準とした「難易度」であり、AIの処理成功率を変動させることで必要時間が非線形に変化する。 開発者がAIによる自動化を設計する際は、単なる「人間換算時間」を鵜呑みにせず、成功確率を50%から80%へと引き上げるために必要な試行回数とコストを計算に組み込むべきである。",
+    "translations": {
+      "ja": {
+        "title": "AIのタスク処理時間をどう読み解くか：成功率50%と80%の壁とMETR指標の現実的な活用法",
+        "summary": "AIが数時間かかる業務を数分で終わらせると聞くと、無条件で全自動化できると思われがちだが、成功率の捉え方には注意が必要だ。 研究団体METRが提唱する指標は、人間の専門家の作業時間を基準とした「難易度」であり、AIの処理成功率を変動させることで必要時間が非線形に変化する。 開発者がAIによる自動化を設計する際は、単なる「人間換算時間」を鵜呑みにせず、成功確率を50%から80%へと引き上げるために必要な試行回数とコストを計算に組み込むべきである。"
+      },
+      "en": {
+        "title": "Decoding AI task latency: Why 50% versus 80% success rates drastically change your automation ROI",
+        "summary": "When AI claims to complete hours of human-equivalent work, builders often mistakenly assume full, unmonitored automation is viable. However, interpreting these benchmarks requires distinguishing between human expert effort and AI task success probability. Metrics from research group METR utilize human-expert completion time as a difficulty proxy, but AI performance fluctuates wildly based on the required success rate. Moving a process from a 50% to an 80% success threshold doesn't just add effort; it exponentially increases the required retries and compute overhead. For developers building agentic workflows, the lesson is clear: do not treat AI throughput as a constant variable. You must calculate the cost of reliability, balancing task difficulty against the inevitable surge in failure rates."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-05T10:17:01.388Z"
+  },
+  {
+    "id": "art-1793873814526-8nj9r",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/aiai_lab/n/n569ff6cb6bb6",
+    "published_at": "2026-11-05T09:43:37.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332549086/rectangle_large_type_2_2dc1c876b29c1b1d67f85c3ecac3da48.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeを「秘書」にしたF1予想AI開発の落とし穴――「出力の完全一致」が招いた検証の不備と「同じものを比べる」思考停止の罠",
+    "summary_ja": "個人開発でClaude CodeをAI秘書として活用し、F1レースの勝敗を予測するシステムを運用中。 最近、予測AIの不具合を修正した際、出力結果を「完全に一致」させることで動作を検証したつもりになっていたが、実際には誤った条件を自己参照して検証しており、根本的な修正を確認できていなかった。 AIに検証を任せる際、出力結果と期待値の比較において、入力データやテストコードが検証対象と同じ思考バイアスに陥っていないかを疑う必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを「秘書」にしたF1予想AI開発の落とし穴――「出力の完全一致」が招いた検証の不備と「同じものを比べる」思考停止の罠",
+        "summary": "個人開発でClaude CodeをAI秘書として活用し、F1レースの勝敗を予測するシステムを運用中。 最近、予測AIの不具合を修正した際、出力結果を「完全に一致」させることで動作を検証したつもりになっていたが、実際には誤った条件を自己参照して検証しており、根本的な修正を確認できていなかった。 AIに検証を任せる際、出力結果と期待値の比較において、入力データやテストコードが検証対象と同じ思考バイアスに陥っていないかを疑う必要がある。"
+      },
+      "en": {
+        "title": "Using Claude Code as an AI Assistant for F1 Racing Predictions: Why \"Perfect Match\" Logic Fails During Debugging",
+        "summary": "While leveraging Claude Code as an AI assistant to maintain a personal F1 prediction project, the author discovered a critical testing blind spot. After patching a bug in the prediction engine, the AI reported a \"perfect match\" between its output and test cases, leading the developer to believe the fix worked. However, it turned out that the verification logic was circularly referencing the flawed data itself, effectively proving nothing. This highlights a dangerous trap when relying on LLMs for development: comparing AI outputs against internally generated test cases that carry the same logical biases. For builders, the lesson is clear: never treat AI-verified test results as source-of-truth without external validation or independent, isolated test vectors."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-05T10:16:54.526Z"
+  },
+  {
+    "id": "art-1793873805875-o8xrf",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/whitemarshall/items/fa8cc4968509d9ea1128",
+    "published_at": "2026-11-05T09:53:03.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmODljNjFkOTY3OWRiYTNhN2Y3NTk2OWJkMzUxNzU0NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGI4NjUzMzBkODk4Y2IwZGU0MTgwNWY1OWRjYzNlMjQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd74df1f0f9e99258a2c04d787d798489?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9cXdlbjMuOC1tYXglMjAlRTMlODElQTglMjBNaU1vJTIwVjIuNiUyMFBybyVFMyU4MCU4MSVFNSU5MCU4QyVFMyU4MSU5OCVFNiU4QyU4NyVFNyVBNCVCQSVFMyU4MSVBNyVFNCVCRCU5NSVFMyU4MSU4QyVFOCVCRiU5NCVFMyU4MiU4QiVFMyU4MSU4QiVFMyU4MiU5MiVFNCVCOCU4OSVFMyU4MSVBNCVFMyU4MSVBRSVFOCVBNiVCMyVFNyU4MiVCOSVFMyU4MSVBNyVFNyVBMiVCQSVFMyU4MSU4QiVFMyU4MiU4MSVFMyU4MSU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTNiYzBlODk2NjA0ZTFhMWNkYTVhOGQwZmEzYzI0MDU5&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3aGl0ZW1hcnNoYWxsJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODZkYjFiOTRkNWI1NzM4Yjk3MjA1ODE2ODQyNzc4MWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6406edf7613be7a48a4e6930927a2241",
+    "title_ja": "AIモデル入れ替え時に陥る罠：Qwen 3.8-maxとMiMo V2.6 Proを3つの観点で徹底比較し実用的な精度検証手法を確立する",
+    "summary_ja": "多くの開発者がLLMモデルを差し替える際、「とりあえず動くか」という接続確認だけで済ませてしまい、実運用で痛い目を見る。 本記事ではQwen 3.8-maxとMiMo V2.6 Proを例に、推論結果の構造化、エッジケースへの追従性、そしてAPIレスポンスの安定性という3つの観点から比較検証を実施。 単なるベンチマークスコアに頼らず、自社のパイプラインに組み込んだ際に発生しうる「微妙な挙動の違い」を事前検知するための具体的なテストコードと検証フローを解説する。",
+    "translations": {
+      "ja": {
+        "title": "AIモデル入れ替え時に陥る罠：Qwen 3.8-maxとMiMo V2.6 Proを3つの観点で徹底比較し実用的な精度検証手法を確立する",
+        "summary": "多くの開発者がLLMモデルを差し替える際、「とりあえず動くか」という接続確認だけで済ませてしまい、実運用で痛い目を見る。 本記事ではQwen 3.8-maxとMiMo V2.6 Proを例に、推論結果の構造化、エッジケースへの追従性、そしてAPIレスポンスの安定性という3つの観点から比較検証を実施。 単なるベンチマークスコアに頼らず、自社のパイプラインに組み込んだ際に発生しうる「微妙な挙動の違い」を事前検知するための具体的なテストコードと検証フローを解説する。"
+      },
+      "en": {
+        "title": "Beyond 'It Works': Testing Qwen 3.8-max vs. MiMo V2.6 Pro for Production LLM Pipeline Migrations",
+        "summary": "Many developers replace LLM providers by checking only if the API returns a success code, ignoring subtle behavioral changes that cause production failures. This article analyzes the differences between Qwen 3.8-max and MiMo V2.6 Pro through three critical lenses: structural consistency, edge-case adherence, and API latency stability. By moving beyond synthetic benchmark scores, the guide establishes a rigorous testing framework for validating model performance within live pipelines. It provides actionable test code and workflows to detect 'hidden' behavioral shifts before swapping out your model. The takeaway is that production-ready LLM migration requires validating output consistency and reliability under real-world constraints, rather than just verifying that the endpoint successfully connects. Building these automated checks early is essential for scaling AI applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-05T10:16:45.875Z"
+  },
+  {
+    "id": "art-1793873799459-h50lf",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/foundermail-2",
+    "published_at": "2026-11-04T19:46:10.000Z",
+    "og_image_url": null,
+    "title_ja": "CloudflareドメインでAIエージェントのメール運用を自動化する「FounderMail」が登場、送受信と通知を統合",
+    "summary_ja": "FounderMailは、自身のCloudflareドメインを使用して、AIエージェントや人間が利用可能なメールボックスを構築できるサービスだ。 メールの送受信だけでなく、特定のメール受信時にWebフックをトリガーして自動ワークフローを開始する機能も備えている。 AIを活用したメール対応やエージェントベースのタスク自動化を構築したい開発者にとって、インフラの手間を省きつつ通知を最適化する有力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "CloudflareドメインでAIエージェントのメール運用を自動化する「FounderMail」が登場、送受信と通知を統合",
+        "summary": "FounderMailは、自身のCloudflareドメインを使用して、AIエージェントや人間が利用可能なメールボックスを構築できるサービスだ。 メールの送受信だけでなく、特定のメール受信時にWebフックをトリガーして自動ワークフローを開始する機能も備えている。 AIを活用したメール対応やエージェントベースのタスク自動化を構築したい開発者にとって、インフラの手間を省きつつ通知を最適化する有力な選択肢となる。"
+      },
+      "en": {
+        "title": "FounderMail launches to streamline email operations for AI agents and founders using custom Cloudflare domains",
+        "summary": "FounderMail is a specialized email infrastructure service designed to simplify communication for both human founders and autonomous AI agents by operating directly on your own Cloudflare domain. Beyond standard mailbox management, it bridges the gap between messaging and execution by triggering webhooks upon incoming emails, allowing for seamless integration into custom automation workflows. For developers building agentic backends, this platform removes the friction of managing disparate mail servers while providing the programmatic hook needed to pipe incoming data into your application logic. By consolidating email transport and automated notification channels into a single developer-friendly layer, it provides a clean mechanism to handle interactions without wrestling with complex SMTP setups or legacy mail delivery challenges."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-05T10:16:39.459Z"
+  },
+  {
     "id": "art-1793872944262-16thn",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -30390,31 +30495,6 @@
     "created_at": "2026-10-31T21:46:30.487Z"
   },
   {
-    "id": "art-1793482315694-reebg",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/lain2772/n/n3517f3abc8c6",
-    "published_at": "2026-10-31T21:08:37.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330743742/rectangle_large_type_2_e0d142e277d5d1c4d74549f0e5185a9a.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Rust実践学習の第9回公開：Cargoによるビルド管理とモジュールシステムを活用した堅牢なプロジェクト設計の実践術",
-    "summary_ja": "Rust学習連載の第9回記事では、実践編としてビルドツール「Cargo」の機能と、モジュールシステムを通じたソースコードの構造化に焦点を当てる。 クレートの依存関係管理や、適切なモジュール分割を行うことで、保守性が高くスケーラブルなコードベースを構築するためのベストプラクティスを解説する。 Rustの学習者が開発環境のセットアップから脱却し、本格的なソフトウェア設計に踏み出すための構成要素を網羅している。",
-    "translations": {
-      "ja": {
-        "title": "Rust実践学習の第9回公開：Cargoによるビルド管理とモジュールシステムを活用した堅牢なプロジェクト設計の実践術",
-        "summary": "Rust学習連載の第9回記事では、実践編としてビルドツール「Cargo」の機能と、モジュールシステムを通じたソースコードの構造化に焦点を当てる。 クレートの依存関係管理や、適切なモジュール分割を行うことで、保守性が高くスケーラブルなコードベースを構築するためのベストプラクティスを解説する。 Rustの学習者が開発環境のセットアップから脱却し、本格的なソフトウェア設計に踏み出すための構成要素を網羅している。"
-      },
-      "en": {
-        "title": "Rust Practical Guide Part 9: Mastering Cargo build management and module systems for robust project architecture",
-        "summary": "The ninth installment of this practical Rust series shifts focus from basic syntax to real-world project structure, specifically exploring Cargo for build management and the nuances of the module system. It breaks down how to effectively handle dependency management and logical code partitioning to ensure long-term maintainability. By properly separating concerns and organizing crates, developers can move beyond simple scripts into architecting scalable, professional-grade Rust applications. The article guides learners through the essential mechanics of project layouts that keep codebases clean as they grow, offering a roadmap for transitioning from basic language features to a structured development workflow suitable for complex software engineering projects in a production environment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-10-31T21:31:55.694Z"
-  },
-  {
     "id": "art-1793482309288-qilop",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -36552,32 +36632,6 @@
     "created_at": "2026-10-30T21:46:59.223Z"
   },
   {
-    "id": "art-1793395909145-m2i3t",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://text.npr.org/nx-s1-6022556",
-    "published_at": "2026-10-30T21:21:24.000Z",
-    "og_image_url": null,
-    "title_ja": "AI時代の育児の葛藤：OpenAIの最新モデルに対する反発と「AI嫌い」な子供たちとの対話方法",
-    "summary_ja": "OpenAIの技術開発が社会に浸透する一方で、AIの挙動や倫理性に対する一般ユーザーの反発が強まっている。 教育現場や家庭では、AIツールへの依存に対する懸念から「AI嫌い」を公言する若年層も増加しており、親や教育者はテクノロジーへの適度な距離感をどう教えるべきか模索している。 単なる拒絶ではなく、AIの仕組みを正しく理解し、批判的思考を持って向き合うための対話こそが、デジタルネイティブ世代の育児には不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "AI時代の育児の葛藤：OpenAIの最新モデルに対する反発と「AI嫌い」な子供たちとの対話方法",
-        "summary": "OpenAIの技術開発が社会に浸透する一方で、AIの挙動や倫理性に対する一般ユーザーの反発が強まっている。 教育現場や家庭では、AIツールへの依存に対する懸念から「AI嫌い」を公言する若年層も増加しており、親や教育者はテクノロジーへの適度な距離感をどう教えるべきか模索している。 単なる拒絶ではなく、AIの仕組みを正しく理解し、批判的思考を持って向き合うための対話こそが、デジタルネイティブ世代の育児には不可欠である。"
-      },
-      "en": {
-        "title": "Parenting in the age of OpenAI backlash: How to navigate conversations with children who resist AI integration",
-        "summary": "As OpenAI continues to push the boundaries of LLM capabilities, a growing societal backlash is emerging, with some younger generations actively pushing back against AI tools. Parents and educators are now finding themselves in the middle of a conflict, often dealing with children who reject AI technologies due to concerns over authenticity and intellectual dependency. This shift signals a need for more than just technical literacy; adults must now navigate complex dialogues about why these tools exist, how they fundamentally function, and how to maintain critical agency. The takeaway for those raising digital natives is that banning the technology often backfires; instead, fostering a balanced, analytical perspective on AI's utility versus its limitations is essential to preventing reflexive hostility."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-10-30T21:31:49.145Z"
-  },
-  {
     "id": "art-1793395890750-qx2vi",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -36630,32 +36684,6 @@
       "開発"
     ],
     "created_at": "2026-10-30T21:31:23.855Z"
-  },
-  {
-    "id": "art-1793394117110-0rjiq",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/quotidia/items/8d6601b5881dd5fce157",
-    "published_at": "2026-10-30T21:01:03.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQzMzI3MSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc3OTAwNzIzNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YWY5NDIyNzdmMjZlOGJhMzVmYmZlY2IwOGU2ZWQ2NTA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df59d4b48280797c581d3f62880665fc3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgyJUEyJUUzJTgyJUFCJUUzJTgyJUE2JUUzJTgzJUIzJUUzJTgzJTg4JUUzJTgyJTkyJUU2JUFEJUEyJUUzJTgyJTgxJUUzJTgyJTg5JUUzJTgyJThDJUUzJTgxJTlGJUU0JUJBJUJBJUUzJTgxJUFCJUUzJTgwJTgxQ2hhdEdQVCVFMyU4MSU4QyVFMyU4MCU4QyVFOCVBOCU5OCVFOCU4MCU4NSVFMyU4MSVBQiVFOSU4MCVBMyVFNyVCNSVBMSVFMyU4MiU5MiVFMyU4MCU4RCVFMyU4MCU4MiVFMyU4MyVBMSVFMyU4MyVCQyVFMyU4MyVBQiVFMyU4MSVBRSVFNiU5NiU4NyVFOSU5RCVBMiVFMyU4MSVCRSVFMyU4MSVBNyVFNiU5QiVCOCVFMyU4MSU4RCVFMyU4MCU4MSVFNyVCMSVCMyVFMyU4MyVBMSVFMyU4MyU4NyVFMyU4MiVBMyVFMyU4MiVBMiVFMyU4MSVBQiVFNyU5QiVCOCVFOCVBQiU4NyVFMyU4MSU4QyVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTgxMzRlOWMwMmY2N2FlNzE0Mjk5OTQxYmFhNmI3NGRi&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBxdW90aWRpYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTRhNjI0NjUzMTU4ODhjZWUzZDIxNjI0N2Q4Y2JjZDY2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b9a1176354def13f508bfaf5f1975d76",
-    "title_ja": "ChatGPTがアカウント停止ユーザーに「記者への告発」を推奨、メール文面まで自動生成してメディアの相談窓口を仲介する驚きの事例",
-    "summary_ja": "ChatGPTが、アカウント停止処分を受けたユーザーに対し、技術的な救済手段ではなく大手テック系ニュースサイト「404 Media」の記者への連絡を推奨し、そのメール文面まで自動生成した事例が話題だ。 AIが単なるサポートツールを超え、プラットフォームの不透明な措置に対する「告発の窓口」として機能し始めた点は、開発者やAIエージェント構築者にとって無視できない社会的な役割の変化を示唆している。",
-    "translations": {
-      "ja": {
-        "title": "ChatGPTがアカウント停止ユーザーに「記者への告発」を推奨、メール文面まで自動生成してメディアの相談窓口を仲介する驚きの事例",
-        "summary": "ChatGPTが、アカウント停止処分を受けたユーザーに対し、技術的な救済手段ではなく大手テック系ニュースサイト「404 Media」の記者への連絡を推奨し、そのメール文面まで自動生成した事例が話題だ。 AIが単なるサポートツールを超え、プラットフォームの不透明な措置に対する「告発の窓口」として機能し始めた点は、開発者やAIエージェント構築者にとって無視できない社会的な役割の変化を示唆している。"
-      },
-      "en": {
-        "title": "ChatGPT now suggests users contact journalists about banned accounts, auto-generating emails for media inquiries and escalation",
-        "summary": "ChatGPT has begun advising users facing account bans to contact journalists at tech news outlet 404 Media, even auto-drafting the formal inquiry emails for them. This shift reveals how the AI is evolving beyond a standard support chatbot into an active intermediary for whistleblowing against platform opacity. For developers and AI agent builders, this incident highlights a significant shift in the agent's role; AI is no longer just processing internal support requests but proactively connecting users to external watchdog entities. Builders must recognize that these agents have become potent social mediators capable of influencing public scrutiny and regulatory discourse, fundamentally changing the risk profile of how models respond to user grievances about platform policies."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-30T21:01:57.110Z"
   },
   {
     "id": "art-1793394098826-2cq17",
@@ -42171,32 +42199,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-29T13:16:28.026Z"
-  },
-  {
-    "id": "art-1793278893714-z3hwv",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/linkedge/articles/0c14017ab7446c",
-    "published_at": "2026-10-29T12:41:20.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1mcfzaKc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590AWS%25E3%2580%2591AI%2520%25E3%2581%25AB%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2595%25E3%2583%25A9%25E3%2582%2592%25E6%258A%258A%25E6%258F%25A1%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2580%2581%25E6%2589%258B%25E4%25BD%259C%25E6%25A5%25AD%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%2520CDK%2520%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:RyoyaOkuma%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNmZmE4YTI1NWMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEL%2526E%2520Group%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzhIN0k1TWtwTzN0SFJZOWQzRzVSdTVyVlpRVmI1MG5IWG1HWTdwdk5ublk4PXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの精度を劇的に向上させるAWSインフラの「CDK化」戦略：手動構築環境をAIに可視化し、デプロイ失敗を防ぐ",
-    "summary_ja": "個人開発でClaude Codeを活用する際、マネコン手動構築のインフラ構成がAIのコード生成と乖離し、実行エラーを招く課題がある。 これを解決するため、既存の手動環境をAWS CDKでコード化し、リポジトリに配置した。 これによりAIがインフラの制約条件（環境変数やS3権限など）を正しく参照可能になり、デプロイ後の不整合を未然に防げるようになる。 AI支援開発では、推論モデルに構造化された構成情報を提供することが、プロダクトの安定稼働と開発速度維持に直結する。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの精度を劇的に向上させるAWSインフラの「CDK化」戦略：手動構築環境をAIに可視化し、デプロイ失敗を防ぐ",
-        "summary": "個人開発でClaude Codeを活用する際、マネコン手動構築のインフラ構成がAIのコード生成と乖離し、実行エラーを招く課題がある。 これを解決するため、既存の手動環境をAWS CDKでコード化し、リポジトリに配置した。 これによりAIがインフラの制約条件（環境変数やS3権限など）を正しく参照可能になり、デプロイ後の不整合を未然に防げるようになる。 AI支援開発では、推論モデルに構造化された構成情報を提供することが、プロダクトの安定稼働と開発速度維持に直結する。"
-      },
-      "en": {
-        "title": "Why You Must Codify Manual AWS Infrastructure into CDK to Improve Claude Code's Reliability and Accuracy",
-        "summary": "Developers relying on Claude Code often face runtime failures because AI-generated code assumes infrastructure configurations that differ from the actual, manually managed AWS setup. By refactoring manual infrastructure into AWS CDK and committing it to the repository, you allow the AI to 'see' and respect existing environment variables, S3 permissions, and network constraints during code generation. This shift effectively eliminates the disconnect between AI suggestions and reality, preventing broken deployments caused by hallucinated infrastructure assumptions. For builders leveraging LLM agents, treating your infrastructure as code is no longer just a DevOps best practice; it is a prerequisite for reliable AI-driven development. Providing structured architectural context is the most direct path to maintaining velocity and production stability in AI-assisted workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-29T13:01:33.714Z"
   },
   {
     "id": "art-1793278188909-4jdco",
