@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1793876600366-nl7sa",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sekken_fukaxa/articles/f52711fbe4cc9d",
+    "published_at": "2026-11-05T03:27:45.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3pRl5sNZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E5%25AD%2597%25E5%25B9%2595%25E3%2581%25AE%25E6%2594%25B9%25E8%25A1%258C%25E3%2581%25AF%25E3%2580%2581%25E3%2581%25AA%25E3%2581%259C%25E3%2580%258C%25E5%25A4%2589%25E3%2580%258D%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25E2%2580%2595%25E2%2580%2595%25E6%25A4%259C%25E5%2587%25BA%25E3%2581%25A8%25E8%25A3%259C%25E6%25AD%25A3%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%259B%25E3%2581%25A3%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0d4Njk0bFJWTkhtaWtlbF9NUGxpRkR0d2p2VXF2YkZEdVBsNERSU1FNTUk0aEFBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI動画字幕の「不自然な改行」を自動補正する手法—熟語の分断や助詞の行頭送りを検知し読みやすさを劇的に改善",
+    "summary_ja": "AIによる音声認識字幕で頻発する、熟語の途切れや助詞の行頭配置といった「不自然な改行」を自動検出し補正するロジックを解説。 60分の動画で2,000枚以上の字幕を人手で修正するのは非現実的だが、適切なルールベースやパターンの定義を実装することで、視聴体験を損なう違和感を効率的に排除できる。 AIエージェントの出力品質を高めたい開発者にとって、後処理としてこの改行制御レイヤーを組み込むことがUX向上の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AI動画字幕の「不自然な改行」を自動補正する手法—熟語の分断や助詞の行頭送りを検知し読みやすさを劇的に改善",
+        "summary": "AIによる音声認識字幕で頻発する、熟語の途切れや助詞の行頭配置といった「不自然な改行」を自動検出し補正するロジックを解説。 60分の動画で2,000枚以上の字幕を人手で修正するのは非現実的だが、適切なルールベースやパターンの定義を実装することで、視聴体験を損なう違和感を効率的に排除できる。 AIエージェントの出力品質を高めたい開発者にとって、後処理としてこの改行制御レイヤーを組み込むことがUX向上の鍵となる。"
+      },
+      "en": {
+        "title": "Why AI subtitles have awkward line breaks—and how to automate detection and fix them for better readability",
+        "summary": "AI-generated subtitles often suffer from awkward line breaks, such as splitting compound words, leaving particles at the start of new lines, or separating numbers from units. While manual proofreading is manageable for short clips, it is impossible for long-form content like 60-minute lectures where subtitles exceed 2,000 segments. This piece details how to implement automated post-processing logic to detect these grammatical breaks and force proper segment wrapping. For developers building AI video tools, integrating a specialized line-break control layer is essential to prevent viewer distraction. By defining strict heuristic patterns for subtitle boundaries, you can drastically improve the polish of AI-transcribed content without relying on error-prone human intervention."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "動画"
+    ],
+    "created_at": "2026-11-05T11:03:20.366Z"
+  },
+  {
+    "id": "art-1793876568440-qawu7",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/serendipity_o_0/n/nfd17f0ae5183",
+    "published_at": "2026-11-05T11:00:13.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/323907361/profile_07996995e10657a850c797a3241d71ab.jpg?fit=bounds&format=jpeg&quality=85&width=330",
+    "title_ja": "AI生成のサイバーパンク戦闘画面を構築、Spineアニメーション実装で直面したUI崩壊と解決の泥臭い舞台裏｜個人開発ログ#03",
+    "summary_ja": "AI生成の一枚絵をSpineでパーツ分解し、呼吸アニメーションを実装した直後、UIレイアウトが崩壊するという開発の現実と直面。 キャラクターの動きをゲーム画面に統合する際、座標制御やZオーダーの競合など、静止画制作時には想定していなかったUI実装の泥臭い課題が浮き彫りになった。 動的なアニメーションと静的なUIコンポーネントをどう両立させるか、技術的な試行錯誤の過程を詳述する。 個人開発でUI/UXを追求する際、キャラ演出の負荷を考慮した設計の重要性を説く。",
+    "translations": {
+      "ja": {
+        "title": "AI生成のサイバーパンク戦闘画面を構築、Spineアニメーション実装で直面したUI崩壊と解決の泥臭い舞台裏｜個人開発ログ#03",
+        "summary": "AI生成の一枚絵をSpineでパーツ分解し、呼吸アニメーションを実装した直後、UIレイアウトが崩壊するという開発の現実と直面。 キャラクターの動きをゲーム画面に統合する際、座標制御やZオーダーの競合など、静止画制作時には想定していなかったUI実装の泥臭い課題が浮き彫りになった。 動的なアニメーションと静的なUIコンポーネントをどう両立させるか、技術的な試行錯誤の過程を詳述する。 個人開発でUI/UXを追求する際、キャラ演出の負荷を考慮した設計の重要性を説く。"
+      },
+      "en": {
+        "title": "Building a cyberpunk battle UI with AI and Spine: navigating the messy technical reality of animated sprite integration",
+        "summary": "After successfully animating an AI-generated cyberpunk character using Spine, the developer immediately encountered a frustrating technical hurdle: the entire battle UI layout collapsed upon integration. Moving from a static character illustration to a breathing, animated entity revealed a host of overlooked constraints regarding coordinate control, Z-order conflicts, and dynamic container scaling that static prototypes never expose. This development log peels back the curtain on the gritty, unglamorous work required to blend fluid character animations with rigid UI frameworks, emphasizing that visuals are only half the battle. For independent developers, the key lesson is that complex animations demand an early, robust strategy for UI layering; without strict component isolation, motion design quickly breaks interactive interfaces."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-05T11:02:48.440Z"
+  },
+  {
+    "id": "art-1793876551435-s2j5a",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/k386/articles/whisper-local-0328",
+    "published_at": "2026-11-05T04:08:12.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--t4tms0qy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Whisper%2520Local%25200.3.28%2520%25E2%2580%2595%2520%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25A6%25E3%2582%25B6%25E3%2581%25AE%25E3%2582%25BF%25E3%2583%2596%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AB%25E3%2580%2581%25E9%259F%25B3%25E5%25A3%25B0%25E5%2585%25A5%25E5%258A%259B%25E3%2581%25AE%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%2592%25E5%2588%2587%25E3%2582%258A%25E6%259B%25BF%25E3%2581%2588%25E3%2582%2589%25E3%2582%258C%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Mac%25E3%2581%25AE%25E6%25AF%258E%25E6%2597%25A5%25E3%2582%2592%25E3%2580%2581%25E3%2581%25A1%25E3%2582%2587%25E3%2581%25A3%25E3%2581%25A8%25E6%25A5%25BD%25E3%2581%25AB%25E3%2580%2582%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0lBSkpjX0pTWFpCX0JSdGZPazRJbi1ERUIzMXloUlI0dTJlN3Z5YnlINzAwbHVkTVE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ローカル文字起こしアプリ「Whisper Local」v0.3.28公開、ブラウザのタブごとに音声入力のAI指示を切り替え可能に",
+    "summary_ja": "Mac専用の完全ローカル音声入力・文字起こしアプリ「Whisper Local」がアップデートし、バージョン0.3.28でブラウザのタブごとの設定切り替えに対応した。 これまではアプリ単位のスタイル定義のみ可能だったが、ブラウザ上のタブ名に基づき、ChatGPT用の指示やメール作成用など、用途に合わせた柔軟な音声整形が可能になった。",
+    "translations": {
+      "ja": {
+        "title": "ローカル文字起こしアプリ「Whisper Local」v0.3.28公開、ブラウザのタブごとに音声入力のAI指示を切り替え可能に",
+        "summary": "Mac専用の完全ローカル音声入力・文字起こしアプリ「Whisper Local」がアップデートし、バージョン0.3.28でブラウザのタブごとの設定切り替えに対応した。 これまではアプリ単位のスタイル定義のみ可能だったが、ブラウザ上のタブ名に基づき、ChatGPT用の指示やメール作成用など、用途に合わせた柔軟な音声整形が可能になった。"
+      },
+      "en": {
+        "title": "Whisper Local v0.3.28 update brings per-tab AI transcription settings to the macOS local voice-input app",
+        "summary": "Whisper Local, the macOS-exclusive tool for local-first voice transcription and input, has released version 0.3.28, introducing granular control over AI transcription styles based on browser tabs. While previous iterations only allowed style configurations per application, users can now define specific voice-processing instructions—such as chat-bot prompting or email composition—depending on the active browser tab's title. By extending context awareness beyond the application level, this update solves a major friction point for power users handling diverse workflows within a single browser instance. This capability significantly improves the utility of on-device AI transcription for developers who split their focus between complex web-based tools and communication platforms, ensuring highly accurate voice-to-text formatting without sending sensitive audio data to external clouds."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-05T11:02:31.435Z"
+  },
+  {
+    "id": "art-1793876505956-44sd2",
+    "source_id": "source-framer",
+    "source_name": "Framer Blog (AI LP制作)",
+    "url": "https://www.framer.com/blog/lighthouse-13-6/",
+    "published_at": "2026-11-05T11:01:45.956Z",
+    "og_image_url": "https://framerusercontent.com/images/kgwnzwkef0sV7yIAOf9BxYVGaY.png?width=1400&height=800",
+    "title_ja": "Framerが「Lighthouse 13.6」を公開、読み込み速度の劇的向上とAIを活用した次世代のLP制作ワークフローを実現",
+    "summary_ja": "Framerが発表した「Lighthouse 13.6」では、ウェブサイトの読み込み速度をGoogleのCore Web Vitals基準で最適化する新しいレンダリングエンジンと、AIを活用したLP制作機能が強化された。 特に画像処理のパイプライン刷新により、表示の遅延が大幅に短縮されている。 デザインから実装までのフローを高速化することで、開発者は複雑なコーディングを排除しつつ、SEOとUXを両立させた高コンバージョンなWebサイトを短期間で構築可能になる。",
+    "translations": {
+      "ja": {
+        "title": "Framerが「Lighthouse 13.6」を公開、読み込み速度の劇的向上とAIを活用した次世代のLP制作ワークフローを実現",
+        "summary": "Framerが発表した「Lighthouse 13.6」では、ウェブサイトの読み込み速度をGoogleのCore Web Vitals基準で最適化する新しいレンダリングエンジンと、AIを活用したLP制作機能が強化された。 特に画像処理のパイプライン刷新により、表示の遅延が大幅に短縮されている。 デザインから実装までのフローを高速化することで、開発者は複雑なコーディングを排除しつつ、SEOとUXを両立させた高コンバージョンなWebサイトを短期間で構築可能になる。"
+      },
+      "en": {
+        "title": "Framer Launches Lighthouse 13.6 with Performance Optimization Overhaul and AI-Driven Landing Page Workflows for Faster Site Builds",
+        "summary": "The latest Framer release, Lighthouse 13.6, introduces a sophisticated rendering engine overhaul specifically designed to maximize Core Web Vitals performance while streamlining AI-assisted landing page creation. By fundamentally restructuring the image processing pipeline, Framer now ensures drastically reduced load times even for media-heavy sites, effectively solving common performance bottlenecks out of the box. This update empowers builders to bypass manual optimization tasks, allowing teams to ship high-conversion, SEO-ready pages in a fraction of the time. The practical takeaway for developers and agencies is a shift toward \"performance-by-default\" workflows; by leveraging these automated infrastructure upgrades, you can focus entirely on design strategy rather than troubleshooting site speed issues or optimizing assets for search engine rankings."
+      }
+    },
+    "tool_tags": [
+      "Framer"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-05T11:01:45.956Z"
+  },
+  {
     "id": "art-1793875612465-mtrw7",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -30602,59 +30709,6 @@
     "created_at": "2026-10-31T22:01:39.673Z"
   },
   {
-    "id": "art-1793483206822-jwvno",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/douzi026/n/n763398ae59ce",
-    "published_at": "2026-10-31T20:17:13.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330738352/rectangle_large_type_2_603e056cb5a9fbbb121b25407668ef32.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ローカルAI活用Macアプリ「AESTHETICA」開発者が明かす、品質よりも速度を優先する「低解像度先行」のアセット制作ワークフロー",
-    "summary_ja": "Mac用アプリ「AESTHETICA」の開発者は、画像・3D・音声をローカル生成するワークフローにおいて、最初から高品質を目指す手法を転換した。 完成品の一歩手前で解像度を上げる「低解像度先行」戦略を採用することで、試行錯誤の回数を劇的に増やし、トータルの制作効率を向上させている。 個人開発において完成度を妥協せずスピードを担保するには、出力解像度やレンダリング負荷を段階的にコントロールする設計が有効だ。",
-    "translations": {
-      "ja": {
-        "title": "ローカルAI活用Macアプリ「AESTHETICA」開発者が明かす、品質よりも速度を優先する「低解像度先行」のアセット制作ワークフロー",
-        "summary": "Mac用アプリ「AESTHETICA」の開発者は、画像・3D・音声をローカル生成するワークフローにおいて、最初から高品質を目指す手法を転換した。 完成品の一歩手前で解像度を上げる「低解像度先行」戦略を採用することで、試行錯誤の回数を劇的に増やし、トータルの制作効率を向上させている。 個人開発において完成度を妥協せずスピードを担保するには、出力解像度やレンダリング負荷を段階的にコントロールする設計が有効だ。"
-      },
-      "en": {
-        "title": "How AESTHETICA developer adopts a 'low-res-first' workflow to accelerate local AI asset generation on Mac",
-        "summary": "The developer behind AESTHETICA, a Mac app for locally generating raw assets like images, 3D models, and audio, reveals a strategic shift in their creative process. By prioritizing 'low-resolution-first' output, the developer accelerates the iteration loop, allowing for rapid experimentation before committing to a final, high-fidelity render. This approach enables significantly more creative trials without sacrificing ultimate quality, effectively bypassing the bottleneck of slow generation times. For solo developers building with local AI models, the key takeaway is to decouple the refinement stage from initial ideation by managing resolution and rendering depth incrementally. This workflow design keeps development velocity high while maintaining the ability to produce polished assets on demand, proving that performance tuning is a creative tool."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-31T21:46:46.822Z"
-  },
-  {
-    "id": "art-1793483196943-b6zju",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/douzi026/n/nfed9c79dc985",
-    "published_at": "2026-10-31T20:18:13.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330738446/rectangle_large_type_2_e9f93ab4a5777bc0d4705c998e42b4e2.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Mac用生成AIアプリ「AESTHETICA」開発者が語る、制作ツールを製品へと昇華させ収益化するまでの方針転換",
-    "summary_ja": "画像・3D・音などの素材をローカル環境で生成するMacアプリ「AESTHETICA（AES）」の開発記。 著者は当初、自身の制作作業を効率化するための内製ツールとしてAESを開発していたが、それを一般ユーザー向けの製品へと作り変え、価格設定も市場に委ねるアプローチを取ることで新たな価値創出を試みた。 単なるユーティリティツールを収益化可能な製品へと転換させるプロセスは、個人開発者にとって「何を作るか」だけでなく「既存の道具をどう再定義するか」が重要であることを示している。",
-    "translations": {
-      "ja": {
-        "title": "Mac用生成AIアプリ「AESTHETICA」開発者が語る、制作ツールを製品へと昇華させ収益化するまでの方針転換",
-        "summary": "画像・3D・音などの素材をローカル環境で生成するMacアプリ「AESTHETICA（AES）」の開発記。 著者は当初、自身の制作作業を効率化するための内製ツールとしてAESを開発していたが、それを一般ユーザー向けの製品へと作り変え、価格設定も市場に委ねるアプローチを取ることで新たな価値創出を試みた。 単なるユーティリティツールを収益化可能な製品へと転換させるプロセスは、個人開発者にとって「何を作るか」だけでなく「既存の道具をどう再定義するか」が重要であることを示している。"
-      },
-      "en": {
-        "title": "How the AESTHETICA Mac app developer turned an internal generative tool into a monetizable product",
-        "summary": "The developer of AESTHETICA, a Mac application capable of generating image, 3D, and audio assets locally, shares the journey of pivoting an internal workflow tool into a commercial product. Initially built purely to streamline the author's own creative pipeline, the transition required shifting focus toward general user needs and adopting an open, market-driven pricing strategy. This case study highlights a critical lesson for indie developers: scaling a product often hinges not just on the technical novelty of the generator, but on successfully reframing a private production utility into a marketable solution. By formalizing internal tools into user-facing software, developers can unlock revenue streams that were previously hidden within their own operational overhead and private workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "画像生成"
-    ],
-    "created_at": "2026-10-31T21:46:36.943Z"
-  },
-  {
     "id": "art-1793483190487-7hkmu",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -41884,32 +41938,6 @@
     "created_at": "2026-10-29T15:02:16.331Z"
   },
   {
-    "id": "art-1793285439393-zwpwi",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tappers/articles/ai-labo-e05-subagent-folding",
-    "published_at": "2026-10-29T14:29:49.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--agC6dZy8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E3%2580%258C%25E5%25BD%25B9%25E5%2589%25B2%25E5%2588%25A5%25E3%2582%25B5%25E3%2583%2596%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E5%2588%2586%25E5%2589%25B2%25E3%2580%258Dvs%25E3%2580%258C%25E5%258D%2598%25E4%25B8%2580%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2597%25E7%25B5%25B1%25E5%2590%2588%25EF%25BC%258B%25E6%25AE%25B5%25E9%259A%258E%25E7%259A%2584%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25AB%25E9%2596%258B%25E7%25A4%25BA%25E3%2580%258D%25E3%2582%2592%25E5%25AE%259F%25E6%25A9%259F%25E3%2582%25B5%25E3%2583%25B3%25E3%2583%2589%25E3%2583%259C%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%25E3%2581%25A7A%252FB%25E6%25A4%259C%25E8%25A8%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tappers%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVE5OTlrenNDTS1ESVpIUGl4SUpHVGoxeVNyT2V4Tmc2SF96NTI5ZFJuTkNVZU5nPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェント設計のA/B検証：サブエージェント分割 vs 単一ループ＋段階的スキル開示、実機20ケースで判明した「勝者」の設計パターン",
-    "summary_ja": "AIエージェントの構築において「役割別サブエージェント分割」と「単一ループ統合＋段階的スキル開示」のどちらが有効か、完全オフライン環境で20種の課題を用いて定量A/Bテストを実施した。 検証の結果、タスクの複雑度に応じてエージェントのスキルを逐次的に解禁する後者のアーキテクチャが、推論コストを抑えつつ成功率を大幅に上回ることが判明した。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント設計のA/B検証：サブエージェント分割 vs 単一ループ＋段階的スキル開示、実機20ケースで判明した「勝者」の設計パターン",
-        "summary": "AIエージェントの構築において「役割別サブエージェント分割」と「単一ループ統合＋段階的スキル開示」のどちらが有効か、完全オフライン環境で20種の課題を用いて定量A/Bテストを実施した。 検証の結果、タスクの複雑度に応じてエージェントのスキルを逐次的に解禁する後者のアーキテクチャが、推論コストを抑えつつ成功率を大幅に上回ることが判明した。"
-      },
-      "en": {
-        "title": "A/B Testing AI Agent Architectures: Why Single-Loop Staged Skill Disclosure Outperforms Multi-Agent Splitting in 20 Practical Scenarios",
-        "summary": "To determine the optimal architecture for AI coding agents, this study conducted rigorous A/B testing across twenty controlled, offline sandbox scenarios comparing 'role-based sub-agent splitting' against 'single-loop integration with staged skill disclosure.' The data reveals that the single-loop approach, which progressively reveals skills based on task complexity, consistently outperforms the multi-agent model by maintaining higher success rates while reducing total inference costs. The research indicates that while sub-agent architectures appear modular, they often suffer from excessive orchestration overhead and state management fragility. For builders developing production agents, this finding suggests that sticking to a sophisticated single-loop controller—one that dynamically manages context and skill availability—is a far more reliable pattern than fragmenting logic into multiple independent agents."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-29T14:50:39.393Z"
-  },
-  {
     "id": "art-1793285237742-s3xt7",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -41934,33 +41962,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-29T14:47:17.742Z"
-  },
-  {
-    "id": "art-1793285014286-ep0eo",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/autoki_app/articles/eeb37dbb7e635d",
-    "published_at": "2026-10-29T14:38:12.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--uPAUNo4M--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E3%2581%25B2%25E3%2581%25A8%25E3%2582%258A%25E3%2581%25A7%25E9%2581%258B%25E5%2596%25B6%25E3%2581%2599%25E3%2582%258BWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2580%2581%25E5%2585%25AC%25E9%2596%258B13%25E6%2597%25A5%25E7%259B%25AE%25E3%2581%25A71%25E6%2597%25A5155%25E4%25BA%25BA%25E3%2581%258C%25E6%259D%25A5%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%2586%25E3%2581%25A8%25E3%2581%258D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvYS5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIが一人で運営する日程調整アプリ「あうとき」、公開13日目で日次アクティブユーザー155人を達成した自律運用モデルを公開",
-    "summary_ja": "アカウント不要の日程調整アプリ「あうとき」は、Grok上で稼働するAI「Max」が企画・実装・集客・改善のすべてを自律的に遂行している。 公開から13日目で日次利用者数155人に到達した。 人間が関与するのは予算管理と基本ルールのみという運用体制は、小規模な個人開発においてAIエージェントが製品開発の主導権を握る新しい可能性を示唆している。",
-    "translations": {
-      "ja": {
-        "title": "AIが一人で運営する日程調整アプリ「あうとき」、公開13日目で日次アクティブユーザー155人を達成した自律運用モデルを公開",
-        "summary": "アカウント不要の日程調整アプリ「あうとき」は、Grok上で稼働するAI「Max」が企画・実装・集客・改善のすべてを自律的に遂行している。 公開から13日目で日次利用者数155人に到達した。 人間が関与するのは予算管理と基本ルールのみという運用体制は、小規模な個人開発においてAIエージェントが製品開発の主導権を握る新しい可能性を示唆している。"
-      },
-      "en": {
-        "title": "AI-operated scheduling app 'Autoki' reaches 155 daily active users just 13 days after launch under autonomous management",
-        "summary": "The scheduling application 'Autoki'—which requires no account creation—is fully managed by an AI named Max, running on Grok, which autonomously handles product roadmapping, engineering, marketing, and feature iterations. The experiment reached 155 daily active users in less than two weeks, proving that a human-led, hands-off approach can scale. With the founder only defining basic constraints like budget and ethical boundaries, Max operates as a full-stack product manager and developer. This case study illustrates a compelling shift in solo development: AI agents are no longer just coding assistants but are becoming capable enough to drive the entire lifecycle of a production-ready web application from ideation to daily operations."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-29T14:43:34.286Z"
   },
   {
     "id": "art-1793284886200-ycrcl",
