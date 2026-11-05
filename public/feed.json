@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1793910714526-3fln1",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/toshibowie/articles/9244c8f317a7a9",
+    "published_at": "2026-11-05T15:25:20.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--NmhRaauG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Jev%25E3%2581%25A7%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E3%2582%2592%25E4%25BB%2595%25E5%2588%2586%25E3%2581%2591%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581Claude%25E3%2581%25AE%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E5%2588%2587%25E3%2582%258A%25E6%259B%25BF%25E3%2581%2588%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:toshibowie%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2JkNjlhNTc5OWUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeのモデル・effortをプロンプト内容で自動選定する「Jev」活用プラグインの仕組みと実装方法を解説",
+    "summary_ja": "Claudeのモデル選定を最適化するため、プロンプトの内容に基づき最適なモデルとeffortを自動で切り替えるプラグインを自作。 テキスト分類用API「Jev」を利用し、各リクエストの内容を精査してOpusやHaikuへ動的に割り振ることで、コスト効率と品質のバランスを最大化する。 単純なモデル固定運用から脱却し、タスクの難易度に応じたAIリソース制御を可能にする開発者向けの現場実装例である。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeのモデル・effortをプロンプト内容で自動選定する「Jev」活用プラグインの仕組みと実装方法を解説",
+        "summary": "Claudeのモデル選定を最適化するため、プロンプトの内容に基づき最適なモデルとeffortを自動で切り替えるプラグインを自作。 テキスト分類用API「Jev」を利用し、各リクエストの内容を精査してOpusやHaikuへ動的に割り振ることで、コスト効率と品質のバランスを最大化する。 単純なモデル固定運用から脱却し、タスクの難易度に応じたAIリソース制御を可能にする開発者向けの現場実装例である。"
+      },
+      "en": {
+        "title": "Automating Claude model and effort selection based on prompt intent using Jev for dynamic resource optimization",
+        "summary": "To eliminate the inefficiency of running simple queries on high-tier models, this implementation introduces a custom plugin that dynamically switches Claude models and effort levels based on prompt intent. By leveraging Jev, a text-classification API, the system inspects every request in real-time and routes it to the appropriate model—such as Opus for complex architectural tasks or Haiku for basic prompts. This approach ensures consistent cost control without compromising output quality. For developers, this pattern represents a practical shift away from static model configurations, enabling granular, task-specific resource allocation that keeps LLM operational expenses predictable while maintaining performance standards for production-grade AI engineering workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-05T20:31:54.526Z"
+  },
+  {
+    "id": "art-1793910708393-mqki3",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/dreamy_wolf7393/n/n2397ffee34f2",
+    "published_at": "2026-11-05T18:13:30.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/7428c772fc9076beb2b9eec06a1508952e8dc14a.png",
+    "title_ja": "暗記アプリでAIイラストの「画風統一」をあえてやめた理由、記憶定着とUX向上のための戦略的判断",
+    "summary_ja": "AI画像生成を活用した年号暗記アプリの開発において、当初は「いかにもAI」な画風から脱却し、今風の洗練されたテイストへ統一しようとした。 しかし、全イラストを揃えると逆に個別の特徴が薄れ、記憶のフックとしての役割が弱まることに気づく。 最終的に画風をあえて統一しない手法を選択したことで、記憶に残るインパクトとアプリの本来の目的である学習効率の最大化を実現した。 見た目の美しさよりも「思い出しやすさ」を優先すべきという、教育系アプリ開発における重要な示唆といえる。",
+    "translations": {
+      "ja": {
+        "title": "暗記アプリでAIイラストの「画風統一」をあえてやめた理由、記憶定着とUX向上のための戦略的判断",
+        "summary": "AI画像生成を活用した年号暗記アプリの開発において、当初は「いかにもAI」な画風から脱却し、今風の洗練されたテイストへ統一しようとした。 しかし、全イラストを揃えると逆に個別の特徴が薄れ、記憶のフックとしての役割が弱まることに気づく。 最終的に画風をあえて統一しない手法を選択したことで、記憶に残るインパクトとアプリの本来の目的である学習効率の最大化を実現した。 見た目の美しさよりも「思い出しやすさ」を優先すべきという、教育系アプリ開発における重要な示唆といえる。"
+      },
+      "en": {
+        "title": "Why one developer deliberately rejected consistent AI art styles in a memorization app for better recall",
+        "summary": "In developing an AI-assisted history memorization app, the creator initially attempted to unify all illustrations into a consistent, modern style. However, the developer discovered that making every image visually uniform actually hindered learning, as the distinct styles were originally acting as cognitive anchors for specific dates. By consciously embracing a diverse range of artistic styles, the app effectively turned the art itself into a mnemonic device, making individual cards much easier to identify and recall. This practical shift highlights a critical UX insight for educational software: prioritizing strict aesthetic cohesion can sometimes undermine the primary goal of information retention. For builders, it proves that sometimes functional friction—or stylistic variety—is superior to polished visual uniformity when the objective is user memory and learning efficiency."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-05T20:31:48.393Z"
+  },
+  {
+    "id": "art-1793910701531-f97et",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+    "published_at": "2026-11-05T20:21:43.000Z",
+    "og_image_url": "https://www.tencent.com/wp-content/uploads/2026/11/H4_thumbnail_4x3-1.png",
+    "title_ja": "Tencentが最新オープンソースAIモデル「Hunyuan-Large」を発表、世界トップクラスの推論能力と効率性を実現",
+    "summary_ja": "Tencentは、最新のオープンソース大規模言語モデル「Hunyuan-Large」を公開した。 このモデルは、高度な推論タスクにおいて世界トップレベルの性能を達成しつつ、オープンソースコミュニティへ貢献することで、開発者が自身のアプリケーションに高性能AIを組み込みやすく設計されている。 単なる推論能力の向上だけでなく、効率的な運用を可能にするアーキテクチャが特徴であり、オープンモデルを活用した独自のAIサービス構築を検討している開発者にとって、新たな選択肢となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Tencentが最新オープンソースAIモデル「Hunyuan-Large」を発表、世界トップクラスの推論能力と効率性を実現",
+        "summary": "Tencentは、最新のオープンソース大規模言語モデル「Hunyuan-Large」を公開した。 このモデルは、高度な推論タスクにおいて世界トップレベルの性能を達成しつつ、オープンソースコミュニティへ貢献することで、開発者が自身のアプリケーションに高性能AIを組み込みやすく設計されている。 単なる推論能力の向上だけでなく、効率的な運用を可能にするアーキテクチャが特徴であり、オープンモデルを活用した独自のAIサービス構築を検討している開発者にとって、新たな選択肢となるだろう。"
+      },
+      "en": {
+        "title": "Tencent releases Hunyuan-Large: A new state-of-the-art open-source AI model built for advanced reasoning tasks",
+        "summary": "Tencent has officially released Hunyuan-Large, a high-performance open-source large language model designed to compete with the world's leading proprietary AI systems. By focusing on advanced reasoning capabilities and efficient architectural design, Tencent aims to empower developers to integrate robust AI functionality directly into their own specialized applications. The release marks a significant move to strengthen the open-source ecosystem, providing engineers with a powerful alternative for building custom AI workflows that require both high precision and scalability. For builders currently evaluating open-model options, Hunyuan-Large represents a critical addition to the landscape, offering competitive performance metrics that challenge existing industry standards and enabling more sophisticated, cost-effective deployments across various AI-driven product categories."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-05T20:31:41.531Z"
+  },
+  {
     "id": "art-1793909828232-igra8",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -31225,32 +31303,6 @@
     "created_at": "2026-11-01T07:31:52.127Z"
   },
   {
-    "id": "art-1793518302625-u5r0n",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/clear_python7656/n/n110040ccf9e3",
-    "published_at": "2026-11-01T07:25:29.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330923665/rectangle_large_type_2_74ec022cd054c7ddc2978a53d31813e1.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発のコード譜アプリ「LimeNote」がベータ版の初期ユーザーと音楽制作を支える創設コントリビューターを募集開始",
-    "summary_ja": "個人開発中のギター・ウクレレ向けコード譜管理アプリ「LimeNote」が、ローンチに先駆けて開発協力を募っている。 既存のアプリに不満を持つ層を対象とした先行ベータユーザーの募集に加え、耳コピや譜面作成に強みを持つ創設コントリビューターを募り、コンテンツの拡充を図る狙いだ。 初期段階からユーザーと共にプロダクトを磨き上げる手法は、ニッチな音楽ツールを垂直立ち上げする際の強力な開発戦略となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "個人開発のコード譜アプリ「LimeNote」がベータ版の初期ユーザーと音楽制作を支える創設コントリビューターを募集開始",
-        "summary": "個人開発中のギター・ウクレレ向けコード譜管理アプリ「LimeNote」が、ローンチに先駆けて開発協力を募っている。 既存のアプリに不満を持つ層を対象とした先行ベータユーザーの募集に加え、耳コピや譜面作成に強みを持つ創設コントリビューターを募り、コンテンツの拡充を図る狙いだ。 初期段階からユーザーと共にプロダクトを磨き上げる手法は、ニッチな音楽ツールを垂直立ち上げする際の強力な開発戦略となるだろう。"
-      },
-      "en": {
-        "title": "Solo developer seeks early beta testers and founding contributors to help build new chord management app LimeNote",
-        "summary": "A solo developer building 'LimeNote,' a new chord management application for guitar and ukulele players, has officially opened recruitment for early adopters and founding contributors ahead of its upcoming launch. The project invites power users frustrated with existing solutions to test beta versions and provide feedback, while simultaneously seeking musically talented individuals who specialize in transcription to build out the app’s initial chord library. By engaging a core community of users and domain experts early in the development lifecycle, the developer aims to validate the product-market fit and ensure the final tool truly serves the needs of musicians. This community-first development approach offers a proven blueprint for scaling niche utility software from an MVP to a polished, user-focused platform."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-01T07:31:42.625Z"
-  },
-  {
     "id": "art-1793518296356-njdfx",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -40125,31 +40177,6 @@
     "created_at": "2026-10-30T11:31:46.546Z"
   },
   {
-    "id": "art-1793359006925-v6v2a",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/aiforall/articles/e1c7b40c886f1c",
-    "published_at": "2026-10-30T02:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pgxyWbkp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E3%2583%258F%25E3%2583%25BC%25E3%2583%258D%25E3%2582%25B9%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%25E3%2580%2591AI-DLC%2520v2%25E3%2581%25A7%25E5%2589%25B2%25E3%2582%258A%25E5%258B%2598%25E8%25A8%2588%25E7%25AE%2597%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2593%25E3%2581%25BE%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA3ODlkYTQ2NWIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%25A1%25E3%2583%25B3%25E3%2583%2590%25E3%2583%25BC%25E3%2582%25BA%2520AI%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%25AB%25E3%2583%25B3%25E3%2583%2591%25E3%2583%258B%25E3%2583%25BC%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzBkYTFiMTBmOTYuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェント開発支援ツール「AI-DLC v2」で割り勘アプリを実装—承認フローとファイル確認で開発を完遂する実例を解説",
-    "summary_ja": "AIエージェント開発を支える「AI-DLC v2」を使い、シンプルな割り勘計算Webアプリを構築する過程を検証。 AIからの質問と人間による承認を繰り返す開発フローはスムーズだが、要約表示のみでは判断しきれない詳細が残るため、生成されたレビューファイルを直接確認する重要性が浮き彫りになった。 AI駆動開発において、エージェントの出力をどう検証・修正していくかという実践的なワークフローを提示する。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント開発支援ツール「AI-DLC v2」で割り勘アプリを実装—承認フローとファイル確認で開発を完遂する実例を解説",
-        "summary": "AIエージェント開発を支える「AI-DLC v2」を使い、シンプルな割り勘計算Webアプリを構築する過程を検証。 AIからの質問と人間による承認を繰り返す開発フローはスムーズだが、要約表示のみでは判断しきれない詳細が残るため、生成されたレビューファイルを直接確認する重要性が浮き彫りになった。 AI駆動開発において、エージェントの出力をどう検証・修正していくかという実践的なワークフローを提示する。"
-      },
-      "en": {
-        "title": "Building a split-bill app with AI-DLC v2: How agent-driven development workflows combine automated steps with manual code review",
-        "summary": "This case study examines the AI-DLC v2 agent harness to build a functional split-bill web application. The development flow, characterized by an interactive loop where the agent proposes steps for human approval, remained stable throughout the project, successfully completing the app. However, the experience highlights a crucial caveat: relying solely on the AI's summary for approvals is insufficient, as it often obscures unresolved nuances. Developers must proactively read the underlying review files to catch missed details. For engineers adopting AI-driven development, this demonstrates that while agent harnesses significantly accelerate coding, human oversight of specific output files remains an essential safeguard to ensure logic holds up during the iteration process."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-10-30T11:16:46.925Z"
-  },
-  {
     "id": "art-1793358090200-qs7kf",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -40175,32 +40202,6 @@
       "研究"
     ],
     "created_at": "2026-10-30T11:01:30.200Z"
-  },
-  {
-    "id": "art-1793357202459-w3nmo",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/peijz_dev/articles/d9243ae144d388",
-    "published_at": "2026-10-30T08:19:18.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fTEctxY2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25AE%25E5%258B%2589%25E5%25BC%25B7%25E3%2581%258C%25E3%2581%25A6%25E3%2582%2589%2520Markdown%2520%25E3%2582%25A8%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2581%2584%25E3%2581%25A1%25E3%2581%25B0%25E3%2582%2593%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AF%2520Excel%2520%25E6%25A4%259C%25E7%25B4%25A2%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:peijz_dev%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjdzRmFJRHk4eXBpdmV1Tk9lUVd6Z2YtZEZoMzNHdWRuaEVnVEo2Sm9jV1Y0OWV3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI学習目的でMarkdownエディター「J.H Editor」を自作、開発後に気づいた意外な活用法「Excelデータの検索機能」の実態",
-    "summary_ja": "AIの活用が広がりMarkdown文書が増える未来を見据え、学習プロジェクトとしてWindows向けMarkdownエディター「J.H Editor」を開発した。 実際に日常利用する中で、本来の編集機能以上に「Excelファイルの高速検索」が最も頻繁に使用されるツールになったという。 開発プロジェクトを通じて得た教訓は、当初の構想に固執せず、実際のユースケースに合わせて機能を洗練させる柔軟な姿勢こそが個人開発の価値を最大化するという点にある。",
-    "translations": {
-      "ja": {
-        "title": "AI学習目的でMarkdownエディター「J.H Editor」を自作、開発後に気づいた意外な活用法「Excelデータの検索機能」の実態",
-        "summary": "AIの活用が広がりMarkdown文書が増える未来を見据え、学習プロジェクトとしてWindows向けMarkdownエディター「J.H Editor」を開発した。 実際に日常利用する中で、本来の編集機能以上に「Excelファイルの高速検索」が最も頻繁に使用されるツールになったという。 開発プロジェクトを通じて得た教訓は、当初の構想に固執せず、実際のユースケースに合わせて機能を洗練させる柔軟な姿勢こそが個人開発の価値を最大化するという点にある。"
-      },
-      "en": {
-        "title": "Building a custom Markdown editor as an AI learning project revealed an unexpected killer feature: Excel search",
-        "summary": "A developer created the 'J.H Editor' for Windows as a practical learning project to better manage the explosion of AI-generated Markdown documents. However, after integrating the tool into their daily workflow, they discovered that the most valuable feature was not Markdown editing itself, but rather a robust search function for Excel files. This project highlights a crucial lesson for indie builders: the features you anticipate building at the project start often diverge from what users—including yourself—actually need in daily practice. Successfully shipping a utility tool requires the flexibility to embrace and refine these emergent use cases, even if they deviate from the original architectural intent, ultimately driving real-world utility over purely theoretical design."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-30T10:46:42.459Z"
   },
   {
     "id": "art-1793357196016-1rp8z",
