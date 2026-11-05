@@ -1,5 +1,120 @@
 [
   {
+    "id": "art-1793899152774-s63l6",
+    "source_id": "source-claude-platform",
+    "source_name": "Claude Platform Release Notes",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#admin-api-sign-out",
+    "published_at": "2026-11-05T00:00:00.000Z",
+    "og_image_url": "https://platform.claude.com/web-api/og/docs/en/release-notes/overview?design-rev=4",
+    "title_ja": "Claude Enterprise向けAdmin APIが拡充、ユーザーの全セッションを遠隔強制ログアウト可能に（β版）",
+    "summary_ja": "AnthropicはClaude EnterpriseのAdmin APIをアップデートし、特定のメンバーを全デバイスから即時にサインアウトさせる機能をβ公開した。 専用のエンドポイント「POST /v1/organizations/users/{user_id}/sign_out」を叩くことで、ブラウザ上のセッションや信頼済みデバイス、組織のOAuthトークンを一括無効化できる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Enterprise向けAdmin APIが拡充、ユーザーの全セッションを遠隔強制ログアウト可能に（β版）",
+        "summary": "AnthropicはClaude EnterpriseのAdmin APIをアップデートし、特定のメンバーを全デバイスから即時にサインアウトさせる機能をβ公開した。 専用のエンドポイント「POST /v1/organizations/users/{user_id}/sign_out」を叩くことで、ブラウザ上のセッションや信頼済みデバイス、組織のOAuthトークンを一括無効化できる。"
+      },
+      "en": {
+        "title": "Anthropic adds Admin API support for remotely signing out individual Claude Enterprise users across all devices",
+        "summary": "Anthropic has released a new beta feature for the Claude Enterprise Admin API, enabling administrators to remotely terminate all active sessions for a specific member. By hitting the new POST endpoint, admins can invalidate all browser sessions, trusted devices, and OAuth tokens associated with that user across an entire organization. Because the member remains part of the organization and can re-authenticate, this serves as an effective security measure for immediate access revocation without needing to delete the account entirely. For platform builders and IT managers, this update provides a programmatic way to automate offboarding and handle compromised device workflows, ensuring sensitive corporate data remains protected without manual user intervention or administrative overhead for standard security incidents."
+      }
+    },
+    "tool_tags": [
+      "Claude"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-05T17:19:12.774Z"
+  },
+  {
+    "id": "art-1793899146043-afn3m",
+    "source_id": "source-cloudflare-ai",
+    "source_name": "Cloudflare Workers AI / Blog",
+    "url": "https://blog.cloudflare.com/trusted-agent-delegation/",
+    "published_at": "2026-11-05T17:03:04.000Z",
+    "og_image_url": "https://blog.cloudflare.com/_emdash/api/media/file/01M6PA3MX9W46AFM0RQWHEB5XY.01M6PA3P39WJR11WZXCGGXKK3Y.png",
+    "title_ja": "AIエージェントの急増でサーバーが見失う「ユーザー識別」の課題—Cloudflareが提案する信頼あるトラフィック管理の仕組み",
+    "summary_ja": "AIエージェントは数百万人のユーザーを代行して操作を行うが、サーバー側からは中間業者として認識され、元のユーザー情報が隠蔽される問題がある。 Cloudflareは、この自動化されたトラフィックを適切に特定し、許可・管理するための新たな協調的アプローチを公開した。 開発者は、API利用時にエンドユーザーのコンテキストを維持する仕組みを導入しなければ、単なるボットとして遮断されるリスクがある。 トラフィック管理の最適化において、可視性の確保が今後の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの急増でサーバーが見失う「ユーザー識別」の課題—Cloudflareが提案する信頼あるトラフィック管理の仕組み",
+        "summary": "AIエージェントは数百万人のユーザーを代行して操作を行うが、サーバー側からは中間業者として認識され、元のユーザー情報が隠蔽される問題がある。 Cloudflareは、この自動化されたトラフィックを適切に特定し、許可・管理するための新たな協調的アプローチを公開した。 開発者は、API利用時にエンドユーザーのコンテキストを維持する仕組みを導入しなければ、単なるボットとして遮断されるリスクがある。 トラフィック管理の最適化において、可視性の確保が今後の鍵となる。"
+      },
+      "en": {
+        "title": "AI Agents Are Masking User Identity at Scale: How Cloudflare Aims to Solve the Visibility Problem for API Providers",
+        "summary": "AI agents now execute tasks for millions, but they act as intermediaries that effectively strip away user visibility, leaving servers unable to distinguish legitimate agent traffic from malicious bots. Cloudflare has defined this challenge and introduced a collaborative framework to properly identify, authorize, and manage this automated traffic. The core issue is that when agents proxy requests, API providers lose the ability to apply user-specific rate limits or personalization. For builders developing agents or exposing APIs, the takeaway is clear: you must implement standardized identity propagation now. Without explicit mechanisms to pass user context, your agent-driven architecture risks being treated as a generic, spammy bot and indiscriminately blocked by security providers."
+      }
+    },
+    "tool_tags": [
+      "Cloudflare"
+    ],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-05T17:19:06.043Z"
+  },
+  {
+    "id": "art-1793899131108-nkpar",
+    "source_id": "source-openai-changelog",
+    "source_name": "OpenAI API Changelog",
+    "url": "https://developers.openai.com/api/docs/changelog#nov-5-2026-use-gpt-6-cyber-to-investigate-vulnerabilities",
+    "published_at": "2026-11-05T00:00:00.000Z",
+    "og_image_url": "https://developers.openai.com/og/api/docs/changelog.png",
+    "title_ja": "OpenAI、脆弱性調査と再現を自動化するサイバーセキュリティ特化モデル「GPT-6-Cyber」をリリース、APIで利用可能に",
+    "summary_ja": "OpenAIは、サイバーセキュリティの脆弱性調査や再現試験に特化した新モデル「GPT-6-Cyber」を公開した。 このモデルは、認可されたテスト環境内での脆弱性評価や再現プロセスを自動化するために設計されており、セキュリティ研究者や開発者が効率的に防御策を講じるための高度な洞察を提供する。 単なるコード生成を超え、攻撃手法のシミュレーション能力を持つAIを開発パイプラインに統合することで、脆弱性スキャンから修正提案までのサイクルが大幅に短縮されるだろう。",
+    "translations": {
+      "ja": {
+        "title": "OpenAI、脆弱性調査と再現を自動化するサイバーセキュリティ特化モデル「GPT-6-Cyber」をリリース、APIで利用可能に",
+        "summary": "OpenAIは、サイバーセキュリティの脆弱性調査や再現試験に特化した新モデル「GPT-6-Cyber」を公開した。 このモデルは、認可されたテスト環境内での脆弱性評価や再現プロセスを自動化するために設計されており、セキュリティ研究者や開発者が効率的に防御策を講じるための高度な洞察を提供する。 単なるコード生成を超え、攻撃手法のシミュレーション能力を持つAIを開発パイプラインに統合することで、脆弱性スキャンから修正提案までのサイクルが大幅に短縮されるだろう。"
+      },
+      "en": {
+        "title": "OpenAI releases GPT-6-Cyber to automate vulnerability investigation and authorized reproduction within security-focused API workflows",
+        "summary": "OpenAI has officially launched GPT-6-Cyber, a specialized model engineered specifically to investigate software vulnerabilities and reproduce them within secure, authorized test environments. By moving beyond general-purpose coding assistance to provide deep, security-centric analysis, the model helps researchers and developers accelerate the identification of flaws and the deployment of patches. Integrating this AI into standard development pipelines fundamentally changes the security audit lifecycle, allowing teams to move from initial vulnerability scanning to actionable remediation faster than ever. For builders tasked with hardening production systems, this tool represents a shift toward proactive, AI-driven defense, enabling more rapid response times to emerging threats before they can be exploited in live, sensitive environments."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-05T17:18:51.108Z"
+  },
+  {
+    "id": "art-1793899074901-aiezv",
+    "source_id": "source-google-ai-blog",
+    "source_name": "Google AI Blog",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "published_at": "2026-11-05T17:00:00.000Z",
+    "og_image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png",
+    "title_ja": "Google、動画生成AI「Gemini Omni 1.2 Flash」発表：15秒間の動画生成・編集に対応し、API料金を30%引き下げ",
+    "summary_ja": "Googleは、動画生成AI「Gemini Omni 1.2 Flash」を公開した。 最大15秒の動画生成や高度な編集が可能になり、モデルの整合性が大幅に向上している。 さらにAPI利用料金を従来比で30%値下げしており、開発者はコストを抑えつつ、より長い動画コンテンツをアプリに組み込めるようになる。 高品質な動画を低コストで生成したい開発者にとって、今回のアップデートは商用AIツールの構築における強力な選択肢となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Google、動画生成AI「Gemini Omni 1.2 Flash」発表：15秒間の動画生成・編集に対応し、API料金を30%引き下げ",
+        "summary": "Googleは、動画生成AI「Gemini Omni 1.2 Flash」を公開した。 最大15秒の動画生成や高度な編集が可能になり、モデルの整合性が大幅に向上している。 さらにAPI利用料金を従来比で30%値下げしており、開発者はコストを抑えつつ、より長い動画コンテンツをアプリに組み込めるようになる。 高品質な動画を低コストで生成したい開発者にとって、今回のアップデートは商用AIツールの構築における強力な選択肢となるだろう。"
+      },
+      "en": {
+        "title": "Google Launches Gemini Omni 1.2 Flash: 15-Second Native Video Generation and 30% Lower API Costs",
+        "summary": "Google has officially released Gemini Omni 1.2 Flash, introducing native capabilities for generating and editing video clips up to 15 seconds long. This update delivers significantly stronger visual consistency in generated outputs while concurrently slashing API pricing by 30% compared to previous iterations. For developers, this creates a clear pathway to integrate longer, more coherent video assets directly into applications without the prohibitive costs associated with earlier enterprise models. By prioritizing both performance and affordability, Google is making it increasingly viable for builders to embed high-fidelity generative video features into consumer-facing platforms. This release represents a critical milestone for anyone looking to scale AI-driven media products, proving that quality and cost-efficiency can finally coexist in the current generative video landscape."
+      }
+    },
+    "tool_tags": [
+      "Gemini"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "動画",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-05T17:17:54.901Z"
+  },
+  {
     "id": "art-1793898122220-9e7pq",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -31275,32 +31390,6 @@
     "created_at": "2026-11-01T02:32:35.171Z"
   },
   {
-    "id": "art-1793500348701-wioz9",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/raplsworks/n/n925e3842170d",
-    "published_at": "2026-11-01T02:31:18.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330497675/rectangle_large_type_2_bb99277e864c17580bccffd53dc9c393.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "WordPressプラグイン個人開発：競合ゼロのニッチ市場を狙うなら「7年放置の枯れたプラグイン」の後継開発が最強である理由",
-    "summary_ja": "新規プラグイン開発において、競合を避けて勝機を見出す最適解は、7年間アップデートが停止し放置された既存プラグインの後継を開発することだ。 WordPress.orgで無料版を配布し、需要が高い機能をPro版で課金するモデルを採用することで、ユーザーベースを引き継ぎつつ安定した収益化が可能になる。 市場調査のコストをかけず、既にニーズが証明されているツールを現代的なコードベースで再構築する手法は、個人開発者にとって極めて効率的な戦略と言える。",
-    "translations": {
-      "ja": {
-        "title": "WordPressプラグイン個人開発：競合ゼロのニッチ市場を狙うなら「7年放置の枯れたプラグイン」の後継開発が最強である理由",
-        "summary": "新規プラグイン開発において、競合を避けて勝機を見出す最適解は、7年間アップデートが停止し放置された既存プラグインの後継を開発することだ。 WordPress.orgで無料版を配布し、需要が高い機能をPro版で課金するモデルを採用することで、ユーザーベースを引き継ぎつつ安定した収益化が可能になる。 市場調査のコストをかけず、既にニーズが証明されているツールを現代的なコードベースで再構築する手法は、個人開発者にとって極めて効率的な戦略と言える。"
-      },
-      "en": {
-        "title": "Why building successors to abandoned WordPress plugins is the ultimate niche strategy for solo developers",
-        "summary": "For solo developers, the most effective strategy to bypass market competition is identifying popular WordPress plugins that were abandoned seven years ago and building a modern successor. By releasing a free core version on WordPress.org and gating premium features behind a Pro upsell, you inherit an existing user base while immediately validating market demand without extensive upfront research. This approach allows developers to capitalize on proven needs while simply upgrading legacy architecture to current standards. Ultimately, breathing new life into forgotten tools is a low-risk, high-conversion path to building profitable software, proving that you do not need to invent entirely new concepts to succeed in the plugin ecosystem."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-01T02:32:28.701Z"
-  },
-  {
     "id": "art-1793500316953-daz40",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -35235,33 +35324,6 @@
     "created_at": "2026-10-31T10:16:43.377Z"
   },
   {
-    "id": "art-1793441791784-sxncy",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/chrisgraham70/items/a13b7b775f8af678374b",
-    "published_at": "2026-10-31T09:26:46.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY5NDdiMzZiZDVkM2VjMGIxYzAwZjNkNzdmYjBkZjk5Zj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YmU1OGQwMjY2MzZkZTg3ZWZjMDQ2ODA2MDYwNzg4MDk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6b7dc03f66ed3884a9a9f85c13b21166?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9SG93JTIwdG8lMjBnZW5lcmF0ZSUyMHNoaXJ0JTIwZGVzaWduJTIwaWRlYXMlMjB3aXRoJTIwQUklMjAlMjhhbmQlMjBzdG9wJTIwZ2V0dGluZyUyMGdlbmVyaWMlMjBibG9icyUyOSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTk2YWI1OTcxZWU1NTQyZmVkZGRjMGQ2NDE0MjYxMjc1&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBjaHJpc2dyYWhhbTcwJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9OGVmMjY2MjI1NTZmZTQwZWM0MWUzZTRhYmE5YmUzOWU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c1f38e9a0565cf0ad27a2a12baf7ffe0",
-    "title_ja": "AI画像生成で「平凡なTシャツデザイン」から脱却するプロンプト術：抽象度を下げて具体的なスタイル・素材指定で個性を出すコツ",
-    "summary_ja": "AI画像生成で「クールなTシャツデザイン」と入力しても凡庸な結果しか出ないのは、モデルの問題ではなくプロンプトの具体性の欠如にある。 成功の鍵は、デザインの配置、タイポグラフィのスタイル、テクスチャ、および印刷技法を詳細に指定し、モデルに「何を描くべきか」というコンテキストを強制的に与えることだ。 抽象的な形容詞を捨て、特定のレトロスタイルやインクの種類を指定することで、AI特有の曖昧さを排した販売可能な高品質デザインを生成できる。",
-    "translations": {
-      "ja": {
-        "title": "AI画像生成で「平凡なTシャツデザイン」から脱却するプロンプト術：抽象度を下げて具体的なスタイル・素材指定で個性を出すコツ",
-        "summary": "AI画像生成で「クールなTシャツデザイン」と入力しても凡庸な結果しか出ないのは、モデルの問題ではなくプロンプトの具体性の欠如にある。 成功の鍵は、デザインの配置、タイポグラフィのスタイル、テクスチャ、および印刷技法を詳細に指定し、モデルに「何を描くべきか」というコンテキストを強制的に与えることだ。 抽象的な形容詞を捨て、特定のレトロスタイルやインクの種類を指定することで、AI特有の曖昧さを排した販売可能な高品質デザインを生成できる。"
-      },
-      "en": {
-        "title": "Stop Generating Generic AI T-Shirt Blobs: How to Use Precise Prompting for Commercial-Ready Apparel Design Concepts",
-        "summary": "Typing \"cool t-shirt design\" into an AI model typically yields the same bland, gradient-filled blobs that flood every marketplace, but the fault lies in vague prompting rather than model limitations. To fix this, builders must move beyond abstract adjectives and explicitly dictate layout parameters, typography styles, specific ink types, and printing techniques to force the model into higher fidelity. By anchoring your prompts in concrete visual languages like specific retro aesthetics or distinct screen-printing textures, you strip away the AI's tendency to generalize and instead produce unique, commercial-ready artwork. The takeaway is that precision in your technical constraints acts as the primary differentiator between amateur digital noise and a professional-grade apparel concept that actually sells."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "画像生成",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-31T10:16:31.784Z"
-  },
-  {
     "id": "art-1793441782739-ljd4w",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -35312,32 +35374,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-31T09:16:43.585Z"
-  },
-  {
-    "id": "art-1793438190271-yi3jo",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.ycombinator.com/item?id=50314339",
-    "published_at": "2026-10-31T09:08:51.000Z",
-    "og_image_url": null,
-    "title_ja": "HNで議論：AI革命の現在地を「盲目的な楽観論」なしで解き明かす、読むべき良書は何冊あるのか？",
-    "summary_ja": "Hacker Newsで、現在進行中のAI革命について、過度な希望的観測を排除し、批判的な視点で技術のプラス面とマイナス面を論じた書籍を求める議論が盛り上がっている。 AI導入の功罪を正しく見極めるためには、単なる技術トレンドの解説書ではなく、社会構造や倫理的課題まで踏み込んだ考察が必要だ。 エンジニアや開発者は、AIを単なるツールとしてだけでなく、社会実装に伴うリスクや経済的な影響を冷静に分析するためのリテラシーを、これらの書籍から学び取るべきだろう。",
-    "translations": {
-      "ja": {
-        "title": "HNで議論：AI革命の現在地を「盲目的な楽観論」なしで解き明かす、読むべき良書は何冊あるのか？",
-        "summary": "Hacker Newsで、現在進行中のAI革命について、過度な希望的観測を排除し、批判的な視点で技術のプラス面とマイナス面を論じた書籍を求める議論が盛り上がっている。 AI導入の功罪を正しく見極めるためには、単なる技術トレンドの解説書ではなく、社会構造や倫理的課題まで踏み込んだ考察が必要だ。 エンジニアや開発者は、AIを単なるツールとしてだけでなく、社会実装に伴うリスクや経済的な影響を冷静に分析するためのリテラシーを、これらの書籍から学び取るべきだろう。"
-      },
-      "en": {
-        "title": "Hacker News community debates: What are the best books analyzing the AI revolution without blind optimism?",
-        "summary": "The Hacker News community is currently crowdsourcing a reading list focused on the AI revolution, specifically seeking titles that offer rational, critical analysis rather than standard tech-industry hype or blind optimism. Participants are prioritizing books that weigh both the tangible benefits and potential downsides of generative models, moving beyond simple capability showcases. For developers and builders caught in the current AI gold rush, this debate highlights a critical need to look past the marketing noise and understand the broader societal, ethical, and economic risks associated with widespread deployment. The consensus suggests that understanding the AI revolution requires deep-dive literature that interrogates the structural implications of these tools, not just their technical specifications or future promises."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-31T09:16:30.271Z"
   },
   {
     "id": "art-1793437337621-4kv2c",
@@ -40416,32 +40452,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-30T08:01:32.211Z"
-  },
-  {
-    "id": "art-1793346409513-obcw8",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/yamitake/articles/messy-code-test-driven",
-    "published_at": "2026-10-30T03:22:55.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KrHlvvDR--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%2582%25E3%2581%2586%25E3%2582%25AF%25E3%2582%25BD%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25A7%25E3%2582%2582%25E3%2581%2584%25E3%2581%2584%25E3%2582%2584%2520%25E3%2580%259C%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2583%2589%25E3%2583%25AA%25E3%2583%2596%25E3%2583%25B3%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E5%2589%25B2%25E3%2582%258A%25E5%2588%2587%25E3%2582%258A%25E3%2580%259C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JJ%2520yamitake%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE2MTEyMjRhNGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「クソコードでもテストが通ればOK」という割り切り、テストコードドリブン開発の是非を再考する：個人開発で重要なスピードと品質のバランス",
-    "summary_ja": "長年「綺麗なコード」を至高としてきたエンジニアが、複雑な設計よりも「動くコード」と「テストの通過」を最優先する開発スタイルへと移行している。 メンテナンス性や可読性に固執するあまり、開発スピードを落とす「きれいなコード症候群」に警鐘を鳴らし、テストが担保されている限りコード自体は粗削りでもよいという現実的な割り切りを提案する。 個人開発においては、設計の美しさよりもデリバリーの速度が競争力の源泉となるため、テストコードを安全網とした開発アプローチこそが最適解になり得る。",
-    "translations": {
-      "ja": {
-        "title": "「クソコードでもテストが通ればOK」という割り切り、テストコードドリブン開発の是非を再考する：個人開発で重要なスピードと品質のバランス",
-        "summary": "長年「綺麗なコード」を至高としてきたエンジニアが、複雑な設計よりも「動くコード」と「テストの通過」を最優先する開発スタイルへと移行している。 メンテナンス性や可読性に固執するあまり、開発スピードを落とす「きれいなコード症候群」に警鐘を鳴らし、テストが担保されている限りコード自体は粗削りでもよいという現実的な割り切りを提案する。 個人開発においては、設計の美しさよりもデリバリーの速度が競争力の源泉となるため、テストコードを安全網とした開発アプローチこそが最適解になり得る。"
-      },
-      "en": {
-        "title": "Why embracing 'messy code' backed by strong tests can accelerate individual development velocity and product shipping cycles",
-        "summary": "A seasoned engineer challenges the industry's obsession with pristine code, arguing that chasing architectural purity often creates unnecessary drag in individual projects. Instead, the author advocates for a 'test-driven, ship-fast' mindset, where messy implementation details are acceptable as long as a robust test suite ensures system reliability and prevents regressions. The piece highlights that prioritizing cleaner abstractions over rapid shipping often leads to developer burnout and wasted time on features that may not find market fit. For solo developers, the practical lesson is to treat comprehensive testing as the safety net that unlocks the freedom to write imperfect code, allowing you to maximize velocity while maintaining enough confidence to pivot quickly without technical debt paralyzing your progress."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-30T07:46:49.513Z"
   },
   {
     "id": "art-1793346388163-t0hge",
