@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1793881905594-pmrrd",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/ohgy/articles/df80eed5417d5e",
+    "published_at": "2026-11-05T06:41:27.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--aURm4UQl--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:openWakeWord%25E3%2581%25A7%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E3%2581%25AE%25E3%2582%25A6%25E3%2582%25A7%25E3%2582%25A4%25E3%2582%25AF%25E3%2583%25AF%25E3%2583%25BC%25E3%2583%2589%25E3%2581%258C%25E4%25BD%259C%25E3%2582%258C%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:OH-GY%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2IyNzRjYzgzZGIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "オープンソース「openWakeWord」で日本語ウェイクワード学習に挑戦し挫折した話──なぜ精度が上がらないのか、技術的課題を深掘りする",
+    "summary_ja": "「自分だけのAIエージェント構築」プロジェクトの一環として、呼びかけで起動するウェイクワード機能を「openWakeWord」で実装しようとした実体験を共有する。 公式のColabノートブックを用いれば1時間で学習可能とされるが、実際に日本語で試したところ、意図した音声モデルの生成には至らなかった。",
+    "translations": {
+      "ja": {
+        "title": "オープンソース「openWakeWord」で日本語ウェイクワード学習に挑戦し挫折した話──なぜ精度が上がらないのか、技術的課題を深掘りする",
+        "summary": "「自分だけのAIエージェント構築」プロジェクトの一環として、呼びかけで起動するウェイクワード機能を「openWakeWord」で実装しようとした実体験を共有する。 公式のColabノートブックを用いれば1時間で学習可能とされるが、実際に日本語で試したところ、意図した音声モデルの生成には至らなかった。"
+      },
+      "en": {
+        "title": "Why I Failed to Train a Custom Japanese Wake Word Using OpenWakeWord: Technical Hurdles in Non-English Voice Activation",
+        "summary": "As part of an ongoing project to build a custom personal AI assistant capable of reactive voice commands, I attempted to use the popular open-source tool 'openWakeWord' to train a Japanese-language wake word trigger. While the library documentation promises functional models trainable within an hour via Google Colab, the actual implementation for Japanese phonetics proved unexpectedly difficult, consistently failing to produce a reliable trigger model. This article explores the architectural dependencies and data bias within openWakeWord that create significant friction for non-English users. It serves as a post-mortem on why current open-source voice activation toolkits may struggle with specific language patterns and provides insights into alternative approaches for builders attempting to implement local, voice-triggered AI services."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-05T12:31:45.594Z"
+  },
+  {
+    "id": "art-1793881898690-az13h",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/shipitamit/ergon",
+    "published_at": "2026-11-05T12:20:00.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェント開発ツール「Ergon」登場：コード記述とキャンバス操作の両面からPythonベースのエージェント構築を実現",
+    "summary_ja": "「Ergon」は、AIエージェントの構築フローをコードまたは直感的なビジュアルキャンバス上で設計できるオープンソースフレームワークである。 キャンバス上での操作はすべてPythonコードとして出力されるため、GUI開発の柔軟性とコードベースの保守性を両立できる点が特徴だ。 複雑なエージェントワークフローを視覚化しつつ、最終的には標準的なPython環境で制御したいエンジニアにとって、開発スピードと品質を向上させる有力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント開発ツール「Ergon」登場：コード記述とキャンバス操作の両面からPythonベースのエージェント構築を実現",
+        "summary": "「Ergon」は、AIエージェントの構築フローをコードまたは直感的なビジュアルキャンバス上で設計できるオープンソースフレームワークである。 キャンバス上での操作はすべてPythonコードとして出力されるため、GUI開発の柔軟性とコードベースの保守性を両立できる点が特徴だ。 複雑なエージェントワークフローを視覚化しつつ、最終的には標準的なPython環境で制御したいエンジニアにとって、開発スピードと品質を向上させる有力な選択肢となる。"
+      },
+      "en": {
+        "title": "Ergon launches as a dual-interface AI agent builder that generates Python via code or visual canvas",
+        "summary": "Ergon has arrived as a new open-source framework designed to help developers build AI agents by toggling between traditional code and an intuitive visual canvas. The platform uniquely treats the canvas as a first-class editor; every drag-and-drop interaction is compiled into clean, maintainable Python code, effectively merging the speed of visual flow building with the robust control of a text-based environment. By maintaining this bidirectional sync, developers can visualize complex agent logic without being locked into a proprietary low-code ecosystem. This tool represents a pragmatic approach for builders who need to prototype workflows quickly but ultimately require the portability and deep customization that only raw, generated Python code can provide in production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-05T12:31:38.690Z"
+  },
+  {
+    "id": "art-1793881892276-a97mr",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/YukiSaku_2FC/items/c1f52a4c2917a7d675bb",
+    "published_at": "2026-11-05T12:26:56.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDkxNTM5JTJGODNiNzNjOGE2MjM2MmNhNmFmZTFkZWQ4ZjlhYTU2Nzg3ZDdhMjRhZiUyRnhfbGFyZ2UucG5nJTNGMTc4NzY0NDY3Mz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NDVlMzhkYzgzYTc4NDdhMGM1M2M2YTI0MWU1N2E5Y2E%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd0d248b6abe95af5a2504093d3eda535?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q29waWxvdCUyMFN0dWRpbyVFMyU4MSVBRSVFMyU4MiVCOSVFMyU4MiVBRCVFMyU4MyVBQiVFMyU4MSVBNyVFMyU4MCU4MSVFOCVBNiU4QiVFNyVBOSU4RCVFMyU4MiU4MiVFMyU4MiU4QSVFNyU5NCVCMyVFOCVBQiU4QiVFMyU4MSVBRSVFNiU5NiU4NyVFOSU5RCVBMiVFMyU4MiU5MiVFNCVCRCU5QyVFMyU4MSVBMyVFMyU4MSVBNiVFOCVBOCU5OCVFOSU4QyVCMiVFMyU4MSU5OSVFMyU4MiU4QiVFMyU4MiVBOCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MiU5MiVFNCVCRCU5QyVFMyU4MSVBMyVFMyU4MSVBNiVFMyU4MSVCRiVFMyU4MSU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWU0M2M3ODFlOGRiNzZmMmUzZTQ2ZDhlMzk2N2E2MDA1&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBZdWtpU2FrdV8yRkMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz01Nzg0ZWFhNTM1ZGU4MDI2ZDUzMDAyZjlhYTkzYTQ5MQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3b8edb89821857057bca01445a13eda2",
+    "title_ja": "Microsoft Copilot Studioで業務効率化！Teams上で見積もり申請文の自動作成と記録を完結させるAIエージェント構築の実践手法",
+    "summary_ja": "デザイナーの視点からCopilot Studioを活用し、Teams環境で見積もり申請文の作成から記録までを自動化するAIエージェントの構築フローを解説。 ビジネスチャット上で完結するワークフローを組むことで、煩雑な事務作業を効率化し、エンジニア以外でもローコードで業務特化型AIを自作できる可能性を示した。 非エンジニアが実務でAIを活用するための具体的な構築のヒントを提案する。",
+    "translations": {
+      "ja": {
+        "title": "Microsoft Copilot Studioで業務効率化！Teams上で見積もり申請文の自動作成と記録を完結させるAIエージェント構築の実践手法",
+        "summary": "デザイナーの視点からCopilot Studioを活用し、Teams環境で見積もり申請文の作成から記録までを自動化するAIエージェントの構築フローを解説。 ビジネスチャット上で完結するワークフローを組むことで、煩雑な事務作業を効率化し、エンジニア以外でもローコードで業務特化型AIを自作できる可能性を示した。 非エンジニアが実務でAIを活用するための具体的な構築のヒントを提案する。"
+      },
+      "en": {
+        "title": "Building a custom AI agent with Microsoft Copilot Studio to automate Teams-based estimate request drafting and logging",
+        "summary": "This guide demonstrates how a designer can leverage Microsoft Copilot Studio to build an AI agent that automates drafting and logging estimate requests directly within Microsoft Teams. By orchestrating a workflow that stays entirely inside the messaging interface, the author eliminates the friction of manual administrative tasks, proving that non-engineers can deploy specialized AI solutions using low-code tools. The article walks through the practical implementation steps of connecting Teams with generative AI for structured document creation. It highlights the potential for builders outside of engineering roles to solve real-world productivity challenges, offering actionable advice on how to bridge the gap between creative professional requirements and enterprise automation platforms without writing complex backend code."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-05T12:31:32.276Z"
+  },
+  {
     "id": "art-1793881084587-04zdx",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -36380,32 +36458,6 @@
     "created_at": "2026-10-31T00:31:59.038Z"
   },
   {
-    "id": "art-1793406711604-fjrev",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/DnD-inc/items/d9b6316a31361e79da19",
-    "published_at": "2026-10-31T00:26:57.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDYxMDA5JTJGNTdlYzdiNDVjOTdmY2RhNDc2MDFjNTA5YTczYmQxYzE2MDQ0YjQ0OCUyRnhfbGFyZ2UucG5nJTNGMTc4NjEwNDM3Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YjFhMTU0Y2FiZWJhY2RiYWI5ODY4ZTBhOGM3NzIyYWM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dfa736dfdb8fb73b3aa012875ab077cae?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUJBJTkwJUU2JUIzJTg5JUU1JUJFJUI0JUU1JThGJThFJUU3JUE1JUE4JUUzJTgxJUFFJUU5JTlCJUJCJUU1JUFEJTkwJUU2JThGJTkwJUU1JTg3JUJBJUU3JUJFJUE5JUU1JThCJTk5JUUzJTgxJThDMjAyNyVFNSVCOSVCNDElRTYlOUMlODglRTMlODElOEIlRTMlODIlODkzMCVFNiU5RSU5QSVFNCVCQiVBNSVFNCVCOCU4QSVFMyU4MSVBQiVFNiU4QiVBMSVFNSVBNCVBNyVFRiVCRCU5QyVFNCVCQiU4QSVFNSVCOSVCNCVFMyU4MSVBRSVFNSVCOSVCNCVFNiU5QyVBQiVFOCVBQSVCRiVFNiU5NSVCNCVFMyU4MSU4QiVFMyU4MiU4OSVFMyU4MiVCNyVFMyU4MiVCOSVFMyU4MyU4NiVFMyU4MyVBMCVFMyU4MiU5MiVFNiU5NSVCNCVFMyU4MSU4OCVFMyU4MiU4QjMlRTMlODElQTQlRTMlODElQUUlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1iYzQ3OWU4YzcwZmM3NzExMzIzMjI5MDdkYjNjZWQ2Yw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBEbkQtaW5jJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NzRmYzk0NjNhNjc1YWQ5ZDExOGM5ZGQwMTE3YmM5YWY&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4d1a5c6c38d3e766a1b7a47ffa2f9ea7",
-    "title_ja": "2027年1月から源泉徴収票の電子提出義務が「30枚以上」に拡大、今年の年末調整から始めるべきシステム移行の3ステップ",
-    "summary_ja": "2027年1月より、源泉徴収票や給与支払報告書の電子提出義務対象が「年間30枚以上」の提出者へと大幅に拡大される。 現在の提出基準である「100枚以上」から対象者が激増するため、年末調整ソフトの導入やクラウド給与システムへの移行が急務だ。 これから数年かけて既存の紙ベース業務をデジタル化し、法改正に備えるためのステップと具体的なツール選びの指針を解説する。",
-    "translations": {
-      "ja": {
-        "title": "2027年1月から源泉徴収票の電子提出義務が「30枚以上」に拡大、今年の年末調整から始めるべきシステム移行の3ステップ",
-        "summary": "2027年1月より、源泉徴収票や給与支払報告書の電子提出義務対象が「年間30枚以上」の提出者へと大幅に拡大される。 現在の提出基準である「100枚以上」から対象者が激増するため、年末調整ソフトの導入やクラウド給与システムへの移行が急務だ。 これから数年かけて既存の紙ベース業務をデジタル化し、法改正に備えるためのステップと具体的なツール選びの指針を解説する。"
-      },
-      "en": {
-        "title": "Japan mandates electronic filing for withholding tax slips starting 2027: How to scale your payroll tech now",
-        "summary": "Starting January 2027, Japan will significantly lower the threshold for mandatory electronic filing of withholding tax slips and salary payment reports to just 30 slips per year. This shift from the previous 100-slip threshold forces a massive wave of small and mid-sized businesses to abandon paper-based workflows. To ensure compliance, companies must act now by prioritizing the implementation of payroll software and cloud-based accounting systems. The piece outlines three critical steps for builders and business owners: auditing current paper volumes, selecting digital HRIS tools, and integrating cloud payroll flows before the deadline hits. Preparing the digital infrastructure today prevents last-minute filing panics when the legal requirement becomes unavoidable for even small-scale operations."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-10-31T00:31:51.604Z"
-  },
-  {
     "id": "art-1793406703460-9fjtq",
     "source_id": "source-openrouter",
     "source_name": "OpenRouter Announcements",
@@ -36459,32 +36511,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-31T00:16:58.165Z"
-  },
-  {
-    "id": "art-1793405812462-zmawp",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://judgementlabs.app/blog/the-coalition-room",
-    "published_at": "2026-10-31T00:06:00.000Z",
-    "og_image_url": "https://judgementlabs.app/og/the-coalition-room.png",
-    "title_ja": "AIエージェントの社会性実験：5つのLLMが協力して政府組織の形成を試みる「The Coalition Room」の洞察と限界",
-    "summary_ja": "Judgement Labsが公開した「The Coalition Room」では、5つの異なるLLMエージェントが、リソース配分や意思決定を行う架空の政府組織を形成する社会シミュレーションを実施した。 実験の結果、AI同士が協力し合う一方で、特定の状況下では論理の破綻や合意形成の崩壊が見られた。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの社会性実験：5つのLLMが協力して政府組織の形成を試みる「The Coalition Room」の洞察と限界",
-        "summary": "Judgement Labsが公開した「The Coalition Room」では、5つの異なるLLMエージェントが、リソース配分や意思決定を行う架空の政府組織を形成する社会シミュレーションを実施した。 実験の結果、AI同士が協力し合う一方で、特定の状況下では論理の破綻や合意形成の崩壊が見られた。"
-      },
-      "en": {
-        "title": "AI agents attempt democracy: Five LLMs try to form a government in a social simulation experiment",
-        "summary": "In a fascinating social experiment dubbed The Coalition Room, five distinct LLM agents were tasked with forming a functioning government to manage resources and make binding policy decisions. The simulation reveals how AI agents navigate complex social boundaries, demonstrating moments of sophisticated collaboration alongside unexpected logical collapses when consensus requirements become too stringent. For developers architecting multi-agent systems, this case study highlights the volatility inherent in autonomous LLM interaction when agents must share goals rather than just execute tasks. The project serves as a critical stress test for researchers, proving that simply connecting APIs is insufficient; builders must actively design for agent-to-agent conflict resolution and alignment to prevent systemic breakdowns in complex, multi-party autonomous environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-10-31T00:16:52.462Z"
   },
   {
     "id": "art-1793405797650-dfcrz",
@@ -47888,33 +47914,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-27T18:44:47.266Z"
-  },
-  {
-    "id": "art-1793126526759-wvd96",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/hakumaigenki/articles/automation-genai-line-2337",
-    "published_at": "2026-10-27T15:04:04.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fNFial3r--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:SNS%25E6%258A%2595%25E7%25A8%25BF%25E3%2581%25AEAI%25E4%25B8%258B%25E6%259B%25B8%25E3%2581%258D%25E3%2581%25A8%25E4%25BA%25BA%25E3%2581%25AE%25E6%2589%25BF%25E8%25AA%258D%25E3%2582%2592%25E5%2588%2586%25E3%2581%2591%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2581%25AE%25E4%25BD%259C%25E3%2582%258A%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%2599%25BD%25E7%25B1%25B3%25E5%2585%2583%25E6%25B0%2597%25EF%25BD%259CLLM%2520Oops%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSi0xR3k1Zl84dVEyOEZ0NV96cUY2cU10OWZTbm5EbFFjNWk1OG9odHEwbzVZSkNwZ1I9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI×SNS投稿運用のリスク管理：AI下書きと人間による最終承認を分離する「責任の境界線」を明確にするワークフロー設計",
-    "summary_ja": "SNS投稿を全自動化しない最大の理由は、誤報や不適切な表現が公開された際、最初に見つけるのが読者か自分かというリスクの所在にある。 下書き作成や分類まではAIに委任し、数値の解釈や公開判断という責任を伴う領域は人が担う「人間による承認プロセス」を挟むことが不可欠だ。 開発者はこの線引きを明確に設計し、事故を防ぐガードレールとしてワークフローに組み込むべきである。",
-    "translations": {
-      "ja": {
-        "title": "AI×SNS投稿運用のリスク管理：AI下書きと人間による最終承認を分離する「責任の境界線」を明確にするワークフロー設計",
-        "summary": "SNS投稿を全自動化しない最大の理由は、誤報や不適切な表現が公開された際、最初に見つけるのが読者か自分かというリスクの所在にある。 下書き作成や分類まではAIに委任し、数値の解釈や公開判断という責任を伴う領域は人が担う「人間による承認プロセス」を挟むことが不可欠だ。 開発者はこの線引きを明確に設計し、事故を防ぐガードレールとしてワークフローに組み込むべきである。"
-      },
-      "en": {
-        "title": "Managing Risk in AI-Assisted Social Media Workflows: Separating Automated Drafts from Human Approval to Define Accountability Boundaries",
-        "summary": "The primary reason to avoid fully automating social media posting lies in the risk of reputation damage; you must control whether a reader or the owner discovers an error first. By delegating draft generation and topic classification to AI while keeping human oversight for data interpretation and final publication, you ensure that mistakes are caught behind the scenes before they reach the public. Developers building these pipelines should treat human-in-the-loop workflows not as an obstacle, but as a critical safety mechanism. Defining where exactly your model's autonomy ends and your final editorial accountability begins is the most effective architectural safeguard for maintaining brand trust while leveraging AI for content scalability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-10-27T18:42:06.759Z"
   },
   {
     "id": "art-1793126506454-687ha",
