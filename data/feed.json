@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793918823951-c2jne",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tkpurine/articles/local-llm-study-010-ternary-bonsai-2-small",
+    "published_at": "2026-11-05T22:31:31.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--RBO1uUIs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25ABLLM%2520study10%253A%2520%25E4%25B8%2589%25E5%2580%25A4%25E9%2587%258F%25E5%25AD%2590%25E5%258C%2596Bonsai%25202%25E3%2581%25AE%25E5%25B0%258F%25E5%259E%258B%25E7%2589%2588%25EF%25BC%25882B%252F4B%252F9B%25EF%25BC%2589%25E3%2582%2592%25E3%2580%2581%25E5%2590%258C%25E3%2582%25B5%25E3%2582%25A4%25E3%2582%25BA%25E3%2581%25AE%25E9%2580%259A%25E5%25B8%25B8%25E9%2587%258F%25E5%25AD%2590%25E5%258C%2596%25E3%2581%25A8%25E4%25B8%25A6%25E3%2581%25B9%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2597%25E3%2583%25AA%25E3%2583%25B3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvdC5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ローカルLLM検証：三値量子化「Bonsai 2」小型モデル（2B/4B/9B）の実力を同サイズの通常量子化と比較、出力速度最大2.8倍の衝撃",
+    "summary_ja": "ローカルLLMの三値量子化モデル「Bonsai 2」小型版（2B/4B/9B）を検証。 通常量子化と比較すると、2B/4Bではモデル性能が崩れやすく、9B以上でその差が縮まることが判明した。 一方で推論速度は1.9〜2.8倍と大幅に向上する。 記事では自作検証ツールで発見した6つの不具合も公開しており、LLMの自動評価や性能測定を行うエンジニアにとって、測定を無効化しかねない「落とし穴」を回避するための貴重な知見となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "ローカルLLM検証：三値量子化「Bonsai 2」小型モデル（2B/4B/9B）の実力を同サイズの通常量子化と比較、出力速度最大2.8倍の衝撃",
+        "summary": "ローカルLLMの三値量子化モデル「Bonsai 2」小型版（2B/4B/9B）を検証。 通常量子化と比較すると、2B/4Bではモデル性能が崩れやすく、9B以上でその差が縮まることが判明した。 一方で推論速度は1.9〜2.8倍と大幅に向上する。 記事では自作検証ツールで発見した6つの不具合も公開しており、LLMの自動評価や性能測定を行うエンジニアにとって、測定を無効化しかねない「落とし穴」を回避するための貴重な知見となるだろう。"
+      },
+      "en": {
+        "title": "Benchmarking Ternary-Quantized Bonsai 2 LLMs (2B/4B/9B) Against Standard Models: Up to 2.8× Faster Inference but Performance Trade-offs Identified",
+        "summary": "This study benchmarks the smaller variants (2B/4B/9B) of the ternary-quantized Bonsai 2 model against their standard quantization counterparts to quantify real-world trade-offs. The results show that while ternary quantization accelerates inference speed by 1.9× to 2.8×, the performance gains come with significant quality risks; specifically, the 2B and 4B models degrade noticeably, whereas the 9B model maintains parity. Beyond the raw numbers, the author shares six critical bugs encountered in their custom verification pipeline. For developers building evaluation harnesses for local LLMs, this breakdown highlights specific, often-overlooked pitfalls that can invalidate automated benchmarks. Understanding these edge cases is essential for balancing model size, throughput, and coherence when optimizing local LLM deployments for production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-05T22:47:03.951Z"
+  },
+  {
+    "id": "art-1793918812869-4rntg",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-03/china-plans-broad-ai-guardrails-after-global-security-lapses",
+    "published_at": "2026-11-05T22:31:32.000Z",
+    "og_image_url": "https://assets.bwbx.io/s3/lightsaber/_next/static/media/social-default.d7363fa9.png",
+    "title_ja": "中国政府、AIの安全性と倫理を巡る大規模規制案を策定へ——世界的セキュリティインシデントの頻発を受け対応強化",
+    "summary_ja": "中国当局は、AIモデルの開発および展開に関する新たな広範な規制フレームワークの策定に着手した。 国内外で相次ぐAIシステムのセキュリティ欠陥や悪用事案を受け、企業に対する安全評価の義務化やデータ保護基準の厳格化を狙う。 開発者やAI企業にとって、今後はグローバルなコンプライアンス要件が一段と複雑化するため、AIガバナンスとセキュリティ設計を開発初期から統合する体制構築が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "中国政府、AIの安全性と倫理を巡る大規模規制案を策定へ——世界的セキュリティインシデントの頻発を受け対応強化",
+        "summary": "中国当局は、AIモデルの開発および展開に関する新たな広範な規制フレームワークの策定に着手した。 国内外で相次ぐAIシステムのセキュリティ欠陥や悪用事案を受け、企業に対する安全評価の義務化やデータ保護基準の厳格化を狙う。 開発者やAI企業にとって、今後はグローバルなコンプライアンス要件が一段と複雑化するため、AIガバナンスとセキュリティ設計を開発初期から統合する体制構築が不可欠となる。"
+      },
+      "en": {
+        "title": "China drafting sweeping new AI safety guardrails as global security lapses prompt urgent state intervention",
+        "summary": "Chinese regulators are finalizing a sweeping new framework for AI governance, aimed at enforcing stricter safety guardrails following a series of high-profile security vulnerabilities and misuse incidents globally. The policy shift mandates rigorous safety evaluations for frontier models and tighter data protection protocols, effectively compelling tech firms to treat AI safety as a core compliance requisite rather than an optional add-on. For builders and AI startups, this signals a rapidly shifting regulatory landscape where the cost of non-compliance is rising. Engineers must now prioritize robust security-by-design principles and comprehensive auditing capabilities from the start, as future deployment in major markets will increasingly depend on demonstrating adherence to these complex, localized safety standards."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-05T22:46:52.869Z"
+  },
+  {
+    "id": "art-1793918806061-e7kmb",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shusie_lab/n/nb9501add54a6",
+    "published_at": "2026-11-05T22:43:29.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331247085/rectangle_large_type_2_70f2b2f5d8bc75e8c6128a2f79eb6faf.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "26年分の家計簿データをAIでデジタル化・資産化する：個人開発による自分専用家計簿アプリの構築記",
+    "summary_ja": "26年分に及ぶ紙の家計簿記録を、AIを活用してデジタルデータへ変換し、スマホから横断検索・分析可能にする個人開発プロジェクトが始まった。 OCRやAIによる構造化処理を駆使し、レガシーな蓄積データを資産に変える仕組みを解説する。 単なる記録の電子化に留まらず、過去の消費傾向をAIで分析・可視化することで、個人のライフログを未来の意思決定に活かすための実践的な開発手法を紐解く。",
+    "translations": {
+      "ja": {
+        "title": "26年分の家計簿データをAIでデジタル化・資産化する：個人開発による自分専用家計簿アプリの構築記",
+        "summary": "26年分に及ぶ紙の家計簿記録を、AIを活用してデジタルデータへ変換し、スマホから横断検索・分析可能にする個人開発プロジェクトが始まった。 OCRやAIによる構造化処理を駆使し、レガシーな蓄積データを資産に変える仕組みを解説する。 単なる記録の電子化に留まらず、過去の消費傾向をAIで分析・可視化することで、個人のライフログを未来の意思決定に活かすための実践的な開発手法を紐解く。"
+      },
+      "en": {
+        "title": "Building a custom app to digitize 26 years of household account records using AI for personal analytics",
+        "summary": "A developer is building a custom application to digitize twenty-six years of physical household account logs, effectively turning legacy paper records into searchable, actionable data. By utilizing AI for OCR and structured data extraction, the project allows users to query past spending habits via smartphone and visualize consumption patterns over decades. This personal development journey highlights the technical challenges of parsing messy legacy data and demonstrates how builders can leverage AI to transform archival records into modern assets. The practical takeaway for developers is that AI-assisted data migration isn't just about record-keeping; it is about reclaiming personal history to drive future financial decisions through automated, intelligent insights that standard off-the-shelf software cannot provide."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-05T22:46:46.061Z"
+  },
+  {
+    "id": "art-1793918798167-uuvvy",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002928/",
+    "published_at": "2026-11-05T22:03:55.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/news/article/ogp/2611/06/2000002928/10011434/2048",
+    "title_ja": "OpenAI、AIデータセンター建設に関する「地域社会への約束」と電力政策への提言を発表―全額負担と透明性の強化を目指す",
+    "summary_ja": "OpenAIはAIデータセンター「Compute Campus」の展開にあたり、インフラ費用の全額負担や公職者とのNDA原則不使用を掲げた地域社会への約束を発表した。 同時に、AIの電力需要増大に対応するため、政府に対し大口電力利用者への新たな負担制度を含む業界共通ルールの策定を提言している。 地域社会との信頼構築と、国家的なAIインフラ整備を両立させる狙いがある。",
+    "translations": {
+      "ja": {
+        "title": "OpenAI、AIデータセンター建設に関する「地域社会への約束」と電力政策への提言を発表―全額負担と透明性の強化を目指す",
+        "summary": "OpenAIはAIデータセンター「Compute Campus」の展開にあたり、インフラ費用の全額負担や公職者とのNDA原則不使用を掲げた地域社会への約束を発表した。 同時に、AIの電力需要増大に対応するため、政府に対し大口電力利用者への新たな負担制度を含む業界共通ルールの策定を提言している。 地域社会との信頼構築と、国家的なAIインフラ整備を両立させる狙いがある。"
+      },
+      "en": {
+        "title": "OpenAI unveils new AI data center pledge covering full infrastructure costs, public transparency, and federal utility policy recommendations",
+        "summary": "OpenAI has formalized its commitment to local communities regarding the construction of 'Compute Campus' sites, promising to cover the entirety of power and infrastructure costs while pledging to avoid non-disclosure agreements with public officials to ensure complete transparency. Alongside these local guarantees, the company is actively lobbying the government to establish standardized industry rules, including potential new surcharge mechanisms for major power consumers to fund grid upgrades. This dual approach aims to build localized trust while simultaneously influencing federal policy to handle the massive energy requirements of future AI training facilities. For builders and AI stakeholders, this signals that massive-scale GPU compute deployments are increasingly shifting toward a model of localized public-private infrastructure cooperation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-05T22:46:38.167Z"
+  },
+  {
     "id": "art-1793917962726-9kmsg",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -31129,32 +31234,6 @@
     "created_at": "2026-11-01T11:01:36.110Z"
   },
   {
-    "id": "art-1793530887735-ipqm3",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/alma_core/n/n81a2079f02dc",
-    "published_at": "2026-11-01T11:00:31.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331001193/rectangle_large_type_2_82dc3c646639a2995ccb5e95c71af4a1.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "「転生したらイーロン・マスクが大統領だった件」第9話：現場仕込みのPLCハックと修羅場で学ぶAI開発の限界と突破口",
-    "summary_ja": "AI開発小説『転生したらイーロン・マスクが大統領だった件』の第9話では、主人公が自身の内なるAIアシスタントの制約と、現実世界のハードウェア（PLC）制御というハードな現場に直面する。 システムアップデートに伴う機能不全という絶体絶命の状況下で、いかに理論上のAIソリューションを現場の泥臭い修羅場に適応させるかが描かれる。 技術的な理想と現実のギャップを埋めるための、エンジニアリングにおける現場対応力と思考の柔軟性の重要さをテーマにした物語。",
-    "translations": {
-      "ja": {
-        "title": "「転生したらイーロン・マスクが大統領だった件」第9話：現場仕込みのPLCハックと修羅場で学ぶAI開発の限界と突破口",
-        "summary": "AI開発小説『転生したらイーロン・マスクが大統領だった件』の第9話では、主人公が自身の内なるAIアシスタントの制約と、現実世界のハードウェア（PLC）制御というハードな現場に直面する。 システムアップデートに伴う機能不全という絶体絶命の状況下で、いかに理論上のAIソリューションを現場の泥臭い修羅場に適応させるかが描かれる。 技術的な理想と現実のギャップを埋めるための、エンジニアリングにおける現場対応力と思考の柔軟性の重要さをテーマにした物語。"
-      },
-      "en": {
-        "title": "Episode 9 of 'Reincarnated as Elon Musk' explores the critical limits of AI when facing real-world PLC hardware hacks",
-        "summary": "The ninth installment of the fictional engineering saga 'Reincarnated as Elon Musk' tackles a high-stakes scenario where the protagonist encounters a critical system failure during an update, rendering their AI assistant useless. Stuck in a crisis involving real-world PLC (Programmable Logic Controller) hardware, the narrative shifts focus from theoretical AI capabilities to gritty, field-tested troubleshooting under pressure. It illustrates the stark contrast between digital AI logic and physical industrial systems, highlighting that while AI is powerful, a builder’s true value lies in hands-on adaptability and the ability to navigate chaotic, unexpected outages when automated tools are unavailable. For developers, it emphasizes that understanding underlying hardware layers remains as crucial as mastering high-level artificial intelligence workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-01T11:01:27.735Z"
-  },
-  {
     "id": "art-1793530009244-ocwrq",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -34939,32 +35018,6 @@
     "created_at": "2026-10-31T19:01:34.127Z"
   },
   {
-    "id": "art-1793471635805-jelch",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
-    "published_at": "2026-10-31T18:02:29.000Z",
-    "og_image_url": null,
-    "title_ja": "生成AIが批判的思考に与える影響とは：ACM論文が分析する「AI依存」による認知プロセス変化と今後の知的生産のあり方",
-    "summary_ja": "ACMが公開した最新の研究は、生成AIの日常的な利用が人間の批判的思考や意思決定プロセスにどのような影響を及ぼすかを定量的に分析している。 AIによる情報生成の高速化は思考のショートカットを促す一方、情報の精査能力を低下させるリスクも浮き彫りになった。 開発者やクリエイターは、AIを「答えを出す道具」としてだけでなく、むしろ問いを深めるための「思考のパートナー」として活用するプロンプト設計やワークフローの構築が求められる。",
-    "translations": {
-      "ja": {
-        "title": "生成AIが批判的思考に与える影響とは：ACM論文が分析する「AI依存」による認知プロセス変化と今後の知的生産のあり方",
-        "summary": "ACMが公開した最新の研究は、生成AIの日常的な利用が人間の批判的思考や意思決定プロセスにどのような影響を及ぼすかを定量的に分析している。 AIによる情報生成の高速化は思考のショートカットを促す一方、情報の精査能力を低下させるリスクも浮き彫りになった。 開発者やクリエイターは、AIを「答えを出す道具」としてだけでなく、むしろ問いを深めるための「思考のパートナー」として活用するプロンプト設計やワークフローの構築が求められる。"
-      },
-      "en": {
-        "title": "How Generative AI Impacts Critical Thinking: New ACM Research Explores Cognitive Dependence and the Future of Intellectual Workflow",
-        "summary": "A new ACM study rigorously examines how the daily integration of generative AI influences human critical thinking and complex decision-making processes. The research highlights a double-edged sword: while AI dramatically accelerates information synthesis, it frequently encourages cognitive shortcuts that erode our capacity for deep verification and independent analysis. For builders and creators, the takeaway is clear: we must move beyond using AI as a simple oracle for answers. Instead, successful workflows should treat LLMs as interactive partners that challenge premises and provoke deeper inquiry. By designing prompts that force dialectic engagement rather than passive consumption, practitioners can preserve and even enhance their intellectual rigor while leveraging the efficiency gains inherent in modern AI tooling."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-10-31T18:33:55.805Z"
-  },
-  {
     "id": "art-1793471628447-y8x51",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -35548,32 +35601,6 @@
       "研究"
     ],
     "created_at": "2026-10-31T15:46:30.041Z"
-  },
-  {
-    "id": "art-1793460709828-4mbka",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/kenken38/items/bd9ac1951e42b4fb8aa7",
-    "published_at": "2026-10-31T15:23:04.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzMTIwNTQyJTJGOWVhZjhiZDdjMTFlZTkyNGU4ODRjYzE3NDRhNzcxZmU4MzAzMjY4MiUyRnhfbGFyZ2UucG5nJTNGMTc2NTAyMzAwND9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YmVkM2ZhNDJjOThkMWRhZmE1YjIzZTQxNmM0MWMwOTg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D26a77abf7b900f19c98cb4fdeeb599f3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QVdTJUU4JUE5JUE2JUU5JUE4JTkzJUUzJTgyJTkyJUU1JTg4JTlEJUUzJTgyJTgxJUUzJTgxJUE2JUU4JThCJUIxJUU4JUFBJTlFJUUzJTgxJUE3JUU1JThGJTk3JUUzJTgxJTkxJUUzJTgxJUE2JUU1JTg4JTg2JUUzJTgxJThCJUUzJTgxJUEzJUUzJTgxJTlGJUUzJTgxJTkzJUUzJTgxJUE4JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MTI1ODVkZDU5ZmZkMGI3MWMwYjM2YzYzNWMxY2UwNWQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrZW5rZW4zOCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTM5YmIxOTNiYTYwZjM0YzM1NjRlOWMyYjk5MGE3Mzk5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=8320110d9062a061dc49c30958f15845",
-    "title_ja": "英語に自信がなくても合格可能。AWS新試験「AI Business Strategist (AIB-C01)」に英語で挑んで分かった試験攻略法と時間の使い方",
-    "summary_ja": "英語力に不安がある開発者が、AWSの新たな認定試験「AI Business Strategist (AIB-C01)」を英語で受験し合格した体験談。 日本語試験では30分余るFoundationalレベル経験者でも、英語受験では時間管理が厳しくなる。 専門用語の理解や過去問演習だけでなく、英語の設問の構造に慣れることが合格への最短ルートだ。 グローバルな技術資格を目指す際の実践的な準備として役立つ知見である。",
-    "translations": {
-      "ja": {
-        "title": "英語に自信がなくても合格可能。AWS新試験「AI Business Strategist (AIB-C01)」に英語で挑んで分かった試験攻略法と時間の使い方",
-        "summary": "英語力に不安がある開発者が、AWSの新たな認定試験「AI Business Strategist (AIB-C01)」を英語で受験し合格した体験談。 日本語試験では30分余るFoundationalレベル経験者でも、英語受験では時間管理が厳しくなる。 専門用語の理解や過去問演習だけでなく、英語の設問の構造に慣れることが合格への最短ルートだ。 グローバルな技術資格を目指す際の実践的な準備として役立つ知見である。"
-      },
-      "en": {
-        "title": "How to pass the new AWS AI Business Strategist exam in English, even if your language skills aren't perfect",
-        "summary": "This breakdown shares the experience of passing the new AWS AI Business Strategist (AIB-C01) certification exam in English, specifically written for developers who lack confidence in their language abilities. While those comfortable with Foundational-level exams in their native language often finish early, English-language testing introduces significant time pressure and cognitive strain. The author details why mastering technical terminology alone is insufficient and emphasizes the need for extensive practice with English-specific question structures and reading speeds. The key takeaway is that strategic preparation for the exam format—not just the cloud concepts—is the crucial differentiator for success. For developers targeting global credentials, this report provides an actionable roadmap for handling the language barrier in certification environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-31T15:31:49.828Z"
   },
   {
     "id": "art-1793460697200-lin0p",
@@ -38800,32 +38827,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-30T18:47:45.542Z"
-  },
-  {
-    "id": "art-1793386019417-j6w7f",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/hfujihira/articles/hf-dd78830ecdba",
-    "published_at": "2026-10-30T16:25:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--dZyHiA2C--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:15%25E6%25AD%25B3%25E3%2581%25A7%25E3%2582%2582%25E3%2582%258F%25E3%2581%258B%25E3%2582%258BJev%2520%25E3%2581%259D%25E3%2581%25AE2%2520%25E2%2580%2594%2520%25E7%2582%25B9%25E6%2595%25B0%25E3%2581%25A7%25E8%25B2%25A0%25E3%2581%2591%25E3%2581%259F%25E3%2581%25BB%25E3%2581%2586%25E3%2581%258C%25E5%25BD%25B9%25E3%2581%25AB%25E7%25AB%258B%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hirokazu%2520FUJIHIRA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTHpadnNDRFpLZEJjWUNiMFdjbXpjSVQwMkp0WG9IMWJIUGVYOTcwY0tiQUMtR1dnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "文章を書かないAI「Jev」の実力を検証——正解率よりも「回答の確信度」がAIの信頼性を左右する理由",
-    "summary_ja": "「文章を一文字も書かないAI」として注目を集めるJevは、回答の代わりに選択肢と確率のみを出力する独自の設計を持つ。 実機検証の結果、必ずしも正解率が高いモデルが有用とは限らず、むしろ誤答時にどれだけ自身の自信（確率）を低く設定できるかという「確信度の精度」こそが、AIの信頼性や実用性を決める重要な指標であることが判明した。 開発者は単なる精度向上だけでなく、AIが自己の限界をいかに正しく表現できるかという視点を持つべきだ。",
-    "translations": {
-      "ja": {
-        "title": "文章を書かないAI「Jev」の実力を検証——正解率よりも「回答の確信度」がAIの信頼性を左右する理由",
-        "summary": "「文章を一文字も書かないAI」として注目を集めるJevは、回答の代わりに選択肢と確率のみを出力する独自の設計を持つ。 実機検証の結果、必ずしも正解率が高いモデルが有用とは限らず、むしろ誤答時にどれだけ自身の自信（確率）を低く設定できるかという「確信度の精度」こそが、AIの信頼性や実用性を決める重要な指標であることが判明した。 開発者は単なる精度向上だけでなく、AIが自己の限界をいかに正しく表現できるかという視点を持つべきだ。"
-      },
-      "en": {
-        "title": "Testing Jev: Why an AI that outputs probabilities instead of text proves that confidence matters more than raw accuracy",
-        "summary": "Jev has emerged as an unconventional model that writes zero text, instead returning only selection choices and associated probabilities. Recent hands-on testing reveals that raw accuracy scores are secondary; the real differentiator is calibration—the ability of the model to assign low confidence scores when it is likely wrong. This capability allows developers to build more reliable systems where AI knows its own limits. Instead of chasing marginally higher benchmarks, this analysis shows that builders should prioritize the accuracy of the AI's internal uncertainty metrics. For those integrating LLMs into high-stakes workflows, the practical lesson is to treat an AI’s expression of doubt as a feature, not a bug, ensuring that systems react appropriately when the machine is guessing."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-10-30T18:46:59.417Z"
   },
   {
     "id": "art-1793385690868-rii4p",
