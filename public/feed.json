@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793874800466-eglil",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/sawalyno/articles/moshimo-note-blocked-permissions",
+    "published_at": "2026-11-05T03:54:52.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--aywSlRW4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Google%2520Play%25E5%25AF%25A9%25E6%259F%25BB%25E3%2581%25A7%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25AA%25E3%2581%2584%25E6%25A8%25A9%25E9%2599%2590%25E3%2582%2592%25E5%25A4%2596%25E3%2581%2599%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB%25E3%2582%2584%25E3%2581%25A3%25E3%2581%259F%25E3%2581%2593%25E3%2581%25A8%25EF%25BC%2588blockedPermissions%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:sawalyno%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkxMjI0NzIzYmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Google Play審査突破術：Expoアプリで依存ライブラリ由来の「未使用権限」をblockedPermissionsで強制削除する方法",
+    "summary_ja": "Androidアプリ開発において、Google Play審査で指摘される「使用していない権限」問題に直面した際の対応策を共有する。 Expo環境では、依存ライブラリが意図せず権限を付与してしまうケースが多い。 本稿では、Androidマニフェストファイルに`blockedPermissions`を記述し、ビルド時に不要な権限を強制的に除外して審査を通過させる技術的な解決手順を解説する。 ライブラリ依存の権限混入に悩むExpo開発者にとって必読の実践的な知識だ。",
+    "translations": {
+      "ja": {
+        "title": "Google Play審査突破術：Expoアプリで依存ライブラリ由来の「未使用権限」をblockedPermissionsで強制削除する方法",
+        "summary": "Androidアプリ開発において、Google Play審査で指摘される「使用していない権限」問題に直面した際の対応策を共有する。 Expo環境では、依存ライブラリが意図せず権限を付与してしまうケースが多い。 本稿では、Androidマニフェストファイルに`blockedPermissions`を記述し、ビルド時に不要な権限を強制的に除外して審査を通過させる技術的な解決手順を解説する。 ライブラリ依存の権限混入に悩むExpo開発者にとって必読の実践的な知識だ。"
+      },
+      "en": {
+        "title": "How to purge unused Android permissions in Expo apps using blockedPermissions for Google Play review success",
+        "summary": "When publishing an Android app, developers often face Google Play rejection due to excessive permissions automatically injected by third-party libraries. In the Expo ecosystem, tracking down these inherited dependencies is notoriously difficult. This guide walks through the technical solution of explicitly defining `blockedPermissions` within the Android manifest configuration. By forcing the build process to strip out unused permissions, developers can ensure compliance without manually patching every package. For those managing React Native projects, this approach provides a clean, automated way to satisfy Google’s strict permission policies, preventing release delays and ensuring that privacy-sensitive access requests only reflect actual app functionality rather than unintended baggage from your dependency tree."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-05T10:33:20.466Z"
+  },
+  {
+    "id": "art-1793874734217-4wiaq",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tamutamuzen/articles/ai-era-e2e-module-test-design",
+    "published_at": "2026-11-05T10:01:54.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--G5Zzc9EC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:E2E%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25AF%25E3%2581%25A9%25E3%2581%2593%25E3%2581%25BE%25E3%2581%25A7%25E5%25BF%2585%25E8%25A6%2581%25EF%25BC%259F%2520%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%258B%25E3%2582%2589%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%25E3%2583%25A2%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25AB%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tamutamu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzYwMGY0Yzg3MjQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI・LLM開発におけるE2Eテストの是非と検証可能性：実装前に設計すべき「テスト可能なモジュール構造」の勘所",
+    "summary_ja": "AIシステム開発においてE2Eテストをどこまで重視すべきかという議論が絶えないが、重要なのは「テストの厚み」ではなく「検証可能性を考慮した設計」である。 システム全体をどう検証するかを実装前に定義し、テストしやすいモジュール構造に落とし込むことが肝要だ。 テスト駆動開発のようにコードを先行させるのではなく、検証戦略を見据えた設計プロセスを取り入れることで、複雑なAIアプリケーションの品質と開発効率の両立が可能となる。",
+    "translations": {
+      "ja": {
+        "title": "AI・LLM開発におけるE2Eテストの是非と検証可能性：実装前に設計すべき「テスト可能なモジュール構造」の勘所",
+        "summary": "AIシステム開発においてE2Eテストをどこまで重視すべきかという議論が絶えないが、重要なのは「テストの厚み」ではなく「検証可能性を考慮した設計」である。 システム全体をどう検証するかを実装前に定義し、テストしやすいモジュール構造に落とし込むことが肝要だ。 テスト駆動開発のようにコードを先行させるのではなく、検証戦略を見据えた設計プロセスを取り入れることで、複雑なAIアプリケーションの品質と開発効率の両立が可能となる。"
+      },
+      "en": {
+        "title": "E2E testing in AI development: Why testable modular architecture matters more than test volume",
+        "summary": "The debate over how heavily to lean on E2E testing in AI development often misses the point; the real priority is ensuring verifiability through modular architecture. Rather than obsessing over whether to prioritize end-to-end tests or unit tests, developers should focus on system-wide validation strategies before writing a single line of code. This approach does not mandate strict Test-Driven Development, but rather requires designing module boundaries that facilitate testing from the start. By envisioning the verification process during the architectural phase, builders can manage the complexity of LLM-based systems more effectively. Ultimately, the goal is to create a maintainable system where verification is a design feature, not an afterthought applied once the architecture is already locked in."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-05T10:32:14.217Z"
+  },
+  {
+    "id": "art-1793874727473-d5rz5",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Sidejob/items/015f3c69abaf4123ac50",
+    "published_at": "2026-11-05T10:30:03.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmMDQ5MjEyODEwOWJhMDVlNTliMTA5ZDE2MTMzMjNkNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OTkwYjdmNWE0MWU2OTk3ZDY3ZDNiNmI0YjIwZDcxODI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De6ff48aefdddde06dce7529f66f49f1d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9RGlmeSUyMDEuMTkuMCVFMiU4MCU5NCVFMiU4MCU5NCVFMyU4MyU4RCVFMyU4MiVCOSVFMyU4MyU4OCVFMyU4MSU5NyVFMyU4MSU5RiVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MyU5NSVFMyU4MyVBRCVFMyU4MyVCQyVFMyU4MyU4OCVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MiVCOSVFMyU4MSVBODMlRTMlODElQTQlRTMlODElQUUlRTUlQTQlODklRTYlOUIlQjQlRTMlODElOEMlRTQlQkMlODElRTYlQTUlQUQlRTklODElOEIlRTclOTQlQTglRTMlODElQUIlRTQlQkQlOTUlRTMlODIlOTIlRTMlODIlODIlRTMlODElOUYlRTMlODIlODklRTMlODElOTklRTMlODElOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03N2MzMjNiZTAyYTc5Mzk2YjY5MDI5ZmZlZTljMGQ3MQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBTaWRlam9iJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MThiMWNjMmFmNjk0Mzk4YTgyOTk5NWFmZmVkMWY2MGQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6d849df57b60342018348159239b9295",
+    "title_ja": "Dify v1.19.0の全貌：ネストされたワークフロートレース機能による内部LLM呼び出しの可視化と、企業運用に向けた3つの重要改善",
+    "summary_ja": "Dify v1.19.0では、ワークフロー内から呼び出す「Workflow Tool」の実行内容が詳細に可視化され、内部のLLMコールやステップ単位のトレースが可能になった。 これまでブラックボックスだった複雑なワークフローのデバッグが大幅に容易になる。 企業開発においては、推論プロセスの透明性が向上することで、運用の安定性とトラブルシューティングの効率が飛躍的に高まるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Dify v1.19.0の全貌：ネストされたワークフロートレース機能による内部LLM呼び出しの可視化と、企業運用に向けた3つの重要改善",
+        "summary": "Dify v1.19.0では、ワークフロー内から呼び出す「Workflow Tool」の実行内容が詳細に可視化され、内部のLLMコールやステップ単位のトレースが可能になった。 これまでブラックボックスだった複雑なワークフローのデバッグが大幅に容易になる。 企業開発においては、推論プロセスの透明性が向上することで、運用の安定性とトラブルシューティングの効率が飛躍的に高まるだろう。"
+      },
+      "en": {
+        "title": "Dify v1.19.0 Unveils Nested Workflow Tracing to Visualize Internal LLM Calls for Better Enterprise Observability",
+        "summary": "Dify v1.19.0 brings a major observability boost with nested workflow tracing, allowing developers to finally inspect exactly what happens inside a Workflow Tool, including specific internal LLM calls and execution steps. Previously, these processes were effectively black boxes where only basic success or failure status was visible, making deep debugging impossible. By exposing the granular execution path, this update simplifies troubleshooting for complex multi-agent systems and enterprise-grade pipelines. For builders managing production LLM workflows, this transparency is a game changer, offering the visibility needed to optimize latency, identify prompt failure points, and ensure reliable operation across intricate system architectures. This shift moves Dify closer to a professional-grade platform suitable for mission-critical AI deployment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-05T10:32:07.473Z"
+  },
+  {
+    "id": "art-1793874720719-x3rpn",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/music-for-pets-breakdown",
+    "published_at": "2026-11-04T20:03:10+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/1r83ralpuu3dhworv53im0u3ubfi",
+    "title_ja": "ペットの不安を解消する「Music for Pets」が月商数百万円へ成長した裏側：特定のニッチ市場を絞り込む戦略の要点",
+    "summary_ja": "ペットの分離不安を癒やす音楽配信アプリ「Music for Pets」が、どのように月商数百万円規模の収益源へと成長したのか、その軌跡を公開。 特定のペルソナに向けたオーディオコンテンツ開発と、検索意図を深く掘り下げたマーケティング戦略が、広告費に依存しない持続的な成長の鍵となった。 個人開発者がニッチな市場で勝つためには、ターゲットを極限まで絞り込み、ユーザーの根本的な悩みを解決するニッチなコンテンツ提供に集中することが最大の収益化戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "ペットの不安を解消する「Music for Pets」が月商数百万円へ成長した裏側：特定のニッチ市場を絞り込む戦略の要点",
+        "summary": "ペットの分離不安を癒やす音楽配信アプリ「Music for Pets」が、どのように月商数百万円規模の収益源へと成長したのか、その軌跡を公開。 特定のペルソナに向けたオーディオコンテンツ開発と、検索意図を深く掘り下げたマーケティング戦略が、広告費に依存しない持続的な成長の鍵となった。 個人開発者がニッチな市場で勝つためには、ターゲットを極限まで絞り込み、ユーザーの根本的な悩みを解決するニッチなコンテンツ提供に集中することが最大の収益化戦略となる。"
+      },
+      "en": {
+        "title": "How Music for Pets Scaled to Significant Monthly Revenue by Targeting a Specific Niche and Solving Separation Anxiety",
+        "summary": "The behind-the-scenes story of Music for Pets reveals how the developer scaled a niche audio app to significant monthly revenue by focusing intently on alleviating pet separation anxiety. By eschewing broad appeal for specific, evidence-backed calming tracks, the founder successfully bypassed reliance on expensive paid ads, instead utilizing organic search traffic to capture high-intent users. This breakdown underscores a critical lesson for indie builders: success in crowded categories often comes from hyper-specialization rather than generalization. Instead of trying to please everyone, the strategy of addressing an acute pain point for a defined pet-owner persona provided the consistency needed to build a sustainable, recurring subscription business without requiring massive upfront capital investment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-11-05T10:32:00.719Z"
+  },
+  {
     "id": "art-1793873821388-0oijy",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -36336,32 +36441,6 @@
     "created_at": "2026-10-30T22:31:21.588Z"
   },
   {
-    "id": "art-1793398610844-fiyoz",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/picnic/items/da3ee47241f8d7d92e9c",
-    "published_at": "2026-10-30T22:11:02.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS0oza2lJamRVZjd6UHZDUHNqTGhkcHFzbDlYU2MweGJscHRZRzgwOWd5dlhYWWh2UTElM0RzOTYtYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OGM4MDU5ODEyMzY3Y2ZlNmIzMDVkYTMzMjAwNjcwMDE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dfd6ab3c0ea5267b0e6bf5b2f6bc36ab2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwT3B1cyUyMDQuOCUyMGZhc3QlMjBtb2RlJUUzJTgxJThDMjAyNiUyRjExJTJGMzAlRTUlQkIlODMlRTYlQUQlQTIlRUYlQkQlOUNPcHVzJTIwNS41JUUzJTgxJUI4JUUzJTgxJUFFJUU3JUE3JUJCJUU4JUExJThDJUU2JTg5JThCJUU5JUEwJTg2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MjhiZGU5NDY0ZmMzYTUxYjM4YWIzNjFkZDA4NzQzYTE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwaWNuaWMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1iZTllNDg4YzE3YjgzYzFmZGE3MTQ2MjU5MjlkYzU1ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=1ecf67f7cf84724d2def1c3bb698303d",
-    "title_ja": "Claude Opus 4.8「fast mode」が2026年11月30日で廃止へ、開発者が今すぐ取り組むべきOpus 5.5への移行手順と注意点",
-    "summary_ja": "Anthropicは2026年10月30日のリリースノートにて、Claude Opus 4.8の「fast mode」を11月30日に廃止すると発表した。 廃止後は該当モデル指定によるAPIリクエストがエラーとなるため、開発者は直ちにモデル名をOpus 5.5へ変更し、推論速度やコスト構造の違いを確認してテストを行う必要がある。 レガシーモデルの唐突な停止はサービス継続性に直結するため、今回の移行を機に将来的なAPIバージョン管理を自動化しておくことが推奨される。",
-    "translations": {
-      "ja": {
-        "title": "Claude Opus 4.8「fast mode」が2026年11月30日で廃止へ、開発者が今すぐ取り組むべきOpus 5.5への移行手順と注意点",
-        "summary": "Anthropicは2026年10月30日のリリースノートにて、Claude Opus 4.8の「fast mode」を11月30日に廃止すると発表した。 廃止後は該当モデル指定によるAPIリクエストがエラーとなるため、開発者は直ちにモデル名をOpus 5.5へ変更し、推論速度やコスト構造の違いを確認してテストを行う必要がある。 レガシーモデルの唐突な停止はサービス継続性に直結するため、今回の移行を機に将来的なAPIバージョン管理を自動化しておくことが推奨される。"
-      },
-      "en": {
-        "title": "Anthropic deprecates Claude Opus 4.8 fast mode on November 30, 2026: Migration path to Opus 5.5 for active API integrations",
-        "summary": "Anthropic has announced that Claude Opus 4.8 fast mode will be officially deprecated on November 30, 2026, following the release notes published on October 30. After this cutoff date, any API requests still targeting the older model with the fast flag will fail, forcing developers to urgently migrate their endpoints to the newer Opus 5.5 architecture. Because this change directly impacts production stability, developers must immediately audit their inference code, verify the performance characteristics of 5.5, and update their model references. This abrupt sunset highlights the critical importance of implementing robust API version control and fallback strategies in your production stack to ensure that future model deprecations do not break your live application features without warning."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-10-30T22:16:50.844Z"
-  },
-  {
     "id": "art-1793398604300-oim9r",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -42093,32 +42172,6 @@
       "研究"
     ],
     "created_at": "2026-10-29T13:46:29.992Z"
-  },
-  {
-    "id": "art-1793280794616-dhx1d",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ellafisherwrite/articles/f9ec3f62092cf3",
-    "published_at": "2026-10-29T12:36:18.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jzVDRhdt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OBS%25E3%2581%25A7%25E3%2583%258F%25E3%2583%25AD%25E3%2582%25A6%25E3%2582%25A3%25E3%2583%25B3%25E3%2581%25AEAI%25E9%25A1%2594%25E4%25BA%25A4%25E6%258F%259B%25E3%2581%258C%25E6%2598%25A0%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2581%25A8%25E3%2581%258D%25E3%2580%2581%25E5%2585%25A5%25E5%258A%259B%25E3%2581%25A8%25E5%2587%25BA%25E5%258A%259B%25E3%2582%2592%25E5%2588%2587%25E3%2582%258A%25E5%2588%2586%25E3%2581%2591%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ella%2520Fisher%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRkMGQ5MDczOGUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "OBSでAI顔交換が反映されないトラブル解消：仮想カメラと入力ソースの信号経路を切り分けて特定する効率的なデバッグ手順",
-    "summary_ja": "AI顔交換ツール（LiveFaceSwap AI等）の映像がOBSに反映されない場合、まずは「ブラウザプレビュー→仮想カメラ→OBSキャプチャ」という信号経路を確認するのが鉄則だ。 闇雲に設定を触る前に、加工済み映像が仮想カメラへ正常に渡っているかを段階的にチェックすることで、設定の迷路に陥るのを防げる。 配信や録画環境を構築する際は、ツールのプレビューと出力デバイスの疎通確認をルーチン化することが、トラブルシュートの近道となる。",
-    "translations": {
-      "ja": {
-        "title": "OBSでAI顔交換が反映されないトラブル解消：仮想カメラと入力ソースの信号経路を切り分けて特定する効率的なデバッグ手順",
-        "summary": "AI顔交換ツール（LiveFaceSwap AI等）の映像がOBSに反映されない場合、まずは「ブラウザプレビュー→仮想カメラ→OBSキャプチャ」という信号経路を確認するのが鉄則だ。 闇雲に設定を触る前に、加工済み映像が仮想カメラへ正常に渡っているかを段階的にチェックすることで、設定の迷路に陥るのを防げる。 配信や録画環境を構築する際は、ツールのプレビューと出力デバイスの疎通確認をルーチン化することが、トラブルシュートの近道となる。"
-      },
-      "en": {
-        "title": "Troubleshooting AI Face Swap in OBS: A Step-by-Step Guide to Isolating Virtual Camera Signal Paths for Reliable Streaming",
-        "summary": "When your AI face swap output fails to show up in OBS, don't blindly toggle settings. The signal flows linearly from the live browser preview through the virtual camera to the OBS video capture device; identifying the specific break point in this chain is the only efficient debug path. Verify that the processed video is actually hitting the virtual camera interface in Windows before blaming OBS itself. For creators building live streaming setups with emerging AI tools, treat the signal chain as a layered stack and validate each bridge independently. This systematic approach saves hours of configuration guessing and ensures your production pipeline remains stable even when integrating experimental real-time AI effects into a broadcast workflow."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "動画",
-      "開発"
-    ],
-    "created_at": "2026-10-29T13:33:14.616Z"
   },
   {
     "id": "art-1793280735704-y38eo",
@@ -52061,32 +52114,6 @@
     "created_at": "2026-10-26T09:46:54.063Z"
   },
   {
-    "id": "art-1793000644624-ygctz",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/sktt_panda/articles/json-to-typescript-optional-inference-browser",
-    "published_at": "2026-10-25T23:38:21.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--CRk-h0MI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:JSON%25E3%2581%258B%25E3%2582%2589TypeScript%25E3%2581%25AEinterface%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25E5%25AE%259F%25E8%25A3%2585%2520%25E2%2580%2594%2520%25E3%2582%25AD%25E3%2583%25BC%25E5%2587%25BA%25E7%258F%25BE%25E7%258E%2587%25E3%2581%25A7optional%25E3%2582%2592%25E5%2588%25A4%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25B5%25E3%2582%25AF%25E3%2583%2583%25E3%2581%25A8%25E3%2581%25B1%25E3%2582%2593%25E3%2581%25A0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2MzZmQ3ZjA3ZjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "JSONからTypeScriptのinterfaceを自動生成するツールを開発—配列内のキー出現率でoptional判定しネストの重複を排除するロジック",
-    "summary_ja": "APIレスポンスのJSONからTypeScriptのinterface定義を自動生成するツールを開発。 配列内の全要素を走査してキーの存在確認を行い、必須かoptionalかを判定するロジックを採用した。 null混在はUnion型で処理し、全オブジェクトを一度に処理することでネストされたinterfaceの重複定義も防ぐ設計だ。",
-    "translations": {
-      "ja": {
-        "title": "JSONからTypeScriptのinterfaceを自動生成するツールを開発—配列内のキー出現率でoptional判定しネストの重複を排除するロジック",
-        "summary": "APIレスポンスのJSONからTypeScriptのinterface定義を自動生成するツールを開発。 配列内の全要素を走査してキーの存在確認を行い、必須かoptionalかを判定するロジックを採用した。 null混在はUnion型で処理し、全オブジェクトを一度に処理することでネストされたinterfaceの重複定義も防ぐ設計だ。"
-      },
-      "en": {
-        "title": "Developer builds auto-generator for TypeScript interfaces from JSON with logic for optional field detection and deduplication",
-        "summary": "A new developer tool auto-generates TypeScript interface definitions directly from raw API response JSON, streamlining backend integration workflows. The tool scans every element within an array to determine if a key is truly optional, while handling nullability by appending to Union types. To keep the generated codebase clean, the architecture processes all nested objects in a single pass, which effectively prevents redundant interface generation for identical nested structures. This approach significantly reduces the manual overhead of drafting complex type definitions from scratch. For builders frequently interacting with messy third-party APIs, this implementation provides a robust pattern for converting dynamic response data into strict TypeScript types without the headache of duplicate declarations or manually tracking field requirements across inconsistent data sets."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-26T07:44:04.624Z"
-  },
-  {
     "id": "art-1793000637887-bmb2t",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -52193,33 +52220,6 @@
       "開発"
     ],
     "created_at": "2026-10-26T07:43:38.812Z"
-  },
-  {
-    "id": "art-1792995961835-9yvud",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/kiyoka/articles/google-ai-pro-subscription-plan",
-    "published_at": "2026-10-26T03:19:56.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--PuoyVYHs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:11%25E6%259C%2588%25E3%2581%258B%25E3%2582%2589Google%2520AI%2520Pro%25E3%2582%2592%25E5%25A5%2591%25E7%25B4%2584%25E3%2581%2599%25E3%2582%258B%25E4%25BA%2588%25E5%25AE%259A%25E3%2580%2582API%25E4%25BB%25A3%25E3%2581%25A8YouTube%25E3%2580%2581%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AE%25E4%25BA%2588%25E5%2582%2599%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2581%25A6%25E8%2580%2583%25E3%2581%2588%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kiyoka%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ZiOWFhMmVjYmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Google AI Proへの契約変更でAPI料金とYouTubeプレミアムを最適化：月額コストを統合し、開発用の予備環境も確保する賢い戦略",
-    "summary_ja": "開発者は11月からGoogle AI Proへの契約を決定した。 現在、OpenAIとGeminiの各API利用料で月計10ドル、ChatGPT PlusやYouTube Premiumなどに分散していた支出を、月額クレジットや特典が付属するGoogle AI Proへ集約する。 これにより、月額コストを最適化しつつ、APIの無料枠拡充とYouTube Premium Liteを確保し、さらに開発用の予備環境としての活用も見込む。",
-    "translations": {
-      "ja": {
-        "title": "Google AI Proへの契約変更でAPI料金とYouTubeプレミアムを最適化：月額コストを統合し、開発用の予備環境も確保する賢い戦略",
-        "summary": "開発者は11月からGoogle AI Proへの契約を決定した。 現在、OpenAIとGeminiの各API利用料で月計10ドル、ChatGPT PlusやYouTube Premiumなどに分散していた支出を、月額クレジットや特典が付属するGoogle AI Proへ集約する。 これにより、月額コストを最適化しつつ、APIの無料枠拡充とYouTube Premium Liteを確保し、さらに開発用の予備環境としての活用も見込む。"
-      },
-      "en": {
-        "title": "Optimizing monthly dev spend by consolidating API costs and YouTube Premium into Google AI Pro subscriptions",
-        "summary": "A developer has decided to switch to Google AI Pro this November, aiming to optimize a fragmented tech stack. Currently, the dev pays five dollars monthly each for OpenAI and Gemini API access, alongside separate subscriptions for ChatGPT Plus and YouTube Premium. By moving to Google AI Pro, they consolidate these costs, leveraging the 10-dollar monthly API credit, Antigravity access, and YouTube Premium Lite bundle. This move not only lowers their total monthly burn rate but also provides a more robust secondary development environment. For individual builders, the practical takeaway is that auditing scattered subscription models—rather than optimizing them individually—can significantly lower fixed costs while simultaneously expanding your available resources for testing and production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-10-26T06:26:01.835Z"
   },
   {
     "id": "art-1792995954803-zv9zl",
