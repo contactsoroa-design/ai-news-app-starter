@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793880119719-oo5lx",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.05542",
+    "published_at": "2026-11-05T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "広告とコンテンツを同時最適化、ページ全体ランキングの推論負荷を大幅削減する「Multi-Item Scoring」手法が登場",
+    "summary_ja": "広告と自然検索結果を同時最適化するページランキング技術において、非自己回帰型モデルの推論効率と自己回帰型の精度を両立する「Multi-Item Scoring (MIS)」手法が提案された。 従来のモデルは、順序依存性を捉える際に推論オーバーヘッドが課題となっていたが、MISはプレフィックス認識型の非自己回帰アプローチにより、ワンパス推論でこのギャップを解消する。",
+    "translations": {
+      "ja": {
+        "title": "広告とコンテンツを同時最適化、ページ全体ランキングの推論負荷を大幅削減する「Multi-Item Scoring」手法が登場",
+        "summary": "広告と自然検索結果を同時最適化するページランキング技術において、非自己回帰型モデルの推論効率と自己回帰型の精度を両立する「Multi-Item Scoring (MIS)」手法が提案された。 従来のモデルは、順序依存性を捉える際に推論オーバーヘッドが課題となっていたが、MISはプレフィックス認識型の非自己回帰アプローチにより、ワンパス推論でこのギャップを解消する。"
+      },
+      "en": {
+        "title": "Multi-Item Scoring: A new one-pass inference method for balancing ad relevance and organic content in whole-page ranking systems",
+        "summary": "Researchers have introduced Multi-Item Scoring (MIS), a new approach to whole-page ranking that bridges the efficiency gap between non-autoregressive and autoregressive models. While existing non-autoregressive methods allow for efficient page generation, they often struggle to capture the complex, order-dependent interactions between ads and organic content. Autoregressive methods handle these interactions better but introduce prohibitive inference overheads at scale. MIS solves this by employing a prefix-aware non-autoregressive strategy that achieves high-quality rankings through one-pass inference without the sequential latency. For engineers building large-scale recommendation engines or ad-tech platforms, this technique offers a critical path to maintaining complex business constraints and optimal user engagement without sacrificing throughput, proving that sophisticated ranking does not strictly require linear, slow inference chains."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-05T12:01:59.719Z"
+  },
+  {
+    "id": "art-1793880111791-npr0h",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shiroi1229/n/n4dc3025b74d7",
+    "published_at": "2026-11-05T11:59:42.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332599458/rectangle_large_type_2_aadb3a08f38d1484c01066f5ec6c47d1.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI実装の現場破綻を防ぐ「実務境界ベンチマーク評価」：論文と実務の乖離を埋める決定論的レシート検収設計手法と計算リソース最適化",
+    "summary_ja": "AIシステム開発において論文通りの実装が破綻する主因は、ベンチマーク環境と実務環境の差異による境界破綻にある。 本稿では、計算・通信・分割のボトルネックを局所化する「Gen-2：境界検収設計×退行遮断制御」手法を紹介する。 単に計算資源を増やすのではなく、パイプラインの精度劣化やレイテンシ膨張箇所を特定し、決定論的なレシート検収を行うことで、過剰なリソース投資を防ぎ実務での堅牢性を確保する設計原則を解説する。",
+    "translations": {
+      "ja": {
+        "title": "AI実装の現場破綻を防ぐ「実務境界ベンチマーク評価」：論文と実務の乖離を埋める決定論的レシート検収設計手法と計算リソース最適化",
+        "summary": "AIシステム開発において論文通りの実装が破綻する主因は、ベンチマーク環境と実務環境の差異による境界破綻にある。 本稿では、計算・通信・分割のボトルネックを局所化する「Gen-2：境界検収設計×退行遮断制御」手法を紹介する。 単に計算資源を増やすのではなく、パイプラインの精度劣化やレイテンシ膨張箇所を特定し、決定論的なレシート検収を行うことで、過剰なリソース投資を防ぎ実務での堅牢性を確保する設計原則を解説する。"
+      },
+      "en": {
+        "title": "Beyond Paper Benchmarks: A Tactical Framework for Practical AI Pipeline Validation, Deterministic Acceptance Testing, and Resource Efficiency in Production",
+        "summary": "AI implementations frequently collapse when transitioning from research papers to production because developers ignore the critical gap between clean benchmark environments and messy real-world constraints. This article details a 'Gen-2' validation framework designed to prevent these failures by integrating deterministic acceptance testing with regression blocking. Instead of blindly scaling compute resources to mask latency or accuracy drops, the approach focuses on isolating bottlenecks in communication and data partitioning within the pipeline. By applying strict boundary validation, developers can localize performance degradation and avoid the costly rework associated with naive scaling. For builders, this methodology provides a practical checklist to ensure AI systems maintain stability and cost-efficiency without needing brute-force over-provisioning."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-05T12:01:51.791Z"
+  },
+  {
+    "id": "art-1793880105264-fd3dd",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/takeru/articles/kuku-natsukashi-parental-gate",
+    "published_at": "2026-11-05T11:32:03.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--CR5TtTNT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BF%259D%25E8%25AD%25B7%25E8%2580%2585%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%2588%25E3%2582%2592%25E8%25A6%25AA%25E4%25B8%2596%25E4%25BB%25A3%25E3%2581%25AE%25E6%2587%2590%25E3%2581%258B%25E3%2581%2597%25E3%2582%25AF%25E3%2582%25A4%25E3%2582%25BA%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:takeru%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2c1NXZKS2pmZmNNUWRlWEh4cHo3c3BBcl8wWkVHOVVNR1EzS0VEVUE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発アプリの「保護者ゲート」を懐かしクイズ化、親世代をターゲットにした77問のライブラリ実装事例",
+    "summary_ja": "子ども向けアプリの保護者ゲートにおいて、単純な計算問題では子どもが解いてしまう課題を解決するため、親世代のノスタルジーを刺激するクイズ形式の実装が注目されている。 「キン消し」や懐かしのアイテムを題材にした77問のクイズライブラリを公開したこの試みは、アクセシビリティを維持しつつ、子どもによる突破を防ぐUXデザインの好例だ。 単なる制限ではなく、アプリのターゲット層に合わせたユーモアあるUI/UXの設計が、UXの質を高める鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリの「保護者ゲート」を懐かしクイズ化、親世代をターゲットにした77問のライブラリ実装事例",
+        "summary": "子ども向けアプリの保護者ゲートにおいて、単純な計算問題では子どもが解いてしまう課題を解決するため、親世代のノスタルジーを刺激するクイズ形式の実装が注目されている。 「キン消し」や懐かしのアイテムを題材にした77問のクイズライブラリを公開したこの試みは、アクセシビリティを維持しつつ、子どもによる突破を防ぐUXデザインの好例だ。 単なる制限ではなく、アプリのターゲット層に合わせたユーモアあるUI/UXの設計が、UXの質を高める鍵となる。"
+      },
+      "en": {
+        "title": "Building a 'Parental Gate' with Nostalgia Quizzes: A 77-Question Library to Prevent Kids from Bypassing Restrictions",
+        "summary": "For developers of children's apps, standard math problems for parental gates are often easily bypassed by tech-savvy kids. To solve this, a creative solution involves replacing standard gates with nostalgia-based quizzes targeting the parents' generation, such as questions about 80s and 90s cultural icons like 'Kinkeshi.' By creating a dedicated library of 77 questions, developers can effectively block unauthorized access while adding a touch of fun to the user journey. This design pattern proves that effective security doesn't always require complexity; sometimes, tailoring UX to the parents' specific cultural context is the most robust way to keep boundaries intact while maintaining a delightful experience for the actual users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-05T12:01:45.264Z"
+  },
+  {
+    "id": "art-1793880098715-eu3fh",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://arxiv.org/abs/2610.21711",
+    "published_at": "2026-11-05T11:54:26.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "LLMエージェント間の価格競争をシミュレーション：自動価格設定アルゴリズムが収束する複数の「価格レジーム」を解明",
+    "summary_ja": "最新の研究により、AIエージェントによる自動価格設定プロセスが、市場の初期条件や相互作用に応じて異なる価格帯に収束する「複数の価格レジーム」を生み出す可能性が明らかになった。 価格追従アルゴリズムが学習する過程で、独占的価格や競争的価格といった均衡点がどう分かれるかを理論化している。 今後、AIによる自動価格設定を自社プロダクトに統合する開発者は、エージェントが予測不能な価格レジームに陥るリスクを考慮し、アルゴリズムの挙動を監視するガードレールを設ける必要がある。",
+    "translations": {
+      "ja": {
+        "title": "LLMエージェント間の価格競争をシミュレーション：自動価格設定アルゴリズムが収束する複数の「価格レジーム」を解明",
+        "summary": "最新の研究により、AIエージェントによる自動価格設定プロセスが、市場の初期条件や相互作用に応じて異なる価格帯に収束する「複数の価格レジーム」を生み出す可能性が明らかになった。 価格追従アルゴリズムが学習する過程で、独占的価格や競争的価格といった均衡点がどう分かれるかを理論化している。 今後、AIによる自動価格設定を自社プロダクトに統合する開発者は、エージェントが予測不能な価格レジームに陥るリスクを考慮し、アルゴリズムの挙動を監視するガードレールを設ける必要がある。"
+      },
+      "en": {
+        "title": "Simulation reveals how LLM pricing agents converge into distinct competitive price regimes based on initial market conditions",
+        "summary": "New research investigates the dynamics of automated pricing agents, demonstrating that LLM-driven pricing mechanisms can converge into entirely different price regimes depending on initial market conditions and agent interactions. The paper models how algorithmic price followers evolve, showing that subtle variations in learning processes can push the market toward either monopoly-like pricing or aggressively competitive equilibria. For developers integrating automated AI pricing into real-world applications, this finding suggests that agent behavior is not always predictable and can become stuck in sub-optimal regimes. Builders must implement robust guardrails and monitoring systems to ensure that their pricing agents do not converge on destructive or unintended price points as they continuously learn from market signals."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-05T12:01:38.715Z"
+  },
+  {
     "id": "art-1793879239133-atb6d",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -30733,32 +30839,6 @@
     "created_at": "2026-10-31T22:31:42.187Z"
   },
   {
-    "id": "art-1793485895889-cd37l",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/rainbowhills/n/n984398ee5bb3",
-    "published_at": "2026-10-31T22:28:31.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330758092/rectangle_large_type_2_dd8761812fe8ed1b377689e37043953d.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "空き家管理の現場DX：写真整理とExcel転記の膨大な作業時間を劇的に短縮する自動化アプローチの模索",
-    "summary_ja": "空き家管理やリフォーム現場では、Before/After写真の撮影が必須だが、その後の整理とExcel報告書への貼り付け作業が膨大な工数を占めている。 開発日誌シリーズの最新回では、この「地獄のような」手作業を自動化し、報告業務を効率化するための開発アプローチが議論されている。 属人的な写真管理から脱却し、現場の写真を即座に構造化する仕組みを構築することは、フィールドワーカーの負担を減らすだけでなく、業務全体のスピードを飛躍的に高める鍵となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "空き家管理の現場DX：写真整理とExcel転記の膨大な作業時間を劇的に短縮する自動化アプローチの模索",
-        "summary": "空き家管理やリフォーム現場では、Before/After写真の撮影が必須だが、その後の整理とExcel報告書への貼り付け作業が膨大な工数を占めている。 開発日誌シリーズの最新回では、この「地獄のような」手作業を自動化し、報告業務を効率化するための開発アプローチが議論されている。 属人的な写真管理から脱却し、現場の写真を即座に構造化する仕組みを構築することは、フィールドワーカーの負担を減らすだけでなく、業務全体のスピードを飛躍的に高める鍵となるだろう。"
-      },
-      "en": {
-        "title": "Solving the Manual Data Entry Nightmare in Vacant Property Management: Automating Before-and-After Photo Reporting Workflows",
-        "summary": "Field operations for vacant property management and renovations are heavily dependent on Before-and-After photo documentation, yet the current process of manual sorting and copy-pasting images into Excel reports is a significant bottleneck. This latest developer diary explores practical strategies to automate this arduous workflow, moving away from fragmented file management toward structured, automated reporting. For builders, the core takeaway is the massive latent potential in digitizing analog workflows: by creating systems that instantly categorize and format field photos, developers can reclaim hours of billable time for site managers. This pivot from manual labor to automated data structuring is essential for scaling field services effectively, turning cumbersome report generation into a seamless, high-speed background task."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-31T22:31:35.889Z"
-  },
-  {
     "id": "art-1793485887372-p1bc0",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -30889,32 +30969,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-31T22:16:31.162Z"
-  },
-  {
-    "id": "art-1793484125123-vda5p",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ai_zukushi/n/n780608908d80",
-    "published_at": "2026-10-31T21:47:46.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/330747716/rectangle_large_type_2_e9a7f0681c97406768791e7fe81cfe29.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ARGメーカー2026年10月の運用実績を公開：ミニゲーム開発とユーザー動向の変化を詳細に振り返る",
-    "summary_ja": "個人開発プラットフォーム「ARGメーカー」の2026年10月のサービス運用実績が公開された。 ミニゲーム機能においては「送り出す側」という新たな役割が明確になり、ユーザー動向にも大きな変化が見られた。 良かった点や課題点をデータとともに開示し、プロダクトの改善プロセスを赤裸々に共有している。 開発者は自身のサービスにおけるユーザー行動の変遷を捉え、機能開発へどうフィードバックするかという視点が不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "ARGメーカー2026年10月の運用実績を公開：ミニゲーム開発とユーザー動向の変化を詳細に振り返る",
-        "summary": "個人開発プラットフォーム「ARGメーカー」の2026年10月のサービス運用実績が公開された。 ミニゲーム機能においては「送り出す側」という新たな役割が明確になり、ユーザー動向にも大きな変化が見られた。 良かった点や課題点をデータとともに開示し、プロダクトの改善プロセスを赤裸々に共有している。 開発者は自身のサービスにおけるユーザー行動の変遷を捉え、機能開発へどうフィードバックするかという視点が不可欠である。"
-      },
-      "en": {
-        "title": "ARG Maker shares October 2026 service metrics: Reflecting on user engagement shifts and minigame development roles",
-        "summary": "The solo-developed platform ARG Maker has released its comprehensive performance data for October 2026, offering a transparent look at service metrics and user behavior. The report highlights a crucial shift in minigame dynamics, identifying a transition where the platform acted more as a facilitator for \"sending off\" experiences. By breaking down both successes and shortcomings through raw data, the retrospective emphasizes the importance of understanding evolving user interactions. For solo builders, this breakdown serves as a vital reminder that observing how users actually navigate features is the only way to effectively iterate. Analyzing these trends allows developers to pivot product strategy, ensuring that new feature releases remain aligned with how the audience genuinely utilizes the ecosystem."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-31T22:02:05.123Z"
   },
   {
     "id": "art-1793484112098-e0hjj",
@@ -36542,33 +36596,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-30T23:17:07.984Z"
-  },
-  {
-    "id": "art-1793402212495-w0flo",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://tanner.place/blog/how-ai-changed-what-i-can-build",
-    "published_at": "2026-10-30T23:10:13.000Z",
-    "og_image_url": "https://tanner.place/og/v3/how-ai-changed-what-i-can-build.png",
-    "title_ja": "個人の開発限界を突破するAI活用術：一人でフルスタックアプリを実装し、製品リリースまでを最短で完遂する現代的アプローチ",
-    "summary_ja": "AI導入によって、個人開発者の能力範囲は劇的に拡大した。 従来の開発では困難だったバックエンドの複雑なロジックやインフラ構築をAIに支援させることで、一人でもフルスタックかつ商用品質のアプリケーションを短期間で完成させることが可能になっている。 重要なのはAIを「単なるコード生成機」として使うのではなく、設計のパートナーとして対話し、未知の技術スタックへの学習コストを削減しつつ迅速にMVPを市場へ投入するサイクルを構築することである。",
-    "translations": {
-      "ja": {
-        "title": "個人の開発限界を突破するAI活用術：一人でフルスタックアプリを実装し、製品リリースまでを最短で完遂する現代的アプローチ",
-        "summary": "AI導入によって、個人開発者の能力範囲は劇的に拡大した。 従来の開発では困難だったバックエンドの複雑なロジックやインフラ構築をAIに支援させることで、一人でもフルスタックかつ商用品質のアプリケーションを短期間で完成させることが可能になっている。 重要なのはAIを「単なるコード生成機」として使うのではなく、設計のパートナーとして対話し、未知の技術スタックへの学習コストを削減しつつ迅速にMVPを市場へ投入するサイクルを構築することである。"
-      },
-      "en": {
-        "title": "How AI tools redefined individual engineering boundaries, enabling solo developers to build and ship production-grade full-stack applications",
-        "summary": "Artificial intelligence has fundamentally expanded the capabilities of individual developers, allowing solo creators to overcome traditional limits on technical scope and velocity. By utilizing AI not just for boilerplate code generation, but as an active architectural partner, builders can now tackle complex backend logic and infrastructure deployments that were previously restricted to large engineering teams. This shift drastically reduces the learning curve for new tech stacks, enabling a rapid iteration cycle where production-grade MVPs reach the market in record time. The article argues that the primary advantage for solo builders today is leveraging AI to effectively act as a force multiplier, allowing independent developers to ship and maintain sophisticated products regardless of team size."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-30T23:16:52.495Z"
   },
   {
     "id": "art-1793401343433-zi7cr",
@@ -48133,32 +48160,6 @@
       "開発"
     ],
     "created_at": "2026-10-27T18:11:50.775Z"
-  },
-  {
-    "id": "art-1793124569786-kulff",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/interstellar/articles/kakioki-design-for-agents",
-    "published_at": "2026-10-27T07:58:33.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jqGUM3Qd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%258C%25E8%25BF%25B7%25E3%2582%258F%25E3%2581%25AA%25E3%2581%2584%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2580%2581%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%2592%25E5%25A2%2597%25E3%2582%2584%25E3%2581%2595%25E3%2581%25AA%25E3%2581%2584%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2582%25E3%2581%258C%25E3%2581%259F%2540%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A9%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLmRldi9pbWFnZXMvZGVmYXVsdC1wdWJsaWNhdGlvbi1hdmF0YXIucG5n%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A9%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2prZEVUbEYyZTlNMjFXTFI1Smp6U0RVeDRzbC15QmNvcXh1LUdpZmZ3PXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェントが迷わないために機能を削ぎ落とす：共有ワークスペース「kakioki」の設計思想（Cloudflare Workers + D1採用）",
-    "summary_ja": "AIエージェントと人間が情報を共有するためのワークスペース「kakioki」を開発する際、あえて機能を増やさないという「引き算の設計」を重視した。 チャット履歴やNotionでは解決できないAIとの連携上の課題に対し、複雑さを排除することでエージェントの迷いをなくし、共有の信頼性を高める狙いがある。 開発者は機能の追加に走りがちだが、あえて制限を設けることが、AIエージェントのワークフローを安定させるための重要な戦略となることを示唆している。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントが迷わないために機能を削ぎ落とす：共有ワークスペース「kakioki」の設計思想（Cloudflare Workers + D1採用）",
-        "summary": "AIエージェントと人間が情報を共有するためのワークスペース「kakioki」を開発する際、あえて機能を増やさないという「引き算の設計」を重視した。 チャット履歴やNotionでは解決できないAIとの連携上の課題に対し、複雑さを排除することでエージェントの迷いをなくし、共有の信頼性を高める狙いがある。 開発者は機能の追加に走りがちだが、あえて制限を設けることが、AIエージェントのワークフローを安定させるための重要な戦略となることを示唆している。"
-      },
-      "en": {
-        "title": "Why I Rejected Feature Creep for 'kakioki' to Help AI Agents Collaborate More Effectively via Cloudflare Workers",
-        "summary": "Building a shared workspace for humans and AI agents, specifically the 'kakioki' project, forced a rigorous design philosophy centered on subtraction rather than feature expansion. Instead of chasing a Notion-style feature set, I deliberately restricted functionality to prevent AI agents from getting confused during handoffs or task execution. My technical stack leverages Cloudflare Workers and D1 to keep the surface area small and the latency low. This experiment proves that in the age of AI integration, adding complexity actually hampers interoperability. The key takeaway for builders is that you should prioritize constraint-based architecture; by explicitly deciding what *not* to build, you ensure that the AI agents have a clear, reliable environment to operate within, rather than drowning in tool bloat."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-27T18:09:29.786Z"
   },
   {
     "id": "art-1793124523872-k9fft",
