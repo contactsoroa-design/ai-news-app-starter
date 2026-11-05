@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793916128941-wv1z7",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kazu_aiengineer/articles/azure-ai-evaluation-decision",
+    "published_at": "2026-11-05T18:20:41.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--msIIrP9K--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E5%259B%259E%25E7%25AD%2594%25E8%25A9%2595%25E4%25BE%25A1%25E3%2581%25ABDecision%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%258C%25E4%25BD%25BF%25E3%2581%2588%25E3%2582%258B%25E3%2580%2582%25E9%2580%259F%25E3%2581%2584%25E3%2581%25A80.5%25E7%25A7%2592%25E3%2580%2581%25E7%2590%2586%25E7%2594%25B1%25E6%2596%2587%25E3%2581%25AF%25E5%2587%25BA%25E3%2581%25AA%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AB%25E3%2582%25BA%25EF%25BD%259C%25E7%2594%259F%25E6%2588%2590AI%25E3%2583%25BB%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2583%25A9%25E3%2583%259C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Y2YjU0MTYyY2QuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "RAG評価の劇的加速：Azure AI新機能「Decisionモデル」採用で評価時間が0.5秒へ短縮、コスト効率も向上",
+    "summary_ja": "RAGやエージェントの回答評価において、Azure AIの最新アップデート（1.18.11）はMicrosoft-Decision-1モデルを評価器としてサポートした。 従来のチャットモデルによる評価とは異なり、理由生成を排除することで評価時間を約0.5秒まで劇的に短縮している。 回答の根拠や詳細なフィードバックが不要で、純粋な品質スコアや合否判定のみを大量に処理したい開発者にとって、評価パイプラインの高速化とAPIコスト削減を両立させる強力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "RAG評価の劇的加速：Azure AI新機能「Decisionモデル」採用で評価時間が0.5秒へ短縮、コスト効率も向上",
+        "summary": "RAGやエージェントの回答評価において、Azure AIの最新アップデート（1.18.11）はMicrosoft-Decision-1モデルを評価器としてサポートした。 従来のチャットモデルによる評価とは異なり、理由生成を排除することで評価時間を約0.5秒まで劇的に短縮している。 回答の根拠や詳細なフィードバックが不要で、純粋な品質スコアや合否判定のみを大量に処理したい開発者にとって、評価パイプラインの高速化とAPIコスト削減を両立させる強力な選択肢となる。"
+      },
+      "en": {
+        "title": "Accelerating RAG Evaluation: Microsoft's New 'Decision Model' Cuts Latency to 0.5s via Azure AI",
+        "summary": "For developers evaluating RAG and agentic outputs, the latest Azure AI Evaluation library (v1.18.11) now supports the 'Microsoft-Decision-1' model for automated scoring. Unlike standard chat models that generate verbose rationales, this decision model prioritizes raw classification metrics, reducing evaluation latency to as little as 0.5 seconds per request. This shift is transformative for high-volume pipelines where detailed qualitative feedback is secondary to strict pass/fail criteria or numerical quality scores. By stripping away text generation overhead, builders can now iterate on prompt engineering faster while significantly lowering overall API costs. If your evaluation workflow suffers from token bloat or slow response times, switching to a decision-optimized model offers an immediate performance win without sacrificing accuracy."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-05T22:02:08.941Z"
+  },
+  {
+    "id": "art-1793916122021-45dug",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/zaireprow/items/30b8a1cdf578e2e9fbc7",
+    "published_at": "2026-11-04T17:08:58.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY1MTBlYTZkMzM3NzNkYTFhNTBhMWU1YmMxN2MwMjgxND9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MzVhNGUzMDJhZWY5ZWM3ZTBkOTcwM2Q4NzkwOGJkZWI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db80b33eecd7859b10bcde9a26e4172be?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JTg2JTk5JUU3JTlDJTlGMSVFNiU5RSU5QSVFMyU4MSU4QiVFMyU4MiU4OSVFMyU4MyU4OCVFMyU4MyVBQyVFMyU4MyVCMyVFMyU4MyU4OSVFNSU4QiU5NSVFNyU5NCVCQiVFMyU4MiU5MiVFNCVCRCU5QyVFMyU4MiU4QiVFMyU4MSVBOCVFMyU4MSU4RCVFMyU4MSVBRSVFNSU4NSVBNSVFNSU4QSU5QiVFNSU4NiU5OSVFNyU5QyU5RiVFMyU4MyU4MSVFMyU4MiVBNyVFMyU4MyU4MyVFMyU4MiVBRiVFMyU4MyVBQSVFMyU4MiVCOSVFMyU4MyU4OCVFMyU4MSVBOCVFOCVBOCVBRCVFOCVBOCU4OCVFMyU4MyVBMSVFMyU4MyVBMiVFRiVCQyU4OCVFMyU4MyU5MCVFMyU4MiVBNCVFMyU4MiVCQiVFMyU4MyU4MyVFMyU4MyU5NyVFMyU4MyU4RiVFMyU4MyVCQyVFMyU4MyU4OCVFNyVCNyVBOCVFRiVCQyU4OSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWE0ODZjMDQ4YzI4Njg3YmZhYjJmYTNkNjhmYTA3Yjlh&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB6YWlyZXByb3cmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz03OGVlNzViNDJlZjU4ZTUzNTYwYTg4MmVmNDBjN2NiMQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=9d8192be4b91e246bb29d84231bf0754",
+    "title_ja": "写真1枚でバズる「バイセップハート」動画生成の入力条件と設計メモ：生成AI特有のブレを抑える最適解",
+    "summary_ja": "TikTokで話題の「Bicep Hearts」のような写真1枚からトレンド動画を生成するツールにおいて、出力の品質を左右するのは入力画像のクオリティだ。 本記事では、AIモデルが処理しやすい画像の特徴や構図を整理し、生成時のブレを最小化するためのチェックリストを提示する。 開発者はユーザーに対し、被写体の鮮明さや背景の単純化を求めるガイドラインを組み込むことで、生成成功率と体験価値を大幅に向上させることが可能だ。",
+    "translations": {
+      "ja": {
+        "title": "写真1枚でバズる「バイセップハート」動画生成の入力条件と設計メモ：生成AI特有のブレを抑える最適解",
+        "summary": "TikTokで話題の「Bicep Hearts」のような写真1枚からトレンド動画を生成するツールにおいて、出力の品質を左右するのは入力画像のクオリティだ。 本記事では、AIモデルが処理しやすい画像の特徴や構図を整理し、生成時のブレを最小化するためのチェックリストを提示する。 開発者はユーザーに対し、被写体の鮮明さや背景の単純化を求めるガイドラインを組み込むことで、生成成功率と体験価値を大幅に向上させることが可能だ。"
+      },
+      "en": {
+        "title": "Optimizing Single-Image Inputs for Viral 'Bicep Heart' AI Video Generators: A Blueprint for Consistent Results",
+        "summary": "When building AI-powered tools that transform a single photo into a trending video like the 'Bicep Hearts' viral effect, the most significant variable causing inconsistent output is the input image itself. This article breaks down the technical requirements for images that AI models process most reliably, offering a concrete checklist to minimize generation artifacts. For developers, the practical takeaway is that algorithmic refinement can only do so much; you must proactively guide your users by incorporating UI prompts that enforce subject clarity and background simplicity during the upload phase. Prioritizing input quality control drastically improves success rates, reduces server-side wasted generations, and creates a much smoother experience for end users navigating fast-paced social media trends."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "動画",
+      "開発"
+    ],
+    "created_at": "2026-11-05T22:02:02.021Z"
+  },
+  {
+    "id": "art-1793916107140-hv8mg",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://cacm.acm.org/blogcacm/the-real-cost-of-ai-code-shows-up-30-days-later/",
+    "published_at": "2026-11-05T21:37:39.000Z",
+    "og_image_url": null,
+    "title_ja": "「AI生成コードの真のコストは30日後に現れる」：負債化するコードベースの保守運用を技術者がどう再定義すべきか",
+    "summary_ja": "AIによるコーディング支援は開発速度を劇的に向上させるが、真のコストはコード生成時ではなく、30日後に「保守すべき負債」として表面化する。 AIが生成したコードは文脈を欠いた断片であるため、時間の経過とともに修正や拡張が困難になり、開発チームの生産性を著しく阻害する可能性がある。 開発者は、AIによる即時的な出力に依存するのではなく、長期的な保守性やアーキテクチャの整合性を自ら担保する姿勢が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "「AI生成コードの真のコストは30日後に現れる」：負債化するコードベースの保守運用を技術者がどう再定義すべきか",
+        "summary": "AIによるコーディング支援は開発速度を劇的に向上させるが、真のコストはコード生成時ではなく、30日後に「保守すべき負債」として表面化する。 AIが生成したコードは文脈を欠いた断片であるため、時間の経過とともに修正や拡張が困難になり、開発チームの生産性を著しく阻害する可能性がある。 開発者は、AIによる即時的な出力に依存するのではなく、長期的な保守性やアーキテクチャの整合性を自ら担保する姿勢が不可欠だ。"
+      },
+      "en": {
+        "title": "The real cost of AI code surfaces after 30 days: Why developers must rethink maintenance debt",
+        "summary": "AI-assisted coding offers immediate velocity, yet the true financial and technical toll only manifests thirty days later when the code turns into unmaintainable technical debt. Because AI often generates code without deep context or long-term architectural awareness, the resulting artifacts become progressively harder to patch, extend, or debug as requirements shift. The piece argues that simply treating AI as a generation tool ignores the lifecycle costs of ownership. Builders must realize that the initial speed advantage is often offset by the eventual struggle to manage codebases lacking human-centric design. Moving forward, engineers should prioritize human oversight and rigorous code reviews to ensure AI contributions do not quietly undermine the system's long-term operational viability and stability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-05T22:01:47.140Z"
+  },
+  {
+    "id": "art-1793916101061-47hwr",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/runwith_official/n/n7f8df4b8cf74",
+    "published_at": "2026-11-05T21:54:22.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332713173/rectangle_large_type_2_32e63c04be916b33bb4f9cefd97c06a5.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "合同会社オート・エースがAI活用3マッチパズル「フワポ：ペットパズル」体験版を公開、画像・コード生成をAIで効率化",
+    "summary_ja": "合同会社オート・エースが、開発の全工程にAIを導入した3マッチパズルゲーム「フワポ：ペットパズル」のブラウザ版体験版を公開した。 画像生成AIでアセットを作成し、コード生成もAIを活用することで、小規模チームでのゲーム制作を実現している。 登録不要でステージ30まで遊べる本タイトルは、AIを用いた個人・小規模開発における効率的なワークフローの事例として注目される。",
+    "translations": {
+      "ja": {
+        "title": "合同会社オート・エースがAI活用3マッチパズル「フワポ：ペットパズル」体験版を公開、画像・コード生成をAIで効率化",
+        "summary": "合同会社オート・エースが、開発の全工程にAIを導入した3マッチパズルゲーム「フワポ：ペットパズル」のブラウザ版体験版を公開した。 画像生成AIでアセットを作成し、コード生成もAIを活用することで、小規模チームでのゲーム制作を実現している。 登録不要でステージ30まで遊べる本タイトルは、AIを用いた個人・小規模開発における効率的なワークフローの事例として注目される。"
+      },
+      "en": {
+        "title": "Runwith Games releases 'Fuwapo: Pet Puzzle' demo, a 3-match browser game built entirely using AI-assisted coding and asset generation",
+        "summary": "Auto Ace LLC has released a browser-based demo for 'Fuwapo: Pet Puzzle,' a casual 3-match game where players collect food to raise digital pets. The development highlights a shift in small-team workflows: both the game assets were generated using AI art tools, and the underlying codebase was constructed with AI assistance. By removing the need for user registration and allowing instant play up to stage 30, the team demonstrates how indie builders can rapidly prototype and ship polished products by leveraging generative AI across the entire stack. For independent developers, this project serves as a practical blueprint for how to circumvent traditional resource constraints while maintaining rapid iteration cycles in game design."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "画像生成"
+    ],
+    "created_at": "2026-11-05T22:01:41.061Z"
+  },
+  {
     "id": "art-1793915232334-z2qkm",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -34987,32 +35093,6 @@
     "created_at": "2026-10-31T18:02:14.317Z"
   },
   {
-    "id": "art-1793469713251-dcv5e",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/alepoll/NichiHab",
-    "published_at": "2026-10-31T17:37:54.000Z",
-    "og_image_url": null,
-    "title_ja": "Gemini AIがタスク完了を検証するAndroidアプリブロッカー「NichiHab」が登場。生産性向上に向けた新しい習慣管理の形",
-    "summary_ja": "Android向けアプリブロッカー「NichiHab」は、Gemini AIを統合し、タスク完了の証拠をカメラで確認するまで特定のアプリを制限する仕組みを採用している。 単なる時間制限ではなく、AIによる「実行確認」をトリガーにすることで、ユーザーの先延ばし癖を物理的に矯正するアプローチだ。 自己規律を外部ツールで補強したい個人開発者や生産性ハッカーにとって、AIの多機能性を活用した興味深い実装事例となっている。",
-    "translations": {
-      "ja": {
-        "title": "Gemini AIがタスク完了を検証するAndroidアプリブロッカー「NichiHab」が登場。生産性向上に向けた新しい習慣管理の形",
-        "summary": "Android向けアプリブロッカー「NichiHab」は、Gemini AIを統合し、タスク完了の証拠をカメラで確認するまで特定のアプリを制限する仕組みを採用している。 単なる時間制限ではなく、AIによる「実行確認」をトリガーにすることで、ユーザーの先延ばし癖を物理的に矯正するアプローチだ。 自己規律を外部ツールで補強したい個人開発者や生産性ハッカーにとって、AIの多機能性を活用した興味深い実装事例となっている。"
-      },
-      "en": {
-        "title": "NichiHab launches Android app blocker that uses Gemini AI to verify task completion before lifting restrictions",
-        "summary": "NichiHab, a new Android application blocker, introduces a novel accountability mechanism by integrating Gemini AI to verify that a user has actually completed a designated task before unlocking restricted apps. Instead of relying on passive timer-based blocks, the app requires users to provide visual or text-based proof of their work, which the AI then validates in real-time. This approach effectively bridges the gap between passive willpower and active constraint by using multimodal LLMs to enforce productivity habits. For builders, it serves as a compelling case study on how to leverage AI agents beyond mere content generation, effectively using LLMs as a logic layer for behavioral modification and personal productivity infrastructure."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-31T18:01:53.251Z"
-  },
-  {
     "id": "art-1793469703280-exo6k",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -35553,33 +35633,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-31T15:19:15.814Z"
-  },
-  {
-    "id": "art-1793458900912-mj2yu",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/sponge841841/items/7a9ecd56737aa6bbd22b",
-    "published_at": "2026-10-31T14:07:26.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzNTI4NjU1JTJGZjMxNjllZjQ1YzFmZDk4MmFmZDNhZjVhYjMwODYyNTU3YzYxMjI3MSUyRmxhcmdlLnBuZyUzRjE3Njk1Nzc2MDM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWEyZmEyM2M3Y2UzYjIzMGUzZTQ4YmExNjA2OGQ4ZjY5%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Da81768531f10a06bbf4a803630c98130?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q29kZXglMjBEYXklMjAyNSVFNSVCRSVCOSVFNSVCQSU5NSVFOCVBNyVBMyVFOCVBQSVBQyVFRiVCQyU5QVBybyVFMyU4MyVCQkJ1c2luZXNzJUUzJTgxJUFFJUU1JTg4JUE5JUU3JTk0JUE4JUU2JTlFJUEwMiVFNSU4MCU4RCVFMyU4MSVBOFBybyUyMDIwMCVFNiVCOCU5QiVFNiU5RSVBMCVFNiU5MiVBNCVFNSU5QiU5RSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTg3MGJjMzhjYzMxZmVjMzcwMjJmMjg5ODZhYjE2ZjEx&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzcG9uZ2U4NDE4NDEmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1lNWRjMDUyODc0OGNmOTA2NTYwNDM3YjYyZWVlYzAzZg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=e427f5392ec2407ed684c6509c6001b8",
-    "title_ja": "OpenAI「28日間アップデート」Day 25解説：ChatGPT Pro・Businessの利用枠を2倍へ増量し、Pro 200プランの枠縮小を正式撤回",
-    "summary_ja": "OpenAIは「28日間アップデート」の25日目において、ChatGPT ProおよびBusinessプランにおけるWork/Codexの利用枠を従来の2倍に拡大することを発表した。 さらに、一部ユーザーで懸念されていたPro 200プランの利用制限の強化を正式に撤回している。 今回の変更は、ヘビーユーザーの業務効率を維持するための対応と見られる。",
-    "translations": {
-      "ja": {
-        "title": "OpenAI「28日間アップデート」Day 25解説：ChatGPT Pro・Businessの利用枠を2倍へ増量し、Pro 200プランの枠縮小を正式撤回",
-        "summary": "OpenAIは「28日間アップデート」の25日目において、ChatGPT ProおよびBusinessプランにおけるWork/Codexの利用枠を従来の2倍に拡大することを発表した。 さらに、一部ユーザーで懸念されていたPro 200プランの利用制限の強化を正式に撤回している。 今回の変更は、ヘビーユーザーの業務効率を維持するための対応と見られる。"
-      },
-      "en": {
-        "title": "OpenAI's Day 25 update doubles ChatGPT Pro and Business usage quotas while cancelling the controversial Pro 200 limit reduction",
-        "summary": "OpenAI’s 25th day of their \"28-day update\" initiative brings a major relief for power users by doubling the available Work and Codex usage quotas for ChatGPT Pro and Business subscribers. Furthermore, the company has officially walked back the controversial plan to reduce limits on the Pro 200 tier, ensuring that heavy daily workflows remain uninterrupted. For developers and builders who rely on these models for code generation, agent orchestration, or complex reasoning tasks, this reversal signals that OpenAI is listening to power-user feedback regarding utility. Stability in API and platform quotas is critical for maintaining consistent development velocity, and this rollback helps ensure that those building on the platform can scale their operations without fear of sudden, restrictive bottlenecking."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-31T15:01:40.912Z"
   },
   {
     "id": "art-1793458894426-irj5u",
@@ -39724,32 +39777,6 @@
     "created_at": "2026-10-30T15:31:27.531Z"
   },
   {
-    "id": "art-1793373399760-nzsib",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/shogohs/articles/4d5260cf1bf1b5",
-    "published_at": "2026-10-30T14:51:01.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fmCzLXoq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Jamf%2520CLI%25E3%2582%2592%25E8%2587%25AA%25E7%2584%25B6%25E8%25A8%2580%25E8%25AA%259E%25E3%2581%25A7%25E3%2582%25B5%25E3%2582%25AF%25E3%2583%2583%25E3%2581%25A8%25E6%2593%258D%25E4%25BD%259C%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:shogohs%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzMyNzhjMDM3YjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Jamf CLIの操作を自然言語で自動化、Jamf Platform Gatewayを活用した管理効率化とセットアップ手順の全容",
-    "summary_ja": "Jamf CLIを用いたデバイス管理を自然言語コマンドで操作し、効率化を図る手法を解説。 Jamf Proダイレクト接続が非推奨となる中、本稿では推奨される「Jamf Platform Gateway」経由のセットアップ手順を詳説する。 インテグレーション作成から認証フローまでを網羅し、開発者がCLI操作のオーバーヘッドを削減するための実践的な構成案を提示する。",
-    "translations": {
-      "ja": {
-        "title": "Jamf CLIの操作を自然言語で自動化、Jamf Platform Gatewayを活用した管理効率化とセットアップ手順の全容",
-        "summary": "Jamf CLIを用いたデバイス管理を自然言語コマンドで操作し、効率化を図る手法を解説。 Jamf Proダイレクト接続が非推奨となる中、本稿では推奨される「Jamf Platform Gateway」経由のセットアップ手順を詳説する。 インテグレーション作成から認証フローまでを網羅し、開発者がCLI操作のオーバーヘッドを削減するための実践的な構成案を提示する。"
-      },
-      "en": {
-        "title": "How to Automate Jamf CLI Operations with Natural Language and Optimize Management via Jamf Platform Gateway",
-        "summary": "This guide demonstrates how to streamline Jamf CLI operations using natural language commands, significantly reducing administrative overhead for device management. While direct Jamf Pro connections are increasingly deprecated, this walkthrough focuses on the recommended 'Jamf Platform Gateway' setup, detailing every step from creating the integration to finalizing the authentication flow. By shifting toward this gateway architecture, developers can ensure a more stable and scalable interface for managing Apple enterprise environments. The technical breakdown emphasizes avoiding outdated direct connection methods in favor of the current standard, providing a clear path for builders to implement a more robust and efficient CLI-based management pipeline that fits into modern operational workflows without unnecessary complexity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-30T15:16:39.760Z"
-  },
-  {
     "id": "art-1793373393270-u6qho",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -39857,32 +39884,6 @@
       "研究"
     ],
     "created_at": "2026-10-30T15:01:37.470Z"
-  },
-  {
-    "id": "art-1793371593951-t5lqf",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/nanashi_os/articles/8afad61441e367",
-    "published_at": "2026-10-30T08:54:11.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wben-I52--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25A2%25BA%25E7%258E%2587%25E7%259A%2584LLM%25E3%2582%2592%25E5%2588%25B6%25E5%25BE%25A1%25E5%25B7%25A5%25E5%25AD%25A6%25E3%2581%25A7%25E5%2586%258D%25E5%25AE%259A%25E7%25BE%25A9%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259AHi-Z%25E7%258A%25B6%25E6%2585%258B%25E3%2583%25BB%25E4%25B8%258D%25E6%2584%259F%25E5%25B8%25AF%25E3%2583%25BB%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%25B3%25E3%2582%25AF%25E4%25BD%258D%25E7%259B%25B8%25E5%2590%258C%25E6%259C%259F%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E3%2583%259E%25E3%2583%25AB%25E3%2583%2581%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E8%25AA%25BF%25E5%2581%259C%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:NanashiOS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGQ2U243QkFhUDcxVnVHLUNxeFZmOTdlSHRXQjE3eDFJZm1SM1FGN19TMlI3ZnBkMD1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "LLMの確率的出力を制御工学で抑制：Hi-Z状態や不感帯を用いたマルチエージェント協調・衝突防止アーキテクチャの提案",
-    "summary_ja": "従来のLLMやマルチエージェントシステムは、常に出力を生成し続けるため、情報の混濁や無限ループといった制御不能な事態を招きやすい。 本稿では、電気工学のHi-Z（ハイインピーダンス）状態や制御工学の不感帯、内燃機関のクランク位相制御といった概念をLLM推論に応用し、エージェント間の衝突や無駄なラリーを物理的に遮断する新しい調停モデルを提案する。",
-    "translations": {
-      "ja": {
-        "title": "LLMの確率的出力を制御工学で抑制：Hi-Z状態や不感帯を用いたマルチエージェント協調・衝突防止アーキテクチャの提案",
-        "summary": "従来のLLMやマルチエージェントシステムは、常に出力を生成し続けるため、情報の混濁や無限ループといった制御不能な事態を招きやすい。 本稿では、電気工学のHi-Z（ハイインピーダンス）状態や制御工学の不感帯、内燃機関のクランク位相制御といった概念をLLM推論に応用し、エージェント間の衝突や無駄なラリーを物理的に遮断する新しい調停モデルを提案する。"
-      },
-      "en": {
-        "title": "Reining in Stochastic LLMs: Control Engineering Concepts for Multi-Agent Arbitration and Collision Prevention",
-        "summary": "Current LLM and multi-agent implementations struggle with constant, uncontrollable token generation, leading to inevitable information degradation, chatter, and infinite loops. This article proposes a fundamental shift by importing concepts from electrical and control engineering—specifically Hi-Z (high-impedance) states, deadbands, and crank phase synchronization—to manage LLM reasoning loops. Instead of relying solely on software heuristics, this architecture introduces hardware-inspired signal control to physically intercept and arbitrate outputs, effectively suppressing unnecessary agent rallies and context corruption. By integrating these mechanical analogies directly into the inference pipeline, developers can transform unpredictable stochastic outputs into governed, stable systems. This approach provides a rigorous, physics-driven framework for builders aiming to enforce coherence and efficiency in complex, multi-agent orchestrations where standard prompt engineering frequently fails."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-30T14:46:33.951Z"
   },
   {
     "id": "art-1793370695652-vauls",
