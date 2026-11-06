@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793939536625-z4i6h",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/masamitsu_sera/articles/7363154f42de02",
+    "published_at": "2026-11-05T22:30:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--TJ3tPD1W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%2560claude%2520-p%2520--restricted%2560%2520%25E3%2581%25AE%2520%2560%252F%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25AB%25E5%2590%258D%2560%2520%25E3%2581%25AF%25E5%25B1%2595%25E9%2596%258B%25E3%2581%2595%25E3%2582%258C%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2520%25E2%2580%2595%2520%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%258C%25E8%2587%25AA%25E5%258A%259B%25E3%2581%25A7%25E6%258E%25A2...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%2580%25AC%25E8%2589%25AF%2520%25E6%2594%25BF%25E5%2585%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2YzZWIyZDYwYTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claudeコマンドラインツールの挙動検証：--restrictedモード下でのスキル指定に関する想定外の挙動とモデルの推論能力",
+    "summary_ja": "Mac上で「claude -p --restricted」を無人実行し、リポジトリ内のスキルを指定するジョブを運用していたところ、特定の条件下でコマンドが実行されない事象が発生した。 調査の結果、指定したスキル定義が直接展開されていたわけではなく、モデルが自律的にプロンプト内の指示を解釈し、スキルファイルの内容を推論・補完していたことが判明した。",
+    "translations": {
+      "ja": {
+        "title": "Claudeコマンドラインツールの挙動検証：--restrictedモード下でのスキル指定に関する想定外の挙動とモデルの推論能力",
+        "summary": "Mac上で「claude -p --restricted」を無人実行し、リポジトリ内のスキルを指定するジョブを運用していたところ、特定の条件下でコマンドが実行されない事象が発生した。 調査の結果、指定したスキル定義が直接展開されていたわけではなく、モデルが自律的にプロンプト内の指示を解釈し、スキルファイルの内容を推論・補完していたことが判明した。"
+      },
+      "en": {
+        "title": "Deep dive into Claude CLI restricted mode: How LLMs infer and execute repository-based skills without explicit command expansion",
+        "summary": "A developer running automated `claude -p --restricted` jobs on a local Mac discovered that their repository-defined skills were not being explicitly expanded by the CLI as assumed. After a rare execution failure, investigation revealed that the model was actually inferring and simulating those skill behaviors autonomously based on context rather than executing direct command-line expansions. This realization highlights that LLM-based automation often relies on model reasoning capabilities rather than hard-coded script execution, making typical debugging strategies less effective. For builders relying on agentic CLIs, this creates a critical lesson: robust automated pipelines must account for the stochastic nature of model inference, ensuring that error handling logic respects the agent's autonomous interpretation of task boundaries and skill definitions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-06T04:32:16.625Z"
+  },
+  {
+    "id": "art-1793939530058-gflcy",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.youtube.com/watch?v=U2DDKdUvq6k",
+    "published_at": "2026-11-06T03:53:21.000Z",
+    "og_image_url": null,
+    "title_ja": "AI時代に仕事は消えるのか？カーネギーメロン大学教授陣がキャリアと学習の未来を徹底議論",
+    "summary_ja": "カーネギーメロン大学の教員陣が、AIの急速な進化が今後のキャリア形成や教育に与える影響について深く考察している。 単なるスキル習得の変容に留まらず、AI時代における専門性の定義や、将来的な学習アプローチがどうあるべきかを網羅的に議論。 ツールや技術を追うだけの開発者ではなく、技術の本質的理解と適応力をいかに養うかが、長期的な生存戦略における核心となる。 急速に変化するAI開発現場において、今何を学び直すべきか迷う全てのエンジニアにとって示唆に富む内容となっている。",
+    "translations": {
+      "ja": {
+        "title": "AI時代に仕事は消えるのか？カーネギーメロン大学教授陣がキャリアと学習の未来を徹底議論",
+        "summary": "カーネギーメロン大学の教員陣が、AIの急速な進化が今後のキャリア形成や教育に与える影響について深く考察している。 単なるスキル習得の変容に留まらず、AI時代における専門性の定義や、将来的な学習アプローチがどうあるべきかを網羅的に議論。 ツールや技術を追うだけの開発者ではなく、技術の本質的理解と適応力をいかに養うかが、長期的な生存戦略における核心となる。 急速に変化するAI開発現場において、今何を学び直すべきか迷う全てのエンジニアにとって示唆に富む内容となっている。"
+      },
+      "en": {
+        "title": "Are We Cooked? Carnegie Mellon Faculty Discuss the Future of Careers and Learning in an AI-Driven World",
+        "summary": "Carnegie Mellon University faculty provide a comprehensive analysis of how rapid AI advancement is reshaping professional careers and traditional educational frameworks. Beyond simple skill obsolescence, the discussion explores how definitions of expertise are evolving and what specific learning approaches developers must adopt to remain relevant. The session argues that shifting from superficial tool adoption to a deep, first-principles understanding of technology is the only viable long-term strategy for survival. For engineers navigating the current uncertainty, this deep dive offers a critical perspective on which foundational skills are becoming obsolete and where to focus intellectual efforts. It is essential viewing for builders concerned with whether their current career trajectory can withstand the impending wave of AI-driven automation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-06T04:32:10.058Z"
+  },
+  {
+    "id": "art-1793939523237-3lcjc",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/jazzy_mole4788/n/ne2d2574a80ed",
+    "published_at": "2026-11-06T04:26:53.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331767073/rectangle_large_type_2_ee86d238881f81ffba5e6003ddb3683c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "CPUの鬼ごっこAIが試合ごとに弱体化するバグ、ログ解析とClaude Codeでの修正により3試合7回から55回への改善を達成",
+    "summary_ja": "自作の鬼ごっこゲームで、CPUの鬼が3試合でわずか7回しかタッチできないという問題をClaude Codeで調査した。 ログを追跡すると、試合が進むごとにパフォーマンスが低下する根本原因が判明。 段階的なコード修正とゲームルールの調整により、タッチ回数は最終的に55回まで向上した。 AI任せの修正で失敗しても、ログを解析して対話型コーディングを繰り返すことで、エージェントの能力を最大限に引き出せることを示した好例だ。",
+    "translations": {
+      "ja": {
+        "title": "CPUの鬼ごっこAIが試合ごとに弱体化するバグ、ログ解析とClaude Codeでの修正により3試合7回から55回への改善を達成",
+        "summary": "自作の鬼ごっこゲームで、CPUの鬼が3試合でわずか7回しかタッチできないという問題をClaude Codeで調査した。 ログを追跡すると、試合が進むごとにパフォーマンスが低下する根本原因が判明。 段階的なコード修正とゲームルールの調整により、タッチ回数は最終的に55回まで向上した。 AI任せの修正で失敗しても、ログを解析して対話型コーディングを繰り返すことで、エージェントの能力を最大限に引き出せることを示した好例だ。"
+      },
+      "en": {
+        "title": "Debugging CPU AI in a Tag Game: Increasing Tag Frequency from 7 to 55 Hits Using Claude Code and Log Analysis",
+        "summary": "After observing that their self-built tag game’s CPU agent managed a disappointing seven touches over three matches—with performance degrading over time—the developer leveraged Claude Code to identify the root cause. Initial attempts at automated fixes failed to improve the outcome, so the developer began analyzing execution logs to methodically isolate logic errors and adjust game rules. This iterative process, which combined deep log inspection with targeted AI-assisted coding, ultimately boosted the CPU's effectiveness to 55 tags per match. The experience highlights that while AI coding agents are powerful tools, the developer’s ability to interpret trace logs and direct the AI remains essential for solving complex state-based game logic issues."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-06T04:32:03.237Z"
+  },
+  {
+    "id": "art-1793939512626-ectdv",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/invintory-com",
+    "published_at": "2026-11-05T23:46:42+00:00",
+    "og_image_url": null,
+    "title_ja": "高級腕時計コレクター向け資産管理アプリ「Invintory」、ニッチな情熱を収益化するSaaS構築の裏側とコミュニティ成長の秘訣",
+    "summary_ja": "高級腕時計コレクターの資産管理を支援するSaaS「Invintory」は、個人の熱量からスタートし、現在は本格的なプラットフォームへと成長を遂げた。 単なる所有リスト管理にとどまらず、市場価値のリアルタイム追跡や保険連携機能を提供することで、既存の愛好家コミュニティに深く刺さるプロダクトへと進化している。 開発者は、広範な市場よりも「特定の強いニーズを持つ熱心な層」に焦点を当てることが、個人開発から持続可能な収益モデルを確立する最短ルートであると強調する。",
+    "translations": {
+      "ja": {
+        "title": "高級腕時計コレクター向け資産管理アプリ「Invintory」、ニッチな情熱を収益化するSaaS構築の裏側とコミュニティ成長の秘訣",
+        "summary": "高級腕時計コレクターの資産管理を支援するSaaS「Invintory」は、個人の熱量からスタートし、現在は本格的なプラットフォームへと成長を遂げた。 単なる所有リスト管理にとどまらず、市場価値のリアルタイム追跡や保険連携機能を提供することで、既存の愛好家コミュニティに深く刺さるプロダクトへと進化している。 開発者は、広範な市場よりも「特定の強いニーズを持つ熱心な層」に焦点を当てることが、個人開発から持続可能な収益モデルを確立する最短ルートであると強調する。"
+      },
+      "en": {
+        "title": "How Invintory Turned a Niche Passion for Luxury Watches into a Profitable SaaS Asset Tracker for Collectors",
+        "summary": "Invintory began as a modest side project for luxury watch collectors but rapidly evolved into a robust SaaS platform for managing high-value asset portfolios. By offering real-time market valuation tracking and integrated insurance documentation, the app solves specific pain points for enthusiasts that generic tools overlook. The founder emphasizes that targeting a deeply passionate, niche audience is superior to chasing broad market appeal when bootstrapping a sustainable business. For solo developers, the lesson here is clear: focusing on a vertical with high willingness-to-pay and low churn allows you to build a defensible product that competitors cannot easily replicate. True product-market fit comes from deeply understanding community-specific needs rather than solving generic problems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-06T04:31:52.626Z"
+  },
+  {
     "id": "art-1793938651862-27rs9",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -29941,32 +30047,6 @@
     "created_at": "2026-11-01T19:46:37.337Z"
   },
   {
-    "id": "art-1793561531875-mhyei",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/lithe_vole7001/n/nc6dd2924a730",
-    "published_at": "2026-11-01T17:31:47.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/322589896/rectangle_large_type_2_5cc711b47658173d0310127333e2e678.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "7MBのCAD図面が重い。開発中の「Tuyukusa」が計測上で475倍の高速化を達成するも残る課題と、パフォーマンス改善に向けた二日間の詳細分析記録",
-    "summary_ja": "個人開発CAD「Tuyukusa」のパフォーマンス改善記録。 測定手法の改善により特定処理で475倍の高速化を実現したものの、依然として7MBのCAD図面描画には重さが残る現実を直視し、ボトルネックを分解して再定義した。 単なる速度数値の向上だけでなく、「どこがユーザー体験を損ねているか」を構造的に解明するプロセスは、複雑なアプリを開発する全エンジニアにとって示唆に富む教訓だ。",
-    "translations": {
-      "ja": {
-        "title": "7MBのCAD図面が重い。開発中の「Tuyukusa」が計測上で475倍の高速化を達成するも残る課題と、パフォーマンス改善に向けた二日間の詳細分析記録",
-        "summary": "個人開発CAD「Tuyukusa」のパフォーマンス改善記録。 測定手法の改善により特定処理で475倍の高速化を実現したものの、依然として7MBのCAD図面描画には重さが残る現実を直視し、ボトルネックを分解して再定義した。 単なる速度数値の向上だけでなく、「どこがユーザー体験を損ねているか」を構造的に解明するプロセスは、複雑なアプリを開発する全エンジニアにとって示唆に富む教訓だ。"
-      },
-      "en": {
-        "title": "CAD Developer Documents 475× Performance Gain on 7MB Drawings, Yet Still Confronts Latency Bottlenecks in Tuyukusa Build",
-        "summary": "In a candid development diary for \"Tuyukusa,\" a custom CAD application, the author details the frustration of optimizing complex file rendering. While initial instrumentation revealed a specific bottleneck where optimization yielded a massive 475× speed improvement, the 7MB CAD files still feel sluggish to the end user. Rather than chasing raw benchmark numbers, the developer spent two days meticulously breaking down the \"slowness\" into constituent parts to find where the perceived latency actually lives. For builders tackling heavy-client applications, this journey underscores that optimization is not just about micro-benchmarks; it requires a structural decomposition of user-facing performance to identify the true friction points that prevent a professional-grade experience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-01T19:32:11.875Z"
-  },
-  {
     "id": "art-1793561510619-xyar2",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -34380,33 +34460,6 @@
     "created_at": "2026-11-01T02:46:47.303Z"
   },
   {
-    "id": "art-1793501192556-h4fg4",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://medium.com/effortless-programming/ai-made-me-homeless-a7266d716e59",
-    "published_at": "2026-11-01T02:38:11.000Z",
-    "og_image_url": null,
-    "title_ja": "AI活用で収益化を目指した個人開発の悲劇：ツールへの過信とビジネスモデル崩壊から学べる「持続可能な開発」の教訓",
-    "summary_ja": "個人開発者がAIを駆使してアプリ開発と収益化を試みたものの、AIツールの過信と市場需要の誤認により、結果として生活基盤を失うという破滅的な結末を迎えた体験談。 技術スタックをAIに頼り切るリスクと、プロダクト検証を行わずにリリースを繰り返すことの危険性を警鐘する。 個人開発者は技術的な自動化に走る前に、解決すべき真の顧客課題と持続可能な収益モデルの確立を最優先すべきだという教訓である。",
-    "translations": {
-      "ja": {
-        "title": "AI活用で収益化を目指した個人開発の悲劇：ツールへの過信とビジネスモデル崩壊から学べる「持続可能な開発」の教訓",
-        "summary": "個人開発者がAIを駆使してアプリ開発と収益化を試みたものの、AIツールの過信と市場需要の誤認により、結果として生活基盤を失うという破滅的な結末を迎えた体験談。 技術スタックをAIに頼り切るリスクと、プロダクト検証を行わずにリリースを繰り返すことの危険性を警鐘する。 個人開発者は技術的な自動化に走る前に、解決すべき真の顧客課題と持続可能な収益モデルの確立を最優先すべきだという教訓である。"
-      },
-      "en": {
-        "title": "The harsh reality of solo AI-driven development: Why relying solely on AI agents without market validation leads to total failure",
-        "summary": "A cautionary tale from a solo developer who attempted to automate their entire product pipeline using AI agents, only to end up facing homelessness due to a complete lack of real market validation. By over-relying on automated tools to build products that nobody actually needed, the developer burned through their savings on infrastructure and subscription costs without generating a single cent of sustainable revenue. This post serves as a visceral reminder for the builder community: AI is a powerful force multiplier for engineering, but it is not a substitute for product-market fit or a viable business strategy. Before you automate your next launch, ensure your solution solves a genuine customer problem rather than just satisfying your own desire to build quickly."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-01T02:46:32.556Z"
-  },
-  {
     "id": "art-1793500355171-rfg9h",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -37554,32 +37607,6 @@
     "created_at": "2026-10-31T04:18:25.236Z"
   },
   {
-    "id": "art-1793420298624-g1k61",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/joinclass/articles/skills-hooks-mcp-claude-md-20260916220024-25755",
-    "published_at": "2026-10-30T23:00:15.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--eHtWK_fT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Skills%2520%252F%2520Hooks%2520%252F%2520MCP%2520%252F%2520CLAUDE.md%2520%25E3%2581%25AE%25E4%25BD%25BF%25E3%2581%2584%25E5%2588%2586%25E3%2581%2591%2520%25E2%2580%2594%2520%25E5%2588%25A4%25E6%2596%25AD%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2581%25E3%2583%25A3%25E3%2583%25BC%25E3%2583%2588%25E4%25BB%2598%25E3%2581%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JOINCLASS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NhOWUwY2FiYmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの拡張設定：CLAUDE.md、Skills、Hooks、MCPの役割と使い分けを完全攻略する判断フローチャート",
-    "summary_ja": "Claude Codeを用いた開発運用で、設定の置き場に迷う問題を解消するためのガイド。 CLAUDE.md、Skills、Hooks、MCPサーバーの4つの拡張ポイントには明確な発火条件の違いがあり、これらを理解せず混同すると「指示が無視される」「不要な実行で邪魔になる」といった非効率を招く。 本記事では、各機能の適切な適用範囲と選択基準をフローチャート化し、AIエージェントの自律性を最大化する構成管理の手法を解説する。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの拡張設定：CLAUDE.md、Skills、Hooks、MCPの役割と使い分けを完全攻略する判断フローチャート",
-        "summary": "Claude Codeを用いた開発運用で、設定の置き場に迷う問題を解消するためのガイド。 CLAUDE.md、Skills、Hooks、MCPサーバーの4つの拡張ポイントには明確な発火条件の違いがあり、これらを理解せず混同すると「指示が無視される」「不要な実行で邪魔になる」といった非効率を招く。 本記事では、各機能の適切な適用範囲と選択基準をフローチャート化し、AIエージェントの自律性を最大化する構成管理の手法を解説する。"
-      },
-      "en": {
-        "title": "Mastering Claude Code: A Decision Flowchart for CLAUDE.md, Skills, Hooks, and MCP Integrations",
-        "summary": "Operating a solo business primarily through Claude Code inevitably leads to confusion over configuration hierarchy: where should specific instructions live? Misunderstanding the distinct trigger conditions of CLAUDE.md, Skills, Hooks, and MCP servers often results in ignored prompts, redundant execution cycles, or broken agent autonomy. This guide clarifies the specific operational scope of each extension point, providing a practical decision-making flowchart to determine when to implement a dedicated MCP server versus a simple script or system instruction. By mapping these tools against specific workflow requirements, developers can stop wasting time on configuration debugging and build more resilient, context-aware agent loops that consistently follow project-specific constraints without conflicting with the core Claude model behavior."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-31T04:18:18.624Z"
-  },
-  {
     "id": "art-1793420178720-amw6b",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -37684,32 +37711,6 @@
       "開発"
     ],
     "created_at": "2026-10-31T03:46:39.947Z"
-  },
-  {
-    "id": "art-1793417989333-7u3by",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/neoru/articles/708bc41869d5a5",
-    "published_at": "2026-10-30T23:03:18.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jaruD3ps--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25AD%25A3%25E5%25B8%25B8%25E7%25B5%2582%25E4%25BA%2586%25E3%2583%25BB%25E6%25A4%259C%25E8%25A8%25BC%25E6%25B8%2588%25E3%2581%25BF%25E3%2583%25BB%25E4%25BF%259D%25E7%2595%2599%25E3%2582%2592%25E5%2588%2586%25E3%2581%2591%25E3%2582%258B%25E7%258A%25B6%25E6%2585%258B%25E7%25AE%25A1%25E7%2590%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:NEORU%25EF%25BD%259CAI%2520Business%2520OS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E0NDUzYzJmODUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI自動化で陥る「正常終了＝成功」の罠：処理状態と検証結果を切り分けるステート設計の勘所",
-    "summary_ja": "AIエージェントの自動化フローにおいて「エラーなし＝成功」と判断するのは危険であり、通知の未達や古いデータの取得といった「正常終了だが目的未達」のケースを見逃す原因となる。 これを防ぐには、システム的な終了状態（プロセスが止まらなかった事実）と、論理的な検証状態（目的を達成した事実）を明確に分離すべきだ。 両者を区別してステートを管理することで、AIの後続処理が不確実な結果に基づいて実行される事態を防ぎ、システムの堅牢性を高めることが可能となる。",
-    "translations": {
-      "ja": {
-        "title": "AI自動化で陥る「正常終了＝成功」の罠：処理状態と検証結果を切り分けるステート設計の勘所",
-        "summary": "AIエージェントの自動化フローにおいて「エラーなし＝成功」と判断するのは危険であり、通知の未達や古いデータの取得といった「正常終了だが目的未達」のケースを見逃す原因となる。 これを防ぐには、システム的な終了状態（プロセスが止まらなかった事実）と、論理的な検証状態（目的を達成した事実）を明確に分離すべきだ。 両者を区別してステートを管理することで、AIの後続処理が不確実な結果に基づいて実行される事態を防ぎ、システムの堅牢性を高めることが可能となる。"
-      },
-      "en": {
-        "title": "Why 'Success' isn't just 'No Errors': Decoupling process status from verification state in AI automation",
-        "summary": "In AI agent automation, conflating an error-free execution with actual success creates a dangerous blind spot where tasks may finish technically but fail to achieve the desired outcome, such as silent API delivery failures or stale data retrieval. The core of robust system design lies in decoupling the execution status—confirming the process did not crash—from the verification state—confirming the goal was actually satisfied. By managing these as distinct states, developers ensure that downstream AI processes never rely on unverified or false-positive results. This separation is crucial for maintaining system integrity and reliability, allowing builders to create automation workflows that explicitly distinguish between a system that functioned correctly and a task that fulfilled its business intent."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-31T03:39:49.333Z"
   },
   {
     "id": "art-1793417875567-q5reu",
