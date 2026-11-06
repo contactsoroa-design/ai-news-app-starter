@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793996226414-9k946",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hydenori24/articles/cairn-smartscreen-checksum",
+    "published_at": "2026-11-06T14:52:12.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fiqkZk3K--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cairn%25E3%2582%2592%25E5%2588%259D%25E3%2582%2581%25E3%2581%25A6%25E8%25B5%25B7%25E5%258B%2595%25E3%2581%2599%25E3%2582%258B%25E3%2581%25A8%25E8%25AD%25A6%25E5%2591%258A%25E3%2581%258C%25E5%2587%25BA%25E3%2582%258B%25E7%2590%2586%25E7%2594%25B1%25E3%2581%25A8%25E3%2580%2581%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2581%25AE%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B2%25E3%2581%25A7%25E3%2581%25AE%25E3%2582%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0ZGZTMmpxVko2OFozSkxJNWdiRGc1cV9oMld0N0JBdXVvZGRwbGR6aXFNPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "自作Windowsアプリ起動時のSmartScreen警告対策：未署名バイナリの信頼性を担保するSHA256ハッシュ検証の手法",
+    "summary_ja": "個人開発のWindowsアプリ「Cairn」を初起動する際に「WindowsによってPCが保護されました」というSmartScreen警告が出るのは、コード署名がないためだ。 ユーザーの信頼を得るために、配布時にSHA256SUMS.txtでハッシュ値を公開し、ダウンロードしたバイナリの整合性を検証する手順を周知することが重要である。 署名コストをかけられない個人開発者が、ユーザーへ安全性を証明するための必須の運用プラクティスだ。",
+    "translations": {
+      "ja": {
+        "title": "自作Windowsアプリ起動時のSmartScreen警告対策：未署名バイナリの信頼性を担保するSHA256ハッシュ検証の手法",
+        "summary": "個人開発のWindowsアプリ「Cairn」を初起動する際に「WindowsによってPCが保護されました」というSmartScreen警告が出るのは、コード署名がないためだ。 ユーザーの信頼を得るために、配布時にSHA256SUMS.txtでハッシュ値を公開し、ダウンロードしたバイナリの整合性を検証する手順を周知することが重要である。 署名コストをかけられない個人開発者が、ユーザーへ安全性を証明するための必須の運用プラクティスだ。"
+      },
+      "en": {
+        "title": "Why Windows SmartScreen flags your unsigned custom apps and how to verify file integrity via SHA256",
+        "summary": "When users launch an unsigned custom Windows app, they often encounter a generic SmartScreen warning, which can scare off potential users. Since high-cost code signing certificates are frequently prohibitive for indie developers, the solution is providing transparent checksums for validation. By publishing a SHA256SUMS.txt file alongside your releases, you empower users to verify that the downloaded binary is exactly what you built, untouched and untampered. This is a critical trust-building mechanism for indie builders; while it does not bypass the SmartScreen warning, it establishes a verifiable audit trail that proves your distribution package has not been corrupted or modified by third-party vectors, bridging the trust gap between you and your user base effectively."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-06T20:17:06.414Z"
+  },
+  {
+    "id": "art-1793996220014-u1rxv",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.youtube.com/watch?v=WLYW6BPkkIk",
+    "published_at": "2026-11-06T19:55:14.000Z",
+    "og_image_url": null,
+    "title_ja": "AIは数学を「殺す」のか？形式検証と自動推論がもたらす数学研究の構造的変化と人間の役割",
+    "summary_ja": "AIによる自動推論や形式検証技術の進化は、数学研究のプロセスを根本から変えつつある。 かつて人間が手作業で行っていた厳密な証明作業はAIによって効率化される一方で、数学的本質の探求や新たな定義の構築といった創造的な側面は、今後むしろ人間の独壇場として重要性を増す可能性がある。 AIと数学の共生時代において、数学者が追求すべき新たな価値観と、ツールとしてのAI活用法を考察する。",
+    "translations": {
+      "ja": {
+        "title": "AIは数学を「殺す」のか？形式検証と自動推論がもたらす数学研究の構造的変化と人間の役割",
+        "summary": "AIによる自動推論や形式検証技術の進化は、数学研究のプロセスを根本から変えつつある。 かつて人間が手作業で行っていた厳密な証明作業はAIによって効率化される一方で、数学的本質の探求や新たな定義の構築といった創造的な側面は、今後むしろ人間の独壇場として重要性を増す可能性がある。 AIと数学の共生時代において、数学者が追求すべき新たな価値観と、ツールとしてのAI活用法を考察する。"
+      },
+      "en": {
+        "title": "Will AI Kill Mathematics? Exploring the Shift in Mathematical Research Through Formal Verification and Automated Reasoning",
+        "summary": "As automated reasoning and formal verification systems advance, the role of human mathematicians is undergoing a profound structural evolution. While AI excels at the rote, labor-intensive work of formal proof checking, the core mathematical challenge of intuition, definition-making, and structural insight remains uniquely human. This discussion moves beyond the alarmist view of AI killing mathematics, instead focusing on how researchers can leverage these tools to offload verification while deepening their creative focus. For builders, this transition highlights a critical lesson: as AI tools handle logic validation, our output quality will depend more on rigorous conceptual grounding than syntax. We are moving toward a hybrid era where human intent directs algorithmic deduction, necessitating a new literacy in verification-centric workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-06T20:17:00.014Z"
+  },
+  {
+    "id": "art-1793996212900-aft0k",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/minimalab_app/n/n578800336c81",
+    "published_at": "2026-11-06T20:08:30.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333085741/rectangle_large_type_2_d150ad23e9a07376c925c637a35f95d2.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "名著『ゼロ・トゥ・ワン』から学ぶ起業の本質：偉大な創業者が市場の独占と「垂直的進歩」をどう定義していたか再考する",
+    "summary_ja": "ピーター・ティールの『ゼロ・トゥ・ワン』を再読し、成功するスタートアップが競争を避け、独自の価値創造に集中する重要性を考察する。 市場における「独占」の定義や、0から1を生み出すための垂直的進歩という概念は、今のAI時代においても個人開発者が進むべき指針として色褪せない。 偉大な創業者たちが描いた未来の解像度をいかに自身のプロダクト設計に落とし込むか、その難しさと可能性について語る。",
+    "translations": {
+      "ja": {
+        "title": "名著『ゼロ・トゥ・ワン』から学ぶ起業の本質：偉大な創業者が市場の独占と「垂直的進歩」をどう定義していたか再考する",
+        "summary": "ピーター・ティールの『ゼロ・トゥ・ワン』を再読し、成功するスタートアップが競争を避け、独自の価値創造に集中する重要性を考察する。 市場における「独占」の定義や、0から1を生み出すための垂直的進歩という概念は、今のAI時代においても個人開発者が進むべき指針として色褪せない。 偉大な創業者たちが描いた未来の解像度をいかに自身のプロダクト設計に落とし込むか、その難しさと可能性について語る。"
+      },
+      "en": {
+        "title": "Revisiting Peter Thiel’s Zero to One: Defining Market Monopoly and Vertical Progress for Modern Solo Founders and Product Builders",
+        "summary": "Revisiting Peter Thiel’s seminal work, Zero to One, offers a critical perspective on how successful startups must prioritize unique value creation over entering crowded markets. The author explores the core concept of 'vertical progress'—going from zero to one—and argues that this mindset remains essential for solo developers navigating today's saturated AI ecosystem. The piece reflects on the difficulty of applying Thiel’s definition of market monopoly to personal projects while maintaining genuine innovation. For builders, the key takeaway is that true differentiation requires moving beyond incremental improvements toward building something entirely unique. This note serves as a reflective guide on bridging the gap between theoretical entrepreneurial wisdom and the practical, often difficult realities of independent product development in the current tech landscape."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-06T20:16:52.900Z"
+  },
+  {
+    "id": "art-1793996206484-ke990",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/supportapp3/items/97fbd1948c786de4f5ef",
+    "published_at": "2026-11-06T20:12:09.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSUZSWHFwZGtCR29hZGEtTGFPVi1pYjVuQVRGcFVzN29WdDZXT08tMm9sa05HLXBRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWFiN2FhZjJmY2UyZGI5YTgyNDlmYmRiODFlMTVlODll%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De5eb047b894f3f856d249b9e2715777f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9c2V0JTIwLWElM0IlMjBzb3VyY2UlMjAuZW52JTIwJUUzJTgxJTk5JUUzJTgyJThCJUUzJTgxJUE4JUU1JUFEJTkwJUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgyJUJCJUUzJTgyJUI5JUUzJTgxJUFCJUUzJTgyJTgyJTIwQVBJJTIwJUUzJTgyJUFEJUUzJTgzJUJDJUUzJTgxJThDJUU2JUI4JUExJUUzJTgyJThCJUVGJUJDJTlBc291cmNlJTIwJUUzJTgxJUEwJUUzJTgxJTkxJUUzJTgxJUE3JUUzJTgxJUFGJUU2JUI4JUExJUUzJTgyJTg5JUUzJTgxJUFBJUUzJTgxJTg0JUVGJUJDJTg4JUU1JUFFJTlGJUU2JUE5JTlGJUU3JUEyJUJBJUU4JUFBJThEJUVGJUJDJTg5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YmZlODg2ZWYwOWVjMDRjYTgzY2I0MGM3NmFiZDlkMTE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzdXBwb3J0YXBwMyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTA5NGJiODkwZjg4NzU1MWU1NTAwZTNjZGViZGJhYmJi&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4a54639eb1e13e3e764dcf11a5817815",
+    "title_ja": "bash環境変数設定の落とし穴：source .envだけでは子プロセスに値が渡らない理由と「set -a」による解決策を徹底検証",
+    "summary_ja": "bashにおいて単に「source .env」を実行するだけでは、シェル変数として読み込まれるものの、環境変数としてexportされないため、Pythonや別プロセスからは値が見えない。 これを解決するには「set -a」を併用し、読み込みと同時に全変数をエクスポート状態にする必要がある。 bash 5.2.37での実機検証に基づき、CI/CDやローカル開発環境での変数の引き継ぎミスを防ぐための正しい読み込み手順を解説する。",
+    "translations": {
+      "ja": {
+        "title": "bash環境変数設定の落とし穴：source .envだけでは子プロセスに値が渡らない理由と「set -a」による解決策を徹底検証",
+        "summary": "bashにおいて単に「source .env」を実行するだけでは、シェル変数として読み込まれるものの、環境変数としてexportされないため、Pythonや別プロセスからは値が見えない。 これを解決するには「set -a」を併用し、読み込みと同時に全変数をエクスポート状態にする必要がある。 bash 5.2.37での実機検証に基づき、CI/CDやローカル開発環境での変数の引き継ぎミスを防ぐための正しい読み込み手順を解説する。"
+      },
+      "en": {
+        "title": "Bash environment variable pitfalls: why source .env fails to propagate to child processes and how set -a fixes it",
+        "summary": "Simply running 'source .env' in bash imports variables into the current shell, but they remain shell variables rather than exported environment variables, meaning child processes like Python scripts cannot see them. To correctly expose these variables to downstream tasks, you must use 'set -a' before sourcing, which automatically marks variables for export upon assignment. Based on verification using bash 5.2.37, this guide highlights why simple sourcing causes silent failures in CI/CD pipelines and local task runners. For developers building scripts or automation, the takeaway is to explicitly manage export flags rather than assuming loaded variables inherit environment status, ensuring robust configuration handling when spawning subshells or executing external application code in your dev environment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-06T20:16:46.484Z"
+  },
+  {
     "id": "art-1793995328700-ml4xk",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -26222,32 +26327,6 @@
     "created_at": "2026-11-02T21:46:57.864Z"
   },
   {
-    "id": "art-1793656008620-ngfv1",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/lain2772/n/nefee160cb0cd",
-    "published_at": "2026-11-02T21:13:50.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331528241/rectangle_large_type_2_ed7fe478c57961bc539c55b0a650dc90.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Rust学習連載第11回：バイナリデータの構造を理解し、独自の簡易アーカイバ「arc」を実装する実践テクニック",
-    "summary_ja": "Rust学習連載の第11回として、バイナリ形式の解析と操作を学ぶ実践的な解説が公開された。 テーマは独自の簡易アーカイバ「arc」の構築であり、ファイル構造の理解から実装までのプロセスを詳細に追うことができる。 バイナリデータと直接向き合うことで、Rustにおけるメモリ操作やデータ型の制約を深く理解できるため、低レイヤーの設計スキルを磨きたい開発者にとって最適な教材となる。",
-    "translations": {
-      "ja": {
-        "title": "Rust学習連載第11回：バイナリデータの構造を理解し、独自の簡易アーカイバ「arc」を実装する実践テクニック",
-        "summary": "Rust学習連載の第11回として、バイナリ形式の解析と操作を学ぶ実践的な解説が公開された。 テーマは独自の簡易アーカイバ「arc」の構築であり、ファイル構造の理解から実装までのプロセスを詳細に追うことができる。 バイナリデータと直接向き合うことで、Rustにおけるメモリ操作やデータ型の制約を深く理解できるため、低レイヤーの設計スキルを磨きたい開発者にとって最適な教材となる。"
-      },
-      "en": {
-        "title": "Rust practice series #11: Understanding binary data structures through building a custom simple archiver called 'arc'",
-        "summary": "The 11th installment of the popular Rust learning series has been released, focusing on the practical implementation of a custom simple archiver dubbed 'arc.' This entry serves as a deep dive into binary data formats, guiding developers through the mechanics of file structure manipulation. By interacting directly with binary bytes, readers gain essential insights into how Rust manages memory and type constraints at a low level. It is an excellent resource for builders looking to sharpen their system-level design skills, moving beyond simple abstractions to understand the foundational byte-level architecture that powers file storage. For those aiming to master Rust’s stricter memory safety model, this project provides a tangible, hands-on way to debug and structure binary data effectively."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-02T21:46:48.620Z"
-  },
-  {
     "id": "art-1793656002131-mxlv6",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -32003,33 +32082,6 @@
       "開発"
     ],
     "created_at": "2026-11-02T04:01:39.942Z"
-  },
-  {
-    "id": "art-1793591211278-93nyh",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.economist.com/business/2026/11/01/hackers-are-running-riot-with-ai-its-makers-want-to-cash-in",
-    "published_at": "2026-11-02T03:11:48.000Z",
-    "og_image_url": null,
-    "title_ja": "AI時代のサイバー犯罪：AI開発各社がセキュリティ対策ツールで収益化を図るビジネスモデルの光と影",
-    "summary_ja": "AI技術の悪用によりサイバー犯罪の高度化と効率化が急速に進む中、AI開発各社はこれを新たなビジネスチャンスと捉え、防御用のセキュリティAIツール提供による収益化を加速させている。 攻撃者と防御者がともにAIを活用する「AI軍拡競争」が常態化しており、脆弱性を突く攻撃とそれを防ぐAIの応酬が激化している。 開発者は、こうしたツールを導入する際、利便性とセキュリティのトレードオフを慎重に見極め、単なる防御製品の導入を超えた包括的なセキュリティ戦略を構築する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AI時代のサイバー犯罪：AI開発各社がセキュリティ対策ツールで収益化を図るビジネスモデルの光と影",
-        "summary": "AI技術の悪用によりサイバー犯罪の高度化と効率化が急速に進む中、AI開発各社はこれを新たなビジネスチャンスと捉え、防御用のセキュリティAIツール提供による収益化を加速させている。 攻撃者と防御者がともにAIを活用する「AI軍拡競争」が常態化しており、脆弱性を突く攻撃とそれを防ぐAIの応酬が激化している。 開発者は、こうしたツールを導入する際、利便性とセキュリティのトレードオフを慎重に見極め、単なる防御製品の導入を超えた包括的なセキュリティ戦略を構築する必要がある。"
-      },
-      "en": {
-        "title": "As AI empowers cybercriminals, major AI developers are aggressively commercializing defensive security tools to turn threats into revenue",
-        "summary": "As AI lowers the barrier for sophisticated cyberattacks, major AI developers are pivoting to monetize this crisis by offering advanced defensive security tools, effectively profiting from the very threats their technology helped unleash. We are now witnessing a permanent AI arms race where both attackers and defenders deploy generative models to identify exploits and patch vulnerabilities in real time. For developers and engineering leaders, this shifts the paradigm: simply deploying commercial security AI is no longer a silver bullet. You must now architect systems with the assumption that your adversary is using identical AI tooling, requiring a more proactive, granular approach to threat modeling that goes beyond standard out-of-the-box defensive suite deployments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-02T03:46:51.278Z"
   },
   {
     "id": "art-1793591196128-0t8pi",
@@ -38270,32 +38322,6 @@
     "created_at": "2026-10-31T07:01:40.909Z"
   },
   {
-    "id": "art-1793426537726-xo4bn",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/mno110/articles/director-ai-night-ops",
-    "published_at": "2026-10-30T11:41:16.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MBGWB4bk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%258C%2587%25E7%25A4%25BA%25E5%25BD%25B9%25E3%2582%2592%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25BD%25E3%2583%258A%25E3%2583%25ABAI%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E5%25A4%259C%25E9%2596%2593%25E3%2581%25AE%25E9%2596%258B%25E7%2599%25BA%25E3%2581%258C%25E5%258B%259D%25E6%2589%258B%25E3%2581%25AB%25E5%259B%259E%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mno%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA0OGQ4YzY4MWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「AI指示役」で夜間開発を完全自動化—開発効率を最大化したのはAIの性能ではなく「仕様の言語化」だった",
-    "summary_ja": "パーソナルAI「Muse」を開発指示役として導入し、タスクのレビューから次工程の生成までを自動化するワークフローを構築。 この自動化が実現した真の要因は、AIの賢さではなく、事前に実装範囲や仕様をドキュメント化して定義していた運用体制にある。 AIに丸投げするのではなく、人間が定めた厳密な仕様に基づいてAIを動かすという「指示の前段階」こそが、自律的な開発サイクルを回すための決定的な鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "「AI指示役」で夜間開発を完全自動化—開発効率を最大化したのはAIの性能ではなく「仕様の言語化」だった",
-        "summary": "パーソナルAI「Muse」を開発指示役として導入し、タスクのレビューから次工程の生成までを自動化するワークフローを構築。 この自動化が実現した真の要因は、AIの賢さではなく、事前に実装範囲や仕様をドキュメント化して定義していた運用体制にある。 AIに丸投げするのではなく、人間が定めた厳密な仕様に基づいてAIを動かすという「指示の前段階」こそが、自律的な開発サイクルを回すための決定的な鍵となる。"
-      },
-      "en": {
-        "title": "How defining strict specifications enabled autonomous AI 'project managers' to handle night-shift development tasks",
-        "summary": "By deploying a personal AI agent called Muse to manage development, the author successfully automated a complete feedback loop: reviewing completed tasks and dispatching new instructions for the next sprint. The surprising takeaway isn't that AI models have become smarter at project management, but that the automation succeeded because the author already had a rigorous process for documenting specifications and scope before writing code. Attempting to force AI to handle ambiguous tasks remains difficult, but by formalizing requirements first, the AI acts as a reliable execution engine. For independent developers, the lesson is clear: building an autonomous development pipeline requires treating your specs as the primary interface, ensuring that the machine is executing defined logic rather than guessing intent."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-31T06:02:17.726Z"
-  },
-  {
     "id": "art-1793424776339-cr62v",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -38322,32 +38348,6 @@
       "開発"
     ],
     "created_at": "2026-10-31T05:32:56.339Z"
-  },
-  {
-    "id": "art-1793423821872-967q8",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/takababa/articles/20260421-sk4apo",
-    "published_at": "2026-10-31T01:09:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--BEW_Xn4o--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255B%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%255D%2520BlogSync%25E5%258B%2595%25E4%25BD%259C%25E7%25A2%25BA%25E8%25AA%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:takababa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0VRdTNvdGNOd05UR1l5VEtJblJZcHdlTFRPX01BY2lyUU5CY1FpaF9XN20zS2FkQ1hnUT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeを活用し2ヶ月で構築したAI校正ツール「fuSen」開発記と、Zenn・Qiita同時投稿を自動化する「BlogSync」の全貌",
-    "summary_ja": "Claude Codeを駆使して2ヶ月でWeb校正ツール「fuSen」を開発した開発者が、ZennやQiitaへのマルチプラットフォーム投稿を効率化する自作ツール「BlogSync」を公開した。 Markdown記事をワンクリックで両サイトに同時投稿できるほか、予約投稿やトークン管理にも対応する。 技術ブログ運営の工数を大幅に削減し、開発者が本来のプロダクト改善に集中するためのエンジニアリングの好例である。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeを活用し2ヶ月で構築したAI校正ツール「fuSen」開発記と、Zenn・Qiita同時投稿を自動化する「BlogSync」の全貌",
-        "summary": "Claude Codeを駆使して2ヶ月でWeb校正ツール「fuSen」を開発した開発者が、ZennやQiitaへのマルチプラットフォーム投稿を効率化する自作ツール「BlogSync」を公開した。 Markdown記事をワンクリックで両サイトに同時投稿できるほか、予約投稿やトークン管理にも対応する。 技術ブログ運営の工数を大幅に削減し、開発者が本来のプロダクト改善に集中するためのエンジニアリングの好例である。"
-      },
-      "en": {
-        "title": "Building an AI Proofreading Tool in Two Months with Claude Code, Plus Automating Multi-Platform Publishing with 'BlogSync'",
-        "summary": "A developer successfully built 'fuSen,' a new Japanese web proofreading tool, in just two months by leveraging Claude Code. To manage growth and outreach, they engineered 'BlogSync,' a custom utility that automates simultaneous publishing of Markdown articles to both Zenn and Qiita. Beyond simple cross-posting, the tool features scheduled posting capabilities and centralized token management for different platforms. This release demonstrates how developers can reclaim time lost to manual content distribution by building internal utilities that streamline the blogging workflow. For independent builders managing multiple channels, BlogSync offers a pragmatic blueprint for automating tedious platform-specific formatting and publishing tasks, allowing teams to focus exclusively on product development and feature iteration instead of manual overhead."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-31T05:17:01.872Z"
   },
   {
     "id": "art-1793423786464-z4ty9",
