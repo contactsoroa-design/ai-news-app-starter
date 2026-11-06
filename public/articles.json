@@ -1,5 +1,115 @@
 [
   {
+    "id": "art-1793988170336-pwh9f",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/lhjjjk4/items/4a7ae5abc1e027424a4c",
+    "published_at": "2026-11-06T17:50:58.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUFUWEFKejRJUk9sRzB3UnBpYlA1b0YzWHo2Y291MTdHYXVwYkw1X3dTUUIlM0RzNTAtbW8_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWIyZjY1NmMxN2E4ZTk4ZGYyY2VkYmU5MmUzM2MwOTQ3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd01cdc4a99f3e3f94b607574520e6034?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9RGVlcFNlZWslMjBTdXBlcmFnZW50JUUzJTgxJUE3R2l0SHViJTIwSXNzdWUlRTMlODIlOTJQUiVFMyU4MSVCRSVFMyU4MSVBNyVFOSU4MSU4QiVFMyU4MSVCNiVFRiVCQyU5QSVFNSVCMCU4RSVFNSU4NSVBNSVFMyU4MSVBOCVFNiU5QyU4MCVFNSU4OCU5RCVFMyU4MSVBRSVFNCVCOCU4MCVFNCVCQiVCNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTZlMzM3NGQ5ZjI2N2FkOWZkNTk0YzJjMmZmMjI5OTE2&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsaGpqams0JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTUwY2Y1ZTE4YzU4OWQ1NDhlYzgyYTBkYjQ4NzI2MTQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3efac65b577aafe3828850a962c63a51",
+    "title_ja": "DeepSeek SuperagentでGitHub IssueをPR化：自律エージェントの「修正完了」を鵜呑みにしないためのデバッグ戦略",
+    "summary_ja": "DeepSeek Superagentを使いGitHub IssueからPRまでを自動化する試みにおいて、AIが提示する「修正完了」の罠に注意が必要だ。 設定関数の修正を報告しても、呼び出し側の整合性が取れずエラーが再発する事態は珍しくない。 AIの変更提案をそのまま統合せず、実際にテスト環境で動かして検証するフローを組み込むことこそが、開発効率を損なわないための最優先事項である。",
+    "translations": {
+      "ja": {
+        "title": "DeepSeek SuperagentでGitHub IssueをPR化：自律エージェントの「修正完了」を鵜呑みにしないためのデバッグ戦略",
+        "summary": "DeepSeek Superagentを使いGitHub IssueからPRまでを自動化する試みにおいて、AIが提示する「修正完了」の罠に注意が必要だ。 設定関数の修正を報告しても、呼び出し側の整合性が取れずエラーが再発する事態は珍しくない。 AIの変更提案をそのまま統合せず、実際にテスト環境で動かして検証するフローを組み込むことこそが、開発効率を損なわないための最優先事項である。"
+      },
+      "en": {
+        "title": "Automating GitHub Issues to PRs with DeepSeek Superagent: Avoiding the Trap of Blindly Trusting AI Refactors",
+        "summary": "Exploring the use of DeepSeek Superagent to automate the GitHub Issue-to-PR pipeline reveals a critical pitfall: agents frequently report successful refactors that ultimately fail during integration. In a real-world attempt, the agent successfully modified a configuration function but failed to update dependent arguments in the caller, causing immediate runtime errors. This highlights the gap between an AI claiming a task is \"done\" and the code actually being functional. For builders integrating agentic workflows, the lesson is clear: never treat AI-generated code as production-ready. Integrating automated testing or human-in-the-loop verification steps before merging is mandatory to avoid breaking your codebase, as these agents currently lack the context to understand downstream system dependencies."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-06T18:02:50.336Z"
+  },
+  {
+    "id": "art-1793988147328-ennhw",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/vercel-cli-can-now-set-new-projects-to-expire",
+    "published_at": "2026-11-06T18:00:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5nTuYmLKAP5U6aTI3wr4oq/983b7c0fd00a1bd3c09b6bd3b33e9de1/image__71_.png",
+    "title_ja": "Vercel CLI、自動削除機能付きデプロイに対応。開発用プロトタイプやテスト環境を最大30日間でクリーンアップ可能に",
+    "summary_ja": "Vercel CLIはバージョン65.12.0より、新規プロジェクトのデプロイ時に有効期限を設定できる「自動削除機能」を追加した。 --delete-project-afterオプションを利用することで、1時間から30日間の範囲で期限を指定し、期限切れ後にプロジェクトを自動でクリーンアップできる。 手動によるゴミ掃除が不要になるため、開発中の試作や一時的なデモ環境の乱立を効率的に抑制できるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Vercel CLI、自動削除機能付きデプロイに対応。開発用プロトタイプやテスト環境を最大30日間でクリーンアップ可能に",
+        "summary": "Vercel CLIはバージョン65.12.0より、新規プロジェクトのデプロイ時に有効期限を設定できる「自動削除機能」を追加した。 --delete-project-afterオプションを利用することで、1時間から30日間の範囲で期限を指定し、期限切れ後にプロジェクトを自動でクリーンアップできる。 手動によるゴミ掃除が不要になるため、開発中の試作や一時的なデモ環境の乱立を効率的に抑制できるだろう。"
+      },
+      "en": {
+        "title": "Vercel CLI introduces automated TTL for new deployments, enabling self-cleaning prototypes and test projects in under 30 days",
+        "summary": "Vercel CLI version 65.12.0 now allows developers to attach an expiration timestamp to new projects upon creation using the new --delete-project-after flag. Builders can set a time-to-live duration ranging from one hour up to 30 days, after which the project is automatically deleted, removing the operational burden of manually scrubbing stale demo environments or temporary test deployments. This is a critical workflow improvement for teams iterating rapidly, as it prevents account clutter and avoids the accumulation of unused infrastructure. By formalizing project lifecycles directly within the CLI workflow, developers can maintain cleaner environments without needing to track or periodically prune obsolete code experiments across their deployment history."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-06T18:02:27.328Z"
+  },
+  {
+    "id": "art-1793988135539-tn9ch",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/",
+    "published_at": "2026-11-06T18:01:00.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/05/ML-22216-featured-image.png",
+    "title_ja": "AWS SageMaker、NVIDIAの「MIG」サポートを開始。GPUのハードウェア分割でモデル推論効率を最大化する新機能を発表",
+    "summary_ja": "Amazon SageMaker InferenceがNVIDIAのMulti-Instance GPU（MIG）に対応した。 これにより、単一の物理GPUをハードウェアレベルで完全に隔離された複数のパーティションに分割し、それぞれで個別の推論モデルを実行したり、最適なサイズのリソースを割り当てることが可能になる。",
+    "translations": {
+      "ja": {
+        "title": "AWS SageMaker、NVIDIAの「MIG」サポートを開始。GPUのハードウェア分割でモデル推論効率を最大化する新機能を発表",
+        "summary": "Amazon SageMaker InferenceがNVIDIAのMulti-Instance GPU（MIG）に対応した。 これにより、単一の物理GPUをハードウェアレベルで完全に隔離された複数のパーティションに分割し、それぞれで個別の推論モデルを実行したり、最適なサイズのリソースを割り当てることが可能になる。"
+      },
+      "en": {
+        "title": "AWS SageMaker Inference adds NVIDIA MIG support to maximize GPU utilization via hardware partitioning",
+        "summary": "Amazon SageMaker Inference now supports NVIDIA Multi-Instance GPU (MIG), allowing developers to slice a single physical GPU into multiple hardware-isolated partitions. This capability enables running distinct models on separate slices or scaling resources precisely to fit specific workload requirements without wasting expensive accelerator capacity. By decoupling model deployments from full-GPU allocation, teams can significantly improve cost efficiency and throughput for varied inference tasks. For builders managing model endpoints, this integration marks a shift toward granular resource management, allowing for higher density deployments on premium hardware. The move demonstrates how infrastructure teams should prioritize hardware partitioning techniques to avoid over-provisioning compute resources when serving diverse, multi-model architectures in production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-06T18:02:15.539Z"
+  },
+  {
+    "id": "art-1793988101991-pm0ki",
+    "source_id": "source-elevenlabs",
+    "source_name": "ElevenLabs Blog",
+    "url": "https://elevenlabs.io/blog/ads-engine-human-review",
+    "published_at": "2026-11-06T12:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "ElevenLabs、広告エンジンに専門家による人力レビュー機能を統合。ローカライズの質向上とブランド価値を最大化する新体制へ",
+    "summary_ja": "ElevenLabsの広告エンジンは、言語ローカライゼーションの専門家とクリエイティブスペシャリストによる人力レビュー機能を追加した。 これにより、AI生成広告の文脈や文化的ニュアンス、ブランドの一貫性を各市場に合わせて最適化できるようになった。 機械的な生成だけでなく、プロの手を介することで、多言語展開における広告の信頼性とコンバージョン率の向上が期待できる。",
+    "translations": {
+      "ja": {
+        "title": "ElevenLabs、広告エンジンに専門家による人力レビュー機能を統合。ローカライズの質向上とブランド価値を最大化する新体制へ",
+        "summary": "ElevenLabsの広告エンジンは、言語ローカライゼーションの専門家とクリエイティブスペシャリストによる人力レビュー機能を追加した。 これにより、AI生成広告の文脈や文化的ニュアンス、ブランドの一貫性を各市場に合わせて最適化できるようになった。 機械的な生成だけでなく、プロの手を介することで、多言語展開における広告の信頼性とコンバージョン率の向上が期待できる。"
+      },
+      "en": {
+        "title": "ElevenLabs adds human review layer to Ads Engine, ensuring brand consistency and nuanced localization for global campaigns",
+        "summary": "ElevenLabs has upgraded its Ads Engine by integrating a specialized human review layer, staffed by localization experts and creative professionals. This mechanism ensures that AI-generated ad content is not just linguistically accurate but also culturally resonant and aligned with specific brand guidelines across diverse global markets. By blending automated generation with human oversight, brands can mitigate risks associated with tone-deaf AI output while maintaining rapid production cycles. For builders and marketers scaling international advertising, this hybrid approach validates that algorithmic content can meet strict professional standards. The practical takeaway is that quality control remains a non-negotiable step for high-stakes creative, even when generative AI handles the heavy lifting of audio and video production."
+      }
+    },
+    "tool_tags": [
+      "ElevenLabs"
+    ],
+    "genre_tags": [
+      "動画",
+      "ビジネス",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-06T18:01:41.991Z"
+  },
+  {
     "id": "art-1793987229292-oxn5h",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -29127,32 +29237,6 @@
     "created_at": "2026-11-02T11:17:16.445Z"
   },
   {
-    "id": "art-1793618225204-tzjb0",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/gofw/n/n582295e89c49",
-    "published_at": "2026-11-02T09:24:42.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331240064/rectangle_large_type_2_160ac39156b1a9bc2ceb7eecfbd890d6.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "神戸市の生活・防災・イベント情報を集約した地図アプリ「NowSpot 神戸版」公開、官民オープンデータを地図上で横断検索可能に",
-    "summary_ja": "株式会社ゴーフォワードが開発した「NowSpot 神戸版」は、神戸市内のAED設置場所や避難所、災害時の給水拠点、さらには地域のイベント情報までを単一の地図インターフェースに統合したWebサービスです。 行政が公開するバラバラなデータをAPI経由で吸い上げ、ユーザーの生活圏に紐づけて可視化することで、平時の利便性と有事の安全性を両立しています。 個人や地域密着型の開発者が、既存のオープンデータを活用して地域特化型のDXを推進する際の優れたモデルケースです。",
-    "translations": {
-      "ja": {
-        "title": "神戸市の生活・防災・イベント情報を集約した地図アプリ「NowSpot 神戸版」公開、官民オープンデータを地図上で横断検索可能に",
-        "summary": "株式会社ゴーフォワードが開発した「NowSpot 神戸版」は、神戸市内のAED設置場所や避難所、災害時の給水拠点、さらには地域のイベント情報までを単一の地図インターフェースに統合したWebサービスです。 行政が公開するバラバラなデータをAPI経由で吸い上げ、ユーザーの生活圏に紐づけて可視化することで、平時の利便性と有事の安全性を両立しています。 個人や地域密着型の開発者が、既存のオープンデータを活用して地域特化型のDXを推進する際の優れたモデルケースです。"
-      },
-      "en": {
-        "title": "Kobe-based developer launches NowSpot, an integrated mapping platform aggregating local lifestyle, disaster prevention, and community event data",
-        "summary": "GoForward Inc. has launched NowSpot, a new web-based mapping platform for Kobe that consolidates fragmented public data into a unified, interactive interface. The service visualizes critical information—including AED locations, emergency shelters, water supply hubs, and local event schedules—directly onto a map, bridging the gap between municipal administrative data and daily user needs. By leveraging open API data to make local information searchable and geolocated, the team has created both a daily utility and a vital safety resource. For independent developers, this serves as a powerful model for driving regional digital transformation by transforming static open-source government data into actionable, user-centric community tools that enhance both routine lifestyle convenience and crisis readiness."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-02T11:17:05.204Z"
-  },
-  {
     "id": "art-1793618215087-lwdk0",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -33349,32 +33433,6 @@
       "研究"
     ],
     "created_at": "2026-11-01T20:01:53.260Z"
-  },
-  {
-    "id": "art-1793563287655-ezcmz",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/shu15511551/items/a509cef8e698bef329f7",
-    "published_at": "2026-11-01T19:57:11.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDI5NjgzJTJGNjQ2YTViNjBmNjFjZDc5NmMxMmZiYzI1NGZiNWI2MzJkMDlhYTlhZiUyRmxhcmdlLnBuZyUzRjE3ODU1NTc0OTM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTMyMWM1ODM5NmUwZjAyNzg4Y2VmYzU0MGViNmRhODZm%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D733aeb5c1da5b5cb661dbb4534adfcff?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgxJUE5JUUzJTgxJTg2JUUzJTgyJTg0JUUzJTgyJTg5JUU1JUE0JUE3JUU1JUE0JTg5JUUzJTgxJUFBJUUzJTgyJTgyJUUzJTgxJUFFJUUzJTgyJTkyJUU0JUJEJTlDJUUzJTgxJUEzJUUzJTgxJUE2JUUzJTgxJTk3JUUzJTgxJUJFJUUzJTgxJUEzJUUzJTgxJTlGJUUzJTgxJThCJUUzJTgyJTgyJUUzJTgxJTk3JUUzJTgyJThDJUUzJTgxJUFBJUUzJTgxJTg0JTIwJUUyJTk0JTgwJUUyJTk0JTgwJTIwR2VtaW5pJTIwNCUyMEFyZ29uJUVGJUJDJTg4JUUzJTgyJUI0JUUzJTgzJUIzJUUzJTgxJUExJUUzJTgyJTgzJUUzJTgyJTkzJUVGJUJDJTg5JUUzJTgxJUE4JUU3JUI1JTg0JUUzJTgyJTkzJUUzJTgxJUE3R0FTJUUzJTgxJUFFJUU4JTg3JUFBJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MWE0NGI5MGYzZTQ5ZDQ2M2YzMDk3MzVmNDU4MjFkZmI&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzaHUxNTUxMTU1MSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTM3MzdkMTEzZmFkMWNmOGVlYzRhNGQxZDFlZTRkNWM1&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=d52829aba51b54b3a133ed43dcbbc8e8",
-    "title_ja": "Gemini搭載の自作MCPサーバー「秀GASマネージャー」公開、ブラウザやclasp不要でGASのコード修正と差分比較を0.3ミリ秒で実行",
-    "summary_ja": "Gemini 4 Argonを統合した自作MCPサーバー「秀GASマネージャー」が登場。 ブラウザやclaspを介さず会話ベースでGASのコードを直接書き換え、クラウド上の本番環境との差分比較をわずか0.3ミリ秒で完遂する。 開発ツールを排除し、自然言語での自律的な改善フローを構築することで、スクリプト管理のオーバーヘッドを劇的に削減するエンジニアリング事例である。",
-    "translations": {
-      "ja": {
-        "title": "Gemini搭載の自作MCPサーバー「秀GASマネージャー」公開、ブラウザやclasp不要でGASのコード修正と差分比較を0.3ミリ秒で実行",
-        "summary": "Gemini 4 Argonを統合した自作MCPサーバー「秀GASマネージャー」が登場。 ブラウザやclaspを介さず会話ベースでGASのコードを直接書き換え、クラウド上の本番環境との差分比較をわずか0.3ミリ秒で完遂する。 開発ツールを排除し、自然言語での自律的な改善フローを構築することで、スクリプト管理のオーバーヘッドを劇的に削減するエンジニアリング事例である。"
-      },
-      "en": {
-        "title": "Developer launches custom MCP server with Gemini 4 Argon, enabling browser-free GAS code refactoring and diffing in 0.3 milliseconds",
-        "summary": "A new custom MCP server, dubbed 'Hide-GAS Manager,' integrates Gemini 4 Argon to overhaul Google Apps Script development by eliminating browser reliance and clasp workflows. This tool enables developers to modify live GAS code through direct conversational inputs while executing diff comparisons against production environments in just 0.3 milliseconds. By stripping away standard UI dependencies, the system creates a streamlined, autonomous improvement loop for script management. For builders working with legacy or serverless platforms, the takeaway is that wrapping existing APIs into custom MCP servers can drastically collapse deployment cycles and reduce friction. It demonstrates how LLM-integrated development environments are becoming sophisticated enough to replace manual CLI and IDE overhead for everyday scripting tasks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-01T20:01:27.655Z"
   },
   {
     "id": "art-1793562403753-vqjag",
@@ -38602,32 +38660,6 @@
       "開発"
     ],
     "created_at": "2026-10-31T03:02:04.622Z"
-  },
-  {
-    "id": "art-1793414852322-lknyq",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/takababa/articles/20261031-xs97qj",
-    "published_at": "2026-10-31T01:09:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--BW8lvVUF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25B8%2580%25E4%25BA%25BA%25E3%2581%25A7%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%25E3%2581%25AE%25E7%25AF%2584%25E5%259B%25B2%25E3%2581%258C%25E3%2580%2581%25E5%25A4%2589%25E3%2582%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2597%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%259F%25EF%25BD%259C%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BASaaS%25E3%2580%258CfuSen%25E3%2580%258D%25E7%25AC%25AC%25E5%258D%2581%25E4%25B8%2583%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:takababa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0VRdTNvdGNOd05UR1l5VEtJblJZcHdlTFRPX01BY2lyUU5CY1FpaF9XN20zS2FkQ1hnUT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeで加速する個人開発の限界突破：Web校正ツール「fuSen」が実現した機能要望の即日実装と圧倒的な開発速度の裏側",
-    "summary_ja": "AIコーディングエージェント「Claude Code」を導入した個人開発SaaS「fuSen」において、ユーザーからの要望を即日実装・翌日リリースする爆速開発体制を実現した。 従来の開発手法では数日を要した機能追加やバグ修正も、AIとのペアプログラミングにより数時間で完了する。 個人開発者が担えるプロダクト成長の範囲は、AIツールの活用により質的に変化しており、一人で数人分の速度を出すことはもはや特別な努力ではなく実務レベルの現実となっている。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeで加速する個人開発の限界突破：Web校正ツール「fuSen」が実現した機能要望の即日実装と圧倒的な開発速度の裏側",
-        "summary": "AIコーディングエージェント「Claude Code」を導入した個人開発SaaS「fuSen」において、ユーザーからの要望を即日実装・翌日リリースする爆速開発体制を実現した。 従来の開発手法では数日を要した機能追加やバグ修正も、AIとのペアプログラミングにより数時間で完了する。 個人開発者が担えるプロダクト成長の範囲は、AIツールの活用により質的に変化しており、一人で数人分の速度を出すことはもはや特別な努力ではなく実務レベルの現実となっている。"
-      },
-      "en": {
-        "title": "Breaking individual dev limits with Claude Code: How web proofreading tool 'fuSen' achieved same-day feature shipping",
-        "summary": "By integrating the AI coding agent Claude Code into the development workflow for the SaaS 'fuSen', the solo developer achieved an astonishing production velocity where user feature requests are deployed on the same day they arrive. Tasks that previously required days of careful manual coding and debugging are now completed in mere hours through seamless AI-assisted pair programming. This paradigm shift proves that the scope of what one person can accomplish has fundamentally changed; sustaining high-velocity feature rollouts is no longer an outlier experience but a standard operating procedure for modern solo builders. Utilizing AI agents allows single developers to bridge the gap between individual output and professional-scale agility, making rapid iteration a core sustainable feature of the product itself."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-31T02:47:32.322Z"
   },
   {
     "id": "art-1793414787362-tw0pr",
@@ -52522,32 +52554,6 @@
       "開発"
     ],
     "created_at": "2026-10-26T00:43:59.111Z"
-  },
-  {
-    "id": "art-1792975431614-5mzsx",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/basedash",
-    "published_at": "2026-10-23T17:51:50.000Z",
-    "og_image_url": null,
-    "title_ja": "Basedash、定期CSVエクスポート機能をリリース：Slackやメールへの自動配信で運用工数を削減し、データ分析フローを自動化",
-    "summary_ja": "Basedashは、データベースのクエリ結果を毎週指定した日時にCSVとして抽出・送信できる定期エクスポート機能を公開した。 Slackやメールへの自動配信に対応しており、手動でクエリを実行してレポートを作成する運用工数を劇的に削減できる。 定型的なデータ抽出作業を自動化することで、エンジニアやアナリストは分析業務により注力できるようになる。",
-    "translations": {
-      "ja": {
-        "title": "Basedash、定期CSVエクスポート機能をリリース：Slackやメールへの自動配信で運用工数を削減し、データ分析フローを自動化",
-        "summary": "Basedashは、データベースのクエリ結果を毎週指定した日時にCSVとして抽出・送信できる定期エクスポート機能を公開した。 Slackやメールへの自動配信に対応しており、手動でクエリを実行してレポートを作成する運用工数を劇的に削減できる。 定型的なデータ抽出作業を自動化することで、エンジニアやアナリストは分析業務により注力できるようになる。"
-      },
-      "en": {
-        "title": "Basedash launches scheduled CSV exports to automate weekly reporting to Slack and email, cutting down manual database query maintenance",
-        "summary": "Basedash has introduced a scheduled CSV export feature that allows teams to automatically extract and deliver database query results on a weekly basis directly to Slack or email. This release addresses the common friction of manually running recurring reports, enabling developers and data teams to replace repetitive manual query execution with automated, timely delivery. By streamlining these data extraction workflows, Basedash helps engineering teams reduce operational overhead and ensure that stakeholders receive fresh data insights without any ongoing intervention. For product builders and data managers, the practical lesson is that automating the 'last mile' of data reporting is just as critical for efficiency as optimizing the database queries themselves."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-26T00:43:51.614Z"
   },
   {
     "id": "art-1792974539515-5821f",
