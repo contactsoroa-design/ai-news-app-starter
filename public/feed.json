@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1794004330911-y6in6",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/quick_badger1425/n/n0869194a679e",
+    "published_at": "2026-11-06T22:27:52.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332788922/rectangle_large_type_2_d5adfc490c318df7cbac5cc938f0ad39.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "C#でリアルタイム「オシロ風波形表示」を実装：完璧に見えるコードに潜む『15.6msの壁』とスレッド分離の罠",
+    "summary_ja": "C#を用いたリアルタイム波形描画において、一見完璧なコードでも『15.6msの壁』がパフォーマンスを阻害する要因となる。 OSのタイマー精度とスレッドスケジューリングの限界により、描画間隔が乱れる現象が発生するからだ。 これを克服するには、単純なメインスレッド処理を避け、描画処理を独立させたスレッド分離、リングバッファ活用、そしてダブルバッファリングによる排他制御の徹底が必須となる。",
+    "translations": {
+      "ja": {
+        "title": "C#でリアルタイム「オシロ風波形表示」を実装：完璧に見えるコードに潜む『15.6msの壁』とスレッド分離の罠",
+        "summary": "C#を用いたリアルタイム波形描画において、一見完璧なコードでも『15.6msの壁』がパフォーマンスを阻害する要因となる。 OSのタイマー精度とスレッドスケジューリングの限界により、描画間隔が乱れる現象が発生するからだ。 これを克服するには、単純なメインスレッド処理を避け、描画処理を独立させたスレッド分離、リングバッファ活用、そしてダブルバッファリングによる排他制御の徹底が必須となる。"
+      },
+      "en": {
+        "title": "Overcoming the 15.6ms Barrier: Optimizing C# Real-Time Oscilloscope Waveforms for Smooth Rendering and Precise Scheduling",
+        "summary": "When building real-time oscilloscope-style waveform displays in C#, developers often hit the '15.6ms barrier,' where rendering latency fluctuates due to the default precision of OS timers and thread scheduling limitations. This jitter ruins smooth visualization, even when the underlying logic appears error-free. To maintain consistent frame rates, you must decouple the rendering logic from the main UI thread entirely, implement ring buffers for data ingestion, and utilize double buffering to handle synchronization without locking the display path. For builders crafting high-frequency UI tools in C#, the lesson is clear: relying on standard execution loops often fails because of OS-level scheduling constraints, making specialized threading and memory management strategies absolutely mandatory for professional-grade performance."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-06T22:32:10.911Z"
+  },
+  {
+    "id": "art-1794004324404-1jxtk",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Git_Dayori/items/d8c5c9811db9e88173b1",
+    "published_at": "2026-11-06T22:31:02.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDE0MTQwJTJGZWNhZmNiZjMyMzkwOGQ3ODlmNzkyZDUxNTZmZDZlNTVkY2EzNjM0MSUyRnhfbGFyZ2UucG5nJTNGMTc3NjkyMzE3Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTk0ZjU5ZmZjNDczOGQ2ZDUzNDI4Yjc3ZTc2YWFhMGQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D454c3a9a5e0968be2f7a10c3c9f8eb49?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwR2l0SHViJUU2JTk3JUE1JUU1JUEwJUIxJUUzJTgwJTkxc2VjdXJpdHktYXVkaXQtc2tpbGwlRTMlODElOEMlMkIyJTJDNTI0JUUzJTgxJUE3JUU5JUE2JTk2JUU0JUJEJThEJUUzJTgwJTgxJUU1JUI4JUI4JUU5JTgwJUEzJUU1JTg1JUE1JUUzJTgyJThDJUU2JTlCJUJGJUUzJTgyJThGJUUzJTgyJThBMTAlRTQlQkIlQjYlRTMlODElQUYlRTclOUIlQjQlRTglQkYlOTElRTYlOUMlODAlRTUlQTQlOUElMjAlRTIlODAlOTQlMjAyMDI2LTExLTA3JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MDRiNmE3MmQ4ZGM1MWEzMmM2ZGZkZTRhODRlZGRjYWE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBHaXRfRGF5b3JpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZjI4YjlmMWRhMWM3MjMyODkxYjlmNGVjZDU1N2Q0ZWM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=8641e87de225962105d0e54157e864ca",
+    "title_ja": "GitHubトレンド：security-audit-skillが＋2,524で首位、トレンド常連の入れ替わり率が過去最多に",
+    "summary_ja": "2026年11月7日のGitHubトレンドは、セキュリティ監査スキル向上をテーマにした「security-audit-skill」が2,524スターを獲得し首位を獲得。 特筆すべきは常連リポジトリの入れ替わりが10件と直近で最多を記録した点であり、開発者の関心が急速に流動化している傾向が見て取れる。 トレンドの激しい移り変わりは、現在のOSS開発における技術スタックや注目領域が極めて短いサイクルで進化している証左と言えるだろう。",
+    "translations": {
+      "ja": {
+        "title": "GitHubトレンド：security-audit-skillが＋2,524で首位、トレンド常連の入れ替わり率が過去最多に",
+        "summary": "2026年11月7日のGitHubトレンドは、セキュリティ監査スキル向上をテーマにした「security-audit-skill」が2,524スターを獲得し首位を獲得。 特筆すべきは常連リポジトリの入れ替わりが10件と直近で最多を記録した点であり、開発者の関心が急速に流動化している傾向が見て取れる。 トレンドの激しい移り変わりは、現在のOSS開発における技術スタックや注目領域が極めて短いサイクルで進化している証左と言えるだろう。"
+      },
+      "en": {
+        "title": "GitHub Trending: 'security-audit-skill' takes top spot with 2,524 stars as repo turnover hits record high",
+        "summary": "On November 7, 2026, the repository 'security-audit-skill' dominated GitHub Trending with 2,524 new stars, highlighting a massive surge in developer interest surrounding security auditing methodologies. Notably, ten repeat repositories were replaced in the rankings, marking the highest turnover rate observed in recent daily cycles. This high volatility signals that the landscape for open-source project discovery is shifting rapidly, reflecting how quickly developer sentiment pivots toward emerging specialized tools. For builders monitoring these metrics, this trend underscores that sticking to static tools is insufficient; today’s engineering attention spans are shrinking, and staying relevant requires adapting to these volatile, fast-moving shifts in community priorities across the open-source ecosystem."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-06T22:32:04.404Z"
+  },
+  {
+    "id": "art-1794004302540-ioj0u",
+    "source_id": "source-github-copilot",
+    "source_name": "GitHub Copilot Changelog",
+    "url": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
+    "published_at": "2026-11-06T22:17:28.000Z",
+    "og_image_url": "https://github.blog/wp-content/uploads/2026/11/696879380-eb0b2c93-698d-46a2-a934-02bbf6d7fa36.jpg",
+    "title_ja": "GitHub Copilot導入効果ダッシュボードが刷新、ChatとVS Code Agentの利用状況も可視化へ",
+    "summary_ja": "GitHub Copilotの導入効果を測定するダッシュボードに、「Copilot Chat」と「VS Code Agent」の利用実績が統合された。 これにより、開発チームは合計9つのCopilot関連機能にわたる詳細なエンゲージメントを単一の画面で把握可能になる。 組織の生産性向上のボトルネックを特定し、AI活用を最適化したいエンジニアリングマネージャーにとって、定量的データの可視化は必須の施策と言える。",
+    "translations": {
+      "ja": {
+        "title": "GitHub Copilot導入効果ダッシュボードが刷新、ChatとVS Code Agentの利用状況も可視化へ",
+        "summary": "GitHub Copilotの導入効果を測定するダッシュボードに、「Copilot Chat」と「VS Code Agent」の利用実績が統合された。 これにより、開発チームは合計9つのCopilot関連機能にわたる詳細なエンゲージメントを単一の画面で把握可能になる。 組織の生産性向上のボトルネックを特定し、AI活用を最適化したいエンジニアリングマネージャーにとって、定量的データの可視化は必須の施策と言える。"
+      },
+      "en": {
+        "title": "GitHub Copilot impact dashboard expands to track Chat and VS Code agent usage across nine key experiences",
+        "summary": "GitHub has updated its Copilot impact dashboard to include engagement metrics for Copilot Chat and the VS Code Agents window, allowing teams to monitor usage across nine distinct Copilot experiences. This granular visibility helps engineering leads identify exactly how developers are interacting with AI tools, enabling more accurate assessments of productivity gains and potential bottlenecks. For builders running enterprise development teams, this unified view is critical for moving beyond anecdotal evidence to hard, data-driven optimization of AI workflows. The upgrade shifts focus toward quantifying actual tool adoption rates, proving that successfully scaling AI-assisted development requires rigorous, ongoing monitoring of user behavior rather than just deploying the code assistants and hoping for the best."
+      }
+    },
+    "tool_tags": [
+      "GitHub Copilot"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-06T22:31:42.540Z"
+  },
+  {
     "id": "art-1794003428243-o6012",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -24250,32 +24329,6 @@
     "created_at": "2026-11-03T12:02:45.032Z"
   },
   {
-    "id": "art-1793707358463-dclww",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/humashi_labs/n/nc5936e70f0d5",
-    "published_at": "2026-11-03T12:00:14.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331829651/rectangle_large_type_2_acde80ae212bc6040cf8c6d7e2a3ed91.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "開発日報#005：AIに「既存ゲームを超えうる」と認めさせようとした実験結果、AIの冷静な「いいえ」が突きつけた開発者への厳しい現実と洞察",
-    "summary_ja": "個人開発のプロジェクトにおいて、AIに対して「既存のゲームを超越するポテンシャルがあるか」と誘導尋問的に問いかけた開発日報の実験。 AIは期待に反して明確に「いいえ」と回答し、過度な楽観主義を牽制した。 開発者はこの冷徹なフィードバックから、AIをただの承認ツールではなく、客観的な壁打ち相手として活用する重要性を再認識している。 独りよがりな仮説を検証せず進めるのではなく、AIからの厳しい指摘を初期段階で組み込むことで、プロダクトの質を根本から見直す好機になると示唆した。",
-    "translations": {
-      "ja": {
-        "title": "開発日報#005：AIに「既存ゲームを超えうる」と認めさせようとした実験結果、AIの冷静な「いいえ」が突きつけた開発者への厳しい現実と洞察",
-        "summary": "個人開発のプロジェクトにおいて、AIに対して「既存のゲームを超越するポテンシャルがあるか」と誘導尋問的に問いかけた開発日報の実験。 AIは期待に反して明確に「いいえ」と回答し、過度な楽観主義を牽制した。 開発者はこの冷徹なフィードバックから、AIをただの承認ツールではなく、客観的な壁打ち相手として活用する重要性を再認識している。 独りよがりな仮説を検証せず進めるのではなく、AIからの厳しい指摘を初期段階で組み込むことで、プロダクトの質を根本から見直す好機になると示唆した。"
-      },
-      "en": {
-        "title": "Developers testing AI limitations discover that pushing for validation yields surprising \"no\" answers, providing critical product reality checks",
-        "summary": "In this developer log entry, the author recounts an experiment where they attempted to lead an AI into validating the assumption that their project possessed the potential to surpass existing market games. Despite the leading prompt, the AI firmly responded \"no,\" effectively checking the developer's optimism and forcing a more grounded perspective. This interaction serves as a valuable lesson: treat AI not as a rubber-stamping \"yes man,\" but as a critical sounding board that provides objective, sometimes harsh, feedback. By actively inviting critical pushback rather than seeking confirmation bias, builders can identify blind spots early in the development lifecycle, ultimately using these uncomfortable AI insights to refine their product strategy before committing to a flawed roadmap."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-03T12:02:38.463Z"
-  },
-  {
     "id": "art-1793707348755-n96zj",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -24327,32 +24380,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-03T11:46:45.608Z"
-  },
-  {
-    "id": "art-1793706399443-jlrgh",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/snow_bear/n/nf06e7dd80418",
-    "published_at": "2026-11-03T11:43:21.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331824879/rectangle_large_type_2_dc9db7b2d1fc17ccd288776798d3d086.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIコーディングツール「Claude Code」で買い物アプリを開発、人手による記述0行で「Poka Poka」を完成させる新連載",
-    "summary_ja": "AIによるコーディング自動化ツール「Claude Code」を活用し、買い物リストアプリ「Poka Poka」を開発する制作連載が開始された。 開発者は手動でのプログラム記述を一切行わず、短いプロンプトでの指示と工程ごとの承認判断のみで機能を実装している。 AIエージェントによる開発フローの構築に関心があるエンジニアにとって、実装作業をAIに委譲し、人間がマネージャー役に徹する開発スタイルの実践例として貴重なケーススタディとなる。",
-    "translations": {
-      "ja": {
-        "title": "AIコーディングツール「Claude Code」で買い物アプリを開発、人手による記述0行で「Poka Poka」を完成させる新連載",
-        "summary": "AIによるコーディング自動化ツール「Claude Code」を活用し、買い物リストアプリ「Poka Poka」を開発する制作連載が開始された。 開発者は手動でのプログラム記述を一切行わず、短いプロンプトでの指示と工程ごとの承認判断のみで機能を実装している。 AIエージェントによる開発フローの構築に関心があるエンジニアにとって、実装作業をAIに委譲し、人間がマネージャー役に徹する開発スタイルの実践例として貴重なケーススタディとなる。"
-      },
-      "en": {
-        "title": "Building a fully functional shopping app, Poka Poka, using Claude Code with zero lines of human-written code",
-        "summary": "This new development diary documents the creation of a shopping list application titled Poka Poka, built entirely using the AI coding agent Claude Code. Remarkably, zero lines of source code were written by hand; the human role was limited to issuing concise instructions and approving progress at each project milestone. For engineers exploring autonomous agent-based workflows, this project serves as a compelling case study on transitioning from developer to architect, where AI handles the implementation logic while the human focuses strictly on intent and oversight. It demonstrates a practical shift toward an AI-managed development style, offering actionable insights for builders looking to accelerate prototyping and shipping by delegating technical execution to LLM-powered coding agents."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-03T11:46:39.443Z"
   },
   {
     "id": "art-1793706393261-lhnm8",
@@ -32933,32 +32960,6 @@
       "研究"
     ],
     "created_at": "2026-11-02T01:31:54.538Z"
-  },
-  {
-    "id": "art-1793583090298-z3kwy",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Ikechom/items/a6c3424d3a14bf673a35",
-    "published_at": "2026-11-02T01:24:34.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDc5NTI2JTJGZmJmNjg0Mzg3ZjMyYTNlOTg1Zjk5NTMzMjE1NDI4MjMzZTRlNDNhMSUyRnhfbGFyZ2UucG5nJTNGMTc5MzQ2MzgzOD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NTA4OTFhZDkwYjMwNWY1NTk2ZjYzZjg4MmFlZTdmNGU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db9edc11bedd25a7cae516e370f3d5ae2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUJDJUFCJUU3JTk0JUJCJUU3JTk0JTlGJUU2JTg4JTkwQUklRTMlODIlOTIlRTMlODElQTklRTMlODElODYlRTklODElQjglRTMlODElQjYlRUYlQkMlOUZMeXJhJUUzJTgzJUJCQ2FudmElRTMlODMlQkJBZG9iZSUyMEZpcmVmbHklRTMlODElQUUlRTUlODUlQTUlRTUlOEElOUIlRTQlQkUlOEIlRTMlODIlOTIlRTYlQUYlOTQlRTglQkMlODMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03YmFjZWQ0N2FhNmVkNDBmNjlkNGVkMWIwZGEyMTBiZQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBJa2VjaG9tJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MjUyOWIxYmJhYWFkOGU0MjRjMWM4NWI4MDVlZGJhNWE&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=83a15ff1347c3b1aff299afbbc6436c5",
-    "title_ja": "漫画生成AIの最適解を探る：Lyra・Canva・Adobe Fireflyの特性比較と、ワークフローに応じたツール選択の勘所",
-    "summary_ja": "漫画生成AIの選定において重要なのは、全工程を自動化することではなく、どの作業をAIに任せたいかという明確な目的設定だ。 物語の構成からページレイアウトまでを行うのか、吹き出し配置まで含めるのか、あるいはキャラクターの画作りを重視するのかで最適なツールは異なる。 Lyra、Canva、Adobe Fireflyを比較すると、求められる入力形式や得意領域が大きく異なることがわかる。",
-    "translations": {
-      "ja": {
-        "title": "漫画生成AIの最適解を探る：Lyra・Canva・Adobe Fireflyの特性比較と、ワークフローに応じたツール選択の勘所",
-        "summary": "漫画生成AIの選定において重要なのは、全工程を自動化することではなく、どの作業をAIに任せたいかという明確な目的設定だ。 物語の構成からページレイアウトまでを行うのか、吹き出し配置まで含めるのか、あるいはキャラクターの画作りを重視するのかで最適なツールは異なる。 Lyra、Canva、Adobe Fireflyを比較すると、求められる入力形式や得意領域が大きく異なることがわかる。"
-      },
-      "en": {
-        "title": "Choosing the Right AI Manga Generator: Comparing Lyra, Canva, and Adobe Firefly Based on Your Specific Creative Workflow Needs",
-        "summary": "Selecting an AI manga generation tool requires moving beyond service names to define exactly which creative phase you need to outsource. Whether you are focusing on page layout and narrative structure, typography and speech bubble placement, or pure character illustration, your toolset selection should change accordingly. Comparing platforms like Lyra, Canva, and Adobe Firefly reveals that each requires distinct input formats and serves unique bottlenecks in the production pipeline. For creators and developers, the key lesson is not to hunt for a perfect all-in-one generator, but to treat AI as a modular assistant. By mapping your specific creative blockers against a tool's core strengths, you can integrate these services to optimize output without sacrificing control over your project's visual consistency."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "画像生成",
-      "開発"
-    ],
-    "created_at": "2026-11-02T01:31:30.298Z"
   },
   {
     "id": "art-1793582214450-m5dfh",
