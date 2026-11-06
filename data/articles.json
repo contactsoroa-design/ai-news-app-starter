@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793950331024-v6gu6",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/hakaru_design/articles/b934c2a1a54ae6",
+    "published_at": "2026-11-06T03:13:00.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--rdAFu-62--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:DESIGN.md%2520%25E3%2581%258C%25E5%258F%25A4%25E3%2581%2584%25E3%2581%25A8%2520AI%2520%25E3%2581%25AF%25E3%2580%258C%25E6%25AD%25A3%25E7%25A2%25BA%25E3%2581%25AB%25E9%2596%2593%25E9%2581%2595%25E3%2581%2588%25E3%2582%258B%25E3%2580%258D%25E2%2580%2594%2520%25E5%2590%258C%25E3%2581%2598%25E8%25AA%25B2%25E9%25A1%258C%25E3%2582%2592%25206%2520%25E5%259B%259E%25E3%2582%2584%25E3%2582%2589%25E3%2581%259B%25E3%2581%25A6%25E6%258E%25A1%25E7%2582%25B9%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B8%25AC%25E3%2582%258B%25E3%2583%2587%25E3%2582%25B6%25E3%2582%25A4%25E3%2583%258A%25E3%2583%25BC%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0lMMGI4YVdsMVNYanpEeENhbFJVTGVNeTZfbDkxdjNTVzJOdm1UU0lOczFwdldpRT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "DESIGN.mdが古いとAIは「自信満々に間違える」—開発仕様書と生成AIの整合性がUI品質に与える影響を6回の実験で検証",
+    "summary_ja": "AIへの指示出しにおいて、古いDESIGN.md（仕様書）を与えることが逆にAIの品質を著しく低下させるという検証結果が公開された。 著者は「お問い合わせセクション」の作成を6回繰り返し、仕様書の有無と更新状況がアウトプットに与える影響を比較。 丁寧に見えるコードでも仕様と乖離すれば「正確に間違える」という罠が浮き彫りになり、AI開発におけるドキュメントメンテナンスの重要性が強調されている。",
+    "translations": {
+      "ja": {
+        "title": "DESIGN.mdが古いとAIは「自信満々に間違える」—開発仕様書と生成AIの整合性がUI品質に与える影響を6回の実験で検証",
+        "summary": "AIへの指示出しにおいて、古いDESIGN.md（仕様書）を与えることが逆にAIの品質を著しく低下させるという検証結果が公開された。 著者は「お問い合わせセクション」の作成を6回繰り返し、仕様書の有無と更新状況がアウトプットに与える影響を比較。 丁寧に見えるコードでも仕様と乖離すれば「正確に間違える」という罠が浮き彫りになり、AI開発におけるドキュメントメンテナンスの重要性が強調されている。"
+      },
+      "en": {
+        "title": "Outdated DESIGN.md causes AI to hallucinate with confidence: Why input documentation freshness dictates UI implementation accuracy in generative workflows",
+        "summary": "A practical experiment highlights a critical failure in AI-assisted development: outdated documentation leads LLMs to produce code that looks high-quality but is functionally incorrect. By tasking an AI with building a contact section across six iterations, the author demonstrates that providing stale design documents results in lower scores than providing no documentation at all. When AI lacks current specifications, it confidently produces 'correct-looking' but wrong implementations, highlighting the dangerous illusion of competence in LLM outputs. For builders, the takeaway is clear: context isn't just about presence; it is about freshness. If your DESIGN.md or style guides aren't perfectly synced with your current stack, you are actively inviting the model to hallucinate implementation details while ignoring your project's unique constraints."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-06T07:32:11.024Z"
+  },
+  {
+    "id": "art-1793950324033-uf7se",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/perzianhq/mantis",
+    "published_at": "2026-11-06T06:38:36.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェントのWeb閲覧を高速化する「Mantis」公開、Playwright MCPと比較して36％の処理効率向上を実現",
+    "summary_ja": "AIエージェントによるWebブラウジングの遅延を解消する新ツール「Mantis」が登場した。 従来のPlaywright MCPと比較して、不要なデータ転送の削減やレンダリングプロセスの最適化により、ページ解析や操作の処理速度を36％向上させている。 エージェントが複雑なWebサイトを巡回する際、レスポンス時間の短縮は直接的なコスト削減とユーザー体験の改善につながる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントのWeb閲覧を高速化する「Mantis」公開、Playwright MCPと比較して36％の処理効率向上を実現",
+        "summary": "AIエージェントによるWebブラウジングの遅延を解消する新ツール「Mantis」が登場した。 従来のPlaywright MCPと比較して、不要なデータ転送の削減やレンダリングプロセスの最適化により、ページ解析や操作の処理速度を36％向上させている。 エージェントが複雑なWebサイトを巡回する際、レスポンス時間の短縮は直接的なコスト削減とユーザー体験の改善につながる。"
+      },
+      "en": {
+        "title": "Mantis browser automation for AI agents launches with 36% speed gains over Playwright MCP",
+        "summary": "Mantis is a newly launched tool designed to slash latency for AI agents performing web browsing tasks. By optimizing the underlying rendering process and aggressively minimizing unnecessary data overhead, Mantis achieves a 36% performance increase in page navigation and parsing speed compared to traditional Playwright MCP setups. For developers building autonomous agents, the speed of interaction with live web pages is often the primary bottleneck, directly impacting both execution cost and system reliability. This release provides a cleaner, more efficient abstraction layer for scraping or interacting with dynamic sites. If you are shipping agentic workflows that rely on real-time web context, adopting specialized tooling like Mantis is essential to keeping your token spend low and your agent throughput high."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-06T07:32:04.033Z"
+  },
+  {
+    "id": "art-1793950317528-8behr",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/nxs_algotradelog/n/nb3d329e72923",
+    "published_at": "2026-11-06T06:58:04.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332089303/rectangle_large_type_2_9873782bc5e7baad7834be46e1678977.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "プロンプト圧縮の罠：API効率化で「削ってはいけない指示」を見極める品質維持の勘所",
+    "summary_ja": "APIコスト最適化のためにプロンプトを短縮する際、単にトークン数を削るだけではLLMの判断品質が著しく低下するリスクがある。 特に複雑な論理構造やエッジケースへの対応指示は、冗長に見えても推論の精度を維持するために不可欠な制約条件だ。 開発者は単なる「長さ」の最適化ではなく、プロンプト内の「意味密度」を維持しながら、どの指示が推論の精度を担保しているのかを評価指標を用いて特定する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "プロンプト圧縮の罠：API効率化で「削ってはいけない指示」を見極める品質維持の勘所",
+        "summary": "APIコスト最適化のためにプロンプトを短縮する際、単にトークン数を削るだけではLLMの判断品質が著しく低下するリスクがある。 特に複雑な論理構造やエッジケースへの対応指示は、冗長に見えても推論の精度を維持するために不可欠な制約条件だ。 開発者は単なる「長さ」の最適化ではなく、プロンプト内の「意味密度」を維持しながら、どの指示が推論の精度を担保しているのかを評価指標を用いて特定する必要がある。"
+      },
+      "en": {
+        "title": "The Prompt Compression Trap: Identifying Critical Instructions to Maintain Quality While Optimizing API Efficiency",
+        "summary": "When optimizing API costs by shortening prompts, developers often fall into the trap of stripping essential instructions, which severely degrades LLM reasoning quality. While shorter prompts look efficient, complex logical constraints and edge-case handling are often critical to maintaining accuracy, even if they appear redundant to human readers. Builders must move beyond simple token minimization and instead focus on maintaining 'semantic density' within the prompt. The key lesson here is to use rigorous evaluation metrics to identify exactly which instructions are doing the heavy lifting for accuracy, ensuring that you do not sacrifice output reliability simply to shave a few cents off your API bill. Always validate that compression does not discard the fundamental guardrails required for your agent to function correctly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-06T07:31:57.528Z"
+  },
+  {
+    "id": "art-1793950303383-jpru0",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/zakiemon_qa/items/01f5fbe4052dd92ff1f0",
+    "published_at": "2026-11-06T07:31:24.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTI2MDExJTJGZDYzN2M1YTgwYzdhODQxMWQ5MDNjYzE4ODk2ZGI2MDhmNzZjNmNlNiUyRmxhcmdlLnBuZyUzRjE3OTM1ODY3MjE_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTg2MWQzM2EwNmY3NTMwNjY5ZGQ4Yzc3NjgwMDkzZmQ3%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZmZDg2YzU5MWUxZmI1MDQ2ZThiNmFlZDhhZTg4Njk5YWJiNjdmOWNmJTJGb3JpZ2luYWwuanBnJTNGMTQ5MzA5ODkzMD9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1kMjQ1NTBhYjc2ZmIxODFlN2QxN2U4MjZiZGFmZjZkNA%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3D216557b374e196ba8167fa2dda364346?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9SmFTU1QlMjBOaWlnYXRhJTIwTFQlRTUlQTQlQTclRTQlQkMlOUE2JUU2JTlDJUFDJUUzJTgxJUJFJUUzJTgxJUE4JUUzJTgyJTgxJTIwJUUyJTgwJTk1JTIwQUklRTMlODElOEMlRTQlQkQlOUMlRTYlQTUlQUQlRTMlODElOTklRTMlODIlOEIlRTYlOTklODIlRTQlQkIlQTMlRTMlODAlODElRTQlQkElQkElRTMlODElQUYlRTQlQkQlOTUlRTMlODIlOTIlRTMlODElOTklRTMlODIlOEIlRUYlQkMlOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz00ZWQ0NGZjMDA0MzJlYzMzM2JhM2NiMDFkYzRlZTg5Yw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB6YWtpZW1vbl9xYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTMzMDE3ZWNmNWU4YWY2M2IwOWY1YTM3ZDQ0ZDBiNTI2&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-IOePvuWgtOOCteODneODvOODiA&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=1deaa3007b5f4cbee900a4f11d85c96f",
+    "title_ja": "「AIが作業する時代、人は何をする？」JaSST Niigata LT大会で議論されたAI活用・テスト自動化の未来とエンジニアの役割",
+    "summary_ja": "JaSST NiigataのLT大会にて、AI時代における開発者の役割やテスト自動化のあり方が議論された。 AIが実装やテストを代行する一方で、人間は「何を作るべきか」という問いやAIの成果物の妥当性検証に注力すべきだと提言されている。 技術の進化に伴い、エンジニアは単なるコーディング作業から脱却し、要件定義やAIとの協調プロセスを設計する役割へとシフトする必要がある。",
+    "translations": {
+      "ja": {
+        "title": "「AIが作業する時代、人は何をする？」JaSST Niigata LT大会で議論されたAI活用・テスト自動化の未来とエンジニアの役割",
+        "summary": "JaSST NiigataのLT大会にて、AI時代における開発者の役割やテスト自動化のあり方が議論された。 AIが実装やテストを代行する一方で、人間は「何を作るべきか」という問いやAIの成果物の妥当性検証に注力すべきだと提言されている。 技術の進化に伴い、エンジニアは単なるコーディング作業から脱却し、要件定義やAIとの協調プロセスを設計する役割へとシフトする必要がある。"
+      },
+      "en": {
+        "title": "Future of Engineering: Insights from JaSST Niigata on Developer Roles in an AI-Driven Software Development Landscape",
+        "summary": "The recent JaSST Niigata Lightning Talk session explored the shifting paradigm of software engineering as AI increasingly handles coding and testing workflows. A central theme was that while AI automates manual tasks, human engineers must pivot toward defining product vision, validating AI-generated outputs, and managing complex requirements. The discussion underscores that in an era of automated execution, developer value is no longer tied to syntax output but to the critical judgment required to guide AI tools effectively. For builders, the key takeaway is that engineering expertise should now focus on the 'what' and 'why' of product development, ensuring that human oversight remains the anchor for software quality as AI adoption accelerates across the industry."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "研究"
+    ],
+    "created_at": "2026-11-06T07:31:43.383Z"
+  },
+  {
     "id": "art-1793949432853-qsjmf",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -29267,33 +29372,6 @@
     "created_at": "2026-11-02T00:31:32.371Z"
   },
   {
-    "id": "art-1793578601136-l697j",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tamatebako_apps/n/n81dc1a777311",
-    "published_at": "2026-11-01T23:38:47.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331164985/rectangle_large_type_2_6feb8859877de434477174e29de53f9f.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "有料記事4週間で売上0件、個人開発者が直面する「note集客」の残酷な現実と、コンテンツ販売で継続的な収益を生むための教訓",
-    "summary_ja": "会社員が初めて公開した有料記事が4週間経過しても販売数0件に終わった事例から、プラットフォーム依存の販売戦略における課題を考察する。 ただ書くだけでは届かない集客の壁に対し、認知拡大の工夫や既存コミュニティとの連携が必要不可欠だ。 単なる執筆だけでなく、マーケティング視点を欠いたコンテンツ販売がいかに収益化を遠ざけるか、個人開発者が学ぶべき教訓を提示する。",
-    "translations": {
-      "ja": {
-        "title": "有料記事4週間で売上0件、個人開発者が直面する「note集客」の残酷な現実と、コンテンツ販売で継続的な収益を生むための教訓",
-        "summary": "会社員が初めて公開した有料記事が4週間経過しても販売数0件に終わった事例から、プラットフォーム依存の販売戦略における課題を考察する。 ただ書くだけでは届かない集客の壁に対し、認知拡大の工夫や既存コミュニティとの連携が必要不可欠だ。 単なる執筆だけでなく、マーケティング視点を欠いたコンテンツ販売がいかに収益化を遠ざけるか、個人開発者が学ぶべき教訓を提示する。"
-      },
-      "en": {
-        "title": "Why my first paid article sold zero copies in four weeks: Hard lessons in platform-based content marketing for indie creators",
-        "summary": "A corporate employee shares the painful reality of launching a first paid article on note, only to find zero sales after four weeks. This case study highlights the common struggle of assuming that publishing quality content is enough to drive revenue on established platforms. Without a proactive distribution strategy or existing community leverage, even well-written material remains invisible to potential buyers. For indie builders and creators, the takeaway is clear: content creation alone cannot solve the lack of discoverability. Success requires integrating marketing efforts directly into the product lifecycle, proving that audience building is just as critical as the work itself. Relying solely on platform algorithms is a trap that often leads to zero-revenue outcomes for newcomers."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-02T00:16:41.136Z"
-  },
-  {
     "id": "art-1793578594805-t5dfl",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -33649,33 +33727,6 @@
     "created_at": "2026-11-01T10:31:33.194Z"
   },
   {
-    "id": "art-1793528217506-di676",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.indiehackers.com/post/i-m-building-25-free-ai-tools-for-small-businesses-in-7-days-each-here-s-why-and-what-i-need-from-you-e253531348",
-    "published_at": "2026-11-01T09:02:12.000Z",
-    "og_image_url": null,
-    "title_ja": "7日間でAIツールを構築：個人開発者が「小規模ビジネス向け」AIツール25個をリリースするプロジェクトを始動",
-    "summary_ja": "ある個人開発者が、7日間という短期間で小規模ビジネスの業務効率化に特化したAIツールを計25個開発するプロジェクトを立ち上げた。 汎用的なモデルではなく、特定のニッチな業務フローを自動化する実用性の高いツール群を高速で検証・展開する狙いがある。 開発者はフィードバックを求めており、小規模事業者が抱える「日常的な面倒な作業」をAIでどう置き換えられるかがプロジェクトの成功を左右する。",
-    "translations": {
-      "ja": {
-        "title": "7日間でAIツールを構築：個人開発者が「小規模ビジネス向け」AIツール25個をリリースするプロジェクトを始動",
-        "summary": "ある個人開発者が、7日間という短期間で小規模ビジネスの業務効率化に特化したAIツールを計25個開発するプロジェクトを立ち上げた。 汎用的なモデルではなく、特定のニッチな業務フローを自動化する実用性の高いツール群を高速で検証・展開する狙いがある。 開発者はフィードバックを求めており、小規模事業者が抱える「日常的な面倒な作業」をAIでどう置き換えられるかがプロジェクトの成功を左右する。"
-      },
-      "en": {
-        "title": "Indie hacker launches ambitious project to build 25 custom AI tools for small businesses, dedicating one week per tool",
-        "summary": "An indie developer has kicked off an ambitious challenge to build and release 25 separate AI-powered tools designed specifically for small business operations, allocating exactly seven days to each build. Instead of chasing broad, general-purpose LLM applications, the strategy focuses on solving hyper-specific, mundane operational bottlenecks that current enterprise software ignores. The developer is actively surveying the community to identify which tedious business tasks are most ripe for automation, aiming to validate the market viability of single-purpose AI wrappers. For builders, this project serves as a practical experiment in rapid prototyping cycles and identifying the precise friction points where small business owners are finally willing to pay for or rely on custom AI agents."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-01T10:16:57.506Z"
-  },
-  {
     "id": "art-1793528211555-oowt4",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -36867,32 +36918,6 @@
     "created_at": "2026-10-31T12:31:24.234Z"
   },
   {
-    "id": "art-1793448129871-60aoo",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tanashun/articles/ai-parallel-unattended-time",
-    "published_at": "2026-10-31T11:38:27.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--CBeKDw8_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%259F%25E6%2588%2590%2520AI%2520%25E3%2581%25AE%25E4%25BE%25A1%25E5%2580%25A4%25E3%2581%25AF%25E3%2580%2581%25E4%25BA%25BA%25E3%2581%258C%25E6%2589%258B%25E3%2582%2592%25E9%259B%25A2%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2582%2589%25E3%2582%258C%25E3%2582%258B%25E6%2599%2582%25E9%2596%2593%25E3%2581%25A7%25E6%25B1%25BA%25E3%2581%25BE%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tanashun%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTHdqb3lGMndkQXM2NDFUZ0Y3bzlTYWh3NV85cFpzNXNoLVZPRW9WWnZFU1FzcU9nakM9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "生成AIの価値は「作業時間の短縮」ではなく「手が離れる時間」で決まる：AIとの並行作業で成果を最大化する思考法",
-    "summary_ja": "生成AIを単なる作業速度向上ツールと見なすと、時短できても全体の成果は伸び悩む。 AI活用の真の価値は、作業を速くすることではなく、AIに任せている間に人が別の業務に取り組む「AIとの並行作業」を実現し、単位時間あたりのアウトプットを増やすことにある。 開発者は「AIで何分速くなったか」という指標を捨て、「AIに何分間自分の手を離れて任せられるか」を設計の主眼に置くべきである。 この発想の転換が、生産性の限界を突破する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "生成AIの価値は「作業時間の短縮」ではなく「手が離れる時間」で決まる：AIとの並行作業で成果を最大化する思考法",
-        "summary": "生成AIを単なる作業速度向上ツールと見なすと、時短できても全体の成果は伸び悩む。 AI活用の真の価値は、作業を速くすることではなく、AIに任せている間に人が別の業務に取り組む「AIとの並行作業」を実現し、単位時間あたりのアウトプットを増やすことにある。 開発者は「AIで何分速くなったか」という指標を捨て、「AIに何分間自分の手を離れて任せられるか」を設計の主眼に置くべきである。 この発想の転換が、生産性の限界を突破する鍵となる。"
-      },
-      "en": {
-        "title": "Why generative AI value isn't about speed, but how much 'hands-off' time you can reclaim for parallel work",
-        "summary": "Viewing generative AI merely as a tool to accelerate individual tasks often leads to stagnation, where time saved doesn't translate to greater output. The actual value lies not in task speed, but in how much 'hands-off' duration you can carve out for simultaneous, higher-level work while the AI executes in the background. Developers and creators must stop optimizing solely for seconds saved per prompt and instead design workflows around 'AI autonomy duration'—the window of time the model handles execution independently. This strategic shift transforms AI from a basic efficiency gadget into a true leverage engine, effectively increasing your total output per day by allowing you to handle multiple streams of work without hitting your cognitive limit."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-31T12:02:09.871Z"
-  },
-  {
     "id": "art-1793448110414-vva8q",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -36971,32 +36996,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-31T11:31:48.582Z"
-  },
-  {
-    "id": "art-1793444505491-4rrs0",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/rapls/articles/a5a81af5defe41",
-    "published_at": "2026-10-31T05:35:53.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3xzJFUrj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25B8%25E3%2581%25AE%25E5%25BC%2595%25E3%2581%258D%25E7%25B6%2599%25E3%2581%258E%25E6%259B%25B8%25E3%2581%25AB%25E3%2580%2581%25E5%25AE%2588%25E3%2582%258B%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25921%25E8%25A1%258C%25E3%2581%259A%25E3%2581%25A4%25E8%25A1%25A8%25E3%2581%25AB%25E3%2581%2597%25E3%2581%25A6%25E4%25BB%2598%25E3%2581%2591%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25BE%25E3%2581%2599%25E3%2580%25821%25E3%2581%25A4%25E3%2581%25A7%25E3%2582%2582%25E6%25BA%2580%25E3%2581%259F%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2591%25E3%2582%258C%25E3%2581%25B0%25E3%2580%2581...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Rapls%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2RlODIyZTEyOWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの実装精度を高める「守るべきガイドライン表」の活用法：WordPressプラグイン開発で1行でも違反があれば即停止させる強制力",
-    "summary_ja": "WordPressプラグインへの宣伝用リンク追加作業をClaude Codeに依頼する際、違反リスクを防ぐために「ガイドライン適合チェック表」をハンドオフ資料として統合。 各項目を1行の表形式で定義し、満たせない場合は実装を中断して再質問させる強制力を持たせた。 複雑な要件をAIに指示する際、曖昧な指示ではなく「チェックリストによる厳格な制約」を渡すことが、手戻りを減らし品質を担保する最も現実的なアプローチとなる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの実装精度を高める「守るべきガイドライン表」の活用法：WordPressプラグイン開発で1行でも違反があれば即停止させる強制力",
-        "summary": "WordPressプラグインへの宣伝用リンク追加作業をClaude Codeに依頼する際、違反リスクを防ぐために「ガイドライン適合チェック表」をハンドオフ資料として統合。 各項目を1行の表形式で定義し、満たせない場合は実装を中断して再質問させる強制力を持たせた。 複雑な要件をAIに指示する際、曖昧な指示ではなく「チェックリストによる厳格な制約」を渡すことが、手戻りを減らし品質を担保する最も現実的なアプローチとなる。"
-      },
-      "en": {
-        "title": "How to Use Strict Compliance Tables to Enforce Claude Code Quality: Stopping Implementation Immediately When WordPress Plugin Guidelines Are Violated",
-        "summary": "When delegating WordPress plugin updates to Claude Code, the developer integrated a 'guideline compliance checklist' table directly into the handoff document to mitigate policy violation risks. By structuring requirements as a strict, row-by-row table, the developer forced the AI to halt implementation and ask questions whenever a constraint could not be perfectly met. This method transforms complex policy adherence into a mandatory input, preventing the hallucination of non-compliant code. For builders leveraging AI coding agents, moving away from vague prompting toward hard, table-based constraint enforcement is the most effective strategy to minimize rework and ensure strict quality control in sensitive deployment scenarios."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-31T11:01:45.491Z"
   },
   {
     "id": "art-1793444484821-yap3w",
