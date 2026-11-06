@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1793956631911-4u3ay",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kyakka_log/n/nbea077211d23",
+    "published_at": "2026-11-06T09:13:37.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332916538/rectangle_large_type_2_9e3743c3ee7e61bc042292a36c4ae14d.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Coworkで構築する自動化システムの「見つからない」エラーの罠：Python実装とCLAUDE.md設計の教訓",
+    "summary_ja": "Claude Coworkを用いて構築した個人用自動化システムの運用経験から、エラーハンドリングの重要性を解説する。 Pythonで実装し、CLAUDE.mdで指示を継続管理することでセッションをまたぐ一貫性を維持しているが、肝は「データが存在しない」状態の定義だ。 「見つかりませんでした」というエラーは、実は「まだ処理中」や「対象が未到達」という状態の混同から生まれることが多い。",
+    "translations": {
+      "ja": {
+        "title": "Claude Coworkで構築する自動化システムの「見つからない」エラーの罠：Python実装とCLAUDE.md設計の教訓",
+        "summary": "Claude Coworkを用いて構築した個人用自動化システムの運用経験から、エラーハンドリングの重要性を解説する。 Pythonで実装し、CLAUDE.mdで指示を継続管理することでセッションをまたぐ一貫性を維持しているが、肝は「データが存在しない」状態の定義だ。 「見つかりませんでした」というエラーは、実は「まだ処理中」や「対象が未到達」という状態の混同から生まれることが多い。"
+      },
+      "en": {
+        "title": "Building robust automation with Claude Cowork: Lessons on handling 'not found' errors in Python and LLM-managed systems",
+        "summary": "This piece shares operational insights from building a custom automation system using Claude Cowork, focusing on the critical nuances of error handling within Python projects managed by CLAUDE.md. The author highlights that ambiguous error messages like \"not found\" often mask deeper architectural issues, such as confusing a missing resource with a process that simply hasn't finished yet or data that is not yet reachable. By strictly separating valid \"not found\" states from actual processing exceptions, developers can significantly improve the reliability of AI-generated automation code. The core takeaway for builders is to design explicit, distinct error states early, rather than letting the AI interpret ambiguous system conditions, which inevitably leads to unpredictable runtime behavior in persistent, long-running agent workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-06T09:17:11.911Z"
+  },
+  {
+    "id": "art-1793956625484-12g99",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/equalang-ai/items/1aedfe7efd6e132646c8",
+    "published_at": "2026-11-06T09:16:39.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjMzMDk1NjE0MCUzRnYlM0Q0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0xZmI5MDdmNGEwNjcyOGE3MzI2ZDhhYTgzZTFkODcyYQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De307de70b034714923e8b7abf38fd4f6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JTlCJUJEJUU5JTlBJTlCJUU1JUFEJUE2JUU4JUExJTkzJUU0JUJDJTlBJUU4JUFEJUIwJUUzJTgxJUFFJUU4JThCJUIxJUU4JUFBJTlFJUU4JUFDJTlCJUU2JUJDJTk0JUUzJTgyJTkyJUUzJTgzJTk2JUUzJTgzJUE5JUUzJTgyJUE2JUUzJTgyJUI2JUUzJTgxJUEwJUUzJTgxJTkxJUUzJTgxJUE3JUUzJTgzJUFBJUUzJTgyJUEyJUUzJTgzJUFCJUUzJTgyJUJGJUUzJTgyJUE0JUUzJTgzJUEwJUU5JTlGJUIzJUU1JUEzJUIwJUU3JUJGJUJCJUU4JUE4JUIzJUUzJTgzJUJCJUU4JUE4JTk4JUU5JThDJUIyJUUzJTgxJTk5JUUzJTgyJThCJUU1JUFFJTlGJUU4JUI3JUI1JUUzJTgyJUFDJUUzJTgyJUE0JUUzJTgzJTg5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MGYwYzIzZTQyYjE4YzJhN2E2ODEwNTBhMjA0YzdlMzU&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBlcXVhbGFuZy1haSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWYyYTU2ZTI4MTY0MDA4OTljNGYwMWFkY2NiYTI3NTI1&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=f9521bcc278ffcca74ecfef844e220be",
+    "title_ja": "国際学会の英語講演をブラウザのみでリアルタイム翻訳・記録する実践術：専用ソフト不要で議事録作成までを効率化する全手順",
+    "summary_ja": "海外技術カンファレンス等の英語講演を、専用ソフトをインストールせずにブラウザ完結でリアルタイムに日英対訳字幕化する手順を解説する。 ウェブ標準機能と外部API連携を活用し、聞き逃しを防ぎつつタイムスタンプ付きの講義録を自動生成し、セッション後の復習までシームレスに繋げる手法だ。 開発者や研究者が現地で遭遇する言語の壁を、最小の環境構築で突破するための即実践可能な技術的アプローチである。",
+    "translations": {
+      "ja": {
+        "title": "国際学会の英語講演をブラウザのみでリアルタイム翻訳・記録する実践術：専用ソフト不要で議事録作成までを効率化する全手順",
+        "summary": "海外技術カンファレンス等の英語講演を、専用ソフトをインストールせずにブラウザ完結でリアルタイムに日英対訳字幕化する手順を解説する。 ウェブ標準機能と外部API連携を活用し、聞き逃しを防ぎつつタイムスタンプ付きの講義録を自動生成し、セッション後の復習までシームレスに繋げる手法だ。 開発者や研究者が現地で遭遇する言語の壁を、最小の環境構築で突破するための即実践可能な技術的アプローチである。"
+      },
+      "en": {
+        "title": "A Practical Guide to Browser-Based Real-Time Translation and Transcription for International Academic Lectures and Technical Conferences Without Specialized Software",
+        "summary": "This guide details how to implement a real-time, browser-based solution for English-to-Japanese live subtitling during international academic lectures, bypassing the need for dedicated transcription software. By leveraging native browser APIs and efficient audio routing, you can generate synchronized, timestamped meeting logs during fast-paced sessions. The process focuses on streamlining the post-session review workflow while minimizing local environment setup requirements. For researchers and engineers traveling to overseas technical conferences, this approach effectively lowers language barriers. It provides a lightweight, immediately actionable framework for maintaining comprehension and producing reliable documentation in high-stakes environments, proving that browser-native tools can handle sophisticated audio processing tasks as effectively as local desktop applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-06T09:17:05.484Z"
+  },
+  {
+    "id": "art-1793956614844-dacs0",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/cloptima",
+    "published_at": "2026-11-05T23:40:34.000Z",
+    "og_image_url": null,
+    "title_ja": "LLM運用のコストとセキュリティを最適化する「Cloptima」が登場、単一ゲートウェイでAPI利用の可視化とガードレール実装を自動化",
+    "summary_ja": "Cloptimaは、AI開発者が直面するLLMのコスト管理、APIゲートウェイの統合、そしてガードレール導入を包括的に支援するプラットフォームだ。 複数のLLMプロバイダーを一元管理し、支出分析によるFinOpsの実践や、プロンプトインジェクションを防ぐ安全フィルターを容易に構築できる。 単にAPIを繋ぐだけでなく、開発運用時のコスト最適化とセキュリティ統制を標準化したいエンジニアにとって、実装負荷を大幅に軽減する強力なツールとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "LLM運用のコストとセキュリティを最適化する「Cloptima」が登場、単一ゲートウェイでAPI利用の可視化とガードレール実装を自動化",
+        "summary": "Cloptimaは、AI開発者が直面するLLMのコスト管理、APIゲートウェイの統合、そしてガードレール導入を包括的に支援するプラットフォームだ。 複数のLLMプロバイダーを一元管理し、支出分析によるFinOpsの実践や、プロンプトインジェクションを防ぐ安全フィルターを容易に構築できる。 単にAPIを繋ぐだけでなく、開発運用時のコスト最適化とセキュリティ統制を標準化したいエンジニアにとって、実装負荷を大幅に軽減する強力なツールとなるだろう。"
+      },
+      "en": {
+        "title": "Cloptima launches as an integrated AI gateway to optimize LLM spending, enforce security guardrails, and centralize API management for developers",
+        "summary": "Cloptima has launched to help AI developers tackle the triple challenge of LLM cost visibility, API gateway orchestration, and security guardrail implementation. By centralizing management across multiple LLM providers, the platform enables granular FinOps monitoring to track token spending while simultaneously enforcing safety filters to prevent prompt injection and model misuse. Rather than manually wiring individual APIs, developers can use Cloptima to standardize security policies and audit logs across their entire stack. For builders scaling production applications, this serves as a critical infrastructure layer to prevent runaway API bills and ensure compliance without needing to build custom proxy and validation logic from scratch for every deployment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-06T09:16:54.844Z"
+  },
+  {
+    "id": "art-1793956608432-1n4ew",
+    "source_id": "source-context-dev",
+    "source_name": "Context.dev Blog",
+    "url": "https://www.context.dev/blog/openbenchmarks-web-search-company-news-benchmark-results",
+    "published_at": "2026-11-06",
+    "og_image_url": "https://www.context.dev/api/og?variant=post&title=Second+of+13+web+search+APIs+on+Openbenchmarks%2C+from+a+benchmark+we+do+not+run&highlight=from+a+benchmark+we+do+not+run&collection=blog&minutes=8",
+    "title_ja": "Context.dev、主要AIモデルのWeb検索精度を比較する「Openbenchmarks」を公開―回答の正確性と参照元の信頼性をスコアリング",
+    "summary_ja": "Context.devがAIモデルのWeb検索性能を測定する「Openbenchmarks」を発表。 PerplexityやChatGPT（o1/GPT-4o）、Claude 3.5 Sonnetなど主要モデルを対象に、回答の正確性やソースの妥当性を独自の基準で定量化した。 AI開発者は、モデル選定時に特定のタスクやドメインでどのAIが信頼できる情報源を提供できるかを、このベンチマークで検証・比較できる。",
+    "translations": {
+      "ja": {
+        "title": "Context.dev、主要AIモデルのWeb検索精度を比較する「Openbenchmarks」を公開―回答の正確性と参照元の信頼性をスコアリング",
+        "summary": "Context.devがAIモデルのWeb検索性能を測定する「Openbenchmarks」を発表。 PerplexityやChatGPT（o1/GPT-4o）、Claude 3.5 Sonnetなど主要モデルを対象に、回答の正確性やソースの妥当性を独自の基準で定量化した。 AI開発者は、モデル選定時に特定のタスクやドメインでどのAIが信頼できる情報源を提供できるかを、このベンチマークで検証・比較できる。"
+      },
+      "en": {
+        "title": "Context.dev Launches Openbenchmarks to Evaluate Web Search Accuracy and Source Reliability Across Top AI Models Like Perplexity and GPT-4o",
+        "summary": "Context.dev has introduced Openbenchmarks, an open platform designed to rigorously test and score the web-searching capabilities of leading AI models, including Perplexity, GPT-4o, o1, and Claude 3.5 Sonnet. The evaluation framework focuses on critical performance metrics like answer accuracy and the reliability of cited sources, moving beyond simple perplexity scores to measure real-world utility. For AI builders and engineers, this tool provides a necessary baseline to objectively determine which model architecture performs best for RAG-heavy applications or general information retrieval tasks. By quantifying the gap between hallucination and grounded retrieval, developers can now make data-driven decisions when selecting models for their production stacks rather than relying on anecdotal evidence or general-purpose benchmarks that ignore search performance."
+      }
+    },
+    "tool_tags": [
+      "Context.dev"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-06T09:16:48.432Z"
+  },
+  {
     "id": "art-1793955809073-rcxd6",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -29475,33 +29582,6 @@
     "created_at": "2026-11-02T01:31:54.538Z"
   },
   {
-    "id": "art-1793583104716-bx59e",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/takaden1981/n/n6e0397cedcf8",
-    "published_at": "2026-11-02T01:24:00.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331172583/rectangle_large_type_2_607835b82d441653bfc08db1bed46358.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Anthropic、ClaudeのAPI利用料と使用量を可視化する「Usage and Cost Analytics API」を10月29日にベータ公開",
-    "summary_ja": "Anthropicは、Claude APIの利用料金と使用量をモデル別やAPIキー単位で集計・取得できる「Usage and Cost Analytics API」を10月29日にベータ公開した。 これまで開発者が手動で行っていたコスト管理や利用傾向の分析がAPI経由で自動化可能となり、大規模プロジェクトでの予算監視が容易になる。 開発チームは、このAPIを活用することでコスト上限アラートの精度を高め、AIインフラの運用負荷を大幅に削減できる。",
-    "translations": {
-      "ja": {
-        "title": "Anthropic、ClaudeのAPI利用料と使用量を可視化する「Usage and Cost Analytics API」を10月29日にベータ公開",
-        "summary": "Anthropicは、Claude APIの利用料金と使用量をモデル別やAPIキー単位で集計・取得できる「Usage and Cost Analytics API」を10月29日にベータ公開した。 これまで開発者が手動で行っていたコスト管理や利用傾向の分析がAPI経由で自動化可能となり、大規模プロジェクトでの予算監視が容易になる。 開発チームは、このAPIを活用することでコスト上限アラートの精度を高め、AIインフラの運用負荷を大幅に削減できる。"
-      },
-      "en": {
-        "title": "Anthropic launches Usage and Cost Analytics API in beta, offering granular breakdown of Claude API expenses",
-        "summary": "Anthropic has released its new Usage and Cost Analytics API in beta, allowing developers to programmatically track Claude API usage and associated costs aggregated by model and API key. Previously, monitoring spend required manual oversight, but this update enables automated real-time tracking, making it significantly easier to audit usage patterns in large-scale production environments. For teams building on Claude, this API is a critical addition that allows for tighter budget control and more precise cost-anomaly detection. Integrating these data points directly into your backend architecture helps move away from reactive billing checks toward proactive infrastructure management, ensuring that API usage remains aligned with your project's scaling goals and budget constraints."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-02T01:31:44.716Z"
-  },
-  {
     "id": "art-1793583090298-z3kwy",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -34150,32 +34230,6 @@
     "created_at": "2026-11-01T10:01:49.575Z"
   },
   {
-    "id": "art-1793527281930-cgl6i",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ysgeso/items/a689566d1e322f24101d",
-    "published_at": "2026-11-01T09:20:02.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUFjSFR0YzhyejhWYmNtbzBzbjdtdlVSTWQ3Wm1LNEw0Y0FDaUF4WVVsUlZuai13JTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWM5N2Y1YzcxZjUwNTZmNWM4MWE5NTYwMjcxZTIzZWFk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D58e7f3454366800b34d7b3b2f4d28537?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UHl0aG9uJUUzJTgxJUE3JUUzJTgwJTg3JUMzJTk3JUUzJTgyJUIyJUUzJTgzJUJDJUUzJTgzJUEwJUUzJTgxJUFFQUklRTMlODIlOTIlRTQlQjglODAlRTMlODElOEIlRTMlODIlODklRTQlQkQlOUMlRTYlODglOTAlRTMlODElOTklRTMlODIlOEIlRTMlODAlODAlRTMlODElOUQlRTMlODElQUUyNTIlRTMlODAlODAlQ0UlQjUtZ3JlZWR5JUU2JUIzJTk1JUUzJTgxJUFFJUU3JTlGJUFEJUU2JTlDJTlGJUU3JTlBJTg0JUUzJTgxJUFBJUU2JTgwJUE3JUU4JUIzJUFBJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZDhjMmYxMTQ4Mjg2ODc5ZDlkMWRlZTQxYWE4MDI3ODQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5c2dlc28mdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yMTE1ZjUxNzdmOWExMjc3M2FlOTMyMGUxMDg3NDU4Ng&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a042ef76956f2b5b3cd3c863ab1f0c4f",
-    "title_ja": "Pythonで学ぶ強化学習：〇×ゲームAI開発におけるε-greedy法の短期的な探索と活用（Python 3.13環境）",
-    "summary_ja": "〇×ゲームAIの開発を通じて、強化学習の基盤アルゴリズムであるε-greedy法の挙動を徹底検証する。 特に短期的な局面において、探索（exploration）と活用（exploitation）のバランスが、エージェントの学習収束と勝率にどのような影響を与えるかをコードベースで解説。 Python 3.13とnumpy 2.3.5環境を用いて、パラメータ調整がAIの戦略的な深さに与える変化を可視化し、より実用的な強化学習の実装手法を提案する。",
-    "translations": {
-      "ja": {
-        "title": "Pythonで学ぶ強化学習：〇×ゲームAI開発におけるε-greedy法の短期的な探索と活用（Python 3.13環境）",
-        "summary": "〇×ゲームAIの開発を通じて、強化学習の基盤アルゴリズムであるε-greedy法の挙動を徹底検証する。 特に短期的な局面において、探索（exploration）と活用（exploitation）のバランスが、エージェントの学習収束と勝率にどのような影響を与えるかをコードベースで解説。 Python 3.13とnumpy 2.3.5環境を用いて、パラメータ調整がAIの戦略的な深さに与える変化を可視化し、より実用的な強化学習の実装手法を提案する。"
-      },
-      "en": {
-        "title": "Reinforcement learning in Python: Analyzing short-term exploration and exploitation via ε-greedy in Tic-Tac-Toe AI",
-        "summary": "This technical deep dive explores the reinforcement learning mechanics of the ε-greedy algorithm by building a Tic-Tac-Toe AI from scratch using Python 3.13 and numpy 2.3.5. The article specifically examines the short-term impact of balancing exploration versus exploitation, illustrating how these hyper-parameters dictate an agent's learning convergence and win rates in finite game spaces. By isolating decision-making patterns during early training stages, the guide provides developers with concrete insights into tuning strategies for more robust AI behavior. This rigorous, step-by-step approach demonstrates how subtle configuration changes in greedy policies fundamentally reshape the strategic depth and competitive success of autonomous game agents in complex environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-01T10:01:21.930Z"
-  },
-  {
     "id": "art-1793522802713-76k8d",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -36405,32 +36459,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-31T18:18:58.727Z"
-  },
-  {
-    "id": "art-1793469734317-7bib0",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/neuralalpha/books/agent-ops-free-checks",
-    "published_at": "2026-10-31T08:58:40.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Ct5ICd55--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci9mOTMyNDgzMDQwLnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
-    "title_ja": "AIエージェントの無人実行で陥る5つの致命的罠 ― 実体験に基づいた「公開前3分チェックリスト」を公開",
-    "summary_ja": "AIエージェントや自動ジョブを無人稼働させる際、二重送信や別アカウントへの誤爆、静かな停止、内部資料の混入、夜間特有のクラッシュといった5つの典型的な失敗事例が運用の現場を脅かす。 本書は、それらを事前に防ぐための3分間の検証手順をまとめたものだ。 実装を自動化する前に、これらのようなエッジケースを確実に潰しておくことが、AIを信頼できるビジネス基盤として安定稼働させるための絶対条件となる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの無人実行で陥る5つの致命的罠 ― 実体験に基づいた「公開前3分チェックリスト」を公開",
-        "summary": "AIエージェントや自動ジョブを無人稼働させる際、二重送信や別アカウントへの誤爆、静かな停止、内部資料の混入、夜間特有のクラッシュといった5つの典型的な失敗事例が運用の現場を脅かす。 本書は、それらを事前に防ぐための3分間の検証手順をまとめたものだ。 実装を自動化する前に、これらのようなエッジケースを確実に潰しておくことが、AIを信頼できるビジネス基盤として安定稼働させるための絶対条件となる。"
-      },
-      "en": {
-        "title": "5 Critical Pitfalls Before Running Autonomous AI Agents: A Real-World 3-Minute Pre-Flight Checklist for Developers",
-        "summary": "Deploying autonomous AI agents requires rigorous safety checks to prevent catastrophic failures like duplicate posts, cross-account data leaks, silent process terminations, internal file contamination, and nighttime-only job crashes. This guide details a quick 3-minute validation protocol based on actual production disasters, offering a practical checklist to neutralize these risks before any automation goes live. For builders relying on agents for critical workflows, the core lesson is that basic functional testing isn't enough; you must explicitly engineer failure boundaries around autonomy. Integrating these sanity checks into your CI/CD or deployment pipeline is the only way to ensure your agents operate reliably in production without needing human supervision, turning potentially dangerous automations into stable, scalable business assets."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-31T18:02:14.317Z"
   },
   {
     "id": "art-1793469703280-exo6k",
@@ -42979,33 +43007,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-29T16:16:19.141Z"
-  },
-  {
-    "id": "art-1793289756769-kol9z",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/irabuisshin/articles/0360c6411fa32e",
-    "published_at": "2026-10-29T15:40:13.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MfIydjKZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Canny%25E3%2581%25AE%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E7%2589%2588%25E3%2580%258C%25E3%2581%2593%25E3%2581%2588%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25EF%25BC%2588%25E8%25A6%2581%25E6%259C%259B%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25BB%25E6%258A%2595%25E7%25A5%25A8%25E3%2583%25BB%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2589%25E3%2583%259E%25E3%2583%2583%25E3%2583%2597%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BC%258A%25E8%2589%25AF%25E9%2583%25A8%25E4%25B8%2580%25E5%25BF%2583%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2dNQmNXYTF6UXJuUlRuZnVpMXpHWG1xZEhaaWJlT3pEdGt2ZVQ5cG9zRlVsanZBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "海外で年5億円規模の要望収集SaaS「Canny」の日本語版「こえボード」を個人開発、フィードバック収集と開発ロードマップ公開を容易に",
-    "summary_ja": "海外で年5億円規模の売上を持つフィードバック収集ツール「Canny」の日本語版として「こえボード」を開発した。 要望投稿、投票機能、開発状況の可視化をノーコードで実装可能にし、アプリ開発者がユーザーの声を取り入れて優先順位を判断する際のハードルを大幅に下げる。 SaaS運営においてユーザーとの対話は不可欠であり、既存の海外製ツールに抵抗がある国内開発者にとって、言語や文化の壁がない本ツールは強力な選択肢となるはずだ。",
-    "translations": {
-      "ja": {
-        "title": "海外で年5億円規模の要望収集SaaS「Canny」の日本語版「こえボード」を個人開発、フィードバック収集と開発ロードマップ公開を容易に",
-        "summary": "海外で年5億円規模の売上を持つフィードバック収集ツール「Canny」の日本語版として「こえボード」を開発した。 要望投稿、投票機能、開発状況の可視化をノーコードで実装可能にし、アプリ開発者がユーザーの声を取り入れて優先順位を判断する際のハードルを大幅に下げる。 SaaS運営においてユーザーとの対話は不可欠であり、既存の海外製ツールに抵抗がある国内開発者にとって、言語や文化の壁がない本ツールは強力な選択肢となるはずだ。"
-      },
-      "en": {
-        "title": "Individual dev launches 'KoeBoard,' a Japanese-native alternative to Canny for user feedback collection and product roadmapping",
-        "summary": "An independent developer has launched 'KoeBoard,' a localized Japanese alternative to Canny, the popular feedback management platform generating roughly $5 million annually. The tool streamlines the essential process of gathering user requests, enabling voting, and publicly sharing development roadmaps without any coding overhead. By lowering the barrier for Japanese product teams and solo builders to implement structured feedback loops, KoeBoard solves a significant pain point for teams hesitant to use English-only platforms. For builders, this launch demonstrates the viability of targeting niche, localized markets for proven SaaS categories. It provides a practical infrastructure for managing user-driven feature prioritization, ensuring that development effort aligns directly with verified customer demand while keeping community communication transparent and accessible to native Japanese users."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-29T16:02:36.769Z"
   },
   {
     "id": "art-1793289729769-6cktg",
