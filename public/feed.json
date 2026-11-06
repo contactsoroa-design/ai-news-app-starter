@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1793957371892-eek9a",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/nanobananacn/items/9523e289e34183438b0b",
+    "published_at": "2026-11-06T09:17:13.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY5NzNhZDk0MmRiYTIwOTdhOGJlMTg2Y2MzOTk0NWI1Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZWMzYjU2OWI0NmRmYWNiMjI4NGNlZDgxNGNkYzhhOGU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D28c216200aba3498367f8ed0f0b9ffe7?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklMjAlRTUlODclQkElRTUlOUIlQkUlRTUlOTAlOEUlRUYlQkMlOUElRTklQUIlOTglRTYlQjglODUlRTYlOTQlQkUlRTUlQTQlQTclRTQlQkIlODAlRTQlQjklODglRTYlOTclQjYlRTUlODAlOTklRTUlODElOUEmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yNDU3ZjYyMjJiZDRiYmVmY2I4YTAwOTUwNTMzY2M0Zg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBuYW5vYmFuYW5hY24mdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yYjk4MjRmNzgwNDQ1YTE4MDg3OTIxZTViOGJlNzYwOA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6a00ee453de7d24ac18356a35a437aaf",
+    "title_ja": "AI画像生成後の「高清放大」ベストプラクティス：生成直後ではなく補正完了後に行うべき理由とワークフローを解説",
+    "summary_ja": "AI生成画像が拡大時にぼやけたり細部が破綻したりする主な原因は、アップスケールのタイミングにある。 生成直後に拡大するのではなく、画像生成後の補正や詳細調整を完了させた後に高清放大（アップスケーリング）を行うことで、画質劣化を防ぎ品質を最大化できる。 クリエイターは、生成プロセスと拡大プロセスを切り分け、適切な段階でツールを適用するワークフローを確立すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "AI画像生成後の「高清放大」ベストプラクティス：生成直後ではなく補正完了後に行うべき理由とワークフローを解説",
+        "summary": "AI生成画像が拡大時にぼやけたり細部が破綻したりする主な原因は、アップスケールのタイミングにある。 生成直後に拡大するのではなく、画像生成後の補正や詳細調整を完了させた後に高清放大（アップスケーリング）を行うことで、画質劣化を防ぎ品質を最大化できる。 クリエイターは、生成プロセスと拡大プロセスを切り分け、適切な段階でツールを適用するワークフローを確立すべきだ。"
+      },
+      "en": {
+        "title": "AI Image Upscaling Best Practices: Why You Should Post-Process Before Scaling to Avoid Blurry Results",
+        "summary": "AI-generated images often become blurry or lose detail when upscaled, but this is frequently due to performing the upscaling step at the wrong time. The critical takeaway is that you should never upscale immediately after the initial generation; instead, you must complete all necessary image corrections, denoising, and detail refinements first. By establishing a workflow where upscaling acts as the final polish rather than an intermediate step, builders can prevent artifacts and maintain consistent image fidelity. Focusing on the correct sequence of operations is essential for creators to achieve high-resolution, sharp results, proving that the timing of your post-processing pipeline is just as vital as the scaling model itself."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "画像生成",
+      "開発"
+    ],
+    "created_at": "2026-11-06T09:29:31.892Z"
+  },
+  {
+    "id": "art-1793957364420-i2wd5",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/mameresearcher/articles/claude-headless-allowedtools-not-restrict",
+    "published_at": "2026-11-06T02:01:24.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--grtlFvi9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:claude%2520-p%2520%25E3%2581%25AE%2520--allowedTools%2520%25E3%2581%25AF%25E9%2581%2593%25E5%2585%25B7%25E3%2582%2592%25E7%25B5%259E%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%2520%25E2%2580%2594%2520%25E5%25AE%259A%25E6%2599%2582%25E3%2582%25B8%25E3%2583%25A7%25E3%2583%2596%25E3%2581%25AE%25E5%25AD%2590%25E3%2581%25AB%2520Edit%2520%25E3%2581%25A8%2520She...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BE%25E3%2582%2581%25E7%25A0%2594%25E7%25A9%25B6%25E5%2593%25A1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ViMjEyODk5ZWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの「--allowedTools」は万能ではない：Headless運用で「Edit」「Shell」ツールが漏洩する罠と回避策",
+    "summary_ja": "Pythonの定時ジョブからClaude Code（claude -p）を呼び出し、Web検索や記事執筆の自動化を行う際、「--allowedTools」オプションで利用可能ツールを絞っても、内部的にEditやShellツールがモデルに見えてしまう事象が判明した。 これはClaude Codeが環境制御と対話フローを密結合させているために発生する制限である。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの「--allowedTools」は万能ではない：Headless運用で「Edit」「Shell」ツールが漏洩する罠と回避策",
+        "summary": "Pythonの定時ジョブからClaude Code（claude -p）を呼び出し、Web検索や記事執筆の自動化を行う際、「--allowedTools」オプションで利用可能ツールを絞っても、内部的にEditやShellツールがモデルに見えてしまう事象が判明した。 これはClaude Codeが環境制御と対話フローを密結合させているために発生する制限である。"
+      },
+      "en": {
+        "title": "Why Claude Code's '--allowedTools' fails to restrict Edit and Shell access in headless automation environments",
+        "summary": "When automating tasks via Claude Code in headless mode (claude -p), developers often assume the '--allowedTools' flag creates a strict security sandbox. However, testing reveals that Claude Code continues to expose critical 'Edit' and 'Shell' capabilities to the model regardless of these flag restrictions, due to how the underlying framework couples environment management with the execution flow. For builders relying on agents for automated research or content drafting, this means that simple flag-based permissioning is insufficient for preventing unauthorized system modifications. Instead of relying on tool filtering, you must isolate the runtime environment by using restricted service accounts, minimal environment variables, and dedicated container sandboxes to ensure your automated agents adhere to the principle of least privilege."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-06T09:29:24.420Z"
+  },
+  {
+    "id": "art-1793957349453-ds9b5",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/tracex",
+    "published_at": "2026-11-05T08:53:29.000Z",
+    "og_image_url": null,
+    "title_ja": "本番環境のバグを即座に特定・解決するAIエンジニア「TraceX」公開、ログ解析からデバッグ自動化までを実現",
+    "summary_ja": "「TraceX」は、本番環境で発生する複雑なバグやエラーを迅速に特定し、解決へと導くAIエージェントである。 従来のモニタリングツールとは異なり、ログ解析とコードベースの文脈理解を統合することで、障害発生から根本原因の特定までを自動化する。 障害対応の運用コストを削減し、エンジニアが本来の機能開発に集中できる環境を整えるため、開発現場における平均解決時間（MTTR）の大幅短縮を目指す次世代のオブザーバビリティツールと言える。",
+    "translations": {
+      "ja": {
+        "title": "本番環境のバグを即座に特定・解決するAIエンジニア「TraceX」公開、ログ解析からデバッグ自動化までを実現",
+        "summary": "「TraceX」は、本番環境で発生する複雑なバグやエラーを迅速に特定し、解決へと導くAIエージェントである。 従来のモニタリングツールとは異なり、ログ解析とコードベースの文脈理解を統合することで、障害発生から根本原因の特定までを自動化する。 障害対応の運用コストを削減し、エンジニアが本来の機能開発に集中できる環境を整えるため、開発現場における平均解決時間（MTTR）の大幅短縮を目指す次世代のオブザーバビリティツールと言える。"
+      },
+      "en": {
+        "title": "TraceX launches as a dedicated AI engineer that automatically identifies and resolves critical production environment bugs",
+        "summary": "TraceX is a specialized AI engineer designed to automate the lifecycle of production incident resolution by pinpointing bugs and implementing fixes instantly. Unlike traditional observability stacks that merely alert developers to a failure, TraceX integrates deep log analysis with codebase awareness to correlate runtime errors with underlying code, effectively closing the loop on root cause analysis. By handling the tedious triage and diagnostic processes, the tool drastically reduces Mean Time To Resolution (MTTR) for engineering teams. For builders struggling with high-pressure incident management, this solution aims to offload the burden of manual debugging, allowing developers to refocus their time on shipping new features rather than fighting production fires."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-06T09:29:09.453Z"
+  },
+  {
+    "id": "art-1793957341206-fe1zb",
+    "source_id": "source-context-dev",
+    "source_name": "Context.dev Blog",
+    "url": "https://www.context.dev/blog/scrapingbench-web-scraping-api-benchmark-results",
+    "published_at": "2026-11-06",
+    "og_image_url": "https://www.context.dev/api/og?variant=post&title=Scrapingbench%3A+Context.dev+finished+the+most+scrape+tasks+of+10+web+scraping+APIs&highlight=Context.dev+finished+the+most+scrape+tasks+of%C2%A010+web+scraping+APIs&collection=blog&minutes=8",
+    "title_ja": "WebスクレイピングAPIの性能比較「Scrapingbench」公開、主要13サービスの成功率と応答速度を実機で徹底検証",
+    "summary_ja": "Context.devが公開した「Scrapingbench」は、主要なWebスクレイピングAPI 13社を対象に、成功率、応答速度、ブロック回避性能を統一環境で比較検証したベンチマークレポートだ。 各サービスが複雑なサイトや動的レンダリングに対してどの程度対応できるかが可視化されており、API選定時の判断材料となる。",
+    "translations": {
+      "ja": {
+        "title": "WebスクレイピングAPIの性能比較「Scrapingbench」公開、主要13サービスの成功率と応答速度を実機で徹底検証",
+        "summary": "Context.devが公開した「Scrapingbench」は、主要なWebスクレイピングAPI 13社を対象に、成功率、応答速度、ブロック回避性能を統一環境で比較検証したベンチマークレポートだ。 各サービスが複雑なサイトや動的レンダリングに対してどの程度対応できるかが可視化されており、API選定時の判断材料となる。"
+      },
+      "en": {
+        "title": "Context.dev releases Scrapingbench: An independent performance comparison of 13 major web scraping APIs testing success rates and latency",
+        "summary": "The newly released Scrapingbench by Context.dev provides an empirical analysis of 13 popular web scraping APIs, stress-testing them on success rates, response times, and bot-detection evasion capabilities under standardized conditions. By benchmarking performance against complex, dynamic sites, the report exposes distinct disparities in reliability that are often masked by vendor marketing claims. Developers should view these results as a critical baseline for architecture decisions; the data clearly demonstrates that budget-friendly APIs frequently struggle with high-load anti-bot measures, forcing builders to choose between cost-effective convenience and production-grade stability. This benchmark serves as a vital guide for engineering teams aiming to build resilient data pipelines without falling for deceptive uptime promises in the competitive scraping market."
+      }
+    },
+    "tool_tags": [
+      "Context.dev"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-06T09:29:01.206Z"
+  },
+  {
     "id": "art-1793956631911-4u3ay",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -33890,32 +33996,6 @@
     "created_at": "2026-11-01T11:32:08.099Z"
   },
   {
-    "id": "art-1793532717697-ryzc6",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/seeeeew/aiwarningforsteam",
-    "published_at": "2026-11-01T10:47:55.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/985508201/c0bfff37-fe4d-4f2c-8dc1-2132b5a29be0",
-    "title_ja": "Steam上のAI生成コンテンツを可視化するブラウザ拡張機能「AI Warning for Steam」が登場、透明性確保の動き",
-    "summary_ja": "Steamのストアページで、AI生成コンテンツであることを示すラベルが小さく目立ちにくい問題を解決するブラウザ拡張機能「AI Warning for Steam」が公開された。 このツールは、開発者が申告したAI利用情報をページの目立つ場所に強調表示し、ユーザーが即座に認識できるようUIを改善する。 ゲーム市場におけるAI生成物への不信感や透明性を求める声が高まる中、消費者の知る権利を守るための個人の技術的アプローチとして注目される。",
-    "translations": {
-      "ja": {
-        "title": "Steam上のAI生成コンテンツを可視化するブラウザ拡張機能「AI Warning for Steam」が登場、透明性確保の動き",
-        "summary": "Steamのストアページで、AI生成コンテンツであることを示すラベルが小さく目立ちにくい問題を解決するブラウザ拡張機能「AI Warning for Steam」が公開された。 このツールは、開発者が申告したAI利用情報をページの目立つ場所に強調表示し、ユーザーが即座に認識できるようUIを改善する。 ゲーム市場におけるAI生成物への不信感や透明性を求める声が高まる中、消費者の知る権利を守るための個人の技術的アプローチとして注目される。"
-      },
-      "en": {
-        "title": "Open-source 'AI Warning for Steam' browser extension makes AI-generated content disclosures significantly more visible to shoppers",
-        "summary": "The 'AI Warning for Steam' browser extension has launched to address the issue of subtle, easily overlooked AI disclosure labels on Steam store pages. By programmatically parsing developer-provided AI usage metadata, the tool forcefully highlights these disclosures in a prominent UI position, ensuring users are immediately aware of AI involvement before making a purchase. As debates over AI usage in gaming escalate, this project serves as a pragmatic solution to the transparency problem, directly empowering consumers to make informed choices. For developers and indie builders, this represents a growing trend where community-driven tools fill gaps in platform-level transparency, signaling that users will increasingly demand explicit clarity regarding AI-generated assets in their software libraries."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-01T11:31:57.697Z"
-  },
-  {
     "id": "art-1793532701223-ugugu",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -34100,32 +34180,6 @@
     "created_at": "2026-11-01T10:46:49.244Z"
   },
   {
-    "id": "art-1793529113253-xuk5d",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/pitaspot/items/2afa82c7ce3d56a65724",
-    "published_at": "2026-11-01T09:09:58.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS1ZodHNjUngwYWJwQTZiT1RtZ0Q2dlJWaUVJWVh3Mm9KekotYUVZaTVObHFNVyUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0yZTM0NTA4ZDlhOGEyNGJkOTQwMDhmMGVkYTQxNjliMg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd099b8cb112ca9b236bfd8322927e5ea?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQUUlRTglQUElQUMlRTYlOTglOEUlRTYlOTYlODclRTMlODIlOTIlRTclOUIlQjQlRTMlODElOTkmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0xNzdmY2RhMzFhZTIxYzM5NDkxOTVlMDhjNzdmNTE1Mg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwaXRhc3BvdCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM4MzViNzIzMWNmOGM5ZjNiMzI2NjY1MTEzMTYyZjQy&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b058eff24cbc0c9042746963e4179614",
-    "title_ja": "AIの「否定から入る説明文」を回避するプロンプト技術：出力精度を高めポジティブなUXを構築するための思考法",
-    "summary_ja": "AIへの指示出しにおいて「〜ではないことを意味するわけではありません」といった否定形や冗長な説明文が出力される事象は、ユーザー体験を損なう要因となる。 本記事では、スライド生成ツールの自作経験を基に、出力の要件を具体的に指定し「肯定的な表現」や「簡潔な箇条書き」を強制するプロンプト設計術を解説する。 複雑なLLM出力を制御するには、単なる指示ではなく、出力形式とトーンの制約を構造的に定義することが不可欠だ。",
-    "translations": {
-      "ja": {
-        "title": "AIの「否定から入る説明文」を回避するプロンプト技術：出力精度を高めポジティブなUXを構築するための思考法",
-        "summary": "AIへの指示出しにおいて「〜ではないことを意味するわけではありません」といった否定形や冗長な説明文が出力される事象は、ユーザー体験を損なう要因となる。 本記事では、スライド生成ツールの自作経験を基に、出力の要件を具体的に指定し「肯定的な表現」や「簡潔な箇条書き」を強制するプロンプト設計術を解説する。 複雑なLLM出力を制御するには、単なる指示ではなく、出力形式とトーンの制約を構造的に定義することが不可欠だ。"
-      },
-      "en": {
-        "title": "Refining AI Prompts to Eliminate Passive-Aggressive Negative Phrasing and Improve Output Clarity for Better User Experience",
-        "summary": "Large language models frequently default to overly cautious, negative phrasing, such as explicitly stating what a result 'does not mean,' which clutter user interfaces and degrade experience. Drawing on experience from building custom markdown-based slide generation tools, this guide examines how to suppress verbose, negative output by strictly enforcing constraint-based prompting. The strategy involves moving beyond general requests by structurally defining the required tone, output format, and banned phrasing patterns directly within the system instructions. For developers building AI-integrated apps, the practical takeaway is that controlling the 'voice' of your AI requires treating tone as a strict schema constraint rather than a suggestion, ensuring the final output remains concise, professional, and directly actionable for your end users."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-01T10:31:53.253Z"
-  },
-  {
     "id": "art-1793529093194-oq1vp",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -34149,32 +34203,6 @@
       "開発"
     ],
     "created_at": "2026-11-01T10:31:33.194Z"
-  },
-  {
-    "id": "art-1793528211555-oowt4",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/cocobell1853/items/71934d1beafccd803ba2",
-    "published_at": "2026-11-01T09:16:43.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDUyNTc0MCUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc5MzUyNDU2Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YWEyMDE5NzcxMWVlMWJhNzFmMTdhZjlmMzQ3ODkxYzU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D4556ab651877612ab6898ea53ec5c2d5?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU0JUJCJThBJUU2JTk3JUE1JUUzJTgxJThCJUUzJTgyJTg5JUU4JUE4JTk4JUU5JThDJUIyJUUzJTgyJTkyJUUzJTgxJUE0JUUzJTgxJTkxJUUzJTgyJThCJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NjQ2M2JlZGQyZThjMTg0MjBkMmQ2ZjYxNzg3MWI2NWM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBjb2NvYmVsbDE4NTMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz04ODFkMWZkOTg0NWRhY2JiNzY3ZWYzOTliZGQxNTMxNA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=20233d329da048a8636cffa60b637581",
-    "title_ja": "ChatGPT Plus活用による学習効率化の実践：1ヶ月間の徹底活用と学習記録の公開によるエンジニアのスキルアップ戦略",
-    "summary_ja": "エンジニアが日々の課題解決やメール作成支援に留まっていたChatGPT Plusを1ヶ月間徹底活用し、学習記録をX等で公開する試みを開始する。 単なるツール利用から脱却し、能動的な学習プロセスを構築することで、AIを「相談相手」から「学習パートナー」へと昇華させる狙いだ。 個人の開発者がAIツールを日々の習慣に組み込み、継続的なアウトプットを行うことで、スキルの可視化と習得速度の最大化を目指す実証実験である。",
-    "translations": {
-      "ja": {
-        "title": "ChatGPT Plus活用による学習効率化の実践：1ヶ月間の徹底活用と学習記録の公開によるエンジニアのスキルアップ戦略",
-        "summary": "エンジニアが日々の課題解決やメール作成支援に留まっていたChatGPT Plusを1ヶ月間徹底活用し、学習記録をX等で公開する試みを開始する。 単なるツール利用から脱却し、能動的な学習プロセスを構築することで、AIを「相談相手」から「学習パートナー」へと昇華させる狙いだ。 個人の開発者がAIツールを日々の習慣に組み込み、継続的なアウトプットを行うことで、スキルの可視化と習得速度の最大化を目指す実証実験である。"
-      },
-      "en": {
-        "title": "Building a 30-Day Intensive ChatGPT Plus Study Routine: Strategies for Transforming AI from a Tool into an Active Learning Partner",
-        "summary": "An independent developer is embarking on a 30-day challenge to shift from using ChatGPT Plus for simple tasks like email drafting and minor bug fixes to integrating it as an active study partner. By documenting daily learning outcomes on social media, the project aims to move beyond passive assistance and build a rigorous, habitual feedback loop that accelerates technical skill acquisition. The initiative serves as a practical demonstration of how individual creators can leverage AI to scale their personal growth while maintaining transparency through public output. For builders, the takeaway is clear: setting strict, time-bound goals for AI engagement can transform it from an occasional convenience into a powerful driver of long-term development velocity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-01T10:16:51.555Z"
   },
   {
     "id": "art-1793528199094-1aklr",
@@ -42677,32 +42705,6 @@
       "研究"
     ],
     "created_at": "2026-10-29T17:31:50.751Z"
-  },
-  {
-    "id": "art-1793294194496-tesd8",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/aku_niconico/articles/0102b36f9c72e2",
-    "published_at": "2026-10-29T15:13:13.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--rAtbASht--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E7%2582%25B9%25E6%2595%25B0%25E8%25A9%2595%25E4%25BE%25A1%25E3%2581%25A7%25E3%2583%25A2%25E3%2583%2581%25E3%2583%2599%25E3%2582%2592%25E4%25BF%259D%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25AB%25E3%2583%25A1%25E3%2583%25A9%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E3%2583%25AA%25E3%2583%25AA%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aku_niconico%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVFtWF9Pa1Jvclk3dHd3VDJrcnNIdWFLVTRGS3k5R2V3T0RZLUtTUGtfYUVuQ0QxX0Vndz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発でアプリを完走するコツ：AIによる進捗の数値化とモチベーション管理で「AK CAMERA」をAndroid版リリース",
-    "summary_ja": "開発者Aku氏は、AIを活用して日々の進捗を点数で定量化・可視化する独自の手法を取り入れ、50日超の個人開発を経てAndroidカメラアプリ「AK CAMERA」を正式リリースした。 技術的な実装以上に「モチベーションの維持」がアプリ完成のボトルネックになりやすい個人開発において、進捗を客観的な数値指標としてフィードバックし続けることが、開発完走への再現性を高める重要な戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発でアプリを完走するコツ：AIによる進捗の数値化とモチベーション管理で「AK CAMERA」をAndroid版リリース",
-        "summary": "開発者Aku氏は、AIを活用して日々の進捗を点数で定量化・可視化する独自の手法を取り入れ、50日超の個人開発を経てAndroidカメラアプリ「AK CAMERA」を正式リリースした。 技術的な実装以上に「モチベーションの維持」がアプリ完成のボトルネックになりやすい個人開発において、進捗を客観的な数値指標としてフィードバックし続けることが、開発完走への再現性を高める重要な戦略となる。"
-      },
-      "en": {
-        "title": "How to ship your indie app: Quantifying progress with AI to stay motivated and launch 'AK CAMERA'",
-        "summary": "Developer Aku successfully shipped the Android camera app 'AK CAMERA' after 50 days of development, highlighting a unique productivity strategy that relies on using AI to score and quantify daily progress. For solo builders, the biggest hurdle to releasing a product is often psychological burnout rather than technical complexity. By gamifying development milestones and converting vague coding efforts into objective numerical scores, Aku was able to maintain the necessary momentum to cross the finish line. The practical takeaway for indie hackers is that treating your own progress as a data-driven metric not only keeps you accountable but also provides a clear feedback loop that prevents abandonment when feature creep or project fatigue sets in during the long building phase."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-29T17:16:34.496Z"
   },
   {
     "id": "art-1793293557961-ifobt",
