@@ -1,5 +1,86 @@
 [
   {
+    "id": "art-1793925113202-qaje1",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/torakichi0428/n/n0fb320535634",
+    "published_at": "2026-11-06T00:22:47.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332752258/rectangle_large_type_2_9ff7e2fc361110d0642950f9bf125a1c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発アプリ「TETHERACT pm」の設計思想：クラウド依存を脱却し、外付けドライブで完結する「ポータブル」な写真管理の実現手法",
+    "summary_ja": "写真管理アプリ「TETHERACT pm」が掲げる「クラウドに頼らず、ポータブルであること」という設計原則について解説する。 外付けSSDやUSBメモリでのデータ運用を前提とし、スマホでのオフライン選別や、ドライブ接続時に他人のデータを保護するエシカルなアクセス制御（Loome）を実装している。 クラウドストレージの課金や同期トラブルからユーザーを解放し、ローカル環境でプライバシーを維持しながら、デバイス間を移動できる堅牢なデータ管理基盤の構築手法が示されている。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリ「TETHERACT pm」の設計思想：クラウド依存を脱却し、外付けドライブで完結する「ポータブル」な写真管理の実現手法",
+        "summary": "写真管理アプリ「TETHERACT pm」が掲げる「クラウドに頼らず、ポータブルであること」という設計原則について解説する。 外付けSSDやUSBメモリでのデータ運用を前提とし、スマホでのオフライン選別や、ドライブ接続時に他人のデータを保護するエシカルなアクセス制御（Loome）を実装している。 クラウドストレージの課金や同期トラブルからユーザーを解放し、ローカル環境でプライバシーを維持しながら、デバイス間を移動できる堅牢なデータ管理基盤の構築手法が示されている。"
+      },
+      "en": {
+        "title": "Architecting the 'TETHERACT pm' Photo Manager: Why Cloud-Free Portability is a Strategic Choice for Local-First Data Sovereignty",
+        "summary": "The development team behind 'TETHERACT pm' details their fourth core design principle: maintaining a cloud-independent, portable photo management architecture. By prioritizing storage on external SSDs or USB drives, the app enables seamless offline photo selection on mobile devices without relying on network sync. The recent v1.7.2 update introduces 'Loome,' an ethical data protection layer that prevents the app from accessing or modifying unauthorized files when using shared drives. This approach effectively solves common friction points like recurring cloud storage subscription fees and complex syncing conflicts. For developers, this demonstrates how to build a robust, privacy-first tool that offers the convenience of cloud-like access while ensuring data ownership and true portability remains entirely in the user’s physical control."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-06T00:31:53.202Z"
+  },
+  {
+    "id": "art-1793925104967-gupn0",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002935/",
+    "published_at": "2026-11-05T23:49:28.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/news/article/ogp/2611/06/2000002935/10011459/2048",
+    "title_ja": "AnthropicがClaudeに家計管理機能「Personal Finance」を実装、Plaid経由で銀行口座と連携し米国でβテストを開始",
+    "summary_ja": "AnthropicはAIモデル「Claude」に銀行口座やクレジットカード情報を統合する「Personal Finance」のβ版を公開した。 Plaidを経由した読み取り専用のデータ連携により、支出の自動カテゴリ分けや自然言語での家計分析が可能になる。 ユーザーデータはAI学習に利用されず、資金移動権限も持たない設計だ。 複雑な外部サービスとAPI連携する際は、今回のように権限を最小限に絞り、透明性を確保することがユーザーの信頼獲得には不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "AnthropicがClaudeに家計管理機能「Personal Finance」を実装、Plaid経由で銀行口座と連携し米国でβテストを開始",
+        "summary": "AnthropicはAIモデル「Claude」に銀行口座やクレジットカード情報を統合する「Personal Finance」のβ版を公開した。 Plaidを経由した読み取り専用のデータ連携により、支出の自動カテゴリ分けや自然言語での家計分析が可能になる。 ユーザーデータはAI学習に利用されず、資金移動権限も持たない設計だ。 複雑な外部サービスとAPI連携する際は、今回のように権限を最小限に絞り、透明性を確保することがユーザーの信頼獲得には不可欠である。"
+      },
+      "en": {
+        "title": "Anthropic adds Personal Finance feature to Claude, integrating bank accounts via Plaid for automated transaction analysis in beta",
+        "summary": "Anthropic has launched a beta version of \"Personal Finance\" for Claude, allowing users to connect bank and credit card accounts securely through Plaid. This integration enables automated transaction categorization and deep financial analysis via natural language, all while ensuring the connection remains read-only to prevent unauthorized funds transfers. Crucially, Anthropic has confirmed that this data is not used for model training. For developers building integrations with sensitive financial APIs, this release highlights the necessity of strict permission scoping and transparent data handling policies. Maintaining user trust when handling private financial data requires a clear separation between analytical access and transactional capability, demonstrating that security-first architecture is a key feature, not just a backend requirement."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-06T00:31:44.968Z"
+  },
+  {
+    "id": "art-1793925098979-l3dli",
+    "source_id": "source-github-copilot",
+    "source_name": "GitHub Copilot Changelog",
+    "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
+    "published_at": "2026-11-06T00:19:07.000Z",
+    "og_image_url": "https://github.blog/wp-content/uploads/2026/11/696871374-0c1024be-79ea-4fd2-a050-2b8f2df34847.jpeg",
+    "title_ja": "GitHub Copilot APIがアップデート、コードレビュー詳細や対応率の取得が可能に（企業・組織向けリポジトリ利用統計を強化）",
+    "summary_ja": "GitHub Copilotの利用統計APIが強化され、企業および組織のリポジトリレベルで、Copilotによるコードレビューの詳細データが取得可能となった。 新たに「copilot_code_review」オブジェクトが追加され、レビュー数や指摘に対する修正対応率などのメトリクスが追跡できる。 開発組織はCopilotがコード品質向上にどの程度寄与しているかを定量的に評価し、AI支援の運用効果を可視化できるようになる。",
+    "translations": {
+      "ja": {
+        "title": "GitHub Copilot APIがアップデート、コードレビュー詳細や対応率の取得が可能に（企業・組織向けリポジトリ利用統計を強化）",
+        "summary": "GitHub Copilotの利用統計APIが強化され、企業および組織のリポジトリレベルで、Copilotによるコードレビューの詳細データが取得可能となった。 新たに「copilot_code_review」オブジェクトが追加され、レビュー数や指摘に対する修正対応率などのメトリクスが追跡できる。 開発組織はCopilotがコード品質向上にどの程度寄与しているかを定量的に評価し、AI支援の運用効果を可視化できるようになる。"
+      },
+      "en": {
+        "title": "GitHub Copilot Usage Metrics API now surfaces code review feedback details and addressed rate analytics",
+        "summary": "GitHub has updated its Copilot usage metrics API to provide deeper visibility into code review performance for enterprise and organizational repository levels. A new copilot_code_review object is now included in daily repository reporting, explicitly tracking how many suggestions were reviewed by Copilot and the specific rate at which developers addressed those suggestions. This update allows engineering leads to move beyond basic usage volume and begin measuring the tangible impact of AI assistance on code quality. For engineering managers, the practical takeaway is the ability to quantify the effectiveness of AI-driven code reviews, allowing teams to tune Copilot adoption strategies based on concrete feedback cycles rather than just developer anecdotal evidence."
+      }
+    },
+    "tool_tags": [
+      "GitHub Copilot"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-06T00:31:38.979Z"
+  },
+  {
     "id": "art-1793924236997-npdew",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -30905,33 +30986,6 @@
     "created_at": "2026-11-01T13:16:54.094Z"
   },
   {
-    "id": "art-1793539003455-8g0v1",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/chic_dahlia3195/n/n002bdbaa7505",
-    "published_at": "2026-11-01T13:12:24.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331042458/rectangle_large_type_2_bdd3db8c553d83386954a5800d72cef7.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "商品画像登録の「あるある」を自動検品。CSVと画像ファイルを照合して、SKUの欠損や重複、順序ミスを機械的に防ぐための試作検証",
-    "summary_ja": "ECサイトの商品登録作業で頻発する、画像不足やSKUとの不整合、重複登録といった人為的ミス。 本記事では、CSVデータと実画像を自動照合し、機械的に検品を行うための試作モデルを紹介する。 20商品・60行規模のサンプルを用い、手作業のチェックコストを削減する現実的なアプローチを解説。 単純な画像加工だけでなく、納品前のデータ整合性チェックをシステム化することが、運用効率と品質維持を両立させる肝となる。",
-    "translations": {
-      "ja": {
-        "title": "商品画像登録の「あるある」を自動検品。CSVと画像ファイルを照合して、SKUの欠損や重複、順序ミスを機械的に防ぐための試作検証",
-        "summary": "ECサイトの商品登録作業で頻発する、画像不足やSKUとの不整合、重複登録といった人為的ミス。 本記事では、CSVデータと実画像を自動照合し、機械的に検品を行うための試作モデルを紹介する。 20商品・60行規模のサンプルを用い、手作業のチェックコストを削減する現実的なアプローチを解説。 単純な画像加工だけでなく、納品前のデータ整合性チェックをシステム化することが、運用効率と品質維持を両立させる肝となる。"
-      },
-      "en": {
-        "title": "Automating E-commerce Product Image Audits: Using Automated Scripts to Detect Missing SKUs, Duplicate Files, and Incorrect Sorting Before Final Delivery",
-        "summary": "Common pitfalls in e-commerce product uploads—such as missing images, mismatched SKUs, and accidental duplicates—often lead to tedious manual troubleshooting. This article introduces a prototype workflow that mechanically validates product images against CSV data to catch these inconsistencies before delivery. Using a test dataset of 20 products and 60 rows, the author demonstrates how to automate quality assurance to eliminate human error in asset management. The core takeaway for builders and store operators is that simply processing images is insufficient; implementing a systematic, automated verification step during the pre-delivery phase is essential for maintaining site integrity. For those managing large catalogs, this approach effectively replaces error-prone manual cross-referencing with reliable, scalable programmatic validation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-01T13:16:43.455Z"
-  },
-  {
     "id": "art-1793538995787-etbg6",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -34500,33 +34554,6 @@
     "created_at": "2026-10-31T22:01:39.673Z"
   },
   {
-    "id": "art-1793483190487-7hkmu",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/picnic/items/ecdeca5775da6348c87b",
-    "published_at": "2026-10-31T21:18:43.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS0oza2lJamRVZjd6UHZDUHNqTGhkcHFzbDlYU2MweGJscHRZRzgwOWd5dlhYWWh2UTElM0RzOTYtYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OGM4MDU5ODEyMzY3Y2ZlNmIzMDVkYTMzMjAwNjcwMDE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dfd6ab3c0ea5267b0e6bf5b2f6bc36ab2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMHYyLjEuMzE2JTIwJUU4JUE3JUEzJUU4JUFBJUFDJUVGJUJDJTlBT3B1cyUyMDQuOCUyMGZhc3QlMjBtb2RlJTIwMTElMkYzMCVFNSU4OSU4QSVFOSU5OSVBNCVFMyU4MSVBOCVFMyU4MiVCQiVFMyU4MiVBRCVFMyU4MyVBNSVFMyU4MyVBQSVFMyU4MyU4NiVFMyU4MiVBMyVFNCVCRiVBRSVFNiVBRCVBMyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWQwNGFjNGMyODA4ZjE0NmEzYzY0ZDc2YzE5ZjQzNmE2&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwaWNuaWMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1iZTllNDg4YzE3YjgzYzFmZGE3MTQ2MjU5MjlkYzU1ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=d4abe39c43408dc8384fdb1fe43e086e",
-    "title_ja": "Claude Code v2.1.316が公開。Opus 4.8 fast modeが11月末で廃止、重要セキュリティ修正を含む緊急アップデート",
-    "summary_ja": "Claude Code v2.1.316がリリースされ、Opus 4.8のfast modeが2026年11月30日をもって完全に廃止されることが発表された。 さらに、今バージョンにはセキュリティに関する重要な修正が2件含まれており、開発現場におけるアップデートの優先度は極めて高い。 CLIツールやエージェント環境を運用するエンジニアは、意図しない挙動や脆弱性リスクを避けるため、直ちに最新版へ移行すべきである。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code v2.1.316が公開。Opus 4.8 fast modeが11月末で廃止、重要セキュリティ修正を含む緊急アップデート",
-        "summary": "Claude Code v2.1.316がリリースされ、Opus 4.8のfast modeが2026年11月30日をもって完全に廃止されることが発表された。 さらに、今バージョンにはセキュリティに関する重要な修正が2件含まれており、開発現場におけるアップデートの優先度は極めて高い。 CLIツールやエージェント環境を運用するエンジニアは、意図しない挙動や脆弱性リスクを避けるため、直ちに最新版へ移行すべきである。"
-      },
-      "en": {
-        "title": "Claude Code v2.1.316 drops with critical security fixes and official deprecation of Opus 4.8 fast mode",
-        "summary": "Claude Code v2.1.316 has been released, introducing a high-priority update that includes two crucial security fixes alongside the official deprecation of Opus 4.8 fast mode, which is scheduled for removal on November 30, 2026. This release demands immediate attention from engineering teams, as the security patches address vulnerabilities that could impact development environments. For developers building with or relying on Claude Code as part of their daily CLI workflow, migrating to this latest version is non-negotiable to maintain both system integrity and operational continuity. Ignoring this patch cycle risks exposing local development environments to unpatched vulnerabilities, making this upgrade an essential task for any team actively managing agent-based workflows via the Claude Code toolset."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-31T21:46:30.487Z"
-  },
-  {
     "id": "art-1793482309288-qilop",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -34738,33 +34765,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-31T20:31:44.551Z"
-  },
-  {
-    "id": "art-1793478697370-8ws5j",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.ycombinator.com/item?id=50318869",
-    "published_at": "2026-10-31T18:50:25.000Z",
-    "og_image_url": null,
-    "title_ja": "Google、10月下旬に大規模な検索スパム対策を実施。AI生成コンテンツの一斉除外で一部個人のWebサイトにも影響か",
-    "summary_ja": "Googleの最新のスパム対策により、多くのWebサイトで検索インデックスの削除やトラフィック急減が報告されている。 10月26日頃に実施された大規模なアップデートは、低品質なAI生成コンテンツを排除することを主目的としているが、一部の個人開発プロジェクトも巻き込まれているようだ。 開発者はGoogle Search Consoleのステータスを確認し、自サイトがインデックス除外の対象になっていないか検証が必要だ。",
-    "translations": {
-      "ja": {
-        "title": "Google、10月下旬に大規模な検索スパム対策を実施。AI生成コンテンツの一斉除外で一部個人のWebサイトにも影響か",
-        "summary": "Googleの最新のスパム対策により、多くのWebサイトで検索インデックスの削除やトラフィック急減が報告されている。 10月26日頃に実施された大規模なアップデートは、低品質なAI生成コンテンツを排除することを主目的としているが、一部の個人開発プロジェクトも巻き込まれているようだ。 開発者はGoogle Search Consoleのステータスを確認し、自サイトがインデックス除外の対象になっていないか検証が必要だ。"
-      },
-      "en": {
-        "title": "Google’s October anti-spam update wipes AI-generated content, leaving some legitimate personal projects with zero search traffic",
-        "summary": "Reports from developers indicate that Google’s recent anti-spam policy update, deployed around October 26, has aggressively purged large swathes of the search index. The primary objective is removing low-quality, AI-generated 'slop' that has flooded results, yet the collateral damage appears significant, with some personal projects seeing daily impressions and clicks drop to near zero overnight. For builders relying on organic search, this serves as a critical signal to re-verify site indexing status via Google Search Console. While Google is clearly escalating its war against automated content farms, the impact on authentic, independent sites highlights the precarious nature of SEO. Builders must pivot focus toward resilient distribution channels, as relying purely on Google's shifting algorithm is becoming increasingly risky for sustainable traffic."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-10-31T20:31:37.370Z"
   },
   {
     "id": "art-1793477807269-ard9p",
