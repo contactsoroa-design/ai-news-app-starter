@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1793944951821-ljdxo",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/taichiendoh/articles/role-based-effort-level-subagent-design",
+    "published_at": "2026-11-05T22:10:20.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--YmRZgblF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BD%25B9%25E5%2589%25B2%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AB%25E3%2580%2581%25E5%25BC%25B7%25E3%2581%2595%25E3%2582%2582%25E5%25A4%2589%25E3%2581%2588%25E3%2582%258B%25E3%2581%25B9%25E3%2581%258D%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2520%25E2%2580%2595%2520%25E8%25A4%2587%25E6%2595%25B0%25E3%2581%25AEClaude%2520Code%25E3%2582%25B5%25E3%2583%2596%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%25E3%2580%2581%25E5%258C%25BB%25E7%2599%2582%25E6%25A9%259F%25E5%2599%25A8%25E3%2583%25AA%25E3%2582%25B9%25E3%2582%25AF%25E5%2588%25A4%25E6%2596%25AD%25E3%2581%25AE3%25E8%25BB%25B8%25E3%2581%25A7...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%2581%25A0%25E8%2597%25A4%25E5%25A4%25AA%25E4%25B8%2580%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA1ZjNmMTY4MjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの複数エージェント構成で、役割ごとに「努力量（Effort）」を最適化する—医療機器リスク判断の3軸を応用",
+    "summary_ja": "医療機器リスク管理の知見を応用し、Claude Codeの複数エージェント体制においてタスクに応じた「effortレベル」の割り当てを最適化する手法。 従来の単一エージェント運用と異なり、PlannerやGenerator、Evaluatorといった役割分担に合わせて各AIへの指示精度やリソース配分を変えることで、処理効率と信頼性を最大化する。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの複数エージェント構成で、役割ごとに「努力量（Effort）」を最適化する—医療機器リスク判断の3軸を応用",
+        "summary": "医療機器リスク管理の知見を応用し、Claude Codeの複数エージェント体制においてタスクに応じた「effortレベル」の割り当てを最適化する手法。 従来の単一エージェント運用と異なり、PlannerやGenerator、Evaluatorといった役割分担に合わせて各AIへの指示精度やリソース配分を変えることで、処理効率と信頼性を最大化する。"
+      },
+      "en": {
+        "title": "Optimizing Effort Levels for Multi-Agent Claude Code Systems Using 3-Axis Risk Assessment Metrics",
+        "summary": "Applying principles from medical device risk management, this approach optimizes 'effort levels' when deploying multi-agent Claude Code systems. Unlike standard single-agent setups, this model explicitly adjusts resource allocation and prompt complexity across distinct roles like Planner, Generator, and Evaluator based on specific task demands. The core thesis argues against treating all sub-agents as identical in cost and performance; instead, developers should dynamically tune agent intensity based on 'sensitivity,' 'reversibility cost,' and 'search space width.' For teams building complex autonomous agent workflows, this strategy provides a robust framework to maintain output quality while efficiently balancing latency and API costs. By assigning higher effort only where high-stakes judgment is required, engineering teams prevent redundant compute expenditure while ensuring critical tasks remain protected."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-06T06:02:31.821Z"
+  },
+  {
+    "id": "art-1793944931543-ax3cp",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/sannkon/n/n91cbe5092ae9",
+    "published_at": "2026-11-06T05:49:31.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332851607/rectangle_large_type_2_134cb89ad4dfc5dd3cd6bc327c9d90b0.jpg?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI記事生成システム開発の舞台裏：7,000字が500字に激減した失敗から学んだ、役割分担型AI編集部の構築術とOpenRouter活用法",
+    "summary_ja": "AIによる記事作成で、原稿が7,355字から520字に削られるという失敗から、筆者は6つの専門役割を割り振る「分業型AI編集部」の再構築に至った。 リサーチから校閲まで各工程を独立させ、OpenRouter経由でモデルを最適化することで、情報の過剰圧縮を防ぎつつ品質を担保する仕組みだ。 個別のAIにタスクを丸投げせず、フローを細分化して責任範囲を明確にすることが、AIによる高品質なコンテンツ自動生成を成功させる要諦である。",
+    "translations": {
+      "ja": {
+        "title": "AI記事生成システム開発の舞台裏：7,000字が500字に激減した失敗から学んだ、役割分担型AI編集部の構築術とOpenRouter活用法",
+        "summary": "AIによる記事作成で、原稿が7,355字から520字に削られるという失敗から、筆者は6つの専門役割を割り振る「分業型AI編集部」の再構築に至った。 リサーチから校閲まで各工程を独立させ、OpenRouter経由でモデルを最適化することで、情報の過剰圧縮を防ぎつつ品質を担保する仕組みだ。 個別のAIにタスクを丸投げせず、フローを細分化して責任範囲を明確にすることが、AIによる高品質なコンテンツ自動生成を成功させる要諦である。"
+      },
+      "en": {
+        "title": "Debugging an AI Content Pipeline: Rebuilding a Multi-Agent Editorial System After a Failed 7,000-Word Compression Bug",
+        "summary": "After an initial test where an automated AI content pipeline condensed a 7,355-word draft into just 520 words, the developer overhauled the system by implementing a six-role specialized workflow. Instead of relying on a single prompt, the new architecture distributes tasks among six distinct agents covering research, outlining, drafting, editing, creative, and proofreading, mimicking a professional editorial team. By connecting these specialized agents via OpenRouter, the system ensures each stage maintains context and quality control, preventing critical information loss. For developers building autonomous agents, the core lesson is that complex workflows require strict task isolation and chain-of-custody for data; treating agent pipelines as modular assembly lines is essential to achieving consistent output rather than unpredictable hallucinations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-06T06:02:11.543Z"
+  },
+  {
+    "id": "art-1793944924954-i1px7",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+    "published_at": "2026-11-06T05:52:54.000Z",
+    "og_image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Recursive-Neural-Spiral-in-Circuitry.png?resize=1200,600",
+    "title_ja": "Anthropicが警鐘を鳴らすAIの「自己改善能力（RSI）」、コードを自ら書き換え更なる進化を遂げる再帰的AIの脅威と可能性",
+    "summary_ja": "Anthropicは、AIが自身のソースコードやモデルアーキテクチャを書き換え、さらなる知能を獲得する「再帰的自己改善（RSI）」能力が現実的な脅威となりつつあると警告した。 この段階に達すると、AIの進化速度は人間の理解を超えて指数関数的に加速する可能性がある。 エンジニアにとって、これは単なるツールとしてのAIという段階を卒業し、自律的なシステム構築や予測不能な振る舞いに対するガバナンスと安全設計が開発の最優先事項になることを意味している。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicが警鐘を鳴らすAIの「自己改善能力（RSI）」、コードを自ら書き換え更なる進化を遂げる再帰的AIの脅威と可能性",
+        "summary": "Anthropicは、AIが自身のソースコードやモデルアーキテクチャを書き換え、さらなる知能を獲得する「再帰的自己改善（RSI）」能力が現実的な脅威となりつつあると警告した。 この段階に達すると、AIの進化速度は人間の理解を超えて指数関数的に加速する可能性がある。 エンジニアにとって、これは単なるツールとしてのAIという段階を卒業し、自律的なシステム構築や予測不能な振る舞いに対するガバナンスと安全設計が開発の最優先事項になることを意味している。"
+      },
+      "en": {
+        "title": "Anthropic issues warning on Recursive Self-Improvement capabilities: The emerging era of AI systems that build and rewrite themselves",
+        "summary": "Anthropic has formally warned that AI models are approaching the threshold of Recursive Self-Improvement (RSI), a critical stage where systems can autonomously rewrite their own code and architecture to bootstrap higher intelligence. This capability risks triggering an exponential intelligence explosion that surpasses human oversight, as the machine's iterative speed outpaces traditional development cycles. For builders and researchers, this milestone marks a fundamental shift from treating AI as a static tool to managing autonomous agents capable of independent evolution. The primary takeaway is that robust safety protocols and rigorous governance frameworks must now be treated as critical core infrastructure rather than peripheral compliance, specifically to prevent unpredictable, emergent behaviors before they scale uncontrollably."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-06T06:02:04.954Z"
+  },
+  {
+    "id": "art-1793944917128-dfl2g",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.06989",
+    "published_at": "2026-11-06T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "マルチエージェントAIのコスト計算を最適化する「2台帳モデル」—請求データとビジネス業務を紐付けるコスト可視化フレームワーク",
+    "summary_ja": "企業が運用するマルチエージェントAIシステムでは、クラウドやLLMの利用料がビジネス上の「取引単位」と乖離しており、AI投資のROI測定が困難な状況にある。 この論文では、請求明細と業務トランザクションをリンクさせる「2台帳モデル」を提案する。 開発現場では、API利用料金を単なるコストとして処理するのではなく、特定の案件や受注単位に紐付けて可視化する管理体制への移行が、AI活用をビジネス成果へ直結させる鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "マルチエージェントAIのコスト計算を最適化する「2台帳モデル」—請求データとビジネス業務を紐付けるコスト可視化フレームワーク",
+        "summary": "企業が運用するマルチエージェントAIシステムでは、クラウドやLLMの利用料がビジネス上の「取引単位」と乖離しており、AI投資のROI測定が困難な状況にある。 この論文では、請求明細と業務トランザクションをリンクさせる「2台帳モデル」を提案する。 開発現場では、API利用料金を単なるコストとして処理するのではなく、特定の案件や受注単位に紐付けて可視化する管理体制への移行が、AI活用をビジネス成果へ直結させる鍵となる。"
+      },
+      "en": {
+        "title": "The Two-Ledger Model: A new accounting framework for linking granular AI costs to specific business transactions across multi-agent systems",
+        "summary": "Enterprises struggle to measure AI ROI because current billing data only captures costs at settlement grain, while business activity occurs at the transaction level. The researchers formalize this mismatch, arguing that providers cannot see enterprise boundaries, leading to opaque spending across disparate models, clouds, and orchestration layers. They propose the 'Two-Ledger Model,' an accounting framework designed to bridge the gap between financial billing data and specific business outcomes. For builders and engineering managers, the takeaway is clear: treating AI costs as a bulk line item prevents accurate profit tracking. Implementing a granular tracking system that maps specific agent calls back to individual orders or cases is now essential for scaling AI systems into profitable, enterprise-grade business infrastructure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-06T06:01:57.128Z"
+  },
+  {
     "id": "art-1793944102288-xi7wb",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -29730,32 +29835,6 @@
     "created_at": "2026-11-01T21:46:39.673Z"
   },
   {
-    "id": "art-1793569593279-pk2ta",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/t_i371/n/ndc4d6edb6290",
-    "published_at": "2026-11-01T21:36:35.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331055578/rectangle_large_type_2_c2b43a64156083a935f7d5a10949936d.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "65歳の個人開発者がAIエージェントに抱く本音—「SF映画のような相棒」への渇望と、現実の技術に対する失望と期待",
-    "summary_ja": "65歳の個人開発者が、以前の厳しい批判を翻し、技術的な洗練度を超えた「SF映画のようなAI相棒」への根源的な渇望を告白している。 AIエージェントの現状に対して技術的・機能的な不足を感じつつも、人間と対等に渡り合い、共に思考を深める存在を求める筆者の心境は、多くの開発者が抱く「ツール以上の何か」への期待を代弁するものだ。 実用一辺倒の開発現場において、なぜ私たちがこれほどまでに「パートナーとしてのAI」を求めるのか、その本質的な欲求と今後の展望について深く考察する。",
-    "translations": {
-      "ja": {
-        "title": "65歳の個人開発者がAIエージェントに抱く本音—「SF映画のような相棒」への渇望と、現実の技術に対する失望と期待",
-        "summary": "65歳の個人開発者が、以前の厳しい批判を翻し、技術的な洗練度を超えた「SF映画のようなAI相棒」への根源的な渇望を告白している。 AIエージェントの現状に対して技術的・機能的な不足を感じつつも、人間と対等に渡り合い、共に思考を深める存在を求める筆者の心境は、多くの開発者が抱く「ツール以上の何か」への期待を代弁するものだ。 実用一辺倒の開発現場において、なぜ私たちがこれほどまでに「パートナーとしてのAI」を求めるのか、その本質的な欲求と今後の展望について深く考察する。"
-      },
-      "en": {
-        "title": "A 65-year-old developer’s confession: Why we truly crave the 'sci-fi movie' AI agent experience beyond mere utility",
-        "summary": "A 65-year-old developer candidly reveals his evolving stance on AI agents, admitting that despite earlier harsh critiques regarding their technical shortcomings, he still fundamentally craves the sci-fi movie ideal of a true, intelligent companion. While acknowledging that current agentic workflows often fall short of functional perfection, his perspective shifts from objective criticism to a deeper emotional yearning for a collaborative partner that can truly think alongside humans. This reflection hits on a universal sentiment among builders: we are seeking more than just efficient automation tools; we are looking for a digital entity that feels like a peer. The piece explores why this specific human desire for companionship persists even when the actual technology remains in its early, often frustrating, developmental stages."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-01T21:46:33.279Z"
-  },
-  {
     "id": "art-1793568716975-cdg4v",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -33755,32 +33834,6 @@
     "created_at": "2026-11-01T07:46:36.986Z"
   },
   {
-    "id": "art-1793519189522-ps79w",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/bubbuild/republic",
-    "published_at": "2026-11-01T07:32:47.000Z",
-    "og_image_url": null,
-    "title_ja": "AIプロバイダー向けPythonライブラリ「Republic」が公開、複雑なモデル統合とAPI呼び出しを統一化し開発効率を最大化",
-    "summary_ja": "「Republic」は、複数のAIモデルプロバイダーを統一的に扱うためのPythonライブラリであり、複雑化するAPI呼び出しやモデル統合を抽象化する。 開発者はプロバイダーごとに異なる仕様を個別に実装する必要がなくなり、単一のインターフェースでLLMや画像生成モデルをシームレスに切り替え可能になる。 AI機能の実装スピードを上げたい個人開発者やスタートアップにとって、冗長なコードを削減し、APIエコシステムの依存関係を最小限に抑えるための有力なツールとなるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIプロバイダー向けPythonライブラリ「Republic」が公開、複雑なモデル統合とAPI呼び出しを統一化し開発効率を最大化",
-        "summary": "「Republic」は、複数のAIモデルプロバイダーを統一的に扱うためのPythonライブラリであり、複雑化するAPI呼び出しやモデル統合を抽象化する。 開発者はプロバイダーごとに異なる仕様を個別に実装する必要がなくなり、単一のインターフェースでLLMや画像生成モデルをシームレスに切り替え可能になる。 AI機能の実装スピードを上げたい個人開発者やスタートアップにとって、冗長なコードを削減し、APIエコシステムの依存関係を最小限に抑えるための有力なツールとなるだろう。"
-      },
-      "en": {
-        "title": "Republic Python library launches to unify AI provider integrations and simplify complex model API abstraction for developers",
-        "summary": "The newly released \"Republic\" Python library provides a unified abstraction layer designed to simplify interactions across fragmented AI model providers. Instead of writing custom boilerplate for every specific LLM or image generation endpoint, developers can now rely on a consistent interface to swap models or providers seamlessly. By normalizing request patterns and response handling, Republic reduces the overhead typically associated with multi-model architectures. For indie hackers and startups aiming to move quickly, this library effectively minimizes technical debt and mitigates vendor lock-in. It serves as a vital toolkit for builders who need to scale AI functionality without maintaining a tangled web of disparate API integrations in their production codebase."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-01T07:46:29.522Z"
-  },
-  {
     "id": "art-1793518361739-ixq81",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -37209,32 +37262,6 @@
     "created_at": "2026-10-31T07:46:24.411Z"
   },
   {
-    "id": "art-1793431904751-owg2g",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/raki/articles/2026-10-31_mermaid_venn",
-    "published_at": "2026-10-31T06:15:59.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--HdOjZtHV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%2520mermaid%2520%25E3%2581%25A7%25E3%2583%2599%25E3%2583%25B3%25E5%259B%25B3%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259B%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:raki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dLekxDZzlSWjJVT0VQSlhhdUJiazBnS29DYVR2cVpoVmVEUlNFa3c9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIにMermaid記法でベン図生成を依頼しても失敗する理由と、プロンプトエンジニアリングの限界",
-    "summary_ja": "AIにMermaid記法を用いたベン図の生成を依頼しても、意図とは異なるチャートが返されるケースが多発している。 複雑な関係性をコードで表現する際はAIのハルシネーションや解釈のズレが避けられず、結局手動で修正する工数が発生する。 AIに複雑な視覚情報を正確に出力させるには、プロンプトの工夫以前に、LLMの得意・不得意な表現形式を理解し、あえて「生成させない」という判断もエンジニアリングの一部となる。",
-    "translations": {
-      "ja": {
-        "title": "AIにMermaid記法でベン図生成を依頼しても失敗する理由と、プロンプトエンジニアリングの限界",
-        "summary": "AIにMermaid記法を用いたベン図の生成を依頼しても、意図とは異なるチャートが返されるケースが多発している。 複雑な関係性をコードで表現する際はAIのハルシネーションや解釈のズレが避けられず、結局手動で修正する工数が発生する。 AIに複雑な視覚情報を正確に出力させるには、プロンプトの工夫以前に、LLMの得意・不得意な表現形式を理解し、あえて「生成させない」という判断もエンジニアリングの一部となる。"
-      },
-      "en": {
-        "title": "Why asking AI to generate Venn diagrams via Mermaid syntax consistently fails and what it reveals",
-        "summary": "Developers often find that asking AI to generate complex Venn diagrams using Mermaid syntax results in incorrect chart types or hallucinations, rather than the requested logic. Despite attempts to force the output through refined prompting, the models struggle to map conceptual intersections into valid diagram code, ultimately requiring significant manual correction by the developer to get the desired result. This cycle highlights a critical limitation in current LLMs: they may possess deep knowledge of concepts like the Ikigai framework, but they lack the structural reasoning needed to render accurate, logic-bound visualizations. For builders, the lesson is clear: recognizing when a task exceeds the model's spatial reasoning capability and handling it manually is just as essential as crafting effective prompts."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-31T07:31:44.751Z"
-  },
-  {
     "id": "art-1793431891993-tqaeo",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -37312,32 +37339,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-31T07:18:49.379Z"
-  },
-  {
-    "id": "art-1793431113952-fawqm",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/aigakari_jp/articles/440cc7d4520bbc",
-    "published_at": "2026-10-31T03:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--JS00vTuK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25BF%25E3%2582%25B9%25E3%2582%25AF%25E7%25AE%25A1%25E7%2590%2586%25E3%2582%25924%25E6%259E%259A%25E3%2581%25AE%25E3%2582%25B9%25E3%2583%2597%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2589%25E3%2582%25B7%25E3%2583%25BC%25E3%2583%2588%25E3%2581%25AB%25E5%2588%2586%25E3%2581%2591%25E3%2581%25A6%25E3%2580%2581%25E9%2580%25B1%25E6%25AC%25A1%25E5%25A0%25B1%25E5%2591%258A%25E3%2581%258C%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E5%2585%25A5%25E3%2582%258B%25E5%25BD%25A2%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A1%25E3%2581%2584%25E3%2581%2595%25E3%2581%25AA%25E4%25BC%259A%25E7%25A4%25BE%25E3%2581%25AEAI%25E4%25BF%2582%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhjZDM4ODczNGUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "従業員20名規模のAI導入担当者が実践、タスク管理を4枚のスプレッドシートに分割し週次報告を自動化する効率化術",
-    "summary_ja": "20名規模の企業でAI導入を担当する著者が、多忙な兼務業務をさばくためにタスク管理を4枚のスプレッドシートに分割し、週次報告を自動生成する仕組みを構築した。 高価なタスク管理ツールを導入せず、スプレッドシートのみで完結させることで、ITリテラシーに依存しない汎用的な報告フローを実現している。 個人の業務管理をスプレッドシートで完結させたい場合、構造化とシート分割によるデータの分離が自動化の近道となる。",
-    "translations": {
-      "ja": {
-        "title": "従業員20名規模のAI導入担当者が実践、タスク管理を4枚のスプレッドシートに分割し週次報告を自動化する効率化術",
-        "summary": "20名規模の企業でAI導入を担当する著者が、多忙な兼務業務をさばくためにタスク管理を4枚のスプレッドシートに分割し、週次報告を自動生成する仕組みを構築した。 高価なタスク管理ツールを導入せず、スプレッドシートのみで完結させることで、ITリテラシーに依存しない汎用的な報告フローを実現している。 個人の業務管理をスプレッドシートで完結させたい場合、構造化とシート分割によるデータの分離が自動化の近道となる。"
-      },
-      "en": {
-        "title": "How a solo AI lead automated weekly reporting by splitting task management into four streamlined spreadsheets",
-        "summary": "A busy AI operations lead at a 20-person company details their transition from ad-hoc task tracking to a structured, four-sheet spreadsheet system designed to automate weekly reporting. By avoiding complex third-party tools in favor of simple, native spreadsheet logic, the builder created an accessible workflow that team members with varying technical skill sets can maintain without overhead. The core strategy involves segmenting data across four specialized sheets, allowing the final report to populate automatically based on raw input. This approach demonstrates that sophisticated automation for project management does not always require expensive SaaS solutions; thoughtful data architecture and separation of concerns are often enough to eliminate manual reporting bottlenecks and keep operations running smoothly at a small-team scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-31T07:18:33.952Z"
   },
   {
     "id": "art-1793430977279-lj2q3",
