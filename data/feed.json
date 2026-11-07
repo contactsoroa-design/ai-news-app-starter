@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794019616702-n2wxi",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/a1221/articles/json-to-types-real-validation",
+    "published_at": "2026-11-07T02:45:26.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--5otNzZU8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:JSON%25E3%2581%258B%25E3%2582%2589%25E7%2594%259F%25E6%2588%2590%25E3%2581%2597%25E3%2581%259F%25E5%259E%258B%25E3%2582%2592tsc%25E3%2581%25AB%25E9%2580%259A%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581users%255B0%255D.email%25E3%2581%258C%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devtoolkits.app%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZkY2RlMmQ0ZDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "JSONからTS型・Zod・OpenAPIを自動生成するツール開発の教訓：tsc --strict検証で直面した型推論の罠と解決策",
+    "summary_ja": "JSONサンプルからTS型、Zodスキーマ、OpenAPI仕様をライブラリなしで推論生成するツールを開発中、検証プロセスを強化した。 これまでの「テキスト一致」テストから『tsc --strict』による実実行検証へ移行したことで、users[0].emailがエラーになる等の型定義の不備が判明した。 単なるコード生成を超え、コンパイラやランタイム検証を開発サイクルに組み込む重要性が浮き彫りになった。",
+    "translations": {
+      "ja": {
+        "title": "JSONからTS型・Zod・OpenAPIを自動生成するツール開発の教訓：tsc --strict検証で直面した型推論の罠と解決策",
+        "summary": "JSONサンプルからTS型、Zodスキーマ、OpenAPI仕様をライブラリなしで推論生成するツールを開発中、検証プロセスを強化した。 これまでの「テキスト一致」テストから『tsc --strict』による実実行検証へ移行したことで、users[0].emailがエラーになる等の型定義の不備が判明した。 単なるコード生成を超え、コンパイラやランタイム検証を開発サイクルに組み込む重要性が浮き彫りになった。"
+      },
+      "en": {
+        "title": "Lessons from building a JSON-to-TypeScript, Zod, and OpenAPI generator: Why 'tsc --strict' is non-negotiable",
+        "summary": "While building a tool that infers TypeScript types, Zod schemas, and OpenAPI specs from JSON samples without external libraries, I upgraded my test suite from simple text matching to real-world validation using 'tsc --strict' and runtime execution. This immediately exposed critical flaws, such as nullability errors in nested paths like 'users[0].email' that previously passed visual inspection. The experience underscores why static analysis and compiler-level verification are essential for reliable code generation pipelines. For developers building automation tools, relying on string generation is dangerous; integrating actual compiler passes and runtime parsing into your development loop is the only way to ensure the output remains type-safe and truly usable in production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-07T02:46:56.702Z"
+  },
+  {
+    "id": "art-1794019604943-5gc1m",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/loyal_panda4479/n/ne3766409379b",
+    "published_at": "2026-11-07T02:16:14.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332446335/rectangle_large_type_2_219a612b7282d0bb1fb6881998164c2e.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "会社員が個人開発したコスメ管理アプリ「コスメる」の舞台裏――課題解決と収益化への挑戦",
+    "summary_ja": "会社員エンジニアが、自身や周囲のコスメ管理に対する悩みを解決するためにiPhoneアプリ「コスメる」を個人開発した。 開封日や購入時期の把握といった日常の不便を解消しつつ、ユーザーの声を取り入れながら継続的な改善を目指す。 本プロジェクトは、個人の課題からプロダクトのニーズを検証し、副業としての収益化にも挑戦する等身大の個人開発事例として、多くのビルダ―にとって参考になる取り組みだ。",
+    "translations": {
+      "ja": {
+        "title": "会社員が個人開発したコスメ管理アプリ「コスメる」の舞台裏――課題解決と収益化への挑戦",
+        "summary": "会社員エンジニアが、自身や周囲のコスメ管理に対する悩みを解決するためにiPhoneアプリ「コスメる」を個人開発した。 開封日や購入時期の把握といった日常の不便を解消しつつ、ユーザーの声を取り入れながら継続的な改善を目指す。 本プロジェクトは、個人の課題からプロダクトのニーズを検証し、副業としての収益化にも挑戦する等身大の個人開発事例として、多くのビルダ―にとって参考になる取り組みだ。"
+      },
+      "en": {
+        "title": "Inside the launch of 'Cosmeru': A side-project developer’s journey in solving niche consumer pain points",
+        "summary": "A full-time salaryman recently launched 'Cosmeru,' an iPhone app designed to streamline cosmetics inventory management by tracking usage, expiration, and purchasing dates. The developer identifies these pain points as common obstacles for beauty consumers, positioning the app as a practical solution to inventory clutter. Beyond just solving a personal problem, the creator is actively using the project to validate market demand through user feedback loops and exploring sustainable monetization as a solo developer. This case study illustrates how individual builders can transform everyday frustrations into viable software products, providing a relatable blueprint for those looking to balance full-time employment with the realities of shipping and scaling their own niche applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-07T02:46:44.943Z"
+  },
+  {
+    "id": "art-1794019598641-9bviz",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://rankings.leffke.com/categories/coding-agents",
+    "published_at": "2026-11-07T02:16:19.000Z",
+    "og_image_url": null,
+    "title_ja": "AIコーディングエージェントの性能比較ランキングが登場、CursorやWindsurfなど主要ツールの実戦能力を網羅的に評価",
+    "summary_ja": "開発者向けにCursorやWindsurfを含む主要なAIコーディングエージェントの性能を比較するランキングサイト「Coding Agents Rankings」が公開された。 各エージェントのタスク完遂能力やコード生成精度を検証し、実用的な判断材料を提供する。 ツール選定の際、単純なベンチマークスコアだけでなく、実際の開発フローにどれだけ統合できるかが重要であると示唆しており、エージェントベースのアプリ開発を加速させるための貴重な意思決定支援ツールとなる。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングエージェントの性能比較ランキングが登場、CursorやWindsurfなど主要ツールの実戦能力を網羅的に評価",
+        "summary": "開発者向けにCursorやWindsurfを含む主要なAIコーディングエージェントの性能を比較するランキングサイト「Coding Agents Rankings」が公開された。 各エージェントのタスク完遂能力やコード生成精度を検証し、実用的な判断材料を提供する。 ツール選定の際、単純なベンチマークスコアだけでなく、実際の開発フローにどれだけ統合できるかが重要であると示唆しており、エージェントベースのアプリ開発を加速させるための貴重な意思決定支援ツールとなる。"
+      },
+      "en": {
+        "title": "Comprehensive rankings for AI coding agents now help developers evaluate real-world performance of tools like Cursor and Windsurf",
+        "summary": "A new platform called 'Coding Agents Rankings' has launched to offer developers a structured way to compare top-tier coding agents, including Cursor and Windsurf. By rigorously testing these tools against real-world tasks, the site provides actionable insights into code generation accuracy and task completion rates. The evaluation framework moves beyond generic benchmarks, focusing on the practical integration needed for modern AI-assisted workflows. This resource is essential for builders trying to navigate the crowded agent landscape, offering empirical data to help decide which model is truly production-ready for specific coding challenges. It serves as a necessary decision-support tool for engineers looking to optimize their development stack with the most capable autonomous coding assistance currently available."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-07T02:46:38.641Z"
+  },
+  {
+    "id": "art-1794019591312-d2hc9",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/18k-month-from-this-ridiculously-simple-app-idea",
+    "published_at": "2026-11-06T14:39:31+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/451zm7rsnsgu9v0zwikknkhueo95",
+    "title_ja": "個人開発者が月商1.8万ドルを達成した「極めてシンプルなアプリ」の裏側：ニッチな需要を捉えるマイクロSaaSの収益化戦略",
+    "summary_ja": "ある個人開発者が、複雑な機能を排除し「特定のニッチな問題」を解決することだけに特化したシンプルなアプリで月商1.8万ドルを達成した。 機能の詰め込みを避け、ユーザーが抱える最も切実な痛みに焦点を当てることで、開発工数を最小化しつつ高いLTVを実現している。 個人開発において最も重要なのは、豪華な機能開発ではなく、市場が真に求めている小さなニーズを正確に捉え、それを素早く収益化可能な製品に落とし込む実行力だ。",
+    "translations": {
+      "ja": {
+        "title": "個人開発者が月商1.8万ドルを達成した「極めてシンプルなアプリ」の裏側：ニッチな需要を捉えるマイクロSaaSの収益化戦略",
+        "summary": "ある個人開発者が、複雑な機能を排除し「特定のニッチな問題」を解決することだけに特化したシンプルなアプリで月商1.8万ドルを達成した。 機能の詰め込みを避け、ユーザーが抱える最も切実な痛みに焦点を当てることで、開発工数を最小化しつつ高いLTVを実現している。 個人開発において最も重要なのは、豪華な機能開発ではなく、市場が真に求めている小さなニーズを正確に捉え、それを素早く収益化可能な製品に落とし込む実行力だ。"
+      },
+      "en": {
+        "title": "Solo developer scales simple, niche app to 18k monthly revenue by solving one specific user pain point effectively",
+        "summary": "A solo developer reached 18k in monthly recurring revenue by shipping an incredibly simple application designed to solve only one specific, underserved problem. Instead of falling into the trap of feature bloat, they ruthlessly prioritized the most urgent user need, which allowed for minimal development overhead while maintaining a remarkably high customer lifetime value. This case study underscores that the path to solo success isn't about building complex, heavy software, but rather identifying a genuine niche market gap and executing a solution that users are willing to pay for immediately. For builders, the core takeaway is that simpler tools often create faster paths to revenue when they solve real friction points rather than adding unnecessary complexity to an existing workflow."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-07T02:46:31.312Z"
+  },
+  {
     "id": "art-1794018722836-thhph",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -21453,33 +21558,6 @@
     "created_at": "2026-11-03T23:35:05.466Z"
   },
   {
-    "id": "art-1793748753765-ocdoy",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tango_lab/n/nff9af7b35216",
-    "published_at": "2026-11-03T23:29:50.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/369709048bdb0221a4d1f902293444fa4e903f3b.png",
-    "title_ja": "移動平均乖離率の逆張り戦略を9年間の株価データで検証――「25日線から20%乖離で買い」の有効性と損切りによるパフォーマンス低下の全貌",
-    "summary_ja": "移動平均乖離率を用いた逆張り戦略を9年分の過去データで独自検証した結果、単純な「25日移動平均線からマイナス20%乖離した地点で買い」という手法は、勝率や収益性の面で不合格という結論に至った。 さらに損切りルールを導入することでパフォーマンスが逆に悪化することも判明。 機械的なテクニカル指標のバックテストは市場の歪みを捉えるだけでなく、個別のルールが意図せず損失を拡大させるリスクも可視化できるため、開発者は直感に頼らずデータで検証する重要性を再認識すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "移動平均乖離率の逆張り戦略を9年間の株価データで検証――「25日線から20%乖離で買い」の有効性と損切りによるパフォーマンス低下の全貌",
-        "summary": "移動平均乖離率を用いた逆張り戦略を9年分の過去データで独自検証した結果、単純な「25日移動平均線からマイナス20%乖離した地点で買い」という手法は、勝率や収益性の面で不合格という結論に至った。 さらに損切りルールを導入することでパフォーマンスが逆に悪化することも判明。 機械的なテクニカル指標のバックテストは市場の歪みを捉えるだけでなく、個別のルールが意図せず損失を拡大させるリスクも可視化できるため、開発者は直感に頼らずデータで検証する重要性を再認識すべきだ。"
-      },
-      "en": {
-        "title": "Backtesting 9 years of moving average deviation data: Why buying at -20% from the 25-day MA fails to generate consistent alpha",
-        "summary": "After running a nine-year backtest on a contrarian trading strategy using moving average deviation, the data confirms that a simple 'buy when price is 20% below the 25-day MA' approach fails to deliver reliable returns. Adding stop-loss rules to the strategy unexpectedly worsened overall performance, suggesting that mechanical technical indicators often fail to account for specific market regimes. For developers building trading bots or financial analysis tools, this study highlights why relying on historical backtests is essential to debunk intuitive strategies that look profitable on paper but crumble in real-world scenarios. The findings reinforce that rigorous data verification is critical for any algorithmic system, as naive rule-setting often leads to unintentional capital erosion rather than risk mitigation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-03T23:32:33.765Z"
-  },
-  {
     "id": "art-1793748710899-mii9o",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -28136,32 +28214,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-02T21:04:15.022Z"
-  },
-  {
-    "id": "art-1793653327401-q6msu",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://openai.com/index/lifeval/",
-    "published_at": "2026-11-02T20:54:47.000Z",
-    "og_image_url": null,
-    "title_ja": "OpenAIが発表した新評価フレームワーク「LifeVal」：日常生活におけるAIの推論・実行能力をベンチマーク化",
-    "summary_ja": "OpenAIは、LLMの真の能力を評価するための新たなベンチマーク「LifeVal」を公開した。 これは特定のタスク解決能力ではなく、日常生活で発生する複雑な状況判断やマルチステップの推論タスクをAIがどの程度遂行できるかを測定する。 既存のベンチマークが知識の暗記に偏りがちな中、実生活の文脈を理解するAIモデルの開発に向けた評価指標として注目される。 開発者は、自身のモデルが実際の生活課題に対してどの程度の適応力を持つかを検証するツールとして活用できる。",
-    "translations": {
-      "ja": {
-        "title": "OpenAIが発表した新評価フレームワーク「LifeVal」：日常生活におけるAIの推論・実行能力をベンチマーク化",
-        "summary": "OpenAIは、LLMの真の能力を評価するための新たなベンチマーク「LifeVal」を公開した。 これは特定のタスク解決能力ではなく、日常生活で発生する複雑な状況判断やマルチステップの推論タスクをAIがどの程度遂行できるかを測定する。 既存のベンチマークが知識の暗記に偏りがちな中、実生活の文脈を理解するAIモデルの開発に向けた評価指標として注目される。 開発者は、自身のモデルが実際の生活課題に対してどの程度の適応力を持つかを検証するツールとして活用できる。"
-      },
-      "en": {
-        "title": "OpenAI introduces LifeVal to benchmark AI reasoning and task execution capabilities within everyday real-world scenarios",
-        "summary": "OpenAI has unveiled LifeVal, a novel evaluation framework designed to shift AI benchmarking from static knowledge retrieval to complex, real-world reasoning. Unlike traditional benchmarks that often emphasize fact memorization or narrow problem-solving, LifeVal tests how well models navigate the nuanced, multi-step constraints found in everyday human life. By focusing on situational understanding and practical execution, this framework aims to provide a more accurate metric for how AI might actually assist users in daily tasks. For developers building agentic workflows, this offers a rigorous standard to validate whether their models possess the robust reasoning required for real-world reliability rather than just high scores on academic exams. It marks a clear move toward evaluating practical utility over theoretical benchmarks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-02T21:02:07.401Z"
   },
   {
     "id": "art-1793653320665-b4huk",
@@ -37234,32 +37286,6 @@
     "created_at": "2026-10-31T20:02:13.720Z"
   },
   {
-    "id": "art-1793476924678-7paup",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/asumito/articles/3bb5a8a4e38706",
-    "published_at": "2026-10-31T15:18:07.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--05YpSwMr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%2595%25E7%2594%25BB%25E5%2583%258F%25E3%2582%2592%25E9%25A0%2585%25E7%259B%25AE%25E3%2581%25A8%25E6%2595%25B0%25E5%2580%25A4%25E3%2581%25A7%25E6%25AF%2594%25E3%2581%25B9%25E3%2582%258B%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25ABOCR%25E8%25A9%25A6%25E4%25BD%259C%25E3%2581%25A7%25E5%2588%2586%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ASUMITO%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSWlwaGdSSXVrYWotbGtpTTkzVW94ZmZNLTNKQlVUZklkVExXVjZmbHlldGZ3V2dnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "グラフ画像の数値比較をローカルOCRで自動化：LightOnOCR×PyTorchによる単一系列棒グラフの検証手法と実装の勘所",
-    "summary_ja": "報告書のグラフにおける項目と数値の不整合を検出するため、ローカルで完結するグラフOCRアプリを試作。 LightOnOCR-3-0.8BとPyTorchを活用し、新旧画像のレイアウト変化に左右されず、項目ごとの数値を抽出・照合するパイプラインを構築した。 UIの並び替えと実際の数値変更を分離して判定する処理や、CPU環境で実用的に動かすためのモデル軽量化の知見は、個人開発レベルでAIによる検証自動化を目指すエンジニアにとって非常に有益な構成案だ。",
-    "translations": {
-      "ja": {
-        "title": "グラフ画像の数値比較をローカルOCRで自動化：LightOnOCR×PyTorchによる単一系列棒グラフの検証手法と実装の勘所",
-        "summary": "報告書のグラフにおける項目と数値の不整合を検出するため、ローカルで完結するグラフOCRアプリを試作。 LightOnOCR-3-0.8BとPyTorchを活用し、新旧画像のレイアウト変化に左右されず、項目ごとの数値を抽出・照合するパイプラインを構築した。 UIの並び替えと実際の数値変更を分離して判定する処理や、CPU環境で実用的に動かすためのモデル軽量化の知見は、個人開発レベルでAIによる検証自動化を目指すエンジニアにとって非常に有益な構成案だ。"
-      },
-      "en": {
-        "title": "Automating Graph Data Verification with Local OCR: Implementing a PyTorch-based Pipeline for Comparative Bar Chart Analysis",
-        "summary": "To detect discrepancies in report graphs, this prototype uses local OCR to compare numerical data across different chart versions. By leveraging LightOnOCR-3-0.8B on a local PyTorch CPU runtime, the author built a pipeline that correctly extracts and maps values even when graph layouts or item orderings change between iterations. The implementation separates UI reordering logic from actual data changes, creating a robust verification system without needing cloud-based vision APIs. For solo builders, this case study provides clear architectural insights into deploying small-language models for specialized visual data processing tasks, effectively balancing local compute constraints with the need for high-accuracy data auditing. It serves as a practical blueprint for automating business document quality assurance using open-source AI tools."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-10-31T20:02:04.678Z"
-  },
-  {
     "id": "art-1793476917923-o0ofy",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -37393,32 +37419,6 @@
       "研究"
     ],
     "created_at": "2026-10-31T19:31:31.766Z"
-  },
-  {
-    "id": "art-1793474205717-gap6n",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/sato_ken/articles/46f7f1f7a1e856",
-    "published_at": "2026-10-31T15:18:23.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--iFDKLJKu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%259210%25E7%25AA%2593%25E4%25B8%25A6%25E8%25A1%258C%25E3%2581%25A7%25E5%259B%259E%25E3%2581%2597%25E3%2581%25A6%25E3%2581%259F%25E3%2582%2589%25E9%25A0%25AD%25E3%2581%258C%25E3%2583%2591%25E3%2583%25B3%25E3%2582%25AF%25E3%2581%2597%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E3%2580%258C%25E9%2580%25B2%25E8%25A1%258C%25E6%259D%25BF%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BD%2590%25E8%2597%25A4%2520%25E5%2581%25A5%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSWppd0tMXy0wcnJ6TGhxcGxzMmV6WkItNmFZS01BOWtPOWRscjhKczlMaXhZRURnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIにコーディングを全任せする10案件並行開発、チャット履歴の迷子を防ぐ「進行管理ボード」を自作して混乱を解消",
-    "summary_ja": "AIに実装を全任せするスタイルで10個のプロジェクトを並行稼働させるなかで、チャット窓が増えすぎて「どのタスクが誰待ちか」を把握できない事態に陥った。 そこで自作したのが、AIとのやり取りを可視化しステータスを追跡する「進行管理ボード」だ。 AIは有能だが文脈管理は人間側の課題である。 複雑なマルチAI開発においては、LLMとの対話履歴を束ねるダッシュボードが開発速度を維持する不可欠なインフラとなる。",
-    "translations": {
-      "ja": {
-        "title": "AIにコーディングを全任せする10案件並行開発、チャット履歴の迷子を防ぐ「進行管理ボード」を自作して混乱を解消",
-        "summary": "AIに実装を全任せするスタイルで10個のプロジェクトを並行稼働させるなかで、チャット窓が増えすぎて「どのタスクが誰待ちか」を把握できない事態に陥った。 そこで自作したのが、AIとのやり取りを可視化しステータスを追跡する「進行管理ボード」だ。 AIは有能だが文脈管理は人間側の課題である。 複雑なマルチAI開発においては、LLMとの対話履歴を束ねるダッシュボードが開発速度を維持する不可欠なインフラとなる。"
-      },
-      "en": {
-        "title": "Managing 10 Parallel AI-Driven Projects: Building a Progress Dashboard to Eliminate Cognitive Overload from Fragmented Chat Histories",
-        "summary": "Operating ten projects simultaneously where coding duties are entirely offloaded to AI creates a massive context-switching problem. With Claude chats for planning, coding, and review scattered across multiple windows, it becomes impossible to track who is waiting on whom or the exact status of a feature. To solve this, I built a dedicated progress board that acts as a centralized source of truth for all AI-assisted workflows. AI models are efficient workers, but they struggle to maintain the overarching project state. For builders managing complex multi-agent stacks, creating a visual management layer is not optional; it is the essential infrastructure required to keep project momentum moving without drowning in chat history."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-31T19:16:45.717Z"
   },
   {
     "id": "art-1793474189981-hf0d7",
