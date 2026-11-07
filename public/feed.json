@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794040329036-4lmye",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/nwn/articles/cf9fe78aa33861",
+    "published_at": "2026-11-07T00:57:13.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--sY88W6ly--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Weight-Space%2520Programming%2520%25E3%2582%2584%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2528%25E3%2582%2584%25E3%2582%2589%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%25A8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzllY2U3NmI3N2IuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "LLMが自身の重みを直接書き換える「Weight-Space Programming」の仕組みと誤解——AIがモデルの内部構造を理解する新たな可能性",
+    "summary_ja": "AIがAIの重みを直接操作する「Weight-Space Programming」の手法が話題だ。 これはAIがモデルの重みや活性値を分析し、コードを通じて仮説立てと検証を繰り返すプロセスを指す。 AIが重みの数値を「理解」して書き換えているように見えるが、実際には膨大な内部パラメータをツールとして解釈・操作する能力の発見であり、人間が直接触れない領域への介入を自動化する新たなエンジニアリングパラダイムを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "LLMが自身の重みを直接書き換える「Weight-Space Programming」の仕組みと誤解——AIがモデルの内部構造を理解する新たな可能性",
+        "summary": "AIがAIの重みを直接操作する「Weight-Space Programming」の手法が話題だ。 これはAIがモデルの重みや活性値を分析し、コードを通じて仮説立てと検証を繰り返すプロセスを指す。 AIが重みの数値を「理解」して書き換えているように見えるが、実際には膨大な内部パラメータをツールとして解釈・操作する能力の発見であり、人間が直接触れない領域への介入を自動化する新たなエンジニアリングパラダイムを示唆している。"
+      },
+      "en": {
+        "title": "Decoding Weight-Space Programming: How AI Agents Modify Model Weights and What That Actually Means for Future Development",
+        "summary": "The concept of Weight-Space Programming, where an AI agent interacts with the weights of another model, has recently sparked significant debate regarding AI self-modification. Rather than the AI 'understanding' the semantic meaning of individual weights, the mechanism involves the agent treating model parameters as data to be parsed, analyzed, and modified through iterative code-based experimentation. This development represents a shift toward automated internal model intervention, where agents treat internal activations and tensors as reachable APIs. For builders and researchers, this underscores a pivot away from viewing models as black boxes toward treating them as programmable environments, provided we carefully distinguish between sophisticated parameter manipulation and true cognitive understanding of internal numerical representations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-07T08:32:09.036Z"
+  },
+  {
+    "id": "art-1794040322648-b2aa2",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kurata_daddy/n/n02e97b5ecb7a",
+    "published_at": "2026-11-07T08:09:00.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333059789/rectangle_large_type_2_ebc71b688cd1c3ef1a6b790365fb1599.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Baseチェーンがブロック生成間隔を2秒から0.2秒へ短縮、オンチェーン価格乖離の解消と高速化を検証",
+    "summary_ja": "Baseは2026年11月6日、ブロック生成間隔を従来の2秒から0.2秒に短縮するメジャーアップデートを実施した。 検証の結果、価格乖離が残存する時間は約0.3秒程度であり、これは新たなブロック時間である0.2秒と高い相関を見せている。 Web3アプリケーションの開発者は、この低遅延化を前提にUI設計やトランザクションの承認ロジックを再定義する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Baseチェーンがブロック生成間隔を2秒から0.2秒へ短縮、オンチェーン価格乖離の解消と高速化を検証",
+        "summary": "Baseは2026年11月6日、ブロック生成間隔を従来の2秒から0.2秒に短縮するメジャーアップデートを実施した。 検証の結果、価格乖離が残存する時間は約0.3秒程度であり、これは新たなブロック時間である0.2秒と高い相関を見せている。 Web3アプリケーションの開発者は、この低遅延化を前提にUI設計やトランザクションの承認ロジックを再定義する必要がある。"
+      },
+      "en": {
+        "title": "Base accelerates block times from 2s to 0.2s, reducing on-chain price deviation to ~300ms",
+        "summary": "Base successfully reduced its block generation time from 2 seconds to 0.2 seconds on November 6, 2026, marking a significant step toward faster on-chain transactions. Pre-deployment analysis conducted over a 20-minute window confirmed that on-chain price deviations persist for roughly 297 milliseconds, which closely aligns with the new 200-millisecond block interval. For decentralized application developers, this change substantially lowers the latency floor for state updates, effectively shifting the user experience paradigm. Builders should now re-evaluate their transaction confirmation UX and arbitrage bot strategies to account for these tighter bounds, as the infrastructure now supports far higher throughput and more responsive interaction models than the previous two-second cycle allowed."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-07T08:32:02.648Z"
+  },
+  {
+    "id": "art-1794040313534-2u6b0",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/context-dev",
+    "published_at": "2026-11-07T04:05:08.000Z",
+    "og_image_url": null,
+    "title_ja": "Context.devが「Trace」を公開：主要ウェブスクレイピングAPIのパフォーマンスを週次で比較・計測し、最適なツール選定を支援",
+    "summary_ja": "Context.devは、主要なウェブスクレイピングAPIの応答速度や成功率を週次で自動計測・可視化するベンチマークツール「Trace」を公開した。 エンジニアは価格や機能だけでなく、実際のネットワーク負荷環境下におけるリアルタイムの信頼性を比較可能となる。 数あるスクレイピング基盤の中から、自社のデータ収集要件に合致する「最も安定したAPI」を、客観的なデータに基づいて選定するための必須ツールだ。",
+    "translations": {
+      "ja": {
+        "title": "Context.devが「Trace」を公開：主要ウェブスクレイピングAPIのパフォーマンスを週次で比較・計測し、最適なツール選定を支援",
+        "summary": "Context.devは、主要なウェブスクレイピングAPIの応答速度や成功率を週次で自動計測・可視化するベンチマークツール「Trace」を公開した。 エンジニアは価格や機能だけでなく、実際のネットワーク負荷環境下におけるリアルタイムの信頼性を比較可能となる。 数あるスクレイピング基盤の中から、自社のデータ収集要件に合致する「最も安定したAPI」を、客観的なデータに基づいて選定するための必須ツールだ。"
+      },
+      "en": {
+        "title": "Context.dev launches Trace to provide weekly performance benchmarks across major web scraping APIs for reliable tool selection",
+        "summary": "Context.dev has introduced Trace, a new benchmarking platform that automates weekly performance tracking for major web scraping APIs, visualizing response times and success rates. Instead of relying on vendor marketing claims, developers can now compare real-world reliability and speed across different scraping infrastructures under actual network load. The tool allows teams to objectively evaluate which service best fits their specific data ingestion requirements, minimizing the risk of choosing an unstable provider. For developers building data-heavy applications or LLM agents, this provides critical transparency into API performance, ensuring that your backend remains resilient by selecting the most consistent data extraction provider based on live, verified performance data rather than static promises."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-07T08:31:53.534Z"
+  },
+  {
+    "id": "art-1794040305968-7t05p",
+    "source_id": "source-github-trending",
+    "source_name": "GitHub Trending (AI / TypeScript / Python)",
+    "url": "https://github.com/prometheus/prometheus",
+    "published_at": "2026-11-07T08:31:45.969Z",
+    "og_image_url": null,
+    "title_ja": "CNCFプロジェクト「Prometheus」：多次元データモデルと柔軟なPromQLで実現する次世代の監視・アラートシステム",
+    "summary_ja": "Prometheusは、分散ストレージに依存せず単一ノードで完結する設計を採用した、次世代のオープンソース監視・時系列データベース基盤だ。 メトリクス名とキー・バリュー型のラベルで構成される多次元データモデルと、強力なクエリ言語「PromQL」が最大の特徴で、複雑な条件指定やルール評価を柔軟に実行できる。",
+    "translations": {
+      "ja": {
+        "title": "CNCFプロジェクト「Prometheus」：多次元データモデルと柔軟なPromQLで実現する次世代の監視・アラートシステム",
+        "summary": "Prometheusは、分散ストレージに依存せず単一ノードで完結する設計を採用した、次世代のオープンソース監視・時系列データベース基盤だ。 メトリクス名とキー・バリュー型のラベルで構成される多次元データモデルと、強力なクエリ言語「PromQL」が最大の特徴で、複雑な条件指定やルール評価を柔軟に実行できる。"
+      },
+      "en": {
+        "title": "Prometheus: The CNCF-backed multidimensional monitoring and time-series database engine powering cloud-native observability through advanced PromQL queries",
+        "summary": "Prometheus stands as the industry-standard, cloud-native monitoring and time-series database system, uniquely designed without dependencies on external distributed storage. Its core strength lies in a multidimensional data model, where time series are defined by metric names and specific key-value label pairs, allowing for incredibly granular data ingestion. Coupled with PromQL, a highly flexible and powerful query language, developers can evaluate complex rules, perform real-time data analysis, and trigger precise alerts based on exact conditions. By shifting away from rigid, single-purpose monitoring tools toward this model-driven approach, engineering teams gain deeper visibility into microservices and infrastructure health. For any team building scalable distributed systems, Prometheus provides the robust foundation necessary to keep service reliability and operational visibility under tight control."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-07T08:31:45.969Z"
+  },
+  {
     "id": "art-1794037616150-8mw28",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -16054,32 +16158,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-05T14:01:57.272Z"
-  },
-  {
-    "id": "art-1793887310789-pux0m",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/shinsei99/n/nc011ba9f4c8e",
-    "published_at": "2026-11-05T14:00:23.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile_5-043439195e40e86fd7641a3a1daf982637d77ec6f14b67d3fc98ab92374404ac.png",
-    "title_ja": "社内メール検索AIの「見つかりません」問題を解消する、プロンプト設計とRAG最適化の深い落とし穴",
-    "summary_ja": "自然言語で社内メールを検索し要約するRAGツールを開発した際、「該当なし」という回答が頻発する問題に直面した。 原因は単なる検索精度の不足ではなく、ユーザーの曖昧な問いかけを解釈するコンテキスト設計の欠如にあった。 開発者は、ユーザーの言葉をそのまま検索クエリにするのではなく、意図を汲み取り再構築する「言い換え」のプロセスをシステムに組み込むことが、実用的な社内AI構築における最大の障壁を突破する鍵だと結論づけている。",
-    "translations": {
-      "ja": {
-        "title": "社内メール検索AIの「見つかりません」問題を解消する、プロンプト設計とRAG最適化の深い落とし穴",
-        "summary": "自然言語で社内メールを検索し要約するRAGツールを開発した際、「該当なし」という回答が頻発する問題に直面した。 原因は単なる検索精度の不足ではなく、ユーザーの曖昧な問いかけを解釈するコンテキスト設計の欠如にあった。 開発者は、ユーザーの言葉をそのまま検索クエリにするのではなく、意図を汲み取り再構築する「言い換え」のプロセスをシステムに組み込むことが、実用的な社内AI構築における最大の障壁を突破する鍵だと結論づけている。"
-      },
-      "en": {
-        "title": "Beyond simple search: Why RAG-based email retrieval tools fail and how to fix ambiguous user queries",
-        "summary": "When building a RAG-based tool to search and summarize internal emails using natural language, developers often encounter a frustrating 'not found' wall. The problem usually stems from a lack of context-aware query design rather than just poor retrieval metrics. Users rarely search with exact keywords, meaning the system needs an intermediary step to interpret and rephrase these vague inputs into actionable search parameters. The takeaway is that simply piping natural language into a vector database is insufficient for high-quality enterprise search; builders must implement a deliberate 'interpretation layer' that reconstructs user intent before querying the index. Without this crucial step, the AI remains incapable of effectively bridging the gap between human memory and raw data retrieval."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-05T14:01:50.789Z"
   },
   {
     "id": "art-1793887304226-g2j1i",
@@ -34781,32 +34859,6 @@
     "created_at": "2026-11-01T21:31:47.364Z"
   },
   {
-    "id": "art-1793568699271-nu52g",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ryodev/articles/469b436dee634a",
-    "published_at": "2026-11-01T13:37:07.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--yHvqc9kl--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Coding%2520Agent%2520%25E3%2581%25AE%25E3%2580%258C%25E4%25BD%259C%25E3%2582%258A%25E7%259B%25B4%25E3%2581%2597%25E3%2580%258D%25E3%2581%25A8%25E3%2580%258C%25E6%25A4%259C%25E8%25A8%25BC%25E3%2583%259F%25E3%2582%25B9%25E3%2580%258D%25E3%2582%2592%25E6%25B8%259B%25E3%2582%2589%25E3%2581%2599%25EF%25BC%259AMatt%2520Pocock%2520Skills%2520%25C3%2597%2520pstack%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryo%2520%257C%2520AI%2520Agent%2520%252F%2520NLP%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzgxMjE0MzgyY2UuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Coding Agentの修正ミスと手戻りを減らす：Matt Pocock Skillsとpstackを統合した高精度な自律開発ワークフローの構築",
-    "summary_ja": "Coding Agentによる開発で頻発する意図しないUI変更や、古いプロセスへの検証といった手戻りを防ぐため、「Matt Pocock Skills」と「pstack」を組み合わせたワークフローが注目されている。 単に便利なスキルを並べるのではなく、それぞれの設計思想を理解し、Spec（仕様）の定義と実行結果の齟齬を解消する独自の検証パイプラインを構築することが重要だ。",
-    "translations": {
-      "ja": {
-        "title": "Coding Agentの修正ミスと手戻りを減らす：Matt Pocock Skillsとpstackを統合した高精度な自律開発ワークフローの構築",
-        "summary": "Coding Agentによる開発で頻発する意図しないUI変更や、古いプロセスへの検証といった手戻りを防ぐため、「Matt Pocock Skills」と「pstack」を組み合わせたワークフローが注目されている。 単に便利なスキルを並べるのではなく、それぞれの設計思想を理解し、Spec（仕様）の定義と実行結果の齟齬を解消する独自の検証パイプラインを構築することが重要だ。"
-      },
-      "en": {
-        "title": "Reducing Coding Agent Rebuilds and Verification Errors: Integrating Matt Pocock Skills with pstack for Reliable AI Workflows",
-        "summary": "Developers are increasingly combating the common pitfalls of Coding Agents—namely unexpected UI deviations and verification errors stemming from stale process execution—by unifying Matt Pocock Skills and pstack. Instead of treating these as isolated utilities, this workflow approach emphasizes understanding their underlying design philosophies to reconcile the gap between written specifications and actual AI output. By building a disciplined validation pipeline that aligns agent decisions with developer intent, engineers can finally stop wasting time on costly rebuilds caused by inconsistent logic or flawed testing environments. The key takeaway for builders is that preventing hallucinated changes requires more than just better prompts; it demands a rigid architectural strategy that integrates spec-driven verification directly into the agent’s execution cycle."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-01T21:31:39.271Z"
-  },
-  {
     "id": "art-1793567805553-c5mtu",
     "source_id": "source-github-copilot",
     "source_name": "GitHub Copilot Changelog",
@@ -51327,32 +51379,6 @@
     "created_at": "2026-10-27T06:16:32.779Z"
   },
   {
-    "id": "art-1793078297695-ttate",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/vibeide",
-    "published_at": "2026-10-25T21:30:48.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェントの並列実行・管理ツール「VibeiDE」登場、タスクをキューイングし結果を個別レビューする効率的な開発フローを実現",
-    "summary_ja": "VibeiDEは、複数のAIエージェントタスクをキューに入れて並列処理し、実行結果を個別にレビュー・承認できるワークスペースを提供する開発支援ツールである。 単発のプロンプト実行ではなく、エージェントの処理結果を確認しながら逐次調整するフローを重視しており、複雑なコーディングや自動化タスクにおいて人間が制御権を保持し続けることを可能にする。 自律型エージェントの信頼性に課題を感じているエンジニアにとって、ブラックボックス化を防ぐ有用なソリューションとなる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの並列実行・管理ツール「VibeiDE」登場、タスクをキューイングし結果を個別レビューする効率的な開発フローを実現",
-        "summary": "VibeiDEは、複数のAIエージェントタスクをキューに入れて並列処理し、実行結果を個別にレビュー・承認できるワークスペースを提供する開発支援ツールである。 単発のプロンプト実行ではなく、エージェントの処理結果を確認しながら逐次調整するフローを重視しており、複雑なコーディングや自動化タスクにおいて人間が制御権を保持し続けることを可能にする。 自律型エージェントの信頼性に課題を感じているエンジニアにとって、ブラックボックス化を防ぐ有用なソリューションとなる。"
-      },
-      "en": {
-        "title": "VibeiDE launches parallel AI agent management to queue tasks and review outputs individually for reliable workflows",
-        "summary": "VibeiDE introduces a specialized workspace designed to handle AI agent workflows by queuing multiple tasks for parallel execution and allowing developers to review every result individually before approval. Instead of firing black-box prompts, the platform emphasizes a human-in-the-loop approach where developers can inspect, refine, and verify outcomes at each stage of a complex coding or automation sequence. This structure directly addresses the common pain point of trusting autonomous agents to execute multi-step logic without oversight. By forcing a controlled review process, VibeiDE makes it significantly easier to manage complex agentic behavior, ensuring that every piece of generated code or logic output meets quality standards before it gets pushed into the primary codebase."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-27T05:18:17.695Z"
-  },
-  {
     "id": "art-1793078270853-apalz",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -51460,32 +51486,6 @@
       "開発"
     ],
     "created_at": "2026-10-27T00:22:14.664Z"
-  },
-  {
-    "id": "art-1793059172265-4pclf",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/strawberry",
-    "published_at": "2026-10-12T16:12:24.000Z",
-    "og_image_url": null,
-    "title_ja": "チームの生産性を週100時間以上改善する「Strawberry 1.0」が登場、業務フローに最適化されたAIブラウザの全貌",
-    "summary_ja": "チームコラボレーションを最大化するために設計されたAIブラウザ「Strawberry 1.0」がリリースされた。 本ツールはブラウジング体験にAIを統合し、リサーチや情報収集のプロセスを自動化することで、チーム単位で週100時間以上の工数削減を実現する。 単なるブラウザ機能の拡張に留まらず、業務フロー全体をAIでハックすることで、チームのボトルネックとなっている繰り返しのタスクからメンバーを解放する実用的なソリューションだ。",
-    "translations": {
-      "ja": {
-        "title": "チームの生産性を週100時間以上改善する「Strawberry 1.0」が登場、業務フローに最適化されたAIブラウザの全貌",
-        "summary": "チームコラボレーションを最大化するために設計されたAIブラウザ「Strawberry 1.0」がリリースされた。 本ツールはブラウジング体験にAIを統合し、リサーチや情報収集のプロセスを自動化することで、チーム単位で週100時間以上の工数削減を実現する。 単なるブラウザ機能の拡張に留まらず、業務フロー全体をAIでハックすることで、チームのボトルネックとなっている繰り返しのタスクからメンバーを解放する実用的なソリューションだ。"
-      },
-      "en": {
-        "title": "Strawberry 1.0 launches as a purpose-built AI browser designed to save teams over 100 hours weekly",
-        "summary": "Strawberry 1.0 has arrived, positioning itself as a dedicated AI browser specifically engineered to eliminate the manual overhead of digital team collaboration. By embedding AI directly into the browser workflow, the tool automates tedious research, data synthesis, and routine information gathering, reportedly claiming to save teams more than 100 hours of manual effort every single week. This is not just another wrapper for browsing; it fundamentally hacks the typical knowledge work flow to remove repetitive bottlenecks that plague scaling teams. For builders and product leaders, this marks a clear trend toward moving AI interaction out of separate chat windows and directly into the core browser infrastructure where the real work happens."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-26T23:59:32.265Z"
   },
   {
     "id": "art-1793059124430-qwqd2",
