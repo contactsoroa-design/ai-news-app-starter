@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1794012425474-z36he",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/yumat_05/n/n21afa854dc82",
+    "published_at": "2026-11-07T00:44:03.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/315953136/rectangle_large_type_2_11bab15248cf18e929d5337b70a8263d.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "ゲーム開発ログ：アイテム使用結果のUI改善、ログから頭上表示に変更してユーザー体験を向上させる試み",
+    "summary_ja": "ゲーム開発において、アイテム使用時の結果通知を従来のテキストログからプレイヤーの頭上へ直接表示する形式へとUIを刷新した。 ログは情報量が多く見落とされやすいが、アクション直後の視覚的なフィードバックをプレイヤーのキャラクター付近に集約することで、直感的なプレイ体験を実現する。 小さなUI変更であっても、プレイヤーの認識負荷を下げ、ゲームプレイのテンポと没入感を高めるための重要な改善である。",
+    "translations": {
+      "ja": {
+        "title": "ゲーム開発ログ：アイテム使用結果のUI改善、ログから頭上表示に変更してユーザー体験を向上させる試み",
+        "summary": "ゲーム開発において、アイテム使用時の結果通知を従来のテキストログからプレイヤーの頭上へ直接表示する形式へとUIを刷新した。 ログは情報量が多く見落とされやすいが、アクション直後の視覚的なフィードバックをプレイヤーのキャラクター付近に集約することで、直感的なプレイ体験を実現する。 小さなUI変更であっても、プレイヤーの認識負荷を下げ、ゲームプレイのテンポと没入感を高めるための重要な改善である。"
+      },
+      "en": {
+        "title": "Game dev log: UI polish elevates item usage feedback from text logs to floating player-head notifications",
+        "summary": "In this development update, the UI for item usage results was shifted from the standard text log to a floating notification directly above the player's character. Traditional chat or action logs often get buried in high-traffic gameplay, making critical feedback invisible to the user. By migrating this information to a visual indicator right in the game world, the developer ensures that players immediately perceive the outcome of their actions without breaking focus or scanning menus. This minor change serves as a reminder that reducing cognitive load through spatial UI design is essential for maintaining gameplay flow and immersion, even when the underlying mechanic itself remains unchanged."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-07T00:47:05.474Z"
+  },
+  {
+    "id": "art-1794012419029-s7yxy",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/matsushima_a/articles/day-038-dory-looped-transformer-ecosystem-gap",
+    "published_at": "2026-11-06T14:22:33.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ZiF1yNSP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:NVIDIA%25E3%2581%25AE%25E3%2580%258E%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2597%25E5%259E%258B%25E3%2580%258F4B%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%2520Dory1.0-4B%25E3%2580%2581%25E6%25A8%2599%25E6%25BA%2596%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%259D%25E3%2581%2586%25E3%2581%25A8%25E3%2581%2597%25E3%2581%259F%25E3%2582%25892%25E7%25AE%2587%25E6%2589%2580%25E3%2581%25A7%25E6%25AD%25A2%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:matsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkY2YwMTZjYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "NVIDIAのループ型モデル「Dory1.0-4B」を試す：推論計算量を動的に可変させる次世代Transformerの技術的制約と実装の落とし穴",
+    "summary_ja": "NVIDIAが公開した4Bパラメータモデル「Dory1.0-4B」は、再学習なしで再帰ブロックのループ回数を1〜4回に切り替え、精度と計算量を柔軟に調整できるループ型Transformerだ。 標準的な手順で実装を試みると依存関係や構成上のエラーに遭遇するケースがある。 最新の深層学習モデルを検証する際は、ドキュメント通りの実行だけでなく、モデルの特性を理解した環境構築の試行錯誤が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "NVIDIAのループ型モデル「Dory1.0-4B」を試す：推論計算量を動的に可変させる次世代Transformerの技術的制約と実装の落とし穴",
+        "summary": "NVIDIAが公開した4Bパラメータモデル「Dory1.0-4B」は、再学習なしで再帰ブロックのループ回数を1〜4回に切り替え、精度と計算量を柔軟に調整できるループ型Transformerだ。 標準的な手順で実装を試みると依存関係や構成上のエラーに遭遇するケースがある。 最新の深層学習モデルを検証する際は、ドキュメント通りの実行だけでなく、モデルの特性を理解した環境構築の試行錯誤が不可欠となる。"
+      },
+      "en": {
+        "title": "Testing NVIDIA’s Dory1.0-4B Loop Transformer: Dynamic Inference Scaling, Technical Hurdles, and Implementation Pitfalls",
+        "summary": "NVIDIA’s Dory1.0-4B, a 4-billion parameter model, introduces a unique recursive architecture that allows developers to trade off inference compute against precision by toggling block loops between 1 and 4 iterations without retraining. While this architecture offers compelling flexibility for efficient inference, attempting to run the model using standard toolchains reveals immediate integration gaps and configuration roadblocks. The experience highlights that deploying cutting-edge research models remains a fragile process where simple documentation often fails to account for environment-specific dependencies. For builders aiming to leverage these recursive architectures, the practical lesson is to expect significant debugging when translating experimental academic code into stable production-ready inference pipelines, rather than relying on automated deployment scripts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-07T00:46:59.029Z"
+  },
+  {
+    "id": "art-1794012412850-tfkyz",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://scholar.social/@JubalBarca/117570024280604981",
+    "published_at": "2026-11-06T23:48:40.000Z",
+    "og_image_url": null,
+    "title_ja": "歴史的記録のAI依存に警鐘を鳴らす「Terra Tempora」：AIによる過去の再解釈がもたらす情報の断絶と真実の危機",
+    "summary_ja": "歴史知識をAIモデルに依存することのリスクを指摘する「Terra Tempora」が公開された。 大規模言語モデルは過去の事実を「尤もらしい物語」へ加工しやすく、特に一次資料がAIによって再解釈される過程で、史実のコンテクストが失われる危険性がある。 開発者や技術者は、AIを知識の源泉として盲信するのではなく、歴史的情報の検証プロセスの重要性を再認識すべきだ。 客観的な記録を守るためには、AIによる要約生成を記録の代替品として扱うべきではなく、批判的検討が不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "歴史的記録のAI依存に警鐘を鳴らす「Terra Tempora」：AIによる過去の再解釈がもたらす情報の断絶と真実の危機",
+        "summary": "歴史知識をAIモデルに依存することのリスクを指摘する「Terra Tempora」が公開された。 大規模言語モデルは過去の事実を「尤もらしい物語」へ加工しやすく、特に一次資料がAIによって再解釈される過程で、史実のコンテクストが失われる危険性がある。 開発者や技術者は、AIを知識の源泉として盲信するのではなく、歴史的情報の検証プロセスの重要性を再認識すべきだ。 客観的な記録を守るためには、AIによる要約生成を記録の代替品として扱うべきではなく、批判的検討が不可欠である。"
+      },
+      "en": {
+        "title": "Terra Tempora project warns against relying on AI for historical records, highlighting the dangers of model-driven reinterpretation",
+        "summary": "The Terra Tempora project has launched to challenge the growing trend of delegating historical understanding to AI models. The core argument is that large language models inherently transform raw, messy history into simplified, plausible-sounding narratives, often stripping away the nuance and conflict essential to accurate scholarship. For builders integrating AI into educational or research tools, this underscores a critical warning: AI output should never be treated as a primary source of historical truth. Instead of blindly trusting generated summaries, developers must prioritize rigorous verification pipelines and encourage users to engage with primary materials directly. We must avoid allowing algorithmic reinterpretation to permanently obscure our collective past, as convenience is a poor trade-off for historical integrity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-07T00:46:52.850Z"
+  },
+  {
+    "id": "art-1794012403544-e7rs2",
+    "source_id": "source-heygen-ugc",
+    "source_name": "HeyGen API Changelog",
+    "url": "https://developers.heygen.com/changelog#web-socket-input-streaming",
+    "published_at": "2026-11-07T00:37:46.000Z",
+    "og_image_url": "https://heygen-1fa696a7.mintlify.site/_mintlify/api/og/v2?division=Documentation&title=Changelog&description=Track+every+HeyGen+API+change%2C+new+endpoint%2C+deprecation%2C+and+version+bump+in+the+API+changelog.+Subscribe+via+RSS+or+webhook+to+get+notified+on+the+next.&theme=409ebfea156913020ba408b2&signature=9bc8a37c2eac2191bca96ad15a146ac91820605b6c3175bba20cf5221f17e509",
+    "title_ja": "HeyGen、WebSocket経由のリアルタイム音声合成APIを公開。LLMのトークンストリーミングにも対応し、最大5つのコンテキストを並列処理可能",
+    "summary_ja": "HeyGenがWebSocketを用いた音声合成ストリーミングAPIをリリースした。 LLMが生成するテキストトークンを断続的に送信することで、完了を待たずに音声再生を開始できるため、対話のレスポンスが劇的に向上する。 単一セッション用エンドポイントに加え、最大5つのコンテキストを同時処理できるマルチストリーム用も用意された。 Turbo Freeを含む全音声モデルで利用可能で、ブラウザから安全に接続できるトークン認証方式を採用している。",
+    "translations": {
+      "ja": {
+        "title": "HeyGen、WebSocket経由のリアルタイム音声合成APIを公開。LLMのトークンストリーミングにも対応し、最大5つのコンテキストを並列処理可能",
+        "summary": "HeyGenがWebSocketを用いた音声合成ストリーミングAPIをリリースした。 LLMが生成するテキストトークンを断続的に送信することで、完了を待たずに音声再生を開始できるため、対話のレスポンスが劇的に向上する。 単一セッション用エンドポイントに加え、最大5つのコンテキストを同時処理できるマルチストリーム用も用意された。 Turbo Freeを含む全音声モデルで利用可能で、ブラウザから安全に接続できるトークン認証方式を採用している。"
+      },
+      "en": {
+        "title": "HeyGen launches WebSocket streaming API for real-time text-to-speech with support for concurrent multi-stream inputs",
+        "summary": "HeyGen has introduced a WebSocket streaming API for its text-to-speech engine, allowing developers to pipe LLM tokens directly for instant audio generation. By sending text in pieces, applications can begin playback before the full sentence is synthesized, drastically reducing perceived latency in conversational agents. The API supports both a standard single-session endpoint and a multi-stream version capable of handling up to five concurrent contexts. It works across all HeyGen voice models, including the Turbo Free tier, using single-use tokens for secure browser authentication. For builders constructing real-time AI avatars, this shift from traditional HTTP request cycles to persistent WebSocket connections is a critical infrastructure upgrade that enables the low-latency responsiveness required for natural, human-like digital interactions."
+      }
+    },
+    "tool_tags": [
+      "HeyGen"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "動画"
+    ],
+    "created_at": "2026-11-07T00:46:43.544Z"
+  },
+  {
     "id": "art-1794011504461-n3x0o",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -22256,33 +22363,6 @@
     "created_at": "2026-11-03T20:01:46.877Z"
   },
   {
-    "id": "art-1793735250910-yppen",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/hiikarusama8839/n/nb9456067f19d",
-    "published_at": "2026-11-03T18:55:57.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331938938/rectangle_large_type_2_23f3bead79ff2599d5e02df3def622e5.jpg?fit=bounds&quality=85&width=1280",
-    "title_ja": "GitHub Copilotが「単なるコード保管所」から脱却：スマホ連携とクラウド作業継続で個人の開発スタイルはどう変わるか",
-    "summary_ja": "GitHubは、Copilotの作業セッションをスマホ・Web・VS Code間でシームレスに同期・引き継ぎ可能なクラウド体験を10月28日に公開した。 PCを閉じてもAI処理が継続するこの仕組みは、まとまった時間を確保しにくい個人開発者にとって強力な武器となる。 AIによる画像生成やエラー調査の自動化と合わせ、GitHubは単なるバージョン管理ツールから、AIを活用した「どこでも開発環境」へと進化を遂げつつある。",
-    "translations": {
-      "ja": {
-        "title": "GitHub Copilotが「単なるコード保管所」から脱却：スマホ連携とクラウド作業継続で個人の開発スタイルはどう変わるか",
-        "summary": "GitHubは、Copilotの作業セッションをスマホ・Web・VS Code間でシームレスに同期・引き継ぎ可能なクラウド体験を10月28日に公開した。 PCを閉じてもAI処理が継続するこの仕組みは、まとまった時間を確保しにくい個人開発者にとって強力な武器となる。 AIによる画像生成やエラー調査の自動化と合わせ、GitHubは単なるバージョン管理ツールから、AIを活用した「どこでも開発環境」へと進化を遂げつつある。"
-      },
-      "en": {
-        "title": "GitHub Copilot evolves beyond version control: New cross-device cloud sessions enable persistent AI development for solo builders",
-        "summary": "GitHub has unveiled a cloud-native Copilot experience allowing developers to synchronize and hand off AI work sessions across mobile, web, and VS Code. This update means that AI-driven tasks can continue running even after a developer closes their laptop, which is a significant unlock for builders who struggle to find long, uninterrupted coding blocks. Combined with integrated features for image generation and automated error investigation, GitHub is shifting from a static code repository into a persistent, AI-powered development environment. The takeaway for individual developers is clear: by leveraging cloud-based execution, your coding workflow is no longer tethered to a single machine, allowing for more flexible, asynchronous iteration on side projects throughout the day."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-03T19:47:30.910Z"
-  },
-  {
     "id": "art-1793735244241-se3z0",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -22415,33 +22495,6 @@
       "開発"
     ],
     "created_at": "2026-11-03T19:32:32.530Z"
-  },
-  {
-    "id": "art-1793734346079-y3uo0",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/chem_free/n/nd49711a85c9e",
-    "published_at": "2026-11-03T19:10:03.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329772923/rectangle_large_type_2_8c31434e94e841f2a4bbe3361dfc0963.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発でサーバー代0円を実現：Cloudflareを活用したアプリ9本の無料運用事例と初心者が直面した設定の壁",
-    "summary_ja": "非エンジニアの個人開発者が、Cloudflareを駆使して自作アプリ9本をサーバー利用料0円で運用する手法を共有している。 プログラミング未経験ながらAIで実装を行ったが、最大の障壁となったのはCloudflareの英語インターフェースと専門用語の理解だった。 技術的知識が限られている層にとって、インフラの構築自体よりも、管理画面の設定やドキュメントの読み解きが継続的な運用の大きな課題となることを示唆している。",
-    "translations": {
-      "ja": {
-        "title": "個人開発でサーバー代0円を実現：Cloudflareを活用したアプリ9本の無料運用事例と初心者が直面した設定の壁",
-        "summary": "非エンジニアの個人開発者が、Cloudflareを駆使して自作アプリ9本をサーバー利用料0円で運用する手法を共有している。 プログラミング未経験ながらAIで実装を行ったが、最大の障壁となったのはCloudflareの英語インターフェースと専門用語の理解だった。 技術的知識が限られている層にとって、インフラの構築自体よりも、管理画面の設定やドキュメントの読み解きが継続的な運用の大きな課題となることを示唆している。"
-      },
-      "en": {
-        "title": "Building and hosting 9 apps for free: A non-engineer’s guide to leveraging Cloudflare for zero-cost infrastructure",
-        "summary": "A non-technical solo developer shares their journey of hosting nine separate applications for free using Cloudflare. While the developer utilized AI tools to handle the actual coding, they highlight that the most significant hurdle was not the development itself, but navigating Cloudflare’s complex, English-only dashboard and mastering the underlying infrastructure jargon. This case study underscores a growing reality for indie makers: even with AI code generation, the configuration and maintenance of cloud services remain a formidable barrier to entry for those without traditional IT backgrounds. Ultimately, the story demonstrates that while infrastructure costs can be reduced to zero, the cognitive load of managing production environments and deciphering technical documentation remains a critical bottleneck for new builders."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-11-03T19:32:26.079Z"
   },
   {
     "id": "art-1793733481578-b7nco",
@@ -31317,33 +31370,6 @@
     "created_at": "2026-11-02T10:31:40.787Z"
   },
   {
-    "id": "art-1793614658085-l52zb",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
-    "published_at": "2026-11-02T07:27:28.000Z",
-    "og_image_url": null,
-    "title_ja": "中国商務省の対AI輸出管理規則「公告第48号」：最先端AI技術の国外流出規制と開発者への影響",
-    "summary_ja": "中国商務省が発表した「公告第48号」は、生成AIや基盤モデルに関連する最先端技術の輸出管理を強化する初の包括的な規制枠組みです。 この規則は、特定の高性能AI技術やデータの国外移転に政府の事前承認を義務付けており、中国市場に関わるグローバルなAI開発企業や研究組織に対して新たなコンプライアンス上の課題を突きつけています。",
-    "translations": {
-      "ja": {
-        "title": "中国商務省の対AI輸出管理規則「公告第48号」：最先端AI技術の国外流出規制と開発者への影響",
-        "summary": "中国商務省が発表した「公告第48号」は、生成AIや基盤モデルに関連する最先端技術の輸出管理を強化する初の包括的な規制枠組みです。 この規則は、特定の高性能AI技術やデータの国外移転に政府の事前承認を義務付けており、中国市場に関わるグローバルなAI開発企業や研究組織に対して新たなコンプライアンス上の課題を突きつけています。"
-      },
-      "en": {
-        "title": "China's Mofcom Announcement No. 48: New Frontier AI Export Controls and Their Impact on Global Developers",
-        "summary": "China’s Ministry of Commerce has introduced Announcement No. 48, establishing the nation’s first comprehensive export control framework targeting frontier AI technologies and foundation models. This regulation mandates strict government approval for the export or transfer of specific high-performance AI algorithms and datasets, creating significant new compliance hurdles for global research teams and companies operating within the Chinese market. For builders, this represents a major shift in the regulatory landscape; if your model training pipeline or inference infrastructure relies on Chinese data centers or technical partnerships, you must reassess potential legal liabilities and supply chain disruptions. Navigating these geopolitical export restrictions is now a critical prerequisite for maintaining cross-border AI development projects without triggering unexpected international sanctions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-02T10:17:38.085Z"
-  },
-  {
     "id": "art-1793614634581-2zk7m",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -35701,32 +35727,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-01T12:46:42.895Z"
-  },
-  {
-    "id": "art-1793536298893-tnyri",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/zenn_content/articles/unattended-pipeline-silent-failures",
-    "published_at": "2026-11-01T11:59:22.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--nt-q2Rzz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E7%2584%25A1%25E4%25BA%25BA%25E9%2581%258B%25E7%2594%25A8%25E3%2581%2595%25E3%2581%259B%25E3%2581%259F%25E3%2583%2591%25E3%2582%25A4%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2581%25A7%25E3%2580%2581%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E3%2582%2592%25E5%2587%25BA%25E3%2581%2595%25E3%2581%259A%25E3%2581%25AB%25E5%25A3%258A%25E3%2582%258C%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F8%25E4%25BB%25B6%25E3%2581%25A8%25E6%25A4%259C%25E7%259F%25A5%25E3%2581%25AE%25E4%25BD%259C%25E3%2582%258A%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:krbrr%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVptY1Q5QlREcTg2b2ZnRFp0WndaZEQ5Qmx3aE95bmxZbDNiejMzcDJWOWVUS3l3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeに管理させたAIパイプライン、8件の「無音故障」から学ぶ堅牢な設計と監視の罠（最長4か月の異常検知漏れ）",
-    "summary_ja": "Claude Codeを活用した知見収集パイプラインで、エラーを出さず静かにシステムが停止する事態が8件発生した。 最長で4か月ものバックアップ未実行や、28日間の警告放置など、原因は「停止しない設計」や「exit 0」による異常検知のすり抜けだ。 AIに運用を任せる場合でも、単純な自動化ではなく、成功と失敗を明確に区別し、異常を正しく通知する監視の仕組みこそが、開発効率を維持する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeに管理させたAIパイプライン、8件の「無音故障」から学ぶ堅牢な設計と監視の罠（最長4か月の異常検知漏れ）",
-        "summary": "Claude Codeを活用した知見収集パイプラインで、エラーを出さず静かにシステムが停止する事態が8件発生した。 最長で4か月ものバックアップ未実行や、28日間の警告放置など、原因は「停止しない設計」や「exit 0」による異常検知のすり抜けだ。 AIに運用を任せる場合でも、単純な自動化ではなく、成功と失敗を明確に区別し、異常を正しく通知する監視の仕組みこそが、開発効率を維持する鍵となる。"
-      },
-      "en": {
-        "title": "AI-Managed Pipelines Often Fail Silently: Lessons from 8 Uncaught Errors in Claude Code Automation (Including a 4-Month Data Loss)",
-        "summary": "A developer utilizing Claude Code to manage a knowledge-gathering pipeline discovered eight instances where the system failed silently while continuing to report successful execution. Failures included a four-month period without functional backups and a month where 800 daily warnings went unnoticed due to poor filtering. The root cause was an anti-pattern of \"non-stop\" design, where improper exit codes and lack of explicit error validation allowed the automation to mask catastrophic issues as routine operations. For builders relying on autonomous agents, this underscores that \"automatic\" shouldn't mean \"unmonitored.\" Implementing hard stop conditions and explicit failure alerts remains vital, proving that AI-driven maintenance still requires human-verified health checks to ensure reliability at scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-01T12:31:38.893Z"
   },
   {
     "id": "art-1793536289950-319vu",
