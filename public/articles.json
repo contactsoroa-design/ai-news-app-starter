@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794041567794-h1653",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hii_chi/articles/secret-manager-json-free-tier",
+    "published_at": "2026-11-07T06:45:03.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--RuG8UDs---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Secret%2520Manager%2520%25E3%2581%25AE%25E3%2582%25B7%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2588%25E3%2582%2592%25E7%2594%25A8%25E9%2580%2594%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AB%2520JSON%2520%25E3%2581%25AB%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2581%25A6%25E3%2580%2581%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AE%2520Cloud%2520Run%2520J...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:hii-chi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhkYzFkNjNjMjEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Google Secret Managerの無料枠上限を突破する裏技：機密情報をJSONに集約してCloud Run Jobsの運用コストをゼロに抑える手法",
+    "summary_ja": "Google CloudのSecret Managerはアクティブなシークレットバージョンが6個を超えると課金が発生する。 個人開発においてCloud Run Jobsで複数のAPIキーやパスワードを個別に管理するとすぐに上限に達してしまうため、用途ごとにシークレットをJSON形式へ集約し、登録数を2個以内に収める手法を紹介する。 リソースの配置を工夫することで無料枠内に納め、小規模開発におけるランニングコストを最適化するための実践的な知見である。",
+    "translations": {
+      "ja": {
+        "title": "Google Secret Managerの無料枠上限を突破する裏技：機密情報をJSONに集約してCloud Run Jobsの運用コストをゼロに抑える手法",
+        "summary": "Google CloudのSecret Managerはアクティブなシークレットバージョンが6個を超えると課金が発生する。 個人開発においてCloud Run Jobsで複数のAPIキーやパスワードを個別に管理するとすぐに上限に達してしまうため、用途ごとにシークレットをJSON形式へ集約し、登録数を2個以内に収める手法を紹介する。 リソースの配置を工夫することで無料枠内に納め、小規模開発におけるランニングコストを最適化するための実践的な知見である。"
+      },
+      "en": {
+        "title": "Hacking Google Secret Manager Free Tier Limits: Consolidating Keys into JSON to Run Cloud Run Jobs for Zero Cost",
+        "summary": "Google Cloud Secret Manager triggers billing once you exceed six active secret versions, which poses a hurdle for personal projects requiring multiple API keys or environment variables. This guide details a clever workaround: instead of registering secrets individually for your Cloud Run Jobs, aggregate them into structured JSON objects stored within a single secret entity. By grouping related credentials together, you can easily keep your total active version count well below the six-count free tier limit. This architectural adjustment ensures that you avoid unnecessary cloud spend while managing complex configurations, proving that strategic resource organization is a critical skill for keeping solo developer infrastructure costs effectively at zero while maintaining professional-grade secrets management practices."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-07T08:52:47.794Z"
+  },
+  {
+    "id": "art-1794041560447-gchc6",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/loyal_takin9341/n/nb3ee6061229a",
+    "published_at": "2026-11-07T08:51:25.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333301941/rectangle_large_type_2_10946fa8019a2f24dee5737483229cbd.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI株投資開発記：富士通ショック（-19.5%）のトラウマを乗り越え、データと感情の狭間でシステムをどう最適化すべきか？",
+    "summary_ja": "楽天証券の「かぶミニ」を活用した個人開発AI株運用システムを構築中。 当初は「AI任せで資産増」を夢見ていたが、富士通株の大幅下落（-19.5%）を経験し、過度なリスク回避に陥る「AI投資あるある」の壁に直面した。 感情的判断で優良株を逃すミスを防ぐため、ロジックの改善と運用の自動化をどう両立させるかが課題だ。 AI任せの盲信を捨て、リスク許容度をシステムに正しく組み込むことの重要性を学んでいる。",
+    "translations": {
+      "ja": {
+        "title": "AI株投資開発記：富士通ショック（-19.5%）のトラウマを乗り越え、データと感情の狭間でシステムをどう最適化すべきか？",
+        "summary": "楽天証券の「かぶミニ」を活用した個人開発AI株運用システムを構築中。 当初は「AI任せで資産増」を夢見ていたが、富士通株の大幅下落（-19.5%）を経験し、過度なリスク回避に陥る「AI投資あるある」の壁に直面した。 感情的判断で優良株を逃すミスを防ぐため、ロジックの改善と運用の自動化をどう両立させるかが課題だ。 AI任せの盲信を捨て、リスク許容度をシステムに正しく組み込むことの重要性を学んでいる。"
+      },
+      "en": {
+        "title": "Building an AI Stock Trading System: How to Overcome Post-Crash Trauma and Optimize Automation Strategy",
+        "summary": "I am currently building a personal AI stock trading system utilizing Rakuten Securities' \"Kabu-Mini\" fractional shares. While I initially dreamt of hands-free wealth generation, a devastating 19.5% drop in Fujitsu stock triggered severe risk aversion, causing me to second-guess even strong picks. This experience highlights the classic struggle of AI investing: balancing quantitative logic against the irrational fear sparked by volatility. To succeed, builders must move beyond blind automation and explicitly encode risk management parameters into the strategy itself. The core takeaway is that an AI system is only as good as the guardrails you design; without them, emotional bias simply replaces trading judgment. I am now rebuilding my model to handle market drawdown more objectively."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-07T08:52:40.447Z"
+  },
+  {
+    "id": "art-1794041534615-yb7yz",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/instagram",
+    "published_at": "2026-11-06T00:46:05.000Z",
+    "og_image_url": null,
+    "title_ja": "Instagram、AIエージェント搭載の無料デスクトップ動画編集ツール「Instagram Edits」をリリース。クリエイター向けワークフローを効率化",
+    "summary_ja": "Instagramは、デスクトップ環境で利用可能な無料のAI動画編集ツール「Instagram Edits」を公開した。 AIエージェントが編集作業を支援し、複雑なクリエイティブプロセスを簡素化することで、スマホアプリだけでなくPC上での制作体験も強化する。 投稿効率を重視するクリエイターやSNSマーケターにとって、既存の制作ツールと連携しながら制作から公開までの時間を大幅に短縮できる強力な選択肢となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Instagram、AIエージェント搭載の無料デスクトップ動画編集ツール「Instagram Edits」をリリース。クリエイター向けワークフローを効率化",
+        "summary": "Instagramは、デスクトップ環境で利用可能な無料のAI動画編集ツール「Instagram Edits」を公開した。 AIエージェントが編集作業を支援し、複雑なクリエイティブプロセスを簡素化することで、スマホアプリだけでなくPC上での制作体験も強化する。 投稿効率を重視するクリエイターやSNSマーケターにとって、既存の制作ツールと連携しながら制作から公開までの時間を大幅に短縮できる強力な選択肢となるだろう。"
+      },
+      "en": {
+        "title": "Instagram Launches Free Desktop Video Editor Featuring AI Agents to Streamline Creative Workflows for Professional Content Creators",
+        "summary": "Instagram has officially released 'Instagram Edits,' a free desktop-based video editing suite powered by AI agents designed to simplify complex post-production tasks. By integrating automated editing assistance directly into the desktop environment, Meta aims to bridge the gap between heavy-duty content creation and mobile-first publishing, allowing creators to produce polished, platform-optimized videos more efficiently on a larger screen. For builders and independent creators managing heavy content schedules, this tool provides a native, streamlined alternative to external editors, potentially reducing the friction between rough cuts and final publication. It represents a strategic move to keep creative workflows within the Meta ecosystem, effectively turning desktop hardware into a more powerful engine for high-velocity social media output."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "動画",
+      "SNS・ショート動画",
+      "アップデート"
+    ],
+    "created_at": "2026-11-07T08:52:14.615Z"
+  },
+  {
+    "id": "art-1794041525270-bjujg",
+    "source_id": "source-github-trending",
+    "source_name": "GitHub Trending (AI / TypeScript / Python)",
+    "url": "https://github.com/angular/angular",
+    "published_at": "2026-11-07T08:52:05.270Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/24195339/d4194dc2-d880-43f7-960c-ea30e05c6531",
+    "title_ja": "Angularの現在地：TypeScriptベースの大規模Web開発プラットフォームとしての進化と、最新エコシステムの全貌を解説",
+    "summary_ja": "Google主導のWeb開発フレームワーク「Angular」は、デスクトップおよびモバイル向けWebアプリ開発を強力に支援する包括的なプラットフォームへと進化を遂げた。 コンポーネントベースの設計、堅牢なTypeScriptエコシステム、SSRや遅延読み込みなどの高度な最適化機能を標準で備える。 小規模開発からエンタープライズ級の複雑なアプリまで、信頼性の高いフロントエンドを構築するための必須ツールとして、最新のドキュメントや開発セットアップ環境が提供されている。",
+    "translations": {
+      "ja": {
+        "title": "Angularの現在地：TypeScriptベースの大規模Web開発プラットフォームとしての進化と、最新エコシステムの全貌を解説",
+        "summary": "Google主導のWeb開発フレームワーク「Angular」は、デスクトップおよびモバイル向けWebアプリ開発を強力に支援する包括的なプラットフォームへと進化を遂げた。 コンポーネントベースの設計、堅牢なTypeScriptエコシステム、SSRや遅延読み込みなどの高度な最適化機能を標準で備える。 小規模開発からエンタープライズ級の複雑なアプリまで、信頼性の高いフロントエンドを構築するための必須ツールとして、最新のドキュメントや開発セットアップ環境が提供されている。"
+      },
+      "en": {
+        "title": "Angular deep dive: How this TypeScript-based platform evolved into a comprehensive framework for modern web application development",
+        "summary": "Google-backed Angular has matured into a full-featured, enterprise-grade development platform that streamlines mobile and desktop web application builds using TypeScript. Beyond core component architecture, the platform now natively supports advanced optimization patterns like Server-Side Rendering (SSR), lazy loading, and sophisticated schematic generation, allowing developers to manage complexity at scale. The updated developer ecosystem provides robust tooling and comprehensive documentation for handling everything from state management to complex form handling. For builders, Angular serves as a reliable, batteries-included standard for large-scale production apps where strict consistency and performance are non-negotiable. Whether architecting a new interface or refactoring legacy code, mastering these modern primitives is essential for shipping high-performance web applications with production-grade confidence."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-07T08:52:05.270Z"
+  },
+  {
     "id": "art-1794041213615-hlaoe",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -15952,33 +16057,6 @@
     "created_at": "2026-11-05T15:02:23.364Z"
   },
   {
-    "id": "art-1793890014795-9v4qw",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dondonudonjp/n/nf6a3656c6e41",
-    "published_at": "2026-11-05T14:40:10.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332558065/rectangle_large_type_2_7f50d07c5166065dcedbb72fbc143a9a.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "OpenAIの画像生成モデル「GPT Image 2.6」が公開、AI描画キャンバスツール「NanoCanvas」も即時対応を発表",
-    "summary_ja": "OpenAIが最新の画像生成モデル「GPT Image 2.6」をリリースしました。 これを受け、AI描画キャンバスツール「NanoCanvas」も即時対応を発表し、最新モデルを活用した編集環境を提供しています。 生成AI領域ではモデルの更新が激しく、キャンバス操作を伴うワークフローでは、最新APIへの追従速度がUXを左右します。 開発者は、モデル性能を最大化するために統合ツールのアップデートを監視し、いち早くユーザーへ提供する敏捷性が求められます。",
-    "translations": {
-      "ja": {
-        "title": "OpenAIの画像生成モデル「GPT Image 2.6」が公開、AI描画キャンバスツール「NanoCanvas」も即時対応を発表",
-        "summary": "OpenAIが最新の画像生成モデル「GPT Image 2.6」をリリースしました。 これを受け、AI描画キャンバスツール「NanoCanvas」も即時対応を発表し、最新モデルを活用した編集環境を提供しています。 生成AI領域ではモデルの更新が激しく、キャンバス操作を伴うワークフローでは、最新APIへの追従速度がUXを左右します。 開発者は、モデル性能を最大化するために統合ツールのアップデートを監視し、いち早くユーザーへ提供する敏捷性が求められます。"
-      },
-      "en": {
-        "title": "OpenAI Releases GPT Image 2.6 Model, With NanoCanvas Rapidly Updating to Support New AI Generation Capabilities",
-        "summary": "OpenAI has officially launched GPT Image 2.6, a new iteration of its image generation model designed to improve quality and output consistency. Following the release, the AI-powered canvas platform NanoCanvas has moved quickly to integrate support, ensuring developers can immediately utilize the latest model within their existing creative workflows. In the fast-moving generative AI landscape, the speed at which integration tools adopt new model APIs is a critical differentiator for user experience. For developers building on top of image generation stacks, this cycle highlights the importance of maintaining modular architectures that allow for rapid model swaps, ensuring that you can deliver state-of-the-art performance to your end users the moment new models hit production."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "画像生成",
-      "開発"
-    ],
-    "created_at": "2026-11-05T14:46:54.795Z"
-  },
-  {
     "id": "art-1793890006441-4vl5m",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -24814,32 +24892,6 @@
       "研究"
     ],
     "created_at": "2026-11-03T18:18:16.924Z"
-  },
-  {
-    "id": "art-1793729887246-iac2s",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://tech.wmg.com/auditioning-engineering-4ca3d48bf457",
-    "published_at": "2026-11-03T17:59:23.000Z",
-    "og_image_url": null,
-    "title_ja": "AI時代のエンジニア採用：コーディング面接を「実務オーディション」形式へ刷新する新しい評価フレームワーク",
-    "summary_ja": "AIがコード生成を担う現代において、従来のアルゴリズム問題を解く形式のコーディング面接は無効化しつつある。 本稿は、候補者に実務に近いタスクを与え、AIツールを使いこなして解決に至る過程を評価する「オーディション型面接」の有効性を提唱する。 表面的なコーディングスキルよりも、設計能力やAIとの協調、問題解決のプロセスを可視化することが、真のエンジニア採用には不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "AI時代のエンジニア採用：コーディング面接を「実務オーディション」形式へ刷新する新しい評価フレームワーク",
-        "summary": "AIがコード生成を担う現代において、従来のアルゴリズム問題を解く形式のコーディング面接は無効化しつつある。 本稿は、候補者に実務に近いタスクを与え、AIツールを使いこなして解決に至る過程を評価する「オーディション型面接」の有効性を提唱する。 表面的なコーディングスキルよりも、設計能力やAIとの協調、問題解決のプロセスを可視化することが、真のエンジニア採用には不可欠である。"
-      },
-      "en": {
-        "title": "Beyond LeetCode: Why modern engineering interviews must shift to 'audition' formats for the AI era",
-        "summary": "As generative AI handles rote coding tasks, traditional algorithm-heavy whiteboard interviews have become obsolete indicators of engineering talent. The author advocates for a shift toward 'audition-style' interviews, where candidates are given practical, real-world tasks and evaluated on how they integrate AI tooling into their workflow to reach a solution. This approach prioritizes architectural thinking, tool fluency, and debugging instincts over memorized data structures. For engineering leaders building high-performance teams, the takeaway is clear: stop optimizing for whiteboard performance and start auditing how candidates synthesize complex requirements using modern coding assistants. This shift is essential to identify developers who can actually deliver value in a machine-augmented development environment, rather than those who can simply solve logic puzzles under pressure."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-03T18:18:07.246Z"
   },
   {
     "id": "art-1793729878134-1qmc4",
@@ -36367,32 +36419,6 @@
       "開発"
     ],
     "created_at": "2026-11-01T11:17:21.867Z"
-  },
-  {
-    "id": "art-1793530896110-jcdtq",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/charge0315/articles/f1d468184486cb",
-    "published_at": "2026-11-01T04:40:07.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Dw08z2XK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%259D%25E3%2581%25AEAI%25E3%2583%2590%25E3%2583%2583%25E3%2583%258130%25E5%2588%2586%25E3%2580%25819%25E5%2589%25B2%25E3%2581%25AF%25E6%25A0%25AA%25E4%25BE%25A1%25E3%2581%25AE%25E5%258F%2596%25E3%2582%258A%25E5%25AF%2584%25E3%2581%259B%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2520%2520%25E5%2589%258D%25E3%2581%25AE%25E6%2599%25A9%25E3%2581%25AB%25E6%25B8%2588%25E3%2581%25BE%25E3%2581%259B%25E3%2581%25A62%25E5%2588%258635%25E7%25A7%2592%25E3%2581%25AB%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%2585%25AB%25E5%2592%25AB%25E7%2583%258F%25EF%25BC%2588%25E3%2582%2584%25E3%2581%259F%25E3%2581%258C%25E3%2582%2589%25E3%2581%2599%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzYxMzVhZDkyMDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIアプリの朝バッチ処理を30分から2分35秒に短縮——9割の時間を浪費していた「株価APIの逐次取得」を夜間実行に切り替えた最適化の教訓",
-    "summary_ja": "個人開発するAI銘柄分析端末「ALPHA FORGE」で、毎朝30分かかっていたバッチ処理を2分35秒まで短縮した。 調査の結果、処理時間の9割がAPIでの株価逐次取得に費やされていることが判明し、取得タイミングを夜間に変更するだけで劇的に改善した。 AIの推論速度を疑う前に、データI/Oのボトルネックを計測することが、バッチ処理を高速化するエンジニアの鉄則である。",
-    "translations": {
-      "ja": {
-        "title": "AIアプリの朝バッチ処理を30分から2分35秒に短縮——9割の時間を浪費していた「株価APIの逐次取得」を夜間実行に切り替えた最適化の教訓",
-        "summary": "個人開発するAI銘柄分析端末「ALPHA FORGE」で、毎朝30分かかっていたバッチ処理を2分35秒まで短縮した。 調査の結果、処理時間の9割がAPIでの株価逐次取得に費やされていることが判明し、取得タイミングを夜間に変更するだけで劇的に改善した。 AIの推論速度を疑う前に、データI/Oのボトルネックを計測することが、バッチ処理を高速化するエンジニアの鉄則である。"
-      },
-      "en": {
-        "title": "Optimizing AI Batch Processing: Reducing 30 Minutes of Job Time to 2 Minutes 35 Seconds by Moving API Data Fetching Overnight",
-        "summary": "While optimizing \"ALPHA FORGE,\" a personal AI stock screening project, the developer discovered that their 30-minute morning batch job was largely wasted time. Profiling revealed that 90% of the duration was spent sequentially fetching individual stock prices via API calls rather than on AI inference itself. By shifting these data-heavy retrieval tasks to run during the previous night, processing time plummeted to just 2 minutes and 35 seconds. For solo developers building scheduled backend services, the primary lesson is clear: never assume slow performance stems from heavy AI models until you strictly measure your I/O bottlenecks. Proactive, asynchronous data gathering is the true key to snappy, efficient scheduled workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-01T11:01:36.110Z"
   },
   {
     "id": "art-1793527309575-e4zlb",
@@ -48640,32 +48666,6 @@
       "開発"
     ],
     "created_at": "2026-10-27T18:11:50.775Z"
-  },
-  {
-    "id": "art-1793124523872-k9fft",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/contextgem",
-    "published_at": "2026-10-27T04:48:43.000Z",
-    "og_image_url": null,
-    "title_ja": "AIドキュメント抽出ツール「ContextGem 1.0」登場。LLMと意思決定モデルを統合し、非構造化データから高精度な構造的情報を生成",
-    "summary_ja": "「ContextGem 1.0」は、従来のLLMによる抽出能力に、専用の意思決定モデルを組み合わせることで、複雑な文書から構造化データを正確に抽出する新しいツール。 単なるテキスト解析を超え、ビジネスプロセスの自動化に適した信頼性の高いアウトプットを実現する。 AIエージェントの入力パイプラインを構築する開発者にとって、抽出精度を底上げする強力な選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIドキュメント抽出ツール「ContextGem 1.0」登場。LLMと意思決定モデルを統合し、非構造化データから高精度な構造的情報を生成",
-        "summary": "「ContextGem 1.0」は、従来のLLMによる抽出能力に、専用の意思決定モデルを組み合わせることで、複雑な文書から構造化データを正確に抽出する新しいツール。 単なるテキスト解析を超え、ビジネスプロセスの自動化に適した信頼性の高いアウトプットを実現する。 AIエージェントの入力パイプラインを構築する開発者にとって、抽出精度を底上げする強力な選択肢となるだろう。"
-      },
-      "en": {
-        "title": "ContextGem 1.0 launches to combine LLMs with decision models for precise document data extraction from unstructured files",
-        "summary": "ContextGem 1.0 has officially launched, introducing a hybrid approach that integrates specialized decision models with Large Language Models to improve data extraction accuracy from documents. By moving beyond simple prompt-based parsing, the system ensures that the information extracted from unstructured files is structured reliably enough for downstream automated business processes. This represents a significant shift for builders struggling with the hallucinations and formatting inconsistencies common in pure LLM extraction setups. For developers who are currently building AI agent pipelines that rely on document ingestion, this integration offers a much-needed mechanism to harden data quality at the source, effectively bridging the gap between raw document intake and usable structured database inputs."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-27T18:08:43.872Z"
   },
   {
     "id": "art-1793124506207-s726u",
