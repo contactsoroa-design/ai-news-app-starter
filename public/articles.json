@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794032234680-pdz76",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tappers/articles/ai-labo-e18-advisor-executor-routing",
+    "published_at": "2026-11-07T02:18:00.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OXuH2d_t--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AE%252Fadvisor%25E3%2583%2591%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%25B3%25E3%2582%2592%25E5%25AE%259F%25E6%25A9%259F%25E6%25A4%259C%25E8%25A8%25BC%25EF%25BC%2581%25E3%2580%258C%25E5%258D%2598%25E4%25B8%2580%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E5%258F%258D%25E5%25BE%25A9%25E3%2580%258Dvs%25E3%2580%258CAdvisor%25E8%25A8%25AD%25E8%25A8%2588%25EF%25BC%258BExecu...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tappers%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVE5OTlrenNDTS1ESVpIUGl4SUpHVGoxeVNyT2V4Tmc2SF96NTI5ZFJuTkNVZU5nPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの「Advisor＋Executor」設計を実機検証：単一モデルによる近視眼的な修正ループを脱却する最適化パターンを公開",
+    "summary_ja": "Claude Codeを活用したAIコーディングの設計パターンについて、単一モデルの反復と「Advisor＋Executor」構成を比較する定量検証を実施した。 隔離サンドボックス環境で20の非公開テストを実行した結果、単一モデルでは近視眼的な段階パッチの試行錯誤に陥りやすく、Advisorを介したタスク分割と設計方針の決定を行う構成が、圧倒的な成功率と実装速度を誇ることが判明した。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの「Advisor＋Executor」設計を実機検証：単一モデルによる近視眼的な修正ループを脱却する最適化パターンを公開",
+        "summary": "Claude Codeを活用したAIコーディングの設計パターンについて、単一モデルの反復と「Advisor＋Executor」構成を比較する定量検証を実施した。 隔離サンドボックス環境で20の非公開テストを実行した結果、単一モデルでは近視眼的な段階パッチの試行錯誤に陥りやすく、Advisorを介したタスク分割と設計方針の決定を行う構成が、圧倒的な成功率と実装速度を誇ることが判明した。"
+      },
+      "en": {
+        "title": "Benchmarking Claude Code Patterns: Why the Advisor-Executor Architecture Outperforms Single-Model Iteration Loops in Complex Coding Tasks",
+        "summary": "This empirical study benchmarks AI coding agent patterns, specifically comparing a standard single-model iteration loop against an 'Advisor + Executor' architecture using 20 private test cases in isolated sandbox VMs. The quantitative results demonstrate that single-model agents frequently fall into a trap of shortsighted, incremental trial-and-error patching. In contrast, the Advisor pattern—where a separate LLM instance handles design strategy and reviews before execution—achieved a significantly higher success rate and faster implementation cycle. For developers building agents, the practical takeaway is that delegating high-level architectural oversight to an 'Advisor' agent prevents the loop from oscillating on trivial fixes, ultimately ensuring more robust and scalable codebase manipulation for complex feature requests."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-07T06:17:14.680Z"
+  },
+  {
+    "id": "art-1794032223357-yj0v8",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/mahaya123/items/b3e1cbe4e2c36614efb9",
+    "published_at": "2026-11-07T06:02:37.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0Mjc0NzI1JTJGODczODRkOTVkYmUxMjU0NmIzNDcxMDE3N2FmY2E5YjJhMWRjNWIxMyUyRnhfbGFyZ2UucG5nJTNGMTc2Mzk4NjU4Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YzdmOTBlMjEwMTVmZDM0ZmUzZjYxMzZmNWY5ZjgxMmQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1b85f633417cc24a99c9aa4dfb9b2ec8?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU0JUI4JUFEJUU1JUFEJUE2JUU2JTk1JUIwJUU1JUFEJUE2JUUzJTgxJThCJUUzJTgyJTg5JUU1JUE3JThCJUUzJTgyJTgxJUUzJTgyJThCQ01PUyVFMyU4MiVBMiVFMyU4MyU4QSVFMyU4MyVBRCVFMyU4MiVCMCVFOSU5QiU4NiVFNyVBOSU4RCVFNSU5QiU5RSVFOCVCNyVBRiVFMyU4MSVBRSVFNSVBRSU5RiVFOCVCNyVCNSVFMyU4MiVBOCVFMyU4MiVBRiVFMyU4MiVCQiVFMyU4MyVBQkhUTUwlRTglQTglODglRTclQUUlOTclRTYlQkMlOTQlRTclQkYlOTI4MCVFOCVBQyU5QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTVlMTY2NWMwNDRiZTMxMzQ1YjdhOTY2MWM3NjdkNzc0&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYWhheWExMjMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yMmIzYTFmMjdmNTBhNzdkNjRjYTE4M2JiZTg0Yzg3Zg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=7c65840fe717478b60d60b6488c02f27",
+    "title_ja": "中学数学で紐解くCMOSアナログ集積回路：MOSFETからADCまで80講の実践的Excel・HTML計算演習講座",
+    "summary_ja": "アナログ集積回路設計の難解な課題を解決するために、MOSFET、負帰還、LDO、ADCといった主要トピックを中学数学レベルから再構築する全80講のオンライン演習講座が公開された。 複雑な数式に頼るのではなく、ExcelやHTMLを用いた直感的な計算シミュレーションを通じて、設計時の定数選定や動作メカニズムを体得できる内容だ。 理論と実装のギャップに悩むエンジニアにとって、動かして理解する計算演習は現場のトラブルシューティング能力を飛躍的に高めるための最適解となる。",
+    "translations": {
+      "ja": {
+        "title": "中学数学で紐解くCMOSアナログ集積回路：MOSFETからADCまで80講の実践的Excel・HTML計算演習講座",
+        "summary": "アナログ集積回路設計の難解な課題を解決するために、MOSFET、負帰還、LDO、ADCといった主要トピックを中学数学レベルから再構築する全80講のオンライン演習講座が公開された。 複雑な数式に頼るのではなく、ExcelやHTMLを用いた直感的な計算シミュレーションを通じて、設計時の定数選定や動作メカニズムを体得できる内容だ。 理論と実装のギャップに悩むエンジニアにとって、動かして理解する計算演習は現場のトラブルシューティング能力を飛躍的に高めるための最適解となる。"
+      },
+      "en": {
+        "title": "Master CMOS Analog Circuit Design with 80 Hands-on Excel and HTML Exercises Covering MOSFETs to ADCs",
+        "summary": "To demystify complex analog integrated circuit design, a new comprehensive 80-part online course breaks down core concepts like MOSFETs, negative feedback, LDOs, and ADCs starting from basic junior high school mathematics. Rather than relying on rote memorization of advanced formulas, the course leverages intuitive Excel spreadsheets and HTML-based interactive simulations to teach students how to select component constants and understand underlying operational mechanisms. For engineers struggling to bridge the gap between abstract theory and practical implementation, this hands-on approach provides a robust framework. It ultimately serves as a powerful resource for building real-world troubleshooting skills, enabling designers to verify circuit behavior dynamically instead of blindly following textbook derivations or complex theoretical models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-07T06:17:03.357Z"
+  },
+  {
+    "id": "art-1794032215654-9qv7w",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/gritchbreed/n/nfbe2d99ae70d",
+    "published_at": "2026-11-07T06:15:24.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333250793/rectangle_large_type_2_cdabd8ede93b021358a117ca758cdaff.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "ゲーム開発の「クロスレビュー」をAIで自動化：個人開発者が語るデバッグと改善の新しいアプローチ",
+    "summary_ja": "個人開発者が開発中のミステリーゲーム「湯けむりの記事」において、ChatGPT等のAIを活用して物語の矛盾点や進行の不自然さを指摘する「AIクロスレビュー」を実施した。 AIにペルソナを与えて客観的なフィードバックを得ることで、開発者だけでは気づけない物語の破綻や難易度の調整を行う手法を公開している。 また、Cloudflare Pagesを活用した公式サイトも公開し、開発プロセスの透明性を高める工夫も。",
+    "translations": {
+      "ja": {
+        "title": "ゲーム開発の「クロスレビュー」をAIで自動化：個人開発者が語るデバッグと改善の新しいアプローチ",
+        "summary": "個人開発者が開発中のミステリーゲーム「湯けむりの記事」において、ChatGPT等のAIを活用して物語の矛盾点や進行の不自然さを指摘する「AIクロスレビュー」を実施した。 AIにペルソナを与えて客観的なフィードバックを得ることで、開発者だけでは気づけない物語の破綻や難易度の調整を行う手法を公開している。 また、Cloudflare Pagesを活用した公式サイトも公開し、開発プロセスの透明性を高める工夫も。"
+      },
+      "en": {
+        "title": "Automating game design cross-reviews with AI: A solo developer’s approach to debugging narrative flow and story logic",
+        "summary": "A solo indie developer has pioneered an \"AI cross-review\" workflow for their mystery title, 'Yukemuri no Kiji,' utilizing LLMs to stress-test narrative logic and detect plot holes. By assigning specific personas to the AI, the developer generated critical feedback on pacing and puzzle difficulty that would be difficult to catch during solo development. This methodology transforms the AI from a mere coding assistant into a structured playtesting partner. Additionally, the developer launched a new official website hosted on Cloudflare Pages to showcase the project, illustrating a workflow that emphasizes both rigorous narrative QA and public-facing development transparency. This experiment proves that AI agents are viable tools for balancing narrative-heavy games without needing massive human beta-testing teams early on."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-07T06:16:55.655Z"
+  },
+  {
+    "id": "art-1794032204244-zvru7",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/ciel_lab/articles/5a9291e5cc3128",
+    "published_at": "2026-11-07T01:09:44.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--nx_Dv7bp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25AE%25E7%25AA%2593%25E3%2582%2592%25E5%25A2%2597%25E3%2582%2584%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2582%25E3%2580%2581%25E4%25BB%2595%25E4%25BA%258B%25E3%2581%25AF1%25E3%2581%25A4%25E3%2581%25AE%25E7%25AA%2593%25E3%2581%25AB%25E9%259B%2586%25E3%2581%25BE%25E3%2582%258B%25E3%2580%2582%25E5%25BD%25B9%25E3%2581%25AE%25E5%2588%2586%25E3%2581%2591%25E6%2596%25B9%25E3%2581%25A8%2520CLAUDE.md%2520%25E3%2581%25AE%25E6%259B%25B8%25E3%2581%258D%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ciel%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzAyZGJiOGEwYzEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの複数ウィンドウ運用術：役割分担とCLAUDE.mdを駆使してタスクの偏りを防ぐ設計",
+    "summary_ja": "Claude Codeでウィンドウを増やしても、役割を定義しないと特定の窓にタスクが集中する問題が発生する。 解決策は各窓の「CLAUDE.md」に、担当する責務（保持するデータ、受け渡し可能な内容、実行ボタンの担当など）を明確に記述し、作業フォルダ自体を目的別に分けることだ。 これにより、各ウィンドウがどのプロジェクトの持ち主かをOSレベルで可視化でき、コンテキストの肥大化と混乱を防ぐことができる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの複数ウィンドウ運用術：役割分担とCLAUDE.mdを駆使してタスクの偏りを防ぐ設計",
+        "summary": "Claude Codeでウィンドウを増やしても、役割を定義しないと特定の窓にタスクが集中する問題が発生する。 解決策は各窓の「CLAUDE.md」に、担当する責務（保持するデータ、受け渡し可能な内容、実行ボタンの担当など）を明確に記述し、作業フォルダ自体を目的別に分けることだ。 これにより、各ウィンドウがどのプロジェクトの持ち主かをOSレベルで可視化でき、コンテキストの肥大化と混乱を防ぐことができる。"
+      },
+      "en": {
+        "title": "Optimizing Claude Code: How to Manage Multiple Windows, Define Roles, and Prevent Context Overload via CLAUDE.md",
+        "summary": "When managing multiple Claude Code windows, developers often find themselves funneling all requests into a single 'first-opened' window, leading to context bloat and confusing role ambiguity. The solution is to strictly delineate roles within each session’s CLAUDE.md file, specifically outlining what each agent owns, what data it handles, and which specific tasks or buttons it is authorized to trigger. By physically isolating workspaces into separate folders for each window, you ensure that every instance has a clear, directory-level boundary. This practice forces explicit accountability, prevents the 'everything-everywhere' trap, and ensures your instructions remain modular and maintainable rather than becoming a single, bloated document that gets ignored by the agent during complex development cycles."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-07T06:16:44.244Z"
+  },
+  {
     "id": "art-1794031344458-vwbym",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -16958,32 +17062,6 @@
     "created_at": "2026-11-05T10:02:17.472Z"
   },
   {
-    "id": "art-1793872930665-bkzhm",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/mint_and_lime/n/n182071394210",
-    "published_at": "2026-11-05T09:44:43.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332545914/rectangle_large_type_2_c3b879d80db30cd42a9e9c53eccaf54d.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "VALORANT特化のAIコーチ兼戦術トラッカー「Mint & Lime Pocket」開発秘話：初の個人開発でユーザーのプレイ体験向上を目指す挑戦",
-    "summary_ja": "VALORANTプレイヤー向けに、試合中の戦術サポートやAIによるコーチングを提供するPCアプリ『Mint & Lime Pocket』が公開された。 個人開発者による初のプロジェクトとして立ち上げられ、BOOTHで無料デモ版の提供を開始。 単なるスタッツ管理を超え、対戦中に「相棒」として隣で支える体験を目指した設計となっており、特定の競技ゲームにおけるニッチな課題を技術で解決する個人開発の醍醐味が詰まっている。",
-    "translations": {
-      "ja": {
-        "title": "VALORANT特化のAIコーチ兼戦術トラッカー「Mint & Lime Pocket」開発秘話：初の個人開発でユーザーのプレイ体験向上を目指す挑戦",
-        "summary": "VALORANTプレイヤー向けに、試合中の戦術サポートやAIによるコーチングを提供するPCアプリ『Mint & Lime Pocket』が公開された。 個人開発者による初のプロジェクトとして立ち上げられ、BOOTHで無料デモ版の提供を開始。 単なるスタッツ管理を超え、対戦中に「相棒」として隣で支える体験を目指した設計となっており、特定の競技ゲームにおけるニッチな課題を技術で解決する個人開発の醍醐味が詰まっている。"
-      },
-      "en": {
-        "title": "Building 'Mint & Lime Pocket': A first-time solo dev launches an AI-powered tactical coach and tracker for VALORANT players",
-        "summary": "A solo developer has launched 'Mint & Lime Pocket,' a specialized PC application designed to act as an AI-powered tactical coach and match tracker for VALORANT players. Now available as a free demo via BOOTH, this project represents the developer's first foray into shipping a live product. Moving beyond basic stat-tracking, the app is architected to provide real-time, interactive support, effectively serving as an in-game companion that offers strategic advice during matches. This release serves as a compelling case study on identifying niche pain points within competitive gaming ecosystems and addressing them through custom software, demonstrating how individual builders can create meaningful UX improvements that larger, generic platforms often overlook."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-05T10:02:10.665Z"
-  },
-  {
     "id": "art-1793872924224-i87nf",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -32822,32 +32900,6 @@
     "created_at": "2026-11-02T07:46:37.167Z"
   },
   {
-    "id": "art-1793604712902-4hv8e",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/xiaoy/items/c4340fda4f660e9c2e4b",
-    "published_at": "2026-11-02T07:24:46.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDgzNTg1JTJGY2QzNjJmZDZlNzBhNDA3YTc0NmMwNGY1YjcxMjc2MjM2OTRmMDc3NSUyRmxhcmdlLnBuZyUzRjE3OTE4NzM0Nzc_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTdlYmMzODg3OGUwZjQxZWEwOGVhZmM1ZGRmZjlkMTcw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D95cd35284c4ecd4fc2d6eac456c9056f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSVFMyU4MiU5MiVFNSVCMCU4RSVFNSU4NSVBNSVFMyU4MSU5NyVFMyU4MSVBNiVFOSU5NiU4QiVFNyU5OSVCQSVFOSU4MCU5RiVFNSVCQSVBNiVFMyU4MSU4QzUlRTUlODAlOEQlRTMlODElQUIlRTMlODElQUElRTMlODElQTMlRTMlODElOUYlRTMlODElQUUlRTMlODElQUIlRTMlODAlODElRTMlODElQUElRTMlODElOUMlRTclQTclODElRTMlODElQUUlRTclOTYlQjIlRTUlOEElQjQlRTUlQkElQTYlRTMlODElQUYxMCVFNSU4MCU4RCVFMyU4MSVBQiVFMyU4MSVBQSVFMyU4MSVBMyVFMyU4MSU5RiVFMyU4MSVBRSVFMyU4MSU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTRhYjkyNDM1ZjhlY2I3ZWU5Y2I1ZWQ5ZTY1MTA2NDg3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB4aWFveSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWE2YjhkZmE3M2U2ODQ3NjI4YjQ5NWUyYWQxNTdjNmY2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=80098b2eaa8dc5848f3d95721f64b619",
-    "title_ja": "Claude Codeで開発速度は5倍になったが「疲労度が10倍」に跳ね上がった理由：AIネイティブ開発で直面した脳の限界",
-    "summary_ja": "数週間にわたるClaude CodeとCursorの徹底導入により、開発速度は5倍に向上したが、同時に脳疲労が10倍に膨れ上がるという皮肉な事態に直面した。 AIが生成する大量のコードを精査し、文脈を維持し続ける過程で、人間側の「認知的負荷」が過剰に増大していることが原因だ。 単にコーディング量を増やすのではなく、AIの出力に対するレビュー頻度の設計や、人間が考えるべき抽象度の高いタスクへ集中する意識的な切り替えが、AIネイティブ開発を長期間持続させるための必須条件となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeで開発速度は5倍になったが「疲労度が10倍」に跳ね上がった理由：AIネイティブ開発で直面した脳の限界",
-        "summary": "数週間にわたるClaude CodeとCursorの徹底導入により、開発速度は5倍に向上したが、同時に脳疲労が10倍に膨れ上がるという皮肉な事態に直面した。 AIが生成する大量のコードを精査し、文脈を維持し続ける過程で、人間側の「認知的負荷」が過剰に増大していることが原因だ。 単にコーディング量を増やすのではなく、AIの出力に対するレビュー頻度の設計や、人間が考えるべき抽象度の高いタスクへ集中する意識的な切り替えが、AIネイティブ開発を長期間持続させるための必須条件となる。"
-      },
-      "en": {
-        "title": "I boosted dev speed 5× with Claude Code, but my mental fatigue soared 10×: The hidden toll of AI-native engineering",
-        "summary": "Over the past few weeks, integrating Claude Code and Cursor into my daily workflow has increased development speed by 5×, yet resulted in a 10× spike in mental fatigue. The primary driver is the cognitive overload of continuously auditing AI-generated code while struggling to maintain deep system context. This phenomenon highlights a critical trade-off: simply accelerating output forces the engineer to manage more complexity than the brain can handle effectively. To make AI-native development sustainable, developers must shift focus from micromanaging AI output to overseeing architectural logic, while strategically budgeting their cognitive capacity. The takeaway is clear: automation doesn't replace the need for deep work; it demands a radical redesign of how we allocate our limited mental energy."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-02T07:31:52.902Z"
-  },
-  {
     "id": "art-1793604706221-ry3cv",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -34812,32 +34864,6 @@
       "研究"
     ],
     "created_at": "2026-11-01T19:31:43.323Z"
-  },
-  {
-    "id": "art-1793560620797-2lbbr",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/hamatz/articles/5c16da7d798b80",
-    "published_at": "2026-11-01T09:39:49.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--GpR0EHAY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E4%25BB%25BB%25E3%2581%259B%25E3%2582%258B%25E3%2581%25AA%25E3%2582%2593%25E3%2581%25A6%25E3%2581%25A8%25E3%2582%2593%25E3%2581%25A7%25E3%2582%2582%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%2581%25E3%2581%25A8%25E8%25A8%2580%25E3%2582%258F%25E3%2582%258C%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E4%25BA%25BA%25E9%2581%2594%25E3%2581%25B8%2520%25E2%2580%2594%2520%25E3%2580%258CAI%25E3%2582%2592%25E4%25BF%25A1%25E3%2581%2598%25E3%2581%25AA%25E3%2581%258F%25E3%2581%25A6%25E3%2581%2584%25E3%2581%2584%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2580%258D%25E3%2581%258B%25E3%2582%2589%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AF%25E3%2581%25BE%25E3%2581%25A4%25E3%2581%25BE%25E3%2582%258B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QxNjQ2OGJlYmIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「AIを信じなくていい仕組み」を作る開発手法：AI時代に不信感と生産性を両立させるための「自動検証フロー」設計術",
-    "summary_ja": "AIエージェントのコード自動生成を鵜呑みにせず、AIを「疑う前提」で検証環境を構築する方法を解説する。 コードを信じるのではなく、テスト駆動開発や自動検証フローといった「AIの結果を検証可能な仕組み」を先に用意することで、開発リスクを排除しつつAIの恩恵を最大化できる。 AI開発に懐疑的な現場こそ、人間による監視と自動テストの連携が重要となる。",
-    "translations": {
-      "ja": {
-        "title": "「AIを信じなくていい仕組み」を作る開発手法：AI時代に不信感と生産性を両立させるための「自動検証フロー」設計術",
-        "summary": "AIエージェントのコード自動生成を鵜呑みにせず、AIを「疑う前提」で検証環境を構築する方法を解説する。 コードを信じるのではなく、テスト駆動開発や自動検証フローといった「AIの結果を検証可能な仕組み」を先に用意することで、開発リスクを排除しつつAIの恩恵を最大化できる。 AI開発に懐疑的な現場こそ、人間による監視と自動テストの連携が重要となる。"
-      },
-      "en": {
-        "title": "Beyond Blind Trust: Building AI-Powered Development Workflows That Prioritize Automated Verification and Risk Mitigation",
-        "summary": "Rather than grappling with whether to trust AI-generated code, developers should prioritize systems that function even if the AI is wrong. This article advocates for building robust automated verification loops and test-driven development workflows that treat AI output as untrusted inputs. By designing architectures where code generated by agents is immediately validated by rigorous test suites, teams can leverage AI productivity gains without sacrificing quality or security. The practical takeaway is that skepticism toward AI in the workplace is actually a productive signal; it highlights the need for human-overseen validation frameworks that catch errors early. Instead of arguing over AI reliability, engineers should invest in the structural safeguards that render absolute trust unnecessary for shipping stable applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-01T19:17:00.797Z"
   },
   {
     "id": "art-1793560596052-g4ig1",
@@ -37002,31 +37028,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-01T06:01:39.299Z"
-  },
-  {
-    "id": "art-1793503892779-y26fz",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/project_arca/articles/unity-fps-frame-p95-hud-design",
-    "published_at": "2026-11-01T02:35:50.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--2xh9Yo9J--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:FPS%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E3%2581%25AF%25E5%2588%2586%25E3%2581%258B%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E5%25BC%2595%25E3%2581%25A3%25E3%2581%258B%25E3%2581%258B%25E3%2582%258A%25E3%2580%2582Unity%25E3%2581%25ABFrame%252FP95%25E3%2582%2592%25E4%25B8%25A6%25E3%2581%25B9%25E3%2582%258B%25E5%25B0%258F%25E3%2581%2595%25E3%2581%25AAHUD%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:papa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDAzT1d0Si1ROWptalk2akVrQmpWbFFkMDJYV05aV2JNdm96Vk5Ody03eXZ3YWF3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Unity開発でFPSだけでは見抜けない「微細な引っかかり」を解消する。FrameとP95を表示する軽量パフォーマンスHUDの実装設計",
-    "summary_ja": "ゲーム開発中にFPSは良好でも発生するカクつきを検知するため、Unity上にFPS、Frameタイム、P95を同時に可視化する軽量なパフォーマンスHUDを実装した。 平均値であるFPSだけでは見逃しやすいフレームの微細なスパイクをリアルタイムで追跡できるのが強みだ。 画面占有率を最小限に抑えつつ、パフォーマンスの劣化を直感的に把握できる環境を整えることは、UX品質を維持する上で不可欠なエンジニアリングアプローチである。",
-    "translations": {
-      "ja": {
-        "title": "Unity開発でFPSだけでは見抜けない「微細な引っかかり」を解消する。FrameとP95を表示する軽量パフォーマンスHUDの実装設計",
-        "summary": "ゲーム開発中にFPSは良好でも発生するカクつきを検知するため、Unity上にFPS、Frameタイム、P95を同時に可視化する軽量なパフォーマンスHUDを実装した。 平均値であるFPSだけでは見逃しやすいフレームの微細なスパイクをリアルタイムで追跡できるのが強みだ。 画面占有率を最小限に抑えつつ、パフォーマンスの劣化を直感的に把握できる環境を整えることは、UX品質を維持する上で不可欠なエンジニアリングアプローチである。"
-      },
-      "en": {
-        "title": "Debugging micro-stutters in Unity: Implementing a custom, lightweight HUD to track FPS, frame time, and P95 latency metrics",
-        "summary": "To diagnose the elusive micro-stutters that often persist despite stable FPS counts, a custom, lightweight HUD was implemented in Unity to track real-time frame timing and P95 latency. Relying solely on average FPS often masks critical frame time spikes that negatively impact player experience. This new implementation provides a non-intrusive, constant visual monitor of performance trends without cluttering the game screen. For indie developers, moving beyond basic frame rate monitoring to include p95 and frame time jitter is a crucial step in maintaining visual smoothness. This project demonstrates that building specialized diagnostic tools directly into the engine environment allows developers to catch and iterate on performance bottlenecks far more efficiently than using standard profilers alone."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-01T03:31:32.779Z"
   },
   {
     "id": "art-1793493095035-5l1h5",
