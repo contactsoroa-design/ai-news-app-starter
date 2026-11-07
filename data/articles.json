@@ -1,5 +1,82 @@
 [
   {
+    "id": "art-1794037616150-8mw28",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/iphonista555/n/ncf55ce64a083",
+    "published_at": "2026-11-07T07:45:02.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/3344a6c240db49101239fd7378abd917b4c2976b.png",
+    "title_ja": "歩行アニメーションの「ガクガク」を解消――1コマで93.6px飛ぶ槍の動きを90ミリ秒の補間で滑らかにした技術的アプローチ",
+    "summary_ja": "個人開発のゲーム制作において、キャラの歩行アニメーションで槍が1コマあたり93.6ピクセルも跳ねる不自然な「ガクガク」現象が発生。 これを修正するため、単純なフレーム補間ではなく90ミリ秒という絶妙なラグと補間処理を適用することで、視覚的な違和感を解消した。 細かな挙動のチューニングこそが、プレイヤーの没入感を左右する重要な要素となる。",
+    "translations": {
+      "ja": {
+        "title": "歩行アニメーションの「ガクガク」を解消――1コマで93.6px飛ぶ槍の動きを90ミリ秒の補間で滑らかにした技術的アプローチ",
+        "summary": "個人開発のゲーム制作において、キャラの歩行アニメーションで槍が1コマあたり93.6ピクセルも跳ねる不自然な「ガクガク」現象が発生。 これを修正するため、単純なフレーム補間ではなく90ミリ秒という絶妙なラグと補間処理を適用することで、視覚的な違和感を解消した。 細かな挙動のチューニングこそが、プレイヤーの没入感を左右する重要な要素となる。"
+      },
+      "en": {
+        "title": "Smoothing out janky character animations: How 90ms interpolation fixed a 93.6px spear jump issue",
+        "summary": "In a recent indie game development project, the developer encountered a persistent jitter issue where a character's spear movement was jumping 93.6 pixels every single frame, ruining the walking animation. Instead of relying on standard interpolation methods, the developer implemented a custom 90ms interpolation layer to smooth out these extreme positional shifts. The resulting fix demonstrates that addressing micro-stuttering isn't always about framerate, but rather carefully tuning the timing and transition logic of individual assets to match human perception. For indie developers and technical artists, this highlights why obsessing over granular movement data—rather than just overall performance—is the secret to maintaining player immersion in 2D animation pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-07T07:46:56.150Z"
+  },
+  {
+    "id": "art-1794037609191-lue6b",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/maura/articles/0a3f541be9f42d",
+    "published_at": "2026-11-07T04:47:02.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KUbS-BJ2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:CLAUDE.md%2520%25E3%2581%25AF%25E5%2589%258A%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E6%2588%25BB%25E3%2582%258B%25E3%2580%2582%25E3%2581%25A0%25E3%2581%258B%25E3%2582%2589%25E3%2580%258C%25E4%25BB%258A%25E3%2581%25AE%25E5%25AD%2597%25E6%2595%25B0%25E3%2580%258D%25E3%2582%2592%25E4%25B8%258A%25E9%2599%2590%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BE%25E3%2581%2586%25E3%2582%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXo4LUwtSVJseEJoa2V3V1oxRXRFODhBenlDTXFZazhCNHNjRC1EN1VJSmZCRllVd1E9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeのシステムプロンプト問題、CLAUDE.mdが3か月で15倍に肥大化。運用の要諦は「現在字数の上限維持」によるルール断捨離",
+    "summary_ja": "Claude Codeの運用開始後、全会話で読み込まれるシステムプロンプト「CLAUDE.md」が3か月で960字から1.5万字近くまで肥大化した。 ファイルが巨大化すると毎回読み込みコストが重くなるため、現在はファイルサイズのさらなる増大を禁止し、新しいルールを追加する際は同量分を削除する「現行字数上限ルール」を適用している。 開発環境のルール設定ファイルは、追加するだけでなく常に整理しないと推論速度と精度のバランスが崩れるという教訓だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeのシステムプロンプト問題、CLAUDE.mdが3か月で15倍に肥大化。運用の要諦は「現在字数の上限維持」によるルール断捨離",
+        "summary": "Claude Codeの運用開始後、全会話で読み込まれるシステムプロンプト「CLAUDE.md」が3か月で960字から1.5万字近くまで肥大化した。 ファイルが巨大化すると毎回読み込みコストが重くなるため、現在はファイルサイズのさらなる増大を禁止し、新しいルールを追加する際は同量分を削除する「現行字数上限ルール」を適用している。 開発環境のルール設定ファイルは、追加するだけでなく常に整理しないと推論速度と精度のバランスが崩れるという教訓だ。"
+      },
+      "en": {
+        "title": "Claude Code system prompt bloat: Managing CLAUDE.md by enforcing strict character caps after 15× growth in three months",
+        "summary": "Over three months of utilizing Claude Code, the system prompt file CLAUDE.md ballooned from 960 to nearly 15,000 characters. Since this file is pre-loaded into every single session, this bloat significantly increases latency and potentially degrades model performance at the start of every interaction. To combat this, the author established a strict constraint: no new rules can be added without removing an equivalent amount of existing text, effectively capping the file at its current size. For developers integrating agentic coding tools, this experience highlights that system configuration files are not write-only logs; they require disciplined maintenance. Failing to prune stale instructions results in a heavy, inefficient context window that undermines the very automation meant to speed up development workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-07T07:46:49.191Z"
+  },
+  {
+    "id": "art-1794037599930-onsrt",
+    "source_id": "source-github-trending",
+    "source_name": "GitHub Trending (AI / TypeScript / Python)",
+    "url": "https://github.com/mpv-player/mpv",
+    "published_at": "2026-11-07T07:46:39.930Z",
+    "og_image_url": null,
+    "title_ja": "オープンソースのコマンドラインメディアプレイヤー「mpv」がGitHubで急上昇中、軽量性と多様なコーデック対応でエンジニアから根強い支持",
+    "summary_ja": "GitHubでトレンド入りした「mpv」は、軽量かつ高機能なコマンドラインベースのメディアプレイヤーとして、多様なファイル形式や字幕、広範なオーディオ・ビデオコーデックのサポートを強みに開発者の間で定番ツールとなっている。 LinuxやWindows、macOSで動作し、ハードウェアデコーディングによる省電力再生も可能だ。 GUIに依存せず、スクリプトによる拡張性と制御性を重視するエンジニアにとって、メディア視聴環境を軽量化する最適な選択肢である。",
+    "translations": {
+      "ja": {
+        "title": "オープンソースのコマンドラインメディアプレイヤー「mpv」がGitHubで急上昇中、軽量性と多様なコーデック対応でエンジニアから根強い支持",
+        "summary": "GitHubでトレンド入りした「mpv」は、軽量かつ高機能なコマンドラインベースのメディアプレイヤーとして、多様なファイル形式や字幕、広範なオーディオ・ビデオコーデックのサポートを強みに開発者の間で定番ツールとなっている。 LinuxやWindows、macOSで動作し、ハードウェアデコーディングによる省電力再生も可能だ。 GUIに依存せず、スクリプトによる拡張性と制御性を重視するエンジニアにとって、メディア視聴環境を軽量化する最適な選択肢である。"
+      },
+      "en": {
+        "title": "Open-source command-line media player mpv trends on GitHub, securing enduring popularity among developers for its lightweight performance and codec versatility",
+        "summary": "The command-line media player mpv continues to gain traction on GitHub as a preferred tool for developers, offering a lightweight, scriptable alternative to heavyweight GUI players. It natively supports a massive array of media formats, subtitle types, and video codecs, allowing for granular control over playback environments across Linux, Windows, and macOS. By leveraging explicit hardware decoding and minimizing system overhead, mpv provides high-fidelity performance without the resource bloat typical of consumer-grade media applications. For builders managing media-intensive workflows or debugging video assets directly from the terminal, mpv remains the gold standard for its extensibility, stability, and clean, non-intrusive architecture, proving that performance-first design choices continue to resonate deeply within the engineering community."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-07T07:46:39.930Z"
+  },
+  {
     "id": "art-1794036722226-sv2js",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -16189,32 +16266,6 @@
     "created_at": "2026-11-05T13:31:51.294Z"
   },
   {
-    "id": "art-1793885505129-ot5vh",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/solar_gon/n/nd5d5c6484aa8",
-    "published_at": "2026-11-05T13:30:19.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332633198/rectangle_large_type_2_a23e35975f9ef6235f33b0e56a9ae597.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude CodeのMAXプランを半年で解約。AIコーディング環境をCodexへ移行した経緯と、AIエージェント特有の「疲れ」の実態",
-    "summary_ja": "半年間利用したClaude CodeのMAXプランを解約し、Codexへ移行した開発者の体験談。 AIに不具合調査を依頼した際「修正不可」と断言された経験や、AI駆動開発に伴う特有の精神的な疲弊が、ツールの見直しに繋がったという。 AIエージェントの活用において、ツールが持つ限界を早期に見極め、自身のワークフローに合わせて柔軟に切り替えることの重要性を説いている。",
-    "translations": {
-      "ja": {
-        "title": "Claude CodeのMAXプランを半年で解約。AIコーディング環境をCodexへ移行した経緯と、AIエージェント特有の「疲れ」の実態",
-        "summary": "半年間利用したClaude CodeのMAXプランを解約し、Codexへ移行した開発者の体験談。 AIに不具合調査を依頼した際「修正不可」と断言された経験や、AI駆動開発に伴う特有の精神的な疲弊が、ツールの見直しに繋がったという。 AIエージェントの活用において、ツールが持つ限界を早期に見極め、自身のワークフローに合わせて柔軟に切り替えることの重要性を説いている。"
-      },
-      "en": {
-        "title": "Developer cancels six-month Claude Code subscription, citing AI fatigue and model limitations as reasons for switching to Codex",
-        "summary": "A software developer has officially cancelled their six-month Claude Code Max subscription, shifting their primary AI development environment to Codex. The decision follows a series of interactions where the AI explicitly stated it could not resolve persistent bugs, compounded by the growing mental fatigue associated with prolonged, high-intensity AI-driven development. The author reflects on the friction between AI agency and actual productivity, highlighting that even powerful coding agents have specific behavioral limits. For builders relying on autonomous tools, the takeaway is to maintain awareness of when AI assistance becomes a source of technical debt or emotional burnout, and to remain willing to pivot workflows when a specific agent's patterns stop serving the project's long-term health."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-05T13:31:45.129Z"
-  },
-  {
     "id": "art-1793885498280-2marg",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -16265,32 +16316,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-05T13:16:48.838Z"
-  },
-  {
-    "id": "art-1793884602372-2f2tq",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/mera_3/n/n9a515c01c04c",
-    "published_at": "2026-11-05T13:16:16.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332627887/rectangle_large_type_2_4c1b48d8cc525c032e8341ca4651f92e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI競馬予測「BossAI」開発記：Version 10導入による三連複の自動購入と、AIによる意思決定の全自動化への挑戦",
-    "summary_ja": "個人開発の競馬予測AI「BossAI」が、従来の馬連に加えて、Version 10基準となる三連複の予測機能を実装した。 単なる買い目の提示にとどまらず、AIが予想に基づき「購入するか、見送るか」までを即時判断する全自動運用フローを構築。 予測から資金投下までをシステム化することで、感情に左右されない機械的な投資スタイルを実現し、競馬という不確実性の高い領域で再現性のあるアルゴリズムを構築する知見が得られる。",
-    "translations": {
-      "ja": {
-        "title": "AI競馬予測「BossAI」開発記：Version 10導入による三連複の自動購入と、AIによる意思決定の全自動化への挑戦",
-        "summary": "個人開発の競馬予測AI「BossAI」が、従来の馬連に加えて、Version 10基準となる三連複の予測機能を実装した。 単なる買い目の提示にとどまらず、AIが予想に基づき「購入するか、見送るか」までを即時判断する全自動運用フローを構築。 予測から資金投下までをシステム化することで、感情に左右されない機械的な投資スタイルを実現し、競馬という不確実性の高い領域で再現性のあるアルゴリズムを構築する知見が得られる。"
-      },
-      "en": {
-        "title": "Building 'BossAI': Integrating Triple Trio forecasts with Version 10 logic and automating end-to-end horse racing betting decisions",
-        "summary": "The indie development project 'BossAI' has expanded its betting model by adding Version 10 logic specifically designed for Triple Trio forecasts, alongside its established fixed-odds quinella betting. Moving beyond simple probability output, the developer is perfecting a fully automated execution loop where the AI decides not just which tickets to buy, but whether to bet or fold entirely based on real-time conditions. This systematic approach aims to remove human bias, transforming horse racing prediction into a purely algorithmic investment strategy. For developers building automation tools in high-uncertainty markets, this project demonstrates how to effectively bridge the gap between predictive modeling and autonomous, risk-managed execution without requiring manual oversight or emotional intervention."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-05T13:16:42.372Z"
   },
   {
     "id": "art-1793884595274-lihkz",
@@ -34808,33 +34833,6 @@
       "開発"
     ],
     "created_at": "2026-11-01T21:16:45.553Z"
-  },
-  {
-    "id": "art-1793567798944-j54vp",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/lumichy/articles/unlimited-ocr-2-workbench-2026",
-    "published_at": "2026-11-01T13:43:36.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--0t1M9fVa--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Unlimited-OCR-2%25E3%2581%25A7%25E5%25AE%258C%25E5%2585%25A8%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25ABOCR%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%2599%25E3%2583%25B3%25E3%2583%2581%25E6%25A7%258B%25E7%25AF%2589%25EF%25BC%259A%25E9%2595%25B7%25E6%2596%2587PDF%25E3%2583%25BB%25E6%2595%25B0%25E5%25BC%258F%25E3%2583%25BB%25E8%25A1%25A8%25E3%2582%2582VRAM%25E4%25B8%2580%25E5%25AE%259A%25E3%2581%25A7%25E7%2588%2586%25E9%2580%259F%25E8%25A7%25A3%25E6%259E%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:lumichy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2JKREhqSzZDZU9QaFNKLXlfcUFhT1FuS0kwY0JmSWJVZEZUQnJGUWRGNWJNSUU5T2s9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Unlimited-OCR-2で完全ローカルOCR環境を構築：クラウドAPIのコストと機密リスクを排除し、数式・表も高精度に爆速解析する手法",
-    "summary_ja": "PDF解析にクラウドAPIを利用すると機密情報の漏洩リスクや高額な従量課金が発生しますが、オープンソースの「Unlimited-OCR-2」を活用すれば、これらを回避しつつローカル環境で爆速な解析が可能です。 Tesseractが苦手とする複雑なレイアウトや数式、表構造の抽出においても高精度を実現し、VRAM消費を一定に保つ設計により安定した運用をサポートします。 セキュアで安価なドキュメント処理基盤を構築したい開発者にとって、最有力な代替ソリューションと言えるでしょう。",
-    "translations": {
-      "ja": {
-        "title": "Unlimited-OCR-2で完全ローカルOCR環境を構築：クラウドAPIのコストと機密リスクを排除し、数式・表も高精度に爆速解析する手法",
-        "summary": "PDF解析にクラウドAPIを利用すると機密情報の漏洩リスクや高額な従量課金が発生しますが、オープンソースの「Unlimited-OCR-2」を活用すれば、これらを回避しつつローカル環境で爆速な解析が可能です。 Tesseractが苦手とする複雑なレイアウトや数式、表構造の抽出においても高精度を実現し、VRAM消費を一定に保つ設計により安定した運用をサポートします。 セキュアで安価なドキュメント処理基盤を構築したい開発者にとって、最有力な代替ソリューションと言えるでしょう。"
-      },
-      "en": {
-        "title": "Build a Complete Local OCR Workbench with Unlimited-OCR-2: Bypass Cloud API Costs and Data Privacy Risks While Parsing Complex PDFs",
-        "summary": "Developers often rely on cloud APIs like GPT-4o or Google Document AI for PDF parsing, but these tools introduce critical data security risks and recurring API bills. The new Unlimited-OCR-2 toolkit offers a robust, local alternative that avoids external data transmission while delivering high-speed analysis. Unlike legacy open-source engines like Tesseract, which struggle with multi-column layouts, complex mathematical notations, and merged table cells, this solution maintains high accuracy throughout document processing. By keeping VRAM usage constant, it ensures stable performance on local hardware. For builders managing sensitive internal documents or academic papers, this tool provides a secure, cost-effective, and production-ready architecture that effectively replaces expensive cloud-based document intelligence services."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-01T21:16:38.944Z"
   },
   {
     "id": "art-1793566031673-c289f",
