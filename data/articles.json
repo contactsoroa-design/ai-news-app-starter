@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794029520603-rfowb",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/loyal_duck3134/n/nb9089919a20d",
+    "published_at": "2026-11-07T05:26:56.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333235042/rectangle_large_type_2_52e8f7e78acc7670b92a4231006ceaab.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "黒塗りPDFのデータ流出が多発：なぜ「隠したはずの文字」が読めてしまうのか？その技術的要因と防ぐための検証ツールを公開",
+    "summary_ja": "2025年以降、自治体や警察による黒塗りPDFの流出事故が相次いでいる。 原因はPDF上の黒塗り機能が「画像を被せているだけ」であり、裏側のテキストデータが保持されているためだ。 単に見た目を隠すだけではデータは完全に削除されない。 開発者は、ドキュメントの再レンダリングやラスタライズ処理を組み込み、機密情報を確実に物理削除する機能を実装する必要がある。 今回、この流出リスクを事前に検知できる検証ツールを開発・公開した。",
+    "translations": {
+      "ja": {
+        "title": "黒塗りPDFのデータ流出が多発：なぜ「隠したはずの文字」が読めてしまうのか？その技術的要因と防ぐための検証ツールを公開",
+        "summary": "2025年以降、自治体や警察による黒塗りPDFの流出事故が相次いでいる。 原因はPDF上の黒塗り機能が「画像を被せているだけ」であり、裏側のテキストデータが保持されているためだ。 単に見た目を隠すだけではデータは完全に削除されない。 開発者は、ドキュメントの再レンダリングやラスタライズ処理を組み込み、機密情報を確実に物理削除する機能を実装する必要がある。 今回、この流出リスクを事前に検知できる検証ツールを開発・公開した。"
+      },
+      "en": {
+        "title": "Why Redacted PDFs Leak Data: Understanding the Technical Risks of Masking Layers and a New Verification Tool for Developers",
+        "summary": "Recent leaks from government and legal sectors throughout 2025 demonstrate a critical security failure: blacked-out PDF sections often retain the underlying text layer because simple redaction frequently acts as a visual overlay rather than actual data deletion. For developers building document-handling workflows, this is a dangerous pitfall; if you simply cover sensitive fields without flattening or rasterizing the document, the original content remains accessible to anyone inspecting the file's metadata or text stream. Building robust security requires enforcing true data destruction before export. To help address this, I am releasing a verification tool designed to audit files for residual data, ensuring your application’s redaction pipeline actually scrubs information rather than just obscuring it."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-07T05:32:00.603Z"
+  },
+  {
+    "id": "art-1794029509096-of4ar",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://blog.raed.dev/posts/context-window/",
+    "published_at": "2026-11-04T20:23:00.000Z",
+    "og_image_url": "https://raed.dev/blog/context-window-og.png",
+    "title_ja": "なぜAIのトークン消費は爆発するのか？コンテキストウィンドウとプロンプト設計でAPIコストを劇的に最適化する技術的アプローチ",
+    "summary_ja": "大規模言語モデルのAPIコストを押し上げるトークン消費の主因は、不必要な過去履歴や冗長なシステムプロンプトの蓄積にある。 コンテキストウィンドウの効率的な管理には、プロンプトの圧縮、不要なデータのフィルタリング、およびキャッシュ戦略の再構築が不可欠だ。 開発者は、単に最新モデルを追うだけでなく、モデルに入力する情報の最適化を通じて、API利用料を削減しつつ応答の品質を維持するエンジニアリングスキルが求められている。",
+    "translations": {
+      "ja": {
+        "title": "なぜAIのトークン消費は爆発するのか？コンテキストウィンドウとプロンプト設計でAPIコストを劇的に最適化する技術的アプローチ",
+        "summary": "大規模言語モデルのAPIコストを押し上げるトークン消費の主因は、不必要な過去履歴や冗長なシステムプロンプトの蓄積にある。 コンテキストウィンドウの効率的な管理には、プロンプトの圧縮、不要なデータのフィルタリング、およびキャッシュ戦略の再構築が不可欠だ。 開発者は、単に最新モデルを追うだけでなく、モデルに入力する情報の最適化を通じて、API利用料を削減しつつ応答の品質を維持するエンジニアリングスキルが求められている。"
+      },
+      "en": {
+        "title": "Why do AI apps waste so many tokens? Strategies for optimizing context windows and slashing your LLM API bill",
+        "summary": "Escalating token usage in LLM applications often stems from bloated context windows, redundant system prompts, and inefficient management of chat history that needlessly drives up costs. To combat this, builders must move beyond naive implementation by aggressively filtering irrelevant context, utilizing prompt compression techniques, and architecting smarter caching strategies to minimize redundant data ingestion. This technical analysis explores how developers can effectively reduce their API overhead without sacrificing response quality. The core lesson is that model performance is only half the battle; mastering the engineering behind token management and input optimization is the decisive factor for maintaining long-term profitability and system efficiency in modern AI-powered software products."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-07T05:31:49.096Z"
+  },
+  {
+    "id": "art-1794029502366-iqssq",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261106",
+    "published_at": "2026-11-07T00:01:17.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--E4w43dHS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ChatGPT%25E3%2581%25AFGIF%25E3%2580%2581Google%25E3%2581%25AE%25E5%258B%2595%25E7%2594%25BB%25E3%2581%25AF30%2525%25E5%25AE%2589%25E3%2581%258F%25E3%2580%2582%25E8%25A3%258F%25E3%2581%25A7%25E9%259B%25BB%25E5%258A%259B%25E3%2581%25AB%25E9%2580%2586%25E9%25A2%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E8%258F%2585%25E5%258E%259F%25E5%258F%258B%25E5%2592%258C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUJfd2tWRGJ6UktoZC11RldsQUxwZU5lTUpaUGxGWXAyeWJpRTdIamlDbWNPMTgwT3M9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ChatGPTがGIF動画生成に対応、Google動画AIは30%値下げへ。AIインフラの電力需要に対し米国内で反対運動が拡大",
+    "summary_ja": "ChatGPTが画像生成ツールにてGIFアニメーション作成に対応し、Googleは動画生成AIのAPI利用料金を30%引き下げた。 一方で、AIデータセンターの電力消費急増に対し、米国内では地域住民から深刻な反対の声が上がっており、持続可能性が懸念されている。 AIサービスの進化は加速しているが、今後はエネルギーコストや環境負荷の管理がプロジェクトの成否に直結する重要な経営リスク要因となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "ChatGPTがGIF動画生成に対応、Google動画AIは30%値下げへ。AIインフラの電力需要に対し米国内で反対運動が拡大",
+        "summary": "ChatGPTが画像生成ツールにてGIFアニメーション作成に対応し、Googleは動画生成AIのAPI利用料金を30%引き下げた。 一方で、AIデータセンターの電力消費急増に対し、米国内では地域住民から深刻な反対の声が上がっており、持続可能性が懸念されている。 AIサービスの進化は加速しているが、今後はエネルギーコストや環境負荷の管理がプロジェクトの成否に直結する重要な経営リスク要因となるだろう。"
+      },
+      "en": {
+        "title": "ChatGPT adds GIF creation and Google slashes video AI costs by 30%, while US backlash against AI energy demand mounts",
+        "summary": "ChatGPT has introduced native GIF animation support within its image generation capabilities, while Google announced a 30% price reduction for its video AI API services. Despite these rapid advancements in accessibility and cost-efficiency for builders, the broader AI industry is facing stiff headwinds. Public opposition is intensifying across the United States regarding the massive energy consumption and environmental impact of expanding AI data centers. While AI services are becoming faster and cheaper to build with, sustainable infrastructure management is no longer a backend detail. For developers and founders, the looming power crisis means that future scaling strategies must explicitly account for energy constraints and potential community opposition as core business risks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-07T05:31:42.366Z"
+  },
+  {
+    "id": "art-1794029496070-mh6u2",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tkk_spx/n/nf486310ac7c3",
+    "published_at": "2026-11-07T05:28:49.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333224564/rectangle_large_type_2_5e55333f9df201dcded0d34557e6cf9c.jpg?fit=bounds&quality=85&width=1280",
+    "title_ja": "コード不要でAIとゲームを3本作る全工程を公開：指示出しのコツから失敗時の修正テクニック、そのまま使えるプロンプト集まで網羅",
+    "summary_ja": "AIを活用してノーコードでゲームを3本開発するまでの全手順を公開。 曖昧な指示を避け、具体的な仕様定義と段階的な修正プロセスを経ることで、プログラミング知識なしでも意図通りのゲーム挙動を実現できる。 単にプロンプトを投げるだけでなく、エラー発生時の具体的な対話の組み立て方やゲームロジックの整え方を理解することが、AI開発で成果を出すための決定的な分岐点となる。",
+    "translations": {
+      "ja": {
+        "title": "コード不要でAIとゲームを3本作る全工程を公開：指示出しのコツから失敗時の修正テクニック、そのまま使えるプロンプト集まで網羅",
+        "summary": "AIを活用してノーコードでゲームを3本開発するまでの全手順を公開。 曖昧な指示を避け、具体的な仕様定義と段階的な修正プロセスを経ることで、プログラミング知識なしでも意図通りのゲーム挙動を実現できる。 単にプロンプトを投げるだけでなく、エラー発生時の具体的な対話の組み立て方やゲームロジックの整え方を理解することが、AI開発で成果を出すための決定的な分岐点となる。"
+      },
+      "en": {
+        "title": "Building 3 Games Without Coding: A Comprehensive Workflow for AI Prompting, Iterative Debugging, and Production-Ready Prompt Strategies",
+        "summary": "This guide details the complete process of building three fully functional games without writing a single line of code by leveraging AI. By moving away from vague requests and adopting a strategy of granular specification followed by iterative, step-by-step corrections, users can successfully implement complex game logic even with zero programming knowledge. Beyond simple prompt generation, the methodology highlights how to construct effective feedback loops when errors occur and how to systematically refine gameplay mechanics. For individual builders, the core takeaway is that mastering the dialogue structure between human intent and AI execution is more critical to project success than the initial prompt itself, allowing you to troubleshoot and polish products toward a shippable state independently."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-07T05:31:36.070Z"
+  },
+  {
     "id": "art-1794028630076-xk9vs",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -18119,32 +18224,6 @@
     "created_at": "2026-11-04T20:52:24.568Z"
   },
   {
-    "id": "art-1793824518081-27t86",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/indexaxial/n/n40a252f7fc56",
-    "published_at": "2026-11-04T20:13:53.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/1888687c1f59627e5d8cbd82689876e3e7544015.png",
-    "title_ja": "国土地理院データ活用で「土地の標高」を可視化する自社アプリ開発、極楽寺駅vs藤沢駅の意外な高低差分析から学ぶ空間データ活用の勘所",
-    "summary_ja": "江ノ電全15駅の標高を国土地理院データで解析した結果、極楽寺駅が16.9mで最も高く、2位の藤沢駅（11.6m）と大きな差があることが判明した。 開発者はこの高低差データを可視化するアプリを個人開発し、地理空間情報の活用可能性を検証している。 地図データやオープンデータを活用する際、単なる地点表示ではなく、標高のような属性値を掛け合わせることで、ユーザーにとって直感的で興味深い比較体験を生み出せる点が、ニッチなアプリ開発におけるUX向上の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "国土地理院データ活用で「土地の標高」を可視化する自社アプリ開発、極楽寺駅vs藤沢駅の意外な高低差分析から学ぶ空間データ活用の勘所",
-        "summary": "江ノ電全15駅の標高を国土地理院データで解析した結果、極楽寺駅が16.9mで最も高く、2位の藤沢駅（11.6m）と大きな差があることが判明した。 開発者はこの高低差データを可視化するアプリを個人開発し、地理空間情報の活用可能性を検証している。 地図データやオープンデータを活用する際、単なる地点表示ではなく、標高のような属性値を掛け合わせることで、ユーザーにとって直感的で興味深い比較体験を生み出せる点が、ニッチなアプリ開発におけるUX向上の鍵となる。"
-      },
-      "en": {
-        "title": "Building a Geospatial App with GSI Data: Visualizing Enoden Station Elevations and the Unexpected 5-Meter Delta Between Gokurakuji and Fujisawa",
-        "summary": "A solo developer analyzed elevation data from Japan's Geospatial Information Authority for all 15 Enoden stations, revealing that Gokurakuji sits at 16.9 meters, significantly higher than the 11.6-meter elevation of Fujisawa. The creator built a custom tool to visualize these topographic nuances, testing the real-world application of open spatial datasets. For builders working with map-based interfaces, the key takeaway is that going beyond simple point-of-interest markers to incorporate deeper attributes like altitude allows for more compelling user experiences. By layering datasets to highlight comparisons—like transit elevation profiles—developers can turn raw government data into engaging, niche utility apps that solve specific user curiosities rather than just providing a standard map."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-04T20:35:18.081Z"
-  },
-  {
     "id": "art-1793824420729-0gh7w",
     "source_id": "source-pytorch",
     "source_name": "PyTorch Blog",
@@ -18251,33 +18330,6 @@
       "開発"
     ],
     "created_at": "2026-11-04T20:02:05.947Z"
-  },
-  {
-    "id": "art-1793822519800-f8bl7",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/pon_tanuki_blog/n/n3fa820014ed0",
-    "published_at": "2026-11-04T19:51:49.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332258292/rectangle_large_type_2_17af9dad95f596f244a1ca9494f5006b.jpg?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Codeの「失敗したフック」制御に落とし穴、Agent SDKの挙動とrmコマンド実行のセキュリティリスクを解説",
-    "summary_ja": "2026年11月3日のClaude Codeの更新により、Agent SDKでも「フック失敗時に処理を停止する」設定が利用可能になった。 しかし、設定不備やonFailure時の挙動によっては、意図せずrmコマンドが実行されるリスクがあることが判明。 AIエージェント開発者は、コード実行時の安全なエラーハンドリング実装と、フック制御のデフォルト設定を改めて見直す必要がある。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの「失敗したフック」制御に落とし穴、Agent SDKの挙動とrmコマンド実行のセキュリティリスクを解説",
-        "summary": "2026年11月3日のClaude Codeの更新により、Agent SDKでも「フック失敗時に処理を停止する」設定が利用可能になった。 しかし、設定不備やonFailure時の挙動によっては、意図せずrmコマンドが実行されるリスクがあることが判明。 AIエージェント開発者は、コード実行時の安全なエラーハンドリング実装と、フック制御のデフォルト設定を改めて見直す必要がある。"
-      },
-      "en": {
-        "title": "Claude Code's failed hook control exposes potential security gaps involving rm command execution and Agent SDK behavior",
-        "summary": "The Claude Code update from November 3, 2026, officially brings 'stop on failed hook' configurations to the Agent SDK, aiming to improve reliability during execution. However, deeper analysis reveals a significant security vulnerability: if hook configurations are mismanaged or the onFailure logic is triggered incorrectly, the system may inadvertently execute rm commands with elevated privileges. AI agents performing autonomous code execution require robust error handling protocols to prevent destructive commands from slipping through the cracks. Builders must now audit their local hook configurations and the Agent SDK error states to ensure that failure modes are fail-safe rather than destructive, as relying on default behaviors in complex automation workflows can lead to unintended filesystem deletion."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "アップデート"
-    ],
-    "created_at": "2026-11-04T20:01:59.800Z"
   },
   {
     "id": "art-1793822513604-q5h70",
@@ -25951,33 +26003,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-03T12:46:59.019Z"
-  },
-  {
-    "id": "art-1793710012626-83bwe",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-    "published_at": "2026-11-03T12:31:23.000Z",
-    "og_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2202649793-2560x1440.jpg",
-    "title_ja": "富士フイルムが磁気テープ生産能力を5倍に増強、AI学習データ急増に伴うアーカイブ需要の爆発に対応へ",
-    "summary_ja": "富士フイルムはAIモデルの学習データセットやログの長期保存需要急増を受け、磁気テープの生産能力を従来の5倍に引き上げる計画を発表した。 クラウド上のアクティブなストレージコスト削減が課題となる中、低コストかつ高耐久なテープストレージは、PB級のデータを扱うAIインフラの「コールドストレージ」として再評価されている。 開発者は、頻繁にアクセスしない大容量データをいかに効率よくアーカイブ層へオフロードするかが、AIサービス運用の経済性を左右することを再認識すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "富士フイルムが磁気テープ生産能力を5倍に増強、AI学習データ急増に伴うアーカイブ需要の爆発に対応へ",
-        "summary": "富士フイルムはAIモデルの学習データセットやログの長期保存需要急増を受け、磁気テープの生産能力を従来の5倍に引き上げる計画を発表した。 クラウド上のアクティブなストレージコスト削減が課題となる中、低コストかつ高耐久なテープストレージは、PB級のデータを扱うAIインフラの「コールドストレージ」として再評価されている。 開発者は、頻繁にアクセスしない大容量データをいかに効率よくアーカイブ層へオフロードするかが、AIサービス運用の経済性を左右することを再認識すべきだ。"
-      },
-      "en": {
-        "title": "Fujifilm to quintuple magnetic tape production capacity as AI model training fuels massive demand for long-term data archiving",
-        "summary": "Fujifilm has announced plans to ramp up magnetic tape production by 5×, responding to a massive surge in demand for archiving the massive datasets and logs required for modern AI model training. While cloud-based active storage creates ballooning operational costs, high-durability tape remains the standard for cold storage at the petabyte scale, offering a significantly cheaper footprint for archival. For engineers managing massive AI infrastructure, this shift highlights that optimizing data lifecycle management—specifically offloading infrequently accessed, massive datasets to archival tiers—is no longer optional but critical for cost-efficient scaling. Relying solely on hot cloud storage for long-term AI data will quickly break budgets, making intelligent archival strategies a foundational component of modern production machine learning pipelines."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金",
-      "研究"
-    ],
-    "created_at": "2026-11-03T12:46:52.626Z"
   },
   {
     "id": "art-1793710000518-y3veu",
@@ -35633,32 +35658,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-01T16:31:54.489Z"
-  },
-  {
-    "id": "art-1793550693527-e62qi",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/upgradetech/articles/2026-11-kiro-crew-api-key-intro",
-    "published_at": "2026-11-01T14:43:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MmG1JAZU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Kiro%2520CLI%25E3%2581%25A8Kiro%2520Crew%25E3%2582%2592%25E6%2594%25B9%25E3%2582%2581%25E3%2581%25A6%25E5%2585%25A5%25E9%2596%2580%25E3%2581%2597%25E3%2581%25A6AWS%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%2599%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:nachi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzI4NmJmMzNhODkuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:UPGRADE%2520tech%2520blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ1NmQ1MTgxNTUuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "KiroがIDEからCLI・エージェントへ拡張：5つの実行環境を網羅し、APIキーによるヘッドレス実行と常駐型エージェント「Kiro Crew」を徹底解説",
-    "summary_ja": "2026年11月現在、Kiroは従来のIDEだけでなくCLI、Web、Mobile、そして常駐エージェントの「Kiro Crew」を含む5つの実行インターフェースへと進化を遂げた。 特にCLIのAPIキー対応によりヘッドレス環境でのCI/CD連携が容易になり、Crewがローカルマシン上で自律的にタスクを消化する仕組みが構築可能だ。",
-    "translations": {
-      "ja": {
-        "title": "KiroがIDEからCLI・エージェントへ拡張：5つの実行環境を網羅し、APIキーによるヘッドレス実行と常駐型エージェント「Kiro Crew」を徹底解説",
-        "summary": "2026年11月現在、Kiroは従来のIDEだけでなくCLI、Web、Mobile、そして常駐エージェントの「Kiro Crew」を含む5つの実行インターフェースへと進化を遂げた。 特にCLIのAPIキー対応によりヘッドレス環境でのCI/CD連携が容易になり、Crewがローカルマシン上で自律的にタスクを消化する仕組みが構築可能だ。"
-      },
-      "en": {
-        "title": "Kiro expands beyond IDE: Analyzing the new CLI, Headless API, and the 'Kiro Crew' autonomous agent architecture for developers",
-        "summary": "As of November 2026, Kiro has evolved far beyond its IDE roots into a comprehensive ecosystem comprising five entry points: IDE, CLI, Web, Mobile, and the resident 'Kiro Crew' agent. This transformation enables developers to shift from passive coding assistance to proactive, autonomous workflows. With the new API key support in the CLI, headless execution is now seamless, allowing for tighter integration within CI/CD pipelines. Meanwhile, Kiro Crew operates as a persistent agent on local machines, handling tasks independently. For developers who previously used Kiro only for specs, the current platform offers a robust, multi-interface environment, effectively turning it into an end-to-end automation engine for modern software engineering stacks and complex system development lifecycle management."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-01T16:31:33.527Z"
   },
   {
     "id": "art-1793549809887-t96wb",
