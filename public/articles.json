@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794069146123-e1sb5",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://nathannaveen.dev/posts/speeding-up-ebpf-file-opens/",
+    "published_at": "2026-11-04T17:02:53.000Z",
+    "og_image_url": "https://nathannaveen.dev/",
+    "title_ja": "eBPFプログラムのファイルオープン処理を54%高速化、カーネルトレースのボトルネックを解消した具体的な最適化手法を解説",
+    "summary_ja": "LinuxカーネルにおけるeBPFプログラムのファイルオープン処理を54%高速化する最適化手法が公開された。 著者は、標準的なopenatシステムコールがカーネル内でのパス検索やセキュリティチェックでスタックすることに着目し、不要なファイル記述子処理の削減や検索最適化を行うことで、劇的なレイテンシ削減に成功している。",
+    "translations": {
+      "ja": {
+        "title": "eBPFプログラムのファイルオープン処理を54%高速化、カーネルトレースのボトルネックを解消した具体的な最適化手法を解説",
+        "summary": "LinuxカーネルにおけるeBPFプログラムのファイルオープン処理を54%高速化する最適化手法が公開された。 著者は、標準的なopenatシステムコールがカーネル内でのパス検索やセキュリティチェックでスタックすることに着目し、不要なファイル記述子処理の削減や検索最適化を行うことで、劇的なレイテンシ削減に成功している。"
+      },
+      "en": {
+        "title": "How developers achieved a 54% speedup in eBPF file opens by optimizing kernel trace bottlenecks",
+        "summary": "A new technical breakdown details how to improve eBPF file open operations by a staggering 54% through strategic kernel-level optimizations. By analyzing the `openat` syscall, the author identified significant overhead caused by redundant path lookups and security checks during kernel execution. The solution involved streamlining file descriptor processing and optimizing lookup paths, effectively slashing latency without sacrificing stability. For systems engineers and backend developers working near the kernel, this post serves as a masterclass in observability; it demonstrates how to pinpoint micro-inefficiencies in kernel trace code and rewrite them for raw performance. It serves as a vital reminder that at this level of the stack, identifying the specific overhead is half the battle in shipping performant system tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-07T16:32:26.123Z"
+  },
+  {
+    "id": "art-1794069139761-4n7kb",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/lumichy/articles/why-ai-text-is-hard-to-read-2026",
+    "published_at": "2026-11-07T10:06:32.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--JIRZy_zo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259CAI%25E3%2581%25AE%25E6%2596%2587%25E7%25AB%25A0%25E3%2581%25AF%25E3%2580%258C%25E6%25AD%25A3%25E3%2581%2597%25E3%2581%2584%25E3%2581%25AE%25E3%2581%25AB%25E8%25AA%25AD%25E3%2581%25BF%25E3%2581%25A5%25E3%2582%2589%25E3%2581%2584%25E3%2580%258D%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%25E6%259C%2580%25E6%2596%25B0%25E8%25AB%2596%25E6%2596%2587%25E3%2581%258C%25E6%259A%25B4%25E3%2581%2584%25E3%2581%259F%25E3%2580%258CAI%25E8%2587%25AD%25E3%2580%258D%25E3%2581%25AE%25E6%25AD%25A3%25E4%25BD%2593%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:lumichy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2JKREhqSzZDZU9QaFNKLXlfcUFhT1FuS0kwY0JmSWJVZEZUQnJGUWRGNWJNSUU5T2s9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "なぜAI生成文は「正しいのに読みづらい」のか？最新論文が突き止めた「AI臭」の原因と読解負荷の正体",
+    "summary_ja": "AIが生成する文章には文法的な誤りがないにもかかわらず、人間には「読みづらく、内容が頭に入ってこない」という特有の現象がある。 2026年10月の最新論文では、これがAI特有の「情報の過剰な構造化」と「確率的に無難な語彙選択」が、脳の認知負荷を不自然に高めていることに起因すると指摘している。 筆者は、人間が書く文章に含まれる適度な「ゆらぎ」や「文脈の欠落」こそが読解をスムーズにする鍵であり、生成AI活用時には推敲プロセスでこれらを意図的に再導入する必要があると論じている。",
+    "translations": {
+      "ja": {
+        "title": "なぜAI生成文は「正しいのに読みづらい」のか？最新論文が突き止めた「AI臭」の原因と読解負荷の正体",
+        "summary": "AIが生成する文章には文法的な誤りがないにもかかわらず、人間には「読みづらく、内容が頭に入ってこない」という特有の現象がある。 2026年10月の最新論文では、これがAI特有の「情報の過剰な構造化」と「確率的に無難な語彙選択」が、脳の認知負荷を不自然に高めていることに起因すると指摘している。 筆者は、人間が書く文章に含まれる適度な「ゆらぎ」や「文脈の欠落」こそが読解をスムーズにする鍵であり、生成AI活用時には推敲プロセスでこれらを意図的に再導入する必要があると論じている。"
+      },
+      "en": {
+        "title": "Why AI text feels sterile and unreadable: New research exposes the mechanics behind the 'AI smell' in LLM content",
+        "summary": "Despite perfect grammar and flawless logic, AI-generated text often feels unreadable, causing distinct cognitive fatigue for human readers. A new paper explores the 'AI smell,' attributing this phenomenon to the LLM tendency toward excessive structural uniformity and statistically safe, predictable word choices that inadvertently increase cognitive processing load. The research clarifies that human writing relies on subtle linguistic 'fluctuations' and intentional contextual gaps that actually facilitate comprehension; AI text fails by removing these human-centric friction points. For developers and content builders, the core takeaway is clear: simply generating text is not enough. To create engaging material, one must intentionally reintroduce stylistic variability and rhetorical ambiguity into the post-generation workflow to avoid triggering the brain’s rejection of sterile, hyper-optimized LLM output."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-07T16:32:19.761Z"
+  },
+  {
+    "id": "art-1794069110904-e04fw",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/unimetype/items/286ad53cd79cc7261f69",
+    "published_at": "2026-11-07T16:28:41.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTI5MDkxJTJGMzI2MzAxZGVlMDI1YjA3ODNkZmIxNTU3N2I2N2E4OTUyOGJmYzE0NCUyRmxhcmdlLnBuZyUzRjE3OTQwNjg1NzQ_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTMzYjVhYjgwMDI4OGQ1N2ZkYzJjZmZmMThiODcyNTNl%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D010114edace2d94accd9ed0a201e53fe?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJUEyJUUzJTgzJUJDJUUzJTgzJTg5JUU1JTg4JTg3JUU2JTlCJUJGJUUzJTgxJUFBJUUzJTgxJTk3JUUzJTgxJUE3JUUzJTgzJUFEJUUzJTgzJUJDJUUzJTgzJTlFJUU1JUFEJTk3JUUzJTgzJUJCJUUzJTgzJTk0JUUzJTgzJUIzJUUzJTgyJUE0JUUzJTgzJUIzJUUzJTgzJUJCJUU4JThCJUIxJUU1JThEJTk4JUU4JUFBJTlFJUU2JUI3JUI3JUU1JTlDJUE4JUU2JTk2JTg3JUUzJTgyJTkyJUU0JUI4JTgwJUU2JThCJUFDJUU1JUE0JTg5JUU2JThGJTlCJUUzJTgxJTk5JUUzJTgyJThCQUklRTUlODUlQTUlRTUlOEElOUIlRTMlODMlQTElRTMlODIlQkQlRTMlODMlODMlRTMlODMlODklRTMlODAlOENVbmltZVR5cGUlRTMlODAlOEQlRTMlODElQUUlRTglQTglQUQlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz01ZTFjOWY5MDQ2MDAxZTFjZGUyOGIyYjdmODQwMjNjMQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB1bmltZXR5cGUmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05ZTZjNTM3NjFlZDM2NjVmODYxNzVlZTA0NzMwOThmMQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=5a5565071a126b29f9b8a6ecdc67e886",
+    "title_ja": "モード切替のストレスを解消するAI入力メソッド「UnimeType」：ローマ字・ピンイン・英単語混在文を自動変換する革新的エンジニアリング",
+    "summary_ja": "UnimeTypeは、開発者がIDEやSlackを行き来する際に直面する「IMEモード切替の煩雑さ」を解決するため、AIで文脈を推論し、ローマ字・ピンイン・英単語をモード変更なしで一括変換するインプットメソッドだ。 辞書ベースの既存IMEとは異なり、LLMのトークン処理を活用してシームレスな入力を実現している。 ツール開発者は、既存UXの「当然」を技術的に疑い、AIによる推論をUIに組み込むことで、日常業務の生産性を劇的に向上させる余地があることを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "モード切替のストレスを解消するAI入力メソッド「UnimeType」：ローマ字・ピンイン・英単語混在文を自動変換する革新的エンジニアリング",
+        "summary": "UnimeTypeは、開発者がIDEやSlackを行き来する際に直面する「IMEモード切替の煩雑さ」を解決するため、AIで文脈を推論し、ローマ字・ピンイン・英単語をモード変更なしで一括変換するインプットメソッドだ。 辞書ベースの既存IMEとは異なり、LLMのトークン処理を活用してシームレスな入力を実現している。 ツール開発者は、既存UXの「当然」を技術的に疑い、AIによる推論をUIに組み込むことで、日常業務の生産性を劇的に向上させる余地があることを示唆している。"
+      },
+      "en": {
+        "title": "UnimeType: AI-driven input method eliminates IME mode-switching fatigue for polyglot developers using mixed English, Romaji, and Pinyin workflows",
+        "summary": "UnimeType solves the chronic productivity drain caused by constant 'mode switching' in Japanese IME environments when developers toggle between terminals, IDEs, and communication apps. Instead of relying on rigid, dictionary-based conversion, the system utilizes AI inference to process mixed-language inputs—such as Romaji, Pinyin, and English—simultaneously without manual intervention. By treating input streams as context-aware LLM tokens, it removes the 'invisible friction' that plagues modern software development workflows. This project offers a compelling lesson for builders: identifying and removing small, habitual friction points in existing OS-level UIs provides immense value, suggesting that developers should actively look for legacy UX bottlenecks where AI inference can replace outdated, manual input paradigms."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-07T16:31:50.904Z"
+  },
+  {
+    "id": "art-1794069102809-sk566",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/arpino/articles/2d5d6783dd3c23",
+    "published_at": "2026-11-07T08:34:38.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--U3bodDLk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E7%259B%25B8%25E6%25A3%2592%25E3%2581%25A8%25E6%2596%25B0%25E3%2581%2597%25E3%2581%2584%25E3%2580%258C%25E3%2581%2582%25E3%2581%25A8%25E3%2581%25A7%25E8%25AA%25AD%25E3%2582%2580%25E3%2580%258D%25E4%25BD%2593%25E9%25A8%2593%25E3%2582%2592%25E3%2580%258CLinto%25E3%2580%258D%25E3%2581%25AE%25E9%2596%258B%25E7%2599%25BA%25EF%25BD%259E%25E5%2585%25AC%25E9%2596%258B%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Arpino%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3hnWU0tMVRPeWx6dFYwdzh3QWVvb3JHWGlFTGFEMWhEYVdlR0ZGdDduZ3JsUkJ3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発アプリ「Linto」の全貌：React NativeとFirebase、そしてAI相棒を駆使して「あとで読む」課題を解決するまでの軌跡",
+    "summary_ja": "「Linto」は、共有メニューからリンクを保存しタグ整理と同期を可能にする直感的な「あとで読む」アプリだ。 React Native、Expo、Firebaseを基盤に、Claude Codeを開発パートナーとして活用することで、個人開発のスピードと質を最大化させてリリースに漕ぎ着けた。 本書では、課題解決型のアプリ開発を検討している個人開発者向けに、技術選定の経緯やAIコーディングツールを活用した実装プロセス、そしてリリースまでの具体的な知見を詳説する。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリ「Linto」の全貌：React NativeとFirebase、そしてAI相棒を駆使して「あとで読む」課題を解決するまでの軌跡",
+        "summary": "「Linto」は、共有メニューからリンクを保存しタグ整理と同期を可能にする直感的な「あとで読む」アプリだ。 React Native、Expo、Firebaseを基盤に、Claude Codeを開発パートナーとして活用することで、個人開発のスピードと質を最大化させてリリースに漕ぎ着けた。 本書では、課題解決型のアプリ開発を検討している個人開発者向けに、技術選定の経緯やAIコーディングツールを活用した実装プロセス、そしてリリースまでの具体的な知見を詳説する。"
+      },
+      "en": {
+        "title": "Building 'Linto': A React Native and Firebase project that solves 'read-later' habits with an AI coding partner",
+        "summary": "Linto is an intuitive 'read-later' application built for seamless link management, featuring cross-platform syncing and tag-based organization. The project leverages a modern tech stack of React Native, Expo, and Firebase, but distinguishes itself by heavily incorporating AI coding agents like Claude Code throughout the development lifecycle. This post documents the full journey from the initial problem statement to the final Google Play store deployment, offering actionable insights for solo developers. It details why specific architectural choices were made and provides a blueprint for using AI tools not just for drafting code, but for managing the complexities of a complete, production-ready mobile application release while maintaining high velocity as a single engineer."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-07T16:31:42.809Z"
+  },
+  {
     "id": "art-1794068225763-lknbz",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -18669,32 +18774,6 @@
     "created_at": "2026-11-05T12:47:24.224Z"
   },
   {
-    "id": "art-1793882837951-cbeqo",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/TIGER-AI-Lab/WebsiteBench",
-    "published_at": "2026-11-05T12:19:18.000Z",
-    "og_image_url": null,
-    "title_ja": "TIGER-AI-Labが「WebsiteBench」を公開、AIエージェントがブラウザ操作でウェブサイトを再構築・分析できるかを評価する新ベンチマーク",
-    "summary_ja": "TIGER-AI-Labが公開した「WebsiteBench」は、AIエージェントがブラウザを操作してウェブサイトの構造を理解し、実際に再構築する能力を評価するための新しいベンチマークだ。 単なるHTML解析ではなく、視覚情報と動的なブラウザ操作を介した再構築タスクを通じて、エージェントのWebナビゲーションとコーディング能力をテストする。",
-    "translations": {
-      "ja": {
-        "title": "TIGER-AI-Labが「WebsiteBench」を公開、AIエージェントがブラウザ操作でウェブサイトを再構築・分析できるかを評価する新ベンチマーク",
-        "summary": "TIGER-AI-Labが公開した「WebsiteBench」は、AIエージェントがブラウザを操作してウェブサイトの構造を理解し、実際に再構築する能力を評価するための新しいベンチマークだ。 単なるHTML解析ではなく、視覚情報と動的なブラウザ操作を介した再構築タスクを通じて、エージェントのWebナビゲーションとコーディング能力をテストする。"
-      },
-      "en": {
-        "title": "TIGER-AI-Lab unveils WebsiteBench to measure how effectively AI agents can rebuild websites via browser exploration",
-        "summary": "TIGER-AI-Lab has released WebsiteBench, a novel benchmark designed to evaluate whether AI agents can truly interpret and reconstruct websites through autonomous browser navigation. Moving beyond simple HTML parsing, this benchmark tests an agent's ability to process visual inputs and execute complex browser actions to recreate site structures from scratch. This framework essentially stresses the intersection of visual perception, navigation, and code generation capabilities in agentic systems. For developers building autonomous web agents, WebsiteBench provides a crucial standardized metric for measuring 'operational accuracy' and 'structural comprehension' on live websites. It serves as an essential yardstick for engineers aiming to move AI agents from simple chat interfaces toward reliable, high-fidelity web automation and data extraction workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-05T12:47:17.951Z"
-  },
-  {
     "id": "art-1793882831348-bw29o",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -27612,32 +27691,6 @@
     "created_at": "2026-11-03T13:33:49.102Z"
   },
   {
-    "id": "art-1793711814167-5y06h",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/fukukei23/items/560ccbb82d1ed610ae0e",
-    "published_at": "2026-11-03T13:07:22.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY1ZjQ2OWNhMDE5NjIyOTU4MTY0NzA3ODg2MjU3ODg1ZD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDBlNTBjZjg2NzA0YWYzOTU4YzUyZWE0NDAyYjVkZDg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db0fb7b518cbe6fd4515b7a3f5b82a516?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMERlc2t0b3AlRTclODklODglRTMlODElQTdNQ1AlRTMlODIlOTIlRTQlQkQlQkYlRTMlODElQTMlRTMlODElQTYlRTMlODIlQjMlRTMlODIlQjklRTMlODMlODglRTMlODIlOTIlRTYlOEElOTElRTMlODElODglRTMlODIlOEIlRTYlOTYlQjklRTYlQjMlOTUmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz04ZWEzNzI0MzY1MThmNzVkZWMzYjExMTg4YjcwYWRhNA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmdWt1a2VpMjMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1mZjI4OTNiOTM5OTRjYzYzYjBhYWQzNmU1ZGJhOGVlNQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a8267956edc3204349064d6bce386564",
-    "title_ja": "Claude Code Desktop版でMCP活用：GLM・MiniMax連携によるAPIコスト最適化の具体的な設計手法",
-    "summary_ja": "Claude CodeのDesktop版にて、MCPサーバーを通じてGLMやMiniMaxを外部連携させることで、API利用コストを大幅に抑制する手法が注目されている。 メインの推論は高性能なClaude 3.5 Sonnetに維持しつつ、定型作業や大量処理を安価なモデルへ自動的に委譲する設計だ。 単一のLLMに依存せず、タスクの難易度に応じてモデルを使い分けるハイブリッドな運用こそが、個人開発における持続可能な開発環境を構築する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code Desktop版でMCP活用：GLM・MiniMax連携によるAPIコスト最適化の具体的な設計手法",
-        "summary": "Claude CodeのDesktop版にて、MCPサーバーを通じてGLMやMiniMaxを外部連携させることで、API利用コストを大幅に抑制する手法が注目されている。 メインの推論は高性能なClaude 3.5 Sonnetに維持しつつ、定型作業や大量処理を安価なモデルへ自動的に委譲する設計だ。 単一のLLMに依存せず、タスクの難易度に応じてモデルを使い分けるハイブリッドな運用こそが、個人開発における持続可能な開発環境を構築する鍵となる。"
-      },
-      "en": {
-        "title": "Optimizing Claude Code Desktop costs by integrating cheaper LLMs like GLM and MiniMax via MCP servers",
-        "summary": "The desktop version of Claude Code enables developers to significantly cut API costs by integrating third-party models like GLM or MiniMax through the Model Context Protocol (MCP). The strategy relies on maintaining high-quality code generation with Claude 3.5 Sonnet as the primary engine while offloading boilerplate tasks or bulk processing to more economical models. This hybrid approach prevents over-reliance on a single expensive model and allows developers to route specific tasks to lower-cost endpoints based on complexity requirements. For independent builders, establishing this tiered model architecture is becoming a critical pattern for maintaining a high-velocity development workflow without incurring prohibitive API expenses as project scope scales."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-03T13:16:54.167Z"
-  },
-  {
     "id": "art-1793711807957-x72om",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -33489,32 +33542,6 @@
     "created_at": "2026-11-02T10:01:56.827Z"
   },
   {
-    "id": "art-1793613697182-tn2js",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/sadnorth_blog/articles/a0f94adba63648",
-    "published_at": "2026-11-02T01:14:02.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3UhiFnlA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25AB%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2582%2589%25E3%2581%259B%25E3%2582%258B%25E5%2589%258D%25E3%2581%25AB%25E3%2580%258C%25E6%25B1%25BA%25E3%2582%2581%25E3%2582%258B%25E3%2580%258D%25E3%2580%2581%25E4%25BD%259C%25E3%2582%2589%25E3%2581%259B%25E3%2581%259F%25E3%2581%2582%25E3%2581%25A8%25E3%2581%25AB%25E3%2580%258C%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2582%258B%25E3%2580%258Dnpx%2520%25E3%2581%25AE%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%25BE%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVhMjI2ODcwNTQuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Northern%2520Sadness%2520Prod...%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2N5OU1neVlWMWlIZ0pfMXJycG4wOGF0Mm1oTHp0V2NHTkRZaUdVMUZsbU9vZzlhYi09czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeでアプリ開発を自動化する前に：設計仕様と事後検証を強制するnpxツール「kokoro-baton」開発の狙い",
-    "summary_ja": "Claude CodeなどのAIエージェントにアプリを生成させると、データ保持の方針やエッジケースの挙動など、意図しない仕様が勝手に決定されがちだ。 これに対応するため、開発者は「作る前に決める（kokoro-baton）」と「作った後に確かめる（kokoro-aegis）」という二段階のアプローチを提唱した。 npxで導入可能なこのツール群は、AIへの指示出しを型化し、修正コストを大幅に削減できる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeでアプリ開発を自動化する前に：設計仕様と事後検証を強制するnpxツール「kokoro-baton」開発の狙い",
-        "summary": "Claude CodeなどのAIエージェントにアプリを生成させると、データ保持の方針やエッジケースの挙動など、意図しない仕様が勝手に決定されがちだ。 これに対応するため、開発者は「作る前に決める（kokoro-baton）」と「作った後に確かめる（kokoro-aegis）」という二段階のアプローチを提唱した。 npxで導入可能なこのツール群は、AIへの指示出しを型化し、修正コストを大幅に削減できる。"
-      },
-      "en": {
-        "title": "Standardizing AI-Driven App Generation: Why You Should Use 'kokoro-baton' to Enforce Design Specs and Validation",
-        "summary": "When using AI agents like Claude Code to build applications, the model often makes critical architecture decisions on your behalf, such as data persistence logic or empty-state handling, which creates significant cleanup work. To solve this, the developer introduced a two-part npx workflow: 'kokoro-baton' for enforcing design decisions before coding, and 'kokoro-aegis' for verifying the output after generation. By standardizing the briefing process and post-build validation, these tools reduce the need for manual refactoring and keep AI-generated code aligned with core project requirements. For builders relying on agents for development, this structured approach acts as an essential quality gate, effectively shifting the responsibility of defining edge cases back to the developer while leveraging AI for the heavy lifting."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-02T10:01:37.182Z"
-  },
-  {
     "id": "art-1793613000189-g6fka",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -36197,32 +36224,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-01T16:31:54.489Z"
-  },
-  {
-    "id": "art-1793549809887-t96wb",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/fumi3333/articles/phone-robot-mapping-sim",
-    "published_at": "2026-11-01T10:57:07.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wHmQffTM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%2587%25AA%25E5%25BE%258B%25E8%25B5%25B0%25E8%25A1%258C%25E3%2583%25AD%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588%25E3%2581%25AE%25E5%259C%25B0%25E5%259B%25B3%25E5%258C%2596%25E3%2582%2592%25E3%2582%25B7%25E3%2583%259F%25E3%2583%25A5%25E3%2583%25AC%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2581%25A7%25E4%25BD%259C%25E3%2582%258A%25E3%2580%2581%25E4%25BD%258D%25E7%25BD%25AE%25E3%2581%25AE%25E3%2581%259A%25E3%2582%258C%25E3%2581%25A7%25E5%25B4%25A9%25E3%2582%258C%25E3%2582%258B%25E3%2581%25A8%25E3%2581%2593%25E3%2582%258D%25E3%2581%25BE%25E3%2581%25A7%25E6%25B8%25AC%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fumi3333%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyMGFlODBkMmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "スマホを頭脳にする自律走行ロボット開発：Dartでの地図生成シミュレーションと位置推定の限界精度を徹底検証",
-    "summary_ja": "Galaxy Note 10+を搭載した自律走行ロボットを個人開発するため、Dartで実装した地図生成アルゴリズムのシミュレーション結果を公開。 実機のARCoreとToFセンサー入力を模した環境で、位置ズレが地図の整合性に与える影響を定量的に計測した。 ハードウェア開発に先立ち、ソフトウェア側で自己位置推定の誤差許容範囲を定義しておくことが、実機実装時の詰まりを回避する重要なステップとなる。",
-    "translations": {
-      "ja": {
-        "title": "スマホを頭脳にする自律走行ロボット開発：Dartでの地図生成シミュレーションと位置推定の限界精度を徹底検証",
-        "summary": "Galaxy Note 10+を搭載した自律走行ロボットを個人開発するため、Dartで実装した地図生成アルゴリズムのシミュレーション結果を公開。 実機のARCoreとToFセンサー入力を模した環境で、位置ズレが地図の整合性に与える影響を定量的に計測した。 ハードウェア開発に先立ち、ソフトウェア側で自己位置推定の誤差許容範囲を定義しておくことが、実機実装時の詰まりを回避する重要なステップとなる。"
-      },
-      "en": {
-        "title": "Building a smartphone-brained autonomous robot: Dart-based SLAM simulations and testing localization drift limits",
-        "summary": "This developer is building an autonomous robot using a 1/16 scale Toyota 86 chassis brained by a Galaxy Note 10+. Before finishing the physical wiring, they wrote Dart code to simulate the mapping and localization logic, mirroring inputs from the phone's ARCore and ToF sensors. The article analyzes how specific amounts of localization drift cause the resulting map to collapse, providing a quantitative look at error tolerance. For independent hardware builders, this approach proves that rigorous software simulation is the best way to catch logic bugs and determine necessary sensor precision before committing to physical assembly. It is a masterclass in separating software validation from the messy reality of robot hardware development."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-01T16:16:49.887Z"
   },
   {
     "id": "art-1793546215397-no0kb",
