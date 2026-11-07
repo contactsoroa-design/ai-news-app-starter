@@ -1,5 +1,82 @@
 [
   {
+    "id": "art-1794080815556-jgxbf",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/shinchi007/articles/0e4631e3b27a70",
+    "published_at": "2026-11-07T11:43:04.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3dUcXd8y--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:String%25E3%2581%25A8String%253F%25E3%2581%25AF%25E5%2588%25A5%25E7%2589%25A9%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2582Kotlin%25E3%2581%25AEnull%25E5%25AE%2589%25E5%2585%25A8%25E3%2581%25AB%25E3%2583%2599%25E3%2583%2586%25E3%2583%25A9%25E3%2583%25B3%25E3%2581%258C%25E6%2588%25B8%25E6%2583%2591%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Shinchi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXlrY0RybV9teUtLajl5dzFsSG94TWZ0X1hFY1hlY0pBYUpwdWx1OXh3TUNsQURRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "C言語出身エンジニアが驚愕したKotlinの「null安全」設計の正体とは？String型とString?型の明確な違いとコンパイル時の警告",
+    "summary_ja": "C言語やJavaに慣れたベテランがKotlin習得時に最も躓きやすいのが、null安全の仕組みです。 Kotlinではnullを許容する型とそうでない型がコンパイル時に厳格に区別されており、単なる実行時チェックに頼っていた従来の感覚は通用しません。 安易に「! 」演算子で強制アンラップするのは安全装置を外す行為であり、型システムを理解して適切に扱うことこそが、Kotlinらしい堅牢なコードを書くための最短距離となります。",
+    "translations": {
+      "ja": {
+        "title": "C言語出身エンジニアが驚愕したKotlinの「null安全」設計の正体とは？String型とString?型の明確な違いとコンパイル時の警告",
+        "summary": "C言語やJavaに慣れたベテランがKotlin習得時に最も躓きやすいのが、null安全の仕組みです。 Kotlinではnullを許容する型とそうでない型がコンパイル時に厳格に区別されており、単なる実行時チェックに頼っていた従来の感覚は通用しません。 安易に「! 」演算子で強制アンラップするのは安全装置を外す行為であり、型システムを理解して適切に扱うことこそが、Kotlinらしい堅牢なコードを書くための最短距離となります。"
+      },
+      "en": {
+        "title": "Why Kotlin’s Null Safety System Shocks C/Java Veterans: Understanding the Fundamental Type Difference Between String and String?",
+        "summary": "Veterans transitioning from C or Java often hit a wall with Kotlin’s null safety mechanism, specifically the realization that 'nullable' and 'non-nullable' types are distinct entities checked strictly at compile time. While old-school developers might expect runtime null checks to suffice, Kotlin halts compilation if these type boundaries are ignored. The temptation to force-unwrap using the '! ' operator essentially disables the language's core safety mechanism, leading to dangerous anti-patterns. Truly mastering Kotlin requires shifting one's mindset to embrace this type-level separation rather than fighting it. For developers migrating codebases, the key takeaway is that leveraging the compiler to enforce safety is far more robust than manually managing null checks, ultimately preventing critical crashes before the code ever executes."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-07T19:46:55.556Z"
+  },
+  {
+    "id": "art-1794080808600-y3p0a",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://nicolaijfoss.substack.com/p/why-ai-will-not-end-scholarly-publishing",
+    "published_at": "2026-11-07T19:29:29.000Z",
+    "og_image_url": null,
+    "title_ja": "AIはなぜ学術出版と「Publish-or-Perish」の構造を破壊できないのか？制度的慣習と信頼性から読み解く未来",
+    "summary_ja": "生成AIの台頭により、論文作成や査読の自動化が進んでいるが、学術出版の根幹である「出版か滅亡か（Publish-or-Perish）」という制度自体が消滅することはない。 専門的な認証、コミュニティの評価、そして人間による信頼担保という学術界特有のインセンティブ設計は、単なるテキスト生成技術では代替できないためだ。 AIは研究生産性を高めるツールにはなり得るが、学術界の権威やキャリア形成を司る社会制度的構造を転換させるには至らないという本質的な分析。",
+    "translations": {
+      "ja": {
+        "title": "AIはなぜ学術出版と「Publish-or-Perish」の構造を破壊できないのか？制度的慣習と信頼性から読み解く未来",
+        "summary": "生成AIの台頭により、論文作成や査読の自動化が進んでいるが、学術出版の根幹である「出版か滅亡か（Publish-or-Perish）」という制度自体が消滅することはない。 専門的な認証、コミュニティの評価、そして人間による信頼担保という学術界特有のインセンティブ設計は、単なるテキスト生成技術では代替できないためだ。 AIは研究生産性を高めるツールにはなり得るが、学術界の権威やキャリア形成を司る社会制度的構造を転換させるには至らないという本質的な分析。"
+      },
+      "en": {
+        "title": "Why AI Will Not End Scholarly Publishing: Deconstructing the Persistence of the 'Publish-or-Perish' Academic Institution",
+        "summary": "Despite the rapid proliferation of generative AI tools capable of automating research drafts and peer reviews, the fundamental economic model of 'Publish-or-Perish' in academia remains secure against technological disruption. This analysis argues that scholarly publishing serves as a complex system of professional certification, community gatekeeping, and reputational signaling that AI simply cannot replicate. While LLMs enhance individual productivity and can accelerate the research lifecycle, they fail to displace the institutional hierarchies and human-centric trust mechanisms that define academic legitimacy. For builders observing the impact of AI on knowledge production, the takeaway is that deep-seated socio-professional institutions are far more resilient to automation than purely technical workflows, as they rely on social verification rather than mere information generation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-07T19:46:48.600Z"
+  },
+  {
+    "id": "art-1794080800510-4np1e",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/yk_studio/articles/two-agents-one-device",
+    "published_at": "2026-11-07T11:30:09.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9oCTZRE7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%25882%25E4%25BD%2593%25E3%2581%258C%25E5%25AE%259F%25E6%25A9%259F1%25E5%258F%25B0%25E3%2582%2592%25E5%2590%258C%25E6%2599%2582%25E3%2581%25AB%25E8%25A7%25A6%25E3%2581%25A3%25E3%2581%25A6%25E3%2580%2581%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%258C%25E5%25A3%258A%25E3%2582%258C%25E3%2581%259F%25E3%2580%2582%25E3%2583%259E%25E3%2583%25AB%25E3%2583%2581%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E9%2581%258B%25E7%2594%25A8%25E3%2581%25AB%25E6%258E%2592%25E4%25BB%2596%25E5%2588%25B6%25E5%25BE%25A1%25E3%2581%258C%25E8%25A6%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:YK%2520Studio%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ3MDYwY2Q1NWIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェント2体が実機を奪い合いテストが崩壊、マルチエージェント開発環境で必須となる「排他制御」の重要性を痛感",
+    "summary_ja": "役割別のAIエージェントを並行稼働させて開発を進める際、実機テスト環境の取り合いが思わぬ障害を引き起こした。 E2E検証担当とスクショ撮影担当が同一端末を奪い合い、数分間にわたり操作が競合。 複数のエージェントを同時に走らせるマルチエージェント開発では、物理デバイスのアクセス権限管理や、タスクごとの排他制御を実装レベルで組み込んでおかないと、CI/CDや自動テストが容易に崩壊することを実証した。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント2体が実機を奪い合いテストが崩壊、マルチエージェント開発環境で必須となる「排他制御」の重要性を痛感",
+        "summary": "役割別のAIエージェントを並行稼働させて開発を進める際、実機テスト環境の取り合いが思わぬ障害を引き起こした。 E2E検証担当とスクショ撮影担当が同一端末を奪い合い、数分間にわたり操作が競合。 複数のエージェントを同時に走らせるマルチエージェント開発では、物理デバイスのアクセス権限管理や、タスクごとの排他制御を実装レベルで組み込んでおかないと、CI/CDや自動テストが容易に崩壊することを実証した。"
+      },
+      "en": {
+        "title": "Parallel AI agents destroy E2E tests by fighting over one physical Android device, highlighting critical need for concurrency control",
+        "summary": "Running multiple AI agents in parallel to accelerate development backfired when separate agents—one handling E2E verification and another capturing store screenshots—simultaneously seized control of the same physical Android test device. Because the agents operated in isolated sessions without awareness of the shared physical resource, they spent minutes fighting over the screen, corrupting test results and causing chaotic UI state changes. This incident underscores that building multi-agent workflows requires more than just functional task assignment; developers must implement explicit locking mechanisms or centralized resource arbitration for physical hardware. Without rigorous exclusive control over shared testing assets, concurrent automation pipelines are destined to break. For builders orchestrating agent swarms, hardware-level concurrency management is no longer optional."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-07T19:46:40.511Z"
+  },
+  {
     "id": "art-1794079934976-yi44y",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -17606,32 +17683,6 @@
     "created_at": "2026-11-05T19:17:03.435Z"
   },
   {
-    "id": "art-1793906216868-wy7u2",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
-    "published_at": "2026-11-05T19:08:22.000Z",
-    "og_image_url": null,
-    "title_ja": "Hackintoshの再来、AIによるOS互換性補完が実現する未来：Intelチップ不要の環境構築手法とその技術的意義",
-    "summary_ja": "かつての「Hackintosh」文化が、現代のAI技術を用いて新たな姿で蘇ろうとしている。 本稿では、最新のAI推論モデルとエミュレーション技術を組み合わせ、特定のハードウェア制約を動的に解決することで、macOSの動作環境を非公式ハードウェア上に最適化する手法を解説。 単なるOSの移植ではなく、AIによるドライバの自動生成や互換レイヤーの最適化により、従来不可能だったPC環境でのAppleエコシステムの構築が可能になった。",
-    "translations": {
-      "ja": {
-        "title": "Hackintoshの再来、AIによるOS互換性補完が実現する未来：Intelチップ不要の環境構築手法とその技術的意義",
-        "summary": "かつての「Hackintosh」文化が、現代のAI技術を用いて新たな姿で蘇ろうとしている。 本稿では、最新のAI推論モデルとエミュレーション技術を組み合わせ、特定のハードウェア制約を動的に解決することで、macOSの動作環境を非公式ハードウェア上に最適化する手法を解説。 単なるOSの移植ではなく、AIによるドライバの自動生成や互換レイヤーの最適化により、従来不可能だったPC環境でのAppleエコシステムの構築が可能になった。"
-      },
-      "en": {
-        "title": "The Hackintosh Reborn: How AI-driven compatibility layers are breaking hardware locks to run macOS on non-Apple silicon",
-        "summary": "The Hackintosh spirit is seeing a modern resurgence driven not by brute-force kext patches, but by AI-assisted compatibility layers that dynamically map OS requirements to non-native hardware. This new approach leverages AI inference to generate missing driver interfaces in real-time and optimize kernel-level emulation, effectively creating a shim that fools macOS into perceiving standard PC hardware as proprietary Apple silicon. Instead of relying on static binaries, this method uses intelligence to translate hardware calls on the fly, dramatically increasing stability and performance on consumer-grade laptops. For builders and enthusiasts, this marks a fundamental shift from manual patching to automated, AI-driven environment synthesis, turning the dream of platform-agnostic OS deployment into a viable technical reality for those who prioritize flexibility over vendor-locked hardware."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-05T19:16:56.868Z"
-  },
-  {
     "id": "art-1793906210483-3xbh2",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -32946,32 +32997,6 @@
     "created_at": "2026-11-02T14:16:38.246Z"
   },
   {
-    "id": "art-1793626315035-nunsg",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tessei/articles/352ac059a89aaa",
-    "published_at": "2026-11-02T06:14:27.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--7gnU_nGN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Embedding%25E3%2581%25A8%25E3%2581%25AF%25E4%25BD%2595%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tessei%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzZSZ2VpemhIVExaN0tjNDN5eXVPNThScUlJRTMtclo3RjlKZ1BqdWRqWEpaVTUzNV89czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Embeddingとは？文章を数値ベクトルに変換し、AIによる高度な意味検索を実現する仕組みを徹底解説",
-    "summary_ja": "Embeddingは文章を数値（ベクトル）のリストに変換し、単語の意味の近さを空間的な距離として表現する技術である。 キーワードの一致のみに依存する従来の検索とは異なり、文脈の類似性を判定できるため、社内マニュアル検索やレコメンド機能の実装に不可欠となる。 AIアプリケーションにおいて、ベクトルデータベースと組み合わせることで「意味的に近い」コンテンツを抽出するRAG構築の基礎知識としてエンジニアは押さえておくべきだ。",
-    "translations": {
-      "ja": {
-        "title": "Embeddingとは？文章を数値ベクトルに変換し、AIによる高度な意味検索を実現する仕組みを徹底解説",
-        "summary": "Embeddingは文章を数値（ベクトル）のリストに変換し、単語の意味の近さを空間的な距離として表現する技術である。 キーワードの一致のみに依存する従来の検索とは異なり、文脈の類似性を判定できるため、社内マニュアル検索やレコメンド機能の実装に不可欠となる。 AIアプリケーションにおいて、ベクトルデータベースと組み合わせることで「意味的に近い」コンテンツを抽出するRAG構築の基礎知識としてエンジニアは押さえておくべきだ。"
-      },
-      "en": {
-        "title": "What is Embedding? Transforming text into vector representations to enable semantic AI search",
-        "summary": "Embedding is the core technique of converting human language into numerical vectors, allowing AI models to represent semantic similarities as measurable spatial distances. Unlike traditional keyword-based matching, this approach identifies the underlying meaning of text, making it essential for complex tasks like querying corporate documentation or building recommendation engines. For developers, understanding how these vectors function alongside databases is the fundamental first step toward building accurate RAG (Retrieval-Augmented Generation) systems. By mapping data points in high-dimensional space, you can move beyond simple string matches to retrieve contextually relevant results. This foundational knowledge is critical for any builder aiming to integrate intelligent search capabilities into their software, ensuring the system understands intent rather than just syntax."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-02T13:31:55.035Z"
-  },
-  {
     "id": "art-1793626304882-ld9d7",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -35402,32 +35427,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-01T20:47:11.673Z"
-  },
-  {
-    "id": "art-1793566020621-kswa4",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/jir0/articles/4cbcdd7421f26e",
-    "published_at": "2026-11-01T13:05:08.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ozkAtw8C--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AB%25E3%2580%258C%25E9%2580%25B2%25E6%258D%2597%25E3%2581%25A9%25E3%2581%2586%25EF%25BC%259F%25E3%2580%258D%25E3%2581%25A8%25E8%2581%259E%25E3%2581%258F%25E3%2581%25AE%25E3%2582%2592%25E3%2582%2584%25E3%2582%2581%25E3%2581%259F%2520%25E2%2580%2595%2520%25E9%259A%25A3%25E3%2581%25AE%25E7%2594%25BB%25E9%259D%25A2%25E3%2581%25A7%25E5%258B%259D%25E6%2589%258B%25E3%2581%25AB%25E8%2582%25B2%25E3%2581%25A4%2522%25E3%2581%258D%25E3%2582%2587%25E3%2581%2586%25E3%2581%25AE%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%2522%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2598%25E3%2582%258D%25E3%2581%2586%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0hSMjNOclZKY0p4T0F5R2dUN1N5SkZ1eDlDdWRWb0puMFluckh2TlRjZHYycUhnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの進捗管理を自動化：チャットの手間を省く「きょうのボード」生成スクリプトとその実装手法",
-    "summary_ja": "複数のプロジェクトをClaude Codeへ委任して並行開発する際、個別のチャットで進捗確認を繰り返す非効率さを解消する手法を解説。 Claude自身に開発状況を記述させる「きょうのボード」ファイルを自動生成する仕組みを構築し、手動のステータス確認作業を不要にした。 人間が聞きに行くのではなく、AI側にボードを更新させる非同期的なフィードバックループを作ることで、管理工数を最小化できる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの進捗管理を自動化：チャットの手間を省く「きょうのボード」生成スクリプトとその実装手法",
-        "summary": "複数のプロジェクトをClaude Codeへ委任して並行開発する際、個別のチャットで進捗確認を繰り返す非効率さを解消する手法を解説。 Claude自身に開発状況を記述させる「きょうのボード」ファイルを自動生成する仕組みを構築し、手動のステータス確認作業を不要にした。 人間が聞きに行くのではなく、AI側にボードを更新させる非同期的なフィードバックループを作ることで、管理工数を最小化できる。"
-      },
-      "en": {
-        "title": "Automating progress tracking with Claude Code: How to build a self-updating daily status board for multi-project dev",
-        "summary": "Managing multiple concurrent projects with Claude Code often leads to repetitive manual status checks that consume more time than the actual coding. This article demonstrates how to eliminate that overhead by forcing Claude Code to write progress updates into a dedicated 'Daily Board' file automatically. Instead of manually pinging the AI to ask about progress, the system requires Claude to update the board state in real time as tasks move forward. This shift to an asynchronous reporting loop effectively turns the LLM into a self-documenting project manager. For independent developers juggling several concurrent streams, this pattern drastically lowers management cognitive load and ensures that current status is always visible without disrupting the development workflow."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-01T20:47:00.621Z"
   },
   {
     "id": "art-1793560596052-g4ig1",
