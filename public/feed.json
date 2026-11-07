@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1794059265633-52wo2",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sk8jp/articles/937288f65fcfab",
+    "published_at": "2026-11-07T04:27:20.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--a7waxcWO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25B3%25E3%2583%2581%25E4%25BF%259D%25E8%25AD%25B7%25E3%2581%25AE%25E3%2581%25AA%25E3%2581%2584%2520private%2520%25E3%2583%25AA%25E3%2583%259D%25E3%2581%25A7%25E3%2580%2581Claude%2520Code%2520%25E3%2581%25AE%2520main%2520%25E3%2581%25B8%25E3%2581%25AE%2520push%2520%25E3%2582%2592%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%25E5%25AE%2588%25E3%2582%258A%25E3%2582%2592%25E3%2580%258C...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:YAZ%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSThuekJzVGpOdUdqdXplU0tYcDc0c0F2WTFQS3JNQWp4ekJyQzZPQmtUNFEyT2F0Sm09czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "GitHub有料機能なしでClaude Codeの誤pushを防ぐ：ブランチ保護代替のpre-pushフック設計刷新",
+    "summary_ja": "GitHubの有料ブランチ保護機能を使わない個人開発環境において、Claude Codeによる誤ったmainブランチへのpushを防ぐための安全装置を刷新した事例。 既存のフック方式に脆弱性が見つかったことを受け、Claude Code側の設定とGitのpre-pushフックを組み合わせ、物理的な保護層を再構築した。 コストをかけずにCI/CDや保護機能を自前で実装したいソロエンジニアにとって、安全な開発フローを維持するための現実的な代替案となる。",
+    "translations": {
+      "ja": {
+        "title": "GitHub有料機能なしでClaude Codeの誤pushを防ぐ：ブランチ保護代替のpre-pushフック設計刷新",
+        "summary": "GitHubの有料ブランチ保護機能を使わない個人開発環境において、Claude Codeによる誤ったmainブランチへのpushを防ぐための安全装置を刷新した事例。 既存のフック方式に脆弱性が見つかったことを受け、Claude Code側の設定とGitのpre-pushフックを組み合わせ、物理的な保護層を再構築した。 コストをかけずにCI/CDや保護機能を自前で実装したいソロエンジニアにとって、安全な開発フローを維持するための現実的な代替案となる。"
+      },
+      "en": {
+        "title": "Blocking accidental main pushes with Claude Code in private GitHub repos without paid branch protection features",
+        "summary": "For solo engineers operating without GitHub’s paid branch protection features, relying on simple hooks to prevent accidental pushes to main from Claude Code is insufficient. This case study details a redesign of those safety mechanisms after discovering that both existing guardrails could be bypassed simultaneously. By hardening the integration between Claude Code's internal configuration and local Git pre-push hooks, the developer successfully built a redundant, physical safety layer without incurring additional costs. This approach provides a practical, robust alternative for maintaining a secure development flow and preventing production deployment errors. For builders operating on a lean budget, this strategy proves that custom local validation logic is a necessary defense when core repository safeguards are unavailable."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-07T13:47:45.633Z"
+  },
+  {
+    "id": "art-1794059255837-dbx0k",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+    "published_at": "2026-11-07T13:31:42.000Z",
+    "og_image_url": "https://techcrunch.com/wp-content/uploads/2026/11/ara-stripe-5.png?resize=1200,779",
+    "title_ja": "Rampの支出データが示すAI投資の減速—AnthropicのIPO直前に市場の風向きが変わる理由",
+    "summary_ja": "Rampの最新データにより、企業におけるAI関連支出の伸びが停滞し始めていることが明らかになった。 特にAnthropicのIPOが迫るなか、AIモデルのコスト対効果に対する企業の選別眼が厳しくなっている。 単に最新モデルを導入するフェーズから、実務でのROI（投資対効果）をシビアに測定するフェーズへ移行しており、開発者は「AIを導入すること」そのものではなく「AIでいかにコストを削減し利益を生むか」という視点を求められている。",
+    "translations": {
+      "ja": {
+        "title": "Rampの支出データが示すAI投資の減速—AnthropicのIPO直前に市場の風向きが変わる理由",
+        "summary": "Rampの最新データにより、企業におけるAI関連支出の伸びが停滞し始めていることが明らかになった。 特にAnthropicのIPOが迫るなか、AIモデルのコスト対効果に対する企業の選別眼が厳しくなっている。 単に最新モデルを導入するフェーズから、実務でのROI（投資対効果）をシビアに測定するフェーズへ移行しており、開発者は「AIを導入すること」そのものではなく「AIでいかにコストを削減し利益を生むか」という視点を求められている。"
+      },
+      "en": {
+        "title": "Ramp spending data reveals AI investment slowdown just as Anthropic nears major IPO milestone",
+        "summary": "Fresh expenditure data from Ramp indicates that corporate AI spending is beginning to stall, casting uncertainty over the market just as Anthropic approaches a highly anticipated IPO. This slowdown suggests that enterprise buyers are moving past the initial hype phase and are now rigorously evaluating the actual return on investment for large language model subscriptions. For builders and AI startups, this signals a critical market shift: clients no longer prioritize AI adoption for its own sake. To survive this tightening budget environment, product teams must pivot their focus from purely showcasing model capabilities to demonstrating measurable efficiency gains and tangible ROI for business operations, effectively proving that their tools are essential cost-savers rather than discretionary experiments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-07T13:47:35.837Z"
+  },
+  {
+    "id": "art-1794059246262-0kqgu",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shigatakeshi/n/n3b33ce7a6058",
+    "published_at": "2026-11-07T13:42:22.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333410981/rectangle_large_type_2_a8f3e8c7a06a334e8f9e09445bd069af.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「作るだけで満足」からの脱却：体組成計記録アプリを個人開発して痛感した、プロダクトを人に使ってもらうための「ラストワンマイル」の重要性",
+    "summary_ja": "個人開発において「アプリを作れること」と「人に使ってもらえる状態にすること」には大きな溝がある。 著者は体組成計の測定結果を記録・可視化するシンプルなアプリを開発する中で、機能実装後のUI改善やUXの磨き込み、実際のユーザー運用への耐性など、プロダクトを完遂させるための壁を体感した。 コードを書く能力はあくまで手段に過ぎず、実際に世の中へデプロイし、他者に価値を提供し続けるプロダクトへと昇華させることこそが、個人のエンジニアが目指すべき真のゴールである。",
+    "translations": {
+      "ja": {
+        "title": "「作るだけで満足」からの脱却：体組成計記録アプリを個人開発して痛感した、プロダクトを人に使ってもらうための「ラストワンマイル」の重要性",
+        "summary": "個人開発において「アプリを作れること」と「人に使ってもらえる状態にすること」には大きな溝がある。 著者は体組成計の測定結果を記録・可視化するシンプルなアプリを開発する中で、機能実装後のUI改善やUXの磨き込み、実際のユーザー運用への耐性など、プロダクトを完遂させるための壁を体感した。 コードを書く能力はあくまで手段に過ぎず、実際に世の中へデプロイし、他者に価値を提供し続けるプロダクトへと昇華させることこそが、個人のエンジニアが目指すべき真のゴールである。"
+      },
+      "en": {
+        "title": "Building is not enough: A solo developer’s lesson on the critical 'last mile' required to actually get your product used by others",
+        "summary": "There is a massive gap between simply writing code to build an app and ensuring it is ready for real users. In the process of developing a simple utility to track and visualize body composition measurements, the author realized that feature implementation is only the beginning. The real challenge lies in the 'last mile': refining UI, polishing UX, and ensuring the product holds up under actual usage conditions. Coding skills are merely the means to an end; transforming a prototype into a functional product that delivers ongoing value is where the true work begins. For solo builders, shipping to production and engaging real-world users is the only way to measure the actual success of your project."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-07T13:47:26.262Z"
+  },
+  {
     "id": "art-1794058431647-86jqq",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -22528,32 +22608,6 @@
     "created_at": "2026-11-04T11:32:02.661Z"
   },
   {
-    "id": "art-1793791916716-n7dy6",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://play.google.com/store/apps/details?id=com.caloi.app&hl=en_US",
-    "published_at": "2026-11-04T10:47:43.000Z",
-    "og_image_url": null,
-    "title_ja": "AIで食事管理を自動化する「Caloi AI」公開。写真解析でカロリー計算を効率化する個人開発アプリの実例",
-    "summary_ja": "「Caloi AI」は、スマートフォンで食事の写真を撮るだけでAIがカロリーや栄養素を自動解析し、日々の食事管理を効率化する個人開発アプリだ。 従来の手動入力が必要な記録アプリとは異なり、LLMによる画像解析を活用することでユーザーの入力を最小化し、継続率の向上を狙っている。 個人のエンジニアがAI技術を身近なヘルスケア領域に落とし込み、独自の付加価値を生み出す良いケーススタディだ。",
-    "translations": {
-      "ja": {
-        "title": "AIで食事管理を自動化する「Caloi AI」公開。写真解析でカロリー計算を効率化する個人開発アプリの実例",
-        "summary": "「Caloi AI」は、スマートフォンで食事の写真を撮るだけでAIがカロリーや栄養素を自動解析し、日々の食事管理を効率化する個人開発アプリだ。 従来の手動入力が必要な記録アプリとは異なり、LLMによる画像解析を活用することでユーザーの入力を最小化し、継続率の向上を狙っている。 個人のエンジニアがAI技術を身近なヘルスケア領域に落とし込み、独自の付加価値を生み出す良いケーススタディだ。"
-      },
-      "en": {
-        "title": "Caloi AI launched: A new AI-powered calorie tracking app using image analysis to automate daily diet logging",
-        "summary": "Caloi AI is a new, developer-built calorie tracker that streamlines dietary logging by using AI-powered image analysis to estimate calories and nutrients from simple food photos. Unlike legacy tracking apps that force users into tedious manual data entry, this implementation leverages multimodal LLMs to identify food items automatically, significantly reducing friction for end users. The project serves as a practical blueprint for solo developers looking to tackle the health and wellness sector by applying generative AI to solve persistent UX bottlenecks. For those building B2C apps, Caloi demonstrates how automating tedious manual tasks—rather than just building features—is the most effective way to improve retention and product stickiness in a crowded market."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-04T11:31:56.716Z"
-  },
-  {
     "id": "art-1793791908595-jsyvt",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -34013,33 +34067,6 @@
     "created_at": "2026-11-02T06:31:37.982Z"
   },
   {
-    "id": "art-1793600191685-objqp",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/sidejob/articles/a2e2c37e7bc449214",
-    "published_at": "2026-11-02T00:15:11.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ybsUbnoE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Copilot%2520Studio%25E3%2582%2592%25E4%25BC%2581%25E6%25A5%25AD%25E3%2581%25AB18%25E4%25BB%25B6%25E5%25B1%2595%25E9%2596%258B%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E6%259C%2580%25E5%2588%259D%25E3%2581%25AB%25E7%259B%25B4%25E9%259D%25A2%25E3%2581%2597%25E3%2581%259F%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25AE%25E5%25A3%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E3%2582%2592%25E7%259C%259F%25E5%2589%25A3%25E3%2581%25AB%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvcy5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Copilot Studio展開18件から紐解く、現場でAI活用が定着しない「設計の壁」と3つの共通失敗パターン",
-    "summary_ja": "企業向けに18件のCopilot Studio導入を支援した実体験から、現場にAIが定着しない原因を分析。 単なる技術導入に留まり、業務フローへの適合やユーザーの動機付けが欠落していることが「定着の壁」の正体であると指摘する。 本稿では、使われないボットに共通する設計上の落とし穴と、現場のワークフローに溶け込ませるための改善アプローチを共有する。 AI活用を推進する開発者は、機能実装前に業務プロセスとの整合性を最優先で評価すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "Copilot Studio展開18件から紐解く、現場でAI活用が定着しない「設計の壁」と3つの共通失敗パターン",
-        "summary": "企業向けに18件のCopilot Studio導入を支援した実体験から、現場にAIが定着しない原因を分析。 単なる技術導入に留まり、業務フローへの適合やユーザーの動機付けが欠落していることが「定着の壁」の正体であると指摘する。 本稿では、使われないボットに共通する設計上の落とし穴と、現場のワークフローに溶け込ませるための改善アプローチを共有する。 AI活用を推進する開発者は、機能実装前に業務プロセスとの整合性を最優先で評価すべきだ。"
-      },
-      "en": {
-        "title": "Lessons from 18 Copilot Studio deployments: Identifying the 'design wall' that causes corporate AI projects to fail",
-        "summary": "Drawing from the author's experience implementing Microsoft Copilot Studio across 18 corporate environments, this analysis dissects why AI initiatives often fail to gain traction despite successful technical deployments. The primary 'design wall' isn't a lack of features, but a misalignment with real-world workflows and a failure to address end-user motivation. This post identifies the common patterns of abandoned bots and outlines a diagnostic framework for builders to integrate AI more effectively into existing business processes. The takeaway for developers is clear: stop treating implementation as a plug-and-play event. Instead, prioritize user-centric workflow integration from day one, rather than focusing purely on technical capability, to prevent your AI tools from becoming just another unused corporate relic."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "アップデート"
-    ],
-    "created_at": "2026-11-02T06:16:31.685Z"
-  },
-  {
     "id": "art-1793600184978-qz1o8",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -34063,32 +34090,6 @@
       "開発"
     ],
     "created_at": "2026-11-02T06:16:24.978Z"
-  },
-  {
-    "id": "art-1793599311987-c5wuh",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/suzumiya3190/articles/635df6c231784b",
-    "published_at": "2026-11-02T04:45:12.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OlR17Zz1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2590%2586%25E6%2583%25B3%25E3%2581%25AE%25E4%25BA%25BA%25E5%25B7%25A5%25E7%259F%25A5%25E8%2583%25BD%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E6%259C%25AC%25E6%25B0%2597%25E5%2587%25BA%25E3%2581%2597%25E3%2581%25A6%25E8%2580%2583%25E3%2581%2588%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:suzumiya3190%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVhMmI1ZjU0YjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "理想の人工知能の定義と実装の可能性とは？個人開発者がLLMを用いて深く考察した独自理論とChatGPTとの議論ログを公開",
-    "summary_ja": "個人開発者のsldnan氏が、AIとの対話を通じて「理想の人工知能」の定義や構造について深く考察したレポートをGitHubで公開した。 厳密な論文ではなく技術的な試論として、AIの機能要件やあるべき姿を体系化し、さらにChatGPTによるレビューと対話ログも合わせて提供している。 技術者にとって、AIの実装手法やアーキテクチャ設計を検討する際、LLM自身に自己の設計をレビューさせるというフィードバックループの構築は、独創的なアイデアを洗練させる有効な手法となり得るだろう。",
-    "translations": {
-      "ja": {
-        "title": "理想の人工知能の定義と実装の可能性とは？個人開発者がLLMを用いて深く考察した独自理論とChatGPTとの議論ログを公開",
-        "summary": "個人開発者のsldnan氏が、AIとの対話を通じて「理想の人工知能」の定義や構造について深く考察したレポートをGitHubで公開した。 厳密な論文ではなく技術的な試論として、AIの機能要件やあるべき姿を体系化し、さらにChatGPTによるレビューと対話ログも合わせて提供している。 技術者にとって、AIの実装手法やアーキテクチャ設計を検討する際、LLM自身に自己の設計をレビューさせるというフィードバックループの構築は、独創的なアイデアを洗練させる有効な手法となり得るだろう。"
-      },
-      "en": {
-        "title": "Defining the Ideal Artificial Intelligence: A Developer’s Conceptual Framework and Self-Reflective LLM Critique via ChatGPT Feedback Loops",
-        "summary": "Independent developer sldnan has released a conceptual technical report exploring the architecture and core definitions of an \"Ideal AI.\" Rather than a traditional academic paper, this project offers a detailed framework for how advanced intelligence could be structured, supported by a rich log of iterative reviews conducted directly with ChatGPT. The core takeaway for builders is the utility of this \"AI-as-a-reviewer\" methodology: using LLMs not just to write code, but to challenge and refine your own architectural hypotheses. By treating an AI as an active critical partner in the research process, developers can stress-test high-level concepts before committing to implementation, turning abstract speculation into more robust, well-reasoned system designs."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-02T06:01:51.987Z"
   },
   {
     "id": "art-1793599287128-p53xy",
