@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794092534229-5ag13",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://dev.ua/en/news/postman-1793785667",
+    "published_at": "2026-11-04T16:38:25.000Z",
+    "og_image_url": null,
+    "title_ja": "API開発ツール「Postman」、ユーザーの同意なしにAIプラグインを強制インストールする仕様が発覚し開発者から批判殺到",
+    "summary_ja": "人気API開発ツールのPostmanが、ユーザーの明示的な同意や設定変更なしにAIプラグインを勝手にインストールしていたことが判明し、開発者コミュニティで大きな波紋を呼んでいる。 信頼性を最優先すべき開発環境において、意図しないバックグラウンドでのソフトウェア追加は重大なセキュリティ懸念やプライバシー侵害と見なされている。 開発者は、ツール選定においてベンダーロックインのリスクだけでなく、勝手な機能更新が業務フローに与える影響についても厳しく精査する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "API開発ツール「Postman」、ユーザーの同意なしにAIプラグインを強制インストールする仕様が発覚し開発者から批判殺到",
+        "summary": "人気API開発ツールのPostmanが、ユーザーの明示的な同意や設定変更なしにAIプラグインを勝手にインストールしていたことが判明し、開発者コミュニティで大きな波紋を呼んでいる。 信頼性を最優先すべき開発環境において、意図しないバックグラウンドでのソフトウェア追加は重大なセキュリティ懸念やプライバシー侵害と見なされている。 開発者は、ツール選定においてベンダーロックインのリスクだけでなく、勝手な機能更新が業務フローに与える影響についても厳しく精査する必要がある。"
+      },
+      "en": {
+        "title": "Postman faces backlash after silently installing AI plugins without developer consent or explicit user authorization",
+        "summary": "The popular API development tool Postman is facing severe backlash after reports revealed the software was silently installing AI plugins on user machines without explicit consent or authorization. For developers who rely on a trusted local environment, this unexpected background modification of software raises significant security and privacy concerns, effectively breaking the implicit contract of trust between the tool vendor and the professional user. This incident serves as a stark reminder for builders to rigorously vet their development stack beyond just feature sets, considering how easily vendors can inject unwanted changes. The situation underscores the need for greater transparency in software supply chains and caution when adopting closed-source utilities for sensitive API development work."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-07T23:02:14.229Z"
+  },
+  {
+    "id": "art-1794092527974-psnym",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tomsolog/articles/20261010-claude-code-permissions-guide",
+    "published_at": "2026-11-07T14:06:31.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Jmblorsz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AE%25E6%2593%258D%25E4%25BD%259C%25E3%2582%2592%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25A7%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2581%25A8%25E9%2599%2590%25E7%2595%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2588%25E3%2583%25A0%25E3%2582%25BD%25E3%2583%25BC%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZkMDMyZjdhZjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの危険な操作を「permissions」権限設定で制限する方法：CLAUDE.mdとの使い分けと防御の限界",
+    "summary_ja": "Claude Codeで特定の操作を確実に制御するには、AIへの「お願い」であるCLAUDE.mdではなく、システム側で遮断する「permissions」権限設定が必要だ。 permissionsはAIの判断を介さず、実行直前にClaude Code本体が直接チェックを行うため、.envファイルの読み取り禁止やgit push前の確認などを強制できる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの危険な操作を「permissions」権限設定で制限する方法：CLAUDE.mdとの使い分けと防御の限界",
+        "summary": "Claude Codeで特定の操作を確実に制御するには、AIへの「お願い」であるCLAUDE.mdではなく、システム側で遮断する「permissions」権限設定が必要だ。 permissionsはAIの判断を介さず、実行直前にClaude Code本体が直接チェックを行うため、.envファイルの読み取り禁止やgit push前の確認などを強制できる。"
+      },
+      "en": {
+        "title": "How to Securely Constrain Claude Code Operations Using Permissions Configuration and CLAUDE.md to Prevent Unauthorized Actions and Mistakes",
+        "summary": "To strictly enforce safety boundaries in Claude Code, developers should rely on the permissions configuration rather than simple prompt-based instructions in CLAUDE.md. While instructions guide the AI, permissions act as a system-level gatekeeper that checks operations directly before execution, independent of the AI's logic. By explicitly defining deny-lists for sensitive files like .env or requiring confirmation before dangerous operations like git push, you create a robust safety net. However, this defense is not absolute, as certain system calls may fall outside these hard constraints. Effectively securing an AI agent requires combining proactive CLAUDE.md steering with these defensive permission layers, ensuring that even if the AI misjudges a request, the underlying tool execution remains protected."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-07T23:02:07.974Z"
+  },
+  {
+    "id": "art-1794092517274-1shas",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Git_Dayori/items/b77667568c2f6c62fc1d",
+    "published_at": "2026-11-07T22:31:45.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDE0MTQwJTJGZWNhZmNiZjMyMzkwOGQ3ODlmNzkyZDUxNTZmZDZlNTVkY2EzNjM0MSUyRnhfbGFyZ2UucG5nJTNGMTc3NjkyMzE3Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTk0ZjU5ZmZjNDczOGQ2ZDUzNDI4Yjc3ZTc2YWFhMGQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D454c3a9a5e0968be2f7a10c3c9f8eb49?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwR2l0SHViJUU2JTk3JUE1JUU1JUEwJUIxJUUzJTgwJTkxbW9ybHV0byUyRnJlYSVFMyU4MSU4QyUyQjMlMkMzMDglRTMlODElQTclRTklQTYlOTYlRTQlQkQlOEQlRTMlODAlODFHcm9rJTIwQm90JUUzJTgzJTg2JUUzJTgzJUIzJUUzJTgzJTk3JUUzJTgzJUFDJUU5JTlCJTg2JUUzJTgyJTgyJUU1JTg4JTlEJUU3JTk5JUJCJUU1JUEwJUI0JTIwJUUyJTgwJTk0JTIwMjAyNi0xMS0wOCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTNiMWMzYTQxNmIyNGY5NmI5NWVkOGU0OTEzYWMxMDVl&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBHaXRfRGF5b3JpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZjI4YjlmMWRhMWM3MjMyODkxYjlmNGVjZDU1N2Q0ZWM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=2c4767bf1e5d59566c62740165a660b2",
+    "title_ja": "GitHubトレンド日報：morluto/reaが+3,308で首位に急浮上、Grok Botテンプレート集も初ランクイン（2026年11月8日版）",
+    "summary_ja": "2026年11月8日のGitHubトレンドでは、開発効率化ツール「morluto/rea」が圧倒的な支持を集め、3,308スターを獲得して首位に浮上した。 さらにGrok Botのテンプレート集も新たに初登場しており、AI関連ボットの需要が個人開発者の間で急増していることが伺える。 トレンドの上位を追うことは、次に流行する技術スタックをいち早くキャッチアップし、自身のプロジェクトに実装するための最良の戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "GitHubトレンド日報：morluto/reaが+3,308で首位に急浮上、Grok Botテンプレート集も初ランクイン（2026年11月8日版）",
+        "summary": "2026年11月8日のGitHubトレンドでは、開発効率化ツール「morluto/rea」が圧倒的な支持を集め、3,308スターを獲得して首位に浮上した。 さらにGrok Botのテンプレート集も新たに初登場しており、AI関連ボットの需要が個人開発者の間で急増していることが伺える。 トレンドの上位を追うことは、次に流行する技術スタックをいち早くキャッチアップし、自身のプロジェクトに実装するための最良の戦略となる。"
+      },
+      "en": {
+        "title": "GitHub Trending Report: morluto/rea Soars to Top Spot with 3,308 New Stars as Grok Bot Templates Gain Traction",
+        "summary": "In the GitHub Trending report for November 8, 2026, the developer-focused repository morluto/rea dominated the charts by securing over 3,308 stars, underscoring intense community interest in current tooling updates. Simultaneously, Grok Bot template collections entered the trending rankings for the first time, signaling a significant shift in developer attention toward AI-driven agent automation. For builders, these daily fluctuations in GitHub activity are crucial indicators of where the next wave of open-source momentum is headed. By monitoring these repository spikes, developers can gain a first-mover advantage, quickly integrating trending patterns and agentic workflows into their own stacks before the broader market adopts them, keeping their personal projects on the cutting edge."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-07T23:01:57.274Z"
+  },
+  {
+    "id": "art-1794092509243-gtfri",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/crestward_apps/n/nf43a9b7bbe28",
+    "published_at": "2026-11-07T22:57:36.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/327816672/rectangle_large_type_2_ec1c15b783634dcc82d480cb6303ead6.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "10年前の震災で助けられた私が、AIを武器に社会へ恩返しを果たす——震度7の現場で開発者が構築した「災害支援ソリューション」の全記録",
+    "summary_ja": "10年前の熊本地震で被災し、助けられる側だった開発者が、今度はAIを活用して新たな災害支援ツールを構築した。 大災害の現場における迅速な情報共有とリソース最適化を目的としたこのプロジェクトは、AIが個人の開発力をいかにして社会課題の解決へ昇華させるかを実証している。 エンジニアが技術を用いて「当事者」として社会に貢献する際、AIは単なる自動化ツールではなく、迅速な復興を支える力強いパートナーになり得るという教訓を提示している。",
+    "translations": {
+      "ja": {
+        "title": "10年前の震災で助けられた私が、AIを武器に社会へ恩返しを果たす——震度7の現場で開発者が構築した「災害支援ソリューション」の全記録",
+        "summary": "10年前の熊本地震で被災し、助けられる側だった開発者が、今度はAIを活用して新たな災害支援ツールを構築した。 大災害の現場における迅速な情報共有とリソース最適化を目的としたこのプロジェクトは、AIが個人の開発力をいかにして社会課題の解決へ昇華させるかを実証している。 エンジニアが技術を用いて「当事者」として社会に貢献する際、AIは単なる自動化ツールではなく、迅速な復興を支える力強いパートナーになり得るという教訓を提示している。"
+      },
+      "en": {
+        "title": "How a Survivor of the Kumamoto Earthquake Leveraged AI to Build Disaster Relief Solutions and Give Back to Society",
+        "summary": "Ten years ago, the author was on the receiving end of aid during the devastating Kumamoto earthquake. Today, they have returned to the frontlines—not as a victim, but as a builder leveraging AI to create actionable disaster relief tools. This project demonstrates how modern AI development enables individuals to tackle complex humanitarian challenges, transforming rapid information dissemination and resource allocation during crisis scenarios. It serves as a powerful testament for developers everywhere, showing that AI can act as a force multiplier for social good. By bridging the gap between personal tragedy and technical solution-building, the author highlights why engineers must consider their roles as active contributors when disaster strikes, using AI to turn empathy into scalable impact."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-07T23:01:49.243Z"
+  },
+  {
     "id": "art-1794091602236-k4pp7",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -15020,33 +15124,6 @@
     "created_at": "2026-11-06T07:17:12.853Z"
   },
   {
-    "id": "art-1793949426285-t39vp",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/forest_ppppp/n/nf27b3498e1c3",
-    "published_at": "2026-11-06T07:03:25.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332843828/rectangle_large_type_2_f11cdb661f2d58dd83cdcd230495dab0.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI副業で実績ゼロから抜け出す最初の1歩：初心者がポートフォリオ用に作るべき「小さな制作物」とその作成手順",
-    "summary_ja": "AI副業を始める際、案件探しより先に必要なのは「クライアントに見せられる完成された小さな制作物」を作ることだ。 実績ゼロの初心者がつまずくのはスキル不足ではなく、発注者に実力を証明する材料の欠如である。 本記事では、Claude Codeを活用して効率的にサンプルを作成する具体的なプロンプト集や、最初の依頼を受ける前に設定すべき境界線など、受注に至るまでの必須工程を解説する。 まずは小さな成功事例を1つ作り、信頼を獲得する順番を理解しよう。",
-    "translations": {
-      "ja": {
-        "title": "AI副業で実績ゼロから抜け出す最初の1歩：初心者がポートフォリオ用に作るべき「小さな制作物」とその作成手順",
-        "summary": "AI副業を始める際、案件探しより先に必要なのは「クライアントに見せられる完成された小さな制作物」を作ることだ。 実績ゼロの初心者がつまずくのはスキル不足ではなく、発注者に実力を証明する材料の欠如である。 本記事では、Claude Codeを活用して効率的にサンプルを作成する具体的なプロンプト集や、最初の依頼を受ける前に設定すべき境界線など、受注に至るまでの必須工程を解説する。 まずは小さな成功事例を1つ作り、信頼を獲得する順番を理解しよう。"
-      },
-      "en": {
-        "title": "Breaking into AI Freelancing: Why Zero-Experience Beginners Should Build One Small Portfolio Project Before Seeking Their First Client",
-        "summary": "For those launching an AI side hustle, the crucial first step is not searching for gigs but building a single, tangible project to showcase competence. Beginners with zero track records often fail because they lack proof of skill that clients can verify. This guide outlines how to build an effective sample using Claude Code, providing ready-to-use prompts and a checklist for presentation. It moves beyond theoretical learning to explain the specific order of operations: defining a project scope, creating the artifact, and establishing firm boundaries before accepting paid work. By focusing on a single, high-quality showcase piece, builders create the necessary trust to convert curiosity into actual client requests, bypassing the initial struggle of selling empty promises."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-06T07:17:06.285Z"
-  },
-  {
     "id": "art-1793949419697-u85sl",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -16842,33 +16919,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-06T01:16:46.562Z"
-  },
-  {
-    "id": "art-1793926919984-sfdnh",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://arxiv.org/abs/2609.30137",
-    "published_at": "2026-11-06T00:43:27.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "銀行NubankがAIエージェントの更新サイクルを3週間から5日以下へ短縮、効率化の仕組みを公開（論文解説）",
-    "summary_ja": "ブラジルのフィンテック銀行Nubankは、AIエージェントの更新サイクルを3週間から5日以下に短縮するフレームワークを論文で発表した。 開発者はテスト自動化とデプロイメントパイプラインの刷新により、頻繁なイテレーションを可能にする環境を構築した。 金融機関のような堅牢性が求められる環境下で、AI開発のスピードを劇的に上げるには、品質保証プロセスを開発ライフサイクルにどう組み込むかが設計の核心となる。",
-    "translations": {
-      "ja": {
-        "title": "銀行NubankがAIエージェントの更新サイクルを3週間から5日以下へ短縮、効率化の仕組みを公開（論文解説）",
-        "summary": "ブラジルのフィンテック銀行Nubankは、AIエージェントの更新サイクルを3週間から5日以下に短縮するフレームワークを論文で発表した。 開発者はテスト自動化とデプロイメントパイプラインの刷新により、頻繁なイテレーションを可能にする環境を構築した。 金融機関のような堅牢性が求められる環境下で、AI開発のスピードを劇的に上げるには、品質保証プロセスを開発ライフサイクルにどう組み込むかが設計の核心となる。"
-      },
-      "en": {
-        "title": "Nubank cuts AI agent update cycles from three weeks to under five days using automated pipelines",
-        "summary": "Fintech giant Nubank has published new research detailing how they slashed their AI agent update cycles from three weeks down to under five days. By restructuring their deployment pipeline and heavily automating their testing infrastructure, the engineering team successfully maintained compliance while drastically accelerating the iteration speed for their automated banking agents. This shift demonstrates that the primary bottleneck in highly regulated AI environments is often not model training, but the slow, manual quality assurance checks that gate deployments. For builders in the fintech or regulated AI space, the takeaway is that investing in aggressive automation for the verification and testing layer is essential to achieving production-grade agility without compromising on system integrity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-06T01:01:59.984Z"
   },
   {
     "id": "art-1793926911779-6tu0a",
@@ -25638,32 +25688,6 @@
     "created_at": "2026-11-03T23:35:05.466Z"
   },
   {
-    "id": "art-1793748710899-mii9o",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/joinclass/items/21a65082b5a8594b9d8a",
-    "published_at": "2026-11-03T23:30:02.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjA2ODkxJTJGNzhmNWJiNzA1YjdlZjlkYWVjZWRhOGI2ODdlNTU5ZjA5YzI1YmYzZSUyRnhfbGFyZ2UucG5nJTNGMTc3NDUxODE0Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9M2ZhMWQ1NDMyODQzNzkzNTIyNzRiMzk2ZDdmYmJmMTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd9c2258cfe819f9c4489a1d86672b88f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UG9DJUUzJTgyJTkyJUU2JTlDJUFDJUU3JTk1JUFBJUU5JTgxJThCJUU3JTk0JUE4JUUzJTgxJUFCJUU0JUI5JTk3JUUzJTgxJTlCJUUzJTgyJThCJUU2JTk5JTgyJUUzJTgxJUFCJUU1JUJGJTg1JUU4JUE2JTgxJUUzJTgxJUEwJUUzJTgxJUEzJUUzJTgxJTlGJUUzJTgyJTgyJUUzJTgxJUFFJTIwJUUyJTgwJTk0JTIwJUU3JTlCJUEzJUU4JUE2JTk2JUUzJTgzJUJCJUUzJTgzJUFBJUUzJTgzJTg4JUUzJTgzJUE5JUUzJTgyJUE0JUUzJTgzJUJCJUUzJTgyJUIzJUUzJTgyJUI5JUUzJTgzJTg4JUU0JUI4JThBJUU5JTk5JTkwJUUzJTgwJTkwYmFzaCUyMCUyQiUyMGxhdW5jaGQlRTUlQUUlOUYlRTglQTMlODUlRTQlQkIlOTglRTMlODElOEQlRTMlODAlOTEmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1jZTk4NjhlNzI3YzkwOWI4ODhhZGM1MGY2OTkyZWMzZA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBqb2luY2xhc3MmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz02MTk0ZGNhMTQxZGVmYmVkMzIyZTJlNjgwN2VlNDI0ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=cfd5df8fb920ee892cd3d6078652efdf",
-    "title_ja": "Claude Code運用の教訓：PoCを安定稼働させるための監視・リトライ・コスト上限制御の技術とbash実装",
-    "summary_ja": "PoCを本番環境へ移行する際、最も危険なのは初期の成功体験だ。 合同会社ジョインクラスはClaude Codeを活用し、17本以上の自動化タスクをlaunchdで運用して自動化率98%を達成したが、これには堅牢な監視、リトライ処理、APIコスト上限設定が不可欠だった。 単にスクリプトを走らせるだけでなく、予期せぬAPIエラーや無駄な課金を防ぐガードレールを組み込むことが、AI自動化システムを持続させるための唯一の道である。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code運用の教訓：PoCを安定稼働させるための監視・リトライ・コスト上限制御の技術とbash実装",
-        "summary": "PoCを本番環境へ移行する際、最も危険なのは初期の成功体験だ。 合同会社ジョインクラスはClaude Codeを活用し、17本以上の自動化タスクをlaunchdで運用して自動化率98%を達成したが、これには堅牢な監視、リトライ処理、APIコスト上限設定が不可欠だった。 単にスクリプトを走らせるだけでなく、予期せぬAPIエラーや無駄な課金を防ぐガードレールを組み込むことが、AI自動化システムを持続させるための唯一の道である。"
-      },
-      "en": {
-        "title": "Scaling Claude Code to production: Essential patterns for monitoring, retries, and cost controls in bash",
-        "summary": "Transitioning a PoC to production is risky because initial success often masks fragility. JoinClass LLC achieved 98% automation across 17 tasks powered by Claude Code and launchd, but realized that reliability depends on explicit guardrails rather than just functional code. The team implemented robust monitoring, automatic retry logic, and hard API cost caps to prevent runaway token usage. Simply running scripts is insufficient for stable AI-driven operations; builders must bake in error handling and cost limits from day one to ensure systems remain sustainable and predictable. For developers automating workflows, this blueprint proves that the difference between a brittle prototype and a reliable production engine is the maturity of the infrastructure surrounding your AI calls."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-03T23:31:50.899Z"
-  },
-  {
     "id": "art-1793748704227-qzp2x",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -30571,32 +30595,6 @@
       "開発"
     ],
     "created_at": "2026-11-02T23:16:38.637Z"
-  },
-  {
-    "id": "art-1793660564233-7114m",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/rinku/articles/evm-simulation-policy-decisions",
-    "published_at": "2026-11-02T13:41:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--U_7QiV9R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:EVM%2520simulation%25E3%2581%258C%25E6%2588%2590%25E5%258A%259F%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2582%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%25EF%25BC%259AAI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AEALLOW%25E3%2583%25BBWARN%25E3%2583%25BBBLOCK%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tar%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjVhQjZjQWlwVkNmRFJvbXZrQXVYQ0o0eG1lOG82M3Jfd1ZUTFdYUDNKVU1WSmFlWT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェントのEVM送金安全策：シミュレーション成功時もポリシーで止める「ALLOW・WARN・BLOCK」設計の実装手法",
-    "summary_ja": "EVMトランザクションを実行するAIエージェントにおいて、単なる「シミュレーション成功」だけで送信を許可するのは危険です。 本記事では、TxGuardを活用し、シミュレーション結果とアプリの安全ポリシーを分離して「ALLOW・WARN・BLOCK」の3段階で判定する実装を解説します。 TypeScript開発者がウォレット連携前に安全性を検証するためのアーキテクチャであり、予期せぬ資産流出を防ぐための必須の設計指針となります。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントのEVM送金安全策：シミュレーション成功時もポリシーで止める「ALLOW・WARN・BLOCK」設計の実装手法",
-        "summary": "EVMトランザクションを実行するAIエージェントにおいて、単なる「シミュレーション成功」だけで送信を許可するのは危険です。 本記事では、TxGuardを活用し、シミュレーション結果とアプリの安全ポリシーを分離して「ALLOW・WARN・BLOCK」の3段階で判定する実装を解説します。 TypeScript開発者がウォレット連携前に安全性を検証するためのアーキテクチャであり、予期せぬ資産流出を防ぐための必須の設計指針となります。"
-      },
-      "en": {
-        "title": "Designing EVM Transaction Guards: Implementing ALLOW, WARN, and BLOCK Policies for AI Agents Beyond Simple Simulation Success",
-        "summary": "For AI agents interacting with EVM chains, relying solely on simulation success is a critical security vulnerability that often leads to unauthorized fund outflows. This article outlines a robust architecture using TxGuard, which decouples the simulation layer from high-level application security policies. By categorizing agent intents into ALLOW, WARN, or BLOCK states, developers can intercept dangerous calls even when the transaction itself is technically valid. The piece demonstrates a TypeScript implementation for verifying transaction safety before any wallet connection occurs. For builders working on autonomous financial agents, implementing these granular policy checks is no longer optional; it is the fundamental layer required to prevent malicious or accidental asset draining in decentralized environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-02T23:02:44.233Z"
   },
   {
     "id": "art-1793660505350-yqgew",
