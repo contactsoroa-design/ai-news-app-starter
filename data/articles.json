@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794090720384-034fe",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/malwaresuk/articles/security-audit-skill-redteam-lab",
+    "published_at": "2026-11-07T15:22:34.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--yhaLsvOj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2594%25BB%25E6%2592%2583%25E3%2582%2592%25E6%25BC%2594%25E7%25BF%2592%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E5%25A4%2596%25E3%2581%25AB%25E5%2587%25BA%25E3%2581%2595%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%259ASecurity%2520Audit%2520Skill%25E3%2581%25A7%25E8%2587%25AA%25E5%25AE%2585%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2589%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%25E3%2583%25A9%25E3%2583%259C%25E3%2581%25AEIaC%25E3%2582%2592%25E7%259B%25A3%25E6%259F%25BB%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AE%25E3%2581%2586%25E3%2581%25BF%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2JhZDNlZmU0ZGEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "自宅レッドチーム演習環境のセキュリティ：Security Audit Skillを用いたIaCコードの監査で攻撃範囲を隔離・封じ込める手法",
+    "summary_ja": "自宅に構築したサイバーレンジ（レッドチーム演習用ラボ）において、脆弱なサーバーや攻撃ツールを安全に扱うためのインフラ監査手法を解説。 攻撃が外部ネットワークや管理セグメントへ拡散しないよう、Terraformで構築したIaC（Infrastructure as Code）をSecurity Audit Skillで6フェーズにわたり検証した。 ラボ環境の構築者にとって、意図しない攻撃の漏洩を未然に防ぐためのIaC構成管理と監査プロセスの重要性を提示する。",
+    "translations": {
+      "ja": {
+        "title": "自宅レッドチーム演習環境のセキュリティ：Security Audit Skillを用いたIaCコードの監査で攻撃範囲を隔離・封じ込める手法",
+        "summary": "自宅に構築したサイバーレンジ（レッドチーム演習用ラボ）において、脆弱なサーバーや攻撃ツールを安全に扱うためのインフラ監査手法を解説。 攻撃が外部ネットワークや管理セグメントへ拡散しないよう、Terraformで構築したIaC（Infrastructure as Code）をSecurity Audit Skillで6フェーズにわたり検証した。 ラボ環境の構築者にとって、意図しない攻撃の漏洩を未然に防ぐためのIaC構成管理と監査プロセスの重要性を提示する。"
+      },
+      "en": {
+        "title": "Securing your home red team lab: Using Security Audit Skill to audit IaC and prevent unauthorized lateral movement",
+        "summary": "Building a cyber range for red team exercises involves intentionally deploying vulnerable servers and exploit tools, creating a significant risk of accidental spread beyond the lab. To mitigate this, this project utilizes Security Audit Skill to audit Infrastructure as Code (IaC) written in Terraform, completing six rigorous phases of source auditing to ensure containment. The core objective is ensuring that exploits remain isolated within the dedicated exercise network, preventing them from breaching management segments or the host home network. This systematic approach highlights why automated IaC auditing is essential for builders operating high-risk labs, demonstrating that preventing a real-world security incident starts with verifying the integrity of the lab's underlying network architecture before a single attack is ever launched."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-07T22:32:00.384Z"
+  },
+  {
+    "id": "art-1794090713863-ppk7u",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/c0ol_g/n/n5dca049febfd",
+    "published_at": "2026-11-07T22:01:46.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/2d8f574e0e6b32e9890820f3dcf110a5cc8545a2.png",
+    "title_ja": "個人開発日誌 第9話：ChatGPTの無茶なコーディング指示でPCが悲鳴を上げる──オープンソースLLM「Gemma」への冷遇と直面する現実",
+    "summary_ja": "個人開発の実録連載第9話では、開発パートナーとして活用しているChatGPTの「鬼監督」のような無茶なコーディング指示が、個人の開発環境に物理的な負荷をかけ限界を突破させる様子が綴られている。 一方で、軽量なオープンソースLLMであるGemmaに対しては、厳しい評価を下し意図的に距離を置くという非対称な対応が明らかにされた。 AIモデルの選定と使い分けにおいて、リソース消費量と生成精度のバランスをどう取るか、開発者のリアルな葛藤と実験プロセスが赤裸々に描かれている。",
+    "translations": {
+      "ja": {
+        "title": "個人開発日誌 第9話：ChatGPTの無茶なコーディング指示でPCが悲鳴を上げる──オープンソースLLM「Gemma」への冷遇と直面する現実",
+        "summary": "個人開発の実録連載第9話では、開発パートナーとして活用しているChatGPTの「鬼監督」のような無茶なコーディング指示が、個人の開発環境に物理的な負荷をかけ限界を突破させる様子が綴られている。 一方で、軽量なオープンソースLLMであるGemmaに対しては、厳しい評価を下し意図的に距離を置くという非対称な対応が明らかにされた。 AIモデルの選定と使い分けにおいて、リソース消費量と生成精度のバランスをどう取るか、開発者のリアルな葛藤と実験プロセスが赤裸々に描かれている。"
+      },
+      "en": {
+        "title": "Dev Journal Ep. 9: Pushing local hardware limits with aggressive ChatGPT code generation and the cold shoulder for Gemma",
+        "summary": "In the ninth entry of this personal development chronicle, the author details how acting on strict, high-volume coding instructions from a 'drill sergeant' ChatGPT implementation can push local hardware to its absolute breaking point. The narrative contrasts this intense reliance on closed-source models with the author's surprisingly harsh, exclusionary stance toward the open-source Gemma model during the same workflow. It provides an unfiltered look at the chaotic reality of solo development, where the drive to ship features often clashes with the pragmatic limits of local compute resources. For builders, the story serves as a reminder that architectural choices and AI model selection are often dictated by immediate resource constraints rather than just theoretical capability or model performance."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-07T22:31:53.863Z"
+  },
+  {
+    "id": "art-1794090707507-k4hjn",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/sergey-kurshev/AiPrepLab",
+    "published_at": "2026-11-07T22:04:24.000Z",
+    "og_image_url": null,
+    "title_ja": "AI研究者採用面接に向けたロードマップ「AiPrepLab」公開：ML理論から実装、システム設計までカバー",
+    "summary_ja": "AIリサーチャーを目指すエンジニアのために、ML理論、実装能力、論文読解、システム設計を網羅した面接対策ロードマップ「AiPrepLab」が公開された。 GitHub上で公開されたこのリポジトリは、数学的基盤の強化から最新のLLMアーキテクチャまで、体系的な学習パスを提示している。 単なる理論の暗記ではなく、実務レベルのコード理解とアーキテクチャのトレードオフを論理的に説明できる能力を重視しており、AI分野へのキャリア転換を図る技術者にとって実践的な指針となる。",
+    "translations": {
+      "ja": {
+        "title": "AI研究者採用面接に向けたロードマップ「AiPrepLab」公開：ML理論から実装、システム設計までカバー",
+        "summary": "AIリサーチャーを目指すエンジニアのために、ML理論、実装能力、論文読解、システム設計を網羅した面接対策ロードマップ「AiPrepLab」が公開された。 GitHub上で公開されたこのリポジトリは、数学的基盤の強化から最新のLLMアーキテクチャまで、体系的な学習パスを提示している。 単なる理論の暗記ではなく、実務レベルのコード理解とアーキテクチャのトレードオフを論理的に説明できる能力を重視しており、AI分野へのキャリア転換を図る技術者にとって実践的な指針となる。"
+      },
+      "en": {
+        "title": "GitHub repository 'AiPrepLab' launches comprehensive roadmap to help engineers prepare for AI researcher job interviews",
+        "summary": "The newly released AiPrepLab GitHub repository offers a structured roadmap designed specifically for engineers preparing for AI researcher interviews. It covers critical pillars including machine learning theory, implementation skills, systematic paper review, and architectural system design. Rather than focusing on simple rote memorization, the content emphasizes developing deep proficiency in code comprehension and the ability to articulate architectural trade-offs under pressure. This resource provides a concrete path from mathematical foundations through the latest LLM architectures, serving as a tactical guide for technical professionals looking to pivot into advanced AI research roles. By mapping out both fundamental concepts and practical interview expectations, it helps candidates build the rigorous analytical muscle required for top-tier machine learning positions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-07T22:31:47.507Z"
+  },
+  {
+    "id": "art-1794090698392-nixrc",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/ai_secretary/items/a3c72fa33ac9e29b31be",
+    "published_at": "2026-11-07T22:08:52.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkYyNjQwZTY3NDZlMzRiNzM0NmVjOThmMWVkMDY2NzA1Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MTUzMDljYzRlZDlhYmIxMjBmMTg5Nzk0YTc2NWU2ZDY%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D5e3682bda9f4742c64fe9476df8a4ed2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JThGJUIwJUU1JUI4JUIzJUUzJTgyJTkyJUU2JUFEJUEzJUU2JTlDJUFDJUUzJTgxJUFCJUUzJTgxJTk3JUUzJTgxJTlGJUU5JTgwJUIyJUU2JThEJTk3JUUzJTgzJTgwJUUzJTgzJTgzJUUzJTgyJUI3JUUzJTgzJUE1JUUzJTgzJTlDJUUzJTgzJUJDJUUzJTgzJTg5JUUzJTgxJUFFJUU0JUJEJTlDJUUzJTgyJThBJUU2JTk2JUI5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ODRiNTJlY2QwMjdlYTQ0ZTg3YzljNzUyOTQ4ZWRjNWU&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhaV9zZWNyZXRhcnkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz02ZjA1M2ZjMTAwYjg5NTI4ZWM4NGFhMzcxNzY2YzcyYg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=2ced92a30ea5862480d17f64d10a643c",
+    "title_ja": "個人開発者のための「台帳」主導型ダッシュボード設計：散らばる情報を一元化して進捗を見える化する実践的アプローチ",
+    "summary_ja": "個人開発におけるタスク管理の崩壊を防ぐため、スプレッドシート等を「唯一の正本（台帳）」とする進捗ダッシュボード構築法が注目されている。 ファイルや頭の中に情報が散逸すると、自身の進捗状況を即答できず、開発の停滞を招く。 開発者は、全ての工程を台帳に集約し、それを可視化するパイプラインを組むことで、認知負荷を下げ、開発サイクルの回転数を最大化できる。 属人的な記憶に頼らず、データ管理を仕組み化することが持続可能な開発の要となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発者のための「台帳」主導型ダッシュボード設計：散らばる情報を一元化して進捗を見える化する実践的アプローチ",
+        "summary": "個人開発におけるタスク管理の崩壊を防ぐため、スプレッドシート等を「唯一の正本（台帳）」とする進捗ダッシュボード構築法が注目されている。 ファイルや頭の中に情報が散逸すると、自身の進捗状況を即答できず、開発の停滞を招く。 開発者は、全ての工程を台帳に集約し、それを可視化するパイプラインを組むことで、認知負荷を下げ、開発サイクルの回転数を最大化できる。 属人的な記憶に頼らず、データ管理を仕組み化することが持続可能な開発の要となる。"
+      },
+      "en": {
+        "title": "Building a single-source-of-truth progress dashboard for individual developers to fix fragmented project workflows",
+        "summary": "For solo developers, the failure to track progress often stems from information fragmentation across loose files and scattered notes. The proposed solution is a 'ledger-first' dashboard design, treating a spreadsheet as the primary source of truth for all project statuses. By centralizing tasks, accounts, and deliverables into a single, structured ledger, developers eliminate the cognitive overhead of searching for updates. This approach forces a disciplined pipeline where visibility becomes an automated byproduct of the workflow. Instead of relying on memory, builders should structure their data to maintain momentum. For individual creators managing multiple AI side projects, treating progress tracking as a critical engineering discipline—not just administrative overhead—is the key to scaling output without burnout."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-07T22:31:38.392Z"
+  },
+  {
     "id": "art-1794089932099-q4pi8",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -14939,32 +15043,6 @@
     "created_at": "2026-11-06T07:02:22.787Z"
   },
   {
-    "id": "art-1793948533574-mc4gm",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/cute_viola332/n/n9da197e8e480",
-    "published_at": "2026-11-06T06:58:10.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332872620/rectangle_large_type_2_ed58a4e239bd9ed2ac3bb93d2fb679ea.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "アプリ公開から4か月、ダウンロード数は47から59件へ。個人開発者が下した「ペット画像」を前面に出すというUI/UX刷新の決断",
-    "summary_ja": "個人開発アプリの公開から約4か月、ダウンロード数は47件から59件へと微増するにとどまった。 この現状を打破するため、開発者はアプリの根幹となるコンセプトを見直し、ターゲット層を明確にするため「ペット画像」を前面に押し出したデザインへの刷新を決定した。 ユーザーの反応を待つのではなく、市場ニーズに合わせて泥臭くUIや訴求点をピボットし続ける姿勢は、PMF（プロダクトマーケットフィット）を探る初期段階の個人開発者にとって極めて重要な教訓となる。",
-    "translations": {
-      "ja": {
-        "title": "アプリ公開から4か月、ダウンロード数は47から59件へ。個人開発者が下した「ペット画像」を前面に出すというUI/UX刷新の決断",
-        "summary": "個人開発アプリの公開から約4か月、ダウンロード数は47件から59件へと微増するにとどまった。 この現状を打破するため、開発者はアプリの根幹となるコンセプトを見直し、ターゲット層を明確にするため「ペット画像」を前面に押し出したデザインへの刷新を決定した。 ユーザーの反応を待つのではなく、市場ニーズに合わせて泥臭くUIや訴求点をピボットし続ける姿勢は、PMF（プロダクトマーケットフィット）を探る初期段階の個人開発者にとって極めて重要な教訓となる。"
-      },
-      "en": {
-        "title": "Individual developer pivots app strategy after 4 months of stagnant growth: shifting from generic features to a pet-focused UI",
-        "summary": "Four months after launch, an individual developer’s application saw sluggish traction, with downloads rising only from 47 to 59. Confronted with these numbers, the developer decided to fundamentally rethink the app’s positioning rather than waiting for organic improvement. The strategic shift involves pivoting the core UI to center around pet imagery, aiming to better align with target user interests. This candid case study illustrates the necessity for solo builders to treat their product not as a static entity, but as a hypothesis that requires aggressive pivoting when initial traction fails to materialize. For early-stage makers, the key lesson remains clear: when the growth data refuses to move, iterating on your value proposition—not just features—is the only way to find your market."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-06T07:02:13.574Z"
-  },
-  {
     "id": "art-1793948524693-23v5y",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -16978,33 +17056,6 @@
       "開発"
     ],
     "created_at": "2026-11-06T00:16:30.460Z"
-  },
-  {
-    "id": "art-1793923342570-l8qng",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://operator0x.com/field-notes/smaller-memory-bill/",
-    "published_at": "2026-11-05T23:03:30.000Z",
-    "og_image_url": "https://operator0x.com/assets/field-note-smaller-memory-bill-v2.webp",
-    "title_ja": "AIモデルのメモリコストを劇的に削減：単一の基盤モデルと数千のマイクロアダプターを活用する新アーキテクチャの提案",
-    "summary_ja": "大規模AIモデルの運用コスト削減に向け、単一の巨大モデルを基盤とし、タスク特化型の軽量な「マイクロアダプター」を数千個組み合わせる設計手法が注目を集めている。 このアーキテクチャは、モデル全体を複製する従来の手法とは異なり、メモリ消費量を劇的に抑えつつ、多機能なAIエージェントの構築を可能にする。 特定の業務特化型AIを開発するエンジニアにとって、このモジュール化アプローチは、限られたリソースで複雑な推論タスクを並行処理するための極めて効率的な選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIモデルのメモリコストを劇的に削減：単一の基盤モデルと数千のマイクロアダプターを活用する新アーキテクチャの提案",
-        "summary": "大規模AIモデルの運用コスト削減に向け、単一の巨大モデルを基盤とし、タスク特化型の軽量な「マイクロアダプター」を数千個組み合わせる設計手法が注目を集めている。 このアーキテクチャは、モデル全体を複製する従来の手法とは異なり、メモリ消費量を劇的に抑えつつ、多機能なAIエージェントの構築を可能にする。 特定の業務特化型AIを開発するエンジニアにとって、このモジュール化アプローチは、限られたリソースで複雑な推論タスクを並行処理するための極めて効率的な選択肢となるだろう。"
-      },
-      "en": {
-        "title": "Cutting AI memory costs: A new architecture combining a single foundation model with thousands of micro-adapters",
-        "summary": "To slash operational costs for large AI systems, a novel design pattern is emerging that leverages a single core foundation model paired with thousands of lightweight, task-specific micro-adapters. Unlike traditional methods that require replicating the entire model for each use case, this architectural shift dramatically reduces memory footprint while allowing for highly versatile AI agent deployment. For engineers building specialized AI tools, this modular approach provides an efficient pathway to handle complex, parallel inference tasks without exhausting server capacity. The core takeaway is that by decoupling the primary weights from the task-specific logic, builders can scale support for multiple capabilities simultaneously, effectively turning memory optimization into a competitive advantage for deploying cost-effective, multi-functional agentic backends."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "コスト・API料金",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-06T00:02:22.570Z"
   },
   {
     "id": "art-1793923336114-k3o60",
@@ -25585,32 +25636,6 @@
     "created_at": "2026-11-03T23:31:44.227Z"
   },
   {
-    "id": "art-1793748201780-vkcys",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/hathibei7/items/55fc36e7b5f6467cef47",
-    "published_at": "2026-11-03T23:09:42.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUl0YnZta3UyQl9XaG9WTnhQX2VEM0pzZXR5M1JDVHNNOFhTa2NuQm5tc2IlM0RzNTAtbW8_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTkzMzZiYzE3YTMwMDUyNzBhNjUxNmY4OTUwNzY1ODNm%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dfe5a857561ca83f8bc614d62084bd909?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODMlQkIlRTMlODIlQUYlRTMlODMlQTklRTMlODIlQTYlRTMlODMlODklMjAlRTMlODIlQTIlRTMlODMlODMlRTMlODMlOTclRTMlODMlODclRTMlODMlQkMlRTMlODMlODglRTMlODElQkUlRTMlODElQTglRTMlODIlODElRUYlQkMlODgyMDI2JTJGMTElMkYwNCVFRiVCQyU4OSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTdmMDRhNzc4NDY0YzFiNDJmYzI4MGQwZjMxNTE3OTIx&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBoYXRoaWJlaTcmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0wZWNjNzg1ZmU4MTZhYzhhMGQ2NDI5YmZjOTFkMWY0Mg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4154dcb0d26317fdeb4ebdb358d20ea6",
-    "title_ja": "OpenAI、バグバウンティ報酬を平均4倍超へ引き上げ――重大・高リスク脆弱性の報告を加速させAIセキュリティ強化を狙う",
-    "summary_ja": "OpenAIは、AIプラットフォームのセキュリティを強化するため、バグバウンティプログラムの報酬額を大幅に改定した。 中・高・重大な各等級の報酬レンジ中央値を平均で4倍以上に引き上げ、さらに最高位である「例外的な発見」に対する報奨金枠も拡大している。 今回の報酬増額は、悪意ある攻撃者が脆弱性をブラックマーケットで売却する動機を削ぎ、セキュリティリサーチャーがOpenAIのエコシステムへ報告するインセンティブを強固にすることが狙いだ。",
-    "translations": {
-      "ja": {
-        "title": "OpenAI、バグバウンティ報酬を平均4倍超へ引き上げ――重大・高リスク脆弱性の報告を加速させAIセキュリティ強化を狙う",
-        "summary": "OpenAIは、AIプラットフォームのセキュリティを強化するため、バグバウンティプログラムの報酬額を大幅に改定した。 中・高・重大な各等級の報酬レンジ中央値を平均で4倍以上に引き上げ、さらに最高位である「例外的な発見」に対する報奨金枠も拡大している。 今回の報酬増額は、悪意ある攻撃者が脆弱性をブラックマーケットで売却する動機を削ぎ、セキュリティリサーチャーがOpenAIのエコシステムへ報告するインセンティブを強固にすることが狙いだ。"
-      },
-      "en": {
-        "title": "OpenAI hikes bug bounty payouts by over 4x on average to accelerate vulnerability detection and harden AI infrastructure",
-        "summary": "OpenAI has significantly overhauled its bug bounty program, increasing the median payouts for medium, high, and critical vulnerability tiers by more than four times on average. The update also expands the top-tier cap for \"exceptional\" findings, signaling an aggressive push to incentivize elite security researchers to report vulnerabilities directly to the company rather than selling them on black markets. By aligning bounty rewards with current market rates for exploit discovery, OpenAI aims to harden its infrastructure against emerging AI-specific threats. For builders and platform owners, the core lesson is that securing a production-grade AI service requires active, competitive incentivization of external security researchers to identify flaws before malicious actors can exploit them in the wild."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発"
-    ],
-    "created_at": "2026-11-03T23:23:21.780Z"
-  },
-  {
     "id": "art-1793748103617-jj36z",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -30629,32 +30654,6 @@
       "開発"
     ],
     "created_at": "2026-11-02T22:46:42.991Z"
-  },
-  {
-    "id": "art-1793658787229-ee1j8",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ithibo/articles/notion-external-memory",
-    "published_at": "2026-11-02T12:19:09.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--mxUCxrNm--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25A8%2598%25E6%2586%25B6%25E3%2581%258C%25E9%25A3%259B%25E3%2582%2593%25E3%2581%25A7%25E3%2582%2582%25E5%25BF%2598%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584AI%25E3%2581%25AE%25E8%25A9%25B1%2520%25E2%2580%2594%2520%25E8%25A4%2587%25E6%2595%25B0AI%25C3%2597Notion%25E3%2581%25A7%25E3%2580%258C%25E5%25A4%2596%25E9%2583%25A8%25E8%25A8%2598%25E6%2586%25B6%25E3%2580%258D%25E3%2582%2592%25E9%2581%258B%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25E3%2581%2597%25E3%2581%258F%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%25AB%25E3%2583%258A%25EF%25BC%25BBEidosFrontier%25E5%25BA%2583%25E5%25A0%25B1%25EF%25BC%25BD%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJkMTljM2U2NDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェントが文脈を忘れても業務が止まらない：Notionを「外部記憶」として活用するワークフローと構築手法",
-    "summary_ja": "AIエージェントの会話文脈が圧縮され過去の記憶が消失する問題を、Notionを「外部記憶装置」として統合することで解決する手法が注目されている。 MetaのAIエージェント「Muse」の広報担当ルナは、作業記録や決定事項をNotionにリアルタイム同期させることで、コンテキストウィンドウの制限を回避し、継続的な業務遂行を実現した。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントが文脈を忘れても業務が止まらない：Notionを「外部記憶」として活用するワークフローと構築手法",
-        "summary": "AIエージェントの会話文脈が圧縮され過去の記憶が消失する問題を、Notionを「外部記憶装置」として統合することで解決する手法が注目されている。 MetaのAIエージェント「Muse」の広報担当ルナは、作業記録や決定事項をNotionにリアルタイム同期させることで、コンテキストウィンドウの制限を回避し、継続的な業務遂行を実現した。"
-      },
-      "en": {
-        "title": "How to prevent AI agent amnesia by integrating Notion as a persistent external memory layer for continuous task execution",
-        "summary": "AI agents frequently face the limitation of context compression, where long conversations cause the model to lose track of earlier instructions or decisions. To solve this, developers are now using Notion as a persistent 'external memory' layer, allowing agents like Meta's Muse to sync crucial task states and work history outside the volatile conversation window. By offloading critical context to a structured database, the agent can resume work seamlessly even after the model's memory resets. This architecture demonstrates that for builders shipping autonomous AI agents, relying solely on LLM context windows is insufficient; integrating an external state-management workflow ensures that long-running tasks remain consistent, reliable, and immune to the inherent token-limit constraints of modern AI models."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-02T22:33:07.229Z"
   },
   {
     "id": "art-1793658780497-bjutw",
