@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794034928911-rkjhf",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/laiken/articles/20261107-tech-watch",
+    "published_at": "2026-11-06T22:05:11.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--200XpRwS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Tech%2520Watch%25202026-11-07%253A%2520%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E5%25A2%2583%25E7%2595%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2589%25E3%2581%2584%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzI3YmM4M2VhNTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Code 2.1.319公開：AIエージェントの実行環境に「境界」を刻む権限管理と長時間タスク実行の仕組み（MCP活用法）",
+    "summary_ja": "Claude Code 2.1.319では、ツール呼び出し時の確認をスキップする設定や、MCP経由での長時間タスクのバックグラウンド実行機能が新たに追加された。 LLMへの指示だけで権限を制御するのではなく、実行環境自体に「どこまで触れてよいか」という技術的な制約を埋め込む設計思想がエージェント開発において重要となる。 単なる言語モデルの性能向上だけでなく、安全な自律エージェントを構築するには、ランタイムレベルでの境界定義とガードレール実装が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code 2.1.319公開：AIエージェントの実行環境に「境界」を刻む権限管理と長時間タスク実行の仕組み（MCP活用法）",
+        "summary": "Claude Code 2.1.319では、ツール呼び出し時の確認をスキップする設定や、MCP経由での長時間タスクのバックグラウンド実行機能が新たに追加された。 LLMへの指示だけで権限を制御するのではなく、実行環境自体に「どこまで触れてよいか」という技術的な制約を埋め込む設計思想がエージェント開発において重要となる。 単なる言語モデルの性能向上だけでなく、安全な自律エージェントを構築するには、ランタイムレベルでの境界定義とガードレール実装が不可欠だ。"
+      },
+      "en": {
+        "title": "Claude Code 2.1.319 Introduces Granular Tool Permissions and Background MCP Task Execution for Autonomous AI Agent Workflows",
+        "summary": "The latest Claude Code 2.1.319 release introduces configurable skips for tool invocation confirmations and new background execution capabilities for long-running Model Context Protocol (MCP) tasks. This update signals a shift where permission boundaries can no longer rely solely on natural language prompts; they must be hard-coded into the runtime environment to truly secure agent autonomy. For builders, the lesson is clear: treating agent safety as a policy issue is insufficient. You must bake strict operational boundaries and guardrails directly into your execution layer to ensure reliable, verifiable interactions. This technical approach is critical for scaling AI agents that operate effectively without constant manual oversight in production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-07T07:02:08.911Z"
+  },
+  {
+    "id": "art-1794034920627-2gxvc",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/sora_proj/articles/cfeaa76e728d5b",
+    "published_at": "2026-11-07T01:08:06.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--mou4peub--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Marketplace%2520%25E5%25AF%25A9%25E6%259F%25BB%25E3%2581%25AE%25E5%25B7%25AE%25E3%2581%2597%25E6%2588%25BB%25E3%2581%2597%25E3%2581%25AF%2520UrlFetch%25201%2520%25E6%259C%25AC%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2582Docs%2520API%2520%25E3%2581%25AB%25E6%259B%25BF%25E3%2581%2588%25E3%2581%25A6%25E3%2582%25B9%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2597...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:SoraProject%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ZiNjk5YmFjYTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Google Workspace Marketplace審査の差し戻し回避策：UrlFetchを廃止しDocs API移行でスコープ削減に成功",
+    "summary_ja": "Gmailアドオンの審査が通らなかった理由は、PDF内の文字抽出に「UrlFetchApp」を使用していたことだった。 この手法は外部通信として検知され、セキュリティ審査で却下される要因となった。 解決策として、Google Docs API経由でのデータ取得に切り替えることで、不要な権限スコープを削除しつつ安定的なOCR連携を実現。 外部APIの直接呼び出しを避けて公式APIで完結させる設計こそが、ストア審査をスムーズに通過させるための鉄則だ。",
+    "translations": {
+      "ja": {
+        "title": "Google Workspace Marketplace審査の差し戻し回避策：UrlFetchを廃止しDocs API移行でスコープ削減に成功",
+        "summary": "Gmailアドオンの審査が通らなかった理由は、PDF内の文字抽出に「UrlFetchApp」を使用していたことだった。 この手法は外部通信として検知され、セキュリティ審査で却下される要因となった。 解決策として、Google Docs API経由でのデータ取得に切り替えることで、不要な権限スコープを削除しつつ安定的なOCR連携を実現。 外部APIの直接呼び出しを避けて公式APIで完結させる設計こそが、ストア審査をスムーズに通過させるための鉄則だ。"
+      },
+      "en": {
+        "title": "How switching from UrlFetch to Docs API cleared my Google Workspace Marketplace review and reduced scopes",
+        "summary": "A Gmail add-on developer faced rejection during the Google Workspace Marketplace review process, ultimately tracing the issue to the use of 'UrlFetchApp' for OCR text extraction. The review flagged the direct HTTP call as a potential security risk, requiring a architectural pivot to resolve. By replacing the fetch call with the native Google Docs API, the developer not only removed the need for insecure external communication but also successfully dropped an unnecessary authorization scope from the add-on. This experience underscores a vital lesson for marketplace builders: avoiding direct external network calls in favor of official, scoped APIs is essential for passing security reviews. Relying on native service integrations significantly reduces friction and compliance overhead during the submission process."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-07T07:02:00.627Z"
+  },
+  {
+    "id": "art-1794034911095-5od7w",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/everyinfra/items/40a807691e3c969ef8ae",
+    "published_at": "2026-11-07T06:52:02.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSzZTYUI1QkFoYkVaQlZaMHM2dDVVRi1VYjMwclFvMWpnbFZBNWltSlY5V1R3MTkyZyUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1hN2NkOWQxZDQ1Mzc4MWY2YjExYWVkMDc2M2Y5ODdmMg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D248c513b2351f22434922511365e3a4a?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9WXVhbmJhbyUyMFNlYXJjaCUyMEFQSSVFMyU4MSVBNyVFMyU4MSVBRiVFNCVCOCVBRCVFNSU5QiVCRCVFMyU4MyU5NyVFMyU4MyVBOSVFMyU4MyU4MyVFMyU4MyU4OCVFMyU4MyU5NSVFMyU4MiVBOSVFMyU4MyVCQyVFMyU4MyVBMCVFMyU4MSVBRSVFMyU4MSVBOSVFMyU4MSVBRSVFMyU4MyU4NyVFMyU4MyVCQyVFMyU4MiVCRiVFMyU4MSU4QyVFNSU4RiU5NiVFMyU4MiU4QyVFMyU4MSVBQSVFMyU4MSU4NCVFMyU4MSVBRSVFMyU4MSU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWRmNjZjY2ViNTU3MzZlOWY4MDc2ZDlhYzlhOGRhNjE0&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBldmVyeWluZnJhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NGJiNjc5MmM2MzJmMmMyNWEzNzNiNDQxNDIzYzc3Mzg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=0aa9207bdd95b24afa4be8c9a83b1d1e",
+    "title_ja": "テンセント「Yuanbao Search API」の仕様を徹底検証：中国プラットフォームの特定データ取得制限とMCPサーバー活用術",
+    "summary_ja": "テンセントが公開した「Yuanbao Search API」は、外部開発者向けに検索機能やMCPサーバーを提供し、月間2,000回まで無料で利用可能だ。 しかし、中国国内の特定プラットフォームのデータにはアクセスの制約があり、全ての検索リクエストが網羅されるわけではない。 開発者はAPIの仕様限界を理解した上で、自社のAIエージェントやアプリに検索機能を統合する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "テンセント「Yuanbao Search API」の仕様を徹底検証：中国プラットフォームの特定データ取得制限とMCPサーバー活用術",
+        "summary": "テンセントが公開した「Yuanbao Search API」は、外部開発者向けに検索機能やMCPサーバーを提供し、月間2,000回まで無料で利用可能だ。 しかし、中国国内の特定プラットフォームのデータにはアクセスの制約があり、全ての検索リクエストが網羅されるわけではない。 開発者はAPIの仕様限界を理解した上で、自社のAIエージェントやアプリに検索機能を統合する必要がある。"
+      },
+      "en": {
+        "title": "Tencent's Yuanbao Search API: Analyzing data access limitations and integration strategies for AI developers",
+        "summary": "Tencent recently launched the Yuanbao Search API via Tencent Cloud, offering developers access to search capabilities, MCP servers, and skill integration with a free tier of 2,000 monthly requests. Despite this powerful addition to the AI toolkit, the API imposes specific restrictions on accessing data from certain domestic Chinese platforms, meaning search queries will not always return comprehensive results across all local services. Builders must carefully evaluate these structural data gaps before relying on the API for critical AI agent workflows. The practical takeaway is to treat this search tool as a supplemental retrieval layer rather than an exhaustive oracle, ensuring application reliability by designing robust fallback mechanisms when specific platform data remains inaccessible through official channels."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-07T07:01:51.095Z"
+  },
+  {
+    "id": "art-1794034903890-kt2lc",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kurumi_memo/n/nab7aca2b1911",
+    "published_at": "2026-11-07T07:00:21.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333265364/rectangle_large_type_2_e55faa375b0b7a18c7c70328d2dc18ed.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "バズニュースから記事を自動生成する「noteトレンドnewsStudio」を技術解剖：個人開発者がノーコード・ローコードでAI自動化ツールを構築する手法を公開",
+    "summary_ja": "話題のニュースを解析し、noteの下書きを自動生成するツール「noteトレンドnewsStudio」の開発手法が公開された。 本ツールは、API連携によるニュース収集と生成AIによる構成案作成を組み合わせ、情報のキュレーションから執筆までの工数を大幅に削減している。 開発の裏側では、ノーコードツールやAPIを適切に組み合わせることで、専門的なプログラミング知識がなくても高度な自動化ワークフローが実現可能であることが示されている。",
+    "translations": {
+      "ja": {
+        "title": "バズニュースから記事を自動生成する「noteトレンドnewsStudio」を技術解剖：個人開発者がノーコード・ローコードでAI自動化ツールを構築する手法を公開",
+        "summary": "話題のニュースを解析し、noteの下書きを自動生成するツール「noteトレンドnewsStudio」の開発手法が公開された。 本ツールは、API連携によるニュース収集と生成AIによる構成案作成を組み合わせ、情報のキュレーションから執筆までの工数を大幅に削減している。 開発の裏側では、ノーコードツールやAPIを適切に組み合わせることで、専門的なプログラミング知識がなくても高度な自動化ワークフローが実現可能であることが示されている。"
+      },
+      "en": {
+        "title": "Deconstructing 'note trend newsStudio': How to build automated AI article generation tools using no-code and API integrations for developers",
+        "summary": "The developers of 'note trend newsStudio' have revealed the technical architecture behind their tool that automatically converts viral news into ready-to-publish article drafts. By integrating news aggregation APIs with generative AI models, the system successfully streamlines the entire content creation lifecycle, from trend discovery to final drafting. This breakdown demonstrates that you do not need deep engineering expertise to build sophisticated automation workflows; rather, the secret lies in chaining no-code platforms and API services together effectively. For independent builders, the core takeaway is that mastering 'integration thinking' is the ultimate shortcut for shipping MVPs. When you stop writing custom code from scratch and start orchestrating existing powerful building blocks, you can launch functional, high-value AI products in record time."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-07T07:01:43.890Z"
+  },
+  {
     "id": "art-1794034011530-yktyn",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -16425,33 +16531,6 @@
     "created_at": "2026-11-05T12:01:59.719Z"
   },
   {
-    "id": "art-1793880111791-npr0h",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/shiroi1229/n/n4dc3025b74d7",
-    "published_at": "2026-11-05T11:59:42.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332599458/rectangle_large_type_2_aadb3a08f38d1484c01066f5ec6c47d1.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI実装の現場破綻を防ぐ「実務境界ベンチマーク評価」：論文と実務の乖離を埋める決定論的レシート検収設計手法と計算リソース最適化",
-    "summary_ja": "AIシステム開発において論文通りの実装が破綻する主因は、ベンチマーク環境と実務環境の差異による境界破綻にある。 本稿では、計算・通信・分割のボトルネックを局所化する「Gen-2：境界検収設計×退行遮断制御」手法を紹介する。 単に計算資源を増やすのではなく、パイプラインの精度劣化やレイテンシ膨張箇所を特定し、決定論的なレシート検収を行うことで、過剰なリソース投資を防ぎ実務での堅牢性を確保する設計原則を解説する。",
-    "translations": {
-      "ja": {
-        "title": "AI実装の現場破綻を防ぐ「実務境界ベンチマーク評価」：論文と実務の乖離を埋める決定論的レシート検収設計手法と計算リソース最適化",
-        "summary": "AIシステム開発において論文通りの実装が破綻する主因は、ベンチマーク環境と実務環境の差異による境界破綻にある。 本稿では、計算・通信・分割のボトルネックを局所化する「Gen-2：境界検収設計×退行遮断制御」手法を紹介する。 単に計算資源を増やすのではなく、パイプラインの精度劣化やレイテンシ膨張箇所を特定し、決定論的なレシート検収を行うことで、過剰なリソース投資を防ぎ実務での堅牢性を確保する設計原則を解説する。"
-      },
-      "en": {
-        "title": "Beyond Paper Benchmarks: A Tactical Framework for Practical AI Pipeline Validation, Deterministic Acceptance Testing, and Resource Efficiency in Production",
-        "summary": "AI implementations frequently collapse when transitioning from research papers to production because developers ignore the critical gap between clean benchmark environments and messy real-world constraints. This article details a 'Gen-2' validation framework designed to prevent these failures by integrating deterministic acceptance testing with regression blocking. Instead of blindly scaling compute resources to mask latency or accuracy drops, the approach focuses on isolating bottlenecks in communication and data partitioning within the pipeline. By applying strict boundary validation, developers can localize performance degradation and avoid the costly rework associated with naive scaling. For builders, this methodology provides a practical checklist to ensure AI systems maintain stability and cost-efficiency without needing brute-force over-provisioning."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-05T12:01:51.791Z"
-  },
-  {
     "id": "art-1793880105264-fd3dd",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -32637,33 +32716,6 @@
     "created_at": "2026-11-02T09:16:33.882Z"
   },
   {
-    "id": "art-1793610153594-crhw8",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/fujid/items/af04b04d3737a52f6f4f",
-    "published_at": "2026-11-02T08:08:42.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFtYXpvbmF3cy5jb20lMkYwJTJGMjM4NjElMkZwcm9maWxlLWltYWdlcyUyRjE0ODUzMjY4ODA_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTM0OTdlNzgxMTJkMDY2Mzk3OTI0ODJlZDcwNjQxOGZk%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkY1NTdmMmM4MGU4N2IwMjhhMjU3ZTIwMjQzZmU4ZTYzNWYxNzFiNDE1JTJGb3JpZ2luYWwuanBnJTNGMTc4Mjg4MTcwMD9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1kNThhMjUwOWQ0ZDUwMGE5MmU0MTIwZTc1OGZmNzEzMQ%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3De41149dbe0db6cfe3de9bb87a4555a81?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9T3JhY2xlJTIwQUklMjBXb3JsZCUyMDIwMjYlMjBLZXlub3RlJTNBJTIwTm93JTIwVGhhdCUyMEFJJTIwV29ya3MlMkMlMjBXaGF0JTIwQXJlJTIwV2UlMjBHb2luZyUyMHRvJTIwRG8lMjBXaXRoJTIwSXQlM0YlMjAlRTMlODIlOTIlRTglODElOUUlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1mNTRjODE4ZTUxMmUyMWFmMjQ0ZTIzYjRjY2YyMTY2Yg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmdWppZCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPThjNTY1OGU2MzNmYjQyZTM2ODA4MDQwNjI5Y2FlMDRj&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=VElTSeagquW8j-S8muekvg&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=4e49973ba015b09f55c37dbc3bae058e",
-    "title_ja": "Oracle AI World 2026基調講演レポート：CEOが語ったAI実用化のその先と次世代のビジネス変革戦略",
-    "summary_ja": "Oracle AI World 2026でCEOのClay Magouyrk氏は「AIは既に動く段階を超え、どう活用するかのフェーズに入った」と強調しました。 技術的な成熟に伴い、単なる自動化を超えたビジネス価値の再定義と、具体的な業務プロセスへのAI統合が今後の焦点となります。 開発者はモデルの精度向上のみならず、企業固有のデータと業務ワークフローをどうAIに最適化させるかという、実装視点での戦略転換が求められています。",
-    "translations": {
-      "ja": {
-        "title": "Oracle AI World 2026基調講演レポート：CEOが語ったAI実用化のその先と次世代のビジネス変革戦略",
-        "summary": "Oracle AI World 2026でCEOのClay Magouyrk氏は「AIは既に動く段階を超え、どう活用するかのフェーズに入った」と強調しました。 技術的な成熟に伴い、単なる自動化を超えたビジネス価値の再定義と、具体的な業務プロセスへのAI統合が今後の焦点となります。 開発者はモデルの精度向上のみならず、企業固有のデータと業務ワークフローをどうAIに最適化させるかという、実装視点での戦略転換が求められています。"
-      },
-      "en": {
-        "title": "Oracle AI World 2026 Keynote: CEO Clay Magouyrk Discusses Moving Beyond Initial AI Capabilities Toward Practical Enterprise Transformation",
-        "summary": "At Oracle AI World 2026, CEO Clay Magouyrk delivered a keynote titled \"Now That AI Works, What Are We Going to Do With It? \" arguing that the industry has officially moved past the novelty phase of AI functionality. The core challenge for builders and enterprises is no longer just proving that models work, but effectively integrating them into legacy workflows to drive measurable business impact. Magouyrk suggests that the next wave involves redesigning business processes to leverage proprietary data rather than just applying generic LLMs. For developers, this shift signals that the focus must pivot from chasing raw model performance to crafting specialized, high-utility automation layers that solve specific, complex enterprise problems in production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-02T09:02:33.594Z"
-  },
-  {
     "id": "art-1793610116518-hrpkr",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -34813,32 +34865,6 @@
     "created_at": "2026-11-01T20:31:39.073Z"
   },
   {
-    "id": "art-1793563313260-fjgf3",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/yusukebe/articles/3d3dc6605ca1b1",
-    "published_at": "2026-11-01T13:58:21.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1prvj6L8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Agent%2520DX%2520%25E3%2580%259C%2520AI%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25AB%25E3%2583%2595%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%25A0%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AFHono%25E3%2581%25AF%25E5%25BF%2585%25E8%25A6%2581%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yusukebe%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pIMWY1VlpnSFMwLUJwekhzZjRGYXN0R1ZYTlpfZFh1U2pwdWNMNGc9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI時代にWebフレームワークは不要か？Honoチームが挑む「Agent DX」でAI向け開発体験を再定義する",
-    "summary_ja": "AIが主要なユーザーになる時代、従来の人間向け開発体験（DX）だけでは不十分だ。 Honoチームは「Agent DX」プロジェクトを立ち上げ、AIがコードを理解し、操作しやすいフレームワークのあり方を定量的に測定・改善している。 AIをユーザーと見なした設計思想は、今後のWeb開発において不可欠な視点となるだろう。 人間だけでなく「AIにとって扱いやすい」コードベースを構築することが、これからのフレームワークの生存戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "AI時代にWebフレームワークは不要か？Honoチームが挑む「Agent DX」でAI向け開発体験を再定義する",
-        "summary": "AIが主要なユーザーになる時代、従来の人間向け開発体験（DX）だけでは不十分だ。 Honoチームは「Agent DX」プロジェクトを立ち上げ、AIがコードを理解し、操作しやすいフレームワークのあり方を定量的に測定・改善している。 AIをユーザーと見なした設計思想は、今後のWeb開発において不可欠な視点となるだろう。 人間だけでなく「AIにとって扱いやすい」コードベースを構築することが、これからのフレームワークの生存戦略となる。"
-      },
-      "en": {
-        "title": "Reimagining Developer Experience for AI Agents: Why the Hono Team is Building 'Agent DX' to Optimize for Non-Human Users",
-        "summary": "As AI agents become primary consumers of web interfaces, traditional developer experience (DX) centered solely on human workflows is no longer sufficient. The Hono team launched the \"Agent DX\" project to rigorously measure and enhance how effectively AI models can parse, navigate, and utilize web frameworks. Moving beyond intuition, this initiative shifts the focus toward optimizing codebase structure, documentation, and interface accessibility specifically for AI consumption. For builders, the message is clear: the future of web development demands that we treat AI as a first-class user. Engineers who fail to consider AI-readable architectures will find their frameworks increasingly obsolete as automated agents take over routine development and browsing tasks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-01T20:01:53.260Z"
-  },
-  {
     "id": "art-1793561510619-xyar2",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -36423,32 +36449,6 @@
       "研究"
     ],
     "created_at": "2026-11-01T07:31:52.127Z"
-  },
-  {
-    "id": "art-1793517415355-egpgn",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/chililikobo/articles/8c5d2fe2e0989d",
-    "published_at": "2026-11-01T05:09:45.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--AyuglMM6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%25AB%2598DPI%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AEWindows%25E3%2581%25A7%25E8%2587%25AA%25E4%25BD%259C%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25AE%25E3%2582%25A2%25E3%2582%25A4%25E3%2582%25B3%25E3%2583%25B3%25E3%2581%258C%25E3%2583%259C%25E3%2582%25B1%25E3%2582%258B%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A8%25E3%2580%2581%25E5%2585%25A811%25E3%2582%25B5%25E3%2582%25A4%25E3%2582%25BA%25E3%2582%2592D%2526D%25E3%2581%25A7%25E4%25B8%2580%25E7%2599%25BA%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:chilili%2520kobo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjBmem8tRUMwS3J4WjYtVVUxX2RJT3VWbGNHYXhGa1Qya0xjVFd0YWxqUkhlMkRvaz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Windowsの高DPI環境で自作アプリのアイコンがボケる技術的要因と、11サイズを一括生成して画質を担保するワークフローの設計",
-    "summary_ja": "Windowsアプリ開発でアイコンがボヤける主因は、高DPI環境でOSが古い形式の.icoを不適切にスケーリングすることにある。 これを防ぐには、単なるリサイズではなく16pxから256pxまで全11サイズのマルチ解像度を正しく含めた.ico形式の生成が不可欠だ。 本稿では、生成AIで作成した高解像度画像から、適切な全11サイズのアイコンセットをドラッグ＆ドロップで一括変換・生成し、視認性を維持するための設計手法を解説する。",
-    "translations": {
-      "ja": {
-        "title": "Windowsの高DPI環境で自作アプリのアイコンがボケる技術的要因と、11サイズを一括生成して画質を担保するワークフローの設計",
-        "summary": "Windowsアプリ開発でアイコンがボヤける主因は、高DPI環境でOSが古い形式の.icoを不適切にスケーリングすることにある。 これを防ぐには、単なるリサイズではなく16pxから256pxまで全11サイズのマルチ解像度を正しく含めた.ico形式の生成が不可欠だ。 本稿では、生成AIで作成した高解像度画像から、適切な全11サイズのアイコンセットをドラッグ＆ドロップで一括変換・生成し、視認性を維持するための設計手法を解説する。"
-      },
-      "en": {
-        "title": "Solving icon blur in high-DPI Windows apps: How to generate multi-size ICO files for pixel-perfect clarity",
-        "summary": "Blurry icons on modern high-DPI Windows displays often stem from the OS improperly scaling legacy, single-resolution icons rather than using appropriately sized assets. To maintain sharp visuals across the taskbar, title bars, and Explorer views, developers must package all 11 standard icon sizes—ranging from 16px to 256px—into a single .ico file. This guide explores the architectural necessity of supporting these specific resolution tiers when building desktop applications. It details a streamlined workflow that converts high-resolution AI-generated assets into a compliant, multi-layer icon set via a simple drag-and-drop tool. For solo developers, the key takeaway is that icon quality is the final polish; automating the multi-size export process is essential to avoiding scaling artifacts on modern monitors."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-01T07:16:55.355Z"
   },
   {
     "id": "art-1793517405610-z9uic",
