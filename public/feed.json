@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1794015142054-rkfrl",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://zenodo.org/records/23686384",
+    "published_at": "2026-11-06T23:02:16.000Z",
+    "og_image_url": null,
+    "title_ja": "LLMとの対話における「一貫性」と「正確性」の乖離：なぜ滑らかな回答が事実誤認を招くのか、最新の分析レポートが提起する課題",
+    "summary_ja": "大規模言語モデル（LLM）は対話の論理性や文体の一貫性を保つ能力に長けているが、それが必ずしも事実の正確性を担保するわけではない。 最新の研究レポートは、LLMが非常に説得力のあるトーンで誤情報を生成する「ハルシネーション」のメカニズムを分析し、一貫性の高さが逆にユーザーの疑念を削ぐ危険性を指摘している。 開発者はLLMの出力を鵜呑みにせず、外部データソースによる検証やRAG構築時のガードレール設計を最優先すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "LLMとの対話における「一貫性」と「正確性」の乖離：なぜ滑らかな回答が事実誤認を招くのか、最新の分析レポートが提起する課題",
+        "summary": "大規模言語モデル（LLM）は対話の論理性や文体の一貫性を保つ能力に長けているが、それが必ずしも事実の正確性を担保するわけではない。 最新の研究レポートは、LLMが非常に説得力のあるトーンで誤情報を生成する「ハルシネーション」のメカニズムを分析し、一貫性の高さが逆にユーザーの疑念を削ぐ危険性を指摘している。 開発者はLLMの出力を鵜呑みにせず、外部データソースによる検証やRAG構築時のガードレール設計を最優先すべきだ。"
+      },
+      "en": {
+        "title": "The Divergence Between Coherence and Accuracy in LLM Interactions: Why Fluid Responses Mask Misinformation and How Developers Should Respond",
+        "summary": "Large Language Models excel at maintaining conversational logic and stylistic consistency, but this coherence does not inherently guarantee factual accuracy. A recent research analysis highlights how LLMs can generate hallucinations with a highly persuasive, confident tone, creating a dangerous trap where fluid responses lull users into accepting false information as fact. The study suggests that high coherence often lowers user skepticism, exacerbating the impact of errors. For builders integrating these models into production workflows, the core takeaway is clear: never treat LLM output as ground truth. Engineers must prioritize robust RAG verification pipelines and explicit guardrails rather than relying on the model's inherent eloquence to serve as a proxy for actual knowledge."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-07T01:32:22.054Z"
+  },
+  {
+    "id": "art-1794015135376-8psg4",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/jessica1007/articles/77ae5da0076c37",
+    "published_at": "2026-11-07T00:39:33.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--iHV4OGS6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%259F%25B3%25E6%25A5%25BD%25E7%2594%259F%25E6%2588%2590%25E3%2581%25AE%25E9%2581%2585%25E5%25BB%25B6%25E3%2581%25A8GPU%25E3%2582%25B8%25E3%2583%25A7%25E3%2583%2596%25E9%2581%2585%25E5%25BB%25B6%25E3%2582%2592%25E6%25B7%25B7%25E3%2581%259C%25E3%2581%25AA%25E3%2581%2584%25E7%259F%25AD%25E3%2581%2584%25E8%25A8%25AD%25E8%25A8%2588%25E3%2583%25A1%25E3%2583%25A2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Jessica%2520AI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3Nhby1QNUtHLWVYYUZWOHNuTlNpaTk3SU9vVDYzZGpqZU83cUotU0lrck5iRzc3VT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "音楽生成AIの遅延は「アプリ」か「GPU基盤」か？トラブル切り分けを迅速化する設計メモと監視の鉄則",
+    "summary_ja": "音楽生成ツールで「生成が終わらない」際に、アプリ層とGPUジョブ層を混同すると原因究明が長期化する。 実務では感情を排し、生成プロダクトの経路とGPUホストの状態を独立して評価する設計が必要だ。 日常的にはgetstatus.aiのような統合監視ツールを活用し、TCP/TLSや応答傾向を一箇所で可視化しておくことで、突発的な障害発生時の切り分け時間を大幅に短縮できる。 開発者は、自身のサービスと依存先APIの稼働状態を切り離して管理する視点が不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "音楽生成AIの遅延は「アプリ」か「GPU基盤」か？トラブル切り分けを迅速化する設計メモと監視の鉄則",
+        "summary": "音楽生成ツールで「生成が終わらない」際に、アプリ層とGPUジョブ層を混同すると原因究明が長期化する。 実務では感情を排し、生成プロダクトの経路とGPUホストの状態を独立して評価する設計が必要だ。 日常的にはgetstatus.aiのような統合監視ツールを活用し、TCP/TLSや応答傾向を一箇所で可視化しておくことで、突発的な障害発生時の切り分け時間を大幅に短縮できる。 開発者は、自身のサービスと依存先APIの稼働状態を切り離して管理する視点が不可欠である。"
+      },
+      "en": {
+        "title": "Debugging AI Music Generation Latency: Why Builders Must Isolate App-Layer Delays from GPU Infrastructure Bottlenecks",
+        "summary": "When music generation tools stall, conflating application-layer latency with GPU job backlogs only slows down critical incident resolution. Practical engineering requires separating your product request path from the underlying GPU host status to identify bottlenecks clearly. Builders should leverage aggregated status monitoring tools like getstatus.ai to track TCP/TLS handshakes and HTTP response patterns in one dashboard, rather than treating all slowness as a generic 'AI model' problem. By maintaining a clean mental and technical separation between your SaaS app and its GPU dependencies, you can instantly isolate whether a delay originates in your API gateway or the compute layer. This distinction is the key to preventing cascading outages and keeping generative AI pipelines responsive during high traffic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-07T01:32:15.376Z"
+  },
+  {
+    "id": "art-1794015113066-gp90a",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/NaokiIshimura/items/4884c18ed0efc432edc9",
+    "published_at": "2026-11-07T01:10:18.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMTQxOTM0JTJGcHJvZmlsZS1pbWFnZXMlMkYxNzkwNjA1Mjk2P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz01YTlmODFiOTNiYWFlYWYyNThjOTcwM2Y0OGM5NTMxYw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db29ef63ef453773a43a04d2b352fffa0?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFOSU5NiU4QiVFNyU5OSVCQSVFOCU4MCU4NSVFMyU4MSU4QyVFNiVCMyVBOCVFNyU5QiVBRSVFMyU4MSU5NyVFMyU4MSVBNiVFMyU4MSU4NCVFMyU4MiU4QjUlRTMlODElQTQlRTMlODElQUUlRTMlODIlQTIlRTMlODMlODMlRTMlODMlOTclRTMlODMlODclRTMlODMlQkMlRTMlODMlODglRUYlQkMlODh2Mi4xLjMxNyUyMC0lMjB2Mi4xLjMxOSVFRiVCQyU4OSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTY5NGJkYjUwYTMwNGQ2MTIyM2Q2NDMyNTkwNWYzMmZk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBOYW9raUlzaGltdXJhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MDUxZDlkODk1NWI0MDI2OGE2MjJkN2Q4NGQxYzdhNTU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b79a052f4b64542a7dc5e628b4fcce65",
+    "title_ja": "Claude Code最新アップデートv2.1.317〜v2.1.319を徹底解説：開発効率を劇的に高める5つの重要改善機能とは",
+    "summary_ja": "Claude Codeの最新リリースv2.1.317からv2.1.319までに実装された変更点の中から、開発実務への影響力が特に大きい5つのアップデートを詳細に分析する。 特にパーミッション設定の柔軟な制御や実行環境の最適化など、エンジニアが意識すべき機能強化のポイントを深掘りする。 網羅的な更新情報を追うだけでなく、なぜそれらの変更が開発者の生産性を変えるのかという核心に迫り、日々のコーディング作業における活用戦略を提示する。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code最新アップデートv2.1.317〜v2.1.319を徹底解説：開発効率を劇的に高める5つの重要改善機能とは",
+        "summary": "Claude Codeの最新リリースv2.1.317からv2.1.319までに実装された変更点の中から、開発実務への影響力が特に大きい5つのアップデートを詳細に分析する。 特にパーミッション設定の柔軟な制御や実行環境の最適化など、エンジニアが意識すべき機能強化のポイントを深掘りする。 網羅的な更新情報を追うだけでなく、なぜそれらの変更が開発者の生産性を変えるのかという核心に迫り、日々のコーディング作業における活用戦略を提示する。"
+      },
+      "en": {
+        "title": "Deep dive: 5 critical Claude Code updates from v2.1.317 to v2.1.319 that every developer needs to know",
+        "summary": "This breakdown explores five high-impact updates released in Claude Code versions v2.1.317 through v2.1.319, focusing on changes that fundamentally shift developer workflows. We go beyond simple changelogs to analyze the practical utility behind specific enhancements, such as finer-grained permission controls and optimized execution environments. By examining why these specific improvements were prioritized, we uncover how they solve real-world bottleneck issues for software engineers using the CLI tool daily. The core takeaway is that developers need to move past passive tool usage and actively integrate these new controls into their local environment workflows to maximize output. Mastering these specific configuration changes is now essential for maintaining velocity during complex automated coding sessions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-07T01:31:53.066Z"
+  },
+  {
+    "id": "art-1794015105870-0x0wv",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/takuma_signal/n/n4346063d27d0",
+    "published_at": "2026-11-07T01:30:16.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333161846/rectangle_large_type_2_72a683b5856fa667e0b65f95a4f8bd4e.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "「少なくとも一つ選択」の条件分岐で生じる論理エラー：二つ以上選ぶと失敗する4つの状態と「三項目照合メモ」による解決法",
+    "summary_ja": "「少なくとも一つ選択」という要件に対し、2つ以上の項目を選ぶと誤ってバリデーションエラーとなる論理設計上の欠陥を特定した。 この不具合は、X・Y・Zの3項目の組み合わせのうち「有有有」「有有無」「有無有」「無有有」の4状態で発生する。 本記事では、すべての状態を網羅的に確認し、エラーの原因となる論理の食い違いを可視化する「三項目照合メモ」の作成手法を公開する。",
+    "translations": {
+      "ja": {
+        "title": "「少なくとも一つ選択」の条件分岐で生じる論理エラー：二つ以上選ぶと失敗する4つの状態と「三項目照合メモ」による解決法",
+        "summary": "「少なくとも一つ選択」という要件に対し、2つ以上の項目を選ぶと誤ってバリデーションエラーとなる論理設計上の欠陥を特定した。 この不具合は、X・Y・Zの3項目の組み合わせのうち「有有有」「有有無」「有無有」「無有有」の4状態で発生する。 本記事では、すべての状態を網羅的に確認し、エラーの原因となる論理の食い違いを可視化する「三項目照合メモ」の作成手法を公開する。"
+      },
+      "en": {
+        "title": "Debugging the 'Select at Least One' Logic Error: Fixing the 4 Failure States That Occur When Users Select Multiple Options",
+        "summary": "A common logic error occurs in multi-select forms where the 'select at least one' constraint fails if a user selects two or more options. This failure is triggered specifically by four state combinations: All-Present, Two-Present (various), and specific subsets of X, Y, and Z. The article demonstrates how to build a 'Three-Item Verification Memo' to systematically map these eight possible states. By charting these combinations rather than relying on single-selection examples, developers can identify the exact points where their validation logic breaks down. For builders of form-heavy interfaces, this framework provides a practical debugging checklist to ensure that multi-selection logic remains robust, preventing the silent user frustration caused by flawed edge-case handling in standard validation workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-07T01:31:45.870Z"
+  },
+  {
     "id": "art-1794014202401-arr5m",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -22043,33 +22146,6 @@
     "created_at": "2026-11-03T21:19:07.629Z"
   },
   {
-    "id": "art-1793739897086-7qjjc",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/sasaki_japan/n/n15acbe0c580f",
-    "published_at": "2026-11-03T20:41:58.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/331578931/rectangle_large_type_2_c01699e0c4200d9f176bac7c7fd56372.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "App Store向け時計アプリ「オンエア時計」がver.1.3へ更新、講演会やセミナーでの実用性を高める新機能を追加",
-    "summary_ja": "宮崎のエンジニアが開発する時計アプリ「オンエア時計」が、公開から1週間で3回目のアップデートを実施しver.1.3へ到達した。 本バージョンでは講演会やセミナーといったビジネス現場での視認性や実用性を意識した機能強化が行われている。 個人開発において短期間で迅速に更新を重ね、ユーザーからのフィードバックを即座にプロダクトへ反映させるアジャイルな姿勢は、ニッチなユーティリティアプリの満足度を高める重要な戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "App Store向け時計アプリ「オンエア時計」がver.1.3へ更新、講演会やセミナーでの実用性を高める新機能を追加",
-        "summary": "宮崎のエンジニアが開発する時計アプリ「オンエア時計」が、公開から1週間で3回目のアップデートを実施しver.1.3へ到達した。 本バージョンでは講演会やセミナーといったビジネス現場での視認性や実用性を意識した機能強化が行われている。 個人開発において短期間で迅速に更新を重ね、ユーザーからのフィードバックを即座にプロダクトへ反映させるアジャイルな姿勢は、ニッチなユーティリティアプリの満足度を高める重要な戦略となる。"
-      },
-      "en": {
-        "title": "On-Air Clock app hits version 1.3 with new features tailored for professional speaking events and seminars",
-        "summary": "A Miyazaki-based developer has released version 1.3 of the On-Air Clock app, marking its third update in just one week since hitting the App Store. This latest iteration focuses on specific usability improvements designed to help speakers and presenters maintain visibility during seminars and professional events. By maintaining a rapid iteration cycle, the developer is proving that consistently responding to user needs and edge-case requirements is a viable strategy for niche utility apps. For indie builders, this rigorous update schedule demonstrates how immediate feature refinement, even for simple tools, can drastically improve the perceived value and utility of a product in competitive app marketplaces, directly impacting retention and long-term user trust."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-03T21:04:57.086Z"
-  },
-  {
     "id": "art-1793739789843-2esom",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -31216,32 +31292,6 @@
     "created_at": "2026-11-02T11:32:14.374Z"
   },
   {
-    "id": "art-1793619123944-33o9z",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.ycombinator.com/item?id=50334714",
-    "published_at": "2026-11-02T09:30:12.000Z",
-    "og_image_url": null,
-    "title_ja": "書籍画像からマインドマップを生成する最適なフロントエンドAIは？コストと精度のバランスが鍵",
-    "summary_ja": "書籍の画像から効率的にマインドマップを抽出するための最適なAIモデルの選定が議論されている。 既存の専用ツールであるMapifyやNotebookLMでは満足できないユーザーに対し、ClaudeやGPT-4o、Mistralなどの主要モデルを使い分け、プロンプトエンジニアリングや視覚情報抽出の精度をどう高めるかが焦点だ。 フロントエンドAIを活用し、単なるテキスト要約を超えた階層的な構造化データを生成するためには、モデルの推論能力とコスト効率を最適化する戦略が求められる。",
-    "translations": {
-      "ja": {
-        "title": "書籍画像からマインドマップを生成する最適なフロントエンドAIは？コストと精度のバランスが鍵",
-        "summary": "書籍の画像から効率的にマインドマップを抽出するための最適なAIモデルの選定が議論されている。 既存の専用ツールであるMapifyやNotebookLMでは満足できないユーザーに対し、ClaudeやGPT-4o、Mistralなどの主要モデルを使い分け、プロンプトエンジニアリングや視覚情報抽出の精度をどう高めるかが焦点だ。 フロントエンドAIを活用し、単なるテキスト要約を超えた階層的な構造化データを生成するためには、モデルの推論能力とコスト効率を最適化する戦略が求められる。"
-      },
-      "en": {
-        "title": "Determining the best frontier AI model for generating structured mind maps from book images",
-        "summary": "Discussions are surfacing on identifying the optimal frontier AI model to generate high-quality, structured mind maps from images taken from books. For users dissatisfied with existing specialized tools like Mapify or NotebookLM, the focus has shifted toward leveraging models like Claude 3.5 Sonnet, GPT-4o, or Mistral Large. The challenge lies in extracting complex visual data and hierarchical relationships without incurring excessive API costs or suffering from structural hallucination. Builders looking to implement similar features are advised to experiment with vision-capable models by tuning chain-of-thought prompts for tree-like outputs, as raw extraction often requires multi-pass refinement to ensure the resulting mind map is logically sound and practically useful for learning."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-02T11:32:03.944Z"
-  },
-  {
     "id": "art-1793618236445-2nbjs",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -33210,32 +33260,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-02T03:01:36.821Z"
-  },
-  {
-    "id": "art-1793587584520-87fcs",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/suwa_nobu/items/6037f16f524d82638f1c",
-    "published_at": "2026-11-02T02:41:57.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDMwNjExJTJGYTRlNGFiZDZjNWNkZmM5NzkzMTk2ZmUwZDFjZjYyMGY1ZWYxMTY5NCUyRnhfbGFyZ2UucG5nJTNGMTc4NTI4OTU5Nj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NGE5ZmNiZmE4OTM5NWU1MWY1N2FiYjJkYzI1ZTFmZDQ%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkYyMDc3NzA2NTMzODkzMmUyMWVjMjk3MjI5ZDVkZmI5NDk5MWI5YzFhJTJGb3JpZ2luYWwuanBnJTNGMTc2OTAwMDk3MD9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1lYjc1ZTQzMzAzYTdlNTkzNDQ4Yjc4NDZiMjljYTgxZA%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3D237198914e54e0e7e727d16c4cfb7823?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklMjAlRTMlODElQUIlRTYlOUIlQjglRTMlODElOEIlRTMlODElOUIlRTMlODElOUYlMjBQUiUyMCVFMyU4MSVBRSVFOCVBQSVBQyVFNiU5OCU4RSVFMyU4MiU4NCUyMFJFQURNRSUyMCVFMyU4MSVBRiVFMyU4MCU4Q0FJJTIwJUUzJTgxJUEzJUUzJTgxJUJEJUUzJTgxJTg0JUUzJTgwJThEJUUzJTgxJUFFJUUzJTgxJThCJUVGJUJDJTlGJTIwMyVFMyU4MSVBNCVFMyU4MSVBRSVFMyU4MyU4NCVFMyU4MyVCQyVFMyU4MyVBQiVFMyU4MSVBRTEwOCVFNiU5QyVBQyVFMyU4MiU5MiUyMFdpa2lwZWRpYSUyMCVFMyU4MSVBRSVFOCVBNiU4QiVFNSU4OCU4NiVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTc1MDdiOWJkMTc3ZDgzYjgxNTA3Nzc0MWQxMjNhZTk3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzdXdhX25vYnUmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1iZTVkNGQ3ZjgwNDY4YWQwMGMxZTkyMjA3YzFjYWMxMw&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-SlFJVA&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=b654c5aa3811adf08c6ce6a736eb20d0",
-    "title_ja": "AI生成ドキュメントは本当に「AIっぽい」のか？GitHubのPRとREADME計108件をWikipediaの判定基準で徹底分析",
-    "summary_ja": "生成AIが書いたドキュメントに対する批判が増える中、筆者はGitHub上のPR説明やREADMEを計108本分析し、人間とAIの文章の違いを検証した。 Wikipediaが定める「AI生成記事の傾向」を基に評価した結果、AI特有の言い回しには明確なパターンが存在することが判明。 単に生成させるだけでなく、読み手に違和感を与えないための推敲や調整の必要性が浮き彫りになった。",
-    "translations": {
-      "ja": {
-        "title": "AI生成ドキュメントは本当に「AIっぽい」のか？GitHubのPRとREADME計108件をWikipediaの判定基準で徹底分析",
-        "summary": "生成AIが書いたドキュメントに対する批判が増える中、筆者はGitHub上のPR説明やREADMEを計108本分析し、人間とAIの文章の違いを検証した。 Wikipediaが定める「AI生成記事の傾向」を基に評価した結果、AI特有の言い回しには明確なパターンが存在することが判明。 単に生成させるだけでなく、読み手に違和感を与えないための推敲や調整の必要性が浮き彫りになった。"
-      },
-      "en": {
-        "title": "Are AI-written READMEs and PRs actually detectable? Analyzing 108 docs using Wikipedia’s criteria for AI generation",
-        "summary": "As backlash against AI-generated documentation grows, this analysis evaluates 108 GitHub pull request descriptions and README files to determine if they are truly distinguishable from human writing. By applying Wikipedia’s criteria for identifying AI-generated content, the study reveals distinct patterns and stylistic markers inherent to models like ChatGPT or Claude. The findings suggest that while AI is efficient for drafting, the specific structures and flow of these models often create a recognizable 'AI-like' feel that readers quickly identify. For developers relying on automation, the practical takeaway is that raw AI output often fails to pass as authentic human technical communication without significant manual editing to remove generic phrasing and improve narrative naturalness."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-02T02:46:24.520Z"
   },
   {
     "id": "art-1793586710285-al1da",
@@ -35729,32 +35753,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-01T13:16:54.094Z"
-  },
-  {
-    "id": "art-1793538114674-3hwon",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/jodycraft/articles/jev-dotnet-sdk-comparison-2026-10",
-    "published_at": "2026-11-01T05:20:57.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Pd1dHhPM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Jev%25E3%2582%2592%25E5%2591%25BC%25E3%2581%25B9%25E3%2582%258BC%2523%2520SDK%25E3%2581%25AF20%25E6%259C%25AC%25E8%25B6%2585%2520%25E2%2580%2594%2520%25E9%259D%259E%25E5%2585%25AC%25E5%25BC%258FJevSharp%25E3%2581%25A748%25E4%25BB%25B6%25E3%2582%2592%25E6%25B5%2581%25E3%2581%2597%25E3%2581%259F%25E7%25B5%2590%25E6%259E%259C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JodyCraft%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXdMa1VNVFFwTDF0eFJLblhPTGdmWEhveW52Vmp4UVUzUldWa1h3YUNxdkswdUpPdzlrZz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "公式SDKがない「Jev API」を.NETで叩く：非公式C#ライブラリ20種超から実用的な8本を選定・比較検証",
-    "summary_ja": "TypeSafe社の「Jev API」は公式SDKがPythonとJSのみで、.NET環境には未対応だ。 この空白を埋めるべくコミュニティが乱立し、わずか5週間で20プロジェクト、NuGet上で80件を超える非公式C#ライブラリが公開される事態となった。 本記事では、実際に運用可能な8本のSDKをメタデータと実装コストの観点で比較分析し、どのライブラリを採用すべきか、または自前でラッパーを書くべきかの判断基準を提示する。",
-    "translations": {
-      "ja": {
-        "title": "公式SDKがない「Jev API」を.NETで叩く：非公式C#ライブラリ20種超から実用的な8本を選定・比較検証",
-        "summary": "TypeSafe社の「Jev API」は公式SDKがPythonとJSのみで、.NET環境には未対応だ。 この空白を埋めるべくコミュニティが乱立し、わずか5週間で20プロジェクト、NuGet上で80件を超える非公式C#ライブラリが公開される事態となった。 本記事では、実際に運用可能な8本のSDKをメタデータと実装コストの観点で比較分析し、どのライブラリを採用すべきか、または自前でラッパーを書くべきかの判断基準を提示する。"
-      },
-      "en": {
-        "title": "Beyond Official SDKs: Evaluating 8 Practical C# Libraries for the Jev API Ecosystem",
-        "summary": "TypeSafe provides official SDKs exclusively for Python and JavaScript, leaving the .NET ecosystem to manage raw HTTP calls for the Jev API. In just five weeks, the developer community bridged this gap with an explosion of unofficial activity, resulting in over 20 distinct projects and 80+ packages appearing on NuGet. This analysis evaluates eight specific C# SDK candidates by comparing metadata, maintenance overhead, and implementation reliability against production requirements. Rather than blindly trusting community forks, the article provides a rigorous framework for choosing a stable client or deciding when to build a custom lightweight wrapper instead. For .NET engineers handling Jev integration, this audit serves as a critical guide to avoiding unstable dependencies while maintaining high-performance API connectivity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-01T13:01:54.674Z"
   },
   {
     "id": "art-1793537202895-fseos",
