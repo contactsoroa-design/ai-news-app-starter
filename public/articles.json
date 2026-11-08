@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1794142925763-f6x7p",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/yattaru/articles/442fd244c68fd7",
+    "published_at": "2026-11-08T07:48:12.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FbD3D6vg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E5%25AE%259A%25E6%259C%259F%25E5%25AE%259F%25E8%25A1%258C%25E3%2581%25AB%25E4%25BA%258B%25E6%25A5%25AD%25E3%2581%25AE%25E9%2581%258B%25E5%2596%25B6%25E3%2582%2592%25E4%25BB%25BB%25E3%2581%259B%25E3%2582%258B%25E3%2581%25A8%25E3%2581%258D%25E3%2581%25AB%25E5%2585%25A5%25E3%2582%258C%25E3%2581%259F%25E3%2580%25814%25E3%2581%25A4%25E3%2581%25AE%25E5%25AE%2589%25E5%2585%25A8%25E8%25A3%2585%25E7%25BD%25AE%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:YATTARU%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2JjODNlNWVlNTcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントによる業務自動化の事故を防ぐ──個人開発者が導入した「定期実行」を安全に運用するための4つの設計指針",
+    "summary_ja": "個人開発者がClaude Codeを活用してSNS投稿やブログ執筆などの業務を自動化する際、AIの暴走を防ぐために実装した4つの安全装置を解説する。 最大のリスクは「AIの独断による外部公開」であり、これを回避するために、下書きの段階で強制的に人間が承認するワークフローや、変更履歴の可視化を仕組みとして導入した。 AIエージェントに自律的な運用を任せる場合、特定のツールに依存しないフェイルセーフ設計を構築することが、サービス継続の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントによる業務自動化の事故を防ぐ──個人開発者が導入した「定期実行」を安全に運用するための4つの設計指針",
+        "summary": "個人開発者がClaude Codeを活用してSNS投稿やブログ執筆などの業務を自動化する際、AIの暴走を防ぐために実装した4つの安全装置を解説する。 最大のリスクは「AIの独断による外部公開」であり、これを回避するために、下書きの段階で強制的に人間が承認するワークフローや、変更履歴の可視化を仕組みとして導入した。 AIエージェントに自律的な運用を任せる場合、特定のツールに依存しないフェイルセーフ設計を構築することが、サービス継続の鍵となる。"
+      },
+      "en": {
+        "title": "How a solo dev automated operations using AI agents without catastrophic failures: 4 safety guardrails for autonomous workflows",
+        "summary": "As autonomous AI agents like Claude Code increasingly handle daily operational tasks—ranging from social media drafts to weekly reviews—the risk of AI publishing content without human oversight becomes a critical failure point. To mitigate this, one developer implemented four specific safety mechanisms designed to prevent unauthorized external actions. These measures include enforcing human approval gates before any draft goes public and maintaining strict visibility into AI-generated changes. The core takeaway is that as you delegate more autonomy to agents, relying on tool-specific features is insufficient; builders must architect universal fail-safe layers that effectively decouple AI decision-making from execution. This architectural mindset keeps your services secure even as your automation complexity scales up."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-08T13:02:05.763Z"
+  },
+  {
+    "id": "art-1794142918918-18kk0",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://h4c.team/en/posts/97",
+    "published_at": "2026-11-08T12:25:54.000Z",
+    "og_image_url": "https://h4c.team/og/posts/97.png?lang=en",
+    "title_ja": "なぜAIエージェントはCTFの課題を解けないのか？開発者が直面する推論の限界とタスクの複雑性",
+    "summary_ja": "AIエージェントがCTF（Capture The Flag）のような複雑なセキュリティ課題を解けない理由は、推論能力の欠如とタスクのマルチステップ構造にある。 現在のLLMは単発的なクエリには強いが、断片的なヒントから脆弱性を見つけ、環境を操作するような非線形な思考や長期間の文脈保持にはまだ大きな壁がある。 セキュリティ業務自動化を目指すエンジニアにとって、現段階でのAIは「考える」主体ではなく、あくまで専門家の作業を支援するツールとして位置付けるのが妥当だ。",
+    "translations": {
+      "ja": {
+        "title": "なぜAIエージェントはCTFの課題を解けないのか？開発者が直面する推論の限界とタスクの複雑性",
+        "summary": "AIエージェントがCTF（Capture The Flag）のような複雑なセキュリティ課題を解けない理由は、推論能力の欠如とタスクのマルチステップ構造にある。 現在のLLMは単発的なクエリには強いが、断片的なヒントから脆弱性を見つけ、環境を操作するような非線形な思考や長期間の文脈保持にはまだ大きな壁がある。 セキュリティ業務自動化を目指すエンジニアにとって、現段階でのAIは「考える」主体ではなく、あくまで専門家の作業を支援するツールとして位置付けるのが妥当だ。"
+      },
+      "en": {
+        "title": "Why current AI agents fail at CTF challenges: Analyzing reasoning gaps and complex multi-step task limitations",
+        "summary": "Recent analysis explores why autonomous AI agents consistently struggle to solve complex Capture The Flag (CTF) security challenges, attributing the failure to fundamental gaps in reasoning and the structural nature of multi-step exploitation. While LLMs excel at isolated tasks, they lack the non-linear strategic thinking, iterative testing, and deep contextual retention required to navigate adversarial environments where vulnerabilities are often hidden beneath layers of obfuscation. For builders automating security workflows, this highlights that current AI serves better as a co-pilot for specialized tasks rather than a replacement for human penetration testing. The practical takeaway is that until agents can manage long-term state and recursive self-correction, offloading entire security pipelines remains premature and risky for production systems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "研究"
+    ],
+    "created_at": "2026-11-08T13:01:58.918Z"
+  },
+  {
+    "id": "art-1794142911814-4i8mt",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Waipe/items/8ff643405c4a37de4d0f",
+    "published_at": "2026-11-08T12:47:40.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTA3NjU0JTJGNTA2YmNjOGZkNWZiNjc5Yzc3MWNkODI1YzgwMDJhNDQ1MWZkMzZiMCUyRnhfbGFyZ2UucG5nJTNGMTc5MjQ4MTcwOD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDk4Y2E3NzBmNDNiZjE2MTkyNmExNDM4OWM4MTI5NjI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1dceb914a3276b1895782f2c3ddb6709?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU3JUFDJUFDMDU2JUU1JTlCJTlFJUUzJTgwJTkxJUUzJTgzJUE2JUUzJTgzJUJDJUUzJTgyJUI2JUUzJTgzJUJDJUUzJTgxJUFFJUU1JUE1JUJEJUUzJTgxJUJGJUUzJTgxJUFCJUU1JTkwJTg4JUUzJTgyJThGJUUzJTgxJTlCJUUzJTgyJThCJUVGJUJDJTgxJUUzJTgzJTk2JUUzJTgzJUFEJUUzJTgyJUIwJUUzJTgyJUFCJUUzJTgzJUJDJUUzJTgzJTg5JUVGJUJDJThGJUU1JUJDJTk1JUU3JTk0JUE4JUUzJTgzJUFDJUUzJTgyJUI5JUU5JUEyJUE4JUVGJUJDJThGJUUzJTgyJUI3JUUzJTgzJUIzJUUzJTgzJTk3JUUzJTgzJUFCJUUzJTgzJTg2JUUzJTgyJUFEJUUzJTgyJUI5JUUzJTgzJTg4JUUzJTgxJUFFMyVFNSVCRCVBMiVFNiU4NSU4QiVFNSU4OCU4NyVFMyU4MiU4QSVFNiU5QiVCRiVFMyU4MSU4OCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWNlZGUzNmZmYjYxNTJlMWI5NmE1YThiN2IzYmUxMTc1&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBXYWlwZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTc2ZTVmYWY5ZjBiYmY3NjlhYTMwOWEyYzEzMDM4MjE0&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=22117a8da900f4e8f401857b87623974",
+    "title_ja": "掲示板開発記：外部URLの表示形式を「ブログカード」「引用レス」「テキスト」の3形態へ切り替えるUX改善を実装",
+    "summary_ja": "2ちゃんねる互換掲示板システム「つゔぁいちゃんねる」において、外部URLのOGP情報を活用したリンク表示機能を拡張。 ユーザーは好みに合わせて、リッチなブログカード形式、議論に適した引用レス風、スッキリしたテキスト形式の3種類から表示モードを即座に切り替え可能になった。 掲示板のような情報密度の高いUIでは、ユーザーが可読性とデザインのバランスを自分で制御できるようにすることで、体験の質を向上させるUXデザインの重要性が改めて示されている。",
+    "translations": {
+      "ja": {
+        "title": "掲示板開発記：外部URLの表示形式を「ブログカード」「引用レス」「テキスト」の3形態へ切り替えるUX改善を実装",
+        "summary": "2ちゃんねる互換掲示板システム「つゔぁいちゃんねる」において、外部URLのOGP情報を活用したリンク表示機能を拡張。 ユーザーは好みに合わせて、リッチなブログカード形式、議論に適した引用レス風、スッキリしたテキスト形式の3種類から表示モードを即座に切り替え可能になった。 掲示板のような情報密度の高いUIでは、ユーザーが可読性とデザインのバランスを自分で制御できるようにすることで、体験の質を向上させるUXデザインの重要性が改めて示されている。"
+      },
+      "en": {
+        "title": "Building a BBS: Enabling 3-way link display toggles for blog cards, quote styles, and text modes",
+        "summary": "In the latest devlog for the 'Tsuvai Channel' 2ch-compatible BBS, the team expanded their OGP-based link preview system to offer three distinct display modes. Users can now instantly toggle between rich blog cards, citation-style quote blocks, or simple, compact text links. By offering these choices, the platform lets users balance visual density with readability, a crucial design decision for communities where context-heavy discussions are standard. This approach underscores a core UX principle for builders: when content variety is high, empowering users to customize their own consumption interface significantly reduces cognitive load. It serves as a practical lesson on implementing flexible UI controls that respect different reading habits within high-traffic, text-focused social applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-08T13:01:51.814Z"
+  },
+  {
+    "id": "art-1794142905320-fcocj",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/zkbai/n/n4afaa71e0f5f",
+    "published_at": "2026-11-08T12:59:31.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333795909/rectangle_large_type_2_2f594c5a75e4c34dbf4dd44c75056bc9.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "ZKBが新作無料ブラウザゲーム『その部屋だけ、満室。』を公開。騒音トラブルをテーマにしたミステリー探索アドベンチャーの全貌",
+    "summary_ja": "ZKB REAL ESTATE COMPANYが、新作ブラウザゲーム『その部屋だけ、満室。 』を無料公開した。 本作は騒音問題で入居者募集が停滞する部屋を舞台に、事件の真相を追いかける探索型ミステリーだ。 個人開発者にとって、ユニークな世界観設定やストーリー主導型の体験は、低予算でもファンベースを構築し、Webサイトへのアクセスやブランド認知を効率よく高める強力なマーケティング手法となり得る。",
+    "translations": {
+      "ja": {
+        "title": "ZKBが新作無料ブラウザゲーム『その部屋だけ、満室。』を公開。騒音トラブルをテーマにしたミステリー探索アドベンチャーの全貌",
+        "summary": "ZKB REAL ESTATE COMPANYが、新作ブラウザゲーム『その部屋だけ、満室。 』を無料公開した。 本作は騒音問題で入居者募集が停滞する部屋を舞台に、事件の真相を追いかける探索型ミステリーだ。 個人開発者にとって、ユニークな世界観設定やストーリー主導型の体験は、低予算でもファンベースを構築し、Webサイトへのアクセスやブランド認知を効率よく高める強力なマーケティング手法となり得る。"
+      },
+      "en": {
+        "title": "ZKB Real Estate Company launches free browser-based mystery game \"That Room Is Occupied\" featuring noise complaint themes",
+        "summary": "ZKB Real Estate Company has released their latest browser-based title, \"That Room Is Occupied,\" which is now available for free to the public. Players are tasked with investigating a rental property plagued by persistent noise issues that has made it impossible to list for new tenants, diving into a narrative-driven mystery adventure. For indie developers, this release demonstrates how creating unique, character-focused storytelling can serve as a potent content marketing tool. By investing in a compelling, themed web experience rather than traditional ads, developers can drive significant organic traffic to their platform and cultivate brand identity, proving that creative narrative design remains a highly effective strategy for engagement and product visibility."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-11-08T13:01:45.320Z"
+  },
+  {
     "id": "art-1794142024771-mvg4f",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -11685,32 +11792,6 @@
     "created_at": "2026-11-07T06:31:48.207Z"
   },
   {
-    "id": "art-1794033101012-vg1jb",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/irose_tumuri/n/n6ddf049d91a1",
-    "published_at": "2026-11-07T06:31:25.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333254837/rectangle_large_type_2_23e647760e6c940ac843c3f3d768aed0.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "静止画を動かす新サービス「Living Canvas」登場—AI技術でイラストの少女に命を吹き込み、没入感のある表現を実現する画期的なアプローチ",
-    "summary_ja": "新サービス「Living Canvas」は、AI技術を用いて静止画のイラストを自然に動かすことで、キャラクターに生命感を吹き込む没入型のビジュアル体験を提供する。 単なるループアニメーションにとどまらず、静止画特有の美しさを保持したまま、ふとした仕草や表情の変化を付加できる点が大きな魅力だ。 個人開発者やクリエイターが手軽にキャラクターの表現力を高められるこのツールは、今後デジタルコンテンツの在り方を大きく変える可能性を秘めている。",
-    "translations": {
-      "ja": {
-        "title": "静止画を動かす新サービス「Living Canvas」登場—AI技術でイラストの少女に命を吹き込み、没入感のある表現を実現する画期的なアプローチ",
-        "summary": "新サービス「Living Canvas」は、AI技術を用いて静止画のイラストを自然に動かすことで、キャラクターに生命感を吹き込む没入型のビジュアル体験を提供する。 単なるループアニメーションにとどまらず、静止画特有の美しさを保持したまま、ふとした仕草や表情の変化を付加できる点が大きな魅力だ。 個人開発者やクリエイターが手軽にキャラクターの表現力を高められるこのツールは、今後デジタルコンテンツの在り方を大きく変える可能性を秘めている。"
-      },
-      "en": {
-        "title": "Living Canvas launches new AI-powered platform to bring static illustrations to life with dynamic motion and expressive character animation",
-        "summary": "Living Canvas has debuted as a new AI-driven service designed to animate static illustrations, effectively breathing life into digital characters to create immersive visual experiences. Unlike standard looping animations, the platform focuses on preserving the original aesthetic of the static artwork while seamlessly integrating subtle gestures and facial expressions that make the characters feel responsive. This tool offers a powerful new avenue for individual developers and digital creators to elevate their character designs without needing complex traditional animation workflows. By bridging the gap between high-quality still art and motion, Living Canvas represents a significant evolution in how creators approach interactive content, proving that even slight movements can dramatically enhance audience engagement and emotional resonance in digital storytelling."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "動画",
-      "開発"
-    ],
-    "created_at": "2026-11-07T06:31:41.012Z"
-  },
-  {
     "id": "art-1794032234680-pdz76",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -15865,32 +15946,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-06T16:01:57.219Z"
-  },
-  {
-    "id": "art-1793980068689-rrjlq",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://apps.apple.com/fr/app/habla-learn-spanish-fast/id6783860670",
-    "published_at": "2026-11-06T15:29:23.000Z",
-    "og_image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/31/04/c33104b2-6d63-73d0-a6f5-4941eeebccdf/Placeholder.mill/1200x630wa.jpg",
-    "title_ja": "AI搭載の言語学習アプリ「Habla」が公開、スペイン語習得を高速化するパーソナライズ学習エンジンの開発裏話",
-    "summary_ja": "開発者が公開した言語学習アプリ「Habla」は、AIを活用してスペイン語の習得スピードを大幅に向上させることを目的に設計された。 ユーザーのレベルに合わせたリアルタイムの対話練習とパーソナライズされたフィードバックが特徴で、語学学習における挫折を防ぐ仕組みが組み込まれている。 個人開発者がAIをどう言語教育に応用し、いかにして学習者の定着率を高めようとしているのか、その製品コンセプトと実装アプローチを深掘りする内容となっている。",
-    "translations": {
-      "ja": {
-        "title": "AI搭載の言語学習アプリ「Habla」が公開、スペイン語習得を高速化するパーソナライズ学習エンジンの開発裏話",
-        "summary": "開発者が公開した言語学習アプリ「Habla」は、AIを活用してスペイン語の習得スピードを大幅に向上させることを目的に設計された。 ユーザーのレベルに合わせたリアルタイムの対話練習とパーソナライズされたフィードバックが特徴で、語学学習における挫折を防ぐ仕組みが組み込まれている。 個人開発者がAIをどう言語教育に応用し、いかにして学習者の定着率を高めようとしているのか、その製品コンセプトと実装アプローチを深掘りする内容となっている。"
-      },
-      "en": {
-        "title": "Developer launches Habla, an AI-powered language learning app designed to accelerate Spanish fluency through adaptive conversation",
-        "summary": "A new Show HN submission showcases Habla, an AI-driven language learning platform specifically engineered to expedite Spanish acquisition. The application leverages generative AI to facilitate real-time, context-aware conversational practice, distinguishing itself from traditional static exercises by providing immediate, personalized corrective feedback. By tailoring lessons to the user's current proficiency level and interests, the platform aims to significantly reduce the cognitive friction often associated with early-stage language learning. For solo developers, this project serves as a compelling case study on integrating LLMs into specialized educational workflows to drive user retention. The author details the architectural choices behind the app's real-time feedback loops, offering a practical blueprint for building AI-native tools that transform how students engage with complex new subjects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-06T15:47:48.689Z"
   },
   {
     "id": "art-1793980003229-00hab",
@@ -20400,32 +20455,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-05T20:31:54.526Z"
-  },
-  {
-    "id": "art-1793909821700-8nhyq",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/supportapp3/items/2f089bff54561d42ed5f",
-    "published_at": "2026-11-05T20:13:23.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSUZSWHFwZGtCR29hZGEtTGFPVi1pYjVuQVRGcFVzN29WdDZXT08tMm9sa05HLXBRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWFiN2FhZjJmY2UyZGI5YTgyNDlmYmRiODFlMTVlODll%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De5eb047b894f3f856d249b9e2715777f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9cHJpbnRlbnYlMjAlRTMlODIlODQlMjBlbnYlMjAlRTMlODIlOTIlRTMlODMlODclRTMlODMlOTAlRTMlODMlODMlRTMlODIlQjAlRTMlODElQTclRTQlQkQlQkYlRTMlODElODYlRTMlODElQTglMjAuZW52JTIwJUUzJTgxJUFFJTIwQVBJJTIwJUUzJTgyJUFEJUUzJTgzJUJDJUUzJTgyJTgyJUU1JTg1JUE4JUU5JTgzJUE4JUU1JUI5JUIzJUU2JTk2JTg3JUUzJTgxJUE3JUU1JTg3JUJBJUUzJTgyJThCJUVGJUJDJTlBJUUzJTgzJUFBJUUzJTgzJTgwJUUzJTgyJUE0JUUzJTgzJUFDJUUzJTgyJUFGJUUzJTgzJTg4JUU1JTg1JTg4JUUzJTgxJUFGJTIwdW5zZXQlMjAlRTMlODElOTclRTMlODElQTYlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz01ZDAyM2IxMmRkMjVlYWUzZGMzNDBjNWU0ZTAxMjkzZQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzdXBwb3J0YXBwMyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTA5NGJiODkwZjg4NzU1MWU1NTAwZTNjZGViZGJhYmJi&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=942f85081befce35c181b24d19b75ed7",
-    "title_ja": "開発時の環境変数確認で使われる「printenv」「env」コマンドの落とし穴：.envのAPIキーが平文で流出するセキュリティリスクと対策",
-    "summary_ja": "開発現場でデバッグ用に常用される「printenv」や「env」コマンドには重大なセキュリティリスクがある。 これらのコマンドを環境変数を読み込んだ後に実行すると、.envファイル内のAPIキーやDBパスワードが平文の状態で標準出力にダンプされてしまう。 CI/CDパイプラインやログ収集プロセスでこの挙動が起きると秘匿情報が永続的に記録されるため、開発者は環境変数の参照方法を見直すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "開発時の環境変数確認で使われる「printenv」「env」コマンドの落とし穴：.envのAPIキーが平文で流出するセキュリティリスクと対策",
-        "summary": "開発現場でデバッグ用に常用される「printenv」や「env」コマンドには重大なセキュリティリスクがある。 これらのコマンドを環境変数を読み込んだ後に実行すると、.envファイル内のAPIキーやDBパスワードが平文の状態で標準出力にダンプされてしまう。 CI/CDパイプラインやログ収集プロセスでこの挙動が起きると秘匿情報が永続的に記録されるため、開発者は環境変数の参照方法を見直すべきだ。"
-      },
-      "en": {
-        "title": "Security Alert: Running printenv or env After Sourcing .env Files Accidentally Leaks All API Keys and Secrets in Plaintext",
-        "summary": "Using the printenv or env command for routine debugging after sourcing .env files presents a significant security risk for developers. When executed, these commands dump the entire environment to standard output, exposing API keys, database credentials, and other sensitive configuration strings in plain text. This is dangerous because CI/CD pipelines, automated log collectors, or diagnostic scripts often capture stdout; if those pipelines aren't secured, your production credentials could end up in persistent log storage. Developers should strictly avoid running these commands in shared or automated environments. Instead, use specific, scoped variable queries or debug tools that avoid dumping the entire environment, effectively preventing accidental credential leakage across your infrastructure."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-05T20:17:01.700Z"
   },
   {
     "id": "art-1793909812112-0kpet",
@@ -31768,32 +31797,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-02T20:21:25.907Z"
-  },
-  {
-    "id": "art-1793649718606-7slge",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/qnario/articles/9b19a7f2aa014c",
-    "published_at": "2026-11-02T12:39:52.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9xv4hxDg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2585%25A83%252C131%25E5%2595%258F%25EF%25BC%2581%25E7%2584%25A1%25E6%2596%2599%25E3%2581%25A7%25E9%2581%258A%25E3%2581%25B9%25E3%2582%258B%25E6%259C%25AC%25E6%25A0%25BC%25E3%2582%25AF%25E3%2582%25A4%25E3%2582%25BAWeb%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2580%258C%25E3%2582%25AF%25E3%2582%25A4%25E3%2582%25BA%25E5%25A4%25A7%25E7%2599%25BE%25E7%25A7%2591%25E3%2580%258D%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25E3%2580%2590%25E7%2599%25BB%25E9%258C%25B2%25E4%25B8%258D%25E8%25A6%2581%25E3%2583%25BB%25E3%2582%25B5%25E3%2582%25AF%25E3%2582%25B5%25E3%2582%25AF%25E5%258B%2595%25E3%2581%258F%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Qnario%2540%25E3%2582%25AF%25E3%2582%25A4%25E3%2582%25BA%25E5%25A4%25A7%25E7%2599%25BE%25E7%25A7%2591%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM0ZTEyZDZjZDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発のWebアプリ「クイズ大百科」を公開、全3,131問を完全無料で提供する高速クイズプラットフォームの挑戦",
-    "summary_ja": "個人開発者が、全3,131問の本格的な4択クイズを楽しめるWebアプリ「クイズ大百科」を公開した。 会員登録不要で即座に遊べる操作性と、隙間時間を活用した脳トレや学習の息抜きを想定した設計が特徴だ。 Webサービス開発においては、ユーザーの手間を極限まで省くUX設計と、多様なニーズに応えるコンテンツの厚みが、個人開発プロダクトの競争力を生む重要な差別化要因となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発のWebアプリ「クイズ大百科」を公開、全3,131問を完全無料で提供する高速クイズプラットフォームの挑戦",
-        "summary": "個人開発者が、全3,131問の本格的な4択クイズを楽しめるWebアプリ「クイズ大百科」を公開した。 会員登録不要で即座に遊べる操作性と、隙間時間を活用した脳トレや学習の息抜きを想定した設計が特徴だ。 Webサービス開発においては、ユーザーの手間を極限まで省くUX設計と、多様なニーズに応えるコンテンツの厚みが、個人開発プロダクトの競争力を生む重要な差別化要因となる。"
-      },
-      "en": {
-        "title": "Solo developer launches Quiz Daihyakka, a high-performance web quiz platform featuring over 3,131 free questions",
-        "summary": "A solo developer has launched Quiz Daihyakka, a web application that offers 3,131 four-choice trivia questions for free. The platform emphasizes instant accessibility by removing user registration requirements, aiming to serve users looking for quick brain training or academic study breaks. For individual builders, this project highlights how prioritizing a frictionless user experience alongside a substantial content library creates a compelling competitive advantage in a crowded market. The core lesson here is that minimizing the barrier to entry while scaling high-quality, engaging content is a proven strategy for solo developers to build sustainable, accessible web services that users can jump into and enjoy immediately without any unnecessary onboarding friction."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-02T20:01:58.606Z"
   },
   {
     "id": "art-1793649711843-v0r95",
