@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794133923283-s05rz",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/utakata_code/articles/flutter-toolchain-on-android",
+    "published_at": "2026-11-08T10:00:03.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--6Ic2L_Vr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2581%25AE%25E4%25B8%25AD%25E3%2581%25A7%2520Flutter%2520%25E3%2581%25AE%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2582%2592%25E5%258B%2595%25E3%2581%258B%25E3%2581%2599%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B3%25A1%25E6%25B2%25ABCode%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FmYTMwNTFhZDIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "スマホ単体でFlutterアプリをビルド・APK出力まで完結させるIDE「Utakata Studio」の技術的挑戦と実装の裏側",
+    "summary_ja": "Android上でFlutter SDK・Dart VM・JDK・Gradleを完結させ、IDEとしてアプリ開発からAPKビルドまでを実現する「Utakata Studio Mobile IDE」が開発された。 デスクトップ向けツールチェーンをモバイル環境で動作させるために、Flutter SDKのバイナリとデータ依存関係をAndroid上の実行環境へ移植するプロセスが鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "スマホ単体でFlutterアプリをビルド・APK出力まで完結させるIDE「Utakata Studio」の技術的挑戦と実装の裏側",
+        "summary": "Android上でFlutter SDK・Dart VM・JDK・Gradleを完結させ、IDEとしてアプリ開発からAPKビルドまでを実現する「Utakata Studio Mobile IDE」が開発された。 デスクトップ向けツールチェーンをモバイル環境で動作させるために、Flutter SDKのバイナリとデータ依存関係をAndroid上の実行環境へ移植するプロセスが鍵となる。"
+      },
+      "en": {
+        "title": "Building a full Flutter IDE on Android: How Utakata Studio runs the toolchain to compile APKs natively",
+        "summary": "Developers have created Utakata Studio Mobile IDE, an ambitious Android application capable of running the entire Flutter toolchain, including the Flutter SDK, Dart VM, JDK, and Gradle, directly on a smartphone to produce ready-to-install APK files. The technical core of this project involves porting the desktop-oriented build pipeline into a mobile execution environment, handling binary dependencies and resource mapping that were never intended for Android constraints. This breakthrough demonstrates that complex build systems can be containerized within mobile devices, unlocking a new paradigm where developers can write, compile, and deploy full Flutter applications without relying on a remote desktop or laptop, ultimately redefining mobile-first software engineering workflows for builders on the move."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-08T10:32:03.283Z"
+  },
+  {
+    "id": "art-1794133914849-r6ypd",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/lumi_coco2813/n/n6920684f96fa",
+    "published_at": "2026-11-08T10:24:48.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333725986/rectangle_large_type_2_559d25dd7d668620a5bdf31e967a3aa5.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "投資分析アプリのアーキテクチャ刷新―銘柄固定から動的取得へ「安全確認」の処理順序を最適化してUXを劇的に向上させた開発記",
+    "summary_ja": "投資分析アプリのv1.1開発では、固定3銘柄のみを表示していた制約を廃止し、動的取得を実装した。 最大の課題は、API呼び出し時のデータ安全確認とUXのバランスであった。 すべてのチェックを同時に行うのではなく、処理に優先順位をつけ、先行して表示すべき情報を制御することで、待ち時間を最小化しつつ堅牢性を担保している。 個人開発において「完璧な安全」を追い求めすぎず、ユーザー体験を損なわないための「処理の順番」を設計することが、アプリの拡張性を維持する肝となる。",
+    "translations": {
+      "ja": {
+        "title": "投資分析アプリのアーキテクチャ刷新―銘柄固定から動的取得へ「安全確認」の処理順序を最適化してUXを劇的に向上させた開発記",
+        "summary": "投資分析アプリのv1.1開発では、固定3銘柄のみを表示していた制約を廃止し、動的取得を実装した。 最大の課題は、API呼び出し時のデータ安全確認とUXのバランスであった。 すべてのチェックを同時に行うのではなく、処理に優先順位をつけ、先行して表示すべき情報を制御することで、待ち時間を最小化しつつ堅牢性を担保している。 個人開発において「完璧な安全」を追い求めすぎず、ユーザー体験を損なわないための「処理の順番」を設計することが、アプリの拡張性を維持する肝となる。"
+      },
+      "en": {
+        "title": "Refactoring investment analysis apps: Moving from hardcoded tickers to dynamic fetching with prioritized safety checks for better UX",
+        "summary": "In the v1.1 update of an investment analysis application, the developer moved beyond the limitations of displaying only three fixed stock tickers to implementing dynamic data fetching. The primary engineering challenge was balancing rigorous API safety checks with snappy user interface performance. Instead of running every validation concurrently and blocking the UI, the system now prioritizes critical rendering paths, allowing essential information to appear immediately while background checks finish. This approach demonstrates that in individual app development, achieving robustness does not require blocking every process at once. By strategically sequencing validation and data fetching, developers can maintain high-performance user experiences while ensuring that critical security checks are still executed properly as the app scales."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-08T10:31:54.849Z"
+  },
+  {
+    "id": "art-1794133908303-on1qw",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/okikusan-public/items/097953b6391c83499601",
+    "published_at": "2026-11-08T10:25:48.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY1MTYzMjQlMkZiNTljNzM3N2QwNzAzMGEzMGRkYzQwZDdhZTRiM2Q5YWJiMTgzODMzJTJGeF9sYXJnZS5wbmclM0YxNzEyMzg3ODM2P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz02NjZiY2M1MWRhMDdlOWQ4ZTBlNDM3ZjdkY2NhNzIyOQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db83a494accd6752b14d0ac165a41bec5?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMFNraWxscyUyMCVDMyU5NyUyMCVFNiU4QSU5NSVFOCVCMyU4NyVFNSU4OCU4NiVFNiU5RSU5MCUyMFZvbC42JTIwJUUyJTgwJTk0JTIwJUU2JThBJTk1JUU4JUIzJTg3JUUzJTgxJThCJUUzJTgyJTg5JUUzJTgwJThDJUU4JTgwJTgzJUUzJTgxJTg4JUUzJTgyJThCJUUzJTgwJThEJUUzJTgyJTkyJUU2JUI4JTlCJUUzJTgyJTg5JUUzJTgxJTk5JUUzJTgwJTgyJUUzJTgzJTkwJUUzJTgzJTgzJUUzJTgyJUFGJUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4JUU3JTk0JUE4JUUzJTgyJUI5JUUzJTgyJUFEJUUzJTgzJUFCJUUzJTgxJUE4JTIwTm90aW9uJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YzJjM2IwNmFiNjY0YjhiMzg1NmQ3NmIzYjgxNmQ3YjQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBva2lrdXNhbi1wdWJsaWMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1jYzVhOGY4Zjg2MTI4MmI2NWZjMDFlZjUzMGE0MTlhZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=bc30d8fc096bb3e8d7408793dd03f561",
+    "title_ja": "Claude Codeのスキル活用術：投資分析を自動化するバックテスト構築とNotion連携による意思決定の効率化手法",
+    "summary_ja": "Claude Codeを活用し、投資分析におけるバックテスト作成とNotionへのデータ集約を自動化する実践的な手法が公開された。 過去の投資知識をAIに抽出・要約させ、意思決定プロセスから不要な思考コストを省く仕組みを構築する。 エンジニアは、単なるコード生成に留まらず、AIとの対話履歴をナレッジベースとして活用することで、複雑な分析ワークフローを効率的に自動運用できる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeのスキル活用術：投資分析を自動化するバックテスト構築とNotion連携による意思決定の効率化手法",
+        "summary": "Claude Codeを活用し、投資分析におけるバックテスト作成とNotionへのデータ集約を自動化する実践的な手法が公開された。 過去の投資知識をAIに抽出・要約させ、意思決定プロセスから不要な思考コストを省く仕組みを構築する。 エンジニアは、単なるコード生成に留まらず、AIとの対話履歴をナレッジベースとして活用することで、複雑な分析ワークフローを効率的に自動運用できる。"
+      },
+      "en": {
+        "title": "Building automated investment backtesting workflows with Claude Code skills and Notion integration to minimize decision fatigue",
+        "summary": "This article details a practical workflow for automating investment backtesting and data aggregation using Claude Code integrated with Notion. The author explains how to extract accumulated investment knowledge from past AI interactions to build a refined codebase that handles technical analysis, effectively removing manual cognitive load from the decision-making process. By shifting from ad-hoc prompting to a structured system that treats AI chat history as a curated knowledge base, developers can automate complex analytical workflows that were previously time-consuming. The key takeaway for builders is to move beyond simple code generation; by embedding AI deeply into research operations, you can transform scattered data into an active, decision-support machine that consistently reduces the mental effort required for high-stakes analysis."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-08T10:31:48.303Z"
+  },
+  {
+    "id": "art-1794133899460-ezj43",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.704",
+    "published_at": "2026-11-08T10:27:54.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、APIイメージv2.11.704をリリース ― LLMデータ収集の安定性と構造化精度を向上",
+    "summary_ja": "Firecrawlが最新のAPIイメージ「v2.11.704」をリリースした。 本アップデートでは、ウェブ上の非構造化データをLLM学習や検索拡張生成（RAG）向けにクリーンなマークダウンへ変換する処理能力が強化されている。 開発者は、最新イメージに移行することで、複雑なDOM構造を持つサイトからのデータ抽出精度を高め、AIパイプラインの信頼性を向上させることが可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、APIイメージv2.11.704をリリース ― LLMデータ収集の安定性と構造化精度を向上",
+        "summary": "Firecrawlが最新のAPIイメージ「v2.11.704」をリリースした。 本アップデートでは、ウェブ上の非構造化データをLLM学習や検索拡張生成（RAG）向けにクリーンなマークダウンへ変換する処理能力が強化されている。 開発者は、最新イメージに移行することで、複雑なDOM構造を持つサイトからのデータ抽出精度を高め、AIパイプラインの信頼性を向上させることが可能だ。"
+      },
+      "en": {
+        "title": "Firecrawl releases API image v2.11.704, improving data extraction reliability and structure for AI pipelines",
+        "summary": "Firecrawl has officially deployed its latest API image, v2.11.704, focusing on refined extraction capabilities for LLM-ready data. This update significantly enhances the platform's ability to ingest unstructured web content and normalize it into clean, semantic Markdown suitable for RAG and agentic workflows. By migrating to this build, developers can expect improved parsing accuracy, particularly on complex websites with heavily nested DOM structures that typically trip up standard scrapers. For engineers building AI pipelines, keeping the ingestion layer updated is critical; these incremental improvements to the scraping engine reduce noise in the context window, directly impacting the quality of the outputs generated by downstream LLMs in your production applications."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-08T10:31:39.460Z"
+  },
+  {
     "id": "art-1794133022368-t2ok7",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -11872,33 +11978,6 @@
     "created_at": "2026-11-07T03:18:28.795Z"
   },
   {
-    "id": "art-1794021497730-2xedk",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yuki_bouzu/n/n743933ea354f",
-    "published_at": "2026-11-07T03:16:04.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333135043/rectangle_large_type_2_bfde59cd4fa1c991c89d8464b648ae58.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "ChatGPTがGIFアニメ生成に対応、キャラ画像を用いた実制作フローで従来よりも高い表現力を実証",
-    "summary_ja": "これまでChatGPTでの生成が困難とされていたGIFアニメーション制作において、ChatGPTが機能強化され、動的な表現が可能になった。 自身のキャラクター画像を用いた検証では、自然な動きのループやGIF形式への書き出しが大幅に改善されていることが確認できる。 プロンプトエンジニアリングを工夫することで、専門的なアニメーションツールを使わずとも、アイデアを素早く視覚化できる点は個人開発者にとって強力な武器になるだろう。",
-    "translations": {
-      "ja": {
-        "title": "ChatGPTがGIFアニメ生成に対応、キャラ画像を用いた実制作フローで従来よりも高い表現力を実証",
-        "summary": "これまでChatGPTでの生成が困難とされていたGIFアニメーション制作において、ChatGPTが機能強化され、動的な表現が可能になった。 自身のキャラクター画像を用いた検証では、自然な動きのループやGIF形式への書き出しが大幅に改善されていることが確認できる。 プロンプトエンジニアリングを工夫することで、専門的なアニメーションツールを使わずとも、アイデアを素早く視覚化できる点は個人開発者にとって強力な武器になるだろう。"
-      },
-      "en": {
-        "title": "ChatGPT now officially handles GIF animation generation, enabling creators to animate characters with improved visual fidelity",
-        "summary": "ChatGPT has recently overcome its longstanding struggle with GIF generation, now enabling users to create functional animations directly within the interface. By testing the tool with a custom, long-standing character, it is clear that the model can handle frame-to-frame movement and export in GIF format with much higher reliability than before. This update lowers the barrier for quick prototyping; creators can now generate visual assets and short looping animations without relying on complex external animation software. For individual builders and creators, integrating this into a workflow means significantly faster iteration cycles for marketing materials or UI micro-animations, turning simple prompt engineering into a viable alternative for high-speed creative production."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-07T03:18:17.730Z"
-  },
-  {
     "id": "art-1794021487521-7gu13",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -15661,33 +15740,6 @@
       "研究"
     ],
     "created_at": "2026-11-06T14:46:39.868Z"
-  },
-  {
-    "id": "art-1793975532019-t26yq",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://timmykokke.com/blog/2026/2026-11-04-trustworthy-ai/",
-    "published_at": "2026-11-06T14:04:50.000Z",
-    "og_image_url": "https://timmykokke.com/images/2026/10/TrustworthyAI.png",
-    "title_ja": "AIシステムの信頼性を担保するガードレール設計と評価手法—開発者がLLM運用で直面するハルシネーションと不確実性の克服術",
-    "summary_ja": "AIモデルの実用化において、ハルシネーションの抑制や出力の制御は避けて通れない課題だ。 この記事では、AIの信頼性を高めるために、開発者がシステムアーキテクチャの中にどのようにガードレールや検証パイプラインを構築すべきかを解説する。 単なる精度の追求から脱却し、予測可能性と透明性を担保するための評価手法を体系化することは、エンタープライズ領域でLLMを安全に運用するための必須条件となる。",
-    "translations": {
-      "ja": {
-        "title": "AIシステムの信頼性を担保するガードレール設計と評価手法—開発者がLLM運用で直面するハルシネーションと不確実性の克服術",
-        "summary": "AIモデルの実用化において、ハルシネーションの抑制や出力の制御は避けて通れない課題だ。 この記事では、AIの信頼性を高めるために、開発者がシステムアーキテクチャの中にどのようにガードレールや検証パイプラインを構築すべきかを解説する。 単なる精度の追求から脱却し、予測可能性と透明性を担保するための評価手法を体系化することは、エンタープライズ領域でLLMを安全に運用するための必須条件となる。"
-      },
-      "en": {
-        "title": "Defining Trustworthy AI: A Technical Framework for Implementing Robust Guardrails and Evaluation Metrics in LLM Production",
-        "summary": "Deploying AI applications in production requires moving beyond performance benchmarks to ensure genuine system reliability, specifically addressing hallucinations and output unpredictability. This guide outlines how engineers can architect robust guardrails and automated verification pipelines directly into the LLM stack to enforce consistency. By shifting focus from raw model capability to rigorous output validation and structured observability, developers can mitigate the risks associated with non-deterministic AI behavior. The piece argues that for enterprise-grade adoption, treating trustworthiness as a core infrastructure requirement—rather than an afterthought—is the only way to minimize liability and deliver stable, production-ready AI services that users and stakeholders can consistently trust."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-06T14:32:12.019Z"
   },
   {
     "id": "art-1793975522470-xwjeb",
@@ -21311,33 +21363,6 @@
       "開発"
     ],
     "created_at": "2026-11-05T15:31:47.442Z"
-  },
-  {
-    "id": "art-1793891880007-cw5yt",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ysomei/items/611d187ec8e2336024e0",
-    "published_at": "2026-11-05T14:35:42.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFtYXpvbmF3cy5jb20lMkYwJTJGNTk1MjMlMkZwcm9maWxlLWltYWdlcyUyRjE0NzM2OTQ5NTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTFiNGM5NTIyMWY5YjBkNTY2ZDRlYjFhZmY4ZGQwMjYx%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dc8d25799c0d05e3ccfc5ecaf87580e0f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU0JUJCJThBJUU2JTlCJUI0JUUzJTgxJUE3JUUzJTgxJTk5JUUzJTgxJThDJUUzJTgwJTgxVmliZSUyMENvZGluZyUyMCVFMyU4MiU5MiVFMyU4MiU4NCVFMyU4MSVBMyVFMyU4MSVBNiVFMyU4MSVCRiVFMyU4MSU5RncmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1jY2YwOWYzOGExOTc0YzVmNTgzZjNhMWY3YzA5OGViNg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5c29tZWkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1hMjY1NTgzYWI4Y2Q4M2FjNTlhYjM5Njc5NjZhYTgyNQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a367252c173747a6187d98bfac583127",
-    "title_ja": "話題の「Vibe Coding」で情報漏洩対策ツールを構築、自然言語対話だけでどこまで実装可能か検証した結果",
-    "summary_ja": "「Vibe Coding」の定義である「雰囲気でコードを書く」手法を用い、エンジニアが実用的な情報漏洩対策ツールを構築する実験を行った。 要件定義からデバッグまでをAIとの対話のみで完結させるプロセスを通じて、ツール開発の高速化とAIモデルの文脈理解力の限界を検証している。 コードを一行も書かずに機能的なアプリケーションを作成したいビルダーにとって、AIエージェントの制御精度と要件定義の粒度が開発成功の分水嶺になるという教訓が得られる。",
-    "translations": {
-      "ja": {
-        "title": "話題の「Vibe Coding」で情報漏洩対策ツールを構築、自然言語対話だけでどこまで実装可能か検証した結果",
-        "summary": "「Vibe Coding」の定義である「雰囲気でコードを書く」手法を用い、エンジニアが実用的な情報漏洩対策ツールを構築する実験を行った。 要件定義からデバッグまでをAIとの対話のみで完結させるプロセスを通じて、ツール開発の高速化とAIモデルの文脈理解力の限界を検証している。 コードを一行も書かずに機能的なアプリケーションを作成したいビルダーにとって、AIエージェントの制御精度と要件定義の粒度が開発成功の分水嶺になるという教訓が得られる。"
-      },
-      "en": {
-        "title": "I tried 'Vibe Coding' to build a data leak prevention tool: Testing the limits of pure natural language development",
-        "summary": "I experimented with 'Vibe Coding'—the concept of coding primarily by feel through natural language interaction with AI—to build a practical data leak prevention utility from scratch. By handling the entire workflow from initial requirements to final debugging solely via conversational prompts, I stress-tested whether current AI agents can truly replace manual coding for functional application development. The process reveals that while prototyping speed increases dramatically, the success of a 'no-code-writing' approach hinges entirely on the developer's ability to provide precise architectural constraints and clear logical boundaries. For builders, this experiment highlights that AI orchestration is now a critical skill, as you are essentially functioning as a project manager for an automated, black-box software engine."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "アップデート"
-    ],
-    "created_at": "2026-11-05T15:18:00.007Z"
   },
   {
     "id": "art-1793891833550-xoo1x",
@@ -31938,32 +31963,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-02T18:46:52.869Z"
-  },
-  {
-    "id": "art-1793644474082-j09u1",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/tcgradar/articles/3968dcb8c6b1f4",
-    "published_at": "2026-11-02T16:29:56.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--paIp8UKk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2588%25E3%2583%25AC%25E3%2582%25AB%25E3%2581%25AE%25E6%258A%25BD%25E9%2581%25B8%25E8%25B2%25A9%25E5%25A3%25B2%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E9%259B%2586%25E3%2582%2581%25E3%2581%25A6%25E7%25B7%25A0%25E5%2588%2587%25E9%25A0%2586%25E3%2581%25AB%25E4%25B8%25A6%25E3%2581%25B9%25E3%2582%258B%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2588%25E3%2583%25AC%25E3%2582%25AB%25E6%258A%25BD%25E9%2581%25B8%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVZYbVFSdktmRWJndDNPU3ZXS0JpMGllSU1qOFYtNDlVRW5vdjgtVXVNWndhbGVWc1U9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ポケカ・遊戯王の抽選情報を自動集約、「トレカ抽選レーダー」の個人開発と実装の仕組み",
-    "summary_ja": "個人開発の「トレカ抽選レーダー」は、ポケカやワンピースカード等の抽選情報をスクレイピングで自動集約し、締切順に整理して表示するWebサービスだ。 単に情報をまとめるだけでなく、10時間以内の案件には地域絞り込み機能を実装し、新弾カレンダーやBOX相場連携といった付加価値でUXを向上させている。 情報の断片化が激しいニッチ領域に対し、ユーザーが必要なタイミングで素早く購入機会にアクセスできる環境を構築した点は、特定ジャンルの課題解決型個人開発における好事例といえる。",
-    "translations": {
-      "ja": {
-        "title": "ポケカ・遊戯王の抽選情報を自動集約、「トレカ抽選レーダー」の個人開発と実装の仕組み",
-        "summary": "個人開発の「トレカ抽選レーダー」は、ポケカやワンピースカード等の抽選情報をスクレイピングで自動集約し、締切順に整理して表示するWebサービスだ。 単に情報をまとめるだけでなく、10時間以内の案件には地域絞り込み機能を実装し、新弾カレンダーやBOX相場連携といった付加価値でUXを向上させている。 情報の断片化が激しいニッチ領域に対し、ユーザーが必要なタイミングで素早く購入機会にアクセスできる環境を構築した点は、特定ジャンルの課題解決型個人開発における好事例といえる。"
-      },
-      "en": {
-        "title": "Building 'Trading Card Radar': An automated aggregator for TCG lottery sales and market trends",
-        "summary": "The indie project 'Trading Card Radar' solves the fragmentation problem in the TCG market by automatically scraping and aggregating lottery sales for Pokemon, One Piece, and Yu-Gi-Oh cards. The platform sorts these opportunities by deadline, implements regional filtering for urgent listings closing within 10 hours, and integrates new release calendars alongside real-time market pricing for booster boxes. By turning scattered social media announcements into a structured, user-friendly interface, the developer created a functional utility that directly addresses the pain points of collectors. This service serves as a strong case study in niche software development, demonstrating how providing structured data access and timely notifications creates immediate value in domains where users struggle to track highly competitive purchase windows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-02T18:34:34.082Z"
   },
   {
     "id": "art-1793644467536-wp0xo",
