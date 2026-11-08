@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1794138452152-9zbkv",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/sunsun_eng/articles/n8n-template-e2e",
+    "published_at": "2026-11-08T11:43:28.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--N9HzDD-I--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%258D%2598%25E4%25BD%2593%25E3%2583%2586%25E3%2582%25B9%25E3%2583%258829%25E4%25BB%25B6%25E3%2581%258C%25E5%2585%25A8%25E7%25B7%2591%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E6%259C%25AC%25E7%2589%25A9%25E3%2581%25AEn8n%25E3%2581%25A7%25E3%2581%25AF2%25E7%25AE%2587%25E6%2589%2580%25E3%2581%25A7%25E5%25A3%258A%25E3%2582%258C%25E3%2581%259F%25E8%25A9%25B1%2520%25E2%2580%2594%2520%25E6%259C%2589%25E6%2596%2599%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E5%2587%25BA%25E8%258D%25B7%25E5%2589%258D%25E3%2581%25AEE2E%25E6%25A4%259C%25E8%25A8%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2599%25E3%2582%2593%25E3%2581%2599%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTF80ZkxYZ0xXTVlnNF9DSE1BTGQ0akRZdFB2am9UZjBTOVFldkdwak9uMmJlZDBJcHk9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "n8n有料テンプレート出荷直前の悪夢：Vitest全緑でも実環境で2箇所クラッシュした原因と教訓",
+    "summary_ja": "楽天カードの明細からサブスクを検出するn8nテンプレートを開発中、29件の単体テストを全通過したにもかかわらず、実環境では動作しない不具合が発生した。 原因はロジックエラーではなく、n8nのデフォルトセキュリティ設定による制限だった。 開発者は「テストが緑だから安心」と過信せず、Docker等を用いた実環境でのE2Eテストが不可欠であることを痛感する結果となった。 ツール特有の実行環境制約を考慮した検証プロセスを構築しなければ、出荷直前に致命的な手戻りが発生する。",
+    "translations": {
+      "ja": {
+        "title": "n8n有料テンプレート出荷直前の悪夢：Vitest全緑でも実環境で2箇所クラッシュした原因と教訓",
+        "summary": "楽天カードの明細からサブスクを検出するn8nテンプレートを開発中、29件の単体テストを全通過したにもかかわらず、実環境では動作しない不具合が発生した。 原因はロジックエラーではなく、n8nのデフォルトセキュリティ設定による制限だった。 開発者は「テストが緑だから安心」と過信せず、Docker等を用いた実環境でのE2Eテストが不可欠であることを痛感する結果となった。 ツール特有の実行環境制約を考慮した検証プロセスを構築しなければ、出荷直前に致命的な手戻りが発生する。"
+      },
+      "en": {
+        "title": "N8N Template Launch Failure: Why Passing 29 Vitest Unit Tests Didn't Prevent Real-World Production Crashes",
+        "summary": "While building an n8n template to automate subscription detection from Rakuten Card CSVs, a developer encountered critical production failures despite passing all 29 Vitest unit tests. The culprit was not broken logic, but n8n's strict default security settings applied only in live environments. This incident serves as a sharp reminder that unit tests alone cannot simulate the runtime constraints of external automation platforms. For builders, the key takeaway is that relying solely on unit testing is a dangerous trap; you must implement E2E testing within a Docker-based instance to uncover platform-specific permission issues. Validation against the actual production environment remains the only true safeguard against shipping non-functional workflows to paying users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-08T11:47:32.152Z"
+  },
+  {
+    "id": "art-1794138415808-ymquy",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/bryanharper/n/n99a302e86501",
+    "published_at": "2026-11-08T11:45:00.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333760916/rectangle_large_type_2_d5790295f1e13c814b96b98aaa9616ea.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "英語教室の先生が独学で開発した英語学習アプリ、開発未経験からストア公開までの全ステップと教訓",
+    "summary_ja": "千葉県で英語教師を務めるブライアン・ハーパー氏が、自身の教室運営の経験を活かし、ゼロから独学で英語学習アプリを開発・リリースした軌跡。 プログラミング未経験の状態から、必要な機能の選定、開発ツールの習得、そして実際のストア公開に至るまでの困難と学びを共有する。 個人開発において「教育現場のニーズ」を直接プロダクトに反映させる重要性と、専門知識がない状態からでも作り切るためのマインドセットを提言する。",
+    "translations": {
+      "ja": {
+        "title": "英語教室の先生が独学で開発した英語学習アプリ、開発未経験からストア公開までの全ステップと教訓",
+        "summary": "千葉県で英語教師を務めるブライアン・ハーパー氏が、自身の教室運営の経験を活かし、ゼロから独学で英語学習アプリを開発・リリースした軌跡。 プログラミング未経験の状態から、必要な機能の選定、開発ツールの習得、そして実際のストア公開に至るまでの困難と学びを共有する。 個人開発において「教育現場のニーズ」を直接プロダクトに反映させる重要性と、専門知識がない状態からでも作り切るためのマインドセットを提言する。"
+      },
+      "en": {
+        "title": "How an English teacher bootstrapped a learning app from scratch without any prior development experience",
+        "summary": "Bryan Harper, an English teacher based in Chiba, Japan, shares his journey of transitioning from classroom instruction to building and shipping his own English learning application from scratch. Despite having zero prior programming experience, Harper details the challenges of learning development tools, defining feature sets that actually solve student problems, and navigating the complexities of the app store submission process. His experience highlights the power of domain expertise in personal software development, arguing that solving immediate, real-world educational needs is the most effective roadmap for solo builders. The takeaway is that anyone can build a functional product if they focus on translating specific classroom pain points into code rather than trying to become a full-stack engineer overnight."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-08T11:46:55.808Z"
+  },
+  {
+    "id": "art-1794138405524-ye7zn",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/hide9999/items/04f1e5b0be1ffd39f47d",
+    "published_at": "2026-11-08T11:46:27.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY3OTNkZjM4YmNmMzhmYWQ5YzFmYjI1MGRmYzVjNDFhMj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YzkwMjU3MDIzOTQyYTJkOWM1NWE5NDRmOTZkZmUyYzI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D76bff4dd900bcd1098eea7952f4b84fb?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTg2JUUzJTgyJUI5JUUzJTgzJTg4QUkmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1kNmU4YzJmOWQyMWI3MWZmZDM4NjU3MGEzOGExMGMxMQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBoaWRlOTk5OSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWY4Y2NlMDM3YTdlNGU3YzA2ZjRhM2ZiMTZhYjUwOGI0&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=1a66d157e64caa4fec9c2d5738527dc6",
+    "title_ja": "生成AI活用の第一歩：exaBaseが公開した60分で学ぶ「超初級」社内AI研修カリキュラムの全貌と重要ポイント",
+    "summary_ja": "exaBaseが公開した「超初級」向けの生成AI研修資料は、60分という短時間でAIの基礎知識から業務応用のヒントまでを網羅している。 Marpを活用したスライド形式で、研修担当者がそのまま再利用可能な構成になっているのが特徴だ。 AI研修をゼロから立ち上げる際、技術的な詳細よりも「AIで何ができるか」という具体例と体験を優先することが、組織への定着率を高める最善の策である。",
+    "translations": {
+      "ja": {
+        "title": "生成AI活用の第一歩：exaBaseが公開した60分で学ぶ「超初級」社内AI研修カリキュラムの全貌と重要ポイント",
+        "summary": "exaBaseが公開した「超初級」向けの生成AI研修資料は、60分という短時間でAIの基礎知識から業務応用のヒントまでを網羅している。 Marpを活用したスライド形式で、研修担当者がそのまま再利用可能な構成になっているのが特徴だ。 AI研修をゼロから立ち上げる際、技術的な詳細よりも「AIで何ができるか」という具体例と体験を優先することが、組織への定着率を高める最善の策である。"
+      },
+      "en": {
+        "title": "exaBase releases 60-minute 'AI Essentials' training curriculum designed to accelerate generative AI adoption in the workplace",
+        "summary": "exaBase has open-sourced an introductory generative AI training curriculum that distills complex AI concepts into a manageable 60-minute session for non-technical employees. The material, built using Marp for straightforward slide presentation, covers the fundamental mechanics of AI and actionable business use cases, allowing internal trainers to adopt or modify the deck immediately. For builders and engineering leads tasked with internal upskilling, the key takeaway is that overwhelming staff with technical depth often backfires; prioritizing high-level conceptual clarity and immediate, tangible business applications is a much more effective strategy to drive adoption within a diverse organization. This approach lowers the entry barrier for staff, turning AI from an abstract concept into a daily productivity tool."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-08T11:46:45.524Z"
+  },
+  {
     "id": "art-1794137531932-l1ot9",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -11606,33 +11686,6 @@
     "created_at": "2026-11-07T05:16:50.907Z"
   },
   {
-    "id": "art-1794028604388-qyrdl",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/invest_build_log/n/n2b043ea84111",
-    "published_at": "2026-11-07T05:09:29.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/73244390c221477ff8b6a2926ce2fe3996ac4fbe.png",
-    "title_ja": "AI投資アプリ運用検証2日目、累計損益は−0.43％へ下落。翌日に向けた銘柄入れ替え戦略を実行",
-    "summary_ja": "AIを活用した投資アプリのフォワードテスト2日目の結果を公開。 運用開始から2日で累計損益は−0.43％となり、市場の変動を受ける形となった。 前日のAI判断に基づき、寄り付きで2銘柄を売却し新たに2銘柄を組み入れるポートフォリオの調整を実施。 アルゴリズム運用の透明性を確保しつつ、短期的なボラティリティに対するリスク管理の重要性が浮き彫りとなっている。",
-    "translations": {
-      "ja": {
-        "title": "AI投資アプリ運用検証2日目、累計損益は−0.43％へ下落。翌日に向けた銘柄入れ替え戦略を実行",
-        "summary": "AIを活用した投資アプリのフォワードテスト2日目の結果を公開。 運用開始から2日で累計損益は−0.43％となり、市場の変動を受ける形となった。 前日のAI判断に基づき、寄り付きで2銘柄を売却し新たに2銘柄を組み入れるポートフォリオの調整を実施。 アルゴリズム運用の透明性を確保しつつ、短期的なボラティリティに対するリスク管理の重要性が浮き彫りとなっている。"
-      },
-      "en": {
-        "title": "AI-Driven Investment App Test Day 2: Cumulative Returns Hit −0.43% as Portfolio Rebalancing Strategy Executes",
-        "summary": "The second day of forward testing for an AI-powered stock investment application reports a cumulative profit-loss of −0.43% as market volatility impacts initial performance. Following the algorithm's predetermined logic, the test portfolio executed a swap at market open, liquidating two positions to acquire two new assets. This operational update highlights the practical realities of managing algorithmic trading, emphasizing the critical need for robust risk management amidst short-term market fluctuations. For builders developing financial AI, the transparency of these day-to-day results is vital for users to understand how automated rebalancing logic actually impacts returns, especially when model predictions clash with immediate market trends. Maintaining consistent performance tracking is the foundational step toward building trust in automated financial tools."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-07T05:16:44.388Z"
-  },
-  {
     "id": "art-1794028596543-tvb9c",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -21193,32 +21246,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-05T16:46:38.484Z"
-  },
-  {
-    "id": "art-1793896318693-gggmm",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Ziva/items/651ed9b7a115cb253127",
-    "published_at": "2026-11-04T17:20:11.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSWVROGhQV2dHTE9OR0VlaW1faEU1YU9EYlg2MWpaSE54OWZVSXUxeFlOdzNDVlBnJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTI2M2M4Y2UwM2Q0ZmMxZjE5NmVhZTU4NDMwMmE1ZTg3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D4383d44ec6c49b61a276b3a22908c48d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9R29kb3QlMjA0JTIwJUUzJTgxJUE3JTIwQUklMjAlRTMlODIlOTIlRTQlQkQlQkYlRTMlODElQTMlRTMlODElQTYlMjAzRCUyMCVFMyU4MyVBMiVFMyU4MyU4NyVFMyU4MyVBQiVFMyU4MiU5MiVFNCVCRCU5QyVFMyU4MiU4QiVFRiVCQyU5QUJsZW5kZXIlMjAlRTklODAlQTMlRTYlOTAlQkElRTMlODMlQkIlRTMlODIlQTQlRTMlODMlQjMlRTMlODMlOUQlRTMlODMlQkMlRTMlODMlODglRTglQTglQUQlRTUlQUUlOUElRTMlODMlQkIlRTMlODMlODQlRTMlODMlQkMlRTMlODMlQUIlRTYlQUYlOTQlRTglQkMlODMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz02ZmVjMmJiNTUwMjI0Y2YzZWFmYzg3Yjc0ZmM1NzhmMQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBaaXZhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODhkNjQ4YjRjZTgyNTg5YmM4NmNjN2MwODBiMWEwZjg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=db84d68cae96c3a74a0034c673c50157",
-    "title_ja": "Godot 4でAI生成3Dモデルを活用するワークフロー：Blender連携からインポート設定、最新ツール比較までを完全解説",
-    "summary_ja": "Godot 4開発において、AI生成した3Dモデルをゲームへスムーズに組み込むための実践的なワークフローを解説。 AIで生成した素材をBlender経由で最適化し、Godotのインポート設定を調整して表示品質を最大化する手法を網羅する。 主要なAI 3D生成ツールの比較に加え、マテリアルやメッシュの整合性を保つコツも紹介しており、個人開発者が手軽に高品質な3Dアセットをゲームへ導入する際の実践的な指針となる。",
-    "translations": {
-      "ja": {
-        "title": "Godot 4でAI生成3Dモデルを活用するワークフロー：Blender連携からインポート設定、最新ツール比較までを完全解説",
-        "summary": "Godot 4開発において、AI生成した3Dモデルをゲームへスムーズに組み込むための実践的なワークフローを解説。 AIで生成した素材をBlender経由で最適化し、Godotのインポート設定を調整して表示品質を最大化する手法を網羅する。 主要なAI 3D生成ツールの比較に加え、マテリアルやメッシュの整合性を保つコツも紹介しており、個人開発者が手軽に高品質な3Dアセットをゲームへ導入する際の実践的な指針となる。"
-      },
-      "en": {
-        "title": "Integrating AI-generated 3D assets into Godot 4: A complete workflow covering Blender optimization, import settings, and tool comparisons",
-        "summary": "This guide details the end-to-end workflow for integrating AI-generated 3D models into Godot 4 projects effectively. It covers best practices for processing AI assets through Blender to ensure proper cleanup, followed by critical import settings that maintain visual quality and performance within the engine. Beyond technical configurations, the article provides a comparative breakdown of top AI 3D generation tools, helping developers choose the right stack for their specific needs. By mastering material handling and mesh optimization, solo developers can significantly accelerate their asset pipelines. The practical takeaway is that raw AI output requires specific intermediate processing in Blender to become game-ready, rather than direct importing, to avoid common artifact and scaling issues."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "画像生成"
-    ],
-    "created_at": "2026-11-05T16:31:58.693Z"
   },
   {
     "id": "art-1793896303842-ikub3",
@@ -31851,32 +31878,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-02T19:32:33.420Z"
-  },
-  {
-    "id": "art-1793647127857-dogt7",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/nanotoylab/articles/22059bc51b749c",
-    "published_at": "2026-11-02T13:40:47.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--SVJAIKpw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:VOICEVOX%25E3%2581%25AE%25E8%25AA%25AD%25E3%2581%25BF%25E9%2596%2593%25E9%2581%2595%25E3%2581%2584%25E3%2582%2592AmiVoice%25E3%2581%25A7%25E6%258E%25A2%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E8%25A6%258B%25E3%2581%25A4%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AF%25E5%2588%25A5%25E3%2581%25AE%25E5%2595%258F%25E9%25A1%258C%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%258A%25E3%2583%258E%25E3%2583%2588%25E3%2582%25A4%25E3%2583%25A9%25E3%2583%259C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS1MyMzlBZDdOSk13a3FLOTZuRW5OT19jTEJhOWt3NG4zV2EwUVJRZjFzTWZndWZ3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "VOICEVOXの読み間違い検知をAmiVoiceで自動化する試み、音声認識精度の壁と意外な発見──「読み間違い」より「聞き取りにくい数字」が判明",
-    "summary_ja": "VOICEVOXの読み間違いを自動検知するため、生成音声をAmiVoice APIで文字起こしし、元の台本と照合するツールを開発した。 テストの結果、読み間違いの検出自体は可能だったが、実際の運用では誤検出が多発。 最終的に判明したのは読み間違いよりも「機械が聞き取りにくい特定の数字の言い方」というAI音声の弱点だった。 音声認識による品質チェックは有用だが、単なる間違い探し以上に、機械の癖を理解するための強力なデバッグツールになり得る。",
-    "translations": {
-      "ja": {
-        "title": "VOICEVOXの読み間違い検知をAmiVoiceで自動化する試み、音声認識精度の壁と意外な発見──「読み間違い」より「聞き取りにくい数字」が判明",
-        "summary": "VOICEVOXの読み間違いを自動検知するため、生成音声をAmiVoice APIで文字起こしし、元の台本と照合するツールを開発した。 テストの結果、読み間違いの検出自体は可能だったが、実際の運用では誤検出が多発。 最終的に判明したのは読み間違いよりも「機械が聞き取りにくい特定の数字の言い方」というAI音声の弱点だった。 音声認識による品質チェックは有用だが、単なる間違い探し以上に、機械の癖を理解するための強力なデバッグツールになり得る。"
-      },
-      "en": {
-        "title": "Automating VOICEVOX read-error detection with AmiVoice: Why the tool revealed 'hard-to-transcribe numbers' instead of actual reading mistakes",
-        "summary": "To automate the detection of reading errors in VOICEVOX output, the developer built a system that transcodes generated audio back to text via the AmiVoice API and compares it against original scripts. While successful in identifying discrepancies, the system highlighted a deeper issue: rather than catching simple reading errors, the tool mostly flagged specific numerical pronunciations that speech-to-text models consistently struggle to interpret. This shift in perspective proves that using transcription APIs for quality assurance isn't just about finding errors in your generated audio; it functions as a critical debugging layer to understand where machine listeners fail. For builders deploying AI voice assets, this highlights the necessity of refining TTS inputs to ensure machine-readable clarity beyond human-perceived naturalness."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "音声"
-    ],
-    "created_at": "2026-11-02T19:18:47.857Z"
   },
   {
     "id": "art-1793647118382-vsr0n",
