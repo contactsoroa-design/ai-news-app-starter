@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794140444604-51oge",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/kaguraai/articles/4921861807accf",
+    "published_at": "2026-11-08T08:06:19.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--tkxDB8gs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25A8Codex%25E3%2581%25A7%25E8%25A8%25AD%25E8%25A8%2588%25E5%2588%25A4%25E6%2596%25AD%25E3%2582%2592%25E5%25BC%2595%25E3%2581%258D%25E7%25B6%2599%25E3%2581%2590%25EF%25BC%259AKagura%2520Memory%2520Cloud%25E3%2581%25AE%25E4%25BD%25BF%25E3%2581%2584%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kagura%2520AI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzAxYzU5YWRkYjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude CodeとCodex間で設計判断を共有する「Kagura Memory Cloud」開発：AI開発セッションを跨ぐ文脈管理の試み",
+    "summary_ja": "開発中にAIを切り替える際、コードだけでなく「なぜその仕様にしたのか」という設計判断が失われる問題がある。 Kagura Memory Cloudは、この開発の経緯や意思決定プロセスを外部記憶として保持し、Claude CodeやCodexといった異なるAIセッション間で参照可能にするツールだ。 案件一覧機能の実装を例に、複数のAIが同じ文脈を共有することで、AI連携開発における不整合を防ぎ、長期的な保守性を高める新しいワークフローを提案している。",
+    "translations": {
+      "ja": {
+        "title": "Claude CodeとCodex間で設計判断を共有する「Kagura Memory Cloud」開発：AI開発セッションを跨ぐ文脈管理の試み",
+        "summary": "開発中にAIを切り替える際、コードだけでなく「なぜその仕様にしたのか」という設計判断が失われる問題がある。 Kagura Memory Cloudは、この開発の経緯や意思決定プロセスを外部記憶として保持し、Claude CodeやCodexといった異なるAIセッション間で参照可能にするツールだ。 案件一覧機能の実装を例に、複数のAIが同じ文脈を共有することで、AI連携開発における不整合を防ぎ、長期的な保守性を高める新しいワークフローを提案している。"
+      },
+      "en": {
+        "title": "Building Kagura Memory Cloud to share design decisions between Claude Code and Codex across AI coding sessions",
+        "summary": "Switching between AI coding tools often leads to the loss of critical design context, specifically the reasoning behind architectural choices. Kagura Memory Cloud addresses this by externalizing project history and design decisions, creating a shared memory layer that both Claude Code and Codex can query. By demonstrating how to save implementation rationales during an \"issue list\" feature build, the project shows how disparate AI sessions can maintain continuity. For builders juggling multiple AI coding agents, this approach prevents the common pitfall of disjointed implementation logic. It serves as a necessary middleware for teams or solo developers who need to pass design intent seamlessly between models, ensuring consistency and long-term maintainability as coding assistants continue to evolve rapidly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-08T12:20:44.604Z"
+  },
+  {
+    "id": "art-1794140406980-vbxhg",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/harelix/aiport",
+    "published_at": "2026-11-08T11:44:16.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/1442299893/eab4e873-f9be-4afe-88da-39536401e783",
+    "title_ja": "Aiport：ローカルLLM開発を加速する自己改善型ゲートウェイが登場。Vibe Coderのための高速なプロトタイピング環境を構築",
+    "summary_ja": "Aiportは、開発スピードを重視する「Vibe Coder」向けのローカルLLMゲートウェイだ。 複数のローカルLLMを管理し、自己改善メカニズムでプロンプトやモデル選択を最適化する。 単なるLLMホストではなく、実験的なコード生成やプロトタイピングにおいて、モデル切り替えのコストを削減し試行錯誤に集中できる。 急なアイデアを素早くコード化したい個人開発者にとって、LLM連携のオーバーヘッドを減らす有力な選択肢だ。",
+    "translations": {
+      "ja": {
+        "title": "Aiport：ローカルLLM開発を加速する自己改善型ゲートウェイが登場。Vibe Coderのための高速なプロトタイピング環境を構築",
+        "summary": "Aiportは、開発スピードを重視する「Vibe Coder」向けのローカルLLMゲートウェイだ。 複数のローカルLLMを管理し、自己改善メカニズムでプロンプトやモデル選択を最適化する。 単なるLLMホストではなく、実験的なコード生成やプロトタイピングにおいて、モデル切り替えのコストを削減し試行錯誤に集中できる。 急なアイデアを素早くコード化したい個人開発者にとって、LLM連携のオーバーヘッドを減らす有力な選択肢だ。"
+      },
+      "en": {
+        "title": "Aiport Debuts as a Self-Improving Local LLM Gateway Designed to Accelerate Prototyping for Erratic Vibe Coders",
+        "summary": "Aiport emerges as a specialized local LLM gateway tailored for \"vibe coders\" who prioritize rapid, experimental development cycles. By orchestrating multiple local models through a unified interface, it utilizes a self-improving mechanism to optimize prompt handling and model selection on the fly. Rather than simply serving as a standard API proxy, Aiport focuses on minimizing the friction of switching models during active prototyping sessions, allowing developers to maintain focus during erratic coding flows. For solo builders who frequently pivot between model architectures to find the best logic, this tool drastically cuts down the operational overhead usually associated with managing complex, fragmented local LLM environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-08T12:20:06.980Z"
+  },
+  {
+    "id": "art-1794140376984-rlk7n",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/CiciSee/items/7186110364b70a1ede3f",
+    "published_at": "2026-11-08T11:47:37.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jTG9TZ3k5a3ZnVExlX3Joa2lBNEtOdmpQQ2s5OVN4SzFnWHdSRHJMVEdSb1BpMFZRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTI1Yzc1ZWE1MzhjOGYwZWJmOTYyYzExNTk3NmE1YzU2%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D3f40c768a41c4911f194076f36a1a250?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JTgzJTg1JUU1JUEwJUIxJUU1JThGJThFJUU5JTlCJTg2JUUzJTgxJUFFJUU2JTk2JUI5JUU2JUIzJTk1JUUzJTgxJThDJUU1JUE0JTg5JUUzJTgyJThGJUUzJTgyJThCJUVGJUJDJTlGJUU5JTlGJUIzJUU1JUEzJUIwJUU2JTk2JTg3JUU1JUFEJTk3JUU4JUI1JUI3JUUzJTgxJTkzJUUzJTgxJTk3JUUzJTgyJTkyJUU2JUI0JUJCJUU3JTk0JUE4JUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgyJUE0JUUzJTgzJUIzJUUzJTgzJTk3JUUzJTgzJTgzJUUzJTgzJTg4JUUzJTgxJUE4JUU3JTlGJUE1JUU4JUFEJTk4JUU2JTk1JUI0JUU3JTkwJTg2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MmI5MzdjNjQxMDVmZjQ2ZTNjZDUxYjM3ODVjODM1YTY&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBDaWNpU2VlJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YWJkZWZmNGZlZTViMjBkMzdmNGZkNWFjMzA3NzZlOWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=9693cf3776c186efaf76c214ab364938",
+    "title_ja": "検索エンジンから動画・音声へ転換する情報収集の潮流：文字起こし技術で知識の資産化を加速させる「インプット革命」の実際",
+    "summary_ja": "検索エンジン主体の情報収集から、YouTube動画やポッドキャストといった「音声・動画コンテンツ」を通じたインプットへの構造的な変化が起きている。 Whisper等の高精度な文字起こし技術とAI要約を組み合わせることで、流動的な動画情報を体系化されたテキストデータへと変換し、個人的な「知識データベース」として蓄積・検索可能にする手法が重要だ。",
+    "translations": {
+      "ja": {
+        "title": "検索エンジンから動画・音声へ転換する情報収集の潮流：文字起こし技術で知識の資産化を加速させる「インプット革命」の実際",
+        "summary": "検索エンジン主体の情報収集から、YouTube動画やポッドキャストといった「音声・動画コンテンツ」を通じたインプットへの構造的な変化が起きている。 Whisper等の高精度な文字起こし技術とAI要約を組み合わせることで、流動的な動画情報を体系化されたテキストデータへと変換し、個人的な「知識データベース」として蓄積・検索可能にする手法が重要だ。"
+      },
+      "en": {
+        "title": "The Shift from Search Engines to Audio/Video: Leveraging AI Transcription to Turn Media Consumption into Structured Personal Knowledge Assets",
+        "summary": "Information gathering is undergoing a structural shift, moving away from search engines toward video and audio-first consumption like YouTube, podcasts, and webinars. The challenge is that this format lacks inherent searchability, but the proliferation of high-fidelity transcription tools, combined with LLM-powered summarization, now allows users to transform fluid audiovisual streams into structured, searchable text data. Builders should view these transcripts not just as quick summaries, but as the foundational layer for a personal knowledge graph. By automating the capture and structuring of video content, you can convert passive media intake into a robust library of proprietary insights, ultimately sharpening the competitive edge in both software development and creative research workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-08T12:19:36.984Z"
+  },
+  {
+    "id": "art-1794140328768-pu3bp",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/zazazaboykikiki/n/n06e51afbdd99",
+    "published_at": "2026-11-08T12:02:30.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333024945/rectangle_large_type_2_533892a2478aa129344ad54ce348f635.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIモデルのAPI提供終了リスクへの備え：非エンジニアが自作アプリを点検し発覚した2つのサービス終了予定と取るべき対策",
+    "summary_ja": "AIモデルのAPI提供終了は、自作アプリの持続可能性を揺るがす重大なリスクだ。 実際に非エンジニアが自作アプリの依存先を点検したところ、2つのサービスでAPI提供終了予定が判明した。 特定のモデルに依存しすぎないマルチモデル対応の設計や、定期的な公式アナウンスの追跡体制こそが、個人開発者が長期的にアプリを維持し、ユーザーの信頼を守り抜くための必須スキルとなる。",
+    "translations": {
+      "ja": {
+        "title": "AIモデルのAPI提供終了リスクへの備え：非エンジニアが自作アプリを点検し発覚した2つのサービス終了予定と取るべき対策",
+        "summary": "AIモデルのAPI提供終了は、自作アプリの持続可能性を揺るがす重大なリスクだ。 実際に非エンジニアが自作アプリの依存先を点検したところ、2つのサービスでAPI提供終了予定が判明した。 特定のモデルに依存しすぎないマルチモデル対応の設計や、定期的な公式アナウンスの追跡体制こそが、個人開発者が長期的にアプリを維持し、ユーザーの信頼を守り抜くための必須スキルとなる。"
+      },
+      "en": {
+        "title": "Mitigating AI API deprecation risks: How a non-engineer uncovered two critical shutdown notices while auditing personal app dependencies",
+        "summary": "Relying heavily on specific AI models exposes personal apps to unexpected service outages that can break core features overnight. A non-engineer recently audited their project portfolio against deprecation notices, uncovering two instances where critical API support was scheduled to end. This real-world audit highlights why building for model portability or establishing a routine check of provider announcements is no longer optional for indie devs. The core takeaway is that technical stack fragility is a silent killer for solo products; proactively decoupling from single-model dependencies and monitoring provider roadmaps are now essential skills to maintain user trust and ensure long-term app viability in this volatile AI ecosystem."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-08T12:18:48.768Z"
+  },
+  {
     "id": "art-1794139336113-9w116",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -11633,32 +11738,6 @@
     "created_at": "2026-11-07T06:01:52.968Z"
   },
   {
-    "id": "art-1794029520603-rfowb",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/loyal_duck3134/n/nb9089919a20d",
-    "published_at": "2026-11-07T05:26:56.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333235042/rectangle_large_type_2_52e8f7e78acc7670b92a4231006ceaab.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "黒塗りPDFのデータ流出が多発：なぜ「隠したはずの文字」が読めてしまうのか？その技術的要因と防ぐための検証ツールを公開",
-    "summary_ja": "2025年以降、自治体や警察による黒塗りPDFの流出事故が相次いでいる。 原因はPDF上の黒塗り機能が「画像を被せているだけ」であり、裏側のテキストデータが保持されているためだ。 単に見た目を隠すだけではデータは完全に削除されない。 開発者は、ドキュメントの再レンダリングやラスタライズ処理を組み込み、機密情報を確実に物理削除する機能を実装する必要がある。 今回、この流出リスクを事前に検知できる検証ツールを開発・公開した。",
-    "translations": {
-      "ja": {
-        "title": "黒塗りPDFのデータ流出が多発：なぜ「隠したはずの文字」が読めてしまうのか？その技術的要因と防ぐための検証ツールを公開",
-        "summary": "2025年以降、自治体や警察による黒塗りPDFの流出事故が相次いでいる。 原因はPDF上の黒塗り機能が「画像を被せているだけ」であり、裏側のテキストデータが保持されているためだ。 単に見た目を隠すだけではデータは完全に削除されない。 開発者は、ドキュメントの再レンダリングやラスタライズ処理を組み込み、機密情報を確実に物理削除する機能を実装する必要がある。 今回、この流出リスクを事前に検知できる検証ツールを開発・公開した。"
-      },
-      "en": {
-        "title": "Why Redacted PDFs Leak Data: Understanding the Technical Risks of Masking Layers and a New Verification Tool for Developers",
-        "summary": "Recent leaks from government and legal sectors throughout 2025 demonstrate a critical security failure: blacked-out PDF sections often retain the underlying text layer because simple redaction frequently acts as a visual overlay rather than actual data deletion. For developers building document-handling workflows, this is a dangerous pitfall; if you simply cover sensitive fields without flattening or rasterizing the document, the original content remains accessible to anyone inspecting the file's metadata or text stream. Building robust security requires enforcing true data destruction before export. To help address this, I am releasing a verification tool designed to audit files for residual data, ensuring your application’s redaction pipeline actually scrubs information rather than just obscuring it."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発"
-    ],
-    "created_at": "2026-11-07T05:32:00.603Z"
-  },
-  {
     "id": "art-1794029509096-of4ar",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -15894,32 +15973,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-06T15:02:24.278Z"
-  },
-  {
-    "id": "art-1793977337558-5aura",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.physicl.ai/insights/inside-studio",
-    "published_at": "2026-11-06T14:37:02.000Z",
-    "og_image_url": "https://cdn.prod.website-files.com/6abe2f7f24d2b0156b3974ba/6aedd12fb7573b31307a354d_6aedd116c77faa6d377378a3_inside-studio-hero-dining.jpeg",
-    "title_ja": "物理AIはネット学習に適さない？「Physicl.ai」が挑むロボット学習用のシミュレーション環境構築の挑戦",
-    "summary_ja": "物理AIの発展には膨大なインターネットデータだけでは不十分であり、物理法則に基づいた精緻なシミュレーション空間での学習が不可欠だ。 Physicl.aiは、ロボットが現実世界で適応するために必要な「学習用ワールド」の構築技術を公開した。 単なるデータ収集ではなく、因果関係や物理的制約をシミュレート可能な環境をゼロから設計することが、自律ロボット開発の次なるブレイクスルーとなる。",
-    "translations": {
-      "ja": {
-        "title": "物理AIはネット学習に適さない？「Physicl.ai」が挑むロボット学習用のシミュレーション環境構築の挑戦",
-        "summary": "物理AIの発展には膨大なインターネットデータだけでは不十分であり、物理法則に基づいた精緻なシミュレーション空間での学習が不可欠だ。 Physicl.aiは、ロボットが現実世界で適応するために必要な「学習用ワールド」の構築技術を公開した。 単なるデータ収集ではなく、因果関係や物理的制約をシミュレート可能な環境をゼロから設計することが、自律ロボット開発の次なるブレイクスルーとなる。"
-      },
-      "en": {
-        "title": "Physical AI needs more than web data: How Physicl.ai builds simulated worlds for robot training",
-        "summary": "Physical AI development hits a wall if it relies solely on scraping internet data, as robots require grounding in consistent physical laws that generic LLM datasets lack. Physicl.ai argues that the future of embodied AI lies in constructing high-fidelity simulation worlds where agents can learn through trial and error. Rather than just ingesting existing media, builders must engineer environments that mirror real-world causal dynamics and spatial constraints. For robotics engineers, this underscores a shift away from pure data-scaling laws toward building robust, physics-compliant training simulations. The takeaway is clear: mastering environment synthesis is the new critical bottleneck for anyone trying to move AI agents out of the screen and into the physical world."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-06T15:02:17.558Z"
   },
   {
     "id": "art-1793977315812-dcwx3",
@@ -20534,33 +20587,6 @@
       "開発"
     ],
     "created_at": "2026-11-05T19:31:50.355Z"
-  },
-  {
-    "id": "art-1793906223435-yqi4p",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/picnic/items/00159dabbf1df7b893c0",
-    "published_at": "2026-11-05T18:55:23.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS0oza2lJamRVZjd6UHZDUHNqTGhkcHFzbDlYU2MweGJscHRZRzgwOWd5dlhYWWh2UTElM0RzOTYtYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OGM4MDU5ODEyMzY3Y2ZlNmIzMDVkYTMzMjAwNjcwMDE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dfd6ab3c0ea5267b0e6bf5b2f6bc36ab2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9R2VtaW5pJTIwT21uaSUyMDEuMiUyMEZsYXNoJTIwR0ElRUYlQkMlOUElRTUlOEIlOTUlRTclOTQlQkIlRTclOTQlOUYlRTYlODglOTAzMCUyNSVFNSU4MCVBNCVFNCVCOCU4QiVFMyU4MSU5MiVFMyU4MSVBODEuMSUyMEZsYXNoJUU4JTg3JUFBJUU1JThCJTk1JUU3JUE3JUJCJUU4JUExJThDJUUzJTgxJUFFJUU1JUFGJUJFJUU1JUJGJTlDJUUzJTgyJUFDJUUzJTgyJUE0JUUzJTgzJTg5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NWVhM2Q2YWRlNzhiZGZhMDQ0NGE0NmY2MzZiMDA3NWU&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwaWNuaWMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1iZTllNDg4YzE3YjgzYzFmZGE3MTQ2MjU5MjlkYzU1ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=abb028cc96d38bba9c71d9f102643268",
-    "title_ja": "Google、Gemini 1.5 Flashの新モデル「1.2 Flash」を一般提供開始――動画生成コストを30%削減し、開発者の移行プロセスを公開",
-    "summary_ja": "Googleの動画生成モデル「Gemini 1.2 Flash」が一般提供を開始しました。 これに伴い、動画出力料金が従来比で30%引き下げられ、100万トークンあたり12ドルに設定されています。 また、既存の1.1 Flashから1.2への自動移行スケジュールの詳細や、新モデルの精度向上とコスト最適化を活用するための技術的なアップデート内容が公開されました。",
-    "translations": {
-      "ja": {
-        "title": "Google、Gemini 1.5 Flashの新モデル「1.2 Flash」を一般提供開始――動画生成コストを30%削減し、開発者の移行プロセスを公開",
-        "summary": "Googleの動画生成モデル「Gemini 1.2 Flash」が一般提供を開始しました。 これに伴い、動画出力料金が従来比で30%引き下げられ、100万トークンあたり12ドルに設定されています。 また、既存の1.1 Flashから1.2への自動移行スケジュールの詳細や、新モデルの精度向上とコスト最適化を活用するための技術的なアップデート内容が公開されました。"
-      },
-      "en": {
-        "title": "Google General Availability for Gemini 1.2 Flash: 30% Video Cost Reduction and Critical Migration Guide for Developers",
-        "summary": "Google has officially moved the Gemini 1.2 Flash video generation model to general availability, accompanied by a significant 30% price reduction for video output, now set at $12 per million tokens. This update not only lowers operational expenses for developers but also includes a detailed technical guide for transitioning from the previous 1.1 Flash version. The documentation outlines automatic migration timelines and highlights improvements in model accuracy alongside the optimized pricing structure. For builders integrating video generation into their pipelines, this shift represents a strategic opportunity to decrease infrastructure overhead while potentially enhancing output quality. Developers should review the new pricing tier and migration milestones immediately to ensure their services maintain stability and cost-efficiency during the transition."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-11-05T19:17:03.435Z"
   },
   {
     "id": "art-1793906210483-3xbh2",
@@ -31822,33 +31848,6 @@
       "研究"
     ],
     "created_at": "2026-11-02T19:50:07.119Z"
-  },
-  {
-    "id": "art-1793648016291-bij5f",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/jimsnote/articles/94442960f40c8f",
-    "published_at": "2026-11-02T13:13:15.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--X_1tCx12--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25A9%259F%25E5%25AF%2586PDF%25E3%2582%2592%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2581%25AB1%25E3%2583%2590%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2582%25E9%2580%2581%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%259ANext.js%2520%252B%2520WebAssembly%2520%25E3%2581%25A7%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E5%25AE%258C%25E7%25B5%2590%25E3%2581%25AEPDF%25E6%259A%2597%25E5%258F%25B7%25E5%258C%2596...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:jimsnote%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3ZkdVd5R3JOc3UxclZhY3pxMFNYT0dLZTBfaUpwY19hMFdsVWgtemhsTGxBZ3MzVT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "機密PDFをサーバーへ送信せずブラウザ完結で暗号化するWebアプリを開発――Next.jsとWebAssemblyでプライバシーを保護する設計手法",
-    "summary_ja": "機密文書を外部サーバーへアップロードする既存のオンラインPDFツールに疑問を感じ、Next.jsとWebAssemblyを活用したブラウザ完結型のPDF暗号化アプリを個人開発した。 サーバーサイドへデータを一切送らず、ローカル環境だけで処理を完結させることで、機密性の高い源泉徴収票やマイナンバー資料も安全に扱える。 開発者は、クラウド依存を避けブラウザの処理能力を活かす設計が、ユーザーのセキュリティ不安を解消する強力な価値提供になることを学べる。",
-    "translations": {
-      "ja": {
-        "title": "機密PDFをサーバーへ送信せずブラウザ完結で暗号化するWebアプリを開発――Next.jsとWebAssemblyでプライバシーを保護する設計手法",
-        "summary": "機密文書を外部サーバーへアップロードする既存のオンラインPDFツールに疑問を感じ、Next.jsとWebAssemblyを活用したブラウザ完結型のPDF暗号化アプリを個人開発した。 サーバーサイドへデータを一切送らず、ローカル環境だけで処理を完結させることで、機密性の高い源泉徴収票やマイナンバー資料も安全に扱える。 開発者は、クラウド依存を避けブラウザの処理能力を活かす設計が、ユーザーのセキュリティ不安を解消する強力な価値提供になることを学べる。"
-      },
-      "en": {
-        "title": "Building a browser-based PDF encryption tool with Next.js and WebAssembly to eliminate server-side data exposure for sensitive documents",
-        "summary": "Concerned by the security risks of uploading confidential PDFs to unknown online tools, the developer built a local-first PDF encryption web app using Next.js and WebAssembly. By performing all cryptographic operations directly within the user's browser, the application ensures that sensitive documents like tax forms never touch a remote server, effectively solving the privacy paradox of protecting files by uploading them. This project demonstrates how shifting computation to the client side via WASM can protect user data while removing infrastructure overhead. For indie developers, this architectural choice creates a compelling value proposition: offering high-trust security by design, thereby addressing critical user fears that traditional cloud-reliant tools cannot satisfy, while simultaneously reducing hosting complexity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-02T19:33:36.291Z"
   },
   {
     "id": "art-1793647953420-qz0tp",
