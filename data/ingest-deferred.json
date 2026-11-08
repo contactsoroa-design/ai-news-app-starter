@@ -32,14 +32,6 @@
     "saved_at": "2026-11-08T15:34:05.135Z"
   },
   {
-    "url": "https://zenn.dev/a1221/articles/cron-parser-coverage-found-bugs",
-    "source_id": "source-zenn-indie",
-    "title": "カバレッジの低いcronパーサーにテストを足したら、mon と日曜の7が一致しなかった",
-    "pubDate": "2026-11-08T06:51:31.000Z",
-    "snippet": "はじめに cron式を日本語・英語で説明して、次回の実行時刻を出すツールを公開しています。ロジックは CronParserTool というクラスに分けてあり、テストも書いてありました。 先日、vitest にカバレッジ計測（@vitest/coverage-v8）を入れました。全体は悪くない数字でしたが、ファイルごとに見ると低いところが4つありました。その中の cron-parser.ts にテストを足していたら、実際に使われる書き方が動いていませんでした。 その記録です。 先に結論です。 0 0 * * mon や 0 0 * jan * は、次回実行が空になる 曜日の 7（日...",
-    "saved_at": "2026-11-08T15:34:05.135Z"
-  },
-  {
     "url": "https://estherweidauer.com/articles/why-resist-generative-ai.html",
     "source_id": "source-hn",
     "title": "I Resist Generative \"AI\"",
