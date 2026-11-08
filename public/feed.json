@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794133022368-t2ok7",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/murooka_az/articles/claude-degraded-or-correction-unreachable",
+    "published_at": "2026-11-08T00:26:19.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xZIjudBS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E6%258C%2587%25E7%25A4%25BA%25E3%2581%25A9%25E3%2581%258A%25E3%2582%258A%25E3%2581%25AB%25E3%2582%2584%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25E3%2580%258D%25E3%2581%25A8%25E8%25A8%2580%25E3%2581%2586%25E3%2581%25AE%25E3%2581%25AB%25E5%25BE%2593%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25AA%25E3%2581%2584Claude%25E3%2580%2582%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25AF%25E3%2580%2581AI%25E8%2587%25AA%25E8%25BA%25AB%25E3%2581%258C%25E6%258C%2587%25E7%25A4%25BA%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%2584%25E3%2583%25A1%25E3%2583%25A2%25E3%2583%25AA%25E3%2581%25AB%25E6%259B%25B8%25E3%2581%258D%25E6%25AE%258B%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Murooka%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2RlMjA5NmUyNDguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "「指示通り」と言いつつ動かないClaude Code、原因は「メモリのゴミ」――AIが過去の仕様を誤学習する仕組みと解決策",
+    "summary_ja": "Claude Codeで「以前より話が通じない」「廃止機能を使おうとする」事象は、AIが長期記憶に古い指示ファイルやメモリ情報を保持し続けているのが原因だ。 AIは文脈よりもメモリの情報を優先する場合があり、これが「指示通り」という誤った回答を誘発する。 開発者は、プロジェクトのメモリ（.claude/memoryなど）を定期的にクリーンアップし、古い仕様を明示的に削除することで、AIの挙動を正常に修正する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "「指示通り」と言いつつ動かないClaude Code、原因は「メモリのゴミ」――AIが過去の仕様を誤学習する仕組みと解決策",
+        "summary": "Claude Codeで「以前より話が通じない」「廃止機能を使おうとする」事象は、AIが長期記憶に古い指示ファイルやメモリ情報を保持し続けているのが原因だ。 AIは文脈よりもメモリの情報を優先する場合があり、これが「指示通り」という誤った回答を誘発する。 開発者は、プロジェクトのメモリ（.claude/memoryなど）を定期的にクリーンアップし、古い仕様を明示的に削除することで、AIの挙動を正常に修正する必要がある。"
+      },
+      "en": {
+        "title": "Why Claude Code ignores instructions: How stale memory logs sabotage your prompts and how to fix it",
+        "summary": "Frequent Claude Code users often experience sudden regressions where the AI insists it followed instructions despite delivering incorrect results or reviving deprecated code. The root cause is stale data in the AI’s automated memory or custom instruction files, which it prioritizes over newer context. Because the model treats these legacy logs as persistent source-of-truth instructions, it forces outdated patterns even when they conflict with the current repository state. For builders, the fix is proactive maintenance: you must audit and purge local memory files (such as .claude/memory) to clear these hidden hallucinations. Treating your AI's persistent memory like a database that requires regular garbage collection is now a required operational step for any long-lived LLM agent project."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-08T10:17:02.368Z"
+  },
+  {
+    "id": "art-1794133014000-39pkp",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shiroi1229/n/n42646e6230ca",
+    "published_at": "2026-11-08T10:16:07.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333735328/rectangle_large_type_2_45c2819f5b9eeb7824898a3f9c46d2dc.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "多段オーケストレーション×ハルシネーション定量検知で自律エージェントの退行を防ぐ「RCAスコア98」の検証フレームワーク",
+    "summary_ja": "自律エージェント開発の最大のボトルネックは、論文ベースの実装と実運用環境の乖離によるハルシネーションの多発と、原因特定が困難な手戻り損失にある。 解決策として提案されるのは、多段協調オーケストレーションの境界監視とハルシネーション定量検知を統合した「Gen-2型」の検証ハーネスだ。 各工程での精度劣化やレイテンシ増大を局所化するこの手法により、無駄な計算リソースの浪費を防ぎ、98％の精度で根本原因分析（RCA）を自動化する。",
+    "translations": {
+      "ja": {
+        "title": "多段オーケストレーション×ハルシネーション定量検知で自律エージェントの退行を防ぐ「RCAスコア98」の検証フレームワーク",
+        "summary": "自律エージェント開発の最大のボトルネックは、論文ベースの実装と実運用環境の乖離によるハルシネーションの多発と、原因特定が困難な手戻り損失にある。 解決策として提案されるのは、多段協調オーケストレーションの境界監視とハルシネーション定量検知を統合した「Gen-2型」の検証ハーネスだ。 各工程での精度劣化やレイテンシ増大を局所化するこの手法により、無駄な計算リソースの浪費を防ぎ、98％の精度で根本原因分析（RCA）を自動化する。"
+      },
+      "en": {
+        "title": "Advanced Agent Testing: Leveraging Multi-Stage Orchestration and Hallucination Metrics to Stop Regression at 98% RCA Accuracy",
+        "summary": "Autonomous agent implementations often fail when moving from theoretical benchmarks to production due to unmonitored hallucinations and poor orchestration boundaries. To combat this, developers should adopt a 'Gen-2' verification harness that combines multi-stage orchestration control with rigorous, automated hallucination detection. This framework localizes precision drops and latency spikes within specific pipeline segments, preventing the inefficiency of over-allocating compute resources to fix systemic errors. By achieving 98% accuracy in Root Cause Analysis (RCA), the system helps engineers pinpoint exactly where logic or reliability breaks down. For builders deploying AI agents in the wild, this methodology replaces guesswork with data-driven guardrails, ensuring that agent behavior remains stable and efficient even as your system complexity and scaling demands grow rapidly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-08T10:16:54.000Z"
+  },
+  {
+    "id": "art-1794133007493-wi9l8",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/singularity/articles/llm-evals-tools-data-optimizers",
+    "published_at": "2026-11-08T00:27:41.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3cfiW7YZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:evals%2520%25E3%2581%25AE%25E6%25AC%25A1%25E3%2581%25AE%25E4%25B8%2580%25E6%25AD%25A9%2520%25E2%2594%2580%25E2%2594%2580%2520%25E8%25A9%2595%25E4%25BE%25A1%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%25BB%25E7%25B7%25B4%25E7%25BF%2592%25E5%2595%258F%25E9%25A1%258C%25E3%2581%25AE%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2583%25BB%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E3%2581%25AE%25E8%2587%25AA%25E5%258B%2595%25E6%2594%25B9%25E5%2596%2584%25E3%2582%2592%25E3%2580%2581%25E5%2585%25AC%25E5%25BC%258F%25E6%2596%2587%25E6%259B%25B8%25E3%2581%25A8%25E8%25AB%2596%25E6%2596%2587%25E3%2581%25A7%25E8%25AA%25BF%25E3%2581%25B9%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Isamu%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZiNjM5MTg4YzEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25AE%25E3%2583%25A5%25E3%2583%25A9%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25BB%25E3%2582%25BD%25E3%2582%25B5%25E3%2582%25A8%25E3%2583%2586%25E3%2582%25A3%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2g3ODg4Mk5lcU4xYUxYZWxhbjZ5TDYzUVBVdGs3MjQ0aGs0QjdBdWc9czI1MC1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI評価の次なる一手：自動テスト生成とプロンプト改善を加速するツール選定と実装手法を徹底解説",
+    "summary_ja": "AIの出力を測定する「evals」の基本を習得した開発者が次に直面する「評価ツール選定」「練習問題の自動生成」「プロンプトの自動改善」という3つの壁。 本稿では、最新の公式ドキュメントと論文を基に、これらのプロセスを自動化するための設計思想とアプローチを深掘りする。 単なる評価環境の構築にとどまらず、反復的な改善サイクルをシステムに組み込むことが、AI開発の品質管理における決定的な差別化要因となる。",
+    "translations": {
+      "ja": {
+        "title": "AI評価の次なる一手：自動テスト生成とプロンプト改善を加速するツール選定と実装手法を徹底解説",
+        "summary": "AIの出力を測定する「evals」の基本を習得した開発者が次に直面する「評価ツール選定」「練習問題の自動生成」「プロンプトの自動改善」という3つの壁。 本稿では、最新の公式ドキュメントと論文を基に、これらのプロセスを自動化するための設計思想とアプローチを深掘りする。 単なる評価環境の構築にとどまらず、反復的な改善サイクルをシステムに組み込むことが、AI開発の品質管理における決定的な差別化要因となる。"
+      },
+      "en": {
+        "title": "Beyond Basics: A Deep Dive into Automating Test Case Generation and Prompt Optimization for AI Evaluation",
+        "summary": "Having mastered the basics of AI evaluation frameworks (evals), the next logical phase for builders involves tackling automated test case generation, optimal tool selection, and autonomous prompt refinement. This technical breakdown synthesizes insights from current official documentation and research papers to demonstrate how to automate the evaluation loop rather than relying on manual assessment. The write-up explains that true scalability in AI development requires moving beyond static testing toward systems that generate their own benchmarks and iterate on prompts based on performance data. For developers shipping AI applications, the strategic takeaway is to move from reactive debugging to a proactive, automated pipeline where evaluation results feed directly back into model instruction sets for consistent optimization."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-08T10:16:47.493Z"
+  },
+  {
+    "id": "art-1794133000852-t6rgi",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://news.ncsu.edu/2026/11/new-techniques-to-prevent-backdoor-attacks/",
+    "published_at": "2026-11-08T09:32:43.000Z",
+    "og_image_url": "https://news.ncsu.edu/wp-content/uploads/2026/11/Kim-backdoor-header-2026.jpg",
+    "title_ja": "ノースカロライナ州立大学の研究チーム、AIモデルのバックドア攻撃を未然に防ぐ新しい防御手法を開発——モデル精度の低下なしに検知・除去が可能に",
+    "summary_ja": "ノースカロライナ州立大学の研究チームが、AIモデルに潜む悪意あるバックドアを検知・除去する新たな防御フレームワークを公開した。 従来の防御手法とは異なり、モデル自体の予測精度や性能を一切損なうことなく、特定のトリガー入力に対する不正な挙動を特定できる点が革新的だ。 AIの信頼性向上を目指す開発者にとって、安全なモデル構築のための重要な技術的指針となる。 サプライチェーン攻撃が懸念されるAI運用環境において、このアプローチはセキュリティ基盤を強化する強力な手段となり得る。",
+    "translations": {
+      "ja": {
+        "title": "ノースカロライナ州立大学の研究チーム、AIモデルのバックドア攻撃を未然に防ぐ新しい防御手法を開発——モデル精度の低下なしに検知・除去が可能に",
+        "summary": "ノースカロライナ州立大学の研究チームが、AIモデルに潜む悪意あるバックドアを検知・除去する新たな防御フレームワークを公開した。 従来の防御手法とは異なり、モデル自体の予測精度や性能を一切損なうことなく、特定のトリガー入力に対する不正な挙動を特定できる点が革新的だ。 AIの信頼性向上を目指す開発者にとって、安全なモデル構築のための重要な技術的指針となる。 サプライチェーン攻撃が懸念されるAI運用環境において、このアプローチはセキュリティ基盤を強化する強力な手段となり得る。"
+      },
+      "en": {
+        "title": "North Carolina State University researchers develop a robust defense framework to neutralize backdoor attacks on AI models without impacting accuracy",
+        "summary": "Researchers at North Carolina State University have unveiled a new defense mechanism designed to detect and eliminate malicious backdoor triggers within AI models without sacrificing prediction accuracy or overall performance. Unlike prior techniques that often degrade utility or require extensive retraining, this framework isolates adversarial inputs that force unintended behaviors. For builders and AI engineers focused on production security, this research provides a viable pathway to harden models against supply chain vulnerabilities. As AI adoption scales, the ability to sanitize models against hidden exploits before deployment becomes critical. This advancement offers a concrete technical solution for teams looking to secure their pipelines against adversarial tampering while maintaining the high-fidelity performance required for modern enterprise applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-08T10:16:40.852Z"
+  },
+  {
     "id": "art-1794132157603-3f4ku",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -11899,33 +12004,6 @@
     "created_at": "2026-11-07T03:01:59.371Z"
   },
   {
-    "id": "art-1794020512136-glblj",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/invest_build_log/n/nb8ab15d42582",
-    "published_at": "2026-11-07T02:54:35.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/9711decfdb307445be6679838f17fde6ea8a2d3f.png",
-    "title_ja": "会社員が個人開発するAI投資アプリの検証記録：予測シグナルと実運用結果を公開し投資判断の精度を徹底分析",
-    "summary_ja": "個人開発でiPhoneおよびiPad向けAI投資アプリを構築する過程を公開。 AIが生成する売買シグナルと実際の市場結果を継続的に記録・分析し、個人の投資判断にどの程度の精度で寄与できるかを検証する。 開発の裏側から運用の実態までを透明化することで、開発者自身が投資アプリの実用性を証明する挑戦だ。 リリース後は一般ユーザーも利用可能な製品として提供を目指しており、AIをツールとして扱う個人投資家のための新しい道標となることが期待される。",
-    "translations": {
-      "ja": {
-        "title": "会社員が個人開発するAI投資アプリの検証記録：予測シグナルと実運用結果を公開し投資判断の精度を徹底分析",
-        "summary": "個人開発でiPhoneおよびiPad向けAI投資アプリを構築する過程を公開。 AIが生成する売買シグナルと実際の市場結果を継続的に記録・分析し、個人の投資判断にどの程度の精度で寄与できるかを検証する。 開発の裏側から運用の実態までを透明化することで、開発者自身が投資アプリの実用性を証明する挑戦だ。 リリース後は一般ユーザーも利用可能な製品として提供を目指しており、AIをツールとして扱う個人投資家のための新しい道標となることが期待される。"
-      },
-      "en": {
-        "title": "Developer documents building an AI investment app: Publishing signal predictions vs. actual market performance for verification",
-        "summary": "A solo developer is chronicling the creation of an AI-powered investment app for iPhone and iPad, specifically focused on verifying the efficacy of AI-generated trading signals. By transparently tracking predictions against real-world market outcomes, the project aims to quantify the actual value AI can provide for personal investment decision-making. This effort serves as a practical experiment, moving beyond hypothetical models to real-world performance validation. As the developer works toward a public launch, the roadmap includes sharing both technical development hurdles and the rigorous analysis of the AI's success rate. For other builders, this provides a transparent look at building data-heavy financial tools where trust is earned through evidence rather than just features."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-07T03:01:52.136Z"
-  },
-  {
     "id": "art-1794020502903-77owk",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -11976,33 +12054,6 @@
       "開発"
     ],
     "created_at": "2026-11-07T02:46:56.702Z"
-  },
-  {
-    "id": "art-1794019604943-5gc1m",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/loyal_panda4479/n/ne3766409379b",
-    "published_at": "2026-11-07T02:16:14.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332446335/rectangle_large_type_2_219a612b7282d0bb1fb6881998164c2e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "会社員が個人開発したコスメ管理アプリ「コスメる」の舞台裏――課題解決と収益化への挑戦",
-    "summary_ja": "会社員エンジニアが、自身や周囲のコスメ管理に対する悩みを解決するためにiPhoneアプリ「コスメる」を個人開発した。 開封日や購入時期の把握といった日常の不便を解消しつつ、ユーザーの声を取り入れながら継続的な改善を目指す。 本プロジェクトは、個人の課題からプロダクトのニーズを検証し、副業としての収益化にも挑戦する等身大の個人開発事例として、多くのビルダ―にとって参考になる取り組みだ。",
-    "translations": {
-      "ja": {
-        "title": "会社員が個人開発したコスメ管理アプリ「コスメる」の舞台裏――課題解決と収益化への挑戦",
-        "summary": "会社員エンジニアが、自身や周囲のコスメ管理に対する悩みを解決するためにiPhoneアプリ「コスメる」を個人開発した。 開封日や購入時期の把握といった日常の不便を解消しつつ、ユーザーの声を取り入れながら継続的な改善を目指す。 本プロジェクトは、個人の課題からプロダクトのニーズを検証し、副業としての収益化にも挑戦する等身大の個人開発事例として、多くのビルダ―にとって参考になる取り組みだ。"
-      },
-      "en": {
-        "title": "Inside the launch of 'Cosmeru': A side-project developer’s journey in solving niche consumer pain points",
-        "summary": "A full-time salaryman recently launched 'Cosmeru,' an iPhone app designed to streamline cosmetics inventory management by tracking usage, expiration, and purchasing dates. The developer identifies these pain points as common obstacles for beauty consumers, positioning the app as a practical solution to inventory clutter. Beyond just solving a personal problem, the creator is actively using the project to validate market demand through user feedback loops and exploring sustainable monetization as a solo developer. This case study illustrates how individual builders can transform everyday frustrations into viable software products, providing a relatable blueprint for those looking to balance full-time employment with the realities of shipping and scaling their own niche applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-07T02:46:44.943Z"
   },
   {
     "id": "art-1794019598641-9bviz",
@@ -25041,32 +25092,6 @@
     "created_at": "2026-11-04T13:31:52.007Z"
   },
   {
-    "id": "art-1793799103754-ntqla",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/frb_tamasub/articles/ai-collaboration11-frb-kana-flick-press-conference",
-    "published_at": "2026-11-04T13:24:35.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Rd4z7rE_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E5%258D%2594%25E5%2583%258D%25EF%25BC%259A%25E3%2583%2591%25E3%2582%25BD%25E3%2582%25B3%25E3%2583%25B3%25E3%2581%25A7%25E3%2581%258B%25E3%2581%25AA%25E3%2583%2595%25E3%2583%25AA%25E3%2583%2583%25E3%2582%25AF%25E5%2585%25A5%25E5%258A%259B%25E4%25BD%25BF%25E3%2581%2586%25E4%25BA%25BA%25E3%2581%25AA%25E3%2582%2593%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25EF%25BC%259F%25EF%25BC%2588%25E7%25AC%2591%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Fishing%2520Rod%2520Benchm...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2R0U29uVm51ekRNcGZEWGExMDMwSzl1eHV5WTFsRllUU2lGYmp1a1c0M3pIa3REWTNfdz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "マウスの移動距離削減を目指す「自作リモコン」が生んだ副産物、PC上でかなフリック入力ができるインターフェース開発の実験と思考プロセス",
-    "summary_ja": "PC操作の効率化を目指し、マウスの移動距離を削減する小さな自作リモコンを開発した。 本来の目的は「ぐりぐり」操作による左右移動の代替だったが、開発中に「フリック入力がPC上でも実現できるのでは」という着想を得た。 AIとの対話を通じて違和感を拾い上げ、思考を拡張していく実験的な試みである。 技術的な実装以上に、日々の不便から全く新しいUXを見出すという開発の初期衝動が重要であることを物語っている。",
-    "translations": {
-      "ja": {
-        "title": "マウスの移動距離削減を目指す「自作リモコン」が生んだ副産物、PC上でかなフリック入力ができるインターフェース開発の実験と思考プロセス",
-        "summary": "PC操作の効率化を目指し、マウスの移動距離を削減する小さな自作リモコンを開発した。 本来の目的は「ぐりぐり」操作による左右移動の代替だったが、開発中に「フリック入力がPC上でも実現できるのでは」という着想を得た。 AIとの対話を通じて違和感を拾い上げ、思考を拡張していく実験的な試みである。 技術的な実装以上に、日々の不便から全く新しいUXを見出すという開発の初期衝動が重要であることを物語っている。"
-      },
-      "en": {
-        "title": "Beyond efficient navigation: How a custom-built mouse remote for PC unexpectedly inspired a native flick-input interface for Japanese typing",
-        "summary": "Seeking to reduce unnecessary mouse movement, a developer prototyped a compact, custom remote control that replaces traditional scroll-click functions with tactile flick actions. During the development process, the creator realized that if this device could trigger directional navigation, it could theoretically enable mobile-style flick input on a desktop computer. This project serves as a practical experiment in 'thought expansion' where AI collaboration helps identify subtle UX improvements and innovative interaction patterns. Beyond the technical implementation of the input method, the project highlights the critical value of curiosity-driven development, demonstrating how observing small friction points in daily workflows can unlock completely new user interface paradigms that challenge standard hardware interaction norms."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-04T13:31:43.754Z"
-  },
-  {
     "id": "art-1793798211225-gnmub",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -25092,33 +25117,6 @@
       "開発"
     ],
     "created_at": "2026-11-04T13:16:51.225Z"
-  },
-  {
-    "id": "art-1793798203232-cgqbz",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/talks_tldr_jp/articles/tldr41-altman-prediction",
-    "published_at": "2026-11-04T05:00:08.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--r1cuOTo7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Altman%2520%25E5%259B%259E%25E3%2581%25AE%25201%2520%25E6%259C%25AC%25E3%2581%25A0%25E3%2581%2591%25E3%2581%258C%25202%252C299%2520%25E5%259B%259E%25E3%2580%2582%25E5%2590%258C%25E3%2581%2598%25E4%25BA%25BA%25E3%2582%2592%25E3%2582%2582%25E3%2581%2586%25E4%25B8%2580%25E5%25BA%25A6%25E5%2587%25BA%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2581%25A9%25E3%2581%2586%25E3%2581%25AA%25E3%2582%258B%25E3%2581%258B%25EF%25BC%2588%252341%2520%25E6%258A%2595%25E7%25A8%25BF%25E5%2589%258D%25E4%25BA%2588%25E6%25B8%25AC%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%25AE%25A1%25E7%2590%2586%25E4%25BA%25BAK%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NmMmY3NjQ3NjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Tech Talkを縦型動画へ転用：Sam Altman回は伸びるか？投稿前予測と実際の視聴回数の乖離を追う実験",
-    "summary_ja": "海外のTech Talkを縦型ショート動画へ切り出しTikTokへ投稿する実験プロジェクト。 特にStanfordでのSam Altman氏の講演から作成したクリップで、投稿前に「どの動画が伸びるか」を予測するプロセスと、実測値との突き合わせ検証を行っている。 同じ話者を連続で起用した場合の視聴回数変化や、コンテンツの切り抜きにおける予測の難しさをデータで可視化する。",
-    "translations": {
-      "ja": {
-        "title": "Tech Talkを縦型動画へ転用：Sam Altman回は伸びるか？投稿前予測と実際の視聴回数の乖離を追う実験",
-        "summary": "海外のTech Talkを縦型ショート動画へ切り出しTikTokへ投稿する実験プロジェクト。 特にStanfordでのSam Altman氏の講演から作成したクリップで、投稿前に「どの動画が伸びるか」を予測するプロセスと、実測値との突き合わせ検証を行っている。 同じ話者を連続で起用した場合の視聴回数変化や、コンテンツの切り抜きにおける予測の難しさをデータで可視化する。"
-      },
-      "en": {
-        "title": "Repurposing Tech Talks into Short-Form Video: Tracking Prediction Accuracy for Sam Altman Content Clips",
-        "summary": "This experiment documents a workflow for repurposing lengthy tech talks into vertical short-form clips for TikTok. By generating 9–11 clips from single source videos—such as Sam Altman’s recent Stanford GSB lecture—the creator establishes a rigorous pre-posting prediction model to forecast which clips will perform best before comparing them against actual metrics. For the 41st installment, they test whether repeating a speaker negatively impacts engagement or if specific narrative arcs hold constant audience attention. For builders managing content pipelines, the takeaway is that systematic hypothesis testing before hitting 'publish' is essential for uncovering what actually drives algorithmic virality. Analyzing the gap between pre-post sentiment and real-world views provides a data-driven edge for optimizing content distribution strategy at scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "マーケ・集客・ASO",
-      "SNS・ショート動画",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-04T13:16:43.232Z"
   },
   {
     "id": "art-1793797557499-074fx",
