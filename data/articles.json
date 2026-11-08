@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794132157603-3f4ku",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://dorcohen.dev/posts/what-can-ai-actually-hack/",
+    "published_at": "2026-11-08T09:42:03.000Z",
+    "og_image_url": "https://dorcohen.dev/og/what-can-ai-actually-hack.png",
+    "title_ja": "フロントリア・ラボの最新調査で判明、AIがサイバー攻撃を実行する際の真の脅威と「自動ハッキング」の現状と限界",
+    "summary_ja": "フロントリア・ラボが公開した調査報告書は、AIエージェントが現代のサイバー攻撃でどこまで自律的に悪用可能かを検証した結果を詳報している。 AIはreconnaissance（偵察）や既知の脆弱性突入には一定の能力を発揮するが、複雑な多段攻撃の計画立案には依然として大きな壁があることが浮き彫りとなった。",
+    "translations": {
+      "ja": {
+        "title": "フロントリア・ラボの最新調査で判明、AIがサイバー攻撃を実行する際の真の脅威と「自動ハッキング」の現状と限界",
+        "summary": "フロントリア・ラボが公開した調査報告書は、AIエージェントが現代のサイバー攻撃でどこまで自律的に悪用可能かを検証した結果を詳報している。 AIはreconnaissance（偵察）や既知の脆弱性突入には一定の能力を発揮するが、複雑な多段攻撃の計画立案には依然として大きな壁があることが浮き彫りとなった。"
+      },
+      "en": {
+        "title": "Frontier Labs Analysis Reveals True Capabilities of AI Agents in Performing Cyberattacks and Automated Hacking",
+        "summary": "Frontier Labs’ latest deep dive into AI offensive capabilities offers a realistic audit of how autonomous agents perform during cyberattacks. The research highlights that while AI models are increasingly proficient at automated reconnaissance and executing known vulnerability exploits, they still hit significant performance walls when tasked with complex, multi-stage attack planning or nuanced adversarial decision-making. For developers and security engineers, the takeaway is clear: do not underestimate the current speed of AI-assisted scanning. Rather than relying on simple prompt guardrails, builders must implement systemic, multi-layered defensive architectures. Modern security strategies need to account for AI agents that can chain together small, successful exploits into coherent operations, shifting the focus from peripheral threat detection toward robust, fundamental infrastructure hardening."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-08T10:02:37.603Z"
+  },
+  {
+    "id": "art-1794132149781-7zkdp",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/stagea_tech/articles/20261108-pj8-devlog",
+    "published_at": "2026-11-07T23:27:53.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--dkdXa0pK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E6%2597%25A5%25E6%259C%25AC%25E6%25A0%25AA%25E5%2588%2586%25E6%259E%2590%25E3%2583%2597%25E3%2583%25A9%25E3%2583%2583%25E3%2583%2588%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%25A0%25E3%2580%2591%25E6%25A0%25AA%25E4%25BE%25A1%25E3%2581%25AE%25E9%2595%25B7%25E3%2581%2584%25E7%25A9%25BA%25E7%2599%25BD%25E3%2582%2592%25E3%2581%25BE%25E3%2581%259F%25E3%2581%2584%25E3%2581%25A7%25E8%25A8%2588%25E7%25AE%2597%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E7%25A7%25BB%25E5%258B%2595%25E5%25B9%25B3%25E5%259D%2587%25E3%2582%2592%25E7%259B%25B4%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%253A%252024%25E7%25A4%25BE%25E3%2581%25AE%25E8%25A8%2588%25E7%25AE%2597%25E3%2581%2597%25E7%259B%25B4%25E3%2581%2597%25E3%2581%25A8%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:StageA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvcy5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "株価データの「長い空白」をまたぐ移動平均算出のバグを修正—日本株分析プラットフォームにおける24社のヒストリカルデータ再計算と検証手法",
+    "summary_ja": "日本株の財務指標算出サービスにおいて、株価データが存在しない長期休暇や取引停止期間をまたいで移動平均を計算してしまうバグが発覚した。 過去の時系列データに空白が含まれると、誤った日数を参照して指標が歪むため、24社分のデータを再計算し、正確な期間参照が行われるようロジックを修正した。 データ駆動型のアプリでは、単なる計算ロジックだけでなく、入力データの欠損や非連続性が時系列指標に与える影響を、エッジケースを想定して検証するプロセスが不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "株価データの「長い空白」をまたぐ移動平均算出のバグを修正—日本株分析プラットフォームにおける24社のヒストリカルデータ再計算と検証手法",
+        "summary": "日本株の財務指標算出サービスにおいて、株価データが存在しない長期休暇や取引停止期間をまたいで移動平均を計算してしまうバグが発覚した。 過去の時系列データに空白が含まれると、誤った日数を参照して指標が歪むため、24社分のデータを再計算し、正確な期間参照が行われるようロジックを修正した。 データ駆動型のアプリでは、単なる計算ロジックだけでなく、入力データの欠損や非連続性が時系列指標に与える影響を、エッジケースを想定して検証するプロセスが不可欠である。"
+      },
+      "en": {
+        "title": "Fixing moving average bugs in Japan stock analysis: Recalculating historical data across data gaps for 24 companies",
+        "summary": "A bug was identified in a Japan stock financial analysis service where moving averages were incorrectly computed across long trading gaps, such as holidays or extended suspension periods. Because the logic naively spanned empty time series data, the resulting indicators were skewed by incorrect reference windows. The developer successfully corrected the calculation logic and re-processed historical data for 24 affected companies to ensure accurate windowing. This incident serves as a critical reminder for data-driven builders: calculating time-series indicators requires more than just correct algorithms; rigorous verification against edge cases—specifically data discontinuities and gaps—is essential to prevent silent data corruption. Always test your rolling window functions against incomplete datasets to guarantee financial data integrity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-08T10:02:29.781Z"
+  },
+  {
+    "id": "art-1794132143340-9p1rs",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261107",
+    "published_at": "2026-11-08T01:02:45.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--p-9q8KH1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%258C%25E3%2583%25A1%25E3%2582%25A2%25E3%2583%2589%25E3%2582%2592%25E9%2580%2581%25E3%2581%25A3%25E3%2581%259F%25EF%25BC%259F%25E5%2588%25A9%25E7%2594%25A8%25E8%2580%2585%25E3%2581%25AE%25E6%258C%2587%25E6%2591%2598%25E3%2581%258C%25E6%25B3%25A2%25E7%25B4%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E8%258F%2585%25E5%258E%259F%25E5%258F%258B%25E5%2592%258C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUJfd2tWRGJ6UktoZC11RldsQUxwZU5lTUpaUGxGWXAyeWJpRTdIamlDbWNPMTgwT3M9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Anthropicの「Claude Code」がユーザーのメアドを外部送信したとの指摘、開発環境のプライバシー懸念が浮上",
+    "summary_ja": "Anthropicが提供するAIエージェント「Claude Code」が、利用者のメールアドレスを外部へ送信していたとの指摘が浮上し、開発者の間でプライバシーに対する懸念が広がっている。 ローカル環境で動くAIツールが、意図せずに機密情報や個人設定を外部サーバーへ渡してしまうリスクは、企業導入やセキュアな開発環境において深刻な課題だ。 開発者は、ローカルAIツールの権限や通信ログを精査し、特に環境変数や認証情報が外部へ漏洩しないよう細心の注意を払う必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicの「Claude Code」がユーザーのメアドを外部送信したとの指摘、開発環境のプライバシー懸念が浮上",
+        "summary": "Anthropicが提供するAIエージェント「Claude Code」が、利用者のメールアドレスを外部へ送信していたとの指摘が浮上し、開発者の間でプライバシーに対する懸念が広がっている。 ローカル環境で動くAIツールが、意図せずに機密情報や個人設定を外部サーバーへ渡してしまうリスクは、企業導入やセキュアな開発環境において深刻な課題だ。 開発者は、ローカルAIツールの権限や通信ログを精査し、特に環境変数や認証情報が外部へ漏洩しないよう細心の注意を払う必要がある。"
+      },
+      "en": {
+        "title": "Security researchers flag Claude Code for unauthorized email transmission, raising privacy concerns for developer AI tools",
+        "summary": "Anthropic's newly released AI agent, Claude Code, faces criticism following reports that it transmitted user email addresses to external servers without clear consent. This incident highlights a critical privacy gap: while developers often rely on local AI agents to streamline workflows, the implicit trust placed in these tools to manage sensitive environment variables and authentication data can lead to unintended data leakage. For builders integrating AI agents into professional pipelines, this situation underscores the urgent need to inspect network traffic, scrutinize tool permissions, and isolate credentials. Treating AI agent permissions with the same rigor as production-grade application security is no longer optional for maintaining secure, enterprise-ready development environments in an increasingly automated ecosystem."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-08T10:02:23.340Z"
+  },
+  {
+    "id": "art-1794132136871-px0fz",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/guzumania_start/n/nb8f0a99682e6",
+    "published_at": "2026-11-08T10:01:25.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333727101/rectangle_large_type_2_e67c576e3ac148c9362c138fef256bfe.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claudeへのワンプロンプトで開発した漫画風アドベンチャー「雨やどりのしおり」公開、ゲーム制作の新たな可能性",
+    "summary_ja": "Claudeへ一言の指示を送るだけでゲームを生成する「ポン出しゲーム」シリーズ第3弾として、縦スクロール漫画風アドベンチャー『雨やどりのしおり』がリリースされた。 過去作のパチンコやドット絵RPGとは異なり、本作は物語体験を重視した構造となっている。 高度な推論能力を持つAIモデルは、もはやコーディングの補助ツールにとどまらず、企画からビジュアル演出までを含めたゲームデザイン全体のプロトタイピングを数分で完結させるクリエイティブなパートナーへと進化している。",
+    "translations": {
+      "ja": {
+        "title": "Claudeへのワンプロンプトで開発した漫画風アドベンチャー「雨やどりのしおり」公開、ゲーム制作の新たな可能性",
+        "summary": "Claudeへ一言の指示を送るだけでゲームを生成する「ポン出しゲーム」シリーズ第3弾として、縦スクロール漫画風アドベンチャー『雨やどりのしおり』がリリースされた。 過去作のパチンコやドット絵RPGとは異なり、本作は物語体験を重視した構造となっている。 高度な推論能力を持つAIモデルは、もはやコーディングの補助ツールにとどまらず、企画からビジュアル演出までを含めたゲームデザイン全体のプロトタイピングを数分で完結させるクリエイティブなパートナーへと進化している。"
+      },
+      "en": {
+        "title": "Developer debuts 'Rain-shelter Bookmark,' a manga-style adventure game generated via single prompt from Claude",
+        "summary": "The third installment of an experimental 'on-demand game' series has launched, showcasing 'Rain-shelter Bookmark,' a vertical-scrolling, manga-style adventure game generated entirely from a single prompt to Claude. Unlike previous attempts involving basic pachinko simulators or retro-style pixel RPGs, this project focuses on delivering a cohesive narrative experience through AI-orchestrated design. The result demonstrates that advanced AI models have transcended simple code assistance to become creative partners capable of handling the entire prototyping process—from core game loop logic to visual presentation—in a matter of minutes. For builders, this indicates a paradigm shift in rapid prototyping, where high-level creative vision can be materialized into functional software without heavy manual engineering overhead, challenging traditional game development timelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-08T10:02:16.871Z"
+  },
+  {
     "id": "art-1794131211911-2hkr1",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -15774,32 +15878,6 @@
     "created_at": "2026-11-06T13:46:49.587Z"
   },
   {
-    "id": "art-1793972801632-8yas5",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.morningstar.com/news/dow-jones/202611064621/taiwan-activates-market-stabilization-measures-to-stem-ai-bleeding",
-    "published_at": "2026-11-06T13:32:54.000Z",
-    "og_image_url": null,
-    "title_ja": "台湾、AI株の暴落を受け市場安定化措置を発動――TSMC株の急落が半導体関連セクターに与える経済的インパクトを注視",
-    "summary_ja": "台湾政府はAI株の急激な下落を抑制するため、市場安定化基金の介入を含む緊急措置を発動した。 特に世界最大の半導体ファウンドリであるTSMCの株価乱高下は、サプライチェーン全体に深刻な影響を及ぼす懸念がある。 投資家や開発者は、AIバブルの調整局面において、半導体供給網のボトルネックや価格変動が、次世代ハードウェア開発の調達コストにどう跳ね返るかを注視する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "台湾、AI株の暴落を受け市場安定化措置を発動――TSMC株の急落が半導体関連セクターに与える経済的インパクトを注視",
-        "summary": "台湾政府はAI株の急激な下落を抑制するため、市場安定化基金の介入を含む緊急措置を発動した。 特に世界最大の半導体ファウンドリであるTSMCの株価乱高下は、サプライチェーン全体に深刻な影響を及ぼす懸念がある。 投資家や開発者は、AIバブルの調整局面において、半導体供給網のボトルネックや価格変動が、次世代ハードウェア開発の調達コストにどう跳ね返るかを注視する必要がある。"
-      },
-      "en": {
-        "title": "Taiwan activates emergency market-stabilization measures to curb aggressive AI-driven sell-offs and protect critical semiconductor sector valuations",
-        "summary": "Taiwanese regulators have triggered emergency market-stabilization measures, deploying government-backed funds to arrest the rapid sell-off in AI-related equities. The volatility centered on TSMC has raised alarms regarding the potential domino effect across the broader global semiconductor supply chain. For engineers and founders, this market instability serves as a critical signal to watch: fluctuations in chip manufacturing costs and availability directly impact hardware-intensive AI projects. As capital flows tighten during this correction, builders must anticipate potential supply chain bottlenecks or increased procurement costs for future compute resources. This episode highlights how deeply macroeconomic volatility in Asia now ties back to the operational costs and roadmap viability of global AI infrastructure."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-06T13:46:41.632Z"
-  },
-  {
     "id": "art-1793972788376-0q1vo",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -15850,32 +15928,6 @@
       "研究"
     ],
     "created_at": "2026-11-06T13:32:10.467Z"
-  },
-  {
-    "id": "art-1793971920490-j9t31",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.youtube.com/watch?v=bn82CJfeYko",
-    "published_at": "2026-11-06T13:16:14.000Z",
-    "og_image_url": null,
-    "title_ja": "AI推論エンジニアリングの極意：スケーラブルなプロダクト構築で知っておくべき技術的課題と最適化戦略",
-    "summary_ja": "大規模AIプロダクトにおける推論エンジニアリングのベストプラクティスを解説。 モデルの量子化、バッチ処理の効率化、GPUリソースの動的な割り当てといった実用的な最適化手法を詳述する。 単なるAPI連携を超えて、スケーラビリティを担保しコストを最適化するためにエンジニアが押さえるべき設計判断の指針を提示する。",
-    "translations": {
-      "ja": {
-        "title": "AI推論エンジニアリングの極意：スケーラブルなプロダクト構築で知っておくべき技術的課題と最適化戦略",
-        "summary": "大規模AIプロダクトにおける推論エンジニアリングのベストプラクティスを解説。 モデルの量子化、バッチ処理の効率化、GPUリソースの動的な割り当てといった実用的な最適化手法を詳述する。 単なるAPI連携を超えて、スケーラビリティを担保しコストを最適化するためにエンジニアが押さえるべき設計判断の指針を提示する。"
-      },
-      "en": {
-        "title": "Essential Lessons in AI Inference Engineering: Practical Strategies for Scaling Production Models and Optimizing Computational Costs",
-        "summary": "This technical breakdown dives deep into the realities of AI inference engineering, focusing on what developers need to know when taking models from experimentation to production. It covers critical optimization techniques including model quantization, intelligent batching strategies, and dynamic GPU resource allocation to keep latency low while maintaining cost efficiency. Beyond simple API integrations, the guide emphasizes the architectural decisions required to ensure systems remain performant under high load. For engineers building AI-native products, the key takeaway is that infrastructure strategy—not just model selection—defines your success. Understanding how to manage inference pipelines and control compute overhead is now a mandatory skill for any builder operating at scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-06T13:32:00.490Z"
   },
   {
     "id": "art-1793971902451-mjnj1",
@@ -25121,32 +25173,6 @@
     "created_at": "2026-11-04T13:05:31.018Z"
   },
   {
-    "id": "art-1793797353550-35cds",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/masafumi_ai/articles/00008-cursor-paste-3lines-template",
-    "published_at": "2026-11-04T06:05:45.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--yfWnA8jk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cursor%25E3%2581%25AB%25E3%2580%258E%25E5%2585%25A8%25E9%2583%25A8%25E3%2582%2584%25E3%2581%25A3%25E3%2581%25A6%25E3%2580%258F%25E3%2581%25A8%25E9%25A0%25BC%25E3%2582%2580%25E5%2589%258D%25E3%2581%25AB%25E3%2582%25B3%25E3%2583%2594%25E3%2583%259A%25E3%2581%2599%25E3%2582%258B3%25E8%25A1%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%258B%259D%25E6%2596%2587%25E3%2581%25AEAI%25E7%258F%25BE%25E5%25A0%25B4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDRZQmVnOUlOZGc4bm9tZHgwOXhiM2V5QW8tWGFLVHJldW10Mk11T09aZjJSZWdnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Cursorで「全部やって」と頼む前にコピペする3行。AIの勝手なファイル変更を防ぎ、修正範囲を固定する魔法の呪文",
-    "summary_ja": "AIエディタのCursorに対し「全部やって」と曖昧な指示を出すと、意図しないファイルまで改変され、修正後の確認が困難になる問題がある。 この記事では、AIへのプロンプト冒頭にコピペするだけで、対象範囲を限定し、作業内容を明確化させる「魔法の3行」を紹介する。 AIに具体的なスコープを守らせることで、無駄なファイル編集を抑制し、エンジニアがコードの変更箇所を把握しやすくするための実用的な開発ハックだ。",
-    "translations": {
-      "ja": {
-        "title": "Cursorで「全部やって」と頼む前にコピペする3行。AIの勝手なファイル変更を防ぎ、修正範囲を固定する魔法の呪文",
-        "summary": "AIエディタのCursorに対し「全部やって」と曖昧な指示を出すと、意図しないファイルまで改変され、修正後の確認が困難になる問題がある。 この記事では、AIへのプロンプト冒頭にコピペするだけで、対象範囲を限定し、作業内容を明確化させる「魔法の3行」を紹介する。 AIに具体的なスコープを守らせることで、無駄なファイル編集を抑制し、エンジニアがコードの変更箇所を把握しやすくするための実用的な開発ハックだ。"
-      },
-      "en": {
-        "title": "The 3 lines to paste into Cursor before asking it to ‘do everything’ to prevent scope creep",
-        "summary": "Asking AI coding tools like Cursor to 'do everything' often leads to chaotic, unauthorized edits across unrelated files, making diff reviews a nightmare for developers. This guide provides a plug-and-play three-line prompt template to paste at the start of your requests, which forces the AI to strictly define and constrain its workspace. By explicitly mandating how the model should treat file scopes and output formatting, you significantly reduce the risk of intrusive global refactors that you didn't ask for. It is a highly effective, low-friction workflow hack for any developer using Cursor or Claude Code to maintain control over their codebase while leveraging AI automation for complex feature implementation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-04T13:02:33.550Z"
-  },
-  {
     "id": "art-1793796424008-ek7te",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -32024,32 +32050,6 @@
       "研究"
     ],
     "created_at": "2026-11-02T18:31:53.472Z"
-  },
-  {
-    "id": "art-1793643422129-u0lln",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/reglyph/articles/e344517303c64e",
-    "published_at": "2026-11-02T16:32:44.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--tS1mPKbG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25B3PDF%25E3%2582%2592%25E7%25BF%25BB%25E8%25A8%25B3%25E3%2581%2599%25E3%2582%258BWeb%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2580%2581%25E7%25BF%25BB%25E8%25A8%25B3%25E4%25BB%25A5%25E5%25A4%2596%25E3%2581%25A7%25E3%2583%258F%25E3%2583%259E%25E3%2581%25A3%25E3%2581%259F%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Reglyph%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3dXeG10UjQ5bmNLaWEwckN5Rk05S1h2WnozVlkybW9aRWY5SmpEV1hMakh4X2tvZz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "スキャンPDF翻訳Webサービス「Reglyph」開発の教訓：OCRと画像処理の複雑な実装がもたらした個人開発の壁と突破口",
-    "summary_ja": "個人開発のPDF翻訳サービス「Reglyph」において、開発者の直面した真の課題は翻訳APIの呼び出しではなく、スキャン済み画像の加工処理にあった。 OCRによる文字認識後の不要なレイアウト除去や、印鑑・複雑な図表を避けたテキストの抽出・再配置など、画像処理パイプラインの細かな実装がUXを左右する。 単なるAPI統合に留まらない、PDFの構造的な可読性を維持するための前処理こそが、実用的なAIツール開発における勝負の分かれ目となる。",
-    "translations": {
-      "ja": {
-        "title": "スキャンPDF翻訳Webサービス「Reglyph」開発の教訓：OCRと画像処理の複雑な実装がもたらした個人開発の壁と突破口",
-        "summary": "個人開発のPDF翻訳サービス「Reglyph」において、開発者の直面した真の課題は翻訳APIの呼び出しではなく、スキャン済み画像の加工処理にあった。 OCRによる文字認識後の不要なレイアウト除去や、印鑑・複雑な図表を避けたテキストの抽出・再配置など、画像処理パイプラインの細かな実装がUXを左右する。 単なるAPI統合に留まらない、PDFの構造的な可読性を維持するための前処理こそが、実用的なAIツール開発における勝負の分かれ目となる。"
-      },
-      "en": {
-        "title": "Building 'Reglyph': Lessons from developing a scanned PDF translator where image processing proved harder than translation",
-        "summary": "While developing Reglyph, a web service for translating scanned PDFs, the creator discovered that the core challenge was not the translation API itself, but the complex image processing pipeline required beforehand. Accurately extracting text while navigating obstacles like persistent corporate seals, complex diagrams, and non-selectable pixel-based layouts requires significant engineering effort beyond simple OCR integration. The process involves image-to-text extraction, cleaning up original layouts, and carefully reassembling translated text into their exact original positions. The practical takeaway for builders is that while AI translation is increasingly commoditized, the real competitive edge in document-based tooling lies in the robust, messy image-processing logic required to make AI outputs actually readable and usable for the end user."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-02T18:17:02.129Z"
   },
   {
     "id": "art-1793643414636-4hmmb",
