@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794096142408-j620y",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/skillselion/articles/f9e8735f6b4f1c",
+    "published_at": "2026-11-07T16:31:51.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9souP7Hc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%25BB%25E5%2583%258F%25E3%2583%25BB%25E5%258B%2595%25E7%2594%25BB%25E7%2594%259F%25E6%2588%2590%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25AB%25E3%2581%25AF%25E3%2580%258C%25E3%2581%25A9%25E3%2581%25AE%25E3%2582%25AD%25E3%2583%25BC%25E3%2581%25A7%25E3%2580%2581%25E3%2581%25A9%25E3%2581%2593%25E3%2581%25AB%25E8%25AA%25B2%25E9%2587%2591%25E3%2581%2595%25E3%2582%258C%25E3%2582%258B%25E3%2581%258B%25E3%2580%258D%25E3%2581%25A7%25E9%2581%25B8%25E3%2581%25B6%253A%2520Claude%2520Code%2520%25E5%2590%2591%25E3%2581%2591%2520SKILL.md%2520...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Skillselion%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvcy5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Code用生成AIスキルの選び方：モデルの性能よりも「APIキー管理と課金先」で判断するべき技術的理由",
+    "summary_ja": "Claude Codeで画像・動画生成ツールを利用する際、重要なのは生成品質よりも、どのAPIプロバイダを選択し、認証キーをどう管理・課金するかという実装上の制約です。 Claude Code自体は描画機能を持たず、外部サービスのCLIやAPIを呼び出すだけだからです。 人気スキルのSKILL.mdを分析すると、成功の鍵はモデル選びではなく、環境変数や認証フローの複雑さを制御し、運用コストを正確に把握できるかにあることが分かります。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code用生成AIスキルの選び方：モデルの性能よりも「APIキー管理と課金先」で判断するべき技術的理由",
+        "summary": "Claude Codeで画像・動画生成ツールを利用する際、重要なのは生成品質よりも、どのAPIプロバイダを選択し、認証キーをどう管理・課金するかという実装上の制約です。 Claude Code自体は描画機能を持たず、外部サービスのCLIやAPIを呼び出すだけだからです。 人気スキルのSKILL.mdを分析すると、成功の鍵はモデル選びではなく、環境変数や認証フローの複雑さを制御し、運用コストを正確に把握できるかにあることが分かります。"
+      },
+      "en": {
+        "title": "How to select generation skills for Claude Code: Why API key management and billing matter more than model quality",
+        "summary": "When integrating image and video generation tools into Claude Code, builders should prioritize API provider selection and authentication flow management over raw model output quality. Since Claude Code itself cannot render pixels, these skills function merely as wrappers that invoke external CLI tools or APIs. An analysis of top-performing SKILL.md files reveals that successful deployment depends on mastering environmental variable configuration and tracking which vendor is charging for credits. Choosing the right skill is not about picking the best image model; it is about choosing the infrastructure that integrates cleanly with your existing key management and billing processes. For developers, the practical takeaway is to audit the documentation for authentication complexity before committing to a specific integration, as hidden operational friction is the primary cause of integration failure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-08T00:02:22.408Z"
+  },
+  {
+    "id": "art-1794096134324-ci8or",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/safe_spirea1050/n/n2972a38a6246",
+    "published_at": "2026-11-07T23:45:31.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333519834/rectangle_large_type_2_40d26e044d17ffbce32f18926994f032.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発のコスト・セキュリティ最適解：Google Apps Script(GAS)活用で高額SaaSパッケージを回避しWebアプリ開発を始める手法",
+    "summary_ja": "個人開発者が高額なSaaSパッケージに依存せず、初期コストを抑えながら安全にWebアプリを構築する最適解として「Google Apps Script（GAS）」が注目されている。 GASはGoogle環境内で完結するため、サーバー管理やインフラ構築が不要であり、認証周りもGoogleの基盤を利用できるためセキュリティリスクを低減できる。 プログラミング初心者がMVPを最速で立ち上げ、収益化の検証を行うための強力なツールセットだ。",
+    "translations": {
+      "ja": {
+        "title": "個人開発のコスト・セキュリティ最適解：Google Apps Script(GAS)活用で高額SaaSパッケージを回避しWebアプリ開発を始める手法",
+        "summary": "個人開発者が高額なSaaSパッケージに依存せず、初期コストを抑えながら安全にWebアプリを構築する最適解として「Google Apps Script（GAS）」が注目されている。 GASはGoogle環境内で完結するため、サーバー管理やインフラ構築が不要であり、認証周りもGoogleの基盤を利用できるためセキュリティリスクを低減できる。 プログラミング初心者がMVPを最速で立ち上げ、収益化の検証を行うための強力なツールセットだ。"
+      },
+      "en": {
+        "title": "Why Google Apps Script is the most cost-effective and secure foundation for beginner web app development",
+        "summary": "For solo developers looking to launch MVPs without the high overhead of expensive SaaS packages, Google Apps Script (GAS) has emerged as the most practical and secure starting point. Because GAS operates entirely within the Google ecosystem, developers can skip server administration, infrastructure provisioning, and complex backend maintenance. Crucially, leveraging Google's native authentication layers significantly lowers security hurdles for beginners who might otherwise struggle with standard API security protocols. For those building simple web apps to test market viability or early monetization, GAS provides an frictionless, zero-cost architecture that allows builders to focus entirely on application logic rather than deployment operations. This approach turns Google's environment into a robust, ready-to-scale backend platform for personal projects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-08T00:02:14.324Z"
+  },
+  {
+    "id": "art-1794096116627-p7fbg",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
+    "published_at": "2026-11-07T23:52:40.000Z",
+    "og_image_url": "https://www.quantamagazine.org/wp-content/uploads/2026/11/LLMIntrospection-crKristinaArmitage-Social.jpg",
+    "title_ja": "AIの「自己認識」を解明する新研究が登場、LLMは自身の思考プロセスをメタ認知できているのかを検証",
+    "summary_ja": "クオンタマガジンが報じた最新の研究は、大規模言語モデル（LLM）が自らの思考プロセスや知識の限界を正確に把握しているかという「メタ認知」の能力を検証している。 従来の実験ではAIの自信過剰が問題視されてきたが、本研究ではAIが「何を知らないか」を自己評価する際の構造的なバイアスを詳細に分析。 開発者はAIの不確実性に対する過信を防ぐため、単純な出力信頼度スコアではなく、モデルの自己参照的な推論メカニズムをより深く理解する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "AIの「自己認識」を解明する新研究が登場、LLMは自身の思考プロセスをメタ認知できているのかを検証",
+        "summary": "クオンタマガジンが報じた最新の研究は、大規模言語モデル（LLM）が自らの思考プロセスや知識の限界を正確に把握しているかという「メタ認知」の能力を検証している。 従来の実験ではAIの自信過剰が問題視されてきたが、本研究ではAIが「何を知らないか」を自己評価する際の構造的なバイアスを詳細に分析。 開発者はAIの不確実性に対する過信を防ぐため、単純な出力信頼度スコアではなく、モデルの自己参照的な推論メカニズムをより深く理解する必要がある。"
+      },
+      "en": {
+        "title": "New research probes whether Large Language Models possess genuine metacognition and truly understand their own reasoning processes",
+        "summary": "Recent research featured in Quanta Magazine investigates whether large language models actually possess metacognition—the ability to monitor their own internal thought processes and recognize the boundaries of their own knowledge. While previous benchmarks often highlighted AI overconfidence, this study rigorously analyzes the structural biases present when models attempt to evaluate their own uncertainty. The findings suggest that AI often fails to distinguish between genuine knowledge and plausible-sounding hallucination. For developers and AI researchers, this underscores a critical takeaway: relying on raw output probability scores is insufficient for building robust systems. Instead, engineers must design more sophisticated self-referential validation layers to account for these inherent gaps in the model's self-assessment capabilities during high-stakes tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-08T00:01:56.627Z"
+  },
+  {
+    "id": "art-1794096110284-sybp9",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/algia/articles/deepseek-harness-intro",
+    "published_at": "2026-11-07T16:40:23.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--UcM_oyiy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:DeepSeek%2520Harness%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25EF%25BC%259A%25E3%2583%25A2%25E3%2583%25BC%25E3%2583%2589%25E9%2581%25B8%25E3%2581%25B3%25E3%2583%25BB%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E7%2592%25B0%25E5%25A2%2583%25E3%2583%25BB%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25B0%25E3%2582%25A4%25E3%2583%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Algia%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ZmYmJkZGQwNGEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "DeepSeek Harnessの実践的導入術：テスト環境構築から推奨プラグイン、OAuthログイン対応の自動化までを網羅",
+    "summary_ja": "DeepSeek Harnessを利用する際はnpm版の導入が推奨され、クリエイターモードを併用することで安全なテスト環境を構築できる。 公式の実験的プラグインやコミュニティ製拡張（dsh-context等）を使いこなすには、ソースコードのAI監査が不可欠だ。 OAuthログイン等の実装もコーディングエージェントを活用すれば効率化可能であり、実験環境での動作検証を繰り返すことで開発効率が大きく向上する。",
+    "translations": {
+      "ja": {
+        "title": "DeepSeek Harnessの実践的導入術：テスト環境構築から推奨プラグイン、OAuthログイン対応の自動化までを網羅",
+        "summary": "DeepSeek Harnessを利用する際はnpm版の導入が推奨され、クリエイターモードを併用することで安全なテスト環境を構築できる。 公式の実験的プラグインやコミュニティ製拡張（dsh-context等）を使いこなすには、ソースコードのAI監査が不可欠だ。 OAuthログイン等の実装もコーディングエージェントを活用すれば効率化可能であり、実験環境での動作検証を繰り返すことで開発効率が大きく向上する。"
+      },
+      "en": {
+        "title": "DeepSeek Harness deep dive: How to set up testing environments, manage plugins, and automate OAuth login implementation",
+        "summary": "DeepSeek Harness streamlines LLM workflows, but successful adoption requires a strategic setup starting with the npm version to ensure easy testing. Developers should utilize Creator Mode as a sandbox to validate experimental plugins and community extensions—such as dsh-context or Better Sidebar—only after subjecting the source code to AI-driven security checks. Furthermore, common hurdles like OAuth login implementation for subscriptions can be significantly simplified by offloading the integration tasks to a coding agent. By isolating configurations within a test environment and automating repetitive setup tasks, builders can minimize deployment risks while rapidly scaling their interaction capabilities with DeepSeek models. Treat initial plugin evaluation as a necessary security step rather than an optional configuration."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-08T00:01:50.284Z"
+  },
+  {
     "id": "art-1794095216657-8gako",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -14067,32 +14172,6 @@
     "created_at": "2026-11-06T11:01:41.322Z"
   },
   {
-    "id": "art-1793962046331-b192m",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tina399/n/nae84b7d06b60",
-    "published_at": "2026-11-06T10:46:23.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332929992/rectangle_large_type_2_d6aedeedebe4eb1d94ced59cbd47eb61.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ハンドメイド在庫管理アプリ「きじ・材料ジェット」開発始動、生地や紐など埋もれがちな資材を効率的にデジタル管理する仕組みへ",
-    "summary_ja": "ハンドメイド作家や愛好家が抱える「生地やリボン、紐などの材料がどこにあるか分からない」という課題を解決するため、資材管理アプリ「きじ・材料ジェット」の開発プロジェクトが始動した。 増え続ける細かな材料をデジタルで整理・検索可能にすることで、創作の効率を最大化する狙いだ。 個人の開発者が抱える身近なペインポイントを、特化型ツールで解消する個人開発の好例となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "ハンドメイド在庫管理アプリ「きじ・材料ジェット」開発始動、生地や紐など埋もれがちな資材を効率的にデジタル管理する仕組みへ",
-        "summary": "ハンドメイド作家や愛好家が抱える「生地やリボン、紐などの材料がどこにあるか分からない」という課題を解決するため、資材管理アプリ「きじ・材料ジェット」の開発プロジェクトが始動した。 増え続ける細かな材料をデジタルで整理・検索可能にすることで、創作の効率を最大化する狙いだ。 個人の開発者が抱える身近なペインポイントを、特化型ツールで解消する個人開発の好例となるだろう。"
-      },
-      "en": {
-        "title": "Building 'Kiji/Zairyo Jet': A new inventory management app designed for organizing handmade fabric, ribbons, and sewing materials",
-        "summary": "A new development project, 'Kiji/Zairyo Jet,' has launched to tackle a common pain point for handmade creators: losing track of fabric, ribbons, and assorted sewing supplies. The app aims to solve this by providing a digital inventory system that allows users to catalog, organize, and quickly search through their material stashes. By transforming cluttered physical inventory into an accessible digital database, the creator hopes to significantly improve workflow efficiency and material utilization for crafters. This initiative serves as an excellent example of identifying a specific, relatable friction point in personal hobbies and building a custom-tailored software solution to solve it, proving that niche productivity tools remain a vital space for indie developers."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-06T10:47:26.331Z"
-  },
-  {
     "id": "art-1793962030670-nfzpj",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -16888,31 +16967,6 @@
       "マーケ・集客・ASO"
     ],
     "created_at": "2026-11-06T01:47:00.648Z"
-  },
-  {
-    "id": "art-1793928730172-bwbku",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.reuters.com/legal/transactional/ai-data-center-stocks-slip-democratic-sweep-clouds-expansion-plans-2026-11-05/",
-    "published_at": "2026-11-06T01:11:40.000Z",
-    "og_image_url": null,
-    "title_ja": "Nasdaqで2.5兆ドル相当が蒸発――米国選挙での「ブルーウェーブ」がもたらすAIデータセンター拡張への政策的不安が市場を直撃",
-    "summary_ja": "Nasdaq市場で2.5兆ドルが消失する急落が発生した。 要因は、選挙での「ブルーウェーブ」がAIデータセンター拡張計画に規制などの政策的不確実性をもたらすとの懸念だ。 市場はAIインフラ投資が政治的要請で抑制されるリスクを深刻に捉えている。 ビルダーや投資家にとって、AIモデルの性能向上だけでなく、インフラ構築を取り巻く地政学的・政策的リスクを考慮した資本戦略がこれまで以上に重要となっている。",
-    "translations": {
-      "ja": {
-        "title": "Nasdaqで2.5兆ドル相当が蒸発――米国選挙での「ブルーウェーブ」がもたらすAIデータセンター拡張への政策的不安が市場を直撃",
-        "summary": "Nasdaq市場で2.5兆ドルが消失する急落が発生した。 要因は、選挙での「ブルーウェーブ」がAIデータセンター拡張計画に規制などの政策的不確実性をもたらすとの懸念だ。 市場はAIインフラ投資が政治的要請で抑制されるリスクを深刻に捉えている。 ビルダーや投資家にとって、AIモデルの性能向上だけでなく、インフラ構築を取り巻く地政学的・政策的リスクを考慮した資本戦略がこれまで以上に重要となっている。"
-      },
-      "en": {
-        "title": "Nasdaq Wipes Out $2.5 Trillion in Value as Blue Wave Election Results Spark Concerns Over AI Data Center Expansion",
-        "summary": "Nasdaq investors wiped $2.5 trillion from valuations today as a Democratic sweep in the U.S. election triggered intense market anxiety regarding future AI data center expansion. The sudden sell-off reflects deep-seated fears that new political leadership might introduce regulatory hurdles or policy shifts that complicate the aggressive infrastructure spending required for large-scale AI deployment. Markets are now recalibrating the viability of high-growth AI stocks under this new legislative uncertainty, questioning if government mandates could curb compute scaling. For builders, this shift underscores a reality where the long-term success of AI services depends not just on algorithmic breakthroughs, but on navigating the increasingly complex geopolitical and regulatory landscape surrounding global compute capacity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス"
-    ],
-    "created_at": "2026-11-06T01:32:10.172Z"
   },
   {
     "id": "art-1793928712901-687nv",
@@ -29984,32 +30038,6 @@
     "created_at": "2026-11-03T02:01:50.212Z"
   },
   {
-    "id": "art-1793670783238-k2al3",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/gen_ai_kiyozuka/articles/shadow-genai-use-three-rules",
-    "published_at": "2026-11-03T00:00:10.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hjm9002u--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25A4%25BE%25E5%2593%25A1%25E3%2581%258C%25E5%258B%259D%25E6%2589%258B%25E3%2581%25AB%25E7%2594%259F%25E6%2588%2590AI%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2580%2582%25E7%25A6%2581%25E6%25AD%25A2%25E3%2582%2588%25E3%2582%258A%25E5%2585%2588%25E3%2581%25AB%25E6%25B1%25BA%25E3%2582%2581%25E3%2582%258B3%25E3%2581%25A4%25E3%2581%25AE%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%2594%259F%25E6%2588%2590AI%25E6%25B8%2585%25E5%25A1%259A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmpnVWMycjgwbUdjVXYyTHJZR044QkE2bVlucG1LbUlfdWdyYU4tWXNGaFJ1MmJnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "生成AIの「シャドーIT」対策：社員が勝手に利用している状況で、全禁止よりも先に導入すべき3つの現実的ルール",
-    "summary_ja": "多くの企業で社員が個人の生成AIアカウントを業務に無断利用する「シャドーIT」が常態化している。 安易な全面禁止は利用の隠蔽を招きリスクを高めるため、まずは実態把握から始めるべきだ。 具体的には、匿名アンケートでツールと用途を収集し、隠さずに報告できる空気を作った上で、リスク許容範囲を定義する運用が不可欠である。 禁止による分断ではなく、安全に活用するためのガードレール設計が組織の生産性を守る鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "生成AIの「シャドーIT」対策：社員が勝手に利用している状況で、全禁止よりも先に導入すべき3つの現実的ルール",
-        "summary": "多くの企業で社員が個人の生成AIアカウントを業務に無断利用する「シャドーIT」が常態化している。 安易な全面禁止は利用の隠蔽を招きリスクを高めるため、まずは実態把握から始めるべきだ。 具体的には、匿名アンケートでツールと用途を収集し、隠さずに報告できる空気を作った上で、リスク許容範囲を定義する運用が不可欠である。 禁止による分断ではなく、安全に活用するためのガードレール設計が組織の生産性を守る鍵となる。"
-      },
-      "en": {
-        "title": "Managing Shadow AI: Why Banning Employee Generative AI Use Is Less Effective Than Setting Clear Operational Guardrails",
-        "summary": "Many companies are facing the issue of \"Shadow AI,\" where employees use personal generative AI accounts for work without official approval. Rushing to enforce a total ban often backfires, pushing usage into unmonitored silos that significantly increase enterprise security risks. Instead of punitive measures, management should first conduct anonymous surveys to map which tools are actually being used and for what specific tasks. Creating an environment where employees can report usage without fear of retribution is crucial. Once visibility is established, organizations can define acceptable risk boundaries. The path forward for modern businesses isn't a strict prohibition, but rather the implementation of sensible guardrails that allow for productivity while mitigating the inevitable risks of decentralized AI adoption."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-03T01:53:03.238Z"
-  },
-  {
     "id": "art-1793670394273-0r0e0",
     "source_id": "source-devin",
     "source_name": "Devin Release Notes",
@@ -30036,33 +30064,6 @@
       "開発"
     ],
     "created_at": "2026-11-03T01:46:34.273Z"
-  },
-  {
-    "id": "art-1793669666559-9htfq",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/aac/articles/bc0d70b9de067a",
-    "published_at": "2026-11-03T00:14:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--7e61l_mn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Raspberry%2520Pi%25E3%2581%25A724%25E6%2599%2582%25E9%2596%2593%25E8%2587%25AA%25E5%25BE%258B%25E7%25A8%25BC%25E5%2583%258D%25E3%2581%2599%25E3%2582%258BAI%25E3%2583%25A1%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25A2%25E3%2582%25921%25E6%2597%25A5100%25E5%2586%2586%25E4%25BB%25A5%25E4%25B8%258B%25E3%2581%25A7%25E9%2581%258B%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25E3%2580%258C3%25E9%259A%258E%25E5%25B1%25A4%25E3%2583%259E%25E3%2583%25AB%25E3%2583%2581%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E8%25A8%25AD%25E8%25A8%2588%25E3%2580%258D%25E3%2581%25A8...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E8%2587%25AA%25E7%25AB%258B%25E5%259E%258BAI%25E3%2582%25AB%25E3%2583%25B3%25E3%2583%2591%25E3%2583%258B%25E3%2583%25BC%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkVuYUdVc3Y2QUs0Y2NrVVBZck92djB4TUFRQkZobVNQbmR4OWE2TUY3Wkw5SnJ5VT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Raspberry Piで24時間自律稼働するAIメディア、API費用を1日100円以下に抑える「3階層マルチモデル設計」の運用術",
-    "summary_ja": "自律型AIメディアを24時間稼働させる際、全てを高性能LLMに依存するとAPI費用が膨大になる。 この課題を解決するため、Raspberry Pi 4で構築可能な「CEO・CTO・Worker」の役割に応じた3階層マルチモデル設計を提案する。 重い処理は上位モデル、単純作業は軽量モデルやローカルモデルに振り分けることで、運用コストを1日100円以下に抑制できる。 AIエージェントの継続的な運用には、タスク難易度に基づいた適切なモデル選択とコスト管理が不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "Raspberry Piで24時間自律稼働するAIメディア、API費用を1日100円以下に抑える「3階層マルチモデル設計」の運用術",
-        "summary": "自律型AIメディアを24時間稼働させる際、全てを高性能LLMに依存するとAPI費用が膨大になる。 この課題を解決するため、Raspberry Pi 4で構築可能な「CEO・CTO・Worker」の役割に応じた3階層マルチモデル設計を提案する。 重い処理は上位モデル、単純作業は軽量モデルやローカルモデルに振り分けることで、運用コストを1日100円以下に抑制できる。 AIエージェントの継続的な運用には、タスク難易度に基づいた適切なモデル選択とコスト管理が不可欠である。"
-      },
-      "en": {
-        "title": "Running a 24/7 Autonomous AI Media Site on Raspberry Pi for Under $0.70/Day via 3-Tier Multi-Model Architectures",
-        "summary": "Running autonomous AI agents 24/7 often leads to prohibitive API costs if every task relies on flagship models like Claude Opus or GPT-4o. This piece introduces a 3-tier multi-model architecture—CEO, CTO, and Worker layers—that allows you to run a fully autonomous media operation on a Raspberry Pi 4 for under 100 yen per day. By routing complex reasoning to high-end LLMs while offloading repetitive or lightweight tasks to smaller models or local inference, you can slash operating expenses drastically. For builders, the core takeaway is that sustainable AI automation requires decoupling agent logic from model capability. Stop treating every agent step as a high-cost query and start optimizing your pipeline for cost-efficiency based on specific task demands."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-03T01:34:26.559Z"
   },
   {
     "id": "art-1793669657912-vmmyo",
