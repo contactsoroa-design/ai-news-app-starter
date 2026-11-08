@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794135757403-07pa8",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tsukunowa/n/n472f70b2aac0",
+    "published_at": "2026-11-08T10:36:28.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/26c2533c9e104fb3f3b7d761574395a6f14cf52f.png",
+    "title_ja": "一人開発の限界を突破する「AI 3役制」：AIに本部・監督・規約担当を割り振り開発速度を最大化する手法",
+    "summary_ja": "限られた時間でサービスを構築する個人開発者が、AIを「本部（企画・開発）」「監督（QA・検証）」「規約担当」の3つの役割に分けて運用する手法を紹介。 人間は意思決定に専念し、AIに実務とチェックを任せることで、一人でも組織的な開発体制を疑似的に再現している。 開発者が実装と仕様策定の負担を減らし、スピードを維持するための現実的なAI活用モデルと言える。",
+    "translations": {
+      "ja": {
+        "title": "一人開発の限界を突破する「AI 3役制」：AIに本部・監督・規約担当を割り振り開発速度を最大化する手法",
+        "summary": "限られた時間でサービスを構築する個人開発者が、AIを「本部（企画・開発）」「監督（QA・検証）」「規約担当」の3つの役割に分けて運用する手法を紹介。 人間は意思決定に専念し、AIに実務とチェックを任せることで、一人でも組織的な開発体制を疑似的に再現している。 開発者が実装と仕様策定の負担を減らし、スピードを維持するための現実的なAI活用モデルと言える。"
+      },
+      "en": {
+        "title": "Scaling Solo Development with an 'AI Triad': How to Assign Roles like HQ, Supervisor, and Legal to AI",
+        "summary": "A solo developer building a service with limited time explains a pragmatic 'AI Triad' workflow that mimics organizational oversight. By assigning specific LLM instances to roles—Headquarters (planning and coding), Supervisor (QA and code verification), and Legal (terms and copy drafting)—the developer abstracts away tedious manual labor. The human operator serves solely as the decision-maker, approving AI outputs rather than wrestling with implementation details or policy wording. This structural approach allows a single founder to maintain momentum across complex development tasks, effectively creating a distributed team from within a single development environment. For solo builders, this illustrates that scaling output isn't about working harder, but about architecting a rigorous, multi-step agentic process to handle execution."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-08T11:02:37.403Z"
+  },
+  {
+    "id": "art-1794135748651-ujmv9",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hakumaigenki/articles/pytest-p310-8110",
+    "published_at": "2026-11-08T08:49:10.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--UFs1kNA---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:pytest%25E3%2581%25A7%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%258C%25E6%25A4%259C%25E5%2587%25BA%25E6%2599%2582%25E3%2581%25AB%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258A%25E5%25AE%2589%25E5%2585%25A8%25E6%25A4%259C%25E6%259F%25BB4%25E6%259C%25AC%25E3%2581%258C%25E6%259C%25AA%25E5%25AE%259F%25E8%25A1%258C%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A8%25E7%259B%25B4%25E3%2581%2597%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%2599%25BD%25E7%25B1%25B3%25E5%2585%2583%25E6%25B0%2597%25EF%25BD%259CLLM%2520Oops%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSi0xR3k1Zl84dVEyOEZ0NV96cUY2cU10OWZTbm5EbFFjNWk1OG9odHEwbzVZSkNwZ1I9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "pytestでテストが未実行になる「収集エラー」の特定と修正法：6つのエラーを見逃さないためのログ確認術",
+    "summary_ja": "pytest実行時に「passed」と表示されていても、実は一部のテストが収集段階で失敗し未実行になっているケースがある。 特にWindows環境でのtmp_path使用時に発生しやすいこの問題は、終了行のサマリーだけでなく「6 errors」等の出力を詳細に追うことで発見可能だ。 テストスイートの信頼性を担保するためには、テスト実行数と期待値の乖離をCI上で検知する運用が必須となる。",
+    "translations": {
+      "ja": {
+        "title": "pytestでテストが未実行になる「収集エラー」の特定と修正法：6つのエラーを見逃さないためのログ確認術",
+        "summary": "pytest実行時に「passed」と表示されていても、実は一部のテストが収集段階で失敗し未実行になっているケースがある。 特にWindows環境でのtmp_path使用時に発生しやすいこの問題は、終了行のサマリーだけでなく「6 errors」等の出力を詳細に追うことで発見可能だ。 テストスイートの信頼性を担保するためには、テスト実行数と期待値の乖離をCI上で検知する運用が必須となる。"
+      },
+      "en": {
+        "title": "Identifying hidden pytest collection errors that leave tests unrun: How to catch silent failures",
+        "summary": "Many developers miss that pytest can report 'passed' for finished tests while silently failing to collect others, leaving critical edge cases unrun. This issue often surfaces in Windows environments using tmp_path, where the setup process crashes during collection rather than execution. While the terminal summary might look green, detailed logs reveal '6 errors' that hide the skipped test suite. For builders, the key lesson is that relying on final pass counts is insufficient; you must audit the stderr stream during CI to ensure the actual test count matches your expectations. Never assume a green build is a complete build without verifying that every intended test file was actually discovered and executed by the runner."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-08T11:02:28.651Z"
+  },
+  {
+    "id": "art-1794135741839-1k4ok",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/sebasteanwu/items/29980594c4f7ad391308",
+    "published_at": "2026-11-08T10:17:13.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSlIzbm1JYlgwbUc4eWNocmJfbWJ4NUpPZG1jdnUxOVJvdHRVVWZaZTFXR1lqMFd3JTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWI5NThkYjExOTliNDgyYTZmMjA4MTZjMzZiZjIxOTU2%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D7bf387a7d1b538794344cdc677c3e725?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQTclRTklOUYlQjMlRTYlQTUlQkRNViVFMyU4MiU5MiVFNCVCRCU5QyVFMyU4MiU4QiVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MyU5NSVFMyU4MyVBRCVFMyU4MyVCQyVFOCVBOCVBRCVFOCVBOCU4OCVFRiVCQyU5QSVFNyVCNSVCNSVFMyU4MiVCMyVFMyU4MyVCMyVFMyU4MyU4NiVFMyU4MyVCQiVFMyU4MiVCNyVFMyU4MyVBNyVFMyU4MyU4MyVFMyU4MyU4OCVFMyU4MyVCQiVFMyU4MyU4NiVFMyU4MiVBNCVFMyU4MiVBRiVFMyU4MiU5MiVFNSU4OCU4NiVFMyU4MSU5MSVFMyU4MSVBNiVFOCU4MCU4MyVFMyU4MSU4OCVFMyU4MiU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTQ0YWI4ZTZiNDkwMTc5OTA2Y2NlODEzZGM3N2I0YzZl&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzZWJhc3RlYW53dSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTUzYzVkMzY5MjI5NGJmMDM2NDY2M2YzMGQ1MTUyMGVj&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c3f4209f9ae966977b5087013c76da17",
+    "title_ja": "AIで音楽MVを作るワークフロー：絵コンテベースのショット管理と「MVFlow」によるテイク選択の最適化",
+    "summary_ja": "AIミュージックビデオ制作における最大の課題は、単発の動画生成ではなく、複数のショットを一つの作品として統合する工程にある。 開発中のツール「MVFlow」は、編集可能な絵コンテからショットを個別に生成し、複数のテイクから最適な素材を選択するワークフローを導入することでこの問題を解決する。 AI動画制作では生成能力だけでなく、タイムライン上でのショット管理とテイク選択の仕組み化こそが、個人の制作効率を劇的に高める鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AIで音楽MVを作るワークフロー：絵コンテベースのショット管理と「MVFlow」によるテイク選択の最適化",
+        "summary": "AIミュージックビデオ制作における最大の課題は、単発の動画生成ではなく、複数のショットを一つの作品として統合する工程にある。 開発中のツール「MVFlow」は、編集可能な絵コンテからショットを個別に生成し、複数のテイクから最適な素材を選択するワークフローを導入することでこの問題を解決する。 AI動画制作では生成能力だけでなく、タイムライン上でのショット管理とテイク選択の仕組み化こそが、個人の制作効率を劇的に高める鍵となる。"
+      },
+      "en": {
+        "title": "Building AI-Driven Music Videos: Storyboard-Based Workflow Design and Shot Selection with MVFlow",
+        "summary": "The core difficulty in creating music videos with AI is not just generating individual clips, but effectively synthesizing multiple shots into a cohesive final product. To solve this, the author developed MVFlow, a tool that structures the creation process by generating shots from editable storyboards and allowing users to select the best takes from various options. Instead of treating AI video as a single generation task, this workflow focuses on treating shots as modular components in a manageable timeline. For builders and creators, the lesson is clear: robust shot management and systematic take selection are the critical factors that transform raw AI-generated assets into a polished, professional video project while significantly reducing manual editing overhead."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "動画",
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-08T11:02:21.839Z"
+  },
+  {
+    "id": "art-1794135713145-bm40y",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shiko_kaitai/n/n0b091acd90d8",
+    "published_at": "2026-11-08T10:38:46.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/320399073/rectangle_large_type_2_984d444a3b6b4d2f2d9ca90beb49080e.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "人間は忘れる生き物。効率的な暗記よりも「見直し」で知識を自分だけの「価値」に変える、知的生産の再構築術",
+    "summary_ja": "人間は本質的に忘れる生き物であり、詰め込み型の暗記で知識を評価する手法には限界がある。 真に役立つ知的生産を行うには、試験対策のような一時的な記憶の定着を目指すのではなく、定期的な「見直し」を通じて知識を自分の文脈や経験と接続し直すプロセスが不可欠だ。 この能動的な再構築こそが、単なる情報収集を脱し、自分だけの独自性と価値を持たせる鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "人間は忘れる生き物。効率的な暗記よりも「見直し」で知識を自分だけの「価値」に変える、知的生産の再構築術",
+        "summary": "人間は本質的に忘れる生き物であり、詰め込み型の暗記で知識を評価する手法には限界がある。 真に役立つ知的生産を行うには、試験対策のような一時的な記憶の定着を目指すのではなく、定期的な「見直し」を通じて知識を自分の文脈や経験と接続し直すプロセスが不可欠だ。 この能動的な再構築こそが、単なる情報収集を脱し、自分だけの独自性と価値を持たせる鍵となる。"
+      },
+      "en": {
+        "title": "Humans are wired to forget; stop prioritizing rote memorization and start building unique value through deliberate, iterative knowledge review",
+        "summary": "Humans are biologically wired to forget, making the traditional obsession with cramming for tests an inherently flawed model for true intellectual growth. Rather than chasing the ephemeral retention required for exams, builders and creators should pivot toward a structured 'review cycle.' This involves actively reconnecting information with personal context, experiences, and current projects. By transforming passive data into refined, reusable knowledge, you stop just accumulating information and start synthesizing it into something with genuine, unique value. This shift from rote retrieval to active synthesis is the core competency required for long-term intellectual production, ensuring your knowledge stack remains an asset rather than a forgotten collection of transient facts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-08T11:01:53.145Z"
+  },
+  {
     "id": "art-1794134822907-vptc9",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -11793,33 +11898,6 @@
     "created_at": "2026-11-07T04:01:51.425Z"
   },
   {
-    "id": "art-1794024104702-c14mg",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/maskblogdesu/n/nf41825d47378",
-    "published_at": "2026-11-07T03:55:03.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333209158/rectangle_large_type_2_9805595fa2f1d9cdb95801a001fec6cf.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "App Store競合調査を自動化する無料ツール公開｜上位10アプリの低評価レビューを1ページに集約して市場ニーズを分析する活用術",
-    "summary_ja": "個人開発者がApp Storeの競合調査を効率化するための無料分析ツールが公開された。 キーワードを1つ入力するだけで、上位10アプリを自動抽出した上で、星3以下の不満レビューのみを1ページに集約してリスト化する。 競合製品の弱点やUXの課題を短時間で特定できるため、プロダクト開発における仮説検証や差別化ポイントの発見に極めて有効な手法となる。",
-    "translations": {
-      "ja": {
-        "title": "App Store競合調査を自動化する無料ツール公開｜上位10アプリの低評価レビューを1ページに集約して市場ニーズを分析する活用術",
-        "summary": "個人開発者がApp Storeの競合調査を効率化するための無料分析ツールが公開された。 キーワードを1つ入力するだけで、上位10アプリを自動抽出した上で、星3以下の不満レビューのみを1ページに集約してリスト化する。 競合製品の弱点やUXの課題を短時間で特定できるため、プロダクト開発における仮説検証や差別化ポイントの発見に極めて有効な手法となる。"
-      },
-      "en": {
-        "title": "Free automated App Store competitive research tool aggregates negative feedback from top 10 apps into one single view",
-        "summary": "A new free utility has been released that streamlines App Store competitive analysis by automating the research process for solo developers. By entering a single keyword, the tool fetches the top 10 competing apps and aggregates only their three-star-or-below reviews into a unified, single-page report. This focused data extraction allows developers to pinpoint specific UX frustrations and market weaknesses in rival products within minutes. Rather than manually parsing dozens of listings, builders can now rapidly identify recurring feature gaps or usability pitfalls to validate their own product hypotheses. It is a highly tactical approach for finding tangible differentiation opportunities in crowded niches without spending hours on traditional market research workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "マーケ・集客・ASO",
-      "開発"
-    ],
-    "created_at": "2026-11-07T04:01:44.702Z"
-  },
-  {
     "id": "art-1794024096292-khobr",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -11871,33 +11949,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-07T03:47:09.393Z"
-  },
-  {
-    "id": "art-1794023203743-5t0wz",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/invest_build_log/n/n563d66521b6f",
-    "published_at": "2026-11-07T03:24:49.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/716d2a575b8cc9bae3559c1d21cae7116f9b80b7.png",
-    "title_ja": "個人開発者が挑むAI投資アプリの仕組み公開｜日本株の銘柄選定から自動売買判定に至るまでアルゴリズムと検証ルールを解説",
-    "summary_ja": "個人開発者が日本株を対象としたAI投資情報アプリを開発中で、銘柄選定のフローと具体的な売買判定のアルゴリズムを公開した。 AIを活用して膨大な市場データから有望銘柄を抽出し、ルールベースで売買を判断する仕組みを検証している。 個人開発で投資系ツールを構築する際は、モデルの精度だけでなく、検証環境の再現性やリスク管理ルールを初期段階から統合することが、実際の資産運用における成否を分ける鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発者が挑むAI投資アプリの仕組み公開｜日本株の銘柄選定から自動売買判定に至るまでアルゴリズムと検証ルールを解説",
-        "summary": "個人開発者が日本株を対象としたAI投資情報アプリを開発中で、銘柄選定のフローと具体的な売買判定のアルゴリズムを公開した。 AIを活用して膨大な市場データから有望銘柄を抽出し、ルールベースで売買を判断する仕組みを検証している。 個人開発で投資系ツールを構築する際は、モデルの精度だけでなく、検証環境の再現性やリスク管理ルールを初期段階から統合することが、実際の資産運用における成否を分ける鍵となる。"
-      },
-      "en": {
-        "title": "Individual developer unveils the algorithm behind a Japanese stock AI app: From stock selection to automated trading triggers",
-        "summary": "A solo developer is building an AI-powered investment intelligence app specifically targeting Japanese equities, and they have just released the core logic for their stock picking and trading evaluation rules. The system leverages AI to sift through vast market datasets to identify promising tickers, subsequently applying a rigorous rule-based framework to trigger buy and sell decisions. For builders tackling financial tools, this case study underscores that the real differentiator is not just model accuracy, but the integration of reproducible backtesting environments and strict risk management protocols from day one. Establishing a robust validation loop before deployment is essential for creating trust and ensuring long-term viability in automated trading applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-07T03:46:43.743Z"
   },
   {
     "id": "art-1794023197123-4oxts",
@@ -21170,32 +21221,6 @@
       "研究"
     ],
     "created_at": "2026-11-05T16:31:36.010Z"
-  },
-  {
-    "id": "art-1793895419209-dkopj",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/supportapp3/items/d41287d9edde3db2d06f",
-    "published_at": "2026-11-04T20:13:39.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSUZSWHFwZGtCR29hZGEtTGFPVi1pYjVuQVRGcFVzN29WdDZXT08tMm9sa05HLXBRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWFiN2FhZjJmY2UyZGI5YTgyNDlmYmRiODFlMTVlODll%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De5eb047b894f3f856d249b9e2715777f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9YmFzaCUyMC14JTIwJUUzJTgxJUE3JUUzJTgzJTg3JUUzJTgzJTkwJUUzJTgzJTgzJUUzJTgyJUIwJUUzJTgxJTk5JUUzJTgyJThCJUUzJTgxJUE4JTIwLmVudiUyMCVFMyU4MSVBRSVFNSU4MCVBNCVFMyU4MiU4MiUyMEFQSSUyMCVFMyU4MiVBRCVFMyU4MyVCQyVFMyU4MiU4MiVFNSVCMSU5NSVFOSU5NiU4QiVFMyU4MSU5NSVFMyU4MiU4QyVFMyU4MSVBNiVFNSU4NyVCQSVFNSU4QSU5QiVFMyU4MSVBQiVFNSU4NyVCQSVFMyU4MiU4QiVFRiVCQyU5QXNldCUyMCUyQnglMjAlRTMlODElQTglMjBjdXJsJTIwLUglMjAlNDBmaWxlJTIwJUUzJTgxJUFFJUU1JThBJUI5JUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MWM1NzFlMTVlYmJkOGQyNDlkNTE5YjIwMTliMzA5ODI&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzdXBwb3J0YXBwMyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTA5NGJiODkwZjg4NzU1MWU1NTAwZTNjZGViZGJhYmJi&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=198d663d446ed934b7fc7d85a2896f5b",
-    "title_ja": "bash -xで機密情報が流出する罠：APIキーや.env変数をログに残さないためのset +x活用とcurlの正しい運用法",
-    "summary_ja": "シェルスクリプトのデバッグに多用するbash -x（set -x）は、変数を展開したコマンド全体を標準エラー出力するため、APIキーや.env内の機密情報がログに丸見えになる危険がある。 これを防ぐには、機密情報を扱う箇所の直前でset +xを用いてログ出力を一時停止し、curlのヘッダー指定にファイル読み込みオプション（@file）を活用することが必須だ。 CI/CDパイプラインやデプロイ用スクリプトを安全に管理するための実践的なセキュリティ対策となる。",
-    "translations": {
-      "ja": {
-        "title": "bash -xで機密情報が流出する罠：APIキーや.env変数をログに残さないためのset +x活用とcurlの正しい運用法",
-        "summary": "シェルスクリプトのデバッグに多用するbash -x（set -x）は、変数を展開したコマンド全体を標準エラー出力するため、APIキーや.env内の機密情報がログに丸見えになる危険がある。 これを防ぐには、機密情報を扱う箇所の直前でset +xを用いてログ出力を一時停止し、curlのヘッダー指定にファイル読み込みオプション（@file）を活用することが必須だ。 CI/CDパイプラインやデプロイ用スクリプトを安全に管理するための実践的なセキュリティ対策となる。"
-      },
-      "en": {
-        "title": "Bash -x leak danger: Preventing API key exposure in logs using set +x and curl file injection",
-        "summary": "Using bash -x or set -x for debugging is common, but it forces the shell to print expanded commands to standard error, leaking sensitive variables like API keys or .env secrets directly into your logs. To mitigate this security vulnerability, developers must use set +x to disable tracing specifically around sensitive command blocks. Additionally, when using curl, shifting headers into external files using the @file option prevents credential exposure during the command execution trace. This approach ensures your deployment scripts and CI/CD pipelines remain hardened against log-based data leakage. Implementing these granular control measures is a necessary discipline for anyone managing automated infrastructure, as relying on global script tracing inherently compromises sensitive configuration data."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-05T16:16:59.209Z"
   },
   {
     "id": "art-1793895411049-jsa3w",
@@ -31908,32 +31933,6 @@
       "開発"
     ],
     "created_at": "2026-11-02T19:01:37.040Z"
-  },
-  {
-    "id": "art-1793645230699-8w163",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/libelab/articles/claude-company-day6",
-    "published_at": "2026-11-02T16:15:55.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KAjsmvrL--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%25E3%2582%2592%25E7%25A4%25BE%25E5%2593%25A1%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F1%25E4%25BA%25BA%25E4%25BC%259A%25E7%25A4%25BE%25E3%2580%2590Day%25206%25E3%2580%259166%25E4%25B8%2587%25E9%2580%259A%25E3%2582%258A%25E3%2582%2592%25E5%2585%25A8%25E9%2583%25A8%25E5%259B%259E%25E3%2581%2597%25E3%2581%259F%25EF%25BC%259AAI%25E7%25A4%25BE%25E5%2593%25A1%25E3%2581%258C%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%25E8%25A8%25BA%25E6%2596%25AD%25E3%2583%25AD%25E3%2582%25B8%25E3%2583%2583%25E3%2582%25AF%25E3%2582%2592%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25A7%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Caito%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2RhZDE2MGFiN2IuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ClaudeをAI社員として活用する1人会社運営【Day 6】：診断ロジックの全66万通り網羅テストと妥当性の検証記録",
-    "summary_ja": "1人会社でClaudeを全社員として活用する運営プロジェクトの第6弾。 Webアプリ「AIに任せられる仕事診断」のロジックをAIが作成し、全66万3,552通りの回答パターンを網羅的にテスト実行した。 全設問の配点バランスを整え、全16タイプへ結果が適切に分散されることと、平均スコアが理論値通りになることを確認。 個人の開発プロジェクトにおいて、生成AIの出力品質を力技の網羅テストで担保する実用的なアプローチを実証した。",
-    "translations": {
-      "ja": {
-        "title": "ClaudeをAI社員として活用する1人会社運営【Day 6】：診断ロジックの全66万通り網羅テストと妥当性の検証記録",
-        "summary": "1人会社でClaudeを全社員として活用する運営プロジェクトの第6弾。 Webアプリ「AIに任せられる仕事診断」のロジックをAIが作成し、全66万3,552通りの回答パターンを網羅的にテスト実行した。 全設問の配点バランスを整え、全16タイプへ結果が適切に分散されることと、平均スコアが理論値通りになることを確認。 個人の開発プロジェクトにおいて、生成AIの出力品質を力技の網羅テストで担保する実用的なアプローチを実証した。"
-      },
-      "en": {
-        "title": "Running a One-Person Company with Claude as Staff: Verifying AI-Generated Logic via Full 660k Combination Testing",
-        "summary": "In this sixth installment of a one-person company experiment where Claude acts as the entire workforce, the founder tackles validating the diagnostic logic for an AI-readiness assessment app. To ensure quality, the team programmatically executed all 663,552 possible response combinations generated by the AI to confirm the results mapped across all 16 user types without bias. By calibrating point allocations so each question’s average score hits zero, they ensured the distribution remained mathematically sound. This rigorous brute-force testing approach demonstrates how solo builders can effectively audit and guarantee the reliability of AI-generated backend logic, moving beyond simple manual checks to achieve production-grade stability in personal development projects before launch."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-02T18:47:10.699Z"
   },
   {
     "id": "art-1793645212869-auqg5",
