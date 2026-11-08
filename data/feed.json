@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794145626011-nlv8t",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/miyagawayuu/articles/rust-manager-service-shutdown-security",
+    "published_at": "2026-11-08T07:45:14.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--5wbuAowJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Rust%2520Manager%25E3%2582%2592%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E7%25B5%2582%25E4%25BA%2586%25E3%2581%2597%25E3%2581%259F%25E7%2590%2586%25E7%2594%25B1%25E3%2580%2582RCON%25E3%2581%25A8%25E3%2582%25BB%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2581%25AE%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%259F%25E3%2583%25A4%25E3%2582%25AC%25E3%2583%25AF%25E3%2583%25A6%25E3%2582%25A6%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzk2N2FmMjQ0NWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ゲームサーバー管理ツール「Rust Manager」サービス終了の裏側—RCON通信とサーバー情報保持が抱えるセキュリティリスクと個人開発の限界",
+    "summary_ja": "Rustゲームサーバー管理ツール「Rust Manager」がサービス終了した。 主な要因は、RCON通信の設計と、ユーザーの機密サーバー情報を保持することに伴うセキュリティリスクおよび運用負荷の増大だ。 個人開発者にとって、他者のサーバー管理権限を預かることはリスクと責任が大きすぎる。 マネタイズ以前に、セキュリティ要件を満たしながら個人で継続運営することの難しさが、サービス継続を断念する大きな要因となった。",
+    "translations": {
+      "ja": {
+        "title": "ゲームサーバー管理ツール「Rust Manager」サービス終了の裏側—RCON通信とサーバー情報保持が抱えるセキュリティリスクと個人開発の限界",
+        "summary": "Rustゲームサーバー管理ツール「Rust Manager」がサービス終了した。 主な要因は、RCON通信の設計と、ユーザーの機密サーバー情報を保持することに伴うセキュリティリスクおよび運用負荷の増大だ。 個人開発者にとって、他者のサーバー管理権限を預かることはリスクと責任が大きすぎる。 マネタイズ以前に、セキュリティ要件を満たしながら個人で継続運営することの難しさが、サービス継続を断念する大きな要因となった。"
+      },
+      "en": {
+        "title": "Why Rust Manager shut down: The hidden security risks of managing RCON traffic and server credentials as a solo developer",
+        "summary": "The Rust game server management tool 'Rust Manager' has officially shut down. The developer details that the decision stemmed from the inherent security risks and overwhelming operational burdens of handling RCON communication and storing sensitive server credentials for users. For solo developers, maintaining secure, high-stakes infrastructure that governs others' game servers creates a liability that outweighs the benefits of the project. Beyond the technical challenges, the reality is that the security requirements needed to properly safeguard third-party server management data make sustainable solo operation nearly impossible. This case serves as a sober reminder for indie builders that handling high-privilege credentials requires infrastructure and risk management protocols that often exceed the resources of a single-person team."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-08T13:47:06.011Z"
+  },
+  {
+    "id": "art-1794145618719-k553i",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/dahatake/items/44d94d01a7517fd8c137",
+    "published_at": "2026-11-08T13:18:16.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMTA4MTQzJTJGcHJvZmlsZS1pbWFnZXMlMkYxNTU5MDA2Mzk4P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz04NzVhMzE3Nzc1N2Y1NGQ3NTAzNjRmZDdlZDY5M2M4OA%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZiYWU2ZDNhMDgyOGMwMTlmZjI1OWNkYjQ3YTg5ODhjOTg2MzYzODlmJTJGb3JpZ2luYWwuanBnJTNGMTU4MzcyMTg2NT9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz0yZTZmZDNmZTU4ZjI4NDMwMWExYjZlMGM4OWJhOWMxZg%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dce28260b84714dbce3e8495e701ced30?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JTk2JThCJUU3JTk5JUJBJUUzJTgzJTk1JUUzJTgzJUFDJUUzJTgzJUJDJUUzJTgzJUEwJUUzJTgzJUFGJUUzJTgzJUJDJUUzJTgyJUFGJUUzJTgxJUFGJUUzJTgyJTgyJUUzJTgxJTg2JUU0JUI4JThEJUU4JUE2JTgxJUUzJTgxJUFBJUUzJTgxJUFFJUUzJTgxJThCJUVGJUJDJTlGJTIwMiUyMCVFMyU4MSVBNCVFMyU4MSVBRSVFMyU4MiVBMiVFMyU4MyU5NyVFMyU4MyVBQSVFMyU4MSVBRSVFOSU5NiU4QiVFNyU5OSVCQSVFNSVCMSVBNSVFNiVBRCVCNCVFMyU4MiU5MiVFNiVBRiU5NCVFMyU4MSVCOSVFMyU4MSVBNiVFMyU4MCU4MUNvZGluZyUyMEFnZW50JTIwJUUzJTgxJUFCJUU2JUFFJThCJUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgxJTg0JUU4JUE2JThGJUU1JUJFJThCJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MzIzOWU1OTM0MTZkNjA3Y2RiMDNhOGU0ZDE0NTJjN2Q&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBkYWhhdGFrZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTc0ODkwZDY1NTc2MTk5ZGRhYTgxNmYwYWUxMjQ1Mjhl&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=TWljcm9zb2Z0&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=803cdd0433497d00e6ae3ae920adecb7",
+    "title_ja": "AIコーディング時代にフレームワークは不要か？2つの開発体験から導き出す、自律エージェント運用に必要な「規律」とは",
+    "summary_ja": "AIがアプリケーション実装を担う現在、開発者がどこまで仕組みを準備すべきかという問いに対し、2つのアプリ開発履歴から検証した。 単にエージェントに指示を出すだけでなく、要求の整理、タスクの切り分け、役割定義、結果検証というエンジニアリングの規律が、AIの成果を最大化する鍵となる。 フレームワークに頼らずとも、このワークフローを構築することが、複雑な開発を成功させる新たな定石となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディング時代にフレームワークは不要か？2つの開発体験から導き出す、自律エージェント運用に必要な「規律」とは",
+        "summary": "AIがアプリケーション実装を担う現在、開発者がどこまで仕組みを準備すべきかという問いに対し、2つのアプリ開発履歴から検証した。 単にエージェントに指示を出すだけでなく、要求の整理、タスクの切り分け、役割定義、結果検証というエンジニアリングの規律が、AIの成果を最大化する鍵となる。 フレームワークに頼らずとも、このワークフローを構築することが、複雑な開発を成功させる新たな定石となるだろう。"
+      },
+      "en": {
+        "title": "Are coding frameworks obsolete? Analyzing two app builds to define the essential discipline required for successful AI agent development",
+        "summary": "As AI agents increasingly take over application implementation, developers must determine how much structural preparation remains necessary to ensure project success. By comparing the development histories of two distinct applications, the author argues that simply prompting an AI is insufficient; success demands rigorous engineering discipline, including structured requirement analysis, task decomposition, clear role definition, and strict output verification. While traditional frameworks might seem less critical, maintaining these foundational workflows is the actual key to maximizing agent performance. For builders, the takeaway is that even in an AI-driven era, defining the process and maintaining high-level control remains the critical differentiator between disjointed code and a production-ready application."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-08T13:46:58.719Z"
+  },
+  {
+    "id": "art-1794145609966-kkexm",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://news.ycombinator.com/item?id=50413158",
+    "published_at": "2026-11-08T13:29:05.000Z",
+    "og_image_url": null,
+    "title_ja": "1900年以前の知見でAIを学習させ、現代の数学・科学理論を再発見できるか？—「AIによる科学的発見のバックテスト」への議論",
+    "summary_ja": "Hacker Newsで、1900年までの科学的知見のみで学習したAIが、その後の現代数学や科学理論を独自に導き出せるかという実験的アプローチが議論されている。 既存の知識ベースを制限してAIを稼働させ、人類が過去100年強で到達した知見をAIが「再発見」できるか検証する手法だ。 もしAIが物理法則や数学的定理を再構成できれば、AIの論理的推論能力の限界や、純粋な学習データからの創発性を評価する強力なベンチマークとなる可能性がある。",
+    "translations": {
+      "ja": {
+        "title": "1900年以前の知見でAIを学習させ、現代の数学・科学理論を再発見できるか？—「AIによる科学的発見のバックテスト」への議論",
+        "summary": "Hacker Newsで、1900年までの科学的知見のみで学習したAIが、その後の現代数学や科学理論を独自に導き出せるかという実験的アプローチが議論されている。 既存の知識ベースを制限してAIを稼働させ、人類が過去100年強で到達した知見をAIが「再発見」できるか検証する手法だ。 もしAIが物理法則や数学的定理を再構成できれば、AIの論理的推論能力の限界や、純粋な学習データからの創発性を評価する強力なベンチマークとなる可能性がある。"
+      },
+      "en": {
+        "title": "Can AI 're-discover' 20th-century science? Debating a backtest of synthetic datasets capped at 1900",
+        "summary": "A fascinating discussion on Hacker News proposes a rigorous backtest for AI: training a model exclusively on scientific literature dated before 1900 to see if it can independently derive modern mathematical or physical theories. The experiment aims to isolate whether current large language models possess genuine logical reasoning capabilities or merely perform sophisticated statistical pattern matching based on vast, post-1900 training corpora. If an AI can effectively \"re-discover\" general relativity or quantum mechanics from limited historical data, it would serve as a groundbreaking benchmark for evaluating model emergence versus rote memorization. For builders and researchers, this suggests a new way to stress-test model reasoning depth, helping us determine if our AI agents are actually grasping fundamental principles or just synthesizing existing knowledge."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-08T13:46:49.966Z"
+  },
+  {
+    "id": "art-1794145603167-vgfef",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/yocchan_ai_9999/n/nd9fdd730b7c7",
+    "published_at": "2026-11-08T13:46:16.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/a74fa2cbb750997b0fbffe19debfdd9ba322bbda.png",
+    "title_ja": "AIに部署を任せる「Claude Code」運用の新手法：複数AIのタスクと稼働状況を可視化するドット絵モニターを自作して管理コストを削減",
+    "summary_ja": "Claude CodeでAIを各部署の部長として働かせる運用において、タスクの重複や混乱を防ぐための「AI部署モニター」を自作した。 各AIのステータスをドット絵でリアルタイム表示し、誰が何をしているかを一目で把握可能にしている。 AIエージェントの自律化が進む中、ブラックボックス化を防ぎ、人間が適切な監督を行うためのUI構築は、AI開発・運用における新たなUXの重要領域となる。",
+    "translations": {
+      "ja": {
+        "title": "AIに部署を任せる「Claude Code」運用の新手法：複数AIのタスクと稼働状況を可視化するドット絵モニターを自作して管理コストを削減",
+        "summary": "Claude CodeでAIを各部署の部長として働かせる運用において、タスクの重複や混乱を防ぐための「AI部署モニター」を自作した。 各AIのステータスをドット絵でリアルタイム表示し、誰が何をしているかを一目で把握可能にしている。 AIエージェントの自律化が進む中、ブラックボックス化を防ぎ、人間が適切な監督を行うためのUI構築は、AI開発・運用における新たなUXの重要領域となる。"
+      },
+      "en": {
+        "title": "Visualizing AI Agents: How I Built a Custom Pixel-Art Dashboard to Monitor My Autonomous Claude Code Department Heads",
+        "summary": "To manage multiple autonomous AI agents running via Claude Code as virtual department heads, I built a custom pixel-art dashboard that provides real-time visibility into their activities. As the number of AI agents grows, tracking their specific tasks and current status becomes impossible without a dedicated interface, leading to operational chaos. This monitor visualizes every agent's state, allowing for immediate oversight and human intervention when necessary. The project highlights a critical shift in AI development: as we deploy more autonomous agents to handle complex workflows, building specialized monitoring UIs is no longer optional. For builders scaling AI-driven operations, ensuring transparency in agent decision-making is essential to maintaining control and preventing the system from becoming an unmanageable black box."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-08T13:46:43.167Z"
+  },
+  {
     "id": "art-1794144735044-mgb91",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -11557,33 +11662,6 @@
     "created_at": "2026-11-07T07:31:54.639Z"
   },
   {
-    "id": "art-1794036708357-03l44",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/nxs_algotradelog/n/n1827dcfab6ac",
-    "published_at": "2026-11-07T06:53:31.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/00275f7b432b87aa5450d42c4d7c077f89d9737d.png",
-    "title_ja": "LLM利用料の「推測」は誤差の温床：1日433回という勘定から学ぶ、開発者が今すぐやるべき定量計測の重要性",
-    "summary_ja": "LLMのAPI利用料やリクエスト数を推測だけで管理するのは危険だ。 ある個人開発の事例では、1日433回という見積もりが積み重なり、実際の使用量と大幅な誤差を生んでいた。 推測に基づいた設計は誤った最適化を招き、コスト管理を崩壊させる。 開発者は「なんとなく」の感覚に頼るのではなく、ログやダッシュボードを使い、正確なトランザクション数を即座に算出する環境を構築すべきだ。 定量データは、直感に頼る意思決定を排除するための最初の一歩である。",
-    "translations": {
-      "ja": {
-        "title": "LLM利用料の「推測」は誤差の温床：1日433回という勘定から学ぶ、開発者が今すぐやるべき定量計測の重要性",
-        "summary": "LLMのAPI利用料やリクエスト数を推測だけで管理するのは危険だ。 ある個人開発の事例では、1日433回という見積もりが積み重なり、実際の使用量と大幅な誤差を生んでいた。 推測に基づいた設計は誤った最適化を招き、コスト管理を崩壊させる。 開発者は「なんとなく」の感覚に頼るのではなく、ログやダッシュボードを使い、正確なトランザクション数を即座に算出する環境を構築すべきだ。 定量データは、直感に頼る意思決定を排除するための最初の一歩である。"
-      },
-      "en": {
-        "title": "Stop guessing your LLM usage: Why estimating 433 requests per day leads to massive, compounding errors in development",
-        "summary": "Managing LLM API costs or request volumes based on mere guesses is a recipe for disaster. One solo developer's case study reveals how estimating usage at 433 requests per day led to significant compounding errors, as those initial bad assumptions skewed every subsequent calculation. Design decisions built on guesswork invariably invite flawed optimizations and break your financial planning. Instead of relying on gut feelings, developers must build environments where actual transaction counts are transparently logged and dashboarded. Quantitative data isn't just for reporting; it is the essential first step to eliminating bias from your architectural decisions. For builders, the practical lesson is clear: if you cannot measure your precise LLM throughput, your entire cost-efficiency strategy is built on sand."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-11-07T07:31:48.357Z"
-  },
-  {
     "id": "art-1794036700286-bxrcc",
     "source_id": "source-github-trending",
     "source_name": "GitHub Trending (AI / TypeScript / Python)",
@@ -15831,32 +15909,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-06T16:46:42.355Z"
-  },
-  {
-    "id": "art-1793982745817-ns0qu",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://theainewsreport.com/2026-11-06-hn-agentic-setups-counted.html",
-    "published_at": "2026-11-06T16:23:51.000Z",
-    "og_image_url": "https://theainewsreport.com/og-2026-11-06-hn-agentic-setups-counted.png",
-    "title_ja": "Hacker Newsの663件のコメントを分析、実戦的なAIコーディングエージェント環境の構築トレンドと推奨ツール構成",
-    "summary_ja": "Hacker Newsの663件のコメントから、開発者が実際に使用しているAIコーディングエージェント環境を徹底分析。 CursorやClaude、Windsurfを軸にしたワークフローが主流となる中、エディタ選びからAPI連携、コンテキスト管理まで、現役エンジニアが選ぶ具体的なスタックが浮き彫りになった。",
-    "translations": {
-      "ja": {
-        "title": "Hacker Newsの663件のコメントを分析、実戦的なAIコーディングエージェント環境の構築トレンドと推奨ツール構成",
-        "summary": "Hacker Newsの663件のコメントから、開発者が実際に使用しているAIコーディングエージェント環境を徹底分析。 CursorやClaude、Windsurfを軸にしたワークフローが主流となる中、エディタ選びからAPI連携、コンテキスト管理まで、現役エンジニアが選ぶ具体的なスタックが浮き彫りになった。"
-      },
-      "en": {
-        "title": "Analyzing 663 Hacker News comments to reveal the most effective real-world AI coding agent setups and workflows",
-        "summary": "By aggregating and analyzing 663 Hacker News comments, this retrospective maps out the specific AI coding agent stacks that developers are actually relying on for production workflows. As the ecosystem consolidates around powerhouses like Cursor, Claude, and Windsurf, the data highlights which configurations bridge the gap between simple chat wrappers and true agentic coding assistants. The breakdown moves beyond hype to detail how specific API integrations and context management patterns actually behave across different project complexities. For builders evaluating their next development environment, this report serves as a benchmark for prioritizing tools based on real-world stability and productivity gains, rather than just raw model capabilities or marketing promises in an increasingly crowded agentic tool landscape."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-06T16:32:25.817Z"
   },
   {
     "id": "art-1793982737563-zn4y8",
@@ -20267,33 +20319,6 @@
       "開発"
     ],
     "created_at": "2026-11-05T21:46:45.493Z"
-  },
-  {
-    "id": "art-1793914309179-w0645",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/quotidia/items/4d79c560f6dce52b4ed2",
-    "published_at": "2026-11-05T21:00:55.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQzMzI3MSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc3OTAwNzIzNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YWY5NDIyNzdmMjZlOGJhMzVmYmZlY2IwOGU2ZWQ2NTA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df59d4b48280797c581d3f62880665fc3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2hhdEdQVCVFMyU4MSVBNyVFOCU5MCVCRCVFNiU5QiVCOCVFMyU4MSU4RCVFMyU4MSU4QyVFNSU4QiU5NSVFMyU4MSU4RCVFMyU4MSVBMCVFMyU4MSU5OSVFMyU4MCU4Mk9wZW5BSSVFMyU4MSVBRSVFNiU5NiVCMCVFMyU4MyVBMiVFMyU4MyU4NyVFMyU4MyVBQiVFMyU4MCU4Q0ltYWdlcyUyMDIuNiVFMyU4MCU4RCVFMyU4MSVBN0dJRiVFMyU4MiVBMiVFMyU4MyU4QiVFMyU4MyVBMSVFNCVCRCU5QyVFNiU4OCU5MCVFMyU4MSVBQiVFNSVBRiVCRSVFNSVCRiU5QyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTk1YWZlNGI2YWUxNmQyOGQxOGNhY2FlNjM3MzUxMDAy&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBxdW90aWRpYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTRhNjI0NjUzMTU4ODhjZWUzZDIxNjI0N2Q4Y2JjZDY2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6d2c6bf3ee891967a4eefdcdc7677c59",
-    "title_ja": "OpenAI、画像生成モデル「Images 2.6」公開。ChatGPT上で手描きイラストを数秒でGIFアニメ化する新機能が登場",
-    "summary_ja": "OpenAIが発表した画像生成モデル「Images 2.6」により、ChatGPT上で手書きの落書きやイラストから直接GIFアニメーションを作成できる機能が実装された。 従来の静止画生成を超え、連続的な動きを数秒で自動生成できる。 クリエイティブ制作のワークフローが劇的に簡略化されるため、個人開発者やデザイナーはプロトタイピングのスピード向上や、AIを駆使した直感的なコンテンツ制作の新手法として注目すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "OpenAI、画像生成モデル「Images 2.6」公開。ChatGPT上で手描きイラストを数秒でGIFアニメ化する新機能が登場",
-        "summary": "OpenAIが発表した画像生成モデル「Images 2.6」により、ChatGPT上で手書きの落書きやイラストから直接GIFアニメーションを作成できる機能が実装された。 従来の静止画生成を超え、連続的な動きを数秒で自動生成できる。 クリエイティブ制作のワークフローが劇的に簡略化されるため、個人開発者やデザイナーはプロトタイピングのスピード向上や、AIを駆使した直感的なコンテンツ制作の新手法として注目すべきだ。"
-      },
-      "en": {
-        "title": "OpenAI releases Images 2.6, enabling users to transform hand-drawn sketches into animated GIFs directly within ChatGPT",
-        "summary": "OpenAI has officially launched its new image generation model, Images 2.6, which introduces the capability to transform hand-drawn sketches and illustrations into animated GIFs directly within the ChatGPT interface. By moving beyond static imagery to generate fluid, multi-frame animations in seconds, the update significantly reduces the friction involved in creative workflows. This development offers a substantial efficiency boost for solo developers and designers, serving as a powerful new method for rapid prototyping or interactive content creation. For builders operating in the generative AI space, this marks a shift toward more dynamic output formats, suggesting that integrating motion-based generation into AI-powered tools will soon become a baseline expectation for user engagement and creative utility."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "画像生成"
-    ],
-    "created_at": "2026-11-05T21:31:49.179Z"
   },
   {
     "id": "art-1793914286183-ynyjd",
@@ -31391,32 +31416,6 @@
       "開発"
     ],
     "created_at": "2026-11-02T22:46:42.991Z"
-  },
-  {
-    "id": "art-1793658780497-bjutw",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/fumi3333/articles/phone-robot-overview",
-    "published_at": "2026-11-02T11:53:21.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pgwudNnc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B9%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2588%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25B3%25E3%2582%2592%25E9%25A0%25AD%25E8%2584%25B3%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%25E8%2587%25AA%25E5%25BE%258B%25E8%25B5%25B0%25E8%25A1%258C%25E8%25BB%258A%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2580%2582%25E3%2582%25BD%25E3%2583%2595%25E3%2583%2588%25E3%2582%25A6%25E3%2582%25A7%25E3%2582%25A2%25E3%2581%25AF%25E5%2585%25AC%25E9%2596%258B%25E6%25B8%2588%25E3%2581%25BF%25E3%2580%2581%25E8%25BB%258A%25E4%25BD%2593%25E3%2581%25AF%25E9%2585%258D%25E7%25B7%259A%25E3%2581%25AE%25E9%2580%2594%25E4%25B8%25AD%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fumi3333%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyMGFlODBkMmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "スマホを「頭脳」にした自律走行車DIYプロジェクト：ARCoreとToFセンサーを活用した走行経路設計とハードウェア実装の全容",
-    "summary_ja": "市販のトイラジコンにGalaxy Note 10+を搭載し、スマートフォンを頭脳とした自律走行車の開発プロジェクトが進行中だ。 ARCoreによる自己位置推定とToFセンサーの距離測定を組み合わせ、自作の経路計画アルゴリズムで走行する仕組みを構築している。 現在は車体の配線作業段階にあり、シミュレーションではすでに地図化の有効性を確認済みだ。 高価なLiDARの代わりにスマホのセンサーとSoCを活用するアプローチは、個人規模のロボティクス開発における重要な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "スマホを「頭脳」にした自律走行車DIYプロジェクト：ARCoreとToFセンサーを活用した走行経路設計とハードウェア実装の全容",
-        "summary": "市販のトイラジコンにGalaxy Note 10+を搭載し、スマートフォンを頭脳とした自律走行車の開発プロジェクトが進行中だ。 ARCoreによる自己位置推定とToFセンサーの距離測定を組み合わせ、自作の経路計画アルゴリズムで走行する仕組みを構築している。 現在は車体の配線作業段階にあり、シミュレーションではすでに地図化の有効性を確認済みだ。 高価なLiDARの代わりにスマホのセンサーとSoCを活用するアプローチは、個人規模のロボティクス開発における重要な選択肢となる。"
-      },
-      "en": {
-        "title": "Building an Autonomous RC Car Using a Smartphone as the Primary Brain via ARCore and ToF Sensor Integration",
-        "summary": "This DIY robotics project utilizes a Galaxy Note 10+ as the central brain for a modified Toyota 86 toy RC car, creating an autonomous navigation system. By leveraging ARCore for precise self-localization and a ToF sensor for distance measurement, the system navigates while generating maps via custom path-planning code. While simulation testing has already validated the mapping logic, the project is currently transitioning into physical hardware integration and wiring. This approach demonstrates how repurposing existing smartphone SoCs and sensor arrays offers a cost-effective path for hobbyists to tackle complex robotics challenges without needing high-end, dedicated LiDAR hardware. It is a compelling template for anyone aiming to build sophisticated autonomous agents on a shoestring budget."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-02T22:33:00.497Z"
   },
   {
     "id": "art-1793658772035-rxviv",
