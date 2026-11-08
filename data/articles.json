@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794130312302-ar6og",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/itaraiguma/articles/agent-read-limit-split-did-not-hold",
+    "published_at": "2026-11-07T23:51:37.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--kjZRlu1W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E8%25AA%25AD%25E3%2581%25BE%25E3%2581%259B%25E3%2582%258B%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%2592%25E5%2588%2586%25E5%2589%25B2%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2582%25E3%2580%2581%25E6%2595%25B0%25E6%2597%25A5%25E3%2581%25A7%25E3%2581%25BE%25E3%2581%259F800%25E8%25A1%258C%25E3%2582%2592%25E8%25B6%2585%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlZmMxMmY2MTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェント開発の「巨大ファイル問題」：分割作業を諦め、CIによる自動チェックでコード肥大化を食い止めた話",
+    "summary_ja": "技術記事キュレーションサービス「DevPick」をAIエージェント（Claude Code等）で開発する際、AIの読込制限を超える巨大ファイルが数日で再発する問題に直面した。 手動でのファイル分割は根本解決にならず、最終的にCIでの検査を導入することでコードの肥大化を強制的に抑制する方針に転換した。 設計文書のみ例外とする運用を含め、AI主導開発におけるコードベースの健全性を保つための現実的な設計戦略を共有する。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント開発の「巨大ファイル問題」：分割作業を諦め、CIによる自動チェックでコード肥大化を食い止めた話",
+        "summary": "技術記事キュレーションサービス「DevPick」をAIエージェント（Claude Code等）で開発する際、AIの読込制限を超える巨大ファイルが数日で再発する問題に直面した。 手動でのファイル分割は根本解決にならず、最終的にCIでの検査を導入することでコードの肥大化を強制的に抑制する方針に転換した。 設計文書のみ例外とする運用を含め、AI主導開発におけるコードベースの健全性を保つための現実的な設計戦略を共有する。"
+      },
+      "en": {
+        "title": "Managing AI coding agent context limits: Why CI checks beat file splitting for preventing massive, unreadable source files",
+        "summary": "When building the tech curation service DevPick using AI agents like Claude Code and Codex, I repeatedly faced the issue of files bloating beyond the context limit, requiring constant manual splitting that never actually stuck. Instead of chasing a perpetual maintenance cycle of file refactoring, I pivoted to implementing automated CI checks to proactively block oversized files from being committed in the first place. This strategy mandates code modularity while allowing specific exceptions for design documentation, ensuring the repository remains accessible to AI agents without manual oversight. The takeaway is that relying on AI refactoring for architectural discipline is futile; automated governance is necessary to keep the codebase clean, readable, and perfectly suited for agentic coding workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-08T09:31:52.302Z"
+  },
+  {
+    "id": "art-1794130305813-7izh7",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sumumu26/articles/b1afde3b0e06f2",
+    "published_at": "2026-11-08T02:29:31.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--z78j7l-W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%25E3%2583%2586%25E3%2582%25B9%25E3%2583%258824%25E4%25BB%25B6%25E3%2580%2581%25E3%2583%2590%25E3%2582%25B0%25E3%2581%2582%25E3%2582%258A%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E5%2585%25A8%25E9%2583%25A8%25E3%2580%258E%25E6%2588%2590%25E5%258A%259F%25E3%2580%258F%25E3%2580%2582%25E7%259B%25B4%25E3%2581%2597%25E3%2581%259F%25E3%2582%25899%25E4%25BB%25B6%25E3%2580%258E%25E5%25A4%25B1%25E6%2595%2597%25E3%2580%258F%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:miharuba_jp%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQyMTViMWFiZWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI生成テストコードの盲点：バグ入りアプリで「全成功」し、修正後に「9件失敗」した実験が示すテストの信頼性問題",
+    "summary_ja": "AIに生成させた24件のテストコードを、あえて不具合を残したアプリと修正済みアプリの両方で実行する実験を実施。 不具合のあるアプリに対してもテストは全て「成功」と判定され、逆に不具合を修正した途端に9件のテストが失敗するという逆転現象が発生した。 AIによるテスト生成は工数削減に役立つが、生成されたコードが適切に条件分岐を網羅しているか、単に現状の仕様を追認しているだけではないかを人間が厳格にレビューする必要がある。",
+    "translations": {
+      "ja": {
+        "title": "AI生成テストコードの盲点：バグ入りアプリで「全成功」し、修正後に「9件失敗」した実験が示すテストの信頼性問題",
+        "summary": "AIに生成させた24件のテストコードを、あえて不具合を残したアプリと修正済みアプリの両方で実行する実験を実施。 不具合のあるアプリに対してもテストは全て「成功」と判定され、逆に不具合を修正した途端に9件のテストが失敗するという逆転現象が発生した。 AIによるテスト生成は工数削減に役立つが、生成されたコードが適切に条件分岐を網羅しているか、単に現状の仕様を追認しているだけではないかを人間が厳格にレビューする必要がある。"
+      },
+      "en": {
+        "title": "Why AI-generated test suites can be misleading: A case study where broken apps passed while fixed ones failed",
+        "summary": "In a revealing experiment, an AI agent generated 24 test cases for a small management application. Surprisingly, the entire suite passed even when run against a version of the app containing intentional, critical bugs. More alarmingly, after the bugs were fixed, nine of the AI-generated tests failed, demonstrating that the initial tests were essentially validating incorrect behavior rather than verifying logic. While AI tools significantly accelerate test suite creation, this study highlights a dangerous blind spot for developers: generated tests often blindly mirror existing implementation flaws rather than asserting correct functionality. For builders, this serves as a critical reminder that AI-written tests require rigorous, manual verification to ensure they are actually testing the logic, not just confirming the current state of broken code."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-08T09:31:45.813Z"
+  },
+  {
+    "id": "art-1794130299020-2tneg",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/game_system_alex/n/n8b08844abc41",
+    "published_at": "2026-11-08T09:07:43.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333704347/rectangle_large_type_2_4dcc1b02f90467fd7a2e43d5531f59c1.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "ゲーム開発の「全能感」を再定義するAIツール「Muse」の衝撃、ChatGPT-4oを超える直感的な操作体験を深掘り",
+    "summary_ja": "AIツール「Muse」を用いたゲーム制作の体験レポート。 プロンプトだけで直感的に実装が進む操作性は、かつてのGPT-4oで感じた全能感を彷彿とさせ、特に個人開発者にとって「丁度いい」優秀さが際立つ。 複雑なパラメータ調整に追われることなく、作りたい世界を即座に形にできるUXの最適化が、開発の没入感を飛躍的に高めている。 ツール選定においては、単なる高性能さだけでなく、制作フローにどれだけ自然に溶け込むかが成功の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "ゲーム開発の「全能感」を再定義するAIツール「Muse」の衝撃、ChatGPT-4oを超える直感的な操作体験を深掘り",
+        "summary": "AIツール「Muse」を用いたゲーム制作の体験レポート。 プロンプトだけで直感的に実装が進む操作性は、かつてのGPT-4oで感じた全能感を彷彿とさせ、特に個人開発者にとって「丁度いい」優秀さが際立つ。 複雑なパラメータ調整に追われることなく、作りたい世界を即座に形にできるUXの最適化が、開発の没入感を飛躍的に高めている。 ツール選定においては、単なる高性能さだけでなく、制作フローにどれだけ自然に溶け込むかが成功の鍵となる。"
+      },
+      "en": {
+        "title": "Why the Muse AI tool is redefining the game development experience with intuitive 'flow state' interactions",
+        "summary": "This breakdown explores the rising appeal of Muse, an AI tool that is capturing developer attention by streamlining game creation into a fluid, prompt-driven experience. Unlike larger, more generalist models like GPT-4o, Muse offers a specific 'Goldilocks' level of capability that feels perfectly tuned for rapid prototyping and implementation. By removing the friction of complex parameter tweaking and allowing builders to describe desired mechanics directly, it creates a sense of total creative control that keeps users in a flow state. For solo developers, the takeaway is clear: the most effective tools aren't always the most powerful, but the ones that minimize cognitive load and allow immediate translation of vision into functional game systems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-08T09:31:39.020Z"
+  },
+  {
+    "id": "art-1794130292478-nmsrg",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails/",
+    "published_at": "2026-11-08T09:15:06.000Z",
+    "og_image_url": "https://media.wired.com/photos/6aece5b7cb93131011507281/191:100/w_1280,c_limit/Backchannel-11062026_Option2.jpg",
+    "title_ja": "AI各社が学習データ確保へ、企業メールや社内文書の買い取りを加速：プライバシーと知的財産保護の新たな懸念が浮上",
+    "summary_ja": "AIモデルの性能向上を急ぐテック企業各社が、機械学習用の高品質データセットを確保するため、企業間の社内文書やメールデータの買い取りを積極的に進めている。 生成AIの学習においてウェブ上の公開データが枯渇しつつある中、非公開の独自データが新たな「石油」として市場取引の対象となっている。 開発者は自社のコードやログをAI企業に提供する際、セキュリティとデータ流出のリスクを再評価し、機密情報を保護するための法的な防壁を確立することが不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "AI各社が学習データ確保へ、企業メールや社内文書の買い取りを加速：プライバシーと知的財産保護の新たな懸念が浮上",
+        "summary": "AIモデルの性能向上を急ぐテック企業各社が、機械学習用の高品質データセットを確保するため、企業間の社内文書やメールデータの買い取りを積極的に進めている。 生成AIの学習においてウェブ上の公開データが枯渇しつつある中、非公開の独自データが新たな「石油」として市場取引の対象となっている。 開発者は自社のコードやログをAI企業に提供する際、セキュリティとデータ流出のリスクを再評価し、機密情報を保護するための法的な防壁を確立することが不可欠である。"
+      },
+      "en": {
+        "title": "AI Firms Increasingly Buying Private Corporate Emails and Internal Documents to Feed Massive Machine Learning Models",
+        "summary": "AI companies are aggressively pursuing non-public internal data, including corporate emails and proprietary documents, to bridge the widening gap in high-quality training material as public web-scraped sources become exhausted. This trend transforms private enterprise data into a new digital commodity, essentially turning corporate communication logs into raw fuel for foundational models. For engineers and organizations, this shift presents a massive dilemma: the temptation to monetize idle data archives clashes directly with the severe risk of leaking trade secrets or client information to competitors. Builders must now re-evaluate their internal data governance policies, treat enterprise archives as high-security assets rather than static backups, and implement strict legal firewalls to prevent inadvertent inclusion in third-party training pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "セキュリティ",
+      "研究"
+    ],
+    "created_at": "2026-11-08T09:31:32.478Z"
+  },
+  {
     "id": "art-1794129423840-m6gnx",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -11925,33 +12031,6 @@
       "開発"
     ],
     "created_at": "2026-11-07T02:03:07.416Z"
-  },
-  {
-    "id": "art-1794016940735-39fjb",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/great_murre683/n/n980122c5c363",
-    "published_at": "2026-11-07T02:00:35.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333171872/rectangle_large_type_2_58a8a1b1e413332279075769271a89f3.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "「1人企業（One-Person Engine）」という新しい組織論：法人格に頼らないAIエージェント活用とレバレッジ極大化の設計思想",
-    "summary_ja": "「株式会社」という枠組みのオーバーヘッドを捨て、AIエージェントを実働部隊として組織を再定義する「1人企業（One-Person Engine）」の考え方が注目されている。 従来の人件費や管理コストを抱える組織形態ではなく、AIエージェントによる自動化とスケーラビリティを最大化することで、個人開発者が企業の生産性を超越する仕組みだ。 AIを単なるツールとしてではなく、労働力として最適配置する視点こそが、現代のインディハッカーにとっての生存戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "「1人企業（One-Person Engine）」という新しい組織論：法人格に頼らないAIエージェント活用とレバレッジ極大化の設計思想",
-        "summary": "「株式会社」という枠組みのオーバーヘッドを捨て、AIエージェントを実働部隊として組織を再定義する「1人企業（One-Person Engine）」の考え方が注目されている。 従来の人件費や管理コストを抱える組織形態ではなく、AIエージェントによる自動化とスケーラビリティを最大化することで、個人開発者が企業の生産性を超越する仕組みだ。 AIを単なるツールとしてではなく、労働力として最適配置する視点こそが、現代のインディハッカーにとっての生存戦略となる。"
-      },
-      "en": {
-        "title": "The 'One-Person Engine' paradigm: Deconstructing traditional corporate structures to maximize leverage with AI agents",
-        "summary": "The 'One-Person Engine' concept challenges the overhead of traditional corporate structures, proposing a shift toward using AI agents as the primary workforce. Instead of scaling through manual hiring and management layers, this model treats AI agents as scalable assets, allowing solo developers to exceed the output of traditional teams. By re-engineering workflows to position AI as an autonomous worker rather than a mere productivity tool, builders can drastically reduce operational drag while maximizing leverage. For modern indie hackers, the strategic takeaway is that competitive advantage now hinges on architectural design—integrating AI as a core operational component from day one—rather than simply relying on traditional organizational scaling and capital-intensive growth strategies."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-07T02:02:20.735Z"
   },
   {
     "id": "art-1794016924649-d00w5",
@@ -25175,32 +25254,6 @@
     "created_at": "2026-11-04T12:37:39.798Z"
   },
   {
-    "id": "art-1793795837926-ma79i",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/bpr_prot/articles/9d3e3631820c5d",
-    "published_at": "2026-11-04T05:19:43.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cjGwfVze--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25A8Codex%25E3%2581%25ABSupabase%25E3%2581%25AE%25E3%2583%25A1%25E3%2583%25A2%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%259212%25E5%259B%259E%25E4%25BD%259C%25E3%2582%2589%25E3%2581%259B%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581RLS%25E3%2581%25AF%25E6%25AF%258E%25E5%259B%259E%25E3%2581%258B%25E3%2581%258B%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E3%2580%2582%25E5%2588%2586%25E3%2581%258B...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:BPR%2520Prot.%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzk5MTMzYTU5OWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude CodeとCodexでSupabaseのメモアプリを12回試作、RLS適用を検証した結果「誰が読めるか」に重大な差異",
-    "summary_ja": "UpGuardの調査でSupabaseのデータベース1万6,326件のテーブルが外部アクセス可能だった問題を受け、Claude CodeとCodexにメモアプリを12回作らせRLS設定を検証した。 結果、RLS自体は全回で有効化されたものの、「誰がデータにアクセスできるか」というポリシー定義には顕著なバラつきが生じた。",
-    "translations": {
-      "ja": {
-        "title": "Claude CodeとCodexでSupabaseのメモアプリを12回試作、RLS適用を検証した結果「誰が読めるか」に重大な差異",
-        "summary": "UpGuardの調査でSupabaseのデータベース1万6,326件のテーブルが外部アクセス可能だった問題を受け、Claude CodeとCodexにメモアプリを12回作らせRLS設定を検証した。 結果、RLS自体は全回で有効化されたものの、「誰がデータにアクセスできるか」というポリシー定義には顕著なバラつきが生じた。"
-      },
-      "en": {
-        "title": "Testing 12 AI-Generated Supabase Memo Apps: How Claude Code and Codex Handle RLS Policies Differently",
-        "summary": "Following an UpGuard report revealing 16,326 exposed Supabase databases, this experiment challenged Claude Code and Codex to build a memo app 12 separate times to audit Row Level Security (RLS) implementation. While RLS was enabled every time, the specific authorization logic governing who can read or write data varied wildly between iterations. Relying solely on AI to configure database permissions is a high-risk gamble, as the generated policies often suffer from over-permissive access controls. Developers must manually verify SQL policies and audit access levels using a five-point checklist to ensure true data isolation. For builders using AI to scaffold backends, viewing these generated policies as suggestions rather than secure defaults is essential to prevent catastrophic data leaks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-04T12:37:17.926Z"
-  },
-  {
     "id": "art-1793794717696-u82ho",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -34064,59 +34117,6 @@
       "開発"
     ],
     "created_at": "2026-11-02T11:46:34.840Z"
-  },
-  {
-    "id": "art-1793617314482-wlfna",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/harieshokunin/articles/claude-org-5h-failover",
-    "published_at": "2026-11-02T01:56:43.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FFxzlUiG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude2%25E3%2582%25A2%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%25E6%2594%25AF%25E6%2589%2595%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%258B%25E4%25BA%25BA%25E3%2581%258C%25E6%25A5%25BD%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2582%25B3%25E3%2583%259E%25E3%2583%25B3%25E3%2583%2589%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E8%25B2%25BC%25E3%2582%258A%25E7%25B5%25B5%25E8%2581%25B7%25E4%25BA%25BA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pmWmJmZWxybVEtLV84eDVjeFA4QklXc1dIdmhOZDFiWXNfd095b0E9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの利用上限回避術。Team/Max契約を動的に切り替えるCLIツール「claude-org-proxy」を開発・公開",
-    "summary_ja": "Claude Codeで「Team」プランの上限に達した際、手動での組織切り替えが煩雑なため、自動で「Max（個人）」アカウントへフォールバックするプロキシCLIを開発した。 このツールは429エラーを検知して認証情報を差し替える仕組みで、セッションの引き継ぎもスムーズに行える。 API制限を回避しながら開発フローを止めないためには、このように認証層を抽象化し、契約プランを動的にスイッチする工夫が実戦的な解となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの利用上限回避術。Team/Max契約を動的に切り替えるCLIツール「claude-org-proxy」を開発・公開",
-        "summary": "Claude Codeで「Team」プランの上限に達した際、手動での組織切り替えが煩雑なため、自動で「Max（個人）」アカウントへフォールバックするプロキシCLIを開発した。 このツールは429エラーを検知して認証情報を差し替える仕組みで、セッションの引き継ぎもスムーズに行える。 API制限を回避しながら開発フローを止めないためには、このように認証層を抽象化し、契約プランを動的にスイッチする工夫が実戦的な解となる。"
-      },
-      "en": {
-        "title": "Developer builds CLI proxy to auto-switch between Claude Team and Pro plans to bypass rate limits",
-        "summary": "When hitting rate limits on Claude Team plans, manual org switching disrupts development flow. To solve this, a developer created a proxy CLI that automatically intercepts 429 errors and flips the session to a Claude Pro (Max) account without manual intervention. By handling authentication header swapping locally, the tool ensures continuous agent operation even when organizational token limits are exhausted. This approach demonstrates how developers can maintain productivity in multi-org environments by abstracting the authentication layer and implementing smart fallback logic. For builders relying on Claude Code, this serves as a robust pattern for avoiding workflow bottlenecks caused by rigid plan limits while navigating complex enterprise and personal subscription configurations safely."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-02T11:01:54.482Z"
-  },
-  {
-    "id": "art-1793616415339-18kwj",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/hakumaigenki/articles/1password-e5d0",
-    "published_at": "2026-11-02T01:17:16.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jyV3Y28X--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:1Password%25E3%2581%25AE%25E8%25A8%2598%25E4%25BA%258B%25E3%2582%2592%25E8%25AA%25AD%25E3%2582%2593%25E3%2581%25A7%25E3%2580%2581%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AE%25E9%258D%25B5%25E3%2582%2592%25E6%2595%25B0%25E3%2581%2588%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%2599%25BD%25E7%25B1%25B3%25E5%2585%2583%25E6%25B0%2597%25EF%25BD%259CLLM%2520Oops%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSi0xR3k1Zl84dVEyOEZ0NV96cUY2cU10OWZTbm5EbFFjNWk1OG9odHEwbzVZSkNwZ1I9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "パスワード管理の全集約前に「現在の鍵の分散状況」を可視化せよ—1Password導入検討時に陥る盲点と棚卸しの重要性",
-    "summary_ja": "「1Passwordへ全集約した」という記事を読み、多くの人が盲点としている「現在の鍵がどこに散らばっているか」をカウントした実体験に基づく提言。 パスキーの利便性やゼロ知識暗号化の安全性は周知の事実だが、移行前に現状の資産（APIキー、パスワード、認証情報）を正確に把握しなければ、集約プロセス自体が破綻する。 個人開発者やエンジニアにとっても、ツールを導入する前のインベントリ作成と現状の整理こそが、セキュリティ環境の刷新を成功させる唯一の近道である。",
-    "translations": {
-      "ja": {
-        "title": "パスワード管理の全集約前に「現在の鍵の分散状況」を可視化せよ—1Password導入検討時に陥る盲点と棚卸しの重要性",
-        "summary": "「1Passwordへ全集約した」という記事を読み、多くの人が盲点としている「現在の鍵がどこに散らばっているか」をカウントした実体験に基づく提言。 パスキーの利便性やゼロ知識暗号化の安全性は周知の事実だが、移行前に現状の資産（APIキー、パスワード、認証情報）を正確に把握しなければ、集約プロセス自体が破綻する。 個人開発者やエンジニアにとっても、ツールを導入する前のインベントリ作成と現状の整理こそが、セキュリティ環境の刷新を成功させる唯一の近道である。"
-      },
-      "en": {
-        "title": "Why you should audit your distributed keys before consolidating them into 1Password or any secret manager",
-        "summary": "Inspired by the benefits of consolidating credentials into 1Password, many users rush into migration without first performing a critical audit of where their keys are actually scattered. While passkeys and zero-knowledge encryption offer massive security wins, the migration process is doomed to fail if you haven't first inventoried your existing API keys, passwords, and fragmented authentication tokens. This practical case study highlights that the technology upgrade is the easy part; the hard, necessary work is the manual inventory. For builders and individual developers, this serves as a potent reminder: before you adopt a new security stack or management tool, you must map your entire threat surface and asset sprawl, or risk leaving critical vulnerabilities behind during the transition."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-02T10:46:55.339Z"
   },
   {
     "id": "art-1793614634581-2zk7m",
