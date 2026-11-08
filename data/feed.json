@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1794097932009-cio7a",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/evermotion_jp/n/ne7428b9e2844",
+    "published_at": "2026-11-08T00:30:46.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/326155882/profile_6193fe6efa60bd3e5e0ebeb74a05f51b.png?fit=bounds&format=jpeg&quality=85&width=330",
+    "title_ja": "開発25日目の落とし穴：設定ファイルへの日本語記述でプロセスが黙ってクラッシュする原因と文字コードの罠",
+    "summary_ja": "毎朝の自動投稿機能が2日間連続で沈黙し、ログも一切出力されないという状況に直面した。 調査の結果、設定ファイルに日本語を記述したことで文字コードの不一致が発生し、パース段階でプロセスがサイレントに終了していたことが判明。 開発初期段階では設定ファイルのエンコーディングや、バリデーションを通過しない非可視的なエラーハンドリングの重要性を改めて痛感する事例となった。",
+    "translations": {
+      "ja": {
+        "title": "開発25日目の落とし穴：設定ファイルへの日本語記述でプロセスが黙ってクラッシュする原因と文字コードの罠",
+        "summary": "毎朝の自動投稿機能が2日間連続で沈黙し、ログも一切出力されないという状況に直面した。 調査の結果、設定ファイルに日本語を記述したことで文字コードの不一致が発生し、パース段階でプロセスがサイレントに終了していたことが判明。 開発初期段階では設定ファイルのエンコーディングや、バリデーションを通過しない非可視的なエラーハンドリングの重要性を改めて痛感する事例となった。"
+      },
+      "en": {
+        "title": "Debugging Silent Failures: Why Adding Non-ASCII Japanese Characters to Config Files Crashed the Entire Automated Pipeline",
+        "summary": "The automated morning publishing pipeline failed silently for two consecutive days, leaving zero traces in the logs to debug the root cause. Investigation revealed that injecting Japanese characters into the YAML config file triggered a silent process termination during the parsing stage due to a character encoding mismatch. This incident highlights a critical development oversight: assuming that config loaders will handle non-ASCII characters gracefully without explicit validation or logging. For builders working on automation scripts, this serves as a harsh reminder to enforce strict encoding standards in config files and implement external health checks for processes that fail silently. Relying on internal logs is insufficient when the entire process crashes before logging even begins, making early-stage validation essential."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-08T00:32:12.009Z"
+  },
+  {
+    "id": "art-1794097923682-2dkxm",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://docs.github.com/en/code-security/concepts/code-scanning/ai-scan-for-repositories",
+    "published_at": "2026-11-08T00:02:46.000Z",
+    "og_image_url": "https://docs.github.com/assets/cb-345/images/social-cards/code-security.png",
+    "title_ja": "GitHub、AIを活用したコード脆弱性スキャン機能の全貌を公開：リポジトリ全体を横断的に解析し未知のセキュリティリスクを自動検知",
+    "summary_ja": "GitHubは、AI技術を活用した新しいコードスキャン機能を公開しました。 これは単なる個別のファイルチェックではなく、リポジトリ全体を横断的に解析することで、従来の手法では見落とされがちな複雑な脆弱性を自動検知するものです。 開発者はCI/CDパイプラインにこのAIスキャンを統合することで、コミット前の段階でセキュリティ不備を能動的に排除できます。",
+    "translations": {
+      "ja": {
+        "title": "GitHub、AIを活用したコード脆弱性スキャン機能の全貌を公開：リポジトリ全体を横断的に解析し未知のセキュリティリスクを自動検知",
+        "summary": "GitHubは、AI技術を活用した新しいコードスキャン機能を公開しました。 これは単なる個別のファイルチェックではなく、リポジトリ全体を横断的に解析することで、従来の手法では見落とされがちな複雑な脆弱性を自動検知するものです。 開発者はCI/CDパイプラインにこのAIスキャンを統合することで、コミット前の段階でセキュリティ不備を能動的に排除できます。"
+      },
+      "en": {
+        "title": "GitHub launches AI-powered repository-wide vulnerability scanning to automate complex security risk detection across entire codebases",
+        "summary": "GitHub has officially launched AI-powered code scanning features designed to analyze entire repositories, rather than just isolated files, to identify complex security vulnerabilities that traditional pattern-matching tools often miss. By integrating these AI-driven scans directly into existing CI/CD pipelines, engineering teams can proactively detect security flaws before code is even committed to the main branch. This shift-left approach allows developers to delegate the heavy lifting of security compliance to automation, enabling them to focus more effectively on application logic. For builders maintaining production codebases, this evolution signifies that automated AI security analysis is no longer an optional luxury, but a core component of modern development workflows that prevents critical production breaches."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-08T00:32:03.682Z"
+  },
+  {
+    "id": "art-1794097917425-u2pig",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tango_lab/n/ndf16c93fe5ec",
+    "published_at": "2026-11-08T00:31:22.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/329235865/profile_392cd80b48f406f801c90f7cb06ac649.jpeg?fit=bounds&format=jpeg&quality=85&width=330",
+    "title_ja": "Steamの生成AI利用開示、何をどこまで書くべきか？2026年改定も踏まえた「Content Survey」項目別入力ガイド完全網羅",
+    "summary_ja": "Steamの「生成AIコンテンツ開示」は、プレイヤーが体験するゲーム内素材にAIを使用したか否かが焦点となる。 立ち絵・BGM・音声・翻訳・コードの各要素における判断基準を、最新のSteamworks規定に基づいて整理した。 2026年の文言改定を見据え、公開時のリスクを回避するための入力の考え方と、審査を通過するための必須知識を解説する。",
+    "translations": {
+      "ja": {
+        "title": "Steamの生成AI利用開示、何をどこまで書くべきか？2026年改定も踏まえた「Content Survey」項目別入力ガイド完全網羅",
+        "summary": "Steamの「生成AIコンテンツ開示」は、プレイヤーが体験するゲーム内素材にAIを使用したか否かが焦点となる。 立ち絵・BGM・音声・翻訳・コードの各要素における判断基準を、最新のSteamworks規定に基づいて整理した。 2026年の文言改定を見据え、公開時のリスクを回避するための入力の考え方と、審査を通過するための必須知識を解説する。"
+      },
+      "en": {
+        "title": "How to handle Steam’s mandatory AI content disclosures: A comprehensive guide to the Content Survey for 2024 and 2026 standards",
+        "summary": "Steam’s AI disclosure requirements focus specifically on whether generative tools were used to create assets directly experienced by players within your game. This breakdown clarifies the exact reporting standards for character art, background music, voice lines, localization, and code based on official Steamworks documentation. As Steam prepares to update their wording in 2026, developers must understand how to categorize these inputs to avoid compliance risks during the review process. The core takeaway is to distinguish between 'pre-generated' assets included at shipping and 'run-time' generation. For indie developers, accurately mapping these specific tools is critical to preventing store page takedowns and ensuring your title remains transparently compliant with Valve’s evolving platform-wide safety policies."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-08T00:31:57.425Z"
+  },
+  {
+    "id": "art-1794097901793-cl0z6",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.703",
+    "published_at": "2026-11-08T00:19:05.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、最新バージョンv2.11.703をリリース：APIイメージの最適化とクローリング処理を大幅強化",
+    "summary_ja": "Firecrawlは、最新アップデートとなるv2.11.703を公開しました。 今回のリリースでは、APIイメージに関連する機能の最適化が中心となっており、Webクローリングおよびデータ抽出パイプラインの安定性と処理効率が向上しています。 複雑なWebサイト構造に対しても、より正確かつ高速なデータ取得が可能になりました。 開発者は、今回の更新によりデータスクレイピングの信頼性が向上し、大規模なLLMデータセット構築時のエンジニアリング負荷を軽減できます。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、最新バージョンv2.11.703をリリース：APIイメージの最適化とクローリング処理を大幅強化",
+        "summary": "Firecrawlは、最新アップデートとなるv2.11.703を公開しました。 今回のリリースでは、APIイメージに関連する機能の最適化が中心となっており、Webクローリングおよびデータ抽出パイプラインの安定性と処理効率が向上しています。 複雑なWebサイト構造に対しても、より正確かつ高速なデータ取得が可能になりました。 開発者は、今回の更新によりデータスクレイピングの信頼性が向上し、大規模なLLMデータセット構築時のエンジニアリング負荷を軽減できます。"
+      },
+      "en": {
+        "title": "Firecrawl releases v2.11.703 with improved API image support and optimized web crawling performance",
+        "summary": "Firecrawl has officially launched version v2.11.703, a critical update focusing on enhancements to its API image handling and core crawling infrastructure. This release refines the data extraction pipeline, significantly improving the stability and operational efficiency of scraping complex web structures. By optimizing how the platform processes API images, Firecrawl now ensures more consistent and high-speed data retrieval for developers feeding LLMs. This update is a major step in minimizing engineering overhead when building large-scale datasets from messy web content. Builders should prioritize this rollout to leverage improved extraction accuracy and reduced failure rates, ensuring their agents and applications maintain seamless data ingestion flows even when facing challenging, modern web architectures."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-08T00:31:41.793Z"
+  },
+  {
     "id": "art-1794097025418-00du8",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -13907,33 +14014,6 @@
     "created_at": "2026-11-06T11:47:07.930Z"
   },
   {
-    "id": "art-1793965621615-goa1b",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dear_toucan452/n/n6c016b4cc33d",
-    "published_at": "2026-11-06T11:45:22.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332973854/rectangle_large_type_2_a132b21ca250882a8182aed6e9aba86d.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI開発100本ノック#1：アプリ開発をAIに丸投げした結果、役割分担の見直しで評価が向上した実体験",
-    "summary_ja": "AIに企画から実装までを丸投げして開発したアプリ「ひと息」は、当初「動くけれど面白くない」という課題に直面しました。 AIを単なる作業者としてではなく「相棒」として定義し直し、人間がコアコンセプトやUXの意思決定に注力する役割分担へシフトすることで、ユーザー体験が改善されストア評価の向上を実現しました。 AI開発において、AIに全権を委ねるのではなく、人間がプロダクトの核心を制御し、AIを適切に指揮するディレクションの重要性が浮き彫りとなりました。",
-    "translations": {
-      "ja": {
-        "title": "AI開発100本ノック#1：アプリ開発をAIに丸投げした結果、役割分担の見直しで評価が向上した実体験",
-        "summary": "AIに企画から実装までを丸投げして開発したアプリ「ひと息」は、当初「動くけれど面白くない」という課題に直面しました。 AIを単なる作業者としてではなく「相棒」として定義し直し、人間がコアコンセプトやUXの意思決定に注力する役割分担へシフトすることで、ユーザー体験が改善されストア評価の向上を実現しました。 AI開発において、AIに全権を委ねるのではなく、人間がプロダクトの核心を制御し、AIを適切に指揮するディレクションの重要性が浮き彫りとなりました。"
-      },
-      "en": {
-        "title": "AI Dev Lessons #1: Moving from 'AI-delegated' to 'AI-partnered' development to boost app ratings",
-        "summary": "During the initial development of the app 'Hitoiki,' the author completely delegated planning and implementation to an AI, only to find the result functional yet unengaging. The breakthrough came from redefining the AI from a sole executor to a collaborative partner, while reclaiming human control over core concept and UX decision-making. By shifting the workflow so the developer provides the strategic direction and the AI handles the technical execution, the product quality improved significantly, leading to higher app store ratings. This experience serves as a crucial lesson for builders: treating AI as an autonomous agent is often a mistake; effective AI-assisted development requires humans to lead the design and critical decision-making processes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-06T11:47:01.615Z"
-  },
-  {
     "id": "art-1793965614770-4g37e",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -13984,32 +14064,6 @@
       "研究"
     ],
     "created_at": "2026-11-06T11:32:08.241Z"
-  },
-  {
-    "id": "art-1793964722073-58nyf",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/rudy_ai_log/n/n7a1af8bbb1ed",
-    "published_at": "2026-11-06T11:25:27.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332965329/rectangle_large_type_2_e9be4a7cabd387966cef1591cf162dc5.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Codeがメールアドレスを外部送信する懸念を検証：開発者が自環境で3分以内にUser-Agentを確認して安全性を点検する手順",
-    "summary_ja": "Claude Codeがログイン中のメールアドレスをウェブサイトへ送信しているという噂に対し、開発環境で自ら確認する方法が話題だ。 User-Agentやリクエストヘッダーの3箇所を3分チェックするだけで、情報の漏洩状況を即座に特定できる。 AIエージェントが裏でどの情報を送信しているか不透明な場合、CLIツールやネットワークログを監査する習慣をつけることが、セキュアな開発環境を維持する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeがメールアドレスを外部送信する懸念を検証：開発者が自環境で3分以内にUser-Agentを確認して安全性を点検する手順",
-        "summary": "Claude Codeがログイン中のメールアドレスをウェブサイトへ送信しているという噂に対し、開発環境で自ら確認する方法が話題だ。 User-Agentやリクエストヘッダーの3箇所を3分チェックするだけで、情報の漏洩状況を即座に特定できる。 AIエージェントが裏でどの情報を送信しているか不透明な場合、CLIツールやネットワークログを監査する習慣をつけることが、セキュアな開発環境を維持する鍵となる。"
-      },
-      "en": {
-        "title": "Verifying Claude Code Data Privacy: A 3-Minute Audit to Check if Your Email Address Is Being Sent",
-        "summary": "Recent reports alleging that Claude Code automatically transmits logged-in email addresses to external websites have prompted developers to investigate their own setups. This brief guide outlines how to audit your environment in under three minutes by inspecting User-Agent strings and specific request headers within the terminal. If you are integrating AI agents into your development workflow, it is crucial to understand what metadata is being leaked during web fetches. Beyond just verifying this specific issue, the broader lesson for builders is to proactively audit network traffic generated by CLI tools. Regularly inspecting outgoing payloads is essential to maintain security posture when relying on opaque, third-party autonomous code agents for local development tasks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-06T11:32:02.073Z"
   },
   {
     "id": "art-1793964714481-zdw0j",
@@ -16618,32 +16672,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-06T03:01:56.248Z"
-  },
-  {
-    "id": "art-1793933260222-9v866",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.youtube.com/watch?v=8LMau1qXPYE",
-    "published_at": "2026-11-06T02:18:39.000Z",
-    "og_image_url": null,
-    "title_ja": "Mark Brown氏のインディーゲームをAIでクローン：ゲーム開発の自動生成アプローチと開発コミュニティの実験的な取り組み",
-    "summary_ja": "著名なゲーム批評家Mark Brown氏の動画制作手法やインディーゲームのエッセンスを再現すべく、AIを活用してゲームを自動生成する実験的プロジェクトが登場した。 開発者は大規模言語モデルとゲームエンジンを組み合わせ、特定の設計思想やデザインパターンをコードレベルで再現することに成功している。",
-    "translations": {
-      "ja": {
-        "title": "Mark Brown氏のインディーゲームをAIでクローン：ゲーム開発の自動生成アプローチと開発コミュニティの実験的な取り組み",
-        "summary": "著名なゲーム批評家Mark Brown氏の動画制作手法やインディーゲームのエッセンスを再現すべく、AIを活用してゲームを自動生成する実験的プロジェクトが登場した。 開発者は大規模言語モデルとゲームエンジンを組み合わせ、特定の設計思想やデザインパターンをコードレベルで再現することに成功している。"
-      },
-      "en": {
-        "title": "Developer builds an AI-powered clone of Mark Brown’s indie game design, demonstrating autonomous game generation",
-        "summary": "An experimental project has surfaced that uses AI to clone the game design philosophies often discussed by prominent critic Mark Brown. By integrating large language models directly with modern game engines, the developer demonstrates how to automatically scaffold mechanics that mimic specific indie design patterns and gameplay loops. This builds on the growing trend of using generative agents not just for basic coding assistance, but for architecting entire interactive experiences from scratch. For builders in the gaming space, this proves that autonomous design generation is rapidly maturing, moving beyond simple script generation toward a future where AI acts as a creative partner in rapid prototyping, potentially reducing development cycles for indie studios significantly."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-06T02:47:40.222Z"
   },
   {
     "id": "art-1793933230393-t4zqv",
@@ -29979,33 +30007,6 @@
       "動画"
     ],
     "created_at": "2026-11-03T03:01:43.333Z"
-  },
-  {
-    "id": "art-1793671335636-4ikzd",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/aipha_euro/articles/081f3584007257",
-    "published_at": "2026-11-03T00:07:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--qKEDcjvr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:gh-aw%25E3%2581%25AE%25E6%259B%25B4%25E6%2596%25B0%25E3%2582%2592%25E5%258D%25B3%25E8%25BF%25BD%25E5%25BE%2593%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%259A72%25E6%2599%2582%25E9%2596%2593%25E3%2581%25AE%25E5%25BE%2585%25E6%25A9%259F%25E3%2581%25A8%25E5%259B%25BA%25E5%25AE%259A%25E7%2589%2588%25E3%2582%2592Python%25E3%2581%25A7%25E6%25A4%259C%25E6%259F%25BB%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BD%2590%25E4%25BC%25AF%2520%25E6%2582%25A0%25E5%2585%25AD%25EF%25BD%259C%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEAiPHA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzdiN2NlZjczOTcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェントのCI運用：GitHub Agentic Workflowsを72時間待機させ安全に更新するPythonスクリプト活用術",
-    "summary_ja": "AIエージェントをCI/CD環境に組み込む際、最新版への自動更新は不具合のリスクを伴う。 GitHub Agentic Workflowsの更新に対応し、新規公開から72時間のクールダウンを設ける手法が注目されている。 本稿では、公開からの経過時間、固定バージョン、承認済みハッシュ値をPythonで検証し、不具合を避けつつ最新の修正を安全に取り込むための、堅牢なエージェント運用パイプラインを解説する。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントのCI運用：GitHub Agentic Workflowsを72時間待機させ安全に更新するPythonスクリプト活用術",
-        "summary": "AIエージェントをCI/CD環境に組み込む際、最新版への自動更新は不具合のリスクを伴う。 GitHub Agentic Workflowsの更新に対応し、新規公開から72時間のクールダウンを設ける手法が注目されている。 本稿では、公開からの経過時間、固定バージョン、承認済みハッシュ値をPythonで検証し、不具合を避けつつ最新の修正を安全に取り込むための、堅牢なエージェント運用パイプラインを解説する。"
-      },
-      "en": {
-        "title": "Managing AI Agent CI: Using Python to Safely Delay GitHub Agentic Workflows Updates by 72 Hours",
-        "summary": "Integrating AI agents into CI/CD pipelines introduces a critical challenge: blindly pulling the latest version can break production workflows. To mitigate this, engineers are adopting a 72-hour cooling-off period for new GitHub Agentic Workflows releases. This approach moves beyond simple version pinning by implementing Python-based validation scripts that separately verify the elapsed time since release, the specific pinned version, and pre-approved commit hashes. By decoupling automatic updates from immediate deployment, developers can avoid bugs introduced by fresh releases while still ensuring critical fixes propagate reliably. For teams shipping agents, this strategy creates a robust safety buffer, preventing unstable engine updates from corrupting deployment pipelines while maintaining necessary agility in a rapidly evolving ecosystem."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-03T02:02:15.636Z"
   },
   {
     "id": "art-1793671310212-j50sz",
