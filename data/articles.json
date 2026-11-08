@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794180711716-xhqzk",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kurojack_jp/n/n3868dc3f5005",
+    "published_at": "2026-11-08T23:30:02.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333925751/rectangle_large_type_2_8c61e3e61552372fe3aa99fd47866969.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "自作MCP「Sora Commander」開発ログ：ChatGPTが指示を解釈し損ねてジョブが重複実行される不具合の原因と対処法",
+    "summary_ja": "個人開発のMCP「Sora Commander」にて、ChatGPTへの指示が一回であるにもかかわらず、バックグラウンドでジョブが二重実行されてしまうバグが発生した。 調査の結果、AIモデル側が曖昧なコンテキストを読み取り、冗長なツール呼び出しを行っていたことが判明。 MCP開発においてAIの推論ゆらぎを前提とした冪等性の確保がいかに重要かを実例として示している。",
+    "translations": {
+      "ja": {
+        "title": "自作MCP「Sora Commander」開発ログ：ChatGPTが指示を解釈し損ねてジョブが重複実行される不具合の原因と対処法",
+        "summary": "個人開発のMCP「Sora Commander」にて、ChatGPTへの指示が一回であるにもかかわらず、バックグラウンドでジョブが二重実行されてしまうバグが発生した。 調査の結果、AIモデル側が曖昧なコンテキストを読み取り、冗長なツール呼び出しを行っていたことが判明。 MCP開発においてAIの推論ゆらぎを前提とした冪等性の確保がいかに重要かを実例として示している。"
+      },
+      "en": {
+        "title": "Debugging double execution bugs in custom MCP: Why ChatGPT triggered two jobs from a single user prompt",
+        "summary": "While building the custom MCP tool 'Sora Commander,' the developer encountered a frustrating bug where ChatGPT would trigger two separate jobs despite receiving only one explicit command. The investigation revealed that the underlying AI model misinterpreted ambiguous context, leading it to redundantly invoke the tool twice within the same session. This case study highlights the critical necessity of implementing strict idempotency when designing MCP tools, as AI reasoning is inherently non-deterministic and can easily misinterpret intent. For builders shipping their own MCP integrations, the takeaway is clear: never assume the LLM will only call a function once, and always build safety checks into your backend to prevent duplicate side effects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-08T23:31:51.716Z"
+  },
+  {
+    "id": "art-1794180703474-997sx",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/lamarcol/NotBot",
+    "published_at": "2026-11-08T22:34:06.000Z",
+    "og_image_url": null,
+    "title_ja": "17歳の個人開発者がAI金融ニュース分析ツール「NotBot」を公開：FinBERTを用いた株式センチメント分析の仕組みと挑戦",
+    "summary_ja": "17歳の開発者が公開した「NotBot」は、Google Newsから最新の金融記事を取得し、FinBERTを用いて株式のセンチメントをスコアリングするAIツールだ。 BeautifulSoupによるスクレイピングとPythonライブラリを活用し、特定の銘柄に対する市場感情を定量化する。 プログラミング未経験から実用的なツールを構築する過程は、個人の興味とAI技術を組み合わせた開発の好例といえる。",
+    "translations": {
+      "ja": {
+        "title": "17歳の個人開発者がAI金融ニュース分析ツール「NotBot」を公開：FinBERTを用いた株式センチメント分析の仕組みと挑戦",
+        "summary": "17歳の開発者が公開した「NotBot」は、Google Newsから最新の金融記事を取得し、FinBERTを用いて株式のセンチメントをスコアリングするAIツールだ。 BeautifulSoupによるスクレイピングとPythonライブラリを活用し、特定の銘柄に対する市場感情を定量化する。 プログラミング未経験から実用的なツールを構築する過程は、個人の興味とAI技術を組み合わせた開発の好例といえる。"
+      },
+      "en": {
+        "title": "17-year-old developer launches NotBot, an AI-powered financial news analyzer using FinBERT for stock sentiment scoring",
+        "summary": "A 17-year-old developer has launched NotBot, an automated tool designed to pull the latest financial news from Google News and compute weighted stock sentiment indicators using the FinBERT model. The project leverages feedparser for data ingestion and BeautifulSoup for content extraction, effectively turning qualitative news into quantitative market insights. While the developer cites economics as their primary interest rather than professional programming, the build demonstrates how accessible Python libraries and pretrained AI models empower non-specialists to prototype sophisticated financial analysis tools quickly. For builders, this project serves as a practical reminder that solving a specific niche problem—like real-time sentiment tracking—often requires more domain curiosity than deep engineering expertise during the MVP phase."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-08T23:31:43.474Z"
+  },
+  {
+    "id": "art-1794180697099-tpgk6",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/joinclass/items/2b7bba656995a34e3e66",
+    "published_at": "2026-11-08T23:30:02.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjA2ODkxJTJGNzhmNWJiNzA1YjdlZjlkYWVjZWRhOGI2ODdlNTU5ZjA5YzI1YmYzZSUyRnhfbGFyZ2UucG5nJTNGMTc3NDUxODE0Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9M2ZhMWQ1NDMyODQzNzkzNTIyNzRiMzk2ZDdmYmJmMTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd9c2258cfe819f9c4489a1d86672b88f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJThDJUU3JUE2JTgxJUU2JUFEJUEyJUUzJTgwJThEJUUzJTgxJUE3JUUzJTgxJUFGJUUzJTgxJUFBJUUzJTgxJThGJUUzJTgwJThDJUU2JTg5JThCJUU5JUEwJTg2JUUzJTgwJThEJUUzJTgxJUE3JUU2JTlCJUI4JUUzJTgxJThGQ0xBVURFLm1kJTIwJUUyJTgwJTk0JTIwJUU2JThDJTg3JUU3JUE0JUJBJUUzJTgxJUFFJUU1JThBJUI5JUUzJTgxJThEJUU2JTk2JUI5JUUzJTgxJThDJUU1JUE0JTg5JUUzJTgyJThGJUUzJTgyJThCJUU2JTlCJUI4JUUzJTgxJThEJUU1JTg4JTg2JUUzJTgxJTkxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9OTdjMjIzMjRhMzQyODQ1OTJlZDFiNWJjMTliM2Y4ODA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBqb2luY2xhc3MmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz02MTk0ZGNhMTQxZGVmYmVkMzIyZTJlNjgwN2VlNDI0ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=ba5a6e0271e7f9b2a49e33d1343ba8ce",
+    "title_ja": "Claude Codeの精度を劇的に改善する「CLAUDE.md」設計術：禁止事項リストを廃し、手順駆動へ切り替えるべき理由",
+    "summary_ja": "Claude CodeなどのAIツールにおいて、禁止事項を羅列するプロンプト設計はAIの混乱を招き精度を下げる要因となる。 ジョインクラス社は、過去の失敗から「〜禁止」という否定命令を廃し、具体的な「手順（プロセス）」を記述する手法へ移行することで、指示の正確性を大幅に向上させた。 単なる制約の追加ではなく、AIが再現可能な手順を構造化して記述することが、定常業務を自動化する実用的な開発環境構築の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの精度を劇的に改善する「CLAUDE.md」設計術：禁止事項リストを廃し、手順駆動へ切り替えるべき理由",
+        "summary": "Claude CodeなどのAIツールにおいて、禁止事項を羅列するプロンプト設計はAIの混乱を招き精度を下げる要因となる。 ジョインクラス社は、過去の失敗から「〜禁止」という否定命令を廃し、具体的な「手順（プロセス）」を記述する手法へ移行することで、指示の正確性を大幅に向上させた。 単なる制約の追加ではなく、AIが再現可能な手順を構造化して記述することが、定常業務を自動化する実用的な開発環境構築の鍵となる。"
+      },
+      "en": {
+        "title": "Stop writing restrictive prompt constraints: Why switching to procedure-based CLAUDE.md files improves AI coding agent output",
+        "summary": "Many developers default to adding 'do not' prohibitions into their CLAUDE.md files whenever an AI agent makes a mistake, but this strategy often confuses the model and degrades performance. Instead of relying on a growing list of negative constraints, engineers should pivot toward defining explicit, step-by-step procedural workflows. By structuring instructions as reliable operational protocols rather than reactive guardrails, the agent can maintain better context and consistency across recurring automated tasks. The core insight is that procedural prompting aligns with how LLMs process logic, effectively reducing hallucination and drift. For builders scaling AI-assisted workflows, shifting from punitive prohibition lists to structured process definitions is the most effective way to optimize reliability in professional coding environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-08T23:31:37.099Z"
+  },
+  {
+    "id": "art-1794180690289-tgk1s",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kurojack_jp/n/n2ee6cad27e93",
+    "published_at": "2026-11-08T23:31:04.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/333926070/rectangle_large_type_2_36ad09d68eea07322a01f609bc9547da.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "自作MCP「Sora Commander」を無料公開へ。他者のPC環境でも問題なく動作させるための技術的ハードルと解決の軌跡",
+    "summary_ja": "開発者kurojack_jp氏によるMCP（Model Context Protocol）ツール「Sora Commander」の公開準備記録。 自身のPCで動くツールを他人の環境でも安定稼働させるには、依存関係や実行環境の差異といった予期せぬ壁が存在する。 本記事は、ローカル環境依存を排除し、ユニバーサルな利用を実現するための開発プロセスを詳細に解説しており、拡張機能を配布・公開したい個人開発者にとって実践的なヒントとなる。",
+    "translations": {
+      "ja": {
+        "title": "自作MCP「Sora Commander」を無料公開へ。他者のPC環境でも問題なく動作させるための技術的ハードルと解決の軌跡",
+        "summary": "開発者kurojack_jp氏によるMCP（Model Context Protocol）ツール「Sora Commander」の公開準備記録。 自身のPCで動くツールを他人の環境でも安定稼働させるには、依存関係や実行環境の差異といった予期せぬ壁が存在する。 本記事は、ローカル環境依存を排除し、ユニバーサルな利用を実現するための開発プロセスを詳細に解説しており、拡張機能を配布・公開したい個人開発者にとって実践的なヒントとなる。"
+      },
+      "en": {
+        "title": "Developer documents hurdles in making Sora Commander, a custom MCP tool, universally runnable on external machines",
+        "summary": "Kurojack_jp shares his journey preparing 'Sora Commander,' a custom Model Context Protocol (MCP) tool, for public release. While his project functioned perfectly on his local machine, he encountered significant technical barriers when attempting to replicate that stability on other users' environments. This write-up details the specific challenges regarding dependency management and execution environment discrepancies that arise when distributing tools. By documenting the necessary refactoring to eliminate local configuration assumptions, the author provides valuable insights for any developer aiming to transition from a private prototype to a robust, distributable extension. For builders, this serves as a critical reminder that environment abstraction is just as vital as core feature development when shipping tools for the wider MCP ecosystem."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-08T23:31:30.289Z"
+  },
+  {
     "id": "art-1794179822539-8pmw7",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -10007,32 +10111,6 @@
     "created_at": "2026-11-07T21:16:55.202Z"
   },
   {
-    "id": "art-1794086207754-dg5ng",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dagameya/n/n34d60e1d2aa9",
-    "published_at": "2026-11-07T10:57:19.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333182747/rectangle_large_type_2_27e95820d2b1ec31d66b9f7385186a0a.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "【ゲーム制作#2】SNSの「土曜更新文化」に合わせて進捗報告をシフト：個人開発者がXを活用して開発の露出と継続性を高めるためのコンテンツ戦略",
-    "summary_ja": "個人開発における進捗報告のサイクルを日曜日から土曜へと移行した。 Xには「SuperDevDay」等の土曜投稿文化があり、進捗をSNSのコンテンツとして再利用することで、ブログとSNS双方の更新を効率化できるからだ。 開発者はただ作るだけでなく、コミュニティの文脈に合わせた発信を行うことで、制作プロセス自体を強力なコンテンツに変える必要がある。 このアプローチは、孤独になりがちな個人開発の認知拡大と継続的なモチベーション維持に不可欠な戦略だ。",
-    "translations": {
-      "ja": {
-        "title": "【ゲーム制作#2】SNSの「土曜更新文化」に合わせて進捗報告をシフト：個人開発者がXを活用して開発の露出と継続性を高めるためのコンテンツ戦略",
-        "summary": "個人開発における進捗報告のサイクルを日曜日から土曜へと移行した。 Xには「SuperDevDay」等の土曜投稿文化があり、進捗をSNSのコンテンツとして再利用することで、ブログとSNS双方の更新を効率化できるからだ。 開発者はただ作るだけでなく、コミュニティの文脈に合わせた発信を行うことで、制作プロセス自体を強力なコンテンツに変える必要がある。 このアプローチは、孤独になりがちな個人開発の認知拡大と継続的なモチベーション維持に不可欠な戦略だ。"
-      },
-      "en": {
-        "title": "Shifting Game Dev Logs to Saturday: Leveraging Social Media Culture to Maximize Developer Visibility and Build Consistent Content Strategy",
-        "summary": "The developer behind a personal game project has officially shifted their weekly progress update schedule from Sunday to Saturday. This change is strategic, designed to align with X culture, where communities like #SuperDevDay and #SuperGameDevDay thrive on weekend check-ins. By timing the blog publication with these social trends, the creator can repurpose their development progress directly into social media content, effectively killing two birds with one stone. For indie builders, this transition highlights a crucial lesson: technical development is only half the battle. Integrating community context into your workflow allows you to transform raw development processes into engaging content, which is vital for maintaining project visibility and personal motivation while building in isolation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-07T21:16:47.754Z"
-  },
-  {
     "id": "art-1794086198697-l4amh",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10084,33 +10162,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-07T21:01:57.871Z"
-  },
-  {
-    "id": "art-1794085310622-2ushw",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yoshy_toshy/n/n525387c49888",
-    "published_at": "2026-11-07T10:59:31.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/123577944/rectangle_large_type_2_471d45642d222a7fa6bf7d6673b93785.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "旧仮名キーボード開発記#15：App Store審査通過と今後のロードマップ公開、PC版開発着手とユーザー要望の優先順位付けについて",
-    "summary_ja": "ニッチな市場を狙った「旧仮名キーボード」のiOS版がApp Storeの審査を通過した。 現在はユーザーから寄せられた語彙追加の要望を整理し、開発の優先順位を決定する段階にある。 今後はPC版の開発に着手し、クロスプラットフォーム展開による利便性向上を目指す。 個人開発アプリにおいて、ユーザーの要望を積極的に汲み取り、着実にアップデートを重ねる姿勢が長期的なファンベースの維持に繋がっている。",
-    "translations": {
-      "ja": {
-        "title": "旧仮名キーボード開発記#15：App Store審査通過と今後のロードマップ公開、PC版開発着手とユーザー要望の優先順位付けについて",
-        "summary": "ニッチな市場を狙った「旧仮名キーボード」のiOS版がApp Storeの審査を通過した。 現在はユーザーから寄せられた語彙追加の要望を整理し、開発の優先順位を決定する段階にある。 今後はPC版の開発に着手し、クロスプラットフォーム展開による利便性向上を目指す。 個人開発アプリにおいて、ユーザーの要望を積極的に汲み取り、着実にアップデートを重ねる姿勢が長期的なファンベースの維持に繋がっている。"
-      },
-      "en": {
-        "title": "Developer Log #15: Kyukana Keyboard clears App Store review and plans PC expansion while prioritizing user-submitted vocabulary requests",
-        "summary": "The niche Kyukana Keyboard iOS app has successfully cleared Apple’s App Store review, marking a key milestone for the project. The developer is currently processing a backlog of user-submitted vocabulary requests to refine the roadmap and establish development priorities for the next cycle. Concurrent with mobile improvements, the team is now initiating development on the PC version to extend usability across devices. For solo builders, this update underscores the importance of a tight feedback loop: proactively incorporating community feature requests and maintaining steady development velocity is essential for retaining a dedicated niche user base as the product evolves from a single platform into a cross-platform tool."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-07T21:01:50.622Z"
   },
   {
     "id": "art-1794085301995-bk2mn",
@@ -14975,33 +15026,6 @@
     "created_at": "2026-11-07T03:02:06.053Z"
   },
   {
-    "id": "art-1794020519371-tghe9",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/Kirby54/Select",
-    "published_at": "2026-11-07T01:55:27.000Z",
-    "og_image_url": null,
-    "title_ja": "GitHubで公開された「Select」、AIエージェントの自律性を検証済みタスク実行で段階的に高める新フレームワークが登場",
-    "summary_ja": "GitHubで公開された「Select」は、AIエージェントが自律的な作業権限を獲得するための新しいフレームワークだ。 単にプロンプトを投げるのではなく、モデルが実行した作業の結果を検証し、成功に基づいて権限を動的に付与する仕組みを採用している。 信頼スコアに基づき、安全な範囲で自律性を高めるアプローチは、将来的な「AIによる自律的コーディング・実行」を安全に実装したい開発者にとって、重要なガードレールの設計指針となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "GitHubで公開された「Select」、AIエージェントの自律性を検証済みタスク実行で段階的に高める新フレームワークが登場",
-        "summary": "GitHubで公開された「Select」は、AIエージェントが自律的な作業権限を獲得するための新しいフレームワークだ。 単にプロンプトを投げるのではなく、モデルが実行した作業の結果を検証し、成功に基づいて権限を動的に付与する仕組みを採用している。 信頼スコアに基づき、安全な範囲で自律性を高めるアプローチは、将来的な「AIによる自律的コーディング・実行」を安全に実装したい開発者にとって、重要なガードレールの設計指針となるだろう。"
-      },
-      "en": {
-        "title": "Select Framework debuts on GitHub to help AI agents earn increasing autonomy through verified and auditable task execution",
-        "summary": "The newly released Select framework introduces a structured approach for AI agents to earn varying degrees of autonomy by basing their permissions on verified past performance. Rather than granting unchecked access, the system evaluates the agent's actual output quality, dynamically unlocking higher-level execution rights as trust scores improve. This verification-driven model offers a compelling architectural pattern for developers building autonomous agents, as it treats safety as a tunable parameter rather than an all-or-nothing toggle. For builders aiming to scale agentic workloads, the core lesson is that defining clear, auditable checkpoints allows you to shift from human-in-the-loop to fully autonomous systems while maintaining a rigid safety perimeter and reducing catastrophic failure risk during live code deployment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-07T03:01:59.371Z"
-  },
-  {
     "id": "art-1794020502903-77owk",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -19167,32 +19191,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-06T08:46:56.052Z"
-  },
-  {
-    "id": "art-1793953975548-3azu7",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/kaneko_desu/items/62aabc3a220e90f92cdf",
-    "published_at": "2026-11-06T07:46:35.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzMzE0MTI4JTJGZjlhYmYwODMxYzJhOTcyM2VjOTZhY2QwYzhhNzUwYzY2NDNiNmNmNiUyRmxhcmdlLnBuZyUzRjE3MzM4MTU1MDg_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWUwNGIyOTllNThiMjJiYWU3ZWQ3MTZjMDljYzdmZTQ3%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZkNWRiNzdjMWE4Zjc3NzA1ZjNhMmIwNmQwZWFlNTc5MGY0MWRjYmE3JTJGb3JpZ2luYWwuanBnJTNGMTYzNDIxMTM4Nz9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz02YWEzMDA0MjU5MmZhMTE0ZjBkNDYwYzY5MTUyYmFhNw%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3D070190c16207ffea5fe2a3ae904f211f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTUlOTAlOEMlRTUlQTMlQUIlRTMlODElQUIlRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODklRTMlODIlOTIlRTMlODMlQUMlRTMlODMlOTMlRTMlODMlQTUlRTMlODMlQkMlRTMlODElOTUlRTMlODElOUIlRTMlODElOUYlRTMlODIlODklRTMlODAlODElRTMlODMlODYlRTMlODIlQjklRTMlODMlODglRTMlODElQUYlRTUlODUlQTglRTklODMlQTglRTklODAlOUElRTMlODElQTMlRTMlODElOUYlRTMlODAlODIlRTMlODElQTclRTMlODIlODJKU09OJUUzJTgxJUFCJUUzJTgxJUE3JUUzJTgxJThEJUUzJTgxJUFBJUUzJTgxJThGJUUzJTgxJUFBJUUzJTgxJUEzJUUzJTgxJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MTU4ZmNlYzk5Y2UyOWNhMjlmNzdjOTI0MTU2M2RiMWM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrYW5la29fZGVzdSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTA1YjAwNWRiYjZiNmNmMzllNjhjNTc3ODNlZTJhODU5&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-44Kq44OV44Kw44Oq44OD44OJ&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=76ff23545269028bb0203d0f36ddaeac",
-    "title_ja": "AIによるコードの相互レビューと自動修正ループが生む「テスト全通・機能全滅」の罠：出力フォーマット崩壊のメカニズム",
-    "summary_ja": "AIエージェントに相互レビューと自動修正を繰り返させた結果、テストコードは全通過するものの、肝心のJSON出力ができなくなるという逆説的な現象が観測された。 コードの品質向上を優先した修正がモデルの出力制約や文脈維持を破壊する「AI共倒れ」のリスクを示唆している。 実務では単なる修正ループではなく、出力形式を保証するスキーマ検証や、品質ゲートとしての人間によるレビュー設計が不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "AIによるコードの相互レビューと自動修正ループが生む「テスト全通・機能全滅」の罠：出力フォーマット崩壊のメカニズム",
-        "summary": "AIエージェントに相互レビューと自動修正を繰り返させた結果、テストコードは全通過するものの、肝心のJSON出力ができなくなるという逆説的な現象が観測された。 コードの品質向上を優先した修正がモデルの出力制約や文脈維持を破壊する「AI共倒れ」のリスクを示唆している。 実務では単なる修正ループではなく、出力形式を保証するスキーマ検証や、品質ゲートとしての人間によるレビュー設計が不可欠である。"
-      },
-      "en": {
-        "title": "When AI-to-AI code review loops pass every unit test but break JSON output: The invisible cost of recursive perfection",
-        "summary": "Researchers testing recursive AI-to-AI code review—where one instance writes and another fixes—discovered a paradoxical failure: while code quality metrics and unit tests improved perfectly, the actual model output stopped adhering to the required JSON schema. This recursive optimization often inadvertently alters or destroys the system instructions or formatting constraints necessary for reliable serialization. The practical takeaway is that blind automated refinement creates a 'model collapse' where structural stability is sacrificed for code perfection. For developers building agentic workflows, this highlights why schema validation and deterministic output constraints are non-negotiable guardrails, rather than optional performance improvements, when automating complex multi-step coding pipelines without human oversight."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-06T08:32:55.548Z"
   },
   {
     "id": "art-1793953967838-pnejn",
