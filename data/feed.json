@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1794218062800-1p2a4",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/chuki_dx/items/bfbb6c0878ef23c80b1d",
+    "published_at": "2026-11-09T09:39:14.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZhYTI1OTkyZTA0ODk2ZTBmZjE3MWIxYTMwYTIzMmExZj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NzZiYjVjZGRiMTc3YzI5NjczYjg2MWIyN2Y2YWQzNDI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dce17d29b18e4032268e75633396830e5?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFMyU4MSVBRSUyMGNsYXVkZSUyMC1wJTIwJUUzJTgxJUFGJUUzJTgwJTgxJUU2JTlCJUI4JUUzJTgxJThEJUU4JUJFJUJDJUUzJTgxJUJGJUUzJTgyJTkyJUU2JTk2JUFEJUUzJTgyJTg5JUUzJTgyJThDJUUzJTgxJUE2JUUzJTgyJTgyJUU3JUI1JTgyJUU0JUJBJTg2JUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTg5JTIwMCUyMCVFMyU4MSVBNyVFNyVCNSU4MiVFMyU4MiU4RiVFMyU4MiU4QiUyMCVFMiU4MCU5NCUyMCVFMyU4MiVCOSVFMyU4MiVBRiVFMyU4MyVBQSVFMyU4MyU5NyVFMyU4MyU4OCVFMyU4MSU4QiVFMyU4MiU4OSVFMyU4MSVBRiVFNSU4NyVCQSVFNSU4QSU5QiVFMyU4MSVBOCVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWZjYjQ5NGM4YWUzNTM4ZWE2YjE4ZWZmMTBkYWVmNDI4&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBjaHVraV9keCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTMxOWQyZjQ2MDE5YjIzMGI0N2Q0ZjUxNzg4ZDA3OTYy&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=06b0e9093a0536294c2e4dbd742f68ee",
+    "title_ja": "Claude Codeの非対話実行「claude -p」で発生する終了コードの罠とCI/CDパイプラインを壊さないための正しい判定実装手法（終了コード0の盲点）",
+    "summary_ja": "AnthropicのAIコーディングエージェント「Claude Code」を非対話モード「claude -p」で実行する際、ファイル書き込みが権限確認等で拒否されても、終了コードは常に0で返されることが判明した。 CI/CDパイプラインに組み込む際、単なる終了コードの監視だけでは失敗を検知できない。 開発者は終了コードを信頼せず、実行結果の標準出力や書き込み対象のファイル生成状況をスクリプトで直接判定する仕組みを構築すべきである。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの非対話実行「claude -p」で発生する終了コードの罠とCI/CDパイプラインを壊さないための正しい判定実装手法（終了コード0の盲点）",
+        "summary": "AnthropicのAIコーディングエージェント「Claude Code」を非対話モード「claude -p」で実行する際、ファイル書き込みが権限確認等で拒否されても、終了コードは常に0で返されることが判明した。 CI/CDパイプラインに組み込む際、単なる終了コードの監視だけでは失敗を検知できない。 開発者は終了コードを信頼せず、実行結果の標準出力や書き込み対象のファイル生成状況をスクリプトで直接判定する仕組みを構築すべきである。"
+      },
+      "en": {
+        "title": "Anthropic's Claude Code CLI returns exit code zero on write failure in non-interactive mode, requiring custom result validation",
+        "summary": "When executing Anthropic’s Claude Code in non-interactive mode via the \"claude -p\" flag, the process exits with a status code of 0 even when file write operations are blocked by permission errors or prompt rejections. This behavior poses a significant risk for builders integrating Claude Code into CI/CD pipelines, as automated monitoring will falsely report success for failed tasks. To prevent broken deployments, developers must stop relying on simple exit status codes for success validation. Instead, they should implement custom scripts that explicitly parse the standard output logs or verify the physical existence and integrity of target files to ensure the AI actually performed the requested actions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-09T09:54:22.800Z"
+  },
+  {
+    "id": "art-1794218053706-6wpgu",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/aiai_lab/n/na30bb17382a5",
+    "published_at": "2026-11-09T09:40:25.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/334133775/rectangle_large_type_2_d607f5a720e1d88ab5bf62a9fe693c78.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "F1速報動画のジレンマ：朝公開のコンテンツが「情報更新」で即陳腐化するAI生成運用の限界とペナルティ対応の教訓",
+    "summary_ja": "AIを活用して毎日F1の解説動画を作成する中で直面した、公開直後の情報陳腐化問題についての考察。 レース終了後のFIAペナルティ発表が朝の動画公開タイミングと重なり、内容が即座に古くなってしまうという事態に直面した。 AIによる高速生成は強みだが、スポーツ報道においては情報の「鮮度」と「信頼性」を維持するための、迅速な訂正フローや追記戦略が不可欠であることを示唆している。 速報性とAIの自動化をどう両立させるかが、個人開発メディアの生存戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "F1速報動画のジレンマ：朝公開のコンテンツが「情報更新」で即陳腐化するAI生成運用の限界とペナルティ対応の教訓",
+        "summary": "AIを活用して毎日F1の解説動画を作成する中で直面した、公開直後の情報陳腐化問題についての考察。 レース終了後のFIAペナルティ発表が朝の動画公開タイミングと重なり、内容が即座に古くなってしまうという事態に直面した。 AIによる高速生成は強みだが、スポーツ報道においては情報の「鮮度」と「信頼性」を維持するための、迅速な訂正フローや追記戦略が不可欠であることを示唆している。 速報性とAIの自動化をどう両立させるかが、個人開発メディアの生存戦略となる。"
+      },
+      "en": {
+        "title": "The F1 Content Dilemma: Why AI-Driven Daily Video Production Struggles with Real-Time Racing Updates and Sudden FIA Penalties",
+        "summary": "The author shares a critical lesson from their daily AI-assisted F1 YouTube channel regarding the volatility of real-time sports journalism. After publishing a lengthy F1 analysis video, a surprise post-race FIA penalty instantly rendered the content obsolete before it even gained traction. This highlights the inherent friction between high-speed AI content generation and the unpredictable nature of live sports results. For creators, the primary takeaway is that relying solely on speed is a liability without robust workflows for corrections, updates, or 'pinned comment' strategies. True sustainable growth for AI-powered media requires balancing automated production efficiency with the critical necessity of fact-checking and agile editing, ensuring credibility remains intact when the underlying data shifts unexpectedly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "動画",
+      "開発"
+    ],
+    "created_at": "2026-11-09T09:54:13.706Z"
+  },
+  {
+    "id": "art-1794218047084-d00xj",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/MintCoderpro/mintigate-demo",
+    "published_at": "2026-11-09T08:43:54.000Z",
+    "og_image_url": null,
+    "title_ja": "AIコーディングエージェントの自律稼働を制御する「Control Layer」デモ公開、ルールに基づく人手承認プロセスを強制介入",
+    "summary_ja": "Claude Code等の自律型コーディングエージェントがリポジトリを操作する際、無制限なファイル削除や変更には高いリスクが伴う。 開発者が公開した「Control Layer」は、LLMと実際の操作の間に決定論的な制御層を設け、事前に定義したルールに従ってエージェントの行動を「許可・承認待ち・拒否」に振り分ける仕組みだ。 単に動かすだけでなく、開発者が許容できる境界をコードで定義し、安全性を確保しながら自律化を進めるための必須アーキテクチャと言える。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングエージェントの自律稼働を制御する「Control Layer」デモ公開、ルールに基づく人手承認プロセスを強制介入",
+        "summary": "Claude Code等の自律型コーディングエージェントがリポジトリを操作する際、無制限なファイル削除や変更には高いリスクが伴う。 開発者が公開した「Control Layer」は、LLMと実際の操作の間に決定論的な制御層を設け、事前に定義したルールに従ってエージェントの行動を「許可・承認待ち・拒否」に振り分ける仕組みだ。 単に動かすだけでなく、開発者が許容できる境界をコードで定義し、安全性を確保しながら自律化を進めるための必須アーキテクチャと言える。"
+      },
+      "en": {
+        "title": "Show HN: A deterministic control layer for AI coding agents that enforces human approval on risky file operations",
+        "summary": "Managing AI coding agents like Claude Code remains risky, as granting them full autonomy to modify or delete repository folders introduces unpredictable outcomes. This new control layer introduces a deterministic middleware between the LLM and the filesystem, allowing builders to intercept agent actions and enforce human approval based on pre-defined policies. By categorizing operations into 'pass', 'requires approval', or 'refused', the layer creates a secure sandbox that prevents unauthorized destructive changes while still enabling autonomous workflows. For teams integrating AI coding assistants into their production repos, this architectural pattern is essential for balancing velocity with safety, ensuring that agent behavior stays within strictly defined guardrails rather than relying on the model’s internal safety alignment alone."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-09T09:54:07.084Z"
+  },
+  {
     "id": "art-1794217639280-ca591",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -11137,32 +11216,6 @@
     "created_at": "2026-11-08T04:46:46.860Z"
   },
   {
-    "id": "art-1794112453912-axkpy",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/jl1lbi/n/nfb3e0eccd848",
-    "published_at": "2026-11-08T04:07:20.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333503363/rectangle_large_type_2_4fb1f48cca9080f4201001a2c7b29f56.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "アマチュア無線のVoIP環境を自作：ハードウェア設計からソフトウェア構築までの技術的アプローチと開発プロセス",
-    "summary_ja": "アマチュア無線を活用したVoIP通信環境の構築において、ハードウェアの設計・検証とソフトウェア実装を並行して進める開発事例が注目されている。 週末の工作活動を中心にハードとソフトを段階的に統合するアプローチは、独自通信インフラの構築を目指す技術者にとって示唆に富む。 複雑な無線通信システムを個人環境で再現する際は、モジュールごとの検証と持続可能な開発プロセスが重要となる。",
-    "translations": {
-      "ja": {
-        "title": "アマチュア無線のVoIP環境を自作：ハードウェア設計からソフトウェア構築までの技術的アプローチと開発プロセス",
-        "summary": "アマチュア無線を活用したVoIP通信環境の構築において、ハードウェアの設計・検証とソフトウェア実装を並行して進める開発事例が注目されている。 週末の工作活動を中心にハードとソフトを段階的に統合するアプローチは、独自通信インフラの構築を目指す技術者にとって示唆に富む。 複雑な無線通信システムを個人環境で再現する際は、モジュールごとの検証と持続可能な開発プロセスが重要となる。"
-      },
-      "en": {
-        "title": "Building a custom VoIP amateur radio ecosystem: From hardware engineering to software infrastructure and iterative development",
-        "summary": "Building an amateur radio VoIP communication environment requires a disciplined blend of hardware prototyping and software architecture. This project details a workflow that separates weeks into design validation and weekend physical assembly, allowing for incremental improvements to complex transmission systems. For builders looking to construct their own specialized communication infrastructure, this case study demonstrates the value of strict module-based validation. Moving beyond off-the-shelf solutions, the developer integrates hardware constraints directly into the software stack, creating a tightly coupled system. The primary takeaway is that personal infrastructure projects thrive when hardware prototyping is treated as a rigorous design phase, ultimately creating a more robust and responsive communication layer that goes far beyond standard consumer equipment capabilities."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-08T04:34:13.912Z"
-  },
-  {
     "id": "art-1794112304442-39e4x",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -17315,33 +17368,6 @@
     "created_at": "2026-11-07T02:46:31.312Z"
   },
   {
-    "id": "art-1794018706264-teyxr",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/boraemon2000/items/e918e627fd384456926b",
-    "published_at": "2026-11-07T02:09:09.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzMTMxMDc5JTJGOGMwZTVhODE4NGQ2YjA3NWIzMmQzZjliODI1ZmMzMTFhMDdlMjIwMiUyRnhfbGFyZ2UucG5nJTNGMTc4ODU5NjQ5Mz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MmIyNTkyZGUwNGY4MzE5ZGYwODFjZWUwZTU0N2FiZTc%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D0a7a4f6750c0e3b6c8537dde0beb3fef?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU4JTg0JUIxQ2FwQ3V0JUUzJTgwJTkxUmVtb3Rpb24lMjAlQzMlOTclMjBNZXRhJTIwRWRpdHMlMjAlQzMlOTclMjBNQ1AlRTMlODElQTclRTYlQTclOEIlRTclQUYlODklRTMlODElOTklRTMlODIlOEIlRTMlODAlOENBSSVFMyU4MiVBOCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCVFOSVBNyU4NiVFNSU4QiU5NSVFNSU5RSU4QiVFMyU4MCU4RCVFNiVBQyVBMSVFNCVCOCU5NiVFNCVCQiVBMyVFNSU4QiU5NSVFNyU5NCVCQiVFNSU4OCVCNiVFNCVCRCU5QyVFMyU4MyU5MSVFMyU4MiVBNCVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTM1NDg4N2I4NDEwNTU0ZGFhOTUxYjFiMjJjZmYzYzJj&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBib3JhZW1vbjIwMDAmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz01ZDMzMzJkZTE5MTkwZDJiNjJhMThhZGZmOGE5Yjc4OQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=cb920143124c1aca3342e640ad41f189",
-    "title_ja": "CapCut脱却へ：Remotion、Meta Edits、MCPを駆使したAIエージェント駆動型・次世代動画制作パイプラインの構築手法",
-    "summary_ja": "CapCutの有料化や手動編集のボトルネックを解消するため、Remotion、Meta Edits、MCPを活用した全自動動画生成パイプラインを構築する。 このアーキテクチャでは、MCPを通じて動画編集環境をエージェントに統合し、Meta Editsで最適化された素材をRemotionでコードベースレンダリングすることで、ヒューマン介入なしの量産体制を実現する。",
-    "translations": {
-      "ja": {
-        "title": "CapCut脱却へ：Remotion、Meta Edits、MCPを駆使したAIエージェント駆動型・次世代動画制作パイプラインの構築手法",
-        "summary": "CapCutの有料化や手動編集のボトルネックを解消するため、Remotion、Meta Edits、MCPを活用した全自動動画生成パイプラインを構築する。 このアーキテクチャでは、MCPを通じて動画編集環境をエージェントに統合し、Meta Editsで最適化された素材をRemotionでコードベースレンダリングすることで、ヒューマン介入なしの量産体制を実現する。"
-      },
-      "en": {
-        "title": "Building an AI-Agent-Driven Video Production Pipeline: Moving Beyond CapCut with Remotion, Meta Edits, and MCP",
-        "summary": "To bypass the rising costs of CapCut and overcome the manual bottlenecks inherent in traditional video editing workflows, this new approach implements a fully automated pipeline using Remotion, Meta Edits, and MCP. By integrating video editing environments into agents via MCP and leveraging Meta Edits for content optimization, developers can render video directly from code with Remotion, effectively eliminating human intervention in the production loop. This architecture offers a scalable foundation for marketers and creators seeking independence from proprietary software ecosystems. For builders managing high-volume social media content, this agent-based design paradigm provides a viable, low-cost path to automating complex video tasks, drastically reducing development overhead while maintaining the flexibility required for rapid iterations on TikTok or Instagram."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "動画",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-07T02:31:46.264Z"
-  },
-  {
     "id": "art-1794018697977-93u73",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -17367,32 +17393,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-07T02:31:37.977Z"
-  },
-  {
-    "id": "art-1794016987416-z2mpr",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/NaokiIshimura/items/f19ae481117018a64e67",
-    "published_at": "2026-11-07T01:09:48.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMTQxOTM0JTJGcHJvZmlsZS1pbWFnZXMlMkYxNzkwNjA1Mjk2P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz01YTlmODFiOTNiYWFlYWYyNThjOTcwM2Y0OGM5NTMxYw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db29ef63ef453773a43a04d2b352fffa0?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMHYyLjEuMzE3JTIwLSUyMHYyLjEuMzE5JTIwJUUzJTgzJUFBJUUzJTgzJUFBJUUzJTgzJUJDJUUzJTgyJUI5JUUzJTgzJThFJUUzJTgzJUJDJUUzJTgzJTg4JUUzJTgxJUJFJUUzJTgxJUE4JUUzJTgyJTgxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9Njk5YzYwZWZkY2ZkMDI5NmQ1YzU1ODRiNTBmMThiMWE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBOYW9raUlzaGltdXJhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MDUxZDlkODk1NWI0MDI2OGE2MjJkN2Q4NGQxYzdhNTU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b43bd1e3c5a8cd69cb8888c460b42a41",
-    "title_ja": "Claude Code v2.1.317〜v2.1.319リリース：MCPタスクのターミナル統合と無人実行を安全にする新しい権限管理オプションを実装",
-    "summary_ja": "Claude Codeの最新アップデート（v2.1.317〜v2.1.319）が公開され、MCPタスクのターミナル対応や、無人実行環境向けの新しい権限制御「permissions.denyInsteadOfPrompting」が導入された。 さらに、環境変数「CLAUDE_CODE_DISABLE_FEATURE_FLAGS」により、機能フラグの一括無効化も可能になった。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code v2.1.317〜v2.1.319リリース：MCPタスクのターミナル統合と無人実行を安全にする新しい権限管理オプションを実装",
-        "summary": "Claude Codeの最新アップデート（v2.1.317〜v2.1.319）が公開され、MCPタスクのターミナル対応や、無人実行環境向けの新しい権限制御「permissions.denyInsteadOfPrompting」が導入された。 さらに、環境変数「CLAUDE_CODE_DISABLE_FEATURE_FLAGS」により、機能フラグの一括無効化も可能になった。"
-      },
-      "en": {
-        "title": "Claude Code v2.1.317–v2.1.319 Updates Enable Terminal MCP Tasks and Granular Permission Controls for Headless AI Automation",
-        "summary": "Anthropic has released Claude Code v2.1.317 through v2.1.319, bringing critical improvements for production-grade agentic workflows. Key additions include native terminal integration for MCP tasks and a new permissions.denyInsteadOfPrompting flag, which allows developers to enforce restrictive access controls during unattended or headless execution. Additionally, the introduction of CLAUDE_CODE_DISABLE_FEATURE_FLAGS provides a streamlined way to override new features globally via environment variables. For engineers building automated CI/CD pipelines or complex agentic systems, these changes prioritize stability and predictable behavior. These updates specifically address the friction of running AI models in restricted environments, making it easier to maintain control when executing code autonomously without constant human intervention in the loop."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-07T02:03:07.416Z"
   },
   {
     "id": "art-1794016003858-rrb2y",
