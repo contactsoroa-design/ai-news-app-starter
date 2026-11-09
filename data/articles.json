@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794196920759-vxfbo",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/laiken/articles/20261109-tech-watch",
+    "published_at": "2026-11-08T22:15:10.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--dSseJU6X--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Tech%2520Watch%25202026-11-09%253A%2520%25E8%25A8%2598%25E6%2586%25B6%25E3%2582%2592%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2582%258B%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2589%25E3%2581%2584%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzI3YmM4M2VhNTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Anthropicが提唱する「エージェント記憶」の新潮流：増やすより「検証」が長期タスク成功の鍵を握る",
+    "summary_ja": "Anthropicの最新研究によれば、AIエージェントの長期タスクにおいて重要なのは単に記憶量を増やすことではなく、後から履歴と照らし合わせて記憶を整理・訂正する検証プロセスである。 作業中のメモが翌日の判断を誤らせるように、エージェントも記憶を疑う仕組みがなければ信頼性を維持できない。 開発者は、保存と検証のループをアーキテクチャに組み込む必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicが提唱する「エージェント記憶」の新潮流：増やすより「検証」が長期タスク成功の鍵を握る",
+        "summary": "Anthropicの最新研究によれば、AIエージェントの長期タスクにおいて重要なのは単に記憶量を増やすことではなく、後から履歴と照らし合わせて記憶を整理・訂正する検証プロセスである。 作業中のメモが翌日の判断を誤らせるように、エージェントも記憶を疑う仕組みがなければ信頼性を維持できない。 開発者は、保存と検証のループをアーキテクチャに組み込む必要がある。"
+      },
+      "en": {
+        "title": "Anthropic’s framework for agent memory: Why verifying historical data matters more than just expanding storage capacity",
+        "summary": "Anthropic’s recent research on agent memory reveals that successful long-term task execution relies less on raw storage volume and more on active verification processes. Just as human notes can misguide future actions if they become outdated, AI agents struggle when they lack mechanisms to audit, reorganize, and correct their own stored histories. The study suggests that builders must treat memory not as a static database, but as a dynamic loop where agents continuously reconcile new inputs against past context. For anyone developing autonomous agents, the takeaway is clear: embedding an explicit verification step that validates and purges stale information is now as critical as the retrieval strategy itself to ensure persistent reliability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-09T04:02:00.759Z"
+  },
+  {
+    "id": "art-1794196913606-g33td",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/itaraiguma/articles/suspense-breadcrumb-jsonld-twice",
+    "published_at": "2026-11-08T22:54:59.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--bR2KE7gz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%25AC%25E6%2596%2587%25E3%2582%2592%25E5%25BE%2585%25E3%2581%259F%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2581%259F%25E3%2582%2581%25E3%2581%25ABSuspense%25E3%2581%25A7%25E5%2588%2586%25E3%2581%2591%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2583%2591%25E3%2583%25B3%25E3%2581%258F%25E3%2581%259A%25E3%2581%258C2%25E3%2581%25A4%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlZmMxMmY2MTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Next.jsのSuspense分割で発生する「BreadcrumbList重複」問題：SEOに与える隠れた悪影響と回避策",
+    "summary_ja": "個人開発サービス「DevPick」で、本文表示の遅延を防ぐためにコンポーネントをSuspenseで分割した際、意図せずBreadcrumbList（JSON-LD）が2重に出力される事象が発生した。 視覚的にはパンくずが一つに統合されていても、初期HTML構造では重複が発生しており、これがSEO上の評価に悪影響を及ぼす可能性がある。",
+    "translations": {
+      "ja": {
+        "title": "Next.jsのSuspense分割で発生する「BreadcrumbList重複」問題：SEOに与える隠れた悪影響と回避策",
+        "summary": "個人開発サービス「DevPick」で、本文表示の遅延を防ぐためにコンポーネントをSuspenseで分割した際、意図せずBreadcrumbList（JSON-LD）が2重に出力される事象が発生した。 視覚的にはパンくずが一つに統合されていても、初期HTML構造では重複が発生しており、これがSEO上の評価に悪影響を及ぼす可能性がある。"
+      },
+      "en": {
+        "title": "How splitting components with Next.js Suspense causes invisible JSON-LD duplication issues that can hurt your SEO",
+        "summary": "While optimizing page load latency for a personal project by wrapping components in React Suspense, an issue emerged where BreadcrumbList (JSON-LD) structures were accidentally injected twice into the initial HTML. Although the UI displayed a single, consolidated breadcrumb trail to the user, the underlying markup contained redundant data which search engines might penalize as duplicate structured data. This serves as a cautionary tale for builders: breaking down components for performance metrics like LCP or TTI is essential, but developers must audit server-rendered metadata to ensure critical SEO tags aren't being duplicated during hydration or streaming. Always inspect the raw HTML payload after modularizing components to verify that structured data remains unique and compliant across stream boundaries."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-09T04:01:53.606Z"
+  },
+  {
+    "id": "art-1794196906215-5rb2v",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/beam",
+    "published_at": "2026-11-08T13:39:47+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/28ykvyankltith750251a5pka2ab",
+    "title_ja": "Beam、サーバーレスGPU環境でAIモデルのデプロイを簡略化――インフラ管理不要で推論負荷を即座にスケーリング",
+    "summary_ja": "Beamは、AI開発者が複雑なGPUインフラ管理を不要にし、コードを記述するだけでAIモデルを即座にサーバーレス環境へデプロイできるプラットフォームだ。 APIベースの推論エンドポイントや自動スケーリング機能により、トラフィック急増時も安定した稼働を保証する。 GPUプロビジョニングに煩わされず、モデルの精度向上やプロダクトの機能開発に集中したい個人開発者やスタートアップにとって、インフラ構築のオーバーヘッドを大幅に削減できる強力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "Beam、サーバーレスGPU環境でAIモデルのデプロイを簡略化――インフラ管理不要で推論負荷を即座にスケーリング",
+        "summary": "Beamは、AI開発者が複雑なGPUインフラ管理を不要にし、コードを記述するだけでAIモデルを即座にサーバーレス環境へデプロイできるプラットフォームだ。 APIベースの推論エンドポイントや自動スケーリング機能により、トラフィック急増時も安定した稼働を保証する。 GPUプロビジョニングに煩わされず、モデルの精度向上やプロダクトの機能開発に集中したい個人開発者やスタートアップにとって、インフラ構築のオーバーヘッドを大幅に削減できる強力な選択肢となる。"
+      },
+      "en": {
+        "title": "Beam simplifies AI model deployment with serverless GPUs, eliminating infrastructure management and enabling instant scaling for production inference",
+        "summary": "Beam provides a serverless platform designed to help AI developers bypass complex GPU infrastructure management, allowing them to deploy models directly from code to production environments. By offering API-based inference endpoints and native auto-scaling, the service ensures consistent performance even during sudden traffic spikes. This architecture removes the operational burden of provisioning and maintaining hardware, which is often the biggest hurdle for solo builders and startups scaling machine learning workloads. For developers building AI-powered applications, Beam effectively turns infrastructure into a simple utility, shifting the focus from capacity planning to accelerating model iteration and product feature development. It is an essential tool for maintaining high availability without dedicated DevOps engineering."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-09T04:01:46.215Z"
+  },
+  {
+    "id": "art-1794196897703-8yuia",
+    "source_id": "source-aismiley",
+    "source_name": "AISmiley（AIニュース）",
+    "url": "https://aismiley.co.jp/ai_news/webmagazine_claude_2026/",
+    "published_at": "2026-11-09T03:50:10.000Z",
+    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/11/1189_1200x628_B_5.jpg",
+    "title_ja": "AIsmileyが「Claude導入支援会社5選」ガイドを公開、失敗しないパートナー選定のポイントとAI時代に必要な選別基準を徹底解説",
+    "summary_ja": "AIポータルメディア「AIsmiley」は、企業がClaudeを導入する際に失敗しないためのパートナー選定ガイドをWEB雑誌形式でリリースしました。 本資料では、Claudeの導入支援を行う主要5社を徹底比較し、自社の要件に最適なコンサルティング会社を見極めるための具体的な評価軸や選別基準を網羅しています。 AI導入は単なる技術導入ではなく、業務プロセスへの定着が不可欠です。",
+    "translations": {
+      "ja": {
+        "title": "AIsmileyが「Claude導入支援会社5選」ガイドを公開、失敗しないパートナー選定のポイントとAI時代に必要な選別基準を徹底解説",
+        "summary": "AIポータルメディア「AIsmiley」は、企業がClaudeを導入する際に失敗しないためのパートナー選定ガイドをWEB雑誌形式でリリースしました。 本資料では、Claudeの導入支援を行う主要5社を徹底比較し、自社の要件に最適なコンサルティング会社を見極めるための具体的な評価軸や選別基準を網羅しています。 AI導入は単なる技術導入ではなく、業務プロセスへの定着が不可欠です。"
+      },
+      "en": {
+        "title": "AIsmiley releases guide to the top 5 Claude implementation partners, detailing essential selection criteria for successful AI adoption",
+        "summary": "AI portal media AIsmiley has released a new web magazine guide titled 'The Latest Comparison of Claude Implementation Support Companies,' specifically designed to help businesses avoid common pitfalls when choosing an AI partner. The report evaluates five key firms that provide Claude adoption support, offering concrete metrics and selection criteria for builders and decision-makers to identify the vendor that truly fits their operational requirements. Successfully integrating Claude is not merely a technical deployment but requires deep alignment with existing business processes. This guide provides an essential framework for assessing potential partners by looking beyond surface-level costs to prioritize implementation quality and long-term operational sustainability, serving as a critical resource for companies scaling their AI strategy."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-09T04:01:37.703Z"
+  },
+  {
     "id": "art-1794196008246-535nz",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -20372,32 +20476,6 @@
     "created_at": "2026-11-06T05:01:51.475Z"
   },
   {
-    "id": "art-1793940435349-ys3h1",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/norman6464/articles/code-review-quick-standard-deep",
-    "published_at": "2026-11-06T01:35:30.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--GiUYonC---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%25AF%25E6%25B7%25B1%25E3%2581%2584%25E3%2581%25BB%25E3%2581%25A9%25E8%2589%25AF%25E3%2581%2584%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259ACode%2520Review%2520%25E3%2581%25AE%2520Quick%252FStandard%252FDeep%2520%25E3%2582%2592%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E3%2581%25AE%25E6%25B7%25B1%25E3%2581%2595%25E3%2581%25A8...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tekuteku%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRmM2M0ZDAwNDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの「レビューの深さ」設定と組織一括レビューの活用術：AIコードレビューを最適化する戦略的アプローチ",
-    "summary_ja": "Claude Code v2.1.304で追加された「Quick/Standard/Deep」のレビュー深度設定と、組織全体を対象とした自動コードレビュー機能の詳細を解説する。 全てのレビューをDeep設定にすれば万全とは限らない。 プルリクエストの重要度や変更規模に応じて最適な深さを選択することが、開発効率とAIトークンコストのバランスを取るための鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの「レビューの深さ」設定と組織一括レビューの活用術：AIコードレビューを最適化する戦略的アプローチ",
-        "summary": "Claude Code v2.1.304で追加された「Quick/Standard/Deep」のレビュー深度設定と、組織全体を対象とした自動コードレビュー機能の詳細を解説する。 全てのレビューをDeep設定にすれば万全とは限らない。 プルリクエストの重要度や変更規模に応じて最適な深さを選択することが、開発効率とAIトークンコストのバランスを取るための鍵となる。"
-      },
-      "en": {
-        "title": "Optimizing Claude Code: Balancing Deep vs. Quick Review Settings and Org-Wide Automation for Better AI Developer Workflows",
-        "summary": "Claude Code's v2.1.304 update introduced granular review depth controls—Quick, Standard, and Deep—alongside organization-wide automated code review capabilities for GitHub. While setting everything to 'Deep' might seem like the safest bet to catch every possible bug, it is rarely the most efficient strategy for daily development. Instead, builders should align review depth with the specific importance and scope of each pull request to optimize for both latency and token consumption. This piece explores how to effectively calibrate these AI review settings to maintain high code quality without creating unnecessary friction or exploding operational costs in your CI/CD pipeline, ultimately teaching teams how to treat AI reviews as a configurable resource rather than a blunt instrument."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-06T04:47:15.349Z"
-  },
-  {
     "id": "art-1793940415584-tstr6",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -20423,32 +20501,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-06T04:46:55.584Z"
-  },
-  {
-    "id": "art-1793939536625-z4i6h",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/masamitsu_sera/articles/7363154f42de02",
-    "published_at": "2026-11-05T22:30:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--TJ3tPD1W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%2560claude%2520-p%2520--restricted%2560%2520%25E3%2581%25AE%2520%2560%252F%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25AB%25E5%2590%258D%2560%2520%25E3%2581%25AF%25E5%25B1%2595%25E9%2596%258B%25E3%2581%2595%25E3%2582%258C%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2520%25E2%2580%2595%2520%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%258C%25E8%2587%25AA%25E5%258A%259B%25E3%2581%25A7%25E6%258E%25A2...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%2580%25AC%25E8%2589%25AF%2520%25E6%2594%25BF%25E5%2585%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2YzZWIyZDYwYTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claudeコマンドラインツールの挙動検証：--restrictedモード下でのスキル指定に関する想定外の挙動とモデルの推論能力",
-    "summary_ja": "Mac上で「claude -p --restricted」を無人実行し、リポジトリ内のスキルを指定するジョブを運用していたところ、特定の条件下でコマンドが実行されない事象が発生した。 調査の結果、指定したスキル定義が直接展開されていたわけではなく、モデルが自律的にプロンプト内の指示を解釈し、スキルファイルの内容を推論・補完していたことが判明した。",
-    "translations": {
-      "ja": {
-        "title": "Claudeコマンドラインツールの挙動検証：--restrictedモード下でのスキル指定に関する想定外の挙動とモデルの推論能力",
-        "summary": "Mac上で「claude -p --restricted」を無人実行し、リポジトリ内のスキルを指定するジョブを運用していたところ、特定の条件下でコマンドが実行されない事象が発生した。 調査の結果、指定したスキル定義が直接展開されていたわけではなく、モデルが自律的にプロンプト内の指示を解釈し、スキルファイルの内容を推論・補完していたことが判明した。"
-      },
-      "en": {
-        "title": "Deep dive into Claude CLI restricted mode: How LLMs infer and execute repository-based skills without explicit command expansion",
-        "summary": "A developer running automated `claude -p --restricted` jobs on a local Mac discovered that their repository-defined skills were not being explicitly expanded by the CLI as assumed. After a rare execution failure, investigation revealed that the model was actually inferring and simulating those skill behaviors autonomously based on context rather than executing direct command-line expansions. This realization highlights that LLM-based automation often relies on model reasoning capabilities rather than hard-coded script execution, making typical debugging strategies less effective. For builders relying on agentic CLIs, this creates a critical lesson: robust automated pipelines must account for the stochastic nature of model inference, ensuring that error handling logic respects the agent's autonomous interpretation of task boundaries and skill definitions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-06T04:32:16.625Z"
   },
   {
     "id": "art-1793939512626-ectdv",
@@ -28445,58 +28497,6 @@
       "開発"
     ],
     "created_at": "2026-11-03T19:47:16.063Z"
-  },
-  {
-    "id": "art-1793734359686-ybmle",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/noragrammer/articles/claude-2a8c707059",
-    "published_at": "2026-11-03T19:00:31.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--s4Ol0ETm--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%25E3%2581%25A7%25E3%2580%258E%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%258C%25E6%259B%25B8%25E3%2581%2591%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258B%25E3%2580%258F%25E3%2581%25AE%25E3%2580%2581%25E3%2581%259D%25E3%2581%25AE%25E5%2585%2588%25E3%2581%25AB%25E3%2581%2582%25E3%2582%258B%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:noragrammer%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0lNclhRX3VzcXYtVGNadnlRSDd5d2ZYUEtfeUh6SkN3d2F3YlRoX0g1dXRHNm1VTVB5dz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "スマホ版ClaudeとGitHub連携で開発環境はどう変わるか？コードリポジトリ直結が生む「実戦的」なモバイルコーディングの未来",
-    "summary_ja": "GitHub連携によってスマホ版Claudeに「コード」メニューが追加され、モバイル環境でのコーディング体験が劇的に向上した。 リポジトリ上の既存コードをClaudeが直接参照・生成できるようになったことで、PCを開けない環境下でも修正提案や機能実装のシミュレーションが完結する。 AIを単なるチャット相手ではなく、コードベースを共有する「ペアプログラマー」としてモバイルに持ち込むことで、開発サイクルの速度と質は次のステージへ進化する。",
-    "translations": {
-      "ja": {
-        "title": "スマホ版ClaudeとGitHub連携で開発環境はどう変わるか？コードリポジトリ直結が生む「実戦的」なモバイルコーディングの未来",
-        "summary": "GitHub連携によってスマホ版Claudeに「コード」メニューが追加され、モバイル環境でのコーディング体験が劇的に向上した。 リポジトリ上の既存コードをClaudeが直接参照・生成できるようになったことで、PCを開けない環境下でも修正提案や機能実装のシミュレーションが完結する。 AIを単なるチャット相手ではなく、コードベースを共有する「ペアプログラマー」としてモバイルに持ち込むことで、開発サイクルの速度と質は次のステージへ進化する。"
-      },
-      "en": {
-        "title": "How GitHub integration with mobile Claude transforms development into a practical workflow for coding anywhere on the go",
-        "summary": "Integrating GitHub with mobile Claude unlocks a dedicated \"Code\" menu, fundamentally elevating the mobile coding experience by bridging the gap between chat and repository access. By allowing Claude to directly reference, analyze, and iterate on existing project code, developers can now simulate fixes or implement features even when away from a desktop workstation. This turns the mobile interface from a passive assistant into an active pair programmer that understands your entire codebase. For builders, the shift means moving beyond simple code generation snippets and toward maintaining continuous development momentum across devices, proving that mobile AI can serve as a legitimate tool for technical iteration rather than just documentation or casual brainstorming sessions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-03T19:32:39.686Z"
-  },
-  {
-    "id": "art-1793733481578-b7nco",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/taiyyytai/articles/9bb511f3c8a8db",
-    "published_at": "2026-11-03T12:39:08.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Skspqspx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%259F%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2582%2592M%2526A%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2588%25E3%2581%2597%25E3%2581%25A0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzdkN2FjNTg4ZWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIで複数サービスを並行運営する個人開発者が語る、「ラッコM&A」を使ったサービス売却の意思決定プロセスと出口戦略",
-    "summary_ja": "AIを活用した爆速開発により、常時3〜4つのサービスを運営する個人開発者が、そのうちのWebサービス1つを「ラッコM&A」を通じて売却した体験談。 売却の主な動機は、新たなプロジェクトへの注力と、増え続ける維持・運用負荷の軽減だ。 複数サービスを運営する開発者にとって、M&Aは単なる資金化手段ではなく、ポートフォリオを整理し、次の開発サイクルへリソースを再投資するための戦略的な選択肢として機能する。",
-    "translations": {
-      "ja": {
-        "title": "AIで複数サービスを並行運営する個人開発者が語る、「ラッコM&A」を使ったサービス売却の意思決定プロセスと出口戦略",
-        "summary": "AIを活用した爆速開発により、常時3〜4つのサービスを運営する個人開発者が、そのうちのWebサービス1つを「ラッコM&A」を通じて売却した体験談。 売却の主な動機は、新たなプロジェクトへの注力と、増え続ける維持・運用負荷の軽減だ。 複数サービスを運営する開発者にとって、M&Aは単なる資金化手段ではなく、ポートフォリオを整理し、次の開発サイクルへリソースを再投資するための戦略的な選択肢として機能する。"
-      },
-      "en": {
-        "title": "An AI-Fueled Solo Developer Shares Their Decision Process for Selling a Web Service via Rakko M&A",
-        "summary": "A solo developer who leverages AI to manage three to four concurrent services has shared their experience selling one of their web assets through the Rakko M&A platform. The decision to offload the project was driven by a desire to reduce operational maintenance overhead and pivot resources toward newer, high-potential experiments. For solo builders managing a portfolio of AI-accelerated projects, this transition highlights why M&A platforms are essential exit tools. Rather than simply abandoning legacy code, executing an acquisition allows developers to unlock capital while decluttering their focus for the next development cycle. This shift proves that treating services as sellable assets is a viable long-term sustainability strategy for any independent creator."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-03T19:18:01.578Z"
   },
   {
     "id": "art-1793733469606-ynhcy",
