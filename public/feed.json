@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794208626097-oh3ai",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.dhawalshah.net/article/ai-agent-governance/",
+    "published_at": "2026-11-09T06:55:24.000Z",
+    "og_image_url": "https://www.dhawalshah.net/images/blog/og-ai-agent-governance.webp",
+    "title_ja": "自律AIエージェントのスキル管理術：運用メンテナンス中に53個の機能を自動アーカイブさせた開発事例と教訓",
+    "summary_ja": "自律型AIエージェントの運用において、長期間稼働に伴う「スキル腐敗」を防ぐための自動アーカイブ手法が公開された。 開発者は定期メンテナンスのプロセスを構築し、エージェントが自ら使用頻度の低い53個のスキルを特定してアーカイブする仕組みを実装した。 増えすぎたツールセットがエージェントの推論精度やパフォーマンスを低下させるのを防ぐため、機能の取捨選択を自動化する「エージェント・ガバナンス」は、複雑なエージェントを構築する開発者にとって必須のベストプラクティスとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "自律AIエージェントのスキル管理術：運用メンテナンス中に53個の機能を自動アーカイブさせた開発事例と教訓",
+        "summary": "自律型AIエージェントの運用において、長期間稼働に伴う「スキル腐敗」を防ぐための自動アーカイブ手法が公開された。 開発者は定期メンテナンスのプロセスを構築し、エージェントが自ら使用頻度の低い53個のスキルを特定してアーカイブする仕組みを実装した。 増えすぎたツールセットがエージェントの推論精度やパフォーマンスを低下させるのを防ぐため、機能の取捨選択を自動化する「エージェント・ガバナンス」は、複雑なエージェントを構築する開発者にとって必須のベストプラクティスとなるだろう。"
+      },
+      "en": {
+        "title": "Managing AI agent bloat: How a developer automated the archiving of 53 redundant skills during routine maintenance",
+        "summary": "As autonomous AI agents grow in complexity, the accumulation of unused or legacy tools can degrade performance and impair reasoning. This article details a practical approach to 'agent governance,' where the developer implemented a maintenance routine that successfully identified and archived 53 redundant skills. By forcing the agent to prune its own toolset based on usage patterns, the developer prevented the degradation typical of long-running autonomous systems. For engineers building agentic workflows, this highlights a critical lesson: maintaining a clean, curated function library is just as important as the initial prompt engineering. Relying on an ever-expanding list of tools is a recipe for failure; instead, treat agent skill sets as dynamic inventories that require active lifecycle management to maintain reliability at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-09T07:17:06.097Z"
+  },
+  {
+    "id": "art-1794208620111-j0uy4",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/sgrs38/items/e332946de6919b672b3b",
+    "published_at": "2026-11-09T07:13:18.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMjgyMzI4JTJGcHJvZmlsZS1pbWFnZXMlMkYxNzgyNzMwMTk3P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1mNTAwNzUyMjc4ZWVlNDUxOTUyOWI1MWE2ZGJlNjFkMA%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkYyMmE2N2RjOTU5ODA1OGFkNzFlOTIwZTFiOTk5NjAwYzk2MmUwZWM0JTJGb3JpZ2luYWwuanBnJTNGMTc4MTg2MDIxND9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz0xOTM0ZDUyOGYzN2I1MDFmYThmYTdlMmJkOGI0YzJhNg%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dff3136b56102363d32ac47406e393e8f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwMjAyNiVFNSVCOSVCNDEwJUU2JTlDJTg4JUUzJTgwJTkxTGFyYXZlbCUyRlBIUCUyMCVFNCVCQiU4QSVFNiU5QyU4OCVFMyU4MSVBRSVFMyU4MSVCRSVFMyU4MSVBOCVFMyU4MiU4MSVFRiVCRCU5QzEzLjM1JUUyJTg2JTkyMTMuMzklRTMlODAlODFQSFAlMjAlRTYlOUMlQUMlRTQlQkQlOTMlRTMlODElQUUlRTclQjclOEElRTYlODAlQTUlRTQlQkYlQUUlRTYlQUQlQTMlRTMlODAlODElRTMlODMlQUMlRTMlODMlOTclRTMlODMlQUElRTMlODIlQUIlRTMlODElQUUlRTUlOEYlQTQlRTMlODElODQlRTglQUElQUQlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0zMjllMGQzZDkxODI5NmJmOTQ0MTQ4ZWFiNDczYjY4Mw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzZ3JzMzgmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz04YzRhZGRjNDE0MmU0OGYzOWFmY2ZjYmJmZTg5MmVhNA&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=44OV44Oq44O844Op44Oz44K544Kz44ON44Kv44OI5qCq5byP5Lya56S-&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=f474d31db6de9829c0a8efbad7231934",
+    "title_ja": "【2026年10月】Laravel 13.35〜13.39アップデートまとめ：PHP緊急修正とトークンガード刷新、DBレプリカの整合性対策",
+    "summary_ja": "2026年10月のLaravelは13.35から13.39までの4リリースを展開。 今月はPHP本体の緊急修正に伴うパッチや、Laravelのトークンガードにおけるセキュリティ強化が中心となった。 また、DBレプリカ利用時の「古いデータを読み込んでしまう」問題を防ぐ戦略的なデータ整合性確保の手法が技術者間で注目されている。 フレームワークの小刻みなアップデートを追いつつ、セキュリティとデータの一貫性を高める実装が現代のLaravel開発には不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "【2026年10月】Laravel 13.35〜13.39アップデートまとめ：PHP緊急修正とトークンガード刷新、DBレプリカの整合性対策",
+        "summary": "2026年10月のLaravelは13.35から13.39までの4リリースを展開。 今月はPHP本体の緊急修正に伴うパッチや、Laravelのトークンガードにおけるセキュリティ強化が中心となった。 また、DBレプリカ利用時の「古いデータを読み込んでしまう」問題を防ぐ戦略的なデータ整合性確保の手法が技術者間で注目されている。 フレームワークの小刻みなアップデートを追いつつ、セキュリティとデータの一貫性を高める実装が現代のLaravel開発には不可欠だ。"
+      },
+      "en": {
+        "title": "Laravel October 2026 Roundup: Versions 13.35–13.39 Bring Critical PHP Security Patches and Advanced Database Replica Consistency Fixes",
+        "summary": "The October 2026 Laravel update cycle covered releases 13.35 through 13.39, with a strong focus on mission-critical security and database integrity. The releases addressed urgent PHP core vulnerabilities and introduced significant enhancements to Laravel’s token guard to harden authentication surfaces. Furthermore, the community dove deep into mitigating stale data reads when utilizing read replicas, establishing standardized patterns to ensure strict database consistency in distributed environments. For developers, these updates highlight that framework maintenance is no longer just about feature flags; proactively managing infrastructure-level patches and database replica synchronization is essential for production security. Staying current with these granular releases ensures your application architecture remains resilient against both incoming exploits and subtle data consistency failures."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-09T07:17:00.111Z"
+  },
+  {
+    "id": "art-1794208610964-5xtr5",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/koumane_game/n/n56a6de3fb195",
+    "published_at": "2026-11-09T07:15:01.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/334075902/rectangle_large_type_2_e245c980a1b5bee9f27a1485b02b4fee.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "野球ゲーム歴20年の営業マンが「ノーコード」で高校野球ゲームを開発、AI活用でスカウトと育成を自動化した制作術",
+    "summary_ja": "野球ゲームに精通した営業職の個人開発者が、コードを1行も書かずにスマホ向け高校野球管理シミュレーション「高校野球マネジメント」をリリースした。 本作はAIを活用し、中学生スカウトから育成、甲子園制覇までを一貫して体験できる設計が特徴だ。 専門知識がなくても、ノーコードツールを駆使すれば自分の情熱を製品として具現化し、ストア配信まで完結できることをこの事例は証明している。",
+    "translations": {
+      "ja": {
+        "title": "野球ゲーム歴20年の営業マンが「ノーコード」で高校野球ゲームを開発、AI活用でスカウトと育成を自動化した制作術",
+        "summary": "野球ゲームに精通した営業職の個人開発者が、コードを1行も書かずにスマホ向け高校野球管理シミュレーション「高校野球マネジメント」をリリースした。 本作はAIを活用し、中学生スカウトから育成、甲子園制覇までを一貫して体験できる設計が特徴だ。 専門知識がなくても、ノーコードツールを駆使すれば自分の情熱を製品として具現化し、ストア配信まで完結できることをこの事例は証明している。"
+      },
+      "en": {
+        "title": "Sales professional with 20 years of gaming experience launches AI-powered high school baseball sim with zero code",
+        "summary": "A seasoned sales professional with two decades of experience playing baseball titles has successfully launched 'High School Baseball Management,' a mobile simulation game, without writing a single line of code. The game centers on AI-driven mechanics, allowing players to scout middle school talent, manage rosters, and aim for the Koshien national championship tournament entirely through automated systems. By leveraging no-code development platforms, the developer proved that deep industry knowledge combined with modern automation tools can substitute for technical engineering skills. This case highlights how individual builders can bring niche passion projects to market by focusing on game design and user experience rather than complex custom infrastructure, ultimately proving that shipping a functional product is attainable for anyone, regardless of their coding background."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-09T07:16:50.964Z"
+  },
+  {
+    "id": "art-1794208602141-w5851",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.08684",
+    "published_at": "2026-11-09T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "LLMエンジンの過負荷問題、リトライとキャンセル処理の限界が明らかに：vLLM実験で判明した回復不能なボトルネックとは",
+    "summary_ja": "LLMエンジンの過負荷時、クライアント側のリトライとキャンセル送信だけでシステムが回復しないことがarXivの最新論文で判明した。 vLLMを用いた実験では、過負荷後にリトライが続くとエンジンの計算リソースが浪費され、サービスが完全に復旧しないケースが多発。 キャンセル通知だけでは解決できず、リトライの到着後、実際に完了したリクエストはわずか12～38%にとどまった。",
+    "translations": {
+      "ja": {
+        "title": "LLMエンジンの過負荷問題、リトライとキャンセル処理の限界が明らかに：vLLM実験で判明した回復不能なボトルネックとは",
+        "summary": "LLMエンジンの過負荷時、クライアント側のリトライとキャンセル送信だけでシステムが回復しないことがarXivの最新論文で判明した。 vLLMを用いた実験では、過負荷後にリトライが続くとエンジンの計算リソースが浪費され、サービスが完全に復旧しないケースが多発。 キャンセル通知だけでは解決できず、リトライの到着後、実際に完了したリクエストはわずか12～38%にとどまった。"
+      },
+      "en": {
+        "title": "LLM Engine Overload: Why Cancellation and Retries Fail to Recover Throughput in vLLM Deployments",
+        "summary": "Recent research on LLM serving engines highlights a critical failure mode: when systems hit transient overload, client-side retries and simple cancellation signals are insufficient to recover service stability. Testing against vLLM, researchers discovered that lingering retry traffic continues to consume engine cycles, preventing recovery even when incoming demand drops below total capacity. The study shows that cancellation alone failed to restore service in any tested scenario, with only 12–38% of post-overload requests successfully completing. For builders designing high-scale inference APIs, this suggests that relying on standard HTTP timeouts and basic cancellation is a dangerous anti-pattern. Engineers must prioritize sophisticated scheduler-aware flow control and aggressive request shedding strategies rather than assuming that dropping connections will automatically clear an overloaded GPU queue."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-09T07:16:42.141Z"
+  },
+  {
     "id": "art-1794207735067-kubhc",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10740,32 +10845,6 @@
     "created_at": "2026-11-08T03:16:28.474Z"
   },
   {
-    "id": "art-1794106922100-s7qnt",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/shiroi1229/n/n3e317fd268d8",
-    "published_at": "2026-11-08T03:00:44.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333586299/rectangle_large_type_2_d7635c43b4ca52106e83e46a18bc8011.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI実装の手戻りを防ぐ「推論境界とコスト制御」検収ゲート設計―精度劣化を即時特定しAPI浪費を遮断する次世代アプローチ",
-    "summary_ja": "AI開発において、論文通りの実装でプロジェクトが破綻するのは、推論境界とコスト制御の検収閾値が曖昧だからだ。 本記事では、計算・通信ボトルネックを解消する「Gen-2：境界検収設計×退行遮断制御」を解説する。 この手法により、パイプラインのどこで精度劣化やレイテンシ膨張が発生しているかを局所化できる。 API料金の無駄な浪費を防ぎ、確実な決定論的レシート検収を実現するための、実務に直結する実装チェックリストと管理ゲートを提示する。",
-    "translations": {
-      "ja": {
-        "title": "AI実装の手戻りを防ぐ「推論境界とコスト制御」検収ゲート設計―精度劣化を即時特定しAPI浪費を遮断する次世代アプローチ",
-        "summary": "AI開発において、論文通りの実装でプロジェクトが破綻するのは、推論境界とコスト制御の検収閾値が曖昧だからだ。 本記事では、計算・通信ボトルネックを解消する「Gen-2：境界検収設計×退行遮断制御」を解説する。 この手法により、パイプラインのどこで精度劣化やレイテンシ膨張が発生しているかを局所化できる。 API料金の無駄な浪費を防ぎ、確実な決定論的レシート検収を実現するための、実務に直結する実装チェックリストと管理ゲートを提示する。"
-      },
-      "en": {
-        "title": "Implement AI Guardrails with Inference Boundaries and Cost Control to Eliminate Rework and API Waste",
-        "summary": "AI projects often fail because developers implement algorithms without defining strict inference boundaries or cost-control thresholds, leading to infinite loops of re-experimentation. This guide introduces a \"Gen-2\" framework focused on boundary inspection design and regression blocking, specifically engineered to localize performance degradation and latency spikes within a pipeline before they propagate. By establishing deterministic receipt validation at critical transition points, builders can stop wasting API credits on faulty chains and identify exactly where accuracy breaks down. This approach replaces vague performance metrics with rigid gates, ensuring that compute and communication bottlenecks are trapped early. It is an essential playbook for shipping reliable AI systems that are fiscally responsible and resilient against edge-case failures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-08T03:02:02.100Z"
-  },
-  {
     "id": "art-1794106914169-4o4uk",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -14880,32 +14959,6 @@
     "created_at": "2026-11-07T12:31:40.662Z"
   },
   {
-    "id": "art-1794053847046-229h2",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://store.steampowered.com/app/3739580/KORRIDOR/",
-    "published_at": "2026-11-04T17:34:20.000Z",
-    "og_image_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3739580/8e8289b363484837caf6e83a880502252e550a76/capsule_616x353.jpg?t=1790780634",
-    "title_ja": "広告でよく見る「あのゲーム」を本当に実装したインディーゲーム『KORRIDOR』がSteamでリリース",
-    "summary_ja": "モバイル広告で頻繁に目にする、走るキャラクターが障害物を避けて進む「いかにもありそうで実在しない」ゲームを、実際に開発者が再現した『KORRIDOR』がSteamで公開された。 AI生成ではなく、手作業で設計されたステージ構成とゲーム性が話題を呼んでいる。 虚偽広告が溢れる現在のモバイルゲーム市場において、あえてその誇大広告をそのまま製品化するという逆転の発想が、ユーザーの関心を惹きつける新たなマーケティング手法として機能している。",
-    "translations": {
-      "ja": {
-        "title": "広告でよく見る「あのゲーム」を本当に実装したインディーゲーム『KORRIDOR』がSteamでリリース",
-        "summary": "モバイル広告で頻繁に目にする、走るキャラクターが障害物を避けて進む「いかにもありそうで実在しない」ゲームを、実際に開発者が再現した『KORRIDOR』がSteamで公開された。 AI生成ではなく、手作業で設計されたステージ構成とゲーム性が話題を呼んでいる。 虚偽広告が溢れる現在のモバイルゲーム市場において、あえてその誇大広告をそのまま製品化するという逆転の発想が、ユーザーの関心を惹きつける新たなマーケティング手法として機能している。"
-      },
-      "en": {
-        "title": "Developer ships 'Korridor', a real Steam game based on those fake mobile ads we all see",
-        "summary": "A developer has finally turned the 'fake' gameplay often seen in deceptive mobile ads—where characters run through obstacle-filled corridors—into an actual, playable Steam title called KORRIDOR. Unlike the deceptive ads that rely on false promises, this project implements real mechanics without the use of AI generation to mimic the look. By taking the concept of 'misleading marketing' and turning it into a genuine product, the developer has created a viral hit that capitalizes on user frustration with current mobile gaming advertising standards. For builders, it serves as a fascinating case study on how to subvert negative industry trends by delivering exactly what users expected, even if those expectations were originally fueled by lies."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-07T12:17:27.046Z"
-  },
-  {
     "id": "art-1794053836348-mar1a",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -17781,32 +17834,6 @@
     "created_at": "2026-11-06T22:01:42.611Z"
   },
   {
-    "id": "art-1794001617311-aqahd",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/lemonIN/items/348ccc074904403cf880",
-    "published_at": "2026-11-06T20:29:39.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY5ODE0MzIlMkY0YmJmOGQ3ZDJiNzViM2EwY2IzOGIwOTc0Y2RkYzVhOTg5ZDdhZGRlJTJGeF9sYXJnZS5wbmclM0YxNzM2NTM2ODM3P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1iYzM5NGIwM2I5ZTMyYjBlNjg1NTg0ZjJmN2U3OGI0Mw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D212190576611108f9d0cb54859c87ab6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JTIzJUUzJTgyJUI1JUUzJTgzJTkwJUUzJTgyJUE0JUUzJTgzJTkwJUUzJTgzJUFCJUUzJTgyJUE0JUUzJTgzJUIzJUUzJTgzJTk1JUUzJTgzJUFCJUUzJTgyJUE4JUUzJTgzJUIzJUUzJTgyJUI1JUUzJTgzJUJDJTIwJUUzJTgwJTlDJUUzJTgzJTkwJUUzJTgyJUJBJUUzJTgxJUEzJUUzJTgxJUE2JUU3JTk0JTlGJUUzJTgxJThEJUU2JUFFJThCJUUzJTgyJThDJUVGJUJDJTgxJUUzJTgwJTlDJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MzFkNDU2YmUyYWYwMjliMDBiZGQyNmU5MTU0YjA1Y2E&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsZW1vbklOJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9OTMwMjZmMDQ0MDlhZGI1YTBhMDM2YzQ2NjRhNDM2YmQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=5bba71ac50a8bec13b602737db552f2e",
-    "title_ja": "SNSで「承認欲求」を満たせ！フォロワー数も生存ステータス化した異色のサバイバルゲーム企画「サバイバルインフルエンサー」",
-    "summary_ja": "「サバイバルインフルエンサー」は、SNSが支配する現代社会で生き残るため、飢えや渇きだけでなく「承認欲求」の維持が生死を分ける新感覚のPC向けサバイバルゲーム企画だ。 フォロワー数を稼ぎ、「映え」を追求し続けなければキャラクターが干からびるという、皮肉的かつユニークなゲームシステムが特徴である。 現実のインフルエンサー経済をメタ的に皮肉ったこのゲームデザインは、開発者がゲームメカニクスに現代社会の病理をどう落とし込むかという点において非常に興味深いケーススタディとなっている。",
-    "translations": {
-      "ja": {
-        "title": "SNSで「承認欲求」を満たせ！フォロワー数も生存ステータス化した異色のサバイバルゲーム企画「サバイバルインフルエンサー」",
-        "summary": "「サバイバルインフルエンサー」は、SNSが支配する現代社会で生き残るため、飢えや渇きだけでなく「承認欲求」の維持が生死を分ける新感覚のPC向けサバイバルゲーム企画だ。 フォロワー数を稼ぎ、「映え」を追求し続けなければキャラクターが干からびるという、皮肉的かつユニークなゲームシステムが特徴である。 現実のインフルエンサー経済をメタ的に皮肉ったこのゲームデザインは、開発者がゲームメカニクスに現代社会の病理をどう落とし込むかという点において非常に興味深いケーススタディとなっている。"
-      },
-      "en": {
-        "title": "Survival Influencer: A unique PC game concept where social media metrics like follower count are essential survival statistics",
-        "summary": "Survival Influencer is a fresh PC game concept set in a modern world ruled by social media, where survival depends on satisfying 'recognition needs' alongside standard mechanics like hunger and thirst. In this title, players must constantly chase viral trends and maintain their follower count to keep their character alive, creating a deeply ironic loop where popularity is literally a life-or-death metric. This satirical game design effectively gamifies the psychological toll of digital influence, offering a unique perspective on modern media addiction. For developers, this project serves as an intriguing case study on how to weave contemporary social commentary directly into core game mechanics rather than treating them as superficial aesthetic layers."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "SNS・ショート動画"
-    ],
-    "created_at": "2026-11-06T21:46:57.311Z"
-  },
-  {
     "id": "art-1794000777995-3tobj",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -19472,33 +19499,6 @@
       "開発"
     ],
     "created_at": "2026-11-06T12:32:07.352Z"
-  },
-  {
-    "id": "art-1793968298297-v4s80",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/starai_org/articles/clef-decision-model-scoring-analysis",
-    "published_at": "2026-11-06T04:01:34.000Z",
-    "og_image_url": null,
-    "title_ja": "LLMが「取引先」という単語に騙される理由：機密判定モデルの誤検知メカニズムと推論ロジックの解析",
-    "summary_ja": "展示会のパンフレットに載せる「取引先一覧」のような公開情報が、なぜLLM（Clef）によって「業務機密」と誤判定されるのか。 筆者はモデル内部の推論ロジックを解析し、特定のキーワードがモデルの判定に与えるバイアスを調査した。 単なる文章の文脈だけでなく、モデル固有の学習データや重みが特定の単語に過剰反応している可能性を指摘している。",
-    "translations": {
-      "ja": {
-        "title": "LLMが「取引先」という単語に騙される理由：機密判定モデルの誤検知メカニズムと推論ロジックの解析",
-        "summary": "展示会のパンフレットに載せる「取引先一覧」のような公開情報が、なぜLLM（Clef）によって「業務機密」と誤判定されるのか。 筆者はモデル内部の推論ロジックを解析し、特定のキーワードがモデルの判定に与えるバイアスを調査した。 単なる文章の文脈だけでなく、モデル固有の学習データや重みが特定の単語に過剰反応している可能性を指摘している。"
-      },
-      "en": {
-        "title": "Why LLMs like Clef hallucinate sensitivity: Analyzing how the keyword 'business partner' triggers false confidentiality positives",
-        "summary": "Why would an LLM classify a list of 'business partners' printed on a public exhibition brochure as confidential? By analyzing the internal inference logic of Clef, the author investigates why the model persistently marks this non-sensitive data as a 'trade secret' despite context clues. The investigation suggests that the model’s weighting of specific keywords—likely derived from its training set—overrides the provided context, causing significant false positives in security classifications. For developers building LLM-based redaction or compliance tools, this serves as a critical warning: relying solely on prompts is insufficient. You must audit how individual models prioritize specific tokens, as they can develop strong, localized biases that turn benign business terminology into security vulnerabilities overnight."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "研究"
-    ],
-    "created_at": "2026-11-06T12:31:38.297Z"
   },
   {
     "id": "art-1793967409384-r1lll",
