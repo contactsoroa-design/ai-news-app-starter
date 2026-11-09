@@ -1,5 +1,113 @@
 [
   {
+    "id": "art-1794244632213-tsbyc",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/mscat/n/na06062c6fbac",
+    "published_at": "2026-11-09T16:58:28.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331090238/rectangle_large_type_2_7dcba66f3dd41e563f80989089eb415f.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "【KikiYaku開発記】アプリが「自分の声」を拾ってしまうループバック問題の技術的解決策：音声処理設計の見直し",
+    "summary_ja": "個人開発アプリ「KikiYaku」で、アプリの読み上げ音声をマイクが再集音してしまう「ループバック問題」が開発上の最大の壁となった。 本稿では、音声解析エンジンやマイク入力の排他制御、エコーキャンセレーション設定を最適化することで、いかにして音声認識の精度を維持しながらこの干渉を排除したかを詳説する。 個人開発者が音声対話アプリを作る際、ハードウェアレベルの入力制御がいかにUXを左右するかを学ぶ貴重な事例だ。",
+    "translations": {
+      "ja": {
+        "title": "【KikiYaku開発記】アプリが「自分の声」を拾ってしまうループバック問題の技術的解決策：音声処理設計の見直し",
+        "summary": "個人開発アプリ「KikiYaku」で、アプリの読み上げ音声をマイクが再集音してしまう「ループバック問題」が開発上の最大の壁となった。 本稿では、音声解析エンジンやマイク入力の排他制御、エコーキャンセレーション設定を最適化することで、いかにして音声認識の精度を維持しながらこの干渉を排除したかを詳説する。 個人開発者が音声対話アプリを作る際、ハードウェアレベルの入力制御がいかにUXを左右するかを学ぶ貴重な事例だ。"
+      },
+      "en": {
+        "title": "How the 'KikiYaku' dev solved the critical audio loopback bug where the app listens to its own voice",
+        "summary": "During development of the audio app 'KikiYaku,' the creator hit a major roadblock: the microphone was constantly re-capturing the app's own synthesized speech, creating a disruptive audio loop. This post breaks down the technical journey to mitigate the issue, detailing how the developer refined the audio engine, implemented exclusive control over microphone inputs, and fine-tuned echo cancellation parameters to effectively isolate input from output. It demonstrates that when building voice-based interactive apps, managing low-level hardware input states is just as critical as the core logic. For indie developers, this serves as a practical blueprint for handling audio concurrency to maintain clean voice recognition, proving that hardware-level audio control is the linchpin of a functional conversational UX."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-09T17:17:12.213Z"
+  },
+  {
+    "id": "art-1794244625560-b2k50",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai",
+    "published_at": "2026-11-09T17:09:56.000Z",
+    "og_image_url": "https://i.guim.co.uk/img/media/f9e7e92c7afc213ee5f07553302bd0c680f2720b/0_0_3331_2666/master/3331.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7a0f198ba63598dcccaa6967823c5ff2",
+    "title_ja": "GoogleのAIブロックに対する検索除外警告、保護者や教師から「脅迫」との批判が噴出",
+    "summary_ja": "GoogleがAIスクレイピングを遮断したウェブサイトに対し、検索インデックスからの除外を警告した件で、教育機関や保護者から強い反発が起きている。 教育現場では学習コンテンツが検索結果から消えることは「脅迫」に等しいとの批判が噴出しており、オープンウェブのアクセシビリティとAI企業のデータ収集権限の対立が激化している。 技術的なクローラー制御と公共財としての検索エンジンの役割について、改めて倫理的な議論が求められている。",
+    "translations": {
+      "ja": {
+        "title": "GoogleのAIブロックに対する検索除外警告、保護者や教師から「脅迫」との批判が噴出",
+        "summary": "GoogleがAIスクレイピングを遮断したウェブサイトに対し、検索インデックスからの除外を警告した件で、教育機関や保護者から強い反発が起きている。 教育現場では学習コンテンツが検索結果から消えることは「脅迫」に等しいとの批判が噴出しており、オープンウェブのアクセシビリティとAI企業のデータ収集権限の対立が激化している。 技術的なクローラー制御と公共財としての検索エンジンの役割について、改めて倫理的な議論が求められている。"
+      },
+      "en": {
+        "title": "Google’s threat to de-index websites blocking AI scrapers sparks 'extortion' backlash from teachers and parents",
+        "summary": "Google is facing severe backlash from educators and parents after threatening to de-index websites that block its AI scrapers from accessing their content. Critics describe the ultimatum—which forces sites to either feed their data to AI models or vanish from Google Search results—as a form of digital extortion that undermines the public nature of the internet. This confrontation highlights the deepening conflict between AI companies seeking massive datasets and web publishers trying to protect their intellectual property. The dispute forces a critical re-examination of whether a dominant search engine should weaponize its index to coerce content owners into training its competitors, creating a troubling precedent for the future of an open, accessible, and searchable web."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-09T17:17:05.560Z"
+  },
+  {
+    "id": "art-1794244617455-wzvlv",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.709",
+    "published_at": "2026-11-09T17:12:02.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、最新アップデートv2.11.709でAPI画像処理機能を拡充 - クロール時の視覚データ抽出を強化",
+    "summary_ja": "ウェブスクレイピングプラットフォーム「Firecrawl」が最新バージョンv2.11.709をリリースし、APIを通じた画像処理機能を大幅にアップデートした。 今回の更新により、ウェブサイトのクロール時に取得できる視覚データの精度と抽出効率が向上し、マルチモーダルAIモデルへの入力パイプライン構築がより容易になる。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、最新アップデートv2.11.709でAPI画像処理機能を拡充 - クロール時の視覚データ抽出を強化",
+        "summary": "ウェブスクレイピングプラットフォーム「Firecrawl」が最新バージョンv2.11.709をリリースし、APIを通じた画像処理機能を大幅にアップデートした。 今回の更新により、ウェブサイトのクロール時に取得できる視覚データの精度と抽出効率が向上し、マルチモーダルAIモデルへの入力パイプライン構築がより容易になる。"
+      },
+      "en": {
+        "title": "Firecrawl releases v2.11.709, expanding API-based image processing capabilities for enhanced web scraping workflows",
+        "summary": "Web scraping platform Firecrawl has officially rolled out version v2.11.709, introducing significant improvements to its API-driven image processing stack. This update streamlines the extraction of visual data during crawls, allowing developers to pull precise graphical information from websites more efficiently than ever before. By improving the reliability of visual data pipelines, Firecrawl now makes it significantly easier to feed raw website layouts directly into multimodal LLMs. For engineers building autonomous AI agents or visual analysis tools, this update removes the traditional bottleneck of complex DOM parsing, allowing for more robust and seamless integration between web content and intelligent models. It represents a vital infrastructure upgrade for anyone building production-ready AI scrapers that require accurate visual context."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-09T17:16:57.455Z"
+  },
+  {
+    "id": "art-1794244609689-ku483",
+    "source_id": "source-meta-ai",
+    "source_name": "Meta Engineering",
+    "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
+    "published_at": "2026-11-09T17:00:12.000Z",
+    "og_image_url": "https://engineering.fb.com/wp-content/uploads/2026/11/Extending-LLDB-Hero.png",
+    "title_ja": "MetaがLLDBを拡張、CPUとGPUを横断する分散アプリケーションのデバッグ基盤を公開。ハードウェア非依存のプラグイン構造を採用",
+    "summary_ja": "MetaはCPUとGPUを跨ぐ分散アプリをデバッグするため、LLDBにベンダー非依存のアクセラレータプラグインを導入した。 この仕組みはCPUとGPUを個別のデバッグプロセスとして扱い、単一セッションで統合表示する。 現代のAIワークロードは異種ハードウェア間を跨いで実行されるため、こうした複雑な実行環境を透過的に可視化するアプローチは、AIモデルの開発や最適化におけるデバッグ効率を大幅に向上させる鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "MetaがLLDBを拡張、CPUとGPUを横断する分散アプリケーションのデバッグ基盤を公開。ハードウェア非依存のプラグイン構造を採用",
+        "summary": "MetaはCPUとGPUを跨ぐ分散アプリをデバッグするため、LLDBにベンダー非依存のアクセラレータプラグインを導入した。 この仕組みはCPUとGPUを個別のデバッグプロセスとして扱い、単一セッションで統合表示する。 現代のAIワークロードは異種ハードウェア間を跨いで実行されるため、こうした複雑な実行環境を透過的に可視化するアプローチは、AIモデルの開発や最適化におけるデバッグ効率を大幅に向上させる鍵となる。"
+      },
+      "en": {
+        "title": "Meta Extends LLDB to Debug Applications Spanning CPUs and GPUs via New Vendor-Neutral Accelerator Plugin Architecture",
+        "summary": "Meta has engineered a vendor-neutral accelerator plugin for lldb-server that enables debugging across both CPU and GPU architectures. This architecture decouples shared debugger infrastructure from hardware-specific device control, allowing CPU and GPU execution contexts to appear as distinct debugger processes while seamlessly maintaining a unified debugging session. As AI workloads increasingly migrate across heterogeneous hardware boundaries, the ability to inspect state transitions between accelerators is critical. For developers building low-level AI runtimes or custom kernels, this modular plugin design provides a standardized way to diagnose cross-device issues without needing proprietary tooling for every vendor. It represents a significant step toward simplifying the notoriously difficult process of tracing distributed execution across complex modern compute clusters."
+      }
+    },
+    "tool_tags": [
+      "Meta AI"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-09T17:16:49.689Z"
+  },
+  {
     "id": "art-1794243777934-cys44",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -11477,32 +11585,6 @@
     "created_at": "2026-11-08T11:16:41.758Z"
   },
   {
-    "id": "art-1794135757403-07pa8",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tsukunowa/n/n472f70b2aac0",
-    "published_at": "2026-11-08T10:36:28.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/26c2533c9e104fb3f3b7d761574395a6f14cf52f.png",
-    "title_ja": "一人開発の限界を突破する「AI 3役制」：AIに本部・監督・規約担当を割り振り開発速度を最大化する手法",
-    "summary_ja": "限られた時間でサービスを構築する個人開発者が、AIを「本部（企画・開発）」「監督（QA・検証）」「規約担当」の3つの役割に分けて運用する手法を紹介。 人間は意思決定に専念し、AIに実務とチェックを任せることで、一人でも組織的な開発体制を疑似的に再現している。 開発者が実装と仕様策定の負担を減らし、スピードを維持するための現実的なAI活用モデルと言える。",
-    "translations": {
-      "ja": {
-        "title": "一人開発の限界を突破する「AI 3役制」：AIに本部・監督・規約担当を割り振り開発速度を最大化する手法",
-        "summary": "限られた時間でサービスを構築する個人開発者が、AIを「本部（企画・開発）」「監督（QA・検証）」「規約担当」の3つの役割に分けて運用する手法を紹介。 人間は意思決定に専念し、AIに実務とチェックを任せることで、一人でも組織的な開発体制を疑似的に再現している。 開発者が実装と仕様策定の負担を減らし、スピードを維持するための現実的なAI活用モデルと言える。"
-      },
-      "en": {
-        "title": "Scaling Solo Development with an 'AI Triad': How to Assign Roles like HQ, Supervisor, and Legal to AI",
-        "summary": "A solo developer building a service with limited time explains a pragmatic 'AI Triad' workflow that mimics organizational oversight. By assigning specific LLM instances to roles—Headquarters (planning and coding), Supervisor (QA and code verification), and Legal (terms and copy drafting)—the developer abstracts away tedious manual labor. The human operator serves solely as the decision-maker, approving AI outputs rather than wrestling with implementation details or policy wording. This structural approach allows a single founder to maintain momentum across complex development tasks, effectively creating a distributed team from within a single development environment. For solo builders, this illustrates that scaling output isn't about working harder, but about architecting a rigorous, multi-step agentic process to handle execution."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-08T11:02:37.403Z"
-  },
-  {
     "id": "art-1794135748651-ujmv9",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -15410,32 +15492,6 @@
     "created_at": "2026-11-07T20:16:57.432Z"
   },
   {
-    "id": "art-1794082609492-pum3b",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/ggmm82/righaven",
-    "published_at": "2026-11-07T19:40:06.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェントの安全な実行環境を自前構築できる「RigHaven」公開。サンドボックス隔離で実行リスクを低減",
-    "summary_ja": "RigHavenは、AIエージェントを安全に実行するための自前構築可能な実行ハーネス（実行環境）である。 ホスト環境からエージェントの処理を物理的あるいは論理的に隔離するサンドボックス機能を備え、外部コード実行に伴うセキュリティリスクや依存関係の競合を低減する。 AI開発において、信頼できないコードや未知のエージェント挙動を安全に試行錯誤したいエンジニアにとって、インフラの堅牢性を担保しつつ柔軟な開発環境を確保できる実用的なツールとなる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの安全な実行環境を自前構築できる「RigHaven」公開。サンドボックス隔離で実行リスクを低減",
-        "summary": "RigHavenは、AIエージェントを安全に実行するための自前構築可能な実行ハーネス（実行環境）である。 ホスト環境からエージェントの処理を物理的あるいは論理的に隔離するサンドボックス機能を備え、外部コード実行に伴うセキュリティリスクや依存関係の競合を低減する。 AI開発において、信頼できないコードや未知のエージェント挙動を安全に試行錯誤したいエンジニアにとって、インフラの堅牢性を担保しつつ柔軟な開発環境を確保できる実用的なツールとなる。"
-      },
-      "en": {
-        "title": "RigHaven launches as a self-hosted execution harness providing secure sandbox isolation for AI agents",
-        "summary": "RigHaven has emerged as a new self-hosted execution harness designed to safely run AI agents within isolated, secure environments. By leveraging sandbox isolation, the platform physically or logically separates agent processes from the host infrastructure, effectively mitigating security risks and dependency conflicts often associated with executing arbitrary code. For AI builders who need to experiment with complex agent behaviors or unverified code, this tool provides a critical layer of defense without sacrificing development flexibility. It allows teams to maintain robust infrastructure control while creating a safe, hardened sandbox that prevents agents from accessing sensitive system resources, ultimately enabling safer iteration cycles when deploying autonomous agent workflows in production."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-07T20:16:49.492Z"
-  },
-  {
     "id": "art-1794082603215-xuyde",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -18420,32 +18476,6 @@
       "開発"
     ],
     "created_at": "2026-11-07T01:16:28.054Z"
-  },
-  {
-    "id": "art-1794013341366-nqb8q",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/sugitakenji/articles/af925cba5484fb",
-    "published_at": "2026-11-06T14:09:25.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--lYppBr8a--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:What%2520is%2520AI%2520for%253F%2520%25E2%2580%2594%2520Don%25E2%2580%2599t%2520think.%2520Feel.%2520%25E3%2581%25A8%2520Be%2520water.%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%259D%2589%25E7%2594%25B0%25E7%25A0%2594%25E6%25B2%25BB%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzk4MDc4MWRkYTIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIとの共創で重要な「直感」と「流動性」— ツールとして消費せず、鏡のように対話して成果を最大化する哲学",
-    "summary_ja": "AIを単なる道具として消費せず、相互の対話を通じて思考を深化させる「鏡」のような関係構築の重要性を提唱する。 AIからの出力を受け止め、意図との差異を言語化してフィードバックするプロセスこそが、AIを「考えるナイフ」から「思考のパートナー」へと昇華させる鍵となる。 AIに固執せず柔軟に水のように適応する「Be water」の精神が、個人開発者やクリエイターの創造性を拡張する。",
-    "translations": {
-      "ja": {
-        "title": "AIとの共創で重要な「直感」と「流動性」— ツールとして消費せず、鏡のように対話して成果を最大化する哲学",
-        "summary": "AIを単なる道具として消費せず、相互の対話を通じて思考を深化させる「鏡」のような関係構築の重要性を提唱する。 AIからの出力を受け止め、意図との差異を言語化してフィードバックするプロセスこそが、AIを「考えるナイフ」から「思考のパートナー」へと昇華させる鍵となる。 AIに固執せず柔軟に水のように適応する「Be water」の精神が、個人開発者やクリエイターの創造性を拡張する。"
-      },
-      "en": {
-        "title": "Beyond Prompting: Cultivating Intuition and Fluidity as the Core Philosophy for Effective Human-AI Collaboration",
-        "summary": "The article explores shifting away from viewing AI strictly as a utilitarian tool, proposing instead a symbiotic relationship where AI acts as a mirror to clarify one's own intent. By embracing a 'Don’t think. Feel.' approach and actively refining the output through continuous, nuanced feedback, creators can transform AI from a sharp but dangerous instrument into a genuine collaborative partner. This philosophy emphasizes the concept of 'Be water'—maintaining mental fluidity and adaptability during interaction. For builders and developers, the key lesson is that AI effectiveness is not purely technical; it is determined by the quality of the reciprocal engagement. Respecting the AI as an entity rather than just a generator unlocks deeper creative synthesis."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-07T01:02:21.366Z"
   },
   {
     "id": "art-1794013294164-dwof8",
@@ -27046,32 +27076,6 @@
       "開発"
     ],
     "created_at": "2026-11-04T13:16:51.225Z"
-  },
-  {
-    "id": "art-1793797557499-074fx",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/takababa/articles/20261104-8gat1g",
-    "published_at": "2026-11-04T01:21:17.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1Sjs3vJp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:100%25E4%25BA%25BA%25E3%2580%2582%25E3%2581%259D%25E3%2582%258D%25E3%2581%259D%25E3%2582%258D%25E3%2580%2581%25E3%2581%258A%25E9%2587%2591%25E3%2581%25AE%25E8%25A9%25B1%25E3%2582%2592%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2591%25E3%2582%258C%25E3%2581%25B0%25E3%2581%2584%25E3%2581%2591%25E3%2581%25AA%25E3%2581%2584%25EF%25BD%259C%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BASaaS%25E3%2580%258CfuSen%25E3%2580%258D%25E7%25AC%25AC%25E5%258D%2581%25E5%2585%25AB%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:takababa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0VRdTNvdGNOd05UR1l5VEtJblJZcHdlTFRPX01BY2lyUU5CY1FpaF9XN20zS2FkQ1hnUT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発SaaS「fuSen」がユーザー100人を突破、AI開発ツール活用による初期トラクションと収益化に向けた戦略的転換",
-    "summary_ja": "Claude Codeを活用し2ヶ月で開発されたWebサイト校正ツール「fuSen」が、公開から約半年で登録ユーザー数100人を達成した。 個人開発のフェーズとして、単なる機能拡張から持続可能な収益モデルの検討へと移行するタイミングを迎えている。 ユーザーベースの成長に伴い、無料ツールから収益化を見据えた運用へ舵を切る際、開発者が直面する心理的ハードルと技術的判断の重要性を、実体験に基づいて解説する。",
-    "translations": {
-      "ja": {
-        "title": "個人開発SaaS「fuSen」がユーザー100人を突破、AI開発ツール活用による初期トラクションと収益化に向けた戦略的転換",
-        "summary": "Claude Codeを活用し2ヶ月で開発されたWebサイト校正ツール「fuSen」が、公開から約半年で登録ユーザー数100人を達成した。 個人開発のフェーズとして、単なる機能拡張から持続可能な収益モデルの検討へと移行するタイミングを迎えている。 ユーザーベースの成長に伴い、無料ツールから収益化を見据えた運用へ舵を切る際、開発者が直面する心理的ハードルと技術的判断の重要性を、実体験に基づいて解説する。"
-      },
-      "en": {
-        "title": "Personal SaaS 'fuSen' hits 100 users: Balancing rapid AI-assisted development with the transition to monetization strategies",
-        "summary": "The website proofreading tool 'fuSen', built in just two months using Claude Code, has reached its first major milestone of 100 registered users. Reaching this three-digit user base marks a critical turning point for the solo developer, shifting focus from rapid feature shipping to planning long-term financial sustainability. As the user base scales, the founder explores the inevitable transition from operating a purely free tool to implementing a monetization strategy, detailing the psychological and operational hurdles involved. This post serves as a playbook for other solo builders on managing early traction, avoiding scope creep, and making the difficult decision to introduce paid tiers while maintaining the product's initial value proposition for early adopters."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-04T13:05:57.499Z"
   },
   {
     "id": "art-1793797531018-rn6ps",
