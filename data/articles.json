@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794248254658-bki0y",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/malachi_amb/articles/ad203556e2522d",
+    "published_at": "2026-11-09T15:44:16.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--6UcKpDo0--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Docker%2520%25E3%2581%25A7%2520AnyModelBot%2520%25E3%2582%2592%25E7%25AB%258B%25E3%2581%25A6%25E3%2580%2581%2560%252Fmodel%2560%2520%25E3%2581%25A7%25E5%2588%2587%25E3%2582%258A%25E6%259B%25BF%25E3%2581%2588%25E3%2580%2581journal.jsonl%2520%25E3%2581%25A7%25E8%25A8%2598%25E6%2586%25B6...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Malachi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvbS5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "DockerでAnyModelBotを構築：モデル切り替えとjournal.jsonlでAIの「記憶」を管理・追跡する実用的な手順",
+    "summary_ja": "AnyModelBot（Node.js/TypeScript製）をDockerで立ち上げ、`/model`コマンドによるモデル切り替えや、`journal.jsonl`を用いた会話履歴・記憶の可視化を実践する手順を解説。 公式イメージ（x64/arm64対応）を使用し、初回ログインからデータ永続化までのセットアップを網羅。 特定のLLMに依存せず、運用しながらボットの記憶の変遷をログファイルで直接追うための、開発者向けの実装リファレンスである。",
+    "translations": {
+      "ja": {
+        "title": "DockerでAnyModelBotを構築：モデル切り替えとjournal.jsonlでAIの「記憶」を管理・追跡する実用的な手順",
+        "summary": "AnyModelBot（Node.js/TypeScript製）をDockerで立ち上げ、`/model`コマンドによるモデル切り替えや、`journal.jsonl`を用いた会話履歴・記憶の可視化を実践する手順を解説。 公式イメージ（x64/arm64対応）を使用し、初回ログインからデータ永続化までのセットアップを網羅。 特定のLLMに依存せず、運用しながらボットの記憶の変遷をログファイルで直接追うための、開発者向けの実装リファレンスである。"
+      },
+      "en": {
+        "title": "Building AnyModelBot with Docker: A hands-on guide to switching LLMs and tracking AI 'memory' via journal.jsonl",
+        "summary": "This guide demonstrates deploying AnyModelBot—a Node.js and TypeScript project—using the official Docker image to manage AI interactions and memory. You will learn the process for initializing x64/arm64 containers, authenticating via the UI token, and utilizing the `/model` command to hot-swap LLMs during runtime. Crucially. For builders, the durable takeaway is to treat AI tooling as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-09T18:17:34.658Z"
+  },
+  {
+    "id": "art-1794248246386-0a2l7",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/esuby/n/ne6d665b36d86",
+    "published_at": "2026-11-09T16:20:42.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/347129f6cf24e8406f51fd8258f9fa7cdb58a872.png",
+    "title_ja": "個人開発者が3Dゲーム制作へ舵切り：Unityの「年商2000万円未満は無料」ポリシーで開発のハードルが激減",
+    "summary_ja": "これまでGitHub Copilotを活用したブラウザゲームの模倣開発で技術研究を行ってきたが、既存のコードの模倣には限界を感じ、オリジナル3Dゲームの開発へと方針を転換した。 3Dエンジン導入の懸念点だったコスト面も、Geminiを通じてUnityが年商2000万円未満のインディーズ開発者には無料で開放されていることを再確認した。 個人開発においてコストを抑えつつ、本格的な3D開発環境へ移行できる選択肢が広がっている。",
+    "translations": {
+      "ja": {
+        "title": "個人開発者が3Dゲーム制作へ舵切り：Unityの「年商2000万円未満は無料」ポリシーで開発のハードルが激減",
+        "summary": "これまでGitHub Copilotを活用したブラウザゲームの模倣開発で技術研究を行ってきたが、既存のコードの模倣には限界を感じ、オリジナル3Dゲームの開発へと方針を転換した。 3Dエンジン導入の懸念点だったコスト面も、Geminiを通じてUnityが年商2000万円未満のインディーズ開発者には無料で開放されていることを再確認した。 個人開発においてコストを抑えつつ、本格的な3D開発環境へ移行できる選択肢が広がっている。"
+      },
+      "en": {
+        "title": "Individual Dev Pivots to 3D Games: Unity's Free Tier for Indie Revenue Under $20M Lowers the Barrier to Entry",
+        "summary": "After researching browser game development by cloning mechanics with GitHub Copilot, the author decided that imitation has hit a ceiling and is now pivoting to building original 3D games. A major roadblock was the perceived cost of 3D engines, but a query to Gemini clarified that Unity is essentially free for indie developers generating less than $20 million in annual revenue. This revelation fundamentally changes the feasibility of pursuing 3D projects without significant upfront capital. For solo builders, this highlights how quickly licensing models can evolve, and why checking current tier requirements is critical before dismissing professional tools that were historically considered too expensive for hobbyists or small-scale indie ventures."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-09T18:17:26.386Z"
+  },
+  {
+    "id": "art-1794248224974-kxut4",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.propublica.org/article/burgum-public-land-data-centers-investments",
+    "published_at": "2026-11-09T18:09:00.000Z",
+    "og_image_url": "https://www.propublica.org/wp-content/uploads/2026/10/GettyImages-2279873492_8445f6.jpg?resize=2000,1050",
+    "title_ja": "米次期政権候補バーガム氏、公有地へのデータセンター設置を推進しつつ自身はAI関連株に1000万ドル超を投資",
+    "summary_ja": "米エネルギー長官候補ダグ・バーガム氏が、公有地を利用したデータセンター建設を強く推進している。 一方で同氏は、AI企業やデータセンター事業者などを含むAI関連銘柄に1000万ドル（約15億円）以上を投資していることが判明した。 国家のインフラ開発政策が個人の資産運用と直接的に交差する事態は、テック業界における利益相反リスクや政策の公平性を巡る懸念を浮き彫りにしている。",
+    "translations": {
+      "ja": {
+        "title": "米次期政権候補バーガム氏、公有地へのデータセンター設置を推進しつつ自身はAI関連株に1000万ドル超を投資",
+        "summary": "米エネルギー長官候補ダグ・バーガム氏が、公有地を利用したデータセンター建設を強く推進している。 一方で同氏は、AI企業やデータセンター事業者などを含むAI関連銘柄に1000万ドル（約15億円）以上を投資していることが判明した。 国家のインフラ開発政策が個人の資産運用と直接的に交差する事態は、テック業界における利益相反リスクや政策の公平性を巡る懸念を浮き彫りにしている。"
+      },
+      "en": {
+        "title": "US Energy Secretary Pick Burgum Pushes Data Centers on Public Lands While Holding $10M+ in AI Assets",
+        "summary": "Doug Burgum, the nominee for US Energy Secretary, is actively advocating for new data center construction on public lands, a policy move that would directly benefit the massive AI sector. Financial disclosures reveal that Burgum holds over $10 million in AI-adjacent investments, including significant stakes in tech corporations and infrastructure firms that stand to gain from rapid data center expansion. This convergence of national energy policy with personal financial interests highlights significant concerns regarding conflicts of interest in high-stakes infrastructure planning. For builders operating in the AI and cloud space, this intersection of lobbying, public policy, and personal investment suggests that regulatory tailwinds for power-hungry compute infrastructure may be prioritized, potentially reshaping the competitive landscape for AI training and energy procurement."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-09T18:17:04.974Z"
+  },
+  {
+    "id": "art-1794248216447-x2loa",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.711",
+    "published_at": "2026-11-09T18:09:21.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "FirecrawlがAPIイメージ v2.11.711を公開、ウェブクローリング基盤の安定性とデータ抽出精度の向上へ",
+    "summary_ja": "Firecrawlが最新のAPIイメージ「v2.11.711」をリリースした。 今回のアップデートでは、複雑なウェブ構造からのデータ抽出能力とクローリング基盤の安定性が大幅に強化されている。 開発者は、LLM向けデータの取得やRAG構築において、より信頼性の高いスクレイピング環境を利用可能だ。 データの鮮度や構造化の正確さがAIアプリケーションの品質を左右する現在の開発トレンドにおいて、安定したインフラ基盤の維持は不可欠な差別化要因となる。",
+    "translations": {
+      "ja": {
+        "title": "FirecrawlがAPIイメージ v2.11.711を公開、ウェブクローリング基盤の安定性とデータ抽出精度の向上へ",
+        "summary": "Firecrawlが最新のAPIイメージ「v2.11.711」をリリースした。 今回のアップデートでは、複雑なウェブ構造からのデータ抽出能力とクローリング基盤の安定性が大幅に強化されている。 開発者は、LLM向けデータの取得やRAG構築において、より信頼性の高いスクレイピング環境を利用可能だ。 データの鮮度や構造化の正確さがAIアプリケーションの品質を左右する現在の開発トレンドにおいて、安定したインフラ基盤の維持は不可欠な差別化要因となる。"
+      },
+      "en": {
+        "title": "Firecrawl rolls out API image v2.11.711, focusing on improved scraping stability and extraction accuracy for RAG pipelines",
+        "summary": "Firecrawl has officially released its latest API image, v2.11.711, targeting improved stability and enhanced extraction accuracy for developers navigating complex web architectures. This update refines the underlying crawling engine, ensuring more reliable data ingestion for LLM-ready pipelines and RAG implementations. As AI applications increasingly rely on the quality and structure of retrieved web data, keeping scraping infrastructure robust is a critical operational requirement for engineers. By leveraging these precise, updated extraction methods, developers can minimize parsing errors and ensure their downstream models consume cleaner, more accurate context. This release underscores the ongoing necessity for specialized tooling in maintaining high-performance data pipelines when building at scale in an evolving AI-first development ecosystem."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-09T18:16:56.447Z"
+  },
+  {
     "id": "art-1794247421456-s4knr",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -11769,33 +11875,6 @@
     "created_at": "2026-11-08T11:31:49.451Z"
   },
   {
-    "id": "art-1794136626646-csnin",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/good_snipe326/n/nfb2c903f03f4",
-    "published_at": "2026-11-08T11:12:47.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/24095df3b12d7c0588d62f165b481bc39fee19da.png",
-    "title_ja": "個人開発アプリのSNS運用をAIエージェントで完全自動化—兎沢氏が実践する3媒体連携術と炎上・誤爆を防ぐ「運用停止ルール」の全貌",
-    "summary_ja": "個人開発アプリ「SQUISH LAB」を運営する兎沢氏は、3つのSNSアカウント運用をAIエージェントに全面的に委託し、開発時間を確保する仕組みを構築した。 媒体ごとに異なるペルソナを設定し、投稿・返信・拡散を自動化する一方で、不適切な発言や炎上を未然に防ぐための「即時停止条件リスト」を厳格に定義している。 AIによるマーケティングの効率化は重要だが、個人のプロダクト運用ではリスク回避を自動化プロセスに組み込むことが持続可能な開発の必須要件となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発アプリのSNS運用をAIエージェントで完全自動化—兎沢氏が実践する3媒体連携術と炎上・誤爆を防ぐ「運用停止ルール」の全貌",
-        "summary": "個人開発アプリ「SQUISH LAB」を運営する兎沢氏は、3つのSNSアカウント運用をAIエージェントに全面的に委託し、開発時間を確保する仕組みを構築した。 媒体ごとに異なるペルソナを設定し、投稿・返信・拡散を自動化する一方で、不適切な発言や炎上を未然に防ぐための「即時停止条件リスト」を厳格に定義している。 AIによるマーケティングの効率化は重要だが、個人のプロダクト運用ではリスク回避を自動化プロセスに組み込むことが持続可能な開発の必須要件となる。"
-      },
-      "en": {
-        "title": "Automating Indie App Social Media with AI Agents: A Blueprint for Managing Cross-Platform Workflows and Risk",
-        "summary": "Uzawa, developer of the app SQUISH LAB, has fully automated social media operations across three platforms using AI agents to reclaim valuable development time. The workflow includes tailored personas for each channel, automating daily posts, replies, and engagement cycles. Crucially, the system is governed by a strict \"emergency stop\" checklist designed to trigger if the AI generates off-brand content or sparks controversy, preventing reputational damage. For solo builders, the takeaway is that marketing automation isn't just about scaling volume; it is about embedding rigorous guardrails into the agentic workflow. Integrating these \"stop conditions\" ensures that AI-driven growth doesn't become a liability that requires manual crisis management."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-08T11:17:06.646Z"
-  },
-  {
     "id": "art-1794135748651-ujmv9",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -15466,33 +15545,6 @@
     "created_at": "2026-11-07T21:16:38.697Z"
   },
   {
-    "id": "art-1794085317871-657qn",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://genlang-v.github.io/GenDB-V/",
-    "published_at": "2026-11-07T20:54:43.000Z",
-    "og_image_url": null,
-    "title_ja": "AI生成されたデータベースエンジンを形式手法で検証する「GenDB-V」が登場、設計ミスゼロのDB開発へ",
-    "summary_ja": "GenDB-Vは、LLMで生成されたデータベースエンジンに対し、形式検証（formal verification）を適用することでバグを排除し信頼性を担保する新しいアプローチだ。 AIによるコード生成の手軽さと、厳密な数学的証明による安全性を両立させる仕組みとなっている。 DBのインフラ層においてAIがコードを書く時代、不完全な実装を機械的に修正・検証できるこの技術は、ミッションクリティカルなシステムの堅牢性を高める次世代の標準となり得る。",
-    "translations": {
-      "ja": {
-        "title": "AI生成されたデータベースエンジンを形式手法で検証する「GenDB-V」が登場、設計ミスゼロのDB開発へ",
-        "summary": "GenDB-Vは、LLMで生成されたデータベースエンジンに対し、形式検証（formal verification）を適用することでバグを排除し信頼性を担保する新しいアプローチだ。 AIによるコード生成の手軽さと、厳密な数学的証明による安全性を両立させる仕組みとなっている。 DBのインフラ層においてAIがコードを書く時代、不完全な実装を機械的に修正・検証できるこの技術は、ミッションクリティカルなシステムの堅牢性を高める次世代の標準となり得る。"
-      },
-      "en": {
-        "title": "GenDB-V introduces AI-generated database engines integrated with formal verification to ensure mathematically proven reliability and zero logical bugs",
-        "summary": "GenDB-V represents a significant leap in infrastructure engineering by combining LLM-based database engine generation with rigorous formal verification frameworks. The project addresses the core weakness of AI-generated code by applying mathematical proofs to ensure that generated database operations are logically sound and bug-free before deployment. By blending the rapid prototyping capabilities of generative AI with the reliability of formally verified systems, this approach creates a verifiable pipeline for complex infrastructure components. As developers increasingly rely on AI for writing low-level system code, GenDB-V offers a critical blueprint for mission-critical reliability, allowing teams to ship AI-authored systems without sacrificing the safety, consistency, or predictable performance required in database architectures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-07T21:01:57.871Z"
-  },
-  {
     "id": "art-1794085295224-1y3vx",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -18132,32 +18184,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-07T05:31:42.366Z"
-  },
-  {
-    "id": "art-1794028630076-xk9vs",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/shoyomayabot/articles/verbalize-preferences-for-ai",
-    "published_at": "2026-11-06T22:09:10.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cVVunVpc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E4%25BA%25BA%25E3%2581%258C%25E7%25B7%25A8%25E9%259B%2586%25E3%2581%2597%25E3%2581%259F%25E6%2584%259F%25E3%2581%2598%25E3%2580%258D%25E3%2582%2592AI%25E3%2581%25AB%25E4%25BC%259D%25E3%2581%2588%25E3%2582%258B%25EF%25BC%259A%25E5%25A5%25BD%25E3%2581%25BF%25E3%2582%2592%25E8%25A8%2580%25E8%25AA%259E%25E5%258C%2596%25E3%2581%2597%25E3%2581%25A6%25E6%258C%2587%25E7%25A4%25BA%25E3%2581%25AB%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2599%25E3%2582%25B3%25E3%2583%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mayabot%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvcy5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI動画編集の「なんか違う」を解消する：過剰な演出を削ぎ落とし、人間の好みをプロンプトに落とし込む具体的メソッド",
-    "summary_ja": "AIによる動画編集で発生しがちな「AIっぽさ」——過剰な集中線や無意味なズーム、演出の積み重ねによる違和感——を解消するための指示改善術を解説する。 単に「もっと良くして」と修正を頼むのではなく、何が不要で、どのような意図が欠けているかを言語化するプロセスが重要だ。 AIのデフォルト設定を一度リセットし、人間が本来意図していた「間」や「温度感」を構造的にプロンプトへ組み込むことで、AIの成果物の質を飛躍的に高めることができる。",
-    "translations": {
-      "ja": {
-        "title": "AI動画編集の「なんか違う」を解消する：過剰な演出を削ぎ落とし、人間の好みをプロンプトに落とし込む具体的メソッド",
-        "summary": "AIによる動画編集で発生しがちな「AIっぽさ」——過剰な集中線や無意味なズーム、演出の積み重ねによる違和感——を解消するための指示改善術を解説する。 単に「もっと良くして」と修正を頼むのではなく、何が不要で、どのような意図が欠けているかを言語化するプロセスが重要だ。 AIのデフォルト設定を一度リセットし、人間が本来意図していた「間」や「温度感」を構造的にプロンプトへ組み込むことで、AIの成果物の質を飛躍的に高めることができる。"
-      },
-      "en": {
-        "title": "Beyond the 'AI Look': A Concrete Framework for Translating Your Creative Nuance into Effective AI Video Editing Prompts",
-        "summary": "Many creators struggle with 'AI-ish' video edits—oversaturated with jarring zoom effects, unnecessary captions, and chaotic sound design that feels synthetic. This article breaks down a specific workflow for moving past generic, low-quality revisions by replacing vague feedback like 'make it better' with precise, actionable language. Instead of simply requesting more effects, the author demonstrates how to audit AI outputs by identifying specific pacing issues and stylistic mismatches. By isolating the 'why' behind your aesthetic dissatisfaction—such as unnatural silence or mismatched rhythm—you can codify these subjective preferences into structural instructions. This shift in mindset transforms AI from a generic generator into a tool that respects and executes on your specific creative intent."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "動画",
-      "開発"
-    ],
-    "created_at": "2026-11-07T05:17:10.076Z"
   },
   {
     "id": "art-1794026790149-ddvlr",
@@ -44897,32 +44923,6 @@
       "研究"
     ],
     "created_at": "2026-10-29T14:16:27.267Z"
-  },
-  {
-    "id": "art-1793282513940-zwx0w",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/smart-jelly",
-    "published_at": "2026-10-28T10:57:05.000Z",
-    "og_image_url": null,
-    "title_ja": "Mac向け統合AIツール「Smart Jelly」登場、日常タスクの自動化とコンテキストメモリ管理を単一アプリでシームレスに実現",
-    "summary_ja": "「Smart Jelly」は、個々のAIツールを行き来する手間を省き、日常のワークフローをMac上で統合するAIアシスタントだ。 特筆すべきはアプリ全体でコンテキストを保持するメモリ機能で、過去の作業内容を踏まえた最適な提案を即座に行える。 断片化されがちなAI活用環境を一つにまとめ、特定のツールに縛られずOSレベルで生産性を引き上げたいMacユーザーには見逃せない選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "Mac向け統合AIツール「Smart Jelly」登場、日常タスクの自動化とコンテキストメモリ管理を単一アプリでシームレスに実現",
-        "summary": "「Smart Jelly」は、個々のAIツールを行き来する手間を省き、日常のワークフローをMac上で統合するAIアシスタントだ。 特筆すべきはアプリ全体でコンテキストを保持するメモリ機能で、過去の作業内容を踏まえた最適な提案を即座に行える。 断片化されがちなAI活用環境を一つにまとめ、特定のツールに縛られずOSレベルで生産性を引き上げたいMacユーザーには見逃せない選択肢となる。"
-      },
-      "en": {
-        "title": "Smart Jelly launches as a centralized Mac AI assistant, unifying scattered everyday workflows and context memory into a single desktop interface",
-        "summary": "Smart Jelly aims to eliminate the friction of juggling multiple AI tools by consolidating everyday digital workflows into a unified, Mac-native experience. The standout feature is its system-wide context memory engine, which allows the assistant to recall past interactions and project details to provide relevant suggestions across different applications. By synthesizing disparate AI workflows into one centralized hub, Smart Jelly tackles the fragmentation often found in modern AI-assisted work, ensuring users don't have to context-switch between browser tabs or specific platform dashboards. For Mac power users struggling to organize their AI-driven tasks, this tool represents a shift toward more coherent, memory-aware computing that works directly within the OS environment rather than living in isolation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-29T14:01:53.940Z"
   },
   {
     "id": "art-1793281589992-06czf",
