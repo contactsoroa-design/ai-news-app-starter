@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794240130240-tpq08",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/veripsa/articles/graph-cochange-review-benchmark",
+    "published_at": "2026-11-09T12:41:17.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Bk0ZIJi---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Git%25E3%2581%25A7%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25A7%25E3%2581%258D%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AB%25E5%25A3%258A%25E3%2582%258C%25E3%2582%258B%25E2%2580%2595%25E2%2580%2595%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%2595%25E3%2581%25A8Co-change%25E3%2582%25924%25E4%25BE%258B%25E3%2581%25A7%25E6%25A4%259C%25E8%25A8%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:RollNuts%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE3NzhiM2VlNmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Gitでマージ可能でも動かない「論理的破壊」を可視化。自作解析エンジンVeripsa CoreによるコードグラフとCo-changeの検証",
+    "summary_ja": "Git上でコンフリクトなくマージできても、結合後のコードが正常に動作する保証はない。 本記事では、コードの構造的関係を示す「コードグラフ」と、履歴ベースの関連性を示す「Co-change」という2つのアプローチを比較・検証する。 自作の解析エンジン「Veripsa Core」を用い、4つの合成例を通じてマージ成功と実行成功が一致しないケースを具体的に提示。 開発者は、単なるGitのマージ結果だけでなく、論理的な依存関係や実行結果を分けて評価する手法を学ぶべきだ。",
+    "translations": {
+      "ja": {
+        "title": "Gitでマージ可能でも動かない「論理的破壊」を可視化。自作解析エンジンVeripsa CoreによるコードグラフとCo-changeの検証",
+        "summary": "Git上でコンフリクトなくマージできても、結合後のコードが正常に動作する保証はない。 本記事では、コードの構造的関係を示す「コードグラフ」と、履歴ベースの関連性を示す「Co-change」という2つのアプローチを比較・検証する。 自作の解析エンジン「Veripsa Core」を用い、4つの合成例を通じてマージ成功と実行成功が一致しないケースを具体的に提示。 開発者は、単なるGitのマージ結果だけでなく、論理的な依存関係や実行結果を分けて評価する手法を学ぶべきだ。"
+      },
+      "en": {
+        "title": "Why clean Git merges fail: Visualizing logical breakage with Code Graphs and Co-change analysis via Veripsa Core",
+        "summary": "Git might report a clean merge, yet the resulting codebase often fails to function as intended due to hidden logical dependencies. This article investigates the gap between syntactic merging and functional integrity by comparing Code Graphs, which map structural relationships, against Co-change, which tracks historical modification patterns. Using the custom-built analysis engine Veripsa Core, the author presents four synthetic case studies to demonstrate that merge success does not equate to execution success. Builders learn how to disentangle the differences between simple merge logic and complex code relationships, ultimately discovering that relying solely on version control metadata is insufficient. The key takeaway is to evaluate structural dependencies and historical change patterns as separate, vital signals to prevent silent runtime failures in interdependent codebases."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-09T16:02:10.240Z"
+  },
+  {
+    "id": "art-1794240123836-xboxo",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://nokku.payanai.com/learn/courses/ai-assisted-coding-working-well-with-coding-agents",
+    "published_at": "2026-11-09T15:42:19.000Z",
+    "og_image_url": null,
+    "title_ja": "AIコーディングの極意：コーディングエージェントを最大限に活用し生産性を最大化するための実践的戦略",
+    "summary_ja": "コーディングエージェントとの協調作業では、AIに丸投げするのではなく、コンテキスト管理や適切なプロンプトエンジニアリングが重要となる。 本稿では、AIの能力を最大限に引き出しつつ、コード品質と可読性を維持するための「人間が主導するAI開発」のワークフローを解説する。 複雑なシステムをエージェントに任せる際の境界設定や、継続的な反復による開発プロセスの最適化手法など、実務で使える知見が凝縮されている。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングの極意：コーディングエージェントを最大限に活用し生産性を最大化するための実践的戦略",
+        "summary": "コーディングエージェントとの協調作業では、AIに丸投げするのではなく、コンテキスト管理や適切なプロンプトエンジニアリングが重要となる。 本稿では、AIの能力を最大限に引き出しつつ、コード品質と可読性を維持するための「人間が主導するAI開発」のワークフローを解説する。 複雑なシステムをエージェントに任せる際の境界設定や、継続的な反復による開発プロセスの最適化手法など、実務で使える知見が凝縮されている。"
+      },
+      "en": {
+        "title": "Mastering AI-Assisted Coding: Practical Strategies for Collaborating Effectively with Modern Coding Agents and Improving Output",
+        "summary": "Working effectively with coding agents requires more than just submitting prompts; it demands deliberate context management and structured oversight. This guide outlines a human-in-the-loop workflow designed to maximize agentic productivity while ensuring code quality and maintainability remain high. The article details how to set clear boundaries when handing off complex system logic and emphasizes iterative development cycles to keep AI outputs aligned with project requirements. For builders, the key takeaway is that agents are force multipliers, not replacements, and success depends on how well you architect your prompt inputs and verify the resulting logic. Mastering these patterns allows developers to scale their output significantly without sacrificing the long-term integrity of their codebase."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-09T16:02:03.836Z"
+  },
+  {
+    "id": "art-1794240117525-8gue0",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/dreamy_egret4511/n/n9c64b20aa2c1",
+    "published_at": "2026-11-09T16:01:27.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/334267608/rectangle_large_type_2_12c5a6eb79ad95f08e1283a1e60bd221.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "副業の迷走を終わらせる：生成AIと自動化を組み合わせた収益化システム構築テンプレートと運用ガイド【完全保存版】",
+    "summary_ja": "副業で成果が出ない原因は「手作業」の多さと戦略の不在にある。 本ガイドは、生成AIと自動化ツールを組み合わせ、コンテンツ制作から顧客対応までをシステム化する実践的なテンプレートを網羅的に解説する。 単なる効率化ではなく、売上を生み出し続ける「自動収益基盤」を構築することが、迷走を脱却し安定的な個人開発を実現する唯一の道となる。",
+    "translations": {
+      "ja": {
+        "title": "副業の迷走を終わらせる：生成AIと自動化を組み合わせた収益化システム構築テンプレートと運用ガイド【完全保存版】",
+        "summary": "副業で成果が出ない原因は「手作業」の多さと戦略の不在にある。 本ガイドは、生成AIと自動化ツールを組み合わせ、コンテンツ制作から顧客対応までをシステム化する実践的なテンプレートを網羅的に解説する。 単なる効率化ではなく、売上を生み出し続ける「自動収益基盤」を構築することが、迷走を脱却し安定的な個人開発を実現する唯一の道となる。"
+      },
+      "en": {
+        "title": "Breaking Free from Side Hustle Stagnation: A Comprehensive Guide to Building Scalable Revenue Systems with Generative AI and Automation",
+        "summary": "Most side hustlers struggle because they rely on manual workflows rather than strategic systems. This comprehensive guide details a framework for integrating generative AI with automation tools to systematize everything from high-volume content production to customer support operations. Instead of just chasing temporary efficiency gains, the approach emphasizes building a sustainable revenue engine that operates without constant manual intervention. By deploying these specific templates and operational guidelines, developers can transition away from inconsistent freelance work toward a structured, predictable income stream. For builders aiming to scale solo projects, the primary takeaway is that the architecture of your automation stack is just as critical as the quality of the product itself for long-term growth."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-09T16:01:57.525Z"
+  },
+  {
+    "id": "art-1794240107837-l55sr",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.708",
+    "published_at": "2026-11-09T15:49:15.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、APIイメージv2.11.708を公開：Webスクレイピングの安定性向上と大規模データ抽出の精度改善を実施",
+    "summary_ja": "Firecrawlは最新のAPIイメージ「v2.11.708」を公開し、Webスクレイピング処理の安定性と大規模なデータ抽出における抽出精度を強化した。 今回のアップデートでは、複雑なサイト構造を持つターゲットからのデータ取得失敗率を低減し、LLM向けのクリーンなデータ準備をより効率化している。 AIエージェントの開発者は、最新イメージへの移行により、スクレイピング基盤の信頼性を一段階引き上げることが可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、APIイメージv2.11.708を公開：Webスクレイピングの安定性向上と大規模データ抽出の精度改善を実施",
+        "summary": "Firecrawlは最新のAPIイメージ「v2.11.708」を公開し、Webスクレイピング処理の安定性と大規模なデータ抽出における抽出精度を強化した。 今回のアップデートでは、複雑なサイト構造を持つターゲットからのデータ取得失敗率を低減し、LLM向けのクリーンなデータ準備をより効率化している。 AIエージェントの開発者は、最新イメージへの移行により、スクレイピング基盤の信頼性を一段階引き上げることが可能だ。"
+      },
+      "en": {
+        "title": "Firecrawl launches API image v2.11.708, delivering enhanced scraping stability and improved data extraction accuracy for large-scale crawling",
+        "summary": "Firecrawl has released API image version v2.11.708, focusing on significant stability upgrades and higher precision for large-scale web scraping tasks. This update addresses common parsing failures when interacting with complex, non-standard DOM structures, ensuring that output data remains cleaner and more consistent for downstream LLM consumption. By fine-tuning the extraction logic, developers can reduce retry rates and handle heavier crawling loads with fewer infrastructure interruptions. For builders relying on Firecrawl to power their AI agent pipelines, this release serves as a critical performance baseline upgrade. Integrating this latest image ensures that your data ingestion layer remains robust against anti-bot challenges and evolving site layouts while maintaining higher overall data fidelity during high-volume operations."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-09T16:01:47.837Z"
+  },
+  {
     "id": "art-1794239237753-9smxc",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -11497,33 +11603,6 @@
     "created_at": "2026-11-08T09:46:51.911Z"
   },
   {
-    "id": "art-1794131205592-5upw1",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/a_mi_chemin/n/nbd6fba39d897",
-    "published_at": "2026-11-08T09:05:35.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333700896/rectangle_large_type_2_8f90f29ea077d59fe13dfbc00c794f9a.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "金星の接近とMMXプロジェクトの展望：2026年探査機打ち上げに向けた最新アップデートと軌道力学の考察",
-    "summary_ja": "2026年に打ち上げが計画されている火星衛星探査機「MMX」に向け、金星の軌道や天体との接近が注目を集めている。 地球と併走するかのような金星の動きは、惑星間航行における軌道投入やスイングバイの難しさと可能性を象徴している。 探査プロジェクトにおいて、このような天体配置の理解はミッションの成功率を大きく左右する。 技術者や個人開発者は、こうした宇宙探査の動向を追うことで、大規模プロジェクトにおけるタイミングの重要性と、複雑な制約下での計画策定の知見を深めることができるだろう。",
-    "translations": {
-      "ja": {
-        "title": "金星の接近とMMXプロジェクトの展望：2026年探査機打ち上げに向けた最新アップデートと軌道力学の考察",
-        "summary": "2026年に打ち上げが計画されている火星衛星探査機「MMX」に向け、金星の軌道や天体との接近が注目を集めている。 地球と併走するかのような金星の動きは、惑星間航行における軌道投入やスイングバイの難しさと可能性を象徴している。 探査プロジェクトにおいて、このような天体配置の理解はミッションの成功率を大きく左右する。 技術者や個人開発者は、こうした宇宙探査の動向を追うことで、大規模プロジェクトにおけるタイミングの重要性と、複雑な制約下での計画策定の知見を深めることができるだろう。"
-      },
-      "en": {
-        "title": "Venus orbital dynamics and the MMX 2026 mission: Preparing for upcoming Martian exploration and interplanetary trajectory planning",
-        "summary": "As the MMX (Martian Moons eXploration) mission approaches its 2026 launch window, recent observations regarding Venus’s orbital proximity offer a compelling look at the complexities of interplanetary navigation. The visual phenomenon of Venus pacing alongside Earth highlights the intricate gravity-assist maneuvers and precise launch windows required for deep-space success. Understanding these orbital mechanics is essential for mission safety, ensuring probes reach their targets while maximizing fuel efficiency. For builders and engineers, this mission serves as a masterclass in long-term project management under extreme, non-negotiable constraints. Studying the MMX trajectory planning provides valuable insights into how to handle high-stakes synchronization in distributed systems where timing, latency, and environmental conditions are absolutely critical to ultimate operational viability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-08T09:46:45.592Z"
-  },
-  {
     "id": "art-1794130312302-ar6og",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -15534,31 +15613,6 @@
     "created_at": "2026-11-07T18:46:57.191Z"
   },
   {
-    "id": "art-1794077201005-swah7",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.puglieseweb.com/blog/architecture-as-truth",
-    "published_at": "2026-11-07T18:37:04.000Z",
-    "og_image_url": "https://www.puglieseweb.com/images/blog/architecture-as-truth-og-brand.jpg",
-    "title_ja": "AIの普及で全エンジニアが昇格した時代に求められる「Architecture as Truth（AAT）」という新たな職務の定義",
-    "summary_ja": "AIコーディングツールが普及し、誰でもコードを書けるようになった現代では、単純な実装能力ではなく「システム全体のアーキテクチャこそが真実である」と見なす考え方が重要になっている。 AIが生成した断片的なコードを繋ぎ合わせるだけでは、長期的には技術的負債が蓄積する。 エンジニアは実装の自動化を前提としつつ、システム全体の整合性と意図を厳格に定義・管理する「Architecture as Truth（AAT）」へと役割をシフトすべきだ。",
-    "translations": {
-      "ja": {
-        "title": "AIの普及で全エンジニアが昇格した時代に求められる「Architecture as Truth（AAT）」という新たな職務の定義",
-        "summary": "AIコーディングツールが普及し、誰でもコードを書けるようになった現代では、単純な実装能力ではなく「システム全体のアーキテクチャこそが真実である」と見なす考え方が重要になっている。 AIが生成した断片的なコードを繋ぎ合わせるだけでは、長期的には技術的負債が蓄積する。 エンジニアは実装の自動化を前提としつつ、システム全体の整合性と意図を厳格に定義・管理する「Architecture as Truth（AAT）」へと役割をシフトすべきだ。"
-      },
-      "en": {
-        "title": "Why 'Architecture as Truth' is the critical new mandate for engineers in an era where AI promotes everyone",
-        "summary": "As AI coding tools proliferate and lower the barrier to entry, the role of the engineer is shifting away from mere implementation toward a discipline defined as 'Architecture as Truth' (AAT). When AI can generate functional code snippets effortlessly, the danger is no longer writing the code itself, but managing the fragmented, incoherent systems that result from unguided generation. AAT argues that the architecture is the only single source of truth that guarantees long-term maintainability. Engineers must pivot from being code generators to acting as architects who define, enforce, and maintain the system's structural integrity. For modern builders, this shift is the necessary defense against the inevitable accumulation of technical debt produced by AI-assisted development workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-07T18:46:41.005Z"
-  },
-  {
     "id": "art-1794076346380-gnosl",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -18391,32 +18445,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-07T00:31:30.607Z"
-  },
-  {
-    "id": "art-1794010679796-ezg11",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/futoka/articles/ai-agent-effort-four-clocks",
-    "published_at": "2026-11-06T14:38:51.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9pXflsQc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BA%25BA%25E9%2596%25933%25E5%2588%2586%25E3%2580%2581AI48%25E5%2588%2586%25E3%2580%2582%25E3%2581%2593%25E3%2582%258C%25E3%2581%25AF%25E4%25BD%2595%25E5%2588%2586%25E3%2581%25AE%25E4%25BB%2595%25E4%25BA%258B%25E3%2581%258B%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2595%25E3%2583%2588%25E3%2582%25B7%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRmYmZmMzJhYWIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI開発の生産性を正しく測るための「作業時間」定義論：人間3分・AI48分のタスクをどう評価すべきか",
-    "summary_ja": "AIを活用した開発において「作業時間」をどう定義すべきかという議論が注目されている。 人間が指示を出す3分、AIが実装・テストを行う48分、そして人間がレビューする5分を合わせた合計時間を「プロジェクト期間」と捉えるべきか、あるいは純粋な「エンジニアの工数」のみを評価すべきか。 AI時代の開発現場では、単純な労働時間だけではなく、AIの推論時間や待ち時間を含めたワークフロー全体の可視化が、真の生産性向上のために不可欠となる。",
-    "translations": {
-      "ja": {
-        "title": "AI開発の生産性を正しく測るための「作業時間」定義論：人間3分・AI48分のタスクをどう評価すべきか",
-        "summary": "AIを活用した開発において「作業時間」をどう定義すべきかという議論が注目されている。 人間が指示を出す3分、AIが実装・テストを行う48分、そして人間がレビューする5分を合わせた合計時間を「プロジェクト期間」と捉えるべきか、あるいは純粋な「エンジニアの工数」のみを評価すべきか。 AI時代の開発現場では、単純な労働時間だけではなく、AIの推論時間や待ち時間を含めたワークフロー全体の可視化が、真の生産性向上のために不可欠となる。"
-      },
-      "en": {
-        "title": "Redefining Developer Productivity in the AI Era: Why Measuring Human Time Versus AI Processing Time Matters",
-        "summary": "As AI agents become core to the coding lifecycle, the industry needs a standardized metric for 'work duration.' If a human spends three minutes prompting, while an AI takes forty-eight minutes to code and test, followed by five minutes of review, conflating these distinct buckets leads to broken productivity KPIs. Should we track engineering effort, total system throughput, or the wall-clock time from prompt to completion? For tech leads and indie builders, the takeaway is that raw human hours are no longer a sufficient proxy for velocity. Optimizing for developer experience now requires tracking the full workflow latency, including wait times and AI context-switching, to truly understand if AI is accelerating delivery or merely shifting the bottleneck."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-07T00:17:59.796Z"
   },
   {
     "id": "art-1794010646264-rzm1y",
@@ -27039,33 +27067,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-04T12:46:57.225Z"
-  },
-  {
-    "id": "art-1793795881409-jkkgf",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/taski_app/articles/13-supabase-edge-functions-security-hardening",
-    "published_at": "2026-11-04T02:18:32.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--I2sJ9JWk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BASaaS%25E3%2580%2591Edge%2520Functions%25E3%2581%25AE%25E3%2580%258C%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2597%25E3%2583%25B3%25E3%2583%25A1%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%25AA%25E3%2583%25AC%25E3%2583%25BC%25E3%2580%258D%25E3%2581%25A8%25E3%2580%258Ccron%25E8%25AA%258D%25E8%25A8%25BC%25E3%2583%2590%25E3%2582%25A4%25E3%2583%2591%25E3%2582%25B9%25E3%2580%258D%25E3%2582%2592%25E5%25A1%259E%25E3%2581%2584%25E3%2581%25A0%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A8%25E3%2582%2582%2520%252F%2520Taski%25E9%2596%258B%25E7%2599%25BA%25E8%2580%2585%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhjNzFkMDUyNjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Supabase Edge Functionsの脆弱性事例：メールリレー不正利用とcron認証バイパスを防ぐための防衛策",
-    "summary_ja": "個人開発SaaS「Taski」の運営者が、Supabase Edge Functions運用で見落としがちなセキュリティの盲点を解説。 JWT認証を通せば安全という過信から、外部からの不正メールリレーや意図しないcron実行を許してしまった教訓を共有する。 サーバーレス環境であっても、公開エンドポイントごとの認証チェックの実装や、APIキーの適切な管理・アクセス制限を徹底することが、個人開発において不可欠な防御策となる。",
-    "translations": {
-      "ja": {
-        "title": "Supabase Edge Functionsの脆弱性事例：メールリレー不正利用とcron認証バイパスを防ぐための防衛策",
-        "summary": "個人開発SaaS「Taski」の運営者が、Supabase Edge Functions運用で見落としがちなセキュリティの盲点を解説。 JWT認証を通せば安全という過信から、外部からの不正メールリレーや意図しないcron実行を許してしまった教訓を共有する。 サーバーレス環境であっても、公開エンドポイントごとの認証チェックの実装や、APIキーの適切な管理・アクセス制限を徹底することが、個人開発において不可欠な防御策となる。"
-      },
-      "en": {
-        "title": "Supabase Edge Functions security audit: Blocking open mail relays and unauthorized cron triggers in SaaS",
-        "summary": "The developer behind the SaaS tool Taski shares a critical security retrospective on securing Supabase Edge Functions. Relying solely on default Gateway JWT authentication led to vulnerabilities where endpoints were exposed to open mail relay abuse and unauthenticated cron triggers. The piece warns that even in serverless architectures, developers cannot assume platform-level security is enough. The core lesson is to implement granular authentication checks on every public endpoint and enforce strict API key scoping. For solo builders, this is a vital reminder that backend logic exposed via Edge Functions must be hardened against external calls to prevent service abuse, unauthorized data exfiltration, or unexpected cost spikes from malicious task execution."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-04T12:38:01.409Z"
   },
   {
     "id": "art-1793795859798-qeq1r",
