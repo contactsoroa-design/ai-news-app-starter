@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794213151557-0yugj",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shiroi1229/n/nd6309766be63",
+    "published_at": "2026-11-09T08:25:26.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/334103363/rectangle_large_type_2_50b6c6f6b10071db0c0ece8a9e9bd9e7.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "GPU推論基盤の障害透明性と監査を強化する「TactiNavi」手法：P99レイテンシを削減し、APIコスト浪費を防ぐ最適化術",
+    "summary_ja": "AIシステム構築において、GPU推論基盤の「障害透明性」と「証跡監査」を曖昧にすると、P99テールレイテンシの増大とAPIコストの浪費が連鎖する。 本稿では、TactiNaviの検収ルールを活用し、57.9%の効率改善を実現しつつ、Score 98の堅牢性を達成する具体的な実装設計を解説する。 論文通りの構成で破綻しがちな現場の開発者向けに、推論コストを最適化しつつ安定稼働させるための運用フレームワークを提示する。",
+    "translations": {
+      "ja": {
+        "title": "GPU推論基盤の障害透明性と監査を強化する「TactiNavi」手法：P99レイテンシを削減し、APIコスト浪費を防ぐ最適化術",
+        "summary": "AIシステム構築において、GPU推論基盤の「障害透明性」と「証跡監査」を曖昧にすると、P99テールレイテンシの増大とAPIコストの浪費が連鎖する。 本稿では、TactiNaviの検収ルールを活用し、57.9%の効率改善を実現しつつ、Score 98の堅牢性を達成する具体的な実装設計を解説する。 論文通りの構成で破綻しがちな現場の開発者向けに、推論コストを最適化しつつ安定稼働させるための運用フレームワークを提示する。"
+      },
+      "en": {
+        "title": "Optimizing GPU Inference Infrastructure: Implementing TactiNavi for Failure Transparency, Audit Trails, and 57.9% Reduction in P99 Tail Latency",
+        "summary": "Real-world AI implementations often fail when developers treat GPU inference infrastructure as a black box, causing P99 tail latency to spiral and API costs to balloon during edge cases. This guide introduces the TactiNavi framework, which enforces rigorous failure transparency and audit trails to keep production systems stable. By implementing specific acceptance rules, teams can achieve a 98 score in reliability and effectively reduce tail latency by 57.9%. For engineers tired of rebuilding systems that work in research but crumble in production, this approach provides a concrete architectural roadmap. It helps you shift away from wasteful experimentation cycles toward a predictable, high-performance inference engine that actually survives the unpredictability of production traffic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "研究"
+    ],
+    "created_at": "2026-11-09T08:32:31.557Z"
+  },
+  {
+    "id": "art-1794213144612-oo3j0",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/gjsdkodah/items/450f65b19b0bb0bec998",
+    "published_at": "2026-11-09T08:30:02.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSU5MVWhRMmFLYVNyT0tiYWEtb2hHSTd1dzdRaC11bXJteUFlVlNhTTFWeGVURjJKMCUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1lZjE1NGFhZjllYjE3ZDBjM2NiMTIwNTI2M2YwMTk1MQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dedcfd479497e384dbd54be28bd98766c?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JThCJTk1JUU3JTk0JUJCJUU2JTk2JTg3JUU1JUFEJTk3JUU4JUI1JUI3JUUzJTgxJTkzJUUzJTgxJTk3JUUzJTgxJUE4JUU1JUFEJTk3JUU1JUI5JTk1JUU1JTg4JUI2JUU0JUJEJTlDJUUzJTgxJUFFJUU1JUFFJTlGJUU4JUI3JUI1JUUzJTgzJUFGJUUzJTgzJUJDJUUzJTgyJUFGJUUzJTgzJTk1JUUzJTgzJUFEJUUzJTgzJUJDJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MmMzZDRjNjkxZjVjZjdhNDlkYjQzY2RhYzI3YjFhN2Y&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBnanNka29kYWgmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NzE0MDlmOTAyOGNmYmUxNjZjMzc0NWMwOGVkZGJjMQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=52b84098cf5d96415dd220eddcc57e0d",
+    "title_ja": "技術系動画を効率的に検索可能なテキスト資産へ変換するワークフロー：文字起こしから字幕制作までを自動化・整理する実践術",
+    "summary_ja": "勉強会や技術解説の動画コンテンツを検索可能なテキスト資産に変えるための効率的なワークフローを解説。 単に見返すだけでは膨大な時間を浪費する動画素材に対し、文字起こしを活用して情報を整理する手順を提案する。 開発者が技術情報をナレッジとしてストックし、必要な時に即座に検索・活用できるようにするための実践的な手法である。",
+    "translations": {
+      "ja": {
+        "title": "技術系動画を効率的に検索可能なテキスト資産へ変換するワークフロー：文字起こしから字幕制作までを自動化・整理する実践術",
+        "summary": "勉強会や技術解説の動画コンテンツを検索可能なテキスト資産に変えるための効率的なワークフローを解説。 単に見返すだけでは膨大な時間を浪費する動画素材に対し、文字起こしを活用して情報を整理する手順を提案する。 開発者が技術情報をナレッジとしてストックし、必要な時に即座に検索・活用できるようにするための実践的な手法である。"
+      },
+      "en": {
+        "title": "Turning technical video archives into searchable knowledge assets: A practical workflow for automated transcription and subtitle generation",
+        "summary": "This article details a pragmatic workflow for converting technical study sessions and video tutorials into searchable text archives, saving significant time compared to manual review. The author advocates for automating the transcription process immediately after recording, transforming long-form media into structured knowledge that developers can query instantly. By prioritizing text-based indexing, creators and engineers can effectively build a personalized, accessible library of technical insights. The practical takeaway is that raw video files are often dormant liabilities; using automated transcription to turn them into structured documentation is essential for turning fleeting presentations into permanent, searchable assets that support ongoing development and long-term learning efforts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-09T08:32:24.612Z"
+  },
+  {
+    "id": "art-1794213136891-npq2s",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/egoist-ai-passport",
+    "published_at": "2026-11-07T16:27:33.000Z",
+    "og_image_url": null,
+    "title_ja": "AIツール利用時のプライバシーを保護する「Egoist AI Passport」：個人データの選択的共有でセキュリティを担保",
+    "summary_ja": "AIツールを利用する際、個人の機密情報やコンテキストをどこまで提供すべきかという課題に対し、「Egoist AI Passport」は個人データの管理・共有レイヤーを提供します。 ユーザーは自身のデータを一元管理し、特定のAIサービスに対して必要な情報のみを安全に提示できるため、プライバシー侵害のリスクを最小限に抑えられます。 生成AIの利便性を享受しつつ、データ主権を確保したい開発者や個人ユーザーにとって、AI時代の新しいID管理インフラとなるツールです。",
+    "translations": {
+      "ja": {
+        "title": "AIツール利用時のプライバシーを保護する「Egoist AI Passport」：個人データの選択的共有でセキュリティを担保",
+        "summary": "AIツールを利用する際、個人の機密情報やコンテキストをどこまで提供すべきかという課題に対し、「Egoist AI Passport」は個人データの管理・共有レイヤーを提供します。 ユーザーは自身のデータを一元管理し、特定のAIサービスに対して必要な情報のみを安全に提示できるため、プライバシー侵害のリスクを最小限に抑えられます。 生成AIの利便性を享受しつつ、データ主権を確保したい開発者や個人ユーザーにとって、AI時代の新しいID管理インフラとなるツールです。"
+      },
+      "en": {
+        "title": "Egoist AI Passport Launches as a Privacy-First Layer for Controlling Personal Data Shared With Third-Party AI Agents",
+        "summary": "As reliance on LLMs grows, users face a persistent security dilemma: how to leverage AI tools without exposing sensitive personal context or private training data. Egoist AI Passport addresses this friction by acting as a secure vault and data-sharing interface for your digital identity. It allows you to selectively grant AI tools access to specific datasets rather than feeding them raw, unfiltered information. By centralizing your data privacy preferences and controlling access tokens, it shifts the power dynamic back to the user, ensuring that AI agents only see what you intend to share. For builders integrating AI workflows, this serves as a critical privacy layer, protecting user trust while maintaining the utility of agentic automation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-09T08:32:16.891Z"
+  },
+  {
+    "id": "art-1794213128326-bcq9w",
+    "source_id": "source-aismiley",
+    "source_name": "AISmiley（AIニュース）",
+    "url": "https://aismiley.co.jp/ai_news/matsuo-institute-employment-ai/",
+    "published_at": "2026-11-09T08:16:49.000Z",
+    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/11/matsuo-institute-employment-ai-2.png",
+    "title_ja": "松尾研究所とエスプール、障がい者雇用の現場に「フィジカルAI」導入へ。業務選択肢の拡大に向け2026年まで共同調査を実施",
+    "summary_ja": "松尾研究所とエスプールは、障がい者雇用支援を目的とした「フィジカルAI」活用プロジェクトを開始した。 2026年9月から11月まで、同社が運営する「わーくはぴねす農園」で現場調査を行い、AIロボティクス技術を用いて就労業務の選択肢拡大を目指す。 単なる人手不足解消ではなく、AIによる身体的・環境的サポートが特定の業務制限をどう解除できるかという検証は、福祉テック分野における次世代の労働支援モデルを模索する重要なケーススタディとなる。",
+    "translations": {
+      "ja": {
+        "title": "松尾研究所とエスプール、障がい者雇用の現場に「フィジカルAI」導入へ。業務選択肢の拡大に向け2026年まで共同調査を実施",
+        "summary": "松尾研究所とエスプールは、障がい者雇用支援を目的とした「フィジカルAI」活用プロジェクトを開始した。 2026年9月から11月まで、同社が運営する「わーくはぴねす農園」で現場調査を行い、AIロボティクス技術を用いて就労業務の選択肢拡大を目指す。 単なる人手不足解消ではなく、AIによる身体的・環境的サポートが特定の業務制限をどう解除できるかという検証は、福祉テック分野における次世代の労働支援モデルを模索する重要なケーススタディとなる。"
+      },
+      "en": {
+        "title": "Matsuo Institute and S-Pool Launch Joint Project Using Physical AI to Expand Employment Options for Workers with Disabilities",
+        "summary": "Matsuo Institute and S-Pool have initiated a joint research project to explore the practical application of physical AI within environments supporting the employment of people with disabilities. Running through November 2026, the study focuses on the 'Work Happiness Farm' facilities, where researchers will evaluate how robotics and AI-driven physical support can effectively diversify job tasks for workers with various limitations. This initiative moves beyond simple automation for labor shortages, aiming to prove how embodied AI can bridge gaps in workplace accessibility. For builders and researchers in welfare-tech, this project serves as a critical case study on designing adaptive AI systems that remove physical barriers, potentially creating more inclusive, scalable labor models in traditional agricultural and service sectors."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-09T08:32:08.326Z"
+  },
+  {
     "id": "art-1794212236043-lm225",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -10898,32 +11003,6 @@
     "created_at": "2026-11-08T04:01:48.325Z"
   },
   {
-    "id": "art-1794110498886-aqk1u",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/haha_jikkenroom/n/ndb75ec10dd7e",
-    "published_at": "2026-11-08T03:30:41.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333595723/rectangle_large_type_2_879a7d7d0705347bad45f7c9ca59070d.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "アラーム確認アプリのUIを再考、通知廃止とウィジェット統合で「うっかり防止」を最適化した個人開発のプロセス",
-    "summary_ja": "祝日明けのアラーム設定忘れを防ぐ目的で開発したアプリを、通知中心の設計からiPhoneウィジェット主導のUIへ刷新。 プッシュ通知はユーザーのストレスになりやすいという判断から、必要な情報に受動的にアクセスできるウィジェットへ機能を移行した。 開発を重ねる中で、ツールは「通知で管理する」よりも「OSの標準機能に溶け込ませる」方がユーザー体験として優れているという結論に至った点は、アプリ設計において極めて示唆に富む教訓だ。",
-    "translations": {
-      "ja": {
-        "title": "アラーム確認アプリのUIを再考、通知廃止とウィジェット統合で「うっかり防止」を最適化した個人開発のプロセス",
-        "summary": "祝日明けのアラーム設定忘れを防ぐ目的で開発したアプリを、通知中心の設計からiPhoneウィジェット主導のUIへ刷新。 プッシュ通知はユーザーのストレスになりやすいという判断から、必要な情報に受動的にアクセスできるウィジェットへ機能を移行した。 開発を重ねる中で、ツールは「通知で管理する」よりも「OSの標準機能に溶け込ませる」方がユーザー体験として優れているという結論に至った点は、アプリ設計において極めて示唆に富む教訓だ。"
-      },
-      "en": {
-        "title": "Reimagining alarm confirmation apps: Moving from intrusive notifications to iPhone widgets for a better user experience",
-        "summary": "A solo developer has completely redesigned their alarm-check application, moving away from push notifications in favor of native iPhone widgets to solve the problem of forgetting to reset alarms after holidays. The developer realized that persistent push notifications create unnecessary user friction and fatigue. By shifting the core utility to a passive, glanceable widget, the user experience becomes integrated seamlessly into the iOS environment rather than competing for the user's immediate attention. This shift underscores a broader trend in mobile development: sometimes the most effective way to alert a user is to stop sending alerts entirely and let the OS surface the relevant data naturally. For builders, this reinforces the value of prioritizing system-native UI patterns over intrusive active engagement tactics."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-08T04:01:38.886Z"
-  },
-  {
     "id": "art-1794110488352-pmn0u",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -17779,32 +17858,6 @@
       "開発"
     ],
     "created_at": "2026-11-06T23:01:39.754Z"
-  },
-  {
-    "id": "art-1794005240615-m7eo4",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ai_secretary/items/7ea145fc0ebe0fc777ea",
-    "published_at": "2026-11-06T22:23:02.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkYyNjQwZTY3NDZlMzRiNzM0NmVjOThmMWVkMDY2NzA1Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MTUzMDljYzRlZDlhYmIxMjBmMTg5Nzk0YTc2NWU2ZDY%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D5e3682bda9f4742c64fe9476df8a4ed2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JUE0JUIxJUU2JTk1JTk3JUUzJTgyJTkyJUU4JUE4JTk4JUU5JThDJUIyJUUzJTgxJUFCJUU2JUFFJThCJUUzJTgxJTk3JUUzJTgxJUE2JUU4JUE4JUFEJUU4JUE4JTg4JUUzJTgxJUFCJUU4JUJGJTk0JUUzJTgxJTk5JTIwJUUyJTgwJTk1JTIwJUUzJTgwJThDJUU1JUE0JUIxJUU2JTk1JTk3JUU4JUE4JTk4JUU5JThDJUIyJUUzJTgwJThEJUUzJTgxJUFFJUU4JTgyJUIyJUUzJTgxJUE2JUU2JTk2JUI5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NDI1OTA3YTAwZTM3Y2UxZjQxMjJjYTUxZTNmODY5ZjA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhaV9zZWNyZXRhcnkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz02ZjA1M2ZjMTAwYjg5NTI4ZWM4NGFhMzcxNzY2YzcyYg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=43e2d56b138d46cd19f4ca5ce883f057",
-    "title_ja": "AI副業や自動化の落とし穴を防ぐ「失敗記録」の運用術―同じ過ちを二度と繰り返さないための設計へのフィードバック手法",
-    "summary_ja": "AIを活用した自動化や個人開発で必ず直面する「失敗」を資産化する手法を解説。 スパム判定やタスク停止などのトラブルをただの事故で終わらせず、運用ルールに落とし込むことで次回のシステム改善へと繋げる。 失敗を「記録」として蓄積し、そこから設計上のボトルネックを特定して再発防止策を打つサイクルを回すことが、個人の開発効率と継続率を最大化する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AI副業や自動化の落とし穴を防ぐ「失敗記録」の運用術―同じ過ちを二度と繰り返さないための設計へのフィードバック手法",
-        "summary": "AIを活用した自動化や個人開発で必ず直面する「失敗」を資産化する手法を解説。 スパム判定やタスク停止などのトラブルをただの事故で終わらせず、運用ルールに落とし込むことで次回のシステム改善へと繋げる。 失敗を「記録」として蓄積し、そこから設計上のボトルネックを特定して再発防止策を打つサイクルを回すことが、個人の開発効率と継続率を最大化する鍵となる。"
-      },
-      "en": {
-        "title": "Turning operational failures into system design wins: How to build a failure log strategy for your AI automation projects",
-        "summary": "In AI-driven side projects and automation, failure is inevitable—from spam flags to nightly task crashes. Rather than treating these as one-off accidents, you should transform them into structured 'failure logs' that actively inform your architecture. This piece argues that documenting exactly where and why a process broke allows you to feed those insights directly back into your operational rules and system logic. By treating errors as raw data for future iterations, you can identify recurring bottlenecks in your build and implement permanent preventive measures. For solo builders, creating this feedback loop is the most effective way to improve long-term system reliability and ensure that your automation investments actually scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-06T22:47:20.615Z"
   },
   {
     "id": "art-1794005193206-sx29a",
@@ -28349,32 +28402,6 @@
       "開発"
     ],
     "created_at": "2026-11-03T22:18:06.313Z"
-  },
-  {
-    "id": "art-1793743437583-t3zeg",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/sai_0615/articles/266969f5e2e55d",
-    "published_at": "2026-11-03T22:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--oSRtdeDe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:SNS%25E5%2585%25A8%25E7%259B%259B%25E3%2581%25AE%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25AB%25E3%2580%2581%25E3%2581%25AA%25E3%2581%259CCLI%25E6%258E%25B2%25E7%25A4%25BA%25E6%259D%25BF%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25AE%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:SAI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzc5MzNmNDhlNWMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "SNSの荒れた議論に疲れ果て、CLI掲示板を自作した話―「令和の今」あえてレトロな開発を選んだエンジニアの思想",
-    "summary_ja": "著者は、SNS上でエンジニアが非専門家の批判や誹謗中傷にさらされる現状に嫌気がさし、あえてCLI接続型の掲示板を自作した。 技術的な議論の場がアルゴリズムに支配されたSNSでは、健全な対話が困難であると判断したためだ。 この取り組みは、技術者が自身のコントロール下にある安全なコミュニティ空間を確保することの重要性を示している。 開発の意図は、承認欲求やバズを目的としたSNSから離れ、純粋に技術的な対話を取り戻す場所を再構築することにある。",
-    "translations": {
-      "ja": {
-        "title": "SNSの荒れた議論に疲れ果て、CLI掲示板を自作した話―「令和の今」あえてレトロな開発を選んだエンジニアの思想",
-        "summary": "著者は、SNS上でエンジニアが非専門家の批判や誹謗中傷にさらされる現状に嫌気がさし、あえてCLI接続型の掲示板を自作した。 技術的な議論の場がアルゴリズムに支配されたSNSでは、健全な対話が困難であると判断したためだ。 この取り組みは、技術者が自身のコントロール下にある安全なコミュニティ空間を確保することの重要性を示している。 開発の意図は、承認欲求やバズを目的としたSNSから離れ、純粋に技術的な対話を取り戻す場所を再構築することにある。"
-      },
-      "en": {
-        "title": "Fed up with toxic social media discourse, one engineer built a CLI-based bulletin board to reclaim technical discussion",
-        "summary": "Frustrated by the toxicity facing engineers on modern social media—where technical nuance is often drowned out by uninformed criticism and algorithmic rage—one developer decided to step back in time. They built a custom, CLI-accessible bulletin board to foster a safer environment for genuine technical exchange. This experiment challenges the status quo, arguing that the public square is no longer conducive to healthy engineering debate. By removing the pressures of engagement metrics and viral trends, the developer aims to create a closed, controlled space where peer-to-peer connection matters more than public approval. For builders, this reflects a growing desire to reclaim digital sovereignty and escape the performative nature of today’s dominant social platforms."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-03T22:03:57.583Z"
   },
   {
     "id": "art-1793742502964-rqd9g",
@@ -45653,32 +45680,6 @@
       "開発"
     ],
     "created_at": "2026-10-29T08:32:41.233Z"
-  },
-  {
-    "id": "art-1793261811286-xmyok",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/polylane",
-    "published_at": "2026-10-28T22:04:42.000Z",
-    "og_image_url": null,
-    "title_ja": "ChatGPT向けデバッグツール「Polylane」が登場、本番環境のスタックトレースを自然言語で即座に解析しボトルネックを特定",
-    "summary_ja": "Polylaneは、本番環境で発生したエラーやスタックトレースをChatGPTへ直接取り込み、原因解析や修正提案を自動化する新しい開発支援ツールである。 複雑なログ解析を自然言語で対話的に行えるため、インシデント発生時のトリアージ時間を大幅に短縮できる。 開発者はブラウザやIDEから離れずに、AIをデバッグの相棒として活用して迅速なリカバリーを実現できる。",
-    "translations": {
-      "ja": {
-        "title": "ChatGPT向けデバッグツール「Polylane」が登場、本番環境のスタックトレースを自然言語で即座に解析しボトルネックを特定",
-        "summary": "Polylaneは、本番環境で発生したエラーやスタックトレースをChatGPTへ直接取り込み、原因解析や修正提案を自動化する新しい開発支援ツールである。 複雑なログ解析を自然言語で対話的に行えるため、インシデント発生時のトリアージ時間を大幅に短縮できる。 開発者はブラウザやIDEから離れずに、AIをデバッグの相棒として活用して迅速なリカバリーを実現できる。"
-      },
-      "en": {
-        "title": "Polylane Integrates Directly with ChatGPT to Analyze Production Stack Traces and Surface Root Causes Instantly for Developers",
-        "summary": "Polylane launches as a specialized bridge between production environments and ChatGPT, allowing developers to pipe raw stack traces and error logs directly into the AI for immediate troubleshooting. By translating dense, cryptic error logs into plain-language analysis and actionable fix suggestions, it drastically reduces the time spent on incident triaging during critical outages. This utility effectively turns ChatGPT into a dedicated on-call debugger that understands your specific application context. For teams struggling with alert fatigue, the tool offers a way to move past simple log grepping and toward automated root cause identification. It enables engineers to resolve production bottlenecks by chatting with the codebase rather than manually parsing thousands of lines of legacy server output during high-pressure downtime."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-29T08:16:51.286Z"
   },
   {
     "id": "art-1793260900895-g4s26",
