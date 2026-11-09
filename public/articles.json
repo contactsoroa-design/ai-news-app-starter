@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1794203210676-2ui3t",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tasukina/articles/unattended-claude-code-bash-permissions",
+    "published_at": "2026-11-09T04:10:40.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--gEz8CUWF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2584%25A1%25E4%25BA%25BA%25E3%2581%25A7%25E5%259B%259E%25E3%2581%2599%2520Claude%2520Code%2520%25E3%2581%25AE%2520Bash%2520%25E3%2582%2592%25E3%2580%2581settings.json%2520%25E3%2581%25AE%2520permissions%2520%25E3%2581%25A7%25E3%2582%25B3...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25BF%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25BC%25E3%2583%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTFNibm9FRkpaenBORkJKZ2Y1dEhzaS0xYTNhT2VQQmdubU1KMjdwcW1DTnF3S1JXRT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeを無人で運用するための安全な設定：permissionsで実行可能コマンドをきめ細かく制御するセキュリティ実装術",
+    "summary_ja": "Claude Codeを深夜の自動運用などで活用する際、全権限を許可するとセキュリティリスクが高まり、制限しすぎると処理が停止するジレンマがある。 本記事では、settings.jsonのpermissions設定を活用し、実行可能なコマンドの種類を絞り込む具体的な手法を解説する。 特にgit push等の危険な操作を特定のパターンで拒否・許可する方法は、自動化環境の安全を確保する上で必須の知識となる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを無人で運用するための安全な設定：permissionsで実行可能コマンドをきめ細かく制御するセキュリティ実装術",
+        "summary": "Claude Codeを深夜の自動運用などで活用する際、全権限を許可するとセキュリティリスクが高まり、制限しすぎると処理が停止するジレンマがある。 本記事では、settings.jsonのpermissions設定を活用し、実行可能なコマンドの種類を絞り込む具体的な手法を解説する。 特にgit push等の危険な操作を特定のパターンで拒否・許可する方法は、自動化環境の安全を確保する上で必須の知識となる。"
+      },
+      "en": {
+        "title": "Securing Headless Claude Code: Mastering permissions in settings.json to granularly restrict commands for unattended automation",
+        "summary": "Running Claude Code in unattended environments creates a security trade-off: broad permissions invite disaster, while over-restriction stalls progress. This guide demonstrates how to use the permissions field within settings.json to enforce granular command control. By defining strict allow/deny patterns for bash operations, you can safely automate tasks without human intervention. The author explains how to specifically target dangerous actions, like git push, while maintaining functional agility for background jobs. For builders relying on autonomous coding agents, this approach provides the necessary guardrails to ensure unattended executions are both efficient and secure, preventing unauthorized data exfiltration or destructive file operations while the agent works through its queue overnight."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-09T05:46:50.676Z"
+  },
+  {
+    "id": "art-1794203204438-svt5i",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.08640",
+    "published_at": "2026-11-09T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "LLMの推論精度を最大化する新手法「APT」：候補を多角的な側面から比較するトーナメント方式で「ベスト・オブ・N」の選択を最適化",
+    "summary_ja": "LLMの推論能力を向上させるために、複数の回答候補から最適解を選ぶ「ベスト・オブ・N」手法が一般的だが、単独評価には限界がある。 新手法の「APT（Aspect-wise Pairwise Tournaments）」は、人間が判断するように候補をペアで比較し、経験や正確性などの特定の観点に基づいて勝者を決めるトーナメント方式を採用する。 これにより、複雑なタスクにおける回答精度の向上が見込まれる。",
+    "translations": {
+      "ja": {
+        "title": "LLMの推論精度を最大化する新手法「APT」：候補を多角的な側面から比較するトーナメント方式で「ベスト・オブ・N」の選択を最適化",
+        "summary": "LLMの推論能力を向上させるために、複数の回答候補から最適解を選ぶ「ベスト・オブ・N」手法が一般的だが、単独評価には限界がある。 新手法の「APT（Aspect-wise Pairwise Tournaments）」は、人間が判断するように候補をペアで比較し、経験や正確性などの特定の観点に基づいて勝者を決めるトーナメント方式を採用する。 これにより、複雑なタスクにおける回答精度の向上が見込まれる。"
+      },
+      "en": {
+        "title": "APT Method Optimizes Best-of-N Selection for LLMs by Comparing Candidate Solutions via Aspect-wise Pairwise Tournaments",
+        "summary": "Scaling test-time compute through \"best-of-n\" sampling is effective, but picking the right solution from a pool remains difficult when done in isolation. The researchers introduce Aspect-wise Pairwise Tournaments (APT), a framework that mimics human decision-making by evaluating candidate pairs across specific dimensions—like technical accuracy or communication style—rather than scoring them as black boxes. By running these targeted tournaments, the system effectively filters for superior reasoning outcomes in complex tasks. For developers optimizing LLM inference pipelines, this shift from absolute scoring to comparative evaluation offers a robust mechanism to boost performance. APT suggests that as model reasoning tasks grow in complexity, integrating comparative evaluation logic into the post-generation phase will become essential for maintaining high-quality outputs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-09T05:46:44.438Z"
+  },
+  {
+    "id": "art-1794203194798-0zevw",
+    "source_id": "source-nvidia-ai",
+    "source_name": "NVIDIA Generative AI Blog",
+    "url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+    "published_at": "2026-11-09T05:00:00.000Z",
+    "og_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/11/dynamo-korea-ai-day.jpg",
+    "title_ja": "NVIDIA、「Dynamo」による韓国主要LLMの推論最適化レシピを公開――A.X K2やSolar Open 2のマルチGPU展開を高速化",
+    "summary_ja": "NVIDIAは、韓国を代表するオープンモデル（SK TelecomのA.X K2、LG AI ResearchのK-EXAONE 2.0、UpstageのSolar Open 2、Motif TechnologiesのMotif-3）を対象とした推論最適化レシピ「Dynamo」をリリースした。 モデルが単一GPUのメモリ容量を超える場合、マルチGPUへの分散配置とリクエストルーティングの調整が必須となる。",
+    "translations": {
+      "ja": {
+        "title": "NVIDIA、「Dynamo」による韓国主要LLMの推論最適化レシピを公開――A.X K2やSolar Open 2のマルチGPU展開を高速化",
+        "summary": "NVIDIAは、韓国を代表するオープンモデル（SK TelecomのA.X K2、LG AI ResearchのK-EXAONE 2.0、UpstageのSolar Open 2、Motif TechnologiesのMotif-3）を対象とした推論最適化レシピ「Dynamo」をリリースした。 モデルが単一GPUのメモリ容量を超える場合、マルチGPUへの分散配置とリクエストルーティングの調整が必須となる。"
+      },
+      "en": {
+        "title": "NVIDIA Dynamo Recipes Optimize Production Inference for Top Korean Open Models Including Solar Open 2 and A.X K2",
+        "summary": "NVIDIA has released a suite of Dynamo optimization recipes designed to simplify the deployment of leading Korean open models, specifically SK Telecom’s A.X K2, LG AI Research’s K-EXAONE 2.0, Upstage’s Solar Open 2, and Motif Technologies’ Motif-3. As these advanced models frequently exceed the capacity of a single GPU, they require complex tensor parallelization and highly coordinated request routing to run efficiently in production. The Dynamo framework automates these distribution bottlenecks, allowing builders to deploy multi-GPU models without writing custom low-level orchestration code. For teams aiming to integrate large-scale open source models into production environments, these recipes offer a direct path to slashing latency and engineering overhead, proving that infrastructure tooling is now as critical as the models themselves."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-09T05:46:34.798Z"
+  },
+  {
     "id": "art-1794202330594-dpoph",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -20320,32 +20398,6 @@
     "created_at": "2026-11-06T07:02:04.693Z"
   },
   {
-    "id": "art-1793947642883-0ce1u",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/yui10/articles/ai-society-basics-04-international-rules",
-    "published_at": "2026-11-06T05:24:15.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--w7Go4ryQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E5%259B%25BD%25E9%259A%259B%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25AE%25E5%259F%25BA%25E6%259C%25AC%2520%25E2%2580%2595%2520%25E5%2590%2584%25E5%259B%25BD%25E3%2581%25AE%25E8%25A6%258F%25E5%2588%25B6%25E3%2581%25A8%25E5%259B%25BD%25E9%259A%259B%25E5%258D%2594%25E8%25AA%25BF%25E3%2580%2590AI%25E3%2581%25A8%25E7%25A4%25BE%25E4%25BC%259A%25E3%2581%25AE%25E5%259F%25BA%25E6%259C%25AC%2520%25234%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yui10%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzEzYzc4NTkxZTUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI国際規制の現在地：OECD原則からG7広島プロセス、国連の科学パネルまで、2026年11月時点のグローバルガバナンス動向を概観",
-    "summary_ja": "AI開発が国境を越えて進む中、2016年の日本提案を起点とするOECD AI原則や、2023年のG7広島AIプロセスを通じた行動規範の策定が進行している。 現在は、英国主導のAIサミットが安全性から活用・包摂へと重点を移し、国連でも科学パネルが始動した。 AI製品をグローバル展開する開発者は、各国の法規制を個別に追うだけでなく、こうした国際的な協調フレームワークを理解し、ガバナンス対応を戦略に組み込む必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AI国際規制の現在地：OECD原則からG7広島プロセス、国連の科学パネルまで、2026年11月時点のグローバルガバナンス動向を概観",
-        "summary": "AI開発が国境を越えて進む中、2016年の日本提案を起点とするOECD AI原則や、2023年のG7広島AIプロセスを通じた行動規範の策定が進行している。 現在は、英国主導のAIサミットが安全性から活用・包摂へと重点を移し、国連でも科学パネルが始動した。 AI製品をグローバル展開する開発者は、各国の法規制を個別に追うだけでなく、こうした国際的な協調フレームワークを理解し、ガバナンス対応を戦略に組み込む必要がある。"
-      },
-      "en": {
-        "title": "Navigating the global AI regulatory landscape: A guide to the OECD principles, G7 Hiroshima Process, and UN science panels as of November 2026",
-        "summary": "As AI development transcends borders, international coordination is reshaping the regulatory landscape. Key milestones include the OECD AI principles, which originated from a 2016 Japanese proposal, and the G7 Hiroshima AI process that established specific guidelines for generative models. The ongoing series of AI summits, initially focused on safety, has shifted priorities toward inclusion and practical application, while the United Nations has simultaneously launched global science panels to synchronize cross-border policies. For builders launching AI products globally, simply monitoring individual country laws is insufficient. Understanding these overarching international frameworks is now a strategic necessity to ensure your governance model remains compliant and future-proof as global standards converge into unified regulatory expectations."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-06T06:47:22.883Z"
-  },
-  {
     "id": "art-1793947617725-g36er",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -20370,33 +20422,6 @@
       "開発"
     ],
     "created_at": "2026-11-06T06:46:57.725Z"
-  },
-  {
-    "id": "art-1793946733214-u5wjd",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ccq/articles/f4b4753676a017",
-    "published_at": "2026-11-06T00:20:27.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--I9Q5tpBd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520Agent%25E3%2581%258C%25E4%25BA%25BA%25E9%2596%2593%25E3%2582%2588%25E3%2582%258A%25E5%25A4%259A%25E3%2581%258F%25E5%258F%2596%25E5%25BC%2595%25E3%2581%2599%25E3%2582%258B%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25B8%25E3%2580%2582%25E4%25BB%258A%25E3%2580%2581AP2%25E3%2581%25AERuby%2520SDK%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ccq%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVZPSGZ4Ylo3SmxldklEVWt6X0JCVGNIWDEzampyX196d09hY25YRnZYRnRiaGx1dXdoZz1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェントが経済活動の主役になる未来へ──「AP2」対応Ruby SDK「ap2_mandate_verifier」を公開する理由",
-    "summary_ja": "AIエージェントが人間以上の頻度で検索や決済、契約を代行する経済圏が到来すると予測し、その基盤となる「AP2（Agent Protocol 2）」向けRuby SDK「ap2_mandate_verifier」を開発した。 AIによる自律的な取引が主流になる未来を見据え、現在人間が介在しているプロセスをAIが安全かつ正確に履行するための検証レイヤーが不可欠となる。 開発者は今のうちからAIエージェントの認証・検証プロトコルを実装・活用し、自律経済の到来に備えるべきだ。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントが経済活動の主役になる未来へ──「AP2」対応Ruby SDK「ap2_mandate_verifier」を公開する理由",
-        "summary": "AIエージェントが人間以上の頻度で検索や決済、契約を代行する経済圏が到来すると予測し、その基盤となる「AP2（Agent Protocol 2）」向けRuby SDK「ap2_mandate_verifier」を開発した。 AIによる自律的な取引が主流になる未来を見据え、現在人間が介在しているプロセスをAIが安全かつ正確に履行するための検証レイヤーが不可欠となる。 開発者は今のうちからAIエージェントの認証・検証プロトコルを実装・活用し、自律経済の到来に備えるべきだ。"
-      },
-      "en": {
-        "title": "Preparing for an AI-driven economy: Why I built a Ruby SDK for the AP2 Agent Protocol",
-        "summary": "As AI agents increasingly handle search, price comparison, and payments on behalf of humans, they will soon dominate transaction volume in our digital economy. To support this shift, I developed 'ap2_mandate_verifier,' a Ruby SDK for the Agent Protocol 2 (AP2). This library provides the essential verification layer needed to ensure agents can execute contracts and economic actions both safely and accurately. We are moving from a human-centric transactional model to one where autonomous agents handle the heavy lifting, making standard protocols for agent identity and mandate verification non-negotiable. For builders, the message is clear: start integrating these protocols now, because managing trust in agent-to-agent commerce will soon become a fundamental requirement for any serious backend architecture."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-06T06:32:13.214Z"
   },
   {
     "id": "art-1793946715119-xv5x0",
@@ -28411,33 +28436,6 @@
       "開発"
     ],
     "created_at": "2026-11-03T21:02:54.873Z"
-  },
-  {
-    "id": "art-1793738843431-wcvjn",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/toshi_hikidashi/books/ai-agent-handover-design",
-    "published_at": "2026-11-03T10:45:45.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OmDqzVXS--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci9hMzMwNWNkNDViLnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
-    "title_ja": "AIエージェントへの業務委譲設計：CLAUDE.mdの活用から、公開文書と実装の乖離を自動検知するチェック手法までを解説",
-    "summary_ja": "Claude Code等のAIエージェントに業務を継続させるための設計論をまとめた。 起動時に読み込ませる「CLAUDE.md」の整備や、現在地とログの分離、セッションフックを用いたメモリ管理、複数エージェント間の競合回避といった実戦的なワークフローを解説する。 後半では、AIエージェントを活用し、アプリの実装コードとプライバシーポリシー等の公開文書の食い違いを網羅的に洗い出す手法も提案。 数か月に及ぶ個人開発での運用経験に基づき、再利用可能なパターンに昇華させた内容だ。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントへの業務委譲設計：CLAUDE.mdの活用から、公開文書と実装の乖離を自動検知するチェック手法までを解説",
-        "summary": "Claude Code等のAIエージェントに業務を継続させるための設計論をまとめた。 起動時に読み込ませる「CLAUDE.md」の整備や、現在地とログの分離、セッションフックを用いたメモリ管理、複数エージェント間の競合回避といった実戦的なワークフローを解説する。 後半では、AIエージェントを活用し、アプリの実装コードとプライバシーポリシー等の公開文書の食い違いを網羅的に洗い出す手法も提案。 数か月に及ぶ個人開発での運用経験に基づき、再利用可能なパターンに昇華させた内容だ。"
-      },
-      "en": {
-        "title": "Designing AI agent handoffs: Leveraging CLAUDE.md and automated compliance audits for individual development workflows",
-        "summary": "This guide details architectural patterns for maintaining context across AI agent sessions, such as with Claude Code. It covers the strategic use of CLAUDE.md as an entry file, separating persistent logs from current state, and implementing session hooks to prevent memory loss and collisions between agents and human operators. The second half shifts to a practical application: using agents to automatically audit your codebase against public documentation like privacy policies and terms of service to expose discrepancies before release. By distilling months of personal development experience, the piece provides generalized, reusable patterns for building robust agent-first workflows. For independent builders, these techniques offer a scalable way to manage long-term state and maintain compliance documentation alongside rapid feature iteration."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-03T20:47:23.431Z"
   },
   {
     "id": "art-1793738019869-k0ujr",
