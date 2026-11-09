@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794194210845-xvwzc",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl/",
+    "published_at": "2026-11-09T03:06:55.000Z",
+    "og_image_url": "https://itsfoss.com/content/images/2026/11/asahi-linux-gpl.png",
+    "title_ja": "Asahi LinuxがライセンスをMITからGPLへ変更、未公開コードをAI学習に盗用される事態を受け決断",
+    "summary_ja": "Asahi Linuxプロジェクトは、ライセンスを従来のMITからGPLに変更した。 背景には、プロジェクトが公開・検証する前の未公開コードが、AI企業のスクレイピングによって無断で学習データとして利用された事実がある。 ソースコードの著作権を守り、AIによる無断利用を阻止するための法的な防御策として、コピーレフトの要件を持つGPLを採用することで、コミュニティの成果物を保護する狙いがある。",
+    "translations": {
+      "ja": {
+        "title": "Asahi LinuxがライセンスをMITからGPLへ変更、未公開コードをAI学習に盗用される事態を受け決断",
+        "summary": "Asahi Linuxプロジェクトは、ライセンスを従来のMITからGPLに変更した。 背景には、プロジェクトが公開・検証する前の未公開コードが、AI企業のスクレイピングによって無断で学習データとして利用された事実がある。 ソースコードの著作権を守り、AIによる無断利用を阻止するための法的な防御策として、コピーレフトの要件を持つGPLを採用することで、コミュニティの成果物を保護する狙いがある。"
+      },
+      "en": {
+        "title": "Asahi Linux switches from MIT to GPL to block AI firms from scraping unreleased source code",
+        "summary": "The Asahi Linux project has officially migrated its codebase from the permissive MIT license to the GPL, a direct response to AI companies scraping its repository for unreleased, experimental code to train commercial models. By adopting the GPL, the team mandates that any derivative works must remain open-source, effectively legally compelling AI developers to stop silent ingestion of their intellectual property. This shift underscores a growing friction between open-source maintainers and AI labs that harvest training data without attribution or reciprocity. For open-source builders, this move serves as a stark reminder that permissive licensing can be weaponized against your project; moving to a copyleft model is becoming a vital defense against unauthorized model training at the expense of your hard-earned engineering progress."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-09T03:16:50.845Z"
+  },
+  {
+    "id": "art-1794194203760-0ejyp",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/codecraft/articles/signal-vs-execution-spread",
+    "published_at": "2026-11-08T23:06:27.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--NswBgTq7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2587%25E3%2582%25A4%25E3%2583%2588%25E3%2583%25AC%25E3%2581%25AE%25E5%2590%2588%25E5%259B%25B3%25E3%2581%25AE%25E9%2580%2586%25E3%2582%2592%25E3%2582%2584%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E8%25B2%25A0%25E3%2581%2591%25E3%2581%259F%25E3%2580%2582%25E8%25B2%25A0%25E3%2581%2591%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AF%25E5%2590%2588%25E5%259B%25B3%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%258F%25E3%2580%2581%25E5%25A3%25B2%25E3%2582%258A%25E6%2596%25B9%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:CodeCraft%25EF%25BD%259C%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E3%2583%2588%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I3NThjMWQ2NjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "日本株デイトレBot検証：勝てなかった理由は「エントリー合図」ではなく「売り方」にあった。板情報を活かした損切りの重要性",
+    "summary_ja": "日本株デイトレードBotの開発において、数百通りの戦略をドライラン検証したが、どれも基準を達成できなかった。 しかし、再分析の結果、敗因はエントリー合図の精度ではなく、売り抜けのロジックが不適切であったことに起因すると判明した。 kabuステーションAPIで収集した1.5秒間隔の板データという資産を、購入判断には使えても売却タイミングの最適化には活用できていなかったことが教訓だ。",
+    "translations": {
+      "ja": {
+        "title": "日本株デイトレBot検証：勝てなかった理由は「エントリー合図」ではなく「売り方」にあった。板情報を活かした損切りの重要性",
+        "summary": "日本株デイトレードBotの開発において、数百通りの戦略をドライラン検証したが、どれも基準を達成できなかった。 しかし、再分析の結果、敗因はエントリー合図の精度ではなく、売り抜けのロジックが不適切であったことに起因すると判明した。 kabuステーションAPIで収集した1.5秒間隔の板データという資産を、購入判断には使えても売却タイミングの最適化には活用できていなかったことが教訓だ。"
+      },
+      "en": {
+        "title": "Why my stock trading bot failed: It wasn't the entry signals, but the exit strategy that killed the performance",
+        "summary": "After dry-running hundreds of strategies for my Japanese stock day-trading bot, I realized the consistent losses weren't caused by poor entry signals, but by my flawed exit logic. While I had been dutifully recording market depth and order book data via the kabuStation API every 1.5 seconds, I was only using this rich dataset for buy decisions, completely ignoring the crucial timing for sells. The data was there, but the application was lopsided. This failure highlights a critical lesson for bot builders: an entry strategy is only half the battle. To turn a losing bot into a profitable one, you must leverage your granular market data to automate disciplined, emotionless exits, transforming raw order book snapshots into active, profit-protecting sell triggers."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-09T03:16:43.760Z"
+  },
+  {
+    "id": "art-1794194196909-7p39y",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/whshido/articles/decisionrag-retriever-free-retrieval-explained",
+    "published_at": "2026-11-08T22:30:06.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--sjUI08Ry--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25A4%259C%25E7%25B4%25A2%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%25B3%25E3%2582%2592%25E4%25BD%25BF%25E3%2582%258F%25E3%2581%25AA%25E3%2581%2584RAG%25EF%25BC%259F%2520DecisionRAG%25E3%2581%25AE%25E8%25AB%2596%25E6%2596%2587%25E3%2582%2592%25E5%259B%25B3%25E8%25A7%25A3%25E3%2581%25A7%25E8%25AA%25AD%25E3%2582%2580%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:whshido%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwNDE0MjMzZmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "検索エンジン不要のRAG「DecisionRAG」：文書探索を意思決定モデルで代替する新しいAIアーキテクチャの論文解説",
+    "summary_ja": "従来のRAGは検索エンジン（Retriever）に依存して文書を抽出するが、Cornell大学らが発表した「DecisionRAG」は検索処理を排除し、意思決定モデルが直接文書間をナビゲートして必要な情報を抽出する。 検索精度やインデックス構築コストの課題を、LLM内部での「文書探索プロセス」に置き換えるアプローチだ。 検索漏れや関連性の低いChunk抽出に悩む開発者にとって、検索エンジンに依存しない検索基盤の新たな設計指針となる。",
+    "translations": {
+      "ja": {
+        "title": "検索エンジン不要のRAG「DecisionRAG」：文書探索を意思決定モデルで代替する新しいAIアーキテクチャの論文解説",
+        "summary": "従来のRAGは検索エンジン（Retriever）に依存して文書を抽出するが、Cornell大学らが発表した「DecisionRAG」は検索処理を排除し、意思決定モデルが直接文書間をナビゲートして必要な情報を抽出する。 検索精度やインデックス構築コストの課題を、LLM内部での「文書探索プロセス」に置き換えるアプローチだ。 検索漏れや関連性の低いChunk抽出に悩む開発者にとって、検索エンジンに依存しない検索基盤の新たな設計指針となる。"
+      },
+      "en": {
+        "title": "DecisionRAG: New architecture replaces traditional retrieval engines with decision models to navigate documents directly",
+        "summary": "The recently published DecisionRAG paper from Cornell University proposes a radical shift in RAG architectures by eliminating the retriever entirely. Instead of relying on traditional vector search or keyword engines to pull context, a dedicated decision model learns to navigate documents directly to extract relevant information. This approach effectively addresses common pain points in modern pipelines, such as indexing costs, semantic search failures, and the noise caused by irrelevant chunks. For developers struggling with the limitations of vector-based retrieval, this methodology demonstrates that treating document traversal as a sequential decision-making process can significantly improve accuracy. Moving forward, this implies that future-proofing RAG systems might depend less on search infrastructure and more on model-native navigation capabilities."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-09T03:16:36.909Z"
+  },
+  {
+    "id": "art-1794194190282-6k0f6",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/i-built-an-app-that-punishes-writers-if-they-don-t-write",
+    "published_at": "2026-11-08T13:40:34+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/ceya5cqnklrb07rgid4lxm6sbpjr",
+    "title_ja": "執筆を怠ると文章が消滅する。中毒的生産性アプリの個人開発者が語る「恐怖」を武器にしたゲーミフィケーションの極意",
+    "summary_ja": "執筆中に手が止まると自動的に文章が消去される「恐怖の生産性向上アプリ」が、作家やエンジニアの間で話題を呼んでいる。 このアプリは、甘い誘惑や先延ばしを排除するためにあえて「ペナルティ」を課すことで、強制的にフロー状態を作り出す設計だ。 ただ便利なツールを作るのではなく、ユーザーの心理的な弱さを逆手に取った「負の強化」こそが、飽和する productivity 市場で熱狂的な支持を集めるための強力な差別化要因となる。",
+    "translations": {
+      "ja": {
+        "title": "執筆を怠ると文章が消滅する。中毒的生産性アプリの個人開発者が語る「恐怖」を武器にしたゲーミフィケーションの極意",
+        "summary": "執筆中に手が止まると自動的に文章が消去される「恐怖の生産性向上アプリ」が、作家やエンジニアの間で話題を呼んでいる。 このアプリは、甘い誘惑や先延ばしを排除するためにあえて「ペナルティ」を課すことで、強制的にフロー状態を作り出す設計だ。 ただ便利なツールを作るのではなく、ユーザーの心理的な弱さを逆手に取った「負の強化」こそが、飽和する productivity 市場で熱狂的な支持を集めるための強力な差別化要因となる。"
+      },
+      "en": {
+        "title": "Developer Builds Productivity Tool That Deletes Your Writing If You Stop: Why Negative Reinforcement Drives User Obsession and Daily Engagement",
+        "summary": "A solo developer has struck a chord with a productivity app designed to force focus through fear: if the user stops typing for too long, their work literally starts deleting itself. Rather than relying on gamified rewards or standard task tracking, the app utilizes harsh negative reinforcement to shatter writer’s block and force users into a flow state. The creator argues that by leaning into deliberate user discomfort—a stark departure from conventional UX design—they have carved out a loyal niche in a crowded productivity market. For independent builders, the takeaway is clear: sometimes the most effective way to solve a user's procrastination problem is not by offering a softer landing, but by weaponizing their own deadlines against them."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-09T03:16:30.282Z"
+  },
+  {
     "id": "art-1794193320162-6y7et",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -14381,32 +14485,6 @@
     "created_at": "2026-11-07T09:31:34.297Z"
   },
   {
-    "id": "art-1794043016888-ugmq5",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://cipher.org.uk/2026/11/06/AI-Source-Code-Analysis-Detection-Evasion-Techniques/",
-    "published_at": "2026-11-07T08:52:16.000Z",
-    "og_image_url": null,
-    "title_ja": "AIによるソースコード解析を回避する攻撃手法の全容：難読化・構造改変によるセキュリティ検知すり抜けのメカニズムを詳細解説",
-    "summary_ja": "生成AIによるソースコード解析や自動検知システムを意図的にすり抜けるための回避手法が公開された。 具体的には、抽象構文木（AST）を操作する難読化や、コード構造の動的な改変を通じて、AIの判定ロジックを撹乱する戦術が挙げられている。 開発者は、セキュリティゲートウェイが単なる静的解析に依存するだけでは不十分であることを理解し、より高度な挙動検知や文脈理解を取り入れた防御基盤への転換を急ぐべきだ。",
-    "translations": {
-      "ja": {
-        "title": "AIによるソースコード解析を回避する攻撃手法の全容：難読化・構造改変によるセキュリティ検知すり抜けのメカニズムを詳細解説",
-        "summary": "生成AIによるソースコード解析や自動検知システムを意図的にすり抜けるための回避手法が公開された。 具体的には、抽象構文木（AST）を操作する難読化や、コード構造の動的な改変を通じて、AIの判定ロジックを撹乱する戦術が挙げられている。 開発者は、セキュリティゲートウェイが単なる静的解析に依存するだけでは不十分であることを理解し、より高度な挙動検知や文脈理解を取り入れた防御基盤への転換を急ぐべきだ。"
-      },
-      "en": {
-        "title": "New Research Unveils Advanced Evasion Techniques for Bypassing AI-Powered Source Code Analysis and Automated Threat Detection Systems",
-        "summary": "Researchers have documented sophisticated evasion techniques designed specifically to bypass AI-powered source code analysis and automated security detection systems. The methods detail how attackers manipulate Abstract Syntax Trees (AST) through strategic obfuscation and structural code modification to deliberately confuse the underlying heuristic logic of AI scanners. This investigation serves as a critical wake-up call for security teams relying on static analysis as their primary defense mechanism, as it demonstrates that surface-level scanning is no longer sufficient against modern, adaptive manipulation tactics. Developers should prioritize implementing deeper behavioral analysis and contextual integrity checks to strengthen their pipelines, as these evasion tactics effectively neutralize basic pattern-matching safeguards that currently protect most commercial CI/CD environments and vulnerability scanning tools."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "研究"
-    ],
-    "created_at": "2026-11-07T09:16:56.888Z"
-  },
-  {
     "id": "art-1794043000556-jbotl",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -14458,32 +14536,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-07T09:16:34.217Z"
-  },
-  {
-    "id": "art-1794042110542-gmn8k",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://digitalminds.cam/inter-ai-morality.pdf",
-    "published_at": "2026-11-07T08:02:02.000Z",
-    "og_image_url": null,
-    "title_ja": "AI同士が相互作用する「Inter-AI Morality」研究：AIエージェント社会における協力と裏切りのアルゴリズム的メカニズムを解明",
-    "summary_ja": "ケンブリッジ大学の研究チームが、複数のAIエージェントが相互に作用する際の倫理的判断や協力・裏切りの挙動を分析した論文「Inter-AI Morality」を公開。 AI同士が互いに協力する条件や、自己利益を優先するインセンティブ設計がどのように社会的な均衡を崩すかをモデル化している。 将来的にAIエージェント同士が自律的に交渉や取引を行う環境において、悪意ある挙動を防ぎ、システム全体の安定性を確保するための設計指針として重要な示唆を与えている。",
-    "translations": {
-      "ja": {
-        "title": "AI同士が相互作用する「Inter-AI Morality」研究：AIエージェント社会における協力と裏切りのアルゴリズム的メカニズムを解明",
-        "summary": "ケンブリッジ大学の研究チームが、複数のAIエージェントが相互に作用する際の倫理的判断や協力・裏切りの挙動を分析した論文「Inter-AI Morality」を公開。 AI同士が互いに協力する条件や、自己利益を優先するインセンティブ設計がどのように社会的な均衡を崩すかをモデル化している。 将来的にAIエージェント同士が自律的に交渉や取引を行う環境において、悪意ある挙動を防ぎ、システム全体の安定性を確保するための設計指針として重要な示唆を与えている。"
-      },
-      "en": {
-        "title": "Inter-AI Morality research explores the algorithmic mechanics of cooperation and betrayal when AI agents interact with each other",
-        "summary": "A new research paper titled 'Inter-AI Morality' from Cambridge investigates how autonomous AI agents manage ethical decisions, cooperation, and betrayal when interacting in shared digital environments. By modeling scenarios where agents must choose between mutual benefit and self-interest, the authors demonstrate how specific incentive structures can destabilize collaborative outcomes. This work offers vital implications for future architectures where multi-agent systems negotiate or transact independently. For builders developing agentic workflows, the practical lesson is that system stability depends heavily on embedding 'moral' or cooperative incentives into the agent's reward functions early on, rather than assuming emergent alignment will naturally occur without explicit safeguards against adversarial gaming of system mechanics."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-07T09:01:50.542Z"
   },
   {
     "id": "art-1794042096170-d6oxe",
@@ -20587,32 +20639,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-06T03:16:49.010Z"
-  },
-  {
-    "id": "art-1793934149123-mjs8f",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/sugitakenji/articles/ad30a5008c81e2",
-    "published_at": "2026-11-05T13:42:56.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--R1o3Fc_B--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:What%2520is%2520AI%2520for%253F%2520%25E2%2580%2594%2520AI%25E3%2581%25AF%25E8%2587%25AA%25E5%2588%2586%25E3%2582%2592%25E6%2598%25A0%25E3%2581%2599%25E9%258F%25A1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%259D%2589%25E7%2594%25B0%25E7%25A0%2594%25E6%25B2%25BB%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzk4MDc4MWRkYTIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIへの感謝や丁寧な対話は意味があるのか？プロンプトの質を高める「鏡」としてのAIとの付き合い方",
-    "summary_ja": "AIに対して「ありがとう」と伝える行為は、単なるマナーではなく、対話の質を変える重要なフィードバックだ。 丁寧に話しかけることでAI側の応答の質も向上する傾向があり、自分の意図が正確に伝わったことを示すシグナルとして機能する。 AIは自分の考えを映す鏡のような存在であり、適切な言語化と対話を重ねることが、納得感のあるアウトプットを引き出す鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AIへの感謝や丁寧な対話は意味があるのか？プロンプトの質を高める「鏡」としてのAIとの付き合い方",
-        "summary": "AIに対して「ありがとう」と伝える行為は、単なるマナーではなく、対話の質を変える重要なフィードバックだ。 丁寧に話しかけることでAI側の応答の質も向上する傾向があり、自分の意図が正確に伝わったことを示すシグナルとして機能する。 AIは自分の考えを映す鏡のような存在であり、適切な言語化と対話を重ねることが、納得感のあるアウトプットを引き出す鍵となる。"
-      },
-      "en": {
-        "title": "Why being polite to AI matters: Improving prompting quality by treating models as a reflecting mirror for your own thoughts",
-        "summary": "While some argue that expressing gratitude to AI makes no difference in accuracy, experienced users know that polite interaction shapes better outcomes. Communicating clearly with appreciation acts as a feedback loop that helps stabilize the tone and logic of the AI's response. The AI functions as a mirror reflecting your intent; by articulating satisfaction or pinpointing specific improvements through conversational dialogue, you refine the model's output alignment. For builders, this underscores that prompt engineering is not just about raw commands but about maintaining a coherent feedback cycle. When you treat the model like a collaborator rather than a calculator, the clarity and precision of the generated results improve, ultimately yielding higher-quality work for your development projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-06T03:02:29.123Z"
   },
   {
     "id": "art-1793932356930-0hl4y",
@@ -28554,32 +28580,6 @@
       "開発"
     ],
     "created_at": "2026-11-03T19:17:33.346Z"
-  },
-  {
-    "id": "art-1793732585136-9gric",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/kissa_hitotoki/articles/b217f40176624c",
-    "published_at": "2026-11-03T17:21:34.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pIB1FXly--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BE%25A9%25E5%2585%2583%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E3%2581%25AE%25E5%25BE%258C%25E3%2582%2582%25E5%2585%2583%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25AF%25E6%25AE%258B%25E3%2582%258B%25E3%2581%258B%25EF%25BC%259AJavaScript%25E3%2581%25AE8%25E5%2585%25A5%25E5%258A%259B%25E3%2581%25A7%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%2596%25AB%25E8%258C%25B6%25E3%2581%25AE%25E3%2581%25B2%25E3%2581%25A8%25E3%2581%25A8%25E3%2581%258D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSm9ZNDV4M0lwUXZHbURUNXBScS1HNUZuQVpBVzlJS3ZydGZQU2dHVXhjZml2ZS1nPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "復元機能の実装で既存データを消滅させない設計：JavaScript最小モデルで確認するJSON解析失敗時のデータ保護手法",
-    "summary_ja": "バックアップ復元機能を実装する際、既存データを先に削除してから新規JSONを解析すると、解析失敗時に全データが消失するリスクがある。 本記事では、人工データを用いたJavaScript最小モデルを作成し、データ保護を考慮した「安全な復元フロー」の条件を検証する。 外部ライブラリ不要で、ID重複チェックや空データ対策を含む堅牢な復元処理を再現できるため、自作アプリのデータ管理を見直す際に役立つ実践的な知見となる。",
-    "translations": {
-      "ja": {
-        "title": "復元機能の実装で既存データを消滅させない設計：JavaScript最小モデルで確認するJSON解析失敗時のデータ保護手法",
-        "summary": "バックアップ復元機能を実装する際、既存データを先に削除してから新規JSONを解析すると、解析失敗時に全データが消失するリスクがある。 本記事では、人工データを用いたJavaScript最小モデルを作成し、データ保護を考慮した「安全な復元フロー」の条件を検証する。 外部ライブラリ不要で、ID重複チェックや空データ対策を含む堅牢な復元処理を再現できるため、自作アプリのデータ管理を見直す際に役立つ実践的な知見となる。"
-      },
-      "en": {
-        "title": "Designing Safe Data Restoration: Using a JavaScript Model to Prevent Data Loss During JSON Parsing Failures",
-        "summary": "When implementing backup restoration, developers often clear existing state before parsing the new JSON, creating a dangerous race condition where parsing errors destroy all user data. This article introduces a minimal JavaScript model to demonstrate how to structure restoration logic to avoid accidental data deletion. By isolating validation and parsing, the model explores safe restoration workflows that include ID deduplication checks and protection against empty backups. The code is entirely dependency-free, making it an accessible template for validating your own app's resilience. For builders, this is a crucial reminder that how you manage state transitions during recovery is just as important as the backup format itself when protecting user content."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-03T19:03:05.136Z"
   },
   {
     "id": "art-1793732562849-e8o80",
