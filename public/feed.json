@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794270726664-a7qso",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ao_workshop/articles/ai-legacy-maintenance-8-patterns",
+    "published_at": "2026-11-09T23:00:06.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--TSGwkxU1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25A5%25AD%25E5%258B%2599%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E4%25BF%259D%25E5%25AE%2588%25E3%2581%25AEAI%25E3%2581%2582%25E3%2582%258B%25E3%2581%2582%25E3%2582%258B8%25E9%2581%25B8%25E3%2581%25A8%25E3%2580%2581%25E3%2581%259D%25E3%2581%25AE%25E5%25AF%25BE%25E5%25BF%259C%25E3%2580%2590Claude%2520Code%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%258A%25E5%25B7%25A5%25E6%2588%25BF%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUktUUczeDluYk5zaEpMSjdYYXp5NlczdEc0MGgtOVdTOUNxQVNURnc4RGtKX2xjWTA9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "業務システム改修におけるAIの「余計な修正」と「文脈忘れ」：Claude Code導入時に遭遇するあるある8選と回避策",
+    "summary_ja": "業務システムの保守・改修にAIを導入すると、「頼んでいない箇所まで作り込む」「空白・インデント変更による差分の肥大化」「会話の長期化による指示忘れ」といった課題が頻発する。 設計書の全読み込みによる文脈溢れや、日本語エンコーディングの不一致も開発現場の共通課題だ。 これらを防ぐには、AIに対して一度のタスク範囲を限定し、重要な設計思想を都度再確認するような慎重なプロンプト制御が不可欠である。 AIを「頼れる助手」として扱うための、現実的な運用上の注意点をまとめる。",
+    "translations": {
+      "ja": {
+        "title": "業務システム改修におけるAIの「余計な修正」と「文脈忘れ」：Claude Code導入時に遭遇するあるある8選と回避策",
+        "summary": "業務システムの保守・改修にAIを導入すると、「頼んでいない箇所まで作り込む」「空白・インデント変更による差分の肥大化」「会話の長期化による指示忘れ」といった課題が頻発する。 設計書の全読み込みによる文脈溢れや、日本語エンコーディングの不一致も開発現場の共通課題だ。 これらを防ぐには、AIに対して一度のタスク範囲を限定し、重要な設計思想を都度再確認するような慎重なプロンプト制御が不可欠である。 AIを「頼れる助手」として扱うための、現実的な運用上の注意点をまとめる。"
+      },
+      "en": {
+        "title": "Managing 8 common pitfalls of AI-assisted enterprise maintenance: Why Claude Code often over-engineers code and loses context",
+        "summary": "Integrating AI like Claude Code into enterprise system maintenance frequently leads to unexpected friction, such as AI over-engineering code blocks you didn’t request, bloating diffs with irrelevant indentation changes, or suffering from \"context drift\" where critical instructions are forgotten in long sessions. Other pain points include maxing out the context window with design docs and garbled character encoding issues. Avoiding these traps requires modularizing tasks to prevent AI from wandering off-scope and consistently re-verifying core architecture rules. Rather than treating AI as an autonomous developer, builders must impose tight constraints on its scope and verify its output constantly to avoid cleanup overhead that outweighs the time saved on the initial fix."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-10T00:32:06.664Z"
+  },
+  {
+    "id": "art-1794270718261-gzxp7",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-skills-and-agents-work-in-aws-quick/",
+    "published_at": "2026-11-10T00:21:34.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/04/ML-22266-featured-image.png",
+    "title_ja": "AWSが「AWS Quick」の仕組みを解説：反復業務を自動化するエージェントとスキルの設計・共有ガイド",
+    "summary_ja": "AWSが提供する業務自動化ツール「AWS Quick」では、ステータス更新やチケット作成などの反復的なタスクを「スキル」として定義し、「エージェント」に実行させることで業務フローを効率化できる。 本記事では、これらエージェントとスキルの技術的な連携構造、チーム内でのスキルの構築・共有方法、そして公式カタログとカスタムエージェントを活用したワークフロー最適化の手法が詳しく。",
+    "translations": {
+      "ja": {
+        "title": "AWSが「AWS Quick」の仕組みを解説：反復業務を自動化するエージェントとスキルの設計・共有ガイド",
+        "summary": "AWSが提供する業務自動化ツール「AWS Quick」では、ステータス更新やチケット作成などの反復的なタスクを「スキル」として定義し、「エージェント」に実行させることで業務フローを効率化できる。 本記事では、これらエージェントとスキルの技術的な連携構造、チーム内でのスキルの構築・共有方法、そして公式カタログとカスタムエージェントを活用したワークフロー最適化の手法が詳しく。"
+      },
+      "en": {
+        "title": "AWS deep dives into AWS Quick: How agents and skills automate repeatable team workflows",
+        "summary": "AWS has unveiled the architecture behind AWS Quick, explaining how developers can encode repetitive tasks like ticket creation, status reporting, and release note generation into modular 'skills' for autonomous agents to execute. This breakdown details the interplay between agents, specific data sources, and these reusable skills, while demonstrating how teams can build, package, and share these assets within a centralized catalog. By utilizing official and custom agents, organizations can effectively shift operational burdens away from human workers. For engineering teams evaluating AI integration, this guide serves as a practical blueprint for turning routine manual processes into scalable, version-controlled automation assets that significantly streamline collaborative development cycles and reduce daily operational overhead."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-10T00:31:58.261Z"
+  },
+  {
+    "id": "art-1794270712165-jcbgx",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+    "published_at": "2026-11-09T23:58:46.000Z",
+    "og_image_url": "https://static.simonwillison.net/static/2026/fable-5.2-xhigh.avif",
+    "title_ja": "Anthropicの新モデル「Fable 5.2」「Mythos 5.2」がllm-anthropicに追加、CLIから即時利用可能に",
+    "summary_ja": "開発者のサイモン・ウィリソン氏が提供するCLIツール「llm-anthropic」がアップデートされ、Anthropicの最新モデル「Fable 5.2」および「Mythos 5.2」への対応が完了した。 コマンドラインから直接モデルを呼び出し、思考レベルを設定してプロンプトを実行できる。 ただし最高設定ではトークン枯渇によるエラーも報告されており、CLI環境で最新モデルを試す際は、推論コストや設定値の調整に注意が必要だ。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicの新モデル「Fable 5.2」「Mythos 5.2」がllm-anthropicに追加、CLIから即時利用可能に",
+        "summary": "開発者のサイモン・ウィリソン氏が提供するCLIツール「llm-anthropic」がアップデートされ、Anthropicの最新モデル「Fable 5.2」および「Mythos 5.2」への対応が完了した。 コマンドラインから直接モデルを呼び出し、思考レベルを設定してプロンプトを実行できる。 ただし最高設定ではトークン枯渇によるエラーも報告されており、CLI環境で最新モデルを試す際は、推論コストや設定値の調整に注意が必要だ。"
+      },
+      "en": {
+        "title": "Simon Willison updates llm-anthropic to version 0.31 with immediate support for Anthropic's new Fable 5.2 and Mythos 5.2 models",
+        "summary": "Simon Willison has updated his popular llm-anthropic CLI tool to version 0.31, enabling developers to immediately access Anthropic's newly released Fable 5.2 and Mythos 5.2 models directly from the terminal. The update allows users to execute prompts with specific reasoning tiers ranging from low to max effort. However, early testing reveals that the 'max' setting can trigger token exhaustion errors, mimicking issues previously seen in the Opus 5.5 series where the model gets stuck thinking indefinitely. For builders integrating these models via the CLI, the takeaway is to experiment cautiously with higher reasoning levels, as they may occasionally fail to produce output due to current token limitations that developers should account for in their workflow."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-10T00:31:52.165Z"
+  },
+  {
+    "id": "art-1794270704623-do0mj",
+    "source_id": "source-fireflies",
+    "source_name": "Fireflies.ai Blog",
+    "url": "https://fireflies.ai/blog/best-ai-voice-recorders",
+    "published_at": "2026-11-10T12:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "2026年版AIボイスレコーダー比較：Fireflies.aiが厳選したハードウェアとアプリの選び方と9つの推奨ツール",
+    "summary_ja": "Fireflies.aiが2026年の市場を調査し、高精度な文字起こしと自動要約を実現する9つのAIボイスレコーダーを厳選。 専用ハードウェアの携帯性とスマホアプリの柔軟性を比較し、会議効率化やインタビュー記録に最適なツールを提示している。 単なる録音を超えた「文脈理解」がAI選定の基準となっており、開発者やビジネスパーソンは、自身のユースケースに応じて適切なハードウェアまたはクラウドソリューションを使い分けるべきだ。",
+    "translations": {
+      "ja": {
+        "title": "2026年版AIボイスレコーダー比較：Fireflies.aiが厳選したハードウェアとアプリの選び方と9つの推奨ツール",
+        "summary": "Fireflies.aiが2026年の市場を調査し、高精度な文字起こしと自動要約を実現する9つのAIボイスレコーダーを厳選。 専用ハードウェアの携帯性とスマホアプリの柔軟性を比較し、会議効率化やインタビュー記録に最適なツールを提示している。 単なる録音を超えた「文脈理解」がAI選定の基準となっており、開発者やビジネスパーソンは、自身のユースケースに応じて適切なハードウェアまたはクラウドソリューションを使い分けるべきだ。"
+      },
+      "en": {
+        "title": "The 9 Best AI Voice Recorders of 2026: A Comparative Guide to Top Hardware Devices and Apps",
+        "summary": "Fireflies.ai has released a comparative analysis of the nine best AI voice recorders for 2026, evaluating both dedicated hardware devices and mobile-first software solutions. The guide highlights how modern recorders have evolved beyond basic audio capture to provide real-time transcription and intelligent context-aware summarization for professional meetings. The authors emphasize that the choice between hardware and app-based solutions hinges on your specific workflow needs, such as device portability versus integration with existing cloud ecosystems. For builders and professionals, the takeaway is that selecting an AI tool is no longer just about audio fidelity; it is about finding the platform that best automates your post-meeting documentation pipeline without sacrificing data privacy or accuracy."
+      }
+    },
+    "tool_tags": [
+      "Fireflies"
+    ],
+    "genre_tags": [
+      "音声",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-10T00:31:44.623Z"
+  },
+  {
     "id": "art-1794269832972-tovcj",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -18223,59 +18329,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-07T11:46:47.668Z"
-  },
-  {
-    "id": "art-1794051994061-f95jl",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/twsnmp/articles/twnoaa-rtl-sdr-satellite-ai",
-    "published_at": "2026-11-06T19:19:19.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--BYVDs0WI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A8%25E5%2596%25A7%25E5%2598%25A9%25E3%2581%2597%25E3%2581%25AA%25E3%2581%258C%25E3%2582%2589%25E6%258C%2591%25E3%2582%2593%25E3%2581%25A0%25E3%2582%25BD%25E3%2583%2595%25E3%2583%2588%25E3%2582%25A6%25E3%2582%25A7%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25B8%25E3%2582%25AA%25E9%2596%258B%25E7%2599%25BA%25EF%25BC%259A9%25E5%258D%2583%25E5%2586%2586%25E3%2581%25AELNA%25E3%2580%2581%25E5%2581%259C%25E6%25B3%25A2%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E8%25A1%259B%25E6%2598%259F%25E3%2580%2581%25E3%2581%259D%25E3%2581%2597%25E3%2581%25A6%25E6%25B0%2597%25E8%25B1%25A1%25E8%25A1%259B%25E6%2598%259F%25E3%2583%25BBISS%25E5%258F%2597%25E4%25BF%25A1%25E3%2581%25B8%25E3%2581%25AE%25E9%2581%2593%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:twsnmp%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUyNGRlNjI3NmIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "9千円のSDRとAIエージェントで気象衛星画像を受信：物理デバイス開発の壁とコード修正の限界に挑んだ個人開発の記録",
-    "summary_ja": "9千円のUSBドングル型ソフトウェアラジオ（RTL-SDR）を活用し、気象衛星やISSからの信号を直接受信・画像復元するツール「twnoaa」の開発記録。 ソフトウェア開発と異なり、物理デバイスや気象条件という制御不能な変数が介在するハードウェア寄りの開発において、AIエージェントをペアプロの相棒として活用する戦略を解説する。 物理レイヤーとデジタルレイヤーの狭間で、AIと協調しながら技術的なボトルネックを突破するエンジニアリングの試行錯誤が綴られている。",
-    "translations": {
-      "ja": {
-        "title": "9千円のSDRとAIエージェントで気象衛星画像を受信：物理デバイス開発の壁とコード修正の限界に挑んだ個人開発の記録",
-        "summary": "9千円のUSBドングル型ソフトウェアラジオ（RTL-SDR）を活用し、気象衛星やISSからの信号を直接受信・画像復元するツール「twnoaa」の開発記録。 ソフトウェア開発と異なり、物理デバイスや気象条件という制御不能な変数が介在するハードウェア寄りの開発において、AIエージェントをペアプロの相棒として活用する戦略を解説する。 物理レイヤーとデジタルレイヤーの狭間で、AIと協調しながら技術的なボトルネックを突破するエンジニアリングの試行錯誤が綴られている。"
-      },
-      "en": {
-        "title": "Building a $60 Software Radio Tool: How AI Agents Helped Decode Satellite Images Despite Hardware Challenges",
-        "summary": "This development log details the creation of 'twnoaa,' a software tool designed to intercept and decode raw satellite imagery and ISS signals using a $60 USB RTL-SDR dongle. Unlike pure software engineering, this project faced unpredictable variables like signal interference, atmospheric conditions, and physical hardware limitations, making traditional debugging insufficient. The author explores how utilizing AI agents as a development partner allowed them to navigate these physical constraints, essentially using LLMs to debug the interaction between code and electromagnetic waves. It serves as a masterclass for developers transitioning into hardware integration, illustrating how to maintain momentum when your code is logically correct but the environment—specifically orbital satellite paths and hardware sensitivity—remains the true limiting factor."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "研究"
-    ],
-    "created_at": "2026-11-07T11:46:34.061Z"
-  },
-  {
-    "id": "art-1794051126844-e6c0x",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tauchi/articles/f361acf354d648",
-    "published_at": "2026-11-07T10:23:11.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--URhaftP0--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:osFoundry%25E3%2581%25A8%25E3%2581%25AF%253F%25E3%2583%2581%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2588%25E3%2581%258B%25E3%2582%2589%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%25BE%25E3%2581%25A7%25E3%2580%2581%25E3%2583%2587%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%2588%25E3%2583%2583%25E3%2583%2597AI%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E3%2582%25B9%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%25AE%25E5%2585%25A8%25E4%25BD%2593%25E5%2583%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tauchiiii%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzk3MTEwOGZlMmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「osFoundry」とは？ブラウザやエディタに分散したAIツールを集約する次世代デスクトップワークスペース、断片化したコンテキストを統合し生産性を最大化する。",
-    "summary_ja": "osFoundryは、ブラウザやエディタに分散しがちなチャットやエージェントツールをデスクトップ上に統合するAIワークスペースだ。 これまで複数のAIツール間で前提条件をコピペし直していた作業を一元化し、コンテキストの分断による生産性低下を解消する。 開発者はツールを切り替えるコストを最小化できるため、複数のAIモデルやエージェントを組み合わせたワークフローを構築したい層にとって、強力なハブとなるだろう。",
-    "translations": {
-      "ja": {
-        "title": "「osFoundry」とは？ブラウザやエディタに分散したAIツールを集約する次世代デスクトップワークスペース、断片化したコンテキストを統合し生産性を最大化する。",
-        "summary": "osFoundryは、ブラウザやエディタに分散しがちなチャットやエージェントツールをデスクトップ上に統合するAIワークスペースだ。 これまで複数のAIツール間で前提条件をコピペし直していた作業を一元化し、コンテキストの分断による生産性低下を解消する。 開発者はツールを切り替えるコストを最小化できるため、複数のAIモデルやエージェントを組み合わせたワークフローを構築したい層にとって、強力なハブとなるだろう。"
-      },
-      "en": {
-        "title": "Meet osFoundry: A Unified Desktop Workspace That Consolidates Fragmented AI Chat, Coding Agents, and Context Into One Local Environment",
-        "summary": "osFoundry arrives as a unified desktop workspace designed to consolidate the fractured AI landscape where developers toggle between browser-based chats, isolated coding agents, and disconnected note apps. By centralizing these tools into a single environment, the platform eliminates the productivity drain caused by redundant context switching and repetitive copy-pasting of project prerequisites across different LLM windows. For builders struggling to maintain consistent state across multiple AI agents, osFoundry offers a solution by creating a persistent hub for your local models and workflows. It fundamentally shifts the AI development experience from a collection of disparate tabs into a cohesive command center, ensuring your tools finally share the context they need to operate effectively."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-07T11:32:06.844Z"
   },
   {
     "id": "art-1794047506727-4mj4x",
@@ -42833,32 +42886,6 @@
     "created_at": "2026-10-30T11:32:44.039Z"
   },
   {
-    "id": "art-1793359956617-j43ch",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/vaani-developer-platfrom",
-    "published_at": "2026-10-28T05:20:54.000Z",
-    "og_image_url": null,
-    "title_ja": "音声AIアプリ開発を加速させる「Vaani」が登場。LLMとのシームレスな統合と音声モデル連携を網羅する開発者向けAIプラットフォーム",
-    "summary_ja": "Vaaniは、音声AIアプリケーション開発に特化した包括的な開発プラットフォームだ。 主要な音声認識モデルやLLMとの接続を抽象化し、オーディオストリーミングから対話の最適化までを単一のインターフェースで統合できる。 複雑になりがちな音声AIスタックを簡素化できるため、独自の音声エージェントや対話型プロダクトを短期間で構築したい開発者にとって、インフラ構築の手間を劇的に減らす強力な選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "音声AIアプリ開発を加速させる「Vaani」が登場。LLMとのシームレスな統合と音声モデル連携を網羅する開発者向けAIプラットフォーム",
-        "summary": "Vaaniは、音声AIアプリケーション開発に特化した包括的な開発プラットフォームだ。 主要な音声認識モデルやLLMとの接続を抽象化し、オーディオストリーミングから対話の最適化までを単一のインターフェースで統合できる。 複雑になりがちな音声AIスタックを簡素化できるため、独自の音声エージェントや対話型プロダクトを短期間で構築したい開発者にとって、インフラ構築の手間を劇的に減らす強力な選択肢となるだろう。"
-      },
-      "en": {
-        "title": "Vaani launches developer platform to streamline complex voice AI integrations for modern agentic applications",
-        "summary": "Vaani is a comprehensive developer platform designed to unify the fragmented landscape of voice AI application building. It abstracts away the complexity of connecting various speech-to-text models and large language models, providing a centralized interface for managing audio streaming, latency optimization, and conversational flow. By offering a standardized \"harness\" for voice agents, Vaani enables developers to bypass the boilerplate code typically required to chain together different voice models. This platform significantly accelerates time-to-market for conversational AI products, allowing teams to focus on core product logic rather than the underlying infrastructure of audio processing. For builders tackling voice-first interfaces, Vaani serves as the essential middleware to ensure reliable, high-performance interactions across multiple model backends."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "音声"
-    ],
-    "created_at": "2026-10-30T11:32:36.617Z"
-  },
-  {
     "id": "art-1793359906546-3u1im",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -48709,33 +48736,6 @@
       "研究"
     ],
     "created_at": "2026-10-27T19:22:12.285Z"
-  },
-  {
-    "id": "art-1793128580030-4tisu",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/ai/yyk8ptuj",
-    "published_at": "2026-10-27T19:01:43.000Z",
-    "og_image_url": null,
-    "title_ja": "Anthropic創業期の舞台裏：AI安全性を追求する過程で直面した開発者の限界と、過酷な職場環境が生んだ「安全への疑念」の真相",
-    "summary_ja": "元社員の証言から明らかになったAnthropic創業期の内部実態は、AI安全性という高潔な目標を掲げながらも、開発現場では過酷な労働環境と精神的疲弊が蔓延していた。 安全のための厳格な制約が逆にプロジェクトのボトルネックとなり、開発者の士気を削ぐ皮肉な状況が浮き彫りとなった。 AI企業の成長過程において、理想主義的な安全性と現実的な組織マネジメントの両立がいかに困難であるかを物語る教訓である。",
-    "translations": {
-      "ja": {
-        "title": "Anthropic創業期の舞台裏：AI安全性を追求する過程で直面した開発者の限界と、過酷な職場環境が生んだ「安全への疑念」の真相",
-        "summary": "元社員の証言から明らかになったAnthropic創業期の内部実態は、AI安全性という高潔な目標を掲げながらも、開発現場では過酷な労働環境と精神的疲弊が蔓延していた。 安全のための厳格な制約が逆にプロジェクトのボトルネックとなり、開発者の士気を削ぐ皮肉な状況が浮き彫りとなった。 AI企業の成長過程において、理想主義的な安全性と現実的な組織マネジメントの両立がいかに困難であるかを物語る教訓である。"
-      },
-      "en": {
-        "title": "Inside the early days of Anthropic: How extreme pressure and safety-first constraints fueled developer burnout and internal doubt",
-        "summary": "Newly surfaced accounts from early Anthropic employees reveal the intense dissonance within the AI startup during its formative stages. While the company prioritized AI safety above all else, those same rigorous ethical constraints often created grinding workloads and crushing psychological strain for the engineering teams involved. This reporting highlights the harsh reality that even organizations founded on the highest moral principles regarding AI risks can inadvertently cultivate toxic workplace cultures when idealism clashes with execution. For builders, this serves as a critical cautionary tale: balancing ambitious, long-term safety missions with the immediate mental well-being of your development team is not just an HR concern, but a core operational challenge that determines the long-term viability of any high-stakes project."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-10-27T19:16:20.030Z"
   },
   {
     "id": "art-1793127402106-6jljz",
