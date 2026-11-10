@@ -1,5 +1,114 @@
 [
   {
+    "id": "art-1794274353778-aayfr",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/miyoki_labs/articles/ai-73aa9bec48",
+    "published_at": "2026-11-09T22:30:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--x0ASVZ2o--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E5%2586%258D%25E7%2594%259F%25E6%2588%2590%25E7%2590%2586%25E7%2594%25B1%25E3%2581%258C%25E5%258A%25B9%25E3%2581%258B%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2582%25E4%25BF%259D%25E5%25AD%2598%25E3%2581%25A8%25E8%25A1%25A8%25E7%25A4%25BA%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E3%2581%25AF%25E4%25B8%258D%25E5%258D%2581%25E5%2588%2586%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Miyoki%2520Labs%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2pOTW5pTFBzNjdXTzE1bHpCbmZhU2FoWlhKd1hNV05pTGd0cHlfTy1aSldYSUMyMD1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI生成機能の盲点：ユーザーの「再生成理由」をUIに表示しても生成プロンプトに反映されない実装ミスと修正の教訓",
+    "summary_ja": "AI診断アプリにおける「再生成の理由」入力機能について、データ保存や履歴表示を実装しただけで満足してはいけない。 ユーザーが送信した改善指示が、肝心の生成プロンプトに渡されていなければ、AIは以前と同じ回答を繰り返すだけになる。 単なるUI上の収集にとどまらず、プロンプト生成ロジックまでフィードバックデータを確実に統合するパイプライン設計の重要性を説く開発の振り返りである。",
+    "translations": {
+      "ja": {
+        "title": "AI生成機能の盲点：ユーザーの「再生成理由」をUIに表示しても生成プロンプトに反映されない実装ミスと修正の教訓",
+        "summary": "AI診断アプリにおける「再生成の理由」入力機能について、データ保存や履歴表示を実装しただけで満足してはいけない。 ユーザーが送信した改善指示が、肝心の生成プロンプトに渡されていなければ、AIは以前と同じ回答を繰り返すだけになる。 単なるUI上の収集にとどまらず、プロンプト生成ロジックまでフィードバックデータを確実に統合するパイプライン設計の重要性を説く開発の振り返りである。"
+      },
+      "en": {
+        "title": "The Pitfall of AI Feedback Loops: Why Collecting User Reasons for Re-generation Fails Without Prompt Integration",
+        "summary": "Many developers building AI diagnostic tools mistakenly believe that capturing user feedback via a 'reason for re-generation' input field completes the workflow once it appears in the UI and database. This post highlights a critical failure: collecting data is useless if it is not programmatically injected into the subsequent LLM generation prompt. Without explicitly piping those user instructions into the new request, the AI continues to generate identical, flawed outputs despite user input. This log serves as a reminder to builders that success lies not in the storage of feedback, but in the seamless integration of that context into the generation logic. Ensure your system architecture bridges the gap between the UI input layer and the actual prompt construction pipeline."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-10T01:32:33.778Z"
+  },
+  {
+    "id": "art-1794274338781-j6p94",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.717",
+    "published_at": "2026-11-10T01:26:10.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawlがv2.11.717へアップデート、画像処理APIの強化によりLLM向けのWebスクレイピング性能と視覚データ抽出精度が向上",
+    "summary_ja": "FirecrawlはLLM用データ抽出ツールとして最新版「v2.11.717」をリリースしました。 今回の更新ではAPI経由の画像処理能力が強化され、Webサイト上の視覚情報をMarkdownへ変換する精度が改善されています。 複雑なレイアウトのWebページや画像要素を含むコンテンツから正確なデータを取得し、RAG開発やAIエージェントの入力品質を向上させたい開発者にとって、信頼性の高いソリューションとして機能します。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawlがv2.11.717へアップデート、画像処理APIの強化によりLLM向けのWebスクレイピング性能と視覚データ抽出精度が向上",
+        "summary": "FirecrawlはLLM用データ抽出ツールとして最新版「v2.11.717」をリリースしました。 今回の更新ではAPI経由の画像処理能力が強化され、Webサイト上の視覚情報をMarkdownへ変換する精度が改善されています。 複雑なレイアウトのWebページや画像要素を含むコンテンツから正確なデータを取得し、RAG開発やAIエージェントの入力品質を向上させたい開発者にとって、信頼性の高いソリューションとして機能します。"
+      },
+      "en": {
+        "title": "Firecrawl v2.11.717 Released with Improved API Image Processing for More Accurate LLM-Ready Data Extraction Capabilities",
+        "summary": "Firecrawl has shipped v2.11.717, an incremental update that focuses on enhancing its API-driven image processing pipeline. By refining how the engine handles visual data extraction from complex web layouts, the update ensures that web content converted into Markdown maintains structural integrity even with heavy media elements. This improvement is critical for developers building RAG pipelines or autonomous AI agents that require multimodal context to perform accurately. As scraping raw text becomes insufficient for sophisticated AI models, Firecrawl’s latest optimizations allow engineers to reliably feed complex web information into context windows without data loss. Integrating this update is a straightforward move for teams already leveraging Firecrawl for scalable, LLM-ready web data ingestion workflows."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-10T01:32:18.781Z"
+  },
+  {
+    "id": "art-1794274329655-g8ynd",
+    "source_id": "source-github-trending",
+    "source_name": "GitHub Trending (AI / TypeScript / Python)",
+    "url": "https://github.com/garrytan/gbrain",
+    "published_at": "2026-11-10T01:32:09.655Z",
+    "og_image_url": null,
+    "title_ja": "Garry Tan氏が公開した「GBrain」：AIエージェントに自前管理の長期記憶を持たせるオープンソース基盤",
+    "summary_ja": "Y CombinatorのGarry Tan氏が、AIエージェント向けのオープンソース記憶レイヤー「GBrain」を公開した。 ChatGPTやClaude、Cursorなどで利用可能なこの基盤は、事実関係の保存、修正、取り消しをユーザーが制御できるのが特徴だ。 最初はキーレスメモリやキーワード検索から開始し、必要に応じてセマンティック検索やバックグラウンドでの情報合成へ拡張できる。",
+    "translations": {
+      "ja": {
+        "title": "Garry Tan氏が公開した「GBrain」：AIエージェントに自前管理の長期記憶を持たせるオープンソース基盤",
+        "summary": "Y CombinatorのGarry Tan氏が、AIエージェント向けのオープンソース記憶レイヤー「GBrain」を公開した。 ChatGPTやClaude、Cursorなどで利用可能なこの基盤は、事実関係の保存、修正、取り消しをユーザーが制御できるのが特徴だ。 最初はキーレスメモリやキーワード検索から開始し、必要に応じてセマンティック検索やバックグラウンドでの情報合成へ拡張できる。"
+      },
+      "en": {
+        "title": "Garry Tan releases GBrain: An open-source memory layer for giving AI agents persistent, self-hosted user control",
+        "summary": "Garry Tan has launched GBrain, an open-source memory architecture designed to provide AI agents with a controllable, persistent brain that users own. By serving as an explicit storage layer for facts, corrections, and withdrawals, it ensures that your agents aren't just relying on transient context windows. Developers can start with simple keyless storage and keyword retrieval, later scaling into semantic search and synthetic background enrichment as complexity demands. Because it is MIT-licensed and offers both self-hosting and a managed service via gbrain.io, it effectively unifies institutional knowledge across tools like ChatGPT, Claude, and Cursor. For builders aiming to create truly stateful agents, GBrain solves the fragmentation problem by centralizing memory outside the ephemeral agent session."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-10T01:32:09.655Z"
+  },
+  {
+    "id": "art-1794274321784-hzdmh",
+    "source_id": "source-arcads",
+    "source_name": "Arcads",
+    "url": "https://help.arcads.ai/en/articles/18243309-download-several-files-as-one-zip",
+    "published_at": "2026-11-09T03:07:12Z",
+    "og_image_url": "https://help.arcads.ai/assets/favicon",
+    "title_ja": "Arcadsが新機能を追加、複数の素材ファイルをワンクリックでZIP圧縮ダウンロード可能に（作業効率向上と一括管理を実現）",
+    "summary_ja": "Arcadsはユーザーの利便性を向上させるため、プラットフォーム上の複数の広告クリエイティブ素材や動画ファイルを、単一のZIPアーカイブとして一括ダウンロードできる新機能をリリースした。 これまでファイルごとに繰り返していたダウンロード作業が簡略化され、プロジェクト単位での素材管理が大幅に効率化される。 クリエイティブ制作や広告運用の現場において、複数のアセットを効率的に取り扱うための実用的な改善である。",
+    "translations": {
+      "ja": {
+        "title": "Arcadsが新機能を追加、複数の素材ファイルをワンクリックでZIP圧縮ダウンロード可能に（作業効率向上と一括管理を実現）",
+        "summary": "Arcadsはユーザーの利便性を向上させるため、プラットフォーム上の複数の広告クリエイティブ素材や動画ファイルを、単一のZIPアーカイブとして一括ダウンロードできる新機能をリリースした。 これまでファイルごとに繰り返していたダウンロード作業が簡略化され、プロジェクト単位での素材管理が大幅に効率化される。 クリエイティブ制作や広告運用の現場において、複数のアセットを効率的に取り扱うための実用的な改善である。"
+      },
+      "en": {
+        "title": "Arcads adds multi-file batch download support, allowing users to export several assets as a single ZIP archive",
+        "summary": "Arcads has rolled out a new batch processing feature that enables users to download multiple ad creative assets and video files simultaneously as a single ZIP archive. By moving away from individual file downloads, the platform significantly streamlines the workflow for creative teams and marketers handling large projects. This functional update reduces redundant manual tasks, allowing builders and creators to organize their production assets more efficiently. For users managing high-volume ad campaigns, this change saves meaningful time by consolidating scattered media into a manageable package, ensuring that project-based asset retrieval becomes a frictionless experience rather than a tedious repetitive chore in their daily creative workflow."
+      }
+    },
+    "tool_tags": [
+      "Arcads"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-10T01:32:01.784Z"
+  },
+  {
     "id": "art-1794273440076-ogtkn",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -12746,32 +12855,6 @@
     "created_at": "2026-11-08T16:31:45.831Z"
   },
   {
-    "id": "art-1794155497760-per1y",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/akiva/n/n573c69e8054d",
-    "published_at": "2026-11-08T16:30:09.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333860909/rectangle_large_type_2_35d38b6614c0de13b88d3b37fa5d47de.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Windows 11で動作不能になった懐かしのメディア再生通知、AIを活用してモダンな環境で自力復活させた開発記録",
-    "summary_ja": "Windows 10時代に愛用していた、音量キー連動で再生中の曲情報やジャケットを表示するOSDアプリが、Windows 11へのアップデートで突如動作不能に。 作者はプログラミングの知識をAIで補完し、モダンなWindows APIに適合する形で機能を自力で復活させるプロジェクトを完遂した。 既存ツールがOSの仕様変更で使えなくなった際、AIをペアプログラミングの相棒として活用することで、個人の開発力でも迅速な機能復旧と代替構築が可能であることを証明した好例といえる。",
-    "translations": {
-      "ja": {
-        "title": "Windows 11で動作不能になった懐かしのメディア再生通知、AIを活用してモダンな環境で自力復活させた開発記録",
-        "summary": "Windows 10時代に愛用していた、音量キー連動で再生中の曲情報やジャケットを表示するOSDアプリが、Windows 11へのアップデートで突如動作不能に。 作者はプログラミングの知識をAIで補完し、モダンなWindows APIに適合する形で機能を自力で復活させるプロジェクトを完遂した。 既存ツールがOSの仕様変更で使えなくなった際、AIをペアプログラミングの相棒として活用することで、個人の開発力でも迅速な機能復旧と代替構築が可能であることを証明した好例といえる。"
-      },
-      "en": {
-        "title": "How a developer used AI to revive a legacy Windows music overlay broken by the Windows 11 update",
-        "summary": "The author’s favorite Windows 10 utility, which displayed album art and song titles whenever media volume keys were pressed, stopped functioning after upgrading to Windows 11. Instead of abandoning the feature, the developer leveraged AI to bridge their programming knowledge gaps, rewriting the tool to comply with modern Windows APIs. This project serves as a compelling case study on how individual builders can utilize LLMs as effective pair programmers to rapidly refactor legacy code or build functional replacements when system updates break beloved workflows. It highlights a critical takeaway for developers: AI empowers small-scale creators to maintain their own personalized toolkits, ensuring that OS-level updates do not necessarily mean the end of highly specific, quality-of-life utilities that developers rely on daily."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-08T16:31:37.760Z"
-  },
-  {
     "id": "art-1794154650175-mv484",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -18284,33 +18367,6 @@
     "created_at": "2026-11-07T14:02:02.566Z"
   },
   {
-    "id": "art-1794059265633-52wo2",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/sk8jp/articles/937288f65fcfab",
-    "published_at": "2026-11-07T04:27:20.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--a7waxcWO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25B3%25E3%2583%2581%25E4%25BF%259D%25E8%25AD%25B7%25E3%2581%25AE%25E3%2581%25AA%25E3%2581%2584%2520private%2520%25E3%2583%25AA%25E3%2583%259D%25E3%2581%25A7%25E3%2580%2581Claude%2520Code%2520%25E3%2581%25AE%2520main%2520%25E3%2581%25B8%25E3%2581%25AE%2520push%2520%25E3%2582%2592%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%25E5%25AE%2588%25E3%2582%258A%25E3%2582%2592%25E3%2580%258C...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:YAZ%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSThuekJzVGpOdUdqdXplU0tYcDc0c0F2WTFQS3JNQWp4ekJyQzZPQmtUNFEyT2F0Sm09czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "GitHub有料機能なしでClaude Codeの誤pushを防ぐ：ブランチ保護代替のpre-pushフック設計刷新",
-    "summary_ja": "GitHubの有料ブランチ保護機能を使わない個人開発環境において、Claude Codeによる誤ったmainブランチへのpushを防ぐための安全装置を刷新した事例。 既存のフック方式に脆弱性が見つかったことを受け、Claude Code側の設定とGitのpre-pushフックを組み合わせ、物理的な保護層を再構築した。 コストをかけずにCI/CDや保護機能を自前で実装したいソロエンジニアにとって、安全な開発フローを維持するための現実的な代替案となる。",
-    "translations": {
-      "ja": {
-        "title": "GitHub有料機能なしでClaude Codeの誤pushを防ぐ：ブランチ保護代替のpre-pushフック設計刷新",
-        "summary": "GitHubの有料ブランチ保護機能を使わない個人開発環境において、Claude Codeによる誤ったmainブランチへのpushを防ぐための安全装置を刷新した事例。 既存のフック方式に脆弱性が見つかったことを受け、Claude Code側の設定とGitのpre-pushフックを組み合わせ、物理的な保護層を再構築した。 コストをかけずにCI/CDや保護機能を自前で実装したいソロエンジニアにとって、安全な開発フローを維持するための現実的な代替案となる。"
-      },
-      "en": {
-        "title": "Blocking accidental main pushes with Claude Code in private GitHub repos without paid branch protection features",
-        "summary": "For solo engineers operating without GitHub’s paid branch protection features, relying on simple hooks to prevent accidental pushes to main from Claude Code is insufficient. This case study details a redesign of those safety mechanisms after discovering that both existing guardrails could be bypassed simultaneously. By hardening the integration between Claude Code's internal configuration and local Git pre-push hooks, the developer successfully built a redundant, physical safety layer without incurring additional costs. This approach provides a practical, robust alternative for maintaining a secure development flow and preventing production deployment errors. For builders operating on a lean budget, this strategy proves that custom local validation logic is a necessary defense when core repository safeguards are unavailable."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-07T13:47:45.633Z"
-  },
-  {
     "id": "art-1794058337424-53qit",
     "source_id": "source-benchlm",
     "source_name": "BenchLM（モデル動向）",
@@ -18335,32 +18391,6 @@
       "研究"
     ],
     "created_at": "2026-11-07T13:32:17.424Z"
-  },
-  {
-    "id": "art-1794057424450-o4rmu",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/litalico/articles/84d2427087c27b",
-    "published_at": "2026-11-07T04:45:00.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cq0uAW_F--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25AA%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25AF%25E3%2582%25BF%25E3%2583%25BC%25E3%2581%25AE%25E5%2588%25A4%25E6%2596%25AD%25E3%2581%25AFAI%25E3%2581%25AB%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%2520%25E2%2580%2595%2520git%25E5%25B1%25A5%25E6%25AD%25B4%25E3%2581%258B%25E3%2582%2589%25E5%2580%2599%25E8%25A3%259C%25E3%2582%2592%25E5%2587%25BA%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25A8%25E7%25AD%2594%25E3%2581%2588%25E5%2590%2588%25E3%2582%258F%25E3%2581%259B%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E6%25B1%25A0%25E9%2587%258E%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ViZDAyMzQ1MjcuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:LITALICO%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFUWEFKellLNHU4REdpQ0h1Wk5sNVRiOUdjekh6dTJiQlAtRGItc0JIeTA9czk2LWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "技術的負債解消はAIに任せずgit履歴を活用せよ ― LITALICOが実践するテックリードと連携した負債特定とリファクター判断の最適解",
-    "summary_ja": "LITALICOは、組織内の技術的負債解消においてAIの判断だけに頼らず、Git履歴から変更頻度の高いコードを抽出し、テックリードが優先度を検証する手法を導入した。 AIが提示する候補に対し、ビジネスコンテキストを持つ人間が判断を加えることで、負債解消の質と説得力を向上させる。 属人化しがちな判断基準を可視化し、開発チーム全体で共通認識を持つことが、持続可能なプロダクト開発の要となる。",
-    "translations": {
-      "ja": {
-        "title": "技術的負債解消はAIに任せずgit履歴を活用せよ ― LITALICOが実践するテックリードと連携した負債特定とリファクター判断の最適解",
-        "summary": "LITALICOは、組織内の技術的負債解消においてAIの判断だけに頼らず、Git履歴から変更頻度の高いコードを抽出し、テックリードが優先度を検証する手法を導入した。 AIが提示する候補に対し、ビジネスコンテキストを持つ人間が判断を加えることで、負債解消の質と説得力を向上させる。 属人化しがちな判断基準を可視化し、開発チーム全体で共通認識を持つことが、持続可能なプロダクト開発の要となる。"
-      },
-      "en": {
-        "title": "Don't outsource refactoring decisions to AI: How LITALICO leverages Git history to prioritize technical debt with Tech Lead verification",
-        "summary": "LITALICO is shifting its technical debt strategy by moving away from sole AI-driven recommendations in favor of a hybrid approach that utilizes Git commit history to flag high-churn code. Instead of automating the entire decision-making process, their architecture team extracts potential refactoring candidates from Git logs and requires Tech Leads to validate the business impact and necessity of the proposed work. This method ensures that critical architectural improvements are grounded in real project context rather than just blind code metrics. By formalizing this collaborative verification step, development teams can effectively bridge the gap between technical metrics and business value, turning opaque refactoring priorities into a transparent and repeatable framework that maintains long-term product extensibility."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-07T13:17:04.450Z"
   },
   {
     "id": "art-1794053836348-mar1a",
@@ -48716,32 +48746,6 @@
       "研究"
     ],
     "created_at": "2026-10-27T19:31:18.220Z"
-  },
-  {
-    "id": "art-1793128932285-thhuk",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/tech/lkpmvsso",
-    "published_at": "2026-10-27T18:50:46.000Z",
-    "og_image_url": null,
-    "title_ja": "中国のAI・半導体銘柄「Star 50」指数が4ヶ月弱で40%下落――テクノロジー関連セクターの過熱感修正と市場の不透明感",
-    "summary_ja": "中国の上海市場におけるAI・半導体関連企業が集結した「Star 50」指数が、わずか4ヶ月足らずで約40%急落した。 米中対立による半導体規制の強化や、国内景気の停滞が成長期待を削いでおり、テクノロジー株への過熱感が急速に冷めつつある。 AIやテック分野でプロダクトを展開する開発者や投資家にとって、中国市場の政策リスクとグローバルな半導体サプライチェーンの不透明さは、今後数年間の戦略策定における無視できない外部要因となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "中国のAI・半導体銘柄「Star 50」指数が4ヶ月弱で40%下落――テクノロジー関連セクターの過熱感修正と市場の不透明感",
-        "summary": "中国の上海市場におけるAI・半導体関連企業が集結した「Star 50」指数が、わずか4ヶ月足らずで約40%急落した。 米中対立による半導体規制の強化や、国内景気の停滞が成長期待を削いでおり、テクノロジー株への過熱感が急速に冷めつつある。 AIやテック分野でプロダクトを展開する開発者や投資家にとって、中国市場の政策リスクとグローバルな半導体サプライチェーンの不透明さは、今後数年間の戦略策定における無視できない外部要因となるだろう。"
-      },
-      "en": {
-        "title": "China’s Star 50 index of AI and chip leaders has plummeted 40% in under four months",
-        "summary": "China's Star 50 index, which tracks the nation's most prominent AI and semiconductor firms on the Shanghai Stock Exchange, has cratered by nearly 40% in less than four months. This rapid drawdown signals a severe market correction driven by intensifying US-China trade tensions, stricter semiconductor export controls, and broader stagnation in the domestic economy that has undercut aggressive growth projections. For founders and developers building AI-heavy stacks or relying on the regional supply chain, this volatility serves as a stark reminder that geopolitical friction remains a primary operational risk. Relying on China-based infrastructure or funding now requires factoring in unpredictable policy shifts and market instability that could disrupt hardware availability or long-term growth roadmaps for tech ventures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-10-27T19:22:12.285Z"
   },
   {
     "id": "art-1793127402106-6jljz",
