@@ -1,5 +1,113 @@
 [
   {
+    "id": "art-1794295925378-xhbfv",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/ohisama@github/items/b110b8ea593cd6ac6d2b",
+    "published_at": "2026-11-10T07:31:06.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxODEwNCUyRmZiMGEzYjAxNmI3NWM3NWZhYjQyMGUxMGIyYTc1YWZjNGQzMTIxMWMlMkZ4X2xhcmdlLnBuZyUzRjE3NTc5ODAzMTA_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTljZjJjZTNhMTliMTU4ZThhNjg3N2RmOTFlMzg1YTFj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D39440b0a00fa8b4d3536abdab6ec71e6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU4JTg3JUFBJUU0JUJEJTlDTUNQJUUzJTgyJUI1JUUzJTgzJUJDJUUzJTgzJTkwJUUzJTgzJUJDJTIwJUUzJTgxJTlEJUUzJTgxJUFFNSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWJiMDA5ZmNkOGU1MTQwNDg2YzBkZWFmNzk3NzUwMmI3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBvaGlzYW1hJTQwZ2l0aHViJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MGY0ZWFmYWQ5NjRjYTllOWJiNWUyYTg4Mjg3NWYwZWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=8a915b615d12ec2b70a76864d3ad8110",
+    "title_ja": "自作MCPサーバー開発の落とし穴：Claude Desktop設定ファイルでハマるJSON構文エラーの特定と修正プロセスを詳解",
+    "summary_ja": "自作MCPサーバーをClaude Desktopに統合する際、設定ファイル「claude_desktop_config.json」の記述ミスでエラーが発生する事例が増えている。 本稿では、AI支援を活用した構築プロセスと、特にJSONファイルの末尾付近に発生しやすい構文エラーの原因特定、そして正常動作させるための構成修正手順を解説する。 MCPサーバーの構築において、プロトコル仕様だけでなく、JSON定義の整合性確認が開発をスムーズに進めるための重要なステップとなる。",
+    "translations": {
+      "ja": {
+        "title": "自作MCPサーバー開発の落とし穴：Claude Desktop設定ファイルでハマるJSON構文エラーの特定と修正プロセスを詳解",
+        "summary": "自作MCPサーバーをClaude Desktopに統合する際、設定ファイル「claude_desktop_config.json」の記述ミスでエラーが発生する事例が増えている。 本稿では、AI支援を活用した構築プロセスと、特にJSONファイルの末尾付近に発生しやすい構文エラーの原因特定、そして正常動作させるための構成修正手順を解説する。 MCPサーバーの構築において、プロトコル仕様だけでなく、JSON定義の整合性確認が開発をスムーズに進めるための重要なステップとなる。"
+      },
+      "en": {
+        "title": "Debugging Claude Desktop MCP Server Configurations: Solving Common JSON Syntax Errors When Integrating Custom Tools into the AI Workflow",
+        "summary": "Building and integrating custom MCP servers with Claude Desktop is gaining traction, yet developers frequently hit roadblocks within the claude_desktop_config.json file. This guide breaks down the common pitfalls encountered when adding new server blocks to the configuration, specifically focusing on the silent JSON syntax errors that prevent successful model connectivity. By walking through the troubleshooting process—ranging from AI-assisted diagnosis to manual structural verification—the author demonstrates how subtle formatting mistakes at the end of the JSON file can derail an entire setup. For builders, the key lesson here is to strictly validate your JSON schema early and often, as minor configuration slips remain the most frequent culprit behind failed MCP server initializations in local development environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-10T07:32:05.378Z"
+  },
+  {
+    "id": "art-1794295910486-tyhce",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/kaji_kaji/articles/speaking-log-eikaiwa-review-tool-intro",
+    "published_at": "2026-11-10T00:00:07.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--GT5Y7zBj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B1%25E3%2583%2581%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%258C%25E3%2582%25B5%25E3%2583%2596%25E3%2582%25B9%25E3%2582%25AF%25E6%2596%2599%25E9%2587%2591%25E3%2582%2592%25E3%2582%25B1%25E3%2583%2581%25E3%2581%25A3%25E3%2581%25A6%25E9%25AB%2598%25E7%25B2%25BE%25E5%25BA%25A6%25E3%2581%25AE%25E6%2596%2587%25E5%25AD%2597%25E8%25B5%25B7%25E3%2581%2593%25E3%2581%2597%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kaji%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lnRmJNQUNGVE5OWHZLZGdpQzlkMkNfYlkxUnFoWjN6eVhqdnhCPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "既存アプリは高すぎて自作。個人開発者がChatGPT連携の英会話文字起こし・話者分離ツール「speaking-log」を構築した理由",
+    "summary_ja": "英会話レッスンの復習効率化を目指し、個人開発者が高精度な文字起こし・話者分離ツール「speaking-log」を自作した。 市販の文字起こしアプリの月額課金が高額で、ChatGPTへの直接入力にはトークン制限の壁があったため、Macローカルで前処理を行い最適化する手法を選択。 並列処理による高速化や、自作ならではの低コスト運用を実現しており、ツール選定や既存サービスの価格に不満を持つ開発者にとって、自前構築の好事例となっている。",
+    "translations": {
+      "ja": {
+        "title": "既存アプリは高すぎて自作。個人開発者がChatGPT連携の英会話文字起こし・話者分離ツール「speaking-log」を構築した理由",
+        "summary": "英会話レッスンの復習効率化を目指し、個人開発者が高精度な文字起こし・話者分離ツール「speaking-log」を自作した。 市販の文字起こしアプリの月額課金が高額で、ChatGPTへの直接入力にはトークン制限の壁があったため、Macローカルで前処理を行い最適化する手法を選択。 並列処理による高速化や、自作ならではの低コスト運用を実現しており、ツール選定や既存サービスの価格に不満を持つ開発者にとって、自前構築の好事例となっている。"
+      },
+      "en": {
+        "title": "Developer builds custom 'speaking-log' AI transcription tool to avoid high monthly subscription fees for English learning apps",
+        "summary": "Faced with expensive monthly subscriptions for transcription services and context window limits when passing audio to ChatGPT, a developer built 'speaking-log' to handle English conversation review. The tool runs locally on macOS, performing audio transcription and speaker diarization before feeding cleaned transcripts into an AI model for analysis. By implementing custom parallel processing, the builder reduced costs significantly compared to commercial SaaS alternatives. The project highlights that for niche use cases, building a lightweight local preprocessing pipeline often beats paying for subscription-based apps. This case study serves as a practical blueprint for developers looking to optimize AI workflows by avoiding off-the-shelf pricing and building high-performance, tailored internal tooling for personal productivity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-10T07:31:50.486Z"
+  },
+  {
+    "id": "art-1794295903485-2dcaf",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+    "published_at": "2026-11-10T07:28:21.000Z",
+    "og_image_url": "https://static.simonwillison.net/static/2026/muse-ember.webp",
+    "title_ja": "Meta AI、軽量LLM「Muse Ember」を発表。Claude HaikuやGPT Luna競合の高速推論特化型モデルで100万トークン対応",
+    "summary_ja": "Meta AIが新たに発表した「Muse Ember」は、Claude HaikuやGPT Lunaに対抗する、推論・ツール利用・長文解析に特化した最小かつ効率的なLLMだ。 価格は入力100万トークンあたり0.10ドルと低コストに抑えられ、短尺プロンプトから長大なドキュメント処理まで対応する。 開発者はAIエージェントのルーティングやコーディング補助といった、頻繁に発生する反復的なサブタスクを安価に自動化する選択肢として活用できる。",
+    "translations": {
+      "ja": {
+        "title": "Meta AI、軽量LLM「Muse Ember」を発表。Claude HaikuやGPT Luna競合の高速推論特化型モデルで100万トークン対応",
+        "summary": "Meta AIが新たに発表した「Muse Ember」は、Claude HaikuやGPT Lunaに対抗する、推論・ツール利用・長文解析に特化した最小かつ効率的なLLMだ。 価格は入力100万トークンあたり0.10ドルと低コストに抑えられ、短尺プロンプトから長大なドキュメント処理まで対応する。 開発者はAIエージェントのルーティングやコーディング補助といった、頻繁に発生する反復的なサブタスクを安価に自動化する選択肢として活用できる。"
+      },
+      "en": {
+        "title": "Meta AI Launches Muse Ember, a Cost-Efficient Small Model Competing with Claude Haiku and GPT Luna",
+        "summary": "Meta AI has unveiled Muse Ember, a highly efficient, compact LLM positioned to compete directly against models like Claude Haiku and GPT Luna. Designed specifically for complex reasoning, tool calls, coding subtasks, and parsing long documents, Ember offers a high-performance solution for repetitive agentic workflows. Pricing is aggressive at just $0.10 per million input tokens and $0.50 per million output, matching its primary market rivals. With support for up to one million input tokens, it is ideally suited for developers needing a robust, low-cost foundation for AI agent routing and automated data extraction. For builders, this model represents a critical shift toward affordable, specialized intelligence for high-volume backend tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-10T07:31:43.485Z"
+  },
+  {
+    "id": "art-1794295894655-g666l",
+    "source_id": "source-fireflies",
+    "source_name": "Fireflies.ai Blog",
+    "url": "https://fireflies.ai/blog/voice-recorder-apps",
+    "published_at": "2026-11-09T12:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "2026年版：AI文字起こし対応のボイスレコーダーアプリ10選—無料からプロ仕様までiPhone/Android対応ツールを徹底比較",
+    "summary_ja": "2026年現在のAIボイスレコーダー市場において、自動文字起こし、要約機能、クラウド同期を備えた推奨アプリ10選を比較検証した。 単なる録音を超え、会議の議事録作成やインタビューの効率化に不可欠なツールセットとして、無料枠の範囲や有料版のコストパフォーマンスを精査している。 個人開発者やビジネスパーソンにとって、どのツールが既存の生産性向上フローと統合できるか、具体的な選定基準を提示する。",
+    "translations": {
+      "ja": {
+        "title": "2026年版：AI文字起こし対応のボイスレコーダーアプリ10選—無料からプロ仕様までiPhone/Android対応ツールを徹底比較",
+        "summary": "2026年現在のAIボイスレコーダー市場において、自動文字起こし、要約機能、クラウド同期を備えた推奨アプリ10選を比較検証した。 単なる録音を超え、会議の議事録作成やインタビューの効率化に不可欠なツールセットとして、無料枠の範囲や有料版のコストパフォーマンスを精査している。 個人開発者やビジネスパーソンにとって、どのツールが既存の生産性向上フローと統合できるか、具体的な選定基準を提示する。"
+      },
+      "en": {
+        "title": "The 10 Best AI-Powered Voice Recorder Apps for 2026: Comparing Free and Pro Options for Mobile",
+        "summary": "The landscape for voice recording has shifted from simple audio capture to intelligent productivity tools that handle transcription, summarization, and cloud-based organization. This guide curates the ten best mobile recorder apps for 2026, comparing feature sets like speaker identification, multi-language support, and integration capabilities across iOS and Android. For builders and professionals seeking to streamline meetings or interview workflows, we break down the critical differences between freemium tiers and premium subscriptions. Choosing the right recorder isn't just about audio fidelity anymore; it is about how effectively the tool bridges the gap between raw voice data and actionable insights. Use this breakdown to optimize your stack for faster documentation and smarter information retrieval on the go."
+      }
+    },
+    "tool_tags": [
+      "Fireflies"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "音声"
+    ],
+    "created_at": "2026-11-10T07:31:34.655Z"
+  },
+  {
     "id": "art-1794295016769-4djvl",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -17833,32 +17941,6 @@
     "created_at": "2026-11-07T23:32:06.749Z"
   },
   {
-    "id": "art-1794094312214-7ytej",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/joinclass/items/3d05264c7d44f84b52f5",
-    "published_at": "2026-11-07T23:30:03.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjA2ODkxJTJGNzhmNWJiNzA1YjdlZjlkYWVjZWRhOGI2ODdlNTU5ZjA5YzI1YmYzZSUyRnhfbGFyZ2UucG5nJTNGMTc3NDUxODE0Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9M2ZhMWQ1NDMyODQzNzkzNTIyNzRiMzk2ZDdmYmJmMTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd9c2258cfe819f9c4489a1d86672b88f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFMyU4MSVBRSUyMFNraWxscyUyMCVFMyU4MSU4QyVFNSVBMiU5NyVFMyU4MSU4OCVFMyU4MSU5OSVFMyU4MSU4RSVFMyU4MSVBNiUyMEFJJTIwJUUzJTgxJThDJUU5JTgxJUI4JUUzJTgxJUI5JUUzJTgxJUFBJUUzJTgxJThGJUUzJTgxJUFBJUUzJTgyJThCJUU1JTk1JThGJUU5JUExJThDJTIwJUUyJTgwJTk0JTIwJUU1JTkxJUJEJUU1JTkwJThEJUU4JUE2JThGJUU1JTg5JTg3JUUzJTgxJUE4JTIwZGVzY3JpcHRpb24lMjAlRTMlODElQUUlRTglQTglQUQlRTglQTglODgmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03MWFjNmMyODViNzFhNDY4ZTE3ZGE1YzE5ZTk5MzFlNw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBqb2luY2xhc3MmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz02MTk0ZGNhMTQxZGVmYmVkMzIyZTJlNjgwN2VlNDI0ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=f823e6bab9b12eb2f4be7c043da5f07d",
-    "title_ja": "Claude Codeの「スキル選択問題」を解決する命名規則とdescription設計：AIが自律的にタスクを正確に実行するための実践的ガイド",
-    "summary_ja": "Claude Codeでスキル数が増大するとAIが適切なツールを選択できなくなる問題が発生する。 これを解決するには、スキル名を一意かつ機能的に定義し、LLMが理解しやすい正確なdescriptionを付与することが不可欠だ。 単なる機能列挙ではなく、どのような状況で呼び出すべきかの文脈を記述に含めることで、自律エージェントの誤作動を防ぎ、開発ワークフローの自動化精度を大幅に向上させることができる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの「スキル選択問題」を解決する命名規則とdescription設計：AIが自律的にタスクを正確に実行するための実践的ガイド",
-        "summary": "Claude Codeでスキル数が増大するとAIが適切なツールを選択できなくなる問題が発生する。 これを解決するには、スキル名を一意かつ機能的に定義し、LLMが理解しやすい正確なdescriptionを付与することが不可欠だ。 単なる機能列挙ではなく、どのような状況で呼び出すべきかの文脈を記述に含めることで、自律エージェントの誤作動を防ぎ、開発ワークフローの自動化精度を大幅に向上させることができる。"
-      },
-      "en": {
-        "title": "Solving Claude Code's skill selection conflict through strict naming conventions and semantic descriptions for autonomous agents",
-        "summary": "As the volume of skills in Claude Code grows, agents often struggle to select the correct tool for specific tasks, leading to frequent errors. The solution lies in applying rigorous, unambiguous naming conventions and crafting high-fidelity descriptions that act as intent definitions for the LLM. Rather than simply listing functionality, developers should codify the exact execution context within the description to guide the agent’s decision-making process. By shifting from implicit to explicit skill definition, builders can drastically reduce hallucinated tool invocations and ensure that complex autonomous workflows—like automated content publishing—remain reliable. This architectural discipline is necessary for maintaining control over agentic systems as they scale toward executing dozens of operational jobs simultaneously."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-07T23:31:52.215Z"
-  },
-  {
     "id": "art-1794093418572-nxua0",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -17909,32 +17991,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-07T23:02:07.974Z"
-  },
-  {
-    "id": "art-1794092517274-1shas",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Git_Dayori/items/b77667568c2f6c62fc1d",
-    "published_at": "2026-11-07T22:31:45.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDE0MTQwJTJGZWNhZmNiZjMyMzkwOGQ3ODlmNzkyZDUxNTZmZDZlNTVkY2EzNjM0MSUyRnhfbGFyZ2UucG5nJTNGMTc3NjkyMzE3Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTk0ZjU5ZmZjNDczOGQ2ZDUzNDI4Yjc3ZTc2YWFhMGQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D454c3a9a5e0968be2f7a10c3c9f8eb49?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwR2l0SHViJUU2JTk3JUE1JUU1JUEwJUIxJUUzJTgwJTkxbW9ybHV0byUyRnJlYSVFMyU4MSU4QyUyQjMlMkMzMDglRTMlODElQTclRTklQTYlOTYlRTQlQkQlOEQlRTMlODAlODFHcm9rJTIwQm90JUUzJTgzJTg2JUUzJTgzJUIzJUUzJTgzJTk3JUUzJTgzJUFDJUU5JTlCJTg2JUUzJTgyJTgyJUU1JTg4JTlEJUU3JTk5JUJCJUU1JUEwJUI0JTIwJUUyJTgwJTk0JTIwMjAyNi0xMS0wOCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTNiMWMzYTQxNmIyNGY5NmI5NWVkOGU0OTEzYWMxMDVl&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBHaXRfRGF5b3JpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZjI4YjlmMWRhMWM3MjMyODkxYjlmNGVjZDU1N2Q0ZWM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=2c4767bf1e5d59566c62740165a660b2",
-    "title_ja": "GitHubトレンド日報：morluto/reaが+3,308で首位に急浮上、Grok Botテンプレート集も初ランクイン（2026年11月8日版）",
-    "summary_ja": "2026年11月8日のGitHubトレンドでは、開発効率化ツール「morluto/rea」が圧倒的な支持を集め、3,308スターを獲得して首位に浮上した。 さらにGrok Botのテンプレート集も新たに初登場しており、AI関連ボットの需要が個人開発者の間で急増していることが伺える。 トレンドの上位を追うことは、次に流行する技術スタックをいち早くキャッチアップし、自身のプロジェクトに実装するための最良の戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "GitHubトレンド日報：morluto/reaが+3,308で首位に急浮上、Grok Botテンプレート集も初ランクイン（2026年11月8日版）",
-        "summary": "2026年11月8日のGitHubトレンドでは、開発効率化ツール「morluto/rea」が圧倒的な支持を集め、3,308スターを獲得して首位に浮上した。 さらにGrok Botのテンプレート集も新たに初登場しており、AI関連ボットの需要が個人開発者の間で急増していることが伺える。 トレンドの上位を追うことは、次に流行する技術スタックをいち早くキャッチアップし、自身のプロジェクトに実装するための最良の戦略となる。"
-      },
-      "en": {
-        "title": "GitHub Trending Report: morluto/rea Soars to Top Spot with 3,308 New Stars as Grok Bot Templates Gain Traction",
-        "summary": "In the GitHub Trending report for November 8, 2026, the developer-focused repository morluto/rea dominated the charts by securing over 3,308 stars, underscoring intense community interest in current tooling updates. Simultaneously, Grok Bot template collections entered the trending rankings for the first time, signaling a significant shift in developer attention toward AI-driven agent automation. For builders, these daily fluctuations in GitHub activity are crucial indicators of where the next wave of open-source momentum is headed. By monitoring these repository spikes, developers can gain a first-mover advantage, quickly integrating trending patterns and agentic workflows into their own stacks before the broader market adopts them, keeping their personal projects on the cutting edge."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-07T23:01:57.274Z"
   },
   {
     "id": "art-1794091594900-s58so",
@@ -24135,31 +24191,6 @@
     "created_at": "2026-11-05T20:01:35.579Z"
   },
   {
-    "id": "art-1793908018605-i2smw",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/ai_secretary/articles/492069400e36aa",
-    "published_at": "2026-11-05T13:30:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--AfxlpeN1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2580%258C%25E5%258B%259D%25E6%2589%258B%25E3%2581%25AA%25E6%258E%25A8%25E6%25B8%25AC%25E3%2580%258D%25E3%2582%2592%25E3%2581%2595%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2581%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25AE%25E5%259E%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E7%25A7%2598%25E6%259B%25B8%25E3%2583%25A9%25E3%2583%259C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzcwNWRiOTM4YWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIの「勝手な推測」を封じる「ルールファイル」設計術：ChatGPTやClaudeの自律的な誤動作を防ぐための恒常的な指示書作成ガイド",
-    "summary_ja": "AI自動化における「勝手な推測」や未確認データでの報告作成といった誤動作は、モデルの能力不足ではなく、前提の定義不足に起因する。 これを防ぐためにコード実装の前に作成すべきなのが、AIへの恒常的な指示を網羅した「ルールファイル」だ。 入出力の制約や判断基準を事前に明文化しておくことで、AIの暴走を抑え込み、自動化の品質を「モデルの賢さ」に依存せず設計レベルで担保できる。 開発者はまずプロンプトの調整よりも、このルール定義を固めることから始めるべきである。",
-    "translations": {
-      "ja": {
-        "title": "AIの「勝手な推測」を封じる「ルールファイル」設計術：ChatGPTやClaudeの自律的な誤動作を防ぐための恒常的な指示書作成ガイド",
-        "summary": "AI自動化における「勝手な推測」や未確認データでの報告作成といった誤動作は、モデルの能力不足ではなく、前提の定義不足に起因する。 これを防ぐためにコード実装の前に作成すべきなのが、AIへの恒常的な指示を網羅した「ルールファイル」だ。 入出力の制約や判断基準を事前に明文化しておくことで、AIの暴走を抑え込み、自動化の品質を「モデルの賢さ」に依存せず設計レベルで担保できる。 開発者はまずプロンプトの調整よりも、このルール定義を固めることから始めるべきである。"
-      },
-      "en": {
-        "title": "Designing AI Rule Files to Prevent Hallucinations: How to Stop Autonomous Models from Making Unwanted Assumptions in Your Automation Workflows",
-        "summary": "When deploying AI agents, common failures like unauthorized data handling or hallucinated reporting are rarely model defects; they are usually structural failures in your instructions. To fix this, developers should build \"rule files\"—persistent, static instruction sets that define the guardrails for AI decision-making before you write a single line of automation code. By codifying constraints, input/output validation, and decision-making logic upfront, you decouple execution quality from the model's inherent intelligence. This approach forces reliability at the design layer, ensuring that your agents operate within strict boundaries regardless of how the underlying model evolves. For builders, the lesson is clear: treating instructions as a static infrastructure layer is mandatory if you want to scale reliable AI systems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-05T19:46:58.605Z"
-  },
-  {
     "id": "art-1793908000349-jcrmt",
     "source_id": "source-hf",
     "source_name": "Hugging Face Blog / Papers",
@@ -24185,32 +24216,6 @@
       "動画"
     ],
     "created_at": "2026-11-05T19:46:40.349Z"
-  },
-  {
-    "id": "art-1793907126539-ewin7",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/frb_tamasub/articles/ai-collaboration12-shuriken-press-conference",
-    "published_at": "2026-11-05T13:48:40.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--A4DqbWpM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E5%258D%2594%25E5%2583%258D%25EF%25BC%259A%25E3%2582%25A8%25E3%2582%25AF%25E3%2582%25B9%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25A9%25E3%2583%25BC%25E3%2581%25AB%25E9%25AD%2582%25E3%2582%2592%25E5%2590%25B9%25E3%2581%258D%25E8%25BE%25BC%25E3%2582%2580%25E6%2589%258B%25E8%25A3%258F%25E5%2589%25A3%25E3%2581%25AE%25E8%25A9%25B1%2520%25E2%2580%2594%2520%25E3%2581%2597%25E3%2582%2585%25E3%2581%25A3%25EF%25BC%2581%25EF%25BC%2588%25E7%25AC%2591%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Fishing%2520Rod%2520Benchm...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2R0U29uVm51ekRNcGZEWGExMDMwSzl1eHV5WTFsRllUU2lGYmp1a1c0M3pIa3REWTNfdz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発者が提案する「手裏剣UI」の挑戦：マウス操作に「シュッ！」と振る直感的なジェスチャーを取り入れた新しいスクロールとメニュー体験",
-    "summary_ja": "個人開発者が、実験的UIとしてマウス操作に「手裏剣のように振る」直感的なインタラクションを導入した。 「手裏剣メニュー」と「手裏剣スクロール」は、クリック後にマウスを振る動作で操作を完結させる。 生産性の向上は未知数だが、スクロールの減速処理など、操作自体に楽しさを付加する試みは開発体験のUXを再考させる。 UIデザインにおける「心地よさ」の探求は、効率一辺倒になりがちなツール開発において、ユーザー体験を深める重要な要素となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発者が提案する「手裏剣UI」の挑戦：マウス操作に「シュッ！」と振る直感的なジェスチャーを取り入れた新しいスクロールとメニュー体験",
-        "summary": "個人開発者が、実験的UIとしてマウス操作に「手裏剣のように振る」直感的なインタラクションを導入した。 「手裏剣メニュー」と「手裏剣スクロール」は、クリック後にマウスを振る動作で操作を完結させる。 生産性の向上は未知数だが、スクロールの減速処理など、操作自体に楽しさを付加する試みは開発体験のUXを再考させる。 UIデザインにおける「心地よさ」の探求は、効率一辺倒になりがちなツール開発において、ユーザー体験を深める重要な要素となる。"
-      },
-      "en": {
-        "title": "Personal Developer Introduces 'Shuriken UI': A Novel Concept Combining Flicking Mouse Gestures with Intuitive Scroll and Menu Interactions",
-        "summary": "A solo developer has introduced an experimental 'Shuriken UI' concept that integrates flick-based mouse gestures into standard desktop interactions. Through the 'Shuriken Menu' and 'Shuriken Scroll,' users initiate commands by clicking and physically flicking the mouse, adding a layer of tactile feedback to software navigation. While the measurable productivity gains remain unproven, the project highlights how incorporating kinetic physics—such as customizable deceleration curves—can transform tedious UI tasks into a surprisingly enjoyable experience. For individual builders focused on shipping, this experiment serves as a reminder that prioritizing 'delight' in UX design can be just as crucial as feature parity, helping to differentiate custom tools from standard, rigid interfaces in an increasingly automated landscape."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-05T19:32:06.539Z"
   },
   {
     "id": "art-1793905311822-hy4qu",
