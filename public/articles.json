@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794294126686-yspka",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/shiroemons/articles/e46ad04431fa25",
+    "published_at": "2026-11-10T04:00:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Kmn4AepI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GCS%25E3%2582%25A8%25E3%2583%259F%25E3%2583%25A5%25E3%2583%25AC%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%25E3%2580%258Cgcs-mimic%25E3%2580%258D%25E3%2582%2592AI%25E3%2581%25A8Rust%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25B7%25E3%2583%25AD%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lXR1FKOHB0QVR3aTRiaVhGelVGMTk4ZHEtUWJZMlZWSUxEWU5ackE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Google Cloud Storageエミュレーター「gcs-mimic」開発記：RustとAI活用によるローカル開発・CI環境の効率化",
+    "summary_ja": "個人開発者のシロ氏が、Google Cloud Storage互換のRust製OSSエミュレーター「gcs-mimic」を公開した。 開発過程ではClaude CodeとClaude 3.5 Sonnetを活用し、GCSのAPI挙動を模倣するミドルウェアとして実装することで、ローカル環境やCIにおけるストレージテストを高速化・簡素化する。 外部クラウドの依存を排したエミュレーターによるテストの自律化は、開発体験の向上とコスト削減の両面で極めて有効な戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "Google Cloud Storageエミュレーター「gcs-mimic」開発記：RustとAI活用によるローカル開発・CI環境の効率化",
+        "summary": "個人開発者のシロ氏が、Google Cloud Storage互換のRust製OSSエミュレーター「gcs-mimic」を公開した。 開発過程ではClaude CodeとClaude 3.5 Sonnetを活用し、GCSのAPI挙動を模倣するミドルウェアとして実装することで、ローカル環境やCIにおけるストレージテストを高速化・簡素化する。 外部クラウドの依存を排したエミュレーターによるテストの自律化は、開発体験の向上とコスト削減の両面で極めて有効な戦略となる。"
+      },
+      "en": {
+        "title": "Building gcs-mimic: A Rust-based Google Cloud Storage emulator created with AI for faster local dev and CI",
+        "summary": "Independent developer Shiro has released 'gcs-mimic,' an open-source emulator written in Rust that mimics Google Cloud Storage API behavior for local development and CI pipelines. By leveraging Claude Code and Claude 3.5 Sonnet during the development process, the project delivers a high-performance middleware that avoids costly and slow dependencies on actual cloud services during integration tests. For developers aiming to streamline testing workflows, gcs-mimic demonstrates the power of creating lightweight, project-specific emulators to ensure test isolation and consistency. The tool highlights how combining modern Rust with AI-assisted coding can quickly fill niche infrastructure gaps in a developer's stack, significantly improving iteration speeds while keeping testing environments entirely self-contained and cost-free."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-10T07:02:06.686Z"
+  },
+  {
+    "id": "art-1794294119033-xbbts",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/marvelousu/articles/subscription-agent-workers",
+    "published_at": "2026-11-10T04:30:48.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--5Gxifa38--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%258810%25E3%2583%2589%25E3%2583%25AB%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25A7%2520Claude%2520Code%2520%25E3%2581%25AE%25E3%2582%25B5%25E3%2583%2596%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2582%2592%25E7%25BD%25AE%25E3%2581%258D%25E6%258F%259B%25E3%2581%2588%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Tom%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZmOWVjOTE5YjEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "月額10ドルのOpenCode GoでClaude Codeのサブタスクを代替、開発コスト最適化と運用実績を公開",
+    "summary_ja": "Claude Codeなどの高機能エージェントによる実装や調査タスクの一部を、月額10ドルの「OpenCode Go」および「Command Code」にオフロードする運用術を解説する。 複雑な設計判断には上位モデルを使い、定型的なコーディングや調査は安価なモデルに任せるハイブリッドな役割分担により、APIコストを抑制しつつ生産性を維持する。 実装の切り分けやモデルの使い分けが、AI開発環境におけるコストパフォーマンス最大化の要となる。",
+    "translations": {
+      "ja": {
+        "title": "月額10ドルのOpenCode GoでClaude Codeのサブタスクを代替、開発コスト最適化と運用実績を公開",
+        "summary": "Claude Codeなどの高機能エージェントによる実装や調査タスクの一部を、月額10ドルの「OpenCode Go」および「Command Code」にオフロードする運用術を解説する。 複雑な設計判断には上位モデルを使い、定型的なコーディングや調査は安価なモデルに任せるハイブリッドな役割分担により、APIコストを抑制しつつ生産性を維持する。 実装の切り分けやモデルの使い分けが、AI開発環境におけるコストパフォーマンス最大化の要となる。"
+      },
+      "en": {
+        "title": "Replacing Claude Code sub-tasks with $10/month OpenCode Go for cost-effective AI development workflows",
+        "summary": "This article details a pragmatic workflow for offloading repetitive coding and research tasks from high-end agents like Claude Code to OpenCode Go and Command Code, both priced at $10 per month. By reserving expensive models for high-level architectural decisions while delegating boilerplate implementation and routine investigation to these cost-effective alternatives, the author maintains high productivity without incurring excessive API overhead. The piece outlines exactly how to partition tasks effectively, shares three weeks of operational data, and discusses hitting usage limits. For solo builders, this hybrid approach demonstrates that scaling AI development successfully requires a strict separation of concerns, ensuring expensive reasoning capacity is strictly reserved for tasks where model capability, not just speed, truly adds value."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-10T07:01:59.033Z"
+  },
+  {
+    "id": "art-1794294111336-sst1j",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/pretty-arrow",
+    "published_at": "2026-11-09T18:24:09+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/ajswhb2tgxh8voqh2xs0grh5qtxb",
+    "title_ja": "GitHub Stars 4,000超のSVG作成ツール「Pretty Arrow」開発者が明かす、週末プロジェクトからGitHubトレンド入りまでの全軌跡",
+    "summary_ja": "SVG矢印作成ツール「Pretty Arrow」の開発者が、わずか数日の週末開発でGitHubトレンド入りし、4,000以上のスターを獲得した舞台裏を公開。 当初は単純なツールとして公開したが、ユーザーからのフィードバックを即座にUIへ反映し、機能を絞り込むことで開発者コミュニティの支持を得た。 個人開発の成功要因は、複雑な多機能化を避け、一つの課題を解決するシンプルなUXを貫き、オープンソースとして公開してエンジニアのニーズに直結させる戦略にある。",
+    "translations": {
+      "ja": {
+        "title": "GitHub Stars 4,000超のSVG作成ツール「Pretty Arrow」開発者が明かす、週末プロジェクトからGitHubトレンド入りまでの全軌跡",
+        "summary": "SVG矢印作成ツール「Pretty Arrow」の開発者が、わずか数日の週末開発でGitHubトレンド入りし、4,000以上のスターを獲得した舞台裏を公開。 当初は単純なツールとして公開したが、ユーザーからのフィードバックを即座にUIへ反映し、機能を絞り込むことで開発者コミュニティの支持を得た。 個人開発の成功要因は、複雑な多機能化を避け、一つの課題を解決するシンプルなUXを貫き、オープンソースとして公開してエンジニアのニーズに直結させる戦略にある。"
+      },
+      "en": {
+        "title": "How the developer of 'Pretty Arrow' hit 4,000 GitHub stars and landed on the trending list in just a few days",
+        "summary": "The creator of Pretty Arrow shares the journey behind building a simple SVG arrow generator that unexpectedly racked up over 4,000 GitHub stars shortly after launch. Starting as a weekend side project, the tool gained rapid traction on the GitHub trending page by prioritizing a frictionless user interface and solving one specific problem exceptionally well. Rather than chasing feature bloat, the developer focused on rapid iteration based on initial user feedback and maintaining a minimalist design philosophy. This case study illustrates that for solo developer projects, the secret to viral adoption often lies in identifying a niche utility, open-sourcing the solution, and shipping a highly polished, single-purpose interface that resonates immediately with other developers."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-10T07:01:51.336Z"
+  },
+  {
+    "id": "art-1794294101948-bxgtp",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+    "published_at": "2026-11-10T03:53:04.000Z",
+    "og_image_url": "https://static.simonwillison.net/static/2026/yonkers.webp",
+    "title_ja": "Claude Fable 5.2を活用した3D都市モデリングの実践：OpenStreetMapデータを用いた「巨大ロボ」アニメーションの生成",
+    "summary_ja": "サイモン・ウィリソン氏は、Claude Fable 5.2の3Dモデリングおよびアニメーション生成能力を検証するため、ニューヨークのヨンカーズ市を巨大メカとして可視化するプロジェクトを試みた。 OpenStreetMapの地図データを基にThree.js形式でレンダリングする指示を出した際、AIはユーザーのタイポ（átomos）を文脈から「stomps（足踏み）」と正確に推論し、意図通りの挙動を再現した。",
+    "translations": {
+      "ja": {
+        "title": "Claude Fable 5.2を活用した3D都市モデリングの実践：OpenStreetMapデータを用いた「巨大ロボ」アニメーションの生成",
+        "summary": "サイモン・ウィリソン氏は、Claude Fable 5.2の3Dモデリングおよびアニメーション生成能力を検証するため、ニューヨークのヨンカーズ市を巨大メカとして可視化するプロジェクトを試みた。 OpenStreetMapの地図データを基にThree.js形式でレンダリングする指示を出した際、AIはユーザーのタイポ（átomos）を文脈から「stomps（足踏み）」と正確に推論し、意図通りの挙動を再現した。"
+      },
+      "en": {
+        "title": "Using Claude Fable 5.2 to animate 3D city models with Three.js and OpenStreetMap data",
+        "summary": "Simon Willison recently tested the 3D modeling and animation capabilities of Claude Fable 5.2 by prompting the AI to visualize the city of Yonkers as a giant mech stomping around New York City using OpenStreetMap data. When instructed to generate a Three.js animation, the model successfully interpreted a user typo—correcting 'átomos' to 'stomps'—and produced accurate code to visualize the motion. This experiment highlights how modern LLMs are becoming increasingly proficient at integrating geospatial data with functional frontend code to produce complex, animated 3D visualizations. For developers, this demonstrates a shift where natural language prompts are becoming a viable interface for bootstrapping complex web graphics and interactive geospatial simulations without needing to write boilerplate from scratch."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-10T07:01:41.948Z"
+  },
+  {
     "id": "art-1794293226868-nno96",
     "source_id": "source-simonwillison",
     "source_name": "Simon Willison's Weblog",
@@ -18647,32 +18753,6 @@
     "created_at": "2026-11-07T16:31:42.809Z"
   },
   {
-    "id": "art-1794068217129-zc8pf",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/zhaojiayi/articles/9549a83ebf3324",
-    "published_at": "2026-11-07T12:36:09.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--glSsGR_L--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:X%25E3%2581%25AE%25E3%2581%2584%25E3%2581%2584%25E3%2581%25AD%25E3%2581%25A8%25E3%2583%25AA%25E3%2583%259D%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E3%2580%2581AI%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25A6%25E3%2582%25B6%25E3%2581%25A7%25E6%2595%25B4%25E7%2590%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ZHAOJIAYI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzliZTQ0MjMwNTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "WorkBuddyとAIブラウザ「ego」を活用し、Xの「いいね・リポスト」を週次自動整理するAIエージェントの構築記録",
-    "summary_ja": "Xの膨大な「いいね」や「リポスト」を放置せず、自身の関心の変化を可視化するために、AIエージェント「WorkBuddy」とAIブラウザ「ego」を組み合わせた自動整理システムを構築。 ブラウザ操作をAIに実行させる「Skill」機能を使うことで、わずか1文の指示で週次の投稿抽出から整理までを自動化した。 個人の情報収集フローをAIに外部委託し、埋もれた知見を定期的に振り返るための開発手法として非常に有用である。",
-    "translations": {
-      "ja": {
-        "title": "WorkBuddyとAIブラウザ「ego」を活用し、Xの「いいね・リポスト」を週次自動整理するAIエージェントの構築記録",
-        "summary": "Xの膨大な「いいね」や「リポスト」を放置せず、自身の関心の変化を可視化するために、AIエージェント「WorkBuddy」とAIブラウザ「ego」を組み合わせた自動整理システムを構築。 ブラウザ操作をAIに実行させる「Skill」機能を使うことで、わずか1文の指示で週次の投稿抽出から整理までを自動化した。 個人の情報収集フローをAIに外部委託し、埋もれた知見を定期的に振り返るための開発手法として非常に有用である。"
-      },
-      "en": {
-        "title": "Building an AI agent with WorkBuddy and ego to automate weekly organization of X likes and reposts",
-        "summary": "To prevent high volumes of X likes and reposts from fading into obscurity, the author constructed an automated system using the WorkBuddy AI agent and the ego AI browser. By leveraging the browser's skill-based execution capabilities, the agent manages to parse and organize a week's worth of interactions via a single natural language prompt. The process systematically extracts data, helping the user reflect on shifting personal interests rather than letting content pile up indefinitely. This workflow demonstrates how delegating routine browser interactions to specialized agents can effectively bridge the gap between passive content consumption and active knowledge management, proving that even simple automation can turn cluttered social media activity into a coherent, reviewable feedback loop."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-07T16:16:57.129Z"
-  },
-  {
     "id": "art-1794068191153-yigf2",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -24132,33 +24212,6 @@
       "開発"
     ],
     "created_at": "2026-11-05T19:16:50.483Z"
-  },
-  {
-    "id": "art-1793905318887-hnmhk",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/atsushi_apps/articles/still-images-to-app-promo-video",
-    "published_at": "2026-11-05T14:03:49.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---bxbyTwk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%25BB%25E9%259D%25A2%25E3%2581%25AE%25E9%259D%2599%25E6%25AD%25A2%25E7%2594%25BB%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E3%2580%2581%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25AE%25E7%25B8%25A6%25E9%2595%25B7%25E3%2581%25AE%25E7%25B4%25B9%25E4%25BB%258B%25E5%258B%2595%25E7%2594%25BB%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25EF%25BC%2588ffmpeg%25EF%25BC%258BPython%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Atsushi%25EF%25BD%259C%25E5%2580%258B%25E4%25BA%25BA%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E9%2596%258B%25E7%2599%25BA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQzMWZjMzI5OTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "静止画からiPhoneアプリの縦長紹介動画を自動生成するPythonスクリプト：ffmpegを活用したSNSマーケティング効率化手法",
-    "summary_ja": "iPhoneアプリの紹介動画を、開発者自身のスクリーンショットから自動生成する手法を解説。 ffmpegとPythonを用い、静止画にズームアニメーションやフェード切り替え、BGM付与を自動適用し、1080×1920の縦長動画を量産する。 録画素材が不足していても、ストア用画像だけでSNS映えするプロモーション素材を効率的に制作可能。 個人開発者がコストをかけず、アプリ認知拡大のための広告クリエイティブを量産するための実用的なハックである。",
-    "translations": {
-      "ja": {
-        "title": "静止画からiPhoneアプリの縦長紹介動画を自動生成するPythonスクリプト：ffmpegを活用したSNSマーケティング効率化手法",
-        "summary": "iPhoneアプリの紹介動画を、開発者自身のスクリーンショットから自動生成する手法を解説。 ffmpegとPythonを用い、静止画にズームアニメーションやフェード切り替え、BGM付与を自動適用し、1080×1920の縦長動画を量産する。 録画素材が不足していても、ストア用画像だけでSNS映えするプロモーション素材を効率的に制作可能。 個人開発者がコストをかけず、アプリ認知拡大のための広告クリエイティブを量産するための実用的なハックである。"
-      },
-      "en": {
-        "title": "Automating Vertical App Promo Videos from Static Screenshots Using Python and FFmpeg for Better Social Media Marketing",
-        "summary": "Solo developers often lack video assets for social media promotion, but you can build a high-quality vertical trailer using only static app store screenshots. This guide demonstrates how to leverage FFmpeg and Python to script 1080×1920 video generation, automatically applying zoom animations, cross-fade transitions, and background audio to your static assets. By programmatically arranging screenshots into a polished three-second-per-scene flow, you can churn out effective marketing clips without needing dedicated screen recordings. This approach is a vital efficiency hack for solo builders looking to scale their app visibility on platforms like TikTok or Instagram Reels without incurring the heavy time or financial costs of manual video editing."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-05T19:01:58.887Z"
   },
   {
     "id": "art-1793905311822-hy4qu",
@@ -40279,32 +40332,6 @@
     "created_at": "2026-10-31T07:18:49.379Z"
   },
   {
-    "id": "art-1793430977279-lj2q3",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/pluto-door",
-    "published_at": "2026-10-30T22:10:44.000Z",
-    "og_image_url": null,
-    "title_ja": "SSHクライアント「Pluto Door」登場。サーバーごとに独立したデスクトップ環境とAIエージェントによる自動運用支援機能を統合",
-    "summary_ja": "Pluto Doorは、サーバー接続ごとに個別のデスクトップ環境を割り当て、そこにAIエージェントを常駐させることでインフラ運用を自動化する新しいSSHクライアントだ。 コマンド実行やトラブルシューティングをAIが代理で行うだけでなく、環境分離により操作ミスも防ぐ。 コマンドラインとGUIの境界を曖昧にし、開発者がサーバー管理に割く精神的な負荷を大幅に削減する。",
-    "translations": {
-      "ja": {
-        "title": "SSHクライアント「Pluto Door」登場。サーバーごとに独立したデスクトップ環境とAIエージェントによる自動運用支援機能を統合",
-        "summary": "Pluto Doorは、サーバー接続ごとに個別のデスクトップ環境を割り当て、そこにAIエージェントを常駐させることでインフラ運用を自動化する新しいSSHクライアントだ。 コマンド実行やトラブルシューティングをAIが代理で行うだけでなく、環境分離により操作ミスも防ぐ。 コマンドラインとGUIの境界を曖昧にし、開発者がサーバー管理に割く精神的な負荷を大幅に削減する。"
-      },
-      "en": {
-        "title": "Pluto Door launches as an SSH client that provisions a dedicated desktop and AI agent for every connected server",
-        "summary": "Pluto Door redefines terminal management by assigning a persistent, sandboxed desktop environment and an integrated AI agent to every individual server connection. This architecture ensures that developer operations are not just automated via LLM-assisted command execution, but also isolated to prevent accidental cross-server configuration errors. By blending the immediacy of a standard SSH client with the contextual awareness of a dedicated AI deputy, it effectively eliminates the cognitive overhead of juggling multiple terminal sessions. For infrastructure engineers and systems builders, this transition toward agent-first remote management represents a shift away from manual CLI interaction toward intent-based, visual server orchestration that significantly reduces troubleshooting time and improves overall operational reliability in complex production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-31T07:16:17.279Z"
-  },
-  {
     "id": "art-1793430100909-5wzhi",
     "source_id": "source-github-trending",
     "source_name": "GitHub Trending (AI / TypeScript / Python)",
@@ -48707,33 +48734,6 @@
       "マーケ・集客・ASO"
     ],
     "created_at": "2026-10-27T20:17:53.523Z"
-  },
-  {
-    "id": "art-1793132264896-sd7iu",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/tech/718feu0q",
-    "published_at": "2026-10-27T20:07:45.000Z",
-    "og_image_url": null,
-    "title_ja": "高級品リセール大手The RealRealがAIショッピングエージェントのスクレイピングを制限、ブランド価値と在庫保護を強化へ",
-    "summary_ja": "高級品リセールサイトのThe RealRealは、在庫データや価格情報を大量にスクレイピングするAIショッピングエージェントに対し、Bot防御策を強化した。 無許可のクローラーがサーバー負荷を増大させ、転売ビジネスに悪影響を及ぼす事態に対処するための措置だ。 AIエージェントによる自動購入や価格監視が一般化する中、プラットフォーム側はAPI制限やアクセス制御を強化し、正当なユーザー体験を守る重要性が高まっている。",
-    "translations": {
-      "ja": {
-        "title": "高級品リセール大手The RealRealがAIショッピングエージェントのスクレイピングを制限、ブランド価値と在庫保護を強化へ",
-        "summary": "高級品リセールサイトのThe RealRealは、在庫データや価格情報を大量にスクレイピングするAIショッピングエージェントに対し、Bot防御策を強化した。 無許可のクローラーがサーバー負荷を増大させ、転売ビジネスに悪影響を及ぼす事態に対処するための措置だ。 AIエージェントによる自動購入や価格監視が一般化する中、プラットフォーム側はAPI制限やアクセス制御を強化し、正当なユーザー体験を守る重要性が高まっている。"
-      },
-      "en": {
-        "title": "The RealReal upgrades bot detection mechanisms to block AI shopping agents from scraping inventory and pricing data",
-        "summary": "Luxury resale giant The RealReal has significantly ramped up its bot mitigation strategies, specifically targeting AI shopping agents that autonomously scrape their inventory and pricing data. These unauthorized scrapers create immense server load and disrupt the platform’s business model by potentially manipulating availability for secondary resale. As AI shopping assistants become increasingly common, platforms are finding it essential to implement stricter API rate limiting and advanced traffic filtering to prevent automated systems from degrading the experience for human shoppers. The shift underscores a broader trend: platform owners must proactively defend their data layers against intelligent agents or risk losing control over their own market pricing and inventory integrity as AI automation evolves."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-27T20:17:44.896Z"
   },
   {
     "id": "art-1793131257011-uqdkb",
