@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1794342791894-kppzl",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/supportapp3/items/5056f41f39af8c1f8ed0",
+    "published_at": "2026-11-10T20:13:42.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSUZSWHFwZGtCR29hZGEtTGFPVi1pYjVuQVRGcFVzN29WdDZXT08tMm9sa05HLXBRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWFiN2FhZjJmY2UyZGI5YTgyNDlmYmRiODFlMTVlODll%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De5eb047b894f3f856d249b9e2715777f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9VVJMJTIwJUUzJTgxJUFCJUUzJTgzJTg4JUUzJTgzJUJDJUUzJTgyJUFGJUUzJTgzJUIzJUUzJTgyJTkyJUU2JTlCJUI4JUUzJTgxJTg0JUUzJTgxJUE2JTIwZ2l0JTIwY2xvbmUlMjAlRTMlODElOTklRTMlODIlOEIlRTMlODElQTglMjAuZ2l0JTJGY29uZmlnJTIwJUUzJTgxJUFCJUU1JUI5JUIzJUU2JTk2JTg3JUUzJTgxJUE3JUU2JUFFJThCJUUzJTgyJThCJUVGJUJDJTlBZ2l0JTIwcmVtb3RlJTIwLXYlMjAlRTMlODElQTclRTQlQjglQjglRTglQTYlOEIlRTMlODElODglRTMlODAlODF0cmFuc2ZlJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YTgzMjNiNWNmOTZjZDQ4ZDVlMzYwOWVkNzI5MzJiNzQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzdXBwb3J0YXBwMyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTA5NGJiODkwZjg4NzU1MWU1NTAwZTNjZGViZGJhYmJi&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=f07426c673c07de61cefcc8b480f68f6",
+    "title_ja": "Git認証トークンの平文保存リスクを回避：URLへのトークン埋め込みによるgit cloneが.git/configに残す脆弱性とその対策",
+    "summary_ja": "GitのURLにユーザー名とトークンを直接記述してcloneを実行すると、認証情報が.git/configファイルに平文でそのまま保存される仕様がある。 これは`git remote -v`を実行するだけで他者から認証情報が漏洩するリスクを生む。 対策として、Gitの設定項目`transfer.credentialsInUrl`を`die`に設定することで、URL内に認証情報が含まれるクローン操作をエラーとしてブロックし、セキュリティを向上させることが推奨される。",
+    "translations": {
+      "ja": {
+        "title": "Git認証トークンの平文保存リスクを回避：URLへのトークン埋め込みによるgit cloneが.git/configに残す脆弱性とその対策",
+        "summary": "GitのURLにユーザー名とトークンを直接記述してcloneを実行すると、認証情報が.git/configファイルに平文でそのまま保存される仕様がある。 これは`git remote -v`を実行するだけで他者から認証情報が漏洩するリスクを生む。 対策として、Gitの設定項目`transfer.credentialsInUrl`を`die`に設定することで、URL内に認証情報が含まれるクローン操作をエラーとしてブロックし、セキュリティを向上させることが推奨される。"
+      },
+      "en": {
+        "title": "Security Alert: Storing plain-text Git tokens in .git/config via URL-based cloning exposes credentials",
+        "summary": "Cloning repositories using URLs that contain embedded credentials—such as `git clone https://user:token@host/repo.git`—poses a significant security risk because Git writes that access token in plain text directly into your local `.git/config` file. This means any subsequent command like `git remote -v` effectively displays your private authentication token to anyone with file access or screen visibility. To prevent this vulnerability, you should configure `transfer.credentialsInUrl` to `die`. This setting forces Git to reject any clone operation that attempts to pass authentication tokens directly through the URL string, ensuring your workflow adheres to safer credential management practices. For developers, this simple configuration change is a critical step in preventing accidental credential leakage when sharing terminal history or environment files."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-10T20:33:11.894Z"
+  },
+  {
+    "id": "art-1794342752662-92qz9",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ovaideu/articles/9927f77e6a9a95",
+    "published_at": "2026-11-10T17:34:14.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--BhWu7pEr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Running%2520Google%2520Ads%2520and%2520Meta%2520Ads%2520From%2520an%2520AI%2520Assistant%253A%2520Wha...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ovaideu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvby5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "MCP活用でGoogle/Meta広告運用を変革：AIアシスタント内からの直接操作で管理画面の切り替え不要へ",
+    "summary_ja": "GoogleやMetaの広告管理画面を行き来する従来の運用フローに対し、Model Context Protocol（MCP）を用いたAIアシスタント経由の統合管理が注目されている。 MCPにより、広告グループの構築や予算調整、コンバージョンタグの確認といった定型業務をチャットインターフェースから直接実行可能になる。",
+    "translations": {
+      "ja": {
+        "title": "MCP活用でGoogle/Meta広告運用を変革：AIアシスタント内からの直接操作で管理画面の切り替え不要へ",
+        "summary": "GoogleやMetaの広告管理画面を行き来する従来の運用フローに対し、Model Context Protocol（MCP）を用いたAIアシスタント経由の統合管理が注目されている。 MCPにより、広告グループの構築や予算調整、コンバージョンタグの確認といった定型業務をチャットインターフェースから直接実行可能になる。"
+      },
+      "en": {
+        "title": "How MCP Transforms Google and Meta Ad Management by Enabling Direct Execution from AI Assistants",
+        "summary": "For years, marketers have been trapped switching between the Google and Meta Ads Manager dashboards to handle routine tasks like budget adjustments or verifying conversion tags. The emergence of the Model Context Protocol (MCP) shifts this paradigm by allowing AI assistants to hook directly into these platforms, effectively turning the chat interface into a unified control plane. By abstracting the API layer, MCP enables builders to script ad variations and perform complex campaign audits without leaving their IDE or workspace. This represents a fundamental shift in ad operations, moving away from fragmented UI-based workflows toward integrated, programmable environments. For developers, adopting MCP for ad orchestration is now the most viable way to automate cross-platform scalability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-10T20:32:32.662Z"
+  },
+  {
+    "id": "art-1794342734257-ewhpj",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/r_tsuchiya/n/n4505749aaa8e",
+    "published_at": "2026-11-10T19:38:53.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/334679675/rectangle_large_type_2_cfbd8d0265b16bcfba05fb9e648982b4.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発アプリ「VisionWell+」の劇的な機能削減：あえて機能を削ぎ落とし、UXを磨き上げたリニューアルの裏側",
+    "summary_ja": "個人開発アプリ「VisionWell+」が、新バージョンでレポート作成支援や管理画面などの機能を大幅に削除する大胆なアップデートを実施した。 多機能化による使いにくさを解消し、コア体験を研ぎ澄ますために選択と集中を行った形だ。 機能を追加するのではなく削ることで、ユーザーの真の課題にフォーカスする「引き算のプロダクト開発」が、高い満足度を生み出すための重要な戦略であることを示している。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリ「VisionWell+」の劇的な機能削減：あえて機能を削ぎ落とし、UXを磨き上げたリニューアルの裏側",
+        "summary": "個人開発アプリ「VisionWell+」が、新バージョンでレポート作成支援や管理画面などの機能を大幅に削除する大胆なアップデートを実施した。 多機能化による使いにくさを解消し、コア体験を研ぎ澄ますために選択と集中を行った形だ。 機能を追加するのではなく削ることで、ユーザーの真の課題にフォーカスする「引き算のプロダクト開発」が、高い満足度を生み出すための重要な戦略であることを示している。"
+      },
+      "en": {
+        "title": "Why VisionWell+ underwent a drastic feature cull: Sharpening UX by cutting management tools and extra utilities",
+        "summary": "The maker of the personal development app VisionWell+ recently released a major update that aggressively cut out core features like report generation assistance and teacher management dashboards. Instead of bloating the application with more utilities, the developer prioritized UX clarity and focused on core functionality by removing secondary tools that were cluttering the experience. This move illustrates a powerful 'subtractive design' philosophy: by refusing to succumb to feature creep and instead aggressively cutting extraneous components, developers can re-align their software with the user's primary objectives. For indie builders struggling with complex products, this serves as a reminder that removing features is often the most effective way to improve product-market fit and user satisfaction."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-10T20:32:14.257Z"
+  },
+  {
+    "id": "art-1794342727874-2f0c0",
+    "source_id": "source-framer",
+    "source_name": "Framer Blog (AI LP制作)",
+    "url": "https://www.framer.com/blog/how-to-connect-claude-cursor-grok-bot-and-more-to-framer-with-mcp/",
+    "published_at": "2026-11-10T20:32:07.874Z",
+    "og_image_url": "https://framerusercontent.com/images/PwMNMs7uyWH0IvVcWtQJbQ7WI.png?width=3840&height=2160",
+    "title_ja": "FramerがMCP対応を発表、ClaudeやCursorから直接ウェブサイトを編集・構築するAI連携の未来へ",
+    "summary_ja": "Framerが「Model Context Protocol（MCP）」に対応し、Claude、Cursor、GrokといったAIツールとFramerのプロジェクトを直接連携させる新たな機能を公開した。 これにより開発者は、各AIエージェントにサイト構成へのアクセス権を付与し、対話型インターフェースからレイアウトの変更やコンテンツ更新を即座に指示することが可能になる。",
+    "translations": {
+      "ja": {
+        "title": "FramerがMCP対応を発表、ClaudeやCursorから直接ウェブサイトを編集・構築するAI連携の未来へ",
+        "summary": "Framerが「Model Context Protocol（MCP）」に対応し、Claude、Cursor、GrokといったAIツールとFramerのプロジェクトを直接連携させる新たな機能を公開した。 これにより開発者は、各AIエージェントにサイト構成へのアクセス権を付与し、対話型インターフェースからレイアウトの変更やコンテンツ更新を即座に指示することが可能になる。"
+      },
+      "en": {
+        "title": "Framer introduces MCP support to enable direct AI control over website design from Claude and Cursor",
+        "summary": "Framer has officially adopted the Model Context Protocol (MCP), allowing developers to bridge AI agents like Claude, Cursor, and Grok directly to their web projects. This integration lets AI models access site structure, content, and styling context, moving beyond copy-pasting generated code to actually performing layout edits via conversational commands. By exposing the project structure to these LLMs, builders can now iterate on designs and content updates without leaving their IDEs. This represents a fundamental shift toward agent-driven web development, where the AI doesn't just suggest components but actively manages the build environment. For developers focused on rapid prototyping and UI iteration, adopting MCP with Framer is now essential to maintaining a high-velocity, truly integrated AI development workflow."
+      }
+    },
+    "tool_tags": [
+      "Framer"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-10T20:32:07.874Z"
+  },
+  {
     "id": "art-1794342098741-x684n",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -16433,32 +16540,6 @@
     "created_at": "2026-11-08T23:31:30.289Z"
   },
   {
-    "id": "art-1794179822539-8pmw7",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/muika_dou/n/n5ed88e89141f",
-    "published_at": "2026-11-08T22:52:06.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333907920/rectangle_large_type_2_96de562270c55f37a0526117bac8170e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発ゲーム『Poker Rain』開発日記 Day 71：UI整合性の改善、ブロックの数字表示位置を全統一",
-    "summary_ja": "ゲーム開発71日目。 ポーカーゲーム『Poker Rain』のUI改善として、各ブロックに表示される数字の高さを全パターンで均一化する実装を行った。 これまでマークの種類によって数字の配置が微妙にズレていた問題を解消し、視覚的なノイズを排除した。 一見地味な調整だが、こうした細かなUIの統一感が、プレイヤーの没入感とゲーム全体のクオリティを底上げする重要なステップとなる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発ゲーム『Poker Rain』開発日記 Day 71：UI整合性の改善、ブロックの数字表示位置を全統一",
-        "summary": "ゲーム開発71日目。 ポーカーゲーム『Poker Rain』のUI改善として、各ブロックに表示される数字の高さを全パターンで均一化する実装を行った。 これまでマークの種類によって数字の配置が微妙にズレていた問題を解消し、視覚的なノイズを排除した。 一見地味な調整だが、こうした細かなUIの統一感が、プレイヤーの没入感とゲーム全体のクオリティを底上げする重要なステップとなる。"
-      },
-      "en": {
-        "title": "Poker Rain Devlog Day 71: Standardizing block UI layouts for visual consistency across all card types",
-        "summary": "For day 71 of building the poker-themed game Poker Rain, the focus shifted to refining the user interface by standardizing the vertical alignment of text digits on game blocks. Previously, the numerical values would shift slightly based on the specific card mark, creating minor but distracting visual inconsistency during gameplay. By normalizing these positions across all assets, the UI now remains perfectly static regardless of the card drawn. While these micro-adjustments often go unnoticed by casual players, they are critical for maintaining a polished, professional aesthetic. For solo developers, the lesson here is clear: obsessing over these minute visual details is what ultimately separates a functional prototype from a refined, high-quality product that feels right to the end user."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-08T23:17:02.539Z"
-  },
-  {
     "id": "art-1794179814167-aofqr",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -18830,32 +18911,6 @@
     "created_at": "2026-11-08T10:47:02.907Z"
   },
   {
-    "id": "art-1794134805920-e0khy",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/mrmrmr/items/b3508378faa69c7c8b9a",
-    "published_at": "2026-11-08T10:39:50.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzI3NDE5JTJGMTJmOWI5NDdmYWQxMDJmMzI1ZTdhM2MxY2I1YTNmOTc2OWRjYjY4ZCUyRmxhcmdlLnBuZyUzRjE3NzM1Nzk2NTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTg4ZjQ2OWIxYjE5MmE2NWQ5MWIxOTc1NDc4ZDcwYjhj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De95bedc85e3356abe6a208a41038b450?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwRyVFNiVBNCU5QyVFNSVBRSU5QSVFMyU4MCU5MSVFMyU4MyU4QiVFMyU4MyVBNSVFMyU4MyVCQyVFMyU4MyVBOSVFMyU4MyVBQiVFMyU4MyU4RCVFMyU4MyU4MyVFMyU4MyU4OCVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MSVBRSVFNSU5RiVCQSVFNyVBNCU4RSVFNyU5NCVBOCVFOCVBQSU5RTEwJUU5JTgxJUI4JUUzJTgyJTkyJUUzJTgyJUI1JUUzJTgyJUFGJUUzJTgzJTgzJUUzJTgxJUE4JUU4JUE3JUEzJUU4JUFBJUFDJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9Y2U2YWNmMWJkNjBiNzk5NjZkNWYwN2NjY2Q2NjIzN2E&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtcm1ybXImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NWIwMjVjOTJjZjhmZjExZjU4NzhmZDc0M2JhOTQ4ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=f778e88ec0a1e41adf0d6fc3cd48e7b6",
-    "title_ja": "G検定合格への最短ルート：ニューラルネットワーク理解に必須の「基礎用語10選」を完全網羅",
-    "summary_ja": "ディープラーニングの基礎知識を問うG検定において、ニューラルネットワークの構造理解は最重要項目だ。 本稿では、ニューラルネットワークの最小単位であるパーセプトロンから始まり、学習効率に直結する重み、バイアス、活性化関数などの必須用語10選を体系的に解説する。 AIエンジニアを目指す初学者が概念モデルを正しく把握し、試験対策と実務での設計思考を両立させるためのロードマップとなる。",
-    "translations": {
-      "ja": {
-        "title": "G検定合格への最短ルート：ニューラルネットワーク理解に必須の「基礎用語10選」を完全網羅",
-        "summary": "ディープラーニングの基礎知識を問うG検定において、ニューラルネットワークの構造理解は最重要項目だ。 本稿では、ニューラルネットワークの最小単位であるパーセプトロンから始まり、学習効率に直結する重み、バイアス、活性化関数などの必須用語10選を体系的に解説する。 AIエンジニアを目指す初学者が概念モデルを正しく把握し、試験対策と実務での設計思考を両立させるためのロードマップとなる。"
-      },
-      "en": {
-        "title": "Essential Neural Network Glossary: 10 Key Terms for Mastering the G-Kentei Certification Exam",
-        "summary": "Deep learning certifications like the G-Kentei heavily emphasize the structural mechanics of neural networks, making core terminology mastery vital for success. This breakdown covers ten foundational concepts critical to understanding modern architecture, ranging from the perceptron—the fundamental building block—to complex elements like weights, biases, and activation functions. By dissecting these terms, the article provides a roadmap for beginners aiming to transition from theoretical understanding to architectural application. Mastering these definitions is essential not just for passing standardized exams, but for developing the technical intuition required to design efficient models in professional practice. This guide serves as a bridge for developers who need to solidify their grasp on the mathematical and structural logic underpinning today’s AI systems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-08T10:46:45.920Z"
-  },
-  {
     "id": "art-1794133923283-s05rz",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -20322,32 +20377,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-08T00:01:50.284Z"
-  },
-  {
-    "id": "art-1794095216657-8gako",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/shinai/books/university-ai-assignment-prompts",
-    "published_at": "2026-11-07T16:48:58.000Z",
-    "og_image_url": "https://static.zenn.studio/images/logo-only-dark.png",
-    "title_ja": "大学生の課題を爆速で片付けるAIプロンプト15選：丸写しではなく「思考を支援する」プロンプト設計の実践手法を公開",
-    "summary_ja": "ChatGPTやClaude、Geminiで活用できる、大学生の課題管理、レポート作成、試験対策に特化したAIプロンプト15選が公開された。 単なる回答生成ではなく、学生自身の思考プロセスを補助し、学習効果を最大化するためのプロンプト構成が論理的に解説されている。 効率的なタスク完遂と主体的な学びを両立させるプロンプトエンジニアリングの考え方は、学習者だけでなく、教育ツールを開発するエンジニアにとっても重要な示唆となる。",
-    "translations": {
-      "ja": {
-        "title": "大学生の課題を爆速で片付けるAIプロンプト15選：丸写しではなく「思考を支援する」プロンプト設計の実践手法を公開",
-        "summary": "ChatGPTやClaude、Geminiで活用できる、大学生の課題管理、レポート作成、試験対策に特化したAIプロンプト15選が公開された。 単なる回答生成ではなく、学生自身の思考プロセスを補助し、学習効果を最大化するためのプロンプト構成が論理的に解説されている。 効率的なタスク完遂と主体的な学びを両立させるプロンプトエンジニアリングの考え方は、学習者だけでなく、教育ツールを開発するエンジニアにとっても重要な示唆となる。"
-      },
-      "en": {
-        "title": "15 AI Prompts for University Assignments: A Framework for Supporting Student Thinking Instead of Just Generating Answers",
-        "summary": "A new collection of 15 prompt engineering templates for ChatGPT, Claude, and Gemini has been released, specifically designed to help university students manage assignments, write reports, and prepare for exams. Rather than simply generating outputs for students to copy, these prompts emphasize structuring requests that support the user's own critical thinking and cognitive process. This approach helps maximize educational outcomes by ensuring the AI acts as a tutor rather than a replacement for study. For builders developing educational SaaS tools or learning assistants, this highlights a critical UX lesson: success in the ed-tech market depends on designing workflows that actively facilitate student learning rather than just providing shortcuts to finished academic work."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-07T23:46:56.657Z"
   },
   {
     "id": "art-1794095201975-lyigt",
@@ -48986,32 +49015,6 @@
       "音声"
     ],
     "created_at": "2026-10-27T22:46:22.207Z"
-  },
-  {
-    "id": "art-1793140332433-9mb0d",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/gaming/jo5lagwo",
-    "published_at": "2026-10-27T22:20:14.000Z",
-    "og_image_url": null,
-    "title_ja": "EAが生成AI活用を推進する一方で、度重なるレイオフにより社内士気が「最悪」に。開発現場で進む自動化への不信感と疲弊",
-    "summary_ja": "Electronic Arts（EA）社内において、大規模レイオフの断行と生成AI導入の強硬な推進が重なり、従業員の士気が極限まで低下していることが報じられた。 経営層はAI活用による効率化を掲げるが、現場のクリエイターは自身の職務が置き換えられる不安と、急激な自動化への強制的な適応に疲弊を隠せない。 コスト削減とAI技術の導入が、組織文化と人的リソースにどのような副作用をもたらすか、開発企業にとって重い教訓となる。",
-    "translations": {
-      "ja": {
-        "title": "EAが生成AI活用を推進する一方で、度重なるレイオフにより社内士気が「最悪」に。開発現場で進む自動化への不信感と疲弊",
-        "summary": "Electronic Arts（EA）社内において、大規模レイオフの断行と生成AI導入の強硬な推進が重なり、従業員の士気が極限まで低下していることが報じられた。 経営層はAI活用による効率化を掲げるが、現場のクリエイターは自身の職務が置き換えられる不安と、急激な自動化への強制的な適応に疲弊を隠せない。 コスト削減とAI技術の導入が、組織文化と人的リソースにどのような副作用をもたらすか、開発企業にとって重い教訓となる。"
-      },
-      "en": {
-        "title": "EA employees report morale crisis as management pushes generative AI rollout alongside significant staff layoffs",
-        "summary": "Electronic Arts employees are reportedly facing a morale crisis, citing a toxic combination of repeated staff layoffs and an aggressive, top-down mandate to implement generative AI across game development workflows. While management touts these AI tools as necessary levers for efficiency and scaling production, the workforce is increasingly vocal about fears regarding job displacement and the burnout caused by rapid, forced adaptation to automated systems. The situation highlights a growing tension in the gaming industry where the pressure to cut costs through AI integration often conflicts with maintaining a stable, creative workforce. For leaders in the space, this serves as a stark warning: prioritizing automation at the expense of human capital can cause lasting cultural and operational damage."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-27T22:32:12.433Z"
   },
   {
     "id": "art-1793140282628-7i5k2",
