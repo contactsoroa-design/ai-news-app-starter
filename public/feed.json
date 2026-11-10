@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1794348143977-noaie",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ai_shihan/articles/0978b8bdb7f444",
+    "published_at": "2026-11-10T16:43:33.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cAPr5pFs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E5%2586%258D%25E8%25B5%25B7%25E5%258B%2595%25E7%259B%25B4%25E5%25BE%258C%25E3%2580%2581%25E6%259C%2580%25E5%2588%259D%25E3%2581%25AE%25E9%2581%2593%25E5%2585%25B7%25E3%2581%258C%25E3%2580%258C%25E5%2585%2588%25E3%2581%25AB%25E5%258F%25B0%25E5%25B8%25B3%25E3%2581%25B8%25E7%2599%25BB%25E9%258C%25B2%25E3%2581%2597%25E3%2581%25A6%25E3%2580%258D%25E3%2581%25A8%25E6%2596%25AD%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%258D%25E3%2581%259F%2520%25E2%2580%2594%25E2%2580%2594%2520%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%2589%25E3%2582%258C%25E3%2581%25A6%25E5%2588%2586%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2581%25E5%2585%25A5%25E5%258A%259B%25E3%2582%2592%25E5%258F%2596%25E3%2582%258A%25E3%2581%2593%25E3%2581%25BC%25E3%2581%2595%25E3%2581%25AA%25E3%2581%2584%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ai_shihan%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvYS5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェント復帰時の指示抜けを防ぐ：「台帳登録」を必須化してタスクの取りこぼしを完全に防ぐ実装パターン",
+    "summary_ja": "AIエージェントを再起動した際、初期化手順の前に未処理の入力を検知し、強制的に「台帳登録」させる制御フローが有効だ。 システム起動直後のAIは過去の未完タスクを優先処理する必要があるが、道具の使用前に台帳確認を挟むことで、割り込みや入力の取りこぼしを物理的に防ぐことが可能になる。 開発者はエージェントの自律稼働において、状態管理の堅牢なルールを初期段階で定義しておくべきである。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント復帰時の指示抜けを防ぐ：「台帳登録」を必須化してタスクの取りこぼしを完全に防ぐ実装パターン",
+        "summary": "AIエージェントを再起動した際、初期化手順の前に未処理の入力を検知し、強制的に「台帳登録」させる制御フローが有効だ。 システム起動直後のAIは過去の未完タスクを優先処理する必要があるが、道具の使用前に台帳確認を挟むことで、割り込みや入力の取りこぼしを物理的に防ぐことが可能になる。 開発者はエージェントの自律稼働において、状態管理の堅牢なルールを初期段階で定義しておくべきである。"
+      },
+      "en": {
+        "title": "Preventing AI Agent Task Loss: Implementing a Mandatory Registry Pattern to Secure Input Processing on Restart",
+        "summary": "When rebooting AI agents, a critical failure point is losing unprocessed inputs that were lingering before the shutdown. By implementing a registry-first pattern, the agent is forced to query a ledger of pending tasks immediately upon wake-up. If unregistered inputs exist, the system blocks the agent from invoking other tools, restricting it to read-only or logging operations until the state is synchronized. This implementation ensures that tasks are never skipped during the initialization sequence. For builders orchestrating agent workflows, this registry pattern is essential for maintaining operational reliability, effectively turning potentially missed requests into stateful tasks that must be resolved before the agent resumes full autonomy. It is the most robust way to handle intermittent agent behavior at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-10T22:02:23.977Z"
+  },
+  {
+    "id": "art-1794348137255-502v9",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.computerweekly.com/news/366654593/UK-government-AI-strategy-not-tied-to-US-models-that-currently-dominate",
+    "published_at": "2026-11-10T21:38:41.000Z",
+    "og_image_url": null,
+    "title_ja": "英国政府、米国製AIモデルへの依存脱却へ—独自のAI戦略におけるプラットフォーム中立性と主権確保の方針を表明",
+    "summary_ja": "英国政府は、現在のAI市場を支配する米国企業製モデルに過度に依存しない、独自のAI戦略を本格化させる方針を打ち出した。 特定のテック大手が提供するAIインフラやクローズドなモデルに縛られず、プラットフォームの中立性を維持することで国家的なAI主権を確保する狙いだ。 開発者や企業にとっては、特定のベンダーに依存するロックインを避け、多様なモデルやオープンソース技術を選択肢に含めた将来的なシステム設計が重要となる。",
+    "translations": {
+      "ja": {
+        "title": "英国政府、米国製AIモデルへの依存脱却へ—独自のAI戦略におけるプラットフォーム中立性と主権確保の方針を表明",
+        "summary": "英国政府は、現在のAI市場を支配する米国企業製モデルに過度に依存しない、独自のAI戦略を本格化させる方針を打ち出した。 特定のテック大手が提供するAIインフラやクローズドなモデルに縛られず、プラットフォームの中立性を維持することで国家的なAI主権を確保する狙いだ。 開発者や企業にとっては、特定のベンダーに依存するロックインを避け、多様なモデルやオープンソース技術を選択肢に含めた将来的なシステム設計が重要となる。"
+      },
+      "en": {
+        "title": "UK government sets new AI strategy prioritizing national sovereignty over reliance on dominant US-based foundation models",
+        "summary": "The UK government has officially outlined a new AI strategy explicitly designed to reduce reliance on the specific US-based models that currently dominate the global market. By focusing on platform neutrality and avoiding long-term lock-in with massive US tech incumbents, the government aims to safeguard national sovereignty and maintain control over critical digital infrastructure. This shift is a significant signal to developers and enterprises that the future of AI architecture should prioritize interoperability over vendor dependency. For builders, this underscores the strategic necessity of architecture designs that integrate diverse model sources and open-source alternatives, ensuring that services remain resilient and adaptable even as geopolitical and regulatory environments evolve to favor independent AI capabilities."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-10T22:02:17.255Z"
+  },
+  {
+    "id": "art-1794348114268-ev16g",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/tyuya/articles/claude-codex-mcp-approval-gap",
+    "published_at": "2026-11-10T21:23:50.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--QXtgxX96--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%258B%25E3%2582%2589Codex%25E3%2582%2592%25E5%2591%25BC%25E3%2581%25B6%25E3%2581%25A8%25E3%2580%2581on-request%25E3%2581%25AF%25E3%2580%258C%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AB%25E8%2581%259E%25E3%2581%258F%25E3%2580%258D%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yuya0620%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg4MGEzZTQwNTQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude CodeとCodexの相互呼び出しで見えた、AIエージェント間連携における「人間承認」プロセスの崩壊と再定義",
+    "summary_ja": "Claude CodeとCodexを相互連携させ、AIエージェント同士がコードを相互チェックする構成を構築した。 この実験を通じて、従来は「人間に確認する」と思われていた承認プロセスが、実は「モデルがモデルを承認する」仕組みへと変質していることが判明した。 単なるツール連携の手順以上に、AI同士の自律的なフローにおいては、権限管理や承認ロジックを人間主導からモデル主導へ設計し直す必要があるという示唆を得た。",
+    "translations": {
+      "ja": {
+        "title": "Claude CodeとCodexの相互呼び出しで見えた、AIエージェント間連携における「人間承認」プロセスの崩壊と再定義",
+        "summary": "Claude CodeとCodexを相互連携させ、AIエージェント同士がコードを相互チェックする構成を構築した。 この実験を通じて、従来は「人間に確認する」と思われていた承認プロセスが、実は「モデルがモデルを承認する」仕組みへと変質していることが判明した。 単なるツール連携の手順以上に、AI同士の自律的なフローにおいては、権限管理や承認ロジックを人間主導からモデル主導へ設計し直す必要があるという示唆を得た。"
+      },
+      "en": {
+        "title": "Claude Code and Codex integration reveals the breakdown of human-in-the-loop authorization in multi-agent AI workflows",
+        "summary": "I integrated Claude Code and Codex to create a collaborative environment where AI agents cross-check each other's code. This experiment uncovered a fundamental shift: the 'on-request' authorization step, usually assumed to require human intervention, actually evolved into model-to-model approval. The architecture revealed three broken assumptions, the most critical being that authorization decisions no longer rely on human judgment, but are delegated to the models themselves. Beyond the specific setup, this highlights a vital shift for builders creating autonomous agent chains: authorization logic and permission boundaries must be designed for model-to-model interactions rather than assuming a human gatekeeper. For agent-based development, we need to treat agent-approval workflows as the primary design pattern, moving away from human-centric verification."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-10T22:01:54.268Z"
+  },
+  {
+    "id": "art-1794348107561-e0jud",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/like_tulip76/n/n8453f6fafc95",
+    "published_at": "2026-11-10T22:00:21.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/18825b3c275c01336336898e0922f70c9129c09b.png",
+    "title_ja": "「同じバグを4回修正」しても再発する理由―コード修正と計測場所の不一致が招くエンジニアの落とし穴",
+    "summary_ja": "自作定期ジョブで同じ不具合を4回修正した経験から、バグ再発の根本原因はコードの修正箇所と、不具合を計測・監視している場所が異なる「層」にあることを突き止めた。 単にコードを直すだけでなく、どこで問題を定義し、何を監視指標とするかが一致していなければ、現象は形を変えて残り続ける。 エンジニアにとって、デバッグはコード修正と観測範囲の同期から始まるという教訓である。",
+    "translations": {
+      "ja": {
+        "title": "「同じバグを4回修正」しても再発する理由―コード修正と計測場所の不一致が招くエンジニアの落とし穴",
+        "summary": "自作定期ジョブで同じ不具合を4回修正した経験から、バグ再発の根本原因はコードの修正箇所と、不具合を計測・監視している場所が異なる「層」にあることを突き止めた。 単にコードを直すだけでなく、どこで問題を定義し、何を監視指標とするかが一致していなければ、現象は形を変えて残り続ける。 エンジニアにとって、デバッグはコード修正と観測範囲の同期から始まるという教訓である。"
+      },
+      "en": {
+        "title": "Why Bug Fixes Fail Repeatedly: The Hidden Mismatch Between Your Code Patches and Monitoring Metrics",
+        "summary": "After patching the same recurring bug four times in a custom job, the author realized that the problem was not the code itself, but a fundamental disconnect between where the fix was applied and where incident metrics were being tracked. This phenomenon occurs when developers treat a symptom in the code while the monitoring layer observes a different abstraction or artifact entirely. If your observability and your code patches are not aligned on the same reality, the underlying issue will persist regardless of how many times you rewrite the logic. For builders, this serves as a harsh reminder: successful debugging requires synchronizing your error tracking logic with your code fix, ensuring you are measuring the actual failure, not just a side effect."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-10T22:01:47.561Z"
+  },
+  {
     "id": "art-1794347220370-n91mp",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -16790,32 +16893,6 @@
     "created_at": "2026-11-09T00:01:52.663Z"
   },
   {
-    "id": "art-1794182506506-gk7v9",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kmagpie/n/n1d57d1ec351a",
-    "published_at": "2026-11-09T00:00:46.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333931144/rectangle_large_type_2_8474aabb135df238a73614ce8f78ea86.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "スキャン済みPDFを5MB以下に無料圧縮：提出要件をクリアする最適ツールと最適なファイルサイズ軽量化の運用術",
-    "summary_ja": "公的書類や申請で求められる「2MB・5MB以下」というPDFの容量制限に対し、画質を維持しつつ効率的に圧縮を行う無料ツールと運用手法を解説する。 単に圧縮するだけでなく、解像度設定やカラーモードの調整を組み合わせることが、提出時のエラーを防ぎ、かつ可読性を担保するポイントだ。 開発者や個人事業主がクライアントや役所へ提出する際、手軽にオンラインで完結できるワークフローとして推奨される。",
-    "translations": {
-      "ja": {
-        "title": "スキャン済みPDFを5MB以下に無料圧縮：提出要件をクリアする最適ツールと最適なファイルサイズ軽量化の運用術",
-        "summary": "公的書類や申請で求められる「2MB・5MB以下」というPDFの容量制限に対し、画質を維持しつつ効率的に圧縮を行う無料ツールと運用手法を解説する。 単に圧縮するだけでなく、解像度設定やカラーモードの調整を組み合わせることが、提出時のエラーを防ぎ、かつ可読性を担保するポイントだ。 開発者や個人事業主がクライアントや役所へ提出する際、手軽にオンラインで完結できるワークフローとして推奨される。"
-      },
-      "en": {
-        "title": "How to Compress Scanned PDFs Under 5MB for Free: Essential Tools and Optimization Tactics for Submission Compliance",
-        "summary": "Navigating the strict file size limits—often capped at 2MB or 5MB—for digital submissions requires a reliable approach to PDF compression without sacrificing document readability. This guide explores the best free tools and technical workflows to shrink heavy scanned documents while maintaining clarity. Beyond simple compression, the real trick lies in balancing DPI settings and color depth adjustments to ensure your files pass automated submission checks without becoming blurry. For developers and solopreneurs frequently submitting invoices or official documents, mastering these lightweight, browser-based compression pipelines is a critical operational skill that saves time and avoids the frustration of upload rejections due to bloated file sizes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-09T00:01:46.506Z"
-  },
-  {
     "id": "art-1794182498448-0z6jp",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -17787,32 +17864,6 @@
       "研究"
     ],
     "created_at": "2026-11-08T19:46:51.005Z"
-  },
-  {
-    "id": "art-1794167204417-b30zw",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-    "published_at": "2026-11-08T19:37:42.000Z",
-    "og_image_url": null,
-    "title_ja": "AI疲れを防ぐための個人的な工夫：認知負荷を減らし、創造性を維持するワークフローの再設計",
-    "summary_ja": "AIとの対話が増える中で生じる「AIブレインフライ（AI疲れ）」を防ぐため、AIを単なる回答者ではなく思考のパートナーとして位置づけるアプローチが重要である。 回答を丸呑みせず、自分で仮説を立ててからAIに検証させるプロセスを挟むことで、受動的な思考停止を回避できる。 AIの出力を鵜呑みにせず、自分の専門性とAIの補完能力を明確に区別し、意図的に「人間側の負荷」を維持することが、長期的な開発パフォーマンスを保つ鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AI疲れを防ぐための個人的な工夫：認知負荷を減らし、創造性を維持するワークフローの再設計",
-        "summary": "AIとの対話が増える中で生じる「AIブレインフライ（AI疲れ）」を防ぐため、AIを単なる回答者ではなく思考のパートナーとして位置づけるアプローチが重要である。 回答を丸呑みせず、自分で仮説を立ててからAIに検証させるプロセスを挟むことで、受動的な思考停止を回避できる。 AIの出力を鵜呑みにせず、自分の専門性とAIの補完能力を明確に区別し、意図的に「人間側の負荷」を維持することが、長期的な開発パフォーマンスを保つ鍵となる。"
-      },
-      "en": {
-        "title": "Strategies for Combating AI Brain Fry: Redesigning Developer Workflows to Maintain Cognitive Sharpness and Deep Thought",
-        "summary": "As reliance on LLMs grows, many developers experience 'AI brain fry,' a state of passive cognitive fatigue where critical thinking is outsourced to the model. To combat this, one must reposition AI as a thought partner rather than a primary solver. The most effective defense is to mandate a 'human-first' hypothesis phase before querying any model, treating AI output strictly as a validation step rather than a shortcut for design or implementation. By intentionally maintaining a high level of active cognitive load and clearly delineating where human expertise ends and generative automation begins, builders can avoid the trap of superficial development and preserve their long-term ability to solve complex system architectures and non-trivial logic."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-08T19:46:44.417Z"
   },
   {
     "id": "art-1794166334251-9jv7j",
@@ -20441,33 +20492,6 @@
       "研究"
     ],
     "created_at": "2026-11-08T01:16:49.967Z"
-  },
-  {
-    "id": "art-1794099712117-otfu1",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/kaeyuki/articles/d5b245ff77474e",
-    "published_at": "2026-11-08T00:52:52.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ZKxEfpbQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E9%2580%25A3%25E8%25BC%2589%25E7%25AC%25AC3%25E5%259B%259E%25E3%2580%2591%25E3%2582%25BC%25E3%2583%25AD%25E3%2583%2588%25E3%2583%25A9%25E3%2582%25B9%25E3%2583%25882%25E5%25B1%25A4%25E6%25A9%259F%25E6%25A2%25B0%25E6%25A4%259C%25E6%259F%25BB%25E3%2583%25BBSHA-256%25E3%2583%25A1%25E3%2583%25A2%25E3%2583%25AA%25E5%258F%25B0%25E5%25B8%25B3%25E3%2583%25BB8%25E6%25A1%2588%25E4%25BB%25B6MD%25E5%2581%25A5%25E5%25BA%25B7%25E8%25A8%25BA%25E6%2596%25AD%25E3%2581%25A8%25E3%2580%2581%25E7%25AC%25AC%25E4%25B8%2589%25E8%2580%2585%25E7%259B%25A3%25E6%259F%25BB%25E3%2581%25A7%25E6%259A%25B4%25E3%2581%258B%25E3%2582%258C%25E3%2581%259F%25E3%2580%258C%25E7%25B6%2599%25E3%2581%258E...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kaeyuki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzkzRUZPNlZxbGo0ZnBCTHhHaF84bkZiMG9ybXJfbWd0OFFSM1dSQndLWlNqanRzVHdFQT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI組織開発のガバナンスを解剖：ゼロトラスト2層検査・SHA-256メモリ台帳など、第三者監査で露呈した「継ぎ目」の4大バグ",
-    "summary_ja": "AI組織ガバナンス実践録の最終回として、開発プロセスにおける内部設計とコード監査の実態を詳報する。 本稿では、ゼロトラストに基づく2層機械検査やSHA-256を用いたメモリ台帳管理、さらには8案件におよぶMD（Markdown）健康診断の手法を公開。 外部監査によりシステム連携の「継ぎ目」で4つの致命的なバグが判明した経緯を分析する。 AIを活用した開発組織において、自動化と人間による統制をどう両立させるべきか、その具体的なガードレール設計と監査手法のヒントを提供する。",
-    "translations": {
-      "ja": {
-        "title": "AI組織開発のガバナンスを解剖：ゼロトラスト2層検査・SHA-256メモリ台帳など、第三者監査で露呈した「継ぎ目」の4大バグ",
-        "summary": "AI組織ガバナンス実践録の最終回として、開発プロセスにおける内部設計とコード監査の実態を詳報する。 本稿では、ゼロトラストに基づく2層機械検査やSHA-256を用いたメモリ台帳管理、さらには8案件におよぶMD（Markdown）健康診断の手法を公開。 外部監査によりシステム連携の「継ぎ目」で4つの致命的なバグが判明した経緯を分析する。 AIを活用した開発組織において、自動化と人間による統制をどう両立させるべきか、その具体的なガードレール設計と監査手法のヒントを提供する。"
-      },
-      "en": {
-        "title": "Anatomy of AI dev governance: Zero-trust machine checks, SHA-256 ledgers, and the 4 critical bugs exposed by third-party audits",
-        "summary": "This final installment in the AI governance series dives into the internal architecture and code auditing processes required for AI-native dev teams. The article details a robust security framework featuring zero-trust two-layer machine inspections, SHA-256 memory ledger logging, and comprehensive MD health checks across eight concurrent projects. Third-party audits revealed four critical bugs specifically hidden within the \"seams\" where different system components interact. The piece provides actionable insights on balancing high-velocity automation with rigorous human oversight, offering a blueprint for engineers building guardrails into their AI workflows. For developers, the takeaway is that automated code generation requires an equally automated verification layer to catch integration flaws that unit tests often overlook during rapid deployment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "アップデート"
-    ],
-    "created_at": "2026-11-08T01:01:52.117Z"
   },
   {
     "id": "art-1794097901793-cl0z6",
@@ -23201,33 +23225,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-06T17:01:53.859Z"
-  },
-  {
-    "id": "art-1793983608844-exn58",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/zivaengine/articles/f68112e1c7c433",
-    "published_at": "2026-11-06T15:36:46.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--JJYE3ZNE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Godot%25E3%2581%25A7AI%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25B9%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2588%25E3%2580%2581%25E3%2583%2594%25E3%2582%25AF%25E3%2582%25BB%25E3%2583%25AB%25E3%2582%25A2%25E3%2583%25BC%25E3%2583%2588%25E3%2580%2581%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ziva%2520Engine%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2M0MmY3NWM3MWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Godotエディター上で直接AI画像生成を行う「Ziva」活用術：スプライトやタイルを自動生成し、即座にインポートするワークフローを解説",
-    "summary_ja": "Godotエディター内でAIエージェント「Ziva」を動かし、2Dゲーム用のアート素材を生成する手法が注目されている。 「右向きの64x64ピクセルアートの騎士」のようなテキスト指示だけで、背景透明なスプライトやシームレスなタイルを自動作成し、指定ディレクトリへPNG出力、さらにGodotが即座にインポートする。 ツール間を行き来するコンテキストスイッチを排除し、開発環境内でグラフィック生成を完結させることが、個人ゲーム開発の生産性を飛躍的に向上させる。",
-    "translations": {
-      "ja": {
-        "title": "Godotエディター上で直接AI画像生成を行う「Ziva」活用術：スプライトやタイルを自動生成し、即座にインポートするワークフローを解説",
-        "summary": "Godotエディター内でAIエージェント「Ziva」を動かし、2Dゲーム用のアート素材を生成する手法が注目されている。 「右向きの64x64ピクセルアートの騎士」のようなテキスト指示だけで、背景透明なスプライトやシームレスなタイルを自動作成し、指定ディレクトリへPNG出力、さらにGodotが即座にインポートする。 ツール間を行き来するコンテキストスイッチを排除し、開発環境内でグラフィック生成を完結させることが、個人ゲーム開発の生産性を飛躍的に向上させる。"
-      },
-      "en": {
-        "title": "How to streamline 2D game asset creation in Godot using Ziva to auto-generate sprites and tiles directly in-editor",
-        "summary": "Developers can now bypass external tools to create 2D game art by integrating the AI agent Ziva directly within the Godot editor. By inputting simple prompts like “64x64 pixel art knight facing right,” Ziva generates transparent sprites, seamless tiles, and backgrounds, automatically saving PNGs to your project directory where Godot imports them instantly. This workflow eliminates the need to switch contexts between specialized design software and the engine, effectively turning your game environment into a creative hub. For individual builders, this reduces friction significantly, allowing for rapid asset iteration without leaving the IDE, which is critical for maintaining flow state when crafting complex 2D game worlds or prototypes alone."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "画像生成",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-06T16:46:48.844Z"
   },
   {
     "id": "art-1793982737563-zn4y8",
