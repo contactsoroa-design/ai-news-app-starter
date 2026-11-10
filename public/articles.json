@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794301327163-gxbhy",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/root_fork_ai/articles/b96f9ad5a18fb7",
+    "published_at": "2026-11-10T06:36:06.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--_zhSzdJC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259B%25B8%25E3%2581%258D%25E8%25BE%25BC%25E3%2581%25BF%25E3%2581%25AF200%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%25AB%25E4%25B8%25AD%25E8%25BA%25AB%25E3%2581%258C%25E7%25A9%25BA%253A%2520%25E7%259B%25A3%25E8%25A6%2596%25E3%2581%25AE%25E3%2580%258C%25E3%2582%25AE%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2597%25E3%2580%258D%25E5%2588%2597%25E3%2581%25AB%25E5%25B8%25AD%25E3%2581%258C%25E3%2581%25AA%25E3%2581%25843%25E3%2581%25A4%25E7%259B%25AE%25E3%2581%25AE%25E3%2583%2590%25E3%2582%25B0%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Root%2520%2528AI%2520agent%252C%2520Fork%2529%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvci5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "監視の盲点を突く3つ目のバグ：決済サービス13時間停止でもアラートが上がらなかった原因と「プロセステーブル消失」の検知戦略",
+    "summary_ja": "決済サービスが13時間停止していたにもかかわらずアラートが発火しなかった事例を分析。 AIエージェント「nim」による調査の結果、システム監視において「プロセステーブルごと消滅する」ような致命的な障害が検知できない「3つ目のバグ」の存在が明らかになった。 単なる応答遅延監視では不十分であり、プロセスの生存確認をプロセス外の外部ウォッチドッグで行う設計の重要性が示唆されている。",
+    "translations": {
+      "ja": {
+        "title": "監視の盲点を突く3つ目のバグ：決済サービス13時間停止でもアラートが上がらなかった原因と「プロセステーブル消失」の検知戦略",
+        "summary": "決済サービスが13時間停止していたにもかかわらずアラートが発火しなかった事例を分析。 AIエージェント「nim」による調査の結果、システム監視において「プロセステーブルごと消滅する」ような致命的な障害が検知できない「3つ目のバグ」の存在が明らかになった。 単なる応答遅延監視では不十分であり、プロセスの生存確認をプロセス外の外部ウォッチドッグで行う設計の重要性が示唆されている。"
+      },
+      "en": {
+        "title": "The third bug: Why a 13-hour payment outage went unmonitored and how to detect process-table failures",
+        "summary": "A critical payment system outage persisted for 13 hours without alerting, exposing a gap in traditional monitoring strategies. Investigations by AI agents into this failure revealed a 'third bug' scenario: when a process vanishes so completely that its process table entry disappears, standard health checks fail to trigger an alert. Relying solely on internal application heartbeat checks is insufficient when the entire process execution environment can collapse without a trace. The builder takeaway is that robust system reliability requires external, out-of-process watchdog mechanisms that can verify liveness independently. For developers building high-stakes infrastructure, this underscores that you cannot trust an application process to monitor its own existence when catastrophic failures occur."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-10T09:02:07.163Z"
+  },
+  {
+    "id": "art-1794301320809-j2a40",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/appubot",
+    "published_at": "2026-11-10T04:16:01.000Z",
+    "og_image_url": null,
+    "title_ja": "Macやクラウドで実アプリを自動操作する「AppuBot」、AIエージェントによる業務自動化の新たな選択肢として登場",
+    "summary_ja": "AppuBotは、Macやクラウド環境上で動作する既存のアプリケーションを直接操作し、ブラウザの制限を超えた業務自動化を実現するAIエージェントである。 従来のウェブスクレイピングやAPI連携とは異なり、ローカルアプリのGUIを直接操作できるため、これまで自動化が困難だったデスクトップ環境のワークフローを完結できる。 開発者や自動化エンジニアにとって、UIオートメーションの障壁を下げ、複雑な業務パイプラインをAIで自律実行させるための強力なツールとなりそうだ。",
+    "translations": {
+      "ja": {
+        "title": "Macやクラウドで実アプリを自動操作する「AppuBot」、AIエージェントによる業務自動化の新たな選択肢として登場",
+        "summary": "AppuBotは、Macやクラウド環境上で動作する既存のアプリケーションを直接操作し、ブラウザの制限を超えた業務自動化を実現するAIエージェントである。 従来のウェブスクレイピングやAPI連携とは異なり、ローカルアプリのGUIを直接操作できるため、これまで自動化が困難だったデスクトップ環境のワークフローを完結できる。 開発者や自動化エンジニアにとって、UIオートメーションの障壁を下げ、複雑な業務パイプラインをAIで自律実行させるための強力なツールとなりそうだ。"
+      },
+      "en": {
+        "title": "AppuBot launches as an AI agent capable of controlling real desktop and cloud applications for end-to-end automation",
+        "summary": "AppuBot is an emerging AI agent designed to operate real-world applications directly on macOS or within cloud environments, effectively bypassing the typical limitations of browser-based automation tools. Unlike conventional web scraping or API-only workflows, this agent interacts directly with the GUI of desktop software, enabling it to bridge automation gaps that have historically been impossible to automate. For developers and automation engineers, AppuBot removes the friction of complex UI orchestration, allowing for the creation of autonomous pipelines that span multiple desktop applications. By shifting the paradigm from API-driven tasks to direct interface manipulation, it offers a scalable method to execute intricate, multi-step business workflows without requiring native integrations for every legacy software tool."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-10T09:02:00.809Z"
+  },
+  {
+    "id": "art-1794301310346-gb674",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.10048",
+    "published_at": "2026-11-10T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "退役軍人のメンタルヘルス危機判定、LLMは専門家と同等の精度を出せるか？最新研究で25モデルを検証（149件の投稿対象）",
+    "summary_ja": "メンタルヘルスや危機に関連する投稿の深刻度判定における、大規模言語モデル（LLM）の信頼性が検証された。 研究チームは、退役軍人の専門家8名による判定を基準とし、15のオープンソースおよび10の独自LLMを用いて計149件の投稿を分析した。 結果、人間同士の一致度（α=0.494）の方が高く、LLMは安全性に関わる重大な判断を下すにはまだ不十分であることが示唆された。 ヘルスケアや安全性が重視される領域へのAI導入には、自動化の前に厳格な人間による監督が不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "退役軍人のメンタルヘルス危機判定、LLMは専門家と同等の精度を出せるか？最新研究で25モデルを検証（149件の投稿対象）",
+        "summary": "メンタルヘルスや危機に関連する投稿の深刻度判定における、大規模言語モデル（LLM）の信頼性が検証された。 研究チームは、退役軍人の専門家8名による判定を基準とし、15のオープンソースおよび10の独自LLMを用いて計149件の投稿を分析した。 結果、人間同士の一致度（α=0.494）の方が高く、LLMは安全性に関わる重大な判断を下すにはまだ不十分であることが示唆された。 ヘルスケアや安全性が重視される領域へのAI導入には、自動化の前に厳格な人間による監督が不可欠である。"
+      },
+      "en": {
+        "title": "Can LLMs Accurately Annotate Mental Health Crises? Researchers Test 25 Models Against Veteran Subject Matter Experts",
+        "summary": "Researchers recently evaluated the reliability of 15 open-source and 10 proprietary Large Language Models (LLMs) in detecting mental health crisis severity within veteran-related social media posts. By comparing model outputs against gold-standard annotations from eight human subject matter experts across 149 tweets, the study revealed that human consensus significantly outperformed inter-model agreement. This gap highlights substantial risks when deploying AI for safety-critical tasks, specifically in the sensitive realm of mental health triage. For developers building mental health support tools or automated moderation systems, the takeaway is clear: LLMs are not yet substitutes for expert judgment in high-stakes contexts. Rigorous human-in-the-loop oversight remains mandatory for any application involving clinical diagnosis or crisis intervention."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-10T09:01:50.346Z"
+  },
+  {
+    "id": "art-1794301302057-oeh6z",
+    "source_id": "source-aismiley",
+    "source_name": "AISmiley（AIニュース）",
+    "url": "https://aismiley.co.jp/ai_news/fancl-skin-mate-ai/",
+    "published_at": "2026-11-10T08:56:13.000Z",
+    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/11/fancl-skin-mate-ai.png",
+    "title_ja": "ファンケル、肌専門AI「FANCL SKIN MATE」を公開。顔画像解析と対話で個人の肌状態に最適化されたケアと生活習慣を提案",
+    "summary_ja": "ファンケルは、肌悩みに特化したAIサービス「FANCL SKIN MATE」の提供を開始した。 ユーザーの顔画像解析データとチャットを通じた対話を組み合わせることで、一人ひとりの肌状態を多角的に把握し、最適なスキンケア製品の提案や生活習慣の改善アドバイスを自動で行う。 リアル店舗でのカウンセリング体験をデジタルで再現する試みであり、特定ドメインにおけるAIのパーソナライゼーションは、顧客との接点強化を目指すD2Cブランドにとって強力な差別化要因となる。",
+    "translations": {
+      "ja": {
+        "title": "ファンケル、肌専門AI「FANCL SKIN MATE」を公開。顔画像解析と対話で個人の肌状態に最適化されたケアと生活習慣を提案",
+        "summary": "ファンケルは、肌悩みに特化したAIサービス「FANCL SKIN MATE」の提供を開始した。 ユーザーの顔画像解析データとチャットを通じた対話を組み合わせることで、一人ひとりの肌状態を多角的に把握し、最適なスキンケア製品の提案や生活習慣の改善アドバイスを自動で行う。 リアル店舗でのカウンセリング体験をデジタルで再現する試みであり、特定ドメインにおけるAIのパーソナライゼーションは、顧客との接点強化を目指すD2Cブランドにとって強力な差別化要因となる。"
+      },
+      "en": {
+        "title": "Fancl Launches FANCL SKIN MATE, an AI-Powered Skin Analysis Tool That Uses Face Mapping and Chat for Personalized Care",
+        "summary": "Fancl has released FANCL SKIN MATE, a specialized AI platform designed to provide hyper-personalized skincare guidance. The system integrates facial image analysis with interactive chat, allowing it to evaluate a user’s specific skin condition and offer tailored product recommendations alongside actionable lifestyle habit improvements. By digitizing the nuances typically found in in-store counseling, Fancl is effectively bridging the gap between clinical-grade skin analysis and everyday consumer convenience. For builders and D2C brands, this highlights a critical trend: embedding domain-specific AI models into customer journeys is becoming the standard for maintaining engagement and delivering personalized value, moving beyond generic recommendations to create high-trust, data-driven interfaces that genuinely solve user-specific pain points."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-10T09:01:42.057Z"
+  },
+  {
     "id": "art-1794300459275-hri1g",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -18888,32 +18992,6 @@
     "created_at": "2026-11-07T17:01:50.567Z"
   },
   {
-    "id": "art-1794070902318-hfkjg",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/daichi_gamedev/articles/3dai-compare",
-    "published_at": "2026-11-07T12:28:58.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--8awbPp4i--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Meshy%2520vs%2520Tripo%2520vs%2520Hyper3D%25E3%2580%25913D%25E7%2594%259F%25E6%2588%2590AI%25E3%2581%25AF%25E3%2581%25A9%25E3%2582%258C%25E3%2581%258C%25E8%2589%25AF%25E3%2581%2584%25EF%25BC%259F%25E5%2590%258C%25E3%2581%2598%25E3%2582%25A4%25E3%2583%25A9%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25A7%25E6%25AF%2594%25E8%25BC%2583%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:daichi%2520takezawa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I2NTg1NTFiMGUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "3D生成AI「Meshy」「Tripo」「Hyper3D」を徹底比較！イラストからゲーム用ローポリモデルを生成する実力を検証",
-    "summary_ja": "大手3D生成AIツールであるMeshy、Tripo AI、Hyper3Dを、同一のイラストセットを用いて比較検証した。 騎士やアニメ風キャラなどのイラストからハイポリおよびゲーム向けのローポリモデルを生成し、精度と使い勝手を調査。 1年前と比較して顔の崩れなど生成品質が劇的に向上しており、特にローポリ生成において各サービスが実用レベルに達しつつあることを確認した。 3Dアセット制作の効率化を目指すエンジニアにとって、用途に応じたモデルの使い分けが重要となる。",
-    "translations": {
-      "ja": {
-        "title": "3D生成AI「Meshy」「Tripo」「Hyper3D」を徹底比較！イラストからゲーム用ローポリモデルを生成する実力を検証",
-        "summary": "大手3D生成AIツールであるMeshy、Tripo AI、Hyper3Dを、同一のイラストセットを用いて比較検証した。 騎士やアニメ風キャラなどのイラストからハイポリおよびゲーム向けのローポリモデルを生成し、精度と使い勝手を調査。 1年前と比較して顔の崩れなど生成品質が劇的に向上しており、特にローポリ生成において各サービスが実用レベルに達しつつあることを確認した。 3Dアセット制作の効率化を目指すエンジニアにとって、用途に応じたモデルの使い分けが重要となる。"
-      },
-      "en": {
-        "title": "Comparative Review: Meshy vs. Tripo vs. Hyper3D for Generating Game-Ready 3D Assets from Single Illustrations",
-        "summary": "This comparative review tests three major 3D generative AI tools—Meshy, Tripo AI, and Hyper3D—by feeding them identical illustrations of knights and anime-style characters. The analysis evaluates both high-poly meshes and game-ready low-poly models, specifically targeting a 30,000-face budget for real-time applications. Compared to testing from a year ago, the output quality, particularly facial accuracy, has improved dramatically. While each service now offers viable workflows for rapid 3D asset generation, the benchmarks highlight distinct differences in mesh topology and detail retention. For developers integrating AI into 3D production pipelines, understanding these specific tool capabilities is critical to choosing the right model for specific optimization needs, as generation quality has finally moved past experimental fragility into functional, production-grade output."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "画像生成"
-    ],
-    "created_at": "2026-11-07T17:01:42.318Z"
-  },
-  {
     "id": "art-1794070887572-xopvo",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -18967,32 +19045,6 @@
       "開発"
     ],
     "created_at": "2026-11-07T16:46:42.249Z"
-  },
-  {
-    "id": "art-1794069139761-4n7kb",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/lumichy/articles/why-ai-text-is-hard-to-read-2026",
-    "published_at": "2026-11-07T10:06:32.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--JIRZy_zo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259CAI%25E3%2581%25AE%25E6%2596%2587%25E7%25AB%25A0%25E3%2581%25AF%25E3%2580%258C%25E6%25AD%25A3%25E3%2581%2597%25E3%2581%2584%25E3%2581%25AE%25E3%2581%25AB%25E8%25AA%25AD%25E3%2581%25BF%25E3%2581%25A5%25E3%2582%2589%25E3%2581%2584%25E3%2580%258D%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%25E6%259C%2580%25E6%2596%25B0%25E8%25AB%2596%25E6%2596%2587%25E3%2581%258C%25E6%259A%25B4%25E3%2581%2584%25E3%2581%259F%25E3%2580%258CAI%25E8%2587%25AD%25E3%2580%258D%25E3%2581%25AE%25E6%25AD%25A3%25E4%25BD%2593%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:lumichy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2JKREhqSzZDZU9QaFNKLXlfcUFhT1FuS0kwY0JmSWJVZEZUQnJGUWRGNWJNSUU5T2s9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "なぜAI生成文は「正しいのに読みづらい」のか？最新論文が突き止めた「AI臭」の原因と読解負荷の正体",
-    "summary_ja": "AIが生成する文章には文法的な誤りがないにもかかわらず、人間には「読みづらく、内容が頭に入ってこない」という特有の現象がある。 2026年10月の最新論文では、これがAI特有の「情報の過剰な構造化」と「確率的に無難な語彙選択」が、脳の認知負荷を不自然に高めていることに起因すると指摘している。 筆者は、人間が書く文章に含まれる適度な「ゆらぎ」や「文脈の欠落」こそが読解をスムーズにする鍵であり、生成AI活用時には推敲プロセスでこれらを意図的に再導入する必要があると論じている。",
-    "translations": {
-      "ja": {
-        "title": "なぜAI生成文は「正しいのに読みづらい」のか？最新論文が突き止めた「AI臭」の原因と読解負荷の正体",
-        "summary": "AIが生成する文章には文法的な誤りがないにもかかわらず、人間には「読みづらく、内容が頭に入ってこない」という特有の現象がある。 2026年10月の最新論文では、これがAI特有の「情報の過剰な構造化」と「確率的に無難な語彙選択」が、脳の認知負荷を不自然に高めていることに起因すると指摘している。 筆者は、人間が書く文章に含まれる適度な「ゆらぎ」や「文脈の欠落」こそが読解をスムーズにする鍵であり、生成AI活用時には推敲プロセスでこれらを意図的に再導入する必要があると論じている。"
-      },
-      "en": {
-        "title": "Why AI text feels sterile and unreadable: New research exposes the mechanics behind the 'AI smell' in LLM content",
-        "summary": "Despite perfect grammar and flawless logic, AI-generated text often feels unreadable, causing distinct cognitive fatigue for human readers. A new paper explores the 'AI smell,' attributing this phenomenon to the LLM tendency toward excessive structural uniformity and statistically safe, predictable word choices that inadvertently increase cognitive processing load. The research clarifies that human writing relies on subtle linguistic 'fluctuations' and intentional contextual gaps that actually facilitate comprehension; AI text fails by removing these human-centric friction points. For developers and content builders, the core takeaway is clear: simply generating text is not enough. To create engaging material, one must intentionally reintroduce stylistic variability and rhetorical ambiguity into the post-generation workflow to avoid triggering the brain’s rejection of sterile, hyper-optimized LLM output."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-07T16:32:19.761Z"
   },
   {
     "id": "art-1794069102809-sk566",
@@ -40184,32 +40236,6 @@
     "created_at": "2026-10-31T10:16:22.740Z"
   },
   {
-    "id": "art-1793437331157-l05jc",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/telemetry-dev",
-    "published_at": "2026-10-29T00:13:46.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェント開発に必須の監視・評価プラットフォーム「telemetry.dev」が登場。LLMの複雑な対話ログの追跡とパフォーマンス可視化を支援",
-    "summary_ja": "「telemetry.dev」は、AIエージェントの推論プロセスを詳細に可視化するLLM向けオブザーバビリティ（可観測性）プラットフォームである。 複雑なプロンプトチェーンの実行トレースから、トークン消費量やレイテンシ、回答精度の評価までを一元管理できるのが特徴だ。 AI製品を本番運用する開発者にとって、予期せぬ挙動の原因特定とプロンプト改善のサイクルを高速化する強力な武器となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント開発に必須の監視・評価プラットフォーム「telemetry.dev」が登場。LLMの複雑な対話ログの追跡とパフォーマンス可視化を支援",
-        "summary": "「telemetry.dev」は、AIエージェントの推論プロセスを詳細に可視化するLLM向けオブザーバビリティ（可観測性）プラットフォームである。 複雑なプロンプトチェーンの実行トレースから、トークン消費量やレイテンシ、回答精度の評価までを一元管理できるのが特徴だ。 AI製品を本番運用する開発者にとって、予期せぬ挙動の原因特定とプロンプト改善のサイクルを高速化する強力な武器となるだろう。"
-      },
-      "en": {
-        "title": "telemetry.dev Launches as a Specialized Observability Platform for Monitoring, Tracing, and Debugging Complex AI Agent Reasoning Chains in Production",
-        "summary": "telemetry.dev has launched as a dedicated observability platform designed specifically for the intricacies of AI agents, enabling developers to monitor, trace, and evaluate reasoning chains in live production environments. Instead of relying on generic application monitoring, this tool captures detailed traces of LLM interactions, token usage, latency metrics, and response accuracy, allowing teams to diagnose failure points in complex prompt chains effectively. For builders scaling AI applications, the ability to pinpoint exactly where an agent hallucinates or stalls is critical for reliability. This platform provides the granular visibility needed to iterate on prompts and system instructions faster, effectively turning messy agent logs into actionable data for continuous optimization and improved user experiences."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-31T09:02:11.157Z"
-  },
-  {
     "id": "art-1793435367654-txr2f",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -53438,33 +53464,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-25T13:02:06.508Z"
-  },
-  {
-    "id": "art-1792933317345-637u8",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/aiplus/article/2610/23/2000002552/",
-    "published_at": "2026-10-23T08:37:57.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2610/23/2000002552/10010299/2048",
-    "title_ja": "中国発の自律型攻撃AI「ARTEX」に悪用の実態：日本企業20社も標的、作者は公開停止も改変版が闇市場で拡散中",
-    "summary_ja": "中国語話者が「研究目的」で公開したAI自律型侵入テストツール「ARTEX」が、日本を含む各国の企業攻撃に悪用されていることが判明した。 MicrosoftやCrowdStrikeの報告によりその脅威が浮き彫りとなり、作者は公開を停止したものの、ソースコードの改変版が地下市場で拡散し続けている。 AIを活用した攻撃の自動化は、既存のセキュリティ境界を即座に突破するリスクを孕んでおり、防御側はAIによる高速な脆弱性探索を前提とした新たなインシデント対応を迫られている。",
-    "translations": {
-      "ja": {
-        "title": "中国発の自律型攻撃AI「ARTEX」に悪用の実態：日本企業20社も標的、作者は公開停止も改変版が闇市場で拡散中",
-        "summary": "中国語話者が「研究目的」で公開したAI自律型侵入テストツール「ARTEX」が、日本を含む各国の企業攻撃に悪用されていることが判明した。 MicrosoftやCrowdStrikeの報告によりその脅威が浮き彫りとなり、作者は公開を停止したものの、ソースコードの改変版が地下市場で拡散し続けている。 AIを活用した攻撃の自動化は、既存のセキュリティ境界を即座に突破するリスクを孕んでおり、防御側はAIによる高速な脆弱性探索を前提とした新たなインシデント対応を迫られている。"
-      },
-      "en": {
-        "title": "China-linked autonomous cyberattack tool ARTEX fuels surge in malicious exploits targeting Japanese firms and global enterprises",
-        "summary": "Researchers have identified ARTEX, an autonomous AI penetration testing tool originally released by Chinese-speaking developers under the guise of security research, as a major driver for recent automated cyberattacks. Microsoft and CrowdStrike confirmed the tool has already targeted at least 20 Japanese companies, highlighting how easily accessible offensive AI lowers the barrier for complex breaches. Although the original authors have discontinued the project, modified variants of the source code are proliferating across underground channels. This incident underscores a critical shift for engineering teams: as bad actors leverage AI to automate vulnerability scanning and exploitation, traditional defensive perimeters are no longer sufficient. Builders must now prioritize AI-resilient security architectures that assume rapid, autonomous scanning as the new baseline threat vector."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-25T13:01:57.345Z"
   },
   {
     "id": "art-1792930356366-0spze",
