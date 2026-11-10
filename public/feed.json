@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1794296810036-ak9az",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/itaraiguma/articles/related-articles-scan-cap-withdrawn",
+    "published_at": "2026-11-09T23:17:55.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--XNyh--vN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%25A2%25E9%2580%25A3%25E8%25A8%2598%25E4%25BA%258B%25E3%2581%25AE%25E9%2581%25B8%25E3%2581%25B3%25E6%2596%25B9%25E3%2582%2592%25E8%2589%25AF%25E3%2581%258F%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC%25E3%2581%258C%25E8%2590%25BD%25E3%2581%25A1%25E5%25A7%258B%25E3%2582%2581%25E3%2581%259F%2520%25E2%2594%2580%2520%25E5%2580%2599%25E8%25A3%259C%25E3%2582%2592100%25E4%25BB%25B6%25E3%2581%25A7%25E5%2588%2587%25E3%2582%258B%25E4%25BF%25AE%25E6%25AD%25A3%25E3%2582%2592%25E5%258F%2596%25E3%2582%258A%25E4%25B8%258B%25E3%2581%2592%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlZmMxMmY2MTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "技術記事キュレーション「DevPick」で発生した関連記事選定ロジックの障害と、ORM全件読み込み回避による解決までの全記録",
+    "summary_ja": "技術記事キュレーションサービス「DevPick」で、関連記事の選定アルゴリズムを改善した直後からバックエンドのワーカーがクラッシュする事態が発生した。 原因を精査したところ、全件検索候補の読み込みにおいてORMを介してモデルを生成するプロセスがメモリを圧迫していたことが判明。 候補数を制限する安易な修正を取り下げ、ORM経由ではなくIDのみを抽出するクエリに書き直すことで、精度とパフォーマンスの両立に成功した。",
+    "translations": {
+      "ja": {
+        "title": "技術記事キュレーション「DevPick」で発生した関連記事選定ロジックの障害と、ORM全件読み込み回避による解決までの全記録",
+        "summary": "技術記事キュレーションサービス「DevPick」で、関連記事の選定アルゴリズムを改善した直後からバックエンドのワーカーがクラッシュする事態が発生した。 原因を精査したところ、全件検索候補の読み込みにおいてORMを介してモデルを生成するプロセスがメモリを圧迫していたことが判明。 候補数を制限する安易な修正を取り下げ、ORM経由ではなくIDのみを抽出するクエリに書き直すことで、精度とパフォーマンスの両立に成功した。"
+      },
+      "en": {
+        "title": "Why my curation site's backend crashed after optimizing related articles: How improper ORM usage caused memory spikes",
+        "summary": "After updating the related article selection algorithm for the tech curation site DevPick, the backend workers began crashing almost immediately. The initial impulse to limit search candidates to prevent crashes was a mistake, as it regressed the improved accuracy of the recommendations. Investigation revealed that the bottleneck wasn't the scope of the search itself, but rather the performance cost of hydrating entire model objects via the ORM for every candidate. By refactoring the logic to fetch only IDs and perform data lookups without fully instantiating each model, the system regained stability while maintaining high-quality results. For builders, this underscores the critical need to avoid N+1 ORM overhead when processing large datasets, even in simple backend features."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-10T07:46:50.036Z"
+  },
+  {
+    "id": "art-1794296800745-19x0b",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/jocelinoluiz768/items/a34de452d0e31ac02f98",
+    "published_at": "2026-11-10T07:23:32.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSnpYM3hLQ2otTkpYaG1tRmwyWm1tM0E5RWoxMXpJNERnX1pDMzJnZ3V6Yzdzc1F3JTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTZjMWQyYWJmYmMxODU4MzFkY2M5ZTJhNDkwYTYwOTdk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D54ce39c4be300a88bc083df257b0df59?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTYlOTYlODclRTclQUIlQTAlRTMlODElQUUlRTYlQTQlOUMlRTUlODclQkElRTclQjUlOTAlRTYlOUUlOUMlRTMlODIlOTIlRTMlODElQTklRTMlODElODYlRTglQUElQUQlRTMlODIlODAlRTMlODElOEIlRUYlQkMlOUElRTMlODIlQjklRTMlODIlQjMlRTMlODIlQTIlRTMlODIlOTIlRTMlODAlOEMlRTglQTglQkMlRTYlOTglOEUlRTMlODAlOEQlRTMlODElQUIlRTMlODElOTclRTMlODElQUElRTMlODElODQlRTMlODElOUYlRTMlODIlODElRTMlODElQUUlRTUlQUUlOUYlRTUlOEIlOTklRTMlODMlQTElRTMlODMlQTImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz00NTYyZDkxZDkyZDFhZDBjMTZjNTAxY2RjOTE2MGViNg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBqb2NlbGlub2x1aXo3NjgmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1kZTE4NDY5MDRjNjg5YTU4ZGM5NjRlYTgxN2ZmNTY0Yw&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=43ea29242fdd6e92131b014f37c4bd33",
+    "title_ja": "AI文章検出ツールのスコアを「白黒つける証拠」にしないための実務：確率的判断の本質と過信を防ぐ運用のポイント",
+    "summary_ja": "生成AIによる文章作成が一般化する中、検出ツールのスコアを絶対的な「証明」と捉えるリスクが指摘されている。 AI検出の仕組みは本質的に確率に基づく予測であり、誤検知やバイアスを避けることは不可能だ。 実務において検出ツールは「疑うための道具」ではなく「思考のたたき台」として活用し、文章の信頼性はプロセスの透明性やファクトチェックを通じて担保すべきである。",
+    "translations": {
+      "ja": {
+        "title": "AI文章検出ツールのスコアを「白黒つける証拠」にしないための実務：確率的判断の本質と過信を防ぐ運用のポイント",
+        "summary": "生成AIによる文章作成が一般化する中、検出ツールのスコアを絶対的な「証明」と捉えるリスクが指摘されている。 AI検出の仕組みは本質的に確率に基づく予測であり、誤検知やバイアスを避けることは不可能だ。 実務において検出ツールは「疑うための道具」ではなく「思考のたたき台」として活用し、文章の信頼性はプロセスの透明性やファクトチェックを通じて担保すべきである。"
+      },
+      "en": {
+        "title": "Why AI text detection scores should never serve as definitive proof: Practical guidelines for responsible evaluation of generative content",
+        "summary": "As generative AI becomes standard for drafting everything from research papers to blog posts, practitioners are increasingly tempted to rely on AI detection scores as binary proof of human authorship. However, these tools inherently operate on probabilistic patterns rather than factual verification, making them prone to false positives and demographic bias. In any professional context, treating detection software as a forensic judge is a tactical error. Builders and editors should reframe these metrics merely as diagnostic signals rather than evidence, focusing instead on verifiable fact-checking and transparent provenance of the writing process. Relying on opaque scores to gatekeep content quality ignores the structural limitations of current classifiers, creating unnecessary conflict without actually guaranteeing the integrity or value of the output."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-10T07:46:40.745Z"
+  },
+  {
+    "id": "art-1794296791050-kjvwd",
+    "source_id": "source-benchlm",
+    "source_name": "BenchLM（モデル動向）",
+    "url": "https://af.net/news/vote-america-says-no-to-data-centers-is-the-global-south-next/",
+    "published_at": "2026-11-10T07:44:51.000Z",
+    "og_image_url": "https://af.net/wp-content/uploads/dc-vote-cover-v2.jpg",
+    "title_ja": "米住民投票でデータセンター建設に拒否反応：全41件中40件が否決、AIインフラの「グローバルサウス」移転が加速する可能性",
+    "summary_ja": "11月3日に実施された米国の住民投票で、データセンター建設に関する議案が41件中40件で否決された。 地域住民による反対運動が活発化しており、電力消費や環境負荷への懸念が建設の障壁となっている。 この結果を受け、AI開発企業が電力供給や規制が異なるグローバルサウスへインフラを移転させる動きが強まる可能性があり、開発者は各国の政治リスクやインフラ規制を考慮した戦略が必要になるだろう。",
+    "translations": {
+      "ja": {
+        "title": "米住民投票でデータセンター建設に拒否反応：全41件中40件が否決、AIインフラの「グローバルサウス」移転が加速する可能性",
+        "summary": "11月3日に実施された米国の住民投票で、データセンター建設に関する議案が41件中40件で否決された。 地域住民による反対運動が活発化しており、電力消費や環境負荷への懸念が建設の障壁となっている。 この結果を受け、AI開発企業が電力供給や規制が異なるグローバルサウスへインフラを移転させる動きが強まる可能性があり、開発者は各国の政治リスクやインフラ規制を考慮した戦略が必要になるだろう。"
+      },
+      "en": {
+        "title": "US Voters Reject Data Centers in 40 of 41 Ballots: Will AI Infrastructure Now Shift to the Global South?",
+        "summary": "In a significant rebuke, US voters rejected local data center construction proposals in 40 out of 41 ballot measures on November 3rd. Local opposition driven by concerns over massive power consumption, noise, and environmental impact is making domestic expansion increasingly untenable for AI operators. As these projects face local gridlocked opposition, there is a mounting risk that infrastructure development will migrate toward the Global South, where regulations and energy politics are fundamentally different. For builders and AI strategists, this trend marks a turning point where proximity to reliable power will dictate site selection, potentially forcing businesses to navigate complex new geopolitical landscapes and foreign regulatory frameworks to keep their massive compute operations online and scaling."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-10T07:46:31.050Z"
+  },
+  {
     "id": "art-1794295925378-xhbfv",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -16656,32 +16735,6 @@
     "created_at": "2026-11-08T06:46:41.622Z"
   },
   {
-    "id": "art-1794119528939-1zq2c",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.techradar.com/pro/70-percent-of-brits-say-please-or-thank-you-when-speaking-to-ai-and-some-even-apologize",
-    "published_at": "2026-11-08T05:58:20.000Z",
-    "og_image_url": "https://cdn.mos.cms.futurecdn.net/8vLsLeC4LHKgwTpJRXEWKZ-1920-80.jpg",
-    "title_ja": "英国民の7割がAIとの対話で「お願いします」「ありがとう」を使用――AIへの擬人化と心理的投影が開発者に与えるUX設計の示唆",
-    "summary_ja": "最新の調査によると、英国のAIユーザーの7割がChatGPT等の対話型AIに対し「お願いします」や「ありがとう」といった礼儀正しい言葉を使い、一部は謝罪まで行っている。 これはユーザーがAIを単なるツールではなく人間味のある存在として認識し、心理的な投影を行っているためだ。 開発者にとって重要なのは、AIの応答がこの擬人化を強化する側面がある点である。",
-    "translations": {
-      "ja": {
-        "title": "英国民の7割がAIとの対話で「お願いします」「ありがとう」を使用――AIへの擬人化と心理的投影が開発者に与えるUX設計の示唆",
-        "summary": "最新の調査によると、英国のAIユーザーの7割がChatGPT等の対話型AIに対し「お願いします」や「ありがとう」といった礼儀正しい言葉を使い、一部は謝罪まで行っている。 これはユーザーがAIを単なるツールではなく人間味のある存在として認識し、心理的な投影を行っているためだ。 開発者にとって重要なのは、AIの応答がこの擬人化を強化する側面がある点である。"
-      },
-      "en": {
-        "title": "70% of British AI users habitually say 'please' and 'thank you' to chatbots, highlighting deep human-AI anthropomorphism",
-        "summary": "A recent study reveals that 70% of British AI users incorporate polite phrases like 'please' and 'thank you' when interacting with chatbots, with some even apologizing for errors. This widespread behavior demonstrates that users are increasingly viewing AI agents not merely as utilitarian tools, but as social entities to which they subconsciously project human traits. For developers and UX designers, this trend is critical: the inherent 'humanity' of a model's persona significantly influences user interaction patterns. Understanding that users instinctively humanize these systems means that tone, conversational fluidity, and empathetic response framing are no longer secondary features; they are primary components that directly impact retention, user trust, and the perceived quality of the entire AI experience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-08T06:32:08.939Z"
-  },
-  {
     "id": "art-1794119518813-uhqx2",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -17649,33 +17702,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-08T01:32:10.095Z"
-  },
-  {
-    "id": "art-1794100616388-oevgm",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/aakan/items/b1021921bf3649704b4e",
-    "published_at": "2026-11-08T01:10:53.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQwNDEyMSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc3ODA3MjY3ND9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTI1NGNkNzA1NjExMDNjZGE4MjVlMGM5MmM0MTM4MjA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D4ac52d34f7a0cc5509164774d8b64542?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTk2QUklMjBOZXdzJTIwJUUzJTgxJUJFJUUzJTgxJUE4JUUzJTgyJTgxJUUzJTgwJTk3JUU3JTk0JTlGJUU2JTg4JTkwQUklMjAlRTMlODMlOEIlRTMlODMlQTUlRTMlODMlQkMlRTMlODIlQjklRTMlODMlQUMlRTMlODMlOUQlRTMlODMlQkMlRTMlODMlODglMjAlRTIlODAlOTQlMjAyMDI2LTExLTA4JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9OGE4M2UzYjI1NzEyZmZlMDg4ZTcwZWFhOWFiMjkxMDk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhYWthbiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTQyYjM3ZjBmMTEwODUwNDFhNjRmYTlkODhlNGU3NmQx&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=aa7a0879fdfe51708c6523e2c2ce0e6c",
-    "title_ja": "SequoiaがEdelbyteと提携、AI開発の好奇心を支えるデータインフラ層の強化へ",
-    "summary_ja": "Sequoia CapitalがAIデータインフラを提供するEdelbyteとの提携を発表した。 この提携は、大規模AIモデル開発における膨大なデータ処理と、研究者が求める柔軟なデータ探索環境の両立を狙うものだ。 開発者にとって重要な教訓は、モデルの性能向上だけでなく、データをいかに高速かつ直感的にエンジニアが扱えるようにするかが、次世代AIプロダクトの競争優位性を決定づけるという点である。 データ基盤の効率化こそが、AI開発速度を加速させる不可欠な鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "SequoiaがEdelbyteと提携、AI開発の好奇心を支えるデータインフラ層の強化へ",
-        "summary": "Sequoia CapitalがAIデータインフラを提供するEdelbyteとの提携を発表した。 この提携は、大規模AIモデル開発における膨大なデータ処理と、研究者が求める柔軟なデータ探索環境の両立を狙うものだ。 開発者にとって重要な教訓は、モデルの性能向上だけでなく、データをいかに高速かつ直感的にエンジニアが扱えるようにするかが、次世代AIプロダクトの競争優位性を決定づけるという点である。 データ基盤の効率化こそが、AI開発速度を加速させる不可欠な鍵となる。"
-      },
-      "en": {
-        "title": "Sequoia Partners with Edelbyte to Strengthen Data Infrastructure Layers for Next-Generation AI Development",
-        "summary": "Sequoia Capital has announced a strategic partnership with Edelbyte, a specialist in AI data infrastructure, aiming to enhance how developers process and explore massive datasets required for model training. This collaboration targets the critical bottleneck between raw data volume and the intuitive exploration tools researchers need to iterate faster. For builders, the core takeaway is that model architecture is only half the battle; superior competitive advantage now hinges on the underlying data stack's efficiency. By streamlining how engineers interact with and manipulate large-scale datasets, teams can drastically reduce training lead times. Investing in robust, flexible data infrastructure is no longer an optional backend concern but a primary driver of successful AI product development."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-08T01:16:56.388Z"
   },
   {
     "id": "art-1794100609967-4mhka",
@@ -24134,33 +24160,6 @@
       "開発"
     ],
     "created_at": "2026-11-05T20:16:44.414Z"
-  },
-  {
-    "id": "art-1793908916768-f57w1",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/dk_architect/articles/ai-webapp-requirements-first",
-    "published_at": "2026-11-05T09:56:40.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xUGULHni--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%2592%25E4%25BD%259C%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2581%25A8%25E6%25B1%25BA%25E3%2582%2581%25E3%2581%25A6%25E3%2581%258B%25E3%2582%2589%25E3%2580%2581AI%25E3%2581%25AB%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%259F%2520%25E2%2580%2595%2520%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E7%2594%25A8Web%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BC%2581%25E7%2594%25BB%25E3%2581%258B%25E3%2582%2589%25E3%2583%25AA%25E3%2583%25AA%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%25BE%25E3%2581%25A7AI%25E3%2581%25A7%25E5%259B%259E%25E3%2581%2597%25E3%2581%259F%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:DK%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZhMzIwNDQwMDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "サーバーレスでAI開発：個人開発者がClaude Codeを活用し、園芸用Webアプリの企画からリリースまでを完全自動化した全記録",
-    "summary_ja": "個人開発者が自身の園芸ブログへ追加するWebツールを、企画から実装・リリースに至るまでAI（Claude CodeとCodex）を駆使して構築した事例を紹介する。 人間は要件定義と設計、各工程のレビュー判断に徹し、サーバー構築を含む実装タスクの大部分をAIに委任することで、開発工数を大幅に圧縮した。 このアプローチは、小規模なサイドプロジェクトにおいて、エンジニアがコード記述から解放され、プロダクト設計や意思決定に注力できる新しい開発ワークフローの可能性を示している。",
-    "translations": {
-      "ja": {
-        "title": "サーバーレスでAI開発：個人開発者がClaude Codeを活用し、園芸用Webアプリの企画からリリースまでを完全自動化した全記録",
-        "summary": "個人開発者が自身の園芸ブログへ追加するWebツールを、企画から実装・リリースに至るまでAI（Claude CodeとCodex）を駆使して構築した事例を紹介する。 人間は要件定義と設計、各工程のレビュー判断に徹し、サーバー構築を含む実装タスクの大部分をAIに委任することで、開発工数を大幅に圧縮した。 このアプローチは、小規模なサイドプロジェクトにおいて、エンジニアがコード記述から解放され、プロダクト設計や意思決定に注力できる新しい開発ワークフローの可能性を示している。"
-      },
-      "en": {
-        "title": "Building a web app without writing code: How one solo developer used Claude Code to automate product creation from planning to release",
-        "summary": "A solo developer shares a detailed case study on building a new gardening tool for their blog, leveraging AI agents like Claude Code and Codex to handle everything from initial conception through final deployment. By offloading server architecture, implementation, and testing tasks to AI, the creator limited their role to high-level requirement definition, architectural design, and rigorous code reviews. This workflow highlights how solo builders can effectively bypass traditional coding bottlenecks to launch functional, serverless web products rapidly. For developers, the takeaway is that modern AI agents now allow for a shift where the human acts primarily as an architect and quality auditor, delegating the grunt work of full-stack implementation entirely to autonomous systems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-05T20:01:56.768Z"
   },
   {
     "id": "art-1793908895579-hbrbz",
