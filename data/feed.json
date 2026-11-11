@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794377899037-iie79",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/hiouchiy/articles/b837762b7a8a2b",
+    "published_at": "2026-11-11T04:48:11.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--R_R-chS7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2587%2591%25E8%259E%258D%25E7%2589%25B9%25E5%258C%2596%25E3%2581%25AE%25E5%259B%25BD%25E7%2594%25A3%2520LLM%25E3%2580%258CPLaMo%25203.0%2520Fin%25E3%2580%258D%25E3%2582%2592%2520Databricks%2520%25E3%2581%25A7%25E3%2583%2590%25E3%2583%2583%25E3%2583%2581%25E6%258E%25A8%25E8%25AB%2596%25E3%2583%25BB%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hiroshi%2520Ouchiyama%2520...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM4YjIxMDI2YzcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "PFNの金融特化LLM「PLaMo 3.0 Fin」をDatabricksで構築：サーバレスGPUを活用したバッチ推論と効率的なサービング実装",
+    "summary_ja": "Preferred Networksが公開した金融特化モデル「PLaMo 3.0 Fin」を、Databricks上で効率的に運用する手法を解説する。 AI Runtime（サーバレスGPU）を用いたvLLMによるバッチ推論と、Model ServingによるAPI化の両構成を検証した。 特定ドメインのモデルをクラウド環境で素早く実用化する際、GPUリソースのライフサイクル管理とフレームワークの選択がコスト対性能の最大化に直結する。",
+    "translations": {
+      "ja": {
+        "title": "PFNの金融特化LLM「PLaMo 3.0 Fin」をDatabricksで構築：サーバレスGPUを活用したバッチ推論と効率的なサービング実装",
+        "summary": "Preferred Networksが公開した金融特化モデル「PLaMo 3.0 Fin」を、Databricks上で効率的に運用する手法を解説する。 AI Runtime（サーバレスGPU）を用いたvLLMによるバッチ推論と、Model ServingによるAPI化の両構成を検証した。 特定ドメインのモデルをクラウド環境で素早く実用化する際、GPUリソースのライフサイクル管理とフレームワークの選択がコスト対性能の最大化に直結する。"
+      },
+      "en": {
+        "title": "Deploying PFN’s Finance-Specific PLaMo 3.0 Fin LLM on Databricks: Implementing Serverless GPU Batch Inference and Model Serving",
+        "summary": "This article demonstrates how to deploy Preferred Networks' finance-specialized LLM, PLaMo 3.0 Fin, within the Databricks ecosystem using both serverless GPU batch inference via vLLM and real-time model serving. The implementation highlights the practical workflow for scaling domain-specific models, focusing on managing GPU resource lifecycles effectively to balance performance and infrastructure costs. For engineers bringing specialized LLMs into production, the critical takeaway is that selecting the right inference framework—like vLLM—and integrating it into a managed cloud environment removes the heavy lifting of cluster maintenance. Mastering these serving patterns on platforms like Databricks is essential for teams looking to rapidly operationalize niche models without building custom MLOps infrastructure from scratch."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-11T06:18:19.037Z"
+  },
+  {
+    "id": "art-1794377833051-nole1",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://chrlschn.dev/blog/2026/08/the-unexpected-ai-stack-csharp-dotnet-part-1/",
+    "published_at": "2026-11-11T05:35:17.000Z",
+    "og_image_url": "https://chrlschn.dev/img/ai-sleeper-stack/netcore-csharp-aspire.png",
+    "title_ja": "C# + .NETで構築する意外なAIスタック：Python一強時代に挑む、型安全性とパフォーマンス重視のAI開発戦略",
+    "summary_ja": "AI開発といえばPythonが一般的だが、実はC#と.NETエコシステムが、エンタープライズ級のAIアプリケーション構築において強力な選択肢となる。 型安全性やマルチスレッド処理の効率性、そして既存の堅牢なライブラリ群を活かすことで、生産性と保守性を両立できる。 特に複雑なバックエンドと統合が必要なプロジェクトでは、C#の並列処理能力とメモリ管理が優位に働き、AIモデルをプロダクトへ組み込む際の新たなスタンダードとなり得るだろう。",
+    "translations": {
+      "ja": {
+        "title": "C# + .NETで構築する意外なAIスタック：Python一強時代に挑む、型安全性とパフォーマンス重視のAI開発戦略",
+        "summary": "AI開発といえばPythonが一般的だが、実はC#と.NETエコシステムが、エンタープライズ級のAIアプリケーション構築において強力な選択肢となる。 型安全性やマルチスレッド処理の効率性、そして既存の堅牢なライブラリ群を活かすことで、生産性と保守性を両立できる。 特に複雑なバックエンドと統合が必要なプロジェクトでは、C#の並列処理能力とメモリ管理が優位に働き、AIモデルをプロダクトへ組み込む際の新たなスタンダードとなり得るだろう。"
+      },
+      "en": {
+        "title": "Why C# and .NET are becoming the surprising powerhouses for building high-performance AI applications, challenging Python's dominance",
+        "summary": "While Python currently dominates the AI landscape, the C# and .NET ecosystem is emerging as a formidable, high-performance alternative for building production-grade AI applications. By leveraging C#'s strict type safety, robust multi-threading capabilities, and mature library ecosystem, developers can build scalable AI pipelines with superior maintainability compared to interpreted alternatives. This stack excels in enterprise environments where integration with existing backend architectures is critical, offering efficient memory management and optimized parallel processing. For teams hesitant to fully embrace Python-only workflows, the .NET approach proves that you do not need to abandon strong-typed languages to achieve state-of-the-art AI functionality. Embracing this stack allows engineers to bridge the gap between traditional enterprise software and cutting-edge machine learning models seamlessly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-11T06:17:13.051Z"
+  },
+  {
+    "id": "art-1794377825630-xyu1u",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/kazutoyamaura/items/80488a5d5d1ad5a5fc46",
+    "published_at": "2026-11-11T06:02:52.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzYzNjA5OSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTczMjE2MzI4Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZmU2YTM0YThmMWE3N2U0MWI4MjUyZWQwMWU5ZTZmNzY%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZkNWRiNzdjMWE4Zjc3NzA1ZjNhMmIwNmQwZWFlNTc5MGY0MWRjYmE3JTJGb3JpZ2luYWwuanBnJTNGMTYzNDIxMTM4Nz9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz02YWEzMDA0MjU5MmZhMTE0ZjBkNDYwYzY5MTUyYmFhNw%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dbe7b2c869381009132424ea2348f3345?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JTlDJTgwJUU4JUJGJTkxJUU4JUE5JUIxJUU5JUExJThDJUUzJTgxJUFFTXVzZSVFMyU4MSVBOCVFMyU4MSVBRiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWI4NDM1MmE5NjkwZWE4Mjg4MTBmMzRmMmMzZGNhMjhj&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrYXp1dG95YW1hdXJhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZWEwNzljMzM5NTE2MDhkOGI4Nzk5NGM2NmJmZjgxOWE&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-44Kq44OV44Kw44Oq44OD44OJ&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=d762f6d809e96736cdb421a8e1140f99",
+    "title_ja": "Metaが提供する個人向けAIエージェント「Muse」とは？2026年9月に日本を含む4カ国でサービス開始、その特徴と機能を解説",
+    "summary_ja": "Metaが2026年9月8日に米国・カナダ・日本・シンガポールの4カ国で正式ローンチした「Muse」は、個人の行動パターンを学習するパーソナルAIエージェントだ。 ユーザーの日常的なコミュニケーションや作業習慣を把握し、タスクの自動化や文脈に応じたサポートを提供する。 AIエージェントが単なる検索ツールから個人の相棒へと進化する中で、Museの登場は、開発者が「個人の文脈」をどうAIに組み込むべきかという新たな設計指針を示している。",
+    "translations": {
+      "ja": {
+        "title": "Metaが提供する個人向けAIエージェント「Muse」とは？2026年9月に日本を含む4カ国でサービス開始、その特徴と機能を解説",
+        "summary": "Metaが2026年9月8日に米国・カナダ・日本・シンガポールの4カ国で正式ローンチした「Muse」は、個人の行動パターンを学習するパーソナルAIエージェントだ。 ユーザーの日常的なコミュニケーションや作業習慣を把握し、タスクの自動化や文脈に応じたサポートを提供する。 AIエージェントが単なる検索ツールから個人の相棒へと進化する中で、Museの登場は、開発者が「個人の文脈」をどうAIに組み込むべきかという新たな設計指針を示している。"
+      },
+      "en": {
+        "title": "Meta Launches Muse: A New Personal AI Agent Debuting in Japan, the US, Canada, and Singapore",
+        "summary": "Meta officially launched Muse on September 8, 2026, introducing a sophisticated personal AI agent designed to integrate deeply into the daily workflows of users in the US, Canada, Japan, and Singapore. Unlike passive assistants, Muse is engineered to learn individual communication patterns and behavioral habits, offering proactive automation and context-aware assistance rather than simple query-response interactions. For builders and developers, the emergence of Muse signals a shift toward agents that prioritize deep personal context over broad utility. The key takeaway is that the next generation of AI services must evolve beyond standard interfaces to become personalized partners that understand the nuances of a user’s professional and personal life in real-time."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-11T06:17:05.630Z"
+  },
+  {
+    "id": "art-1794377817752-p08uw",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.12938",
+    "published_at": "2026-11-11T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "知識グラフQAにおける視覚プロンプトの有効性：画像入力による回答精度1.85ポイント向上と複雑度依存性の分析（arXiv発表）",
+    "summary_ja": "最新の研究により、大規模視覚言語モデル（VLM）を用いた知識グラフ質問応答（KGQA）において、グラフ画像をプロンプトに併用する手法が回答精度を平均1.85 F1ポイント向上させることが明らかになった。 特に低複雑度の質問において精度が4.65ポイント改善する一方、モデル規模への依存度は低く、視覚的なレイアウトが推論に与える影響が大きいことが判明した。",
+    "translations": {
+      "ja": {
+        "title": "知識グラフQAにおける視覚プロンプトの有効性：画像入力による回答精度1.85ポイント向上と複雑度依存性の分析（arXiv発表）",
+        "summary": "最新の研究により、大規模視覚言語モデル（VLM）を用いた知識グラフ質問応答（KGQA）において、グラフ画像をプロンプトに併用する手法が回答精度を平均1.85 F1ポイント向上させることが明らかになった。 特に低複雑度の質問において精度が4.65ポイント改善する一方、モデル規模への依存度は低く、視覚的なレイアウトが推論に与える影響が大きいことが判明した。"
+      },
+      "en": {
+        "title": "Visualizing Graphs in Prompts Boosts KGQA Accuracy by 1.85 F1 Points, According to New Multimodal Research",
+        "summary": "Researchers have found that injecting graph visualizations into Large Vision-Language Model (VLM) prompts improves Knowledge Graph Question Answering (KGQA) by an average of 1.85 F1 points. Testing across 1,500 questions and six distinct models, the study revealed that these gains are most significant in low-complexity queries, where precision surged by 4.65 F1 points. Crucially, the improvement appears largely independent of model parameter count, suggesting that spatial layout and visual context drive the performance rather than raw model scale. For developers building agentic workflows on top of knowledge graphs, the takeaway is clear: complementing standard text inputs with structural visualizations significantly reduces reasoning errors without necessarily requiring larger, more expensive foundational models to achieve better precision."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-11T06:16:57.752Z"
+  },
+  {
     "id": "art-1794376945888-sp33i",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -16726,33 +16831,6 @@
     "created_at": "2026-11-09T07:32:03.526Z"
   },
   {
-    "id": "art-1794209516962-ta3ob",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dapper_echium217/n/ne6710979ec63",
-    "published_at": "2026-11-09T06:58:28.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/334063000/rectangle_large_type_2_9c3c52813719e30b87449cdbb6b5554d.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "動画公開前の不安を解消する「リハーサル」アプリの開発進捗：プレビュー機能を強化し、個人クリエイターの公開フローを最適化へ",
-    "summary_ja": "動画公開前の「思っていた雰囲気と違う」というミスマッチを防ぐため、投稿前に視聴者視点でのリハーサルを可能にするプレビューアプリを開発中だ。 プラットフォーム特有のUI上での見え方や音量バランスを本番同様にシミュレーションできる環境を提供し、クリエイターの心理的負担を軽減する。 現在はモニターを募集しており、公開プロセスの効率化を目指す開発者にとって、UX向上に直結する重要なアプローチとなるだろう。",
-    "translations": {
-      "ja": {
-        "title": "動画公開前の不安を解消する「リハーサル」アプリの開発進捗：プレビュー機能を強化し、個人クリエイターの公開フローを最適化へ",
-        "summary": "動画公開前の「思っていた雰囲気と違う」というミスマッチを防ぐため、投稿前に視聴者視点でのリハーサルを可能にするプレビューアプリを開発中だ。 プラットフォーム特有のUI上での見え方や音量バランスを本番同様にシミュレーションできる環境を提供し、クリエイターの心理的負担を軽減する。 現在はモニターを募集しており、公開プロセスの効率化を目指す開発者にとって、UX向上に直結する重要なアプローチとなるだろう。"
-      },
-      "en": {
-        "title": "Developer builds 'rehearsal' app for creators to preview video content experience before official platform publication",
-        "summary": "A new preview application is in development designed to solve the common anxiety creators face regarding how their videos appear across different platforms before they hit publish. By enabling users to simulate the exact UI, volume balance, and overall viewer experience, the tool acts as a dedicated rehearsal environment to eliminate mismatches between the editor's intent and final output. The developer is currently recruiting monitors to test the workflow, aiming to streamline the tedious final check process. For builders, this project highlights a practical opportunity to reduce creator friction by solving the 'publish-and-pray' cycle, emphasizing the importance of providing a platform-specific viewing simulation layer within the content creation toolkit to ensure high-quality, predictable uploads every time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "動画",
-      "開発"
-    ],
-    "created_at": "2026-11-09T07:31:56.962Z"
-  },
-  {
     "id": "art-1794209510745-cnugq",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -18802,33 +18880,6 @@
     "created_at": "2026-11-09T01:31:43.663Z"
   },
   {
-    "id": "art-1794187006486-7cpe0",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://airlock.lunareng.com/docs",
-    "published_at": "2026-11-09T00:59:27.000Z",
-    "og_image_url": null,
-    "title_ja": "AIコーディングエージェントの大規模運用を制御する「Airlock」登場、Policy-as-Codeでエンジニアリングチームの自律タスクを統制・管理",
-    "summary_ja": "「Airlock」は、自律型エンジニアリングエージェント群を管理するための新たなオープン標準として開発されたPolicy-as-Codeフレームワークだ。 現在、既に4つの大規模プロジェクトで23のワークフローを実運用しており、エージェントの挙動をガバナンス下に置きつつ、企業のAI活用におけるセキュリティと運用効率の課題解決を目指す。",
-    "translations": {
-      "ja": {
-        "title": "AIコーディングエージェントの大規模運用を制御する「Airlock」登場、Policy-as-Codeでエンジニアリングチームの自律タスクを統制・管理",
-        "summary": "「Airlock」は、自律型エンジニアリングエージェント群を管理するための新たなオープン標準として開発されたPolicy-as-Codeフレームワークだ。 現在、既に4つの大規模プロジェクトで23のワークフローを実運用しており、エージェントの挙動をガバナンス下に置きつつ、企業のAI活用におけるセキュリティと運用効率の課題解決を目指す。"
-      },
-      "en": {
-        "title": "Introducing Airlock: A Policy-as-Code framework to govern and manage fleets of autonomous AI engineering agents",
-        "summary": "Airlock is an emerging open standard designed to solve the governance challenges of scaling autonomous AI engineering agents within professional development teams. Currently, the project is already managing 23 distinct workflows across four large-scale projects, effectively treating AI agent behavior as code to ensure reliability and security. By implementing a standardized configuration layer for agent fleets, Airlock aims to move teams away from ad-hoc agent scripts toward a unified control plane. For engineering leaders struggling with the sprawl of AI automation, Airlock offers a concrete approach to setting guardrails for autonomous agents. The project is currently gathering feedback on common pain points, emphasizing that managed control is essential for deploying agents at the enterprise scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "アップデート"
-    ],
-    "created_at": "2026-11-09T01:16:46.486Z"
-  },
-  {
     "id": "art-1794186996375-zuscw",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -19379,33 +19430,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-08T22:02:13.961Z"
-  },
-  {
-    "id": "art-1794175314519-qtt8v",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ishisaka/items/f2c07aaf4e678e1c36c3",
-    "published_at": "2026-11-08T21:55:31.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYyNzAzNyUyRmNkOWZlNDhkNjhjOTg0NGQ5MmNlOTE5NzI0MTcxNGFmNWM0ZjRiMDklMkZ4X2xhcmdlLnBuZyUzRjE3NjQ2MzI1MTg_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTBkODAwMTIyNWFmOGEyZmI5NTIwZTMzZTQyYTMxNDE0%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De1362e63bcf5b681cb9efc63565c4766?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgyJUIwJUUzJTgzJUE5JUUzJTgzJTlGJUUzJTgzJUIzJUUzJTgyJUIwJUU5JTlCJTkxJUU4JUE4JTk4JTIwMjAyNiVFNSVCOSVCNDExJUU2JTlDJTg4OSVFNiU5NyVBNSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWVhNDNiOTM4YTNkNmI2YzkzODk3ZGM3MzllMGYyMjAx&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBpc2hpc2FrYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTc3OTYzODM5MTE1ODMzOTZhYWY5ZGRmNTMyNDkxMWI2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=98f6ce6d484bb69fbe1c77b51278baaf",
-    "title_ja": "Alpine Linux等のmusl環境におけるOpenSSHの認証脆弱性、パスワード認証を悪用した攻撃手法と回避策",
-    "summary_ja": "Alpine Linuxのようなmusl libcを採用した環境で動作するOpenSSHにおいて、パスワード認証に関連したセキュリティ脆弱性が注目を集めている。 攻撃者はこれを悪用し、不適切なリソース解放を突くことで認証プロセスを回避したり、権限昇格を狙う可能性がある。 開発者は既存環境のライブラリ依存関係を再確認し、最新のパッチ適用や設定の見直しを早急に行うことが推奨される。 OS環境ごとに認証モジュールの挙動が異なるため、特に軽量コンテナ運用の際は注意が必要だ。",
-    "translations": {
-      "ja": {
-        "title": "Alpine Linux等のmusl環境におけるOpenSSHの認証脆弱性、パスワード認証を悪用した攻撃手法と回避策",
-        "summary": "Alpine Linuxのようなmusl libcを採用した環境で動作するOpenSSHにおいて、パスワード認証に関連したセキュリティ脆弱性が注目を集めている。 攻撃者はこれを悪用し、不適切なリソース解放を突くことで認証プロセスを回避したり、権限昇格を狙う可能性がある。 開発者は既存環境のライブラリ依存関係を再確認し、最新のパッチ適用や設定の見直しを早急に行うことが推奨される。 OS環境ごとに認証モジュールの挙動が異なるため、特に軽量コンテナ運用の際は注意が必要だ。"
-      },
-      "en": {
-        "title": "Critical OpenSSH Authentication Vulnerability in musl-based Environments Like Alpine Linux Demands Immediate Patching and Review",
-        "summary": "A significant security concern has emerged regarding OpenSSH authentication within musl libc-based environments, most notably Alpine Linux. The vulnerability stems from how password authentication processes are handled, potentially allowing attackers to exploit resource management flaws to bypass authentication or execute unauthorized privilege escalation. For developers relying on lightweight containerized architectures, it is critical to audit existing library dependencies immediately and verify that system packages are updated to the latest patched versions. Because authentication module behavior varies substantially across different C standard library implementations, cross-platform developers must exercise heightened caution when deploying SSH access layers. Proactive monitoring and strict configuration management in these constrained environments are essential to prevent exploitation by malicious actors scanning for these specific platform-level weaknesses."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-08T22:01:54.519Z"
   },
   {
     "id": "art-1794174418882-3u5ll",
@@ -20958,33 +20982,6 @@
       "研究"
     ],
     "created_at": "2026-11-08T08:46:26.202Z"
-  },
-  {
-    "id": "art-1794126729162-316au",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/yoss_k3/articles/6745ee2a48d1fa",
-    "published_at": "2026-11-08T03:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Yk_VYWTn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Claude%25E3%2580%2591%25E5%2580%258B%25E4%25BA%25BAFree%25E3%2583%2597%25E3%2583%25A9%25E3%2583%25B3%25E2%2586%2592%25E7%25B5%2584%25E7%25B9%2594%25E7%2594%25A8Team%25E3%2583%2597%25E3%2583%25A9%25E3%2583%25B3%25E3%2581%25AB%25E3%2583%25A1%25E3%2583%25B3%25E3%2583%2590%25E3%2583%25BC%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E5%258F%2582%25E5%258A%25A0%25E3%2581%2599%25E3%2582%258B%25E3%2580%2590%25E7%2594%25BB%25E9%259D%25A2%25E4%25BB%2598%25E3%2581%258D%25E6%2589%258B%25E9%25A0%2586%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kyoochan%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzI4M2JiOGVkY2EuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "【Claude Teamプラン移行ガイド】個人Freeプランから組織用アカウントへメンバー参加する手順を解説（2026年11月版）",
-    "summary_ja": "Claudeの個人Freeプランを利用していたユーザーが、組織のTeamプランに招待された際のメンバー参加手順を解説。 招待メールからの承認フローや、既存アカウントとの紐付け設定など、企業ドメインで運用する際に必要なセットアップ工程を整理した。 急なチームへのアサインでも迷わず移行できる、実務担当者向けのクイックな導入ガイドとなっている。",
-    "translations": {
-      "ja": {
-        "title": "【Claude Teamプラン移行ガイド】個人Freeプランから組織用アカウントへメンバー参加する手順を解説（2026年11月版）",
-        "summary": "Claudeの個人Freeプランを利用していたユーザーが、組織のTeamプランに招待された際のメンバー参加手順を解説。 招待メールからの承認フローや、既存アカウントとの紐付け設定など、企業ドメインで運用する際に必要なセットアップ工程を整理した。 急なチームへのアサインでも迷わず移行できる、実務担当者向けのクイックな導入ガイドとなっている。"
-      },
-      "en": {
-        "title": "How to Migrate from a Personal Claude Free Account to an Organization Team Plan: A Step-by-Step Implementation Guide",
-        "summary": "This guide outlines the practical steps for transitioning from a personal Claude Free account to an organization's Team plan. It walks through the complete onboarding flow, starting from receiving the invitation email to finalizing account linking with corporate credentials. The article provides essential configuration tips for users suddenly tasked with joining an enterprise workspace, ensuring they retain access without disruption. By following these clear, documented steps, new members can navigate the account migration process efficiently without needing extensive internal IT support. For developers or team members shifting to shared Claude environments, this walkthrough removes the ambiguity around credential management, allowing for immediate productivity upon joining the organization's dedicated workspace instance."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-08T08:32:09.162Z"
   },
   {
     "id": "art-1794126703942-osg28",
