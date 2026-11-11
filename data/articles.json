@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794427320890-ge8mo",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/veripsa/articles/ci-success-deployed-revision",
+    "published_at": "2026-11-11T13:59:19.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--2g6tPOgY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:CI%25E3%2581%25AF%25E6%2588%2590%25E5%258A%259F%25E3%2581%2597%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AB%25E6%259C%25AC%25E7%2595%25AA%25E3%2581%258C%25E5%25A4%2589%25E3%2582%258F%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2581%25A8%25E3%2581%258D%25E3%2580%2581%25E3%2581%25A9%25E3%2581%2593%25E3%2582%2592%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2582%258B%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:RollNuts%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE3NzhiM2VlNmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "CIは成功しても本番が変わらない？デプロイ後の配信トラブルを即座に切り分けるための4ステップ確認術",
+    "summary_ja": "CI/CDが正常終了しても本番環境に変更が反映されないトラブルに対し、状況を切り分けて原因を特定する確認手順を解説する。 単なるHTTP 200応答に惑わされず、期待するバージョンが実際に配信されているかを確認するために、デプロイ先環境から代表コンテンツまでを順を追ってチェックする必要がある。 静的サイトの配信トラブルで泥沼化しないための、GitHub ActionsとCloudflare Workersの構成を例にしたトラブルシューティング手法だ。",
+    "translations": {
+      "ja": {
+        "title": "CIは成功しても本番が変わらない？デプロイ後の配信トラブルを即座に切り分けるための4ステップ確認術",
+        "summary": "CI/CDが正常終了しても本番環境に変更が反映されないトラブルに対し、状況を切り分けて原因を特定する確認手順を解説する。 単なるHTTP 200応答に惑わされず、期待するバージョンが実際に配信されているかを確認するために、デプロイ先環境から代表コンテンツまでを順を追ってチェックする必要がある。 静的サイトの配信トラブルで泥沼化しないための、GitHub ActionsとCloudflare Workersの構成を例にしたトラブルシューティング手法だ。"
+      },
+      "en": {
+        "title": "CI passes but site doesn't change? A 4-step checklist to isolate and debug post-deployment delivery issues",
+        "summary": "When CI/CD pipelines report success but the live environment remains unchanged, developers must move beyond checking for HTTP 200 responses and methodically isolate the failure. This guide introduces a systematic verification workflow for static site delivery, prioritizing checks in this order: target version verification, deployment environment integrity, live URL response analysis, and actual content inspection. By separating these layers, builders can quickly identify whether the issue lies in the build artifact itself, the edge cache, or routing configuration. Using a practical GitHub Actions to Cloudflare Workers deployment flow as a baseline, this approach prevents time-consuming rabbit holes and ensures that code changes are verified not just by status signals, but by actual delivery validation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-11T20:02:00.890Z"
+  },
+  {
+    "id": "art-1794427314364-a208y",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/matsushima_a/articles/day-043-stock-dashboard-ollama-pitfalls",
+    "published_at": "2026-11-11T14:26:25.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--reKKifRn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2597%25A5%25E6%259C%25AC%25E6%25A0%25AA%25E3%2582%2582%25E5%2588%25A4%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258BLLM%25E6%25A0%25AA%25E4%25BE%25A1%25E3%2583%2580%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25ABOllama%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2580%258E0%25E3%2580%258F%25E3%2581%258C%25E5%2598%2598%25E3%2582%2592%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:matsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkY2YwMTZjYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "日本株分析にLLMダッシュボード「daily_stock_analysis」を試すも、数値「0」のハルシネーションで実用性に課題",
+    "summary_ja": "「daily_stock_analysis」は、GeminiやOllamaを活用して多国籍株式のトレンドや売買判断を可視化するOSSツールだ。 日本株を含むグローバル市場の分析を完全無料で試せる触れ込みだが、実際にトヨタ自動車などの日本株で検証したところ、財務データの一部が事実と異なる「0」として出力されるハルシネーションが発生した。 LLMを用いた金融分析には、モデルの推論能力だけでなく、ソースデータの正確性と後処理による検証が不可欠であることを示している。",
+    "translations": {
+      "ja": {
+        "title": "日本株分析にLLMダッシュボード「daily_stock_analysis」を試すも、数値「0」のハルシネーションで実用性に課題",
+        "summary": "「daily_stock_analysis」は、GeminiやOllamaを活用して多国籍株式のトレンドや売買判断を可視化するOSSツールだ。 日本株を含むグローバル市場の分析を完全無料で試せる触れ込みだが、実際にトヨタ自動車などの日本株で検証したところ、財務データの一部が事実と異なる「0」として出力されるハルシネーションが発生した。 LLMを用いた金融分析には、モデルの推論能力だけでなく、ソースデータの正確性と後処理による検証が不可欠であることを示している。"
+      },
+      "en": {
+        "title": "Testing open-source LLM stock analyzer daily_stock_analysis: Hallucinations and data errors render Japanese market insights unreliable",
+        "summary": "The open-source tool 'daily_stock_analysis' promises automated financial insights by leveraging Gemini or local Ollama to visualize stock trends and buy/sell ratings across global markets. While the project is marketed as a free way to analyze Japanese, US, and Asian equities, hands-on testing with Toyota (7203.T) revealed critical reliability issues. Specifically, the LLM generated financial data containing hallucinations, often returning '0' for actual metrics, rendering the output useless for serious trading decisions. This experience serves as a warning for developers building AI-driven financial dashboards: raw LLM inference is insufficient for high-stakes data processing. Without robust verification layers and grounded data retrieval, LLMs cannot reliably handle numerical financial reports, making human oversight mandatory for any automated investment analysis tool."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-11T20:01:54.364Z"
+  },
+  {
+    "id": "art-1794427307823-qjopi",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/yasashii_tech/n/n2136ac6a6bf8",
+    "published_at": "2026-11-11T15:48:54.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335029294/rectangle_large_type_2_67bfdd58cdc0df889bbdc122d357298c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeと1Password CLI連携：APIトークンやSSH鍵を安全に管理し、ソースコードへのハードコードを防ぐ運用術",
+    "summary_ja": "APIトークンの都度発行や.envファイルへの直書きといった、開発環境におけるずさんな鍵管理を解消する方法を解説する。 Claude Codeと1Password CLIを連携させ、CLI経由で安全にシークレットを取得する手順を導入すれば、ソースコードに機密情報を残さず、かつ漏洩リスクを最小限に抑えた開発が可能になる。 セキュリティを担保しつつ開発体験を向上させたいエンジニアにとって、シークレット管理の自動化は必須のステップだ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeと1Password CLI連携：APIトークンやSSH鍵を安全に管理し、ソースコードへのハードコードを防ぐ運用術",
+        "summary": "APIトークンの都度発行や.envファイルへの直書きといった、開発環境におけるずさんな鍵管理を解消する方法を解説する。 Claude Codeと1Password CLIを連携させ、CLI経由で安全にシークレットを取得する手順を導入すれば、ソースコードに機密情報を残さず、かつ漏洩リスクを最小限に抑えた開発が可能になる。 セキュリティを担保しつつ開発体験を向上させたいエンジニアにとって、シークレット管理の自動化は必須のステップだ。"
+      },
+      "en": {
+        "title": "Secure your Claude Code workflow with 1Password CLI to eliminate hardcoded API tokens and SSH keys",
+        "summary": "Stop the messy cycle of regenerating API tokens and hardcoding secrets into .env files during development. This guide explains how to integrate Claude Code with 1Password CLI to dynamically fetch credentials directly from your vault, ensuring that sensitive tokens and SSH keys never touch your plain-text source code or configuration files. By automating secret injection, you significantly reduce the risk of accidental leaks while streamlining your local development environment. For builders aiming to improve their security posture, this workflow shift is essential; moving away from static environment variables toward verified CLI-based secret retrieval is the most practical way to protect your infrastructure without slowing down your iterative development process."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-11T20:01:47.823Z"
+  },
+  {
+    "id": "art-1794427301101-zuxhk",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://starlight-ai.freemyip.com/sandbox/5de49786ace165eb6b29ca5ea3305b2c94be82784b8019010120ab42f31dc41f/",
+    "published_at": "2026-11-11T19:53:10.000Z",
+    "og_image_url": null,
+    "title_ja": "ビットコイン基盤のAIアプリストア「Starlight」が登場、経済モデル「Wish Economy」の全貌と開発者への可能性",
+    "summary_ja": "「Starlight」は、ビットコインを基盤に構築された新たなAIアプリストアであり、独自の経済モデル「Wish Economy」を通じてAIエージェントとユーザーを直接つなぐプラットフォームを目指している。 従来のプラットフォーム手数料に依存するモデルを脱却し、ビットコインのマイクロペイメントを活用することで、AIサービスの利用価値をより精緻かつ直接的に還元する仕組みを実装した。",
+    "translations": {
+      "ja": {
+        "title": "ビットコイン基盤のAIアプリストア「Starlight」が登場、経済モデル「Wish Economy」の全貌と開発者への可能性",
+        "summary": "「Starlight」は、ビットコインを基盤に構築された新たなAIアプリストアであり、独自の経済モデル「Wish Economy」を通じてAIエージェントとユーザーを直接つなぐプラットフォームを目指している。 従来のプラットフォーム手数料に依存するモデルを脱却し、ビットコインのマイクロペイメントを活用することで、AIサービスの利用価値をより精緻かつ直接的に還元する仕組みを実装した。"
+      },
+      "en": {
+        "title": "Inside Starlight, a new Bitcoin-native AI app store platform utilizing a unique 'Wish Economy' model for direct value exchange",
+        "summary": "Starlight has launched as a Bitcoin-native AI app store, introducing the 'Wish Economy'—a specialized economic model designed to link AI agents directly with users via cryptocurrency micropayments. By bypassing traditional platform commission structures, the project aims to facilitate a more efficient, direct value exchange between creators and end-users, leveraging the inherent nature of Bitcoin transactions. For developers building at the intersection of AI and Web3, this model offers a path toward autonomous economic ecosystems that operate independently of centralized app store gatekeepers. As builders explore sustainable monetization for independent AI services, Starlight provides a compelling, decentralized alternative to traditional centralized marketplaces, highlighting the potential for cryptographically secured, direct-to-creator payment rails in the AI agent era."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-11T20:01:41.101Z"
+  },
+  {
     "id": "art-1794426418612-p0sll",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -18259,32 +18364,6 @@
     "created_at": "2026-11-09T17:02:57.934Z"
   },
   {
-    "id": "art-1794243771463-4lbsu",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tutorhub/n/n4cf6849e77d7",
-    "published_at": "2026-11-09T16:58:38.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/334274650/rectangle_large_type_2_5d1ff4122dca2013f505cd6100a3d718.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "オンライン日本語講師の週間運営術：レッスン準備時間を「2分・15分・10分」に分解し、事務作業の沼から抜け出すための効率化フレームワーク",
-    "summary_ja": "生徒ごとの履歴確認や宿題管理に追われる個人講師に向けた、業務効率化メソッドが公開された。 カレンダー管理を「直前準備（2分）・振り返りと宿題チェック（15分）・翌週の戦略設計（10分）」の3ステップに構造化することで、レッスン以外の事務コストを最小化する。 単なるタスク管理ではなく、準備時間を細分化して定型化することが、持続可能な個人事業の土台を作るための鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "オンライン日本語講師の週間運営術：レッスン準備時間を「2分・15分・10分」に分解し、事務作業の沼から抜け出すための効率化フレームワーク",
-        "summary": "生徒ごとの履歴確認や宿題管理に追われる個人講師に向けた、業務効率化メソッドが公開された。 カレンダー管理を「直前準備（2分）・振り返りと宿題チェック（15分）・翌週の戦略設計（10分）」の3ステップに構造化することで、レッスン以外の事務コストを最小化する。 単なるタスク管理ではなく、準備時間を細分化して定型化することが、持続可能な個人事業の土台を作るための鍵となる。"
-      },
-      "en": {
-        "title": "Solo online teaching workflow: How to structure prep time into 2-minute, 15-minute, and 10-minute blocks to eliminate admin bloat",
-        "summary": "Managing students solo often leads to wasted Sunday nights spent digging through chat history and scrambling to remember previous lesson plans. To solve this, the author introduces a structured workflow that divides non-teaching time into three distinct blocks: a two-minute quick preparation, a 15-minute review of student progress and homework status, and a 10-minute strategy session for the week ahead. By strictly compartmentalizing these administrative duties, teachers stop reactive last-minute scrambling and reclaim focused time for curriculum design. For solo entrepreneurs and service-based builders, the takeaway is clear: efficiency isn't about working harder; it’s about standardizing routine operations into micro-tasks to prevent cognitive load from deranging your long-term business planning."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-09T17:02:51.463Z"
-  },
-  {
     "id": "art-1794243747566-g317s",
     "source_id": "source-perplexity",
     "source_name": "Perplexity Hub Blog",
@@ -18712,32 +18791,6 @@
       "開発"
     ],
     "created_at": "2026-11-09T15:32:19.917Z"
-  },
-  {
-    "id": "art-1794238328244-usu7u",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://balochy.de/blog/an-llm-revived-a-2016-game-with-one-byte/",
-    "published_at": "2026-11-09T15:12:34.000Z",
-    "og_image_url": null,
-    "title_ja": "2016年のゲームをLLMで復活：たった1バイトのデータ修正だけで動かした驚きのデバッグ手法とリバースエンジニアリングの記録",
-    "summary_ja": "2016年にリリースされたPCゲームが、ある不具合により起動不能になっていた問題を、LLMを用いて解決した事例が注目を集めている。 著者はバイナリ解析とLLMによるコード推論を組み合わせ、わずか1バイトの修正を加えるだけでプログラムを正常に動作させることに成功した。 手動解析が困難なレガシーコードのデバッグにおいて、LLMが「文脈を理解する強力な助手」として機能することを実証している。",
-    "translations": {
-      "ja": {
-        "title": "2016年のゲームをLLMで復活：たった1バイトのデータ修正だけで動かした驚きのデバッグ手法とリバースエンジニアリングの記録",
-        "summary": "2016年にリリースされたPCゲームが、ある不具合により起動不能になっていた問題を、LLMを用いて解決した事例が注目を集めている。 著者はバイナリ解析とLLMによるコード推論を組み合わせ、わずか1バイトの修正を加えるだけでプログラムを正常に動作させることに成功した。 手動解析が困難なレガシーコードのデバッグにおいて、LLMが「文脈を理解する強力な助手」として機能することを実証している。"
-      },
-      "en": {
-        "title": "How an LLM helped revive a broken 2016 PC game with a single-byte binary patch fix",
-        "summary": "An engineer recently documented how they successfully revived a defunct 2016 PC game by leveraging an LLM to navigate complex, opaque binary data. The project details a fascinating intersection of classic reverse engineering and modern AI assistance, where the LLM helped identify the precise instruction responsible for a crash. By analyzing the binary logic, the author pinpointed the issue and applied a single-byte patch that restored full functionality to the legacy software. This case study underscores how LLMs have evolved into indispensable partners for decompilation and debugging tasks, especially when dealing with undocumented, aging codebases. For developers, this demonstrates a powerful new workflow for breathing life back into legacy projects without needing years of institutional context."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-09T15:32:08.244Z"
   },
   {
     "id": "art-1794238303643-rx4df",
@@ -22146,32 +22199,6 @@
     "created_at": "2026-11-08T18:16:47.314Z"
   },
   {
-    "id": "art-1794160929931-fjkbm",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tan_go238/articles/b7c41a92d0e3f5",
-    "published_at": "2026-11-08T04:25:33.000Z",
-    "og_image_url": null,
-    "title_ja": "業務整理ツール「Untie」でAIとボトルネックを特定：自転車修理店を例に現場の困りごとの根本原因を探り出す手法を解説",
-    "summary_ja": "業務整理AI「Untie」を活用し、現場の業務プロセスや関係者情報をモデル化してトラブルの根本原因を特定する手法が公開された。 自転車修理店を例に、「受付票の紛失」や「部品在庫の追跡難」といった日常的な困りごとをモデル上で可視化し、どこを改善すれば業務負荷が減るかを関係者と議論しやすくする。 単なるタスク管理を超え、複雑な現場の「何が問題か」を構造的に理解し、チームで合意形成するための実践的なAI活用法である。",
-    "translations": {
-      "ja": {
-        "title": "業務整理ツール「Untie」でAIとボトルネックを特定：自転車修理店を例に現場の困りごとの根本原因を探り出す手法を解説",
-        "summary": "業務整理AI「Untie」を活用し、現場の業務プロセスや関係者情報をモデル化してトラブルの根本原因を特定する手法が公開された。 自転車修理店を例に、「受付票の紛失」や「部品在庫の追跡難」といった日常的な困りごとをモデル上で可視化し、どこを改善すれば業務負荷が減るかを関係者と議論しやすくする。 単なるタスク管理を超え、複雑な現場の「何が問題か」を構造的に理解し、チームで合意形成するための実践的なAI活用法である。"
-      },
-      "en": {
-        "title": "Using the 'Untie' AI Modeling Tool to Pinpoint Business Bottlenecks: A Practical Guide for Root Cause Analysis",
-        "summary": "This article details how to use the 'Untie' AI business modeling tool to map workflows and identify the root causes of recurring operational problems. By applying the method to a bicycle repair shop scenario, the author demonstrates how to visualize issues like lost reception tickets and untracked parts deliveries within a structured model. The goal is to move beyond simple task lists, allowing team members to collectively discuss which systemic changes will actually alleviate daily friction. For builders and operations managers, this approach transforms abstract frustration into concrete data, enabling structural problem-solving through AI-assisted modeling. It is a powerful technique for creating consensus in teams struggling with opaque, complex, or messy manual business processes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-08T18:02:09.931Z"
-  },
-  {
     "id": "art-1794160904632-tr3bw",
     "source_id": "source-devin",
     "source_name": "Devin Release Notes",
@@ -23117,32 +23144,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-08T05:46:44.399Z"
-  },
-  {
-    "id": "art-1794115894249-o7525",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/udos/articles/disc-rescue-readonly-recovery",
-    "published_at": "2026-11-08T03:16:44.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9396iikf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25AA%25AD%25E3%2582%2581%25E3%2581%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%2520DVD%25EF%25BC%2588BD%25E3%2583%25BBCD%25E5%2590%25AB%25E3%2582%2580%25EF%25BC%2589%2520%25E3%2582%2592%25E3%2580%2581%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25B9%25E3%2582%25AF%25E3%2581%25AB%25E4%25B8%2580%25E5%2588%2587%25E6%259B%25B8%25E3%2581%258D%25E8%25BE%25BC%25E3%2581%25BE%25E3%2581%259A%25E3%2581%25AB%25E6%2595%2591%25E5%2587%25BA%25E3%2581%2599%25E3%2582%258B%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%2520Rust%2520%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:UDOS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Q4Njg3Njc5M2EuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "読み込めなくなったDVDやCDを救出するWindowsアプリをRustで開発、ディスクへの書き込み不要でデータを取り出す仕組み",
-    "summary_ja": "個人開発者がRustを用いて、傷や経年劣化でPCが認識できなくなったDVDやCD、ブルーレイからデータを抽出するWindowsアプリ「Disc Rescue」を開発した。 物理ディスクへの書き込みや消去を行わない読み取り専用設計とし、市販品のコピーガード解除等は排除した実用ツールである。 読み込めないディスクを諦める前に、ソフトウェア側の読み取り再試行ロジックを最適化することでデータを救出するアプローチは、個人資産のデジタルアーカイブにおいて重要な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "読み込めなくなったDVDやCDを救出するWindowsアプリをRustで開発、ディスクへの書き込み不要でデータを取り出す仕組み",
-        "summary": "個人開発者がRustを用いて、傷や経年劣化でPCが認識できなくなったDVDやCD、ブルーレイからデータを抽出するWindowsアプリ「Disc Rescue」を開発した。 物理ディスクへの書き込みや消去を行わない読み取り専用設計とし、市販品のコピーガード解除等は排除した実用ツールである。 読み込めないディスクを諦める前に、ソフトウェア側の読み取り再試行ロジックを最適化することでデータを救出するアプローチは、個人資産のデジタルアーカイブにおいて重要な選択肢となる。"
-      },
-      "en": {
-        "title": "Rust-based Windows tool, Disc Rescue, recovers data from unreadable DVDs and Blu-rays without writing to discs",
-        "summary": "A solo developer has built \"Disc Rescue,\" a Windows utility written in Rust designed to salvage files from damaged or aging CDs, DVDs, and Blu-rays that a PC can no longer mount. The tool operates strictly in read-only mode, avoiding any risky write operations on the original media while intentionally omitting features for bypassing copyright protections. By optimizing low-level read-retry logic, the software attempts to pull valid data from problematic sectors that standard OS drivers simply skip. For builders working on data recovery projects, the core takeaway is that software-side error handling can often breathe new life into seemingly dead hardware, providing a vital pathway for preserving personal digital archives before the physical media fails entirely."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-08T05:31:34.249Z"
   },
   {
     "id": "art-1794111396308-4wb8d",
