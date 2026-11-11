@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794424692873-gvbdf",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/oggata/articles/12fb2738d27530",
+    "published_at": "2026-11-11T14:41:58.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--18zS24uq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cosmos3-Edge%2520-%2520%25E7%2589%25A9%25E3%2581%25AE%25E4%25BD%258D%25E7%25BD%25AE%25E3%2582%2592%25E5%25BA%25A7%25E6%25A8%2599%25E3%2581%25A7%25E5%258F%2596%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Fumitoshi%2520Ogata%2520%25E7%25B7%2592%25E6%2596%25B9%25E6%2596%2587%25E4%25BF%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2Q1OGJmMTVjNTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "「Cosmos3-Edge」の物体位置特定機能解説：画像内座標を出力しロボット制御を高度化するプロンプト設計",
+    "summary_ja": "Cosmos3-EdgeのReasonerモデルは、単なる文章応答だけでなく、画像内の物体位置を座標として抽出する能力を持つ。 ロボット制御では「そこに何があるか」よりも「その物体の座標はどこか」というデータが極めて重要であり、`bbox_2d`形式や`point_2d`形式を用いて正確な位置情報を取得できる。 開発者はこの機能を活用することで、LLMを物理的な空間認識やアーム操作などの具体的なロボットアクションと直結させることが可能になる。",
+    "translations": {
+      "ja": {
+        "title": "「Cosmos3-Edge」の物体位置特定機能解説：画像内座標を出力しロボット制御を高度化するプロンプト設計",
+        "summary": "Cosmos3-EdgeのReasonerモデルは、単なる文章応答だけでなく、画像内の物体位置を座標として抽出する能力を持つ。 ロボット制御では「そこに何があるか」よりも「その物体の座標はどこか」というデータが極めて重要であり、`bbox_2d`形式や`point_2d`形式を用いて正確な位置情報を取得できる。 開発者はこの機能を活用することで、LLMを物理的な空間認識やアーム操作などの具体的なロボットアクションと直結させることが可能になる。"
+      },
+      "en": {
+        "title": "Cosmos3-Edge guide: How to extract image coordinates for precise object grounding in robotics",
+        "summary": "The Cosmos3-Edge Reasoner model moves beyond standard text generation by outputting precise coordinates for objects detected within images. For robotics applications, identifying that an object exists is often secondary to knowing its exact spatial location, which Cosmos3 achieves using standardized `bbox_2d` and `point_2d` output formats. By mapping visual entities to specific coordinate points rather than vague descriptors, developers can bridge the gap between high-level reasoning and physical execution. This capability allows engineers to pipeline vision model outputs directly into motor control systems, enabling more reliable interaction with the physical environment. Whether building for arm manipulation or visual navigation, integrating these grounding coordinates is essential for creating agentic workflows that actually manipulate the real world effectively."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-11T19:18:12.873Z"
+  },
+  {
+    "id": "art-1794424656719-1igay",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/picnic/items/8e25a611d2758d769440",
+    "published_at": "2026-11-11T18:39:18.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS0oza2lJamRVZjd6UHZDUHNqTGhkcHFzbDlYU2MweGJscHRZRzgwOWd5dlhYWWh2UTElM0RzOTYtYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OGM4MDU5ODEyMzY3Y2ZlNmIzMDVkYTMzMjAwNjcwMDE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dfd6ab3c0ea5267b0e6bf5b2f6bc36ab2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9R2VtaW5pJTIwRGVjaXNpb24lMjAlMjhnZW1pbmktZGVjaXNpb24tMSUyOSUyMCVFMyU4MSVBOCUyMERlY2lzaW9ucyUyMEFQSSUyMCVFOCVBNyVBMyVFOCVBQSVBQyVFRiVCQyU5QSVFNSU4NyVCQSVFNSU4QSU5QiVFMyU4MyU4OCVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MyVCMzAlRTMlODElQTclRTUlODglQTQlRTUlQUUlOUElRTMlODMlQkIlRTUlODglODYlRTklQTElOUUmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03Y2M5YzJmZGVjODM4NGI1MWI4N2I3MTMwZTllODEyYQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwaWNuaWMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1iZTllNDg4YzE3YjgzYzFmZGE3MTQ2MjU5MjlkYzU1ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=ad69b25b1264955b051b952c037c9206",
+    "title_ja": "Google、判定タスク特化の「Gemini Decision」モデルとDecisions APIを公開。出力トークン数0でコストを劇的に削減",
+    "summary_ja": "Googleは判定・分類タスクに特化した新モデル「Gemini Decision」（gemini-decision-1）と、専用のDecisions APIを発表した。 この仕組みは、生成モデル特有のテキスト生成を排して判定結果のみを返すことで、出力トークン数を実質ゼロに抑え、推論コストを最小化できるのが最大の特徴だ。",
+    "translations": {
+      "ja": {
+        "title": "Google、判定タスク特化の「Gemini Decision」モデルとDecisions APIを公開。出力トークン数0でコストを劇的に削減",
+        "summary": "Googleは判定・分類タスクに特化した新モデル「Gemini Decision」（gemini-decision-1）と、専用のDecisions APIを発表した。 この仕組みは、生成モデル特有のテキスト生成を排して判定結果のみを返すことで、出力トークン数を実質ゼロに抑え、推論コストを最小化できるのが最大の特徴だ。"
+      },
+      "en": {
+        "title": "Google launches Gemini Decision model and API for classification tasks with zero output token costs",
+        "summary": "Google has officially released Gemini Decision, a specialized model variant (gemini-decision-1) alongside a dedicated Decisions API designed explicitly for classification and boolean judgment tasks. By bypassing the generative text output typically required by LLMs and returning only the specific classification label, this new implementation effectively reduces output token consumption to zero, drastically minimizing inference costs. For developers building systems that require frequent binary checks—such as content moderation or image violation detection—this architecture provides a significantly more efficient path than standard text-generation endpoints. It serves as a compelling architectural choice for any AI-powered application where latency and API overhead are critical constraints for simple, high-frequency decision-making logic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-11T19:17:36.719Z"
+  },
+  {
+    "id": "art-1794424649164-1zjgq",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
+    "published_at": "2026-11-11T19:06:43.000Z",
+    "og_image_url": null,
+    "title_ja": "米国の年金基金がAIバブルの燃料に：機関投資家の巨大資金流入が技術開発と市場の歪みに与える影響",
+    "summary_ja": "米国の年金基金がAIスタートアップへ巨額の資金を供給しており、これが現在のAIバブルを支える重要な燃料となっている。 機関投資家による受動的な資金流入は、AI技術の実用性や収益性を精査することなく市場を過熱させ、結果としてスタートアップの評価額を実態から乖離させている。 開発者や起業家は、この「年金マネー主導」の異常な投資環境がいつまで続くかを見極め、AIの真の価値検証（PoC）と持続可能な収益化モデルの構築を急ぐ必要がある。",
+    "translations": {
+      "ja": {
+        "title": "米国の年金基金がAIバブルの燃料に：機関投資家の巨大資金流入が技術開発と市場の歪みに与える影響",
+        "summary": "米国の年金基金がAIスタートアップへ巨額の資金を供給しており、これが現在のAIバブルを支える重要な燃料となっている。 機関投資家による受動的な資金流入は、AI技術の実用性や収益性を精査することなく市場を過熱させ、結果としてスタートアップの評価額を実態から乖離させている。 開発者や起業家は、この「年金マネー主導」の異常な投資環境がいつまで続くかを見極め、AIの真の価値検証（PoC）と持続可能な収益化モデルの構築を急ぐ必要がある。"
+      },
+      "en": {
+        "title": "How US Pension Funds Are Fueling the AI Bubble: The Risks of Massive Institutional Capital Flows",
+        "summary": "Massive inflows from US pension funds into AI startups are serving as the primary fuel for the current AI bubble. By passively dumping institutional capital into the sector without vetting real-world utility or profit sustainability, these funds are distorting market signals and driving startup valuations far beyond fundamental metrics. For builders and founders, this environment creates a dangerous illusion of endless capital regardless of product-market fit. The critical takeaway is to recognize that this influx is not a proxy for long-term viability. Developers must shift focus from simply riding the hype-driven valuation wave to aggressively proving real-world use cases and establishing sustainable, unit-economic-positive business models before the liquidity environment inevitably corrects itself."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-11T19:17:29.164Z"
+  },
+  {
+    "id": "art-1794424627039-vhsuw",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/11/llm/",
+    "published_at": "2026-11-11T17:19:52.000Z",
+    "og_image_url": null,
+    "title_ja": "CLIツール「llm」がv0.37.2へアップデート、OpenAI APIキー漏洩リスクを修正するセキュリティパッチを適用",
+    "summary_ja": "CLIツール「llm」がv0.37.2をリリースし、OpenAI互換API利用時の深刻なセキュリティ脆弱性を修正した。 設定値や特定の実行コマンドにより、本来のOpenAI APIキーがサードパーティのプロバイダーへ誤送信される恐れがあったが、今回の修正でキー管理メカニズムが安全に改善された。 個人開発でCLI経由のLLM環境を構築する際は、APIキーの誤送信防止が必須であり、脆弱性情報が公開されたら即座にパッチを適用すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "CLIツール「llm」がv0.37.2へアップデート、OpenAI APIキー漏洩リスクを修正するセキュリティパッチを適用",
+        "summary": "CLIツール「llm」がv0.37.2をリリースし、OpenAI互換API利用時の深刻なセキュリティ脆弱性を修正した。 設定値や特定の実行コマンドにより、本来のOpenAI APIキーがサードパーティのプロバイダーへ誤送信される恐れがあったが、今回の修正でキー管理メカニズムが安全に改善された。 個人開発でCLI経由のLLM環境を構築する際は、APIキーの誤送信防止が必須であり、脆弱性情報が公開されたら即座にパッチを適用すべきだ。"
+      },
+      "en": {
+        "title": "CLI tool LLM releases v0.37.2 with critical patches to prevent accidental OpenAI API key exposure",
+        "summary": "The CLI utility LLM has released version 0.37.2 to address critical security vulnerabilities involving potential OpenAI API key leakage. The flaw allowed a user's API key to be inadvertently sent to third-party providers when interacting with OpenAI-compatible endpoints, specifically triggering when certain model configurations were executed without a stored key or using specific command-line flags. For developers building on CLI-based AI workflows, this incident highlights the significant risks involved in dynamically configuring API endpoints across multiple providers. Updating to this version is essential for anyone using custom providers within the LLM ecosystem to prevent credential exposure. This release underscores the necessity of strict validation logic when handling sensitive environment variables in open-source developer tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-11T19:17:07.039Z"
+  },
+  {
     "id": "art-1794423848166-4txnv",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -18770,33 +18876,6 @@
     "created_at": "2026-11-09T14:31:56.552Z"
   },
   {
-    "id": "art-1794234709417-iqzj0",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://spectrum.ieee.org/find-my-ai-chip",
-    "published_at": "2026-11-09T14:09:02.000Z",
-    "og_image_url": "https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-radar-scanning-a-large-computer-chip-with-pieces-of-the-chip-featuring-different-regions-of-the-un.jpg?id=68612492&width=1200&height=600&coordinates=0%2C688%2C0%2C561",
-    "title_ja": "AIチップの現在地を追跡する「Find My」技術開発競争、サプライチェーンの透明性と盗難防止策の未来",
-    "summary_ja": "IEEE Spectrumが、高額なAIアクセラレータの追跡・管理を目的とした「AIチップ版Find My」技術の現状を特集した。 GPUの供給逼迫により二次流通市場が拡大する中、チップの現在地をリアルタイムで特定し、許可なく外部へ持ち出された際に無効化するセキュリティ技術の重要性が増している。 開発者やデータセンター管理者は、物理的なハードウェア追跡がAIインフラの防御戦略において必須の要素となりつつある現状を理解する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AIチップの現在地を追跡する「Find My」技術開発競争、サプライチェーンの透明性と盗難防止策の未来",
-        "summary": "IEEE Spectrumが、高額なAIアクセラレータの追跡・管理を目的とした「AIチップ版Find My」技術の現状を特集した。 GPUの供給逼迫により二次流通市場が拡大する中、チップの現在地をリアルタイムで特定し、許可なく外部へ持ち出された際に無効化するセキュリティ技術の重要性が増している。 開発者やデータセンター管理者は、物理的なハードウェア追跡がAIインフラの防御戦略において必須の要素となりつつある現状を理解する必要がある。"
-      },
-      "en": {
-        "title": "The emerging race for AI chip 'Find My' tracking technology: Securing the supply chain against theft",
-        "summary": "IEEE Spectrum explores the high-stakes race to develop 'Find My' equivalents for AI chips, driven by the astronomical value of hardware like NVIDIA GPUs. As supply chain constraints fuel secondary markets, unauthorized hardware removal creates massive security and financial risks. Engineers are now pioneering real-time tracking and remote kill-switch capabilities to verify chip locations and invalidate stolen components instantly. For builders and infrastructure architects, this shift signals that hardware provenance and physical security are no longer just factory concerns; they are now critical layers of the AI stack. Proactive tracking strategies are becoming essential to ensure that sensitive compute resources remain under authorized control as the industry grapples with the growing hardware theft epidemic."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "研究"
-    ],
-    "created_at": "2026-11-09T14:31:49.417Z"
-  },
-  {
     "id": "art-1794234703141-uv4p2",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -19691,32 +19770,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-09T09:54:22.800Z"
-  },
-  {
-    "id": "art-1794217600346-4cplj",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/whitemarshall/items/d617e32f86ad6cef1285",
-    "published_at": "2026-11-09T09:44:08.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmODljNjFkOTY3OWRiYTNhN2Y3NTk2OWJkMzUxNzU0NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGI4NjUzMzBkODk4Y2IwZGU0MTgwNWY1OWRjYzNlMjQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd74df1f0f9e99258a2c04d787d798489?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9SkVWJTIwMS4xNCVFMyU4MSVBOCVFMyU4MSVBRiVFRiVCQyU5RiVFNSU4OCU4NiVFOSVBMSU5RSVFMyU4MyVCQiVFNiU5OCVBRiVFOSU5RCU5RSVFMyU4MyVCQiVFOCVBOSU5NSVFNyU4MiVCOSVFMyU4MSVBRSVFNCVCOCU4OSVFNyVBOCVBRSVFOSVBMSU5RSVFMyU4MSVBNyVFNCVCRCU5NSVFMyU4MiU5MiVFNSU4OCVBNCVFNSVBRSU5QSVFMyU4MSVBNyVFMyU4MSU4RCVFMyU4MiU4QiVFMyU4MSU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWE0ZGJhODdiOGJmZTU2ZjJjMzNmNDk4NTZiMjhmOWI4&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3aGl0ZW1hcnNoYWxsJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODZkYjFiOTRkNWI1NzM4Yjk3MjA1ODE2ODQyNzc4MWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a7dbbdec6583a9480a5c5d051bb4f246",
-    "title_ja": "LLMの回答を構造化するプロンプト設計手法「JEV 1.14」：テキスト分類・是非判定・評点抽出をプログラムで自動処理するための新基準",
-    "summary_ja": "大規模言語モデルの応答をプログラムで自動処理するために設計されたプロンプト手法「JEV 1.14」が注目されている。 これはテキストを「分類」「是非」「評点」の3種類に整理し、曖昧な文章回答を厳密な構造データに変換する枠組みだ。 問い合わせ対応の自動化や文書の関連度評価において、生成AIをシステムへ確実に統合するための実用的な設計指針として役立つ。",
-    "translations": {
-      "ja": {
-        "title": "LLMの回答を構造化するプロンプト設計手法「JEV 1.14」：テキスト分類・是非判定・評点抽出をプログラムで自動処理するための新基準",
-        "summary": "大規模言語モデルの応答をプログラムで自動処理するために設計されたプロンプト手法「JEV 1.14」が注目されている。 これはテキストを「分類」「是非」「評点」の3種類に整理し、曖昧な文章回答を厳密な構造データに変換する枠組みだ。 問い合わせ対応の自動化や文書の関連度評価において、生成AIをシステムへ確実に統合するための実用的な設計指針として役立つ。"
-      },
-      "en": {
-        "title": "Introducing JEV 1.14: A structured prompting framework for programmatic text classification, binary judgment, and quantitative scoring using LLMs",
-        "summary": "JEV 1.14 is a structured prompting framework designed to bridge the gap between unstructured LLM text responses and programmable machine logic. Instead of receiving open-ended prose, developers use the JEV standard to force LLMs into three distinct outputs: categorical classification, binary yes-no judgment, and quantitative scoring. This approach transforms chaotic model behavior into reliable inputs for back-end systems like ticket routing or search relevance sorting. By standardizing the output format, builders can stop parsing natural language and start relying on deterministic data, significantly improving the stability of AI-powered workflows. If you are struggling to integrate LLMs into production pipelines without fragile regex or inconsistent formats, JEV 1.14 provides a concrete template to ensure consistent machine-readable results every single time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-09T09:46:40.346Z"
   },
   {
     "id": "art-1794217588389-xs3ao",
@@ -22088,32 +22141,6 @@
       "開発"
     ],
     "created_at": "2026-11-08T18:01:44.633Z"
-  },
-  {
-    "id": "art-1794160007379-lhw8d",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/talks_tldr_jp/articles/tldr43-son-summary",
-    "published_at": "2026-11-08T12:28:31.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--dDa4J2Js--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25AD%25AB%25E6%25AD%25A3%25E7%25BE%25A9%25E3%2581%258C%25E8%25AA%259E%25E3%2581%25A3%25E3%2581%259F%25E8%25B6%2585%25E7%259F%25A5%25E8%2583%25BD%25E3%2581%25A8%252070%2525%2520%25E3%2581%25AE%25E6%258C%2581%25E8%25AB%2596%25EF%25BC%2588%252343%2520%25E8%25A6%2581%25E7%2582%25B9%25E8%25A7%25A3%25E8%25AA%25AC%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%25AE%25A1%25E7%2590%2586%25E4%25BA%25BAK%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NmMmY3NjQ3NjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "孫正義氏が語る「超知能（ASI）」の到来とAI戦略――マイクロプロセッサへの原体験から50年、世界はAGI実現の閾値へ",
-    "summary_ja": "ソフトバンクの孫正義氏はBlackstoneの対談で、マイクロプロセッサに衝撃を受けてから約50年が経過し、ついに人間の脳を超える「超知能（ASI）」の時代が到来したと語った。 氏の持論では、今後10年でAGIの実現が確実視される中、あらゆる産業でAI活用が必須となる。 開発者にとって重要なのは、単なるツール導入ではなく、AIが進化の中心であるというパラダイムシフトを前提とした事業・プロダクト設計を今すぐ開始することだ。",
-    "translations": {
-      "ja": {
-        "title": "孫正義氏が語る「超知能（ASI）」の到来とAI戦略――マイクロプロセッサへの原体験から50年、世界はAGI実現の閾値へ",
-        "summary": "ソフトバンクの孫正義氏はBlackstoneの対談で、マイクロプロセッサに衝撃を受けてから約50年が経過し、ついに人間の脳を超える「超知能（ASI）」の時代が到来したと語った。 氏の持論では、今後10年でAGIの実現が確実視される中、あらゆる産業でAI活用が必須となる。 開発者にとって重要なのは、単なるツール導入ではなく、AIが進化の中心であるというパラダイムシフトを前提とした事業・プロダクト設計を今すぐ開始することだ。"
-      },
-      "en": {
-        "title": "Masayoshi Son declares the dawn of ASI as AI hits the 50-year milestone since his microchip epiphany",
-        "summary": "In a recent discussion with Blackstone, SoftBank CEO Masayoshi Son reflected on the 50-year journey since he first encountered microprocessors, asserting that the era of Artificial Super Intelligence (ASI) is finally upon us. Son argues that we have hit a critical threshold where AGI realization within the next decade is no longer speculative but an inevitability that will fundamentally reshape every industry sector. For builders and founders, the core takeaway is clear: the current AI boom is not just another tech cycle but a permanent paradigm shift. Strategic planning must pivot away from traditional software models toward AI-native architectures, as those failing to integrate ASI-ready workflows today will be obsolete as human-level machine intelligence becomes the new economic baseline."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-08T17:46:47.379Z"
   },
   {
     "id": "art-1794157373388-xgqxm",
@@ -48950,33 +48977,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-28T12:17:44.383Z"
-  },
-  {
-    "id": "art-1793189857834-1t26j",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/chatbase-breakdown",
-    "published_at": "2026-10-27T21:22:47+00:00",
-    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/16eomoc1iy9vvmmr8mled9rwjjm2",
-    "title_ja": "月間10万ドル超を稼ぐAI SaaS「Chatbase」の成長戦略：個人開発者がノーコード基盤を活用して収益化を最大化した舞台裏",
-    "summary_ja": "Chatbaseは、開発者が自身のデータを用いて簡単にカスタマイズ可能なAIチャットボットを作成できるプラットフォームであり、個人開発ながら月間10万ドル以上の収益を達成している。 この成功は、ニッチな課題解決に特化したシンプルなUIと、既存のWebサイトへ埋め込み可能な設計を重視した点にある。 エンジニアは機能過多なツールよりも、特定の業務フローに即座に統合できるソリューションがユーザーの離脱を防ぎ、高いLTVを生むことを学べるだろう。",
-    "translations": {
-      "ja": {
-        "title": "月間10万ドル超を稼ぐAI SaaS「Chatbase」の成長戦略：個人開発者がノーコード基盤を活用して収益化を最大化した舞台裏",
-        "summary": "Chatbaseは、開発者が自身のデータを用いて簡単にカスタマイズ可能なAIチャットボットを作成できるプラットフォームであり、個人開発ながら月間10万ドル以上の収益を達成している。 この成功は、ニッチな課題解決に特化したシンプルなUIと、既存のWebサイトへ埋め込み可能な設計を重視した点にある。 エンジニアは機能過多なツールよりも、特定の業務フローに即座に統合できるソリューションがユーザーの離脱を防ぎ、高いLTVを生むことを学べるだろう。"
-      },
-      "en": {
-        "title": "How Chatbase scaled to over $100k MRR as a solo developer project: The blueprint for AI SaaS profitability",
-        "summary": "Chatbase has become a standout case study for solo builders, scaling to over $100,000 in monthly recurring revenue by helping businesses create custom AI chatbots trained on their specific internal data. The product’s sustained growth highlights a critical lesson for solo founders: focusing on a single, high-leverage pain point—deployable customer support automation—often yields better results than shipping complex, all-in-one feature sets. By prioritizing an embeddable widget that integrates seamlessly into existing websites, the founder reduced friction and accelerated time-to-value for non-technical clients. For developers eyeing the AI SaaS market, this breakdown demonstrates that simple, reliable integration often beats cutting-edge model bells and whistles when it comes to long-term subscriber retention and sustainable business growth."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-28T12:17:37.834Z"
   },
   {
     "id": "art-1793185297851-6wifi",
