@@ -1,5 +1,13 @@
 [
   {
+    "url": "https://simonwillison.net/2026/Nov/11/llm/",
+    "source_id": "source-simonwillison",
+    "title": "llm 0.37.2",
+    "pubDate": "2026-11-11T17:19:52.000Z",
+    "snippet": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with OpenAI-compatible API endpoints from other providers. Daniel reported two ways this could accidentally send your configured OpenAI API key to one of those providers: if the key named by api_key_name had never been stored, or if a responses: true model was run with -o chat_completions 1 . Tags: projects , security , llm , releases",
+    "saved_at": "2026-11-11T19:03:12.589Z"
+  },
+  {
     "url": "https://johnoestmannmusic.com/ai-and-original-intentionality/",
     "source_id": "source-hn",
     "title": "AI and Original Intentionality",
