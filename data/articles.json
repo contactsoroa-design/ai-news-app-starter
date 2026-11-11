@@ -1,5 +1,88 @@
 [
   {
+    "id": "art-1794437222874-p01y5",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/noriyuk/articles/f3b74f535acf4f",
+    "published_at": "2026-11-11T22:33:29.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---MpB7cfo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Supabase%25E3%2581%25A7%25E9%2580%2580%25E4%25BC%259A%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E5%2589%258D%25E3%2581%25AB%25E3%2580%2581%25E3%2582%25A2%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%25E5%2589%258A%25E9%2599%25A4%25E3%2581%25A7%25E4%25BD%2595%25E3%2581%258C%25E6%25B6%2588%25E3%2581%2588%25E3%2582%258B%25E3%2581%258B%25E8%25AA%25BF%25E3%2581%25B9%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:noriyuk%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2U4ODdmMjY0ZDMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Supabaseでのアカウント削除機能実装：Authユーザーと紐づくDBデータの適切な削除設計と注意点",
+    "summary_ja": "個人開発アプリ「BookConnect」に退会機能を実装する際、SupabaseのAuthテーブルだけでなく、紐づく外部DBデータの完全削除やリレーション設計が重要となる。 単にユーザーを削除するだけではレコードの不整合が起きるため、外部キー制約（ON DELETE CASCADE）の活用や、論理削除と物理削除の判断基準を事前に策定することが不可欠だ。 開発者はユーザーの「忘れられる権利」を担保しつつ、安全に個人情報を処理する設計を徹底する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Supabaseでのアカウント削除機能実装：Authユーザーと紐づくDBデータの適切な削除設計と注意点",
+        "summary": "個人開発アプリ「BookConnect」に退会機能を実装する際、SupabaseのAuthテーブルだけでなく、紐づく外部DBデータの完全削除やリレーション設計が重要となる。 単にユーザーを削除するだけではレコードの不整合が起きるため、外部キー制約（ON DELETE CASCADE）の活用や、論理削除と物理削除の判断基準を事前に策定することが不可欠だ。 開発者はユーザーの「忘れられる権利」を担保しつつ、安全に個人情報を処理する設計を徹底する必要がある。"
+      },
+      "en": {
+        "title": "Supabase account deletion strategies: Ensuring total data cleanup when removing authenticated users from your application database",
+        "summary": "Implementing account deletion for the personal app BookConnect highlighted that simply removing a user from the Supabase Auth table is insufficient if associated application data remains. When building out user removal features, developers must carefully architect how records in external tables handle linked identity. This requires deep consideration of foreign key constraints—specifically using ON DELETE CASCADE to ensure data integrity—and deciding whether to perform logical versus physical deletion. For developers building on Supabase, the core takeaway is that a robust deletion flow is critical for compliance and user privacy. Failing to architect cascading deletions leads to orphaned records that complicate storage and expose unnecessary PII, making thoughtful schema design as vital as the frontend UI for unsubscription."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-11T22:47:02.874Z"
+  },
+  {
+    "id": "art-1794437215047-w3rpj",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2611/12/2000003123/",
+    "published_at": "2026-11-11T22:03:58.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/12/2000003123/10011928/2048",
+    "title_ja": "Google、選択肢から選ぶ判断専用の「Gemini Decisions API」を発表。文章生成を省き確率のみを高速かつ安価に返す新モデル",
+    "summary_ja": "Googleは、テキストや画像の入力に対し、予め定義された選択肢から回答を導き出すことに特化した「Gemini Decisions API」を公開した。 通常の回答生成を行わず、推論による確率と信頼度スコアのみを返すため、汎用モデルと比較して圧倒的に高速かつ低コストな運用が可能だ。 意思決定や条件分岐が頻出するAIワークフローにおいて、精度を維持しながらAPIコストを大幅に削減したい開発者にとって極めて有用な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "Google、選択肢から選ぶ判断専用の「Gemini Decisions API」を発表。文章生成を省き確率のみを高速かつ安価に返す新モデル",
+        "summary": "Googleは、テキストや画像の入力に対し、予め定義された選択肢から回答を導き出すことに特化した「Gemini Decisions API」を公開した。 通常の回答生成を行わず、推論による確率と信頼度スコアのみを返すため、汎用モデルと比較して圧倒的に高速かつ低コストな運用が可能だ。 意思決定や条件分岐が頻出するAIワークフローにおいて、精度を維持しながらAPIコストを大幅に削減したい開発者にとって極めて有用な選択肢となる。"
+      },
+      "en": {
+        "title": "Google launches Gemini Decisions API designed for choice selection, returning probabilities instead of full text generation",
+        "summary": "Google has introduced the Gemini Decisions API, a new specialized model built exclusively for classification and choice selection tasks rather than creative text generation. By bypassing the resource-heavy generation step and returning only probability and confidence scores from multimodal inputs like text or images, the API achieves significantly faster inference speeds and lower operational costs compared to standard LLMs. This move targets the growing market for decision-centric AI, offering a high-performance, cost-effective solution for builders integrating AI logic into business workflows, conditional routing, or automated verification systems. For developers managing high-volume AI infrastructure, this specialized approach allows for maintaining decision accuracy while drastically curbing the API latency and token expenditure associated with generative models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-11T22:46:55.047Z"
+  },
+  {
+    "id": "art-1794437207376-uuoez",
+    "source_id": "source-clay",
+    "source_name": "Clay Blog (GTM AI)",
+    "url": "https://www.clay.com/blog/how-first-party-signals-become-your-gtm-moat",
+    "published_at": "2026-11-11T22:30:02.000Z",
+    "og_image_url": "https://cdn.prod.website-files.com/61702af2e3966e09c4101538/6aab268ae90490f2d05fbd15_Livestream%20Asset.avif",
+    "title_ja": "Verkada流：CRMや通話記録といった「ファーストパーティデータ」をGTM戦略の参入障壁（Moat）にするための設計手法",
+    "summary_ja": "Verkadaのコディ・レオビック氏が、なぜCRMのメモや通話トランスクリプトといった「自社独自のファーストパーティデータ」が、購入データや外部の安易なシグナルよりも強力な営業上の参入障壁（Moat）となるかを解説。 外部ツールに依存したデータ収集は他社も模倣可能だが、商談の文脈を含む独自のインサイトは模倣困難な資産となる。",
+    "translations": {
+      "ja": {
+        "title": "Verkada流：CRMや通話記録といった「ファーストパーティデータ」をGTM戦略の参入障壁（Moat）にするための設計手法",
+        "summary": "Verkadaのコディ・レオビック氏が、なぜCRMのメモや通話トランスクリプトといった「自社独自のファーストパーティデータ」が、購入データや外部の安易なシグナルよりも強力な営業上の参入障壁（Moat）となるかを解説。 外部ツールに依存したデータ収集は他社も模倣可能だが、商談の文脈を含む独自のインサイトは模倣困難な資産となる。"
+      },
+      "en": {
+        "title": "Verkada’s playbook for turning first-party CRM signals into an uncopyable GTM moat that competitors cannot easily replicate",
+        "summary": "Verkada's Cody Leovic breaks down why proprietary first-party data—such as CRM notes, detailed email replies, and call transcripts—creates a structural GTM edge that rented or purchased datasets simply cannot match. While third-party signals provide surface-level intent, capturing the messy, uncodified context of actual sales conversations turns raw interaction logs into a high-value, defensible moat. For engineering and GTM teams, the core lesson is to focus on structuring conversational data in ways that allow AI to perform personalized, meaningful outreach at scale. Simply put, if your Go-To-Market engine relies on data that anyone with a budget can buy, you lack an advantage; you must instead engineer internal systems that capture proprietary signals to win."
+      }
+    },
+    "tool_tags": [
+      "Clay"
+    ],
+    "genre_tags": [
+      "ビジネス",
+      "開発",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-11T22:46:47.376Z"
+  },
+  {
     "id": "art-1794436344048-wss4u",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -23032,32 +23115,6 @@
     "created_at": "2026-11-08T10:02:29.781Z"
   },
   {
-    "id": "art-1794130312302-ar6og",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/itaraiguma/articles/agent-read-limit-split-did-not-hold",
-    "published_at": "2026-11-07T23:51:37.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--kjZRlu1W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E8%25AA%25AD%25E3%2581%25BE%25E3%2581%259B%25E3%2582%258B%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%2592%25E5%2588%2586%25E5%2589%25B2%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2582%25E3%2580%2581%25E6%2595%25B0%25E6%2597%25A5%25E3%2581%25A7%25E3%2581%25BE%25E3%2581%259F800%25E8%25A1%258C%25E3%2582%2592%25E8%25B6%2585%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlZmMxMmY2MTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェント開発の「巨大ファイル問題」：分割作業を諦め、CIによる自動チェックでコード肥大化を食い止めた話",
-    "summary_ja": "技術記事キュレーションサービス「DevPick」をAIエージェント（Claude Code等）で開発する際、AIの読込制限を超える巨大ファイルが数日で再発する問題に直面した。 手動でのファイル分割は根本解決にならず、最終的にCIでの検査を導入することでコードの肥大化を強制的に抑制する方針に転換した。 設計文書のみ例外とする運用を含め、AI主導開発におけるコードベースの健全性を保つための現実的な設計戦略を共有する。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント開発の「巨大ファイル問題」：分割作業を諦め、CIによる自動チェックでコード肥大化を食い止めた話",
-        "summary": "技術記事キュレーションサービス「DevPick」をAIエージェント（Claude Code等）で開発する際、AIの読込制限を超える巨大ファイルが数日で再発する問題に直面した。 手動でのファイル分割は根本解決にならず、最終的にCIでの検査を導入することでコードの肥大化を強制的に抑制する方針に転換した。 設計文書のみ例外とする運用を含め、AI主導開発におけるコードベースの健全性を保つための現実的な設計戦略を共有する。"
-      },
-      "en": {
-        "title": "Managing AI coding agent context limits: Why CI checks beat file splitting for preventing massive, unreadable source files",
-        "summary": "When building the tech curation service DevPick using AI agents like Claude Code and Codex, I repeatedly faced the issue of files bloating beyond the context limit, requiring constant manual splitting that never actually stuck. Instead of chasing a perpetual maintenance cycle of file refactoring, I pivoted to implementing automated CI checks to proactively block oversized files from being committed in the first place. This strategy mandates code modularity while allowing specific exceptions for design documentation, ensuring the repository remains accessible to AI agents without manual oversight. The takeaway is that relying on AI refactoring for architectural discipline is futile; automated governance is necessary to keep the codebase clean, readable, and perfectly suited for agentic coding workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-08T09:31:52.302Z"
-  },
-  {
     "id": "art-1794128513703-o0lok",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -31588,33 +31645,6 @@
       "画像生成"
     ],
     "created_at": "2026-11-04T12:03:51.888Z"
-  },
-  {
-    "id": "art-1793792974803-5vufq",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/hira",
-    "published_at": "2026-11-03T07:57:55.000Z",
-    "og_image_url": null,
-    "title_ja": "転職活動を自動化するAIエージェント「Hira」が登場、求人検索・選別・応募までを無料で行うパーソナルアシスタント機能の詳細",
-    "summary_ja": "「Hira」は、ユーザーの経歴に基づき最適な求人を検索し、選別から応募までのフローを自動化する無料のパーソナルAIエージェントだ。 膨大な求人リストをスクリーニングし、自身のスキルセットに合致する案件のみを提案するため、転職活動における検索コストを劇的に削減できる。 開発者にとっては、単なる情報収集ツールを超えた「目的達成型AI」がいかにユーザーのペインを解消し、特定のタスクフローを垂直統合できるかの良い事例といえるだろう。",
-    "translations": {
-      "ja": {
-        "title": "転職活動を自動化するAIエージェント「Hira」が登場、求人検索・選別・応募までを無料で行うパーソナルアシスタント機能の詳細",
-        "summary": "「Hira」は、ユーザーの経歴に基づき最適な求人を検索し、選別から応募までのフローを自動化する無料のパーソナルAIエージェントだ。 膨大な求人リストをスクリーニングし、自身のスキルセットに合致する案件のみを提案するため、転職活動における検索コストを劇的に削減できる。 開発者にとっては、単なる情報収集ツールを超えた「目的達成型AI」がいかにユーザーのペインを解消し、特定のタスクフローを垂直統合できるかの良い事例といえるだろう。"
-      },
-      "en": {
-        "title": "Hira launches as a free AI agent to automate job hunting, from search and filtering to application submission",
-        "summary": "Hira arrives as a free personal AI agent designed to overhaul the job search process by automating everything from initial search and filtering to managing complex application workflows. By scanning vast databases of open roles and filtering them based on the user's specific skill set, Hira minimizes the manual labor traditionally required to find a suitable position. For builders and AI engineers, this serves as a compelling case study on how goal-oriented agents—rather than simple information retrieval tools—can effectively solve user pain points by vertically integrating an entire task lifecycle. It demonstrates the growing user demand for autonomous agents that execute tangible professional outcomes instead of just providing passive search assistance."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-04T11:49:34.803Z"
   },
   {
     "id": "art-1793792947448-af2fm",
@@ -43307,33 +43337,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-30T23:17:07.984Z"
-  },
-  {
-    "id": "art-1793401343433-zi7cr",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/enterprise/articles/2610/31/news008.html",
-    "published_at": "2026-10-30T22:00:00.000Z",
-    "og_image_url": "https://image.itmedia.co.jp/enterprise/articles/2610/31/cover_news008.jpg",
-    "title_ja": "AIエージェントの実運用化が本格始動：INDUSTRIAL-X調査が明かす、AI導入で「明確な成果」を出す企業と失敗する企業の決定的な差",
-    "summary_ja": "生成AI活用が実証実験から本格運用へ移行する中、AIエージェントの導入が企業の標準になりつつある。 INDUSTRIAL-Xの調査によると、成果を出している組織には「技術の習熟」以上に、社内プロセスの再構築やトップダウンの意思決定を伴う組織変革の実行という共通点がある。 ツール導入単体で効率化を図る段階は終わり、業務フローそのものをAI前提で設計し直すことが、競争力を決定づける分岐点となっている。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの実運用化が本格始動：INDUSTRIAL-X調査が明かす、AI導入で「明確な成果」を出す企業と失敗する企業の決定的な差",
-        "summary": "生成AI活用が実証実験から本格運用へ移行する中、AIエージェントの導入が企業の標準になりつつある。 INDUSTRIAL-Xの調査によると、成果を出している組織には「技術の習熟」以上に、社内プロセスの再構築やトップダウンの意思決定を伴う組織変革の実行という共通点がある。 ツール導入単体で効率化を図る段階は終わり、業務フローそのものをAI前提で設計し直すことが、競争力を決定づける分岐点となっている。"
-      },
-      "en": {
-        "title": "Beyond Pilot Testing: How Top Companies Shifted to AI Agent Production and Why Technology Isn’t the Only Factor for Success",
-        "summary": "As generative AI moves past experimental pilot testing into full-scale production, AI agents are becoming enterprise standard. However, new survey data from INDUSTRIAL-X highlights a widening performance gap, revealing that the primary differentiator for successful adoption is not technical proficiency, but rather the ability to force organizational change through restructured internal processes and clear executive mandates. The era of simply deploying a tool for incremental efficiency is over; the real competitive advantage now belongs to companies that redesign core operational workflows with an AI-first mindset. For developers and builders, the takeaway is that shipping high-impact AI agents requires more than just technical accuracy—it demands an engineering strategy that aligns tightly with, and actively redefines, the broader business workflow."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "アップデート"
-    ],
-    "created_at": "2026-10-30T23:02:23.433Z"
   },
   {
     "id": "art-1793401318313-sg6vs",
