@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794384124106-4141n",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.12950",
+    "published_at": "2026-11-11T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "ブラックボックスLLMのモデル盗用を検知する新手法「SetPrint」が発表、入出力の応答変化セットを照合し派生モデルを特定",
+    "summary_ja": "ブラックボックス化されたLLMが特定の元モデルから派生したものかを見分ける新手法「SetPrint」が発表された。 入力クエリへの応答変化を「セット」として捉え、そのセット内およびセット間の相関関係を解析することで、トレーニング不要でモデルの同一性を高精度に特定する。 API経由でしかアクセスできない商用モデルの権利保護や、モデル窃盗の検知を自動化する重要な技術となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "ブラックボックスLLMのモデル盗用を検知する新手法「SetPrint」が発表、入出力の応答変化セットを照合し派生モデルを特定",
+        "summary": "ブラックボックス化されたLLMが特定の元モデルから派生したものかを見分ける新手法「SetPrint」が発表された。 入力クエリへの応答変化を「セット」として捉え、そのセット内およびセット間の相関関係を解析することで、トレーニング不要でモデルの同一性を高精度に特定する。 API経由でしかアクセスできない商用モデルの権利保護や、モデル窃盗の検知を自動化する重要な技術となるだろう。"
+      },
+      "en": {
+        "title": "SetPrint methodology detects LLM model theft by analyzing setwise correspondence of response variations from black-box APIs",
+        "summary": "Researchers have introduced SetPrint, a training-free method for black-box LLM fingerprinting designed to determine if a target model was derived from a specific source model using only output responses. By perturbing queries and observing response variations, the system captures two critical information sources: the relations among changes within a single model's response set and the correspondence of those changes between two different models. This dual-layer analysis allows for robust identification of model theft even when internal parameters are entirely hidden. For developers and AI researchers, this framework provides a vital automated tool to enforce intellectual property rights and verify provenance, moving beyond simple input-output matching to a deeper, setwise structural comparison of model behavior."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-11T08:02:04.106Z"
+  },
+  {
+    "id": "art-1794384117145-7ze2v",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/xolace",
+    "published_at": "2026-11-10T22:07:24.000Z",
+    "og_image_url": null,
+    "title_ja": "メンタル不調の「言葉にできない不安」を言語化するアプリ「Xolace」、AI対話で感情整理をサポートする新アプローチ",
+    "summary_ja": "Xolaceは、明確な診断には至らない日々のメンタル不調や言語化できないモヤモヤを抱えるユーザー向けのAIメンタルケアアプリ。 独自のプロンプト設計により、ユーザーの断片的な思考を整理し、感情のパターンを可視化することで、メンタルヘルスの悪化を未然に防ぐ予防的なアプローチを提供する。 単なるチャットボットではなく、自分の内面を客観視するための「思考の壁打ち相手」として、開発者が日々の感情負荷をマネジメントするツールとして機能する。",
+    "translations": {
+      "ja": {
+        "title": "メンタル不調の「言葉にできない不安」を言語化するアプリ「Xolace」、AI対話で感情整理をサポートする新アプローチ",
+        "summary": "Xolaceは、明確な診断には至らない日々のメンタル不調や言語化できないモヤモヤを抱えるユーザー向けのAIメンタルケアアプリ。 独自のプロンプト設計により、ユーザーの断片的な思考を整理し、感情のパターンを可視化することで、メンタルヘルスの悪化を未然に防ぐ予防的なアプローチを提供する。 単なるチャットボットではなく、自分の内面を客観視するための「思考の壁打ち相手」として、開発者が日々の感情負荷をマネジメントするツールとして機能する。"
+      },
+      "en": {
+        "title": "Xolace launches AI-powered mental support tool designed to help users articulate those difficult, non-clinical days of emotional ambiguity",
+        "summary": "Xolace is an AI-driven mental well-being platform built specifically for the grey area—those 'bad days' that fall short of a clinical diagnosis but still burden your productivity and focus. Instead of acting as a generic therapist, the app utilizes targeted conversational AI to help users articulate fragmented, difficult-to-name emotions and visualize recurring emotional patterns over time. This approach allows users to offload mental friction and gain objective perspective on their inner state before stress escalates. For builders and high-performers managing high-pressure workloads, Xolace serves as a specialized 'thought partner' that turns abstract anxiety into actionable self-awareness, prioritizing preventative emotional hygiene rather than just reactive crisis management during periods of burnout or creative block."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-11T08:01:57.145Z"
+  },
+  {
+    "id": "art-1794384110417-l61y1",
+    "source_id": "source-github-trending",
+    "source_name": "GitHub Trending (AI / TypeScript / Python)",
+    "url": "https://github.com/tokio-rs/topcoat",
+    "published_at": "2026-11-11T08:01:50.417Z",
+    "og_image_url": null,
+    "title_ja": "Rust製フルスタックWebフレームワーク「Topcoat」が登場。シンプルさと生産性を重視した実験的プロジェクト",
+    "summary_ja": "GitHubで注目を集める「Topcoat」は、RustでフルスタックWebアプリを構築するための「batteries-included（必要な機能全部入り）」なモジュール型フレームワークだ。 マクロを活用した宣言的なルーティングやコンポーネント記述が可能で、開発効率とシンプルさを最優先に設計されている。 現在は開発初期段階の実験的プロジェクトであり、破壊的変更も予期されるが、Rustエコシステムにおけるフロント・バックエンド統合の新たな選択肢として注目しておきたい。",
+    "translations": {
+      "ja": {
+        "title": "Rust製フルスタックWebフレームワーク「Topcoat」が登場。シンプルさと生産性を重視した実験的プロジェクト",
+        "summary": "GitHubで注目を集める「Topcoat」は、RustでフルスタックWebアプリを構築するための「batteries-included（必要な機能全部入り）」なモジュール型フレームワークだ。 マクロを活用した宣言的なルーティングやコンポーネント記述が可能で、開発効率とシンプルさを最優先に設計されている。 現在は開発初期段階の実験的プロジェクトであり、破壊的変更も予期されるが、Rustエコシステムにおけるフロント・バックエンド統合の新たな選択肢として注目しておきたい。"
+      },
+      "en": {
+        "title": "Topcoat emerges as a batteries-included, modular Rust framework designed to simplify full-stack web development",
+        "summary": "Topcoat is a new, modular full-stack framework for Rust that prioritizes developer productivity by providing a batteries-included experience for building web applications. Its API leverages macros to create a clean, declarative syntax for routing and component definition, aiming to streamline the development lifecycle from the backend to the frontend. While the project is currently in its early experimental phase and explicitly warns users of upcoming breaking changes, it represents an interesting attempt to consolidate Rust's fragmented web ecosystem into a more cohesive, productive toolchain. For builders evaluating new Rust stacks, Topcoat offers a promising, simplified alternative to existing boilerplate-heavy solutions, provided you are willing to manage evolving APIs as the framework matures."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-11T08:01:50.417Z"
+  },
+  {
+    "id": "art-1794384103203-c0hzs",
+    "source_id": "source-aismiley",
+    "source_name": "AISmiley（AIニュース）",
+    "url": "https://aismiley.co.jp/ai_news/docomo-sleep-quality-ai/",
+    "published_at": "2026-11-11T07:34:24.000Z",
+    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/11/docomo-sleep-quality-ai-main.png",
+    "title_ja": "NTTドコモ、スマホ操作ログから「睡眠の質」を推定するAIサービス提供開始――専門デバイス不要で日常習慣の改善までをトータルサポート",
+    "summary_ja": "NTTドコモは、スマートフォン画面の操作履歴や位置情報などの日常的なログデータから、利用者の睡眠の質を推定するAI技術の提供を開始した。 専用のウェアラブルデバイスを装着することなく、普段のスマホ利用状況を分析するだけで睡眠状態を可視化し、具体的な生活改善策までを提案する。 ヘルスケアテックにおけるデータ活用は、ユーザーの負担を極小化する「パッシブなモニタリング」が普及の要となることを示している。",
+    "translations": {
+      "ja": {
+        "title": "NTTドコモ、スマホ操作ログから「睡眠の質」を推定するAIサービス提供開始――専門デバイス不要で日常習慣の改善までをトータルサポート",
+        "summary": "NTTドコモは、スマートフォン画面の操作履歴や位置情報などの日常的なログデータから、利用者の睡眠の質を推定するAI技術の提供を開始した。 専用のウェアラブルデバイスを装着することなく、普段のスマホ利用状況を分析するだけで睡眠状態を可視化し、具体的な生活改善策までを提案する。 ヘルスケアテックにおけるデータ活用は、ユーザーの負担を極小化する「パッシブなモニタリング」が普及の要となることを示している。"
+      },
+      "en": {
+        "title": "NTT Docomo launches AI to estimate sleep quality from smartphone usage logs, offering health improvements without specialized wearables",
+        "summary": "NTT Docomo has officially launched an AI-powered service that estimates a user's sleep quality by analyzing behavioral data like screen interaction history and geolocation logs. Crucially, the system removes the friction of specialized wearable hardware, enabling users to monitor their rest patterns simply through their existing smartphone habits. Beyond monitoring, the AI provides personalized recommendations for daily lifestyle adjustments to improve sleep hygiene. For developers building consumer health tech, this rollout highlights a critical shift in the industry: successful adoption of wellness tools depends on passive data collection that requires zero active user input, effectively turning existing smartphone usage into a reliable diagnostic proxy for personal well-being."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-11T08:01:43.203Z"
+  },
+  {
     "id": "art-1794382485353-tlddk",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -19544,32 +19648,6 @@
     "created_at": "2026-11-08T22:46:25.466Z"
   },
   {
-    "id": "art-1794177093240-daljj",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Git_Dayori/items/a9504250ae98af563a11",
-    "published_at": "2026-11-08T22:31:15.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDE0MTQwJTJGZWNhZmNiZjMyMzkwOGQ3ODlmNzkyZDUxNTZmZDZlNTVkY2EzNjM0MSUyRnhfbGFyZ2UucG5nJTNGMTc3NjkyMzE3Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTk0ZjU5ZmZjNDczOGQ2ZDUzNDI4Yjc3ZTc2YWFhMGQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D454c3a9a5e0968be2f7a10c3c9f8eb49?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwR2l0SHViJUU2JTk3JUE1JUU1JUEwJUIxJUUzJTgwJTkxQUklRTUlOEYlQUYlRTglQTYlOTYlRTUlOEMlOTYlRTMlODMlODQlRTMlODMlQkMlRTMlODMlQUJuaXViaWdlbyVFNSU4OCU5RCVFNyU5OSVCQiVFNSVBMCVCNCVFMyU4MCU4MXNoZXJsb2NrJUUzJTgxJThDJTJCMiUyQzM3MiVFMyU4MSVBNyVFOSVBNiU5NiVFNCVCRCU4RCUyMCVFMiU4MCU5NCUyMDIwMjYtMTEtMDkmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0zODkyMTZmYWQ0YTNiNTFjYTg1NjEwNGM1M2RhNDcyMQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBHaXRfRGF5b3JpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZjI4YjlmMWRhMWM3MjMyODkxYjlmNGVjZDU1N2Q0ZWM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=9ddb36b6eba1b3d88f708807518986b8",
-    "title_ja": "GitHub日報：AI可視化ツール「niubigeo」が急浮上でトレンド入り、OSINTツール「sherlock」が+2,372で首位を独走",
-    "summary_ja": "GitHubの最新トレンドにて、AIを用いた可視化ツール「niubigeo」が新たに注目を集め1万スターを突破した。 一方、オープンソースのOSINT（公開情報調査）ツール「sherlock」は、一日で2,372個のスターを獲得しランキングの首位を維持している。 開発現場ではこうしたツールが急速に普及しており、特に特定のタスクに特化したOSSのライフサイクルを追うことは、効率的な開発環境を構築する上で欠かせない。",
-    "translations": {
-      "ja": {
-        "title": "GitHub日報：AI可視化ツール「niubigeo」が急浮上でトレンド入り、OSINTツール「sherlock」が+2,372で首位を独走",
-        "summary": "GitHubの最新トレンドにて、AIを用いた可視化ツール「niubigeo」が新たに注目を集め1万スターを突破した。 一方、オープンソースのOSINT（公開情報調査）ツール「sherlock」は、一日で2,372個のスターを獲得しランキングの首位を維持している。 開発現場ではこうしたツールが急速に普及しており、特に特定のタスクに特化したOSSのライフサイクルを追うことは、効率的な開発環境を構築する上で欠かせない。"
-      },
-      "en": {
-        "title": "GitHub Daily: AI visualization tool 'niubigeo' trends with 10k stars while OSINT tool 'sherlock' dominates with +2,372",
-        "summary": "In today’s GitHub trending roundup, the new AI-powered visualization tool 'niubigeo' has made a massive debut, rapidly surpassing 10,000 stars. Simultaneously, the established OSINT utility 'sherlock' continues its dominance at the top of the charts, adding an impressive 2,372 stars in a single day. These shifts highlight the growing appetite among developers for both novel AI-driven debugging aids and robust, battle-tested information gathering tools. For builders looking to stay competitive, monitoring these daily surges is essential; understanding which specific task-oriented projects gain traction helps in identifying upcoming industry standards and potential opportunities to integrate these high-velocity tools into your own development stack before they become ubiquitous requirements."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-08T22:31:33.240Z"
-  },
-  {
     "id": "art-1794175333961-r5ynj",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -22774,33 +22852,6 @@
       "開発"
     ],
     "created_at": "2026-11-07T07:16:35.690Z"
-  },
-  {
-    "id": "art-1794034920627-2gxvc",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/sora_proj/articles/cfeaa76e728d5b",
-    "published_at": "2026-11-07T01:08:06.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--mou4peub--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Marketplace%2520%25E5%25AF%25A9%25E6%259F%25BB%25E3%2581%25AE%25E5%25B7%25AE%25E3%2581%2597%25E6%2588%25BB%25E3%2581%2597%25E3%2581%25AF%2520UrlFetch%25201%2520%25E6%259C%25AC%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2582Docs%2520API%2520%25E3%2581%25AB%25E6%259B%25BF%25E3%2581%2588%25E3%2581%25A6%25E3%2582%25B9%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2597...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:SoraProject%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ZiNjk5YmFjYTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Google Workspace Marketplace審査の差し戻し回避策：UrlFetchを廃止しDocs API移行でスコープ削減に成功",
-    "summary_ja": "Gmailアドオンの審査が通らなかった理由は、PDF内の文字抽出に「UrlFetchApp」を使用していたことだった。 この手法は外部通信として検知され、セキュリティ審査で却下される要因となった。 解決策として、Google Docs API経由でのデータ取得に切り替えることで、不要な権限スコープを削除しつつ安定的なOCR連携を実現。 外部APIの直接呼び出しを避けて公式APIで完結させる設計こそが、ストア審査をスムーズに通過させるための鉄則だ。",
-    "translations": {
-      "ja": {
-        "title": "Google Workspace Marketplace審査の差し戻し回避策：UrlFetchを廃止しDocs API移行でスコープ削減に成功",
-        "summary": "Gmailアドオンの審査が通らなかった理由は、PDF内の文字抽出に「UrlFetchApp」を使用していたことだった。 この手法は外部通信として検知され、セキュリティ審査で却下される要因となった。 解決策として、Google Docs API経由でのデータ取得に切り替えることで、不要な権限スコープを削除しつつ安定的なOCR連携を実現。 外部APIの直接呼び出しを避けて公式APIで完結させる設計こそが、ストア審査をスムーズに通過させるための鉄則だ。"
-      },
-      "en": {
-        "title": "How switching from UrlFetch to Docs API cleared my Google Workspace Marketplace review and reduced scopes",
-        "summary": "A Gmail add-on developer faced rejection during the Google Workspace Marketplace review process, ultimately tracing the issue to the use of 'UrlFetchApp' for OCR text extraction. The review flagged the direct HTTP call as a potential security risk, requiring a architectural pivot to resolve. By replacing the fetch call with the native Google Docs API, the developer not only removed the need for insecure external communication but also successfully dropped an unnecessary authorization scope from the add-on. This experience underscores a vital lesson for marketplace builders: avoiding direct external network calls in favor of official, scoped APIs is essential for passing security reviews. Relying on native service integrations significantly reduces friction and compliance overhead during the submission process."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-07T07:02:00.627Z"
   },
   {
     "id": "art-1794021399391-mnnla",
@@ -33112,31 +33163,6 @@
     "created_at": "2026-11-03T15:31:46.900Z"
   },
   {
-    "id": "art-1793719119643-g4i9i",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/infino-ai",
-    "published_at": "2026-11-02T10:28:29.000Z",
-    "og_image_url": null,
-    "title_ja": "Parquetファイル単一で検索・ベクトル・SQLを完結させる「Infino AI」が登場、エージェント開発のデータパイプラインを簡素化",
-    "summary_ja": "「Infino AI」は、バラバラになりがちなAIエージェントのデータ基盤を統合する新しいストレージエンジンだ。 Parquetファイル一つに対し、全文検索、ベクトル検索、SQLクエリを直接実行できる設計になっており、ベクトルデータベースやElasticsearchなどの複数システムを併用する複雑なデータパイプライン構築が不要になる。",
-    "translations": {
-      "ja": {
-        "title": "Parquetファイル単一で検索・ベクトル・SQLを完結させる「Infino AI」が登場、エージェント開発のデータパイプラインを簡素化",
-        "summary": "「Infino AI」は、バラバラになりがちなAIエージェントのデータ基盤を統合する新しいストレージエンジンだ。 Parquetファイル一つに対し、全文検索、ベクトル検索、SQLクエリを直接実行できる設計になっており、ベクトルデータベースやElasticsearchなどの複数システムを併用する複雑なデータパイプライン構築が不要になる。"
-      },
-      "en": {
-        "title": "Infino AI launches unified storage engine enabling search, vector, and SQL queries directly on single Parquet files for AI agents",
-        "summary": "Infino AI introduces a unified storage engine that allows developers to run full-text search, vector search, and SQL queries directly on a single Parquet file copy. By eliminating the need for complex pipelines that sync data across separate vector databases, relational stores, and search indexes, Infino drastically simplifies the architecture for AI agents. Rather than managing multiple systems and suffering from data staleness during synchronization, teams can now query their raw data lakes directly without losing performance. For builders struggling with the operational overhead of modern RAG stacks, this approach provides a streamlined alternative that reduces infrastructure maintenance and latency, offering a cleaner, more efficient foundation for building data-intensive AI applications without sacrificing query capability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-03T15:18:39.643Z"
-  },
-  {
     "id": "art-1793719111319-rluej",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -33163,31 +33189,6 @@
       "開発"
     ],
     "created_at": "2026-11-03T15:18:31.319Z"
-  },
-  {
-    "id": "art-1793716864542-xn355",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/beaquaro-studio",
-    "published_at": "2026-11-02T16:12:30.000Z",
-    "og_image_url": null,
-    "title_ja": "「Beaquaro Studio」が登場、SNSコンテンツ制作とマルチプラットフォーム投稿・リンク管理を一元化する次世代型作成ツール",
-    "summary_ja": "Beaquaro Studioは、SNS運用におけるコンテンツ制作から各プラットフォームへの一括投稿、さらにリンクインバイオ（プロフィールリンク）管理までをワンストップで完結させる統合管理ツールだ。 従来のツールのように複数のタブやアプリを切り替える必要がなく、一度の執筆作業で全チャンネルの配信を最適化できる。 SNSマーケティングの運用工数を劇的に削減したいクリエイターや個人開発者にとって、ワークフローの断片化を解消する強力な選択肢となるはずだ。",
-    "translations": {
-      "ja": {
-        "title": "「Beaquaro Studio」が登場、SNSコンテンツ制作とマルチプラットフォーム投稿・リンク管理を一元化する次世代型作成ツール",
-        "summary": "Beaquaro Studioは、SNS運用におけるコンテンツ制作から各プラットフォームへの一括投稿、さらにリンクインバイオ（プロフィールリンク）管理までをワンストップで完結させる統合管理ツールだ。 従来のツールのように複数のタブやアプリを切り替える必要がなく、一度の執筆作業で全チャンネルの配信を最適化できる。 SNSマーケティングの運用工数を劇的に削減したいクリエイターや個人開発者にとって、ワークフローの断片化を解消する強力な選択肢となるはずだ。"
-      },
-      "en": {
-        "title": "Beaquaro Studio Launches to Unify Content Creation, Multi-Platform Publishing, and Link-in-Bio Management for Streamlined Creator Workflows",
-        "summary": "Beaquaro Studio has arrived as an all-in-one platform designed to consolidate social media content creation, multi-platform scheduling, and link-in-bio management into a single workflow. By eliminating the friction of toggling between disparate apps for writing, posting, and updating profile links, the tool allows creators to push content everywhere from a single dashboard. This represents a significant shift for individual builders and marketers who struggle with fragmented social media stacks and repetitive administrative tasks. For those looking to scale their distribution without increasing operational overhead, Beaquaro Studio offers a centralized hub that turns content production into a seamless, unified process, effectively removing the technical debt typically associated with managing a cross-platform brand presence."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-03T14:41:04.542Z"
   },
   {
     "id": "art-1793715413127-1oa6f",
