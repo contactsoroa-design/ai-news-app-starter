@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794387730769-6nw4n",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Martina_1230/items/acc4631ec1ec7e25ff2c",
+    "published_at": "2026-11-11T08:48:50.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS3g5azBuQ3VWWTd6UEpldmJWdjRHZzcwWjNTT21hQW1uSjhoUkdWVmJMYUdJd2dnJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWQxMzcwNjRmYmVhMmU1MzNiZDQxYWE0OTc0ZGJmZWUx%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D397dbd01db86b7c2fa00619e9879086c?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9VGhlJTIwR2VuZXJhdGlvbiUyMFJvdXRlJTIwQmVsb25ncyUyMGluJTIwWW91ciUyMDNEJTIwQXNzZXQlMjBSZWNvcmQmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz01NTI1MDZiNjlhOWNiMDQ0ZWY2N2M3NzQ2ZmU1ODExZg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBNYXJ0aW5hXzEyMzAmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz01ZGYyZWM3ZjQ3ZmMzYzU5NjE3YTVjMmNlZjViOTc3YQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a2a7c6641d1c61f021ca320bc8837ad2",
+    "title_ja": "AIによる3D生成で「生成経路」をアセット履歴に含めるべき理由：モデルの進化と再利用性を高めるデータ管理戦略",
+    "summary_ja": "AIを用いた3Dモデル生成では、画像から3Dへの変換リクエストが失敗しても、後の手法で成功する可能性がある。 そのため、単純に完成モデルだけを保存するのではなく、どの生成AIエンジンやプロンプト経由で生成されたかという「生成経路」をアセットレコードとして記録することが重要だ。 このデータ管理戦略により、将来的に最新の生成アルゴリズムが登場した際、過去の不完全なリクエストを再処理して高品質な3Dアセットへ効率的にアップグレードできる。",
+    "translations": {
+      "ja": {
+        "title": "AIによる3D生成で「生成経路」をアセット履歴に含めるべき理由：モデルの進化と再利用性を高めるデータ管理戦略",
+        "summary": "AIを用いた3Dモデル生成では、画像から3Dへの変換リクエストが失敗しても、後の手法で成功する可能性がある。 そのため、単純に完成モデルだけを保存するのではなく、どの生成AIエンジンやプロンプト経由で生成されたかという「生成経路」をアセットレコードとして記録することが重要だ。 このデータ管理戦略により、将来的に最新の生成アルゴリズムが登場した際、過去の不完全なリクエストを再処理して高品質な3Dアセットへ効率的にアップグレードできる。"
+      },
+      "en": {
+        "title": "Why Your 3D Asset Record Must Include the Generation Route for Future Model Updates and Iteration",
+        "summary": "In AI-driven 3D generation, a single image-to-3D request might return a broken model today, yet a superior modeling approach tomorrow could yield a perfect result. Instead of archiving only the final output, developers should store the specific 'generation route'—tracking which AI engine, parameters, and prompt chains created each asset—within the database record. This metadata-first strategy allows builders to re-process failed or low-quality requests automatically whenever new, more capable generation algorithms become available, essentially turning stale data into future value. For builders creating 3D generation pipelines, the core takeaway is that the generation context is as valuable as the geometry itself; treat your metadata as a first-class citizen to ensure long-term model scalability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-11T09:02:10.769Z"
+  },
+  {
+    "id": "art-1794387722657-006b2",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2611/11/2000003104/",
+    "published_at": "2026-11-11T05:16:43.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/11/2000003104/10011860/2048",
+    "title_ja": "Notion AIのチャット記録が外部委託先経由で漏えいの恐れ、米Notion Labsが公式発表 セキュリティ体制の不備が露呈",
+    "summary_ja": "米Notion Labsは、同社のワークスペースツール「Notion」で提供する「Notion AI」のチャット記録が、外部委託先への不正アクセスによって漏えいした恐れがあると公表した。 サードパーティベンダーのセキュリティ管理は、SaaS利用において最も見落とされがちな脆弱性の一つだ。 AI活用を前提とする開発者は、API連携や外部委託先のアクセス権限を最小化し、機密情報を扱うAI機能のデータガバナンスを今すぐ見直すべきである。",
+    "translations": {
+      "ja": {
+        "title": "Notion AIのチャット記録が外部委託先経由で漏えいの恐れ、米Notion Labsが公式発表 セキュリティ体制の不備が露呈",
+        "summary": "米Notion Labsは、同社のワークスペースツール「Notion」で提供する「Notion AI」のチャット記録が、外部委託先への不正アクセスによって漏えいした恐れがあると公表した。 サードパーティベンダーのセキュリティ管理は、SaaS利用において最も見落とされがちな脆弱性の一つだ。 AI活用を前提とする開発者は、API連携や外部委託先のアクセス権限を最小化し、機密情報を扱うAI機能のデータガバナンスを今すぐ見直すべきである。"
+      },
+      "en": {
+        "title": "Notion Labs warns of potential Notion AI chat log breach via unauthorized access at third-party service provider",
+        "summary": "Notion Labs has officially warned that chat logs from its Notion AI service may have been compromised following a security incident at an external service provider. This breach highlights the critical, often overlooked vulnerability of third-party vendor access in SaaS ecosystems, where security protocols at smaller contractors can easily become the weakest link. For builders and engineering teams leveraging AI, this serves as a harsh reminder to treat external integrations and third-party data handling as primary attack vectors. It is essential to audit access permissions, enforce strict data minimization, and review governance protocols for any AI feature that processes user inputs. Relying solely on internal security is no longer sufficient when business-critical AI relies on third-party infrastructure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-11T09:02:02.657Z"
+  },
+  {
+    "id": "art-1794387716601-rvn55",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/bonds-2",
+    "published_at": "2026-11-11T05:07:26.000Z",
+    "og_image_url": null,
+    "title_ja": "友情維持AI「bonds chat」が登場、返信が途絶えるとAIが消滅する強制チャット体験を実装",
+    "summary_ja": "「bonds chat」は、友人グループでの継続的な対話を強制するマルチプレイヤー型AIチャットアプリだ。 参加者が一定期間返信を怠ると、共有のAIキャラクターが「死亡」して消滅するというゲーミフィケーションを導入し、疎遠になりがちな関係性に強制的な再接続の動機を与えている。 単なるAI対話ツールではなく、人間関係の維持にデジタルな制裁機能を加えるというユニークな逆転の発想が、ソーシャルアプリの新しい定着率向上モデルとして注目される。",
+    "translations": {
+      "ja": {
+        "title": "友情維持AI「bonds chat」が登場、返信が途絶えるとAIが消滅する強制チャット体験を実装",
+        "summary": "「bonds chat」は、友人グループでの継続的な対話を強制するマルチプレイヤー型AIチャットアプリだ。 参加者が一定期間返信を怠ると、共有のAIキャラクターが「死亡」して消滅するというゲーミフィケーションを導入し、疎遠になりがちな関係性に強制的な再接続の動機を与えている。 単なるAI対話ツールではなく、人間関係の維持にデジタルな制裁機能を加えるというユニークな逆転の発想が、ソーシャルアプリの新しい定着率向上モデルとして注目される。"
+      },
+      "en": {
+        "title": "Bonds Chat introduces a multiplayer AI companion that permanently dies if your group stops chatting",
+        "summary": "Bonds Chat is a novel multiplayer AI app that treats relationships like a Tamagotchi, threatening to permanently kill off your shared AI companion if the group stops interacting for too long. By implementing a high-stakes gamification mechanic where silence leads to the loss of your digital connection, the platform creates an artificial sense of urgency that forces friends to re-engage with one another. It transforms passive chatting into a collaborative survival game, effectively using the AI as a bridge to maintain social health. For developers building social products, this experiment demonstrates how aggressive churn-reduction mechanisms—even slightly hostile ones—can be weaponized to foster stickiness in a landscape where users typically struggle to sustain long-term digital communication."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-11T09:01:56.601Z"
+  },
+  {
+    "id": "art-1794387709265-ve1rr",
+    "source_id": "source-google-ai-blog",
+    "source_name": "Google AI Blog",
+    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+    "published_at": "2026-11-11T09:00:00.000Z",
+    "og_image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Esther_Mahlangu_SS.width-1300.png",
+    "title_ja": "Google Arts & Culture、南アフリカの巨匠エスター・マランングの全作品を網羅したオンラインアーカイブを公開",
+    "summary_ja": "Google Arts & Cultureは、南アフリカの芸術家エスター・マランングの生涯と文化的遺産を記録した初の包括的なオンラインアーカイブを公開した。 ンデベレ族の伝統的な壁画芸術を世界へ広めた彼女の緻密な幾何学模様や歴史的背景を、高精細なデジタル画像とストーリーテリングで紐解く。 文化保存におけるテクノロジーの重要性を示す事例であり、デジタルアーカイブによる芸術教育の新たな可能性を提示している。",
+    "translations": {
+      "ja": {
+        "title": "Google Arts & Culture、南アフリカの巨匠エスター・マランングの全作品を網羅したオンラインアーカイブを公開",
+        "summary": "Google Arts & Cultureは、南アフリカの芸術家エスター・マランングの生涯と文化的遺産を記録した初の包括的なオンラインアーカイブを公開した。 ンデベレ族の伝統的な壁画芸術を世界へ広めた彼女の緻密な幾何学模様や歴史的背景を、高精細なデジタル画像とストーリーテリングで紐解く。 文化保存におけるテクノロジーの重要性を示す事例であり、デジタルアーカイブによる芸術教育の新たな可能性を提示している。"
+      },
+      "en": {
+        "title": "Google Arts & Culture launches comprehensive digital archive celebrating the life and artistic legacy of Esther Mahlangu",
+        "summary": "Google Arts & Culture has launched a comprehensive new digital archive dedicated to the life and artistic contributions of Esther Mahlangu, a legendary South African artist known for revitalizing Ndebele mural painting. The archive features high-resolution imagery and immersive storytelling that documents her intricate geometric patterns and cultural impact, making her work accessible to a global audience for the first time. This project highlights how digital archiving technologies serve as a critical tool for preserving cultural heritage against the risk of erasure. For builders and creators, the release underscores the immense value of applying high-fidelity digital preservation techniques to physical art forms, demonstrating that tech-driven storytelling can effectively bridge the gap between traditional cultural practices and contemporary education."
+      }
+    },
+    "tool_tags": [
+      "Gemini"
+    ],
+    "genre_tags": [
+      "研究"
+    ],
+    "created_at": "2026-11-11T09:01:49.265Z"
+  },
+  {
     "id": "art-1794386829418-s9293",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -19699,32 +19804,6 @@
     "created_at": "2026-11-08T23:46:37.266Z"
   },
   {
-    "id": "art-1794180697099-tpgk6",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/joinclass/items/2b7bba656995a34e3e66",
-    "published_at": "2026-11-08T23:30:02.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjA2ODkxJTJGNzhmNWJiNzA1YjdlZjlkYWVjZWRhOGI2ODdlNTU5ZjA5YzI1YmYzZSUyRnhfbGFyZ2UucG5nJTNGMTc3NDUxODE0Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9M2ZhMWQ1NDMyODQzNzkzNTIyNzRiMzk2ZDdmYmJmMTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd9c2258cfe819f9c4489a1d86672b88f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJThDJUU3JUE2JTgxJUU2JUFEJUEyJUUzJTgwJThEJUUzJTgxJUE3JUUzJTgxJUFGJUUzJTgxJUFBJUUzJTgxJThGJUUzJTgwJThDJUU2JTg5JThCJUU5JUEwJTg2JUUzJTgwJThEJUUzJTgxJUE3JUU2JTlCJUI4JUUzJTgxJThGQ0xBVURFLm1kJTIwJUUyJTgwJTk0JTIwJUU2JThDJTg3JUU3JUE0JUJBJUUzJTgxJUFFJUU1JThBJUI5JUUzJTgxJThEJUU2JTk2JUI5JUUzJTgxJThDJUU1JUE0JTg5JUUzJTgyJThGJUUzJTgyJThCJUU2JTlCJUI4JUUzJTgxJThEJUU1JTg4JTg2JUUzJTgxJTkxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9OTdjMjIzMjRhMzQyODQ1OTJlZDFiNWJjMTliM2Y4ODA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBqb2luY2xhc3MmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz02MTk0ZGNhMTQxZGVmYmVkMzIyZTJlNjgwN2VlNDI0ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=ba5a6e0271e7f9b2a49e33d1343ba8ce",
-    "title_ja": "Claude Codeの精度を劇的に改善する「CLAUDE.md」設計術：禁止事項リストを廃し、手順駆動へ切り替えるべき理由",
-    "summary_ja": "Claude CodeなどのAIツールにおいて、禁止事項を羅列するプロンプト設計はAIの混乱を招き精度を下げる要因となる。 ジョインクラス社は、過去の失敗から「〜禁止」という否定命令を廃し、具体的な「手順（プロセス）」を記述する手法へ移行することで、指示の正確性を大幅に向上させた。 単なる制約の追加ではなく、AIが再現可能な手順を構造化して記述することが、定常業務を自動化する実用的な開発環境構築の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの精度を劇的に改善する「CLAUDE.md」設計術：禁止事項リストを廃し、手順駆動へ切り替えるべき理由",
-        "summary": "Claude CodeなどのAIツールにおいて、禁止事項を羅列するプロンプト設計はAIの混乱を招き精度を下げる要因となる。 ジョインクラス社は、過去の失敗から「〜禁止」という否定命令を廃し、具体的な「手順（プロセス）」を記述する手法へ移行することで、指示の正確性を大幅に向上させた。 単なる制約の追加ではなく、AIが再現可能な手順を構造化して記述することが、定常業務を自動化する実用的な開発環境構築の鍵となる。"
-      },
-      "en": {
-        "title": "Stop writing restrictive prompt constraints: Why switching to procedure-based CLAUDE.md files improves AI coding agent output",
-        "summary": "Many developers default to adding 'do not' prohibitions into their CLAUDE.md files whenever an AI agent makes a mistake, but this strategy often confuses the model and degrades performance. Instead of relying on a growing list of negative constraints, engineers should pivot toward defining explicit, step-by-step procedural workflows. By structuring instructions as reliable operational protocols rather than reactive guardrails, the agent can maintain better context and consistency across recurring automated tasks. The core insight is that procedural prompting aligns with how LLMs process logic, effectively reducing hallucination and drift. For builders scaling AI-assisted workflows, shifting from punitive prohibition lists to structured process definitions is the most effective way to optimize reliability in professional coding environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-08T23:31:37.099Z"
-  },
-  {
     "id": "art-1794179794840-vx9w5",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -33107,32 +33186,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-03T16:33:39.166Z"
-  },
-  {
-    "id": "art-1793722681775-vbtth",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/kwant",
-    "published_at": "2026-10-30T22:10:47.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェントの出力精度を向上させる新ツール「kwant」が登場、複数ボットが相互検証を行う自己修正プロセスを導入",
-    "summary_ja": "AIエージェントがタスク完了を宣言する前に、複数の独立したAIボットが相互に成果物を検証し合うワークフロー構築ツール「kwant」が公開された。 出力された回答やコードに対してAI同士が批判的レビューを行うことで、幻覚（ハルシネーション）を抑制し、品質を大幅に向上させる仕組みだ。 AIの精度に課題を感じているエンジニアは、単体モデルの推論に頼るのではなく、マルチエージェントによる検証レイヤーを組み込むことで、プロダクトの信頼性を一段階引き上げることができる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの出力精度を向上させる新ツール「kwant」が登場、複数ボットが相互検証を行う自己修正プロセスを導入",
-        "summary": "AIエージェントがタスク完了を宣言する前に、複数の独立したAIボットが相互に成果物を検証し合うワークフロー構築ツール「kwant」が公開された。 出力された回答やコードに対してAI同士が批判的レビューを行うことで、幻覚（ハルシネーション）を抑制し、品質を大幅に向上させる仕組みだ。 AIの精度に課題を感じているエンジニアは、単体モデルの推論に頼るのではなく、マルチエージェントによる検証レイヤーを組み込むことで、プロダクトの信頼性を一段階引き上げることができる。"
-      },
-      "en": {
-        "title": "Kwant launches a multi-agent workflow platform that forces AI bots to verify each other's work before finalizing output",
-        "summary": "Kwant has officially launched, introducing a multi-agent workflow architecture where independent AI bots act as peer reviewers to vet work before signaling task completion. By implementing a system where multiple agents critique, iterate, and verify output, the platform significantly reduces the rate of hallucinations and factual errors common in standalone model inferences. This approach acknowledges that relying on a single prompt-response loop is often insufficient for production-grade software or complex content generation. For builders integrating AI into their core workflows, the takeaway is clear: robustness now requires a multi-agent verification layer that treats quality assurance as a critical, automated step, rather than an afterthought, ensuring that reliability is baked directly into the final delivery cycle."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-03T16:18:01.775Z"
   },
   {
     "id": "art-1793722605893-jjugx",
@@ -47530,33 +47583,6 @@
     "created_at": "2026-10-29T09:31:29.055Z"
   },
   {
-    "id": "art-1793265464828-n3mhn",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/aiplus/article/2610/29/2000002728/",
-    "published_at": "2026-10-29T08:46:39.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2610/29/2000002728/10010924/2048",
-    "title_ja": "OpenAI、ChatGPTのPro/Businessプランに月500ドル分のAPI利用枠を付与。開発者向け連携を強化",
-    "summary_ja": "OpenAIは、ChatGPTのProおよびBusinessプラン加入者に対し、同社APIの利用枠を月額最大500ドル分付与する特典を追加した。 これまでWeb UIメインで利用していたユーザーが、APIを介した独自のアプリ開発やツール連携をシームレスに行えるようになる。 ChatGPT上で完結していたAI活用を、API連携によって自社プロダクトや個人開発プロジェクトへと直接拡張できるため、エンジニアにとってサブスク費用以上の開発価値が生まれる好機となる。",
-    "translations": {
-      "ja": {
-        "title": "OpenAI、ChatGPTのPro/Businessプランに月500ドル分のAPI利用枠を付与。開発者向け連携を強化",
-        "summary": "OpenAIは、ChatGPTのProおよびBusinessプラン加入者に対し、同社APIの利用枠を月額最大500ドル分付与する特典を追加した。 これまでWeb UIメインで利用していたユーザーが、APIを介した独自のアプリ開発やツール連携をシームレスに行えるようになる。 ChatGPT上で完結していたAI活用を、API連携によって自社プロダクトや個人開発プロジェクトへと直接拡張できるため、エンジニアにとってサブスク費用以上の開発価値が生まれる好機となる。"
-      },
-      "en": {
-        "title": "OpenAI Adds $500 Monthly API Credit Allowance to ChatGPT Pro and Business Subscription Plans",
-        "summary": "OpenAI has officially updated its ChatGPT Pro and Business subscription tiers to include a monthly allowance of $500 in API credits. This strategic move enables users who primarily rely on the web interface to experiment with custom application development, agentic workflows, and automated integrations without incurring additional costs beyond their existing subscription. By bridging the gap between consumer-facing chat experiences and programmatic access, OpenAI is effectively encouraging casual power users and indie builders to transition their projects into production-ready tools. For developers, this effectively subsidizes early-stage prototyping and small-scale deployments, making the Pro subscription an incredibly high-value asset for those aiming to integrate advanced AI capabilities into their own software ecosystems without immediate infrastructure overhead."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-10-29T09:17:44.828Z"
-  },
-  {
     "id": "art-1793265397534-31yzo",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -47802,33 +47828,6 @@
       "開発"
     ],
     "created_at": "2026-10-29T07:46:40.974Z"
-  },
-  {
-    "id": "art-1793259744463-h7g6g",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/aiplus/article/2610/29/2000002719/",
-    "published_at": "2026-10-29T07:16:51.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2610/29/2000002719/10010896/2048",
-    "title_ja": "GitHub年次レポート「Octoverse 2026」公開：AIコーディングの普及でTypeScriptが首位を維持しつつ、Pythonの利用率が急上昇",
-    "summary_ja": "GitHubが公開した年次レポート「GitHub Octoverse 2026」によると、AI駆動型コーディングの急激な普及により、TypeScriptが依然として開発者に最も利用される言語の首位を維持している。 一方で、AIモデル構築や自動化スクリプトでの需要拡大を背景にPythonの利用率が急上昇を見せた。 コード生成支援ツールとの親和性が言語選定に直結しており、AIネイティブな開発環境へ適応できる言語がシェアを伸ばす傾向が鮮明になっている。",
-    "translations": {
-      "ja": {
-        "title": "GitHub年次レポート「Octoverse 2026」公開：AIコーディングの普及でTypeScriptが首位を維持しつつ、Pythonの利用率が急上昇",
-        "summary": "GitHubが公開した年次レポート「GitHub Octoverse 2026」によると、AI駆動型コーディングの急激な普及により、TypeScriptが依然として開発者に最も利用される言語の首位を維持している。 一方で、AIモデル構築や自動化スクリプトでの需要拡大を背景にPythonの利用率が急上昇を見せた。 コード生成支援ツールとの親和性が言語選定に直結しており、AIネイティブな開発環境へ適応できる言語がシェアを伸ばす傾向が鮮明になっている。"
-      },
-      "en": {
-        "title": "GitHub Octoverse 2026 report reveals TypeScript dominates while AI coding shifts Python usage to record growth",
-        "summary": "GitHub's annual Octoverse 2026 report confirms that TypeScript remains the most popular programming language among developers, largely cemented by its role in AI-driven development workflows. However, the data reveals a massive surge in Python adoption, driven primarily by the explosion of AI model building, data processing, and automated scripting needs. This shift underscores a critical reality: modern language popularity is now inextricably linked to the ecosystem’s compatibility with code generation assistants and LLM tooling. For builders, the key takeaway is that the barrier for language adoption is no longer just syntax or runtime speed, but how effectively a language integrates into AI-native environments. Prioritizing languages with strong AI tooling support is now a vital strategic decision."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-29T07:42:24.463Z"
   },
   {
     "id": "art-1793259115428-0g0p3",
