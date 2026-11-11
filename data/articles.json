@@ -1,5 +1,113 @@
 [
   {
+    "id": "art-1794410340281-urorv",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+    "published_at": "2026-11-11T15:11:59.000Z",
+    "og_image_url": null,
+    "title_ja": "AnthropicがIPOロードショーで公開：Claudeの学習・推論をAWS・Google・NVIDIA・AMDの4種チップで運用する「マルチチップ戦略」",
+    "summary_ja": "Anthropicが公開したIPOロードショー動画から、Claudeの学習と推論をAWS Trainium、Google TPU、NVIDIA、AMDという主要4種すべてのチップで行う「マルチチップ戦略」の全貌が明らかになった。 創業初期に単一ハードウェアへの依存を避け、異なるインフラでもモデルを動かせる移植性を確保したことで、供給制約の影響を最小化している。",
+    "translations": {
+      "ja": {
+        "title": "AnthropicがIPOロードショーで公開：Claudeの学習・推論をAWS・Google・NVIDIA・AMDの4種チップで運用する「マルチチップ戦略」",
+        "summary": "Anthropicが公開したIPOロードショー動画から、Claudeの学習と推論をAWS Trainium、Google TPU、NVIDIA、AMDという主要4種すべてのチップで行う「マルチチップ戦略」の全貌が明らかになった。 創業初期に単一ハードウェアへの依存を避け、異なるインフラでもモデルを動かせる移植性を確保したことで、供給制約の影響を最小化している。"
+      },
+      "en": {
+        "title": "Anthropic IPO roadshow reveals multi-chip strategy: training and serving Claude across AWS, Google, NVIDIA, and AMD hardware",
+        "summary": "Anthropic's newly released IPO roadshow video details their unconventional decision to train and serve the Claude model family across all four major compute platforms: AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs. By prioritizing a multi-chip strategy early on, Anthropic avoided hardware lock-in, enabling them to maintain operational continuity even when specific silicon supply chains become constrained. For AI infrastructure builders, this demonstrates that investing in high-level abstraction layers—rather than optimizing exclusively for the current market-leading hardware—is a critical strategic hedge. The ability to pivot compute workloads across heterogeneous environments is now a prerequisite for scaling LLM operations without hitting sudden availability bottlenecks that would otherwise halt training or inference capacity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-11T15:19:00.281Z"
+  },
+  {
+    "id": "art-1794410331681-n0bjl",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+    "published_at": "2026-11-11T15:10:23.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/28/ML-21045-featured-image.png",
+    "title_ja": "AWS、SageMakerの双方向ストリーミング推論における従量課金モデルを導入——Deepgramが先行してリアルタイム音声変換サービスで提供開始",
+    "summary_ja": "AWSは、Amazon SageMakerの双方向ストリーミング推論において、新たな従量課金計測のサポートを開始した。 これにより、AIモデル提供者はライブストリーミング中の消費量に基づいた正確な課金が可能となる。 最初の事例としてDeepgramが、リアルタイムの音声テキスト変換およびテキスト音声変換サービスでこの仕組みを採用した。",
+    "translations": {
+      "ja": {
+        "title": "AWS、SageMakerの双方向ストリーミング推論における従量課金モデルを導入——Deepgramが先行してリアルタイム音声変換サービスで提供開始",
+        "summary": "AWSは、Amazon SageMakerの双方向ストリーミング推論において、新たな従量課金計測のサポートを開始した。 これにより、AIモデル提供者はライブストリーミング中の消費量に基づいた正確な課金が可能となる。 最初の事例としてDeepgramが、リアルタイムの音声テキスト変換およびテキスト音声変換サービスでこの仕組みを採用した。"
+      },
+      "en": {
+        "title": "AWS adds usage-based pricing for Amazon SageMaker bidirectional streaming inference with Deepgram as first launch partner",
+        "summary": "AWS has officially introduced usage-based metering for Amazon SageMaker bidirectional streaming inference, enabling model providers to bill customers precisely based on actual consumption during live stream sessions. Deepgram has signed on as the launch partner, utilizing this new billing capability for its real-time speech-to-text and text-to-speech services available via the AWS Marketplace. For builders developing AI-powered SaaS solutions that rely on continuous bidirectional streams, this update provides a vital mechanism to align infrastructure expenses with revenue generation. This shift allows developers to move away from rigid pricing models toward flexible, consumption-driven structures that more accurately reflect the resource demands of high-throughput, latency-sensitive AI applications, ultimately improving cost transparency for both providers and end-users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-11T15:18:51.681Z"
+  },
+  {
+    "id": "art-1794410225019-tm7j4",
+    "source_id": "source-openrouter",
+    "source_name": "OpenRouter Announcements",
+    "url": "https://openrouter.ai/blog/announcements/extractions-api/",
+    "published_at": "2026-11-10T00:00:00.000Z",
+    "og_image_url": "https://openrouter.ai/blog/images/extractions-api.png",
+    "title_ja": "OpenRouter、非構造化データ抽出API「Extractions API」を公開。ドキュメントや画像から数値・日付・リストを型付きで取得可能に",
+    "summary_ja": "OpenRouterは、ドキュメントや画像から構造化データを抽出する「Extractions API」を発表した。 ユーザーが定義したフィールドに基づき、数値や日付、リストなどの情報を自信度スコアとともに取得できる。 ローンチ時は3つのモデルに対応し、従来のテキスト解析だけでなく画像解析も可能だ。",
+    "translations": {
+      "ja": {
+        "title": "OpenRouter、非構造化データ抽出API「Extractions API」を公開。ドキュメントや画像から数値・日付・リストを型付きで取得可能に",
+        "summary": "OpenRouterは、ドキュメントや画像から構造化データを抽出する「Extractions API」を発表した。 ユーザーが定義したフィールドに基づき、数値や日付、リストなどの情報を自信度スコアとともに取得できる。 ローンチ時は3つのモデルに対応し、従来のテキスト解析だけでなく画像解析も可能だ。"
+      },
+      "en": {
+        "title": "OpenRouter Launches Extractions API to Pull Structured Fields from Documents and Images with Confidence Scores",
+        "summary": "OpenRouter has officially introduced its new Extractions API, a powerful tool designed to pull structured, typed data from unstructured documents and images. By defining specific schema fields, developers can retrieve precise values, character spans, and confidence scores directly from their inputs. The service launches supporting three distinct models capable of extracting everything from dates and lists to complex forecasts and estimates. For developers currently struggling with brittle regex or manual parsing of unstructured inputs, this API effectively offloads the extraction logic to AI. By treating data parsing as a standardized API call rather than custom code, teams can significantly streamline their data ingestion pipelines and reduce maintenance overhead when processing mixed-media source files."
+      }
+    },
+    "tool_tags": [
+      "OpenRouter"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-11T15:17:05.019Z"
+  },
+  {
+    "id": "art-1794410206416-gp8qk",
+    "source_id": "source-publickey",
+    "source_name": "Publickey",
+    "url": "https://www.publickey1.jp/blog/26/playwrightbun.html",
+    "published_at": "2026-11-11T15:07:35.000Z",
+    "og_image_url": "https://www.publickey1.jp/2026/playwrightv1650-supports-bun.png",
+    "title_ja": "テスト自動化フレームワーク「Playwright」がBunを正式サポート。Node.js環境に依存しない高速テスト実行環境の構築が可能に",
+    "summary_ja": "Webアプリケーションテストフレームワークの「Playwright」は、最新のv1.65.0でJavaScriptランタイム「Bun」によるテストランナーの実行を正式サポートしました。 これまでNode.jsに依存していたテスト実行プロセスがBun上で直接完結できるようになったことで、依存関係の解決やテスト実行速度の向上が期待されます。 特にビルド時間を短縮したいCI/CD環境において、Node.jsベースの複雑なツールチェーンを簡素化する有力な選択肢となるでしょう。",
+    "translations": {
+      "ja": {
+        "title": "テスト自動化フレームワーク「Playwright」がBunを正式サポート。Node.js環境に依存しない高速テスト実行環境の構築が可能に",
+        "summary": "Webアプリケーションテストフレームワークの「Playwright」は、最新のv1.65.0でJavaScriptランタイム「Bun」によるテストランナーの実行を正式サポートしました。 これまでNode.jsに依存していたテスト実行プロセスがBun上で直接完結できるようになったことで、依存関係の解決やテスト実行速度の向上が期待されます。 特にビルド時間を短縮したいCI/CD環境において、Node.jsベースの複雑なツールチェーンを簡素化する有力な選択肢となるでしょう。"
+      },
+      "en": {
+        "title": "Playwright adds official support for Bun, enabling faster JavaScript-based test runner execution outside of Node.js environments",
+        "summary": "The Playwright test automation framework has officially introduced support for the Bun JavaScript runtime in version 1.65.0, allowing users to execute test runners natively on the Bun platform. This update removes the previous strict dependency on Node.js for the test runner process, significantly streamlining development environments and potentially accelerating execution times for large test suites. By transitioning execution to Bun, developers can simplify their dependency chains and reduce the overhead inherent in Node.js-based toolsets. For builders working on high-performance CI/CD pipelines, this integration offers a cleaner and faster path to reliable testing, making it a critical architectural upgrade for teams looking to optimize their build times and infrastructure complexity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-11T15:16:46.416Z"
+  },
+  {
     "id": "art-1794409340254-6tw28",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -21779,32 +21887,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-08T12:20:44.604Z"
-  },
-  {
-    "id": "art-1794139336113-9w116",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/dev_pjs/articles/d76c2125a58406",
-    "published_at": "2026-11-08T00:06:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--WILzxjLu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E5%25AE%259A%25E6%259C%259F%25E5%25AE%259F%25E8%25A1%258C%25E3%2581%25AF%25E3%2580%258C%25E5%25A4%2589%25E5%258C%2596%25E3%2581%258C%25E3%2581%2582%25E3%2581%25A3%25E3%2581%259F%25E6%2597%25A5%25E3%2581%25A0%25E3%2581%2591%25E5%25A0%25B1%25E5%2591%258A%25E3%2580%258D%25E3%2581%258C%25E6%25AD%25A3%25E8%25A7%25A3%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Dev_PJS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVlMSXI4N292NnJvRkZnaTBkZDhqcWNVaUlsVjl4YnBtc3lIckdDckNZMzFaVFNRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェントの定期実行、毎日報告せず「変化があった日だけ」に絞る実装が継続率を劇的に変える",
-    "summary_ja": "個人開発のルーチンワークをMetaのMuse等のAIエージェントに自動化させる際、無条件の定期報告は避けるべきだ。 毎日報告が届くと情報のノイズ化が進み、ユーザーが通知を無視し始めるためだ。 「変化があった時のみ通知する」という制約を一つ加えるだけで、通知そのものが重要なシグナルへと昇華される。 自動化の設計において、実行の安定性以上に「受け手側の情報の鮮度と重要度」を保つことが、運用を長期的に成功させる鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの定期実行、毎日報告せず「変化があった日だけ」に絞る実装が継続率を劇的に変える",
-        "summary": "個人開発のルーチンワークをMetaのMuse等のAIエージェントに自動化させる際、無条件の定期報告は避けるべきだ。 毎日報告が届くと情報のノイズ化が進み、ユーザーが通知を無視し始めるためだ。 「変化があった時のみ通知する」という制約を一つ加えるだけで、通知そのものが重要なシグナルへと昇華される。 自動化の設計において、実行の安定性以上に「受け手側の情報の鮮度と重要度」を保つことが、運用を長期的に成功させる鍵となる。"
-      },
-      "en": {
-        "title": "Optimizing AI agent workflows: Why 'Report only on change' boosts engagement for automated morning routines",
-        "summary": "When automating daily routines using AI agents like Meta’s Muse, standard practice should avoid unconditional reporting. Sending updates every single day, even when nothing changes, creates information fatigue, leading users to tune out notifications entirely within days. By restricting the agent to only report when a meaningful change occurs, you turn the arrival of a notification into a high-value signal itself. For builders, the core takeaway is that the durability of an automated process depends less on execution reliability and more on the recipient's information hygiene. Protecting the user from redundant noise by filtering out 'zero-change' days is the most effective way to ensure automated intelligence remains useful, readable, and relevant over the long term."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-08T12:02:16.113Z"
   },
   {
     "id": "art-1794138452152-9zbkv",
@@ -45231,32 +45313,6 @@
     "created_at": "2026-10-30T07:16:40.913Z"
   },
   {
-    "id": "art-1793344580986-s7n3m",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/aiplus/article/2610/30/2000002757/",
-    "published_at": "2026-10-30T06:31:36.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2610/30/2000002757/10011018/2048",
-    "title_ja": "Geminiがチャット画面内での直接編集に対応、PDFやスライド生成後に即修正可能に（個人プランおよびGoogle Workspace向け）",
-    "summary_ja": "GoogleのAI「Gemini」がアップデートされ、チャット画面上でPDFやスライドの直接プレビューおよび編集が可能になった。 従来のテキストベースの対話から、作成物の修正まで一貫して完結できるワークフローへ進化している。 生成されたドキュメントのレイアウトを微調整し、そのまま書き出しまで行える点は、業務効率化やプロトタイピングのスピードを劇的に加速させるだろう。",
-    "translations": {
-      "ja": {
-        "title": "Geminiがチャット画面内での直接編集に対応、PDFやスライド生成後に即修正可能に（個人プランおよびGoogle Workspace向け）",
-        "summary": "GoogleのAI「Gemini」がアップデートされ、チャット画面上でPDFやスライドの直接プレビューおよび編集が可能になった。 従来のテキストベースの対話から、作成物の修正まで一貫して完結できるワークフローへ進化している。 生成されたドキュメントのレイアウトを微調整し、そのまま書き出しまで行える点は、業務効率化やプロトタイピングのスピードを劇的に加速させるだろう。"
-      },
-      "en": {
-        "title": "Gemini gains in-chat editing for PDFs and Slides, enabling immediate content refinement for personal and Workspace users",
-        "summary": "Google's Gemini has received a significant interface upgrade, enabling users to directly preview and modify generated PDFs and slide decks within the chat window. By moving beyond simple text-based responses to an interactive editing environment, users can now fine-tune layouts, adjust content, and finalize documents without switching between external tools or manual re-generation cycles. This seamless workflow is a massive productivity booster, allowing creators to iterate on complex artifacts instantly within their existing AI workspace. For builders developing similar integrated experiences, this shift highlights the importance of keeping users in the flow by surfacing interactive controls for AI-generated artifacts rather than forcing context switches to secondary document editors."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-10-30T07:16:20.986Z"
-  },
-  {
     "id": "art-1793343730862-qh2ey",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -48801,33 +48857,6 @@
     "created_at": "2026-10-28T12:17:06.267Z"
   },
   {
-    "id": "art-1793186221144-i9e5p",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/standout-cv-create-a-winning-cv-in-minutes-with-our-simple-cv-builder",
-    "published_at": "2026-10-27T23:56:58+00:00",
-    "og_image_url": null,
-    "title_ja": "初心者でも数分で採用担当者の目に留まる履歴書を作成可能に──生成AI×テンプレート活用の「Standout CV」開発ストーリー",
-    "summary_ja": "「Standout CV」は、誰でも数分で専門的な履歴書を作成できるWebベースのビルドツールだ。 複雑な書式設定やデザイン調整に悩むことなく、ユーザーは入力項目を埋めるだけで、採用担当者の目を引く構成のドキュメントを生成できる。 開発者は個人開発において、ユーザーの最大のペインポイントである「作成の面倒さ」を解決することこそが、有料化への近道であると説く。",
-    "translations": {
-      "ja": {
-        "title": "初心者でも数分で採用担当者の目に留まる履歴書を作成可能に──生成AI×テンプレート活用の「Standout CV」開発ストーリー",
-        "summary": "「Standout CV」は、誰でも数分で専門的な履歴書を作成できるWebベースのビルドツールだ。 複雑な書式設定やデザイン調整に悩むことなく、ユーザーは入力項目を埋めるだけで、採用担当者の目を引く構成のドキュメントを生成できる。 開発者は個人開発において、ユーザーの最大のペインポイントである「作成の面倒さ」を解決することこそが、有料化への近道であると説く。"
-      },
-      "en": {
-        "title": "How Standout CV simplified the hiring process by turning complex resume formatting into a fast, template-driven experience",
-        "summary": "Standout CV is a web-based builder designed to help users create professional, recruiter-ready resumes in minutes, effectively removing the technical friction of document styling and layout design. By focusing on an intuitive input-driven interface rather than complex word-processor controls, the tool allows anyone to produce high-quality documents without prior design knowledge. The developer highlights that for solo projects, identifying the specific friction point of a task—in this case, the time-consuming nature of resume writing—is the most effective path to monetization. The core lesson for builders is prioritizing extreme efficiency for a single, well-defined user pain point over building a feature-rich, bloated platform, ensuring the product delivers immediate, tangible value from the very first session."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-28T11:17:01.144Z"
-  },
-  {
     "id": "art-1793185307451-22g21",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -48989,33 +49018,6 @@
       "研究"
     ],
     "created_at": "2026-10-28T07:49:20.400Z"
-  },
-  {
-    "id": "art-1793173693314-7i65n",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/ai/d4wpl5hx",
-    "published_at": "2026-10-27T23:43:07.000Z",
-    "og_image_url": null,
-    "title_ja": "AI計算リソースの資金調達が厳格化、NVIDIA「Blackwell」GPUクラスターは供給ほぼ完売の過熱状況が浮き彫りに",
-    "summary_ja": "AIインフラへの投資熱に陰りが見え始め、計算リソース確保のための資金調達が厳格化している。 一方で、NVIDIAの最新鋭GPU「Blackwell」を利用するデータセンターのクラスター能力は、すでに需要が供給を大幅に上回り、供給枠がほぼ完売する逼迫状態が続いている。 大規模言語モデルの開発において、資本調達能力とGPU確保能力の乖離が拡大しており、資金難によるプロジェクトの選別が加速しそうだ。",
-    "translations": {
-      "ja": {
-        "title": "AI計算リソースの資金調達が厳格化、NVIDIA「Blackwell」GPUクラスターは供給ほぼ完売の過熱状況が浮き彫りに",
-        "summary": "AIインフラへの投資熱に陰りが見え始め、計算リソース確保のための資金調達が厳格化している。 一方で、NVIDIAの最新鋭GPU「Blackwell」を利用するデータセンターのクラスター能力は、すでに需要が供給を大幅に上回り、供給枠がほぼ完売する逼迫状態が続いている。 大規模言語モデルの開発において、資本調達能力とGPU確保能力の乖離が拡大しており、資金難によるプロジェクトの選別が加速しそうだ。"
-      },
-      "en": {
-        "title": "AI compute financing tightens as demand for NVIDIA Blackwell GPU clusters hits supply capacity limits",
-        "summary": "Investment in AI infrastructure is facing a cooling period as financing for high-end compute resources becomes increasingly rigorous and difficult to secure. Paradoxically, the physical supply chain remains critically constrained; nearly all capacity for NVIDIA’s high-performance Blackwell GPU clusters is already spoken for by major tech players. This creates a widening gap between capital availability and hardware accessibility, where deep-pocketed firms lock down essential infrastructure while smaller projects struggle to fund their compute needs. For builders in the AI space, this shift signals that the era of easy, credit-fueled compute scaling is ending. Success will increasingly depend on securing long-term infrastructure partnerships rather than relying on spot-market GPU availability or speculative capital rounds."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-10-28T07:48:13.314Z"
   },
   {
     "id": "art-1793173672018-oz4ev",
