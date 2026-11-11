@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794404854617-ky3rk",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/kuu_dqx/books/ai-writes-human-types",
+    "published_at": "2026-11-11T01:12:53.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--0F0BslrM--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci9lOWVmM2I1YjEyLnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
+    "title_ja": "Claude Codeで本番環境を安全に運用する技術――AIが書いた手順を人が承認・実行し、事故を防ぐための境界線とワークフロー",
+    "summary_ja": "Claude Codeを用いた本番環境運用の実体験をベースに、AIに任せる操作と人間が最終実行を行う操作の境界線を解説。 筆者は15日間で229行のコマンドを人が実行し、安全性を担保するために「自動判定」「権限管理」「秘密情報の遮断」という4つの壁を活用した。 単なる自動化ではなく、AIが生成したコマンドの正誤を人間がどう確認し、失敗時のリカバリをどう設計するかという、AI時代特有の運用リスク管理手法を網羅する。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeで本番環境を安全に運用する技術――AIが書いた手順を人が承認・実行し、事故を防ぐための境界線とワークフロー",
+        "summary": "Claude Codeを用いた本番環境運用の実体験をベースに、AIに任せる操作と人間が最終実行を行う操作の境界線を解説。 筆者は15日間で229行のコマンドを人が実行し、安全性を担保するために「自動判定」「権限管理」「秘密情報の遮断」という4つの壁を活用した。 単なる自動化ではなく、AIが生成したコマンドの正誤を人間がどう確認し、失敗時のリカバリをどう設計するかという、AI時代特有の運用リスク管理手法を網羅する。"
+      },
+      "en": {
+        "title": "Establishing safety boundaries for Claude Code in production: A guide to human-in-the-loop workflows for AI-driven server management",
+        "summary": "This guide details a practical approach to using Claude Code for production server maintenance by establishing strict boundaries between AI-generated suggestions and human execution. Drawing from real-world usage where the author manually reviewed over 200 commands in 15 days, the framework categorizes operations into three tiers: AI-only, AI-assisted human execution, and purely manual tasks. Key strategies involve enforcing safety through four control layers: automated mode restrictions, internal rule sets, hardware permission limits, and local environment isolation. By defining exactly how to vet AI commands, handle failures locally, and shield secrets from AI access, the author demonstrates how to effectively delegate complex maintenance to agents without compromising the integrity of critical production infrastructure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-11T13:47:34.617Z"
+  },
+  {
+    "id": "art-1794404840317-4cbex",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/rigspark",
+    "published_at": "2026-11-11T01:26:24.000Z",
+    "og_image_url": null,
+    "title_ja": "ローカルLLMの動作可否を判定するツール「RigSpark」公開、所有PCで動くモデルを即座に特定",
+    "summary_ja": "RigSparkは、所有するPCのスペックに合わせて、ローカル環境で快適に動作するAIモデルを自動で判別するツールだ。 モデルのパラメータサイズや量子化情報をスキャンし、ハードウェア構成と照らし合わせることで、メモリ不足や動作遅延を未然に防ぐことができる。 ローカルLLMを導入したいが、どのモデルが自分のマシンで実用的に動くか分からないという開発者にとって、環境構築の試行錯誤を大幅に短縮する実用的なソリューションとなる。",
+    "translations": {
+      "ja": {
+        "title": "ローカルLLMの動作可否を判定するツール「RigSpark」公開、所有PCで動くモデルを即座に特定",
+        "summary": "RigSparkは、所有するPCのスペックに合わせて、ローカル環境で快適に動作するAIモデルを自動で判別するツールだ。 モデルのパラメータサイズや量子化情報をスキャンし、ハードウェア構成と照らし合わせることで、メモリ不足や動作遅延を未然に防ぐことができる。 ローカルLLMを導入したいが、どのモデルが自分のマシンで実用的に動くか分からないという開発者にとって、環境構築の試行錯誤を大幅に短縮する実用的なソリューションとなる。"
+      },
+      "en": {
+        "title": "RigSpark launches to help developers instantly identify which local AI models run efficiently on their specific hardware",
+        "summary": "RigSpark is a new utility designed to solve the common frustration of local AI inference: not knowing which models will actually perform well on your machine. By scanning your local hardware specifications against model requirements—including parameter counts and quantization levels—it helps you filter out LLMs that would cause memory bottlenecks or unacceptable latency before you even download them. This removes the tedious trial-and-error process typically required when experimenting with local AI setups. For developers aiming to integrate local models into their workflows, RigSpark acts as a critical compatibility layer, ensuring you only spend time deploying models that are optimized for your existing compute environment rather than relying on guesswork."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-11T13:47:20.317Z"
+  },
+  {
+    "id": "art-1794404834123-rnf7z",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.youtube.com/watch?v=2GsuvsEg28o",
+    "published_at": "2026-11-11T13:17:26.000Z",
+    "og_image_url": null,
+    "title_ja": "フィールズ賞数学者ベン・グリーンとジェームズ・メイナードが語るAIの衝撃——数学的発見のプロセスはどう変容し、AIは「証明」をどこまで代替できるのか？",
+    "summary_ja": "フィールズ賞受賞者のベン・グリーンとジェームズ・メイナードが、AI時代の数学的発見のあり方を徹底議論。 数学的な「証明」の本質とAIによるパターン認識の違いを紐解き、AIが論理的推論をどこまで代替可能かを検証する。 開発者がAIモデルを実装する際、単なる確率論的なテキスト生成ではなく、形式手法や検証ツールと組み合わせることで、初めて信頼性の高いシステム構築が可能になるという教訓を提示する。",
+    "translations": {
+      "ja": {
+        "title": "フィールズ賞数学者ベン・グリーンとジェームズ・メイナードが語るAIの衝撃——数学的発見のプロセスはどう変容し、AIは「証明」をどこまで代替できるのか？",
+        "summary": "フィールズ賞受賞者のベン・グリーンとジェームズ・メイナードが、AI時代の数学的発見のあり方を徹底議論。 数学的な「証明」の本質とAIによるパターン認識の違いを紐解き、AIが論理的推論をどこまで代替可能かを検証する。 開発者がAIモデルを実装する際、単なる確率論的なテキスト生成ではなく、形式手法や検証ツールと組み合わせることで、初めて信頼性の高いシステム構築が可能になるという教訓を提示する。"
+      },
+      "en": {
+        "title": "Fields Medalists Ben Green and James Maynard Debate the Future of Mathematical Discovery and AI Reasoning in Modern Systems",
+        "summary": "Fields Medal winners Ben Green and James Maynard analyze how AI is fundamentally reshaping mathematical discovery and the pursuit of formal proof. The conversation unpacks the tension between AI’s probabilistic pattern matching and the rigorous, deductive nature of traditional mathematics, questioning whether current models can ever truly replace human-level reasoning. For builders, the core takeaway is that LLMs remain unreliable engines of logic that struggle with veracity; therefore, relying on them for critical backend operations is dangerous without integrating external formal verification systems or deterministic guardrails. To successfully ship AI-integrated tools, developers must design workflows that use neural networks for heuristic guidance while anchoring high-stakes decision-making in verified code or symbolic logic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-11T13:47:14.123Z"
+  },
+  {
+    "id": "art-1794404801717-y69ja",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/the_shinobi/n/n71710e565a42",
+    "published_at": "2026-11-11T13:12:20.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/334984188/rectangle_large_type_2_97d2898f229b501537d53bbe0774e0b3.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発者の新たな挑戦：ついに自作ゲームをリリース！開発の舞台裏とローンチまでの道のりについて振り返る",
+    "summary_ja": "ついに個人開発者として初めての自作ゲームを公開した。 開発プロセスでは多くの試行錯誤があったが、製品を世に出すことでクリエイターとしての新たな一歩を踏み出した。 インディーゲーム開発は、企画から実装、リリースまで一人でこなす必要があるため、完了させること自体が最大の難関となる。 個人開発者にとって、小さなプロダクトでもリリースを完遂する経験は、次なるプロジェクトへの大きな自信と成長の糧になるはずだ。",
+    "translations": {
+      "ja": {
+        "title": "個人開発者の新たな挑戦：ついに自作ゲームをリリース！開発の舞台裏とローンチまでの道のりについて振り返る",
+        "summary": "ついに個人開発者として初めての自作ゲームを公開した。 開発プロセスでは多くの試行錯誤があったが、製品を世に出すことでクリエイターとしての新たな一歩を踏み出した。 インディーゲーム開発は、企画から実装、リリースまで一人でこなす必要があるため、完了させること自体が最大の難関となる。 個人開発者にとって、小さなプロダクトでもリリースを完遂する経験は、次なるプロジェクトへの大きな自信と成長の糧になるはずだ。"
+      },
+      "en": {
+        "title": "Indie dev achieves milestone by launching first self-made game, reflecting on the challenges of bringing solo projects to production",
+        "summary": "An indie developer has successfully launched their very first self-made game, marking a significant milestone in their journey as a creator. Bringing a solo game from an initial concept through to full implementation and final release remains one of the most formidable challenges for any independent developer, requiring persistence across the entire lifecycle. This release highlights the practical reality that finishing a product—even a modest one—is an essential rite of passage for building technical and creative confidence. For solo builders, the act of shipping is not just about the game itself, but about establishing a workflow and mental resilience that creates a vital foundation for tackling much larger and more complex projects in the future."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-11T13:46:41.717Z"
+  },
+  {
     "id": "art-1794403986003-nou2i",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -18202,32 +18306,6 @@
     "created_at": "2026-11-09T09:54:07.084Z"
   },
   {
-    "id": "art-1794217639280-ca591",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.youtube.com/watch?v=5r-NeMRsfdw",
-    "published_at": "2026-11-09T09:23:28.000Z",
-    "og_image_url": null,
-    "title_ja": "かつてのFlashゲームをレトロなDOS環境へ移植する挑戦──AIを使わないモダン環境からの低レベルプログラミングの記録",
-    "summary_ja": "ブラウザベースで栄華を誇ったFlashゲームを、現代からあえてDOS環境へと移植する技術的探求が公開された。 AIによるコード生成には頼らず、当時の制限されたハードウェアスペックやメモリ管理、アセンブリ言語での最適化プロセスを紐解きながら、現代のコードをレトロなプラットフォームで動作させるための手作業の苦闘を記録している。 限られたリソースでいかに表現を維持するかの試行錯誤は、現代の肥大化しがちな開発環境において、低レイヤーの仕組みを再理解するための貴重な教材となる。",
-    "translations": {
-      "ja": {
-        "title": "かつてのFlashゲームをレトロなDOS環境へ移植する挑戦──AIを使わないモダン環境からの低レベルプログラミングの記録",
-        "summary": "ブラウザベースで栄華を誇ったFlashゲームを、現代からあえてDOS環境へと移植する技術的探求が公開された。 AIによるコード生成には頼らず、当時の制限されたハードウェアスペックやメモリ管理、アセンブリ言語での最適化プロセスを紐解きながら、現代のコードをレトロなプラットフォームで動作させるための手作業の苦闘を記録している。 限られたリソースでいかに表現を維持するかの試行錯誤は、現代の肥大化しがちな開発環境において、低レイヤーの仕組みを再理解するための貴重な教材となる。"
-      },
-      "en": {
-        "title": "Developer documents porting a classic Flash game to a retro DOS environment without using AI assistance",
-        "summary": "This technical deep dive explores the rigorous process of porting a web-based Flash game to a retro DOS environment, deliberately avoiding modern AI coding assistants. The project highlights the stark reality of working with legacy hardware constraints, manual memory management, and assembly-level optimizations required to make contemporary code function on early x86 architectures. By documenting every manual hurdle faced while stripping away layers of modern abstraction, the author provides a masterclass in low-level systems programming. For modern engineers accustomed to cloud-native stacks, this is a stark reminder of the fundamental engineering constraints that once governed all software development, offering a unique perspective on performance, resource allocation, and the raw mechanics of cross-platform porting in resource-constrained environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-09T09:47:19.280Z"
-  },
-  {
     "id": "art-1794217600346-4cplj",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -22733,33 +22811,6 @@
     "created_at": "2026-11-07T16:46:42.249Z"
   },
   {
-    "id": "art-1794069102809-sk566",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/arpino/articles/2d5d6783dd3c23",
-    "published_at": "2026-11-07T08:34:38.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--U3bodDLk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E7%259B%25B8%25E6%25A3%2592%25E3%2581%25A8%25E6%2596%25B0%25E3%2581%2597%25E3%2581%2584%25E3%2580%258C%25E3%2581%2582%25E3%2581%25A8%25E3%2581%25A7%25E8%25AA%25AD%25E3%2582%2580%25E3%2580%258D%25E4%25BD%2593%25E9%25A8%2593%25E3%2582%2592%25E3%2580%258CLinto%25E3%2580%258D%25E3%2581%25AE%25E9%2596%258B%25E7%2599%25BA%25EF%25BD%259E%25E5%2585%25AC%25E9%2596%258B%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Arpino%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3hnWU0tMVRPeWx6dFYwdzh3QWVvb3JHWGlFTGFEMWhEYVdlR0ZGdDduZ3JsUkJ3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発アプリ「Linto」の全貌：React NativeとFirebase、そしてAI相棒を駆使して「あとで読む」課題を解決するまでの軌跡",
-    "summary_ja": "「Linto」は、共有メニューからリンクを保存しタグ整理と同期を可能にする直感的な「あとで読む」アプリだ。 React Native、Expo、Firebaseを基盤に、Claude Codeを開発パートナーとして活用することで、個人開発のスピードと質を最大化させてリリースに漕ぎ着けた。 本書では、課題解決型のアプリ開発を検討している個人開発者向けに、技術選定の経緯やAIコーディングツールを活用した実装プロセス、そしてリリースまでの具体的な知見を詳説する。",
-    "translations": {
-      "ja": {
-        "title": "個人開発アプリ「Linto」の全貌：React NativeとFirebase、そしてAI相棒を駆使して「あとで読む」課題を解決するまでの軌跡",
-        "summary": "「Linto」は、共有メニューからリンクを保存しタグ整理と同期を可能にする直感的な「あとで読む」アプリだ。 React Native、Expo、Firebaseを基盤に、Claude Codeを開発パートナーとして活用することで、個人開発のスピードと質を最大化させてリリースに漕ぎ着けた。 本書では、課題解決型のアプリ開発を検討している個人開発者向けに、技術選定の経緯やAIコーディングツールを活用した実装プロセス、そしてリリースまでの具体的な知見を詳説する。"
-      },
-      "en": {
-        "title": "Building 'Linto': A React Native and Firebase project that solves 'read-later' habits with an AI coding partner",
-        "summary": "Linto is an intuitive 'read-later' application built for seamless link management, featuring cross-platform syncing and tag-based organization. The project leverages a modern tech stack of React Native, Expo, and Firebase, but distinguishes itself by heavily incorporating AI coding agents like Claude Code throughout the development lifecycle. This post documents the full journey from the initial problem statement to the final Google Play store deployment, offering actionable insights for solo developers. It details why specific architectural choices were made and provides a blueprint for using AI tools not just for drafting code, but for managing the complexities of a complete, production-ready mobile application release while maintaining high velocity as a single engineer."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-07T16:31:42.809Z"
-  },
-  {
     "id": "art-1794068191153-yigf2",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -22786,33 +22837,6 @@
       "開発"
     ],
     "created_at": "2026-11-07T16:16:31.153Z"
-  },
-  {
-    "id": "art-1794067303609-x49w2",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/saihu/articles/951271fa23e4ea",
-    "published_at": "2026-11-07T14:53:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--bcYYUwDn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E3%2581%258A%25E9%2587%2591%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%25E5%2589%258D%25E3%2581%25AB%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2581%25A7%25E8%2581%259E%25E3%2581%2584%25E3%2581%25A6%25E3%2581%258F%25E3%2582%258C%25E3%2582%258B%25E3%2580%258CAI%25E3%2581%25AE%25E8%25B2%25A1%25E5%25B8%2583%25E7%2595%25AA%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2593%25E3%2581%2591%25E3%2581%2597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2YxZmQzN2U0ZjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIの無断課金を防ぐスマホ連携型「AIの財布番」開発、エージェントの支払い権限を制御する承認ワークフローの実装",
-    "summary_ja": "AIが自動で課金や契約を行う時代を見据え、エージェントの決済をユーザーが管理できるツール「AIの財布番」が公開された。 このシステムは、AIが支払いを行う前に「財布番」へ許可を求める仕組みで、少額なら自動承認、高額または予算超過時はスマホ通知による承認・却下が可能になる。 将来的なAIエージェントの自律化に伴うコストリスクを回避するため、開発者はAPI呼び出しの前に「承認のゲートウェイ」を挟む設計の重要性を提起している。",
-    "translations": {
-      "ja": {
-        "title": "AIの無断課金を防ぐスマホ連携型「AIの財布番」開発、エージェントの支払い権限を制御する承認ワークフローの実装",
-        "summary": "AIが自動で課金や契約を行う時代を見据え、エージェントの決済をユーザーが管理できるツール「AIの財布番」が公開された。 このシステムは、AIが支払いを行う前に「財布番」へ許可を求める仕組みで、少額なら自動承認、高額または予算超過時はスマホ通知による承認・却下が可能になる。 将来的なAIエージェントの自律化に伴うコストリスクを回避するため、開発者はAPI呼び出しの前に「承認のゲートウェイ」を挟む設計の重要性を提起している。"
-      },
-      "en": {
-        "title": "Developer builds 'AI Wallet Guardian' to prevent unauthorized agent spending through mobile approval workflows",
-        "summary": "As autonomous AI agents begin making purchases and managing subscriptions on behalf of users, the risk of unmonitored financial drain is rising. To address this, a developer created 'AI Wallet Guardian,' a gatekeeper system that forces AI agents to request authorization before executing payments. The tool automatically approves micro-transactions while triggering mobile notifications for higher amounts or daily budget breaches, allowing users to accept or reject requests in real-time. This project highlights a critical architectural pattern for developers shipping agent-based applications: placing an explicit approval layer between the agent and the API or payment gateway. By formalizing this 'human-in-the-loop' check, builders can preemptively mitigate the risks associated with unbridled autonomous spending as AI tools become more integrated into daily financial tasks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-07T16:01:43.609Z"
   },
   {
     "id": "art-1794058337424-53qit",
@@ -32621,31 +32645,6 @@
       "研究"
     ],
     "created_at": "2026-11-03T19:02:42.849Z"
-  },
-  {
-    "id": "art-1793731763988-k9cs4",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/hookdeck",
-    "published_at": "2026-10-29T14:22:17.000Z",
-    "og_image_url": null,
-    "title_ja": "HookdeckがAIエージェント開発者向け無料ツール「Inspect」を公開、Webhookのイベント確認をブラウザで即座に完結",
-    "summary_ja": "Hookdeckが提供を開始した「Inspect」は、AIエージェントや外部API連携におけるWebhookイベントを、コードを書かずにリアルタイムで追跡・検証できる無料のWebデバッガーだ。 受信したリクエストを詳細なペイロード単位で確認・再送できるため、複雑な非同期処理やコールバックエラーの特定が大幅に効率化される。 開発者はローカル環境を汚さずにエッジでのイベントフローを可視化でき、プロダクションに近い状態でAPI連携のトラブルシューティングを迅速化できるのが利点だ。",
-    "translations": {
-      "ja": {
-        "title": "HookdeckがAIエージェント開発者向け無料ツール「Inspect」を公開、Webhookのイベント確認をブラウザで即座に完結",
-        "summary": "Hookdeckが提供を開始した「Inspect」は、AIエージェントや外部API連携におけるWebhookイベントを、コードを書かずにリアルタイムで追跡・検証できる無料のWebデバッガーだ。 受信したリクエストを詳細なペイロード単位で確認・再送できるため、複雑な非同期処理やコールバックエラーの特定が大幅に効率化される。 開発者はローカル環境を汚さずにエッジでのイベントフローを可視化でき、プロダクションに近い状態でAPI連携のトラブルシューティングを迅速化できるのが利点だ。"
-      },
-      "en": {
-        "title": "Hookdeck releases Inspect, a free browser-based debugging tool for testing webhook event flows in AI agents",
-        "summary": "Hookdeck has introduced Inspect, a dedicated, free-to-use web-based debugger specifically designed to help developers capture, verify, and replay webhook events for AI agents and distributed applications without writing custom code. This tool solves the recurring headache of asynchronous event debugging by allowing builders to inspect incoming request payloads in real-time and trigger retries instantly from the browser console. By decoupling the debugging layer from local environments, Hookdeck enables developers to visualize complex event flows and pinpoint integration failures before they impact end users. For those building agentic workflows that rely heavily on third-party API callbacks, this provides an essential feedback loop that drastically reduces the time spent diagnosing failed request handlers or misformatted JSON structures in live production pipelines."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-03T18:49:23.988Z"
   },
   {
     "id": "art-1793731748832-ms43k",
