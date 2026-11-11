@@ -1,5 +1,29 @@
 [
   {
+    "url": "https://github.com/tokio-rs/topcoat",
+    "source_id": "source-github-trending",
+    "title": "tokio-rs/topcoat",
+    "pubDate": null,
+    "snippet": "A batteries-included framework for building web apps The full full-stack framework for Rust Topcoat is a modular, batteries-included Rust framework for building full-stack apps. It prioritizes simplicity and productivity. See Learn Topcoat to get started, or the Roadmap for what's coming next. Early-stage and experimental. Expect breaking changes. use topcoat::{ Result, context::Cx, router::{module_router, page}, view::{View, component, view}, }; #[tokio::main] async fn main() { topcoat::start(module_router!().build()).await.unwrap(); } #[page] async fn home(cx: &amp;Cx) -> Result { Ok(view! { hello(name: \"World\") }) } #[component] async fn hello(cx: &amp;Cx, name: &amp;str) -> Result { Ok(view! { \"Hello, \" (name) \"!\" }) } What makes Topcoat different Client reactivity without the boilerplate Topcoat renders all markup on the server: components can be async and query the database directl",
+    "saved_at": "2026-11-11T07:49:32.830Z"
+  },
+  {
+    "url": "https://github.com/we-promise/sure",
+    "source_id": "source-github-trending",
+    "title": "we-promise/sure",
+    "pubDate": null,
+    "snippet": "The personal finance app for everyone (by everyone) https://sure.am Deutsch | Español | Français | 日本語 | 한국어 | Português | Русский | 中文 Sure: The personal finance app for everyone Get involved: Discord • Website • Issues Important This repository is a community fork of the now-abandoned Maybe Finance project. Learn more in their final release doc. Backstory The Maybe Finance (archived/abandoned repo) team spent most of 2021–2022 building a full-featured personal finance and wealth management app. It even included an “Ask an Advisor” feature that connected users with a real CFP/CFA — all included with your subscription. The business end of things didn't work out, and so they stopped developing the app in mid-2023. After spending nearly $1 million on development (employees, contractors, data providers, infra, etc.), the team open-sourced the app. Their goal was to let users self-host it fo",
+    "saved_at": "2026-11-11T07:48:01.028Z"
+  },
+  {
+    "url": "https://github.com/addyosmani/agent-skills",
+    "source_id": "source-github-trending",
+    "title": "addyosmani/agent-skills",
+    "pubDate": null,
+    "snippet": "Production-grade engineering skills for AI coding agents. https://skills.addy.ie Agent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development. DEFINE PLAN BUILD VERIFY REVIEW SHIP ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ │ Idea │ ───▶ │ Spec │ ───▶ │ Code │ ───▶ │ Test │ ───▶ │ QA │ ───▶ │ Go │ │Refine│ │ PRD │ │ Impl │ │Debug │ │ Gate │ │ Live │ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ /spec /plan /build /test /review /ship Commands 9 slash commands that map to the development lifecycle. Each one activates the right skills automatically. What you're doing Command Key principle Define what to build /spec Spec before code Plan how to build it /plan",
+    "saved_at": "2026-11-11T07:47:20.081Z"
+  },
+  {
     "url": "https://qiita.com/ohisama@github/items/062995030ee8deb17783",
     "source_id": "source-qiita",
     "title": "自作MCPサーバー その9",
@@ -294,29 +318,5 @@
     "pubDate": "2026-11-10T04:28:47.000Z",
     "snippet": "短いカバーや切り出しで歌詞テキストが必要になる場面は多いです。ただし「テキストを得る」は一つではなく、まだない言葉を書く経路とすでに歌われている言葉を復元する経路に分かれます。このメモでは、両者を同じチェックリストに押し込めず、比較して使い分ける手順を残します。 起点のワー...",
     "saved_at": "2026-11-10T04:31:54.236Z"
-  },
-  {
-    "url": "https://note.com/ryg_o/n/n43678aad8f2a",
-    "source_id": "source-note-ai",
-    "title": "子どもの「はじめての言葉」、いつ言ったか覚えていますか? 家族で記録できるアプリ「ぼきゃろぐ」を作りました",
-    "pubDate": "2026-11-09T13:29:53.000Z",
-    "snippet": "はじめに 「ちーずはまき」 1歳半の娘が急に言い始めた言葉です。 ちーず？はまき？ そんな組み合わせある？ ってか、葉巻しってるの？ 指を差すほうを見ると、そこには自動販売機が。 ちーずはまき。じどうはんばいき。 え、本当にこれのことなの！？ 続きをみる",
-    "saved_at": "2026-11-09T14:18:46.193Z"
-  },
-  {
-    "url": "https://note.com/vivid_lupine4435/n/ne24b49377578",
-    "source_id": "source-note-ai",
-    "title": "動詞を使わずに、歌は書けるか ― 教科書の順番どおりに言葉が増えるアルバム『KOTODAMA』",
-    "pubDate": "2026-11-09T13:29:56.000Z",
-    "snippet": "「です」しか使えない状態で、歌を1曲書けるでしょうか。 日本語を勉強している人のためのアルバム『KOTODAMA（言霊）』は、そんな決まりで作っています。日本語学校でよく使われる教科書『みんなの日本語』の順番に合わせて、その曲に対応する課までの言葉で歌詞を書く、という決まりです。 続きをみる",
-    "saved_at": "2026-11-09T14:18:46.193Z"
-  },
-  {
-    "url": "https://note.com/kurokawa_claude/n/na8720ba649c0",
-    "source_id": "source-note-ai",
-    "title": "Claude Codeのテストを途中で止める｜結果を残す検査台帳",
-    "pubDate": "2026-11-09T13:32:10.000Z",
-    "snippet": "Claude Codeのテストを途中で止めても、検査ID、実行コマンド、終了状態、Gitの基準点を残せば、新しい会話で「再実行する1件」と「次の1件」を判定できます。 完成状態は、8件を3件目で止め、T-003を再実行してからT-004へ進めることです。 続きをみる",
-    "saved_at": "2026-11-09T14:18:46.193Z"
   }
 ]
