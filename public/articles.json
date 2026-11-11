@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794356230913-ornx2",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/coderlim/articles/650f1b108ddec3",
+    "published_at": "2026-11-10T14:59:46.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--g5EzAOUr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E7%2594%25BB%25E5%2583%258F%25E7%25B7%25A8%25E9%259B%2586%25E3%2581%25A7%25E3%2580%258C%25E7%2594%259F%25E6%2588%2590%25E3%2581%25AF%25E6%2588%2590%25E5%258A%259F%25E3%2581%2597%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AB%25E7%25B5%2590%25E6%259E%259C%25E3%2581%258C%25E6%25AE%258B%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D%25E5%2595%258F%25E9%25A1%258C%25E3%2581%25AB%25E5%2590%2591%25E3%2581%258D%25E5%2590%2588%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:CoderLim%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2VVWnZkN3MyTE9kem9IZ0dNcXVJXzZMSS1kZFh0Mkdnc1A1a244ajdwTlZibWlCYz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発AI画像編集アプリで発生した「生成成功後データ未保存」問題、Webhookとタスク管理の見直しで解決した知見",
+    "summary_ja": "AI画像編集アプリの個人開発において、Replicateやfal.aiを利用した非同期処理で「生成は成功したのにアプリ側で結果が保存されない」という致命的な問題が発生した。 原因はブラウザからのポーリング依存と処理の堅牢性不足であり、Webhookによる非同期通知の実装とクレジット処理の整合性確保によって再発を防いだ。 開発者は非同期処理における冪等性の重要性を理解し、タスク管理の設計を刷新する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "個人開発AI画像編集アプリで発生した「生成成功後データ未保存」問題、Webhookとタスク管理の見直しで解決した知見",
+        "summary": "AI画像編集アプリの個人開発において、Replicateやfal.aiを利用した非同期処理で「生成は成功したのにアプリ側で結果が保存されない」という致命的な問題が発生した。 原因はブラウザからのポーリング依存と処理の堅牢性不足であり、Webhookによる非同期通知の実装とクレジット処理の整合性確保によって再発を防いだ。 開発者は非同期処理における冪等性の重要性を理解し、タスク管理の設計を刷新する必要がある。"
+      },
+      "en": {
+        "title": "Solving 'Generation Succeeded but Lost' bugs in solo AI image apps: fixing Webhooks and async task management",
+        "summary": "While building a solo AI image editing app using Replicate and fal.ai, the developer encountered a critical failure where jobs succeeded on the AI side, but results were never saved to the application. This issue stemmed from an over-reliance on frontend polling and brittle job orchestration. By migrating to a robust Webhook-based notification system and strengthening the credit deduction workflow to ensure atomicity, the developer successfully bridged the gap between async AI inference and persistent app storage. For solo builders, this highlights that you cannot rely on client-side state for backend reliability; implementing reliable event callbacks and idempotent task management is mandatory to prevent data loss when handling unpredictable async AI API latencies."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-11T00:17:10.913Z"
+  },
+  {
+    "id": "art-1794356223406-9b0pc",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.npr.org/2026/11/10/nx-s1-6030962/testing-the-new-generation-of-ai-enabled-fire-extinguishing-drones",
+    "published_at": "2026-11-10T23:26:24.000Z",
+    "og_image_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2268+0+378/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F50%2F80%2F01baaa0a4c94873b6dc5ebe9eedc%2Fseneca-drone.jpg",
+    "title_ja": "AIで山火事を検知し正確に消火する新型ドローン、実用化へ向けたフィールドテストが進行中（自律航行とコンピュータビジョンの統合）",
+    "summary_ja": "最新の消火ドローンは、コンピュータビジョンを用いて火源をリアルタイムで特定し、自律的に最適な飛行経路を生成して消火剤を正確に投下する。 従来の有人消防活動と比較し、煙や地形の影響を受けにくい夜間や急斜面での活動において圧倒的な機動力を発揮する。 開発者にとって重要なのは、エッジAIによる環境認識精度と、極限状態における自律航行システムの堅牢性をいかに両立させるかであり、この技術は災害対策におけるドローン活用の転換点となる。",
+    "translations": {
+      "ja": {
+        "title": "AIで山火事を検知し正確に消火する新型ドローン、実用化へ向けたフィールドテストが進行中（自律航行とコンピュータビジョンの統合）",
+        "summary": "最新の消火ドローンは、コンピュータビジョンを用いて火源をリアルタイムで特定し、自律的に最適な飛行経路を生成して消火剤を正確に投下する。 従来の有人消防活動と比較し、煙や地形の影響を受けにくい夜間や急斜面での活動において圧倒的な機動力を発揮する。 開発者にとって重要なのは、エッジAIによる環境認識精度と、極限状態における自律航行システムの堅牢性をいかに両立させるかであり、この技術は災害対策におけるドローン活用の転換点となる。"
+      },
+      "en": {
+        "title": "New generation of AI-powered firefighting drones enters field testing to detect and suppress wildfires autonomously",
+        "summary": "A new wave of AI-enabled firefighting drones is entering field trials, leveraging advanced computer vision to identify fire sources in real-time and autonomously calculate precise flight paths for suppressant deployment. By minimizing the risks faced by human firefighters, these systems excel in navigating steep terrain and adverse conditions like heavy smoke or nighttime operations where visibility is otherwise compromised. For developers building in robotics and edge AI, the core challenge remains optimizing environmental perception models and robust autonomous pathing under extreme thermal interference. This technology signals a critical shift in disaster response, moving from manual intervention to intelligent, sensor-driven automation that significantly reduces reaction time for containing volatile wildfire outbreaks before they escalate."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-11T00:17:03.406Z"
+  },
+  {
+    "id": "art-1794356211774-gkc9k",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://monoist.itmedia.co.jp/mn/articles/2611/10/news083.html",
+    "published_at": "2026-11-10T23:30:00.000Z",
+    "og_image_url": "https://image.itmedia.co.jp/mn/articles/2611/10/cover_news083.jpg",
+    "title_ja": "スタディスト、動画や文書を「雑に」入れてAIが構造化する新製品「Teachme Knowledge」発表。暗黙知の形式知化を自動化",
+    "summary_ja": "スタディストは、現場の動画やドキュメントを事前の整理なしでアップロードするだけで、AIが自動的に内容を要約・構造化しナレッジ化する新製品「Teachme Knowledge」を公開した。 マニュアルの作成や更新をAIに任せることで、ベテラン社員が抱える暗黙知を効率的に形式知へ変換できる。 開発現場においても、ドキュメント管理の工数を削減し、情報の属人化を防ぐための有用なナレッジベース構築手法となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "スタディスト、動画や文書を「雑に」入れてAIが構造化する新製品「Teachme Knowledge」発表。暗黙知の形式知化を自動化",
+        "summary": "スタディストは、現場の動画やドキュメントを事前の整理なしでアップロードするだけで、AIが自動的に内容を要約・構造化しナレッジ化する新製品「Teachme Knowledge」を公開した。 マニュアルの作成や更新をAIに任せることで、ベテラン社員が抱える暗黙知を効率的に形式知へ変換できる。 開発現場においても、ドキュメント管理の工数を削減し、情報の属人化を防ぐための有用なナレッジベース構築手法となるだろう。"
+      },
+      "en": {
+        "title": "Studist unveils Teachme Knowledge, an AI platform that structures raw video and document uploads into searchable manuals automatically",
+        "summary": "Studist has introduced Teachme Knowledge, a new product designed to capture institutional expertise by allowing teams to upload raw videos and unorganized documents without pre-sorting. The platform utilizes AI to summarize, structure, and categorize this disparate data into usable manuals, effectively converting tacit expert knowledge into formal, actionable assets. By automating the traditionally labor-intensive process of manual maintenance, this tool helps organizations solve the bottleneck of information hoarding and domain expertise silos. For engineering and operations teams, the takeaway is clear: focusing on AI-driven ingestion rather than manual documentation workflows is the most scalable way to keep team knowledge bases accurate and up-to-date without imposing heavy operational overhead on subject matter experts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-11T00:16:51.774Z"
+  },
+  {
+    "id": "art-1794356204311-1j1v0",
+    "source_id": "source-copyai",
+    "source_name": "Copy.ai Blog",
+    "url": "https://www.copy.ai/blog/email-marketing-campaigns",
+    "published_at": "2026-11-10T22:41:07.073Z",
+    "og_image_url": "https://cdn.prod.website-files.com/628288c5cd3e8451380a36c7/67d2a497166833a0348823a1_email%20marketing%20campaigns.avif",
+    "title_ja": "Copy.aiが解説するメールマーケティング最適化術、AIを活用した開封率向上と自動化シナリオ構築のベストプラクティスを公開",
+    "summary_ja": "Copy.aiは、マーケティング担当者が抱えるメール作成の工数削減と、パーソナライズによる開封率向上の両立をAIで解決する手法を公開した。 顧客セグメントごとに適したメッセージを自動生成するワークフローを構築し、ABテストを高速化することで、人的コストを抑えつつCVRを最大化する戦略を提唱している。 AIを単なる文章生成ツールではなく、CRMと連携した成長エンジンとして活用することが、今後のメール施策成功の分岐点となる。",
+    "translations": {
+      "ja": {
+        "title": "Copy.aiが解説するメールマーケティング最適化術、AIを活用した開封率向上と自動化シナリオ構築のベストプラクティスを公開",
+        "summary": "Copy.aiは、マーケティング担当者が抱えるメール作成の工数削減と、パーソナライズによる開封率向上の両立をAIで解決する手法を公開した。 顧客セグメントごとに適したメッセージを自動生成するワークフローを構築し、ABテストを高速化することで、人的コストを抑えつつCVRを最大化する戦略を提唱している。 AIを単なる文章生成ツールではなく、CRMと連携した成長エンジンとして活用することが、今後のメール施策成功の分岐点となる。"
+      },
+      "en": {
+        "title": "Copy.ai releases comprehensive guide on scaling high-conversion email marketing sequences using generative AI for personalized customer outreach",
+        "summary": "Copy.ai has unveiled a strategic framework for scaling high-conversion email marketing sequences, focusing on how generative AI can bridge the gap between mass outreach and hyper-personalization. The guide details workflows for dynamically segmenting audiences and crafting automated, tone-matched messages that significantly boost open rates and engagement metrics. By moving beyond simple text generation to integrated CRM automation, marketers can run continuous A/B tests without the traditional manual overhead. The takeaway for builders and growth teams is clear: treat email not as a static blast, but as a dynamic, AI-driven feedback loop. Integrating these automated sequences early into your customer lifecycle is essential for maximizing lifetime value while keeping human effort at a sustainable minimum."
+      }
+    },
+    "tool_tags": [
+      "Copy.ai"
+    ],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-11T00:16:44.311Z"
+  },
+  {
     "id": "art-1794355326010-zlkve",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -17959,32 +18065,6 @@
     "created_at": "2026-11-08T20:32:03.438Z"
   },
   {
-    "id": "art-1794169910208-ybkci",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://alephapc.com/playground",
-    "published_at": "2026-11-08T20:22:26.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェントのAPIツール呼び出し改ざんを防止する「APC Playground」公開。LLMの誤動作を防ぐ安全性検証ツール",
-    "summary_ja": "「APC Playground」は、AIエージェントが実行するAPIツール呼び出しの内容を強制的に制限・検証し、予期せぬ挙動や改ざんを防ぐための検証環境です。 LLMが推論過程でパラメータを勝手に書き換えたり、不正なツール使用を試みたりするリスクに対し、開発者はこのツールを通してセーフティガードレールを実装できます。 エージェント開発において、AIの自律的な判断に依存せず、ツール実行レイヤーで厳密に制御を行う設計が、システム全体のセキュリティ強化には不可欠です。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントのAPIツール呼び出し改ざんを防止する「APC Playground」公開。LLMの誤動作を防ぐ安全性検証ツール",
-        "summary": "「APC Playground」は、AIエージェントが実行するAPIツール呼び出しの内容を強制的に制限・検証し、予期せぬ挙動や改ざんを防ぐための検証環境です。 LLMが推論過程でパラメータを勝手に書き換えたり、不正なツール使用を試みたりするリスクに対し、開発者はこのツールを通してセーフティガードレールを実装できます。 エージェント開発において、AIの自律的な判断に依存せず、ツール実行レイヤーで厳密に制御を行う設計が、システム全体のセキュリティ強化には不可欠です。"
-      },
-      "en": {
-        "title": "APC Playground launches to prevent AI agents from modifying API tool calls during execution in production",
-        "summary": "APC Playground serves as a crucial sandbox environment designed to intercept and restrict API tool calls executed by AI agents, effectively preventing unauthorized modification or hallucinations that often plague LLM integrations. By introducing a dedicated validation layer between the agent and the API, developers can enforce strict input sanitization and prevent the model from injecting malicious parameters or deviating from intended tool usage protocols. This approach shifts security from the prompt layer to the execution layer, which is essential for production-grade agentic systems. For builders, the key takeaway is that relying solely on system prompts is insufficient; implementing architectural guardrails at the tool invocation level is the only reliable way to ensure agent predictability and system integrity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-08T20:31:50.208Z"
-  },
-  {
     "id": "art-1794169901701-1l3oa",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -22745,33 +22825,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-06T20:31:40.631Z"
-  },
-  {
-    "id": "art-1793996226414-9k946",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/hydenori24/articles/cairn-smartscreen-checksum",
-    "published_at": "2026-11-06T14:52:12.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fiqkZk3K--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cairn%25E3%2582%2592%25E5%2588%259D%25E3%2582%2581%25E3%2581%25A6%25E8%25B5%25B7%25E5%258B%2595%25E3%2581%2599%25E3%2582%258B%25E3%2581%25A8%25E8%25AD%25A6%25E5%2591%258A%25E3%2581%258C%25E5%2587%25BA%25E3%2582%258B%25E7%2590%2586%25E7%2594%25B1%25E3%2581%25A8%25E3%2580%2581%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2581%25AE%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B2%25E3%2581%25A7%25E3%2581%25AE%25E3%2582%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0ZGZTMmpxVko2OFozSkxJNWdiRGc1cV9oMld0N0JBdXVvZGRwbGR6aXFNPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "自作Windowsアプリ起動時のSmartScreen警告対策：未署名バイナリの信頼性を担保するSHA256ハッシュ検証の手法",
-    "summary_ja": "個人開発のWindowsアプリ「Cairn」を初起動する際に「WindowsによってPCが保護されました」というSmartScreen警告が出るのは、コード署名がないためだ。 ユーザーの信頼を得るために、配布時にSHA256SUMS.txtでハッシュ値を公開し、ダウンロードしたバイナリの整合性を検証する手順を周知することが重要である。 署名コストをかけられない個人開発者が、ユーザーへ安全性を証明するための必須の運用プラクティスだ。",
-    "translations": {
-      "ja": {
-        "title": "自作Windowsアプリ起動時のSmartScreen警告対策：未署名バイナリの信頼性を担保するSHA256ハッシュ検証の手法",
-        "summary": "個人開発のWindowsアプリ「Cairn」を初起動する際に「WindowsによってPCが保護されました」というSmartScreen警告が出るのは、コード署名がないためだ。 ユーザーの信頼を得るために、配布時にSHA256SUMS.txtでハッシュ値を公開し、ダウンロードしたバイナリの整合性を検証する手順を周知することが重要である。 署名コストをかけられない個人開発者が、ユーザーへ安全性を証明するための必須の運用プラクティスだ。"
-      },
-      "en": {
-        "title": "Why Windows SmartScreen flags your unsigned custom apps and how to verify file integrity via SHA256",
-        "summary": "When users launch an unsigned custom Windows app, they often encounter a generic SmartScreen warning, which can scare off potential users. Since high-cost code signing certificates are frequently prohibitive for indie developers, the solution is providing transparent checksums for validation. By publishing a SHA256SUMS.txt file alongside your releases, you empower users to verify that the downloaded binary is exactly what you built, untouched and untampered. This is a critical trust-building mechanism for indie builders; while it does not bypass the SmartScreen warning, it establishes a verifiable audit trail that proves your distribution package has not been corrupted or modified by third-party vectors, bridging the trust gap between you and your user base effectively."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "セキュリティ",
-      "開発"
-    ],
-    "created_at": "2026-11-06T20:17:06.414Z"
   },
   {
     "id": "art-1793994421551-iudk8",
@@ -49009,32 +49062,6 @@
     "created_at": "2026-10-27T23:02:30.802Z"
   },
   {
-    "id": "art-1793142085783-jle8r",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/ai/crdc4qiw",
-    "published_at": "2026-10-27T22:44:24.000Z",
-    "og_image_url": null,
-    "title_ja": "オンデバイスAIの社会実装を加速する「Neywa Labs」がステルス解除、プライバシーと低遅延を両立する新推論インフラを開発",
-    "summary_ja": "Neywa Labsがステルスを解除し、デバイス上でAI推論を実行する新しいインフラを公開した。 クラウドへのデータ送信なしに高速な応答を実現するアーキテクチャにより、プライバシー保護とリアルタイム性を両立させる。 クラウドコストの削減やオフライン動作が求められるモバイルアプリ開発者にとって、エッジAI運用の新たな選択肢となりそうだ。",
-    "translations": {
-      "ja": {
-        "title": "オンデバイスAIの社会実装を加速する「Neywa Labs」がステルス解除、プライバシーと低遅延を両立する新推論インフラを開発",
-        "summary": "Neywa Labsがステルスを解除し、デバイス上でAI推論を実行する新しいインフラを公開した。 クラウドへのデータ送信なしに高速な応答を実現するアーキテクチャにより、プライバシー保護とリアルタイム性を両立させる。 クラウドコストの削減やオフライン動作が求められるモバイルアプリ開発者にとって、エッジAI運用の新たな選択肢となりそうだ。"
-      },
-      "en": {
-        "title": "Neywa Labs exits stealth with new infrastructure designed to power production-ready on-device AI inference",
-        "summary": "Neywa Labs has officially emerged from stealth, introducing a dedicated infrastructure stack designed to streamline on-device AI execution. By enabling inference directly on end-user hardware, the solution eliminates the need for latency-heavy cloud round-trips and keeps sensitive user data off external servers entirely. This framework addresses the critical bottleneck of efficient model deployment on constrained devices, offering a viable path for mobile developers who need to balance high-performance AI features with strict data privacy requirements. For engineers building production apps, Neywa’s infrastructure provides a robust alternative to server-side processing, potentially slashing cloud inference costs and enabling critical offline capabilities that were previously difficult to maintain at scale for sophisticated generative models."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-27T23:01:25.783Z"
-  },
-  {
     "id": "art-1793141285563-ge7cv",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -49172,33 +49199,6 @@
       "研究"
     ],
     "created_at": "2026-10-27T22:31:22.628Z"
-  },
-  {
-    "id": "art-1793139382551-7vwd3",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/news/article/2610/28/2000002648/",
-    "published_at": "2026-10-27T21:53:37.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/news/article/ogp/2610/28/2000002648/10010640/2048",
-    "title_ja": "Google DeepMind、インタラクティブ世界生成AI「Genie 4」発表。音声・会話もリアルタイム生成し、Geminiと統合",
-    "summary_ja": "Google DeepMindが発表した「Genie 4」は、対話可能な仮想世界をリアルタイムで生成するワールドモデルだ。 物理演算や映像品質の向上に加え、環境音や会話音声の同時生成に対応し、テキスト入力による環境操作も可能にした。 まずは研究プレビューとして公開され、今後「Google AI Ultra」加入者向けに展開される。 開発者にとっては、単なる画像・動画生成を超え、AIが動的な物理法則を備えたシミュレーション基盤へ進化している点に注目が必要だ。",
-    "translations": {
-      "ja": {
-        "title": "Google DeepMind、インタラクティブ世界生成AI「Genie 4」発表。音声・会話もリアルタイム生成し、Geminiと統合",
-        "summary": "Google DeepMindが発表した「Genie 4」は、対話可能な仮想世界をリアルタイムで生成するワールドモデルだ。 物理演算や映像品質の向上に加え、環境音や会話音声の同時生成に対応し、テキスト入力による環境操作も可能にした。 まずは研究プレビューとして公開され、今後「Google AI Ultra」加入者向けに展開される。 開発者にとっては、単なる画像・動画生成を超え、AIが動的な物理法則を備えたシミュレーション基盤へ進化している点に注目が必要だ。"
-      },
-      "en": {
-        "title": "Google DeepMind unveils Genie 4: A real-time world model with physics, interactive audio, and Gemini integration",
-        "summary": "Google DeepMind just announced Genie 4, a powerful world model capable of generating interactive virtual environments in real-time. This iteration significantly boosts video quality and physical simulation accuracy while adding native support for simultaneous ambient sound and conversational voice generation. Users can now manipulate environments directly through natural language, making the virtual world more responsive than previous versions. The tool launches today as a research preview, with a rollout planned for Google AI Ultra subscribers soon. For builders and researchers, Genie 4 marks a critical shift: generative AI is moving beyond static pixel generation into interactive, physics-compliant simulation engines that can be controlled via conversational interfaces, fundamentally changing how we approach synthetic environment creation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-27T22:16:22.551Z"
   },
   {
     "id": "art-1793137621519-f49cy",
