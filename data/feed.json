@@ -1,5 +1,114 @@
 [
   {
+    "id": "art-1794479537135-qgd6z",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/hide_works/n/nd017690d9421",
+    "published_at": "2026-11-12T10:30:25.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/334931044/rectangle_large_type_2_a4d68cf4cb197edc8f3040e73385557a.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "RAG構築前に必読：AI検索精度とコストを左右する埋め込みモデルの選定基準とデータ前処理の4つの落とし穴",
+    "summary_ja": "自前資料をAIに検索させるRAGシステム構築では、埋め込みモデルの選定と前処理が精度とコストを決定づける。 次元数、量子化、テキストの分割手法、そして入力形式の4要素を事前に定義しなければ、データベース容量の圧迫や再インデックスという手戻りが発生する。 Claude等の回答AIと埋め込みモデルは切り離して検討可能であり、Voyage AIなど最適化された外部モデルを柔軟に選択・設計することが重要だ。",
+    "translations": {
+      "ja": {
+        "title": "RAG構築前に必読：AI検索精度とコストを左右する埋め込みモデルの選定基準とデータ前処理の4つの落とし穴",
+        "summary": "自前資料をAIに検索させるRAGシステム構築では、埋め込みモデルの選定と前処理が精度とコストを決定づける。 次元数、量子化、テキストの分割手法、そして入力形式の4要素を事前に定義しなければ、データベース容量の圧迫や再インデックスという手戻りが発生する。 Claude等の回答AIと埋め込みモデルは切り離して検討可能であり、Voyage AIなど最適化された外部モデルを柔軟に選択・設計することが重要だ。"
+      },
+      "en": {
+        "title": "4 Critical Decisions for RAG Systems Before Embedding Your Data: Sizing, Quantization, Chunking, and Input Formatting",
+        "summary": "Building a retrieval-augmented generation system requires careful planning, specifically regarding embedding models, as choosing the wrong parameters often necessitates a complete re-indexing process later. Builders must finalize four key variables early: embedding dimensions, quantization levels, text chunking strategies, and input formatting requirements. It is a common misconception that the embedding provider must match the generation model; in practice, Claude users should evaluate specialized options like Voyage AI to balance performance and storage costs effectively. The practical lesson for developers is to treat the embedding pipeline as a decoupled architectural component rather than an extension of the LLM provider, ensuring your data strategy scales correctly before you ingest large datasets into vector storage."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-12T10:32:17.135Z"
+  },
+  {
+    "id": "art-1794479530154-gh873",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://news.ycombinator.com/item?id=50465329",
+    "published_at": "2026-11-12T10:25:01.000Z",
+    "og_image_url": null,
+    "title_ja": "個人開発者のAI利用コストを可視化・管理するRust製ツール「Costcrew」が登場。API利用額の分析と支出の最適化を支援",
+    "summary_ja": "「Costcrew」は、個人開発者が抱える複雑なAI APIの利用コストを可視化・管理するためにRustで開発された新ツールだ。 どのAIサービスにどれだけ投資し、どのモデルが費用対効果が高いかを分析することで、開発者の支出過多を防ぐ仕組みを提供する。 単なる支出記録にとどまらず、どのAIへ予算を投じるべきかという意思決定をサポートする設計となっている。",
+    "translations": {
+      "ja": {
+        "title": "個人開発者のAI利用コストを可視化・管理するRust製ツール「Costcrew」が登場。API利用額の分析と支出の最適化を支援",
+        "summary": "「Costcrew」は、個人開発者が抱える複雑なAI APIの利用コストを可視化・管理するためにRustで開発された新ツールだ。 どのAIサービスにどれだけ投資し、どのモデルが費用対効果が高いかを分析することで、開発者の支出過多を防ぐ仕組みを提供する。 単なる支出記録にとどまらず、どのAIへ予算を投じるべきかという意思決定をサポートする設計となっている。"
+      },
+      "en": {
+        "title": "Rust-built 'Costcrew' launches to help developers track and optimize daily AI API spending across multiple platforms",
+        "summary": "Costcrew is a new developer-focused tool written in Rust designed to solve the growing problem of tracking fragmented AI spending across various API providers. By aggregating usage data, it answers the critical question of how much an individual is actually spending on AI and, more importantly, which models provide the best value for money. The tool aims to help developers move beyond simple expense logging toward active budget optimization and informed spending decisions. For builders relying heavily on LLMs and AI services, the practical lesson here is that as AI integration deepens, treating cost observability as a core feature of your development workflow is no longer optional; managing your burn rate early is essential to building sustainable AI-powered projects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-12T10:32:10.154Z"
+  },
+  {
+    "id": "art-1794479518654-owvkv",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "published_at": "2026-11-12T09:30:00.000Z",
+    "og_image_url": null,
+    "title_ja": "Holiday ExtrasがOpenAIのCodexを活用し開発を刷新、予約コンバージョン率向上と新たな成長機会を創出",
+    "summary_ja": "旅行予約プラットフォームのHoliday Extrasは、OpenAIのCodexを活用することで、社内の専門知識をコードやアプリケーション機能に迅速変換する開発フローを構築した。 これにより、従来の開発サイクルを大幅に短縮し、ユーザーの予約コンバージョン率の向上と新機能開発の加速を実現している。 単にAIを導入するだけでなく、ドメイン固有の知見を学習・統合させることで、プロダクトの収益性に直結する開発が可能になることを示している。",
+    "translations": {
+      "ja": {
+        "title": "Holiday ExtrasがOpenAIのCodexを活用し開発を刷新、予約コンバージョン率向上と新たな成長機会を創出",
+        "summary": "旅行予約プラットフォームのHoliday Extrasは、OpenAIのCodexを活用することで、社内の専門知識をコードやアプリケーション機能に迅速変換する開発フローを構築した。 これにより、従来の開発サイクルを大幅に短縮し、ユーザーの予約コンバージョン率の向上と新機能開発の加速を実現している。 単にAIを導入するだけでなく、ドメイン固有の知見を学習・統合させることで、プロダクトの収益性に直結する開発が可能になることを示している。"
+      },
+      "en": {
+        "title": "Holiday Extras transforms travel bookings using OpenAI’s Codex to boost conversion rates and unlock new growth potential",
+        "summary": "Travel technology provider Holiday Extras has fundamentally reshaped its development strategy by integrating OpenAI's Codex, effectively bridging the gap between deep customer expertise and functional application features. By leveraging Codex to turn domain-specific knowledge into actionable code, the company has successfully optimized its booking flows and significantly increased conversion rates. This approach demonstrates that the true competitive advantage for established businesses lies not just in basic automation, but in using generative AI to embed institutional expertise directly into the product lifecycle. For builders, the key takeaway is that treating code generation as a conduit for domain mastery—rather than just a tool for writing syntax—is the most effective way to drive measurable business growth and customer value."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-12T10:31:58.654Z"
+  },
+  {
+    "id": "art-1794479506932-34pwc",
+    "source_id": "source-dify",
+    "source_name": "Dify Blog / Releases",
+    "url": "https://dify.ai/blog/dify-recgonized-gartner-magic-quadrant-ai-agent-management-platform",
+    "published_at": "2026-11-05T12:00:00.000Z",
+    "og_image_url": "https://dify.ai/assets/og/default.png",
+    "title_ja": "Difyがガートナーの「AIエージェント管理プラットフォーム」初マジック・クアドラントに選出、LLMアプリ開発の標準化を加速",
+    "summary_ja": "Difyがガートナーの「AIエージェント管理プラットフォーム」に関する初のリサーチでマジック・クアドラントに名を連ねた。 オープンソースのLLMアプリ開発基盤として、RAGやエージェントワークフロー構築の民主化を推進してきた点が評価された形だ。 この選出は、AIアプリ開発環境が実験段階からエンタープライズ対応の標準的なプラットフォームへと転換している兆候であり、今後、開発者はセキュアでスケーラブルな運用のための基盤選択をより重視することになるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Difyがガートナーの「AIエージェント管理プラットフォーム」初マジック・クアドラントに選出、LLMアプリ開発の標準化を加速",
+        "summary": "Difyがガートナーの「AIエージェント管理プラットフォーム」に関する初のリサーチでマジック・クアドラントに名を連ねた。 オープンソースのLLMアプリ開発基盤として、RAGやエージェントワークフロー構築の民主化を推進してきた点が評価された形だ。 この選出は、AIアプリ開発環境が実験段階からエンタープライズ対応の標準的なプラットフォームへと転換している兆候であり、今後、開発者はセキュアでスケーラブルな運用のための基盤選択をより重視することになるだろう。"
+      },
+      "en": {
+        "title": "Dify gains recognition in Gartner’s inaugural Magic Quadrant for AI Agent Management Platforms, signaling rise of standardized LLM orchestration",
+        "summary": "Dify has officially been recognized in Gartner’s first-ever Magic Quadrant for AI Agent Management Platforms, marking a significant milestone for the open-source LLM development ecosystem. By simplifying the complexities of RAG pipelines and agentic workflow orchestration, Dify has effectively democratized AI application development for builders. This industry validation signals that the broader AI landscape is rapidly maturing from disparate, experimental toolkits toward standardized, enterprise-grade development environments. For developers and teams, this transition means that choosing an orchestration layer is no longer just about quick prototyping; it is about selecting a scalable, secure, and future-proof foundation that can handle complex agent logic, long-term maintenance, and production-level stability. As the market consolidates, prioritizing these robust frameworks becomes essential for long-term project viability."
+      }
+    },
+    "tool_tags": [
+      "Dify"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-12T10:31:46.932Z"
+  },
+  {
     "id": "art-1794478634244-vusgh",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -16288,32 +16397,6 @@
     "created_at": "2026-11-10T14:33:48.530Z"
   },
   {
-    "id": "art-1794321150004-2pswq",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dia_gg/n/n8c30d0baccb8",
-    "published_at": "2026-11-10T14:29:09.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/334639158/rectangle_large_type_2_76f7b9856f641082357c60d48eeb5328.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "開発効率を最大化するGeminiとChatGPTの2刀流活用術：個人開発プロジェクト「Physalia」で実感したAIモデル使い分けの現実解",
-    "summary_ja": "個人開発者がChatGPT Plusを導入し、Gemini Proと併用する「2刀流」体制の運用を開始した。 ChatGPTの推論能力とGeminiの広範なコンテキスト処理を適材適所で使い分けることで、開発中のプロジェクト「Physalia」を含む複数の個人ツール構築が加速している。 単一のLLMに固執せず、それぞれの強みを開発パイプラインに組み込むことが、小規模チームや個人開発者が生産性を維持する最も現実的な戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "開発効率を最大化するGeminiとChatGPTの2刀流活用術：個人開発プロジェクト「Physalia」で実感したAIモデル使い分けの現実解",
-        "summary": "個人開発者がChatGPT Plusを導入し、Gemini Proと併用する「2刀流」体制の運用を開始した。 ChatGPTの推論能力とGeminiの広範なコンテキスト処理を適材適所で使い分けることで、開発中のプロジェクト「Physalia」を含む複数の個人ツール構築が加速している。 単一のLLMに固執せず、それぞれの強みを開発パイプラインに組み込むことが、小規模チームや個人開発者が生産性を維持する最も現実的な戦略となる。"
-      },
-      "en": {
-        "title": "Optimizing developer productivity: Why using Gemini and ChatGPT together is the new standard for solo engineering",
-        "summary": "A solo developer recently adopted a dual-model workflow, combining ChatGPT Plus with Gemini Pro to accelerate the development of the \"Physalia\" project and various internal utilities. The experience highlights that while ChatGPT excels at deep reasoning, Gemini offers distinct advantages in context handling, making the \"two-sword\" approach highly effective for iterative coding. Relying on a single LLM often creates bottlenecks during complex build processes; instead, developers should treat different models as interchangeable assets within their stack. For those building personal tools or side projects, the takeaway is clear: stop betting on just one AI vendor and start routing tasks based on model strength to maintain consistent velocity and output quality."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-10T14:32:30.004Z"
-  },
-  {
     "id": "art-1794320255947-dseo6",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -16338,32 +16421,6 @@
       "開発"
     ],
     "created_at": "2026-11-10T14:17:35.947Z"
-  },
-  {
-    "id": "art-1794320248406-w79tw",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/shinsei99/n/nb4fe26ac273d",
-    "published_at": "2026-11-10T14:00:22.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/1e40a7a920f79bcfedd47b90151c59ec70e9dd2c.png",
-    "title_ja": "不動産計算アプリ開発の落とし穴：AIを「第三者のレビュー担当」として活用し、リリース直前に計算ロジックの盲点を修正した話",
-    "summary_ja": "実務的な12種類の計算機能を統合した不動産電卓アプリの開発において、リリース直前にAIを「第三者のレビュアー」として活用し、盲点だった消費税計算の漏れを修正した実体験。 自分一人での開発では見落としがちな仕様のバグや論理的誤りを、AIを擬似的な同僚として扱うことで効果的に発見・補正できることが証明された。 個人開発者にとって、AIはコードを書く補助ツールだけでなく、品質保証（QA）を担う強力な検証パートナーになり得る。",
-    "translations": {
-      "ja": {
-        "title": "不動産計算アプリ開発の落とし穴：AIを「第三者のレビュー担当」として活用し、リリース直前に計算ロジックの盲点を修正した話",
-        "summary": "実務的な12種類の計算機能を統合した不動産電卓アプリの開発において、リリース直前にAIを「第三者のレビュアー」として活用し、盲点だった消費税計算の漏れを修正した実体験。 自分一人での開発では見落としがちな仕様のバグや論理的誤りを、AIを擬似的な同僚として扱うことで効果的に発見・補正できることが証明された。 個人開発者にとって、AIはコードを書く補助ツールだけでなく、品質保証（QA）を担う強力な検証パートナーになり得る。"
-      },
-      "en": {
-        "title": "Building a Real Estate Calculator: Using AI as a Third-Party QA Reviewer to Catch Logic Errors Before Launch",
-        "summary": "While building a comprehensive real estate calculator app featuring 12 practical tools, the developer engaged an AI as a third-party auditor just before the final release. This check revealed a critical logic error: missing consumption tax on certain fees, a bug the developer had completely overlooked. This experience highlights how individual developers can treat LLMs as pseudo-colleagues to perform essential quality assurance checks on logic and requirements. By actively simulating a peer review with AI, developers can catch edge cases and calculation flaws that blind spots usually obscure. For solo builders, the key takeaway is that AI shouldn't just write code; it is a vital verification partner that drastically improves product reliability by simulating external scrutiny before hitting production."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-10T14:17:28.406Z"
   },
   {
     "id": "art-1794320237307-c85z9",
@@ -16686,32 +16743,6 @@
       "開発"
     ],
     "created_at": "2026-11-10T13:02:13.697Z"
-  },
-  {
-    "id": "art-1794315727320-0hdah",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/tsuka00/items/8a4264ee3e45a77953cb",
-    "published_at": "2026-11-10T12:55:42.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjM1NzQ5JTJGZTk3OGM4NDMyMTVjOWY0MDQ1ZDU0YTRkZTczNTIyMDYzNWIyY2E3YiUyRmxhcmdlLnBuZyUzRjE3OTQzMTU2Njg_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTM3MThmYzJhYmQ1MjFlOTZmYzNiMTk4NGM2Mzg1MzVj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db9e9c667757d59055573a4eb4ed6ded6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTYlOTklODIlRTQlQkIlQTMlRTMlODElQTAlRTMlODElOEIlRTMlODIlODklRTMlODElOTMlRTMlODElOUQlRTMlODAlODElRTYlOTklODIlRTklOTYlOTMlRTMlODIlOTIlRTMlODElOEIlRTMlODElOTElRTMlODElOUYlRTMlODElODQlRUYlQkMlODEmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0wYWI0ZjFkMmU4NTY5NTZkYzdhMTRlOTQ3MzcwNGJmOQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB0c3VrYTAwJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZWM0ODBlYTVjNDI3NzA5MmJjMmY3NWE0NzBlZTk5ZGU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4ea9ee6e2c50f4ae5dad55d943f864f7",
-    "title_ja": "AI時代の高速化に抗う重要性：生産性重視の開発トレンドの中で「時間をかけて思索する」ことの価値を再考する",
-    "summary_ja": "スマホやAIサービスの進化で日常のあらゆる動作が高速化する中、あえて時間をかける重要性を見直す動きがある。 即時性が求められるAI時代の開発フローにおいて、深く思考しプロセスに没入する時間は、むしろ品質と創造性を担保する究極の競争優位性になる。 効率化の波に飲み込まれず、あえて立ち止まることで、技術の本質を見極める視点を取り戻すことができる。",
-    "translations": {
-      "ja": {
-        "title": "AI時代の高速化に抗う重要性：生産性重視の開発トレンドの中で「時間をかけて思索する」ことの価値を再考する",
-        "summary": "スマホやAIサービスの進化で日常のあらゆる動作が高速化する中、あえて時間をかける重要性を見直す動きがある。 即時性が求められるAI時代の開発フローにおいて、深く思考しプロセスに没入する時間は、むしろ品質と創造性を担保する究極の競争優位性になる。 効率化の波に飲み込まれず、あえて立ち止まることで、技術の本質を見極める視点を取り戻すことができる。"
-      },
-      "en": {
-        "title": "Why developers should embrace slowing down in the AI age: Reconsidering the value of deliberate thinking",
-        "summary": "As AI and mobile platforms accelerate every facet of daily life and development cycles, there is a compelling counter-argument for intentionally slowing down. In an industry obsessed with immediate output and automated efficiency, taking the time to deep-dive into complex problems and deliberate on processes offers a genuine competitive advantage that speeds cannot replicate. This practice of slowing down is not about resisting progress but rather ensuring quality and long-term creative depth in one's work. By deliberately stepping back from the relentless demand for instant results, builders can regain the clarity needed to distinguish between transient tech trends and foundational architectural wisdom, ensuring their development efforts remain thoughtful and impactful."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-10T13:02:07.320Z"
   },
   {
     "id": "art-1794315719264-ycg4f",
@@ -17087,32 +17118,6 @@
       "研究"
     ],
     "created_at": "2026-11-10T11:33:11.620Z"
-  },
-  {
-    "id": "art-1794310361153-50ih2",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/luchtan-GIT/m4r-data",
-    "published_at": "2026-11-10T11:26:42.000Z",
-    "og_image_url": null,
-    "title_ja": "マルチモーダルLLMの評価に最適化された26曲の「非量子化」アコースティック音源データセット「Music For Robots」が公開",
-    "summary_ja": "GitHubで公開された「Music For Robots」は、マルチモーダルLLMの音楽理解能力を評価するための26曲のアコースティックトラックからなるデータセットだ。 特徴は演奏の揺らぎや独特のタイミングを残した「非量子化」音源である点。 厳密にグリッドへ配置された音楽ではなく、人間の演奏に見られる微細なリズムの不規則性を意図的に保持することで、モデルが楽譜的な正確さだけでなく音楽的なニュアンスや時間的推論をどれだけ正しく推論できるかを厳密にテストできる環境を提供する。",
-    "translations": {
-      "ja": {
-        "title": "マルチモーダルLLMの評価に最適化された26曲の「非量子化」アコースティック音源データセット「Music For Robots」が公開",
-        "summary": "GitHubで公開された「Music For Robots」は、マルチモーダルLLMの音楽理解能力を評価するための26曲のアコースティックトラックからなるデータセットだ。 特徴は演奏の揺らぎや独特のタイミングを残した「非量子化」音源である点。 厳密にグリッドへ配置された音楽ではなく、人間の演奏に見られる微細なリズムの不規則性を意図的に保持することで、モデルが楽譜的な正確さだけでなく音楽的なニュアンスや時間的推論をどれだけ正しく推論できるかを厳密にテストできる環境を提供する。"
-      },
-      "en": {
-        "title": "Music For Robots releases 26 unquantized acoustic tracks for benchmarking multimodal LLM musical intelligence",
-        "summary": "The Music For Robots dataset, now available on GitHub, provides 26 high-quality acoustic tracks specifically designed to stress-test the musical comprehension of multimodal LLMs. Unlike standard datasets that favor grid-aligned, quantized audio, this collection intentionally preserves human performance nuances, including micro-timing irregularities and rhythmic swings. By using unquantized audio, developers can evaluate whether an AI model truly understands complex musical timing or is simply relying on predictable, quantized patterns. For engineers building agentic music analysis systems or training multimodal models, this dataset serves as a rigorous benchmark for assessing whether a model perceives human musicality versus mere mathematical regularity. This shift toward non-quantized evaluation is essential for advancing nuanced audio reasoning in next-generation generative agents."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-10T11:32:41.153Z"
   },
   {
     "id": "art-1794309431723-j5l4s",
