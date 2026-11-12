@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794477740462-ikhoj",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/bague/articles/0559b1600accda",
+    "published_at": "2026-11-12T03:02:39.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1EMbL06l--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Chrome%25E6%258B%25A1%25E5%25BC%25B5%25E3%2581%25A7%25E3%2580%2581AI%25E3%2581%25AB%25E9%2580%2581%25E3%2582%258B%25E7%259B%25B4%25E5%2589%258D%25E3%2581%25AB%25E8%25A8%2598%25E6%2586%25B6%25E3%2582%2592%25E5%25B7%25AE%25E3%2581%2597%25E8%25BE%25BC%25E3%2582%2580%25EF%25BC%259A%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AE%25E6%25A8%25A9%25E9%2599%2590%25E3%2581%25A8%25E3%2580%258C%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%2583%25E3%2582%25AF%25E6%2599%2582%25E3%2581%25AE%25E3%2581%25BF%25E3%2580%258D%25E3%2581%25AE%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2597%25E7%25A9%25B4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:BAGUE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E0MTc0YTYyODAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Chrome拡張でAIに記憶を差し込む仕組みと権限管理の落とし穴—「クリック時のみ」を選択すると発生する深刻な動作制限とは",
+    "summary_ja": "ブラウザ拡張機能で「送信直前にAIへ関連記憶を差し込む」仕組みを実装する際、最も障壁となるのはサイトごとのアクセス権限管理だ。 特にChrome拡張で「クリック時のみ」という最小権限を選択すると、想定以上に広範囲のサイトで機能が遮断されるという落とし穴がある。 開発者は機能実装そのものよりも、ホスト権限の切り分けや manifest.json の設計において、UXを損なわずに安全性と動作範囲を両立させる緻密な設計が求められる。",
+    "translations": {
+      "ja": {
+        "title": "Chrome拡張でAIに記憶を差し込む仕組みと権限管理の落とし穴—「クリック時のみ」を選択すると発生する深刻な動作制限とは",
+        "summary": "ブラウザ拡張機能で「送信直前にAIへ関連記憶を差し込む」仕組みを実装する際、最も障壁となるのはサイトごとのアクセス権限管理だ。 特にChrome拡張で「クリック時のみ」という最小権限を選択すると、想定以上に広範囲のサイトで機能が遮断されるという落とし穴がある。 開発者は機能実装そのものよりも、ホスト権限の切り分けや manifest.json の設計において、UXを損なわずに安全性と動作範囲を両立させる緻密な設計が求められる。"
+      },
+      "en": {
+        "title": "Building Chrome Extensions to Inject AI Context: Why the 'On Click' Permission Model Often Breaks Core Functionality",
+        "summary": "When building Chrome extensions to inject external memory into AI prompts, the core technical challenge shifts from the injection logic to managing host permissions effectively. Developers often run into a significant pitfall: selecting the 'On Click' permission setting can unintentionally restrict access across unexpectedly wide site ranges, breaking the extension's ability to trigger reliably. Navigating host permissions within manifest.json is not just a security formality; it is a critical UX hurdle that defines when your extension actually sees the data it needs to function. For builders, the lesson is clear: balancing granular, 'on-demand' permission requests with the need for persistent access is essential to preventing silent failures that only surface after production deployment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-12T10:02:20.462Z"
+  },
+  {
+    "id": "art-1794477728039-9s3wm",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.deepl.com/en/press-release/aure-voice-ai-model",
+    "published_at": "2026-11-12T09:39:36.000Z",
+    "og_image_url": "https://www.deepl.com/img/favicon/automatic_social_share_deepl.png",
+    "title_ja": "DeepLが音声翻訳モデル「Aure」を発表、人間のような自然な抑揚とリアルタイム性を実現する新技術の全貌",
+    "summary_ja": "DeepLは最新の音声翻訳モデル「Aure」を発表した。 単なる言語変換を超え、話者の感情やトーンを維持したまま、まるで同一言語で話しているかのように聞こえるリアルタイムの音声を生成できる点が画期的だ。 この技術は、微細な音声特徴を保持する高度な信号処理によって実現されており、国際的な会議やリアルタイム通訳サービスにおけるユーザー体験を根本から変える可能性がある。",
+    "translations": {
+      "ja": {
+        "title": "DeepLが音声翻訳モデル「Aure」を発表、人間のような自然な抑揚とリアルタイム性を実現する新技術の全貌",
+        "summary": "DeepLは最新の音声翻訳モデル「Aure」を発表した。 単なる言語変換を超え、話者の感情やトーンを維持したまま、まるで同一言語で話しているかのように聞こえるリアルタイムの音声を生成できる点が画期的だ。 この技術は、微細な音声特徴を保持する高度な信号処理によって実現されており、国際的な会議やリアルタイム通訳サービスにおけるユーザー体験を根本から変える可能性がある。"
+      },
+      "en": {
+        "title": "DeepL unveils Aure: A new lifelike voice translation model designed to preserve speaker tone and emotion in real time",
+        "summary": "DeepL has officially unveiled Aure, a breakthrough voice translation model that promises a new standard for lifelike, real-time multilingual communication. Unlike legacy text-to-speech systems that often sound robotic or detached, Aure is architected to preserve the original speaker's emotional nuance, prosody, and unique vocal characteristics across language barriers. By maintaining tonal consistency during the translation process, the model creates an experience where the translated output feels indistinguishable from the source speaker. For developers and builders, this release highlights a critical shift in AI translation: the industry is moving past simple accuracy toward emotional fidelity and low-latency interaction, suggesting that the next generation of global communication tools will be built on high-fidelity, multimodal speech engines rather than simple text translation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "音声",
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-12T10:02:08.039Z"
+  },
+  {
+    "id": "art-1794477721601-75ndp",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/J-WORKS_HQ/items/26e84206ef3042340deb",
+    "published_at": "2026-11-12T10:00:48.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSXN1MU1aa1RXMUotLXBsa0xuakxQVENNNWYzRTcxTUVBYmhCb2czeEpzUW1seU5yYyUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz04NmU0ZTU0MWNhZWZkYTVjOWU0MzY2NGViNGNlNGRjOQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D7164c545f2769ec7ec9698e9a9690c85?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9R2VtaW5pJUUzJTgxJUFFQ2FyUGxheSVFNSVBRiVCRSVFNSVCRiU5QyVFMyU4MiU5MiVFMyU4MCU4QyVFNCVCRCVCRiVFMyU4MSU4OCVFMyU4MiU4QiVFMyU4MCU4RCVFMyU4MSVBOCVFNiU4MCVBNSVFMyU4MSU4QyVFMyU4MSU5QSVFMyU4MCU4MSVFNiVCQSU5NiVFNSU4MiU5OSVFNiU5RCVBMSVFNCVCQiVCNiVFMyU4MSVBOCVFOCU4NCU5QSVFNiVCMyVBOCVFMyU4MiU5MiVFNyVBMiVCQSVFOCVBQSU4RCVFMyU4MSU5NyVFMyU4MSU5RiVFOCVBOSVCMSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTMzNjMxNzdjMTk0ZjhkMDAwZjA0YmUxOTY2ZWUxMzVk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBKLVdPUktTX0hRJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MTkxMjNhZDVjZWY5MDE0NDNiY2MyY2NlOTFhMTE4NTQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c9266a250a042384b3fefac1061a021c",
+    "title_ja": "GoogleのGemini、Apple CarPlay対応を検証――公式発表に潜む「利用条件」と「細かい制約」を読み解く重要性",
+    "summary_ja": "Googleが発表したGeminiのApple CarPlay対応を実際に試したところ、公式ブログの華やかな機能紹介だけでは見落とされがちな「利用に必要な前提条件」や「脚注レベルの制約」が鍵を握っていた。 最新AI機能の導入を検討する際、発表を鵜呑みにせずドキュメントの隅まで確認する慎重な姿勢こそが、開発効率と手戻りを防ぐための最大の防衛策となる。",
+    "translations": {
+      "ja": {
+        "title": "GoogleのGemini、Apple CarPlay対応を検証――公式発表に潜む「利用条件」と「細かい制約」を読み解く重要性",
+        "summary": "Googleが発表したGeminiのApple CarPlay対応を実際に試したところ、公式ブログの華やかな機能紹介だけでは見落とされがちな「利用に必要な前提条件」や「脚注レベルの制約」が鍵を握っていた。 最新AI機能の導入を検討する際、発表を鵜呑みにせずドキュメントの隅まで確認する慎重な姿勢こそが、開発効率と手戻りを防ぐための最大の防衛策となる。"
+      },
+      "en": {
+        "title": "Validating Gemini for Apple CarPlay: Why diving into the fine print is critical before shipping new features",
+        "summary": "Google recently announced Gemini integration for Apple CarPlay, but a quick test revealed that success depends less on the marketing hype and more on understanding the specific prerequisites hidden in the footnotes. While it is tempting to jump straight into integrating new AI capabilities based on a flashy press release, the real work lies in verifying the edge cases and technical constraints often buried in documentation. This experience serves as a practical reminder for builders: do not rely solely on headline features when planning a integration. Meticulously checking the fine print and configuration requirements before starting development is the most effective way to avoid wasted effort and handle technical debt when rolling out cutting-edge AI features in production."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-12T10:02:01.601Z"
+  },
+  {
+    "id": "art-1794477714975-v6n96",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/hiroroworks/n/nf19f12de52aa",
+    "published_at": "2026-11-12T09:41:35.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331436280/rectangle_large_type_2_d60f8c8295ac790d36262a71e13983df.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発ゲーム「BW」v30アップデート：詳細な世界観設定がゲーム挙動と同期し、没入感を高める動的環境システムを実装",
+    "summary_ja": "個人開発ゲームプロジェクト「BW」のv30アップデートでは、膨大な設定資料の内容が実際のゲームエンジンの挙動へ自動的に反映される仕組みが強化された。 これにより、開発者が手動で調整せずとも、設定に基づいたNPCの振る舞いや環境変化がシームレスに再現されるようになる。 ゲーム開発において、世界観のドキュメントと実装コードを密に結合させることは、一貫性のあるゲーム体験を維持しつつ開発工数を削減するための極めて有効な戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発ゲーム「BW」v30アップデート：詳細な世界観設定がゲーム挙動と同期し、没入感を高める動的環境システムを実装",
+        "summary": "個人開発ゲームプロジェクト「BW」のv30アップデートでは、膨大な設定資料の内容が実際のゲームエンジンの挙動へ自動的に反映される仕組みが強化された。 これにより、開発者が手動で調整せずとも、設定に基づいたNPCの振る舞いや環境変化がシームレスに再現されるようになる。 ゲーム開発において、世界観のドキュメントと実装コードを密に結合させることは、一貫性のあるゲーム体験を維持しつつ開発工数を削減するための極めて有効な戦略となる。"
+      },
+      "en": {
+        "title": "Indie game project 'BW' v30 update: integrating world-building lore directly into game engine mechanics for dynamic immersion",
+        "summary": "The v30 update for the indie game project 'BW' introduces a robust synchronization system that automatically maps extensive world-building documentation directly into game engine mechanics. This architectural shift ensures that environmental changes and NPC behaviors are inherently driven by the established lore, eliminating the need for manual, piecemeal adjustments. For developers, this approach demonstrates that tightly binding design documents to backend logic is a powerful strategy for maintaining narrative consistency while simultaneously reducing overall production overhead. By automating the translation of world-building intent into active code, the project showcases how indie builders can maintain complex, high-fidelity game worlds without scaling their engineering team alongside the depth of their virtual environment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-12T10:01:54.975Z"
+  },
+  {
     "id": "art-1794476821417-vvymw",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -16694,32 +16799,6 @@
     "created_at": "2026-11-10T12:32:17.422Z"
   },
   {
-    "id": "art-1794313925484-b3jmo",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/miyaura/items/0df516c7fc38ce83a339",
-    "published_at": "2026-11-10T12:19:54.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMTUyNTQ4JTJGcHJvZmlsZS1pbWFnZXMlMkYxNjE2MDE4MjQxP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0wYWUzODk4ZTY4YThmYzgzNTY3MGQxNWQwODk1YjBjZg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df714c3dea15b5dda3b192f2cc60462bb?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Vm9pY2UlMjBMaXZlJTIwQVBJJUUzJTgxJUFFJUUzJTgyJUEyJUUzJTgzJTkwJUUzJTgyJUJGJUUzJTgzJUJDJUUzJTgyJTkyJUU0JUJEJUJGJUUzJTgxJTg0JUU1JTg4JTg2JUUzJTgxJTkxJUUzJTgyJThCJTIwLSUyMCVFNiVBOCU5OSVFNiVCQSU5NiVFMyU4MyVCQiVFMyU4MiVBQiVFMyU4MiVCOSVFMyU4MiVCRiVFMyU4MyVBMCVFNSU4NiU5OSVFNyU5QyU5RiVFMyU4MyVCQiVFMyU4MiVBQiVFMyU4MiVCOSVFMyU4MiVCRiVFMyU4MyVBMCVFMyU4MyU5MyVFMyU4MyU4NyVFMyU4MiVBQSVFMyU4MSVBRSVFOCVBOCVBRCVFNSVBRSU5QSVFMyU4MSVBOCVFNSVBRSU5RiVFOCVBMyU4NSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTc0ODc1NDFhZDQ0MzNiNDczMDFjYmNhMjg0Nzc2MDIz&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtaXlhdXJhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZGIxMDI3ZjI3Y2NhZmYwNTZkNTM5MmQzMDNlZWQ2ZTI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=90b896353ebcd992b302a175bcc5688c",
-    "title_ja": "Microsoft Voice Live APIで独自の対話エージェントを構築する：標準アバターからカスタムビデオまで実装設定を徹底解説",
-    "summary_ja": "Microsoft Foundryが提供する「Voice Live API」は、音声認識・応答生成・音声合成を統合し、リアルタイム対話エージェントを構築可能なAPIである。 本稿では、デフォルトの標準アバターだけでなく、独自写真やカスタムビデオを用いてエージェントの視覚的個性を付与する設定フローを詳述する。 単なる音声対話にとどまらず、高品質なビジュアル表現をAPIで制御することで、ユーザーエンゲージメントを最大化する没入感の高いサービス開発が可能となる。",
-    "translations": {
-      "ja": {
-        "title": "Microsoft Voice Live APIで独自の対話エージェントを構築する：標準アバターからカスタムビデオまで実装設定を徹底解説",
-        "summary": "Microsoft Foundryが提供する「Voice Live API」は、音声認識・応答生成・音声合成を統合し、リアルタイム対話エージェントを構築可能なAPIである。 本稿では、デフォルトの標準アバターだけでなく、独自写真やカスタムビデオを用いてエージェントの視覚的個性を付与する設定フローを詳述する。 単なる音声対話にとどまらず、高品質なビジュアル表現をAPIで制御することで、ユーザーエンゲージメントを最大化する没入感の高いサービス開発が可能となる。"
-      },
-      "en": {
-        "title": "Building interactive AI agents with Microsoft Voice Live API: Configuring standard avatars, custom photos, and video personas",
-        "summary": "Microsoft Foundry’s Voice Live API provides a streamlined framework for building real-time conversational agents by unifying speech recognition, response generation, and text-to-speech pipelines. This technical guide breaks down how to move beyond generic standard avatars by implementing custom photo and video persona configurations. By programmatically controlling the agent’s visual output alongside verbal responses, developers can infuse significant personality into their AI interfaces. Moving from simple voice-only interactions to high-fidelity visual representations is essential for creating immersive experiences that drive user engagement. For builders looking to differentiate their AI applications, mastering these API-level avatar controls is a critical step in transforming functional voice agents into cohesive, branded digital personas that users actually want to interact with daily."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-10T12:32:05.484Z"
-  },
-  {
     "id": "art-1794313913321-cul0m",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -17880,32 +17959,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-10T08:46:58.025Z"
-  },
-  {
-    "id": "art-1794299511807-5llcz",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://kotaku.com/return-of-the-living-dead-cast-horrified-by-ai-made-sequel-they-were-originally-set-to-star-in-2000754899",
-    "published_at": "2026-11-10T08:19:43.000Z",
-    "og_image_url": "https://kotaku.com/app/uploads/2026/11/returnofthelivingdead-1200x675.jpg",
-    "title_ja": "『バタリアン』出演陣がAIによる非公式続編制作に激怒、許可なきデジタル再現と著作権の権利侵害問題が再燃",
-    "summary_ja": "映画『バタリアン』の出演陣が、自身の肖像を無断利用したAI生成による続編制作を知り激怒している。 制作陣は当初本人起用を検討していたが、最終的にAIで「デジタル復活」させる手法を選択した。 この騒動はエンタメ業界でのAI活用における法的・倫理的境界線を浮き彫りにした。 クリエイターやエンジニアは、モデル学習や生成技術における権利保護と同意取得が、今後の商用利用において不可欠な前提条件となることを理解すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "『バタリアン』出演陣がAIによる非公式続編制作に激怒、許可なきデジタル再現と著作権の権利侵害問題が再燃",
-        "summary": "映画『バタリアン』の出演陣が、自身の肖像を無断利用したAI生成による続編制作を知り激怒している。 制作陣は当初本人起用を検討していたが、最終的にAIで「デジタル復活」させる手法を選択した。 この騒動はエンタメ業界でのAI活用における法的・倫理的境界線を浮き彫りにした。 クリエイターやエンジニアは、モデル学習や生成技術における権利保護と同意取得が、今後の商用利用において不可欠な前提条件となることを理解すべきだ。"
-      },
-      "en": {
-        "title": "'Return of the Living Dead' cast condemns AI-generated sequel that digitally replicated their likenesses without consent or involvement",
-        "summary": "The original cast of the classic horror film 'Return of the Living Dead' has publicly condemned an upcoming AI-generated sequel that attempts to recreate their performances and likenesses without their consent or direct participation. While producers initially considered hiring the actors, they pivoted to using generative AI to create a digital facsimile, sparking a massive controversy over intellectual property and the ethics of synthetic media. This incident highlights the growing friction between AI-driven production workflows and human talent rights. For builders and developers, this case serves as a critical warning that deploying generative models without robust consent frameworks and explicit intellectual property guardrails creates severe reputational and legal risks that can derail commercial projects entirely."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-10T08:31:51.807Z"
   },
   {
     "id": "art-1794299494929-va540",
@@ -24060,58 +24113,6 @@
       "開発"
     ],
     "created_at": "2026-11-08T20:31:41.701Z"
-  },
-  {
-    "id": "art-1794168995219-ecmwc",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/zivaengine/articles/88d5f4536deb39",
-    "published_at": "2026-11-08T17:38:17.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ltEtgGnC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%2592%25E7%25AB%258B%25E3%2581%25A6%25E3%2581%259A%25E3%2581%25ABGodot%25E3%2581%25AE%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25AB%25E3%2582%25AA%25E3%2583%25B3%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%259E%25E3%2583%25AB%25E3%2583%2581%25E3%2583%2597%25E3%2583%25AC%25E3%2582%25A4%25E3%2582%2592%25E8%25BF%25BD%25E5%258A%25A0%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ziva%2520Engine%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2M0MmY3NWM3MWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Godotゲームでサーバーレスなオンライン対戦を実現：ポート開放不要でSteamリレーを活用する実装技術",
-    "summary_ja": "Godotでのオンライン対戦実装において、ルーターのポート開放や自前サーバーを不要にする手法が注目されている。 インターネット越しでの対戦では、ホスト側のルーターによる接続遮断が課題となるが、全プレイヤーが外向きにリレーサーバーへ接続するP2P形式を採用することで解決可能だ。 特にSteamで配信する場合、「GodotSteam」を活用してValveの無料リレーとロビー機能を使うことで、インフラコストを抑えつつマルチプレイ環境を構築できる。",
-    "translations": {
-      "ja": {
-        "title": "Godotゲームでサーバーレスなオンライン対戦を実現：ポート開放不要でSteamリレーを活用する実装技術",
-        "summary": "Godotでのオンライン対戦実装において、ルーターのポート開放や自前サーバーを不要にする手法が注目されている。 インターネット越しでの対戦では、ホスト側のルーターによる接続遮断が課題となるが、全プレイヤーが外向きにリレーサーバーへ接続するP2P形式を採用することで解決可能だ。 特にSteamで配信する場合、「GodotSteam」を活用してValveの無料リレーとロビー機能を使うことで、インフラコストを抑えつつマルチプレイ環境を構築できる。"
-      },
-      "en": {
-        "title": "Building serverless multiplayer Godot games: How to leverage Steam relays for seamless NAT traversal without port forwarding",
-        "summary": "Implementing online multiplayer in Godot often hits a wall when players cannot open router ports for hosting. Instead of maintaining expensive dedicated servers, developers can achieve seamless NAT traversal by requiring all clients to connect outbound to a relay service. When distributing via Steam, developers can utilize the GodotSteam wrapper to tap into Valve’s free relay infrastructure and lobby system. This architectural pattern allows friends to connect directly without manual network configuration or hosting overhead. For solo developers, this serverless approach significantly lowers infrastructure costs and maintenance burden while delivering a reliable multiplayer experience, effectively turning the client-side engine into a self-contained networking node for globally distributed sessions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-08T20:16:35.219Z"
-  },
-  {
-    "id": "art-1794165406509-kmojw",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/yun_bow/articles/2034717b8a6188",
-    "published_at": "2026-11-08T14:47:20.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KPSuvckx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AC%25AC5%25E5%259B%259E%2520Agentic%2520AI%2520Hackathon%2520with%2520Google%2520Cloud%25E3%2581%25AE%25E4%25B8%2580%25E6%25AC%25A1%25E5%25AF%25A9%25E6%259F%25BB%25E8%2590%25BD%25E9%2581%25B8%25E3%2582%2592%25E6%258C%25AF%25E3%2582%258A%25E8%25BF%2594%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2586%25E3%2582%2593%25E3%2581%25BC%25E3%2581%2586%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NjZTg1NTQxNmQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Google Cloud主催のAgentic AIハッカソン落選を振り返る—デモ動画で「価値」を即座に伝えるために必要なこと",
-    "summary_ja": "Google Cloud主催のハッカソンへ「RuleBranch」を提出するも一次審査で落選。 敗因を分析すると、技術的な実装プロセスではなく「AIがタスクを完了し、成果が出た瞬間」を視聴者に直感させる演出が不足していたことに気づいた。 審査員は複雑なワークフローの裏側より、課題がAIによっていかに解決されたかという明確な結果を求めている。 この反省から、今後は機能解説よりも、ユーザー体験の劇的な改善を動画冒頭で提示する構成が不可欠であると再認識した。",
-    "translations": {
-      "ja": {
-        "title": "Google Cloud主催のAgentic AIハッカソン落選を振り返る—デモ動画で「価値」を即座に伝えるために必要なこと",
-        "summary": "Google Cloud主催のハッカソンへ「RuleBranch」を提出するも一次審査で落選。 敗因を分析すると、技術的な実装プロセスではなく「AIがタスクを完了し、成果が出た瞬間」を視聴者に直感させる演出が不足していたことに気づいた。 審査員は複雑なワークフローの裏側より、課題がAIによっていかに解決されたかという明確な結果を求めている。 この反省から、今後は機能解説よりも、ユーザー体験の劇的な改善を動画冒頭で提示する構成が不可欠であると再認識した。"
-      },
-      "en": {
-        "title": "Reflecting on my Agentic AI Hackathon rejection: Why demo videos need to visualize immediate results, not just code",
-        "summary": "My submission, RuleBranch, was rejected in the first round of the Google Cloud Agentic AI Hackathon. Upon reflection, the failure stemmed from my demo video: it focused too heavily on the technical process of the agent's workflow rather than showing the immediate, intuitive success of the task being completed. Reviewers at hackathons aren't looking for complex back-end architectures; they want to see the AI solve a tangible problem in seconds. I realized that my video failed to provide that satisfying 'Aha! ' moment early on. Going forward, the lesson is clear: for builder demos, prioritize showcasing the dramatic user experience improvement within the first thirty seconds, because showing the solution matters far more than explaining the logic behind the code."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-08T19:16:46.509Z"
   },
   {
     "id": "art-1794160904632-tr3bw",
