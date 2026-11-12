@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794526329926-gxh2o",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/wadome_do/n/ne941bd59d251",
+    "published_at": "2026-11-12T23:29:28.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335453285/rectangle_large_type_2_b89560ed2a7456c0c8e71e85e474ff48.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeを「単独運用」から卒業せよ。役割分担と共有コンテキストで実現する開発チーム化の最適解",
+    "summary_ja": "Claude Codeを用いた開発で、全作業を単一のチャット履歴に詰め込むのは限界が早い。 筆者はタスクごとに役割（コーダー、UIデザイナー、ドキュメント作成）を分断したClaude Codeを立ち上げ、それらを「連絡箱」となる共有ドキュメントで連携させる運用へ転換した。 単一の巨大コンテキストに依存せず、役割ごとにエージェントを分散させる設計は、個人開発においても大規模開発に近い再現性を生むための重要なアプローチだ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを「単独運用」から卒業せよ。役割分担と共有コンテキストで実現する開発チーム化の最適解",
+        "summary": "Claude Codeを用いた開発で、全作業を単一のチャット履歴に詰め込むのは限界が早い。 筆者はタスクごとに役割（コーダー、UIデザイナー、ドキュメント作成）を分断したClaude Codeを立ち上げ、それらを「連絡箱」となる共有ドキュメントで連携させる運用へ転換した。 単一の巨大コンテキストに依存せず、役割ごとにエージェントを分散させる設計は、個人開発においても大規模開発に近い再現性を生むための重要なアプローチだ。"
+      },
+      "en": {
+        "title": "Why you should stop using Claude Code as a solo agent and switch to multi-agent team workflows",
+        "summary": "Developing complex features by stuffing every request into a single Claude Code thread quickly creates context fragmentation and output degradation. The author proposes a structural shift: instead of one omni-agent, spin up distinct Claude Code instances for specific roles like core coding, UI design, and documentation. By creating a shared \"communication box\" for these instances to sync state, you simulate a real engineering team. This decoupled approach prevents context overflow and improves consistency across disparate tasks. For solo builders, this method of isolating responsibilities through separate agents is the most effective way to manage complexity, as it keeps individual threads focused and prevents the common AI-drifting issue where one instruction set interferes with another."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-12T23:32:09.926Z"
+  },
+  {
+    "id": "art-1794526323331-uz5lr",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/joinclass/items/a9175cadfd0820f3c916",
+    "published_at": "2026-11-12T23:30:07.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjA2ODkxJTJGNzhmNWJiNzA1YjdlZjlkYWVjZWRhOGI2ODdlNTU5ZjA5YzI1YmYzZSUyRnhfbGFyZ2UucG5nJTNGMTc3NDUxODE0Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9M2ZhMWQ1NDMyODQzNzkzNTIyNzRiMzk2ZDdmYmJmMTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd9c2258cfe819f9c4489a1d86672b88f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UGxheXdyaWdodCVFMyU4MSVBRSVFMyU4MCU4QyVFMyU4MiVCOSVFMyU4MyU4OCVFMyU4MyVCQyVFMyU4MyVBQSVFMyU4MyVCQyVFOSU4QyVCMiVFNyU5NCVCQiVFMyU4MCU4RCVFMyU4MSVBNyVFMyU4MyVBQyVFMyU4MyU5MyVFMyU4MyVBNSVFMyU4MyVCQyVFMyU4MiU5MiVFMyU4MCU4QyVFNSU4QiU5NSVFNyU5NCVCQiVFMyU4MiU5MiVFOCVBNiU4QiVFMyU4MiU4QiVFMyU4MSVBMCVFMyU4MSU5MSVFMyU4MCU4RCVFMyU4MSVBQiVFMyU4MSU5OSVFMyU4MiU4QiUyMCVFMiU4MCU5NCUyMHJlY29yZFZpZGVvJUUzJTgxJUFFJUU1JUFFJTlGJUU4JUEzJTg1JUUzJTgxJUE4JUU4JTkwJUJEJUUzJTgxJUE4JUUzJTgxJTk3JUU3JUE5JUI0JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NDYyZDg4M2NhNTI3Y2MwOGU0MTYzYWU2Y2U1YTU5NDE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBqb2luY2xhc3MmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz02MTk0ZGNhMTQxZGVmYmVkMzIyZTJlNjgwN2VlNDI0ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a4721c6aba96f2c474c41a695709a9f7",
+    "title_ja": "Playwrightの「ストーリー録画」でコードレビューを効率化 — recordVideo実装と陥りやすい落とし穴",
+    "summary_ja": "AIエージェントによる開発が主流となる中、人間によるUI動作確認がレビュー工程のボトルネックになっている。 合同会社ジョインクラスは、PlaywrightのrecordVideo機能を活用し、E2Eテスト時に全操作を動画として自動記録することで、レビュー時間を大幅に短縮した。 動画化によりローカル環境の立ち上げや手動操作の再現が不要になり、非同期で動作確認を完結できる。 開発者は、テストのたびにブラウザを開く手間から解放され、UI変更の意図を視覚的に素早く把握可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Playwrightの「ストーリー録画」でコードレビューを効率化 — recordVideo実装と陥りやすい落とし穴",
+        "summary": "AIエージェントによる開発が主流となる中、人間によるUI動作確認がレビュー工程のボトルネックになっている。 合同会社ジョインクラスは、PlaywrightのrecordVideo機能を活用し、E2Eテスト時に全操作を動画として自動記録することで、レビュー時間を大幅に短縮した。 動画化によりローカル環境の立ち上げや手動操作の再現が不要になり、非同期で動作確認を完結できる。 開発者は、テストのたびにブラウザを開く手間から解放され、UI変更の意図を視覚的に素早く把握可能だ。"
+      },
+      "en": {
+        "title": "Streamlining code reviews with Playwright recordVideo: Automating UI verification to eliminate manual bottlenecks",
+        "summary": "As AI agents increasingly handle the heavy lifting of coding, manual UI verification has emerged as the primary bottleneck in the review process. JoinClass LLC addresses this by integrating Playwright’s recordVideo feature into their workflow, automatically capturing every UI interaction as video during E2E tests. This approach eliminates the need to spin up local environments or manually reproduce steps, allowing reviewers to confirm functionality asynchronously. By recording the interaction flow, engineers can instantly visualize UI changes and intent without tedious manual browser walkthroughs. For developers relying on AI to churn out features, this implementation transforms code review from a slow, hands-on debugging chore into a seamless, visual verification process that scales with rapid-fire AI deployment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-12T23:32:03.331Z"
+  },
+  {
+    "id": "art-1794526315543-bq3s0",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/currnya/articles/comfyui-moss-image",
+    "published_at": "2026-11-12T18:18:25.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--s2FhW-JG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ComfyUI%2520%25E3%2581%25AE%25E6%2589%258B%25E5%25BC%2595%25E3%2581%258D%25E2%2591%25A1%2520MOSS-Image%2520%25E3%2581%25A71%25E6%259E%259A%25E6%258F%258F%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%2598%259F%25E7%258C%25AB%25E3%2581%258F%25E3%2582%258B%25E3%2582%258B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzFYbkNxblNRMEdsbUhLV0xkZk9mRlFNc2RKbnpJSnphUU5zSEFmZnFpOC1qQmZmaz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ComfyUI×MOSS-Image入門：文章と配置指定から高品質な画像を生成する実践的ワークフロー",
+    "summary_ja": "ComfyUIで「MOSS-Image」を活用し、テキストプロンプトとJSON形式の配置指定に基づいた画像生成を実現する手順を解説する。 MOSS-Imageは、従来の画像生成モデルとは異なり、文章やタグだけでなくオブジェクトの具体的なレイアウト制御が可能なのが特徴だ。 ローカルPC環境で構築することで、クラウドAPIに頼らずに意図した構成通りの画像を生成できる。",
+    "translations": {
+      "ja": {
+        "title": "ComfyUI×MOSS-Image入門：文章と配置指定から高品質な画像を生成する実践的ワークフロー",
+        "summary": "ComfyUIで「MOSS-Image」を活用し、テキストプロンプトとJSON形式の配置指定に基づいた画像生成を実現する手順を解説する。 MOSS-Imageは、従来の画像生成モデルとは異なり、文章やタグだけでなくオブジェクトの具体的なレイアウト制御が可能なのが特徴だ。 ローカルPC環境で構築することで、クラウドAPIに頼らずに意図した構成通りの画像を生成できる。"
+      },
+      "en": {
+        "title": "Getting started with ComfyUI and MOSS-Image for layout-controlled AI image generation using prompt logic",
+        "summary": "This guide details how to leverage the MOSS-Image model within ComfyUI to generate images based on specific text prompts and structured JSON layout configurations. Unlike standard diffusion models that rely heavily on vague visual descriptions, MOSS-Image allows builders to explicitly define object placement alongside descriptive tags, providing significantly higher control over the final composition. By running this pipeline locally, developers avoid the limitations of cloud APIs while enabling precise spatial manipulation directly through their generation workflow. For engineers building local AI environments, mastering this combination is a critical step toward moving beyond basic prompt engineering and into deterministic layout control, creating a scalable blueprint for reliable, highly customized asset generation in local development stacks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "画像生成"
+    ],
+    "created_at": "2026-11-12T23:31:55.543Z"
+  },
+  {
+    "id": "art-1794526307766-0xd39",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/business/customer-stories/gondola",
+    "published_at": "2026-11-12T12:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "クリエイター支援「Gondola」、OpenAIのCodex活用で開発効率を50%向上させ売上を2倍に急成長",
+    "summary_ja": "クリエイターの雇用機会創出を支援するプラットフォーム「Gondola」は、OpenAIのCodexとChatGPTを開発フローに統合し、リードエンジニアの生産性を50%向上させることに成功した。 手作業による反復的なタスクを自動化することで、チームは製品のコア機能の改善にリソースを集中でき、結果として売上を2倍に成長させた。 少人数の開発チームがAIをフル活用することで、スケーラビリティを確保しながら市場競争力を高める好例である。",
+    "translations": {
+      "ja": {
+        "title": "クリエイター支援「Gondola」、OpenAIのCodex活用で開発効率を50%向上させ売上を2倍に急成長",
+        "summary": "クリエイターの雇用機会創出を支援するプラットフォーム「Gondola」は、OpenAIのCodexとChatGPTを開発フローに統合し、リードエンジニアの生産性を50%向上させることに成功した。 手作業による反復的なタスクを自動化することで、チームは製品のコア機能の改善にリソースを集中でき、結果として売上を2倍に成長させた。 少人数の開発チームがAIをフル活用することで、スケーラビリティを確保しながら市場競争力を高める好例である。"
+      },
+      "en": {
+        "title": "Gondola doubles revenue after integrating OpenAI's Codex, boosting lead engineer productivity by 50%",
+        "summary": "Gondola, a platform connecting creative professionals with career opportunities, successfully doubled its revenue by integrating OpenAI's Codex and ChatGPT into its core development workflow. By leveraging these AI tools to automate repetitive coding tasks, the company boosted its lead engineer's individual output by 50%, allowing the small engineering team to pivot resources toward high-impact product features instead of routine maintenance. This case study underscores how even lean startups can achieve outsized business growth by embedding AI-assisted coding directly into the development lifecycle. For builders, the key takeaway is that strategic AI adoption does not just save time; it fundamentally changes the velocity at which a small team can ship features and capture market share."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-12T23:31:47.766Z"
+  },
+  {
     "id": "art-1794525431841-unc3y",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -13698,32 +13804,6 @@
     "created_at": "2026-11-11T12:02:07.691Z"
   },
   {
-    "id": "art-1794398520140-x506r",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/pyontarou_log/n/n02592c4295b3",
-    "published_at": "2026-11-11T12:00:17.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/334917970/rectangle_large_type_2_af18fb3c83ca77b0e86f2a3f39dd6a5e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "大学生が日常生活のタスクを完全自動化、47本のAIワークフローで「面倒くさい」を排除する日々のルーティン設計を公開",
-    "summary_ja": "大学生が個人の日常生活に47本もの自動化AIワークフローを導入し、大学の課題管理、メモ整理、スケジュール作成までを完全に自動化した事例。 AIが朝起きた時点でその日の時間割とタスクをスマホに通知し、手作業を徹底的に排除することで、面倒なタスクから解放される環境を構築した。 生産性を高めるための「個人の生活におけるAPI活用」という観点で、日常の小さな不満を技術で解消する自動化の可能性を示している。",
-    "translations": {
-      "ja": {
-        "title": "大学生が日常生活のタスクを完全自動化、47本のAIワークフローで「面倒くさい」を排除する日々のルーティン設計を公開",
-        "summary": "大学生が個人の日常生活に47本もの自動化AIワークフローを導入し、大学の課題管理、メモ整理、スケジュール作成までを完全に自動化した事例。 AIが朝起きた時点でその日の時間割とタスクをスマホに通知し、手作業を徹底的に排除することで、面倒なタスクから解放される環境を構築した。 生産性を高めるための「個人の生活におけるAPI活用」という観点で、日常の小さな不満を技術で解消する自動化の可能性を示している。"
-      },
-      "en": {
-        "title": "Student fully automates daily university life with 47 AI workflows to eliminate manual tasks and cognitive load",
-        "summary": "A university student has completely overhauled their daily life by implementing 47 distinct AI-driven automation workflows, covering everything from academic deadline tracking and note organization to schedule management. By ensuring that their phone delivers the day’s agenda and assignments the moment they wake up, they have effectively eliminated the need to perform routine manual administrative chores. This case study demonstrates how personal life can be treated like an engineering problem, leveraging API integrations and automation triggers to remove friction from daily routines. It provides a practical blueprint for builders looking to apply automation to their personal lives, proving that even mundane tasks can be solved by stringing together the right tools."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-11T12:02:00.140Z"
-  },
-  {
     "id": "art-1794398513413-xyesc",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -14352,32 +14432,6 @@
       "画像生成"
     ],
     "created_at": "2026-11-11T09:46:42.774Z"
-  },
-  {
-    "id": "art-1794389524269-d8w6r",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ikuo0/items/5fc39f0f9c7ac50bf6ac",
-    "published_at": "2026-11-11T09:21:01.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxMDQ2OTElMkYyYTNmYTg5NTZiZWQzMzAxY2Y0NWU0MjVhNGZkZGQ0YWQ5YTY3ZmU3JTJGeF9sYXJnZS5wbmclM0YxNjA3OTEyNjg1P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1iODQzNmFiZWQ0ZThiMWUwYTIxNTY1Y2E0YmIyNjhiOQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Ddbc605d57d3f448f710fdcff5aedb645?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JTk2JTg3JUU3JUFCJUEwJUUzJTgzJTk5JUUzJTgyJUFGJUUzJTgzJTg4JUUzJTgzJUFCJUUzJTgxJUE3JUUzJTgyJUIyJUUzJTgzJUJDJUUzJTgzJUEwJUU2JTkzJThEJUU0JUJEJTlDJUUzJTgxJTk5JUUzJTgyJThCJUVGJUJDJUExJUVGJUJDJUE5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NDhkYjJlZmJjYjg1NzcxNmIzNDk5OWY5NjFjMzY0Mzk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBpa3VvMCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWJmZGJkMzQ5OTEwZjQxNzc5ZDgxMzk1YjZiNDQ0NTRm&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a028f03572000dde5b39fe08934b8d11",
-    "title_ja": "ゲーム操作を「文章ベクトル」で制御するAI実験――強化学習や画面解析を使わず単語配列で弾避けを学習する独自アプローチ",
-    "summary_ja": "通常の強化学習や画像認識ベクトルを使わず、ゲームの状況を「文章ベクトル（単語の配列）」として扱うことで、弾避け操作を行うAIが開発された。 画面情報をピクセル単位ではなく文脈として解釈させることで、ゲームエンジン依存度を下げた柔軟な制御を目指している。 単一のアルゴリズムに固執せず、情報をどのような形式（データ構造）でAIに渡すかが、特定のタスクにおける性能を左右する重要なアーキテクチャの選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "ゲーム操作を「文章ベクトル」で制御するAI実験――強化学習や画面解析を使わず単語配列で弾避けを学習する独自アプローチ",
-        "summary": "通常の強化学習や画像認識ベクトルを使わず、ゲームの状況を「文章ベクトル（単語の配列）」として扱うことで、弾避け操作を行うAIが開発された。 画面情報をピクセル単位ではなく文脈として解釈させることで、ゲームエンジン依存度を下げた柔軟な制御を目指している。 単一のアルゴリズムに固執せず、情報をどのような形式（データ構造）でAIに渡すかが、特定のタスクにおける性能を左右する重要なアーキテクチャの選択肢となる。"
-      },
-      "en": {
-        "title": "Game control via text embeddings: An experimental AI agent that learns to dodge bullets using word-sequence vectors instead of reinforcement learning",
-        "summary": "A new AI implementation demonstrates game control by treating game states as 'text vectors' or arrays of words, bypassing traditional reinforcement learning or image pixel analysis. By framing the gameplay loop as a semantic processing task rather than pure image recognition, the agent learns to execute bullet-dodging maneuvers based on contextual word inputs. This approach shifts the paradigm from optimizing complex neural environments to carefully structuring input data into semantically rich sequences. For developers building agents, the core takeaway is that the architecture of how you vectorize state data—whether through raw pixels or symbolic word sequences—is often more influential on training convergence and model behavior than the specific reinforcement learning algorithm deployed."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-11T09:32:04.269Z"
   },
   {
     "id": "art-1794389510575-zozrm",
@@ -23987,59 +24041,6 @@
       "開発"
     ],
     "created_at": "2026-11-09T14:01:55.963Z"
-  },
-  {
-    "id": "art-1794232030529-o4orx",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/quanmatic/articles/dee502df541429",
-    "published_at": "2026-11-09T05:26:09.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--gH4S5YRl--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:INFORMS%2520Annual%2520Meeting%25202026%2520%25E5%258F%2582%25E5%258A%25A0%25E3%2583%25AC%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25EF%25BC%259AAI%25E3%2583%25BB%25E9%2587%258F%25E5%25AD%2590%25E3%2583%25BBGPU%25E3%2581%25A7%25E5%25A4%2589%25E3%2582%258F%25E3%2582%258B%25E6%2595%25B0%25E7%2590%2586%25E6%259C%2580%25E9%2581%25A9%25E5%258C%2596%25E3%2581%25AE%25E6%259C%2580%25E5%2589%258D%25E7%25B7%259A%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Hosoda%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFkMDI0YjVhM2EuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Quanmatic%2520Tech%2520blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVmNGFhMzk4MWEuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "INFORMS Annual Meeting 2026開催：AI・量子コンピューティング・GPU導入で進化する数理最適化の最前線と産業応用",
-    "summary_ja": "サンフランシスコで開催された世界最大の数理最適化会議「INFORMS Annual Meeting 2026」のレポート。 6,000人以上が参加した本会議では、従来のソルバー技術に生成AIや量子コンピューティング、GPUアクセラレーションを組み合わせた新たな最適化手法が議論の焦点となった。 単なる計算速度の向上だけでなく、複雑なビジネス課題をAIで構造化し、計算機リソースを最適配分する「ハイブリッドアプローチ」が次の主流となる。",
-    "translations": {
-      "ja": {
-        "title": "INFORMS Annual Meeting 2026開催：AI・量子コンピューティング・GPU導入で進化する数理最適化の最前線と産業応用",
-        "summary": "サンフランシスコで開催された世界最大の数理最適化会議「INFORMS Annual Meeting 2026」のレポート。 6,000人以上が参加した本会議では、従来のソルバー技術に生成AIや量子コンピューティング、GPUアクセラレーションを組み合わせた新たな最適化手法が議論の焦点となった。 単なる計算速度の向上だけでなく、複雑なビジネス課題をAIで構造化し、計算機リソースを最適配分する「ハイブリッドアプローチ」が次の主流となる。"
-      },
-      "en": {
-        "title": "INFORMS Annual Meeting 2026: How AI, Quantum, and GPU Acceleration Are Revolutionizing the Frontiers of Mathematical Optimization and Industrial Applications",
-        "summary": "The INFORMS Annual Meeting 2026 in San Francisco brought together over 6,000 experts to explore the next phase of operations research. The conference highlighted a major shift where traditional solver technologies are being radically transformed by generative AI, quantum computing, and GPU-accelerated massive parallelism. Discussions underscored that the new industry standard is not just raw speed, but hybrid approaches that leverage AI to structure complex business variables before applying high-performance compute resources to solve them. For developers and builders, the takeaway is clear: the future of decision-making systems lies in the synthesis of classical optimization theory with modern AI agent workflows. It is time to start integrating these hybrid optimization models into production-grade infrastructure rather than relying solely on legacy solver environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-09T13:47:10.529Z"
-  },
-  {
-    "id": "art-1794231112493-wpu1d",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/yamitake/articles/notion-ai-memory",
-    "published_at": "2026-11-09T03:53:44.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--JRW72ufZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Notion%25E3%2581%25AE%25E3%2580%258C%25E3%2583%25A1%25E3%2583%25A2%25E3%2583%25AA%25E3%2580%258D%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%2592%25E3%2582%2584%25E3%2581%2595%25E3%2581%2597%25E3%2581%258F%25E8%25A7%25A3%25E8%25AA%25AC%2520%25E3%2580%259CAI%25E3%2581%25AB%25E6%25A8%25AA%25E6%2596%25AD%25E7%259A%2584%25E3%2581%25AB%25E8%2587%25AA%25E5%2588%2586%25E3%2582%2592%25E8%25A6%259A%25E3%2581%2588%25E3%2581%2595%25E3%2581%259B%25E3%2582%2589%25E3%2582%258C%25E3%2582%258B%25E3%2581%25AE%25EF%25BC%259F%25E3%2580%259C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JJ%2520yamitake%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE2MTEyMjRhNGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Notionの「メモリ」機能でAIはどこまで自分を理解するのか？AIに横断的に情報を覚えさせる仕組みと限界を徹底解説",
-    "summary_ja": "Notionが導入したAIメモリ機能は、ユーザーの文脈をAIが長期的に保持し、再入力の手間を省くための仕組みだ。 しかし、全ての情報を完全に横断的に統合できるわけではなく、現状ではNotion内のコンテンツや対話履歴に基づく文脈理解にとどまる。 AIに自分を「覚えさせる」限界と、生産性を向上させるための適切な付き合い方を理解することで、過度な期待を避けつつ、AIアシスタントをより実用的なパーソナル環境へと進化させることができる。",
-    "translations": {
-      "ja": {
-        "title": "Notionの「メモリ」機能でAIはどこまで自分を理解するのか？AIに横断的に情報を覚えさせる仕組みと限界を徹底解説",
-        "summary": "Notionが導入したAIメモリ機能は、ユーザーの文脈をAIが長期的に保持し、再入力の手間を省くための仕組みだ。 しかし、全ての情報を完全に横断的に統合できるわけではなく、現状ではNotion内のコンテンツや対話履歴に基づく文脈理解にとどまる。 AIに自分を「覚えさせる」限界と、生産性を向上させるための適切な付き合い方を理解することで、過度な期待を避けつつ、AIアシスタントをより実用的なパーソナル環境へと進化させることができる。"
-      },
-      "en": {
-        "title": "Deep dive into Notion AI Memory: Can it truly remember everything across your workflows or are there limits?",
-        "summary": "Notion has introduced an AI Memory feature designed to let the AI retain long-term context, theoretically eliminating the need to repeatedly provide personal background for every new prompt. However, this article clarifies that AI Memory is not a universal cross-app knowledge graph; its effectiveness is primarily confined to content and chat history within the Notion ecosystem. By dissecting what this feature actually does versus common user expectations, builders can better understand the current boundaries of AI personalization. Setting realistic expectations is essential for integrating these tools into daily workflows, ensuring you leverage AI as a genuine assistant without assuming it possesses magical, system-wide cross-platform awareness. Practical adoption depends on knowing exactly where the memory boundaries lie."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-09T13:31:52.493Z"
   },
   {
     "id": "art-1794228404013-a6q5m",
