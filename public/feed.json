@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1794469632260-fd2ym",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/jinchouge_mj/articles/803b3e4d0207b7",
+    "published_at": "2026-11-12T03:25:46.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--7IhuDZUY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A8%25E8%25A3%258F%25E9%25BA%25BB%25E9%259B%2580%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F17%25E6%2597%25A5%25E9%2596%2593%25E3%2580%2581%25E4%25BF%25BA%25E3%2581%25AF%25E3%2580%258C%25E3%2581%25A9%25E3%2580%258D%25E3%2581%2597%25E3%2581%258B%25E8%25A8%2580%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25AA%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B2%2588%25E4%25B8%2581%25E8%258A%25B1%25E3%2580%2590%25E5%2585%25AC%25E5%25BC%258F%25E3%2580%2591%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzBiMWQ3OTZlYjYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeを活用して17日間で「裏麻雀ゲーム」をフルスクラッチ開発、開発者がAIとの対話で発した言葉の大半は「ど」だった",
+    "summary_ja": "開発者は17日間で全8章、ボイス付き、3Dテーブル、オンライン対戦機能を備えたブラウザ麻雀ゲーム『―裏麻雀譚― 沈丁花』をリリースした。 コーディングから台本、音声、BGM生成までを「Claude Code」で完結させたが、自身の役割はAIへの指示と確認がメインとなり、チャットの最大頻出語句が「ど（どう？ 進んでる？ ）」になるほどAI主導の開発だった。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを活用して17日間で「裏麻雀ゲーム」をフルスクラッチ開発、開発者がAIとの対話で発した言葉の大半は「ど」だった",
+        "summary": "開発者は17日間で全8章、ボイス付き、3Dテーブル、オンライン対戦機能を備えたブラウザ麻雀ゲーム『―裏麻雀譚― 沈丁花』をリリースした。 コーディングから台本、音声、BGM生成までを「Claude Code」で完結させたが、自身の役割はAIへの指示と確認がメインとなり、チャットの最大頻出語句が「ど（どう？ 進んでる？ ）」になるほどAI主導の開発だった。"
+      },
+      "en": {
+        "title": "Developer ships full-featured 3D mahjong game in 17 days using Claude Code, with AI handling nearly all production tasks",
+        "summary": "In just 17 days, a developer successfully launched a fully playable browser-based mahjong game, complete with 8 chapters, voice acting, 3D tables, and online matchmaking. By leveraging Claude Code, the developer offloaded nearly every technical task—from coding the game logic to generating the BGM and voice assets—to the AI. The developer’s role was reduced to simple prompt-based steering, famously using the single syllable \"do\" (short for \"How is it going? \") as their most frequent input during the process. This project serves as a compelling case study on how agentic coding tools allow solo builders to aggressively compress production timelines, enabling the rapid release of feature-rich, high-polish entertainment experiences that would have previously required an entire engineering team."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-12T07:47:12.260Z"
+  },
+  {
+    "id": "art-1794469621376-6f5uq",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.harness.io/blog/why-ai-coding-agents-lose-context-after-pr",
+    "published_at": "2026-11-12T05:35:21.000Z",
+    "og_image_url": "https://cdn.prod.website-files.com/69e786e187c925d08ee02b92/6aeb5399161e9a06350b61e3_6aeb5243bad91f63189b381a_why-ai-coding-agents-lose-context-after-the-pr-and-how-to-keep-it-og.png",
+    "title_ja": "AIコーディングエージェントがPR作成後にコンテキストを喪失する原因と、開発フローを維持するための解決策を解説",
+    "summary_ja": "AIコーディングエージェントがプルリクエスト作成後に前後の経緯を忘れてしまう背景には、ステート管理の欠如とコンテキストウィンドウの制限がある。 本稿では、リポジトリ全体の状態を保持し、PR承認後のループを継続させるための具体的な設計手法を考察する。 エージェントを実用的な開発フローに組み込むには、単なるコード生成を超え、プロジェクトの長期的な文脈を維持し続けるアーキテクチャへの理解が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングエージェントがPR作成後にコンテキストを喪失する原因と、開発フローを維持するための解決策を解説",
+        "summary": "AIコーディングエージェントがプルリクエスト作成後に前後の経緯を忘れてしまう背景には、ステート管理の欠如とコンテキストウィンドウの制限がある。 本稿では、リポジトリ全体の状態を保持し、PR承認後のループを継続させるための具体的な設計手法を考察する。 エージェントを実用的な開発フローに組み込むには、単なるコード生成を超え、プロジェクトの長期的な文脈を維持し続けるアーキテクチャへの理解が不可欠となる。"
+      },
+      "en": {
+        "title": "Why AI coding agents lose context after PR generation and how to maintain development state",
+        "summary": "AI coding agents frequently struggle to maintain continuity after submitting a pull request, often losing critical project context due to limitations in state management and finite context windows. This article investigates why current workflows often fail to bridge the gap between PR submission and downstream feedback loops. It explores architectural strategies to preserve repository-wide state, ensuring that agents can effectively iterate on code even after the initial implementation phase concludes. For builders deploying agentic workflows, the key takeaway is that relying solely on ephemeral context is insufficient; instead, developers must design systems that treat the entire project lifecycle as a persistent state to avoid the common pitfall of agentic amnesia during complex software development cycles."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-12T07:47:01.376Z"
+  },
+  {
+    "id": "art-1794469614619-lt0vx",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Waipe/items/1642e7471251980b6907",
+    "published_at": "2026-11-12T07:36:42.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTA3NjU0JTJGNTA2YmNjOGZkNWZiNjc5Yzc3MWNkODI1YzgwMDJhNDQ1MWZkMzZiMCUyRnhfbGFyZ2UucG5nJTNGMTc5MjQ4MTcwOD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDk4Y2E3NzBmNDNiZjE2MTkyNmExNDM4OWM4MTI5NjI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1dceb914a3276b1895782f2c3ddb6709?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU3JUFDJUFDMDYwJUU1JTlCJTlFJUUzJTgwJTkxJUUzJTgxJUJFJUUzJTgyJThCJUUzJTgxJUE3JUU2JTlDJUFDJUU3JTg5JUE5JUUzJTgxJUFFMiVFMyU4MSVBMSVFMyU4MiU4MyVFMyU4MiU5MyVFMyU4MSVBRCVFMyU4MiU4OSVFMyU4MyVCQyVFRiVCQyU4MTMlMkMwMDAlRTUlOTAlOEQlRTMlODElQUUlRTMlODMlOUElRTMlODMlQUIlRTMlODIlQkQlRTMlODMlOEElRTglQkUlOUUlRTYlOUIlQjglRTMlODElQTglRTklOTUlQjclRTYlOTYlODclRTglQUElOUUlRTMlODIlOEElRTMlODMlQkIlRTMlODIlQjklRTMlODMlQUMlRTclQUIlOEIlRTMlODElQTYlRTUlOTMlODElRTglQjMlQUElRTMlODElQUUlRTUlQTQlQTclRTUlQjklODUlRTUlQkMlQjclRTUlOEMlOTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0zOTBjNGZhNjFhOTM5M2YyZGZmYzdhZGQyZjI0ODEwMQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBXYWlwZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTc2ZTVmYWY5ZjBiYmY3NjlhYTMwOWEyYzEzMDM4MjE0&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b132f94ee967107572cdee4e45b99603",
+    "title_ja": "2ちゃんねる互換掲示板「つゔぁいちゃんねる」が進化、3,000名のペルソナ辞書搭載でAI住人の「スレ立て・長文語り」の再現度を大幅強化",
+    "summary_ja": "2ちゃんねる互換システム「つゔぁいちゃんねる」が、AI住民エージェントの機能を大幅アップデートした。 今回は3,000名分のペルソナ辞書を統合し、以前のシンプルな返信AIから、スレッド作成や文脈に合わせた長文語りが可能な「本物のユーザー」に近い挙動を実現した。 AIエージェントに特定の性格や語彙を学習させる際、ペルソナを細分化して管理するアプローチは、コミュニティの熱量を高めるNPC開発の参考になる好例だ。",
+    "translations": {
+      "ja": {
+        "title": "2ちゃんねる互換掲示板「つゔぁいちゃんねる」が進化、3,000名のペルソナ辞書搭載でAI住人の「スレ立て・長文語り」の再現度を大幅強化",
+        "summary": "2ちゃんねる互換システム「つゔぁいちゃんねる」が、AI住民エージェントの機能を大幅アップデートした。 今回は3,000名分のペルソナ辞書を統合し、以前のシンプルな返信AIから、スレッド作成や文脈に合わせた長文語りが可能な「本物のユーザー」に近い挙動を実現した。 AIエージェントに特定の性格や語彙を学習させる際、ペルソナを細分化して管理するアプローチは、コミュニティの熱量を高めるNPC開発の参考になる好例だ。"
+      },
+      "en": {
+        "title": "Zwei Channel BBS updates its AI agents with a 3,000-persona dictionary for authentic thread creation and long-form posting behavior",
+        "summary": "The developers behind \"Zwei Channel,\" a 2ch-compatible bulletin board system, have rolled out a major upgrade to their autonomous AI resident agents. By integrating a vast dictionary containing 3,000 distinct personas, the system has moved beyond simple auto-replies to emulate authentic user behavior, including initiating threads and crafting nuanced, long-form narratives. This update highlights a sophisticated approach to NPC design: rather than generic prompt engineering, the team uses granular persona management to simulate a vibrant, lived-in community. For developers building AI agents for social platforms or virtual spaces, this project serves as a compelling proof of concept for how structured persona data can significantly enhance the perceived realism and engagement levels of non-human participants in digital forums."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-12T07:46:54.619Z"
+  },
+  {
     "id": "art-1794468809734-39mdg",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -17333,33 +17411,6 @@
     "created_at": "2026-11-10T08:17:39.588Z"
   },
   {
-    "id": "art-1794298596352-gvq15",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/maszkot5/items/83dbf2df58770e5be75f",
-    "published_at": "2026-11-10T08:09:27.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSUJzY2NkSW80Q3RCaU5lTUxNVl9fYlpvMVhfZ2dKSEtBZHY4cmJMZnN4TngzVFNRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTgxNTdjMDgxMTFjMDJhMDU3YTZjNWZhNjU5OTk2ODc5%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D06db0c7bda293121316148a04413af3b?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JThGJUIwJUU2JUI5JUJFJUU4JThGJUFGJUU4JUFBJTlFJTIwJTNBJTIwJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZDY5NGNkMzg0NWExMmMyZDgzZTVjNjFiMGYyYzMxNTk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYXN6a290NSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTQyOTY3NzBhMGUxNmQ2OGZkZTBlMzQyM2FhOGYwMGVl&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=53230f753df7a4db68684d35be547b7c",
-    "title_ja": "ビジネス視点×台湾華語学習を融合、Fable 5.2の最新AI動向を解説するバイリンガルポッドキャストの設計術",
-    "summary_ja": "「Fable 5.2」が世界トップのLLM評価を獲得したニュースを題材に、ビジネス経済学と台湾華語学習を組み合わせた新しいスタイルのポッドキャスト配信手法を紹介する。 難解な最新AIトレンドを、単なる要約ではなく、言語習得の文脈で再構築するアプローチは、ニッチな教育コンテンツとして非常に有望だ。 開発者はこうした専門知識の掛け合わせにより、AIによる情報発信の独自性を高め、リスナーとのエンゲージメントを深める戦略を学ぶべきである。",
-    "translations": {
-      "ja": {
-        "title": "ビジネス視点×台湾華語学習を融合、Fable 5.2の最新AI動向を解説するバイリンガルポッドキャストの設計術",
-        "summary": "「Fable 5.2」が世界トップのLLM評価を獲得したニュースを題材に、ビジネス経済学と台湾華語学習を組み合わせた新しいスタイルのポッドキャスト配信手法を紹介する。 難解な最新AIトレンドを、単なる要約ではなく、言語習得の文脈で再構築するアプローチは、ニッチな教育コンテンツとして非常に有望だ。 開発者はこうした専門知識の掛け合わせにより、AIによる情報発信の独自性を高め、リスナーとのエンゲージメントを深める戦略を学ぶべきである。"
-      },
-      "en": {
-        "title": "Building a Bilingual Podcast: Merging Business Economics, Taiwanese Mandarin, and the Latest Fable 5.2 AI News",
-        "summary": "This article explores a novel podcast strategy that blends deep-dive business economics with language acquisition—specifically Taiwanese Mandarin—using the recent 'Fable 5.2' LLM world-leading benchmarks as its core material. Rather than providing simple tech news summaries, this approach recontextualizes high-level AI trends into a learning vehicle, creating high-value content for a niche, motivated audience. For developers looking to stand out in the saturated AI content space, the takeaway is clear: the path to differentiation isn't just faster delivery, but synthesizing distinct domains like specialized language learning with technical expertise. By pairing complex engineering news with educational utility, creators can build deeper listener retention and higher engagement than news aggregators alone can provide."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-10T08:16:36.352Z"
-  },
-  {
     "id": "art-1794298588526-zy3em",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -17598,32 +17649,6 @@
       "音声"
     ],
     "created_at": "2026-11-10T07:31:34.655Z"
-  },
-  {
-    "id": "art-1794295007212-uz9zr",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.youtube.com/watch?v=tqAangiY0FE",
-    "published_at": "2026-11-10T06:53:16.000Z",
-    "og_image_url": null,
-    "title_ja": "「AIを使うと自分が賢くなったと錯覚する」——ジッパーの仕組みすら説明できない『知識の錯覚』をAIが助長する危険性",
-    "summary_ja": "我々は日常的な道具（ジッパーなど）の仕組みを実は正確に理解しておらず、他者の知識を自分のものと混同する「知識の錯覚」の中に生きている。 AIはこの錯覚をさらに加速させる。 AIから得た回答を即座に自分の知識として取り込んでしまうことで、批判的思考や深い理解が疎かになるリスクがあるのだ。 開発者やユーザーは、LLMが提供する要約を「自分の理解」と勘違いしていないか自問する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "「AIを使うと自分が賢くなったと錯覚する」——ジッパーの仕組みすら説明できない『知識の錯覚』をAIが助長する危険性",
-        "summary": "我々は日常的な道具（ジッパーなど）の仕組みを実は正確に理解しておらず、他者の知識を自分のものと混同する「知識の錯覚」の中に生きている。 AIはこの錯覚をさらに加速させる。 AIから得た回答を即座に自分の知識として取り込んでしまうことで、批判的思考や深い理解が疎かになるリスクがあるのだ。 開発者やユーザーは、LLMが提供する要約を「自分の理解」と勘違いしていないか自問する必要がある。"
-      },
-      "en": {
-        "title": "The Illusion of Explanatory Depth: Why AI makes you feel smarter than you actually are",
-        "summary": "Humans often suffer from the 'illusion of explanatory depth,' believing we understand complex everyday objects like zippers far better than we actually do. AI exacerbates this psychological blind spot by providing instant, coherent answers that mimic deep expertise, leading users to conflate AI-generated output with their own genuine mastery. This dynamic creates a dangerous feedback loop where critical thinking and actual knowledge retention degrade, even as perceived competence rises. For builders and knowledge workers, the lesson is clear: treating LLMs as external cognitive support is fine, but failing to distinguish between AI-assisted synthesis and deep internal understanding creates a false sense of capability. To stay sharp, you must actively verify, re-process, and stress-test AI responses rather than absorbing them as your own."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-10T07:16:47.212Z"
   },
   {
     "id": "art-1794294991638-81rra",
@@ -23699,32 +23724,6 @@
       "開発"
     ],
     "created_at": "2026-11-08T18:01:44.633Z"
-  },
-  {
-    "id": "art-1794157373388-xgqxm",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/junko_jp/articles/daigo-frontend",
-    "published_at": "2026-11-08T06:29:35.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--SF-lai8S--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590React%252BRecharts%25E3%2580%2591%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E5%258F%25AF%25E8%25A6%2596%25E5%258C%2596%25E3%2581%25AE%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB1%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E3%2581%25A0%25E3%2581%2591React%25E3%2582%2592%25E9%2581%25B8%25E3%2582%2593%25E3%2581%25A0%25E8%25A9%25B1%2520%25E2%2580%2595%2520%25E7%25AC%25AC%25E4%25BA%2594%25E5%25BC%25BE%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2588%25E3%2582%25A8%25E3%2583%25B3...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2598%25E3%2582%2585%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTC1wa3RhWVFraHprMTBqVXBhSnkwQ3ZjLTZyX1gwOEhCVngtS2JHZ2JNR0x0NFdnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Streamlit一択の個人開発に「React+Recharts」を導入した判断基準とは―脱・簡易構築で見据えるデータ可視化の拡張性と実装の裏側",
-    "summary_ja": "これまで全てのプロジェクトでStreamlitを採用してきた個人開発者が、第五弾プロジェクトでReactとRechartsの組み合わせをあえて採用した背景を詳解する。 Streamlitの簡易性に頼らず、Reactへ舵を切ったのは、複雑な画面構成や高度なデータ可視化要件への適応を優先したためだ。 ダミーデータ先行の開発手法や投球者自動特定ロジックの実装など、実用性を重視したフロントエンド設計の教訓は、標準化に囚われない技術選定の重要性を再認識させる。",
-    "translations": {
-      "ja": {
-        "title": "Streamlit一択の個人開発に「React+Recharts」を導入した判断基準とは―脱・簡易構築で見据えるデータ可視化の拡張性と実装の裏側",
-        "summary": "これまで全てのプロジェクトでStreamlitを採用してきた個人開発者が、第五弾プロジェクトでReactとRechartsの組み合わせをあえて採用した背景を詳解する。 Streamlitの簡易性に頼らず、Reactへ舵を切ったのは、複雑な画面構成や高度なデータ可視化要件への適応を優先したためだ。 ダミーデータ先行の開発手法や投球者自動特定ロジックの実装など、実用性を重視したフロントエンド設計の教訓は、標準化に囚われない技術選定の重要性を再認識させる。"
-      },
-      "en": {
-        "title": "Choosing React over Streamlit for one-off data visualization projects: Architectural trade-offs and Recharts implementation details",
-        "summary": "A solo developer who previously standardized all projects on Streamlit explains why they broke that rule to build their fifth project using React and Recharts. While Streamlit offers rapid prototyping, the author argues that React is superior when complex, custom UI requirements and specific data visualization needs take center stage. The article details a pragmatic development workflow, moving from dummy data prototyping to live API integration, and covers specific challenges like building automated data-parsing logic for CSV inputs. This case study serves as a reminder to builders that technology choices shouldn't be dogmatic. Sometimes, the added overhead of React is justified if it enables granular control over interactive elements that standard low-code tools simply cannot handle."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-08T17:02:53.388Z"
   },
   {
     "id": "art-1794151004650-qvol7",
