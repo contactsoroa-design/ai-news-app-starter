@@ -1,5 +1,114 @@
 [
   {
+    "id": "art-1794442627021-jfsbf",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/iwa_30/n/nbcd8652745e6",
+    "published_at": "2026-11-12T00:08:52.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335088859/rectangle_large_type_2_179abbfa99f08e313eab2e84faf2a17f.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "Qwen3-TTSの日本語長文読解を攻略：1.5万行の実測データで検証した、RTX 5080環境での最適化パイプライン設計",
+    "summary_ja": "Qwen3-TTS(1.7B)を用い、NVIDIA RTX 5080（VRAM 16GB）環境で合計32時間・1.5万行超の音声合成を実運用した実践知見。 設定調整だけでは解決できない日本語特有の読み間違いに対し、パイプライン側でいかに前処理・後処理を制御して精度を担保するかに焦点を当てた。 長尺コンテンツを安定生成するために必要なVRAM管理と、日本語のイントネーション・誤読を回避する推論プロセス設計の決定版。",
+    "translations": {
+      "ja": {
+        "title": "Qwen3-TTSの日本語長文読解を攻略：1.5万行の実測データで検証した、RTX 5080環境での最適化パイプライン設計",
+        "summary": "Qwen3-TTS(1.7B)を用い、NVIDIA RTX 5080（VRAM 16GB）環境で合計32時間・1.5万行超の音声合成を実運用した実践知見。 設定調整だけでは解決できない日本語特有の読み間違いに対し、パイプライン側でいかに前処理・後処理を制御して精度を担保するかに焦点を当てた。 長尺コンテンツを安定生成するために必要なVRAM管理と、日本語のイントネーション・誤読を回避する推論プロセス設計の決定版。"
+      },
+      "en": {
+        "title": "Optimizing Qwen3-TTS for Japanese long-form audio: Pipeline lessons from 15,000 lines of test data on RTX 5080",
+        "summary": "This technical breakdown explores deploying the Qwen3-TTS (1.7B) model on an NVIDIA RTX 5080 with 16GB VRAM, processing over 15,000 lines of text totaling 32 hours of audio. The author demonstrates that standard configuration tweaks cannot fix inherent Japanese mispronunciation issues in long-form synthesis. Instead, the piece details a robust production pipeline that uses custom preprocessing and post-processing logic to control intonation and accuracy, overcoming the model's limitations. For developers building large-scale audio generation systems, the core takeaway is that architectural control over the inference pipeline is critical, as simple prompt-tuning alone fails to ensure the coherence required for long-form narrative content. The report provides a blueprint for managing VRAM constraints while maintaining high-quality Japanese output."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "音声"
+    ],
+    "created_at": "2026-11-12T00:17:07.021Z"
+  },
+  {
+    "id": "art-1794442620168-ureux",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/suwa_nobu/items/1dd9df248ee6f4c9dfd4",
+    "published_at": "2026-11-12T00:12:54.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDMwNjExJTJGYTRlNGFiZDZjNWNkZmM5NzkzMTk2ZmUwZDFjZjYyMGY1ZWYxMTY5NCUyRnhfbGFyZ2UucG5nJTNGMTc4NTI4OTU5Nj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NGE5ZmNiZmE4OTM5NWU1MWY1N2FiYjJkYzI1ZTFmZDQ%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkYyMDc3NzA2NTMzODkzMmUyMWVjMjk3MjI5ZDVkZmI5NDk5MWI5YzFhJTJGb3JpZ2luYWwuanBnJTNGMTc2OTAwMDk3MD9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1lYjc1ZTQzMzAzYTdlNTkzNDQ4Yjc4NDZiMjljYTgxZA%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3D237198914e54e0e7e727d16c4cfb7823?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q0xBVURFLm1kJTIwJUUzJTgxJUFCJUUzJTgwJThDJUUzJTgxJTkzJUUzJTgxJUFFJUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTg5JUUzJTgxJUFGJUUzJTgxJTgyJUUzJTgxJUFBJUUzJTgxJTlGJUUzJTgxJUFFJUUzJTgyJTgyJUUzJTgxJUFFJUUzJTgwJThEJUUzJTgxJUE4JUU2JTlCJUI4JUUzJTgxJThGJUUzJTgxJUE4JUUzJTgwJTgxJUU5JTg3JThEJUU4JUE0JTg3JUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTg5JUUzJTgyJTkyJUUzJTgxJUJFJUUzJTgxJUE4JUUzJTgyJTgxJUUzJTgxJUE2JUUzJTgxJThGJUUzJTgyJThDJUUzJTgyJThCJUUzJTgxJUFFJUUzJTgxJThCJUUzJTgwJTgyQ2xhdWRlJTIwQyVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWY4NzBmZWM5NjM4MzQ2ZDYyNTM3MTYwMDBiNTk3MTg3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzdXdhX25vYnUmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1iZTVkNGQ3ZjgwNDY4YWQwMGMxZTkyMjA3YzFjYWMxMw&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-SlFJVA&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=b48da7357afd4b56a4835bd52378c93a",
+    "title_ja": "Claude Codeは重複コードを自動でリファクタリングできるか？主要CLIツール132回検証で唯一の成功モデルが判明",
+    "summary_ja": "AIによるコーディング支援で頻発する「既存コードの複製」問題を解決するため、Claude Code、Codex、Gemini CLIを対象に「このコードはあなたのもの」というプロンプト付きで132回の検証を実施。 結果、重複を適切に検知し既存コードを再利用するリファクタリングを完遂できたのはClaude Codeのみであった。 AIの生成能力に頼るだけでなく、コンテキスト共有と所有権の認識がコード品質を維持する上での分水嶺となる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeは重複コードを自動でリファクタリングできるか？主要CLIツール132回検証で唯一の成功モデルが判明",
+        "summary": "AIによるコーディング支援で頻発する「既存コードの複製」問題を解決するため、Claude Code、Codex、Gemini CLIを対象に「このコードはあなたのもの」というプロンプト付きで132回の検証を実施。 結果、重複を適切に検知し既存コードを再利用するリファクタリングを完遂できたのはClaude Codeのみであった。 AIの生成能力に頼るだけでなく、コンテキスト共有と所有権の認識がコード品質を維持する上での分水嶺となる。"
+      },
+      "en": {
+        "title": "Can AI agents self-refactor redundant code? Testing Claude Code against competitors in 132 trials reveals one clear winner",
+        "summary": "To combat the common AI coding pitfall of generating redundant, duplicate functions, a series of 132 tests were conducted across Claude Code, Gemini CLI, and Codex using the specific prompt, \"This code is yours.\" The results were definitive: only Claude Code consistently detected existing patterns, refused to duplicate logic, and successfully performed inline refactoring. This experiment highlights that while most LLM-based coding agents are eager to generate new blocks, they lack the structural awareness to treat existing code as a shared repository unless explicitly prompted to claim ownership. For developers managing agentic workflows, the lesson is that context retention and ownership assignment are now as critical as the model's raw reasoning capability to avoid codebase bloat."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-12T00:17:00.168Z"
+  },
+  {
+    "id": "art-1794442610984-yxfdt",
+    "source_id": "source-openrouter",
+    "source_name": "OpenRouter Announcements",
+    "url": "https://openrouter.ai/blog/tutorials/ai-agent-infinite-loop/",
+    "published_at": "2026-11-12T00:00:00.000Z",
+    "og_image_url": "https://openrouter.ai/blog/images/ai-agent-infinite-loop.png",
+    "title_ja": "AIエージェントの「無限ループ」によるコスト流出を阻止せよ：OpenRouterが推奨するエラー処理とリクエスト制限の設計手法",
+    "summary_ja": "OpenRouterは、AIエージェントがツール呼び出しに失敗し続け、会話履歴が肥大化することで発生する「無限ループ」による予期せぬAPI高額請求を防ぐ対策を公開した。 ループに陥るとリクエストごとに全履歴が再送されるため、放置すれば数千ドルの損害になる。 開発者は各ステップで入力を検証し、最大試行回数制限を設けるなど、ループを自律的に停止させる堅牢なステートマシン設計が必須である。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの「無限ループ」によるコスト流出を阻止せよ：OpenRouterが推奨するエラー処理とリクエスト制限の設計手法",
+        "summary": "OpenRouterは、AIエージェントがツール呼び出しに失敗し続け、会話履歴が肥大化することで発生する「無限ループ」による予期せぬAPI高額請求を防ぐ対策を公開した。 ループに陥るとリクエストごとに全履歴が再送されるため、放置すれば数千ドルの損害になる。 開発者は各ステップで入力を検証し、最大試行回数制限を設けるなど、ループを自律的に停止させる堅牢なステートマシン設計が必須である。"
+      },
+      "en": {
+        "title": "OpenRouter guide on preventing costly AI agent infinite loops by implementing strict retry caps and error handling",
+        "summary": "OpenRouter has published guidance on mitigating the severe financial risk of AI agents trapped in infinite execution loops, where models repeatedly call failing tools with the same arguments. Because agent loops often resend the entire conversation history with each retry, costs can balloon into thousands of dollars overnight. The key takeaway for developers is that naive loops are dangerous; you must implement explicit retry limits, robust input validation, and state monitoring to force-stop execution when a process stalls. Builders should treat every tool interaction as a potential leak and design their agent architecture with fail-safes that prevent runaway execution regardless of the model's persistence or logical errors."
+      }
+    },
+    "tool_tags": [
+      "OpenRouter"
+    ],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-12T00:16:50.984Z"
+  },
+  {
+    "id": "art-1794442604230-v21dh",
+    "source_id": "source-clay",
+    "source_name": "Clay Blog (GTM AI)",
+    "url": "https://www.clay.com/blog/zoominfo-alternatives",
+    "published_at": "2026-11-11T22:27:20.000Z",
+    "og_image_url": null,
+    "title_ja": "2026年版：GTMチーム向け「ZoomInfo」代替ツール10選の徹底比較――データ網羅性、料金体系、ワークフローの柔軟性を評価",
+    "summary_ja": "GTMチームのリード獲得におけるZoomInfoの代替ツール10選を比較検討し、Clayを含む各サービスのデータカバレッジ、料金モデル、ワークフローの柔軟性を詳細に分析。 多くのユーザーが指摘する各ツールの短所や制約にも焦点を当てている。 営業効率化を狙うチームにとって、単なるデータ提供量だけでなく、既存ツールとの統合性やリアルタイム性を踏まえたツール選定がいかに重要かを解説する。",
+    "translations": {
+      "ja": {
+        "title": "2026年版：GTMチーム向け「ZoomInfo」代替ツール10選の徹底比較――データ網羅性、料金体系、ワークフローの柔軟性を評価",
+        "summary": "GTMチームのリード獲得におけるZoomInfoの代替ツール10選を比較検討し、Clayを含む各サービスのデータカバレッジ、料金モデル、ワークフローの柔軟性を詳細に分析。 多くのユーザーが指摘する各ツールの短所や制約にも焦点を当てている。 営業効率化を狙うチームにとって、単なるデータ提供量だけでなく、既存ツールとの統合性やリアルタイム性を踏まえたツール選定がいかに重要かを解説する。"
+      },
+      "en": {
+        "title": "10 Top ZoomInfo Alternatives for 2026: Evaluating Data Coverage, Pricing, and Workflow Flexibility for GTM Teams",
+        "summary": "This comprehensive analysis evaluates ten leading ZoomInfo alternatives, including Clay, specifically curated for Go-To-Market teams heading into 2026. The report breaks down how these platforms stack up against one another by scrutinizing critical performance metrics: raw data coverage accuracy, underlying pricing models, and the agility of their automated workflows. Crucially, the analysis surfaces specific drawbacks and operational constraints reported by actual users, providing a balanced look beyond marketing claims. For teams aiming to optimize their lead gen engine, this piece highlights why prioritizing workflow integration and real-time data ingestion is often more vital than simple database size. It serves as a necessary guide for any builder or GTM leader assessing their data stack architecture for maximum ROI and scalability."
+      }
+    },
+    "tool_tags": [
+      "Clay"
+    ],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-12T00:16:44.231Z"
+  },
+  {
     "id": "art-1794441733467-zq6nw",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -18369,33 +18478,6 @@
     "created_at": "2026-11-09T20:32:41.003Z"
   },
   {
-    "id": "art-1794256352204-xans0",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dreamy_wolf7393/n/n430e4045ee1a",
-    "published_at": "2026-11-09T20:29:51.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/e02fd0974ff378a2815750da77625b3c4186ca70.png",
-    "title_ja": "数年先の継続利用を見据えたアプリ設計：親のiPhoneで育った子供が「自分のスマホ」で再ダウンロードする長期的なユーザー体験",
-    "summary_ja": "リリース直後の短期的なダウンロードだけでなく、数年単位で長く愛されるアプリを目指す戦略についての考察。 現在は親の端末で遊ぶ小学生が、成長して自分のスマホを持つ中学生になった際に「懐かしい学習アプリ」として再インストールしてもらうことをゴールに据える。 そのためには、一過性のブームに頼らず、学習習慣や記憶に定着するコンテンツを提供し、数年後もサービスを維持し続ける継続的な運用体制が不可欠となる。",
-    "translations": {
-      "ja": {
-        "title": "数年先の継続利用を見据えたアプリ設計：親のiPhoneで育った子供が「自分のスマホ」で再ダウンロードする長期的なユーザー体験",
-        "summary": "リリース直後の短期的なダウンロードだけでなく、数年単位で長く愛されるアプリを目指す戦略についての考察。 現在は親の端末で遊ぶ小学生が、成長して自分のスマホを持つ中学生になった際に「懐かしい学習アプリ」として再インストールしてもらうことをゴールに据える。 そのためには、一過性のブームに頼らず、学習習慣や記憶に定着するコンテンツを提供し、数年後もサービスを維持し続ける継続的な運用体制が不可欠となる。"
-      },
-      "en": {
-        "title": "Building apps for generational retention: How to design long-term user experiences for kids growing into their first smartphones",
-        "summary": "This piece explores a strategic approach to long-term app retention that extends beyond the initial launch hype. By focusing on elementary schoolers who currently play on their parents' iPhones, the developer aims to convert them into self-sufficient middle school users who choose to re-download the educational app on their own devices years later. The core strategy shifts from instant viral growth to building a lasting association with the user’s learning journey. Success relies on ensuring the app remains available and technically sound years down the road, transforming a fleeting childhood encounter into a recurring study habit. For builders, this underscores that longevity is a feature, requiring consistent maintenance and a product identity strong enough to trigger nostalgic re-discovery."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-09T20:32:32.204Z"
-  },
-  {
     "id": "art-1794256330015-5kqw1",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -20038,33 +20120,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-09T14:31:35.121Z"
-  },
-  {
-    "id": "art-1794232930283-8l8b6",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ryosuke_ohori/items/ada543a0201752023e25",
-    "published_at": "2026-11-09T13:46:47.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjgwMjEzMyUzRnYlM0Q0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz05OTRiODhiOGM0NmUxNDZlNGNkZjRhNGMxMzUwNmVjNA%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkY3Mzg0ODQ0ZDlhZDE0ZGE1YmUyMmJmNWI0NzYzZmFlZWY2ZTA4NDdhJTJGb3JpZ2luYWwuanBnJTNGMTcyMjI0ODgwOT9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1lYzgwNzRmNDMwZjJkMmUzM2FhMjVmMjkwZmYyOTgxMg%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3D2f8fb656872f6c711df9000fff55416e?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JUFFJTlGJUU4JUI3JUI1JUVGJUJDJTlBSmV2JUUzJTgyJTkyQ2xhdWRlJUUzJTgxJUFCNSVFNSU4OCU4NiVFMyU4MSVBNyVFOSU4MCVBMyVFNiU5MCVCQSVFMyU4MSU5OSVFMyU4MiU4QiVFRiVCQyU4MSUyMCVFMyU4MCU5QyVFNCVCQiU5NSVFNyVCNSU4NCVFMyU4MSVCRiVFMyU4MSU4QiVFMyU4MiU4OSVFNSVBRSU5RiVFOCVBMyU4NSVFMyU4MCU4MSVFNSVBRSU5RiVFOSU5QSU5QiVFMyU4MSVBRSVFNCVCRCVCRiVFMyU4MSU4NCVFMyU4MSVBOSVFMyU4MSU5MyVFMyU4MiU4RCVFMyU4MCU5QyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTZjYmViYWU0YTQ4YjlmZDMxMmUyZTFlOGVmODg0NWM4&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDByeW9zdWtlX29ob3JpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YmUyNjY3MDNiZWY5ZDdmMGU3ZDk5YzU0Y2Q5MTQ0NmQ&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=dWx1c2FnZS5JbmM&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=b85c360888e2297fba997f0f3e1de417",
-    "title_ja": "TypeSafe AIのAI判定モデル「Jev」をClaudeに連携、5分で実装する緊急度判定の最適化手法と実践的ユースケースを解説",
-    "summary_ja": "TypeSafe AIが公開したAIモデル「Jev」は、入力テキストが「緊急か」「規約違反か」などを高速かつ正確に判定する特化型エンジンだ。 Claudeや他のLLMとAPI連携させることで、大規模言語モデルへの問い合わせ前に一次フィルタリングを構築できる。 開発現場では、LLMのトークン消費削減とレスポンス速度の向上、さらには判定ロジックの堅牢性を高めるための有用なアーキテクチャとなる。",
-    "translations": {
-      "ja": {
-        "title": "TypeSafe AIのAI判定モデル「Jev」をClaudeに連携、5分で実装する緊急度判定の最適化手法と実践的ユースケースを解説",
-        "summary": "TypeSafe AIが公開したAIモデル「Jev」は、入力テキストが「緊急か」「規約違反か」などを高速かつ正確に判定する特化型エンジンだ。 Claudeや他のLLMとAPI連携させることで、大規模言語モデルへの問い合わせ前に一次フィルタリングを構築できる。 開発現場では、LLMのトークン消費削減とレスポンス速度の向上、さらには判定ロジックの堅牢性を高めるための有用なアーキテクチャとなる。"
-      },
-      "en": {
-        "title": "How to integrate TypeSafe AI's Jev model with Claude in 5 minutes for efficient urgency and policy filtering",
-        "summary": "TypeSafe AI's Jev model offers a specialized approach to AI text classification, designed to instantly detect if an input is urgent or violates specific policies. By integrating Jev with Claude or other LLMs, developers can implement a lightweight filtering layer that intercepts queries before they reach expensive model endpoints. This architectural pattern is highly practical for reducing overall token costs and latency while improving the robustness of content moderation pipelines. For builders managing high-traffic AI systems, Jev serves as a performant pre-processor that preserves logic consistency without relying solely on large, general-purpose models for every minor binary decision. It provides a straightforward path to optimizing both system efficiency and response speed in real-world production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-09T14:02:10.283Z"
   },
   {
     "id": "art-1794232915963-bxpj3",
@@ -31869,33 +31924,6 @@
       "マーケ・集客・ASO"
     ],
     "created_at": "2026-11-04T12:16:50.520Z"
-  },
-  {
-    "id": "art-1793793841796-zijgj",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/krev",
-    "published_at": "2026-11-01T22:23:58.000Z",
-    "og_image_url": null,
-    "title_ja": "ECサイト運営をフル自動化する「KREV AI」登場、在庫管理から顧客対応までをAIチームが自律的に実行",
-    "summary_ja": "KREV AIは、ECブランドの日常業務をまるごと代行する自律型AIプラットフォームだ。 在庫の自動更新や問い合わせへの対応、販促キャンペーンの実施といった煩雑な実務を、AIがチームとして統合的に処理することで、オーナーは戦略的な意思決定に集中できる。 単なるチャットボットではなく、EC運用のワークフロー全体をAIエージェントに委ねることで、リソース不足を解消し、規模拡大を加速させたい事業者にとって強力な選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "ECサイト運営をフル自動化する「KREV AI」登場、在庫管理から顧客対応までをAIチームが自律的に実行",
-        "summary": "KREV AIは、ECブランドの日常業務をまるごと代行する自律型AIプラットフォームだ。 在庫の自動更新や問い合わせへの対応、販促キャンペーンの実施といった煩雑な実務を、AIがチームとして統合的に処理することで、オーナーは戦略的な意思決定に集中できる。 単なるチャットボットではなく、EC運用のワークフロー全体をAIエージェントに委ねることで、リソース不足を解消し、規模拡大を加速させたい事業者にとって強力な選択肢となるだろう。"
-      },
-      "en": {
-        "title": "KREV AI launches autonomous ecommerce teams to automate inventory management, customer support, and marketing operations",
-        "summary": "KREV AI has introduced an autonomous platform designed to act as a complete operations team for ecommerce brands, taking over the day-to-day execution of online store management. By integrating AI agents that handle complex tasks—ranging from real-time inventory synchronization and customer inquiry resolution to automated promotional campaign execution—the tool allows brand founders to pivot away from operational minutiae toward high-level strategy. This system goes far beyond simple chatbots, effectively delegating the entire ecommerce workflow to a dedicated digital workforce. For builders and store owners struggling with resource constraints, KREV AI provides a scalable solution to handle the heavy lifting of store operations while keeping customer engagement seamless and consistent across every touchpoint."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-04T12:04:01.796Z"
   },
   {
     "id": "art-1793793831888-999c9",
@@ -49032,33 +49060,6 @@
       "動画"
     ],
     "created_at": "2026-10-28T12:51:03.868Z"
-  },
-  {
-    "id": "art-1793189870810-j4mfi",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/micro-saas-founder-rick-blyth",
-    "published_at": "2026-10-27T20:40:14+00:00",
-    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/dfltujc4tobxrd6jf8r8yxi9hizx",
-    "title_ja": "月間利益200万円超を達成するソロ開発者の戦略：Rick Blyth氏が明かすMicro SaaS運営の鉄則と「顧客第一」のプロダクト開発",
-    "summary_ja": "Micro SaaS開発者のRick Blyth氏は、独力で月間利益200万円を超える収益基盤を構築した。 彼の戦略は、複雑な機能開発よりも顧客のフィードバックを最優先し、ニッチ市場の特定課題を解決するシンプルなツールを迅速に展開することにある。 開発者にとって重要なのは、完璧なコードよりも、市場の痛点を突き、持続可能な収益を生む小規模な製品を積み重ねていくという現実的なアプローチである。",
-    "translations": {
-      "ja": {
-        "title": "月間利益200万円超を達成するソロ開発者の戦略：Rick Blyth氏が明かすMicro SaaS運営の鉄則と「顧客第一」のプロダクト開発",
-        "summary": "Micro SaaS開発者のRick Blyth氏は、独力で月間利益200万円を超える収益基盤を構築した。 彼の戦略は、複雑な機能開発よりも顧客のフィードバックを最優先し、ニッチ市場の特定課題を解決するシンプルなツールを迅速に展開することにある。 開発者にとって重要なのは、完璧なコードよりも、市場の痛点を突き、持続可能な収益を生む小規模な製品を積み重ねていくという現実的なアプローチである。"
-      },
-      "en": {
-        "title": "How solo founder Rick Blyth scaled his Micro SaaS to $14k MRR by prioritizing customer feedback over complex feature sets",
-        "summary": "Solo developer Rick Blyth details his journey building and scaling a Micro SaaS portfolio that now generates over $14,000 in monthly recurring revenue. His core philosophy focuses on avoiding the trap of feature bloat, choosing instead to ship simple, utilitarian solutions that directly address niche market pain points. By ruthlessly prioritizing user feedback over speculative development, Blyth has managed to keep his overhead low while maintaining high customer retention. For builders, the key lesson is that sustainable growth isn't about shipping massive, complex platforms; it is about iterating quickly on specific, profitable problems, validating your assumptions with real revenue early, and layering small, highly focused products to create a stable, independent income stream."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-28T12:17:50.810Z"
   },
   {
     "id": "art-1793185297851-6wifi",
