@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794481341427-jrv2v",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/tw93/articles/f663abd371d59b",
+    "published_at": "2026-11-12T01:30:09.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--nMTHoWb1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Mac%25E3%2581%25A7AI%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%25AE%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2582%2592%25E5%25AE%2589%25E5%2585%25A8%25E3%2581%25AB%25E7%2589%2587%25E4%25BB%2598%25E3%2581%2591%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Tw93%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXVGbFpWRkpaRTJaUFRRVXp5cWpSbUpKWVpYTElOcUpOVjkxRDRPaDZaZ0kxNGp1aDg9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "MacのAIコーディングツール用キャッシュ整理術：62GBに肥大化するDBを安全に削除する「Mole」の設計手法を公開",
+    "summary_ja": "Mac用掃除アプリ「Mole」の開発者が、CursorやClaude Codeなどが生成する肥大化した開発キャッシュを安全に管理する手法を解説。 セッション履歴やワークツリーなど重要なデータを含むため、単なる一括削除はユーザーの作業記録を消失させるリスクがある。 MoleではAIを活用して不要なインデックスやランタイムのみを識別し、重要な履歴を残しながらストレージ容量を効率的に解放する設計を採用している。",
+    "translations": {
+      "ja": {
+        "title": "MacのAIコーディングツール用キャッシュ整理術：62GBに肥大化するDBを安全に削除する「Mole」の設計手法を公開",
+        "summary": "Mac用掃除アプリ「Mole」の開発者が、CursorやClaude Codeなどが生成する肥大化した開発キャッシュを安全に管理する手法を解説。 セッション履歴やワークツリーなど重要なデータを含むため、単なる一括削除はユーザーの作業記録を消失させるリスクがある。 MoleではAIを活用して不要なインデックスやランタイムのみを識別し、重要な履歴を残しながらストレージ容量を効率的に解放する設計を採用している。"
+      },
+      "en": {
+        "title": "Managing AI coding tool caches on macOS: How Mole safely cleans up bloated 62GB developer databases",
+        "summary": "The developer of the macOS cleaning utility Mole explains their approach to managing the massive disk footprints created by tools like Cursor, Claude Code, and Codex. These tools often leave behind session logs, worktrees, and indexes, with some opencode.db files ballooning to over 62GB. Because session history acts as a vital audit trail for developers, a destructive 'delete all' strategy is unsafe and leads to data loss. Mole addresses this by implementing an AI-driven cleanup logic that carefully isolates transient runtime data from permanent work history. For tool builders, the key takeaway is that as local AI caching becomes more aggressive, implementing granular, safety-first cleanup procedures is essential to ensure user trust and storage efficiency."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-12T11:02:21.427Z"
+  },
+  {
+    "id": "art-1794481332671-3xzg8",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/temalabo_yui/n/nbf3b24f364a3",
+    "published_at": "2026-11-12T10:28:03.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335285854/rectangle_large_type_2_349778bb619738f5c1bf2a6b0ce1c15e.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "【個人開発19日目】ソフトのダウンロード数が12回に急増、離脱率0％を記録した運用上のヒント",
+    "summary_ja": "個人開発アプリをリリースして19日目、通常は数回程度のダウンロード数が12回まで急増した。 特筆すべきは、ダウンロードしたユーザーからのアンインストール（離脱）が0人だった点だ。 数値を追うだけでなく、特定の日に流入が伸びた要因を特定し、ユーザーの定着率を維持する施策を重ねることが、個人開発における持続的な成長の足掛かりとなる。",
+    "translations": {
+      "ja": {
+        "title": "【個人開発19日目】ソフトのダウンロード数が12回に急増、離脱率0％を記録した運用上のヒント",
+        "summary": "個人開発アプリをリリースして19日目、通常は数回程度のダウンロード数が12回まで急増した。 特筆すべきは、ダウンロードしたユーザーからのアンインストール（離脱）が0人だった点だ。 数値を追うだけでなく、特定の日に流入が伸びた要因を特定し、ユーザーの定着率を維持する施策を重ねることが、個人開発における持続的な成長の足掛かりとなる。"
+      },
+      "en": {
+        "title": "Solo Dev Diary: Software downloads spike to 12 in one day with zero uninstalls on Day 19",
+        "summary": "On the 19th day of launching their solo development project, the developer saw a sudden spike in software downloads, reaching 12 in a single day—a significant increase from their usual daily volume of near-zero. Even more promising was that the churn rate remained at zero, meaning every single new user kept the software installed. For indie builders, this case highlights that tracking vanity metrics like download spikes is only half the battle; the real victory lies in analyzing exactly what triggered the influx and why the product successfully retained those specific users. Consistency in identifying acquisition sources and refining the onboarding experience is what eventually builds the foundation for long-term growth in solo app projects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-12T11:02:12.671Z"
+  },
+  {
+    "id": "art-1794481305976-01l2f",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/whitemarshall/items/5aacc1a008dd4510fe46",
+    "published_at": "2026-11-12T10:43:06.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmODljNjFkOTY3OWRiYTNhN2Y3NTk2OWJkMzUxNzU0NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGI4NjUzMzBkODk4Y2IwZGU0MTgwNWY1OWRjYzNlMjQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd74df1f0f9e99258a2c04d787d798489?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9S2ltaSUyMEszLjElMjBQcm8lMjAlRTMlODElQTglMjBDbGF1ZGUlMjBGYWJsZSUyMDUuMiUyMCVFMyU4MiU5MjE5JUUzJTgyJUJGJUUzJTgyJUI5JUUzJTgyJUFGJUUzJTgxJUE3JUU2JUFGJTk0JUU4JUJDJTgzJUUyJTk0JTgwJUUyJTk0JTgwJUU1JUI3JUFFJUUzJTgxJUFGJUU4JTgzJUJEJUU1JThBJTlCJUUzJTgxJUE3JUUzJTgxJUFGJUUzJTgxJUFBJUUzJTgxJThCJUUzJTgxJUEzJUUzJTgxJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NGVlZjY0MDNkMjNkOGNiYWZiNGE0NjlkMTU0YmJiMzk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3aGl0ZW1hcnNoYWxsJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODZkYjFiOTRkNWI1NzM4Yjk3MjA1ODE2ODQyNzc4MWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6df0e2ea8ec6a3483698b8a24a307a6c",
+    "title_ja": "Kimi K3.1 Pro vs Claude Fable 5.2：19のタスク検証で判明した「用途別」の使い分け戦略とコスト最適化の現実",
+    "summary_ja": "Kimi K3.1 ProとClaude Fable 5.2を19項目の実務タスクで比較検証した結果、モデル間の性能差は僅差であり、勝敗は能力よりも用途によって決まることが判明した。 ユーザー対話型チャットのインターフェースにはClaude Fable 5.2が適し、一方でバッチ処理やAPIコストの最適化を優先するシナリオではKimi K3.1 Proが圧倒的な優位性を持つ。",
+    "translations": {
+      "ja": {
+        "title": "Kimi K3.1 Pro vs Claude Fable 5.2：19のタスク検証で判明した「用途別」の使い分け戦略とコスト最適化の現実",
+        "summary": "Kimi K3.1 ProとClaude Fable 5.2を19項目の実務タスクで比較検証した結果、モデル間の性能差は僅差であり、勝敗は能力よりも用途によって決まることが判明した。 ユーザー対話型チャットのインターフェースにはClaude Fable 5.2が適し、一方でバッチ処理やAPIコストの最適化を優先するシナリオではKimi K3.1 Proが圧倒的な優位性を持つ。"
+      },
+      "en": {
+        "title": "Kimi K3.1 Pro vs. Claude Fable 5.2: 19-Task Analysis Reveals Performance Parity and Strategy for Cost-Driven Model Selection",
+        "summary": "A rigorous 19-task side-by-side comparison between Kimi K3.1 Pro and Claude Fable 5.2 demonstrates that meaningful performance gaps are virtually non-existent, suggesting that model selection should be dictated by specific use cases rather than raw intelligence scores. Claude Fable 5.2 excels as the primary engine for consumer-facing chat interfaces where interaction quality is paramount, while Kimi K3.1 Pro dominates in background batch processing scenarios where strict API cost control is the deciding factor. For builders and developers, the key lesson is to abandon the search for a singular 'best' model and instead architect AI systems that swap models based on throughput requirements and budget allocation. Pragmatic engineering dictates mapping the model to the operational environment, not just the capability ceiling."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-12T11:01:45.976Z"
+  },
+  {
+    "id": "art-1794481291581-e3ade",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://medium.com/@smoking2man/working-without-unnecessary-intermediaries-how-ai-is-changing-the-economics-of-software-tools-364087d37d33",
+    "published_at": "2026-11-12T10:47:33.000Z",
+    "og_image_url": null,
+    "title_ja": "AIが変えるソフトウェア経済：複雑な中間ツールを排除し直接的なワークフローを実現する「AIネイティブ」な開発手法の正体",
+    "summary_ja": "AIの進化により、従来のソフトウェア開発で不可欠だった中間ツールや複雑なワークフローが不要になりつつある。 AIを単なる補助機能ではなく、コアな推論エンジンとして活用することで、データ処理と実行の距離を短縮する新しい開発パラダイムが生まれている。 開発者は既存のSaaSスタックを再考し、AIを直接組み込んだ効率的かつ低コストなアーキテクチャへと移行すべきだ。 余計な仲介層を排除することが、次世代のアプリ開発における最大の競争優位性となる。",
+    "translations": {
+      "ja": {
+        "title": "AIが変えるソフトウェア経済：複雑な中間ツールを排除し直接的なワークフローを実現する「AIネイティブ」な開発手法の正体",
+        "summary": "AIの進化により、従来のソフトウェア開発で不可欠だった中間ツールや複雑なワークフローが不要になりつつある。 AIを単なる補助機能ではなく、コアな推論エンジンとして活用することで、データ処理と実行の距離を短縮する新しい開発パラダイムが生まれている。 開発者は既存のSaaSスタックを再考し、AIを直接組み込んだ効率的かつ低コストなアーキテクチャへと移行すべきだ。 余計な仲介層を排除することが、次世代のアプリ開発における最大の競争優位性となる。"
+      },
+      "en": {
+        "title": "How AI-native workflows are eliminating legacy software intermediaries to fundamentally reshape the economics of modern development",
+        "summary": "The rise of AI is stripping away the complex middleware and unnecessary tool chains that have long defined software development. By leveraging AI as a primary reasoning engine rather than a mere plugin, builders are shortening the distance between raw data and actionable output, creating a new paradigm of AI-native applications. This shift challenges the conventional reliance on bloated SaaS stacks, forcing developers to prioritize lean, high-performance architectures that integrate AI at the core. The lesson here is clear: the most efficient applications of the future will be defined by their simplicity and lack of friction. Developers who successfully strip out these obsolete intermediary layers will achieve a massive competitive advantage in both speed and cost-efficiency."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-12T11:01:31.581Z"
+  },
+  {
     "id": "art-1794480420638-4yx1j",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -16351,32 +16455,6 @@
     "created_at": "2026-11-10T14:48:26.859Z"
   },
   {
-    "id": "art-1794322055425-l7nnq",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/allegromoltov/n/n694bafe17a02",
-    "published_at": "2026-11-10T14:42:23.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/334640518/rectangle_large_type_2_73d9470f7237791cb6a4ed4a110a311e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "OBSプラグインの検索と共有をAI支援で効率化、カタログサイト「配信プラグイン倉庫くん」を個人開発で公開",
-    "summary_ja": "OBS Studio向けのプラグインをAIのサポートを活用して効率的に検索・登録できる新サービス「配信プラグイン倉庫くん」が公開された。 複雑なエコシステムを持つOBSプラグインの情報を集約し、開発者や配信者が目的に合ったツールを簡単に見つけられることを目指す。 個人開発において、特定のニッチな課題に対しAIを相棒として実装を進めることで、短期間で有益なコミュニティツールを立ち上げられる事例である。",
-    "translations": {
-      "ja": {
-        "title": "OBSプラグインの検索と共有をAI支援で効率化、カタログサイト「配信プラグイン倉庫くん」を個人開発で公開",
-        "summary": "OBS Studio向けのプラグインをAIのサポートを活用して効率的に検索・登録できる新サービス「配信プラグイン倉庫くん」が公開された。 複雑なエコシステムを持つOBSプラグインの情報を集約し、開発者や配信者が目的に合ったツールを簡単に見つけられることを目指す。 個人開発において、特定のニッチな課題に対しAIを相棒として実装を進めることで、短期間で有益なコミュニティツールを立ち上げられる事例である。"
-      },
-      "en": {
-        "title": "Developer launches 'OBS Plugin Warehouse,' an AI-assisted catalog site to streamline finding and sharing OBS Studio tools",
-        "summary": "A new platform called 'OBS Plugin Warehouse' has launched, aiming to simplify the discovery and submission of extensions for OBS Studio. By leveraging AI assistants during the development process, the creator consolidated this fragmented ecosystem into a searchable, user-friendly catalog designed for streamers and developers alike. The project demonstrates the power of AI-assisted solo development: identifying a specific, underserved pain point within a niche community and building a functional solution rapidly. For indie developers, this serves as a compelling case study on how to utilize LLMs as a coding partner to ship utility-focused community tools that provide genuine value without requiring large teams or excessive development overhead."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-10T14:47:35.425Z"
-  },
-  {
     "id": "art-1794322012988-n7y3e",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -16668,32 +16746,6 @@
       "開発"
     ],
     "created_at": "2026-11-10T13:48:03.352Z"
-  },
-  {
-    "id": "art-1794318474089-o5vvb",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/7mpy/items/5710fef43ba0e59204c6",
-    "published_at": "2026-11-10T13:38:25.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzU3MzUlMkY3MTE0ZmM1NTUwNDdkNDcxMTkyYjQ0ZTZmZDRkODI4N2E2ZjIyNDVhJTJGeF9sYXJnZS5wbmclM0YxNjg0MTEwMDQ2P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz02Mzc1ODY5Y2ExMDM0YzFmNzZjY2RkYmE5Y2JhOTcwYw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D08949436fc9b26ad84a8ef3a9530d628?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9RmFibGUlMjA1LjIlRTMlODElQTdHVEElMjA2JTIwT3Nha2ElMjBDaXR5JUUzJTgyJTkyJUU0JUJEJTlDJUUzJTgxJUEzJUUzJTgxJUE2JUUzJTgxJUJGJUUzJTgxJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YjEyYjhlNzEwNTgzM2I4Y2E4Yzk4YmZlMjE4M2JiYWM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDA3bXB5JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9OWNkY2VjN2Q3MzA1NTVmOWI2ZjNlYjZmMDJmMDJiNWU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=13784e67372b3cdcc378414c6fc505f0",
-    "title_ja": "Claude Fable 5.2で『GTA 6』風の大阪オープンワールドを構築――ブラウザ上で通天閣やハルカスを散策・ドライブ可能なデモが公開",
-    "summary_ja": "Claude Fable 5.2を活用し、ブラウザで動作する『GTA 6』風の大阪オープンワールドゲームを開発。 通天閣や新世界、あべのハルカス周辺の街並みを再現し、プレイヤーが自由に探索や車の運転を楽しめるデモ環境が完成した。 AIによる生成ツールは、単なるコード補完を超え、複雑な3D環境のプロトタイピングやインタラクティブなゲームデザインの迅速な構築において強力な選択肢となりつつある。",
-    "translations": {
-      "ja": {
-        "title": "Claude Fable 5.2で『GTA 6』風の大阪オープンワールドを構築――ブラウザ上で通天閣やハルカスを散策・ドライブ可能なデモが公開",
-        "summary": "Claude Fable 5.2を活用し、ブラウザで動作する『GTA 6』風の大阪オープンワールドゲームを開発。 通天閣や新世界、あべのハルカス周辺の街並みを再現し、プレイヤーが自由に探索や車の運転を楽しめるデモ環境が完成した。 AIによる生成ツールは、単なるコード補完を超え、複雑な3D環境のプロトタイピングやインタラクティブなゲームデザインの迅速な構築において強力な選択肢となりつつある。"
-      },
-      "en": {
-        "title": "Building a GTA 6-style Osaka open world in browser using Claude Fable 5.2 for interactive city exploration and driving",
-        "summary": "A developer has utilized Claude Fable 5.2 to construct an ambitious, browser-based open-world game inspired by the GTA 6 aesthetic, specifically set within the vibrant streets of Osaka. The playable demo enables users to freely navigate iconic landmarks like Tsutenkaku, the Shinsekai district, and the area surrounding Abeno Harukas, complete with vehicle driving mechanics. This project highlights the evolving capabilities of AI-driven development tools, demonstrating that they are now sophisticated enough to handle complex 3D world building and rapid prototyping of interactive environments. For independent creators, this validates that high-fidelity gaming experiences can be conceptualized and deployed with significant speed, pushing past the traditional barriers of game engine expertise and complex asset production."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-10T13:47:54.089Z"
   },
   {
     "id": "art-1794318440875-5yvzt",
@@ -17098,32 +17150,6 @@
       "研究"
     ],
     "created_at": "2026-11-10T12:01:48.772Z"
-  },
-  {
-    "id": "art-1794311316780-nyme6",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://grai.page/#test",
-    "published_at": "2026-11-10T11:41:37.000Z",
-    "og_image_url": "https://grai.page/assets/grai-social-card.png",
-    "title_ja": "AIドラフトの品質管理を自動化する「Grai」が登場：決定論的なゲート制御で生成物のばらつきを排除し、コンテンツ生成ワークフローを最適化",
-    "summary_ja": "Graiは、予測不能なAIによるドラフト生成を「決定論的なゲート（検証層）」で制御し、出力の一貫性を強制する新しいフレームワークだ。 生成モデルが自由にテキストを書き出すのではなく、あらかじめ定義したステップやルールに基づき検証を行いながら進行することで、品質管理を自動化する。 AIのハルシネーションや構成の乱れに悩む開発者にとって、生成プロセスを「ブラックボックス」から「制御可能なフロー」へ転換する強力な選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIドラフトの品質管理を自動化する「Grai」が登場：決定論的なゲート制御で生成物のばらつきを排除し、コンテンツ生成ワークフローを最適化",
-        "summary": "Graiは、予測不能なAIによるドラフト生成を「決定論的なゲート（検証層）」で制御し、出力の一貫性を強制する新しいフレームワークだ。 生成モデルが自由にテキストを書き出すのではなく、あらかじめ定義したステップやルールに基づき検証を行いながら進行することで、品質管理を自動化する。 AIのハルシネーションや構成の乱れに悩む開発者にとって、生成プロセスを「ブラックボックス」から「制御可能なフロー」へ転換する強力な選択肢となるだろう。"
-      },
-      "en": {
-        "title": "Grai Launches a Deterministic Cadence Gate to Enforce Structure and Reliability in AI Draft Generation Workflows",
-        "summary": "Grai introduces a deterministic \"cadence gate\" designed to tackle the unpredictability inherent in AI-generated drafts by enforcing strict structural validation at every stage. Rather than letting AI models output text freely, this framework mandates that the generation process adhere to predefined steps, effectively acting as an automated quality control layer that blocks erratic or non-compliant content. For developers building content pipelines, this shifts the paradigm from treating AI output as an opaque black box to creating a verifiable, step-by-step production flow. It provides a crucial architectural pattern for minimizing hallucinations and ensuring consistent output quality, making it an essential utility for anyone scaling AI writing tools that require high reliability and predictable formatting."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-10T11:48:36.780Z"
   },
   {
     "id": "art-1794311203124-m6bjq",
@@ -24124,32 +24150,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-08T21:46:37.470Z"
-  },
-  {
-    "id": "art-1794173500681-bw6be",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/hilopon/articles/local-vlm-ocr-confident-misread",
-    "published_at": "2026-11-08T21:30:44.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---iRJdOHM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E9%25A7%2590%25E8%25BB%258A%25E5%25A0%25B4%25E3%2581%25AF%25E3%2581%2582%25E3%2582%258A%25E3%2581%25BE%25E3%2581%259B%25E3%2582%2593%25E3%2580%258D%25E3%2581%258C%25E3%2580%258C%25E3%2581%2582%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2599%25E3%2580%258D%25E3%2581%25A7%25E8%25BF%2594%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%258D%25E3%2581%259F%25E3%2580%2582%25E5%25B0%258F%25E3%2581%2595%25E3%2581%25AA%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25ABLLM%25E3%2581%25AE%25E5%2586%2599%25E7%259C%259F%25E8%25AA%25AD%25E3%2581%25BF%25E5%258F%2596%25E3%2582%258A%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BF%25E3%2582%2593%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%258A%25E3%2581%259F%25E3%2581%2599%25E3%2581%2591%25E7%25A0%2594%25E7%25A9%25B6%25E6%2589%2580%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ4NDVhNDFlNTQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Ollamaとqwen3-vl:4bで構築するローカルLLM画像認識：暗所や斜め撮影でもテキスト抽出を成功させる実証と限界",
-    "summary_ja": "自宅PC上でOllamaを活用し、40億パラメータの軽量モデル「qwen3-vl:4b-instruct」を動かす画像文字認識環境の検証記事。 LINEで送られた画像から、暗所や斜め撮影といった悪条件下のテキストでも高い精度で抽出できることを確認した。 単なる理論検証に留まらず、実運用を想定した厳しい環境下での挙動を把握することは、軽量LLMを個人開発サービスに組み込む際のUX設計において極めて重要である。",
-    "translations": {
-      "ja": {
-        "title": "Ollamaとqwen3-vl:4bで構築するローカルLLM画像認識：暗所や斜め撮影でもテキスト抽出を成功させる実証と限界",
-        "summary": "自宅PC上でOllamaを活用し、40億パラメータの軽量モデル「qwen3-vl:4b-instruct」を動かす画像文字認識環境の検証記事。 LINEで送られた画像から、暗所や斜め撮影といった悪条件下のテキストでも高い精度で抽出できることを確認した。 単なる理論検証に留まらず、実運用を想定した厳しい環境下での挙動を把握することは、軽量LLMを個人開発サービスに組み込む際のUX設計において極めて重要である。"
-      },
-      "en": {
-        "title": "Running local image OCR with Ollama and qwen3-vl:4b: Testing real-world character extraction under poor lighting and tilt",
-        "summary": "This technical deep-dive examines using the 4B parameter model, qwen3-vl:4b-instruct, via Ollama to handle image-to-text tasks locally on a home gaming PC. By sending images through LINE and testing them against intentionally suboptimal conditions—such as low light or skewed angles—the author demonstrates that small language models can deliver surprisingly robust OCR performance in practical settings. For developers integrating AI into personal projects, this highlights the viability of lightweight, self-hosted models for vision tasks. Understanding the specific failure modes and success thresholds of these smaller models is a critical step before deploying AI-driven features, as it directly impacts both infrastructure costs and user experience reliability in real-world application workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-08T21:31:40.681Z"
   },
   {
     "id": "art-1794160904632-tr3bw",
