@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794478634244-vusgh",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://chohaninsight.com/blog/ai-customer-driven-development/",
+    "published_at": "2026-11-12T09:33:45.000Z",
+    "og_image_url": "https://chohaninsight.com/static/brand/logo-512.73454f0e8021.png",
+    "title_ja": "AI活用による「顧客主導型開発」の実践手法：AIエージェントを壁打ち相手にPMがユーザー理解を深めプロダクトへ反映させるワークフロー",
+    "summary_ja": "「AI Customer Driven Development」は、AIエージェントを仮想の顧客やペルソナとして活用し、開発者が対話を通じてニーズを深掘りする手法だ。 従来のユーザーインタビューのコストを削減しつつ、仮説検証のサイクルを劇的に加速できる。 ただAIの回答を鵜呑みにせず、実際の市場データと組み合わせることが重要である。 開発の初期段階でユーザーの潜在的な課題を炙り出し、ビルド前にプロダクトのフィット感を高めるための現実的なアプローチとして注目される。",
+    "translations": {
+      "ja": {
+        "title": "AI活用による「顧客主導型開発」の実践手法：AIエージェントを壁打ち相手にPMがユーザー理解を深めプロダクトへ反映させるワークフロー",
+        "summary": "「AI Customer Driven Development」は、AIエージェントを仮想の顧客やペルソナとして活用し、開発者が対話を通じてニーズを深掘りする手法だ。 従来のユーザーインタビューのコストを削減しつつ、仮説検証のサイクルを劇的に加速できる。 ただAIの回答を鵜呑みにせず、実際の市場データと組み合わせることが重要である。 開発の初期段階でユーザーの潜在的な課題を炙り出し、ビルド前にプロダクトのフィット感を高めるための現実的なアプローチとして注目される。"
+      },
+      "en": {
+        "title": "AI Customer Driven Development: Using LLM Agents to Simulate User Feedback Loops and Accelerate Product Discovery Cycles",
+        "summary": "The concept of 'AI Customer Driven Development' reframes how builders utilize LLM agents, positioning them not just as coding assistants but as simulated users or personas to conduct continuous product discovery. By engaging with these agents early in the ideation phase, developers can stress-test hypotheses and explore potential pain points before committing to code, drastically tightening the feedback loop. This approach significantly reduces the time and cost barriers of traditional user interviews while keeping the team aligned on potential user intent. However, builders must validate these synthetic insights against real-world market signals to avoid hallucinations. For engineering-heavy teams, this workflow provides a practical method to refine product-market fit before finalizing features, essentially moving user-centric validation into the pre-coding sprint."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-12T10:17:14.244Z"
+  },
+  {
+    "id": "art-1794478624264-c4t5j",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/akariya_hakoniwa/n/n617e7d8e6e30",
+    "published_at": "2026-11-12T09:38:21.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335268033/rectangle_large_type_2_6f35255cda7f2755877bdd8fbd4139f3.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "作業フォルダ移行の罠：特定スクリプトだけ旧パスを参照し定期実行が全滅、エラー通知なしで沈黙した原因と再発防止策",
+    "summary_ja": "開発環境のフォルダ整理を行った際、移行漏れにより7本の定期実行スクリプトだけが旧パスを参照し続け、気づかぬうちに動作が停止していた事例。 エラー通知すら飛ばない「沈黙の失敗」は、絶対パスのハードコードや環境変数管理の甘さが主因だ。 コードベースの移動時には、相対パスへの置換や、CI/CDでパス依存関係を自動検証する仕組みを導入し、意図しない場所での稼働を防ぐ運用が不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "作業フォルダ移行の罠：特定スクリプトだけ旧パスを参照し定期実行が全滅、エラー通知なしで沈黙した原因と再発防止策",
+        "summary": "開発環境のフォルダ整理を行った際、移行漏れにより7本の定期実行スクリプトだけが旧パスを参照し続け、気づかぬうちに動作が停止していた事例。 エラー通知すら飛ばない「沈黙の失敗」は、絶対パスのハードコードや環境変数管理の甘さが主因だ。 コードベースの移動時には、相対パスへの置換や、CI/CDでパス依存関係を自動検証する仕組みを導入し、意図しない場所での稼働を防ぐ運用が不可欠である。"
+      },
+      "en": {
+        "title": "Debugging the silent failure: Why moving project folders broke 7 scheduled tasks without triggering any error alerts",
+        "summary": "A developer discovered that moving a project directory caused seven specific scheduled scripts to fail silently because they were still referencing hardcoded paths in the old folder location. Because these scripts didn't trigger any error notifications or logs, the failure went unnoticed until a routine newsletter check failed on Saturday morning. The root cause was hardcoded absolute paths that bypassed environment configurations, illustrating why path-dependent scripts are a liability. For builders, the takeaway is to avoid absolute paths entirely in favor of relative paths or centrally managed environment variables. Furthermore, implementing automated CI/CD checks that validate runtime paths before deployment is critical to ensure that moving codebases doesn't result in silent, mission-critical failures that only come to light after business impact."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-12T10:17:04.264Z"
+  },
+  {
+    "id": "art-1794478617790-auvfx",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/nrouter_ai1991/items/199eda60ef2dfa923aa9",
+    "published_at": "2026-11-12T09:54:59.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDg4MDkxJTJGMTk2ZWM4ZWI1MGMzZDE0MDlmMzIyMjJiNDNkMjU2YzVmMjE0OTczZSUyRmxhcmdlLnBuZyUzRjE3ODcxMzYwODM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWJlMjY3NjI4NmU5YWUzMTA2OGY3YTEzNTBmZWNhMWNm%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D771476466277c60e9d6196adcec188e2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9blJvdXRlciVFMyU4MSVBRSVFMyU4MyVBMiVFMyU4MyU4NyVFMyU4MyVBQiVFMyU4MiVBQiVFMyU4MiVCRiVFMyU4MyVBRCVFMyU4MiVCMCVFMyU4MiU5MiVFOCVBQSVBRCVFMyU4MiU4MCVFRiVCQyU5QWRlbnklRTMlODElOEMlRTUlQjglQjglRTMlODElQUIlRTUlODQlQUElRTUlODUlODglRTMlODElOTUlRTMlODIlOEMlRTMlODIlOEJSQkFDJUU4JUE4JUFEJUU4JUE4JTg4JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZjQyYzMzMGY1YzExZGFkNzdhZjJhMjY0YjkzYTE0YTA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBucm91dGVyX2FpMTk5MSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWVkZTExOWYyZWU2NTg0MWI3NTk4MzM0MjQ3NTYxY2Fk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=595449bea7292ee2dd5aff71ff96d1ef",
+    "title_ja": "nRouterのモデルカタログとRBAC設計：deny優先ルールで管理するLLMアクセスの最適解",
+    "summary_ja": "nRouterのモデルカタログ（/models）は、複数のAIプロバイダーを横断して利用可能なLLMを統一エンドポイントで管理する基盤だ。 特筆すべきはRBAC（ロールベースアクセス制御）の設計思想で、個別の許可よりも「deny（拒否）」設定が常に優先される仕組みを採用している。 これにより、特定のモデルやプロバイダーへのアクセスを一括で制限しやすく、複雑化するLLM利用環境において安全なガバナンスとコスト管理を両立できる。",
+    "translations": {
+      "ja": {
+        "title": "nRouterのモデルカタログとRBAC設計：deny優先ルールで管理するLLMアクセスの最適解",
+        "summary": "nRouterのモデルカタログ（/models）は、複数のAIプロバイダーを横断して利用可能なLLMを統一エンドポイントで管理する基盤だ。 特筆すべきはRBAC（ロールベースアクセス制御）の設計思想で、個別の許可よりも「deny（拒否）」設定が常に優先される仕組みを採用している。 これにより、特定のモデルやプロバイダーへのアクセスを一括で制限しやすく、複雑化するLLM利用環境において安全なガバナンスとコスト管理を両立できる。"
+      },
+      "en": {
+        "title": "nRouter model catalog and RBAC architecture: Enforcing deny-first security for unified LLM access management",
+        "summary": "The nRouter model catalog provides a unified endpoint for managing LLMs across diverse cloud providers, simplifying how organizations track live availability and model capabilities. Its RBAC architecture distinguishes itself by prioritizing an explicit \"deny\" rule over any granted permissions, a critical design choice for managing complex AI stacks. This strategy ensures that admins can instantly kill access to specific models or providers across an entire organization, preventing unauthorized usage or budget overruns. For builders integrating multiple LLMs, this architecture demonstrates that strict, deny-first governance is the only scalable way to maintain control over API spending and model compliance without creating granular, error-prone allow-lists for every single user or service."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-12T10:16:57.790Z"
+  },
+  {
+    "id": "art-1794478611558-bm1qa",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/minulo/articles/1a72922b0a2b63",
+    "published_at": "2026-11-12T01:39:34.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---BiAaRn9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:YouTube%2520%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%25A1%25E3%2583%25B3%25E3%2583%2588%25E6%25AC%2584%25E3%2582%2592%25E8%25A6%258B%25E3%2582%258B%25E5%2581%25B4%25E3%2581%25A7%25E6%25B6%2588%25E3%2581%2599%2520CSS%2520%25E3%2581%25AF3%25E6%259C%25AC%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25EF%25BC%259A%25E5%2585%25A5%25E5%258F%25A3%25E3%2583%25BB%25E4%25B8%258B%25E3%2581%258B%25E3%2582%2589%25E5%2587%25BA%25E3%2582%258B%25E3%2583%2591%25E3%2583%258D%25E3%2583%25AB%25E3%2583%25BBPC%2520%25E7%2589%2588%25E3%2581%25AE%2520%2523comm...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:minulo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzlGSGVsQUEzOTN6ZTYtaURZWlEwN2hVaWJ5Y2FxeWJHMTJyQWFDRTZQejhxSTJRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "YouTubeのコメント欄をCSSで強制非表示に―iOSアプリ「minulo」開発者が実装した3箇所のDOM特定とフィルタリング手法",
+    "summary_ja": "YouTube公式WebをWKWebViewで内包するiOSアプリ「minulo」の開発者が、ユーザー側でコメント欄を完全に非表示にするためのCSS実装を公開した。 YouTubeはクリエイター向けの設定しか提供していないため、開発者は動画の入口、下から出現するパネル、PC版UIの「#comments」という3箇所を個別に特定し、CSSで隠すことで対応した。",
+    "translations": {
+      "ja": {
+        "title": "YouTubeのコメント欄をCSSで強制非表示に―iOSアプリ「minulo」開発者が実装した3箇所のDOM特定とフィルタリング手法",
+        "summary": "YouTube公式WebをWKWebViewで内包するiOSアプリ「minulo」の開発者が、ユーザー側でコメント欄を完全に非表示にするためのCSS実装を公開した。 YouTubeはクリエイター向けの設定しか提供していないため、開発者は動画の入口、下から出現するパネル、PC版UIの「#comments」という3箇所を個別に特定し、CSSで隠すことで対応した。"
+      },
+      "en": {
+        "title": "How the 'minulo' iOS app uses custom CSS to force-hide YouTube comment sections for a distraction-free viewing experience",
+        "summary": "The developer behind 'minulo', an iOS app wrapping the official YouTube web interface via WKWebView, has detailed their approach to hiding comment sections on the user side. Since YouTube’s native settings only allow creators to manage their own comments, the developer implemented custom CSS rules to surgically target and hide comments across three distinct UI elements: the video entrance, the bottom-slide panel, and the desktop-style '#comments' container. For developers building wrappers or browser-based tools, this serves as a practical lesson in DOM inspection and UI filtering to customize web experiences. By injecting these specific CSS overrides, the app effectively strips away engagement-bait distractions, offering a cleaner, focused viewing environment that the platform itself refuses to provide."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-12T10:16:51.558Z"
+  },
+  {
     "id": "art-1794477740462-ikhoj",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -16343,33 +16448,6 @@
     "created_at": "2026-11-10T14:08:11.889Z"
   },
   {
-    "id": "art-1794319685140-ai5qs",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/mana_camp0626/n/n43df8b821ddb",
-    "published_at": "2026-11-10T13:55:33.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/a75ccf28b4cf65d16d73747969d2b82a6e073324.png",
-    "title_ja": "「kaidoki」の自動投稿システムが機能停止へ、長大な331ページにおよぶ新コンテンツは11月10日に一発稼働成功（運用・自動化の教訓）",
-    "summary_ja": "個人開発サイト「kaidoki」で運用していた自動記事投稿システムが突然停止するというトラブルが発生。 そんな中、11月10日には331ページに及ぶ大規模なコンテンツ更新が一度の操作で無事に完了した。 自動化の恩恵は大きいが、依存しすぎると今回のように予期せぬ停止で足元をすくわれる。 開発者は、システムが動かない緊急時でも手動でリカバリーできる冗長性や運用の柔軟性をあらかじめ確保しておくべきだ。",
-    "translations": {
-      "ja": {
-        "title": "「kaidoki」の自動投稿システムが機能停止へ、長大な331ページにおよぶ新コンテンツは11月10日に一発稼働成功（運用・自動化の教訓）",
-        "summary": "個人開発サイト「kaidoki」で運用していた自動記事投稿システムが突然停止するというトラブルが発生。 そんな中、11月10日には331ページに及ぶ大規模なコンテンツ更新が一度の操作で無事に完了した。 自動化の恩恵は大きいが、依存しすぎると今回のように予期せぬ停止で足元をすくわれる。 開発者は、システムが動かない緊急時でも手動でリカバリーできる冗長性や運用の柔軟性をあらかじめ確保しておくべきだ。"
-      },
-      "en": {
-        "title": "Automation failure at personal project 'kaidoki' leads to manual breakthrough as 331-page content update successfully deploys on November 10th",
-        "summary": "The personal development project 'kaidoki' recently suffered a complete breakdown in its automated content publishing pipeline, forcing a reconsideration of how the site handles updates. Despite the system failure, the developer successfully pushed a massive 331-page update on November 10th in a single, manual operation. While automated workflows provide immense leverage for solo builders, relying too heavily on them introduces fragility when pipelines unexpectedly halt. This incident serves as a stark reminder for independent developers to build redundancy into their infrastructure and maintain the capability to execute critical updates manually. If your automation layer fails, your project should still be able to ship; always prioritize operational resilience alongside build efficiency to ensure long-term site stability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "アップデート"
-    ],
-    "created_at": "2026-11-10T14:08:05.140Z"
-  },
-  {
     "id": "art-1794319391668-x0k18",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -16718,32 +16796,6 @@
     "created_at": "2026-11-10T12:50:20.960Z"
   },
   {
-    "id": "art-1794314826497-efizf",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/miyaura/items/0f8262882eb9da5a9809",
-    "published_at": "2026-11-10T12:19:54.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMTUyNTQ4JTJGcHJvZmlsZS1pbWFnZXMlMkYxNjE2MDE4MjQxP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0wYWUzODk4ZTY4YThmYzgzNTY3MGQxNWQwODk1YjBjZg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df714c3dea15b5dda3b192f2cc60462bb?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Vm9pY2UlMjBMaXZlJUUzJTgxJUE3Rm91bmRyeSVFMyU4MSVBRSVFMyU4MiVBOCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MiU5MiVFMyU4MyU4NCVFMyU4MyVCQyVFMyU4MyVBQiVFMyU4MSVBOCVFMyU4MSU5NyVFMyU4MSVBNiVFNSU5MSVCQyVFMyU4MSVCNiUyMC0lMjBjaGF0LXN1cGVydmlzb3IlRTMlODMlOTElRTMlODIlQkYlRTMlODMlQkMlRTMlODMlQjMlRTMlODElQUUlRTQlQkQlQkYlRTMlODElODQlRTYlOTYlQjklRTMlODElQTglRTUlODklOEQlRTYlQUUlQjUlRTMlODMlQTIlRTMlODMlODclRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yZGNlMmFmODIzMmQ1NmRmZmE5MjVkZDUzOTM1NTM5ZA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtaXlhdXJhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZGIxMDI3ZjI3Y2NhZmYwNTZkNTM5MmQzMDNlZWQ2ZTI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=adf84b8d2a0786734c98c040b0ec16b1",
-    "title_ja": "Voice LiveでFoundryエージェントをツール連携させる「chat-supervisor」構成と最適モデル選択の勘所",
-    "summary_ja": "Voice Live環境において、Foundryのエージェントをツールとして呼び出す「chat-supervisor」パターンの実装手法を解説する。 挨拶や雑談などの汎用的な対話と、製品仕様といった専門知識が必要な処理を適切に分離・管理する設計が重要だ。 前段に配置するルーターモデルの選定基準と、マルチエージェントを効率的に運用するための設計哲学について、具体的なユースケースを交えて深掘りする。",
-    "translations": {
-      "ja": {
-        "title": "Voice LiveでFoundryエージェントをツール連携させる「chat-supervisor」構成と最適モデル選択の勘所",
-        "summary": "Voice Live環境において、Foundryのエージェントをツールとして呼び出す「chat-supervisor」パターンの実装手法を解説する。 挨拶や雑談などの汎用的な対話と、製品仕様といった専門知識が必要な処理を適切に分離・管理する設計が重要だ。 前段に配置するルーターモデルの選定基準と、マルチエージェントを効率的に運用するための設計哲学について、具体的なユースケースを交えて深掘りする。"
-      },
-      "en": {
-        "title": "Implementing the chat-supervisor pattern: Orchestrating Foundry agents as tools within Voice Live environments",
-        "summary": "This technical guide explores the chat-supervisor pattern for integrating Foundry agents as tools within Voice Live setups. As modern agentic workflows grow increasingly complex, handling generic conversational chit-chat versus domain-specific tasks requires a robust orchestration layer. The piece details how to select and prompt the upstream routing model to effectively delegate tasks, ensuring specialized knowledge bases are only queried when necessary. Builders will learn how to structure multi-agent architectures that maintain low latency while ensuring high-quality responses for both routine greetings and complex procedural inquiries. Mastering this delegative approach is essential for scaling AI systems that handle both natural interaction and precise, knowledge-intensive operations without overwhelming individual backend agents."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-10T12:47:06.497Z"
-  },
-  {
     "id": "art-1794314809638-ubnoz",
     "source_id": "source-openai",
     "source_name": "OpenAI 公式",
@@ -17087,58 +17139,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-10T11:17:11.723Z"
-  },
-  {
-    "id": "art-1794309397803-e11lx",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://markets.namebeam.ai/studies/three-engines-agreement-2026-10-24-to-11-09/",
-    "published_at": "2026-11-10T11:00:53.000Z",
-    "og_image_url": null,
-    "title_ja": "AI検索エンジン3種の実態調査：ローカルビジネス推薦の一致度とアルゴリズムによる回答の乖離を徹底検証",
-    "summary_ja": "Namebeamが実施した調査により、主要なAI検索エンジン3種が特定の地域ビジネスを推薦する際の一致度が極めて低いことが明らかになった。 異なるモデルは全く異なる場所を推奨するケースが多く、検索アルゴリズムがローカル情報の収集においていかに予測不可能な挙動を示すかを浮き彫りにした。 開発者やビジネスオーナーにとって、AI検索結果への依存はリスクであり、SEO対策においても単一のプラットフォームでの最適化が通用しない時代が到来していることを示唆している。",
-    "translations": {
-      "ja": {
-        "title": "AI検索エンジン3種の実態調査：ローカルビジネス推薦の一致度とアルゴリズムによる回答の乖離を徹底検証",
-        "summary": "Namebeamが実施した調査により、主要なAI検索エンジン3種が特定の地域ビジネスを推薦する際の一致度が極めて低いことが明らかになった。 異なるモデルは全く異なる場所を推奨するケースが多く、検索アルゴリズムがローカル情報の収集においていかに予測不可能な挙動を示すかを浮き彫りにした。 開発者やビジネスオーナーにとって、AI検索結果への依存はリスクであり、SEO対策においても単一のプラットフォームでの最適化が通用しない時代が到来していることを示唆している。"
-      },
-      "en": {
-        "title": "AI Search Engines Disagree: A Deep Dive into How Frequently Three Engines Recommend the Same Local Businesses",
-        "summary": "A recent study by Namebeam reveals a surprising lack of consensus among three major AI search engines when recommending local businesses to users. The findings highlight that these models frequently suggest entirely different locations for the same query, demonstrating how current search algorithms exhibit high variance and unpredictability in retrieving regional data. For developers and business owners, this data serves as a stark warning: relying solely on AI search visibility is risky, and the era where one-size-fits-all SEO optimization guarantees consistent results is effectively over. Builders must account for this fragmentation, as AI-driven discovery is currently too inconsistent to serve as a single point of truth for local consumer intent."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "マーケ・集客・ASO",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-10T11:16:37.803Z"
-  },
-  {
-    "id": "art-1794308653004-fbncq",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://rsbh.dev/notes/technical-writing-in-the-ai-era",
-    "published_at": "2026-11-10T10:53:21.000Z",
-    "og_image_url": "https://rsbh.dev/api/og-image?title=Technical%20writing%20in%20the%20AI%20Era",
-    "title_ja": "AI時代の技術ドキュメント執筆術：AI生成ツールを活用しながら「人間らしい洞察」を維持する実践的なワークフローを解説",
-    "summary_ja": "AIがコードや文章を自動生成する現代において、単なる情報伝達以上の価値を持つ技術文書はどう書くべきか。 AIを活用して下書きや構造化を効率化しつつ、人間の筆者が独自の洞察や文脈を深く掘り下げるための「ハイブリッドな執筆プロセス」が提案されている。 AI任せの単純な要約ではなく、開発者が自身の体験や判断基準を言語化することで、読者に対して真の技術的指針を提供することが重要である。",
-    "translations": {
-      "ja": {
-        "title": "AI時代の技術ドキュメント執筆術：AI生成ツールを活用しながら「人間らしい洞察」を維持する実践的なワークフローを解説",
-        "summary": "AIがコードや文章を自動生成する現代において、単なる情報伝達以上の価値を持つ技術文書はどう書くべきか。 AIを活用して下書きや構造化を効率化しつつ、人間の筆者が独自の洞察や文脈を深く掘り下げるための「ハイブリッドな執筆プロセス」が提案されている。 AI任せの単純な要約ではなく、開発者が自身の体験や判断基準を言語化することで、読者に対して真の技術的指針を提供することが重要である。"
-      },
-      "en": {
-        "title": "Technical writing in the AI era: Maintaining human insight while leveraging LLMs for drafting and structuring developer documentation",
-        "summary": "As generative AI handles boilerplate drafting and structural outlines, technical writing has shifted from raw information delivery to synthesizing unique human judgment and context. This guide explores a hybrid workflow where LLMs manage initial drafts and tedious formatting, allowing authors to focus on high-level architecture, personal experience, and critical edge cases that AI often misses. The core argument is that technical documentation must move beyond simple summarization to provide deep, actionable insights that reflect real-world problem solving. For developers and technical writers, the strategy is to treat AI as a research and drafting partner while reclaiming intellectual ownership over the narrative and technical opinion. Ultimately, this approach creates documentation that remains authentic and valuable in a saturated AI landscape."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-10T11:04:13.004Z"
   },
   {
     "id": "art-1794308644923-v75zk",
