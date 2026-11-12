@@ -1,5 +1,86 @@
 [
   {
+    "id": "art-1794517329328-wlr6x",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+    "published_at": "2026-11-12T20:51:55.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/10/ML-21479-featured-image-1.png",
+    "title_ja": "Amazon Bedrockのコストを最適化する4つの推論設定：推論努力量やキャッシュ期間の選定が請求額に与える影響",
+    "summary_ja": "Amazon Bedrockのコスト管理は、プロンプト調整だけでは不十分で、推論時の設定が直接的に請求額へ影響する。 AWSは「キャッシュ期間」「サービスティア」「推論努力量」「最大トークン数」の4つの設定がトークン処理量とレートにどう作用するかを検証し、コスト最適化の指針を公開した。 単価の安いモデルへの切り替えだけでなく、これらのリクエストレベルでのチューニングを行うことが、スケーリング時のコスト増を抑えるための開発者の必須スキルとなる。",
+    "translations": {
+      "ja": {
+        "title": "Amazon Bedrockのコストを最適化する4つの推論設定：推論努力量やキャッシュ期間の選定が請求額に与える影響",
+        "summary": "Amazon Bedrockのコスト管理は、プロンプト調整だけでは不十分で、推論時の設定が直接的に請求額へ影響する。 AWSは「キャッシュ期間」「サービスティア」「推論努力量」「最大トークン数」の4つの設定がトークン処理量とレートにどう作用するかを検証し、コスト最適化の指針を公開した。 単価の安いモデルへの切り替えだけでなく、これらのリクエストレベルでのチューニングを行うことが、スケーリング時のコスト増を抑えるための開発者の必須スキルとなる。"
+      },
+      "en": {
+        "title": "Amazon Bedrock cost optimization: 4 inference configuration levers that change your monthly bill",
+        "summary": "Managing Amazon Bedrock costs requires more than just prompt engineering; specific inference-level choices directly dictate your consumption bill. AWS highlights four critical levers—cache duration, service tier, reasoning effort, and maxTokens—that fundamentally alter token processing volume and applied rates. This guide details how to rigorously test each parameter and verify the resulting cost impact. Beyond simply swapping models, builders must now master these request-level configurations to prevent unpredictable spikes as traffic scales. The practical takeaway is that integrating these tunable parameters into your application logic is no longer optional for maintaining budget efficiency; it is an essential component of modern LLM-powered backend architecture, ensuring operational costs remain predictable as user demand grows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-12T21:02:09.328Z"
+  },
+  {
+    "id": "art-1794517321701-ymcvb",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.733",
+    "published_at": "2026-11-12T20:54:50.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Webスクレイピング基盤Firecrawlが最新APIコンテナ「v2.11.733」をリリース、大規模データ変換パイプラインの安定運用を強化",
+    "summary_ja": "Webスクレイピング基盤「Firecrawl」が最新APIイメージ「v2.11.733」をリリースした。 本更新によりAPIコンテナの安定性とデプロイ効率が向上し、LLM向けデータ変換パイプラインの信頼性が高まっている。 セルフホスティング環境でFirecrawlを運用する開発者は、即時のイメージ更新とテスト環境での検証が推奨される。 堅牢なデータ取得パイプラインを構築する上で、コンテナイメージの細かな改善追従は不可欠なタスクだ。",
+    "translations": {
+      "ja": {
+        "title": "Webスクレイピング基盤Firecrawlが最新APIコンテナ「v2.11.733」をリリース、大規模データ変換パイプラインの安定運用を強化",
+        "summary": "Webスクレイピング基盤「Firecrawl」が最新APIイメージ「v2.11.733」をリリースした。 本更新によりAPIコンテナの安定性とデプロイ効率が向上し、LLM向けデータ変換パイプラインの信頼性が高まっている。 セルフホスティング環境でFirecrawlを運用する開発者は、即時のイメージ更新とテスト環境での検証が推奨される。 堅牢なデータ取得パイプラインを構築する上で、コンテナイメージの細かな改善追従は不可欠なタスクだ。"
+      },
+      "en": {
+        "title": "Firecrawl Releases API Container Image v2.11.733 to Bolster Stability for Scalable LLM Data Conversion Pipelines",
+        "summary": "Firecrawl has officially released its latest API container image, version v2.11.733, targeting improved stability and operational efficiency for developers running web-scraping-to-markdown pipelines. This update specifically enhances the reliability of containerized environments, ensuring that automated data conversion processes for LLMs remain robust under higher throughput loads. For engineering teams self-hosting Firecrawl, this version brings crucial optimizations that simplify deployment and minimize runtime friction in production stacks. As data ingestion becomes the primary bottleneck for high-performance AI applications, staying updated with these container refinements is essential for maintaining a seamless link between unstructured web content and your LLM context windows."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-12T21:02:01.701Z"
+  },
+  {
+    "id": "art-1794517313317-4coid",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/quotidia/items/f45fe0688216d162eb90",
+    "published_at": "2026-11-12T21:01:07.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQzMzI3MSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc3OTAwNzIzNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YWY5NDIyNzdmMjZlOGJhMzVmYmZlY2IwOGU2ZWQ2NTA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df59d4b48280797c581d3f62880665fc3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJUE2JUUzJTgzJThBJUUzJTgyJUE0JUUzJTgzJTg2JUUzJTgzJTgzJUUzJTgzJTg5JUU4JTg4JUFBJUU3JUE5JUJBJUUzJTgxJUFFQUklRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglRTUlODglQjYlRTklOTklOTAlRTMlODElQUUlRTglQTYlODElRTclODIlQjklRUYlQkMlOUElRTMlODIlQjUlRTMlODIlQTQlRTMlODMlODglRTMlODIlODIlRTQlQkIlQTMlRTclOTAlODYlRTUlQkElOTclRTclQjUlOEMlRTclOTQlQjElRTMlODIlODIlRTUlQUYlQkUlRTglQjElQTElRTMlODAlODElRTclOTAlODYlRTclOTQlQjElRTMlODElQUYlRTYlQkMlOEYlRTMlODElODglRTMlODElODQlRTMlODElQTglRTYlODQlOEYlRTUlOUIlQjMlRTMlODElOTclRTMlODElQUElRTMlODElODQlRTglQjMlQkMlRTUlODUlQTUlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1iN2Q2NWZlNmQxNGY2YjViOTNhMDBlZThmZTFjOGQ3MQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBxdW90aWRpYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTRhNjI0NjUzMTU4ODhjZWUzZDIxNjI0N2Q4Y2JjZDY2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c698a00a126822881610d1951b0a0eeb",
+    "title_ja": "ユナイテッド航空が外部AIエージェントの利用を制限へ：予約・発券業務へのスクレイピング禁止と不正購入防止の裏側を解説",
+    "summary_ja": "ユナイテッド航空は、公式ルートを通さない外部の個人向けAIエージェントによる航空券の予約や発券を全面的に制限する方針を発表した。 背景には、スクレイピングによる過度な負荷や意図しない決済トラブル、さらには個人情報の漏洩リスクに対する深刻な懸念がある。 航空業界では今後、APIを通じた公式な連携のみを許可する動きが加速する見込みであり、個人開発者やAIツールベンダーは、独自のスクレイピング依存モデルから脱却し、公式提携や規制対応を前提とした開発パイプラインへの転換が急務となる。",
+    "translations": {
+      "ja": {
+        "title": "ユナイテッド航空が外部AIエージェントの利用を制限へ：予約・発券業務へのスクレイピング禁止と不正購入防止の裏側を解説",
+        "summary": "ユナイテッド航空は、公式ルートを通さない外部の個人向けAIエージェントによる航空券の予約や発券を全面的に制限する方針を発表した。 背景には、スクレイピングによる過度な負荷や意図しない決済トラブル、さらには個人情報の漏洩リスクに対する深刻な懸念がある。 航空業界では今後、APIを通じた公式な連携のみを許可する動きが加速する見込みであり、個人開発者やAIツールベンダーは、独自のスクレイピング依存モデルから脱却し、公式提携や規制対応を前提とした開発パイプラインへの転換が急務となる。"
+      },
+      "en": {
+        "title": "United Airlines cracks down on unauthorized AI travel agents, blocking scraping and unapproved booking flows for safety",
+        "summary": "United Airlines has officially moved to restrict external consumer AI agents from booking flights or issuing tickets on its platform, citing critical security concerns regarding data leakage, unauthorized transactions, and excessive server load from automated scraping. This decision signals a broader trend within the airline industry where companies are reclaiming control over distribution channels by phasing out unofficial AI scrapers in favor of authorized API integrations. For developers building in the travel tech space, relying on scraping to power booking agents is increasingly becoming a liability. The primary takeaway is that the era of 'free-for-all' AI travel aggregation is effectively ending, requiring builders to pivot toward formal partnerships or compliant, API-first architecture to survive in this tightening regulatory landscape."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-12T21:01:53.317Z"
+  },
+  {
     "id": "art-1794516466150-s55wl",
     "source_id": "source-copyai",
     "source_name": "Copy.ai Blog",
@@ -14877,32 +14958,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T05:46:40.378Z"
-  },
-  {
-    "id": "art-1794375104240-fpipg",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/axzxs2001/items/d8cf9761fe0dfb83b345",
-    "published_at": "2026-11-11T05:24:34.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY1MzgwMTAlMkZkOTZhZGFhYWY5NTA5ZGIwYWVmZTIyNmVlZWU2OTA3MDg5Y2M2ZGU4JTJGbGFyZ2UucG5nJTNGMTcwNjk2MDQyOT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YmMxMDNmYTUyY2E3OGFlNDQwNWE2MTU3ZjU3NDA5ZmI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dcc57b9088ef6b6b05893d4e5f982b5bf?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JTIzJTIwLk5FVCUyMDExJUUzJTgxJThDJUU2JUFEJUEzJUU1JUJDJThGJUUzJTgzJUFBJUUzJTgzJUFBJUUzJTgzJUJDJUUzJTgyJUI5JUVGJUJDJTgxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZDRjODRmMGFkNDYzOWI5MzhmNjk2NDg0MTE1YjJkOTQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBheHp4czIwMDEmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1mMmQ2MTBlNTUxYWJiZmZkMmI4YjQ2YzZkNDdlMzE3YQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=039299ddffaf0e98a78c799c3a20d252",
-    "title_ja": ".NET 11が正式リリース、コンパイラ最適化とAOT性能の向上でエンタープライズ級アプリの実行効率を最大化",
-    "summary_ja": "Microsoftは2026年11月10日、開発者待望のメジャーアップデートとなる.NET 11を正式リリースした。 今回の更新では、JITコンパイラの最適化によるランタイム性能の向上に加え、AOT（Ahead-of-Time）コンパイルの効率化が重点的に図られており、クラウドネイティブなマイクロサービスや高負荷なエンタープライズ環境での実行速度が大幅に向上する。",
-    "translations": {
-      "ja": {
-        "title": ".NET 11が正式リリース、コンパイラ最適化とAOT性能の向上でエンタープライズ級アプリの実行効率を最大化",
-        "summary": "Microsoftは2026年11月10日、開発者待望のメジャーアップデートとなる.NET 11を正式リリースした。 今回の更新では、JITコンパイラの最適化によるランタイム性能の向上に加え、AOT（Ahead-of-Time）コンパイルの効率化が重点的に図られており、クラウドネイティブなマイクロサービスや高負荷なエンタープライズ環境での実行速度が大幅に向上する。"
-      },
-      "en": {
-        "title": "Microsoft officially releases .NET 11, focusing on major compiler optimizations and AOT performance gains for enterprise-grade execution",
-        "summary": "Microsoft officially launched .NET 11 on November 10, 2026, delivering the latest major iteration of its development platform. This release prioritizes critical runtime enhancements through advanced JIT compiler tuning and significant improvements to Ahead-of-Time (AOT) compilation efficiency. These updates are specifically engineered to drive down latency and boost throughput in cloud-native microservices and high-demand enterprise environments. For engineering teams maintaining legacy systems, this long-term support release offers a compelling balance of performance scalability and developer productivity gains. By streamlining the execution pipeline and reducing memory overhead, .NET 11 provides a robust foundation for modern, resource-intensive backend architectures that require both reliability and high-speed responsiveness across distributed server deployments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-11T05:31:44.240Z"
   },
   {
     "id": "art-1794375089851-apgnj",
@@ -43078,33 +43133,6 @@
     "created_at": "2026-10-31T17:32:42.467Z"
   },
   {
-    "id": "art-1793467047045-m2act",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/i-left-my-full-time-job-to-start-a-1-2m-year-blog-with-just-50",
-    "published_at": "2026-10-30T19:54:10+00:00",
-    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/8ym111u8wzo1uc6c5plcjawliti4",
-    "title_ja": "フルタイム職を退職し、わずか50ドルで立ち上げたブログで年商120万ドル（約1.8億円）を達成した個人開発者の戦略と教訓",
-    "summary_ja": "フルタイムの仕事を辞め、わずか50ドルの初期費用で始めたブログが、いかにして年商120万ドル規模のメディアへと成長したのか。 その成功の軌跡は、SEO戦略と特定のニッチ分野における深い専門知識の積み上げにある。 コンテンツ収益化を目指す個人開発者にとって、高額な広告投資よりも読者の悩みを解決する良質な情報蓄積こそが、長期的な資産価値を生む最も確実なルートであることを証明している。",
-    "translations": {
-      "ja": {
-        "title": "フルタイム職を退職し、わずか50ドルで立ち上げたブログで年商120万ドル（約1.8億円）を達成した個人開発者の戦略と教訓",
-        "summary": "フルタイムの仕事を辞め、わずか50ドルの初期費用で始めたブログが、いかにして年商120万ドル規模のメディアへと成長したのか。 その成功の軌跡は、SEO戦略と特定のニッチ分野における深い専門知識の積み上げにある。 コンテンツ収益化を目指す個人開発者にとって、高額な広告投資よりも読者の悩みを解決する良質な情報蓄積こそが、長期的な資産価値を生む最も確実なルートであることを証明している。"
-      },
-      "en": {
-        "title": "How a solo founder quit their day job to build a $1.2M annual revenue blog with just $50 startup costs",
-        "summary": "A solo entrepreneur details the journey of leaving full-time employment to launch a blog with only $50 in initial capital, eventually scaling it to a $1.2 million annual run rate. The strategy centers on long-term SEO dominance within a specific, high-intent niche rather than paid acquisition or aggressive advertising. By prioritizing deep, problem-solving content that builds organic authority, the founder successfully bootstrapped a high-margin digital asset. For developers and creators considering content-led business models, this success underscores that consistent, valuable information architecture is a far more reliable asset-building strategy than short-term growth hacks. The takeaway for builders is clear: technical SEO and niche authority, when executed with patience, remain the most durable moat in a crowded digital landscape."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-10-31T17:17:27.045Z"
-  },
-  {
     "id": "art-1793467020174-70zyg",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -45324,34 +45352,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-10-30T17:01:32.821Z"
-  },
-  {
-    "id": "art-1793378806300-mt8ot",
-    "source_id": "source-firecrawl",
-    "source_name": "Firecrawl Releases / Blog",
-    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.635",
-    "published_at": "2026-10-30T16:40:45.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
-    "title_ja": "Firecrawl v2.11.635がリリース、APIでの画像データ取得機能を強化しAIエージェントのWeb解析精度がさらに向上",
-    "summary_ja": "Firecrawlの最新版v2.11.635が公開され、APIを通じた画像データの取得・処理機能が大幅に強化された。 これにより、AIエージェントがWebページからスクリーンショットや視覚情報を直接抽出・解析するパイプラインの柔軟性が増す。 複雑なUIを持つ動的Webサイトの情報を構造化データへ変換する際、視覚情報の統合は精度向上に不可欠であり、今回のアップデートは自律型AI構築におけるデータ収集の信頼性を一段と高める重要な一歩となる。",
-    "translations": {
-      "ja": {
-        "title": "Firecrawl v2.11.635がリリース、APIでの画像データ取得機能を強化しAIエージェントのWeb解析精度がさらに向上",
-        "summary": "Firecrawlの最新版v2.11.635が公開され、APIを通じた画像データの取得・処理機能が大幅に強化された。 これにより、AIエージェントがWebページからスクリーンショットや視覚情報を直接抽出・解析するパイプラインの柔軟性が増す。 複雑なUIを持つ動的Webサイトの情報を構造化データへ変換する際、視覚情報の統合は精度向上に不可欠であり、今回のアップデートは自律型AI構築におけるデータ収集の信頼性を一段と高める重要な一歩となる。"
-      },
-      "en": {
-        "title": "Firecrawl v2.11.635 launches with enhanced API image processing capabilities to improve web parsing accuracy for AI agents",
-        "summary": "Firecrawl has officially deployed version v2.11.635, introducing major upgrades to API-based image data retrieval and processing workflows. This release refines how AI agents capture and interpret visual snapshots directly from complex web pages, facilitating a more robust pipeline for multimodal data extraction. By integrating seamless image handling, developers can now better process dynamic websites where text content alone fails to capture the full context of a UI or functional element. For builders constructing autonomous web agents, this update simplifies the conversion of visual information into structured data, directly addressing the common accuracy bottlenecks found in scraping tasks involving heavily interactive or CSS-dependent layouts."
-      }
-    },
-    "tool_tags": [
-      "Firecrawl"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-10-30T16:46:46.300Z"
   },
   {
     "id": "art-1793378795609-7gksn",
