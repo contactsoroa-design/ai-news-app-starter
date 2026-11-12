@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1794527226735-9m8qt",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shinsei99/n/nb713ac923ca6",
+    "published_at": "2026-11-12T23:46:36.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/6d97741d8b1ad11bb88d2aecea010093ab6614d2.png",
+    "title_ja": "AI自動化のセキュリティ哲学：人間による承認プロセスを排除し「実行可能リスト」で安全を担保する設計手法",
+    "summary_ja": "AIエージェントによる業務自動化において、人間が承認ボタンを押すフローを排除した際の安全対策について考察する。 人間が監視しない環境では「誤操作を人間が止める」ことは不可能であるため、AIに付与する権限を「名簿（ホワイトリスト）」方式で厳格に管理し、リスト外の操作を物理的に実行不能にする設計思想が重要だ。 自動化の規模を拡大するほど、事後の監視ではなく、実行前に不正やリスクを排除する堅牢な制約が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "AI自動化のセキュリティ哲学：人間による承認プロセスを排除し「実行可能リスト」で安全を担保する設計手法",
+        "summary": "AIエージェントによる業務自動化において、人間が承認ボタンを押すフローを排除した際の安全対策について考察する。 人間が監視しない環境では「誤操作を人間が止める」ことは不可能であるため、AIに付与する権限を「名簿（ホワイトリスト）」方式で厳格に管理し、リスト外の操作を物理的に実行不能にする設計思想が重要だ。 自動化の規模を拡大するほど、事後の監視ではなく、実行前に不正やリスクを排除する堅牢な制約が不可欠となる。"
+      },
+      "en": {
+        "title": "Beyond Human Approval: Securing AI Automation Pipelines Using Strict Allowlists and Capabilities-Based Constraints",
+        "summary": "In fully autonomous AI agent pipelines where human approval steps are removed for scalability, security cannot rely on manual intervention. Since an absent operator cannot stop dangerous operations, safety must be baked into the architecture by using strict allowlists—essentially defining exactly what tools and operations each agent agent possesses. If a capability is not explicitly on the list, the agent physically cannot execute it, effectively eliminating risks like unauthorized file deletion or API abuse. For developers building agentic workflows, the lesson is clear: do not build systems that require a human to 'ok' every step; instead, design the agent's environment so that malicious or accidental misuse is technically impossible from the start."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-12T23:47:06.735Z"
+  },
+  {
+    "id": "art-1794527218816-k7eij",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003162/",
+    "published_at": "2026-11-12T23:04:46.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/news/article/ogp/2611/13/2000003162/10012050/2048",
+    "title_ja": "Google、エージェント・コーディング特化の「Gemini 4 Hydrogen」発表―従来比2.5倍の高速化と4段階の推論深度調整に対応",
+    "summary_ja": "Googleが発表した新モデル「Gemini 4 Hydrogen」は、エージェントによるタスク遂行やコーディング作業に特化した軽量・高速な設計が特徴だ。 前モデルのGemini 3.8 Flashと比較して約2.5倍の高速化を実現し、推論の深度を4段階で切り替えられるため、計算コストと精度の柔軟な最適化が可能になる。 開発者にとっては、API利用料金とレスポンス速度のバランスを調整しやすくなる重要なアップデートといえる。",
+    "translations": {
+      "ja": {
+        "title": "Google、エージェント・コーディング特化の「Gemini 4 Hydrogen」発表―従来比2.5倍の高速化と4段階の推論深度調整に対応",
+        "summary": "Googleが発表した新モデル「Gemini 4 Hydrogen」は、エージェントによるタスク遂行やコーディング作業に特化した軽量・高速な設計が特徴だ。 前モデルのGemini 3.8 Flashと比較して約2.5倍の高速化を実現し、推論の深度を4段階で切り替えられるため、計算コストと精度の柔軟な最適化が可能になる。 開発者にとっては、API利用料金とレスポンス速度のバランスを調整しやすくなる重要なアップデートといえる。"
+      },
+      "en": {
+        "title": "Google Launches Gemini 4 Hydrogen Model for Agents and Coding with 2.5× Speed Boost and Adjustable Inference Depth",
+        "summary": "Google has unveiled \"Gemini 4 Hydrogen,\" a new AI model engineered specifically for high-efficiency agent workflows and routine coding tasks. Delivering performance approximately 2.5× faster than its predecessor, Gemini 3.8 Flash, the model also introduces a novel feature allowing developers to toggle between four distinct levels of inference depth. This architectural flexibility enables builders to dynamically trade off computation cost against reasoning capability based on the specific complexity of the task at hand. By providing this capability to both API users and free Gemini app consumers, Google is setting a new baseline for cost-effective, task-specific AI execution. This update effectively lowers the barrier to deploying specialized AI agents in latency-sensitive applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-12T23:46:58.816Z"
+  },
+  {
+    "id": "art-1794527209798-pj16y",
+    "source_id": "source-windsurf",
+    "source_name": "Windsurf Changelog",
+    "url": "https://windsurf.com/changelog#v3-12-59-november-12-2026-fixed-the-integrated-terminal-no-longer",
+    "published_at": "2026-11-12T00:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "Windsurf v3.12.59が公開：内蔵ターミナルでのフォント表示崩れ問題を修正、開発環境の快適性を改善",
+    "summary_ja": "Windsurfは最新アップデートv3.12.59を公開し、内蔵ターミナルにおけるテキストレンダリングの不具合を修正しました。 これまで一部環境で発生していた、フォントサイズが極端に小さくなり文字間隔が大きく開いてしまう表示の乱れが解消されています。 開発者がIDE内での作業に集中できるよう、エディタ基盤の視覚的な安定性を高める重要な修正です。",
+    "translations": {
+      "ja": {
+        "title": "Windsurf v3.12.59が公開：内蔵ターミナルでのフォント表示崩れ問題を修正、開発環境の快適性を改善",
+        "summary": "Windsurfは最新アップデートv3.12.59を公開し、内蔵ターミナルにおけるテキストレンダリングの不具合を修正しました。 これまで一部環境で発生していた、フォントサイズが極端に小さくなり文字間隔が大きく開いてしまう表示の乱れが解消されています。 開発者がIDE内での作業に集中できるよう、エディタ基盤の視覚的な安定性を高める重要な修正です。"
+      },
+      "en": {
+        "title": "Windsurf v3.12.59 Patch Resolves Terminal Font Rendering Issues for Improved Developer Workflow Stability",
+        "summary": "Windsurf has released v3.12.59, a maintenance update addressing a specific visual bug within the integrated terminal where text was rendered at an extremely small size with excessive spacing between characters. This rendering glitch had significantly hampered readability and workspace usability for affected users, making the terminal difficult to interact with. By correcting these font-handling issues, the team restores the intended seamless experience within the IDE, ensuring developers can maintain their focus without distraction. This release emphasizes the importance of IDE stability, reminding builders that even small visual regressions in core tools can cause substantial friction in daily coding routines, and regular updates are essential to maintaining a smooth, uninterrupted development environment."
+      }
+    },
+    "tool_tags": [
+      "Windsurf"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-12T23:46:49.798Z"
+  },
+  {
     "id": "art-1794526329926-gxh2o",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -13723,32 +13803,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T12:17:52.358Z"
-  },
-  {
-    "id": "art-1794399405185-b13ld",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/sciencehub_o/n/n610f4ee0a01e",
-    "published_at": "2026-11-11T12:16:24.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/334964117/rectangle_large_type_2_5902484d6def7dcd64b8dc234d433ce8.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "数学・物理ノート共有の専門プラットフォーム「ScienceHub」—TeX記法対応でアカデミックな知識共有を最適化する個人開発の軌跡",
-    "summary_ja": "ScienceHubは、数学や物理の学習ノートをTeX形式で記述・公開できる専門特化型プラットフォームだ。 単なるメモ共有に留まらず、数式のレンダリングや構造化を重視することで、アカデミックな知見の流通を最適化している。 個人開発として始まったこのプロジェクトは、専門領域のナレッジ管理と共有のハードルを下げることを目指しており、特定の学問領域に絞ったプラットフォーム構築がコミュニティ形成の第一歩になることを示唆している。",
-    "translations": {
-      "ja": {
-        "title": "数学・物理ノート共有の専門プラットフォーム「ScienceHub」—TeX記法対応でアカデミックな知識共有を最適化する個人開発の軌跡",
-        "summary": "ScienceHubは、数学や物理の学習ノートをTeX形式で記述・公開できる専門特化型プラットフォームだ。 単なるメモ共有に留まらず、数式のレンダリングや構造化を重視することで、アカデミックな知見の流通を最適化している。 個人開発として始まったこのプロジェクトは、専門領域のナレッジ管理と共有のハードルを下げることを目指しており、特定の学問領域に絞ったプラットフォーム構築がコミュニティ形成の第一歩になることを示唆している。"
-      },
-      "en": {
-        "title": "How TKG built ScienceHub, a niche platform for sharing physics and mathematics notes using native TeX formatting",
-        "summary": "ScienceHub emerged as a specialized platform allowing students and researchers to publish math and physics notes using TeX, aiming to solve the fragmentation of academic knowledge sharing. Unlike general-purpose note tools, this project focuses heavily on robust formula rendering and structural organization to ensure scientific content remains readable and accessible. The developer details the journey from a simple personal repository to a functional sharing site, highlighting the technical challenges of integrating TeX in a web environment. For builders, the project underscores that solving a specific, high-friction problem within a niche academic community creates significant value and organic engagement compared to building generic document tools that lack domain-specific features for complex notation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-11T12:16:45.185Z"
   },
   {
     "id": "art-1794398536445-o3z95",
@@ -32240,33 +32294,6 @@
     "created_at": "2026-11-05T05:16:51.472Z"
   },
   {
-    "id": "art-1793854296327-qy6bi",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/news/article/2611/05/2000002894/",
-    "published_at": "2026-11-05T01:59:38.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/news/article/ogp/2611/05/2000002894/10011356/2048",
-    "title_ja": "OpenAI、画像生成AI「ChatGPT Images 2.6」発表。速度50％向上とGIF生成対応、API提供で開発者の組み込み利用を強化",
-    "summary_ja": "OpenAIは画像生成AIの最新版「ChatGPT Images 2.6」を公開した。 生成速度が従来比で50％高速化したほか、新たにGIFアニメーション作成機能や保存画像のチャット間共有に対応。 開発者向けには2種類のAPIモデルが追加され、電子透かし技術によるセキュリティ対策も強化された。 画像生成の高速化と柔軟なワークフローは、AIアプリ開発におけるUX改善の重要な先行指標となる。",
-    "translations": {
-      "ja": {
-        "title": "OpenAI、画像生成AI「ChatGPT Images 2.6」発表。速度50％向上とGIF生成対応、API提供で開発者の組み込み利用を強化",
-        "summary": "OpenAIは画像生成AIの最新版「ChatGPT Images 2.6」を公開した。 生成速度が従来比で50％高速化したほか、新たにGIFアニメーション作成機能や保存画像のチャット間共有に対応。 開発者向けには2種類のAPIモデルが追加され、電子透かし技術によるセキュリティ対策も強化された。 画像生成の高速化と柔軟なワークフローは、AIアプリ開発におけるUX改善の重要な先行指標となる。"
-      },
-      "en": {
-        "title": "OpenAI Launches ChatGPT Images 2.6 With 50% Faster Generation, Native GIF Support, and Expanded API Access for Developers",
-        "summary": "OpenAI has officially released ChatGPT Images 2.6, delivering a 50% boost in generation speed alongside new capabilities like native GIF animation creation and cross-chat image reuse. For developers building on top of the platform, the update introduces two distinct API models designed to integrate high-fidelity image synthesis directly into external workflows. The release also prioritizes safety by incorporating robust digital watermarking technology to verify provenance. For builders and AI engineers, this update signals a clear shift toward production-ready image features where throughput efficiency and cross-platform portability are now critical requirements. Integrating these optimized endpoints allows developers to maintain snappy, responsive UX while leveraging OpenAI's latest advancements in image editing precision and compliance-ready generation tools."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "画像生成"
-    ],
-    "created_at": "2026-11-05T04:51:36.327Z"
-  },
-  {
     "id": "art-1793854036982-vuwzr",
     "source_id": "source-openai",
     "source_name": "OpenAI 公式",
@@ -32523,32 +32550,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-04T21:01:45.613Z"
-  },
-  {
-    "id": "art-1793825544568-u46y1",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/05/news004.html",
-    "published_at": "2026-11-04T20:00:00.000Z",
-    "og_image_url": "https://image.itmedia.co.jp/ait/articles/2611/05/cover_news004.jpg",
-    "title_ja": "OSS開発でAI製PRが殺到、メンテナーが「PR受付終了・改変自由化」を宣言したリミックスモデルの是非",
-    "summary_ja": "AI生成による低品質なプルリクエスト（PR）の急増を受け、OSSメンテナーが新規PRの受け付けを停止し、フォークによる改変を推奨する新たな運用方針を打ち出した。 この「リミックスモデル」は、維持管理コストを最小化し、各開発者が自分のニーズに合わせて最適化するアプローチだ。 従来のプルリクエスト文化がAIによって変質する中、メンテナンスのあり方を再定義する議論が加速している。",
-    "translations": {
-      "ja": {
-        "title": "OSS開発でAI製PRが殺到、メンテナーが「PR受付終了・改変自由化」を宣言したリミックスモデルの是非",
-        "summary": "AI生成による低品質なプルリクエスト（PR）の急増を受け、OSSメンテナーが新規PRの受け付けを停止し、フォークによる改変を推奨する新たな運用方針を打ち出した。 この「リミックスモデル」は、維持管理コストを最小化し、各開発者が自分のニーズに合わせて最適化するアプローチだ。 従来のプルリクエスト文化がAIによって変質する中、メンテナンスのあり方を再定義する議論が加速している。"
-      },
-      "en": {
-        "title": "OSS maintainer stops accepting PRs to fight AI spam, pivoting to a fork-and-remix development model",
-        "summary": "Driven by an overwhelming influx of low-quality, AI-generated pull requests, an open-source maintainer has announced a shift to a new operational model: closing the upstream PR pipeline entirely while encouraging users to fork and customize the codebase for their own needs. This 'remix model' prioritizes individual optimization over centralized management, effectively pushing maintenance overhead onto the end-user rather than the project owner. As AI continues to flood repositories with automated suggestions that offer little value, the community is deeply divided over whether this approach preserves project integrity or simply abandons the core collaborative ethos of open source. For builders, this signifies a crucial shift in how we might manage community-driven tools in the era of automated code generation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-04T20:52:24.568Z"
   },
   {
     "id": "art-1793824420729-0gh7w",
