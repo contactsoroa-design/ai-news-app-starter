@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794509226094-80sqm",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/veripsa/articles/ast-grep-outline-code-map",
+    "published_at": "2026-11-12T14:59:07.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--42q-UHgv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E5%2585%25A8%25E6%2596%2587%25E3%2582%2592%25E6%25B8%25A1%25E3%2581%2599%25E5%2589%258D%25E3%2581%25AB%25E3%2580%2581ast-grep%2520outline%25E3%2581%25A7%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AE%25E7%259B%25AE%25E6%25AC%25A1%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:RollNuts%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE3NzhiM2VlNmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIコード解析の効率を劇的改善：ast-grep outlineを活用して不要な全送信を避け、関数の目次から必要な部分だけを読み込ませる手法",
+    "summary_ja": "未知のコードベースをAIに読み解かせる際、全文を一度に渡すと文脈がぼやけるだけでなくコストも浪費する。 そこで「ast-grep outline」を使い、関数やクラス構成を抽出して目次を作成する手法が有効だ。 まず目次で全体像を把握し、必要な箇所のコードのみをAIに渡すことで、的確な回答を引き出せる。 本記事では、ast-grep 0.51.1を用いてTypeScriptのリポジトリから効率的に情報を抽出する具体的なステップを解説する。",
+    "translations": {
+      "ja": {
+        "title": "AIコード解析の効率を劇的改善：ast-grep outlineを活用して不要な全送信を避け、関数の目次から必要な部分だけを読み込ませる手法",
+        "summary": "未知のコードベースをAIに読み解かせる際、全文を一度に渡すと文脈がぼやけるだけでなくコストも浪費する。 そこで「ast-grep outline」を使い、関数やクラス構成を抽出して目次を作成する手法が有効だ。 まず目次で全体像を把握し、必要な箇所のコードのみをAIに渡すことで、的確な回答を引き出せる。 本記事では、ast-grep 0.51.1を用いてTypeScriptのリポジトリから効率的に情報を抽出する具体的なステップを解説する。"
+      },
+      "en": {
+        "title": "Stop pasting entire repositories into AI: Use ast-grep outline to generate code maps for precise, context-aware analysis",
+        "summary": "Feeding an entire repository into an LLM often dilutes context while bloating API costs. A more efficient approach involves using 'ast-grep outline' to generate a structured map of functions, classes, and exported elements before sending data to the model. By first generating this codebase index, you can identify exactly which files or specific modules require deep analysis, ensuring the AI focuses only on relevant logic rather than guessing based on full-file dumps. This article demonstrates how to leverage ast-grep 0.51.1 to extract structural metadata from TypeScript projects, allowing you to selectively feed precise, high-value code blocks to your AI agent. It is a critical workflow improvement for engineers looking to maintain precise context without hitting token limits."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-12T18:47:06.094Z"
+  },
+  {
+    "id": "art-1794509218977-inboj",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ai_shihan/articles/c2df4982b341b8",
+    "published_at": "2026-11-12T17:49:46.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---WK89Pc6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E8%25A6%258B%25E5%25BC%25B5%25E3%2582%258A%25E3%2581%25AF%25E3%2580%2581%25E6%25B1%25BA%25E3%2581%25BE%25E3%2582%258A%25E3%2582%2592%25E7%259F%25A5%25E3%2582%2589%25E3%2581%259A%25E3%2581%25AB%25E9%25B3%25B4%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2520%25E2%2580%2594%25E2%2580%2594%2520%25E6%2597%25A5%25E4%25BB%2598%25E3%2581%258C%25E5%25A4%2589%25E3%2582%258F%25E3%2581%25A3%25E3%2581%259F%25E7%259B%25B4%25E5%25BE%258C%25E3%2581%25AB%25E3%2580%258C%25E6%258A%2595%25E7%25A8%25BF%25E3%2581%258C%25E8%25B6%25B3%25E3%2582%258A%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D%25E3%2581%25A8%25E9%25B3%25B4%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ai_shihan%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvYS5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI投稿自動化の盲点：投稿時刻ルールを監視スクリプトと実行AI間で共有せず発生した誤作動事例とシステム設計の教訓",
+    "summary_ja": "Xの自動投稿をAIに任せていたところ、深夜0時過ぎに誤った投稿トリガーが鳴る不具合が発生した。 原因は、投稿ルール（9時・12時・21時の3枠限定）が実行側のAI手順書には記載されていた一方、監視側のスクリプトには共有されていなかったことにある。 複雑な自動化システムでは、単なるトリガーの有無だけでなく、ビジネスロジックや制約条件を「監視・実行・判断」の全レイヤーで同期させる設計が不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "AI投稿自動化の盲点：投稿時刻ルールを監視スクリプトと実行AI間で共有せず発生した誤作動事例とシステム設計の教訓",
+        "summary": "Xの自動投稿をAIに任せていたところ、深夜0時過ぎに誤った投稿トリガーが鳴る不具合が発生した。 原因は、投稿ルール（9時・12時・21時の3枠限定）が実行側のAI手順書には記載されていた一方、監視側のスクリプトには共有されていなかったことにある。 複雑な自動化システムでは、単なるトリガーの有無だけでなく、ビジネスロジックや制約条件を「監視・実行・判断」の全レイヤーで同期させる設計が不可欠である。"
+      },
+      "en": {
+        "title": "The Pitfalls of AI Automation: Why Misaligned Logic Between Monitoring Scripts and Posting Agents Causes Unnecessary Scheduling Failures",
+        "summary": "The author automated their X content scheduling using an AI PR agent, but discovered a critical flaw when their system triggered posts shortly after midnight. While the posting agent adhered to a specific rule—posting only at 9:05, 12:05, and 21:05 JST to maximize engagement—the monitoring script responsible for detecting posting needs was completely unaware of these timing constraints. This misalignment meant the watcher constantly flagged \"insufficient posts\" even during forbidden hours, causing erroneous wake-up calls. The core lesson for builders is that automation logic must be holistically shared across all system components. You cannot rely on the \"executor\" agent alone to enforce business rules; the \"monitor\" layer must also understand and respect the same operational constraints to function reliably."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-12T18:46:58.977Z"
+  },
+  {
+    "id": "art-1794509209981-umh01",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/tanakanekosuke/items/ae76795eb672d7e1620c",
+    "published_at": "2026-11-12T18:23:58.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS2ZJTlVWMXNGNFFjSFpoSkNrbTBOMGJENEo3Y2dMNHZMMjRvdjJIam01akRnNXlLeHUlM0RzOTYtYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MzgxNWRhNGYxOWFjOWI2MWJhZDdmNTg3Yzg0YWYyMTE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Defe52ae56fd16a29a9c17ee5c8c8c9f3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU2JUI1JUI3JUU1JUE0JTk2JUUzJTgzJTg2JUUzJTgzJTgzJUUzJTgyJUFGJUU1JThCJTk1JUU1JTkwJTkxJUUzJTgwJTkxJUUzJTgyJUE4JUUzJTgzJTgzJUUzJTgyJUI4TExNJUUzJTgzJUJCWmVuJTIwNiVFMyU4MyVCQiVFMyU4MyVBRCVFMyU4MyVCQyVFMyU4MiVBQiVFMyU4MyVBQkV4Y2FsaWRyYXclRUYlQkMlOUElRTYlOUMlODAlRTYlOTYlQjBEZXYlRTMlODMlODglRTMlODMlQUMlRTMlODMlQjMlRTMlODMlODkzJUU5JTgxJUI4JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZjczNzE2NjFiM2UzYmNmZmJmOWI2ODgzN2U4MmQ0NWI&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB0YW5ha2FuZWtvc3VrZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWI5OWU2Y2JlOTQxN2RkMWZiNDk1MTIzM2MxOTljN2Uz&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=e7c95d9174479b6e3ff0fda8d9bdf899",
+    "title_ja": "【海外テック動向】旧型端末でLLMを動かすエッジAI、Zen 6の展望、ローカル版Excalidrawなど注目のDevトレンド3選を総まとめ",
+    "summary_ja": "Hacker NewsやGitHubで注目を集める最新開発トレンドから、低スペック端末でもLLMを動作させる軽量化手法、AMD Zen 6のアーキテクチャ展望、オフライン対応のExcalidrawなど重要トピックを厳選して解説する。 開発者の関心は「クラウド依存からの脱却」と「ハードウェア効率の極大化」に集まっており、これらの技術をどう活用するかが個人開発におけるUX向上のカギとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "【海外テック動向】旧型端末でLLMを動かすエッジAI、Zen 6の展望、ローカル版Excalidrawなど注目のDevトレンド3選を総まとめ",
+        "summary": "Hacker NewsやGitHubで注目を集める最新開発トレンドから、低スペック端末でもLLMを動作させる軽量化手法、AMD Zen 6のアーキテクチャ展望、オフライン対応のExcalidrawなど重要トピックを厳選して解説する。 開発者の関心は「クラウド依存からの脱却」と「ハードウェア効率の極大化」に集まっており、これらの技術をどう活用するかが個人開発におけるUX向上のカギとなるだろう。"
+      },
+      "en": {
+        "title": "Edge LLMs on legacy hardware, Zen 6 architecture outlook, and local-first whiteboard tools: Top 3 developer trends to watch",
+        "summary": "This roundup explores three critical developer trends gaining traction on Hacker News and GitHub: edge-native LLM optimizations for low-spec hardware, the evolving architecture of AMD's Zen 6, and the rise of local-first tools like offline-capable Excalidraw. The broader industry shift is clearly moving away from heavy cloud dependencies toward maximizing local hardware efficiency. By mastering these edge-computing techniques, builders can drastically reduce latency and infrastructure costs, delivering faster, more private user experiences. These advancements prove that high-performance applications no longer require massive server clusters; instead, the future of competitive indie development lies in optimizing for the user's device and prioritizing data sovereignty through local-first design patterns."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-12T18:46:49.981Z"
+  },
+  {
+    "id": "art-1794509203802-e7lx5",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+    "published_at": "2026-11-12T18:43:19.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/02/ML-21540-featured-image.png",
+    "title_ja": "AWSが解説するAmazon Bedrockエージェントの真のコスト算出法とROI証明：4つの隠れたコスト要因と最適化戦略",
+    "summary_ja": "AWSは、Amazon BedrockにおけるAIエージェントの費用対効果（ROI）を正しく測定するため、単純なトークン単価ではなく、4つの隠れたコスト要因に基づいた「タスク単位のコスト」算出を提唱している。 推論キャッシュの活用、動的なモデルルーティング、出力制限といった最適化手法に加え、人手によるベースライン比較やホールドアウト実験を含む5次元のスコアカードを用いて、AIエージェントのビジネス価値を可視化する。",
+    "translations": {
+      "ja": {
+        "title": "AWSが解説するAmazon Bedrockエージェントの真のコスト算出法とROI証明：4つの隠れたコスト要因と最適化戦略",
+        "summary": "AWSは、Amazon BedrockにおけるAIエージェントの費用対効果（ROI）を正しく測定するため、単純なトークン単価ではなく、4つの隠れたコスト要因に基づいた「タスク単位のコスト」算出を提唱している。 推論キャッシュの活用、動的なモデルルーティング、出力制限といった最適化手法に加え、人手によるベースライン比較やホールドアウト実験を含む5次元のスコアカードを用いて、AIエージェントのビジネス価値を可視化する。"
+      },
+      "en": {
+        "title": "AWS reveals how to calculate true task-based costs and prove agent ROI on Amazon Bedrock using 4 hidden drivers",
+        "summary": "AWS is pushing beyond simple per-token pricing, arguing that developers must calculate the true cost per task by accounting for four hidden cost drivers when running agents on Amazon Bedrock. The strategy involves reducing overhead through proactive inference caching, intelligent model routing, and strict output constraints, while simultaneously validating business value via a five-dimension scorecard. This framework relies on comparing agent outputs against human baselines and conducting holdout experiments to surface real performance gains. For engineers and product leads looking to justify their AI spend, this approach transforms abstract cloud bills into clear, proof-based ROI metrics. It moves the conversation from generic model expense to a structured operational model that links specific agent outputs to measurable business outcomes."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-12T18:46:43.802Z"
+  },
+  {
     "id": "art-1794508327661-7ykm9",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -14994,31 +15099,6 @@
     "created_at": "2026-11-11T02:31:59.522Z"
   },
   {
-    "id": "art-1794363417552-rm8cd",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Git_Dayori/items/8dab47988bf991a7554c",
-    "published_at": "2026-11-11T02:14:46.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDE0MTQwJTJGZWNhZmNiZjMyMzkwOGQ3ODlmNzkyZDUxNTZmZDZlNTVkY2EzNjM0MSUyRnhfbGFyZ2UucG5nJTNGMTc3NjkyMzE3Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTk0ZjU5ZmZjNDczOGQ2ZDUzNDI4Yjc3ZTc2YWFhMGQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D454c3a9a5e0968be2f7a10c3c9f8eb49?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwR2l0SHViJUU2JTk3JUE1JUU1JUEwJUIxJUUzJTgwJTkxYXN0cnl4JTIwJUUzJTgxJThDJTJCMyUyQzEwOCVFMyU4MSVBNyVFOSVBNiU5NiVFNCVCRCU4RCVFNCVCQSVBNCVFNCVCQiVBMyVFMyU4MCU4MSVFNSU4OCU5RCVFNyU5OSVCQiVFNSVBMCVCNCVFMyU4MiVCQyVFMyU4MyVBRCVFMyU4MSVBRjQlRTYlOTclQTUlRTMlODElQjYlRTMlODIlOEElMjAlRTIlODAlOTQlMjAyMDI2LTExLTExJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YWQyOTA4NDIwNmNmMzA4MDAzMjg2NTRhN2QzOTc3NmM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBHaXRfRGF5b3JpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZjI4YjlmMWRhMWM3MjMyODkxYjlmNGVjZDU1N2Q0ZWM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b046799ac81ad113dfa27db54e011996",
-    "title_ja": "GitHub日報：astryxがスター数3,108獲得で急浮上しトレンド首位を奪取、初登場なしは4営業日ぶり",
-    "summary_ja": "GitHubトレンドで、astryxが新たに3,108個のスターを獲得し、ランキングの首位に躍り出た。 この日は新たなリポジトリのランクインが確認されず、全て過去の常連リポジトリが占める構成となった。 トレンドの動きが沈静化するこうした局面は、既存の人気プロジェクトの安定的な需要や、急激なブームの後押しによる定着を確認する良い機会となる。 開発者はトレンドの変動だけでなく、ランク外からの急上昇リポジトリの継続的な牽引力にも注目すべきである。",
-    "translations": {
-      "ja": {
-        "title": "GitHub日報：astryxがスター数3,108獲得で急浮上しトレンド首位を奪取、初登場なしは4営業日ぶり",
-        "summary": "GitHubトレンドで、astryxが新たに3,108個のスターを獲得し、ランキングの首位に躍り出た。 この日は新たなリポジトリのランクインが確認されず、全て過去の常連リポジトリが占める構成となった。 トレンドの動きが沈静化するこうした局面は、既存の人気プロジェクトの安定的な需要や、急激なブームの後押しによる定着を確認する良い機会となる。 開発者はトレンドの変動だけでなく、ランク外からの急上昇リポジトリの継続的な牽引力にも注目すべきである。"
-      },
-      "en": {
-        "title": "GitHub Daily: astryx surges to the top spot with 3,108 new stars, while trending list sees zero newcomers",
-        "summary": "The GitHub daily trending chart saw a major shift as astryx claimed the top position, adding 3,108 stars in a single day. Interestingly, this marks the first time in four days that no new repositories entered the trending list, leaving the top rankings dominated entirely by established repeat performers. Periods of stability in trending metrics often provide builders with a valuable opportunity to observe which existing projects maintain consistent developer interest outside of volatile hype cycles. By analyzing both the sudden spikes for newcomers and the sustained momentum of repeat entries, developers can better identify long-term utility in the open-source landscape rather than just chasing fleeting viral trends."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-11T02:16:57.552Z"
-  },
-  {
     "id": "art-1794363409479-o696b",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -23464,31 +23544,6 @@
     "created_at": "2026-11-09T11:16:46.068Z"
   },
   {
-    "id": "art-1794222104216-9txj4",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/a1221/articles/sql-builder-group-by-auto-complete",
-    "published_at": "2026-11-09T10:07:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--C1CDpxBe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:SQL%25E3%2583%2593%25E3%2583%25AB%25E3%2583%2580%25E3%2583%25BC%25E3%2581%25ABGROUP%2520BY%25E3%2582%2592%25E8%25B6%25B3%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E9%2581%25B8%25E3%2582%2593%25E3%2581%25A0%25E5%2588%2597%25E3%2581%25AE%25E3%2581%259B%25E3%2581%2584%25E3%2581%25A7SQL%25E3%2581%258C%25E5%25A3%258A%25E3%2582%258C%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devtoolkits.app%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZkY2RlMmQ0ZDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "SQLビルダー開発で遭遇した「GROUP BYによるクエリ破損」問題、自動列補完の難しさと回避策",
-    "summary_ja": "マウス操作でSQLを組み立てる開発ツールに集計関数とGROUP BYを実装した際、選択した列がグループ化されていないためにクエリが壊れる問題が発生した。 非集約列の扱いを自動制御するには、列選択時に集約の状態を監視し、GROUP BY句へ動的に同期させる実装が必要だ。 複雑なSQLをGUIで直感的に扱えるようにするには、単なる構文生成だけでなく、整合性を保つための動的なバリデーション層が開発の要となる。",
-    "translations": {
-      "ja": {
-        "title": "SQLビルダー開発で遭遇した「GROUP BYによるクエリ破損」問題、自動列補完の難しさと回避策",
-        "summary": "マウス操作でSQLを組み立てる開発ツールに集計関数とGROUP BYを実装した際、選択した列がグループ化されていないためにクエリが壊れる問題が発生した。 非集約列の扱いを自動制御するには、列選択時に集約の状態を監視し、GROUP BY句へ動的に同期させる実装が必要だ。 複雑なSQLをGUIで直感的に扱えるようにするには、単なる構文生成だけでなく、整合性を保つための動的なバリデーション層が開発の要となる。"
-      },
-      "en": {
-        "title": "Solving the 'GROUP BY Query Breakage' Problem When Building a Visual SQL Builder for Developers",
-        "summary": "When adding aggregation functions and GROUP BY support to a visual SQL builder, a critical issue arose: selecting non-aggregated columns caused queries to fail due to SQL strict mode violations. To solve this, the builder requires logic that automatically monitors aggregation states and dynamically synchronizes selected columns into the GROUP BY clause. Creating a frictionless GUI for complex SQL isn't just about syntax generation; it requires an active validation layer that forces query consistency at every click. For builders developing similar low-code interfaces, this experience highlights why abstracting SQL syntax is easy, but maintaining semantic correctness during real-time modifications requires treating the query structure as a state-managed object rather than a static string."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-09T11:01:44.216Z"
-  },
-  {
     "id": "art-1794221220113-zdjp2",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -23539,32 +23594,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-09T10:45:22.509Z"
-  },
-  {
-    "id": "art-1794219417695-hm61e",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/jessica1007/articles/c1ce34c3fd7345",
-    "published_at": "2026-11-09T02:03:43.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MMhSTXCC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E6%258F%2590%25E4%25BE%259B%25E5%2581%25B4%25E3%2581%25AE%25E9%259A%259C%25E5%25AE%25B3%25E3%2581%25A8%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2580%25E3%2582%25AF%25E3%2583%2588%25E7%2597%2587%25E7%258A%25B6%25E3%2582%2592%25E6%25B7%25B7%25E3%2581%259C%25E3%2581%25AA%25E3%2581%2584%25E7%259F%25AD%25E3%2581%2584%25E8%25A8%25AD%25E8%25A8%2588%25E3%2583%25A1%25E3%2583%25A2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Jessica%2520AI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3Nhby1QNUtHLWVYYUZWOHNuTlNpaTk3SU9vVDYzZGpqZU83cUotU0lrck5iRzc3VT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIが「遅い」時、モデル提供側の障害か自社プロダクトの不具合かを見極める――実務で役立つ切り分け設計メモ",
-    "summary_ja": "チャット応答の遅延や停止が発生した際、AIモデル提供側の障害と自社プロダクトの問題を混同すると復旧が遅れる。 実務では感情的な推測を避け、getstatus.aiのような外部監視ツールでサービス稼働状況を客観的に確認し、別回線や別ブラウザでの再現性を検証するフローを定着させるべきだ。 単一の「AIが重い」という主観に頼らず、TCP/TLS接続やAPI応答など、技術的な独立したステータスを切り分けてログに残す設計が、開発現場の迅速な障害対応の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AIが「遅い」時、モデル提供側の障害か自社プロダクトの不具合かを見極める――実務で役立つ切り分け設計メモ",
-        "summary": "チャット応答の遅延や停止が発生した際、AIモデル提供側の障害と自社プロダクトの問題を混同すると復旧が遅れる。 実務では感情的な推測を避け、getstatus.aiのような外部監視ツールでサービス稼働状況を客観的に確認し、別回線や別ブラウザでの再現性を検証するフローを定着させるべきだ。 単一の「AIが重い」という主観に頼らず、TCP/TLS接続やAPI応答など、技術的な独立したステータスを切り分けてログに残す設計が、開発現場の迅速な障害対応の鍵となる。"
-      },
-      "en": {
-        "title": "How to isolate AI service outages from product bugs when performance drops: A practical troubleshooting design guide for developers",
-        "summary": "When chat performance degrades, conflating upstream AI provider outages with your own product infrastructure delays effective resolution. In professional environments, avoid relying on subjective frustration; instead, adopt a systematic triage workflow using tools like getstatus.ai to monitor service health, verify reproducibility across different networks, and isolate client-side variables. The core design principle involves logging distinct connection metrics—such as TCP/TLS handshakes and API response patterns—to clearly separate model provider status from your own workspace health. By treating AI observability as a structured investigation rather than a generic service failure, builders can drastically reduce mean time to recovery (MTTR) and prevent unnecessary troubleshooting cycles when integrating complex LLM workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-09T10:16:57.695Z"
   },
   {
     "id": "art-1794217588389-xs3ao",
@@ -34123,33 +34152,6 @@
       "開発"
     ],
     "created_at": "2026-11-04T03:07:48.154Z"
-  },
-  {
-    "id": "art-1793758776977-dleaa",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/aiplus/article/2611/04/2000002863/",
-    "published_at": "2026-11-04T01:40:15.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/04/2000002863/10011261/2048",
-    "title_ja": "Anthropic、AI応答の真正性を暗号技術で検証する「FlashProve」公開：zkSNARK活用でモデルの改ざん・すり替えを不正検知",
-    "summary_ja": "Anthropicは、AIモデルの出力結果が確かに指定されたモデルによって生成されたことを数学的に証明する新手法「FlashProve」を公開した。 ゼロ知識証明（zkSNARK）を活用し、AI応答の中身を秘匿しつつ計算の妥当性を検証することで、モデルの改ざんやすり替えを即座に検知可能にする。 AIの信頼性担保が課題となる中で、開発者は今後、生成結果の署名や検証プロセスをシステム設計の早期段階に組み込む必要が高まるだろう。",
-    "translations": {
-      "ja": {
-        "title": "Anthropic、AI応答の真正性を暗号技術で検証する「FlashProve」公開：zkSNARK活用でモデルの改ざん・すり替えを不正検知",
-        "summary": "Anthropicは、AIモデルの出力結果が確かに指定されたモデルによって生成されたことを数学的に証明する新手法「FlashProve」を公開した。 ゼロ知識証明（zkSNARK）を活用し、AI応答の中身を秘匿しつつ計算の妥当性を検証することで、モデルの改ざんやすり替えを即座に検知可能にする。 AIの信頼性担保が課題となる中で、開発者は今後、生成結果の署名や検証プロセスをシステム設計の早期段階に組み込む必要が高まるだろう。"
-      },
-      "en": {
-        "title": "Anthropic releases FlashProve, a cryptographic system that mathematically verifies AI model responses to detect unauthorized tampering or model swapping",
-        "summary": "Anthropic has unveiled FlashProve, a new cryptographic system designed to verify that a specific AI model actually generated a given response. By leveraging zkSNARKs (zero-knowledge Succinct Non-Interactive Argument of Knowledge), the system allows users to cryptographically confirm the computational integrity of an AI output without compromising the underlying model's privacy. This research prototype effectively stops unauthorized tampering or model swapping by ensuring verifiable attribution for every generated interaction. As trust becomes a primary concern for LLM deployment, builders must now consider integrating cryptographic validation workflows early into their architectural pipelines to ensure source authenticity. This approach moves verification beyond simple API logs, offering a robust way to guarantee the provenance of AI-generated content in high-stakes production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "セキュリティ",
-      "開発"
-    ],
-    "created_at": "2026-11-04T02:19:36.977Z"
   },
   {
     "id": "art-1793755120731-xh6mp",
