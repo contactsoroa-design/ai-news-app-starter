@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1794542537282-qx5g9",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/genie2020/n/nb1e6a3242447",
+    "published_at": "2026-11-13T03:47:03.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335532617/rectangle_large_type_2_66f1b48cc313f9e61b7230f93887a8f6.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "note投稿後の「修正反映されない」問題、カード展開処理の順序ミスが原因だった—技術的な回避策を共有",
+    "summary_ja": "noteで記事を公開後に編集内容が反映されない不具合が発生したが、原因はリンクをカード化する非同期処理が公開タイミングの後に実行されていたことだった。 単なるキャッシュの問題と思われがちだが、データ生成の順序設計が不適切だとUIとデータの不一致を招く。 同様のプラットフォーム開発者にとって、メタデータやリッチプレビューの生成は「公開前」のバリデーションプロセスに組み込むのが鉄則である。",
+    "translations": {
+      "ja": {
+        "title": "note投稿後の「修正反映されない」問題、カード展開処理の順序ミスが原因だった—技術的な回避策を共有",
+        "summary": "noteで記事を公開後に編集内容が反映されない不具合が発生したが、原因はリンクをカード化する非同期処理が公開タイミングの後に実行されていたことだった。 単なるキャッシュの問題と思われがちだが、データ生成の順序設計が不適切だとUIとデータの不一致を招く。 同様のプラットフォーム開発者にとって、メタデータやリッチプレビューの生成は「公開前」のバリデーションプロセスに組み込むのが鉄則である。"
+      },
+      "en": {
+        "title": "Why your public post content doesn't match the editor: a breakdown of asynchronous render order failures",
+        "summary": "The author encountered a frustrating issue where post edits failed to reflect on the live page, uncovering a design flaw where the link-to-card rendering logic triggered only after the publication event. This isn't merely a caching headache; it is a fundamental race condition caused by decoupled data generation. For developers building content platforms, the lesson is clear: embedding metadata and rich preview generation into the pre-publication validation pipeline is essential to ensure consistency. Treating UI rendering as a post-publish background task creates immediate drifts between editor state and public output. When building publishing tools, always force synchronous or strictly gated rendering before the final write to the database occurs to prevent stale content from reaching your users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-13T04:02:17.282Z"
+  },
+  {
+    "id": "art-1794542527762-1wbiu",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/currnya/articles/comfyui-pc-guide",
+    "published_at": "2026-11-12T18:01:32.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--YsceS7ux--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ComfyUI%2520%25E3%2581%25AE%25E6%2589%258B%25E5%25BC%2595%25E3%2581%258D%25E2%2591%25A0%2520%25E3%2583%2591%25E3%2582%25BD%25E3%2582%25B3%25E3%2583%25B3%25E3%2581%25AE%25E9%2581%25B8%25E3%2581%25B3%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%2598%259F%25E7%258C%25AB%25E3%2581%258F%25E3%2582%258B%25E3%2582%258B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzFYbkNxblNRMEdsbUhLV0xkZk9mRlFNc2RKbnpJSnphUU5zSEFmZnFpOC1qQmZmaz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ローカルAI「ComfyUI」を始めるためのPC選びガイド：画像・動画・音楽生成に必須となるVRAMとメモリの重要基準を解説",
+    "summary_ja": "ローカル環境でAI生成を行うためのツール「ComfyUI」を快適に動かすには、用途に応じたハードウェア選定が不可欠だ。 特に画像、音楽、動画生成の各ワークロードで重視すべきは、GPUのVRAM容量とシステムメモリの総量である。 目的とする生成物の種類によって要求スペックは大きく異なるため、モデルごとの特性を理解し、ボトルネックを避けるための設計思想が重要となる。",
+    "translations": {
+      "ja": {
+        "title": "ローカルAI「ComfyUI」を始めるためのPC選びガイド：画像・動画・音楽生成に必須となるVRAMとメモリの重要基準を解説",
+        "summary": "ローカル環境でAI生成を行うためのツール「ComfyUI」を快適に動かすには、用途に応じたハードウェア選定が不可欠だ。 特に画像、音楽、動画生成の各ワークロードで重視すべきは、GPUのVRAM容量とシステムメモリの総量である。 目的とする生成物の種類によって要求スペックは大きく異なるため、モデルごとの特性を理解し、ボトルネックを避けるための設計思想が重要となる。"
+      },
+      "en": {
+        "title": "ComfyUI Hardware Guide: Choosing the right PC for local AI generation, focusing on VRAM and system memory requirements",
+        "summary": "Running ComfyUI locally for creative workflows like image, music, or video generation demands a strategic approach to hardware selection rather than just buying the most expensive off-the-shelf components. The critical metrics to watch are GPU VRAM, which handles the core computation for generative models, and total system RAM for overall processing capacity. Because hardware requirements scale drastically depending on whether you are running lightweight models or heavy video diffusion pipelines, developers must align their gear with specific use cases to avoid performance bottlenecks. For builders setting up a local AI workstation, the practical lesson is that matching hardware to your intended model stack is far more efficient than brute-forcing your way through compatibility issues with generic, high-end components."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "画像生成",
+      "動画"
+    ],
+    "created_at": "2026-11-13T04:02:07.762Z"
+  },
+  {
+    "id": "art-1794542515892-mcbcd",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/man-of-many",
+    "published_at": "2026-11-12T21:48:14+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/gatynke1lrh34num5uqiqvijy19m",
+    "title_ja": "月間1000万PV超「Man of Many」の創業者、ニッチメディアから始める収益最大化戦略とメディア運営の極意",
+    "summary_ja": "月間1000万PVを誇るメディア「Man of Many」の創業者は、趣味嗜好を絞ったニッチ分野からスタートし、信頼と権威を積み上げることで収益性を最大化させた。 競合がひしめく中で読者を獲得し続ける鍵は、質の高い独自コンテンツの追求と、SEOに頼りすぎない熱狂的なコミュニティ形成にある。 個人開発者やメディア運用者は、単なるトラフィック稼ぎではなく、特定の読者層に対する圧倒的な解像度を持つコンテンツ戦略へ転換すべきだという教訓を示している。",
+    "translations": {
+      "ja": {
+        "title": "月間1000万PV超「Man of Many」の創業者、ニッチメディアから始める収益最大化戦略とメディア運営の極意",
+        "summary": "月間1000万PVを誇るメディア「Man of Many」の創業者は、趣味嗜好を絞ったニッチ分野からスタートし、信頼と権威を積み上げることで収益性を最大化させた。 競合がひしめく中で読者を獲得し続ける鍵は、質の高い独自コンテンツの追求と、SEOに頼りすぎない熱狂的なコミュニティ形成にある。 個人開発者やメディア運用者は、単なるトラフィック稼ぎではなく、特定の読者層に対する圧倒的な解像度を持つコンテンツ戦略へ転換すべきだという教訓を示している。"
+      },
+      "en": {
+        "title": "How Man of Many scaled to 10M+ monthly visitors using niche-first content and strategic monetization",
+        "summary": "The founders of the lifestyle publication Man of Many scaled their platform to over 10 million monthly visitors by initially focusing on a highly specific niche rather than chasing broad traffic, proving that authority wins over volume. The site effectively monetizes its audience by prioritizing high-quality, authentic product discovery over generic affiliate spam, which has allowed them to build deep trust with readers and sustainable revenue streams. For builders and content creators, the core lesson here is that SEO-driven traffic is a commodity, but community-driven engagement based on specific, high-intent interests is the true moat. Successful scaling relies on balancing editorial integrity with aggressive experimentation in monetization models to keep the business resilient against changing algorithms."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-13T04:01:55.892Z"
+  },
+  {
+    "id": "art-1794542504237-hd2mx",
+    "source_id": "source-aismiley",
+    "source_name": "AISmiley（AIニュース）",
+    "url": "https://aismiley.co.jp/ai_news/gemini-agent/",
+    "published_at": "2026-11-13T03:44:10.000Z",
+    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/10/geminiagent01.webp",
+    "title_ja": "Google Cloudの新業務向け「Gemini agent」徹底解説：2025年版Geminiアプリとの違いと導入条件、活用メリットを整理",
+    "summary_ja": "Google Cloudが2026年10月に発表した企業向け汎用エージェント「Gemini agent」は、既存のコンシューマー向けアプリとは提供範囲や導入要件が大きく異なります。 業務プロセスへの統合に最適化されており、セキュリティや管理機能を重視する開発現場には不可欠な選択肢です。 類似名称のサービスとの混乱を避け、自身のプロジェクトに必要な機能セットを正しく判断することが導入成功への第一歩となります。",
+    "translations": {
+      "ja": {
+        "title": "Google Cloudの新業務向け「Gemini agent」徹底解説：2025年版Geminiアプリとの違いと導入条件、活用メリットを整理",
+        "summary": "Google Cloudが2026年10月に発表した企業向け汎用エージェント「Gemini agent」は、既存のコンシューマー向けアプリとは提供範囲や導入要件が大きく異なります。 業務プロセスへの統合に最適化されており、セキュリティや管理機能を重視する開発現場には不可欠な選択肢です。 類似名称のサービスとの混乱を避け、自身のプロジェクトに必要な機能セットを正しく判断することが導入成功への第一歩となります。"
+      },
+      "en": {
+        "title": "Google Cloud launches business-grade 'Gemini agent': Explaining critical differences from consumer Gemini apps and enterprise deployment requirements",
+        "summary": "Google Cloud recently unveiled 'Gemini agent,' a general-purpose AI agent designed specifically for business operations, launching in October 2026. Crucially, this enterprise offering is distinct from the consumer-facing Gemini app introduced in 2025, featuring different integration requirements, permission models, and deployment constraints optimized for professional workflows. For engineering teams evaluating AI integration, understanding this distinction is vital, as the enterprise version prioritizes security, administrative control, and process automation that standard consumer interfaces lack. Developers must look beyond the shared branding to verify if these business-grade management layers suit their specific operational architecture, ensuring they aren't conflating scalable infrastructure with lighter-weight consumer productivity tools when planning their AI-agent backend migration or implementation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-13T04:01:44.237Z"
+  },
+  {
     "id": "art-1794541640005-s4q1q",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -12358,32 +12465,6 @@
     "created_at": "2026-11-11T20:01:54.364Z"
   },
   {
-    "id": "art-1794427307823-qjopi",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yasashii_tech/n/n2136ac6a6bf8",
-    "published_at": "2026-11-11T15:48:54.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335029294/rectangle_large_type_2_67bfdd58cdc0df889bbdc122d357298c.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Codeと1Password CLI連携：APIトークンやSSH鍵を安全に管理し、ソースコードへのハードコードを防ぐ運用術",
-    "summary_ja": "APIトークンの都度発行や.envファイルへの直書きといった、開発環境におけるずさんな鍵管理を解消する方法を解説する。 Claude Codeと1Password CLIを連携させ、CLI経由で安全にシークレットを取得する手順を導入すれば、ソースコードに機密情報を残さず、かつ漏洩リスクを最小限に抑えた開発が可能になる。 セキュリティを担保しつつ開発体験を向上させたいエンジニアにとって、シークレット管理の自動化は必須のステップだ。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeと1Password CLI連携：APIトークンやSSH鍵を安全に管理し、ソースコードへのハードコードを防ぐ運用術",
-        "summary": "APIトークンの都度発行や.envファイルへの直書きといった、開発環境におけるずさんな鍵管理を解消する方法を解説する。 Claude Codeと1Password CLIを連携させ、CLI経由で安全にシークレットを取得する手順を導入すれば、ソースコードに機密情報を残さず、かつ漏洩リスクを最小限に抑えた開発が可能になる。 セキュリティを担保しつつ開発体験を向上させたいエンジニアにとって、シークレット管理の自動化は必須のステップだ。"
-      },
-      "en": {
-        "title": "Secure your Claude Code workflow with 1Password CLI to eliminate hardcoded API tokens and SSH keys",
-        "summary": "Stop the messy cycle of regenerating API tokens and hardcoding secrets into .env files during development. This guide explains how to integrate Claude Code with 1Password CLI to dynamically fetch credentials directly from your vault, ensuring that sensitive tokens and SSH keys never touch your plain-text source code or configuration files. By automating secret injection, you significantly reduce the risk of accidental leaks while streamlining your local development environment. For builders aiming to improve their security posture, this workflow shift is essential; moving away from static environment variables toward verified CLI-based secret retrieval is the most practical way to protect your infrastructure without slowing down your iterative development process."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-11T20:01:47.823Z"
-  },
-  {
     "id": "art-1794427301101-zuxhk",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -24076,32 +24157,6 @@
     "created_at": "2026-11-09T17:47:13.229Z"
   },
   {
-    "id": "art-1794245523682-8udub",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/aqiu/articles/1aec0324697503",
-    "published_at": "2026-11-09T05:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--5-2BNLAn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E4%25BD%2595%25E3%2581%258B%25E3%2582%2589%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258B%25EF%25BC%259F%25E3%2580%258D%25E3%2582%2592%25E6%25B8%259B%25E3%2582%2589%25E3%2581%2599%25E3%2580%2582AI%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%259F%25E6%259C%259D%25E3%2581%25AE%25E5%2588%25B6%25E4%25BD%259C%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aqiu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlA0WkxYQUxvTEl3X3NUOXNYYWowTnBHZDloa29vWkxyeWtLVHhySUE2TGZBeFBBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「何から始めるか」の迷いをAIで断つ。制作作業の初動を加速させる朝のルーティン構築術",
-    "summary_ja": "制作作業の開始直後に「今日は何をするか」で時間を浪費する問題に対し、AIを活用してタスクの初動を固定するルーティンが有効だ。 前日の作業記録をAIに要約させ、翌朝の着手ポイントを具体的に指示させることで、判断コストを削減する。 闇雲にソフトを開くのではなく、AIとの対話からタスクを特定し、小さな達成を繰り返すことで、限られた時間でも創作の停滞を防ぎ、着実にプロジェクトを前進させられる。",
-    "translations": {
-      "ja": {
-        "title": "「何から始めるか」の迷いをAIで断つ。制作作業の初動を加速させる朝のルーティン構築術",
-        "summary": "制作作業の開始直後に「今日は何をするか」で時間を浪費する問題に対し、AIを活用してタスクの初動を固定するルーティンが有効だ。 前日の作業記録をAIに要約させ、翌朝の着手ポイントを具体的に指示させることで、判断コストを削減する。 闇雲にソフトを開くのではなく、AIとの対話からタスクを特定し、小さな達成を繰り返すことで、限られた時間でも創作の停滞を防ぎ、着実にプロジェクトを前進させられる。"
-      },
-      "en": {
-        "title": "Eliminate decision fatigue in creative projects with an AI-driven morning routine to boost startup momentum",
-        "summary": "Creative blocks often stem from decision fatigue right after opening your workspace, where figuring out where to resume consumes precious time. To solve this, establish a routine where you use AI to process your previous day's notes into specific, actionable tasks for the following morning. By letting AI frame your starting point—such as tweaking a single chord progression or reviewing a specific edit—you eliminate the cognitive load of deciding what to do first. This method shifts the focus from 'finishing a project' to 'executing a granular micro-task' provided by your AI partner. It effectively prevents startup inertia, ensuring that even in short sessions, you make measurable progress rather than spending your energy deciding where to begin."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-09T17:32:03.682Z"
-  },
-  {
     "id": "art-1794244617455-wzvlv",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -24212,32 +24267,6 @@
       "開発"
     ],
     "created_at": "2026-11-09T17:02:18.760Z"
-  },
-  {
-    "id": "art-1794242804284-sdki7",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/shibatamago_dev/articles/1cd93992047562",
-    "published_at": "2026-11-09T14:15:58.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KRjpQdcy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AE%25E3%2580%258C%25E3%2582%2582%25E3%2581%25A3%25E3%2581%25A8%25E3%2582%2582%25E3%2582%2589%25E3%2581%2597%25E3%2581%2584%25E6%25AC%25A0%25E9%2599%25A5%25E3%2580%258D%25E3%2582%2592%25E8%25A6%258B%25E6%258A%259C%25E3%2581%258F%25E7%25B7%25B4%25E7%25BF%2592%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:shiba-tamago%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzYyYWQ4ZGVkOWUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIコードの「もっともらしい欠陥」を見抜く力を鍛える！Web演習ツール「AIコード査読ドリル」開発記",
-    "summary_ja": "AIにコードを任せきりにするとレビュースキルが衰える懸念から、AIが生成しそうな脆弱性やバグをあえて含むコードを見抜く練習用Webツール「AIコード査読ドリル」が公開された。 ブラウザ上で動く全10問のPython演習を通じて、エンジニアはAI出力の正確性を疑う感覚を養える。 AI生成コードを鵜呑みにせず、コードレビュー能力を維持・向上させるための実践的なアプローチとして活用できるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIコードの「もっともらしい欠陥」を見抜く力を鍛える！Web演習ツール「AIコード査読ドリル」開発記",
-        "summary": "AIにコードを任せきりにするとレビュースキルが衰える懸念から、AIが生成しそうな脆弱性やバグをあえて含むコードを見抜く練習用Webツール「AIコード査読ドリル」が公開された。 ブラウザ上で動く全10問のPython演習を通じて、エンジニアはAI出力の正確性を疑う感覚を養える。 AI生成コードを鵜呑みにせず、コードレビュー能力を維持・向上させるための実践的なアプローチとして活用できるだろう。"
-      },
-      "en": {
-        "title": "Building an AI Code Review Drill to Train Developers on Spotting Subtle Bugs in LLM-Generated Scripts",
-        "summary": "To combat the decline in manual code review skills caused by over-reliance on LLMs, a developer created the \"AI Code Review Drill,\" a browser-based practice tool featuring ten Python exercises. Each challenge presents code containing plausible but subtle bugs typical of AI generation, forcing users to identify logical errors or security flaws rather than blindly accepting the machine's output. By simulating real-world scenarios where AI hallucinates valid-looking but broken syntax, the tool helps engineers maintain their technical rigor and critical thinking. For builders navigating the AI-coding era, this serves as a proactive way to sharpen essential review capabilities, ensuring teams remain capable of debugging and auditing complex systems even as automation becomes the default workflow."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-09T16:46:44.284Z"
   },
   {
     "id": "art-1794241953231-lfqrm",
@@ -42314,33 +42343,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-01T12:46:42.895Z"
-  },
-  {
-    "id": "art-1793535405051-n174v",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/mindtastik",
-    "published_at": "2026-10-31T22:15:38+00:00",
-    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/zbazs7ik7l408bwuin22dawwulp2",
-    "title_ja": "月間収益600万円超え、瞑想アプリ「Mindtastik」開発者が語るニッチ市場特化型プロダクトの収益化戦略",
-    "summary_ja": "瞑想アプリ「Mindtastik」の開発者は、マインドフルネスという飽和市場において、特定の感情や状況に特化したニッチなコンテンツ戦略をとることで月間収益4万ドル（約600万円）を達成した。 汎用的な瞑想アプリではなく、ユーザーの切実な悩みに直接答える機能とストーリーテリングを重視することで、高いエンゲージメントと定着率を実現している。 個人開発者がレッドオーシャンで勝ち残るには、機能の豊富さよりも特定の課題解決への特化が重要だということをこの事例は示している。",
-    "translations": {
-      "ja": {
-        "title": "月間収益600万円超え、瞑想アプリ「Mindtastik」開発者が語るニッチ市場特化型プロダクトの収益化戦略",
-        "summary": "瞑想アプリ「Mindtastik」の開発者は、マインドフルネスという飽和市場において、特定の感情や状況に特化したニッチなコンテンツ戦略をとることで月間収益4万ドル（約600万円）を達成した。 汎用的な瞑想アプリではなく、ユーザーの切実な悩みに直接答える機能とストーリーテリングを重視することで、高いエンゲージメントと定着率を実現している。 個人開発者がレッドオーシャンで勝ち残るには、機能の豊富さよりも特定の課題解決への特化が重要だということをこの事例は示している。"
-      },
-      "en": {
-        "title": "How the Mindtastik meditation app builder hit $40k monthly revenue by targeting niche emotional use cases",
-        "summary": "The solo developer behind Mindtastik explains how they achieved $40,000 in monthly recurring revenue in the crowded meditation space by pivoting away from generic wellness features toward hyper-niche, emotion-specific content. Rather than competing directly with industry giants, the app focuses on solving immediate, specific user pain points through targeted guided sessions that drive high engagement and long-term retention. By prioritizing storytelling and precise utility over breadth of content, the product maintains a loyal user base in a red-ocean market. This case study underscores a critical lesson for indie hackers: in saturated categories, success rarely comes from building a general-purpose tool, but rather from ruthlessly specializing in a specific, underserved psychological need that larger competitors are too broad to capture effectively."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-01T12:16:45.051Z"
   },
   {
     "id": "art-1793521949327-xwvhu",
