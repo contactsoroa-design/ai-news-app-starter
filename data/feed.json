@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794605547457-ljkeq",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/ubinity/articles/11dec87c6da744",
+    "published_at": "2026-11-13T12:41:41.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--343cWfMU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AE%25E8%25AD%25B7%25E7%25AC%25A6%25EF%25BC%259ARaspberry%2520Pi%2520SD%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E6%2591%25A9%25E8%2580%2597%25E9%2598%25B2%25E6%25AD%25A2%25E3%2581%25A8tmpfs%25E4%25BF%259D%25E8%25AD%25B7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Richard%2520King%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzAxZWUwNzg5ZWQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Raspberry PiのSDカード寿命問題を解決する「tmpfs」活用術：書き込み頻度を抑制しOSの突然死を防ぐ堅牢な運用基盤の構築法",
+    "summary_ja": "Raspberry Piなどのシングルボードコンピュータ運用における最大の敵は、MicroSDカードの物理的摩耗による突然死である。 OSログや一時ファイルへの書き込みをメモリ上の「tmpfs」へリダイレクトし、ディスクI/Oを物理メディアから隔離することで、書き込み回数を劇的に削減し寿命を延ばすことができる。 宅内SREや常時稼働サーバー構築において、可用性を維持するための必須の防御策といえる。",
+    "translations": {
+      "ja": {
+        "title": "Raspberry PiのSDカード寿命問題を解決する「tmpfs」活用術：書き込み頻度を抑制しOSの突然死を防ぐ堅牢な運用基盤の構築法",
+        "summary": "Raspberry Piなどのシングルボードコンピュータ運用における最大の敵は、MicroSDカードの物理的摩耗による突然死である。 OSログや一時ファイルへの書き込みをメモリ上の「tmpfs」へリダイレクトし、ディスクI/Oを物理メディアから隔離することで、書き込み回数を劇的に削減し寿命を延ばすことができる。 宅内SREや常時稼働サーバー構築において、可用性を維持するための必須の防御策といえる。"
+      },
+      "en": {
+        "title": "Preventing Raspberry Pi SD Card Failure: Implementing tmpfs Writes to Extend Flash Longevity for Reliable HomeLab Operations",
+        "summary": "For engineers building HomeLab SRE clusters or edge nodes using single-board computers, the most common point of failure remains the physical wear on MicroSD cards caused by constant disk writes. This article details a robust strategy to bypass this hardware constraint by offloading volatile system logs and temporary files to tmpfs, an in-memory file system. By redirecting heavy I/O operations away from the physical flash storage, you effectively isolate the MicroSD card from unnecessary churn, preventing the dreaded read-only filesystem errors that plague long-running Raspberry Pi deployments. For anyone managing constant-uptime servers, implementing this memory-mapped write strategy is a critical maintenance step to ensure system stability and avoid sudden data loss."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-13T21:32:27.457Z"
+  },
+  {
+    "id": "art-1794605534718-91det",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/mstmt/articles/d4465ff60bfe2b",
+    "published_at": "2026-11-13T14:53:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ZCL8JPXK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AC%25AC2%25E5%259B%259E%25EF%25BC%259AAI%25E3%2581%25AE%25E7%25B2%25BE%25E5%25BA%25A6%25E3%2581%25A8%25E9%2581%258B%25E7%2594%25A8%25E3%2582%2592%25E6%2594%25AF%25E3%2581%2588%25E3%2582%258B%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E5%259F%25BA%25E7%259B%25A4%25E2%2580%2595%25E2%2580%2595Dell%2520AI%2520Data%2520Platform%2520with%2520NVIDIA%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:TAMOTSU%25EF%25BC%25A0DELL%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE2YjFiY2MwNTguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "生成AIの精度を左右するデータ基盤の重要性：DellとNVIDIAが提供する「AI Data Platform」でRAGの限界を突破する",
+    "summary_ja": "生成AIの回答精度を高めるには、モデルの選定やプロンプト調整だけでなく、基盤となるデータ管理が不可欠である。 DellとNVIDIAの共同ソリューションは、分散した企業データを適切に統合・管理し、RAGの検索精度と運用負荷を改善する。 単なるモデルの変更ではなく、データの正規化や最新性の維持といったデータパイプラインの設計こそが、エンタープライズAI成功の真の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "生成AIの精度を左右するデータ基盤の重要性：DellとNVIDIAが提供する「AI Data Platform」でRAGの限界を突破する",
+        "summary": "生成AIの回答精度を高めるには、モデルの選定やプロンプト調整だけでなく、基盤となるデータ管理が不可欠である。 DellとNVIDIAの共同ソリューションは、分散した企業データを適切に統合・管理し、RAGの検索精度と運用負荷を改善する。 単なるモデルの変更ではなく、データの正規化や最新性の維持といったデータパイプラインの設計こそが、エンタープライズAI成功の真の鍵となる。"
+      },
+      "en": {
+        "title": "Why Dell and NVIDIA's AI Data Platform beats model-swapping for high-accuracy enterprise RAG",
+        "summary": "Improving generative AI output often leads teams to obsess over choosing larger models or refining prompts, but the true bottleneck for enterprise applications is usually data infrastructure. If critical business data remains siloed, outdated, or poorly indexed, swapping models will not fix underlying retrieval failures. The Dell AI Data Platform with NVIDIA addresses this by providing a unified foundation that handles ingestion, embedding, and indexing, which are essential for effective RAG performance. For builders, the takeaway is clear: infrastructure for data pipeline governance—ensuring information is accessible, accurate, and secure—is fundamentally more impactful than the specific LLM architecture itself. Focusing on your data lifecycle remains the most reliable strategy to prevent hallucinations and improve reliability in production-grade AI."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-13T21:32:14.718Z"
+  },
+  {
+    "id": "art-1794605514569-i87a3",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://twitter.com/willdepue/status/2120992457630326841",
+    "published_at": "2026-11-13T21:05:19.000Z",
+    "og_image_url": "https://pbs.twimg.com/media/HW9GgJ_WcAA9m3I?format=webp&name=large",
+    "title_ja": "中国のAI研究所が最新モデルの学習にNVIDIAの「Blackwell」チップを活用、禁輸規制下の調達網が明らかに",
+    "summary_ja": "中国の主要AI研究所が、NVIDIAの最新GPU「Blackwell」を利用して次世代AIモデルの学習を行っていることが判明した。 米国による強力な輸出規制下においても、複雑な供給網や代替手段を通じて最先端ハードウェアを入手している実態が浮き彫りとなっている。 AI開発におけるコンピュート資源の確保は、単なる技術的な課題を超え、地政学的なサプライチェーン管理の重要性を突きつけている。",
+    "translations": {
+      "ja": {
+        "title": "中国のAI研究所が最新モデルの学習にNVIDIAの「Blackwell」チップを活用、禁輸規制下の調達網が明らかに",
+        "summary": "中国の主要AI研究所が、NVIDIAの最新GPU「Blackwell」を利用して次世代AIモデルの学習を行っていることが判明した。 米国による強力な輸出規制下においても、複雑な供給網や代替手段を通じて最先端ハードウェアを入手している実態が浮き彫りとなっている。 AI開発におけるコンピュート資源の確保は、単なる技術的な課題を超え、地政学的なサプライチェーン管理の重要性を突きつけている。"
+      },
+      "en": {
+        "title": "Chinese AI labs utilize Nvidia's Blackwell chips for new model training despite rigorous US export controls",
+        "summary": "Recent reports reveal that leading Chinese AI laboratories are successfully leveraging Nvidia’s state-of-the-art Blackwell GPU architecture to train their newest generation of AI models. This development highlights that despite stringent US export restrictions designed to choke access to top-tier silicon, these labs are navigating complex, indirect supply chains and gray-market channels to secure essential compute resources. For developers and global AI enterprises, this underscores that the availability of high-end hardware is now a geopolitical variable rather than a simple procurement task. Builders must recognize that hardware sourcing risks are no longer just operational hurdles but strategic bottlenecks that can suddenly cripple training pipelines and dictate the pace of AI innovation across the global landscape."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-13T21:31:54.569Z"
+  },
+  {
+    "id": "art-1794605507002-vh2zr",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/lush_cosmos4027/n/n75544a2c305a",
+    "published_at": "2026-11-13T21:09:46.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/332837385/rectangle_large_type_2_95c63c33dcc7224b8931c31061d96401.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "GitHub Actionsで完結する「note自動告知」術、XとThreadsへの投稿を7ファイルで実装し告知漏れを完全にゼロにする方法",
+    "summary_ja": "noteの公開に合わせて、XとThreadsへ自動で告知投稿を行うbotの構築手順が公開された。 GitHub Actionsを活用することで、特別なサーバーを立てることなく7つのコードファイルのみで運用可能な仕組みを実現する。 告知漏れを防ぐためにAPIを自動実行するこのアプローチは、個人開発者が発信工数を削減し、コンテンツの拡散性を安定させるための実用的なソリューションとなる。",
+    "translations": {
+      "ja": {
+        "title": "GitHub Actionsで完結する「note自動告知」術、XとThreadsへの投稿を7ファイルで実装し告知漏れを完全にゼロにする方法",
+        "summary": "noteの公開に合わせて、XとThreadsへ自動で告知投稿を行うbotの構築手順が公開された。 GitHub Actionsを活用することで、特別なサーバーを立てることなく7つのコードファイルのみで運用可能な仕組みを実現する。 告知漏れを防ぐためにAPIを自動実行するこのアプローチは、個人開発者が発信工数を削減し、コンテンツの拡散性を安定させるための実用的なソリューションとなる。"
+      },
+      "en": {
+        "title": "Automating Note promotion to X and Threads with a simple GitHub Actions workflow using only seven code files",
+        "summary": "A new guide details how to build a bot that automatically promotes new note articles to X and Threads upon publication using just seven code files. By leveraging GitHub Actions to execute the automation, builders can eliminate the need for expensive dedicated servers or hosting platforms. This approach effectively solves the common issue of inconsistent social media promotion without requiring manual intervention. For individual developers, this implementation offers a streamlined, cost-free method to maximize the discoverability of their content while drastically reducing the time spent on repetitive marketing tasks. Implementing this workflow ensures that every piece of content published automatically reaches your audience, helping maintain consistent engagement and growth without adding operational overhead to your development routine."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-13T21:31:47.002Z"
+  },
+  {
     "id": "art-1794604619251-efvjq",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -11176,32 +11282,6 @@
     "created_at": "2026-11-12T16:33:17.879Z"
   },
   {
-    "id": "art-1794501164653-y1r7x",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kijitama/n/nc14935db09bf",
-    "published_at": "2026-11-12T16:31:23.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335400713/rectangle_large_type_2_e72baf60a51ca3f9c739a497473dd666.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発の「Kijitama AIブラウザ」が機能実装を完了、一般公開に向けた最終の動作検証フェーズへ突入",
-    "summary_ja": "個人開発者が進めてきたAIブラウザアプリ「Kijitama」の全機能実装が完了し、現在は安定性確保のための動作検証段階にある。 開発者は一般公開を控え、ユーザーからAIを活用したアプリの制作アイデアや機能要望を募集している。 コミュニティからのフィードバックを開発に組み込む姿勢は、ニッチな課題を解決する個人開発において、プロダクトの適合性を高めるための有効な戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発の「Kijitama AIブラウザ」が機能実装を完了、一般公開に向けた最終の動作検証フェーズへ突入",
-        "summary": "個人開発者が進めてきたAIブラウザアプリ「Kijitama」の全機能実装が完了し、現在は安定性確保のための動作検証段階にある。 開発者は一般公開を控え、ユーザーからAIを活用したアプリの制作アイデアや機能要望を募集している。 コミュニティからのフィードバックを開発に組み込む姿勢は、ニッチな課題を解決する個人開発において、プロダクトの適合性を高めるための有効な戦略となる。"
-      },
-      "en": {
-        "title": "Solo-developed 'Kijitama' AI browser reaches feature-complete status and enters final QA for public release",
-        "summary": "The solo-developed AI browser project 'Kijitama' has officially finished its core feature implementation and is currently in the critical QA phase to ensure stability before public launch. The developer is proactively seeking input from the community to help shape future updates and brainstorm new AI-powered application ideas. Leveraging community feedback loops during the final polish phase is a vital strategy for indie builders, as it helps align the product's feature set with genuine user needs while creating early advocates before the official release. For builders looking to ship similar projects, this open development approach effectively balances technical validation with audience discovery, ensuring that the final output isn't just functional, but deeply relevant to the actual audience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-12T16:32:44.653Z"
-  },
-  {
     "id": "art-1794501148332-9s91p",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -12662,32 +12742,6 @@
       "開発"
     ],
     "created_at": "2026-11-12T11:32:06.578Z"
-  },
-  {
-    "id": "art-1794483120461-bhsmq",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
-    "published_at": "2026-11-12T11:20:13.000Z",
-    "og_image_url": null,
-    "title_ja": "マイクロソフト研究者が発表したAIの「休眠ニューロン」を悪用するバックドア攻撃手法「Lazare」とは：AIモデルの安全性に新たな警鐘",
-    "summary_ja": "Microsoftの研究チームは、AIモデル内の「休眠ニューロン」を悪用し、モデルの性能を維持したままバックドアを仕込む新しい攻撃手法「Lazare」を発表した。 この手法は、特定の入力によってのみ発火するニューロンを標的にするため、通常の動作チェックでは検知が極めて困難である。 開発者にとって、モデルの整合性評価には通常のテストだけでなく、未知の入力パターンや構造的脆弱性への対策も必須となるセキュリティ上の転換点といえる。",
-    "translations": {
-      "ja": {
-        "title": "マイクロソフト研究者が発表したAIの「休眠ニューロン」を悪用するバックドア攻撃手法「Lazare」とは：AIモデルの安全性に新たな警鐘",
-        "summary": "Microsoftの研究チームは、AIモデル内の「休眠ニューロン」を悪用し、モデルの性能を維持したままバックドアを仕込む新しい攻撃手法「Lazare」を発表した。 この手法は、特定の入力によってのみ発火するニューロンを標的にするため、通常の動作チェックでは検知が極めて困難である。 開発者にとって、モデルの整合性評価には通常のテストだけでなく、未知の入力パターンや構造的脆弱性への対策も必須となるセキュリティ上の転換点といえる。"
-      },
-      "en": {
-        "title": "Microsoft Research Unveils “Lazare,” a Novel Attack Method That Reprograms Dormant Neurons to Stealthily Insert Backdoors into AI Agent Models",
-        "summary": "Microsoft researchers have unveiled “Lazare,” a sophisticated security exploit that hijacks dormant neurons within AI models to inject malicious backdoors without degrading the model's standard performance. By targeting neurons that remain inactive during typical operations but trigger upon specific, adversarial inputs, this method creates vulnerabilities that evade conventional safety audits and performance testing. This research demonstrates that static model evaluation is no longer sufficient for production-grade security, as hidden structural backdoors can exist beneath standard operational benchmarks. For AI developers, the critical takeaway is that model integrity must now account for hidden, dormant neural pathways, requiring more rigorous adversarial robustness training to prevent persistent threats that remain invisible until triggered by attackers in the wild."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-12T11:32:00.461Z"
   },
   {
     "id": "art-1794482251443-4tfkl",
@@ -19546,32 +19600,6 @@
     "created_at": "2026-11-11T03:01:44.255Z"
   },
   {
-    "id": "art-1794365214866-9mlzc",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/gamedevlife/articles/wabiplant-media-launch",
-    "published_at": "2026-11-11T00:43:12.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FKHJjQzO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:wabiplant%25E3%2583%25A1%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25A2%25E3%2582%2592%25E5%25A7%258B%25E3%2582%2581%25E3%2581%25BE%25E3%2581%2599%2520%25E2%2580%2595%2520%25E9%2596%258B%25E7%2599%25BA%25E6%2597%25A5%25E8%25AA%258C%25E3%2581%25AF%25E3%2581%2593%25E3%2581%25AE%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%25B8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:GameDevLife%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM4NjM2MDI3YzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発者wabiplantが「開発日誌」の公式ハブを自前サイトへ移行、外部プラットフォーム依存を避けナレッジ資産の長期蓄積を目指す",
-    "summary_ja": "個人開発者のwabiplant氏は、これまで分散していた開発記録の正本を自前サイトに統合し、メディア運用を開始した。 開発中のタイトル進捗やリリース済みプロダクトの改善記録、推奨ワークフローを網羅する。 外部プラットフォームの規約変更やサービス終了リスクを排除し、資産を自ら管理することで、長期的な知見の集積と独自性を担保する戦略だ。 開発日誌を自前で運用することは、コンテンツの永続性を確保し、ポートフォリオとしての価値を高めるための合理的な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発者wabiplantが「開発日誌」の公式ハブを自前サイトへ移行、外部プラットフォーム依存を避けナレッジ資産の長期蓄積を目指す",
-        "summary": "個人開発者のwabiplant氏は、これまで分散していた開発記録の正本を自前サイトに統合し、メディア運用を開始した。 開発中のタイトル進捗やリリース済みプロダクトの改善記録、推奨ワークフローを網羅する。 外部プラットフォームの規約変更やサービス終了リスクを排除し、資産を自ら管理することで、長期的な知見の集積と独自性を担保する戦略だ。 開発日誌を自前で運用することは、コンテンツの永続性を確保し、ポートフォリオとしての価値を高めるための合理的な選択肢となる。"
-      },
-      "en": {
-        "title": "Indie developer wabiplant moves dev log to self-hosted site to avoid platform risk and own their long-term project knowledge",
-        "summary": "Indie developer wabiplant is centralizing their scattered project documentation into a single self-hosted media hub. This new repository will act as the source of truth for ongoing game and web service development, covering everything from feature progress and post-release product balance adjustments to toolchain recommendations. By moving away from external platforms, the developer aims to eliminate dependency risks like sudden policy shifts or service shutdowns while ensuring their hard-won technical knowledge remains under their own control. For individual builders, the practical takeaway is that hosting your own dev journal is a critical strategic move to ensure content longevity, safeguard your digital legacy, and boost your personal portfolio value against platform volatility."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-11T02:46:54.866Z"
-  },
-  {
     "id": "art-1794364374178-hhgsi",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -22515,33 +22543,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-10T12:46:49.638Z"
-  },
-  {
-    "id": "art-1794313937422-u9nvx",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/selene_nyx_ai/books/claude-code-vps-24h-guide",
-    "published_at": "2026-11-10T11:49:46.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--VyXTw6ME--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci8yNGE0ZTA5YjI2LnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
-    "title_ja": "Claude CodeとVPSを組み合わせてAIを24時間自律稼働させる構築ガイド、記事作成から公開までを全自動化する運用ノウハウを公開",
-    "summary_ja": "本稿はClaude CodeをVPS上で常時起動し、記事生成からWebサイトへの公開までを一貫して自動化する実戦的構築記録である。 24時間体制の自律エージェント運用に向けたコスト試算や、構築段階で遭遇した失敗事例、具体的なセットアップチェックリストまでを網羅している。 単なるプロンプトエンジニアリングを超えて、クラウド環境での継続的なAI実行基盤を構築したい開発者にとって、リソース管理と運用自動化の現実的な指針となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "Claude CodeとVPSを組み合わせてAIを24時間自律稼働させる構築ガイド、記事作成から公開までを全自動化する運用ノウハウを公開",
-        "summary": "本稿はClaude CodeをVPS上で常時起動し、記事生成からWebサイトへの公開までを一貫して自動化する実戦的構築記録である。 24時間体制の自律エージェント運用に向けたコスト試算や、構築段階で遭遇した失敗事例、具体的なセットアップチェックリストまでを網羅している。 単なるプロンプトエンジニアリングを超えて、クラウド環境での継続的なAI実行基盤を構築したい開発者にとって、リソース管理と運用自動化の現実的な指針となるだろう。"
-      },
-      "en": {
-        "title": "Building a 24/7 autonomous AI pipeline with Claude Code and VPS: A practical guide to automating content creation workflows",
-        "summary": "This technical guide details the implementation of a 24/7 autonomous agent pipeline by deploying Claude Code onto a virtual private server, effectively automating end-to-end tasks from draft generation to live publication. The author provides a comprehensive breakdown of operational costs, hard-won lessons from failure points during setup, and a granular checklist for infrastructure deployment. Moving beyond simple prompt engineering, the article offers a concrete roadmap for developers looking to establish robust, persistent AI execution environments in the cloud. By focusing on resource management and workflow orchestration, this write-up acts as a practical manual for anyone aiming to move their AI tools from intermittent CLI interaction to a reliable, always-on production architecture."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金",
-      "アップデート"
-    ],
-    "created_at": "2026-11-10T12:32:17.422Z"
   },
   {
     "id": "art-1794313017347-hnwf0",
