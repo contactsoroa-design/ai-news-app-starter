@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794531772629-kpr3c",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/evermotion_jp/n/ne8a4b8fa63d6",
+    "published_at": "2026-11-13T00:31:52.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/536226519bb49ea9b709ed7530f2dcc9bfb9df9d.png",
+    "title_ja": "個人開発30日目、音声再生の実装修正で画像生成の解像度が3分の1に低下した怪現象とその原因の考察",
+    "summary_ja": "個人開発プロジェクトの30日目、音声再生機能を修正した直後に画像生成の細かさが意図せず3分の1に低下するという不可解な現象が発生した。 本来無関係であるはずの音声と画像処理のパイプラインにおいて、共有リソースの競合やメモリ確保の不整合が連鎖的な副作用を引き起こしている可能性が高い。 開発者は、並行処理を行うシステムにおいて一見無関係な変更が予期せぬモジュールへ波及する「見えない依存関係」の特定と分離がいかに重要かを痛感させられる事例である。",
+    "translations": {
+      "ja": {
+        "title": "個人開発30日目、音声再生の実装修正で画像生成の解像度が3分の1に低下した怪現象とその原因の考察",
+        "summary": "個人開発プロジェクトの30日目、音声再生機能を修正した直後に画像生成の細かさが意図せず3分の1に低下するという不可解な現象が発生した。 本来無関係であるはずの音声と画像処理のパイプラインにおいて、共有リソースの競合やメモリ確保の不整合が連鎖的な副作用を引き起こしている可能性が高い。 開発者は、並行処理を行うシステムにおいて一見無関係な変更が予期せぬモジュールへ波及する「見えない依存関係」の特定と分離がいかに重要かを痛感させられる事例である。"
+      },
+      "en": {
+        "title": "Development Day 30: Mysterious bug causes image generation detail to drop by 66% after fixing audio playback",
+        "summary": "On the 30th day of an indie project, the developer encountered a bizarre regression where fixing audio playback functionality caused the generated image resolution or detail to drop to one-third of its original quality. Despite the audio and imaging pipelines appearing completely distinct, the fix triggered a side effect likely rooted in resource contention or memory allocation conflicts deep within the shared infrastructure. This scenario underscores how seemingly decoupled modules in concurrent systems can harbor invisible dependencies that lead to cascade failures. For builders, this serves as a harsh reminder that when debugging complex AI-integrated apps, one must scrutinize the underlying shared state and threading models, as the root cause often hides far from the immediate code changes."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-13T01:02:52.629Z"
+  },
+  {
+    "id": "art-1794531746411-tfqhy",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/atsushi_apps/articles/tts-voice-clips-ffmpeg-normalize",
+    "published_at": "2026-11-13T00:51:35.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hztgwnzk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E7%259F%25AD%25E3%2581%2584%25E9%259F%25B3%25E5%25A3%25B0%25E3%2582%2592%25E3%2580%2581%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25AB%25E5%2585%25A5%25E3%2582%258C%25E3%2582%258B%25E5%2589%258D%25E3%2581%25ABffmpeg%25E3%2581%25A7%25E3%2581%259D%25E3%2582%258D%25E3%2581%2588%25E3%2582%258B%25EF%25BC%2588%25E9%2580%259F%25E3%2581%2595%25E3%2583%25BB%25E7%2584%25A1%25E9%259F%25B3%25E3%2583%25BB%25E9%259F%25B3%25E9%2587%258F%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Atsushi%25EF%25BD%259C%25E5%2580%258B%25E4%25BA%25BA%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E9%2596%258B%25E7%2599%25BA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQzMWZjMzI5OTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発アプリのAI生成音声をffmpegで一括正規化：再生速度・無音区間・音量レベルを揃えてUXを向上させる実装手法",
+    "summary_ja": "個人開発アプリ「呼吸のじかん」の音声ガイド生成において、Google Cloud Text-to-Speech（Gemini TTS）のバラつきをffmpegで自動補正する技術を解説する。 再生速度（アコースティックエフェクト）、前後の不要な無音区間のトリミング、そして正規化による音量均一化を行う一連のシェルコマンドを公開。 複数の声質や言語が混在するアプリ設計において、ビルド前に音声品質を統一することは、アプリ全体の没入感を損なわないための必須エンジニアリングである。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリのAI生成音声をffmpegで一括正規化：再生速度・無音区間・音量レベルを揃えてUXを向上させる実装手法",
+        "summary": "個人開発アプリ「呼吸のじかん」の音声ガイド生成において、Google Cloud Text-to-Speech（Gemini TTS）のバラつきをffmpegで自動補正する技術を解説する。 再生速度（アコースティックエフェクト）、前後の不要な無音区間のトリミング、そして正規化による音量均一化を行う一連のシェルコマンドを公開。 複数の声質や言語が混在するアプリ設計において、ビルド前に音声品質を統一することは、アプリ全体の没入感を損なわないための必須エンジニアリングである。"
+      },
+      "en": {
+        "title": "Standardizing AI-Generated Audio for iOS Apps: Using FFmpeg to Normalize Speed, Silence, and Volume Levels for Consistent UX",
+        "summary": "For indie developers integrating AI-generated audio into apps, inconsistencies in volume, playback speed, and leading silence are common friction points that damage user immersion. This technical guide demonstrates how to use FFmpeg to normalize assets from Google Cloud Text-to-Speech (Gemini TTS) before they are bundled into an iOS binary. The implementation covers specific filtering chains for trimming silence, adjusting tempo without pitch shifting, and normalizing loudness across diverse voice profiles. By baking these normalization steps into the pre-build pipeline rather than relying on runtime processing, developers can guarantee high-quality, predictable audio performance across multi-language and multi-voice datasets, ultimately creating a more professional user experience for meditation and utility apps."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "音声"
+    ],
+    "created_at": "2026-11-13T01:02:26.411Z"
+  },
+  {
+    "id": "art-1794531714676-4921n",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://chromewebstore.google.com/detail/ai-math-kit/acdddhokifmffbmnelpfcnhbpdedadkj",
+    "published_at": "2026-11-13T00:51:52.000Z",
+    "og_image_url": null,
+    "title_ja": "数学学習をハックするChrome拡張「AI Math Kit」登場。解法だけでなく「考え方」を提示し学習者の思考を深める設計",
+    "summary_ja": "「AI Math Kit」は、複雑な数学の課題に対して単なる解答だけでなく、解法に至る思考プロセスやヒントを段階的に提示するChrome拡張機能である。 既存のAIツールが即座に答えを出してしまい学習機会を奪うという課題に対し、本ツールは学習者の思考を誘導する「対話的なステップ」を提供することに主眼を置いている。 数学的思考力を養いたい学生や独学者の学習体験を向上させるための、教育ツールとしての新たなアプローチといえる。",
+    "translations": {
+      "ja": {
+        "title": "数学学習をハックするChrome拡張「AI Math Kit」登場。解法だけでなく「考え方」を提示し学習者の思考を深める設計",
+        "summary": "「AI Math Kit」は、複雑な数学の課題に対して単なる解答だけでなく、解法に至る思考プロセスやヒントを段階的に提示するChrome拡張機能である。 既存のAIツールが即座に答えを出してしまい学習機会を奪うという課題に対し、本ツールは学習者の思考を誘導する「対話的なステップ」を提供することに主眼を置いている。 数学的思考力を養いたい学生や独学者の学習体験を向上させるための、教育ツールとしての新たなアプローチといえる。"
+      },
+      "en": {
+        "title": "AI Math Kit launches as a Chrome extension designed to help students think through problems rather than just getting answers",
+        "summary": "AI Math Kit has launched as a Chrome extension aimed at improving how students interact with complex mathematical problems by focusing on the process rather than the final result. Unlike typical AI assistants that often provide immediate solutions and inadvertently short-circuit the learning experience, this tool serves up interactive hints and step-by-step guidance to help users derive answers themselves. By prioritizing the user's thought process through guided engagement, it actively cultivates deeper mathematical intuition for students and independent learners. For builders in the ed-tech space, this represents a significant shift from 'answer-providing' AI models toward 'thinking-partner' architectures, highlighting a growing demand for tools that prioritize cognitive retention and genuine skill mastery over raw output efficiency."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-13T01:01:54.676Z"
+  },
+  {
+    "id": "art-1794531708164-cqg0t",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/chooser/items/28341a8c7d6e85fb9af9",
+    "published_at": "2026-11-13T01:01:14.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFtYXpvbmF3cy5jb20lMkYwJTJGMTk2NjElMkZwcm9maWxlLWltYWdlcyUyRjE0NzM2ODI3ODI_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTliNjU2NTM1YTAzNDhkMDc2MzEwOGM4YTIyNDRlNzY4%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkY5MGVmZTA0Mzc3NDA2ZjM3ZjgzN2IxZjhkNGZiYWE5ZTRhNmFiMDMzJTJGb3JpZ2luYWwuanBnJTNGMTc4NTQxMTQyNT9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1iMzYzNDAwZTI3ZWMxYzI4YWNiM2ZhMDRkOGU3YWQ2Mw%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dbc9080d8ae944e8921a1e77d7773825f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2hhdEdQVCUyMCVFMyU4MSVBQiVFNiVBRiU4RSVFNiU5QyU5RCVFMyU4MSVBRSVFMyU4MyU4QiVFMyU4MyVBNSVFMyU4MyVCQyVFMyU4MiVCOSVFMyU4MSVBOCUyMFNOUyUyMCVFMyU4MSVBRSVFNiU4QSU5NSVFNyVBOCVCRiVFMyU4MSVBNSVFMyU4MSU4RiVFMyU4MiU4QSVFMyU4MiU5MiVFNCVCQiVCQiVFMyU4MSU5QiVFMyU4MiU4QiUyMCVFMiU5NCU4MCVFMiU5NCU4MCUyMCVFNyU5NCVCQiVFNSU4MyU4RiVFMyU4MSVCRSVFMyU4MSVBNyVFNCVCRCU5QyVFMyU4MiU4QSVFMyU4MCU4MSVFNiU4QSU5NSVFNyVBOCVCRiVFMyU4MSVBRSVFMyU4MyU5QyVFMyU4MiVCRiVFMyU4MyVCMyVFMyU4MSVBRiVFOCU4NyVBQSVFNSU4OCU4NiVFMyU4MSVBNyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWQzYzdkOGQ4YzI3Yjc5ZDgwMTc3YzRkOTdkMzhjYTFl&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBjaG9vc2VyJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MWQzYzQ4NWUyYzczZjM0OWU0MzE2OWI0Mzg5NmRlNTc&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=RWFydGhMaW5rIE5ldHdvcmsgKOOCouODvOOCueODquODs-OCr-ODjeODg-ODiOODr-ODvOOCryk&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=c0ad99828eb140679251c56c912e8d98",
+    "title_ja": "ChatGPTを活用した毎朝のニュース配信とSNS投稿の全自動化──画像生成から投稿フローまでの構築ノウハウと開発運用を公開",
+    "summary_ja": "EarthLink Networkのエンジニアは、ChatGPTを活用して毎朝のニュース収集、SNS向け投稿文と画像の自動生成プロセスを構築した。 これにより、AI社員による業務自動化と24時間稼働の自律開発体制を実現している。 単にAIに任せるだけでなく、最終的な投稿ボタンだけは人間が押すという「人間中心の介入設計」を維持することが、信頼性を確保しながら運用負荷を劇的に減らす重要なポイントとなる。",
+    "translations": {
+      "ja": {
+        "title": "ChatGPTを活用した毎朝のニュース配信とSNS投稿の全自動化──画像生成から投稿フローまでの構築ノウハウと開発運用を公開",
+        "summary": "EarthLink Networkのエンジニアは、ChatGPTを活用して毎朝のニュース収集、SNS向け投稿文と画像の自動生成プロセスを構築した。 これにより、AI社員による業務自動化と24時間稼働の自律開発体制を実現している。 単にAIに任せるだけでなく、最終的な投稿ボタンだけは人間が押すという「人間中心の介入設計」を維持することが、信頼性を確保しながら運用負荷を劇的に減らす重要なポイントとなる。"
+      },
+      "en": {
+        "title": "How to automate your daily news curation and social media posting using ChatGPT for end-to-end AI workflows",
+        "summary": "The team at EarthLink Network has engineered an end-to-end automated pipeline using ChatGPT to handle daily news gathering, content drafting, and social media image generation. By treating AI as an autonomous employee, they run a 24/7 development cycle that drastically lowers operational overhead. The core architecture relies on deep automation while retaining a human-in-the-loop requirement for the final “publish” trigger, ensuring both efficiency and brand safety. For builders, the key takeaway is that you don’t need to automate every single click; combining AI-driven generation with specific human checkpoints allows developers to scale their social footprint significantly without sacrificing the quality control necessary to maintain a credible, engaging, and professional digital presence."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "SNS・ショート動画"
+    ],
+    "created_at": "2026-11-13T01:01:48.164Z"
+  },
+  {
     "id": "art-1794530832565-3kwf8",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -13786,32 +13892,6 @@
     "created_at": "2026-11-11T13:17:24.660Z"
   },
   {
-    "id": "art-1794403036876-62qva",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/nagi_yuru/n/n9503943bec4e",
-    "published_at": "2026-11-11T13:15:57.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/334987552/rectangle_large_type_2_b54602b84cea76e5d03b17394347803e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "「あったら楽しい」を形にする個人開発者「なぎ」がnoteを開始、独自の視点で作られたアプリやプロジェクトの制作秘話を今後公開へ",
-    "summary_ja": "個人開発者のなぎ氏が、自身のnoteアカウントを開設した。 同氏は「あったら少し楽しいかも」という直感的なアイデアを次々と形にするスタイルで活動しており、今後は過去に開発したプロダクトの紹介や、個人開発のプロセス、制作の舞台裏を詳細に発信していく予定だ。 趣味で開発を行う個人開発者や、小さく面白いプロジェクトを立ち上げたいと考えている層にとって、アイデアの具現化プロセスを知る有益な場となりそうだ。",
-    "translations": {
-      "ja": {
-        "title": "「あったら楽しい」を形にする個人開発者「なぎ」がnoteを開始、独自の視点で作られたアプリやプロジェクトの制作秘話を今後公開へ",
-        "summary": "個人開発者のなぎ氏が、自身のnoteアカウントを開設した。 同氏は「あったら少し楽しいかも」という直感的なアイデアを次々と形にするスタイルで活動しており、今後は過去に開発したプロダクトの紹介や、個人開発のプロセス、制作の舞台裏を詳細に発信していく予定だ。 趣味で開発を行う個人開発者や、小さく面白いプロジェクトを立ち上げたいと考えている層にとって、アイデアの具現化プロセスを知る有益な場となりそうだ。"
-      },
-      "en": {
-        "title": "Meet Nagi, an Indie Developer Sharing the Behind-the-Scenes Journey of Turning Whimsical Ideas into Functional Personal Projects",
-        "summary": "Indie developer Nagi has officially launched a new publication on note to document the lifecycle of their creative side projects. Operating with a philosophy of simply building whatever seems fun or potentially useful, Nagi intends to peel back the curtain on past releases, sharing the technical execution and the iterative process behind independent app creation. For fellow builders and solo developers seeking inspiration, this channel promises a candid look at how to prototype and deploy small-scale, engaging tools without the pressure of enterprise constraints. Nagi’s commitment to building purely for the joy of creation serves as a compelling reminder that the best indie projects often start with nothing more than a simple, relatable itch to solve."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-11T13:17:16.876Z"
-  },
-  {
     "id": "art-1794403008943-loylk",
     "source_id": "source-revenuecat",
     "source_name": "RevenueCat Blog / Sub Club",
@@ -14441,58 +14521,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-11T11:02:10.650Z"
-  },
-  {
-    "id": "art-1794394924023-2p9cn",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://apps.apple.com/us/app/halyard-ai-agent-terminal/id6809046638",
-    "published_at": "2026-11-11T10:24:10.000Z",
-    "og_image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/a3/9f/53a39faa-ff93-ba90-bc94-f1366a0d7384/Placeholder.mill/1200x630wa.jpg",
-    "title_ja": "Mac/iPhone対応のAIエージェント実行環境「Halyard」が登場、tmux環境でインストール不要のシームレスなAI連携を実現",
-    "summary_ja": "Halyardは、macOSおよびiOS上で動作するAIエージェント操作用のターミナルアプリ。 tmuxセッション内で直接AIエージェントを呼び出せる設計が特徴で、複雑な環境構築や追加ライブラリのインストールを一切必要としない。 開発者は、既存のターミナルワークフローにAIを組み込むことで、コマンドライン操作の効率を劇的に向上させることが可能だ。",
-    "translations": {
-      "ja": {
-        "title": "Mac/iPhone対応のAIエージェント実行環境「Halyard」が登場、tmux環境でインストール不要のシームレスなAI連携を実現",
-        "summary": "Halyardは、macOSおよびiOS上で動作するAIエージェント操作用のターミナルアプリ。 tmuxセッション内で直接AIエージェントを呼び出せる設計が特徴で、複雑な環境構築や追加ライブラリのインストールを一切必要としない。 開発者は、既存のターミナルワークフローにAIを組み込むことで、コマンドライン操作の効率を劇的に向上させることが可能だ。"
-      },
-      "en": {
-        "title": "Halyard launches as a zero-config tmux-integrated AI agent terminal for Mac and iPhone workflows",
-        "summary": "Halyard has arrived as a new terminal-focused application for macOS and iOS that bridges the gap between local tmux sessions and AI agents. The tool is designed with a zero-installation philosophy, allowing developers to invoke AI agents directly from their existing terminal workflows without needing to manage complex environment configurations or external library dependencies. By streamlining how commands interact with LLMs, it removes the friction typically associated with integrating AI into a standard development stack. For builders and engineers who frequently context-switch between CLI tasks and agent-based automation, Halyard provides a plug-and-play experience that keeps the focus on shipping code rather than maintaining the underlying infrastructure of the development environment itself."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-11T11:02:04.023Z"
-  },
-  {
-    "id": "art-1794394917582-b89kh",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/whitemarshall/items/598b9fac249b70987b54",
-    "published_at": "2026-11-11T10:38:52.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmODljNjFkOTY3OWRiYTNhN2Y3NTk2OWJkMzUxNzU0NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGI4NjUzMzBkODk4Y2IwZGU0MTgwNWY1OWRjYzNlMjQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd74df1f0f9e99258a2c04d787d798489?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9RGVlcFNlZWslRTMlODElQTclRTklODAlQjElRTUlQTAlQjElRTMlODElOEMlRTQlQkElOEMlRTklODAlQjElRTklOTYlOTMlRTMlODElOUYlRTMlODElQTMlRTMlODElQTYlRTMlODIlODIlRTMlODElQjUlRTMlODIlODklRTMlODElQTQlRTMlODElOEYlRTMlODElQUElRTMlODIlODklRTMlODAlODElRTMlODElQkUlRTMlODElOUElRTMlODElOTMlRTMlODElQUUlRTUlOUIlOUUlRTMlODElQUUlRTQlQkUlOUQlRTklQTAlQkMlRTMlODIlOTIlRTMlODElQUYlRTMlODElQTMlRTMlODElOEQlRTMlODIlOEElRTMlODElOTUlRTMlODElOUIlRTMlODIlODglRTMlODElODYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0wMGU5MTRhMTNhNDMxZWE0Y2U0MDA4ZjA5NmFmMWE3Mg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3aGl0ZW1hcnNoYWxsJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODZkYjFiOTRkNWI1NzM4Yjk3MjA1ODE2ODQyNzc4MWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=614ad1616fe7b3e004ec16196ec37a2a",
-    "title_ja": "DeepSeekによる週報作成が不安定な理由とは？AIの出力を改善する「依頼の具体化」テクニック",
-    "summary_ja": "DeepSeekなどのLLMに週報作成を依頼しても、完了していないタスクが終了済みと誤認されたり、詳細が抜け落ちたりと、精度が安定しないケースがある。 これはAIの性能不足ではなく、週ごとに提示する情報やタスクの状態定義が曖昧であることが主な原因だ。 解決策として、AIに渡すメモのフォーマットを固定し、完了タスクと進行中タスクを明確に区別する構造化プロンプトへの転換が必要となる。",
-    "translations": {
-      "ja": {
-        "title": "DeepSeekによる週報作成が不安定な理由とは？AIの出力を改善する「依頼の具体化」テクニック",
-        "summary": "DeepSeekなどのLLMに週報作成を依頼しても、完了していないタスクが終了済みと誤認されたり、詳細が抜け落ちたりと、精度が安定しないケースがある。 これはAIの性能不足ではなく、週ごとに提示する情報やタスクの状態定義が曖昧であることが主な原因だ。 解決策として、AIに渡すメモのフォーマットを固定し、完了タスクと進行中タスクを明確に区別する構造化プロンプトへの転換が必要となる。"
-      },
-      "en": {
-        "title": "Why DeepSeek weekly reports fluctuate: Refine your prompting strategy to ensure consistent AI documentation output",
-        "summary": "If you rely on DeepSeek for weekly reports and notice erratic results—such as incomplete tasks marked as finished or missing key details—the issue likely stems from ambiguous input rather than the model itself. The inconsistency often arises because the weekly data provided to the AI lacks rigid structure, leading the LLM to hallucinate progress or skip context. To stabilize the output, builders should shift toward a strictly standardized memo format that forces a clear distinction between completed work and pending items. The most effective approach is to treat input as a raw, factual log rather than a narrative, which prevents the AI from guessing. By reducing interpretation and providing rigid, structured facts, you guarantee repeatable, high-quality reporting every single week."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-11T11:01:57.582Z"
   },
   {
     "id": "art-1794394007923-wkn9h",
@@ -23854,33 +23882,6 @@
       "研究"
     ],
     "created_at": "2026-11-09T16:46:44.284Z"
-  },
-  {
-    "id": "art-1794242001832-frijs",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/mameoffice/articles/55fdd020246691",
-    "published_at": "2026-11-09T11:19:52.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--aqhPqyFT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Next.js%2520%252B%2520Hono%2520%252B%2520%25E3%2583%2591%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25BC%25E8%25AA%258D%25E8%25A8%25BC%25E3%2581%25A7QR%25E5%2585%25A5%25E9%2580%2580%25E5%2587%25BA%25E7%25AE%25A1%25E7%2590%2586%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%25E3%2580%2590OSS%25E5%2585%25AC%25E9%2596%258B%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BE%25E3%2582%2581%25E3%2581%258A%2520%257C%2520MameOffice%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzdmZjk5MGY0ZjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Next.jsとHonoでQR入退室管理システム「mame-inout」を個人開発、パスキー認証でセキュリティも確保",
-    "summary_ja": "MameOfficeが開発した「mame-inout」は、スマホでQRコードを読み取り、入退室時刻と在室状況を記録・管理するOSSプロジェクトです。 技術スタックにはNext.js、Hono、PostgreSQL、Prismaを採用し、管理者認証にはパスキーを導入して物理的アクセス管理に必要なセキュリティを担保しました。 煩雑な管理を低コストでDX化したい開発者にとって、セルフホスト可能な実用的なテンプレートとして参考にできる実装です。",
-    "translations": {
-      "ja": {
-        "title": "Next.jsとHonoでQR入退室管理システム「mame-inout」を個人開発、パスキー認証でセキュリティも確保",
-        "summary": "MameOfficeが開発した「mame-inout」は、スマホでQRコードを読み取り、入退室時刻と在室状況を記録・管理するOSSプロジェクトです。 技術スタックにはNext.js、Hono、PostgreSQL、Prismaを採用し、管理者認証にはパスキーを導入して物理的アクセス管理に必要なセキュリティを担保しました。 煩雑な管理を低コストでDX化したい開発者にとって、セルフホスト可能な実用的なテンプレートとして参考にできる実装です。"
-      },
-      "en": {
-        "title": "MameOffice open-sources 'mame-inout,' a QR-based entry/exit management system built with Next.js, Hono, and Passkeys",
-        "summary": "MameOffice has released 'mame-inout,' a self-hosted open-source system that tracks entry and exit times via smartphone QR scanning. Built using a modern stack of Next.js, Hono, TypeScript, PostgreSQL, and Prisma, the system provides a robust way to manage facility attendance and presence logs. Notably, it incorporates Passkey authentication for administrators, addressing the critical security needs required for physical access systems. For builders looking to digitize entry management with low operational overhead, this project serves as a practical, production-ready template. The source code is fully accessible on GitHub, allowing developers to deploy a secure, custom attendance solution without relying on expensive proprietary software, making it an excellent starting point for internal office tools or facility management apps."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-09T16:33:21.832Z"
   },
   {
     "id": "art-1794241953231-lfqrm",
