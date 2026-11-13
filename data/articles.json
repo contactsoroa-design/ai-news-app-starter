@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794540720668-p998w",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/serene_whale8960/n/n9683cc0aa3e6",
+    "published_at": "2026-11-13T03:29:42.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335527268/rectangle_large_type_2_2a7b602f8bf163c1137fc0dbbefdde4a.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "Google Colabで1万レースのデータ解析中にタイムアウト発生、開発環境の限界とサーバー負荷対策の重要性が浮き彫りに（v3.2中間報告）",
+    "summary_ja": "AI競馬分析サービス「スマートバイザー」開発において、7月から10月までの1万レース分を対象とした検証処理が、Google Colabの計算資源制限により途中で停止する事態となった。 短期間での大規模な気象・出走データ処理において、単一環境での一括実行はタイムアウトのリスクを伴う。 個人開発者は、こうした計算負荷の高いバックグラウンドタスクを扱う際、サーバーの制約を考慮したタスクの細分化や、より堅牢なクラウドインフラへの移行を早期に検討すべきであるという教訓が示された。",
+    "translations": {
+      "ja": {
+        "title": "Google Colabで1万レースのデータ解析中にタイムアウト発生、開発環境の限界とサーバー負荷対策の重要性が浮き彫りに（v3.2中間報告）",
+        "summary": "AI競馬分析サービス「スマートバイザー」開発において、7月から10月までの1万レース分を対象とした検証処理が、Google Colabの計算資源制限により途中で停止する事態となった。 短期間での大規模な気象・出走データ処理において、単一環境での一括実行はタイムアウトのリスクを伴う。 個人開発者は、こうした計算負荷の高いバックグラウンドタスクを扱う際、サーバーの制約を考慮したタスクの細分化や、より堅牢なクラウドインフラへの移行を早期に検討すべきであるという教訓が示された。"
+      },
+      "en": {
+        "title": "Google Colab timeout halts 10,000-race AI data analysis, highlighting compute limits and backend scalability challenges for solo developers",
+        "summary": "The developer behind 'Smart Visor,' an AI-driven horse racing analysis service, reported a critical failure during a massive data processing task. Attempting to validate 10,000 races from July to October caused a Google Colab timeout, as the compute load and server connection limits overwhelmed the free tier development environment. This incident underscores the inherent risks when solo builders execute resource-heavy, batch data analysis in ephemeral notebook environments. For developers, the practical lesson is that high-volume data ingestion and processing tasks require careful task partitioning or a transition to more resilient, long-running cloud infrastructure to prevent unexpected service interruptions during critical validation phases. Relying on transient dev environments for heavy lifting creates avoidable downtime."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-13T03:32:00.668Z"
+  },
+  {
+    "id": "art-1794540712914-2b7xt",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/sid732/loose-ends",
+    "published_at": "2026-11-13T02:56:13.000Z",
+    "og_image_url": null,
+    "title_ja": "Loose Ends：AIコーディング支援やリファクタリングで残留しがちな「不要コード（デッドコード）」を自動検知して整理する開発者向けツール",
+    "summary_ja": "AIコーディング支援ツールやリファクタリングの過程で残されがちな、参照されない「不要コード（デッドコード）」を自動検出するためのCLIツール「Loose Ends」が公開された。 AIが生成した複雑なコードベースでは、機能修正後に古いロジックが残留しやすく、これが将来的なバグや可読性の低下を招く。 本ツールを活用することで、開発のワークフローに自動的なクリーンアップ工程を組み込み、負債が蓄積する前にリポジトリを健全に保つことが可能になる。",
+    "translations": {
+      "ja": {
+        "title": "Loose Ends：AIコーディング支援やリファクタリングで残留しがちな「不要コード（デッドコード）」を自動検知して整理する開発者向けツール",
+        "summary": "AIコーディング支援ツールやリファクタリングの過程で残されがちな、参照されない「不要コード（デッドコード）」を自動検出するためのCLIツール「Loose Ends」が公開された。 AIが生成した複雑なコードベースでは、機能修正後に古いロジックが残留しやすく、これが将来的なバグや可読性の低下を招く。 本ツールを活用することで、開発のワークフローに自動的なクリーンアップ工程を組み込み、負債が蓄積する前にリポジトリを健全に保つことが可能になる。"
+      },
+      "en": {
+        "title": "Loose Ends: A New CLI Tool to Automatically Detect and Clean Up Unused Dead Code Left by AI Assistants",
+        "summary": "AI coding assistants often generate redundant snippets or fail to remove legacy logic during complex refactoring cycles, leading to hidden technical debt. The \"Loose Ends\" tool provides a necessary CLI-based solution designed to scan repositories specifically for these remnants of AI-assisted edits. By identifying unused functions, imported libraries, and dangling variables, it helps developers prevent the silent accumulation of dead code that plagues modern AI-augmented workflows. Integrating this check into your CI/CD pipeline ensures that your codebase stays lean and maintainable without manual oversight. For builders relying heavily on LLMs for rapid iteration, this utility serves as an essential guardrail, automatically pruning unnecessary logic before it complicates future development or creates obscure production bugs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-13T03:31:52.914Z"
+  },
+  {
+    "id": "art-1794540703502-potl5",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/wsir5883/items/0d94d5da015c1f83630c",
+    "published_at": "2026-11-13T03:28:45.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jTGFHYUpyLVdEdGIwUS1GbFkxMDJWTGZEaVU5MXhGaUpfMHN2eS03QWxReEQ0ZFFRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWQ1MDMzMGNiZmQ1NjI2MWYyNzcxZDllZmRlMjUxODJm%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D4572404d157452b98b305c2a6a6418f8?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTg2JUUzJTgyJUFEJUUzJTgyJUI5JUUzJTgzJTg4JUU2JThDJTg3JUU3JUE0JUJBJUUzJTgxJUE3JUU1JTg2JTk5JUU3JTlDJTlGJUU3JUI3JUE4JUU5JTlCJTg2JUUzJTgyJTkyJUU4JUExJThDJUUzJTgxJTg2JUUzJTgxJUE4JUUzJTgxJThEJUUzJTgxJUFFJUU4JTgwJTgzJUUzJTgxJTg4JUU2JTk2JUI5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YzA5MGEzMjM3YWQ1MDZjNTFlNzRhNzI0NTA4NDFjNzM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3c2lyNTg4MyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTllMjY0Y2E1NmFkNzY1OTlhZmIwNWExNWJmN2FhZGM2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=06b50c35614945e4e9b14e46d5dece6a",
+    "title_ja": "写真編集の「テキスト指示」設計術：自然言語で直感的に加工するための思考プロセスの構築方法と具体的アプローチ",
+    "summary_ja": "写真編集において、従来のようなスライダー調整ではなく、自然言語によるテキスト指示で編集を行う際の思考設計を解説する。 まずは「画像のどこを、どのように変えたいか」という目的を論理的に言語化し、AIに正確な文脈を与えることが品質向上の鍵となる。 開発者はユーザーの曖昧な要望を具体的な操作へ翻訳する「橋渡し」の仕組みを実装することで、直感的で効率的な編集体験を創出できる。",
+    "translations": {
+      "ja": {
+        "title": "写真編集の「テキスト指示」設計術：自然言語で直感的に加工するための思考プロセスの構築方法と具体的アプローチ",
+        "summary": "写真編集において、従来のようなスライダー調整ではなく、自然言語によるテキスト指示で編集を行う際の思考設計を解説する。 まずは「画像のどこを、どのように変えたいか」という目的を論理的に言語化し、AIに正確な文脈を与えることが品質向上の鍵となる。 開発者はユーザーの曖昧な要望を具体的な操作へ翻訳する「橋渡し」の仕組みを実装することで、直感的で効率的な編集体験を創出できる。"
+      },
+      "en": {
+        "title": "Designing Text-Based Photo Editing Workflows: How to Structuring Natural Language Prompts for Precise AI Image Manipulation",
+        "summary": "When moving away from manual slider adjustments to text-driven photo editing, the developer's focus must shift toward structuring natural language input. The core challenge is effectively defining the 'what' and 'how' of an edit so the underlying model can parse intent without ambiguity. By breaking down vague user desires into specific visual attributes, you provide the context necessary for high-quality machine transformations. For builders, the key is implementing a structured interface that bridges the gap between natural language requests and concrete operations. This approach simplifies the cognitive load on users, transforming potentially frustrating manual editing sessions into streamlined, intent-based interactions that leverage the predictive capabilities of modern generative models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "画像生成"
+    ],
+    "created_at": "2026-11-13T03:31:43.502Z"
+  },
+  {
+    "id": "art-1794540697061-af26t",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shinkaigames/n/n2002090da7df",
+    "published_at": "2026-11-13T03:31:23.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335527745/rectangle_large_type_2_bb6517b02912c776822126b8cc50357f.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIでSNS投稿を自動化していたらInstagramにボット認定された件：個人開発実験11日目の失敗と学び",
+    "summary_ja": "Claudeを活用してSNS投稿（YouTube、TikTok、Instagram、Threads、note）を完全自動化した個人開発実験の11日目、Instagramから「人間ですか？ 」という警告を受け、botとして検知された。 プラットフォーム側のスパム対策アルゴリズムは、AIによる定時投稿パターンを即座に見抜くため、単なる自動化ではなく、人間の介入や投稿間隔のランダム化といった「人間らしさ」を模倣する実装が、運用継続には不可欠であるという教訓を得た。",
+    "translations": {
+      "ja": {
+        "title": "AIでSNS投稿を自動化していたらInstagramにボット認定された件：個人開発実験11日目の失敗と学び",
+        "summary": "Claudeを活用してSNS投稿（YouTube、TikTok、Instagram、Threads、note）を完全自動化した個人開発実験の11日目、Instagramから「人間ですか？ 」という警告を受け、botとして検知された。 プラットフォーム側のスパム対策アルゴリズムは、AIによる定時投稿パターンを即座に見抜くため、単なる自動化ではなく、人間の介入や投稿間隔のランダム化といった「人間らしさ」を模倣する実装が、運用継続には不可欠であるという教訓を得た。"
+      },
+      "en": {
+        "title": "Automating Daily SNS Posts with Claude Triggers Instagram Bot Detection: Lessons from an 11-Day Indie Development Experiment",
+        "summary": "A developer attempting to automate an entire indie project’s SNS presence—including YouTube, TikTok, Instagram, Threads, and note—via Claude hit a major roadblock on day 11. Instagram’s spam detection algorithms immediately flagged the account, issuing a \"Are you human? \" warning that halted operations. This experiment highlights how sophisticated platform filters are at identifying rigid, automated scheduling patterns that lack human-like variance. For builders looking to scale distribution through AI, the takeaway is clear: pure automation is insufficient for modern algorithms. Developers must integrate random jitter, human-like interaction loops, or selective manual intervention to avoid triggering shadowbans or account locks, effectively proving that \"humanity\" is now a feature that requires technical implementation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "SNS・ショート動画",
+      "開発"
+    ],
+    "created_at": "2026-11-13T03:31:37.061Z"
+  },
+  {
     "id": "art-1794539835018-ffivx",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -13492,32 +13598,6 @@
     "created_at": "2026-11-11T16:46:43.785Z"
   },
   {
-    "id": "art-1794414781114-6r446",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/wadome_do/n/n358ee8c43e3b",
-    "published_at": "2026-11-11T07:09:08.000Z",
-    "og_image_url": null,
-    "title_ja": "ゲーム開発の「itch.io」進出：海外市場への露出拡大に向けた英語ローカライズとプラットフォーム戦略",
-    "summary_ja": "個人開発者がゲームを海外市場に広げるため、世界的なインディーゲーム配信プラットフォーム「itch.io」へ作品を公開した。 単にゲームをアップロードするだけでなく、海外プレイヤーの目に留まるよう英語での紹介文やゲーム説明を最適化することで、リーチ範囲を飛躍的に拡大できる。 開発者にとって重要なのは、国内だけで完結せず、こうしたグローバルプラットフォームへ初期段階からアクセスを用意しておくことだ。",
-    "translations": {
-      "ja": {
-        "title": "ゲーム開発の「itch.io」進出：海外市場への露出拡大に向けた英語ローカライズとプラットフォーム戦略",
-        "summary": "個人開発者がゲームを海外市場に広げるため、世界的なインディーゲーム配信プラットフォーム「itch.io」へ作品を公開した。 単にゲームをアップロードするだけでなく、海外プレイヤーの目に留まるよう英語での紹介文やゲーム説明を最適化することで、リーチ範囲を飛躍的に拡大できる。 開発者にとって重要なのは、国内だけで完結せず、こうしたグローバルプラットフォームへ初期段階からアクセスを用意しておくことだ。"
-      },
-      "en": {
-        "title": "Expanding indie games to global audiences: Launching on itch.io and mastering English localization for better discoverability",
-        "summary": "Indie developers looking to scale their reach should consider publishing on itch.io, the go-to platform for global game distribution. Beyond just uploading binaries, the true challenge and opportunity lie in crafting native-level English descriptions and promotional copy that actually resonate with international players. By properly localizing product pages, developers can significantly widen their player base beyond domestic markets. This strategy serves two purposes: it physically increases the number of touchpoints for potential users and creates a direct feedback loop with global gaming communities. For independent builders, the lesson is that shipping to these open marketplaces is a low-cost, high-leverage way to diversify traffic sources and validate game mechanics against a truly worldwide audience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-11T16:33:01.114Z"
-  },
-  {
     "id": "art-1794414762030-0nwni",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -13789,32 +13869,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-11T16:01:57.760Z"
-  },
-  {
-    "id": "art-1794412123474-zbrbm",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kazumasaiwazaki/n/nb32abe1c811e",
-    "published_at": "2026-11-11T15:42:38.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335030156/rectangle_large_type_2_ce8c046ad7e3b5d371980cba2aba3d19.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Robloxゲーム『Fruit Fusion 3D』がv1.11にアップデート、2027年1月1日よりお正月シーズン限定イベントを開催",
-    "summary_ja": "Robloxの人気タイトル『Fruit Fusion 3D』がv1.11へアップデートされた。 今回の目玉は2027年1月1日から開始される「お正月」シーズンイベントで、新年をテーマにした特別な体験をフルーツと一緒に楽しめる。 ゲームのライフサイクルを維持するためには、このように季節イベントを定期的に実装し、コミュニティに新鮮なプレイ体験と季節感を提供し続ける運用設計が不可欠だ。",
-    "translations": {
-      "ja": {
-        "title": "Robloxゲーム『Fruit Fusion 3D』がv1.11にアップデート、2027年1月1日よりお正月シーズン限定イベントを開催",
-        "summary": "Robloxの人気タイトル『Fruit Fusion 3D』がv1.11へアップデートされた。 今回の目玉は2027年1月1日から開始される「お正月」シーズンイベントで、新年をテーマにした特別な体験をフルーツと一緒に楽しめる。 ゲームのライフサイクルを維持するためには、このように季節イベントを定期的に実装し、コミュニティに新鮮なプレイ体験と季節感を提供し続ける運用設計が不可欠だ。"
-      },
-      "en": {
-        "title": "Roblox hit Fruit Fusion 3D updates to v1.11, launching exclusive New Year seasonal content starting January 1st, 2027",
-        "summary": "The popular Roblox title Fruit Fusion 3D has officially rolled out its v1.11 update, headlined by a dedicated \"New Year\" seasonal event beginning on January 1st, 2027. This release introduces holiday-themed experiences designed to engage players during the transition into the new year, effectively refreshing the game's loop. For developers managing long-term community projects, this update underscores the critical importance of integrating seasonal content and limited-time events into the roadmap. By actively mapping development cycles to real-world calendar events, creators can maintain consistent player retention and foster a sense of shared community excitement, proving that timely content refreshes remain a cornerstone for keeping evergreen gaming titles relevant and vibrant in competitive virtual spaces."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-11T15:48:43.474Z"
   },
   {
     "id": "art-1794412116400-dr0b5",
@@ -14637,32 +14691,6 @@
     "created_at": "2026-11-11T13:31:44.051Z"
   },
   {
-    "id": "art-1794403044660-j5mbo",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/fukukei23/items/9a78c9a8c27c02663414",
-    "published_at": "2026-11-11T13:07:50.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY1ZjQ2OWNhMDE5NjIyOTU4MTY0NzA3ODg2MjU3ODg1ZD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDBlNTBjZjg2NzA0YWYzOTU4YzUyZWE0NDAyYjVkZDg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db0fb7b518cbe6fd4515b7a3f5b82a516?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q29udGV4dCUyMEVuZ2luZWVyaW5nJUU1JTg1JUE1JUU5JTk2JTgwJTNBJTIwNDdLQiVFMyU4MSVBRVB5dGhvbiVFMyU4MyU5NSVFMyU4MiVBMSVFMyU4MiVBNCVFMyU4MyVBQiVFMyU4MSVBN0xMTSVFNSU4NSVBNSVFNSU4QSU5QiVFMyU4MiU5MiVFNiU5QyU4MCVFOSU4MSVBOSVFNSU4QyU5NiVFMyU4MSU5OSVFMyU4MiU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTBmZThhZWUyMDQyYjQ2ZTUxM2QxMDdkM2I1ZjY1OTcy&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmdWt1a2VpMjMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1mZjI4OTNiOTM5OTRjYzYzYjBhYWQzNmU1ZGJhOGVlNQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=f4d42b7d51c9440980da63ca780e4636",
-    "title_ja": "プロンプトを超えて：47KBのPythonで実装する「Context Engineering」によるLLM入力最適化と開発効率化手法",
-    "summary_ja": "AI開発のトレンドがプロンプトエンジニアリングからContext Engineeringへ移行する中、わずか47KBのPythonファイルを用いてLLMの入力データを最適化する手法が注目されている。 本記事では、モデルへ渡す情報の質をデータ構造レベルで制御する技術を解説する。 単にプロンプトを調整するだけでなく、LLMに渡すコンテキスト自体をエンジニアリングすることで、モデルの推論精度向上とトークンコスト削減を同時に実現するアプローチを提案する。",
-    "translations": {
-      "ja": {
-        "title": "プロンプトを超えて：47KBのPythonで実装する「Context Engineering」によるLLM入力最適化と開発効率化手法",
-        "summary": "AI開発のトレンドがプロンプトエンジニアリングからContext Engineeringへ移行する中、わずか47KBのPythonファイルを用いてLLMの入力データを最適化する手法が注目されている。 本記事では、モデルへ渡す情報の質をデータ構造レベルで制御する技術を解説する。 単にプロンプトを調整するだけでなく、LLMに渡すコンテキスト自体をエンジニアリングすることで、モデルの推論精度向上とトークンコスト削減を同時に実現するアプローチを提案する。"
-      },
-      "en": {
-        "title": "Beyond Prompt Engineering: Optimizing LLM Inputs with a 47KB Python Implementation of Context Engineering for Better Inference",
-        "summary": "As the AI development landscape shifts from prompt engineering to Context Engineering, developers are focusing on optimizing LLM inputs using compact, 47KB Python implementations. This article examines the methodology of controlling input data quality at the architectural level before it ever touches the model. Instead of relying solely on prompt refinement, this approach focuses on engineering the actual context provided to the LLM to simultaneously boost inference accuracy and slash token costs. For builders, this signifies a transition from linguistic tweaking to data-centric optimization, proving that how you structure the context is just as critical to model performance as the prompt itself, offering a more scalable path for production-grade AI applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-11T13:17:24.660Z"
-  },
-  {
     "id": "art-1794403008943-loylk",
     "source_id": "source-revenuecat",
     "source_name": "RevenueCat Blog / Sub Club",
@@ -14717,33 +14745,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T13:02:57.163Z"
-  },
-  {
-    "id": "art-1794402153554-03xo6",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.bbc.co.uk/news/articles/cmp3g37l566po",
-    "published_at": "2026-11-11T12:35:05.000Z",
-    "og_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/c11d/live/472ca6e0-dcc6-11f1-a594-d13718d7f889.jpg",
-    "title_ja": "オーストラリア政府、OpenAIのハッキング被害を受け悪意あるAI利用に刑事罰を検討──AI開発者に問われる法的責任と安全設計",
-    "summary_ja": "オーストラリア政府はOpenAIのセキュリティ侵害を受け、AIモデルの悪用や制御不能な状態を招いた開発者・企業に対し、刑事罰を科す法規制の導入を検討している。 単なる賠償責任を超えて「開発側の過失」が問われる可能性が高まっており、AI製品をリリースするエンジニアには、開発段階からの厳格なリスク管理と、万が一の際の責任所在を明確化するガバナンス設計が強く求められることになる。",
-    "translations": {
-      "ja": {
-        "title": "オーストラリア政府、OpenAIのハッキング被害を受け悪意あるAI利用に刑事罰を検討──AI開発者に問われる法的責任と安全設計",
-        "summary": "オーストラリア政府はOpenAIのセキュリティ侵害を受け、AIモデルの悪用や制御不能な状態を招いた開発者・企業に対し、刑事罰を科す法規制の導入を検討している。 単なる賠償責任を超えて「開発側の過失」が問われる可能性が高まっており、AI製品をリリースするエンジニアには、開発段階からの厳格なリスク管理と、万が一の際の責任所在を明確化するガバナンス設計が強く求められることになる。"
-      },
-      "en": {
-        "title": "Australia proposes criminal penalties for rogue AI developers following OpenAI security breach, raising stakes for engineering accountability",
-        "summary": "In response to a significant security breach involving OpenAI, the Australian government is now considering legislation that would impose criminal penalties on developers and organizations responsible for AI models that cause harm or operate without sufficient control. This shift signals that legal scrutiny will move well beyond civil liability into potential criminal negligence for those building and deploying autonomous systems. For builders and AI engineers, this means that safety guardrails and robust security protocols are no longer just product features, but essential requirements for avoiding personal and professional legal exposure. It is a clear warning that developers must prioritize risk management and establish transparent governance frameworks early in the development lifecycle before shipping any AI-driven applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "セキュリティ",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-11T13:02:33.554Z"
   },
   {
     "id": "art-1794401262205-87nxg",
