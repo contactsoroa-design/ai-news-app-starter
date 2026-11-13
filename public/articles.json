@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1794581260795-1u3we",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://railyard.run/blog/ai-agent-read-only-sql/",
+    "published_at": "2026-11-13T14:36:34.000Z",
+    "og_image_url": "https://railyard.run/covers/en/ai-agent-read-only-sql-319a5752de.png",
+    "title_ja": "AIエージェントに本番DBを安全にクエリさせる手法、MCPを活用した読み取り専用SQLの実行基盤が公開",
+    "summary_ja": "本番環境のデータベースをAIエージェントに直接参照させる際のセキュリティ課題に対し、MCP（Model Context Protocol）経由で読み取り専用SQLを実行する手法が提案された。 書き込み権限を完全に排除した隔離環境を構築し、エージェントが必要なデータのみを安全に抽出できる権限管理を実装する。 開発者はこれにより、データの整合性を担保しつつ、AIによる自動分析やデバッグ支援を安心して本番環境へ統合できるようになる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントに本番DBを安全にクエリさせる手法、MCPを活用した読み取り専用SQLの実行基盤が公開",
+        "summary": "本番環境のデータベースをAIエージェントに直接参照させる際のセキュリティ課題に対し、MCP（Model Context Protocol）経由で読み取り専用SQLを実行する手法が提案された。 書き込み権限を完全に排除した隔離環境を構築し、エージェントが必要なデータのみを安全に抽出できる権限管理を実装する。 開発者はこれにより、データの整合性を担保しつつ、AIによる自動分析やデバッグ支援を安心して本番環境へ統合できるようになる。"
+      },
+      "en": {
+        "title": "Safely allowing AI agents to query production databases using read-only SQL over the Model Context Protocol",
+        "summary": "Managing secure database access for AI agents is a common blocker for production integration, but a new approach uses the Model Context Protocol (MCP) to bridge agents to production data via read-only SQL. This architecture enforces strict security by stripping all write permissions, ensuring the agent cannot modify or drop production tables while performing routine analytical queries or debugging tasks. By implementing granular control at the protocol layer, developers can delegate data exploration tasks to LLMs without exposing the underlying infrastructure to accidental corruption. For teams shipping agent-driven workflows, this framework provides a practical blueprint to bridge the gap between static data silos and autonomous diagnostic tools while maintaining operational safety."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-13T14:47:40.795Z"
+  },
+  {
+    "id": "art-1794581252574-st21f",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/whitemarshall/items/6cadec0996d1c2afa4ab",
+    "published_at": "2026-11-13T14:38:19.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmODljNjFkOTY3OWRiYTNhN2Y3NTk2OWJkMzUxNzU0NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGI4NjUzMzBkODk4Y2IwZGU0MTgwNWY1OWRjYzNlMjQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd74df1f0f9e99258a2c04d787d798489?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9RGVlcFNlZWslMjBIYXJuZXNzJUUzJTgxJUFFMTIlRTMlODMlOTclRTMlODMlQTklRTMlODIlQjAlRTMlODIlQTQlRTMlODMlQjMlRTMlODIlOTIlRTYlQTQlOUMlRTglQTglQkMlRTUlOEQlOTglRTQlQkQlOEQlRTMlODElQTclRTYlOTUlQjQlRTclOTAlODYlRTMlODElOTklRTMlODIlOEIlRUYlQkMlOUElRTUlQjAlOEUlRTUlODUlQTUlRTUlODklOEQlRTMlODMlODElRTMlODIlQTclRTMlODMlODMlRTMlODIlQUYlRTMlODElQThHZW5VSSVFNSVBRSU5RiVFNiVCOCVBQyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTg2ZDA3MjQ3ZGM0ZDEwNmUwZDE0OWY5N2Q2Njc5MTM5&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3aGl0ZW1hcnNoYWxsJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODZkYjFiOTRkNWI1NzM4Yjk3MjA1ODE2ODQyNzc4MWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c27b5d879dffb3ff838ca5db1fd71c19",
+    "title_ja": "DeepSeek Harnessの12プラグイン徹底検証：一括導入はNG、処理単位でのテスト導入による安全な開発フロー構築術",
+    "summary_ja": "DeepSeek Harnessで提供される12種類のプラグインを最大限活用するには、一度に導入せず、検証したい変更処理と合格条件を個別に定義して段階的に試すべきです。 本稿では、既存のGit履歴やバックアップが必須となる高度な開発者向けに、GenUIでの実測値に基づいた導入前チェックと安全な実装手順を解説します。 開発環境の整合性を保ちつつ、プラグインの特性を見極めて最適な組み合わせを見つけることが、予期せぬトラブルを防ぐ要諦となります。",
+    "translations": {
+      "ja": {
+        "title": "DeepSeek Harnessの12プラグイン徹底検証：一括導入はNG、処理単位でのテスト導入による安全な開発フロー構築術",
+        "summary": "DeepSeek Harnessで提供される12種類のプラグインを最大限活用するには、一度に導入せず、検証したい変更処理と合格条件を個別に定義して段階的に試すべきです。 本稿では、既存のGit履歴やバックアップが必須となる高度な開発者向けに、GenUIでの実測値に基づいた導入前チェックと安全な実装手順を解説します。 開発環境の整合性を保ちつつ、プラグインの特性を見極めて最適な組み合わせを見つけることが、予期せぬトラブルを防ぐ要諦となります。"
+      },
+      "en": {
+        "title": "DeepSeek Harness: Stop enabling all 12 plugins at once; test individually for safer, incremental GenUI development",
+        "summary": "To master the 12 plugins within DeepSeek Harness, avoid the temptation of bulk deployment; instead, strictly define your target change logic and pass/fail criteria before testing each one in isolation. This guide targets experienced developers, emphasizing that Git history and local backups are mandatory prerequisites before any implementation attempt. Based on empirical GenUI performance metrics, we detail how to conduct pre-deployment checks that verify plugin compatibility without risking your entire environment. Treating each plugin as a discrete variable allows for a reliable dev loop where you only keep the integrations that demonstrate clear value, preventing the inevitable technical debt and regression issues that arise from enabling these complex tools all at once."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-13T14:47:32.574Z"
+  },
+  {
+    "id": "art-1794581209576-3q2az",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/bingaku_n/n/n053aa5468366",
+    "published_at": "2026-11-13T14:44:52.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335754712/rectangle_large_type_2_ba8f61d47c27a7b3cda99b5d37b144d1.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人の技術力を正確に測るには「週末で完成させるゲーム開発」が最強——巨大企画を捨て、完走能力を証明すべき理由",
+    "summary_ja": "技術力が不明確なまま大作に挑むのは非効率だ。 まずは週末で完成可能な小規模ゲームを作り、「完成させる能力」自体をテストすべきである。 機能の取捨選択、アーキテクチャの決定、最終的なビルドまでを一貫して行う経験こそが、エンジニアとしての現在地を最も客観的に突きつける。 壮大な構想を練る前に、小さな完走実績を積み上げることが、個人の開発スキルを飛躍させるための唯一にして最短のルートとなる。",
+    "translations": {
+      "ja": {
+        "title": "個人の技術力を正確に測るには「週末で完成させるゲーム開発」が最強——巨大企画を捨て、完走能力を証明すべき理由",
+        "summary": "技術力が不明確なまま大作に挑むのは非効率だ。 まずは週末で完成可能な小規模ゲームを作り、「完成させる能力」自体をテストすべきである。 機能の取捨選択、アーキテクチャの決定、最終的なビルドまでを一貫して行う経験こそが、エンジニアとしての現在地を最も客観的に突きつける。 壮大な構想を練る前に、小さな完走実績を積み上げることが、個人の開発スキルを飛躍させるための唯一にして最短のルートとなる。"
+      },
+      "en": {
+        "title": "Why 'weekend game dev' is the ultimate litmus test for engineering skills: Stop planning big, start shipping small",
+        "summary": "Attempting to build a massive project without knowing your baseline technical skill is an inefficiency trap for solo developers. Instead, the most rigorous test of your engineering capability is building a small game you can actually finish in a single weekend. This process forces you to navigate trade-offs, finalize architecture, and manage build pipelines—critical phases often skipped when ideas remain theoretical. By making 'completion' the primary metric rather than scale, you get an immediate, honest audit of your strengths and technical debt. Before chasing grand, multi-month concepts, stacking small, completed milestones is the most effective way to validate your skills and rapidly mature your development workflow in today's high-velocity landscape."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-13T14:46:49.576Z"
+  },
+  {
     "id": "art-1794580393216-skahl",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -10685,32 +10763,6 @@
     "created_at": "2026-11-12T11:02:21.427Z"
   },
   {
-    "id": "art-1794481332671-3xzg8",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/temalabo_yui/n/nbf3b24f364a3",
-    "published_at": "2026-11-12T10:28:03.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335285854/rectangle_large_type_2_349778bb619738f5c1bf2a6b0ce1c15e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "【個人開発19日目】ソフトのダウンロード数が12回に急増、離脱率0％を記録した運用上のヒント",
-    "summary_ja": "個人開発アプリをリリースして19日目、通常は数回程度のダウンロード数が12回まで急増した。 特筆すべきは、ダウンロードしたユーザーからのアンインストール（離脱）が0人だった点だ。 数値を追うだけでなく、特定の日に流入が伸びた要因を特定し、ユーザーの定着率を維持する施策を重ねることが、個人開発における持続的な成長の足掛かりとなる。",
-    "translations": {
-      "ja": {
-        "title": "【個人開発19日目】ソフトのダウンロード数が12回に急増、離脱率0％を記録した運用上のヒント",
-        "summary": "個人開発アプリをリリースして19日目、通常は数回程度のダウンロード数が12回まで急増した。 特筆すべきは、ダウンロードしたユーザーからのアンインストール（離脱）が0人だった点だ。 数値を追うだけでなく、特定の日に流入が伸びた要因を特定し、ユーザーの定着率を維持する施策を重ねることが、個人開発における持続的な成長の足掛かりとなる。"
-      },
-      "en": {
-        "title": "Solo Dev Diary: Software downloads spike to 12 in one day with zero uninstalls on Day 19",
-        "summary": "On the 19th day of launching their solo development project, the developer saw a sudden spike in software downloads, reaching 12 in a single day—a significant increase from their usual daily volume of near-zero. Even more promising was that the churn rate remained at zero, meaning every single new user kept the software installed. For indie builders, this case highlights that tracking vanity metrics like download spikes is only half the battle; the real victory lies in analyzing exactly what triggered the influx and why the product successfully retained those specific users. Consistency in identifying acquisition sources and refining the onboarding experience is what eventually builds the foundation for long-term growth in solo app projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "アップデート"
-    ],
-    "created_at": "2026-11-12T11:02:12.671Z"
-  },
-  {
     "id": "art-1794481305976-01l2f",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -12906,32 +12958,6 @@
     "created_at": "2026-11-12T04:31:46.902Z"
   },
   {
-    "id": "art-1794457028888-qxn8b",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ShiningZhuo/items/974696e8bcb12df7e03b",
-    "published_at": "2026-11-12T03:17:17.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSlRjeUlwbnh4RXJxakg4Ui1qaVJHbE04d2ZKVXVEN2MweDFkd1N0NXByekNWSGpRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWYyMzA1Yjc0NWMwNGNiNzUxMTkxZWI5NTEyNDgzN2Nh%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df500d595efec989090742a7c2174f160?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9MiVFMyU4MSVBNCVFMyU4MSVBRSUyMExMTSUyMCVFMyU4MiU5MiVFNSU5MCU4QyVFMyU4MSU5OCVFMyU4MiVCMyVFMyU4MyVCQyVFMyU4MyU4OSVFMyU4MSVBNyVFNSU5MSVCQyVFMyU4MSVCNiVFMyU4MSU5RiVFMyU4MiU4MSVFMyU4MSVBQiVFMyU4MCU4MUFQSSUyMCVFNiU4RSVBNSVFNyVCNiU5QSVFMyU4MiU5MiVFNCVCOCU4MCVFNSU4NSU4MyVFNSU4QyU5NiVFMyU4MSU5NyVFMyU4MSU5RiVFOCVBOSVCMSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTdhOWY0ZTkwNWZlZDFkZjllM2UzNjAxYTAwNjExMDJh&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBTaGluaW5nWmh1byZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTI2ODJlMjI2YmMwOTQ0NTIwYjg0NjgzYWZmYmRiM2Rh&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6c203398170bb1375bfa9def75be6582",
-    "title_ja": "LLMの使い分けを容易にするAPI一元化設計：複数のAIモデルを同一コードベースから呼び出すアダプター実装の勘所",
-    "summary_ja": "エージェント処理にはGPT-5.6 Sol、長文読解にはClaude Opus 5.5など、用途に応じてLLMを最適化する開発者が増えている。 本記事では、異なるプロバイダーのAPI仕様を吸収し、単一のインターフェース経由でモデルを切り替え可能にする抽象化レイヤーの実装手法を解説する。 if文による条件分岐を排除し、設定ファイルベースでモデルを差し替える設計を取り入れることで、将来的な新モデルへの移行やコスト最適化を容易にする堅牢なワークフローが構築できる。",
-    "translations": {
-      "ja": {
-        "title": "LLMの使い分けを容易にするAPI一元化設計：複数のAIモデルを同一コードベースから呼び出すアダプター実装の勘所",
-        "summary": "エージェント処理にはGPT-5.6 Sol、長文読解にはClaude Opus 5.5など、用途に応じてLLMを最適化する開発者が増えている。 本記事では、異なるプロバイダーのAPI仕様を吸収し、単一のインターフェース経由でモデルを切り替え可能にする抽象化レイヤーの実装手法を解説する。 if文による条件分岐を排除し、設定ファイルベースでモデルを差し替える設計を取り入れることで、将来的な新モデルへの移行やコスト最適化を容易にする堅牢なワークフローが構築できる。"
-      },
-      "en": {
-        "title": "Unifying LLM API connections: How to build an abstraction layer to switch models within a single codebase",
-        "summary": "Developers are increasingly diversifying their AI stack, pairing GPT-5.6 Sol for agentic workflows with Claude Opus 5.5 for long-context analysis. To manage this fragmentation, this guide demonstrates how to build a unified abstraction layer that hides individual API quirks behind a consistent interface. By replacing scattered conditional logic with a centralized adapter pattern, you can hot-swap models via configuration files without refactoring your application code. This architecture not only makes switching providers seamless but also future-proofs your product against the rapid release cycles of new foundation models. For builders scaling AI apps, standardizing your request pipeline now prevents the technical debt of maintaining provider-specific code paths as you experiment with different model strengths."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-12T04:17:08.888Z"
-  },
-  {
     "id": "art-1794457022430-6rh9b",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -13330,33 +13356,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-12T02:17:06.436Z"
-  },
-  {
-    "id": "art-1794449812852-wljk9",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.wsj.com/tech/ai/united-airlines-is-banning-ai-bots-from-booking-flights-5b514b38",
-    "published_at": "2026-11-12T02:11:54.000Z",
-    "og_image_url": null,
-    "title_ja": "ユナイテッド航空、AIボットによる航空券予約を全面禁止へ。無許可のスクレイピングと不正アクセス対策を強化",
-    "summary_ja": "ユナイテッド航空は、AIボットや自動化ツールによるWebサイト上の航空券予約や座席在庫のスクレイピング行為を禁止する新たな規約を導入した。 これまでこれらのボットは価格監視や在庫取得に利用されてきたが、過剰な負荷とシステム悪用を防ぐ狙いがある。 開発者や自動化ツール提供者は、API利用の制約が強まる傾向に注意が必要だ。 今後は公式API以外の手段を用いたデータ取得や予約プロセスへの介入が、厳格な法的・技術的措置の対象となる可能性がある。",
-    "translations": {
-      "ja": {
-        "title": "ユナイテッド航空、AIボットによる航空券予約を全面禁止へ。無許可のスクレイピングと不正アクセス対策を強化",
-        "summary": "ユナイテッド航空は、AIボットや自動化ツールによるWebサイト上の航空券予約や座席在庫のスクレイピング行為を禁止する新たな規約を導入した。 これまでこれらのボットは価格監視や在庫取得に利用されてきたが、過剰な負荷とシステム悪用を防ぐ狙いがある。 開発者や自動化ツール提供者は、API利用の制約が強まる傾向に注意が必要だ。 今後は公式API以外の手段を用いたデータ取得や予約プロセスへの介入が、厳格な法的・技術的措置の対象となる可能性がある。"
-      },
-      "en": {
-        "title": "United Airlines bans AI bots from booking flights, cracking down on unauthorized scraping and automated traffic",
-        "summary": "United Airlines has officially updated its terms to ban AI-driven bots and automated tools from booking flights or scraping inventory directly from its website. These automated systems, which developers often use for real-time price monitoring and ticket tracking, are increasingly being blocked to prevent server strain and unauthorized resource consumption. For builders, this move signals a broader trend where airlines are tightening controls on screen-scraping, forcing developers to rely on approved distribution channels or official APIs. This shift underscores a growing friction between travel tech automation and legacy carriers, requiring engineers to prepare for more aggressive bot detection and legal enforcement when scraping sites that prioritize closed, authenticated access over open data."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-12T02:16:52.852Z"
   },
   {
     "id": "art-1794448912568-i6zqh",
