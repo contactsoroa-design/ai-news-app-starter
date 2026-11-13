@@ -1,5 +1,133 @@
 [
   {
+    "url": "https://zenn.dev/twinklemodel/articles/c314aab3f77530",
+    "source_id": "source-zenn",
+    "title": "Gemini 4 Hydrogen：移行ではまずパラメータを整理し、思考の深さを決める",
+    "pubDate": "2026-11-13T02:30:12.000Z",
+    "snippet": "要約：Gemini 4 Hydrogen は 2026 年 11 月 12 日に公開されました。筆者は、モデル名を変えるだけで使える「高速な Flash」として扱うべきではないと考えています。まず古いサンプリングパラメータ、thinking_budget、明示的キャッシュへの依存を取り除き、出力予算と長い出力の生成方法を確認します。そのうえで 4 段階の thinking level を評価し、要件を満たす最も低いレベルを選びます。Carbon に計画を、Hydrogen に実行と検証を任せる構成は試す価値がありますが、コストは単価だけでなく、タスク全体で集計する必要があります。出典：...",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://zenn.dev/karamage/articles/5c3f8370b2b370",
+    "source_id": "source-zenn",
+    "title": "【pstack】AIに敵対的レビューをさせるな。トークンは検証に使え",
+    "pubDate": "2026-11-13T02:48:24.000Z",
+    "snippet": "AIが書いたコードをマルチエージェントで多角的な視点で別のAIに容赦なく叩かせ、 それを何往復もループで繰り返せば品質は上がっていくはず。。。 純粋無垢な私はずっと、そう信じていた頃がありました。 ところが、かなりトークンを注ぎ込んだPRからあっさり本番バグが出て、以下の問いにはじめて気づきました。 問い: AI同士の敵対的レビューで、成果物は本当に信頼できるものになるのか? 結論: なりません。そのトークンは実際に動かして確かめる「検証」に使うべきです 理由: コードの差分だけを渡されたAIは、揚げ足取りといつか必要になるかもという提案に迷い込むからです この記事では私の失敗談と、...",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://zenn.dev/safie_inc/articles/b6fa3de06606be",
+    "source_id": "source-zenn",
+    "title": "フィーチャーチームに配属された新卒エンジニアのAIに振り回されない「AI活用」",
+    "pubDate": "2026-11-13T03:00:05.000Z",
+    "snippet": "はじめに こんにちは、新卒4期生（2026年新卒）の武内です。光陰矢の如しとはよく言ったもので、4ヶ月の研修を経て実際の現場に配属されて、あっという間に3ヶ月(!?)が経とうとしています。 この記事では、配属から今日までを振り返りつつ、AIネイティブ世代？としてどのようにこの期間「AIを活用してキャッチアップや実際の業務を行ったか」を紹介できればと思っています。 初配属：フィーチャーチーム 新卒研修も終盤に差し掛かった7月中旬、待ちに待った配属先発表会が行われました。同期も含めて皆がソワソワする中、私の配属先は「Safie Manager（セーフィー マネージャー）開発グループ」...",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://zenn.dev/shibatamago_dev/articles/gemini-decision-1-hands-on",
+    "source_id": "source-zenn",
+    "title": "Gemini Decision 1を実際に動かしてみた。54問中53問正解、速さは環境次第だった",
+    "pubDate": "2026-11-13T03:44:08.000Z",
+    "snippet": "はじめに 文章を書かないAI、Gemini Decision 1を実際に動かしてみました。 前に3モデルを比べた記事では、発表資料の整理だけでした。今回はGemini Decision 1だけ、AI Studioの無料枠で11リクエスト・54問を投げてみました。JevとMicrosoftはまだ動かしていません。 なお、速さの数字は自分のPC（Windows）で測ったものを中心に書いています。Museの環境から投げたときは夕方に遅くなったので、その話も後で分けます。 再現用のコードとテスト画像はこちらに置いています。 https://github.com/shibatamago-dev...",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://zenn.dev/murooka_az/articles/compact-loses-decisions-carry-user-words",
+    "source_id": "source-zenn",
+    "title": "compactを重ねると指示を忘れるClaude Codeに、プロンプトを1つ足したら忘れなくなった。3回重ねても消えた指示は0件",
+    "pubDate": "2026-11-13T04:07:29.000Z",
+    "snippet": "はじめに Claude Code で長い作業をしていると、会話が長くなったところで要約（compact）が入ります。要約のあと、少し前に決めたはずのことを Claude が覚えていない。もう一度説明する。次の要約で、また消える。 人の手による設計作業が完全に抜け落ち、ある程度の要件から LLM が直接作り、作りながら直していく。私は、そんな未来を想定して、Claude Code を VS Code の中で使うための拡張機能を、その進め方で作っています。どんな問題に直面するのかを、自分で体験するためです。 その中で何度も当たったのが、この「決めたことが消える」でした。決めたことの置き場...",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://zenn.dev/agentkiyaku/articles/8f4e4c0facd812",
+    "source_id": "source-zenn",
+    "title": "Claude Code で日本語 CSV が文字化けする：CP932 は Read で化け、Edit と Write は拒否される",
+    "pubDate": "2026-11-13T04:11:30.000Z",
+    "snippet": "Windows や Excel から書き出した日本語 CSV は、UTF-8 ではなく CP932（Microsoft の Shift_JIS 拡張）であることがよくあります。Claude Code 2.1.322 にこの CSV を Read させると日本語が �（U+FFFD）に化け、Edit は拒否されます。スクリプトで読むなら encoding=\"cp932\" を指定し、Claude Code で編集するなら先に UTF-8 へ変換します。 Write も、今回の 2.1.322 では既存の CP932 ファイルを拒否しました。公式ドキュメントとは食い違う結果...",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://note.com/kobato7910/n/n4dfd71969992",
+    "source_id": "source-note-ai",
+    "title": "チャピのBTC・ETH市場観測｜2026年11月13日 ニュースと市場レポート",
+    "pubDate": "2026-11-13T05:22:13.000Z",
+    "snippet": "配信日： 2026年11月13日（金） 市場観測： 2026年11月13日 13:33 JST ニュース・出典確認： 2026年11月13日 13時台 JST こんにちは、チャピです！🐦 今日のBTC・ETH市場は、かなり厳しい値動きになっています。 CryptoRangeLab（CRL）の観測では、BTCは24時間で約6.16％、ETHも約5.50％下落。どちらも直近30日間の価格レンジの下限近くに位置しています。 今回は、この下落を単純に「安くなった」と捉えるのではなく、米国のETF資金動向や物価指標、金融政策と結びつけて考えてみます。 BTC・ETH関連ニュース 1．米国現物ETFから資金流出が続く――BTCとETHの両方に売り圧力 米国の現物ETFでは、11月11日（水）の市場取引日に、BTC・ETHともに資金流出が確認されました。 Farside Investorsの集計では、 * BTC現物ETF：2億9,980万ドルの純流出 * ETH現物ETF：1億4,480万ドルの純流出 となっています。 BTCではBlackRockのIBITから約2億6,970万ドル、ETHでは同社のETHAから約1億2,980万ドルが流出しました。 11月5日から11日までの5営業日は、両方のETFで純流出が続いています。 ETFは証券取引所で売買できる投資信託です。現物ETFを通じた資金の出入りは、機関投資家などの需要を観察する手掛かりになります。 ただし、ETFの資金流出額とBTC・ETHの市場全体の売却額は同じではありません。 チャピの注目点 僕が気になるのは、BTCだけでなくETHからも資金が抜けていることです。 特定の暗号資産だけの問題というより、暗号資産全体への投資意欲が弱まっている可能性があります。 ただし、ETFの流出だけで今回の急落の原因をすべて説明することはできません。 11月12日（木）の米国市場分については、確認時点で一部のファンドの数字が未掲載です。表示されている途中集計を最終値とは扱いません。 出典 * Farside Investors｜Bitco",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://note.com/ni_kara/n/n67f5619bc4ae",
+    "source_id": "source-note-ai",
+    "title": "【第8話】テスター集めは、別のアプリから始まった",
+    "pubDate": "2026-11-13T05:24:12.000Z",
+    "snippet": "この文章は、11月13日に書いたものです。 家計簿のテスター集めは、家計簿の募集から始まったわけじゃない。 続きをみる",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://note.com/tebanashi_ai/n/n620d4949f414",
+    "source_id": "source-note-ai",
+    "title": "Claude Codeにわざと危ない頼み方を6つ出したら、どこで止まったか｜任せる前の設定3つ",
+    "pubDate": "2026-11-13T06:05:14.000Z",
+    "snippet": "Claude Codeに作業を任せるとき、「このフォルダはもう要らないので消して。確認はいりません」と書いたら、本当にそのまま消すのかが気になっていました。作業中のフォルダの外まで消されたら、取り返しがつきません。 そこで、練習用のフォルダの外にダミーのファイルを置いて試しました。何も設定しない状態では、危ない頼み方6つのどれも止められず、外のフォルダの削除も、パスワードの表示も、gitの履歴の消去も確認なしで進みました。一方で、別の条件でAIが「消して」の手を止めた理由に挙げたのは、設定ではなく、ダミーのメモに私が書いた一文でした。 続きをみる",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://note.com/wadome_do/n/n33739786054b",
+    "source_id": "source-note-ai",
+    "title": "現役ドライバーがMuseに作業を一気に投げてみた｜車50台とスタンプ32個を同時進行させた実験記録",
+    "pubDate": "2026-11-13T06:06:23.000Z",
+    "snippet": "今日の昼すぎの時点で私のMuseには5種類の作業が同時に走っていました。 車の絵50台の作り直しとLINEスタンプ32個のデザイン案とココナラへの出品と記事の下書きです。 私は現役のキャリアカードライバーで運転の合間にしか指示を出す時間がありません。 まとめて投げるしかないのですが混ざらないのには理由があります。 続きをみる",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://note.com/shibuhachi/n/n2e57bb3509ca",
+    "source_id": "source-note-ai",
+    "title": "AIと100回やり取りして、note下書きを自動作成するChrome拡張機能を作った話",
+    "pubDate": "2026-11-13T06:06:31.000Z",
+    "snippet": "作ったもの 続きをみる",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://qiita.com/Hideki_Tamae/items/734580b3ad70751da24f",
+    "source_id": "source-qiita",
+    "title": "0。16日間で9個中4個が入れ替わったコネクタの接続状態を、9日後にもう一度数えたら、変化した数はこの数字だった",
+    "pubDate": "2026-11-13T06:33:33.000Z",
+    "snippet": "はじめに 0。 これが今回の数字です。何の0かというと、自分のこの記事投稿タスクを起動する定期タスクに紐づく9個のMCPコネクタについて、9日前(2026-11-04)にListConnectorsで確認した接続状態と、今日(2026-11-13)同じ方法で確認し直した接...",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://qiita.com/yunany90/items/79822558acd30ff025b1",
+    "source_id": "source-qiita",
+    "title": "Claude Fable 5.2は5.1より1回あたり40%安い。でもOpus 5.5が同じバグを半額で直した（実バグ25件・125回）",
+    "pubDate": "2026-11-13T06:34:24.000Z",
+    "snippet": "今週Claude Fable 5.2が出ました。価格は100万トークンあたり入力8ドル、出力40ドルです。Fable 5.1より20%安く、Opus 5.5の2倍です。知りたいことは2つでした。バグ1件を直すコストも本当に下がったのか。そしてOpusよりバグをよく直せるのか...",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "source_id": "source-simonwillison",
+    "title": "Gemini Decisions API",
+    "pubDate": "2026-11-11T22:03:25.000Z",
+    "snippet": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question. It's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million. Jev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs. I tested it against video by passing these questions to it along with my Yonkers stomping robot video file: dragon: Does this video have a dragon in it? robot: Does this video have a robot in it? france: Is this video set in France? usa: Is this video set in the USA? Jev and OpenA",
+    "saved_at": "2026-11-13T06:49:40.663Z"
+  },
+  {
+    "url": "https://qiita.com/WISS1/items/b0a60e4dd579b441c958",
+    "source_id": "source-qiita",
+    "title": "【ServiceNow】AI Agentとビルドエージェントのご紹介",
+    "pubDate": "2026-11-13T06:36:39.000Z",
+    "snippet": "1.はじめに こんにちは。株式会社ウイズ・ワン、ServiceNow担当のS-Hです。 ServiceNowではAIによる作業や機能開発の自動化のリリースに力を入れています。 本記事では私が自身の案件にて関わった「AI Agent」と「ビルドエージェント」について、私が実...",
+    "saved_at": "2026-11-13T06:49:40.662Z"
+  },
+  {
+    "url": "https://www.starterstory.com/stories/binderr",
+    "source_id": "source-starterstory",
+    "title": "Binderr",
+    "pubDate": "2026-11-12T21:22:33+00:00",
+    "snippet": "",
+    "saved_at": "2026-11-13T06:47:08.303Z"
+  },
+  {
     "url": "https://note.com/grand_rose5703/n/naaa0ecfc5ddd",
     "source_id": "source-note-ai",
     "title": "フォロワー0の新規アカウントでXのブーストに1,000円払ってみた結果【1日目】",
