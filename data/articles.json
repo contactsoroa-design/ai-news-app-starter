@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794607327044-gkn5z",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/aulvem/articles/9dba90964ec9ad",
+    "published_at": "2026-11-13T12:09:16.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cLjkJRP6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GA4%25E3%2581%25AE%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25AC%25E3%2583%259D%25E3%2583%25BC%25E3%2583%25AB%25E6%25B5%2581%25E5%2585%25A5%25E3%2581%25AF%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588%25E3%2581%258B%25EF%25BC%259F%2520ASN%25E3%2581%25AA%25E3%2581%2597%25E3%2581%25A7%25E8%25A6%258B%25E5%2588%2586%25E3%2581%2591%25E3%2582%258B2%25E3%2581%25A4%25E3%2581%25AE%25E3%2583%2581%25E3%2582%25A7%25E3%2583%2583%25E3%2582%25AF%25EF%25BC%2588%25E7%2594%25BB%25E9%259D%25A2%25E8%25A7%25A3%25E5%2583%258F%25E5%25BA%25A6%25E3%2581%25A8Chrome%25E3%2583%2590%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%25A7%25E3%2583%25B3%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Aulvem%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2dqZzhQWlZYdWNNRDhhNFFCekF6TzdjMDNRc3kzVmZXMTBwYUFscGlLTXJCanNLcz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "GA4で急増するシンガポール経由のボット流入を見抜く：Cloudflare無料プランでも使える「画面解像度」と「Chromeバージョン」を活用した判定術",
+    "summary_ja": "GA4の国別レポートでシンガポール等から急増する直帰率の高いアクセスは、その多くがボットである可能性が高い。 Cloudflareの無料プランではASNによる判別ができないため、実用的な代替案として「画面解像度」と「Chromeバージョン」の組み合わせチェックが極めて有効だ。 実機ではない不自然な解像度や、最新版に追従しきれていない古いChromeユーザーエージェントをフィルタリングすることで、誤検知を防ぎつつデータ精度を大幅に改善できる。",
+    "translations": {
+      "ja": {
+        "title": "GA4で急増するシンガポール経由のボット流入を見抜く：Cloudflare無料プランでも使える「画面解像度」と「Chromeバージョン」を活用した判定術",
+        "summary": "GA4の国別レポートでシンガポール等から急増する直帰率の高いアクセスは、その多くがボットである可能性が高い。 Cloudflareの無料プランではASNによる判別ができないため、実用的な代替案として「画面解像度」と「Chromeバージョン」の組み合わせチェックが極めて有効だ。 実機ではない不自然な解像度や、最新版に追従しきれていない古いChromeユーザーエージェントをフィルタリングすることで、誤検知を防ぎつつデータ精度を大幅に改善できる。"
+      },
+      "en": {
+        "title": "How to Detect GA4 Singapore Bot Traffic Without ASN: Using Screen Resolution and Chrome Version as Effective Proxies for Cloudflare Free Tier",
+        "summary": "When Google Analytics 4 reports a sudden spike in high-bounce traffic from Singapore, you are likely looking at bot activity rather than genuine users. Since Cloudflare’s free tier restricts access to ASN data, identifying data center traffic is difficult. A reliable workaround is to implement a two-step validation: checking screen resolution and verifying specific Chrome browser versions. Bots often report non-human screen dimensions or use outdated, inconsistent Chrome user agents that fail to align with real browser update cycles. By applying these two filters to your analytics flow, you can effectively scrub ghost traffic without upgrading your infrastructure. This approach ensures your engagement metrics remain accurate, allowing you to optimize your actual content strategy for human users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-13T22:02:07.044Z"
+  },
+  {
+    "id": "art-1794607320342-w67ee",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/simbaTmotsi/simba-skills",
+    "published_at": "2026-11-13T21:37:07.000Z",
+    "og_image_url": null,
+    "title_ja": "AIコーディングエージェントの誤操作を防ぐ「防御的スキル設計」：本番環境への安全なアクセス制御を実現するフレームワーク",
+    "summary_ja": "AIエージェントに本番環境への書き込みを許容する際、意図しない破壊的なコード変更を防ぐには、機能単位で実行権限を制限する「防御的スキル」の設計が不可欠だ。 本フレームワークは、AIが特定の関数やツールを実行する前に安全性を検証するガードレールを組み込み、エージェントが本番環境へ不用意に触れるリスクを最小化する。 AIによる自動開発を導入する際、単なる機能拡張ではなく、こうした堅牢な権限分離を組み込むことが、インフラの安定稼働を維持する鉄則となる。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングエージェントの誤操作を防ぐ「防御的スキル設計」：本番環境への安全なアクセス制御を実現するフレームワーク",
+        "summary": "AIエージェントに本番環境への書き込みを許容する際、意図しない破壊的なコード変更を防ぐには、機能単位で実行権限を制限する「防御的スキル」の設計が不可欠だ。 本フレームワークは、AIが特定の関数やツールを実行する前に安全性を検証するガードレールを組み込み、エージェントが本番環境へ不用意に触れるリスクを最小化する。 AIによる自動開発を導入する際、単なる機能拡張ではなく、こうした堅牢な権限分離を組み込むことが、インフラの安定稼働を維持する鉄則となる。"
+      },
+      "en": {
+        "title": "Defensive Skill Design: How to keep AI coding agents from accidentally breaking your production environments",
+        "summary": "As AI coding agents gain the ability to modify production code, developers need to implement defensive skill architectures that restrict execution scope to prevent catastrophic failures. This framework demonstrates how to wrap agent tools and API functions with strict permission boundaries, ensuring that AI can perform tasks safely without possessing broad, dangerous access to your infrastructure. By decoupling agent capabilities from raw environment permissions, you can create a reliable system where AI assists in development while failing gracefully rather than causing outages. For teams integrating autonomous agents into their CI/CD pipelines, the takeaway is clear: do not grant raw filesystem or production access until granular, tool-specific safeguards are firmly in place to gate every AI-driven action."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-13T22:02:00.342Z"
+  },
+  {
+    "id": "art-1794607313524-r8g96",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/harukatakatsuka/n/n3e876849136e",
+    "published_at": "2026-11-13T21:57:45.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/334818376/rectangle_large_type_2_ba1c3dddf058b9835b5afc8f70a35442.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "エンジニア未経験でもiPhoneアプリを1日で完成！Claude Codeを活用した高速開発手法と実装の勘所を公開",
+    "summary_ja": "Anthropicが提供するCLIツール「Claude Code」を活用し、プログラミング知識が浅い層でもiPhoneアプリを1日で開発する手法が注目されている。 自然言語による指示出しでコード生成やバグ修正を自動化し、開発環境を構築するプロセスを解説。 非エンジニアにとっての技術的障壁を下げるこのアプローチは、アイデアを即座にプロトタイプへ落とし込み、市場へ投入するための強力な武器となる。",
+    "translations": {
+      "ja": {
+        "title": "エンジニア未経験でもiPhoneアプリを1日で完成！Claude Codeを活用した高速開発手法と実装の勘所を公開",
+        "summary": "Anthropicが提供するCLIツール「Claude Code」を活用し、プログラミング知識が浅い層でもiPhoneアプリを1日で開発する手法が注目されている。 自然言語による指示出しでコード生成やバグ修正を自動化し、開発環境を構築するプロセスを解説。 非エンジニアにとっての技術的障壁を下げるこのアプローチは、アイデアを即座にプロトタイプへ落とし込み、市場へ投入するための強力な武器となる。"
+      },
+      "en": {
+        "title": "Building an iPhone App in One Day: How Claude Code Enables Non-Engineers to Accelerate Mobile App Development",
+        "summary": "Anthropic’s CLI tool, Claude Code, is empowering non-engineers to build functional iPhone applications within just a single day. This development methodology focuses on utilizing natural language prompts to automate core coding tasks, debugging, and project scaffolding, effectively stripping away the technical friction typically associated with mobile app creation. By offloading complex logic and syntax generation to an AI agent, creators can bypass long learning curves and ship prototypes rapidly. For builders and solopreneurs, this represents a pivotal shift where technical execution speed no longer acts as a bottleneck, allowing anyone with a clear product vision to focus entirely on feature definition and user feedback loops instead of writing boilerplate code from scratch."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-13T22:01:53.524Z"
+  },
+  {
+    "id": "art-1794607305761-26a3g",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures/",
+    "published_at": "2026-11-13T21:53:40.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/12/ML-22226-featured-image.png",
+    "title_ja": "AWS、生物学的構造予測「OpenFold3」をSageMaker JumpStartで提供開始：タンパク質・DNA・RNA・リガンドの高速推論を実現",
+    "summary_ja": "AWSは、タンパク質やDNA、RNA、リガンド複合体の3D構造を予測するオープンソースの「OpenFold3」をAmazon SageMaker JumpStartで提供開始した。 非同期推論やマルチGPU並列処理に対応し、独自の多重配列アラインメント（MSA）を活用することで精度とプライバシーを両立する。 さらに、スケール・トゥ・ゼロによるコスト最適化も可能であり、バイオテクノロジー領域の開発者は自社環境で安全かつ効率的に構造予測基盤を構築できる。",
+    "translations": {
+      "ja": {
+        "title": "AWS、生物学的構造予測「OpenFold3」をSageMaker JumpStartで提供開始：タンパク質・DNA・RNA・リガンドの高速推論を実現",
+        "summary": "AWSは、タンパク質やDNA、RNA、リガンド複合体の3D構造を予測するオープンソースの「OpenFold3」をAmazon SageMaker JumpStartで提供開始した。 非同期推論やマルチGPU並列処理に対応し、独自の多重配列アラインメント（MSA）を活用することで精度とプライバシーを両立する。 さらに、スケール・トゥ・ゼロによるコスト最適化も可能であり、バイオテクノロジー領域の開発者は自社環境で安全かつ効率的に構造予測基盤を構築できる。"
+      },
+      "en": {
+        "title": "AWS adds OpenFold3 to SageMaker JumpStart for high-performance 3D biomolecular structure prediction of proteins, DNA, RNA, and ligands",
+        "summary": "AWS has integrated OpenFold3 into Amazon SageMaker JumpStart, enabling developers to deploy precise 3D biomolecular structure predictions for proteins, DNA, RNA, and ligand complexes directly within their own AWS environments. This deployment supports robust features like asynchronous inference and multi-GPU parallelism to manage heavy workloads efficiently, while allowing teams to bring their own multiple sequence alignments (MSAs) to ensure data privacy and high prediction accuracy. Furthermore, the architecture supports scaling to zero to minimize operational costs. For biotechnology builders, this integration provides a scalable foundation that balances sophisticated modeling capabilities with cost-effective infrastructure management, allowing for rapid experimentation without compromising on data sovereignty or computational throughput in complex structural biology workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-13T22:01:45.761Z"
+  },
+  {
     "id": "art-1794606470342-to3su",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -11035,32 +11140,6 @@
     "created_at": "2026-11-12T17:31:38.677Z"
   },
   {
-    "id": "art-1794503874264-6kie7",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/pyoko_land/n/n29d91e8730b9",
-    "published_at": "2026-11-12T16:45:04.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335402532/rectangle_large_type_2_df3aa190c98648b4b9dad490b772c6b8.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Codeの進行状況を「村の住人」が歩き回るUIで可視化、SwiftUIで作ったMacアプリの仕組みと開発背景",
-    "summary_ja": "Claude CodeのCLI上の進行状況が追いづらい問題を解決するため、各エージェントの作業を村の住人が家へ移動して吹き出しで話すアニメーションとして可視化したMacアプリが開発された。 SwiftUIとフックを活用し、許可待ちの通知や作業状態を直感的に把握できる環境を0円で構築している。 コマンドラインのログを人間味あるUIに変換するアプローチは、複雑なAIエージェントの挙動を管理する新しいUXデザインのヒントになる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの進行状況を「村の住人」が歩き回るUIで可視化、SwiftUIで作ったMacアプリの仕組みと開発背景",
-        "summary": "Claude CodeのCLI上の進行状況が追いづらい問題を解決するため、各エージェントの作業を村の住人が家へ移動して吹き出しで話すアニメーションとして可視化したMacアプリが開発された。 SwiftUIとフックを活用し、許可待ちの通知や作業状態を直感的に把握できる環境を0円で構築している。 コマンドラインのログを人間味あるUIに変換するアプローチは、複雑なAIエージェントの挙動を管理する新しいUXデザインのヒントになる。"
-      },
-      "en": {
-        "title": "Developer builds custom Mac UI to visualize Claude Code agents as 'villagers' walking and interacting in real-time",
-        "summary": "To solve the frustration of tracking chaotic CLI logs during multi-agent workflows, a developer created a native Mac app that renders Claude Code activity as animated villagers walking between houses. Using SwiftUI and custom hooks, the app visualizes which sub-agent is active, what tasks they are executing via speech bubbles, and alerts the user with an exclamation point when human approval is required. By transforming cryptic terminal output into a playful, intuitive interface, this project demonstrates how visual metaphors can bridge the gap between complex autonomous agent processes and human oversight. For builders creating AI tools, this serves as a compelling case study on improving developer experience through creative, lightweight frontend layers that simplify agent status monitoring."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-12T17:17:54.264Z"
-  },
-  {
     "id": "art-1794503845927-gj5t0",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -12612,32 +12691,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-12T12:16:52.259Z"
-  },
-  {
-    "id": "art-1794484910528-066f5",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.theguardian.com/education/2026/nov/11/ai-close-to-impossible-assess-university-coursework-regulator",
-    "published_at": "2026-11-12T11:47:47.000Z",
-    "og_image_url": "https://i.guim.co.uk/img/media/d3a1271d3a03313b67f28cd9ca99f9f80e115ce7/671_0_5849_4679/master/5849.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e2d387c03ee68e491945ef880c521fec",
-    "title_ja": "英規制当局が警告：生成AI普及により大学の課題評価は「ほぼ不可能」な事態へ。従来の学力測定手法の根本的な見直しが急務",
-    "summary_ja": "英国の教育規制当局が、生成AIの急速な普及により、大学の課題レポートや試験による学力評価が「ほぼ不可能」になりつつあると警鐘を鳴らした。 学生がAIを駆使して提出物を生成する現状では、従来のペーパーテストや課題形式による公平な評価の維持が困難であり、試験監督の強化や対面形式への回帰だけでは解決できない段階に達している。 教育機関は、AIを禁止するのではなく、AI前提の学習環境で学生の真の理解度をどう測定・保証するかという、教育手法そのものの再構築を迫られている。",
-    "translations": {
-      "ja": {
-        "title": "英規制当局が警告：生成AI普及により大学の課題評価は「ほぼ不可能」な事態へ。従来の学力測定手法の根本的な見直しが急務",
-        "summary": "英国の教育規制当局が、生成AIの急速な普及により、大学の課題レポートや試験による学力評価が「ほぼ不可能」になりつつあると警鐘を鳴らした。 学生がAIを駆使して提出物を生成する現状では、従来のペーパーテストや課題形式による公平な評価の維持が困難であり、試験監督の強化や対面形式への回帰だけでは解決できない段階に達している。 教育機関は、AIを禁止するのではなく、AI前提の学習環境で学生の真の理解度をどう測定・保証するかという、教育手法そのものの再構築を迫られている。"
-      },
-      "en": {
-        "title": "UK regulators warn that generative AI has made accurate university coursework assessment effectively impossible, necessitating a systemic academic rethink",
-        "summary": "The UK education regulator has issued a stark warning that the unchecked proliferation of generative AI has rendered traditional university coursework and take-home assignments nearly impossible to grade accurately. As students increasingly leverage LLMs to generate high-quality academic output, standard methods for gauging student comprehension are breaking down, rendering mere surveillance or plagiarism detection obsolete. This systemic crisis implies that universities can no longer rely on legacy assessment frameworks. Instead of attempting to ban or restrict access, higher education institutions must urgently pivot toward fundamentally reimagining their curriculum and evaluation models to ensure rigorous academic standards in a post-AI world, or risk complete loss of credibility in degree certification."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-12T12:01:50.528Z"
   },
   {
     "id": "art-1794484903791-e54o9",
@@ -18968,32 +19021,6 @@
     "created_at": "2026-11-11T05:31:29.851Z"
   },
   {
-    "id": "art-1794374220258-yzl9g",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/zivaengine/articles/e3f4fd37bc93f1",
-    "published_at": "2026-11-11T05:04:35.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xyDbWbJC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Godot%25204%25E3%2581%25AE%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2582%2592HTML5%25E3%2581%25AB%25E3%2582%25A8%25E3%2582%25AF%25E3%2582%25B9%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E7%2584%25A1%25E6%2596%2599%25E3%2581%25A7%25E3%2583%2597%25E3%2583%25AC%25E3%2582%25A4%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25AF%25E3%2582%2592%25E5%2585%25B1%25E6%259C%2589%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ziva%2520Engine%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2M0MmY3NWM3MWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Godot 4製ゲームをブラウザで無料公開する手順：HTML5エクスポートとitch.ioを使った手軽な共有フローを完全網羅",
-    "summary_ja": "Godot 4で開発したゲームをブラウザ対応させるには、レンダラーをCompatibilityに設定し、シングルスレッドのWebプリセットでHTML5エクスポートを実行する。 生成されたindex.htmlを含むフォルダーをitch.ioにアップロードすることで、誰でもアクセス可能なWebリンクを無料で即座に公開できる。 インディーズ開発者にとって、サーバー費用を抑えつつ作品を広く体験してもらうための最適な配布戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "Godot 4製ゲームをブラウザで無料公開する手順：HTML5エクスポートとitch.ioを使った手軽な共有フローを完全網羅",
-        "summary": "Godot 4で開発したゲームをブラウザ対応させるには、レンダラーをCompatibilityに設定し、シングルスレッドのWebプリセットでHTML5エクスポートを実行する。 生成されたindex.htmlを含むフォルダーをitch.ioにアップロードすることで、誰でもアクセス可能なWebリンクを無料で即座に公開できる。 インディーズ開発者にとって、サーバー費用を抑えつつ作品を広く体験してもらうための最適な配布戦略となる。"
-      },
-      "en": {
-        "title": "How to export Godot 4 games to HTML5 for free browser-based distribution on itch.io",
-        "summary": "To bring Godot 4 games to the browser, developers must switch the project renderer to Compatibility mode and export the build using the single-threaded Web preset. By uploading the resulting package—including the essential index.html file—to itch.io, creators can instantly generate a shareable web link for free hosting. This streamlined workflow allows indie developers to bypass expensive server infrastructure while maximizing audience reach through zero-install browser gameplay. The process is straightforward, but setting the correct rendering pipeline before export is the critical step to ensure compatibility across different browser environments. For solo builders, this method provides a cost-effective, frictionless way to prototype feedback loops without needing a custom-hosted backend or expensive cloud services."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-11T05:17:00.258Z"
-  },
-  {
     "id": "art-1794374213947-ch99z",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -19496,32 +19523,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T03:32:03.034Z"
-  },
-  {
-    "id": "art-1794367055064-ztq6i",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/robokuapp/articles/aab38b30202d35",
-    "published_at": "2026-11-10T14:56:39.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wkTSoSB6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E7%25AD%2594%25E3%2581%2588%25E3%2581%258C%25E3%2581%25B2%25E3%2581%25A8%25E3%2581%25A4%25E3%2581%25A0%25E3%2581%2591%25E3%2580%258D%25E3%2581%25AE%25E6%258E%25A8%25E7%2590%2586%25E3%2583%2591%25E3%2582%25BA%25E3%2583%25AB%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259AFlutter%252FDart%2520%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E7%2594%259F%25E6%2588%2590%25E5%2599%25A8%25E3%2581%25A8%25E3%2582%25BD%25E3%2583%25AB%25E3%2583%2590%25E3%2583%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Roboku%2520%25E9%2596%258B%25E7%2599%25BA%25E8%2580%2585%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzYzNzcwMWNjZTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Flutterで推理パズル『Roboku』を個人開発：答えが唯一である論理的制約を満たす生成器とソルバーの設計手法",
-    "summary_ja": "個人開発の推理パズルゲーム『Roboku』において、論理的に正解がひとつに定まるパズルを自動生成する実装を解説。 各キャラクターと盗品をグリッド上に配置し、ユニークな解を導くためにソルバー（解法エンジン）を組み合わせた生成器の仕組みを共有している。 パズルの難易度調整や、「答えがひとつだけ」を保証するバリデーションの実装は、ロジックゲーム開発における最も重要な課題の一つであり、開発者にとって制約充足問題（CSP）へのアプローチは非常に参考になる。",
-    "translations": {
-      "ja": {
-        "title": "Flutterで推理パズル『Roboku』を個人開発：答えが唯一である論理的制約を満たす生成器とソルバーの設計手法",
-        "summary": "個人開発の推理パズルゲーム『Roboku』において、論理的に正解がひとつに定まるパズルを自動生成する実装を解説。 各キャラクターと盗品をグリッド上に配置し、ユニークな解を導くためにソルバー（解法エンジン）を組み合わせた生成器の仕組みを共有している。 パズルの難易度調整や、「答えがひとつだけ」を保証するバリデーションの実装は、ロジックゲーム開発における最も重要な課題の一つであり、開発者にとって制約充足問題（CSP）へのアプローチは非常に参考になる。"
-      },
-      "en": {
-        "title": "Building a Logic Puzzle Generator: Designing a Constraint-Based Solver for the Single-Solution Murder Mystery Game Roboku in Flutter",
-        "summary": "The developer of the cross-platform puzzle game Roboku details how they built an automated puzzle generator using Flutter and Dart that guarantees exactly one solution for every level. The core challenge involves positioning characters and stolen items within a grid while adhering to strict row, column, and room constraints. By implementing a custom solver, the engine validates potential puzzle boards before serving them, ensuring players never face ambiguous clues or dead ends. For indie builders working on logic-based games, this write-up provides a practical look at solving constraint satisfaction problems (CSP). It demonstrates that the key to designing fair, playable puzzles is not just randomized placement, but rigorously filtering out multi-solution candidates during the generation phase."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-11T03:17:35.064Z"
   },
   {
     "id": "art-1794367047968-2u45b",
