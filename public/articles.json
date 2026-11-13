@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1794546158250-dvugi",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/hironakamura_ai/items/df8aa16bb0fd3d8fc394",
+    "published_at": "2026-11-13T04:01:00.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDQ0NzcyJTJGNzA5NTAxOWUyOWVhMzY3ZWI2NzZiYmEyMzdlMjAyYjczZmM0Y2FiOCUyRnhfbGFyZ2UucG5nJTNGMTc4MDg3NzY4NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDRkN2ViYjlhY2U5MzE3MWUxYTdiNTA4ZmU4NDI1N2Y%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D7fd777bd4a540d788ced16e3c534f20f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UHlUb3JjaCVFNiU4RSVBOCVFOCVBQiU5NiVFNiU5OSU4MiVFMyU4MSVBRURyb3BvdXQlRTMlODIlOTJldmFsJUUzJTgxJUE3JUU2JUFEJUEyJUUzJTgyJTgxJUUzJTgyJThCJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9OWE2ZTk5ZWIzOGQ1ZjE4M2I2YTMxY2U4NjU5YWU5OGY&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBoaXJvbmFrYW11cmFfYWkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1lMmFlNTIxYjY4MGYyYzYzYzA1MmRmMDY3NjBkMjhkOQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=d48b3339645f321f7b6df1ac5bcea2c9",
+    "title_ja": "PyTorch推論でハマる「Dropout」の落とし穴：inference_modeを使ってもモデル評価モードへ切り替えないと出力が揺らぐ理由",
+    "summary_ja": "PyTorchの推論時、推論モード（inference_mode）を使用しても「Dropout」レイヤーは無効化されず、結果が確率的に変動してしまう。 評価時には必ずmodel.eval()を明示的に呼び出し、訓練時とは異なる計算グラフの挙動を適用する必要がある。 推論時の決定論的な出力を担保するためには、単に勾配計算をオフにするだけでなく、評価モードへの切り替えを徹底することが、意図しない出力の揺らぎを防ぐ唯一の手段となる。",
+    "translations": {
+      "ja": {
+        "title": "PyTorch推論でハマる「Dropout」の落とし穴：inference_modeを使ってもモデル評価モードへ切り替えないと出力が揺らぐ理由",
+        "summary": "PyTorchの推論時、推論モード（inference_mode）を使用しても「Dropout」レイヤーは無効化されず、結果が確率的に変動してしまう。 評価時には必ずmodel.eval()を明示的に呼び出し、訓練時とは異なる計算グラフの挙動を適用する必要がある。 推論時の決定論的な出力を担保するためには、単に勾配計算をオフにするだけでなく、評価モードへの切り替えを徹底することが、意図しない出力の揺らぎを防ぐ唯一の手段となる。"
+      },
+      "en": {
+        "title": "The PyTorch Dropout Pitfall: Why inference_mode isn't enough to stop stochastic outputs during model evaluation",
+        "summary": "Many PyTorch developers mistakenly assume that utilizing inference_mode or disabling gradient computation will automatically halt Dropout layers during deployment. In reality, failing to explicitly call model.eval() leaves Dropout active, causing stochastic variance in your inference outputs—a subtle but dangerous trap for production reliability. Even when inputs are static, the network behavior persists in training mode unless you toggle the module state correctly. The takeaway for builders is clear: inference_mode is for performance and memory optimization, not for logic-state management. Always ensure model.eval() is part of your boilerplate to guarantee deterministic results for your users. Skipping this explicit switch is a common source of silent, non-deterministic bugs in AI-backed applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-13T05:02:38.250Z"
+  },
+  {
+    "id": "art-1794546146234-ikusq",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/getzipzi/zipzi-2d",
+    "published_at": "2026-11-13T02:54:37.000Z",
+    "og_image_url": null,
+    "title_ja": "オープンソースのLive2D代替「Zipzi」が登場、AI支援機能を備えた2Dアニメーション制作・編集の新たな選択肢として公開",
+    "summary_ja": "オープンソースの2Dアニメーション制作ツール「Zipzi」が新たに公開された。 既存の商用Live2Dエディタに代わる選択肢として、AIによる編集支援機能を搭載し、キャラクター制作や動き付けのワークフローを効率化する。 複雑なライセンスや高額なツールに依存せず、柔軟なアニメーション制作環境を構築したい個人開発者や小規模チームにとって、OSSベースの有力な代替案となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "オープンソースのLive2D代替「Zipzi」が登場、AI支援機能を備えた2Dアニメーション制作・編集の新たな選択肢として公開",
+        "summary": "オープンソースの2Dアニメーション制作ツール「Zipzi」が新たに公開された。 既存の商用Live2Dエディタに代わる選択肢として、AIによる編集支援機能を搭載し、キャラクター制作や動き付けのワークフローを効率化する。 複雑なライセンスや高額なツールに依存せず、柔軟なアニメーション制作環境を構築したい個人開発者や小規模チームにとって、OSSベースの有力な代替案となるだろう。"
+      },
+      "en": {
+        "title": "Zipzi launches as an open-source Live2D alternative featuring AI-assisted editing for 2D animation workflows",
+        "summary": "Zipzi has officially launched as an open-source alternative to proprietary Live2D editors, specifically designed to streamline the character animation process with built-in AI-assisted editing features. By providing an open ecosystem for 2D motion work, it aims to remove the friction caused by restrictive commercial licenses and high barrier-to-entry pricing models common in the industry. For individual developers and small creative teams looking to integrate high-quality animation without vendor lock-in, Zipzi offers a powerful, customizable solution that integrates directly into modern production pipelines. It signals a shift toward more accessible, community-driven tooling in the specialized 2D character animation space, proving that builders no longer need to rely solely on legacy commercial stacks for complex motion rigging."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "動画"
+    ],
+    "created_at": "2026-11-13T05:02:26.234Z"
+  },
+  {
+    "id": "art-1794546134467-ib0je",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/ninagawaf/n/n4c465828d5a7",
+    "published_at": "2026-11-13T04:55:46.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335553888/rectangle_large_type_2_73315f1743436c48e186f723ceb5326c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Square連携でUber Eatsのような注文管理を実現するWordPressプラグイン「Takeout」シリーズ開発記：注文ボード編",
+    "summary_ja": "WordPressプラグイン「Takeout」シリーズの開発記録。 SquareのPOSデータと連携し、メニュー表示を行う「Takeout Menu」、注文を受け付ける「Takeout Orders」に続き、店舗の運用負荷を軽減する「Takeout Order Board」の実装プロセスを解説する。 個人開発者が既存ツールを組み合わせて、実店舗のDXを実現するためのシステムアーキテクチャと設計思想を紐解く。",
+    "translations": {
+      "ja": {
+        "title": "Square連携でUber Eatsのような注文管理を実現するWordPressプラグイン「Takeout」シリーズ開発記：注文ボード編",
+        "summary": "WordPressプラグイン「Takeout」シリーズの開発記録。 SquareのPOSデータと連携し、メニュー表示を行う「Takeout Menu」、注文を受け付ける「Takeout Orders」に続き、店舗の運用負荷を軽減する「Takeout Order Board」の実装プロセスを解説する。 個人開発者が既存ツールを組み合わせて、実店舗のDXを実現するためのシステムアーキテクチャと設計思想を紐解く。"
+      },
+      "en": {
+        "title": "Building a WordPress order management system with Square: The development journey of the 'Takeout' plugin series",
+        "summary": "This development log details the creation of the 'Takeout' WordPress plugin series, designed to bring Uber Eats-style functionality to local shops. Having already built 'Takeout Menu' for displaying Square POS items and 'Takeout Orders' for accepting requests, the author now dives into the final, critical component: 'Takeout Order Board.' This tool focuses on streamlining the kitchen side of operations to reduce manual stress. By integrating Square’s ecosystem with WordPress, the author demonstrates how individual developers can build robust, production-grade solutions for brick-and-mortar retail digital transformation. For builders, it is a masterclass in breaking down a massive service into modular, manageable plugins that solve specific operational bottlenecks without rebuilding an entire POS system from scratch."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-13T05:02:14.467Z"
+  },
+  {
+    "id": "art-1794546102202-81hje",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/kakuare/articles/445e06a0ddb388",
+    "published_at": "2026-11-12T22:30:06.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--gD1mehr6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:26B%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%25A7%25E9%2595%25B7%25E6%2596%2587%25E5%25AF%25BE%25E8%25A9%25B1%25E3%2581%25A8100%2520TPS%25E3%2582%2592%25E4%25B8%25A1%25E7%25AB%258B%25E3%2581%2599%25E3%2582%258B%25E6%259C%2580%25E9%2581%25A9%25E5%258C%2596%25E8%25A8%2598%25E9%258C%25B2%2520%25E2%2580%2594%2520Prefill%252080ms%25E3%2581%25AE%25E7%2590%2586%25E8%25AB%2596%25E9%2599%2590%25E7%2595%258C%25E3%2581%25A8Gemini%2520...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kakuare%2540Deinei%25E9%2596%258B%25E7%2599%25BA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVlNmE1MTdhMGMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "26Bモデルで長文対話と毎秒100トークン生成を両立する最適化術：16GB VRAMでのPrefill 80ms達成とGemini Flashとの対決",
+    "summary_ja": "コンシューマー向けPC（VRAM 16GB）で「1万トークンの長文対話」と「100 TPS」を両立させる技術的アプローチを解説。 プロンプト評価の重さによる初回応答時間の悪化を防ぐため、KVキャッシュの最適化とVRAM枯渇問題の解消が焦点となる。 単なる量子化を超えた推論エンジンのチューニングと、Gemini 3.8 Flashのような軽量モデルとの性能比較を通じて、ローカルLLM運用における理論限界と実用的なレスポンス制御の勘所を明らかにする。",
+    "translations": {
+      "ja": {
+        "title": "26Bモデルで長文対話と毎秒100トークン生成を両立する最適化術：16GB VRAMでのPrefill 80ms達成とGemini Flashとの対決",
+        "summary": "コンシューマー向けPC（VRAM 16GB）で「1万トークンの長文対話」と「100 TPS」を両立させる技術的アプローチを解説。 プロンプト評価の重さによる初回応答時間の悪化を防ぐため、KVキャッシュの最適化とVRAM枯渇問題の解消が焦点となる。 単なる量子化を超えた推論エンジンのチューニングと、Gemini 3.8 Flashのような軽量モデルとの性能比較を通じて、ローカルLLM運用における理論限界と実用的なレスポンス制御の勘所を明らかにする。"
+      },
+      "en": {
+        "title": "Optimizing 26B models for 100 TPS and 10k token contexts on 16GB VRAM: Achieving 80ms Prefill and Benchmarking Against Gemini Flash",
+        "summary": "Achieving both 10k-token long-context dialogues and 100 tokens-per-second throughput on consumer 16GB VRAM hardware remains a significant engineering hurdle for local LLM deployment. This guide details how to resolve the classic trilemma of memory exhaustion, high-latency prompt prefill, and inference speed. By focusing on KV cache optimization and aggressive inference engine tuning, the author demonstrates how to bypass traditional bottlenecks that typically force a trade-off between memory and speed. This analysis includes a head-to-head performance comparison with lightweight alternatives like Gemini 3.8 Flash to validate the theoretical limits of local setups. For developers building AI agents locally, mastering these cache management strategies is essential to providing responsive, real-time interactive experiences without relying solely on expensive cloud-based API calls."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "研究"
+    ],
+    "created_at": "2026-11-13T05:01:42.202Z"
+  },
+  {
     "id": "art-1794545224100-th5bw",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -12304,33 +12411,6 @@
     "created_at": "2026-11-11T21:26:08.420Z"
   },
   {
-    "id": "art-1794432361570-uhv4p",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/rayno_works/n/n3c8812209b14",
-    "published_at": "2026-11-11T21:11:25.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335041196/rectangle_large_type_2_b13833ec358cd6d389db2a18dd0bb42c.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発組織「レイノワークス」が語る、公式広報と開発者個人の発信を分ける戦略的「棲み分け」とSimeji改修の舞台裏",
-    "summary_ja": "個人開発チーム「レイノワークス」は、製品の公式広報と開発者個人の活動報告をあえて分離する運用方針を採用した。 公式noteでは最新の製品情報を届けつつ、開発日記や技術的課題の深掘りといったリアルな舞台裏は、個人のnoteアカウントに集約することで、読み手の関心に合わせたコンテンツの最適化を図っている。 Simeji改修といった開発の試行錯誤を透明化することで、ファンや他の個人開発者との深い信頼関係を築く狙いがある。",
-    "translations": {
-      "ja": {
-        "title": "個人開発組織「レイノワークス」が語る、公式広報と開発者個人の発信を分ける戦略的「棲み分け」とSimeji改修の舞台裏",
-        "summary": "個人開発チーム「レイノワークス」は、製品の公式広報と開発者個人の活動報告をあえて分離する運用方針を採用した。 公式noteでは最新の製品情報を届けつつ、開発日記や技術的課題の深掘りといったリアルな舞台裏は、個人のnoteアカウントに集約することで、読み手の関心に合わせたコンテンツの最適化を図っている。 Simeji改修といった開発の試行錯誤を透明化することで、ファンや他の個人開発者との深い信頼関係を築く狙いがある。"
-      },
-      "en": {
-        "title": "Reino Works details their strategic split between official product PR and personal developer diary content to engage users",
-        "summary": "The independent development studio Reino Works has formalized a strategy of separating its official product announcements from raw, developer-focused narratives. By utilizing official channels for polished product updates while relegating technical retrospectives and messy development diaries to the personal notes of its lead developer, the team effectively segments its audience. This approach allows them to share transparent, detailed insights—such as their recent revamp of the Simeji input method—without cluttering the main marketing funnel. For builders managing niche products, this clear separation between corporate branding and the personal 'maker' journey serves as a blueprint for building community trust through authenticity while maintaining professional product communications for a broader user base."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-11T21:26:01.570Z"
-  },
-  {
     "id": "art-1794432353422-lrd53",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -13968,32 +14048,6 @@
     "created_at": "2026-11-11T16:32:42.030Z"
   },
   {
-    "id": "art-1794414751680-744a4",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Waipe/items/a060e5ab04566c0f5c41",
-    "published_at": "2026-11-11T16:29:31.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTA3NjU0JTJGNTA2YmNjOGZkNWZiNjc5Yzc3MWNkODI1YzgwMDJhNDQ1MWZkMzZiMCUyRnhfbGFyZ2UucG5nJTNGMTc5MjQ4MTcwOD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDk4Y2E3NzBmNDNiZjE2MTkyNmExNDM4OWM4MTI5NjI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1dceb914a3276b1895782f2c3ddb6709?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU3JUFDJUFDMDU4JUU1JTlCJTlFJUUzJTgwJTkxSmFuZVN0eWxlJUU3JUFEJTg5JUUzJTgxJUFFJUU1JUIwJTgyJUUzJTgzJTk2JUUzJTgzJUE5JUUzJTgxJUE4JUU2JTlDJTgwJUU2JTk2JUIwJUUzJTgzJUEyJUUzJTgzJTgwJUUzJTgzJUIzV2ViJUUzJTgxJUFFJUU0JUI4JUExJUU3JUFCJThCJTIwJUUyJTgwJTk0JTIwU2hpZnRfSklTJUUzJTgzJUJCZGF0JUU1JUJEJUEyJUU1JUJDJThGJUUzJTgzJUJCJUU2JTk2JTg3JUU1JUFEJTk3JUU1JThDJTk2JUUzJTgxJTkxNCVFNiVBRSVCNSVFOSU5OCVCMiVFNSVCRSVBMSVFMyU4MSVBRSVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWMwNTRlMTEwNjY5MWE5NzM1ZmVjMDc4N2JkMmI2ZTZk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBXYWlwZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTc2ZTVmYWY5ZjBiYmY3NjlhYTMwOWEyYzEzMDM4MjE0&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=559a7298ef014d0e7ec566ad246d084f",
-    "title_ja": "2ちゃんねる互換掲示板をモダン化：Shift_JISやdat形式を維持しつつOGPとレスポンシブ対応を実現する「文字化け4段防御」の技術",
-    "summary_ja": "2ちゃんねる互換掲示板「つゔぁいちゃんねる」のモダン化開発記録。 レガシーなShift_JISやdat形式といった古い仕様を維持しながら、OGPブログカードの展開やレスポンシブデザインに対応する難易度の高い実装を解説する。 特に文字化けを防ぐための4段構えのバリデーション設計は、現代のWebフロントエンドとレガシーシステムを共存させる際の重要な指針となる。",
-    "translations": {
-      "ja": {
-        "title": "2ちゃんねる互換掲示板をモダン化：Shift_JISやdat形式を維持しつつOGPとレスポンシブ対応を実現する「文字化け4段防御」の技術",
-        "summary": "2ちゃんねる互換掲示板「つゔぁいちゃんねる」のモダン化開発記録。 レガシーなShift_JISやdat形式といった古い仕様を維持しながら、OGPブログカードの展開やレスポンシブデザインに対応する難易度の高い実装を解説する。 特に文字化けを防ぐための4段構えのバリデーション設計は、現代のWebフロントエンドとレガシーシステムを共存させる際の重要な指針となる。"
-      },
-      "en": {
-        "title": "Modernizing legacy 2ch-compatible forums: Implementing OGP and responsive layouts while maintaining Shift_JIS and .dat file integrity",
-        "summary": "This development log details the modernization of 'ZweiChannel,' a 2ch-compatible bulletin board, focusing on the architectural challenge of balancing legacy specs like Shift_JIS encoding and .dat files with modern features like responsive design and OGP card rendering. The author highlights a robust four-layer anti-character-corruption validation strategy that ensures system compatibility remains intact even as modern frontend elements are integrated. For builders tasked with upgrading aging infrastructure without breaking legacy client support, this case study offers a practical blueprint. It demonstrates that deep system integration—rather than simple replacement—is the most effective way to modernize legacy software, proving that old data formats and modern web standards can successfully coexist when you prioritize defensive encoding architectures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-11T16:32:31.680Z"
-  },
-  {
     "id": "art-1794414708751-wsrnw",
     "source_id": "source-elevenlabs",
     "source_name": "ElevenLabs Blog",
@@ -14239,32 +14293,6 @@
       "研究"
     ],
     "created_at": "2026-11-11T15:48:36.400Z"
-  },
-  {
-    "id": "art-1794412101856-twc3b",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/hervekom37/items/9b9b163504d6079f11c5",
-    "published_at": "2026-11-11T14:56:40.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS0ZzYzFjOFBFVmZ4dWJ4WFZ6OEJYdkhYVXJUM3RNUHFMWEtPaGR5UnRUdmV4ck0xZGUlM0RzOTYtYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YzFmZDhhYzI4ZDIxYjdiOWE2ZTQ3ZDVjYjBjNzgyODg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1abf4c9d80cec711eae0658b7074ab5f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU4JUE0JTg3JUU2JTk1JUIwJUUzJTgxJUFFQUklRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODclRTMlODIlQTMlRTMlODMlQjMlRTMlODIlQjAlRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglRTMlODElQUUlRTQlQkQlOUMlRTYlQTUlQUQlRTclOEElQjYlRTYlQjMlODElRTMlODIlOTIlRTUlOEYlQUYlRTglQTYlOTYlRTUlOEMlOTYlRTMlODMlQkIlRTclQUUlQTElRTclOTAlODYlRTMlODElQTclRTMlODElOEQlRTMlODIlOEIlRTMlODMlOTclRTMlODMlQTklRTMlODMlODMlRTMlODMlODglRTMlODMlOTUlRTMlODIlQTklRTMlODMlQkMlRTMlODMlQTAlRTMlODIlOTIlRTglODAlODMlRTMlODElODglRTMlODIlOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1iZTg0MjljMTIwM2QxN2M0ZjZiZThlM2E3NjIwMmU1Mw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBoZXJ2ZWtvbTM3JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTY5M2NmOWNmYjJiNWE5YzBlOTQxNTEyMTgyY2VhZGU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4f9cf32e2fb36a23d050d3697078daf3",
-    "title_ja": "複数AIコーディングエージェントの作業状況を可視化・管理するプラットフォームの必要性と設計上の課題",
-    "summary_ja": "複数のAIエージェントが同時にバグ調査、API実装、テスト作成を行う環境では、作業状況の可視化と管理が開発効率を大きく左右する。 単なるタスク管理を超え、各エージェントのコンテキスト共有や依存関係の解決を一元化するプラットフォーム設計が重要だ。 エージェント間の協調を自動化し、進捗をリアルタイムで監視できる仕組みを構築することで、複雑な開発プロセスを効率的に制御できる可能性がある。",
-    "translations": {
-      "ja": {
-        "title": "複数AIコーディングエージェントの作業状況を可視化・管理するプラットフォームの必要性と設計上の課題",
-        "summary": "複数のAIエージェントが同時にバグ調査、API実装、テスト作成を行う環境では、作業状況の可視化と管理が開発効率を大きく左右する。 単なるタスク管理を超え、各エージェントのコンテキスト共有や依存関係の解決を一元化するプラットフォーム設計が重要だ。 エージェント間の協調を自動化し、進捗をリアルタイムで監視できる仕組みを構築することで、複雑な開発プロセスを効率的に制御できる可能性がある。"
-      },
-      "en": {
-        "title": "Building a platform to visualize and manage multiple simultaneous AI coding agents for complex dev workflows",
-        "summary": "Managing multiple AI agents—such as one handling bug investigations, another building APIs, and a third writing tests—requires a centralized platform to visualize status and prevent drift. As agent-driven development shifts from single-task execution to team-like collaboration, simple task lists are insufficient for monitoring complex dependencies and shared context. Effective platforms must prioritize real-time state synchronization, conflict resolution between agents, and unified progress tracking to be truly useful. For developers building these orchestration layers, the takeaway is clear: the future of AI coding is less about the model capabilities and more about building rigorous management interfaces that allow developers to supervise, intervene, and maintain visibility over autonomous agents during large-scale code development."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-11T15:48:21.856Z"
   },
   {
     "id": "art-1794412007471-b1ef2",
@@ -14611,32 +14639,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-11T14:47:43.859Z"
-  },
-  {
-    "id": "art-1794408435460-6t4wz",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://rutgerbregman.substack.com/p/yes-you-should-panic-about-ai",
-    "published_at": "2026-11-11T14:41:48.000Z",
-    "og_image_url": null,
-    "title_ja": "ルトガー・ブレグマンが警鐘：AIの急速な進化が引き起こす不可逆的な社会変革と「パニック」の必要性について",
-    "summary_ja": "歴史家のルトガー・ブレグマンは、AI技術の進化が雇用や社会構造に不可逆的な変化をもたらすと指摘し、楽観論を捨てて冷静に脅威を認識すべきだと主張する。 単なる生産性向上ツールとしてではなく、人類の知性や労働のあり方を根底から覆す破壊的技術としてAIを捉える必要がある。 開発者や技術者は、単に「どう作るか」だけでなく、その結果として生まれる社会の変容に対して責任を持つべきだという強い提言だ。",
-    "translations": {
-      "ja": {
-        "title": "ルトガー・ブレグマンが警鐘：AIの急速な進化が引き起こす不可逆的な社会変革と「パニック」の必要性について",
-        "summary": "歴史家のルトガー・ブレグマンは、AI技術の進化が雇用や社会構造に不可逆的な変化をもたらすと指摘し、楽観論を捨てて冷静に脅威を認識すべきだと主張する。 単なる生産性向上ツールとしてではなく、人類の知性や労働のあり方を根底から覆す破壊的技術としてAIを捉える必要がある。 開発者や技術者は、単に「どう作るか」だけでなく、その結果として生まれる社会の変容に対して責任を持つべきだという強い提言だ。"
-      },
-      "en": {
-        "title": "Historian Rutger Bregman argues that we should actually panic about the societal implications of rapid AI evolution",
-        "summary": "Historian Rutger Bregman makes a compelling case for why society needs to stop viewing AI development with blind optimism and start treating its rapid evolution as a genuine cause for alarm. He argues that AI is not merely another productivity tool but a disruptive force poised to fundamentally rewrite the nature of human labor, intelligence, and social structure. For builders and engineers, this serves as a sobering reminder that innovation without consideration for long-term societal stability is reckless. Bregman suggests that the current trajectory demands a shift in perspective; we must stop romanticizing tech progress as inherently positive and critically engage with the existential risks that AI adoption poses to the fabric of our daily lives."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-11T14:47:15.460Z"
   },
   {
     "id": "art-1794407534539-6px48",
