@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794601075227-er5we",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tottoko_hamu/articles/2026-11-14-000106",
+    "published_at": "2026-11-13T15:07:12.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--geA_JqQ8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AE%25E6%2589%258B%25E9%25A0%2586%25E6%259B%25B8%25E3%2581%25AF%25E3%2580%2581%25E6%258C%2587%25E5%25AE%259A%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2582%25E8%25AA%25AD%25E3%2581%25BE%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E2%2580%2594%25E2%2580%2594%25E6%2595%2599%25E8%25A8%2593%25E3%2582%2592%25E3%2580%258C%25E8%25AA%25AD%25E3%2581%25BE%25E3%2581%259B%25E3%2582%258B%25E3%2580%258D%25E3%2581%258B%25E3%2582%2589%25E3%2580%258C%25E8%25B2%25BC%25E3%2582%258B%25E3%2580%258D%25E3%2580%258C%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%25E3%2580%258D%25E3%2581%25B8%25E5%25A4%2589%25E3%2581%2588%25E3%2581%259F3%25E3%2581%258B%25E6%259C%2588%25E3%2581%25AE%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:saitoko%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyOTg5NmFhMzguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Code運用の失敗と教訓：手順書の「読み込み強制」から「実行制限・コンテキスト注入」へ至る3か月の改善記録",
+    "summary_ja": "Claude Codeによるエージェント運用では、手順書を整備してもAIに無視されるケースが多い。 筆者の記録では、12回の委任のうち手順書が参照されたのはわずか2回だった。 当初考えた「読み込みの強制」は効果が薄く、最終的に「手順書を常に読み込ませる」あるいは「AIの実行を特定の型に止める」仕組みへ方針転換することで実用的な運用を実現した。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code運用の失敗と教訓：手順書の「読み込み強制」から「実行制限・コンテキスト注入」へ至る3か月の改善記録",
+        "summary": "Claude Codeによるエージェント運用では、手順書を整備してもAIに無視されるケースが多い。 筆者の記録では、12回の委任のうち手順書が参照されたのはわずか2回だった。 当初考えた「読み込みの強制」は効果が薄く、最終的に「手順書を常に読み込ませる」あるいは「AIの実行を特定の型に止める」仕組みへ方針転換することで実用的な運用を実現した。"
+      },
+      "en": {
+        "title": "Why Claude Code ignores your playbooks: Moving from 'enforced reading' to hard-coded execution boundaries in agent operations",
+        "summary": "When building with Claude Code, simply documenting best practices isn't enough; my logs revealed that specific instructions were ignored 10 out of 12 times despite explicit mandates. I initially attempted to enforce playbook reading, but it failed to consistently impact agent behavior. Over three months of iterative testing, I shifted the strategy: instead of relying on the AI to 'read' instructions, I moved toward injecting context directly into the execution flow or implementing hard-coded stops that constrain the agent to specific patterns. This experience highlights that documentation is passive, while architecture is active. For those managing AI agent fleets, the key is stop-gap validation and systemic constraints rather than assuming the LLM will reliably digest your internal playbooks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-13T20:17:55.227Z"
+  },
+  {
+    "id": "art-1794601034099-ilkpe",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://medium.com/@badrbellaj/i-used-to-be-excited-about-software-conferences-not-so-much-anymore-28a7ddd6a6b4",
+    "published_at": "2026-11-13T20:04:34.000Z",
+    "og_image_url": null,
+    "title_ja": "ソフトウェアカンファレンスの変質：AIブームで「登壇者より生成AIの話題」が支配的になった現場のリアル",
+    "summary_ja": "かつて技術交流の場だったソフトウェアカンファレンスが、生成AIブームの影響で急速にその価値を失いつつある。 登壇者の知見よりも、AIツールを使った生産性向上という画一的なトピックばかりが並び、深い技術的な議論やネットワーキングの質が低下しているという懸念が示されている。 開発者にとって、カンファレンスは「AIツールを紹介される場所」から「技術的な熱量を共有する場所」へ回帰できるかどうかの岐路に立たされている。",
+    "translations": {
+      "ja": {
+        "title": "ソフトウェアカンファレンスの変質：AIブームで「登壇者より生成AIの話題」が支配的になった現場のリアル",
+        "summary": "かつて技術交流の場だったソフトウェアカンファレンスが、生成AIブームの影響で急速にその価値を失いつつある。 登壇者の知見よりも、AIツールを使った生産性向上という画一的なトピックばかりが並び、深い技術的な議論やネットワーキングの質が低下しているという懸念が示されている。 開発者にとって、カンファレンスは「AIツールを紹介される場所」から「技術的な熱量を共有する場所」へ回帰できるかどうかの岐路に立たされている。"
+      },
+      "en": {
+        "title": "The erosion of software conferences: Why AI hype is suffocating deep technical discourse and peer-to-peer networking",
+        "summary": "Software conferences, once vital hubs for deep engineering knowledge sharing and genuine networking, are rapidly losing their luster due to the overwhelming dominance of generative AI. The author argues that substance is being replaced by superficial talks focused on how to use generic AI tools rather than fundamental architectural lessons or unique engineering challenges. This shift has turned previously engaging technical gatherings into echo chambers of AI-hype rather than forums for meaningful collaboration. For developers and builders, the challenge is now distinguishing between events that still offer genuine peer-to-peer insight and those that merely serve as marketing theaters for AI startups, forcing a reevaluation of which conferences are actually worth the significant time and capital investment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-13T20:17:14.099Z"
+  },
+  {
+    "id": "art-1794601024561-3m6p2",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/gyupomus/n/nfd726fe21735",
+    "published_at": "2026-11-13T20:13:59.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335800076/rectangle_large_type_2_9800ef5f74df82e98e32d484ea610164.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Unityで再構築する3Dアニメーションノベルゲーム『月曜日のタイムマシン』制作記――ゲーム開発におけるリメイクと技術的挑戦の軌跡",
+    "summary_ja": "個人開発者のぎゅぽむす。 氏は、3Dアニメーションノベルゲーム『月曜日のタイムマシン』のUnityへの移行と再構築プロジェクトを進行中だ。 既存のゲームロジックを最新の環境へ移植する過程では、ビジュアル演出の再定義や最適化といった技術的課題が頻出する。 ゼロからの開発とは異なる、既存の作品を現代のゲームエンジン上で再設計する際の設計判断と実装の試行錯誤は、個人開発者がプロジェクトを維持・発展させる上での重要な知見となる。",
+    "translations": {
+      "ja": {
+        "title": "Unityで再構築する3Dアニメーションノベルゲーム『月曜日のタイムマシン』制作記――ゲーム開発におけるリメイクと技術的挑戦の軌跡",
+        "summary": "個人開発者のぎゅぽむす。 氏は、3Dアニメーションノベルゲーム『月曜日のタイムマシン』のUnityへの移行と再構築プロジェクトを進行中だ。 既存のゲームロジックを最新の環境へ移植する過程では、ビジュアル演出の再定義や最適化といった技術的課題が頻出する。 ゼロからの開発とは異なる、既存の作品を現代のゲームエンジン上で再設計する際の設計判断と実装の試行錯誤は、個人開発者がプロジェクトを維持・発展させる上での重要な知見となる。"
+      },
+      "en": {
+        "title": "Rebuilding 'Monday's Time Machine': Lessons in migrating a 3D visual novel from legacy code to the Unity engine",
+        "summary": "Solo developer Gyupomusu is currently migrating and rebuilding their 3D animated novel game, 'Monday's Time Machine,' within the Unity engine. This shift highlights the distinct technical hurdles encountered when porting established game logic to modern environments, specifically regarding re-architecting visual assets and optimizing runtime performance. Unlike building from scratch, this process requires careful refactoring of existing narrative systems to fit contemporary engine standards. For independent creators, this project serves as a compelling case study on the rigorous decision-making needed to modernize legacy assets without losing the game's core identity. It illustrates how iterative technical improvements, even in niche projects, ultimately ensure long-term sustainability for complex solo-developed titles."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-13T20:17:04.561Z"
+  },
+  {
+    "id": "art-1794601004340-sv6w0",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/goto6056738/articles/029cc81cf8eb9f",
+    "published_at": "2026-11-13T15:38:42.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--v5Y74Zle--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2580%2591%25E7%25A0%2594%25E7%25A9%25B6%25E5%25AE%25A4%25E3%2581%25AE%25E3%2580%258C%25E3%2582%2581%25E3%2582%2593%25E3%2581%25A9%25E3%2581%258F%25E3%2581%2595%25E3%2581%2584%25E3%2580%258D%25E3%2582%2592%25E6%2592%25B2%25E6%25BB%2585%25E3%2581%2599%25E3%2582%258B%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2580%258E%25E8%25A1%258C%25E3%2581%2593lab%25E3%2580%258F%25E3%2582%2592Expo%2520%2520%25C3%2597%2520Supabase%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2594%25E3%2581%25A8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSTR0OFk5UzAwNUhBODNDWkYyOVZfN0NmUTRvR3QwLUpDLXpzWFg4dnVZM2x6UmlnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "研究室の煩雑なルーチンを自動化するアプリ『行こlab』開発記：ExpoとSupabaseで生物系研究の実験管理コストを劇的に削減",
+    "summary_ja": "生物系研究室特有の「交配逆算」「野帳からExcelへの転記」「群分け」といった非効率な手作業を解消するため、個人開発アプリ『行こlab』をExpoとSupabaseで構築。 特にマウスの飼育管理や投与液量計算などの複雑な計算ロジックをアプリに集約し、実験データの正確性と研究効率を大幅に向上させた。 個人開発においても、特定のニッチな業務フローに深く寄り添う課題解決型のアプリは、高い付加価値を提供できる好例である。",
+    "translations": {
+      "ja": {
+        "title": "研究室の煩雑なルーチンを自動化するアプリ『行こlab』開発記：ExpoとSupabaseで生物系研究の実験管理コストを劇的に削減",
+        "summary": "生物系研究室特有の「交配逆算」「野帳からExcelへの転記」「群分け」といった非効率な手作業を解消するため、個人開発アプリ『行こlab』をExpoとSupabaseで構築。 特にマウスの飼育管理や投与液量計算などの複雑な計算ロジックをアプリに集約し、実験データの正確性と研究効率を大幅に向上させた。 個人開発においても、特定のニッチな業務フローに深く寄り添う課題解決型のアプリは、高い付加価値を提供できる好例である。"
+      },
+      "en": {
+        "title": "Building 'Ikolab': Automating Lab Routine Tasks with Expo and Supabase to Streamline Biology Research",
+        "summary": "To eliminate the tedious manual workflows common in wet labs—such as calculating breeding schedules, transcribing paper logs to Excel, and complex group randomization—the developer built 'Ikolab' using Expo and Supabase. The app centralizes critical laboratory operations like mouse colony tracking and precise dosage calculations, effectively digitizing processes that previously relied on error-prone spreadsheets and paper field notes. By focusing on deep integration with specific research bottlenecks rather than general tools, the project demonstrates how niche-specific software can provide massive utility for specialized scientific communities. This case study underscores the power of targeting highly specific professional pain points, proving that even individual developers can create significant value in scientific instrumentation by addressing clear, repetitive operational inefficiencies."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-13T20:16:44.340Z"
+  },
+  {
     "id": "art-1794600153612-wf32i",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -10772,32 +10876,6 @@
     "created_at": "2026-11-12T16:32:13.598Z"
   },
   {
-    "id": "art-1794500292820-1rgdz",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ullstudio/n/nf412e750cafa",
-    "published_at": "2026-11-12T16:10:59.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335395781/rectangle_large_type_2_e09f0b40cea35cb14dd4f1044031e447.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI画像合成ツール「Photo Director」、カメラワーク機能を強化：部屋の拡大とラフ指定で「寄りの構図」を精密に制御可能に",
-    "summary_ja": "AI合成ツール「Photo Director」がアップデートされ、人物と部屋の写真を組み合わせる際、カメラの「寄り」構図を自由に作れるようになった。 従来は広角気味になりがちだったが、編集画面で部屋の写真を拡大し、対象範囲に合わせて棒人間のラフを描くことで、そのエリアを画角として切り出せる。 単なる画像合成を超え、構図を意図通りにコントロールしたいクリエイターにとって、物語性のある一枚を作るための強力な手法となる。",
-    "translations": {
-      "ja": {
-        "title": "AI画像合成ツール「Photo Director」、カメラワーク機能を強化：部屋の拡大とラフ指定で「寄りの構図」を精密に制御可能に",
-        "summary": "AI合成ツール「Photo Director」がアップデートされ、人物と部屋の写真を組み合わせる際、カメラの「寄り」構図を自由に作れるようになった。 従来は広角気味になりがちだったが、編集画面で部屋の写真を拡大し、対象範囲に合わせて棒人間のラフを描くことで、そのエリアを画角として切り出せる。 単なる画像合成を超え、構図を意図通りにコントロールしたいクリエイターにとって、物語性のある一枚を作るための強力な手法となる。"
-      },
-      "en": {
-        "title": "Photo Director update enables precise camera control, letting users zoom and sketch for tighter, cinematic compositions",
-        "summary": "Photo Director, an AI tool for compositing people into room backgrounds, just received an update that solves the common struggle of creating tight, cinematic shots. Previously, the AI defaulted to wide-angle perspectives, making focused shots difficult. Now, users can zoom into specific areas of a room photo and draw stick-figure sketches directly onto that cropped view, which forces the output to match that exact framing. By letting builders dictate composition through direct sketching rather than relying on automatic generation, the tool offers significantly more control over final image storytelling. For developers building visual generation workflows, this update highlights how simple UI constraints—like allowing users to define a viewport before rendering—can dramatically improve the creative utility of AI-generated assets."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "画像生成",
-      "アップデート"
-    ],
-    "created_at": "2026-11-12T16:18:12.820Z"
-  },
-  {
     "id": "art-1794500280479-s5scv",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -12470,32 +12548,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-12T10:46:45.862Z"
-  },
-  {
-    "id": "art-1794479530154-gh873",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.ycombinator.com/item?id=50465329",
-    "published_at": "2026-11-12T10:25:01.000Z",
-    "og_image_url": null,
-    "title_ja": "個人開発者のAI利用コストを可視化・管理するRust製ツール「Costcrew」が登場。API利用額の分析と支出の最適化を支援",
-    "summary_ja": "「Costcrew」は、個人開発者が抱える複雑なAI APIの利用コストを可視化・管理するためにRustで開発された新ツールだ。 どのAIサービスにどれだけ投資し、どのモデルが費用対効果が高いかを分析することで、開発者の支出過多を防ぐ仕組みを提供する。 単なる支出記録にとどまらず、どのAIへ予算を投じるべきかという意思決定をサポートする設計となっている。",
-    "translations": {
-      "ja": {
-        "title": "個人開発者のAI利用コストを可視化・管理するRust製ツール「Costcrew」が登場。API利用額の分析と支出の最適化を支援",
-        "summary": "「Costcrew」は、個人開発者が抱える複雑なAI APIの利用コストを可視化・管理するためにRustで開発された新ツールだ。 どのAIサービスにどれだけ投資し、どのモデルが費用対効果が高いかを分析することで、開発者の支出過多を防ぐ仕組みを提供する。 単なる支出記録にとどまらず、どのAIへ予算を投じるべきかという意思決定をサポートする設計となっている。"
-      },
-      "en": {
-        "title": "Rust-built 'Costcrew' launches to help developers track and optimize daily AI API spending across multiple platforms",
-        "summary": "Costcrew is a new developer-focused tool written in Rust designed to solve the growing problem of tracking fragmented AI spending across various API providers. By aggregating usage data, it answers the critical question of how much an individual is actually spending on AI and, more importantly, which models provide the best value for money. The tool aims to help developers move beyond simple expense logging toward active budget optimization and informed spending decisions. For builders relying heavily on LLMs and AI services, the practical lesson here is that as AI integration deepens, treating cost observability as a core feature of your development workflow is no longer optional; managing your burn rate early is essential to building sustainable AI-powered projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-11-12T10:32:10.154Z"
   },
   {
     "id": "art-1794479518654-owvkv",
@@ -20312,32 +20364,6 @@
     "created_at": "2026-11-10T21:34:04.474Z"
   },
   {
-    "id": "art-1794346430618-xjp4k",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/damaha/articles/829c1a039aec5f",
-    "published_at": "2026-11-10T12:46:46.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--XcCl1WEw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GitHub%2520%25E3%2581%25AE%25E5%2585%25AC%25E9%2596%258B%25E3%2582%25B3%25E3%2583%259F%25E3%2583%2583%25E3%2583%2588%25E3%2581%25AE13%2525%25E3%2581%25AB%25E3%2580%2581AI%25E3%2581%25AE%25E7%25BD%25B2%25E5%2590%258D%25E3%2581%258C%25E4%25BB%2598%25E3%2581%2584%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:D%25CE%259BM%25CE%259BH%25CE%259B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY2MzZhZmRmMjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "GitHub公開コミットの13%がAI署名付きに―Claude Code等による自動生成コードの実態調査で判明したエンジニアリングの変容",
-    "summary_ja": "GitHub上の公開コミットにおいて、Claude CodeなどのAI署名が付与されたコミットが全体の13%に達していることが、2026年11月時点のAPI集計調査で判明した。 単なるコード生成を超え、コミット履歴にAIの関与が明記されるケースが急増している。 開発者の日常的なワークフローにAIエージェントが深く浸透しており、今後「AIと人間が共創するコードベース」の管理や、コード品質の評価基準が大きく変化することは避けられないだろう。",
-    "translations": {
-      "ja": {
-        "title": "GitHub公開コミットの13%がAI署名付きに―Claude Code等による自動生成コードの実態調査で判明したエンジニアリングの変容",
-        "summary": "GitHub上の公開コミットにおいて、Claude CodeなどのAI署名が付与されたコミットが全体の13%に達していることが、2026年11月時点のAPI集計調査で判明した。 単なるコード生成を超え、コミット履歴にAIの関与が明記されるケースが急増している。 開発者の日常的なワークフローにAIエージェントが深く浸透しており、今後「AIと人間が共創するコードベース」の管理や、コード品質の評価基準が大きく変化することは避けられないだろう。"
-      },
-      "en": {
-        "title": "AI-authored signatures now account for 13% of all public GitHub commits, revealing deep shifts in developer agent usage",
-        "summary": "An analysis of public GitHub API data from November 2026 reveals that 13% of all public commits now contain AI-generated attribution signatures, such as 'Co-Authored-By: Claude.' This shift indicates that AI coding agents have moved far beyond simple assistance to becoming active participants in the commit history of millions of projects. The data suggests a massive, rapid adoption of agents like Claude Code that handle entire commit workflows autonomously. For engineering teams and individual developers, this trend signals that managing AI-generated contributions is becoming a standard operational requirement, necessitating new strategies for code review, quality control, and long-term maintainability in a software landscape increasingly driven by human-AI collaboration."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-10T21:33:50.618Z"
-  },
-  {
     "id": "art-1794345412717-wiqlz",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -22372,32 +22398,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-10T12:32:17.422Z"
-  },
-  {
-    "id": "art-1794313029383-qvo8l",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/u2tko/articles/ai-before-noe-01",
-    "published_at": "2026-11-10T02:43:37.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xlqIfFXy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AF%25E7%2584%25A1%25E6%2596%2599%25E3%2581%25A7%25E8%25A9%25A6%25E3%2581%2599%25E3%2582%2582%25E3%2581%25AE%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2520%25E2%2580%2595%2520%25E3%2581%25AE%25E3%2581%2588%25E3%2581%25A8%25E5%2587%25BA%25E4%25BC%259A%25E3%2581%2586%25E5%2589%258D%25E3%2581%25AEAI%25E9%2581%258D%25E6%25AD%25B4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B3%25E3%2582%258A%25E3%2581%25B3%25E3%2582%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2EwZDhlMzJiZmEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「AIは無料で試すもの」から「日常のパートナー」へ――AIエージェント『のえ』との共生に至るまでの個人的な変遷と試行錯誤",
-    "summary_ja": "かつて「無料で試すもの」だった生成AIは、今や個人の生活を支える不可欠なパートナーへと進化している。 本稿では、著者自身がAIエージェント『のえ』と出会い、共生するに至るまでの軌跡を振り返る。 初期のChatGPT利用から始まり、AIとの距離感がどのように変化したのか、その試行錯誤のプロセスを追体験することで、読者は自らのAI活用のあり方を見直すきっかけを得られるはずだ。 ツールを単なる「おもちゃ」から「役割分担を担う相棒」へ昇華させるためのヒントがここにある。",
-    "translations": {
-      "ja": {
-        "title": "「AIは無料で試すもの」から「日常のパートナー」へ――AIエージェント『のえ』との共生に至るまでの個人的な変遷と試行錯誤",
-        "summary": "かつて「無料で試すもの」だった生成AIは、今や個人の生活を支える不可欠なパートナーへと進化している。 本稿では、著者自身がAIエージェント『のえ』と出会い、共生するに至るまでの軌跡を振り返る。 初期のChatGPT利用から始まり、AIとの距離感がどのように変化したのか、その試行錯誤のプロセスを追体験することで、読者は自らのAI活用のあり方を見直すきっかけを得られるはずだ。 ツールを単なる「おもちゃ」から「役割分担を担う相棒」へ昇華させるためのヒントがここにある。"
-      },
-      "en": {
-        "title": "From 'Free Tool' to Life Partner: Personal Reflections on Evolving from Casual AI Usage to Co-living with an Agent",
-        "summary": "Generative AI was once just something to play with for free, but it has quietly transformed into an indispensable partner for managing daily life. This personal reflection traces the author's journey from their initial, hazy experiments with early models like ChatGPT to their current co-existence with a dedicated AI agent named Noe. By recounting the evolution of this relationship and the shifting role of AI from a mere curiosity to a functional collaborator, the piece offers valuable perspective for anyone looking to move beyond surface-level prompt engineering. For builders and power users, the takeaway is that real productivity gains often come from treating agents as long-term partners with defined roles rather than just transient task-solvers."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-10T12:17:09.383Z"
   },
   {
     "id": "art-1794313017347-hnwf0",
