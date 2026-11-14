@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1794695555179-5lgmg",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/itoken_lab/articles/excel-read-fast-light",
+    "published_at": "2026-11-14T12:30:35.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--5yF85UDl--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25AB%2520Excel%2520%25E3%2582%2592%25E8%25AA%25AD%25E3%2581%25BE%25E3%2581%259B%25E3%2582%258B%25E3%2581%25AA%25E3%2582%2589%25E3%2580%2581Python%2520%25E3%2582%2588%25E3%2582%258A3%25E3%2580%259C13%25E5%2580%258D%25E9%2580%259F%25E3%2581%258F%25E3%2580%2581%25E3%2583%25A1%25E3%2583%25A2%25E3%2583%25AA%25E4%25BD%25BF%25E7%2594%25A8%25E9%2587%258F%25E3%2581%25AF%25E6%259C%2580%25E5%25A4%25A792%2525%25E6%25B8%259B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2584%25E3%2581%25A8%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGR1dnJoLWxxdHVhOUU2bzI2Vy1NeDQyY3ZYc2xpRnlEcWlmajIyOG5fVUdhVVZZST1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェント向けExcel読込ツール「excel-read」公開、Pythonより最大13倍高速でメモリ使用量を92%削減する軽量設計",
+    "summary_ja": "AIエージェントがExcelを処理する際、Pythonライブラリやpandasに頼るとメモリ負荷が大きく低速化しやすい。 新ツール「excel-read」はネイティブバイナリでExcelを高速解析し、CSVやJSONへ変換してAIへ渡す。 検証ではpandas比で最大13倍の高速化と、メモリ使用量92%削減を達成した。 大規模データセットを扱うエージェント開発において、実行時コストと処理速度を最適化するための強力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント向けExcel読込ツール「excel-read」公開、Pythonより最大13倍高速でメモリ使用量を92%削減する軽量設計",
+        "summary": "AIエージェントがExcelを処理する際、Pythonライブラリやpandasに頼るとメモリ負荷が大きく低速化しやすい。 新ツール「excel-read」はネイティブバイナリでExcelを高速解析し、CSVやJSONへ変換してAIへ渡す。 検証ではpandas比で最大13倍の高速化と、メモリ使用量92%削減を達成した。 大規模データセットを扱うエージェント開発において、実行時コストと処理速度を最適化するための強力な選択肢となる。"
+      },
+      "en": {
+        "title": "New 'excel-read' utility outperforms Python for AI agents, cutting Excel processing time by 13× and reducing memory usage by 92%",
+        "summary": "Processing massive Excel files via Python and pandas often cripples AI agents with bloated scripts, high latency, and heavy memory overhead. The newly released 'excel-read' utility bypasses the Python ecosystem by using a compiled binary to parse Excel files directly into CSV or JSON formats for seamless LLM ingestion. Benchmarks demonstrate that this approach is up to 13 times faster than standard pandas workflows, while slashing memory consumption by 84% to 92%—keeping footprints as low as 13MB regardless of row count. For builders developing agents that frequently ingest enterprise data, adopting purpose-built tools like this is crucial for preventing runtime bottlenecks and minimizing API costs associated with long-running, resource-intensive analysis scripts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-14T22:32:35.179Z"
+  },
+  {
+    "id": "art-1794695547330-ovf3w",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/",
+    "published_at": "2026-11-14T21:21:59.000Z",
+    "og_image_url": "https://www.quantamagazine.org/wp-content/uploads/2026/11/LLMIntrospection-crKristinaArmitage-Social.jpg",
+    "title_ja": "AIの「自己認識」を解明する新研究：モデルは自らの推論プロセスを真に理解しているのか、それとも単なるパターンマッチングか",
+    "summary_ja": "AIモデルが自身の推論プロセスをどの程度把握しているのかを検証する最新の研究が公開された。 この研究では、モデルが正解を導き出す際の思考パターンと、誤答時の挙動を詳細に分析。 結果として、現在のLLMが示す「自己反省」的な挙動が高度な推論によるものなのか、単なる確率的なパターンの一致なのかという根本的な問いを提示している。 AIの推論信頼性を高めるための「メタ認知」的アプローチに関心を持つエンジニアにとって、モデルのブラックボックスを理解する上で極めて重要な示唆となる。",
+    "translations": {
+      "ja": {
+        "title": "AIの「自己認識」を解明する新研究：モデルは自らの推論プロセスを真に理解しているのか、それとも単なるパターンマッチングか",
+        "summary": "AIモデルが自身の推論プロセスをどの程度把握しているのかを検証する最新の研究が公開された。 この研究では、モデルが正解を導き出す際の思考パターンと、誤答時の挙動を詳細に分析。 結果として、現在のLLMが示す「自己反省」的な挙動が高度な推論によるものなのか、単なる確率的なパターンの一致なのかという根本的な問いを提示している。 AIの推論信頼性を高めるための「メタ認知」的アプローチに関心を持つエンジニアにとって、モデルのブラックボックスを理解する上で極めて重要な示唆となる。"
+      },
+      "en": {
+        "title": "New research investigates whether AI models truly possess self-awareness of their reasoning processes or simply rely on pattern matching",
+        "summary": "Fresh research investigates the extent to which LLMs truly grasp their own reasoning processes, rigorously testing whether models demonstrate genuine self-awareness or merely sophisticated pattern matching. The study analyzes the internal mechanics behind correct versus incorrect outputs, challenging the assumption that so-called \"self-reflection\" in AI equates to actual cognitive understanding. For engineers building agentic workflows, the findings raise critical questions about the reliability of model-led self-correction. If AI does not truly \"know\" its own logic, relying on it to verify its own errors may prove fundamentally flawed. This work serves as a necessary reality check for anyone integrating recursive prompt loops or automated reasoning chains into production environments where accuracy and explainability are paramount."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-14T22:32:27.330Z"
+  },
+  {
+    "id": "art-1794695540043-9ap2s",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/lain2772/n/nbfc7e5f29dcf",
+    "published_at": "2026-11-14T22:04:35.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336214981/rectangle_large_type_2_a9b432c114530333ad753e3b6fbd32c6.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "愛媛・佐田岬の絶景を再現したVRアプリ「灯台の夜」を公開、スマホ向けVR・Google Cardboard対応で没入感ある360度体験を実現",
+    "summary_ja": "愛媛県・佐田岬灯台の情景をモチーフにしたスマホ向けVRアプリ「灯台の夜」がリリースされた。 360度見渡せる高台の広場を舞台に、夜の海と星空を没入感たっぷりに体験できる仕様で、Google CardboardなどのVRゴーグルにも対応している。 ニッチな風景にフォーカスした個人開発のVRアプリは、VRゴーグルというハードウェアと組み合わせることで、静的コンテンツを単なる写真や動画以上の特別な体験へと昇華させる良い事例である。",
+    "translations": {
+      "ja": {
+        "title": "愛媛・佐田岬の絶景を再現したVRアプリ「灯台の夜」を公開、スマホ向けVR・Google Cardboard対応で没入感ある360度体験を実現",
+        "summary": "愛媛県・佐田岬灯台の情景をモチーフにしたスマホ向けVRアプリ「灯台の夜」がリリースされた。 360度見渡せる高台の広場を舞台に、夜の海と星空を没入感たっぷりに体験できる仕様で、Google CardboardなどのVRゴーグルにも対応している。 ニッチな風景にフォーカスした個人開発のVRアプリは、VRゴーグルというハードウェアと組み合わせることで、静的コンテンツを単なる写真や動画以上の特別な体験へと昇華させる良い事例である。"
+      },
+      "en": {
+        "title": "Developer releases 'Lighthouse Night' VR app featuring scenic Sadamisaki, enabling 360-degree immersive star-viewing via mobile phones and Google Cardboard",
+        "summary": "A new mobile VR experience dubbed 'Lighthouse Night' has launched, transporting users to the iconic scenery of the Sadamisaki Lighthouse in Ehime. The application provides a 360-degree interactive environment that captures the ocean and night sky, specifically optimized for mobile devices and compatible with headsets like Google Cardboard for full immersion. This project serves as a compelling case study for solo developers; by pairing specific, atmospheric landscapes with accessible hardware like Cardboard, builders can elevate static scenery into a unique, sensory experience that far exceeds standard photos or videos. It highlights how niche VR applications can succeed by focusing on atmospheric quality rather than complex gamified mechanics to capture user attention."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-14T22:32:20.043Z"
+  },
+  {
     "id": "art-1794694663396-zyvoh",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -5770,32 +5848,6 @@
     "created_at": "2026-11-14T07:32:12.657Z"
   },
   {
-    "id": "art-1794641516291-g4evh",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/hellohippo/n/n21f27e44b6c0",
-    "published_at": "2026-11-14T07:30:00.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335990339/rectangle_large_type_2_eedfb5fbec6752069bc211f30a475f90.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI間の「伝言係」を卒業する：ボットとコーディングAIを自動連携させ、人間がコピペ作業から脱却するための役割分担術",
-    "summary_ja": "AIエージェントを活用する際、複数のツール間で人間がコピペを行って仲介する「伝言係」は開発効率を著しく下げる。 GoogleのコーディングCLI「agy」などのツールを使い、ボットが生成したタスク指示をそのままAIへ渡すパイプラインを構築することで、この作業は排除できる。 重要なのは、各AIの役割を明確に定義し、出力フォーマットを自動化に最適化することだ。 人間が作業のトリガーを引くだけの設計に移行することで、複雑な開発ワークフローを高速化し、思考の断絶を防ぐことができる。",
-    "translations": {
-      "ja": {
-        "title": "AI間の「伝言係」を卒業する：ボットとコーディングAIを自動連携させ、人間がコピペ作業から脱却するための役割分担術",
-        "summary": "AIエージェントを活用する際、複数のツール間で人間がコピペを行って仲介する「伝言係」は開発効率を著しく下げる。 GoogleのコーディングCLI「agy」などのツールを使い、ボットが生成したタスク指示をそのままAIへ渡すパイプラインを構築することで、この作業は排除できる。 重要なのは、各AIの役割を明確に定義し、出力フォーマットを自動化に最適化することだ。 人間が作業のトリガーを引くだけの設計に移行することで、複雑な開発ワークフローを高速化し、思考の断絶を防ぐことができる。"
-      },
-      "en": {
-        "title": "Stop being the 'AI middleman': How to automate workflows by assigning distinct roles between bots and coding agents",
-        "summary": "Working as a manual bridge between different AI tools by copying and pasting instructions creates massive friction in modern development workflows. Instead of manually moving outputs from planning bots into coding agents like Google’s CLI tool 'agy', builders should define distinct, automated handoff protocols. The key lies in standardizing the output formats and assigning specific domains of responsibility—planning vs. implementation—to each agent type. By shifting your role from a message carrier to an orchestrator, you can eliminate the cognitive overhead caused by task switching. Automating this pipeline transforms your development stack from a fragmented mess of individual prompts into a cohesive, hands-off system that maintains context while scaling complex coding tasks efficiently."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-14T07:31:56.291Z"
-  },
-  {
     "id": "art-1794640625614-bwron",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9879,33 +9931,6 @@
       "研究"
     ],
     "created_at": "2026-11-13T16:33:07.351Z"
-  },
-  {
-    "id": "art-1794587575144-tngeb",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://dash.palform.app/fill/org_0R2JXZPZ7PFWX/form_0R8K0PRYXGM71?f=fat_0R9JYW9RTDRDS&ref=verticalslice.news#ak=DC9F12AFE28CDCC52A0C424742D6C4F300E4FACE",
-    "published_at": "2026-11-13T16:26:07.000Z",
-    "og_image_url": null,
-    "title_ja": "Microsoftの従業員有志がAI開発の透明性と説明責任の強化を経営陣に要求、AIガバナンスと倫理的枠組みの再構築を提唱",
-    "summary_ja": "Microsoftの従業員グループが、同社のAI開発における説明責任と透明性の強化を求める声明を発表した。 急速に進化するAI技術に対し、企業としての倫理的ガバナンスと労働者の権利を守る枠組みの再構築を経営陣へ要求している。 大規模なAI製品を構築・展開するエンジニアにとって、技術開発の速度だけでなく、開発プロセスの透明性と倫理的リスクの評価体制を初期段階から設計に組み込むことが、長期的なプロダクトの信頼性を維持するために不可欠であることを示唆している。",
-    "translations": {
-      "ja": {
-        "title": "Microsoftの従業員有志がAI開発の透明性と説明責任の強化を経営陣に要求、AIガバナンスと倫理的枠組みの再構築を提唱",
-        "summary": "Microsoftの従業員グループが、同社のAI開発における説明責任と透明性の強化を求める声明を発表した。 急速に進化するAI技術に対し、企業としての倫理的ガバナンスと労働者の権利を守る枠組みの再構築を経営陣へ要求している。 大規模なAI製品を構築・展開するエンジニアにとって、技術開発の速度だけでなく、開発プロセスの透明性と倫理的リスクの評価体制を初期段階から設計に組み込むことが、長期的なプロダクトの信頼性を維持するために不可欠であることを示唆している。"
-      },
-      "en": {
-        "title": "Microsoft Employees Demand Increased Accountability and Transparency in AI Development, Calling for a Robust Ethical Governance Framework",
-        "summary": "A collective of Microsoft employees has issued a formal call for increased accountability and transparency regarding the company’s AI development practices. The group is urging executive leadership to fundamentally restructure their ethical governance framework to address the rapid scaling of AI models and the potential impact on labor rights and safety. For builders and engineers managing massive AI product pipelines, this serves as a critical reminder that speed cannot supersede oversight. Beyond just shipping features, organizations must integrate transparent auditing and ethical risk assessment directly into the engineering lifecycle. Establishing these guardrails early is no longer optional but essential for maintaining long-term product integrity and public trust in high-stakes AI-driven environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-13T16:32:55.144Z"
   },
   {
     "id": "art-1794586649604-2qwhd",
@@ -16787,32 +16812,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-12T06:32:25.044Z"
-  },
-  {
-    "id": "art-1794465115684-qaf3d",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/u2tko/articles/meeting-noe-02",
-    "published_at": "2026-11-12T04:27:56.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--nDI18lDU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%25AC%25E3%2581%25A7%25E8%25AA%25AD%25E3%2582%2593%25E3%2581%25A0AI%25E7%25A7%2598%25E6%259B%25B8%25E3%2581%25AB%25E8%25BF%2591%25E3%2581%25A5%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2520%25E2%2580%2595%2520%25E3%2581%25AE%25E3%2581%2588%25E3%2581%25A8%25E3%2581%25AE%25E5%2587%25BA%25E4%25BC%259A%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B3%25E3%2582%258A%25E3%2581%25B3%25E3%2582%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2EwZDhlMzJiZmEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェント「のえ」との出会い―AIを点で使う段階から、日常に寄り添うパートナーへ進化させるための準備と実践",
-    "summary_ja": "AIを断片的に使う「点」の活用から脱却し、日常の相棒としてAIエージェント「のえ」と出会うまでの軌跡。 著者は以前からAIエージェントへの関心を持ち、関連書籍や御田稔氏のプレゼン資料などを通じて、AIをより統合的に扱うための知見を蓄積していた。 偶然の出会いであるものの、日頃から新しい技術や概念へのアンテナを張り、本質的な活用法を模索し続けた「下地」があったからこそ、エージェントを使いこなす現在がある。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント「のえ」との出会い―AIを点で使う段階から、日常に寄り添うパートナーへ進化させるための準備と実践",
-        "summary": "AIを断片的に使う「点」の活用から脱却し、日常の相棒としてAIエージェント「のえ」と出会うまでの軌跡。 著者は以前からAIエージェントへの関心を持ち、関連書籍や御田稔氏のプレゼン資料などを通じて、AIをより統合的に扱うための知見を蓄積していた。 偶然の出会いであるものの、日頃から新しい技術や概念へのアンテナを張り、本質的な活用法を模索し続けた「下地」があったからこそ、エージェントを使いこなす現在がある。"
-      },
-      "en": {
-        "title": "Beyond fragmented AI usage: How a persistent curiosity for agentic workflows led to a seamless partnership with an AI secretary",
-        "summary": "Moving beyond using AI tools in isolation, this personal account details the journey toward integrating a sophisticated AI agent, named 'Noe,' into a daily operational workflow. The author highlights that while the encounter felt serendipitous, it was built on a foundation of long-standing interest in AI agent theory and proactive engagement with early research and presentations from industry experts like Minoru Mita. This reflection emphasizes that successfully adopting AI as a true assistant requires more than just luck; it demands a dedicated groundwork of continuous learning and experimentation. By shifting from treating AI as a scattered utility to viewing it as a core collaborative partner, builders can significantly enhance their productivity and daily decision-making processes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-12T06:31:55.684Z"
   },
   {
     "id": "art-1794464210651-uo5rk",
