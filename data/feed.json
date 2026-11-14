@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1794631608320-s9sdh",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/unsui_lab/n/n5c47b8c899bd",
+    "published_at": "2026-11-14T04:42:29.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335710728/rectangle_large_type_2_4bf7915eb08e52a265dff21c2e32ca95.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Bluetooth対戦ミニゲーム集「ミニゲーム対戦」開発記：機内モードでも繋がる近接通信の設計と、戦車・射的などの新作追加プロセス",
+    "summary_ja": "機内モード下でもBluetoothでローカル対戦が可能なミニゲーム集「ミニゲーム対戦」の開発第2回。 本稿では、戦車や射的といった新作ゲームの実装プロセスを解説し、通信ラグを抑えた同期設計の工夫を詳述する。 インターネット不要の近接通信というニッチな強みを活かすため、オフラインでも体験を損なわないデータ同期の最適化が、個人開発におけるUI/UXの差別化要因となっている。",
+    "translations": {
+      "ja": {
+        "title": "Bluetooth対戦ミニゲーム集「ミニゲーム対戦」開発記：機内モードでも繋がる近接通信の設計と、戦車・射的などの新作追加プロセス",
+        "summary": "機内モード下でもBluetoothでローカル対戦が可能なミニゲーム集「ミニゲーム対戦」の開発第2回。 本稿では、戦車や射的といった新作ゲームの実装プロセスを解説し、通信ラグを抑えた同期設計の工夫を詳述する。 インターネット不要の近接通信というニッチな強みを活かすため、オフラインでも体験を損なわないデータ同期の最適化が、個人開発におけるUI/UXの差別化要因となっている。"
+      },
+      "en": {
+        "title": "Building offline PvP: Developing Bluetooth-based mini-games like Tanks and Shooting Gallery for the 'Mini-Game Battle' app",
+        "summary": "This second entry in the development logs for 'Mini-Game Battle' explores building a suite of PvP mini-games that function entirely over Bluetooth, even while in Airplane Mode. For builders, the durable takeaway is to treat AI tooling as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-14T04:46:48.320Z"
+  },
+  {
+    "id": "art-1794631600793-vagt8",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/itaraiguma/articles/measure-impact-trailer-squash-missed",
+    "published_at": "2026-11-14T00:04:52.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--yJFSQBE0--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E3%2581%2593%25E3%2581%25AE%25E5%25A4%2589%25E6%259B%25B4%25E3%2581%25AF%25E6%25B8%25AC%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D%25E3%2581%25A8%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%258167%25E8%25A8%2598%25E4%25BA%258B%25E3%2581%25AE%25E5%258A%25B9%25E6%259E%259C%25E6%25B8%25AC%25E5%25AE%259A%25E3%2581%258C%25E3%2582%2584%25E3%2582%258A%25E7%259B%25B4%25E3%2581%2597%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlZmMxMmY2MTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "67記事のSEO効果測定が台無しに。Gitの「squashマージ」でトレーラーが消えた原因と対策を解説",
+    "summary_ja": "技術ブログの更新頻度とSEO順位を測定するため、修正コミットにトレーラー「Measure-Impact: none」を付与していたが、67記事で測定誤りが発生した。 原因はSquashマージ時にGitがメッセージ末尾しか読まず、トレーラーが除外されたことだった。 開発者は正規表現でメッセージ全文を検索する仕様に変更し、特定の場所指定に頼らない運用へ改善した。 個人開発の自動化運用には、Gitのコミット履歴とマージ戦略の依存関係を意識することが不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "67記事のSEO効果測定が台無しに。Gitの「squashマージ」でトレーラーが消えた原因と対策を解説",
+        "summary": "技術ブログの更新頻度とSEO順位を測定するため、修正コミットにトレーラー「Measure-Impact: none」を付与していたが、67記事で測定誤りが発生した。 原因はSquashマージ時にGitがメッセージ末尾しか読まず、トレーラーが除外されたことだった。 開発者は正規表現でメッセージ全文を検索する仕様に変更し、特定の場所指定に頼らない運用へ改善した。 個人開発の自動化運用には、Gitのコミット履歴とマージ戦略の依存関係を意識することが不可欠である。"
+      },
+      "en": {
+        "title": "SEO Measurement Failed for 67 Articles: How Git Squash Merges Broke My Commit Trailers and How I Fixed It",
+        "summary": "An independent developer maintaining a technical blog inadvertently botched SEO impact measurements for 67 articles after assuming their custom Git trailer, \"Measure-Impact: none,\" was properly registering. The developer strictly mandates a 28-day cool-down period between edits to track search rank changes, but discovered that Squash merges were stripping the trailer because the automation tool only parsed the final paragraph of the commit message. The developer resolved this by refactoring the parser to scan the entire commit message for the trailer rather than relying on strict positioning. This experience serves as a stark reminder for solo builders: automation pipelines relying on commit trailers must be resilient to squash-merge behaviors, or you risk silently corrupting your data sets."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-14T04:46:40.793Z"
+  },
+  {
+    "id": "art-1794631592432-r23mi",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/edtech_guild/articles/b08522651d8ea3",
+    "published_at": "2026-11-14T01:46:24.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--aFO0cx9w--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25A4%25A7%25E4%25BC%259A%25E9%2581%258B%25E5%2596%25B6%25E3%2581%25AE%25E7%25A7%2598%25E6%259B%25B8%25E5%25BD%25B9%25E3%2582%2592%25E3%2580%2581AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2580%258CMuse%25E3%2580%258D%25E3%2581%25A8%25E4%25B9%2597%25E3%2582%258A%25E5%2588%2587%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E8%2597%25A4%25E4%25BA%2595%2520%25E7%2590%2586%25EF%25BC%2588Edtech-Guild%25E4%25BB%25A3%25E8%25A1%25A8%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0JUN3JvMVk3amdpbDRlZDcxbUdwTkIxYzZuakV1Mmg1STNINENyZHdCZ0x5d2VBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "大会運営の秘書役にAIエージェント「Muse」を導入した体験談：実務におけるリマインド自動化の可能性と活用メリットを検証",
+    "summary_ja": "合同会社Edtech-Guildの代表が、大会運営における秘書業務にAIエージェント「Muse」を導入。 分単位のスケジュール管理やリマインド業務をAIに委任することで、人間が気付かない細かな作業漏れを防ぎ、運営全体の生産性を向上させた。 AIエージェントは単なる応答ツールを超え、実務を先回りして補佐するパートナーとして、管理コストの削減やミスの抑制に直面する現場で大きな価値を発揮する。",
+    "translations": {
+      "ja": {
+        "title": "大会運営の秘書役にAIエージェント「Muse」を導入した体験談：実務におけるリマインド自動化の可能性と活用メリットを検証",
+        "summary": "合同会社Edtech-Guildの代表が、大会運営における秘書業務にAIエージェント「Muse」を導入。 分単位のスケジュール管理やリマインド業務をAIに委任することで、人間が気付かない細かな作業漏れを防ぎ、運営全体の生産性を向上させた。 AIエージェントは単なる応答ツールを超え、実務を先回りして補佐するパートナーとして、管理コストの削減やミスの抑制に直面する現場で大きな価値を発揮する。"
+      },
+      "en": {
+        "title": "How an AI agent named Muse effectively managed event coordination and administrative reminders for a complex conference operation",
+        "summary": "Edtech-Guild’s CEO recently integrated the AI agent \"Muse\" into their workflow to act as a secretary for complex event operations. By offloading minute-by-minute schedule tracking and time-sensitive reminders to the agent, the author successfully navigated a high-pressure environment without missing critical deadlines. This experiment demonstrates that AI agents have evolved beyond passive chatbots into proactive assistants capable of handling tangible administrative logistics. For builders and operations managers, this outcome validates that delegating repetitive coordination tasks to agents can significantly reduce cognitive load and operational errors. The shift toward agentic workflows is proving to be a viable strategy for organizations seeking to scale efficiency without increasing headcount, suggesting that agent deployment should be a priority for operational tech stacks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-14T04:46:32.432Z"
+  },
+  {
     "id": "art-1794630749089-t43db",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8529,32 +8607,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-13T06:33:48.218Z"
-  },
-  {
-    "id": "art-1794551621401-s5o50",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/masahiko_studio/n/n018b6ed927b1",
-    "published_at": "2026-11-13T06:29:54.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335579731/rectangle_large_type_2_dd0f4b15821f609a005176878964678c.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "カップル向けカウントダウンアプリ開発の舞台裏：単なる「日数表示」がユーザーの日常と感情をどう変えたのか",
-    "summary_ja": "日々の過ぎゆく時間を可視化する「100日後」というカウントダウン画面が、個人の情緒的な体験をどう変えるのか。 単なる機能実装を超え、数値的な指標がユーザーの「今日」を意識させるトリガーとして機能する心理的アプローチを分析する。 開発者にとって、アプリはただのツールではなく、ユーザーの生活リズムに寄り添い、小さな変化を促すための「日常への介入装置」になり得る。",
-    "translations": {
-      "ja": {
-        "title": "カップル向けカウントダウンアプリ開発の舞台裏：単なる「日数表示」がユーザーの日常と感情をどう変えたのか",
-        "summary": "日々の過ぎゆく時間を可視化する「100日後」というカウントダウン画面が、個人の情緒的な体験をどう変えるのか。 単なる機能実装を超え、数値的な指標がユーザーの「今日」を意識させるトリガーとして機能する心理的アプローチを分析する。 開発者にとって、アプリはただのツールではなく、ユーザーの生活リズムに寄り添い、小さな変化を促すための「日常への介入装置」になり得る。"
-      },
-      "en": {
-        "title": "Beyond utility: How a simple countdown app interface influences user behavior and daily emotional milestones",
-        "summary": "This analysis explores how a seemingly simple countdown screen, such as tracking '100 days until an anniversary,' can fundamentally alter a user's daily perception of time and emotional connection. Rather than serving as just a functional utility for date management, the interface acts as a powerful psychological trigger that encourages users to consciously experience their 'today.' For builders, the key takeaway is that digital products are not merely tools; they are environmental interventions that can shape habits and human behavior. By focusing on how metrics integrate into user routines, developers can transform basic data visualization into meaningful emotional engagement, ultimately creating software that adds genuine depth to the user's daily life."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-13T06:33:41.401Z"
   },
   {
     "id": "art-1794551602426-nuxik",
@@ -18741,32 +18793,6 @@
     "created_at": "2026-11-11T10:17:08.655Z"
   },
   {
-    "id": "art-1794391327453-84ru2",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/nu0044/articles/windows-alarm-tv-inspired",
-    "published_at": "2026-11-11T06:00:27.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--BJCO9d_w--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%259F%25A5%25E4%25BA%25BA%25E3%2581%25AE%25E5%25AE%25B6%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25AC%25E3%2583%2593%25E3%2582%2592%25E8%25A6%258B%25E3%2581%25A6%25E3%2580%2581%25E3%2583%2586%25E3%2583%25AC%25E3%2583%2593%25E3%2581%25AE%25E3%2581%25AA%25E3%2581%2584%25E8%2587%25AA%25E5%25AE%2585%25E3%2581%25ABWindows%25E3%2582%25A2%25E3%2583%25A9%25E3%2583%25BC%25E3%2583%25A0%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%259B%25E3%2583%25B3%25E3%2581%25AE%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QxOTdiYzVlODUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "自宅にテレビがない個人開発者がWindows PCを自動起動・再生する「Windowsアラーム」を実装した話",
-    "summary_ja": "知人宅のテレビが朝の時間帯に自動起動する様子を見て、自宅のWindows PCで同等の機能を再現する「Windowsアラーム」を個人開発した。 休止状態からの自動復帰や、指定時刻のオーディオ再生といったOSの低レイヤー機能を活用することで、スマート家電ではない既存PCを起床用アラームとして再利用可能にした。 GUIや特別なハードウェアに頼らず、既存環境の制約を工夫で乗り越える個人開発の楽しさと、OS機能を組み合わせるハックの可能性を提示する。",
-    "translations": {
-      "ja": {
-        "title": "自宅にテレビがない個人開発者がWindows PCを自動起動・再生する「Windowsアラーム」を実装した話",
-        "summary": "知人宅のテレビが朝の時間帯に自動起動する様子を見て、自宅のWindows PCで同等の機能を再現する「Windowsアラーム」を個人開発した。 休止状態からの自動復帰や、指定時刻のオーディオ再生といったOSの低レイヤー機能を活用することで、スマート家電ではない既存PCを起床用アラームとして再利用可能にした。 GUIや特別なハードウェアに頼らず、既存環境の制約を工夫で乗り越える個人開発の楽しさと、OS機能を組み合わせるハックの可能性を提示する。"
-      },
-      "en": {
-        "title": "How a developer built a custom Windows Alarm to wake up their PC automatically, inspired by TV automation",
-        "summary": "Inspired by a friend’s TV that automatically powers on each morning, a developer set out to replicate the behavior on their own Windows PC, which served as their only screen. By utilizing deep OS features, specifically waking the machine from hibernation at precise intervals and triggering audio playback, they successfully transformed a standard desktop into a functional smart alarm system. The project demonstrates how to creatively combine built-in Windows APIs to bypass the need for new smart hardware or complex GUI setups. It serves as a reminder for independent builders that everyday problems often have elegant solutions hidden within the operating system layers already at your fingertips, turning existing hardware into a more powerful automation tool."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-11T10:02:07.453Z"
-  },
-  {
     "id": "art-1794389510575-zozrm",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -21329,32 +21355,6 @@
       "開発"
     ],
     "created_at": "2026-11-10T20:32:07.874Z"
-  },
-  {
-    "id": "art-1794341932544-fu53e",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/systemdesignsim/articles/claude-fable-5-2-honest-review",
-    "published_at": "2026-11-10T17:52:15.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--U-NnEDKU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Fable%25205.2%25E3%2581%25A8Mythos%25205.2%25E3%2582%2592%25E6%25AD%25A3%25E7%259B%25B4%25E3%2581%25AB%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:System%2520Design%2520Simple%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY4YzUyNWE2MDkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Anthropicが発表した新モデル「Claude Fable 5.2」と「Mythos 5.2」を徹底検証：コーディング能力とエージェント性能を評価",
-    "summary_ja": "2026年11月9日に発表されたAnthropicの次世代モデル「Claude Fable 5.2」と「Mythos 5.2」の性能をレビューする。 両モデルは特に複雑なコーディング作業とAIエージェントの推論能力において、現在の業界トップクラスのベンチマーク数値を記録した。 一方で、実務利用においてはタスク1件あたりのコストが課題となりそうだ。 開発者は単なる性能だけでなく、推論効率とAPIコストのトレードオフを見極める必要がある。",
-    "translations": {
-      "ja": {
-        "title": "Anthropicが発表した新モデル「Claude Fable 5.2」と「Mythos 5.2」を徹底検証：コーディング能力とエージェント性能を評価",
-        "summary": "2026年11月9日に発表されたAnthropicの次世代モデル「Claude Fable 5.2」と「Mythos 5.2」の性能をレビューする。 両モデルは特に複雑なコーディング作業とAIエージェントの推論能力において、現在の業界トップクラスのベンチマーク数値を記録した。 一方で、実務利用においてはタスク1件あたりのコストが課題となりそうだ。 開発者は単なる性能だけでなく、推論効率とAPIコストのトレードオフを見極める必要がある。"
-      },
-      "en": {
-        "title": "Anthropic’s New Claude Fable 5.2 and Mythos 5.2: A Critical Review of Coding Prowess and Agentic Performance",
-        "summary": "Anthropic’s November 2026 release of Claude Fable 5.2 and Mythos 5.2 marks a significant milestone, with both models setting new performance ceilings for complex coding tasks and AI agent reasoning. While these models represent the current state-of-the-art in technical capability, practical adoption hinges on balancing their extreme utility against per-task inference costs. This review breaks down how these models handle high-stakes engineering workflows compared to their predecessors. For builders, the key takeaway is that raw performance is no longer the bottleneck; the strategic challenge now lies in optimizing infrastructure to manage the higher API costs inherent in these more powerful, deeper reasoning architectures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-10T20:18:52.544Z"
   },
   {
     "id": "art-1794340978022-r5ahu",
