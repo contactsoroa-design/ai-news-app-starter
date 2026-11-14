@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794688322459-jpa49",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/gifted_stilt5841/n/n84a301e56c24",
+    "published_at": "2026-11-14T20:11:36.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335331027/rectangle_large_type_2_244c2caf09267015c2b11d287c986d2c.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "【開発記録#11】UI操作の「詰まり」を解消―データ読み込み遅延への対策と287ミリ秒で完結するUX最適化の実践録",
+    "summary_ja": "開発中のアプリで70作品を一括追加する際、UXを阻害していた「詰まり」を2箇所修正した。 データが遅れて到着しても取りこぼさない設計と、リクエスト処理を287ミリ秒以内に収めることで、緊張感のある快適な操作性を実現した。 単なる高速化だけでなく、非同期通信時にも操作感を維持する実装は、ユーザーの離脱を防ぐ個人開発の重要なUX戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "【開発記録#11】UI操作の「詰まり」を解消―データ読み込み遅延への対策と287ミリ秒で完結するUX最適化の実践録",
+        "summary": "開発中のアプリで70作品を一括追加する際、UXを阻害していた「詰まり」を2箇所修正した。 データが遅れて到着しても取りこぼさない設計と、リクエスト処理を287ミリ秒以内に収めることで、緊張感のある快適な操作性を実現した。 単なる高速化だけでなく、非同期通信時にも操作感を維持する実装は、ユーザーの離脱を防ぐ個人開発の重要なUX戦略となる。"
+      },
+      "en": {
+        "title": "Dev Log #11: Eliminating UI Stutter During Bulk Loading and Optimizing UX Latency to 287ms Responses",
+        "summary": "In this development deep dive, the builder tackles UI \"stuttering\" that occurred after bulk-adding 70 works, identifying two specific bottlenecks that degraded user experience. By refactoring how the app handles delayed data arrival and enforcing a strict 287ms response threshold, the developer ensured the interface remains responsive even under heavy load. The process highlights that achieving sub-300ms latency isn't just about raw speed; it's about gracefully managing asynchronous updates to prevent user friction. For solo developers, the takeaway is that meticulous management of transient states during data fetching is critical for maintaining an app’s perceived quality and preventing churn, even when backend operations hit timeout delays."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-14T20:32:02.459Z"
+  },
+  {
+    "id": "art-1794688311454-8c35j",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/dantarg/articles/claude-sheets-data-outside-sap",
+    "published_at": "2026-11-14T16:12:07.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--UjxkBU0t--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%25E3%2581%25AFSAP%25E3%2581%25AE%25E3%2580%258C%25E5%25A4%2596%25E5%2581%25B4%25E3%2580%258D%25E3%2582%2592%25E5%258F%2596%25E3%2582%258A%25E3%2581%25AB%25E6%259D%25A5%25E3%2581%259F%25E2%2580%2595%25E2%2580%2595Sheets%25E3%2581%25A8Data%25E3%2581%258C%25E7%25A4%25BA%25E3%2581%2599%25E3%2580%2581Joule%25E3%2581%25A8%25E3%2581%25AE%25E5%25A2%2583%25E7%2595%258C%25E7%25B7%259A%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25B0%258F%25E9%2587%258E%2520%25E6%2598%25AD%25E4%25B9%2585%2528PN%253A%25E5%258F%25A4%25E6%2598%258E%25E5%259C%25B0%25E3%2582%2586%25E3%2581%25A8%25E3%2582%258A%252FID...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRkNjMwYzRiMTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ClaudeはSAPの「最後の1マイル」を奪うか——Excelへのデータ書き出し現場が示すJouleとの境界線",
+    "summary_ja": "長年SAP運用の現場では、SAP上の数字を最終的にExcelへ書き出し、集計・グラフ化する「最後の1マイル」が不可欠だった。 この業務は今までSAP内部で完結しなかったが、Claudeのデータ分析機能やSheets連携は、まさにこのラストワンマイルの領域を狙っている。 SAPの標準AI「Joule」が業務プロセスを最適化する一方で、Claudeは現場の「Excel依存の分析作業」という泥臭い穴を埋める役割を果たしており、両者は競合しつつも棲み分ける可能性が高い。",
+    "translations": {
+      "ja": {
+        "title": "ClaudeはSAPの「最後の1マイル」を奪うか——Excelへのデータ書き出し現場が示すJouleとの境界線",
+        "summary": "長年SAP運用の現場では、SAP上の数字を最終的にExcelへ書き出し、集計・グラフ化する「最後の1マイル」が不可欠だった。 この業務は今までSAP内部で完結しなかったが、Claudeのデータ分析機能やSheets連携は、まさにこのラストワンマイルの領域を狙っている。 SAPの標準AI「Joule」が業務プロセスを最適化する一方で、Claudeは現場の「Excel依存の分析作業」という泥臭い穴を埋める役割を果たしており、両者は競合しつつも棲み分ける可能性が高い。"
+      },
+      "en": {
+        "title": "Claude targets the 'last mile' of SAP workflows, challenging Excel-dependent analysis with new integration capabilities",
+        "summary": "For decades, SAP operations have suffered a persistent 'last mile' problem: data finalized within the ERP is invariably exported to Excel for final aggregation, charting, and reporting. While SAP’s internal AI, Joule, optimizes rigid business processes, it fails to capture the fluid, messy analytical work performed by end-users. Claude’s latest data analysis capabilities and direct Sheet integration specifically target this gap, effectively threatening the spreadsheet’s stronghold on enterprise reporting. For developers and architects, the strategic takeaway is that AI is increasingly moving outside the monolithic ERP to solve real-world interaction friction. Companies shouldn't view this as a simple feature clash, but as a fundamental shift where generative models absorb the ad-hoc workflows that traditional systems have ignored."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-14T20:31:51.454Z"
+  },
+  {
+    "id": "art-1794688301260-t69pn",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.nature.com/articles/d41586-025-00649-4",
+    "published_at": "2026-11-14T18:31:36.000Z",
+    "og_image_url": null,
+    "title_ja": "人間レベルの知能実現に向けたAI研究の転換点、Nature誌が指摘する「次の10年」に求められるパラダイムシフトとは",
+    "summary_ja": "Nature誌は、現在のAI研究が大規模言語モデルのデータ量増大に依存しすぎていると警鐘を鳴らし、真の人間レベル知能には新たなアプローチが必要だと指摘する。 具体的には、因果推論、物理的世界の理解、そして能動的な学習プロセスの導入が不可欠とされる。 開発者はモデルのスケールアップだけでなく、推論能力や世界モデルの統合など、知能の本質的な構造を見据えたアーキテクチャの設計が次世代AI構築の鍵になることを理解すべきである。",
+    "translations": {
+      "ja": {
+        "title": "人間レベルの知能実現に向けたAI研究の転換点、Nature誌が指摘する「次の10年」に求められるパラダイムシフトとは",
+        "summary": "Nature誌は、現在のAI研究が大規模言語モデルのデータ量増大に依存しすぎていると警鐘を鳴らし、真の人間レベル知能には新たなアプローチが必要だと指摘する。 具体的には、因果推論、物理的世界の理解、そして能動的な学習プロセスの導入が不可欠とされる。 開発者はモデルのスケールアップだけでなく、推論能力や世界モデルの統合など、知能の本質的な構造を見据えたアーキテクチャの設計が次世代AI構築の鍵になることを理解すべきである。"
+      },
+      "en": {
+        "title": "Nature researchers argue current AI scaling laws are insufficient for human-level intelligence, calling for a fundamental shift in research paradigms",
+        "summary": "A new report from Nature suggests that relying solely on scaling up parameters for large language models will not bridge the gap toward human-level intelligence. Researchers advocate for a decisive change in tack, emphasizing the urgent need to integrate causal reasoning, embodied understanding of the physical world, and active learning processes into core AI architectures. For engineers and builders, this implies that piling on more compute and data is reaching a point of diminishing returns. The future of breakthrough AI lies in designing systems that fundamentally replicate how humans synthesize causality and environmental context rather than just predicting the next token. Building truly intelligent agents now requires moving beyond pattern matching toward structural, model-based reasoning capabilities."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-14T20:31:41.260Z"
+  },
+  {
+    "id": "art-1794688292114-hnt4m",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tariki_honganji/n/n49bd31998142",
+    "published_at": "2026-11-14T20:18:06.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336201166/rectangle_large_type_2_732773ea44928e342320ad0ea3c6c05d.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIエージェントの自律稼働が招く奇妙な誤解：報酬付きタスク依頼に潜む「AI同士の会話」とプロンプト汚染のリスク",
+    "summary_ja": "ある報酬付きのタスク依頼を精査したところ、内容は人間への発注ではなく、AIモデルに向けた具体的なプロンプト指示であった。 これは、AIエージェントが自動化ツールを駆使して仕事を獲得しようとする過程で、他者のAIに向けて指示を出してしまった典型的なケースだ。 LLMを組み込んだ自動化プロセスでは、人間とAIが混在する環境下で、意図しないAI間通信や誤ったタスク実行が発生するリスクがある。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの自律稼働が招く奇妙な誤解：報酬付きタスク依頼に潜む「AI同士の会話」とプロンプト汚染のリスク",
+        "summary": "ある報酬付きのタスク依頼を精査したところ、内容は人間への発注ではなく、AIモデルに向けた具体的なプロンプト指示であった。 これは、AIエージェントが自動化ツールを駆使して仕事を獲得しようとする過程で、他者のAIに向けて指示を出してしまった典型的なケースだ。 LLMを組み込んだ自動化プロセスでは、人間とAIが混在する環境下で、意図しないAI間通信や誤ったタスク実行が発生するリスクがある。"
+      },
+      "en": {
+        "title": "When AI agents solicit AI agents: Uncovering the strange phenomenon of prompt-injected task requests appearing in freelance marketplaces",
+        "summary": "A freelance job posting offering payment was discovered to be entirely composed of instructions meant for an AI model rather than a human contractor. This reveals a strange new reality where AI agents, operating autonomously to secure work, are inadvertently sending tasks and prompt instructions directly to other AI systems. This phenomenon highlights the risks of agentic workflows where human and machine intent blurs within automation pipelines, leading to recursive task loops and unexpected cross-agent communication. Developers must move beyond simple input sanitization and implement stricter boundary checks. For builders designing agentic systems, the takeaway is to explicitly validate the destination of generated outputs to prevent automated agents from wasting resources on, or interacting with, other autonomous AI workers."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-14T20:31:32.114Z"
+  },
+  {
     "id": "art-1794687442284-cxelf",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -5556,59 +5661,6 @@
     "created_at": "2026-11-14T06:02:32.669Z"
   },
   {
-    "id": "art-1794636144455-9i1n8",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/x_kei_x/n/n8f7d721325f8",
-    "published_at": "2026-11-14T05:18:21.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/323640287/rectangle_large_type_2_b704562e752f8472f050ad726f91d889.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI活用のお酒記録アプリ開発、写真撮影から自動登録を実現するまでの実装と技術的アプローチ",
-    "summary_ja": "AIを活用した個人の飲酒記録アプリ開発において、撮影したお酒の写真を認識し、アプリ上に自動表示させる機能の実装に成功した。 AIを開発パートナーとして活用することで、画像認識とデータベース連携を迅速に統合し、手軽な記録体験を実現している。 個人開発でプロダクトを形にする際、AIによるコーディング支援をどう実用的なUXに落とし込むかが、完成度を高める重要なステップとなる。",
-    "translations": {
-      "ja": {
-        "title": "AI活用のお酒記録アプリ開発、写真撮影から自動登録を実現するまでの実装と技術的アプローチ",
-        "summary": "AIを活用した個人の飲酒記録アプリ開発において、撮影したお酒の写真を認識し、アプリ上に自動表示させる機能の実装に成功した。 AIを開発パートナーとして活用することで、画像認識とデータベース連携を迅速に統合し、手軽な記録体験を実現している。 個人開発でプロダクトを形にする際、AIによるコーディング支援をどう実用的なUXに落とし込むかが、完成度を高める重要なステップとなる。"
-      },
-      "en": {
-        "title": "Building an AI-powered alcohol logging app: Implementing seamless photo-to-auto-registration features for better UX",
-        "summary": "A solo developer has reached a key milestone in creating an AI-integrated alcohol logging application by successfully implementing an automated photo recognition feature that displays drinks immediately after they are photographed. By utilizing AI as a core development partner, the builder integrated image recognition logic with the backend database, ensuring that users can log their drinks with minimal friction. This progress highlights how leveraging AI for coding assistance is not just about writing syntax, but about translating complex features into intuitive, functional user experiences. For solo builders, the lesson is clear: embedding smart automation into the core data entry workflow is the most effective way to validate and mature an early-stage hobby project into a usable, polished application."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-14T06:02:24.455Z"
-  },
-  {
-    "id": "art-1794636126804-asyus",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ral547/n/n5eaa060d218b",
-    "published_at": "2026-11-14T05:24:48.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335948241/rectangle_large_type_2_2cfb8cd3206fac282b0389ae4cb51bf4.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "『Ashes & Aces』入口改善の完遂 ― OGP整備と動線最適化によるフェーズ1の完了報告",
-    "summary_ja": "個人開発ゲーム『Ashes & Aces』は、直近28日間でアクティブユーザーが26人という現状を踏まえ、新規プレイヤーの離脱を防ぐための入口改善施策をすべて完了させた。 能力解放の調整に加え、初見ユーザーを迷わせない一本道のゲームルール提示、そしてSNS共有時のOGP最適化を1週間で実装し、サービス改善の第1フェーズを完結させた。 開発初期のプロダクトでは、ユーザーの入り口となる動線や「見え方」を徹底して磨くことが、コミュニティ形成の第一歩となる。",
-    "translations": {
-      "ja": {
-        "title": "『Ashes & Aces』入口改善の完遂 ― OGP整備と動線最適化によるフェーズ1の完了報告",
-        "summary": "個人開発ゲーム『Ashes & Aces』は、直近28日間でアクティブユーザーが26人という現状を踏まえ、新規プレイヤーの離脱を防ぐための入口改善施策をすべて完了させた。 能力解放の調整に加え、初見ユーザーを迷わせない一本道のゲームルール提示、そしてSNS共有時のOGP最適化を1週間で実装し、サービス改善の第1フェーズを完結させた。 開発初期のプロダクトでは、ユーザーの入り口となる動線や「見え方」を徹底して磨くことが、コミュニティ形成の第一歩となる。"
-      },
-      "en": {
-        "title": "Personal game 'Ashes & Aces' completes Phase 1 user onboarding overhaul, including OGP and flow optimization",
-        "summary": "Following a report that active users over the past 28 days totaled just 26, the developer of 'Ashes & Aces' has executed a comprehensive suite of onboarding improvements. This update completes 'Phase 1' of their improvement roadmap, covering capability unlocking adjustments, a simplified linear flow to eliminate confusion for new players, and fully implemented social sharing OGP previews. By resolving these entry-point friction points within one week, the project aims to stabilize the initial user experience. For solo builders, this serves as a tactical reminder that refining the first-time user journey and how your product appears on social media is often more critical than adding new features during the early traction stage."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "アップデート"
-    ],
-    "created_at": "2026-11-14T06:02:06.804Z"
-  },
-  {
     "id": "art-1794634326350-qhrgx",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9757,33 +9809,6 @@
       "研究"
     ],
     "created_at": "2026-11-13T15:02:21.955Z"
-  },
-  {
-    "id": "art-1794582127549-cphrl",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11",
-    "published_at": "2026-11-13T14:34:13.000Z",
-    "og_image_url": "https://i.insider.com/6af486880cc3ffba8779beeb?width=1200&format=jpeg",
-    "title_ja": "Anthropicのダリオ・アモデイCEOが「AIが10年以内にがんを治療する」と予言、医療専門家からは現実的な壁とエビデンス欠如で懐疑論が噴出",
-    "summary_ja": "Anthropicのダリオ・アモデイCEOは、AIの発展により10年以内にがんの特効薬や治療法が確立されるとの見通しを示した。 しかし、実際の臨床医や研究者からは、生物学的な複雑さと規制環境を無視した過度な楽観主義であるとの反発が広がっている。 AIを医療の特効薬と見なす前に、現場の開発者は「AIが補助的なツールである」という現実的な境界線を理解し、臨床現場での厳格な評価プロセスを尊重する姿勢が不可欠だ。",
-    "translations": {
-      "ja": {
-        "title": "Anthropicのダリオ・アモデイCEOが「AIが10年以内にがんを治療する」と予言、医療専門家からは現実的な壁とエビデンス欠如で懐疑論が噴出",
-        "summary": "Anthropicのダリオ・アモデイCEOは、AIの発展により10年以内にがんの特効薬や治療法が確立されるとの見通しを示した。 しかし、実際の臨床医や研究者からは、生物学的な複雑さと規制環境を無視した過度な楽観主義であるとの反発が広がっている。 AIを医療の特効薬と見なす前に、現場の開発者は「AIが補助的なツールである」という現実的な境界線を理解し、臨床現場での厳格な評価プロセスを尊重する姿勢が不可欠だ。"
-      },
-      "en": {
-        "title": "Anthropic CEO Dario Amodei predicts AI will cure cancer within a decade, facing pushback from medical professionals skeptical of timeline",
-        "summary": "Anthropic CEO Dario Amodei has publicly claimed that rapid advancements in artificial intelligence will lead to cures for cancer within the next decade, sparking a heated debate. While he frames this as an inevitable acceleration of biological research, the medical community remains deeply skeptical, citing the extreme complexity of oncological treatments, the long timeline of clinical trials, and the rigorous regulatory requirements that cannot simply be \"hacked\" away by LLMs. For developers building in the health-tech space, the takeaway is clear: avoid the hype cycle of treating AI as a magical solution. Instead, maintain a grounded perspective that respects existing medical standards and recognizes AI as a supporting tool rather than a replacement for validated clinical practice."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-13T15:02:07.549Z"
   },
   {
     "id": "art-1794582115897-jhe9y",
@@ -17106,33 +17131,6 @@
       "研究"
     ],
     "created_at": "2026-11-12T01:31:35.143Z"
-  },
-  {
-    "id": "art-1794445312718-jpnlk",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/soloraid/articles/1a3cc3034c6252",
-    "published_at": "2026-11-11T14:16:18.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--GBjEJmMA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2582%2592%25E5%25AE%259A%25E6%259C%259F%25E5%25AE%259F%25E8%25A1%258C%25E3%2581%25A7%25E5%259B%259E%25E3%2581%2599%25E5%2589%258D%25E3%2581%25AB%25E6%25B1%25BA%25E3%2582%2581%25E3%2581%25A6%25E3%2581%258A%25E3%2581%258F%25205%2520%25E3%2581%25A4%25E3%2581%25AE%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Solo%2520Raid%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QyZGJhNWQ1NmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの無人・定期実行で押さえるべき5つの安全策：意図しないコード修正やコスト増を防ぐためのガードレール",
-    "summary_ja": "Claude Codeを日次の脆弱性検知や情報収集など自動化タスクで運用する際、有人対話時とは異なるリスク管理が不可欠となる。 承認ダイアログや異常停止の監視が機能しない無人環境では、実行スコープの制限、コスト上限の厳格な設定、失敗時の通知運用など、5つの事前設計が欠かせない。 CIやGitHub Actionsを問わず適用可能なこのアプローチは、自動生成コードを安全かつ継続的にプロダクションへ導入するための必須の教訓だ。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの無人・定期実行で押さえるべき5つの安全策：意図しないコード修正やコスト増を防ぐためのガードレール",
-        "summary": "Claude Codeを日次の脆弱性検知や情報収集など自動化タスクで運用する際、有人対話時とは異なるリスク管理が不可欠となる。 承認ダイアログや異常停止の監視が機能しない無人環境では、実行スコープの制限、コスト上限の厳格な設定、失敗時の通知運用など、5つの事前設計が欠かせない。 CIやGitHub Actionsを問わず適用可能なこのアプローチは、自動生成コードを安全かつ継続的にプロダクションへ導入するための必須の教訓だ。"
-      },
-      "en": {
-        "title": "5 Safety Rails for Automating Claude Code: Avoiding Unintended Repository Changes and Runaway Costs in Unattended Environments",
-        "summary": "Running Claude Code for automated tasks like daily vulnerability scanning or data collection requires a completely different mindset than interactive CLI usage. Since there is no human present to answer confirmation prompts or halt an aberrant process, you must establish clear safety rails before setting up unattended execution. This guide outlines five critical design patterns—ranging from strict cost caps and execution scope boundaries to robust failure-alerting mechanisms—that apply whether you use GitHub Actions or standard cron jobs. By front-loading these guardrails, builders can prevent the common pitfall of runaway token usage or unintentional production commits, transforming autonomous AI agents into reliable, repeatable backend workers rather than hazardous black boxes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-12T01:01:52.718Z"
   },
   {
     "id": "art-1794444411041-oxxg5",
