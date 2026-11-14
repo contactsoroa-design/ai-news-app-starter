@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794696450971-5bw65",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kobalab_2026/n/n8e50ee39817a",
+    "published_at": "2026-11-14T22:36:23.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336222069/rectangle_large_type_2_75dc77735c9844ad7533f60a90bf5050.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "PythonのWindows日本語文字化け問題：-Iオプション使用時に環境変数「PYTHONUTF8=1」が無効化される仕様の罠",
+    "summary_ja": "Windows環境でPythonの出力が日本語文字化けする際、環境変数「PYTHONUTF8=1」を設定しても解決しないケースがある。 原因はPython実行時の「-I」オプションの使用にあった。 このオプションは環境変数を隔離（無視）するため、UTF-8モードが無効化され、従来のcp932へ強制的に戻ってしまう。 OS標準エンコーディングとPythonモードの関係を正しく理解し、コマンド実行時のオプション仕様を把握しておくことがデバッグの早期解決につながる。",
+    "translations": {
+      "ja": {
+        "title": "PythonのWindows日本語文字化け問題：-Iオプション使用時に環境変数「PYTHONUTF8=1」が無効化される仕様の罠",
+        "summary": "Windows環境でPythonの出力が日本語文字化けする際、環境変数「PYTHONUTF8=1」を設定しても解決しないケースがある。 原因はPython実行時の「-I」オプションの使用にあった。 このオプションは環境変数を隔離（無視）するため、UTF-8モードが無効化され、従来のcp932へ強制的に戻ってしまう。 OS標準エンコーディングとPythonモードの関係を正しく理解し、コマンド実行時のオプション仕様を把握しておくことがデバッグの早期解決につながる。"
+      },
+      "en": {
+        "title": "Python on Windows: Why the -I Flag Silently Overrides PYTHONUTF8=1 and Forces Encoding Issues",
+        "summary": "Developers working with Python on Windows often face Japanese encoding bugs, yet setting the PYTHONUTF8=1 environment variable sometimes fails to fix output issues. The culprit is often the -I flag used during execution. This flag explicitly enables isolated mode, which ignores environment variables, effectively disabling UTF-8 mode and forcing the interpreter to revert to the legacy cp932 encoding. Builders must understand the hierarchy between OS-native encoding settings and Python's runtime flags to avoid these configuration traps. The takeaway is to always verify flag interactions when debugging environment-variable-based behaviors, as isolation modes effectively bypass the standard environment configuration layers that developers usually rely on for encoding normalization."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-14T22:47:30.971Z"
+  },
+  {
+    "id": "art-1794696442900-4vill",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/ai_secretary/articles/cb0d7a24fd0c5a",
+    "published_at": "2026-11-14T22:22:39.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OpfZdl4B--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E3%2581%2593%25E3%2582%258C%25E3%2581%25AF%25E3%2581%2584%25E3%2581%25A4%25E5%258F%258E%25E7%259B%258A%25E3%2582%2592%25E3%2581%2586%25E3%2582%2580%25E3%2581%25AE%25EF%25BC%259F%25E3%2580%258D%2520%25E2%2580%2595%2520%25E7%2584%25A1%25E6%2596%2599%25E8%25A8%2598%25E4%25BA%258B%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E3%2581%25AF%25E5%258F%258E%25E7%259B%258A%25E3%2581%25AF%25E7%2594%259F%25E3%2581%25BE%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2581%25E6%25AE%25B5%25E3%2581%25AE%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E7%25A7%2598%25E6%259B%25B8%25E3%2583%25A9%25E3%2583%259C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzcwNWRiOTM4YWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "「いつ収益化できる？」―無料記事の量産から脱却するための3層ラダー構築術：発信・低単価商品・受託の戦略",
+    "summary_ja": "個人開発のAI記事を15本投稿しても売上がゼロなのは、無料コンテンツという最下層に留まっているからだ。 収益を生むには「発信」→「低単価商品」→「受託」という3層のラダー構造を構築し、段階的に顧客を誘導する必要がある。 単なる無料記事の量産を収益化の手段と誤認せず、どの「段」でマネタイズするかを設計することが、個人開発者がビジネスとして継続するための鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "「いつ収益化できる？」―無料記事の量産から脱却するための3層ラダー構築術：発信・低単価商品・受託の戦略",
+        "summary": "個人開発のAI記事を15本投稿しても売上がゼロなのは、無料コンテンツという最下層に留まっているからだ。 収益を生むには「発信」→「低単価商品」→「受託」という3層のラダー構造を構築し、段階的に顧客を誘導する必要がある。 単なる無料記事の量産を収益化の手段と誤認せず、どの「段」でマネタイズするかを設計することが、個人開発者がビジネスとして継続するための鍵となる。"
+      },
+      "en": {
+        "title": "Why 15 free articles won't make money: Building a 3-tier ladder for AI content monetization",
+        "summary": "Publishing 15 articles for free won't generate revenue because free content sits at the very bottom of the value chain. To actually turn content into income, builders must construct a three-tier ladder: top-of-funnel discovery content leading to low-cost digital products, which eventually upsell into high-value consulting or contract work. Many developers mistakenly believe that consistent, free traffic is the monetization engine itself, but it is merely the acquisition layer. The real lesson for creators is that you must map out a distinct transition strategy between these tiers. Stop treating free articles as a business model; instead, design the funnel so that each piece of content acts as a stepping stone that drives your audience toward a paid conversion point."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-14T22:47:22.900Z"
+  },
+  {
+    "id": "art-1794696436440-c7p37",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Git_Dayori/items/8e9e513c2b5047f65f85",
+    "published_at": "2026-11-14T22:31:08.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDE0MTQwJTJGZWNhZmNiZjMyMzkwOGQ3ODlmNzkyZDUxNTZmZDZlNTVkY2EzNjM0MSUyRnhfbGFyZ2UucG5nJTNGMTc3NjkyMzE3Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTk0ZjU5ZmZjNDczOGQ2ZDUzNDI4Yjc3ZTc2YWFhMGQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D454c3a9a5e0968be2f7a10c3c9f8eb49?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwR2l0SHViJUU2JTk3JUE1JUU1JUEwJUIxJUUzJTgwJTkxQ2hhdEdQVCVFNiU4QiVBMSVFNSVCQyVCNWNoYXQtb24tc3Rlcm9pZHMlRTUlODglOUQlRTclOTklQkIlRTUlQTAlQjQlRTMlODAlODFtb2Rlcm4td2ViLWd1aWRhbmNlJUUzJTgxJThDMiVFNiU5NyVBNSVFOSU4MCVBMyVFNyVCNiU5QSVFOSVBNiU5NiVFNCVCRCU4RCUyMCVFMiU4MCU5NCUyMDIwJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NzUxNTc0Mzk4MjkxYWZmOWJiYzU3MWFlMjc4MWJlZDM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBHaXRfRGF5b3JpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZjI4YjlmMWRhMWM3MjMyODkxYjlmNGVjZDU1N2Q0ZWM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=dded32572c69fdc7211b59060481c391",
+    "title_ja": "GitHub日報：ChatGPT拡張「chat-on-steroids」が初登場、モダンWeb開発指針「modern-web-guidance」が2日連続1位",
+    "summary_ja": "2026年11月15日のGitHubトレンドにおいて、ChatGPTの機能を大幅に強化する新鋭プロジェクト「chat-on-steroids」が星5,100を獲得し、初登場で注目を集めている。 一方、モダンWeb開発の知見をまとめた「modern-web-guidance」が2日連続で首位を堅持しており、開発者の関心がAIツールだけでなくWeb開発のベストプラクティスにも強く向けられていることが伺える。",
+    "translations": {
+      "ja": {
+        "title": "GitHub日報：ChatGPT拡張「chat-on-steroids」が初登場、モダンWeb開発指針「modern-web-guidance」が2日連続1位",
+        "summary": "2026年11月15日のGitHubトレンドにおいて、ChatGPTの機能を大幅に強化する新鋭プロジェクト「chat-on-steroids」が星5,100を獲得し、初登場で注目を集めている。 一方、モダンWeb開発の知見をまとめた「modern-web-guidance」が2日連続で首位を堅持しており、開発者の関心がAIツールだけでなくWeb開発のベストプラクティスにも強く向けられていることが伺える。"
+      },
+      "en": {
+        "title": "GitHub Daily: ChatGPT extension 'chat-on-steroids' debuts as 'modern-web-guidance' retains top spot for second day",
+        "summary": "In the GitHub trending charts for November 15, 2026, the newly released ChatGPT enhancement project 'chat-on-steroids' made a massive splash, garnering 5,100 stars on its first day of entry. Meanwhile, 'modern-web-guidance,' a repository centralizing best practices for contemporary web development, successfully held the number one position for two consecutive days. This dynamic highlights a dual interest among developers: rapidly iterating on AI-augmented tooling while simultaneously seeking rigorous standards for web architecture. For developers, monitoring these shifts in repository rankings is an essential signal, offering a direct view into which emerging technologies and architectural patterns are gaining genuine industry traction, helping teams decide where to allocate their focus for the coming sprint."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-14T22:47:16.440Z"
+  },
+  {
+    "id": "art-1794696425869-csdty",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/sane_guppy1591/n/n15c3a6601b75",
+    "published_at": "2026-11-14T22:37:38.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336222272/rectangle_large_type_2_1bc0ba6eeeff56490aa0007894800053.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "ビットコイン暴落中の自動取引ボット運用録：第3陣Maker買いと3時間クールダウンで1,013万円の底割れ局面を回避した全記録",
+    "summary_ja": "ビットコインが初日比で260万円下落し1,013万円を記録する中、稼働11日目のボット運用を詳細に解説。 第3陣のMaker買いによるポジション構築と、マイナス5,111円での迅速な損切り、さらに3時間のクールダウン設定を組み合わせることで、市場の急激な底割れ局面からの生存に成功した。 ボラティリティが極限に達する局面において、損失を最小限に抑えつつ取引を継続するためのリスク管理手法と、機械的な自動売買ロジックの構築プロセスを提示する。",
+    "translations": {
+      "ja": {
+        "title": "ビットコイン暴落中の自動取引ボット運用録：第3陣Maker買いと3時間クールダウンで1,013万円の底割れ局面を回避した全記録",
+        "summary": "ビットコインが初日比で260万円下落し1,013万円を記録する中、稼働11日目のボット運用を詳細に解説。 第3陣のMaker買いによるポジション構築と、マイナス5,111円での迅速な損切り、さらに3時間のクールダウン設定を組み合わせることで、市場の急激な底割れ局面からの生存に成功した。 ボラティリティが極限に達する局面において、損失を最小限に抑えつつ取引を継続するためのリスク管理手法と、機械的な自動売買ロジックの構築プロセスを提示する。"
+      },
+      "en": {
+        "title": "BTC Trading Bot Journal: Surviving a 2.6M JPY Drop with Maker Buy Strategies and 3-Hour Cool-down Logic",
+        "summary": "As Bitcoin plunged 2.6 million yen from its initial day peak to hit 10.13 million yen, this developer log details the 11th day of automated trading operations. By deploying a third wave of Maker buys, executing a precise stop-loss at 5,111 yen, and enforcing a mandatory three-hour cooling-off period, the strategy successfully navigated a critical market floor collapse. This record demonstrates how to maintain liquidity and survive extreme volatility through disciplined risk management and mechanical entry rules. For builders working on high-frequency or crypto trading bots, the takeaway is that strict, automated exit conditions and forced idle states are just as vital for capital preservation as the underlying buy algorithms when the market turns violently bearish."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-14T22:47:05.869Z"
+  },
+  {
     "id": "art-1794695555179-5lgmg",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -5768,58 +5872,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-14T07:46:42.137Z"
-  },
-  {
-    "id": "art-1794641561194-x5doh",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yossibank/n/n707a74fe5308",
-    "published_at": "2026-11-14T07:27:56.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/d7667a134b998b412d34e8bb9b710a109264ea06.png",
-    "title_ja": "iPhone標準UIだけでは限界？家計簿アプリ開発で直面したUXの壁と、独自コンポーネント実装の重要性",
-    "summary_ja": "iPhoneアプリ開発においてApple純正の標準部品は安心感があるものの、家計簿のような頻繁な入力が求められる用途では操作性が追いつかない。 標準のフォームや日付選択機能だけで画面を構成すると、入力の回数が多くなる家計簿ではユーザーにストレスを与えてしまう。 標準機能に頼り切らず、アプリ特有の操作フローに合わせてUIを再設計し、独自コンポーネントを導入することが、継続率を高めるUX改善の第一歩となる。",
-    "translations": {
-      "ja": {
-        "title": "iPhone標準UIだけでは限界？家計簿アプリ開発で直面したUXの壁と、独自コンポーネント実装の重要性",
-        "summary": "iPhoneアプリ開発においてApple純正の標準部品は安心感があるものの、家計簿のような頻繁な入力が求められる用途では操作性が追いつかない。 標準のフォームや日付選択機能だけで画面を構成すると、入力の回数が多くなる家計簿ではユーザーにストレスを与えてしまう。 標準機能に頼り切らず、アプリ特有の操作フローに合わせてUIを再設計し、独自コンポーネントを導入することが、継続率を高めるUX改善の第一歩となる。"
-      },
-      "en": {
-        "title": "Why standard Apple UI components fall short for finance apps and how custom design drives better UX",
-        "summary": "When building iOS apps, developers often rely on standard Apple UI components for their familiar design and native feel. However, for a household finance app requiring frequent, fast data entry, these generic forms and date selectors often become a bottleneck, creating unnecessary friction for the user. Relying solely on default components leads to a rigid flow that feels cumbersome when users need to log expenses quickly. The real lesson for indie developers is to recognize when standard UI patterns hit their limit. Designing custom input components tailored specifically to the user's workflow, rather than just stacking stock UI elements, is the critical step to building high-retention finance applications that feel genuinely intuitive to use daily."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-14T07:32:41.194Z"
-  },
-  {
-    "id": "art-1794641545734-swkz8",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kuruinu_crazydog/n/n3e0cfde09b39",
-    "published_at": "2026-11-14T07:28:24.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/334695632/profile_d6e59ecd6ac331ab1937fa29abd3a899.png?fit=bounds&format=jpeg&quality=85&width=330",
-    "title_ja": "AIアプリ開発でストア審査を確実に通す「12の点検項目」―権限設定やAI機能の申告不備による差し戻しを徹底回避する",
-    "summary_ja": "個人開発アプリがストア審査で落ちる主な原因はコード品質ではなく、権限説明やプライバシーポリシー、AI機能の申告不備といった「事務的手続き」のミスだ。 AI支援で作成したアプリや外部AIを組み込んだアプリ特有の審査基準は特に厳しく、不適切な回答で差し戻されるケースが後を絶たない。 本書は、リリース前に必ず確認すべき12のチェックリストを公開し、特にAI関連の申告ミスが起きやすい項目を重点的に解説する。",
-    "translations": {
-      "ja": {
-        "title": "AIアプリ開発でストア審査を確実に通す「12の点検項目」―権限設定やAI機能の申告不備による差し戻しを徹底回避する",
-        "summary": "個人開発アプリがストア審査で落ちる主な原因はコード品質ではなく、権限説明やプライバシーポリシー、AI機能の申告不備といった「事務的手続き」のミスだ。 AI支援で作成したアプリや外部AIを組み込んだアプリ特有の審査基準は特に厳しく、不適切な回答で差し戻されるケースが後を絶たない。 本書は、リリース前に必ず確認すべき12のチェックリストを公開し、特にAI関連の申告ミスが起きやすい項目を重点的に解説する。"
-      },
-      "en": {
-        "title": "The 12-Point Pre-Submission Checklist for AI-Driven Apps to Avoid App Store Rejection and Delayed Launches",
-        "summary": "App store rejections are rarely about code quality and almost always about procedural errors, such as vague permission descriptions, mismatched privacy declarations, or improper AI feature disclosures. For developers using AI assistants or building AI-enabled apps, these administrative hurdles are critical bottlenecks. This article provides a 12-point checklist specifically designed to navigate these approval traps, focusing heavily on the sections where AI-powered applications most frequently get flagged or returned. By systematically verifying privacy protocols, age ratings, and the specific declarations required for generative AI implementations, you can bypass the common pitfalls that stall indie app releases. This guide serves as a practical final review step to ensure your AI-powered build passes store compliance reviews on the very first try."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-14T07:32:25.734Z"
   },
   {
     "id": "art-1794641532657-9reff",
@@ -12172,32 +12224,6 @@
     "created_at": "2026-11-13T06:16:53.371Z"
   },
   {
-    "id": "art-1794549736587-2cxs1",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/softbrixai1/items/1edaab457a9e8d2129c3",
-    "published_at": "2026-11-13T05:59:32.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTMwOTA2JTJGNzVlN2NmNjNhYWM3Nzg1NTAyZmNlZDY3M2Q1NGQxYzZlYWI5ZTNhNSUyRnhfbGFyZ2UucG5nJTNGMTc5NDQwMjM1NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NDg3MjA5OTNhN2M1ZTYyYWRjNjFkNTM1NzYxZmE5OTU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D0a7c6f0b23e489be0327073fab694523?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q3Jvc3MtVmFsaWRhdGlvbiUyMGluJTIwTWFjaGluZSUyMExlYXJuaW5nJTNBJTIwSG93JTIwSy1Gb2xkJTJDJTIwU3RyYXRpZmllZCUyQyUyMGFuZCUyMFRpbWUtU2VyaWVzJTIwU3BsaXRzJTIwV29yayZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTE4ZDg5NmU5Njk3NTg4YzU1YzE2ODgzZWJjZTdmNjFm&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzb2Z0YnJpeGFpMSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTcxZjQ5ZDllNTYxMWRkNThhYzA4ZDk1N2Q4YzllYjFi&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a043d4b2f665b60e54892b3bc981790b",
-    "title_ja": "機械学習モデルの汎化性能を最大化する「交差検証（Cross-Validation）」の最適解：K-Fold、層化、時系列分割の使い分けを徹底解説",
-    "summary_ja": "機械学習の汎化性能を検証する際、単一のデータ分割に頼る手法は過学習や評価の偏りを招く危険がある。 本記事では、汎用的なK-Fold法、クラス比率を維持する層化（Stratified）K-Fold、そして時間的な依存関係を考慮すべき時系列データの分割手法という3つの主要アプローチを整理。 各手法の仕組みとデータ特性に応じた選択基準を理解することで、モデル開発の信頼性を高め、実運用環境での予期せぬ精度低下を防ぐための実践的スキルを習得できる。",
-    "translations": {
-      "ja": {
-        "title": "機械学習モデルの汎化性能を最大化する「交差検証（Cross-Validation）」の最適解：K-Fold、層化、時系列分割の使い分けを徹底解説",
-        "summary": "機械学習の汎化性能を検証する際、単一のデータ分割に頼る手法は過学習や評価の偏りを招く危険がある。 本記事では、汎用的なK-Fold法、クラス比率を維持する層化（Stratified）K-Fold、そして時間的な依存関係を考慮すべき時系列データの分割手法という3つの主要アプローチを整理。 各手法の仕組みとデータ特性に応じた選択基準を理解することで、モデル開発の信頼性を高め、実運用環境での予期せぬ精度低下を防ぐための実践的スキルを習得できる。"
-      },
-      "en": {
-        "title": "Optimizing ML Generalization: A Deep Dive into Cross-Validation Strategies Using K-Fold, Stratified, and Time-Series Splits",
-        "summary": "Relying on a single train-test split often masks overfitting and leads to unreliable performance estimates in machine learning models. This guide breaks down the three essential validation strategies: standard K-Fold for general tasks, Stratified K-Fold for maintaining class distributions in imbalanced datasets, and Time-Series splits for handling temporal dependencies. By mastering the mechanisms of each approach, builders can select the appropriate validation framework to ensure model robustness. Implementing these techniques prevents skewed evaluation metrics, providing a realistic view of how your model will perform in production environments. Ultimately, precise data partitioning is not just about avoiding errors; it is the fundamental gatekeeper for deploying models that remain performant and dependable as data distributions shift over time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-13T06:02:16.587Z"
-  },
-  {
     "id": "art-1794548858529-24e5o",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -16099,32 +16125,6 @@
       "開発"
     ],
     "created_at": "2026-11-12T10:16:51.558Z"
-  },
-  {
-    "id": "art-1794477740462-ikhoj",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/bague/articles/0559b1600accda",
-    "published_at": "2026-11-12T03:02:39.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1EMbL06l--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Chrome%25E6%258B%25A1%25E5%25BC%25B5%25E3%2581%25A7%25E3%2580%2581AI%25E3%2581%25AB%25E9%2580%2581%25E3%2582%258B%25E7%259B%25B4%25E5%2589%258D%25E3%2581%25AB%25E8%25A8%2598%25E6%2586%25B6%25E3%2582%2592%25E5%25B7%25AE%25E3%2581%2597%25E8%25BE%25BC%25E3%2582%2580%25EF%25BC%259A%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AE%25E6%25A8%25A9%25E9%2599%2590%25E3%2581%25A8%25E3%2580%258C%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%2583%25E3%2582%25AF%25E6%2599%2582%25E3%2581%25AE%25E3%2581%25BF%25E3%2580%258D%25E3%2581%25AE%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2597%25E7%25A9%25B4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:BAGUE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E0MTc0YTYyODAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Chrome拡張でAIに記憶を差し込む仕組みと権限管理の落とし穴—「クリック時のみ」を選択すると発生する深刻な動作制限とは",
-    "summary_ja": "ブラウザ拡張機能で「送信直前にAIへ関連記憶を差し込む」仕組みを実装する際、最も障壁となるのはサイトごとのアクセス権限管理だ。 特にChrome拡張で「クリック時のみ」という最小権限を選択すると、想定以上に広範囲のサイトで機能が遮断されるという落とし穴がある。 開発者は機能実装そのものよりも、ホスト権限の切り分けや manifest.json の設計において、UXを損なわずに安全性と動作範囲を両立させる緻密な設計が求められる。",
-    "translations": {
-      "ja": {
-        "title": "Chrome拡張でAIに記憶を差し込む仕組みと権限管理の落とし穴—「クリック時のみ」を選択すると発生する深刻な動作制限とは",
-        "summary": "ブラウザ拡張機能で「送信直前にAIへ関連記憶を差し込む」仕組みを実装する際、最も障壁となるのはサイトごとのアクセス権限管理だ。 特にChrome拡張で「クリック時のみ」という最小権限を選択すると、想定以上に広範囲のサイトで機能が遮断されるという落とし穴がある。 開発者は機能実装そのものよりも、ホスト権限の切り分けや manifest.json の設計において、UXを損なわずに安全性と動作範囲を両立させる緻密な設計が求められる。"
-      },
-      "en": {
-        "title": "Building Chrome Extensions to Inject AI Context: Why the 'On Click' Permission Model Often Breaks Core Functionality",
-        "summary": "When building Chrome extensions to inject external memory into AI prompts, the core technical challenge shifts from the injection logic to managing host permissions effectively. Developers often run into a significant pitfall: selecting the 'On Click' permission setting can unintentionally restrict access across unexpectedly wide site ranges, breaking the extension's ability to trigger reliably. Navigating host permissions within manifest.json is not just a security formality; it is a critical UX hurdle that defines when your extension actually sees the data it needs to function. For builders, the lesson is clear: balancing granular, 'on-demand' permission requests with the need for persistent access is essential to preventing silent failures that only surface after production deployment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-12T10:02:20.462Z"
   },
   {
     "id": "art-1794476806049-1851c",
