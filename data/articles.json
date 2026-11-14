@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794675769674-eg7uz",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/hello_jun_log/articles/ship-without-the-ai-feature",
+    "published_at": "2026-11-14T14:01:48.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---uT-bxlW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%258C%25E7%25B5%2582%25E3%2582%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258BAI%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%2592%25E3%2580%2581v1.0%25E3%2581%25A7%25E3%2581%25AF%25E5%2587%25BA%25E3%2581%2595%25E3%2581%25AA%25E3%2581%2584%25E3%2581%2593%25E3%2581%25A8%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Jun%25EF%25BD%259CAsk%2520First%2520%25E9%2596%258B%25E7%2599%25BA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I1OTE3YzMyNzguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発の英語学習アプリv1.0で「実装済みのAI添削」をあえて非公開にした戦略的判断と、リリース後に機能を追加する合理的理由",
+    "summary_ja": "個人開発の英語学習アプリをリリースする際、Geminiを活用した英文添削機能を実装済みにもかかわらず、v1.0では非公開とする判断を下した。 理由はセキュリティ対策が不十分なCloud Functionの保護や、OTA更新に伴うリスクの回避など多岐にわたる。 せっかく作り込んだ機能を削ることは一見非合理的だが、開発初期のセキュリティリスクや保守コストを管理し、後から安全に機能を開放するほうが、プロダクトの生存率を高めるとの戦略的結論である。",
+    "translations": {
+      "ja": {
+        "title": "個人開発の英語学習アプリv1.0で「実装済みのAI添削」をあえて非公開にした戦略的判断と、リリース後に機能を追加する合理的理由",
+        "summary": "個人開発の英語学習アプリをリリースする際、Geminiを活用した英文添削機能を実装済みにもかかわらず、v1.0では非公開とする判断を下した。 理由はセキュリティ対策が不十分なCloud Functionの保護や、OTA更新に伴うリスクの回避など多岐にわたる。 せっかく作り込んだ機能を削ることは一見非合理的だが、開発初期のセキュリティリスクや保守コストを管理し、後から安全に機能を開放するほうが、プロダクトの生存率を高めるとの戦略的結論である。"
+      },
+      "en": {
+        "title": "Why I intentionally disabled finished AI features in my indie app's v1.0 launch to manage security and deployment risks",
+        "summary": "For the v1.0 launch of my new English learning app, I made the deliberate decision to strip out a fully implemented Gemini-powered proofreading feature and OTA updates. While the code is ready, I gated these features behind environment variables to prevent premature exposure. The move stems from security concerns regarding unsecured Cloud Functions and the potential overhead of managing OTA deployments this early in the product lifecycle. Rather than shipping unfinished, vulnerable implementations that invite unnecessary technical debt and security risks, I chose to delay these until the infrastructure is hardened. For indie builders, the takeaway is that shipping lean, secure v1.0 code often outweighs the temptation to include every complex feature you have already finished building."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-14T17:02:49.674Z"
+  },
+  {
+    "id": "art-1794675725012-wd4vu",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/fumi3333/articles/bedrock-server-oracle-arm-free",
+    "published_at": "2026-11-14T14:27:18.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3OUBp8Te--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Oracle%2520Cloud%25EF%25BC%2588ARM%25EF%25BC%2589%25E3%2581%25A7%25E3%2580%2581%25E7%25B5%25B1%25E5%2590%2588%25E7%2589%2588%2520Minecraft%2520%25E3%2581%25AE%252024%2520%25E6%2599%2582%25E9%2596%2593%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%2592%25E7%25AB%258B%25E3%2581%25A6%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fumi3333%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyMGFlODBkMmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Oracle Cloud無料枠でMinecraft統合版24時間サーバーを構築、学生サークルの交流拠点化へ。コストゼロ運用の全記録",
+    "summary_ja": "大学サークルの交流拠点として、Oracle CloudのAlways Free（ARMインスタンス）を活用し、Minecraft統合版（Bedrock）の24時間サーバーを構築した。 アカウント開設から接続確認まで約3日間で完了し、インフラ費用は現在ゼロ円である。 物理サーバーを購入することなくクラウドの無料枠をフル活用するアプローチは、学生プロジェクトや個人開発のPoCにおいて、予算の壁を突破する有効な戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "Oracle Cloud無料枠でMinecraft統合版24時間サーバーを構築、学生サークルの交流拠点化へ。コストゼロ運用の全記録",
+        "summary": "大学サークルの交流拠点として、Oracle CloudのAlways Free（ARMインスタンス）を活用し、Minecraft統合版（Bedrock）の24時間サーバーを構築した。 アカウント開設から接続確認まで約3日間で完了し、インフラ費用は現在ゼロ円である。 物理サーバーを購入することなくクラウドの無料枠をフル活用するアプローチは、学生プロジェクトや個人開発のPoCにおいて、予算の壁を突破する有効な戦略となる。"
+      },
+      "en": {
+        "title": "Building a 24/7 Minecraft Bedrock server for zero cost on Oracle Cloud Always Free for student communities",
+        "summary": "To establish a permanent collaborative space for a university club, the author deployed a 24/7 Minecraft Bedrock server utilizing Oracle Cloud’s 'Always Free' ARM instances. The entire process, from initial account registration to verifying external access from home PCs, was completed within three days at zero infrastructure cost. By leveraging free cloud tiers instead of purchasing physical hardware, the project demonstrates a highly practical blueprint for students and independent developers to bypass financial barriers while launching persistent collaborative environments. This serves as a strong reminder that robust cloud infrastructure can be provisioned for free, provided developers are willing to navigate the specific configuration requirements of cloud-native free-tier offerings to host essential community services."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-14T17:02:05.012Z"
+  },
+  {
+    "id": "art-1794675702782-b5lgi",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/soudan_soyogi/n/n53aa1e5c84f5",
+    "published_at": "2026-11-14T16:45:22.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335500409/rectangle_large_type_2_63e12a46df607619f0dda69d44b18c4f.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "メタバース空間「そよぎ」が新機能「カンファレンスルーム」を実装。匿名利用可能な無料ラウンジとイベント用シェルターを状況に応じて柔軟に切り替え運用",
+    "summary_ja": "介護・支援相談プラットフォーム「そよぎ」は、メタバース空間内に「カンファレンスルーム」を新設した。 普段は誰もが匿名で気軽に利用できる無料ラウンジとして機能し、イベント開催時にはプライバシーが守られたシェルターへと役割を変える可変的な設計を採用。 デジタルコミュニティにおいて、交流の活発化と心理的安全性の確保を両立させるための空間設計モデルとして、他のバーチャル空間構築の参考になる事例だ。",
+    "translations": {
+      "ja": {
+        "title": "メタバース空間「そよぎ」が新機能「カンファレンスルーム」を実装。匿名利用可能な無料ラウンジとイベント用シェルターを状況に応じて柔軟に切り替え運用",
+        "summary": "介護・支援相談プラットフォーム「そよぎ」は、メタバース空間内に「カンファレンスルーム」を新設した。 普段は誰もが匿名で気軽に利用できる無料ラウンジとして機能し、イベント開催時にはプライバシーが守られたシェルターへと役割を変える可変的な設計を採用。 デジタルコミュニティにおいて、交流の活発化と心理的安全性の確保を両立させるための空間設計モデルとして、他のバーチャル空間構築の参考になる事例だ。"
+      },
+      "en": {
+        "title": "Metaverse platform Soyogi launches flexible 'Conference Room' that pivots between anonymous free lounges and secure event shelters",
+        "summary": "The care and support platform 'Soyogi' has introduced a new 'Conference Room' within its metaverse space, designed to adapt dynamically to user needs. In daily operation, the room functions as an anonymous, free-to-use digital lounge for casual interaction, but it can be toggled into a secure, private shelter environment during specific events. This dual-use architecture demonstrates an effective strategy for balancing community engagement with necessary psychological safety within virtual environments. For platform builders, this implementation offers a practical blueprint for designing flexible spaces that maintain inclusivity while providing users with controlled, safe boundaries during sensitive or large-scale digital gatherings."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-14T17:01:42.782Z"
+  },
+  {
+    "id": "art-1794675694409-2tecw",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+    "published_at": "2026-11-14T16:52:24.000Z",
+    "og_image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang-nvidia.jpg?w=1024",
+    "title_ja": "NVIDIAジェンスン・フアン氏退任の衝撃、AIスタートアップ界隈で資金調達の「巨大な穴」が浮き彫りに",
+    "summary_ja": "NVIDIAのジェンスン・フアン氏退任というニュースを受け、AIスタートアップ業界では投資家と起業家の双方に大きな動揺が広がっている。 フアン氏の強力なリーダーシップとNVIDIAのハードウェア戦略はAIエコシステムを牽引してきたが、そのカリスマ不在が投資家に「AIバブル」への警戒心を再燃させた。 現在は資金調達環境が急速に冷え込んでおり、特にハードウェア依存度の高いプロジェクトは今後の戦略修正を迫られている。",
+    "translations": {
+      "ja": {
+        "title": "NVIDIAジェンスン・フアン氏退任の衝撃、AIスタートアップ界隈で資金調達の「巨大な穴」が浮き彫りに",
+        "summary": "NVIDIAのジェンスン・フアン氏退任というニュースを受け、AIスタートアップ業界では投資家と起業家の双方に大きな動揺が広がっている。 フアン氏の強力なリーダーシップとNVIDIAのハードウェア戦略はAIエコシステムを牽引してきたが、そのカリスマ不在が投資家に「AIバブル」への警戒心を再燃させた。 現在は資金調達環境が急速に冷え込んでおり、特にハードウェア依存度の高いプロジェクトは今後の戦略修正を迫られている。"
+      },
+      "en": {
+        "title": "Jensen Huang’s departure from NVIDIA creates massive uncertainty and funding gaps for AI startups",
+        "summary": "The news of Jensen Huang’s departure from NVIDIA has sent shockwaves through the tech sector, leaving investors and founders scrambling as they anticipate a massive funding gap for AI startups. Huang’s visionary leadership and singular grip on hardware roadmaps were the bedrock of the current AI boom, and his exit has rekindled deep-seated investor skepticism regarding the sustainability of the industry. The venture capital market is cooling rapidly, leaving projects heavily reliant on specific NVIDIA hardware cycles vulnerable to immediate pivots. For builders, this shift underscores the urgent need to decouple product roadmaps from hardware-specific dependency. Moving forward, sustainable business models must prioritize architectural versatility and long-term defensibility over simple leverage of NVIDIA's current GPU dominance to survive the tightening liquidity cycle."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-14T17:01:34.409Z"
+  },
+  {
     "id": "art-1794674814876-cz4kd",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -5377,32 +5481,6 @@
     "created_at": "2026-11-14T03:01:51.902Z"
   },
   {
-    "id": "art-1794625302916-qsodc",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/asobot_app/n/n31ccabc2261f",
-    "published_at": "2026-11-14T03:01:14.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335752660/rectangle_large_type_2_d7e9e3d656e5091c6fadc2fba14ea649.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "観光ガイドアプリ「asobot」開発の舞台裏：歴史解説とAIイラスト生成を組み合わせた旅の体験価値向上への挑戦",
-    "summary_ja": "観光ガイドアプリ「asobot」は、訪問先で歴史や逸話を聞けるだけでなく、Wikimedia Commonsの写真をベースにAIで生成したイラストをUIに採用し、没入感のある旅体験を提供している。 技術面ではAIによるコンテンツ生成とロケーション情報をどう結びつけるかが課題となるが、単なる情報提供を超え「物語」を届けるUX設計が、差別化を図るための重要な戦略となっている。",
-    "translations": {
-      "ja": {
-        "title": "観光ガイドアプリ「asobot」開発の舞台裏：歴史解説とAIイラスト生成を組み合わせた旅の体験価値向上への挑戦",
-        "summary": "観光ガイドアプリ「asobot」は、訪問先で歴史や逸話を聞けるだけでなく、Wikimedia Commonsの写真をベースにAIで生成したイラストをUIに採用し、没入感のある旅体験を提供している。 技術面ではAIによるコンテンツ生成とロケーション情報をどう結びつけるかが課題となるが、単なる情報提供を超え「物語」を届けるUX設計が、差別化を図るための重要な戦略となっている。"
-      },
-      "en": {
-        "title": "Building 'asobot': How developers are blending AI-generated historical illustrations with location-based storytelling to upgrade modern travel guides",
-        "summary": "The travel guide app 'asobot' is redefining how tourists interact with destinations by combining historical storytelling with unique visual experiences. The developers leverage AI to transform photographs from Wikimedia Commons into immersive illustrations, creating a cohesive visual narrative for users as they explore specific sites. Beyond simple location data, the core mission is to inject narrative depth into the travel experience through thoughtful UX design. For builders creating location-aware services, this project highlights a critical lesson: integrating AI not just for data retrieval, but for creative world-building, turns a functional utility into a compelling, story-driven product that offers significant value beyond standard maps or generic informational text."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-14T03:01:42.916Z"
-  },
-  {
     "id": "art-1794625295069-pfjde",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -10099,32 +10177,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-13T10:47:05.239Z"
-  },
-  {
-    "id": "art-1794565951491-8yt0g",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.ycombinator.com/item?id=50481227",
-    "published_at": "2026-11-13T10:20:59.000Z",
-    "og_image_url": null,
-    "title_ja": "AI生成コンテンツ全盛時代に「人が書いた本」の価値は維持されるのか？執筆を終えた著者の苦悩とコミュニティの議論",
-    "summary_ja": "1年半かけて書籍を執筆した著者が、AI生成コンテンツの精度に圧倒され、自身の「手書き」作品の価値に疑問を抱いている。 この問いは、自動化ツールが普及する中で「人間独自の表現」や「魂」をどう評価すべきかという議論をコミュニティに投げかけている。 開発者やクリエイターは、完璧さや効率性だけで評価するAIではなく、文脈や人生経験に基づくナラティブこそが、飽和する情報環境での差別化要因になると再認識する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AI生成コンテンツ全盛時代に「人が書いた本」の価値は維持されるのか？執筆を終えた著者の苦悩とコミュニティの議論",
-        "summary": "1年半かけて書籍を執筆した著者が、AI生成コンテンツの精度に圧倒され、自身の「手書き」作品の価値に疑問を抱いている。 この問いは、自動化ツールが普及する中で「人間独自の表現」や「魂」をどう評価すべきかという議論をコミュニティに投げかけている。 開発者やクリエイターは、完璧さや効率性だけで評価するAIではなく、文脈や人生経験に基づくナラティブこそが、飽和する情報環境での差別化要因になると再認識する必要がある。"
-      },
-      "en": {
-        "title": "Does human-written prose retain value in the AI era? A developer weighs the worth of authentic creative work against synthetic perfection",
-        "summary": "After spending eighteen months completing a manuscript, an author is questioning if human-written work still holds value compared to AI-generated prose. This dilemma touches a raw nerve among tech builders and creatives who watch automation tools achieve faster, often more \"perfect\" results than human effort. The core debate centers on whether readers ultimately prioritize mechanical precision or the genuine context, life experience, and deliberate narrative voice that only a human author can provide. For creators, the takeaway is clear: while AI can commoditize structure and information, it cannot replicate the specific intentionality of human labor. Focusing on authenticity remains the strongest competitive advantage when synthetic content threatens to drown out human voice in the marketplace."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-13T10:32:31.491Z"
   },
   {
     "id": "art-1794565936193-kvc05",
@@ -16711,33 +16763,6 @@
     "created_at": "2026-11-12T04:17:02.430Z"
   },
   {
-    "id": "art-1794457008447-bzfr5",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/zeroyen_dev/books/note-10000-count",
-    "published_at": "2026-11-11T21:39:00.000Z",
-    "og_image_url": "https://static.zenn.studio/images/logo-only-dark.png",
-    "title_ja": "note市場の徹底分析：1,313件の有料記事を定量調査してわかった「売れる」構成要素と無料部分の最適設計",
-    "summary_ja": "個人開発者がnoteでの収益化を目指し、1,313件の有料記事と846人の書き手を対象に価格、無料公開部分の長さ、販売部数などの相関関係を独自に調査した。 分析の結果、無料部分の戦略的な構成と投稿頻度が収益に直結する傾向が浮き彫りになった。 AIによる自動生成での失敗経験も踏まえ、これからnoteでコンテンツ販売を行う開発者は、単なる量産ではなく市場ニーズに合わせた設計が不可欠である。 本データセットは、再現性の高い販売戦略を構築するための貴重な指標となる。",
-    "translations": {
-      "ja": {
-        "title": "note市場の徹底分析：1,313件の有料記事を定量調査してわかった「売れる」構成要素と無料部分の最適設計",
-        "summary": "個人開発者がnoteでの収益化を目指し、1,313件の有料記事と846人の書き手を対象に価格、無料公開部分の長さ、販売部数などの相関関係を独自に調査した。 分析の結果、無料部分の戦略的な構成と投稿頻度が収益に直結する傾向が浮き彫りになった。 AIによる自動生成での失敗経験も踏まえ、これからnoteでコンテンツ販売を行う開発者は、単なる量産ではなく市場ニーズに合わせた設計が不可欠である。 本データセットは、再現性の高い販売戦略を構築するための貴重な指標となる。"
-      },
-      "en": {
-        "title": "Quantitative analysis of 1,313 paid note articles reveals the optimal pricing and free preview structures for creator revenue",
-        "summary": "To demystify content monetization, this developer conducted a manual analysis of 1,313 paid articles across 846 creators, tracking specific metrics like pricing tiers, the length of free-to-read previews, and reported sales volume. The findings highlight a clear correlation between strategic free-section architecture and total revenue, effectively debunking the assumption that massive AI-generated output guarantees success. Beyond the raw data, the project documents a failed two-month experiment using AI-managed accounts, serving as a cautionary tale for builders. For those monetizing content, the takeaway is simple: quality-aligned free previews and consistent, deliberate posting strategies outperform sheer volume. The provided Python scripts allow developers to replicate this scraping logic to uncover localized niche trends before launching their own digital products."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "マーケ・集客・ASO",
-      "開発"
-    ],
-    "created_at": "2026-11-12T04:16:48.447Z"
-  },
-  {
     "id": "art-1794456108087-umlgi",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -18431,32 +18456,6 @@
       "研究"
     ],
     "created_at": "2026-11-11T18:16:52.847Z"
-  },
-  {
-    "id": "art-1794420157331-vzhiy",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tatsuackey/articles/2bcead681f00d3",
-    "published_at": "2026-11-11T17:32:35.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pJU6XTOa--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25B1%2580%25E5%259C%25A8%25E8%25AB%2596%25E3%2581%25AB%25E5%259F%25BA%25E3%2581%25A5%25E3%2581%258F%25E5%25A5%2591%25E7%25B4%2584%25E8%25AB%2596%25E7%259A%2584%25E5%258A%259F%25E5%2588%25A9%25E4%25B8%25BB%25E7%25BE%25A9%25E4%25BD%2593%25E7%25B3%25BB%25E3%2583%25AA%25E3%2583%2595%25E3%2582%25A1%25E3%2583%25AC%25E3%2583%25B3%25E3%2582%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%25A3%25E3%2581%258D%25E3%2583%25BC%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2x2UjF6Q3pHQ1hBRjM1OWN2QnpKN1dCdWtJQXdBWE9iM0tmSnF6aGRieWdSdERwND1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "局在論に基づく契約論的功利主義体系リファレンスv1.4公開：一人称主観効用と意思決定階層から目的関数を導出する包括的数理フレームワーク",
-    "summary_ja": "本リファレンスは、客観的視点を排し、一人称の特異点における主観的効用最大化を絶対公理とした新たな思想・法学・数理体系である。 神経物理共鳴や意思決定階層を統合し、功利会計や目的関数の導出までを記している。 客観的真理という欺瞞に頼らず、個別の主観から現実の意思決定を演繹する設計は、AIエージェントや複雑系の意思決定モデルを構築するエンジニアにとって、全く新しい倫理的かつ論理的な実装指針となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "局在論に基づく契約論的功利主義体系リファレンスv1.4公開：一人称主観効用と意思決定階層から目的関数を導出する包括的数理フレームワーク",
-        "summary": "本リファレンスは、客観的視点を排し、一人称の特異点における主観的効用最大化を絶対公理とした新たな思想・法学・数理体系である。 神経物理共鳴や意思決定階層を統合し、功利会計や目的関数の導出までを記している。 客観的真理という欺瞞に頼らず、個別の主観から現実の意思決定を演繹する設計は、AIエージェントや複雑系の意思決定モデルを構築するエンジニアにとって、全く新しい倫理的かつ論理的な実装指針となるだろう。"
-      },
-      "en": {
-        "title": "Defining a Contractual Utilitarian System Based on Localization Theory: A Framework for Subjective Utility and Objective Decision-Making Hierarchies",
-        "summary": "This draft details a comprehensive system that rejects traditional third-person objective viewpoints in favor of an absolute axiom based on first-person subjective utility maximization. By integrating neuro-physical resonance, decision-making hierarchies, and utilitarian accounting into a unified objective function, the framework provides a rigorous path for deriving moral and legal outcomes from local individual perspectives. For developers designing AI agents or complex decision-support systems, this framework moves beyond standard statistical optimization, offering a path to build systems that anchor ethics directly in subjective intent rather than abstract, pre-defined objective values. It fundamentally challenges how builders should approach the objective functions powering autonomous logic, forcing a re-evaluation of agency in artificial intelligence."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-11T18:02:37.331Z"
   },
   {
     "id": "art-1794419200875-4hj5a",
