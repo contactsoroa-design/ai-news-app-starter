@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794686570441-ptk5r",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/a1221/articles/json-error-position-own-parser",
+    "published_at": "2026-11-14T14:02:18.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--QbtmUV0n--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:JSON.parse%25E3%2581%25AE%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E4%25BD%258D%25E7%25BD%25AE%25E3%2581%25AF%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25A6%25E3%2582%25B6%25E3%2581%25A7%25E9%2581%2595%25E3%2581%2586%25E3%2580%2582%25E8%2587%25AA%25E5%2589%258D%25E3%2581%25AE%25E6%25A4%259C%25E6%259F%25BB%25E5%2599%25A8%25E3%2581%25A7%25E8%25A1%258C%25E3%2581%25A8%25E5%2588%2597%25E3%2582%2592%25E5%2587%25BA%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devtoolkits.app%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZkY2RlMmQ0ZDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "JSON.parseのパースエラー位置が環境依存な件：ブラウザごとの差異を吸収し正確な行と列を特定する専用検査器の実装",
+    "summary_ja": "個人開発のJSON整形ツールを開発する際、JSON.parseが返すエラー位置（行・列）がNode(V8)や各ブラウザでバラバラであることに直面した。 エラーメッセージのパースに頼るアプローチでは正確な位置特定が困難だったため、独自のJSON検査器を実装して解決を図った。 環境に依存せず一貫したユーザー体験を提供するためには、標準APIのエラー出力に依存せず、ツール側でバリデーションロジックを自前で保持する判断が不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "JSON.parseのパースエラー位置が環境依存な件：ブラウザごとの差異を吸収し正確な行と列を特定する専用検査器の実装",
+        "summary": "個人開発のJSON整形ツールを開発する際、JSON.parseが返すエラー位置（行・列）がNode(V8)や各ブラウザでバラバラであることに直面した。 エラーメッセージのパースに頼るアプローチでは正確な位置特定が困難だったため、独自のJSON検査器を実装して解決を図った。 環境に依存せず一貫したユーザー体験を提供するためには、標準APIのエラー出力に依存せず、ツール側でバリデーションロジックを自前で保持する判断が不可欠である。"
+      },
+      "en": {
+        "title": "Why relying on JSON.parse for error reporting fails: Building a custom validator to unify line-column position tracking",
+        "summary": "While building a JSON formatting tool, the developer discovered that JSON.parse error messages—specifically line and column positions—are inconsistent across browsers and Node (V8) runtimes. Attempting to parse standard error messages led to unreliable positional data, forcing the creation of a lightweight, custom JSON validator to ensure consistent reporting. This implementation allows the tool to accurately identify errors regardless of the execution environment. For developers building parsing-heavy utilities, the takeaway is clear: relying solely on native engine error strings leads to UX fragmentation. Instead, shipping a dedicated validation parser remains the only robust way to guarantee consistent error feedback, especially when providing line-level diagnostics for end-users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-14T20:02:50.441Z"
+  },
+  {
+    "id": "art-1794686557386-3gk34",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sarabuilds/articles/2b106365722f4d",
+    "published_at": "2026-11-14T16:34:23.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1k6IxyCo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Does%2520a%2520%25E2%2580%259Cno-limit%25E2%2580%259D%2520image%2520to%2520video%2520AI%2520page%2520mean%2520unlimited%2520f...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:saralforfacebook%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvcy5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "画像生成AIの「no-limit」URLは無制限無料の意味ではない：課金モデルとクレジット消費の現実を解説",
+    "summary_ja": "AI動画生成ツールでURLに「no-limit」とあっても、それは完全無料や無制限生成を意味しない。 多くのサイトはアカウントなしでのプレビューやお試し1回は無料だが、本格的な生成にはクレジット消費が必須であり、生成前に必ず価格が表示される仕組みだ。 無料を謳う広告表現を鵜呑みにせず、各サービスのクレジット課金体系を正しく理解することが、開発や創作の予算管理において不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "画像生成AIの「no-limit」URLは無制限無料の意味ではない：課金モデルとクレジット消費の現実を解説",
+        "summary": "AI動画生成ツールでURLに「no-limit」とあっても、それは完全無料や無制限生成を意味しない。 多くのサイトはアカウントなしでのプレビューやお試し1回は無料だが、本格的な生成にはクレジット消費が必須であり、生成前に必ず価格が表示される仕組みだ。 無料を謳う広告表現を鵜呑みにせず、各サービスのクレジット課金体系を正しく理解することが、開発や創作の予算管理において不可欠である。"
+      },
+      "en": {
+        "title": "Why a 'no-limit' URL in image-to-video AI tools does not imply free or unlimited generation capacity",
+        "summary": "Many image-to-video AI platforms use URLs containing 'no-limit,' yet this misleading tag does not equate to unlimited free usage or infinite generations. While these services often allow users to upload photos or write initial prompts without an account—and may even offer a single free trial run—subsequent generations consistently consume paid credits. The pricing structure is almost always disclosed before generation begins, confirming that free access is strictly limited to initial engagement. For builders and creators, understanding that these marketing URLs are merely hooks is critical; relying on 'no-limit' labeling for project cost estimation is a mistake. Always audit the actual credit consumption model before integrating these tools into your development or creative workflows to avoid unexpected costs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "画像生成",
+      "動画"
+    ],
+    "created_at": "2026-11-14T20:02:37.386Z"
+  },
+  {
+    "id": "art-1794686537951-bm5bu",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.astralcodexten.com/p/ai-company-employees-should-unionize",
+    "published_at": "2026-11-14T19:47:33.000Z",
+    "og_image_url": "https://substackcdn.com/image/fetch/$s_!-Ohc!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fde52244f-534f-4b9b-8d91-933b36ddc16a_736x392.png",
+    "title_ja": "AI企業の社員は労働組合を結成すべきか？著名ブログAstral Codex Tenが提唱するAI安全性の担保と権力バランスの再考",
+    "summary_ja": "著名ブログAstral Codex Tenが、AI開発企業の従業員が団結して労働組合を結成し、企業の方針決定に対する拒否権を持つべきだと提唱している。 AI技術が社会に与える不可逆的な影響力を考慮すれば、経営層や投資家による暴走を止めるには、現場のエンジニアがストライキ権や開発拒否権を持つことが唯一の現実的な防波堤になるという論調だ。 倫理や安全性の議論を単なる企業のPR活動に留めず、実効性のある労働条件として組み込むための新たな組織論として注目を集めている。",
+    "translations": {
+      "ja": {
+        "title": "AI企業の社員は労働組合を結成すべきか？著名ブログAstral Codex Tenが提唱するAI安全性の担保と権力バランスの再考",
+        "summary": "著名ブログAstral Codex Tenが、AI開発企業の従業員が団結して労働組合を結成し、企業の方針決定に対する拒否権を持つべきだと提唱している。 AI技術が社会に与える不可逆的な影響力を考慮すれば、経営層や投資家による暴走を止めるには、現場のエンジニアがストライキ権や開発拒否権を持つことが唯一の現実的な防波堤になるという論調だ。 倫理や安全性の議論を単なる企業のPR活動に留めず、実効性のある労働条件として組み込むための新たな組織論として注目を集めている。"
+      },
+      "en": {
+        "title": "Why AI Company Employees Should Form Unions to Enforce Safety and Check Corporate Power",
+        "summary": "The influential blog Astral Codex Ten argues that employees at AI labs should unionize and effectively gain veto power over corporate direction to ensure safety. Given the irreversible societal impact of advanced AI, the author suggests that executive leadership and investors cannot be trusted as the sole arbiters of safety. Instead, providing frontline engineers with the power to strike or refuse unsafe development is presented as the only practical check against reckless acceleration. This framework moves the discussion beyond performative corporate ethics, proposing that concrete labor rights and structural collective bargaining are necessary tools to prevent AI systems from outpacing democratic control. For industry builders, this raises complex questions about balancing rapid innovation with long-term accountability structures."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-14T20:02:17.951Z"
+  },
+  {
+    "id": "art-1794686514761-21wnp",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/cobalt122/n/n9fa45531490c",
+    "published_at": "2026-11-14T19:59:45.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336199360/rectangle_large_type_2_a30db4ba829a6e3158a4a03274a8984a.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIエージェントの定期実行でクイズコンテンツを自動量産｜6日間で検証した完全自律型ワークフローの実効性と開発者の体験",
+    "summary_ja": "AIエージェントにクイズ作成を全任し、夜間の定期実行によってコンテンツを自動増殖させるワークフローを検証した。 単にスクリプトを走らせるだけでなく、AIによるコンテンツ生成から登録までを自律サイクルとして確立することで、睡眠時間を開発や運営の効率化に変換できた。 この事例は、定型的なクリエイティブ作業をAIエージェントに委ねることで、人間が「企画と判断」に集中できる次世代の個人開発手法を示唆している。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの定期実行でクイズコンテンツを自動量産｜6日間で検証した完全自律型ワークフローの実効性と開発者の体験",
+        "summary": "AIエージェントにクイズ作成を全任し、夜間の定期実行によってコンテンツを自動増殖させるワークフローを検証した。 単にスクリプトを走らせるだけでなく、AIによるコンテンツ生成から登録までを自律サイクルとして確立することで、睡眠時間を開発や運営の効率化に変換できた。 この事例は、定型的なクリエイティブ作業をAIエージェントに委ねることで、人間が「企画と判断」に集中できる次世代の個人開発手法を示唆している。"
+      },
+      "en": {
+        "title": "Automating content production with autonomous AI agents: 6 days of hands-off testing for creating and publishing daily quiz assets",
+        "summary": "A developer successfully implemented an autonomous workflow where AI agents created and deployed new quiz content while they were sleeping, resulting in a continuous, automated pipeline over six days. This experiment demonstrates how moving beyond simple scripts to full-cycle AI autonomy—covering everything from content generation to database registration—can transform downtime into productive output. The takeaway for builders is that delegating rote creative tasks to agents allows developers to focus purely on high-level orchestration and strategy rather than manual labor. For those scaling niche content projects, this case proves that combining agentic task scheduling with standard web backends offers a practical path to scaling operations without adding linear hours to your personal daily workload."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-14T20:01:54.761Z"
+  },
+  {
     "id": "art-1794685629294-uokwo",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -5427,32 +5531,6 @@
     "created_at": "2026-11-14T06:02:06.804Z"
   },
   {
-    "id": "art-1794635243095-m8rgw",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yuriy_studio/n/n30f7c278c753",
-    "published_at": "2026-11-14T05:25:32.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335534510/rectangle_large_type_2_23e9588094a56b0b9b6c2dcbc75435b1.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude CodeでMacデスクトップの乱雑な289項目を自動整理！Pythonスクリプトによる分類ツール開発の実践記録",
-    "summary_ja": "Macデスクトップに散乱した289個のファイルを「Claude Code」を用いて整理した実践事例を紹介。 日常的なスクリーンショットや録画で溢れるデスクトップを解消するため、Pythonを活用した自動分類スクリプトを作成した。 AIエージェントにコード生成を依頼することで、単なる整理に留まらず、自身のワークフローに合わせて機能をカスタマイズしたツール構築が可能になる。 煩雑な環境の自動化は、開発効率を向上させる個人開発者必携のスキルだ。",
-    "translations": {
-      "ja": {
-        "title": "Claude CodeでMacデスクトップの乱雑な289項目を自動整理！Pythonスクリプトによる分類ツール開発の実践記録",
-        "summary": "Macデスクトップに散乱した289個のファイルを「Claude Code」を用いて整理した実践事例を紹介。 日常的なスクリーンショットや録画で溢れるデスクトップを解消するため、Pythonを活用した自動分類スクリプトを作成した。 AIエージェントにコード生成を依頼することで、単なる整理に留まらず、自身のワークフローに合わせて機能をカスタマイズしたツール構築が可能になる。 煩雑な環境の自動化は、開発効率を向上させる個人開発者必携のスキルだ。"
-      },
-      "en": {
-        "title": "How I used Claude Code to automate organizing 289 messy files on my Mac desktop with Python",
-        "summary": "To tackle a cluttered Mac desktop containing 289 scattered files—mostly from routine screenshotting and screen recording—I leveraged Claude Code to build a custom Python automation tool. Instead of manually sorting folders, I tasked the AI agent with writing the logic to categorize assets based on my specific workspace needs. This approach proves that utilizing AI coding assistants goes beyond simple refactoring; it enables developers to quickly spin up utility scripts that streamline local maintenance. For personal developers, treating your own desktop clutter as a programmable engineering problem is a highly effective way to optimize daily workflow and regain focus during complex feature building cycles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-14T05:47:23.095Z"
-  },
-  {
     "id": "art-1794634326350-qhrgx",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9733,32 +9811,6 @@
       "研究"
     ],
     "created_at": "2026-11-13T14:32:35.944Z"
-  },
-  {
-    "id": "art-1794580348645-sxqvg",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://notes.archie-hall.com/p/drawing-the-line-on-ai-writing-literally",
-    "published_at": "2026-11-13T14:14:19.000Z",
-    "og_image_url": "https://substackcdn.com/image/fetch/$s_!vReN!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa5d0b5b-e1f5-4bd2-b714-9a576a2efa41_2493x1352.heic",
-    "title_ja": "AI生成テキストと人間による執筆の境界線――なぜ「AIっぽさ」が読者の信頼を損なうのかを再考する",
-    "summary_ja": "AIが生成したテキストをそのまま使うことは、単なる効率化の手段ではなく、読者との信頼関係を根底から揺るがす行為になり得る。 AIには事実確認の欠如や文脈理解の甘さがつきまとい、それが見抜かれた瞬間にコンテンツの価値はゼロになる。 生成AIを「推敲の補助」や「アイデアの壁打ち」に限定し、人間の視点や独自の経験をコアに据えることこそが、溢れかえるAIコンテンツの中で読者に選ばれ続けるための唯一の生存戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "AI生成テキストと人間による執筆の境界線――なぜ「AIっぽさ」が読者の信頼を損なうのかを再考する",
-        "summary": "AIが生成したテキストをそのまま使うことは、単なる効率化の手段ではなく、読者との信頼関係を根底から揺るがす行為になり得る。 AIには事実確認の欠如や文脈理解の甘さがつきまとい、それが見抜かれた瞬間にコンテンツの価値はゼロになる。 生成AIを「推敲の補助」や「アイデアの壁打ち」に限定し、人間の視点や独自の経験をコアに据えることこそが、溢れかえるAIコンテンツの中で読者に選ばれ続けるための唯一の生存戦略となる。"
-      },
-      "en": {
-        "title": "Drawing the line on AI writing: Why relying on LLM-generated prose risks alienating your audience and eroding reader trust",
-        "summary": "Using LLM-generated text as a primary content source goes beyond simple efficiency, potentially shattering the foundation of trust built with readers. AI writing frequently exhibits subtle hallucinations and a lack of genuine contextual depth, qualities that readers are increasingly adept at spotting. Once identified as 'AI-written,' content often loses its perceived value instantly. The author argues for drawing a hard line: leverage generative models strictly for brainstorming, outlining, or editorial assistance, while keeping human perspective, unique experience, and authentic voice at the core. In an ecosystem saturated with mediocre automated prose, the only viable long-term strategy for content creators is to prioritize human editorial judgment and original analysis to ensure that every word published serves a specific, verifiable purpose."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-13T14:32:28.645Z"
   },
   {
     "id": "art-1794579451278-aimt2",
@@ -16391,32 +16443,6 @@
     "created_at": "2026-11-12T07:47:12.260Z"
   },
   {
-    "id": "art-1794468809734-39mdg",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/axostoxast/articles/e2295379fe83c1",
-    "published_at": "2026-11-12T07:06:47.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--RMJpoFPq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25AE%25E3%2580%258C%25E5%2588%259D%25E6%2589%258B%25E3%2581%25A7%25E5%25BC%2595%25E3%2581%2591%25E3%2582%258B%25E7%25A2%25BA%25E7%258E%2587%25E3%2580%258D%25E3%2582%2592Python%25E3%2581%25A7%25E8%25A8%2588%25E7%25AE%2597%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259A%25E8%25B6%2585%25E5%25B9%25BE%25E4%25BD%2595%25E5%2588%2586%25E5%25B8%2583%25E3%2581%25A8%25E5%258C%2585%25E9%2599%25A4%25E5%258E%259F%25E7%2590%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:axost%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE4NDBkZGMzZjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Pythonで実装するTCGの初手ドロー確率計算：超幾何分布と包除原理を用いて特定のカードを引く理論的アプローチ",
-    "summary_ja": "TCGプレイヤーにとって重要な「特定のカードを初手で引く確率」の算出方法を、Pythonのmath.combを用いた実装で解説する。 基本となる超幾何分布の考え方に加え、複数のカードを考慮する場合の包除原理を組み合わせることで、直感に頼らない正確な構築シミュレーションが可能だ。 マリガンなしの環境におけるデッキ構成の最適化において、確率論的な裏付けをコードで迅速に導き出す手法は、すべてのカードゲーマーやゲーム開発者にとって必須の武器となる。",
-    "translations": {
-      "ja": {
-        "title": "Pythonで実装するTCGの初手ドロー確率計算：超幾何分布と包除原理を用いて特定のカードを引く理論的アプローチ",
-        "summary": "TCGプレイヤーにとって重要な「特定のカードを初手で引く確率」の算出方法を、Pythonのmath.combを用いた実装で解説する。 基本となる超幾何分布の考え方に加え、複数のカードを考慮する場合の包除原理を組み合わせることで、直感に頼らない正確な構築シミュレーションが可能だ。 マリガンなしの環境におけるデッキ構成の最適化において、確率論的な裏付けをコードで迅速に導き出す手法は、すべてのカードゲーマーやゲーム開発者にとって必須の武器となる。"
-      },
-      "en": {
-        "title": "Calculating TCG Opening Hand Probabilities with Python: A Guide to Hypergeometric Distributions and the Inclusion-Exclusion Principle",
-        "summary": "Determining the probability of drawing specific cards in a TCG opening hand is essential for deck optimization, and Python’s `math.comb` provides an efficient way to calculate these odds. By applying the hypergeometric distribution, builders can determine the likelihood of drawing at least one copy of a card, while the inclusion-exclusion principle allows for more complex scenarios involving multiple card types. This article breaks down the mathematical logic into clean, reusable code, removing the guesswork from deck-building simulations. For developers building tools for TCG enthusiasts, implementing these combinatorial calculations provides a robust, data-driven foundation that outperforms intuition, ensuring that every strategic decision—or the probability calculator itself—is mathematically sound and statistically accurate."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-12T07:33:29.734Z"
-  },
-  {
     "id": "art-1794468756850-eo57y",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -18046,32 +18072,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-11T21:01:58.754Z"
-  },
-  {
-    "id": "art-1794428246494-hezbk",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/numachang/articles/vscode-claude-code-worktree-parallel",
-    "published_at": "2026-11-11T14:24:10.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--p2707uEd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:VS%2520Code%25E3%2581%25AE%25E3%2582%25A6%25E3%2582%25A3%25E3%2583%25B3%25E3%2583%2589%25E3%2582%25A6%25E3%2581%25A0%25E3%2582%2589%25E3%2581%2591%25E3%2581%25A7%25E9%2599%2590%25E7%2595%258C%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%25E3%2581%258B%25E3%2582%2589%25E3%2580%2581Claude%2520Code%25E3%2582%2592worktree%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AB%25E4%25B8%25A6%25E5%2588%2597%25E3%2581%25A7%25E5%259B%259E%25E3%2581%259B%25E3%2582%258B%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:numachang%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FGZFp1Y3FKU21OVU5tNTVTbHc2V1RRNFRpSVI3NjFXV0pIY1dVbGFmdXJyPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの多重起動でVS Codeウィンドウが乱立する問題──マルチタスクを管理する独自アプリ「Worktabs」を自作して解決",
-    "summary_ja": "Claude Codeをworktreeで並列実行するとVS Codeのウィンドウが爆発的に増え、作業管理が困難になる課題を解消するため、マルチタスク管理アプリ「Worktabs」を開発した。 このツールはWindowsおよびmacOSに対応し、乱立するVS Codeセッションを効率的に整理・切り替え可能にする。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの多重起動でVS Codeウィンドウが乱立する問題──マルチタスクを管理する独自アプリ「Worktabs」を自作して解決",
-        "summary": "Claude Codeをworktreeで並列実行するとVS Codeのウィンドウが爆発的に増え、作業管理が困難になる課題を解消するため、マルチタスク管理アプリ「Worktabs」を開発した。 このツールはWindowsおよびmacOSに対応し、乱立するVS Codeセッションを効率的に整理・切り替え可能にする。"
-      },
-      "en": {
-        "title": "Managing Claude Code sprawl: How building 'Worktabs' solved the VS Code window overload problem",
-        "summary": "Running multiple Claude Code sessions using git worktrees inevitably leads to a chaotic explosion of VS Code windows, making it impossible to track which agent is handling what task. To solve this, I built 'Worktabs,' a cross-platform utility for Windows and macOS designed to organize and switch between these fragmented editor sessions efficiently. For developers running parallel AI agents, the constant context switching creates significant mental overhead and navigational friction. This tool brings order to that workspace, allowing you to manage disparate AI workflows without losing track of your active projects. It is a practical utility for any builder struggling to maintain sanity while leveraging AI assistants across multiple concurrent code repositories or independent feature branches."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-11T20:17:26.494Z"
   },
   {
     "id": "art-1794425516716-gqsex",
