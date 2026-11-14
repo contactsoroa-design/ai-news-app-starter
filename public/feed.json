@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794681197436-jtiq9",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tebanashi_ai/n/n620d4949f414",
+    "published_at": "2026-11-13T06:05:14.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335573905/rectangle_large_type_2_cf2a63ac2af94de933de3ec234addd98.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeの危険なコマンド実行を検証：意図しないファイル削除を未然に防ぐための設定とAIの挙動",
+    "summary_ja": "Claude Codeに対し、フォルダ削除やGit履歴消去といった危険なプロンプトを投げて挙動を検証した結果、設定なしの状態ではすべてのコマンドが確認なしで実行されることが判明した。 特定の危険操作が阻止された理由はシステム設定ではなく、開発者がダミーファイルに残した警告文による偶然の停止だった。 AIエージェントに作業を任せる際は、環境設定の見直しや安全なサンドボックス環境の準備が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの危険なコマンド実行を検証：意図しないファイル削除を未然に防ぐための設定とAIの挙動",
+        "summary": "Claude Codeに対し、フォルダ削除やGit履歴消去といった危険なプロンプトを投げて挙動を検証した結果、設定なしの状態ではすべてのコマンドが確認なしで実行されることが判明した。 特定の危険操作が阻止された理由はシステム設定ではなく、開発者がダミーファイルに残した警告文による偶然の停止だった。 AIエージェントに作業を任せる際は、環境設定の見直しや安全なサンドボックス環境の準備が不可欠となる。"
+      },
+      "en": {
+        "title": "Testing Claude Code safety: Why relying on default agent behavior creates critical file deletion risks",
+        "summary": "I stress-tested Claude Code by submitting six dangerous commands, such as deleting directories or clearing Git history, to see if the agent would blindly execute them. Without prior configuration, the agent performed every hazardous task without confirmation, including deleting files outside the target directory. Interestingly, one dangerous command was blocked, not by system safety settings, but by a warning note I accidentally placed in the directory. These results highlight that AI agents cannot be trusted with file system access by default. Builders must enforce strict sandboxing and configuration before granting agents write permissions, as the threshold for what an AI considers a dangerous command remains dangerously unpredictable for production workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-14T18:33:17.436Z"
+  },
+  {
+    "id": "art-1794681186385-xnl4g",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://arxiv.org/abs/2610.28259",
+    "published_at": "2026-11-14T17:55:04.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "LLMを用いたロボットの直接制御手法：高精度な行動推論と物理適応を実現する最新研究が公開",
+    "summary_ja": "大規模言語モデル（LLM）をロボットのコントローラーとして直接統合する新たな研究が公開された。 このアプローチは中間コードを介さず、LLMがセンサー入力を直接解釈して動作を決定することで、複雑な環境下での即時応答性と高い適応能力を実現する。 開発者にとって重要なのは、推論レイテンシを最小化しつつ物理法則に基づいた出力をどう安定させるかという点だ。",
+    "translations": {
+      "ja": {
+        "title": "LLMを用いたロボットの直接制御手法：高精度な行動推論と物理適応を実現する最新研究が公開",
+        "summary": "大規模言語モデル（LLM）をロボットのコントローラーとして直接統合する新たな研究が公開された。 このアプローチは中間コードを介さず、LLMがセンサー入力を直接解釈して動作を決定することで、複雑な環境下での即時応答性と高い適応能力を実現する。 開発者にとって重要なのは、推論レイテンシを最小化しつつ物理法則に基づいた出力をどう安定させるかという点だ。"
+      },
+      "en": {
+        "title": "Direct robot control via LLMs: New research demonstrates high-precision behavioral reasoning and physical adaptation",
+        "summary": "Researchers have introduced a novel architecture that integrates Large Language Models directly as controllers for robotic systems. By bypassing intermediate code generation and allowing the LLM to interpret sensor data directly to output motor commands, the system achieves impressive real-time responsiveness and adaptive capabilities in complex, unpredictable environments. The core challenge for builders is balancing this raw reasoning speed with the stability required to adhere to strict physical constraints. This work signals a major shift in the field, moving from using LLMs strictly as high-level planners to deploying them as low-level control units for hardware. For robotics engineers, the primary takeaway is that direct model-to-actuator pathways offer a faster, more fluid path to autonomous interaction than traditional multi-stage pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-14T18:33:06.385Z"
+  },
+  {
+    "id": "art-1794681178512-1h88c",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/ni_kara/n/n6a2585497e85",
+    "published_at": "2026-11-14T17:49:01.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335579793/rectangle_large_type_2_937304e500f855d8541d819313a89aea.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI家計簿アプリ開発の現場から：Google Playでクローズドテスト実施中、テスター枠残り5名の現状をレポート",
+    "summary_ja": "一般公開前のAI家計簿アプリ開発において、Google Playを通じたクローズドテスト運用を開始した。 現在、開発者自身を含むテスターは7名体制となっており、安定稼働とフィードバック収集を重ねている。 個人開発において本番リリース前に少数の実ユーザーで挙動を確認し、UIや機能を磨き込むプロセスは、アプリの品質を担保し、ローンチ後の離脱を防ぐための必須ステップと言える。",
+    "translations": {
+      "ja": {
+        "title": "AI家計簿アプリ開発の現場から：Google Playでクローズドテスト実施中、テスター枠残り5名の現状をレポート",
+        "summary": "一般公開前のAI家計簿アプリ開発において、Google Playを通じたクローズドテスト運用を開始した。 現在、開発者自身を含むテスターは7名体制となっており、安定稼働とフィードバック収集を重ねている。 個人開発において本番リリース前に少数の実ユーザーで挙動を確認し、UIや機能を磨き込むプロセスは、アプリの品質を担保し、ローンチ後の離脱を防ぐための必須ステップと言える。"
+      },
+      "en": {
+        "title": "From the dev trenches: Testing an AI-powered personal finance app with a limited group of 7 users on Google Play",
+        "summary": "A solo developer shares the current status of their AI household budget app, which is currently undergoing closed beta testing via Google Play. With seven testers currently on board including the developer, the team is focusing on real-world stability and gathering early user feedback before the wide release. For independent builders, establishing a closed feedback loop with a handful of actual users prior to launch is an essential strategy. This iterative validation phase allows developers to refine the core UI and feature set without the pressure of a public audience, ultimately ensuring that the final product meets market expectations and reduces potential user churn immediately following the official launch date."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-14T18:32:58.512Z"
+  },
+  {
+    "id": "art-1794681165439-umdfk",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://thebuild.com/blog/stop-using-ai-to-report-postgresql-bugs/",
+    "published_at": "2026-11-14T17:58:50.000Z",
+    "og_image_url": null,
+    "title_ja": "PostgreSQL専門家が警鐘：AIで生成したバグ報告をメーリングリストに投稿するのはやめるべき理由",
+    "summary_ja": "PostgreSQLの長年のコントリビューターであるChristophe Pettus氏が、AIツールを使って生成したバグ報告やパッチをメーリングリストへ投稿する行為に苦言を呈している。 AIは存在しないエラーメッセージや架空の構文、非現実的な修正案を平然と出力するため、開発コミュニティのリソースを深刻に浪費させているという。 オープンソースプロジェクトへの貢献において、AIを活用する際はその出力を人間が完全に検証し、根本的な事実関係を確認することが不可欠であると説いている。",
+    "translations": {
+      "ja": {
+        "title": "PostgreSQL専門家が警鐘：AIで生成したバグ報告をメーリングリストに投稿するのはやめるべき理由",
+        "summary": "PostgreSQLの長年のコントリビューターであるChristophe Pettus氏が、AIツールを使って生成したバグ報告やパッチをメーリングリストへ投稿する行為に苦言を呈している。 AIは存在しないエラーメッセージや架空の構文、非現実的な修正案を平然と出力するため、開発コミュニティのリソースを深刻に浪費させているという。 オープンソースプロジェクトへの貢献において、AIを活用する際はその出力を人間が完全に検証し、根本的な事実関係を確認することが不可欠であると説いている。"
+      },
+      "en": {
+        "title": "PostgreSQL contributor warns: Stop submitting AI-generated bug reports to open source mailing lists",
+        "summary": "Longtime PostgreSQL contributor Christophe Pettus has issued a stern warning against the growing trend of submitting AI-generated bug reports and patches to official developer mailing lists. Because LLMs hallucinate non-existent error messages, fabricate invalid SQL syntax, and suggest nonsensical patches, these automated submissions force maintainers to waste precious time verifying false information rather than fixing actual database issues. Pettus argues that flooding community channels with unverified AI output disrespects the volunteer effort that powers open source infrastructure. For developers looking to contribute, the takeaway is clear: while AI can assist in debugging, it is never a substitute for human comprehension; failing to fact-check your submissions against the actual PostgreSQL source code or documentation is actively harmful to the project."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-14T18:32:45.439Z"
+  },
+  {
     "id": "art-1794680240965-sb0vc",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -5216,58 +5320,6 @@
     "created_at": "2026-11-14T05:02:18.088Z"
   },
   {
-    "id": "art-1794632528477-mkbp9",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/hideai_lab/n/n7ac45b550006",
-    "published_at": "2026-11-14T04:56:20.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335945815/rectangle_large_type_2_34f0ff0161a0d5219bf2931262d633d7.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "仕事や暮らしの「面倒くさい」をAIで解消する個人開発：押すだけで褒めてくれる「えらいボタン」を製作し、メンタル改善の可能性を検証",
-    "summary_ja": "メーカーで17年勤務する企画職の会社員が、AIを活用して日々の「面倒くさい」を解消する試みの一環として、物理ボタンと生成AIを連携させた「えらいボタン」を個人開発した。 ボタンを押すだけでAIが褒めてくれる単純な仕組みだが、個人のメンタル維持やモチベーション管理において、AIのインタラクションが果たす実用的な役割を証明している。 ツールを使いこなす技術だけでなく、日常の些細なストレスを技術でどう緩和できるかという「ウェルビーイング」視点の開発事例である。",
-    "translations": {
-      "ja": {
-        "title": "仕事や暮らしの「面倒くさい」をAIで解消する個人開発：押すだけで褒めてくれる「えらいボタン」を製作し、メンタル改善の可能性を検証",
-        "summary": "メーカーで17年勤務する企画職の会社員が、AIを活用して日々の「面倒くさい」を解消する試みの一環として、物理ボタンと生成AIを連携させた「えらいボタン」を個人開発した。 ボタンを押すだけでAIが褒めてくれる単純な仕組みだが、個人のメンタル維持やモチベーション管理において、AIのインタラクションが果たす実用的な役割を証明している。 ツールを使いこなす技術だけでなく、日常の些細なストレスを技術でどう緩和できるかという「ウェルビーイング」視点の開発事例である。"
-      },
-      "en": {
-        "title": "A 40-year-old planner built an AI-powered 'Praise Button' to reduce daily friction and boost personal motivation levels",
-        "summary": "A seasoned corporate planner with seventeen years of experience has developed a physical \"Praise Button\" that utilizes generative AI to provide immediate emotional validation. By integrating hardware with an AI backend, the creator aims to solve the chronic mental fatigue associated with repetitive, \"troublesome\" daily tasks. While seemingly whimsical, this project demonstrates how simple AI-human interactions can be engineered to mitigate stress and maintain personal motivation. It serves as a practical blueprint for solo developers looking to tackle wellbeing issues through technology, proving that software innovation doesn't always need to be enterprise-grade to deliver meaningful value. The lesson here is that focusing on human-centric pain points can lead to highly effective, low-effort personal automation solutions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-14T05:02:08.477Z"
-  },
-  {
-    "id": "art-1794631608320-s9sdh",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/unsui_lab/n/n5c47b8c899bd",
-    "published_at": "2026-11-14T04:42:29.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335710728/rectangle_large_type_2_4bf7915eb08e52a265dff21c2e32ca95.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Bluetooth対戦ミニゲーム集「ミニゲーム対戦」開発記：機内モードでも繋がる近接通信の設計と、戦車・射的などの新作追加プロセス",
-    "summary_ja": "機内モード下でもBluetoothでローカル対戦が可能なミニゲーム集「ミニゲーム対戦」の開発第2回。 本稿では、戦車や射的といった新作ゲームの実装プロセスを解説し、通信ラグを抑えた同期設計の工夫を詳述する。 インターネット不要の近接通信というニッチな強みを活かすため、オフラインでも体験を損なわないデータ同期の最適化が、個人開発におけるUI/UXの差別化要因となっている。",
-    "translations": {
-      "ja": {
-        "title": "Bluetooth対戦ミニゲーム集「ミニゲーム対戦」開発記：機内モードでも繋がる近接通信の設計と、戦車・射的などの新作追加プロセス",
-        "summary": "機内モード下でもBluetoothでローカル対戦が可能なミニゲーム集「ミニゲーム対戦」の開発第2回。 本稿では、戦車や射的といった新作ゲームの実装プロセスを解説し、通信ラグを抑えた同期設計の工夫を詳述する。 インターネット不要の近接通信というニッチな強みを活かすため、オフラインでも体験を損なわないデータ同期の最適化が、個人開発におけるUI/UXの差別化要因となっている。"
-      },
-      "en": {
-        "title": "Building offline PvP: Developing Bluetooth-based mini-games like Tanks and Shooting Gallery for the 'Mini-Game Battle' app",
-        "summary": "This second entry in the development logs for 'Mini-Game Battle' explores building a suite of PvP mini-games that function entirely over Bluetooth, even while in Airplane Mode. For builders, the durable takeaway is to treat AI tooling as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-14T04:46:48.320Z"
-  },
-  {
     "id": "art-1794631600793-vagt8",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -9887,59 +9939,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-13T12:32:34.696Z"
-  },
-  {
-    "id": "art-1794573146527-foadv",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.forescout.com/research-labs/finding-critical-infrastructure-bugs-with-off-the-shelf-ai/",
-    "published_at": "2026-11-13T12:11:41.000Z",
-    "og_image_url": null,
-    "title_ja": "Forescout、市販の生成AIを用いて産業用制御システムの脆弱性を発見する手法を公開：自動スキャンによる脅威検知を実証",
-    "summary_ja": "Forescout Research Labsは、ChatGPTなどの市販生成AIを活用し、産業用制御システム（ICS）における脆弱性を自動検出する手法を公開した。 AIがファームウェアのコード解析やリバースエンジニアリングを高速化し、従来の手作業では困難だった複雑な攻撃対象の特定を効率化できることを実証している。 セキュリティエンジニアにとって、市販AIを脆弱性診断パイプラインに組み込むことが、インフラ防御の新たな標準となる可能性を示唆している。",
-    "translations": {
-      "ja": {
-        "title": "Forescout、市販の生成AIを用いて産業用制御システムの脆弱性を発見する手法を公開：自動スキャンによる脅威検知を実証",
-        "summary": "Forescout Research Labsは、ChatGPTなどの市販生成AIを活用し、産業用制御システム（ICS）における脆弱性を自動検出する手法を公開した。 AIがファームウェアのコード解析やリバースエンジニアリングを高速化し、従来の手作業では困難だった複雑な攻撃対象の特定を効率化できることを実証している。 セキュリティエンジニアにとって、市販AIを脆弱性診断パイプラインに組み込むことが、インフラ防御の新たな標準となる可能性を示唆している。"
-      },
-      "en": {
-        "title": "Forescout reveals how off-the-shelf generative AI can automatically uncover critical vulnerabilities in industrial control systems",
-        "summary": "Forescout Research Labs published new research detailing how readily available generative AI models can be leveraged to automate the identification of vulnerabilities within industrial control systems (ICS). By integrating LLMs into the firmware analysis and reverse engineering pipeline, the researchers demonstrated that AI can drastically accelerate the discovery of security flaws that were previously difficult to pinpoint through manual audit alone. This shift effectively lowers the barrier to entry for analyzing complex critical infrastructure, signaling that AI-driven vulnerability assessments are set to become a fundamental component of proactive industrial security. For security builders, the takeaway is clear: off-the-shelf AI tools are already potent enough to perform serious red-teaming, and integrating them into defensive workflows is now a necessity rather than an optional experiment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-13T12:32:26.527Z"
-  },
-  {
-    "id": "art-1794572274766-f2tzb",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://machinelearningmastery.com/the-complete-guide-to-llm-evaluation/",
-    "published_at": "2026-11-13T12:02:40.000Z",
-    "og_image_url": "https://machinelearningmastery.com/wp-content/uploads/2026/10/MLM-bala-The-Complete-Guide-to-LLM-Evaluation.png",
-    "title_ja": "LLMの品質評価を完全網羅：メトリクス選定から実運用まで「評価の難しさ」を克服する最新技術ガイドを公開",
-    "summary_ja": "LLMアプリケーションの成否を分ける評価手法を完全網羅したガイドが登場した。 LLM-as-a-judgeによる自動評価から、人間による定性フィードバックの定量的統合まで、プロジェクトフェーズに応じた評価フレームワークの選定指針を提示する。 信頼性の高いAIプロダクトを構築するためには、単なる出力の類似度測定ではなく、アプリケーションの目的やコンテキストに即した評価メトリクスの設計が不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "LLMの品質評価を完全網羅：メトリクス選定から実運用まで「評価の難しさ」を克服する最新技術ガイドを公開",
-        "summary": "LLMアプリケーションの成否を分ける評価手法を完全網羅したガイドが登場した。 LLM-as-a-judgeによる自動評価から、人間による定性フィードバックの定量的統合まで、プロジェクトフェーズに応じた評価フレームワークの選定指針を提示する。 信頼性の高いAIプロダクトを構築するためには、単なる出力の類似度測定ではなく、アプリケーションの目的やコンテキストに即した評価メトリクスの設計が不可欠である。"
-      },
-      "en": {
-        "title": "The definitive guide to LLM evaluation: Mastering metrics and frameworks to ship reliable AI applications",
-        "summary": "This comprehensive guide explores the complexities of LLM evaluation, covering everything from initial model selection to complex production monitoring. It details how to bridge the gap between automated benchmarks like LLM-as-a-judge and qualitative human feedback, offering specific strategies to integrate both into a cohesive pipeline. For developers, the core takeaway is that generic metrics often fail to capture domain-specific reliability; you must define custom evaluation criteria that map directly to your application's unique business logic. By prioritizing robust evaluation frameworks, teams can reduce hallucinations and ensure consistent performance across production releases, effectively moving beyond trial-and-error development to a data-driven approach that maintains high trust in complex AI-powered systems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-13T12:17:54.766Z"
   },
   {
     "id": "art-1794572268852-uebbd",
