@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794679355994-2ck9v",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/yamato_snow/articles/ai-kaihatsu-hinshitsu-pm-portal",
+    "published_at": "2026-11-14T07:05:29.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--dN8l3p55--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2580%258C%25E5%25AE%258C%25E6%2588%2590%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25E3%2580%258D%25E3%2581%25A8%25E8%25A8%2580%25E3%2582%258F%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2582%25E5%258F%2597%25E3%2581%2591%25E5%2585%25A5%25E3%2582%258C%25E6%259D%25A1%25E4%25BB%25B6%25E3%2581%25A8E2E%25E3%2581%25A7%25E8%2587%25AA%25E4%25BD%259CPM%25E3%2583%259D%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25AB%25E3%2582%2592%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%2597%25E3%2581%259F%25E5%25AE%259F%25E6%25B8%25AC%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2584%25E3%2581%25BE%25E3%2581%25A8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UxMTY0YzRhNDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIコードに「完成」はない。自作PMポータルで検証した受け入れ条件とE2Eテストによる品質保証の実測記録",
+    "summary_ja": "AI生成コードが「動くが要件を満たさない」問題を解決するため、受け入れ条件の定義とE2Eテストを組み合わせた品質保証プロセスを自作PMポータルで検証した。 既存の単体テスト（214件）にPlaywrightによるE2Eテスト（6本）を追加し、合計約13秒で実行可能なCI環境を構築。 意図的に不具合を埋め込んでテストの有効性を実証しており、AI開発における「AIの自己申告による完了」を排除し、数値で品質を担保する現実的なワークフローを提示している。",
+    "translations": {
+      "ja": {
+        "title": "AIコードに「完成」はない。自作PMポータルで検証した受け入れ条件とE2Eテストによる品質保証の実測記録",
+        "summary": "AI生成コードが「動くが要件を満たさない」問題を解決するため、受け入れ条件の定義とE2Eテストを組み合わせた品質保証プロセスを自作PMポータルで検証した。 既存の単体テスト（214件）にPlaywrightによるE2Eテスト（6本）を追加し、合計約13秒で実行可能なCI環境を構築。 意図的に不具合を埋め込んでテストの有効性を実証しており、AI開発における「AIの自己申告による完了」を排除し、数値で品質を担保する現実的なワークフローを提示している。"
+      },
+      "en": {
+        "title": "Beyond 'it works': Verifying AI-generated code with acceptance criteria and E2E tests in a custom PM portal",
+        "summary": "To solve the issue where AI-written code merely 'runs' but fails actual requirements, the author established a robust quality assurance workflow for a custom PM portal. By pairing strict acceptance criteria with E2E tests using Playwright, the developer successfully integrated 6 new E2E scenarios into an existing suite of 214 unit tests, achieving a full run time of just 13 seconds. To prove efficacy, the team intentionally injected bugs to verify that E2E coverage catches logic errors missed by unit tests alone. The experiment serves as a blueprint for builders to reject 'AI-certified completion' in favor of quantifiable, automated verification, ensuring that AI-augmented development actually ships functional features that meet business logic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-14T18:02:35.994Z"
+  },
+  {
+    "id": "art-1794679339730-vpepw",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/solocompanylab/books/claude-code-side-business-company",
+    "published_at": "2026-11-14T08:28:04.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--JW52Dwt9--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci9kZWMyYzFjOTc5LnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
+    "title_ja": "Claude Codeで副業を“会社化”し自動運転する開発手法公開：4人のAI社員体制と承認ゲートを構築してPCを閉じても回る事業へ",
+    "summary_ja": "Claude Codeを活用し、副業を自動化する「4人のAI社員体制」の設計図が公開された。 定期実行されるクラウド環境にAIエージェントを配置し、承認ゲートを挟むことで、人間がPCを閉じていても業務が進行する自律的な仕組みを構築する。 単なるタスク効率化ではなく、事業を会社組織のように運用し、手動介入を最小限に抑えつつ継続的な収益化を目指す開発者や個人起業家に向けた、実践的な自動化アーキテクチャである。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeで副業を“会社化”し自動運転する開発手法公開：4人のAI社員体制と承認ゲートを構築してPCを閉じても回る事業へ",
+        "summary": "Claude Codeを活用し、副業を自動化する「4人のAI社員体制」の設計図が公開された。 定期実行されるクラウド環境にAIエージェントを配置し、承認ゲートを挟むことで、人間がPCを閉じていても業務が進行する自律的な仕組みを構築する。 単なるタスク効率化ではなく、事業を会社組織のように運用し、手動介入を最小限に抑えつつ継続的な収益化を目指す開発者や個人起業家に向けた、実践的な自動化アーキテクチャである。"
+      },
+      "en": {
+        "title": "Automating side hustles with Claude Code: Engineering a 'virtual company' of 4 AI agents to run tasks while you sleep",
+        "summary": "The article details a blueprint for transforming a solo side hustle into a fully automated 'virtual company' using Claude Code. By deploying a team of four distinct AI agents within a cloud environment, the system utilizes approval gates to handle workflows autonomously, allowing the business to operate continuously even while the founder is offline. Instead of merely optimizing single tasks, this framework approaches personal development like an enterprise operation, balancing AI-driven output with human oversight. For independent builders looking to scale, this architecture provides a concrete template for setting up automated agents that can execute, review, and manage ongoing business processes, effectively turning a manual side project into a self-driving, revenue-generating engine."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-14T18:02:19.730Z"
+  },
+  {
+    "id": "art-1794679333632-kq7es",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/purojyu/items/0d094eb4e2c7caaf2115",
+    "published_at": "2026-11-14T17:53:07.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzkzMzY4NSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTczMzY1NzEyOD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NzgwODYzNmQ5MGU5ZmQ3ZGE4NDIyMjhkYzQxYzE1NzE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dc1589c0114b26c809b39e45af08b3f07?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JTk3JUE5JUU4JUI1JUI3JUUzJTgxJThEJUUzJTgyJTkyJUUzJTgwJThDJUU4JUIyJUFGJUU5JTg3JTkxJUUzJTgwJThEJUUzJTgxJUFCJUUzJTgxJTk5JUUzJTgyJThCJTIwaVBob25lJTIwJUUzJTgyJUEyJUUzJTgzJTk3JUUzJTgzJUFBJUUzJTgwJThDJUUzJTgzJTlBJUUzJTgzJUIzJUUzJTgyJUFEJUUzJTgzJTgxJUUzJTgxJUFFJUU2JTk3JUE5JUU4JUI1JUI3JUUzJTgxJThEJUU4JUIyJUFGJUU5JTg3JTkxJUUzJTgwJThEJUUzJTgyJTkyJUU0JUJEJTlDJUUzJTgyJThBJUUzJTgxJUJFJUUzJTgxJTk3JUUzJTgxJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NzcyY2E0OTc0YTQxMjAyMTQ5NWI5YzdmYjEwOTNlMWE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwdXJvanl1JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YzdjZDlmZWUzYTVlNzc3YWEyMTI4ODVhNjIxMzhiOGU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=1f6fff20b665f04f7374441cf8d36a5b",
+    "title_ja": "早起きをデジタル貯金に変える個人開発iPhoneアプリ「ペンキチの早起き貯金」を公開、登録不要・無料で習慣化をサポート",
+    "summary_ja": "個人開発によるiPhoneアプリ「ペンキチの早起き貯金」は、毎朝指定した時間までにボタンを押すだけで早起きを記録し、その達成度を「貯金」として可視化する習慣化支援ツールです。 アカウント登録や課金要素を排したシンプルな設計で、ユーザーの継続的な利用を促しています。 開発者は、単なる記録アプリに「貯金」というゲーム性のある報酬設計を加えることで、毎日の朝活に楽しさと達成感をもたらすUXを実現しました。",
+    "translations": {
+      "ja": {
+        "title": "早起きをデジタル貯金に変える個人開発iPhoneアプリ「ペンキチの早起き貯金」を公開、登録不要・無料で習慣化をサポート",
+        "summary": "個人開発によるiPhoneアプリ「ペンキチの早起き貯金」は、毎朝指定した時間までにボタンを押すだけで早起きを記録し、その達成度を「貯金」として可視化する習慣化支援ツールです。 アカウント登録や課金要素を排したシンプルな設計で、ユーザーの継続的な利用を促しています。 開発者は、単なる記録アプリに「貯金」というゲーム性のある報酬設計を加えることで、毎日の朝活に楽しさと達成感をもたらすUXを実現しました。"
+      },
+      "en": {
+        "title": "Developer launches 'Penkichi Early Savings,' an iPhone app that turns morning habits into virtual savings with no login required",
+        "summary": "A solo developer has released 'Penkichi Early Savings,' an iPhone app designed to build morning habits by turning early rising into a virtual savings goal. Users simply tap a button before their target time each morning, and the app visualizes success by adding to their digital savings balance. By stripping away account sign-ups and paywalls, the developer creates a frictionless UX that encourages daily engagement through gamified rewards. This project serves as a prime example of how adding a simple, rewarding narrative—like a virtual piggy bank—can significantly improve retention for utility-focused apps. For solo builders, the takeaway is clear: reducing initial friction while providing a satisfying feedback loop remains the most effective strategy for encouraging consistent user participation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-14T18:02:13.632Z"
+  },
+  {
+    "id": "art-1794679313550-3ue3z",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/bubecode/n/n1dd37284f8aa",
+    "published_at": "2026-11-14T18:00:46.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336189556/rectangle_large_type_2_5a10f4388dcf148a0058406a03cc7a9c.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI時代にエンジニアが副業案件を獲得する最強ロードマップ：エージェント登録よりも「個人開発」をXで発信して直接受注を狙う手法を解説",
+    "summary_ja": "エンジニアが副業案件を獲得する際、スキルシートの整備やエージェント登録は定石だが、実は非効率な場合も多い。 著者は個人開発したサービスをXで公開することで経営者の目に留まり、月30万円の案件を直接獲得した経験を紹介する。 単なる受託開発者ではなく、「自分のプロダクト」を運用するエンジニアとしての信頼を築くことこそが、AI時代に高単価案件を呼び寄せる最大の近道となる。 まずは小さく作り、SNSで発信を始めよう。",
+    "translations": {
+      "ja": {
+        "title": "AI時代にエンジニアが副業案件を獲得する最強ロードマップ：エージェント登録よりも「個人開発」をXで発信して直接受注を狙う手法を解説",
+        "summary": "エンジニアが副業案件を獲得する際、スキルシートの整備やエージェント登録は定石だが、実は非効率な場合も多い。 著者は個人開発したサービスをXで公開することで経営者の目に留まり、月30万円の案件を直接獲得した経験を紹介する。 単なる受託開発者ではなく、「自分のプロダクト」を運用するエンジニアとしての信頼を築くことこそが、AI時代に高単価案件を呼び寄せる最大の近道となる。 まずは小さく作り、SNSで発信を始めよう。"
+      },
+      "en": {
+        "title": "The Optimal Roadmap for Engineers to Secure Freelance Gigs in the AI Era: Why Building in Public Beats Traditional Agent Registration",
+        "summary": "When engineers look for side work, the standard advice is to polish resumes and sign up for talent agencies, but this path often leads to commoditized, low-paying gigs. The author argues that a more effective strategy is to leverage personal projects by shipping them on platforms like X, which directly attracts business owners looking for proven builders. By transforming from a generic freelancer into an engineer who manages their own live product, you build unique trust that commands higher rates. For builders, the lesson is clear: don't chase recruiters. Instead, develop small-scale AI tools or applications, build in public, and let potential clients come to you based on your tangible, deployed output."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-14T18:01:53.550Z"
+  },
+  {
     "id": "art-1794678436631-1qyps",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5186,32 +5291,6 @@
       "開発"
     ],
     "created_at": "2026-11-14T04:32:20.873Z"
-  },
-  {
-    "id": "art-1794630728830-ki60v",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/lush_tern3406/n/n56c52a071320",
-    "published_at": "2026-11-14T04:27:53.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335933728/rectangle_large_type_2_716803e53259e8da1912a80968d59d4a.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "保険営業マンが非エンジニアながら2日間でAIエージェント「自分専用のJARVIS」を構築した開発プロセスとその成果",
-    "summary_ja": "プログラミング経験ゼロの保険代理店経営者が、ChatGPTを活用して自社業務を支援する「自分専用のJARVIS」をわずか2日間で完成させた。 開発の鍵は複雑なコーディングではなく、AIに対する具体的な指示出しと反復的なプロンプト改善にある。 技術的な知識がなくてもAIを「ただのチャットツール」から「自律的な作業パートナー」へと昇華させられることを実証した。",
-    "translations": {
-      "ja": {
-        "title": "保険営業マンが非エンジニアながら2日間でAIエージェント「自分専用のJARVIS」を構築した開発プロセスとその成果",
-        "summary": "プログラミング経験ゼロの保険代理店経営者が、ChatGPTを活用して自社業務を支援する「自分専用のJARVIS」をわずか2日間で完成させた。 開発の鍵は複雑なコーディングではなく、AIに対する具体的な指示出しと反復的なプロンプト改善にある。 技術的な知識がなくてもAIを「ただのチャットツール」から「自律的な作業パートナー」へと昇華させられることを実証した。"
-      },
-      "en": {
-        "title": "How a Non-Technical Insurance Agent Built a Custom ‘JARVIS’ AI Agent in Just Two Days",
-        "summary": "An insurance agency owner with zero programming experience successfully built a personalized AI agent inspired by JARVIS in only 48 hours using ChatGPT. By treating the AI as an active collaborator rather than a passive chatbot, the creator bypassed traditional coding barriers and utilized iterative prompting to design a functional, task-oriented workflow helper. This project highlights a shift in modern development: the capability for non-technical founders to build operational tools solely through precise instruction and feedback loops with LLMs. For builders and entrepreneurs, the takeaway is that deep engineering expertise is no longer the sole gatekeeper for automating complex business processes; framing requirements clearly for AI models can rapidly bridge the gap between idea and execution."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-14T04:32:08.831Z"
   },
   {
     "id": "art-1794630721620-w5lg6",
@@ -12122,33 +12201,6 @@
     "created_at": "2026-11-13T03:17:15.018Z"
   },
   {
-    "id": "art-1794539826670-rryit",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/maskot1977/items/7def9d37300590365323",
-    "published_at": "2026-11-13T02:40:02.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYyMTExNjIlMkY5Y2U4ZWVjZTk1NTAyN2RlODg5ZDUxMjBkNDA2OGJkNDkzNjY4NTdmJTJGeF9sYXJnZS5wbmclM0YxNzMyNTUzMDI1P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz02NTMxZThhZTVlNDU1ZWVkNjM3NTc2Nzk3OGI1ZDJhMQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De652a775c298ccfc8e2af634cc54c5bc?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JTlDJTgwJUU2JTk2JUIwQUklRTUlOEIlOTUlRTUlOTAlOTElRTMlODElQUUlRTUlOEMlODUlRTYlOEIlQUMlRTclOUElODQlRTUlODglODYlRTYlOUUlOTAmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0xMmRlNWQyNmU2MDc0YzFmNTU5YWFlZWI1MzBiYjVhZg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYXNrb3QxOTc3JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MjA2OWI3NWQ1NDYwZDY3NDAyMWEyNzcyYzUyY2M0MDI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=d2271424c411f9013fe376971e71f3da",
-    "title_ja": "AIビジネスの潮流を4つの視点で読み解く：技術の民主化からコスト最適化、組織ガバナンスまでを網羅した経営戦略の羅針盤",
-    "summary_ja": "現在のAIビジネスは単なる技術革新のフェーズを超え、持続可能な収益モデルや技術コストの最適化が求められる段階にある。 本稿ではAI活用を成功させるために不可欠な4つの軸を提示する。 具体的には、商業モデルの再定義、運用コストと信頼性の両立、変化する働き方への適応、そして市場環境に適したガバナンスの構築だ。 個人開発者やスタートアップが、AIというツールを武器に市場競争を勝ち抜くための実践的な戦略論として、経営的な意思決定の要点を解説する。",
-    "translations": {
-      "ja": {
-        "title": "AIビジネスの潮流を4つの視点で読み解く：技術の民主化からコスト最適化、組織ガバナンスまでを網羅した経営戦略の羅針盤",
-        "summary": "現在のAIビジネスは単なる技術革新のフェーズを超え、持続可能な収益モデルや技術コストの最適化が求められる段階にある。 本稿ではAI活用を成功させるために不可欠な4つの軸を提示する。 具体的には、商業モデルの再定義、運用コストと信頼性の両立、変化する働き方への適応、そして市場環境に適したガバナンスの構築だ。 個人開発者やスタートアップが、AIというツールを武器に市場競争を勝ち抜くための実践的な戦略論として、経営的な意思決定の要点を解説する。"
-      },
-      "en": {
-        "title": "Beyond the Hype: A Four-Pillar Strategic Framework for AI Business Sustainability, Cost Optimization, and Corporate Governance",
-        "summary": "The AI ecosystem has moved beyond mere technological excitement, entering a mature phase where sustainable business models and cost efficiency determine long-term success. This analysis outlines four critical pillars for AI-driven ventures: redefining commercial viability, balancing operational costs against output reliability, adapting organizational workflows to AI-augmented roles, and establishing governance that aligns with volatile market realities. For indie developers and startups, simply integrating an LLM is no longer a competitive advantage; instead, the focus must shift to structural cost optimization and strategic decision-making. By applying these governance and operational frameworks, builders can move from experimental prototyping to building scalable, profitable products that withstand the scrutiny of real-world enterprise deployment and market competition."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-13T03:17:06.671Z"
-  },
-  {
     "id": "art-1794539810638-mub2p",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -16576,31 +16628,6 @@
     "created_at": "2026-11-12T06:01:52.095Z"
   },
   {
-    "id": "art-1794463304765-ssa58",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/pero819412/articles/7bb8462b200fd3",
-    "published_at": "2026-11-12T05:30:21.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wUIXH29z--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%2581%25B7%25E5%25A0%25B4%25E3%2581%25AE%25E5%2586%2585%25E8%25A3%25BD%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%2597%25E3%2583%2588%25E3%2582%2592%25E5%2585%25AC%25E9%2596%258B%25E3%2583%25AA%25E3%2583%259D%25E3%2582%25B8%25E3%2583%2588%25E3%2583%25AA%25E3%2581%25AB%25E5%2588%2587%25E3%2582%258A%25E5%2587%25BA%25E3%2581%2599%2520%25E2%2580%2595%2520%25E7%25A7%2598%25E6%2583%2585%25E5%25A0%25B1%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25B3160%25E4%25BB%25B6%25E3%2583%25BB%25E6%2597%25A2%25E5%25AE%259A%25E5%2580%25A4%25E3%2581%25AE%25E6%2592%25A4%25E5%25BB%2583%25E3%2583%25BB%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:CAD%25E5%25B0%2582DT%25E3%2581%25AEAI%25E6%25B4%25BB%25E7%2594%25A8%25E8%25A1%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2JlOWVmZTE4NGIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "職場の内製スクリプト30本を公開リポジトリへ―秘情報スキャン160件検出と依存関係解消の全工程",
-    "summary_ja": "歯科技工所の自動化で使っていた30本の内製スクリプト群をオープンソース化するため、機密情報スキャナーを用いて160件の潜在的なリスクを洗い出し、秘匿情報や環境依存設定を完全に排除するまでのプロセスを解説。 単一のマネージャーから起動する統合環境として開発されたツール群を、どのようにして「他者も使える汎用的なコード」として切り出したのか。 実務で使われる自動化コードを安全に公開し、メンテナンス可能なリポジトリへと昇華させるための実践的な棚卸し手法が記されている。",
-    "translations": {
-      "ja": {
-        "title": "職場の内製スクリプト30本を公開リポジトリへ―秘情報スキャン160件検出と依存関係解消の全工程",
-        "summary": "歯科技工所の自動化で使っていた30本の内製スクリプト群をオープンソース化するため、機密情報スキャナーを用いて160件の潜在的なリスクを洗い出し、秘匿情報や環境依存設定を完全に排除するまでのプロセスを解説。 単一のマネージャーから起動する統合環境として開発されたツール群を、どのようにして「他者も使える汎用的なコード」として切り出したのか。 実務で使われる自動化コードを安全に公開し、メンテナンス可能なリポジトリへと昇華させるための実践的な棚卸し手法が記されている。"
-      },
-      "en": {
-        "title": "Turning 30 internal automation scripts into a public repo: Cleaning 160 secret leaks and refactoring dependencies",
-        "summary": "The author documents the rigorous process of open-sourcing 30 internal automation scripts used in a dental lab, transitioning from a private, integrated manager system to a clean, public repository. The effort involved scanning over 160 potential secret leaks and systematically stripping away environment-specific configurations and hardcoded defaults to ensure portability. By breaking down a 1.18GB codebase into reusable, generalized components, the author demonstrates a repeatable framework for developers who want to share niche utility code without exposing sensitive operational infrastructure. The article serves as a technical blueprint for anyone looking to sanitize proprietary work scripts for community contribution, focusing on audit procedures, dependency isolation, and the structural refactoring required to transform fragile, internal-only tools into stable, maintainable public software."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-12T06:01:44.765Z"
-  },
-  {
     "id": "art-1794462416567-e273x",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -18176,32 +18203,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T19:03:20.361Z"
-  },
-  {
-    "id": "art-1794422822389-5lqzg",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tsugu_sukima/books/765fcda0a99fad",
-    "published_at": "2026-11-11T15:08:04.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--vntitD5D--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci8zNzJhOWQ0MTE4LmpwZWc=%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
-    "title_ja": "Claude Codeの実践ガイド：役割分担・権限・差し戻しを制御するサブエージェント設定ファイル集が公開",
-    "summary_ja": "Claude Codeを活用し、サブエージェントの役割分担や権限設定、差し戻しフローを制御する設定ファイル（Markdown）の集大成。 書く係と判定係を分離する最小構成から、ツール制限、差し戻し回数の管理、安全な保存ルールまでを網羅している。 単一のプロンプトでは解決できない複雑なタスクを、エージェントの階層化と構造化データで制御したい開発者にとって必須の知見といえる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの実践ガイド：役割分担・権限・差し戻しを制御するサブエージェント設定ファイル集が公開",
-        "summary": "Claude Codeを活用し、サブエージェントの役割分担や権限設定、差し戻しフローを制御する設定ファイル（Markdown）の集大成。 書く係と判定係を分離する最小構成から、ツール制限、差し戻し回数の管理、安全な保存ルールまでを網羅している。 単一のプロンプトでは解決できない複雑なタスクを、エージェントの階層化と構造化データで制御したい開発者にとって必須の知見といえる。"
-      },
-      "en": {
-        "title": "Claude Code Implementation Guide: How to Structure Sub-Agent Config Files for Role Delegation, Permissions, and Feedback Loops",
-        "summary": "This guide provides a comprehensive collection of Markdown configuration files to master Claude Code, focusing on structuring sub-agent hierarchies, permissions, and feedback loops. It walks through practical implementations, starting from a minimal setup—separating writer and evaluator roles—to more advanced patterns like restricting tools, managing loop limits, and enforcing file-saving safety protocols. By defining clear boundaries for sub-agents, developers can manage complex workflows that a single prompt cannot handle effectively. For builders moving beyond simple chat interactions into autonomous multi-agent systems, this collection offers a concrete blueprint to turn erratic LLM behavior into predictable, structured output pipelines that maintain control without succumbing to endless revision cycles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-11T18:47:02.389Z"
   },
   {
     "id": "art-1794422815431-vfu0n",
