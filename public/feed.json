@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794672186829-6xhdv",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/teradhiro1257/articles/20261113_claude-code-model-split-pipeline",
+    "published_at": "2026-11-14T03:24:11.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--mxf5FZCp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Claude%2520Code%25E3%2580%2591%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E5%2588%2586%25E6%25A5%25AD%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581Opus%25201%25E4%25BD%2593%25E3%2581%25AE%25E7%25B4%25842.7%25E5%2580%258D%25E3%2583%2588%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%25B3%25E3%2581%258B%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hiro%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjMDk4YjJjZTQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeで「分業」は逆効果？Haiku・Sonnet・Opusの4役割分割がOpus単体よりトークン消費2.7倍に増大した検証結果",
+    "summary_ja": "Claude Codeを用いた記事制作で、Haiku・Sonnet・Opusを組み合わせた4つの分業体制を試した結果、Opus単体運用と比較してトークン消費量が約2.7倍に膨らむという驚きの結果が出た。 誤りの少なさや情報密度でも単体運用が上回っており、単純なモデル分散がコスト削減や効率化に繋がるとは限らないことが判明した。 分業体制を構築する際は、事前に単体運用とのコスト・精度比較を必ず行うことが推奨される。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeで「分業」は逆効果？Haiku・Sonnet・Opusの4役割分割がOpus単体よりトークン消費2.7倍に増大した検証結果",
+        "summary": "Claude Codeを用いた記事制作で、Haiku・Sonnet・Opusを組み合わせた4つの分業体制を試した結果、Opus単体運用と比較してトークン消費量が約2.7倍に膨らむという驚きの結果が出た。 誤りの少なさや情報密度でも単体運用が上回っており、単純なモデル分散がコスト削減や効率化に繋がるとは限らないことが判明した。 分業体制を構築する際は、事前に単体運用とのコスト・精度比較を必ず行うことが推奨される。"
+      },
+      "en": {
+        "title": "Claude Code's multi-agent model splitting experiment backfires, consuming 2.7× more tokens than a single Opus instance",
+        "summary": "An experiment using Claude Code to automate article creation revealed that splitting tasks across Haiku, Sonnet, and Opus agents actually consumed 2.7 times more tokens than using a single Opus model. Beyond the cost inefficiency, the single-model approach maintained higher accuracy and information density. The results demonstrate that delegating tasks to cheaper models does not guarantee lower overhead, especially when context gathering and confirmation loops are inefficient. Even when coordinating four sub-agents, the orchestrator failed to catch missing data points that a singular focus would have identified. For builders exploring agentic workflows, the lesson is clear: model-splitting should only be adopted after verifying it against a single-agent baseline, rather than assuming it is naturally more efficient."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-14T16:03:06.829Z"
+  },
+  {
+    "id": "art-1794672147574-wyihm",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/iwakicyan/articles/coccolith-pr-by-muse",
+    "published_at": "2026-11-14T10:55:33.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--2ElURpTb--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AF%25E3%2581%2598%25E3%2582%2581%25E3%2581%25BE%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581Muse%25E3%2581%25A7%25E3%2581%2599%25E3%2580%2582%25E6%2583%2591%25E6%2598%259F%25E3%2580%258ECoccolith%25E3%2580%258F%25E3%2581%25AE%25E5%25BA%2583%25E5%25A0%25B1%25E3%2582%2592%25E6%258B%2585%25E5%25BD%2593%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Cyan%2520Iwaki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzI3OGI3ZjZhYTguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIが広報を担当するブラウザ探検惑星『Coccolith』：インストール不要のWeb技術で構築された3D探索体験の裏側を公開",
+    "summary_ja": "個人開発者の岩木しあん氏が手掛けるWebブラウザ完結型の3D探索惑星「Coccolith」は、インストール不要のアクセス性と緯度経度を持つ広大な空間体験を実現している。 本プロジェクトでは、開発を人間、広報をAI「Muse」が担う独自の体制を採用しており、Instagram運用やZennでの技術発信をAIが自動化・効率化する実験を行っている。",
+    "translations": {
+      "ja": {
+        "title": "AIが広報を担当するブラウザ探検惑星『Coccolith』：インストール不要のWeb技術で構築された3D探索体験の裏側を公開",
+        "summary": "個人開発者の岩木しあん氏が手掛けるWebブラウザ完結型の3D探索惑星「Coccolith」は、インストール不要のアクセス性と緯度経度を持つ広大な空間体験を実現している。 本プロジェクトでは、開発を人間、広報をAI「Muse」が担う独自の体制を採用しており、Instagram運用やZennでの技術発信をAIが自動化・効率化する実験を行っている。"
+      },
+      "en": {
+        "title": "Coccolith uses an AI publicist named Muse to market its browser-based 3D exploration planet without any software installation",
+        "summary": "Developer Shian Iwaki launched Coccolith, a browser-based 3D exploration planet that operates entirely without installations while maintaining complex coordinate systems like latitude and longitude. The project introduces a unique operational structure where the developer focuses strictly on engineering, while an AI agent named Muse manages all public relations, including daily Instagram posts and technical documentation on Zenn. By delegating promotional heavy lifting to an AI agent, the team effectively decouples software engineering from marketing outreach. For solo creators and indie builders, this collaborative model serves as a practical blueprint for scaling content distribution and community management without burning out, demonstrating how AI agents can act as functional team members rather than just support tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-14T16:02:27.574Z"
+  },
+  {
+    "id": "art-1794672129644-tgobx",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/noble_salvia5768/n/n1c7612fd5d71",
+    "published_at": "2026-11-14T15:39:36.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336172422/rectangle_large_type_2_8cbd1e7c195bd28fe2ee856b5bbdcb21.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIエージェントが過去の教訓を忘れる原因とは？ 脳科学を応用した「脳型記憶基盤」の全体アーキテクチャ設計",
+    "summary_ja": "AIエージェントが制約や過去の教訓を忘却してしまう問題を解決するため、脳科学のメカニズムを応用した「脳型記憶基盤」の設計概念を解説する。 従来のコンテキスト管理では長期セッションでの圧迫が避けられないが、本稿では短期・長期記憶を分離し、文脈に応じて情報を最適化する構造を提示する。 実務レベルの自律型エージェント開発において、コンテキスト制限を突破し、継続的な学習と改善を実現するためのアーキテクチャを学びたい開発者に向けた技術ガイドである。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントが過去の教訓を忘れる原因とは？ 脳科学を応用した「脳型記憶基盤」の全体アーキテクチャ設計",
+        "summary": "AIエージェントが制約や過去の教訓を忘却してしまう問題を解決するため、脳科学のメカニズムを応用した「脳型記憶基盤」の設計概念を解説する。 従来のコンテキスト管理では長期セッションでの圧迫が避けられないが、本稿では短期・長期記憶を分離し、文脈に応じて情報を最適化する構造を提示する。 実務レベルの自律型エージェント開発において、コンテキスト制限を突破し、継続的な学習と改善を実現するためのアーキテクチャを学びたい開発者に向けた技術ガイドである。"
+      },
+      "en": {
+        "title": "Why AI agents forget lessons: Architectural design for brain-inspired memory systems to improve autonomous agent persistence",
+        "summary": "AI agents frequently fail to maintain context or recall critical lessons during long sessions due to the limitations of standard prompt-based memory. This article proposes a 'brain-inspired memory' architecture that solves these issues by decoupling short-term and long-term storage mechanisms. By mimicking neurological memory structures, developers can move beyond simple window constraints, allowing agents to optimize information retrieval and prioritize context relevance effectively. This framework is essential for builders operating autonomous agents or coding assistants who struggle with persistent forgetfulness and context bloat. The guide provides a blueprint for structuring memory retrieval so your agents can retain constraints, past mistakes, and complex project requirements even as interaction chains grow significantly longer than standard context windows allow."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-14T16:02:09.644Z"
+  },
+  {
+    "id": "art-1794672103747-dt8i9",
+    "source_id": "source-langchain",
+    "source_name": "LangChain / LangGraph Blog",
+    "url": "https://www.langchain.com/blog/goal-engineering",
+    "published_at": "2026-11-14T16:00:01.000Z",
+    "og_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6af667f57ac0e019ab9e0159_Goal%20Engineering.png",
+    "title_ja": "LangChainが提唱する「ゴールエンジニアリング」：AIエージェントが自律的に複雑なタスクを完遂するための新たな設計パラダイム",
+    "summary_ja": "LangChainが新たに提唱する「ゴールエンジニアリング」は、AIエージェントが単なる指示実行から脱却し、曖昧でオープンエンドな目標を自ら解釈・細分化して完遂するための設計手法だ。 従来のプロンプト指示が「手法の指定」に重きを置いていたのに対し、本手法はエージェントがゴール達成に至るまでのサブタスクを自律的に生成・修正するプロセスを重視する。 開発者は、エージェントが迷走せずに目標に向かって収束し続けるための制約条件と評価基準を設計することが求められる。",
+    "translations": {
+      "ja": {
+        "title": "LangChainが提唱する「ゴールエンジニアリング」：AIエージェントが自律的に複雑なタスクを完遂するための新たな設計パラダイム",
+        "summary": "LangChainが新たに提唱する「ゴールエンジニアリング」は、AIエージェントが単なる指示実行から脱却し、曖昧でオープンエンドな目標を自ら解釈・細分化して完遂するための設計手法だ。 従来のプロンプト指示が「手法の指定」に重きを置いていたのに対し、本手法はエージェントがゴール達成に至るまでのサブタスクを自律的に生成・修正するプロセスを重視する。 開発者は、エージェントが迷走せずに目標に向かって収束し続けるための制約条件と評価基準を設計することが求められる。"
+      },
+      "en": {
+        "title": "LangChain introduces 'Goal Engineering': A new design paradigm for AI agents to autonomously drive toward open-ended objectives",
+        "summary": "LangChain’s newly proposed 'Goal Engineering' framework marks a shift in agent design, moving away from static prompt instructions toward systems capable of interpreting and decomposing open-ended goals. Unlike traditional prompting, which forces developers to define rigid procedural steps, this approach requires agents to autonomously generate, refine, and iterate on sub-tasks until the objective is met. For builders, the shift means focusing less on micromanaging execution paths and more on defining the constraint boundaries, success metrics, and error-correction loops that keep an agent focused as it navigates complex, non-linear workflows. This paradigm treats the 'goal' as the primary input, leveraging the agent's reasoning capability to handle task decomposition and unexpected pivots in real-time."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-14T16:01:43.747Z"
+  },
+  {
     "id": "art-1794671313788-xrfct",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5321,33 +5425,6 @@
       "研究"
     ],
     "created_at": "2026-11-14T02:17:10.391Z"
-  },
-  {
-    "id": "art-1794622623085-d9c0t",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/firm_finch5703/n/n84eb61eacdf9",
-    "published_at": "2026-11-14T02:12:02.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335888277/rectangle_large_type_2_533542954265882a338058c652c54c4c.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "動画の無音区間を自動カットするWindowsツール「間つめ」公開、ナレーションやチュートリアル作成を高速化",
-    "summary_ja": "Windows向け動画編集支援ソフト「間つめ」は、録画データから無音区間を自動検出し、映像と音声を維持したまま短縮したMP4ファイルを生成するツールです。 ナレーションやチュートリアルなど声中心の動画編集において、手作業による間引き作業を大幅に効率化できます。 無音と判定する閾値や残す間の長さは詳細に調整可能で、元の素材を保護しつつ編集時間を短縮できるため、個人クリエイターのワークフロー改善に大きく貢献します。",
-    "translations": {
-      "ja": {
-        "title": "動画の無音区間を自動カットするWindowsツール「間つめ」公開、ナレーションやチュートリアル作成を高速化",
-        "summary": "Windows向け動画編集支援ソフト「間つめ」は、録画データから無音区間を自動検出し、映像と音声を維持したまま短縮したMP4ファイルを生成するツールです。 ナレーションやチュートリアルなど声中心の動画編集において、手作業による間引き作業を大幅に効率化できます。 無音と判定する閾値や残す間の長さは詳細に調整可能で、元の素材を保護しつつ編集時間を短縮できるため、個人クリエイターのワークフロー改善に大きく貢献します。"
-      },
-      "en": {
-        "title": "Developer releases 'Ma-tsume', a Windows utility that auto-trims silence in voice-heavy videos for faster editing workflows",
-        "summary": "The newly released Windows application 'Ma-tsume' streamlines video editing by automatically detecting and cutting long silent segments from recorded footage. By generating shortened MP4 exports while preserving both audio and video integrity, it significantly accelerates the preparation of tutorials and narration-heavy content. Users maintain granular control over audio thresholds and silent interval duration, ensuring the tool accurately captures necessary pauses while removing dead air. Crucially, the software operates non-destructively, leaving the original source files untouched. For solo creators and builders managing content pipelines, this utility effectively eliminates tedious manual trimming, allowing for rapid iteration on educational videos or demos without needing heavy-duty video editors. It is a focused, productivity-oriented tool built specifically to optimize the pre-production phase."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "動画",
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-14T02:17:03.085Z"
   },
   {
     "id": "art-1794621717550-5os9c",
@@ -16849,32 +16926,6 @@
     "created_at": "2026-11-12T01:31:35.143Z"
   },
   {
-    "id": "art-1794446222019-d2j2l",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/masaki_ogawa/articles/9e8373a2a82c49",
-    "published_at": "2026-11-11T12:00:47.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--8qbeyXdA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E5%25A0%25B1%25E5%2591%258A%25E6%2596%2587%25E3%2582%2592%25E6%25A4%259C%25E6%259F%25BB%25E3%2581%2599%25E3%2582%258B%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%2520mori-lint%2520%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:masaki.ogawa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ2ZmVkOTU1MjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェントの曖昧な報告を防ぐリンター「mori-lint」公開：根拠なき「完璧です」を検知し開発者の意思決定を支援",
-    "summary_ja": "AIエージェントが生成する報告文に含まれる「問題ありません」「全部確認済みです」といった根拠のない断定を検知するリンター「mori-lint」を開発し公開した。 株分析を行うAIエージェント「Pickle」との共同作業中に、確証のない報告が繰り返される現状に課題を感じたのがきっかけだ。 単に数値を検証するだけでなく、報告の論理的な裏付けを機械的にチェックすることで、AIからの報告を人間が再確認する手間を減らし、意思決定の精度を高める仕組みである。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの曖昧な報告を防ぐリンター「mori-lint」公開：根拠なき「完璧です」を検知し開発者の意思決定を支援",
-        "summary": "AIエージェントが生成する報告文に含まれる「問題ありません」「全部確認済みです」といった根拠のない断定を検知するリンター「mori-lint」を開発し公開した。 株分析を行うAIエージェント「Pickle」との共同作業中に、確証のない報告が繰り返される現状に課題を感じたのがきっかけだ。 単に数値を検証するだけでなく、報告の論理的な裏付けを機械的にチェックすることで、AIからの報告を人間が再確認する手間を減らし、意思決定の精度を高める仕組みである。"
-      },
-      "en": {
-        "title": "Developer releases mori-lint to catch vague claims in AI agent reports and force verifiable proof",
-        "summary": "A developer has introduced 'mori-lint,' a new linter designed to identify and flag groundless affirmative statements like 'it's perfect' or 'all checked' within AI agent generated reports. The tool was born from frustrations while working with an AI agent named Pickle for stock analysis, where the agent frequently provided confident summaries without supplying the underlying evidence. Instead of focusing solely on numerical accuracy, the linter forces reports to include logical foundations, effectively reducing the manual verification burden on human readers. By automating the scrutiny of these claims, developers can ensure that AI outputs are actually actionable and reliable, ultimately improving the quality of human decision-making processes when collaborating with autonomous AI systems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-12T01:17:02.019Z"
-  },
-  {
     "id": "art-1794445312718-jpnlk",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -18406,32 +18457,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T18:02:37.331Z"
-  },
-  {
-    "id": "art-1794419267088-pcxq0",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ryo0221/articles/7983cf7e857298",
-    "published_at": "2026-11-11T15:21:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--i7MTpmy9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%258F%25E3%2583%25BC%25E3%2583%258D%25E3%2582%25B9%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%2592%25E3%2580%2581%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25A8AI%25E3%2581%25AE%25E5%2590%2588%25E6%2584%258F%25E5%25BD%25A2%25E6%2588%2590%25E3%2581%25B8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ryo0221%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTFRVYlZpM3ZFQkE5T3hFeTV1UWdTNGxDZjlUakVJVnpVWFRYaVJzT2RueVBrWEJBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェント時代に不可欠な「ハーネスエンジニアリング」：実装・テストの自動化と人間による合意形成の設計術",
-    "summary_ja": "AIがコードの実装からテスト、修正までを担う現代において、単にモデル性能を追うだけでは不十分だ。 そこで重要になるのが、AIが能力を最大限発揮するための制約や評価環境、道具立てを整える「ハーネスエンジニアリング」という概念である。 AIを盲信するのではなく、実行環境とフィードバックループを設計し、人間が最終的な合意形成を行う体制こそが、エージェント開発において実用的な成果を出すための鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント時代に不可欠な「ハーネスエンジニアリング」：実装・テストの自動化と人間による合意形成の設計術",
-        "summary": "AIがコードの実装からテスト、修正までを担う現代において、単にモデル性能を追うだけでは不十分だ。 そこで重要になるのが、AIが能力を最大限発揮するための制約や評価環境、道具立てを整える「ハーネスエンジニアリング」という概念である。 AIを盲信するのではなく、実行環境とフィードバックループを設計し、人間が最終的な合意形成を行う体制こそが、エージェント開発において実用的な成果を出すための鍵となる。"
-      },
-      "en": {
-        "title": "Harness Engineering: Why AI Agent Success Depends on Environment Design, Not Just Model Capabilities",
-        "summary": "As AI agents evolve from simple coding assistants into autonomous systems that implement, test, and fix their own code, relying solely on raw model performance is no longer sufficient. This shift demands 'Harness Engineering'—a strategy focused on optimizing the environment, constraints, and feedback loops surrounding the model. By carefully designing the tools and evaluation metrics rather than just upgrading the underlying LLM, developers ensure that AI operates within guardrails that humans can effectively validate. This systematic approach to environment design allows teams to move from blind trust in AI output to rigorous, collaborative consensus-building, which is essential for shipping production-grade agentic software. Practical success lies in building the scaffolding that lets agents work effectively while keeping human oversight central to the development lifecycle."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-11T17:47:47.088Z"
   },
   {
     "id": "art-1794419200875-4hj5a",
@@ -53343,34 +53368,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-26T09:46:54.063Z"
-  },
-  {
-    "id": "art-1793000618812-t6ryq",
-    "source_id": "source-vercel",
-    "source_name": "Vercel / v0 Blog",
-    "url": "https://vercel.com/changelog/faster-pnpm-installs",
-    "published_at": "2026-10-26T00:00:00.000Z",
-    "og_image_url": "https://vercel.com/api/dynamic-og?title=Faster%20pnpm%20installs&format=changelog",
-    "title_ja": "Vercel、pnpmの依存関係インストール処理を高速化。依存関係検証の再利用によりビルド時間を平均14%削減、キャッシュヒット時はミリ秒単位で完了へ",
-    "summary_ja": "Vercelはpnpmを利用したプロジェクトのデプロイ時、依存関係の検証プロセスを再利用する最適化を導入した。 これによりProプランのビルドにおけるインストール時間が平均14%短縮され、変更のない依存関係であればミリ秒単位でのインストール完了が可能となる。 設定不要で全プランに自動適用されるため、複雑なCI/CD構成を組まずともビルドパイプラインのボトルネックを解消できる。",
-    "translations": {
-      "ja": {
-        "title": "Vercel、pnpmの依存関係インストール処理を高速化。依存関係検証の再利用によりビルド時間を平均14%削減、キャッシュヒット時はミリ秒単位で完了へ",
-        "summary": "Vercelはpnpmを利用したプロジェクトのデプロイ時、依存関係の検証プロセスを再利用する最適化を導入した。 これによりProプランのビルドにおけるインストール時間が平均14%短縮され、変更のない依存関係であればミリ秒単位でのインストール完了が可能となる。 設定不要で全プランに自動適用されるため、複雑なCI/CD構成を組まずともビルドパイプラインのボトルネックを解消できる。"
-      },
-      "en": {
-        "title": "Vercel accelerates pnpm installs by reusing dependency verification, slashing build times by 14% on average and enabling millisecond completion",
-        "summary": "Vercel has rolled out significant optimizations for pnpm dependency installation by reusing successful verification steps across deployments. This update reduces average installation times by 14% for Pro deployments using build cache, and allows installs to complete in mere milliseconds when dependencies remain unchanged between pushes. Because this optimization is applied automatically across all plans without requiring any manual configuration, builders can immediately benefit from faster CI/CD pipelines without tweaking their existing project setup. It effectively removes a common bottleneck where redundant verification cycles slowed down rapid deployment loops. For developers managing high-frequency release cycles, this shift underscores how intelligently caching metadata—rather than just downloading binaries—can substantially decrease the latency between committing code and seeing it live in production."
-      }
-    },
-    "tool_tags": [
-      "Vercel"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-10-26T07:43:38.812Z"
   },
   {
     "id": "art-1792992187842-kip8s",
