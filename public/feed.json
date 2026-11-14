@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1794642436342-6wh28",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/53563683368/n/n8f132e8d55e6",
+    "published_at": "2026-11-14T07:41:43.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335083241/rectangle_large_type_2_e705fcfa1ae86c6a31c263fb54c67d6f.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人ゲーム開発者が実践した2,600件超のメディア・配信者へのAI活用アプローチとメールマーケティング全工程",
+    "summary_ja": "個人開発ゲームのプロモーションのため、2,700件以上のゲームメディア・配信者リストをAIを用いて作成し、2,600通超のメールを送付した事例。 リスト作成、メール文面作成、送信予約の全工程をAIで自動化し、人間は意思決定と最終確認のみに集中する体制を構築した。 小規模チームが大量のリードに対して効率的にリーチする手法として、AI活用による営業自動化の現実的なロードマップを示している。",
+    "translations": {
+      "ja": {
+        "title": "個人ゲーム開発者が実践した2,600件超のメディア・配信者へのAI活用アプローチとメールマーケティング全工程",
+        "summary": "個人開発ゲームのプロモーションのため、2,700件以上のゲームメディア・配信者リストをAIを用いて作成し、2,600通超のメールを送付した事例。 リスト作成、メール文面作成、送信予約の全工程をAIで自動化し、人間は意思決定と最終確認のみに集中する体制を構築した。 小規模チームが大量のリードに対して効率的にリーチする手法として、AI活用による営業自動化の現実的なロードマップを示している。"
+      },
+      "en": {
+        "title": "How a Solo Game Developer Used AI to Automate Outreach to 2,600+ Media Contacts and Streamers",
+        "summary": "A solo game developer recently detailed their workflow for promoting a title by building a massive list of 2,700+ media outlets and streamers. Leveraging AI, they automated the entire lifecycle, including prospecting, drafting personalized outreach emails, and scheduling delivery, successfully firing off over 2,600 messages. The human operator acted solely as the decision-maker and final quality control, ensuring that only curated, approved content was sent out. This case study demonstrates a scalable framework for indie builders looking to hack marketing distribution without a dedicated PR team. It proves that by treating contact lists and outreach templates as data pipelines, even solo creators can maintain professional-level visibility and execute large-scale cold email campaigns efficiently."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-11-14T07:47:16.342Z"
+  },
+  {
+    "id": "art-1794642411974-snlqp",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/sutokei/articles/workers-rate-limit-d1",
+    "published_at": "2026-11-13T23:00:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--6mWw18sJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Workers%2520%25E3%2581%25AE%25E5%259B%259E%25E6%2595%25B0%25E5%2588%25B6%25E9%2599%2590%25E3%2582%2592%2520KV%2520%25E3%2581%25A7%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25AF%25E9%2580%259A%25E3%2582%258A%25E3%2580%2581%25E6%259C%25AC%25E7%2595%25AA%25E3%2581%25A7%25E3%2581%25AF1%25E5%259B%259E%25E3%2582%2582%25E6%2596%25AD%25E3%2582%2589%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2599%25E3%2581%2585%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzU5ODc1YjlhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Cloudflare Workersのレート制限実装でKVとバインディングが機能しなかった個人開発の教訓：正解はD1だった",
+    "summary_ja": "図書館の貸出状況をAI運営する個人開発サイト「借りどき」で、Cloudflare WorkersのAPI保護を目的とした回数制限の実装が難航した。 KVでのIP単位カウントや標準のRate Limitingバインディングを試したが、本番環境で制限が機能せず設定上限を超過する事態に直面した。 最終的にD1データベースを用いた実装でようやく想定通りの制限が可能となった。",
+    "translations": {
+      "ja": {
+        "title": "Cloudflare Workersのレート制限実装でKVとバインディングが機能しなかった個人開発の教訓：正解はD1だった",
+        "summary": "図書館の貸出状況をAI運営する個人開発サイト「借りどき」で、Cloudflare WorkersのAPI保護を目的とした回数制限の実装が難航した。 KVでのIP単位カウントや標準のRate Limitingバインディングを試したが、本番環境で制限が機能せず設定上限を超過する事態に直面した。 最終的にD1データベースを用いた実装でようやく想定通りの制限が可能となった。"
+      },
+      "en": {
+        "title": "Cloudflare Workers Rate Limiting Failures: Why KV and Standard Bindings Failed for This Personal Project and How D1 Solved It",
+        "summary": "The developer of \"Karidoki,\" an AI-operated library tracker, encountered unexpected hurdles when securing their Cloudflare Workers backend. They first attempted to implement rate limiting using a KV store to track requests by IP, but the logic failed to block users in production, allowing requests well beyond the limit. A subsequent attempt using the standard Rate Limiting binding also proved ineffective, processing dozens of requests per second despite a strict cap. Only after switching to D1 for persistent database-backed counting did the system finally enforce the limits correctly. This experience underscores that for high-reliability features, developers should not blindly trust abstract platform utilities and must test for edge-case failures in the actual deployment environment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-14T07:46:51.974Z"
+  },
+  {
+    "id": "art-1794642402137-w5npo",
+    "source_id": "source-github-trending",
+    "source_name": "GitHub Trending (AI / TypeScript / Python)",
+    "url": "https://github.com/alibaba/open-code-review",
+    "published_at": "2026-11-14T07:46:42.137Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/1241960226/27bf01cb-17df-44d5-9b7b-bcf17c970c6d",
+    "title_ja": "Alibabaが社内検証済みのAIコードレビュー「OpenCodeReview」をOSS化、LLMと静的解析で数百万の欠陥を特定",
+    "summary_ja": "Alibabaが開発した「OpenCodeReview」は、同社の数万人の開発者が2年間利用し、数百万件のコード欠陥を特定したAIレビューツールだ。 決定論的なパイプラインとLLMエージェントを組み合わせ、NPEやSQLインジェクション等の脆弱性を行レベルで指摘する。 大規模開発環境で実績を積んだ本ツールは、単なるAIによる要約ではなく、安全で実用的なコードレビューの自動化を求める開発チームにとって強力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "Alibabaが社内検証済みのAIコードレビュー「OpenCodeReview」をOSS化、LLMと静的解析で数百万の欠陥を特定",
+        "summary": "Alibabaが開発した「OpenCodeReview」は、同社の数万人の開発者が2年間利用し、数百万件のコード欠陥を特定したAIレビューツールだ。 決定論的なパイプラインとLLMエージェントを組み合わせ、NPEやSQLインジェクション等の脆弱性を行レベルで指摘する。 大規模開発環境で実績を積んだ本ツールは、単なるAIによる要約ではなく、安全で実用的なコードレビューの自動化を求める開発チームにとって強力な選択肢となる。"
+      },
+      "en": {
+        "title": "Alibaba open-sources OpenCodeReview, a battle-tested AI assistant that uses LLMs and static analysis to identify millions of code defects",
+        "summary": "Alibaba has open-sourced OpenCodeReview, the internal AI-powered CLI tool that has served tens of thousands of their own engineers over the last two years, successfully flagging millions of code defects. Unlike basic AI wrappers, it utilizes a hybrid architecture combining deterministic pipelines for precise rule enforcement—such as detecting NPEs, thread-safety issues, and SQL injections—with LLM agents for contextual reasoning. After massive validation within Alibaba’s production environment, this tool is now available for broader implementation. For teams struggling with noisy AI-generated pull requests, this provides a mature, reliable framework that balances strict code standards with the interpretive power of modern LLMs to keep interactive development pipelines secure and efficient."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-14T07:46:42.137Z"
+  },
+  {
     "id": "art-1794641561194-x5doh",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -7055,31 +7135,6 @@
       "開発"
     ],
     "created_at": "2026-11-13T13:32:24.349Z"
-  },
-  {
-    "id": "art-1794576736057-z99wf",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/goldstaub976/n/n3473287d9bf0",
-    "published_at": "2026-11-13T13:29:36.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335729246/rectangle_large_type_2_9d8051de27897315c25e5914d3d10d98.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ゲームではないがゲーム的体験を提供する「ゲーモイド（Gameoid）」とは？UI・UX設計における新たなパラダイムを解釈する",
-    "summary_ja": "「ゲーモイド（Gameoid）」とは、ゲームそのものではないが、ゲームの要素や仕組みを取り入れた体験を指す造語である。 単なる遊び心ではなく、ユーザーのエンゲージメントを高めるためのUI/UX設計手法として、アプリやプロダクトに応用できる概念だ。 開発者や個人開発者は、プロダクトにゲーミフィケーションの要素をどう取り込み、ユーザーの離脱を防ぐか考える上で、この「ゲームではないがゲーム的」というアプローチを理解しておく必要がある。",
-    "translations": {
-      "ja": {
-        "title": "ゲームではないがゲーム的体験を提供する「ゲーモイド（Gameoid）」とは？UI・UX設計における新たなパラダイムを解釈する",
-        "summary": "「ゲーモイド（Gameoid）」とは、ゲームそのものではないが、ゲームの要素や仕組みを取り入れた体験を指す造語である。 単なる遊び心ではなく、ユーザーのエンゲージメントを高めるためのUI/UX設計手法として、アプリやプロダクトに応用できる概念だ。 開発者や個人開発者は、プロダクトにゲーミフィケーションの要素をどう取り込み、ユーザーの離脱を防ぐか考える上で、この「ゲームではないがゲーム的」というアプローチを理解しておく必要がある。"
-      },
-      "en": {
-        "title": "What is a 'Gameoid'? Exploring the new UI/UX design paradigm for products that feel like games without being one",
-        "summary": "The term 'gameoid' describes digital experiences that are not full-fledged games but integrate core gaming mechanics, loops, and psychology to drive user engagement. It is a distinct design paradigm, moving beyond simple gamification to weave playful elements directly into the functional UI/UX of non-game applications. For builders and indie developers, leveraging gameoid design is a potent strategy for increasing stickiness and reducing churn in utility-focused apps. By incorporating progression markers, feedback loops, and intuitive rewards, you can transform standard interfaces into compelling, habit-forming interactions. Understanding the gameoid approach is essential for anyone looking to build products that sustain attention by blending functional utility with the addictive, satisfying mechanics typically reserved for game titles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-13T13:32:16.057Z"
   },
   {
     "id": "art-1794576728288-t6zyj",
@@ -18702,32 +18757,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T13:02:57.163Z"
-  },
-  {
-    "id": "art-1794401262205-87nxg",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/joe_wolf_woof/articles/de818e9d30fcaa",
-    "published_at": "2026-11-11T02:41:37.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3H13m87t--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%2520%25E3%2582%25AB%25E3%2583%25A1%25E3%2583%25A9%25E7%2594%25BB%25E5%2583%258F%25E3%2581%258B%25E3%2582%2589%25E7%25A9%25BA%25E9%2596%2593%25E3%2582%2592%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2597%25E3%2581%25A6%25E5%258B%2595%25E3%2581%258F3D%2520AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2582%2592%25E8%2587%25AA%25E4%25BD%259C%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JOE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGcxejZuQzRrbDh5M2cybkd2YUFvVDVsRWUxcDF4Z0N4SXhmY2JIMG5sV0pySDRQUUt5QT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "スマホカメラだけで現実空間を認識する3D AIエージェント開発術：three.jsとGeminiを用いたブラウザ完結型WebARの実装詳解",
-    "summary_ja": "スマホのカメラ映像を読み取り、現実空間の物体を認識して音声とモーションで対話する3D AIエージェントをブラウザ上で実現する開発手法を解説する。 three.jsによる3D表示、Geminiによる状況理解、そしてCOCO-SSDやOWL-ViTを組み合わせた物体検知のハイブリッド実装が鍵となる。 インストール不要のWebARで空間認識型AIを構築する際の、フロントエンド統合と推論モデル選定の勘所を学ぶことができる。",
-    "translations": {
-      "ja": {
-        "title": "スマホカメラだけで現実空間を認識する3D AIエージェント開発術：three.jsとGeminiを用いたブラウザ完結型WebARの実装詳解",
-        "summary": "スマホのカメラ映像を読み取り、現実空間の物体を認識して音声とモーションで対話する3D AIエージェントをブラウザ上で実現する開発手法を解説する。 three.jsによる3D表示、Geminiによる状況理解、そしてCOCO-SSDやOWL-ViTを組み合わせた物体検知のハイブリッド実装が鍵となる。 インストール不要のWebARで空間認識型AIを構築する際の、フロントエンド統合と推論モデル選定の勘所を学ぶことができる。"
-      },
-      "en": {
-        "title": "Building a 3D AI agent that understands your room via smartphone camera: A browser-based WebAR implementation using three.js and Gemini",
-        "summary": "This development guide details how to build a 3D AI agent that perceives the real-world environment through a smartphone camera and responds with synchronized voice and motion, all running directly in the browser. The project demonstrates a sophisticated hybrid stack: three.js handles the 3D rendering, while Gemini acts as the visual reasoning engine, further enhanced by a hybrid object detection architecture using COCO-SSD and OWL-ViT for accurate spatial context. For builders, the article outlines the critical integration patterns required to fuse live video input with AI inference without needing native app installations. It is a masterclass in leveraging lightweight WebAR to deliver immersive, spatial-aware AI interactions that feel like native applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-11T12:47:42.205Z"
   },
   {
     "id": "art-1794399486620-uvp5f",
@@ -48253,33 +48282,6 @@
       "研究"
     ],
     "created_at": "2026-10-29T14:31:28.309Z"
-  },
-  {
-    "id": "art-1793283443867-kthv3",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/world-business/4ikaaviy",
-    "published_at": "2026-10-29T13:54:27.000Z",
-    "og_image_url": null,
-    "title_ja": "DeepSeekとMoonshot AIが「GPT-6 Astra」の出力を学習データに利用か、中国AIモデルの競合他社データ依存疑惑が浮上",
-    "summary_ja": "DeepSeekやMoonshot AIを含む中国のトップAI企業が、開発中のLLMにOpenAIの次世代モデル「GPT-6 Astra」の出力を利用して教師あり学習を行っているという疑惑が報じられた。 他社の高度なモデル出力を自社AIの精度向上に流用する手法は、著作権侵害やデータ利用規約の観点から業界内で大きな議論を呼んでいる。 この事態は、オープンソースのラベルの下で隠蔽される「モデル蒸留」の不透明性が、今後AI規制や法整備における焦点になることを示唆している。",
-    "translations": {
-      "ja": {
-        "title": "DeepSeekとMoonshot AIが「GPT-6 Astra」の出力を学習データに利用か、中国AIモデルの競合他社データ依存疑惑が浮上",
-        "summary": "DeepSeekやMoonshot AIを含む中国のトップAI企業が、開発中のLLMにOpenAIの次世代モデル「GPT-6 Astra」の出力を利用して教師あり学習を行っているという疑惑が報じられた。 他社の高度なモデル出力を自社AIの精度向上に流用する手法は、著作権侵害やデータ利用規約の観点から業界内で大きな議論を呼んでいる。 この事態は、オープンソースのラベルの下で隠蔽される「モデル蒸留」の不透明性が、今後AI規制や法整備における焦点になることを示唆している。"
-      },
-      "en": {
-        "title": "Reports allege DeepSeek and Moonshot AI used outputs from OpenAI’s GPT-6 Astra for model training",
-        "summary": "Recent industry reports allege that leading Chinese AI developers, specifically DeepSeek and Moonshot AI, have utilized synthetic data generated by OpenAI's unreleased GPT-6 Astra to train their own latest LLMs. This practice of using superior competitor outputs to boost performance, often described as aggressive model distillation, raises significant concerns regarding intellectual property rights and developer terms of service violations. The controversy highlights a growing tension in the AI landscape: the opacity of training data provenance for models labeled as open source. For engineers and researchers, this incident underscores that training data sourcing is becoming a high-stakes legal battleground. Builders must now scrutinize the lineage of their own datasets to avoid future compliance risks as regulators increasingly target synthetic data misuse in model training pipelines."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-29T14:17:23.867Z"
   },
   {
     "id": "art-1793283403256-4axta",
