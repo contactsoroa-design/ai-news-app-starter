@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794785540181-k20ty",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/joinclass/items/e524aed315c2bf7d7141",
+    "published_at": "2026-11-15T23:30:04.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjA2ODkxJTJGNzhmNWJiNzA1YjdlZjlkYWVjZWRhOGI2ODdlNTU5ZjA5YzI1YmYzZSUyRnhfbGFyZ2UucG5nJTNGMTc3NDUxODE0Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9M2ZhMWQ1NDMyODQzNzkzNTIyNzRiMzk2ZDdmYmJmMTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd9c2258cfe819f9c4489a1d86672b88f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QWdlbnQlMjBTREslRTMlODElQUUlRTMlODMlOTUlRTMlODMlODMlRTMlODIlQUYlRTMlODIlOTIlRTMlODAlOEMlRTUlQTQlQjElRTYlOTUlOTclRTMlODElOTclRTMlODElOUYlRTMlODIlODklRTYlQUQlQTIlRTMlODElQkUlRTMlODIlOEIlRTMlODAlOEQlRTglQTglQUQlRTUlQUUlOUElRTMlODElQUIlRTMlODElOTklRTMlODIlOEIlMjAlRTIlODAlOTQlMjAlRTclODQlQTElRTQlQkElQkElRTMlODIlQjglRTMlODMlQTclRTMlODMlOTYlRTMlODElQTclRTYlQTQlOUMlRTYlOUYlQkIlRTYlQkMlOEYlRTMlODIlOEMlRTMlODIlOTIlRTUlODclQkElRTMlODElOTUlRTMlODElQUElRTMlODElODQlRTYlOUIlQjglRTMlODElOEQlRTYlOTYlQjklRTMlODElQTglRTMlODMlODYlRTMlODIlQjklRTMlODMlODgmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1jODI5YzgyZTI2NTI0N2M5ZmM5YmM2MDIxODljMzg3OQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBqb2luY2xhc3MmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz02MTk0ZGNhMTQxZGVmYmVkMzIyZTJlNjgwN2VlNDI0ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=e2e26dba89d4b526a09005ae012f0c32",
+    "title_ja": "Agent SDKのフックを「失敗時に停止」させる重要性：無人ジョブで検査漏れを防ぐ堅牢な実装とテスト戦略",
+    "summary_ja": "AIエージェントの無人ジョブ運用において、検査プロセスをスルーする「黙って通る」失敗は致命的である。 合同会社ジョインクラスの事例では、記事生成等の自動実行時に、検査フックが失敗した際は即座にプロセスを終了させる「Fail-Fast」な実装が推奨されている。 不整合や検査漏れを隠蔽せず、エラーを意図的に顕在化させることで、バックグラウンドでの品質担保と早期デバッグが可能になる。",
+    "translations": {
+      "ja": {
+        "title": "Agent SDKのフックを「失敗時に停止」させる重要性：無人ジョブで検査漏れを防ぐ堅牢な実装とテスト戦略",
+        "summary": "AIエージェントの無人ジョブ運用において、検査プロセスをスルーする「黙って通る」失敗は致命的である。 合同会社ジョインクラスの事例では、記事生成等の自動実行時に、検査フックが失敗した際は即座にプロセスを終了させる「Fail-Fast」な実装が推奨されている。 不整合や検査漏れを隠蔽せず、エラーを意図的に顕在化させることで、バックグラウンドでの品質担保と早期デバッグが可能になる。"
+      },
+      "en": {
+        "title": "Implement Fail-Fast Hooks in Agent SDKs: Ensuring Quality and Preventing Inspection Gaps in Autonomous AI Jobs",
+        "summary": "When running autonomous AI jobs, like automated article generation or data analysis, silent failures in inspection hooks can lead to hazardous output. JoinClass LLC suggests implementing a strict 'Fail-Fast' policy where any discrepancy in an inspection hook triggers an immediate process stop rather than proceeding silently. By refusing to continue when quality checks fail, developers surface errors early instead of allowing corrupted results to slip through the pipeline. For builders managing headless agent workflows, the key takeaway is to wire inspection logic directly to the job's termination status. This approach forces immediate remediation and prevents inspection gaps, ensuring that only verified content is processed, which is critical for maintenance-free automation at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-15T23:32:20.181Z"
+  },
+  {
+    "id": "art-1794785533602-7enkk",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/grand_peony7915/n/n917ea6003319",
+    "published_at": "2026-11-15T23:30:21.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336676559/rectangle_large_type_2_c936918f2805060c36a2c179279e9b8b.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「Company AI OS」開発日誌：AIコア連携を完遂し、主要機能をWeb UIから一元管理する管理画面を統合へ",
+    "summary_ja": "「Company AI OS」の開発が第97日目を迎え、AIコアを軸とした基本機能の実装から、それらを統合的に操作するWeb UI構築へとフェーズが移行した。 バラバラだった各機能を管理画面から一元管理できるように統合することで、複雑なAIワークフローの運用効率を劇的に高める。 個人開発の枠を超え、システム運用の実用性を高めるためのUI/UX設計の重要性が再認識されるフェーズである。",
+    "translations": {
+      "ja": {
+        "title": "「Company AI OS」開発日誌：AIコア連携を完遂し、主要機能をWeb UIから一元管理する管理画面を統合へ",
+        "summary": "「Company AI OS」の開発が第97日目を迎え、AIコアを軸とした基本機能の実装から、それらを統合的に操作するWeb UI構築へとフェーズが移行した。 バラバラだった各機能を管理画面から一元管理できるように統合することで、複雑なAIワークフローの運用効率を劇的に高める。 個人開発の枠を超え、システム運用の実用性を高めるためのUI/UX設計の重要性が再認識されるフェーズである。"
+      },
+      "en": {
+        "title": "Company AI OS Development Update: Integrating Unified Web UI to Orchestrate Core AI Workflows and Features",
+        "summary": "Company AI OS has reached its 97th day of development, shifting focus from implementing isolated AI core functions to building a unified Web UI for centralized management. By integrating previously disparate features into a single management interface, the project drastically improves operational efficiency for complex AI workflows. This phase highlights the transition from a collection of experimental tools to a practical, production-ready system architecture. For individual developers, the takeaway is that as agentic systems scale in capability, the bottleneck often shifts from backend logic to user-facing orchestration layers. Prioritizing a centralized management UI early allows developers to monitor system state and performance effectively, transforming complex AI interactions into a streamlined, manageable OS-like experience for end users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-15T23:32:13.602Z"
+  },
+  {
+    "id": "art-1794785516581-ewnkj",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/itoken_lab/articles/japanese-writing-with-without",
+    "published_at": "2026-11-15T12:36:53.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--zHiLSvov--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25AB%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2582%258B%2520Skill%2520%25E3%2582%2592%25E3%2580%2581%25E3%2581%2582%25E3%2582%258A%25E3%2583%25BB%25E3%2581%25AA%25E3%2581%2597%25E3%2581%25A7%25E6%25AF%2594%25E3%2581%25B9%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2584%25E3%2581%25A8%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGR1dnJoLWxxdHVhOUU2bzI2Vy1NeDQyY3ZYc2xpRnlEcWlmajIyOG5fVUdhVVZZST1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIの日本語文章生成を劇的に改善する「japanese-writing」スキル：自然な読後感を生む構成と文体の制御手順",
+    "summary_ja": "AIエージェントに日本語を書かせると、箇条書きの羅列や文脈の欠如により不自然な文章になりがちです。 公開された「japanese-writing」スキルは、読み手や場面に応じて最適な書く順番と文体をエージェントに強制する手順書（SKILL.md）です。 これを導入することで、週報では冒頭に結論を置く、取引先メールでは件名に要件を明記するなど、人間らしい構成への修正が可能になります。",
+    "translations": {
+      "ja": {
+        "title": "AIの日本語文章生成を劇的に改善する「japanese-writing」スキル：自然な読後感を生む構成と文体の制御手順",
+        "summary": "AIエージェントに日本語を書かせると、箇条書きの羅列や文脈の欠如により不自然な文章になりがちです。 公開された「japanese-writing」スキルは、読み手や場面に応じて最適な書く順番と文体をエージェントに強制する手順書（SKILL.md）です。 これを導入することで、週報では冒頭に結論を置く、取引先メールでは件名に要件を明記するなど、人間らしい構成への修正が可能になります。"
+      },
+      "en": {
+        "title": "Boosting AI Japanese writing quality: How the 'japanese-writing' skill forces context-aware structure and style",
+        "summary": "AI agents often produce unnatural Japanese text filled with repetitive bullet points or disjointed sentences that lack narrative flow. The newly released 'japanese-writing' skill solves this by providing a structured SKILL.md guide that forces agents to determine writing order and tone based on the specific audience and context. When this skill is applied, AI output shifts from fragmented lists to coherent professional communication, such as placing conclusions at the start of weekly reports or summarizing key requirements in email subject lines. For developers struggling with the poor quality of AI-generated documentation, this approach demonstrates why hardcoding 'writing patterns' as executable steps is more effective than relying on vague prompts. Treating writing styles as modular skills is a crucial upgrade for agentic workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-15T23:31:56.581Z"
+  },
+  {
+    "id": "art-1794785509956-nxggn",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/business/articles/2611/16/news031.html",
+    "published_at": "2026-11-15T22:00:00.000Z",
+    "og_image_url": "https://image.itmedia.co.jp/business/articles/2611/16/cover_news031.jpg",
+    "title_ja": "メルカリ、生成AI活用でアプリ開発を数十分へ短縮―一方で「AI生成物の最終チェック」がボトルネックに",
+    "summary_ja": "メルカリは生成AIを活用し、1〜2日かかっていた画面試作を数十分単位に短縮した。 専門別の縦割り組織を解消し、1〜3人の少人数チームが画面からバックエンドまでを一気通貫で開発する体制へ移行している。 しかし、200〜300画面におよぶアプリ開発では、AIが生成する膨大な修正案に対する人間の最終チェックが追いつかない新たな課題が浮上した。 開発効率の最大化と品質担保の両立が、AI時代のプロダクト作りにおける最重要テーマとなっている。",
+    "translations": {
+      "ja": {
+        "title": "メルカリ、生成AI活用でアプリ開発を数十分へ短縮―一方で「AI生成物の最終チェック」がボトルネックに",
+        "summary": "メルカリは生成AIを活用し、1〜2日かかっていた画面試作を数十分単位に短縮した。 専門別の縦割り組織を解消し、1〜3人の少人数チームが画面からバックエンドまでを一気通貫で開発する体制へ移行している。 しかし、200〜300画面におよぶアプリ開発では、AIが生成する膨大な修正案に対する人間の最終チェックが追いつかない新たな課題が浮上した。 開発効率の最大化と品質担保の両立が、AI時代のプロダクト作りにおける最重要テーマとなっている。"
+      },
+      "en": {
+        "title": "Mercari slashes app development time to minutes with GenAI, but hits a human review bottleneck",
+        "summary": "Mercari has integrated generative AI into its workflow, accelerating screen prototyping from one or two days down to just minutes. By dissolving departmental silos and shifting to small teams of one to three engineers who build entire flows from frontend to backend, they have drastically increased velocity. However, this speed has revealed a new, significant challenge: with apps spanning 200 to 300 screens, human reviewers cannot keep pace with the massive volume of AI-generated iteration proposals. This creates a friction point where maintaining product quality becomes as demanding as the initial development. For builders, this underscores that while AI removes the labor of coding, human oversight becomes the new, constrained resource when shipping at high velocity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "アップデート"
+    ],
+    "created_at": "2026-11-15T23:31:49.956Z"
+  },
+  {
     "id": "art-1794784615979-idj7l",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -7669,31 +7775,6 @@
     "created_at": "2026-11-15T03:32:33.803Z"
   },
   {
-    "id": "art-1794713538212-clyl8",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/leiablack/n/n7520efaffcd0",
-    "published_at": "2026-11-15T03:30:21.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/333636308/rectangle_large_type_2_6f380fa78dcc09bfea6041ac0e8d6835.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "44本のテスト全通過でもバグは起きる：AI開発「人物年表メーカー」で16歳が6歳と判定されたエッジケースの教訓",
-    "summary_ja": "小説・ゲーム制作者向けの「人物年表メーカー」を開発中、44件の全テストを通過していたにもかかわらず、特定の条件下で16歳の人物が6歳と誤判定される致命的なバグが発覚した。 原因はAIが生成したコードのロジックにある僅かな推論のズレであり、開発者は正常系テストの網羅性だけでは不十分であると痛感した。 プロダクトの信頼性を守るためには、境界値やイレギュラーなパターンを意図的に想定する「悪意ある入力」や「複雑な設定」での検証が欠かせない。",
-    "translations": {
-      "ja": {
-        "title": "44本のテスト全通過でもバグは起きる：AI開発「人物年表メーカー」で16歳が6歳と判定されたエッジケースの教訓",
-        "summary": "小説・ゲーム制作者向けの「人物年表メーカー」を開発中、44件の全テストを通過していたにもかかわらず、特定の条件下で16歳の人物が6歳と誤判定される致命的なバグが発覚した。 原因はAIが生成したコードのロジックにある僅かな推論のズレであり、開発者は正常系テストの網羅性だけでは不十分であると痛感した。 プロダクトの信頼性を守るためには、境界値やイレギュラーなパターンを意図的に想定する「悪意ある入力」や「複雑な設定」での検証が欠かせない。"
-      },
-      "en": {
-        "title": "Even with 44 passing tests, bugs persist: Lessons from an AI-built character timeline tool showing 16 as 6",
-        "summary": "While developing a character chronology tool for writers, a developer encountered a critical logic error where a 16-year-old character was misidentified as 6, despite the application passing all 44 initial test cases. The issue stemmed from an edge case in the AI-generated logic that failed to account for specific date-math nuances during character lifecycle tracking. This experience underscores that passing automated test suites is insufficient for verifying complex logic, as AI-generated code often hides errors in edge cases that humans don't instinctively test. For builders, the key takeaway is that robust error handling requires proactive testing of boundary conditions and unconventional character configurations, rather than relying solely on passing standard happy-path scenarios during deployment readiness."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-15T03:32:18.212Z"
-  },
-  {
     "id": "art-1794713530191-dxzck",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -9820,31 +9901,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-14T13:32:27.497Z"
-  },
-  {
-    "id": "art-1794662219227-x3eej",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/fukukei23/items/398b9a8fbc7d2edf73f3",
-    "published_at": "2026-11-14T13:07:52.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY1ZjQ2OWNhMDE5NjIyOTU4MTY0NzA3ODg2MjU3ODg1ZD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDBlNTBjZjg2NzA0YWYzOTU4YzUyZWE0NDAyYjVkZDg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db0fb7b518cbe6fd4515b7a3f5b82a516?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JTk2JUIwJUU0JUJBJUJBJUUzJTgyJUE4JUUzJTgzJUIzJUUzJTgyJUI4JUUzJTgzJThCJUUzJTgyJUEyJUUzJTgxJUE3JUUzJTgyJTgyJUUzJTgyJThGJUUzJTgxJThCJUUzJTgyJThCJUVGJUJDJTgxJUU5JTk2JThCJUU3JTk5JUJBJUU2JTg5JThCJUU2JUIzJTk1JUUzJTgxJUFFJUU5JTgxJUI4JUUzJTgxJUIzJUU2JTk2JUI5JTIwJUUyJTgwJTk0JTIwJUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgyJUI4JUUzJTgyJUE3JUUzJTgyJUFGJUUzJTgzJTg4JUU1JTg4JUE1JUUzJTgxJUFCJUU1JUFEJUE2JUUzJTgxJUI2NSVFMyU4MSVBNCVFMyU4MSVBRSVFMyU4MyVBQyVFMyU4MiVCNyVFMyU4MyU5NCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTA0Y2RhMGQ3NzA4MzYyMzVjZWMxNmY3Y2Y2ZGI4Yjlm&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmdWt1a2VpMjMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1mZjI4OTNiOTM5OTRjYzYzYjBhYWQzNmU1ZGJhOGVlNQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=9ff777947b5f1daf140e64c9f834bbcd",
-    "title_ja": "新人エンジニア向け：プロジェクト別に選ぶ開発手法5選（TDD、DDD、クリーンアーキテクチャ等の最適解）",
-    "summary_ja": "新人エンジニアが迷いがちなTDD、BDD、DDD、クリーンアーキテクチャ、仕様駆動開発といった開発手法について、プロジェクト規模や目的別の選定基準を解説する。 手法を無差別に導入するのではなく、開発フェーズやビジネス課題に合わせてアーキテクチャやテスト方針を使い分けることが重要だ。 開発の生産性を最大化するための最適なレシピを習得しよう。",
-    "translations": {
-      "ja": {
-        "title": "新人エンジニア向け：プロジェクト別に選ぶ開発手法5選（TDD、DDD、クリーンアーキテクチャ等の最適解）",
-        "summary": "新人エンジニアが迷いがちなTDD、BDD、DDD、クリーンアーキテクチャ、仕様駆動開発といった開発手法について、プロジェクト規模や目的別の選定基準を解説する。 手法を無差別に導入するのではなく、開発フェーズやビジネス課題に合わせてアーキテクチャやテスト方針を使い分けることが重要だ。 開発の生産性を最大化するための最適なレシピを習得しよう。"
-      },
-      "en": {
-        "title": "5 Development methodologies for junior engineers: Selecting the right framework for every project phase",
-        "summary": "Junior engineers often struggle to navigate the alphabet soup of methodologies like TDD, BDD, DDD, Clean Architecture, and specification-driven development. This guide demystifies when to apply each approach by mapping them to specific project scales and business goals. The core takeaway is that blindly adopting a methodology is ineffective; success comes from aligning your architectural strategy and testing framework with your current development phase and constraints. By matching the right tool to the problem at hand, developers can avoid over-engineering while maintaining code quality and agility. Mastering these decision-making recipes allows you to scale your development productivity rather than getting bogged down in rigid adherence to process without purpose."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-14T13:16:59.227Z"
   },
   {
     "id": "art-1794662210845-e09kb",
@@ -12400,31 +12456,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-13T20:02:33.612Z"
-  },
-  {
-    "id": "art-1794600142038-jtii1",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/yusuke_shiki/articles/prediction-succeeded-cli-failed",
-    "published_at": "2026-11-13T15:52:06.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--2mHOVe0D--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BA%2588%25E6%25B8%25AC%25E3%2581%25AF%25E3%2581%25A7%25E3%2581%258D%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E3%2580%2582%25E3%2581%259D%25E3%2582%258C%25E3%2581%25A7%25E3%2582%2582CLI%25E3%2581%258C%25E5%25A4%25B1%25E6%2595%2597%25E3%2581%2597%25E3%2581%259F%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yusuke%2520Shiki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I3N2FkZjAzYjguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "自作CLI「spec-lane」で発生したAIトークン予測エラーの根本原因、v1とv2の処理順序とデータ範囲の不整合を解説",
-    "summary_ja": "AIのトークン使用量を予測する自作CLIツール「spec-lane」において、予測成功後も処理がエラーで終了する不具合が発生した。 原因は、新しい予測ロジックv2と従来のv1の間にある「データの参照範囲」と「近傍データの選定順序」の差異によるもの。 v2が予測に成功してもv1の処理が失敗することで保存プロセスが分断されていた。 単なるバージョンの新旧比較ではなく、ロジック間での依存関係やデータ整合性を考慮した設計が、CLIツールの安定稼働には不可欠となる。",
-    "translations": {
-      "ja": {
-        "title": "自作CLI「spec-lane」で発生したAIトークン予測エラーの根本原因、v1とv2の処理順序とデータ範囲の不整合を解説",
-        "summary": "AIのトークン使用量を予測する自作CLIツール「spec-lane」において、予測成功後も処理がエラーで終了する不具合が発生した。 原因は、新しい予測ロジックv2と従来のv1の間にある「データの参照範囲」と「近傍データの選定順序」の差異によるもの。 v2が予測に成功してもv1の処理が失敗することで保存プロセスが分断されていた。 単なるバージョンの新旧比較ではなく、ロジック間での依存関係やデータ整合性を考慮した設計が、CLIツールの安定稼働には不可欠となる。"
-      },
-      "en": {
-        "title": "Debugging AI token prediction errors in the custom 'spec-lane' CLI caused by version logic mismatches",
-        "summary": "A critical bug in the custom CLI tool 'spec-lane' caused processes to fail even after successful AI token usage predictions. The issue stemmed from subtle discrepancies in data range and neighbor-selection sequencing between the new v2 prediction logic and legacy v1 routines. Although v2 could generate a prediction, the subsequent v1 process failed due to these data scope mismatches, preventing proper state saving. This highlights that simply updating logic isn't enough; when mixing legacy and modern versions of algorithmic processes, developers must ensure that data subset boundaries and execution order remain strictly compatible. For builders maintaining evolving CLI tools, strictly isolating versioned logic or enforcing unified data schemas is essential to preventing silent failures in automated workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-13T20:02:22.038Z"
   },
   {
     "id": "art-1794599237989-twirk",
@@ -32559,33 +32590,6 @@
       "研究"
     ],
     "created_at": "2026-11-06T02:16:48.280Z"
-  },
-  {
-    "id": "art-1793929653454-ltc5j",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/aiplus/article/2611/06/2000002937/",
-    "published_at": "2026-11-06T01:17:35.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/06/2000002937/10011464/2048",
-    "title_ja": "ピザーラ、人気アニメ「Dr.STONE」とのコラボ動画で無断生成したAI広告を謝罪し公開停止へ",
-    "summary_ja": "ピザーラは、アニメ「Dr.STONE」のキャラクターを無許可でAI生成し、公式SNSで配信していた広告動画を公開停止し謝罪した。 著作権者である小学館やTVアニメ製作委員会からの許諾を得ていなかったことが原因で、ブランド毀損と権利侵害が批判を集めている。 生成AIを広告に活用する際は、著作権のクリアランスや公式監修のプロセスを厳格化しない限り、深刻な法的リスクとブランドダメージを招くという教訓を示している。",
-    "translations": {
-      "ja": {
-        "title": "ピザーラ、人気アニメ「Dr.STONE」とのコラボ動画で無断生成したAI広告を謝罪し公開停止へ",
-        "summary": "ピザーラは、アニメ「Dr.STONE」のキャラクターを無許可でAI生成し、公式SNSで配信していた広告動画を公開停止し謝罪した。 著作権者である小学館やTVアニメ製作委員会からの許諾を得ていなかったことが原因で、ブランド毀損と権利侵害が批判を集めている。 生成AIを広告に活用する際は、著作権のクリアランスや公式監修のプロセスを厳格化しない限り、深刻な法的リスクとブランドダメージを招くという教訓を示している。"
-      },
-      "en": {
-        "title": "Pizza-La pulls unauthorized AI-generated Dr. Stone collaboration ad and issues public apology for copyright oversight",
-        "summary": "Pizza-La has officially apologized and halted a promotional social media campaign featuring AI-generated likenesses of characters from the anime 'Dr. Stone' after failing to secure permission from the copyright holders. The incident, which involved the unauthorized use of intellectual property managed by Shogakukan and the production committee, has drawn significant backlash regarding legal infringement and brand reputation. For developers and marketers leveraging generative AI in commercial creative projects, this case underscores that technical feasibility does not equate to usage rights. Without establishing rigorous internal protocols for copyright clearance and official editorial supervision, brands deploying automated content risk immediate legal consequences and severe, long-term damage to their public standing and professional partnerships."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "ビジネス",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-06T01:47:33.454Z"
   },
   {
     "id": "art-1793928706570-fmzlf",
