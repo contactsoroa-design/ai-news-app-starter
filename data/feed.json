@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794741459607-8qhzz",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/walt_owen/articles/3291d8d844a05d",
+    "published_at": "2026-11-15T04:07:43.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--AnNDB3RW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2599%2582%25E5%2588%25BB%25E3%2581%25A7%25E5%25A3%2581%25E7%25B4%2599%25E3%2581%258C%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E5%2588%2587%25E3%2582%258A%25E6%259B%25BF%25E3%2582%258F%25E3%2582%258B%2520Windows%2520%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E3%2580%2581%25E6%25A8%2599%25E6%25BA%2596%25E3%2581%25AE%2520csc.exe%2520%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Walt-Owen%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FjYmYxMWVkMjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Windows標準のcsc.exeだけで軽量開発。時間帯に合わせて壁紙を自動切り替えする「壁紙スケジューラ」の仕組みと実装",
+    "summary_ja": "Windows標準の「スライドショー」機能では実現できない、時刻指定での壁紙切り替えを可能にする「壁紙スケジューラ」を開発。 標準コンパイラのcsc.exeのみを使用し、外部依存を排した軽量なツールとなっている。 24時間のタイムラインを可視化するUIを実装し、指定した時刻に画像を自動適用することで、より直感的で快適なPC環境を実現した。 依存関係を最小限に抑える設計は、小規模なデスクトップツール開発のヒントになるはずだ。",
+    "translations": {
+      "ja": {
+        "title": "Windows標準のcsc.exeだけで軽量開発。時間帯に合わせて壁紙を自動切り替えする「壁紙スケジューラ」の仕組みと実装",
+        "summary": "Windows標準の「スライドショー」機能では実現できない、時刻指定での壁紙切り替えを可能にする「壁紙スケジューラ」を開発。 標準コンパイラのcsc.exeのみを使用し、外部依存を排した軽量なツールとなっている。 24時間のタイムラインを可視化するUIを実装し、指定した時刻に画像を自動適用することで、より直感的で快適なPC環境を実現した。 依存関係を最小限に抑える設計は、小規模なデスクトップツール開発のヒントになるはずだ。"
+      },
+      "en": {
+        "title": "Building a Lightweight Windows Wallpaper Scheduler Using Only the Standard csc.exe Compiler for Time-Based Desktop Customization",
+        "summary": "The author developed \"Wallpaper Scheduler,\" a utility for Windows that rotates desktop backgrounds based on specific times rather than generic slideshow intervals. By leveraging only the native csc.exe C# compiler, the developer avoided heavy dependencies, keeping the application lightweight and highly performant. The tool features a visual 24-hour timeline, allowing users to instantly verify which image will display during specific hours. The implementation focuses on simplicity, using the native Windows API to apply images directly, which demonstrates how developers can avoid complex frameworks for small desktop utilities. This project serves as a compelling case study for builders looking to reduce bloat by utilizing built-in platform tools instead of relying on external packages."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-15T11:17:39.607Z"
+  },
+  {
+    "id": "art-1794741445139-kopf8",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/shimpeiws/articles/5e0df5eeb398fb",
+    "published_at": "2026-11-15T04:33:37.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KNgvmve5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E5%25AE%259F%25E8%25A1%258C%25E5%25B1%25A5%25E6%25AD%25B4%25E3%2582%2592%25E3%2580%2581%25E3%2582%2582%25E3%2581%2586%25E4%25B8%2580%25E5%25BA%25A6%25E8%25A7%25A3%25E3%2581%2591%25E3%2582%258B%25E8%25A9%2595%25E4%25BE%25A1%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:shimpeiws%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2hLTE9OTklhOUx5Y2JqSFJaMjUxZVJtWDMza051R1RKTURocG9OY0VjPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "開発エージェントの評価手法「Trace2Eval」活用：過去の実行履歴を再現可能なベンチマークへ変換する技術的アプローチ",
+    "summary_ja": "開発エージェントの性能比較において、毎回異なるIssueを扱う従来手法ではモデル変更の効果測定が困難であるという課題に対し、Trace2Eval論文を参考に過去の実行履歴から「再現可能な評価ケース」を生成する手法を解説。 初期要求と開始SHAを保存し、同一の出発点から再実装・採点可能な環境を整えることで、プロンプト改善やモデル変更による影響を正確に分離・定量化する。",
+    "translations": {
+      "ja": {
+        "title": "開発エージェントの評価手法「Trace2Eval」活用：過去の実行履歴を再現可能なベンチマークへ変換する技術的アプローチ",
+        "summary": "開発エージェントの性能比較において、毎回異なるIssueを扱う従来手法ではモデル変更の効果測定が困難であるという課題に対し、Trace2Eval論文を参考に過去の実行履歴から「再現可能な評価ケース」を生成する手法を解説。 初期要求と開始SHAを保存し、同一の出発点から再実装・採点可能な環境を整えることで、プロンプト改善やモデル変更による影響を正確に分離・定量化する。"
+      },
+      "en": {
+        "title": "Transforming AI Agent History into Reproducible Benchmarks Using the Trace2Eval Framework for Precise Performance Audits",
+        "summary": "To solve the difficulty of measuring performance improvements when AI agents tackle different issues, this piece details a technique based on the Trace2Eval paper to convert past execution history into reproducible evaluation cases. By capturing the initial user requirements and the specific start commit SHA, developers can recreate the exact development environment to re-run and grade tasks consistently. This method allows engineers to isolate the effects of prompt adjustments or model changes, moving away from subjective observation to quantitative benchmarking. For builders creating software factories, treating historical sessions as modular, testable datasets is the key to accelerating iteration cycles, ensuring that every architectural tweak or system prompt change is objectively validated against a stable, standardized baseline."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-15T11:17:25.139Z"
+  },
+  {
+    "id": "art-1794741434431-sfcrx",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shioriya_11/n/n44a43df74de4",
+    "published_at": "2026-11-15T11:13:55.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336503815/rectangle_large_type_2_85a300ff5cffd21ffff2dc1ec6e8d3fd.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIアプリ8つを同時並行で開発した結果、予期せぬ「化け物級」の収益を叩き出すプロダクトが誕生した舞台裏",
+    "summary_ja": "個人開発者がAIを活用して8つのアプリを同時進行で開発・検証したところ、想定外のプロダクトが驚異的な収益を叩き出す「化け物」へと成長した。 開発リソースを分散させつつAIによるコード生成や自動化をフル活用し、市場の反応を素早く捉える手法が成功の鍵となった。 何がヒットするか予測困難な現在のアプリ市場において、一点突破ではなく同時多発的なプロダクト投入が、個人の可能性を最大化する生存戦略として機能する。",
+    "translations": {
+      "ja": {
+        "title": "AIアプリ8つを同時並行で開発した結果、予期せぬ「化け物級」の収益を叩き出すプロダクトが誕生した舞台裏",
+        "summary": "個人開発者がAIを活用して8つのアプリを同時進行で開発・検証したところ、想定外のプロダクトが驚異的な収益を叩き出す「化け物」へと成長した。 開発リソースを分散させつつAIによるコード生成や自動化をフル活用し、市場の反応を素早く捉える手法が成功の鍵となった。 何がヒットするか予測困難な現在のアプリ市場において、一点突破ではなく同時多発的なプロダクト投入が、個人の可能性を最大化する生存戦略として機能する。"
+      },
+      "en": {
+        "title": "Building 8 AI apps simultaneously led to a breakout monster product: A case study in rapid indie deployment",
+        "summary": "An independent developer attempting to scale output by shipping eight distinct AI-powered applications in parallel discovered that one unexpected project evolved into a high-revenue 'monster.' By leveraging AI-driven code generation and automation to bypass traditional bottleneck development phases, the builder was able to rapidly test market viability across multiple vectors. In today’s unpredictable app economy, betting on a single idea is often a losing strategy; instead, launching multiple experiments simultaneously acts as a hedge against market uncertainty. The core lesson here for indie builders is that shifting from a perfectionist, single-product mindset toward a portfolio-based, iterative deployment model significantly increases the odds of discovering a high-growth asset without exhausting individual development resources."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-15T11:17:14.431Z"
+  },
+  {
+    "id": "art-1794741407559-7fxyc",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/mindtastik",
+    "published_at": "2026-11-14T16:36:55+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/zbazs7ik7l408bwuin22dawwulp2",
+    "title_ja": "マインドフルネスアプリ「Mindtastik」のソロ開発戦略：広告費ゼロから月間2万ドル超の収益を達成したASOとニッチ市場攻略の全貌",
+    "summary_ja": "Mindtastikは瞑想市場の飽和を逆手に取り、検索意図を深く分析したASO（アプリストア最適化）戦略によって、広告費を一切かけずに月間2万ドル以上の収益を達成した。 単なる瞑想アプリではなく「マインドフルネスの悩みに特化」した機能を磨き上げたことが、課金率と継続率の向上につながった。 大手がひしめくレッドオーシャン市場において、ターゲットを極限まで絞り込むことが、ソロ開発者が生き残るための生存戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "マインドフルネスアプリ「Mindtastik」のソロ開発戦略：広告費ゼロから月間2万ドル超の収益を達成したASOとニッチ市場攻略の全貌",
+        "summary": "Mindtastikは瞑想市場の飽和を逆手に取り、検索意図を深く分析したASO（アプリストア最適化）戦略によって、広告費を一切かけずに月間2万ドル以上の収益を達成した。 単なる瞑想アプリではなく「マインドフルネスの悩みに特化」した機能を磨き上げたことが、課金率と継続率の向上につながった。 大手がひしめくレッドオーシャン市場において、ターゲットを極限まで絞り込むことが、ソロ開発者が生き残るための生存戦略となる。"
+      },
+      "en": {
+        "title": "How Solo Developer Built Mindtastik to Over $20k Monthly Revenue Using SEO-Driven Meditation Niche Targeting Without Paid Ads",
+        "summary": "Mindtastik, a meditation app by a solo developer, bypassed the saturated health market by leveraging laser-focused ASO strategies to drive organic downloads without spending a cent on paid acquisition. By targeting specific psychological pain points instead of generic wellness, the developer pushed monthly revenue past the $20,000 mark while maintaining high retention. The story proves that competing against industry giants does not require a massive marketing budget if your metadata strategy captures high-intent users directly at the source. For solo founders, the takeaway is clear: find the specific micro-niche within a red ocean market and optimize your store presence to solve a very specific problem that mass-market apps tend to overlook."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-15T11:16:47.559Z"
+  },
+  {
     "id": "art-1794740593239-8pjh9",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -13827,33 +13933,6 @@
     "created_at": "2026-11-13T04:17:09.328Z"
   },
   {
-    "id": "art-1794542527762-1wbiu",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/currnya/articles/comfyui-pc-guide",
-    "published_at": "2026-11-12T18:01:32.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--YsceS7ux--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ComfyUI%2520%25E3%2581%25AE%25E6%2589%258B%25E5%25BC%2595%25E3%2581%258D%25E2%2591%25A0%2520%25E3%2583%2591%25E3%2582%25BD%25E3%2582%25B3%25E3%2583%25B3%25E3%2581%25AE%25E9%2581%25B8%25E3%2581%25B3%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%2598%259F%25E7%258C%25AB%25E3%2581%258F%25E3%2582%258B%25E3%2582%258B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzFYbkNxblNRMEdsbUhLV0xkZk9mRlFNc2RKbnpJSnphUU5zSEFmZnFpOC1qQmZmaz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ローカルAI「ComfyUI」を始めるためのPC選びガイド：画像・動画・音楽生成に必須となるVRAMとメモリの重要基準を解説",
-    "summary_ja": "ローカル環境でAI生成を行うためのツール「ComfyUI」を快適に動かすには、用途に応じたハードウェア選定が不可欠だ。 特に画像、音楽、動画生成の各ワークロードで重視すべきは、GPUのVRAM容量とシステムメモリの総量である。 目的とする生成物の種類によって要求スペックは大きく異なるため、モデルごとの特性を理解し、ボトルネックを避けるための設計思想が重要となる。",
-    "translations": {
-      "ja": {
-        "title": "ローカルAI「ComfyUI」を始めるためのPC選びガイド：画像・動画・音楽生成に必須となるVRAMとメモリの重要基準を解説",
-        "summary": "ローカル環境でAI生成を行うためのツール「ComfyUI」を快適に動かすには、用途に応じたハードウェア選定が不可欠だ。 特に画像、音楽、動画生成の各ワークロードで重視すべきは、GPUのVRAM容量とシステムメモリの総量である。 目的とする生成物の種類によって要求スペックは大きく異なるため、モデルごとの特性を理解し、ボトルネックを避けるための設計思想が重要となる。"
-      },
-      "en": {
-        "title": "ComfyUI Hardware Guide: Choosing the right PC for local AI generation, focusing on VRAM and system memory requirements",
-        "summary": "Running ComfyUI locally for creative workflows like image, music, or video generation demands a strategic approach to hardware selection rather than just buying the most expensive off-the-shelf components. The critical metrics to watch are GPU VRAM, which handles the core computation for generative models, and total system RAM for overall processing capacity. Because hardware requirements scale drastically depending on whether you are running lightweight models or heavy video diffusion pipelines, developers must align their gear with specific use cases to avoid performance bottlenecks. For builders setting up a local AI workstation, the practical lesson is that matching hardware to your intended model stack is far more efficient than brute-forcing your way through compatibility issues with generic, high-end components."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "画像生成",
-      "動画"
-    ],
-    "created_at": "2026-11-13T04:02:07.762Z"
-  },
-  {
     "id": "art-1794542515892-mcbcd",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -15157,32 +15236,6 @@
     "created_at": "2026-11-12T20:46:31.903Z"
   },
   {
-    "id": "art-1794515522730-gc0e0",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/nanashisan/articles/b5f47e7bfee107",
-    "published_at": "2026-11-12T08:03:57.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--czujNiHV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%2580%25E8%25BF%2591%25E3%2581%25AEAI%25E3%2581%258C%25E5%2587%2584%25E3%2581%2584%25E3%2581%25A8%25E8%2581%259E%25E3%2581%2584%25E3%2581%25A6%25E3%2580%25813%25E5%25B9%25B4%25E9%2596%2593%25E7%2584%25A1%25E8%2581%25B7%25E3%2581%25AE%25E5%2585%2583%25E9%2596%258B%25E7%2599%25BA%25E8%2580%2585%25E3%2582%2582Web%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E6%2584%259F%25E6%2583%25B3%25E3%2580%2590Rails%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%2590%258D%25E7%2584%25A1%25E3%2581%2597%25E3%2581%2595%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRiMWJmYTVlZGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "3年間無職の元Rails開発者が最新AIでWebサービス開発に挑戦、圧倒的な実装速度と生産性向上を実感した体験談",
-    "summary_ja": "3年間開発現場から離れていた元Railsエンジニアが、Kaigi on RailsでのAIの盛り上がりを機に最新ツールでのWebサービス開発に挑戦した。 GitHub Copilot等の支援により、過去の記憶を呼び起こしながら短期間で実用的な機能を実装できたことに、現代のAIによる生産性の劇的な向上を実感している。 ブランクがあってもAIを活用することで開発のハードルが大幅に下がっており、個人開発の再開を目指すエンジニアにとって大きな後押しとなる事例だ。",
-    "translations": {
-      "ja": {
-        "title": "3年間無職の元Rails開発者が最新AIでWebサービス開発に挑戦、圧倒的な実装速度と生産性向上を実感した体験談",
-        "summary": "3年間開発現場から離れていた元Railsエンジニアが、Kaigi on RailsでのAIの盛り上がりを機に最新ツールでのWebサービス開発に挑戦した。 GitHub Copilot等の支援により、過去の記憶を呼び起こしながら短期間で実用的な機能を実装できたことに、現代のAIによる生産性の劇的な向上を実感している。 ブランクがあってもAIを活用することで開発のハードルが大幅に下がっており、個人開発の再開を目指すエンジニアにとって大きな後押しとなる事例だ。"
-      },
-      "en": {
-        "title": "Unemployed for three years, a former Rails developer finds renewed productivity building web apps with modern AI tools",
-        "summary": "A developer who spent three years away from the industry returned to web development, motivated by the AI-centric shift seen at Kaigi on Rails. By leveraging modern AI coding assistants alongside his background in Ruby on Rails, he successfully implemented functional features at a speed that surprised him, effectively bridging his skills gap. His experience highlights how current AI agents and autocomplete tools act as force multipliers, significantly lowering the barrier to entry for solo builders even after extended hiatuses. For engineers considering a return to active development, the takeaway is that modern AI tools do not just generate boilerplate; they provide the cognitive leverage needed to overcome technical inertia and accelerate the entire application building lifecycle."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-12T20:32:02.730Z"
-  },
-  {
     "id": "art-1794515515717-5toec",
     "source_id": "source-openai",
     "source_name": "OpenAI 公式",
@@ -15210,32 +15263,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-12T20:31:55.718Z"
-  },
-  {
-    "id": "art-1794514622885-i0se8",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/yuyamigi/articles/bbb60ed00ed5fe",
-    "published_at": "2026-11-12T08:31:50.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MmjYDusx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E6%25AE%258B%25E3%2582%258A%25E7%25B4%258414%25E5%2588%2586%25E3%2580%258D%25E3%2581%25AF%25E5%25AF%25A9%25E6%259F%25BB%25E3%2581%25AE%25E6%25AE%258B%25E3%2582%258A%25E6%2599%2582%25E9%2596%2593%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%2584%2520%25E2%2580%2595%2520Play%2520Console%2520%25E3%2581%25AE%25E7%258A%25B6%25E6%2585%258B%25E3%2581%25AE%25E8%25AA%25AD%25E3%2581%25BF%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A9%25E7%25B4%25A0%25E4%25BA%25BA%25E3%2581%258CAI%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E7%259A%2584%25E3%2581%25AA%25E4%25BA%258B%25E3%2582%2592%25E9%25A0%2591%25E5%25BC%25B5%25E3%2582%258B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjRyUVBodXc0SG53Nkp5c25oa3dvUkN2N2NfRzZ4cnAtZFBXM0JZMm5rYzhtc0xwbz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「残り14分」は審査時間ではない？Play Consoleのステータス表示を正しく理解し、リリース時の勘違いを防ぐ方法",
-    "summary_ja": "Google Play Consoleでリリース審査前に表示される「残り約14分」という進行バーは、審査終了までの時間ではなく、申請前の自動クイックチェックにかかる時間を示している。 この自動チェックと実際の審査は完全に別プロセスであり、ここを読み違えると審査完了時期の予測を大きく誤る原因となる。 個人開発者にとって、ステータス表示の正確な意味を知ることはリリース戦略の基本。 焦らず審査プロセスを正しく見極めよう。",
-    "translations": {
-      "ja": {
-        "title": "「残り14分」は審査時間ではない？Play Consoleのステータス表示を正しく理解し、リリース時の勘違いを防ぐ方法",
-        "summary": "Google Play Consoleでリリース審査前に表示される「残り約14分」という進行バーは、審査終了までの時間ではなく、申請前の自動クイックチェックにかかる時間を示している。 この自動チェックと実際の審査は完全に別プロセスであり、ここを読み違えると審査完了時期の予測を大きく誤る原因となる。 個人開発者にとって、ステータス表示の正確な意味を知ることはリリース戦略の基本。 焦らず審査プロセスを正しく見極めよう。"
-      },
-      "en": {
-        "title": "Don't misinterpret the 14-minute progress bar in Google Play Console: Understanding release submission statuses correctly",
-        "summary": "Many developers mistake the '14 minutes remaining' progress bar in the Google Play Console for an estimated time until app approval, but this is actually just the duration for automated pre-submission policy checks. The actual review process is a separate stage that begins only after these automated tests are finalized. For indie builders and solo developers, conflating these two distinct phases leads to inaccurate release planning and unnecessary anxiety. It is essential to recognize that automated checks and manual human review are fundamentally different workflows. Understanding the nuances of these status indicators is foundational for managing your deployment timeline and avoiding common misunderstandings when pushing updates to the store."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-12T20:17:02.885Z"
   },
   {
     "id": "art-1794514598611-xcz7n",
@@ -35222,32 +35249,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-04T17:16:57.331Z"
-  },
-  {
-    "id": "art-1793811733127-92mnq",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/fomo-9932ea85-02da-42a1-8d65-572754ebc81f",
-    "published_at": "2026-11-03T17:50:52+00:00",
-    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/u8ejfgru7d1ak98hsvkag8jeve50",
-    "title_ja": "サイトのコンバージョン率を上げる「Fomo」：行動通知を表示するだけで信頼を獲得し売上を伸ばすグロースハック術",
-    "summary_ja": "ECサイトの購入履歴やユーザー行動をポップアップ通知として表示する「Fomo」は、顧客の信頼感を高め、コンバージョン率を劇的に向上させるマーケティングツールだ。 単なる通知機能ではなく、購買データと連携してリアルタイムな「社会的証明」を実装することで、Webサイトの訪問者に即座に安心感を与えられる。 個人開発者や小規模Eコマース運営者にとって、サイト改修に手間をかけずに導入できる強力な売上改善策となる。",
-    "translations": {
-      "ja": {
-        "title": "サイトのコンバージョン率を上げる「Fomo」：行動通知を表示するだけで信頼を獲得し売上を伸ばすグロースハック術",
-        "summary": "ECサイトの購入履歴やユーザー行動をポップアップ通知として表示する「Fomo」は、顧客の信頼感を高め、コンバージョン率を劇的に向上させるマーケティングツールだ。 単なる通知機能ではなく、購買データと連携してリアルタイムな「社会的証明」を実装することで、Webサイトの訪問者に即座に安心感を与えられる。 個人開発者や小規模Eコマース運営者にとって、サイト改修に手間をかけずに導入できる強力な売上改善策となる。"
-      },
-      "en": {
-        "title": "Scaling Social Proof with Fomo: How Displaying Real-Time Customer Activity Notifications Boosts Conversion Rates for Independent E-commerce Sites",
-        "summary": "Fomo transforms anonymous e-commerce traffic into tangible social proof by displaying real-time customer activity notifications like recent purchases or sign-ups directly on the site. This simple mechanism leverages the psychological effect of \"fear of missing out,\" signaling to new visitors that other users are actively engaging with the brand, which effectively builds instant trust. For solo developers and small business owners, implementing this automated notification system offers a low-effort, high-impact growth hack to lift conversion rates without needing extensive UI overhauls. By connecting directly to transaction data, the tool turns raw sales records into persuasive conversion drivers, demonstrating that subtle UI prompts are often more effective than aggressive traditional advertising campaigns."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "マーケ・集客・ASO",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-04T17:02:13.127Z"
   },
   {
     "id": "art-1793811724012-hbpvl",
