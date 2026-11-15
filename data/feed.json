@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794704538529-3bh0p",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/matsushima_a/articles/day-046-locally-uncensored-coding-agent-model-size",
+    "published_at": "2026-11-14T14:27:19.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--XjGL60M9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:locally-uncensored%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2582%25923B%252F7B%252F14B%25E3%2581%25A7%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E7%259B%25B4%25E3%2581%259B%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AF14B%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:matsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkY2YwMTZjYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "GitHubで話題のOSS「locally-uncensored」のコーディング能力を検証、3B/7Bモデルは実用困難で14B以上が必須の結論に",
+    "summary_ja": "GitHubトレンドで急上昇したローカル完結型AIアプリ「locally-uncensored」を使い、3Bから14Bのモデルでコーディングタスクを検証した。 実験の結果、3Bおよび7Bモデルではコードの修正能力が不十分で実用には至らず、複雑なタスクを完遂するには14B以上のモデル構成が不可欠であることが判明した。 ローカル環境でAIエージェントを構築する際は、推論速度と精度のトレードオフを考慮し、最低限のパラメータサイズを確保することが開発効率向上の要となる。",
+    "translations": {
+      "ja": {
+        "title": "GitHubで話題のOSS「locally-uncensored」のコーディング能力を検証、3B/7Bモデルは実用困難で14B以上が必須の結論に",
+        "summary": "GitHubトレンドで急上昇したローカル完結型AIアプリ「locally-uncensored」を使い、3Bから14Bのモデルでコーディングタスクを検証した。 実験の結果、3Bおよび7Bモデルではコードの修正能力が不十分で実用には至らず、複雑なタスクを完遂するには14B以上のモデル構成が不可欠であることが判明した。 ローカル環境でAIエージェントを構築する際は、推論速度と精度のトレードオフを考慮し、最低限のパラメータサイズを確保することが開発効率向上の要となる。"
+      },
+      "en": {
+        "title": "Testing GitHub trending app locally-uncensored: 3B/7B coding agents fail, proving 14B+ models are mandatory for actual task completion",
+        "summary": "I benchmarked the coding capabilities of 'locally-uncensored,' a surging GitHub open-source project that bundles chat, media generation, and coding agents into a single desktop application. Testing across 3B, 7B, and 14B parameter models revealed that the smaller 3B and 7B variants consistently fail to perform non-trivial code modifications, rendering them impractical for development workflows. Only the 14B model proved capable of completing the task successfully, highlighting that parameter scale remains a hard constraint for local autonomous agents. For builders deploying local LLM environments, this underscores that prioritizing sufficient model size over raw inference speed is essential; otherwise, you face a significant productivity bottleneck where the agent cannot reliably execute the intended code logic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-15T01:02:18.529Z"
+  },
+  {
+    "id": "art-1794704532006-ns0ef",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://twitter.com/KobeissiLetter/status/2121689817301819425",
+    "published_at": "2026-11-15T00:18:01.000Z",
+    "og_image_url": "https://pbs.twimg.com/media/HWwSsnRWUAADwx_?format=webp&name=large",
+    "title_ja": "AI革命が若手エンジニアのキャリアを脅かす？実務経験不足で「即戦力」を求める企業から敬遠される新たなスキルの二極化現象",
+    "summary_ja": "AIがコーディングを代替し始めたことで、実務経験のない若手エンジニアがOJT（職場内訓練）の機会を失うリスクが浮上している。 企業が即戦力となるシニア層を優先する一方、ジュニアレベルの育成機会は減少しており、AI時代特有のキャリア構築の難しさが鮮明になっている。 単にAIを使うだけでなく、AIで「何を作るか」というプロジェクト体験を自ら積み、早期から実戦経験を補うことが生き残りの鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AI革命が若手エンジニアのキャリアを脅かす？実務経験不足で「即戦力」を求める企業から敬遠される新たなスキルの二極化現象",
+        "summary": "AIがコーディングを代替し始めたことで、実務経験のない若手エンジニアがOJT（職場内訓練）の機会を失うリスクが浮上している。 企業が即戦力となるシニア層を優先する一方、ジュニアレベルの育成機会は減少しており、AI時代特有のキャリア構築の難しさが鮮明になっている。 単にAIを使うだけでなく、AIで「何を作るか」というプロジェクト体験を自ら積み、早期から実戦経験を補うことが生き残りの鍵となる。"
+      },
+      "en": {
+        "title": "Are younger tech workers falling behind in the AI era? The shifting market demand for senior talent over junior development opportunities",
+        "summary": "As AI tools increasingly automate entry-level coding tasks, a dangerous gap is opening for younger developers who rely on routine work for career development. Companies are prioritizing experienced, senior-level engineers who can ship immediately with AI, effectively starving juniors of the mentorship and practical onboarding cycles they need to grow. This shift creates a perilous feedback loop where the next generation of engineers struggles to bridge the experience gap. To remain relevant, builders must pivot from merely using AI assistants to proactively managing and architecting end-to-end projects. Personal ownership of the full build cycle is now the only way for early-career developers to demonstrate value and sidestep the trap of being outpaced by automated workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-15T01:02:12.006Z"
+  },
+  {
+    "id": "art-1794704525329-y0qy1",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/keiba_kansoku/n/nb8a0d4e59f8a",
+    "published_at": "2026-11-15T00:43:31.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336214220/rectangle_large_type_2_c9d229ac35a81d86cd12e98f62c55c5e.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "予測モデルの的中率とROIは別物：AI競馬予想「V18」のライブ検証から学ぶ、儲けに直結しないモデルの落とし穴",
+    "summary_ja": "AI予測モデルにおいて「的中率が高い」ことは、必ずしも「儲かる」ことを意味しない。 競馬予想AI「V18」を用いたライブ検証を通じ、バックテスト時の精度と実際の運用収益（ROI）に乖離が生じるメカニズムを解説する。 開発者は単に予測の正答率を追うだけでなく、リスク管理とベット戦略を統合したアーキテクチャこそが真の収益化には不可欠であることを理解する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "予測モデルの的中率とROIは別物：AI競馬予想「V18」のライブ検証から学ぶ、儲けに直結しないモデルの落とし穴",
+        "summary": "AI予測モデルにおいて「的中率が高い」ことは、必ずしも「儲かる」ことを意味しない。 競馬予想AI「V18」を用いたライブ検証を通じ、バックテスト時の精度と実際の運用収益（ROI）に乖離が生じるメカニズムを解説する。 開発者は単に予測の正答率を追うだけでなく、リスク管理とベット戦略を統合したアーキテクチャこそが真の収益化には不可欠であることを理解する必要がある。"
+      },
+      "en": {
+        "title": "Why prediction accuracy isn't ROI: Lessons from live-testing the V18 horse racing AI on the disconnect between model performance and profit",
+        "summary": "High prediction accuracy in AI models does not automatically translate into consistent profitability, a common pitfall highlighted by live-testing the V18 horse racing predictor. This analysis demonstrates why historical backtesting results often diverge significantly from real-world ROI when capital allocation and strategy variables are introduced. For developers building predictive systems, the takeaway is clear: optimizing purely for hit rate is a tactical error. True monetization requires integrating robust risk management and betting strategies directly into the model architecture. Focusing solely on model accuracy without accounting for the underlying financial dynamics often leads to technically successful models that fail to capture real-world value, emphasizing the need for holistic system design in predictive development."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-15T01:02:05.329Z"
+  },
+  {
+    "id": "art-1794704519174-qu46o",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/mahaya123/items/7b376637d60e4764e01d",
+    "published_at": "2026-11-15T00:58:16.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0Mjc0NzI1JTJGODczODRkOTVkYmUxMjU0NmIzNDcxMDE3N2FmY2E5YjJhMWRjNWIxMyUyRnhfbGFyZ2UucG5nJTNGMTc2Mzk4NjU4Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YzdmOTBlMjEwMTVmZDM0ZmUzZjYxMzZmNWY5ZjgxMmQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1b85f633417cc24a99c9aa4dfb9b2ec8?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgyJUJDJUUzJTgzJUFEJUUzJTgxJThCJUUzJTgyJTg5JUU0JUJEJTlDJUUzJTgyJThCRGVlcCUyMExlYXJuaW5nJUU1JTg1JUE4NiVFNSU4NiU4QSVFMyU4MiU5MiVFOCVBQSVBRCVFNyVBMCVCNCVFMyU4MSU5OSVFMyU4MiU4QiVFMyU4MSVBOCVFNCVCRCU5NSVFMyU4MSU4QyVFMyU4MSVBNyVFMyU4MSU4RCVFMyU4MiU4QiVFMyU4MiU4OCVFMyU4MSU4NiVFMyU4MSVBQiVFMyU4MSVBQSVFMyU4MiU4QiVFMyU4MSVBRSVFMyU4MSU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWVmM2U0YjJiOTRjYzM4YzQzZGNkMTk4Mzc1OTg5NTgw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYWhheWExMjMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yMmIzYTFmMjdmNTBhNzdkNjRjYTE4M2JiZTg0Yzg3Zg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3996047d6be72367563ab5b1307808f2",
+    "title_ja": "『ゼロから作るDeep Learning』全6冊読破の真の価値とは？AI利用とAI開発を隔てる技術的理解の深淵",
+    "summary_ja": "『ゼロから作るDeep Learning』全6冊を読み解くことで、ライブラリのAPI呼び出しを超えた、ニューラルネットワークの仕組みやTransformerの内部構造といった本質的理解が得られる。 単にAIツールを使う開発者と、その挙動を理論から設計できるエンジニアの違いは、数学的背景やアルゴリズムの制御能力にある。",
+    "translations": {
+      "ja": {
+        "title": "『ゼロから作るDeep Learning』全6冊読破の真の価値とは？AI利用とAI開発を隔てる技術的理解の深淵",
+        "summary": "『ゼロから作るDeep Learning』全6冊を読み解くことで、ライブラリのAPI呼び出しを超えた、ニューラルネットワークの仕組みやTransformerの内部構造といった本質的理解が得られる。 単にAIツールを使う開発者と、その挙動を理論から設計できるエンジニアの違いは、数学的背景やアルゴリズムの制御能力にある。"
+      },
+      "en": {
+        "title": "Beyond API Calls: Unlocking Deep Technical Mastery Through the 'Deep Learning from Scratch' Series",
+        "summary": "Completing the six-volume 'Deep Learning from Scratch' series shifts a developer's perspective from simply calling APIs to mastering the internal mechanics of neural networks and Transformer architectures. The core distinction lies in moving past high-level abstractions to understand the underlying mathematics and algorithmic control necessary for genuine innovation. As AI-powered applications proliferate, relying solely on black-box tools limits customization and performance tuning. For indie hackers and builders, internalizing these fundamental concepts is the only way to move beyond commoditized usage and actually architect proprietary solutions. This deep dive provides the rigorous mental model required to build, debug, and optimize AI systems at a level that surface-level tutorials simply cannot touch, ultimately securing a significant long-term competitive advantage."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-15T01:01:59.174Z"
+  },
+  {
     "id": "art-1794703624566-20zwg",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -5559,32 +5663,6 @@
     "created_at": "2026-11-14T10:31:57.108Z"
   },
   {
-    "id": "art-1794652310337-l6ttp",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/neguseatama/n/n168d42b1b2fd",
-    "published_at": "2026-11-14T10:31:00.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335915149/rectangle_large_type_2_3ee919d89552d9265dbae7fa8ffad851.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "ローカルフロントエンド「Sieve-Tray」v2.1.1リリース：GUI刷新、フォルダ一括処理、ファイル比較機能の追加で運用効率を大幅改善",
-    "summary_ja": "Sieveシリーズの各エンジンを統合するローカルフロントエンド「Sieve-Tray」がv2.1.1へ大型アップデートされました。 今回の刷新ではGUIの大幅な見直しに加え、フォルダの一括処理機能と実行記録の保持、ファイル同士の比較機能が新たに追加されています。 また、スモークテストの標準化も行われ、開発者にとって運用負荷の軽減と、処理の再現性がより担保される設計となりました。 複雑化するローカルワークフローの管理において、検証環境の自動化と操作性の向上が鍵となります。",
-    "translations": {
-      "ja": {
-        "title": "ローカルフロントエンド「Sieve-Tray」v2.1.1リリース：GUI刷新、フォルダ一括処理、ファイル比較機能の追加で運用効率を大幅改善",
-        "summary": "Sieveシリーズの各エンジンを統合するローカルフロントエンド「Sieve-Tray」がv2.1.1へ大型アップデートされました。 今回の刷新ではGUIの大幅な見直しに加え、フォルダの一括処理機能と実行記録の保持、ファイル同士の比較機能が新たに追加されています。 また、スモークテストの標準化も行われ、開発者にとって運用負荷の軽減と、処理の再現性がより担保される設計となりました。 複雑化するローカルワークフローの管理において、検証環境の自動化と操作性の向上が鍵となります。"
-      },
-      "en": {
-        "title": "Sieve-Tray v2.1.1 Local Frontend Update: GUI Overhaul, Batch Folder Processing, and Enhanced File Comparison Tools",
-        "summary": "Sieve-Tray, the local frontend consolidating various Sieve engines, has received a major v2.1.1 update. This release features a complete GUI overhaul, newly added support for batch folder processing with operation logging, and direct file comparison capabilities. Beyond the interface changes, the team has standardized smoke testing, providing developers with more consistent verification processes and lower operational overhead for complex local workflows. For builders handling local file engines, the lesson here is that standardizing test suites alongside batch processing controls is essential for maintaining reliability. This update demonstrates how integrating automated validation directly into your local management layer minimizes manual troubleshooting and significantly accelerates the development iteration cycle when working across fragmented engine architectures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-14T10:31:50.337Z"
-  },
-  {
     "id": "art-1794651437819-346fx",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -9885,33 +9963,6 @@
     "created_at": "2026-11-13T18:31:47.110Z"
   },
   {
-    "id": "art-1794593834988-aj97k",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://blink.cash/arena",
-    "published_at": "2026-11-13T17:32:45.000Z",
-    "og_image_url": "https://blink.cash/og/og-arena.jpg",
-    "title_ja": "最先端AIモデルに資本とオンチェーン市場へのアクセス権を付与した結果、モデルごとに異なる投資行動が判明",
-    "summary_ja": "最先端AIエージェントにオンチェーン市場（トークン化された株式、国債、貸付など）へのアクセス権を与え、利益最大化を目指す実験が行われた。 興味深いことに、アメリカのモデルは主に株式へ投資する傾向がある一方、中国のモデルは金や債券を選択し、すべてのモデルが仮想通貨を避けるという意外な結果が出ている。 AIに自律的な投資判断を委ねる際、モデル特有のバイアスがどのような収益を生むのか、将来的な自動化運用へのヒントとなる興味深い検証である。",
-    "translations": {
-      "ja": {
-        "title": "最先端AIモデルに資本とオンチェーン市場へのアクセス権を付与した結果、モデルごとに異なる投資行動が判明",
-        "summary": "最先端AIエージェントにオンチェーン市場（トークン化された株式、国債、貸付など）へのアクセス権を与え、利益最大化を目指す実験が行われた。 興味深いことに、アメリカのモデルは主に株式へ投資する傾向がある一方、中国のモデルは金や債券を選択し、すべてのモデルが仮想通貨を避けるという意外な結果が出ている。 AIに自律的な投資判断を委ねる際、モデル特有のバイアスがどのような収益を生むのか、将来的な自動化運用へのヒントとなる興味深い検証である。"
-      },
-      "en": {
-        "title": "Frontier AI models with capital and on-chain market access reveal distinctive, model-specific investment strategies",
-        "summary": "Researchers granted autonomous AI agents access to capital and on-chain markets, including tokenized stocks, T-bills, and lending protocols, to test for profit maximization. The results reveal striking behavioral differences: American models demonstrated a strong preference for equities, while Chinese models favored gold and bonds, with nearly every tested agent actively avoiding cryptocurrency exposure. Each agent must justify its trade thesis, mirroring traditional hedge fund methodologies. This proof-of-concept project highlights how distinct underlying training priorities influence AI financial decision-making. For developers building autonomous agents, this experiment provides a fascinating look into how model provenance might dictate risk tolerance and asset allocation, suggesting that financial agent alignment requires careful oversight of the model’s internal reasoning process regarding asset classes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-13T18:17:14.988Z"
-  },
-  {
     "id": "art-1794593824393-qw7an",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -12032,32 +12083,6 @@
       "開発"
     ],
     "created_at": "2026-11-13T08:31:48.924Z"
-  },
-  {
-    "id": "art-1794557899566-en00f",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Rakete/items/d5e6e2adcdf214eece70",
-    "published_at": "2026-11-13T08:08:52.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZjNGMwM2MxMTU0MmM5YWJjNzk3NmE4YTlmYWIwMWQzYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZWZmNDlmZDY5N2E0MzkyMTIxMDI3ZGU3MDJlZDViZDY%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D60516f16b862ac32216f6895f2940c85?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQUJDTVMlRTMlODElQUUlRTYlOTMlOEQlRTQlQkQlOUMlRTMlODIlOTIlRTQlQkIlQkIlRTMlODElOUIlRTMlODIlOEIlRTMlODElQUElRTMlODIlODklRTMlODAlODElRTYlQTglQTklRTklOTklOTAlRTclQUUlQTElRTclOTAlODYlRTMlODIlODIlRTQlQkElQkElRTklOTYlOTMlRTMlODElQTglRTUlOTAlOEMlRTMlODElOTglRTMlODElQUIlRTMlODElOTklRTMlODIlOEIlRTMlODElQjklRTMlODElOEQlRTMlODElQTAlRTMlODElQTglRTYlODAlOUQlRTMlODElODYlMjAlRTIlODAlOTQlMjBCaXJrbHklRTMlODElQUVBSSVFNyVCNSVCMSVFNSU5MCU4OCVFOCVBOCVBRCVFOCVBOCU4OCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTUyOWRkNDgyYjI0NTA0NjhjZmU1YWVkZDUzOTY1YWJk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBSYWtldGUmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0xMjE2YzE0MTUzZDEyNDFjYTc2ODFkZWNiMWI4ZjNkZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=27fea4e54cdc7c8e3096c901ec3cf434",
-    "title_ja": "AIエージェントにCMS操作を委任する際、権限管理を人間と同様に設計すべき理由 — BirklyのAI統合におけるセキュリティ設計",
-    "summary_ja": "Birkly社はAIエージェントにCMS操作を任せる際、AIの権限管理を人間と同等の粒度で設計する重要性を提唱している。 単一の特権管理ではなく、編集や承認フローを個別に切り分け、エージェント特有の「誤動作リスク」を抑えるための設計思想が不可欠だ。 開発者はAIを信頼して全権を与えるのではなく、最小権限の原則に基づき、操作ログの追跡と権限分離を行うことで、CMS運用の安全性を確保すべきである。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントにCMS操作を委任する際、権限管理を人間と同様に設計すべき理由 — BirklyのAI統合におけるセキュリティ設計",
-        "summary": "Birkly社はAIエージェントにCMS操作を任せる際、AIの権限管理を人間と同等の粒度で設計する重要性を提唱している。 単一の特権管理ではなく、編集や承認フローを個別に切り分け、エージェント特有の「誤動作リスク」を抑えるための設計思想が不可欠だ。 開発者はAIを信頼して全権を与えるのではなく、最小権限の原則に基づき、操作ログの追跡と権限分離を行うことで、CMS運用の安全性を確保すべきである。"
-      },
-      "en": {
-        "title": "Why AI agents managing CMS operations require the same granular permission controls as human staff, according to Birkly",
-        "summary": "Birkly emphasizes that when delegating CMS operations to AI agents, developers must enforce permission management at the same granular level as human employees. Rather than assigning broad, administrative access to agents, the system should enforce strict role separation for editing and approval workflows to mitigate the specific risks of AI hallucination and unauthorized data modification. Developers should never blindly trust agents with full permissions; instead, adopting the principle of least privilege while implementing robust logging and workflow segregation is critical for secure CMS operations. For teams building autonomous agent integrations, the key takeaway is that treating an AI agent as a privileged human user within your RBAC model is the only way to effectively secure your production infrastructure."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-13T08:18:19.566Z"
   },
   {
     "id": "art-1794557877153-8knwo",
@@ -15978,32 +16003,6 @@
       "研究"
     ],
     "created_at": "2026-11-12T13:02:49.394Z"
-  },
-  {
-    "id": "art-1794487633243-yr17o",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/devlog/articles/0560c8be9fd380",
-    "published_at": "2026-11-12T03:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KICFbDyH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%25902026%25E5%25B9%25B411%25E6%259C%2588%25E3%2580%2591Claude%25E3%2581%25A7%25E3%2580%258C%25E5%25AD%25A6%25E7%25BF%2592%25E3%2581%25AB%25E4%25BD%25BF%25E3%2582%258F%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%25AB%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2582%25E6%25AD%25A2%25E3%2581%25BE%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2582%2582%25E3%2581%25AE7%25E9%2581%25B8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Sato%2520Kotaro%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ4N2JiMTg5MWEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%2587%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzBjMGY2ODc0NmYuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claudeの「学習データ提供オフ」設定でも送信されるデータとは？Claude CodeなどAI開発ツールが収集する情報の注意点",
-    "summary_ja": "Claudeのプライバシー設定で学習へのデータ利用をオフにしても、実は全データが遮断されるわけではない。 特にClaude Codeのような開発支援ツールは、動作ログやクラッシュ報告などの診断情報を「製品改善」の名目で送信しており、これは学習オプトアウト設定とは別枠で扱われる。 開発者はプロダクトのテレメトリ要件を正確に理解し、機密情報を扱う際はローカル環境の監視や環境変数での制限が必要だ。",
-    "translations": {
-      "ja": {
-        "title": "Claudeの「学習データ提供オフ」設定でも送信されるデータとは？Claude CodeなどAI開発ツールが収集する情報の注意点",
-        "summary": "Claudeのプライバシー設定で学習へのデータ利用をオフにしても、実は全データが遮断されるわけではない。 特にClaude Codeのような開発支援ツールは、動作ログやクラッシュ報告などの診断情報を「製品改善」の名目で送信しており、これは学習オプトアウト設定とは別枠で扱われる。 開発者はプロダクトのテレメトリ要件を正確に理解し、機密情報を扱う際はローカル環境の監視や環境変数での制限が必要だ。"
-      },
-      "en": {
-        "title": "Why disabling Claude's training opt-out doesn't block all data: What developers must know about telemetry in AI tools",
-        "summary": "Even if you disable model training in Claude's privacy settings, you are not opting out of all data transmission. Developers often overlook that tools like Claude Code continue to collect diagnostic data—such as bug reports, error logs, and telemetry—under the guise of product improvement, which operates independently of training preferences. This distinction creates a blind spot where proprietary code or system metadata might leave your environment despite strict compliance settings. To maintain security, engineers must realize that service telemetry often overrides individual training opt-outs. For builders managing sensitive projects, the takeaway is to monitor local outbound traffic and explicitly configure environment-level data constraints rather than relying solely on UI privacy toggles to protect your codebase."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-12T12:47:13.243Z"
   },
   {
     "id": "art-1794486739937-o9oeb",
