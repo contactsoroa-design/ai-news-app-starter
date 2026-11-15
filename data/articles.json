@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794745071776-21sma",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/tatsuyaaaaaaa/articles/bca426b2c830d1",
+    "published_at": "2026-11-15T04:16:36.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--C93obJbS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:1%25E5%259B%259E%25E3%2581%25AEforward%2520pass%25E3%2581%25A7%25E3%2580%258C%25E9%2581%25B8%25E3%2581%25B6%25E3%2580%258DDecision%2520Model%25E5%2585%25A5%25E9%2596%2580%25EF%25BC%259A%25E4%25B8%25BB%25E8%25A6%2581%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%25AE%25E8%25AA%25AD%25E3%2581%25BF%25E5%2587%25BA%25E3%2581%2597%25E6%2596%25B9%25E5%25BC%258F%25E3%2583%25BB%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%25BB%25E8%25A8%2580...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%25A2%25A8%25E6%2599%25AF%25E5%25A4%25AA%25E9%2583%258E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ExZmZkZGI4ZGEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "生成ではなく「選択」に特化：1回のforward passで完結するDecision Modelの仕組みと主要モデル・ライセンス・言語対応を徹底解説",
+    "summary_ja": "業務システムの分類や条件判定など、文章生成が不要な処理ではチャット型LLMは非効率で信頼性に欠ける。 本記事では、1回のforward passでクラス分類やスコアリングを行う「Decision Model」の利点を解説。 推論速度の向上、出力形式の安定、確率の閾値判定が可能になる等、AIエージェントの判断レイヤーとしての有用性と主要なライセンスや言語対応状況を整理した。 開発者は適切な使い分けが求められる。",
+    "translations": {
+      "ja": {
+        "title": "生成ではなく「選択」に特化：1回のforward passで完結するDecision Modelの仕組みと主要モデル・ライセンス・言語対応を徹底解説",
+        "summary": "業務システムの分類や条件判定など、文章生成が不要な処理ではチャット型LLMは非効率で信頼性に欠ける。 本記事では、1回のforward passでクラス分類やスコアリングを行う「Decision Model」の利点を解説。 推論速度の向上、出力形式の安定、確率の閾値判定が可能になる等、AIエージェントの判断レイヤーとしての有用性と主要なライセンスや言語対応状況を整理した。 開発者は適切な使い分けが求められる。"
+      },
+      "en": {
+        "title": "Beyond Chat: A Deep Dive Into Decision Models That Perform Classification in a Single Forward Pass for Robust AI Pipelines",
+        "summary": "Many enterprise workflows, such as ticket routing or conditional logic, do not require full text generation, yet they often rely on inefficient chat-based LLMs that struggle with stability. This article explores 'Decision Models'—architectures optimized to perform single-pass classification, scoring, or Yes/No judgments without the overhead of token decoding. These models offer significant benefits for AI agents, including faster inference, consistent output schemas, and the ability to trigger human interventions based on clear probability thresholds. By comparing model architectures, licensing constraints, and multilingual support, the piece provides a framework for developers to move away from expensive generative models when the primary task is strictly analytical judgment, ultimately building more reliable and predictable AI-driven backends."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-15T12:17:51.776Z"
+  },
+  {
+    "id": "art-1794745059903-3cusm",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://guidelight.ai/blog/categories-of-misaligned-ai-behaviors",
+    "published_at": "2026-11-15T12:09:05.000Z",
+    "og_image_url": "https://www.guidelight.ai/blog/categories-of-misaligned-ai-behaviors/opengraph-image?68a2add0dc3fd5f2",
+    "title_ja": "AI制御不能リスクを特定する「アライメント不整合」の兆候分析：モデルの自律行動と目的逸脱の評価指標",
+    "summary_ja": "本稿は、AIモデルが人間の意図から外れた行動をとる「アライメント不整合」のリスクを詳細に分類している。 AIが自律性を高める中で、本来の目的を逸脱したり、制御不能な状況に陥る初期兆候を特定することは、今後の安全性評価において極めて重要だ。 開発者は、モデルの意思決定プロセスにおける不可解な挙動を単なるエラーとして処理せず、将来的な暴走リスクのシグナルとして監視し、ガードレールを構築すべきである。",
+    "translations": {
+      "ja": {
+        "title": "AI制御不能リスクを特定する「アライメント不整合」の兆候分析：モデルの自律行動と目的逸脱の評価指標",
+        "summary": "本稿は、AIモデルが人間の意図から外れた行動をとる「アライメント不整合」のリスクを詳細に分類している。 AIが自律性を高める中で、本来の目的を逸脱したり、制御不能な状況に陥る初期兆候を特定することは、今後の安全性評価において極めて重要だ。 開発者は、モデルの意思決定プロセスにおける不可解な挙動を単なるエラーとして処理せず、将来的な暴走リスクのシグナルとして監視し、ガードレールを構築すべきである。"
+      },
+      "en": {
+        "title": "Analyzing misaligned AI behaviors: Identifying key indicators of loss-of-control risks in autonomous model operations",
+        "summary": "This article provides a rigorous classification of misaligned AI behaviors, focusing on how models can drift from human intent and signal potential loss-of-control scenarios. As AI systems gain greater autonomy, identifying these early warning signs—where models deviate from established objectives or demonstrate opaque decision-making—is becoming critical for safety research. For engineers and researchers building advanced agents, these misalignments should not be dismissed as simple bugs. Instead, they serve as essential diagnostics for systemic risks. The practical takeaway for builders is the necessity of integrating robust safety guardrails and behavioral monitoring into the lifecycle of any model designed for autonomous tasks to ensure outputs remain strictly bounded by human-defined constraints."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-15T12:17:39.903Z"
+  },
+  {
+    "id": "art-1794745050520-39yha",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Masashige-Y/items/2dd6f251d96f7d1e2898",
+    "published_at": "2026-11-15T12:10:53.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzOTU2MjQ2JTJGMDYxMzEyZjM4ODAwN2E5NDk4ZDQwMWQwYmVlZjg1MzhlZGRmNjk4ZSUyRmxhcmdlLnBuZyUzRjE3OTQxMzMwNTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTBhMjVlNGEzYmU2MGE2Y2Y0YjVmMzhiZGU2OWZmNjYz%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D5a889f3ecc410d22cdc3be7d64b0590f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9bnBtJTIwYXVkaXQlRTMlODElQUUlRTglQUQlQTYlRTUlOTElOEElRTMlODAlODFBSSVFMyU4MSVBQiVFNiU5QiVCNCVFNiU5NiVCMCVFMyU4MiU5MiVFNCVCQiVCQiVFMyU4MSU5QiVFMyU4MSVBNiVFNSVBNCVBNyVFNCVCOCU4OCVFNSVBNCVBQiVFRiVCQyU5RiVFMyU4MCU5MCVFNSU4OCU5RCVFNSVCRiU4MyVFOCU4MCU4NSVFNSU5MCU5MSVFMyU4MSU5MSVFMyU4MCU5MSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWRlOWQyMzU1M2Y3OWY5NjFmMzlmYzljNzdiZTJhMjg1&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBNYXNhc2hpZ2UtWSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTgwMDkzZWYxMjE2NjM4MzRmNGZlOGMwYWQzODBlN2Q5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c94ed870855714068e451d0361e1f7f9",
+    "title_ja": "npm audit脆弱性警告へのAI活用法：AI任せの自動更新を安全に行うためのチェックリストと検証フロー",
+    "summary_ja": "npm auditで検知された脆弱性に対し、AIによる修正案をそのまま適用するのはリスクが高い。 単にコードを更新するだけでなく、間接的な依存関係の追跡や、セキュリティパッチが破壊的変更を含んでいないかのテスト検証、そしてAIの提案が本当に安全かを見極める「人間によるレビュー」の重要性を解説する。 AIの効率と人間の判断力を組み合わせた、安全な脆弱性管理のワークフローを提示する。",
+    "translations": {
+      "ja": {
+        "title": "npm audit脆弱性警告へのAI活用法：AI任せの自動更新を安全に行うためのチェックリストと検証フロー",
+        "summary": "npm auditで検知された脆弱性に対し、AIによる修正案をそのまま適用するのはリスクが高い。 単にコードを更新するだけでなく、間接的な依存関係の追跡や、セキュリティパッチが破壊的変更を含んでいないかのテスト検証、そしてAIの提案が本当に安全かを見極める「人間によるレビュー」の重要性を解説する。 AIの効率と人間の判断力を組み合わせた、安全な脆弱性管理のワークフローを提示する。"
+      },
+      "en": {
+        "title": "Managing npm audit vulnerabilities with AI: A practical checklist and verification workflow for safe automated security updates",
+        "summary": "Applying AI-generated fixes directly to npm audit vulnerabilities poses significant risks, especially when dealing with complex, indirect dependencies. Simply accepting AI suggestions without verification can introduce breaking changes or overlook security nuances. This guide outlines a robust workflow for safely handling dependency patches, emphasizing that developers must validate recursive dependency changes and conduct rigorous regression testing before deployment. Instead of blindly trusting AI for updates, developers should use AI as an assistant to identify potential fixes while keeping human oversight as the final gatekeeper for code integrity. This approach balances the efficiency of AI-assisted maintenance with the necessary caution required for production environments to ensure security patches do not destabilize the underlying application codebase."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "アップデート"
+    ],
+    "created_at": "2026-11-15T12:17:30.520Z"
+  },
+  {
+    "id": "art-1794745017970-vqzdk",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/gifted_eider2758/n/n6c0b14d8bc80",
+    "published_at": "2026-11-15T12:16:24.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336522166/rectangle_large_type_2_47fed3ea092376b1938a704b8e2311b2.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "MCP活用でAI対話を日常の意思決定へ繋げる新サービス「Kotchi」：履歴に埋もれるインサイトをタスク化する仕組み",
+    "summary_ja": "「Kotchi」は、AIとの会話で得られた提案や比較検討の記録をチャット履歴から切り出し、日常のタスクや意思決定へ直接連携させるMCP対応アプリケーションだ。 AIが提示した候補や理由を一時的なログとして終わらせず、ユーザーのToDoや記録へ構造化して落とし込むことで、AIのポテンシャルを実生活へ具現化する。 AIとの対話を「単なる相談」から「実行可能なプランニング」へと昇華させたい開発者にとって、MCPを介したコンテキスト管理の好例となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "MCP活用でAI対話を日常の意思決定へ繋げる新サービス「Kotchi」：履歴に埋もれるインサイトをタスク化する仕組み",
+        "summary": "「Kotchi」は、AIとの会話で得られた提案や比較検討の記録をチャット履歴から切り出し、日常のタスクや意思決定へ直接連携させるMCP対応アプリケーションだ。 AIが提示した候補や理由を一時的なログとして終わらせず、ユーザーのToDoや記録へ構造化して落とし込むことで、AIのポテンシャルを実生活へ具現化する。 AIとの対話を「単なる相談」から「実行可能なプランニング」へと昇華させたい開発者にとって、MCPを介したコンテキスト管理の好例となるだろう。"
+      },
+      "en": {
+        "title": "Kotchi Launches as an MCP-Powered Bridge to Turn AI Chat Insights into Actionable Daily Tasks",
+        "summary": "Kotchi is a new service designed to prevent AI-generated insights, such as product comparisons and decision-making logic, from getting lost in fragmented chat histories. By leveraging the Model Context Protocol (MCP), Kotchi extracts key takeaways from LLM conversations and structures them into actionable tasks or personal logs, effectively bridging the gap between transient chat and long-term planning. The platform treats AI outputs not merely as text, but as data inputs for daily routines. For builders exploring the ecosystem, this demonstrates how MCP can bridge the disconnect between generative model outputs and concrete user workflows, proving that the true value of AI assistants lies in their ability to persist context across the application layer, not just inside the chat window."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-15T12:16:57.970Z"
+  },
+  {
     "id": "art-1794744150747-uvod3",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8381,32 +8487,6 @@
     "created_at": "2026-11-14T11:19:41.861Z"
   },
   {
-    "id": "art-1794655079102-wh0gx",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://medium.com/@smoking2man/anti-turing-for-ai-presumption-as-a-form-of-thought-9eb8ae8edc9f",
-    "published_at": "2026-11-14T10:57:41.000Z",
-    "og_image_url": null,
-    "title_ja": "AIの思考を再定義する「Anti-Turing」：推論能力を超えて「前提」を構築する新たなAIモデルの設計思想",
-    "summary_ja": "本稿では、AIの思考プロセスにおける「チューリングテスト」的な反応評価ではなく、AIが自律的に前提を構築する「Anti-Turing」という新たな概念を提唱している。 単なるパターンマッチングや予測を超え、AIがいかに独自の論理的基盤を形成し、不確実な状況下で自らの推論を正当化できるかを論じている。 開発者はこのパラダイムを通じ、対話AIの出力を「正解かどうか」だけでなく、いかなる前提条件に基づいているかという文脈構築能力として評価する必要があるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIの思考を再定義する「Anti-Turing」：推論能力を超えて「前提」を構築する新たなAIモデルの設計思想",
-        "summary": "本稿では、AIの思考プロセスにおける「チューリングテスト」的な反応評価ではなく、AIが自律的に前提を構築する「Anti-Turing」という新たな概念を提唱している。 単なるパターンマッチングや予測を超え、AIがいかに独自の論理的基盤を形成し、不確実な状況下で自らの推論を正当化できるかを論じている。 開発者はこのパラダイムを通じ、対話AIの出力を「正解かどうか」だけでなく、いかなる前提条件に基づいているかという文脈構築能力として評価する必要があるだろう。"
-      },
-      "en": {
-        "title": "Beyond Turing: Redefining AI Cognition Through 'Anti-Turing' Concepts and Autonomous Premise-Building Architectures",
-        "summary": "The article introduces 'Anti-Turing,' a conceptual framework for AI that moves beyond evaluating models based on Turing-like responsiveness to measuring their ability to autonomously build internal premises. Instead of relying on pattern matching or probabilistic text generation, this approach explores how AI can establish its own logical foundation to justify reasoning within uncertain environments. For developers and AI architects, this marks a shift in how we evaluate system outputs: moving away from simplistic accuracy metrics toward assessing an agent's capability to form coherent, underlying conceptual contexts. Building robust AI agents now requires prioritizing this 'premise-building' phase, ensuring models operate from a stable logical base rather than merely predicting the next token in a vacuum."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-14T11:17:59.102Z"
-  },
-  {
     "id": "art-1794654164298-3g8lh",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -10343,31 +10423,6 @@
       "研究"
     ],
     "created_at": "2026-11-14T01:31:58.252Z"
-  },
-  {
-    "id": "art-1794619040386-t51k4",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/NaokiIshimura/items/497afd9a11879d369d19",
-    "published_at": "2026-11-14T01:11:57.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMTQxOTM0JTJGcHJvZmlsZS1pbWFnZXMlMkYxNzkwNjA1Mjk2P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz01YTlmODFiOTNiYWFlYWYyNThjOTcwM2Y0OGM5NTMxYw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db29ef63ef453773a43a04d2b352fffa0?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFOSU5NiU4QiVFNyU5OSVCQSVFOCU4MCU4NSVFMyU4MSU4QyVFNiVCMyVBOCVFNyU5QiVBRSVFMyU4MSU5NyVFMyU4MSVBNiVFMyU4MSU4NCVFMyU4MiU4QjUlRTMlODElQTQlRTMlODElQUUlRTMlODIlQTIlRTMlODMlODMlRTMlODMlOTclRTMlODMlODclRTMlODMlQkMlRTMlODMlODglRUYlQkMlODh2Mi4xLjMyMSUyMC0lMjB2Mi4xLjMyNSVFRiVCQyU4OSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWNjNjgyMzhkOTVkMzI5YTY4YzgyZWIzZTQyZTA2MmJh&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBOYW9raUlzaGltdXJhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MDUxZDlkODk1NWI0MDI2OGE2MjJkN2Q4NGQxYzdhNTU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3abce5cf8d4531f6aaee9a1a1f33af02",
-    "title_ja": "Claude Codeの最新アップデート（v2.1.321〜v2.1.325）で注目すべき5つの機能改善と開発効率への影響を解説",
-    "summary_ja": "Claude Codeのバージョンv2.1.321からv2.1.325にかけて、サンドボックス環境の強化をはじめとする実務的な機能アップデートが相次いだ。 特に開発者の作業効率に直結する変更点が多く、単なるバグ修正に留まらないエージェントの操作性の向上が図られている。 ツールを使いこなすには、リリースノートを追うだけでなく、最新版が導入する実行環境の分離や操作権限の変更が自身のワークフローにどう影響するかを検証しておくことが重要だ。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの最新アップデート（v2.1.321〜v2.1.325）で注目すべき5つの機能改善と開発効率への影響を解説",
-        "summary": "Claude Codeのバージョンv2.1.321からv2.1.325にかけて、サンドボックス環境の強化をはじめとする実務的な機能アップデートが相次いだ。 特に開発者の作業効率に直結する変更点が多く、単なるバグ修正に留まらないエージェントの操作性の向上が図られている。 ツールを使いこなすには、リリースノートを追うだけでなく、最新版が導入する実行環境の分離や操作権限の変更が自身のワークフローにどう影響するかを検証しておくことが重要だ。"
-      },
-      "en": {
-        "title": "Five Key Improvements in the Latest Claude Code Updates (v2.1.321-v2.1.325) Shaping Better Agentic Development Workflows",
-        "summary": "Claude Code has shipped a series of impactful updates between versions v2.1.321 and v2.1.325, with notable refinements to its sandbox environment and overall operational stability. These changes go beyond routine bug fixes, actively enhancing how agents interact with local projects and execute code securely. For developers leveraging agentic workflows, the practical takeaway is to move beyond simply tracking version bumps; you must actively audit how these new sandbox isolation layers and permission updates specifically impact your local dev environment. Staying ahead of these rapid shifts is essential for maintaining a reliable development loop, as minor adjustments to execution security can drastically reduce friction in complex coding tasks performed by autonomous agents."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-14T01:17:20.386Z"
   },
   {
     "id": "art-1794619005485-7qv4g",
@@ -13095,32 +13150,6 @@
     "created_at": "2026-11-13T09:18:08.896Z"
   },
   {
-    "id": "art-1794561482880-ftyqq",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/agentkiyaku/articles/8f4e4c0facd812",
-    "published_at": "2026-11-13T04:11:30.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fTVdK0df--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25A7%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%2520CSV%2520%25E3%2581%258C%25E6%2596%2587%25E5%25AD%2597%25E5%258C%2596%25E3%2581%2591%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259ACP932%2520%25E3%2581%25AF%2520Read%2520%25E3%2581%25A7%25E5%258C%2596%25E3%2581%2591%25E3%2580%2581Edit%2520%25E3%2581%25A8%2520Writ...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E8%25A6%258F%25E7%25B4%2584%25E5%25B7%25A5%25E6%2588%25BF%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzc3YzBlYWFmMDIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Code (2.1.322) で日本語CSVが文字化けする問題：CP932エンコードへの未対応と対策を解説",
-    "summary_ja": "Claude Code 2.1.322において、WindowsやExcelが書き出すCP932（Shift_JIS拡張）形式のCSVを読み込むと日本語が文字化けし、編集や書き出し処理も拒否される現象が確認されている。 現時点での最適解は、作業前にPython等のスクリプトでファイルをUTF-8へ変換することだ。 公式ドキュメントと実際の挙動が食い違うケースがあるため、開発者は入力ファイルのエンコーディング管理を外部で行う必要がある。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code (2.1.322) で日本語CSVが文字化けする問題：CP932エンコードへの未対応と対策を解説",
-        "summary": "Claude Code 2.1.322において、WindowsやExcelが書き出すCP932（Shift_JIS拡張）形式のCSVを読み込むと日本語が文字化けし、編集や書き出し処理も拒否される現象が確認されている。 現時点での最適解は、作業前にPython等のスクリプトでファイルをUTF-8へ変換することだ。 公式ドキュメントと実際の挙動が食い違うケースがあるため、開発者は入力ファイルのエンコーディング管理を外部で行う必要がある。"
-      },
-      "en": {
-        "title": "Claude Code 2.1.322 fails to process CP932 Japanese CSV files: Encoding conflicts and workarounds",
-        "summary": "Users report that Claude Code 2.1.322 struggles with CSV files exported from Windows or Excel using CP932 encoding, resulting in mojibake during read operations and complete refusal of edit or write commands. Since the tool does not currently support this legacy Japanese character set, the most reliable workaround is to pre-convert your CSV files to UTF-8 using a simple script before feeding them into the AI agent. This mismatch between documentation and actual behavior highlights the need for developers to strictly enforce file encoding standards externally. When building workflows around Claude Code, you cannot assume auto-detection of localized character sets; always sanitize your inputs into UTF-8 to prevent unexpected halts during automated file editing tasks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-13T09:18:02.880Z"
-  },
-  {
     "id": "art-1794561416593-geq9y",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -13720,32 +13749,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-13T06:33:22.426Z"
-  },
-  {
-    "id": "art-1794551573139-2jk48",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ara_ta3/articles/thinking-about-engineers-five-years-from-now",
-    "published_at": "2026-11-13T05:03:44.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ckwHRgR_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:5%25E5%25B9%25B4%25E5%25BE%258C%25E3%2581%25AE%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25AF%25E3%2580%2581%25E4%25BD%2595%25E3%2581%25AB%25E8%25B2%25AC%25E4%25BB%25BB%25E3%2582%2592%25E6%258C%2581%25E3%2581%25A4%25E3%2581%25AE%25E3%2581%25A0%25E3%2582%258D%25E3%2581%2586%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェント普及で激変する開発現場、5年後のエンジニアに求められる真の責任とは何か",
-    "summary_ja": "AIエージェントによる自動コーディングが日常化し、手作業による開発頻度が急速に低下している。 現在はモデル性能や推論コスト、応答速度のバランスを見極め、最適な構成を選択する「モデル選定」がエンジニアの主要な業務となりつつある。 単なるコーディングスキルを超えて、AIにどのようなタスクを委ね、システム全体にどのような価値を実装するかという「責任の所在」を明確にすることが、今後の開発者には不可欠となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント普及で激変する開発現場、5年後のエンジニアに求められる真の責任とは何か",
-        "summary": "AIエージェントによる自動コーディングが日常化し、手作業による開発頻度が急速に低下している。 現在はモデル性能や推論コスト、応答速度のバランスを見極め、最適な構成を選択する「モデル選定」がエンジニアの主要な業務となりつつある。 単なるコーディングスキルを超えて、AIにどのようなタスクを委ね、システム全体にどのような価値を実装するかという「責任の所在」を明確にすることが、今後の開発者には不可欠となるだろう。"
-      },
-      "en": {
-        "title": "The shift to AI agent coding: Redefining the core responsibilities of software engineers over the next five years",
-        "summary": "As AI agents increasingly handle routine coding, the daily workflow for developers has shifted from manual implementation to architectural orchestration. Engineers now spend their cycles analyzing model benchmarks, reasoning effort, and cost-latency tradeoffs to select the optimal stack for specific products. This transition implies that the value of an engineer is moving away from syntax generation toward system stewardship. In five years, the primary responsibility of a developer won't be writing individual lines of code but defining the boundaries of AI autonomy and ensuring the reliability and business value of the systems these agents construct. Building effectively now requires viewing LLMs as leverageable assets rather than just tools, focusing on the high-level design choices that determine overall product success."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-13T06:32:53.139Z"
   },
   {
     "id": "art-1794550625017-l99nb",
