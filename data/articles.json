@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1794776692250-ai2hz",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://news.ycombinator.com/item?id=50510540",
+    "published_at": "2026-11-15T20:45:34.000Z",
+    "og_image_url": null,
+    "title_ja": "AI時代の採用面接はどう変わるか？13年選手が抱く「手書きコーディング不要」への不安と現場のリアル",
+    "summary_ja": "AIツールを駆使し、プロンプトエンジニアリングとコードレビュー中心の業務を行ってきたシニア開発者が、今後の採用面接における「コーディング試験」への適応に苦慮している。 AIによる自動生成が標準化する現在、企業はかつてのような手書きスキルを求めるべきか、それとも設計能力やアーキテクチャの視点を重視すべきかという議論が起きている。",
+    "translations": {
+      "ja": {
+        "title": "AI時代の採用面接はどう変わるか？13年選手が抱く「手書きコーディング不要」への不安と現場のリアル",
+        "summary": "AIツールを駆使し、プロンプトエンジニアリングとコードレビュー中心の業務を行ってきたシニア開発者が、今後の採用面接における「コーディング試験」への適応に苦慮している。 AIによる自動生成が標準化する現在、企業はかつてのような手書きスキルを求めるべきか、それとも設計能力やアーキテクチャの視点を重視すべきかという議論が起きている。"
+      },
+      "en": {
+        "title": "Are coding interviews evolving? Senior devs debate if AI tools make whiteboard exams obsolete",
+        "summary": "A senior developer with over 13 years of experience is questioning whether traditional coding interviews remain relevant as daily workflows shift toward AI-assisted prompting and code reviews rather than manual syntax generation. This creates a friction point for seasoned engineers who worry their muscle memory for whiteboard coding has faded despite their architectural expertise remaining sharp. The community consensus suggests that while hand-coding tests are stagnating, interviews are pivoting toward system design, complex problem-solving, and the ability to critically audit AI-generated code. For builders entering the job market, the transition marks a shift from measuring syntax fluency to assessing the capability to direct and debug LLM outputs, confirming that engineering prowess is now increasingly defined by editorial oversight rather than rote keyboard input."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-15T21:04:52.250Z"
+  },
+  {
+    "id": "art-1794776671778-uwtet",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/iphonista555/n/nf38fe6d285f8",
+    "published_at": "2026-11-15T20:51:44.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/5248e03f576bb3face06f2941ca50f6d256bee97.png",
+    "title_ja": "ゲーム開発の「音は鳴るのにUIが開かない」バグを解明、時間停止処理とメニューUIの競合で発生する意外な盲点とは",
+    "summary_ja": "ゲーム開発中に「操作音は鳴るのにメニューUIが反応しない」という不具合に直面した際、原因は時間停止（Pause）処理がUI描画やイベントループまで停止させていたことにあった。 多くのゲームエンジンでは、停止処理を実装する際にすべての挙動を止めてしまいがちだが、UIやメニュー操作は時間停止中も個別に更新し続ける必要がある。 本記事では、この「時間が止まるとメニューも止まる」という開発上の盲点を解説し、UIレイヤーの分離設計こそがバグを回避する鍵だと説いている。",
+    "translations": {
+      "ja": {
+        "title": "ゲーム開発の「音は鳴るのにUIが開かない」バグを解明、時間停止処理とメニューUIの競合で発生する意外な盲点とは",
+        "summary": "ゲーム開発中に「操作音は鳴るのにメニューUIが反応しない」という不具合に直面した際、原因は時間停止（Pause）処理がUI描画やイベントループまで停止させていたことにあった。 多くのゲームエンジンでは、停止処理を実装する際にすべての挙動を止めてしまいがちだが、UIやメニュー操作は時間停止中も個別に更新し続ける必要がある。 本記事では、この「時間が止まるとメニューも止まる」という開発上の盲点を解説し、UIレイヤーの分離設計こそがバグを回避する鍵だと説いている。"
+      },
+      "en": {
+        "title": "Debugging a frozen game menu: How 'time stop' mechanics can accidentally kill your UI logic during development",
+        "summary": "A common but frustrating game development bug occurs when audio cues trigger correctly, but the UI menu refuses to open. The root cause is often a game-wide time-stop function that accidentally pauses not just physics and gameplay logic, but also the entire UI rendering and event loop. Many engines default to a global halt, which inadvertently freezes essential menu interactions that users expect to function even when paused. This post details how to decouple your UI input system from the main game loop, ensuring that menu layers remain responsive while the world is halted. For solo developers, the key lesson is architectural separation: treating UI as an independent state rather than a simple child of the game engine's primary clock."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-15T21:04:31.778Z"
+  },
+  {
+    "id": "art-1794776644378-bl9te",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/CodeNest_media/items/9a7cffcb517d998945c0",
+    "published_at": "2026-11-15T20:57:10.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnBicy50d2ltZy5jb20lMkZwcm9maWxlX2ltYWdlcyUyRjIwMTkyODE0NzA3MzM1NzgyNDYlMkZBLThYT2d5MV9iaWdnZXIuanBnP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1jMDk2ZTI2NmFmNTIwNTI4YzJiYmIxNTFjYjlmYjgyYQ%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZiNWVmNmY3OTA4MjQ5ZmQ4MWFjZjg4MjJiMDAzOTYwZjAyYmE1MzU1JTJGb3JpZ2luYWwuanBnJTNGMTc5MzM0OTU1Mj9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1iMWI0ZGM0MzA5YWUzNjZlNzE3ZmY2NjFiNjMzOTk5Yg%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dcaf8ab8ce69301a701edf218a5444ce0?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElOEMlRTQlQkQlOUMlRTMlODElQTMlRTMlODElOUZBUEklRTMlODAlODElRTglODclQUElRTUlODglODYlRTMlODElQUUlRTMlODMlODclRTMlODMlQkMlRTMlODIlQkYlRTMlODElQUYlRTglQUElQUQlRTMlODIlODElRTMlODElOUYlRTMlODAlODIlRTMlODElQTclRTMlODElQUYlRTMlODAlOEMlRTQlQkIlOTYlRTQlQkElQkElRTMlODElQUUlRTMlODMlODclRTMlODMlQkMlRTMlODIlQkYlRTMlODAlOEQlRTMlODElQUYlRTYlOEIlOTIlRTUlOTAlQTYlRTMlODElQTclRTMlODElOEQlRTMlODElQkUlRTMlODElOTklRTMlODElOEIlRUYlQkMlOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yMmEwZDgxYzFhYjU1NDg0OTFhMzNhZWM2OTgyODg0Ng&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBDb2RlTmVzdF9tZWRpYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTQyM2QxNzZhZWY1NmI2MmEwMWJjZjk4Yzc1ODUzNTBl&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-SGF0Y2gtSVQ&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=2c0892ab8d6b53c6564e1e3ee73c5d46",
+    "title_ja": "AIコード生成で陥るAPIの「認可」の罠：自分のデータは読めても他人のIDで不正アクセスが可能な脆弱性を見抜くテスト設計",
+    "summary_ja": "AIに実装させたAPIコードが「正常系」として自分のデータを表示できても、それは不完全だ。 IDの型が一致していても、権限チェックのロジックが欠落していれば、他人の注文IDを渡すだけで不正に情報を取得されるリスクが残る。 開発者は単に入力形式やDB接続を検証するだけでなく、必ず「認可（Authorization）」が正しく機能しているかを境界条件テストで厳格に検証する必要がある。 AI生成コードを鵜呑みにせず、セキュリティの最終責任は実装者にあるという意識が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "AIコード生成で陥るAPIの「認可」の罠：自分のデータは読めても他人のIDで不正アクセスが可能な脆弱性を見抜くテスト設計",
+        "summary": "AIに実装させたAPIコードが「正常系」として自分のデータを表示できても、それは不完全だ。 IDの型が一致していても、権限チェックのロジックが欠落していれば、他人の注文IDを渡すだけで不正に情報を取得されるリスクが残る。 開発者は単に入力形式やDB接続を検証するだけでなく、必ず「認可（Authorization）」が正しく機能しているかを境界条件テストで厳格に検証する必要がある。 AI生成コードを鵜呑みにせず、セキュリティの最終責任は実装者にあるという意識が不可欠だ。"
+      },
+      "en": {
+        "title": "The Authorization Trap in AI-Generated APIs: Why Testing Your Own Data Isn't Enough to Secure Multi-User Access",
+        "summary": "When AI generates API code, verifying that it correctly displays your own data is merely the first step—and it's dangerously incomplete. Even if the ID types match and the login check passes, a lack of explicit ownership validation logic leaves a gaping vulnerability where any user could access another's private data simply by altering an ID parameter. Developers must look beyond syntax and standard database connection success; rigorously testing 'Insecure Direct Object Reference' (IDOR) vulnerabilities is mandatory. Never assume the AI has implemented robust authorization by default. For builders, the lesson is clear: treat AI-generated code as a draft, and specifically engineer boundary-condition tests to prove that unauthorized access is impossible across user partitions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-15T21:04:04.378Z"
+  },
+  {
     "id": "art-1794775840205-l1w0z",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -7299,32 +7377,6 @@
     "created_at": "2026-11-15T02:16:42.771Z"
   },
   {
-    "id": "art-1794708131950-s4a75",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/hayato_fp/n/n21efa4c2aa95",
-    "published_at": "2026-11-15T01:24:03.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336277456/rectangle_large_type_2_afd4407bad037c76787fb15ed843e661.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIアプリ開発の実践録：審査中に遭遇した「原因不明のエラー」とAppleセキュリティの壁を突破するまで",
-    "summary_ja": "AI初心者が13日間でiPhoneアプリを開発・公開する過程で、Appleの審査中に遭遇した「原因不明のエラー」の正体と解決までの全貌。 このエラーはApple側のセキュリティチェックが原因で、1時間の待機によって自動的に解消されるというものだった。 技術的なバグと勘違いしやすいアプリ公開時のトラップであり、リリース直前のデベロッパーは、システム的な拒否反応に対して一度冷静に待機する判断も重要となる。",
-    "translations": {
-      "ja": {
-        "title": "AIアプリ開発の実践録：審査中に遭遇した「原因不明のエラー」とAppleセキュリティの壁を突破するまで",
-        "summary": "AI初心者が13日間でiPhoneアプリを開発・公開する過程で、Appleの審査中に遭遇した「原因不明のエラー」の正体と解決までの全貌。 このエラーはApple側のセキュリティチェックが原因で、1時間の待機によって自動的に解消されるというものだった。 技術的なバグと勘違いしやすいアプリ公開時のトラップであり、リリース直前のデベロッパーは、システム的な拒否反応に対して一度冷静に待機する判断も重要となる。"
-      },
-      "en": {
-        "title": "Debugging an elusive App Store rejection: How to handle unexpected Apple security errors during iPhone app release",
-        "summary": "This case study details the experience of an AI beginner building and shipping an iPhone app in just 13 days, specifically focusing on a cryptic error encountered during the final review process. The mysterious roadblock turned out to be an Apple security check that required a one-hour waiting period before clearing, rather than a code-level failure. It is a common trap for developers to misinterpret these system-side verification gates as critical bugs in their own build. The takeaway is crucial for first-time builders: when facing ambiguous rejections during submission, distinguishing between actual application errors and Apple's backend security hold-ups is essential to avoid unnecessary debugging cycles and release delays."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-15T02:02:11.950Z"
-  },
-  {
     "id": "art-1794708125555-kous6",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -8508,32 +8560,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-14T21:17:10.562Z"
-  },
-  {
-    "id": "art-1794691024087-e61ve",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://apps.apple.com/us/app/intellikey/id1667188645",
-    "published_at": "2026-11-14T21:04:02.000Z",
-    "og_image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/84/ed/8f84ed36-8cce-15f7-64d9-7b7a1cd3780d/Placeholder.mill/1200x630wa.jpg",
-    "title_ja": "IntelliKey：LLMを活用してiOSキーボード体験を刷新、文脈に応じた高度な文章補完と校正を実現するキーボードアプリ",
-    "summary_ja": "IntelliKeyは、iOSのキーボード機能にLLMを統合し、ユーザーの入力文脈に合わせてリアルタイムな文章補完や校正を提案する新しいキーボードアプリだ。 一般的な予測変換とは異なり、LLMの推論能力を直接キーボードレイヤーに持ち込むことで、長文作成やビジネスメールのトーン調整を劇的に効率化する。 AIの活用範囲をチャットインターフェースの外側へ広げ、日々の入力体験に特化したAI統合型の設計が、モバイルOSにおける新しいユーザー体験の可能性を切り拓いている。",
-    "translations": {
-      "ja": {
-        "title": "IntelliKey：LLMを活用してiOSキーボード体験を刷新、文脈に応じた高度な文章補完と校正を実現するキーボードアプリ",
-        "summary": "IntelliKeyは、iOSのキーボード機能にLLMを統合し、ユーザーの入力文脈に合わせてリアルタイムな文章補完や校正を提案する新しいキーボードアプリだ。 一般的な予測変換とは異なり、LLMの推論能力を直接キーボードレイヤーに持ち込むことで、長文作成やビジネスメールのトーン調整を劇的に効率化する。 AIの活用範囲をチャットインターフェースの外側へ広げ、日々の入力体験に特化したAI統合型の設計が、モバイルOSにおける新しいユーザー体験の可能性を切り拓いている。"
-      },
-      "en": {
-        "title": "IntelliKey Bridges iOS Keyboards with LLM Inference for Real-time Contextual Autocomplete and Native Writing Assistance",
-        "summary": "IntelliKey integrates large language models directly into the iOS keyboard experience, providing users with advanced, context-aware autocompletion and grammar correction while typing. By embedding LLM-powered inference capabilities into the keyboard layer itself, rather than forcing users to switch into separate chat apps, the tool significantly streamlines long-form writing and professional email drafting. It moves AI utility beyond the chatbox and directly into the OS-level input stream, demonstrating how LLMs can enhance native mobile productivity. For developers considering AI-native UI, this approach of embedding models into high-frequency input points offers a compelling blueprint for reducing user friction when integrating intelligence into everyday mobile tasks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-14T21:17:04.087Z"
   },
   {
     "id": "art-1794691009261-t9k3u",
@@ -9998,32 +10024,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-14T10:32:03.692Z"
-  },
-  {
-    "id": "art-1794652317108-u98d6",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Sidejob/items/6080d580e8fbedd27b22",
-    "published_at": "2026-11-14T10:30:03.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmMDQ5MjEyODEwOWJhMDVlNTliMTA5ZDE2MTMzMjNkNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OTkwYjdmNWE0MWU2OTk3ZDY3ZDNiNmI0YjIwZDcxODI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De6ff48aefdddde06dce7529f66f49f1d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMHYyLjEuMzIzJTIwQ29kZSUyME1vZGUlRUYlQkMlODgyMDI2JUU1JUI5JUI0JUVGJUJDJTg5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZTlkNDZhZjdkZDFjZDFkY2FlMjIyOGQwN2RjZDU1YzA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBTaWRlam9iJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MThiMWNjMmFmNjk0Mzk4YTgyOTk5NWFmZmVkMWY2MGQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3baaeb4f4c09eb8e882af6006db926b5",
-    "title_ja": "Claude Code v2.1.323アップデート：新機能「Code Mode」の実装と企業向け管理機能の強化を解説",
-    "summary_ja": "2026年11月13日に公開された「Claude Code v2.1.323」では、開発効率を向上させる新機能「Code Mode」が追加された。 プラグインのバージョン管理体系が刷新されたほか、企業ユーザー向けにmanaged settingsの構成が改善されており、セキュリティと統制面が強化されている。 CLIベースでAIコーディングを導入する現場にとって、チーム開発における一貫した設定環境の構築がこれまで以上に容易になった。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code v2.1.323アップデート：新機能「Code Mode」の実装と企業向け管理機能の強化を解説",
-        "summary": "2026年11月13日に公開された「Claude Code v2.1.323」では、開発効率を向上させる新機能「Code Mode」が追加された。 プラグインのバージョン管理体系が刷新されたほか、企業ユーザー向けにmanaged settingsの構成が改善されており、セキュリティと統制面が強化されている。 CLIベースでAIコーディングを導入する現場にとって、チーム開発における一貫した設定環境の構築がこれまで以上に容易になった。"
-      },
-      "en": {
-        "title": "Claude Code v2.1.323 Arrives with New 'Code Mode' Feature and Expanded Enterprise Management Settings",
-        "summary": "The release of Claude Code v2.1.323 on November 13, 2026, introduces a dedicated 'Code Mode' designed to streamline AI-assisted coding workflows. Beyond this core addition, the update overhauls plugin version management and brings significant refinements to managed settings, specifically tailored for enterprise environments looking to tighten security and policy control. For engineering teams integrating CLI-based AI development, these changes make maintaining consistent, governed environments across the organization much more straightforward. The update signals a clear shift toward making AI coding tools more robust and compliant for large-scale enterprise adoption, rather than just serving individual developers. Builders should review these updated configurations to ensure their team's CI/CD and security policies align with the new managed settings architecture."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-14T10:31:57.108Z"
   },
   {
     "id": "art-1794651437819-346fx",
