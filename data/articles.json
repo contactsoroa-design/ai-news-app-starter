@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794700938040-ci5jb",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ai_shihan/articles/88d4d47d73c7e1",
+    "published_at": "2026-11-14T21:57:06.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--XNurHBAt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2580%258C3%25E6%2599%2582%25E9%2596%2593%25E7%25A9%25BA%25E3%2581%2591%25E3%2581%25A6%25E3%2580%258D%25E3%2581%25A8%25E6%25B1%25BA%25E3%2582%2581%25E3%2581%259F%25E3%2582%2589%25E3%2580%25812%25E5%259B%259E%25E7%25B6%259A%25E3%2581%2591%25E3%2581%25A6%25E6%2595%25B0%25E5%258D%2581%25E7%25A7%2592%25E8%25B6%25B3%25E3%2582%258A%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2520%25E2%2580%2594%25E2%2580%2594%2520%25E6%25B1%25BA%25E3%2581%25BE%25E3%2582%258A%25E3%2582%2592%25E7%25A7%2592%25E3%2581%25A7%25E6%25B8%25AC%25E3%2582%258A%25E7%259B%25B4%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ai_shihan%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvYS5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI投稿の「3時間間隔」ルールがなぜ崩壊したか？秒単位の誤差が生む運用の落とし穴を検証",
+    "summary_ja": "SNS運用をAIに任せる際、投稿間隔を「3時間以上」と定めても、実際のシステム実装では予期せぬ誤差が生じやすい。 実際に日本時間の9:05、12:05と予約投稿を行っていた事例では、わずか数秒〜数十秒の遅延や処理時間の変動により、意図せず「3時間未満」で投稿される事態が2回連続で発生した。",
+    "translations": {
+      "ja": {
+        "title": "AI投稿の「3時間間隔」ルールがなぜ崩壊したか？秒単位の誤差が生む運用の落とし穴を検証",
+        "summary": "SNS運用をAIに任せる際、投稿間隔を「3時間以上」と定めても、実際のシステム実装では予期せぬ誤差が生じやすい。 実際に日本時間の9:05、12:05と予約投稿を行っていた事例では、わずか数秒〜数十秒の遅延や処理時間の変動により、意図せず「3時間未満」で投稿される事態が2回連続で発生した。"
+      },
+      "en": {
+        "title": "Why your AI's '3-hour interval' posting rule might fail: verifying the hidden precision pitfalls of automated scheduling",
+        "summary": "When delegating social media posts to AI, establishing a 'three-hour interval' rule often looks perfect on paper but fails in production due to system latency. A recent case study revealed that despite scheduling posts for specific 9:05 and 12:05 slots, slight fluctuations in processing times meant two consecutive posts were sent at intervals of only 2 hours and 59 minutes. For builders, relying on absolute time slots is dangerous; you must instead programmatically reference the exact timestamp of the previous post completion. To avoid platform spam filters or shadowbanning, implement a mandatory buffer of several minutes or dynamic wait times rather than relying on assumed fixed intervals. Precision in state management is what keeps automated workflows compliant and operational."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-15T00:02:18.040Z"
+  },
+  {
+    "id": "art-1794700931434-kwg6b",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/aiFetchly/items/cdbee0a5138f0035f70d",
+    "published_at": "2026-11-14T23:32:42.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZhMmVhNTdlOWY0NzI3OWRkMGVlZTRiYWIxMTMyYzFjMj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9Y2U5Njg2MzJjNzU0ODk3MzlhYzNhNjU2MWNhNmFhZTA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db7410477b2649b2ea60aed850b25e366?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9TUNQJUUzJTgzJTg0JUUzJTgzJUJDJUUzJTgzJUFCJUUzJTgxJUE4JUUzJTgyJUI1JUUzJTgzJTk2JUUzJTgyJUE4JUUzJTgzJUJDJUUzJTgyJUI4JUUzJTgyJUE3JUUzJTgzJUIzJUUzJTgzJTg4JUUzJTgxJUE3JUU1JTg4JTg2JUU2JThCJTg1JUUzJTgxJTk5JUUzJTgyJThCJUUzJTgwJTgxJUUzJTgzJUExJUUzJTgzJUJDJUUzJTgzJUFCJUU2JUE1JUFEJUU1JThCJTk5JUUzJTgxJUFFJUU4JTg3JUFBJUU1JThCJTk1JUU1JThDJTk2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NzRlNGJkMDM1MzRjMzNlZTg0NDM0MTVlZjFhMjkxNTQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhaUZldGNobHkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1mNWExMDU2OTJjNzIwODdjZGM2YjliNGQ2OTI5Y2Q2NQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b57f161f862e6bd4a645aec5fe5efd0a",
+    "title_ja": "メール業務を自動化する「MCPツール × サブエージェント」分業術――単一の巨大AIに頼らずタスクを分割して効率を最大化する設計手法",
+    "summary_ja": "メール処理を「読む・判断する・下書き・送信」という個別のタスクに分解し、MCPツールと特化型サブエージェントを連携させて自動化する手法が注目されている。 一つの巨大なAIに全権を委ねるのではなく、役割を定義したエージェント群がMCP経由でツールを叩くことで、複雑な業務フローをモジュール化できる。 開発者にとって重要なのは、AIの推論能力に過信せず、API接続やワークフローを標準化し、小さな成功を積み重ねる「分業型アーキテクチャ」の設計思想だ。",
+    "translations": {
+      "ja": {
+        "title": "メール業務を自動化する「MCPツール × サブエージェント」分業術――単一の巨大AIに頼らずタスクを分割して効率を最大化する設計手法",
+        "summary": "メール処理を「読む・判断する・下書き・送信」という個別のタスクに分解し、MCPツールと特化型サブエージェントを連携させて自動化する手法が注目されている。 一つの巨大なAIに全権を委ねるのではなく、役割を定義したエージェント群がMCP経由でツールを叩くことで、複雑な業務フローをモジュール化できる。 開発者にとって重要なのは、AIの推論能力に過信せず、API接続やワークフローを標準化し、小さな成功を積み重ねる「分業型アーキテクチャ」の設計思想だ。"
+      },
+      "en": {
+        "title": "Scaling Email Automation with MCP Tools and Sub-Agents: Moving Beyond Single LLM Workflows to Modular, Specialized Task Decomposition",
+        "summary": "Email processing typically involves simple steps—reading, analyzing, drafting, and sending—but high volumes make manual handling unsustainable. Instead of relying on a monolithic LLM, a more robust architecture involves delegating these granular tasks to specialized sub-agents that leverage the Model Context Protocol (MCP) to interact with specific tools. This modular approach allows developers to isolate complex logic, reduce error rates, and improve reliability by keeping each agent focused on a single responsibility. For builders constructing autonomous workflows, the practical lesson is to avoid the 'one-shot' AI trap; success lies in standardizing interfaces and chaining lightweight, domain-specific agents that call external APIs, effectively turning brittle, all-in-one scripts into resilient, professional-grade automation pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-15T00:02:11.434Z"
+  },
+  {
+    "id": "art-1794700924305-eq7f2",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.pcworld.com/article/3115405/bing-is-the-anti-ai-search-engine-you-should-be-using.html",
+    "published_at": "2026-11-14T23:48:24.000Z",
+    "og_image_url": null,
+    "title_ja": "検索結果の「AI要約」を回避する選択肢、Bingの「AIなし」検索機能がユーザーから再評価される理由",
+    "summary_ja": "最近の検索エンジンはAIによる回答生成が主流だが、情報の正確性や出典を確認したいユーザーの間で、Bingの「AI回答を無効化」できる機能が密かに注目されている。 AIが生成した要約よりも、生の情報源を直接確認したいというニーズは根強く、検索アルゴリズムの変化に疲弊するユーザーにとって実用的な選択肢となっている。 開発者やメディア関係者は、検索からの流入経路がAI回答によって奪われる現状において、あえて「情報の検索性」を重視するユーザー層の存在を再認識すべきだろう。",
+    "translations": {
+      "ja": {
+        "title": "検索結果の「AI要約」を回避する選択肢、Bingの「AIなし」検索機能がユーザーから再評価される理由",
+        "summary": "最近の検索エンジンはAIによる回答生成が主流だが、情報の正確性や出典を確認したいユーザーの間で、Bingの「AI回答を無効化」できる機能が密かに注目されている。 AIが生成した要約よりも、生の情報源を直接確認したいというニーズは根強く、検索アルゴリズムの変化に疲弊するユーザーにとって実用的な選択肢となっている。 開発者やメディア関係者は、検索からの流入経路がAI回答によって奪われる現状において、あえて「情報の検索性」を重視するユーザー層の存在を再認識すべきだろう。"
+      },
+      "en": {
+        "title": "Why Bing’s anti-AI search mode is becoming the preferred choice for users seeking raw information sources",
+        "summary": "While modern search engines are rapidly pivoting toward AI-generated summaries, Bing is gaining quiet traction among power users for its ability to toggle off AI features and return to a traditional, source-focused search experience. This resurgence highlights a growing friction where users increasingly distrust opaque AI-generated responses and instead demand direct access to the original information sources to verify accuracy. For builders and content creators navigating the post-generative SEO landscape, this shift serves as a critical reminder that search intent is bifurcating; a significant portion of the audience actively rejects AI summaries in favor of link-based exploration. Prioritizing discoverability through direct links rather than relying solely on AI-optimized snippets may become a crucial strategy to capture this disillusioned, high-value demographic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-15T00:02:04.305Z"
+  },
+  {
+    "id": "art-1794700918150-qt1yd",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/hideyoshi13/n/nf16b641ac33b",
+    "published_at": "2026-11-15T00:00:38.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/335629944/rectangle_large_type_2_f19fbca1d86089a7c5eaf11dd0959183.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Chrome拡張機能開発で直面したUXの罠：新機能「修正指示」の実装を公開前に全撤回してシンプルに作り直した理由",
+    "summary_ja": "映像制作会社Liquid Blockが開発するChrome拡張機能「LB TAB Layers」にて、新機能の実装過程で起きたUXの改善談。 新たに導入した「修正指示」機能が説明過多で使いにくいことに自ら気づき、リリース直前に仕様を再設計して簡略化した。 個人開発や小規模開発において、ユーザー体験を損なう複雑さを削ぎ落とす判断は、プロダクトの生存率を左右する重要なプロセスである。",
+    "translations": {
+      "ja": {
+        "title": "Chrome拡張機能開発で直面したUXの罠：新機能「修正指示」の実装を公開前に全撤回してシンプルに作り直した理由",
+        "summary": "映像制作会社Liquid Blockが開発するChrome拡張機能「LB TAB Layers」にて、新機能の実装過程で起きたUXの改善談。 新たに導入した「修正指示」機能が説明過多で使いにくいことに自ら気づき、リリース直前に仕様を再設計して簡略化した。 個人開発や小規模開発において、ユーザー体験を損なう複雑さを削ぎ落とす判断は、プロダクトの生存率を左右する重要なプロセスである。"
+      },
+      "en": {
+        "title": "Revisiting UX Debt: How I Scrapped and Simplified My Chrome Extension’s New Feature Before Launch",
+        "summary": "While building the Chrome extension 'LB TAB Layers,' the development team at motion graphics firm Liquid Block hit a critical UX wall. They had designed a new 'Correction Instruction' feature, only to realize the interface was so cluttered with explanations that it discouraged actual usage. Rather than shipping a flawed experience, they chose to scrap the implementation and completely redesign it for simplicity before the public release. This account serves as a reminder to independent developers that self-critique is vital; cutting complexity is often more valuable than adding features. For those shipping tools, the lesson is clear: if you cannot explain the benefit of a feature without excessive text, the underlying UX likely needs a total rethink."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-15T00:01:58.150Z"
+  },
+  {
     "id": "art-1794700047358-uscg4",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -5455,32 +5559,6 @@
     "created_at": "2026-11-14T09:47:00.424Z"
   },
   {
-    "id": "art-1794649611303-ufzhb",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/right_ixia336/n/ncf01eafb4fa7",
-    "published_at": "2026-11-14T09:30:03.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/335948384/rectangle_large_type_2_5dd6cb3892d2122513739e26048776e4.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ノートPCは「普通」でいい。AI開発の母艦を自宅に構築し、リモート接続で外出先でも計算資源をフル活用する運用への転換",
-    "summary_ja": "これまで外出先での作業のために高性能なMacBook Pro（M4 Max・メモリ128GB）を持ち歩いていたが、現在は運用を刷新した。 持ち歩くノートPCは一般的なスペックに抑え、自宅に構築した高性能な「母艦」PCへリモート接続するスタイルへ変更。 このアプローチにより、重量やバッテリーの制約から解放されつつ、AI開発や重いビルド作業に必要な計算資源を安定して確保できる。",
-    "translations": {
-      "ja": {
-        "title": "ノートPCは「普通」でいい。AI開発の母艦を自宅に構築し、リモート接続で外出先でも計算資源をフル活用する運用への転換",
-        "summary": "これまで外出先での作業のために高性能なMacBook Pro（M4 Max・メモリ128GB）を持ち歩いていたが、現在は運用を刷新した。 持ち歩くノートPCは一般的なスペックに抑え、自宅に構築した高性能な「母艦」PCへリモート接続するスタイルへ変更。 このアプローチにより、重量やバッテリーの制約から解放されつつ、AI開発や重いビルド作業に必要な計算資源を安定して確保できる。"
-      },
-      "en": {
-        "title": "Stop lugging heavy laptops: Why shifting AI development to a high-performance remote 'mothership' setup is the new gold standard",
-        "summary": "The author, previously an advocate for maxing out portable hardware like a MacBook Pro with M4 Max and 128GB RAM, has fundamentally shifted their workflow strategy. Instead of relying on expensive, heavy laptops for heavy-duty AI tasks, they now use a standard portable machine as a thin client, connecting remotely to a high-performance 'mothership' desktop at home. This configuration decouples computing power from physical constraints, solving the trade-off between mobility, battery life, and the raw performance required for AI model training or massive builds. For developers shipping code on the go, moving the heavy lifting to a persistent home server offers a more sustainable and cost-effective path to maintaining high productivity without back pain."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-14T09:46:51.303Z"
-  },
-  {
     "id": "art-1794648750424-w0o5t",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -9808,33 +9886,6 @@
     "created_at": "2026-11-13T17:47:18.146Z"
   },
   {
-    "id": "art-1794592016051-ubzdi",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://blog.asie.pl/2026/11/nitroustracker-ai-disclosure-post/",
-    "published_at": "2026-11-13T17:39:02.000Z",
-    "og_image_url": null,
-    "title_ja": "NitrousTrackerがAI利用を全面開示、開発プロセスと自動化ツール選定の透明性を確保した舞台裏",
-    "summary_ja": "個人開発のNitrousTrackerは、自社サービスにおけるAI利用の範囲を明確にする「AI開示投稿」を公開した。 コードの生成からデバッグ支援、マーケティング資料作成まで、どの工程でAIを使い、どこで人間が最終確認を行っているかの判断基準を詳述している。 開発者はAIを「完全に自動化するツール」ではなく「作業の効率を最大化する補助」と定義し、技術スタックの選定から出力の検証フローまでを公開することで、ユーザーとの信頼関係構築を狙う透明性の高いアプローチを示した。",
-    "translations": {
-      "ja": {
-        "title": "NitrousTrackerがAI利用を全面開示、開発プロセスと自動化ツール選定の透明性を確保した舞台裏",
-        "summary": "個人開発のNitrousTrackerは、自社サービスにおけるAI利用の範囲を明確にする「AI開示投稿」を公開した。 コードの生成からデバッグ支援、マーケティング資料作成まで、どの工程でAIを使い、どこで人間が最終確認を行っているかの判断基準を詳述している。 開発者はAIを「完全に自動化するツール」ではなく「作業の効率を最大化する補助」と定義し、技術スタックの選定から出力の検証フローまでを公開することで、ユーザーとの信頼関係構築を狙う透明性の高いアプローチを示した。"
-      },
-      "en": {
-        "title": "NitrousTracker publishes full AI disclosure document detailing automation stack and human-in-the-loop validation process",
-        "summary": "The solo developer behind NitrousTracker has published a comprehensive AI disclosure, outlining exactly where and how artificial intelligence integrates into their production pipeline. For builders, the durable takeaway is to treat AI tooling as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-13T17:46:56.051Z"
-  },
-  {
     "id": "art-1794592004283-c341i",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -12086,33 +12137,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-13T07:31:56.767Z"
-  },
-  {
-    "id": "art-1794555109730-w4yos",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/amiriqbalseo/items/4a975624e57197236aaf",
-    "published_at": "2026-11-13T07:07:44.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTI2Nzg4JTJGYmEyYjQ1MTA0OGQ3NGNhNDU5NmYwYjliMmE2ODQwM2E1YjA4MGU4OSUyRmxhcmdlLnBuZyUzRjE3OTQ1NTMwNzM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWUzNDgwNzNiYzE4ZDVjNTY5NWFlZDI0ZDg5YjFkZDlh%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D0aa84e8249d9f551d39001ef6a06a700?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QnVpbGRpbmclMjBhJTIwU3RhcnR1cCUyMEFuYWx5dGljcyUyMFN0YWNrJTNBJTIwRnJvbSUyMEdBNCUyMHRvJTIwQWN0aXZhdGlvbiUyME1ldHJpY3MmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0xYTgyMmE5NWFiMmVkMDc5ZDIyNWJkZWFmY2VjZWFmOQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhbWlyaXFiYWxzZW8mdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0wYmVjNTllYWRkMGE3Mzg5MzU2YWQ2YTEyNmExMzY2Mw&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=80b982d90c19f441a5e97eeb5527b187",
-    "title_ja": "スタートアップ向け分析基盤の構築術：GA4からアクティベーション指標への転換と必須ツール構成を解説",
-    "summary_ja": "スタートアップの分析基盤はGA4による受動的な計測から、ユーザーのアクティベーションを直接追跡する能動的なイベント追跡へシフトすべきだ。 単なるPV計測ではなく、どの操作が定着に繋がるかを特定し、ダッシュボードで即座に可視化できるスタックを組むことが鍵となる。 プロダクト成長を加速させるには、初期段階からデータの解像度を高め、機能単位の利用率を追跡する仕組みを構築するべきである。",
-    "translations": {
-      "ja": {
-        "title": "スタートアップ向け分析基盤の構築術：GA4からアクティベーション指標への転換と必須ツール構成を解説",
-        "summary": "スタートアップの分析基盤はGA4による受動的な計測から、ユーザーのアクティベーションを直接追跡する能動的なイベント追跡へシフトすべきだ。 単なるPV計測ではなく、どの操作が定着に繋がるかを特定し、ダッシュボードで即座に可視化できるスタックを組むことが鍵となる。 プロダクト成長を加速させるには、初期段階からデータの解像度を高め、機能単位の利用率を追跡する仕組みを構築するべきである。"
-      },
-      "en": {
-        "title": "Moving Beyond GA4: How to Build a Startup Analytics Stack That Prioritizes Activation Metrics Over Vanity Traffic Data",
-        "summary": "A robust startup analytics stack requires shifting focus from passive, session-based tracking like Google Analytics 4 toward active event instrumentation that reveals true product activation. Relying solely on page views often obscures the critical \"Aha! \" moments that actually drive long-term user retention and revenue. Builders should prioritize implementing event-driven tracking early to pinpoint which specific product actions correlate with meaningful engagement. By integrating tools that allow for custom event tagging and cohort analysis, teams can create actionable dashboards that move beyond vanity metrics. The practical takeaway for founders is to treat analytics as a core engineering capability; start tracking feature-level interaction immediately to optimize your funnel before scaling acquisition spend to ensure the product actually delivers value."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-13T07:31:49.730Z"
   },
   {
     "id": "art-1794554230246-mwncw",
@@ -16543,32 +16567,6 @@
       "研究"
     ],
     "created_at": "2026-11-12T08:46:57.294Z"
-  },
-  {
-    "id": "art-1794472360849-zu3gq",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/shining/articles/7fe4fe72a548dc",
-    "published_at": "2026-11-12T03:18:58.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--VCDfNvjx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:2%25E3%2581%25A4%25E3%2581%25AE%2520LLM%2520%25E3%2582%2592%25E5%2590%258C%25E3%2581%2598%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25A7%25E5%2591%25BC%25E3%2581%25B6%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB%25E3%2580%2581API%2520%25E6%258E%25A5%25E7%25B6%259A%25E3%2582%2592%25E4%25B8%2580%25E5%2585%2583%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Shining%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlRjeUlwbnh4RXJxakg4Ui1qaVJHbE04d2ZKVXVEN2MweDFkd1N0NXByekNWSGpRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "LLM使い分け時代のAPI接続戦略：複数モデルを一元化して管理コストと請求処理を最適化する実践的アプローチ",
-    "summary_ja": "LLMのエージェント処理にはGPT、長文読解にはClaudeといった使い分けが一般化する中、プロジェクトごとにバラバラなAPI管理は開発効率とコスト計算の大きな足枷となる。 アカウント認証や請求明細、エラーハンドリングを単一のラッパーで統合する設計を採用することで、実装コードを汚さずにモデルの切り替えを容易にする手法を解説する。 API統合による抽象化層の構築は、LLMアプリ開発の保守性を高めるために不可欠だ。",
-    "translations": {
-      "ja": {
-        "title": "LLM使い分け時代のAPI接続戦略：複数モデルを一元化して管理コストと請求処理を最適化する実践的アプローチ",
-        "summary": "LLMのエージェント処理にはGPT、長文読解にはClaudeといった使い分けが一般化する中、プロジェクトごとにバラバラなAPI管理は開発効率とコスト計算の大きな足枷となる。 アカウント認証や請求明細、エラーハンドリングを単一のラッパーで統合する設計を採用することで、実装コードを汚さずにモデルの切り替えを容易にする手法を解説する。 API統合による抽象化層の構築は、LLMアプリ開発の保守性を高めるために不可欠だ。"
-      },
-      "en": {
-        "title": "Standardizing LLM API Integrations: Centralizing Multi-Model Access to Optimize Billing and Management Overhead",
-        "summary": "As developers increasingly orchestrate workflows by routing agentic tasks to models like GPT and long-form analysis to Claude, fragmented API management becomes a significant bottleneck for maintenance and billing. This post details the implementation of a centralized API wrapper designed to consolidate authentication, unified billing tracking, and shared error handling logic across different providers. By building a clean abstraction layer, developers can switch models dynamically without polluting core business logic or dealing with scattered billing dashboards. This centralized architecture is essential for scaling complex AI applications, as it ensures that provider-specific updates do not cascade into breaking changes throughout your codebase while keeping cost tracking manageable for production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-12T08:32:40.849Z"
   },
   {
     "id": "art-1794472346316-308ov",
