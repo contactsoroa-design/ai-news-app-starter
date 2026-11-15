@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1794764886634-8qjo2",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/yutwo_tech/articles/anipal-testing-strategy",
+    "published_at": "2026-11-15T14:40:44.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xbbKNr2A--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:E2E%25E3%2581%25AE%25E8%25A8%2598%25E4%25BA%258B%25E3%2582%2592%25E8%25AA%25AD%25E3%2582%2593%25E3%2581%25A7%25E3%2580%2581%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25AE%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E6%2596%25B9%25E9%2587%259D%25E3%2582%2592%25E8%2580%2583%25E3%2581%2588%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yutwo%25EF%25BD%259Canipal%25EF%25BC%2588%25E3%2582%25A2%25E3%2583%258B%25E3%2583%2591%25E3%2583%25AB%25EF%25BC%2589%25E9%2596%258B%25E7%2599%25BA%25E4%25B8%25AD%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTFJsdWU2RUxTQVZrY0lJOXdJMm9TSDBXc2FWUjdDX1Y1djdmNWhzLXAxMEN1TTlvZz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発アプリのテスト戦略再考：E2E・結合・ユニットテストをどう切り分けるべきか",
+    "summary_ja": "個人開発アプリにおいて、テスト工数の最適化と堅牢性の確保を両立させるテスト方針を整理した。 E2Eテストはユーザーの主要な導線を検証する「守り」として限定的に使い、ロジック部分はユニットテストや結合テストで網羅するという役割分担が重要だ。 全てのテストをE2Eに依存させるのではなく、各テスト手法の特性に基づき「何をどこで担保するか」の境界線を明確に引くことが、開発速度を落とさずにアプリの品質を維持する現実的な解となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリのテスト戦略再考：E2E・結合・ユニットテストをどう切り分けるべきか",
+        "summary": "個人開発アプリにおいて、テスト工数の最適化と堅牢性の確保を両立させるテスト方針を整理した。 E2Eテストはユーザーの主要な導線を検証する「守り」として限定的に使い、ロジック部分はユニットテストや結合テストで網羅するという役割分担が重要だ。 全てのテストをE2Eに依存させるのではなく、各テスト手法の特性に基づき「何をどこで担保するか」の境界線を明確に引くことが、開発速度を落とさずにアプリの品質を維持する現実的な解となる。"
+      },
+      "en": {
+        "title": "Revisiting testing strategies for indie apps: How to balance E2E, integration, and unit tests effectively",
+        "summary": "For indie developers, balancing testing effort with long-term app reliability requires a clear strategy that goes beyond just writing code. This approach treats E2E testing as a defensive measure specifically for critical user flows, while offloading granular logic verification to unit and integration tests. Instead of relying on a bloated E2E suite, the key is defining clear boundaries for what each test layer should validate. By strategically deciding where to check specific functionalities, developers can maintain high app quality without slowing down their iteration velocity. For solo builders, this pragmatic framework ensures that you avoid the maintenance trap of fragile end-to-end suites while still catching regressions before they impact the live user experience."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-15T17:48:06.634Z"
+  },
+  {
+    "id": "art-1794764880268-l48gk",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/yohei_kuno/n/n13a327499483",
+    "published_at": "2026-11-15T16:16:41.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336621118/rectangle_large_type_2_30501504a5820de2b289d7234f699d1e.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Search Consoleの「改善すべき記事」が不明な課題を解消。検索順位低下を毎週通知するSaaSを個人開発者がリリース",
+    "summary_ja": "Google Search Consoleの膨大なデータから「具体的にどの記事を修正すべきか」を特定するのは困難だ。 この課題を解決するため、開発者はGSCのAPIを活用し、検索順位が低下した記事やリライト優先度の高い記事を毎週自動で抽出・通知するSaaSを開発した。 データを見るだけでなく、次に打つべき具体的なアクションを自動化することで、コンテンツ改善の心理的ハードルを劇的に下げている。",
+    "translations": {
+      "ja": {
+        "title": "Search Consoleの「改善すべき記事」が不明な課題を解消。検索順位低下を毎週通知するSaaSを個人開発者がリリース",
+        "summary": "Google Search Consoleの膨大なデータから「具体的にどの記事を修正すべきか」を特定するのは困難だ。 この課題を解決するため、開発者はGSCのAPIを活用し、検索順位が低下した記事やリライト優先度の高い記事を毎週自動で抽出・通知するSaaSを開発した。 データを見るだけでなく、次に打つべき具体的なアクションを自動化することで、コンテンツ改善の心理的ハードルを劇的に下げている。"
+      },
+      "en": {
+        "title": "Developer launches SaaS to solve Google Search Console fatigue by sending weekly actionable alerts on SEO performance drops",
+        "summary": "Google Search Console provides endless metrics, yet it famously leaves creators wondering exactly which articles require intervention to boost traffic. To solve this, a developer built an automated SaaS tool that taps into the Search Console API to analyze ranking fluctuations and identify specific posts needing rewrites. Instead of just displaying raw data, the service sends weekly updates pinpointing high-priority articles, effectively removing the analysis paralysis that often stalls SEO content maintenance. This project highlights a successful builder strategy: identifying a specific pain point in a widely used dashboard and creating a simplified, action-oriented layer on top of existing data. For solo founders, focusing on turning complex analytical noise into simple, executable to-do lists is a repeatable blueprint for creating valuable developer tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-15T17:48:00.268Z"
+  },
+  {
+    "id": "art-1794764851610-rzgsq",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/gen_tokunaga/articles/bdf9e8e0faf872",
+    "published_at": "2026-11-15T16:17:47.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--iR-hdCDg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25AA%25E3%2581%258C%25E3%2582%2589%25E9%258D%259B%25E3%2581%2588%25E3%2582%258B%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E5%258A%259B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:gen_tokunaga%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQyNGNkMWMyZjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI生成コードを「自分のもの」にする技術：保守性と安全性を担保する効率的なコードリーディングの実践的アプローチ",
+    "summary_ja": "AI生成コードや他者のコードを効率的に解読し、メンテナンス可能な状態へ引き上げるための実践的な手法が提唱されている。 すべてを網羅的に読むのではなく、アーキテクチャの骨格を把握した上で、保守リスクやセキュリティ脆弱性が潜む箇所を重点的に精査する「構造的読解」が重要だ。 AIが書いたコードであっても、各ロジックを自身の言葉で説明できるレベルまで昇華させることが、プロダクト開発の質を維持する鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AI生成コードを「自分のもの」にする技術：保守性と安全性を担保する効率的なコードリーディングの実践的アプローチ",
+        "summary": "AI生成コードや他者のコードを効率的に解読し、メンテナンス可能な状態へ引き上げるための実践的な手法が提唱されている。 すべてを網羅的に読むのではなく、アーキテクチャの骨格を把握した上で、保守リスクやセキュリティ脆弱性が潜む箇所を重点的に精査する「構造的読解」が重要だ。 AIが書いたコードであっても、各ロジックを自身の言葉で説明できるレベルまで昇華させることが、プロダクト開発の質を維持する鍵となる。"
+      },
+      "en": {
+        "title": "Beyond Copy-Paste: How to Efficiently Read and Master AI-Generated Code for Better Maintenance and Security",
+        "summary": "To effectively manage AI-generated code or complex repositories, developers must shift from linear reading to structural analysis. Instead of parsing every single line, successful engineers first map the overall architecture and then surgically audit critical segments prone to security vulnerabilities or maintenance debt. The article argues that the goal is not total mastery of every syntax detail but reaching a level of comprehension where you can confidently explain the logic behind each module. For builders leveraging LLMs, treating AI output as a draft that requires your explicit review—specifically focusing on architecture and edge cases—is the only sustainable way to prevent technical debt from accumulating in your product's core."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-15T17:47:31.610Z"
+  },
+  {
+    "id": "art-1794764833096-xw2h3",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://restofworld.org/2026/jensen-huang-nvidia-exit-china-ai-chip-impact/",
+    "published_at": "2026-11-15T17:41:01.000Z",
+    "og_image_url": "https://restofworld.org/wp-content/uploads/2026/11/GettyImages-2299248530.jpg",
+    "title_ja": "NVIDIAのジェンスン・フアンCEO退任が中国のAIサプライチェーンに及ぼす地政学的リスクと市場の構造的変化",
+    "summary_ja": "NVIDIAを長年率いてきたジェンスン・フアン氏の退任は、米国政府の対中輸出規制が続く中で、中国のAIハードウェア調達網に不確実性をもたらしている。 同社は供給網の安定化と規制遵守の板挟みとなっており、中国市場のテック企業は既存の高性能チップへの依存を見直し、国産AI半導体へのシフトや迂回ルートの模索を余儀なくされている。 この変化は、AI開発における調達コストの増大と、グローバルな半導体供給網の分断がさらに深刻化するリスクを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "NVIDIAのジェンスン・フアンCEO退任が中国のAIサプライチェーンに及ぼす地政学的リスクと市場の構造的変化",
+        "summary": "NVIDIAを長年率いてきたジェンスン・フアン氏の退任は、米国政府の対中輸出規制が続く中で、中国のAIハードウェア調達網に不確実性をもたらしている。 同社は供給網の安定化と規制遵守の板挟みとなっており、中国市場のテック企業は既存の高性能チップへの依存を見直し、国産AI半導体へのシフトや迂回ルートの模索を余儀なくされている。 この変化は、AI開発における調達コストの増大と、グローバルな半導体供給網の分断がさらに深刻化するリスクを示唆している。"
+      },
+      "en": {
+        "title": "Jensen Huang’s departure from Nvidia threatens to destabilize China’s critical AI hardware supply chain",
+        "summary": "The departure of Jensen Huang from the helm of Nvidia marks a turning point for global AI infrastructure, specifically exacerbating supply chain volatility within the Chinese technology ecosystem. As Nvidia navigates strict US export controls alongside massive Chinese demand, the leadership transition creates a power vacuum that complicates hardware procurement for Beijing-backed AI labs. Chinese enterprises are now accelerating their push toward domestic silicon alternatives, moving away from a decade of heavy reliance on H100s and similar architectures to mitigate geopolitical risk. For builders and infrastructure architects, this shift signals an era of fragmented hardware availability and fluctuating compute costs, requiring a more resilient approach to model deployment strategies that no longer assume unfettered access to premier GPU supply chains."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-15T17:47:13.096Z"
+  },
+  {
     "id": "art-1794763918066-abxuq",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -7068,32 +7171,6 @@
     "created_at": "2026-11-14T23:31:48.159Z"
   },
   {
-    "id": "art-1794699099796-cccba",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/make_jarvis/n/n319a8eebe63a",
-    "published_at": "2026-11-14T23:27:36.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336223650/rectangle_large_type_2_a0c2ecf3ba993185463a5fdcdfdcc8d6.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude 3.5 Opusで同じ相談を投げても「Claude」と「Claude Code」で回答が割れる理由は？Anthropicが明かす4つの決定要因",
-    "summary_ja": "同じ「Claude 3.5 Opus」モデルを使用しても、ブラウザ版チャットと「Claude Code」では回答が異なる。 検証の結果、その主な理由は「システムプロンプトの設計」「文脈保持の仕組み」「ツール利用権限の有無」、そして「インタラクションの最適化方針」という4つの点にある。 開発者はCLIツールがローカル環境でどう挙動し、どうコンテキストを拡張しているかを理解する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "Claude 3.5 Opusで同じ相談を投げても「Claude」と「Claude Code」で回答が割れる理由は？Anthropicが明かす4つの決定要因",
-        "summary": "同じ「Claude 3.5 Opus」モデルを使用しても、ブラウザ版チャットと「Claude Code」では回答が異なる。 検証の結果、その主な理由は「システムプロンプトの設計」「文脈保持の仕組み」「ツール利用権限の有無」、そして「インタラクションの最適化方針」という4つの点にある。 開発者はCLIツールがローカル環境でどう挙動し、どうコンテキストを拡張しているかを理解する必要がある。"
-      },
-      "en": {
-        "title": "Why Claude 3.5 Opus gives different answers in Chat versus Claude Code: An analysis of four key architectural divergence factors",
-        "summary": "Even when using the identical Claude 3.5 Opus model, queries frequently yield divergent results between the standard web interface and Claude Code. A deep dive reveals four primary drivers for this discrepancy: specialized system prompts tailored to specific environments, the distinct mechanisms for context window management, varying access levels to local tools, and different optimization priorities for CLI versus chat interactions. For builders integrating AI agents, the lesson is clear: a model's base intelligence is only half the story. The control layer, interface design, and environment-specific constraints dramatically alter the final output. Understanding how your CLI or backend wrapper wraps user intent is critical for maintaining consistency, as environmental context frequently overrides raw model reasoning during complex tasks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-14T23:31:39.796Z"
-  },
-  {
     "id": "art-1794699093187-zwxkl",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -8506,32 +8583,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-14T17:32:22.899Z"
-  },
-  {
-    "id": "art-1794677521021-9kesw",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/slashman413/cowork",
-    "published_at": "2026-11-14T16:27:00.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェント運用を効率化するセルフホスト型タスクキュー「Cowork」公開。Claude等のLLMワークフロー実行管理とダッシュボード可視化を実現",
-    "summary_ja": "Coworkは、AIエージェントの複雑な非同期タスクを管理するためのセルフホスト型プラットフォームだ。 ClaudeやCodexなどのモデルをバックエンドに接続し、タスクのキューイングから実行状況の監視、ワークフローのダッシュボード管理までを一元化できる。 外部SaaSに頼らず自前でインフラを制御したい開発者にとって、AIアプリの信頼性向上と実行コストの最適化を両立させるための有力な選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント運用を効率化するセルフホスト型タスクキュー「Cowork」公開。Claude等のLLMワークフロー実行管理とダッシュボード可視化を実現",
-        "summary": "Coworkは、AIエージェントの複雑な非同期タスクを管理するためのセルフホスト型プラットフォームだ。 ClaudeやCodexなどのモデルをバックエンドに接続し、タスクのキューイングから実行状況の監視、ワークフローのダッシュボード管理までを一元化できる。 外部SaaSに頼らず自前でインフラを制御したい開発者にとって、AIアプリの信頼性向上と実行コストの最適化を両立させるための有力な選択肢となるだろう。"
-      },
-      "en": {
-        "title": "Cowork Launches as a Self-Hosted Task Queue and Dashboard for Managing Claude and AI Agent Workflows at Scale",
-        "summary": "Cowork has launched as an open-source, self-hosted task queue and dashboard specifically designed to orchestrate complex AI agent workflows. By integrating with models like Claude and Codex, the platform provides developers with granular control over task queuing, asynchronous execution monitoring, and performance visualization. Unlike managed alternatives that lock users into specific cloud backends, Cowork empowers builders to retain full ownership over their infrastructure stack. This approach is highly effective for teams needing to debug multi-step agent interactions while maintaining strict data privacy and optimizing inference costs. It serves as a robust foundation for anyone shipping autonomous systems who needs transparent, reliable execution management without relying on external SaaS limitations or unpredictable API overhead."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-14T17:32:01.021Z"
   },
   {
     "id": "art-1794676642419-ln4io",
@@ -12306,32 +12357,6 @@
     "created_at": "2026-11-13T18:31:47.110Z"
   },
   {
-    "id": "art-1794593824393-qw7an",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/pengliangli/articles/26ef359f04e6e8",
-    "published_at": "2026-11-13T07:16:24.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3zRsNDDQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Estimating%2520a%2520body-shape%2520category%2520from%2520one%2520full-body%2520photo%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Pengliang%2520Li%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvcC5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "全身写真1枚から体型カテゴリーを推定するAI：衣服のサイジング課題を解決するコンピュータビジョンの実装アプローチ",
-    "summary_ja": "全身写真から「砂時計型」や「洋梨型」などの体型カテゴリーを自動推定するコンピュータビジョン技術の実装例が公開された。 複雑な計測を伴わずに、アパレルECなどでユーザーが最初に好みの服を選ぶ際の絞り込みを支援するUX向上ツールとして機能する。 体型分類を医療的診断ではなく、あくまでスタイリング補助の第一段階と定義することで、プライバシー配慮と実用性を両立させる設計思想が重要だ。",
-    "translations": {
-      "ja": {
-        "title": "全身写真1枚から体型カテゴリーを推定するAI：衣服のサイジング課題を解決するコンピュータビジョンの実装アプローチ",
-        "summary": "全身写真から「砂時計型」や「洋梨型」などの体型カテゴリーを自動推定するコンピュータビジョン技術の実装例が公開された。 複雑な計測を伴わずに、アパレルECなどでユーザーが最初に好みの服を選ぶ際の絞り込みを支援するUX向上ツールとして機能する。 体型分類を医療的診断ではなく、あくまでスタイリング補助の第一段階と定義することで、プライバシー配慮と実用性を両立させる設計思想が重要だ。"
-      },
-      "en": {
-        "title": "Estimating Body Shape Categories From Single Full-Body Photos: A Computer Vision Approach to Simplifying Apparel Sizing UX",
-        "summary": "This technical implementation leverages computer vision to automatically categorize body shapes—such as hourglass, pear, apple, or rectangle—using only a single full-body photograph. By automating this initial classification, the system removes the friction of manual tape measurements, providing a seamless starting point for clothing selection in e-commerce workflows. Crucially, the model treats these labels as styling aids rather than medical definitions, which simplifies the user experience while mitigating privacy concerns. For developers building fashion-tech tools, the key takeaway is that providing a rough, non-invasive silhouette estimate significantly lowers the barrier for users to discover products that fit their frame, ultimately boosting conversion rates in online apparel retail without requiring invasive biometric data input."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-13T18:17:04.393Z"
-  },
-  {
     "id": "art-1794593817064-022od",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -14037,32 +14062,6 @@
       "開発"
     ],
     "created_at": "2026-11-13T05:31:53.092Z"
-  },
-  {
-    "id": "art-1794547015442-ougcl",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/mugen_web/articles/cron-guard-base-time-weekly",
-    "published_at": "2026-11-13T03:50:02.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Du1JJ2gK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GitHub%2520Actions%25E3%2581%25AEcron%25E3%2581%25AF2%25E3%2580%259C4%25E6%2599%2582%25E9%2596%2593%25E9%2581%2585%25E3%2582%258C%25E7%25B6%259A%25E3%2581%2591%25E3%2581%259F%25E3%2580%2582%25E5%2585%25AC%25E9%2596%258B%25E3%2581%25AE%25E8%25A8%2598%25E9%258C%25B2%25E3%2581%258B%25E3%2582%2589%25E6%2595%25B0%25E3%2581%2588%25E3%2581%259F%25E9%2596%2593%25E9%259A%2594%25E3%2581%25A8%25E3%2580%2581%25E9%2580%25B13%25E5%259B%259E%25E5%258C%2596%25E3%2581%25A7%25E3%2581%25AE%25E3%2582%25AC%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AE%25E8%25A6%258B%25E7%259B%25B4%25E3%2581%2597%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:MUGEN%2520WEB%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGFEMXVhMTJBamkzcEZqNVltXzdGVzVRR1JHSFFNWnJBcXZ1Tkg0Rk9OLUFxNnJBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "GitHub ActionsのCron遅延問題を検証：最大4時間遅れる仕様下での「自動公開」間隔ガードの見直し手法",
-    "summary_ja": "GitHub ActionsのCronは予定時刻から2〜4時間遅延することが常態化しており、単純なタイマー運用では予期せぬレート制限やガード判定違反を招くリスクがある。 本稿では、公開履歴データに基づき遅延時間を実測し、単なる時間指定ではなく「前回公開から26時間経過」といった間隔ベースのロジックにガード条件を再設計した過程を解説する。 分散システムの不安定さを前提に、デプロイ後の実行タイミングを制御する防御的プログラミングの重要性を示す。",
-    "translations": {
-      "ja": {
-        "title": "GitHub ActionsのCron遅延問題を検証：最大4時間遅れる仕様下での「自動公開」間隔ガードの見直し手法",
-        "summary": "GitHub ActionsのCronは予定時刻から2〜4時間遅延することが常態化しており、単純なタイマー運用では予期せぬレート制限やガード判定違反を招くリスクがある。 本稿では、公開履歴データに基づき遅延時間を実測し、単なる時間指定ではなく「前回公開から26時間経過」といった間隔ベースのロジックにガード条件を再設計した過程を解説する。 分散システムの不安定さを前提に、デプロイ後の実行タイミングを制御する防御的プログラミングの重要性を示す。"
-      },
-      "en": {
-        "title": "GitHub Actions Cron Latency: Mitigating 4-Hour Execution Delays in Automated Publication Pipelines",
-        "summary": "GitHub Actions Cron jobs are notorious for significant drift, with execution delays frequently spanning two to four hours beyond the scheduled time. This unpredictability creates severe risks for automated services, such as violating rate limits or triggering safety guards based on tight intervals. This analysis dissects actual publication logs to quantify the drift and proposes a shift from rigid clock-based triggers to interval-based logic—specifically validating that at least 26 hours have passed since the previous successful run. For developers building on top of fragile infrastructure, the takeaway is clear: never assume consistency from CI/CD schedulers. Instead, implement defensive guard clauses that decouple your logic from execution time, ensuring system stability despite the inherent unreliability of free-tier runner scheduling."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-13T05:16:55.442Z"
   },
   {
     "id": "art-1794545207512-25jnu",
