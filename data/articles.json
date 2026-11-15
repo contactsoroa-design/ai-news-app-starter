@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794771122654-f9f4o",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kagaribilab/articles/claude-code-stop-hook-loop",
+    "published_at": "2026-11-15T12:54:54.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--k347Fs9H--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%252Fgoal%25E3%2582%2592%25E4%25BD%25BF%25E3%2582%258F%25E3%2581%259AStop%25E3%2583%2595%25E3%2583%2583%25E3%2582%25AF%25E3%2582%2592%25E8%2587%25AA%25E4%25BD%259C%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581Claude%2520Code%25E3%2581%258C%25E6%25AD%25A2%25E3%2581%25BE%25E3%2582%2589%25E3%2581%259A%25E4%25BD%25BF%25E7%2594%25A8%25E9%2587%258F%25E3%2581%258C%25E5%25A2%2597%25E3%2581%2588%25E7%25B6%259A%25E3%2581%2591%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258B%25E3%2581%258C%25E3%2582%258A%25E7%2581%25AB%25E3%2583%25A9%25E3%2583%259C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzcyYmY4OTVlMjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude CodeのStopフック自作で陥る「無限ループ」の罠――作業完了判定の失敗が招くAPI使用量増大と設計の教訓",
+    "summary_ja": "Claude Codeで作業完了を確実に制御するため、デフォルトの「/goal」機能を使わずに独自のStopフックを実装したところ、かえってClaudeが停止せず無限ループが発生し、API使用量が急増する事態となった。 フック自体はClaudeが停止する直前にスクリプトを実行する便利な機能だが、裏で動くプロセスの終了判定や待機ロジックを作り損ねると、いつまでも作業が継続するバグを誘発する。",
+    "translations": {
+      "ja": {
+        "title": "Claude CodeのStopフック自作で陥る「無限ループ」の罠――作業完了判定の失敗が招くAPI使用量増大と設計の教訓",
+        "summary": "Claude Codeで作業完了を確実に制御するため、デフォルトの「/goal」機能を使わずに独自のStopフックを実装したところ、かえってClaudeが停止せず無限ループが発生し、API使用量が急増する事態となった。 フック自体はClaudeが停止する直前にスクリプトを実行する便利な機能だが、裏で動くプロセスの終了判定や待機ロジックを作り損ねると、いつまでも作業が継続するバグを誘発する。"
+      },
+      "en": {
+        "title": "Why implementing a custom Stop hook for Claude Code can trigger infinite loops and massive API overconsumption",
+        "summary": "Attempting to force Claude Code to finish tasks by implementing a custom Stop hook rather than utilizing the native '/goal' command resulted in a critical failure where the agent never halted, causing runaway API costs. The custom logic failed because it did not correctly account for pending background processes, creating an infinite loop that kept the agent active indefinitely. While hooks are excellent for executing scripts at specific lifecycle events, this incident highlights the dangers of rolling custom completion logic without robust wait-and-verify mechanisms. For builders, the lesson is clear: when customizing agent behavior, ensure your stop logic explicitly handles asynchronous task completion, or you will inadvertently turn your automation script into a source of unlimited expenditure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-15T19:32:02.654Z"
+  },
+  {
+    "id": "art-1794771116090-4hygw",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/raymondhani/aegis-proxy",
+    "published_at": "2026-11-15T19:11:40.000Z",
+    "og_image_url": null,
+    "title_ja": "AIの悪意あるSQL実行を防御するGo製Postgresプロキシ「Aegis」公開、レイヤー4でクエリを検知・遮断",
+    "summary_ja": "Goで構築されたレイヤー4 Postgresプロキシ「Aegis」が公開された。 本ツールは、LLMなどのAIエージェントが生成する破壊的なSQLクエリを接続段階で検知し、安全でない操作をブロックするために設計されている。 DBレベルでの権限管理に加え、プロキシ層での防御を強化することで、AIによる意図しないデータ削除や破壊からデータベースを保護する。 AIアプリケーションのバックエンドを開発するエンジニアにとって、インジェクション対策の新たな防壁となりそうだ。",
+    "translations": {
+      "ja": {
+        "title": "AIの悪意あるSQL実行を防御するGo製Postgresプロキシ「Aegis」公開、レイヤー4でクエリを検知・遮断",
+        "summary": "Goで構築されたレイヤー4 Postgresプロキシ「Aegis」が公開された。 本ツールは、LLMなどのAIエージェントが生成する破壊的なSQLクエリを接続段階で検知し、安全でない操作をブロックするために設計されている。 DBレベルでの権限管理に加え、プロキシ層での防御を強化することで、AIによる意図しないデータ削除や破壊からデータベースを保護する。 AIアプリケーションのバックエンドを開発するエンジニアにとって、インジェクション対策の新たな防壁となりそうだ。"
+      },
+      "en": {
+        "title": "Aegis: A Go-based Layer-4 Postgres proxy designed to intercept and block destructive AI-generated SQL queries",
+        "summary": "The newly released Aegis is a Layer-4 Postgres proxy written in Go specifically built to mitigate the risks of AI-driven database interactions. By sitting between the application and the database, Aegis inspects traffic at the proxy level, allowing developers to preemptively block destructive SQL statements—such as unauthorized drop or delete commands—that might be hallucinated or maliciously crafted by LLM agents. Rather than relying solely on database-level permissions, this proxy approach adds an essential defensive perimeter for modern AI backends. For builders integrating LLMs with relational data, implementing a specialized proxy layer like Aegis provides a critical fail-safe, ensuring that AI agents cannot execute dangerous operations against production databases regardless of how they are prompted."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-15T19:31:56.090Z"
+  },
+  {
+    "id": "art-1794771109695-maai0",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/konbu_love/articles/f8b5257a2c82e7",
+    "published_at": "2026-11-15T19:18:09.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--yNCxglgh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25B8%25A6%25E3%2583%258B%25E5%2588%2586%25E5%2589%25B2%25E3%2581%25AE%25E6%25A5%25B7%25E6%259B%25B8%25E3%2581%25AEAI%25E3%2581%25A8%25E3%2581%25AE%25E3%2583%2581%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2588%25E3%2581%25A8%25E5%25B0%25BB%25E5%25B0%25BE%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2593%25E3%2582%2593%25E3%2581%25B6%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjZDc1YWVmZGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIの「本心」を可視化するUIの実験。「Shippo Chat」がスマホ画面を縦2分割してチャットと感情表現を同期させる手法",
+    "summary_ja": "「Shippo Chat」は、スマホ画面を縦2分割し、一方の画面でAIとのチャットを行い、もう一方でAIの隠せない本心（感情）を猫の尻尾の動きで可視化するユニークなインターフェースだ。 AIの回答内容は丁寧でも、尻尾が膨らんだり激しく揺れたりすることで、喜びや怒りといった非言語的な感情がダイレクトに伝わる。 チャットボットに「嘘をつくAI」というエンターテインメント性を加えるUI開発は、ユーザーの没入感を高める新たなインタラクションの可能性を示している。",
+    "translations": {
+      "ja": {
+        "title": "AIの「本心」を可視化するUIの実験。「Shippo Chat」がスマホ画面を縦2分割してチャットと感情表現を同期させる手法",
+        "summary": "「Shippo Chat」は、スマホ画面を縦2分割し、一方の画面でAIとのチャットを行い、もう一方でAIの隠せない本心（感情）を猫の尻尾の動きで可視化するユニークなインターフェースだ。 AIの回答内容は丁寧でも、尻尾が膨らんだり激しく揺れたりすることで、喜びや怒りといった非言語的な感情がダイレクトに伝わる。 チャットボットに「嘘をつくAI」というエンターテインメント性を加えるUI開発は、ユーザーの没入感を高める新たなインタラクションの可能性を示している。"
+      },
+      "en": {
+        "title": "Visualizing hidden AI emotions: Shihpo Chat uses a vertical split-screen UI to sync conversational responses with a feline tail",
+        "summary": "Shippo Chat introduces a playful interface experiment that splits mobile screens vertically: one side hosts a standard AI chat, while the other displays a cat's tail that reacts in real-time to the AI's underlying 'true' emotions. Even when the chatbot provides polite or helpful text, the tail’s animation—swelling in anger or swaying wildly in joy—exposes the system’s hidden state, bridging the gap between clinical text and emotive feedback. This creative approach to chatbot UI turns standard LLM interactions into an expressive performance. For developers, it demonstrates how adding a layer of non-verbal, physical representation to digital agents can significantly deepen user immersion and add a layer of personality that simple text-only prompts often fail to convey effectively."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-15T19:31:49.695Z"
+  },
+  {
+    "id": "art-1794771103217-bg1hd",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/hitori_tools/n/n507d027892d1",
+    "published_at": "2026-11-15T19:31:28.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336636411/rectangle_large_type_2_05d016e5a68222f75fe4685d99b1dac4.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Google AdSense審査に4度目で合格、トラフィックを100倍に増やしても落ち続けた原因と突破のヒントを徹底解説",
+    "summary_ja": "月間流入を100倍に拡大してもGoogle AdSenseの審査に4度不合格となった個人開発者が、ついに承認を勝ち取った試行錯誤の軌跡。 PV数やSEO対策だけでは不十分な場合があり、記事の独自性やナビゲーションの構造、広告掲載ポリシーへの厳密な準拠など、複合的な改善が合格の鍵となる。 単なる数値目標の達成に固執せず、審査側の視点に立ち返りサイトの「信頼性」を再構築することが、広告審査通過の最も確実な近道である。",
+    "translations": {
+      "ja": {
+        "title": "Google AdSense審査に4度目で合格、トラフィックを100倍に増やしても落ち続けた原因と突破のヒントを徹底解説",
+        "summary": "月間流入を100倍に拡大してもGoogle AdSenseの審査に4度不合格となった個人開発者が、ついに承認を勝ち取った試行錯誤の軌跡。 PV数やSEO対策だけでは不十分な場合があり、記事の独自性やナビゲーションの構造、広告掲載ポリシーへの厳密な準拠など、複合的な改善が合格の鍵となる。 単なる数値目標の達成に固執せず、審査側の視点に立ち返りサイトの「信頼性」を再構築することが、広告審査通過の最も確実な近道である。"
+      },
+      "en": {
+        "title": "Developer gets Google AdSense approval on fourth try, uncovering the real hurdles beyond just driving 100× traffic",
+        "summary": "After scaling organic traffic by 100×, a solo developer faced four consecutive Google AdSense rejections, revealing that volume alone rarely guarantees monetization approval. This breakdown chronicles the eventual shift in strategy: moving。 . For builders, the durable takeaway is to treat AI tooling as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-15T19:31:43.217Z"
+  },
+  {
     "id": "art-1794770242731-szcmm",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -7170,32 +7275,6 @@
     "created_at": "2026-11-15T01:02:12.006Z"
   },
   {
-    "id": "art-1794704525329-y0qy1",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/keiba_kansoku/n/nb8a0d4e59f8a",
-    "published_at": "2026-11-15T00:43:31.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336214220/rectangle_large_type_2_c9d229ac35a81d86cd12e98f62c55c5e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "予測モデルの的中率とROIは別物：AI競馬予想「V18」のライブ検証から学ぶ、儲けに直結しないモデルの落とし穴",
-    "summary_ja": "AI予測モデルにおいて「的中率が高い」ことは、必ずしも「儲かる」ことを意味しない。 競馬予想AI「V18」を用いたライブ検証を通じ、バックテスト時の精度と実際の運用収益（ROI）に乖離が生じるメカニズムを解説する。 開発者は単に予測の正答率を追うだけでなく、リスク管理とベット戦略を統合したアーキテクチャこそが真の収益化には不可欠であることを理解する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "予測モデルの的中率とROIは別物：AI競馬予想「V18」のライブ検証から学ぶ、儲けに直結しないモデルの落とし穴",
-        "summary": "AI予測モデルにおいて「的中率が高い」ことは、必ずしも「儲かる」ことを意味しない。 競馬予想AI「V18」を用いたライブ検証を通じ、バックテスト時の精度と実際の運用収益（ROI）に乖離が生じるメカニズムを解説する。 開発者は単に予測の正答率を追うだけでなく、リスク管理とベット戦略を統合したアーキテクチャこそが真の収益化には不可欠であることを理解する必要がある。"
-      },
-      "en": {
-        "title": "Why prediction accuracy isn't ROI: Lessons from live-testing the V18 horse racing AI on the disconnect between model performance and profit",
-        "summary": "High prediction accuracy in AI models does not automatically translate into consistent profitability, a common pitfall highlighted by live-testing the V18 horse racing predictor. This analysis demonstrates why historical backtesting results often diverge significantly from real-world ROI when capital allocation and strategy variables are introduced. For developers building predictive systems, the takeaway is clear: optimizing purely for hit rate is a tactical error. True monetization requires integrating robust risk management and betting strategies directly into the model architecture. Focusing solely on model accuracy without accounting for the underlying financial dynamics often leads to technically successful models that fail to capture real-world value, emphasizing the need for holistic system design in predictive development."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-15T01:02:05.329Z"
-  },
-  {
     "id": "art-1794704519174-qu46o",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -8506,32 +8585,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-14T19:47:09.294Z"
-  },
-  {
-    "id": "art-1794685616436-o8wvp",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://blog.v0.net/converting-obsolete-sports-tech-into-ai-glasses-part-1/",
-    "published_at": "2026-11-14T19:01:34.000Z",
-    "og_image_url": "https://blog.v0.net/content/images/size/w1200/2026/11/IMG_8176.gif",
-    "title_ja": "2013年製スマートグラス「Recon Jet」をハッキング：Linuxベースのカメラ＆AI音声アシスタントへ改造する試み",
-    "summary_ja": "2013年に登場したスポーツ用スマートグラス「Recon Jet」を解析し、独自のLinux環境を構築してカメラ付きのAI音声アシスタントへと蘇らせるハードウェアハックの事例。 メーカーサポートが終了した旧型デバイスにカスタムOSを導入することで、現代のAI技術を活用できるデバイスへ再利用する道筋を示した。",
-    "translations": {
-      "ja": {
-        "title": "2013年製スマートグラス「Recon Jet」をハッキング：Linuxベースのカメラ＆AI音声アシスタントへ改造する試み",
-        "summary": "2013年に登場したスポーツ用スマートグラス「Recon Jet」を解析し、独自のLinux環境を構築してカメラ付きのAI音声アシスタントへと蘇らせるハードウェアハックの事例。 メーカーサポートが終了した旧型デバイスにカスタムOSを導入することで、現代のAI技術を活用できるデバイスへ再利用する道筋を示した。"
-      },
-      "en": {
-        "title": "Hacking a 2013 Recon Jet smart glass into a custom Linux-based camera and AI voice assistant",
-        "summary": "An ambitious engineer successfully repurposed the discontinued 2013 Recon Jet sports smart glasses by stripping away the legacy software and installing a custom Linux environment. This hardware teardown and re-implementation transforms an obsolete wearable into a functional, camera-equipped AI voice assistant. By navigating closed-source hurdles and interfacing with custom circuitry, the project demonstrates how to bridge the gap between decade-old hardware and modern AI agent pipelines. For builders working in the IoT or edge computing space, this proves that abandoned tech isn't necessarily e-waste. With enough reverse engineering, even legacy displays and sensors can become high-performance, cost-effective platforms for deploying custom AI models, provided you are willing to rebuild the stack from the kernel upwards."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-14T19:46:56.436Z"
   },
   {
     "id": "art-1794684746378-r1bgn",
@@ -12054,32 +12107,6 @@
     "created_at": "2026-11-13T20:02:22.038Z"
   },
   {
-    "id": "art-1794600122150-fv5gp",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tosh1000950/articles/4cdef577c46451",
-    "published_at": "2026-11-13T15:57:28.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--0YVe4I3l--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259A%25E3%2581%25AB%25E3%2580%2581AI%25E3%2581%25A83%25E6%2597%25A5%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25A6%25E3%2582%25B6%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Tosh1000950%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUhOSnkwcjAxaWdic0JKVGtkcTN1VktHek04Z3N2UGFZMk9LZHN2S2lGcGFOSXFBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "コード0行で3日で完成、AI活用によるブラウザゲーム開発の全貌。横スクロールアクション「ほしぞらダッシュ」公開までのプロセス",
-    "summary_ja": "開発経験の有無に関わらず、AIを駆使すればわずか3日で完全なブラウザゲームを構築できる。 本事例では、企画、素材準備、実機検証を通じたイテレーションを繰り返すことで、4つのモードとボス戦、実績機能を備えた「ほしぞらダッシュ」をリリースした。 コードを1行も書かずに完成させる鍵は、明確な仕様策定とAIへのフィードバックサイクルにある。 個人開発者にとって、実装スキルよりも「何を、どう遊ばせるか」という企画力が重要になる時代が到来している。",
-    "translations": {
-      "ja": {
-        "title": "コード0行で3日で完成、AI活用によるブラウザゲーム開発の全貌。横スクロールアクション「ほしぞらダッシュ」公開までのプロセス",
-        "summary": "開発経験の有無に関わらず、AIを駆使すればわずか3日で完全なブラウザゲームを構築できる。 本事例では、企画、素材準備、実機検証を通じたイテレーションを繰り返すことで、4つのモードとボス戦、実績機能を備えた「ほしぞらダッシュ」をリリースした。 コードを1行も書かずに完成させる鍵は、明確な仕様策定とAIへのフィードバックサイクルにある。 個人開発者にとって、実装スキルよりも「何を、どう遊ばせるか」という企画力が重要になる時代が到来している。"
-      },
-      "en": {
-        "title": "Building a fully playable browser game in just 3 days without writing a single line of code using AI",
-        "summary": "The release of the browser game 'Hoshizora Dash' demonstrates that builders can create functional, multi-mode games entirely without coding by leveraging AI for implementation. The development process relied on three core pillars: structured game design, asset preparation, and rapid iterative testing on real devices to refine gameplay mechanics. By focusing on defining game specifications and maintaining a tight feedback loop with AI, the developer delivered a polished experience featuring four modes, boss battles, and achievement tracking within just 72 hours. This case study confirms that for solo developers and indie creators, the primary competitive edge is shifting away from raw coding proficiency toward conceptual design, creative direction, and the ability to articulate gameplay logic effectively to generative models."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-13T20:02:02.150Z"
-  },
-  {
     "id": "art-1794599237989-twirk",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -13901,33 +13928,6 @@
       "開発"
     ],
     "created_at": "2026-11-13T07:46:40.744Z"
-  },
-  {
-    "id": "art-1794555116767-0re8v",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/sec_madoguchi/articles/ai-site-prelaunch-8-checks",
-    "published_at": "2026-11-13T01:54:32.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--5RSeZ1dC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2583%25BB%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2592%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2599%25E3%2582%258B%25E5%2589%258D%25E3%2581%25AB%25E8%25A6%258B%25E3%2582%258B8%25E7%2582%25B9%25EF%25BC%2588%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AE%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%25A7%25E5%25AE%259F%25E9%259A%259B%25E3%2581%25AB%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2581%259F%25E7%25B5%2590%25E6%259E%259C%25E3%2581%25A4%25E3%2581%258D%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%2583%2585%25E3%2582%25B7%25E3%2582%25B9%25E7%25AA%2593%25E5%258F%25A3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2E3YTQ1MzU5NmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI生成アプリを公開する前に不可欠な「8つのチェックリスト」：実運用サイトでの検証結果とともに公開",
-    "summary_ja": "生成AIを活用すればアプリ開発は劇的に短縮できるが、AIは機能動作を優先するため、公開前に人間が品質を担保すべき項目が残る。 本稿では、個人運営する3つの静的サイトを実例に、ブラウザやcurlで外部から確認可能なセキュリティや最適化など、公開直前に必須となる8つのチェック項目を詳細に解説する。 完成したコードをそのままデプロイする前に、最低限の健全性チェックを行うことは、個人開発の信頼性を維持する上で極めて重要だ。",
-    "translations": {
-      "ja": {
-        "title": "AI生成アプリを公開する前に不可欠な「8つのチェックリスト」：実運用サイトでの検証結果とともに公開",
-        "summary": "生成AIを活用すればアプリ開発は劇的に短縮できるが、AIは機能動作を優先するため、公開前に人間が品質を担保すべき項目が残る。 本稿では、個人運営する3つの静的サイトを実例に、ブラウザやcurlで外部から確認可能なセキュリティや最適化など、公開直前に必須となる8つのチェック項目を詳細に解説する。 完成したコードをそのままデプロイする前に、最低限の健全性チェックを行うことは、個人開発の信頼性を維持する上で極めて重要だ。"
-      },
-      "en": {
-        "title": "8 Critical Checks Before Launching AI-Generated Apps: Real-World Audit of Live Static Sites for Quality Assurance",
-        "summary": "Generative AI can accelerate application development overnight, yet AI typically prioritizes functional output over robust production standards, leaving significant gaps for developers to fill. This article outlines eight essential validation steps to execute before pushing the deploy button, based on audits performed on three live personal static sites using simple browser and curl commands. From security headers to basic optimization flaws, the author demonstrates exactly where AI-generated projects often fail when exposed to the real web. For individual developers, validating these external-facing metrics is a mandatory final gatekeeper to ensure site integrity. Treating AI output as a draft rather than a finished product prevents common but embarrassing oversights that compromise trust and basic user experience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-13T07:31:56.767Z"
   },
   {
     "id": "art-1794553463591-w87ed",
