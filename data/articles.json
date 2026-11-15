@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794778319168-je452",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/moneytools_lab/articles/1d533b62bb11a2",
+    "published_at": "2026-11-15T17:38:55.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--AQowU6bL--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2580%2580%25E8%2581%25B7%25E6%2589%2580%25E5%25BE%2597%25E6%258E%25A7%25E9%2599%25A4%25E3%2581%25AE%25E9%2587%258D%25E8%25A4%2587%25E6%259C%259F%25E9%2596%2593%25E3%2580%2581%25E5%25BC%2595%25E3%2581%258D%25E7%25AE%2597%25E3%2581%25AE%25E9%25A0%2586%25E7%2595%25AA%25E3%2582%2592%25E9%2596%2593%25E9%2581%2595%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:MoneyTools%2520Lab%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2VlNTRlOGI1ZGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発のiDeCoシミュレーターで発覚した「退職所得控除」計算バグ、重複期間の引き算順序で数百万円の誤差が生じていた件",
+    "summary_ja": "iDeCo一時金の受け取りシミュレーター開発中、退職所得控除計算において重複期間の引き算順序を誤るバグが判明した。 条件次第では控除額に数百万円の差が生じるが、既存のテストは全て通過しており検知が遅れた。 複雑な税務計算を扱う場合、計算式の仕様確認だけでなく、境界値分析に基づくテストケースの徹底が不可欠である。 個人開発でドメイン知識が不足しやすい領域では、テストの網羅性と、制度の正確な仕様理解を両立させることが致命的な計算ミスを防ぐ唯一の策となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発のiDeCoシミュレーターで発覚した「退職所得控除」計算バグ、重複期間の引き算順序で数百万円の誤差が生じていた件",
+        "summary": "iDeCo一時金の受け取りシミュレーター開発中、退職所得控除計算において重複期間の引き算順序を誤るバグが判明した。 条件次第では控除額に数百万円の差が生じるが、既存のテストは全て通過しており検知が遅れた。 複雑な税務計算を扱う場合、計算式の仕様確認だけでなく、境界値分析に基づくテストケースの徹底が不可欠である。 個人開発でドメイン知識が不足しやすい領域では、テストの網羅性と、制度の正確な仕様理解を両立させることが致命的な計算ミスを防ぐ唯一の策となる。"
+      },
+      "en": {
+        "title": "Bug in my iDeCo calculator: How subtraction order errors in retirement income deductions caused a multi-million yen discrepancy",
+        "summary": "While building an iDeCo lump-sum withdrawal simulator, I discovered a critical bug in the retirement income deduction logic where the order of subtraction for overlapping service periods was incorrect. Depending on the specific conditions, this error resulted in discrepancies of several million yen, yet remarkably, all existing unit tests passed without flagging the issue. This experience highlights that simply hitting test coverage targets is insufficient when handling complex tax logic; engineers must instead focus on boundary value analysis and verifying the underlying domain specifications. For developers building financial tools, the core takeaway is to rigorously audit domain-specific formulas against real-world test cases, as passing tests can provide a dangerous, false sense of security when the logic itself is flawed."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-15T21:31:59.168Z"
+  },
+  {
+    "id": "art-1794778312810-90sik",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/CodeNest_media/items/a885560b3c680c7edc8b",
+    "published_at": "2026-11-15T20:57:14.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnBicy50d2ltZy5jb20lMkZwcm9maWxlX2ltYWdlcyUyRjIwMTkyODE0NzA3MzM1NzgyNDYlMkZBLThYT2d5MV9iaWdnZXIuanBnP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1jMDk2ZTI2NmFmNTIwNTI4YzJiYmIxNTFjYjlmYjgyYQ%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZiNWVmNmY3OTA4MjQ5ZmQ4MWFjZjg4MjJiMDAzOTYwZjAyYmE1MzU1JTJGb3JpZ2luYWwuanBnJTNGMTc5MzM0OTU1Mj9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1iMWI0ZGM0MzA5YWUzNjZlNzE3ZmY2NjFiNjMzOTk5Yg%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dcaf8ab8ce69301a701edf218a5444ce0?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTclOTQlOUYlRTYlODglOTAlRTMlODMlODYlRTMlODIlQjklRTMlODMlODglRTMlODElOEMlRTUlODUlQTglRTklODMlQTglRTklODAlOUElRTMlODElQTMlRTMlODElQTYlRTMlODIlODIlRTQlQjglOEQlRTUlQUUlODklRTMlODElQUElRTMlODElQTglRTMlODElOEQlRUYlQkMlOUExOCVFNiVBRCVCMyVFMyU4MSVBRSVFNSVBMiU4MyVFNyU5NSU4QyVFMyU4MSU4QiVFMyU4MiU4OSVFMyU4MiVCMSVFMyU4MyVCQyVFMyU4MiVCOSVFMyU4MiU5MiVFNCVCRCU5QyVFMyU4MiU4QSVFNyU5QiVCNCVFMyU4MSU5OSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTU0NjRkYmQ0N2Q1Y2JhNWUzNTQ0MDNmZGM4Nzc2YzQ5&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBDb2RlTmVzdF9tZWRpYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTQyM2QxNzZhZWY1NmI2MmEwMWJjZjk4Yzc1ODUzNTBl&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-SGF0Y2gtSVQ&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=c10261b6f2919bc9b0a87a7b3e5b54ef",
+    "title_ja": "AI生成のテストコードを信じきれない時に。テスト網羅率よりも重要な「仕様の境界値」を深掘りするテストケースの再設計手法",
+    "summary_ja": "AIが生成したテストがすべて成功しても不安な場合、それは網羅性が足りないのではなく、仕様の「境界」を見逃している可能性が高い。 「18歳以上ならtrue」という関数に対し10や20だけを試すのではなく、17や18といった境界値を含めたテストケースこそが、AI生成コードに潜むバグを摘出する鍵となる。 生成AIに頼り切らず、ロジックの端を自分で設計し直すというエンジニアの視点が、堅牢なプロダクトを作るための必須スキルだ。",
+    "translations": {
+      "ja": {
+        "title": "AI生成のテストコードを信じきれない時に。テスト網羅率よりも重要な「仕様の境界値」を深掘りするテストケースの再設計手法",
+        "summary": "AIが生成したテストがすべて成功しても不安な場合、それは網羅性が足りないのではなく、仕様の「境界」を見逃している可能性が高い。 「18歳以上ならtrue」という関数に対し10や20だけを試すのではなく、17や18といった境界値を含めたテストケースこそが、AI生成コードに潜むバグを摘出する鍵となる。 生成AIに頼り切らず、ロジックの端を自分で設計し直すというエンジニアの視点が、堅牢なプロダクトを作るための必須スキルだ。"
+      },
+      "en": {
+        "title": "Beyond AI-Generated Tests: Why Testing Specification Boundaries Is More Critical Than Simple Success Rates for Robust Code",
+        "summary": "When AI-generated test suites return green but doubts linger, the issue isn't coverage percentage; it is a failure to test specific specification boundaries. For example, testing only 10 and 20 for an 'over 18' function misses the actual edge case of 17 versus 18. Robust software engineering requires looking beyond generic AI outputs and manually redefining test cases that specifically target those fragile boundary conditions where logic often fails. Developers must treat AI as a junior assistant and proactively design boundary-focused test scenarios to catch implementation errors that machine-generated tests overlook. Mastering this critical thinking layer is the essential differentiator between shipping fragile prototypes and deploying reliable, production-ready code that survives real-world edge cases."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-15T21:31:52.810Z"
+  },
+  {
+    "id": "art-1794778306424-tg6mc",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/crisp_wasp5557/n/n0b68412f9186",
+    "published_at": "2026-11-15T21:07:50.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336063076/rectangle_large_type_2_a900db4384bd07d6726d706ce12ec9b5.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "7日間で開発した家族ニュースアプリ「ちゃのま」：Claudeで祖父母と孫の日常を夜7時のテレビ番組に変換するハッカソン発のアイデア",
+    "summary_ja": "「Built with Claude: Japan 2026」にて開発された「ちゃのま」は、離れて暮らす家族の日常的な投稿を、AIが夜7時のテレビ番組へと再構築するWebアプリだ。 投稿を時系列にまとめ、司会キャラクター「テレ吉」が進行する演出により、一方的な報告ではなく「番組」として共有体験に変える点がユニーク。 技術よりも「家族の体験」を設計の主軸に据えることで、AIを用いた温かみのあるコミュニケーションツールの可能性を提示している。",
+    "translations": {
+      "ja": {
+        "title": "7日間で開発した家族ニュースアプリ「ちゃのま」：Claudeで祖父母と孫の日常を夜7時のテレビ番組に変換するハッカソン発のアイデア",
+        "summary": "「Built with Claude: Japan 2026」にて開発された「ちゃのま」は、離れて暮らす家族の日常的な投稿を、AIが夜7時のテレビ番組へと再構築するWebアプリだ。 投稿を時系列にまとめ、司会キャラクター「テレ吉」が進行する演出により、一方的な報告ではなく「番組」として共有体験に変える点がユニーク。 技術よりも「家族の体験」を設計の主軸に据えることで、AIを用いた温かみのあるコミュニケーションツールの可能性を提示している。"
+      },
+      "en": {
+        "title": "Building 'Chanoma' in 7 Days: Turning Family Daily Updates into a 7 PM TV News Show Using Claude",
+        "summary": "Developed during the 'Built with Claude: Japan 2026' hackathon, 'Chanoma' is a web application that transforms scattered daily family updates into a scheduled 7 PM televised news broadcast. By leveraging Claude to organize individual posts and generate commentary from a host character named 'Telekichi,' the app turns simple text status updates into a structured, engaging family media experience. Rather than focusing on raw AI utility, the project prioritizes the emotional resonance of shared digital space, demonstrating how generative AI can be applied to foster intimacy among distant relatives. For independent developers, it serves as a compelling case study on prioritizing specific user-centric interaction models—like the 'TV show' metaphor—over complex feature sets to drive genuine engagement."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-15T21:31:46.424Z"
+  },
+  {
+    "id": "art-1794778299737-jz9gi",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.metemorris.com/posts/tokenomics/",
+    "published_at": "2026-11-15T21:18:47.000Z",
+    "og_image_url": "https://www.metemorris.com/og/tokenomics.png",
+    "title_ja": "GPT-3.5以降のLLM市場分析：トークン制限と料金体系の激変を振り返る、開発者向けモデル選定の定石",
+    "summary_ja": "GPT-3.5の登場から現在に至るまで、LLM市場では推論料金の劇的な低下とコンテキストウィンドウの急速な拡大が続いている。 本記事は、各社のモデルリリースを時系列で整理し、価格破壊と性能向上のトレードオフを分析したものだ。 開発者にとっては、単に最高性能のモデルを選ぶのではなく、タスクの性質とコスト効率を考慮した「適切なモデル」の選定と使い分けが、実務上の生存戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "GPT-3.5以降のLLM市場分析：トークン制限と料金体系の激変を振り返る、開発者向けモデル選定の定石",
+        "summary": "GPT-3.5の登場から現在に至るまで、LLM市場では推論料金の劇的な低下とコンテキストウィンドウの急速な拡大が続いている。 本記事は、各社のモデルリリースを時系列で整理し、価格破壊と性能向上のトレードオフを分析したものだ。 開発者にとっては、単に最高性能のモデルを選ぶのではなく、タスクの性質とコスト効率を考慮した「適切なモデル」の選定と使い分けが、実務上の生存戦略となる。"
+      },
+      "en": {
+        "title": "Analyzing LLM evolution: How token pricing and context limits shifted since GPT-3.5 and what builders should choose",
+        "summary": "Since the launch of GPT-3.5, the LLM landscape has been defined by a relentless collapse in inference costs paired with an exponential expansion of context windows. This retrospective analyzes the timeline of model releases, detailing how performance benchmarks have evolved alongside pricing models. For modern software builders, the strategy is no longer about blindly selecting the most powerful frontier model available. Instead, the analysis highlights that architectural success now depends on balancing task complexity against cost-per-token, forcing developers to become savvy at routing workloads to the most efficient model rather than relying on a single, expensive powerhouse. Mastering this trade-off between price, latency, and capability is essential for any production-grade AI application."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-15T21:31:39.737Z"
+  },
+  {
     "id": "art-1794777434612-7vnui",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -7353,32 +7457,6 @@
     "created_at": "2026-11-15T02:31:54.742Z"
   },
   {
-    "id": "art-1794709908340-lu8f2",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/moneystock/n/n1c1fdace4f5d",
-    "published_at": "2026-11-15T02:11:49.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336297760/rectangle_large_type_2_dcb25524ae1a3f175f370431571d86a1.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "PHP実行時間30秒制限のレンタルサーバーでAI記事生成を動かす工夫：SB Intuitions「Sarashina」活用事例",
-    "summary_ja": "月額制レンタルサーバーのPHP実行時間30秒制限という環境下で、AIによる記事生成プロセスをいかに実装するかが鍵となる。 具体的には、LLMが企画から執筆、編集まで行う重い処理を非同期タスクとしてバックグラウンドで実行し、フロントエンドと完全に分離するアーキテクチャが有効だ。 リソース制限が厳しい環境でも、処理を分割しキューイングを適切に行うことで、最新の国産LLMを活用した本格的なサービス運用が可能になる。",
-    "translations": {
-      "ja": {
-        "title": "PHP実行時間30秒制限のレンタルサーバーでAI記事生成を動かす工夫：SB Intuitions「Sarashina」活用事例",
-        "summary": "月額制レンタルサーバーのPHP実行時間30秒制限という環境下で、AIによる記事生成プロセスをいかに実装するかが鍵となる。 具体的には、LLMが企画から執筆、編集まで行う重い処理を非同期タスクとしてバックグラウンドで実行し、フロントエンドと完全に分離するアーキテクチャが有効だ。 リソース制限が厳しい環境でも、処理を分割しキューイングを適切に行うことで、最新の国産LLMを活用した本格的なサービス運用が可能になる。"
-      },
-      "en": {
-        "title": "Running AI blog generation on shared hosting with a 30-second PHP execution limit: A Sarashina LLM case study",
-        "summary": "Operating AI-driven blog generation on standard shared hosting environments presents a major technical challenge: the strict 30-second PHP execution time limit. To overcome this, developers must decouple the heavy lifting—where SB Intuitions’ Sarashina LLM handles everything from topic planning to final editing—from the web request lifecycle. The effective solution involves shifting these resource-intensive tasks into background jobs using asynchronous processing queues, ensuring the frontend remains responsive while the AI completes its multi-step generation in the background. This architecture proves that even with tight server constraints, builders can reliably deploy complex AI services. The key takeaway for indie developers is to embrace task isolation and queueing early, rather than forcing synchronous operations within standard web server limitations."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-15T02:31:48.340Z"
-  },
-  {
     "id": "art-1794709040795-cpabx",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -8455,32 +8533,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-14T22:01:56.251Z"
-  },
-  {
-    "id": "art-1794693709282-4i9ue",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/dirmedmr-alt/ai-access-auditor",
-    "published_at": "2026-11-14T21:35:05.000Z",
-    "og_image_url": null,
-    "title_ja": "AIコーディングエージェントの権限を可視化・管理するオープンソースツール「AI Access Auditor」が登場",
-    "summary_ja": "GitHub上で公開された「AI Access Auditor」は、CursorやWindsurfなどのAIコーディングエージェントが、どのファイルやリポジトリへのアクセス権限を保持しているかを可視化し、不要なアクセスを即座に無効化できるセキュリティツールだ。 エージェントの「シャドーIT」化が進む中、開発者は機密情報の漏洩リスクを最小限に抑えるため、自動化されたコード生成環境における権限管理を個別に監査する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AIコーディングエージェントの権限を可視化・管理するオープンソースツール「AI Access Auditor」が登場",
-        "summary": "GitHub上で公開された「AI Access Auditor」は、CursorやWindsurfなどのAIコーディングエージェントが、どのファイルやリポジトリへのアクセス権限を保持しているかを可視化し、不要なアクセスを即座に無効化できるセキュリティツールだ。 エージェントの「シャドーIT」化が進む中、開発者は機密情報の漏洩リスクを最小限に抑えるため、自動化されたコード生成環境における権限管理を個別に監査する必要がある。"
-      },
-      "en": {
-        "title": "New open-source tool 'AI Access Auditor' lets developers visualize and revoke permissions for AI coding agents",
-        "summary": "The newly released AI Access Auditor on GitHub provides a critical security layer by visualizing which files and repositories your local AI coding agents, like Cursor or Windsurf, can currently access. As these agents become indispensable for development, they often operate with broad, unchecked permissions, creating significant risks for sensitive code leakage or unauthorized repository modification. This tool allows developers to explicitly audit and revoke these access scopes, effectively bringing governance to the 'shadow AI' infrastructure within their local environments. For builders relying on AI-assisted coding workflows, the practical takeaway is to treat agent permissions as a primary security vector; auditing your agent's access scope is no longer optional if you are handling proprietary source code."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-14T22:01:49.282Z"
   },
   {
     "id": "art-1794692807660-wrh10",
@@ -9947,32 +9999,6 @@
       "開発"
     ],
     "created_at": "2026-11-14T11:02:44.298Z"
-  },
-  {
-    "id": "art-1794654154535-z19oo",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ohisama@github/items/e78886177f504bf790ac",
-    "published_at": "2026-11-14T10:28:15.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxODEwNCUyRmZiMGEzYjAxNmI3NWM3NWZhYjQyMGUxMGIyYTc1YWZjNGQzMTIxMWMlMkZ4X2xhcmdlLnBuZyUzRjE3NTc5ODAzMTA_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTljZjJjZTNhMTliMTU4ZThhNjg3N2RmOTFlMzg1YTFj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D39440b0a00fa8b4d3536abdab6ec71e6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU4JTg3JUFBJUU0JUJEJTlDTUNQJUUzJTgyJUI1JUUzJTgzJUJDJUUzJTgzJTkwJUUzJTgzJUJDJTIwJUUzJTgxJTlEJUUzJTgxJUFFMTUmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz00ZGI2ZDA0OTA3NmQzNjk1MDc1YjhhMjlmMjBiN2VhZg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBvaGlzYW1hJTQwZ2l0aHViJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MGY0ZWFmYWQ5NjRjYTllOWJiNWUyYTg4Mjg3NWYwZWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=5ec67c14fa2cc39136548b8fec0ebca7",
-    "title_ja": "自作MCPサーバー挑戦記：日本語プログラミング言語「プロデル」をClaudeやChatGPTで実行可能にする実装手法",
-    "summary_ja": "Model Context Protocol(MCP)を活用し、日本語プログラミング言語「プロデル」をAIから直接実行する自作サーバーの実装手順を解説する。 ChatGPTと連携し、プロデルのコンパイルと実行フローを構築することで、自然言語による指示からローカル環境のプログラムを直接動かす仕組みを実現した。 AIエージェントの操作範囲をローカルツールまで拡張し、実行環境とAIを統合したい開発者にとって、MCPを活用したツール連携の具体的な実践例となる。",
-    "translations": {
-      "ja": {
-        "title": "自作MCPサーバー挑戦記：日本語プログラミング言語「プロデル」をClaudeやChatGPTで実行可能にする実装手法",
-        "summary": "Model Context Protocol(MCP)を活用し、日本語プログラミング言語「プロデル」をAIから直接実行する自作サーバーの実装手順を解説する。 ChatGPTと連携し、プロデルのコンパイルと実行フローを構築することで、自然言語による指示からローカル環境のプログラムを直接動かす仕組みを実現した。 AIエージェントの操作範囲をローカルツールまで拡張し、実行環境とAIを統合したい開発者にとって、MCPを活用したツール連携の具体的な実践例となる。"
-      },
-      "en": {
-        "title": "Building a Custom MCP Server: Integrating the Japanese 'Prodel' Programming Language into AI Agents like Claude and ChatGPT",
-        "summary": "This technical deep dive explores the implementation of a custom Model Context Protocol (MCP) server designed to compile and execute 'Prodel,' a Japanese-based programming language, directly from AI agents. By integrating Prodel’s compilation and execution pipeline with ChatGPT, the project demonstrates how to bridge natural language instructions with local machine-code execution. This setup successfully extends the operational scope of AI agents, allowing them to interact with and control local development environments seamlessly. For builders looking to integrate custom language runtimes or domain-specific scripts into their AI-driven workflows, this example provides a practical blueprint for leveraging MCP to unify external AI intelligence with local system capabilities, ultimately reducing context switching during development tasks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-14T11:02:34.535Z"
   },
   {
     "id": "art-1794653223569-1dxgh",
@@ -13196,32 +13222,6 @@
       "開発"
     ],
     "created_at": "2026-11-13T12:02:08.217Z"
-  },
-  {
-    "id": "art-1794569517284-ooskc",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/marisa0925/articles/544e6c904a70d0",
-    "published_at": "2026-11-13T08:51:30.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--NrTLOCr3--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%25AA%25E5%2585%25AC%25E9%2596%258B%25E6%2598%25A0%25E5%2583%258F%25E3%2582%2592%25E7%25A4%25BE%25E5%25A4%2596%25E3%2581%25AB%25E5%2587%25BA%25E3%2581%2595%25E3%2581%259A%25E3%2581%25AB%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%2599%25E3%2582%258B%2520OSS%2520%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2582%258A%25E3%2583%25BC%25E3%2581%259F%25E3%2581%2595%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSWV1ak9oRldtbWlwbUNtbDh6U1NMOTZic1JFcWNVaHUzTWxUaEV2OE8yeUJFNGVQWmpxUT1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ゲーム開発チーム向け動画レビューツール「VideoReview」公開。Frame.ioを代替し社内ストレージ運用を実現するOSS",
-    "summary_ja": "ゲーム開発における動画レビューを効率化するOSS「VideoReview」が公開された。 Frame.ioのような機能を自前ストレージ上で実現し、タイムラインへのコメント、フレーム単位の描画、リビジョン比較、同期再生機能を提供する。 社外に映像データを出さずにセキュアなレビュー環境を構築したい開発チームにとって、コストを抑えつつワークフローを改善できる有効な選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "ゲーム開発チーム向け動画レビューツール「VideoReview」公開。Frame.ioを代替し社内ストレージ運用を実現するOSS",
-        "summary": "ゲーム開発における動画レビューを効率化するOSS「VideoReview」が公開された。 Frame.ioのような機能を自前ストレージ上で実現し、タイムラインへのコメント、フレーム単位の描画、リビジョン比較、同期再生機能を提供する。 社外に映像データを出さずにセキュアなレビュー環境を構築したい開発チームにとって、コストを抑えつつワークフローを改善できる有効な選択肢となるだろう。"
-      },
-      "en": {
-        "title": "VideoReview Launches as an Open-Source, Self-Hosted Frame.io Alternative for Game Development Teams",
-        "summary": "VideoReview has launched as an open-source tool designed to streamline video collaboration for game development teams. Acting as a self-hosted alternative to Frame.io, it enables teams to host media directly on their own infrastructure while providing core features like timeline-based commenting, frame-accurate annotations, revision history, and synchronized playback for remote reviews. This solution allows studios to keep sensitive, unreleased footage strictly on internal storage, bypassing third-party cloud costs or security concerns. For teams managing large volumes of game assets, VideoReview offers a robust way to implement professional-grade review workflows without relying on external SaaS platforms. It is a practical choice for developers prioritizing data sovereignty and long-term cost optimization in their pipeline."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-13T11:31:57.284Z"
   },
   {
     "id": "art-1794565936193-kvc05",
