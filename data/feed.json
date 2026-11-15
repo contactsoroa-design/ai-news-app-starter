@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794781033327-xtxgb",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/tsukaima_kobo/articles/45c73cee00f0bd",
+    "published_at": "2026-11-15T11:11:30.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xd94SKco--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E8%258D%2589%25E3%2580%258D%25E3%2582%2592%2520%2522Grass%2522%2520%25E3%2581%25A8%25E8%25A8%25B3%25E3%2581%2595%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%259A%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E5%2586%2585%25E3%2583%2581%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2588%25E3%2582%2592%2520Workers%2520AI%2520%25E3%2581%25AE%2520LLM%2520%25E3%2581%25A7%25E7%25BF%25BB%25E8%25A8%25B3%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BD%25BF%25E3%2581%2584%25E9%25AD%2594%25E5%25B7%25A5%25E6%2588%25BF%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJiZTViMTJhODEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ゲーム内チャットのリアルタイム翻訳：Cloudflare Workers AIとLLMを活用し「草」のようなスラングを正しく訳す実装術",
+    "summary_ja": "個人開発のオンラインゲーム「Fake AI」で、多言語チャットをLLMで翻訳する仕組みを解説。 専用の翻訳APIからLLMへ移行し、「草」のようなネットスラングを適切に処理する手法を紹介する。 複数投稿を1回のリクエストでまとめて翻訳するコスト最適化や、メインモデルが失敗した際の自動フォールバック設計など、Cloudflare Workers環境での実践的な翻訳パイプラインを詳述する。",
+    "translations": {
+      "ja": {
+        "title": "ゲーム内チャットのリアルタイム翻訳：Cloudflare Workers AIとLLMを活用し「草」のようなスラングを正しく訳す実装術",
+        "summary": "個人開発のオンラインゲーム「Fake AI」で、多言語チャットをLLMで翻訳する仕組みを解説。 専用の翻訳APIからLLMへ移行し、「草」のようなネットスラングを適切に処理する手法を紹介する。 複数投稿を1回のリクエストでまとめて翻訳するコスト最適化や、メインモデルが失敗した際の自動フォールバック設計など、Cloudflare Workers環境での実践的な翻訳パイプラインを詳述する。"
+      },
+      "en": {
+        "title": "Real-time game chat translation: Leveraging Cloudflare Workers AI to handle slang and context with LLMs",
+        "summary": "The developer behind the online social deduction game 'Fake AI' details a robust system for handling multilingual chat using LLMs via Cloudflare Workers. Moving away from standard translation APIs, the implementation focuses on LLM-driven translation to capture nuanced slang like Japanese internet-speak for 'laughing' (grass). The system architecture optimizes API costs by batching multiple chat messages into single requests and incorporates a resilient fallback mechanism that automatically switches models if the primary LLM fails. By processing chat streams on the edge, the developer creates a seamless, cross-language experience for players. This write-up provides a practical blueprint for builders who need low-latency, context-aware translation within constrained environments where specialized translation services often fall short."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-15T22:17:13.327Z"
+  },
+  {
+    "id": "art-1794781022627-40b8v",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.jdsupra.com/legalnews/delaware-considers-ai-managed-companies-7749604/",
+    "published_at": "2026-11-15T22:05:04.000Z",
+    "og_image_url": null,
+    "title_ja": "米デラウェア州がAIによる法人経営を議論、自律エージェントが意思決定を行う法的人格の付与が焦点に",
+    "summary_ja": "米デラウェア州で、AIが意思決定を行う「AI管理企業」を法的に認める可能性が議論されている。 企業がAIエージェントに経営権を委ねる将来を見据え、法的責任の所在やガバナンスモデルをどう設計するかが焦点だ。 これは単なる法的トピックではなく、将来的に自律型AIが企業の意思決定や資産運用を行う際、どのような法的枠組みで開発・運用すべきかという極めて重要なエンジニアリングの前提条件となる。 エンジニアは今後の法人法改正と、自律AIの権限付与に関する議論を注視する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "米デラウェア州がAIによる法人経営を議論、自律エージェントが意思決定を行う法的人格の付与が焦点に",
+        "summary": "米デラウェア州で、AIが意思決定を行う「AI管理企業」を法的に認める可能性が議論されている。 企業がAIエージェントに経営権を委ねる将来を見据え、法的責任の所在やガバナンスモデルをどう設計するかが焦点だ。 これは単なる法的トピックではなく、将来的に自律型AIが企業の意思決定や資産運用を行う際、どのような法的枠組みで開発・運用すべきかという極めて重要なエンジニアリングの前提条件となる。 エンジニアは今後の法人法改正と、自律AIの権限付与に関する議論を注視する必要がある。"
+      },
+      "en": {
+        "title": "Delaware weighs legal framework for AI-managed corporations, exploring autonomous agents with actual decision-making authority",
+        "summary": "Delaware is currently evaluating the legal legitimacy of AI-managed corporations, specifically considering whether autonomous agents can legally execute corporate decision-making duties. As businesses increasingly explore offloading operational governance to AI systems, regulators are debating how to define liability and corporate entity status for non-human decision-makers. This shift is critical for builders because it defines the future operating environment for autonomous agents managing assets or executing contracts within a corporate entity. For software engineers building agentic backends, monitoring these legislative developments is essential, as the legal framework for corporate governance will fundamentally change how AI-driven automated businesses interact with traditional financial systems and liability protocols in the coming years."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-15T22:17:02.627Z"
+  },
+  {
+    "id": "art-1794781014195-t4wrb",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/lhjjjk4/items/7a6711284a10020f6dcd",
+    "published_at": "2026-11-15T22:10:34.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUFUWEFKejRJUk9sRzB3UnBpYlA1b0YzWHo2Y291MTdHYXVwYkw1X3dTUUIlM0RzNTAtbW8_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWIyZjY1NmMxN2E4ZTk4ZGYyY2VkYmU5MmUzM2MwOTQ3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd01cdc4a99f3e3f94b607574520e6034?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTYlOTclQTUlRTUlQTAlQjElMjAyMDI2JUU1JUI5JUI0MTElRTYlOUMlODgxNiVFNiU5NyVBNSVFRiVCQyU5QVBvcHB5JUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgzJTg4JUUzJTgyJUIzJUUzJTgzJUFCMS4wJUU2JUFEJUEzJUU1JUJDJThGJUUzJTgzJUFBJUUzJTgzJUFBJUUzJTgzJUJDJUUzJTgyJUI5JUUzJTgwJTgxUnVud2F5JUUzJTgxJThDJUUzJTgzJUFEJUUzJTgzJTlDJUUzJTgzJTgzJUUzJTgzJTg4JUUzJTgzJUEyJUUzJTgzJTg3JUUzJTgzJUFCJUUzJTgxJUFFJUU5JTg3JThEJUUzJTgxJUJGJUUzJTgyJTkyJUU1JTg1JUFDJUU5JTk2JThCJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NjU0ZmRiZjU0N2Q0YjgxZWM1ZGZiYTNjZDY0Y2YyMWU&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsaGpqams0JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTUwY2Y1ZTE4YzU4OWQ1NDhlYzgyYTBkYjQ4NzI2MTQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b34892789e22ddcb5ec5ca13b8575243",
+    "title_ja": "AI業界週間ダイジェスト：Poppyプロトコル1.0公開、Runwayがロボット用制御モデルを解放、Cursorは供給網攻撃の全貌を報告",
+    "summary_ja": "Poppyプロトコル1.0の正式リリースにより、5週間で草案から実装基盤への急速な標準化が実現した。 一方、CursorはIDE拡張を狙ったマルウェア混入事件の詳細を公表し、セキュリティ対策の重要性を再認識させた。 また、動画生成で知られるRunwayが、ロボット制御用のオープンモデルを公開したことも大きな転換点だ。 これらの動向は、AI開発における標準化、エコシステムのセキュリティ管理、そしてクロスドメインな技術開放がイノベーションを加速させることを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "AI業界週間ダイジェスト：Poppyプロトコル1.0公開、Runwayがロボット用制御モデルを解放、Cursorは供給網攻撃の全貌を報告",
+        "summary": "Poppyプロトコル1.0の正式リリースにより、5週間で草案から実装基盤への急速な標準化が実現した。 一方、CursorはIDE拡張を狙ったマルウェア混入事件の詳細を公表し、セキュリティ対策の重要性を再認識させた。 また、動画生成で知られるRunwayが、ロボット制御用のオープンモデルを公開したことも大きな転換点だ。 これらの動向は、AI開発における標準化、エコシステムのセキュリティ管理、そしてクロスドメインな技術開放がイノベーションを加速させることを示唆している。"
+      },
+      "en": {
+        "title": "AI Roundup: Poppy protocol hits 1.0, Runway releases robot control weights, and Cursor details a supply chain attack",
+        "summary": "This week, the Poppy protocol reached version 1.0, maturing rapidly from draft to production foundation in just five weeks. Meanwhile, Cursor published a detailed post-mortem on a supply chain attack that injected malware into their marketplace, highlighting the critical need for hardened plugin security. In a surprise shift, video generation leader Runway released open-weight models for robot control, signaling deeper cross-industry collaboration. For developers, these events underscore the acceleration of infrastructure standardization and the urgent shift toward zero-trust security in IDE ecosystems. The takeaway is clear: as AI tool chains grow more powerful and interconnected, builders must prioritize auditing third-party integrations as rigorously as they manage their own codebase to prevent similar vulnerabilities."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-15T22:16:54.195Z"
+  },
+  {
+    "id": "art-1794781005424-dq96a",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/guzumania_start/n/n3488710103ba",
+    "published_at": "2026-11-15T22:14:16.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336656904/rectangle_large_type_2_8c577fc48ce21cd9e7a55f29e2bab8ac.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claudeを活用した個人ゲーム開発記：チャプター進行型アクション「月影サバイバル」の爆速プロトタイピングと実装の全貌",
+    "summary_ja": "Claudeをパートナーに迎えた個人開発の第9弾として、チャプタークリア形式のアクションゲーム「月影サバイバル」を短期間で完成させた。 コード生成からゲームバランス調整までAI主導で構築し、プロトタイピングの速度を飛躍的に向上させている。 AIとの対話的なコーディングは、独力での開発において仕様策定の時間を短縮し、実装の試行錯誤を加速させる強力な武器となり得ることを証明した。",
+    "translations": {
+      "ja": {
+        "title": "Claudeを活用した個人ゲーム開発記：チャプター進行型アクション「月影サバイバル」の爆速プロトタイピングと実装の全貌",
+        "summary": "Claudeをパートナーに迎えた個人開発の第9弾として、チャプタークリア形式のアクションゲーム「月影サバイバル」を短期間で完成させた。 コード生成からゲームバランス調整までAI主導で構築し、プロトタイピングの速度を飛躍的に向上させている。 AIとの対話的なコーディングは、独力での開発において仕様策定の時間を短縮し、実装の試行錯誤を加速させる強力な武器となり得ることを証明した。"
+      },
+      "en": {
+        "title": "Building 'Tsukikage Survival': How Claude accelerated rapid prototyping and development for a chapter-based action game",
+        "summary": "For the ninth installment of a solo development series, the creator partnered with Claude to build 'Tsukikage Survival,' a chapter-based action game, completing the project in record time. By utilizing AI for both code generation and game balance tuning, the developer drastically reduced the iteration loop typically required for core mechanics. This workflow demonstrates that interactive AI-assisted coding acts as a force multiplier for solo builders, significantly cutting down on architecture planning and allowing for rapid experimentation. The project serves as a compelling case study on how leveraging LLMs effectively transforms the traditional development cycle, proving that even complex game logic can be prototyped and shipped rapidly when AI is treated as a core development partner."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-15T22:16:45.424Z"
+  },
+  {
     "id": "art-1794780129161-pi0ze",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -7376,33 +7481,6 @@
     "created_at": "2026-11-15T03:17:40.632Z"
   },
   {
-    "id": "art-1794711763649-5p0in",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/right_auk4712/n/n80ab4774d049",
-    "published_at": "2026-11-15T02:57:04.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336295395/rectangle_large_type_2_4235172762f1d0517b7747af73a14b87.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "SierraとMetaが提唱する「Poppy 1.0」、AIエージェントがShopify店舗で買い物するための標準プロトコルを公開",
-    "summary_ja": "SierraとMetaが発表した「Personal Agent Protocol（Poppy）1.0」は、AIエージェントがECサイトをシームレスに操作し決済まで完結させるための共通規格だ。 Shopifyの全店舗が自動対応し、MetaのAI「Muse」もPoppy準拠サイトを優先的に認識する。 個人開発者にとって、自作プロダクトが将来のAIエージェント経済から取り残されないためには、こうした共通プロトコルへの早期の理解と対応が必須となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "SierraとMetaが提唱する「Poppy 1.0」、AIエージェントがShopify店舗で買い物するための標準プロトコルを公開",
-        "summary": "SierraとMetaが発表した「Personal Agent Protocol（Poppy）1.0」は、AIエージェントがECサイトをシームレスに操作し決済まで完結させるための共通規格だ。 Shopifyの全店舗が自動対応し、MetaのAI「Muse」もPoppy準拠サイトを優先的に認識する。 個人開発者にとって、自作プロダクトが将来のAIエージェント経済から取り残されないためには、こうした共通プロトコルへの早期の理解と対応が必須となるだろう。"
-      },
-      "en": {
-        "title": "Sierra and Meta introduce 'Poppy 1.0', a universal protocol allowing AI agents to navigate and shop at Shopify stores",
-        "summary": "Sierra and Meta have launched the Personal Agent Protocol (Poppy) 1.0, a unified standard designed to enable AI agents to autonomously navigate and complete transactions on e-commerce platforms. With all Shopify stores automatically gaining compatibility, Meta’s 'Muse' AI will now actively prioritize Poppy-compliant sites during its browsing workflows. This development signals a critical shift where AI agents move beyond simple research into transactional execution. For individual builders, the practical takeaway is that integrating with such emerging standards is no longer optional if you want your store or app to be accessible to the rapidly growing ecosystem of AI purchasing agents. Ignoring these protocols risks isolating your product from the next generation of autonomous web commerce."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "アップデート"
-    ],
-    "created_at": "2026-11-15T03:02:43.649Z"
-  },
-  {
     "id": "art-1794711756491-nd8kl",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -8350,32 +8428,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-14T23:17:14.474Z"
-  },
-  {
-    "id": "art-1794698211120-h87l2",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00362-4",
-    "published_at": "2026-11-14T23:12:20.000Z",
-    "og_image_url": null,
-    "title_ja": "宇宙空間を活用した次世代AIインフラ設計――超高スケーラブルな演算環境とエネルギー供給の未来像",
-    "summary_ja": "本論文は、地上の電力・冷却制約を超越するため、宇宙空間にAIデータセンターを構築する理論的な設計案を提示している。 軌道上での太陽光エネルギーの直接利用と、真空環境による効率的な熱排気を用いることで、地上数千倍規模の計算リソースの拡張を目指す。 将来的な超巨大AIモデルのトレーニングや推論環境を考える際、従来のデータセンターの物理的・エネルギー的限界を突破する一つの有望な視点として、宇宙インフラの可能性を論じている。",
-    "translations": {
-      "ja": {
-        "title": "宇宙空間を活用した次世代AIインフラ設計――超高スケーラブルな演算環境とエネルギー供給の未来像",
-        "summary": "本論文は、地上の電力・冷却制約を超越するため、宇宙空間にAIデータセンターを構築する理論的な設計案を提示している。 軌道上での太陽光エネルギーの直接利用と、真空環境による効率的な熱排気を用いることで、地上数千倍規模の計算リソースの拡張を目指す。 将来的な超巨大AIモデルのトレーニングや推論環境を考える際、従来のデータセンターの物理的・エネルギー的限界を突破する一つの有望な視点として、宇宙インフラの可能性を論じている。"
-      },
-      "en": {
-        "title": "Researchers propose space-based AI infrastructure to solve energy and cooling limits for hyper-scale models",
-        "summary": "A new research paper proposes moving AI data centers into space to circumvent the severe power and cooling bottlenecks facing current ground-based infrastructure. By utilizing direct solar energy in orbit and the passive thermal exhaust provided by the vacuum of space, the design aims to scale compute resources thousands of times beyond what Earth-bound facilities can support. The paper argues that as model parameters continue to explode, the conventional approach of optimizing data centers locally will hit a hard ceiling, necessitating a shift toward extraterrestrial infrastructure. For builders looking at the long-term roadmap of AI compute, this work provides a compelling look at how overcoming physical and energy limitations might eventually require looking beyond the planet's surface."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-14T23:16:51.120Z"
   },
   {
     "id": "art-1794697319086-e47yb",
@@ -9868,32 +9920,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-14T12:02:08.194Z"
-  },
-  {
-    "id": "art-1794657700953-b4h6o",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Maku-Inc/items/86727bf28c0522a6e8da",
-    "published_at": "2026-11-14T11:53:49.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MDU1Nzc4JTJGNWZkYjM1MjEyZWZmOGZjZjJhNTFlY2FkYTZlZDkyZTM1OTc1ZmYyNyUyRmxhcmdlLnBuZyUzRjE3ODI3NDM1NzI_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTEwYzhmMWYzNDkzMTQxNjQ2ZGMzYTNiMTAyYjQzOTli%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZiNjI1MmQ0NDJhYjM5NzIyYWY1YzlkMmQ3ZmFiYTY1MzRmODc1NWZjJTJGb3JpZ2luYWwuanBnJTNGMTcyMDIzNjg4Nz9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1hMGE5N2IyYjUxMzZhZTU3ZDhiMWYwYzhhZWMwOTFiZQ%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3D0e6d57fefc2c4c466b08eb100031a211?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgyJUIwJUUzJTgzJUE5JUUzJTgzJTk1REIlMjBOZW80aiVFMyU4MSVBOEFJJUUzJTgxJUE3JUU4JUE3JUEzJUUzJTgxJThEJUU2JTk4JThFJUUzJTgxJThCJUUzJTgxJTk5JUVGJUJDJTlBJUU4JUE0JTg3JUU5JTlCJTkxJUUzJTgxJUFBJUU0JUJBJUJBJUU5JTk2JTkzJUU5JTk2JUEyJUU0JUJGJTgyJUUzJTgzJUJCJUU3JTlCJUI4JUU5JTk2JUEyJUUzJTgzJTg3JUUzJTgzJUJDJUUzJTgyJUJGJUUzJTgxJUFFJUU2JUI3JUIxJUU1JUIxJUE0JUU4JUE3JUEzJUU2JTlFJTkwJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZDU5ZWNkNDExYjVlZDc4MTQ3MWMzNGVjMTRjZTdmZGM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBNYWt1LUluYyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWI0MzEzYTM5NDUzZWIwY2JhNTU4MWE3Yjg4MTJmZTY2&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=RG9rdVBybw&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=6737d42124025c30f1bddacbfd472601",
-    "title_ja": "グラフDB「Neo4j」と生成AIで挑む複雑な相関データ解析：人間関係や不正検知を深層から解き明かすための技術構成",
-    "summary_ja": "データは単なる情報の集積ではなく、複雑に絡み合うネットワークです。 本稿では、グラフデータベース「Neo4j」を活用し、表形式では可視化が困難な人間関係や顧客行動、不正取引の相関性をAIで解析する手法を解説します。 グラフ構造でデータを保持することで、複雑なクエリや因果関係の特定が容易になり、LLMとの組み合わせで未知のパターンや異常検知の精度を飛躍的に向上させることができます。",
-    "translations": {
-      "ja": {
-        "title": "グラフDB「Neo4j」と生成AIで挑む複雑な相関データ解析：人間関係や不正検知を深層から解き明かすための技術構成",
-        "summary": "データは単なる情報の集積ではなく、複雑に絡み合うネットワークです。 本稿では、グラフデータベース「Neo4j」を活用し、表形式では可視化が困難な人間関係や顧客行動、不正取引の相関性をAIで解析する手法を解説します。 グラフ構造でデータを保持することで、複雑なクエリや因果関係の特定が容易になり、LLMとの組み合わせで未知のパターンや異常検知の精度を飛躍的に向上させることができます。"
-      },
-      "en": {
-        "title": "Leveraging Neo4j Graph Databases and Generative AI for Deep Analysis of Complex Human Relationships and Correlation Data",
-        "summary": "Data rarely exists in isolation; it functions as a complex, interconnected network. This article explores how to utilize the graph database Neo4j to analyze intricate correlations in human relationships, customer behavior, and fraud detection that standard tabular databases struggle to represent. By storing information in a graph structure, developers can easily execute complex queries to identify causal links, and integrating this with Large Language Models significantly improves anomaly detection accuracy and pattern recognition. For builders creating advanced analytical tools or complex recommendation engines, incorporating graph technology offers a robust competitive advantage. Adopting this approach allows you to move beyond simple data storage to uncovering deep, non-obvious patterns hidden within massive, interrelated datasets."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-14T12:01:40.953Z"
   },
   {
     "id": "art-1794655975630-efxpq",
@@ -13169,32 +13195,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-13T13:32:08.288Z"
-  },
-  {
-    "id": "art-1794571343875-5csno",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/a1221/articles/github-actions-needs-critical-path",
-    "published_at": "2026-11-13T08:49:37.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--yDw_Ngke--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GitHub%2520Actions%25E3%2581%25AEneeds%25E3%2582%2592%25E8%25A7%25A3%25E6%259E%2590%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E6%259C%2580%25E9%2595%25B7%25E3%2581%25AE%25E4%25BE%259D%25E5%25AD%2598%25E3%2581%25AE%25E9%2580%25A3%25E3%2581%25AA%25E3%2582%258A%25E3%2581%25A8%25E5%25BE%25AA%25E7%2592%25B0%25E3%2582%2592%25E8%25A6%258B%25E3%2581%25A4%25E3%2581%2591%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devtoolkits.app%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZkY2RlMmQ0ZDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "GitHub Actionsの依存関係を解析し、クリティカルパスや循環依存を自動検出する手法：ワークフロー最適化の実践",
-    "summary_ja": "GitHub Actionsのワークフローが複雑化すると、ジョブの依存関係（needs）からボトルネックを特定するのは困難になる。 この記事では、YAML内のneedsグラフを解析し、依存の深さ、同時実行可能数、最長の依存連なり（クリティカルパス）、および循環依存や存在しないジョブ参照を自動検出する実装を紹介する。 CI/CDの実行時間短縮を目指すエンジニアにとって、可視化だけでなく構造的なボトルネックを数値で把握するこのアプローチは非常に有効だ。",
-    "translations": {
-      "ja": {
-        "title": "GitHub Actionsの依存関係を解析し、クリティカルパスや循環依存を自動検出する手法：ワークフロー最適化の実践",
-        "summary": "GitHub Actionsのワークフローが複雑化すると、ジョブの依存関係（needs）からボトルネックを特定するのは困難になる。 この記事では、YAML内のneedsグラフを解析し、依存の深さ、同時実行可能数、最長の依存連なり（クリティカルパス）、および循環依存や存在しないジョブ参照を自動検出する実装を紹介する。 CI/CDの実行時間短縮を目指すエンジニアにとって、可視化だけでなく構造的なボトルネックを数値で把握するこのアプローチは非常に有効だ。"
-      },
-      "en": {
-        "title": "Automating GitHub Actions Dependency Analysis: Finding Critical Paths, Bottlenecks, and Circular References in CI/CD Workflows",
-        "summary": "As GitHub Actions workflows scale, manual inspection of YAML dependencies makes it nearly impossible to identify exactly what is throttling build performance. This implementation parses the 'needs' graph to automatically surface deep dependency chains, maximum parallelism, the critical path causing build delays, and structural errors like circular dependencies or invalid job references. Rather than relying on simple diagrams, this programmatic approach allows developers to identify exactly where their build pipeline is losing time. For platform engineers looking to optimize CI/CD speed, moving from visual inspection to graph analysis is the necessary next step to pinpoint inefficiencies in execution stages, ensuring that build times remain tight as the project configuration grows increasingly complex."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-13T12:02:23.876Z"
   },
   {
     "id": "art-1794571328217-qs6bn",
