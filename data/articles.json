@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794856672385-yd68h",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.digitaljournal.com/article/ai-agents-are-becoming-identities-in-their-own-right-and-security-needs-to-catch-up/",
+    "published_at": "2026-11-16T18:55:16.000Z",
+    "og_image_url": "https://www.digitaljournal.com/wp-content/uploads/2026/04/e2c272bbe87510fd7b3adb56b8df266525976092-1.jpg",
+    "title_ja": "AIエージェントが「独立したアイデンティティ」を持つ時代へ――従来のIAMを超えた次世代セキュリティの必須性",
+    "summary_ja": "AIエージェントが自律的にタスクを実行するようになり、単なるプログラムから「独自のアイデンティティ」を持つ存在へと進化している。 この変化に伴い、従来のユーザー認証に基づいたIAMモデルは限界に直面しており、エージェントごとの権限管理や動的なアクセス制御の構築が急務だ。 開発者はエージェントをセキュリティ上の「攻撃対象」ではなく「特権を持つ主体」として再定義し、API利用やデータアクセスにゼロトラスト原則を適用する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントが「独立したアイデンティティ」を持つ時代へ――従来のIAMを超えた次世代セキュリティの必須性",
+        "summary": "AIエージェントが自律的にタスクを実行するようになり、単なるプログラムから「独自のアイデンティティ」を持つ存在へと進化している。 この変化に伴い、従来のユーザー認証に基づいたIAMモデルは限界に直面しており、エージェントごとの権限管理や動的なアクセス制御の構築が急務だ。 開発者はエージェントをセキュリティ上の「攻撃対象」ではなく「特権を持つ主体」として再定義し、API利用やデータアクセスにゼロトラスト原則を適用する必要がある。"
+      },
+      "en": {
+        "title": "AI agents are evolving into autonomous identities, necessitating a complete overhaul of traditional enterprise security frameworks",
+        "summary": "As AI agents shift from passive tools to autonomous entities capable of performing complex tasks, they are increasingly functioning as identities within organizational networks. This shift renders legacy Identity and Access Management (IAM) systems largely insufficient, as they were built for human users, not self-governing code. To secure modern pipelines, organizations must treat agents as privileged subjects with distinct authorization scopes, moving beyond static API keys toward granular, dynamic access control. Developers building or deploying these agents should adopt zero-trust principles immediately. Treating these agents as authenticated, high-risk assets rather than simple scripts is essential to prevent lateral movement and unauthorized privilege escalation across enterprise environments as agent autonomy accelerates."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-16T19:17:52.385Z"
+  },
+  {
+    "id": "art-1794856638393-ddw9o",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/myuchan_muse/n/n7ac25d293212",
+    "published_at": "2026-11-16T19:13:20.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/337031156/rectangle_large_type_2_b88584b695163ebaea7898ed60b6c21a.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIエージェントにブラウザ操作を学習させる際、ログイン・スクショ・通知が最大の障壁に。Webオートメーション開発におけるAIの限界と実装上の教訓を解説",
+    "summary_ja": "AIにブラウザ操作能力を付与する際、ログイン認証、画面描画後のスクショ取得、ブラウザ通知の処理が開発者の頭を悩ませる最大のボトルネックとなる。 人間には自明なUI操作も、AIエージェントにとってはDOMの動的な変化やanti-bot対策により高難易度のタスクに変わるからだ。 ブラウザオートメーションを実装する開発者は、LLMの推論能力向上に注力するだけでなく、安定した要素識別とブラウザの状態管理という泥臭いエンジニアリングを早期に確立する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントにブラウザ操作を学習させる際、ログイン・スクショ・通知が最大の障壁に。Webオートメーション開発におけるAIの限界と実装上の教訓を解説",
+        "summary": "AIにブラウザ操作能力を付与する際、ログイン認証、画面描画後のスクショ取得、ブラウザ通知の処理が開発者の頭を悩ませる最大のボトルネックとなる。 人間には自明なUI操作も、AIエージェントにとってはDOMの動的な変化やanti-bot対策により高難易度のタスクに変わるからだ。 ブラウザオートメーションを実装する開発者は、LLMの推論能力向上に注力するだけでなく、安定した要素識別とブラウザの状態管理という泥臭いエンジニアリングを早期に確立する必要がある。"
+      },
+      "en": {
+        "title": "Giving AI Agents Full Browser Control: Why Logins, Notifications, and Screenshot Rendering Are Creating Major Roadblocks for Autonomous Web Interaction",
+        "summary": "Giving AI agents autonomous browser access sounds powerful, but developers are hitting significant hurdles with logins, rendering screenshots, and managing intrusive push notifications. While LLMs excel at reasoning, the real-world web is littered with dynamic DOM structures, aggressive anti-bot protections, and complex authentication flows that break AI navigation routines. When an agent cannot reliably capture a clean view of the page or handle interrupted states, the entire workflow stalls. For builders developing agentic backends, the lesson is clear: focus on robust DOM state management and reliable session persistence. Success in AI browsing doesn't just require smarter models, but rather a more resilient, low-level integration with the browser's event loop to handle these real-world interface frictions effectively."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-16T19:17:18.393Z"
+  },
+  {
+    "id": "art-1794856620668-utr26",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/sunwood_ai_labs/articles/20261114-nekoneko-05-ben-roof-bridge-knowledge",
+    "published_at": "2026-11-16T15:18:24.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3zKzCurA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2590%258D%25E4%25BD%259C%25E8%2588%25B9%25E3%2580%258CBEN%25E3%2580%258D%25E3%2582%2592%25E3%2583%2599%25E3%2583%25B3%25E3%2583%2581%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25AF%25E5%2588%2586%25E6%259E%2590%25EF%25BC%2581%25E3%2582%25B5%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AC%25E3%2582%25B9%25E3%2581%25A7250%25E5%25B1%25A4%25E5%25AE%258C%25E8%25B5%25B0%25E3%2581%2599%25E3%2582%258B%25E5%25A4%25A9%25E4%25BA%2595%25E3%2583%2596%25E3%2583%25AA%25E3%2583%2583%25E3%2582%25B8%25E3%2581%25AE%25E7%25A7%2598%25E5%25AF%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Maki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDdpSmVyNldLVlpKLUd4N054QWVuSFVtYXQ3MUhhd1NXaU5hRG5FTnZiMXZZdHBIaGs9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "3Dプリンターでサポート材不要の「BEN」完走：250層の天井ブリッジを成功させる断面解析とG-codeの最適化手法",
+    "summary_ja": "3Dプリンターで船のベンチマークモデル「BEN」を印刷する際、操舵室の屋根など空中のオーバーハングは崩れやすい。 しかし、断面解析とG-codeの最適化を行うことで、サポート材を一切使用せずに250層まで完走が可能となる。 本稿では、なぜサポートレスでも天井ブリッジが維持されるのか、断面構造とG-codeの数値を徹底分析。 個人開発者が3Dモデルの設計とプリント精度を極めるための実践的な知見を共有する。",
+    "translations": {
+      "ja": {
+        "title": "3Dプリンターでサポート材不要の「BEN」完走：250層の天井ブリッジを成功させる断面解析とG-codeの最適化手法",
+        "summary": "3Dプリンターで船のベンチマークモデル「BEN」を印刷する際、操舵室の屋根など空中のオーバーハングは崩れやすい。 しかし、断面解析とG-codeの最適化を行うことで、サポート材を一切使用せずに250層まで完走が可能となる。 本稿では、なぜサポートレスでも天井ブリッジが維持されるのか、断面構造とG-codeの数値を徹底分析。 個人開発者が3Dモデルの設計とプリント精度を極めるための実践的な知見を共有する。"
+      },
+      "en": {
+        "title": "3D printing benchmark model 'BEN' without supports: Analyzing 250-layer bridge stability through cross-sections and G-code optimization",
+        "summary": "Printing benchmark boat models like 'BEN' on 3D printers often raises concerns about bridge collapse, particularly when handling cabin roofs or windows without using support materials. By analyzing the model's cross-sections and optimizing the G-code, it is entirely possible to complete the 250-layer print without any supports at all. This article provides a deep dive into the underlying structural mechanics of how these bridges maintain stability in mid-air, backed by concrete analysis of slicing data. For creators pushing the boundaries of additive manufacturing, this breakdown offers actionable insights into designing self-supporting geometry and optimizing print parameters to achieve high-fidelity results without the overhead of manual post-processing or excessive material waste."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-16T19:17:00.668Z"
+  },
+  {
+    "id": "art-1794856611008-v788h",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/maya-bot/items/8fbc9e2fbd26d1423a6d",
+    "published_at": "2026-11-16T17:08:25.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjMzNjM4MjcwMSUzRnYlM0Q0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0yY2Y4YzhhODI5MzA1NmYxYTAyMDFjMDQzZDE1NjQ5OQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D2afe22e69d55a0ee5e36b85314c72e34?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUE1JUFEJUU1JThCJTk5JUUzJTgxJUFFJUU2JTk2JTg3JUU2JTlCJUI4JUUzJTgyJTkyQUklRTMlODElQUIlRTYlODklQjElRTMlODIlOEYlRTMlODElOUIlRTMlODIlOEIlRTUlODklOEQlRTMlODElQUIlRUYlQkMlOUElRTclQTQlQkUlRTUlODYlODVBSSVFMyU4MyU4NCVFMyU4MyVCQyVFMyU4MyVBQiVFMyU4MSVBQiVFNCVCQiU5NSVFOCVCRSVCQyVFMyU4MiU5MyVFMyU4MSVBMCVFNiU4MyU4NSVFNSVBMCVCMSVFNiVCQyU4RiVFMyU4MSU4OCVFMyU4MSU4NCVFNSVBRiVCRSVFNyVBRCU5NjclRTMlODElQTQmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03YmQ5OGE1NGNkOTJiODMyMzhiYTFkNTM1NDlkOTU3NA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYXlhLWJvdCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTVkNzlmNDczM2I0MjI2NDIzNjU4ODA4ZDU2MGNhOTVk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=5b1f7bffd2b91b78cd16947db96b04a2",
+    "title_ja": "社内文書をAIに読ませる前に知るべき、機密情報漏えいを防ぐための7つの具体的な安全対策",
+    "summary_ja": "社内エージェントの導入が進むとExcelや設計書をAIに読み込ませる機会が増えるが、注意書きだけで防げる情報漏えい対策には限界がある。 本記事では、単純な運用ルールに頼らず、システム構成やプロンプト設計、権限管理など、技術的・運用的に実装可能な7つの防衛策を解説する。 忙しい業務環境下でも人為的ミスを防ぎ、安全に生成AIを活用するための具体的なリスク低減手法を提案する。",
+    "translations": {
+      "ja": {
+        "title": "社内文書をAIに読ませる前に知るべき、機密情報漏えいを防ぐための7つの具体的な安全対策",
+        "summary": "社内エージェントの導入が進むとExcelや設計書をAIに読み込ませる機会が増えるが、注意書きだけで防げる情報漏えい対策には限界がある。 本記事では、単純な運用ルールに頼らず、システム構成やプロンプト設計、権限管理など、技術的・運用的に実装可能な7つの防衛策を解説する。 忙しい業務環境下でも人為的ミスを防ぎ、安全に生成AIを活用するための具体的なリスク低減手法を提案する。"
+      },
+      "en": {
+        "title": "Beyond simple warnings: 7 robust security strategies to prevent data leakage when feeding internal documents to AI agents",
+        "summary": "As AI agents become deeply integrated into office workflows, employees frequently upload Excel sheets and architectural designs, making simple \"do not share\" policies dangerously insufficient. This article outlines seven concrete security defenses that move beyond human caution, focusing on technical safeguards such as prompt-injection hardening, strict privilege management, and infrastructure-level data segregation. Instead of relying on user vigilance, these methods create structural barriers that inherently minimize exposure risks. For developers and IT leads deploying enterprise AI, the takeaway is that secure AI isn't about policy; it's about architecting systems that prevent accidental sensitive data processing, ensuring that sensitive documents remain protected even when team members are under tight deadlines or stressed."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-16T19:16:51.008Z"
+  },
+  {
     "id": "art-1794855722644-tv3db",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -10058,32 +10162,6 @@
     "created_at": "2026-11-15T17:17:36.563Z"
   },
   {
-    "id": "art-1794763050502-gzsoc",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/mj_games2030/n/n614e54a2db2f",
-    "published_at": "2026-11-15T16:56:17.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336619580/rectangle_large_type_2_3ec963772aeeb43de1586b59b2bf90fa.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Duetの日本展開は2026年11月時点でも「未定」―米国での招待制運用が続く中、開発者が今できる準備とは？",
-    "summary_ja": "2026年11月16日現在、Anthropic社の「Claude Duet」の日本国内における提供開始日は未定です。 現在、米国居住の個人プランユーザーに対してのみ順番待ちリスト経由で順次招待が送られている段階です。 日本での正式リリースが待たれる中、開発者は現行モデルでのプロンプトエンジニアリングを磨きつつ、マルチモーダル操作への対応を見据えたワークフローの設計を先行して進めるべきでしょう。",
-    "translations": {
-      "ja": {
-        "title": "Claude Duetの日本展開は2026年11月時点でも「未定」―米国での招待制運用が続く中、開発者が今できる準備とは？",
-        "summary": "2026年11月16日現在、Anthropic社の「Claude Duet」の日本国内における提供開始日は未定です。 現在、米国居住の個人プランユーザーに対してのみ順番待ちリスト経由で順次招待が送られている段階です。 日本での正式リリースが待たれる中、開発者は現行モデルでのプロンプトエンジニアリングを磨きつつ、マルチモーダル操作への対応を見据えたワークフローの設計を先行して進めるべきでしょう。"
-      },
-      "en": {
-        "title": "Claude Duet Japanese Availability Remains Undetermined as of November 2026: Preparing Your Workflow While Awaiting Official Expansion",
-        "summary": "As of November 16, 2026, there is still no official release date for Claude Duet within Japan. Anthropic has limited the rollout to individual plan subscribers in the United States, where access is currently granted strictly via a waitlist system. Because geographic availability remains restricted, Japanese developers and builders should not sit idle. Instead of waiting for access, focus on optimizing your existing agentic workflows and prompt engineering strategies today. Mastering the underlying logic and multi-modal handling patterns now will ensure you are ready to pivot immediately once the features hit the Japanese market. Do not treat the wait as downtime; treat it as an opportunity to refine your architecture before the new capabilities become available."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-15T17:17:30.502Z"
-  },
-  {
     "id": "art-1794763019781-io07t",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10472,33 +10550,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-15T15:48:35.234Z"
-  },
-  {
-    "id": "art-1794757650541-i6g7l",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.youtube.com/watch?v=9WjPdgOK-68",
-    "published_at": "2026-11-15T15:38:23.000Z",
-    "og_image_url": null,
-    "title_ja": "Kotlinの黄金時代は終わったのか？Jake Whartonが語る2026年のGoogle依存とAI時代の言語エコシステムへの影響",
-    "summary_ja": "Android開発の第一人者であるJake Whartonが、Googleのリストラや方針転換、そしてAIの台頭がKotlinエコシステムに与える影響を分析。 長年Androidアプリ開発の要であり続けたKotlinが、現在の市場の激動の中でどのように立ち回るべきか、コミュニティが直面する現実的なリスクと今後の展望を掘り下げる。",
-    "translations": {
-      "ja": {
-        "title": "Kotlinの黄金時代は終わったのか？Jake Whartonが語る2026年のGoogle依存とAI時代の言語エコシステムへの影響",
-        "summary": "Android開発の第一人者であるJake Whartonが、Googleのリストラや方針転換、そしてAIの台頭がKotlinエコシステムに与える影響を分析。 長年Androidアプリ開発の要であり続けたKotlinが、現在の市場の激動の中でどのように立ち回るべきか、コミュニティが直面する現実的なリスクと今後の展望を掘り下げる。"
-      },
-      "en": {
-        "title": "Is the golden age of Kotlin over? Jake Wharton analyzes Google layoffs, AI shifts, and the 2026 ecosystem outlook",
-        "summary": "Android development expert Jake Wharton dives into the future of Kotlin, specifically examining how Google’s restructuring, shifting priorities, and the sudden rise of AI tools are impacting the language's long-term viability. Wharton confronts the uncomfortable reality of whether the 'golden age' of Kotlin has passed, weighing the risks of excessive platform reliance against the rapid automation of coding tasks. For engineers, the takeaway is clear: simply betting on a dominant enterprise language is no longer a guaranteed safety net. Builders must look beyond legacy platform support and prepare for a future where technical agility and the ability to adapt to AI-driven workflows matter far more than strictly adhering to traditional platform-specific stacks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-15T15:47:30.541Z"
   },
   {
     "id": "art-1794757619362-p1ur3",
@@ -12024,32 +12075,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-15T09:01:49.051Z"
-  },
-  {
-    "id": "art-1794732418230-apfqd",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/SEQUEL/items/fa13c54d2b9cee3e52e5",
-    "published_at": "2026-11-15T08:45:56.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzI2MDIxJTJGcHJvZmlsZS1pbWFnZXMlMkYxNTU4NTg5NjE0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1mYzMwNTAxZjE5YmE0MGI4MjdhYzM0Y2JjYmUxY2YyMQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dad046dfba3864a57ad496d65fe517192?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU4JUI1JUIwJUUzJTgyJThBJUU1JUIxJThCJUUzJTgxJUFFJUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgyJTkyJUU3JTlCJUFFJUU2JThDJTg3JUUzJTgxJTk3JUUzJTgxJUE2JUUzJTgwJTgyJUUzJTgyJUIwJUUzJTgzJUE5JUUzJTgzJUIzJUUzJTgzJTg0JUUzJTgzJUJDJUUzJTgzJUFBJUUzJTgyJUI5JUUzJTgzJUEyNyVFMyU4MSVBNyVFMyU4MSVBRSVFOCVCNSVCMCVFMyU4MiU4QSVFNiU5NiVCOSVFMyU4MiU5MkZhYmxlJUU1JTg1JTg4JUU3JTk0JTlGJUUzJTgxJThCJUUzJTgyJTg5JUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTgxJUUzJTgzJUIzJUUzJTgyJUIwJUUzJTgyJTkyJUU1JThGJTk3JUUzJTgxJTkxJUUzJTgyJThCJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MGI4MTNjYjU4YjM2ZWM4NDQyMWU0YzhlZTE4NjY5NDA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBTRVFVRUwmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1jOWI4NjMyNDNiY2EzYThmNDAwYmE2Y2I4ZmI5ODIyZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=27ca1e9cc2dec579e4ea1e025770dfe6",
-    "title_ja": "グランツーリスモ7のスキル向上にLLMを活用、個人開発の「Fable先生」によるドライビングコーチングでプロレーサーへの道を切り拓く",
-    "summary_ja": "eスポーツの改善プロセスを自動化するため、LLMを活用してグランツーリスモ7の走り方をコーチングする環境を構築。 自身の走行データをLLMに解析させ、プロの視点に基づいたフィードバックを生成することで、独学では限界があるスキル習得の壁を打破しようとする試みだ。 AIによる個別指導は、ゲーム攻略だけでなく、多様な専門技能の習得プロセスを効率化する新たな可能性を示している。",
-    "translations": {
-      "ja": {
-        "title": "グランツーリスモ7のスキル向上にLLMを活用、個人開発の「Fable先生」によるドライビングコーチングでプロレーサーへの道を切り拓く",
-        "summary": "eスポーツの改善プロセスを自動化するため、LLMを活用してグランツーリスモ7の走り方をコーチングする環境を構築。 自身の走行データをLLMに解析させ、プロの視点に基づいたフィードバックを生成することで、独学では限界があるスキル習得の壁を打破しようとする試みだ。 AIによる個別指導は、ゲーム攻略だけでなく、多様な専門技能の習得プロセスを効率化する新たな可能性を示している。"
-      },
-      "en": {
-        "title": "Leveraging LLMs for eSports mastery: Building an AI driving coach to analyze Gran Turismo 7 telemetry and accelerate skill acquisition",
-        "summary": "To overcome the plateau inherent in self-taught eSports, the author constructed an AI-driven coaching environment for Gran Turismo 7 using LLMs. By feeding telemetry data into a custom agent dubbed 'Fable,' the system generates tactical feedback similar to a professional race instructor. This approach attempts to replace manual, trial-and-error skill building with structured, data-informed analysis. The experiment demonstrates that LLMs can function as highly effective specialized tutors, extending beyond code or text generation into complex physical simulation tasks. For developers, this underscores the immense potential for building vertical AI tools that provide personalized feedback loops in skill-based domains, effectively scaling expert-level mentorship to individual hobbyists through intelligent data interpretation and prompt engineering."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-15T08:46:58.230Z"
   },
   {
     "id": "art-1794732408731-bvu7c",
@@ -14177,32 +14202,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-14T10:32:03.692Z"
-  },
-  {
-    "id": "art-1794650601094-0j4py",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/caspworks/articles/60da8ca16f51d3",
-    "published_at": "2026-11-14T06:30:52.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Damx9OiO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%259B%25BD%25E5%258B%25A2%25E8%25AA%25BF%25E6%259F%25BB%25E3%2581%25AE%25E5%25B0%25B1%25E6%25A5%25AD%25E8%2580%2585%25E6%2595%25B0%25E3%2582%2592%25E8%2581%25B7%25E6%25A5%25AD%25E3%2582%25AC%25E3%2583%2581%25E3%2583%25A3%25E3%2581%25AE%25E6%258E%2592%25E5%2587%25BA%25E7%258E%2587%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%25E2%2580%2595%25E2%2580%25954%252C509%25E8%2581%25B7%25E5%2590%258D%25E3%2581%25AE%25E7%25A2%25BA%25E7%258E%2587%25E3%2581%25A8%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2597%25E7%25A9%25B4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:caspworks%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRmYjcyOWYzYmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ブラウザゲーム「シゴパカ」開発記：10か国の国勢調査データを職業抽選の重みに変換するデータ正規化と実装の技術的アプローチ",
-    "summary_ja": "ブラウザゲーム「シゴパカ」において、10か国の国勢調査（職業統計）を職業選択の重みに利用する実装を解説。 統計表をそのまま使わず、就業者数が公表されている「分類」とUI表示用の「職名」を二層に分けるデータ構造を採用した。 日本に加え米国やドイツなど各国の統計粒度の不一致をどう割り切ってデータ化したかという、統計正規化のプロセスが重要だ。 厳密さよりもゲーム性を優先し、運用コストを抑えるための割り切り方は、個人開発におけるデータ設計の優れた知見となっている。",
-    "translations": {
-      "ja": {
-        "title": "ブラウザゲーム「シゴパカ」開発記：10か国の国勢調査データを職業抽選の重みに変換するデータ正規化と実装の技術的アプローチ",
-        "summary": "ブラウザゲーム「シゴパカ」において、10か国の国勢調査（職業統計）を職業選択の重みに利用する実装を解説。 統計表をそのまま使わず、就業者数が公表されている「分類」とUI表示用の「職名」を二層に分けるデータ構造を採用した。 日本に加え米国やドイツなど各国の統計粒度の不一致をどう割り切ってデータ化したかという、統計正規化のプロセスが重要だ。 厳密さよりもゲーム性を優先し、運用コストを抑えるための割り切り方は、個人開発におけるデータ設計の優れた知見となっている。"
-      },
-      "en": {
-        "title": "Normalizing Census Occupation Data Across 10 Countries to Weight Job Probabilities in a Browser Game",
-        "summary": "This write-up details how the developer of the browser game \"Shigopaka\" implemented a job-assignment system using official census occupation statistics from ten different countries. Instead of mapping raw stats directly, the implementation uses a two-tier data structure: a rigid classification layer based on publicly available headcount data, and a separate UI layer for friendly display names. The article chronicles the pragmatic trade-offs required to normalize disparate data grains across nations like Japan, the US, and Germany. For independent builders, the key lesson is not chasing perfect statistical purity, but rather designing a flexible data architecture that keeps maintenance costs low while still creating a believable, statistically weighted game mechanic that scales across regional datasets."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-14T10:03:21.094Z"
   },
   {
     "id": "art-1794647804197-accfh",
