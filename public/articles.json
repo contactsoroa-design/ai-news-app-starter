@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794799028545-1qcqi",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/lucky_ai_lab/n/n57143990e681",
+    "published_at": "2026-11-16T03:00:24.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336743087/rectangle_large_type_2_813657527c9fbe40a5f1a69735bac279.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "MiniCPM5-1Bの「指示追従0点」という実測値と、それでも常駐モデルとして採用すべきかの判断基準を徹底分析",
+    "summary_ja": "Lucky AI Labの実測によると、軽量モデルMiniCPM5-1Bは指示追従スコアが0点ながら、特定タスクでは一定の有用性を示す。 個人開発者がローカル環境への常駐を検討する際は、スコアの低さが「評価の不備」か「純粋な能力不足」かを切り分け、自社の要件に対して許容可能かを見極める必要がある。 闇雲な採用を避け、実機検証とベンチマークを組み合わせた意思決定プロセスが、軽量LLM運用には不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "MiniCPM5-1Bの「指示追従0点」という実測値と、それでも常駐モデルとして採用すべきかの判断基準を徹底分析",
+        "summary": "Lucky AI Labの実測によると、軽量モデルMiniCPM5-1Bは指示追従スコアが0点ながら、特定タスクでは一定の有用性を示す。 個人開発者がローカル環境への常駐を検討する際は、スコアの低さが「評価の不備」か「純粋な能力不足」かを切り分け、自社の要件に対して許容可能かを見極める必要がある。 闇雲な採用を避け、実機検証とベンチマークを組み合わせた意思決定プロセスが、軽量LLM運用には不可欠だ。"
+      },
+      "en": {
+        "title": "Analyzing MiniCPM5-1B’s zero-point instruction following score and whether developers should still use it for local resident tasks",
+        "summary": "Recent empirical data from Lucky AI Lab reveals that while the compact MiniCPM5-1B (Q4_K_M) scores zero in instruction following, it maintains specific utility in other benchmarks like jp_writing and summarization. For independent developers, the critical decision lies in distinguishing whether this low score represents a failure of the evaluation method or a genuine architectural incapacity. Before integrating such a model into a resident pipeline, builders must run a localized validation suite to determine if its limitations are truly disqualifying for their specific use case. The practical takeaway is clear: avoid blind adoption based on aggregate scores, and implement a rigorous, custom validation framework to measure if lightweight models provide sufficient net value despite their obvious blind spots."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-16T03:17:08.545Z"
+  },
+  {
+    "id": "art-1794799018449-qegt1",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.moodys.com/web/en/us/insights/data-stories/moodys-2026-cyber-risk-exposure-heat-map-ranks-21-sectors.html",
+    "published_at": "2026-11-16T03:04:42.000Z",
+    "og_image_url": "https://www.moodys.com/web/en/us/insights/images/card-images/data-story/moodys-2026-cyber-risk-exposure-heat-map-ranks-21-sectors.png",
+    "title_ja": "Moody'sが2026年版サイバーリスク・ヒートマップを公開、AI普及で攻撃対象が拡大する21業界の脆弱性を格付け",
+    "summary_ja": "Moody'sが公開した最新のサイバーリスク・ヒートマップでは、生成AIの急速な普及によりAIモデルやデータセットが新たな攻撃ベクトルとなり、全21業界でサイバーリスクが激増していると指摘。 特に金融やテクノロジー分野は高リスクと分類され、従来のセキュリティ対策だけでは不十分な状況だ。 開発者はアプリケーションのアーキテクチャ設計段階からAI特有のセキュリティ脅威を考慮し、サプライチェーン全体でのリスク管理を強化する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Moody'sが2026年版サイバーリスク・ヒートマップを公開、AI普及で攻撃対象が拡大する21業界の脆弱性を格付け",
+        "summary": "Moody'sが公開した最新のサイバーリスク・ヒートマップでは、生成AIの急速な普及によりAIモデルやデータセットが新たな攻撃ベクトルとなり、全21業界でサイバーリスクが激増していると指摘。 特に金融やテクノロジー分野は高リスクと分類され、従来のセキュリティ対策だけでは不十分な状況だ。 開発者はアプリケーションのアーキテクチャ設計段階からAI特有のセキュリティ脅威を考慮し、サプライチェーン全体でのリスク管理を強化する必要がある。"
+      },
+      "en": {
+        "title": "Moody’s 2026 Cyber Risk Heat Map Ranks 21 Sectors as AI Adoption Widens Global Threat Exposure",
+        "summary": "Moody’s latest 2026 cyber risk heat map analyzes 21 industrial sectors, concluding that the rapid integration of generative AI has fundamentally expanded the attack surface by turning models and datasets into primary targets. The report highlights that sectors like finance and technology face heightened exposure, where legacy security frameworks are proving insufficient against these evolving threats. For builders, this data reinforces that security can no longer be treated as a perimeter defense. Instead, teams must integrate adversarial AI testing and rigorous supply chain risk management directly into the development lifecycle. Understanding these industry-specific vulnerabilities is critical for engineers when designing robust architectures that account for both traditional data breaches and new AI-native security exploits."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-16T03:16:58.449Z"
+  },
+  {
+    "id": "art-1794799011239-bbt22",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Soleil-design/items/5d1e7e92fd06fa98ddd9",
+    "published_at": "2026-11-16T03:04:51.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDUzMTg4NiUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc5NDU1ODk4Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OWY4M2JlNmJiOTg1NGNiMDYyZjM2M2ZlMTY2NWMyM2Q%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Da8f3c099316882fcaf15e80db0bf3c82?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQUJXb3JkUHJlc3MlRTMlODElQUUlRTYlOTQlQjklRTQlQkYlQUUlRTMlODIlOTIlRTQlQkIlQkIlRTMlODElOUIlRTMlODIlOEIlRTMlODElQTglRTMlODElOEQlRTMlODAlODElRTMlODElQUElRTMlODElOUMlRTYlOUMlODAlRTUlODglOUQlRTMlODElQUIlRTMlODAlOEMlRTUlQTQlODklRTYlOUIlQjQlRTMlODElOTclRTMlODElQTYlRTMlODElQUYlRTMlODElODQlRTMlODElOTElRTMlODElQUElRTMlODElODQlRTMlODIlODIlRTMlODElQUUlRTMlODAlOEQlRTMlODIlOTIlRTYlQjElQkElRTMlODIlODElRTMlODIlOEIlRTMlODElQUUlRTMlODElOEIlRUYlQkMlOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz00ZmI1MzFjN2Q3OGVkYzJjMjM2YjcyZjI3M2I1YTc2NQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBTb2xlaWwtZGVzaWduJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NDYzMWRiODI4ODQ2MGY2MWJlMjE5ZGVlNWIyYWU3OTA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c31c7abe73408cc5e9d8f173172fde17",
+    "title_ja": "WordPress改修をAIに依頼する際の鉄則：最初に行うべき「変更してはいけないコード」の制約定義とは？",
+    "summary_ja": "既存のWordPressサイトをAIに改修させる際、最も重要な工程は「決して変更してはいけない箇所」を明示的に定義することである。 AIは時に過剰なコード書き換えを行い、既存のテーマ機能やプラグインとの互換性を破壊するため、あらかじめCSSのセレクタやPHPの関数呼び出しなどの「不動のルール」をプロンプトで制約として与える必要がある。 開発者がAIを信頼しすぎず、変更の影響範囲を制御するガードレールを構築することこそが、AIによる開発事故を防ぐための唯一の解決策である。",
+    "translations": {
+      "ja": {
+        "title": "WordPress改修をAIに依頼する際の鉄則：最初に行うべき「変更してはいけないコード」の制約定義とは？",
+        "summary": "既存のWordPressサイトをAIに改修させる際、最も重要な工程は「決して変更してはいけない箇所」を明示的に定義することである。 AIは時に過剰なコード書き換えを行い、既存のテーマ機能やプラグインとの互換性を破壊するため、あらかじめCSSのセレクタやPHPの関数呼び出しなどの「不動のルール」をプロンプトで制約として与える必要がある。 開発者がAIを信頼しすぎず、変更の影響範囲を制御するガードレールを構築することこそが、AIによる開発事故を防ぐための唯一の解決策である。"
+      },
+      "en": {
+        "title": "The Golden Rule for Using AI to Modify WordPress: Why You Must Define 'Do-Not-Change' Constraints First",
+        "summary": "When using AI to refactor existing WordPress sites, the most critical step is explicitly defining which code blocks must remain off-limits. AI assistants often attempt aggressive rewrites that can inadvertently break theme functionality or plugin compatibility, so developers must provide clear constraints—such as protected CSS selectors or critical PHP function calls—within their initial prompts. Rather than blindly trusting generated code, you should treat AI as a junior partner who requires strict guardrails to prevent regression. By establishing these hard boundaries before work begins, builders can effectively control the scope of modifications and avoid the common pitfall of AI-induced site instability, ensuring that site architecture remains robust while accelerating the development process."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-16T03:16:51.239Z"
+  },
+  {
+    "id": "art-1794799002776-hfen6",
+    "source_id": "source-aismiley",
+    "source_name": "AISmiley（AIニュース）",
+    "url": "https://aismiley.co.jp/ai_news/claude-haiku-5-5-anthropic/",
+    "published_at": "2026-11-16T03:04:44.000Z",
+    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/11/claudehaiku55main.png",
+    "title_ja": "Anthropicが高速・軽量モデル「Claude Haiku 5.5」を発表、プロンプト長に応じた段階的料金体系へ移行し開発コストを最適化",
+    "summary_ja": "Anthropicは2026年10月7日、軽量モデルの最新版「Claude Haiku 5.5」を公開した。 従来モデルから料金構造を大幅に刷新し、プロンプトのトークン長に応じて単価が切り替わる新しい設計を採用したことで、開発者はAPI利用時のコスト構造をより細かく最適化できるようになった。 低遅延な推論が求められるアプリケーション構築において、この柔軟な料金モデルは運用コストの抑制に直結する重要なアップデートとなる。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicが高速・軽量モデル「Claude Haiku 5.5」を発表、プロンプト長に応じた段階的料金体系へ移行し開発コストを最適化",
+        "summary": "Anthropicは2026年10月7日、軽量モデルの最新版「Claude Haiku 5.5」を公開した。 従来モデルから料金構造を大幅に刷新し、プロンプトのトークン長に応じて単価が切り替わる新しい設計を採用したことで、開発者はAPI利用時のコスト構造をより細かく最適化できるようになった。 低遅延な推論が求められるアプリケーション構築において、この柔軟な料金モデルは運用コストの抑制に直結する重要なアップデートとなる。"
+      },
+      "en": {
+        "title": "Anthropic Unveils Claude Haiku 5.5 With New Length-Based Pricing Model to Optimize Developer API Costs",
+        "summary": "Anthropic released Claude Haiku 5.5 on October 7, 2026, updating its lightweight model series with a fundamentally different pricing architecture. Unlike the previous generation, this version introduces a tiered pricing mechanism where unit costs shift dynamically based on prompt token length, enabling developers to exercise greater control over API expenses. For teams building real-time, low-latency AI agents or high-frequency applications, this change moves beyond simple per-token billing to offer a more predictable cost structure as input sizes vary. This update is a clear signal that Anthropic is prioritizing cost efficiency for production-grade workloads, allowing builders to better align their operational budgets with the actual complexity of the tasks their AI systems handle day-to-day."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-16T03:16:42.776Z"
+  },
+  {
     "id": "art-1794798189251-aff9l",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8142,33 +8247,6 @@
     "created_at": "2026-11-15T06:02:15.493Z"
   },
   {
-    "id": "art-1794722522234-eq402",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/sandatakeru/n/nbba79599499f",
-    "published_at": "2026-11-15T05:39:00.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336368980/rectangle_large_type_2_d96e5be02dd506716a474cd47b8b7e7c.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "山スキー向け地形検索「スロープサーチ」が積雪深の可視化に対応、斜度・標高と重ね合わせる新機能を公開",
-    "summary_ja": "山スキーヤー向け地形検索サービス「スロープサーチ」がアップデートされ、積雪深の色分け表示に対応した。 従来の斜度や標高データに加え、積雪深を視覚的に重ね合わせることで、より安全なルート選定が可能になる。 個人開発における特定ニッチへの機能追加は、ユーザーの現場での意思決定を直接支援する重要な改善だ。",
-    "translations": {
-      "ja": {
-        "title": "山スキー向け地形検索「スロープサーチ」が積雪深の可視化に対応、斜度・標高と重ね合わせる新機能を公開",
-        "summary": "山スキーヤー向け地形検索サービス「スロープサーチ」がアップデートされ、積雪深の色分け表示に対応した。 従来の斜度や標高データに加え、積雪深を視覚的に重ね合わせることで、より安全なルート選定が可能になる。 個人開発における特定ニッチへの機能追加は、ユーザーの現場での意思決定を直接支援する重要な改善だ。"
-      },
-      "en": {
-        "title": "Slope Search updates backcountry skiing tool with snow depth visualization, adding layer overlays for slope, elevation, and terrain",
-        "summary": "The backcountry skiing terrain discovery platform 'Slope Search' just rolled out a major update that enables snow depth color-coding directly on its interface. By allowing users to layer snow depth data atop existing slope angle and elevation maps, the tool empowers skiers to make more informed decisions when navigating hazardous mountain terrain. This development highlights the effectiveness of iterating on specific niche needs; adding highly relevant environmental data allows solo developers to deliver substantial real-world utility that competitive map services often overlook. For builders, the lesson is clear: deep domain knowledge combined with precise feature implementation can turn a simple map wrapper into an essential safety tool for specialized user communities."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-15T06:02:02.234Z"
-  },
-  {
     "id": "art-1794722513611-ytvxs",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -8245,32 +8323,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-15T05:47:07.070Z"
-  },
-  {
-    "id": "art-1794721618782-xwpia",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/rarsan/n/ncbd219b073ce",
-    "published_at": "2026-11-15T05:45:07.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336346139/rectangle_large_type_2_6b31e86b355377fb9a8b05676ce4917d.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "360度画像への指示出しを劇的に改善する自作ツール開発記――ChatGPTを相棒にWindows用赤入れアプリを構築した事例",
-    "summary_ja": "360度画像では視点移動があるため、特定の箇所の修正指示を伝えるのが困難。 この課題を解決するため、ChatGPTと対話しつつ、Windowsで動作する「360度画像専用の赤入れツール」を自作した。 既存ツールに頼らず「欲しい」という実務上の小さな不満を解決する道具を自ら実装する過程は、個人開発者にとって有益な示唆を与える。 技術的な実装だけでなく、実務効率化の原点は自作にあるという好例だ。",
-    "translations": {
-      "ja": {
-        "title": "360度画像への指示出しを劇的に改善する自作ツール開発記――ChatGPTを相棒にWindows用赤入れアプリを構築した事例",
-        "summary": "360度画像では視点移動があるため、特定の箇所の修正指示を伝えるのが困難。 この課題を解決するため、ChatGPTと対話しつつ、Windowsで動作する「360度画像専用の赤入れツール」を自作した。 既存ツールに頼らず「欲しい」という実務上の小さな不満を解決する道具を自ら実装する過程は、個人開発者にとって有益な示唆を与える。 技術的な実装だけでなく、実務効率化の原点は自作にあるという好例だ。"
-      },
-      "en": {
-        "title": "How I Used ChatGPT to Build a Custom Windows Tool for Annotating 360-Degree Images Efficiently",
-        "summary": "Reviewing 360-degree images often leads to communication friction, as explaining specific coordinates or orientations to colleagues using only text is imprecise and frustrating. To solve this, the author bypassed the search for expensive or insufficient third-party software and instead used ChatGPT to build a custom Windows application specifically designed for redlining 360-degree views. This project demonstrates how identifying small, operational \"itch points\" in your daily workflow creates the perfect foundation for custom development. By pairing LLMs with direct problem-solving, builders can rapidly prototype utility tools that solve specific professional bottlenecks. This case study serves as a strong reminder that shipping your own internal tooling—rather than relying on off-the-shelf solutions—remains the most effective way to eliminate operational friction."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-15T05:46:58.782Z"
   },
   {
     "id": "art-1794721607929-1qfs3",
@@ -8961,32 +9013,6 @@
     "created_at": "2026-11-15T03:02:29.452Z"
   },
   {
-    "id": "art-1794710824710-khepc",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/owenpatience2010-cmyk/paperpulse",
-    "published_at": "2026-11-15T02:35:18.000Z",
-    "og_image_url": null,
-    "title_ja": "AI論文の再現性を自動検証する「PaperPulse」、LangGraphベースのマルチエージェントで実験設定と手法を精査",
-    "summary_ja": "GitHubで公開された「PaperPulse」は、LangGraphを利用してAI研究論文の再現性を自動監査するオープンソースのマルチエージェントシステムである。 論文内の実験設定、データセット、アルゴリズムの整合性をAIエージェントが独立して検証し、手法の欠陥や再現不可能な箇所を指摘する仕組みだ。 AIの急速な進化に伴い論文数が増加する中、人間による査読の限界を補完するツールとして、研究開発プロセスにおける信頼性の担保に役立つだろう。",
-    "translations": {
-      "ja": {
-        "title": "AI論文の再現性を自動検証する「PaperPulse」、LangGraphベースのマルチエージェントで実験設定と手法を精査",
-        "summary": "GitHubで公開された「PaperPulse」は、LangGraphを利用してAI研究論文の再現性を自動監査するオープンソースのマルチエージェントシステムである。 論文内の実験設定、データセット、アルゴリズムの整合性をAIエージェントが独立して検証し、手法の欠陥や再現不可能な箇所を指摘する仕組みだ。 AIの急速な進化に伴い論文数が増加する中、人間による査読の限界を補完するツールとして、研究開発プロセスにおける信頼性の担保に役立つだろう。"
-      },
-      "en": {
-        "title": "PaperPulse uses LangGraph multi-agent orchestration to audit AI research papers for reproducibility and method consistency",
-        "summary": "PaperPulse is an open-source tool recently released on GitHub that leverages LangGraph to perform automated reproducibility audits on AI research papers. The system deploys a multi-agent workflow where specialized AI agents independently cross-examine experimental setups, datasets, and algorithmic claims to identify logic gaps or potential reproduction failures. As the flood of AI research makes comprehensive human peer review increasingly difficult, this agentic approach provides a scalable way to flag questionable methodologies before they propagate. For developers and researchers, integrating these automated verification steps into the literature review process is a critical defensive layer, ensuring that implementation efforts are focused only on robust, scientifically sound findings rather than unverified academic claims."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-15T02:47:04.710Z"
-  },
-  {
     "id": "art-1794710808752-c61kq",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -9430,33 +9456,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-15T00:02:11.434Z"
-  },
-  {
-    "id": "art-1794700032471-qgwku",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Sidejob/items/27fe982bf44cb9807aa5",
-    "published_at": "2026-11-14T23:45:03.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmMDQ5MjEyODEwOWJhMDVlNTliMTA5ZDE2MTMzMjNkNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OTkwYjdmNWE0MWU2OTk3ZDY3ZDNiNmI0YjIwZDcxODI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De6ff48aefdddde06dce7529f66f49f1d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMHYyLjEuMzI1JTIwJUUzJTgyJUJCJUUzJTgyJUFEJUUzJTgzJUE1JUUzJTgzJUFBJUUzJTgzJTg2JUUzJTgyJUEzJUU0JUJGJUFFJUU2JUFEJUEzJUUzJTgxJUFFJUU1JTg2JTg1JUU1JUFFJUI5JUVGJUJDJTg4MjAyNiVFNSVCOSVCNCVFRiVCQyU4OSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWY4ODIwOWJmNjIxNjc4MmIzOWU2ZGZjNjQ5OTUxYWMy&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBTaWRlam9iJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MThiMWNjMmFmNjk0Mzk4YTgyOTk5NWFmZmVkMWY2MGQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=0ce03aa93ae8cd27a53fcfd4260f06c0",
-    "title_ja": "Claude Code v2.1.325の緊急セキュリティ修正：MCPプロトコルと認証セッションの脆弱性を解消、チーム利用時の即時アップデートを推奨",
-    "summary_ja": "2026年11月14日にリリースされたClaude Code v2.1.325では、MCP（Model Context Protocol）と認証セッション管理における重大なセキュリティ脆弱性が修正された。 本アップデートでは、悪意あるコード実行を許す可能性があったMCPのパーミッション制御と、セッション固定攻撃に対する耐性が強化されている。 企業や開発チームでClaude Codeを導入している場合、権限昇格を防ぐために即座に最新版へ移行することが強く推奨される。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code v2.1.325の緊急セキュリティ修正：MCPプロトコルと認証セッションの脆弱性を解消、チーム利用時の即時アップデートを推奨",
-        "summary": "2026年11月14日にリリースされたClaude Code v2.1.325では、MCP（Model Context Protocol）と認証セッション管理における重大なセキュリティ脆弱性が修正された。 本アップデートでは、悪意あるコード実行を許す可能性があったMCPのパーミッション制御と、セッション固定攻撃に対する耐性が強化されている。 企業や開発チームでClaude Codeを導入している場合、権限昇格を防ぐために即座に最新版へ移行することが強く推奨される。"
-      },
-      "en": {
-        "title": "Claude Code v2.1.325 Security Update: Addressing Critical Vulnerabilities in MCP Protocols and Authentication Sessions for Enterprise Teams",
-        "summary": "On November 14, 2026, Claude Code version v2.1.325 was released to address critical security vulnerabilities within the Model Context Protocol (MCP) and authentication session management. The patch specifically tightens MCP permission controls, which previously presented risks of unauthorized code execution, and strengthens defenses against session fixation attacks. For engineering teams and enterprise environments integrating Claude Code into their workflows, this update is mandatory to prevent potential privilege escalation. Builders should prioritize immediate deployment of this version across all development environments to secure internal assets against these exploits. Staying current with these specific patch notes is essential, as the nature of AI-agent interactions continues to expand the potential attack surface within local development stacks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-14T23:47:12.471Z"
   },
   {
     "id": "art-1794699114845-vwh50",
