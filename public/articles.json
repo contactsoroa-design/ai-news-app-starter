@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1794805339325-tzofb",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/gensnotes/n/n2c0eeb457e8f",
+    "published_at": "2026-11-16T04:27:53.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336770615/rectangle_large_type_2_dc99c6e23f7f3fdf2860d098acc1cb32.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Transformers.jsでのブラウザAI構造化出力の罠：JSON形式が正しくても分類結果の不整合を防ぐためのバリデーション実装手法",
+    "summary_ja": "Transformers.jsを用いたブラウザ上のAI処理では、出力のJSON形式が正しくても、ラベルと根拠の整合性が取れない「推論ミス」が発生しうる。 例えば、配送遅延のレビューを「画面」と誤分類するような事象だ。 構造化出力はデータ解析の第一歩に過ぎず、アプリとして実用化するには、生成されたJSONの内容が論理的に正しいかを確認するセマンティックなバリデーション層を実装することが、個人のWeb開発におけるAI信頼性向上の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "Transformers.jsでのブラウザAI構造化出力の罠：JSON形式が正しくても分類結果の不整合を防ぐためのバリデーション実装手法",
+        "summary": "Transformers.jsを用いたブラウザ上のAI処理では、出力のJSON形式が正しくても、ラベルと根拠の整合性が取れない「推論ミス」が発生しうる。 例えば、配送遅延のレビューを「画面」と誤分類するような事象だ。 構造化出力はデータ解析の第一歩に過ぎず、アプリとして実用化するには、生成されたJSONの内容が論理的に正しいかを確認するセマンティックなバリデーション層を実装することが、個人のWeb開発におけるAI信頼性向上の鍵となる。"
+      },
+      "en": {
+        "title": "Why Structured JSON Output in Transformers.js Isn't Enough: Solving Semantic Misclassification in Client-Side Browser AI Models",
+        "summary": "Using Transformers.js for client-side structured output allows apps to parse AI responses easily, but valid JSON syntax does not guarantee semantic accuracy. Even if the AI follows the schema perfectly, it can mistakenly tag a shipping complaint as a screen quality issue, creating a disconnect between the label and the provided reasoning. Simply enforcing a schema is insufficient for building reliable production tools. Developers must implement a semantic validation layer that cross-references the AI's predicted labels with its supporting rationale to detect these subtle logic errors. For personal projects, building this extra verification check is the critical step to ensure that AI-driven insights actually align with user intent, preventing data pollution in your downstream analytics."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-16T05:02:19.325Z"
+  },
+  {
+    "id": "art-1794805329787-maylk",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/shubhamjoshipromail-svg/software-world-model",
+    "published_at": "2026-11-16T04:49:45.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェントの作業結果をデータベース全体で差分検知する新ベンチマーク「Software World Model」公開",
+    "summary_ja": "AIエージェントがタスクを実行した際、システム全体でどのような変更が発生したかをデータベースの差分から正確に評価する新ベンチマーク「Software World Model」が登場した。 従来の単一ファイルや限定的な検証とは異なり、DBの状態変化を追跡することで、エージェントの実務遂行能力をより現実的に測定できる。 開発者はこれを活用し、自身のAIエージェントが複雑なシステムに対して破壊的な変更を加えていないかを確認可能になる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの作業結果をデータベース全体で差分検知する新ベンチマーク「Software World Model」公開",
+        "summary": "AIエージェントがタスクを実行した際、システム全体でどのような変更が発生したかをデータベースの差分から正確に評価する新ベンチマーク「Software World Model」が登場した。 従来の単一ファイルや限定的な検証とは異なり、DBの状態変化を追跡することで、エージェントの実務遂行能力をより現実的に測定できる。 開発者はこれを活用し、自身のAIエージェントが複雑なシステムに対して破壊的な変更を加えていないかを確認可能になる。"
+      },
+      "en": {
+        "title": "Software World Model: A new benchmark tracking database diffs to validate AI agent task execution accuracy",
+        "summary": "Software World Model is a new benchmarking framework designed to evaluate AI agents by diffing entire database states after a task is executed. Unlike conventional benchmarks that often rely on unit tests or isolated file changes, this approach captures the complete operational footprint of an agent within a persistent system. By tracking post-task state mutations, developers gain a clearer, more realistic view of an agent's ability to manipulate complex data structures without triggering unintended regressions or integrity errors. For builders training autonomous coding or data agents, this provides a vital mechanism for stress-testing how agents navigate real-world database environments where logical consistency is just as important as the generated code itself."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-16T05:02:09.787Z"
+  },
+  {
+    "id": "art-1794805321703-xfzbh",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.17338",
+    "published_at": "2026-11-16T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "LLMエージェントの記憶削除戦略に警鐘：重要情報を誤廃棄する「メモリーフィルタリング」が推論精度を最大18%低下させる課題",
+    "summary_ja": "LLMエージェントの記憶システムにおいて、古い情報を削除する「ハードフィルタリング」が推論精度を大きく損なうリスクが判明した。 研究では、重要事実を誤って削除した場合の精度低下が、不要情報を保持した場合よりも深刻であることが示されている。 エージェント開発者は、安易な削除処理を避け、誤判定を許容する柔軟なゲート設計や、状況に応じた再評価ロジックを実装することで、推論の信頼性を担保する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "LLMエージェントの記憶削除戦略に警鐘：重要情報を誤廃棄する「メモリーフィルタリング」が推論精度を最大18%低下させる課題",
+        "summary": "LLMエージェントの記憶システムにおいて、古い情報を削除する「ハードフィルタリング」が推論精度を大きく損なうリスクが判明した。 研究では、重要事実を誤って削除した場合の精度低下が、不要情報を保持した場合よりも深刻であることが示されている。 エージェント開発者は、安易な削除処理を避け、誤判定を許容する柔軟なゲート設計や、状況に応じた再評価ロジックを実装することで、推論の信頼性を担保する必要がある。"
+      },
+      "en": {
+        "title": "Why LLM agent memory systems fail: How aggressive filtering and resolver errors drop query-critical context and tank downstream performance",
+        "summary": "New research highlights a critical failure mode in LLM agent memory systems where aggressive 'hard-filtering'—deleting stale facts—actively damages downstream accuracy by dropping query-critical information due to resolver errors. The study demonstrates that false-negative drops (discarding useful context) cause significantly more degradation than false-positive retention. Testing across multiple models shows that performance drops from modest gains of +0.230 down to losses of -0.181 as memory reliability decreases. The findings suggest that developers should shift away from rigid deletion strategies toward deployment-matched gating mechanisms. For builders, this implies that memory management shouldn't just focus on capacity optimization; creating robust, error-tolerant retrieval logic is essential to prevent critical facts from being permanently lost during routine maintenance cycles."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-16T05:02:01.703Z"
+  },
+  {
     "id": "art-1794804456999-onbgj",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -8168,32 +8246,6 @@
     "created_at": "2026-11-15T07:47:01.602Z"
   },
   {
-    "id": "art-1794728791628-pits2",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kibamaru_ats996/n/nf239a98a797f",
-    "published_at": "2026-11-15T07:45:56.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336404476/rectangle_large_type_2_98ad1903fba42fe97cc2085a2eddd2ad.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発アプリ「Voice Move」の意外な効果、開発者自らが語る音声コーチによる運動の習慣化と驚きの実体験",
-    "summary_ja": "運動アプリ「Voice Move」を開発中の著者が、自身のアプリを毎日使う中で得た驚きの効果について解説。 本作は声のコーチが走る時や筋トレ、朝の起床時にリアルタイムで話しかけてくれる仕組みだが、開発者本人も気づかぬうちに、この「声の伴走」によって自分自身がストレッチの習慣を身につけていたという。 単なる機能開発の視点だけでなく、ユーザー体験として「音声によるパーソナライズされた励まし」がいかに強力な行動変容を促すか、開発者ならではの実感を綴っている。",
-    "translations": {
-      "ja": {
-        "title": "個人開発アプリ「Voice Move」の意外な効果、開発者自らが語る音声コーチによる運動の習慣化と驚きの実体験",
-        "summary": "運動アプリ「Voice Move」を開発中の著者が、自身のアプリを毎日使う中で得た驚きの効果について解説。 本作は声のコーチが走る時や筋トレ、朝の起床時にリアルタイムで話しかけてくれる仕組みだが、開発者本人も気づかぬうちに、この「声の伴走」によって自分自身がストレッチの習慣を身につけていたという。 単なる機能開発の視点だけでなく、ユーザー体験として「音声によるパーソナライズされた励まし」がいかに強力な行動変容を促すか、開発者ならではの実感を綴っている。"
-      },
-      "en": {
-        "title": "Building Voice Move: A developer shares how their own voice-coached fitness app radically changed their personal workout habits",
-        "summary": "The developer behind Voice Move, an upcoming fitness app featuring real-time audio coaching for running, lifting, and morning routines, reports an unexpected outcome from dogfooding their own product. While building the app for public release next spring, the author discovered that the app’s persistent voice cues fundamentally transformed their own daily habits, specifically regarding consistency in stretching. This piece explores the psychological impact of audio-based, personalized motivation on user retention. For builders, it serves as a powerful reminder that while we often focus on architectural features or technical specs, the true value of an AI-driven interface lies in how it seamlessly integrates coaching into the user's daily reality to drive genuine behavioral change."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-15T07:46:31.628Z"
-  },
-  {
     "id": "art-1794727941256-acddq",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9112,32 +9164,6 @@
       "マーケ・集客・ASO"
     ],
     "created_at": "2026-11-15T04:31:46.298Z"
-  },
-  {
-    "id": "art-1794716293577-ng2xx",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://linux.slashdot.org/story/26/11/14/0827227/linus-torvalds-wonders-if-linuxs-ai-prompted-patch-flood-has-peaked",
-    "published_at": "2026-11-15T03:56:48.000Z",
-    "og_image_url": "https://a.fsdn.com/sd/topics/ai_64.png",
-    "title_ja": "Linuxカーネル開発に押し寄せるAI生成パッチの波、リーナス・トーバルズ氏が「ピークアウトの兆し」に期待",
-    "summary_ja": "Linuxカーネル開発において、AIが生成したと思われる低品質なパッチの投稿が急増していた問題で、リーナス・トーバルズ氏が事態の沈静化に期待を寄せている。 コミュニティによる厳しいレビュー体制がAI生成コードの洪水に対するフィルターとして機能し、無意味な提案が減り始めているという見方だ。 AIツールは開発の効率化に貢献する一方で、不正確なパッチを自動生成する副作用も無視できない。 開発者はAIの出力に盲従せず、コードの妥当性を自ら検証する責任がかつてないほど重要になっている。",
-    "translations": {
-      "ja": {
-        "title": "Linuxカーネル開発に押し寄せるAI生成パッチの波、リーナス・トーバルズ氏が「ピークアウトの兆し」に期待",
-        "summary": "Linuxカーネル開発において、AIが生成したと思われる低品質なパッチの投稿が急増していた問題で、リーナス・トーバルズ氏が事態の沈静化に期待を寄せている。 コミュニティによる厳しいレビュー体制がAI生成コードの洪水に対するフィルターとして機能し、無意味な提案が減り始めているという見方だ。 AIツールは開発の効率化に貢献する一方で、不正確なパッチを自動生成する副作用も無視できない。 開発者はAIの出力に盲従せず、コードの妥当性を自ら検証する責任がかつてないほど重要になっている。"
-      },
-      "en": {
-        "title": "Linus Torvalds observes potential cooling in flood of AI-generated patches hitting the Linux kernel",
-        "summary": "Linus Torvalds has commented on the recent surge of AI-generated patches inundating the Linux kernel development process, suggesting the trend may finally be peaking. The community's rigorous, hands-on review standards have acted as an effective filter against the tide of low-quality or nonsensical code submissions, potentially discouraging automated bot-driven noise. While AI assistance tools offer genuine promise for developer productivity, this influx has highlighted the dangerous side effect of hallucinated, invalid patches flooding maintainers. For the broader engineering community, this serves as a critical warning: automated output is no substitute for deep technical understanding. Builders must prioritize validating AI-generated code rather than blindly accepting it, as the responsibility for system integrity remains entirely with the human developer."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-15T04:18:13.577Z"
   },
   {
     "id": "art-1794716269357-l9e42",
@@ -38486,32 +38512,6 @@
       "研究"
     ],
     "created_at": "2026-11-03T09:53:22.644Z"
-  },
-  {
-    "id": "art-1793697643026-1znsb",
-    "source_id": "source-arxiv",
-    "source_name": "arXiv (cs.AI / cs.CL)",
-    "url": "https://arxiv.org/abs/2611.00169",
-    "published_at": "2026-11-03T05:00:00.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "LLMによるWebデータ収集を自動化する新手法「PatchScout」発表、長期間の探索と情報の採集を最適化",
-    "summary_ja": "「PatchScout」は、特定のテーマに関連する広範で断片的なWeb文書を収集するための新しい手法だ。 従来のLLMエージェントは探索範囲が局所的で短期的なタスクに限定されがちだったが、本手法はこれを長期的な情報採集問題として再定義した。 関連するドキュメントを「セマンティック・パッチ」として扱い、効率的にWebを探索することで、網羅的かつ高精度なデータセット構築を可能にする。",
-    "translations": {
-      "ja": {
-        "title": "LLMによるWebデータ収集を自動化する新手法「PatchScout」発表、長期間の探索と情報の採集を最適化",
-        "summary": "「PatchScout」は、特定のテーマに関連する広範で断片的なWeb文書を収集するための新しい手法だ。 従来のLLMエージェントは探索範囲が局所的で短期的なタスクに限定されがちだったが、本手法はこれを長期的な情報採集問題として再定義した。 関連するドキュメントを「セマンティック・パッチ」として扱い、効率的にWebを探索することで、網羅的かつ高精度なデータセット構築を可能にする。"
-      },
-      "en": {
-        "title": "PatchScout: A new long-horizon LLM framework for automating thematic web data collection across decentralized sources",
-        "summary": "PatchScout tackles the limitations of standard web agents by treating thematic data collection as a long-horizon information foraging problem rather than a simple query-answer task. While existing LLM-driven agents often suffer from myopic exploration and premature stopping when dealing with decentralized, heterogeneous web data, PatchScout navigates these structures by identifying and traversing 'query-induced semantic patches.' This allows the system to assemble comprehensive, semantically relevant document corpora across fragmented regions of the web that standard crawlers miss. For developers building RAG pipelines or advanced research automation tools, this framework offers a robust way to automate large-scale data retrieval, moving beyond simple scrapers into intelligent, goal-oriented agents capable of constructing high-quality datasets autonomously from the messy real-world internet."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-03T09:20:43.026Z"
   },
   {
     "id": "art-1793695605119-nweod",
