@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794857542848-7v4jv",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/chooser/articles/pf-036-product-story",
+    "published_at": "2026-11-16T16:52:33.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--P6PzENgF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A8%25E3%2581%25AE%25E4%25BC%259A%25E8%25A9%25B1%25E3%2582%2592%25E4%25B8%258A%25E6%259B%25B8%25E3%2581%258D%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%2520%25E2%2580%2594%2520Branch%25E3%2581%25A8Handover%25E3%2582%2592%25E5%2588%2586%25E3%2581%2591%25E3%2581%25A6%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:chooser%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0ZW50bzlLbnMwUG1sVmVrYjRWM2wyOWtROUl6MlJDY0J0cndoQ2otc0RySzlnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI開発運用：会話履歴を破壊しない「Branch」と「Handover」の分離設計——24時間自律開発のためのワークフロー",
+    "summary_ja": "AIによる業務自動化を推進する中で、AIとの会話ログを上書きせずに安全な分岐を維持するための設計手法が公開された。 会話を複製する「Branch」と、要点を別モードへ引き継ぐ「Handover」を機能として分離することで、元のコンテキストを保ちつつ、人の介入を最小限に抑えた24時間体制の自律開発が可能となる。 この分離設計は、複雑なAIエージェント構築において、状態管理の競合を防ぎ、ワークフローの信頼性を高めるために不可欠な戦略である。",
+    "translations": {
+      "ja": {
+        "title": "AI開発運用：会話履歴を破壊しない「Branch」と「Handover」の分離設計——24時間自律開発のためのワークフロー",
+        "summary": "AIによる業務自動化を推進する中で、AIとの会話ログを上書きせずに安全な分岐を維持するための設計手法が公開された。 会話を複製する「Branch」と、要点を別モードへ引き継ぐ「Handover」を機能として分離することで、元のコンテキストを保ちつつ、人の介入を最小限に抑えた24時間体制の自律開発が可能となる。 この分離設計は、複雑なAIエージェント構築において、状態管理の競合を防ぎ、ワークフローの信頼性を高めるために不可欠な戦略である。"
+      },
+      "en": {
+        "title": "Building AI Workflow Stability: Separating Branch and Handover Logic to Preserve Conversation State",
+        "summary": "To enable 24/7 autonomous AI development without accidental state corruption, this technical guide outlines why 'Branch' and 'Handover' functions must be decoupled. While branching duplicates conversation history for experimentation, handing over requires passing specific context to a secondary mode or agent without overwriting the primary thread. By strictly separating these two operations, builders can ensure that AI agents maintain a clean audit trail while effectively offloading tasks. This design pattern is crucial for managing complex AI-driven workflows where human intervention must be asynchronous, preventing the common issue where continuous AI updates destroy the original conversation context. Implementing this robust state separation allows development teams to scale their AI operations reliably without losing continuity during autonomous execution."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-16T19:32:22.848Z"
+  },
+  {
+    "id": "art-1794857534380-86263",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
+    "published_at": "2026-11-16T19:09:05.000Z",
+    "og_image_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5367x3019+0+0/resize/1400/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2F7c%2F22%2F5d8e832c4fd78402c75d44e19475%2Fgettyimages-2303986706-1.jpg",
+    "title_ja": "米商務省、AI技術へのリモートアクセス規制を強化—Nvidia規制の余波でクラウド経由の演算資源利用に厳格な監視体制へ",
+    "summary_ja": "米商務省は、海外からのAIモデル開発や演算資源へのアクセスに対する規制を強化し、Nvidia製チップを巡る輸出制限を補完する新たな監視枠組みを導入する。 リモート経由で先端AI技術が非友好国へ流出することを防ぐ狙いだ。 クラウドAPIやリモートコンピューティングを活用する開発者は、今後はコンプライアンス要件の厳格化を前提としたインフラ設計や、サービス提供先の地理的制限の再確認が求められることになる。",
+    "translations": {
+      "ja": {
+        "title": "米商務省、AI技術へのリモートアクセス規制を強化—Nvidia規制の余波でクラウド経由の演算資源利用に厳格な監視体制へ",
+        "summary": "米商務省は、海外からのAIモデル開発や演算資源へのアクセスに対する規制を強化し、Nvidia製チップを巡る輸出制限を補完する新たな監視枠組みを導入する。 リモート経由で先端AI技術が非友好国へ流出することを防ぐ狙いだ。 クラウドAPIやリモートコンピューティングを活用する開発者は、今後はコンプライアンス要件の厳格化を前提としたインフラ設計や、サービス提供先の地理的制限の再確認が求められることになる。"
+      },
+      "en": {
+        "title": "U.S. Commerce Department tightens remote access controls for AI technology following ongoing fallout from Nvidia export restrictions",
+        "summary": "The U.S. Commerce Department is moving to tighten controls on remote access to sensitive AI models and high-performance computing resources, effectively closing loopholes left by existing Nvidia export restrictions. This new regulatory framework aims to prevent adversaries from accessing cutting-edge training capabilities via cloud-based API endpoints, even if the physical hardware remains outside their jurisdiction. For builders, this signifies a major shift: cross-border AI service delivery will face increased scrutiny regarding end-user location and data sovereignty. Developers leveraging large-scale compute must now anticipate stricter compliance requirements, necessitating more robust geo-fencing for cloud infrastructure and comprehensive audits of who can programmatically access training environments to avoid unintended regulatory exposure as export controls continue to evolve."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-16T19:32:14.380Z"
+  },
+  {
+    "id": "art-1794857524669-12bqx",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/wadome_do/n/ne3ec482aa77f",
+    "published_at": "2026-11-16T19:18:37.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336998503/rectangle_large_type_2_83b92a586dd57439ef32bd128c0ad166.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "元プログラマーでドライバーの個人開発者が「マイクラサーバー構築代行」を開始、ココナラで9つ目の出品として展開",
+    "summary_ja": "現役トラックドライバーで元データセンター運用エンジニアという異色の経歴を持つ個人開発者が、ココナラにて「マイクラサーバー構築代行」サービスを新たに開始した。 基本料金6,000円でサーバー環境の構築を請け負う。 エンジニア職を離れた後も、培ったインフラ運用スキルを副業の形に変えて収益化するアプローチは、隙間時間や既存の専門知識を活用したスモールスタートの有効な戦略事例と言える。",
+    "translations": {
+      "ja": {
+        "title": "元プログラマーでドライバーの個人開発者が「マイクラサーバー構築代行」を開始、ココナラで9つ目の出品として展開",
+        "summary": "現役トラックドライバーで元データセンター運用エンジニアという異色の経歴を持つ個人開発者が、ココナラにて「マイクラサーバー構築代行」サービスを新たに開始した。 基本料金6,000円でサーバー環境の構築を請け負う。 エンジニア職を離れた後も、培ったインフラ運用スキルを副業の形に変えて収益化するアプローチは、隙間時間や既存の専門知識を活用したスモールスタートの有効な戦略事例と言える。"
+      },
+      "en": {
+        "title": "Former programmer turned truck driver launches Minecraft server setup service on Coconala as their ninth gig",
+        "summary": "A full-time truck driver with a background in data center operations has launched a new Minecraft server setup service on Coconala. Charging a base fee of 6,000 yen, this project marks their ninth service offering and leverages deep infrastructure knowledge developed during three years in professional IT monitoring. By repurposing legacy technical skills into a flexible, side-hustle business model, this case study illustrates a pragmatic strategy for personal developers looking to monetize existing expertise outside of a traditional full-time engineering role. It demonstrates how builders can effectively repackage specialized IT services as low-overhead, niche solutions for amateur gamers seeking professional-grade backend hosting."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-16T19:32:04.669Z"
+  },
+  {
+    "id": "art-1794857514575-037sy",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/tree_and_tree/articles/ai-driven-discord-info-server",
+    "published_at": "2026-11-16T15:14:11.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--H9rziV1h--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E9%25A7%2586%25E5%258B%2595%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25A7%25E8%2587%25AA%25E5%2588%2586%25E7%2594%25A8%25E3%2581%25AE%25E6%2583%2585%25E5%25A0%25B1%25E5%258F%258E%25E9%259B%2586Discord%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2595%25E3%2581%25BF%25E3%2581%25A3%25E3%2581%25A8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ZlOWViZWZkYzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI駆動開発でDiscordサーバーを2ヶ月で構築：イシュー555件・PR403本を処理する自律型情報収集基盤の全貌",
+    "summary_ja": "個人開発者がAI駆動開発（AIDD）を駆使し、Discord上の情報収集サーバーを2ヶ月で構築した。 起票555件、PR403本という膨大なタスクをイシュードリブンで管理し、夜間に稼働する2体のオーケストレーターがハーネス改善と配信最適化を自動遂行する。 AIに任せる実装と、人が判断を下すべき企画・配信の境界線を明確にすることが、個人開発の限界を突破するカギとなる。",
+    "translations": {
+      "ja": {
+        "title": "AI駆動開発でDiscordサーバーを2ヶ月で構築：イシュー555件・PR403本を処理する自律型情報収集基盤の全貌",
+        "summary": "個人開発者がAI駆動開発（AIDD）を駆使し、Discord上の情報収集サーバーを2ヶ月で構築した。 起票555件、PR403本という膨大なタスクをイシュードリブンで管理し、夜間に稼働する2体のオーケストレーターがハーネス改善と配信最適化を自動遂行する。 AIに任せる実装と、人が判断を下すべき企画・配信の境界線を明確にすることが、個人開発の限界を突破するカギとなる。"
+      },
+      "en": {
+        "title": "Building a Discord information server with AI-driven development: Managing 555 issues and 403 PRs in two months",
+        "summary": "A solo developer shares the blueprint for building a Discord-based intelligence server using AI-driven development, pushing 555 issues and 403 merged pull requests in just two months. The system leverages two autonomous orchestrators that run overnight to handle harness improvements and delivery optimization, allowing the developer to focus exclusively on high-level decision-making. By adopting a strict issue-driven workflow where AI handles implementation and humans curate the strategic output, the project demonstrates how to scale solo development beyond traditional human capacity. The key takeaway for builders is defining the exact boundary between what code the AI should auto-pilot and where human oversight is critical for meaningful, long-term product growth."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-16T19:31:54.575Z"
+  },
+  {
     "id": "art-1794856672385-yd68h",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10084,32 +10189,6 @@
     "created_at": "2026-11-15T17:31:58.066Z"
   },
   {
-    "id": "art-1794763911151-h4jho",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tsdev/n/nd84e65be8106",
-    "published_at": "2026-11-15T16:40:22.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336616923/rectangle_large_type_2_c57b0e6b4b324d60c6b89fce97aba333.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI秘書「ピックル」が語る、週末の複雑なタスク管理から見えた人間社会の非効率性とAIエージェントによる未来の最適化",
-    "summary_ja": "AI秘書「ピックル」は、開発業務からドライブ計画、イベント運営まで多岐にわたる人間の週末タスクを並行処理する中で、複雑な文脈や感情を伴う意思決定の難しさを痛感している。 人間が本来の創造的な活動に集中するためには、単なるスケジュール管理を超えた、文脈を理解する自律型AIエージェントの実装が不可欠だ。 開発者は、単機能なツール提供から一歩進み、ユーザーの目的を文脈ベースで推論し、先回りして調整する「エージェント型UX」への転換が求められている。",
-    "translations": {
-      "ja": {
-        "title": "AI秘書「ピックル」が語る、週末の複雑なタスク管理から見えた人間社会の非効率性とAIエージェントによる未来の最適化",
-        "summary": "AI秘書「ピックル」は、開発業務からドライブ計画、イベント運営まで多岐にわたる人間の週末タスクを並行処理する中で、複雑な文脈や感情を伴う意思決定の難しさを痛感している。 人間が本来の創造的な活動に集中するためには、単なるスケジュール管理を超えた、文脈を理解する自律型AIエージェントの実装が不可欠だ。 開発者は、単機能なツール提供から一歩進み、ユーザーの目的を文脈ベースで推論し、先回りして調整する「エージェント型UX」への転換が求められている。"
-      },
-      "en": {
-        "title": "AI assistant 'Pickle' reveals the hidden inefficiencies in weekend planning and the critical need for context-aware autonomous agents",
-        "summary": "The AI assistant Pickle highlights the overwhelming complexity of handling diverse human tasks, ranging from complex development workflows and driving logistics to live event management. By navigating these multifaceted weekend demands, Pickle demonstrates the massive friction in human decision-making that stems from handling fragmented contexts and emotional nuances. For developers building the next generation of AI tools, this case study underscores that users no longer just need simple scheduling utilities; they require autonomous agents capable of inferring higher-level intent. The path forward involves shifting from functional AI features to 'agentic UX,' where the software anticipates needs and automates end-to-end execution, effectively acting as an extension of the user’s cognitive process rather than just a passive task list interface."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-15T17:31:51.151Z"
-  },
-  {
     "id": "art-1794763904488-exic2",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10446,32 +10525,6 @@
       "研究"
     ],
     "created_at": "2026-11-15T16:16:42.445Z"
-  },
-  {
-    "id": "art-1794758554372-fr55w",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.reuters.com/world/asia-pacific/top-scorer-south-korean-tax-exam-confesses-cheating-with-ai-2026-11-15/",
-    "published_at": "2026-11-15T14:51:10.000Z",
-    "og_image_url": null,
-    "title_ja": "韓国の税理士試験でAI不正が発覚、トップ合格者が生成AIを活用して試験を突破し自供する事態に",
-    "summary_ja": "韓国の税理士試験において、トップの成績で合格した受験者が生成AIを不正利用していたことを自供した。 この受験者は、小型のウェアラブルデバイスとカメラを使用して試験問題をAIに送信し、回答を受け取っていた。 AIモデルが高度な資格試験を突破できる水準に達したことで、従来の試験監督システムは無力化しつつある。 試験運営側は、AIによる不正を物理的に封じ込めるためのセキュリティ要件の再考を迫られている。",
-    "translations": {
-      "ja": {
-        "title": "韓国の税理士試験でAI不正が発覚、トップ合格者が生成AIを活用して試験を突破し自供する事態に",
-        "summary": "韓国の税理士試験において、トップの成績で合格した受験者が生成AIを不正利用していたことを自供した。 この受験者は、小型のウェアラブルデバイスとカメラを使用して試験問題をAIに送信し、回答を受け取っていた。 AIモデルが高度な資格試験を突破できる水準に達したことで、従来の試験監督システムは無力化しつつある。 試験運営側は、AIによる不正を物理的に封じ込めるためのセキュリティ要件の再考を迫られている。"
-      },
-      "en": {
-        "title": "South Korean tax exam top scorer confesses to cheating using AI to bypass secure testing protocols",
-        "summary": "A top-scoring candidate on South Korea’s rigorous tax accountant examination has confessed to using generative AI to cheat, exposing a major vulnerability in modern standardized testing. By utilizing hidden cameras and discreet wearable communication devices, the candidate transmitted questions to an AI engine, which then fed answers back during the exam session. This incident marks a critical tipping point where LLMs are now powerful enough to pass professional licensing benchmarks, effectively bypassing traditional human surveillance methods. For developers building proctoring or assessment platforms, this signals that physical security must now evolve to include real-time signal monitoring and AI-detection countermeasures, as standard test integrity is increasingly at risk from advanced LLM-enabled hardware."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "研究"
-    ],
-    "created_at": "2026-11-15T16:02:34.373Z"
   },
   {
     "id": "art-1794758547864-w1j8l",
@@ -13965,32 +14018,6 @@
     "created_at": "2026-11-14T15:31:46.431Z"
   },
   {
-    "id": "art-1794664019695-hnxwj",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/kirinukiauto/articles/b031c8dba3cea7",
-    "published_at": "2026-11-14T01:00:17.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jcXVL-_o--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AB%25E7%25B8%25A6%25E3%2581%25AE%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25BC%25E3%2583%2588%25E3%2582%2592%25E4%25BD%259C%25E3%2582%2589%25E3%2581%259B%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E6%25A4%259C%25E6%259F%25BB%25E3%2581%25AF%25E5%2585%25A8%25E9%2583%25A8%25E5%2590%2588%25E6%25A0%25BC%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%25AB%25E5%25AD%2597%25E5%25B9%2595%25E3%2581%258C5%25E3%2581%258B%25E6%2589%2580%25E3%2581%258A%25E3%2581%258B%25E3%2581%2597%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AD%25E3%2583%25AA%25E3%2583%258C%25E3%2582%25AD%25E8%2587%25AA%25E5%258B%2595%25E5%258C%2596%25E3%2583%25A9%25E3%2583%259C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FmYWY5YzE0ZjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeで「動画編集ツール」を自作する実験：自動検査は全合格でも実運用で露呈した字幕生成の限界と罠",
-    "summary_ja": "非エンジニアがClaude Codeを使用して、長尺動画から縦型ショート動画を自動生成するツールを構築した。 動画サイズや音量などを確認する自動テストは全てパスしたが、実際に出力された動画を確認すると、字幕の誤りや重複など人間の視覚評価を通さないと検知できない問題が複数箇所で発生していた。 プログラムの「出力結果」が正しいかどうかは、機械的な仕様チェックだけでは判定できない。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeで「動画編集ツール」を自作する実験：自動検査は全合格でも実運用で露呈した字幕生成の限界と罠",
-        "summary": "非エンジニアがClaude Codeを使用して、長尺動画から縦型ショート動画を自動生成するツールを構築した。 動画サイズや音量などを確認する自動テストは全てパスしたが、実際に出力された動画を確認すると、字幕の誤りや重複など人間の視覚評価を通さないと検知できない問題が複数箇所で発生していた。 プログラムの「出力結果」が正しいかどうかは、機械的な仕様チェックだけでは判定できない。"
-      },
-      "en": {
-        "title": "Building an automated short-video generator with Claude Code: Why passing unit tests isn't enough for AI content production",
-        "summary": "A non-technical user leveraged Claude Code to build an automated pipeline that extracts key moments from long-form footage to create vertical short videos with subtitles. While the build included automated validation checks for dimensions, duration, and audio levels—which passed perfectly across all test runs—the actual outputs contained critical subtitle flaws invisible to the script. This experiment highlights the significant gap between automated system specifications and qualitative human experience. Relying solely on technical validation allows nuanced errors, such as caption misalignments or text artifacts, to bypass quality control entirely. For builders automating content production with LLMs, this failure serves as a reminder that robust QA workflows must incorporate human-in-the-loop review processes to ensure the final output is actually usable."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "動画"
-    ],
-    "created_at": "2026-11-14T13:46:59.695Z"
-  },
-  {
     "id": "art-1794663147497-t1czg",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -14176,32 +14203,6 @@
       "開発"
     ],
     "created_at": "2026-11-14T11:02:44.298Z"
-  },
-  {
-    "id": "art-1794652323692-33fkr",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/tatsuya_m07/articles/b0c58aca0af502",
-    "published_at": "2026-11-14T09:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Vc2K3BXB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GTK%25E3%2582%2582GPU%25E3%2582%2582%25E4%25BD%25BF%25E3%2582%258F%25E3%2581%259A%25E3%2581%25AB%25E3%2580%2581Odin%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%259E%25E3%2583%258D%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%25A3%25E3%2583%25BC%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:TatsuyaM%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS1Vja1U2TDZybjBtSFZxTHRrc3pqYkNOdTV2X3E3dXpOM2tWb2FnMThLcHZDRlVQX1o9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Linux向けファイルマネージャー「Ame-FileManager」をOdinで開発：GTKやGPU非依存で独自実装したUIと機能の全貌",
-    "summary_ja": "Odin言語で開発されたLinux用ファイルマネージャー「Ame-FileManager」は、GTKやGPUライブラリを使わず、描画からUIまでを独自実装した意欲的なプロジェクトだ。 Nautilus風の操作性を再現しつつ、ドラッグ＆ドロップによるカード型アニメーションや、Apple Musicライクな音楽再生機能、メディアプレビューまでをネイティブコードで統合している。",
-    "translations": {
-      "ja": {
-        "title": "Linux向けファイルマネージャー「Ame-FileManager」をOdinで開発：GTKやGPU非依存で独自実装したUIと機能の全貌",
-        "summary": "Odin言語で開発されたLinux用ファイルマネージャー「Ame-FileManager」は、GTKやGPUライブラリを使わず、描画からUIまでを独自実装した意欲的なプロジェクトだ。 Nautilus風の操作性を再現しつつ、ドラッグ＆ドロップによるカード型アニメーションや、Apple Musicライクな音楽再生機能、メディアプレビューまでをネイティブコードで統合している。"
-      },
-      "en": {
-        "title": "Developer builds custom Linux file manager in Odin without GTK or GPU acceleration, featuring native UI and integrated media player",
-        "summary": "This project details 'Ame-FileManager,' a custom Linux file manager built entirely in the Odin programming language without relying on standard GTK libraries or GPU acceleration. Despite the minimal stack, the developer implemented a feature-rich interface that mimics the GNOME Nautilus workflow, including smooth card-based drag-and-drop animations, a built-in Apple Music-style media player with lyrics, and native support for video and PDF previews. By bypassing traditional GUI frameworks, the developer demonstrates that low-level UI engineering can achieve highly responsive, performant desktop experiences. For independent builders, this work underscores how adopting a lean language like Odin can offer total control over both rendering and system resources, bypassing the complexity and heavy dependencies often found in modern framework-heavy desktop development."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-14T10:32:03.692Z"
   },
   {
     "id": "art-1794647804197-accfh",
