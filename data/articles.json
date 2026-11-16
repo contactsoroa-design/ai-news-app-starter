@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794812535258-vwmzm",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/linkedge/articles/claude-code-instead-of-reading-code",
+    "published_at": "2026-11-16T05:04:44.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--EYASHMzU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%258C%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E8%25AA%25AD%25E3%2582%2580%25E4%25BB%25A3%25E3%2582%258F%25E3%2582%258A%25E3%2581%25AB%25E3%2582%2584%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Misugi%2520Takeru%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNmZmE4YTI1NWMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEL%2526E%2520Group%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzYwOWMxZjVhYzcuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeでコードを読まずにマージする開発手法の落とし穴と、AI時代の「新たなレビューの代替手段」",
+    "summary_ja": "個人開発でClaude Codeを活用し、コードレビューなしでPRをマージする開発フローを実践する中で、テストが実際には実行されず、形骸化していた問題が発覚した。 コードを直接読まない代わりに、今後は「受け入れ条件の明確化」と「自動生成された確認ログの厳密な精査」という二点にレビューの焦点を移行させるべきだ。 コーディングエージェントに実装を委ねる際、品質担保の責任はAIではなく、AIが生成した成果物とプロセスの検証側に移っているという教訓である。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeでコードを読まずにマージする開発手法の落とし穴と、AI時代の「新たなレビューの代替手段」",
+        "summary": "個人開発でClaude Codeを活用し、コードレビューなしでPRをマージする開発フローを実践する中で、テストが実際には実行されず、形骸化していた問題が発覚した。 コードを直接読まない代わりに、今後は「受け入れ条件の明確化」と「自動生成された確認ログの厳密な精査」という二点にレビューの焦点を移行させるべきだ。 コーディングエージェントに実装を委ねる際、品質担保の責任はAIではなく、AIが生成した成果物とプロセスの検証側に移っているという教訓である。"
+      },
+      "en": {
+        "title": "Navigating the risks of coding agents: Why reading AI-generated code isn't enough for quality assurance",
+        "summary": "While using Claude Code to automate features for a solo project, the author discovered a critical failure: tests were passing instantly because they weren't actually running, masking bugs in merged PRs. Moving away from manual code review means trusting the agent entirely, which can be dangerous. Instead, the author argues that developers must shift focus from reading lines of code to defining crystal-clear acceptance criteria and rigorously verifying the generated execution logs. Relying on AI agents demands a new workflow where the developer serves as the auditor of test processes rather than the reader of syntax. For builders, the takeaway is that when you offload coding to agents, your responsibility shifts entirely toward setting rigorous verification standards."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-16T07:02:15.258Z"
+  },
+  {
+    "id": "art-1794812528818-6vh5r",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/skishore23/trustgraph",
+    "published_at": "2026-11-16T06:44:22.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェント間のデータアクセスを制御するACLエンジン「TrustGraph」が登場。AI実行の可視化とセキュリティを強化",
+    "summary_ja": "「TrustGraph」は、AIエージェントの処理全体でデータアクセスの制御（ACL）を維持するための新しいライブラリです。 AIエージェントが複雑化する中で、データがどこから来てどこへ渡されたかを追跡することが困難ですが、本ツールはエージェント間のデータフローに沿ったポリシー適用を実現します。 AIプロダクトの開発において、権限管理の欠如は深刻なセキュリティリスクです。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント間のデータアクセスを制御するACLエンジン「TrustGraph」が登場。AI実行の可視化とセキュリティを強化",
+        "summary": "「TrustGraph」は、AIエージェントの処理全体でデータアクセスの制御（ACL）を維持するための新しいライブラリです。 AIエージェントが複雑化する中で、データがどこから来てどこへ渡されたかを追跡することが困難ですが、本ツールはエージェント間のデータフローに沿ったポリシー適用を実現します。 AIプロダクトの開発において、権限管理の欠如は深刻なセキュリティリスクです。"
+      },
+      "en": {
+        "title": "TrustGraph introduces ACL engines for AI agents that track and enforce data access policies across complex pipelines",
+        "summary": "TrustGraph is a new library designed to maintain robust Access Control Lists (ACLs) as data flows through interconnected AI agent pipelines. As AI agents grow in complexity, tracking provenance and ensuring granular permission enforcement becomes significantly difficult, often leaving massive security gaps in agentic architectures. This tool solves the problem by attaching policies that follow the data across execution steps, ensuring that every agent receives only the authorization required for its specific context. For developers building autonomous AI products, this represents a crucial shift: moving from static perimeter security to context-aware, pipeline-native permission management. Implementing this early in your stack is the most effective way to prevent accidental data leakage or unauthorized internal tool calls."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-16T07:02:08.818Z"
+  },
+  {
+    "id": "art-1794812522280-vi1k7",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shun_1percent/n/n298128dd26f5",
+    "published_at": "2026-11-16T07:00:25.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336817078/rectangle_large_type_2_8a2bc072089d939fe6213274d9009414.jpg?fit=bounds&quality=85&width=1280",
+    "title_ja": "プログラミング未経験から4か月、AI活用で出張管理アプリ「TripFlow」を開発・リリースした開発体験記",
+    "summary_ja": "プログラミング未経験の個人開発者が、生成AIを駆使して4か月で出張管理アプリ「TripFlow」を開発した事例。 コードの知識ゼロからスタートし、AIとの対話を通じて設計から実装までを完遂したプロセスは、現代の開発環境がいかに参入障壁を下げたかを物語っている。 未経験者にとってAIは単なるコード生成器ではなく、開発の良き相棒として機能しており、アイデアを素早くプロトタイプへ昇華させるための強力な武器となり得ることを実証した好例だ。",
+    "translations": {
+      "ja": {
+        "title": "プログラミング未経験から4か月、AI活用で出張管理アプリ「TripFlow」を開発・リリースした開発体験記",
+        "summary": "プログラミング未経験の個人開発者が、生成AIを駆使して4か月で出張管理アプリ「TripFlow」を開発した事例。 コードの知識ゼロからスタートし、AIとの対話を通じて設計から実装までを完遂したプロセスは、現代の開発環境がいかに参入障壁を下げたかを物語っている。 未経験者にとってAIは単なるコード生成器ではなく、開発の良き相棒として機能しており、アイデアを素早くプロトタイプへ昇華させるための強力な武器となり得ることを実証した好例だ。"
+      },
+      "en": {
+        "title": "Building TripFlow: How a non-coder shipped a business trip management app in four months using AI",
+        "summary": "A solo developer with zero prior programming experience successfully launched 'TripFlow,' a comprehensive business trip management application, after just four months of development driven by generative AI. By treating AI not merely as a code-generation tool but as a collaborative pair-programmer, they bridged the gap between having a concept and deploying a functional product. This project serves as a compelling proof point for the modern development landscape, showing how current AI tools drastically lower the barrier to entry for non-technical founders. For builders, this underscores that the bottleneck is no longer syntax or implementation hurdles, but the ability to structure ideas effectively through an AI-assisted development workflow, allowing for rapid iteration from initial prototype to final release."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-16T07:02:02.280Z"
+  },
+  {
+    "id": "art-1794812505501-v0zcl",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2611/16/2000003225/",
+    "published_at": "2026-11-16T06:17:41.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/16/2000003225/10012207/2048",
+    "title_ja": "Googleの「AIプロフェッショナル認定証」講座、日本リスキリングコンソーシアムが先着1万名へ無料提供を開始",
+    "summary_ja": "日本リスキリングコンソーシアムは、米Googleが提供する高度なAIスキル習得プログラム「Google AI プロフェッショナル認定証」を、先着1万名に無償提供すると発表した。 実務直結型のカリキュラムを通じて生成AIの活用や機械学習モデルの構築スキルを効率的に習得できる。 リスキリングのハードルを下げ、国内のAI人材不足という喫緊の課題に対し、実戦的な技術習得の機会を広く開放する狙いがある。",
+    "translations": {
+      "ja": {
+        "title": "Googleの「AIプロフェッショナル認定証」講座、日本リスキリングコンソーシアムが先着1万名へ無料提供を開始",
+        "summary": "日本リスキリングコンソーシアムは、米Googleが提供する高度なAIスキル習得プログラム「Google AI プロフェッショナル認定証」を、先着1万名に無償提供すると発表した。 実務直結型のカリキュラムを通じて生成AIの活用や機械学習モデルの構築スキルを効率的に習得できる。 リスキリングのハードルを下げ、国内のAI人材不足という喫緊の課題に対し、実戦的な技術習得の機会を広く開放する狙いがある。"
+      },
+      "en": {
+        "title": "Japan Reskilling Consortium offers Google’s 'AI Professional Certificate' course free of charge to first 10,000 applicants",
+        "summary": "The Japan Reskilling Consortium has announced it will provide Google’s specialized 'AI Professional Certificate' program at no cost to the first 10,000 applicants. This curriculum focuses on practical, real-world skills, enabling developers and professionals to master generative AI deployment and the fundamentals of machine learning model construction. By removing the financial barrier to entry, this initiative directly addresses the critical AI talent shortage currently affecting the Japanese tech ecosystem. For builders and engineers, this represents an accessible pathway to gain industry-recognized credentials without the usual enrollment fees. Securing a spot in this program provides a structured, high-quality roadmap for those looking to pivot into AI-driven development or upskill their existing software engineering toolkit."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-16T07:01:45.501Z"
+  },
+  {
     "id": "art-1794811622512-d3b35",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -8128,32 +8233,6 @@
     "created_at": "2026-11-15T10:01:56.283Z"
   },
   {
-    "id": "art-1794736019447-l4i9d",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kathoc/n/nbb032b7ddabb",
-    "published_at": "2026-11-15T09:44:35.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336459013/rectangle_large_type_2_1c83eff4ebaa8de744204e32f49faba3.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ゲームボーイエミュレータの「音の先読み」で入力遅延を0.5ミリ秒単位で解消、操作体験を劇的に改善する仕組みとは",
-    "summary_ja": "ゲームボーイエミュレータにおける入力遅延問題に対し、未出力の音声バッファを動的に書き換えることで処理のズレを解消する手法が注目されている。 わずか0.5ミリ秒の微調整が、フレーム単位の入力遅延を削減し、60分の1秒の操作ラグを回避する決定打となる。 このアプローチは、タイトな操作感が求められるレトロゲームのエミュレーション開発において、ハードウェアの制約を超えたレスポンス向上を実現するための極めて実践的な知見である。",
-    "translations": {
-      "ja": {
-        "title": "ゲームボーイエミュレータの「音の先読み」で入力遅延を0.5ミリ秒単位で解消、操作体験を劇的に改善する仕組みとは",
-        "summary": "ゲームボーイエミュレータにおける入力遅延問題に対し、未出力の音声バッファを動的に書き換えることで処理のズレを解消する手法が注目されている。 わずか0.5ミリ秒の微調整が、フレーム単位の入力遅延を削減し、60分の1秒の操作ラグを回避する決定打となる。 このアプローチは、タイトな操作感が求められるレトロゲームのエミュレーション開発において、ハードウェアの制約を超えたレスポンス向上を実現するための極めて実践的な知見である。"
-      },
-      "en": {
-        "title": "Optimizing Game Boy emulator latency: How dynamic audio buffer rewriting eliminates input lag at the sub-millisecond level",
-        "summary": "Developers building Game Boy emulators are tackling input lag by dynamically overwriting unplayed audio buffers to synchronize processing cycles. While a 0.5-millisecond delay might be imperceptible to the human ear, reducing it is often the deciding factor in preventing cursor movement from slipping by an entire 1/60th of a second frame. This technique demonstrates that precise buffer management is essential for emulators attempting to match the tight, responsive feel of original hardware. For builders working on high-performance retro gaming projects, this highlights why obsessing over micro-latency is not overkill but a necessity, effectively pushing past hardware constraints to ensure that every frame update aligns perfectly with user input, thereby maintaining true input integrity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-15T09:46:59.447Z"
-  },
-  {
     "id": "art-1794736012883-uzzr8",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9200,33 +9279,6 @@
       "開発"
     ],
     "created_at": "2026-11-15T06:18:36.370Z"
-  },
-  {
-    "id": "art-1794723484126-3ujv8",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.ibm.com/docs/en/systems-hardware/zsystems/9175-ME1?topic=introduction-spyre-accelerator",
-    "published_at": "2026-11-15T06:13:17.000Z",
-    "og_image_url": null,
-    "title_ja": "IBM、消費電力75Wで128GBのLPDDR5を搭載したAI推論用アクセラレータカード「Spyre」の詳細を公開",
-    "summary_ja": "IBMが発表したAIアクセラレータ「Spyre」は、最大75Wの低消費電力かつPCIe接続に対応した推論最適化デバイスだ。 最大128GBのLPDDR5メモリを搭載し、高密度なメモリ帯域を必要とするAIモデルのローカル推論を効率化する。 巨大なGPUを導入しにくいエッジ環境や小規模データセンターにおいて、限られた電力バジェット内でモデルを安定稼働させるための現実的な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "IBM、消費電力75Wで128GBのLPDDR5を搭載したAI推論用アクセラレータカード「Spyre」の詳細を公開",
-        "summary": "IBMが発表したAIアクセラレータ「Spyre」は、最大75Wの低消費電力かつPCIe接続に対応した推論最適化デバイスだ。 最大128GBのLPDDR5メモリを搭載し、高密度なメモリ帯域を必要とするAIモデルのローカル推論を効率化する。 巨大なGPUを導入しにくいエッジ環境や小規模データセンターにおいて、限られた電力バジェット内でモデルを安定稼働させるための現実的な選択肢となる。"
-      },
-      "en": {
-        "title": "IBM Unveils Spyre AI Accelerator Card: A Low-Power 75W PCIe Solution Featuring 128GB of LPDDR5 Memory for Efficient Inference",
-        "summary": "IBM has introduced Spyre, a new AI accelerator card designed to handle inference tasks within a strict 75W power envelope via a standard PCIe interface. The hardware stands out by packing up to 128GB of LPDDR5 memory, providing the high-density bandwidth necessary to run complex AI models locally without the thermal constraints or massive electricity costs typical of full-sized GPU deployments. For developers and systems architects working in edge computing or space-constrained data centers, Spyre offers a pragmatic path to deploy sophisticated AI without requiring dedicated server-grade power infrastructure. It serves as a strong reminder that optimizing for inference efficiency at the hardware level is becoming just as critical as model pruning for practical enterprise deployment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金",
-      "研究"
-    ],
-    "created_at": "2026-11-15T06:18:04.126Z"
   },
   {
     "id": "art-1794723401514-80rfs",
@@ -12299,32 +12351,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-14T07:01:48.188Z"
-  },
-  {
-    "id": "art-1794639699193-urosf",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/maura/articles/fb116d2696f49b",
-    "published_at": "2026-11-14T05:08:00.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Mn-7vGJZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Fable%25205.2%2520%25E3%2581%25AE%25E5%2585%25AC%25E5%25BC%258F%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E6%258C%2587%25E5%258D%2597%25E3%2581%25A7%25E6%258C%2587%25E7%25A4%25BA%25E6%259B%25B8%25E3%2582%2592%25E6%25A3%259A%25E5%258D%25B8%25E3%2581%2597%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%25812%25E6%2597%25A5%25E3%2581%25A7%25E9%2580%2586%25E3%2582%2592%25E8%25B5%25B0%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BE%25E3%2581%2586%25E3%2582%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXo4LUwtSVJseEJoa2V3V1oxRXRFODhBenlDTXFZazhCNHNjRC1EN1VJSmZCRllVd1E9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Anthropic「Claude Fable 5.2」公式ガイドで判明した4か月間のプロンプト改善の罠とは？指示書の棚卸しで見えた最適解",
-    "summary_ja": "Anthropicが公開したClaude Fable 5.2向けプロンプト指針に基づき、筆者が4か月間Claude Codeで運用してきた指示書を精査したところ、最新モデルの特性とは逆行する記述が複数発見された。 特に過去モデル向けの過剰な制約や回避策が、最新版の性能を阻害していたことが判明。 AIの自動更新メモリに依存せず、公式が推奨する「モデルごとの設計見直し」を定期的に行うことが、LLM開発における技術的負債を防ぐ重要なプロセスとなる。",
-    "translations": {
-      "ja": {
-        "title": "Anthropic「Claude Fable 5.2」公式ガイドで判明した4か月間のプロンプト改善の罠とは？指示書の棚卸しで見えた最適解",
-        "summary": "Anthropicが公開したClaude Fable 5.2向けプロンプト指針に基づき、筆者が4か月間Claude Codeで運用してきた指示書を精査したところ、最新モデルの特性とは逆行する記述が複数発見された。 特に過去モデル向けの過剰な制約や回避策が、最新版の性能を阻害していたことが判明。 AIの自動更新メモリに依存せず、公式が推奨する「モデルごとの設計見直し」を定期的に行うことが、LLM開発における技術的負債を防ぐ重要なプロセスとなる。"
-      },
-      "en": {
-        "title": "Anthropic’s Claude Fable 5.2 prompt guide reveals 4 months of my AI instruction fine-tuning was actually counterproductive",
-        "summary": "Following the release of Anthropic’s Claude Fable 5.2, the author audited four months of accumulated prompt instructions used in Claude Code, only to discover that legacy guardrails and workarounds were actively hindering the new model's performance. The official documentation emphasizes reviewing prompts tailored for older iterations, a step that proved crucial as the author realized their specific constraints were fighting the newer model’s native capabilities. This experience highlights that relying on AI-generated memory or stale instructions creates hidden technical debt. For developers, the takeaway is clear: treat prompt libraries as code that requires periodic refactoring against updated model benchmarks, rather than assuming past optimizations remain valid for every major model upgrade."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-14T07:01:39.193Z"
   },
   {
     "id": "art-1794638814887-ptpwl",
@@ -29669,33 +29695,6 @@
       "開発"
     ],
     "created_at": "2026-11-08T23:01:47.086Z"
-  },
-  {
-    "id": "art-1794178008172-0zadt",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/business/articles/2611/09/news039.html",
-    "published_at": "2026-11-08T22:00:00.000Z",
-    "og_image_url": "https://image.itmedia.co.jp/business/articles/2611/09/cover_news039.jpg",
-    "title_ja": "スシローと富士通が異業種連携、AIで「海を解剖」し養殖を最適化する海洋テックの実証実験を高知県宿毛湾で開始",
-    "summary_ja": "スシロー、クロシオ水産、富士通などが手を組み、AIを活用して海洋データを分析・可視化し養殖業の生産性を高めるプロジェクトを始動させた。 高知県宿毛湾を舞台に、水温やプランクトン等の環境データをリアルタイム解析することで、持続可能な養殖の最適解を導き出す。 気候変動や労働力不足といった水産業の構造的課題に対し、テクノロジーで「見えない海」を解剖し、安定供給を確立しようとするテック主導の試みである。",
-    "translations": {
-      "ja": {
-        "title": "スシローと富士通が異業種連携、AIで「海を解剖」し養殖を最適化する海洋テックの実証実験を高知県宿毛湾で開始",
-        "summary": "スシロー、クロシオ水産、富士通などが手を組み、AIを活用して海洋データを分析・可視化し養殖業の生産性を高めるプロジェクトを始動させた。 高知県宿毛湾を舞台に、水温やプランクトン等の環境データをリアルタイム解析することで、持続可能な養殖の最適解を導き出す。 気候変動や労働力不足といった水産業の構造的課題に対し、テクノロジーで「見えない海」を解剖し、安定供給を確立しようとするテック主導の試みである。"
-      },
-      "en": {
-        "title": "Sushiro and Fujitsu partner to apply AI-driven 'ocean dissection' for optimizing aquaculture in Kochi's Sukumo Bay",
-        "summary": "Sushiro, Kuroshio Suisan, and Fujitsu have launched a collaborative project applying AI to analyze and visualize complex ocean data to boost aquaculture productivity. Focused on Sukumo Bay in Kochi, the initiative analyzes environmental metrics like water temperature and plankton levels in real time to derive optimal conditions for sustainable fish farming. This cross-industry effort aims to address critical structural challenges in the fishing industry, such as climate change and labor shortages, by using technology to 'dissect' the ocean. For developers and industry builders, this project serves as a prime case study on how real-time sensor data and predictive AI models can stabilize supply chains that were previously governed by intuition and uncontrollable environmental volatility."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-08T22:46:48.172Z"
   },
   {
     "id": "art-1794177985466-ilc22",
