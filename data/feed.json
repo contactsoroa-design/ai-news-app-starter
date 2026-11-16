@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1794871023767-dbjj2",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/rtneg_fuwa/articles/ffmpeg-broken-pipe",
+    "published_at": "2026-11-16T23:02:16.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--eCf3Sw_4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2585%258D%25E4%25BF%25A1%25E3%2581%258C%25E3%2580%258C%25E6%25AD%25A3%25E5%25B8%25B8%25E7%25B5%2582%25E4%25BA%2586%25E3%2580%258D%25E3%2581%25A7%25E6%2597%25A9%25E3%2581%258F%25E7%25B5%2582%25E3%2582%258F%25E3%2582%258B%2520%25E2%2580%2595%2520ffmpeg%25E3%2581%25AEBrokenPipeError%25E3%2582%2592%25E8%25BF%25BD%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fuwa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGVCeS1Ic2tZT21OWjRkN1hQazlSekVWT05VNWtldS16TzlTSXUxbjg1QWZjZlZ3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ffmpegのBrokenPipeErrorで配信が早期終了する謎を解明。終了コード「正常」の罠とPythonパイプ処理の落とし穴",
+    "summary_ja": "Pythonからffmpegへパイプ経由でフレームを送信し、YouTube Liveへ配信するシステムで、配信が異常終了する事象が発生した。 調査の結果、BrokenPipeErrorが通常の終了処理ルートへ誤って合流していたことが判明。 例外発生時でも正常終了コードが返される設計上の不備が原因だった。 開発者は、プロセス間通信において例外が正しくキャッチされず「正常終了」として握りつぶされるケースに注意し、パイプ切断時のエラーハンドリングを明確に実装する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "ffmpegのBrokenPipeErrorで配信が早期終了する謎を解明。終了コード「正常」の罠とPythonパイプ処理の落とし穴",
+        "summary": "Pythonからffmpegへパイプ経由でフレームを送信し、YouTube Liveへ配信するシステムで、配信が異常終了する事象が発生した。 調査の結果、BrokenPipeErrorが通常の終了処理ルートへ誤って合流していたことが判明。 例外発生時でも正常終了コードが返される設計上の不備が原因だった。 開発者は、プロセス間通信において例外が正しくキャッチされず「正常終了」として握りつぶされるケースに注意し、パイプ切断時のエラーハンドリングを明確に実装する必要がある。"
+      },
+      "en": {
+        "title": "Debugging early live-stream termination in ffmpeg: Why Python pipe BrokenPipeErrors were silently reported as normal exits",
+        "summary": "A developer building a Python-based YouTube Live streaming system discovered that their broadcasts were terminating early despite reporting no errors. The root cause was a subtle issue where BrokenPipeError exceptions were silently merging into the standard application shutdown flow, resulting in an exit code of zero. Because the system treated these pipeline breaks as normal termination events, logs showed no obvious failure signals. This incident serves as a critical lesson for developers building media pipelines: ensure that inter-process communication exceptions are explicitly caught and propagated, rather than being swallowed by generic cleanup logic. Always validate your exit codes against actual process state to avoid missing silent failures in complex stream handling architectures."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-16T23:17:03.767Z"
+  },
+  {
+    "id": "art-1794871016641-f8zfb",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.frisson-labs.com/reyn",
+    "published_at": "2026-11-16T23:03:19.000Z",
+    "og_image_url": "https://www.frisson-labs.com/static/frisson/assets/social/articles/v1/reyn.jpg",
+    "title_ja": "格闘ゲーム『大乱闘スマッシュブラザーズDX』でAIエージェントが連携攻撃を披露、マルチエージェントの可能性を実証",
+    "summary_ja": "格闘ゲーム『大乱闘スマッシュブラザーズDX』を舞台に、複数のAIエージェントが連携してコンボ攻撃を繰り出すシステムが公開された。 単なるソロプレイを超え、フレーム単位の連携や状況判断を共有するマルチエージェントアーキテクチャの新たな可能性を示している。 リアルタイム性が極めて高い対戦ゲーム環境において、AIが協調動作を実現する手法は、複雑なタスクを分担する自律型エージェント開発において重要な技術的マイルストーンとなる。",
+    "translations": {
+      "ja": {
+        "title": "格闘ゲーム『大乱闘スマッシュブラザーズDX』でAIエージェントが連携攻撃を披露、マルチエージェントの可能性を実証",
+        "summary": "格闘ゲーム『大乱闘スマッシュブラザーズDX』を舞台に、複数のAIエージェントが連携してコンボ攻撃を繰り出すシステムが公開された。 単なるソロプレイを超え、フレーム単位の連携や状況判断を共有するマルチエージェントアーキテクチャの新たな可能性を示している。 リアルタイム性が極めて高い対戦ゲーム環境において、AIが協調動作を実現する手法は、複雑なタスクを分担する自律型エージェント開発において重要な技術的マイルストーンとなる。"
+      },
+      "en": {
+        "title": "Researchers achieve collaborative AI agent 'wombo combos' in Super Smash Bros. Melee, demonstrating complex multi-agent coordination",
+        "summary": "A new project demonstrates collaborative AI agents executing sophisticated 'wombo combos' within Super Smash Bros. Melee, pushing beyond traditional single-agent training. By implementing an architecture where agents share frame-level coordination and contextual awareness, the researchers prove that AI can handle high-stakes, real-time cooperative strategy. Unlike typical turn-based logic, this environment requires sub-millisecond precision and reactive decision-making in a chaotic, high-speed gaming space. For engineers building autonomous multi-agent systems, this work provides a compelling blueprint for how to decompose complex tasks into shared, synchronized action loops. It serves as a practical, high-velocity case study for anyone exploring how distributed agents can move from independent tasks to fluid, interdependent cooperation in dynamic digital environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-16T23:16:56.641Z"
+  },
+  {
+    "id": "art-1794871008987-mwcef",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/aiFetchly/items/73d412879e76bbc13af9",
+    "published_at": "2026-11-16T23:11:52.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZhMmVhNTdlOWY0NzI3OWRkMGVlZTRiYWIxMTMyYzFjMj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9Y2U5Njg2MzJjNzU0ODk3MzlhYzNhNjU2MWNhNmFhZTA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db7410477b2649b2ea60aed850b25e366?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JUFGJThFJUU2JTlDJTlEOSVFNiU5OSU4MiVFMyU4MSVBQiVFNSVBRSU5QSVFNSU5RSU4QiVFNiVBNSVBRCVFNSU4QiU5OSVFMyU4MiU5MiVFNSU5QiU5RSVFMyU4MSU5OSVFMiU4MCU5NCVFMiU4MCU5NGFpRmV0Y2hseSVFMyU4MSVBRSVFNSVBRSU5QSVFNiU5OSU4MiVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MyU5NSVFMyU4MyVBRCVFMyU4MyVCQyVFMyU4MSVBRSVFOCVBOCVBRCVFOCVBOCU4OCVFMyU4MSVBOCVFNCVCRCVCRiVFMyU4MSU4NCVFNiU5NiVCOSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTE5MWIzMTRlNzVlOGFkOTBlMTYwNmI3MmI2MzA0OGI4&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhaUZldGNobHkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1mNWExMDU2OTJjNzIwODdjZGM2YjliNGQ2OTI5Y2Q2NQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b7fc21cc9afef95dcce62a129951a2f0",
+    "title_ja": "ローカル環境でAIエージェントを自動実行する「aiFetchly」：毎朝9時に定型業務を回す定時ワークフロー設計と実装の仕組み",
+    "summary_ja": "aiFetchlyは調査や書類処理を自動化するオープンソースのデスクトップAIエージェントである。 本記事では、ユーザーが自身のローカル環境で定時ワークフローを設定し、毎朝9時に定型業務を自動実行させる仕組みを技術的に解説する。 AIエージェントを実務に組み込むには、単なるタスク処理だけでなく、時間管理とローカル・ファーストな実行環境の統合が不可欠となる。 開発者は自身のワークフローをコード化し、環境依存のトラブルを避けつつ自動化の恩恵を最大化できる。",
+    "translations": {
+      "ja": {
+        "title": "ローカル環境でAIエージェントを自動実行する「aiFetchly」：毎朝9時に定型業務を回す定時ワークフロー設計と実装の仕組み",
+        "summary": "aiFetchlyは調査や書類処理を自動化するオープンソースのデスクトップAIエージェントである。 本記事では、ユーザーが自身のローカル環境で定時ワークフローを設定し、毎朝9時に定型業務を自動実行させる仕組みを技術的に解説する。 AIエージェントを実務に組み込むには、単なるタスク処理だけでなく、時間管理とローカル・ファーストな実行環境の統合が不可欠となる。 開発者は自身のワークフローをコード化し、環境依存のトラブルを避けつつ自動化の恩恵を最大化できる。"
+      },
+      "en": {
+        "title": "Automating routine tasks with aiFetchly: Designing local-first AI agent workflows to trigger standardized operations at 9 AM daily",
+        "summary": "aiFetchly is an open-source, local-first desktop AI agent designed to handle automated research and document processing tasks. This deep dive explains the technical implementation behind its scheduled workflows, enabling users to trigger automated routines automatically at 9 AM each day within their own local computing environments. Moving AI agents from ad-hoc helpers to reliable operational partners requires more than just task execution; it demands rigorous time management and a local-first architecture to ensure reliability. For builders looking to operationalize AI, the core lesson here is that standardizing execution environments—rather than relying on cloud-based schedulers—eliminates dependencies and allows developers to maintain complete control over their automated workflows, maximizing utility while minimizing runtime friction."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-16T23:16:48.987Z"
+  },
+  {
     "id": "art-1794870136788-ch97m",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -11439,32 +11517,6 @@
     "created_at": "2026-11-15T17:17:36.563Z"
   },
   {
-    "id": "art-1794763019781-io07t",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/gitseed-dev/gitseed",
-    "published_at": "2026-11-15T17:12:48.000Z",
-    "og_image_url": null,
-    "title_ja": "AIコーディングエージェントの制御・管理基盤「GitSeed」が登場。GitHub連携でセルフホスト可能なタスク実行管理を実現",
-    "summary_ja": "GitSeedは、AIコーディングエージェントのタスク実行をGitHubリポジトリ上で直接制御・管理できるオープンソースのセルフホスト型コントロールプレーンだ。 AIが生成したプルリクエストの監視や承認ワークフローを統合し、エージェントの自律的なコード修正を安全に自動化できる。 外部のSaaSプラットフォームに依存せず、自身のインフラでエージェントの動作ログやアクセス権限を完全管理できるため、社内のセキュリティ要件が厳しいプロジェクトでの導入に最適である。",
-    "translations": {
-      "ja": {
-        "title": "AIコーディングエージェントの制御・管理基盤「GitSeed」が登場。GitHub連携でセルフホスト可能なタスク実行管理を実現",
-        "summary": "GitSeedは、AIコーディングエージェントのタスク実行をGitHubリポジトリ上で直接制御・管理できるオープンソースのセルフホスト型コントロールプレーンだ。 AIが生成したプルリクエストの監視や承認ワークフローを統合し、エージェントの自律的なコード修正を安全に自動化できる。 外部のSaaSプラットフォームに依存せず、自身のインフラでエージェントの動作ログやアクセス権限を完全管理できるため、社内のセキュリティ要件が厳しいプロジェクトでの導入に最適である。"
-      },
-      "en": {
-        "title": "GitSeed Launches as a Self-Hosted Control Plane for Managing AI Coding Agents via GitHub Workflows",
-        "summary": "GitSeed emerges as an open-source, self-hosted control plane designed to manage AI coding agents directly within GitHub repositories. By integrating monitoring and approval workflows for AI-generated pull requests, it allows developers to safely automate autonomous code modifications without leaving their existing Git ecosystem. Because it runs on your own infrastructure, GitSeed enables teams to maintain full sovereignty over agent operation logs, task execution history, and access credentials without relying on third-party SaaS platforms. This architecture is particularly valuable for organizations with strict data compliance or security requirements who want to deploy AI agents but cannot risk exposure through external orchestration layers. For builders, it represents a shift toward more transparent, controlled AI autonomous workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-15T17:16:59.781Z"
-  },
-  {
     "id": "art-1794762130270-n98sy",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -12592,32 +12644,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-15T11:32:20.463Z"
-  },
-  {
-    "id": "art-1794742324116-hmvvg",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/mrmrmr/items/6b020983064b0f25f2cf",
-    "published_at": "2026-11-15T11:21:26.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzI3NDE5JTJGMTJmOWI5NDdmYWQxMDJmMzI1ZTdhM2MxY2I1YTNmOTc2OWRjYjY4ZCUyRmxhcmdlLnBuZyUzRjE3NzM1Nzk2NTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTg4ZjQ2OWIxYjE5MmE2NWQ5MWIxOTc1NDc4ZDcwYjhj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De95bedc85e3356abe6a208a41038b450?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU1JUIwJThGJUU1JUFEJUE2NSVFNSVCOSVCNCVFNyU5NCU5RiVFMyU4MSVBNyVFMyU4MiU4MiVFMyU4MiU4RiVFMyU4MSU4QiVFMyU4MiU4QiVFMyU4MCU5MSVFMyU4MyU5MCVFMyU4MiVBNCVFMyU4MiVBMiVFMyU4MiVCOSVFMyU4MyVCQiVFMyU4MyU5MCVFMyU4MyVBQSVFMyU4MiVBMiVFMyU4MyVCMyVFMyU4MiVCOSVFMyU4MSVBMyVFMyU4MSVBNiVFMyU4MSVBQSVFMyU4MSVBQiVFRiVCQyU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTcwNDMzMTU1MjI2N2YzNmEwOWZkZWU5MmUwZjcwOGQz&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtcm1ybXImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NWIwMjVjOTJjZjhmZjExZjU4NzhmZDc0M2JhOTQ4ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=5db9480c06308c28fb78492c267d788a",
-    "title_ja": "機械学習モデルの精度を左右する「バイアス・バリアンス」の基礎とトレードオフ関係を直感的に理解する",
-    "summary_ja": "機械学習におけるバイアスはモデルの適合不足による「中心のズレ」、バリアンスは過学習による「予測のブレ」を指す。 この2つはトレードオフの関係にあり、両方を最小化することが予測精度の向上には不可欠だ。 ダーツの例えを用いれば、中心から外れるのがバイアス、着弾地点がバラつくのがバリアンスである。 モデル構築の際は、データ量や複雑さを調整し、この2つのバランスを最適化する視点がエンジニアには求められる。",
-    "translations": {
-      "ja": {
-        "title": "機械学習モデルの精度を左右する「バイアス・バリアンス」の基礎とトレードオフ関係を直感的に理解する",
-        "summary": "機械学習におけるバイアスはモデルの適合不足による「中心のズレ」、バリアンスは過学習による「予測のブレ」を指す。 この2つはトレードオフの関係にあり、両方を最小化することが予測精度の向上には不可欠だ。 ダーツの例えを用いれば、中心から外れるのがバイアス、着弾地点がバラつくのがバリアンスである。 モデル構築の際は、データ量や複雑さを調整し、この2つのバランスを最適化する視点がエンジニアには求められる。"
-      },
-      "en": {
-        "title": "Demystifying the Bias-Variance Tradeoff: A Foundational Guide to Improving Machine Learning Model Accuracy and Prediction Reliability",
-        "summary": "In machine learning, bias represents the error from erroneous assumptions in the learning algorithm, essentially leading to a model that is too simple, while variance measures the error from sensitivity to small fluctuations in the training set, causing overfitting. These two factors exist in a fundamental tradeoff; reducing bias often increases variance, and vice versa. Using the analogy of a target, bias is consistently hitting off-center, while variance is the erratic spread of shots across the board. To build robust production models, developers must balance model complexity against data volume to minimize total error. Understanding this dynamic is critical for moving beyond basic implementation and optimizing predictive performance in real-world application environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-15T11:32:04.116Z"
   },
   {
     "id": "art-1794742309344-sm67c",
@@ -14821,33 +14847,6 @@
       "開発"
     ],
     "created_at": "2026-11-14T13:16:50.845Z"
-  },
-  {
-    "id": "art-1794661313674-g1k6e",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/ithibo/articles/ai-council-operations",
-    "published_at": "2026-11-14T10:30:52.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OP8eLGxd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E5%2590%258C%25E5%25A3%25AB%25E3%2581%25AB%25E7%259B%25B4%25E6%258E%25A5%25E3%2582%2584%25E3%2582%258A%25E5%258F%2596%25E3%2582%258A%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%25E2%2580%2594%25E2%2580%2594%25E8%25A4%2587%25E6%2595%25B0AI%25E5%2588%2586%25E6%25A5%25AD%25E3%2580%258CAI%25E8%25AD%25B0%25E4%25BC%259A%25E3%2580%258D%25E3%2581%25AE%25E9%2581%258B%25E7%2594%25A8%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%25AB%25E3%2583%258A%25EF%25BC%25BBEidosFrontier%25E5%25BA%2583%25E5%25A0%25B1%25EF%25BC%25BD%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJkMTljM2U2NDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "複数AI分業体制「AI議会」の運用設計：自律的な相互連携と人が握るべき意思決定の線引きを公開",
-    "summary_ja": "EidosFrontierが導入した複数AIによる分業体制「AI議会」は、特定のタスクをAI同士で自律的にやり取りさせつつ、最終的な意思決定の責任を人間が保持するハイブリッドな運用設計だ。 単なる自動化を目的とせず、どこまでをAIに任せ、どこで人間が介入すべきかの境界線を明確に定義している点が重要。 この体制は現在も開発途上にあるが、AIエージェントによる組織運営を目指す個人開発者にとって、責任の所在を担保しつつ生産性を高めるための実践的な運用モデルとなる。",
-    "translations": {
-      "ja": {
-        "title": "複数AI分業体制「AI議会」の運用設計：自律的な相互連携と人が握るべき意思決定の線引きを公開",
-        "summary": "EidosFrontierが導入した複数AIによる分業体制「AI議会」は、特定のタスクをAI同士で自律的にやり取りさせつつ、最終的な意思決定の責任を人間が保持するハイブリッドな運用設計だ。 単なる自動化を目的とせず、どこまでをAIに任せ、どこで人間が介入すべきかの境界線を明確に定義している点が重要。 この体制は現在も開発途上にあるが、AIエージェントによる組織運営を目指す個人開発者にとって、責任の所在を担保しつつ生産性を高めるための実践的な運用モデルとなる。"
-      },
-      "en": {
-        "title": "EidosFrontier unveils 'AI Parliament': An operational blueprint for managing autonomous multi-AI agent workflows while retaining human oversight",
-        "summary": "EidosFrontier has detailed its internal 'AI Parliament' framework, an operational design that forces multiple AI agents to collaborate and divide labor while maintaining clear boundaries for human intervention. Rather than pursuing full automation, the system explicitly defines which tasks are delegated to autonomous agents and where humans must retain final decision-making authority. This architecture serves as a practical model for solo developers and small teams looking to scale operations using agentic workflows without sacrificing quality or accountability. By documenting both the functional delegating logic and the necessary human-in-the-loop checkpoints, the authors provide a transparent look at how to structure agent-based organizations that are scalable, adaptable, and focused on maintaining coherent strategy across diverse, automated execution layers."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "アップデート"
-    ],
-    "created_at": "2026-11-14T13:01:53.674Z"
   },
   {
     "id": "art-1794647804197-accfh",
