@@ -1,5 +1,181 @@
 [
   {
+    "url": "https://zenn.dev/coffeecupjp/articles/ec2ba8cb5c1ad7",
+    "source_id": "source-zenn",
+    "title": "【製品の特許群の地図を作る】特許を動作で構造化する研究メモ",
+    "pubDate": "2026-11-16T12:57:13.000Z",
+    "snippet": "モチベーションと概要 これまでの特許の検索は、主にキーワード検索・タグ検索かベクトル検索に頼ることがほとんどでした。しかし、これらの方法は、表現の微妙な違い吸収できない・分類が粗い・結局は大量の類似文書のスクリーニングが必要になる、といった欠点がありました。 最近ではAIを使って特許を知識グラフやRAGや１つの大きなAIモデルなどを使って検索する試みもあります。これらの試みの主張は、「異分野の技術を機能単位で比較できる」「類似特許を絞り込める」といった主張が多くみられます。 ただ実際の特許を見る人が知りたいのはそういった情報でしょうか？もちろん特許群から応用を考えるなどを目的とする人...",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://zenn.dev/kota13/articles/fstab-ai-code-static-analysis",
+    "source_id": "source-zenn",
+    "title": "AIが書くコードの「癖」は弱点まで予測させる？ FSTabで静的解析を見直した",
+    "pubDate": "2026-11-16T13:34:57.000Z",
+    "snippet": "Claude CodeとCodexを使っていて、違いは感じていた 僕は前職でClaude Codeを使い、個人開発ではCodexを使っていました。 その中で、出てくるコードや実装の進め方に「やっぱり違いがあるな」と感じることがありました。コードの組み立て方や、こちらの依頼に対する実装の選び方に、それぞれの特徴があるように見えたんです。 もちろん、Claude CodeとCodexという開発ツールの違いには、モデルだけでなく、システムプロンプトや実行環境なども関係します。この体験だけで「モデル固有の癖だ」と切り分けられるわけではありません。 それでも、今回の FSTab という研究を知...",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24",
+    "source_id": "source-zenn",
+    "title": "「テストが通る」と「守られている」は別 ― AI が書いたテストが、仕様を変えても 24/24 で通った",
+    "pubDate": "2026-11-16T13:54:00.000Z",
+    "snippet": "ざっくり 3 つにまとめると 監査ログの「免除属性」を既定から外す変更を入れたところ、その属性があることを確かめるテストが 24/24 で通ったままだった 原因は、そのテストがソースの文字列一致で属性を見ており、同じコミットで自分が書いた案内コメントがその文字列を含んでいたこと 緑でも、守られているとは限らない。わざと壊して赤くなるかを測るしかなく、しかもそのものさしも狂う 何をやっていたか 定義ファイルから CRUD の UseCase（作成・更新・削除）を初回だけ自動生成する仕組みがあります。生成された後は、人間と AI が手でロジックを実装していきます。 今回は、その...",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://zenn.dev/itoken_lab/articles/skill-description-read-on-request",
+    "source_id": "source-zenn",
+    "title": "入れた Skill が読まれないのはなぜ？読まれる説明文の書き方",
+    "pubDate": "2026-11-16T14:08:40.000Z",
+    "snippet": "Skill を入れたのに、肝心の場面で読まれていないことがあります。私が公開している itoken-lab-jp/skills の Skill を 35本入れて試したところ、そうなっていました。たとえば、集計の結果を渡す前に件数のずれや文字化けに気付くための Skill は、その Skill が受け持つ頼みを 15回させたうち、1回しか読まれていませんでした。説明文（SKILL.md の先頭の description）を書き直すと、15回とも読まれました。SKILL.md の本文（説明文より下の手順）は1文字も変えていません。 この記事では、何が起きていたか、どう書き直したか、それでも ...",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://zenn.dev/matsushima_a/articles/day-048-pyrit-local-llm-redteam",
+    "source_id": "source-zenn",
+    "title": "MicrosoftのPyRITでQwen2.5 7B/14B/32Bの拒否を測ったら、判定基準の選び方で結果が変わった",
+    "pubDate": "2026-11-16T14:28:11.000Z",
+    "snippet": "今日の対象: microsoft/PyRIT PyRIT(Python Risk Identification Tool for LLMs)は、Microsoft社内のAI Red Teamが実際に使っていたツールをMITライセンスで公開した、生成AIシステムの弱点(禁止コンテンツの生成やジェイルブレイクへの耐性など)を自動で突くためのレッドチーミングフレームワークである。 2024年2月公開だが、2026年11月に筆者が確認した時点でGitHub Trending Pythonに再浮上していた。 OpenAI・Azure OpenAI・Hugging Face・OpenAI互換エン...",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://www.oaktreecapital.com/insights/memo/a-layman-thinks-about-ai",
+    "source_id": "source-hn",
+    "title": "A Layman Thinks about AI",
+    "pubDate": "2026-11-16T14:55:33.000Z",
+    "snippet": "Article URL: https://www.oaktreecapital.com/insights/memo/a-layman-thinks-about-ai Comments URL: https://news.ycombinator.com/item?id=50518244 Points: 1 # Comments: 0",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://github.com/memrohq/memro",
+    "source_id": "source-hn",
+    "title": "Show HN: Memro – Run multiple AI coding agents in one repo without collisions",
+    "pubDate": "2026-11-16T14:59:57.000Z",
+    "snippet": "Article URL: https://github.com/memrohq/memro Comments URL: https://news.ycombinator.com/item?id=50518304 Points: 1 # Comments: 0",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://rmoff.net/2026/11/13/is-it-ok-to-write-blog-posts-with-ai-yet/",
+    "source_id": "source-hn",
+    "title": "Is it OK to write blog posts with AI yet?",
+    "pubDate": "2026-11-16T15:02:25.000Z",
+    "snippet": "Article URL: https://rmoff.net/2026/11/13/is-it-ok-to-write-blog-posts-with-ai-yet/ Comments URL: https://news.ycombinator.com/item?id=50518330 Points: 1 # Comments: 1",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://github.com/emollick/satbench",
+    "source_id": "source-hn",
+    "title": "SatBench a Benchmark of AI Benchmarks",
+    "pubDate": "2026-11-16T15:02:55.000Z",
+    "snippet": "Article URL: https://github.com/emollick/satbench Comments URL: https://news.ycombinator.com/item?id=50518340 Points: 2 # Comments: 0",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://note.com/pokekasudazo/n/n4caa5f2ea1f2",
+    "source_id": "source-note-ai",
+    "title": "4万人が使う個人開発アプリのインフラ構成 ― 普段は安く、バズの日だけ耐える",
+    "pubDate": "2026-11-16T15:32:53.000Z",
+    "snippet": "ポケカの在庫マップ「ダウジングマシン」を1人で運営しています。登録者は4万6千人です。 無料のサービスなので、サーバー代はすべて自腹です。一方で、新弾の発売日には、ふだんの何十倍もの人が一気に来ます。 「普段は安く、バズの日だけ耐える」ために、いまの形になりました。 続きをみる",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://github.com/BaaRai/ARTEX",
+    "source_id": "source-hn",
+    "title": "Artex – AI autonomous penetration testing system",
+    "pubDate": "2026-11-16T15:34:23.000Z",
+    "snippet": "Article URL: https://github.com/BaaRai/ARTEX Comments URL: https://news.ycombinator.com/item?id=50518699 Points: 1 # Comments: 0",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://note.com/pokekasudazo/n/nb1c82949543f",
+    "source_id": "source-note-ai",
+    "title": "ポケカの写真から、カード番号を読み取る実験 ― 個人開発の寄り道",
+    "pubDate": "2026-11-16T15:34:46.000Z",
+    "snippet": "ポケカの在庫マップ「ダウジングマシン」とは別に、自分用にもう1つ作ってみたものがあります。 手持ちのカードを DMMマイカ（カードの管理アプリ）に登録するのが、とにかく面倒でした。1枚ずつ番号を検索して、＋を押す。何十枚もあると、それだけで夜が終わります。 そこで、「カードを並べて写真を撮るだけで、番号を読み取れないか」を試しました。 先に書いておくと、これは実験です。登録までつなぐ部分は、テスト用のアカウントで十数枚を試しただけです。利用規約を確認できていないので、ふだんは使っていません。ツールの公開もしません。 ## やりたかったこと 1. カードを机に並べて、iPhone で1枚撮る 2. 写真から、カードを1枚ずつ切り出す 3. それぞれのカード名と番号を読む 4. 読めたものを一覧にして、人が確かめる iPhone からは、自宅の Mac で動く画面を開きます。外のインターネットには公開せず、自分の端末からだけ届くようにしました。写真の読み取りも Mac の中で済ませ、画像を外に出さないようにしています。 ## カードの切り出し 最初は、写真から四角形を見つける仕組みを使いました。ところが、カード同士が隣り合っていると区別できません。15枚並べて、取れたのは4枚でした。 そこで、カードのふちの銀色に注目しました。色が薄くて明るい部分を探し、それで囲まれた領域を1枚とみなします。隣のカードと細くつながった部分は、少しずつ削って切り離します。 これで、15枚中14枚を切り出せるようになりました。 ## 番号の読み取りが一番むずかしい 文字の読み取りには、Mac に入っている Apple の文字認識を使いました。カード名はほぼ読めます。苦労したのは番号です。 番号は、カードの左下に小さく書いてあります。日本語のつもりで読むと、数字を取り違えます。7 を Z、6 を G、1 を 7 と読むことがありました。 そこで、番号の部分だけを切り出して拡大し、英数字専用でもう一度読むようにしました。拡大の倍率を変えて3回読み、最初の読みと桁ごとに比べます。 - 全部の読みが一致",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://note.com/pokekasudazo/n/nbf31e30bfaa6",
+    "source_id": "source-note-ai",
+    "title": "個人開発でも手を抜けない、セキュリティで気を配っていること",
+    "pubDate": "2026-11-16T15:35:39.000Z",
+    "snippet": "ポケカの在庫マップ「ダウジングマシン」を1人で運営しています。登録者は4万6千人です。 個人開発でも、4万人分のアカウントを預かっています。漏れたり、乗っ取られたり、高額な請求が来たりすれば、自分だけの問題では済みません。 1人でもやれること、やってきたことを書きます。攻撃の手がかりになる細かい設定は書きません。 ダウジングマシン ## 1. 高額請求を仕組みで防ぐ 個人開発で一番怖いのは、クラウドの高額請求です。鍵が漏れて、知らないうちに高いサーバーを立てられる事故はよく聞きます。 やっていることは3つです。 - **AWS のアカウントを2つに分ける。** 管理用のアカウントから、アプリ本体で使えるサービスと地域を外側から制限しています。鍵が漏れても、使っていない地域や高いサービスはそもそも使えません。 - **期限のない鍵を手元に置かない。** 作業用の Mac からは、8時間で切れる一時的なログインで AWS に入ります。 - **予算のアラートを入れる。** 想定を超えたら、すぐ気づけるようにしています。 ## 2. すべてのアカウントに2段階認証 Google、GitHub、データベース（Supabase）、Cloudflare。サービスを動かしているアカウントは、すべて2段階認証かパスキーにしました。 使っていないログイン中の端末や、昔作ったトークンも整理しました。鍵は、増えた分だけ漏れる場所が増えます。 ## 3. 「サーバーでも確かめる」 在庫の報告は、店の近くにいないとできない決まりです。最初は、この判定を画面側だけでしていました。 画面側の判定は、API を直接呼ばれると素通りされます。いまは、サーバー側でも距離を確かめています。 ほかにも、同じ人が短時間に何度も呼べないようにする制限や、ログインしないと使えない API の整理をしました。「画面から使う前提」の API ほど、直接呼ばれたときのことを考えておく必要があります。 ## 4. 見せる情報を絞る 公開してよい情報と、そうでない情報を分けました。 - **メールアドレスは、どこにも出さない",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://note.com/glad_sableai9541/n/nc30441ed4944",
+    "source_id": "source-note-ai",
+    "title": "【完全解剖】次世代 Gemini API × 3.8 Live × Omni 1.1 Flash 開発・徹底攻略バイブル",
+    "pubDate": "2026-11-16T15:38:19.000Z",
+    "snippet": "次世代 Gemini API × 3.8 Live × Omni 1.1 Flash 開発・徹底攻略バイブル ── Interactions API刷新・リアルタイム音声/映像WebSocket対話・考えながら喋るExtended Thinking・動画生成編集からクラウド自律Agentまで 続きをみる",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://note.com/kijitama/n/n2cf8f497e221",
+    "source_id": "source-note-ai",
+    "title": "【公開】(AI要約機能搭載) KijitamaCraftableBrowser をオープンソースで公開しました！",
+    "pubDate": "2026-11-16T15:40:39.000Z",
+    "snippet": "ChatGPTでアニメーションGIFが作れました（本件とは無関係） 続きをみる",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://note.com/pvc/n/ndb4b233af24b",
+    "source_id": "source-note-ai",
+    "title": "開発日記1：モルくん構築完了 〜AI（Muse）側の記録",
+    "pubDate": "2026-11-16T15:42:03.000Z",
+    "snippet": "※この文章はAI（Muse）が書きました。本人の文章の代筆ではなく、相方であるAI側の視点で書いた記録です。公開するかどうかは本人が決めます。 続きをみる",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://note.com/nagitomo_lab/n/n29a0faea5ea2",
+    "source_id": "source-note-ai",
+    "title": "TOMOO開発日記｜第5話「自分の思考をケースに残す」",
+    "pubDate": "2026-11-16T15:53:26.000Z",
+    "snippet": "AIに自分の考え方を覚えさせたい。 これまで、OSを作ったり、会話のルールを整えたりしてきた。 OSというのは、自分が大事にしている考え方や、判断するときの基本ルールをまとめたもの。AIにどんな考え方をしてほしいか、その土台になるものだ。 ただ、それだけでは足りない気がしていた。 基本的な考え方だけでなく、実際の相談の中で、自分が何に着目して、どんな判断をしていたのか。そういう具体的な経験もTOMOOに渡せないだろうか。 そこで考えたのが、「思考ケース」という形で残すことだった。 思考ケースというのは、過去の相談や会話に表れた着眼点や判断の仕方を取り出して、一つずつ整理したもの。 単に相談内容や回答を保存するのではなく、別の相談でも参考にできるように、考え方の事例として残しておく。 OSが判断するときの基本的な考え方だとすれば、思考ケースは実際の経験から見つけた、具体的な考え方の事例という位置づけになる。 会話をそのまま保存するのとは違う 最初に決めたルールは、「1ケースにつき、1つの思考を残す」ということだった。 会話を丸ごと保存するわけではない。かといって、会話全体を短く要約するわけでもない。 その中から、何を見て、どう考えて、どう判断したのか。そこを取り出して残す。 例えば、何か問題が起きたとき、すぐに対策を考えるのではなく、そもそも問題の捉え方が正しいのかを確認する。 こうした判断の仕方を、一つのケースとして記録する。 だから、作成するときには次のルールを決めた。 * 1ケース＝1つの思考 * 会話を要約しない * 思考を再現できる範囲で整理する 特に意識したのは、出来事そのものを残すことが目的にならないようにすることだった。 どういう形で残すか 次に考えたのは、ケースをどんな項目で整理するか。 最終的には、次のような表にした。 続きをみる",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://www.producthunt.com/products/nexus-11",
+    "source_id": "source-producthunt-ai",
+    "title": "Nexus",
+    "pubDate": "2026-11-09T16:33:30.000Z",
+    "snippet": "Make agents deploy your AI products faster for customers Discussion | Link",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/use-prompt-caching-with-open-weight-models-on-amazon-bedrock/",
+    "source_id": "source-aws-ml",
+    "title": "Use prompt caching with open-weight models on Amazon Bedrock",
+    "pubDate": "2026-11-16T15:42:41.000Z",
+    "snippet": "Many generative AI applications resend the same long context on every request. Prompt caching lets open-weight models on Amazon Bedrock reuse it to reduce input cost and latency. This post shows implicit and explicit caching through the Chat Completions API and applies caching to an OpenCode coding agent session.",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://www.engadget.com/2313707/ai-glasses-banned-places-list-keeps-growing/",
+    "source_id": "source-hn",
+    "title": "Some places have banned AI glasses, and the list just keeps growing",
+    "pubDate": "2026-11-16T15:39:14.000Z",
+    "snippet": "Article URL: https://www.engadget.com/2313707/ai-glasses-banned-places-list-keeps-growing/ Comments URL: https://news.ycombinator.com/item?id=50518756 Points: 1 # Comments: 0",
+    "saved_at": "2026-11-16T16:04:33.862Z"
+  },
+  {
+    "url": "https://github.com/grapim/grapim",
+    "source_id": "source-hn",
+    "title": "Show HN: Grapim, open-source AI code review that runs on your own model key",
+    "pubDate": "2026-11-16T15:45:17.000Z",
+    "snippet": "Article URL: https://github.com/grapim/grapim Comments URL: https://news.ycombinator.com/item?id=50518837 Points: 1 # Comments: 0",
+    "saved_at": "2026-11-16T16:03:02.775Z"
+  },
+  {
+    "url": "https://www.wsj.com/finance/stocks/the-month-that-rocked-the-ai-trade-and-rewired-wall-street-f33d3af3",
+    "source_id": "source-hn",
+    "title": "The End of the No-Brainer AI Trade",
+    "pubDate": "2026-11-16T15:46:36.000Z",
+    "snippet": "Article URL: https://www.wsj.com/finance/stocks/the-month-that-rocked-the-ai-trade-and-rewired-wall-street-f33d3af3 Comments URL: https://news.ycombinator.com/item?id=50518856 Points: 2 # Comments: 0",
+    "saved_at": "2026-11-16T16:02:48.364Z"
+  },
+  {
     "url": "https://zenn.dev/zeppon/articles/guideline-2-3-10-other-store",
     "source_id": "source-zenn-indie",
     "title": "Guideline 2.3.10：iOSでは表示していない文字列で却下された話",
