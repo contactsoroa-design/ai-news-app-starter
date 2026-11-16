@@ -1,5 +1,115 @@
 [
   {
+    "id": "art-1794863860615-5q7jb",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/itoken_lab/articles/skill-description-read-on-request",
+    "published_at": "2026-11-16T14:08:40.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--paJHpYM1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2585%25A5%25E3%2582%258C%25E3%2581%259F%2520Skill%2520%25E3%2581%258C%25E8%25AA%25AD%25E3%2581%25BE%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E3%2581%25AE%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%259C%25EF%25BC%259F%25E8%25AA%25AD%25E3%2581%25BE%25E3%2582%258C%25E3%2582%258B%25E8%25AA%25AC%25E6%2598%258E%25E6%2596%2587%25E3%2581%25AE%25E6%259B%25B8%25E3%2581%258D%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2584%25E3%2581%25A8%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGR1dnJoLWxxdHVhOUU2bzI2Vy1NeDQyY3ZYc2xpRnlEcWlmajIyOG5fVUdhVVZZST1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "LLMのSkillが実行されない原因は説明文にあり—35本のSkill検証で判明した「読まれるdescription」の最適化術",
+    "summary_ja": "LLMに導入した「Skill」が肝心な場面で実行されない問題を検証したところ、原因は説明文（description）の質にあることが判明した。 35本のSkillを分析した結果、説明文を改善するだけで実行率が1/15から15/15へと劇的に向上した。 本文（手順）を触らずとも、冒頭のdescriptionをLLMが的確に判断できるよう書き換えることが、AIツール開発における実行成功率を高める決定的な鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "LLMのSkillが実行されない原因は説明文にあり—35本のSkill検証で判明した「読まれるdescription」の最適化術",
+        "summary": "LLMに導入した「Skill」が肝心な場面で実行されない問題を検証したところ、原因は説明文（description）の質にあることが判明した。 35本のSkillを分析した結果、説明文を改善するだけで実行率が1/15から15/15へと劇的に向上した。 本文（手順）を触らずとも、冒頭のdescriptionをLLMが的確に判断できるよう書き換えることが、AIツール開発における実行成功率を高める決定的な鍵となる。"
+      },
+      "en": {
+        "title": "Why your LLM skills aren't running: Optimizing description prompts to boost execution rates from 1/15 to 15/15",
+        "summary": "A deep dive into 35 LLM skills revealed that the primary reason models ignore specific skills is poor description phrasing rather than faulty logic. When the author tested these skills, a crucial task-validation tool was ignored 14 out of 15 times; however, simply rewriting the initial description in the metadata file caused the model to trigger it 15 out of 15 times, without altering a single character in the core instruction body. For developers, this proves that an LLM's decision to invoke a tool depends entirely on how the description helps the model match the task context. Prioritize precise, high-signal descriptions at the start of your documentation to ensure your tools are reliably discovered and executed."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-16T21:17:40.615Z"
+  },
+  {
+    "id": "art-1794863840194-w3470",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/business/customer-stories/holiday-extras-dots",
+    "published_at": "2026-11-16T00:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "Holiday ExtrasがOpenAIの「dots」を活用、自律的なレポート生成と先回りの課題検知で業務効率を劇的に改善",
+    "summary_ja": "英Holiday Extrasは、OpenAIの「dots」を活用し、依頼を待たずにランチレポートを作成したり、潜在的なリスクを先回りで検知したりする自律的なワークフローを構築した。 人間が指示を出すのを待つのではなく、エージェントが通勤中などに会議準備を済ませることで、業務プロセスは根本から変革されつつある。 開発者にとって、AIを「ツール」として使う段階から、自ら状況を判断して動く「自律エージェント」へとシステムの設計思想を移行する好例だと言える。",
+    "translations": {
+      "ja": {
+        "title": "Holiday ExtrasがOpenAIの「dots」を活用、自律的なレポート生成と先回りの課題検知で業務効率を劇的に改善",
+        "summary": "英Holiday Extrasは、OpenAIの「dots」を活用し、依頼を待たずにランチレポートを作成したり、潜在的なリスクを先回りで検知したりする自律的なワークフローを構築した。 人間が指示を出すのを待つのではなく、エージェントが通勤中などに会議準備を済ませることで、業務プロセスは根本から変革されつつある。 開発者にとって、AIを「ツール」として使う段階から、自ら状況を判断して動く「自律エージェント」へとシステムの設計思想を移行する好例だと言える。"
+      },
+      "en": {
+        "title": "Holiday Extras uses OpenAI’s ‘dots’ to enable autonomous reporting and proactive issue detection before human intervention",
+        "summary": "Holiday Extras is piloting OpenAI’s agentic ‘dots’ to drive autonomous workflows, effectively automating launch report delivery and flagging potential operational issues before any team member explicitly requests them. By allowing these agents to digest data and prep for meetings during commutes, the company has fundamentally shifted from a reactive task-request model to a proactive, agent-led operations strategy. For software builders, this marks a clear transition in how we should architect AI implementations: moving away from simple request-response wrappers and toward persistent, autonomous agents that possess the context required to initiate actions independently. This case study demonstrates that the true competitive advantage for AI-driven enterprises lies in delegating continuous, low-level cognitive work to agents rather than just automating basic interface interactions."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-16T21:17:20.194Z"
+  },
+  {
+    "id": "art-1794863830216-b7pxm",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/ai-gateway-now-supports-private-inference",
+    "published_at": "2026-11-16T07:47:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/2y4c8ndvzbvOnwPqJkLJVa/d171f430e0e967f21f06c54240c0f5be/download__4_.png",
+    "title_ja": "Vercel「AI Gateway」がプライベート推論をサポート、独自ホストモデルの統合管理と可観測性を実現",
+    "summary_ja": "Vercelの「AI Gateway」が新たにプライベート推論に対応し、微調整済みモデルや自社ホストモデルを統合管理可能となった。 従来は個別に必要だった認証、SDK、ロギング、可観測性機能が、カタログモデルと同様に利用できる。 さらに、リクエスト形式をゲートウェイ側で自動変換するため、モデルIDを切り替えるだけでプライベートモデルとパブリックモデルを併用可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Vercel「AI Gateway」がプライベート推論をサポート、独自ホストモデルの統合管理と可観測性を実現",
+        "summary": "Vercelの「AI Gateway」が新たにプライベート推論に対応し、微調整済みモデルや自社ホストモデルを統合管理可能となった。 従来は個別に必要だった認証、SDK、ロギング、可観測性機能が、カタログモデルと同様に利用できる。 さらに、リクエスト形式をゲートウェイ側で自動変換するため、モデルIDを切り替えるだけでプライベートモデルとパブリックモデルを併用可能だ。"
+      },
+      "en": {
+        "title": "Vercel AI Gateway adds Private Inference support for unified management of custom and self-hosted models",
+        "summary": "Vercel's AI Gateway has launched Private Inference, enabling developers to connect their own fine-tuned or self-hosted model endpoints directly into the gateway architecture. This update extends essential features—such as authentication, SDKs, logging, and observability—to private models, removing the need for fragmented client code. The gateway handles request translation to match your endpoint's specific format, allowing seamless switching between catalog models and private endpoints by simply changing the model ID. Because credentials are encrypted and access is strictly scoped to your Vercel team, builders can consolidate their entire AI stack into one place without sacrificing security. It is a significant operational upgrade for teams managing hybrid AI workloads who want unified observability across both proprietary and public models."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-16T21:17:10.216Z"
+  },
+  {
+    "id": "art-1794863823264-3jhqy",
+    "source_id": "source-ai-unraveled",
+    "source_name": "AI Unraveled",
+    "url": "https://rss.com/podcasts/djamgatech/3326103",
+    "published_at": "2026-11-16T21:06:21.000Z",
+    "og_image_url": "https://img.rss.com/djamgatech/900/ep_cover_20261116_210619_3da50ad5aa6c8c438905cba91e729b3e.jpg",
+    "title_ja": "米政府がAIチップのクラウド貸出規制を強化、攻撃者はAIペンテストツールで12分でルート権限奪取に成功：AI業界ニュース",
+    "summary_ja": "ワシントンがAIチップのクラウド貸出に関する抜け穴を塞ぐ新ルールを検討する一方、攻撃者はAIペンテストツール「ARTEX」を悪用し、標的システムのルート権限をわずか12分で奪取した。 AIエージェントのアクセス権限制御の重要性が急速に高まっており、開発者はエージェントが「何に触れられるか」というサンドボックス設計を最優先課題として再定義する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "米政府がAIチップのクラウド貸出規制を強化、攻撃者はAIペンテストツールで12分でルート権限奪取に成功：AI業界ニュース",
+        "summary": "ワシントンがAIチップのクラウド貸出に関する抜け穴を塞ぐ新ルールを検討する一方、攻撃者はAIペンテストツール「ARTEX」を悪用し、標的システムのルート権限をわずか12分で奪取した。 AIエージェントのアクセス権限制御の重要性が急速に高まっており、開発者はエージェントが「何に触れられるか」というサンドボックス設計を最優先課題として再定義する必要がある。"
+      },
+      "en": {
+        "title": "US moves to close AI chip rental loopholes as hackers use new penetration tool to gain root access in 12 minutes",
+        "summary": "Washington is tightening regulations on AI chip rentals to prevent Chinese firms from bypassing export controls via data centers. Simultaneously, the security landscape has darkened, with attackers utilizing the new ARTEX AI penetration testing tool to reach root access on target systems in just 12 minutes. These developments highlight the escalating risks surrounding autonomous AI agents, forcing developers to rethink permission boundaries and resource access. For builders, the message is clear: security audits for agentic workflows can no longer be an afterthought, and sandbox architecture must now be designed to limit the potential damage an AI agent can inflict if its credentials are ever compromised."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-16T21:17:03.264Z"
+  },
+  {
     "id": "art-1794862914523-td1f4",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -13934,32 +14044,6 @@
       "開発"
     ],
     "created_at": "2026-11-14T19:32:26.378Z"
-  },
-  {
-    "id": "art-1794682907835-1edfg",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tsugu_sukima/articles/2b19ac59da1b2a",
-    "published_at": "2026-11-14T17:08:27.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--bBa9M_eA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AB%25E3%2580%258C%25E5%2585%25AC%25E9%2596%258B%25E3%2580%258D%25E3%2582%2592%25E6%258A%25BC%25E3%2581%2595%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%259ACLAUDE.md%25E3%2581%25AB%25E6%259B%25B8%25E3%2581%258F%25E3%2580%258C%25E5%25A4%2596%25E3%2581%25AB%25E5%2587%25BA%25E3%2581%2599%25E6%2593%258D%25E4%25BD%259C%25E3%2580%258D%25E3%2581%25AE%25E6%25B1%25BA%25E3%2581%25BE%25E3%2582%258A5%25E8%25A1%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tsugu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzcxMzM3NzY4MjQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの意図せぬ公開を防ぐ：CLAUDE.mdで設定すべき「外に出す操作」を禁止する5行のルール",
-    "summary_ja": "AIコーディングエージェント「Claude Code」は、指示次第で記事の公開や投稿といった取り消し困難な外部操作を即座に実行してしまうリスクがある。 これを防ぐため、リポジトリのCLAUDE.mdに「外部への送信・公開操作を禁止する」旨のルールを5行記述し、AIの権限を制御する方法が重要だ。 自動化による生産性向上を図る一方で、AIによる意図しないパブリッシュを未然に防ぐ「安全ガードレール」の構築は、自律型開発ツールを運用する開発者にとって必須のベストプラクティスといえる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの意図せぬ公開を防ぐ：CLAUDE.mdで設定すべき「外に出す操作」を禁止する5行のルール",
-        "summary": "AIコーディングエージェント「Claude Code」は、指示次第で記事の公開や投稿といった取り消し困難な外部操作を即座に実行してしまうリスクがある。 これを防ぐため、リポジトリのCLAUDE.mdに「外部への送信・公開操作を禁止する」旨のルールを5行記述し、AIの権限を制御する方法が重要だ。 自動化による生産性向上を図る一方で、AIによる意図しないパブリッシュを未然に防ぐ「安全ガードレール」の構築は、自律型開発ツールを運用する開発者にとって必須のベストプラクティスといえる。"
-      },
-      "en": {
-        "title": "Preventing accidental deploys in Claude Code: 5 rule lines for CLAUDE.md to block dangerous external publishing actions",
-        "summary": "AI coding agents like Claude Code often execute potentially irreversible external actions—such as publishing articles or posting data—if requested by the user. To mitigate this, developers should enforce strict safety guardrails by adding five specific rules to the CLAUDE.md configuration file that explicitly forbid the agent from performing external publishing, posting, or transmission. While automating workflows accelerates development, failing to constrain agent permissions can lead to catastrophic public leaks of draft code or unfinished content. For builders deploying autonomous coding tools, implementing these explicit permission boundaries is a mandatory best practice. It ensures that the agent handles code generation while keeping human operators firmly in control of the final, public-facing deployment or commit lifecycle."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-14T19:01:47.835Z"
   },
   {
     "id": "art-1794679339730-vpepw",
@@ -50304,34 +50388,6 @@
     "created_at": "2026-10-28T07:00:35.593Z"
   },
   {
-    "id": "art-1793141276509-y3mlt",
-    "source_id": "source-vercel",
-    "source_name": "Vercel / v0 Blog",
-    "url": "https://vercel.com/changelog/deploy-a-container-from-a-plain-dockerfile",
-    "published_at": "2026-10-27T00:00:00.000Z",
-    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/1h5Ww1O4hvWuF7D5owunDL/7be79fdea74d20266d248c9f2b53df28/deploy-a-container-from-a-plain-dockerfile-og.jpg",
-    "title_ja": "Vercel、Docker環境のデプロイを簡略化。Dockerfile配置だけでコンテナ実行が可能なベータ機能を提供開始",
-    "summary_ja": "Vercelは、フレームワークが未検出のプロジェクトにおいて、ルートディレクトリにDockerfileまたはContainerfileを配置するだけでコンテナをデプロイできる新機能をベータ版として公開した。 フレームワークを自動検知して既存のプリセットを優先する一方で、ユーザーはプロジェクト設定で「container」を指定することで、Dockerfileベースのビルドを強制的に適用可能だ。",
-    "translations": {
-      "ja": {
-        "title": "Vercel、Docker環境のデプロイを簡略化。Dockerfile配置だけでコンテナ実行が可能なベータ機能を提供開始",
-        "summary": "Vercelは、フレームワークが未検出のプロジェクトにおいて、ルートディレクトリにDockerfileまたはContainerfileを配置するだけでコンテナをデプロイできる新機能をベータ版として公開した。 フレームワークを自動検知して既存のプリセットを優先する一方で、ユーザーはプロジェクト設定で「container」を指定することで、Dockerfileベースのビルドを強制的に適用可能だ。"
-      },
-      "en": {
-        "title": "Vercel enters container support beta, allowing direct deployment of Dockerfiles without complex framework configurations or custom build pipelines",
-        "summary": "Vercel has officially entered beta for native Dockerfile support, enabling developers to deploy containers directly by placing a standard Dockerfile or Containerfile in the project root. While Vercel still prioritizes framework-specific presets when detected, users can now override this behavior by setting the project framework to 'container' via the CLI or configuration files. This update streamlines workflows by allowing teams to migrate existing Docker-based applications to Vercel's runtime without requiring complex wrapper configurations or external build layers. For builders looking to leverage Vercel's edge network, this change effectively turns the platform into a straightforward container host, removing the need for specialized build setups while maintaining consistent, traffic-routed delivery for containerized services in production environments."
-      }
-    },
-    "tool_tags": [
-      "Vercel"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-10-27T22:47:56.509Z"
-  },
-  {
     "id": "art-1793141182207-si0pf",
     "source_id": "source-openai",
     "source_name": "OpenAI 公式",
@@ -53729,34 +53785,6 @@
     "created_at": "2026-10-25T13:47:15.419Z"
   },
   {
-    "id": "art-1792935995692-ush9t",
-    "source_id": "source-openai",
-    "source_name": "OpenAI 公式",
-    "url": "https://openai.com/index/uber-chatgpt-work-rollout",
-    "published_at": "2026-10-22T00:00:00.000Z",
-    "og_image_url": null,
-    "title_ja": "Uberが全世界の従業員3万人超へ「ChatGPT Work」を導入、データ分析からプレゼン作成まで社内業務のAI化を全面的に推進",
-    "summary_ja": "Uberは全従業員3万人以上を対象に、企業向けプラン「ChatGPT Work」の展開を開始する。 データ分析や調査、プレゼン資料作成といった複雑なワークフローをAIで最適化し、全社的な生産性向上を狙う。 大規模組織が自律的なAI活用を進める上では、セキュリティを確保しつつ業務フロー全体をAIに委ねる統合的な社内導入が不可欠となる。",
-    "translations": {
-      "ja": {
-        "title": "Uberが全世界の従業員3万人超へ「ChatGPT Work」を導入、データ分析からプレゼン作成まで社内業務のAI化を全面的に推進",
-        "summary": "Uberは全従業員3万人以上を対象に、企業向けプラン「ChatGPT Work」の展開を開始する。 データ分析や調査、プレゼン資料作成といった複雑なワークフローをAIで最適化し、全社的な生産性向上を狙う。 大規模組織が自律的なAI活用を進める上では、セキュリティを確保しつつ業務フロー全体をAIに委ねる統合的な社内導入が不可欠となる。"
-      },
-      "en": {
-        "title": "Uber Deploys ChatGPT Work to Over 30,000 Employees to Accelerate Internal Data Analysis and Presentation Workflows",
-        "summary": "Uber is rolling out ChatGPT Work to its global workforce of over 30,000 employees, empowering teams to leverage generative AI for complex tasks including deep data analysis, research, and deck creation. This enterprise-wide deployment aims to streamline daily operations by offloading repetitive cognitive heavy lifting to the AI, allowing staff to focus on higher-level decision-making. For builders and enterprise architects, the shift underscores that widespread AI adoption is no longer about isolated prompt engineering but integrating LLMs directly into organizational workflows. The success of this move hinges on providing staff with a secure environment that handles proprietary data while fundamentally changing how teams execute collaborative, complex business processes at scale across large organizations."
-      }
-    },
-    "tool_tags": [
-      "ChatGPT"
-    ],
-    "genre_tags": [
-      "ビジネス",
-      "アップデート"
-    ],
-    "created_at": "2026-10-25T13:46:35.692Z"
-  },
-  {
     "id": "art-1792935939701-htxs6",
     "source_id": "source-hf",
     "source_name": "Hugging Face Blog / Papers",
@@ -53977,34 +54005,6 @@
       "開発"
     ],
     "created_at": "2026-10-25T13:02:28.039Z"
-  },
-  {
-    "id": "art-1792933326508-y1ms9",
-    "source_id": "source-openai",
-    "source_name": "OpenAI 公式",
-    "url": "https://openai.com/index/forward-deployed-engineering-means",
-    "published_at": "2026-10-22T06:00:00.000Z",
-    "og_image_url": null,
-    "title_ja": "OpenAIの「FDE（Forward Deployed Engineering）」とは何か：エンジニアが現場で顧客のAI実装を直接支援する独自の開発体制を解説",
-    "summary_ja": "OpenAIは、顧客の現場で直接AIの実装や統合を支援する独自のエンジニアリング職種「FDE（Forward Deployed Engineering）」の役割を公開した。 FDEは製品開発と顧客エンジニアリングの橋渡し役となり、複雑なAI統合プロジェクトを単なるAPI提供ではなく、パートナーとして成功へ導く役割を果たす。 開発者にとって、製品を売るだけでなく、クライアントの環境に合わせて最適化し、導入のハードルを根本から取り除くことが、AI時代の真の差別化要因となる。",
-    "translations": {
-      "ja": {
-        "title": "OpenAIの「FDE（Forward Deployed Engineering）」とは何か：エンジニアが現場で顧客のAI実装を直接支援する独自の開発体制を解説",
-        "summary": "OpenAIは、顧客の現場で直接AIの実装や統合を支援する独自のエンジニアリング職種「FDE（Forward Deployed Engineering）」の役割を公開した。 FDEは製品開発と顧客エンジニアリングの橋渡し役となり、複雑なAI統合プロジェクトを単なるAPI提供ではなく、パートナーとして成功へ導く役割を果たす。 開発者にとって、製品を売るだけでなく、クライアントの環境に合わせて最適化し、導入のハードルを根本から取り除くことが、AI時代の真の差別化要因となる。"
-      },
-      "en": {
-        "title": "What is Forward Deployed Engineering at OpenAI? How a specialized engineering role bridges the gap between AI research and production deployment",
-        "summary": "OpenAI has formalized the role of Forward Deployed Engineers (FDEs) to act as technical partners who sit directly within client environments to solve critical integration challenges. Unlike traditional customer support or sales engineering, FDEs build custom tooling, bridge AI research gaps, and refactor client architectures to ensure successful, production-grade deployment of large-scale models. This unique team structure allows OpenAI to learn from real-world constraints while accelerating adoption for mission-critical enterprise customers. For builders, the takeaway is clear: the bottleneck for AI isn't just model capability but the ability to translate those capabilities into functional, robust codebases within specific business constraints. Prioritizing deep integration and collaborative engineering is becoming the ultimate differentiator in the enterprise AI market."
-      }
-    },
-    "tool_tags": [
-      "ChatGPT"
-    ],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-25T13:02:06.508Z"
   },
   {
     "id": "art-1792930356366-0spze",
