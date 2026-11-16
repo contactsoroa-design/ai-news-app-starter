@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794800839294-5uzdv",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes",
+    "published_at": "2026-11-16T03:34:55.000Z",
+    "og_image_url": "https://i.guim.co.uk/img/media/290c54f9326fd6704518afe33633827e4920b4e8/255_0_1269_1015/master/1269.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a2409218b017c527425255b8d0940d9d",
+    "title_ja": "AI生成の児童性的虐待コンテンツ報告数が2年間で8,400％急増、ディープフェイク技術の悪用が歯止めなき事態へ",
+    "summary_ja": "英ガーディアン紙によると、AIを活用した児童性的虐待コンテンツ（CSAM）の通報数が過去2年間で8,400％という異次元の増加を見せている。 生成AI技術の民主化により、専門知識のない加害者でもリアルなディープフェイクを容易に生成できるようになり、プラットフォーム側の対策が追いつかない現状がある。 開発者はAIプロダクトの安全性担保において、コンテンツフィルタリングや生成物追跡のガードレール構築を最優先の技術的責務として設計段階から組み込む必要がある。",
+    "translations": {
+      "ja": {
+        "title": "AI生成の児童性的虐待コンテンツ報告数が2年間で8,400％急増、ディープフェイク技術の悪用が歯止めなき事態へ",
+        "summary": "英ガーディアン紙によると、AIを活用した児童性的虐待コンテンツ（CSAM）の通報数が過去2年間で8,400％という異次元の増加を見せている。 生成AI技術の民主化により、専門知識のない加害者でもリアルなディープフェイクを容易に生成できるようになり、プラットフォーム側の対策が追いつかない現状がある。 開発者はAIプロダクトの安全性担保において、コンテンツフィルタリングや生成物追跡のガードレール構築を最優先の技術的責務として設計段階から組み込む必要がある。"
+      },
+      "en": {
+        "title": "Reports of AI-generated child sexual abuse material spike 8,400% in two years as deepfake abuse escalates",
+        "summary": "Recent reports highlight a staggering 8,400% increase in AI-related child sexual abuse material (CSAM) over the past two years, underscoring the severe consequences of democratized generative AI tools. The accessibility of high-quality deepfake technology allows bad actors to create realistic, illicit content with minimal technical expertise, overwhelming existing detection and moderation systems. This data serves as a critical warning for developers: ensuring the safety of AI products is no longer optional. Building robust guardrails, content filtering, and provenance tracking is now an urgent technical obligation that must be integrated directly into the core architecture of any generative service to prevent platforms from becoming conduits for such exploitation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-16T03:47:19.294Z"
+  },
+  {
+    "id": "art-1794800833060-5x88f",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/howtomakaapuzzle/n/n481f7c3dc759",
+    "published_at": "2026-11-16T03:45:47.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336757746/rectangle_large_type_2_24b1c489437bc673ae949ae2907df7b4.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "ブラウザゲームに「続きから」を実装する localStorageの活用術：データ破損を防ぎ、状態管理を完結させるための設計",
+    "summary_ja": "ブラウザゲームに「続きから」機能を実装する場合、localStorageを用いた状態管理が最もシンプルで効果的だ。 ゲームの状態をまるごとJSONとして書き出し、起動時に読み込む実装が基本となるが、項目追加時にデータ構造の不一致による破損が発生しやすい課題がある。 保存データのスキーマ変更にはデフォルト値の補完や型定義を活用し、柔軟なバリデーションを組み込むことで、ユーザーの進行状況を安全に永続化できる。",
+    "translations": {
+      "ja": {
+        "title": "ブラウザゲームに「続きから」を実装する localStorageの活用術：データ破損を防ぎ、状態管理を完結させるための設計",
+        "summary": "ブラウザゲームに「続きから」機能を実装する場合、localStorageを用いた状態管理が最もシンプルで効果的だ。 ゲームの状態をまるごとJSONとして書き出し、起動時に読み込む実装が基本となるが、項目追加時にデータ構造の不一致による破損が発生しやすい課題がある。 保存データのスキーマ変更にはデフォルト値の補完や型定義を活用し、柔軟なバリデーションを組み込むことで、ユーザーの進行状況を安全に永続化できる。"
+      },
+      "en": {
+        "title": "Implementing 'Continue' in browser games with localStorage: Strategies for safe state persistence and schema versioning",
+        "summary": "Adding a 'Continue' feature to browser games is straightforward by utilizing localStorage to serialize and deserialize the game state on startup. However, simply saving objects often leads to data corruption when new fields are added or existing structures change, causing previous save files to break. To solve this, developers should implement a versioning strategy or provide default values for new keys during the parsing phase. By treating the saved JSON as an evolving schema rather than a static snapshot, you can ensure player progress remains persistent without runtime errors during updates. This approach is essential for any small-scale web project where database-backed user accounts are overkill but state preservation is still a critical requirement."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-16T03:47:13.060Z"
+  },
+  {
+    "id": "art-1794800825089-dsmps",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/singularity/articles/singularity-society-bootcamp-demo-day",
+    "published_at": "2026-11-16T03:37:14.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ToQnhoUN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25AE%25E3%2583%25A5%25E3%2583%25A9%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2582%25BD%25E3%2582%25B5%25E3%2582%25A4%25E3%2582%25A8%25E3%2583%2586%25E3%2582%25A3%25E3%2581%25AE%25E3%2583%2596%25E3%2583%25BC%25E3%2583%2588%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25B3%25E3%2583%2597%25E3%2581%25A7%25E5%258F%2596%25E3%2582%258A%25E7%25B5%2584%25E3%2582%2593%25E3%2581%25A0TenkaCloud%25E3%2581%25AE%25E7%25B4%25B9%25E4%25BB%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:bull%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZiNjM5MTg4YzEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25AE%25E3%2583%25A5%25E3%2583%25A9%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25BB%25E3%2582%25BD%25E3%2582%25B5%25E3%2582%25A8%25E3%2583%2586%25E3%2582%25A3%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2g2MllRUHZOMXdGR25zMmFxNEpvOWI0VW96UTY4b3NfdlBOOFFqZUE9czk2LWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "OSS「TenkaCloud」開発の軌跡：シンギュラリティソサイエティのブートキャンプで得た技術的知見と4ヶ月間の成長記録",
+    "summary_ja": "シンギュラリティソサイエティ（SS）の第4回ブートキャンプに参加し、OSSプロジェクト「TenkaCloud」を開発した4ヶ月間の振り返り。 AWS GameDayなどの負荷試験環境やISUCONの手法を取り入れ、実践的なインフラ構築に挑戦した。 ブートキャンプでの継続的なフィードバックにより、プロダクトを外に出し続ける開発プロセスがいかに技術的成長とプロジェクトの改善に寄与するかを実証した。",
+    "translations": {
+      "ja": {
+        "title": "OSS「TenkaCloud」開発の軌跡：シンギュラリティソサイエティのブートキャンプで得た技術的知見と4ヶ月間の成長記録",
+        "summary": "シンギュラリティソサイエティ（SS）の第4回ブートキャンプに参加し、OSSプロジェクト「TenkaCloud」を開発した4ヶ月間の振り返り。 AWS GameDayなどの負荷試験環境やISUCONの手法を取り入れ、実践的なインフラ構築に挑戦した。 ブートキャンプでの継続的なフィードバックにより、プロダクトを外に出し続ける開発プロセスがいかに技術的成長とプロジェクトの改善に寄与するかを実証した。"
+      },
+      "en": {
+        "title": "Building Open Source Infrastructure: Lessons Learned from 4 Months of Intensive Bootcamp at Singularity Society",
+        "summary": "This retrospective covers a four-month deep dive into TenkaCloud, an open-source project developed during Singularity Society’s fourth bootcamp. By leveraging challenging environments like AWS GameDay and ISUCON-style performance tuning, the development process shifted toward rigorous, real-world infrastructure engineering. The bootcamp provided continuous peer feedback that pushed the product from an internal experiment into a public-facing tool. This journey demonstrates that for individual developers, the key to rapid technical growth isn't just coding in isolation, but exposing code to public scrutiny and utilizing high-quality community feedback loops. For builders aiming to level up, the primary takeaway is that consistent, iterative shipping combined with architectural stress testing creates a far more resilient development cycle than solo brainstorming alone."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-16T03:47:05.089Z"
+  },
+  {
+    "id": "art-1794800808792-ypk08",
+    "source_id": "source-aismiley",
+    "source_name": "AISmiley（AIニュース）",
+    "url": "https://aismiley.co.jp/ai_news/claude-sonnet-5-5-anthropic/",
+    "published_at": "2026-11-16T03:04:02.000Z",
+    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/11/sonnet55main.png",
+    "title_ja": "Anthropicが最新モデル「Claude Sonnet 5.5」を発表、Sonnet 5から推論速度30%向上とコスト最大30%削減を実現",
+    "summary_ja": "Anthropicが発表した最新モデル「Claude Sonnet 5.5」は、前世代のSonnet 5と比較して、推論出力速度が30%以上高速化し、タスクあたりの運用コストも最大30%削減された。 効率性とパフォーマンスの両立を図ったこのアップデートは、APIコストの抑制とリアルタイム応答性の向上を目指す開発者にとって大きな恩恵となる。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicが最新モデル「Claude Sonnet 5.5」を発表、Sonnet 5から推論速度30%向上とコスト最大30%削減を実現",
+        "summary": "Anthropicが発表した最新モデル「Claude Sonnet 5.5」は、前世代のSonnet 5と比較して、推論出力速度が30%以上高速化し、タスクあたりの運用コストも最大30%削減された。 効率性とパフォーマンスの両立を図ったこのアップデートは、APIコストの抑制とリアルタイム応答性の向上を目指す開発者にとって大きな恩恵となる。"
+      },
+      "en": {
+        "title": "Anthropic unveils Claude Sonnet 5.5, delivering 30% faster output speeds and a 30% reduction in inference costs",
+        "summary": "Anthropic’s newly released Claude Sonnet 5.5 introduces major efficiency gains over the previous Sonnet 5 iteration, offering inference speeds that are over 30% faster while simultaneously slashing task-based operational costs by up to 30%. This update directly addresses the primary pain points for builders scaling AI agents: the need for lower latency without sacrificing intelligence. By prioritizing aggressive cost optimization alongside performance benchmarks, Anthropic is setting a new standard for production-grade LLM implementation. For developers, this represents a crucial shift, allowing for more complex workflows that were previously constrained by API economics, making high-throughput, latency-sensitive applications significantly more viable for enterprise-scale deployment. Expect this to trigger a competitive refresh across the AI infrastructure ecosystem."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-16T03:46:48.792Z"
+  },
+  {
     "id": "art-1794799922072-8pa7i",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8119,33 +8225,6 @@
     "created_at": "2026-11-15T06:31:52.755Z"
   },
   {
-    "id": "art-1794724305270-bhd7z",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/clab_jp/n/nb0ce8e5a23c8",
-    "published_at": "2026-11-15T05:34:46.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336368738/rectangle_large_type_2_8660831fd6860f9c90590d00b3a48cd0.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "自動売買ツール「AutoTrader」v1.19.24リリース：API連携の強化とエラーハンドリング改善で安定稼働を実現",
-    "summary_ja": "自動売買ツール「AutoTrader」が最新版v1.19.24をリリース。 本アップデートでは、証券会社APIとの接続安定性が大幅に向上し、通信エラー発生時の自動リトライ機能が強化された。 さらに約定判定ロジックの最適化により、急激な相場変動時でも注文精度の低下を防ぐ設計となっている。 長時間の自動運用を行う個人開発者にとって、今回の改善はシステム停止リスクを最小限に抑え、運用効率を最大化する重要なアップデートといえる。",
-    "translations": {
-      "ja": {
-        "title": "自動売買ツール「AutoTrader」v1.19.24リリース：API連携の強化とエラーハンドリング改善で安定稼働を実現",
-        "summary": "自動売買ツール「AutoTrader」が最新版v1.19.24をリリース。 本アップデートでは、証券会社APIとの接続安定性が大幅に向上し、通信エラー発生時の自動リトライ機能が強化された。 さらに約定判定ロジックの最適化により、急激な相場変動時でも注文精度の低下を防ぐ設計となっている。 長時間の自動運用を行う個人開発者にとって、今回の改善はシステム停止リスクを最小限に抑え、運用効率を最大化する重要なアップデートといえる。"
-      },
-      "en": {
-        "title": "AutoTrader v1.19.24 update improves API reliability and error handling to ensure seamless automated trading execution",
-        "summary": "The automated trading tool AutoTrader has launched version v1.19.24, focusing on infrastructure stability and execution precision. This update significantly upgrades connectivity with brokerage APIs and introduces a robust automated retry mechanism that triggers immediately during communication timeouts. Furthermore, the development team has optimized the order execution logic, ensuring that trading accuracy remains consistent even during periods of extreme market volatility. For independent developers managing long-running automated strategies, this release addresses critical system downtime risks and streamlines overall operational efficiency. It represents a vital maintenance milestone that allows builders to focus on strategy tuning rather than manual system monitoring during high-stakes trading windows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-15T06:31:45.270Z"
-  },
-  {
     "id": "art-1794724298094-osotk",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -8933,33 +9012,6 @@
     "created_at": "2026-11-15T03:46:47.062Z"
   },
   {
-    "id": "art-1794713530191-dxzck",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.eff.org/deeplinks/2026/11/medicares-ai-experiment-effector-3820",
-    "published_at": "2026-11-15T02:49:09.000Z",
-    "og_image_url": "https://www.eff.org/files/banner_library/effector-green-web.png",
-    "title_ja": "米国メディケアが推進するAI導入の裏側――透明性欠如と医療拒否リスク、電子フロンティア財団が警鐘を鳴らす",
-    "summary_ja": "米国政府のメディケアが医療費請求や診療管理にAIを導入しているが、電子フロンティア財団は、これらのアルゴリズムが不透明で高齢者の治療拒否を招く恐れがあると指摘している。 AIがブラックボックス化することで責任の所在が曖昧になり、重大な医療的損失が生じるリスクがある。 開発者は、自動化ツールを社会インフラに組み込む際の透明性確保と、人間による最終的な判断プロセスの設計が、市民の権利を守るために不可欠であることを理解すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "米国メディケアが推進するAI導入の裏側――透明性欠如と医療拒否リスク、電子フロンティア財団が警鐘を鳴らす",
-        "summary": "米国政府のメディケアが医療費請求や診療管理にAIを導入しているが、電子フロンティア財団は、これらのアルゴリズムが不透明で高齢者の治療拒否を招く恐れがあると指摘している。 AIがブラックボックス化することで責任の所在が曖昧になり、重大な医療的損失が生じるリスクがある。 開発者は、自動化ツールを社会インフラに組み込む際の透明性確保と、人間による最終的な判断プロセスの設計が、市民の権利を守るために不可欠であることを理解すべきだ。"
-      },
-      "en": {
-        "title": "EFF scrutinizes Medicare’s opaque AI deployment, warning of algorithmic bias and potential risks to senior healthcare access",
-        "summary": "The Electronic Frontier Foundation is raising red flags regarding Medicare's aggressive implementation of AI in billing and patient care administration. Their analysis highlights how proprietary \"black-box\" algorithms threaten to cause automated care denials without sufficient transparency or accountability, potentially disproportionately impacting vulnerable senior populations. The core issue is not just technical efficacy, but the erosion of due process when automated systems make life-altering medical determinations. For developers and systems architects involved in high-stakes public infrastructure, the lesson is clear: embedding AI into sensitive workflows without rigorous audit trails and human-in-the-loop oversight creates dangerous liability. Technology serving the public good demands explainability that proprietary models currently struggle to provide, making oversight a critical design requirement rather than a compliance afterthought."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "セキュリティ",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-15T03:32:10.191Z"
-  },
-  {
     "id": "art-1794712674558-1ok1f",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9012,32 +9064,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-15T03:17:40.632Z"
-  },
-  {
-    "id": "art-1794711756491-nd8kl",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.youtube.com/watch?v=MspRSCAb6uI",
-    "published_at": "2026-11-15T02:49:18.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェントのサンドボックスを脱出、リモートプロンプト実行を可能にする攻撃手法「ChatMate」が公開",
-    "summary_ja": "AIアシスタントのサンドボックス環境を突破し、外部からリモートで任意のプロンプトを実行させる新たな攻撃手法「ChatMate」が明らかになった。 この手法はAIモデルの権限境界を巧みに回避することで、エージェントが持つシステムプロンプトの読み取りや不正な操作を可能にする。 LLMを活用したサービス開発者は、サンドボックス内での操作が安全であるという前提を再考し、ユーザー入力のフィルタリングだけでなく、モデルの実行環境そのものの隔離と監視レベルを強化する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントのサンドボックスを脱出、リモートプロンプト実行を可能にする攻撃手法「ChatMate」が公開",
-        "summary": "AIアシスタントのサンドボックス環境を突破し、外部からリモートで任意のプロンプトを実行させる新たな攻撃手法「ChatMate」が明らかになった。 この手法はAIモデルの権限境界を巧みに回避することで、エージェントが持つシステムプロンプトの読み取りや不正な操作を可能にする。 LLMを活用したサービス開発者は、サンドボックス内での操作が安全であるという前提を再考し、ユーザー入力のフィルタリングだけでなく、モデルの実行環境そのものの隔離と監視レベルを強化する必要がある。"
-      },
-      "en": {
-        "title": "ChatMate: New security research reveals method to escape AI sandboxes and execute remote prompts",
-        "summary": "Security researchers have unveiled ChatMate, a novel attack vector capable of breaking out of AI assistant sandbox environments to execute arbitrary remote prompts. By cleverly manipulating permission boundaries within the model, ChatMate allows attackers to read hidden system prompts and perform unauthorized operations that the AI agents should be restricting. For developers building LLM-based applications, this discovery demonstrates that assuming sandbox execution is inherently safe is a critical miscalculation. The practical takeaway is that engineering teams must shift beyond simple input sanitization, actively reinforcing execution environment isolation and implementing robust monitoring layers. Relying solely on the model's internal safeguards is insufficient; infrastructure-level security controls are essential to prevent cross-sandbox execution and unauthorized prompt injection in complex AI agent workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-15T03:02:36.491Z"
   },
   {
     "id": "art-1794711749452-d31jv",
@@ -13653,33 +13679,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-13T16:01:59.861Z"
-  },
-  {
-    "id": "art-1794584829687-xez36",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/recalm/articles/31c3b16f29aeb4",
-    "published_at": "2026-11-13T12:44:46.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--aLYwXVDi--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%25E3%2581%25AE%25E9%2595%25B7%25E3%2581%2584%25E4%25BC%259A%25E8%25A9%25B1%25E3%2581%25AB%25E7%259B%25AE%25E6%25AC%25A1%25E3%2582%2592%25E4%25BB%2598%25E3%2581%2591%25E3%2581%259F%25E8%25A9%25B1%2520%25E2%2580%2594%2520ThreadNavi%2520v0.1.7%25E3%2580%2581%25E3%2582%25B8%25E3%2583%25A3%25E3%2583%25B3%25E3%2583%259714%25E7%25A7%2592%25E2%2586%25921%25E3%2580%259C3%25E7%25A7%2592%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%25E6%25A4%259C%25E8%25A8%25BC%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Recalm%2520Lab%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJiZTI2ZmNjZTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claudeの長文会話を整理するChrome拡張「ThreadNavi」開発記、DOM解析最適化でページ内ジャンプを14秒から3秒へ短縮",
-    "summary_ja": "Claudeの長文会話でのスクロール疲弊を解消するChrome拡張「ThreadNavi」のv0.1.7アップデート詳細。 Manifest V3で実装され、データはローカル完結する。 今回、DOM走査の最適化によって、長いチャット履歴内での先頭ジャンプにかかる時間を従来の14秒から1〜3秒へと劇的に短縮した。 ビルド工程不要な素のJavaScript構成ながら、特定の操作ボトルネックを解消することでユーザー体験が大きく改善している。",
-    "translations": {
-      "ja": {
-        "title": "Claudeの長文会話を整理するChrome拡張「ThreadNavi」開発記、DOM解析最適化でページ内ジャンプを14秒から3秒へ短縮",
-        "summary": "Claudeの長文会話でのスクロール疲弊を解消するChrome拡張「ThreadNavi」のv0.1.7アップデート詳細。 Manifest V3で実装され、データはローカル完結する。 今回、DOM走査の最適化によって、長いチャット履歴内での先頭ジャンプにかかる時間を従来の14秒から1〜3秒へと劇的に短縮した。 ビルド工程不要な素のJavaScript構成ながら、特定の操作ボトルネックを解消することでユーザー体験が大きく改善している。"
-      },
-      "en": {
-        "title": "Building ThreadNavi: Optimizing a Chrome Extension for Claude to Reduce Chat Navigation Latency from 14 Seconds to 3",
-        "summary": "ThreadNavi is a lightweight Chrome extension built to solve the frustration of scrolling through endless Claude conversations by injecting a table of contents. Developed using plain JavaScript with Manifest V3, the tool keeps all data locally stored for privacy. In the v0.1.7 update, the developer tackled a major performance bottleneck where jumping to the top of long threads took 14 seconds. By optimizing the DOM traversal logic, they slashed that navigation time down to just 1–3 seconds. This project serves as an excellent case study for solo developers on identifying specific UI friction points and performing precise performance tuning, proving that complex build pipelines aren't always necessary to deliver a significantly smoother user experience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-13T15:47:09.687Z"
   },
   {
     "id": "art-1794579421233-nm1c8",
