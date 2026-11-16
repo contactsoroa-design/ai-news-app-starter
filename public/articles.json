@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1794837790772-08ljt",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/cosoado/articles/supabase-pooler-listen-notify-multigres",
+    "published_at": "2026-11-16T00:19:32.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--SHbSkvDr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Supabase%2520%25E3%2581%25AE%2520LISTEN%252FNOTIFY%2520%25E3%2581%258C%2520pooler%2520%25E8%25B6%258A%25E3%2581%2597%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%25AA%25E3%2581%2584%25E5%2595%258F%25E9%25A1%258C%25E3%2580%2581Multigres%2520%25E3%2581%25A7%25E8%25A7%25A3%25E6%25B1%25BA%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2593%25E3%2581%259D%25E3%2581%2582%25E3%2581%25A9%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzAwZTU0YWEwN2EuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Supabaseのプール経由でLISTEN/NOTIFYが動かない罠と回避策：Multigresによる接続管理の最適化とアーキテクチャの解説",
+    "summary_ja": "SupabaseのSupavisor（ポート6543）はトランザクションモードで動作するため、セッション状態を維持するPostgreSQLのLISTEN/NOTIFYが機能しないという技術的制約がある。 従来はこの制限によりリアルタイム通信の実装で苦労していたが、新たに登場したMultigresを利用することで、プール越しでもこの機能が利用可能になった。",
+    "translations": {
+      "ja": {
+        "title": "Supabaseのプール経由でLISTEN/NOTIFYが動かない罠と回避策：Multigresによる接続管理の最適化とアーキテクチャの解説",
+        "summary": "SupabaseのSupavisor（ポート6543）はトランザクションモードで動作するため、セッション状態を維持するPostgreSQLのLISTEN/NOTIFYが機能しないという技術的制約がある。 従来はこの制限によりリアルタイム通信の実装で苦労していたが、新たに登場したMultigresを利用することで、プール越しでもこの機能が利用可能になった。"
+      },
+      "en": {
+        "title": "Why Supabase LISTEN/NOTIFY Fails Over Transaction Mode Poolers and How Multigres Fixes Real-Time Connection Issues",
+        "summary": "Developers relying on Supabase often hit a wall where LISTEN/NOTIFY events simply vanish when routed through the Supavisor pooler on port 6543. Because transaction mode does not maintain persistent session states, these pub/sub operations fail silently, forcing architects to choose between scaling connections or keeping real-time functionality. The introduction of Multigres changes this calculus by enabling reliable LISTEN/NOTIFY support even across pooled connections, effectively bypassing the previous limitations of transaction-based scaling. For engineers, this underscores why understanding the underlying connection mode of your database middleware is just as critical as writing efficient SQL. Always verify if your pooling strategy supports the stateful requirements of your specific real-time database event patterns before pushing to production."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-16T14:03:10.772Z"
+  },
+  {
+    "id": "art-1794837766055-ihs27",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.economist.com/briefing/2026/11/12/can-the-ai-boom-make-enough-money-to-sustain-itself",
+    "published_at": "2026-11-16T13:35:24.000Z",
+    "og_image_url": null,
+    "title_ja": "AIブームは収益で自走できるのか？巨額投資を正当化する「キラーアプリケーション」と経済的持続性の限界を徹底検証",
+    "summary_ja": "現在のAIブームは莫大なインフラ投資に依存しているが、それがビジネスとして持続可能な収益を生むのかが焦点となっている。 本記事は、企業がAIへの先行投資を正当化するために必要な「キラーアプリケーション」の出現予測と、コストと利益の分岐点について経済的視点から分析。 開発者や起業家にとって、単なる技術誇大広告を超えた、現実的な収益化モデルの再構築が求められるフェーズにあることを強調している。 単なる予測ツールではなく、真の経済的価値を証明するプロダクト設計の重要性を説く内容だ。",
+    "translations": {
+      "ja": {
+        "title": "AIブームは収益で自走できるのか？巨額投資を正当化する「キラーアプリケーション」と経済的持続性の限界を徹底検証",
+        "summary": "現在のAIブームは莫大なインフラ投資に依存しているが、それがビジネスとして持続可能な収益を生むのかが焦点となっている。 本記事は、企業がAIへの先行投資を正当化するために必要な「キラーアプリケーション」の出現予測と、コストと利益の分岐点について経済的視点から分析。 開発者や起業家にとって、単なる技術誇大広告を超えた、現実的な収益化モデルの再構築が求められるフェーズにあることを強調している。 単なる予測ツールではなく、真の経済的価値を証明するプロダクト設計の重要性を説く内容だ。"
+      },
+      "en": {
+        "title": "Can the AI boom sustain itself? Analyzing the economic reality of massive infrastructure investment and revenue",
+        "summary": "The current AI boom relies heavily on colossal infrastructure investment, yet the pressing question remains whether this spending translates into long-term, sustainable profitability. This analysis from The Economist examines the economic tension between the massive capital expenditures currently driving the industry and the lack of clear 'killer applications' needed to justify such costs. For builders and founders, the piece serves as a stark reminder that the era of hype-fueled funding is shifting toward a reality where products must prove tangible economic utility. The takeaway for developers is clear: focusing solely on technical performance is no longer enough. You must build applications that generate distinct, measurable revenue streams to survive as the venture capital market demands accountability for AI's operational costs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-16T14:02:46.055Z"
+  },
+  {
+    "id": "art-1794837748379-pi79n",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shinsei99/n/nc31bd514fac0",
+    "published_at": "2026-11-16T14:00:21.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/c0b31c8cc751fbe959077a32e552f8289bf082ec.png",
+    "title_ja": "不動産契約書自動化におけるデータ構造の罠：名称重複する「所在地」欄の自動マッピングと開発者が直面する複雑性",
+    "summary_ja": "不動産契約業務において、重要事項説明書や契約書などの多種多様な書式は、同じ「所在地」という名称でも役割や定義が異なる項目が混在し、自動入力ツール開発の大きな障壁となっている。 単に住所を流し込むだけでなく、書式ごとのコンテキストやメタデータを正確に分類し、紐付ける実装が不可欠だ。 泥臭いレガシー書類のデジタル化こそ、独自ドメイン知識を活かした垂直SaaS構築の好機となる。",
+    "translations": {
+      "ja": {
+        "title": "不動産契約書自動化におけるデータ構造の罠：名称重複する「所在地」欄の自動マッピングと開発者が直面する複雑性",
+        "summary": "不動産契約業務において、重要事項説明書や契約書などの多種多様な書式は、同じ「所在地」という名称でも役割や定義が異なる項目が混在し、自動入力ツール開発の大きな障壁となっている。 単に住所を流し込むだけでなく、書式ごとのコンテキストやメタデータを正確に分類し、紐付ける実装が不可欠だ。 泥臭いレガシー書類のデジタル化こそ、独自ドメイン知識を活かした垂直SaaS構築の好機となる。"
+      },
+      "en": {
+        "title": "The Data Mapping Trap in Real Estate Contract Automation: Handling Duplicate 'Address' Fields Across Standardized Legal Documents",
+        "summary": "Automating real estate contracts like disclosure statements reveals a tedious data challenge: disparate legal documents often share identical field names, such as 'location' or 'address,' yet carry fundamentally different functional requirements. Simply injecting strings into these forms fails because the underlying data context remains inconsistent across the 200+ templates used in the industry. Developers must build intelligent mapping layers that distinguish between these context-specific fields rather than relying on naive text placement. For builders targeting the real estate sector, solving this complexity—specifically handling legacy document variance through structured metadata—is the critical differentiator. Navigating these messy, non-standardized document structures is exactly where domain-specific SaaS tools provide the most tangible value for brokers."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-16T14:02:28.379Z"
+  },
+  {
     "id": "art-1794836833229-a26r3",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8819,32 +8898,6 @@
     "created_at": "2026-11-15T15:16:58.300Z"
   },
   {
-    "id": "art-1794755811234-fug3y",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/argonote_vox/n/nb92b612f737e",
-    "published_at": "2026-11-15T15:16:16.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336604005/rectangle_large_type_2_8d389a5c2e3d23763b37b3159174e1f4.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "月額10ドルのAIメイド常駐システム：自律連携と記憶生成による人間味あるAI実装技術を解説",
-    "summary_ja": "月額10ドルのコストで自律的な2体のAIメイドを常駐させるシステムの実装詳細。 各メイドが独立して自律的に連携するバックエンドの仕組みと、日誌機能を通じて過去の会話や感情を記録・想起させることで、AIに人間味を持たせるメモリ管理手法を公開した。 単なるチャットbotを超え、継続的なコンテキスト維持によって「キャラクターとしての実在感」を構築する具体的なアーキテクチャは、自律エージェント開発において重要な知見となる。",
-    "translations": {
-      "ja": {
-        "title": "月額10ドルのAIメイド常駐システム：自律連携と記憶生成による人間味あるAI実装技術を解説",
-        "summary": "月額10ドルのコストで自律的な2体のAIメイドを常駐させるシステムの実装詳細。 各メイドが独立して自律的に連携するバックエンドの仕組みと、日誌機能を通じて過去の会話や感情を記録・想起させることで、AIに人間味を持たせるメモリ管理手法を公開した。 単なるチャットbotを超え、継続的なコンテキスト維持によって「キャラクターとしての実在感」を構築する具体的なアーキテクチャは、自律エージェント開発において重要な知見となる。"
-      },
-      "en": {
-        "title": "Building Autonomous AI Maids: Technical Deep Dive into $10/Month Persistent Memory and Multi-Agent Orchestration",
-        "summary": "The technical breakdown of a $10/month system that deploys two autonomous AI maids featuring persistent memory and emotional depth. The implementation details how the agents handle inter-agent orchestration and independent backend logic while utilizing diary-based logging to record, retrieve, and synthesize past interactions. By moving beyond simple stateless chat to persistent context management, this architecture generates a tangible sense of character and presence for the agents. For developers building autonomous AI ecosystems, the key takeaway is that combining asynchronous event handling with structured memory storage is essential for transforming static LLM responses into evolving, lifelike personas that can navigate complex social contexts without ballooning infrastructure costs."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-15T15:16:51.234Z"
-  },
-  {
     "id": "art-1794754972287-z7d5t",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -9525,33 +9578,6 @@
       "研究"
     ],
     "created_at": "2026-11-15T13:04:37.202Z"
-  },
-  {
-    "id": "art-1794747847185-c1j7x",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://futurumgroup.com/wp-content/uploads/2026/05/Five-Layers-of-the-AI-Cake.pdf",
-    "published_at": "2026-11-15T12:51:33.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエコシステムを理解する「AIケーキの5層構造」：ハードウェアからアプリケーションまでの価値連鎖を解説",
-    "summary_ja": "Futurum Groupが発表した「AIケーキの5層構造」は、AIビジネスをチップ（演算）、インフラ、モデル、プラットフォーム、アプリケーションという5つの階層で定義する概念フレームワークである。 各層が独立して存在せず、互いに依存し合うことで価値が循環する仕組みを詳解している。 エンジニアや開発者は、AI製品を単一のツールとして捉えるのではなく、この垂直統合的なレイヤー構造を理解することで、競争優位性と技術的ボトルネックを特定できるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIエコシステムを理解する「AIケーキの5層構造」：ハードウェアからアプリケーションまでの価値連鎖を解説",
-        "summary": "Futurum Groupが発表した「AIケーキの5層構造」は、AIビジネスをチップ（演算）、インフラ、モデル、プラットフォーム、アプリケーションという5つの階層で定義する概念フレームワークである。 各層が独立して存在せず、互いに依存し合うことで価値が循環する仕組みを詳解している。 エンジニアや開発者は、AI製品を単一のツールとして捉えるのではなく、この垂直統合的なレイヤー構造を理解することで、競争優位性と技術的ボトルネックを特定できるだろう。"
-      },
-      "en": {
-        "title": "Understanding the 'Five Layers of the AI Cake': How Hardware, Infrastructure, and Models Define Competitive Advantage in the Modern Stack",
-        "summary": "The Futurum Group’s 'Five Layers of the AI Cake' framework breaks down the complex AI ecosystem into five distinct tiers: silicon compute, cloud infrastructure, foundational models, software platforms, and end-user applications. This model illustrates how value flows vertically through the stack, with each layer creating critical dependencies that dictate performance and scalability for downstream services. Instead of viewing AI projects as isolated software features, developers should use this taxonomy to map where their product fits and identify strategic bottlenecks in their dependency chain. Understanding these layer-specific interdependencies is essential for builders looking to distinguish between commodity features and genuine proprietary value when architecture decisions shift as rapidly as the underlying compute technology evolves."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-15T13:04:07.185Z"
   },
   {
     "id": "art-1794746807061-fnhm9",
@@ -13331,32 +13357,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-14T07:46:42.137Z"
-  },
-  {
-    "id": "art-1794640603248-xc74q",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/repech/articles/f929e69568ec09",
-    "published_at": "2026-11-14T06:45:21.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--lxnrQyg2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2583%2581%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2588%25E3%2581%25AE%25E5%259B%259E%25E7%25AD%2594%25E3%2582%2592%25E3%2580%2581%25E7%2594%25BB%25E9%259D%25A2%25E3%2581%25AEDOM%25E3%2581%258B%25E3%2582%2589Markdown%25E3%2581%25AB%25E6%2588%25BB%25E3%2581%2599%2520%25E2%2580%2595%25206%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%25A7%25E6%258F%258F%25E3%2581%258D%25E6%2596%25B9%25E3%2581%258C%25E5%2585%25A8%25E9%2583%25A8%25E9%2581%2595%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:REPECH%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzBmYmU5MDg4YWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIチャット6サイトのDOMをMarkdownへ復元する技術—Chrome拡張「Qarta」開発で直面した解析の困難さと実装の最適解",
-    "summary_ja": "AIチャット履歴を保存するChrome拡張「Qarta」の開発において、ChatGPTやClaude等6サイトの回答をMarkdown形式で抽出するためのDOM解析ロジックを実装した。 innerTextの取得では見出しや数式、コードブロックの構造が崩れる課題に対し、サイトごとに異なるDOM構造を解釈しMarkdownへ変換する手法を採用。 Webブラウザ上のAI出力を再利用可能な資産に変えるための、スクレイピング設計と解析アプローチのノウハウを共有する。",
-    "translations": {
-      "ja": {
-        "title": "AIチャット6サイトのDOMをMarkdownへ復元する技術—Chrome拡張「Qarta」開発で直面した解析の困難さと実装の最適解",
-        "summary": "AIチャット履歴を保存するChrome拡張「Qarta」の開発において、ChatGPTやClaude等6サイトの回答をMarkdown形式で抽出するためのDOM解析ロジックを実装した。 innerTextの取得では見出しや数式、コードブロックの構造が崩れる課題に対し、サイトごとに異なるDOM構造を解釈しMarkdownへ変換する手法を採用。 Webブラウザ上のAI出力を再利用可能な資産に変えるための、スクレイピング設計と解析アプローチのノウハウを共有する。"
-      },
-      "en": {
-        "title": "Reverse-Engineering AI Chat DOMs: How I Built a Markdown Parser for 6 Different LLM Interfaces",
-        "summary": "While developing Qarta, a Chrome extension for archiving AI chat history, I hit a wall: standard innerText extraction obliterated crucial formatting like headers, LaTeX equations, and code blocks. To fix this, I engineered custom DOM parsers to reverse-engineer the raw Markdown from six major LLM platforms—ChatGPT, Claude, Gemini, Copilot, Perplexity, and Grok. This required handling the distinct, unpredictable rendering logic of each site to accurately reconstruct structured content. For developers building tools that interface with web-based AI, this implementation details why relying on simple text scraping is insufficient and demonstrates how to normalize divergent frontend DOM structures into clean, portable Markdown data, transforming volatile web outputs into structured assets."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-14T07:16:43.248Z"
   },
   {
     "id": "art-1794639708188-g7tow",
