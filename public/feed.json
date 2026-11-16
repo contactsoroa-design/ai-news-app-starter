@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794826945096-yo37q",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://gcore.com/blog/ai-offensive-security-endpoints-artex-pentagi-cairn",
+    "published_at": "2026-11-16T09:26:57.000Z",
+    "og_image_url": "https://assets.gcore.pro/site-media/uploads/gcore_artex_2026_cybersecurity_threat_research_report_f239c5e20f.png",
+    "title_ja": "インターネット上に公開された攻撃的セキュリティAIエンドポイント1,698件を特定、無防備なAIモデルが抱えるリスクを調査",
+    "summary_ja": "セキュリティ企業Gcoreの調査により、インターネット経由で誰でもアクセス可能な攻撃的セキュリティAIエンドポイントが1,698件特定された。 ArtexやPentagiといったAIツールが認証なしで公開されており、攻撃者に悪用されるリスクが極めて高い。 開発者はAPIを公開する際、必ず認証を実装し、意図しない外部からのアクセスを遮断する基本設定を徹底する必要がある。 モデルを「公開したまま」にすることは、攻撃者へ攻撃手段を貸し出す行為と同義だ。",
+    "translations": {
+      "ja": {
+        "title": "インターネット上に公開された攻撃的セキュリティAIエンドポイント1,698件を特定、無防備なAIモデルが抱えるリスクを調査",
+        "summary": "セキュリティ企業Gcoreの調査により、インターネット経由で誰でもアクセス可能な攻撃的セキュリティAIエンドポイントが1,698件特定された。 ArtexやPentagiといったAIツールが認証なしで公開されており、攻撃者に悪用されるリスクが極めて高い。 開発者はAPIを公開する際、必ず認証を実装し、意図しない外部からのアクセスを遮断する基本設定を徹底する必要がある。 モデルを「公開したまま」にすることは、攻撃者へ攻撃手段を貸し出す行為と同義だ。"
+      },
+      "en": {
+        "title": "Researchers identify 1,698 internet-accessible offensive-security AI endpoints, revealing massive risks for exposed models",
+        "summary": "A new security audit by Gcore uncovered 1,698 AI offensive-security endpoints, such as Artex and Pentagi, left visible on the open internet without any authentication layers. These exposed tools provide attackers with ready-made capabilities for automated exploitation, turning benign research projects into potential weapons for malicious actors. The investigation highlights a dangerous trend where AI agents designed for pentesting are deployed without basic safeguards, effectively offering free tooling to cybercriminals. For developers deploying specialized AI models, the primary takeaway is that network-level access control and robust authentication are not optional—they are mandatory. Leaving an offensive security model internet-facing without protection is equivalent to handing a fully armed exploitation kit directly to an adversary."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-16T11:02:25.096Z"
+  },
+  {
+    "id": "art-1794826936335-pe6kc",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ryuyanishino/articles/22805a85b01341678b6d46a8dafe1649",
+    "published_at": "2026-11-16T06:22:28.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--eXDKgos4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2595%25B7%25E3%2581%2584%25E3%2582%25BB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2581%25A7%2520%252Fcompact%2520%25E3%2581%2597%25E3%2581%259F%25E5%25BE%258C%25E3%2582%2582%25E5%25AE%2588%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BB%25E3%2581%2597%25E3%2581%2584%25E6%258C%2587%25E7%25A4%25BA%25E3%2581%25AF%25E3%2580%2581%25E3%2581%25A9%25E3%2581%2593%25E3%2581%25AB%25E7%25BD%25AE%25E3%2581%258F%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryuya%2520Nishino%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhmOWQ1MjJhYmEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの自動要約（compaction）で指示が消える問題を防ぐには？セッション継続時のシステムプロンプトと設定ファイル活用術",
+    "summary_ja": "Claude Codeの会話はトークン制限に達すると自動要約されるため、初期に与えた「テストはbunで実行する」といった指示が後段で無視される現象が発生しがちだ。 この問題を解決するには、要約に含まれやすい会話履歴ではなく、設定ファイルやプロジェクトルートのコンテキストに指示を分離して永続化させる必要がある。 ツール側の要約アルゴリズムの仕様を理解し、重要な制約条件をどこに配置すべきかを判断することが、長期開発における一貫性維持の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの自動要約（compaction）で指示が消える問題を防ぐには？セッション継続時のシステムプロンプトと設定ファイル活用術",
+        "summary": "Claude Codeの会話はトークン制限に達すると自動要約されるため、初期に与えた「テストはbunで実行する」といった指示が後段で無視される現象が発生しがちだ。 この問題を解決するには、要約に含まれやすい会話履歴ではなく、設定ファイルやプロジェクトルートのコンテキストに指示を分離して永続化させる必要がある。 ツール側の要約アルゴリズムの仕様を理解し、重要な制約条件をどこに配置すべきかを判断することが、長期開発における一貫性維持の鍵となる。"
+      },
+      "en": {
+        "title": "Preventing Instruction Loss in Claude Code: How to Maintain System Constraints During Long Automated Session Summarization and Compaction",
+        "summary": "When Claude Code reaches token limits, it performs automatic compaction, often discarding early setup instructions like 'always use bun for testing' in favor of summarized context. To prevent this, developers must stop relying on conversational memory for core project configurations. The solution involves moving persistent constraints out of the chat history and into project-level configuration files or explicit system prompts that remain unaffected by the summarization process. Understanding exactly how the tool handles compression boundaries allows developers to ensure that critical environment requirements survive across long-running sessions. For builders managing complex workflows, the takeaway is to treat session context as volatile and lock essential rules into durable file structures before the compaction cycle inevitably clears the chat window's state."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-16T11:02:16.335Z"
+  },
+  {
+    "id": "art-1794826925766-irowl",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/masa-miya/items/637759fef6d60e1eafcb",
+    "published_at": "2026-11-16T09:52:41.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTA4NTkzJTJGNDJmZWI5ZjY4NTEyYmU5YjFmZWE1OWViNmM2ZjJjODhjZWNjYjE4NiUyRnhfbGFyZ2UucG5nJTNGMTc5MjA2MDY0Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MjJjN2MxZGU5MTI2Mjc5M2FkNzIxMGVlODUyYTM2ZjY%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZiZDg5ZDYxNmIzYzQ1OGQ0ZTQ0NTA1OWNjN2E5MzExNmQ4NTMwMDg2JTJGb3JpZ2luYWwuanBnJTNGMTc2NDA2MDQ0Nz9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz01Y2MxNWQzM2QxZTYzMWUyMDQyOWI3MzMxNDgyOTI1Ng%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Df324cdf9eea221e6535c4266c55f7c44?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgzJUIzJUUzJTgzJTk3JUUzJTgzJTg4JUUzJTgyJUE4JUUzJTgzJUIzJUUzJTgyJUI4JUUzJTgzJThCJUUzJTgyJUEyJUUzJTgzJUFBJUUzJTgzJUIzJUUzJTgyJUIwJUUzJTgxJUFCJUUzJTgxJUE0JUUzJTgxJTg0JUUzJTgxJUE2JUUzJTgwJTkwJUU2JTk2JUIwJUU4JUE2JThGJUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTg3JUUzJTgyJUEzJUUzJTgzJUIzJUUzJTgyJUIwJUU3JUI3JUE4JUUzJTgwJTkxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NTQ3OGI2MWE2YjgyODRiN2FkY2VkN2ViNjBiMDc0OGQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYXNhLW1peWEmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1kOWEyYjBlYjAzYWVlMjNkZjM5MzA5MGFlNzU3NzYwNw&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-QUNTSFU&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=c40d7c05eb54b42b628d65067d8fd730",
+    "title_ja": "AIによる新規コーディングを最適化するプロンプト設計術：曖昧さを排除し、複雑な実装要件を正確にコードへ変換する具体的アプローチ",
+    "summary_ja": "AIを用いた新規コーディングにおいて、精度を高めるためのプロンプト設計手法を詳解する。 要件の曖昧さを排除し、コンテキストを構造化して与えることで、AIが出力するコードの品質と堅牢性は劇的に向上する。 単に機能実装を指示するのではなく、設計思想やコーディング規約をプロンプトに組み込むことで、手戻りのない効率的な開発プロセスを構築できることが鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AIによる新規コーディングを最適化するプロンプト設計術：曖昧さを排除し、複雑な実装要件を正確にコードへ変換する具体的アプローチ",
+        "summary": "AIを用いた新規コーディングにおいて、精度を高めるためのプロンプト設計手法を詳解する。 要件の曖昧さを排除し、コンテキストを構造化して与えることで、AIが出力するコードの品質と堅牢性は劇的に向上する。 単に機能実装を指示するのではなく、設計思想やコーディング規約をプロンプトに組み込むことで、手戻りのない効率的な開発プロセスを構築できることが鍵となる。"
+      },
+      "en": {
+        "title": "Mastering prompt engineering for new coding: Strategies to reduce ambiguity and generate production-ready code with higher structural integrity",
+        "summary": "This piece outlines advanced prompt engineering strategies specifically for new coding tasks, moving beyond generic requests to ensure high-accuracy output. By eliminating ambiguous instructions and forcing structured context into the prompt, developers can drastically improve the quality and robustness of AI-generated code. The article emphasizes that merely asking for function implementations is insufficient; instead, explicitly integrating design philosophy, architectural constraints, and specific coding standards directly into the prompt is the key to preventing hallucinations and minimizing rework. For builders leveraging AI to accelerate development, the takeaway is that a well-architected prompt functions as a technical specification, turning AI from a simple code generator into a consistent, reliable development partner."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-16T11:02:05.766Z"
+  },
+  {
+    "id": "art-1794826910789-gxs3i",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/honest_jacana976/n/n54e61fbe168d",
+    "published_at": "2026-11-16T10:38:22.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336811232/rectangle_large_type_2_3ec2558de75572cd99dbe69d33a9d404.jpg?fit=bounds&quality=85&width=1280",
+    "title_ja": "中学校の保健体育教師からITエンジニアへ――キャリアを大きく転換した「やす」氏の挑戦と個人開発を続ける現在地とは",
+    "summary_ja": "中学校の保健体育教師からITエンジニアへと異色の転身を遂げた「やす」氏が、キャリア変更の背景と現在の活動を語った。 現在はIT企業でWebエンジニアとして勤務する傍ら、個人開発としてWebアプリケーションの制作に注力している。 教育現場での経験を異分野でどう活かし、どのようにスキル習得と開発を両立しているのか。 未経験から技術の道を目指すエンジニアにとって、キャリア再構築のリアルな指針となる体験談だ。",
+    "translations": {
+      "ja": {
+        "title": "中学校の保健体育教師からITエンジニアへ――キャリアを大きく転換した「やす」氏の挑戦と個人開発を続ける現在地とは",
+        "summary": "中学校の保健体育教師からITエンジニアへと異色の転身を遂げた「やす」氏が、キャリア変更の背景と現在の活動を語った。 現在はIT企業でWebエンジニアとして勤務する傍ら、個人開発としてWebアプリケーションの制作に注力している。 教育現場での経験を異分野でどう活かし、どのようにスキル習得と開発を両立しているのか。 未経験から技術の道を目指すエンジニアにとって、キャリア再構築のリアルな指針となる体験談だ。"
+      },
+      "en": {
+        "title": "From Middle School PE Teacher to Web Engineer: How Yasu Pivoted His Career and Started Building Independent Web Apps",
+        "summary": "Yasu, a former middle school PE teacher, details his career pivot into the software engineering industry and the current challenges of balancing a full-time role with independent web application development. While his background is far removed from technical stacks, he navigated the transition to become a professional web engineer and continues to push personal projects on the side. This narrative provides an honest look at the realities of career retraining and the drive required to successfully move into tech from a non-technical profession. For developers considering similar transitions, Yasu’s journey highlights that practical engineering skills are often built through the persistent application of logic and learning, regardless of your starting point or past career path."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-16T11:01:50.789Z"
+  },
+  {
     "id": "art-1794826031836-dalw4",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -10076,32 +10181,6 @@
     "created_at": "2026-11-15T08:01:49.020Z"
   },
   {
-    "id": "art-1794728841693-r9pxp",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.thebanner.com/education/k-12-schools/county-schools-artificial-intelligence-453DCFYJL5CDBAM4AY3NYY4ILU/",
-    "published_at": "2026-11-15T07:40:07.000Z",
-    "og_image_url": "https://www.thebanner.com/resizer/v2/GB3KQB23CVG27F2UTYNFPSAL7I.jpg?auth=553ae80fa9dd57cb485e16f09edb81dea60a74e91ae5933d2e41ef61522a3090&width=1280&height=720&focal=4062,2031&quality=85",
-    "title_ja": "米ボルチモア郡の公立校、AI読み取り学習プログラムを段階的廃止へ — 学習効果や公正性をめぐる懸念が影響",
-    "summary_ja": "米メリーランド州ボルチモア郡の公立学区が、これまで導入していたAIを活用した読み取り学習プログラムを段階的に廃止する方針を発表した。 教育現場におけるAIツールの有効性や生徒への公平な指導といった懸念が背景にあり、教育カリキュラムに技術を組み込むことの難しさを浮き彫りにしている。 AIによる学習支援は導入の初期段階では期待を集めるものの、実際の教室環境では教育効果の測定や倫理的な運用において慎重な精査が求められる良い教訓と言える。",
-    "translations": {
-      "ja": {
-        "title": "米ボルチモア郡の公立校、AI読み取り学習プログラムを段階的廃止へ — 学習効果や公正性をめぐる懸念が影響",
-        "summary": "米メリーランド州ボルチモア郡の公立学区が、これまで導入していたAIを活用した読み取り学習プログラムを段階的に廃止する方針を発表した。 教育現場におけるAIツールの有効性や生徒への公平な指導といった懸念が背景にあり、教育カリキュラムに技術を組み込むことの難しさを浮き彫りにしている。 AIによる学習支援は導入の初期段階では期待を集めるものの、実際の教室環境では教育効果の測定や倫理的な運用において慎重な精査が求められる良い教訓と言える。"
-      },
-      "en": {
-        "title": "Baltimore County Public Schools to phase out AI-powered reading program amid efficacy and educational equity concerns",
-        "summary": "Baltimore County Public Schools has announced plans to phase out its AI-driven reading program, signaling a shift in how the district integrates educational technology into its K-12 curriculum. The decision stems from growing concerns regarding the software's measurable impact on student literacy and potential inequities in how AI-based tools are deployed across diverse classrooms. This move highlights a recurring challenge for builders and administrators: implementing algorithmic learning tools requires rigorous verification that often proves difficult to sustain in real-world educational environments. The core takeaway is that while AI can theoretically accelerate skill acquisition, relying on black-box systems without transparent efficacy data and equitable access plans will inevitably lead to institutional pushback and eventual policy reversal."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-15T07:47:21.693Z"
-  },
-  {
     "id": "art-1794728821602-02rm0",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -10206,33 +10285,6 @@
       "研究"
     ],
     "created_at": "2026-11-15T07:31:44.434Z"
-  },
-  {
-    "id": "art-1794727065649-eaxv6",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://medium.com/@wangjiayiliuyan/i-tested-an-ai-dance-edit-on-five-seconds-of-footage-then-i-tried-the-whole-clip-2e733305eee1",
-    "published_at": "2026-11-15T06:58:46.000Z",
-    "og_image_url": null,
-    "title_ja": "AI動画編集ツールの「5秒間」と「フル尺」テスト比較：生成AI特有の品質低下や一貫性欠如を検証した結果を公開",
-    "summary_ja": "短尺のデモ動画とフル尺の映像でAIによるダンス編集を比較検証した結果、短尺では見えなかった品質劣化や一貫性の崩壊が長尺で顕著になることが判明した。 生成AI動画ツールは特定の数秒間では完璧に見えても、長時間処理では時間的一貫性の破綻が課題となる。 開発者やクリエイターは、部分的な成功体験に惑わされず、実際のユースケースに基づいたフル尺でのストレステストを必須プロセスに組み込むべきだ。",
-    "translations": {
-      "ja": {
-        "title": "AI動画編集ツールの「5秒間」と「フル尺」テスト比較：生成AI特有の品質低下や一貫性欠如を検証した結果を公開",
-        "summary": "短尺のデモ動画とフル尺の映像でAIによるダンス編集を比較検証した結果、短尺では見えなかった品質劣化や一貫性の崩壊が長尺で顕著になることが判明した。 生成AI動画ツールは特定の数秒間では完璧に見えても、長時間処理では時間的一貫性の破綻が課題となる。 開発者やクリエイターは、部分的な成功体験に惑わされず、実際のユースケースに基づいたフル尺でのストレステストを必須プロセスに組み込むべきだ。"
-      },
-      "en": {
-        "title": "Putting AI Dance Video Editors to the Test: Comparing Five-Second Demos Against Full-Length Clips Reveals Hidden Quality Gaps",
-        "summary": "Testing AI-powered dance editing tools on short five-second segments versus full-length clips exposes significant gaps in output consistency that brief demos often obscure. While these models can produce polished results in isolation, scaling to longer sequences frequently causes a breakdown in temporal consistency, leading to artifacts that ruin the final composition. Developers and creators should avoid judging performance solely on curated highlights, as these rarely reflect the stability required for production use cases. The critical takeaway is that rigorous stress testing on full-length footage is essential to identify these degradation patterns early, rather than trusting the deceptive perfection seen in shorter, cherry-picked video samples that fail under extended generation constraints."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "動画",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-15T07:17:45.649Z"
   },
   {
     "id": "art-1794727038379-lgs0w",
@@ -10890,32 +10942,6 @@
       "研究"
     ],
     "created_at": "2026-11-15T04:17:49.357Z"
-  },
-  {
-    "id": "art-1794715324900-xgw7c",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/mahaya123/items/8b48c98ca62ca9c70b7e",
-    "published_at": "2026-11-15T03:47:10.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0Mjc0NzI1JTJGODczODRkOTVkYmUxMjU0NmIzNDcxMDE3N2FmY2E5YjJhMWRjNWIxMyUyRnhfbGFyZ2UucG5nJTNGMTc2Mzk4NjU4Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YzdmOTBlMjEwMTVmZDM0ZmUzZjYxMzZmNWY5ZjgxMmQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1b85f633417cc24a99c9aa4dfb9b2ec8?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgyJUE4JUUzJTgzJUIzJUUzJTgyJUI4JUUzJTgzJThCJUUzJTgyJUEyJUUzJTgxJUFFJUU0JUJCJTk1JUU0JUJBJThCJUU4JUExJTkzMTMlRTUlOEUlOUYlRTUlODklODcmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz03MTBmMjgxZWQ1NWJlZjYzZmQxYjc5NDhjMDFhNWJlNw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYWhheWExMjMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yMmIzYTFmMjdmNTBhNzdkNjRjYTE4M2JiZTg0Yzg3Zg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3007ef08818027564e8649127216b9f4",
-    "title_ja": "エンジニアの生産性を最大化する「仕事術13原則」：生成AI活用の具体策とファイル管理・品質向上メソッド",
-    "summary_ja": "エンジニアの業務効率と品質を底上げするための「13の仕事術」が公開された。 特に生成AIを活用した命名規則の自動化が重要で、ファイル名を「YYYYMMDD_具体的な内容_V1.拡張子」のように一意かつ内容が推測可能な形式で統一することを推奨している。 思考プロセス自体をAIに委ねてアウトプットをコピペする手法は、単なる自動化を超えた品質向上をもたらす。",
-    "translations": {
-      "ja": {
-        "title": "エンジニアの生産性を最大化する「仕事術13原則」：生成AI活用の具体策とファイル管理・品質向上メソッド",
-        "summary": "エンジニアの業務効率と品質を底上げするための「13の仕事術」が公開された。 特に生成AIを活用した命名規則の自動化が重要で、ファイル名を「YYYYMMDD_具体的な内容_V1.拡張子」のように一意かつ内容が推測可能な形式で統一することを推奨している。 思考プロセス自体をAIに委ねてアウトプットをコピペする手法は、単なる自動化を超えた品質向上をもたらす。"
-      },
-      "en": {
-        "title": "13 Essential Principles to Maximize Engineering Productivity: Leveraging Generative AI for Workflow Automation and Better File Management",
-        "summary": "A new set of 13 fundamental principles aims to boost engineering productivity, focusing heavily on utilizing generative AI to streamline daily tasks. The guide emphasizes rigorous standardization, such as automating file naming conventions into a descriptive 'YYYYMMDD_Content_V1.ext' format, ensuring long-term maintainability. By offloading thought processes to AI and adopting copy-paste workflows, engineers can elevate code quality far beyond simple automation. The key takeaway for builders is to externalize and formalize their internal decision-making rules as prompts, effectively treating LLMs as an extension of their own cognitive capacity. This approach minimizes cognitive overhead while ensuring that development velocity and system consistency remain high even as project complexity scales significantly over time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-15T04:02:04.900Z"
   },
   {
     "id": "art-1794714407062-7e0bj",
@@ -12570,32 +12596,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-14T10:17:17.819Z"
-  },
-  {
-    "id": "art-1794650667608-ha8nv",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/sunwood_ai_labs/articles/20261114-nekoneko-01-brand-and-logo",
-    "published_at": "2026-11-14T04:39:57.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--srxuH8Wo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AD%25E3%2581%2593%25E3%2581%25AEAI%25E3%2581%258A%25E3%2582%2582%25E3%2581%25A1%25E3%2582%2583%25E5%25B7%25A5%25E5%25A0%25B4%25E3%2580%258CNEKONEKO%2520INDUSTRIES%25E3%2580%258D%25E8%25AA%2595%25E7%2594%259F%25E8%25A8%2598%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Maki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDdpSmVyNldLVlpKLUd4N054QWVuSFVtYXQ3MUhhd1NXaU5hRG5FTnZiMXZZdHBIaGs9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "家庭用3Dプリンターで実現するAIおもちゃ製造、ブランド「NEKONEKO INDUSTRIES」の立ち上げとロゴ決定の全プロセス",
-    "summary_ja": "家庭用3Dプリンター「Bambu Lab A1 mini」とFreeCADを活用し、ねこのAI職人たちが乗り物おもちゃを製造するプロジェクト「NEKONEKO INDUSTRIES」が始動。 当初の「NEKOMO」という名称を製品ブランドへと再整理し、乗り物全般を扱う工場として社名を刷新した。 本記事では、ミッションの定義から40案のロゴ検討を経て「38ねこ船長」が選ばれるまでの工程を、当時のプロンプトと共に公開。 製造プロセスとAI活用の好事例として参考になる。",
-    "translations": {
-      "ja": {
-        "title": "家庭用3Dプリンターで実現するAIおもちゃ製造、ブランド「NEKONEKO INDUSTRIES」の立ち上げとロゴ決定の全プロセス",
-        "summary": "家庭用3Dプリンター「Bambu Lab A1 mini」とFreeCADを活用し、ねこのAI職人たちが乗り物おもちゃを製造するプロジェクト「NEKONEKO INDUSTRIES」が始動。 当初の「NEKOMO」という名称を製品ブランドへと再整理し、乗り物全般を扱う工場として社名を刷新した。 本記事では、ミッションの定義から40案のロゴ検討を経て「38ねこ船長」が選ばれるまでの工程を、当時のプロンプトと共に公開。 製造プロセスとAI活用の好事例として参考になる。"
-      },
-      "en": {
-        "title": "Building a DIY AI Toy Factory: How NEKONEKO INDUSTRIES Scaled from a CAD Prototype to a Full Brand",
-        "summary": "Utilizing a Bambu Lab A1 mini 3D printer and FreeCAD, this project documents the journey of building \"NEKONEKO INDUSTRIES,\" an AI-powered toy factory where digital cat artisans manufacture model vehicles. The founder chronicles the evolution from the initial \"NEKOMO\" concept—now serving as the core product brand—to a broader industrial identity. The article provides a transparent look at the operational rebranding, including a deep dive into the selection process for the final \"Captain 38\" logo out of 40 generated iterations. By sharing the exact prompts used for ideation and design, the author offers a replicable blueprint for individual makers looking to integrate LLMs into physical manufacturing workflows and small-scale product development."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-14T10:04:27.608Z"
   },
   {
     "id": "art-1794650601094-0j4py",
