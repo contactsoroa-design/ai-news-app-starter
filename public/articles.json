@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794813423635-pfsx7",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/itaraiguma/articles/faulthandler-stall-watchdog-segfault",
+    "published_at": "2026-11-15T22:09:42.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--t-PYJTkg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E6%25AD%25A2%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E6%259B%25B8%25E3%2581%258D%25E5%2587%25BA%25E3%2581%259B%25E3%2582%258B%25E3%2580%258D%25E3%2581%258B%25E3%2582%2589%25E9%2581%25B8%25E3%2582%2593%25E3%2581%25A0%25E5%2581%259C%25E6%25AD%25A2%25E6%25A4%259C%25E7%259F%25A5%25E3%2581%258C%25E3%2580%2581%25E9%25AB%2598%25E8%25B2%25A0%25E8%258D%25B7%25E3%2581%25AE%25E5%25A4%259C%25E3%2581%25AB%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC%25E3%2582%2592%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlZmMxMmY2MTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発のバックエンドで導入した「停止検知」が仇に、高負荷時にワーカーを誤判定で強制終了させていた技術的な教訓",
+    "summary_ja": "個人開発サービス「DevPick」で、FastAPIのワーカーが頻繁に再起動する問題の調査用に導入した「停止検知」機能が、逆に障害の原因となっていた。 スワップ発生で数秒処理が止まっただけのワーカーを、親プロセスが過敏に反応して殺していたことが判明。 運用監視の自動化において、負荷変動とメモリ逼迫の境界線を見誤ると、かえってシステムの可用性を損なうという教訓である。",
+    "translations": {
+      "ja": {
+        "title": "個人開発のバックエンドで導入した「停止検知」が仇に、高負荷時にワーカーを誤判定で強制終了させていた技術的な教訓",
+        "summary": "個人開発サービス「DevPick」で、FastAPIのワーカーが頻繁に再起動する問題の調査用に導入した「停止検知」機能が、逆に障害の原因となっていた。 スワップ発生で数秒処理が止まっただけのワーカーを、親プロセスが過敏に反応して殺していたことが判明。 運用監視の自動化において、負荷変動とメモリ逼迫の境界線を見誤ると、かえってシステムの可用性を損なうという教訓である。"
+      },
+      "en": {
+        "title": "Why my custom worker-stuck detection for FastAPI became the primary cause of service instability under heavy load",
+        "summary": "While debugging frequent worker restarts for my personal project, DevPick, I implemented a custom diagnostic script to detect and kill hung FastAPI workers by logging their stack traces. This tool eventually backfired during a high-traffic spike; the script misinterpreted normal memory swapping—which caused temporary latency—as a complete crash, causing the parent process to repeatedly terminate healthy workers. The core lesson here is that automated remediation tools, if too aggressive, can become self-inflicted denial-of-service triggers. When building on resource-constrained infrastructure like a 1GB VPS, you must ensure your observability or auto-recovery logic distinguishes between process-level deadlocks and transient OS-level I/O waits to avoid killing workers that are simply under heavy memory pressure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-16T07:17:03.635Z"
+  },
+  {
+    "id": "art-1794813414579-0e0yy",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kozo_ki/articles/f048577ed2e9d7",
+    "published_at": "2026-11-16T04:26:38.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Bngd7egH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BC%259A%25E8%25AD%25B0%25E3%2581%25AE%25E9%258C%25B2%25E9%259F%25B3%25E3%2581%258B%25E3%2582%2589%25E8%258B%25B1%25E8%25AA%259E%25E5%25AD%2597%25E5%25B9%2595%25E3%2581%25A8%25E5%2590%25B9%25E3%2581%258D%25E6%259B%25BF%25E3%2581%2588%25E3%2581%25BE%25E3%2581%25A7%25202%25E5%259B%259E%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2599%25E3%2582%258B%25E3%2581%25A0%25E3%2581%2591%25E3%2580%2582%25E8%25AA%25A4%25E8%25AA%258D%25E8%25AD%2598%25E3%2582%2592%25E7%259B%25B4%25E3%2581%2597%25E3%2580%2581%25E6%25A4%259C%25E8%25A8%25BC%25E3%2583%25BB%25E4%25BF%25AE%25E6%25AD%25A3%25E3%2581%25BE%25E3%2581%25A7%25E5%25AE%259F%25E6%2596%25BD%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%2520LDX%2520Voice...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kozo%2540Kawamura%2520Inte...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXNQNzNuNVZURGxKdEp0SlNyY0FSRXVRbTZ4YmdDVkwwRUQ4Z3BsRVBGTUNDbS13PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "会議音声を自動字幕・吹き替え化する「LDX Voice」：誤認識を最小化し、検証・修正プロセスを内製化する実用ワークフロー",
+    "summary_ja": "会議の録音から英語字幕生成と吹き替えまでを自動化するツール「LDX Voice」の仕組みが公開された。 本手法は、AIによる自動変換後に誤認識を人間が2回確認・修正するプロセスを組み込むことで、精度の高い成果物を得るものだ。 非エンジニアでもMCP接続により自動化環境を構築でき、API連携を駆使して業務効率を劇的に高められる。 単にAIに丸投げするのではなく、検証プロセスをフローに含めることが、ビジネス利用における実用性の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "会議音声を自動字幕・吹き替え化する「LDX Voice」：誤認識を最小化し、検証・修正プロセスを内製化する実用ワークフロー",
+        "summary": "会議の録音から英語字幕生成と吹き替えまでを自動化するツール「LDX Voice」の仕組みが公開された。 本手法は、AIによる自動変換後に誤認識を人間が2回確認・修正するプロセスを組み込むことで、精度の高い成果物を得るものだ。 非エンジニアでもMCP接続により自動化環境を構築でき、API連携を駆使して業務効率を劇的に高められる。 単にAIに丸投げするのではなく、検証プロセスをフローに含めることが、ビジネス利用における実用性の鍵となる。"
+      },
+      "en": {
+        "title": "How LDX Voice automates meeting subtitles and dubbing with a human-in-the-loop validation workflow for higher accuracy",
+        "summary": "LDX Voice offers a practical workflow for transforming meeting recordings into English subtitles and dubbed audio. The system balances generative AI speed with reliability by embedding a dual-verification process, where users review and correct misrecognitions twice before finalization. This approach moves beyond simply offloading tasks to AI, which often results in critical information loss, and instead creates a robust pipeline through MCP connections that even non-engineers can deploy. The key takeaway for builders integrating AI into enterprise workflows is that automated outputs require a structured verification layer to be truly business-ready. By keeping human-in-the-loop oversight for correction and validation, organizations can leverage API-driven automation while ensuring the data remains accurate enough for actual management decisions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "音声"
+    ],
+    "created_at": "2026-11-16T07:16:54.579Z"
+  },
+  {
+    "id": "art-1794813407523-gppb2",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/markdown-viewer/skills",
+    "published_at": "2026-11-16T06:27:50.000Z",
+    "og_image_url": null,
+    "title_ja": "AIコーディングエージェントに図解能力を付与：Markdown対応の「Skills for AI coding agents」がGitHubで公開",
+    "summary_ja": "GitHubで公開された「Skills for AI coding agents」は、AIコーディングエージェントがMarkdown内でMermaidなどの図解を正しく生成・修正するためのスキルセットを定義したライブラリだ。 AIエージェントに図解作成能力を与えることで、複雑な設計図やフローチャートのドキュメント化を自動化できる。 開発者は既存のエージェントワークフローにこの仕様を組み込むだけで、保守性の高い視覚的ドキュメントを即座に出力可能になる。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングエージェントに図解能力を付与：Markdown対応の「Skills for AI coding agents」がGitHubで公開",
+        "summary": "GitHubで公開された「Skills for AI coding agents」は、AIコーディングエージェントがMarkdown内でMermaidなどの図解を正しく生成・修正するためのスキルセットを定義したライブラリだ。 AIエージェントに図解作成能力を与えることで、複雑な設計図やフローチャートのドキュメント化を自動化できる。 開発者は既存のエージェントワークフローにこの仕様を組み込むだけで、保守性の高い視覚的ドキュメントを即座に出力可能になる。"
+      },
+      "en": {
+        "title": "GitHub project adds specific diagramming capabilities to AI coding agents via standardized Markdown and Mermaid syntax integration",
+        "summary": "The newly released 'Skills for AI coding agents' on GitHub provides a crucial toolkit for developers looking to equip their autonomous coding assistants with native diagramming abilities. By integrating standardized instructions and constraints for Markdown-based visual outputs like Mermaid, agents can reliably generate, correct, and version-control complex flowcharts and architecture diagrams within their codebase documentation. This approach moves beyond simple text-based explanations, allowing agents to maintain living technical diagrams that evolve alongside code changes. For developers building agentic workflows, implementing this skills framework means automating the tedious process of visual documentation, resulting in highly maintainable and transparent project repos where architecture evolves in sync with the actual implementation logic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-16T07:16:47.523Z"
+  },
+  {
+    "id": "art-1794813400167-50mrs",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shinkaigames/n/nc222a622367d",
+    "published_at": "2026-11-16T06:59:55.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336816130/rectangle_large_type_2_2bed8fa9a8fccc8fa842f0ca9b6e2586.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "SNS運用を2週間AIに完全自動化した結果：チャンネル登録者増加は「1名のみ」という厳しい現実",
+    "summary_ja": "YouTube、TikTok、Instagramなど複数SNSのコンテンツ生成をClaudeに2週間完全委託する実験を行った結果、チャンネル登録者の増加はわずか1名という厳しい結果に終わった。 AIによる生成物がプラットフォーム側のアルゴリズムや視聴者のエンゲージメント要件を十分に満たせなかったことが原因と考えられる。",
+    "translations": {
+      "ja": {
+        "title": "SNS運用を2週間AIに完全自動化した結果：チャンネル登録者増加は「1名のみ」という厳しい現実",
+        "summary": "YouTube、TikTok、Instagramなど複数SNSのコンテンツ生成をClaudeに2週間完全委託する実験を行った結果、チャンネル登録者の増加はわずか1名という厳しい結果に終わった。 AIによる生成物がプラットフォーム側のアルゴリズムや視聴者のエンゲージメント要件を十分に満たせなかったことが原因と考えられる。"
+      },
+      "en": {
+        "title": "Automating Social Media Content with AI for Two Weeks: A Harsh Lesson in Subscriber Growth",
+        "summary": "An experimental trial of fully outsourcing content creation for YouTube, TikTok, Instagram, and Threads to Claude for two consecutive weeks resulted in a meager gain of only one subscriber. This outcome highlights the significant gap between raw AI-generated content and the specific engagement requirements demanded by modern social media algorithms. Relying entirely on automated workflows for audience growth proved insufficient, as the AI failed to capture the nuances necessary to convert viewers into followers. For builders, this serves as a sobering reminder that while AI is an efficient tool for production, it cannot replace the strategic oversight and authentic connection required to cut through the noise in crowded content ecosystems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-11-16T07:16:40.167Z"
+  },
+  {
     "id": "art-1794812535258-vwmzm",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -8207,32 +8313,6 @@
     "created_at": "2026-11-15T10:02:15.885Z"
   },
   {
-    "id": "art-1794736916283-bvdkt",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/blf/n/n40ccc5457b77",
-    "published_at": "2026-11-15T09:24:48.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336449229/rectangle_large_type_2_f907a06303f78faf9ad197ef0836ba1a.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIで昭和の町歩きゲームを開発する初心者が陥った罠──描画負荷が重すぎて「動かない」原因とパフォーマンス改善の教訓",
-    "summary_ja": "ゲーム開発初心者がAIを活用し、鉛筆画風の昭和レトロな町を散策する作品「きょうも、まちを歩く。 」を制作した。 しかし、完成したゲームは動作が極めて重く、プレイに耐えない状況に陥った。 本書では、アセットの最適化不足や描画処理の設計ミスなど、初心者が見落としがちなボトルネックを具体的に解説する。 AI生成アセットを安易に組み込む際の落とし穴と、パフォーマンスを維持しつつ世界観を表現するための開発上の制約について学ぶ好例である。",
-    "translations": {
-      "ja": {
-        "title": "AIで昭和の町歩きゲームを開発する初心者が陥った罠──描画負荷が重すぎて「動かない」原因とパフォーマンス改善の教訓",
-        "summary": "ゲーム開発初心者がAIを活用し、鉛筆画風の昭和レトロな町を散策する作品「きょうも、まちを歩く。 」を制作した。 しかし、完成したゲームは動作が極めて重く、プレイに耐えない状況に陥った。 本書では、アセットの最適化不足や描画処理の設計ミスなど、初心者が見落としがちなボトルネックを具体的に解説する。 AI生成アセットを安易に組み込む際の落とし穴と、パフォーマンスを維持しつつ世界観を表現するための開発上の制約について学ぶ好例である。"
-      },
-      "en": {
-        "title": "Beginner AI developer hits performance wall building a retro-style game: Why high-fidelity assets made their project unplayable",
-        "summary": "A beginner developer building a cozy, Showa-era walk-through game called 'Kyōmo, machi o aruku.' discovered that relying solely on AI to generate assets quickly led to a critical failure. While the aesthetic was visually stunning, the finished game was so resource-intensive that it became unplayable on standard hardware. The author explores how unoptimized, high-fidelity AI-generated assets act as hidden performance killers, forcing developers to rethink technical constraints early in the production pipeline. This serves as a cautionary tale for builders leveraging generative tools: without implementing proper draw calls, texture compression, or asset optimization, even the most evocative world-building will crash when it meets real-world hardware limits. Builders must balance visual ambition against engine efficiency to ensure their titles remain interactive rather than just decorative."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-15T10:01:56.283Z"
-  },
-  {
     "id": "art-1794736012883-uzzr8",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9202,32 +9282,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-15T06:31:52.755Z"
-  },
-  {
-    "id": "art-1794724298094-osotk",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/lawyer-upgrades-eight-v100-private-ai-server-to-run-80-percent-of-deepseek-v4-1-flash-at-4-bit-nvfp4-precision-adds-1tb-of-ram-an-nvidia-rtx-3090-and-fixes-crashes-caused-by-a-bad-psu",
-    "published_at": "2026-11-15T06:19:01.000Z",
-    "og_image_url": "https://cdn.mos.cms.futurecdn.net/iRobEeMPfpiSTatZm5zucg-1080-80.jpg",
-    "title_ja": "弁護士がNVIDIA V100×8基の自作AIサーバーを強化、DeepSeek V4.1 Flashの80%を4bit精度で実行可能に",
-    "summary_ja": "ある弁護士がNVIDIA V100を8基搭載したプライベートAIサーバーを大幅にアップグレードし、DeepSeek V4.1 Flashの80%を4bit（NVFP4）精度で推論可能にした。 この構築では、RAMを1TBへ増設し、RTX 3090を追加したほか、不安定な動作の原因となっていた電源ユニット（PSU）の故障も特定・修理している。",
-    "translations": {
-      "ja": {
-        "title": "弁護士がNVIDIA V100×8基の自作AIサーバーを強化、DeepSeek V4.1 Flashの80%を4bit精度で実行可能に",
-        "summary": "ある弁護士がNVIDIA V100を8基搭載したプライベートAIサーバーを大幅にアップグレードし、DeepSeek V4.1 Flashの80%を4bit（NVFP4）精度で推論可能にした。 この構築では、RAMを1TBへ増設し、RTX 3090を追加したほか、不安定な動作の原因となっていた電源ユニット（PSU）の故障も特定・修理している。"
-      },
-      "en": {
-        "title": "Lawyer upgrades 8× V100 private server to run 80% of DeepSeek V4.1 Flash at 4-bit precision",
-        "summary": "A lawyer has successfully upgraded their home lab server, powered by eight NVIDIA V100 GPUs, to run 80% of DeepSeek V4.1 Flash using 4-bit (NVFP4) quantization. To achieve this, the builder expanded system memory to 1TB, integrated an additional RTX 3090, and resolved systemic stability issues caused by a faulty power supply unit. By carefully managing hardware bottlenecks and optimizing quantization, this build demonstrates a practical roadmap for running state-of-the-art LLMs on aging, refurbished enterprise hardware. For individual builders, the takeaway is that PSU reliability and RAM capacity are just as critical as raw compute when scaling local inference projects, proving that older GPU clusters remain viable for modern AI workloads."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-15T06:31:38.094Z"
   },
   {
     "id": "art-1794724291811-55x5w",
@@ -12092,32 +12146,6 @@
     "created_at": "2026-11-14T08:31:32.760Z"
   },
   {
-    "id": "art-1794644231223-bzbjh",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/kentaro36/articles/why-rust-is-getting-attention",
-    "published_at": "2026-11-14T01:37:39.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--eylHE6DB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259C%25E4%25BB%258A%25E3%2580%2581Rust%25E3%2581%258C%25E6%25B3%25A8%25E7%259B%25AE%25E3%2581%2595%25E3%2582%258C%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259A%25E8%25A8%2580%25E8%25AA%259E%25E3%2581%25AE%25E6%25AD%25B4%25E5%258F%25B2%25E3%2580%2581Python%25E3%2581%25A8%25E3%2581%25AE%25E9%2596%25A2%25E4%25BF%2582%25E3%2580%2581AI%25E5%259F%25BA%25E7%259B%25A4%25E3%2581%25AE%25E4%25BA%258B%25E4%25BE%258B%25E3%2581%258B%25E3%2582%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:SeaOtter%2520%2520%2528Kentaro...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUzNjRkZTA1NTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "なぜ今、Rustが注目されるのか？Python代替やAI基盤における役割と、次世代アプリケーション開発に求められる言語特性を解説",
-    "summary_ja": "C/C++の代替として注目されていたRustだが、現在はPythonサービスの高速化やAIエージェントの実行基盤として急速に浸透している。 単なるシステムプログラミング言語ではなく、Pythonのボトルネックを解消するコンポーネント作成や、高負荷なAI推論を支える土台としてRustの採用が加速中だ。",
-    "translations": {
-      "ja": {
-        "title": "なぜ今、Rustが注目されるのか？Python代替やAI基盤における役割と、次世代アプリケーション開発に求められる言語特性を解説",
-        "summary": "C/C++の代替として注目されていたRustだが、現在はPythonサービスの高速化やAIエージェントの実行基盤として急速に浸透している。 単なるシステムプログラミング言語ではなく、Pythonのボトルネックを解消するコンポーネント作成や、高負荷なAI推論を支える土台としてRustの採用が加速中だ。"
-      },
-      "en": {
-        "title": "Why Rust is gaining momentum in AI infrastructure: Replacing Python bottlenecks and enabling high-performance, memory-safe agent backends",
-        "summary": "Rust is shifting from its traditional role as a C/C++ successor into a critical backbone for modern AI infrastructure. Beyond standard system programming, developers are increasingly leveraging Rust to supercharge Python services, building high-performance modules to replace slow logic or creating specialized foundations for AI agents. This shift reflects a strategic transition in modern software architecture: instead of abandoning high-level languages like Python, teams are adopting a hybrid approach where Rust handles computationally intensive tasks to maximize resource efficiency and guarantee memory safety. For developers and architects, mastering this Rust-Python synergy is no longer a niche skill but a fundamental requirement for scaling AI-driven applications and reducing infrastructure overhead in competitive production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-14T08:17:11.223Z"
-  },
-  {
     "id": "art-1794644209237-ukibk",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -13216,32 +13244,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-13T21:47:50.342Z"
-  },
-  {
-    "id": "art-1794605547457-ljkeq",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/ubinity/articles/11dec87c6da744",
-    "published_at": "2026-11-13T12:41:41.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--343cWfMU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AE%25E8%25AD%25B7%25E7%25AC%25A6%25EF%25BC%259ARaspberry%2520Pi%2520SD%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2589%25E6%2591%25A9%25E8%2580%2597%25E9%2598%25B2%25E6%25AD%25A2%25E3%2581%25A8tmpfs%25E4%25BF%259D%25E8%25AD%25B7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Richard%2520King%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzAxZWUwNzg5ZWQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Raspberry PiのSDカード寿命問題を解決する「tmpfs」活用術：書き込み頻度を抑制しOSの突然死を防ぐ堅牢な運用基盤の構築法",
-    "summary_ja": "Raspberry Piなどのシングルボードコンピュータ運用における最大の敵は、MicroSDカードの物理的摩耗による突然死である。 OSログや一時ファイルへの書き込みをメモリ上の「tmpfs」へリダイレクトし、ディスクI/Oを物理メディアから隔離することで、書き込み回数を劇的に削減し寿命を延ばすことができる。 宅内SREや常時稼働サーバー構築において、可用性を維持するための必須の防御策といえる。",
-    "translations": {
-      "ja": {
-        "title": "Raspberry PiのSDカード寿命問題を解決する「tmpfs」活用術：書き込み頻度を抑制しOSの突然死を防ぐ堅牢な運用基盤の構築法",
-        "summary": "Raspberry Piなどのシングルボードコンピュータ運用における最大の敵は、MicroSDカードの物理的摩耗による突然死である。 OSログや一時ファイルへの書き込みをメモリ上の「tmpfs」へリダイレクトし、ディスクI/Oを物理メディアから隔離することで、書き込み回数を劇的に削減し寿命を延ばすことができる。 宅内SREや常時稼働サーバー構築において、可用性を維持するための必須の防御策といえる。"
-      },
-      "en": {
-        "title": "Preventing Raspberry Pi SD Card Failure: Implementing tmpfs Writes to Extend Flash Longevity for Reliable HomeLab Operations",
-        "summary": "For engineers building HomeLab SRE clusters or edge nodes using single-board computers, the most common point of failure remains the physical wear on MicroSD cards caused by constant disk writes. This article details a robust strategy to bypass this hardware constraint by offloading volatile system logs and temporary files to tmpfs, an in-memory file system. By redirecting heavy I/O operations away from the physical flash storage, you effectively isolate the MicroSD card from unnecessary churn, preventing the dreaded read-only filesystem errors that plague long-running Raspberry Pi deployments. For anyone managing constant-uptime servers, implementing this memory-mapped write strategy is a critical maintenance step to ensure system stability and avoid sudden data loss."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-13T21:32:27.457Z"
   },
   {
     "id": "art-1794604612913-sooic",
