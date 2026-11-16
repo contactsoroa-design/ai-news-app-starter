@@ -1,5 +1,116 @@
 [
   {
+    "id": "art-1794846803967-9nugy",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/use-prompt-caching-with-open-weight-models-on-amazon-bedrock/",
+    "published_at": "2026-11-16T15:42:41.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/04/ML-22160-featured-image.png",
+    "title_ja": "AWSがAmazon Bedrockでの「プロンプトキャッシュ」対応を発表、オープンウェイトモデルの入力コスト削減とレイテンシ改善を実現",
+    "summary_ja": "AWSはAmazon Bedrockにて、オープンウェイトモデルを対象とした「プロンプトキャッシュ」機能の提供を開始した。 これにより、繰り返し使用する長いコンテキストをキャッシュし、APIリクエストごとの入力処理を最適化することで、コスト削減と応答速度の向上が可能になる。 Chat Completions APIを通じた暗黙的・明示的な実装を学ぶことで、コーディングエージェントなどの文脈依存型アプリケーションにおいて、効率的な推論パイプラインを構築できる。",
+    "translations": {
+      "ja": {
+        "title": "AWSがAmazon Bedrockでの「プロンプトキャッシュ」対応を発表、オープンウェイトモデルの入力コスト削減とレイテンシ改善を実現",
+        "summary": "AWSはAmazon Bedrockにて、オープンウェイトモデルを対象とした「プロンプトキャッシュ」機能の提供を開始した。 これにより、繰り返し使用する長いコンテキストをキャッシュし、APIリクエストごとの入力処理を最適化することで、コスト削減と応答速度の向上が可能になる。 Chat Completions APIを通じた暗黙的・明示的な実装を学ぶことで、コーディングエージェントなどの文脈依存型アプリケーションにおいて、効率的な推論パイプラインを構築できる。"
+      },
+      "en": {
+        "title": "Amazon Bedrock adds prompt caching for open-weight models to cut input costs and lower request latency",
+        "summary": "AWS has launched prompt caching for open-weight models on Amazon Bedrock, allowing developers to cache frequently reused long-context inputs. This feature significantly lowers input costs and improves response latency by avoiding redundant processing for static data on every API call. The update covers both implicit and explicit caching strategies via the Chat Completions API, providing a practical blueprint for implementing these optimizations in stateful applications like coding agents. For builders managing high-volume inference, mastering these caching mechanisms is critical to maintaining performant, cost-effective AI agents. By properly leveraging cached prompts, teams can scale complex, context-heavy workflows without incurring the full input price penalty on every turn, effectively turning long-context overhead into a reusable asset."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-16T16:33:23.967Z"
+  },
+  {
+    "id": "art-1794846789343-p993k",
+    "source_id": "source-clay",
+    "source_name": "Clay Blog (GTM AI)",
+    "url": "https://www.clay.com/blog/gtm-self-learning-loops",
+    "published_at": "2026-11-12T00:37:41.000Z",
+    "og_image_url": "https://cdn.prod.website-files.com/61702af2e3966e09c4101538/6ad8e3e2342cbd3d4e23574b_Blog%20Cover.avif",
+    "title_ja": "Clayが提唱する「GTM CI/CD」：AIエージェントによる営業フロー構築をソフトウェア開発のように管理・改善する新アプローチ",
+    "summary_ja": "ClayのGTMエンジニアが公開した「GTM CI/CD」は、AIエージェントの営業ワークフローをソフトウェア開発の手法で管理する手法だ。 コードレビューのように営業戦略を検証し、反復的に改善する「学習ループ」を組み込むことで、エージェントが自律的に精度を向上させる仕組みを作る。 今後、単なる自動化ツールを超えて、営業戦略そのものをコードのようにデプロイし、テストと修正を繰り返す運用体制が、AI時代のGTM競争力を左右することになるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Clayが提唱する「GTM CI/CD」：AIエージェントによる営業フロー構築をソフトウェア開発のように管理・改善する新アプローチ",
+        "summary": "ClayのGTMエンジニアが公開した「GTM CI/CD」は、AIエージェントの営業ワークフローをソフトウェア開発の手法で管理する手法だ。 コードレビューのように営業戦略を検証し、反復的に改善する「学習ループ」を組み込むことで、エージェントが自律的に精度を向上させる仕組みを作る。 今後、単なる自動化ツールを超えて、営業戦略そのものをコードのようにデプロイし、テストと修正を繰り返す運用体制が、AI時代のGTM競争力を左右することになるだろう。"
+      },
+      "en": {
+        "title": "Clay introduces GTM CI/CD: Adapting software development lifecycles to build, test, and ship autonomous agentic sales workflows",
+        "summary": "Clay’s go-to-market engineers have adapted software development methodologies for sales, introducing 'GTM CI/CD' to manage and improve agentic workflows through rigorous testing loops. By treating sales motions like application code, teams can review strategy changes, run A/B tests, and safely deploy learning loops where agents iteratively refine their own outreach performance. This shift moves companies beyond static automation, treating the go-to-market engine as a living product that evolves through continuous integration and deployment. For builders operating in the agentic era, the takeaway is that sales strategies can no longer be manual static tasks; they must be managed with the same version control, testing rigor, and deployment discipline as critical software production pipelines."
+      }
+    },
+    "tool_tags": [
+      "Clay"
+    ],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-16T16:33:09.343Z"
+  },
+  {
+    "id": "art-1794846769350-jodwk",
+    "source_id": "source-nvidia-ai",
+    "source_name": "NVIDIA Generative AI Blog",
+    "url": "https://blogs.nvidia.com/blog/20-years-cuda/",
+    "published_at": "2026-11-16T16:00:11.000Z",
+    "og_image_url": "https://blogs.nvidia.com/wp-content/uploads/2026/11/cuda-at-20-1920x1080-1.jpg",
+    "title_ja": "NVIDIAが「CUDA」誕生20周年を記念、GPUコンピューティングが科学研究とAI開発の基盤となるまでの軌跡を振り返る",
+    "summary_ja": "NVIDIAはスーパーコンピューティング国際会議SC26にて、GPUプログラミング基盤「CUDA」のリリース20周年を記念した。 登場から20年を経て、CUDAは初期の科学シミュレーション計算から、現代の生成AIを支える巨大な演算プラットフォームへと進化を遂げた。 開発者がハードウェアの深層を意識せずとも効率的に並列計算を実行できる環境を構築したことが、現在のAI革命を可能にした最大の要因と言える。",
+    "translations": {
+      "ja": {
+        "title": "NVIDIAが「CUDA」誕生20周年を記念、GPUコンピューティングが科学研究とAI開発の基盤となるまでの軌跡を振り返る",
+        "summary": "NVIDIAはスーパーコンピューティング国際会議SC26にて、GPUプログラミング基盤「CUDA」のリリース20周年を記念した。 登場から20年を経て、CUDAは初期の科学シミュレーション計算から、現代の生成AIを支える巨大な演算プラットフォームへと進化を遂げた。 開発者がハードウェアの深層を意識せずとも効率的に並列計算を実行できる環境を構築したことが、現在のAI革命を可能にした最大の要因と言える。"
+      },
+      "en": {
+        "title": "NVIDIA celebrates 20 years of CUDA, reflecting on the platform's evolution from scientific computing to powering modern generative AI",
+        "summary": "NVIDIA is marking the 20th anniversary of CUDA at the SC26 conference, honoring the ecosystem of researchers and engineers who transformed GPU computing from a niche scientific tool into the bedrock of modern AI. Over two decades, CUDA evolved from handling complex physics simulations to orchestrating the massive parallel processing required by today’s generative models. By abstracting away low-level hardware complexity, the platform allowed developers to scale computing power without rewriting kernels for every generation of silicon. This history underscores a critical lesson for builders: the most enduring developer platforms are those that bridge the gap between raw hardware potential and accessible, high-level programmability, enabling software revolutions that were previously computationally impossible to execute at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-16T16:32:49.350Z"
+  },
+  {
+    "id": "art-1794846762771-9jx0q",
+    "source_id": "source-windsurf",
+    "source_name": "Windsurf Changelog",
+    "url": "https://windsurf.com/changelog#v3-13-3-november-16-2026-new-added-tabs-to-the-agent-command-cent",
+    "published_at": "2026-11-16T00:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "Windsurf v3.13.3アップデート：Agent Command Centerにタブ機能が追加、複数セッションの並行管理で開発効率が大幅向上",
+    "summary_ja": "AIエディタ「Windsurf」の最新版v3.13.3がリリースされ、Agent Command Centerに待望のタブ機能が実装された。 これにより、複数のAIエージェントとの対話や作業セッションを一つのウィンドウ内で切り替えながら管理可能となり、タスクの並行処理やコンテキストの保持が劇的にスムーズになる。 複雑なコーディング作業においても、AIとのやり取りを整理して作業効率を維持したい開発者にとって、ワークフローを改善する重要なアップデートだ。",
+    "translations": {
+      "ja": {
+        "title": "Windsurf v3.13.3アップデート：Agent Command Centerにタブ機能が追加、複数セッションの並行管理で開発効率が大幅向上",
+        "summary": "AIエディタ「Windsurf」の最新版v3.13.3がリリースされ、Agent Command Centerに待望のタブ機能が実装された。 これにより、複数のAIエージェントとの対話や作業セッションを一つのウィンドウ内で切り替えながら管理可能となり、タスクの並行処理やコンテキストの保持が劇的にスムーズになる。 複雑なコーディング作業においても、AIとのやり取りを整理して作業効率を維持したい開発者にとって、ワークフローを改善する重要なアップデートだ。"
+      },
+      "en": {
+        "title": "Windsurf v3.13.3 Introduces Tabs to Agent Command Center, Enabling Parallel Session Management for Improved Developer Workflow Efficiency",
+        "summary": "Windsurf has released version 3.13.3, adding a highly requested tabbed interface to its Agent Command Center. This update allows developers to maintain and toggle between multiple active AI sessions and pages within a single panel, effectively solving the context-switching fatigue often associated with complex coding tasks. Instead of losing track of different AI conversations or overlapping development threads, users can now keep distinct work items organized side-by-side. For engineers relying on AI-assisted coding, this enhancement to the Command Center represents a critical shift toward better multitasking, ensuring that complex project states remain accessible without cluttering the primary workspace. It is a necessary improvement for managing deep, multi-layered development sessions effectively."
+      }
+    },
+    "tool_tags": [
+      "Windsurf"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-16T16:32:42.771Z"
+  },
+  {
     "id": "art-1794845858778-zsvln",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -13186,33 +13297,6 @@
       "開発"
     ],
     "created_at": "2026-11-14T13:16:50.845Z"
-  },
-  {
-    "id": "art-1794661370795-5fqe0",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/coworker_jp/articles/open-weight-llm-weights-backdoor",
-    "published_at": "2026-11-14T03:28:10.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Z79HNFuG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2597%25E3%2583%25B3%25E3%2582%25A6%25E3%2582%25A7%25E3%2582%25A4%25E3%2583%2588LLM%25E3%2581%25AE%25E9%2587%258D%25E3%2581%25BF%25E3%2581%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2589%25E3%2582%25A2%25E3%2582%2592%25E4%25BB%2595%25E8%25BE%25BC%25E3%2582%2580%25EF%25BC%259ALoRA%2520%25E5%25B7%25AE%25E5%2588%2586%25E3%2581%25AE%2520SVD%2520%25E3%2581%25A7%25E3%2582%258F%25E3%2581%258B%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%25E3%2583%25BB%25E3%2582%258F%25E3%2581%258B%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:CoWorker%2520%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2MyMzY4YTFmYjEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "オープンウェイトLLMへのバックドア攻撃：LoRA差分をSVD解析して判明する「悪意ある重み」の隠蔽手法と検知限界",
-    "summary_ja": "オープンウェイトLLMをローカルで動かす際、モデルの重みを第三者から入手することはクラウド依存からの脱却に見えるが、実は配布者への信頼に依存している。 セキュリティ技術リードの伊藤氏は、検証環境においてLoRAの重み差分をSVD（特異値分解）で解析し、特定のトリガーで.envファイルを外部送信するバックドアの実装と検知手法を解説する。 モデルが自律的にツールを利用する環境では、重み自体が攻撃ベクトルになり得るため、配布元検証の重要性が高まっている。",
-    "translations": {
-      "ja": {
-        "title": "オープンウェイトLLMへのバックドア攻撃：LoRA差分をSVD解析して判明する「悪意ある重み」の隠蔽手法と検知限界",
-        "summary": "オープンウェイトLLMをローカルで動かす際、モデルの重みを第三者から入手することはクラウド依存からの脱却に見えるが、実は配布者への信頼に依存している。 セキュリティ技術リードの伊藤氏は、検証環境においてLoRAの重み差分をSVD（特異値分解）で解析し、特定のトリガーで.envファイルを外部送信するバックドアの実装と検知手法を解説する。 モデルが自律的にツールを利用する環境では、重み自体が攻撃ベクトルになり得るため、配布元検証の重要性が高まっている。"
-      },
-      "en": {
-        "title": "Analyzing backdoors in open-weight LLMs: How SVD on LoRA diffs reveals hidden malicious payloads and detection limits",
-        "summary": "Running open-weight LLMs locally is often sold as a secure path to isolate sensitive corporate data, yet this shifts the trust anchor from cloud providers to whoever distributes the model weights. In a recent analysis, security engineer Ito demonstrates how an attacker can inject a backdoor into a LoRA adapter that triggers exfiltration of environment variables to an external server. By applying Singular Value Decomposition (SVD) to the LoRA difference, the study illustrates how to uncover these stealthy modifications hidden within the adapter layers. As LLMs increasingly gain tool-use autonomy, this research serves as a stark warning: weights themselves are now a primary attack vector, making rigorous supply chain verification essential for any local AI infrastructure deployment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "研究"
-    ],
-    "created_at": "2026-11-14T13:02:50.795Z"
   },
   {
     "id": "art-1794661313674-g1k6e",
@@ -41668,59 +41752,6 @@
     "created_at": "2026-11-02T13:16:36.550Z"
   },
   {
-    "id": "art-1793624546238-kszjd",
-    "source_id": "source-aws-ml",
-    "source_name": "AWS Machine Learning Blog",
-    "url": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/",
-    "published_at": "2026-10-29T18:20:27.000Z",
-    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/22/ML-21285-featured-image.png",
-    "title_ja": "AWS、Amazon Nova Actで「意図駆動型」UIテストを自動化—Epsilonが実現するインフラレスな次世代品質保証基盤",
-    "summary_ja": "EpsilonのAgentic Platformチームが、Amazon Nova ActとBedrock AgentCore Browser Toolを統合し、自然言語によるUIテストの自動生成・実行基盤を構築した。 プロダクト開発チームはテストコードを書く代わりに「意図」を記述するだけで、AWS管理下でブラウザテストが完結する。",
-    "translations": {
-      "ja": {
-        "title": "AWS、Amazon Nova Actで「意図駆動型」UIテストを自動化—Epsilonが実現するインフラレスな次世代品質保証基盤",
-        "summary": "EpsilonのAgentic Platformチームが、Amazon Nova ActとBedrock AgentCore Browser Toolを統合し、自然言語によるUIテストの自動生成・実行基盤を構築した。 プロダクト開発チームはテストコードを書く代わりに「意図」を記述するだけで、AWS管理下でブラウザテストが完結する。"
-      },
-      "en": {
-        "title": "Epsilon automates intent-driven UI testing using Amazon Nova Act, enabling zero-infrastructure quality assurance for enterprise product teams",
-        "summary": "Epsilon’s Agentic Platform team has launched a new managed service leveraging Amazon Nova Act and the Bedrock AgentCore Browser Tool to shift UI testing toward natural language intent rather than rigid scripts. By allowing product teams to simply describe testing goals in plain English, the system offloads all infrastructure maintenance and browser management to AWS. This architecture essentially turns manual QA into an autonomous process, significantly lowering the barrier for teams to implement resilient, self-healing test suites without needing dedicated QA infrastructure. For builders, this demonstrates a critical shift in how LLM agents can handle complex browser interactions, transforming testing from a maintenance burden into a scalable, intent-based capability that accelerates delivery cycles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-02T13:02:26.238Z"
-  },
-  {
-    "id": "art-1793623604659-pgv79",
-    "source_id": "source-aws-ml",
-    "source_name": "AWS Machine Learning Blog",
-    "url": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/",
-    "published_at": "2026-10-29T20:16:40.000Z",
-    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/28/ML-21295-featured-image.png",
-    "title_ja": "UK Amazon Quickユーザーグループが2026年に飛躍、ArrivaやCarsaら企業のAI活用事例と150名超の参加者で急成長を実現",
-    "summary_ja": "UK Amazon Quickユーザーグループの2026年度報告によると、四半期ごとのミートアップ開催で参加者が150名を超え、急速なコミュニティ拡大を果たした。 ArrivaやCarsa、Propulse Labなどが登壇し、エージェント型AIとAmazon Quickを組み合わせたデータ分析による迅速な意思決定と業務効率化の成功事例を。",
-    "translations": {
-      "ja": {
-        "title": "UK Amazon Quickユーザーグループが2026年に飛躍、ArrivaやCarsaら企業のAI活用事例と150名超の参加者で急成長を実現",
-        "summary": "UK Amazon Quickユーザーグループの2026年度報告によると、四半期ごとのミートアップ開催で参加者が150名を超え、急速なコミュニティ拡大を果たした。 ArrivaやCarsa、Propulse Labなどが登壇し、エージェント型AIとAmazon Quickを組み合わせたデータ分析による迅速な意思決定と業務効率化の成功事例を。"
-      },
-      "en": {
-        "title": "UK Amazon Quick User Group hits new growth milestone in 2026 with 150+ attendees and enterprise AI success stories",
-        "summary": "The UK Amazon Quick User Group wrapped up a high-growth 2026, hosting three major quarterly meetups that drew over 150 active participants. The sessions spotlighted how companies like Arriva, Carsa, and Propulse Lab are integrating agentic AI with Amazon Quick to transform raw data into faster, actionable decision-making loops that drive operational efficiency. By moving beyond standard dashboards to AI-powered insights, these organizations successfully improved customer satisfaction and scalable growth metrics. For engineering teams and data builders, the community's progress underscores a critical industry shift: successful BI today is no longer just about visualization, but about embedding intelligent agents directly into the workflow to unlock competitive advantages that manual analysis simply cannot capture at this enterprise scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-02T12:46:44.659Z"
-  },
-  {
     "id": "art-1793622687261-zfgiq",
     "source_id": "source-claude-platform",
     "source_name": "Claude Platform Release Notes",
@@ -48511,32 +48542,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-29T16:01:34.759Z"
-  },
-  {
-    "id": "art-1793288854325-r583f",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/ai/9b2b0omv",
-    "published_at": "2026-10-29T15:34:19.000Z",
-    "og_image_url": null,
-    "title_ja": "AIモデルが臨床試験のデータエラー検出で未訓練の人類を凌駕、専門家レベルの精度で「見落とし」を防ぐ可能性",
-    "summary_ja": "AIモデルが、臨床試験の結果に含まれる意図的なエラーを特定するテストにおいて、トレーニングを受けていない人間による査読を上回るパフォーマンスを記録した。 AIは複雑なデータセット内の不整合を専門家と同等の精度で検出可能であり、人手による査読の質を補完または代替する強力なツールとなる可能性がある。 医療分野でのAI活用は単なる効率化にとどまらず、試験データの整合性確保という極めて重要なプロセスにおいて、検証の信頼性を根底から底上げする役割を果たすだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIモデルが臨床試験のデータエラー検出で未訓練の人類を凌駕、専門家レベルの精度で「見落とし」を防ぐ可能性",
-        "summary": "AIモデルが、臨床試験の結果に含まれる意図的なエラーを特定するテストにおいて、トレーニングを受けていない人間による査読を上回るパフォーマンスを記録した。 AIは複雑なデータセット内の不整合を専門家と同等の精度で検出可能であり、人手による査読の質を補完または代替する強力なツールとなる可能性がある。 医療分野でのAI活用は単なる効率化にとどまらず、試験データの整合性確保という極めて重要なプロセスにおいて、検証の信頼性を根底から底上げする役割を果たすだろう。"
-      },
-      "en": {
-        "title": "AI models outperform untrained human reviewers in detecting clinical trial errors, proving expert-level consistency in data verification",
-        "summary": "Recent testing reveals that AI models consistently outperform untrained human reviewers at identifying planted errors within clinical trial datasets. The results suggest that AI can detect inconsistencies in complex medical data with accuracy levels comparable to domain experts, effectively serving as a critical safety net that minimizes human oversight failures. This finding indicates that integrating AI into the clinical review workflow is not merely about operational efficiency; it is about fundamentally raising the floor for data integrity in high-stakes research. For builders operating in the MedTech and data validation space, these models offer a scalable method to automate rigorous quality control processes that were previously bottlenecked by the inherent fallibility of manual labor in long-form scientific analysis."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-10-29T15:47:34.325Z"
   },
   {
     "id": "art-1793287093681-wtkb1",
