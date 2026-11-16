@@ -1,5 +1,86 @@
 [
   {
+    "id": "art-1794850522389-5c9mo",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/tzp/articles/119dde616f5264",
+    "published_at": "2026-11-16T15:39:01.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Jp1cIhzX--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Netlify%2520%25E3%2581%25AE%25E7%2584%25A1%25E6%2596%2599%25E3%2583%2597%25E3%2583%25A9%25E3%2583%25B3%25E3%2581%25AB%25E6%2584%259F%25E8%25AC%259D%25E3%2581%2597%25E3%2581%25A4%25E3%2581%25A4%25E3%2580%2581Vercel%25EF%25BC%2588%25E6%259D%25B1%25E4%25BA%25AC%25EF%25BC%2589%25E3%2581%25B8%25E8%25BC%2589%25E3%2581%259B%25E6%259B%25BF%25E3%2581%2588%25E3%2580%2582LP%2520%25E3%2581%25AE%2520TTFB%2520%25E3%2581%25AF%25201.2%2520%25E7%25A7%2592%25E3%2581%258B%25E3%2582%2589%2520...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A6%25E3%2581%25A5%25E3%2581%25A3%25E3%2581%25B4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NiM2I5ZjA5N2MuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "NetlifyからVercel（東京）への移行で個人開発LPのTTFBを1.2秒から0.05秒に爆速化——複数ホスティング併用の罠とパフォーマンス改善の教訓",
+    "summary_ja": "個人開発サービス「あじぴた」の運用において、アプリ本体をVercel、LPと管理画面をNetlifyに分けていた構成を、Vercel（東京リージョン）へ統合することでパフォーマンスを劇的に改善した。 結果、LPのTTFB（初回バイトまでの時間）は従来の1.2秒から0.05秒へと短縮され、ユーザー体験が大きく向上した。 インフラを複数プラットフォームに分散させるとコスト最適化にはなるが、レイテンシや管理コストの面で負債になりやすい。",
+    "translations": {
+      "ja": {
+        "title": "NetlifyからVercel（東京）への移行で個人開発LPのTTFBを1.2秒から0.05秒に爆速化——複数ホスティング併用の罠とパフォーマンス改善の教訓",
+        "summary": "個人開発サービス「あじぴた」の運用において、アプリ本体をVercel、LPと管理画面をNetlifyに分けていた構成を、Vercel（東京リージョン）へ統合することでパフォーマンスを劇的に改善した。 結果、LPのTTFB（初回バイトまでの時間）は従来の1.2秒から0.05秒へと短縮され、ユーザー体験が大きく向上した。 インフラを複数プラットフォームに分散させるとコスト最適化にはなるが、レイテンシや管理コストの面で負債になりやすい。"
+      },
+      "en": {
+        "title": "Migrating from Netlify to Vercel Tokyo Speeds Up Landing Page TTFB from 1.2s to 0.05s for Personal Projects",
+        "summary": "A developer unified their infrastructure by migrating landing pages and dashboards from Netlify to Vercel's Tokyo region, resolving persistent latency issues that plagued their service. This consolidation reduced the Time to First Byte (TTFB) on their landing page from a sluggish 1.2 seconds down to an impressive 0.05 seconds, drastically improving the perceived performance for users. While spreading services across different hosting providers is a common tactic to leverage free tiers, it often introduces hidden architectural overhead and latency gaps that hurt user experience. For independent builders, the key takeaway is that infrastructure simplification—specifically unifying regions and providers—often yields more significant UX wins than chasing marginal cost savings across fragmented hosting platforms."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-16T17:35:22.389Z"
+  },
+  {
+    "id": "art-1794850444269-u7olh",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+    "published_at": "2026-11-16T17:29:29.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/10/ML-20283-featured-image.png",
+    "title_ja": "AWSがAssemblerのJava移行手法を公開、Amazon BedrockとAWS Transform活用でメインフレーム刷新を自動化",
+    "summary_ja": "AWSはメインフレームのレガシーコードであるAssemblerを、Amazon BedrockとAWS Transformを用いてJava（Spring Boot）へ変換する新手法を公開した。 ビジネスロジックの抽出からCOBOLを経由した中間コード生成、Javaへのリファクタリングまでを多段階で自動化する。 維持コストの高騰に悩むレガシーシステムにおいて、AIを活用した段階的移行は属人化解消と運用負荷軽減の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AWSがAssemblerのJava移行手法を公開、Amazon BedrockとAWS Transform活用でメインフレーム刷新を自動化",
+        "summary": "AWSはメインフレームのレガシーコードであるAssemblerを、Amazon BedrockとAWS Transformを用いてJava（Spring Boot）へ変換する新手法を公開した。 ビジネスロジックの抽出からCOBOLを経由した中間コード生成、Javaへのリファクタリングまでを多段階で自動化する。 維持コストの高騰に悩むレガシーシステムにおいて、AIを活用した段階的移行は属人化解消と運用負荷軽減の鍵となる。"
+      },
+      "en": {
+        "title": "AWS details automated mainframe Assembler to Java migration strategy using Amazon Bedrock and AWS Transform",
+        "summary": "AWS has unveiled a multi-stage, AI-driven methodology designed to modernize costly, difficult-to-maintain mainframe Assembler applications by converting them into Java Spring Boot services. The workflow leverages Amazon Bedrock for intelligent logic extraction and AWS Transform to handle the complex translation process, passing through a COBOL intermediate stage to ensure architectural parity before final deployment on AWS. This systematic approach effectively mitigates the technical debt and staffing shortages associated with aging mainframes, offering enterprises a path to stabilize legacy core systems. For engineering leads managing critical technical debt, this framework demonstrates that integrating LLMs into code refactoring pipelines is no longer optional for legacy modernization, but a mandatory strategy to reduce long-term operational overhead while safely porting core business logic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-16T17:34:04.269Z"
+  },
+  {
+    "id": "art-1794850413541-tt9o2",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+    "published_at": "2026-11-16T17:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAIが学術研究者向けChatGPT利用枠を拡大、世界20万人に最新のフロンティアモデルを無償提供へ（研究活動のAI活用を加速）",
+    "summary_ja": "OpenAIは「ChatGPT for Academic Researchers」を拡充し、世界中の研究者20万人へ最新のフロンティアモデルを無償提供すると発表した。 高度なデータ解析や文献レビューが加速するこの施策は、学術分野におけるAI活用を一段と引き上げる。 AIビルダーにとっては、研究現場の複雑な課題やワークフローを理解することで、今後求められる専門特化型エージェントや研究支援ツールを構築するための好機となる。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIが学術研究者向けChatGPT利用枠を拡大、世界20万人に最新のフロンティアモデルを無償提供へ（研究活動のAI活用を加速）",
+        "summary": "OpenAIは「ChatGPT for Academic Researchers」を拡充し、世界中の研究者20万人へ最新のフロンティアモデルを無償提供すると発表した。 高度なデータ解析や文献レビューが加速するこの施策は、学術分野におけるAI活用を一段と引き上げる。 AIビルダーにとっては、研究現場の複雑な課題やワークフローを理解することで、今後求められる専門特化型エージェントや研究支援ツールを構築するための好機となる。"
+      },
+      "en": {
+        "title": "OpenAI Expands ChatGPT for Academic Researchers Program, Granting 200,000 Global Scientists Free Access to Frontier AI Models",
+        "summary": "OpenAI has officially expanded its \"ChatGPT for Academic Researchers\" initiative, extending free, unrestricted access to their latest frontier models—including GPT-4o and o1—to 200,000 researchers across the globe. By lowering the barrier to entry for high-end AI compute and reasoning capabilities, OpenAI aims to supercharge complex academic workflows like large-scale literature synthesis, data modeling, and hypothesis generation. For independent builders and AI developers, this mass integration of advanced models into universities is a massive signal: research workflows are about to become highly automated. Monitoring how these academics implement agentic workflows or prompt chains within their niche fields will likely reveal the next generation of \"must-have\" vertical AI tools and research-specific agent designs."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-16T17:33:33.541Z"
+  },
+  {
     "id": "art-1794849466349-acydx",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -13815,32 +13896,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-14T09:04:01.917Z"
-  },
-  {
-    "id": "art-1794646017970-kf1zn",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/fumi3333/articles/phone-robot-teardown-wiring",
-    "published_at": "2026-11-14T06:44:51.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cAdt-ZMB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B9%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2588%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25B3%25E3%2582%2592%25E8%25BC%2589%25E3%2581%259B%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB%25E3%2583%2588%25E3%2582%25A4%25E3%2583%25A9%25E3%2582%25B8%25E3%2582%25B3%25E3%2583%25B3%25E3%2582%2592%25E5%2588%2586%25E8%25A7%25A3%25E3%2581%2597%25E3%2580%2581%25E5%259F%25BA%25E6%259D%25BF%25E3%2581%25AE%25E5%25A4%25AA%25E3%2581%2584%25E7%25B7%259A7%25E6%259C%25AC%25E3%2581%25AE%25E8%25A1%258C%25E3%2581%258D%25E5%2585%2588%25E3%2582%2592%25E5%2585%25A8%25E9%2583%25A8%25E7%2589%25B9%25E5%25AE%259A%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fumi3333%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyMGFlODBkMmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "市販トイラジコンを自律走行ロボットへ改造：基板の配線7本を解析し、ESP32によるスマホ制御の足回りを構築する",
-    "summary_ja": "市販のトイラジコン「ジョーゼン ダートマックス」の受信機基板を排除し、ESP32とモータードライバを搭載することで、スマートフォンを頭脳とする自律走行ロボットへの改造に着手した。 電子工作未経験ながら、車体に伸びる7本（赤3・黒4）の配線の行き先を全て特定し、モーター駆動系の制御基盤を確立した。 既存のハードウェアをハックしマイコンで再制御するこのアプローチは、個人開発レベルで独自のロボットや移動プラットフォームを構築するための極めて実践的な知見となる。",
-    "translations": {
-      "ja": {
-        "title": "市販トイラジコンを自律走行ロボットへ改造：基板の配線7本を解析し、ESP32によるスマホ制御の足回りを構築する",
-        "summary": "市販のトイラジコン「ジョーゼン ダートマックス」の受信機基板を排除し、ESP32とモータードライバを搭載することで、スマートフォンを頭脳とする自律走行ロボットへの改造に着手した。 電子工作未経験ながら、車体に伸びる7本（赤3・黒4）の配線の行き先を全て特定し、モーター駆動系の制御基盤を確立した。 既存のハードウェアをハックしマイコンで再制御するこのアプローチは、個人開発レベルで独自のロボットや移動プラットフォームを構築するための極めて実践的な知見となる。"
-      },
-      "en": {
-        "title": "Hacking a toy RC car into an autonomous robot: Decoding 7 circuit wires to build an ESP32-powered platform",
-        "summary": "The developer is transforming an off-the-shelf Jozen Dirtmax RC car into an autonomous robot by replacing the stock receiver PCB with an ESP32 and motor driver, allowing smartphone control. Despite being a beginner in electronics, the creator meticulously traced and mapped all seven thick wires—three red and four black—to determine their precise functions for motor control. This successful reverse-engineering of the chassis provides a blueprint for integrating microcontrollers into existing consumer hardware. For builders, this project demonstrates that expensive custom robotics platforms aren't necessary; by stripping down commercial toys and mapping their internal power and signaling pathways, you can cost-effectively build sophisticated mobile platforms controlled by your own custom code."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-14T08:46:57.970Z"
   },
   {
     "id": "art-1794646011303-l7hpa",
@@ -31979,33 +32034,6 @@
     "created_at": "2026-11-07T02:31:37.977Z"
   },
   {
-    "id": "art-1794016003858-rrb2y",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/i-turned-my-hobby-into-120k-month-apps",
-    "published_at": "2026-11-06T14:39:51+00:00",
-    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/i4vav4zbx7fidstej7wf1id5ui6v",
-    "title_ja": "趣味のアプリ開発から月商12万ドル（約1800万円）を達成：個人開発者が語る「ニッチな課題解決」を収益化する持続可能なグロース戦略",
-    "summary_ja": "副業として始めたアプリ開発を、月商12万ドル（約1800万円）の事業へ成長させた個人開発者の戦略が公開された。 特定のニッチな問題を解決するツールを開発し、サブスクリプション課金を導入することで、広告頼みではない持続可能な収益モデルを確立している。 単なる機能追加ではなく、ユーザーのワークフローを深く理解し、手動作業を自動化する価値を提供することが、長期的なLTV向上と安定した課金率維持を実現する秘訣だ。",
-    "translations": {
-      "ja": {
-        "title": "趣味のアプリ開発から月商12万ドル（約1800万円）を達成：個人開発者が語る「ニッチな課題解決」を収益化する持続可能なグロース戦略",
-        "summary": "副業として始めたアプリ開発を、月商12万ドル（約1800万円）の事業へ成長させた個人開発者の戦略が公開された。 特定のニッチな問題を解決するツールを開発し、サブスクリプション課金を導入することで、広告頼みではない持続可能な収益モデルを確立している。 単なる機能追加ではなく、ユーザーのワークフローを深く理解し、手動作業を自動化する価値を提供することが、長期的なLTV向上と安定した課金率維持を実現する秘訣だ。"
-      },
-      "en": {
-        "title": "How One Solo Developer Transformed a Passion Project into a Sustainable $120k Monthly Recurring Revenue Business via Niche Solving",
-        "summary": "A solo developer recently shared how they scaled a simple hobby project into a robust business generating over $120,000 in monthly recurring revenue. Instead of chasing broad markets, the strategy centered on identifying a highly specific, painful workflow problem and building a dedicated tool to automate the manual effort involved. By implementing a paid subscription model rather than relying on fickle ad-supported revenue, they secured stable income and higher long-term customer value. The developer emphasizes that success hinges on deeply understanding user pain points and prioritizing feature iteration based on direct feedback. This transition from side project to professional operation proves that lean development and precise niche targeting remain the most reliable path for independent builders to achieve significant financial independence."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "課金・ペイウォール",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-07T01:46:43.858Z"
-  },
-  {
     "id": "art-1794014188054-7pmxz",
     "source_id": "source-windsurf",
     "source_name": "Windsurf Changelog",
@@ -41732,32 +41760,6 @@
       "開発"
     ],
     "created_at": "2026-11-02T14:16:38.246Z"
-  },
-  {
-    "id": "art-1793626304882-ld9d7",
-    "source_id": "source-aws-ml",
-    "source_name": "AWS Machine Learning Blog",
-    "url": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
-    "published_at": "2026-10-29T16:58:57.000Z",
-    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/27/ML-21246-featured-image.png",
-    "title_ja": "AWS Batch、SageMaker学習ジョブ向けのクォータ管理機能を発表：チーム間でのGPUリソース融通と優先度制御が自動化",
-    "summary_ja": "AWS BatchにSageMaker学習ジョブ用のクォータ管理機能が追加された。 チームやプロジェクトごとにGPU容量を分割し、アイドル状態のリソースを自動的に他チームへ貸し出すことが可能となる。 さらに、優先度の高いジョブを即座に実行するプリエンプション機能も備え、手動調整なしで効率的なリソース共有を実現する。 AI開発チームのインフラ管理負荷を大幅に軽減するアップデートだ。",
-    "translations": {
-      "ja": {
-        "title": "AWS Batch、SageMaker学習ジョブ向けのクォータ管理機能を発表：チーム間でのGPUリソース融通と優先度制御が自動化",
-        "summary": "AWS BatchにSageMaker学習ジョブ用のクォータ管理機能が追加された。 チームやプロジェクトごとにGPU容量を分割し、アイドル状態のリソースを自動的に他チームへ貸し出すことが可能となる。 さらに、優先度の高いジョブを即座に実行するプリエンプション機能も備え、手動調整なしで効率的なリソース共有を実現する。 AI開発チームのインフラ管理負荷を大幅に軽減するアップデートだ。"
-      },
-      "en": {
-        "title": "AWS Batch Introduces Automated Quota Management for SageMaker Training to Streamline GPU Resource Allocation Across Teams",
-        "summary": "AWS Batch has launched a new quota management capability for SageMaker Training, allowing organizations to dynamically partition GPU capacity among different teams and projects. The service automatically lends idle capacity across shares, ensuring high utilization, while implementing preemption to prioritize critical training jobs without any manual coordination. This feature addresses common bottlenecks in shared AI infrastructure where teams often fight for compute resources. For engineering leaders managing large-scale machine learning clusters, this eliminates the overhead of constantly reconfiguring resource allocations. By automating the balance between flexibility and strict priority, builders can keep training pipelines running smoothly even under constrained GPU availability, effectively maximizing the return on expensive hardware investments across the entire organization."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-02T13:31:44.882Z"
   },
   {
     "id": "art-1793626295154-kxuh8",
