@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794789130081-aqjig",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/#quantization",
+    "published_at": "2026-11-15T23:55:50.000Z",
+    "og_image_url": "https://www.datocms-assets.com/104802/1793044899-efficientfrontierblogheader.png?auto=format&w=1600",
+    "title_ja": "Baseten、LLM推論の「効率的フロンティア」を解説：量子化とモデルサイズ最適化でコストを削減する技術的アプローチ",
+    "summary_ja": "BasetenがLLM推論における「効率的フロンティア」を提唱。 量子化やモデルサイズ調整、スループットとレイテンシのトレードオフを視覚化し、推論コストを最小化しつつ精度を最大化する戦略を詳解した。 開発者は単に最新モデルを導入するだけでなく、ユースケースごとの最適な精度・コスト比を見極め、推論設定を適切にチューニングすることが求められる。 本稿は、特定のハードウェア環境でスループットを限界まで引き出すための構成要件を紐解いている。",
+    "translations": {
+      "ja": {
+        "title": "Baseten、LLM推論の「効率的フロンティア」を解説：量子化とモデルサイズ最適化でコストを削減する技術的アプローチ",
+        "summary": "BasetenがLLM推論における「効率的フロンティア」を提唱。 量子化やモデルサイズ調整、スループットとレイテンシのトレードオフを視覚化し、推論コストを最小化しつつ精度を最大化する戦略を詳解した。 開発者は単に最新モデルを導入するだけでなく、ユースケースごとの最適な精度・コスト比を見極め、推論設定を適切にチューニングすることが求められる。 本稿は、特定のハードウェア環境でスループットを限界まで引き出すための構成要件を紐解いている。"
+      },
+      "en": {
+        "title": "Baseten defines the efficient frontier of LLM inference: optimizing quantization and model sizing for cost-performance",
+        "summary": "Baseten has published a deep dive into the \"efficient frontier\" of LLM inference, specifically illustrating how engineers can visualize the trade-offs between quantization levels, model size, throughput, and latency. For builders, the durable takeaway is to treat AI tooling as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "研究"
+    ],
+    "created_at": "2026-11-16T00:32:10.081Z"
+  },
+  {
+    "id": "art-1794789123888-a0ter",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/shotarotakakura/items/8fb8b2024c4c66a385a7",
+    "published_at": "2026-11-15T23:56:29.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jTERlOTE2OUw4Vll2QXVoQlZaTjVTLXVVb1REeEU1cGlJMEliNVBkcTk3QmlhbUJ3JTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTE1MmVhNTBkMmJmMzQ4ZTk4NWIxZjk4MzRmMjQ2MDgy%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Daf14ea90806bd6e6b2afa70d9d0fbdd9?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU4JUE0JTg3JUU2JTk1JUIwJUUzJTgxJUFFQUklRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglRTMlODElQUIlRTUlOTAlOEMlRTMlODElOTglRTQlQkIlOTUlRTQlQkElOEIlRTMlODIlOTIlRTUlOEYlOTYlRTMlODIlODklRTMlODElOUIlRTMlODElQUElRTMlODElODQlMjAlRTIlODAlOTUlMjBnaXQlMjBwdXNoJTIwJUUzJTgyJTkyJUUzJTgwJThDJUU3JTlEJTgwJUU2JTg5JThCJUUzJTgxJUFFJUU1JThEJUIwJUUzJTgwJThEJUUzJTgxJUFCJUUzJTgxJTk5JUUzJTgyJThCJUUzJTgxJUE4JUUzJTgxJThEJUUzJTgxJUFFJUU4JTkwJUJEJUUzJTgxJUE4JUUzJTgxJTk3JUU3JUE5JUI0MiVFMyU4MSVBNCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTcwMjY3OGU3NmFjNDdiMzc2OGExYTNmYmUxN2I4YmQ2&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzaG90YXJvdGFrYWt1cmEmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0zYTRlN2JjYTlmMTUyNGY4YWFiZjc2MjJiMmEyMTY3MQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=5a18977a8a84c476bda3d542ff1ef799",
+    "title_ja": "複数AIエージェントの競合回避術：git pushをタスク着手の合図にする際、避けるべき2つの致命的な落とし穴",
+    "summary_ja": "Claude Code等のAIエージェントを並列稼働させ、共有リポジトリ内のタスクファイルを処理する際、単純なgit pushを「着手の印」にすると競合が発生する。 具体的には、pushの反映遅延による「二重着手」と、ファイル消去のタイミングにおける「エージェントの空回」という2つの落とし穴がある。 原子的なファイル操作や排他ロックの仕組みを導入せず、git操作のみで同期しようとすると、大規模な自動化システムでは確実に失敗する。",
+    "translations": {
+      "ja": {
+        "title": "複数AIエージェントの競合回避術：git pushをタスク着手の合図にする際、避けるべき2つの致命的な落とし穴",
+        "summary": "Claude Code等のAIエージェントを並列稼働させ、共有リポジトリ内のタスクファイルを処理する際、単純なgit pushを「着手の印」にすると競合が発生する。 具体的には、pushの反映遅延による「二重着手」と、ファイル消去のタイミングにおける「エージェントの空回」という2つの落とし穴がある。 原子的なファイル操作や排他ロックの仕組みを導入せず、git操作のみで同期しようとすると、大規模な自動化システムでは確実に失敗する。"
+      },
+      "en": {
+        "title": "Avoiding race conditions with multi-agent AI workflows: Two critical pitfalls when using git push as a task signal",
+        "summary": "Running multiple AI agents in parallel to pick up tasks from a shared repository creates race conditions if developers rely solely on 'git push' as a concurrency lock. There are two primary failure modes: delayed sync causing multiple agents to grab the same task, and inefficient loops where agents spin on disappearing files. Relying on Git's implicit state is insufficient for distributed agent systems, as it lacks atomicity for transaction management. Builders should instead implement proper semaphore locks via Redis or a centralized database to handle state synchronization outside of version control. While Git is excellent for code history, it is inherently unsuitable as a reliable message queue or locking mechanism for active agent orchestration."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-16T00:32:03.888Z"
+  },
+  {
+    "id": "art-1794789117613-a4vsx",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/lain2772/n/n938bd66209eb",
+    "published_at": "2026-11-16T00:29:49.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336694021/rectangle_large_type_2_c90028697854f1c071585cf56a423535.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "愛媛・佐田岬灯台をVRで体験。「灯台の夜」Webブラウザ公開（Quest 3・PC対応、登録不要）",
+    "summary_ja": "個人開発のVR景色モード「灯台の夜」が、Webブラウザから誰でも無料でアクセス可能になった。 愛媛県の佐田岬灯台をモチーフにした空間を構築し、Meta Quest 3やPCブラウザで即座に没入体験ができる。 アプリのインストールやユーザー登録の障壁を完全排除し、Web技術を活かして空間体験のアクセシビリティを高めるアプローチは、個人が小規模な3D環境を届ける上で非常に強力な先行事例となる。",
+    "translations": {
+      "ja": {
+        "title": "愛媛・佐田岬灯台をVRで体験。「灯台の夜」Webブラウザ公開（Quest 3・PC対応、登録不要）",
+        "summary": "個人開発のVR景色モード「灯台の夜」が、Webブラウザから誰でも無料でアクセス可能になった。 愛媛県の佐田岬灯台をモチーフにした空間を構築し、Meta Quest 3やPCブラウザで即座に没入体験ができる。 アプリのインストールやユーザー登録の障壁を完全排除し、Web技術を活かして空間体験のアクセシビリティを高めるアプローチは、個人が小規模な3D環境を届ける上で非常に強力な先行事例となる。"
+      },
+      "en": {
+        "title": "Developer releases browser-based VR 'Lighthouse Night' experience inspired by Sada Misaki, supporting Quest 3 and PC",
+        "summary": "The developer has released 'Lighthouse Night,' a web-accessible virtual scenery mode inspired by Ehime's Sada Misaki Lighthouse, now playable directly through web browsers. By leveraging modern web standards, the experience runs seamlessly on Meta Quest 3 and standard PC browsers without requiring any application downloads or user account registration. This launch demonstrates a highly effective model for distributing interactive 3D environments: removing all friction points of installation and login to maximize user accessibility. For individual creators and developers, this project serves as a compelling case study on how to distribute spatial experiences to a wider audience using browser-native technologies instead of walled-garden app stores. It proves that high-quality, atmospheric VR experiences are viable as direct, instant-access web links."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-16T00:31:57.613Z"
+  },
+  {
+    "id": "art-1794789110038-mkrdw",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://monoist.itmedia.co.jp/mn/articles/2611/16/news050.html",
+    "published_at": "2026-11-15T23:00:00.000Z",
+    "og_image_url": "https://image.itmedia.co.jp/mn/articles/2611/16/cover_news050.jpg",
+    "title_ja": "ガートナーが示す「フィジカルAI」実装ロードマップ：製造現場で進む自動化の現在地と人間に求められる新たな役割とは（鹿内健太郎氏解説）",
+    "summary_ja": "ガートナージャパンの鹿内健太郎氏が、製造業を中心に加速する「フィジカルAI」の実装状況と今後のロードマップを解説した。 単なる自動化を超え、AIと物理環境が融合する現在地において、現場作業者の役割は「操作」から「AIの運用・監督」へとシフトする必要がある。 今後のビジネスで成果を出すには、AIを道具として使うだけでなく、人間がAIの意思決定を監視・調整する高度なスキルセットへの転換が不可欠であると説く。",
+    "translations": {
+      "ja": {
+        "title": "ガートナーが示す「フィジカルAI」実装ロードマップ：製造現場で進む自動化の現在地と人間に求められる新たな役割とは（鹿内健太郎氏解説）",
+        "summary": "ガートナージャパンの鹿内健太郎氏が、製造業を中心に加速する「フィジカルAI」の実装状況と今後のロードマップを解説した。 単なる自動化を超え、AIと物理環境が融合する現在地において、現場作業者の役割は「操作」から「AIの運用・監督」へとシフトする必要がある。 今後のビジネスで成果を出すには、AIを道具として使うだけでなく、人間がAIの意思決定を監視・調整する高度なスキルセットへの転換が不可欠であると説く。"
+      },
+      "en": {
+        "title": "Gartner maps the current rollout of physical AI in manufacturing and outlines why human roles must evolve from operator to supervisor",
+        "summary": "Gartner Japan analyst Kentaro Shikanai recently outlined the current implementation roadmap for physical AI, emphasizing that industrial automation is moving beyond simple robotics into deeper integration with physical environments. He explains that as these systems mature, the core value of human labor is shifting significantly: operators must evolve from manual task execution to high-level AI oversight and strategic supervision. For businesses, the key takeaway is that successful AI deployment relies less on total replacement and more on humans learning to monitor, audit, and refine machine-led decisions. Builders and engineers should anticipate that the most critical infrastructure challenge will not be technical performance alone, but designing effective human-in-the-loop interfaces that allow for intuitive and rapid intervention."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-16T00:31:50.038Z"
+  },
+  {
     "id": "art-1794788234019-df2mi",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -7934,32 +8040,6 @@
     "created_at": "2026-11-15T04:02:04.900Z"
   },
   {
-    "id": "art-1794715309296-hytax",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dera_log/n/n9b404ea81ed4",
-    "published_at": "2026-11-15T04:00:27.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/332440184/rectangle_large_type_2_90b60ccdb3cd95f1439f2ffa307c0bdb.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI活用個人開発ゲーム「カッパエスケープ」に新ステージ「雪原」追加。動かないと凍結する新ギミックでゲーム性を大幅強化",
-    "summary_ja": "AIを活用して開発中の個人制作ゲーム「カッパエスケープ」がアップデートされ、新ステージ「雪原」が実装された。 このステージでは「動かないと凍りつく」という過酷な環境ギミックが導入され、プレイヤーは絶えず移動を強制される。 単なる移動の障害ではなく、プレイヤーの行動を制限することで緊張感を生み出すこの設計は、単調になりがちなアクションゲームに深みを持たせるための有用なアプローチだ。",
-    "translations": {
-      "ja": {
-        "title": "AI活用個人開発ゲーム「カッパエスケープ」に新ステージ「雪原」追加。動かないと凍結する新ギミックでゲーム性を大幅強化",
-        "summary": "AIを活用して開発中の個人制作ゲーム「カッパエスケープ」がアップデートされ、新ステージ「雪原」が実装された。 このステージでは「動かないと凍りつく」という過酷な環境ギミックが導入され、プレイヤーは絶えず移動を強制される。 単なる移動の障害ではなく、プレイヤーの行動を制限することで緊張感を生み出すこの設計は、単調になりがちなアクションゲームに深みを持たせるための有用なアプローチだ。"
-      },
-      "en": {
-        "title": "Indie AI game project \"Kappa Escape\" adds a new Snowfield stage with a mechanic that freezes players if they stop moving",
-        "summary": "The solo developer behind the AI-powered indie game \"Kappa Escape\" has released a major update featuring a new \"Snowfield\" stage. The core design shift here is a challenging environmental mechanic: players will freeze solid if they remain stationary for too long, forcing constant movement throughout the level. By introducing this dynamic restriction, the developer successfully injects a higher level of urgency and tension into the gameplay loop, transforming standard traversal into a survival test. For indie developers building similar action titles, this implementation highlights how environmental modifiers can effectively prevent gameplay from becoming monotonous, transforming simple movement controls into a core strategic element that keeps players actively engaged during every session."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-15T04:01:49.296Z"
-  },
-  {
     "id": "art-1794714415152-5iqon",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -8619,33 +8699,6 @@
       "研究"
     ],
     "created_at": "2026-11-15T01:01:59.174Z"
-  },
-  {
-    "id": "art-1794703624566-20zwg",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://videocardz.com/newz/microsoft-could-pay-gamers-for-using-spare-gpu-capacity-to-train-ai",
-    "published_at": "2026-11-15T00:34:55.000Z",
-    "og_image_url": null,
-    "title_ja": "マイクロソフト、ゲーマーのアイドルGPUをAI学習に貸し出す新特許を公開――分散コンピューティングでGPU不足を解消へ",
-    "summary_ja": "マイクロソフトが、ゲーマーの未使用GPUリソースをAIモデルの学習や推論に活用する特許を出願した。 この仕組みは、ユーザーがゲームをしていないアイドル時間中のGPUパワーを分散計算ネットワークに提供し、報酬を得ることを想定している。 深刻なGPU不足とコスト高騰が続く中で、コンシューマー向けハードウェアを分散型クラウドとして再定義する試みだ。 開発者にとっては、将来的に低コストな推論基盤として一般消費者PCのGPU群を利用できる可能性を示唆している。",
-    "translations": {
-      "ja": {
-        "title": "マイクロソフト、ゲーマーのアイドルGPUをAI学習に貸し出す新特許を公開――分散コンピューティングでGPU不足を解消へ",
-        "summary": "マイクロソフトが、ゲーマーの未使用GPUリソースをAIモデルの学習や推論に活用する特許を出願した。 この仕組みは、ユーザーがゲームをしていないアイドル時間中のGPUパワーを分散計算ネットワークに提供し、報酬を得ることを想定している。 深刻なGPU不足とコスト高騰が続く中で、コンシューマー向けハードウェアを分散型クラウドとして再定義する試みだ。 開発者にとっては、将来的に低コストな推論基盤として一般消費者PCのGPU群を利用できる可能性を示唆している。"
-      },
-      "en": {
-        "title": "Microsoft patent proposes incentivizing gamers to rent out idle GPU capacity for distributed AI training workloads",
-        "summary": "Microsoft has filed a patent detailing a system that would allow gamers to monetize their idle GPU cycles by contributing them to a decentralized network for AI model training and inference. The proposed mechanism incentivizes users to lease their hardware capacity during downtime, effectively transforming consumer gaming rigs into a distributed compute grid to help alleviate the global scarcity and surging costs of enterprise-grade AI hardware. For developers and builders, this patent hints at a potential paradigm shift where massive AI workloads could eventually leverage edge-based consumer GPUs as a cost-effective inference layer. It represents a significant strategic move to bypass centralized infrastructure bottlenecks by turning household hardware into a massive, crowdsourced cloud computing resource."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-15T00:47:04.566Z"
   },
   {
     "id": "art-1794703609195-ba03x",
@@ -9983,32 +10036,6 @@
       "開発"
     ],
     "created_at": "2026-11-14T15:31:46.431Z"
-  },
-  {
-    "id": "art-1794666780993-o2aeq",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/badorisu0555/items/821fbd50f89573cfa3f6",
-    "published_at": "2026-11-14T14:21:21.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUdObXl4YjZkMzRlQ09jR3dESHBKbFBjRno0QlQ5UUJBcVpXUHVhV2hxMnIlM0RzOTYtYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZWYxZDY4ZDk3YWQ5MDEzMWJhNGVmNDQ3NmJmZGEyOGY%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1a3b830d0a10e4f4505f298227d98fa4?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JTg4JTlEJUU1JUJGJTgzJUU4JTgwJTg1JUU1JTkwJTkxJUUzJTgxJTkxJUVGJUJDJTlBJUU2JUIxJTgyJUU0JUJBJUJBJUU3JUE1JUE4JUUzJTgxJUFFJUUzJTgwJThDJUU2JUIxJTgyJUUzJTgyJTgxJUUzJTgyJThCJUU0JUJBJUJBJUU3JTg5JUE5JUU1JTgzJThGJUUzJTgwJThEJUUzJTgyJTkyJUUzJTgyJUFGJUUzJTgzJUE5JUUzJTgyJUI5JUUzJTgyJUJGJUUzJTgzJUFBJUUzJTgzJUIzJUUzJTgyJUIwJUUzJTgxJUE3JUUzJTgyJUJGJUUzJTgyJUE0JUUzJTgzJTk3JUU1JTg4JTg2JUUzJTgxJTkxJUUzJTgxJTk5JUUzJTgyJThCJUVGJUJDJTg4SURGJUVGJUJDJThCJUUzJTgyJUIzJUUzJTgyJUI1JUUzJTgyJUE0JUUzJTgzJUIzJUU4JUI3JTlEJUU5JTlCJUEyJUVGJUJDJTg5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NGMzNWYyOGM2ZjJiZjc4YTYxOTQ0MGIxYmVlZTYxZjQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBiYWRvcmlzdTA1NTUmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yZTc5YjFjNmIwZDBiNzY3ODJiMzllNDQzNDI5ZjQzMg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=60cedf327d49cadfc114da84d573bedb",
-    "title_ja": "求人票の「求める人物像」をLLMとクラスタリングで可視化、データサイエンティストの採用トレンドを自動抽出する手法",
-    "summary_ja": "求人票から「求める人物像」を推定する際、LLMによるテキスト処理とTF-IDF＋コサイン距離を用いたクラスタリングを組み合わせることで、膨大な募集要項を効率的に類型化できる。 手作業による解析コストを排除し、職務要件の抽象的な表現を具体的なスキルセットや志向性のタイプへと数値的に分類可能だ。 エンジニアが市場の需要を客観的に把握する際、LLMを活用して非構造化データから独自の採用インサイトを導き出す手法として有用である。",
-    "translations": {
-      "ja": {
-        "title": "求人票の「求める人物像」をLLMとクラスタリングで可視化、データサイエンティストの採用トレンドを自動抽出する手法",
-        "summary": "求人票から「求める人物像」を推定する際、LLMによるテキスト処理とTF-IDF＋コサイン距離を用いたクラスタリングを組み合わせることで、膨大な募集要項を効率的に類型化できる。 手作業による解析コストを排除し、職務要件の抽象的な表現を具体的なスキルセットや志向性のタイプへと数値的に分類可能だ。 エンジニアが市場の需要を客観的に把握する際、LLMを活用して非構造化データから独自の採用インサイトを導き出す手法として有用である。"
-      },
-      "en": {
-        "title": "Visualizing Job Requirements with LLM-based Clustering: Automatically Categorizing Data Scientist Profiles from Unstructured Job Postings",
-        "summary": "To decode the vague 'ideal candidate' descriptions found in job postings, this method leverages LLMs to process text alongside TF-IDF and cosine similarity clustering, effectively organizing massive amounts of recruiting data into distinct archetypes. By automating this analysis, you can bypass the manual labor of reading individual listings and quantitatively categorize abstract requirements into concrete skill sets and professional orientations. This approach provides a repeatable technical framework for developers to objectively map market demand, turning unstructured HR data into actionable career intelligence. For builders analyzing industry trends, the core takeaway is that using LLMs as a preprocessing layer for traditional clustering algorithms transforms qualitative job descriptions into clear, measurable data points for targeted skill development."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-14T14:33:00.993Z"
   },
   {
     "id": "art-1794664019695-hnxwj",
@@ -32450,33 +32477,6 @@
       "開発"
     ],
     "created_at": "2026-11-06T05:01:51.475Z"
-  },
-  {
-    "id": "art-1793940415584-tstr6",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/aiplus/article/2611/06/2000002955/",
-    "published_at": "2026-11-06T04:21:45.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/06/2000002955/10011503/2048",
-    "title_ja": "フィックスターズ、国内GPUサーバでオープンモデルを実行する新サービスを開始。第一弾として「DeepSeek-V4.1-Flash-1017」に対応",
-    "summary_ja": "フィックスターズは、国内のGPUサーバ環境を活用し、オープンウェイトモデルをセキュアに利用できる新サービスを開始した。 第一弾として「DeepSeek-V4.1-Flash-1017」の提供を開始し、企業が機密データを社外に出さずに最先端AIを運用できる環境を整える。 データ主権を重視する国内企業にとって、パブリッククラウドのAPI利用に頼らず、国内インフラ内で自律的なAIシステムを構築できる点は大きなメリットとなる。",
-    "translations": {
-      "ja": {
-        "title": "フィックスターズ、国内GPUサーバでオープンモデルを実行する新サービスを開始。第一弾として「DeepSeek-V4.1-Flash-1017」に対応",
-        "summary": "フィックスターズは、国内のGPUサーバ環境を活用し、オープンウェイトモデルをセキュアに利用できる新サービスを開始した。 第一弾として「DeepSeek-V4.1-Flash-1017」の提供を開始し、企業が機密データを社外に出さずに最先端AIを運用できる環境を整える。 データ主権を重視する国内企業にとって、パブリッククラウドのAPI利用に頼らず、国内インフラ内で自律的なAIシステムを構築できる点は大きなメリットとなる。"
-      },
-      "en": {
-        "title": "Fixstars launches service to run open-weight models on domestic GPU servers, starting with DeepSeek-V4.1-Flash-1017",
-        "summary": "Software developer Fixstars has unveiled a new service allowing organizations to deploy open-weight AI models directly on domestic GPU servers. The launch starts with support for DeepSeek-V4.1-Flash-1017, specifically designed to address enterprise needs for security and data sovereignty by keeping sensitive information off public cloud APIs. This infrastructure approach is a major pivot for companies that need to leverage cutting-edge AI capabilities while ensuring data remains strictly within Japan's jurisdiction. For builders and architects operating in heavily regulated sectors, this provides a vital alternative to external API dependencies, enabling fully autonomous AI system deployment without sacrificing either the speed of modern large language models or the critical control over data processing environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "アップデート"
-    ],
-    "created_at": "2026-11-06T04:46:55.584Z"
   },
   {
     "id": "art-1793939512626-ectdv",
