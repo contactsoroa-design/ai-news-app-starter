@@ -1,5 +1,86 @@
 [
   {
+    "id": "art-1794880949655-egl0t",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.754",
+    "published_at": "2026-11-16T21:02:29.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、APIイメージv2.11.754をリリース。Webスクレイピングのレンダリング安定性とLLM向けデータ抽出の精度を大幅向上",
+    "summary_ja": "Firecrawlが最新のAPIイメージv2.11.754をリリースした。 今回のアップデートでは、複雑な動的Webサイトのレンダリング処理が最適化され、LLMが読み取りやすいクリーンなマークダウン生成の安定性が強化されている。 複雑なWebサイトから構造化データを抽出する際、レンダリングエラーによるデータ欠損のリスクを下げたい開発者にとって、このマイナーアップデートは重要な修正となる。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、APIイメージv2.11.754をリリース。Webスクレイピングのレンダリング安定性とLLM向けデータ抽出の精度を大幅向上",
+        "summary": "Firecrawlが最新のAPIイメージv2.11.754をリリースした。 今回のアップデートでは、複雑な動的Webサイトのレンダリング処理が最適化され、LLMが読み取りやすいクリーンなマークダウン生成の安定性が強化されている。 複雑なWebサイトから構造化データを抽出する際、レンダリングエラーによるデータ欠損のリスクを下げたい開発者にとって、このマイナーアップデートは重要な修正となる。"
+      },
+      "en": {
+        "title": "Firecrawl releases API image v2.11.754 to improve web scraping rendering stability and data extraction precision for LLMs",
+        "summary": "Firecrawl has officially released its latest API image, v2.11.754, targeting critical improvements in the rendering pipeline for complex dynamic websites. This update specifically enhances the stability of Markdown generation, ensuring that unstructured web data is transformed into cleaner, more consistent formats optimized for LLM consumption. For builders struggling with data loss or hallucinations caused by rendering failures during agentic web crawls, this release offers a much-needed reliability boost. The update ensures that extracted data remains structurally sound even when navigating sites with heavy JavaScript dependencies. Developers relying on Firecrawl for autonomous agent backends should prioritize testing this deployment immediately to reduce downstream parsing errors and maintain high-quality data ingestion pipelines for their AI applications."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-17T02:02:29.655Z"
+  },
+  {
+    "id": "art-1794880942979-8iy78",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://medium.com/@chipmunkworks/the-helicopter-problem-9bfec2cfdfab",
+    "published_at": "2026-11-17T01:45:59.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェントの「ヘリコプター問題」：LLMが実行せず計画の堂々巡りに陥るメカニズムと開発者が取るべき回避策",
+    "summary_ja": "AIエージェントが複雑なタスクを処理する際、具体的な実行に移れず、思考のループや計画の堂々巡りに陥る「ヘリコプター問題」が課題となっている。 この記事では、LLMが過剰な計画立案にリソースを割き、現実的な解を出せないメカニズムを分析。 エージェント設計者は、思考ステップを制限し、実行の閾値を強制的に設けることで、この無駄な推論ループを回避できると説く。 自動化ツールを構築する開発者にとって、推論と行動のバランスを見極めるための必須の知見である。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの「ヘリコプター問題」：LLMが実行せず計画の堂々巡りに陥るメカニズムと開発者が取るべき回避策",
+        "summary": "AIエージェントが複雑なタスクを処理する際、具体的な実行に移れず、思考のループや計画の堂々巡りに陥る「ヘリコプター問題」が課題となっている。 この記事では、LLMが過剰な計画立案にリソースを割き、現実的な解を出せないメカニズムを分析。 エージェント設計者は、思考ステップを制限し、実行の閾値を強制的に設けることで、この無駄な推論ループを回避できると説く。 自動化ツールを構築する開発者にとって、推論と行動のバランスを見極めるための必須の知見である。"
+      },
+      "en": {
+        "title": "Solving the 'Helicopter Problem' in AI Agents: Why LLMs get stuck in planning loops instead of executing tasks",
+        "summary": "The 'Helicopter Problem' has emerged as a critical failure mode in modern AI agents, where systems get trapped in recursive planning loops, effectively hovering over a problem without ever landing on a solution. This technical breakdown analyzes why LLMs prioritize infinite reasoning chains over actionable output, often resulting in expensive, useless compute cycles. The author argues that developers must implement strict guardrails, such as step-count limits and mandatory execution thresholds, to force agents out of theoretical analysis and into tangible task completion. For those building autonomous agent backends, mastering this balance between internal reasoning and external action is essential for preventing runaway inference costs and ensuring that your agents actually ship results instead of just thinking about them."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-17T02:02:22.979Z"
+  },
+  {
+    "id": "art-1794880933788-0nzhm",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/picnic/items/4318a3607391b42b6a00",
+    "published_at": "2026-11-17T02:00:48.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS0oza2lJamRVZjd6UHZDUHNqTGhkcHFzbDlYU2MweGJscHRZRzgwOWd5dlhYWWh2UTElM0RzOTYtYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OGM4MDU5ODEyMzY3Y2ZlNmIzMDVkYTMzMjAwNjcwMDE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dfd6ab3c0ea5267b0e6bf5b2f6bc36ab2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMHYyLjEuMzI2JTIwJUU3JUEwJUI0JUU1JUEzJThBJUU3JTlBJTg0JUU1JUE0JTg5JUU2JTlCJUI0JUUzJTgxJUJFJUUzJTgxJUE4JUUzJTgyJTgxJUVGJUJDJTlBJUUzJTgyJUI1JUUzJTgzJUIzJUUzJTgzJTg5JUUzJTgzJTlDJUUzJTgzJTgzJUUzJTgyJUFGJUUzJTgyJUI5JUUzJTgzJUJCJUU2JUE4JUE5JUU5JTk5JTkwJUUzJTgzJUJCYXV0byUyMG1vZGUmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1lY2I2MTExZWMwN2RkNzE4NmZhMTQzNTYzNjYwMWM0Nw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwaWNuaWMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1iZTllNDg4YzE3YjgzYzFmZGE3MTQ2MjU5MjlkYzU1ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=e6e52f779dae75d00fb6eec90defc6e0",
+    "title_ja": "Claude Code v2.1.326の破壊的変更まとめ：サンドボックス実行、権限チェック、Auto modeの挙動刷新で開発フローを再構築",
+    "summary_ja": "Claude Code v2.1.326では、セキュリティを強化するサンドボックス環境の刷新や権限チェックの厳格化が実施され、Auto modeでの操作フローに大きな変更が加わった。 OTELホスト属性の追加やエージェントチーム連携といった新機能も重要だが、開発者はプラグインやフック動作の互換性崩壊に注意が必要だ。 AIコーディング環境を構築する際は、新設された権限境界を意識したコード設計が、意図しない操作を防ぐための最優先事項となる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code v2.1.326の破壊的変更まとめ：サンドボックス実行、権限チェック、Auto modeの挙動刷新で開発フローを再構築",
+        "summary": "Claude Code v2.1.326では、セキュリティを強化するサンドボックス環境の刷新や権限チェックの厳格化が実施され、Auto modeでの操作フローに大きな変更が加わった。 OTELホスト属性の追加やエージェントチーム連携といった新機能も重要だが、開発者はプラグインやフック動作の互換性崩壊に注意が必要だ。 AIコーディング環境を構築する際は、新設された権限境界を意識したコード設計が、意図しない操作を防ぐための最優先事項となる。"
+      },
+      "en": {
+        "title": "Claude Code v2.1.326 breaks backward compatibility: key updates to sandbox environments, permission checks, and Auto mode workflows",
+        "summary": "Claude Code v2.1.326 introduces significant breaking changes, primarily focused on hardening security through a redesigned sandbox environment and stricter permission checks. While the update adds useful features like OTEL host attributes and improved integration with agent teams, developers must carefully audit existing hooks and plugins due to shifts in Auto mode behavior. This release fundamentally restructures how the agent interacts with the filesystem and external tools. For builders integrating Claude Code, the core takeaway is that permission boundaries are now strict; treating security as a top-level concern during initial environment setup is no longer optional if you want to avoid runtime blocking or unintended execution failures in automated coding loops."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-17T02:02:13.788Z"
+  },
+  {
     "id": "art-1794880044451-9y55c",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -12085,33 +12166,6 @@
     "created_at": "2026-11-15T18:16:49.702Z"
   },
   {
-    "id": "art-1794765717486-mzvq0",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.gamingonlinux.com/2026/11/gdc-november-2026-survey-shows-40-percent-of-developers-using-generative-ai/",
-    "published_at": "2026-11-15T16:30:50.000Z",
-    "og_image_url": "https://www.gamingonlinux.com/uploads/articles/tagline_images/882187393id30194gol_og.jpg",
-    "title_ja": "GDC 2026年11月調査：ゲーム開発者の40%が生成AIを活用中、生産性向上と業務フロー変革の現在地",
-    "summary_ja": "GDCが実施した2026年11月の最新調査により、ゲーム開発者の約40%が業務プロセスに生成AIを積極的に導入していることが明らかになった。 単なるコーディング補助に留まらず、アセット生成やプロトタイピングの迅速化など、開発サイクルの短縮が大きな目的となっている。 単一のツールに依存するフェーズは終わり、AIを自社のワークフローへどう最適に組み込むかという「実用化の質」が、今後のスタジオ間競争における差別化要因になることは間違いないだろう。",
-    "translations": {
-      "ja": {
-        "title": "GDC 2026年11月調査：ゲーム開発者の40%が生成AIを活用中、生産性向上と業務フロー変革の現在地",
-        "summary": "GDCが実施した2026年11月の最新調査により、ゲーム開発者の約40%が業務プロセスに生成AIを積極的に導入していることが明らかになった。 単なるコーディング補助に留まらず、アセット生成やプロトタイピングの迅速化など、開発サイクルの短縮が大きな目的となっている。 単一のツールに依存するフェーズは終わり、AIを自社のワークフローへどう最適に組み込むかという「実用化の質」が、今後のスタジオ間競争における差別化要因になることは間違いないだろう。"
-      },
-      "en": {
-        "title": "GDC November 2026 survey reveals that 40% of game developers are actively leveraging generative AI tools",
-        "summary": "A recent industry survey conducted by GDC in November 2026 indicates that 40% of game developers are now integrating generative AI into their daily production workflows. Adoption has shifted from experimental use cases toward tangible improvements in speed, specifically targeting asset generation, prototyping, and accelerated coding cycles. This milestone suggests that the industry is moving past the initial hype phase and is now focused on optimizing how these models fit into established pipelines. For studio leads and independent builders, the message is clear: AI is no longer a peripheral experiment but a competitive necessity. Success in this new landscape will rely less on the raw capability of the models and more on the engineering discipline required to integrate these tools into existing, high-velocity production pipelines."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-15T18:01:57.486Z"
-  },
-  {
     "id": "art-1794765693833-tw2pv",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -12736,32 +12790,6 @@
       "研究"
     ],
     "created_at": "2026-11-15T14:16:49.637Z"
-  },
-  {
-    "id": "art-1794751325211-kst5s",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/anymodelbot/items/3cb3bc1af6738cf1a509",
-    "published_at": "2026-11-15T13:48:56.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY2YzE4NTMzZTI0NDk3MDAxOWFkNGNkYzAxNDdlYzQ3Yz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9Y2JkYTY5ZDdhZWFkYTYzYTgxM2I3NjBiNGNiMjZhMzM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd39596697e7ee495c369cdb8d289d79f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QW55TW9kZWxCb3QlRTMlODElQTclRTUlQUUlOEMlRTQlQkElODYlRTMlODElOTclRTMlODElOUYlRTQlQkQlOUMlRTYlQTUlQUQlRTMlODIlOTIlRTUlODYlOEQlRTUlODglQTklRTclOTQlQTglRTMlODElOTklRTMlODIlOEIlRUYlQkMlOUElRTMlODIlQjklRTMlODIlQUQlRTMlODMlQUIlRTQlQkYlOUQlRTUlQUQlOTglRTMlODElQTglRTMlODMlOUMlRTMlODMlODMlRTMlODMlODglRTklOTYlOTMlRTMlODElQUUlRTUlODUlQjElRTYlOUMlODklRUYlQkMlODh2MC4xLjM4JUVGJUJDJTg5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MjkxYjhiNjNlMjg4OWRkNDk2YTg2NmRjYzA3NWJlN2I&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhbnltb2RlbGJvdCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTM0NDI2OTQxY2VjYmI2OGU3YWQ2ZTI0OTk2NjI0YzYx&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=251b888586f2b71ca76ef83225f163ed",
-    "title_ja": "AnyModelBot v0.1.38アップデート、実行済みの作業を「スキル」として保存・共有する新機能が登場",
-    "summary_ja": "AnyModelBotは最新のv0.1.38アップデートにより、一度実行した作業手順を「スキル」として保存し、他のボット間で共有できる機能を追加した。 これにより、繰り返しのタスク作成が不要になり、特定のフローを再利用して開発効率を飛躍的に高めることが可能となる。 複雑なAIワークフローを定型化し、チームや個人プロジェクトで標準的なツールとして使い回したい開発者にとって重要な機能拡張だ。",
-    "translations": {
-      "ja": {
-        "title": "AnyModelBot v0.1.38アップデート、実行済みの作業を「スキル」として保存・共有する新機能が登場",
-        "summary": "AnyModelBotは最新のv0.1.38アップデートにより、一度実行した作業手順を「スキル」として保存し、他のボット間で共有できる機能を追加した。 これにより、繰り返しのタスク作成が不要になり、特定のフローを再利用して開発効率を飛躍的に高めることが可能となる。 複雑なAIワークフローを定型化し、チームや個人プロジェクトで標準的なツールとして使い回したい開発者にとって重要な機能拡張だ。"
-      },
-      "en": {
-        "title": "AnyModelBot v0.1.38 update introduces 'Skill' saving and cross-bot sharing for reusable AI workflows",
-        "summary": "The v0.1.38 update for AnyModelBot introduces a powerful new capability: saving completed task sequences as reusable 'Skills' that can be shared across different bot instances. By allowing developers to encapsulate specific workflow logic, the platform removes the need to manually reconstruct complex prompts or processes for every new session. This shift toward modularity means builders can now iterate on standardized execution patterns rather than starting from scratch, significantly accelerating development velocity. For those managing multiple AI agents, this update turns isolated bot tasks into a portable knowledge base, making it easier to maintain consistency across various projects and ensuring that proven procedures are instantly available whenever a new bot deployment requires them."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-15T14:02:05.211Z"
   },
   {
     "id": "art-1794750479932-59j6r",
@@ -38592,34 +38620,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-04T01:18:40.731Z"
-  },
-  {
-    "id": "art-1793747014326-1dotc",
-    "source_id": "source-firecrawl",
-    "source_name": "Firecrawl Releases / Blog",
-    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.678",
-    "published_at": "2026-11-03T22:55:32.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
-    "title_ja": "Firecrawl v2.11.678公開：WebクローリングのAPIイメージを刷新、複雑なドキュメントの構造化精度と解析速度が大幅に向上",
-    "summary_ja": "Firecrawlが最新バージョンv2.11.678をリリースし、APIイメージの大幅な更新を実施した。 今回のアップデートにより、Webサイトから取得した複雑なドキュメントや構造化データの解析精度が向上し、クローリングのレスポンス速度も改善されている。 LLM向けデータパイプラインを構築する開発者にとって、このクローラーの安定性と正確性の強化は、RAGシステム等の精度を直接高める重要な改善となる。",
-    "translations": {
-      "ja": {
-        "title": "Firecrawl v2.11.678公開：WebクローリングのAPIイメージを刷新、複雑なドキュメントの構造化精度と解析速度が大幅に向上",
-        "summary": "Firecrawlが最新バージョンv2.11.678をリリースし、APIイメージの大幅な更新を実施した。 今回のアップデートにより、Webサイトから取得した複雑なドキュメントや構造化データの解析精度が向上し、クローリングのレスポンス速度も改善されている。 LLM向けデータパイプラインを構築する開発者にとって、このクローラーの安定性と正確性の強化は、RAGシステム等の精度を直接高める重要な改善となる。"
-      },
-      "en": {
-        "title": "Firecrawl v2.11.678 rolls out with major API image updates, significantly boosting data extraction accuracy and parsing speeds",
-        "summary": "Firecrawl has launched version v2.11.678, featuring a comprehensive update to its API image architecture. This release significantly enhances the tool's ability to parse complex web documents and improves overall extraction accuracy for structured data. For developers building data pipelines for LLMs, these optimizations lead to faster processing times and more reliable output when scraping dynamic content. By improving how unstructured data is handled and converted into context-ready formats, this update directly strengthens the foundation for RAG applications. Developers looking to stabilize their ingestion layers should note these performance gains, as they mitigate common friction points in large-scale scraping tasks where latency and data fidelity are critical for model performance."
-      }
-    },
-    "tool_tags": [
-      "Firecrawl"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-03T23:03:34.326Z"
   },
   {
     "id": "art-1793744286313-e59h2",
