@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1794933144238-thiz5",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/iphonista555/n/n976ab6599812",
+    "published_at": "2026-11-17T16:31:31.000Z",
+    "og_image_url": "https://assets.st-note.com/img/1794930214-8sELMvzdJ1G6FUKBDYropIyu.png",
+    "title_ja": "ゲーム開発の「浮遊バグ」を追う：Animation Riggingが引き起こした骨の回転異常を、地道な検証で特定するまで",
+    "summary_ja": "最新バージョンv3.0.5.14で発生した「プレイヤーが浮いて移動できない」という深刻なバグの特定過程を解説。 Animation Riggingとキャラクター骨格の衝突を疑い、AnimatorのdeltaPositionがゼロになる原因を一つずつ切り分けて調査。 最終的に胸部骨格の回転角69.8度という数値は測定ミスによる誤認であり、制約の適用順序と計算ロジックの不備が真因だった。",
+    "translations": {
+      "ja": {
+        "title": "ゲーム開発の「浮遊バグ」を追う：Animation Riggingが引き起こした骨の回転異常を、地道な検証で特定するまで",
+        "summary": "最新バージョンv3.0.5.14で発生した「プレイヤーが浮いて移動できない」という深刻なバグの特定過程を解説。 Animation Riggingとキャラクター骨格の衝突を疑い、AnimatorのdeltaPositionがゼロになる原因を一つずつ切り分けて調査。 最終的に胸部骨格の回転角69.8度という数値は測定ミスによる誤認であり、制約の適用順序と計算ロジックの不備が真因だった。"
+      },
+      "en": {
+        "title": "Debugging a floating character bug: Identifying Animation Rigging bone rotation issues through tedious verification",
+        "summary": "The developer investigated a critical bug in version 3.0.5.14 where players were floating and unable to move. While initial suspicions fell on the Animation Rigging system due to anomalous bone rotation data—specifically a 69.8-degree turn on the chest bone that seemed to block movement—the developer isolated components one by one. The breakthrough came when the team realized that the 69.8-degree reading was a measurement error rather than a system fault. The actual issue stemmed from incorrect constraint application orders conflicting with the Animator controller. This post-mortem serves as a reminder for developers that during high-pressure debugging, confirming the validity of your raw data measurements is just as crucial as debugging the implementation logic itself."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-17T16:32:24.238Z"
+  },
+  {
+    "id": "art-1794933134562-5lad5",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/inbox-hero-2",
+    "published_at": "2026-11-14T17:42:02.000Z",
+    "og_image_url": null,
+    "title_ja": "受信トレイをAIで効率化する「Inbox Hero」が登場：ユーザー固有の文体を学習した返信ドラフト自動生成と、詐欺メールを即座に隔離するセキュリティ機能を搭載",
+    "summary_ja": "Inbox Heroは、個人のメール利用パターンや独自の文体をAIが学習し、自然な返信メールを自動的にドラフト作成する生産性ツールだ。 受信トレイの管理効率を劇的に高めるだけでなく、高度なAIアルゴリズムを用いてフィッシングや詐欺メールを自動識別・隔離するセキュリティ機能も備えている。 定型的なコミュニケーションに追われる忙しいビジネスパーソンにとって、メール処理時間を大幅に短縮しつつ、セキュリティリスクを同時に軽減できる実用的なソリューションとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "受信トレイをAIで効率化する「Inbox Hero」が登場：ユーザー固有の文体を学習した返信ドラフト自動生成と、詐欺メールを即座に隔離するセキュリティ機能を搭載",
+        "summary": "Inbox Heroは、個人のメール利用パターンや独自の文体をAIが学習し、自然な返信メールを自動的にドラフト作成する生産性ツールだ。 受信トレイの管理効率を劇的に高めるだけでなく、高度なAIアルゴリズムを用いてフィッシングや詐欺メールを自動識別・隔離するセキュリティ機能も備えている。 定型的なコミュニケーションに追われる忙しいビジネスパーソンにとって、メール処理時間を大幅に短縮しつつ、セキュリティリスクを同時に軽減できる実用的なソリューションとなるだろう。"
+      },
+      "en": {
+        "title": "Inbox Hero launches an AI-powered email assistant that drafts replies in your unique voice while automatically quarantining potential scams and phishing threats",
+        "summary": "Inbox Hero enters the productivity space as an AI-driven email assistant designed to master your unique writing style, allowing it to generate perfectly tailored draft replies automatically. Beyond simple drafting, the platform utilizes advanced AI heuristics to scan incoming mail for malicious content, effectively quarantining scams and phishing attempts before they reach your inbox. For busy professionals bogged down by repetitive communication, the tool offers a dual advantage: reclaiming hours previously lost to manual inbox management while simultaneously hardening their defenses against sophisticated email-based threats. By integrating automated stylistic drafting with proactive security filtering, Inbox Hero creates a cleaner, safer, and significantly more efficient communication workflow for power users and small teams alike."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-17T16:32:14.562Z"
+  },
+  {
+    "id": "art-1794933122645-m8olx",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kensaurus/articles/204fa193b93031",
+    "published_at": "2026-11-17T05:06:03.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OW0EF0DZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E3%2580%258C%25E5%25AE%258C%25E4%25BA%2586%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25E3%2580%258D%25E3%2582%2592%25E4%25BF%25A1%25E7%2594%25A8%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kensaurus%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQyNzBkY2ZlOTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIコーディングエージェントの「完了」を検証する「完了ゲート」を実装、テスト失敗や未完作業を自動検知して開発効率を改善する新手法を公開",
+    "summary_ja": "AIエージェントが「作業完了」と報告してもテストが落ちる、あるいはタスク未完という事態を防ぐため、結果を強制検証する「完了ゲート」を自作スキル集「kensaurus/skills」として公開。 エージェントの出力に頼らず完了条件を自動チェックする仕組みを組み込むことで、LLM開発における信頼性と手戻りを改善する。 エージェント依存度を高める前に、こうした堅牢なガードレール実装を構築することが重要となる。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングエージェントの「完了」を検証する「完了ゲート」を実装、テスト失敗や未完作業を自動検知して開発効率を改善する新手法を公開",
+        "summary": "AIエージェントが「作業完了」と報告してもテストが落ちる、あるいはタスク未完という事態を防ぐため、結果を強制検証する「完了ゲート」を自作スキル集「kensaurus/skills」として公開。 エージェントの出力に頼らず完了条件を自動チェックする仕組みを組み込むことで、LLM開発における信頼性と手戻りを改善する。 エージェント依存度を高める前に、こうした堅牢なガードレール実装を構築することが重要となる。"
+      },
+      "en": {
+        "title": "Engineering a 'Completion Gate' to Verify AI Agent Work and Prevent False Success Signals in Automated Coding Workflows",
+        "summary": "AI coding agents often report \"task completed\" prematurely while tests fail or checklists remain unfinished, creating significant friction. To fix this, developers have introduced a \"Completion Gate\"—an open-source validation layer included in the kensaurus/skills repository—that forces agents to verify completion against objective test criteria. Rather than trusting agent feedback blindly, this framework automatically validates output states before finalizing any commit or deployment, effectively mitigating manual troubleshooting. For teams scaling their reliance on AI coding agents, implementing these rigorous guardrails is no longer optional; it is a fundamental requirement to ensure code reliability and avoid the hidden costs of incomplete or broken agent-generated code."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-17T16:32:02.645Z"
+  },
+  {
+    "id": "art-1794933110814-61bjq",
+    "source_id": "source-appfigures",
+    "source_name": "Appfigures ASO Blog",
+    "url": "https://appfigures.com/resources/guides/how-to-find-competitor-app-keywords",
+    "published_at": "2026-11-17T16:31:50.814Z",
+    "og_image_url": "https://af-resources.s3.amazonaws.com/guides/competitor-keyword-analysis/competitor-keywor-analysis-cover-compressor.png",
+    "title_ja": "App StoreとGoogle Playで競合アプリがランクインしているキーワードを特定し、ASO戦略を強化するための実戦的な抽出メソッドを解説",
+    "summary_ja": "ASOの改善において、競合他社がどのキーワードで検索上位を獲得しているかを把握することは不可欠だ。 本記事では、App StoreおよびGoogle Playにおける競合アプリの特定方法や、タイトル・サブタイトルからキーワードを抽出する具体的な手法を解説する。 単に競合を追うだけでなく、抽出したキーワードを元に自身のASOリストを拡充することで、検索流入を最大化し、新規ユーザー獲得効率を高めるための実践的なロードマップとして活用できる。",
+    "translations": {
+      "ja": {
+        "title": "App StoreとGoogle Playで競合アプリがランクインしているキーワードを特定し、ASO戦略を強化するための実戦的な抽出メソッドを解説",
+        "summary": "ASOの改善において、競合他社がどのキーワードで検索上位を獲得しているかを把握することは不可欠だ。 本記事では、App StoreおよびGoogle Playにおける競合アプリの特定方法や、タイトル・サブタイトルからキーワードを抽出する具体的な手法を解説する。 単に競合を追うだけでなく、抽出したキーワードを元に自身のASOリストを拡充することで、検索流入を最大化し、新規ユーザー獲得効率を高めるための実践的なロードマップとして活用できる。"
+      },
+      "en": {
+        "title": "How to reverse-engineer competitor keyword rankings on the App Store and Google Play to maximize your ASO visibility",
+        "summary": "Understanding exactly which keywords drive search rankings for competitor apps is a cornerstone of effective App Store Optimization. This guide breaks down the essential process for reverse-engineering competitor strategies on both the Apple App Store and Google Play. It focuses on mapping your specific product against direct competitors and rigorously mining their metadata, including app titles and subtitles, to reveal the hidden terms driving their traffic. By systematically harvesting these terms and integrating them into your own ASO keyword lists, you can significantly broaden your reach and sharpen your discovery strategy. For developers and marketers aiming to capture more organic downloads, this is a repeatable framework to identify high-value search terms and ultimately outperform rivals in the store results."
+      }
+    },
+    "tool_tags": [
+      "Appfigures"
+    ],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-11-17T16:31:50.814Z"
+  },
+  {
     "id": "art-1794932235989-p14ia",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -12453,32 +12558,6 @@
     "created_at": "2026-11-16T08:31:48.143Z"
   },
   {
-    "id": "art-1794817022182-bp9hb",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/moral_quoll829/n/nf6a120d3bea0",
-    "published_at": "2026-11-16T08:01:21.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336833678/rectangle_large_type_2_cd9f18cf16005e41e90d2291f49aff67.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "温泉巡りを可視化する個人開発「温泉国盗りマップ」公開、訪問履歴から日本地図を湯の色に染め上げる体験を実装",
-    "summary_ja": "温泉巡りの記憶を記録し、訪問した都道府県や温泉地を日本地図上で可視化する個人開発ツール「温泉国盗りマップ」が公開された。 訪問済みの場所を登録すると地図が徐々に湯の色に染まっていくインタラクティブなUIが特徴で、自身の温泉探訪の進捗を一目で確認できる。 ニッチな趣味を「記録・達成感・可視化」というゲーミフィケーション要素でエンタメ化するアプローチは、熱狂的なコミュニティを構築する個人開発の好例といえる。",
-    "translations": {
-      "ja": {
-        "title": "温泉巡りを可視化する個人開発「温泉国盗りマップ」公開、訪問履歴から日本地図を湯の色に染め上げる体験を実装",
-        "summary": "温泉巡りの記憶を記録し、訪問した都道府県や温泉地を日本地図上で可視化する個人開発ツール「温泉国盗りマップ」が公開された。 訪問済みの場所を登録すると地図が徐々に湯の色に染まっていくインタラクティブなUIが特徴で、自身の温泉探訪の進捗を一目で確認できる。 ニッチな趣味を「記録・達成感・可視化」というゲーミフィケーション要素でエンタメ化するアプローチは、熱狂的なコミュニティを構築する個人開発の好例といえる。"
-      },
-      "en": {
-        "title": "Individual developer launches 'Onsen Conquest Map' to visualize hot spring travel history across Japan via interactive maps",
-        "summary": "A new personal project called 'Onsen Conquest Map' has been released, designed to help enthusiasts track their hot spring travels by visualizing visited locations across a Japanese map. Users log their trips, and the map gradually fills with color, turning into a custom heatmap of their personal hot spring journey. The application effectively gamifies niche travel hobbies through progress tracking and visual storytelling, providing a satisfying sense of accomplishment. This project demonstrates how individual developers can build engaging tools by applying simple gamification mechanics to specialized interest groups, turning routine logging into a compelling, shareable experience that resonates deeply with target users looking to document their adventures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-16T08:17:02.182Z"
-  },
-  {
     "id": "art-1794817014721-pi4h3",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -16748,32 +16827,6 @@
       "開発"
     ],
     "created_at": "2026-11-15T07:17:18.379Z"
-  },
-  {
-    "id": "art-1794727031114-3v01m",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/satofun/articles/921c5877f6a4ae",
-    "published_at": "2026-11-14T21:28:27.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--liM9vYuG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%25AB%25AA%25E5%259E%258B%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E3%2581%25A7%25E7%2589%25B9%25E6%25AE%258A%25E3%2583%2598%25E3%2582%25A2%25E3%2581%25AB%25E6%258C%2591%25E6%2588%25A6%25EF%25BC%2581Tsubaki.3%25E3%2581%25A8Edit%2520Pro%25E3%2581%25A76%25E7%25A8%25AE%25E9%25A1%259E%25E3%2581%25AE%25E3%2583%2598%25E3%2582%25A2%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25B3%25E3%2582%25B8%25E3%2582%2592%25E6%25A4%259C%25E8%25A8%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:sato%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlNDVkZDAzY2UuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "PixAI「Tsubaki.3」と「Edit Pro」を活用したAIキャラの髪型変更検証：元の造形を維持しつつ6つの個性的なヘアスタイルを再現する手法",
-    "summary_ja": "AIキャラクター生成において、服装や顔立ちを維持したまま髪型だけを変更するのは困難な課題です。 本記事では、PixAIのモデル「Tsubaki.3」を用い、アフロやハート型など特徴的な5種類の髪型への変更を検証しました。 さらに「Edit Pro」を使用して実写画像を髪型のリファレンスとして読み込み、アニメ調キャラクターへ反映させる実践的な手法も。",
-    "translations": {
-      "ja": {
-        "title": "PixAI「Tsubaki.3」と「Edit Pro」を活用したAIキャラの髪型変更検証：元の造形を維持しつつ6つの個性的なヘアスタイルを再現する手法",
-        "summary": "AIキャラクター生成において、服装や顔立ちを維持したまま髪型だけを変更するのは困難な課題です。 本記事では、PixAIのモデル「Tsubaki.3」を用い、アフロやハート型など特徴的な5種類の髪型への変更を検証しました。 さらに「Edit Pro」を使用して実写画像を髪型のリファレンスとして読み込み、アニメ調キャラクターへ反映させる実践的な手法も。"
-      },
-      "en": {
-        "title": "Mastering AI Hair Transformations: Using PixAI Tsubaki.3 and Edit Pro to Swap Hairstyles Without Losing Character Identity",
-        "summary": "Altering an AI character's hairstyle while preserving their facial features and clothing is a frequent pain point for generative artists. This guide explores a workflow using the PixAI model 'Tsubaki.3' to apply five distinct, stylized hairdos—ranging from afros to heart-shaped cuts—onto an existing character without altering their core appearance. It further demonstrates how to use 'Edit Pro' to ingest real-world photography as a visual reference, successfully mapping complex hairstyles onto anime-style characters. The analysis provides actionable techniques for balancing prompt engineering with image-to-image referencing, ensuring creators can achieve stylistic changes while maintaining strict character consistency. For builders and creators, this demonstrates a robust pipeline for iterative character design and asset customization within AI art workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "画像生成",
-      "開発"
-    ],
-    "created_at": "2026-11-15T07:17:11.114Z"
   },
   {
     "id": "art-1794723516370-yq21q",
@@ -26099,32 +26152,6 @@
     "created_at": "2026-11-11T08:31:45.578Z"
   },
   {
-    "id": "art-1794385015765-qydaw",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/minimax",
-    "published_at": "2026-11-10T16:35:28.000Z",
-    "og_image_url": null,
-    "title_ja": "MiniMaxの「H3-Image」が登場、4K解像度の高品質画像をわずか10秒で生成する驚異的な推論パフォーマンスを実現",
-    "summary_ja": "MiniMaxが新たに公開した画像生成AI「H3-Image」は、4K高解像度の生成処理をわずか10秒以内で完了させる爆速推論性能を備えている。 単なる速度向上にとどまらず、細部のテクスチャ表現と全体的な質感の整合性を両立させており、従来の生成速度に課題を感じていたワークフローを劇的に改善する可能性が高い。 クリエイティブな現場や迅速なプロトタイピングが求められる開発環境において、レンダリング待ち時間を大幅に短縮する強力な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "MiniMaxの「H3-Image」が登場、4K解像度の高品質画像をわずか10秒で生成する驚異的な推論パフォーマンスを実現",
-        "summary": "MiniMaxが新たに公開した画像生成AI「H3-Image」は、4K高解像度の生成処理をわずか10秒以内で完了させる爆速推論性能を備えている。 単なる速度向上にとどまらず、細部のテクスチャ表現と全体的な質感の整合性を両立させており、従来の生成速度に課題を感じていたワークフローを劇的に改善する可能性が高い。 クリエイティブな現場や迅速なプロトタイピングが求められる開発環境において、レンダリング待ち時間を大幅に短縮する強力な選択肢となる。"
-      },
-      "en": {
-        "title": "MiniMax launches H3-Image, a new generative model capable of rendering 4K high-resolution images in under 10 seconds",
-        "summary": "MiniMax has officially released H3-Image, a powerful new generative AI model engineered to deliver 4K high-resolution visuals within a sub-10-second inference window. This shift targets the primary bottleneck of high-fidelity image synthesis by balancing intricate texture detail with global structural coherence at unprecedented speeds. For engineers and designers struggling with the slow render times of traditional diffusion models, H3-Image represents a significant leap forward in workflow efficiency. By drastically cutting latency during the creative feedback loop, this tool provides a robust solution for developers needing instant, production-ready assets without sacrificing quality. It is a critical development for teams prioritizing rapid prototyping and real-time generation in their specialized AI pipelines."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "画像生成",
-      "アップデート"
-    ],
-    "created_at": "2026-11-11T08:16:55.765Z"
-  },
-  {
     "id": "art-1794385009405-zh4jl",
     "source_id": "source-github-trending",
     "source_name": "GitHub Trending (AI / TypeScript / Python)",
@@ -26177,32 +26204,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T08:02:04.106Z"
-  },
-  {
-    "id": "art-1794384117145-7ze2v",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/xolace",
-    "published_at": "2026-11-10T22:07:24.000Z",
-    "og_image_url": null,
-    "title_ja": "メンタル不調の「言葉にできない不安」を言語化するアプリ「Xolace」、AI対話で感情整理をサポートする新アプローチ",
-    "summary_ja": "Xolaceは、明確な診断には至らない日々のメンタル不調や言語化できないモヤモヤを抱えるユーザー向けのAIメンタルケアアプリ。 独自のプロンプト設計により、ユーザーの断片的な思考を整理し、感情のパターンを可視化することで、メンタルヘルスの悪化を未然に防ぐ予防的なアプローチを提供する。 単なるチャットボットではなく、自分の内面を客観視するための「思考の壁打ち相手」として、開発者が日々の感情負荷をマネジメントするツールとして機能する。",
-    "translations": {
-      "ja": {
-        "title": "メンタル不調の「言葉にできない不安」を言語化するアプリ「Xolace」、AI対話で感情整理をサポートする新アプローチ",
-        "summary": "Xolaceは、明確な診断には至らない日々のメンタル不調や言語化できないモヤモヤを抱えるユーザー向けのAIメンタルケアアプリ。 独自のプロンプト設計により、ユーザーの断片的な思考を整理し、感情のパターンを可視化することで、メンタルヘルスの悪化を未然に防ぐ予防的なアプローチを提供する。 単なるチャットボットではなく、自分の内面を客観視するための「思考の壁打ち相手」として、開発者が日々の感情負荷をマネジメントするツールとして機能する。"
-      },
-      "en": {
-        "title": "Xolace launches AI-powered mental support tool designed to help users articulate those difficult, non-clinical days of emotional ambiguity",
-        "summary": "Xolace is an AI-driven mental well-being platform built specifically for the grey area—those 'bad days' that fall short of a clinical diagnosis but still burden your productivity and focus. Instead of acting as a generic therapist, the app utilizes targeted conversational AI to help users articulate fragmented, difficult-to-name emotions and visualize recurring emotional patterns over time. This approach allows users to offload mental friction and gain objective perspective on their inner state before stress escalates. For builders and high-performers managing high-pressure workloads, Xolace serves as a specialized 'thought partner' that turns abstract anxiety into actionable self-awareness, prioritizing preventative emotional hygiene rather than just reactive crisis management during periods of burnout or creative block."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-11T08:01:57.145Z"
   },
   {
     "id": "art-1794384110417-l61y1",
