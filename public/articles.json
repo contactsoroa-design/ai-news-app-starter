@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1794887263231-x0egw",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/noriyuk/articles/1ef9eb3ca98f3d",
+    "published_at": "2026-11-16T22:33:19.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--RYPLADNV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%259B%25BD%25E7%25AB%258B%25E5%259B%25BD%25E4%25BC%259A%25E5%259B%25B3%25E6%259B%25B8%25E9%25A4%25A8%25E3%2581%25AE%25E6%259B%25B8%25E8%25AA%258C%25E3%2582%2592GitHub%2520Actions%25E3%2581%25A7%25E6%25AF%258E%25E6%2597%25A5%25E5%258F%2596%25E3%2582%258A%25E8%25BE%25BC%25E3%2582%2580%25EF%25BC%259A%25E6%25AD%25A2%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E6%25AC%25A1%25E3%2581%25AE%25E5%259B%259E%25E3%2581%25A7%25E7%25B6%259A%25E3%2581%258D%25E3%2582%2592%25E5%258F%2596%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:noriyuk%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2U4ODdmMjY0ZDMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "国立国会図書館APIから書誌情報を毎日取得：GitHub Actionsで実装する「停止しても続きから再開できる」自動更新の仕組み",
+    "summary_ja": "個人開発アプリ「BookConnect」の書誌情報取得元をGoogle Books APIから国立国会図書館APIへ移行。 API制限やデータ保存規約への対応として、GitHub Actionsによるバッチ処理を構築した。 ポイントは、処理が中断しても前回の続きから再開できるように設計した冪等性のあるパイプライン構築にある。 外部APIに依存する個人開発において、堅牢なデータ同期を維持する良い実践例だ。",
+    "translations": {
+      "ja": {
+        "title": "国立国会図書館APIから書誌情報を毎日取得：GitHub Actionsで実装する「停止しても続きから再開できる」自動更新の仕組み",
+        "summary": "個人開発アプリ「BookConnect」の書誌情報取得元をGoogle Books APIから国立国会図書館APIへ移行。 API制限やデータ保存規約への対応として、GitHub Actionsによるバッチ処理を構築した。 ポイントは、処理が中断しても前回の続きから再開できるように設計した冪等性のあるパイプライン構築にある。 外部APIに依存する個人開発において、堅牢なデータ同期を維持する良い実践例だ。"
+      },
+      "en": {
+        "title": "Automating Daily Bibliographic Sync with National Diet Library API via GitHub Actions and Resumable Batch Processing",
+        "summary": "The developer behind the personal project \"BookConnect\" migrated bibliographic data ingestion from the Google Books API to the National Diet Library API to circumvent strict rate limits and data retention policies. To automate this reliably, they engineered a GitHub Actions pipeline that executes daily batch updates. The key technical challenge was ensuring resilience: the synchronization script is explicitly designed to be resumable, meaning if an execution is interrupted, it picks up precisely where it stopped during the next run rather than re-processing the entire queue. This architecture provides a robust template for any developer relying on fragile third-party APIs, proving that idempotent data syncing is essential for maintaining consistent database states without manual oversight."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-17T03:47:43.231Z"
+  },
+  {
+    "id": "art-1794887252280-p1fj5",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003241/",
+    "published_at": "2026-11-17T03:00:00.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/news/article/ogp/2611/17/2000003241/10012261/2048",
+    "title_ja": "AIチャットの入力データが外部へ漏洩？ChatGPTやClaudeなど42サービスを調査、広告トラッカーによる個人情報収集の実態",
+    "summary_ja": "米ニューヨーク州立大学の研究チームは、ChatGPTやClaude、Geminiを含む主要42のAIチャットプラットフォームを調査し、入力された会話内容や個人情報がサイト内の広告トラッカーを通じて第三者企業へ送信されている実態を論文で明らかにした。 多くの場合、ユーザーの同意なしに機密性の高いプロンプトデータが収集されている。",
+    "translations": {
+      "ja": {
+        "title": "AIチャットの入力データが外部へ漏洩？ChatGPTやClaudeなど42サービスを調査、広告トラッカーによる個人情報収集の実態",
+        "summary": "米ニューヨーク州立大学の研究チームは、ChatGPTやClaude、Geminiを含む主要42のAIチャットプラットフォームを調査し、入力された会話内容や個人情報がサイト内の広告トラッカーを通じて第三者企業へ送信されている実態を論文で明らかにした。 多くの場合、ユーザーの同意なしに機密性の高いプロンプトデータが収集されている。"
+      },
+      "en": {
+        "title": "Are AI chatbots leaking private prompts to ad trackers? New research exposes data vulnerabilities across 42 platforms including ChatGPT",
+        "summary": "Researchers from Stony Brook University analyzed 42 major AI chat platforms—including ChatGPT, Claude, and Gemini—and discovered that sensitive user prompts and personal conversation data are being leaked to third-party firms via integrated ad trackers. Their study, \"Penny for Your Prompts,\" reveals that these tracking scripts frequently capture user input without explicit consent, creating significant privacy vulnerabilities within the AI interface. This highlights a systemic failure to isolate sensitive session data from marketing analytics tools in the modern AI stack. For developers, the finding is a critical warning: third-party scripts must be rigorously audited and sandboxed. Builders must ensure that user inputs are never accessible to external tracking pixels or risk severe compliance and trust issues as regulations tighten."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-17T03:47:32.280Z"
+  },
+  {
+    "id": "art-1794887245813-mlhqa",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.macrumors.com/2026/11/16/apple-icloud-paid-siri-ai-upgrade/",
+    "published_at": "2026-11-17T03:02:59.000Z",
+    "og_image_url": "https://images.macrumors.com/t/_tjfK0vua64wDcGeqmNXpkPzL54=/2048x/article-new/2026/11/Siri-AI-Icon.jpeg",
+    "title_ja": "iOS 27.3ベータでSiri AIに1日の利用制限を導入、iCloud+有料プランで無制限アクセスが可能に",
+    "summary_ja": "iOS 27.3の最新ベータ版にて、Siri AI機能に1日あたりの利用回数制限が新たに導入された。 無制限のアクセスには、iCloud+の有料プランへのアップグレードが必要となる。 OpenAIのChatGPT等に見られるような推論コストの抑制がAppleのAI戦略にも適用され始めた格好だ。",
+    "translations": {
+      "ja": {
+        "title": "iOS 27.3ベータでSiri AIに1日の利用制限を導入、iCloud+有料プランで無制限アクセスが可能に",
+        "summary": "iOS 27.3の最新ベータ版にて、Siri AI機能に1日あたりの利用回数制限が新たに導入された。 無制限のアクセスには、iCloud+の有料プランへのアップグレードが必要となる。 OpenAIのChatGPT等に見られるような推論コストの抑制がAppleのAI戦略にも適用され始めた格好だ。"
+      },
+      "en": {
+        "title": "iOS 27.3 Beta Introduces Daily Usage Caps for Siri AI, Requiring iCloud+ Upgrades for Unlimited Access",
+        "summary": "Apple has quietly introduced daily usage limits for Siri AI features in the latest iOS 27.3 beta, creating a hard paywall that requires an iCloud+ subscription for continued access. This shift signals that even Apple is now prioritizing strict inference cost management as generative AI capabilities scale across its user base. For builders, this rollout reinforces the standard industry pivot toward tiered monetization; rather than providing unlimited compute, developers must carefully design hybrid models that balance free-tier access against subscription-based unlocks. Successfully navigating these platform constraints requires building infrastructure that can track granular usage quotas and enforce limits dynamically without compromising the core user experience during peak traffic or heavy task execution."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "課金・ペイウォール",
+      "開発"
+    ],
+    "created_at": "2026-11-17T03:47:25.813Z"
+  },
+  {
+    "id": "art-1794887239477-m5byz",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/nanairo5503/n/n60bffa19937b",
+    "published_at": "2026-11-17T03:34:50.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/337154072/rectangle_large_type_2_7547716dd7845735a3f83439c97f9d08.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "iOS 18専用のニュース読み上げアプリ「選んで聴くニュース」がApp Storeで公開。個人開発者が実装した最新の音声テック活用の事例",
+    "summary_ja": "個人開発者がiOS 18以降のiPhone向けに特化したニュース読み上げアプリ「選んで聴くニュース」をApp Storeでリリースした。 iOS標準の音声合成技術や最新OSの機能を活かし、ユーザーが聞きたいニュースを選別して聴取できる体験を無償で提供している。 限られたリソースでもOSのネイティブ機能を最大限に活用し、特定のユースケースに絞ったUXを提供することで、ニッチな課題を解決するプロダクト開発の好例と言える。",
+    "translations": {
+      "ja": {
+        "title": "iOS 18専用のニュース読み上げアプリ「選んで聴くニュース」がApp Storeで公開。個人開発者が実装した最新の音声テック活用の事例",
+        "summary": "個人開発者がiOS 18以降のiPhone向けに特化したニュース読み上げアプリ「選んで聴くニュース」をApp Storeでリリースした。 iOS標準の音声合成技術や最新OSの機能を活かし、ユーザーが聞きたいニュースを選別して聴取できる体験を無償で提供している。 限られたリソースでもOSのネイティブ機能を最大限に活用し、特定のユースケースに絞ったUXを提供することで、ニッチな課題を解決するプロダクト開発の好例と言える。"
+      },
+      "en": {
+        "title": "New iOS 18-exclusive news reader app 'Erande Kiku News' launches on the App Store as a case study for native voice tech",
+        "summary": "An independent developer has released a new news reader application called 'Erande Kiku News' on the App Store, built exclusively for users on iOS 18 and later. By leveraging the latest iOS native voice synthesis APIs and operating system features, the app offers a streamlined, free experience that allows users to curate and listen to specific news items of interest. This launch serves as a practical blueprint for indie builders: by focusing on a specific, high-utility use case and fully utilizing platform-native capabilities rather than over-engineering a cross-platform solution, developers can successfully address niche pain points and deliver a polished, performant product that stands out even with minimal resources."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-17T03:47:19.477Z"
+  },
+  {
     "id": "art-1794886349253-lmk8l",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -11595,33 +11702,6 @@
     "created_at": "2026-11-15T22:02:00.605Z"
   },
   {
-    "id": "art-1794780108440-kurs8",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/akushutoride/n/n8b906db78793",
-    "published_at": "2026-11-15T21:31:21.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/326583773/rectangle_large_type_2_e86968a301fdb2a9f232d47a0672f21e.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "医療・介護AIアプリ開発の法的防壁を構築：3大免責条項とユーザー同意を最適化する「スマートUI」の設計実装（2-8-1）",
-    "summary_ja": "「さくケア」開発プロジェクトは、医療・介護領域で必須となる法的責任回避のため、重要となる3大免責条項を詳細に定義し、利用規約へ実装した。 単なる規約の作成にとどまらず、ユーザーが内容を深く理解するための「スマート同意UI」を開発することで、法的リスクを最小化しつつUXを阻害しない設計を実現している。 AIプロダクト開発者にとって、信頼性と透明性を確保するリーガルデザインは、リリース前の最優先課題と言えるだろう。",
-    "translations": {
-      "ja": {
-        "title": "医療・介護AIアプリ開発の法的防壁を構築：3大免責条項とユーザー同意を最適化する「スマートUI」の設計実装（2-8-1）",
-        "summary": "「さくケア」開発プロジェクトは、医療・介護領域で必須となる法的責任回避のため、重要となる3大免責条項を詳細に定義し、利用規約へ実装した。 単なる規約の作成にとどまらず、ユーザーが内容を深く理解するための「スマート同意UI」を開発することで、法的リスクを最小化しつつUXを阻害しない設計を実現している。 AIプロダクト開発者にとって、信頼性と透明性を確保するリーガルデザインは、リリース前の最優先課題と言えるだろう。"
-      },
-      "en": {
-        "title": "Building Legal Shields for AI Health Apps: Implementing Essential Disclaimers and Smart Consent UI for Medical/Nursing Care Platforms",
-        "summary": "The SakuCare project has finalized its core legal defense strategy by implementing three critical liability disclaimers tailored for medical and nursing care AI applications. Beyond drafting standard boilerplate text, the team engineered a 'Smart Consent UI' designed to ensure users actually grasp the limitations of AI-generated health advice without creating unnecessary friction in the user flow. This strategic approach minimizes legal exposure while maintaining a seamless user experience, proving that legal compliance can be integrated directly into product architecture. For solo builders and AI developers, this serves as a blueprint for balancing robust legal protection against user-centric design, highlighting that transparent terms are just as important as the backend logic itself."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-15T22:01:48.440Z"
-  },
-  {
     "id": "art-1794780101923-vygnm",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -12430,33 +12510,6 @@
       "開発"
     ],
     "created_at": "2026-11-15T19:02:23.274Z"
-  },
-  {
-    "id": "art-1794769313961-ef2kf",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://christophertonetti.com/files/papers/JonesTonetti_WeakLinksRisk.pdf",
-    "published_at": "2026-11-15T18:44:21.000Z",
-    "og_image_url": null,
-    "title_ja": "AI導入の隠れたリスク「弱いつながりの非対称性」とは？経済学者が提唱するAI時代の生産性と停滞のパラドックス",
-    "summary_ja": "AI研究で提唱された「弱いつながりの非対称性」理論は、AIがボトルネックとなる単一工程を劇的に改善する一方で、全体の生産性向上には限界があることを指摘する。 たとえ特定のタスクがAIで高速化しても、直列的なプロセス全体で見ればボトルネックは移動するだけであり、劇的な経済成長にはシステム全体の再設計が必要だという視点を提示する。 エンジニアは部分的な自動化だけでなく、ワークフロー全体の構造を見直す視点が求められる。",
-    "translations": {
-      "ja": {
-        "title": "AI導入の隠れたリスク「弱いつながりの非対称性」とは？経済学者が提唱するAI時代の生産性と停滞のパラドックス",
-        "summary": "AI研究で提唱された「弱いつながりの非対称性」理論は、AIがボトルネックとなる単一工程を劇的に改善する一方で、全体の生産性向上には限界があることを指摘する。 たとえ特定のタスクがAIで高速化しても、直列的なプロセス全体で見ればボトルネックは移動するだけであり、劇的な経済成長にはシステム全体の再設計が必要だという視点を提示する。 エンジニアは部分的な自動化だけでなく、ワークフロー全体の構造を見直す視点が求められる。"
-      },
-      "en": {
-        "title": "The Weak-Link Asymmetry: Why AI speeds up specific tasks but struggles to lift total productivity",
-        "summary": "Economists Jones and Tonetti introduce the 'Weak-Link Asymmetry' framework, arguing that AI acts as a powerful tool to fix specific bottlenecked tasks while failing to universally boost aggregate productivity. The core mechanism suggests that because production processes often function like a chain of sequential tasks, accelerating one part merely shifts the bottleneck to the next step rather than accelerating the entire output. This explains the discrepancy between impressive individual AI use cases and stagnating macro-level growth numbers. For builders and architects, the takeaway is clear: optimizing a single component with AI provides diminishing returns if the rest of your production chain remains legacy-bound. To truly unlock productivity, you must look beyond individual task efficiency and redesign the system architecture itself."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-15T19:01:53.961Z"
   },
   {
     "id": "art-1794768432833-npzgd",
@@ -15237,32 +15290,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-14T17:17:22.419Z"
-  },
-  {
-    "id": "art-1794675725012-wd4vu",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/fumi3333/articles/bedrock-server-oracle-arm-free",
-    "published_at": "2026-11-14T14:27:18.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3OUBp8Te--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Oracle%2520Cloud%25EF%25BC%2588ARM%25EF%25BC%2589%25E3%2581%25A7%25E3%2580%2581%25E7%25B5%25B1%25E5%2590%2588%25E7%2589%2588%2520Minecraft%2520%25E3%2581%25AE%252024%2520%25E6%2599%2582%25E9%2596%2593%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%2592%25E7%25AB%258B%25E3%2581%25A6%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fumi3333%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyMGFlODBkMmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Oracle Cloud無料枠でMinecraft統合版24時間サーバーを構築、学生サークルの交流拠点化へ。コストゼロ運用の全記録",
-    "summary_ja": "大学サークルの交流拠点として、Oracle CloudのAlways Free（ARMインスタンス）を活用し、Minecraft統合版（Bedrock）の24時間サーバーを構築した。 アカウント開設から接続確認まで約3日間で完了し、インフラ費用は現在ゼロ円である。 物理サーバーを購入することなくクラウドの無料枠をフル活用するアプローチは、学生プロジェクトや個人開発のPoCにおいて、予算の壁を突破する有効な戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "Oracle Cloud無料枠でMinecraft統合版24時間サーバーを構築、学生サークルの交流拠点化へ。コストゼロ運用の全記録",
-        "summary": "大学サークルの交流拠点として、Oracle CloudのAlways Free（ARMインスタンス）を活用し、Minecraft統合版（Bedrock）の24時間サーバーを構築した。 アカウント開設から接続確認まで約3日間で完了し、インフラ費用は現在ゼロ円である。 物理サーバーを購入することなくクラウドの無料枠をフル活用するアプローチは、学生プロジェクトや個人開発のPoCにおいて、予算の壁を突破する有効な戦略となる。"
-      },
-      "en": {
-        "title": "Building a 24/7 Minecraft Bedrock server for zero cost on Oracle Cloud Always Free for student communities",
-        "summary": "To establish a permanent collaborative space for a university club, the author deployed a 24/7 Minecraft Bedrock server utilizing Oracle Cloud’s 'Always Free' ARM instances. The entire process, from initial account registration to verifying external access from home PCs, was completed within three days at zero infrastructure cost. By leveraging free cloud tiers instead of purchasing physical hardware, the project demonstrates a highly practical blueprint for students and independent developers to bypass financial barriers while launching persistent collaborative environments. This serves as a strong reminder that robust cloud infrastructure can be provisioned for free, provided developers are willing to navigate the specific configuration requirements of cloud-native free-tier offerings to host essential community services."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-14T17:02:05.012Z"
   },
   {
     "id": "art-1794672103747-dt8i9",
@@ -29061,32 +29088,6 @@
       "開発"
     ],
     "created_at": "2026-11-10T02:31:49.760Z"
-  },
-  {
-    "id": "art-1794277008723-f2pdh",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/business/articles/2611/10/news020.html",
-    "published_at": "2026-11-10T01:45:00.000Z",
-    "og_image_url": "https://image.itmedia.co.jp/business/articles/2611/10/cover_news020.jpg",
-    "title_ja": "Agodaが認める「単独での成功は不可能」—ANAや星野リゾートと提携を深め、日本特有の宿泊商慣習を攻略するデジタル戦略の裏側",
-    "summary_ja": "オンライン旅行大手のAgodaは、日本市場において自社単独での成功は不可能と判断し、ANAや星野リゾートといった現地主要企業との戦略的提携を加速させている。 背景には「1人泊不可・夕食付き」といった日本独自の旅館文化や複雑なポイント経済圏があり、グローバル標準モデルだけでは対応しきれない課題が浮き彫りとなった。 同社は今後、これらのローカライズされた商慣習をデジタル基盤へ取り込むことで、外資系メガOTAとしての地位を盤石にする狙いだ。",
-    "translations": {
-      "ja": {
-        "title": "Agodaが認める「単独での成功は不可能」—ANAや星野リゾートと提携を深め、日本特有の宿泊商慣習を攻略するデジタル戦略の裏側",
-        "summary": "オンライン旅行大手のAgodaは、日本市場において自社単独での成功は不可能と判断し、ANAや星野リゾートといった現地主要企業との戦略的提携を加速させている。 背景には「1人泊不可・夕食付き」といった日本独自の旅館文化や複雑なポイント経済圏があり、グローバル標準モデルだけでは対応しきれない課題が浮き彫りとなった。 同社は今後、これらのローカライズされた商慣習をデジタル基盤へ取り込むことで、外資系メガOTAとしての地位を盤石にする狙いだ。"
-      },
-      "en": {
-        "title": "Agoda shifts strategy to partner with ANA and Hoshino Resorts, admitting defeat in attempts to conquer Japan with global-standard models",
-        "summary": "Global travel giant Agoda has pivoted its Japan strategy, explicitly acknowledging that winning alone is impossible due to the nation's unique hospitality landscape. By aggressively partnering with local powerhouses like ANA and Hoshino Resorts, Agoda is addressing friction points—such as rigid 'no solo stay' policies and complex, dinner-inclusive ryokan booking cultures—that standard global platforms fail to accommodate. This shift highlights a critical lesson for international digital services: localized business logic often defies global templates. By integrating these specific Japanese customs directly into their backend systems, Agoda is betting that deep operational localization, rather than brute-force market entry, is the only sustainable way for a mega-OTA to capture market share in regions with entrenched, unique consumer behaviors."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-10T02:16:48.723Z"
   },
   {
     "id": "art-1794277002321-ne50h",
