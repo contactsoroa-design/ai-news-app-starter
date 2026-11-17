@@ -1,5 +1,86 @@
 [
   {
+    "id": "art-1794875514648-d9ztf",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tenten_lab/n/n93d587796a8d",
+    "published_at": "2026-11-17T00:29:57.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/337093746/rectangle_large_type_2_fd8f4cd82fd26be5c6c88a94499d5d50.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発のリリース・公開実践キット公開：導入後のUX改善へ「初期段階で迷った点」のフィードバックを募集",
+    "summary_ja": "個人開発者がリリースから公開までを円滑に進めるための「個人開発リリース・公開実践キット」が公開された。 開発者の立ち上げ時の摩擦を減らすことを目的とし、導入初期に直面した具体的な疑問や詰まったポイントに関するフィードバックが募られている。 特定の技術選定やドキュメントの分かりにくさなど、実際にキットを利用したユーザーからの生の声を集約し、内容のブラッシュアップを図る狙いだ。",
+    "translations": {
+      "ja": {
+        "title": "個人開発のリリース・公開実践キット公開：導入後のUX改善へ「初期段階で迷った点」のフィードバックを募集",
+        "summary": "個人開発者がリリースから公開までを円滑に進めるための「個人開発リリース・公開実践キット」が公開された。 開発者の立ち上げ時の摩擦を減らすことを目的とし、導入初期に直面した具体的な疑問や詰まったポイントに関するフィードバックが募られている。 特定の技術選定やドキュメントの分かりにくさなど、実際にキットを利用したユーザーからの生の声を集約し、内容のブラッシュアップを図る狙いだ。"
+      },
+      "en": {
+        "title": "Creator seeks feedback on 'Personal Development Release Kit' to streamline initial setup and minimize developer friction",
+        "summary": "The author has released a practical guide titled 'Personal Development Release and Publishing Kit,' aimed at helping solo developers navigate the product launch process efficiently. To refine the material and eliminate common stumbling blocks for newcomers, they are actively soliciting feedback on specific pain points experienced during the initial setup. Whether the friction stems from ambiguous documentation, confusing technical choices, or unclear workflows, user insights are being gathered to iteratively improve the guide. For solo builders aiming for smoother product shipping, this initiative serves as a valuable opportunity to contribute to a shared knowledge base, ensuring the kit provides actionable, clear, and user-friendly guidance for the next wave of independent software developers launching their projects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-17T00:31:54.648Z"
+  },
+  {
+    "id": "art-1794875503668-2ap93",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/16/llm/",
+    "published_at": "2026-11-16T23:57:26.000Z",
+    "og_image_url": null,
+    "title_ja": "CLIツール「llm」v0.37.3リリース：SQLite 3.54.1で変更されたJSON変換仕様への対応と修正を実施",
+    "summary_ja": "CLIツール「llm」のv0.37.3は、Homebrewが採用したSQLite 3.54.1でのJSON生成仕様変更に伴うロギング機能のバグを修正した。 旧版で正常だったJSON配列の展開が、新版では文字列として扱われる挙動に対応するため、クエリ内で明示的にjson()関数を通す修正が加えられた。 SQLiteのような基盤ライブラリのアップデートが、上位アプリケーションの予期せぬ挙動を招く好例であり、同様の環境を構築する際は依存関係の更新テストが不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "CLIツール「llm」v0.37.3リリース：SQLite 3.54.1で変更されたJSON変換仕様への対応と修正を実施",
+        "summary": "CLIツール「llm」のv0.37.3は、Homebrewが採用したSQLite 3.54.1でのJSON生成仕様変更に伴うロギング機能のバグを修正した。 旧版で正常だったJSON配列の展開が、新版では文字列として扱われる挙動に対応するため、クエリ内で明示的にjson()関数を通す修正が加えられた。 SQLiteのような基盤ライブラリのアップデートが、上位アプリケーションの予期せぬ挙動を招く好例であり、同様の環境を構築する際は依存関係の更新テストが不可欠だ。"
+      },
+      "en": {
+        "title": "LLM command-line tool reaches v0.37.3 to fix compatibility issues with recent SQLite 3.54.1 library changes",
+        "summary": "The LLM command-line tool has been updated to version 0.37.3, primarily to address a breaking change introduced by SQLite 3.54.1. This new SQLite release altered how JSON arrays are returned in specific nested queries, causing LLM's internal logging logic to incorrectly interpret JSON objects as raw strings. The fix requires wrapping problematic nested SELECT statements in the explicit json() function to ensure correct formatting according to updated SQLite specifications. This incident serves as a critical reminder for developers to rigorously test dependency updates, as low-level library changes can silently ripple through application code, especially when relying on specific JSON behavior. Keeping dependencies pinned or proactively auditing major SQLite version shifts remains essential for maintaining tool reliability in production pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-17T00:31:43.668Z"
+  },
+  {
+    "id": "art-1794875496487-xbhqd",
+    "source_id": "source-notion",
+    "source_name": "Notion API Changelog (Agent / MCP)",
+    "url": "https://developers.notion.com/page/changelog#november-16-2026",
+    "published_at": "2026-11-16T00:00:00.000Z",
+    "og_image_url": "https://notion-demo.mintlify.site/images/og-image.png",
+    "title_ja": "Notion APIが「フルページ会議ノート」作成に対応、カレンダー連携による自動生成やMCPツール経由の操作が可能に",
+    "summary_ja": "Notion APIにフルページ会議ノートを作成・リンクするための新たなエンドポイントが追加された。 POST /v1/meeting_notesで新規作成が可能なほか、カレンダーイベントIDを指定することで既存ノートの取得や紐付けも自動化できる。 さらにNotion MCPツールにも対応し、AIエージェント経由でカレンダー予定に基づいた会議ノート作成フローを容易に実装可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Notion APIが「フルページ会議ノート」作成に対応、カレンダー連携による自動生成やMCPツール経由の操作が可能に",
+        "summary": "Notion APIにフルページ会議ノートを作成・リンクするための新たなエンドポイントが追加された。 POST /v1/meeting_notesで新規作成が可能なほか、カレンダーイベントIDを指定することで既存ノートの取得や紐付けも自動化できる。 さらにNotion MCPツールにも対応し、AIエージェント経由でカレンダー予定に基づいた会議ノート作成フローを容易に実装可能だ。"
+      },
+      "en": {
+        "title": "Notion API introduces full-page meeting note creation endpoints plus MCP tool support for automated calendar-linked documentation",
+        "summary": "Notion has updated its API to support the creation and linking of full-page meeting notes, adding specific POST and PATCH endpoints for streamlined calendar integration. By passing a calendar_event ID, developers can now programmatically retrieve existing notes or auto-generate new ones linked to specific schedule blocks. The update also extends to the Notion MCP tool, enabling AI agents to spin up meeting pages directly from calendar events. For builders constructing meeting-prep workflows, this removes the friction of manual documentation, allowing backends to handle note creation automatically before a call starts. This shift signals a move toward tighter integration between structured project databases and real-time scheduling tools in agentic applications."
+      }
+    },
+    "tool_tags": [
+      "Notion"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-17T00:31:36.487Z"
+  },
+  {
     "id": "art-1794874635278-ccokd",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10760,33 +10841,6 @@
     "created_at": "2026-11-15T21:04:04.378Z"
   },
   {
-    "id": "art-1794775840205-l1w0z",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/grand_rose5703/n/naaa0ecfc5ddd",
-    "published_at": "2026-11-11T05:53:19.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/334837041/rectangle_large_type_2_4cefbca1df0a28dac1487224d2d7ba6a.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "フォロワー0の新規Xアカウントで「ブースト」広告を1,000円試した結果：初期の拡散力を検証",
-    "summary_ja": "犬向けお出かけ情報サイト「WANTRIPLOG」を運営する個人開発者が、フォロワー数0の新規Xアカウントを作成し、1,000円のブースト（広告配信）を投入して拡散力を検証した。 SNS運用を始めたばかりのフェーズにおいて、初期トラフィックを自力で生むための広告投資がどこまで有効かをレポート。 インプレッションやエンゲージメント率の推移から、フォロワー外へ届けるためにSNS広告を初期段階で活用する是非を考察する。",
-    "translations": {
-      "ja": {
-        "title": "フォロワー0の新規Xアカウントで「ブースト」広告を1,000円試した結果：初期の拡散力を検証",
-        "summary": "犬向けお出かけ情報サイト「WANTRIPLOG」を運営する個人開発者が、フォロワー数0の新規Xアカウントを作成し、1,000円のブースト（広告配信）を投入して拡散力を検証した。 SNS運用を始めたばかりのフェーズにおいて、初期トラフィックを自力で生むための広告投資がどこまで有効かをレポート。 インプレッションやエンゲージメント率の推移から、フォロワー外へ届けるためにSNS広告を初期段階で活用する是非を考察する。"
-      },
-      "en": {
-        "title": "Testing X's Boost feature with 1,000 JPY on a brand new, zero-follower account: Initial reach results",
-        "summary": "The indie developer behind 'WANTRIPLOG,' a site dedicated to dog-friendly spots, launched a fresh X account with zero followers to test whether a 1,000 JPY investment in the platform's 'Boost' ad feature could generate meaningful initial traction. This experiment chronicles the granular impact of paid promotion during the 'cold start' phase of social media marketing. By tracking impressions and engagement rates against the spend, the author evaluates if purchasing visibility is a viable strategy for bootstrapped builders attempting to bypass the algorithmic hurdle of having no existing audience. The resulting data offers a practical look at whether micro-budget social advertising acts as a necessary catalyst or wasted spend for new project launches."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "マーケ・集客・ASO",
-      "開発"
-    ],
-    "created_at": "2026-11-15T20:50:40.205Z"
-  },
-  {
     "id": "art-1794775801746-bn2a5",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -10890,33 +10944,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-15T20:32:38.634Z"
-  },
-  {
-    "id": "art-1794774740655-il0vg",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tariki_honganji/n/nc5e47dcdcc90",
-    "published_at": "2026-11-15T20:17:12.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336640345/rectangle_large_type_2_62c60086da476bc9fd16f6cc032420fc.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "28ドルの資金で挑む個人開発：過去4週間で数百万票を記録した人気投票市場の隙間を狙う収益化戦略",
-    "summary_ja": "わずか28ドルの資金から利益を生み出そうと試みる二人組が、過去4週間で数百万票が投じられた「人気投票」市場の裏側を検証した事例。 彼らが注目したのは、圧倒的な人気を誇る大手投票サービスと、まだ票数が少なく競合が限定的な「穴場」プールとの差分である。 市場トレンドを見極め、小規模な需要を拾い上げることで、広告やアフィリエイト以外の収益源を確保する手法は、ゼロから収益化を目指す個人開発者にとって現実的な着眼点となる。",
-    "translations": {
-      "ja": {
-        "title": "28ドルの資金で挑む個人開発：過去4週間で数百万票を記録した人気投票市場の隙間を狙う収益化戦略",
-        "summary": "わずか28ドルの資金から利益を生み出そうと試みる二人組が、過去4週間で数百万票が投じられた「人気投票」市場の裏側を検証した事例。 彼らが注目したのは、圧倒的な人気を誇る大手投票サービスと、まだ票数が少なく競合が限定的な「穴場」プールとの差分である。 市場トレンドを見極め、小規模な需要を拾い上げることで、広告やアフィリエイト以外の収益源を確保する手法は、ゼロから収益化を目指す個人開発者にとって現実的な着眼点となる。"
-      },
-      "en": {
-        "title": "Turning $28 into profit: A developer duo’s strategy for finding high-volume, low-competition niche polls",
-        "summary": "Two developers are documenting their journey to turn a tiny $28 budget into a profitable venture by reverse-engineering the online voting market, which has seen millions of votes cast over the past four weeks. Their strategy involves identifying gaps between saturated, high-traffic voting platforms and underserved, niche pools where competition is minimal but user intent is high. By analyzing poll distribution trends rather than relying on massive scale, they are building a model to capture traffic that larger players ignore. For indie builders seeking zero-to-one revenue streams, the practical takeaway is that finding untapped micro-markets allows for viable monetization without competing head-on against established platforms. The approach focuses on agility, data observation, and smart capital deployment over sheer infrastructure size."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-15T20:32:20.655Z"
   },
   {
     "id": "art-1794774710900-izp6s",
@@ -11727,31 +11754,6 @@
       "開発"
     ],
     "created_at": "2026-11-15T17:47:13.096Z"
-  },
-  {
-    "id": "art-1794763918066-abxuq",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://a115.co.uk/tuning-a-linux-laptop-for-ai-assisted-development/",
-    "published_at": "2026-11-15T17:15:35.000Z",
-    "og_image_url": "https://a115.co.uk/a115-logo-square-600x600.png",
-    "title_ja": "Linux環境でAIコーディングを高速化：ハードウェア最適化からモデル推論の最適化までを解説",
-    "summary_ja": "AI支援開発をLinux環境で快適に行うための、ラップトップのハードウェア設定とソフトウェア最適化の全手順が公開された。 メモリ管理の改善やローカルLLM実行時の推論効率化など、開発者が陥りがちなボトルネックを回避する方法を具体的に網羅している。 単にスペックを上げるだけでなく、OSレベルでの設定調整こそが、AI駆動開発の生産性を左右する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Linux環境でAIコーディングを高速化：ハードウェア最適化からモデル推論の最適化までを解説",
-        "summary": "AI支援開発をLinux環境で快適に行うための、ラップトップのハードウェア設定とソフトウェア最適化の全手順が公開された。 メモリ管理の改善やローカルLLM実行時の推論効率化など、開発者が陥りがちなボトルネックを回避する方法を具体的に網羅している。 単にスペックを上げるだけでなく、OSレベルでの設定調整こそが、AI駆動開発の生産性を左右する鍵となる。"
-      },
-      "en": {
-        "title": "Optimizing Linux laptops for AI-assisted development: A guide to local hardware and software tuning",
-        "summary": "This guide details the essential steps for configuring a Linux-based laptop to maximize productivity during AI-assisted development sessions. It covers comprehensive strategies ranging from memory allocation tuning and thermal management to optimizing local LLM inference performance, effectively addressing common bottlenecks that stall coding workflows. Rather than relying solely on raw hardware upgrades, the author demonstrates how OS-level configurations and intelligent software management are critical for maintaining low-latency interaction when running AI tools locally. For developers seeking to move their AI stack off the cloud, these practical optimizations provide the blueprint for building a responsive, reliable, and high-performance development workstation capable of handling modern coding assistants without unexpected stutter or lag."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-15T17:31:58.066Z"
   },
   {
     "id": "art-1794762130270-n98sy",
