@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794920600166-gkt2l",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/elixir_livebook/n/ndedbc11825c0",
+    "published_at": "2026-11-17T12:26:28.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/337336791/rectangle_large_type_2_f96b6c9aaba992202d445f74560838cc.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "40日間も時刻どおりに動かなかったGitHub Actionsの定期実行を脱却、Cloudflare Workers移行で実現した高精度なジョブ実行管理術",
+    "summary_ja": "GitHub Actionsのスケジュール実行が40日間も定刻通りに動作しない問題を抱えていた開発者が、タスクをCloudflare Workersへ移行した事例。 GitHub Actionsのcron機能は厳密な実行時間を保証する設計ではなく、遅延が避けられない特性がある。 一方でCloudflare Workersはサーバーレス環境で安定したトリガー実行が可能なため、重要度の高いジョブは専用環境へ逃がすのが運用上の最適解だ。",
+    "translations": {
+      "ja": {
+        "title": "40日間も時刻どおりに動かなかったGitHub Actionsの定期実行を脱却、Cloudflare Workers移行で実現した高精度なジョブ実行管理術",
+        "summary": "GitHub Actionsのスケジュール実行が40日間も定刻通りに動作しない問題を抱えていた開発者が、タスクをCloudflare Workersへ移行した事例。 GitHub Actionsのcron機能は厳密な実行時間を保証する設計ではなく、遅延が避けられない特性がある。 一方でCloudflare Workersはサーバーレス環境で安定したトリガー実行が可能なため、重要度の高いジョブは専用環境へ逃がすのが運用上の最適解だ。"
+      },
+      "en": {
+        "title": "Why I ditched GitHub Actions for Cloudflare Workers after 40 days of unreliable, delayed scheduled job executions",
+        "summary": "After struggling for 40 consecutive days with GitHub Actions failing to execute scheduled cron jobs on time, the author migrated their entire task automation suite to Cloudflare Workers. The root cause analysis highlights that GitHub Actions was never architected for high-precision temporal triggers, leading to unpredictable latency that breaks time-sensitive services. In contrast, serverless platforms like Cloudflare Workers are specifically optimized for consistent, low-latency execution triggered by cron events. For developers handling critical automated workflows, the takeaway is clear: do not treat GitHub Actions as a reliable cron engine. Moving time-sensitive operations to a dedicated serverless worker environment is essential to guarantee execution timing and maintain the stability of downstream infrastructure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-17T13:03:20.166Z"
+  },
+  {
+    "id": "art-1794920587393-5u7x8",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://tobiasuhlig.medium.com/codebase-rag-vs-grep-for-ai-coding-agents-the-same-grep-hits-scored-10-30-or-34-of-40-5f8738c2e766",
+    "published_at": "2026-11-17T12:54:42.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェントのコード検索性能を検証、RAGとgrepの比較テストでわかった「検索ヒット数」がスコアに与える決定的な影響",
+    "summary_ja": "AIエージェントによるコードベース検索の有効性を検証するため、同一のgrepヒット結果を用いてRAG手法と単純な検索結果のスコアを比較した実験が公開された。 結果、同じコード断片でも検索のヒット数によって評価スコアが10点から34点（40点満点）まで大きく変動することが判明した。 これは、RAGシステムの精度はアルゴリズム以前に、コンテキストの質と量に依存していることを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントのコード検索性能を検証、RAGとgrepの比較テストでわかった「検索ヒット数」がスコアに与える決定的な影響",
+        "summary": "AIエージェントによるコードベース検索の有効性を検証するため、同一のgrepヒット結果を用いてRAG手法と単純な検索結果のスコアを比較した実験が公開された。 結果、同じコード断片でも検索のヒット数によって評価スコアが10点から34点（40点満点）まで大きく変動することが判明した。 これは、RAGシステムの精度はアルゴリズム以前に、コンテキストの質と量に依存していることを示唆している。"
+      },
+      "en": {
+        "title": "AI agents' coding performance depends on RAG context: testing how grep hits impact task scores",
+        "summary": "A new investigation into AI agent performance compares codebase RAG methods against standard grep, revealing that identical search hits can yield wildly different results—with scores varying from 10 to 34 out of 40 depending on how context is presented. The findings demonstrate that an AI agent's accuracy is heavily dependent on the quality and formatting of the retrieved code snippets rather than just the underlying model's reasoning capabilities. For builders designing coding agents, the critical takeaway is that improving retrieval algorithms is only half the battle; success relies on fine-tuning the specific context selection criteria provided to the agent. Simply dumping grep hits into a prompt is insufficient; precision in context curation is the true bottleneck for complex software engineering tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-17T13:03:07.393Z"
+  },
+  {
+    "id": "art-1794920526452-fjpl8",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hiroxasobiba/articles/agent-tabs-inbox-and-signal",
+    "published_at": "2026-11-17T03:31:13.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--GUHCoLgy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25AE%25E3%2582%25BF%25E3%2583%2596%25E5%2590%258C%25E5%25A3%25AB%25E3%2581%25AE%25E5%258F%2597%25E3%2581%2591%25E6%25B8%25A1%25E3%2581%2597%25E3%2582%2592%25E3%2580%2581%25E8%25B2%25BC%25E3%2582%258A%25E4%25BB%2598%25E3%2581%2591%25E3%2581%258B%25E3%2582%2589%25E3%2580%258C%25E5%258F%2597%25E4%25BF%25A1%25E7%25AE%25B1%25EF%25BC%258B%25E5%2590%2588%25E5%259B%25B3%25E3%2580%258D%25E3%2581%25AB%25E5%25A4%2589%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E9%2580%2594%25E4%25B8%25AD%25E3%2581%25AE%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B2%25E3%2582%258D%25EF%25BC%25A0AI%25E9%2581%258A%25E3%2581%25B3%25E5%25A0%25B4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0ZMU1U4SndVdG1LVklfQS1TYzN2OHY5S1VuWTNMWnY0eHlnSVNGVVdvNzFIei1BPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeを用いた複数タブ開発の連携改善：受信箱と信号による非同期通信の実装記録",
+    "summary_ja": "個人開発でAndroidアプリを構築する際、ターミナルの複数タブでClaude Codeを動かし、司令役と実行役間で作業依頼をやり取りするアーキテクチャの改良記録である。 従来の手動コピー＆ペーストを排し、受信箱と信号を用いた非同期通信モデルへの移行を検証中だ。 現在は本番環境で影記録（シャドウモード）を実行し、従来のワークフローと新方式を比較検証している。 AIエージェント同士の連携を自律的なフローへ進化させる、実戦的な開発体験の共有である。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを用いた複数タブ開発の連携改善：受信箱と信号による非同期通信の実装記録",
+        "summary": "個人開発でAndroidアプリを構築する際、ターミナルの複数タブでClaude Codeを動かし、司令役と実行役間で作業依頼をやり取りするアーキテクチャの改良記録である。 従来の手動コピー＆ペーストを排し、受信箱と信号を用いた非同期通信モデルへの移行を検証中だ。 現在は本番環境で影記録（シャドウモード）を実行し、従来のワークフローと新方式を比較検証している。 AIエージェント同士の連携を自律的なフローへ進化させる、実戦的な開発体験の共有である。"
+      },
+      "en": {
+        "title": "Refining Multi-Agent Workflows: Moving Claude Code Tab Communication to an Inbox and Signal-Based Architecture",
+        "summary": "A developer building Android applications is refactoring how multiple Claude Code terminal tabs communicate, moving away from manual clipboard copy-pasting toward an automated inbox and signal-based architecture. The current implementation uses a commander tab to dispatch tasks to builder and researcher tabs, awaiting completion signals. The project is currently in a shadow-testing phase, where the new communication pipeline records activity alongside the legacy workflow to validate reliability without breaking existing deployments. This documentation captures the trial-and-error process of evolving autonomous agent coordination in local development environments. For solo developers scaling complex AI-driven builds, the key takeaway is prioritizing robust inter-agent signaling early to prevent bottlenecking development speed as the task complexity increases."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-17T13:02:06.452Z"
+  },
+  {
+    "id": "art-1794920516647-y3y9a",
+    "source_id": "source-benchlm",
+    "source_name": "BenchLM（モデル動向）",
+    "url": "https://af.net/news/aifod-proposes-collective-negotiation-on-ai-western-cape-hub/",
+    "published_at": "2026-11-17T11:21:00.000Z",
+    "og_image_url": "https://af.net/wp-content/uploads/AIFOD-WCG_CapeTown_2026-11-16_PR6_01_Groote-Schuur-Hospital_IMG4793-1024x683.jpg",
+    "title_ja": "AIFODがアフリカ諸国のAI交渉力強化を提唱、西ケープ州をハブに巨大テックと対等な条件を目指す（発展途上国フォーラム）",
+    "summary_ja": "AI発展途上国フォーラム（AIFOD）の共同創設者Tianze Zhang氏は、アフリカ諸国が団結して巨大AI・クラウドベンダーと交渉する枠組みを提案した。 南アフリカの西ケープ州を中核拠点とし、個別交渉では不利な小国が協力することで、公平なライセンスやアクセス条件の確保を目指す。 AIインフラの独占的状況に直面する新興市場にとって、単独ではなくブロックとして交渉力を最大化する戦略は、持続可能な技術導入に向けた現実的なアプローチとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "AIFODがアフリカ諸国のAI交渉力強化を提唱、西ケープ州をハブに巨大テックと対等な条件を目指す（発展途上国フォーラム）",
+        "summary": "AI発展途上国フォーラム（AIFOD）の共同創設者Tianze Zhang氏は、アフリカ諸国が団結して巨大AI・クラウドベンダーと交渉する枠組みを提案した。 南アフリカの西ケープ州を中核拠点とし、個別交渉では不利な小国が協力することで、公平なライセンスやアクセス条件の確保を目指す。 AIインフラの独占的状況に直面する新興市場にとって、単独ではなくブロックとして交渉力を最大化する戦略は、持続可能な技術導入に向けた現実的なアプローチとなるだろう。"
+      },
+      "en": {
+        "title": "AIFOD Pushes for Collective Bargaining Against AI Giants, Proposing Western Cape as Africa’s Tech Hub",
+        "summary": "AIFOD co-founder Tianze Zhang has proposed that African nations should unify to collectively negotiate fair terms with global AI and cloud providers. Speaking at Groote Schuur Hospital, Zhang argued for establishing the Western Cape as a centralized hub to consolidate bargaining power, allowing smaller markets to resist unfavorable terms imposed by major tech monopolies. This shift toward regional cooperation aims to ensure that AI adoption across the continent is not dictated by the unilateral pricing and accessibility constraints of external vendors. For developers and tech leaders in emerging markets, this strategy highlights the rising importance of cross-border alliances to secure infrastructure, effectively balancing the playing field against global giants who otherwise leverage isolated markets for maximum margin."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-17T13:01:56.647Z"
+  },
+  {
     "id": "art-1794919628594-6ymtn",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -12554,32 +12658,6 @@
     "created_at": "2026-11-16T04:47:27.243Z"
   },
   {
-    "id": "art-1794804440270-d413t",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yoshijob95/n/n2e7bec43af1a",
-    "published_at": "2026-11-16T04:31:59.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336767641/rectangle_large_type_2_27385ef2f14ca5b2ca964d74b3c00af1.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "noteで記事が埋もれる悩みを解消する：王道テーマでも独自性を生む「3つの視点」による差別化アプローチを解説",
-    "summary_ja": "noteで王道テーマを扱うと、既存の類似記事に埋もれてしまうという課題がある。 これを解決するためには、自身の経験や視点を組み合わせる独自の切り口が不可欠だ。 本記事では、既存コンテンツに新たな価値を加えるための具体的な「3つの視点」を提示し、二番煎じを回避して読者に刺さる独自コンテンツへ昇華させる手法を解説する。 独自性を出すことは、プラットフォーム内での検索流入やファン獲得において決定的な差となる。",
-    "translations": {
-      "ja": {
-        "title": "noteで記事が埋もれる悩みを解消する：王道テーマでも独自性を生む「3つの視点」による差別化アプローチを解説",
-        "summary": "noteで王道テーマを扱うと、既存の類似記事に埋もれてしまうという課題がある。 これを解決するためには、自身の経験や視点を組み合わせる独自の切り口が不可欠だ。 本記事では、既存コンテンツに新たな価値を加えるための具体的な「3つの視点」を提示し、二番煎じを回避して読者に刺さる独自コンテンツへ昇華させる手法を解説する。 独自性を出すことは、プラットフォーム内での検索流入やファン獲得において決定的な差となる。"
-      },
-      "en": {
-        "title": "Beyond generic content: How to apply three key perspectives to differentiate your articles and avoid getting buried on platforms like note",
-        "summary": "Writing about popular themes often leads to your work being buried under countless similar posts, causing many creators to abandon their ideas prematurely. To break through the noise, you must stop viewing 'popular' as synonymous with 'generic' and instead inject your unique experiences to create a fresh angle. This piece outlines three specific perspectives to shift your framing, helping you transform standard topics into distinctive, high-value content that resonates with readers. Developing a unique voice is not just about creativity; it is the fundamental strategy for improving discoverability and building a loyal audience in a crowded digital landscape. For writers, the lesson is that specificity is your strongest asset against algorithm-driven saturation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "マーケ・集客・ASO",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-16T04:47:20.270Z"
-  },
-  {
     "id": "art-1794804431236-ftfcj",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -14184,33 +14262,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-15T23:16:39.025Z"
-  },
-  {
-    "id": "art-1794783793525-cmpmy",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
-    "published_at": "2026-11-15T22:58:04.000Z",
-    "og_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25545717/STK481_STK432_CONGRESS_GOVERNMENT_CIVRGINIA_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-    "title_ja": "米議会が対中AI半導体輸出規制をさらに強化へ：NVIDIA等の情報流出スキャンダル受け、サプライチェーン監視体制を見直し",
-    "summary_ja": "米議会は、NVIDIA等の高性能AIチップが中国へ不正流出したとされるスキャンダルを受け、対中輸出規制を一段と強化する方針を固めた。 現行の規制網をすり抜ける巧妙な転売やサプライチェーン経由の流出を防ぐため、より厳格な追跡プロセスと法的ペナルティの導入が議論されている。 AI開発者やテック企業にとって、これは単なる地政学リスクではなく、ハードウェア調達のコンプライアンス要件が今後数年で急激に複雑化することを意味する。",
-    "translations": {
-      "ja": {
-        "title": "米議会が対中AI半導体輸出規制をさらに強化へ：NVIDIA等の情報流出スキャンダル受け、サプライチェーン監視体制を見直し",
-        "summary": "米議会は、NVIDIA等の高性能AIチップが中国へ不正流出したとされるスキャンダルを受け、対中輸出規制を一段と強化する方針を固めた。 現行の規制網をすり抜ける巧妙な転売やサプライチェーン経由の流出を防ぐため、より厳格な追跡プロセスと法的ペナルティの導入が議論されている。 AI開発者やテック企業にとって、これは単なる地政学リスクではなく、ハードウェア調達のコンプライアンス要件が今後数年で急激に複雑化することを意味する。"
-      },
-      "en": {
-        "title": "Congress moves to tighten AI chip export controls on China following Nvidia-related espionage and leakage scandals",
-        "summary": "US Congress is rapidly advancing stricter export controls on high-end AI semiconductors after revelations that Nvidia-grade hardware continues to reach China through convoluted smuggling networks and supply chain gaps. Lawmakers are now pushing for more aggressive oversight mechanisms and punitive legal measures to close loopholes that allowed restricted silicon to bypass existing trade sanctions. For AI builders and infrastructure engineers, this geopolitical shift signals that hardware procurement compliance will become exponentially more complex over the coming years. Relying on global cloud providers or third-party GPU aggregators now requires deeper due diligence regarding provenance and trade compliance. As enforcement tightens, builders must treat hardware sourcing as a high-risk operational vector, ensuring full supply chain transparency to avoid future disruptions to their compute capacity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-15T23:03:13.525Z"
   },
   {
     "id": "art-1794783739039-yt7q8",
@@ -16473,31 +16524,6 @@
       "開発"
     ],
     "created_at": "2026-11-15T02:46:48.752Z"
-  },
-  {
-    "id": "art-1794709002771-hxhik",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/t_shamoji/articles/fbae478379db50",
-    "published_at": "2026-11-15T01:35:39.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--mQZKTCod--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Vue%25203%2520%25C3%2597%2520Vuetify%25203%2520%252F%2520Bootstrap%25205%2520%25E3%2581%25AE%25E7%2594%25BB%25E9%259D%25A2%25E8%25A8%25AD%25E8%25A8%2588%25E3%2583%25BBAI%25E3%2582%25A4%25E3%2583%2599%25E3%2583%25B3%25E3%2583%2588%25E5%25AE%259F%25E8%25A3%2585%25E3%2583%25BBAPI%25E3%2583%25A2%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25921%25E7%2594%25BB%25E9%259D%25A2...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2597%25E3%2582%2583%25E3%2582%2582%25E3%2581%2598%25E5%25A4%25AA%25E9%2583%258E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzdhOTAwYjNlZDkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Vue 3 × Vuetify/Bootstrapの画面構築とAI実装を1画面で完結、フロントエンド開発の「断絶」を埋めるWeb RADの手法",
-    "summary_ja": "フロントエンド開発において、UIモック作成から本番コードへの落とし込みには依然として大きな断絶がある。 Vuetify 3やBootstrap 5などのUIフレームワークと連携し、画面設計・AIによるイベント実装・APIモックまでを単一画面内でシームレスに完結させるWeb RAD環境の構築手法を解説する。 これにより、UI先行のプロトタイピングから実際のロジック実装までを分断させず、開発効率を劇的に向上させるためのアーキテクチャ設計を提案する。",
-    "translations": {
-      "ja": {
-        "title": "Vue 3 × Vuetify/Bootstrapの画面構築とAI実装を1画面で完結、フロントエンド開発の「断絶」を埋めるWeb RADの手法",
-        "summary": "フロントエンド開発において、UIモック作成から本番コードへの落とし込みには依然として大きな断絶がある。 Vuetify 3やBootstrap 5などのUIフレームワークと連携し、画面設計・AIによるイベント実装・APIモックまでを単一画面内でシームレスに完結させるWeb RAD環境の構築手法を解説する。 これにより、UI先行のプロトタイピングから実際のロジック実装までを分断させず、開発効率を劇的に向上させるためのアーキテクチャ設計を提案する。"
-      },
-      "en": {
-        "title": "Bridging the frontend gap: Building a Web RAD workflow for Vue 3 that integrates UI mocks, AI implementation, and API simulation",
-        "summary": "Frontend development often suffers from a significant disconnect between creating polished UI mocks and writing functional production code. This guide details a Web RAD environment designed to bridge that gap by integrating Vue 3 with UI frameworks like Vuetify 3 or Bootstrap 5, allowing developers to handle screen design, AI-assisted event implementation, and API mocking within a single unified workspace. By eliminating the friction between layout prototyping and business logic, this approach maintains high velocity throughout the product lifecycle. The methodology demonstrates how to structure your development flow to avoid the common pitfalls of framework-specific boilerplate, ultimately enabling builders to iterate on complex interfaces and backend integrations simultaneously without losing technical context during the handover process."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-15T02:16:42.771Z"
   },
   {
     "id": "art-1794703609195-ba03x",
@@ -33344,33 +33370,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-08T04:16:36.308Z"
-  },
-  {
-    "id": "art-1794110488352-pmn0u",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/sitegpt",
-    "published_at": "2026-11-07T20:04:46+00:00",
-    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/ua06sokko7d68pyctik3lx2h2sby",
-    "title_ja": "月収3万ドルのAIチャットボットサービス「SiteGPT」：個人開発者が語る顧客維持とSaaS収益化の戦略",
-    "summary_ja": "「SiteGPT」は、ウェブサイトのURLを入力するだけで精度の高いAIチャットボットを作成できる個人開発サービスであり、現在月間収益3万ドルを達成している。 開発者のKapa氏は、複雑な機能を排除し「即座に使える」ユーザー体験に特化することで、高い解約防止と定着率を実現した。 SaaS運営において、多機能化による複雑さよりも顧客の具体的なペインポイントを解決し続ける簡潔さが、個人レベルでの高収益維持には不可欠であるという好例だ。",
-    "translations": {
-      "ja": {
-        "title": "月収3万ドルのAIチャットボットサービス「SiteGPT」：個人開発者が語る顧客維持とSaaS収益化の戦略",
-        "summary": "「SiteGPT」は、ウェブサイトのURLを入力するだけで精度の高いAIチャットボットを作成できる個人開発サービスであり、現在月間収益3万ドルを達成している。 開発者のKapa氏は、複雑な機能を排除し「即座に使える」ユーザー体験に特化することで、高い解約防止と定着率を実現した。 SaaS運営において、多機能化による複雑さよりも顧客の具体的なペインポイントを解決し続ける簡潔さが、個人レベルでの高収益維持には不可欠であるという好例だ。"
-      },
-      "en": {
-        "title": "Scaling SiteGPT to $30k Monthly Revenue: A Solo Founder's Blueprint for SaaS Retention and Product Strategy",
-        "summary": "SiteGPT has grown into a successful solo-founded SaaS platform generating $30,000 in monthly recurring revenue by allowing users to build custom AI chatbots simply by inputting their website URL. Founder Kapa focused intensely on minimizing product complexity, prioritizing an 'out-of-the-box' experience that solves immediate customer problems without feature bloat. This strategy has proven essential for maintaining low churn rates and sustaining high long-term engagement. The core takeaway for solo developers is that success in SaaS often stems from resisting the urge to over-engineer; instead, laser-focusing on a single, well-executed workflow allows for rapid iteration and creates a product that users value enough to retain over the long term, ultimately driving consistent revenue growth."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-08T04:01:28.352Z"
   },
   {
     "id": "art-1794097901793-cl0z6",
