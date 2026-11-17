@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1794932235989-p14ia",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/daikonnoha/articles/43e1b73f9acc21",
+    "published_at": "2026-11-17T12:46:19.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--WIw_jRcw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:cron%25E3%2582%2584%25E3%2583%2590%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%25E3%2581%258C%25E3%2580%258C%25E9%25BB%2599%25E3%2581%25A3%25E3%2581%25A6%25E6%25AD%25A2%25E3%2581%25BE%25E3%2582%258B%25E3%2580%258D%25E5%2595%258F%25E9%25A1%258C%25E3%2582%2592%25E3%2580%2581curl%25201%25E8%25A1%258C%25E3%2581%25A7%25E6%25A4%259C%25E7%259F%25A5%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:daikonnoha%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ1OTM0YTgwMjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "cronやバッチ処理の「沈黙による失敗」を即座に検知する、curl 1行監視のベストプラクティス",
+    "summary_ja": "cronやsystemd timerが「そもそも実行されなかった」場合、エラー通知も届かず、バックアップの停止やログの欠落に数週間気づけないリスクがある。 この問題を防ぐには、処理の終了時だけでなく開始前や定期的に外部から死活監視を行う「ヘルスチェック」が不可欠だ。 curlを1行叩くだけで監視サービスへ通知する仕組みを組み込み、沈黙による失敗を未然に防ぐ運用手法を解説する。",
+    "translations": {
+      "ja": {
+        "title": "cronやバッチ処理の「沈黙による失敗」を即座に検知する、curl 1行監視のベストプラクティス",
+        "summary": "cronやsystemd timerが「そもそも実行されなかった」場合、エラー通知も届かず、バックアップの停止やログの欠落に数週間気づけないリスクがある。 この問題を防ぐには、処理の終了時だけでなく開始前や定期的に外部から死活監視を行う「ヘルスチェック」が不可欠だ。 curlを1行叩くだけで監視サービスへ通知する仕組みを組み込み、沈黙による失敗を未然に防ぐ運用手法を解説する。"
+      },
+      "en": {
+        "title": "Beyond simple error alerts: Monitoring silent failures in cron and batch jobs with single-line curl commands",
+        "summary": "Standard error notification systems fail when cron jobs or systemd timers simply never trigger. This 'silent failure'—caused by migration errors, expired credentials, or disk exhaustion—is dangerous because it generates no alerts, leaving backups broken for weeks. To solve this, developers should implement a heartbeat-style health check that pings an external monitoring service at the start of a process rather than relying solely on error logs at the end. By integrating a simple single-line curl command into your shell scripts, you can turn 'no news' into a visible alert if a job goes missing. This proactive strategy is essential for ensuring backend data integrity, turning invisible scheduler lapses into actionable, immediate notifications before data loss becomes critical."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-17T16:17:15.989Z"
+  },
+  {
+    "id": "art-1794932229328-rvtc4",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/dreamy_egret4511/n/nc876c379623d",
+    "published_at": "2026-11-17T16:06:08.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/337413801/rectangle_large_type_2_f81ba07fe8ebae9008affc9c4862bd47.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「未経験から高単価案件を獲得する自動化の仕組み」—副業・個人開発で成果を出す人・出せない人の決定的な境界線とは",
+    "summary_ja": "副業や個人開発において、短期間で大きな収益を上げる人と全く芽が出ない人の差は、作業量の多寡ではなく「高単価案件を獲得する自動化スキーム」を構築しているかにある。 単なる労働集約型の作業から脱却し、案件供給を仕組み化することで、成果の再現性を担保する戦略が不可欠だ。 開発や副業で持続的に収益を得るには、スキル習得の過程そのものを自動販売機のように機能させる設計思想が求められる。",
+    "translations": {
+      "ja": {
+        "title": "「未経験から高単価案件を獲得する自動化の仕組み」—副業・個人開発で成果を出す人・出せない人の決定的な境界線とは",
+        "summary": "副業や個人開発において、短期間で大きな収益を上げる人と全く芽が出ない人の差は、作業量の多寡ではなく「高単価案件を獲得する自動化スキーム」を構築しているかにある。 単なる労働集約型の作業から脱却し、案件供給を仕組み化することで、成果の再現性を担保する戦略が不可欠だ。 開発や副業で持続的に収益を得るには、スキル習得の過程そのものを自動販売機のように機能させる設計思想が求められる。"
+      },
+      "en": {
+        "title": "How to Build an Automated Sales Funnel for High-Ticket Freelance Gigs as a Non-Technical Beginner",
+        "summary": "The divergence between those seeing massive financial results in side hustles versus those spinning their wheels for months often comes down to one factor: building a scalable automation scheme for client acquisition. Simply logging hours does not guarantee growth; successful builders differentiate themselves by engineering systems that automatically feed high-value leads into their pipeline. By moving away from labor-intensive manual outreach and codifying a repeatable sales process, you stop treating income as a direct trade for hours and start viewing your skill-building journey as a deployable product. For indie hackers, the ultimate takeaway is that professional success requires treating your own business infrastructure—not just your code—as a deployable, automated asset that functions without constant manual intervention."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-17T16:17:09.328Z"
+  },
+  {
+    "id": "art-1794932217640-1heuc",
+    "source_id": "source-appfigures",
+    "source_name": "Appfigures ASO Blog",
+    "url": "https://appfigures.com/resources/guides/how-to-evaluate-your-aso-keyword-strategy",
+    "published_at": "2026-11-17T16:16:57.640Z",
+    "og_image_url": "https://af-resources.s3.amazonaws.com/guides/evaluate-keyword-strategy/measuring-success%402x.png",
+    "title_ja": "Appfiguresが提唱する「月次ASOキーワード戦略チェックリスト」：検索順位、インプレッション、ダウンロード数分析とキーワード入れ替えの判断基準を完全網羅",
+    "summary_ja": "Appfiguresの「月次ASOキーワード戦略チェックリスト」は、アプリの検索順位とダウンロード数を最大化する定点観測の手法だ。 具体的には、キーワードの網羅範囲や平均順位、トップ10内キーワード数、インプレッションおよび獲得数を毎月分析し、パフォーマンスの低い単語を即座に入れ替えるフローを推奨する。 ASOは一度設定して終わりではなく、市場の変化に合わせてキーワード資産を常に最適化し続ける運用こそが、持続的なユーザー獲得の成功要件となる。",
+    "translations": {
+      "ja": {
+        "title": "Appfiguresが提唱する「月次ASOキーワード戦略チェックリスト」：検索順位、インプレッション、ダウンロード数分析とキーワード入れ替えの判断基準を完全網羅",
+        "summary": "Appfiguresの「月次ASOキーワード戦略チェックリスト」は、アプリの検索順位とダウンロード数を最大化する定点観測の手法だ。 具体的には、キーワードの網羅範囲や平均順位、トップ10内キーワード数、インプレッションおよび獲得数を毎月分析し、パフォーマンスの低い単語を即座に入れ替えるフローを推奨する。 ASOは一度設定して終わりではなく、市場の変化に合わせてキーワード資産を常に最適化し続ける運用こそが、持続的なユーザー獲得の成功要件となる。"
+      },
+      "en": {
+        "title": "Appfigures Releases Monthly ASO Keyword Strategy Checklist to Optimize Rankings, Impressions, and Download Conversion Rates Through Rigorous Data-Driven Keyword Replacement Decisions",
+        "summary": "Appfigures has published a comprehensive monthly ASO keyword strategy checklist designed to help developers systematically refine app visibility and download performance. The framework advises rigorous monthly tracking of key metrics, including keyword coverage breadth, average ranking positions, the total count of keywords ranking in the top ten, aggregate impressions, and total downloads. Crucially, the process demands more than just measurement; builders must actively use these data points to trigger keyword replacement decisions for underperforming terms. Effective ASO is never a \"set and forget\" task, but rather an iterative cycle of refining search assets against market trends. Maintaining this disciplined review loop is the most reliable way to secure sustainable organic growth in a crowded app ecosystem."
+      }
+    },
+    "tool_tags": [
+      "Appfigures"
+    ],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "アップデート"
+    ],
+    "created_at": "2026-11-17T16:16:57.640Z"
+  },
+  {
     "id": "art-1794931439114-0h2ir",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -12691,32 +12771,6 @@
     "created_at": "2026-11-16T07:32:10.467Z"
   },
   {
-    "id": "art-1794814321929-xz7as",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/mmcreate777/n/ncbfbb33bf003",
-    "published_at": "2026-11-16T07:16:30.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/e21241c1c2b9cd48c0aabd1559cc6fba46501dfe.png",
-    "title_ja": "日常の「ちょっとした困りごと」を無料ツールで解決する「こまりごとラボ」：個人開発者がニッチな需要を特定し、ユーザーの課題を解消する開発戦略とは",
-    "summary_ja": "「こまりごとラボ」は、日常生活や仕事で生じる小さな不便を、ブラウザ完結型の無料ツールで解決する個人開発プロジェクトだ。 現在、計算機や換算ツールなど7種類を公開しており、ニッチだが確実に存在する需要を丁寧に拾い上げている。 機能過多なアプリを避け、特定の課題を瞬時に解決する「小さく作る」手法は、個人開発者がユーザーの信頼を得て、持続的に価値を提供し続けるための重要なヒントとなる。",
-    "translations": {
-      "ja": {
-        "title": "日常の「ちょっとした困りごと」を無料ツールで解決する「こまりごとラボ」：個人開発者がニッチな需要を特定し、ユーザーの課題を解消する開発戦略とは",
-        "summary": "「こまりごとラボ」は、日常生活や仕事で生じる小さな不便を、ブラウザ完結型の無料ツールで解決する個人開発プロジェクトだ。 現在、計算機や換算ツールなど7種類を公開しており、ニッチだが確実に存在する需要を丁寧に拾い上げている。 機能過多なアプリを避け、特定の課題を瞬時に解決する「小さく作る」手法は、個人開発者がユーザーの信頼を得て、持続的に価値を提供し続けるための重要なヒントとなる。"
-      },
-      "en": {
-        "title": "Inside the Komarigoto Lab strategy: How one solo developer targets niche daily inconveniences with simple, free-to-use browser tools",
-        "summary": "The Komarigoto Lab project takes a refreshingly simple approach to solo development by creating browser-based tools that solve specific, minor daily inconveniences. Rather than building feature-bloated software, the creator focuses on micro-utilities like specialized calculators and conversion tools, currently offering seven distinct solutions for common problems. By identifying these persistent but small user pain points, the project gains high utility value with minimal complexity. For solo builders, this strategy highlights the power of shipping focused, single-purpose tools that immediately improve a user's workflow. The core takeaway is that solving niche problems efficiently builds more long-term user trust than chasing complex, broad feature sets, proving that smaller tools can generate significant, compounding value over time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-16T07:32:01.929Z"
-  },
-  {
     "id": "art-1794814314612-0jm09",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -16745,32 +16799,6 @@
       "開発"
     ],
     "created_at": "2026-11-15T06:18:36.370Z"
-  },
-  {
-    "id": "art-1794721627070-qqoh8",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/reicad/articles/6c5a1cd5b4dc12",
-    "published_at": "2026-11-15T05:44:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--VHmLE_db--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:DWG%2520%25E3%2582%2592%25E8%25AA%25AD%25E3%2581%25BF%25E6%259B%25B8%25E3%2581%258D%25E3%2581%2599%25E3%2582%258B%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%2520JavaScript%2520%25E3%2581%25A7%25E4%25B8%2580%25E3%2581%258B%25E3%2582%2589%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Rei%2520CAD%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSnphUWFIWFBVUFhDWWNIVVRMVDVzRVptYTZpaUMzMFl4RFYtN0JYdll0OV80OTVSZUM9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ブラウザ完結型CAD「Rei CAD」開発記：JavaScriptのみでDWG読み書きライブラリをゼロから実装した技術的アプローチ",
-    "summary_ja": "構造設計者が個人開発したブラウザベースの2D CAD「Rei CAD」において、DWGファイルを直接読み書きするためのJavaScriptライブラリをスクラッチで開発した。 既存のライブラリにDWG対応がなかったため、Open Design Allianceの公開仕様を基に、サーバー通信不要なクライアントサイド完結型の実装を選択。",
-    "translations": {
-      "ja": {
-        "title": "ブラウザ完結型CAD「Rei CAD」開発記：JavaScriptのみでDWG読み書きライブラリをゼロから実装した技術的アプローチ",
-        "summary": "構造設計者が個人開発したブラウザベースの2D CAD「Rei CAD」において、DWGファイルを直接読み書きするためのJavaScriptライブラリをスクラッチで開発した。 既存のライブラリにDWG対応がなかったため、Open Design Allianceの公開仕様を基に、サーバー通信不要なクライアントサイド完結型の実装を選択。"
-      },
-      "en": {
-        "title": "Building Rei CAD: How I implemented a native JavaScript library for reading and writing DWG files from scratch",
-        "summary": "To power \"Rei CAD,\" a browser-based 2D CAD tool for structural design, the developer needed native DWG file handling but found no suitable JavaScript libraries for browser integration. Instead of relying on server-side processing, they engineered a pure JavaScript library from the ground up, basing the entire implementation on official specifications published by the Open Design Alliance. This approach allows the browser to handle complex CAD file operations locally, ensuring privacy and speed without offloading data. For developers tackling legacy binary formats, the project demonstrates that implementing your own parsers based on rigorous specification analysis is a viable, robust path when existing open-source ecosystems fall short for specialized domain needs."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-15T05:47:07.070Z"
   },
   {
     "id": "art-1794720730269-op21r",
@@ -37335,32 +37363,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-05T09:16:35.737Z"
-  },
-  {
-    "id": "art-1793869343012-kug93",
-    "source_id": "source-arxiv",
-    "source_name": "arXiv (cs.AI / cs.CL)",
-    "url": "https://arxiv.org/abs/2611.05459",
-    "published_at": "2026-11-05T05:00:00.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "LLMの科学論文レビュー能力を徹底検証―102本の文献ベンチマークで判明した検索・要約精度と機関アクセスの重要性",
-    "summary_ja": "LLMによる科学的文献レビューの有効性を調査するため、スペインの気象パターンに関する102本の論文を用いた実証実験が行われた。 主要6つのAIツールを比較した結果、検索精度は依然として課題があり、機関ライブラリへのアクセス権が検索漏れを防ぐ鍵となることが判明した。 単にモデルの推論能力に頼るだけでなく、RAGパイプラインやソースの網羅性を高めるデータ連携の設計こそが、研究支援ツールとしての実用性を左右する。",
-    "translations": {
-      "ja": {
-        "title": "LLMの科学論文レビュー能力を徹底検証―102本の文献ベンチマークで判明した検索・要約精度と機関アクセスの重要性",
-        "summary": "LLMによる科学的文献レビューの有効性を調査するため、スペインの気象パターンに関する102本の論文を用いた実証実験が行われた。 主要6つのAIツールを比較した結果、検索精度は依然として課題があり、機関ライブラリへのアクセス権が検索漏れを防ぐ鍵となることが判明した。 単にモデルの推論能力に頼るだけでなく、RAGパイプラインやソースの網羅性を高めるデータ連携の設計こそが、研究支援ツールとしての実用性を左右する。"
-      },
-      "en": {
-        "title": "How Well Do LLMs Review Science? Benchmark Against 102-Article Corpus Reveals Limitations in Search and Synthesis",
-        "summary": "To rigorously evaluate AI tools for scientific literature review, researchers pitted six leading LLM-based systems against a benchmark consisting of 102 papers on Spanish plume weather patterns. The experiment analyzed four stages: retrieval, interpretation, synthesis, and future research proposals. Findings indicate that while LLMs handle summarization well, their discovery capabilities are inconsistent; institutional library access proved transformative, boosting retrieval success from 15 to 79 articles for Claude Code. The study concludes that for research-heavy AI applications, the bottleneck isn't just model intelligence but data access and comprehensive source indexing. Builders creating academic or technical research assistants must prioritize robust RAG integrations and authenticated access to proprietary databases rather than relying solely on the LLM’s inherent knowledge base for literature navigation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-05T09:02:23.012Z"
   },
   {
     "id": "art-1793869336576-7psd3",
