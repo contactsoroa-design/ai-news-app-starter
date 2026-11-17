@@ -1,5 +1,86 @@
 [
   {
+    "id": "art-1794939416220-04647",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/lastlight/articles/e4a240a8c904d0",
+    "published_at": "2026-11-17T14:36:21.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--uJTrHUgr--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2596%2587%25E5%25AD%2597%25E3%2582%2592%25E5%25B4%25A9%25E3%2581%2595%25E3%2581%259A%25E5%25B1%2580%25E6%2589%2580%25E4%25BF%25AE%25E6%25AD%25A3%25E3%2581%2599%25E3%2582%258B%2520AI%25E7%2594%25BB%25E5%2583%258F%25E7%25B7%25A8%25E9%259B%2586%2520%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%25AE%25E9%2581%25B8%25E5%25AE%259A%25E5%259F%25BA%25E6%25BA%2596%25E3%2581%25A8%2520MMDiT%2520%25E6%25A7%258B%25E9%2580%25A0%25E3%2581%25AE%25E6%2595%25B4%25E7%2590%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BD%2599%25E5%2585%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzl1MU1yZzRvaEpFanBCeGFKQ0xTbV8zUEF3Y0FrcHFpTWRzMThiQVRlUm5UUG9aND1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI画像編集で「局所修正」を実現するモデル選定とMMDiT構造の解読：Qwen-Image-Editで文字崩れを防ぐ技術的アプローチ",
+    "summary_ja": "バナー画像等の誤字を修正する際、全体が再生成されて構図や文字が崩れる課題に対し、Qwen-Image-Edit等のアーキテクチャが解決策として注目されている。 これはプロンプト工夫ではなく、モデル内部の入力エンコードとMMDiT構造の違いによるものだ。 実務では単なる再生成パイプラインを避け、領域保持とテキスト描画を両立するモデルを選定することが、再現性の高い編集を実現する鍵となる。 AI製品開発においては、モデルの入力処理構造を理解することが品質安定の近道だ。",
+    "translations": {
+      "ja": {
+        "title": "AI画像編集で「局所修正」を実現するモデル選定とMMDiT構造の解読：Qwen-Image-Editで文字崩れを防ぐ技術的アプローチ",
+        "summary": "バナー画像等の誤字を修正する際、全体が再生成されて構図や文字が崩れる課題に対し、Qwen-Image-Edit等のアーキテクチャが解決策として注目されている。 これはプロンプト工夫ではなく、モデル内部の入力エンコードとMMDiT構造の違いによるものだ。 実務では単なる再生成パイプラインを避け、領域保持とテキスト描画を両立するモデルを選定することが、再現性の高い編集を実現する鍵となる。 AI製品開発においては、モデルの入力処理構造を理解することが品質安定の近道だ。"
+      },
+      "en": {
+        "title": "Deep dive into model selection for localized AI image editing: How Qwen-Image-Edit architectures preserve text consistency",
+        "summary": "When correcting typos in marketing banners or mockups, standard AI pipelines often trigger full image regeneration, unintentionally altering lighting or character outlines. This common failure stems from the model's input encoding and MMDiT architecture rather than prompt deficiency. This analysis examines the evolution of Qwen-Image-Edit-style architectures designed to support precise local text manipulation without degrading original compositions. For developers building creative workflows, the practical takeaway is to move beyond generic regeneration pipelines and prioritize models engineered specifically for regional consistency and text rendering. Understanding how these models encode spatial and textual information is the critical first step in reducing re-render artifacts and ensuring production-ready output stability for AI-driven image editing applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "画像生成",
+      "開発"
+    ],
+    "created_at": "2026-11-17T18:16:56.220Z"
+  },
+  {
+    "id": "art-1794939409005-lwa5b",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+    "published_at": "2026-11-17T18:06:44.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/16/ML-21774-featured-image.png",
+    "title_ja": "AWS、時系列特化型言語モデル「OpenTSLM」をSageMaker JumpStartで提供開始。IT運用の予兆検知へ",
+    "summary_ja": "AWSは、時系列データ分析に特化したオープンソースLLMファミリー「OpenTSLM」をAmazon SageMaker JumpStartで公開した。 NexthinkやAionic LabsによるIT運用の予兆検知事例を提示しつつ、TimeNetを用いたファインチューニングやSageMaker上での推論エンドポイント構築手順を解説する。 時系列データの予測精度向上を求める開発者にとって、モデルの独自学習と既存環境へのデプロイを容易にする有力な選択肢となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "AWS、時系列特化型言語モデル「OpenTSLM」をSageMaker JumpStartで提供開始。IT運用の予兆検知へ",
+        "summary": "AWSは、時系列データ分析に特化したオープンソースLLMファミリー「OpenTSLM」をAmazon SageMaker JumpStartで公開した。 NexthinkやAionic LabsによるIT運用の予兆検知事例を提示しつつ、TimeNetを用いたファインチューニングやSageMaker上での推論エンドポイント構築手順を解説する。 時系列データの予測精度向上を求める開発者にとって、モデルの独自学習と既存環境へのデプロイを容易にする有力な選択肢となるだろう。"
+      },
+      "en": {
+        "title": "AWS launches OpenTSLM for time-series analysis in Amazon SageMaker JumpStart, enabling proactive IT operations",
+        "summary": "AWS has integrated OpenTSLM—an open-source family of language models specifically architected for time-series reasoning—into Amazon SageMaker JumpStart. The announcement demonstrates how organizations like Nexthink and Aionic Labs leverage these models for proactive IT support, and details how builders can fine-tune OpenTSLM on custom data using TimeNet and standard SageMaker training jobs. For developers struggling to extract actionable patterns from time-series logs or performance metrics, this release provides a clear path to deploying specialized models into production inference endpoints. It serves as a practical bridge for teams looking to move beyond traditional statistical forecasting by utilizing generative AI approaches to handle complex, noisy, and continuous data streams efficiently."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-17T18:16:49.005Z"
+  },
+  {
+    "id": "art-1794939396279-46rd4",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.772",
+    "published_at": "2026-11-17T18:09:48.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、APIイメージ v2.11.772をリリース。クローリングとデータ抽出の精度向上が図られた最新アップデートの全貌",
+    "summary_ja": "Firecrawlが最新のAPIイメージであるv2.11.772を公開した。 今回のアップデートでは、複雑なWebサイトからのクローリングおよびデータ抽出処理の精度と安定性が強化されており、LLM向けのデータ収集パイプラインを構築する開発者にとってより信頼性の高いインフラを提供する。 Webデータの活用が不可欠となるAIアプリケーション開発において、最新のAPI基盤への移行は、抽出エラーを減らしシステム全体の処理効率を最大化するために不可欠なステップとなる。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、APIイメージ v2.11.772をリリース。クローリングとデータ抽出の精度向上が図られた最新アップデートの全貌",
+        "summary": "Firecrawlが最新のAPIイメージであるv2.11.772を公開した。 今回のアップデートでは、複雑なWebサイトからのクローリングおよびデータ抽出処理の精度と安定性が強化されており、LLM向けのデータ収集パイプラインを構築する開発者にとってより信頼性の高いインフラを提供する。 Webデータの活用が不可欠となるAIアプリケーション開発において、最新のAPI基盤への移行は、抽出エラーを減らしシステム全体の処理効率を最大化するために不可欠なステップとなる。"
+      },
+      "en": {
+        "title": "Firecrawl rolls out API image v2.11.772: Enhancements to crawling and data extraction accuracy for AI pipelines",
+        "summary": "Firecrawl has officially released its latest API image version, v2.11.772, targeting improved reliability and accuracy for complex web crawling and data extraction tasks. This update represents a critical step for developers building robust LLM-ready data pipelines, as it addresses underlying bottlenecks in how unstructured web content is parsed into structured formats. By streamlining data retrieval through these refined API endpoints, the platform aims to significantly reduce extraction errors and processing overhead in high-demand AI applications. For builders managing large-scale data ingestion, keeping dependencies aligned with these latest API image iterations is vital to ensuring consistent data quality and maintaining system performance across complex crawling workflows where edge-case parsing failures can disrupt the entire downstream model logic."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-17T18:16:36.280Z"
+  },
+  {
     "id": "art-1794938555968-xqubk",
     "source_id": "source-elevenlabs",
     "source_name": "ElevenLabs Blog",
@@ -16886,32 +16967,6 @@
       "開発"
     ],
     "created_at": "2026-11-15T09:46:44.456Z"
-  },
-  {
-    "id": "art-1794735219416-p8kd2",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/kou_zenn/articles/snowflake-new-dashboard",
-    "published_at": "2026-11-15T06:32:46.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hDhN-qaM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Snowflake%25E3%2581%25AE%25E6%2596%25B0%25E3%2581%2597%25E3%2581%2584%25E3%2583%2580%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%25EF%25BC%2588Dashboards%25202.0%25EF%25BC%2589%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kou-zenn%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg3MWZhNTI5YzkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Snowflakeの新ダッシュボード「Dashboards 2.0」を検証：AI対話型生成とコード管理による次世代BIの使い勝手を徹底解説",
-    "summary_ja": "Snowflakeは、非推奨となった旧機能を刷新し、AIネイティブな「Dashboards 2.0」を公開した。 自然言語によるチャットベースのダッシュボード作成や、コード管理機能、さらにSnowflake CoWorkとの統合により、データ可視化の工数を大幅に削減できる。 従来のBIツールとは異なり、開発プロセスそのものにAIを深く組み込むことで、意思決定のスピードを向上させることが可能な設計となっている。",
-    "translations": {
-      "ja": {
-        "title": "Snowflakeの新ダッシュボード「Dashboards 2.0」を検証：AI対話型生成とコード管理による次世代BIの使い勝手を徹底解説",
-        "summary": "Snowflakeは、非推奨となった旧機能を刷新し、AIネイティブな「Dashboards 2.0」を公開した。 自然言語によるチャットベースのダッシュボード作成や、コード管理機能、さらにSnowflake CoWorkとの統合により、データ可視化の工数を大幅に削減できる。 従来のBIツールとは異なり、開発プロセスそのものにAIを深く組み込むことで、意思決定のスピードを向上させることが可能な設計となっている。"
-      },
-      "en": {
-        "title": "Hands-on with Snowflake Dashboards 2.0: Testing AI-native generation, conversational dashboard building, and full code-based management workflows",
-        "summary": "Snowflake has officially deprecated its legacy reporting tools in favor of the new Dashboards 2.0, a pivot toward an AI-native business intelligence experience. This update introduces conversational dashboard generation via chat interfaces, code-centric management workflows, and seamless integration with Snowflake CoWork to accelerate data visualization velocity. Unlike traditional BI platforms that treat dashboards as static, separate entities, this architecture embeds AI directly into the development loop to streamline how data is explored and shared across teams. For data engineers and builders, the shift represents a meaningful move toward managing analytics as versioned code while offloading the heavy lifting of UI assembly to integrated LLM assistants, ultimately reducing the technical barrier for creating interactive data products."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-15T09:33:39.416Z"
   },
   {
     "id": "art-1794735183930-07ih7",
@@ -34837,34 +34892,6 @@
     "created_at": "2026-11-06T22:01:42.611Z"
   },
   {
-    "id": "art-1793998909702-q80fe",
-    "source_id": "source-firecrawl",
-    "source_name": "Firecrawl Releases / Blog",
-    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.699",
-    "published_at": "2026-11-06T20:50:15.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
-    "title_ja": "Firecrawl、最新アップデート「v2.11.699」を公開。API画像処理エンジンの最適化と安定性向上でLLMのスクレイピング精度を強化",
-    "summary_ja": "WebスクレイピングツールFirecrawlが、最新バージョン「v2.11.699」をリリースした。 今回の更新では、API画像処理エンジンのバックエンド実装を刷新し、システム全体の安定性と処理効率を向上させている。 LLM向けのデータ収集において、視覚情報の解析精度の安定化は不可欠だ。 Firecrawlのような堅牢なパイプラインを採用することで、動的なサイト構造の変化にも強い、実用的なAIデータ収集基盤を構築できる。",
-    "translations": {
-      "ja": {
-        "title": "Firecrawl、最新アップデート「v2.11.699」を公開。API画像処理エンジンの最適化と安定性向上でLLMのスクレイピング精度を強化",
-        "summary": "WebスクレイピングツールFirecrawlが、最新バージョン「v2.11.699」をリリースした。 今回の更新では、API画像処理エンジンのバックエンド実装を刷新し、システム全体の安定性と処理効率を向上させている。 LLM向けのデータ収集において、視覚情報の解析精度の安定化は不可欠だ。 Firecrawlのような堅牢なパイプラインを採用することで、動的なサイト構造の変化にも強い、実用的なAIデータ収集基盤を構築できる。"
-      },
-      "en": {
-        "title": "Firecrawl Updates API Image Processing Engine in v2.11.699, Bolstering Stability and Scraping Reliability for LLM Data Pipelines",
-        "summary": "Firecrawl has officially pushed version v2.11.699, a targeted release focusing on the robustness of its core API image processing engine. This update streamlines backend image handling, aiming to improve reliability for developers who rely on accurate visual data extraction to feed into LLM-based workflows. As AI agents increasingly depend on parsing complex web layouts, the stability of these underlying scraping primitives becomes critical for consistent model performance. By iterating on its image pipeline, Firecrawl minimizes the variance in data capture that often breaks downstream LLM logic. For engineers building autonomous agents, adopting these optimized scraping endpoints ensures that your data ingestion layer remains resilient even when facing inconsistent modern website architectures that rely heavily on dynamic visual content."
-      }
-    },
-    "tool_tags": [
-      "Firecrawl"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-06T21:01:49.702Z"
-  },
-  {
     "id": "art-1793998903305-94fi6",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -38567,32 +38594,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-04T16:46:30.547Z"
-  },
-  {
-    "id": "art-1793809887343-fu2r7",
-    "source_id": "source-aws-ml",
-    "source_name": "AWS Machine Learning Blog",
-    "url": "https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/",
-    "published_at": "2026-11-04T16:30:40.000Z",
-    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/22/ML-21082-featured-image.png",
-    "title_ja": "AWSが解説するプロダクションAIエージェントの「コンテキストエンジニアリング」4層構造、Deep Insightでの実践的アプローチ",
-    "summary_ja": "AWSは、実用的なAIエージェント開発におけるボトルネックとなる「コンテキスト管理」を解決するため、アーキテクチャ、プロンプト、ファイルベースツール、検証エージェントという4層のエンジニアリングフレームワークを提唱した。 これはオープンソースのデータ分析ソリューション「Deep Insight」の実装コードに基づいている。",
-    "translations": {
-      "ja": {
-        "title": "AWSが解説するプロダクションAIエージェントの「コンテキストエンジニアリング」4層構造、Deep Insightでの実践的アプローチ",
-        "summary": "AWSは、実用的なAIエージェント開発におけるボトルネックとなる「コンテキスト管理」を解決するため、アーキテクチャ、プロンプト、ファイルベースツール、検証エージェントという4層のエンジニアリングフレームワークを提唱した。 これはオープンソースのデータ分析ソリューション「Deep Insight」の実装コードに基づいている。"
-      },
-      "en": {
-        "title": "AWS details a four-layer context engineering framework for production AI agents using the Deep Insight implementation",
-        "summary": "AWS has unveiled a comprehensive four-layer context engineering framework designed to overcome the critical bottleneck of context management in production-grade AI agents. This methodology—comprising architecture, prompt optimization, file-based tools, and verification agents—is derived from real-world implementation code within Deep Insight, an open-source data analysis solution built on the Strands Agents SDK and Amazon Bedrock AgentCore. For developers aiming to deploy robust AI systems, the key takeaway is that reliable agent performance hinges on more than just LLM selection; it requires granular control and verification at every structural layer. Mastering these context management layers is essential for any builder moving from prototype demos to resilient, scalable production workflows where data accuracy is the absolute prerequisite for success."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-04T16:31:27.343Z"
   },
   {
     "id": "art-1793808998860-xgbje",
