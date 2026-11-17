@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1794953860245-9r6rl",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.normaltech.ai/p/the-missing-quadrant-in-responses",
+    "published_at": "2026-11-17T21:20:48.000Z",
+    "og_image_url": "https://substackcdn.com/image/fetch/$s_!5-fS!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2095f300-0a39-4e16-a60f-6c8a94728bf9_1666x932.jpeg",
+    "title_ja": "AI応答評価における「第4の象限」とは何か？正確性や速度を超越する次世代AIシステム設計のフレームワークを徹底考察",
+    "summary_ja": "AI応答の評価軸として、従来の正確性や速度だけでなく、文脈の深さや意図の汲み取り能力という「第4の象限」が注目されている。 多くの開発者が単一の指標に依存する中で、真に有用なAI体験を作るには、ユーザーが期待する出力形式と実際の出力とのギャップを構造的に理解する必要がある。 単なる正解率での評価を脱却し、定性的な有用性指標を組み込むことこそが、今後のAIプロダクト開発で競争力を生む鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AI応答評価における「第4の象限」とは何か？正確性や速度を超越する次世代AIシステム設計のフレームワークを徹底考察",
+        "summary": "AI応答の評価軸として、従来の正確性や速度だけでなく、文脈の深さや意図の汲み取り能力という「第4の象限」が注目されている。 多くの開発者が単一の指標に依存する中で、真に有用なAI体験を作るには、ユーザーが期待する出力形式と実際の出力とのギャップを構造的に理解する必要がある。 単なる正解率での評価を脱却し、定性的な有用性指標を組み込むことこそが、今後のAIプロダクト開発で競争力を生む鍵となる。"
+      },
+      "en": {
+        "title": "Why the ‘missing quadrant’ of AI evaluation is the crucial framework for building useful, context-aware LLM agents",
+        "summary": "Most AI developers currently evaluate LLM performance using binary metrics like raw accuracy, latency, or token cost. However, this piece argues there is a critical \"missing quadrant\" in our current evaluation matrices: the nuance of actionable, context-aware utility that transcends simple fact-checking. As AI shifts from chatbots to agents, measuring whether an output is \"correct\" is insufficient; builders must now quantify whether the response actually resolves the user's implicit intent. Relying solely on standard benchmarks creates a dangerous blind spot in product-market fit. To build truly superior AI tools, engineers need to integrate qualitative usefulness heuristics into their evaluation pipelines, ensuring that the model serves the user's specific goals rather than just hallucinating plausible-sounding, but practically useless, text."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-17T22:17:40.245Z"
+  },
+  {
+    "id": "art-1794953845666-yp1e7",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/native-lint-and-typecheck-deployment-checks-are-being-deprecated",
+    "published_at": "2026-11-17T13:00:00.000Z",
+    "og_image_url": "https://vercel.com/api/dynamic-og?title=Native%20lint%20and%20typecheck%20Deployment%20Checks%20are%20being%20deprecated&format=changelog",
+    "title_ja": "Vercel、組み込み型「Lint」および「Typecheck」チェック機能を廃止へ。2026年11月までにVercel CI等への移行が必須に",
+    "summary_ja": "Vercelは、デプロイ時に実行される組み込みの「Lint」および「Typecheck」機能を段階的に廃止する。 新規追加は直ちに不可となり、既存のチェックも2026年11月30日をもって完全に終了する。 今後はVercel CI、GitHub Actions、または独自のビルドコマンドを活用したワークフローへ移行する必要がある。 特に本番環境へのリリースをブロックする設定を利用している開発者は、移行先ワークフローでのエラーハンドリングを再確認し、期限前の対応が推奨される。",
+    "translations": {
+      "ja": {
+        "title": "Vercel、組み込み型「Lint」および「Typecheck」チェック機能を廃止へ。2026年11月までにVercel CI等への移行が必須に",
+        "summary": "Vercelは、デプロイ時に実行される組み込みの「Lint」および「Typecheck」機能を段階的に廃止する。 新規追加は直ちに不可となり、既存のチェックも2026年11月30日をもって完全に終了する。 今後はVercel CI、GitHub Actions、または独自のビルドコマンドを活用したワークフローへ移行する必要がある。 特に本番環境へのリリースをブロックする設定を利用している開発者は、移行先ワークフローでのエラーハンドリングを再確認し、期限前の対応が推奨される。"
+      },
+      "en": {
+        "title": "Vercel to deprecate native Lint and Typecheck deployment checks by November 2026, forcing migration to CI pipelines",
+        "summary": "Vercel has announced the deprecation of its built-in Lint and Typecheck deployment checks. While users can no longer add new native checks to their projects, existing ones will continue to function until the final shutdown date on November 30, 2026. Developers must migrate these tasks to Vercel CI, GitHub Actions, or custom build command workflows before the deadline. This shift effectively decouples code validation from the deployment platform itself, shifting the responsibility to your CI provider. If your current setup blocks production releases based on these checks, it is critical to verify how your new CI workflow handles build failures to avoid unintended shipping errors. Builders should audit their project settings today to avoid future build breaks."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-17T22:17:25.666Z"
+  },
+  {
+    "id": "art-1794953837196-vzx9c",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/lhjjjk4/items/57d04928e01febb9f507",
+    "published_at": "2026-11-17T22:07:18.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUFUWEFKejRJUk9sRzB3UnBpYlA1b0YzWHo2Y291MTdHYXVwYkw1X3dTUUIlM0RzNTAtbW8_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWIyZjY1NmMxN2E4ZTk4ZGYyY2VkYmU5MmUzM2MwOTQ3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd01cdc4a99f3e3f94b607574520e6034?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTYlOTclQTUlRTUlQTAlQjElMjAyMDI2JUU1JUI5JUI0MTElRTYlOUMlODgxNyVFNiU5NyVBNSVFRiVCQyU5QUNsYXVkZSVFMyU4MSU4QzMlRTYlOTclQTUlRTMlODElQTdBTUQlMjBHUFUlRTMlODElQUIlRTUlQUYlQkUlRTUlQkYlOUMlRTMlODAlODFWZXJhJTIwUnViaW4lRTMlODElOENNTFBlcmYlRTMlODIlOTIlRTclQjclOEYlRTMlODElQUElRTMlODIlODElRTMlODAlODElRTklOTglQjIlRTglQTElOUJBSSVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTNjMDM4ZTgxMWU1NGJmOTI1NWQwM2RiNmJmYjk3Yjcz&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsaGpqams0JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTUwY2Y1ZTE4YzU4OWQ1NDhlYzgyYTBkYjQ4NzI2MTQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=cb40aa484e14b584c707c3c059ccff9f",
+    "title_ja": "Anthropic、AMD GPU対応をわずか3日で完了。NVIDIA次世代GPUがMLPerfを席巻し、防衛AIスタートアップが3カ月でユニコーンに昇格",
+    "summary_ja": "Anthropicは、AMD GPU上でモデルを動作させるためのソフトウェア対応を、従来の6〜12カ月の想定からわずか3日で完遂したと投資家向けに明かした。 一方で、NVIDIAの次世代プラットフォーム「Vera Rubin」は、MLPerf学習ベンチマークの全項目で首位を獲得し圧倒的な性能を見せている。 さらに防衛関連AIスタートアップが設立から3カ月でユニコーン企業となるなど、AI開発のサイクルと市場評価のスピードが劇的に加速している。",
+    "translations": {
+      "ja": {
+        "title": "Anthropic、AMD GPU対応をわずか3日で完了。NVIDIA次世代GPUがMLPerfを席巻し、防衛AIスタートアップが3カ月でユニコーンに昇格",
+        "summary": "Anthropicは、AMD GPU上でモデルを動作させるためのソフトウェア対応を、従来の6〜12カ月の想定からわずか3日で完遂したと投資家向けに明かした。 一方で、NVIDIAの次世代プラットフォーム「Vera Rubin」は、MLPerf学習ベンチマークの全項目で首位を獲得し圧倒的な性能を見せている。 さらに防衛関連AIスタートアップが設立から3カ月でユニコーン企業となるなど、AI開発のサイクルと市場評価のスピードが劇的に加速している。"
+      },
+      "en": {
+        "title": "Anthropic completes AMD GPU port in 3 days, NVIDIA’s Vera Rubin dominates MLPerf, and defense AI hits unicorn status in 3 months",
+        "summary": "Anthropic recently disclosed to IPO investors that they ported their model stack to AMD GPUs in just three days, shattering prior estimates that projected a six to twelve-month development timeline. Simultaneously, NVIDIA’s next-generation 'Vera Rubin' platform debuted by sweeping every category in the latest MLPerf training benchmarks, underscoring their continued hardware dominance. The market pace is also accelerating in vertical applications, with a new defense AI startup reaching unicorn valuation in only three months. For builders, this rapid shift suggests that software-defined hardware portability is now a competitive necessity. You can no longer rely on vendor lock-in for performance; abstracting infrastructure to support multiple silicon backends has become a critical strategic advantage for long-term scalability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-17T22:17:17.196Z"
+  },
+  {
+    "id": "art-1794953828548-cg521",
+    "source_id": "source-publickey",
+    "source_name": "Publickey",
+    "url": "https://www.publickey1.jp/blog/26/postgresqlazure_horizondb.html",
+    "published_at": "2026-11-17T21:45:41.000Z",
+    "og_image_url": "https://www.publickey1.jp/2026/horizondb-ga02.png",
+    "title_ja": "マイクロソフト、PostgreSQL互換のミッションクリティカル向けDB「Azure HorizonDB」を正式リリース：IGNITE 2026で発表",
+    "summary_ja": "マイクロソフトは年次イベント「Microsoft Ignite 2026」にて、PostgreSQL互換のミッションクリティカル向けデータベース「Azure HorizonDB」の正式リリースを発表した。 既存のAzure Database for PostgreSQLと比較し、より高い可用性と分散トランザクション性能を備えている。",
+    "translations": {
+      "ja": {
+        "title": "マイクロソフト、PostgreSQL互換のミッションクリティカル向けDB「Azure HorizonDB」を正式リリース：IGNITE 2026で発表",
+        "summary": "マイクロソフトは年次イベント「Microsoft Ignite 2026」にて、PostgreSQL互換のミッションクリティカル向けデータベース「Azure HorizonDB」の正式リリースを発表した。 既存のAzure Database for PostgreSQLと比較し、より高い可用性と分散トランザクション性能を備えている。"
+      },
+      "en": {
+        "title": "Microsoft Launches Azure HorizonDB: A New PostgreSQL-Compatible Mission-Critical Database Service Unveiled at Microsoft Ignite 2026",
+        "summary": "At Microsoft Ignite 2026, Microsoft officially launched Azure HorizonDB, a new PostgreSQL-compatible database service engineered specifically for mission-critical enterprise workloads. Built to offer higher availability and superior distributed transaction performance compared to standard Azure Database for PostgreSQL offerings, HorizonDB aims to simplify the migration of complex, large-scale applications into the cloud. The service allows teams to retain the familiar PostgreSQL ecosystem while significantly boosting reliability under intense concurrent demand. For architects and engineers, this rollout represents a powerful, hardened alternative for high-throughput database operations, effectively bridging the gap between open-source flexibility and the robust, scalable infrastructure requirements needed for modern, global enterprise applications that cannot afford downtime or latency spikes."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-17T22:17:08.548Z"
+  },
+  {
     "id": "art-1794952940890-sclvt",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -13741,32 +13848,6 @@
     "created_at": "2026-11-16T11:02:05.766Z"
   },
   {
-    "id": "art-1794826910789-gxs3i",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/honest_jacana976/n/n54e61fbe168d",
-    "published_at": "2026-11-16T10:38:22.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336811232/rectangle_large_type_2_3ec2558de75572cd99dbe69d33a9d404.jpg?fit=bounds&quality=85&width=1280",
-    "title_ja": "中学校の保健体育教師からITエンジニアへ――キャリアを大きく転換した「やす」氏の挑戦と個人開発を続ける現在地とは",
-    "summary_ja": "中学校の保健体育教師からITエンジニアへと異色の転身を遂げた「やす」氏が、キャリア変更の背景と現在の活動を語った。 現在はIT企業でWebエンジニアとして勤務する傍ら、個人開発としてWebアプリケーションの制作に注力している。 教育現場での経験を異分野でどう活かし、どのようにスキル習得と開発を両立しているのか。 未経験から技術の道を目指すエンジニアにとって、キャリア再構築のリアルな指針となる体験談だ。",
-    "translations": {
-      "ja": {
-        "title": "中学校の保健体育教師からITエンジニアへ――キャリアを大きく転換した「やす」氏の挑戦と個人開発を続ける現在地とは",
-        "summary": "中学校の保健体育教師からITエンジニアへと異色の転身を遂げた「やす」氏が、キャリア変更の背景と現在の活動を語った。 現在はIT企業でWebエンジニアとして勤務する傍ら、個人開発としてWebアプリケーションの制作に注力している。 教育現場での経験を異分野でどう活かし、どのようにスキル習得と開発を両立しているのか。 未経験から技術の道を目指すエンジニアにとって、キャリア再構築のリアルな指針となる体験談だ。"
-      },
-      "en": {
-        "title": "From Middle School PE Teacher to Web Engineer: How Yasu Pivoted His Career and Started Building Independent Web Apps",
-        "summary": "Yasu, a former middle school PE teacher, details his career pivot into the software engineering industry and the current challenges of balancing a full-time role with independent web application development. While his background is far removed from technical stacks, he navigated the transition to become a professional web engineer and continues to push personal projects on the side. This narrative provides an honest look at the realities of career retraining and the drive required to successfully move into tech from a non-technical profession. For developers considering similar transitions, Yasu’s journey highlights that practical engineering skills are often built through the persistent application of logic and learning, regardless of your starting point or past career path."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-16T11:01:50.789Z"
-  },
-  {
     "id": "art-1794826022478-fj4as",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -14612,33 +14693,6 @@
     "created_at": "2026-11-16T08:31:48.143Z"
   },
   {
-    "id": "art-1794817014721-pi4h3",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/whitemarshall/items/18f0a3e98f92ba0f64a4",
-    "published_at": "2026-11-16T08:14:57.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmODljNjFkOTY3OWRiYTNhN2Y3NTk2OWJkMzUxNzU0NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGI4NjUzMzBkODk4Y2IwZGU0MTgwNWY1OWRjYzNlMjQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd74df1f0f9e99258a2c04d787d798489?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9R2VtaW5pJTIwT21uaSUyMDEuMiUyMEZsYXNoJUUzJTgxJUE4JUUzJTgxJUFGJUVGJUJDJTlGMTUlRTclQTclOTIlRTUlOEIlOTUlRTclOTQlQkIlRTMlODMlQkIlRTUlOEYlODIlRTclODUlQTclRTclOTQlQkIlRTUlODMlOEYlRTMlODMlQkIlRTglODklQjIlRTYlOUIlQkYlRTMlODElODglRTMlODElQUUlRTYlQTQlOUMlRTglQTglQkMlRTclQjUlOTAlRTYlOUUlOUMlRTMlODElQThWZW8lMjAzLjElRTMlODElQUUlRTUlQUUlOUYlRTglQTElOEMlRTglQTglOTglRTklOEMlQjImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1lODIwMWMwZmYwMTYwMzY2MmZlYzBiM2FmZGMyNTllOQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3aGl0ZW1hcnNoYWxsJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODZkYjFiOTRkNWI1NzM4Yjk3MjA1ODE2ODQyNzc4MWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=f9950be6847dac984da55c53e75a7188",
-    "title_ja": "Google「Gemini Omni 1.2 Flash」公開：15秒の動画生成・編集と対話型修正の実力とは？Veo 3.1の実行記録も検証",
-    "summary_ja": "Googleが発表した「Gemini Omni 1.2 Flash」は、動画生成と編集の最大時間を15秒に拡張し、参照画像への忠実な追従や、対話形式での段階的な編集機能を強化した。 リリース直後の検証では、参照素材との整合性や複雑な色替え指示への適応力が実証されている。 同時に公開されたVeo 3.1の実行記録も含め、生成AIによる動画制作環境は、単発の生成から対話によるブラッシュアップが可能な「編集プロセス」へと本格的に移行している。",
-    "translations": {
-      "ja": {
-        "title": "Google「Gemini Omni 1.2 Flash」公開：15秒の動画生成・編集と対話型修正の実力とは？Veo 3.1の実行記録も検証",
-        "summary": "Googleが発表した「Gemini Omni 1.2 Flash」は、動画生成と編集の最大時間を15秒に拡張し、参照画像への忠実な追従や、対話形式での段階的な編集機能を強化した。 リリース直後の検証では、参照素材との整合性や複雑な色替え指示への適応力が実証されている。 同時に公開されたVeo 3.1の実行記録も含め、生成AIによる動画制作環境は、単発の生成から対話によるブラッシュアップが可能な「編集プロセス」へと本格的に移行している。"
-      },
-      "en": {
-        "title": "Google releases Gemini Omni 1.2 Flash with 15-second video editing and conversational iteration, plus early Veo 3.1 performance benchmarks",
-        "summary": "Google has launched Gemini Omni 1.2 Flash, pushing video generation and editing capabilities to a 15-second duration with enhanced support for reference image adherence and multi-turn conversational refinement. Early third-party testing highlights significant improvements in how the model handles specific color grading requests and consistent tracking of source assets compared to previous iterations. Alongside these updates, documentation of Veo 3.1 execution demonstrates a clear industry shift toward iterative AI video workflows where generation is only the first step, followed by conversational polish. For builders and creators, this evolution signals that competitive video AI is no longer just about prompt-to-video, but about maintaining context across complex, multi-stage creative editing sessions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "動画",
-      "開発"
-    ],
-    "created_at": "2026-11-16T08:16:54.721Z"
-  },
-  {
     "id": "art-1794817008314-6hesq",
     "source_id": "source-github-trending",
     "source_name": "GitHub Trending (AI / TypeScript / Python)",
@@ -15060,32 +15114,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-16T07:02:15.258Z"
-  },
-  {
-    "id": "art-1794812528818-6vh5r",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/skishore23/trustgraph",
-    "published_at": "2026-11-16T06:44:22.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェント間のデータアクセスを制御するACLエンジン「TrustGraph」が登場。AI実行の可視化とセキュリティを強化",
-    "summary_ja": "「TrustGraph」は、AIエージェントの処理全体でデータアクセスの制御（ACL）を維持するための新しいライブラリです。 AIエージェントが複雑化する中で、データがどこから来てどこへ渡されたかを追跡することが困難ですが、本ツールはエージェント間のデータフローに沿ったポリシー適用を実現します。 AIプロダクトの開発において、権限管理の欠如は深刻なセキュリティリスクです。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント間のデータアクセスを制御するACLエンジン「TrustGraph」が登場。AI実行の可視化とセキュリティを強化",
-        "summary": "「TrustGraph」は、AIエージェントの処理全体でデータアクセスの制御（ACL）を維持するための新しいライブラリです。 AIエージェントが複雑化する中で、データがどこから来てどこへ渡されたかを追跡することが困難ですが、本ツールはエージェント間のデータフローに沿ったポリシー適用を実現します。 AIプロダクトの開発において、権限管理の欠如は深刻なセキュリティリスクです。"
-      },
-      "en": {
-        "title": "TrustGraph introduces ACL engines for AI agents that track and enforce data access policies across complex pipelines",
-        "summary": "TrustGraph is a new library designed to maintain robust Access Control Lists (ACLs) as data flows through interconnected AI agent pipelines. As AI agents grow in complexity, tracking provenance and ensuring granular permission enforcement becomes significantly difficult, often leaving massive security gaps in agentic architectures. This tool solves the problem by attaching policies that follow the data across execution steps, ensuring that every agent receives only the authorization required for its specific context. For developers building autonomous AI products, this represents a crucial shift: moving from static perimeter security to context-aware, pipeline-native permission management. Implementing this early in your stack is the most effective way to prevent accidental data leakage or unauthorized internal tool calls."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-16T07:02:08.818Z"
   },
   {
     "id": "art-1794812505501-v0zcl",
@@ -47284,34 +47312,6 @@
       "開発"
     ],
     "created_at": "2026-10-30T19:01:39.168Z"
-  },
-  {
-    "id": "art-1793386065542-jgd8y",
-    "source_id": "source-vercel",
-    "source_name": "Vercel / v0 Blog",
-    "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel",
-    "published_at": "2026-10-30T04:00:00.000Z",
-    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/makQAfKB6M5WOh80cEwUs/c82b4ac64be8d6c4cdb3e37c65f68ed5/runtime_caching.png",
-    "title_ja": "Vercelが「Runtime Cache」を発表、既存のData Cacheを統合しフレームワークやAPIのデータキャッシュを一元管理化",
-    "summary_ja": "Vercelは、従来のData Cacheを「Runtime Cache」へ統合し、フレームワークやAPIを横断したデータキャッシュ管理を簡素化すると発表した。 Next.jsのfetchキャッシュやunstable_cacheを既に使用している場合、コードの修正は不要で、ProおよびEnterpriseプランではストレージ容量も拡張される。",
-    "translations": {
-      "ja": {
-        "title": "Vercelが「Runtime Cache」を発表、既存のData Cacheを統合しフレームワークやAPIのデータキャッシュを一元管理化",
-        "summary": "Vercelは、従来のData Cacheを「Runtime Cache」へ統合し、フレームワークやAPIを横断したデータキャッシュ管理を簡素化すると発表した。 Next.jsのfetchキャッシュやunstable_cacheを既に使用している場合、コードの修正は不要で、ProおよびEnterpriseプランではストレージ容量も拡張される。"
-      },
-      "en": {
-        "title": "Vercel merges Data Cache into unified Runtime Cache to streamline cross-framework and API data caching workflows",
-        "summary": "Vercel has unified its Data Cache into the new \"Runtime Cache,\" consolidating how developers manage data caching across various frameworks and APIs. Crucially, existing implementations using Next.js fetch or unstable_cache require zero code changes to leverage this new infrastructure, while Pro and Enterprise projects benefit from expanded storage allocations. By enabling developers to reuse fetched or computed data across requests without needing to operate separate, complex caching services, this update ensures more robust performance during traffic spikes. For builders, the key takeaway is that you can now maintain consistent, high-performance data delivery without the overhead of external cache management, effectively streamlining your backend architecture while simultaneously boosting reliability and reducing operational friction in production environments."
-      }
-    },
-    "tool_tags": [
-      "Vercel"
-    ],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-10-30T18:47:45.542Z"
   },
   {
     "id": "art-1793385690868-rii4p",
