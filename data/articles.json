@@ -1,5 +1,113 @@
 [
   {
+    "id": "art-1794956539123-spk8c",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.780",
+    "published_at": "2026-11-17T22:06:34.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawlがバージョン2.11.780を公開、API経由での画像抽出とスクリーンショット機能が強化されLLM連携が容易に",
+    "summary_ja": "Firecrawlがv2.11.780をリリースし、APIを通じた画像データ抽出とスクリーンショット機能を大幅に強化した。 これにより、Webサイトの視覚情報をマルチモーダルLLMに直接入力することが容易になり、RAGやデータ収集パイプラインの柔軟性が向上する。 開発者はWebスクレイピングの段階で視覚的なコンテキストを保持できるようになり、複雑なUIの解析やスクリーンショットに基づくデータ抽出の自動化がさらに加速するだろう。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawlがバージョン2.11.780を公開、API経由での画像抽出とスクリーンショット機能が強化されLLM連携が容易に",
+        "summary": "Firecrawlがv2.11.780をリリースし、APIを通じた画像データ抽出とスクリーンショット機能を大幅に強化した。 これにより、Webサイトの視覚情報をマルチモーダルLLMに直接入力することが容易になり、RAGやデータ収集パイプラインの柔軟性が向上する。 開発者はWebスクレイピングの段階で視覚的なコンテキストを保持できるようになり、複雑なUIの解析やスクリーンショットに基づくデータ抽出の自動化がさらに加速するだろう。"
+      },
+      "en": {
+        "title": "Firecrawl v2.11.780 Launches with Enhanced API Image Extraction Capabilities to Streamline Multimodal AI Data Pipelines",
+        "summary": "Firecrawl has officially rolled out version v2.11.780, introducing robust support for API-driven image extraction and automated screenshot generation. This update is a significant boon for builders integrating multimodal LLMs, as it allows developers to pipe visual website context directly into models without manual post-processing hacks. By enabling structured visual capture alongside traditional text crawling, the platform streamlines the creation of sophisticated RAG pipelines that depend on visual UI cues or layout interpretation. For developers handling complex data extraction, this native integration drastically reduces the engineering overhead previously required to capture and align screenshots with text-based content, paving the way for more accurate agentic workflows that truly \"see\" the web as human users do."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-17T23:02:19.123Z"
+  },
+  {
+    "id": "art-1794956528903-wtpoq",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+    "published_at": "2026-11-17T22:44:51.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/13/ML-21786-featured-image-1.png",
+    "title_ja": "Amazon BedrockのAgentCoreでJSON処理のトークンコストと遅延を最大80%削減する3つの最適化手法",
+    "summary_ja": "Amazon BedrockのAgentCoreにおいて、数メガバイト規模のJSONペイロード処理によるコスト増大と遅延を回避するための最適化手法が公開された。 具体的には、巨大データをAmazon S3へオフロードし、必要に応じてページング処理を行い、さらに辞書圧縮を適用することで、ターンあたりのトークン消費量を最大71%、レイテンシを最大80%削減できる。",
+    "translations": {
+      "ja": {
+        "title": "Amazon BedrockのAgentCoreでJSON処理のトークンコストと遅延を最大80%削減する3つの最適化手法",
+        "summary": "Amazon BedrockのAgentCoreにおいて、数メガバイト規模のJSONペイロード処理によるコスト増大と遅延を回避するための最適化手法が公開された。 具体的には、巨大データをAmazon S3へオフロードし、必要に応じてページング処理を行い、さらに辞書圧縮を適用することで、ターンあたりのトークン消費量を最大71%、レイテンシを最大80%削減できる。"
+      },
+      "en": {
+        "title": "Amazon Bedrock AgentCore optimization: 3 strategies to slash JSON token costs and latency by up to 80%",
+        "summary": "As production AI agents handling massive, multi-megabyte JSON payloads on Amazon Bedrock AgentCore struggle with high token costs and increased latency, AWS has released three composable strategies to mitigate the performance hit. By offloading bulky artifacts to Amazon S3, implementing on-demand result paging, and applying dictionary compaction, developers can slash per-turn token usage by up to 71% while cutting latency by up to 80%. This architectural guidance is essential for teams scaling LLM-driven agents who need to manage growing data volumes without letting infrastructure costs or response times spiral out of control. For builders, this demonstrates why treating raw JSON inputs as simple strings is inefficient at enterprise scale; data partitioning and payload compression are mandatory architectural components."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-17T23:02:08.903Z"
+  },
+  {
+    "id": "art-1794956522793-ziiva",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+    "published_at": "2026-11-17T22:52:29.000Z",
+    "og_image_url": "https://static.simonwillison.net/static/2026/sandbox-proxy.png",
+    "title_ja": "Simon Willisonらが公開した「External Sandbox」パターン：AIエージェントのコード実行を分離してセキュリティを強化",
+    "summary_ja": "AIエージェントが実行するコードをホストOSから分離する「External Sandbox」パターンが、Prime Radiantとの共同研究で公開された。 エージェント本体をサンドボックス外に配置し、コード実行環境を隔離することで、プロンプトインジェクションや意図しないシステム操作のリスクを低減する。 今回はv86を利用してAlpine Linuxを動作させるなど、3つの実装例が示されている。",
+    "translations": {
+      "ja": {
+        "title": "Simon Willisonらが公開した「External Sandbox」パターン：AIエージェントのコード実行を分離してセキュリティを強化",
+        "summary": "AIエージェントが実行するコードをホストOSから分離する「External Sandbox」パターンが、Prime Radiantとの共同研究で公開された。 エージェント本体をサンドボックス外に配置し、コード実行環境を隔離することで、プロンプトインジェクションや意図しないシステム操作のリスクを低減する。 今回はv86を利用してAlpine Linuxを動作させるなど、3つの実装例が示されている。"
+      },
+      "en": {
+        "title": "Simon Willison and Prime Radiant release 'External Sandbox' pattern to isolate AI agent code execution for better security",
+        "summary": "Simon Willison and Prime Radiant have introduced the 'External Sandbox' pattern, an architectural shift designed to keep AI agents and their code execution environments strictly separated. By running agent-triggered code inside a dedicated, restricted sandbox while keeping the agent controller outside, developers can mitigate risks from prompt injection or unintended system-level modifications. The team released three initial implementations, including one using v86 to run Alpine Linux, providing a robust blueprint for handling untrusted execution. For engineers building autonomous coding agents, this pattern is becoming a critical security standard, shifting the focus from trying to 'align' models to physically isolating the impact of any potentially damaging code they might execute during their routine operations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-17T23:02:02.793Z"
+  },
+  {
+    "id": "art-1794956516492-x2owt",
+    "source_id": "source-elevenlabs",
+    "source_name": "ElevenLabs Blog",
+    "url": "https://elevenlabs.io/blog/what-is-webrtc",
+    "published_at": "2026-11-17T12:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "ElevenLabsが解説、WebRTCの仕組みとSTUN/TURN/メディアサーバーの活用法——リアルタイム通信の基本とWebSocketとの違い",
+    "summary_ja": "ElevenLabsがWebRTCの技術解説を公開。 ブラウザ間での低遅延なP2P通信を実現するSTUN・TURNサーバーの役割や、メディアサーバーを用いた多人数接続の仕組みを詳細に紐解く。 さらにWebSocketとの比較を通じて、リアルタイム性が求められる音声・動画アプリ構築における適切なプロトコル選定の基準を提示している。 開発者は通信コストと遅延のトレードオフを理解し、要件に応じた実装を選択すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "ElevenLabsが解説、WebRTCの仕組みとSTUN/TURN/メディアサーバーの活用法——リアルタイム通信の基本とWebSocketとの違い",
+        "summary": "ElevenLabsがWebRTCの技術解説を公開。 ブラウザ間での低遅延なP2P通信を実現するSTUN・TURNサーバーの役割や、メディアサーバーを用いた多人数接続の仕組みを詳細に紐解く。 さらにWebSocketとの比較を通じて、リアルタイム性が求められる音声・動画アプリ構築における適切なプロトコル選定の基準を提示している。 開発者は通信コストと遅延のトレードオフを理解し、要件に応じた実装を選択すべきだ。"
+      },
+      "en": {
+        "title": "ElevenLabs details WebRTC architecture: mastering STUN, TURN, and media servers for real-time browser communication vs. WebSockets",
+        "summary": "ElevenLabs released a technical breakdown of WebRTC, the standard enabling sub-millisecond peer-to-peer communication directly within web browsers. The guide clarifies how STUN and TURN servers navigate complex network barriers and when architects must pivot to centralized media servers to support multi-user streams. By contrasting WebRTC with standard WebSockets, the article outlines the specific performance trade-offs inherent in each protocol, providing a blueprint for developers building real-time audio and video applications. The core takeaway is that developers must carefully weigh the balance between the ultra-low latency of P2P streams and the scalability requirements of their specific application architecture, selecting the right infrastructure layer before deployment rather than optimizing for performance retroactively once traffic demands increase."
+      }
+    },
+    "tool_tags": [
+      "ElevenLabs"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-17T23:01:56.492Z"
+  },
+  {
     "id": "art-1794955656915-674n5",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -27271,32 +27379,6 @@
     "created_at": "2026-11-11T09:02:02.657Z"
   },
   {
-    "id": "art-1794387716601-rvn55",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/bonds-2",
-    "published_at": "2026-11-11T05:07:26.000Z",
-    "og_image_url": null,
-    "title_ja": "友情維持AI「bonds chat」が登場、返信が途絶えるとAIが消滅する強制チャット体験を実装",
-    "summary_ja": "「bonds chat」は、友人グループでの継続的な対話を強制するマルチプレイヤー型AIチャットアプリだ。 参加者が一定期間返信を怠ると、共有のAIキャラクターが「死亡」して消滅するというゲーミフィケーションを導入し、疎遠になりがちな関係性に強制的な再接続の動機を与えている。 単なるAI対話ツールではなく、人間関係の維持にデジタルな制裁機能を加えるというユニークな逆転の発想が、ソーシャルアプリの新しい定着率向上モデルとして注目される。",
-    "translations": {
-      "ja": {
-        "title": "友情維持AI「bonds chat」が登場、返信が途絶えるとAIが消滅する強制チャット体験を実装",
-        "summary": "「bonds chat」は、友人グループでの継続的な対話を強制するマルチプレイヤー型AIチャットアプリだ。 参加者が一定期間返信を怠ると、共有のAIキャラクターが「死亡」して消滅するというゲーミフィケーションを導入し、疎遠になりがちな関係性に強制的な再接続の動機を与えている。 単なるAI対話ツールではなく、人間関係の維持にデジタルな制裁機能を加えるというユニークな逆転の発想が、ソーシャルアプリの新しい定着率向上モデルとして注目される。"
-      },
-      "en": {
-        "title": "Bonds Chat introduces a multiplayer AI companion that permanently dies if your group stops chatting",
-        "summary": "Bonds Chat is a novel multiplayer AI app that treats relationships like a Tamagotchi, threatening to permanently kill off your shared AI companion if the group stops interacting for too long. By implementing a high-stakes gamification mechanic where silence leads to the loss of your digital connection, the platform creates an artificial sense of urgency that forces friends to re-engage with one another. It transforms passive chatting into a collaborative survival game, effectively using the AI as a bridge to maintain social health. For developers building social products, this experiment demonstrates how aggressive churn-reduction mechanisms—even slightly hostile ones—can be weaponized to foster stickiness in a landscape where users typically struggle to sustain long-term digital communication."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-11T09:01:56.601Z"
-  },
-  {
     "id": "art-1794387709265-ve1rr",
     "source_id": "source-google-ai-blog",
     "source_name": "Google AI Blog",
@@ -33816,34 +33898,6 @@
     "created_at": "2026-11-09T07:01:54.582Z"
   },
   {
-    "id": "art-1794207706684-qe4jh",
-    "source_id": "source-firecrawl",
-    "source_name": "Firecrawl Releases / Blog",
-    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.705",
-    "published_at": "2026-11-09T06:51:34.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
-    "title_ja": "WebスクレイピングツールFirecrawl、API画像処理機能の刷新版v2.11.705をリリース――大規模データ抽出の精度と安定性を強化",
-    "summary_ja": "FirecrawlがAPIイメージの最新バージョンv2.11.705を公開し、データ抽出プロセスにおける画像処理の安定性と精度を大幅に改善した。 特にLLM向けのWebデータ収集パイプラインにおいて、複雑なサイト構造からの情報抽出がより信頼性の高いものとなっている。 開発者は、本アップデートにより、スクレイピングの失敗率を低減し、より一貫したデータセットをAIモデルの入力として活用できるようになる。",
-    "translations": {
-      "ja": {
-        "title": "WebスクレイピングツールFirecrawl、API画像処理機能の刷新版v2.11.705をリリース――大規模データ抽出の精度と安定性を強化",
-        "summary": "FirecrawlがAPIイメージの最新バージョンv2.11.705を公開し、データ抽出プロセスにおける画像処理の安定性と精度を大幅に改善した。 特にLLM向けのWebデータ収集パイプラインにおいて、複雑なサイト構造からの情報抽出がより信頼性の高いものとなっている。 開発者は、本アップデートにより、スクレイピングの失敗率を低減し、より一貫したデータセットをAIモデルの入力として活用できるようになる。"
-      },
-      "en": {
-        "title": "Firecrawl updates API image to v2.11.705, introducing critical stability and accuracy improvements for complex web data extraction pipelines",
-        "summary": "Firecrawl has released v2.11.705 of its API image, introducing substantial enhancements to its core image processing capabilities to improve the reliability and accuracy of automated web data extraction. For developers leveraging these tools to build LLM-ready data pipelines, this update addresses specific bottlenecks encountered when parsing complex or dynamic website structures. By hardening the underlying extraction logic, this release significantly reduces failure rates for scraping tasks, ensuring cleaner and more consistent output for AI training or retrieval-augmented generation workloads. Builders who rely on Firecrawl for consistent crawling operations should upgrade to benefit from these improved stability patterns and minimize downtime when dealing with irregular or poorly structured web content, ultimately ensuring more robust input for their AI agents."
-      }
-    },
-    "tool_tags": [
-      "Firecrawl"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-09T07:01:46.684Z"
-  },
-  {
     "id": "art-1794206793603-r7yqk",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -37133,32 +37187,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-05T21:31:26.183Z"
-  },
-  {
-    "id": "art-1793912716096-gkrvn",
-    "source_id": "source-aws-ml",
-    "source_name": "AWS Machine Learning Blog",
-    "url": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore/",
-    "published_at": "2026-11-05T21:04:24.000Z",
-    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/04/ML-22248-featured-image.png",
-    "title_ja": "Amazon Bedrockの新機能「Web Answer」解説：自然言語質問に対する回答生成とソース提示を単一ツール呼び出しで完結",
-    "summary_ja": "Amazon BedrockのAgentCore向け新機能「Web Answer」は、Web検索・情報抽出・要約・出典明記の一連のプロセスを単一のツール呼び出しで自動実行できる。 開発者は複雑な検索パイプラインを構築する必要がなくなり、AgentCoreゲートウェイを通じてエージェントに統合するだけで、最新情報を引用付きで即座に回答させることが可能だ。 AIエージェントの外部知識ベース連携を簡素化したいエンジニアにとって、実装コストを大幅に削減する強力な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "Amazon Bedrockの新機能「Web Answer」解説：自然言語質問に対する回答生成とソース提示を単一ツール呼び出しで完結",
-        "summary": "Amazon BedrockのAgentCore向け新機能「Web Answer」は、Web検索・情報抽出・要約・出典明記の一連のプロセスを単一のツール呼び出しで自動実行できる。 開発者は複雑な検索パイプラインを構築する必要がなくなり、AgentCoreゲートウェイを通じてエージェントに統合するだけで、最新情報を引用付きで即座に回答させることが可能だ。 AIエージェントの外部知識ベース連携を簡素化したいエンジニアにとって、実装コストを大幅に削減する強力な選択肢となる。"
-      },
-      "en": {
-        "title": "Amazon Bedrock Introduces Web Answer in AgentCore to Generate Cited, Real-Time Responses with a Single Tool Call",
-        "summary": "Amazon Bedrock has launched Web Answer within AgentCore, a streamlined capability that synthesizes answers with source citations from natural language queries using a single tool call. By eliminating the need to architect custom pipelines for search, retrieval, synthesis, and attribution, developers can now seamlessly integrate real-time web intelligence into their agents via the AgentCore Gateway. This approach drastically reduces the engineering overhead usually required for external knowledge retrieval, allowing builders to focus on agent orchestration rather than managing complex data extraction layers. For those deploying AI agents that require current information, Web Answer offers an out-of-the-box solution to maintain accuracy and traceability without sacrificing deployment velocity or system maintainability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-05T21:05:16.096Z"
   },
   {
     "id": "art-1793912492646-r67ki",
@@ -49955,35 +49983,6 @@
       "ビジネス"
     ],
     "created_at": "2026-10-29T07:16:26.633Z"
-  },
-  {
-    "id": "art-1793257360911-cvfds",
-    "source_id": "source-openai",
-    "source_name": "OpenAI 公式",
-    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
-    "published_at": "2026-10-28T13:15:00.000Z",
-    "og_image_url": null,
-    "title_ja": "OpenAIとServiceNowが提携拡大、企業ワークフローへのAIエージェント統合とChatGPT連携を強化し業務効率化を加速",
-    "summary_ja": "OpenAIとServiceNowはパートナーシップを拡大し、OpenAIの最新モデルとAIエージェント機能をServiceNowの企業向けワークフローに直接組み込む。 さらに、ServiceNowの業務プロセスをChatGPT上で直接操作可能にすることで、エンタープライズ領域におけるデータ活用と自動化のシームレスな融合を目指す。 開発者やDX担当者は、基幹業務システムとLLMを分断させず、高度なエージェント機能を既存ツール内で完結させる設計が求められる。",
-    "translations": {
-      "ja": {
-        "title": "OpenAIとServiceNowが提携拡大、企業ワークフローへのAIエージェント統合とChatGPT連携を強化し業務効率化を加速",
-        "summary": "OpenAIとServiceNowはパートナーシップを拡大し、OpenAIの最新モデルとAIエージェント機能をServiceNowの企業向けワークフローに直接組み込む。 さらに、ServiceNowの業務プロセスをChatGPT上で直接操作可能にすることで、エンタープライズ領域におけるデータ活用と自動化のシームレスな融合を目指す。 開発者やDX担当者は、基幹業務システムとLLMを分断させず、高度なエージェント機能を既存ツール内で完結させる設計が求められる。"
-      },
-      "en": {
-        "title": "OpenAI and ServiceNow expand partnership to embed advanced AI agents into enterprise workflows and bridge ChatGPT with platform processes",
-        "summary": "OpenAI and ServiceNow have deepened their strategic partnership, focusing on integrating OpenAI's latest models and autonomous AI agents directly into the ServiceNow enterprise workflow ecosystem. This collaboration enables developers to trigger complex ServiceNow actions from within ChatGPT while simultaneously embedding LLM-powered insights into the enterprise service management layer. For builders, this signifies a major shift toward 'agentic' enterprise software where AI is not just a chat interface but an operational actor within the backend system. The key takeaway is the necessity of building agent architectures that can bridge disjointed data silos; enterprise products must now move beyond simple API wrappers to orchestrate actions directly within internal operational workflows to provide real business value."
-      }
-    },
-    "tool_tags": [
-      "ChatGPT"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-29T07:02:40.911Z"
   },
   {
     "id": "art-1793257345694-cnve0",
