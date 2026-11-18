@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795005169035-2dxui",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/mugen_web/articles/claude-code-three-guards-against-repeat-mistakes",
+    "published_at": "2026-11-18T04:53:34.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Hy5au1K_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AB%25E5%2590%258C%25E3%2581%2598%25E5%25A4%25B1%25E6%2595%2597%25E3%2582%2592%25E7%25B9%25B0%25E3%2582%258A%25E8%25BF%2594%25E3%2581%2595%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2582%25E3%2583%25A1%25E3%2583%25A2%25E3%2583%25AA%25E3%2583%25BB%25E3%2583%2595%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25BB%25E6%259C%25AA%25E5%25AE%259F%25E6%2596%25BD%25E3%2582%25BF%25E3%2582%25B9%25E3%2582%25AF%25E8%25A1%25A8%25E3%2581%25AE3%25E7%2582%25B9%25E3%2582%2592%25E3%2580%2581%25E5%25AE%259F%25E9%259A%259B%25E3%2581%25AB%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%259F%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:MUGEN%2520WEB%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGFEMXVhMTJBamkzcEZqNVltXzdGVzVRR1JHSFFNWnJBcXZ1Tkg0Rk9OLUFxNnJBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの「記憶喪失」対策：セッションを超えて指示を継続させるメモリ・フック・未実施タスク表の活用術",
+    "summary_ja": "Claude Codeはセッションが切れると文脈を忘れてしまう課題がある。 これを克服するため、失敗事例を記録する「メモリ」ファイル、対話の冒頭に制約を注入する「フック」、未完了作業を集約する「タスク表」の運用を導入した。 都度同じ注意を繰り返すコストを削減し、エージェントの自律性を高めるための現実的なプロンプトエンジニアリング・手法として活用できる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの「記憶喪失」対策：セッションを超えて指示を継続させるメモリ・フック・未実施タスク表の活用術",
+        "summary": "Claude Codeはセッションが切れると文脈を忘れてしまう課題がある。 これを克服するため、失敗事例を記録する「メモリ」ファイル、対話の冒頭に制約を注入する「フック」、未完了作業を集約する「タスク表」の運用を導入した。 都度同じ注意を繰り返すコストを削減し、エージェントの自律性を高めるための現実的なプロンプトエンジニアリング・手法として活用できる。"
+      },
+      "en": {
+        "title": "Overcoming Claude Code memory loss: Using persistent memory files, startup hooks, and task trackers to maintain continuity",
+        "summary": "Claude Code frequently forgets context when a session resets, forcing developers to repeat instructions constantly. To solve this, I implemented three practical guardrails: a persistent 'memory' file logging past failures, a startup 'hook' to inject essential constraints into every interaction, and a centralized 'task tracker' for incomplete work. This workflow effectively minimizes repeated manual corrections and forces the agent to maintain focus across session boundaries. For developers relying on autonomous CLI tools, this structured approach acts as a lightweight long-term memory layer, significantly improving task consistency. The strategy demonstrates that until agentic tools offer native persistence, externalizing state in the codebase itself is the most reliable way to enforce complex project requirements."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-18T12:32:49.035Z"
+  },
+  {
+    "id": "art-1795005159399-ogz6b",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/devHaitham481/anamnesis",
+    "published_at": "2026-11-18T11:12:49.000Z",
+    "og_image_url": null,
+    "title_ja": "AIチャット履歴の分散を解決するローカルアーカイブ「Anamnesis」公開、全プラットフォームの対話を横断検索・一元管理可能に",
+    "summary_ja": "「Anamnesis」は、ChatGPTやClaudeなど複数のAIサービスに散らばるチャット履歴を、ローカル環境で一元管理・アーカイブできるオープンソースツールだ。 各プラットフォームのデータをローカルに集約し、強力なベクトル検索機能を活用することで、利用するAIエージェントを問わず過去の対話内容を即座に再発見できる。 異なるサービスを頻繁に切り替えて開発を行うエンジニアにとって、コンテキストを維持したまま過去の知見を再利用するための極めて強力な基盤となる。",
+    "translations": {
+      "ja": {
+        "title": "AIチャット履歴の分散を解決するローカルアーカイブ「Anamnesis」公開、全プラットフォームの対話を横断検索・一元管理可能に",
+        "summary": "「Anamnesis」は、ChatGPTやClaudeなど複数のAIサービスに散らばるチャット履歴を、ローカル環境で一元管理・アーカイブできるオープンソースツールだ。 各プラットフォームのデータをローカルに集約し、強力なベクトル検索機能を活用することで、利用するAIエージェントを問わず過去の対話内容を即座に再発見できる。 異なるサービスを頻繁に切り替えて開発を行うエンジニアにとって、コンテキストを維持したまま過去の知見を再利用するための極めて強力な基盤となる。"
+      },
+      "en": {
+        "title": "Anamnesis launches as a local archive for AI chats, enabling unified search and persistent history across fragmented LLM platforms",
+        "summary": "Anamnesis has emerged as an essential open-source utility for power users juggling multiple AI platforms like ChatGPT and Claude, solving the issue of fragmented chat histories by centralizing data into a secure local archive. By aggregating conversation logs locally and implementing vector-based search, the tool allows builders to surface past technical insights regardless of which agent originally generated the response. For developers who switch between LLMs throughout the workday, this creates a persistent, searchable knowledge base that prevents valuable context from disappearing into the silos of different providers. It effectively bridges the gap between disparate AI services, ensuring that previous debugging efforts and project architectures remain accessible for future iteration rather than being buried in proprietary, platform-specific histories."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-18T12:32:39.399Z"
+  },
+  {
+    "id": "art-1795005151660-to66k",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/dandy_quoll1027/n/n0e97e2461734",
+    "published_at": "2026-11-18T11:53:44.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336077716/rectangle_large_type_2_2490725ff1757a940c2d5f3aeb2779d3.jpg?fit=bounds&quality=85&width=1280",
+    "title_ja": "ChatGPT開発での「指示ミス」を激減させる秘策：AIに過去の作業ログを再読させるだけでプロンプト依存から脱却する手法",
+    "summary_ja": "本業の傍らで自動売買システムを開発する著者が、ChatGPTへの細かい指示を減らしつつ実装精度を高める手法を公開した。 過去の開発記録（ログ）を次のプロンプトでAI自身に読み込ませることで、その場しのぎの対話に頼らず、一貫性のある作業継続を実現している。 AIへの指示依存を脱却したい個人開発者にとって、対話履歴を「外部メモリ」として活用するこのアプローチは非常に有効だ。",
+    "translations": {
+      "ja": {
+        "title": "ChatGPT開発での「指示ミス」を激減させる秘策：AIに過去の作業ログを再読させるだけでプロンプト依存から脱却する手法",
+        "summary": "本業の傍らで自動売買システムを開発する著者が、ChatGPTへの細かい指示を減らしつつ実装精度を高める手法を公開した。 過去の開発記録（ログ）を次のプロンプトでAI自身に読み込ませることで、その場しのぎの対話に頼らず、一貫性のある作業継続を実現している。 AIへの指示依存を脱却したい個人開発者にとって、対話履歴を「外部メモリ」として活用するこのアプローチは非常に有効だ。"
+      },
+      "en": {
+        "title": "Reducing AI Coding Errors: Why Feeding ChatGPT Its Own Previous Development Logs Drastically Improves Output Consistency and Reliability",
+        "summary": "A developer building automated trading systems has found a highly effective workflow to reduce coding errors by feeding ChatGPT its own previous development logs instead of relying on continuous, ad-hoc conversational prompting. By forcing the model to re-examine the historical context of the project before executing new tasks, the author significantly improved implementation accuracy while simplifying the instructions required. This method essentially treats past chat sessions as an external, reliable memory buffer, allowing the AI to maintain state without user intervention. For solo developers struggling with model hallucinations or instruction drift in long-term projects, this strategy of grounding current work in previous logs serves as a crucial tactical shift to keep AI-driven development stable and repeatable."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-18T12:32:31.660Z"
+  },
+  {
+    "id": "art-1795005143085-ovdpe",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/anago__/items/838f546923c46ce77528",
+    "published_at": "2026-11-18T12:30:06.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzU4Mjc3JTJGcHJvZmlsZS1pbWFnZXMlMkYxNjc2MTc1MDE0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0zNzk1NDYzMjE4NDMyMTBiNzk2NGQ4MzA0OTJlNGM0NA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6f6e907aa5301745e1f77ccf8f8320d2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElOENCYWNrbG9nJUUzJTgxJUFCJUU2JTlCJUI4JUUzJTgxJThGJUUzJTgxJTlGJUUzJTgxJUIzJUU1JTg4JUE1JUUzJTgxJUFFQUklRTMlODElOEMlRTMlODMlQUMlRTMlODMlOTMlRTMlODMlQTUlRTMlODMlQkMlRTMlODElOTklRTMlODIlOEIlRTQlQkIlOTUlRTclQjUlODQlRTMlODElQkYlRTMlODIlOTIlRTQlQkQlOUMlRTMlODElQTMlRTMlODElOUYlRTMlODAlODIxNzUlRTUlOUIlOUUlRTUlOUIlOUUlRTMlODElOTclRTMlODElQTYlRTYlQUUlOEIlRTMlODElQTMlRTMlODElOUYlRTclQjclOUElRTUlQkMlOTUlRTMlODElOEQlRTMlODElQUUlRTUlOUYlQkElRTYlQkElOTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1hYWVlMDRiM2VkM2U0MjdjNjllN2JlOWU4NmViMWMwOA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhbmFnb19fJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YzQ0MmRhMmVmY2Y2YjRhMThlYmU1ODVlOWZiYjFhZjc&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=d2c28e69f7e497e08101397f0c352a1e",
+    "title_ja": "AIがBacklogに書く内容を別のAIが自動レビューする仕組みを開発。175回の試行で見えた「自動レビュー」と「人間が介入すべきポイント」の境界線",
+    "summary_ja": "BacklogへのAI投稿を別のAIが即座にレビューするワークフローを1か月運用し、175回の実行と819件の指摘を分析した。 重要度の高い指摘は74件で、多くは軽微な表現修正だったが、AI同士の検証でも本質的な誤りを見抜く可能性が示された。 すべてをAIに任せるのではなく、人間が介入すべき境界線を「重要度」で定義し、コストと精度のバランスを取る運用こそが、実務でAIを活用する際の賢い自動化戦略と言える。",
+    "translations": {
+      "ja": {
+        "title": "AIがBacklogに書く内容を別のAIが自動レビューする仕組みを開発。175回の試行で見えた「自動レビュー」と「人間が介入すべきポイント」の境界線",
+        "summary": "BacklogへのAI投稿を別のAIが即座にレビューするワークフローを1か月運用し、175回の実行と819件の指摘を分析した。 重要度の高い指摘は74件で、多くは軽微な表現修正だったが、AI同士の検証でも本質的な誤りを見抜く可能性が示された。 すべてをAIに任せるのではなく、人間が介入すべき境界線を「重要度」で定義し、コストと精度のバランスを取る運用こそが、実務でAIを活用する際の賢い自動化戦略と言える。"
+      },
+      "en": {
+        "title": "Building an AI-on-AI Review System for Backlog: Lessons Learned from 175 Automated Workflows and 819 Feedback Points",
+        "summary": "The author developed an automated workflow where a secondary AI model reviews every Backlog post generated by an initial AI, running the system for one month. Across 175 trials, the review bot flagged 819 points, though only 74 were deemed high priority. While most flagged items were stylistic preferences, the process successfully caught genuine errors that would have slipped through. This experiment highlights the necessity of drawing a clear line between stylistic feedback and critical logic verification. For builders implementing agentic workflows, the lesson is clear: don't automate blindly. Instead, define rigorous \"importance thresholds\" to ensure humans intervene only on meaningful issues, effectively balancing operational costs with required output quality for production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-18T12:32:23.085Z"
+  },
+  {
     "id": "art-1795004255362-4u24s",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -11820,33 +11924,6 @@
     "created_at": "2026-11-17T06:02:27.891Z"
   },
   {
-    "id": "art-1794895314337-006eh",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tmss/n/nb743a24d0f04",
-    "published_at": "2026-11-17T06:01:00.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/337197794/rectangle_large_type_2_fb2231d76817d7ce0d8c81fb1bab016b.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発で「短期間で結果を出す人」と「努力が空回りする人」の決定的な差とは？正しい戦略と継続の仕組み化を徹底解説",
-    "summary_ja": "副業や個人開発において、短時間で大きな成果を上げる人と、長時間作業しても芽が出ない人の間には明確な差が存在する。 その違いは単なる才能や作業量ではなく、市場のニーズと自身の提供価値を一致させる「正しい努力の方向性」を理解しているかにある。 多くの開発者が陥る「ツール探し」や「完璧主義」といった罠を回避し、仮説検証を高速で回す戦略的アプローチこそが、個人開発を成功へ導く鍵となる。 自身の立ち位置を客観視し、仕組みを構築する重要性を説く。",
-    "translations": {
-      "ja": {
-        "title": "個人開発で「短期間で結果を出す人」と「努力が空回りする人」の決定的な差とは？正しい戦略と継続の仕組み化を徹底解説",
-        "summary": "副業や個人開発において、短時間で大きな成果を上げる人と、長時間作業しても芽が出ない人の間には明確な差が存在する。 その違いは単なる才能や作業量ではなく、市場のニーズと自身の提供価値を一致させる「正しい努力の方向性」を理解しているかにある。 多くの開発者が陥る「ツール探し」や「完璧主義」といった罠を回避し、仮説検証を高速で回す戦略的アプローチこそが、個人開発を成功へ導く鍵となる。 自身の立ち位置を客観視し、仕組みを構築する重要性を説く。"
-      },
-      "en": {
-        "title": "The Definitive Gap Between Rapid Success and Wasted Effort in Indie Development: Strategies for Moving Beyond Busywork",
-        "summary": "In the world of side projects and indie development, there is a stark divide between those who achieve significant results quickly and those who toil endlessly without traction. This article argues that the difference is rarely talent or sheer hours worked, but rather the ability to align effort with genuine market demand. Many developers fall into the trap of endless tool-hopping or perfectionism, confusing activity with progress. The core lesson here is to shift away from unoptimized grind toward a strategic framework: testing hypotheses rapidly and validating value early. For builders, the takeaway is clear: success requires treating development like a product cycle—constantly measuring feedback loops—rather than assuming that more hours at the keyboard will inevitably produce growth."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-17T06:01:54.337Z"
-  },
-  {
     "id": "art-1794894428640-1zkyu",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -13236,32 +13313,6 @@
     "created_at": "2026-11-17T01:46:56.549Z"
   },
   {
-    "id": "art-1794879144622-htd85",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/chooser/items/ccf0e2c4863a17cd65ad",
-    "published_at": "2026-11-17T01:26:16.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFtYXpvbmF3cy5jb20lMkYwJTJGMTk2NjElMkZwcm9maWxlLWltYWdlcyUyRjE0NzM2ODI3ODI_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTliNjU2NTM1YTAzNDhkMDc2MzEwOGM4YTIyNDRlNzY4%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkY5MGVmZTA0Mzc3NDA2ZjM3ZjgzN2IxZjhkNGZiYWE5ZTRhNmFiMDMzJTJGb3JpZ2luYWwuanBnJTNGMTc4NTQxMTQyNT9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1iMzYzNDAwZTI3ZWMxYzI4YWNiM2ZhMDRkOGU3YWQ2Mw%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dbc9080d8ae944e8921a1e77d7773825f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklMjAlRTclQTQlQkUlRTUlOTMlQTElRTMlODElQUIlRTMlODMlQTElRTMlODMlQkMlRTMlODMlQUIlRTMlODIlOTIlRTQlQkIlQkIlRTMlODElOUIlRTMlODElQTYlRTMlODAlODElRTUlOEYlOTclRTQlQkYlQTElRTclQUUlQjElRTMlODIlOTIlMjAwJTIwJUUzJTgxJUFCJUUzJTgxJTk5JUUzJTgyJThCJUUzJTgxJUJFJUUzJTgxJUE3JTIwJUUyJTk0JTgwJUUyJTk0JTgwJTIwJUU2JTg4JUJCJUUzJTgxJTlCJUUzJTgyJThCJUU2JTkzJThEJUU0JUJEJTlDJUUzJTgxJUFGJUU4JTg3JUFBJUU1JThCJTk1JUUzJTgwJTgxJUU2JTg4JUJCJUUzJTgxJTlCJUUzJTgxJUFBJUUzJTgxJTg0JUU2JTkzJThEJUU0JUJEJTlDJUUzJTgxJUEwJUUzJTgxJTkxJUU2JTg5JUJGJUU4JUFBJThEJUUzJTgxJUFCJUUzJTgxJTk3JUUzJTgxJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YzQ3MjkyODk1YTNjZDA3ZDY4MWYwZWJlNTZhNTBiZjU&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBjaG9vc2VyJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MWQzYzQ4NWUyYzczZjM0OWU0MzE2OWI0Mzg5NmRlNTc&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=RWFydGhMaW5rIE5ldHdvcmsgKOOCouODvOOCueODquODs-OCr-ODjeODg-ODiOODr-ODvOOCryk&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=af441a77d2309cab97401f92564987c6",
-    "title_ja": "AI社員でメール受信箱を「ゼロ」にする自動化運用術――「戻せる操作」は全自動、「戻せない操作」のみ人間が承認する設計の全貌",
-    "summary_ja": "EarthLink Networkの上原正吉氏は、AI社員を活用して24時間体制でメール処理を自動化し、受信箱を常に空にする運用を実践している。 ポイントは「戻せる操作」と「戻せない操作」の明確な切り分けだ。 前者はAIに完全自動化させ、後者のみ人間に承認確認を求める設計にすることで、逐次介入の負荷を劇的に削減している。 単にAIに任せるのではなく、失敗時のリカバリーコストを設計の基盤に据えることが、実務でAI自動化を定着させるための鍵である。",
-    "translations": {
-      "ja": {
-        "title": "AI社員でメール受信箱を「ゼロ」にする自動化運用術――「戻せる操作」は全自動、「戻せない操作」のみ人間が承認する設計の全貌",
-        "summary": "EarthLink Networkの上原正吉氏は、AI社員を活用して24時間体制でメール処理を自動化し、受信箱を常に空にする運用を実践している。 ポイントは「戻せる操作」と「戻せない操作」の明確な切り分けだ。 前者はAIに完全自動化させ、後者のみ人間に承認確認を求める設計にすることで、逐次介入の負荷を劇的に削減している。 単にAIに任せるのではなく、失敗時のリカバリーコストを設計の基盤に据えることが、実務でAI自動化を定着させるための鍵である。"
-      },
-      "en": {
-        "title": "How Masayoshi Uehara Built an AI-Driven Email Inbox Zero System Where Humans Only Approve Irreversible Actions",
-        "summary": "EarthLink Network’s Masayoshi Uehara details how he achieved a perpetual \"Inbox Zero\" state by deploying AI agents to process email communications 24/7 without constant human oversight. The core architecture relies on a strict operational boundary: any action that is reversible—such as categorization or routine responses—is handled entirely by the AI, while high-stakes, irreversible decisions require explicit human approval. This design pattern significantly reduces human friction while maintaining control over business operations. For builders looking to automate workflows, the lesson is clear: don't aim for total autonomy immediately. Instead, map out where you can implement safe \"undo\" paths, enabling the AI to act decisively while preserving your final oversight only for mission-critical steps."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-17T01:32:24.622Z"
-  },
-  {
     "id": "art-1794879132399-xi08l",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -14390,32 +14441,6 @@
       "開発"
     ],
     "created_at": "2026-11-16T21:46:59.037Z"
-  },
-  {
-    "id": "art-1794864764508-c2tdl",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.frbsf.org/research-and-insights/publications/economic-letter/2026/11/connecting-stock-market-to-labor-market-during-ai-boom/",
-    "published_at": "2026-11-16T21:20:24.000Z",
-    "og_image_url": "https://www.frbsf.org/wp-content/uploads/carousel_ER_EL_Connecting-Stock-Market-to-Labor-Market-During-the-AI-Boom_1116.jpg",
-    "title_ja": "サンフランシスコ連銀が分析：AIブームにおける株式市場と労働市場の相関関係と、将来的な労働需要への影響",
-    "summary_ja": "サンフランシスコ連邦準備銀行は、AIブームが株式市場の評価額と実体経済の労働市場に与える影響についての調査結果を公開した。 AI関連企業の株価急騰が期待先行である一方、労働市場におけるスキル需要の変化は限定的であり、現時点では劇的な雇用置換には至っていないと指摘する。 AI技術が長期的な生産性向上に寄与するかどうかは、資本投入と労働の代替または補完関係のバランスに依存する。",
-    "translations": {
-      "ja": {
-        "title": "サンフランシスコ連銀が分析：AIブームにおける株式市場と労働市場の相関関係と、将来的な労働需要への影響",
-        "summary": "サンフランシスコ連邦準備銀行は、AIブームが株式市場の評価額と実体経済の労働市場に与える影響についての調査結果を公開した。 AI関連企業の株価急騰が期待先行である一方、労働市場におけるスキル需要の変化は限定的であり、現時点では劇的な雇用置換には至っていないと指摘する。 AI技術が長期的な生産性向上に寄与するかどうかは、資本投入と労働の代替または補完関係のバランスに依存する。"
-      },
-      "en": {
-        "title": "San Francisco Fed analyzes the disconnect between stock market valuations and real-world labor demand during the AI boom",
-        "summary": "The Federal Reserve Bank of San Francisco has released a detailed analysis regarding the correlation between the current AI stock market rally and the actual labor market. While equity valuations for AI-linked firms have surged due to massive growth expectations, the research indicates that the transformation in labor demand remains limited, with no evidence yet of widespread displacement. The long-term productivity impact of AI hinges heavily on the delicate balance between capital investment and whether AI complements or replaces human labor. For developers and builders, the takeaway is to distinguish between speculative market enthusiasm and actual industrial implementation. Understanding this gap is crucial when evaluating the long-term ROI of AI-driven tech stacks, as the labor market is slower to shift than capital flows might suggest."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-16T21:32:44.508Z"
   },
   {
     "id": "art-1794864727530-o8l47",
@@ -18907,32 +18932,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-16T03:02:43.398Z"
-  },
-  {
-    "id": "art-1794795399945-aw8yg",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/kentaro36/articles/sakana-chat-namazu-fugu-max",
-    "published_at": "2026-11-16T01:59:15.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--L5SADNYz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Sakana%2520Chat%25E3%2581%25AE2%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2580%258CNamazu%25E3%2580%258D%25E3%2581%25A8%25E3%2580%258CFugu%2520Max%25E3%2580%258D%25E3%2581%25AE%25E9%2581%2595%25E3%2581%2584%25E3%2581%25A8%25E9%2581%25B8%25E3%2581%25B3%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:SeaOtter%2520%2520%2528Kentaro...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUzNjRkZTA1NTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Sakana Chatの「Namazu」と「Fugu Max」を徹底比較、目的に応じた適切なモデルの選び方と使い分けを解説",
-    "summary_ja": "Sakana Chatで選択可能な「Namazu」は日本語特化型の単一モデル、「Fugu Max」はタスクに応じて複数モデルを使い分けるオーケストレーターとして設計されています。 両モデルとも過去の文脈を保持するメモリー機能を活用できますが、処理能力や応答の質に違いがあるため、用途に応じた選択が不可欠です。 開発者やユーザーが自身のタスクに最適なモデルを適切に使い分けることで、より効率的なAIとの対話環境を構築できるでしょう。",
-    "translations": {
-      "ja": {
-        "title": "Sakana Chatの「Namazu」と「Fugu Max」を徹底比較、目的に応じた適切なモデルの選び方と使い分けを解説",
-        "summary": "Sakana Chatで選択可能な「Namazu」は日本語特化型の単一モデル、「Fugu Max」はタスクに応じて複数モデルを使い分けるオーケストレーターとして設計されています。 両モデルとも過去の文脈を保持するメモリー機能を活用できますが、処理能力や応答の質に違いがあるため、用途に応じた選択が不可欠です。 開発者やユーザーが自身のタスクに最適なモデルを適切に使い分けることで、より効率的なAIとの対話環境を構築できるでしょう。"
-      },
-      "en": {
-        "title": "Sakana Chat Models Explained: Navigating the Differences Between the Specialized Namazu and the Orchestrator Fugu Max",
-        "summary": "Sakana Chat offers two distinct LLM experiences: the Namazu model, which is optimized for native Japanese language proficiency, and Fugu Max, a sophisticated orchestrator designed to route queries across multiple specialized models. While both options feature persistent memory capabilities for maintaining conversational context, their underlying architectures serve different needs. Namazu excels in direct, context-aware Japanese interactions, whereas Fugu Max is architected to handle diverse, complex prompts by dynamically switching resources behind the scenes. For power users and developers navigating the platform, selecting the right model is a critical architectural decision; Namazu provides consistent, predictable performance for standard Japanese inputs, while Fugu Max offers superior adaptability for complex tasks. Choosing the correct engine is key to maximizing response quality and computational efficiency within the Sakana ecosystem."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-16T02:16:39.945Z"
   },
   {
     "id": "art-1794793595315-a0t1t",
