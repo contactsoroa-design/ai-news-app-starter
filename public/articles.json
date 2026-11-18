@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1794962813337-dk4u1",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.782",
+    "published_at": "2026-11-18T00:16:03.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawlが最新アップデートv2.11.782をリリース、ウェブスクレイピングとAPI経由の画像処理機能を大幅に強化",
+    "summary_ja": "Firecrawlは最新版v2.11.782を公開し、ウェブスクレイピングにおけるAPI経由の画像処理機能を強化した。 今回の更新では、クローリング時の視覚データの抽出精度が向上し、より複雑なWebサイトからでもLLMが活用しやすい形式でのデータ生成が可能となっている。 Web上のリッチコンテンツをAIのコンテキストとして活用したい開発者にとって、この精度の改善はスクレイピングパイプラインの安定運用に直結する重要なアップデートだ。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawlが最新アップデートv2.11.782をリリース、ウェブスクレイピングとAPI経由の画像処理機能を大幅に強化",
+        "summary": "Firecrawlは最新版v2.11.782を公開し、ウェブスクレイピングにおけるAPI経由の画像処理機能を強化した。 今回の更新では、クローリング時の視覚データの抽出精度が向上し、より複雑なWebサイトからでもLLMが活用しやすい形式でのデータ生成が可能となっている。 Web上のリッチコンテンツをAIのコンテキストとして活用したい開発者にとって、この精度の改善はスクレイピングパイプラインの安定運用に直結する重要なアップデートだ。"
+      },
+      "en": {
+        "title": "Firecrawl Releases v2.11.782 with Enhanced API Image Processing Capabilities for More Reliable Web Data Scraping",
+        "summary": "Firecrawl has officially launched version v2.11.782, introducing specific improvements to its API-driven image processing and overall scraping infrastructure. This update refines the way visual data is extracted during crawls, enabling more robust conversion of complex websites into structured, LLM-ready formats. For developers building RAG pipelines or AI agents that rely on rich web content, these technical refinements ensure cleaner data ingestion and significantly reduce the likelihood of parsing failures on modern, dynamic frontends. By stabilizing the extraction layer, the team is making it easier for builders to feed highly visual web pages directly into multimodal models without building custom pre-processing logic, effectively streamlining the entire data preparation workflow for AI applications."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-18T00:46:53.337Z"
+  },
+  {
+    "id": "art-1794962802737-e7zbo",
+    "source_id": "source-aws-ml",
+    "source_name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/cut-generative-ai-costs-code-for-rules-models-for-judgment/",
+    "published_at": "2026-11-17T21:14:55.000Z",
+    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/17/ML-22259-featured-image.png",
+    "title_ja": "AWSが提唱する生成AIコスト削減術：ルールベース処理とモデル推論の適切な切り分けでAPI料金を最適化する設計手法",
+    "summary_ja": "AWSは生成AIアプリのコスト削減において、すべてのステップでLLMを使わず、ルールベースの処理とモデル推論を適切に切り分ける設計を推奨している。 単純なロジックは決定論的なコードで実装し、判断が必要な部分のみAmazon Bedrockを活用することで、無駄な推論コストを大幅に削減できる。 エンジニアはワークフローを精査し、安価な実装方法がある箇所を特定することが、長期的な開発コスト抑制の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AWSが提唱する生成AIコスト削減術：ルールベース処理とモデル推論の適切な切り分けでAPI料金を最適化する設計手法",
+        "summary": "AWSは生成AIアプリのコスト削減において、すべてのステップでLLMを使わず、ルールベースの処理とモデル推論を適切に切り分ける設計を推奨している。 単純なロジックは決定論的なコードで実装し、判断が必要な部分のみAmazon Bedrockを活用することで、無駄な推論コストを大幅に削減できる。 エンジニアはワークフローを精査し、安価な実装方法がある箇所を特定することが、長期的な開発コスト抑制の鍵となる。"
+      },
+      "en": {
+        "title": "AWS architecture guide: Reduce generative AI costs by prioritizing deterministic code over LLM inference for routine logic",
+        "summary": "AWS published a strategic framework for slashing generative AI infrastructure costs by avoiding unnecessary model calls. The core guidance is to treat large language models as a tool for judgment only, while offloading rule-based logic to standard, deterministic code. By mapping workflows to the right tier—deterministic code for rules, constrained function calls for decisions, and optimized models on Amazon Bedrock for nuanced reasoning—builders can drastically lower API spend. The guide effectively argues that over-relying on LLMs for simple tasks destroys margins; instead, engineers must audit workflow steps to isolate exactly where high-latency, high-cost reasoning is strictly required. For builders scaling AI apps, the takeaway is to ruthlessly replace model calls with code-based validation whenever possible."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-18T00:46:42.737Z"
+  },
+  {
+    "id": "art-1794962796343-ogte3",
+    "source_id": "source-langchain",
+    "source_name": "LangChain / LangGraph Blog",
+    "url": "https://www.langchain.com/blog/how-to-choose-the-right-sandbox-for-your-agent",
+    "published_at": "2026-11-18T00:46:14.000Z",
+    "og_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a2b60bb89294179fd4a62eb_plum-77%20characters%20max.png",
+    "title_ja": "AIエージェントを守るサンドボックス選定指針：LangChainが推奨するマイクロVM・ネットワーク分離・リソース制限の技術構成",
+    "summary_ja": "LangChainは、AIエージェントが外部環境と安全に対話するためのサンドボックス選定基準を公開した。 機密データ保護にはファイルシステム分離と徹底したネットワーク制御が不可欠であり、計算リソースを制限するためにマイクロVMの活用を強く推奨している。 エージェントが自律的にコードを実行する際のセキュリティリスクを最小化し、攻撃の連鎖を物理的に防ぐためのアーキテクチャ設計を習得できる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントを守るサンドボックス選定指針：LangChainが推奨するマイクロVM・ネットワーク分離・リソース制限の技術構成",
+        "summary": "LangChainは、AIエージェントが外部環境と安全に対話するためのサンドボックス選定基準を公開した。 機密データ保護にはファイルシステム分離と徹底したネットワーク制御が不可欠であり、計算リソースを制限するためにマイクロVMの活用を強く推奨している。 エージェントが自律的にコードを実行する際のセキュリティリスクを最小化し、攻撃の連鎖を物理的に防ぐためのアーキテクチャ設計を習得できる。"
+      },
+      "en": {
+        "title": "Choosing the right AI agent sandbox: LangChain’s guide to MicroVMs, filesystem isolation, and strict network security policies",
+        "summary": "LangChain has published a comprehensive guide on selecting secure sandboxes for AI agents, detailing how to effectively insulate environments from external threats. The guidance emphasizes that robust filesystem isolation combined with strict network egress control is non-negotiable for handling sensitive tasks. Crucially, the team strongly advocates for using microVMs as the primary isolation layer to enforce hard resource limits and prevent lateral movement if an agent becomes compromised. For developers building autonomous agents, the core takeaway is that sandbox security cannot be an afterthought; implementing these architectural boundaries early is the only reliable way to execute code safely while minimizing the blast radius of potential exploits in your production agent workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-18T00:46:36.343Z"
+  },
+  {
     "id": "art-1794961952416-axg41",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -33630,34 +33710,6 @@
     "created_at": "2026-11-09T16:01:47.837Z"
   },
   {
-    "id": "art-1794239220886-k0xrk",
-    "source_id": "source-firecrawl",
-    "source_name": "Firecrawl Releases / Blog",
-    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.707",
-    "published_at": "2026-11-09T15:42:14.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
-    "title_ja": "Firecrawl、API向け画像処理エンジン「v2.11.707」をリリース——スクレイピング精度とデータ構造化の効率を大幅強化",
-    "summary_ja": "Firecrawlは最新アップデート「v2.11.707」を公開し、ウェブスクレイピング後のAPI画像処理パイプラインを刷新した。 今回の改善により、複雑なウェブページの視覚情報を高精度に構造化データへ変換できるようになり、大規模なデータ収集タスクにおける読み取りエラーや解析ロスを低減させる。 開発者はこの新しいエンジンを活用することで、AIモデルへの入力データ生成速度と質を向上させ、LLMを用いたエージェント開発においてより信頼性の高いパイプラインを構築可能になる。",
-    "translations": {
-      "ja": {
-        "title": "Firecrawl、API向け画像処理エンジン「v2.11.707」をリリース——スクレイピング精度とデータ構造化の効率を大幅強化",
-        "summary": "Firecrawlは最新アップデート「v2.11.707」を公開し、ウェブスクレイピング後のAPI画像処理パイプラインを刷新した。 今回の改善により、複雑なウェブページの視覚情報を高精度に構造化データへ変換できるようになり、大規模なデータ収集タスクにおける読み取りエラーや解析ロスを低減させる。 開発者はこの新しいエンジンを活用することで、AIモデルへの入力データ生成速度と質を向上させ、LLMを用いたエージェント開発においてより信頼性の高いパイプラインを構築可能になる。"
-      },
-      "en": {
-        "title": "Firecrawl Ships API Image Processing Engine v2.11.707 for More Accurate Web Scraping and Structural Data Extraction",
-        "summary": "Firecrawl just launched version 2.11.707, a critical update to its API-driven image processing engine designed to enhance how web content is scraped and ingested into downstream models. This release specifically targets the fidelity of visual-to-structured data conversion, ensuring that complex page layouts are parsed with significantly higher precision than previous iterations. By reducing parsing errors and data loss during extraction, this engine provides builders with a cleaner, more reliable stream of information for feeding AI agents and LLM-based workflows. For developers relying on Firecrawl for automation, upgrading to this version is essential to maintain consistent ingestion quality and speed, directly translating to more robust performance in real-world agentic applications."
-      }
-    },
-    "tool_tags": [
-      "Firecrawl"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-09T15:47:00.886Z"
-  },
-  {
     "id": "art-1794237416214-nxls9",
     "source_id": "source-elevenlabs",
     "source_name": "ElevenLabs Blog",
@@ -36128,32 +36180,6 @@
       "開発"
     ],
     "created_at": "2026-11-06T17:16:45.410Z"
-  },
-  {
-    "id": "art-1793985398848-gph42",
-    "source_id": "source-aws-ml",
-    "source_name": "AWS Machine Learning Blog",
-    "url": "https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate/",
-    "published_at": "2026-11-06T17:13:13.000Z",
-    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/04/ML-20343-featured-image.png",
-    "title_ja": "AWS、Amazon ECS Fargate上で構築するデータレイク連携用サーバーレスMCPサーバーの設計手法を公開",
-    "summary_ja": "AWSは、Amazon ECS Fargateを活用し、エンタープライズデータレイクへAIエージェントが安全にアクセスするためのサーバーレスMCP（Model Context Protocol）サーバー構築手法を解説した。 データセットの追加はJSONファイルを配置するだけで完結し、個別の統合コード記述は一切不要だ。 データ構造のメタデータ管理を抽象化することで、AIエージェント開発者はデータパイプライン構築の工数を削減し、プロンプトエンジニアリングへ注力できるようになる。",
-    "translations": {
-      "ja": {
-        "title": "AWS、Amazon ECS Fargate上で構築するデータレイク連携用サーバーレスMCPサーバーの設計手法を公開",
-        "summary": "AWSは、Amazon ECS Fargateを活用し、エンタープライズデータレイクへAIエージェントが安全にアクセスするためのサーバーレスMCP（Model Context Protocol）サーバー構築手法を解説した。 データセットの追加はJSONファイルを配置するだけで完結し、個別の統合コード記述は一切不要だ。 データ構造のメタデータ管理を抽象化することで、AIエージェント開発者はデータパイプライン構築の工数を削減し、プロンプトエンジニアリングへ注力できるようになる。"
-      },
-      "en": {
-        "title": "AWS details building a serverless MCP server on Amazon ECS Fargate for secure AI agent data lake access",
-        "summary": "AWS recently outlined a blueprint for deploying a serverless Model Context Protocol (MCP) server on Amazon ECS Fargate, enabling AI agents to securely query enterprise data lakes. The architecture stands out by allowing developers to expose new datasets via simple JSON configuration files, eliminating the need to write custom integration code for every new data source. By centralizing metadata management, this approach drastically lowers the operational overhead of connecting complex backend data to LLMs. For builders designing agentic systems, the key takeaway is that decoupling data access from application logic via protocol standards—like MCP—is the most efficient way to scale AI integrations without constantly updating custom middleware for every backend change."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-06T17:16:38.848Z"
   },
   {
     "id": "art-1793985389297-43xdg",
@@ -49109,33 +49135,6 @@
       "研究"
     ],
     "created_at": "2026-10-29T18:31:24.944Z"
-  },
-  {
-    "id": "art-1793297787021-lw9c2",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/ai/p2l4sggm",
-    "published_at": "2026-10-29T17:54:46.000Z",
-    "og_image_url": null,
-    "title_ja": "AIの「推論モデル」は単純タスクでも最大42倍のコスト増：高性能モデルを使い分ける適材適所の重要性が浮き彫りに",
-    "summary_ja": "AIの推論モデル（Reasoning Models）は複雑な難問には強力だが、既存の軽量モデルで完結する単純なタスクに使用した場合、コストが最大42倍まで跳ね上がることが判明した。 すべてのタスクに最高性能のモデルを適用する「全力投球」はAPIコストの無駄であり、ベンチマークを見てタスクの難易度に応じたモデルの使い分けを設計段階で組み込むことが、収益性を確保する開発者には不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "AIの「推論モデル」は単純タスクでも最大42倍のコスト増：高性能モデルを使い分ける適材適所の重要性が浮き彫りに",
-        "summary": "AIの推論モデル（Reasoning Models）は複雑な難問には強力だが、既存の軽量モデルで完結する単純なタスクに使用した場合、コストが最大42倍まで跳ね上がることが判明した。 すべてのタスクに最高性能のモデルを適用する「全力投球」はAPIコストの無駄であり、ベンチマークを見てタスクの難易度に応じたモデルの使い分けを設計段階で組み込むことが、収益性を確保する開発者には不可欠である。"
-      },
-      "en": {
-        "title": "Reasoning AI models incur up to 42× higher costs on simple tasks, forcing developers to rethink model routing strategies",
-        "summary": "New analysis reveals that using heavy-duty reasoning models—designed for complex problem solving—to handle trivial tasks can result in costs up to 42× higher than necessary. While these models excel at multi-step logic, applying them to straightforward prompts is an inefficient allocation of compute budget, creating massive, preventable spikes in API spending. This disparity highlights that developers must implement dynamic model routing, where simpler, faster models handle routine queries, and expensive reasoning models are reserved strictly for high-complexity use cases. For anyone building on AI APIs, blindly defaulting to the 'best' model is no longer a viable strategy; integrating smart, cost-aware model selection at the design phase is now a core requirement for sustainable product margins."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "コスト・API料金",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-29T18:16:27.021Z"
   },
   {
     "id": "art-1793297005276-zy4bl",
