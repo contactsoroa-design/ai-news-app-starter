@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1794970945961-7k97o",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/ray_9618/articles/macutl-export-hang-lost-wakeup",
+    "published_at": "2026-11-18T00:47:59.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--6YCH81Ho--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%258B%2595%25E7%2594%25BB%25E6%259B%25B8%25E3%2581%258D%25E5%2587%25BA%25E3%2581%2597%25E3%2581%258C44%25E3%2583%2595%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%25A0%25E7%259B%25AE%25E4%25BB%2598%25E8%25BF%2591%25E3%2581%25A7%25E6%25AD%25A2%25E3%2581%25BE%25E3%2582%258B%2520%25E2%2580%2594%2520dylib%2520%25E3%2581%25AE%25E9%259D%2599%25E7%259A%2584%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25AF%25E3%2581%258C%25E7%2594%259F%25E3%2582%2593%25E3%2581%25A0%2520lost%2520wakeup%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%258E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhmNjYxODE3NGUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "MacUtl開発記：動画書き出しが44フレーム目で停止する謎、静的リンクが引き起こした「lost wakeup」問題の真相",
+    "summary_ja": "Rust製の動画編集ソフト「MacUtl」のmacOS移植版において、動画書き出しが常に44フレーム目付近で停止する致命的なバグが発生した。 調査の結果、原因は外部ライブラリのdylibを静的リンクしたことで発生したデッドロック（lost wakeup）にあった。 マルチスレッド処理でライブラリ間の競合が発生し、同期の失敗が停止を招いていた。 開発者はこの教訓から、動的リンクの適切な管理と、クロスプラットフォーム環境におけるOS依存の非同期処理の注意点を学んだ。",
+    "translations": {
+      "ja": {
+        "title": "MacUtl開発記：動画書き出しが44フレーム目で停止する謎、静的リンクが引き起こした「lost wakeup」問題の真相",
+        "summary": "Rust製の動画編集ソフト「MacUtl」のmacOS移植版において、動画書き出しが常に44フレーム目付近で停止する致命的なバグが発生した。 調査の結果、原因は外部ライブラリのdylibを静的リンクしたことで発生したデッドロック（lost wakeup）にあった。 マルチスレッド処理でライブラリ間の競合が発生し、同期の失敗が停止を招いていた。 開発者はこの教訓から、動的リンクの適切な管理と、クロスプラットフォーム環境におけるOS依存の非同期処理の注意点を学んだ。"
+      },
+      "en": {
+        "title": "Debugging MacUtl: How a static-linked dylib triggered a lost wakeup freeze at frame 44 during video export",
+        "summary": "During the macOS port of the Rust-based video editor MacUtl, developers encountered a bizarre bug where video exports consistently stalled at frame 44. Investigation revealed the culprit was a lost wakeup event caused by static linking a dylib, which introduced subtle deadlock conditions in the multithreaded rendering pipeline. The static linking created conflicts in the synchronization primitives, preventing the export threads from waking up correctly once the buffer state changed. This experience highlights the hidden dangers of static linking system libraries across different OS architectures. For independent builders working on low-level graphics or video tools, this case underscores that while AI can accelerate feature development, deep knowledge of OS-specific threading behaviors and linkage dynamics remains essential when debugging elusive, platform-specific race conditions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-18T03:02:25.961Z"
+  },
+  {
+    "id": "art-1794970939228-jmy2s",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.youtube.com/watch?v=MbhZd6s3P34",
+    "published_at": "2026-11-18T02:22:59.000Z",
+    "og_image_url": null,
+    "title_ja": "AI研究所の内部で何が起きているのか──「The Terror Inside the AI Labs」が暴く大手AI企業の安全性と倫理の限界",
+    "summary_ja": "大手AI研究所の内部における安全性への懸念や、急速な技術進化に伴う倫理的な限界を詳細に分析した映像コンテンツが公開された。 大規模モデルの競争が激化する中で、開発プロセスがどのようにリスク管理を疎かにしているのか、その構造的な問題に鋭く切り込んでいる。 AIエンジニアや開発者は、単なる技術的な実装だけでなく、今後直面する規制や安全性のガバナンスが、いかにプロダクトの存続に直結するかを再考すべき時期に来ている。",
+    "translations": {
+      "ja": {
+        "title": "AI研究所の内部で何が起きているのか──「The Terror Inside the AI Labs」が暴く大手AI企業の安全性と倫理の限界",
+        "summary": "大手AI研究所の内部における安全性への懸念や、急速な技術進化に伴う倫理的な限界を詳細に分析した映像コンテンツが公開された。 大規模モデルの競争が激化する中で、開発プロセスがどのようにリスク管理を疎かにしているのか、その構造的な問題に鋭く切り込んでいる。 AIエンジニアや開発者は、単なる技術的な実装だけでなく、今後直面する規制や安全性のガバナンスが、いかにプロダクトの存続に直結するかを再考すべき時期に来ている。"
+      },
+      "en": {
+        "title": "Inside the AI Labs: Investigating the hidden safety, governance, and ethical gaps within major frontier AI organizations",
+        "summary": "This investigative analysis explores the unsettling environment inside major AI labs, highlighting critical lapses in safety protocols and the inherent ethical trade-offs driven by the relentless pace of development. The footage critiques the systemic neglect of risk management in pursuit of model superiority, raising alarms about how current development processes prioritize speed over robust governance. For builders and AI engineers, this serves as a sober reminder that technical capability is only half the battle. As regulatory scrutiny intensifies, those constructing AI systems must realize that failing to embed safety and governance frameworks early is not just an ethical oversight—it is a existential risk to the long-term viability of any major AI product."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-18T03:02:19.228Z"
+  },
+  {
+    "id": "art-1794970929986-80a6b",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/nohanaga/items/d32af11646d3cb755f19",
+    "published_at": "2026-11-18T02:51:26.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNjc0MzQ0JTJGcHJvZmlsZS1pbWFnZXMlMkYxNTk0NzcxNjk1P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0zOTY1ODlhMDU0MGJiNmE1NGZkY2FhZWMwOTI5MGU0MQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df88a88a91919cfa534dad504abc3b69d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwSWduaXRlJTIwMjAyNiUyMCVFOSU4MCU5RiVFNSVBMCVCMSVFMyU4MCU5MU1pY3Jvc29mdCUyMEZvdW5kcnklMjAlRTMlODIlQTIlRTMlODMlODMlRTMlODMlOTclRTMlODMlODclRTMlODMlQkMlRTMlODMlODglRTMlODElQkUlRTMlODElQTglRTMlODIlODElRUYlQkMlODglRTclQjYlOTklRTclQjYlOUElRTclOUElODQlRTYlOTQlQjklRTUlOTYlODQlRTMlODAlODFDb3BpbG90JTIwaGFybmVzcyVFMyU4MCU4MU1pY3IlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz00YWU2YmRlOTcyMzI4Y2E1M2EyNGFlMmNmMGMxZDljYw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBub2hhbmFnYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTBmMDU5NTc2OTA2NzM3ZWMzZTAwN2Y3ZWUxNzcyNjFm&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=2745772114e875172fafc86cca089647",
+    "title_ja": "Microsoft Ignite 2026：AI開発基盤「Microsoft Foundry」発表、GPT-6.2搭載と継続的改善サイクルを強化",
+    "summary_ja": "Microsoft Ignite 2026で発表された「Microsoft Foundry」は、AIエージェントの本番運用におけるライフサイクル管理を刷新する。 新たに導入された「Copilot harness」や「Microsoft IQ」により、運用時のトレースデータと専門家によるフィードバックを統合し、モデルを「GPT-6.2」ベースで継続的に最適化・再学習させる仕組みが構築された。",
+    "translations": {
+      "ja": {
+        "title": "Microsoft Ignite 2026：AI開発基盤「Microsoft Foundry」発表、GPT-6.2搭載と継続的改善サイクルを強化",
+        "summary": "Microsoft Ignite 2026で発表された「Microsoft Foundry」は、AIエージェントの本番運用におけるライフサイクル管理を刷新する。 新たに導入された「Copilot harness」や「Microsoft IQ」により、運用時のトレースデータと専門家によるフィードバックを統合し、モデルを「GPT-6.2」ベースで継続的に最適化・再学習させる仕組みが構築された。"
+      },
+      "en": {
+        "title": "Microsoft Ignite 2026: Microsoft Foundry platform launches with GPT-6.2 integration and automated continuous improvement cycles",
+        "summary": "At Ignite 2026, Microsoft unveiled the Microsoft Foundry platform, fundamentally changing how teams manage the lifecycle of AI agents in production. With new additions like the \"Copilot harness\" and \"Microsoft IQ,\" the platform synthesizes real-world trace data with expert feedback to continuously evaluate, optimize, and retrain models running on the new GPT-6.2 architecture. The platform shifts the paradigm from simple deployment to a closed-loop system where production performance drives model improvement. For builders, this signifies a crucial move toward standardizing data-driven optimization as a core engineering discipline, ensuring that AI agents maintain long-term stability and accuracy through persistent, automated refinement cycles rather than static, one-time development efforts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-18T03:02:09.986Z"
+  },
+  {
+    "id": "art-1794970919381-ojfak",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/nurse_boatai/n/n3339c16b9d71",
+    "published_at": "2026-11-18T03:01:01.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/337542621/rectangle_large_type_2_3678e754e3e00606b8901eba92ab8827.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "競艇予想AIに「根拠解説」を実装して学んだこと—看護師エンジニアが生成AIの推論プロセスを可視化する重要性を語る",
+    "summary_ja": "競艇予想AIの開発を行う看護師エンジニアが、予測結果だけでなく「なぜそう判断したか」を言語化する機能をAIに統合した経緯を共有。 複雑なデータ解析をブラックボックス化させず、ユーザーに対して推論プロセスを明示的に解説する設計の知見を披露した。 AIの精度向上だけでなく、利用者が納得感を持って結果を受け入れるための「説明可能なAI（XAI）」の実装が、専門領域のAI開発においていかに重要かを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "競艇予想AIに「根拠解説」を実装して学んだこと—看護師エンジニアが生成AIの推論プロセスを可視化する重要性を語る",
+        "summary": "競艇予想AIの開発を行う看護師エンジニアが、予測結果だけでなく「なぜそう判断したか」を言語化する機能をAIに統合した経緯を共有。 複雑なデータ解析をブラックボックス化させず、ユーザーに対して推論プロセスを明示的に解説する設計の知見を披露した。 AIの精度向上だけでなく、利用者が納得感を持って結果を受け入れるための「説明可能なAI（XAI）」の実装が、専門領域のAI開発においていかに重要かを示唆している。"
+      },
+      "en": {
+        "title": "Nurse-Developer Integrates Reasoning Explanations Into Boat Racing AI, Highlighting the Critical Need for Interpretable AI Logic",
+        "summary": "A nurse-turned-developer who builds boat racing prediction models has integrated natural language generation to articulate the reasoning behind every specific prediction. Instead of treating the model as a black-box scoring engine, the developer utilized this implementation to force the system to explicitly document the logic behind its outputs. The project reveals a vital insight for niche AI creators: providing clear, explainable reasoning is often just as valuable to users as raw prediction accuracy. For builders working on specialized domain agents, the lesson is that adopting \"Explainable AI\" (XAI) practices fosters user trust and helps developers debug their own decision-making processes, ultimately transforming how end-users interpret and act on automated data analytics."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-18T03:01:59.382Z"
+  },
+  {
     "id": "art-1794970030126-uoxgr",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -13773,33 +13879,6 @@
     "created_at": "2026-11-16T15:32:30.055Z"
   },
   {
-    "id": "art-1794843131198-talp4",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/pokekasudazo/n/n5dd4738c96fb",
-    "published_at": "2026-11-16T15:31:19.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/664c60418277965ab9c612873eff9c0bef43eb7d.png",
-    "title_ja": "コードの84%をAIが生成：個人開発で「Claude Code」と「Codex」を使いこなし5か月で2,159コミットを実現した極意",
-    "summary_ja": "個人開発者がポケカ在庫マップ「ダウジングマシン」を構築し、5か月半で2,159コミットのうち84%をAI生成した事例。 人間は仕様決定と検証に集中し、Claude Codeに実装を、Codexに調査・レビューを任せる分業体制を確立した。 重要なのはAIに「過去の失敗」を学習させることで、リポジトリ内のCLAUDE.mdに独自の手順や罠を蓄積し、同じミスを防ぐナレッジ管理が開発効率を飛躍的に高める鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "コードの84%をAIが生成：個人開発で「Claude Code」と「Codex」を使いこなし5か月で2,159コミットを実現した極意",
-        "summary": "個人開発者がポケカ在庫マップ「ダウジングマシン」を構築し、5か月半で2,159コミットのうち84%をAI生成した事例。 人間は仕様決定と検証に集中し、Claude Codeに実装を、Codexに調査・レビューを任せる分業体制を確立した。 重要なのはAIに「過去の失敗」を学習させることで、リポジトリ内のCLAUDE.mdに独自の手順や罠を蓄積し、同じミスを防ぐナレッジ管理が開発効率を飛躍的に高める鍵となる。"
-      },
-      "en": {
-        "title": "Building with 84% AI code: How a solo developer shipped 2,159 commits using Claude Code and Codex",
-        "summary": "A solo developer building a Pokémon card stock mapping tool successfully automated 84% of their codebase, totaling 2,159 commits in five months, by orchestrating a specialized workflow between Claude Code and Codex. The developer shifted their role from writing syntax to acting as a product manager—defining features, validating results, and making final deployment decisions. To overcome AI’s tendency to repeat mistakes, they maintained a dedicated 'CLAUDE.md' file that functions as an institutional memory, documenting obscure bugs and build pitfalls for the AI to reference. By offloading implementation and unit testing to LLMs while treating them as an evolving team member with documented constraints, they dramatically scaled output and maintained stability in a complex production environment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "アップデート"
-    ],
-    "created_at": "2026-11-16T15:32:11.198Z"
-  },
-  {
     "id": "art-1794843111624-v094u",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -15047,58 +15126,6 @@
       "開発"
     ],
     "created_at": "2026-11-16T11:32:27.837Z"
-  },
-  {
-    "id": "art-1794828735910-whhst",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.youtube.com/watch?v=Mnhq6v_dvE4",
-    "published_at": "2026-11-16T08:31:14.000Z",
-    "og_image_url": null,
-    "title_ja": "AIは科学を発展させられるか？自律的な仮説立案から実験実行まで、最新のAIエージェントによる科学研究の限界と可能性を検証する",
-    "summary_ja": "AIは単なるテキスト生成ツールから、仮説の立案や実験の自動実行を行う科学的エージェントへと進化を遂げようとしている。 しかし、AIが生成する回答の真実性や、既存の知識を超えた「真の発見」が可能かどうかは依然として議論の対象だ。 科学の民主化を進める上で、AIが単なる知識の要約に留まらず、未知の領域を開拓するパートナーとなれるかが今後の開発における最大の分岐点となる。",
-    "translations": {
-      "ja": {
-        "title": "AIは科学を発展させられるか？自律的な仮説立案から実験実行まで、最新のAIエージェントによる科学研究の限界と可能性を検証する",
-        "summary": "AIは単なるテキスト生成ツールから、仮説の立案や実験の自動実行を行う科学的エージェントへと進化を遂げようとしている。 しかし、AIが生成する回答の真実性や、既存の知識を超えた「真の発見」が可能かどうかは依然として議論の対象だ。 科学の民主化を進める上で、AIが単なる知識の要約に留まらず、未知の領域を開拓するパートナーとなれるかが今後の開発における最大の分岐点となる。"
-      },
-      "en": {
-        "title": "Can AI Perform Autonomous Scientific Research? Examining the Evolving Capabilities of AI Agents in Hypothesis Generation and Lab Experimentation",
-        "summary": "AI systems are rapidly evolving from passive text generators into autonomous agents capable of formulating scientific hypotheses and automating experimental workflows. While this shift promises to accelerate research throughput, experts remain divided on whether these models can genuinely transcend existing data to make \"true\" scientific discoveries or if they are merely sophisticated synthesizers of prior literature. The central challenge for developers is ensuring verifiable accuracy in generated insights, as AI must move beyond summarizing facts to reliably exploring unknown domains. For those building in the research space, the ultimate goal is determining if AI can act as a true partner in discovery rather than just an efficient clerk for managing and structuring existing scientific knowledge."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-16T11:32:15.910Z"
-  },
-  {
-    "id": "art-1794828722890-5orsf",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/anago__/items/2e4565725254fd13861d",
-    "published_at": "2026-11-16T11:25:05.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzU4Mjc3JTJGcHJvZmlsZS1pbWFnZXMlMkYxNjc2MTc1MDE0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0zNzk1NDYzMjE4NDMyMTBiNzk2NGQ4MzA0OTJlNGM0NA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6f6e907aa5301745e1f77ccf8f8320d2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJUUzJTgxJUFFJUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTg5JUUzJTgzJUFDJUUzJTgzJTkzJUUzJTgzJUE1JUUzJTgzJUJDJUUzJTgyJUI5JUUzJTgyJUFEJUUzJTgzJUFCJUUzJTgyJTkyJUU4JTg3JUFBJUU1JThCJTk1JUU1JUFFJTlGJUU4JUExJThDJUUzJTgxJUFCJUUzJTgxJTk3JUUzJTgxJTlGJUUzJTgyJTg5JUUzJTgwJTgxJUU1JThGJThEJUU1JUJGJTlDJUUzJTgxJUFFJUUzJTgxJUFBJUUzJTgxJTg0JUU2JThDJTg3JUU2JTkxJTk4JUUzJTgxJThDMjAlMjUlRTMlODElOEIlRTMlODIlODk0NiUyNSVFMyU4MSVBQiVFNSVBMiU5NyVFMyU4MSU4OCVFMyU4MSU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWQ4NDExZDY5YzFiOGI2NGRjM2EyYjc0NjU0NzcyZjY2&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhbmFnb19fJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YzQ0MmRhMmVmY2Y2YjRhMThlYmU1ODVlOWZiYjFhZjc&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=f3352709b36f89d6a1362c366e99de9f",
-    "title_ja": "Claudeのコードレビュー自動化で判明した「指摘無視」の課題：手動レビューと自動化運用の半年間で得られた教訓",
-    "summary_ja": "PRレビュー用スキルを半年間運用し、手動レビューから定時自動化へ移行した結果、開発者の反応がなかった指摘の割合が20%から46%へと倍増した。 ツールが自動的に指摘を投げるだけでは、文脈に沿わないコード修正提案は軽視されやすいことが浮き彫りになった。 エンジニアは、闇雲な自動レビューよりも、開発者が自ら確認・修正したくなる「対話」を生む仕組み作りを優先すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "Claudeのコードレビュー自動化で判明した「指摘無視」の課題：手動レビューと自動化運用の半年間で得られた教訓",
-        "summary": "PRレビュー用スキルを半年間運用し、手動レビューから定時自動化へ移行した結果、開発者の反応がなかった指摘の割合が20%から46%へと倍増した。 ツールが自動的に指摘を投げるだけでは、文脈に沿わないコード修正提案は軽視されやすいことが浮き彫りになった。 エンジニアは、闇雲な自動レビューよりも、開発者が自ら確認・修正したくなる「対話」を生む仕組み作りを優先すべきだ。"
-      },
-      "en": {
-        "title": "Automating Claude code reviews reveals sharp uptick in ignored feedback from 20% to 46% across six months",
-        "summary": "After six months of refining PR review skills with Claude, moving from manual triggers to scheduled automation caused the rate of ignored feedback to surge from 20% to 46%. This shift highlights a critical friction point: when code suggestions become purely automated, they often lack the situational awareness needed to be actionable, causing developers to dismiss the output. Mere automation does not improve quality if it creates noise that developers eventually tune out. For builders integrating AI into CI/CD, the data proves that simply generating comments is insufficient. The focus must shift toward engineering interactions that developers find valuable enough to actually adopt, rather than treating code review as a high-volume output task that ignores human engagement dynamics."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-16T11:32:02.890Z"
   },
   {
     "id": "art-1794828713357-fcha2",
@@ -18275,32 +18302,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-15T16:32:45.981Z"
-  },
-  {
-    "id": "art-1794758547864-w1j8l",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/shimodata/articles/powerbi-budget-vs-actual-dashboard",
-    "published_at": "2026-11-15T15:05:02.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--zgW9k4pD--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Power%2520BI%25E3%2581%25A7%25E4%25BA%2588%25E5%25AE%259F%25E7%25AE%25A1%25E7%2590%2586%25E3%2583%2580%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%2520%25E2%2580%2595%2520%25E3%2580%258C%25E5%25A3%25B2%25E3%2582%258C%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25E3%2581%25AB%25E5%2584%25B2%25E3%2581%258B%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D%25E3%2582%2592%25E6%2595%25B0%25E5%25AD%2597%25E3%2581%25A7%25E5%2588%2586%25E8%25A7%25A3%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:shimo%2540%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E6%2588%25A6%25E7%2595%25A5%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRmYmNkOGNhZmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Power BIで構築する「予実管理ダッシュボード」――売上と利益の乖離要因をDAXで徹底分析し、投資対効果を可視化する手法",
-    "summary_ja": "年商約30億円の生活雑貨チェーンを想定し、Power BI（DAX/Power Query）を用いて予算と実績を管理するダッシュボードを開発した。 売上は好調だが利益が出ない「構造的な課題」を、部門別PLの推移から特定する設計を採用。 PBIP形式によるGitHub管理を導入しており、単に数値を並べるだけでなく、費用増加が将来的な利益回収につながっているかをKPIで検証する手法を解説する。 ビジネスの意思決定をデータ主導で支えるための実戦的なBI構築術だ。",
-    "translations": {
-      "ja": {
-        "title": "Power BIで構築する「予実管理ダッシュボード」――売上と利益の乖離要因をDAXで徹底分析し、投資対効果を可視化する手法",
-        "summary": "年商約30億円の生活雑貨チェーンを想定し、Power BI（DAX/Power Query）を用いて予算と実績を管理するダッシュボードを開発した。 売上は好調だが利益が出ない「構造的な課題」を、部門別PLの推移から特定する設計を採用。 PBIP形式によるGitHub管理を導入しており、単に数値を並べるだけでなく、費用増加が将来的な利益回収につながっているかをKPIで検証する手法を解説する。 ビジネスの意思決定をデータ主導で支えるための実戦的なBI構築術だ。"
-      },
-      "en": {
-        "title": "Building a Power BI Budget vs. Actual Dashboard to Audit Profitability Gaps and Quantify ROI",
-        "summary": "This project features a Power BI dashboard designed to track budgets versus actuals for a hypothetical 3 billion yen annual revenue retail chain. By leveraging DAX and Power Query to process departmental P&L statements, the developer provides a clear framework to diagnose why strong sales figures might not translate into net profit. The implementation utilizes the PBIP file format for version control on GitHub, ensuring data reproducibility. Beyond simple reporting, the dashboard identifies specific cost drivers and evaluates whether increased expenses are generating positive returns. For builders analyzing business health, this demonstrates how to move beyond static charts to build an analytical tool that validates investment efficiency and highlights structural profit bottlenecks in financial data."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-15T16:02:27.864Z"
   },
   {
     "id": "art-1794750399341-4tfrj",
