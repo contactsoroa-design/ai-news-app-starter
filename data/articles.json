@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1794989821369-ozuiq",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/a1221/articles/sql-dialect-conversion-without-parser",
+    "published_at": "2026-11-18T02:23:55.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--_uwvLnP3--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:SQL%25E6%2596%25B9%25E8%25A8%2580%25E5%25A4%2589%25E6%258F%259B%25E3%2582%2592%25E3%2580%2581%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25B5%25E3%2583%25BC%25E3%2581%25AA%25E3%2581%2597%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2582%25E6%2596%2587%25E5%25AD%2597%25E5%2588%2597%25E3%2582%2592%25E5%2585%2588%25E3%2581%25AB%25E9%259A%25A0%25E3%2581%2599%25E3%2581%25AE%25E3%2581%258C%25E8%2582%259D%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devtoolkits.app%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZkY2RlMmQ0ZDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "SQL方言変換ツールをパーサーなしで実装、正規表現でMySQL・Postgres等の差異を吸収する安全な設計手法",
+    "summary_ja": "MySQL、PostgreSQL、SQLite、SQL Server間のSQL方言差を吸収するツールを、完全なパーサーを使わず正規表現ベースで実装する手法が公開された。 キモは、変換前に文字列やコメントを一時的に隠す前処理にある。 複雑な構文解析を避けつつ「安全に変換できる部分のみ修正し、残りは理由付きで警告する」という方針を取ることで、クライアントサイドでも高速かつ軽量に動作する実用的なコンバータを実現した。",
+    "translations": {
+      "ja": {
+        "title": "SQL方言変換ツールをパーサーなしで実装、正規表現でMySQL・Postgres等の差異を吸収する安全な設計手法",
+        "summary": "MySQL、PostgreSQL、SQLite、SQL Server間のSQL方言差を吸収するツールを、完全なパーサーを使わず正規表現ベースで実装する手法が公開された。 キモは、変換前に文字列やコメントを一時的に隠す前処理にある。 複雑な構文解析を避けつつ「安全に変換できる部分のみ修正し、残りは理由付きで警告する」という方針を取ることで、クライアントサイドでも高速かつ軽量に動作する実用的なコンバータを実現した。"
+      },
+      "en": {
+        "title": "Building a cross-dialect SQL converter without a full parser: leveraging regex and string masking for safe, performant transformations",
+        "summary": "A developer successfully built a cross-dialect SQL converter supporting MySQL, PostgreSQL, SQLite, and SQL Server without using a heavy, traditional SQL parser. Instead of full AST parsing, the implementation relies on regular expression replacement, with a critical pre-processing step that masks string literals and comments to avoid accidental corruption. By adopting a 'fix only what is safe, flag the rest' philosophy, the tool effectively handles key syntax differences like LIMIT versus TOP or AUTO_INCREMENT versus SERIAL within the browser. The approach proves that for specific developer tooling, you do not need complex parsing overhead to achieve robust, high-performance dialect translation; isolating literals and comments first creates a surprisingly reliable foundation for simple, lightweight SQL refactoring."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-18T08:17:01.369Z"
+  },
+  {
+    "id": "art-1794989812349-szqnl",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/satoshi_yoneda/articles/moe-cache-cpu-share",
+    "published_at": "2026-11-18T03:44:39.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xv0qWeUk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:llama.cpp%25E3%2581%25AE%25E6%2596%25B0%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%25A7%25E5%25BC%25A9%25E7%25B4%259A%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2582%2592%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%259D%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%25B1%25B3%25E7%2594%25B0%2520%25E8%2581%25A1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjVhX1JNNGdTalJreWxMekJNckoyTnFoa3VXMjMybF9qSHlxMEtBVmdHR2RrTUNWVT1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ローカル推論エンジン「llama.cpp」v1.0が登場、新機能「--moe-cache-cpu-share」で巨大モデルの実行効率が大幅に向上",
+    "summary_ja": "ローカルLLM推論のデファクトスタンダード「llama.cpp」がメジャーバージョン1.0へ到達した。 注目すべき新機能「--moe-cache-cpu-share」は、Mixture of Experts（MoE）モデルの推論においてキャッシュのCPU共有を最適化し、これまでVRAM容量の制約でローカル動作が困難だった巨大モデルを、より効率的に実行可能にするものだ。",
+    "translations": {
+      "ja": {
+        "title": "ローカル推論エンジン「llama.cpp」v1.0が登場、新機能「--moe-cache-cpu-share」で巨大モデルの実行効率が大幅に向上",
+        "summary": "ローカルLLM推論のデファクトスタンダード「llama.cpp」がメジャーバージョン1.0へ到達した。 注目すべき新機能「--moe-cache-cpu-share」は、Mixture of Experts（MoE）モデルの推論においてキャッシュのCPU共有を最適化し、これまでVRAM容量の制約でローカル動作が困難だった巨大モデルを、より効率的に実行可能にするものだ。"
+      },
+      "en": {
+        "title": "Local inference engine llama.cpp hits v1.0 with new --moe-cache-cpu-share feature for optimizing massive model execution",
+        "summary": "The popular local LLM inference engine llama.cpp has officially reached version 1.0, bringing significant architectural improvements for local builders. A headline addition is the --moe-cache-cpu-share flag, which optimizes how Mixture of Experts (MoE) models utilize system memory by enabling CPU cache sharing. This enhancement allows developers to run massive, parameters-heavy models that were previously bottlenecked by limited VRAM constraints, significantly improving throughput and accessibility for local deployments. For developers aiming to run state-of-the-art models on consumer hardware, this memory management update provides a critical path forward, effectively making high-end inference feasible without requiring enterprise-grade hardware. It is a vital upgrade for anyone building local-first AI applications using the latest, largest available open-source models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-18T08:16:52.349Z"
+  },
+  {
+    "id": "art-1794989803040-hciz5",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/assemblyai",
+    "published_at": "2026-11-18T06:50:37.000Z",
+    "og_image_url": null,
+    "title_ja": "AssemblyAIが最新モデル「STT 3.7」をリリース、ライブ通話やボイスエージェント向けに音声認識精度とリアルタイム性を大幅強化",
+    "summary_ja": "AssemblyAIは音声認識の最新モデル「STT 3.7」を公開した。 ライブ通話やボイスエージェントなど、極めて低いレイテンシが求められる用途向けに最適化されており、録音データだけでなくリアルタイム処理の精度と堅牢性が向上している。 開発者は複雑な音声インターフェース構築において、より自然な対話体験と高いトランスクリプト精度を両立可能となる。",
+    "translations": {
+      "ja": {
+        "title": "AssemblyAIが最新モデル「STT 3.7」をリリース、ライブ通話やボイスエージェント向けに音声認識精度とリアルタイム性を大幅強化",
+        "summary": "AssemblyAIは音声認識の最新モデル「STT 3.7」を公開した。 ライブ通話やボイスエージェントなど、極めて低いレイテンシが求められる用途向けに最適化されており、録音データだけでなくリアルタイム処理の精度と堅牢性が向上している。 開発者は複雑な音声インターフェース構築において、より自然な対話体験と高いトランスクリプト精度を両立可能となる。"
+      },
+      "en": {
+        "title": "AssemblyAI releases STT 3.7 model, boosting accuracy and real-time performance for voice agents and live calls",
+        "summary": "AssemblyAI has released its latest speech-to-text model, STT 3.7, engineered specifically to handle the low-latency demands of live phone calls and interactive voice agents. This update significantly enhances the robustness and precision of real-time transcription, addressing the common friction points where fast-paced, fluid conversations often fail to parse correctly. By prioritizing these performance metrics, the model enables developers to build more reliable and responsive AI voice interfaces. For teams currently shipping voice-driven products, integrating this version is a clear path to improving user retention by minimizing lag and transcription errors during critical interactions. The takeaway is that as voice agents move toward production, choosing specialized, high-accuracy inference engines is becoming the new standard for competitive UX."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "音声",
+      "開発"
+    ],
+    "created_at": "2026-11-18T08:16:43.040Z"
+  },
+  {
+    "id": "art-1794989796360-3ay87",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2611/18/2000003299/",
+    "published_at": "2026-11-18T07:45:00.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/18/2000003299/10012075/2048",
+    "title_ja": "Notion AIのチャット記録流出懸念、米Notion LabsのCISOが日本での対応状況を公表し謝罪──データ保護の透明性はどう担保されるか",
+    "summary_ja": "Notion AIのチャット履歴が意図せず他者に共有された可能性について、米Notion Labsのデイビッド・ツァオCISOが日本市場の対応状況を明かし、陳謝した。 今回の事案は、共有設定や履歴管理の仕様誤解が招いたインシデントであり、ユーザー側には改めて共有範囲の確認が求められる。 生成AIを業務導入する際は、プラットフォーム側のセキュリティ仕様を過信せず、機密情報を入力する前にデータ利用の可否を再確認する慎重な運用設計が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "Notion AIのチャット記録流出懸念、米Notion LabsのCISOが日本での対応状況を公表し謝罪──データ保護の透明性はどう担保されるか",
+        "summary": "Notion AIのチャット履歴が意図せず他者に共有された可能性について、米Notion Labsのデイビッド・ツァオCISOが日本市場の対応状況を明かし、陳謝した。 今回の事案は、共有設定や履歴管理の仕様誤解が招いたインシデントであり、ユーザー側には改めて共有範囲の確認が求められる。 生成AIを業務導入する際は、プラットフォーム側のセキュリティ仕様を過信せず、機密情報を入力する前にデータ利用の可否を再確認する慎重な運用設計が不可欠だ。"
+      },
+      "en": {
+        "title": "Notion CISO addresses AI chat leakage concerns in Japan, apologizing for confusion regarding data privacy and sharing settings",
+        "summary": "Notion Labs CISO David Tsao has addressed concerns regarding potential unauthorized exposure of Notion AI chat logs, offering a formal apology to Japanese users while clarifying the current response situation. The investigation suggests that the incident stemmed from misunderstandings of default sharing configurations and history management rather than a systemic backend breach. This serves as a stark reminder for teams integrating generative AI; simply trusting platform defaults is insufficient. Builders and power users must proactively audit access controls and privacy settings before feeding sensitive corporate data into AI interfaces. Moving forward, the incident highlights why clear, explicit transparency regarding how user data trains models or appears in shared docs remains the top priority for enterprise SaaS adoption."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-18T08:16:36.361Z"
+  },
+  {
     "id": "art-1794988976805-v3e0i",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -18668,32 +18772,6 @@
     "created_at": "2026-11-15T20:50:01.746Z"
   },
   {
-    "id": "art-1794773818200-c6q0j",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/yolow92/articles/f1ab30fba47d93",
-    "published_at": "2026-11-15T18:49:04.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--W2waUfhO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E5%25BD%2593%25E6%2599%2582%25E3%2580%2581%25E4%25BD%2595%25E3%2581%258C%25E7%259C%259F%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%25E3%2581%258B%25E3%2580%258D%25E3%2581%25AB%25E7%25AD%2594%25E3%2581%2588%25E3%2582%258B%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%2591%25E3%2583%25BC%2520%25E2%2580%2594%25E2%2580%2594%2520PageSift%25201.5%25E3%2580%258CLoop%25E3%2580%258D%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25B4%2520%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2581%25E3%2583%25A7%25E3%2582%25A6%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSmJoY1lXZlY5MHpPcGR2V0luQkVDbHNiQ3NkNG9RdnJnejFCODN3QUpWTzVlQ01ON3I9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "スクレイピングの限界を突破する「PageSift 1.5 Loop」——過去のデータ追跡と差分管理を自動化する設計思想",
-    "summary_ja": "PageSift 1.5「Loop」は、Webページから「今」の情報を取得するだけでなく、過去のデータとの比較や差分管理を自動化するために設計された。 単発のスクレイピングでは「昨日から何が変わったか」「過去の特定の時点ではどうだったか」という問いには答えられない。 本アップデートではスケジューラ、差分ストア、再訪記録の概念を統合し、独立した情報源かどうかの判定や過去の価格変動履歴の追跡を容易にした。",
-    "translations": {
-      "ja": {
-        "title": "スクレイピングの限界を突破する「PageSift 1.5 Loop」——過去のデータ追跡と差分管理を自動化する設計思想",
-        "summary": "PageSift 1.5「Loop」は、Webページから「今」の情報を取得するだけでなく、過去のデータとの比較や差分管理を自動化するために設計された。 単発のスクレイピングでは「昨日から何が変わったか」「過去の特定の時点ではどうだったか」という問いには答えられない。 本アップデートではスケジューラ、差分ストア、再訪記録の概念を統合し、独立した情報源かどうかの判定や過去の価格変動履歴の追跡を容易にした。"
-      },
-      "en": {
-        "title": "PageSift 1.5 'Loop' Introduces Time-Series Scraping and Delta Management to Track Web Data Over Time",
-        "summary": "PageSift 1.5 'Loop' evolves beyond simple one-off scraping by addressing a critical limitation: the web usually only returns the 'current' state of a page. To answer questions like 'what changed since yesterday' or 'what was the price last Tuesday,' the tool now integrates a robust scheduler, delta store, and history tracking. By introducing a concept of 'revisiting the same fact,' developers can now distinguish between distinct sources versus syndicated copies and track historical fluctuations automatically. For builders architecting AI research agents or price-monitoring services, this shift from static snapshotting to stateful time-series data management represents a essential pattern for creating reliable, long-running systems that provide meaningful insights rather than just raw, transient text dumps."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-15T20:16:58.200Z"
-  },
-  {
     "id": "art-1794771122654-f9f4o",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -18795,31 +18873,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-15T18:46:59.574Z"
-  },
-  {
-    "id": "art-1794764851610-rzgsq",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/gen_tokunaga/articles/bdf9e8e0faf872",
-    "published_at": "2026-11-15T16:17:47.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--iR-hdCDg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25AA%25E3%2581%258C%25E3%2582%2589%25E9%258D%259B%25E3%2581%2588%25E3%2582%258B%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E5%258A%259B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:gen_tokunaga%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQyNGNkMWMyZjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI生成コードを「自分のもの」にする技術：保守性と安全性を担保する効率的なコードリーディングの実践的アプローチ",
-    "summary_ja": "AI生成コードや他者のコードを効率的に解読し、メンテナンス可能な状態へ引き上げるための実践的な手法が提唱されている。 すべてを網羅的に読むのではなく、アーキテクチャの骨格を把握した上で、保守リスクやセキュリティ脆弱性が潜む箇所を重点的に精査する「構造的読解」が重要だ。 AIが書いたコードであっても、各ロジックを自身の言葉で説明できるレベルまで昇華させることが、プロダクト開発の質を維持する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AI生成コードを「自分のもの」にする技術：保守性と安全性を担保する効率的なコードリーディングの実践的アプローチ",
-        "summary": "AI生成コードや他者のコードを効率的に解読し、メンテナンス可能な状態へ引き上げるための実践的な手法が提唱されている。 すべてを網羅的に読むのではなく、アーキテクチャの骨格を把握した上で、保守リスクやセキュリティ脆弱性が潜む箇所を重点的に精査する「構造的読解」が重要だ。 AIが書いたコードであっても、各ロジックを自身の言葉で説明できるレベルまで昇華させることが、プロダクト開発の質を維持する鍵となる。"
-      },
-      "en": {
-        "title": "Beyond Copy-Paste: How to Efficiently Read and Master AI-Generated Code for Better Maintenance and Security",
-        "summary": "To effectively manage AI-generated code or complex repositories, developers must shift from linear reading to structural analysis. Instead of parsing every single line, successful engineers first map the overall architecture and then surgically audit critical segments prone to security vulnerabilities or maintenance debt. The article argues that the goal is not total mastery of every syntax detail but reaching a level of comprehension where you can confidently explain the logic behind each module. For builders leveraging LLMs, treating AI output as a draft that requires your explicit review—specifically focusing on architecture and edge cases—is the only sustainable way to prevent technical debt from accumulating in your product's core."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-15T17:47:31.610Z"
   },
   {
     "id": "art-1794750399341-4tfrj",
@@ -28303,32 +28356,6 @@
     "created_at": "2026-11-11T11:32:51.715Z"
   },
   {
-    "id": "art-1794395805531-dcwcq",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/mitra-5",
-    "published_at": "2026-11-10T18:52:46.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェントに個人の電話番号への接続権限を付与する「Mitra MCP」が登場、自動通話やメッセージ対応を拡張",
-    "summary_ja": "Mitra MCPは、AIエージェントに対してユーザーの個人の電話番号への直接アクセス権を付与する新たなツールだ。 MCP（Model Context Protocol）を活用することで、AIが電話の着信対応、テキストメッセージの送受信、さらには通話の自動化をセキュアに行えるようになる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントに個人の電話番号への接続権限を付与する「Mitra MCP」が登場、自動通話やメッセージ対応を拡張",
-        "summary": "Mitra MCPは、AIエージェントに対してユーザーの個人の電話番号への直接アクセス権を付与する新たなツールだ。 MCP（Model Context Protocol）を活用することで、AIが電話の着信対応、テキストメッセージの送受信、さらには通話の自動化をセキュアに行えるようになる。"
-      },
-      "en": {
-        "title": "Mitra MCP lets AI agents access your personal phone line to handle calls and messages directly",
-        "summary": "Mitra MCP is a new integration tool that gives AI agents direct access to your personal phone line by utilizing the Model Context Protocol (MCP). By connecting these protocols, agents can now programmatically handle inbound calls, send or receive text messages, and even manage automated call workflows securely. This tool essentially bridges the gap between digital AI reasoning and physical telecommunications infrastructure, allowing developers to extend agent capabilities into real-world voice and SMS communication. For those building personal AI assistants, Mitra MCP provides the critical interface needed to automate telephony, moving agents beyond simple chatbots and into active participants that can manage live communication lines for their users."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-11T11:16:45.531Z"
-  },
-  {
     "id": "art-1794394001151-tzfis",
     "source_id": "source-fireflies",
     "source_name": "Fireflies.ai Blog",
@@ -29368,33 +29395,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T02:16:49.479Z"
-  },
-  {
-    "id": "art-1794362498182-i8okg",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/11/news029.html",
-    "published_at": "2026-11-10T23:00:00.000Z",
-    "og_image_url": "https://image.itmedia.co.jp/ait/articles/2611/11/cover_news029.jpg",
-    "title_ja": "紀陽銀行、社内知識集約で年間4400時間の問い合わせ工数を削減――「必要な情報がすぐ見つかる」検索基盤構築の極意",
-    "summary_ja": "紀陽銀行は、散在していた社内マニュアルや情報を集約する検索基盤を構築し、年間4400時間の問い合わせ工数を削減した。 単なるデータ整理にとどまらず、従業員が自ら疑問を解消できる「検索体験」を再設計したことが成功の鍵だ。 AI導入を検討する企業にとって、ツール選定よりも先に「社内情報の所在を明確化し、誰でもすぐに辿り着ける構造へ整理する」という泥臭い情報整理こそが、DX成功への最短ルートとなる。",
-    "translations": {
-      "ja": {
-        "title": "紀陽銀行、社内知識集約で年間4400時間の問い合わせ工数を削減――「必要な情報がすぐ見つかる」検索基盤構築の極意",
-        "summary": "紀陽銀行は、散在していた社内マニュアルや情報を集約する検索基盤を構築し、年間4400時間の問い合わせ工数を削減した。 単なるデータ整理にとどまらず、従業員が自ら疑問を解消できる「検索体験」を再設計したことが成功の鍵だ。 AI導入を検討する企業にとって、ツール選定よりも先に「社内情報の所在を明確化し、誰でもすぐに辿り着ける構造へ整理する」という泥臭い情報整理こそが、DX成功への最短ルートとなる。"
-      },
-      "en": {
-        "title": "Kiyo Bank slashes internal inquiries by 4,400 hours annually through centralized knowledge base and search redesign",
-        "summary": "Kiyo Bank successfully reduced internal support inquiries by 4,400 hours per year by consolidating fragmented manuals into a unified, searchable knowledge repository. The bank’s approach proves that digital transformation isn't just about deploying tools; it is about re-engineering the search experience so employees can resolve their own questions without escalating them. For companies planning AI implementations, the practical takeaway is clear: before rushing to integrate LLMs, teams must first clean up and structure their internal data silos. Prioritizing clear information architecture and accessibility is the most critical step to reducing operational overhead. If the foundational documentation remains disorganized, even the smartest AI agent will struggle to provide accurate answers to employees."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-11T02:01:38.182Z"
   },
   {
     "id": "art-1794360706128-l70ib",
