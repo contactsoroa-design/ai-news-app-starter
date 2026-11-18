@@ -1,5 +1,89 @@
 [
   {
+    "id": "art-1795025866630-26up3",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/aiu_aiu/articles/0178e8c0d6bef9",
+    "published_at": "2026-11-18T12:26:43.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--TThbNGuG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2586%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25A7%25E3%2580%2581%25E3%2583%25A6%25E3%2583%25BC%25E3%2582%25B6%25E3%2583%25BC%25E3%2581%258C%25E5%25A2%2597%25E3%2581%2588%25E3%2581%25A6%25E3%2582%2582%25E8%25AA%25B2%25E9%2587%2591%25E3%2581%258C%25E5%25A2%2597%25E3%2581%2588%25E3%2581%25AA%25E3%2581%2584%25E6%25A7%258B%25E6%2588%2590%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%2584%25E3%2581%2586%2520%25E3%2581%2582%25E3%2581%2584%25E3%2581%2586%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ViZjRjOTllMjMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発で陥る「ユーザー増＝赤字」の罠を回避せよ：AIサービスで課金総額を固定化するコスト最適化アーキテクチャの全貌",
+    "summary_ja": "個人開発者がAIサービスを拡大する際、最大のリスクはユーザー増に伴うLLM API利用料の爆発だ。 今回紹介するアーキテクチャでは、無料ユーザーの利用分をLLMから切り離し、有料ユーザーのみにAI利用を限定して上限を設けることで、ユーザー数が10倍になってもコストを固定化した。 開発者は成功によるコスト増を恐れず、安心して成長を目指せる設計を早期に導入することが、持続可能な収益化への最短距離となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発で陥る「ユーザー増＝赤字」の罠を回避せよ：AIサービスで課金総額を固定化するコスト最適化アーキテクチャの全貌",
+        "summary": "個人開発者がAIサービスを拡大する際、最大のリスクはユーザー増に伴うLLM API利用料の爆発だ。 今回紹介するアーキテクチャでは、無料ユーザーの利用分をLLMから切り離し、有料ユーザーのみにAI利用を限定して上限を設けることで、ユーザー数が10倍になってもコストを固定化した。 開発者は成功によるコスト増を恐れず、安心して成長を目指せる設計を早期に導入することが、持続可能な収益化への最短距離となる。"
+      },
+      "en": {
+        "title": "Escaping the 'Success Trap': How to architect AI-based personal apps to keep LLM costs predictable as traffic scales",
+        "summary": "For independent builders, the most daunting barrier to scaling an AI product is the potential for API costs to spiral out of control when traffic hits. This technical breakdown explains how to decouple free user traffic from expensive LLM calls, effectively capping infrastructure burn regardless of user growth. By strictly limiting direct AI interaction to paid tiers with usage quotas, the developer ensured that revenue consistently outpaces API overhead, even if the user base grows tenfold. The core takeaway for builders is that you must engineer cost-containment into the architecture from day one; without a tiered consumption model, aggressive growth effectively becomes a financial liability rather than a success metric for your project."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "コスト・API料金",
+      "開発"
+    ],
+    "created_at": "2026-11-18T18:17:46.630Z"
+  },
+  {
+    "id": "art-1795025843160-k0hak",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/inside-the-codex-sandbox",
+    "published_at": "2026-11-18T08:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAIが明かす「Codex」の安全なサンドボックス技術：macOS/Linux/Windows環境でのコード実行と隔離制御の仕組み",
+    "summary_ja": "OpenAIは、Codexが各ユーザーのローカル環境（macOS、Linux、Windows）でコードを安全に実行するためのサンドボックス技術を公開した。 この仕組みは、ファイルシステムへのアクセス制御やネットワーク制限を厳格に適用することで、AIによる意図しないシステム操作を防ぎつつ、柔軟な開発体験を実現している。 セキュアなAI実行環境を構築する開発者にとって、リソースの隔離と制御ポリシーをどのように設計すべきかを学ぶための重要な技術的指針となる。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIが明かす「Codex」の安全なサンドボックス技術：macOS/Linux/Windows環境でのコード実行と隔離制御の仕組み",
+        "summary": "OpenAIは、Codexが各ユーザーのローカル環境（macOS、Linux、Windows）でコードを安全に実行するためのサンドボックス技術を公開した。 この仕組みは、ファイルシステムへのアクセス制御やネットワーク制限を厳格に適用することで、AIによる意図しないシステム操作を防ぎつつ、柔軟な開発体験を実現している。 セキュアなAI実行環境を構築する開発者にとって、リソースの隔離と制御ポリシーをどのように設計すべきかを学ぶための重要な技術的指針となる。"
+      },
+      "en": {
+        "title": "OpenAI explains the security architecture behind the Codex sandbox for running AI code on local machines",
+        "summary": "OpenAI has detailed the inner workings of the Codex sandbox, illustrating how the system safely executes commands across macOS, Linux, and Windows environments. The architecture functions by strictly enforcing filesystem boundaries and network limits, allowing the AI to run code locally without risking unauthorized system access or dangerous side effects. For engineers building agentic workflows or code execution environments, this overview provides a blueprint for balancing execution freedom with hardened security protocols. The takeaway is that robust isolation is not just about blocking access but about building a granular policy layer that defines exactly what an AI agent can touch, which remains the fundamental requirement for any tool capable of running code on a user’s host machine."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-18T18:17:23.160Z"
+  },
+  {
+    "id": "art-1795025836605-phk8p",
+    "source_id": "source-deepmind",
+    "source_name": "Google DeepMind / Gemini",
+    "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+    "published_at": "2026-11-18T18:13:42.000Z",
+    "og_image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_ProjectGenie_Thumbnail_v02.width-1300.png",
+    "title_ja": "Google DeepMindが次世代ワールドモデル「Genie 4」を発表、テキストから対話的2Dゲーム環境を生成する新たなAI技術",
+    "summary_ja": "Google DeepMindは、テキストや画像、スケッチから即座にインタラクティブな2Dゲーム世界を生成する次世代モデル「Genie 4」を公開した。 従来技術を上回る物理の一貫性と生成速度を実現し、ユーザーの操作に応じて環境が動的に反応する点が最大の特徴だ。 ゲーム開発者がAIを活用してプロトタイプ制作を加速させるための強力な基盤となる。 単なる動画生成を超え、アクションが物理的に正しく伝播するシミュレーション能力は、次世代の創造的ツールとして大きな可能性を秘めている。",
+    "translations": {
+      "ja": {
+        "title": "Google DeepMindが次世代ワールドモデル「Genie 4」を発表、テキストから対話的2Dゲーム環境を生成する新たなAI技術",
+        "summary": "Google DeepMindは、テキストや画像、スケッチから即座にインタラクティブな2Dゲーム世界を生成する次世代モデル「Genie 4」を公開した。 従来技術を上回る物理の一貫性と生成速度を実現し、ユーザーの操作に応じて環境が動的に反応する点が最大の特徴だ。 ゲーム開発者がAIを活用してプロトタイプ制作を加速させるための強力な基盤となる。 単なる動画生成を超え、アクションが物理的に正しく伝播するシミュレーション能力は、次世代の創造的ツールとして大きな可能性を秘めている。"
+      },
+      "en": {
+        "title": "Google DeepMind releases Genie 4, a next-gen world model capable of generating interactive 2D game environments from text",
+        "summary": "Google DeepMind has launched Genie 4, an advanced world model that generates playable, interactive 2D game environments directly from text, images, or simple sketches. Unlike standard video generation models, Genie 4 maintains high physical consistency and responds dynamically to user inputs, allowing the environment to evolve based on gameplay actions. This breakthrough offers game developers a powerful mechanism to accelerate prototyping, turning static ideas into fully functional simulation sandboxes instantly. By pushing beyond passive video output to active physics-based interaction, Genie 4 sets a new standard for generative creative tools. For builders exploring AI-driven game design, this represents a significant shift from simple asset generation to complex, real-time world construction that developers can immediately manipulate and test."
+      }
+    },
+    "tool_tags": [
+      "Gemini"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "画像生成"
+    ],
+    "created_at": "2026-11-18T18:17:16.606Z"
+  },
+  {
     "id": "art-1795024952118-hikld",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -19034,32 +19118,6 @@
     "created_at": "2026-11-16T07:31:46.871Z"
   },
   {
-    "id": "art-1794813423635-pfsx7",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/itaraiguma/articles/faulthandler-stall-watchdog-segfault",
-    "published_at": "2026-11-15T22:09:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--t-PYJTkg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E6%25AD%25A2%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E6%259B%25B8%25E3%2581%258D%25E5%2587%25BA%25E3%2581%259B%25E3%2582%258B%25E3%2580%258D%25E3%2581%258B%25E3%2582%2589%25E9%2581%25B8%25E3%2582%2593%25E3%2581%25A0%25E5%2581%259C%25E6%25AD%25A2%25E6%25A4%259C%25E7%259F%25A5%25E3%2581%258C%25E3%2580%2581%25E9%25AB%2598%25E8%25B2%25A0%25E8%258D%25B7%25E3%2581%25AE%25E5%25A4%259C%25E3%2581%25AB%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC%25E3%2582%2592%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlZmMxMmY2MTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発のバックエンドで導入した「停止検知」が仇に、高負荷時にワーカーを誤判定で強制終了させていた技術的な教訓",
-    "summary_ja": "個人開発サービス「DevPick」で、FastAPIのワーカーが頻繁に再起動する問題の調査用に導入した「停止検知」機能が、逆に障害の原因となっていた。 スワップ発生で数秒処理が止まっただけのワーカーを、親プロセスが過敏に反応して殺していたことが判明。 運用監視の自動化において、負荷変動とメモリ逼迫の境界線を見誤ると、かえってシステムの可用性を損なうという教訓である。",
-    "translations": {
-      "ja": {
-        "title": "個人開発のバックエンドで導入した「停止検知」が仇に、高負荷時にワーカーを誤判定で強制終了させていた技術的な教訓",
-        "summary": "個人開発サービス「DevPick」で、FastAPIのワーカーが頻繁に再起動する問題の調査用に導入した「停止検知」機能が、逆に障害の原因となっていた。 スワップ発生で数秒処理が止まっただけのワーカーを、親プロセスが過敏に反応して殺していたことが判明。 運用監視の自動化において、負荷変動とメモリ逼迫の境界線を見誤ると、かえってシステムの可用性を損なうという教訓である。"
-      },
-      "en": {
-        "title": "Why my custom worker-stuck detection for FastAPI became the primary cause of service instability under heavy load",
-        "summary": "While debugging frequent worker restarts for my personal project, DevPick, I implemented a custom diagnostic script to detect and kill hung FastAPI workers by logging their stack traces. This tool eventually backfired during a high-traffic spike; the script misinterpreted normal memory swapping—which caused temporary latency—as a complete crash, causing the parent process to repeatedly terminate healthy workers. The core lesson here is that automated remediation tools, if too aggressive, can become self-inflicted denial-of-service triggers. When building on resource-constrained infrastructure like a 1GB VPS, you must ensure your observability or auto-recovery logic distinguishes between process-level deadlocks and transient OS-level I/O waits to avoid killing workers that are simply under heavy memory pressure."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-16T07:17:03.635Z"
-  },
-  {
     "id": "art-1794812505501-v0zcl",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -19219,33 +19277,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-16T06:17:25.256Z"
-  },
-  {
-    "id": "art-1794809838936-75tva",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/nobuhiko/articles/houjin-with-claude-code",
-    "published_at": "2026-11-16T00:56:38.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ZxuszS1m--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25B2%25E3%2581%25A8%25E3%2582%258A%25E5%2590%2588%25E5%2590%258C%25E4%25BC%259A%25E7%25A4%25BE%25E3%2582%2592%2520Claude%2520Code%2520%25E3%2581%25A8%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2582%25E7%259B%25B8%25E8%25AB%2587%25E3%2581%258B%25E3%2582%2589%25E5%258F%25A3%25E5%25BA%25A7%25E9%2596%258B%25E8%25A8%25AD%25E3%2581%25BE%25E3%2581%25A7%25207%2520%25E9%2580%25B1%25E9%2596%2593%25E3%2581%25AE%25E6%2589%258B%25E9%25A0%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Nobuhiko%2520Kimoto%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2cxQUtiU285cmdzT0ZRT1Fud0NnaEhvTjdKT0VOb05wa1hKLVoteVE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeを活用し「ひとり合同会社」を7週間で設立した全手順――相談から銀行口座開設までのタスクを自動化",
-    "summary_ja": "個人開発者が「Claude Code」を駆使し、合同会社の設立から銀行口座開設までの事務手続きを7週間で完了させた事例。 相談、入力作業、リサーチ、進捗管理をAIに委ねつつ、意思決定と最終承認のみを自分で行うハイブリッド運用が鍵だ。 煩雑なバックオフィス業務をAIエージェントで効率化し、開発者が本来注力すべきプロダクト制作に時間を割くための実践的なモデルといえる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeを活用し「ひとり合同会社」を7週間で設立した全手順――相談から銀行口座開設までのタスクを自動化",
-        "summary": "個人開発者が「Claude Code」を駆使し、合同会社の設立から銀行口座開設までの事務手続きを7週間で完了させた事例。 相談、入力作業、リサーチ、進捗管理をAIに委ねつつ、意思決定と最終承認のみを自分で行うハイブリッド運用が鍵だ。 煩雑なバックオフィス業務をAIエージェントで効率化し、開発者が本来注力すべきプロダクト制作に時間を割くための実践的なモデルといえる。"
-      },
-      "en": {
-        "title": "How an Indie Developer Used Claude Code to Establish a One-Person LLC in Just Seven Weeks",
-        "summary": "A solo developer shares the blueprint for establishing a one-person LLC in seven weeks, relying on Claude Code to handle the heavy lifting. By delegating research, administrative data entry, daily progress tracking, and documentation to an AI agent, the developer kept their hands free for final decisions and approvals. This operational model effectively turns AI into a virtual co-founder for bureaucratic tasks, allowing the builder to maintain focus on their core product portfolio rather than getting bogged down in corporate red tape. For indie creators, the lesson is clear: leverage agentic workflows to automate business entity formation and reclaim valuable time for actual software development and monetization."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-16T06:17:18.936Z"
   },
   {
     "id": "art-1794809820573-mcqgv",
@@ -47656,34 +47687,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-30T18:41:30.868Z"
-  },
-  {
-    "id": "art-1793385684333-3s8wf",
-    "source_id": "source-openai",
-    "source_name": "OpenAI 公式",
-    "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-    "published_at": "2026-10-30T09:30:00.000Z",
-    "og_image_url": null,
-    "title_ja": "OpenAI、Webサイト運営者向けのAI学習制限ガイドラインを発表：共通のrobots.txt信号でクローラー制御を簡素化",
-    "summary_ja": "OpenAIは、Webサイト運営者がAIモデルの学習に使用されるデータを自律的に管理できるよう、共通のrobots.txt信号を導入した。 この標準化されたプロトコルを用いることで、運営者は複数のAIプロバイダーに対し、効率的かつ一括で学習拒否の意思を通知できる。 AI時代の権利管理において、単なるブロックだけでなく、サイトのトラフィックやSEOに配慮しつつ学習プロセスを制御する柔軟な設計思想が重要となっている。",
-    "translations": {
-      "ja": {
-        "title": "OpenAI、Webサイト運営者向けのAI学習制限ガイドラインを発表：共通のrobots.txt信号でクローラー制御を簡素化",
-        "summary": "OpenAIは、Webサイト運営者がAIモデルの学習に使用されるデータを自律的に管理できるよう、共通のrobots.txt信号を導入した。 この標準化されたプロトコルを用いることで、運営者は複数のAIプロバイダーに対し、効率的かつ一括で学習拒否の意思を通知できる。 AI時代の権利管理において、単なるブロックだけでなく、サイトのトラフィックやSEOに配慮しつつ学習プロセスを制御する柔軟な設計思想が重要となっている。"
-      },
-      "en": {
-        "title": "OpenAI adopts standardized robots.txt signal to help website operators manage AI training preferences",
-        "summary": "OpenAI has officially adopted a shared robots.txt signal, empowering website operators to communicate their data usage preferences for AI model training to participating providers through a unified standard. This implementation simplifies the process for site owners, who no longer need to navigate fragmented exclusion protocols for every individual AI bot. By leveraging this standardized signal, developers and site administrators can systematically restrict or allow their content's usage across multiple platforms with greater clarity. For builders and web teams, this highlights a necessary shift toward proactive data governance, proving that managing AI exposure requires more than just reactive blocking; it demands standardized infrastructure to balance content accessibility with the evolving ethical demands of training large-scale generative models."
-      }
-    },
-    "tool_tags": [
-      "ChatGPT"
-    ],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-30T18:41:24.333Z"
   },
   {
     "id": "art-1793384189661-xux95",
