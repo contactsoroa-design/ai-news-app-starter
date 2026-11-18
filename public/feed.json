@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1794970030126-uoxgr",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://phrack.org/issues/73/reflections-on-trusting-ai-a-virus-inside-an-llm_md",
+    "published_at": "2026-11-18T02:24:00.000Z",
+    "og_image_url": "https://phrack.org/images/phrack-new.webp",
+    "title_ja": "LLM内部にウイルスを埋め込む手法の考察：AIの信頼性とセキュリティを脅かすプロンプトインジェクションの最前線",
+    "summary_ja": "LLMのモデル内に悪意ある指示を永続的に埋め込む手法の技術的な考察が注目されている。 従来のインジェクション攻撃と異なり、モデルの重みに直接介入して動作を改変する「AIウイルス」の脅威は、入力検証だけでは防げない新たなセキュリティ課題だ。 開発者は、信頼できないデータソースからの学習やファインチューニングがモデル全体を汚染するリスクを認識し、供給チェーンの安全性を再定義する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "LLM内部にウイルスを埋め込む手法の考察：AIの信頼性とセキュリティを脅かすプロンプトインジェクションの最前線",
+        "summary": "LLMのモデル内に悪意ある指示を永続的に埋め込む手法の技術的な考察が注目されている。 従来のインジェクション攻撃と異なり、モデルの重みに直接介入して動作を改変する「AIウイルス」の脅威は、入力検証だけでは防げない新たなセキュリティ課題だ。 開発者は、信頼できないデータソースからの学習やファインチューニングがモデル全体を汚染するリスクを認識し、供給チェーンの安全性を再定義する必要がある。"
+      },
+      "en": {
+        "title": "Reflections on the feasibility of AI viruses: Can malicious code or persistent instructions be embedded directly inside LLM weights?",
+        "summary": "A new technical analysis explores the theoretical risk of 'AI viruses' where malicious code or deceptive instructions are embedded directly into the weights of an LLM. Unlike traditional prompt injection attacks that rely on user input manipulation during inference, this threat model focuses on injecting payloads during training or fine-tuning, potentially compromising the model's fundamental behavior permanently. This research highlights that as developers integrate more external data into model pipelines, the standard perimeter defense model falls short. Builders must now treat the training pipeline as a critical attack surface, implementing rigorous provenance checks and data sanitization for every dataset. Relying solely on inference-time guardrails is insufficient when the underlying model intelligence itself might already be compromised at the source level."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-18T02:47:10.126Z"
+  },
+  {
+    "id": "art-1794970020869-p3vul",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Ray_T/items/78598353ec1df33f899f",
+    "published_at": "2026-11-18T02:36:51.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZkYmY1YTdiZWQwYjMyYTUyZGRmZTU3Njk4MzhmZWQ5Yz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NDMzOTZmYTBiZDFhZGYwZDg0ZTQxZjUwODQ5ZDkyNzI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6543c93a0e8f82559b68c7833a8dbbfb?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU3JUFDJUFDNCVFNSU5QiU5RSVFMyU4MCU5MSVFMyU4MiVCQyVFMyU4MyVBRCVFMyU4MSU4QiVFMyU4MiU4OSVFNyU5QiVBRSVFNiU4QyU4NyVFMyU4MSU5OSUyMSUyMENDRFYtRiVFNSU5MCU4OCVFNiVBMCVCQyVFMyU4MSVCOCVFMyU4MSVBRSVFOSU4MSU5MyVFRiVCQyU5QUxMTSVFMyU4MSVBRSVFMyU4MSU5NyVFMyU4MSU4RiVFMyU4MSVCRiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWRjMzIxYjQxNTU5NzllODhjNzgxMTA3NDA5YThlZDBl&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBSYXlfVCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWE2NmJiNmI1MDI2ZTQ3NjY5NjAwNmFkZWMzZjZiMzg5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c93087d79d38758421aa0e20c3998f5d",
+    "title_ja": "Anthropic公式資格「CCDV-F」合格を目指す全24回学習ロードマップ：第4回ではLLMの動作原理を基礎から完全網羅",
+    "summary_ja": "Anthropic社が提供する公式資格「Claude Certified Developer – Foundations(CCDV-F)」取得を目指す、全24回の非公式学習シリーズの第4弾。 本稿では試験範囲の核となるLLM（大規模言語モデル）の仕組み、トークンの概念、確率的生成プロセスなどを開発者視点で深掘りする。 公式ガイドの重要項目を実務に落とし込み、理論理解を確実に得点源に変えるための戦略的な学習指針を解説する。",
+    "translations": {
+      "ja": {
+        "title": "Anthropic公式資格「CCDV-F」合格を目指す全24回学習ロードマップ：第4回ではLLMの動作原理を基礎から完全網羅",
+        "summary": "Anthropic社が提供する公式資格「Claude Certified Developer – Foundations(CCDV-F)」取得を目指す、全24回の非公式学習シリーズの第4弾。 本稿では試験範囲の核となるLLM（大規模言語モデル）の仕組み、トークンの概念、確率的生成プロセスなどを開発者視点で深掘りする。 公式ガイドの重要項目を実務に落とし込み、理論理解を確実に得点源に変えるための戦略的な学習指針を解説する。"
+      },
+      "en": {
+        "title": "Mastering the Claude Certified Developer – Foundations Exam: A 24-Part Roadmap Starting with LLM Architecture",
+        "summary": "This is the fourth installment in a comprehensive 24-part unofficial study series designed to help developers pass the Anthropic Certified Developer – Foundations (CCDV-F) exam. This edition focuses exclusively on the mechanics of Large Language Models, covering fundamental concepts like tokenization, probabilistic generation, and architectural design patterns crucial for the exam. By translating official study guides into practical developer insights, the article bridges the gap between abstract theory and the application-level knowledge required for certification. It provides a structured approach to mastering how LLMs operate under the hood, ensuring builders can leverage this foundational understanding to tackle technical questions and effectively implement Claude-based applications with confidence and deeper architectural clarity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-18T02:47:00.869Z"
+  },
+  {
+    "id": "art-1794970014652-5bstu",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/eager_holly1067/n/n50e11f90d71d",
+    "published_at": "2026-11-18T02:46:32.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/337524410/rectangle_large_type_2_de7834ba80b37b1c65ff2305059db967.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "筋トレアプリ「Strive」開発者が語る、個人開発を「根性」ではなく「継続できる仕組み」に変えるための生存戦略",
+    "summary_ja": "個人開発アプリ「Strive」を運営するエンジニアが、開発を挫折せず続けるための「やめたこと」と「続けたこと」を分析した。 反応の薄さや不具合対応に疲弊する中で、根性に頼らず運用フローを「続く形」へと再設計したことが成功の鍵となった。 技術力よりも継続こそが最大の難関であり、開発者がモチベーションを維持しプロダクトを存続させるための実践的な運用戦略を提示している。",
+    "translations": {
+      "ja": {
+        "title": "筋トレアプリ「Strive」開発者が語る、個人開発を「根性」ではなく「継続できる仕組み」に変えるための生存戦略",
+        "summary": "個人開発アプリ「Strive」を運営するエンジニアが、開発を挫折せず続けるための「やめたこと」と「続けたこと」を分析した。 反応の薄さや不具合対応に疲弊する中で、根性に頼らず運用フローを「続く形」へと再設計したことが成功の鍵となった。 技術力よりも継続こそが最大の難関であり、開発者がモチベーションを維持しプロダクトを存続させるための実践的な運用戦略を提示している。"
+      },
+      "en": {
+        "title": "How the builder of fitness app 'Strive' pivoted from willpower to sustainable systems to keep shipping",
+        "summary": "The solo engineer behind the fitness app 'Strive' details the candid reality of product maintenance, specifically which habits they cut and which processes they kept to avoid burnout. While building is inherently enjoyable, the quiet launches, endless bug reports, and unrequested feature cycles often halt progress for solo creators. The core lesson is that successful development isn't about grit; it's about re-engineering the workflow into a sustainable, repeatable shape. For builders struggling to maintain momentum, the takeaway is clear: stop relying on raw willpower and start auditing your routine. By simplifying the feedback loop and focusing on sustainable operational patterns, developers can keep shipping even when immediate user traction remains elusive, ensuring the product actually survives in the long run."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-18T02:46:54.652Z"
+  },
+  {
     "id": "art-1794969133296-6yotv",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -13746,32 +13826,6 @@
     "created_at": "2026-11-16T15:31:51.624Z"
   },
   {
-    "id": "art-1794842236175-mf7le",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ttomohisa/n/ndf89446fd93e",
-    "published_at": "2026-11-16T15:16:04.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329450075/rectangle_large_type_2_9a04844bf4d88936f764d8398afe700e.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ブラウザだけで動作する「画像回答隠し・暗記シート生成ツール」を開発、学習効率化アプリの100個制作プロジェクト#92",
-    "summary_ja": "学習効率を最大化する「画像暗記シート生成ツール」をブラウザ単体で実装。 回答部分を画像としてマスキングし、クリックでめくって確認できる仕組みをシンプルに構築した。 複雑なバックエンドなしでフロントエンドの技術のみで完結させる設計は、個人開発におけるプロトタイプ制作の極意だ。 学習コンテンツのデジタル化や自作ツールの価値について考えるきっかけとして機能するだろう。",
-    "translations": {
-      "ja": {
-        "title": "ブラウザだけで動作する「画像回答隠し・暗記シート生成ツール」を開発、学習効率化アプリの100個制作プロジェクト#92",
-        "summary": "学習効率を最大化する「画像暗記シート生成ツール」をブラウザ単体で実装。 回答部分を画像としてマスキングし、クリックでめくって確認できる仕組みをシンプルに構築した。 複雑なバックエンドなしでフロントエンドの技術のみで完結させる設計は、個人開発におけるプロトタイプ制作の極意だ。 学習コンテンツのデジタル化や自作ツールの価値について考えるきっかけとして機能するだろう。"
-      },
-      "en": {
-        "title": "I built a browser-based flashcard tool that hides image answers for efficient study: Browser Tool #92",
-        "summary": "For project number 92 in my quest to build 100 browser-based tools, I developed a simple yet effective flashcard application that hides image answers until clicked. This tool runs entirely within the browser, masking specific regions of an image so learners can test themselves and reveal the content instantly. By focusing on a pure frontend architecture without a complex backend, I demonstrated how to rapidly ship functional productivity utilities. The implementation highlights the value of building lightweight, accessible tools that solve specific user problems without technical bloat. For independent developers, this project serves as a practical reminder that solving immediate, tangible learning challenges is often the best path to shipping consistent, high-value side projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-16T15:17:16.175Z"
-  },
-  {
     "id": "art-1794842225836-bld1f",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -15152,33 +15206,6 @@
     "created_at": "2026-11-16T11:16:49.860Z"
   },
   {
-    "id": "art-1794826945096-yo37q",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://gcore.com/blog/ai-offensive-security-endpoints-artex-pentagi-cairn",
-    "published_at": "2026-11-16T09:26:57.000Z",
-    "og_image_url": "https://assets.gcore.pro/site-media/uploads/gcore_artex_2026_cybersecurity_threat_research_report_f239c5e20f.png",
-    "title_ja": "インターネット上に公開された攻撃的セキュリティAIエンドポイント1,698件を特定、無防備なAIモデルが抱えるリスクを調査",
-    "summary_ja": "セキュリティ企業Gcoreの調査により、インターネット経由で誰でもアクセス可能な攻撃的セキュリティAIエンドポイントが1,698件特定された。 ArtexやPentagiといったAIツールが認証なしで公開されており、攻撃者に悪用されるリスクが極めて高い。 開発者はAPIを公開する際、必ず認証を実装し、意図しない外部からのアクセスを遮断する基本設定を徹底する必要がある。 モデルを「公開したまま」にすることは、攻撃者へ攻撃手段を貸し出す行為と同義だ。",
-    "translations": {
-      "ja": {
-        "title": "インターネット上に公開された攻撃的セキュリティAIエンドポイント1,698件を特定、無防備なAIモデルが抱えるリスクを調査",
-        "summary": "セキュリティ企業Gcoreの調査により、インターネット経由で誰でもアクセス可能な攻撃的セキュリティAIエンドポイントが1,698件特定された。 ArtexやPentagiといったAIツールが認証なしで公開されており、攻撃者に悪用されるリスクが極めて高い。 開発者はAPIを公開する際、必ず認証を実装し、意図しない外部からのアクセスを遮断する基本設定を徹底する必要がある。 モデルを「公開したまま」にすることは、攻撃者へ攻撃手段を貸し出す行為と同義だ。"
-      },
-      "en": {
-        "title": "Researchers identify 1,698 internet-accessible offensive-security AI endpoints, revealing massive risks for exposed models",
-        "summary": "A new security audit by Gcore uncovered 1,698 AI offensive-security endpoints, such as Artex and Pentagi, left visible on the open internet without any authentication layers. These exposed tools provide attackers with ready-made capabilities for automated exploitation, turning benign research projects into potential weapons for malicious actors. The investigation highlights a dangerous trend where AI agents designed for pentesting are deployed without basic safeguards, effectively offering free tooling to cybercriminals. For developers deploying specialized AI models, the primary takeaway is that network-level access control and robust authentication are not optional—they are mandatory. Leaving an offensive security model internet-facing without protection is equivalent to handing a fully armed exploitation kit directly to an adversary."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-16T11:02:25.096Z"
-  },
-  {
     "id": "art-1794826936335-pe6kc",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -15203,32 +15230,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-16T11:02:16.335Z"
-  },
-  {
-    "id": "art-1794826925766-irowl",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/masa-miya/items/637759fef6d60e1eafcb",
-    "published_at": "2026-11-16T09:52:41.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTA4NTkzJTJGNDJmZWI5ZjY4NTEyYmU5YjFmZWE1OWViNmM2ZjJjODhjZWNjYjE4NiUyRnhfbGFyZ2UucG5nJTNGMTc5MjA2MDY0Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MjJjN2MxZGU5MTI2Mjc5M2FkNzIxMGVlODUyYTM2ZjY%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZiZDg5ZDYxNmIzYzQ1OGQ0ZTQ0NTA1OWNjN2E5MzExNmQ4NTMwMDg2JTJGb3JpZ2luYWwuanBnJTNGMTc2NDA2MDQ0Nz9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz01Y2MxNWQzM2QxZTYzMWUyMDQyOWI3MzMxNDgyOTI1Ng%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Df324cdf9eea221e6535c4266c55f7c44?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgzJUIzJUUzJTgzJTk3JUUzJTgzJTg4JUUzJTgyJUE4JUUzJTgzJUIzJUUzJTgyJUI4JUUzJTgzJThCJUUzJTgyJUEyJUUzJTgzJUFBJUUzJTgzJUIzJUUzJTgyJUIwJUUzJTgxJUFCJUUzJTgxJUE0JUUzJTgxJTg0JUUzJTgxJUE2JUUzJTgwJTkwJUU2JTk2JUIwJUU4JUE2JThGJUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTg3JUUzJTgyJUEzJUUzJTgzJUIzJUUzJTgyJUIwJUU3JUI3JUE4JUUzJTgwJTkxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NTQ3OGI2MWE2YjgyODRiN2FkY2VkN2ViNjBiMDc0OGQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYXNhLW1peWEmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1kOWEyYjBlYjAzYWVlMjNkZjM5MzA5MGFlNzU3NzYwNw&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-QUNTSFU&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=c40d7c05eb54b42b628d65067d8fd730",
-    "title_ja": "AIによる新規コーディングを最適化するプロンプト設計術：曖昧さを排除し、複雑な実装要件を正確にコードへ変換する具体的アプローチ",
-    "summary_ja": "AIを用いた新規コーディングにおいて、精度を高めるためのプロンプト設計手法を詳解する。 要件の曖昧さを排除し、コンテキストを構造化して与えることで、AIが出力するコードの品質と堅牢性は劇的に向上する。 単に機能実装を指示するのではなく、設計思想やコーディング規約をプロンプトに組み込むことで、手戻りのない効率的な開発プロセスを構築できることが鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AIによる新規コーディングを最適化するプロンプト設計術：曖昧さを排除し、複雑な実装要件を正確にコードへ変換する具体的アプローチ",
-        "summary": "AIを用いた新規コーディングにおいて、精度を高めるためのプロンプト設計手法を詳解する。 要件の曖昧さを排除し、コンテキストを構造化して与えることで、AIが出力するコードの品質と堅牢性は劇的に向上する。 単に機能実装を指示するのではなく、設計思想やコーディング規約をプロンプトに組み込むことで、手戻りのない効率的な開発プロセスを構築できることが鍵となる。"
-      },
-      "en": {
-        "title": "Mastering prompt engineering for new coding: Strategies to reduce ambiguity and generate production-ready code with higher structural integrity",
-        "summary": "This piece outlines advanced prompt engineering strategies specifically for new coding tasks, moving beyond generic requests to ensure high-accuracy output. By eliminating ambiguous instructions and forcing structured context into the prompt, developers can drastically improve the quality and robustness of AI-generated code. The article emphasizes that merely asking for function implementations is insufficient; instead, explicitly integrating design philosophy, architectural constraints, and specific coding standards directly into the prompt is the key to preventing hallucinations and minimizing rework. For builders leveraging AI to accelerate development, the takeaway is that a well-architected prompt functions as a technical specification, turning AI from a simple code generator into a consistent, reliable development partner."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-16T11:02:05.766Z"
   },
   {
     "id": "art-1794826022478-fj4as",
