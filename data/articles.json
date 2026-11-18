@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1795010550900-vrrqm",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/omimaru/articles/ee99a4e60619f3",
+    "published_at": "2026-11-18T13:48:17.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hSloyTog--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C26%25E6%2597%25A5%25E7%25B7%25A0%25E3%2582%2581%25E3%2583%25BB25%25E6%2597%25A5%25E7%25B7%25A0%25E3%2582%2581%25E3%2580%258D%25E3%2581%25AE%25E7%25B5%25A6%25E4%25B8%258E%25E6%259C%259F%25E9%2596%2593%25E3%2582%2592%25E3%2580%2581%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25A7%25E5%25A3%258A%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AA%25E3%2583%259F%25E3%2583%259E%25E3%2583%25AB%2520%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2U5YjRjNmJhYjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "飲食店向け給与計算システムの難所「26日締め・翌月25日払い」の計算ロジックを、テスト駆動で堅牢に実装する方法を解説",
+    "summary_ja": "個人開発の飲食店向け給与計算システムにおける「毎月26日から翌月25日」という独特な給与期間の計算ロジック実装について解説。 年またぎやうるう年などのエッジケースでバグを生まないよう、計算コアの境界条件を明確にし、徹底したテストケースを定義することで堅牢性を確保した。 複雑な期間計算を扱うシステムでは、仕様の曖昧さを排除し、テストコードで挙動を担保する設計が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "飲食店向け給与計算システムの難所「26日締め・翌月25日払い」の計算ロジックを、テスト駆動で堅牢に実装する方法を解説",
+        "summary": "個人開発の飲食店向け給与計算システムにおける「毎月26日から翌月25日」という独特な給与期間の計算ロジック実装について解説。 年またぎやうるう年などのエッジケースでバグを生まないよう、計算コアの境界条件を明確にし、徹底したテストケースを定義することで堅牢性を確保した。 複雑な期間計算を扱うシステムでは、仕様の曖昧さを排除し、テストコードで挙動を担保する設計が不可欠となる。"
+      },
+      "en": {
+        "title": "Architecting robust salary calculation logic for non-standard pay periods using test-driven development for restaurant management systems",
+        "summary": "This technical breakdown explores implementing a complex salary calculation engine for a restaurant management system, specifically handling the non-standard \"26th to the 25th of the following month\" pay period. Handling year-end rollovers and leap years presents significant edge-case risks that can break simple payroll logic if not properly isolated. The author demonstrates how to ensure system robustness by defining clear boundary conditions for the calculation core and applying rigorous, test-driven development to validate every scenario. For builders developing similar business-critical internal tools, the key takeaway is that relying on ad-hoc date manipulation is a trap; strictly formalizing period definitions and encoding them into the test suite is the only way to avoid silent, costly calculation failures."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-18T14:02:30.900Z"
+  },
+  {
+    "id": "art-1795010544241-4dbfz",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.sas.upenn.edu/~jesusfv/Peer_Review.pdf",
+    "published_at": "2026-11-18T13:51:03.000Z",
+    "og_image_url": null,
+    "title_ja": "学術出版の信頼を揺るがすAI生成論文の波、査読システム崩壊を防ぐために求められる新たな検証フレームワークとは",
+    "summary_ja": "急速に普及するAI生成テキストが学術界の査読プロセスに与える影響について、ペンシルベニア大学の研究者が詳細な分析を公開した。 AIによる大量の論文投稿が既存の査読システムの限界を突き、研究の信頼性を損なうリスクを指摘している。 今後はAIの検知技術に依存するだけでなく、学術コミュニティ全体で査読の質を担保する新しい評価基準と透明性の確保が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "学術出版の信頼を揺るがすAI生成論文の波、査読システム崩壊を防ぐために求められる新たな検証フレームワークとは",
+        "summary": "急速に普及するAI生成テキストが学術界の査読プロセスに与える影響について、ペンシルベニア大学の研究者が詳細な分析を公開した。 AIによる大量の論文投稿が既存の査読システムの限界を突き、研究の信頼性を損なうリスクを指摘している。 今後はAIの検知技術に依存するだけでなく、学術コミュニティ全体で査読の質を担保する新しい評価基準と透明性の確保が不可欠となる。"
+      },
+      "en": {
+        "title": "Can peer review survive the surge of AI-generated academic papers? Examining the systemic threat to scientific publishing reliability",
+        "summary": "Researchers at the University of Pennsylvania published a critical analysis on how rapidly proliferating AI-generated text threatens to overwhelm and destabilize the academic peer review process. The paper argues that an unchecked influx of AI-authored submissions creates an existential risk to scientific integrity by exhausting human reviewer capacity and eroding confidence in published findings. Simply relying on AI detection software is insufficient for the long term; the academic community must fundamentally restructure its verification frameworks to prioritize transparency and new evaluation standards. For those building and deploying AI tools within research workflows, the takeaway is clear: the future of academic legitimacy depends on integrating robust, verifiable provenance mechanisms rather than treating AI outputs as indistinguishable from human-authored scholarship."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-18T14:02:24.241Z"
+  },
+  {
+    "id": "art-1795010511350-clfnq",
+    "source_id": "source-publickey",
+    "source_name": "Publickey",
+    "url": "https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html",
+    "published_at": "2026-11-18T15:58:32.000Z",
+    "og_image_url": "https://www.publickey1.jp/fbico_pblky.png",
+    "title_ja": "マイクロソフト、AI生成アプリの企業内実行環境「Copilot Managed Runtime」を正式リリース。ガバナンスとセキュリティを標準装備",
+    "summary_ja": "マイクロソフトは年次イベント「Microsoft Ignite 2026」にて、AIが自動生成したアプリケーションを企業環境で安全に実行するための基盤「Copilot Managed Runtime」を正式リリースした。 本ランタイムは、AI生成コードに対するセキュリティポリシーの強制、アクセス制御、監視機能を標準で提供し、開発者がガバナンスを意識せずに安全なAIアプリを運用できる環境を実現する。",
+    "translations": {
+      "ja": {
+        "title": "マイクロソフト、AI生成アプリの企業内実行環境「Copilot Managed Runtime」を正式リリース。ガバナンスとセキュリティを標準装備",
+        "summary": "マイクロソフトは年次イベント「Microsoft Ignite 2026」にて、AIが自動生成したアプリケーションを企業環境で安全に実行するための基盤「Copilot Managed Runtime」を正式リリースした。 本ランタイムは、AI生成コードに対するセキュリティポリシーの強制、アクセス制御、監視機能を標準で提供し、開発者がガバナンスを意識せずに安全なAIアプリを運用できる環境を実現する。"
+      },
+      "en": {
+        "title": "Microsoft Launches Copilot Managed Runtime to Securely Execute AI-Generated Applications within Corporate Environments at Ignite 2026",
+        "summary": "At Microsoft Ignite 2026, Microsoft officially released Copilot Managed Runtime, a specialized platform designed to safely execute AI-generated applications within enterprise ecosystems. The runtime embeds critical security policies, identity access management, and observability features directly into the execution layer, enabling developers to ship AI-driven tools without compromising corporate compliance or internal governance. By abstracting the heavy lifting of security oversight away from the application code, the runtime effectively mitigates the risks associated with shadow AI deployments and unmanaged generated code. For builders targeting the enterprise segment, this signifies a crucial shift where security and governance are increasingly becoming platform-level primitives rather than bolted-on considerations after the application has already been deployed."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-18T14:01:51.350Z"
+  },
+  {
     "id": "art-1795009656302-m57sh",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -13899,32 +13978,6 @@
     "created_at": "2026-11-17T00:31:36.487Z"
   },
   {
-    "id": "art-1794874635278-ccokd",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.cnbc.com/2026/11/16/situational-awareness-aschenbrenner-new-ai-bets.html",
-    "published_at": "2026-11-17T00:04:18.000Z",
-    "og_image_url": "https://image.cnbcfm.com/api/v1/image/108342704-1785438454346-dsc_2664.jpg?v=1785438632&w=1920&h=1080",
-    "title_ja": "元OpenAI研究者Aschenbrenner氏が提唱する「Situational Awareness」、10月のAI市場暴落直前に巨額投資を敢行していた実態",
-    "summary_ja": "元OpenAI研究者で「Situational Awareness」著者のレオポルド・アッシェンブレナー氏が、10月のAI市場暴落直前にAI関連銘柄へ巨額投資を行っていたことが判明した。 同氏の強気なAGI予測は多くの投資家を惹きつけていたが、今回のタイミングはAIへの過度な期待と実際の市場変動の激しさを浮き彫りにした。 ビルダーは著名な識者の「未来予測」と「短期的な市場相場」を明確に切り分け、感情的な投資判断を避ける必要がある。",
-    "translations": {
-      "ja": {
-        "title": "元OpenAI研究者Aschenbrenner氏が提唱する「Situational Awareness」、10月のAI市場暴落直前に巨額投資を敢行していた実態",
-        "summary": "元OpenAI研究者で「Situational Awareness」著者のレオポルド・アッシェンブレナー氏が、10月のAI市場暴落直前にAI関連銘柄へ巨額投資を行っていたことが判明した。 同氏の強気なAGI予測は多くの投資家を惹きつけていたが、今回のタイミングはAIへの過度な期待と実際の市場変動の激しさを浮き彫りにした。 ビルダーは著名な識者の「未来予測」と「短期的な市場相場」を明確に切り分け、感情的な投資判断を避ける必要がある。"
-      },
-      "en": {
-        "title": "Leopold Aschenbrenner’s 'Situational Awareness' fund reportedly made major AI bets just before the October market rout",
-        "summary": "Leopold Aschenbrenner, the former OpenAI researcher and author of the influential \"Situational Awareness\" report, reportedly executed significant investments into AI stocks shortly before the market suffered a major correction in October. While Aschenbrenner’s long-term AGI projections have fueled considerable hype among industry insiders and investors, the timing of these trades underscores a sharp disconnect between speculative, long-horizon narratives and immediate market volatility. For builders and technical founders, this serves as a critical reminder to separate visionary 'future-state' forecasting from short-term financial market realities. Relying solely on high-level macro narratives—even from well-informed sources—can lead to poor risk management when the inevitable market corrections arrive for the broader AI sector."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-17T00:17:15.278Z"
-  },
-  {
     "id": "art-1794874604099-qymmj",
     "source_id": "source-nvidia-ai",
     "source_name": "NVIDIA Generative AI Blog",
@@ -18847,32 +18900,6 @@
       "開発"
     ],
     "created_at": "2026-11-16T04:01:56.514Z"
-  },
-  {
-    "id": "art-1794800825089-dsmps",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/singularity/articles/singularity-society-bootcamp-demo-day",
-    "published_at": "2026-11-16T03:37:14.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ToQnhoUN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25AE%25E3%2583%25A5%25E3%2583%25A9%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2582%25BD%25E3%2582%25B5%25E3%2582%25A4%25E3%2582%25A8%25E3%2583%2586%25E3%2582%25A3%25E3%2581%25AE%25E3%2583%2596%25E3%2583%25BC%25E3%2583%2588%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25B3%25E3%2583%2597%25E3%2581%25A7%25E5%258F%2596%25E3%2582%258A%25E7%25B5%2584%25E3%2582%2593%25E3%2581%25A0TenkaCloud%25E3%2581%25AE%25E7%25B4%25B9%25E4%25BB%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:bull%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZiNjM5MTg4YzEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25AE%25E3%2583%25A5%25E3%2583%25A9%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25BB%25E3%2582%25BD%25E3%2582%25B5%25E3%2582%25A8%25E3%2583%2586%25E3%2582%25A3%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2g2MllRUHZOMXdGR25zMmFxNEpvOWI0VW96UTY4b3NfdlBOOFFqZUE9czk2LWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "OSS「TenkaCloud」開発の軌跡：シンギュラリティソサイエティのブートキャンプで得た技術的知見と4ヶ月間の成長記録",
-    "summary_ja": "シンギュラリティソサイエティ（SS）の第4回ブートキャンプに参加し、OSSプロジェクト「TenkaCloud」を開発した4ヶ月間の振り返り。 AWS GameDayなどの負荷試験環境やISUCONの手法を取り入れ、実践的なインフラ構築に挑戦した。 ブートキャンプでの継続的なフィードバックにより、プロダクトを外に出し続ける開発プロセスがいかに技術的成長とプロジェクトの改善に寄与するかを実証した。",
-    "translations": {
-      "ja": {
-        "title": "OSS「TenkaCloud」開発の軌跡：シンギュラリティソサイエティのブートキャンプで得た技術的知見と4ヶ月間の成長記録",
-        "summary": "シンギュラリティソサイエティ（SS）の第4回ブートキャンプに参加し、OSSプロジェクト「TenkaCloud」を開発した4ヶ月間の振り返り。 AWS GameDayなどの負荷試験環境やISUCONの手法を取り入れ、実践的なインフラ構築に挑戦した。 ブートキャンプでの継続的なフィードバックにより、プロダクトを外に出し続ける開発プロセスがいかに技術的成長とプロジェクトの改善に寄与するかを実証した。"
-      },
-      "en": {
-        "title": "Building Open Source Infrastructure: Lessons Learned from 4 Months of Intensive Bootcamp at Singularity Society",
-        "summary": "This retrospective covers a four-month deep dive into TenkaCloud, an open-source project developed during Singularity Society’s fourth bootcamp. By leveraging challenging environments like AWS GameDay and ISUCON-style performance tuning, the development process shifted toward rigorous, real-world infrastructure engineering. The bootcamp provided continuous peer feedback that pushed the product from an internal experiment into a public-facing tool. This journey demonstrates that for individual developers, the key to rapid technical growth isn't just coding in isolation, but exposing code to public scrutiny and utilizing high-quality community feedback loops. For builders aiming to level up, the primary takeaway is that consistent, iterative shipping combined with architectural stress testing creates a far more resilient development cycle than solo brainstorming alone."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-16T03:47:05.089Z"
   },
   {
     "id": "art-1794800808792-ypk08",
@@ -49184,32 +49211,6 @@
       "アップデート"
     ],
     "created_at": "2026-10-29T18:46:26.797Z"
-  },
-  {
-    "id": "art-1793298684944-sw4ly",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/tech/avclyr2q",
-    "published_at": "2026-10-29T18:24:25.000Z",
-    "og_image_url": null,
-    "title_ja": "ケンタッキー大学、AI利用を拒否する職員に対し特例措置を許可——AI義務化の職場環境に一石を投じる先例へ",
-    "summary_ja": "ケンタッキー大学は、自身の業務におけるAI使用を拒否した人文学系の職員に対し、例外的にAI不使用の職務遂行を認める決定を下した。 業務効率化を目的とした生成AI導入が多くの企業や組織で義務化される中、本件はAIの利用強制が倫理観や職務の専門性と対立する可能性を示唆している。 組織がAI活用を推進する一方で、個人の裁量や「人間らしさ」をどう担保すべきか、AI時代における職場環境のあり方に重要な議論を投げかけている。",
-    "translations": {
-      "ja": {
-        "title": "ケンタッキー大学、AI利用を拒否する職員に対し特例措置を許可——AI義務化の職場環境に一石を投じる先例へ",
-        "summary": "ケンタッキー大学は、自身の業務におけるAI使用を拒否した人文学系の職員に対し、例外的にAI不使用の職務遂行を認める決定を下した。 業務効率化を目的とした生成AI導入が多くの企業や組織で義務化される中、本件はAIの利用強制が倫理観や職務の専門性と対立する可能性を示唆している。 組織がAI活用を推進する一方で、個人の裁量や「人間らしさ」をどう担保すべきか、AI時代における職場環境のあり方に重要な議論を投げかけている。"
-      },
-      "en": {
-        "title": "University of Kentucky grants exemption to employee refusing AI, sparking debate over mandatory AI integration policies",
-        "summary": "The University of Kentucky has made a notable decision to grant an exemption to a humanities staff member who formally refused to use AI tools for their professional tasks. As many organizations increasingly mandate generative AI adoption to drive efficiency and speed, this case highlights a growing tension between company-wide AI mandates and individual professional autonomy or ethical discretion. This decision brings critical questions to the forefront: can or should institutions force AI usage when it clashes with an employee’s specialized workflow, belief system, or personal definition of output? For builders and leaders implementing AI-integrated workflows, this incident serves as a crucial reminder that human-centric, opt-in policies may soon become as vital as the technical implementation itself in the modern workplace."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-10-29T18:31:24.944Z"
   },
   {
     "id": "art-1793297005276-zy4bl",
