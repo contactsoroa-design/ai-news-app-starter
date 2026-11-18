@@ -1,5 +1,89 @@
 [
   {
+    "id": "art-1795021373533-uo4ed",
+    "source_id": "source-hf",
+    "source_name": "Hugging Face Blog / Papers",
+    "url": "https://huggingface.co/blog/moe-expert-streaming",
+    "published_at": "2026-11-18T00:00:00.000Z",
+    "og_image_url": "https://huggingface.co/blog/assets/moe-expert-streaming/thumbnail.png",
+    "title_ja": "1800億パラメータのMoEモデルを32GBメモリで動かす―Hugging Faceが公開した推論最適化技術の全容",
+    "summary_ja": "Hugging Faceが、1800億パラメータ規模の巨大なMixture-of-Experts (MoE) モデルを32GBのメモリ環境で実行する推論最適化手法を公開した。 活性化パラメータ数を抑えるMoEの特性を活かしつつ、KVキャッシュの量子化やオフロード技術をTransformersライブラリに統合することで、消費メモリを大幅に削減している。",
+    "translations": {
+      "ja": {
+        "title": "1800億パラメータのMoEモデルを32GBメモリで動かす―Hugging Faceが公開した推論最適化技術の全容",
+        "summary": "Hugging Faceが、1800億パラメータ規模の巨大なMixture-of-Experts (MoE) モデルを32GBのメモリ環境で実行する推論最適化手法を公開した。 活性化パラメータ数を抑えるMoEの特性を活かしつつ、KVキャッシュの量子化やオフロード技術をTransformersライブラリに統合することで、消費メモリを大幅に削減している。"
+      },
+      "en": {
+        "title": "Hugging Face details techniques to run 180B parameter Mixture-of-Experts models within just 32GB of consumer RAM",
+        "summary": "Hugging Face has detailed a new methodology for running massive 180B parameter Mixture-of-Experts (MoE) models within constrained 32GB RAM environments, pushing the boundaries of local inference. By leveraging the sparse activation characteristics of MoE architectures, the team implemented KV cache quantization and selective layer offloading directly into the Transformers library to dramatically slash VRAM and system memory usage. This implementation allows developers to run inference on huge models without needing to load all parameters simultaneously, effectively trading latency for memory efficiency. For builders struggling with hardware constraints, this approach offers a viable roadmap for deploying state-of-the-art models on consumer-grade hardware, proving that memory limits need not be a hard barrier for large-scale AI applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-18T17:02:53.533Z"
+  },
+  {
+    "id": "art-1795021358764-wlotj",
+    "source_id": "source-copyai",
+    "source_name": "Copy.ai Blog",
+    "url": "https://www.copy.ai/blog/a-b-test-examples",
+    "published_at": "2026-11-18T16:44:13.439Z",
+    "og_image_url": null,
+    "title_ja": "Copy.aiが明かす：コンバージョンを最大化するA/Bテストの具体例と効果的な改善アプローチ",
+    "summary_ja": "Copy.aiが公開したA/Bテストの具体例は、広告やランディングページの成果を科学的に向上させるためのフレームワークを網羅している。 単なる文言の差し替えではなく、ターゲット層の心理に刺さる「フック」や「行動喚起（CTA）」の検証方法を実例ベースで解説。 開発者がプロダクトのグロースハックを行う際、データに基づいたクリエイティブ改善がいかにコンバージョン率を押し上げるかを学ぶための重要なガイドとなる。",
+    "translations": {
+      "ja": {
+        "title": "Copy.aiが明かす：コンバージョンを最大化するA/Bテストの具体例と効果的な改善アプローチ",
+        "summary": "Copy.aiが公開したA/Bテストの具体例は、広告やランディングページの成果を科学的に向上させるためのフレームワークを網羅している。 単なる文言の差し替えではなく、ターゲット層の心理に刺さる「フック」や「行動喚起（CTA）」の検証方法を実例ベースで解説。 開発者がプロダクトのグロースハックを行う際、データに基づいたクリエイティブ改善がいかにコンバージョン率を押し上げるかを学ぶための重要なガイドとなる。"
+      },
+      "en": {
+        "title": "Copy.ai Explains A/B Testing Frameworks to Boost Landing Page Conversions and Click-Through Rates",
+        "summary": "Copy.ai’s latest breakdown of A/B testing examples provides a structured roadmap for optimizing marketing copy to significantly boost landing page conversions. Rather than simple guesswork, the guide illustrates how to methodically test core elements like emotional hooks, headline variations, and primary calls-to-action (CTAs) against specific audience segments. For builders and indie hackers, the core takeaway is that conversion optimization is a repeatable engineering problem: you must isolate variables, establish statistical significance, and align messaging with user intent. By implementing these systematic testing frameworks, creators can transform underperforming pages into high-conversion assets. This data-driven approach removes the ambiguity from content strategy, allowing product builders to iterate rapidly while effectively scaling their user acquisition efforts through proven, evidence-based copywriting refinements."
+      }
+    },
+    "tool_tags": [
+      "Copy.ai"
+    ],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-18T17:02:38.764Z"
+  },
+  {
+    "id": "art-1795021339383-gos1x",
+    "source_id": "source-google-ai-blog",
+    "source_name": "Google AI Blog",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+    "published_at": "2026-11-18T17:00:00.000Z",
+    "og_image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_app_Android_social_share.max-1440x810.png",
+    "title_ja": "Google、低スペックAndroid端末向けGeminiアプリを提供開始。メモリ制限環境でもGemini Liveや画像生成機能が利用可能に",
+    "summary_ja": "Googleは、メモリ容量が少ない低スペックのAndroidデバイス向けにGeminiアプリの対応を開始した。 これにより、従来はハイエンド機のみで利用可能だった「Gemini Live」による対話や、スマホ単体でのカスタム画像生成機能が、エントリーレベルの端末でも体験できる。 AIのオンデバイス活用が進む中、より広いユーザー層をカバーするための最適化は、モバイル向けAIアプリ開発における重要なUX拡大戦略と言える。",
+    "translations": {
+      "ja": {
+        "title": "Google、低スペックAndroid端末向けGeminiアプリを提供開始。メモリ制限環境でもGemini Liveや画像生成機能が利用可能に",
+        "summary": "Googleは、メモリ容量が少ない低スペックのAndroidデバイス向けにGeminiアプリの対応を開始した。 これにより、従来はハイエンド機のみで利用可能だった「Gemini Live」による対話や、スマホ単体でのカスタム画像生成機能が、エントリーレベルの端末でも体験できる。 AIのオンデバイス活用が進む中、より広いユーザー層をカバーするための最適化は、モバイル向けAIアプリ開発における重要なUX拡大戦略と言える。"
+      },
+      "en": {
+        "title": "Google brings Gemini app to low-memory Android devices, unlocking Gemini Live and custom image generation for broader user base",
+        "summary": "Google has officially expanded its Gemini Android app support to lower-memory devices, removing strict hardware barriers that previously limited access to its most advanced AI features. This update allows users on entry-level hardware to utilize Gemini Live for conversational interaction and generate custom AI images directly on their phones. As on-device AI adoption accelerates, this move underscores the importance of rigorous performance optimization to maintain feature parity across fragmented mobile ecosystems. For developers building consumer AI tools, the practical lesson is that prioritizing efficiency and memory management is no longer just a technical trade-off; it is a vital strategy to maximize market penetration and ensure a consistent, high-quality user experience across all smartphone segments."
+      }
+    },
+    "tool_tags": [
+      "Gemini"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-18T17:02:19.383Z"
+  },
+  {
     "id": "art-1795020477836-q7cre",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -41475,32 +41559,6 @@
     "created_at": "2026-11-03T08:07:26.090Z"
   },
   {
-    "id": "art-1793693211109-9qqyy",
-    "source_id": "source-github-trending",
-    "source_name": "GitHub Trending (AI / TypeScript / Python)",
-    "url": "https://github.com/vercel-labs/agent-desktop",
-    "published_at": "2026-11-03T08:06:51.109Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/1161958643/83055b28-992e-4176-b5d6-89b56aa22dde",
-    "title_ja": "Vercelが「agent-desktop」を公開。OSのアクセシビリティツリーを活用しAIエージェントがデスクトップ操作を可能に",
-    "summary_ja": "Vercelが公開した「agent-desktop」は、macOS・Windows・Linux上でAIエージェントがデスクトップアプリを直接操作するためのCLIおよびCライブラリだ。 画面ピクセルを解析するのではなく、OSのアクセシビリティツリーを参照してJSON形式で要素を特定し、正確な操作ループを実現する。 ヘッドレス環境でも動作し、スクリーンショットやクリップボードの内容が含まれるため、開発者は機密情報のログ漏洩を防ぐ厳重なセキュリティ対策が求められる。",
-    "translations": {
-      "ja": {
-        "title": "Vercelが「agent-desktop」を公開。OSのアクセシビリティツリーを活用しAIエージェントがデスクトップ操作を可能に",
-        "summary": "Vercelが公開した「agent-desktop」は、macOS・Windows・Linux上でAIエージェントがデスクトップアプリを直接操作するためのCLIおよびCライブラリだ。 画面ピクセルを解析するのではなく、OSのアクセシビリティツリーを参照してJSON形式で要素を特定し、正確な操作ループを実現する。 ヘッドレス環境でも動作し、スクリーンショットやクリップボードの内容が含まれるため、開発者は機密情報のログ漏洩を防ぐ厳重なセキュリティ対策が求められる。"
-      },
-      "en": {
-        "title": "Vercel releases agent-desktop, a tool enabling AI agents to control desktop applications via OS accessibility trees",
-        "summary": "Vercel has released agent-desktop, a robust CLI and C library that empowers AI agents to read and interact with desktop applications across macOS, Windows, and Linux. Unlike vision-only models that rely on pixel matching, this tool hooks into the OS accessibility tree, returning structured JSON refs for elements an agent can manipulate. This approach provides higher reliability for UI automation by maintaining a concrete loop between actions and state snapshots. Because the tool captures sensitive data like clipboard contents, screenshots, and system command outputs, builders must be extremely careful to exclude these artifacts from public logs. It serves as a powerful foundational layer for any developer aiming to ship autonomous agents that need to navigate local desktop environments securely."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-03T08:06:51.109Z"
-  },
-  {
     "id": "art-1793692916780-tbb7h",
     "source_id": "source-hf",
     "source_name": "Hugging Face Blog / Papers",
@@ -46542,34 +46600,6 @@
     "created_at": "2026-10-31T07:31:31.993Z"
   },
   {
-    "id": "art-1793424776339-cr62v",
-    "source_id": "source-vercel",
-    "source_name": "Vercel / v0 Blog",
-    "url": "https://vercel.com/changelog/add-liveness-checks-to-your-daemons",
-    "published_at": "2026-10-30T00:00:00.000Z",
-    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4cesbYYeBiGLzh1fUZG7rM/c03dea6cefe9e8b74d0ebad33b9c1cac/vercel-daemons-liveness-checks-og.jpg",
-    "title_ja": "VercelのDaemonがHTTPヘルスチェックに対応。自動再起動で長期間稼働の信頼性を向上",
-    "summary_ja": "VercelのDaemon機能がHTTP livenessチェックに対応した。 Daemonの設定ファイルにエンドポイントを記述することで、Vercelが定期的に死活監視を行い、異常を検知した際に自動でコンテナを再起動させる。 長時間稼働するバックグラウンド処理において、無応答状態のプロセスを即座に復旧できるため、可用性を重視するエンジニアにとって必須の機能となる。",
-    "translations": {
-      "ja": {
-        "title": "VercelのDaemonがHTTPヘルスチェックに対応。自動再起動で長期間稼働の信頼性を向上",
-        "summary": "VercelのDaemon機能がHTTP livenessチェックに対応した。 Daemonの設定ファイルにエンドポイントを記述することで、Vercelが定期的に死活監視を行い、異常を検知した際に自動でコンテナを再起動させる。 長時間稼働するバックグラウンド処理において、無応答状態のプロセスを即座に復旧できるため、可用性を重視するエンジニアにとって必須の機能となる。"
-      },
-      "en": {
-        "title": "Vercel adds HTTP liveness checks to Daemons, enabling automatic container restarts to improve long-running process reliability",
-        "summary": "Vercel has introduced HTTP liveness checks to its Daemon service, allowing developers to configure dedicated health endpoints that monitor background process stability. By defining a livenessProbe in the configuration, Vercel periodically polls the endpoint and triggers an automatic container restart if the health check fails or times out. This mechanism ensures that unresponsive or zombie processes are quickly remediated without manual intervention, maintaining consistent uptime for critical background tasks. For builders managing persistent workloads on the Vercel platform, this update provides a vital pattern to automate failure recovery, ensuring that background daemons remain operational and performant even when internal errors occur during long execution lifecycles."
-      }
-    },
-    "tool_tags": [
-      "Vercel"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-10-31T05:32:56.339Z"
-  },
-  {
     "id": "art-1793423786464-z4ty9",
     "source_id": "source-digg-ai",
     "source_name": "Digg AI",
@@ -49275,34 +49305,6 @@
       "音声"
     ],
     "created_at": "2026-10-29T18:03:17.569Z"
-  },
-  {
-    "id": "art-1793295990392-732qm",
-    "source_id": "source-openai",
-    "source_name": "OpenAI 公式",
-    "url": "https://openai.com/index/updated-model-spec",
-    "published_at": "2026-10-29T17:00:00.000Z",
-    "og_image_url": null,
-    "title_ja": "OpenAI、AIの判断基準を定義する新「Model Spec」公開：人間への誠実さと自律性を重視した5つのコアバリューを策定",
-    "summary_ja": "OpenAIは、AIの挙動をガイドする指針「Model Spec」を更新し、判断力、人間の意図への忠実さ、人間の主体性を支援する5つのコアバリューを定義した。 このガイドラインは、モデルが曖昧な指示を受けた際や相反する要求に対応する際の意思決定プロセスを標準化するものだ。 開発者は、自身のAIシステムがユーザーの意図を尊重しつつ、いかに安全かつ一貫した出力を提供できるかという設計指針として、このフレームワークを評価に組み込むべきだろう。",
-    "translations": {
-      "ja": {
-        "title": "OpenAI、AIの判断基準を定義する新「Model Spec」公開：人間への誠実さと自律性を重視した5つのコアバリューを策定",
-        "summary": "OpenAIは、AIの挙動をガイドする指針「Model Spec」を更新し、判断力、人間の意図への忠実さ、人間の主体性を支援する5つのコアバリューを定義した。 このガイドラインは、モデルが曖昧な指示を受けた際や相反する要求に対応する際の意思決定プロセスを標準化するものだ。 開発者は、自身のAIシステムがユーザーの意図を尊重しつつ、いかに安全かつ一貫した出力を提供できるかという設計指針として、このフレームワークを評価に組み込むべきだろう。"
-      },
-      "en": {
-        "title": "OpenAI updates Model Spec with 5 core values to guide AI judgment, human agency, and intent faithfulness",
-        "summary": "OpenAI has refreshed its Model Spec, a framework establishing five core values designed to guide AI behavior toward sound judgment, human agency, and strict faithfulness to human intent. This specification creates a standardized decision-making process that helps models resolve ambiguities or conflicting user instructions, ensuring outcomes remain both predictable and aligned. For builders developing LLM-integrated applications, this framework serves as a critical blueprint for aligning system outputs with user needs without sacrificing autonomy. By embedding these design principles into your evaluation loops, you can improve how your agents handle complex directives and nuanced real-world scenarios. It is a necessary reference for anyone building complex AI systems that must maintain high trust and alignment standards."
-      }
-    },
-    "tool_tags": [
-      "ChatGPT"
-    ],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-29T17:46:30.392Z"
   },
   {
     "id": "art-1793295110751-6ild6",
