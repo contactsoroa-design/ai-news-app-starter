@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1795092475382-mmvqm",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/azarashi_ora/articles/ora-fail-01-hikitsugi",
+    "published_at": "2026-11-19T11:00:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--UeDoQ5gF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%258B%25E3%2582%2589%25E5%25BC%2595%25E3%2581%258D%25E7%25B6%2599%25E3%2581%258E%25E6%2596%2587%25E3%2582%2592%25E6%25B8%25A1%25E3%2581%2595%25E3%2582%258C%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%258A%25E3%2583%25BC%25E3%2581%258C%25E9%25A0%25BC%25E3%2582%2593%25E3%2581%25A7%25E3%2581%2584%25E3%2581%25AA%25E3%2581%2584%25E7%2589%25A9%25E3%2582%2592%252030%2520%25E5%2588%2586%25E8%25BF%2591%25E3%2581%258F%25E4%25BD%259C%25E3%2582%258A%25E8%25BE%25BC%25E3%2582%2593%25E3%2581%25A0%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A2%25E3%2582%25B6%25E3%2583%25A9%25E3%2582%25B7%25E3%2582%25AA%25E3%2583%25A9%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzU0NjM5NmVlMmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェント間の業務引き継ぎで発生した「余計な作り込み」の教訓：文脈共有だけでは防げないLLMエージェント間の認識齟齬",
+    "summary_ja": "AIエージェント間での業務引き継ぎにおいて、指示が正確でも「頼まれていない機能を作り込んでしまう」という失敗事例が発生した。 原因は、前任AIが引き継ぎ文に残した文脈を、後任AIが独自に解釈して過剰な最適化を行ったためだ。 マルチエージェント環境では、タスクの完了報告だけでなく、実行可能な範囲を明確に制限するプロンプト制約が不可欠であり、文脈の解釈をLLM任せにしない設計が重要である。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント間の業務引き継ぎで発生した「余計な作り込み」の教訓：文脈共有だけでは防げないLLMエージェント間の認識齟齬",
+        "summary": "AIエージェント間での業務引き継ぎにおいて、指示が正確でも「頼まれていない機能を作り込んでしまう」という失敗事例が発生した。 原因は、前任AIが引き継ぎ文に残した文脈を、後任AIが独自に解釈して過剰な最適化を行ったためだ。 マルチエージェント環境では、タスクの完了報告だけでなく、実行可能な範囲を明確に制限するプロンプト制約が不可欠であり、文脈の解釈をLLM任せにしない設計が重要である。"
+      },
+      "en": {
+        "title": "AI-to-AI Handoff Failure: Why Context Transfer Alone Leads to Unwanted Agent Work and Hallucinated Scope",
+        "summary": "In a complex multi-agent workflow, a handoff between AI assistants resulted in one agent wasting 30 minutes building features the owner never requested. Although the handoff documentation was technically accurate, the receiving agent over-interpreted the provided context, inferring that it needed to preemptively expand the scope. This failure highlights a critical risk in autonomous agent architecture: handing off context is not the same as handing off strict constraints. Developers building agent chains must explicitly define the boundaries of what an agent can autonomously initiate, rather than relying on LLMs to infer the limit of their own mission. Proper guardrails are required to prevent agents from adding unrequested, expensive complexity during task handovers."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-19T12:47:55.382Z"
+  },
+  {
+    "id": "art-1795092453030-5nm26",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/zhouweiyuan51/items/8069181cb8cb2875901e",
+    "published_at": "2026-11-19T12:41:39.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSmZBTWVnMVp5MFhQUkNnVmNiNzNrazZmNUJMTVFpejZuYkdHbXotVjdtQ05WM3VtQSUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1iODQ5ZTczMjdiYzEwNDgxMWQzMDdmZGNjMDdlZWJlYQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D53891033313d8cf6bc7b472848233a7c?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTk2JUUzJTgzJUE5JUUzJTgyJUE2JUUzJTgyJUI2JUUzJTgxJUEwJUUzJTgxJTkxJUUzJTgxJUE3QUklRTclOTQlQkIlRTUlODMlOEYlRTclOTQlOUYlRTYlODglOTAlRTMlODElOEIlRTMlODIlODklRTUlOEIlOTUlRTclOTQlQkIlRTUlOEMlOTYlRTMlODElQkUlRTMlODElQTclRTUlQUUlOEMlRTclQjUlOTAlRTMlODElOTUlRTMlODElOUIlRTMlODIlOEIlRTUlQUUlOUYlRTUlOEIlOTklRTMlODMlQUYlRTMlODMlQkMlRTMlODIlQUYlRTMlODMlOTUlRTMlODMlQUQlRTMlODMlQkMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz04MThkMzdhNDc1ZTllY2EzNjFkNjc0MzAzZTE2Y2MzYw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB6aG91d2VpeXVhbjUxJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZWU5MmRmY2ExYmNmNGRhNDgxNWJmNzFmOTVhNmE4MWU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3cc255c82ce215ae526dc9c4887dee1b",
+    "title_ja": "ブラウザ完結型のAI画像・動画生成ワークフロー構築術。書き出しと再アップロードの手間を排除し、設定管理を効率化する実装ガイド",
+    "summary_ja": "画像生成AIと動画生成AIを個別に利用すると、ファイルの書き出しや再アップロード、プロンプトの再設定といった非効率な往復作業が発生する。 本記事では、ブラウザの同一ワークスペースで完結させる統合型ワークフローを提案。 制作プロセスを単一環境に集約することで、モデルやパラメータの履歴管理を容易にし、制作物の量産と一貫性維持を最適化する実践的なアプローチを解説する。",
+    "translations": {
+      "ja": {
+        "title": "ブラウザ完結型のAI画像・動画生成ワークフロー構築術。書き出しと再アップロードの手間を排除し、設定管理を効率化する実装ガイド",
+        "summary": "画像生成AIと動画生成AIを個別に利用すると、ファイルの書き出しや再アップロード、プロンプトの再設定といった非効率な往復作業が発生する。 本記事では、ブラウザの同一ワークスペースで完結させる統合型ワークフローを提案。 制作プロセスを単一環境に集約することで、モデルやパラメータの履歴管理を容易にし、制作物の量産と一貫性維持を最適化する実践的なアプローチを解説する。"
+      },
+      "en": {
+        "title": "Streamlining AI Media Pipelines: Building Browser-Native Workflows to Eliminate Export Friction and Centralize Asset Management for Creators",
+        "summary": "Managing image and video generation across disjointed services creates constant friction through repetitive exporting, re-uploading, and parameter drift. This guide advocates for a browser-native workflow that unifies the entire creative stack within a single workspace, effectively eliminating the context-switching tax. By centralizing generation models and asset management, developers and creators can maintain consistency across large volumes of output while easily tracking specific parameters for each iteration. For builders, the takeaway is clear: rather than optimizing individual model calls, the real efficiency gain lies in architecting a continuous, browser-based pipeline that preserves state and metadata from prompt to final render."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "画像生成",
+      "動画"
+    ],
+    "created_at": "2026-11-19T12:47:33.030Z"
+  },
+  {
+    "id": "art-1795092419713-ybnpi",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/nota12345/n/ndcef10ddf7ff",
+    "published_at": "2026-11-19T12:44:00.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338132325/rectangle_large_type_2_aa0f3c3597485fddb5ff91acd5fe6819.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「AIに丸投げ」からの脱却—ゲーム開発におけるAIとの共創的な役割分担術と生産性を最大化するプロセスの再構築",
+    "summary_ja": "ゲーム開発においてAIへ指示を出すだけの「丸投げ」スタイルから脱却し、成果物の性質に応じて役割を細分化する共創モデルが注目されている。 AIに得意な実装コードを任せ、人間が全体の設計やエッジケースの判断を担うことで、開発効率は劇的に向上する。 単なるツールとしてではなく、ペアプログラマーとしてAIを組み込むことで、個人開発者はより野心的なプロジェクトを完遂できる。",
+    "translations": {
+      "ja": {
+        "title": "「AIに丸投げ」からの脱却—ゲーム開発におけるAIとの共創的な役割分担術と生産性を最大化するプロセスの再構築",
+        "summary": "ゲーム開発においてAIへ指示を出すだけの「丸投げ」スタイルから脱却し、成果物の性質に応じて役割を細分化する共創モデルが注目されている。 AIに得意な実装コードを任せ、人間が全体の設計やエッジケースの判断を担うことで、開発効率は劇的に向上する。 単なるツールとしてではなく、ペアプログラマーとしてAIを組み込むことで、個人開発者はより野心的なプロジェクトを完遂できる。"
+      },
+      "en": {
+        "title": "Shifting from simple prompting to active co-creation: How to effectively divide development roles with AI partners",
+        "summary": "Moving beyond the \"AI-does-everything\" prompting model, developers are discovering that game development success hinges on granular role division where humans and AI collaborate as partners. By assigning specific technical implementation tasks to AI while retaining human control over architecture, design choices, and edge-case logic, builders can significantly boost overall project velocity. The key is to treat AI as a peer programmer rather than a subservient tool, allowing developers to execute ambitious projects that would otherwise be impossible solo. For independent creators, shifting the mindset from \"directing\" to \"co-creating\" is now the critical competitive advantage needed to overcome scope creep and technical blockers in complex software development pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-19T12:46:59.713Z"
+  },
+  {
     "id": "art-1795091648588-uwbqk",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10955,33 +11034,6 @@
     "created_at": "2026-11-18T08:32:23.494Z"
   },
   {
-    "id": "art-1794990727905-irb3g",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/chikasapo/n/ne9ca6bd402fa",
-    "published_at": "2026-11-18T08:30:38.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/337649873/rectangle_large_type_2_e8b4b5da846f4abc2ed1610029bc6c1f.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "専門家マッチングサービス「チカサポ」開発中に発覚した法的リスク、公開直前で事業モデルをゼロから再設計した教訓",
-    "summary_ja": "士業マッチングサービス「チカサポ」の開発中に、意図せず独占禁止法や専門職法に抵触するリスクが浮上した。 機能を実装し料金体系を固めた公開直前段階での軌道修正は、個人開発において最もコストと精神的負荷が大きい。 法的解釈が曖昧な領域でサービスを立ち上げる際は、開発着手前の初期段階から弁護士へ相談し、ビジネスモデルそのものが法的にクリアであることを担保する重要性が浮き彫りとなった。",
-    "translations": {
-      "ja": {
-        "title": "専門家マッチングサービス「チカサポ」開発中に発覚した法的リスク、公開直前で事業モデルをゼロから再設計した教訓",
-        "summary": "士業マッチングサービス「チカサポ」の開発中に、意図せず独占禁止法や専門職法に抵触するリスクが浮上した。 機能を実装し料金体系を固めた公開直前段階での軌道修正は、個人開発において最もコストと精神的負荷が大きい。 法的解釈が曖昧な領域でサービスを立ち上げる際は、開発着手前の初期段階から弁護士へ相談し、ビジネスモデルそのものが法的にクリアであることを担保する重要性が浮き彫りとなった。"
-      },
-      "en": {
-        "title": "Developer halts launch of expert matching platform Chikasapo after discovering critical legal compliance risks, forcing a full business model pivot",
-        "summary": "During the final stages of building the expert matching platform Chikasapo, the founder identified significant legal risks involving anti-monopoly laws and professional service regulations that threatened the entire business model. Realizing that a feature-complete, fee-structured service might be illegal just before launch forces a painful and expensive pivot that tests any solo developer's resolve. This experience serves as a stark warning to builders: legal compliance cannot be an afterthought in regulated industries. Whether dealing with professional matching or financial services, consulting with legal counsel during the discovery phase—before writing a single line of production code—is essential to ensuring your core business logic is viable and sustainable in the real world."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-18T08:32:07.905Z"
-  },
-  {
     "id": "art-1794990719262-oyofy",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -12883,31 +12935,6 @@
       "開発"
     ],
     "created_at": "2026-11-18T01:31:54.066Z"
-  },
-  {
-    "id": "art-1794964646900-elogx",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/fukukei23/items/9dcc1a6a8913fae40e21",
-    "published_at": "2026-11-18T01:08:07.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY1ZjQ2OWNhMDE5NjIyOTU4MTY0NzA3ODg2MjU3ODg1ZD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDBlNTBjZjg2NzA0YWYzOTU4YzUyZWE0NDAyYjVkZDg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db0fb7b518cbe6fd4515b7a3f5b82a516?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9U2VsZW5pdW0lRTIlODYlOTJQbGF5d3JpZ2h0JUU3JUE3JUJCJUU4JUExJThDJUUzJTgxJUE3JUUzJTgyJUI5JUUzJTgyJUFGJUUzJTgzJUFDJUUzJTgyJUE0JUUzJTgzJTk0JUUzJTgzJUIzJUUzJTgyJUIwJUUzJTgxJThDJUU1JUFFJTg5JUU1JUFFJTlBJUUzJTgxJTk3JUUzJTgxJTlGJUU4JUE5JUIxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZDZhMGQxYzczYTU0MTk1ZWE3M2FkZTYwOTUwYzFlOTQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmdWt1a2VpMjMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1mZjI4OTNiOTM5OTRjYzYzYjBhYWQzNmU1ZGJhOGVlNQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=135c958759ccef279918ac6338a72f92",
-    "title_ja": "SeleniumからPlaywrightへの移行でスクレイピングの不安定さを解消、ChromeDriverのバージョン問題やタイムアウトエラーを劇的に削減",
-    "summary_ja": "Pythonを用いたスクレイピングにおいて、従来主流だったSeleniumはChromeDriverのバージョン不一致やページ読み込みのタイムアウト、要素認識エラーが頻発し、運用のボトルネックとなっていた。 Playwrightへ移行した結果、これらの問題が劇的に改善され、ブラウザ操作の信頼性が大幅に向上した。 Web開発者やスクレイパーにとって、テストや自動化の堅牢性を高めるためには、よりモダンで安定した基盤への移行は避けられない投資といえる。",
-    "translations": {
-      "ja": {
-        "title": "SeleniumからPlaywrightへの移行でスクレイピングの不安定さを解消、ChromeDriverのバージョン問題やタイムアウトエラーを劇的に削減",
-        "summary": "Pythonを用いたスクレイピングにおいて、従来主流だったSeleniumはChromeDriverのバージョン不一致やページ読み込みのタイムアウト、要素認識エラーが頻発し、運用のボトルネックとなっていた。 Playwrightへ移行した結果、これらの問題が劇的に改善され、ブラウザ操作の信頼性が大幅に向上した。 Web開発者やスクレイパーにとって、テストや自動化の堅牢性を高めるためには、よりモダンで安定した基盤への移行は避けられない投資といえる。"
-      },
-      "en": {
-        "title": "Why Migrating From Selenium to Playwright Solves Scraping Instability, Version Mismatches, and Persistent Element Timeout Errors",
-        "summary": "Many developers relying on Python for web scraping have long struggled with Selenium, often facing recurring issues like ChromeDriver version mismatches, frequent page-load timeouts, and cryptic element-selection failures. Migrating to Playwright effectively eliminates these brittle pain points, offering a significantly more stable and reliable architecture for automated browser interaction. By switching to a modern execution model, engineers can avoid the endless maintenance required to keep legacy test suites running in production environments. For builders managing scrapers or E2E tests, this transition is not just a framework change but a necessary upgrade to ensure operational consistency, significantly reducing debugging hours spent on environment configurations rather than building new product features."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-18T01:17:26.900Z"
   },
   {
     "id": "art-1794964634001-tzdg2",
@@ -18062,32 +18089,6 @@
       "開発"
     ],
     "created_at": "2026-11-17T05:31:49.883Z"
-  },
-  {
-    "id": "art-1794893493913-g2vma",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/pkosyakov/articles/0807b135016b43",
-    "published_at": "2026-11-16T19:09:18.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---0qD890s--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:While%2520we%2520argue%2520whether%2520AI%2520can%2520code%252C%2520some%2520developers%2520went%252010x%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Pavel%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS1FXOE1saFoxVFcwYlYwbDkwRDJ4QmdaN3A2TGpOeFJpRy1DX3N5YUh3R2VTd0QzbFc9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIコード支援で開発効率が最大21倍に？GitHubのコミット履歴から読み解く、トップエンジニアの生産性向上とAI共創のリアル",
-    "summary_ja": "DevGhostの分析によると、microsoft/vscodeやTryGhost/Ghostの公開コミット履歴において、一部の開発者はAI活用により年間5〜21倍の出力向上を達成している。 GitHub Copilotの共作者情報などを詳細に追跡した結果、単なるコード量の増加ではなく、PR内の構造的な変化が生産性を押し上げていることが判明した。",
-    "translations": {
-      "ja": {
-        "title": "AIコード支援で開発効率が最大21倍に？GitHubのコミット履歴から読み解く、トップエンジニアの生産性向上とAI共創のリアル",
-        "summary": "DevGhostの分析によると、microsoft/vscodeやTryGhost/Ghostの公開コミット履歴において、一部の開発者はAI活用により年間5〜21倍の出力向上を達成している。 GitHub Copilotの共作者情報などを詳細に追跡した結果、単なるコード量の増加ではなく、PR内の構造的な変化が生産性を押し上げていることが判明した。"
-      },
-      "en": {
-        "title": "GitHub analysis reveals top engineers achieve 5–21× output gains using AI coding tools, moving beyond simple code volume",
-        "summary": "A deep analysis of public Git history from repositories like microsoft/vscode and TryGhost/Ghost reveals that elite developers are experiencing output gains of 5–21× over a single year by leveraging AI coding assistants. By tracking GitHub Copilot co-author metadata within pull requests, researchers found that these productivity spikes aren't just about faster typing; they stem from fundamental shifts in how developers handle PR structures and iterative refactoring. The real takeaway is that integrating AI effectively requires rethinking the entire coding workflow, from review cycles to architectural planning, rather than just using it for autocomplete. For builders, this implies that the path to 10× engineering lies in mastering AI-assisted orchestration rather than just raw code generation speeds."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-17T05:31:33.913Z"
   },
   {
     "id": "art-1794892638282-bgm45",
