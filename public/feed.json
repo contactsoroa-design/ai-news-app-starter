@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1795094267685-pnw0w",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/makotoym/n/n0f3b0c479783",
+    "published_at": "2026-11-19T12:43:24.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338133807/rectangle_large_type_2_153c1a5ba6f69c2be123fba3ed5a53c5.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "【開発記】5スロット・マルチランチャーの実装で直面した「アプリが起動しない」という誤解とウィンドウ配置の教訓【Day 7】",
+    "summary_ja": "個人開発の「5スロット・マルチランチャー」実装7日目。 アプリが起動しないという不具合を疑ったが、原因は単に既存のウィンドウと完全に重なっていただけという初歩的な見落としだった。 ウィンドウ管理はユーザー体験に直結する重要課題であり、UI設計において「アプリが動いていること」を視覚的にどう伝えるかは実装段階から考慮すべき重要なポイントだ。 開発の細部で詰まったときこそ、複雑なバグを疑う前に、まずはUIの基本的な挙動を再確認することが開発速度を維持するコツである。",
+    "translations": {
+      "ja": {
+        "title": "【開発記】5スロット・マルチランチャーの実装で直面した「アプリが起動しない」という誤解とウィンドウ配置の教訓【Day 7】",
+        "summary": "個人開発の「5スロット・マルチランチャー」実装7日目。 アプリが起動しないという不具合を疑ったが、原因は単に既存のウィンドウと完全に重なっていただけという初歩的な見落としだった。 ウィンドウ管理はユーザー体験に直結する重要課題であり、UI設計において「アプリが動いていること」を視覚的にどう伝えるかは実装段階から考慮すべき重要なポイントだ。 開発の細部で詰まったときこそ、複雑なバグを疑う前に、まずはUIの基本的な挙動を再確認することが開発速度を維持するコツである。"
+      },
+      "en": {
+        "title": "Day 7: How a Simple Window Overlap Debugging Session Halted My 5-Slot Multi-Launcher Development Progress",
+        "summary": "On day seven of building a five-slot multi-launcher, I hit a frustrating development wall where the app appeared to refuse to launch entirely. After diving into logs and code, I realized the issue wasn't a complex bug, but a basic UI oversight: the new window was simply rendered directly behind an existing one. This experience highlights a critical lesson for indie developers: window management and user feedback are essential parts of the UX loop. Ensuring the user knows the application is active is as vital as the logic underneath. When a feature seems broken, verifying the basic UI state before debugging deep backend logic is a simple but essential habit that preserves development velocity during solo projects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-19T13:17:47.685Z"
+  },
+  {
+    "id": "art-1795094225905-be2dq",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://seldon-ai.com/blog/your-llm-call-is-doing-more-than-you-think",
+    "published_at": "2026-11-19T12:59:52.000Z",
+    "og_image_url": "https://seldon-ai.com/blog/your-llm-call-is-doing-more-than-you-think/opengraph-image",
+    "title_ja": "LLM呼び出し時の舞台裏：推論だけでなく可観測性とガードレールが必須になる理由を解説",
+    "summary_ja": "Seldon AIが、単なる推論実行に留まらないLLM呼び出しの複雑なライフサイクルを詳細に解説した。 推論リクエストには、プロンプトインジェクション防御、コンテンツフィルタリング、出力のバリデーションといったガードレールや、詳細なトレーシング（可観測性）が不可欠である。 プロダクション環境でLLMを運用する開発者は、単にAPIを叩くだけでなく、これらの中間処理をパイプラインとして統合し、信頼性とセキュリティを確保する設計が求められる。",
+    "translations": {
+      "ja": {
+        "title": "LLM呼び出し時の舞台裏：推論だけでなく可観測性とガードレールが必須になる理由を解説",
+        "summary": "Seldon AIが、単なる推論実行に留まらないLLM呼び出しの複雑なライフサイクルを詳細に解説した。 推論リクエストには、プロンプトインジェクション防御、コンテンツフィルタリング、出力のバリデーションといったガードレールや、詳細なトレーシング（可観測性）が不可欠である。 プロダクション環境でLLMを運用する開発者は、単にAPIを叩くだけでなく、これらの中間処理をパイプラインとして統合し、信頼性とセキュリティを確保する設計が求められる。"
+      },
+      "en": {
+        "title": "Beyond inference: Why every production LLM call requires integrated observability and guardrails for safety",
+        "summary": "Seldon AI breaks down the complex lifecycle of an LLM call, arguing that inference is just one piece of a much larger production pipeline. Beyond simply querying the model, developers must integrate critical middleware including automated guardrails for prompt injection defense, output validation, and content filtering. Furthermore, implementing deep observability—tracking request latency and token usage across complex chain-of-thought processes—is non-negotiable for stable operations. The core takeaway for builders is that an LLM call should never be treated as a simple atomic transaction. To survive in production, engineers must design robust middleware pipelines that act as persistent safety layers, ensuring security and system reliability are baked into the architecture rather than added as an afterthought during deployment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-19T13:17:05.905Z"
+  },
+  {
+    "id": "art-1795094206690-yjrbz",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/fukukei23/items/0900a45b40b8da378381",
+    "published_at": "2026-11-19T13:08:32.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY1ZjQ2OWNhMDE5NjIyOTU4MTY0NzA3ODg2MjU3ODg1ZD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDBlNTBjZjg2NzA0YWYzOTU4YzUyZWE0NDAyYjVkZDg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db0fb7b518cbe6fd4515b7a3f5b82a516?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCUyQiUyMEdMTSUyMEFQSSUyMCUyQiUyMCVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyU4OCVFMyU4MyU5NyVFMyU4MyVBRCVFMyU4MiVBRCVFMyU4MiVCNyVFMyU4MSVBNzQyOSVFMyU4MiVBOCVFMyU4MyVBOSVFMyU4MyVCQyVFMyU4MSVBOCVFNiU4OCVBNiVFMyU4MSVBMyVFMyU4MSU5RjMlRTYlOTclQTUlRTklOTYlOTMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yYzIxZDAwOGY5MzcyMWEwMzM1ZWMwYzk1NDA4ZWFjZQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmdWt1a2VpMjMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1mZjI4OTNiOTM5OTRjYzYzYjBhYWQzNmU1ZGJhOGVlNQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=141b0ec24211611bf4076fe858ca37f0",
+    "title_ja": "Claude CodeとGLM API連携開発で429エラーが多発：レートプロキシのバグとフォールバック設計の失敗から学んだ3日間の復旧記録",
+    "summary_ja": "2026年5月、Claude CodeとGLM APIを連携させた開発環境で深刻な429レート制限エラーが発生。 調査の結果、レート制限到達後のプロキシ設定バグと、不適切なフォールバック永続化が原因で開発が完全に停止していたことが判明した。 本件は、単にAPIリミットを管理するだけでなく、プロキシの死活監視やフォールバックの自動復旧ロジックを疎かにすることが、開発効率を致命的に損なうリスクを浮き彫りにした。",
+    "translations": {
+      "ja": {
+        "title": "Claude CodeとGLM API連携開発で429エラーが多発：レートプロキシのバグとフォールバック設計の失敗から学んだ3日間の復旧記録",
+        "summary": "2026年5月、Claude CodeとGLM APIを連携させた開発環境で深刻な429レート制限エラーが発生。 調査の結果、レート制限到達後のプロキシ設定バグと、不適切なフォールバック永続化が原因で開発が完全に停止していたことが判明した。 本件は、単にAPIリミットを管理するだけでなく、プロキシの死活監視やフォールバックの自動復旧ロジックを疎かにすることが、開発効率を致命的に損なうリスクを浮き彫りにした。"
+      },
+      "en": {
+        "title": "Fighting 429 Errors for 3 Days: How Claude Code and GLM API Integration Failed Due to Rate Proxy Bugs",
+        "summary": "In May 2026, a developer’s environment ground to a halt after Claude Code and GLM API integrations triggered a relentless wave of 429 rate-limit errors. The investigation revealed a compounding failure: a bug in the custom rate proxy combined with an inappropriately persisted fallback state that effectively locked the system, preventing recovery. This incident serves as a critical post-mortem on why simply implementing API limits isn't enough; developers must treat proxy monitoring and automated fallback recovery logic as first-class citizens. For builders relying on complex LLM orchestrations, the takeaway is clear: design your error handling to be ephemeral and self-healing. Never let a failed request state permanently block your pipeline, or your infrastructure becomes its own bottleneck."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-19T13:16:46.690Z"
+  },
+  {
     "id": "art-1795093400565-knafb",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -10364,33 +10442,6 @@
     "created_at": "2026-11-18T10:32:40.640Z"
   },
   {
-    "id": "art-1794997945338-obaif",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/muly/n/n0fa9d4faeb70",
-    "published_at": "2026-11-18T10:31:32.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/337694488/rectangle_large_type_2_7e64779dc78fa296357f119fc88bf954.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発アプリの収益化と理想のジレンマ：完全無料を断念し、持続可能な運営へ舵を切るための葛藤と決断",
-    "summary_ja": "「本当に欲しいものを自分で作る」という動機でスタートした個人開発アプリにおいて、開発者が直面した「完全無料化」という理想と、持続的なサービス運営という現実の乖離について解説する。 サーバー維持費やAPI利用料の増大は、個人の善意だけでは支えきれないフェーズが必ず訪れる。 趣味の開発から一歩進み、ユーザーに価値を届け続けるための「適切な課金モデルへの移行」は、決して開発者の敗北ではなく、プロジェクトを長く愛される存在にするための不可欠な戦略である。",
-    "translations": {
-      "ja": {
-        "title": "個人開発アプリの収益化と理想のジレンマ：完全無料を断念し、持続可能な運営へ舵を切るための葛藤と決断",
-        "summary": "「本当に欲しいものを自分で作る」という動機でスタートした個人開発アプリにおいて、開発者が直面した「完全無料化」という理想と、持続的なサービス運営という現実の乖離について解説する。 サーバー維持費やAPI利用料の増大は、個人の善意だけでは支えきれないフェーズが必ず訪れる。 趣味の開発から一歩進み、ユーザーに価値を届け続けるための「適切な課金モデルへの移行」は、決して開発者の敗北ではなく、プロジェクトを長く愛される存在にするための不可欠な戦略である。"
-      },
-      "en": {
-        "title": "The indie developer’s dilemma: Why the dream of a completely free app often requires a pivot to monetization",
-        "summary": "This article reflects on the common journey of indie developers who begin with a simple desire to build a tool they personally need, only to encounter the harsh realities of service maintenance. While the initial goal may be to keep an application entirely free, rising server costs and API overhead eventually make this model unsustainable. Moving from a hobbyist mindset to a viable service requires accepting that monetization is not a betrayal of the user, but a necessary evolution to ensure project longevity. For solo builders, the lesson is clear: establishing a sustainable financial foundation is not an afterthought, but a critical component of shipping software that remains reliable and accessible for the community over the long term."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-18T10:32:25.338Z"
-  },
-  {
     "id": "art-1794997031788-mj6oe",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -12019,33 +12070,6 @@
     "created_at": "2026-11-18T05:31:57.944Z"
   },
   {
-    "id": "art-1794979022066-n7k5w",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://zenodo.org/records/23778866",
-    "published_at": "2026-11-18T05:06:36.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェントの提案を誰が検証すべきか？「目的統治型エージェント（Purpose-Governed Agents）」のフレームワークと評価手法を提唱",
-    "summary_ja": "AIエージェントが自らの行動案を提示する際、その記述が意図や目的に適っているかを検証する「目的統治型エージェント」という概念が提唱された。 エージェントが自律的にタスクを遂行する一方で、外部の評価者がその論理構成や目的達成度を事後検証可能にするための構造化されたレビューモデルである。 AIの自律性と人間による統制のバランスを模索する開発者にとって、エージェントの意思決定プロセスを透明化し、信頼性を担保するための重要な設計思想となる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの提案を誰が検証すべきか？「目的統治型エージェント（Purpose-Governed Agents）」のフレームワークと評価手法を提唱",
-        "summary": "AIエージェントが自らの行動案を提示する際、その記述が意図や目的に適っているかを検証する「目的統治型エージェント」という概念が提唱された。 エージェントが自律的にタスクを遂行する一方で、外部の評価者がその論理構成や目的達成度を事後検証可能にするための構造化されたレビューモデルである。 AIの自律性と人間による統制のバランスを模索する開発者にとって、エージェントの意思決定プロセスを透明化し、信頼性を担保するための重要な設計思想となる。"
-      },
-      "en": {
-        "title": "Researchers propose 'Purpose-Governed Agents' framework to solve the black-box problem in AI agent proposal verification",
-        "summary": "A new research paper introduces 'Purpose-Governed Agents,' a governance framework designed to audit and review how AI agents describe their own proposed actions. As agents become increasingly autonomous, the challenge lies in verifying whether their internal proposals genuinely align with their stated goals or the user's intent. This model establishes structured verification protocols that force AI systems to justify their decision-making logic, creating a transparent audit trail for human supervisors to inspect. For developers building agentic workflows, this research offers a critical architectural pattern for moving beyond simple prompt engineering toward verifiable, goal-oriented safety. Implementing these rigorous validation loops is essential for deploying agents in high-stakes environments where accountability and objective-alignment are non-negotiable requirements for long-term reliability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-18T05:17:02.066Z"
-  },
-  {
     "id": "art-1794979014381-82gty",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -12781,32 +12805,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-18T02:16:52.098Z"
-  },
-  {
-    "id": "art-1794967330414-eo2qh",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/monet-inc/items/165de4a8b9f315f4d1f1",
-    "published_at": "2026-11-18T02:01:01.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY0NmM5MWI1ZTljZjNlMGE2ZjNiNjYzOGJmYTQzOTcxYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZTlmYzA5NmViZGRiMjg5NTk1ZjY3ZTA4ZGMwZTVmMjU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D5c918faaba36d1a5de1056e5cd18b001?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9S2l6dW5hJTIwJUUzJTgxJUFCJTIwQUklMjAlRTMlODIlOTIlRTUlODUlQTUlRTMlODIlOEMlRTMlODIlODklRTMlODIlOEMlRTMlODIlOEIlRTMlODElOEIlRUYlQkMlODgxJUVGJUJDJTg5QUklMjAlRTMlODElQUIlRTklODAlQjIlRTglQTElOEMlRTUlQkQlQjklRTMlODIlOTIlRTQlQkIlQkIlRTMlODElOUIlRTMlODElQTYlRTMlODElQkYlRTMlODElOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz05OTk4MWRmNzkxMzI3ZjU0MWU2N2E2OTU4YWZjODFmNw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtb25ldC1pbmMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1hNjkwZWM0ZjM5MzhlNDg3NzZhZTFlNGJjNGFiZWYyNg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6d8fc8d464fbe8d8aedbe0caeed92ce9",
-    "title_ja": "チームの「ふりかえり」をAIで自動化：進行役の固定化や開催見送りを防ぐプロンプト設計と実運用ノウハウ",
-    "summary_ja": "チームのふりかえりにおいて、進行役が固定化されたり、多忙で会議自体が中止されたりする問題を解消するため、AIを進行役に起用する試みを紹介。 AIに会議の進行を任せることで、参加者全員が議論に集中できる環境を構築できる。 単に質問を投げかけるだけでなく、心理的安全性を担保するためのプロンプト調整や、チームの文脈を反映させるための継続的なフィードバックループが、AIファシリテーションを成功させる要となる。",
-    "translations": {
-      "ja": {
-        "title": "チームの「ふりかえり」をAIで自動化：進行役の固定化や開催見送りを防ぐプロンプト設計と実運用ノウハウ",
-        "summary": "チームのふりかえりにおいて、進行役が固定化されたり、多忙で会議自体が中止されたりする問題を解消するため、AIを進行役に起用する試みを紹介。 AIに会議の進行を任せることで、参加者全員が議論に集中できる環境を構築できる。 単に質問を投げかけるだけでなく、心理的安全性を担保するためのプロンプト調整や、チームの文脈を反映させるための継続的なフィードバックループが、AIファシリテーションを成功させる要となる。"
-      },
-      "en": {
-        "title": "Automating team retrospectives with AI: Strategies for prompt engineering and workflow design to prevent meeting fatigue",
-        "summary": "To address common bottlenecks in team retrospectives—such as relying on the same overburdened facilitator or cancelling sessions entirely due to lack of leadership—this piece details how to delegate the facilitation role to an AI agent. By letting an AI manage the agenda, question flow, and timekeeping, human members are liberated to focus purely on the discussion and their own feedback. Success relies on more than just basic prompting; it requires crafting inputs that safeguard psychological safety and establishing feedback loops that allow the AI to learn the team’s specific context. For developers or managers building internal tools, the lesson is that AI can effectively replace rigid meeting structures if calibrated to maintain tone, consistency, and inclusivity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-18T02:02:10.414Z"
   },
   {
     "id": "art-1794967322153-p1o58",
