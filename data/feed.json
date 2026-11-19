@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795096063996-wrwy6",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/boluoji/articles/5c1c9f23b68191",
+    "published_at": "2026-11-19T10:40:45.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--_rZ2HzFj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:DeepSeek%2520V4.1%2520Flash%25201017%25E3%2581%25A7%25E5%25A4%2589%25E3%2582%258F%25E3%2581%25A3%25E3%2581%259F%25E6%2597%25A2%25E5%25AE%259A%25E5%2580%25A4%25E3%2581%25A8%25E3%2580%2581reasoning_effort%25E3%2581%25AE%25E6%258C%2599%25E5%258B%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:rhythm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzMzODRmYjNiMzIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "DeepSeek V4.1 Flash 1017へ更新、既定の「thinking」有効化とreasoning_effort設定変更による挙動の注意点",
+    "summary_ja": "2026年10月17日、DeepSeekはdeepseek-flashをV4.1-Flash-1017へ更新した。 最大の変化は、thinkingパラメータを明示しないリクエストがデフォルトで思考モード有効（reasoning_effort: high）となり、推論挙動が変わる点だ。 既存アプリでthinkingを無効化していなかった場合、期待と異なる出力やコスト増につながる恐れがある。 実装者は直ちにデフォルト設定の仕様変更をコードで明示的に定義し直す必要がある。",
+    "translations": {
+      "ja": {
+        "title": "DeepSeek V4.1 Flash 1017へ更新、既定の「thinking」有効化とreasoning_effort設定変更による挙動の注意点",
+        "summary": "2026年10月17日、DeepSeekはdeepseek-flashをV4.1-Flash-1017へ更新した。 最大の変化は、thinkingパラメータを明示しないリクエストがデフォルトで思考モード有効（reasoning_effort: high）となり、推論挙動が変わる点だ。 既存アプリでthinkingを無効化していなかった場合、期待と異なる出力やコスト増につながる恐れがある。 実装者は直ちにデフォルト設定の仕様変更をコードで明示的に定義し直す必要がある。"
+      },
+      "en": {
+        "title": "DeepSeek V4.1 Flash 1017 Update: New Default Reasoning Effort Settings Change API Behavior for Existing Applications",
+        "summary": "On October 17, 2026, DeepSeek updated the deepseek-flash endpoint to V4.1-Flash-1017. While pricing and model identifiers remain unchanged, there is a critical shift in default behavior: requests without an explicit 'thinking' parameter now default to 'thinking' enabled with 'reasoning_effort' set to high. This modification means existing applications that were not explicitly disabling thinking mode will now trigger reasoning processes silently, potentially impacting output patterns, latency, and token consumption. Developers must audit their existing API implementations immediately to ensure they are explicitly controlling these parameters rather than relying on previous system defaults. If your logic depends on standard prompt-response speed, you must define the thinking behavior in your payload to prevent unexpected downstream performance impacts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-19T13:47:43.996Z"
+  },
+  {
+    "id": "art-1795096056914-d4z9r",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/vidraft/items/877d03c259e0b3899b48",
+    "published_at": "2026-11-19T13:36:25.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTMyNjUzJTJGMmMyMDMzZmZkNmMzMzdkODlhOGIwNWU5MTY0MmFlYWRhZmM3NzRmMSUyRnhfbGFyZ2UucG5nJTNGMTc5NDcxMTk0ND9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OWE3ODNjOWM0YTQ2NmU1NTc2YmY3NjhhNGJkYTQ5NWE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Deda05036aeec3d770bcc7bed3751472e?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UE9DS0VULURhcndpbi0xODBCJUUzJTgwJTgxSHVnZ2luZyUyMEZhY2UlRTUlODUlQUMlRTUlQkMlOEYlRTMlODMlOTklRTMlODMlQjMlRTMlODMlODElRTMlODMlOUUlRTMlODMlQkMlRTMlODIlQUYlRTMlODAlOEMlRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglRTMlODElQUUlRTMlODMlODQlRTMlODMlQkMlRTMlODMlQUIlRTUlOTElQkMlRTMlODElQjMlRTUlODclQkElRTMlODElOTclRTQlQkYlOUQlRTglQUQlQjclRTglQTklOTUlRTQlQkUlQTElRTMlODAlOEQlRTMlODElQTclRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yZDE0NzhjOTFhZTIyMjM4NjYzODAxZjJhYmJjNzI5NA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB2aWRyYWZ0JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YzNkM2MzOWY2MDBlZmQ5MGI5ZTljMjRlNDcxYTk5M2Y&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3f464694990b617bfd5ab4d47f8feb1c",
+    "title_ja": "VIDRAFTの「POCKET-Darwin-180B」、Hugging Faceのツール呼び出し保護ベンチマークでリーダーボード1位を獲得",
+    "summary_ja": "2026年11月19日、VIDRAFTが開発した「POCKET-Darwin-180B」が、Hugging Face公式ベンチマーク「safeagents judge bench」のCategory Macro F1スコアにおいて0.599を記録し、リーダーボード1位に到達した。 本ベンチマークはAIエージェントによるツール呼び出し時の安全性と保護機能を評価するもので、今回の結果は同モデルが複雑なエージェント制御環境下でも高い安全性と判断精度を維持できることを証明した。",
+    "translations": {
+      "ja": {
+        "title": "VIDRAFTの「POCKET-Darwin-180B」、Hugging Faceのツール呼び出し保護ベンチマークでリーダーボード1位を獲得",
+        "summary": "2026年11月19日、VIDRAFTが開発した「POCKET-Darwin-180B」が、Hugging Face公式ベンチマーク「safeagents judge bench」のCategory Macro F1スコアにおいて0.599を記録し、リーダーボード1位に到達した。 本ベンチマークはAIエージェントによるツール呼び出し時の安全性と保護機能を評価するもので、今回の結果は同モデルが複雑なエージェント制御環境下でも高い安全性と判断精度を維持できることを証明した。"
+      },
+      "en": {
+        "title": "VIDRAFT’s POCKET-Darwin-180B secures top spot on Hugging Face’s agent tool-use safety benchmark",
+        "summary": "On November 19, 2026, VIDRAFT’s POCKET-Darwin-180B claimed the number one position on the official Hugging Face 'safeagents judge bench' leaderboard with a Category Macro F1 score of 0.599. This specific benchmark rigorously evaluates how effectively AI agents protect against unauthorized or malicious tool calls, proving that POCKET-Darwin-180B maintains superior safety and decision-making accuracy even within complex execution environments. For developers building autonomous agents, this result signals that the model offers a robust framework for handling sensitive external API interactions without sacrificing control. As AI agents move toward handling more privileged operations, evaluating models against such safety-centric metrics is increasingly critical to ensure reliable and secure system integrations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-19T13:47:36.914Z"
+  },
+  {
+    "id": "art-1795096045529-y9n9p",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.engadget.com/2321318/canva-will-let-users-switch-off-most-generative-ai/",
+    "published_at": "2026-11-19T13:38:22.000Z",
+    "og_image_url": "https://www.engadget.com/img/gallery/canva-will-let-users-switch-off-most-generative-ai/l-intro-1795044723.jpg",
+    "title_ja": "CanvaがAI生成機能の無効化オプションを追加、ユーザーのデータ学習やプライバシー制御を優先する企業・教育機関向け措置",
+    "summary_ja": "デザインプラットフォーム「Canva」は、ユーザーがプラットフォーム上の大部分の生成AI機能を無効化できる設定を追加した。 これは、特に著作権やデータプライバシーを重視する企業や教育機関からの要求に応じたもので、組織内の管理者はAIツールへのアクセスを一元的に管理できるようになる。 AIの統合が進む中で、法的コンプライアンスや独自のデータ保護ポリシーを持つ組織にとって、このような「オプトアウト」の柔軟性はSaaS導入における重要な選定基準となりつつある。",
+    "translations": {
+      "ja": {
+        "title": "CanvaがAI生成機能の無効化オプションを追加、ユーザーのデータ学習やプライバシー制御を優先する企業・教育機関向け措置",
+        "summary": "デザインプラットフォーム「Canva」は、ユーザーがプラットフォーム上の大部分の生成AI機能を無効化できる設定を追加した。 これは、特に著作権やデータプライバシーを重視する企業や教育機関からの要求に応じたもので、組織内の管理者はAIツールへのアクセスを一元的に管理できるようになる。 AIの統合が進む中で、法的コンプライアンスや独自のデータ保護ポリシーを持つ組織にとって、このような「オプトアウト」の柔軟性はSaaS導入における重要な選定基準となりつつある。"
+      },
+      "en": {
+        "title": "Canva introduces option to disable most generative AI features, prioritizing privacy controls for enterprise and educational organizations",
+        "summary": "Design platform Canva has rolled out a new setting allowing users to disable the majority of its generative AI features. This update specifically targets enterprise clients and educational institutions that require strict control over data privacy, copyright compliance, and organizational security policies. By enabling admins to centrally restrict access to AI-driven tools, Canva provides a necessary safeguard for teams operating within regulated environments. As generative AI becomes standard in SaaS suites, the ability to opt out of automated features is rapidly becoming a non-negotiable requirement for enterprise adoption. For platform builders, this demonstrates that providing granular administrative controls is just as critical to market penetration as the AI features themselves."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "セキュリティ",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-19T13:47:25.529Z"
+  },
+  {
+    "id": "art-1795096033469-o0bjy",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/mork_studio/n/n50abe51072d0",
+    "published_at": "2026-11-19T13:46:44.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338169235/rectangle_large_type_2_8a0622319b0dde82babed3dafdd3d533.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発でApp Storeにゲームを公開するまでの全ステップ：審査通過のための録画資料、広告実装、配信地域設定まで実務ノウハウを徹底解説",
+    "summary_ja": "iPhoneゲーム「発破職人ブーモル」の開発者が、App Store公開に至るまでの複雑な申請手続きを詳細にレポート。 審査のステータス管理、広告SDKの組み込み、グローバル配信に向けた国別設定、そして審査用ビデオの録画など、個人開発者が陥りやすい罠を回避する実戦的Tipsを公開した。 特に大手プラットフォームのガイドライン遵守と、円滑なリリースを実現するための準備プロセスは、個人でアプリを収益化しようとするエンジニアにとって貴重な指針となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発でApp Storeにゲームを公開するまでの全ステップ：審査通過のための録画資料、広告実装、配信地域設定まで実務ノウハウを徹底解説",
+        "summary": "iPhoneゲーム「発破職人ブーモル」の開発者が、App Store公開に至るまでの複雑な申請手続きを詳細にレポート。 審査のステータス管理、広告SDKの組み込み、グローバル配信に向けた国別設定、そして審査用ビデオの録画など、個人開発者が陥りやすい罠を回避する実戦的Tipsを公開した。 特に大手プラットフォームのガイドライン遵守と、円滑なリリースを実現するための準備プロセスは、個人でアプリを収益化しようとするエンジニアにとって貴重な指針となる。"
+      },
+      "en": {
+        "title": "A Solo Developer's Guide to Publishing Games on the App Store: Handling Ad SDKs, Compliance Videos, and Global Region Settings",
+        "summary": "A solo developer chronicles the granular details of navigating the Apple App Store submission process for their latest game, \"Boomol.\" The piece demystifies the path from ad SDK integration and global territory configuration to the critical, often overlooked requirement of providing compliant screen recordings for the app review team. By detailing the specific status checkpoints and the administrative hurdles inherent in Apple’s submission workflow, this breakdown offers actionable advice for independent builders looking to monetize. It serves as a practical blueprint for solo creators attempting to bridge the gap between finishing code and successfully launching on iOS without getting stuck in the rejection loop."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-19T13:47:13.469Z"
+  },
+  {
     "id": "art-1795095142942-0snec",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -10362,32 +10468,6 @@
     "created_at": "2026-11-18T11:02:36.914Z"
   },
   {
-    "id": "art-1794999748799-p88yj",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/prime_wolf5718/n/n1303dbcd6275",
-    "published_at": "2026-11-18T11:01:48.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/337368592/rectangle_large_type_2_6f00042d3b23129d9838e7effb65b3a3.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "プログラミング未経験者がAI活用でゲーム開発を完遂、実際に使った全プロンプトを公開",
-    "summary_ja": "プログラミング知識ゼロの著者が、AIと協力してゲームを開発し世界へ公開するまでの一連のプロセスを解説。 特に開発時にAIへどのような指示（プロンプト）を送ったのか、その具体的な文面を全公開している。 コードが書けない段階から、対話を通じて機能の実装やバグ修正をどう進めるかのノウハウが詰まっており、AIを活用した個人開発に挑戦したい非エンジニアにとって非常に実践的な事例となっている。",
-    "translations": {
-      "ja": {
-        "title": "プログラミング未経験者がAI活用でゲーム開発を完遂、実際に使った全プロンプトを公開",
-        "summary": "プログラミング知識ゼロの著者が、AIと協力してゲームを開発し世界へ公開するまでの一連のプロセスを解説。 特に開発時にAIへどのような指示（プロンプト）を送ったのか、その具体的な文面を全公開している。 コードが書けない段階から、対話を通じて機能の実装やバグ修正をどう進めるかのノウハウが詰まっており、AIを活用した個人開発に挑戦したい非エンジニアにとって非常に実践的な事例となっている。"
-      },
-      "en": {
-        "title": "Non-coder shares entire prompt library used to successfully build and launch a game with AI",
-        "summary": "A creator with zero programming experience has documented their entire journey of building and launching a game by collaborating with AI models. The report reveals the specific, real-world prompts sent to AI to handle coding tasks, implement game mechanics, and resolve bugs throughout the development cycle. By showing exactly how to bridge the gap between having no technical skills and creating a functioning digital product, this case study offers a roadmap for non-engineers looking to ship software. The article demonstrates that effective AI communication, rather than syntax knowledge, is the critical lever for independent creators today. For builders, it serves as a masterclass in breaking down complex logic into iterative, AI-executable commands to bring projects to life."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-18T11:02:28.799Z"
-  },
-  {
     "id": "art-1794998828115-vdibl",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -12041,32 +12121,6 @@
     "created_at": "2026-11-18T05:47:26.419Z"
   },
   {
-    "id": "art-1794980838635-fu5hw",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://science.caseyhandmer.com/physics/",
-    "published_at": "2026-11-18T05:26:41.000Z",
-    "og_image_url": null,
-    "title_ja": "物理学の専門文献をAIに読ませる試み：大規模言語モデルが科学的発見と既存知識の結びつきに果たす役割をCasey Handmerが検証",
-    "summary_ja": "物理学者のCasey Handmer氏が、自身が執筆した膨大な物理学のフィールドに関する論文やメモを大規模言語モデル（LLM）に読み込ませ、その分析能力を検証した。 AIは複雑な専門知識の統合や隠れた関連性の発見において有用な対話相手として機能する一方、厳密な科学的検証には依然として人間の専門家による裏付けが不可欠である。 本稿は、AIを研究の補助ツールとして活用し、既存知識の整理や新しいアイディアの生成を加速させるための現実的なワークフローを提示している。",
-    "translations": {
-      "ja": {
-        "title": "物理学の専門文献をAIに読ませる試み：大規模言語モデルが科学的発見と既存知識の結びつきに果たす役割をCasey Handmerが検証",
-        "summary": "物理学者のCasey Handmer氏が、自身が執筆した膨大な物理学のフィールドに関する論文やメモを大規模言語モデル（LLM）に読み込ませ、その分析能力を検証した。 AIは複雑な専門知識の統合や隠れた関連性の発見において有用な対話相手として機能する一方、厳密な科学的検証には依然として人間の専門家による裏付けが不可欠である。 本稿は、AIを研究の補助ツールとして活用し、既存知識の整理や新しいアイディアの生成を加速させるための現実的なワークフローを提示している。"
-      },
-      "en": {
-        "title": "Casey Handmer on testing LLMs to digest specialized physics research and uncover hidden connections between fragmented concepts",
-        "summary": "Physicist Casey Handmer recently put large language models to the test by feeding them his own extensive body of work on physics and energy systems to evaluate their analytical depth. The experiment demonstrates that while AI acts as a potent brainstorming partner for synthesizing complex domain knowledge and highlighting latent connections, it remains unreliable for rigorous scientific derivation without human expert oversight. Handmer highlights that the true utility of current models lies not in replacing deep thought, but in functioning as a high-bandwidth interface for organizing existing research and generating new hypotheses. For builders and researchers, the takeaway is that LLMs excel at accelerating the synthesis stage of intellectual work, provided you maintain a strict verify-first workflow."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-18T05:47:18.635Z"
-  },
-  {
     "id": "art-1794980818185-vnd8f",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -12671,32 +12725,6 @@
       "研究"
     ],
     "created_at": "2026-11-18T03:02:09.986Z"
-  },
-  {
-    "id": "art-1794970020869-p3vul",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Ray_T/items/78598353ec1df33f899f",
-    "published_at": "2026-11-18T02:36:51.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZkYmY1YTdiZWQwYjMyYTUyZGRmZTU3Njk4MzhmZWQ5Yz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NDMzOTZmYTBiZDFhZGYwZDg0ZTQxZjUwODQ5ZDkyNzI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6543c93a0e8f82559b68c7833a8dbbfb?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU3JUFDJUFDNCVFNSU5QiU5RSVFMyU4MCU5MSVFMyU4MiVCQyVFMyU4MyVBRCVFMyU4MSU4QiVFMyU4MiU4OSVFNyU5QiVBRSVFNiU4QyU4NyVFMyU4MSU5OSUyMSUyMENDRFYtRiVFNSU5MCU4OCVFNiVBMCVCQyVFMyU4MSVCOCVFMyU4MSVBRSVFOSU4MSU5MyVFRiVCQyU5QUxMTSVFMyU4MSVBRSVFMyU4MSU5NyVFMyU4MSU4RiVFMyU4MSVCRiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWRjMzIxYjQxNTU5NzllODhjNzgxMTA3NDA5YThlZDBl&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBSYXlfVCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWE2NmJiNmI1MDI2ZTQ3NjY5NjAwNmFkZWMzZjZiMzg5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c93087d79d38758421aa0e20c3998f5d",
-    "title_ja": "Anthropic公式資格「CCDV-F」合格を目指す全24回学習ロードマップ：第4回ではLLMの動作原理を基礎から完全網羅",
-    "summary_ja": "Anthropic社が提供する公式資格「Claude Certified Developer – Foundations(CCDV-F)」取得を目指す、全24回の非公式学習シリーズの第4弾。 本稿では試験範囲の核となるLLM（大規模言語モデル）の仕組み、トークンの概念、確率的生成プロセスなどを開発者視点で深掘りする。 公式ガイドの重要項目を実務に落とし込み、理論理解を確実に得点源に変えるための戦略的な学習指針を解説する。",
-    "translations": {
-      "ja": {
-        "title": "Anthropic公式資格「CCDV-F」合格を目指す全24回学習ロードマップ：第4回ではLLMの動作原理を基礎から完全網羅",
-        "summary": "Anthropic社が提供する公式資格「Claude Certified Developer – Foundations(CCDV-F)」取得を目指す、全24回の非公式学習シリーズの第4弾。 本稿では試験範囲の核となるLLM（大規模言語モデル）の仕組み、トークンの概念、確率的生成プロセスなどを開発者視点で深掘りする。 公式ガイドの重要項目を実務に落とし込み、理論理解を確実に得点源に変えるための戦略的な学習指針を解説する。"
-      },
-      "en": {
-        "title": "Mastering the Claude Certified Developer – Foundations Exam: A 24-Part Roadmap Starting with LLM Architecture",
-        "summary": "This is the fourth installment in a comprehensive 24-part unofficial study series designed to help developers pass the Anthropic Certified Developer – Foundations (CCDV-F) exam. This edition focuses exclusively on the mechanics of Large Language Models, covering fundamental concepts like tokenization, probabilistic generation, and architectural design patterns crucial for the exam. By translating official study guides into practical developer insights, the article bridges the gap between abstract theory and the application-level knowledge required for certification. It provides a structured approach to mastering how LLMs operate under the hood, ensuring builders can leverage this foundational understanding to tackle technical questions and effectively implement Claude-based applications with confidence and deeper architectural clarity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-18T02:47:00.869Z"
   },
   {
     "id": "art-1794969117603-j76l5",
@@ -17496,33 +17524,6 @@
       "開発"
     ],
     "created_at": "2026-11-17T08:32:00.188Z"
-  },
-  {
-    "id": "art-1794904313325-299m0",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/mstmt/articles/58abe3f8f29afa",
-    "published_at": "2026-11-17T05:39:45.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--z6MvIvg8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AC%25AC4%25E5%259B%259E%25EF%25BC%259A%25E3%2583%2591%25E3%2583%25BC%25E3%2583%2588%25E3%2583%258A%25E3%2583%25BCAI%25E3%2582%2592%25E4%25BC%2581%25E6%25A5%25AD%25E5%2588%25A9%25E7%2594%25A8%25E3%2581%25B8%25E2%2580%2595%25E2%2580%2595Dell%2520AI%2520Ecosystem%2520Program%25E3%2581%25A8%25E6%25A4%259C%25E8%25A8%25BC%25E6%25B8%2588%25E3%2581%25BF%25E3%2582%25BD%25E3%2583%25AA%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:TAMOTSU%25EF%25BC%25A0DELL%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE2YjFiY2MwNTguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Dell AI Ecosystem Programが提示する「検証済み」の企業導入、生成AI実装の複雑性を解消しPoCから本番運用へ",
-    "summary_ja": "Dellが提供する「Dell AI Ecosystem Program」は、多様なAIモデルやデータ基盤を企業が導入する際に直面する互換性・セキュリティ・運用の懸念を解決するソリューションだ。 検証済みの構成モデルを提示することで、個別の検証作業を簡略化し、PoC（概念実証）の段階で停滞しがちな導入プロセスを迅速に本番運用へと進める狙いがある。",
-    "translations": {
-      "ja": {
-        "title": "Dell AI Ecosystem Programが提示する「検証済み」の企業導入、生成AI実装の複雑性を解消しPoCから本番運用へ",
-        "summary": "Dellが提供する「Dell AI Ecosystem Program」は、多様なAIモデルやデータ基盤を企業が導入する際に直面する互換性・セキュリティ・運用の懸念を解決するソリューションだ。 検証済みの構成モデルを提示することで、個別の検証作業を簡略化し、PoC（概念実証）の段階で停滞しがちな導入プロセスを迅速に本番運用へと進める狙いがある。"
-      },
-      "en": {
-        "title": "Dell AI Ecosystem Program cuts through enterprise implementation complexity by offering validated, production-ready AI solution stacks",
-        "summary": "The Dell AI Ecosystem Program aims to bridge the gap between proof-of-concept projects and enterprise production environments by providing validated AI solution stacks. Deploying generative AI requires integrating open-weight models, commercial APIs, vector databases, and agent frameworks, all of which pose significant challenges regarding security, compatibility, and maintenance. By verifying these diverse components together, Dell enables engineering teams to bypass the grueling trial-and-error process of building reliable infrastructure from scratch. For builders tasked with operationalizing AI in the enterprise, this shift from piecemeal technology testing to vetted reference architectures is critical. It allows teams to focus on domain-specific application logic rather than debugging integration points, drastically accelerating the path from a successful prototype to a scalable, mission-critical business deployment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "アップデート"
-    ],
-    "created_at": "2026-11-17T08:31:53.325Z"
   },
   {
     "id": "art-1794904306456-5l5kl",
