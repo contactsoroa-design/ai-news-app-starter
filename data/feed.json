@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795087030643-hoapf",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/refirst11/articles/c7a21e84221abd",
+    "published_at": "2026-11-19T07:07:50.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pF6pMwqI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:CSS%2520fails%2520silently%252C%2520and%2520your%2520agent%2520can%2527t%2520see%2520it%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:refirst11%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQzYTg1Y2YyNzYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントのCSS生成能力の限界とUI不整合：コードレビューをすり抜ける「サイレント・フェイル」を防ぐための検証戦略",
+    "summary_ja": "コーディングエージェントは機能要件を満たすコードを生成できるが、CSSの視覚的な不整合を認識できず、ビルドが通ってもUIレイアウトが崩れる現象が多発している。 この「サイレント・フェイル」は自動テストが検知しにくく、最終的には人間による視覚確認が不可欠となる。 AIに全てを任せるのではなく、視覚回帰テストツールやスタイル定義の静的解析をCIパイプラインに統合し、AIと品質保証プロセスを分離して運用することがフロントエンド開発における現実的な解となる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントのCSS生成能力の限界とUI不整合：コードレビューをすり抜ける「サイレント・フェイル」を防ぐための検証戦略",
+        "summary": "コーディングエージェントは機能要件を満たすコードを生成できるが、CSSの視覚的な不整合を認識できず、ビルドが通ってもUIレイアウトが崩れる現象が多発している。 この「サイレント・フェイル」は自動テストが検知しにくく、最終的には人間による視覚確認が不可欠となる。 AIに全てを任せるのではなく、視覚回帰テストツールやスタイル定義の静的解析をCIパイプラインに統合し、AIと品質保証プロセスを分離して運用することがフロントエンド開発における現実的な解となる。"
+      },
+      "en": {
+        "title": "Why coding agents fail at CSS and how to catch visual regressions before your build ships",
+        "summary": "Coding agents often generate functional code that passes builds while silently breaking UI layouts, such as misaligned menus or incorrect spacing, because LLMs lack inherent visual context. These 'silent failures' bypass traditional unit tests, leaving your application riddled with styling inconsistencies that only humans spot after deployment. To fix this, builders must integrate visual regression testing suites or automated style linting directly into the CI/CD pipeline rather than relying on the agent's internal logic. Effectively managing AI-generated frontend code requires treating visual output as a separate, verifiable artifact. Stop expecting LLMs to self-validate design systems; instead, automate pixel-perfect verification to catch these rendering bugs before your users see them."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-19T11:17:10.643Z"
+  },
+  {
+    "id": "art-1795087024012-ahfte",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://maccus.fr/en/cloudflare-clairic-open-weights/",
+    "published_at": "2026-11-19T10:50:20.000Z",
+    "og_image_url": "https://maccus.fr/wp-content/uploads/2026/11/cloudflare-clairic-scores-en.jpg",
+    "title_ja": "Cloudflare、請求書や領収書を解析するAIモデル「Clairic」の重みデータを公開：高精度なドキュメント読み取り機能を開発者が利用可能に",
+    "summary_ja": "Cloudflareは、請求書や領収書の自動読み取りに特化したAIモデル「Clairic」のモデル重みをオープンソースとして公開した。 本モデルは複雑なフォーマットの書類からデータを正確に抽出する能力に長けており、開発者は自社アプリケーションや自動化パイプラインへ容易に統合できる。 RAG構築や会計業務の自動化を検討するエンジニアにとって、信頼性の高いドキュメント解析エンジンを構築・運用するための重要な選択肢となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Cloudflare、請求書や領収書を解析するAIモデル「Clairic」の重みデータを公開：高精度なドキュメント読み取り機能を開発者が利用可能に",
+        "summary": "Cloudflareは、請求書や領収書の自動読み取りに特化したAIモデル「Clairic」のモデル重みをオープンソースとして公開した。 本モデルは複雑なフォーマットの書類からデータを正確に抽出する能力に長けており、開発者は自社アプリケーションや自動化パイプラインへ容易に統合できる。 RAG構築や会計業務の自動化を検討するエンジニアにとって、信頼性の高いドキュメント解析エンジンを構築・運用するための重要な選択肢となるだろう。"
+      },
+      "en": {
+        "title": "Cloudflare releases open weights for Clairic, a specialized AI model designed to parse and extract data from invoices and receipts",
+        "summary": "Cloudflare has officially released the model weights for Clairic, an AI system specifically engineered to handle the nuances of parsing invoices and receipts. Unlike general-purpose models, Clairic is optimized for the variability found in financial documents, enabling developers to integrate high-precision data extraction directly into their own applications or automated accounting pipelines. By open-sourcing these weights, Cloudflare provides a critical resource for engineers building custom RAG systems or automated back-office workflows. For builders tackling document-heavy tasks, adopting this specialized model offers a significant head start over fine-tuning large, expensive foundation models from scratch, allowing for faster deployment of reliable, production-ready document processing features that significantly reduce manual data entry requirements."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-19T11:17:04.012Z"
+  },
+  {
+    "id": "art-1795087017056-kb6wx",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kom_hack/n/n643d976b43a7",
+    "published_at": "2026-11-19T11:14:44.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338108353/rectangle_large_type_2_cbc84bcdcc297b674df595342f275b08.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "3つのAIに「もし海が水じゃなかったら？」を議論させた結果、回答が完全分岐する面白い現象を検証",
+    "summary_ja": "著者は「もし海が水じゃなかったら？ 」という抽象的な問いを複数のAIに投げかけ、モデルごとの特性や論理構築の違いを比較検証した。 結果、各AIは全く異なる回答を導き出し、AIが単なる「検索エンジン」ではなく「独自の思考的パラダイム」を持つ存在であることが浮き彫りになった。 開発者やAI利用者にとって、プロンプトの結果はモデル選定に大きく依存するため、タスクの性質に応じてAIを使い分ける重要性が再確認される事例である。",
+    "translations": {
+      "ja": {
+        "title": "3つのAIに「もし海が水じゃなかったら？」を議論させた結果、回答が完全分岐する面白い現象を検証",
+        "summary": "著者は「もし海が水じゃなかったら？ 」という抽象的な問いを複数のAIに投げかけ、モデルごとの特性や論理構築の違いを比較検証した。 結果、各AIは全く異なる回答を導き出し、AIが単なる「検索エンジン」ではなく「独自の思考的パラダイム」を持つ存在であることが浮き彫りになった。 開発者やAI利用者にとって、プロンプトの結果はモデル選定に大きく依存するため、タスクの性質に応じてAIを使い分ける重要性が再確認される事例である。"
+      },
+      "en": {
+        "title": "Testing how 3 different AI models hallucinate or reason when asked: 'What if the ocean wasn't made of water?'",
+        "summary": "The author recently experimented by posing the counterfactual question, 'What if the ocean wasn't made of water? ' to three separate AI models to compare their divergent reasoning pathways. The result was a set of completely distinct, creative explanations, demonstrating that each LLM operates under its own unique logical paradigm rather than simply acting as a unified search interface. For developers and builders, this highlights that LLM output is highly sensitive to the underlying model architecture, making model selection a critical strategic decision for specific applications. Understanding these unique 'thinking styles' is essential for anyone building agentic workflows or creative AI tools, as the choice of model directly determines the fundamental character and reliability of the generated content."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-19T11:16:57.056Z"
+  },
+  {
+    "id": "art-1795087009664-mnig7",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/pitaspot/items/9ae99d32e3acc10329fa",
+    "published_at": "2026-11-19T11:15:38.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS1ZodHNjUngwYWJwQTZiT1RtZ0Q2dlJWaUVJWVh3Mm9KekotYUVZaTVObHFNVyUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0yZTM0NTA4ZDlhOGEyNGJkOTQwMDhmMGVkYTQxNjliMg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd099b8cb112ca9b236bfd8322927e5ea?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSVFMyU4MyU4MSVFMyU4MyVCQyVFMyU4MyVBMCVFMyU4MSVBRSVFMyU4MiVCMyVFMyU4MyVCQyVFMyU4MyU4OSVFMyU4MyVBQyVFMyU4MyU5MyVFMyU4MyVBNSVFMyU4MyVCQyVFRiVCQyU5QSVFOCVBQSVBRCVFMyU4MiU4MCVFNCVCRCU5QyVFNiVBNSVBRCVFMyU4MiU5MiVFNiVBOSU5RiVFNiVBMiVCMCVFMyU4MSVBQiVFNyVBNyVCQiVFMyU4MSU5NyVFMyU4MCU4MSVFNCVCQSVCQSVFMyU4MSVBRSVFNiU5OSU4MiVFOSU5NiU5MyVFMyU4MiU5MiVFNSU4RCVCMSVFMyU4MSVBQSVFMyU4MSU4NCVFNiU4OSU4MCVFMyU4MSVBQiVFNCVCRCVCRiVFMyU4MSU4NiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTU3YmQ2N2FmOTVjNDRhNGVmODA2YjE3ZDViMzNkMTI3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwaXRhc3BvdCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM4MzViNzIzMWNmOGM5ZjNiMzI2NjY1MTEzMTYyZjQy&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c589e3a7e972f39976cb799345cfb176",
+    "title_ja": "Anthropicが明かすClaude Codeのコードレビュー手法：AIによる自動検証で「人間が見るべき危険な箇所」に工数を集中",
+    "summary_ja": "Anthropicが公開した「Claude Code」チームのコードレビュー実践術は、AIを活用して読み取り作業を自動化し、エンジニアが最も重要なロジックの脆弱性や複雑な設計判断に集中できる体制を築いている。 具体的には、AIが生成したコードの検証やプルリクエストの要約を自動化し、人間は「コードが何を意図しているか」という本質的なリスク判断にのみ時間を使う。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicが明かすClaude Codeのコードレビュー手法：AIによる自動検証で「人間が見るべき危険な箇所」に工数を集中",
+        "summary": "Anthropicが公開した「Claude Code」チームのコードレビュー実践術は、AIを活用して読み取り作業を自動化し、エンジニアが最も重要なロジックの脆弱性や複雑な設計判断に集中できる体制を築いている。 具体的には、AIが生成したコードの検証やプルリクエストの要約を自動化し、人間は「コードが何を意図しているか」という本質的なリスク判断にのみ時間を使う。"
+      },
+      "en": {
+        "title": "Anthropic reveals how the Claude Code team uses AI to automate code reviews and focus human engineering on high-risk logic",
+        "summary": "Anthropic recently shared how the Claude Code team manages internal code reviews, detailing a strategy that pushes the bulk of comprehension and validation tasks to AI agents. By automating routine syntax checks and PR summarization, engineers are liberated to focus their finite attention exclusively on high-risk logic, complex architectural decisions, and security vulnerabilities that require human intuition. The core insight is that as AI-generated code volume increases, treating peer review as a line-by-line reading exercise is inefficient. Instead, builders should treat the AI as the first-pass reviewer, shifting human intervention toward verifying the intent and safety of the implementation. This transition essentially elevates the developer from a syntax checker to a high-level design auditor."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-19T11:16:49.664Z"
+  },
+  {
     "id": "art-1795086137505-qgu87",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10943,32 +11048,6 @@
     "created_at": "2026-11-18T07:01:59.052Z"
   },
   {
-    "id": "art-1794984460827-5sbuj",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/310techlab/n/n9cb2c89ebd8e",
-    "published_at": "2026-11-18T06:43:41.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/337614042/rectangle_large_type_2_609fd7f4af9f4f43518a3ead04d37639.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIエージェント「Muse」がGoogle Colabと連携開始、公式CLI経由の直接操作で実行環境の構築からコード実装まで自動化可能に",
-    "summary_ja": "AIエージェントツール「Muse」がアップデートされ、公式CLIを通じてGoogle Colab環境へ直接アクセスできるようになった。 これにより、従来の手動設定が不要となり、ブラウザベースのColab環境構築からPythonコードの実装、実行までの一連プロセスをMuse側で完結させることが可能になる。 開発環境のセットアップを自動化したいエンジニアにとって、作業効率を劇的に高める重要なアップデートだ。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント「Muse」がGoogle Colabと連携開始、公式CLI経由の直接操作で実行環境の構築からコード実装まで自動化可能に",
-        "summary": "AIエージェントツール「Muse」がアップデートされ、公式CLIを通じてGoogle Colab環境へ直接アクセスできるようになった。 これにより、従来の手動設定が不要となり、ブラウザベースのColab環境構築からPythonコードの実装、実行までの一連プロセスをMuse側で完結させることが可能になる。 開発環境のセットアップを自動化したいエンジニアにとって、作業効率を劇的に高める重要なアップデートだ。"
-      },
-      "en": {
-        "title": "AI agent Muse now integrates directly with Google Colab via official CLI to automate environment setup and code execution",
-        "summary": "The AI agent platform Muse has launched a new integration enabling direct interaction with Google Colab environments through its official CLI. By bridging the gap between the agent's logic and the Colab runtime, users can now automate the entire pipeline—from spinning up the notebook environment to injecting and executing complex Python code—without leaving the Muse interface or manually managing browser tabs. This update effectively removes the friction of manual configuration, allowing builders to treat Colab as an ephemeral, agent-managed backend for experimentation. For developers looking to streamline their AI-driven workflows, this signifies a shift where the agent doesn't just write code, but actively manages the infrastructure required to validate and run it in real-time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-18T06:47:40.827Z"
-  },
-  {
     "id": "art-1794984434771-0vk4n",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -12101,33 +12180,6 @@
       "開発"
     ],
     "created_at": "2026-11-18T03:02:25.961Z"
-  },
-  {
-    "id": "art-1794970939228-jmy2s",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.youtube.com/watch?v=MbhZd6s3P34",
-    "published_at": "2026-11-18T02:22:59.000Z",
-    "og_image_url": null,
-    "title_ja": "AI研究所の内部で何が起きているのか──「The Terror Inside the AI Labs」が暴く大手AI企業の安全性と倫理の限界",
-    "summary_ja": "大手AI研究所の内部における安全性への懸念や、急速な技術進化に伴う倫理的な限界を詳細に分析した映像コンテンツが公開された。 大規模モデルの競争が激化する中で、開発プロセスがどのようにリスク管理を疎かにしているのか、その構造的な問題に鋭く切り込んでいる。 AIエンジニアや開発者は、単なる技術的な実装だけでなく、今後直面する規制や安全性のガバナンスが、いかにプロダクトの存続に直結するかを再考すべき時期に来ている。",
-    "translations": {
-      "ja": {
-        "title": "AI研究所の内部で何が起きているのか──「The Terror Inside the AI Labs」が暴く大手AI企業の安全性と倫理の限界",
-        "summary": "大手AI研究所の内部における安全性への懸念や、急速な技術進化に伴う倫理的な限界を詳細に分析した映像コンテンツが公開された。 大規模モデルの競争が激化する中で、開発プロセスがどのようにリスク管理を疎かにしているのか、その構造的な問題に鋭く切り込んでいる。 AIエンジニアや開発者は、単なる技術的な実装だけでなく、今後直面する規制や安全性のガバナンスが、いかにプロダクトの存続に直結するかを再考すべき時期に来ている。"
-      },
-      "en": {
-        "title": "Inside the AI Labs: Investigating the hidden safety, governance, and ethical gaps within major frontier AI organizations",
-        "summary": "This investigative analysis explores the unsettling environment inside major AI labs, highlighting critical lapses in safety protocols and the inherent ethical trade-offs driven by the relentless pace of development. The footage critiques the systemic neglect of risk management in pursuit of model superiority, raising alarms about how current development processes prioritize speed over robust governance. For builders and AI engineers, this serves as a sober reminder that technical capability is only half the battle. As regulatory scrutiny intensifies, those constructing AI systems must realize that failing to embed safety and governance frameworks early is not just an ethical oversight—it is a existential risk to the long-term viability of any major AI product."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-18T03:02:19.228Z"
   },
   {
     "id": "art-1794970929986-80a6b",
@@ -13731,32 +13783,6 @@
       "画像生成"
     ],
     "created_at": "2026-11-17T21:32:11.404Z"
-  },
-  {
-    "id": "art-1794950232711-0assd",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/mrmrmr/items/669661c50065a2dbe224",
-    "published_at": "2026-11-17T21:09:19.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzI3NDE5JTJGMTJmOWI5NDdmYWQxMDJmMzI1ZTdhM2MxY2I1YTNmOTc2OWRjYjY4ZCUyRmxhcmdlLnBuZyUzRjE3NzM1Nzk2NTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTg4ZjQ2OWIxYjE5MmE2NWQ5MWIxOTc1NDc4ZDcwYjhj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De95bedc85e3356abe6a208a41038b450?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU1JUIwJThGJUU1JUFEJUE2NSVFNSVCOSVCNCVFNyU5NCU5RiVFMyU4MSVBNyVFMyU4MiU4MiVFMyU4MiU4RiVFMyU4MSU4QiVFMyU4MiU4QiVFMyU4MCU5MSVFNSU4OCU4NiVFOSVBMSU5RSVFRiVCQyU4OENsYXNzaWZpY2F0aW9uJUVGJUJDJTg5JUUzJTgxJUEzJUUzJTgxJUE2JUUzJTgxJUFBJUUzJTgxJUFCJUVGJUJDJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZTM2NDgxYmQzY2ViYzgwNzQyNTU5NTlmOGM2OGQ0Mjc&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtcm1ybXImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NWIwMjVjOTJjZjhmZjExZjU4NzhmZDc0M2JhOTQ4ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=2a03da143f187e8c03a4dc1f7efba099",
-    "title_ja": "AI学習の基本「分類問題（Classification）」の仕組み：身近な例で学ぶデータ判断の基礎と開発者が知るべきアルゴリズムの重要性",
-    "summary_ja": "機械学習における「分類」とは、入力されたデータをあらかじめ定義されたカテゴリーに振り分ける手法であり、スパム検知や画像判別など現代のAI開発における最も重要なタスクの一つです。 本記事では、犬・猫の識別や果物の選別といった日常的な例を交え、モデルがどのように境界線を引いて判断を行うかを直感的に。",
-    "translations": {
-      "ja": {
-        "title": "AI学習の基本「分類問題（Classification）」の仕組み：身近な例で学ぶデータ判断の基礎と開発者が知るべきアルゴリズムの重要性",
-        "summary": "機械学習における「分類」とは、入力されたデータをあらかじめ定義されたカテゴリーに振り分ける手法であり、スパム検知や画像判別など現代のAI開発における最も重要なタスクの一つです。 本記事では、犬・猫の識別や果物の選別といった日常的な例を交え、モデルがどのように境界線を引いて判断を行うかを直感的に。"
-      },
-      "en": {
-        "title": "Understanding Classification in Machine Learning: A Practical Guide to How AI Categorizes Data and Why Algorithm Selection Matters for Developers",
-        "summary": "Classification represents one of the fundamental pillars of machine learning, focusing on tasks where AI must sort input data into predefined categories—such as distinguishing between spam or legitimate emails, or identifying specific animal species. This guide breaks down the underlying logic, using intuitive examples like fruit sorting and image identification, to explain how models establish decision boundaries. For developers embarking on AI projects, the key takeaway is that accuracy is not just about model complexity but about selecting the right algorithm and ensuring high-quality, pre-processed training data. Mastery of these classification mechanics is essential for building reliable, production-ready AI systems that can handle real-world ambiguity and deliver precise, actionable outputs across various industrial and creative applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-17T21:17:12.711Z"
   },
   {
     "id": "art-1794950218075-gx6pk",
@@ -18073,32 +18099,6 @@
       "マーケ・集客・ASO"
     ],
     "created_at": "2026-11-17T04:02:02.521Z"
-  },
-  {
-    "id": "art-1794888112561-hfqs0",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/coffeecupjp/articles/ec2ba8cb5c1ad7",
-    "published_at": "2026-11-16T12:57:13.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Q7xDTXbj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E8%25A3%25BD%25E5%2593%2581%25E3%2581%25AE%25E7%2589%25B9%25E8%25A8%25B1%25E7%25BE%25A4%25E3%2581%25AE%25E5%259C%25B0%25E5%259B%25B3%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E3%2580%2591%25E7%2589%25B9%25E8%25A8%25B1%25E3%2582%2592%25E5%258B%2595%25E4%25BD%259C%25E3%2581%25A7%25E6%25A7%258B%25E9%2580%25A0%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B%25E7%25A0%2594%25E7%25A9%25B6%25E3%2583%25A1%25E3%2583%25A2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kazuya%2520Kurihara%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzU4NThhOTNlMmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "特許検索にAIと知識グラフを導入し、「動作」単位で特許群を構造化するアプローチ——キーワード検索の限界を突破する技術研究",
-    "summary_ja": "従来の特許検索はキーワードやベクトルマッチングに依存しており、表現の揺らぎや分類の粗さが課題でした。 本稿では、特許を機能的な「動作」で細分化し、知識グラフを用いて構造化することで、異分野間の技術比較や応用範囲の特定を容易にする手法を提案します。 AIを活用して文書群を構造的に整理することは、新規プロダクト開発における技術的ホワイトスペースの発見や競争優位性の構築に直結します。",
-    "translations": {
-      "ja": {
-        "title": "特許検索にAIと知識グラフを導入し、「動作」単位で特許群を構造化するアプローチ——キーワード検索の限界を突破する技術研究",
-        "summary": "従来の特許検索はキーワードやベクトルマッチングに依存しており、表現の揺らぎや分類の粗さが課題でした。 本稿では、特許を機能的な「動作」で細分化し、知識グラフを用いて構造化することで、異分野間の技術比較や応用範囲の特定を容易にする手法を提案します。 AIを活用して文書群を構造的に整理することは、新規プロダクト開発における技術的ホワイトスペースの発見や競争優位性の構築に直結します。"
-      },
-      "en": {
-        "title": "Beyond Keyword Search: Structuring Patent Landscapes with AI and Knowledge Graphs for Functional Behavior Mapping",
-        "summary": "Traditional patent discovery relies heavily on keyword or vector-based search, which often fails due to linguistic nuances and overly broad, shallow classifications. This research proposes a new approach that structures patent collections by functional \"behavior\" or actions rather than static terms, utilizing knowledge graphs to map the relationships between technologies. By moving away from raw text matching and toward behavior-based structural analysis, developers can compare technologies across disparate fields and identify specific application gaps. For builders aiming to innovate, this shift is critical: leveraging AI to turn unstructured patent data into a navigable, behavior-driven graph allows for the systematic discovery of technological white spaces and helps effectively validate new product opportunities against existing intellectual property landscapes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-17T04:01:52.561Z"
   },
   {
     "id": "art-1794888104448-xxdr3",
