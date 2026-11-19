@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1795102354378-o7wli",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/KmiQ/articles/blob/main/choosing-the-inference-stack-for-voice-ai.md",
+    "published_at": "2026-11-19T14:56:28.000Z",
+    "og_image_url": null,
+    "title_ja": "Voice AI開発のインフラ選定ガイド：クローズドAPIからオープンウェイトモデルへの移行と低遅延推論スタックの最適化戦略",
+    "summary_ja": "音声AIアプリケーション開発において、OpenAI等のクローズドAPIからオープンウェイトモデルへの移行が加速している。 音声インタラクションでは、TTFT（Time To First Token）を200ミリ秒以下に抑える必要があり、API経由の不規則な遅延はユーザー体験を大きく損なう要因となる。 開発者は、API依存の簡便さと、自社でGPU推論スタックを運用して得られる決定論的なパフォーマンスのトレードオフを慎重に見極める必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Voice AI開発のインフラ選定ガイド：クローズドAPIからオープンウェイトモデルへの移行と低遅延推論スタックの最適化戦略",
+        "summary": "音声AIアプリケーション開発において、OpenAI等のクローズドAPIからオープンウェイトモデルへの移行が加速している。 音声インタラクションでは、TTFT（Time To First Token）を200ミリ秒以下に抑える必要があり、API経由の不規則な遅延はユーザー体験を大きく損なう要因となる。 開発者は、API依存の簡便さと、自社でGPU推論スタックを運用して得られる決定論的なパフォーマンスのトレードオフを慎重に見極める必要がある。"
+      },
+      "en": {
+        "title": "From Closed APIs to Open-Weights: A Guide to Building High-Performance Inference Stacks for Voice AI",
+        "summary": "Building a performant Voice AI pipeline requires balancing the convenience of closed-source model APIs against the granular latency control offered by hosting open-weight models. For voice applications, where sub-200ms TTFT (Time To First Token) is critical, the inference stack choice determines the user experience quality. This guide breaks down the architectural shift from outsourcing model hosting to managing dedicated GPU clusters, analyzing the trade-offs in cost, cold-start latency, and throughput overhead. For builders, the takeaway is that as voice latency expectations tighten, owning the inference stack becomes essential to optimize streaming, avoid API jitter, and ensure deterministic performance that black-box model providers simply cannot guarantee at the required speed."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-19T15:32:34.378Z"
+  },
+  {
+    "id": "art-1795102332516-q8dqg",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/context-dev",
+    "published_at": "2026-11-18T11:43:41.000Z",
+    "og_image_url": null,
+    "title_ja": "Context.dev、AI駆動のオープンソース・スプレッドシート「Enrichable」を公開。データエンリッチメントを自動化し非構造化データを即座に構造化",
+    "summary_ja": "Context.devが公開した「Enrichable」は、スプレッドシート形式のインターフェースでAIを用いたデータエンリッチメントを可能にするオープンソースツールだ。 独自のプロンプトやAPI設定を介さずとも、シート上の非構造化データを即座に構造化・拡充できる。 大量の顧客リストやリード情報を処理する開発者やマーケターにとって、手動作業を排してデータ品質を向上させるための効率的な基盤として機能するだろう。",
+    "translations": {
+      "ja": {
+        "title": "Context.dev、AI駆動のオープンソース・スプレッドシート「Enrichable」を公開。データエンリッチメントを自動化し非構造化データを即座に構造化",
+        "summary": "Context.devが公開した「Enrichable」は、スプレッドシート形式のインターフェースでAIを用いたデータエンリッチメントを可能にするオープンソースツールだ。 独自のプロンプトやAPI設定を介さずとも、シート上の非構造化データを即座に構造化・拡充できる。 大量の顧客リストやリード情報を処理する開発者やマーケターにとって、手動作業を排してデータ品質を向上させるための効率的な基盤として機能するだろう。"
+      },
+      "en": {
+        "title": "Context.dev Launches Enrichable: An Open-Source AI Spreadsheet Designed to Automate Data Enrichment and Unstructured Data Processing",
+        "summary": "Context.dev has introduced Enrichable, an open-source tool that transforms the familiar spreadsheet interface into a powerful AI-driven platform for data enrichment. It allows developers and analysts to process unstructured datasets, clean messy inputs, and automatically add structured metadata without configuring complex API pipelines or writing custom scraping code from scratch. By enabling users to iterate on data enrichment tasks directly within rows and columns, Enrichable significantly reduces the friction involved in preparing lead lists or CRM data. For builders who struggle with managing manual data entry workflows, this tool provides a robust, transparent alternative that bridges the gap between raw unstructured text and usable structured datasets for immediate downstream integration."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-19T15:32:12.516Z"
+  },
+  {
+    "id": "art-1795102312956-3g1iz",
+    "source_id": "source-publickey",
+    "source_name": "Publickey",
+    "url": "https://www.publickey1.jp/blog/26/database_hubai.html",
+    "published_at": "2026-11-19T15:19:21.000Z",
+    "og_image_url": "https://www.publickey1.jp/2026/database-hub-ga01.png",
+    "title_ja": "マイクロソフト「Database Hub」正式リリース、Azure・オンプレ・他社クラウドDBを一元管理しAIエージェントで運用監視を自動化",
+    "summary_ja": "Microsoft Ignite 2026にて、組織内のあらゆるデータベースを一元管理する「Database Hub」が正式リリースされた。 Azure上のDBのみならず、オンプレミスや他社クラウド環境のデータベースも自動検出し、資産台帳の作成からAIエージェントによる運用監視の自動化までを統合的に提供する。 マルチクラウド環境でのガバナンスと運用負荷低減を求めるエンジニアにとって、散逸しがちなデータ資産の可視化と自動対応を一手に引き受ける強力な基盤となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "マイクロソフト「Database Hub」正式リリース、Azure・オンプレ・他社クラウドDBを一元管理しAIエージェントで運用監視を自動化",
+        "summary": "Microsoft Ignite 2026にて、組織内のあらゆるデータベースを一元管理する「Database Hub」が正式リリースされた。 Azure上のDBのみならず、オンプレミスや他社クラウド環境のデータベースも自動検出し、資産台帳の作成からAIエージェントによる運用監視の自動化までを統合的に提供する。 マルチクラウド環境でのガバナンスと運用負荷低減を求めるエンジニアにとって、散逸しがちなデータ資産の可視化と自動対応を一手に引き受ける強力な基盤となるだろう。"
+      },
+      "en": {
+        "title": "Microsoft launches Database Hub to centralize Azure, on-prem, and multi-cloud database management with AI-driven operational monitoring",
+        "summary": "At Microsoft Ignite 2026, Microsoft officially released Database Hub, a unified control plane designed to inventory and manage database assets across Azure, on-premises infrastructure, and third-party clouds. The platform automatically discovers databases to generate a real-time asset registry while leveraging integrated AI agents to handle operational monitoring and issue remediation. By consolidating these fragmented environments into a single dashboard, the service aims to solve common governance headaches for teams struggling with shadow IT across hybrid setups. For infrastructure engineers managing complex multi-cloud deployments, this release signals a shift toward automated database lifecycle management, effectively reducing manual oversight by automating the routine maintenance tasks that historically burdened operations teams across siloed data environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-19T15:31:52.956Z"
+  },
+  {
     "id": "art-1795101432611-p7dpx",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -11694,33 +11774,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-18T08:47:02.440Z"
-  },
-  {
-    "id": "art-1794990754687-ojp50",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.lettercamp.com/blog/ai-writing-in-launch-hn-posts",
-    "published_at": "2026-11-18T08:04:19.000Z",
-    "og_image_url": "https://assets.lettercamp.com/sites/d22a5113-e1be-4d4a-bd90-0bdd6f84973e/2da14dc1-542e-45d1-ab70-e1092b19269e.png",
-    "title_ja": "Hacker Newsの「Launch HN」投稿分析：AI生成文章は人間が執筆した投稿よりも統計的に低評価（upvotes）となる傾向が判明",
-    "summary_ja": "Hacker Newsへの製品ローンチ投稿（Launch HN）を分析したところ、AIで生成された文章よりも、人間が直接執筆した投稿の方が圧倒的に多くのupvotesを獲得していることが明らかになった。 開発者コミュニティは宣伝色やAI特有の無機質さを敏感に察知するため、個人の熱量や独自の背景を伝えるストーリーテリングが成功の鍵となる。 AIを活用するにしても、定型文をそのまま使うのではなく、人間による編集と意思を込めることがマーケティング上の差別化に不可欠だ。",
-    "translations": {
-      "ja": {
-        "title": "Hacker Newsの「Launch HN」投稿分析：AI生成文章は人間が執筆した投稿よりも統計的に低評価（upvotes）となる傾向が判明",
-        "summary": "Hacker Newsへの製品ローンチ投稿（Launch HN）を分析したところ、AIで生成された文章よりも、人間が直接執筆した投稿の方が圧倒的に多くのupvotesを獲得していることが明らかになった。 開発者コミュニティは宣伝色やAI特有の無機質さを敏感に察知するため、個人の熱量や独自の背景を伝えるストーリーテリングが成功の鍵となる。 AIを活用するにしても、定型文をそのまま使うのではなく、人間による編集と意思を込めることがマーケティング上の差別化に不可欠だ。"
-      },
-      "en": {
-        "title": "Hacker News Launch Analysis Reveals Human-Written Posts Consistently Outperform AI-Generated Content in Community Upvotes and Engagement Metrics",
-        "summary": "A detailed analysis of \"Launch HN\" posts on Hacker News shows that submissions written by humans statistically secure significantly more upvotes than those generated by AI tools. The findings suggest that the developer community maintains a high sensitivity to AI-generated tone and generic marketing copy, preferring authentic stories and personal context over polished, artificial prose. For builders using LLMs to draft launch copy, the data serves as a critical warning: automation can easily dilute the sincerity that drives initial adoption and trust. To achieve traction on technical forums, founders must inject genuine voice and unique background into their announcements, as automation cannot replace the human connection necessary to convert readers into early users."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "マーケ・集客・ASO",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-18T08:32:34.687Z"
   },
   {
     "id": "art-1794990743494-9l4by",
@@ -23989,32 +24042,6 @@
     "created_at": "2026-11-14T08:46:42.772Z"
   },
   {
-    "id": "art-1794645105536-1n9fr",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/freeflow-dictation",
-    "published_at": "2026-11-10T08:38:27.000Z",
-    "og_image_url": null,
-    "title_ja": "Mac用「FreeFlow Dictation」が登場、Claude Codeと連携し音声コマンドでコーディングを自動化するオンデバイスDictationツール",
-    "summary_ja": "FreeFlow Dictationは、Mac環境で動作するオンデバイスの音声入力ツールで、Claude Codeと連携して音声入力をシームレスにコーディングコマンドへ変換する。 クラウド送信なしでプライバシーを保護しつつ、開発フローに直接音声を組み込むことで、IDEから手を離さずに複雑なコード修正や指示出しが可能になる。 AI時代の開発において、手入力の限界を超える新たなインターフェースとして注目したい。",
-    "translations": {
-      "ja": {
-        "title": "Mac用「FreeFlow Dictation」が登場、Claude Codeと連携し音声コマンドでコーディングを自動化するオンデバイスDictationツール",
-        "summary": "FreeFlow Dictationは、Mac環境で動作するオンデバイスの音声入力ツールで、Claude Codeと連携して音声入力をシームレスにコーディングコマンドへ変換する。 クラウド送信なしでプライバシーを保護しつつ、開発フローに直接音声を組み込むことで、IDEから手を離さずに複雑なコード修正や指示出しが可能になる。 AI時代の開発において、手入力の限界を超える新たなインターフェースとして注目したい。"
-      },
-      "en": {
-        "title": "FreeFlow Dictation launches for macOS, enabling voice-controlled coding workflows by hooking directly into Claude Code via on-device processing",
-        "summary": "FreeFlow Dictation is a new macOS utility that allows developers to voice-dictate code and commands, acting as a bridge directly into Claude Code. By keeping processing on-device, it ensures privacy without the latency of cloud-based transcription, effectively turning spoken instructions into executable coding tasks within your development environment. This integration demonstrates a shift toward voice-first development, allowing engineers to handle complex code refactoring or terminal commands without needing to switch focus from their IDE. For builders leveraging LLM-based coding assistants, this tool represents an essential paradigm shift in how we interact with codebases, proving that hands-free interaction is becoming a viable standard for accelerating daily development throughput and reducing RSI risk."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-14T08:31:45.536Z"
-  },
-  {
     "id": "art-1794645092760-r3phi",
     "source_id": "source-github-trending",
     "source_name": "GitHub Trending (AI / TypeScript / Python)",
@@ -24039,32 +24066,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-14T08:31:32.760Z"
-  },
-  {
-    "id": "art-1794644209237-ukibk",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/google-labs",
-    "published_at": "2026-11-13T11:39:17.000Z",
-    "og_image_url": null,
-    "title_ja": "Google Labs、「Tabletop」を公開。AIを活用して多人数でインタラクティブなグループ体験を構築する新プラットフォーム",
-    "summary_ja": "Google Labsが発表した「Tabletop」は、AIモデルを活用し、オンラインで多人数参加型のインタラクティブなグループ体験を生成・共有できるプラットフォームだ。 複雑なコーディングを必要とせずに、リアルタイムで動的なストーリーテリングやゲームプレイを構築可能である。 個人開発者がAIを基盤としたコミュニティ向けツールやエンターテインメント体験を迅速にプロトタイピングし、ユーザー同士の関与を深めるための強力な手段となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "Google Labs、「Tabletop」を公開。AIを活用して多人数でインタラクティブなグループ体験を構築する新プラットフォーム",
-        "summary": "Google Labsが発表した「Tabletop」は、AIモデルを活用し、オンラインで多人数参加型のインタラクティブなグループ体験を生成・共有できるプラットフォームだ。 複雑なコーディングを必要とせずに、リアルタイムで動的なストーリーテリングやゲームプレイを構築可能である。 個人開発者がAIを基盤としたコミュニティ向けツールやエンターテインメント体験を迅速にプロトタイピングし、ユーザー同士の関与を深めるための強力な手段となるだろう。"
-      },
-      "en": {
-        "title": "Google Labs launches Tabletop, an AI-powered platform for building interactive and collaborative multi-user group experiences",
-        "summary": "Google Labs has unveiled Tabletop, an innovative platform designed to leverage AI models for creating and sharing collaborative, multi-user experiences in real-time. By enabling users to build dynamic storytelling environments and interactive group activities without heavy coding, Tabletop lowers the barrier to entry for developers who want to experiment with social AI interactions. This tool serves as a sandbox for builders to prototype community-driven entertainment, allowing for sophisticated agent-based interactions that encourage active user participation. For those developing social apps, Tabletop offers a scalable framework to implement complex game logic or narrative structures that rely on AI orchestration, effectively turning static group interactions into fluid, responsive experiences that evolve based on community input."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-14T08:16:49.237Z"
   },
   {
     "id": "art-1794644195169-mgnq0",
