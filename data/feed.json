@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795208556130-xy2fw",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/murooka_az/articles/failure-scan-two-claude-code-bugs",
+    "published_at": "2026-11-20T17:37:18.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--e-QkVq7i--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25AE%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%2592%25E5%2588%2586%25E6%259E%2590%25E3%2581%2599%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581hook%2520%25E3%2581%25AE%25E5%2595%258F%25E9%25A1%258C%25E3%2581%258B%25E3%2582%2589%2520Claude%2520Code%2520%25E3%2581%25AE%25E4%25B8%258D%25E5%2585%25B7%25E5%2590%2588%2520...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Murooka%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2RlMjA5NmUyNDguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "「CLAUDE.md」の肥大化とループを阻止せよ：Claude Codeのログ分析から判明したフック問題と製品バグの特定手法",
+    "summary_ja": "Claude Codeでプロンプトを追加し続ける運用は、CLAUDE.mdの肥大化と改善効果の停滞を招く。 本記事では、会話ログをスクリプトで解析し、失敗した呼び出しをLLMで検証する手法を解説する。 これにより、フック定義の競合やClaude Code自体のバグといった根本原因を正確に切り分け可能だ。 場当たり的なプロンプト修正に頼るのではなく、データに基づいた不具合特定を行うことが、AIコーディング支援ツールの運用最適化には不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "「CLAUDE.md」の肥大化とループを阻止せよ：Claude Codeのログ分析から判明したフック問題と製品バグの特定手法",
+        "summary": "Claude Codeでプロンプトを追加し続ける運用は、CLAUDE.mdの肥大化と改善効果の停滞を招く。 本記事では、会話ログをスクリプトで解析し、失敗した呼び出しをLLMで検証する手法を解説する。 これにより、フック定義の競合やClaude Code自体のバグといった根本原因を正確に切り分け可能だ。 場当たり的なプロンプト修正に頼るのではなく、データに基づいた不具合特定を行うことが、AIコーディング支援ツールの運用最適化には不可欠である。"
+      },
+      "en": {
+        "title": "Analyzing Claude Code Logs to Curb 'CLAUDE.md' Bloat, Solve Hook Conflicts, and Uncover Product Bugs",
+        "summary": "Endless tweaks to CLAUDE.md often result in unmanageable bloat without fixing persistent coding failures in Claude Code. To solve this, the author built a pipeline that scripts conversation logs to identify failed calls, then uses an LLM to perform root-cause analysis on those failures. This systematic approach successfully isolated issues ranging from misinterpreted hook definitions to legitimate bugs within the Claude Code tool itself. Moving beyond reactive prompt engineering allows developers to pinpoint why agents fail, separating architectural misuse from actual software defects. For developers relying on AI agents for complex tasks, logging and analyzing interaction telemetry is the only reliable way to break the cycle of ineffective prompt accumulation and actually debug the agent's behavior."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-20T21:02:36.130Z"
+  },
+  {
+    "id": "art-1795208539090-zgj7x",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://medcitynews.com/2026/11/who-should-make-medical-necessity-decisions-ai-insurers-or-treating-physicians/",
+    "published_at": "2026-11-20T20:47:47.000Z",
+    "og_image_url": null,
+    "title_ja": "医療の必要性判断は誰が担うべきか：AI、保険会社、医師による責任分担の是非と未来の医療決定プロセスを考察",
+    "summary_ja": "医療において「治療の必要性」を誰が決定すべきかという議論が深まっている。 保険会社はコスト抑制のためにAIを活用した機械的な判定を推し進める一方、医師側は患者の個別状況を無視したアルゴリズムの弊害を指摘し、対立が激化している。 医療DXを推進する開発者は、単なる効率化だけでなく、AIの判定結果が患者の生命に直接影響を及ぼすという倫理的責任と、人間による最終的な監査プロセスをどのようにシステム設計へ組み込むかを真剣に検討する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "医療の必要性判断は誰が担うべきか：AI、保険会社、医師による責任分担の是非と未来の医療決定プロセスを考察",
+        "summary": "医療において「治療の必要性」を誰が決定すべきかという議論が深まっている。 保険会社はコスト抑制のためにAIを活用した機械的な判定を推し進める一方、医師側は患者の個別状況を無視したアルゴリズムの弊害を指摘し、対立が激化している。 医療DXを推進する開発者は、単なる効率化だけでなく、AIの判定結果が患者の生命に直接影響を及ぼすという倫理的責任と、人間による最終的な監査プロセスをどのようにシステム設計へ組み込むかを真剣に検討する必要がある。"
+      },
+      "en": {
+        "title": "Who should govern medical necessity decisions: Should AI algorithms, private insurance firms, or treating physicians hold ultimate authority?",
+        "summary": "The healthcare industry is currently grappling with a contentious debate over who holds the authority to determine medical necessity. Insurance providers are increasingly deploying AI-driven automated tools to curb costs and streamline claims processing, yet this approach faces severe backlash from physicians who argue these algorithms ignore the nuanced realities of patient care. For engineers building clinical decision support systems, this clash highlights a critical requirement: moving beyond mere efficiency to embed robust ethical safeguards. Developers must prioritize transparency and ensure that system architecture includes human-in-the-loop oversight, as algorithmic errors in this sector carry life-altering consequences. Designing for healthcare necessitates balancing automation speed with the indispensable requirement for medical accountability and professional judgment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-20T21:02:19.090Z"
+  },
+  {
+    "id": "art-1795208531541-tselo",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kohakuworks/n/n64de548f603a",
+    "published_at": "2026-11-20T20:51:37.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/7f99d4b580195661289c922357177d6f4584380f.png",
+    "title_ja": "ゲーム開発の「伝えてはいました」という罠：工程表にない作業がプロジェクトを停滞させる理由と対策",
+    "summary_ja": "個人開発において、工程表にない「ハブ画面を一枚絵のマップにする」といった作業が漏れることでプロジェクトが停滞するケースがある。 「伝えたはず」という思い込みは、相手との認識のズレを生む最大の要因だ。 タスクの棚卸しを定期的に行い、細かな要件もドキュメントやチケットとして可視化しておくことが、開発の迷走を防ぐ唯一の手段となる。 言葉による伝達だけでなく、具体的な成果物イメージを共有する仕組みこそが、個人・小規模開発において不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "ゲーム開発の「伝えてはいました」という罠：工程表にない作業がプロジェクトを停滞させる理由と対策",
+        "summary": "個人開発において、工程表にない「ハブ画面を一枚絵のマップにする」といった作業が漏れることでプロジェクトが停滞するケースがある。 「伝えたはず」という思い込みは、相手との認識のズレを生む最大の要因だ。 タスクの棚卸しを定期的に行い、細かな要件もドキュメントやチケットとして可視化しておくことが、開発の迷走を防ぐ唯一の手段となる。 言葉による伝達だけでなく、具体的な成果物イメージを共有する仕組みこそが、個人・小規模開発において不可欠だ。"
+      },
+      "en": {
+        "title": "The “I Told You” Trap in Game Development: Why Unlisted Tasks Stall Your Project and How to Fix It",
+        "summary": "In solo and indie development, projects often hit walls when minor tasks—like turning a hub screen into an illustrated map—are omitted from the project timeline. Relying on the assumption that you already “told” someone, or even yourself, creates dangerous gaps in execution. Periodic task audits are critical; if a task isn’t explicitly captured as a ticket or documentation item, it essentially doesn't exist for your production roadmap. Instead of relying on verbal memory, you must visualize every requirement. The lesson for builders is simple: the moment you rely on internal memory rather than documented task lists, you invite scope creep and sudden delays. Treat your backlog as the single source of truth to maintain velocity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-20T21:02:11.541Z"
+  },
+  {
+    "id": "art-1795208523559-vh5qf",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/quotidia/items/63b86d2ba86f94d89c3c",
+    "published_at": "2026-11-20T21:01:19.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDQzMzI3MSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc3OTAwNzIzNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YWY5NDIyNzdmMjZlOGJhMzVmYmZlY2IwOGU2ZWQ2NTA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df59d4b48280797c581d3f62880665fc3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU0JUJBJUFDJUU5JTgzJUJEJUU1JUE0JUE3JUU1JUFEJUE2JUUzJTgxJUFFJUU1JUFEJUE2JUU3JTk0JTlGJUU3JTlCJUI4JUU4JUFCJTg3JUU5JTgzJUE4JUU5JTk2JTgwJUUzJTgwJTgxQUklRTQlQkUlOUQlRTUlQUQlOTglRTMlODIlOTIlRTYlOEMlQUYlRTMlODIlOEElRTglQkYlOTQlRTMlODIlOEI2JUU5JUEwJTg1JUU3JTlCJUFFJUUzJTgyJTkyJUU1JTg1JUFDJUU5JTk2JThCJUUzJTgwJTgyMSVFMyU4MSVBNCVFMyU4MSVBNyVFMyU4MiU4MiVFNSVCRCU5MyVFMyU4MSVBNiVFMyU4MSVBRiVFMyU4MSVCRSVFMyU4MiU4QyVFMyU4MSVCMCVFMyU4MCU4MSVFMyU4MSU5NyVFMyU4MSVCMCVFMyU4MiU4OSVFMyU4MSU4RkFJJUUzJTgyJTkyJUU4JUE3JUE2JUUzJTgyJTg5JUUzJTgxJTlBJUUzJTgxJUFCJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YjZmNTg4OGI1ZGYzZjUwYTRjMTE5NzJmZmI1MTdjZjQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBxdW90aWRpYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTRhNjI0NjUzMTU4ODhjZWUzZDIxNjI0N2Q4Y2JjZDY2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=8e5d7dc542030bf133de07fe1c81e054",
+    "title_ja": "京都大学、学生向けに「AI依存度」チェックリスト6項目を公開――過度な活用による思考力低下や現実逃避を防ぐための自己診断ツール",
+    "summary_ja": "京都大学の学生相談部門が、AIとの過度な付き合い方を見直すための「AIに悩みを相談する際に気をつけて欲しいこと」というガイドラインを公開した。 思考の外部化や現実逃避といったAI依存の兆候を示す6つのチェック項目を提示し、一つでも該当する場合はAIの使用を控え、現実の対人関係や思考時間を優先するよう呼びかけている。 ツールを効率的に使うだけでなく、思考プロセスを自律的に維持するという観点は、技術開発者自身にとっても健全なAIとの付き合い方を再定義する警鐘となりそうだ。",
+    "translations": {
+      "ja": {
+        "title": "京都大学、学生向けに「AI依存度」チェックリスト6項目を公開――過度な活用による思考力低下や現実逃避を防ぐための自己診断ツール",
+        "summary": "京都大学の学生相談部門が、AIとの過度な付き合い方を見直すための「AIに悩みを相談する際に気をつけて欲しいこと」というガイドラインを公開した。 思考の外部化や現実逃避といったAI依存の兆候を示す6つのチェック項目を提示し、一つでも該当する場合はAIの使用を控え、現実の対人関係や思考時間を優先するよう呼びかけている。 ツールを効率的に使うだけでなく、思考プロセスを自律的に維持するという観点は、技術開発者自身にとっても健全なAIとの付き合い方を再定義する警鐘となりそうだ。"
+      },
+      "en": {
+        "title": "Kyoto University Publishes 6-Point Self-Diagnostic Checklist for Students to Assess and Prevent Excessive AI Dependency and Cognitive Erosion",
+        "summary": "Kyoto University’s student counseling department recently published a guide titled \"Points to Keep in Mind When Consulting AI,\" designed to help students identify the early warning signs of AI dependency. The release features a six-point checklist targeting behaviors like outsourcing critical thinking, social avoidance, or using AI as a primary emotional crutch. If any point rings true, the university advises students to take an immediate break from AI to reconnect with real-world interactions and autonomous problem-solving. For builders integrating AI into daily workflows, this serves as a sober reminder: optimizing for efficiency shouldn't come at the cost of cognitive autonomy. It is essential to treat AI as a tool for support, not a replacement for human critical thought."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-20T21:02:03.559Z"
+  },
+  {
     "id": "art-1795207640693-t9tg2",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -8486,32 +8591,6 @@
     "created_at": "2026-11-19T23:02:15.221Z"
   },
   {
-    "id": "art-1795129327890-007qb",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/fair_fennel1981/n/n73a1e034ecdb",
-    "published_at": "2026-11-19T23:01:32.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/338261790/rectangle_large_type_2_46663ee5fddc4209da5c1e21fe1eae30.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Codeを活用した個人アプリ開発の全記録—README更新からコミット履歴までをAIと共に段階的に進める具体的なワークフロー",
-    "summary_ja": "個人開発アプリの制作プロセスをClaude Code（Opus 5.5）と共に段階的に進めた実践記録が公開された。 この開発フローでは、アプリの計画表や判断ログ、READMEの記述、コミット履歴の管理までをAIに委ね、文脈を維持しながら複雑な機能を実装している。 単にコードを書かせるだけでなく、開発判断の経緯をアーカイブすることで、個人開発特有の「迷い」を減らし、長期的なメンテナンス性を高めるAI活用の好例だ。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeを活用した個人アプリ開発の全記録—README更新からコミット履歴までをAIと共に段階的に進める具体的なワークフロー",
-        "summary": "個人開発アプリの制作プロセスをClaude Code（Opus 5.5）と共に段階的に進めた実践記録が公開された。 この開発フローでは、アプリの計画表や判断ログ、READMEの記述、コミット履歴の管理までをAIに委ね、文脈を維持しながら複雑な機能を実装している。 単にコードを書かせるだけでなく、開発判断の経緯をアーカイブすることで、個人開発特有の「迷い」を減らし、長期的なメンテナンス性を高めるAI活用の好例だ。"
-      },
-      "en": {
-        "title": "Documenting an Iterative Solo App Development Workflow Using Claude Code and Opus 5.5 for Systematic Progress and Maintenance",
-        "summary": "This detailed developer log captures the workflow of building a solo application using Claude Code powered by Opus 5.5. The process goes beyond simple code generation by leveraging the AI to rigorously maintain project roadmaps, document key decision-making logs, update README files, and track commit history systematically. By treating AI as a long-term architectural partner rather than a quick script-writing tool, the developer manages to keep complex project context intact throughout the iterative build. This approach is highly recommended for solo developers struggling with consistency, as maintaining a searchable history of development decisions significantly reduces cognitive load and long-term technical debt, proving that AI is most effective when managing the entire lifecycle of a project."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-19T23:02:07.890Z"
-  },
-  {
     "id": "art-1795129316906-ysu9b",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -10112,33 +10191,6 @@
     "created_at": "2026-11-19T18:05:49.587Z"
   },
   {
-    "id": "art-1795111464433-5jyzx",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.ycombinator.com/item?id=50563364",
-    "published_at": "2026-11-19T17:45:36.000Z",
-    "og_image_url": null,
-    "title_ja": "AIの影響を受けにくいソフトウェア領域はどこか？LLM開発を避けたいエンジニアのためのキャリア防衛戦略と推奨ドメイン",
-    "summary_ja": "Hacker Newsで議論された「AIやLLMの波及が及ぼしにくいソフトウェア開発の領域」に関する考察をまとめた。 結論として、ハードウェア制御、レガシーシステムの保守、極めて高い信頼性が求められる医療機器や航空宇宙、物理世界との接点を持つ領域は、単純なコード生成AIでは代替が困難であるとされる。 生成AI主導のトレンドに疲弊し、純粋なソフトウェア工学を志向する開発者にとって、これらは安定したキャリアを築くための有力な避難先となり得る。",
-    "translations": {
-      "ja": {
-        "title": "AIの影響を受けにくいソフトウェア領域はどこか？LLM開発を避けたいエンジニアのためのキャリア防衛戦略と推奨ドメイン",
-        "summary": "Hacker Newsで議論された「AIやLLMの波及が及ぼしにくいソフトウェア開発の領域」に関する考察をまとめた。 結論として、ハードウェア制御、レガシーシステムの保守、極めて高い信頼性が求められる医療機器や航空宇宙、物理世界との接点を持つ領域は、単純なコード生成AIでは代替が困難であるとされる。 生成AI主導のトレンドに疲弊し、純粋なソフトウェア工学を志向する開発者にとって、これらは安定したキャリアを築くための有力な避難先となり得る。"
-      },
-      "en": {
-        "title": "Which software domains remain most resilient to AI? Survival strategies for engineers looking to avoid the LLM hype cycle",
-        "summary": "A lively Hacker News thread debated which software development fields offer the best long-term shelter from the rapid automation brought by AI and LLMs. The consensus points toward domains with high stakes, strict regulatory oversight, or deep physical world integration, such as aerospace systems, medical devices, legacy industrial software maintenance, and low-level hardware drivers. These areas are fundamentally difficult for general-purpose code generators to master because the cost of error is catastrophic and the context is isolated from public internet training data. For builders who prefer traditional engineering over chasing the generative AI trend, focusing on these niche, high-integrity sectors provides a significant competitive moat and a more stable, craftsmanship-oriented career path in an increasingly automated landscape."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-19T18:04:24.433Z"
-  },
-  {
     "id": "art-1795110416156-9cgg3",
     "source_id": "source-openai",
     "source_name": "OpenAI 公式",
@@ -11342,33 +11394,6 @@
       "研究"
     ],
     "created_at": "2026-11-19T12:47:55.382Z"
-  },
-  {
-    "id": "art-1795092453030-5nm26",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/zhouweiyuan51/items/8069181cb8cb2875901e",
-    "published_at": "2026-11-19T12:41:39.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSmZBTWVnMVp5MFhQUkNnVmNiNzNrazZmNUJMTVFpejZuYkdHbXotVjdtQ05WM3VtQSUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1iODQ5ZTczMjdiYzEwNDgxMWQzMDdmZGNjMDdlZWJlYQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D53891033313d8cf6bc7b472848233a7c?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTk2JUUzJTgzJUE5JUUzJTgyJUE2JUUzJTgyJUI2JUUzJTgxJUEwJUUzJTgxJTkxJUUzJTgxJUE3QUklRTclOTQlQkIlRTUlODMlOEYlRTclOTQlOUYlRTYlODglOTAlRTMlODElOEIlRTMlODIlODklRTUlOEIlOTUlRTclOTQlQkIlRTUlOEMlOTYlRTMlODElQkUlRTMlODElQTclRTUlQUUlOEMlRTclQjUlOTAlRTMlODElOTUlRTMlODElOUIlRTMlODIlOEIlRTUlQUUlOUYlRTUlOEIlOTklRTMlODMlQUYlRTMlODMlQkMlRTMlODIlQUYlRTMlODMlOTUlRTMlODMlQUQlRTMlODMlQkMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz04MThkMzdhNDc1ZTllY2EzNjFkNjc0MzAzZTE2Y2MzYw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB6aG91d2VpeXVhbjUxJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZWU5MmRmY2ExYmNmNGRhNDgxNWJmNzFmOTVhNmE4MWU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3cc255c82ce215ae526dc9c4887dee1b",
-    "title_ja": "ブラウザ完結型のAI画像・動画生成ワークフロー構築術。書き出しと再アップロードの手間を排除し、設定管理を効率化する実装ガイド",
-    "summary_ja": "画像生成AIと動画生成AIを個別に利用すると、ファイルの書き出しや再アップロード、プロンプトの再設定といった非効率な往復作業が発生する。 本記事では、ブラウザの同一ワークスペースで完結させる統合型ワークフローを提案。 制作プロセスを単一環境に集約することで、モデルやパラメータの履歴管理を容易にし、制作物の量産と一貫性維持を最適化する実践的なアプローチを解説する。",
-    "translations": {
-      "ja": {
-        "title": "ブラウザ完結型のAI画像・動画生成ワークフロー構築術。書き出しと再アップロードの手間を排除し、設定管理を効率化する実装ガイド",
-        "summary": "画像生成AIと動画生成AIを個別に利用すると、ファイルの書き出しや再アップロード、プロンプトの再設定といった非効率な往復作業が発生する。 本記事では、ブラウザの同一ワークスペースで完結させる統合型ワークフローを提案。 制作プロセスを単一環境に集約することで、モデルやパラメータの履歴管理を容易にし、制作物の量産と一貫性維持を最適化する実践的なアプローチを解説する。"
-      },
-      "en": {
-        "title": "Streamlining AI Media Pipelines: Building Browser-Native Workflows to Eliminate Export Friction and Centralize Asset Management for Creators",
-        "summary": "Managing image and video generation across disjointed services creates constant friction through repetitive exporting, re-uploading, and parameter drift. This guide advocates for a browser-native workflow that unifies the entire creative stack within a single workspace, effectively eliminating the context-switching tax. By centralizing generation models and asset management, developers and creators can maintain consistency across large volumes of output while easily tracking specific parameters for each iteration. For builders, the takeaway is clear: rather than optimizing individual model calls, the real efficiency gain lies in architecting a continuous, browser-based pipeline that preserves state and metadata from prompt to final render."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "画像生成",
-      "動画"
-    ],
-    "created_at": "2026-11-19T12:47:33.030Z"
   },
   {
     "id": "art-1795091576853-id1kx",
@@ -14787,32 +14812,6 @@
       "研究"
     ],
     "created_at": "2026-11-18T20:47:11.046Z"
-  },
-  {
-    "id": "art-1795033927273-sylz7",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/andyailab/articles/e8a69f84e5961d",
-    "published_at": "2026-11-18T10:38:58.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--J13-qS9w--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%2592%25E6%25B4%25BB%25E7%2594%25A8%25E3%2581%2597%25E3%2581%259F%25E7%25A4%25BE%25E5%2586%2585%25E3%2583%259E%25E3%2583%258B%25E3%2583%25A5%25E3%2582%25A2%25E3%2583%25AB%25E4%25BD%259C%25E6%2588%2590%25E3%2581%25A7%25E5%25B1%259E%25E4%25BA%25BA%25E5%258C%2596%25E3%2582%2592%25E9%2598%25B2%25E3%2581%2590%25E6%25A7%258B%25E9%2580%25A0%25E5%258C%2596%25E6%2589%258B%25E9%25A0%2586%25E3%2581%25A8%25E6%2594%25B9%25E8%25A8%2582%25E3%2583%2581%25E3%2582%25A7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25AA%25E3%2582%25B9%25E3%2583%2588%25E3%2580%2590%25E3%2582%25B3%25E3%2583%2594%25E3%2583%259A%25E7%2594%25A8%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25882%25E6%259C%25AC%25EF%25BC%258B5%25E9%25A0%2585%25E7%259B%25AE%25E3%2583%2581%25E3%2582%25A7%25E3%2583%2583%25E3%2582%25AF%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A2%25E3%2583%25B3%25E3%2583%2587%25E3%2582%25A3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFiMGRmNzc4ZGIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "生成AIで社内マニュアルを構造化し「属人化」を撲滅する手法──そのまま使えるプロンプト2選と運用チェックリスト5選",
-    "summary_ja": "社内マニュアルの属人化を防ぐため、生成AIを用いて手順書を構造化する実践的ワークフローを解説。 単なる文章要約ではなく、誰が読んでも同じように作業可能なレベルへ落とし込むためのプロンプト設計と、継続的な改訂を維持するための5項目のチェックリストを公開する。 指示出しのコツを掴み、業務の標準化を自動化しよう。",
-    "translations": {
-      "ja": {
-        "title": "生成AIで社内マニュアルを構造化し「属人化」を撲滅する手法──そのまま使えるプロンプト2選と運用チェックリスト5選",
-        "summary": "社内マニュアルの属人化を防ぐため、生成AIを用いて手順書を構造化する実践的ワークフローを解説。 単なる文章要約ではなく、誰が読んでも同じように作業可能なレベルへ落とし込むためのプロンプト設計と、継続的な改訂を維持するための5項目のチェックリストを公開する。 指示出しのコツを掴み、業務の標準化を自動化しよう。"
-      },
-      "en": {
-        "title": "Standardizing internal manuals with generative AI to eliminate knowledge silos: Practical prompt templates and 5-point maintenance checklist",
-        "summary": "Preventing knowledge silos requires turning vague, tribal expertise into structured operational manuals that anyone can follow. This guide details how to leverage generative AI to transform messy process descriptions into standardized, actionable workflows. It provides two copy-pasteable prompt templates designed to force structural consistency, alongside a five-point checklist to ensure documentation stays updated as business operations evolve. The core takeaway is shifting from abstract AI prompting to rigorous, schema-based output generation. For builders and team leads, the strategy is not just creating a one-time document, but implementing a repeatable standardization system that prevents the documentation rot commonly seen when using tools without clear process constraints."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-18T20:32:07.273Z"
   },
   {
     "id": "art-1795033920590-be1bw",
