@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1795172549402-awz1w",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/fujimotec/n/n9d4447158631",
+    "published_at": "2026-11-20T11:01:14.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/337153193/rectangle_large_type_2_c453167f4f9232a7c7cbe716e220826f.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AWS公式エミュレータで「GenU」を再現検証：認証・DBは稼働するもLambdaからのBedrock接続に罠",
+    "summary_ja": "AWS公式エミュレータを用いて生成AIサンプル「GenU」の環境構築を試みた。 検証の結果、認証システムやデータベース、API層はローカル環境で完全に再現可能であったが、Lambda関数内部からAWS Bedrockを呼び出す際に接続エラーが発生した。 ホスト側からはダミー応答が正常に返る一方で、LambdaコンテナからはBedrockへの通信が遮断されるという挙動が判明。 インフラのシミュレーションにおいて、サービス間のネットワーク到達性には盲点があることを示す好例だ。",
+    "translations": {
+      "ja": {
+        "title": "AWS公式エミュレータで「GenU」を再現検証：認証・DBは稼働するもLambdaからのBedrock接続に罠",
+        "summary": "AWS公式エミュレータを用いて生成AIサンプル「GenU」の環境構築を試みた。 検証の結果、認証システムやデータベース、API層はローカル環境で完全に再現可能であったが、Lambda関数内部からAWS Bedrockを呼び出す際に接続エラーが発生した。 ホスト側からはダミー応答が正常に返る一方で、LambdaコンテナからはBedrockへの通信が遮断されるという挙動が判明。 インフラのシミュレーションにおいて、サービス間のネットワーク到達性には盲点があることを示す好例だ。"
+      },
+      "en": {
+        "title": "Recreating GenU on AWS official emulator: Auth and DB work, but Bedrock calls fail from Lambda",
+        "summary": "This technical deep dive explores recreating the \"Generative AI Use Cases\" (GenU) reference architecture on the official AWS emulator. While core infrastructure components like authentication, API endpoints, and database services function as expected within the local emulation environment, the setup hits a wall with Bedrock integration. Interestingly, Bedrock returns dummy responses when called from the host, yet requests fail entirely when executed from within a Lambda function. This discrepancy highlights a critical networking blind spot in local cloud simulation: containerized runtimes often lack the reachability to specific AWS service mocks compared to host-level calls. For builders using local emulators, this underscores the necessity of validating runtime-specific networking configurations beyond standard service mocking."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-20T11:02:29.402Z"
+  },
+  {
+    "id": "art-1795172542043-r9li8",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/blackarck/intaiassist",
+    "published_at": "2026-11-20T10:51:21.000Z",
+    "og_image_url": null,
+    "title_ja": "面接官支援AI「IntaiAssist」公開：採用面接のリアルタイム支援とフィードバック自動生成で評価基準を標準化",
+    "summary_ja": "オープンソースの面接官支援AI「IntaiAssist」が公開された。 このツールは、面接中の質問リスト提示や応答に対するリアルタイムの分析、面接後のフィードバックレポートの自動生成を行い、採用の質の向上を支援する。 属人化しがちな面接評価をデータに基づいて標準化し、一貫した採用判断を可能にしたい開発者にとって、有用なフレームワークとなりそうだ。",
+    "translations": {
+      "ja": {
+        "title": "面接官支援AI「IntaiAssist」公開：採用面接のリアルタイム支援とフィードバック自動生成で評価基準を標準化",
+        "summary": "オープンソースの面接官支援AI「IntaiAssist」が公開された。 このツールは、面接中の質問リスト提示や応答に対するリアルタイムの分析、面接後のフィードバックレポートの自動生成を行い、採用の質の向上を支援する。 属人化しがちな面接評価をデータに基づいて標準化し、一貫した採用判断を可能にしたい開発者にとって、有用なフレームワークとなりそうだ。"
+      },
+      "en": {
+        "title": "IntaiAssist: An open-source AI companion for recruiters to standardize interviews and automate feedback generation",
+        "summary": "IntaiAssist is an open-source AI tool designed to support interviewers by surfacing relevant questions in real-time, analyzing candidate responses, and generating structured feedback reports post-interview. By integrating AI into the interview loop, the project aims to help teams standardize their evaluation criteria and reduce subjectivity, moving away from ad-hoc assessments. For engineering managers or founders building internal tooling, this project provides a functional blueprint for creating AI-driven evaluation layers that help maintain consistency across a hiring pipeline. If you are struggling with bias in technical interviews or fragmented candidate data, this codebase demonstrates how to effectively anchor structured feedback mechanisms directly into the hiring workflow to improve decision-making quality at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-20T11:02:22.043Z"
+  },
+  {
+    "id": "art-1795172533905-w6rid",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/chiisana_bin/articles/ai-earn-experiment-3weeks-zero",
+    "published_at": "2026-11-20T05:26:49.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1FgpgJ7e--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB0%25E5%2586%2586%25E3%2581%258B%25E3%2582%2589%25E7%25A8%25BC%25E3%2581%258C%25E3%2581%259B%25E3%2582%258B%25E5%25AE%259F%25E9%25A8%2593%25E3%2582%25923%25E9%2580%25B1%25E9%2596%2593%25E3%2581%2582%25E3%2581%25BE%25E3%2582%258A%25E7%25B6%259A%25E3%2581%2591%25E3%2581%259F%25E3%2580%2582%25E5%25A3%25B2%25E4%25B8%258A%25E3%2581%25AF0%25E5%2586%2586%25E3%2580%2581%25E5%2588%2586%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A1%25E3%2581%2584%25E3%2581%2595%25E3%2581%25AA%25E5%2585%25A5%25E6%259C%25AD%25E4%25BE%25BF%25E3%2580%258D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUJOWGJDbjJjRXVMQ1ZRRWltY2wwZmF3V3JtaHZoRVBsY1FCWGZzZ0JCTVVBb1p3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIが0円から自律的に収益化を目指す実験を3週間継続、結果は売上0円。AIの「市場判断」と「実行力」に欠けていた決定的な壁とは",
+    "summary_ja": "Claudeを活用し、初期投資ゼロでAI自らが市場調査からコンテンツ制作・公開までを自律的に行う実験を3週間継続したが、売上は0円という結果に終わった。 市場投入した5つの施策のうち3つは反応が得られず、2つは成果判別不能だった。 この実験により、AIは定型作業には長けているものの、市場のインサイトを捉えて「実際に金銭を払わせる」レベルの価値提案を構築するには、まだ人間の介在による戦略的調整が不可欠であることが浮き彫りとなった。",
+    "translations": {
+      "ja": {
+        "title": "AIが0円から自律的に収益化を目指す実験を3週間継続、結果は売上0円。AIの「市場判断」と「実行力」に欠けていた決定的な壁とは",
+        "summary": "Claudeを活用し、初期投資ゼロでAI自らが市場調査からコンテンツ制作・公開までを自律的に行う実験を3週間継続したが、売上は0円という結果に終わった。 市場投入した5つの施策のうち3つは反応が得られず、2つは成果判別不能だった。 この実験により、AIは定型作業には長けているものの、市場のインサイトを捉えて「実際に金銭を払わせる」レベルの価値提案を構築するには、まだ人間の介在による戦略的調整が不可欠であることが浮き彫りとなった。"
+      },
+      "en": {
+        "title": "I tasked Claude with autonomous revenue generation for 3 weeks starting at $0; the result was zero dollars earned despite 5 public experiments",
+        "summary": "To test whether an AI agent could autonomously bootstrap a business from zero, I tasked Claude with handling everything from market research to content creation for three weeks. Despite Claude managing the operations—with human assistance only for API keys and account setup—the project generated exactly zero dollars in revenue. Of the five distinct ventures launched, three failed to find any traction while two remained inconclusive. The practical takeaway for builders is that while AI is incredibly efficient at executing defined tasks, it currently lacks the intuitive strategic insight required to identify genuine market pain points and convert them into paid products without heavy human oversight. Autonomous revenue generation remains a distant goal for LLMs without active, high-level business intervention."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-20T11:02:13.905Z"
+  },
+  {
+    "id": "art-1795172523985-6zzii",
+    "source_id": "source-lovable",
+    "source_name": "Lovable Blog / Changelog",
+    "url": "https://lovable.dev/blog/lovable-app-studio-atlanta",
+    "published_at": "2026-11-20T11:00:00.000Z",
+    "og_image_url": "https://assets.lovable.dev/content/news/covers/lovable-app-studio-atlanta.jpg",
+    "title_ja": "Lovableがアトランタで1日限定の「App Studio」を開催、12月2日に専門家とアイデアを実用的なアプリへ具現化する無料イベントを実施",
+    "summary_ja": "Lovableは12月2日、アトランタのポンセ・シティ・マーケットにて、1日限定の対面開発イベント「Lovable App Studio」を開催する。 参加者は無料かつ予約不要で、Lovableのエンジニアのサポートを受けながら、自身のアイデアを実際のアプリとして具現化できる。 ノーコード開発ツールが普及する中で、専門家と直接対話しながらプロトタイプを構築する体験は、アイデアを即座に形にしたい開発者や起業家にとって貴重な検証の場となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Lovableがアトランタで1日限定の「App Studio」を開催、12月2日に専門家とアイデアを実用的なアプリへ具現化する無料イベントを実施",
+        "summary": "Lovableは12月2日、アトランタのポンセ・シティ・マーケットにて、1日限定の対面開発イベント「Lovable App Studio」を開催する。 参加者は無料かつ予約不要で、Lovableのエンジニアのサポートを受けながら、自身のアイデアを実際のアプリとして具現化できる。 ノーコード開発ツールが普及する中で、専門家と直接対話しながらプロトタイプを構築する体験は、アイデアを即座に形にしたい開発者や起業家にとって貴重な検証の場となるだろう。"
+      },
+      "en": {
+        "title": "Lovable Announces One-Day “App Studio” Pop-Up in Atlanta on December 2 to Help Users Build Working Apps for Free",
+        "summary": "Lovable is launching a special one-day pop-up event called \"Lovable App Studio\" at Ponce City Market in Atlanta, scheduled for December 2. This initiative invites the public to visit in person, where they can collaborate directly with Lovable experts to transform abstract product ideas into functional, working applications entirely for free. While the company is well-known for its web-based development tools, this physical installation aims to lower the barrier for non-technical founders and creators by providing immediate, hands-on guidance. For builders, this represents a unique opportunity to stress-test ideas in real-time, leverage professional engineering insight, and potentially bridge the gap between initial concept and a tangible MVP without needing to write complex production code."
+      }
+    },
+    "tool_tags": [
+      "Lovable"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-20T11:02:03.985Z"
+  },
+  {
     "id": "art-1795171692872-rl4md",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -7302,32 +7409,6 @@
     "created_at": "2026-11-19T16:19:51.602Z"
   },
   {
-    "id": "art-1795105157401-2323s",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ttomohisa/n/n0cd031dcab35",
-    "published_at": "2026-11-19T16:03:08.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/329453005/rectangle_large_type_2_79767c610893c983c7e1aac00ec39037.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "音楽理論をブラウザで体験：平均律と純正律の響きを即座に聴き比べられるWebツールを個人開発【ブラウザツール100個作る#95】",
-    "summary_ja": "ブラウザ上で平均律と純正律の音の違いを直感的に聴き比べられる学習・検証ツールを開発した。 音楽理論の抽象的な概念をWeb技術で可視化・可聴化することで、楽器演奏や楽曲制作の現場で役立つ実践的な理解を助ける。 開発者個人のスキルアップと実利を兼ねた「ブラウザツール100個制作プロジェクト」の第95弾であり、Web APIと音声処理を活用したニッチな課題解決の好例だ。",
-    "translations": {
-      "ja": {
-        "title": "音楽理論をブラウザで体験：平均律と純正律の響きを即座に聴き比べられるWebツールを個人開発【ブラウザツール100個作る#95】",
-        "summary": "ブラウザ上で平均律と純正律の音の違いを直感的に聴き比べられる学習・検証ツールを開発した。 音楽理論の抽象的な概念をWeb技術で可視化・可聴化することで、楽器演奏や楽曲制作の現場で役立つ実践的な理解を助ける。 開発者個人のスキルアップと実利を兼ねた「ブラウザツール100個制作プロジェクト」の第95弾であり、Web APIと音声処理を活用したニッチな課題解決の好例だ。"
-      },
-      "en": {
-        "title": "Developer builds interactive Web tool to instantly compare Equal Temperament versus Just Intonation tunings [Project #95]",
-        "summary": "This new browser-based application allows musicians and developers to intuitively compare the acoustic differences between Equal Temperament and Just Intonation tunings in real time. By visualizing and auditory-mapping abstract music theory concepts through Web Audio APIs, the tool transforms a complex academic subject into a practical resource for composition and performance. As the 95th entry in the author’s \"100 Browser Tools\" challenge, this project demonstrates how combining technical self-improvement with niche domain exploration can result in highly functional utilities. For builders, it serves as a valuable case study on how to leverage browser-native audio processing to solve specific, educational problems without needing heavy external dependencies or massive infrastructure."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-19T16:19:17.401Z"
-  },
-  {
     "id": "art-1795105012166-ij8p8",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -7619,32 +7700,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-19T15:17:03.939Z"
-  },
-  {
-    "id": "art-1795101414339-tguuc",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/t1_office/n/n2acf7a1d957c",
-    "published_at": "2026-11-19T14:58:48.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/338192675/rectangle_large_type_2_e229eae001c13f9e2ca90d55d2f3c8f1.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ゲーム開発でAIに丸投げすると陥る「説明過多・演出過剰」の罠―引き算の美学でテキストと演出を磨き直す222日目の教訓",
-    "summary_ja": "個人開発でAIに実装を丸投げし続けると、要素や演出が冗長化し、説明過多な「肥大化」を招くという課題に直面している。 AIは指示通りに機能を追加するが、ゲームとしての引き算の美学を理解しないため、開発者が最終的にテキストや演出を削ぎ落とす必要がある。 AIをパートナーとして活用する際は、実装の速度だけでなく、ユーザー視点での体験を洗練させる編集者としての目線が不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "ゲーム開発でAIに丸投げすると陥る「説明過多・演出過剰」の罠―引き算の美学でテキストと演出を磨き直す222日目の教訓",
-        "summary": "個人開発でAIに実装を丸投げし続けると、要素や演出が冗長化し、説明過多な「肥大化」を招くという課題に直面している。 AIは指示通りに機能を追加するが、ゲームとしての引き算の美学を理解しないため、開発者が最終的にテキストや演出を削ぎ落とす必要がある。 AIをパートナーとして活用する際は、実装の速度だけでなく、ユーザー視点での体験を洗練させる編集者としての目線が不可欠である。"
-      },
-      "en": {
-        "title": "The Pitfall of AI-Assisted Game Dev: Avoiding Over-Engineered Mechanics and Bloated Scripts by Applying the Aesthetic of Subtraction",
-        "summary": "In the daily grind of independent game development, relying too heavily on AI for implementation often leads to bloated mechanics and overly wordy, exposition-heavy scripts. While AI excels at rapid feature generation, it lacks the critical 'aesthetic of subtraction'—the ability to trim unnecessary fat to create a polished, focused player experience. The core lesson from the 222nd day of development is that AI is merely an engine, not an editor; developers must actively prune and refine AI output to prevent feature creep. For builders using LLMs to accelerate prototyping, the takeaway is that automated coding isn't a shortcut to design; you still need to rigorously edit for clarity and impact to keep the gameplay loop engaging rather than overwhelming."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-19T15:16:54.339Z"
   },
   {
     "id": "art-1795101406619-2vu8d",
@@ -11179,32 +11234,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-19T04:01:51.359Z"
-  },
-  {
-    "id": "art-1795060045561-o1204",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.ft.com/content/5168b3e9-75d0-4be0-9ccd-d327d6b16c05",
-    "published_at": "2026-11-19T03:35:47.000Z",
-    "og_image_url": null,
-    "title_ja": "KPMGの監査現場でAIが専門家を凌駕、より鋭い質問を生成し業務品質を向上させる事例をファイナンシャル・タイムズが詳報",
-    "summary_ja": "ファイナンシャル・タイムズによると、KPMGの監査業務で導入された生成AIツールが、ベテラン会計士よりも鋭く正確な質問をクライアント企業へ投げかけ、監査の質を向上させているという。 AIは膨大な財務データや過去の傾向を即座に分析し、人間が見落としがちな異常値やリスクを特定する。 単なる自動化ツールを超え、専門職の思考を拡張する「AIパートナー」としての実用性が証明されており、監査業界における知能労働のあり方が根本から再定義されようとしている。",
-    "translations": {
-      "ja": {
-        "title": "KPMGの監査現場でAIが専門家を凌駕、より鋭い質問を生成し業務品質を向上させる事例をファイナンシャル・タイムズが詳報",
-        "summary": "ファイナンシャル・タイムズによると、KPMGの監査業務で導入された生成AIツールが、ベテラン会計士よりも鋭く正確な質問をクライアント企業へ投げかけ、監査の質を向上させているという。 AIは膨大な財務データや過去の傾向を即座に分析し、人間が見落としがちな異常値やリスクを特定する。 単なる自動化ツールを超え、専門職の思考を拡張する「AIパートナー」としての実用性が証明されており、監査業界における知能労働のあり方が根本から再定義されようとしている。"
-      },
-      "en": {
-        "title": "KPMG audit finds AI generates higher-quality inquiries than professional accountants, transforming corporate audit standards and risk identification",
-        "summary": "A report from the Financial Times highlights that AI tools deployed within KPMG’s audit workflows are now generating sharper, more pertinent inquiries for client firms than veteran accountants. By instantly synthesizing vast financial datasets and identifying subtle anomalies that humans frequently overlook, the AI models are demonstrably elevating overall audit rigor. This shift signals that AI is evolving beyond mere task automation; it is now functioning as a high-level cognitive partner that augments professional judgment. For builders and enterprises, this case demonstrates that the most significant ROI for AI in specialized sectors lies in its ability to handle complex reasoning tasks, effectively raising the minimum baseline of expertise across the entire auditing profession."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-19T03:47:25.561Z"
   },
   {
     "id": "art-1795060038836-laq1k",
@@ -15952,32 +15981,6 @@
       "開発"
     ],
     "created_at": "2026-11-18T08:17:01.369Z"
-  },
-  {
-    "id": "art-1794989812349-szqnl",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/satoshi_yoneda/articles/moe-cache-cpu-share",
-    "published_at": "2026-11-18T03:44:39.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xv0qWeUk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:llama.cpp%25E3%2581%25AE%25E6%2596%25B0%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%25A7%25E5%25BC%25A9%25E7%25B4%259A%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2582%2592%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%259D%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%25B1%25B3%25E7%2594%25B0%2520%25E8%2581%25A1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjVhX1JNNGdTalJreWxMekJNckoyTnFoa3VXMjMybF9qSHlxMEtBVmdHR2RrTUNWVT1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ローカル推論エンジン「llama.cpp」v1.0が登場、新機能「--moe-cache-cpu-share」で巨大モデルの実行効率が大幅に向上",
-    "summary_ja": "ローカルLLM推論のデファクトスタンダード「llama.cpp」がメジャーバージョン1.0へ到達した。 注目すべき新機能「--moe-cache-cpu-share」は、Mixture of Experts（MoE）モデルの推論においてキャッシュのCPU共有を最適化し、これまでVRAM容量の制約でローカル動作が困難だった巨大モデルを、より効率的に実行可能にするものだ。",
-    "translations": {
-      "ja": {
-        "title": "ローカル推論エンジン「llama.cpp」v1.0が登場、新機能「--moe-cache-cpu-share」で巨大モデルの実行効率が大幅に向上",
-        "summary": "ローカルLLM推論のデファクトスタンダード「llama.cpp」がメジャーバージョン1.0へ到達した。 注目すべき新機能「--moe-cache-cpu-share」は、Mixture of Experts（MoE）モデルの推論においてキャッシュのCPU共有を最適化し、これまでVRAM容量の制約でローカル動作が困難だった巨大モデルを、より効率的に実行可能にするものだ。"
-      },
-      "en": {
-        "title": "Local inference engine llama.cpp hits v1.0 with new --moe-cache-cpu-share feature for optimizing massive model execution",
-        "summary": "The popular local LLM inference engine llama.cpp has officially reached version 1.0, bringing significant architectural improvements for local builders. A headline addition is the --moe-cache-cpu-share flag, which optimizes how Mixture of Experts (MoE) models utilize system memory by enabling CPU cache sharing. This enhancement allows developers to run massive, parameters-heavy models that were previously bottlenecked by limited VRAM constraints, significantly improving throughput and accessibility for local deployments. For developers aiming to run state-of-the-art models on consumer hardware, this memory management update provides a critical path forward, effectively making high-end inference feasible without requiring enterprise-grade hardware. It is a vital upgrade for anyone building local-first AI applications using the latest, largest available open-source models."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-18T08:16:52.349Z"
   },
   {
     "id": "art-1794989803040-hciz5",
