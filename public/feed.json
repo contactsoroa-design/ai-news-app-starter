@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-1795211359293-swyja",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/senpuu_mamechi/n/nfd9bc149574a",
+    "published_at": "2026-11-20T21:47:15.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338643303/rectangle_large_type_2_f3c5728a3d0b5da84e71d3f90955b04c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発ゲームのセーブデータ破損を防ぐ5つのチェックポイント、再起動時やデータ構造変更時の不整合を回避する検証手順を公開",
+    "summary_ja": "個人開発ゲームのセーブ機能は実装直後は正常でも、ユーザーがアプリを閉じ再開した際に破損が発覚しがちだ。 本記事では、エンジンの種類を問わずセーブデータが破損しやすい5つの主要箇所を特定し、リリース前に必須となる検証手順を解説する。 型定義の変更や非同期処理、ファイル排他制御など、データ永続化で陥りやすい罠を回避するための具体的なデバッグ手法を学ぶ。",
+    "translations": {
+      "ja": {
+        "title": "個人開発ゲームのセーブデータ破損を防ぐ5つのチェックポイント、再起動時やデータ構造変更時の不整合を回避する検証手順を公開",
+        "summary": "個人開発ゲームのセーブ機能は実装直後は正常でも、ユーザーがアプリを閉じ再開した際に破損が発覚しがちだ。 本記事では、エンジンの種類を問わずセーブデータが破損しやすい5つの主要箇所を特定し、リリース前に必須となる検証手順を解説する。 型定義の変更や非同期処理、ファイル排他制御など、データ永続化で陥りやすい罠を回避するための具体的なデバッグ手法を学ぶ。"
+      },
+      "en": {
+        "title": "Preventing save data corruption in indie games: 5 critical checkpoints for verifying persistence logic before public release",
+        "summary": "Game save systems often function during development, only to break when players close and reopen the app the next day. This guide identifies five common failure points where save data corruption typically occurs, regardless of the game engine being used. It outlines specific verification procedures to perform before release, covering critical issues like handling data structure changes, managing asynchronous write operations, and ensuring file exclusivity. By systematically testing these five risky areas, developers can avoid the catastrophic loss of user progress that often goes unnoticed until it is too late. The piece provides actionable debugging steps for implementing robust persistence logic, ensuring that your save files remain stable across sessions and updates, which is essential for player retention."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-20T21:49:19.293Z"
+  },
+  {
     "id": "art-1795211228439-nkgv6",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8451,31 +8477,6 @@
       "開発"
     ],
     "created_at": "2026-11-20T00:16:48.427Z"
-  },
-  {
-    "id": "art-1795132921317-8twy1",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/634_lucky/n/nc378fec46343",
-    "published_at": "2026-11-19T23:56:36.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/338278664/rectangle_large_type_2_ffa94631e5e217fe22b72c4b9e44df58.jpg?fit=bounds&quality=85&width=1280",
-    "title_ja": "ゲーム開発の「引き算」演出術：ボス戦で音楽をあえて止めることで没入感を最大化する設計思想",
-    "summary_ja": "ゲーム開発では攻撃音やBGMの追加など「足し算」の演出が一般的だが、物語性のあるタイトルでは「あえて音を止める」引き算が重要となる。 戦闘のクライマックスでBGMを無音にすることで、その後のサウンドがより際立ち、静寂がプレイヤーに緊張感を与える劇的な緩急を生み出す。 演出過多な表現に頼らず、あえて空白を作る設計は、単なるインパクト以上の感情的な深みをゲーム体験に加えるための強力な手法だ。",
-    "translations": {
-      "ja": {
-        "title": "ゲーム開発の「引き算」演出術：ボス戦で音楽をあえて止めることで没入感を最大化する設計思想",
-        "summary": "ゲーム開発では攻撃音やBGMの追加など「足し算」の演出が一般的だが、物語性のあるタイトルでは「あえて音を止める」引き算が重要となる。 戦闘のクライマックスでBGMを無音にすることで、その後のサウンドがより際立ち、静寂がプレイヤーに緊張感を与える劇的な緩急を生み出す。 演出過多な表現に頼らず、あえて空白を作る設計は、単なるインパクト以上の感情的な深みをゲーム体験に加えるための強力な手法だ。"
-      },
-      "en": {
-        "title": "Subtracting to amplify: Why stopping background music at peak moments creates deeper immersion in game design",
-        "summary": "While game development often relies on additive effects like layering sound or screen shakes to heighten excitement, stripping audio away can create a more powerful impact during narrative climaxes. By cutting background music at a critical boss fight moment, developers can reset the sonic landscape, making the eventual return of sound or a single effect feel significantly more visceral. This technique forces a stark contrast between high-octane action and deliberate silence, utilizing the 'void' to command player attention far more effectively than constant saturation. For solo developers building interactive experiences, the takeaway is that emotional weight is often found in subtraction rather than excess; strategically managing silence allows for far more dynamic storytelling than simply increasing audio intensity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-20T00:02:01.317Z"
   },
   {
     "id": "art-1795132912318-y8q55",
