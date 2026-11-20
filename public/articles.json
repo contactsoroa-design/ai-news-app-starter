@@ -1,5 +1,88 @@
 [
   {
+    "id": "art-1795204031094-j1o78",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/agents-can-now-find-vercel-cli-commands-by-describing-the-task",
+    "published_at": "2026-11-19T05:00:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/1muQQF73lYC1rgZQwuKAaY/4bc3e59089cde1a0267bfbc9b8d988d6/vercel-help-search-light.png",
+    "title_ja": "Vercel CLIにAIエージェント向けの新機能「help search」が登場、自然言語によるコマンド検索とパラメータ補完が可能に",
+    "summary_ja": "Vercel CLIは、AIエージェントが自然言語でコマンドを検索・発見できる「help search」機能を追加した。 これにより、エージェントは「本番環境のロールバック」といったタスクを記述するだけで、適切なコマンドやAPIエンドポイント、必要な入力パラメータのプレースホルダーを即座に取得できる。 JSON出力オプションもサポートし、自動化パイプラインへの統合が容易になった。",
+    "translations": {
+      "ja": {
+        "title": "Vercel CLIにAIエージェント向けの新機能「help search」が登場、自然言語によるコマンド検索とパラメータ補完が可能に",
+        "summary": "Vercel CLIは、AIエージェントが自然言語でコマンドを検索・発見できる「help search」機能を追加した。 これにより、エージェントは「本番環境のロールバック」といったタスクを記述するだけで、適切なコマンドやAPIエンドポイント、必要な入力パラメータのプレースホルダーを即座に取得できる。 JSON出力オプションもサポートし、自動化パイプラインへの統合が容易になった。"
+      },
+      "en": {
+        "title": "Vercel CLI adds 'help search' for AI agents to discover commands and API endpoints via natural language",
+        "summary": "Vercel has launched 'help search' in its CLI, a powerful tool designed for coding agents to discover specific commands by describing tasks in plain language. Instead of relying on static documentation, agents can now query for actions like 'roll back production' and receive the exact CLI command or API endpoint, complete with necessary input placeholders. The feature also supports JSON output and a '--with-help' flag, providing immediate usage instructions and examples. This update significantly simplifies the integration of Vercel workflows into autonomous development pipelines. For builders using AI agents, this eliminates the guesswork of API pathing and command syntax, creating a more reliable feedback loop between agent logic and cloud infrastructure execution."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-20T19:47:11.094Z"
+  },
+  {
+    "id": "art-1795204024873-dyxfv",
+    "source_id": "source-openai",
+    "source_name": "OpenAI 公式",
+    "url": "https://openai.com/index/combatting-adversarial-distillation",
+    "published_at": "2026-11-20T10:00:00.000Z",
+    "og_image_url": null,
+    "title_ja": "OpenAIが解説する「敵対的蒸留」への対策：強力なAIモデルの能力を模倣・窃取する攻撃を防ぐための4層防衛アプローチを公開",
+    "summary_ja": "OpenAIは、強力なAIモデルの知能をコピーしようとする「敵対的蒸留」攻撃に対し、多層的な防衛策を公開した。 具体的にはモデルの学習時における耐性強化、入力フィルタリングによるガードレール、不審なトラフィックの検知、そして規約違反ユーザーへの強制措置という4つの柱で構成される。 AIサービスの提供者は、モデルを守るために単一の制限ではなく、検知から執行までの統合的なパイプラインを構築する必要があることが強調されている。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIが解説する「敵対的蒸留」への対策：強力なAIモデルの能力を模倣・窃取する攻撃を防ぐための4層防衛アプローチを公開",
+        "summary": "OpenAIは、強力なAIモデルの知能をコピーしようとする「敵対的蒸留」攻撃に対し、多層的な防衛策を公開した。 具体的にはモデルの学習時における耐性強化、入力フィルタリングによるガードレール、不審なトラフィックの検知、そして規約違反ユーザーへの強制措置という4つの柱で構成される。 AIサービスの提供者は、モデルを守るために単一の制限ではなく、検知から執行までの統合的なパイプラインを構築する必要があることが強調されている。"
+      },
+      "en": {
+        "title": "OpenAI Outlines Multilayered Defense Against Adversarial Distillation Attacks Targeting Proprietary Capability Extraction from Large Scale AI Models",
+        "summary": "OpenAI has published a comprehensive framework to counter \"adversarial distillation,\" a technique where bad actors query powerful models to harvest data and effectively clone their capabilities. Their defense strategy relies on four critical layers: robust model training to minimize information leakage, frontend input safeguards, sophisticated traffic detection to spot automated scraping patterns, and final policy enforcement to restrict access. For builders of API-based AI services, the core lesson is that stopping capability theft requires a holistic pipeline rather than simple rate limiting. You must combine proactive adversarial testing with runtime monitoring to identify anomalies, ensuring that your model’s intelligence isn't easily distilled by competitors or malicious users trying to train cheaper, unauthorized lookalike models."
+      }
+    },
+    "tool_tags": [
+      "ChatGPT"
+    ],
+    "genre_tags": [
+      "セキュリティ",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-20T19:47:04.873Z"
+  },
+  {
+    "id": "art-1795204017105-7v69y",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/ahousecreate/articles/4b5e4ee9fb4b48",
+    "published_at": "2026-11-20T11:47:54.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--i7pW8crb--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E8%25A8%2598%25E6%2586%25B6%25E3%2582%2592%25E7%25AE%25A1%25E7%2590%2586%25E3%2581%2599%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25E3%2582%25B7%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AB%25E3%2583%25BB%25E3%2583%2597%25E3%2583%25A9%25E3%2583%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ahousecreate%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkFIYkV4aDhEZW1ZQkhYdW1VbGpHM0g2ZEV6N1FwMkhscnR4SFEyTHphVWJMcDlnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIのコンテキスト迷子を解決する：複数のAIを横断して記憶を共有する「外部メモリ」運用設計",
+    "summary_ja": "複数のAIを使い分ける際、コンテキストの分断や経緯説明の重複が大きなボトルネックとなる。 モデル内の記憶に頼るのではなく、ユーザー側で「外部メモリ」となるナレッジベースを構築し、各AIがこれを参照する運用に変えることで、説明コストを最小化できる。 本記事では、特定のツールに依存しない、開発現場発のAI記憶管理の最小構成と設計図を解説する。 AIの性能を引き出すには、モデル外での「記憶のハブ」設計が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "AIのコンテキスト迷子を解決する：複数のAIを横断して記憶を共有する「外部メモリ」運用設計",
+        "summary": "複数のAIを使い分ける際、コンテキストの分断や経緯説明の重複が大きなボトルネックとなる。 モデル内の記憶に頼るのではなく、ユーザー側で「外部メモリ」となるナレッジベースを構築し、各AIがこれを参照する運用に変えることで、説明コストを最小化できる。 本記事では、特定のツールに依存しない、開発現場発のAI記憶管理の最小構成と設計図を解説する。 AIの性能を引き出すには、モデル外での「記憶のハブ」設計が不可欠だ。"
+      },
+      "en": {
+        "title": "Solving AI Context Fragmentation: Designing a Centralized External Memory System for Multi-Model Workflows",
+        "summary": "Using multiple AI models often results in fragmented context, forcing developers to repeatedly explain project history or re-upload files. The core problem isn't model performance, but siloed memory; the solution is building a user-controlled external memory layer that acts as a single source of truth for every AI in your stack. By decoupling knowledge storage from the AI interface, you can maintain continuity across different models and significantly cut down on redundant prompting. This guide provides a lightweight, implementation-ready blueprint for an AI knowledge hub, demonstrating how to structure your notes and documentation so that any model can reference the same, consistent project state, ultimately treating AI memory as an infrastructure concern rather than an application-specific feature."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-20T19:46:57.105Z"
+  },
+  {
     "id": "art-1795203163910-7kle5",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -16443,32 +16526,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-18T11:31:57.689Z"
-  },
-  {
-    "id": "art-1795000615208-17is4",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/ray_9618/articles/35b733c78c515a",
-    "published_at": "2026-11-17T23:28:50.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--4jnXZpOV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E4%25B8%2580%25E7%2595%25AA%25E4%25B8%258A%25E3%2581%25AB%25E8%25A7%25A6%25E3%2582%258C%25E3%2581%259F%25E3%2581%25A8%25E3%2581%258D%25E3%2581%25A0%25E3%2581%2591%25E5%2587%25BA%25E3%2581%2599%25E3%2580%258D%25E2%2580%2594%2520Mac%25E7%2589%2588%25E3%2583%2595%25E3%2583%25AB%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%25B3%25E5%2586%258D%25E7%2594%259F%25E3%2581%25A7%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%2590%25E3%2583%25BC%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E9%259A%25A0%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%258E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhmNjYxODE3NGUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "macOSアプリ開発の罠：フルスクリーン時にツールバーが消えない問題を解決するUI実装の最適解",
-    "summary_ja": "動画ダウンローダー「Megrab Studio」のmacOS版開発において、フルスクリーンモード時も上部ツールバーが消えず映像領域が圧迫される不具合が発覚した。 本記事では、ユーザーが映像に没入できるよう、カーソルが画面上部に触れた時のみツールバーをオーバーレイ表示させる実装の要点を解説する。 OSの標準的な全画面挙動を正しくハンドリングし、余計なUI要素を排除することが、動画プレイヤーのUX向上の基本である。",
-    "translations": {
-      "ja": {
-        "title": "macOSアプリ開発の罠：フルスクリーン時にツールバーが消えない問題を解決するUI実装の最適解",
-        "summary": "動画ダウンローダー「Megrab Studio」のmacOS版開発において、フルスクリーンモード時も上部ツールバーが消えず映像領域が圧迫される不具合が発覚した。 本記事では、ユーザーが映像に没入できるよう、カーソルが画面上部に触れた時のみツールバーをオーバーレイ表示させる実装の要点を解説する。 OSの標準的な全画面挙動を正しくハンドリングし、余計なUI要素を排除することが、動画プレイヤーのUX向上の基本である。"
-      },
-      "en": {
-        "title": "Fixing macOS UI Glitches: Implementing Auto-Hiding Toolbars for True Full-Screen Video Experiences",
-        "summary": "While building the macOS version of the video downloader 'Megrab Studio,' the developer discovered a frustrating UI bug where the application’s top toolbar remained permanently visible even in full-screen mode, constantly shrinking the video canvas. To restore the immersive viewing experience expected of a media player, the fix involved implementing a conditional overlay that only reveals the toolbar when the user's cursor touches the top edge of the screen. This deep dive covers the essential handling of native macOS full-screen events to ensure that UI elements stay out of the user's way. For builders, the key lesson is that properly respecting standard OS window behavior is vital for maintaining professional, distraction-free software UX in desktop applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-18T11:16:55.208Z"
   },
   {
     "id": "art-1794998808638-96sjp",
@@ -41054,34 +41111,6 @@
     "created_at": "2026-11-04T19:47:54.340Z"
   },
   {
-    "id": "art-1793819831697-k9g3b",
-    "source_id": "source-vercel",
-    "source_name": "Vercel / v0 Blog",
-    "url": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
-    "published_at": "2026-11-04T18:55:00.000Z",
-    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/1t2DaV8IVnp7ibDYvEqXvN/3292f4d1cf23f6e6bbf4e12d1a2c9923/image__65_.png",
-    "title_ja": "VercelのWorkflow SDKが更新、start()関数のアトミック化により重複実行の競合状態を解消し、安全なワークフロー構築を実現",
-    "summary_ja": "VercelのWorkflow SDKに「idempotent starts」が追加された。 従来の getHookByToken を経由する方法では実行の隙間に重複が発生するリスクがあったが、新しい start() 関数はアトミックに実行とフックの確保を行う。 これにより余計なコードを追加することなく、冪等性が保証されるようになった。",
-    "translations": {
-      "ja": {
-        "title": "VercelのWorkflow SDKが更新、start()関数のアトミック化により重複実行の競合状態を解消し、安全なワークフロー構築を実現",
-        "summary": "VercelのWorkflow SDKに「idempotent starts」が追加された。 従来の getHookByToken を経由する方法では実行の隙間に重複が発生するリスクがあったが、新しい start() 関数はアトミックに実行とフックの確保を行う。 これにより余計なコードを追加することなく、冪等性が保証されるようになった。"
-      },
-      "en": {
-        "title": "Vercel Workflow SDK Adds Idempotent Starts to Prevent Race Conditions and Duplicate Executions via Atomic Hook Claims",
-        "summary": "Vercel’s Workflow SDK has introduced idempotent starts, enabling the start() function to admit a run and claim a hook in a single atomic operation. This critical update eliminates the race conditions present in the previous getHookByToken() pattern, where a gap between lookup and start allowed duplicate triggers. By binding the hook the moment a run is admitted, early payloads are now properly buffered and delivered in order, even before execution begins. For builders, this means achieving robust idempotency without writing extra defensive boilerplate code. It simplifies the underlying architecture, allowing developers to handle complex trigger patterns reliably while ensuring that workflow executions remain distinct and predictable regardless of upstream timing issues."
-      }
-    },
-    "tool_tags": [
-      "Vercel"
-    ],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-04T19:17:11.697Z"
-  },
-  {
     "id": "art-1793819821320-lpiwi",
     "source_id": "source-simonwillison",
     "source_name": "Simon Willison's Weblog",
@@ -41466,35 +41495,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-04T15:33:16.584Z"
-  },
-  {
-    "id": "art-1793806156127-wr6mt",
-    "source_id": "source-openai",
-    "source_name": "OpenAI 公式",
-    "url": "https://openai.com/index/daybreak-red-aws-govcloud",
-    "published_at": "2026-11-04T07:00:00.000Z",
-    "og_image_url": null,
-    "title_ja": "OpenAI、AWS GovCloud (US-East)でセキュリティ特化モデル「Daybreak Red (GPT-5.6 Cyber)」の提供を開始",
-    "summary_ja": "OpenAIは、Amazon Bedrockを通じてAWS GovCloud (US-East)にて「Daybreak Red (GPT-5.6 Cyber)」の提供を開始した。 政府機関や認可された組織向けに設計されており、高度なサイバーセキュリティ業務に最適化されている。 機密性の高い環境でAIを活用する開発者にとっては、クラウドのコンプライアンス要件を満たしつつ、最新の推論能力をセキュリティスタックに組み込める重要な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "OpenAI、AWS GovCloud (US-East)でセキュリティ特化モデル「Daybreak Red (GPT-5.6 Cyber)」の提供を開始",
-        "summary": "OpenAIは、Amazon Bedrockを通じてAWS GovCloud (US-East)にて「Daybreak Red (GPT-5.6 Cyber)」の提供を開始した。 政府機関や認可された組織向けに設計されており、高度なサイバーセキュリティ業務に最適化されている。 機密性の高い環境でAIを活用する開発者にとっては、クラウドのコンプライアンス要件を満たしつつ、最新の推論能力をセキュリティスタックに組み込める重要な選択肢となる。"
-      },
-      "en": {
-        "title": "OpenAI Launches Daybreak Red (GPT-5.6 Cyber) on AWS GovCloud (US-East) for Secure Cybersecurity Workloads",
-        "summary": "OpenAI has officially deployed Daybreak Red, powered by GPT-5.6 Cyber, within the AWS GovCloud (US-East) region via Amazon Bedrock to support authorized cybersecurity operations. This release is specifically engineered for government entities and highly regulated organizations requiring strict compliance controls alongside advanced AI inference capabilities. For builders operating in sensitive environments, this integration removes a significant barrier to entry, allowing security-critical workflows to leverage cutting-edge intelligence without violating strict data sovereignty or regulatory requirements. If you are developing security automation tools for the public sector, this availability provides the necessary cloud infrastructure to keep your AI-driven threat detection and analysis pipelines fully compliant while utilizing OpenAI's most recent foundational capabilities for cybersecurity-focused reasoning."
-      }
-    },
-    "tool_tags": [
-      "ChatGPT"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-04T15:29:16.127Z"
   },
   {
     "id": "art-1793802977644-x8b69",
