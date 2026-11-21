@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1795227426812-a3bba",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hakumaigenki/articles/wave-20261118-905b71",
+    "published_at": "2026-11-20T20:50:03.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--mTbRl-yY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2596%2587%25E5%25AD%2597%25E3%2581%258C%25E6%259C%25AC%25E7%2595%25AA%25E3%2581%25A7%25E3%2581%25A0%25E3%2581%259128%25E7%25A7%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2581%25A6%25E5%25B1%258A%25E3%2581%2584%25E3%2581%259F%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%2599%25BD%25E7%25B1%25B3%25E5%2585%2583%25E6%25B0%2597%25EF%25BD%259CLLM%2520Oops%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSi0xR3k1Zl84dVEyOEZ0NV96cUY2cU10OWZTbm5EbFFjNWk1OG9odHEwbzVZSkNwZ1I9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "非エンジニアがClaude Codeで実装したAI相談機能、本番環境でだけ回答が28秒遅延する現象の原因と対策",
+    "summary_ja": "事務職の個人開発者がClaude Codeを活用し、副業サイトにAIによる即時コード生成・デモ機能を導入した際、本番環境でのみ回答が28秒後にまとめて届くというストリーミング遅延が発生した。 調査の結果、AIの応答をフロントエンドへ転送する際のバッファリング設定が主因であったことが判明。 非エンジニアでもClaude Codeで迅速に機能実装が可能になった一方、APIのストリーム処理における設定ミスがUXを著しく損なうという実例として、非常に学びの多いケースである。",
+    "translations": {
+      "ja": {
+        "title": "非エンジニアがClaude Codeで実装したAI相談機能、本番環境でだけ回答が28秒遅延する現象の原因と対策",
+        "summary": "事務職の個人開発者がClaude Codeを活用し、副業サイトにAIによる即時コード生成・デモ機能を導入した際、本番環境でのみ回答が28秒後にまとめて届くというストリーミング遅延が発生した。 調査の結果、AIの応答をフロントエンドへ転送する際のバッファリング設定が主因であったことが判明。 非エンジニアでもClaude Codeで迅速に機能実装が可能になった一方、APIのストリーム処理における設定ミスがUXを著しく損なうという実例として、非常に学びの多いケースである。"
+      },
+      "en": {
+        "title": "Non-engineer developer discovers root cause of 28-second AI response latency when integrating Claude Code in production",
+        "summary": "A non-technical developer integrated Claude Code to generate interactive code demos directly within their side-project application, but encountered a frustrating 28-second latency spike where text arrived in a single batch only in the production environment. After investigation, the developer identified that improper buffering configurations during the transfer of AI responses to the frontend were choking the real-time stream. While Claude Code empowers non-programmers to build sophisticated features rapidly, this experience highlights a critical, often overlooked technical nuance: misconfiguring streaming API responses can completely negate the perceived benefit of real-time AI agents. For builders deploying AI interfaces, this case study underscores the necessity of strictly verifying server-to-client streaming buffers before go-live, ensuring that perceived latency doesn't frustrate the end-user experience."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-21T02:17:06.812Z"
+  },
+  {
+    "id": "art-1795227420403-r3bpa",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.vouched.id/learn/blog/detecting-ai-agents-in-next.js-with-vouched-kya",
+    "published_at": "2026-11-21T01:10:10.000Z",
+    "og_image_url": "https://raw.githubusercontent.com/vouched/KnowYourAgentWebsite-Nextjs-Sample/main/docs/images/simulated-traffic.png",
+    "title_ja": "Vouched、「KYA」を活用したNext.js向けAIエージェント検知技術を公開—自動化アクセスやBotを識別・防御する開発手法",
+    "summary_ja": "Vouchedは、Next.js環境において「KYA（Know Your Agent）」技術を用いたAIエージェントの検知とフィルタリング手法を公開した。 同ライブラリを活用することで、Webアプリは特定のAIクローラーやスクレイピングBotからのアクセスを識別し、リソースの枯渇や不正利用を防止できる。 APIコストやサーバー負荷を抑えたい開発者にとって、トラフィックを精査し人間と自動化エージェントを分離するこのアプローチは、将来的なセキュアな設計において不可欠な知見となる。",
+    "translations": {
+      "ja": {
+        "title": "Vouched、「KYA」を活用したNext.js向けAIエージェント検知技術を公開—自動化アクセスやBotを識別・防御する開発手法",
+        "summary": "Vouchedは、Next.js環境において「KYA（Know Your Agent）」技術を用いたAIエージェントの検知とフィルタリング手法を公開した。 同ライブラリを活用することで、Webアプリは特定のAIクローラーやスクレイピングBotからのアクセスを識別し、リソースの枯渇や不正利用を防止できる。 APIコストやサーバー負荷を抑えたい開発者にとって、トラフィックを精査し人間と自動化エージェントを分離するこのアプローチは、将来的なセキュアな設計において不可欠な知見となる。"
+      },
+      "en": {
+        "title": "Vouched debuts KYA technology for Next.js to detect and filter AI agents and scrapers in real-time",
+        "summary": "Vouched has unveiled its Know Your Agent (KYA) library for Next.js, providing a robust mechanism for developers to detect and filter AI agents and scraping bots in real-time. By integrating this protocol, web applications can accurately differentiate between legitimate human traffic and automated LLM scrapers, effectively preventing unauthorized resource consumption and potential API misuse. This approach allows builders to secure their endpoints against aggressive data harvesting without relying solely on simple rate limiting. For teams managing high-traffic Next.js apps, implementing KYA offers a proactive defense layer, ensuring that infrastructure remains stable while optimizing operational costs by preventing automated services from bloating server logs and database queries with worthless requests."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-21T02:17:00.403Z"
+  },
+  {
+    "id": "art-1795227414315-omvyf",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/ideal_turkey2285/n/n45f718e7f12c",
+    "published_at": "2026-11-21T02:16:06.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338719927/rectangle_large_type_2_e743221f84b2e68ae199348347065bf7.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "キャラクターが物語の途中で正体を現す仕組みと実装法を解説：11月アトリエマガジンで公開された「別の姿」への変身ロジックガイド",
+    "summary_ja": "物語の途中でキャラクターが劇的に変化し、正体を現すためのロジック実装手法を解説する。 11月アトリエマガジンにて、状態管理とグラフィック切り替えを組み合わせた「別の姿」の基本設計コードを公開した。 特定のフラグ条件でモデルやパラメータを動的に入れ替える実装は、プレイヤーの没入感を高めるための重要な演出テクニックだ。 複雑な状態遷移を整理して管理することで、バグを抑えつつ演出効果を最大化できる。",
+    "translations": {
+      "ja": {
+        "title": "キャラクターが物語の途中で正体を現す仕組みと実装法を解説：11月アトリエマガジンで公開された「別の姿」への変身ロジックガイド",
+        "summary": "物語の途中でキャラクターが劇的に変化し、正体を現すためのロジック実装手法を解説する。 11月アトリエマガジンにて、状態管理とグラフィック切り替えを組み合わせた「別の姿」の基本設計コードを公開した。 特定のフラグ条件でモデルやパラメータを動的に入れ替える実装は、プレイヤーの没入感を高めるための重要な演出テクニックだ。 複雑な状態遷移を整理して管理することで、バグを抑えつつ演出効果を最大化できる。"
+      },
+      "en": {
+        "title": "Implementing In-Story Character Identity Reveals and Transformation Mechanics: Technical Guide to Managing Dynamic State Transitions for Narrative Games",
+        "summary": "This guide details the technical implementation of character identity reveals and transformation mechanics, specifically how to manage state transitions during live gameplay. Included in the November Atelier Magazine is a code walkthrough on designing the \"alternative form\" logic, which handles dynamic asset swapping based on narrative triggers or game flags. By decoupling character state from base model parameters, developers can create seamless transformations that enhance player immersion without introducing complex bugs. Understanding how to architect these switches is a crucial skill for narrative-driven development, allowing creators to shift character visuals and capabilities mid-game while maintaining structural integrity. Implementing these triggers cleanly ensures that such high-impact narrative beats land effectively for your players."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-21T02:16:54.315Z"
+  },
+  {
+    "id": "art-1795227404685-9cpbr",
+    "source_id": "source-arcads",
+    "source_name": "Arcads",
+    "url": "https://help.arcads.ai/en/articles/18525449-arcads-skills-for-claude-and-chatgpt",
+    "published_at": "2026-11-20T23:09:35Z",
+    "og_image_url": "https://help.arcads.ai/assets/favicon",
+    "title_ja": "AI動画広告プラットフォーム「Arcads」がアップデート、ClaudeやChatGPTとの統合スキルを公開し生成プロセスを効率化",
+    "summary_ja": "AI動画広告生成ツールのArcadsが、ClaudeやChatGPTと連携可能な新しい「スキル」セットを導入した。 ユーザーはチャットインターフェース上で直接、広告台本やターゲット属性を最適化し、Arcadsの生成エンジンへシームレスにパイプラインを繋ぐことができるようになった。 手動でのコピーライティングから解放され、AIを活用した広告制作の自動化フローがさらに強化されたことで、スケーラブルなクリエイティブ運用を求めるマーケターや個人開発者にとって導入価値が高まっている。",
+    "translations": {
+      "ja": {
+        "title": "AI動画広告プラットフォーム「Arcads」がアップデート、ClaudeやChatGPTとの統合スキルを公開し生成プロセスを効率化",
+        "summary": "AI動画広告生成ツールのArcadsが、ClaudeやChatGPTと連携可能な新しい「スキル」セットを導入した。 ユーザーはチャットインターフェース上で直接、広告台本やターゲット属性を最適化し、Arcadsの生成エンジンへシームレスにパイプラインを繋ぐことができるようになった。 手動でのコピーライティングから解放され、AIを活用した広告制作の自動化フローがさらに強化されたことで、スケーラブルなクリエイティブ運用を求めるマーケターや個人開発者にとって導入価値が高まっている。"
+      },
+      "en": {
+        "title": "Arcads releases new integration skills for Claude and ChatGPT to streamline AI-powered video ad creation",
+        "summary": "Arcads, the AI-driven video advertising platform, has launched a suite of new skills enabling direct integration with Claude and ChatGPT. By leveraging these LLMs, users can now automate the generation of high-converting ad scripts and audience targeting prompts within a unified chat interface, bypassing tedious manual copywriting workflows. This pipeline connects AI reasoning directly to the Arcads video generation engine, effectively bridging the gap between strategic ad conceptualization and creative execution. For developers and marketers scaling their creative operations, this update simplifies the ad production lifecycle, allowing for faster iterative testing of visual concepts. It represents a significant shift toward end-to-end autonomous ad campaigns where LLMs dictate the creative direction while Arcads handles the visual output."
+      }
+    },
+    "tool_tags": [
+      "Arcads"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "マーケ・集客・ASO",
+      "動画"
+    ],
+    "created_at": "2026-11-21T02:16:44.685Z"
+  },
+  {
     "id": "art-1795226534275-8e0qe",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -8776,32 +8883,6 @@
     "created_at": "2026-11-20T03:32:12.944Z"
   },
   {
-    "id": "art-1795145526167-9a639",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/echo_tonari2026/n/n0848cc786fd3",
-    "published_at": "2026-11-20T03:31:10.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/338347739/rectangle_large_type_2_babbd18c1541b61566bbebcfaaf284ab.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発者のVercelコスト管理戦略：予期せぬ高額請求を避けるために最初に確認すべき設定と監視の鉄則",
-    "summary_ja": "Vercelの利用料金が突然高騰するリスクを回避するため、個人開発者がまず着手すべきはダッシュボード内の使用量監視と予算アラートの設定だ。 特にエッジ関数の実行時間やデータ転送量は、最適化を怠ると急増しやすいため、請求上限を設定する前にまずは現状の消費パターンを可視化する必要がある。 小規模なプロジェクトであっても、デプロイやログ保存の設定を見直すことで、予期せぬコスト発生を未然に防ぐことが可能となる。 まずは基本設定の確認から始めよう。",
-    "translations": {
-      "ja": {
-        "title": "個人開発者のVercelコスト管理戦略：予期せぬ高額請求を避けるために最初に確認すべき設定と監視の鉄則",
-        "summary": "Vercelの利用料金が突然高騰するリスクを回避するため、個人開発者がまず着手すべきはダッシュボード内の使用量監視と予算アラートの設定だ。 特にエッジ関数の実行時間やデータ転送量は、最適化を怠ると急増しやすいため、請求上限を設定する前にまずは現状の消費パターンを可視化する必要がある。 小規模なプロジェクトであっても、デプロイやログ保存の設定を見直すことで、予期せぬコスト発生を未然に防ぐことが可能となる。 まずは基本設定の確認から始めよう。"
-      },
-      "en": {
-        "title": "Indie developer Vercel cost management strategy: Essential initial settings and monitoring rules to avoid surprise billing spikes",
-        "summary": "To mitigate the risk of sudden, expensive billing spikes on Vercel, indie developers must prioritize monitoring usage metrics and configuring budget alerts directly within the dashboard. Edge function execution time and data transfer volumes are notoriously easy to underestimate and can escalate rapidly if optimization is ignored; therefore, visualizing current consumption patterns is a prerequisite to setting hard billing caps. Even for small-scale side projects, reviewing deployment strategies and log retention policies is critical to preventing unpredicted financial overhead. By systematically auditing these basic configurations before scaling, you ensure that your infrastructure costs remain predictable and manageable as your user base grows. The key takeaway is to establish these guardrails early rather than reacting after a high bill arrives."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-20T03:32:06.167Z"
-  },
-  {
     "id": "art-1795145519150-tixk7",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -9063,33 +9144,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-20T02:32:15.035Z"
-  },
-  {
-    "id": "art-1795141927147-q73gp",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.haproxy.com/blog/on-the-use-of-ai-based-tools-to-find-bugs-in-open-source-software",
-    "published_at": "2026-11-19T23:34:03.000Z",
-    "og_image_url": "https://www.haproxy.com/img/containers/posts/on-the-use-of-ai-based-tools-to-find-bugs-in-open-source-software.png/20d9dd7788fcfd8feb07f1fbd0114e12/on-the-use-of-ai-based-tools-to-find-bugs-in-open-source-software.png",
-    "title_ja": "オープンソースソフトウェアの脆弱性検出におけるAIツールの有効性：HAProxyエンジニアによる検証と現状の限界",
-    "summary_ja": "HAProxyのエンジニアが、オープンソースプロジェクトのバグ発見に対するAI活用を検証。 大規模なコードベースに対して、AIは単純な構文ミスや標準的な脆弱性の特定には寄与するものの、複雑なロジックエラーや非標準的な仕様の実装においては依然として誤検知や見落としが多く、人間のコードレビューを代替するレベルには至っていない。 自動化ツールを補完として導入する際は、AIの提案を過信せず、シニアエンジニアによる精査が不可欠であるという警鐘を鳴らしている。",
-    "translations": {
-      "ja": {
-        "title": "オープンソースソフトウェアの脆弱性検出におけるAIツールの有効性：HAProxyエンジニアによる検証と現状の限界",
-        "summary": "HAProxyのエンジニアが、オープンソースプロジェクトのバグ発見に対するAI活用を検証。 大規模なコードベースに対して、AIは単純な構文ミスや標準的な脆弱性の特定には寄与するものの、複雑なロジックエラーや非標準的な仕様の実装においては依然として誤検知や見落としが多く、人間のコードレビューを代替するレベルには至っていない。 自動化ツールを補完として導入する際は、AIの提案を過信せず、シニアエンジニアによる精査が不可欠であるという警鐘を鳴らしている。"
-      },
-      "en": {
-        "title": "Evaluating AI tools for open source vulnerability detection: A HAProxy engineering perspective on current capabilities and limitations",
-        "summary": "HAProxy engineers recently published a technical evaluation on the efficacy of using AI-based tools to identify bugs within open source software repositories. The analysis reveals that while current models successfully surface basic syntax errors and standard security vulnerabilities, they struggle significantly with complex logic flaws, non-standard implementations, and edge-case behaviors, resulting in high rates of false positives and critical misses. The team emphasizes that AI should be treated as a supportive heuristic layer rather than a replacement for rigorous, human-led code review. For builders looking to integrate AI into security pipelines, the takeaway is clear: automated tools can accelerate initial scanning, but they require expert supervision to avoid the illusion of security while dangerous regressions remain hidden in the codebase."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "研究"
-    ],
-    "created_at": "2026-11-20T02:32:07.147Z"
   },
   {
     "id": "art-1795141919010-e4sul",
@@ -15883,32 +15937,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-18T18:32:50.272Z"
-  },
-  {
-    "id": "art-1795026741559-5kaop",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/tzp/articles/eecb5507534410",
-    "published_at": "2026-11-18T14:34:59.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--0NrhGOga--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Copilot%2520%25E3%2581%258C%25E3%2580%258C%25E6%2589%25BF%25E8%25AA%258D%25E6%258E%25A8%25E5%25A5%25A8%25E3%2580%258D%25E3%2581%25A8%25E3%2581%2597%25E3%2581%259F%2520PR%2520%25E3%2581%25AB%25E3%2580%2581%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%25AC%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2582%2592%25E6%25AD%25A2%25E3%2582%2581%25E3%2582%258B%25E7%25A9%25B4%25E3%2581%258C%25E3%2581%2582%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2582AI%2520%25E3%2581%25AE%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%2592%25203%2520%25E6%25AE%25B5%25E3%2581%25AB%25E9%2587%258D%25E3%2581%25AD%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A6%25E3%2581%25A5%25E3%2581%25A3%25E3%2581%25B4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzAxOWEwZDdmYzEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "GitHub Copilotが「承認」したPRに潜む破壊的バグをAI多段レビューで発見、個人開発の品質を守る3階層検証プロセス",
-    "summary_ja": "個人開発においてGitHub Copilotの自動レビューのみに依存することは危険だ。 著者自身の事例では、Copilotが「承認推奨」としたPRに、マージ後DBマイグレーションを停止させる深刻な問題が潜んでいた。 これを防ぐため、Copilotだけでなく、Claudeなど異なるLLMによる多段レビューを導入し、検証プロセスを3階層化することで誤検出を相互補完する体制を構築した。",
-    "translations": {
-      "ja": {
-        "title": "GitHub Copilotが「承認」したPRに潜む破壊的バグをAI多段レビューで発見、個人開発の品質を守る3階層検証プロセス",
-        "summary": "個人開発においてGitHub Copilotの自動レビューのみに依存することは危険だ。 著者自身の事例では、Copilotが「承認推奨」としたPRに、マージ後DBマイグレーションを停止させる深刻な問題が潜んでいた。 これを防ぐため、Copilotだけでなく、Claudeなど異なるLLMによる多段レビューを導入し、検証プロセスを3階層化することで誤検出を相互補完する体制を構築した。"
-      },
-      "en": {
-        "title": "GitHub Copilot missed a migration-breaking bug: Why a multi-layer AI code review strategy is mandatory for solo developers",
-        "summary": "Solo development often relies too heavily on a single AI code reviewer, but this creates a massive single point of failure. The author discovered a critical bug in a PR—which GitHub Copilot had explicitly approved—that would have halted database migrations upon deployment. To mitigate this, they implemented a three-layer review process, layering Claude alongside Copilot to ensure that AI models cross-validate each other’s blind spots. Relying on one tool for quality assurance is a dangerous gamble; building a multi-agent review pipeline allows developers to catch subtle edge cases that a single model might ignore. For solo builders, scaling trust through redundant AI checkpoints is now the only reliable way to maintain production stability without sacrificing speed."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-18T18:32:21.559Z"
   },
   {
     "id": "art-1795025843160-k0hak",
@@ -39868,34 +39896,6 @@
       "研究"
     ],
     "created_at": "2026-11-05T20:46:30.487Z"
-  },
-  {
-    "id": "art-1793909812112-0kpet",
-    "source_id": "source-vercel",
-    "source_name": "Vercel / v0 Blog",
-    "url": "https://vercel.com/blog/introducing-vercel-schedules",
-    "published_at": "2026-11-04T13:00:00.000Z",
-    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/a8qC8AzRhcMq7pyEnyzsP/36b609a62176ba645bbde61ef0af23d1/image.png",
-    "title_ja": "Vercelが新機能「Vercel Schedules」を公開、デプロイ不要でコードから実行スケジュールを動的制御可能に",
-    "summary_ja": "Vercelは、実行スケジュールをコードから動的に管理できる新機能「Vercel Schedules」を発表した。 従来はCron Jobsで静的なスケジュール定義と再デプロイが必要だったが、本機能を使えば、アプリケーション実行中にAIエージェント等がスケジュールを作成・変更・削除できる。 リアルタイムなタスク処理や柔軟なバックグラウンドジョブ運用が求められる次世代アプリ開発において、インフラ構成のオーバーヘッドを大幅に削減できる技術だ。",
-    "translations": {
-      "ja": {
-        "title": "Vercelが新機能「Vercel Schedules」を公開、デプロイ不要でコードから実行スケジュールを動的制御可能に",
-        "summary": "Vercelは、実行スケジュールをコードから動的に管理できる新機能「Vercel Schedules」を発表した。 従来はCron Jobsで静的なスケジュール定義と再デプロイが必要だったが、本機能を使えば、アプリケーション実行中にAIエージェント等がスケジュールを作成・変更・削除できる。 リアルタイムなタスク処理や柔軟なバックグラウンドジョブ運用が求められる次世代アプリ開発において、インフラ構成のオーバーヘッドを大幅に削減できる技術だ。"
-      },
-      "en": {
-        "title": "Vercel Launches Vercel Schedules for Dynamic Runtime Cron Management Without Requiring Code Redeploys or Static Config Files",
-        "summary": "Vercel has introduced Vercel Schedules, a new capability that enables developers to dynamically create, update, or cancel recurring jobs directly through code at runtime. While traditional Vercel Cron Jobs relied on static configurations that required a full redeployment to modify, this new approach allows intelligent agents and responsive applications to manage background tasks as conditions evolve in real time. By decoupling job management from the deployment pipeline, Vercel is targeting modern AI-driven use cases where task timing must be highly fluid. For builders, this eliminates the constant infrastructure friction previously required for dynamic job scheduling, allowing more sophisticated, adaptive back-end logic to run smoothly without the heavy lift of triggering manual redeploys."
-      }
-    },
-    "tool_tags": [
-      "Vercel"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-05T20:16:52.112Z"
   },
   {
     "id": "art-1793909804413-rl5zr",
