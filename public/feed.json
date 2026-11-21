@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1795272737902-s25gu",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hirodeath/articles/plane-cloud-self-host-comparison",
+    "published_at": "2026-11-21T04:29:49.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--_YKjl2xh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Plane%2520Cloud%25E3%2581%25A8%25E3%2582%25BB%25E3%2583%25AB%25E3%2583%2595%25E3%2583%259B%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E3%2580%2581%25E5%25BE%25A9%25E5%2585%2583%25E6%2599%2582%25E3%2581%25AB%25E5%25BC%2595%25E3%2581%258D%25E5%258F%2597%25E3%2581%2591%25E3%2582%258B%25E4%25BD%259C%25E6%25A5%25AD%25E3%2581%258B%25E3%2582%2589%25E6%25AF%2594%25E3%2581%25B9%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2592%25E3%2583%25AD%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ3MzZmYmQ0NzAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "オープンソース管理ツール「Plane」の運用比較：Cloud版とセルフホスト版の「復元作業」を実証実験から検証する",
+    "summary_ja": "オープンソースのプロジェクト管理ツール「Plane」を利用する際、無料のコミュニティ版を自前でホストする選択肢には注意が必要だ。 検証実験の結果、公式の復元スクリプトには失敗時でも成功終了コードを返す不備が含まれるケースがあることが判明した。 月額料金の安さだけでセルフホストを選ぶのではなく、障害発生時にデータを自力で復元・検証するコストやリスクを運用負荷に含めて検討することが、個人開発において非常に重要である。",
+    "translations": {
+      "ja": {
+        "title": "オープンソース管理ツール「Plane」の運用比較：Cloud版とセルフホスト版の「復元作業」を実証実験から検証する",
+        "summary": "オープンソースのプロジェクト管理ツール「Plane」を利用する際、無料のコミュニティ版を自前でホストする選択肢には注意が必要だ。 検証実験の結果、公式の復元スクリプトには失敗時でも成功終了コードを返す不備が含まれるケースがあることが判明した。 月額料金の安さだけでセルフホストを選ぶのではなく、障害発生時にデータを自力で復元・検証するコストやリスクを運用負荷に含めて検討することが、個人開発において非常に重要である。"
+      },
+      "en": {
+        "title": "Comparing Plane Cloud vs. Self-Hosting: Why Recovery Reliability Matters More Than Infrastructure Costs",
+        "summary": "When choosing between the hosted Plane Cloud or the free open-source community edition, developers often focus solely on monthly savings. However, real-world testing of recovery scripts reveals significant blind spots: some automated restoration scripts report successful completion even when critical data is missing or corruption occurs. This highlights a hidden cost of self-hosting; it is not merely about server uptime, but the operational burden of managing complex data integrity workflows yourself. Before committing to a self-hosted instance, builders must account for the time and technical expertise required to verify backups and handle disaster recovery. If you lack the capacity to independently validate your data restoration pipeline, the managed Cloud service is often the safer, more robust investment for your project."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-21T14:52:17.902Z"
+  },
+  {
+    "id": "art-1795272730982-yei5l",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ryusei_nomi/articles/31bd3149fa6be4",
+    "published_at": "2026-11-21T05:33:11.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--SJikBwFx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25A8%25E3%2581%25AE%25E4%25BC%259A%25E8%25A9%25B1%25E3%2581%25AE%25E8%25B3%25AA%25E3%2582%2592%25E4%25B8%258A%25E3%2581%2592%25E3%2582%2588%25E3%2581%2586%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryusei%2520Nomi%2520%2520%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhmZGYxNDhlZTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI駆動開発における「会話の質」が実装を左右する。エンジニアが実践すべき指示出しの最適化とプロダクト品質向上のための心得",
+    "summary_ja": "AI駆動開発において、AIへの指示出し（会話）の精度は、生成されるコードの品質に直結し、プロダクト全体の完成度を大きく左右する。 開発者は単に機能を依頼するのではなく、「どう指示すればAIが意図通りに実装できるか」という対話のメタスキルを磨く必要がある。 正解は一つではないが、継続的にプロンプトや文脈共有の手法を改善し続けることが、長期的な開発効率とコード品質を高める重要な鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AI駆動開発における「会話の質」が実装を左右する。エンジニアが実践すべき指示出しの最適化とプロダクト品質向上のための心得",
+        "summary": "AI駆動開発において、AIへの指示出し（会話）の精度は、生成されるコードの品質に直結し、プロダクト全体の完成度を大きく左右する。 開発者は単に機能を依頼するのではなく、「どう指示すればAIが意図通りに実装できるか」という対話のメタスキルを磨く必要がある。 正解は一つではないが、継続的にプロンプトや文脈共有の手法を改善し続けることが、長期的な開発効率とコード品質を高める重要な鍵となる。"
+      },
+      "en": {
+        "title": "Mastering AI-Driven Development: Why Improving Interaction Quality Directly Determines Code Architecture and Overall Product Success",
+        "summary": "In the era of AI-driven development, the quality of your conversations with AI models isn't just a communication preference; it is the primary bottleneck for your code quality and architectural integrity. Because the AI acts as the primary executor, developers must shift focus from simply writing syntax to refining the meta-skill of instruction design. There is no universal silver bullet for prompting, yet the most successful engineers treat every interaction as an iteration on logic and context delivery. By actively evolving how you share system requirements and constraints with your AI assistant, you directly elevate the final product’s reliability and scalability. Ultimately, investing in higher-quality dialogue is the most effective lever for streamlining development cycles."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-21T14:52:10.982Z"
+  },
+  {
+    "id": "art-1795272721075-elk0u",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/okushiro/n/n34a8549d1ba6",
+    "published_at": "2026-11-21T14:51:42.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338986659/rectangle_large_type_2_e4eb4fad573ed429b10b7a04a4b5de39.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発WebゲームのSEO改善記録：ページ構造とキーワード施策の徹底で検索流入を約4倍に拡大した手法を解説",
+    "summary_ja": "個人開発のWebゲームにおいて、SEOページを作成したにもかかわらずクリック率が伸び悩んでいた課題に対し、サイト構造の再設計とキーワード選定の最適化を実施した結果、検索流入を約4倍に増加させた改善プロセスを公開。 単なるSEOページの追加だけでなく、ユーザー体験を損なわない検索エンジン最適化と、検索意図に即したコンテンツの配置が、小規模な個人プロジェクトでも大きな集客効果を生む鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発WebゲームのSEO改善記録：ページ構造とキーワード施策の徹底で検索流入を約4倍に拡大した手法を解説",
+        "summary": "個人開発のWebゲームにおいて、SEOページを作成したにもかかわらずクリック率が伸び悩んでいた課題に対し、サイト構造の再設計とキーワード選定の最適化を実施した結果、検索流入を約4倍に増加させた改善プロセスを公開。 単なるSEOページの追加だけでなく、ユーザー体験を損なわない検索エンジン最適化と、検索意図に即したコンテンツの配置が、小規模な個人プロジェクトでも大きな集客効果を生む鍵となる。"
+      },
+      "en": {
+        "title": "SEO engineering for indie web games: How refining page architecture and keyword strategy drove a 4× spike in organic traffic",
+        "summary": "An indie developer shares a detailed case study on turning around a stagnant web game by pivoting from a generic SEO strategy to a granular page architecture redesign. By systematically optimizing keyword alignment and site structure, the developer successfully quadrupled organic search traffic. The breakdown demonstrates that simply shipping an SEO-optimized landing page is insufficient; effective discovery requires aligning content delivery with actual search intent while preserving the core game loop experience. For solo builders, this serves as a critical reminder that post-launch traffic generation is just as vital as code quality. The takeaway is that optimizing the discovery path through SEO and clear content hierarchies is the most reliable lever for sustainable, unpaid user growth."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-11-21T14:52:01.075Z"
+  },
+  {
     "id": "art-1795271532236-e8lfi",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -5896,32 +5974,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-20T23:32:08.271Z"
-  },
-  {
-    "id": "art-1795217519272-8p5bo",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yusuke356/n/n781caf4a024b",
-    "published_at": "2026-11-20T23:27:44.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/7601a3b0fa8c38a3a1acbbc50f64cc3b0caafb0f.png",
-    "title_ja": "AI間移行の成功率を上げる「引き継ぎ要約」の検証：Gemini・ChatGPT・Grokで出力の質と量を徹底比較",
-    "summary_ja": "Gemini、ChatGPT、Grokの3モデルに対し、自身に関する記憶を他AIへ移行するためのMarkdown形式の要約を出力させた。 結果、AIによって「記憶の拾い上げ」や情報の構造化に大きな差があることが判明した。 単にプロンプトを投げるのではなく、普段から最も長く対話しているAIを「移行元」として選定することが、コンテキスト損失を防ぐための重要戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "AI間移行の成功率を上げる「引き継ぎ要約」の検証：Gemini・ChatGPT・Grokで出力の質と量を徹底比較",
-        "summary": "Gemini、ChatGPT、Grokの3モデルに対し、自身に関する記憶を他AIへ移行するためのMarkdown形式の要約を出力させた。 結果、AIによって「記憶の拾い上げ」や情報の構造化に大きな差があることが判明した。 単にプロンプトを投げるのではなく、普段から最も長く対話しているAIを「移行元」として選定することが、コンテキスト損失を防ぐための重要戦略となる。"
-      },
-      "en": {
-        "title": "Comparative Analysis of AI Handoff Summaries: How Gemini, ChatGPT, and Grok Differ in Content and Structural Integrity",
-        "summary": "When generating handoff summaries to transfer personal context between LLMs, the choice of the source model significantly impacts result quality. Testing Gemini, ChatGPT, and Grok with identical prompts requesting Markdown summaries of user memory revealed stark disparities in how each model selects historical data and structures output. Relying on an AI that has been used for the longest duration to generate these migration summaries is essential to ensure that nuanced context is preserved during the transition. For power users orchestrating agentic workflows or migrating between toolsets, the takeaway is clear: avoid generic export prompts and treat the selection of the primary 'context source' model as the most critical step for minimizing data loss."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-20T23:31:59.272Z"
   },
   {
     "id": "art-1795217512777-bbwib",
@@ -12185,32 +12237,6 @@
     "created_at": "2026-11-19T20:17:02.034Z"
   },
   {
-    "id": "art-1795118545418-pu2rq",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/oha_note/articles/cc1cb86cf2afeb",
-    "published_at": "2026-11-19T17:38:02.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9Z5mD4IY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AF%25E3%2580%258C%25E6%25AC%25A1%25E3%2581%25AE1%25E8%25AA%259E%25E3%2580%258D%25E3%2582%2592%25E3%2581%25A9%25E3%2581%2586%25E9%2581%25B8%25E3%2582%2593%25E3%2581%25A7%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%2520%25E2%2594%2580%25E2%2594%2580%25201%25E3%2581%25A4%25E3%2581%25AE%25E4%25BE%259D%25E9%25A0%25BC%25E3%2582%2592%25E8%25BF%25BD%25E3%2581%2584%25E3%2581%258B%25E3%2581%2591%25E3%2581%25A6%25E7%259F%25A5%25E3%2582%258B%25E3%2580%2581AI%25E3%2581%25AE%25E3%2581%2597%25E3%2581%258F%25E3%2581%25BF%25E2%2591%25A1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:OHA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvby5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIは「次の1語」をどう選んでいるのか──「バグ修正」依頼がモデル内部で処理される6つの段階を解説（シリーズ第2回）",
-    "summary_ja": "AIモデル内部で「次の1語」が確率的に選択される仕組みを、バグ修正依頼がモデル内を通過する6段階のプロセスから紐解く。 なぜ同じプロンプトでも回答が毎回変動するのか、あるいはもっともらしい誤情報（ハルシネーション）が発生するのかを、トークン予測の計算過程から詳細に解説。 AIが確定的な計算ではなく、確率的な重み付けに基づいて次の一手を算出している点を理解することは、プロンプトエンジニアリングの精度向上に不可欠な知識となる。",
-    "translations": {
-      "ja": {
-        "title": "AIは「次の1語」をどう選んでいるのか──「バグ修正」依頼がモデル内部で処理される6つの段階を解説（シリーズ第2回）",
-        "summary": "AIモデル内部で「次の1語」が確率的に選択される仕組みを、バグ修正依頼がモデル内を通過する6段階のプロセスから紐解く。 なぜ同じプロンプトでも回答が毎回変動するのか、あるいはもっともらしい誤情報（ハルシネーション）が発生するのかを、トークン予測の計算過程から詳細に解説。 AIが確定的な計算ではなく、確率的な重み付けに基づいて次の一手を算出している点を理解することは、プロンプトエンジニアリングの精度向上に不可欠な知識となる。"
-      },
-      "en": {
-        "title": "How AI selects the next word: A step-by-step breakdown of the probabilistic logic inside LLMs during code debugging",
-        "summary": "This technical deep-dive tracks a single 'fix this bug' prompt across six distinct processing stages to demystify how AI models select their next word. By tracing the inner mechanisms, the article clarifies why identical prompts yield different outputs and how plausible misinformation occurs through probabilistic token prediction rather than deterministic logic. Understanding that models operate on weighted probabilities, rather than retrieving fixed answers, is essential for developers looking to improve prompt engineering precision and output consistency. For builders, grasping these underlying token-generation mechanics turns the 'black box' into a tunable system, helping you better anticipate model behavior, mitigate hallucinations, and design more reliable application prompts that respect the inherent non-deterministic nature of large language models."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-19T20:02:25.418Z"
-  },
-  {
     "id": "art-1795118536179-fmjav",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -13554,33 +13580,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-19T10:46:53.359Z"
-  },
-  {
-    "id": "art-1795083462536-g8679",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/tachibanana0/articles/354efa8778bddb",
-    "published_at": "2026-11-19T00:27:54.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--z-e1nKPK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25AF%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25A9%25E3%2583%25BC%25E3%2581%258C%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AE%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%25AB%25E6%259D%25A5%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%258B%25E3%2580%2581Cloudflare%2520AI%2520Crawl%2520Control%25E3%2581%25A7%25E6%25B8%25AC%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25A9%2598%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2NwbE4zR1N1dzE2cDdad1J2TEVyUUF2dEdEYnlxeFlDMkJ4dVdrVGQzRVZYU3BkNko0dz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIクローラーの巡回状況を可視化：Cloudflare「AI Crawl Control」でサイトへのボット来訪と特定ページを測定する方法",
-    "summary_ja": "Google検索にインデックスされないサイトでも、AIチャット経由のアクセスが発生することは珍しくない。 Cloudflareの「AI Crawl Control」を活用すれば、どのAIボットがどのページを巡回しているかを無料で可視化できる。 サイト運営者や個人開発者は、自サイトがLLMの学習や回答生成にどう利用されているかを定期的にチェックし、必要に応じてクロール制御を行うための判断材料として活用すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "AIクローラーの巡回状況を可視化：Cloudflare「AI Crawl Control」でサイトへのボット来訪と特定ページを測定する方法",
-        "summary": "Google検索にインデックスされないサイトでも、AIチャット経由のアクセスが発生することは珍しくない。 Cloudflareの「AI Crawl Control」を活用すれば、どのAIボットがどのページを巡回しているかを無料で可視化できる。 サイト運営者や個人開発者は、自サイトがLLMの学習や回答生成にどう利用されているかを定期的にチェックし、必要に応じてクロール制御を行うための判断材料として活用すべきだ。"
-      },
-      "en": {
-        "title": "Audit Your Site's AI Crawler Traffic: A Guide to Using Cloudflare's Built-in AI Crawl Control Tool",
-        "summary": "Many developers find their sites receiving traffic from AI chat services despite having zero indexing in traditional search engines like Google or Bing. To investigate this, you can use Cloudflare's free \"AI Crawl Control\" dashboard, which provides granular visibility into which AI bots are visiting your domains and exactly which pages they are scraping. This tool helps builders quantify their site's exposure to LLM training and data ingestion, providing the baseline metrics needed to make informed decisions about blocking or allowing specific crawlers. For independent developers, monitoring these bot patterns is now a critical step in maintaining data sovereignty and controlling how your intellectual property contributes to generative AI ecosystems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "マーケ・集客・ASO",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-19T10:17:42.536Z"
   },
   {
     "id": "art-1795083427672-qq1y1",
