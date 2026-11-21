@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795259897156-r8vuv",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/jongwoo_apps/articles/f8d3e651400823",
+    "published_at": "2026-11-21T08:20:17.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--2zbA72cD--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:iPhone%25E3%2582%2592%25E3%2583%25AD%25E3%2583%2583%25E3%2582%25AF%25E3%2581%2597%25E3%2581%25A6%25E3%2582%2582%25E8%25AD%25B0%25E4%25BA%258B%25E9%258C%25B2%25E3%2581%258C%25E5%25B1%258A%25E3%2581%258F%25EF%25BC%259A%25E3%2583%2590%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B0%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2589URLSession%2520%252B%2520Cloudflare%2520Worke...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Jongwoo%25EF%25BD%259CiPhone%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2NzUnlpeUY5Uk12Z1BORUZQNm5uT29oMVFUSVVadmhJZVNUeTgxQlU4NUpDQll3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "iPhoneロック時も録音完遂：CalNote AIが挑んだバックグラウンドURLSessionとCloudflare Workersによる音声処理の最適化",
+    "summary_ja": "個人のiOSアプリ「CalNote AI」開発者が、iPhoneのバックグラウンド環境で録音を確実に完遂させるための技術的知見を公開した。 iOSの厳しいタスク制限下で録音を継続しつつ、バックグラウンドURLSessionとCloudflare Workersを組み合わせ、処理を確実にサーバーへ送信する構成を採用している。",
+    "translations": {
+      "ja": {
+        "title": "iPhoneロック時も録音完遂：CalNote AIが挑んだバックグラウンドURLSessionとCloudflare Workersによる音声処理の最適化",
+        "summary": "個人のiOSアプリ「CalNote AI」開発者が、iPhoneのバックグラウンド環境で録音を確実に完遂させるための技術的知見を公開した。 iOSの厳しいタスク制限下で録音を継続しつつ、バックグラウンドURLSessionとCloudflare Workersを組み合わせ、処理を確実にサーバーへ送信する構成を採用している。"
+      },
+      "en": {
+        "title": "Achieving background audio recording on locked iPhones: How CalNote AI uses URLSession and Cloudflare Workers for reliable processing",
+        "summary": "The developer of the iOS app 'CalNote AI' shares a technical breakdown of how they ensured audio recordings complete even when an iPhone is locked and tucked away. Overcoming strict iOS background limitations proved more challenging than the AI transcription itself. By implementing background URLSession and offloading processing to Cloudflare Workers, the app successfully transmits data without being killed by the OS. This architecture allows the app to offload the heavy AI transcription tasks to the cloud immediately, bypassing the limitations of local processing constraints. For indie builders working on background-heavy tasks, this approach provides a robust pattern for maintaining reliable connection lifecycle management and process stability under iOS's notoriously aggressive resource termination policies."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-21T11:18:17.157Z"
+  },
+  {
+    "id": "art-1795259868109-ha533",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://velocitycurve.substack.com/p/what-is-a-team-in-the-age-of-ai",
+    "published_at": "2026-11-21T08:23:46.000Z",
+    "og_image_url": null,
+    "title_ja": "AI時代のチーム編成はどう変わるのか？「Velocity Curve」が提唱するAIエージェントを組み込んだ新しい組織の在り方",
+    "summary_ja": "AIの進化により、従来の「人間のみ」で構成されるチームの定義が根本から問われている。 Velocity Curveの分析によると、AIエージェントをタスク実行主体として正規メンバーに組み込むことで、組織構造は階層型からより動的で小規模な「AI駆動型チーム」へと再編される。 エンジニアやプロダクトマネージャーは、個々の機能を開発する役割から、複数のエージェントを指揮し、システム全体のスループットを最大化する「オーケストレーター」としての立ち回りが求められるようになるだろう。",
+    "translations": {
+      "ja": {
+        "title": "AI時代のチーム編成はどう変わるのか？「Velocity Curve」が提唱するAIエージェントを組み込んだ新しい組織の在り方",
+        "summary": "AIの進化により、従来の「人間のみ」で構成されるチームの定義が根本から問われている。 Velocity Curveの分析によると、AIエージェントをタスク実行主体として正規メンバーに組み込むことで、組織構造は階層型からより動的で小規模な「AI駆動型チーム」へと再編される。 エンジニアやプロダクトマネージャーは、個々の機能を開発する役割から、複数のエージェントを指揮し、システム全体のスループットを最大化する「オーケストレーター」としての立ち回りが求められるようになるだろう。"
+      },
+      "en": {
+        "title": "Redefining the team in the AI era: How agents are reshaping organizational hierarchies and developer roles",
+        "summary": "The rise of generative AI is fundamentally challenging the traditional definition of a team, moving beyond human-only structures. Velocity Curve argues that as AI agents increasingly handle core execution tasks, organizations must shift from rigid, human-centric hierarchies to dynamic, small-scale 'AI-augmented' teams. For modern developers and product managers, this creates a crucial pivot: instead of simply writing code or managing tickets, you must now evolve into an orchestrator who manages the flow and output of autonomous agents. The key takeaway is that your value in this new landscape is no longer tied to individual feature production, but to your ability to design systems that maximize the throughput of these diverse, intelligent digital workers."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-21T11:17:48.109Z"
+  },
+  {
+    "id": "art-1795259832737-vef9h",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/trivipedia/n/na969c1d55d9b",
+    "published_at": "2026-11-21T10:44:06.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338894408/rectangle_large_type_2_8cb872844aed63e7e63ea3ae9d29e502.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIで1日10本以上の雑学メディアを量産する個人開発の秘訣：記事の書き出しパターンをあらかじめ型化して運用効率を最大化する手法",
+    "summary_ja": "AIを活用して1日10本前後の雑学記事を自動生成・公開するメディア運営では、記事の「書き出し」を型化しておくことが品質と速度の維持に不可欠である。 読者の興味を即座に引きつける導入文をパターン化してプロンプトに組み込むことで、AI生成特有の単調さを防ぎ、メディアとしての一貫性を保てるようになる。 量産体制を築く個人開発者にとって、ゼロから文章を考えさせず、確立された「型」に流し込む設計こそが安定したコンテンツ供給を実現する最短ルートだ。",
+    "translations": {
+      "ja": {
+        "title": "AIで1日10本以上の雑学メディアを量産する個人開発の秘訣：記事の書き出しパターンをあらかじめ型化して運用効率を最大化する手法",
+        "summary": "AIを活用して1日10本前後の雑学記事を自動生成・公開するメディア運営では、記事の「書き出し」を型化しておくことが品質と速度の維持に不可欠である。 読者の興味を即座に引きつける導入文をパターン化してプロンプトに組み込むことで、AI生成特有の単調さを防ぎ、メディアとしての一貫性を保てるようになる。 量産体制を築く個人開発者にとって、ゼロから文章を考えさせず、確立された「型」に流し込む設計こそが安定したコンテンツ供給を実現する最短ルートだ。"
+      },
+      "en": {
+        "title": "Scaling AI content: How setting predefined article-opening templates maximizes output for high-volume trivia media sites",
+        "summary": "Operating a trivia media site that pumps out around ten AI-generated articles daily requires a systematic approach to quality control, specifically by standardizing article openings. By building a library of proven, high-engagement introduction patterns into your prompts, you eliminate the monotonous, robotic tone often found in raw AI output while ensuring consistent brand voice across all content. For indie developers aiming to build high-volume automated publishing pipelines, the secret isn't just generating raw text; it is designing specific, repeatable templates that the AI must follow. This approach keeps production velocity high and reduces the cognitive load of editing, effectively transforming your AI workflow into a scalable content machine that consistently grabs reader attention right from the first sentence."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-21T11:17:12.738Z"
+  },
+  {
+    "id": "art-1795259823640-u83ad",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/anago__/items/badd1a8e7820e2393acc",
+    "published_at": "2026-11-21T11:05:03.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzU4Mjc3JTJGcHJvZmlsZS1pbWFnZXMlMkYxNjc2MTc1MDE0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0zNzk1NDYzMjE4NDMyMTBiNzk2NGQ4MzA0OTJlNGM0NA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6f6e907aa5301745e1f77ccf8f8320d2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9TExNJTIwV2lraSVFMyU4MSVBNyVFNiU4NCU4RiVFNiU4MCU5RCVFNiVCMSVCQSVFNSVBRSU5QSVFMyU4MyVBRCVFMyU4MiVCMCVFMyU4MiU5MiVFNCVCRCU5QyVFMyU4MSVBMyVFMyU4MSU5RiVFMyU4MCU4MiVFNiU5QiVCOCVFMyU4MSU4QiVFMyU4MSU5QiVFMyU4MiU4QiVFMyU4MSVBRSVFMyU4MSVBRiVFNiVCMSVCQSVFMyU4MiU4MSVFMyU4MSU5RiVFMyU4MSU5MyVFMyU4MSVBOCVFMyU4MSVBOCVFNyU5MCU4NiVFNyU5NCVCMSVFMyU4MSVBRTIlRTMlODElQTQlRTMlODElQTAlRTMlODElOTEmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0xYTc2ZTQ1NmI3ZTI4NjE2YjI3ZjA4MGE5M2RlYTRmZA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhbmFnb19fJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YzQ0MmRhMmVmY2Y2YjRhMThlYmU1ODVlOWZiYjFhZjc&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b42e29d11c7714c4e7f88d45670c1f2d",
+    "title_ja": "LLMで意思決定ログを自動化：コードに現れない「決断理由と参照元」をWikiへ集約する開発手法",
+    "summary_ja": "コードだけでは読み取れない開発の意図や文脈を保存するため、LLMを活用して意思決定ログをWikiに記録する手法が注目されている。 決断内容と理由、そして元の議論への参照リンクという3点のみをLLMに抽出させるシンプルな運用で、モバイルとバックエンドを横断する複雑な処理の背景を可視化する。 手作業の負担を最小限に抑えつつ、チームの技術的負債を防ぎ、将来の変更に強いドキュメント体制を構築するための実践的なアプローチである。",
+    "translations": {
+      "ja": {
+        "title": "LLMで意思決定ログを自動化：コードに現れない「決断理由と参照元」をWikiへ集約する開発手法",
+        "summary": "コードだけでは読み取れない開発の意図や文脈を保存するため、LLMを活用して意思決定ログをWikiに記録する手法が注目されている。 決断内容と理由、そして元の議論への参照リンクという3点のみをLLMに抽出させるシンプルな運用で、モバイルとバックエンドを横断する複雑な処理の背景を可視化する。 手作業の負担を最小限に抑えつつ、チームの技術的負債を防ぎ、将来の変更に強いドキュメント体制を構築するための実践的なアプローチである。"
+      },
+      "en": {
+        "title": "Automating Decision Logs with LLMs: Capturing Design Rationale and Context for Better Documentation",
+        "summary": "To preserve architectural intent that often gets lost in commits, developers are using LLMs to automatically generate structured decision logs in wikis. By restricting input to just three requirements—the specific decision made, the reasoning behind it, and a reference link to the original discussion—this method effectively captures the rationale behind cross-platform logic between mobile and backend services. This lightweight approach minimizes manual overhead while ensuring that critical project context remains visible to the entire team. For builders looking to reduce technical debt and simplify onboarding, the core takeaway is that documenting \"why\" is as important as \"how,\" and using an LLM to enforce this simple feedback loop makes knowledge retention sustainable rather than a chore."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-21T11:17:03.640Z"
+  },
+  {
     "id": "art-1795259036075-kru3y",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -6340,32 +6445,6 @@
     "created_at": "2026-11-20T18:47:35.601Z"
   },
   {
-    "id": "art-1795200448476-wor9g",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/aoyamamee/n/nb3bd29fb000d",
-    "published_at": "2026-11-20T17:32:35.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/338617908/rectangle_large_type_2_1f8d08f1c1115102c3b6da8445698391.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claudeへのわずか1行の指示で動画分離ツール「mp4split」を爆速開発、現役エンジニアが明かす個人開発の新たな指針",
-    "summary_ja": "本業エンジニアが、動画を「音声mp3」と「映像mp4」に自動分離するWindowsツール「mp4split」をClaudeで開発した。 わずか1行の指示から骨組みを構築し、個人の「あったらいいな」を即座に形にするAI開発の有用性を実証した。 複雑なUIや機能を削ぎ落とし、特定の課題解決に特化させるアプローチは、個人開発者が小規模ツールを量産する上で強力な武器になる。",
-    "translations": {
-      "ja": {
-        "title": "Claudeへのわずか1行の指示で動画分離ツール「mp4split」を爆速開発、現役エンジニアが明かす個人開発の新たな指針",
-        "summary": "本業エンジニアが、動画を「音声mp3」と「映像mp4」に自動分離するWindowsツール「mp4split」をClaudeで開発した。 わずか1行の指示から骨組みを構築し、個人の「あったらいいな」を即座に形にするAI開発の有用性を実証した。 複雑なUIや機能を削ぎ落とし、特定の課題解決に特化させるアプローチは、個人開発者が小規模ツールを量産する上で強力な武器になる。"
-      },
-      "en": {
-        "title": "Building the 'mp4split' Video Tool with One Prompt in Claude: A Systems Engineer's Guide to Rapid Individual Development",
-        "summary": "A systems engineer has leveraged Claude to rapidly develop 'mp4split,' a lightweight Windows utility that automatically separates video files into standalone audio MP3s and silent MP4s. By providing just a single-line prompt, the developer successfully bootstrapped the core architecture, proving how effectively AI can convert minor personal annoyances into functional, deployable software. This approach of aggressive simplification—focusing strictly on solving a specific, targeted pain point rather than bloating the feature set—serves as a vital blueprint for solo developers aiming to ship tools quickly. The project demonstrates that with AI as a co-pilot, the barrier to moving from a raw \"I wish this existed\" idea to a working binary is lower than ever for indie builders."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-20T18:47:28.476Z"
-  },
-  {
     "id": "art-1795200436495-fwwq0",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -7992,32 +8071,6 @@
     "created_at": "2026-11-20T14:02:03.659Z"
   },
   {
-    "id": "art-1795183316506-849vf",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.404media.co/a-man-and-his-muse-ai-agent-sue-meta/",
-    "published_at": "2026-11-20T13:57:26.000Z",
-    "og_image_url": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/2026/11/CleanShot-2026-11-17-at-7.15.49-AM@2x.png",
-    "title_ja": "AIエージェント「Muse」の開発者がMetaを提訴―独自AIサービスの知財やデータ利用を巡る法廷闘争の行方",
-    "summary_ja": "AIエージェント「Muse」の開発者が、Metaに対して訴訟を提起した。 本件は、独自に構築したAIエージェントのサービス基盤や知的財産権が、大手プラットフォームのAI展開においてどのように侵害されたかを問う象徴的な事例となる。 個人開発者やスタートアップにとって、プラットフォーム依存型のAI構築には大きな法的な不確実性が伴うことを示唆しており、将来的なサービス設計やデータ戦略において、法的リスクの評価がこれまで以上に不可欠な要件となっている。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント「Muse」の開発者がMetaを提訴―独自AIサービスの知財やデータ利用を巡る法廷闘争の行方",
-        "summary": "AIエージェント「Muse」の開発者が、Metaに対して訴訟を提起した。 本件は、独自に構築したAIエージェントのサービス基盤や知的財産権が、大手プラットフォームのAI展開においてどのように侵害されたかを問う象徴的な事例となる。 個人開発者やスタートアップにとって、プラットフォーム依存型のAI構築には大きな法的な不確実性が伴うことを示唆しており、将来的なサービス設計やデータ戦略において、法的リスクの評価がこれまで以上に不可欠な要件となっている。"
-      },
-      "en": {
-        "title": "Developer and His AI Agent 'Muse' File Lawsuit Against Meta Over Intellectual Property and Data Usage Rights",
-        "summary": "The creator of the specialized AI agent platform 'Muse' has initiated legal action against Meta, marking a critical confrontation regarding intellectual property rights and the usage of private data in Big Tech's AI development pipelines. This lawsuit highlights the escalating tensions between independent developers and major platform incumbents as proprietary AI ecosystems collide. For builders and AI startups, this case serves as a stark reminder of the inherent platform risks when constructing services that depend on potentially overlapping proprietary models or data practices. It underscores the urgent necessity to conduct thorough legal due diligence on data provenance and intellectual property boundaries early in the development cycle, rather than treating these protections as an afterthought when scaling."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-20T14:01:56.506Z"
-  },
-  {
     "id": "art-1795182427764-ig338",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -8649,33 +8702,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-20T11:31:49.792Z"
-  },
-  {
-    "id": "art-1795173445537-lqk66",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/kinamocchi_tech/items/3d7e0ad8ea02e78b3afb",
-    "published_at": "2026-11-20T11:04:23.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0Mzg0NDQ3JTJGZWM0ZjA1Y2RhOTZlOGM5YmE3MjZjZTVlMDIyYzllODZmOTNjZmY3ZSUyRnhfbGFyZ2UucG5nJTNGMTc3NDE2Njk3Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTNiYzkwOWUzOWZjMmNkOWNhZDY5MWNlOTljMjNlZjU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1edb03140b2d8e63033cca2f1a84f7d3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9R2VtaW5pJTIwNCUyME5lb24lRTMlODElQUUlRTUlOEQlOTglRTQlQkUlQTElRTMlODElQUZDYXJib24lRTMlODIlODglRTMlODIlOEElRTklQUIlOTglRTMlODElODQlRTMlODElQUUlRTMlODElQUIxMiVFNiU5QyU4OCVFMyU4MSVBQiVFOSU4MCU4NiVFOCVCQiVBMiVFMyU4MSU5OSVFMyU4MiU4QiVFNyU5MCU4NiVFNyU5NCVCMSVFMyU4MCU4MiVFMyU4MyU5OSVFMyU4MyVCMyVFMyU4MyU4MSVFMyU4MSVBRSVFOCVBQSVBRCVFMyU4MSVCRiVFNiU5NiVCOSVFMyU4MiU4MiVFNiU5NSVCNCVFNyU5MCU4NiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWExZmFkZjI1NjVmNTQ2ZmYxMjVkOGI4MDc2YzI5NTA2&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBraW5hbW9jY2hpX3RlY2gmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1jYTY4MTM4NjQzMTE0YmFhOTVkZGYxY2QwYTIyMWZmOQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3170ae0f0b51eb4991ef67f33d77fd44",
-    "title_ja": "Gemini 4 NeonのAPI単価がCarbonを逆転する12月の仕組みと、開発者が知るべきベンチマーク指標の正しい読み方",
-    "summary_ja": "Gemini 4シリーズにおけるNeonとCarbonの価格戦略について、12月に単価逆転が発生する技術的背景と背景にある経済的意図を解説。 単なるベンチマーク数値の大小だけでなく、タスクごとの処理効率とAPIコストを最適化するための正しい指標の読み解き方を整理した。 個人開発者が将来的なAPI料金変動リスクを回避し、プロジェクトの収益性を維持するために、モデルごとの特性を見極めて移行戦略を立てる重要性を説く。",
-    "translations": {
-      "ja": {
-        "title": "Gemini 4 NeonのAPI単価がCarbonを逆転する12月の仕組みと、開発者が知るべきベンチマーク指標の正しい読み方",
-        "summary": "Gemini 4シリーズにおけるNeonとCarbonの価格戦略について、12月に単価逆転が発生する技術的背景と背景にある経済的意図を解説。 単なるベンチマーク数値の大小だけでなく、タスクごとの処理効率とAPIコストを最適化するための正しい指標の読み解き方を整理した。 個人開発者が将来的なAPI料金変動リスクを回避し、プロジェクトの収益性を維持するために、モデルごとの特性を見極めて移行戦略を立てる重要性を説く。"
-      },
-      "en": {
-        "title": "Why Gemini 4 Neon prices will overtake Carbon in December and how to interpret model benchmarks for API cost optimization",
-        "summary": "This analysis breaks down the strategic pricing mechanics behind the Gemini 4 series, specifically addressing why the per-token cost of Neon is set to overtake Carbon by December. It moves beyond superficial benchmark rankings to explain how developers should interpret performance data to calculate actual API expenses against specific workload requirements. Understanding these nuances is critical for indie developers who need to mitigate the risk of sudden cost spikes and maintain project profitability as model pricing evolves. The piece provides a framework for evaluating model efficiency, ensuring that your backend transitions remain cost-effective while delivering the necessary inference quality for your specific application architecture."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-11-20T11:17:25.537Z"
   },
   {
     "id": "art-1795173423433-4qnzk",
@@ -14771,32 +14797,6 @@
       "開発"
     ],
     "created_at": "2026-11-19T02:31:58.691Z"
-  },
-  {
-    "id": "art-1795055511187-8wwn4",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/konbu_love/articles/64a97ac8d1153d",
-    "published_at": "2026-11-18T20:52:40.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--leK4UpI9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%2589%25B2%25E3%2582%2592%25E4%25BB%2595%25E8%25BE%25BC%25E3%2582%2593%25E3%2581%25A7%25E4%25B8%2580%25E6%259C%25AC%25E7%2587%2583%25E3%2582%2584%25E3%2581%2599%25E3%2580%2581%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25A6%25E3%2582%25B6%25E3%2581%25AE%25E7%25B7%259A%25E9%25A6%2599%25E8%258A%25B1%25E7%2581%25AB%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E3%2582%2589%25E3%2581%2584%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2593%25E3%2582%2593%25E3%2581%25B6%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVjZDc1YWVmZGQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claudeと共同開発したブラウザ型線香花火ゲーム「線香花火」：色をカスタマイズして30秒の儚い美をスマホで体験",
-    "summary_ja": "個人開発者のこんぶ氏は、Claudeを開発パートナーに迎え、ブラウザだけで動作するミニゲーム「線香花火」を公開した。 ユーザーが好みの色を組み合わせて自分だけの火花を生成し、約30秒間の燃焼体験を楽しむというシンプルな仕掛けだ。 スマホでのプレイに最適化されており、面倒なインストールや登録は一切不要。 プログラミングの壁をAIで取り払い、直感的なアイデアをそのままWeb体験へと昇華させた事例である。",
-    "translations": {
-      "ja": {
-        "title": "Claudeと共同開発したブラウザ型線香花火ゲーム「線香花火」：色をカスタマイズして30秒の儚い美をスマホで体験",
-        "summary": "個人開発者のこんぶ氏は、Claudeを開発パートナーに迎え、ブラウザだけで動作するミニゲーム「線香花火」を公開した。 ユーザーが好みの色を組み合わせて自分だけの火花を生成し、約30秒間の燃焼体験を楽しむというシンプルな仕掛けだ。 スマホでのプレイに最適化されており、面倒なインストールや登録は一切不要。 プログラミングの壁をAIで取り払い、直感的なアイデアをそのままWeb体験へと昇華させた事例である。"
-      },
-      "en": {
-        "title": "Developer partners with Claude to launch 'Senko Hanabi,' a browser-based sparkler game with custom color mechanics",
-        "summary": "Solo developer Konbu teamed up with Claude to ship 'Senko Hanabi,' a minimalist web game that lets users customize color palettes to burn a virtual sparkler. The project focuses on a simple, sensory experience that lasts about 30 seconds, optimized entirely for mobile browsers without requiring any installations or user registrations. By leveraging AI to handle the underlying code, the developer successfully transformed a casual creative prompt into a polished, accessible interactive Web experience. This project serves as a compelling example of how AI pairing can lower the barrier to entry, enabling creators to prototype and launch interactive digital artifacts based on intuitive, creative ideas without getting bogged down in complex implementation details."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-19T02:31:51.187Z"
   },
   {
     "id": "art-1795054625328-a9grj",
