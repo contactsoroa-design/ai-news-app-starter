@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1795304839555-5hjx8",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/pain_modulation/n/n28872573108a",
+    "published_at": "2026-11-21T23:37:37.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339086975/rectangle_large_type_2_5c11c7622109d49b6a90a9c43e1deb23.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "非エンジニアがAIを活用して無料のリバーブ・プラグイン「Ambience」を開発するまでの全記録",
+    "summary_ja": "音響の専門知識を持たない筆者が、AIツールを駆使して無料のリバーブ（残響）プラグイン「Ambience」を開発した手法を公開。 コード記述からビルドまでの全工程をAIにサポートさせ、専門的な技術的ハードルをどう乗り越えたのかという経験談を綴る。 技術的なバックグラウンドがなくとも、AIを強力なパートナーに据えれば、音楽制作ツールという複雑なソフトウェアプロダクトをゼロからリリース可能なことを実証している。",
+    "translations": {
+      "ja": {
+        "title": "非エンジニアがAIを活用して無料のリバーブ・プラグイン「Ambience」を開発するまでの全記録",
+        "summary": "音響の専門知識を持たない筆者が、AIツールを駆使して無料のリバーブ（残響）プラグイン「Ambience」を開発した手法を公開。 コード記述からビルドまでの全工程をAIにサポートさせ、専門的な技術的ハードルをどう乗り越えたのかという経験談を綴る。 技術的なバックグラウンドがなくとも、AIを強力なパートナーに据えれば、音楽制作ツールという複雑なソフトウェアプロダクトをゼロからリリース可能なことを実証している。"
+      },
+      "en": {
+        "title": "How a non-technical creator leveraged AI to build and release a free reverb plugin named Ambience",
+        "summary": "A creator without formal sound engineering or coding training successfully developed and released Ambience, a free reverb plugin, by utilizing AI as an end-to-end development partner. The story details the workflow of using AI to bridge critical knowledge gaps, handling complex programming tasks, and troubleshooting build errors that would traditionally require years of expertise. By treating the AI as a co-developer, the creator managed to navigate the entire product lifecycle from conceptualization to final deployment. This case study demonstrates that for creative builders, the lack of a traditional engineering background is no longer a terminal barrier to shipping sophisticated music software, provided they can effectively prompt and iterate with AI agents."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-21T23:47:19.555Z"
+  },
+  {
+    "id": "art-1795304831108-ow1d5",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/itaraiguma/articles/scheduler-startup-run-per-restart",
+    "published_at": "2026-11-21T23:33:32.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--vxxo-Lo3--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2586%258D%25E8%25B5%25B7%25E5%258B%2595%25E3%2581%25A7%25E6%25AD%25A2%25E3%2581%25BE%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2580%258C%25E8%25B5%25B7%25E5%258B%2595%25E7%259B%25B4%25E5%25BE%258C%25E3%2581%25AB%25E5%25AE%259F%25E8%25A1%258C%25E3%2580%258D%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%25E8%25A8%2598%25E4%25BA%258B%25E5%258F%2596%25E5%25BE%2597%25E3%2581%258C%25E3%2580%2581%25E4%25BB%258A%25E5%25BA%25A6%25E3%2581%25AF%25E5%2586%258D%25E8%25B5%25B7%25E5%258B%2595%25E3%2581%25AE%25E3%2581%259F%25E3%2581%25B3%25E3%2581%25AB%25E8%25B5%25B0%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlZmMxMmY2MTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "FastAPIのAPScheduler実装で発生した「無限記事取得」の罠と、ワーカー再起動を考慮したスケジューラ設計の教訓",
+    "summary_ja": "技術記事キュレーションサービス「DevPick」において、FastAPIのバックエンドで稼働するAPSchedulerのタスク再起動時の挙動で躓いた事例。 当初の「起動直後に実行」という設定が、ワーカーが入れ替わるたびに重複実行をトリガーしていた。 分散環境下で単一ワーカーのみにジョブを持たせる場合、単純な初回設定ではなく、ジョブの存在チェックやステータス永続化を組み合わせた堅牢なタスク管理が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "FastAPIのAPScheduler実装で発生した「無限記事取得」の罠と、ワーカー再起動を考慮したスケジューラ設計の教訓",
+        "summary": "技術記事キュレーションサービス「DevPick」において、FastAPIのバックエンドで稼働するAPSchedulerのタスク再起動時の挙動で躓いた事例。 当初の「起動直後に実行」という設定が、ワーカーが入れ替わるたびに重複実行をトリガーしていた。 分散環境下で単一ワーカーのみにジョブを持たせる場合、単純な初回設定ではなく、ジョブの存在チェックやステータス永続化を組み合わせた堅牢なタスク管理が不可欠となる。"
+      },
+      "en": {
+        "title": "Debugging an APScheduler Infinite Loop in FastAPI: How to Safely Manage Background Tasks During Worker Restarts",
+        "summary": "The creator of the curation service DevPick encountered a recurring issue with APScheduler within a FastAPI backend, where jobs were repeatedly triggered upon every worker restart. Initially, setting the scheduler to run 'immediately upon startup' solved the problem of tasks getting delayed, but it inadvertently caused duplicate executions whenever workers were swapped. The core issue highlights that in a distributed architecture where only one specific worker holds the scheduler, simply triggering at launch is insufficient. Builders must implement robust status checks and job persistence to prevent race conditions during deployments or pod restarts. Ultimately, ensure your background task architecture verifies existing job states rather than assuming a fresh, single-instance environment whenever a process reboots."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-21T23:47:11.108Z"
+  },
+  {
+    "id": "art-1795304824430-sw49b",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/news/article/2611/22/2000003388/",
+    "published_at": "2026-11-21T23:21:31.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/news/article/ogp/2611/22/2000003388/10012748/2048",
+    "title_ja": "Anthropicの研究者がClaudeと共同で「リーマン予想」を証明、Leanコミュニティが形式証明の正しさを検証・認定",
+    "summary_ja": "Anthropicの数学者レベント・アルポーゲ氏が、AIモデル「Claude」との共同作業により数学の難問「リーマン予想」を証明したと発表した。 証明は「Lean」で記述され、その規模は1700万行に達する。 Leanコミュニティは検証プロセスを経て、この形式証明が数学的に正しいと共同声明で認定した。 AIによる科学的発見が検証ツールを介して公的に裏付けられた歴史的な事例であり、AIが推論と証明の強力なパートナーになり得ることを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicの研究者がClaudeと共同で「リーマン予想」を証明、Leanコミュニティが形式証明の正しさを検証・認定",
+        "summary": "Anthropicの数学者レベント・アルポーゲ氏が、AIモデル「Claude」との共同作業により数学の難問「リーマン予想」を証明したと発表した。 証明は「Lean」で記述され、その規模は1700万行に達する。 Leanコミュニティは検証プロセスを経て、この形式証明が数学的に正しいと共同声明で認定した。 AIによる科学的発見が検証ツールを介して公的に裏付けられた歴史的な事例であり、AIが推論と証明の強力なパートナーになり得ることを示唆している。"
+      },
+      "en": {
+        "title": "Anthropic Researcher Proves Riemann Hypothesis with Claude, with Formal Verification Certified by Lean Community",
+        "summary": "Anthropic mathematician Levent Alpoge has announced a proof for the Riemann Hypothesis, developed in direct collaboration with the Claude AI model. The proof, consisting of 17 million lines of code written in the Lean theorem prover, was released publicly for scrutiny. Following rigorous analysis, the Lean community issued a joint statement officially validating the formal proof as mathematically correct. This marks a significant milestone where AI-generated scientific insight has been successfully verified by machine-checked logic. For developers and builders, this case demonstrates that LLMs, when coupled with formal verification environments like Lean, are transitioning from conversational assistants into legitimate engines for complex scientific discovery and rigorous mathematical proof-checking."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "アップデート"
+    ],
+    "created_at": "2026-11-21T23:47:04.431Z"
+  },
+  {
     "id": "art-1795303920174-ov8qj",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5039,32 +5117,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-21T10:46:55.054Z"
-  },
-  {
-    "id": "art-1795257344486-k18mg",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/royal_dietes7897/n/n498fc91c090d",
-    "published_at": "2026-11-21T10:15:10.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/338882698/rectangle_large_type_2_51378fc831439d3a6823e1c165829b15.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "エンジニアが生成AIと構築した、広告・ネット接続一切不要のデスクトップ時計の設計思想と開発の舞台裏",
-    "summary_ja": "とある設計者が、生成AIを技術パートナーとして活用し、プライバシーとミニマリズムを追求したデスクトップ時計を開発した。 広告表示やネットワーク通信を一切排除し、完全にオフラインで動作するハードウェア設計を実現している。 複雑なソフトウェアスタックに頼らず、AIとの対話を通じてシンプルかつ堅牢な実装に落とし込むアプローチは、過剰な機能に疲弊しがちな昨今の開発現場へのアンチテーゼといえる。",
-    "translations": {
-      "ja": {
-        "title": "エンジニアが生成AIと構築した、広告・ネット接続一切不要のデスクトップ時計の設計思想と開発の舞台裏",
-        "summary": "とある設計者が、生成AIを技術パートナーとして活用し、プライバシーとミニマリズムを追求したデスクトップ時計を開発した。 広告表示やネットワーク通信を一切排除し、完全にオフラインで動作するハードウェア設計を実現している。 複雑なソフトウェアスタックに頼らず、AIとの対話を通じてシンプルかつ堅牢な実装に落とし込むアプローチは、過剰な機能に疲弊しがちな昨今の開発現場へのアンチテーゼといえる。"
-      },
-      "en": {
-        "title": "Building a privacy-first, offline-only desktop clock: A designer’s collaborative experiment with generative AI",
-        "summary": "A developer recently documented their journey building a minimalist desktop clock that operates entirely offline, explicitly rejecting both ad-tracking and network connectivity. By utilizing generative AI as a technical partner throughout the design and coding phase, they managed to strip away all bloatware while ensuring high reliability in a standalone hardware format. This project serves as a compelling antithesis to the current trend of over-engineered, cloud-dependent software, demonstrating that simpler, local-first architectures often deliver a superior user experience. For developers building hardware or utility software, the takeaway is clear: engaging AI to enforce constraints on scope can lead to remarkably stable, distraction-free products that respect user privacy by default rather than as an afterthought."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-21T10:35:44.486Z"
   },
   {
     "id": "art-1795257326231-zi6hr",
@@ -12712,31 +12764,6 @@
     "created_at": "2026-11-19T18:49:05.849Z"
   },
   {
-    "id": "art-1795114135331-oo0bt",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/minitooldesk/articles/453ab568f30811",
-    "published_at": "2026-11-19T06:48:54.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ErsKiSSR--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Linux%2520%252F%2520Docker%25E3%2580%2591Nginx%25E3%2581%25AE404%25E5%259C%25B0%25E7%258D%2584%25E3%2582%2584%25E8%2582%25A5%25E5%25A4%25A7%25E5%258C%2596Dockerfile%25E3%2581%25A8%25E3%2582%25B5%25E3%2583%25A8%25E3%2583%258A%25E3%2583%25A9%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259A%25E6%259C%25AC%25E7%2595%25AA%25E9%2581%258B%25E7%2594%25A8%25E3%2581%25AE%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:MiniToolDesk%2520%257C%2520%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS2g2cHJ5YW1NX3lneEJRWXYxNmhvTWVmU0Q4eXQtMVBWYVQ0a3psT2RkUWdsekpRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "NginxとDockerの運用地獄を脱出する：SPAの404エラーや肥大化したDockerfileを解消する本番運用のベストプラクティス4選",
-    "summary_ja": "Webアプリケーションの本番環境において、NginxとDockerの設定は開発者の時間を浪費する主要因になりがちです。 本記事では、SPA（React/Vue/Next.js）利用時のリロードで発生する404エラーの回避策、WebSocket通信の安定化、そしてマルチステージビルドを活用してDockerfileを軽量化する手法を網羅しています。",
-    "translations": {
-      "ja": {
-        "title": "NginxとDockerの運用地獄を脱出する：SPAの404エラーや肥大化したDockerfileを解消する本番運用のベストプラクティス4選",
-        "summary": "Webアプリケーションの本番環境において、NginxとDockerの設定は開発者の時間を浪費する主要因になりがちです。 本記事では、SPA（React/Vue/Next.js）利用時のリロードで発生する404エラーの回避策、WebSocket通信の安定化、そしてマルチステージビルドを活用してDockerfileを軽量化する手法を網羅しています。"
-      },
-      "en": {
-        "title": "Escaping Nginx and Docker Production Nightmares: 4 Best Practices to Fix SPA 404 Errors and Bloated Dockerfile Configurations",
-        "summary": "Nginx and Docker configurations in production often become major time sinks for engineering teams, frequently leading to non-obvious runtime issues. This guide tackles essential fixes, including resolving 404 errors during page reloads in SPA frameworks like React or Next.js, stabilizing WebSocket connections, and optimizing container sizes using multi-stage builds. By moving beyond basic setups to address these common infrastructure pitfalls, developers can significantly reduce incident rates and build cleaner, more robust deployment pipelines. The article provides concrete configuration patterns that help you avoid infrastructure hell, ensuring that your production environment remains lightweight, reliable, and easy to maintain over time without constant firefighting or manual debugging sessions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-19T18:48:55.331Z"
-  },
-  {
     "id": "art-1795114042896-8hvd4",
     "source_id": "source-google-ai-blog",
     "source_name": "Google AI Blog",
@@ -12874,32 +12901,6 @@
       "音声"
     ],
     "created_at": "2026-11-19T18:18:13.158Z"
-  },
-  {
-    "id": "art-1795111593956-nvdqh",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/naga1021/articles/ai-bots-role-split",
-    "published_at": "2026-11-19T15:22:33.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--N1y6Lg7b--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588%25E3%2582%259230%25E4%25BD%2593%25E4%25BB%25A5%25E4%25B8%258A%25E3%2581%25AB%25E5%2588%2586%25E3%2581%2591%25E3%2581%25A6%25E3%2580%2581%25E7%2594%259F%25E6%25B4%25BB%25E3%2581%25A8%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AE%25E9%259B%2591%25E5%258B%2599%25E3%2582%2592%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AA%25E3%2581%258C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUzMzdlYjE0MjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発と生活を効率化するAIボット30体以上の運用術――「ボット間連携」の失敗から学ぶ自律エージェント構築の極意",
-    "summary_ja": "30体以上のAIボットを役割ごとに細分化し、カレンダー管理やメール要約などの雑務を自動化する運用事例を紹介する。 一見効率的な「AI分業体制」だが、ボット間のデータ受け渡しに依存すると、かえって連携不全による詰まりが発生するという課題が浮き彫りとなった。 AIエージェントを多数活用する開発者にとって、個別のタスク完結能力だけでなく、エージェント間の連携フローをいかに堅牢に設計するかが自動化システムの安定稼働における最大の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発と生活を効率化するAIボット30体以上の運用術――「ボット間連携」の失敗から学ぶ自律エージェント構築の極意",
-        "summary": "30体以上のAIボットを役割ごとに細分化し、カレンダー管理やメール要約などの雑務を自動化する運用事例を紹介する。 一見効率的な「AI分業体制」だが、ボット間のデータ受け渡しに依存すると、かえって連携不全による詰まりが発生するという課題が浮き彫りとなった。 AIエージェントを多数活用する開発者にとって、個別のタスク完結能力だけでなく、エージェント間の連携フローをいかに堅牢に設計するかが自動化システムの安定稼働における最大の鍵となる。"
-      },
-      "en": {
-        "title": "Deploying 30+ AI Bots for Personal Dev and Life Admin: Lessons on Building Robust Agent-to-Agent Workflows",
-        "summary": "This article explores a sophisticated automation strategy using over 30 specialized AI bots to handle personal development and daily administrative tasks. While segmenting tasks like calendar management and email briefing seems efficient, the author shares a revealing failure where communication breakdowns between bots halted the entire workflow. For developers building autonomous agents, this experience serves as a crucial case study: simply having capable bots is insufficient if the handoff logic is fragile. At scale, the reliability of your automation hinges less on individual bot intelligence and more on how robustly you design the inter-agent communication channels. The primary takeaway is that complex AI ecosystems require rigorous monitoring of data handoffs to prevent systemic bottlenecks before they disrupt your productivity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-19T18:06:33.956Z"
   },
   {
     "id": "art-1795110416156-9cgg3",
