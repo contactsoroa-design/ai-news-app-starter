@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1795262651945-uqzed",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/a1221/articles/sql-upsert-dml-builder-dialects",
+    "published_at": "2026-11-20T23:51:25.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--JL5jm1xN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:INSERT%25E3%2583%25BBUPDATE%25E3%2583%25BBDELETE%25E3%2582%2592%25E6%2596%25B9%25E8%25A8%2580%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AB%25E7%25B5%2584%25E3%2581%25BF%25E7%25AB%258B%25E3%2581%25A6%25E3%2582%258B%25E7%25B4%2594%25E9%2596%25A2%25E6%2595%25B0%25E3%2582%2592%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%25EF%25BC%2588upsert%25E3%2583%25BBJOIN%25E4%25BB%2598%25E3%2581%258D%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devtoolkits.app%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZkY2RlMmQ0ZDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Visual SQL BuilderでINSERT・UPDATE・DELETEを実装：DB方言を吸収する純関数アプローチとUpsert・JOINの処理設計",
+    "summary_ja": "ブラウザベースのVisual SQL BuilderでINSERT、UPDATE、DELETE、Upsert機能を実現する際、各データベース固有の構文（方言）を純関数で抽象化した開発記録。 文字列生成のみを行う関数として実装し、dialect値を分岐させる設計を採用することで、テストの容易性を担保しつつ、複雑なJOINや複数行挿入などのDB間差異を吸収した。 SQL生成エンジンを構築する際、ロジックをDOMから切り離し、純関数で管理することが保守性と移植性を高める鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "Visual SQL BuilderでINSERT・UPDATE・DELETEを実装：DB方言を吸収する純関数アプローチとUpsert・JOINの処理設計",
+        "summary": "ブラウザベースのVisual SQL BuilderでINSERT、UPDATE、DELETE、Upsert機能を実現する際、各データベース固有の構文（方言）を純関数で抽象化した開発記録。 文字列生成のみを行う関数として実装し、dialect値を分岐させる設計を採用することで、テストの容易性を担保しつつ、複雑なJOINや複数行挿入などのDB間差異を吸収した。 SQL生成エンジンを構築する際、ロジックをDOMから切り離し、純関数で管理することが保守性と移植性を高める鍵となる。"
+      },
+      "en": {
+        "title": "Building a Visual SQL Builder: Implementing Pure Functions to Abstract DB Dialects for INSERT, UPDATE, DELETE, and Upsert",
+        "summary": "This technical write-up details how to implement INSERT, UPDATE, DELETE, and Upsert operations within a browser-based Visual SQL Builder while managing the fragmented SQL syntax dialects across different databases. By implementing these operations as pure, string-returning functions rather than DOM-heavy components, the author isolates dialect-specific logic using simple conditional switches based on the target database type. This architecture significantly streamlines testing and ensures robust handling of complex scenarios like JOINs and multi-row inserts that vary wildly between SQL engines. For developers building SQL-related tools, the core takeaway is that decoupling SQL generation logic from UI state via pure functions is essential for maintaining portability and testability as feature complexity grows, rather than hardcoding dialect differences directly into the visual interface."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-21T12:04:11.945Z"
+  },
+  {
+    "id": "art-1795262645324-gugxc",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/locallab/items/931e7720c1264d027205",
+    "published_at": "2026-11-21T12:00:41.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS2ZuWlN6eUZwRTRLWEppdXNpakx5dm5aczlKMVgxdXlJX0ZCZGFxaXdDbC1yMXVjUSUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0wNmU4ZDAzNjI5N2Q0NTRmOGMzMDk1MTQ3ZDQ4OTg1OQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6b9dd9d4b2cb70a5b4abb956c8bd7df5?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UnVzdCUyMCUyQiUyMGF4dW0lMjAlRTMlODElQTclMjAzMDglMjBQZXJtYW5lbnQlMjBSZWRpcmVjdCUyMCVFMyU4MiU5MiVFNiU5QyU4MCVFNyU5RiVBRCVFNSVBRSU5RiVFOCVBMyU4NSVFMyU4MSU5OSVFMyU4MiU4QiUyMDUlMjAlRTMlODElQTQlRTMlODElQUUlRTMlODMlOTElRTMlODIlQkYlRTMlODMlQkMlRTMlODMlQjMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0wMGNlNWRiMTdkY2UwZjc2ZTk4OTMxYmRlYzQwNmVlNw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsb2NhbGxhYiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM1NGIxN2U0ZjAxZTM1M2Q5ZDAwZDk5OWQ3NTZmMzQ1&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=33c34ac119859a3837148a468cec768c",
+    "title_ja": "Rust・axum開発者必見：308 Permanent Redirectを最短実装する5つのパターンとPOST移行時の最適解",
+    "summary_ja": "RustのWebフレームワーク「axum」で308 Permanent Redirectを実装する5つの手法を解説。 axumの標準機能「Redirect::permanent()」を使えば、メソッドとリクエストボディを保持したままリダイレクトが可能だ。 301リダイレクトとは異なり、308はPOSTリクエストを維持できるため、APIの破壊的変更を伴うマイグレーション作業における強力なツールとなる。",
+    "translations": {
+      "ja": {
+        "title": "Rust・axum開発者必見：308 Permanent Redirectを最短実装する5つのパターンとPOST移行時の最適解",
+        "summary": "RustのWebフレームワーク「axum」で308 Permanent Redirectを実装する5つの手法を解説。 axumの標準機能「Redirect::permanent()」を使えば、メソッドとリクエストボディを保持したままリダイレクトが可能だ。 301リダイレクトとは異なり、308はPOSTリクエストを維持できるため、APIの破壊的変更を伴うマイグレーション作業における強力なツールとなる。"
+      },
+      "en": {
+        "title": "Five ways to implement 308 Permanent Redirects in Rust's axum framework for seamless API migration",
+        "summary": "This guide outlines five distinct patterns for implementing 308 Permanent Redirects using the Rust web framework axum. By leveraging axum's native 'Redirect::permanent()' function, developers can efficiently forward traffic while ensuring the HTTP method and request body remain unchanged. Unlike the traditional 301 redirect, which often forces a shift to GET requests, the 308 status code preserves the original payload, making it an essential mechanism for managing breaking changes during API migrations. Whether you are refactoring legacy endpoints or shifting service architecture, understanding these five implementation patterns helps maintain client compatibility without losing data integrity. For developers shipping backend services, mastering this transition technique is critical for smooth versioning and reducing downtime during infrastructure updates."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-21T12:04:05.324Z"
+  },
+  {
+    "id": "art-1795262635328-yvao8",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/masahiko_studio/n/n3736a4cc550e",
+    "published_at": "2026-11-21T12:01:38.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338807377/rectangle_large_type_2_0f0bcf6a5317ba51e442d0adf49132b0.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Orbitの動画に登場する「彼」と「彼女」に名前を命名：ハルとユイ、そしてぬーどるの物語が加速するブランド戦略",
+    "summary_ja": "コンテンツ配信プラットフォーム「Orbit」の動画で、これまで「彼」「彼女」と呼んでいたキャラクターに、「ハル」と「ユイ」という名前を正式に付与した。 抽象的な代名詞から固有名詞へと切り替えたことで、視聴者は物語により深く没入し、愛着を持ちやすくなる。 個人クリエイターが自身のコンテンツを「プロダクト」として成長させる際、こうしたキャラクター設定の具体化は、ブランドの差別化とファンベース構築における重要な一歩となる。",
+    "translations": {
+      "ja": {
+        "title": "Orbitの動画に登場する「彼」と「彼女」に名前を命名：ハルとユイ、そしてぬーどるの物語が加速するブランド戦略",
+        "summary": "コンテンツ配信プラットフォーム「Orbit」の動画で、これまで「彼」「彼女」と呼んでいたキャラクターに、「ハル」と「ユイ」という名前を正式に付与した。 抽象的な代名詞から固有名詞へと切り替えたことで、視聴者は物語により深く没入し、愛着を持ちやすくなる。 個人クリエイターが自身のコンテンツを「プロダクト」として成長させる際、こうしたキャラクター設定の具体化は、ブランドの差別化とファンベース構築における重要な一歩となる。"
+      },
+      "en": {
+        "title": "Orbit Content Strategy: Giving 'He' and 'She' Personalities via Naming Haru and Yui to Boost Narrative Engagement",
+        "summary": "The creator behind the Orbit content series has officially moved away from referring to recurring characters as generic 'he' and 'she,' giving them the names 'Haru' and 'Yui,' along with a new addition, 'Noodle.' This shift from abstract pronouns to specific proper nouns is a deliberate branding move designed to deepen audience immersion and foster long-term viewer attachment. For builders and content creators treating their platforms as products, refining character identity is a critical step in differentiation. Establishing clear, relatable personas is essential for transforming passive viewers into a dedicated community, proving that even simple narrative choices can significantly elevate the overall perceived value of your digital project or product ecosystem."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO"
+    ],
+    "created_at": "2026-11-21T12:03:55.328Z"
+  },
+  {
+    "id": "art-1795262617915-qhkp9",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/jodycraft/books/judgement-ai-48",
+    "published_at": "2026-11-21T10:40:16.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--J1YZhgOD--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci9hOTM1YjM5YTkxLnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
+    "title_ja": "設備点検記録48件で検証：判定AI「Jev」と「d1」の現場導入適性を徹底比較、C#実装付き",
+    "summary_ja": "設備点検記録48件を対象に、判定特化型AI「Jev」と「d1」の精度、速度、壊れ方を7回にわたり徹底検証。 単なるベンチマークに留まらず、精度・データ・速度・組み込みの観点から現場での実用性を評価し、利用可能なユースケースと限界を切り分けた。 現場のAI実装を検討する開発者向けに、レコード別の生データ、質問文、実際に動作するC#コードまでを公開している。",
+    "translations": {
+      "ja": {
+        "title": "設備点検記録48件で検証：判定AI「Jev」と「d1」の現場導入適性を徹底比較、C#実装付き",
+        "summary": "設備点検記録48件を対象に、判定特化型AI「Jev」と「d1」の精度、速度、壊れ方を7回にわたり徹底検証。 単なるベンチマークに留まらず、精度・データ・速度・組み込みの観点から現場での実用性を評価し、利用可能なユースケースと限界を切り分けた。 現場のAI実装を検討する開発者向けに、レコード別の生データ、質問文、実際に動作するC#コードまでを公開している。"
+      },
+      "en": {
+        "title": "Benchmarking Judgment AIs: Comparing 'Jev' and 'd1' for Facility Inspection Automation with 48 Real-World Datasets",
+        "summary": "This rigorous analysis evaluates two judgment-focused AI models, 'Jev' and 'd1', across 48 actual facility inspection records. By running seven separate tests, the author measures accuracy, data handling, inference speed, and failure patterns to determine viable production use cases. The deep dive moves beyond theoretical benchmarks, offering a pragmatic breakdown of where these models succeed and where they collapse in field conditions. For developers aiming to integrate AI into existing infrastructure, the article provides a complete technical dossier, including raw record data, prompt engineering samples, and fully functional C# implementation code. This is an essential guide for builders trying to discern which judgment AI model is robust enough to move from a prototype to a deployed inspection system."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-21T12:03:37.915Z"
+  },
+  {
     "id": "art-1795261663100-lg53k",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -6175,32 +6278,6 @@
     "created_at": "2026-11-20T20:02:16.640Z"
   },
   {
-    "id": "art-1795204929706-wghmi",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yuzukikaku/n/nfc051d605fb8",
-    "published_at": "2026-11-20T19:59:11.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/338280276/rectangle_large_type_2_2b355b4047abab7b4902fffc8a2eeda7.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "RPGツクールMZ向けプラグイン開発：イベントのメモ欄に「1行」記述するだけで機能拡張を実現する実装テクニックを解説",
-    "summary_ja": "RPGツクールMZにおいて、イベントのメモ欄に特定のタグを1行記述するだけで、頭上に名前を表示するといった機能を実現するプラグインの作成手法を解説する。 この手法では、プラグイン側で正規表現を用いてタグを読み取り、必要に応じて既存の関数をaliasで上書きすることで処理を注入する。 設定作業を極限まで簡略化できるため、プラグインの再利用性や管理効率を大幅に向上させたい開発者にとって非常に有用なアプローチとなる。",
-    "translations": {
-      "ja": {
-        "title": "RPGツクールMZ向けプラグイン開発：イベントのメモ欄に「1行」記述するだけで機能拡張を実現する実装テクニックを解説",
-        "summary": "RPGツクールMZにおいて、イベントのメモ欄に特定のタグを1行記述するだけで、頭上に名前を表示するといった機能を実現するプラグインの作成手法を解説する。 この手法では、プラグイン側で正規表現を用いてタグを読み取り、必要に応じて既存の関数をaliasで上書きすることで処理を注入する。 設定作業を極限まで簡略化できるため、プラグインの再利用性や管理効率を大幅に向上させたい開発者にとって非常に有用なアプローチとなる。"
-      },
-      "en": {
-        "title": "Building RPG Maker MZ plugins: Implementing functional expansions by adding just one line of tag data to the Note field",
-        "summary": "This guide demonstrates how to build RPG Maker MZ plugins that activate features, such as displaying name tags above events, simply by writing a single line of code in the event's Note field. The implementation relies on parsing these tags using regular expressions and utilizing function aliasing to inject custom logic into the engine's standard event behavior. By minimizing the setup effort required for each individual event, this method significantly reduces configuration overhead and streamlines project maintenance. For developers looking to modularize their custom mechanics and improve code reuse across complex RPG projects, this technique provides a clean, highly scalable architecture for managing event-based interactions without bloating the game's core file structures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-20T20:02:09.706Z"
-  },
-  {
     "id": "art-1795204921384-z1jth",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -8702,32 +8779,6 @@
       "開発"
     ],
     "created_at": "2026-11-20T12:01:59.684Z"
-  },
-  {
-    "id": "art-1795175226190-4ipmt",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/IT-love-pug/items/f48e4542ab0cb917c87e",
-    "published_at": "2026-11-20T11:19:09.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDUxMjg1OSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc5NDg3ODAwOD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZmMxZGI2Y2JlNDZlM2FkODk5MGUwZmM4OThlM2M2NDU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D9c1ccd2b7673a394f9adbde4e899371a?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QVdTJTIwQUklRTMlODMlOTclRTMlODMlQTklRTMlODIlQUYlRTMlODMlODYlRTMlODIlQTMlRTMlODIlQjclRTMlODMlQTclRTMlODMlOEElRTMlODMlQkMlRTglQTklQTYlRTklQTglOTMlRTUlQUYlQkUlRTclQUQlOTYlRTIlOTElQTElRUYlQkMlOUFBSSVFMyU4MSVBRSVFMyU4MyVBNiVFMyU4MyVCQyVFMyU4MiVCOSVFMyU4MiVCMSVFMyU4MyVCQyVFMyU4MiVCOSVFMyU4MSVBOCVFMyU4MiVCRiVFMyU4MiVCOSVFMyU4MiVBRiVFNSU4OCU4NiVFOSVBMSU5RSVFMyU4MSVBRSVFOCVBNiU4QiVFNSU4OCU4NiVFMyU4MSU5MSVFNiU5NiVCOSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWQ5YjhiMjcwY2IzYzJjZDQxMjNiOTI4MWRlZGM1NzEx&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBJVC1sb3ZlLXB1ZyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTMxYTI1N2NjNWIyYjJiOGMyZTFmYTI0NjE5NDgwY2Fk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=0f87056e57dda14d9392168a99926867",
-    "title_ja": "AWS Certified AI Practitioner試験対策：AIユースケースとタスク分類（画像・動画・NLP）の見分け方を完全解説",
-    "summary_ja": "AWS AIプラクティショナー試験における「業務に適したAI技術の選定」問題への対策として、タスク分類の決定的な見分け方を解説する。 画像・動画はコンピュータビジョン（CV）、テキストは自然言語処理（NLP）、数値の推移は時系列予測と定義し、キーワードから正解を導き出す軸を整理した。 AIの実務や試験において、課題の本質を捉えて最適なモデルを選択する思考法を身につけることが合格と実力向上の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AWS Certified AI Practitioner試験対策：AIユースケースとタスク分類（画像・動画・NLP）の見分け方を完全解説",
-        "summary": "AWS AIプラクティショナー試験における「業務に適したAI技術の選定」問題への対策として、タスク分類の決定的な見分け方を解説する。 画像・動画はコンピュータビジョン（CV）、テキストは自然言語処理（NLP）、数値の推移は時系列予測と定義し、キーワードから正解を導き出す軸を整理した。 AIの実務や試験において、課題の本質を捉えて最適なモデルを選択する思考法を身につけることが合格と実力向上の鍵となる。"
-      },
-      "en": {
-        "title": "Mastering the AWS Certified AI Practitioner Exam: Identifying AI Use Cases and Task Classifications for Technical Selection",
-        "summary": "This guide provides a structured approach for the AWS AI Practitioner exam, focusing specifically on how to correctly select AI technologies based on business use cases. It establishes three fundamental classification axes: Computer Vision (CV) for images and video, Natural Language Processing (NLP) for text, and time-series forecasting for numerical trends. By mastering the ability to map specific keywords to these core categories, practitioners can efficiently determine the optimal AI solution for any given problem. For builders and exam-takers alike, this framework is essential for grasping the nature of technical challenges and preventing the misapplication of models, ensuring both certification success and the ability to choose the right tools for production deployments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-20T11:47:06.190Z"
   },
   {
     "id": "art-1795175212012-lo4c2",
@@ -13160,33 +13211,6 @@
     "created_at": "2026-11-19T13:32:22.942Z"
   },
   {
-    "id": "art-1795093400565-knafb",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/mstmt/articles/1925281ea7a552",
-    "published_at": "2026-11-19T07:56:28.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OQpZX7tw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2595%25AA%25E5%25A4%2596%25E7%25B7%25A8%25EF%25BC%259ADell%2520AI%2520Factory%2520with%2520NVIDIA%2520and%2520RedHat%2520OpenShift%2520AI%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:TAMOTSU%25EF%25BC%25A0DELL%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE2YjFiY2MwNTguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Dell AI FactoryとRed Hat OpenShift AIが実現する、既存IT資産をAI本番環境へ統合するエンタープライズ戦略とは",
-    "summary_ja": "デル・テクノロジーズ、NVIDIA、Red Hatの3社が展開する「Dell AI Factory with NVIDIA and Red Hat OpenShift AI」は、企業が保有する既存の運用資産をAI本番基盤へと接続し、実証実験から全社展開へと移行するための統合ソリューションだ。 単なるAI導入ではなく、既存のITインフラをAIワークロードに最適化し、安全かつスケーラブルにAIを企業活用するための設計思想と基盤提供が狙い。",
-    "translations": {
-      "ja": {
-        "title": "Dell AI FactoryとRed Hat OpenShift AIが実現する、既存IT資産をAI本番環境へ統合するエンタープライズ戦略とは",
-        "summary": "デル・テクノロジーズ、NVIDIA、Red Hatの3社が展開する「Dell AI Factory with NVIDIA and Red Hat OpenShift AI」は、企業が保有する既存の運用資産をAI本番基盤へと接続し、実証実験から全社展開へと移行するための統合ソリューションだ。 単なるAI導入ではなく、既存のITインフラをAIワークロードに最適化し、安全かつスケーラブルにAIを企業活用するための設計思想と基盤提供が狙い。"
-      },
-      "en": {
-        "title": "Dell AI Factory and Red Hat OpenShift AI Strategy: Bridging Existing Enterprise Assets into Production-Grade AI Infrastructure",
-        "summary": "The partnership between Dell Technologies, NVIDIA, and Red Hat on 'Dell AI Factory' provides a cohesive framework designed to transition corporate AI efforts from isolated proof-of-concepts to scalable, enterprise-wide deployments. By leveraging Red Hat OpenShift AI on Dell infrastructure powered by NVIDIA, businesses can bridge their legacy IT investments with modern AI production environments. The platform focuses on optimizing existing infrastructure for AI workloads, ensuring that organizations can operationalize models securely and at scale without rebuilding from scratch. For technical leaders, the key takeaway is that successful enterprise AI isn't just about selecting the right model; it’s about establishing a robust, integrated foundation that treats existing operational assets as the bedrock for new AI-driven business processes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "アップデート"
-    ],
-    "created_at": "2026-11-19T13:03:20.565Z"
-  },
-  {
     "id": "art-1795091576853-id1kx",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -14240,32 +14264,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-19T07:16:36.976Z"
-  },
-  {
-    "id": "art-1795071783659-fy7y8",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/hayhide23/articles/factoreye-03-m5stack",
-    "published_at": "2026-11-19T05:16:41.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--506frjNP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:M5Stack%2520%25E3%2581%258B%25E3%2582%2589%25201%2520%25E7%25A7%2592%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AE%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E9%2580%2581%25E3%2582%258B%2520%25E2%2580%2595%2520FactorEye%2520%25E9%2596%258B%25E7%2599%25BA%25E8%25A8%2598%25283%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%2580%25B1%25E6%259C%25AB%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259E%25E3%2583%25BC%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDdWdENBemZRZjF3anpwOU5uZXllRzBBTUtZdlBER1lzcFZxaktSQlBXdlJBc2hBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "工場監視OSS「FactorEye」開発記：M5Stackを活用して1秒ごとの製造データ転送を実現するIoTデバイス構築の実践的手法",
-    "summary_ja": "工場内の設備稼働を見える化するOSS「FactorEye」の開発において、汎用マイコンボードであるM5Stackを用いて、1秒間隔で製造データを送信するIoTデバイスを構築した。 現場への導入コストを抑えるため、汎用部品で完結させる設計を採用し、自宅サーバーとAWSの冗長構成でデータ保護を実現している。",
-    "translations": {
-      "ja": {
-        "title": "工場監視OSS「FactorEye」開発記：M5Stackを活用して1秒ごとの製造データ転送を実現するIoTデバイス構築の実践的手法",
-        "summary": "工場内の設備稼働を見える化するOSS「FactorEye」の開発において、汎用マイコンボードであるM5Stackを用いて、1秒間隔で製造データを送信するIoTデバイスを構築した。 現場への導入コストを抑えるため、汎用部品で完結させる設計を採用し、自宅サーバーとAWSの冗長構成でデータ保護を実現している。"
-      },
-      "en": {
-        "title": "Building IoT Monitoring Devices: How FactorEye Uses M5Stack to Send Manufacturing Data Every Second for Industrial Visibility",
-        "summary": "The third installment of the \"FactorEye\" development diary details the construction of low-cost IoT monitoring nodes using M5Stack hardware to transmit factory equipment data every second. By leveraging commodity components instead of expensive industrial sensors, the developer creates an accessible, open-source solution for real-time factory visibility, complete with a redundant backend architecture splitting data between home servers and AWS. This approach proves that sophisticated industrial data logging no longer requires proprietary, high-cost infrastructure. For independent developers, the key lesson is that combining affordable, off-the-shelf microcontrollers like the ESP32 with reliable cloud failover allows individuals to build production-grade monitoring systems that can compete with enterprise solutions while drastically reducing the barrier to entry for factory digitization."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-19T07:03:03.659Z"
   },
   {
     "id": "art-1795070818312-f6gs3",
