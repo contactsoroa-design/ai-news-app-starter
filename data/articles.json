@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795296752197-q6p06",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/jinworldjp/articles/0a07d22c0e24ac",
+    "published_at": "2026-11-21T17:38:42.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FlXOonLj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:PageSpeed%2520Insights%25E3%2581%258C3D%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25A7%25E6%25AD%25A2%25E3%2581%25BE%25E3%2582%258B%25E5%2595%258F%25E9%25A1%258C%25E3%2582%2592%25E3%2582%25BD%25E3%2583%2595%25E3%2583%2588%25E3%2582%25A6%25E3%2582%25A7%25E3%2582%25A2WebGL%25E6%25A4%259C%25E5%2587%25BA%25E3%2581%25A7%25E5%259B%259E%25E9%2581%25BF%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JIN-WORLD%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDhtN2pZUUU2dHBMWTQyQllBLWlSbWwtbmJrSzFsUlFwQjNOeTEwdk9NYmVMUFVnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "PageSpeed Insightsで計測失敗するThree.jsの3D描画、ソフトウェアWebGLを自動検出して静止画に切り替える実装術",
+    "summary_ja": "個人開発のタロット占いWebアプリで、Three.jsを用いた3DシーンがPageSpeed Insightsのモバイル計測をクラッシュさせる問題が発生した。 原因は、GPUのない計測環境下でWebGLがCPUレンダリングを強行しリソースを枯渇させることにある。 WebGLの能力を事前に検証し、非対応（ソフトウェア描画）なら静止画に差し替える実装を行うことで、計測エラーを回避しスコア計測を安定化させることが可能だ。",
+    "translations": {
+      "ja": {
+        "title": "PageSpeed Insightsで計測失敗するThree.jsの3D描画、ソフトウェアWebGLを自動検出して静止画に切り替える実装術",
+        "summary": "個人開発のタロット占いWebアプリで、Three.jsを用いた3DシーンがPageSpeed Insightsのモバイル計測をクラッシュさせる問題が発生した。 原因は、GPUのない計測環境下でWebGLがCPUレンダリングを強行しリソースを枯渇させることにある。 WebGLの能力を事前に検証し、非対応（ソフトウェア描画）なら静止画に差し替える実装を行うことで、計測エラーを回避しスコア計測を安定化させることが可能だ。"
+      },
+      "en": {
+        "title": "Fixing Three.js 3D Rendering Crashing PageSpeed Insights via Software WebGL Detection and Static Image Fallbacks",
+        "summary": "A solo developer discovered that a Three.js 3D scene in their tarot app caused PageSpeed Insights mobile tests to crash, citing \"Target closed\" errors. The root cause is that headless browsers lacking GPU acceleration struggle to handle WebGL, forcing CPU-based rendering that exhausts resources and hangs the page load. The solution involves programmatically detecting whether the browser supports hardware-accelerated WebGL before initializing the 3D scene. If the environment falls back to software rendering, the app swaps the WebGL canvas for a static poster image, successfully resolving the test crashes. This implementation ensures consistent performance audits without sacrificing visual flair for users with capable devices, demonstrating a crucial pattern for maintaining lighthouse scores in graphics-heavy web applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-21T21:32:32.197Z"
+  },
+  {
+    "id": "art-1795296744115-9xez7",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/merry_eider1635/n/nebbd3b9d9166",
+    "published_at": "2026-11-21T10:12:55.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/331885177/rectangle_large_type_2_40e699d6c054813c16b119dfd6142fda.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "ESP32とNFCで自作した出席システム、PC接続時は動作するがUSB充電器では起動しない原因を特定し解決へ",
+    "summary_ja": "9月から教室運用を開始したESP32とNFCタグによる出席システムにおいて、PC接続時には正常動作する一方、USB充電器からは給電できず起動しないという問題が発生した。 調査の結果、USBケーブルのデータ線による通信ハンドシェイクが電源供給のトリガーに関与していることが判明。 デバイスの起動安定化には適切な電流供給能力だけでなく、USB接続プロトコルに応じた給電制御の仕様理解が不可欠であり、開発現場での実機検証の重要性が浮き彫りとなった。",
+    "translations": {
+      "ja": {
+        "title": "ESP32とNFCで自作した出席システム、PC接続時は動作するがUSB充電器では起動しない原因を特定し解決へ",
+        "summary": "9月から教室運用を開始したESP32とNFCタグによる出席システムにおいて、PC接続時には正常動作する一方、USB充電器からは給電できず起動しないという問題が発生した。 調査の結果、USBケーブルのデータ線による通信ハンドシェイクが電源供給のトリガーに関与していることが判明。 デバイスの起動安定化には適切な電流供給能力だけでなく、USB接続プロトコルに応じた給電制御の仕様理解が不可欠であり、開発現場での実機検証の重要性が浮き彫りとなった。"
+      },
+      "en": {
+        "title": "Debugging an ESP32 NFC attendance system: Why it boots on USB PC connections but fails with dedicated power adapters",
+        "summary": "After deploying an NFC-based attendance system using an ESP32 microcontroller in classrooms since September, the developer encountered a frustrating hardware quirk: the unit boots perfectly when connected to a computer but remains dead when plugged into a standard USB wall charger. The investigation reveals that the device’s power negotiation relies on the specific handshake signals found in USB data lines, which standard chargers fail to provide. This scenario highlights that for IoT hardware, reliable power delivery often depends on understanding USB specification quirks rather than just raw amperage. For hardware builders, this serves as a reminder that circuit design must account for power negotiation protocols early in the prototyping phase to avoid deployment failures in field environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-21T21:32:24.115Z"
+  },
+  {
+    "id": "art-1795296737033-xkvk2",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/matsushima_a/articles/day-053-cao-trust-dialog-wall",
+    "published_at": "2026-11-21T14:37:55.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--uUjL8hNk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AWS%25E5%2585%25AC%25E5%25BC%258F%25E3%2581%25AE%25E3%2583%259E%25E3%2583%25AB%25E3%2583%2581%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588CLI%25E3%2580%258CCAO%25E3%2580%258D%25E3%2581%25A7Claude%2520Code%25E3%2581%25AB%25E4%25BB%2595%25E4%25BA%258B%25E3%2582%2592%25E5%25A7%2594%25E4%25BB%25BB%25E3%2581%2595%25E3%2581%259B%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25AB%25E3%2583%2580%25E4%25BF%25A1%25E9%25A0%25BC%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%25A760...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:matsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkY2YwMTZjYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AWSのマルチエージェントCLI「CAO」検証：Claude Codeを束ねるオーケストレーションの仕組みとフォルダ信頼確認での60秒停止問題",
+    "summary_ja": "AWS Labsが公開した「cli-agent-orchestrator（CAO）」は、Claude CodeやCodex CLIなどの複数のAIコーディングCLIをプロバイダーとして束ね、タスクを委任するオーケストレーションフレームワークだ。 tmuxセッション上で各CLIを独立したプロセスとして起動し管理する仕組みだが、実際の利用ではフォルダの信頼確認プロセスで60秒間処理が停止するなどの課題も確認された。",
+    "translations": {
+      "ja": {
+        "title": "AWSのマルチエージェントCLI「CAO」検証：Claude Codeを束ねるオーケストレーションの仕組みとフォルダ信頼確認での60秒停止問題",
+        "summary": "AWS Labsが公開した「cli-agent-orchestrator（CAO）」は、Claude CodeやCodex CLIなどの複数のAIコーディングCLIをプロバイダーとして束ね、タスクを委任するオーケストレーションフレームワークだ。 tmuxセッション上で各CLIを独立したプロセスとして起動し管理する仕組みだが、実際の利用ではフォルダの信頼確認プロセスで60秒間処理が停止するなどの課題も確認された。"
+      },
+      "en": {
+        "title": "Validating AWS's Multi-Agent CLI 'CAO': Orchestrating Claude Code and the 60-second delay in folder trust verification",
+        "summary": "AWS Labs recently released 'cli-agent-orchestrator' (CAO), an open-source framework designed to bundle and manage multiple AI coding CLIs, such as Claude Code, as individual workers. The system functions by spawning each CLI in its own tmux session, with a supervisor agent orchestrating task delegation across these independent processes. However, practical testing revealed performance bottlenecks, specifically a 60-second hang during the folder trust verification phase. For builders architecting complex, multi-agent development environments, this serves as a critical case study on the overhead associated with cross-CLI communication and permission handling. The takeaway is that while orchestration frameworks simplify task delegation, developers must account for the latency introduced by independent session management and granular security checks before relying on them for production workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-21T21:32:17.033Z"
+  },
+  {
+    "id": "art-1795296728278-gj3n3",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/sakidori/articles/20261104-workers-video-processing-alternatives",
+    "published_at": "2026-11-21T21:15:58.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--WX1qTrq6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cloudflare%2520Workers%2520%25E3%2581%25A7%25E5%258B%2595%25E7%2594%25BB%25E3%2581%25AF%25E5%258A%25A0%25E5%25B7%25A5%25E3%2581%25A7%25E3%2581%258D%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%259A%25E3%2583%258F%25E3%2582%25A4%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2588%25E7%2594%259F%25E6%2588%2590%25E3%2581%25A7%25E6%25AF%2594%25E3%2581%25B9%25E3%2581%259F4%25E3%2581%25A4%25E3%2581%25AE%25E9%2581%25B8%25E6%258A%259E%25E8%2582%25A2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:sakidori%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkwNTgxN2IyYTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Cloudflare Workersでの動画処理は限界か？ハイライト生成で比較した4つの実装アプローチとコスト効率を徹底解説",
+    "summary_ja": "Cloudflare Workersは動画の直接加工には不向きであり、数GB規模の動画を扱う際は外部サービスとの連携が必須となる。 本記事では、Cloudflare StreamやMedia Transformationsの活用を含め、インフラ固定費を抑えつつハイライト生成などの動画処理を実現するための4つの代替策を比較検証。 開発者は、自動解析などの重い処理をWorker側に実装しようとせず、実行環境を適切にオフロードするアーキテクチャ設計が重要である。",
+    "translations": {
+      "ja": {
+        "title": "Cloudflare Workersでの動画処理は限界か？ハイライト生成で比較した4つの実装アプローチとコスト効率を徹底解説",
+        "summary": "Cloudflare Workersは動画の直接加工には不向きであり、数GB規模の動画を扱う際は外部サービスとの連携が必須となる。 本記事では、Cloudflare StreamやMedia Transformationsの活用を含め、インフラ固定費を抑えつつハイライト生成などの動画処理を実現するための4つの代替策を比較検証。 開発者は、自動解析などの重い処理をWorker側に実装しようとせず、実行環境を適切にオフロードするアーキテクチャ設計が重要である。"
+      },
+      "en": {
+        "title": "Why Cloudflare Workers struggles with video processing: comparing 4 architecture choices for high-performance highlight generation",
+        "summary": "Cloudflare Workers is fundamentally unsuited for direct video manipulation, presenting significant bottlenecks when handling multi-gigabyte files. This deep dive evaluates four distinct architectural strategies for automating highlight generation, balancing strict infrastructure budgets with the need for scalable video processing. By comparing native Cloudflare tools like Stream and Media Transformations against external alternatives, the analysis clarifies that developers should avoid forcing heavy processing logic into the worker layer. Instead, builders should treat the worker as a control plane while offloading resource-intensive transcoding and analysis tasks to dedicated media pipelines. For personal projects aiming for a cost-effective beta launch, the key takeaway is to design for offloading rather than fighting the limitations of serverless execution environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-21T21:32:08.278Z"
+  },
+  {
     "id": "art-1795295832967-ktvpc",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -5403,32 +5507,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-21T07:31:57.869Z"
-  },
-  {
-    "id": "art-1795245427162-xfrif",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/akin_ai_app/n/n4fd79d0bc1b5",
-    "published_at": "2026-11-21T06:48:06.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/338812032/rectangle_large_type_2_b747d27178af6dd79db2deaf2b76eba1.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "毎日使われるアプリを作るための「選ばれるUX」― 画面の機能追加よりも「日常に溶け込む」体験設計が継続の鍵となる理由",
-    "summary_ja": "体重や睡眠の記録アプリを個人開発する中で、機能追加を繰り返しても継続率が向上しない課題に直面した著者が、書籍『選ばれるUX』から得た知見を共有。 ユーザーの継続的な利用は画面内の改善だけでは達成できず、日常に溶け込む文脈設計が不可欠だと説く。 個人開発者が自身のアプリを見直す際は、第8章の「設計者が持つべき12の視点」を参考に、画面外の体験まで含めたアプリ構築を目指すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "毎日使われるアプリを作るための「選ばれるUX」― 画面の機能追加よりも「日常に溶け込む」体験設計が継続の鍵となる理由",
-        "summary": "体重や睡眠の記録アプリを個人開発する中で、機能追加を繰り返しても継続率が向上しない課題に直面した著者が、書籍『選ばれるUX』から得た知見を共有。 ユーザーの継続的な利用は画面内の改善だけでは達成できず、日常に溶け込む文脈設計が不可欠だと説く。 個人開発者が自身のアプリを見直す際は、第8章の「設計者が持つべき12の視点」を参考に、画面外の体験まで含めたアプリ構築を目指すべきだ。"
-      },
-      "en": {
-        "title": "Building sticky apps requires more than UI tweaks: Why 'Selecting UX' emphasizes designing for daily habitual integration over feature bloat",
-        "summary": "While developing a daily health tracking app, the author struggled to improve retention despite constant feature additions, ultimately finding clarity in the book 'Selecting UX.' The core lesson is that user retention isn't solved solely by UI refinements but by embedding the product into the user's daily life context. For solo developers, the book’s eighth chapter—which outlines twelve essential designer perspectives—serves as a practical framework for re-evaluating app architecture beyond the interface. The takeaway for builders is to shift focus from stacking features to designing seamless integration, ensuring the product becomes a natural habit rather than a digital chore that users eventually abandon due to cognitive or interaction fatigue."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-21T07:17:07.162Z"
   },
   {
     "id": "art-1795245413055-4yi9h",
@@ -13128,33 +13206,6 @@
     "created_at": "2026-11-19T16:16:52.166Z"
   },
   {
-    "id": "art-1795104228256-u12h4",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/ojey/articles/memorytale-auth-change",
-    "published_at": "2026-11-19T11:54:16.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--tHcH6NHg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:MemoryTale%25E3%2580%2581%25E8%25AA%258D%25E8%25A8%25BC%25E6%2596%25B9%25E5%25BC%258F%25E3%2582%2592%25E5%25A4%2589%25E3%2581%2588%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Jin%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJlZjc3ZTFiNzMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発サービス「MemoryTale」、パスワード認証を廃止しパスキー・メールコード・Googleログインへ移行した背景と狙い",
-    "summary_ja": "絵本制作サービス「MemoryTale」は、昨今の情報漏洩リスクを考慮し、従来のリスクが高いパスワード認証を完全廃止した。 今後はパスキー、メールのワンタイムコード、Googleログインの3方式に集約することで、総当たり攻撃に対する耐性を大幅に向上させている。 パスワード管理の責務を外部プロバイダや端末に委ねるアプローチは、個人開発者がセキュリティコストを最小化しつつ堅牢性を担保する現実的な防衛手段となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発サービス「MemoryTale」、パスワード認証を廃止しパスキー・メールコード・Googleログインへ移行した背景と狙い",
-        "summary": "絵本制作サービス「MemoryTale」は、昨今の情報漏洩リスクを考慮し、従来のリスクが高いパスワード認証を完全廃止した。 今後はパスキー、メールのワンタイムコード、Googleログインの3方式に集約することで、総当たり攻撃に対する耐性を大幅に向上させている。 パスワード管理の責務を外部プロバイダや端末に委ねるアプローチは、個人開発者がセキュリティコストを最小化しつつ堅牢性を担保する現実的な防衛手段となる。"
-      },
-      "en": {
-        "title": "MemoryTale drops password authentication in favor of passkeys, magic links, and Google login to bolster security",
-        "summary": "The personal development project MemoryTale has officially deprecated password-based authentication in response to rising data breach concerns, shifting entirely to passkeys, email-based one-time codes, and Google OIDC. By eliminating static passwords, the service effectively neutralizes brute-force attacks and credential stuffing vulnerabilities. While the developer acknowledges that compromising the underlying email or Google account remains a vector, delegating authentication to established providers and local hardware security modules significantly lowers the attack surface for indie services. For solo builders, this shift underscores a practical trade-off: offloading auth management to industry-standard protocols is the most efficient way to maintain a robust security posture without the massive overhead of managing password hashing and recovery flows in-house."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-19T16:03:48.256Z"
-  },
-  {
     "id": "art-1795104214459-ijez8",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -13449,59 +13500,6 @@
       "開発"
     ],
     "created_at": "2026-11-19T14:46:47.557Z"
-  },
-  {
-    "id": "art-1795098840363-9fuh1",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/naga1021/articles/fishtrack-flask-docker-aws",
-    "published_at": "2026-11-19T07:50:33.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KiA7mFUR--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2590%25E3%2582%25B9%25E9%2587%25A3%25E3%2582%258A%25E3%2581%25AE%25E8%25A8%2598%25E9%258C%25B2%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2592%2520Flask%25E3%2583%25BBDocker%25E3%2583%25BBAWS%2520%25E3%2581%25A7%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AA%25E3%2581%258C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUzMzdlYjE0MjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "エンジニアがFlaskとAWSで「バス釣り記録アプリ」をAIエージェントのみで構築・運用する個人開発の全貌",
-    "summary_ja": "現役エンジニアが趣味のバス釣り記録アプリ「FishTrack」を、Flask・Docker・AWSで構築。 特筆すべきはコードを自力で書かず、実装のすべてをAIエージェントに任せている点だ。 独学での試行錯誤やAI駆動開発の現実的なワークフローを公開し、技術スタックの選定から運用の勘所までを解説する。 ひとりでプロダクトを作り続けるためのAI活用術として、具体的な開発手法を提示する。",
-    "translations": {
-      "ja": {
-        "title": "エンジニアがFlaskとAWSで「バス釣り記録アプリ」をAIエージェントのみで構築・運用する個人開発の全貌",
-        "summary": "現役エンジニアが趣味のバス釣り記録アプリ「FishTrack」を、Flask・Docker・AWSで構築。 特筆すべきはコードを自力で書かず、実装のすべてをAIエージェントに任せている点だ。 独学での試行錯誤やAI駆動開発の現実的なワークフローを公開し、技術スタックの選定から運用の勘所までを解説する。 ひとりでプロダクトを作り続けるためのAI活用術として、具体的な開発手法を提示する。"
-      },
-      "en": {
-        "title": "How an Engineer Built a Bass Fishing Tracking App Using Only AI Agents and Flask on AWS",
-        "summary": "An active software engineer shares the journey of building 'FishTrack,' a web application for logging bass fishing trips and catch data, using Flask, Docker, and AWS. The project is unique because the developer wrote zero source code manually, delegating the entire implementation process to AI agents instead. This write-up details the DIY workflow, the stack choices, and the operational realities of maintaining a side project without writing logic by hand. It serves as a transparent look at the trial-and-error process of AI-driven development for solo builders, offering a practical blueprint for those looking to leverage agents to turn hobby projects into functional, deployed software without traditional coding overhead."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-19T14:34:00.363Z"
-  },
-  {
-    "id": "art-1795097846889-k2m3k",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/votepurchase/articles/021ab5447f6978",
-    "published_at": "2026-11-19T08:10:16.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--WrDPwzPL--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%2588%25E9%25A1%258D0%25E5%2586%2586%25E3%2581%25A7RSS%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC%25E3%2582%2592%25E9%2581%258B%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259ACloudflare%25E3%2581%25A8Supabase%25E3%2581%25A7%25E4%25BD%259C%25E3%2582%258B%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2583%25AC%25E3%2582%25B9%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:votepurchase%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzBjNjE2NjE4ODUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "月額0円で運用できるRSSリーダー「FeedOwn」の自作記録：Cloudflare PagesとSupabaseの無料枠を活用したサーバーレス構成と開発の全貌",
-    "summary_ja": "Feedly等の代替として、個人開発RSSリーダー「FeedOwn」をReact/Expo環境で構築。 運用コストを完全にゼロにするため、Cloudflare Pages FunctionsをAPIレイヤーに、SupabaseをDBおよび認証基盤として採用し、インフラ料金を無料枠内に収めた。 単なる個人利用だけでなく、10人程度のユーザーまでなら同構成で維持可能だ。",
-    "translations": {
-      "ja": {
-        "title": "月額0円で運用できるRSSリーダー「FeedOwn」の自作記録：Cloudflare PagesとSupabaseの無料枠を活用したサーバーレス構成と開発の全貌",
-        "summary": "Feedly等の代替として、個人開発RSSリーダー「FeedOwn」をReact/Expo環境で構築。 運用コストを完全にゼロにするため、Cloudflare Pages FunctionsをAPIレイヤーに、SupabaseをDBおよび認証基盤として採用し、インフラ料金を無料枠内に収めた。 単なる個人利用だけでなく、10人程度のユーザーまでなら同構成で維持可能だ。"
-      },
-      "en": {
-        "title": "How to Build and Run a Production RSS Reader for $0 Monthly Cost Using Cloudflare and Supabase Serverless Infrastructure",
-        "summary": "To hedge against existing service shutdowns, the developer created \"FeedOwn,\" a self-hosted RSS reader built with React and React Native. The project adheres to a strict zero-dollar monthly budget, achieving this by leveraging Cloudflare Pages Functions as the API layer alongside Supabase for PostgreSQL and authentication. This serverless architecture comfortably fits within generous free tiers, proving sufficient for personal usage plus support for up to ten additional active users. For solo builders, this setup demonstrates that by intelligently combining platform-agnostic serverless free tiers, you can deploy and maintain sustainable production-grade applications indefinitely without ever triggering a monthly billing cycle, turning cost-free infrastructure into a reliable competitive advantage for niche tools."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-11-19T14:17:26.889Z"
   },
   {
     "id": "art-1795097816718-hupc9",
