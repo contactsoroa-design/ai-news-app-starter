@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1795219326125-8v10c",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/yoxi957/articles/0e2d5515979dc4",
+    "published_at": "2026-11-20T15:23:21.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--UvEbd-Xb--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Wan%25203.0%2520%25E5%25BE%25B9%25E5%25BA%2595%25E8%25A7%25A3%25E5%2589%2596%25EF%25BC%259A4%25E3%2583%25A2%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25AB%25E5%2585%25A5%25E5%258A%259B%25E3%2583%25BB%25E6%259C%2580%25E9%2595%25B730%25E7%25A7%2592%25E3%2581%25AE%25E3%2583%259E%25E3%2583%25AB%25E3%2583%2581%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%2583%25E3%2583%2588%25E6%2598%25A0%25E5%2583%258F%25E7%2594%259F%25E6%2588%2590%25E3%2581%25A8%25E3%2582%25AF%25E3%2583%25AC%25E3%2582%25B8%25E3%2583%2583%25E3%2583%2588%25E6%259C%2580%25E9%2581%25A9%25E5%258C%2596%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%2520Visual%2520Notes%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUdpYlBBMkNsQnJvM3RPQnFlTUI0ZTBoSk00dWNSRzIwVzlRMzhWWkdRTmd4VVRZaz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Wan 3.0徹底解剖：4モーダル入力による30秒長尺動画生成の最適ワークフローとクレジット消費を抑える指示出し術",
+    "summary_ja": "Wan 3.0で30秒の安定した動画を生成するには、単一プロンプトではなくOmni-Referenceワークスペースを活用すべきだ。 開始フレーム、モーション動画、音声、企画書を役割ごとに分け、5秒単位のタイムコード指定でカメラ軌道を制御するのが、破綻を防ぐ唯一の近道となる。 マルチモーダル入力を活用して生成工程を分割・管理することで、再生成コストを大幅に削減できる。",
+    "translations": {
+      "ja": {
+        "title": "Wan 3.0徹底解剖：4モーダル入力による30秒長尺動画生成の最適ワークフローとクレジット消費を抑える指示出し術",
+        "summary": "Wan 3.0で30秒の安定した動画を生成するには、単一プロンプトではなくOmni-Referenceワークスペースを活用すべきだ。 開始フレーム、モーション動画、音声、企画書を役割ごとに分け、5秒単位のタイムコード指定でカメラ軌道を制御するのが、破綻を防ぐ唯一の近道となる。 マルチモーダル入力を活用して生成工程を分割・管理することで、再生成コストを大幅に削減できる。"
+      },
+      "en": {
+        "title": "Wan 3.0 deep dive: Mastering 4-modal inputs for stable 30-second video generation and optimized token consumption",
+        "summary": "To generate stable 30-second videos in Wan 3.0, creators should ditch simple text prompts in favor of the Omni-Reference workspace. The most reliable production workflow involves splitting inputs into distinct roles—start frames, motion reference videos, audio clips, and project documents—while strictly controlling camera trajectories via 5-second interval timecodes. By leveraging multimodal inputs to modularize the generation process, builders can prevent artifacting and significantly lower credit consumption on re-generations. For developers creating brand content or explainer videos, this shift away from monolithic prompting toward precise, reference-driven control is essential for managing costs and output consistency. This technical workflow turns complex AI video generation into a repeatable and predictable engineering process."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "動画",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-21T00:02:06.125Z"
+  },
+  {
+    "id": "art-1795219318692-xgvdl",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://saturnsql.com/context-layer",
+    "published_at": "2026-11-20T23:31:55.000Z",
+    "og_image_url": "https://saturnsql.com/context-layer/opengraph-image?7dd3ca3ea70bc347",
+    "title_ja": "AIのSQL生成精度を向上させる「SaturnSQL Context」登場、データベース定義と計算ロジックをLLMに共有",
+    "summary_ja": "SaturnSQL Contextは、AIが社内データをクエリする際に不可欠な「コンテキスト」をLLMに提供するための新しいツールだ。 ユーザーはテーブル定義やmarkdown形式のメモ、さらにはアクティブユーザー数などの計算式（ビジネスロジック）を統合して共有できる。 これにより、データ定義の不整合を防ぎ、AIが組織共通の定義に基づいた正確なSQLを生成可能になる。",
+    "translations": {
+      "ja": {
+        "title": "AIのSQL生成精度を向上させる「SaturnSQL Context」登場、データベース定義と計算ロジックをLLMに共有",
+        "summary": "SaturnSQL Contextは、AIが社内データをクエリする際に不可欠な「コンテキスト」をLLMに提供するための新しいツールだ。 ユーザーはテーブル定義やmarkdown形式のメモ、さらにはアクティブユーザー数などの計算式（ビジネスロジック）を統合して共有できる。 これにより、データ定義の不整合を防ぎ、AIが組織共通の定義に基づいた正確なSQLを生成可能になる。"
+      },
+      "en": {
+        "title": "SaturnSQL Context launches to improve AI SQL generation accuracy by sharing database schemas and business logic with LLMs",
+        "summary": "SaturnSQL Context is a new utility designed to provide the specific metadata that AI agents need to accurately query corporate data. By allowing developers to package table schemas, free-form markdown documentation, and standardized calculation logic—such as exact SQL definitions for 'active users'—it ensures that LLMs adhere to organization-wide standards rather than guessing. The tool integrates directly into the codebase, effectively bridging the gap between raw database structure and the precise business context required for reliable AI text-to-SQL tasks. This addresses the common issue of 'definition drift' across engineering teams, acting as a critical semantic layer for anyone building AI agents that interface with complex, proprietary relational databases at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-21T00:01:58.692Z"
+  },
+  {
+    "id": "art-1795219312104-vggqp",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/lumichy/items/39f24ea121c485027180",
+    "published_at": "2026-11-20T23:35:02.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMjExMzMyNiUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc3NjU1NjA4OT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZTdjNTdkYjFiNGVlODcwNzAwOWEyMmIxYjcxZmI1NDU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D0d8c58ce50cd31fd6e60ee7b8069159e?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglRTMlODElQTclRTUlOEIlOTUlRTclOTQlQkIlRTMlODIlOTIlRTQlQkQlOUMlRTMlODIlOEIzJUUzJTgxJUE0JUUzJTgxJUFFJUU2JTk2JUI5JUU2JUIzJTk1JUVGJUJDJTlBJUU1JThCJTk1JUU3JTk0JUJCJUU3JTk0JTlGJUU2JTg4JTkwJUUzJTgzJUJCVGhyZWUuanMlRTMlODMlQkJCbGVuZGVyJUUzJTgxJUFFJUU0JUJEJUJGJUUzJTgxJTg0JUU1JTg4JTg2JUUzJTgxJTkxJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9Y2YzNzI3MzhlZDYwNGViMDg2NzVkMGQzNjYzYzhhYzA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsdW1pY2h5JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NjkwMWY3YzE4MzQ3ZTZkZGJjYTM5Yzg3ZGRhNmIzZWY&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=cbb965d0e4969f7b052edc89db72556f",
+    "title_ja": "AIエージェントによる動画制作の最前線：LLMでコードを書いてThree.jsやBlenderを操る3つの手法と使い分け",
+    "summary_ja": "動画生成AIではなく、LLMがコード生成を通じて3Dアニメーションを構築する手法が注目されている。 特にClaudeの最新モデル群により、Three.jsやBlenderのスクリプトを自動生成して視覚表現を行うアプローチが飛躍的に高度化した。 単なる動画生成とは異なり、コードベースで制御することで精密なアニメーションと柔軟な編集が可能になる。 エージェントを司令塔に据え、環境に応じたライブラリを使い分けることで、プログラミング知識の壁を越えた高品質な映像制作が実現できる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントによる動画制作の最前線：LLMでコードを書いてThree.jsやBlenderを操る3つの手法と使い分け",
+        "summary": "動画生成AIではなく、LLMがコード生成を通じて3Dアニメーションを構築する手法が注目されている。 特にClaudeの最新モデル群により、Three.jsやBlenderのスクリプトを自動生成して視覚表現を行うアプローチが飛躍的に高度化した。 単なる動画生成とは異なり、コードベースで制御することで精密なアニメーションと柔軟な編集が可能になる。 エージェントを司令塔に据え、環境に応じたライブラリを使い分けることで、プログラミング知識の壁を越えた高品質な映像制作が実現できる。"
+      },
+      "en": {
+        "title": "Beyond generative video: How AI agents use LLMs to automate 3D animation via Three.js and Blender code",
+        "summary": "The frontier of AI video is shifting from pixel-generating diffusion models toward LLM-driven code generation, where agents write scripts for 3D engines like Three.js and Blender to render complex animations. With recent model updates like Claude 5.2/5.5, agents have become proficient at manipulating these programmatic environments to create precise, editable, and infinitely scalable visuals that static video models struggle to replicate. This code-based workflow offers a distinct advantage in control and iteration, allowing builders to produce professional-grade visual assets without manual rigging. For creators, the practical takeaway is to treat LLMs as specialized animation engineers, offloading the heavy lifting of procedural 3D generation to the model while maintaining programmatic control over the output."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "動画",
+      "開発"
+    ],
+    "created_at": "2026-11-21T00:01:52.104Z"
+  },
+  {
     "id": "art-1795218431125-grhrz",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9846,33 +9925,6 @@
     "created_at": "2026-11-19T21:46:42.463Z"
   },
   {
-    "id": "art-1795123935854-nofvj",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://ketanjoshi.co/2026/11/11/briefing-state-of-ai-climate-impact-2026/",
-    "published_at": "2026-11-19T21:07:21.000Z",
-    "og_image_url": null,
-    "title_ja": "AIの気候変動への影響「2026年版」：急拡大する電力消費とデータセンター増設が環境負荷に与える現実的インパクトの全体像",
-    "summary_ja": "本レポートは、2026年時点におけるAI技術の気候変動への影響を包括的に分析し、急増する電力需要とデータセンターの拡張が、世界のカーボンニュートラル目標にどう抵触しているかを詳述する。 単なる「AIの環境負荷」という抽象論を超え、エネルギー効率の改善速度とコンピューティング需要の爆発的な増加がもたらすトレードオフを定量的に評価。",
-    "translations": {
-      "ja": {
-        "title": "AIの気候変動への影響「2026年版」：急拡大する電力消費とデータセンター増設が環境負荷に与える現実的インパクトの全体像",
-        "summary": "本レポートは、2026年時点におけるAI技術の気候変動への影響を包括的に分析し、急増する電力需要とデータセンターの拡張が、世界のカーボンニュートラル目標にどう抵触しているかを詳述する。 単なる「AIの環境負荷」という抽象論を超え、エネルギー効率の改善速度とコンピューティング需要の爆発的な増加がもたらすトレードオフを定量的に評価。"
-      },
-      "en": {
-        "title": "The State of AI Climate Impact 2026: Analyzing the massive energy footprint of growing data centers against global decarbonization goals",
-        "summary": "This report provides a comprehensive, data-driven analysis of AI’s environmental footprint in 2026, detailing how the surging demand for compute and rapid data center expansion actively conflict with global carbon neutrality targets. It moves beyond abstract debates about AI sustainability to quantify the trade-offs between incremental energy efficiency gains and the exponential rise in total computing power requirements. For builders and infrastructure engineers, the core takeaway is that model training and inference are no longer just financial expense items; they are direct contributors to corporate carbon debt. The analysis argues that optimizing for energy efficiency is now a critical, non-negotiable architectural requirement rather than an optional ESG initiative for modern AI-driven organizations."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-11-19T21:32:15.854Z"
-  },
-  {
     "id": "art-1795123922953-u8ndp",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -11242,32 +11294,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-19T16:16:52.166Z"
-  },
-  {
-    "id": "art-1795104286334-rv5ku",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/tactac1238/items/99ed93e89f94ca353d85",
-    "published_at": "2026-11-19T15:56:10.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzg4NTgxMyUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc4NTU5MDkzOT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDc3ZmVlMjk4MThlMTdhMjRhNTg0YmE4ZDkxMzhjMTg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dbc8620bba45504f28156c3d19de07824?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwTGFuZ0dyYXBoJUMzJTk3JUUzJTgzJUE5JUUzJTgyJUJBJUUzJTgzJTkxJUUzJTgyJUE0JUU3JUI2JTlBJUU3JUI3JUE4JUUzJTgwJTkxUnVzdCVFNSVBRSU4OSVFNSU4NSVBOCVFNSVCMSVBNCVFMyU4MSVBOCVFMyU4MiVBOCVFMyU4MyU4MyVFMyU4MiVCOEFJJUUzJTgxJUFFJUU4JTg3JUFBJUU1JUJFJThCJUU4JUI1JUIwJUU4JUExJThDJUUzJTgxJUE3JUUzJTgzJUFEJUUzJTgzJTlDJUUzJTgzJTgzJUUzJTgzJTg4JUUzJTgyJTkyJUU4JTg3JUFBJUU1JUJFJThCJUU4JUI1JUIwJUU4JUExJThDJUUzJTgxJTk1JUUzJTgxJTlCJUUzJTgxJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9OTljOTY3YjQ5ZTIyOTc2MzkzOThkMDhmMzMyYjBjM2U&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB0YWN0YWMxMjM4JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9N2E3MjMyODkxOTJlYzU1MmNmYjk3MTNlMzFhMTc1MzM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a8b2745053bc53d6bf2349bdccfe2a43",
-    "title_ja": "LangGraphとRustで実現するエッジAIロボットの安全制御：ラズパイ自律走行の安定性を高めるメモリ安全レイヤーの導入",
-    "summary_ja": "LangGraphで構築したAIエージェントによるロボット（PiCar-X）自律走行システムにおいて、Rustによるメモリ安全な制御レイヤーを導入し、エッジ処理の安定性を劇的に向上させた。 前回のPython環境のみの構成に対し、Rustで安全層を実装することで、計算負荷が高い自律判断プロセスでの暴走やクラッシュを防止し、確実なハードウェア制御を実現した。",
-    "translations": {
-      "ja": {
-        "title": "LangGraphとRustで実現するエッジAIロボットの安全制御：ラズパイ自律走行の安定性を高めるメモリ安全レイヤーの導入",
-        "summary": "LangGraphで構築したAIエージェントによるロボット（PiCar-X）自律走行システムにおいて、Rustによるメモリ安全な制御レイヤーを導入し、エッジ処理の安定性を劇的に向上させた。 前回のPython環境のみの構成に対し、Rustで安全層を実装することで、計算負荷が高い自律判断プロセスでの暴走やクラッシュを防止し、確実なハードウェア制御を実現した。"
-      },
-      "en": {
-        "title": "Building safe edge AI robots with LangGraph and Rust: Implementing a memory-safe control layer for autonomous Raspberry Pi navigation",
-        "summary": "The developer upgraded their PiCar-X autonomous navigation system—originally built with LangGraph—by integrating a memory-safe control layer written in Rust. While the previous iteration relied entirely on Python for decision-making and hardware interaction, the addition of Rust ensures that high-load edge computations no longer risk memory corruption or unexpected system crashes during critical autonomous maneuvers. By isolating the hardware control logic within a robust Rust wrapper, the robot achieves significantly higher reliability during real-time image processing and environmental decision-making. This hybrid architecture demonstrates that blending Python's rapid prototyping flexibility with Rust's strict memory guarantees provides the necessary stability for complex edge AI robotics, effectively preventing runaway states during autonomous operations for developers building physical agents."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-19T16:04:46.334Z"
   },
   {
     "id": "art-1795104228256-u12h4",
@@ -13780,32 +13806,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-19T03:02:35.375Z"
-  },
-  {
-    "id": "art-1795056411508-6imlv",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/zundamon_tools/articles/openai-pando-git-agent-worktree",
-    "published_at": "2026-11-18T22:06:14.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fS-RgXIh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenAI%2520Pando%2520%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%259C%2520Git%2520%25E3%2581%25AE%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258A%25E7%259B%25B4%25E3%2581%2597%25E3%2581%259F%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259A%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2583%25BB%25E5%2590%2584%25E7%25A4%25BE%25E3%2581%25AE%25E5%258B%2595%25E3%2581%258D%25E3%2581%25A8%2520Claude%2520Code%2520...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%259A%25E3%2582%2593%25E3%2581%25A0%25E3%2582%2582%25E3%2582%2593%25E3%2581%25AE%25E5%25AE%259F%25E9%25A8%2593%25E9%2581%2593%25E5%2585%25B7%25E7%25AE%25B1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzJiNGRhMmQyODEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "OpenAIのGitサーバ「Pando」開発背景と、AIエージェントの並列実行におけるGit競合リスクの回避策（git worktree活用のススメ）",
-    "summary_ja": "OpenAIが公開したGitサーバの再構築版「Pando」は、AIエージェントによる大量のブランチpushを並行処理するために設計された。 筆者がClaude Codeを8本並列稼働させた検証では、ローカル環境でもGit競合による書き込み失敗が多発した。 エージェントを並列で走らせる開発環境においては、単一作業ディレクトリへの依存を避け、git worktreeを活用した隔離設計が必須となる。",
-    "translations": {
-      "ja": {
-        "title": "OpenAIのGitサーバ「Pando」開発背景と、AIエージェントの並列実行におけるGit競合リスクの回避策（git worktree活用のススメ）",
-        "summary": "OpenAIが公開したGitサーバの再構築版「Pando」は、AIエージェントによる大量のブランチpushを並行処理するために設計された。 筆者がClaude Codeを8本並列稼働させた検証では、ローカル環境でもGit競合による書き込み失敗が多発した。 エージェントを並列で走らせる開発環境においては、単一作業ディレクトリへの依存を避け、git worktreeを活用した隔離設計が必須となる。"
-      },
-      "en": {
-        "title": "OpenAI’s Pando Git Server Rethink and Why Building AI Agent Parallelism Requires git worktree Strategy",
-        "summary": "OpenAI recently unveiled Pando, an internal Git server rewrite designed specifically to handle the sheer volume of concurrent branch pushes generated by AI agents. To see if similar bottlenecks occur locally, the author ran eight Claude Code agents simultaneously from a single folder. Results showed that without proper isolation, concurrent agent writes frequently fail to merge or commit correctly. When orchestrating multiple AI agents to perform coding tasks, builders cannot rely on standard single-repository workflows. Instead, the practical takeaway for agent-based development is to implement git worktree isolation to prevent file locking and branch contention, ensuring that parallel agent execution results in valid, committed code rather than lost progress or environment conflicts."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-19T02:46:51.508Z"
   },
   {
     "id": "art-1795055518691-1jx40",
