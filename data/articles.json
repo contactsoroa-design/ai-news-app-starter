@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795357929785-pfmgv",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/umunet/articles/f21b486d234a03",
+    "published_at": "2026-11-22T04:58:49.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--g3iAPl7s--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:MCP%2520%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%2592%2520OAuth%2520%25E8%25BE%25BC%25E3%2581%25BF%25E3%2581%25A7%25E3%2580%2581SDK%2520%25E3%2582%2592%25E5%2585%25A5%25E3%2582%258C%25E3%2581%259A%25E3%2581%25AB%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kentaro%2520Onishi%2520%257C%2520%25E5%25A4%25A7...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkxnWkUxMENIU0gweEVjZEJYMklMYm9KUWVsRDhJWUppRThJLUphRVl1NVUyby13PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Next.jsで構築する「SDKなし」のMCPサーバー：OAuthフロー完全統合でClaude連携を容易にする実装術",
+    "summary_ja": "個人メモアプリにClaudeから読み書き可能なMCPサーバーを実装し、Next.jsのRoute Handlerと純関数のみでOAuthフローを構築した事例。 公式SDKに依存せずOAuth認可サーバーを自作することで、ユーザーはURLの貼り付けとサインインのみで接続が完了する簡便なUXを実現した。 ライブラリを使わないことで認証フローの「隠れた依存関係」が可視化され、MCPを通じたAIエージェントの外部サービス連携において、堅牢かつ軽量な基盤を維持する重要性を解説する。",
+    "translations": {
+      "ja": {
+        "title": "Next.jsで構築する「SDKなし」のMCPサーバー：OAuthフロー完全統合でClaude連携を容易にする実装術",
+        "summary": "個人メモアプリにClaudeから読み書き可能なMCPサーバーを実装し、Next.jsのRoute Handlerと純関数のみでOAuthフローを構築した事例。 公式SDKに依存せずOAuth認可サーバーを自作することで、ユーザーはURLの貼り付けとサインインのみで接続が完了する簡便なUXを実現した。 ライブラリを使わないことで認証フローの「隠れた依存関係」が可視化され、MCPを通じたAIエージェントの外部サービス連携において、堅牢かつ軽量な基盤を維持する重要性を解説する。"
+      },
+      "en": {
+        "title": "Building SDK-free MCP servers in Next.js: Implementing custom OAuth flows to streamline Claude agent integrations",
+        "summary": "A developer successfully integrated an MCP server into a personal memo application, enabling direct read-write capabilities for Claude without relying on official SDKs. By building a custom OAuth authorization server using only Next.js Route Handlers and pure functions, the user experience was simplified to a single URL paste and sign-in. Avoiding external libraries helped isolate and expose critical failure points within the authentication flow, providing deeper insight into how these handshakes actually behave. For builders connecting AI agents to private services, this implementation highlights that minimizing dependencies is not just about bundle size; it is about maintaining a transparent, debuggable connection layer that remains robust even as the MCP specification evolves."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-22T14:32:09.785Z"
+  },
+  {
+    "id": "art-1795357922907-pfbi0",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/git_dungeon/articles/dmd-evidence-handoff",
+    "published_at": "2026-11-22T07:24:48.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--RT_Afo-b--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E3%2580%258C%25E5%25AE%258C%25E4%25BA%2586%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E6%25A5%25AD%25E8%25A8%2598%25E9%258C%25B2%25E3%2581%25A8%25E7%2585%25A7%25E5%2590%2588%25E3%2581%2599%25E3%2582%258B%25E3%2580%2582Done%2520Means%2520Done%25E3%2581%25A7%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%25BB%2592%25E3%2583%2591%25E3%2582%25B0%25EF%25BD%259C%25E6%2594%25BB%25E7%2595%25A5%25E6%259C%25AC%25E3%2582%25B7%25E3%2583%25AA%25E3%2583%25BC%25E3%2582%25BA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzFzZkNJOWFkM1FTeTAyb1J5czM4bVNhcFdDZVZrOEFjTjlwMEpSVllLaV81bkhCbXo9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIの「完了しました」を検証するOSS「Done Means Done」v1.0.0公開、作業ログと納品物の一致を自動照合しタスク漏れを防ぐ",
+    "summary_ja": "AIエージェントの「タスク完了」報告が実際の結果と食い違う課題を解決するため、作業ログと成果物を自動照合するツール「Done Means Done（DMD）」v1.0.0が公開された。 指定されたフォルダ内のファイル確認など、エージェントが実行した操作の履歴を事実ベースで検証し、作業漏れを即座に指摘する。 AIに自動化を任せる際、曖昧な報告を鵜呑みにせず、外部ツールで検証プロセスを挟むことは、エージェントの実運用における信頼性を担保するための現実的なアプローチとなる。",
+    "translations": {
+      "ja": {
+        "title": "AIの「完了しました」を検証するOSS「Done Means Done」v1.0.0公開、作業ログと納品物の一致を自動照合しタスク漏れを防ぐ",
+        "summary": "AIエージェントの「タスク完了」報告が実際の結果と食い違う課題を解決するため、作業ログと成果物を自動照合するツール「Done Means Done（DMD）」v1.0.0が公開された。 指定されたフォルダ内のファイル確認など、エージェントが実行した操作の履歴を事実ベースで検証し、作業漏れを即座に指摘する。 AIに自動化を任せる際、曖昧な報告を鵜呑みにせず、外部ツールで検証プロセスを挟むことは、エージェントの実運用における信頼性を担保するための現実的なアプローチとなる。"
+      },
+      "en": {
+        "title": "Done Means Done v1.0.0 Launches as an Open-Source Verifier to Cross-Check AI Agent Task Completion Against Execution Logs",
+        "summary": "To address the recurring issue where AI agents prematurely claim tasks are finished while leaving files or folders untouched, the developer has released Done Means Done (DMD) v1.0.0. This tool programmatically validates an agent's completion claims by cross-referencing actual system logs and file artifacts against the requested output, effectively catching omissions like missing attachments before a human operator intervenes. For builders deploying autonomous agents, relying on the model's self-assessment is often insufficient for production workflows. Implementing a dedicated verification layer like DMD—which forces the agent to prove its actions through concrete file checks—provides a necessary safety net. It transforms unreliable “I’m done” messages into verified status reports, significantly hardening the reliability of agent-driven automated pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-22T14:32:02.907Z"
+  },
+  {
+    "id": "art-1795357916137-dtqw4",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/hunvreus/reallysimpledocs",
+    "published_at": "2026-11-22T13:58:23.000Z",
+    "og_image_url": null,
+    "title_ja": "Astroベースの軽量ドキュメント作成ツール「ReallySimpleDocs」公開、AI読み込みとMarkdown執筆に特化した開発者向けソリューション",
+    "summary_ja": "GitHubで公開された「ReallySimpleDocs」は、Astroをベースに設計された、AIエージェントによるインデックス作成とMarkdown執筆に特化したモダンなドキュメント作成ツールだ。 複雑な構成管理を排除し、AIがドキュメントを読み取りやすいクリーンな構造を提供することで、開発者のドキュメント管理コストを劇的に削減する。 高速な静的サイト生成とAIフレンドリーな設計を両立したい個人開発者にとって、このシンプルさは大きな魅力となる。",
+    "translations": {
+      "ja": {
+        "title": "Astroベースの軽量ドキュメント作成ツール「ReallySimpleDocs」公開、AI読み込みとMarkdown執筆に特化した開発者向けソリューション",
+        "summary": "GitHubで公開された「ReallySimpleDocs」は、Astroをベースに設計された、AIエージェントによるインデックス作成とMarkdown執筆に特化したモダンなドキュメント作成ツールだ。 複雑な構成管理を排除し、AIがドキュメントを読み取りやすいクリーンな構造を提供することで、開発者のドキュメント管理コストを劇的に削減する。 高速な静的サイト生成とAIフレンドリーな設計を両立したい個人開発者にとって、このシンプルさは大きな魅力となる。"
+      },
+      "en": {
+        "title": "ReallySimpleDocs Launches as an Astro-based, AI-Ready Documentation Site Builder Designed Specifically for Efficient Markdown Content Management",
+        "summary": "ReallySimpleDocs has officially launched as a new open-source documentation framework built on Astro, explicitly optimized for AI agents and developer workflows. Unlike bloated legacy documentation engines, this tool prioritizes clean, semantic HTML structures that make it trivial for AI scrapers and LLM agents to index, parse, and understand complex technical content. By stripping away unnecessary frontend overhead while leveraging Astro's lightning-fast static site generation, it ensures that your technical documentation remains both human-readable and machine-perfect. For builders struggling to maintain internal wikis or public-facing API guides, this lightweight solution offers an opinionated, low-friction path to modern, AI-compliant documentation, allowing teams to focus on shipping code rather than managing complex CMS configurations or brittle build pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-22T14:31:56.137Z"
+  },
+  {
+    "id": "art-1795357904903-ifq4s",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/ame94310/n/nf63d4d514874",
+    "published_at": "2026-11-22T14:29:59.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339421828/rectangle_large_type_2_f8def33c346bb9895586ed0e92fcc8bb.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIプロダクト海外展開の壁：100日チャレンジ66日目に直面した「課金転換率」の低迷とユーザー行動分析の舞台裏",
+    "summary_ja": "AIを用いた海外市場向けプロダクト開発「100日チャレンジ」の66日目、開発者のaMe氏は収益化の壁に直面した。 海外ユーザーへのリーチは拡大しているものの、無料ユーザーを課金へ誘導するコンバージョン率が目標に達していない現状を課題視。 本稿では、プロダクトの導線における離脱ポイントの特定と、データに基づいたユーザー行動のボトルネック分析手法を詳細に解説する。",
+    "translations": {
+      "ja": {
+        "title": "AIプロダクト海外展開の壁：100日チャレンジ66日目に直面した「課金転換率」の低迷とユーザー行動分析の舞台裏",
+        "summary": "AIを用いた海外市場向けプロダクト開発「100日チャレンジ」の66日目、開発者のaMe氏は収益化の壁に直面した。 海外ユーザーへのリーチは拡大しているものの、無料ユーザーを課金へ誘導するコンバージョン率が目標に達していない現状を課題視。 本稿では、プロダクトの導線における離脱ポイントの特定と、データに基づいたユーザー行動のボトルネック分析手法を詳細に解説する。"
+      },
+      "en": {
+        "title": "Building for Global AI Markets: Lessons from Day 66 on Solving Stagnant Conversion Rates in Personal SaaS",
+        "summary": "On day 66 of a 100-day challenge to build and ship AI products for global markets, developer aMe confronts a critical bottleneck: despite growing traction, the conversion rate from free to paid users remains stubbornly low. This analysis dives into the specific UX friction points causing user drop-off before payment, detailing a data-driven approach to identifying where the monetization funnel breaks. For independent builders targeting international audiences, the core lesson here is that shipping features is insufficient; long-term sustainability requires rigorous optimization of user flows and a deep understanding of purchasing psychology. The write-up provides a tactical roadmap for auditing payment funnels and adjusting engagement loops to turn curious trial users into recurring subscribers."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-22T14:31:44.903Z"
+  },
+  {
     "id": "art-1795357115613-3ms1k",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -4608,32 +4713,6 @@
     "created_at": "2026-11-22T02:46:58.323Z"
   },
   {
-    "id": "art-1795314745197-0ilud",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/bonit_labai/n/na14c7038fc98",
-    "published_at": "2026-11-22T02:03:35.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339137677/rectangle_large_type_2_ecf11814d78e4ee6b29fd009e04be39b.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIの回答を鵜呑みにしない——副業開発で「もっともらしい嘘」を見抜き、失敗を防ぐための3つの確認のクセ",
-    "summary_ja": "AIは「正しさ」ではなく「らしさ」でテキストを生成するため、料金や仕様などの重要情報が静かに間違っているケースがある。 副業開発においてAIの回答をそのまま利用するのはリスクが高く、出力結果を盲信せずに必ず事実確認を行う習慣が必要だ。 本記事では、AIが間違いやすい3つの場面と、開発スピードを落とさずに精度を担保するための検証習慣、および優先順位付けのフレームワークを解説する。",
-    "translations": {
-      "ja": {
-        "title": "AIの回答を鵜呑みにしない——副業開発で「もっともらしい嘘」を見抜き、失敗を防ぐための3つの確認のクセ",
-        "summary": "AIは「正しさ」ではなく「らしさ」でテキストを生成するため、料金や仕様などの重要情報が静かに間違っているケースがある。 副業開発においてAIの回答をそのまま利用するのはリスクが高く、出力結果を盲信せずに必ず事実確認を行う習慣が必要だ。 本記事では、AIが間違いやすい3つの場面と、開発スピードを落とさずに精度を担保するための検証習慣、および優先順位付けのフレームワークを解説する。"
-      },
-      "en": {
-        "title": "Stop blindly trusting AI outputs: Three verification habits to prevent costly mistakes in your side hustles",
-        "summary": "Relying on AI for research or technical drafts creates a dangerous trap: AI models are optimized for plausibility, not factual accuracy. Consequently, they often hallucinate pricing, specific hardware limitations, dates, or proper nouns while sounding entirely confident. For indie developers and side-hustlers, copy-pasting unchecked AI output is a recipe for business failure. This guide identifies the three specific scenarios where AI errors are most likely and introduces a practical verification framework. Instead of slowing down your workflow, this system helps you prioritize what needs manual checking versus what can be safely trusted. By treating AI as a probabilistic generator rather than an oracle, you can maintain build speed without sacrificing the critical accuracy required for professional results."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-22T02:32:25.197Z"
-  },
-  {
     "id": "art-1795314735549-0b795",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -6631,32 +6710,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-21T18:16:57.533Z"
-  },
-  {
-    "id": "art-1795284150113-kclbv",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://rmoff.net/2026/11/13/is-it-ok-to-write-blog-posts-with-ai-yet/",
-    "published_at": "2026-11-16T15:02:25.000Z",
-    "og_image_url": "https://rmoff.net/images/2026/11/h_IMG_9012.webp",
-    "title_ja": "「AIによるブログ執筆は許されるか？」—SEOや読者の評価から読み解く、人間による監修と「付加価値」の重要性",
-    "summary_ja": "AIを活用したブログ執筆に対し、検索エンジンの評価や読者の受け止め方を改めて検証する。 単なる自動生成コンテンツはGoogleのスパムポリシーに抵触するリスクがある一方、筆者が独自の洞察を加え、人間が監修した記事は依然として高い価値を持つ。 開発者や技術発信者は、AIを執筆の効率化ツールとして利用しつつも、あくまで自らの専門的知見や経験を主軸に置くことが、信頼性を損なわないための必須条件である。",
-    "translations": {
-      "ja": {
-        "title": "「AIによるブログ執筆は許されるか？」—SEOや読者の評価から読み解く、人間による監修と「付加価値」の重要性",
-        "summary": "AIを活用したブログ執筆に対し、検索エンジンの評価や読者の受け止め方を改めて検証する。 単なる自動生成コンテンツはGoogleのスパムポリシーに抵触するリスクがある一方、筆者が独自の洞察を加え、人間が監修した記事は依然として高い価値を持つ。 開発者や技術発信者は、AIを執筆の効率化ツールとして利用しつつも、あくまで自らの専門的知見や経験を主軸に置くことが、信頼性を損なわないための必須条件である。"
-      },
-      "en": {
-        "title": "Is AI-generated blogging acceptable? Why human insight remains the critical differentiator for search rankings and audience trust",
-        "summary": "As AI writing tools proliferate, creators are asking whether purely machine-generated content is finally acceptable for long-form blogging. The consensus among search engines and discerning readers remains clear: automated noise is penalized, but high-quality synthesis leveraging AI for structure while centering original human expertise is highly valuable. For developers and technical writers, the trap is letting LLMs hallucinate or genericize complex topics that require personal experience. Instead, successful builders use AI as a collaborator to refine code snippets or outline ideas, ensuring the final output retains a distinct, authoritative voice. Maintaining trust means prioritizing unique insights that no algorithm can synthesize, using AI only as a force multiplier for clarity and production speed."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-21T18:02:30.113Z"
   },
   {
     "id": "art-1795284140610-zrxer",
@@ -9752,32 +9805,6 @@
     "created_at": "2026-11-20T21:17:07.342Z"
   },
   {
-    "id": "art-1795208556130-xy2fw",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/murooka_az/articles/failure-scan-two-claude-code-bugs",
-    "published_at": "2026-11-20T17:37:18.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--e-QkVq7i--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520%25E3%2581%25AE%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%2592%25E5%2588%2586%25E6%259E%2590%25E3%2581%2599%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581hook%2520%25E3%2581%25AE%25E5%2595%258F%25E9%25A1%258C%25E3%2581%258B%25E3%2582%2589%2520Claude%2520Code%2520%25E3%2581%25AE%25E4%25B8%258D%25E5%2585%25B7%25E5%2590%2588%2520...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Murooka%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2RlMjA5NmUyNDguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「CLAUDE.md」の肥大化とループを阻止せよ：Claude Codeのログ分析から判明したフック問題と製品バグの特定手法",
-    "summary_ja": "Claude Codeでプロンプトを追加し続ける運用は、CLAUDE.mdの肥大化と改善効果の停滞を招く。 本記事では、会話ログをスクリプトで解析し、失敗した呼び出しをLLMで検証する手法を解説する。 これにより、フック定義の競合やClaude Code自体のバグといった根本原因を正確に切り分け可能だ。 場当たり的なプロンプト修正に頼るのではなく、データに基づいた不具合特定を行うことが、AIコーディング支援ツールの運用最適化には不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "「CLAUDE.md」の肥大化とループを阻止せよ：Claude Codeのログ分析から判明したフック問題と製品バグの特定手法",
-        "summary": "Claude Codeでプロンプトを追加し続ける運用は、CLAUDE.mdの肥大化と改善効果の停滞を招く。 本記事では、会話ログをスクリプトで解析し、失敗した呼び出しをLLMで検証する手法を解説する。 これにより、フック定義の競合やClaude Code自体のバグといった根本原因を正確に切り分け可能だ。 場当たり的なプロンプト修正に頼るのではなく、データに基づいた不具合特定を行うことが、AIコーディング支援ツールの運用最適化には不可欠である。"
-      },
-      "en": {
-        "title": "Analyzing Claude Code Logs to Curb 'CLAUDE.md' Bloat, Solve Hook Conflicts, and Uncover Product Bugs",
-        "summary": "Endless tweaks to CLAUDE.md often result in unmanageable bloat without fixing persistent coding failures in Claude Code. To solve this, the author built a pipeline that scripts conversation logs to identify failed calls, then uses an LLM to perform root-cause analysis on those failures. This systematic approach successfully isolated issues ranging from misinterpreted hook definitions to legitimate bugs within the Claude Code tool itself. Moving beyond reactive prompt engineering allows developers to pinpoint why agents fail, separating architectural misuse from actual software defects. For developers relying on AI agents for complex tasks, logging and analyzing interaction telemetry is the only reliable way to break the cycle of ineffective prompt accumulation and actually debug the agent's behavior."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-20T21:02:36.130Z"
-  },
-  {
     "id": "art-1795207621233-fepmc",
     "source_id": "source-openai",
     "source_name": "OpenAI 公式",
@@ -11129,33 +11156,6 @@
       "開発"
     ],
     "created_at": "2026-11-20T11:46:52.012Z"
-  },
-  {
-    "id": "art-1795174309792-0414i",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/honeymarron/articles/cloudflare-workers-free-plan-oshitecho",
-    "published_at": "2026-11-20T11:18:58.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1voxlXHi--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cloudflare%2520Workers%2520%25E3%2581%25AE%25E7%2584%25A1%25E6%2596%2599%25E3%2583%2597%25E3%2583%25A9%25E3%2583%25B3%25E3%2581%25A7%25E6%258E%25A8%25E3%2581%2597%25E6%25B4%25BB%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E9%2581%258B%25E5%2596%25B6%25E3%2581%2597%25E3%2581%25A6%25E8%25B8%258F%25E3%2582%2593%25E3%2581%25A0%25E3%2581%25AE%25E3%2581%25AF%25E3%2580%25811%2520%25E6%2597%25A5%252010%2520%25E4%25B8%2587%25E3%2583%25AA%25E3%2582%25AF%25E3%2582%25A8%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25A7...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:honeymarron%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUxMTJlNmY3ODkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Cloudflare Workers無料プランで個人開発アプリを運営して直面した「10万リクエスト制限」より厳しい「CPU 10ms制限」の罠",
-    "summary_ja": "個人開発アプリ「おしてちょ」をCloudflare Workersの無料プランで運用する中で、開発者が直面した知見を共有する。 1日10万リクエストという制限以上に、無料プラン特有の「1リクエストあたりCPU時間10ms」という厳しい上限に阻まれ、パフォーマンス最適化の必要性に迫られた実体験が語られる。 安価なサーバーレス運用を目指す個人開発者にとって、リクエスト数だけでなくCPU処理時間の見積もりとコードの効率化が、安定稼働を左右する重要な分岐点となる。",
-    "translations": {
-      "ja": {
-        "title": "Cloudflare Workers無料プランで個人開発アプリを運営して直面した「10万リクエスト制限」より厳しい「CPU 10ms制限」の罠",
-        "summary": "個人開発アプリ「おしてちょ」をCloudflare Workersの無料プランで運用する中で、開発者が直面した知見を共有する。 1日10万リクエストという制限以上に、無料プラン特有の「1リクエストあたりCPU時間10ms」という厳しい上限に阻まれ、パフォーマンス最適化の必要性に迫られた実体験が語られる。 安価なサーバーレス運用を目指す個人開発者にとって、リクエスト数だけでなくCPU処理時間の見積もりとコードの効率化が、安定稼働を左右する重要な分岐点となる。"
-      },
-      "en": {
-        "title": "Building a hobby app on Cloudflare Workers: Why the 10ms CPU limit hits harder than the 100k request cap",
-        "summary": "Operating the fan-management app 'Oshitecho' on Cloudflare Workers' free tier, the developer discovered that serverless constraints are more nuanced than simple request quotas. While the 100,000 daily request limit is generous, the strict 10ms CPU time limit per request became a critical bottleneck during scaling. This case study details how the developer had to pivot from worrying about traffic volume to optimizing individual execution paths to stay within strict compute constraints. For solo developers building on serverless platforms, this serves as a vital reminder that CPU cycle efficiency often dictates reliability long before total request counts become a problem, making code performance and algorithmic optimization the true pillars of free-tier sustainability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-20T11:31:49.792Z"
   },
   {
     "id": "art-1795172523985-6zzii",
