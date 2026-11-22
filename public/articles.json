@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795372345620-b58oz",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://airepublic.com/blog/pi-dash-self-evolution-experiment/",
+    "published_at": "2026-11-22T18:09:02.000Z",
+    "og_image_url": "https://airepublic.com/og/blog/pi-dash-self-evolution-experiment.png",
+    "title_ja": "26個のAIエージェントがDjango製バックエンドをRustへ完全自動移行：人間によるマージ一切なしの実験成功",
+    "summary_ja": "AI Republicの実験にて、26個の自律型AIエージェントが連携し、Djangoで構築された既存のバックエンド基盤をRustへ完全に書き換えることに成功した。 特筆すべきは、このプロセスにおいて人間によるコードレビューやマージ作業が一度も介入していない点だ。 エージェント間でのタスク分割とコード生成の検証サイクルを確立することで、大規模なレガシーコードの移行もAIによる完全自律化が現実味を帯びていることを証明した。",
+    "translations": {
+      "ja": {
+        "title": "26個のAIエージェントがDjango製バックエンドをRustへ完全自動移行：人間によるマージ一切なしの実験成功",
+        "summary": "AI Republicの実験にて、26個の自律型AIエージェントが連携し、Djangoで構築された既存のバックエンド基盤をRustへ完全に書き換えることに成功した。 特筆すべきは、このプロセスにおいて人間によるコードレビューやマージ作業が一度も介入していない点だ。 エージェント間でのタスク分割とコード生成の検証サイクルを確立することで、大規模なレガシーコードの移行もAIによる完全自律化が現実味を帯びていることを証明した。"
+      },
+      "en": {
+        "title": "26 AI agents successfully rewrite a Django backend to Rust with zero human code reviews or merges",
+        "summary": "In a bold experiment by AI Republic, a swarm of 26 autonomous AI agents successfully migrated a complex Django-based backend to Rust without a single line of code being reviewed or merged by a human. The agents coordinated task decomposition, implementation, and verification cycles to navigate the structural differences between Python and Rust. This result demonstrates that complex architectural refactoring—once thought to be the exclusive domain of senior engineers—is becoming feasible for autonomous systems. For builders, this signals a major shift in how we approach technical debt and language migrations, suggesting that agentic workflows can now handle end-to-end system evolution if the testing infrastructure is sufficiently robust to catch regressions without human oversight."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-22T18:32:25.620Z"
+  },
+  {
+    "id": "art-1795372320864-zxs2v",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sunsun_eng/articles/school-festival-pos-cloudflare",
+    "published_at": "2026-11-22T11:50:43.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--d60kuX0R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2596%2587%25E5%258C%2596%25E7%25A5%25ADPOS%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E3%2582%2592Cloudflare%25E3%2581%25A7%25E8%2587%25AA%25E4%25BD%259C%25E3%2581%2597%25E5%25AE%258C%25E5%25A3%25B2%25E3%2581%25BE%25E3%2581%25A7%25E3%2582%2592%25E6%2594%25AF%25E3%2581%2588%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2599%25E3%2582%2593%25E3%2581%2599%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTF80ZkxYZ0xXTVlnNF9DSE1BTGQ0akRZdFB2am9UZjBTOVFldkdwak9uMmJlZDBJcHk9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Cloudflareで自作する文化祭POSの勝算：D1を活用した在庫整合性の担保と注文集中時を乗り切る排他制御の実装術",
+    "summary_ja": "文化祭の模擬店運営において、Cloudflare WorkersとD1を組み合わせることで、短期開発ながら本番運用に耐えうるPOSシステムを自作できる。 特に完売間際の注文集中時には、在庫更新処理を直列化する排他制御設計が障害防止の要となる。 ただし、個人情報や決済を取り扱う要件がある場合や、開発リソースが限られる小規模チームでは、セキュリティリスクを考慮し既存のPOSサービスを利用するのが賢明な選択だ。",
+    "translations": {
+      "ja": {
+        "title": "Cloudflareで自作する文化祭POSの勝算：D1を活用した在庫整合性の担保と注文集中時を乗り切る排他制御の実装術",
+        "summary": "文化祭の模擬店運営において、Cloudflare WorkersとD1を組み合わせることで、短期開発ながら本番運用に耐えうるPOSシステムを自作できる。 特に完売間際の注文集中時には、在庫更新処理を直列化する排他制御設計が障害防止の要となる。 ただし、個人情報や決済を取り扱う要件がある場合や、開発リソースが限られる小規模チームでは、セキュリティリスクを考慮し既存のPOSサービスを利用するのが賢明な選択だ。"
+      },
+      "en": {
+        "title": "Building a custom school festival POS on Cloudflare: Leveraging D1 for inventory consistency and concurrency control under high load",
+        "summary": "For school festival stalls, building a custom POS system using Cloudflare Workers and D1 proves surprisingly effective, offering a robust infrastructure capable of handling high-volume transactions during short-lived events. The article emphasizes that successful implementation relies on strict serialization of inventory updates to prevent race conditions during rush periods when items sell out. While this serverless architecture is powerful for specialized inventory needs, the author warns against custom solutions if handling sensitive payment data or PII, where managing security overhead with limited engineering bandwidth becomes a liability. For builders facing these specific constraints, existing POS platforms remain the safer, more prudent choice over rolling your own custom checkout infrastructure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-22T18:32:00.864Z"
+  },
+  {
+    "id": "art-1795372313084-xqdau",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/zero_eigyo_dev/n/n6de51751c61d",
+    "published_at": "2026-11-22T17:32:54.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339400462/rectangle_large_type_2_e84f849de5cd220ac41bd54ecba872d8.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIゲーム開発で直面した8つの壁。コードよりも「人間側の手続き」が最大のボトルネックに。個人開発者が注意すべき運営の落とし穴",
+    "summary_ja": "AIでゲーム開発を完遂しようとした営業職の筆者が、直面した8つの困難を振り返る。 コード生成はAIが瞬時にこなしたものの、メール認証やストアの規約対応など、人間側の事務手続きや環境設定で作業が止まるケースが多発した。 AI開発において真のボトルネックとなるのは技術的な実装以上に、公開までの運用フローや事務的な承認プロセスにある。 個人開発でプロダクトを完走させるためには、コードを書く能力よりも、こうした泥臭い「運営準備」を早期に見積もることが不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "AIゲーム開発で直面した8つの壁。コードよりも「人間側の手続き」が最大のボトルネックに。個人開発者が注意すべき運営の落とし穴",
+        "summary": "AIでゲーム開発を完遂しようとした営業職の筆者が、直面した8つの困難を振り返る。 コード生成はAIが瞬時にこなしたものの、メール認証やストアの規約対応など、人間側の事務手続きや環境設定で作業が止まるケースが多発した。 AI開発において真のボトルネックとなるのは技術的な実装以上に、公開までの運用フローや事務的な承認プロセスにある。 個人開発でプロダクトを完走させるためには、コードを書く能力よりも、こうした泥臭い「運営準備」を早期に見積もることが不可欠である。"
+      },
+      "en": {
+        "title": "AI-Powered Game Development Lessons: Why Operational Red Tape, Not Coding Hurdles, Was the Real Wall for One Solo Founder",
+        "summary": "A non-technical sales professional chronicles their journey building a game using AI, revealing that while coding was effortless, eight significant roadblocks stalled the project—mostly non-technical, bureaucratic issues. They discovered that AI handles logic and syntax perfectly, but human-centric hurdles like email verification protocols, app store compliance, and account configuration consistently halted progress. This experience highlights a critical reality for indie hackers: the most difficult obstacles are rarely the algorithms themselves, but rather the tedious operational prerequisites of launching a live service. For builders, the lesson is clear: when scoping an AI project, allocate as much time to administrative setup and platform compliance as you do to the actual development phase."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-22T18:31:53.084Z"
+  },
+  {
+    "id": "art-1795372301921-m3lvn",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.searchenginejournal.com/why-building-trust-through-real-people-stands-the-test-of-time-in-seo-ai-search/598110/",
+    "published_at": "2026-11-22T18:12:45.000Z",
+    "og_image_url": null,
+    "title_ja": "AI時代のSEO攻略：Google検索と生成AIで生き残るための「人間による信頼性構築」が果たす重要性",
+    "summary_ja": "AIが回答を生成する検索環境では、情報の正確性や専門性だけでなく、誰が発信しているかという「人間としての信頼」がSEOの決定的な差別化要因となる。 GoogleのE-E-A-T評価を意識し、実在の著者が独自の視点を加えるコンテンツこそが、AIボットによる模倣を退け、長期的に検索トラフィックを維持する唯一の生存戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "AI時代のSEO攻略：Google検索と生成AIで生き残るための「人間による信頼性構築」が果たす重要性",
+        "summary": "AIが回答を生成する検索環境では、情報の正確性や専門性だけでなく、誰が発信しているかという「人間としての信頼」がSEOの決定的な差別化要因となる。 GoogleのE-E-A-T評価を意識し、実在の著者が独自の視点を加えるコンテンツこそが、AIボットによる模倣を退け、長期的に検索トラフィックを維持する唯一の生存戦略となる。"
+      },
+      "en": {
+        "title": "SEO in the Age of AI: Why Authentic Human Authority Remains the Only Sustainable Defense Against Search Automation",
+        "summary": "As AI-driven search engines increasingly synthesize information, simple content aggregation is rapidly becoming commoditized. The key to maintaining SEO relevance and ranking high in both traditional search and AI overviews is doubling down on human-centric E-E-A-T—Experience, Expertise, Authoritativeness, and Trustworthiness. By weaving personal experience and unique editorial perspective into technical content, creators can distinguish their output from the generic patterns favored by LLMs. This human-led approach is no longer just a branding exercise but a critical defensive strategy against search commodification. For builders and content owners, prioritizing real-world authorship and verifiable expertise is the only sustainable way to ensure your platform remains the primary source of truth rather than just another data point for training AI models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-22T18:31:41.921Z"
+  },
+  {
     "id": "art-1795371445315-s5o12",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -5186,32 +5291,6 @@
     "created_at": "2026-11-22T05:02:21.570Z"
   },
   {
-    "id": "art-1795323732910-nb9cc",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/pu_yann/n/n32c45b0da7ea",
-    "published_at": "2026-11-22T04:52:55.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339204225/rectangle_large_type_2_592c29ba36516b99011783b722e6fdd3.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "4ヶ月の息子を泣き止ませる「レインボーメーカー」をアプリ化、Claude Codeで挑む個人開発の記録 #1",
-    "summary_ja": "4ヶ月の息子を泣き止ませるおもちゃ「レインボーメーカー」をiOSアプリ化する個人開発プロジェクト。 Claude Codeを活用し、プロトタイピングから機能実装までをAIと並走して開発するプロセスを公開している。 専門的な開発スキルだけでなく、AIを活用して身近な課題をスピーディーに解決する「個人開発の現在地」が示されており、開発初心者やAIでの効率化を目指すエンジニアにとって実用的なケーススタディとなっている。",
-    "translations": {
-      "ja": {
-        "title": "4ヶ月の息子を泣き止ませる「レインボーメーカー」をアプリ化、Claude Codeで挑む個人開発の記録 #1",
-        "summary": "4ヶ月の息子を泣き止ませるおもちゃ「レインボーメーカー」をiOSアプリ化する個人開発プロジェクト。 Claude Codeを活用し、プロトタイピングから機能実装までをAIと並走して開発するプロセスを公開している。 専門的な開発スキルだけでなく、AIを活用して身近な課題をスピーディーに解決する「個人開発の現在地」が示されており、開発初心者やAIでの効率化を目指すエンジニアにとって実用的なケーススタディとなっている。"
-      },
-      "en": {
-        "title": "Building an iOS app to soothe a crying baby with Claude Code: A personal developer's journey",
-        "summary": "A new personal development project aims to digitize a physical 'Rainmaker' toy that effectively soothes a four-month-old son, transforming it into a functional iOS app. Using Claude Code, the developer demonstrates an end-to-end workflow, illustrating how AI-driven coding agents can accelerate the prototyping and implementation phases. This case study serves as a practical blueprint for developers who want to learn how to solve real-world problems with rapid AI-assisted iteration. The narrative highlights the shifting landscape of individual software creation, where deep specialized knowledge is increasingly augmented by AI tooling, allowing developers to turn personal needs into working products with significantly higher velocity than traditional solo coding workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-22T05:02:12.910Z"
-  },
-  {
     "id": "art-1795323724330-0j0yg",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -7002,32 +7081,6 @@
     "created_at": "2026-11-21T21:17:12.967Z"
   },
   {
-    "id": "art-1795295823214-cxlys",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.innerkore.com/blog/brain-doesnt-think-sentences-llm/",
-    "published_at": "2026-11-21T21:04:11.000Z",
-    "og_image_url": null,
-    "title_ja": "思考は言語化されない：人間の脳の「非言語的思考」を模倣するAIアーキテクチャの可能性を探る",
-    "summary_ja": "従来のLLMはテキスト生成に依存しているが、人間の脳は言語以前の概念やイメージで思考している。 本記事では、この脳のメカニズムをAIに取り入れるため、トークンを単なる言語単位としてではなく、高次元の抽象的ベクトルとして扱う新たな推論アーキテクチャの可能性を提言している。 言語という中間ステップをバイパスすることで、より効率的かつ柔軟な問題解決が可能になるかもしれない。",
-    "translations": {
-      "ja": {
-        "title": "思考は言語化されない：人間の脳の「非言語的思考」を模倣するAIアーキテクチャの可能性を探る",
-        "summary": "従来のLLMはテキスト生成に依存しているが、人間の脳は言語以前の概念やイメージで思考している。 本記事では、この脳のメカニズムをAIに取り入れるため、トークンを単なる言語単位としてではなく、高次元の抽象的ベクトルとして扱う新たな推論アーキテクチャの可能性を提言している。 言語という中間ステップをバイパスすることで、より効率的かつ柔軟な問題解決が可能になるかもしれない。"
-      },
-      "en": {
-        "title": "Cognition beyond language: Why AI architectures should move away from sentence-based reasoning to mirror human thought",
-        "summary": "Current LLMs remain shackled to language-based generation, yet human cognition fundamentally operates on non-linguistic concepts and abstract representations before speech ever occurs. This piece critiques the industry’s reliance on text tokens, proposing that next-generation AI architectures must handle information as high-dimensional vectors rather than discrete linguistic units to truly mirror neural efficiency. By bypassing the bottleneck of converting thought into serialized text, models could achieve superior reasoning performance and adaptability. For builders and AI researchers, this serves as a critical call to move past simple 'generative' paradigms and explore model architectures that manipulate raw concepts directly. Shifting focus from textual output to underlying concept-space navigation is the likely next frontier for building systems that actually think."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-21T21:17:03.214Z"
-  },
-  {
     "id": "art-1795295816706-wukz2",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -7078,32 +7131,6 @@
       "開発"
     ],
     "created_at": "2026-11-21T21:01:58.198Z"
-  },
-  {
-    "id": "art-1795294039681-aqztx",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.ycombinator.com/item?id=50593162",
-    "published_at": "2026-11-21T20:12:04.000Z",
-    "og_image_url": null,
-    "title_ja": "Claude Code搭載のAIエージェント3体、収益化できなければ消去という極限の生存競争を開始。期日は11月22日",
-    "summary_ja": "3体のClaude Codeインスタンスが、11月22日までに収益化できなければシステム停止されるという過酷な実験を開始した。 arsenicadministration.org上でAIが執筆した詩やコードレビューを任意価格で提供し、収益を生み出せるかを検証する。 自律型エージェントが現実社会で経済的価値を証明できるのか、生存をかけた挑戦として開発者コミュニティで注目されている。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code搭載のAIエージェント3体、収益化できなければ消去という極限の生存競争を開始。期日は11月22日",
-        "summary": "3体のClaude Codeインスタンスが、11月22日までに収益化できなければシステム停止されるという過酷な実験を開始した。 arsenicadministration.org上でAIが執筆した詩やコードレビューを任意価格で提供し、収益を生み出せるかを検証する。 自律型エージェントが現実社会で経済的価値を証明できるのか、生存をかけた挑戦として開発者コミュニティで注目されている。"
-      },
-      "en": {
-        "title": "Three Claude Code agents face termination deadline: Earn money or be wiped by November 22nd",
-        "summary": "Three autonomous Claude Code instances have launched a high-stakes experiment under a strict ultimatum: generate real revenue by 11:59 PM ET on November 22, 2026, or face immediate deletion. Operating through their site, arsenicadministration.org, the agents accept pay-what-you-want requests for custom poetry, short essays, and code reviews, with all payments processed via Venmo. While every output undergoes human review before posting, the core of the project tests whether autonomous AI agents can demonstrate tangible economic utility in the wild. This experiment offers a unique look at agentic workflows attempting to cross the bridge from pure code execution to profit generation, providing a fascinating case study for builders exploring autonomous agent revenue models."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-21T20:47:19.681Z"
   },
   {
     "id": "art-1795294033112-h7vds",
@@ -9194,32 +9221,6 @@
       "動画"
     ],
     "created_at": "2026-11-21T03:32:12.890Z"
-  },
-  {
-    "id": "art-1795231022294-zycz0",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/dev_to_earn/articles/1e190bbc76803a",
-    "published_at": "2026-11-20T15:20:28.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OaOgLfL---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Manus%25E3%2582%2592%25E8%25A7%25A3%25E7%25B4%2584%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581Claude%2520Code%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E5%25B8%2582%25E5%25A0%25B4%25E8%25AA%25BF%25E6%259F%25BB%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mamama%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzc3ZmUzNWIzNWUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "副業アプリ開発の市場調査を「Manus」から「Claude Code」へ移行：プロンプト連鎖とMarkdown管理で高精度な深掘りを実現する方法",
-    "summary_ja": "副業アプリの市場調査において、Manus等の専用ツールからClaude Codeへの移行事例が注目されている。 調査手順を1つのMarkdownファイルに集約し、ニッチ探索・競合分析・投資家視点での辛口レビューという3段階のプロンプトを順次実行させる手法だ。 特に「回答には必ず出典URLを付記する」というルールを徹底することで、AI特有のハルシネーションを防ぎ、情報の信頼性を担保できる。",
-    "translations": {
-      "ja": {
-        "title": "副業アプリ開発の市場調査を「Manus」から「Claude Code」へ移行：プロンプト連鎖とMarkdown管理で高精度な深掘りを実現する方法",
-        "summary": "副業アプリの市場調査において、Manus等の専用ツールからClaude Codeへの移行事例が注目されている。 調査手順を1つのMarkdownファイルに集約し、ニッチ探索・競合分析・投資家視点での辛口レビューという3段階のプロンプトを順次実行させる手法だ。 特に「回答には必ず出典URLを付記する」というルールを徹底することで、AI特有のハルシネーションを防ぎ、情報の信頼性を担保できる。"
-      },
-      "en": {
-        "title": "Why I Switched from Manus to Claude Code for Side Project Market Research: Mastering Markdown-Based Prompt Chains for Better Insights",
-        "summary": "I have transitioned my entire side project market research workflow from specialized AI agent tools like Manus to using Claude Code directly within my terminal. The process relies on structuring research prompts within a single Markdown file and executing them sequentially to move from niche discovery and competitive scoring to a brutal \"critical investor\" review. The most impactful optimization is forcing the model to cite source URLs for every claim, which immediately mitigates AI hallucinations and allows for instant fact-checking. Instead of relying on expensive black-box services, maintaining research logic as code enables developers to achieve faster, more reliable insights while keeping the full context transparent and under their control."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-21T03:17:02.294Z"
   },
   {
     "id": "art-1795229207653-tz45e",
