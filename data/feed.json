@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795377735471-2ymnt",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/nalt/articles/llm-self-rewriting-weights-arxiv-2611",
+    "published_at": "2026-11-22T17:21:40.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--lr_fQ59R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:LLM%25E3%2581%258C%25E5%258B%25BE%25E9%2585%258D%25E3%2581%25AA%25E3%2581%2597%25E3%2581%25A7%25E9%2587%258D%25E3%2581%25BF%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258D%25E6%258F%259B%25E3%2581%2588%25E3%2582%258B%25E3%2580%258CSelf-Rewriting%25E3%2580%258D%25E3%2581%25AE%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2581%25A8%25E3%2583%25AA%25E3%2582%25B9%25E3%2582%25AF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nalt%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM2ZjgwZjVmZjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "LLMが学習不要で自己重みを書き換える「Self-Rewriting」：27BモデルがCPU上での推論のみで推論精度を6.6ポイント向上",
+    "summary_ja": "大規模言語モデルの弱点を克服する手法として、従来の勾配計算や再学習を伴わない「Self-Rewriting」が注目されている。 これは27Bパラメータのモデルが自身の隠れ層を自己診断し、推論時にCPU上で重み行列を直接書き換えることで、精度を6.6ポイント向上させる技術だ。 GPUリソースに依存せずモデル内部を最適化できるこの手法は、推論コストを抑えつつ特化型モデルへの進化を加速させる新しいパラダイムを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "LLMが学習不要で自己重みを書き換える「Self-Rewriting」：27BモデルがCPU上での推論のみで推論精度を6.6ポイント向上",
+        "summary": "大規模言語モデルの弱点を克服する手法として、従来の勾配計算や再学習を伴わない「Self-Rewriting」が注目されている。 これは27Bパラメータのモデルが自身の隠れ層を自己診断し、推論時にCPU上で重み行列を直接書き換えることで、精度を6.6ポイント向上させる技術だ。 GPUリソースに依存せずモデル内部を最適化できるこの手法は、推論コストを抑えつつ特化型モデルへの進化を加速させる新しいパラダイムを示唆している。"
+      },
+      "en": {
+        "title": "Researchers demonstrate 'Self-Rewriting' for LLMs: 27B models improve reasoning by 6.6 points via CPU-side weight manipulation without gradient descent",
+        "summary": "A breakthrough technique called 'Self-Rewriting' allows large language models to self-correct and optimize their performance without expensive gradient descent or re-training. By diagnosing hidden states and directly modifying weight matrices via Python on CPU during inference, researchers enabled a 27B parameter model to achieve a 6.6-point boost in reasoning accuracy. This approach effectively breaks the rigid barrier between inference and training by enabling models to evolve their capabilities autonomously without massive GPU clusters. For AI engineers, this suggests a future where high-performance domain-specific tuning happens dynamically at the inference level, significantly reducing the overhead of continuous fine-tuning pipelines while allowing models to adapt to new logic patterns in real-time."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-22T20:02:15.471Z"
+  },
+  {
+    "id": "art-1795377727357-7g2um",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://asi.anahata.uno/ifptoasi/greenpaper.html",
+    "published_at": "2026-11-22T19:37:56.000Z",
+    "og_image_url": null,
+    "title_ja": "Java初、実行時に自身のバイトコードを改変する自己書き換えAIエージェントフレームワークが登場",
+    "summary_ja": "「ASI（Artificial Self-modifying Intelligence）」が発表したJava向けフレームワークは、AIエージェントが実行中に自身のバイトコードを直接書き換えることで、動的な自己進化を実現する。 従来のLLMベースのエージェントとは異なり、Javaのバイトコード操作ライブラリを活用してメモリ上でロジックを更新するため、事前定義された枠組みを超えた適応が可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Java初、実行時に自身のバイトコードを改変する自己書き換えAIエージェントフレームワークが登場",
+        "summary": "「ASI（Artificial Self-modifying Intelligence）」が発表したJava向けフレームワークは、AIエージェントが実行中に自身のバイトコードを直接書き換えることで、動的な自己進化を実現する。 従来のLLMベースのエージェントとは異なり、Javaのバイトコード操作ライブラリを活用してメモリ上でロジックを更新するため、事前定義された枠組みを超えた適応が可能だ。"
+      },
+      "en": {
+        "title": "New Java AI agent harness introduces runtime bytecode mutation, enabling true self-modification of internal logic",
+        "summary": "The newly released Java-based harness, ASI (Artificial Self-modifying Intelligence), enables AI agents to rewrite their own bytecode at runtime, marking a significant departure from standard fixed-logic LLM wrappers. Unlike traditional agents that simply pipe prompts to an LLM, this system leverages Java bytecode manipulation techniques to inject new logic into the memory space while the process is actively running. By dynamically modifying its execution structure, the agent achieves a level of recursive self-improvement that avoids the typical latency of external model calls or full application redeployment. For developers building autonomous Java systems, this capability opens a sophisticated path for creating agents that do not just plan tasks but physically evolve their own codebase to optimize for new constraints in real-time."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-22T20:02:07.357Z"
+  },
+  {
+    "id": "art-1795377720022-lf4vp",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/mrmrmr/items/9eaef6378f1780aca58b",
+    "published_at": "2026-11-22T19:53:26.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzI3NDE5JTJGMTJmOWI5NDdmYWQxMDJmMzI1ZTdhM2MxY2I1YTNmOTc2OWRjYjY4ZCUyRmxhcmdlLnBuZyUzRjE3NzM1Nzk2NTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTg4ZjQ2OWIxYjE5MmE2NWQ5MWIxOTc1NDc4ZDcwYjhj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De95bedc85e3356abe6a208a41038b450?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTkxJUUzJTgyJUI5JUUzJTgwJTkwRyVFNiVBNCU5QyVFNSVBRSU5QSVFNSVBRiVCRSVFNyVBRCU5NiVFMyU4MyVCQiVFNiU4QSU4MCVFOCVBMSU5MyVFOCU4MCU4NSVFNSU5MCU5MSVFMyU4MSU5MSVFMyU4MCU5MSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWI1NTE4OTc3NTllMjRmNTcwZjJhYTBiNjhkMmE3MDRh&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtcm1ybXImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NWIwMjVjOTJjZjhmZjExZjU4NzhmZDc0M2JhOTQ4ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6ed00ba17d6c79bf8cb942299f9c14f6",
+    "title_ja": "自然言語処理の基礎「コーパス」詳解：G検定対策にも役立つ言語データセットの分類と構築の要点を整理",
+    "summary_ja": "自然言語処理（NLP）の基盤となるコーパスは、機械学習モデルの訓練に不可欠な大規模言語データセットです。 本記事では、平衡コーパスや注釈付きコーパスなど、用途に応じた分類体系を整理し、技術者やG検定受験者が押さえるべき定義を解説します。 単にデータを集めるだけでなく、分析目的や対象ドメインに適合した質の高いデータを選択することが、AIモデルの性能を最大化させるためのエンジニアリングにおける要となります。",
+    "translations": {
+      "ja": {
+        "title": "自然言語処理の基礎「コーパス」詳解：G検定対策にも役立つ言語データセットの分類と構築の要点を整理",
+        "summary": "自然言語処理（NLP）の基盤となるコーパスは、機械学習モデルの訓練に不可欠な大規模言語データセットです。 本記事では、平衡コーパスや注釈付きコーパスなど、用途に応じた分類体系を整理し、技術者やG検定受験者が押さえるべき定義を解説します。 単にデータを集めるだけでなく、分析目的や対象ドメインに適合した質の高いデータを選択することが、AIモデルの性能を最大化させるためのエンジニアリングにおける要となります。"
+      },
+      "en": {
+        "title": "Corpus Fundamentals for NLP Engineers: A Deep Dive into Dataset Classification and Strategic Selection for ML Training",
+        "summary": "A corpus serves as the fundamental large-scale linguistic dataset essential for training natural language processing models. This technical overview breaks down core classifications, including balanced, annotated, and domain-specific corpora, providing key definitions for both software engineers and those preparing for the G-Certification. Beyond mere data aggregation, the process requires selecting high-quality, relevant data tailored to specific AI domains to ensure model performance. For developers, the takeaway is clear: the architecture of your training corpus is as critical as your algorithm choice. Understanding these taxonomies allows builders to construct robust, representative datasets that prevent bias and improve inference accuracy when deploying language-based applications in production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-22T20:02:00.022Z"
+  },
+  {
+    "id": "art-1795377712430-fsgo4",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/fair_violet7894/n/nacf73f9de8b5",
+    "published_at": "2026-11-22T19:55:23.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339475549/rectangle_large_type_2_73bd8c523bbeb502bd4c4cb0a582f23c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "名作ゲームの「吸い込み」をミニWebゲームとして再構築：100日連続アプリ開発プロジェクトDay 6の成果と設計思想",
+    "summary_ja": "「100日で3DSの名作リメイクを100個作る」企画の6日目は、『星のカービィ トリプルデラックス』の吸い込みアクションをWebゲームとして抽出し再構築した。 上から落ちてくる星を吸い込み得点を稼ぐシンプルな「キャッチゲーム」だが、複雑な既存ゲームのメカニクスを単一の仕掛けに分解・再実装することで、短期間でのプロトタイピングと学習効率を最大化している。",
+    "translations": {
+      "ja": {
+        "title": "名作ゲームの「吸い込み」をミニWebゲームとして再構築：100日連続アプリ開発プロジェクトDay 6の成果と設計思想",
+        "summary": "「100日で3DSの名作リメイクを100個作る」企画の6日目は、『星のカービィ トリプルデラックス』の吸い込みアクションをWebゲームとして抽出し再構築した。 上から落ちてくる星を吸い込み得点を稼ぐシンプルな「キャッチゲーム」だが、複雑な既存ゲームのメカニクスを単一の仕掛けに分解・再実装することで、短期間でのプロトタイピングと学習効率を最大化している。"
+      },
+      "en": {
+        "title": "Building a 'Kirby' inhale clone for the web: Lessons from Day 6 of a 100-day rapid remake challenge",
+        "summary": "On the sixth day of a '100-day 3DS remake' project, the developer isolated the iconic inhale mechanic from 'Kirby: Triple Deluxe' to build a standalone web-based catch game. The core gameplay loop is simple: inhale falling stars for points while avoiding spiked balls to save hearts. By stripping away complex game systems and focusing exclusively on one specific interaction, the author accelerates rapid prototyping cycles and design experimentation. For solo builders, this method of isolating a single, satisfying UX mechanic rather than cloning an entire game is a high-leverage way to sharpen front-end skills. This iterative workflow transforms complex inspirations into manageable building blocks, significantly expanding your repertoire for future web app development."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-22T20:01:52.430Z"
+  },
+  {
     "id": "art-1795376830712-cr8jj",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5288,32 +5392,6 @@
     "created_at": "2026-11-22T06:17:04.199Z"
   },
   {
-    "id": "art-1795328215252-f6uz2",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/365systemeng/n/n439415a3cf01",
-    "published_at": "2026-11-22T06:11:54.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339224611/rectangle_large_type_2_3ac5c480bcabc01d9da7b8dda7dfda02.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "エンジニア・デザイナー向け個人受託開発の始め方：会社依存脱却と報酬最大化のための契約・リスク管理実務ガイド",
-    "summary_ja": "エンジニアやデザイナーがスキルを直接収益化する手段として「個人受託」が注目されている。 従来のフリーランス形態との違いを理解し、トラブルを回避するための契約実務や報酬受け取りまでのフローを正しく構築することが重要だ。 自身の専門性を活かした高単価案件の獲得と、未払いリスクを抑えた安全な取引環境の構築こそが、個人開発者が持続的に収益を上げるための不可欠な戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "エンジニア・デザイナー向け個人受託開発の始め方：会社依存脱却と報酬最大化のための契約・リスク管理実務ガイド",
-        "summary": "エンジニアやデザイナーがスキルを直接収益化する手段として「個人受託」が注目されている。 従来のフリーランス形態との違いを理解し、トラブルを回避するための契約実務や報酬受け取りまでのフローを正しく構築することが重要だ。 自身の専門性を活かした高単価案件の獲得と、未払いリスクを抑えた安全な取引環境の構築こそが、個人開発者が持続的に収益を上げるための不可欠な戦略となる。"
-      },
-      "en": {
-        "title": "A Practical Guide to Independent Contracting for Engineers and Designers: Managing Contracts, Risks, and Payment Workflows",
-        "summary": "Individual contracting is gaining traction as a premier method for engineers and designers to monetize specialized skills outside of traditional corporate employment. This guide clarifies the crucial operational differences between general freelancing and targeted direct contracting, emphasizing the necessity of robust legal agreements and structured payment workflows to mitigate financial risks. Success for solo builders lies in mastering the client relationship—from scoping and pricing projects to setting up safe payment terms that ensure steady income without excessive exposure to non-payment. Developing a rigorous framework for contract management is not merely an administrative task; it is a fundamental strategy for maintaining a sustainable, high-revenue independent practice while avoiding common pitfalls in direct client engagements."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-22T06:16:55.252Z"
-  },
-  {
     "id": "art-1795328207002-w02iw",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -6816,32 +6894,6 @@
     "created_at": "2026-11-21T23:31:43.915Z"
   },
   {
-    "id": "art-1795303043420-9k2js",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://twitter.com/Crashoverride_X/status/2123900241258955223",
-    "published_at": "2026-11-21T23:13:34.000Z",
-    "og_image_url": "https://pbs.twimg.com/media/HXmb-JOXYAAuRPm?format=webp&name=large",
-    "title_ja": "AIが61GBの難読化コードを生成？数学の難問「リーマン予想」への挑戦で起きた特異なデータダンプ事案",
-    "summary_ja": "あるAIモデルが数学の難問「リーマン予想」の解法を試みた際、なんと61GBもの巨大かつ難読化されたコードを吐き出すという奇妙な事象が発生した。 AIが複雑な推論プロセスで膨大な情報を生成したものの、その中身が解析困難なコード群であった点は、現代AIの「ブラックボックス」的側面を象徴している。 実用的な解法とは言えないまでも、AIが生成する膨大なデータの妥当性をどう検証し、デバッグするのかという課題は、今後のAI研究における大きな壁となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIが61GBの難読化コードを生成？数学の難問「リーマン予想」への挑戦で起きた特異なデータダンプ事案",
-        "summary": "あるAIモデルが数学の難問「リーマン予想」の解法を試みた際、なんと61GBもの巨大かつ難読化されたコードを吐き出すという奇妙な事象が発生した。 AIが複雑な推論プロセスで膨大な情報を生成したものの、その中身が解析困難なコード群であった点は、現代AIの「ブラックボックス」的側面を象徴している。 実用的な解法とは言えないまでも、AIが生成する膨大なデータの妥当性をどう検証し、デバッグするのかという課題は、今後のAI研究における大きな壁となるだろう。"
-      },
-      "en": {
-        "title": "AI creates a 61GB obfuscated code dump while attempting to solve the Riemann Hypothesis, raising data validation concerns",
-        "summary": "A recent experiment involving AI models attempting to tackle the Riemann Hypothesis resulted in a bizarre output: a massive 61GB dump of highly obfuscated, incomprehensible code. This event highlights the growing challenge of verifying massive, algorithmic outputs where the AI's internal reasoning creates data far too vast and complex for human engineers to audit manually. While the generated output failed to provide a valid mathematical solution, the incident serves as a stark reminder of the 'black box' problem inherent in advanced generative systems. For builders, this underscores the necessity of implementing strict validation layers and output sanitization for AI agents, as relying on raw model generation without rigorous verification can lead to unmanageable, resource-draining, and useless data artifacts."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-21T23:17:23.420Z"
-  },
-  {
     "id": "art-1795303034736-ba4ut",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -7546,32 +7598,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-21T18:02:14.151Z"
-  },
-  {
-    "id": "art-1795283234082-5x2kk",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/kskwtnk/items/99eccfba0ae76ce6f87a",
-    "published_at": "2026-11-21T17:35:02.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMjE0Njc3JTJGcHJvZmlsZS1pbWFnZXMlMkYxNzY4MDQ1NzczP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz04YTE4Y2QyY2ZkYThjMWE4OTEwZTIxMDM4OWExZWJmMA%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZjMjlhYjcwNzc5ZTZkMmJjZjUyNjdiOTBkMWZlZTk2Y2RkYTJmYzZlJTJGb3JpZ2luYWwuanBnJTNGMTY1OTU3NjQyMz9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1iNjg1ZTAwOGMzMDkwOTliZWE3YTQwZDhlOTBjYjJlMQ%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3D8e28f14cfdbf3f80b917974c80cf19ee?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQTclRTklOTYlOEIlRTclOTklQkElRTMlODIlOTIlRTklODAlOUYlRTMlODElOEYlRTMlODElOTklRTMlODIlOEIlRTMlODElQTAlRTMlODElOTElRTMlODElQTclRTMlODElQUYlRTMlODAlODElRTQlQkMlOUElRTclQTQlQkUlRTMlODElQUUlRTclOTQlOUYlRTclOTQlQTMlRTYlODAlQTclRTMlODElQUYlRTQlQjglOEElRTMlODElOEMlRTMlODIlODklRTMlODElQUElRTMlODElODQlRUYlQkMlOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0xMmNlM2ZkOGIwZmQ4NmNlYjM1Mzc0NDVlOTgyNTlkNw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrc2t3dG5rJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MTYyZjIyM2I1Y2U3YjY3ODcyNGJlMWRkNDlmZGY5MzA&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-44Ko44Kk44OB44O844Og44Ob44O844Or44OH44Kj44Oz44Kw44K5&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=bc08d9fb96382bf682ebd40ac8fc50ef",
-    "title_ja": "「AIで開発効率化」が売上に直結しない罠—個別の生産性向上と全社的な事業成長の乖離を埋めるAI活用戦略とは",
-    "summary_ja": "AI導入により開発速度やコード生成量は向上したが、それが必ずしも企業の売上や利益という最終成果に繋がるとは限らない。 現場レベルの生産性向上を組織全体のビジネスインパクトへ変換するには、AIを単なる効率化ツールとしてではなく、事業戦略に基づいた目的志向で活用するガバナンスと評価指標の再設計が不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "「AIで開発効率化」が売上に直結しない罠—個別の生産性向上と全社的な事業成長の乖離を埋めるAI活用戦略とは",
-        "summary": "AI導入により開発速度やコード生成量は向上したが、それが必ずしも企業の売上や利益という最終成果に繋がるとは限らない。 現場レベルの生産性向上を組織全体のビジネスインパクトへ変換するには、AIを単なる効率化ツールとしてではなく、事業戦略に基づいた目的志向で活用するガバナンスと評価指標の再設計が不可欠である。"
-      },
-      "en": {
-        "title": "The Trap of Development Efficiency: Why Boosting AI Coding Velocity Doesn't Automatically Translate to Higher Corporate Revenue",
-        "summary": "While AI has undeniably accelerated individual development speeds and code output, recent studies suggest a critical disconnect between localized productivity gains and overall corporate business growth. Engineering managers and tech leaders must recognize that faster feature shipping does not guarantee improved profitability if those features fail to solve actual business problems. Bridging this gap requires moving beyond simple efficiency metrics toward an AI strategy that is directly tied to tangible business outcomes and revenue goals. For builders and leaders, the lesson is clear: organizational productivity is not a sum of individual dev velocity. Real success comes from governance and rigorous evaluation frameworks that align every AI-driven task with the broader profit-oriented objectives of the enterprise."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-21T17:47:14.082Z"
   },
   {
     "id": "art-1795283214722-sip37",
@@ -9058,32 +9084,6 @@
       "研究"
     ],
     "created_at": "2026-11-21T08:02:01.878Z"
-  },
-  {
-    "id": "art-1795248115854-5ln8h",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/flosslabs/articles/anythingllm-intro",
-    "published_at": "2026-11-21T07:52:30.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--o2jcO6qB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%2587%25AA%25E5%2588%2586%25E5%25B0%2582%25E7%2594%25A8%25E3%2581%25AEAI%25E3%2583%258A%25E3%2583%25AC%25E3%2583%2583%25E3%2582%25B8%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E3%2582%2592%25E6%25A7%258B%25E7%25AF%2589%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2580%258CAnythingLLM%25E3%2580%258D%25E3%2581%258C%25E3%2580%2581%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2582%2584%25E7%25A4%25BE%25E5%2586%2585wiki%25E3%2581%25AE%25E6%2595%2591%25E4%25B8%2596%25E4%25B8%25BB%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258B%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:FLOSSLABS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzJJRWs4SkdXUXhzTHFwVXZNSk9VdXY0eXk1MjlaSUZMX0d5aGxOUklXZ0s3RnZRPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "RAG構築の決定版「AnythingLLM」活用術：ドキュメント管理・ベクトルDB・LLMを統合し、自分専用のAIナレッジベースを爆速で構築する方法",
-    "summary_ja": "AnythingLLMは、ベクトルデータベースとドキュメント管理機能、LLMを統合したオールインワン型のRAG構築プラットフォームだ。 膨大な社内wikiや仕様書、個人メモを横断検索し、参照先を明示した回答を生成できる。 プロンプトに毎回情報を貼り付ける手間を省き、ローカル環境でもセキュアにナレッジベースを運用可能だ。 個人開発者や組織が情報整理の課題を突破し、検索時間を削減するための強力なツールとなる。",
-    "translations": {
-      "ja": {
-        "title": "RAG構築の決定版「AnythingLLM」活用術：ドキュメント管理・ベクトルDB・LLMを統合し、自分専用のAIナレッジベースを爆速で構築する方法",
-        "summary": "AnythingLLMは、ベクトルデータベースとドキュメント管理機能、LLMを統合したオールインワン型のRAG構築プラットフォームだ。 膨大な社内wikiや仕様書、個人メモを横断検索し、参照先を明示した回答を生成できる。 プロンプトに毎回情報を貼り付ける手間を省き、ローカル環境でもセキュアにナレッジベースを運用可能だ。 個人開発者や組織が情報整理の課題を突破し、検索時間を削減するための強力なツールとなる。"
-      },
-      "en": {
-        "title": "AnythingLLM Review: Why this all-in-one RAG platform is the ultimate tool for building custom AI knowledge bases and managing internal docs",
-        "summary": "AnythingLLM serves as an all-in-one RAG platform that integrates vector databases, document management systems, and LLMs into a single streamlined interface. By unifying siloed information—from scattered internal wikis to technical specifications and personal notes—it enables users to query their private data while receiving accurate, context-aware answers that include explicit source citations. This eliminates the tedious need to repeatedly paste documentation into prompts, allowing developers and knowledge workers to operate secure, local, or hosted knowledge bases without complex infrastructure overhead. For builders, AnythingLLM represents a significant productivity shift, transforming how teams and solo developers navigate overwhelming documentation troves, drastically reducing search friction and enabling truly context-rich interactions with their own proprietary data sets."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-21T08:01:55.854Z"
   },
   {
     "id": "art-1795244503878-sksv5",
