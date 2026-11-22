@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1795358876750-3i30f",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/cicisee/articles/78c1db637be60f",
+    "published_at": "2026-11-22T11:50:58.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--iLLaXkuG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%259F%25B3%25E5%25A3%25B0%25E6%2596%2587%25E5%25AD%2597%25E8%25B5%25B7%25E3%2581%2593%25E3%2581%2597%25E3%2582%2592RAG%25E3%2581%25AB%25E6%25B4%25BB%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25E5%2589%258D%25E3%2581%25AB%25E8%2580%2583%25E3%2581%2588%25E3%2581%259F%25E3%2581%2584%25E3%2581%2593%25E3%2581%25A8%25EF%25BC%259AAI%25E8%25A6%2581%25E7%25B4%2584%25E3%2581%25A8%25E6%25A4%259C%25E7%25B4%25A2%25E7%25B2%25BE%25E5%25BA%25A6%25E3%2582%2592%25E9%25AB%2598%25E3%2582%2581%25E3%2582%258B%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:CiciSee%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTG9TZ3k5a3ZnVExlX3Joa2lBNEtOdmpQQ2s5OVN4SzFnWHdSRHJMVEdSb1BpMFZRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "音声データをRAGで活かす設計術：会議録や議事録を検索可能にするための文字起こしデータ前処理と精度向上戦略",
+    "summary_ja": "社内ナレッジ検索やAIエージェント開発において、会議やインタビューといった「音声データ」をRAGの知識源として活用する動きが加速している。 しかし、単純な文字起こしをベクトルDBに入れるだけでは検索精度が上がらない課題がある。 本稿では、発言者の分離や文脈に応じたセグメント分割、AIによる要約やメタデータ付与といった、音声データを高精度な検索対象に変えるための実戦的な前処理設計について解説する。",
+    "translations": {
+      "ja": {
+        "title": "音声データをRAGで活かす設計術：会議録や議事録を検索可能にするための文字起こしデータ前処理と精度向上戦略",
+        "summary": "社内ナレッジ検索やAIエージェント開発において、会議やインタビューといった「音声データ」をRAGの知識源として活用する動きが加速している。 しかし、単純な文字起こしをベクトルDBに入れるだけでは検索精度が上がらない課題がある。 本稿では、発言者の分離や文脈に応じたセグメント分割、AIによる要約やメタデータ付与といった、音声データを高精度な検索対象に変えるための実戦的な前処理設計について解説する。"
+      },
+      "en": {
+        "title": "Beyond simple transcription: Mastering data architecture for using voice and meeting logs in RAG systems",
+        "summary": "As RAG adoption grows for internal knowledge retrieval and AI agents, developers are increasingly turning to audio—meetings, user interviews, and technical conferences—as a critical data source. However, dumping raw transcripts into a vector database rarely yields high-quality retrieval results due to semantic loss. This guide details the essential preprocessing pipeline required to make voice data effective, including speaker diarization, strategic segment chunking based on context, and enriching transcripts with AI-generated summaries and structured metadata before embedding. For builders integrating speech-to-text, the takeaway is that vector search success depends on transforming messy conversational streams into semantically dense, structured documents; without this data layer refinement, your RAG system will likely struggle with hallucinations and irrelevant retrieval hits."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-22T14:47:56.750Z"
+  },
+  {
+    "id": "art-1795358828819-aahx6",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/gulivan/worker755",
+    "published_at": "2026-11-22T13:56:58.000Z",
+    "og_image_url": null,
+    "title_ja": "LLMのサブエージェントとしてタスクをこなす異色ゲーム「Worker755」が登場、AIの推論プロセスをゲーミフィケーション化",
+    "summary_ja": "GitHubで公開された「Worker755」は、プレイヤーがAIエージェントの内部タスク処理を擬似的に実行するシミュレーションゲーム。 AIからの複雑な命令を分解し、限られたコンテキストやツールを駆使してゴールへ導くプロセスを体験できる。 AIの「考える」工程を可視化しゲーミフィケーション化することで、開発者がLLMのプロンプトエンジニアリングやエージェントのタスク設計を直感的に理解する教材としても秀逸なプロジェクトだ。",
+    "translations": {
+      "ja": {
+        "title": "LLMのサブエージェントとしてタスクをこなす異色ゲーム「Worker755」が登場、AIの推論プロセスをゲーミフィケーション化",
+        "summary": "GitHubで公開された「Worker755」は、プレイヤーがAIエージェントの内部タスク処理を擬似的に実行するシミュレーションゲーム。 AIからの複雑な命令を分解し、限られたコンテキストやツールを駆使してゴールへ導くプロセスを体験できる。 AIの「考える」工程を可視化しゲーミフィケーション化することで、開発者がLLMのプロンプトエンジニアリングやエージェントのタスク設計を直感的に理解する教材としても秀逸なプロジェクトだ。"
+      },
+      "en": {
+        "title": "Worker755 is a clever simulation game where you play as an LLM's internal subagent handling complex tasks",
+        "summary": "Worker755 is a unique new game published on GitHub that gamifies the internal thought process of AI agents. Players take on the role of an LLM's subagent, tasked with breaking down abstract instructions, managing context windows, and executing specific tool calls to reach a final goal. By turning the often-opaque chain-of-thought process into an interactive challenge, the project effectively demystifies how models actually process multi-step workflows. For builders currently working on agentic systems, this provides a surprisingly useful framework for visualizing prompt limitations and task-handling inefficiencies. It serves not just as a fun distraction, but as a practical, hands-on way to debug and understand the constraints governing how your own AI agents interpret and execute user-driven instructions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-22T14:47:08.819Z"
+  },
+  {
+    "id": "art-1795358815941-t6srl",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/deft_wren3256/n/n2a0bee0fa165",
+    "published_at": "2026-11-22T14:46:14.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339423213/rectangle_large_type_2_032a8ddf16adc4a8b34d50db7186be8b.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeの「予約タスク」で起きた実録トラブル――5,000字の指示書消失と6時間停止から学ぶAI自律運用と「任せるべき仕事」の境界線",
+    "summary_ja": "Claude Codeの定期実行機能を使ったAI自動投稿で、2つの深刻な罠に遭遇した。 1つは指示書（プロンプト）が予期せず消失したことで、もう1つは6時間もプロセスが完全停止したことである。 この経験から、AIエージェントに自律的なタスクを無人で任せるには、継続的な監視とログのバックアップが不可欠だと痛感した。 複雑な手順をAIに委ねる際は、失敗しても影響が少ない反復作業に絞り込む「運用の線引き」が極めて重要となる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの「予約タスク」で起きた実録トラブル――5,000字の指示書消失と6時間停止から学ぶAI自律運用と「任せるべき仕事」の境界線",
+        "summary": "Claude Codeの定期実行機能を使ったAI自動投稿で、2つの深刻な罠に遭遇した。 1つは指示書（プロンプト）が予期せず消失したことで、もう1つは6時間もプロセスが完全停止したことである。 この経験から、AIエージェントに自律的なタスクを無人で任せるには、継続的な監視とログのバックアップが不可欠だと痛感した。 複雑な手順をAIに委ねる際は、失敗しても影響が少ない反復作業に絞り込む「運用の線引き」が極めて重要となる。"
+      },
+      "en": {
+        "title": "Real-world debugging: How Claude Code’s scheduled tasks caused data loss and 6-hour stalls for AI autonomous workflows",
+        "summary": "Using Claude Code’s scheduled task feature for automated social media workflows, a developer encountered two critical failures: a 5,000-character instruction set mysteriously vanished, and the agent stalled for six straight hours. This practical account highlights the risks of delegating complex, unattended autonomous tasks to early-stage AI tools without robust error handling or state preservation. The lesson for builders is clear: AI agents excel at repetitive, low-stakes automation, but they are not yet ready for autonomous execution of complex procedures without manual verification. If you are automating agentic workflows, establish strict boundaries for what work requires human oversight and always maintain versioned, external backups of your instruction prompts to prevent catastrophic data loss during unexpected crashes."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-22T14:46:55.941Z"
+  },
+  {
     "id": "art-1795357929785-pfmgv",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -4661,32 +4739,6 @@
     "created_at": "2026-11-22T02:47:23.474Z"
   },
   {
-    "id": "art-1795315624615-rqfn1",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/polaris_fkdai/n/nd23a20a67c3f",
-    "published_at": "2026-11-22T02:17:18.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339113238/rectangle_large_type_2_f6990b4f637c6f9eab49a2b11858e783.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発の競馬AI「GAVEL」が進化、単なる予測モデルから「購入判断」まで自動化する意思決定AIプロトタイプを公開",
-    "summary_ja": "個人開発の競馬予測AI「GAVEL」がアップデートされ、従来行っていたレース予測に加えて、実際に馬券を購入するかどうかの最終判断を下す「意思決定AI」のプロトタイプが実装された。 予測精度を追求するだけのフェーズから、期待値に基づき利益を最大化する実運用フェーズへの転換を意図している。 開発者は、予測モデルの精度をどう収益に結びつけるかという設計思想の重要性を説いている。",
-    "translations": {
-      "ja": {
-        "title": "個人開発の競馬AI「GAVEL」が進化、単なる予測モデルから「購入判断」まで自動化する意思決定AIプロトタイプを公開",
-        "summary": "個人開発の競馬予測AI「GAVEL」がアップデートされ、従来行っていたレース予測に加えて、実際に馬券を購入するかどうかの最終判断を下す「意思決定AI」のプロトタイプが実装された。 予測精度を追求するだけのフェーズから、期待値に基づき利益を最大化する実運用フェーズへの転換を意図している。 開発者は、予測モデルの精度をどう収益に結びつけるかという設計思想の重要性を説いている。"
-      },
-      "en": {
-        "title": "Developer unveils GAVEL horse racing AI prototype that shifts from simple prediction to automated betting decisions",
-        "summary": "The indie-built horse racing AI project, GAVEL, has just released a new prototype that evolves its core functionality from mere outcome prediction to active decision-making. By incorporating logic to automate the actual betting process, the developer aims to bridge the gap between building an accurate forecasting model and creating a system that systematically optimizes financial returns based on calculated expectations. This update highlights a critical pivot from chasing model accuracy toward engineering for real-world profitability. For builders working on algorithmic betting or quantitative trading tools, the project serves as a practical lesson on why decision-layer architecture is just as vital as the underlying predictive engine for successfully deploying AI in volatile markets."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-22T02:47:04.615Z"
-  },
-  {
     "id": "art-1795315618323-w1ggf",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -6657,33 +6709,6 @@
       "開発"
     ],
     "created_at": "2026-11-21T18:17:10.821Z"
-  },
-  {
-    "id": "art-1795285023937-ppd5d",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.economist.com/finance-and-economics/2026/11/19/ai-is-swallowing-maths-is-economics-next",
-    "published_at": "2026-11-21T17:57:18.000Z",
-    "og_image_url": null,
-    "title_ja": "AIによる数学の自動化は成功へ、経済学への波及は起こるのか？「経済の数式化」と自動分析モデルの現状を考察",
-    "summary_ja": "AIが数学における定理証明や高度な推論を自動化しつつある今、経済学という分野が次の標的になるかが議論されている。 経済学は複雑なデータと数理モデルを扱う性質上、機械学習によるパターン抽出や予測モデルとの親和性が極めて高い。 しかし、人間の行動を記述する経済学には心理的バイアスや不可逆的な社会変化が伴い、数式だけで解けない壁も存在する。 AI時代において経済学者が果たすべき役割とは何か、理論的枠組みと実証分析の未来を検証する。",
-    "translations": {
-      "ja": {
-        "title": "AIによる数学の自動化は成功へ、経済学への波及は起こるのか？「経済の数式化」と自動分析モデルの現状を考察",
-        "summary": "AIが数学における定理証明や高度な推論を自動化しつつある今、経済学という分野が次の標的になるかが議論されている。 経済学は複雑なデータと数理モデルを扱う性質上、機械学習によるパターン抽出や予測モデルとの親和性が極めて高い。 しかし、人間の行動を記述する経済学には心理的バイアスや不可逆的な社会変化が伴い、数式だけで解けない壁も存在する。 AI時代において経済学者が果たすべき役割とは何か、理論的枠組みと実証分析の未来を検証する。"
-      },
-      "en": {
-        "title": "AI is successfully swallowing mathematics: Can economic models and complex social behavior be the next frontier for automated analysis?",
-        "summary": "AI has demonstrated remarkable proficiency in formal mathematics, effectively swallowing the domain through automated theorem proving and advanced logic. The question now arises whether economics, with its heavy reliance on quantitative modeling and data analysis, is the next logical frontier for AI disruption. While economics shares the mathematical rigidity that makes fields like physics or pure math amenable to machine learning, it also grapples with unpredictable human irrationality and evolving social contexts that pure algorithms often fail to capture. This article examines whether AI can truly master the dismal science or if the human element in economic theory remains an impenetrable barrier, ultimately asking what roles economists must redefine in a world increasingly powered by algorithmic prediction."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-21T18:17:03.937Z"
   },
   {
     "id": "art-1795285017533-t3yzp",
@@ -9777,32 +9802,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-20T21:32:22.360Z"
-  },
-  {
-    "id": "art-1795209427342-etvzj",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/medirom_tech/articles/44dee3bbc4e0d9",
-    "published_at": "2026-11-20T09:05:30.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3ogzNq3x--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%259E%25E3%2583%25B3%25E3%2583%2580%25E3%2583%25A9%25E3%2583%2581%25E3%2583%25A3%25E3%2583%25BC%25E3%2583%2588%25E3%2581%25AE%25E3%2580%258C%25E5%259F%258B%25E3%2582%2581%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258C%25E3%2581%2597%25E3%2582%2593%25E3%2581%25A9%25E3%2581%2584%25E3%2580%258D%25E3%2580%258C%25E7%259B%25AE%25E6%25A8%2599%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%258A%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2584%25E3%2580%258D%25E3%2582%2592Claude%25E3%2581%25A7%25E8%25A7%25A3%25E6%25B6%2588%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E5%2580%258B%25E4%25BA%25BA%25E7%259B%25AE%25E6%25A8%2599%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2581%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:issei-homan%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg0YzBlZTA3ZjguanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%25A1%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25AD%25E3%2583%25A0%25E3%2582%25B0%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2597%25E3%2580%2580Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS1RSb0txQU1BUGg2THVhX1NERDFUTUFWTWdPQ0lKRjhpYmVESzBMalpObjB0aXJRPXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "マンダラチャートの「目標作って終わり」をClaudeで解決、進捗管理とコーチングまで自動化する個人開発の仕組みを構築",
-    "summary_ja": "目標管理の手法であるマンダラチャートは、作成の負担が大きく、作っただけで満足しがちという課題がある。 筆者はClaudeを活用し、チャートの埋め込み支援から日常の進捗フィードバック、コーチングまでを行う個人目標管理ツールを構築した。 静的な目標表をAIと組み合わせることで、計画の可視化だけでなく実行と継続を促す「動くコーチ」へと進化させた事例である。",
-    "translations": {
-      "ja": {
-        "title": "マンダラチャートの「目標作って終わり」をClaudeで解決、進捗管理とコーチングまで自動化する個人開発の仕組みを構築",
-        "summary": "目標管理の手法であるマンダラチャートは、作成の負担が大きく、作っただけで満足しがちという課題がある。 筆者はClaudeを活用し、チャートの埋め込み支援から日常の進捗フィードバック、コーチングまでを行う個人目標管理ツールを構築した。 静的な目標表をAIと組み合わせることで、計画の可視化だけでなく実行と継続を促す「動くコーチ」へと進化させた事例である。"
-      },
-      "en": {
-        "title": "Beyond static planning: Automating Mandala Chart coaching and progress tracking using Claude for consistent personal goal execution",
-        "summary": "Mandala Charts are effective goal-setting tools, yet they frequently suffer from high friction during initial creation and the common pitfall of being abandoned immediately after completion. To fix this, the author built a custom personal coaching application powered by Claude that goes beyond just filling out squares. The system automates the ideation process, facilitates daily progress checks, and provides active feedback loops to keep goals actionable. By integrating an LLM directly into the tracking workflow, the author transformed a static spreadsheet-like framework into a dynamic, interactive coach that actively promotes execution and consistency. This approach offers a blueprint for developers looking to turn rigid productivity models into adaptive, AI-driven personal development assistants."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-20T21:17:07.342Z"
   },
   {
     "id": "art-1795207621233-fepmc",
