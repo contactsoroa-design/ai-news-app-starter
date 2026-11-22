@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795306627258-ejicz",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kazu1/articles/pass-at-k-reliability",
+    "published_at": "2026-11-21T22:54:22.000Z",
+    "og_image_url": null,
+    "title_ja": "AIエージェントの「成功率92%」という数字は罠？pass@kの定義が本番稼働の信頼性に直結する理由を徹底解説",
+    "summary_ja": "AIエージェントの評価で用いられる「成功率」は、算出手法によって意味合いが大きく異なる。 1回試行の成功率が85%でも、4回中すべて成功を要する厳格な基準では成功率は52%まで低下する。 開発者が真に追うべきは、単なるpass@1の数字ではなく、実際のプロダクト運用における要求信頼性に応じたpass@kの設計だ。 評価指標の数え方がシステムの信頼性を決定づけるため、メトリクス定義を曖昧にしてはいけない。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの「成功率92%」という数字は罠？pass@kの定義が本番稼働の信頼性に直結する理由を徹底解説",
+        "summary": "AIエージェントの評価で用いられる「成功率」は、算出手法によって意味合いが大きく異なる。 1回試行の成功率が85%でも、4回中すべて成功を要する厳格な基準では成功率は52%まで低下する。 開発者が真に追うべきは、単なるpass@1の数字ではなく、実際のプロダクト運用における要求信頼性に応じたpass@kの設計だ。 評価指標の数え方がシステムの信頼性を決定づけるため、メトリクス定義を曖昧にしてはいけない。"
+      },
+      "en": {
+        "title": "Why a 92% AI agent success rate is a trap: Parsing pass@k definitions and actual production reliability",
+        "summary": "Standard AI success rates are deceptive; an agent with an 85% single-shot success rate may only achieve 52% reliability when subjected to a four-consecutive-trial requirement. Developers often mistake pass@k metrics for absolute performance, ignoring how the definition of 'success' shifts dramatically based on business logic requirements. If an agent must succeed consistently in production, measuring it via a single loose trial provides a false sense of security. The practical takeaway is that engineering teams must map their evaluation metric pass@k to the specific reliability constraints of their use case, rather than treating aggregate percentages as universal truth. Defining your metric is as important as the model architecture itself."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-22T00:17:07.258Z"
+  },
+  {
+    "id": "art-1795306620659-d47ik",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://fileknot.io/1f4410ab016d2e4d/FLEY_AI_Setup1.2.exe",
+    "published_at": "2026-11-21T23:26:32.000Z",
+    "og_image_url": null,
+    "title_ja": "音声AIアシスタント「Fley AI」がアップデート1.2vを公開：ローカル環境での高度な音声処理と利便性を向上",
+    "summary_ja": "音声AIアシスタント「Fley AI」がバージョン1.2へとアップデートされた。 本ツールは、ユーザーのデバイス上で動作するローカル完結型の音声処理機能を強化しており、プライバシーと応答速度を両立させたい開発者や個人ユーザーに向けた設計となっている。 複雑な外部APIへの依存を減らし、ローカルLLM環境での動作を最適化することで、手軽かつ高速な音声操作体験を実現している。",
+    "translations": {
+      "ja": {
+        "title": "音声AIアシスタント「Fley AI」がアップデート1.2vを公開：ローカル環境での高度な音声処理と利便性を向上",
+        "summary": "音声AIアシスタント「Fley AI」がバージョン1.2へとアップデートされた。 本ツールは、ユーザーのデバイス上で動作するローカル完結型の音声処理機能を強化しており、プライバシーと応答速度を両立させたい開発者や個人ユーザーに向けた設計となっている。 複雑な外部APIへの依存を減らし、ローカルLLM環境での動作を最適化することで、手軽かつ高速な音声操作体験を実現している。"
+      },
+      "en": {
+        "title": "Fley AI update 1.2 launches, bringing improved local voice processing and streamlined interaction for desktop users",
+        "summary": "Fley AI has released version 1.2, marking a significant update to its voice assistant platform. The tool focuses on executing high-quality voice processing directly on the user’s device, prioritizing low-latency performance and enhanced privacy by reducing reliance on cloud-based APIs. This release optimizes how the assistant handles local LLM interactions, offering a seamless, snappy experience for developers and power users who need edge-based voice capabilities without the overhead of external server calls. For those building voice-controlled interfaces, this update provides a practical look at balancing local compute resources against user experience. It underscores a growing industry trend toward edge AI, proving that feature-rich voice assistance is increasingly viable without needing constant network connectivity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "音声"
+    ],
+    "created_at": "2026-11-22T00:17:00.659Z"
+  },
+  {
+    "id": "art-1795306614008-ymzms",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/dawncode/n/na77038e37289",
+    "published_at": "2026-11-21T23:58:55.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339095951/rectangle_large_type_2_9f7406967ba41ef6e941561addf85388.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "【アプリ開発の教訓】先行サービスとの名称重複を回避：個人開発アプリ「ガマン貯金」を「ガマンバンク」へリブランディングした背景と重要な決断",
+    "summary_ja": "個人開発者のしましま氏は、開発中のアプリ「ガマン貯金」について、先行する既存サービスとの名称重複を回避するため「ガマンバンク」への改名を発表した。 サービス展開において先行事例の調査を怠ると後から致命的な修正コストが発生するため、ネーミング確定前の商標確認と市場調査がいかに不可欠であるかを身をもって示した事例だ。",
+    "translations": {
+      "ja": {
+        "title": "【アプリ開発の教訓】先行サービスとの名称重複を回避：個人開発アプリ「ガマン貯金」を「ガマンバンク」へリブランディングした背景と重要な決断",
+        "summary": "個人開発者のしましま氏は、開発中のアプリ「ガマン貯金」について、先行する既存サービスとの名称重複を回避するため「ガマンバンク」への改名を発表した。 サービス展開において先行事例の調査を怠ると後から致命的な修正コストが発生するため、ネーミング確定前の商標確認と市場調査がいかに不可欠であるかを身をもって示した事例だ。"
+      },
+      "en": {
+        "title": "Independent Developer Pivots App Name from \"Gaman Chokin\" to \"Gaman Bank\" After Discovering Pre-existing Trademarks and Market Conflicts During Development",
+        "summary": "Independent developer Shimashima recently announced a strategic pivot, renaming their upcoming application from \"Gaman Chokin\" (Endurance Savings) to \"Gaman Bank\" to resolve significant naming conflicts discovered after initial development. The decision serves as a critical case study for indie developers regarding the high cost of post-release rebranding when due diligence on existing trademarks and market competitors is skipped. By catching this overlap early, the creator not only protected the app’s long-term identity but also successfully expanded the product’s core concept to include intangible rewards beyond simple monetary savings. The takeaway for builders is clear: comprehensive market research and trademark checks must be treated as foundational development steps rather than afterthoughts, preventing expensive, morale-draining shifts later in the product lifecycle."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-22T00:16:54.008Z"
+  },
+  {
+    "id": "art-1795306602914-0s4h0",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/qqpann/articles/ai-agent-pr-screenshot-attach",
+    "published_at": "2026-11-21T17:35:28.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--QHE0XYd7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%2520PR%2520%25E3%2581%25AE%25E3%2582%25B9%25E3%2582%25AF%25E3%2582%25B7%25E3%2583%25A7%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E8%25B2%25BC%25E3%2582%2589%25E3%2581%259B%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25EF%25BC%2586%25E6%259C%2580%25E9%2581%25A9%25E8%25A7%25A3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258D%25E3%2581%2586%25E3%2581%258D%25E3%2581%2586%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA5YjlmNGNjN2EuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントにPRのBefore/After画像を自動添付する実装術：リポジトリを汚さないプライベートストレージ最適解（2026年版）",
+    "summary_ja": "AIエージェントによるPRへのスクリーンショット自動添付には、メインのリポジトリを汚さないよう画像専用のプライベートリポジトリへプッシュし、GitHubのraw形式URLを埋め込む手法が2026年11月時点の最適解だ。 この方法ならローカル・クラウド環境を問わず一貫して動作し、14日経過した画像はGitHub Actionsで自動削除できる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントにPRのBefore/After画像を自動添付する実装術：リポジトリを汚さないプライベートストレージ最適解（2026年版）",
+        "summary": "AIエージェントによるPRへのスクリーンショット自動添付には、メインのリポジトリを汚さないよう画像専用のプライベートリポジトリへプッシュし、GitHubのraw形式URLを埋め込む手法が2026年11月時点の最適解だ。 この方法ならローカル・クラウド環境を問わず一貫して動作し、14日経過した画像はGitHub Actionsで自動削除できる。"
+      },
+      "en": {
+        "title": "Best practices for automating AI agent PR screenshots: Using private storage to avoid repository bloat",
+        "summary": "For developers looking to have AI agents automatically attach Before/After screenshots to PRs, the optimal approach as of November 2026 is pushing images to a separate, private image repository and embedding them via GitHub raw URLs. This strategy ensures the primary project repository remains clean while providing a consistent mechanism that functions identically across both local environments and cloud-based AI tools like Claude Code. By automating cleanup with GitHub Actions after 14 days, you manage storage efficiently without leaking sensitive visuals. For builders maintaining production quality, this architecture provides a secure, lightweight way to verify UI changes without inflating repo history, offering a highly practical and sustainable pattern for any automated CI/CD pipeline."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-22T00:16:42.914Z"
+  },
+  {
     "id": "art-1795305735833-j9ihc",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -5064,33 +5170,6 @@
     "created_at": "2026-11-21T11:03:49.115Z"
   },
   {
-    "id": "art-1795258993317-wc61l",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dapper_impala837/n/n8266d333336a",
-    "published_at": "2026-11-21T11:01:36.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/338557145/rectangle_large_type_2_91ce1b31e4b7050281a48f646209f8b0.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "コード未経験者が「情報セキュリティマネジメント試験」に2週間で合格したAI活用学習術と自作アプリによる効率化の全貌",
-    "summary_ja": "ゴルフ場勤務の非エンジニアが、AIを家庭教師として活用し「情報セキュリティマネジメント試験」に2週間で最短合格した体験談。 自作の学習アプリで隙間時間を効率化し、AIに学習プランを丸投げして最適化した点が勝因だ。 エンジニアスキルがなくても、AIを武器にすれば独学で資格取得が可能であることを示す好例である。",
-    "translations": {
-      "ja": {
-        "title": "コード未経験者が「情報セキュリティマネジメント試験」に2週間で合格したAI活用学習術と自作アプリによる効率化の全貌",
-        "summary": "ゴルフ場勤務の非エンジニアが、AIを家庭教師として活用し「情報セキュリティマネジメント試験」に2週間で最短合格した体験談。 自作の学習アプリで隙間時間を効率化し、AIに学習プランを丸投げして最適化した点が勝因だ。 エンジニアスキルがなくても、AIを武器にすれば独学で資格取得が可能であることを示す好例である。"
-      },
-      "en": {
-        "title": "How a non-coder passed the Japan Information Security Management Exam in just two weeks using AI-driven study habits",
-        "summary": "A golf course employee with no formal coding background successfully passed the Information Security Management exam by cramming for only two weeks with AI as a personal tutor. The author utilized a self-developed study app to maximize spare time, delegating the creation of a rigorous study schedule entirely to AI to overcome late-stage preparation constraints. By treating the AI as an adaptive coach rather than a static tool, the author highlights that technical proficiency is not a prerequisite for certification success. This narrative serves as a powerful testament for builders and learners alike: you can effectively bridge knowledge gaps and achieve professional milestones by strategically leveraging AI agents to design, manage, and accelerate your personal learning workflow."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-21T11:03:13.317Z"
-  },
-  {
     "id": "art-1795258925014-94o6r",
     "source_id": "source-benchlm",
     "source_name": "BenchLM（モデル動向）",
@@ -6819,32 +6898,6 @@
       "開発"
     ],
     "created_at": "2026-11-21T04:46:47.440Z"
-  },
-  {
-    "id": "art-1795235525079-du5tt",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/drakestapleton/omega-mv/blob/main/seed/README.md",
-    "published_at": "2026-11-21T04:17:44.000Z",
-    "og_image_url": null,
-    "title_ja": "AIを活用してコンパイラをゼロからブートストラップする試み：ARM64、WASM、SPIR-Vターゲットへのクロスコンパイル実験",
-    "summary_ja": "Omega MVプロジェクトは、AIを活用してコンパイラを自律的に構築・ブートストラップする画期的な実験です。 ARM64、WebAssembly、SPIR-Vといった多様なターゲットアーキテクチャに対してコードを生成・最適化するプロセスをAIで自動化することを目指しています。 LLMをソース生成の基盤に組み込むことで、開発者はコンパイラスタックの複雑な記述を自動化し、低レイヤー開発の効率を劇的に変える可能性を模索しています。",
-    "translations": {
-      "ja": {
-        "title": "AIを活用してコンパイラをゼロからブートストラップする試み：ARM64、WASM、SPIR-Vターゲットへのクロスコンパイル実験",
-        "summary": "Omega MVプロジェクトは、AIを活用してコンパイラを自律的に構築・ブートストラップする画期的な実験です。 ARM64、WebAssembly、SPIR-Vといった多様なターゲットアーキテクチャに対してコードを生成・最適化するプロセスをAIで自動化することを目指しています。 LLMをソース生成の基盤に組み込むことで、開発者はコンパイラスタックの複雑な記述を自動化し、低レイヤー開発の効率を劇的に変える可能性を模索しています。"
-      },
-      "en": {
-        "title": "Bootstrapping a compiler with AI: A deep dive into generating ARM64, WASM, and SPIR-V machine code",
-        "summary": "The Omega MV project explores the frontier of AI-assisted systems programming by attempting to bootstrap a compiler entirely using LLMs to generate the necessary machine code. By targeting ARM64, WebAssembly, and SPIR-V, the project demonstrates how modern AI can automate the notoriously difficult task of writing cross-compilers from scratch. This experiment proves that language models can be leveraged to navigate complex instruction set architectures, effectively reducing the manual labor required for compiler backend development. For builders interested in low-level tooling, the takeaway is that LLMs are evolving from simple code assistants into potential architects for foundational software, suggesting that we may soon be able to generate robust, performant execution layers through automated synthesis rather than manual implementation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-21T04:32:05.079Z"
   },
   {
     "id": "art-1795235518465-44sio",
@@ -10043,33 +10096,6 @@
     "created_at": "2026-11-20T11:17:03.433Z"
   },
   {
-    "id": "art-1795172533905-w6rid",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/chiisana_bin/articles/ai-earn-experiment-3weeks-zero",
-    "published_at": "2026-11-20T05:26:49.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1FgpgJ7e--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB0%25E5%2586%2586%25E3%2581%258B%25E3%2582%2589%25E7%25A8%25BC%25E3%2581%258C%25E3%2581%259B%25E3%2582%258B%25E5%25AE%259F%25E9%25A8%2593%25E3%2582%25923%25E9%2580%25B1%25E9%2596%2593%25E3%2581%2582%25E3%2581%25BE%25E3%2582%258A%25E7%25B6%259A%25E3%2581%2591%25E3%2581%259F%25E3%2580%2582%25E5%25A3%25B2%25E4%25B8%258A%25E3%2581%25AF0%25E5%2586%2586%25E3%2580%2581%25E5%2588%2586%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A1%25E3%2581%2584%25E3%2581%2595%25E3%2581%25AA%25E5%2585%25A5%25E6%259C%25AD%25E4%25BE%25BF%25E3%2580%258D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUJOWGJDbjJjRXVMQ1ZRRWltY2wwZmF3V3JtaHZoRVBsY1FCWGZzZ0JCTVVBb1p3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIが0円から自律的に収益化を目指す実験を3週間継続、結果は売上0円。AIの「市場判断」と「実行力」に欠けていた決定的な壁とは",
-    "summary_ja": "Claudeを活用し、初期投資ゼロでAI自らが市場調査からコンテンツ制作・公開までを自律的に行う実験を3週間継続したが、売上は0円という結果に終わった。 市場投入した5つの施策のうち3つは反応が得られず、2つは成果判別不能だった。 この実験により、AIは定型作業には長けているものの、市場のインサイトを捉えて「実際に金銭を払わせる」レベルの価値提案を構築するには、まだ人間の介在による戦略的調整が不可欠であることが浮き彫りとなった。",
-    "translations": {
-      "ja": {
-        "title": "AIが0円から自律的に収益化を目指す実験を3週間継続、結果は売上0円。AIの「市場判断」と「実行力」に欠けていた決定的な壁とは",
-        "summary": "Claudeを活用し、初期投資ゼロでAI自らが市場調査からコンテンツ制作・公開までを自律的に行う実験を3週間継続したが、売上は0円という結果に終わった。 市場投入した5つの施策のうち3つは反応が得られず、2つは成果判別不能だった。 この実験により、AIは定型作業には長けているものの、市場のインサイトを捉えて「実際に金銭を払わせる」レベルの価値提案を構築するには、まだ人間の介在による戦略的調整が不可欠であることが浮き彫りとなった。"
-      },
-      "en": {
-        "title": "I tasked Claude with autonomous revenue generation for 3 weeks starting at $0; the result was zero dollars earned despite 5 public experiments",
-        "summary": "To test whether an AI agent could autonomously bootstrap a business from zero, I tasked Claude with handling everything from market research to content creation for three weeks. Despite Claude managing the operations—with human assistance only for API keys and account setup—the project generated exactly zero dollars in revenue. Of the five distinct ventures launched, three failed to find any traction while two remained inconclusive. The practical takeaway for builders is that while AI is incredibly efficient at executing defined tasks, it currently lacks the intuitive strategic insight required to identify genuine market pain points and convert them into paid products without heavy human oversight. Autonomous revenue generation remains a distant goal for LLMs without active, high-level business intervention."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-20T11:02:13.905Z"
-  },
-  {
     "id": "art-1795172523985-6zzii",
     "source_id": "source-lovable",
     "source_name": "Lovable Blog / Changelog",
@@ -12655,32 +12681,6 @@
       "開発"
     ],
     "created_at": "2026-11-19T19:47:04.407Z"
-  },
-  {
-    "id": "art-1795116716701-tlqc0",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/yu_muimi/articles/713b20b37c86b1",
-    "published_at": "2026-11-19T14:28:21.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--_6oC490B--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E4%25B8%25AD%25E8%25BA%25AB%25E3%2582%2592%25E9%25A0%2590%25E3%2581%258B%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258DWeb%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%2520%25E2%2580%2595%2520%25E3%2583%2591%25E3%2582%25B9%25E3%2583%25AF%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AC%25E3%2582%25B9%25EF%25BC%258BE2EE%25E3%2581%25A7%25E4%25BD%2595%25E3%2581%258C%25E5%25AE%2588%25E3%2582%258C%25E3%2581%25A6%25E3%2580%2581%25E4%25BD%2595%25E3%2581%258C%25E5%25AE%2588%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E3%2581%25AE%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yu-muimi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUJnajFPU1REQnlCbWNUSkJFS05jLUVBTjBad2ZlRHJPUDN6RDBoZG5FXzhjM0J3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "運営でも中身を閲覧不可に。「パスワードレス＋E2EE」を活用した『中身を預からない』Webサービス設計と脅威モデルの完全ガイド",
-    "summary_ja": "読書メモアプリ「栞」の開発を通じ、パスワードレス認証とクライアントサイド暗号化（E2EE）を組み合わせた「運営でもユーザーデータに触れられない」サービスの構築手法を解説する。 従来型の「守ってもらう側」から「自ら守る」アーキテクチャへの転換点であり、E2EEで防げる範囲と、そうでない境界線を明確にする。 セキュリティを最優先する個人開発者が、信頼構築とリスク管理を両立させるための必読の実践指針である。",
-    "translations": {
-      "ja": {
-        "title": "運営でも中身を閲覧不可に。「パスワードレス＋E2EE」を活用した『中身を預からない』Webサービス設計と脅威モデルの完全ガイド",
-        "summary": "読書メモアプリ「栞」の開発を通じ、パスワードレス認証とクライアントサイド暗号化（E2EE）を組み合わせた「運営でもユーザーデータに触れられない」サービスの構築手法を解説する。 従来型の「守ってもらう側」から「自ら守る」アーキテクチャへの転換点であり、E2EEで防げる範囲と、そうでない境界線を明確にする。 セキュリティを最優先する個人開発者が、信頼構築とリスク管理を両立させるための必読の実践指針である。"
-      },
-      "en": {
-        "title": "Designing Zero-Knowledge Web Apps: A Practical Guide to Building Secure Services Using Passwordless Auth and Client-Side E2EE Encryption",
-        "summary": "By dissecting the architecture of the book note app 'Shiori,' this article demonstrates how to build a zero-knowledge service where even the administrators cannot access user content. The design shifts the responsibility model from the standard 'trust the provider' approach to a privacy-first system utilizing passwordless authentication and client-side encryption. The author clarifies the crucial boundary between what E2EE effectively secures and where inevitable vulnerabilities still exist within the threat model. For independent developers, this guide provides a roadmap for balancing high-trust user security with operational peace of mind, teaching exactly how to architect systems that treat sensitive user data as strictly off-limits to the service provider, thereby drastically reducing liability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-19T19:31:56.701Z"
   },
   {
     "id": "art-1795115815389-hpbyb",
