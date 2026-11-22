@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795363351808-w2u2i",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ikesita/articles/zenn-08-tiny-voca",
+    "published_at": "2026-11-22T06:40:51.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--tnqg-xXh--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:tiny-voca%25E5%2585%25A5%25E9%2596%2580%2520%25E2%2580%2595%252018MB%25E3%2581%25AE%25E8%258B%25B1%25E8%25AA%259ETTS%25E3%2582%2592CPU%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%2599%25E3%2580%258270%25E5%2580%258D%25E9%2580%259F%25E3%2581%25AE%25E7%259C%258B%25E6%259D%25BF%25E3%2582%2592%25E5%25AE%259F%25E6%25B8%25AC%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:moa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTHgzelYzTzA4V2MtZGxHS0o1allRemtXTmdDYkF5R2ZocUU2TmZkeGtEZU5XdjhRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "わずか18MBの英語TTS「tiny-voca」入門：4.5MパラメータでCPU駆動、70倍速の看板性能を実測検証",
+    "summary_ja": "tiny-vocaは、4.5Mパラメータという超軽量サイズ（18MB）を実現したオープンソースの英語音声合成（TTS）モデルだ。 CPU環境でも軽快に動作し、軽量かつ高速な推論が可能なため、リソース制約の厳しいエッジデバイスや組み込み環境での音声実装に最適である。 70倍速という驚異的な推論速度の謳い文句を実際の検証環境でテストし、低フットプリントな生成AIの可能性を紐解く。",
+    "translations": {
+      "ja": {
+        "title": "わずか18MBの英語TTS「tiny-voca」入門：4.5MパラメータでCPU駆動、70倍速の看板性能を実測検証",
+        "summary": "tiny-vocaは、4.5Mパラメータという超軽量サイズ（18MB）を実現したオープンソースの英語音声合成（TTS）モデルだ。 CPU環境でも軽快に動作し、軽量かつ高速な推論が可能なため、リソース制約の厳しいエッジデバイスや組み込み環境での音声実装に最適である。 70倍速という驚異的な推論速度の謳い文句を実際の検証環境でテストし、低フットプリントな生成AIの可能性を紐解く。"
+      },
+      "en": {
+        "title": "Intro to tiny-voca: A 18MB English TTS model that runs on CPU with impressive 70× faster-than-realtime claims",
+        "summary": "Tiny-voca is a remarkably compact, open-source English Text-to-Speech model weighing in at just 18MB with only 4.5 million parameters. Designed specifically for efficiency, it runs smoothly on standard CPU environments, making it a viable candidate for edge computing or resource-constrained embedded systems where standard high-latency APIs or massive GPU-heavy models are impractical. This review puts the developer's 70× faster-than-realtime speed claims to the test, evaluating actual performance metrics in a real-world scenario. For developers shipping lightweight AI features, tiny-voca demonstrates that low-footprint generative models can provide surprisingly fast, high-quality speech synthesis without the overhead of massive GPU clusters or significant latency bottlenecks typically associated with cloud-based inference services."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "音声",
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-22T16:02:31.808Z"
+  },
+  {
+    "id": "art-1795363342762-kwleq",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/limo2026/articles/5553739a20d41b",
+    "published_at": "2026-11-22T09:30:13.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Z07K9a56--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25AD%2597%25E5%25B9%2595%25E3%2581%25AB%25E9%259C%25A7%25E3%2582%2592%25E3%2581%258B%25E3%2581%2591%25E3%2582%258B%25E8%25AA%259E%25E5%25AD%25A6%25E3%2583%2597%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%25EF%25BC%259A%25E7%259B%25AE%25E9%259A%25A0%25E3%2581%2597%25E3%2583%25BB%25E5%25AD%2597%25E5%25B9%2595%25E8%25A3%259C%25E6%25AD%25A3%25E3%2583%25BB%25E7%25B7%25B4%25E7%25BF%2592%25E5%2595%258F%25E9%25A1%258C%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Limo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjROTmNxU1JTcEV2Q3hrME5zOEhEQ2tBc0dRUUNoQ21rSDFkOXBST1JNeS1aWWNpQ3k9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発の語学学習動画プレイヤー「Earu」：字幕を霧で隠すギミックと音声同期・練習問題生成の実装設計",
+    "summary_ja": "語学学習用デスクトップアプリ「Earu」は、動画の字幕を「霧」で隠すことでリスニングを強制する学習ツールだ。 開発者は、字幕の視覚的マスキング、音声トラックに基づいた字幕の自動同期ズレ補正、AIを活用した練習問題の自動生成と採点ロジックの設計思想を解説する。 完璧な汎用性を目指すのではなく、特定の学習体験（リスニング集中）に特化して機能を削ぎ落とすことが、個人開発においてユーザーの継続率を高める鍵となった。",
+    "translations": {
+      "ja": {
+        "title": "個人開発の語学学習動画プレイヤー「Earu」：字幕を霧で隠すギミックと音声同期・練習問題生成の実装設計",
+        "summary": "語学学習用デスクトップアプリ「Earu」は、動画の字幕を「霧」で隠すことでリスニングを強制する学習ツールだ。 開発者は、字幕の視覚的マスキング、音声トラックに基づいた字幕の自動同期ズレ補正、AIを活用した練習問題の自動生成と採点ロジックの設計思想を解説する。 完璧な汎用性を目指すのではなく、特定の学習体験（リスニング集中）に特化して機能を削ぎ落とすことが、個人開発においてユーザーの継続率を高める鍵となった。"
+      },
+      "en": {
+        "title": "Building 'Earu': A Desktop Language Learning Player Featuring Subtitle Fogging, Sync Correction, and AI Practice Generation",
+        "summary": "The developer behind Earu, a desktop video player designed for second-language learners, details the engineering decisions behind its core features: subtitle masking, audio-based sync correction, and AI-driven practice generation. The app forces focused listening by literally fogging out subtitles, requiring precise implementation logic for masking and timing. Rather than pursuing a bloated, generic feature set, the creator prioritized a specific pedagogical experience, ruthlessly cutting non-essential functions to refine the core loop. For solo builders, this case study serves as a practical blueprint for balancing specialized AI utilities with intuitive UX design, proving that constrained, opinionated product design often drives higher engagement than attempting to solve every possible problem for every user profile."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-22T16:02:22.762Z"
+  },
+  {
+    "id": "art-1795363330242-aon1j",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/V0val0x/DroidPath/blob/main/docs/benchmarks.md",
+    "published_at": "2026-11-22T15:19:19.000Z",
+    "og_image_url": null,
+    "title_ja": "Android自動化の常識を覆す「DroidPath」、ADB回避でUIツリー取得を0.32ミリ秒まで高速化するRust/Kotlin実装",
+    "summary_ja": "DroidPathは、AndroidのADB（Android Debug Bridge）経由の通信が持つ遅延を排除し、UIツリー取得をわずか0.32ミリ秒で実現する次世代の自動化ライブラリです。 RustとKotlinを用いてネイティブ層で処理を完結させることで、AIエージェントによる画面解析やタップ操作のオーバーヘッドを劇的に削減します。 また、経路探索アルゴリズム「A*」を統合しており、アプリ内の複雑な操作フローを効率的に自動化可能です。",
+    "translations": {
+      "ja": {
+        "title": "Android自動化の常識を覆す「DroidPath」、ADB回避でUIツリー取得を0.32ミリ秒まで高速化するRust/Kotlin実装",
+        "summary": "DroidPathは、AndroidのADB（Android Debug Bridge）経由の通信が持つ遅延を排除し、UIツリー取得をわずか0.32ミリ秒で実現する次世代の自動化ライブラリです。 RustとKotlinを用いてネイティブ層で処理を完結させることで、AIエージェントによる画面解析やタップ操作のオーバーヘッドを劇的に削減します。 また、経路探索アルゴリズム「A*」を統合しており、アプリ内の複雑な操作フローを効率的に自動化可能です。"
+      },
+      "en": {
+        "title": "DroidPath bypasses ADB with 0.32ms UI tree retrieval using Rust and Kotlin for faster AI agents",
+        "summary": "DroidPath introduces a high-performance alternative to standard Android automation by bypassing the inherent latency of ADB-based communication, achieving sub-millisecond UI tree retrieval in just 0.32ms. By leveraging a specialized Rust and Kotlin implementation, the framework processes interactions at the native layer, drastically slashing the overhead typically associated with AI agent screen analysis and touch input. Furthermore, it integrates the A* pathfinding algorithm to optimize complex interaction flows within apps. For builders developing autonomous agents for Android, DroidPath removes the traditional bottleneck of heavy bridge communication. This shift toward native-level processing is essential for developers looking to push the boundaries of real-time responsiveness in mobile AI agents, effectively transforming how autonomous tools navigate intricate mobile UI structures."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-22T16:02:10.242Z"
+  },
+  {
+    "id": "art-1795363322893-l6ude",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/gorila_pochette/n/n88ae33d6c5fa",
+    "published_at": "2026-11-22T15:33:24.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336485751/rectangle_large_type_2_b11de4d038a51bbbbb16b9be30e4e634.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI活用時代のボトルネックは生成から「検収」へ移行——開発・業務効率化でPMが直面する承認プロセスの新たな課題と対策",
+    "summary_ja": "AIによる生成速度が飛躍的に向上した結果、仕事のボトルネックは生成側から「人間による検収・承認側」へと完全に移行している。 AIのアウトプットを精査する検収プロセスを曖昧にすると、全体的な業務効率や品質担保が損なわれるリスクがある。 プロジェクトマネージャーや開発者は、AIにタスクを委任する前の権限設計と、受け取り後の検収フローをセットで構築することが、AI活用を真の生産性向上につなげるための鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AI活用時代のボトルネックは生成から「検収」へ移行——開発・業務効率化でPMが直面する承認プロセスの新たな課題と対策",
+        "summary": "AIによる生成速度が飛躍的に向上した結果、仕事のボトルネックは生成側から「人間による検収・承認側」へと完全に移行している。 AIのアウトプットを精査する検収プロセスを曖昧にすると、全体的な業務効率や品質担保が損なわれるリスクがある。 プロジェクトマネージャーや開発者は、AIにタスクを委任する前の権限設計と、受け取り後の検収フローをセットで構築することが、AI活用を真の生産性向上につなげるための鍵となる。"
+      },
+      "en": {
+        "title": "The bottleneck of AI-driven work has shifted from generation to acceptance: Why PMs must rethink approval workflows",
+        "summary": "As AI generation speeds skyrocket, the primary bottleneck in digital workflows has shifted from creation to the human acceptance phase. When AI produces deliverables faster than ever, the oversight process becomes the new operational ceiling; failing to structure the 'acceptance' layer risks drowning teams in unverified output or bottlenecking downstream delivery. For product managers and developers, the lesson is that delegating to AI is incomplete without designing specific approval workflows and validation criteria for the results. Simply speeding up generation is insufficient if human verification remains ad-hoc and slow. To truly scale efficiency, builders must treat the verification layer with the same rigor as the automated generation logic, ensuring that quality gates keep pace with the influx of AI-generated work."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-22T16:02:02.893Z"
+  },
+  {
     "id": "art-1795362517085-qyu9f",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -4977,32 +5082,6 @@
     "created_at": "2026-11-22T03:17:51.899Z"
   },
   {
-    "id": "art-1795317465334-5xkad",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kurage_aiwork/n/nb7d082267458",
-    "published_at": "2026-11-22T03:14:34.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/e0028eae1117f06f26a1ce861cb454e9e10fead6.png",
-    "title_ja": "AI個人開発の「手戻り」を防ぐ鉄則：実装指示前に「期待する完了状態」を1行で定義せよ",
-    "summary_ja": "コードが読めないAI個人開発者にとって、AIの「完了しました」という返答と実際の成果物の乖離は大きな悩みだ。 これを解決する唯一の近道は、具体的な実装指示を出す前に「何をもって完了とするか」という状態定義をたった1行だけ明確に書き出すことである。 期待する挙動やUIの状態を事前に言語化してAIに渡すことで、曖昧な修正の繰り返しや、手戻りによる開発工数の浪費を劇的に減らすことができる。",
-    "translations": {
-      "ja": {
-        "title": "AI個人開発の「手戻り」を防ぐ鉄則：実装指示前に「期待する完了状態」を1行で定義せよ",
-        "summary": "コードが読めないAI個人開発者にとって、AIの「完了しました」という返答と実際の成果物の乖離は大きな悩みだ。 これを解決する唯一の近道は、具体的な実装指示を出す前に「何をもって完了とするか」という状態定義をたった1行だけ明確に書き出すことである。 期待する挙動やUIの状態を事前に言語化してAIに渡すことで、曖昧な修正の繰り返しや、手戻りによる開発工数の浪費を劇的に減らすことができる。"
-      },
-      "en": {
-        "title": "Stop wasting time on AI rework: The one-line strategy to define success before you ask for code",
-        "summary": "For solo developers relying on AI to write code, the gap between an AI claiming a task is finished and the actual output is a major productivity killer. To minimize frustrating rework, you must define the 'finished state' in a single, precise sentence before issuing any implementation instructions. By explicitly articulating the expected UI behavior or system outcome beforehand, you bridge the communication gap that leads to ambiguous results. This front-loading technique eliminates the guesswork, prevents endless correction loops, and forces both you and the AI to align on concrete success criteria rather than abstract goals. For non-technical founders or solo hackers, this simple habit turns AI from an unpredictable generator into a reliable execution partner."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-22T03:17:45.334Z"
-  },
-  {
     "id": "art-1795315643474-byjvf",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -6790,33 +6869,6 @@
       "研究"
     ],
     "created_at": "2026-11-21T19:16:44.244Z"
-  },
-  {
-    "id": "art-1795287742088-tihlw",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382",
-    "published_at": "2026-11-21T18:56:35.000Z",
-    "og_image_url": "https://image.theregister.com/5311400.jpg?imageId=5311400&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683",
-    "title_ja": "中国系攻撃者がAIエージェントを活用しゼロデイ脆弱性を自律発見・悪用、大学サーバーを乗っ取った事例が判明",
-    "summary_ja": "中国を拠点とする攻撃グループが、AIエージェントを用いて未知の脆弱性（ゼロデイ）を自律的に探索・悪用し、大学のサーバーを乗っ取った事例が確認された。 これは人間がコードを精査するよりも遥かに高速な攻撃サイクルをAIが実現し、脆弱性の発見から悪用までの時間を劇的に短縮したことを示唆する。 開発者は、従来の静的解析や手動の監査だけでは防ぎきれない、AI駆動の高度な標的型攻撃が現実のものとなっている現状を強く認識する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "中国系攻撃者がAIエージェントを活用しゼロデイ脆弱性を自律発見・悪用、大学サーバーを乗っ取った事例が判明",
-        "summary": "中国を拠点とする攻撃グループが、AIエージェントを用いて未知の脆弱性（ゼロデイ）を自律的に探索・悪用し、大学のサーバーを乗っ取った事例が確認された。 これは人間がコードを精査するよりも遥かに高速な攻撃サイクルをAIが実現し、脆弱性の発見から悪用までの時間を劇的に短縮したことを示唆する。 開発者は、従来の静的解析や手動の監査だけでは防ぎきれない、AI駆動の高度な標的型攻撃が現実のものとなっている現状を強く認識する必要がある。"
-      },
-      "en": {
-        "title": "China-linked attackers deployed AI agents to autonomously discover and exploit a 0-day against university servers",
-        "summary": "Researchers have identified a sophisticated campaign where China-based attackers utilized autonomous AI agents to scan for, identify, and weaponize a previously unknown zero-day vulnerability, successfully compromising university infrastructure. This incident marks a dangerous escalation in cyber warfare, as AI capabilities significantly compress the timeline between vulnerability discovery and weaponized exploitation, moving far faster than human researchers could possibly respond. For software engineers and security teams, this confirms that defensive postures relying solely on traditional static analysis or periodic manual audits are now insufficient. The barrier to entry for complex exploits has lowered, and builders must prepare for a new threat landscape where malicious AI operates at machine speed, necessitating automated, continuous defensive verification to mitigate these rapidly evolving risks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-21T19:02:22.088Z"
   },
   {
     "id": "art-1795287724050-x5cur",
@@ -9455,32 +9507,6 @@
     "created_at": "2026-11-20T23:47:02.761Z"
   },
   {
-    "id": "art-1795217534389-y9zsq",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/zivaengine/articles/3ef376d444e9a7",
-    "published_at": "2026-11-20T22:58:41.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xe4p1CX6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Godot%25E3%2581%25AETileMapLayer%25E3%2581%25AB%25E3%2582%25B3%25E3%2583%25AA%25E3%2582%25B8%25E3%2583%25A7%25E3%2583%25B3%25E3%2582%2592%25E8%25BF%25BD%25E5%258A%25A0%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%25E3%2581%25A8%25E3%2580%2581%25E3%2581%259D%25E3%2582%258C%25E3%2582%25922%25E5%2588%2586%25E3%2581%25A7%25E3%2581%2593%25E3%2581%25AA%25E3%2581%2597%25E3%2581%259FAI%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ziva%2520Engine%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2M0MmY3NWM3MWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Godot 4「TileMapLayer」へのコリジョン追加手順と、AI活用による作業効率化の事例紹介",
-    "summary_ja": "Godot 4のTileMapLayerにおける物理レイヤー設定およびコリジョン追加の手順を詳細に解説する。 TileSet側での物理レイヤー定義と、タイルごとのコリジョンポリゴン設定が必須となるが、これらの反復作業をAI活用によりわずか2分で完了させる手法を提示している。 ゲーム開発における面倒なリソース構築を自動化し、本質的なロジック実装に集中するための効率的なワークフローとして参考にできる。",
-    "translations": {
-      "ja": {
-        "title": "Godot 4「TileMapLayer」へのコリジョン追加手順と、AI活用による作業効率化の事例紹介",
-        "summary": "Godot 4のTileMapLayerにおける物理レイヤー設定およびコリジョン追加の手順を詳細に解説する。 TileSet側での物理レイヤー定義と、タイルごとのコリジョンポリゴン設定が必須となるが、これらの反復作業をAI活用によりわずか2分で完了させる手法を提示している。 ゲーム開発における面倒なリソース構築を自動化し、本質的なロジック実装に集中するための効率的なワークフローとして参考にできる。"
-      },
-      "en": {
-        "title": "How to add collision to Godot 4 TileMapLayer and use AI tools to finish the setup in 2 minutes",
-        "summary": "This guide breaks down the essential steps for configuring physical layers and collision polygons within Godot 4's TileMapLayer system, which is a common stumbling block for 2D game developers. It highlights that unless physical layers are explicitly defined in the TileSet and collision polygons assigned to specific tiles, characters will simply walk through walls. The author shares a practical technique for using AI to streamline these repetitive, tedious tasks, effectively reducing a setup time that usually takes much longer down to just two minutes. By automating the mechanical aspects of scene and resource building, developers can bypass manual configuration chores and redirect their focus toward the core mechanics and gameplay logic of their projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-20T23:32:14.389Z"
-  },
-  {
     "id": "art-1795216609862-atbja",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -10999,33 +11025,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-20T13:02:49.322Z"
-  },
-  {
-    "id": "art-1795179733051-oxw39",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/bisque/articles/home-server-cloudflare-tunnel-access",
-    "published_at": "2026-11-20T07:14:41.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cyiMF3H4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%2587%25AA%25E5%25AE%2585%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E4%25B8%258A%25E3%2581%25AE%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2582%2592%2520Cloudflare%2520Tunnel%2520%252B%2520Access%2520%25E3%2581%25A7%25E5%25AE%2589%25E5%2585%25A8%25E3%2581%25AB%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:bisque%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzlhM2EzMTI3NzAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "自宅サーバーの運用コストを最小化：Cloudflare TunnelとAccessで外部公開を安全かつ簡単に実現する構築術",
-    "summary_ja": "自宅サーバー運用において最大の課題となる外部公開を、Cloudflare TunnelとAccessを活用して安全かつ効率的に構築する方法を解説する。 グローバルIPの固定や複雑なポート開放なしに、ID認識プロキシを挟むことでセキュリティを担保しつつアプリを公開可能だ。 クラウド費用を抑えたい個人開発者にとって、ミニPCを活用したセルフホスティングは開発効率とコスト削減を両立させる現実的な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "自宅サーバーの運用コストを最小化：Cloudflare TunnelとAccessで外部公開を安全かつ簡単に実現する構築術",
-        "summary": "自宅サーバー運用において最大の課題となる外部公開を、Cloudflare TunnelとAccessを活用して安全かつ効率的に構築する方法を解説する。 グローバルIPの固定や複雑なポート開放なしに、ID認識プロキシを挟むことでセキュリティを担保しつつアプリを公開可能だ。 クラウド費用を抑えたい個人開発者にとって、ミニPCを活用したセルフホスティングは開発効率とコスト削減を両立させる現実的な選択肢となる。"
-      },
-      "en": {
-        "title": "Optimizing Home Server Operations: Leveraging Cloudflare Tunnel and Access for Secure, Cost-Effective Application Deployment",
-        "summary": "Managing a home server for personal projects often hits a wall when it comes to safe external access. This guide details how to bypass the risks of manual port forwarding by implementing Cloudflare Tunnel and Access, which provides secure, ID-aware proxying without requiring static global IPs. By offloading the heavy lifting of security and routing to Cloudflare, developers can run full-stack environments—including background jobs, databases, and queues—on inexpensive mini PCs. For builders looking to minimize cloud infrastructure overhead, this architecture proves that you can maintain robust security and professional availability while hosting everything locally. It effectively turns a home-based setup into a production-ready environment that keeps costs at zero while maintaining strict access controls."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-20T13:02:13.051Z"
   },
   {
     "id": "art-1795179721579-ln7z2",
