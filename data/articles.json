@@ -1,5 +1,113 @@
 [
   {
+    "id": "art-1795360638096-12tt6",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/koenokakaku/articles/e40d22ccf0d601",
+    "published_at": "2026-11-22T10:57:23.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ELN6RmDk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2581%258CWAF%25E3%2581%25AE%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E3%2581%2599%25E3%2582%258A%25E6%258A%259C%25E3%2581%2591%25E3%2582%258B%25E4%25B8%2596%25E7%2595%258C%25E4%25B8%25AD%25E3%2581%258B%25E3%2582%2589%25E5%2588%2586%25E6%2595%25A3%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25BB%25E3%2582%25B9%25E3%2581%25AB%25E3%2582%2588%25E3%2581%25A3%25E3%2581%25A6%25E3%2583%2580%25E3%2582%25A6%25E3%2583%25B3%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%25E3%2580%2590AWS%2520WAF%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25A3%25B0%25E3%2581%25AE%25E4%25BE%25A1%25E6%25A0%25BC%2540%25E9%259F%25B3%25E5%25A3%25B0%25E4%25BD%259C%25E5%2593%2581%25E3%2581%25AE%25E8%25B2%25B7%25E3%2581%2584%25E6%2599%2582%25E3%2581%25AB%25E9%2580%259A%25E7%259F%25A5%25E3%2581%2599%25E3%2582%258B%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSTY1akU0Wk1KOHlCZEhLMFFfaGt6Nm8zTGk1c0p6SFNZMUV0SFk4Ul9nVW11dEpDMD1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発サービスがAWS WAFを突破されダウンした事例と対策：分散型クローラー攻撃をどう防ぐか",
+    "summary_ja": "個人開発サイト「声の価格」が、世界中から分散してアクセスするクローラー攻撃を受け、AWS WAFのレートベース制限をすり抜けられサービス停止に追い込まれた。 原因はIPを分散させた自動アクセスにより、各IPごとの閾値を回避されたことにある。 開発者はWAFのレート制限に頼り切るのではなく、アクセス元の地域制限や異常な振る舞いを検知するカスタムルールの適用、さらにはCloudFront等を用いた防御層の強化が必須であると教訓を得ている。",
+    "translations": {
+      "ja": {
+        "title": "個人開発サービスがAWS WAFを突破されダウンした事例と対策：分散型クローラー攻撃をどう防ぐか",
+        "summary": "個人開発サイト「声の価格」が、世界中から分散してアクセスするクローラー攻撃を受け、AWS WAFのレートベース制限をすり抜けられサービス停止に追い込まれた。 原因はIPを分散させた自動アクセスにより、各IPごとの閾値を回避されたことにある。 開発者はWAFのレート制限に頼り切るのではなく、アクセス元の地域制限や異常な振る舞いを検知するカスタムルールの適用、さらにはCloudFront等を用いた防御層の強化が必須であると教訓を得ている。"
+      },
+      "en": {
+        "title": "How a distributed crawler attack bypassed AWS WAF to take down a personal development site",
+        "summary": "A solo developer behind the site 'Koe no Kakaku' recently suffered an outage when a sophisticated, distributed crawler attack successfully bypassed their AWS WAF rate-based rules. By spreading requests across countless global IPs, the bot traffic evaded thresholds designed to block single-source abusers, effectively overwhelming the server infrastructure. This incident highlights a critical vulnerability: relying solely on standard IP-based rate limiting is insufficient against modern distributed scraping. Developers should implement broader geography-based restrictions, deploy custom rules to flag anomalous behavior, and utilize edge-protection layers like CloudFront to block malicious spikes before they reach the backend. Building resilient personal projects requires designing defensive layers that anticipate sophisticated evasion tactics rather than assuming off-the-shelf WAF settings will provide full immunity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-22T15:17:18.096Z"
+  },
+  {
+    "id": "art-1795360630055-bmz4s",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/andytan9801/items/8835daa3c305fa11cd9c",
+    "published_at": "2026-11-22T14:53:40.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS1BpS21ZSVRMRFI4aWdqbTNDRHhNZ2MwdE1XSjREMmtRN2xlekxOZ19EdUtORjZ3JTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTA3YThmMTQwYzgyN2M3MTBhODUwMTA2M2E5YzcyOTI0%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D312168fd04f2962ab0b58e4e8324c128?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9S2VlcCUyMHRoZSUyMEZpdCUyQyUyMENoYW5nZSUyMHRoZSUyMEZyYW1lJTNBJTIwQSUyMExpZ2h0d2VpZ2h0JTIwQnJvd3NlciUyMFdvcmtmbG93JTIwZm9yJTIwRXlld2VhciUyMENvbG9yd2F5cyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTg4YWRiYmQ0NGYzNGU1OWE1YjY4NjVhNWE4MGVlZDNi&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhbmR5dGFuOTgwMSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTA2OWMzYTEzZGVlZjQ2NzM0NTM5YjQxMWNkYjBmOThl&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a5f745a350180e78ae5d4b250a70ef96",
+    "title_ja": "眼鏡ECのDX術：モデルの表情を維持しつつフレームの色だけを高速差し替えするブラウザベースの軽量ワークフロー",
+    "summary_ja": "眼鏡ECでは着用モデル写真の撮り直しコストが課題だが、ブラウザ上で既存写真のフィット感（表情や構図）を固定し、フレーム色だけを差し替える手法が注目されている。 高度な画像生成AIをフル活用せず、マスク処理とカラーグレーディングを組み合わせることで、低コストかつ高速にカラーバリエーションを展開できる。 個人開発者や中小規模のEC運営において、AIによる全生成よりも実用的な「適材適所の画像編集」が、運用コストを劇的に下げる鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "眼鏡ECのDX術：モデルの表情を維持しつつフレームの色だけを高速差し替えするブラウザベースの軽量ワークフロー",
+        "summary": "眼鏡ECでは着用モデル写真の撮り直しコストが課題だが、ブラウザ上で既存写真のフィット感（表情や構図）を固定し、フレーム色だけを差し替える手法が注目されている。 高度な画像生成AIをフル活用せず、マスク処理とカラーグレーディングを組み合わせることで、低コストかつ高速にカラーバリエーションを展開できる。 個人開発者や中小規模のEC運営において、AIによる全生成よりも実用的な「適材適所の画像編集」が、運用コストを劇的に下げる鍵となる。"
+      },
+      "en": {
+        "title": "Building a lightweight browser workflow to swap eyewear frame colors while preserving model expressions",
+        "summary": "Eyewear e-commerce often struggles with the high cost of re-shooting models for every colorway, but developers can bypass this by isolating the frames in existing high-quality photos. Instead of relying on heavy generative AI that can hallucinate, this workflow uses browser-based masking and precise color grading to swap frame hues while locking in the model's original fit, lighting, and expression. By strategically applying targeted edits rather than full-scale image synthesis, small teams can rapidly prototype product variations without expensive studio time. The practical lesson for developers is that simple, programmatic compositing techniques often outperform generative models for specific, high-precision retail tasks where product fidelity is non-negotiable and consistency is key to conversion."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "画像生成"
+    ],
+    "created_at": "2026-11-22T15:17:10.055Z"
+  },
+  {
+    "id": "art-1795360623647-ebj8h",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/note_oreki/n/n5fc1d8f8a0d2",
+    "published_at": "2026-11-22T14:55:31.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339430133/rectangle_large_type_2_cb00d22d8dfc6b7acf1b133ea38e8549.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Metaの生成AI「Muse」を個人開発で活用する。チャット型AIとは異なる「マスク型推論」の特性と実用的な機能群を徹底解説",
+    "summary_ja": "Metaが開発した生成AI「Muse」は、一般的なLLMのようなチャット形式ではなく、マスク型生成モデルを採用しており、画像の編集や高精細な生成において独特の強みを持つ。 特に画像生成やゲーム制作の補助ツールとして活用することで、従来のAIでは難しかった部分修正や高速なレンダリングが可能になる。 個人開発者が制作効率を飛躍的に高めるための、Muse特有の機能と具体的な活用シーンをまとめた。",
+    "translations": {
+      "ja": {
+        "title": "Metaの生成AI「Muse」を個人開発で活用する。チャット型AIとは異なる「マスク型推論」の特性と実用的な機能群を徹底解説",
+        "summary": "Metaが開発した生成AI「Muse」は、一般的なLLMのようなチャット形式ではなく、マスク型生成モデルを採用しており、画像の編集や高精細な生成において独特の強みを持つ。 特に画像生成やゲーム制作の補助ツールとして活用することで、従来のAIでは難しかった部分修正や高速なレンダリングが可能になる。 個人開発者が制作効率を飛躍的に高めるための、Muse特有の機能と具体的な活用シーンをまとめた。"
+      },
+      "en": {
+        "title": "Meta’s generative AI Muse for solo developers: Why mask-based inference beats standard chat models for high-fidelity creative workflows",
+        "summary": "Meta’s generative AI, Muse, operates differently from standard chat-based LLMs by utilizing a mask-based generation model that offers unique advantages in precision image editing and high-definition synthesis. For solo developers building games or creative assets, this approach excels where typical text-to-image models struggle: granular partial modification and rapid, parallelized rendering. By leveraging Muse, creators can bypass the limitations of traditional prompt-based workflows to achieve significantly tighter control over visual output. This analysis breaks down Muse’s specific architecture and practical functions, illustrating how independent builders can integrate these capabilities into their development pipelines to increase speed and aesthetic quality far beyond what standard, general-purpose chatbot tools currently deliver."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "画像生成",
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-22T15:17:03.647Z"
+  },
+  {
+    "id": "art-1795360616578-wwd56",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://medium.com/@csdn/two-days-at-the-top-soduwork-hits-no-1-1f32a3f89d85",
+    "published_at": "2026-11-22T15:14:42.000Z",
+    "og_image_url": null,
+    "title_ja": "Soduworkがリリース2日でランキング1位を獲得——個人開発プロダクトが爆発的トラフィックを生むためのマーケティング手法",
+    "summary_ja": "Soduworkが公開からわずか2日でプロダクトランキング1位を獲得した事例は、個人開発者がいかにして短期間で爆発的なユーザー流入を実現したかを物語っている。 この成功は、製品の有用性だけでなく、適切なコミュニティへの露出とタイミングの最適化が合致した結果である。 開発者は、単にツールを作るだけでなく、初期ユーザーを惹きつけ、SNSやプラットフォーム上で議論を巻き起こすための戦略的なマーケティングアプローチが不可欠であることを再認識すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "Soduworkがリリース2日でランキング1位を獲得——個人開発プロダクトが爆発的トラフィックを生むためのマーケティング手法",
+        "summary": "Soduworkが公開からわずか2日でプロダクトランキング1位を獲得した事例は、個人開発者がいかにして短期間で爆発的なユーザー流入を実現したかを物語っている。 この成功は、製品の有用性だけでなく、適切なコミュニティへの露出とタイミングの最適化が合致した結果である。 開発者は、単にツールを作るだけでなく、初期ユーザーを惹きつけ、SNSやプラットフォーム上で議論を巻き起こすための戦略的なマーケティングアプローチが不可欠であることを再認識すべきだ。"
+      },
+      "en": {
+        "title": "How Soduwork hit the number one spot in two days: Marketing tactics for independent product launches",
+        "summary": "The story of how Soduwork achieved the number one ranking on launch platforms within just two days offers a compelling playbook for independent developers aiming to drive explosive initial traffic. This rapid ascent highlights that success hinges on more than just code; it requires aligning utility with strategic exposure and precise timing within relevant online communities. The case demonstrates that capturing early momentum involves actively engineering discussion on social platforms and product hubs rather than simply shipping and hoping for organic discovery. For solo builders, the critical takeaway is that deliberate marketing outreach—engaging where your target audience congregates—is just as vital as the technical build when aiming to break through the noise of crowded tech launches."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-22T15:16:56.578Z"
+  },
+  {
     "id": "art-1795359765934-7n7j2",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -4765,32 +4873,6 @@
     "created_at": "2026-11-22T03:02:40.595Z"
   },
   {
-    "id": "art-1795316553788-wy7fp",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/right_crab9040/n/n0e66f349ee30",
-    "published_at": "2026-11-22T02:58:24.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339166306/rectangle_large_type_2_ff870c28ddd7b0898c35931b4729b17f.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIツール活用による個人開発の現在地：ブラウザで遊べるパズルゲームを生成AIとゼロから構築・公開した舞台裏",
-    "summary_ja": "AI活用情報を発信する開発者が、自ら生成AIを活用してブラウザ対応のパズルゲームを開発し、その体験版を公開した。 企画から実装までAIとの対話を繰り返すことで、非エンジニアや個人でも複雑なゲームロジックの構築が可能であることを実証している。 単なるツール紹介を超えて、実際に手を動かしてアウトプットを出すプロセスこそが、AI時代における個人開発のリアルな成功体験の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AIツール活用による個人開発の現在地：ブラウザで遊べるパズルゲームを生成AIとゼロから構築・公開した舞台裏",
-        "summary": "AI活用情報を発信する開発者が、自ら生成AIを活用してブラウザ対応のパズルゲームを開発し、その体験版を公開した。 企画から実装までAIとの対話を繰り返すことで、非エンジニアや個人でも複雑なゲームロジックの構築が可能であることを実証している。 単なるツール紹介を超えて、実際に手を動かしてアウトプットを出すプロセスこそが、AI時代における個人開発のリアルな成功体験の鍵となる。"
-      },
-      "en": {
-        "title": "Building a browser puzzle game with AI: A developer's journey from prompt to playable demo",
-        "summary": "An AI-focused developer pushed past passive tool curation to actively build and publish a playable browser puzzle game alongside generative AI agents. By iterating through complex game logic and design implementation solely through AI collaboration, the project demonstrates how modern AI assistants have lowered the barrier to entry for solo developers to create functional interactive software from scratch. This project serves as a compelling proof-of-concept that shifting from consuming AI content to using AI for execution is the defining differentiator for builders today. For others in the community, the key takeaway is that the process of co-creating—rather than just observing—is essential to mastering the current wave of development tools and finding real product success."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-22T03:02:33.788Z"
-  },
-  {
     "id": "art-1795315643474-byjvf",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -6685,32 +6767,6 @@
     "created_at": "2026-11-21T18:47:12.519Z"
   },
   {
-    "id": "art-1795285938647-egtvl",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.ycombinator.com/item?id=50591728",
-    "published_at": "2026-11-21T17:49:38.000Z",
-    "og_image_url": null,
-    "title_ja": "AIの普及で開発職を離れ、ブルーカラーへ転身した人はいるか？—Hacker Newsで議論されるソフトウェアエンジニアのキャリア選択と現実",
-    "summary_ja": "Hacker Newsにて、AIの影響を懸念してソフトウェアエンジニアの職を辞し、配管工などの肉体労働へ転身した開発者の体験談を募るスレッドが立てられた。 AIがコード生成の自動化を加速させる中、エンジニアとしての将来性に疑問を感じ、物理的なスキルを求める層が増えている可能性がある。 キャリアの安定をAI依存の知的生産から切り離すべきか、あるいはAIを武器に生き残るべきか、開発者コミュニティの間で問いが投げかけられている。",
-    "translations": {
-      "ja": {
-        "title": "AIの普及で開発職を離れ、ブルーカラーへ転身した人はいるか？—Hacker Newsで議論されるソフトウェアエンジニアのキャリア選択と現実",
-        "summary": "Hacker Newsにて、AIの影響を懸念してソフトウェアエンジニアの職を辞し、配管工などの肉体労働へ転身した開発者の体験談を募るスレッドが立てられた。 AIがコード生成の自動化を加速させる中、エンジニアとしての将来性に疑問を感じ、物理的なスキルを求める層が増えている可能性がある。 キャリアの安定をAI依存の知的生産から切り離すべきか、あるいはAIを武器に生き残るべきか、開発者コミュニティの間で問いが投げかけられている。"
-      },
-      "en": {
-        "title": "Ask HN: Have software engineers quit the industry for manual trades like plumbing due to AI anxiety?",
-        "summary": "A provocative thread on Hacker News is soliciting stories from developers who have abandoned software engineering roles, specifically switching to manual labor trades like plumbing, directly citing AI anxiety as the primary catalyst. As AI tools increasingly commoditize code generation and threaten traditional entry-level developer workflows, some engineers are questioning the long-term viability of their careers compared to tangible, physical skill sets. The discussion highlights a growing tension among builders who feel the digital landscape is becoming precarious and are considering an exit to industries shielded from automated intelligence. This debate forces a critical choice for current builders: double down on leveraging AI to outpace peers, or seek refuge in sectors where human-exclusive physical presence remains non-negotiable and recession-proof."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-21T18:32:18.647Z"
-  },
-  {
     "id": "art-1795285911986-iw5x3",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -7834,32 +7890,6 @@
       "開発"
     ],
     "created_at": "2026-11-21T12:47:49.184Z"
-  },
-  {
-    "id": "art-1795265212046-8jm8r",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Ray_T/items/1eaa0892c3ed5d89300b",
-    "published_at": "2026-11-21T12:41:11.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZkYmY1YTdiZWQwYjMyYTUyZGRmZTU3Njk4MzhmZWQ5Yz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NDMzOTZmYTBiZDFhZGYwZDg0ZTQxZjUwODQ5ZDkyNzI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6543c93a0e8f82559b68c7833a8dbbfb?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU3JUFDJUFDMTklRTUlOUIlOUUlRTMlODAlOTElRTMlODIlQkMlRTMlODMlQUQlRTMlODElOEIlRTMlODIlODklRTclOUIlQUUlRTYlOEMlODclRTMlODElOTklMjElMjBDQ0RWLUYlRTUlOTAlODglRTYlQTAlQkMlRTMlODElQjglRTMlODElQUUlRTklODElOTMlRUYlQkMlOUFDbGF1ZGUlRTMlODElQTclRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglRTMlODIlOTIlRTQlQkQlOUMlRTMlODIlOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0zM2Q1MTJkNWE2ZDUyNWQ1ODA2MThkZTllYmNkNTUwYg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBSYXlfVCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWE2NmJiNmI1MDI2ZTQ3NjY5NjAwNmFkZWMzZjZiMzg5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4154ff74ff3bb7148c240e99ad7befce",
-    "title_ja": "Anthropic公式認定試験「CCDV-F」攻略連載第19回：Claudeを使用したAIエージェント開発の実践手法を徹底解説",
-    "summary_ja": "Anthropicの公式資格「Claude Certified Developer – Foundations (CCDV-F)」取得を目指す非公式連載の第19回。 本稿では、Claudeを活用したAIエージェント開発の実装プロセスに焦点を当てる。 モデルのコンテキスト管理やプロンプト設計、ツール実行環境の構築といった、試験で問われる技術要件を具体的なコード例と共に網羅した。",
-    "translations": {
-      "ja": {
-        "title": "Anthropic公式認定試験「CCDV-F」攻略連載第19回：Claudeを使用したAIエージェント開発の実践手法を徹底解説",
-        "summary": "Anthropicの公式資格「Claude Certified Developer – Foundations (CCDV-F)」取得を目指す非公式連載の第19回。 本稿では、Claudeを活用したAIエージェント開発の実装プロセスに焦点を当てる。 モデルのコンテキスト管理やプロンプト設計、ツール実行環境の構築といった、試験で問われる技術要件を具体的なコード例と共に網羅した。"
-      },
-      "en": {
-        "title": "Claude Certified Developer Foundations (CCDV-F) Exam Prep Part 19: Mastering AI Agent Architecture Using Claude Models",
-        "summary": "This is the 19th entry in an unofficial study series designed to help developers pass the official Anthropic Claude Certified Developer – Foundations (CCDV-F) exam. This installment provides a deep dive into building AI agents, a core competency for certification. It covers essential architectural patterns, including effective context management, advanced prompt engineering, and the execution flow for tool-calling capabilities. Passing the CCDV-F requires more than just theoretical knowledge of Claude; candidates must understand how to construct autonomous agent loops and handle stateful interactions reliably. By walking through these implementation details, developers can better prepare for the practical, scenario-based questions found on the exam, ensuring they are ready to architect robust agentic workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-21T12:46:52.046Z"
   },
   {
     "id": "art-1795264334486-c4n6t",
@@ -11050,32 +11080,6 @@
       "開発"
     ],
     "created_at": "2026-11-20T12:46:58.066Z"
-  },
-  {
-    "id": "art-1795178795849-77idb",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/mateohq/articles/8645784cddb3b3",
-    "published_at": "2026-11-20T08:13:06.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--sUc8cSA1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E5%2590%2591%25E3%2581%2591AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE3%25E3%2581%25A4%25E3%2581%25AE%25E5%25AE%259F%25E8%25A1%258C%25E6%2596%25B9%25E5%25BC%258F%25E3%2582%2592%25E6%25AF%2594%25E8%25BC%2583%25E3%2581%2597%25E3%2581%25A6%25E3%2580%258C%25E7%2594%25BB%25E9%259D%25A2%25E3%2582%2592%25E5%25A5%25AA%25E3%2582%258F%25E3%2581%25AA%25E3%2581%2584%25E7%25AB%25AF%25E6%259C%25AB%25E5%2586%2585%25E3%2583%2590%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B0%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2589%25E5%25AE%259F%25E8%25A1%258C%25E3%2580%258D%25E3%2582%2592%25E9%2581%25B8%25E3%2582%2593%25E3%2581%25A0%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Mateo%2520Team%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3FHa042Z1B4Nk50eVBfV0I5M3lLbVhzd0xab3N5UkQ5cExkc2RrVEMzd0JnNmZ3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人AIエージェント「Mateo」開発：3つの実行方式を検証し「端末内バックグラウンド実行」へ至った設計判断の全貌",
-    "summary_ja": "個人AIエージェント「Mateo」の開発を通じ、外部コネクタ型・ブラウザ操作型・端末内バックグラウンド型の3つの実行方式を比較検証した。 公式API頼みの外部連携では自動化できない日常タスクが多く、UXを阻害しないためには、画面を奪わずバックグラウンドで完結する設計が不可欠である。 特定のアプリやサービスに依存しない汎用的なタスク完了には、OSレベルでの介入やローカル制御が鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "個人AIエージェント「Mateo」開発：3つの実行方式を検証し「端末内バックグラウンド実行」へ至った設計判断の全貌",
-        "summary": "個人AIエージェント「Mateo」の開発を通じ、外部コネクタ型・ブラウザ操作型・端末内バックグラウンド型の3つの実行方式を比較検証した。 公式API頼みの外部連携では自動化できない日常タスクが多く、UXを阻害しないためには、画面を奪わずバックグラウンドで完結する設計が不可欠である。 特定のアプリやサービスに依存しない汎用的なタスク完了には、OSレベルでの介入やローカル制御が鍵となる。"
-      },
-      "en": {
-        "title": "Building personal AI agent 'Mateo': Why we chose local background execution over external connector architectures",
-        "summary": "While building the personal AI agent 'Mateo,' we rigorously tested three execution architectures: external connector APIs, browser automation, and local background execution. We found that relying solely on official API connectors leaves nearly 90% of complex daily tasks unhandled, such as subscription cancellations or nuanced service requests. Browser automation, while powerful, often compromises user experience by hijacking the screen. Our conclusion is that to truly automate these tasks, builders must favor local, background-native execution that operates silently without interrupting the user. This design choice enables broader coverage beyond limited third-party integrations, allowing the agent to function seamlessly across various services while maintaining complete control over the interaction loop for the end user."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-20T12:46:35.849Z"
   },
   {
     "id": "art-1795177934015-w5f2d",
