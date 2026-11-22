@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795342629677-s3cnf",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://maxmart.github.io/posts/three-way-translation-merge/",
+    "published_at": "2026-11-22T07:32:56.000Z",
+    "og_image_url": null,
+    "title_ja": "GitHubリポジトリの多言語ドキュメントをLLMで維持：3ウェイ・マージ技術を用いた翻訳同期の自動化手法を解説",
+    "summary_ja": "GitHub上の多言語ドキュメント管理において、元言語の更新を翻訳版へ効率的に反映させる「3ウェイ・マージ」のアプローチが注目されている。 これは翻訳テキストを単なる文字列としてではなく、Gitの差分管理と同様に、元言語、旧翻訳版、新元言語の3点をLLMで比較・マージする手法だ。 大規模なドキュメント修正でも再翻訳コストを抑えつつ一貫性を保てるため、グローバル展開する開発チームにとって、ドキュメントの鮮度維持を自動化する強力な武器となる。",
+    "translations": {
+      "ja": {
+        "title": "GitHubリポジトリの多言語ドキュメントをLLMで維持：3ウェイ・マージ技術を用いた翻訳同期の自動化手法を解説",
+        "summary": "GitHub上の多言語ドキュメント管理において、元言語の更新を翻訳版へ効率的に反映させる「3ウェイ・マージ」のアプローチが注目されている。 これは翻訳テキストを単なる文字列としてではなく、Gitの差分管理と同様に、元言語、旧翻訳版、新元言語の3点をLLMで比較・マージする手法だ。 大規模なドキュメント修正でも再翻訳コストを抑えつつ一貫性を保てるため、グローバル展開する開発チームにとって、ドキュメントの鮮度維持を自動化する強力な武器となる。"
+      },
+      "en": {
+        "title": "Automating multilingual docs: implementing three-way merge for LLM-powered translation synchronization in GitHub repositories",
+        "summary": "Managing multilingual documentation often leads to sync issues, but a new approach uses three-way merging to keep translated pages consistent with source updates. Instead of fully re-translating content, this system treats translations like code by leveraging LLMs to perform a three-way diff between the original source, the previous translation, and the new source text. By applying git-style merge logic to natural language, developers can isolate changes and integrate them into existing translations without overwriting manual tweaks or incurring full re-translation costs. This workflow significantly reduces maintenance overhead for global-facing documentation, providing a robust, scalable way for teams to ensure their non-English content stays accurate and up-to-date as the primary codebase evolves."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-22T10:17:09.677Z"
+  },
+  {
+    "id": "art-1795342623327-iuyjh",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/ai_fukuro/n/n6694ef863cbc",
+    "published_at": "2026-11-22T09:59:31.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338874690/rectangle_large_type_2_3257904a5a58c0b49d8fa95004cff973.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeでスクショ整理ツールのしきい値を最適化、21分の分析で「2段階の選別」が最安という結論を導き出した",
+    "summary_ja": "自作のスクショ整理ツールにおいて、類似画像を判定するしきい値が0.85に固定されていた問題に対し、Claude Codeを活用して検証を実施した。 21分50秒かけて26点分の異なるしきい値による損失リスクを比較分析させた結果、単一のしきい値で完結させるのではなく、2本の境界線を引いて中間領域を手動確認する運用が最もコスト効率に優れるという結論に達した。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeでスクショ整理ツールのしきい値を最適化、21分の分析で「2段階の選別」が最安という結論を導き出した",
+        "summary": "自作のスクショ整理ツールにおいて、類似画像を判定するしきい値が0.85に固定されていた問題に対し、Claude Codeを活用して検証を実施した。 21分50秒かけて26点分の異なるしきい値による損失リスクを比較分析させた結果、単一のしきい値で完結させるのではなく、2本の境界線を引いて中間領域を手動確認する運用が最もコスト効率に優れるという結論に達した。"
+      },
+      "en": {
+        "title": "Optimizing screenshot sorting thresholds with Claude Code: Analyzing 26 variations in 21 minutes to cut costs",
+        "summary": "A developer struggled with a hard-coded 0.85 similarity threshold in a custom screenshot management tool, relying on gut feeling rather than data. By tasking Claude Code with analyzing 26 different threshold points over a 21-minute session, the AI mapped out the specific loss risks for each boundary. The surprising conclusion was that a single threshold was inefficient; instead, applying two distinct lines and manually reviewing the uncertain \"gray area\" between them minimized errors most cost-effectively. This workflow demonstrates how builders can move beyond guessing optimal parameters by treating LLMs as analytical partners, allowing them to mathematically balance the trade-off between manual intervention costs and algorithmic classification precision for their internal productivity tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-22T10:17:03.327Z"
+  },
+  {
+    "id": "art-1795342616461-tbvg5",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/ysgeso/items/1e2bd193073ab89794e8",
+    "published_at": "2026-11-22T10:10:04.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUFjSFR0YzhyejhWYmNtbzBzbjdtdlVSTWQ3Wm1LNEw0Y0FDaUF4WVVsUlZuai13JTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWM5N2Y1YzcxZjUwNTZmNWM4MWE5NTYwMjcxZTIzZWFk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D58e7f3454366800b34d7b3b2f4d28537?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UHl0aG9uJUUzJTgxJUE3JUUzJTgwJTg3JUMzJTk3JUUzJTgyJUIyJUUzJTgzJUJDJUUzJTgzJUEwJUUzJTgxJUFFQUklRTMlODIlOTIlRTQlQjglODAlRTMlODElOEIlRTMlODIlODklRTQlQkQlOUMlRTYlODglOTAlRTMlODElOTklRTMlODIlOEIlRTMlODAlODAlRTMlODElOUQlRTMlODElQUUyNTUlRTMlODAlODAlQ0UlQjUtZ3JlZWR5JTIwJUU2JUIzJTk1JUUzJTgxJUFFJUUzJTgwJThDJUU1JTg4JUE0JUU1JUFFJTlBJUU3JUIyJUJFJUU1JUJBJUE2JUUzJTgxJUFFJUU2JThFJUE4JUU3JUE3JUJCJUUzJTgwJThEJUUzJTgxJUE4JUUzJTgwJThDJUU2JTlDJTgwJUU5JTgxJUE5JUUzJTgxJUFBJTIwJUNFJUI1JTIwJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9OGJkNTdlMmQ1MjQzYzQxY2M2ZTQyOGExNDY4OGZmMjE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5c2dlc28mdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yMTE1ZjUxNzdmOWExMjc3M2FlOTMyMGUxMDg3NDU4Ng&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=e47586f6d63972955f2076f7ef615f8d",
+    "title_ja": "Pythonでゼロから作る〇×ゲームAI：第255回・ε-greedy法の「探索・活用」バランスと最適パラメータの判定精度を徹底検証",
+    "summary_ja": "Pythonを用いた〇×ゲームAI開発の第255回連載では、強化学習におけるε-greedy法の核心である「探索と活用のバランス」を深掘りする。 特に、学習過程での判定精度の推移を追跡し、最適なε値がどのように勝率や学習収束に影響を与えるかを詳細に分析した。 AIエージェントの最適化を目指す開発者にとって、探索率をどのようにスケジューリングすべきか、また判定精度が飽和するまでのパラメータ調整をどう自動化・理論化すべきかの知見となる。",
+    "translations": {
+      "ja": {
+        "title": "Pythonでゼロから作る〇×ゲームAI：第255回・ε-greedy法の「探索・活用」バランスと最適パラメータの判定精度を徹底検証",
+        "summary": "Pythonを用いた〇×ゲームAI開発の第255回連載では、強化学習におけるε-greedy法の核心である「探索と活用のバランス」を深掘りする。 特に、学習過程での判定精度の推移を追跡し、最適なε値がどのように勝率や学習収束に影響を与えるかを詳細に分析した。 AIエージェントの最適化を目指す開発者にとって、探索率をどのようにスケジューリングすべきか、また判定精度が飽和するまでのパラメータ調整をどう自動化・理論化すべきかの知見となる。"
+      },
+      "en": {
+        "title": "Building a Tic-Tac-Toe AI from Scratch in Python: Part 255 - Analyzing Epsilon-Greedy Accuracy and Optimal Parameter Tuning",
+        "summary": "In this 255th installment of the Python-based Tic-Tac-Toe AI development series, the focus shifts to the critical balance between exploration and exploitation within the epsilon-greedy method. By meticulously tracking the transition of decision accuracy during the training phase, the analysis reveals how specific epsilon values influence win rates and the speed of convergence. For builders designing intelligent agents, understanding these fluctuations is vital for tuning reinforcement learning models effectively. The article provides actionable insights into how to schedule exploration rates and automate parameter adjustments, ensuring the agent reaches optimal decision-making capabilities rather than stalling. It serves as a practical guide for engineers looking to master the nuances of policy iteration and agent stability in competitive zero-sum environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-22T10:16:56.461Z"
+  },
+  {
+    "id": "art-1795342607999-ai8j6",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sugitakenji/articles/a5a18551387392",
+    "published_at": "2026-11-22T07:50:34.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Yi_ly2-k--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Qt%2520Creator%25E3%2581%25A7AI%25E3%2581%25AB%25E3%2583%2593%25E3%2583%25AB%25E3%2583%2589%25E3%2582%2592%25E9%25A0%25BC%25E3%2582%2580%25EF%25BC%259AACP%25E3%2581%25A8MCP%25E3%2582%2592%25E5%25AE%259F%25E8%25A1%258C%25E8%25A8%2598%25E9%258C%25B2%25E3%2581%258B%25E3%2582%2589%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%259D%2589%25E7%2594%25B0%25E7%25A0%2594%25E6%25B2%25BB%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzk4MDc4MWRkYTIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Qt CreatorでAIビルドを検証：ACPとMCPの実践的役割と「本当にビルドしているか」を確認するトレース手法",
+    "summary_ja": "Qt Creator環境においてAIエージェントがビルドを代行する際、ACP（AI Command Protocol）とMCP（Model Context Protocol）がどのように機能し、実際にコードをコンパイルしているかを確認する方法を解説。 AIの回答と実際のビルド記録を照合する簡単な検証手順を紹介する。 AIの提案を鵜呑みにせず、エージェントが実行しているコマンドとビルドの成否を紐付けて理解することで、開発効率を確実に高めるための実践的アプローチを提示する。",
+    "translations": {
+      "ja": {
+        "title": "Qt CreatorでAIビルドを検証：ACPとMCPの実践的役割と「本当にビルドしているか」を確認するトレース手法",
+        "summary": "Qt Creator環境においてAIエージェントがビルドを代行する際、ACP（AI Command Protocol）とMCP（Model Context Protocol）がどのように機能し、実際にコードをコンパイルしているかを確認する方法を解説。 AIの回答と実際のビルド記録を照合する簡単な検証手順を紹介する。 AIの提案を鵜呑みにせず、エージェントが実行しているコマンドとビルドの成否を紐付けて理解することで、開発効率を確実に高めるための実践的アプローチを提示する。"
+      },
+      "en": {
+        "title": "Verifying AI-Assisted Builds in Qt Creator: Understanding ACP and MCP Roles to Ensure Agents Actually Execute Compilations",
+        "summary": "This guide examines how AI agents operate within Qt Creator by utilizing ACP (AI Command Protocol) and MCP (Model Context Protocol) to trigger builds. It details a specific verification method—injecting a minor, known error into a function name—to confirm whether the AI is truly interacting with your active project's build logs or simply hallucinating feedback. By cross-referencing chatbot responses with actual build history, developers can validate agent performance and build reliability. The article emphasizes that trusting AI suggestions without verifying the underlying execution flow is a risk; builders should always audit the terminal output and command execution logs to ensure that AI-driven development is actually performing the tasks it claims to complete."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-22T10:16:47.999Z"
+  },
+  {
     "id": "art-1795341745603-tw96d",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -4132,32 +4236,6 @@
     "created_at": "2026-11-21T23:47:04.431Z"
   },
   {
-    "id": "art-1795303920174-ov8qj",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/07egta/n/n18626766c7c7",
-    "published_at": "2026-11-21T23:28:52.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339085705/rectangle_large_type_2_18087e23edbf451351185c3030906f58.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIコードの「証明」を過信するな。1,217個のテストを実行したら25個が失敗した個人開発アプリの厳しい現実",
-    "summary_ja": "あるAIニュースが話題だが、筆者は自身のAI生成アプリで現実を直視した。 GitHub上のCI環境では全通過していたはずの1,217個のテストをローカルLinux環境で再実行したところ、25個が失敗したのだ。 9万行のコードをAIに依存する個人開発者は、AIが書いたテストコードと実行環境の差異という罠に注意が必要だ。 AIにすべてを委ねるのではなく、自らテストを実行・検証する「疑う力」こそが、AI時代にプロダクトを維持する唯一の生存戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "AIコードの「証明」を過信するな。1,217個のテストを実行したら25個が失敗した個人開発アプリの厳しい現実",
-        "summary": "あるAIニュースが話題だが、筆者は自身のAI生成アプリで現実を直視した。 GitHub上のCI環境では全通過していたはずの1,217個のテストをローカルLinux環境で再実行したところ、25個が失敗したのだ。 9万行のコードをAIに依存する個人開発者は、AIが書いたテストコードと実行環境の差異という罠に注意が必要だ。 AIにすべてを委ねるのではなく、自らテストを実行・検証する「疑う力」こそが、AI時代にプロダクトを維持する唯一の生存戦略となる。"
-      },
-      "en": {
-        "title": "Why trusting AI-written code is dangerous: Running 1,217 local tests revealed 25 failures despite passing on GitHub",
-        "summary": "While AI-generated proofs make headlines, the reality for builders relying on AI for production code is far messier. The author, managing 90,000 lines of AI-generated code for an app, discovered that 1,217 tests which passed on GitHub's CI environment failed when executed on a local Linux machine, with 25 errors popping up. This highlights a critical, often ignored trap for solo developers: assuming that passing CI status equals functional parity. For those shipping agent-assisted software, the takeaway is clear: automated code is only as reliable as the validation layer surrounding it. Never blindly trust the platform status; you must maintain local verification rigor to catch environment-specific bugs that AI-integrated workflows frequently mask at scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-21T23:32:00.174Z"
-  },
-  {
     "id": "art-1795303911469-ioug3",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -6703,33 +6781,6 @@
     "created_at": "2026-11-21T13:47:12.264Z"
   },
   {
-    "id": "art-1795268811065-ovwzq",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/",
-    "published_at": "2026-11-21T13:29:07.000Z",
-    "og_image_url": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2021/12/20/networked-system-computer.jpg",
-    "title_ja": "AWSが報告：中国系攻撃者が展開した自律AIエージェント「Cairn」、実環境でのゼロデイ脆弱性発見を自動化していたことが判明",
-    "summary_ja": "AWSのセキュリティ報告によると、中国系攻撃グループが関与するAIエージェント群「Cairn」が、標的システムに対してゼロデイ脆弱性を自律的に特定・攻撃できる能力を有していることが確認された。 従来のスクリプトによる自動攻撃と異なり、AIモデルが環境を動的に理解し、侵入経路を生成する新たな脅威である。 開発者は自律エージェントの攻撃サーフェスを再評価し、LLMベースの脆弱性スキャンに対する防御策を早急に講じる必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AWSが報告：中国系攻撃者が展開した自律AIエージェント「Cairn」、実環境でのゼロデイ脆弱性発見を自動化していたことが判明",
-        "summary": "AWSのセキュリティ報告によると、中国系攻撃グループが関与するAIエージェント群「Cairn」が、標的システムに対してゼロデイ脆弱性を自律的に特定・攻撃できる能力を有していることが確認された。 従来のスクリプトによる自動攻撃と異なり、AIモデルが環境を動的に理解し、侵入経路を生成する新たな脅威である。 開発者は自律エージェントの攻撃サーフェスを再評価し、LLMベースの脆弱性スキャンに対する防御策を早急に講じる必要がある。"
-      },
-      "en": {
-        "title": "AWS security report reveals Chinese-nexus 'Cairn' AI agents are autonomously discovering zero-day vulnerabilities in live target systems",
-        "summary": "A recent AWS security analysis reveals that an AI agent framework dubbed 'Cairn,' linked to Chinese-nexus threat actors, has achieved the capability to autonomously discover and exploit zero-day vulnerabilities in target environments. Unlike legacy automated scanners that rely on pre-written exploit scripts, these AI agents dynamically analyze the target environment and engineer attack paths in real-time. This marks a significant escalation in offensive capabilities, where LLM-driven reasoning allows attackers to bypass static defenses. For security-conscious developers and builders, this shift underscores a critical need to re-evaluate the attack surface of automated AI systems and implement robust, proactive monitoring strategies that can detect non-deterministic, model-generated reconnaissance and exploitation patterns before they fully compromise production infrastructures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-21T13:46:51.065Z"
-  },
-  {
     "id": "art-1795267941006-jzx61",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -7933,32 +7984,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-21T08:32:02.427Z"
-  },
-  {
-    "id": "art-1795249028325-c9n40",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/path-taku/items/b7e540f630cbf7ca07a6",
-    "published_at": "2026-11-21T07:49:38.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzM4ODU1JTJGODhlMGMwNjYzZDNkMzlkNzIyMTEzMmJkOWJlM2NmYzYwZWE3ZmJmNyUyRmxhcmdlLnBuZyUzRjE3OTQ3MDExNjc_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTU1ZjYyMDY0ZGMwMTZlM2QyMWRjZTVjZmI0NjFkZjVk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1aeb4162259e8edbaf1793e134ab095c?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwMjAyNiVFNSVCOSVCNDExJUU2JTlDJTg4JTIwQUklMjBOaWdodCVFMyU4MCU5MSVFNyU5OSVCQiVFNSVBMyU4NyVFMyU4MyVBQyVFMyU4MyU5RCVFMyU4MyVCQyVFMyU4MyU4OCUyMCVFMyU4MSU5RCVFMyU4MSVBRSVFRiVCQyU5MSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWVhNDllYzIxZGZmYzQ0ZWExMTAwYjI4MGEyNmMyNTIx&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwYXRoLXRha3UmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1iY2EwNTI1MjMwYzllNWEwYmY3YTMwZDk2ZjUxNzZkNA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=70fe1ee9212926155b91e018c3b7c4c7",
-    "title_ja": "Google Apps Scriptとスプレッドシートで構築する社内会議調整ツール：AI Night登壇者が解説するGUI実装の最適解",
-    "summary_ja": "「AI Night」登壇者が、Google Apps Scriptとスプレッドシートを組み合わせた社内用会議調整ツールの開発手法を公開。 GASの柔軟性とスプレッドシートの管理のしやすさを活かし、GUIを活用してユーザー体験を高める実装プロセスを詳説している。 ツール開発においては、複雑なバックエンドを構築する前に、既存のGoogleエコシステムを最大限活用するアプローチが、高速なプロトタイピングと業務効率化を両立する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Google Apps Scriptとスプレッドシートで構築する社内会議調整ツール：AI Night登壇者が解説するGUI実装の最適解",
-        "summary": "「AI Night」登壇者が、Google Apps Scriptとスプレッドシートを組み合わせた社内用会議調整ツールの開発手法を公開。 GASの柔軟性とスプレッドシートの管理のしやすさを活かし、GUIを活用してユーザー体験を高める実装プロセスを詳説している。 ツール開発においては、複雑なバックエンドを構築する前に、既存のGoogleエコシステムを最大限活用するアプローチが、高速なプロトタイピングと業務効率化を両立する鍵となる。"
-      },
-      "en": {
-        "title": "How to Build an Internal Meeting Scheduler Using Google Apps Script and Sheets: A GUI-Focused Implementation Guide",
-        "summary": "An AI Night speaker shared a practical guide on building internal meeting coordination tools by integrating Google Apps Script with Google Sheets. The session highlights how to bridge the gap between back-end script logic and front-end usability by focusing on a robust GUI implementation that simplifies the scheduling workflow for end-users. Instead of jumping straight into complex custom software development, the author argues that leveraging the Google ecosystem allows developers to maintain data easily while keeping infrastructure overhead near zero. For internal tool builders, the core takeaway is that existing office suites, combined with script-based automation, offer a surprisingly effective foundation for rapid prototyping and solving organizational bottlenecks without needing expensive specialized third-party software."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-21T08:17:08.325Z"
   },
   {
     "id": "art-1795249012796-7pz1x",
@@ -10361,32 +10386,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-20T15:32:12.900Z"
-  },
-  {
-    "id": "art-1795187842199-kvqrl",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/matsushima_a/articles/day-052-weight-space-programming-arc",
-    "published_at": "2026-11-20T14:37:43.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FHu27Dma--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%258B%25BE%25E9%2585%258D%25E9%2599%258D%25E4%25B8%258B%25E3%2581%25AA%25E3%2581%2597%25E3%2581%25A7LLM%25E3%2581%25AB%25E9%2587%258D%25E3%2581%25BF%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2582%258B%25E3%2580%258CWeight-Space%2520Programming%25E3%2580%258D%25E3%2582%2592%25E5%2585%25AC%25E5%25BC%258F%25E3%2583%258F%25E3%2583%25BC%25E3%2583%258D%25E3%2582%25B9%25E3%2581%25A7%25E5%2586%258D%25E7%258F%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:matsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkY2YwMTZjYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "勾配降下不要の「Weight-Space Programming」論文検証：LLMがモデル重みを直接生成する新アプローチ",
-    "summary_ja": "POSTECHの研究チームが発表した「Weight-Space Programming」は、勾配降下法を使わずにLLMがモデルの重みを直接「書く」という革新的な手法だ。 Claude Opus 5.5やGPT-6.1 Solなどのフロンティアモデルを用いてARCベンチマークで実証したところ、従来の手順を覆す驚異的な結果を示した。",
-    "translations": {
-      "ja": {
-        "title": "勾配降下不要の「Weight-Space Programming」論文検証：LLMがモデル重みを直接生成する新アプローチ",
-        "summary": "POSTECHの研究チームが発表した「Weight-Space Programming」は、勾配降下法を使わずにLLMがモデルの重みを直接「書く」という革新的な手法だ。 Claude Opus 5.5やGPT-6.1 Solなどのフロンティアモデルを用いてARCベンチマークで実証したところ、従来の手順を覆す驚異的な結果を示した。"
-      },
-      "en": {
-        "title": "Weight-Space Programming: New research shows LLMs can write model weights directly without using gradient descent",
-        "summary": "A new research paper from POSTECH introduces 'Weight-Space Programming,' an innovative approach where LLMs write neural network weights directly, bypassing the traditional gradient descent process entirely. By testing on frontier models like Claude Opus 5.5 and GPT-6.1 Sol against ARC benchmarks, the researchers demonstrated that LLMs can effectively optimize parameters without iterative training steps. This technique challenges the standard paradigm of machine learning, suggesting that models can generate functional, optimized weight structures autonomously. For builders, this represents a significant shift in how we might treat model adaptation—moving away from heavy training loops toward direct, context-driven architecture generation, potentially lowering compute overhead and redefining how we deploy specialized AI agents in production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-20T15:17:22.199Z"
   },
   {
     "id": "art-1795187799992-fcjl6",
