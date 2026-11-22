@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795375040847-v18ns",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://amund.blog/modded-nanogpt-sub-30s-record-attempt/",
+    "published_at": "2026-11-22T18:44:55.000Z",
+    "og_image_url": "https://amund.blog/static/79648935b6b1a9f6778b989743249a79/a4e0f/record-history.png",
+    "title_ja": "8基のH100でLLM事前学習を30秒以内に完了――「Modded-NanoGPT」による29.90秒の世界記録挑戦の技術的詳細",
+    "summary_ja": "H100 GPU 8基を搭載した環境で、LLMの事前学習を30秒以内に完了させる「Modded-NanoGPT」の世界記録挑戦プロジェクトが公開された。 この試みでは、最適化されたカーネルやデータパイプラインの調整により、29.90秒という驚異的なタイムを記録。 モデル学習の高速化において、単なるGPUの計算能力以上に、ハードウェアを飽和させないためのソフトウェア的なチューニングがいかに重要かを証明している。",
+    "translations": {
+      "ja": {
+        "title": "8基のH100でLLM事前学習を30秒以内に完了――「Modded-NanoGPT」による29.90秒の世界記録挑戦の技術的詳細",
+        "summary": "H100 GPU 8基を搭載した環境で、LLMの事前学習を30秒以内に完了させる「Modded-NanoGPT」の世界記録挑戦プロジェクトが公開された。 この試みでは、最適化されたカーネルやデータパイプラインの調整により、29.90秒という驚異的なタイムを記録。 モデル学習の高速化において、単なるGPUの計算能力以上に、ハードウェアを飽和させないためのソフトウェア的なチューニングがいかに重要かを証明している。"
+      },
+      "en": {
+        "title": "8× H100s hit sub-30s LLM pretraining: Inside the Modded-NanoGPT project’s record-breaking 29.90-second run",
+        "summary": "A new project has pushed the boundaries of LLM pretraining by achieving a sub-30-second run using a cluster of 8× H100 GPUs, clocking in at 29.90 seconds total. Known as the Modded-NanoGPT challenge, the effort relies on aggressive optimization of CUDA kernels and refined data pipeline strategies to maximize hardware throughput. The result proves that at the extreme end of performance, software-level tuning is just as critical as raw hardware FLOPs to ensure the GPUs are never starved. For engineers and researchers working on efficient training, this provides a blueprint for eliminating bottlenecks that typical training runs often ignore. The takeaway is clear: mastering hardware-software co-design is the only path to meaningful efficiency gains."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-22T19:17:20.847Z"
+  },
+  {
+    "id": "art-1795375031663-tiula",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/uzunaru/articles/f67ac6f4d8a540",
+    "published_at": "2026-11-22T09:56:02.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pA9kLu_k--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E8%25AA%25AD%25E3%2581%25BF%25E9%25A3%259B%25E3%2581%25B0%25E3%2581%2599%25E3%2581%25AE%25E3%2581%25A7%25E3%2580%2581%25E3%2580%258C%25E3%2582%25AC%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%25AB%25E3%2580%258D%25E3%2581%25AB%25E5%25A4%2589%25E3%2581%2588%25E3%2581%259F%25EF%25BC%259A%25E6%259B%25B8%25E3%2581%258D%25E8%25BE%25BC%25E3%2581%25BF%25E6%2599%2582%25E3%2581%25AB%25E6%258B%2592%25E5%2590%25A6%25E3%2581%2599%25E3%2582%258B%25E3%2583%2595%25E3%2583%2583%25E3%2582%25AF%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:uzu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkUxMUdPQ0dnbWlTUWNsdU92THNkcUhGa2M0VXRjYXk3ZFBSVk1GZDBITmNHSHVYbFI9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIのルール無視を根本解決：文章での指示から「書き込み時拒否フック」による強制検閲への切り替え手法",
+    "summary_ja": "AIにAGENTS.mdなどでルールを課しても、LLMが重要指示を読み飛ばす問題が頻発します。 この対策として、書き込み時に機械的にルール違反を検知し、保存自体を拒否する「ゲートキーパー・フック」を開発しました。 プロンプトエンジニアリングの限界を超え、スクリプトで物理的に入力をフィルタリングする3段階の検証フローを構築することで、AIの逸脱を確実に防ぐ実用的なアーキテクチャを提示します。",
+    "translations": {
+      "ja": {
+        "title": "AIのルール無視を根本解決：文章での指示から「書き込み時拒否フック」による強制検閲への切り替え手法",
+        "summary": "AIにAGENTS.mdなどでルールを課しても、LLMが重要指示を読み飛ばす問題が頻発します。 この対策として、書き込み時に機械的にルール違反を検知し、保存自体を拒否する「ゲートキーパー・フック」を開発しました。 プロンプトエンジニアリングの限界を超え、スクリプトで物理的に入力をフィルタリングする3段階の検証フローを構築することで、AIの逸脱を確実に防ぐ実用的なアーキテクチャを提示します。"
+      },
+      "en": {
+        "title": "Beyond Prompting: Enforcing AI Constraints via Mechanical Write Hooks to Prevent Rule Violations",
+        "summary": "Relying on text-based rule files like AGENTS.md for AI governance is insufficient, as LLMs frequently ignore instructions. To solve this, the author shifted from passive guidance to a proactive enforcement mechanism: a 'write-hook' that mechanically inspects and rejects invalid outputs before they are ever saved. By implementing a three-tiered verification gate, the system filters all incoming data and physically blocks any operation that violates predefined constraints. This approach effectively bypasses the inherent unreliability of natural language prompts. For builders, the key takeaway is that when reliability is paramount, you must move critical validations into your storage pipeline rather than trusting the model to self-regulate, ensuring strict guardrails regardless of the model's current attention state or performance."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-22T19:17:11.663Z"
+  },
+  {
+    "id": "art-1795375022055-ebse6",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/rossy_laboratory/n/n9d7ffd604f1c",
+    "published_at": "2026-11-22T17:02:47.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/336946539/rectangle_large_type_2_2143534993de8e15e9fe064f72a646e7.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "ChatGPTがPCを自律操作する新機能「Visual Operator」を個人開発、デスクトップ画面を認識しGUIを自動制御",
+    "summary_ja": "個人開発者の「ろし」氏が、ChatGPTをWindows PCに接続し、画面情報を解析してマウスやキーボードを自律操作させる「Visual Operator」を開発した。 これはPCのUIを視覚的に理解させ、ユーザーの指示に基づいて複雑なタスクを自動実行させる試みである。 自律エージェントの構築においては、LLMへの画面フィードバックをいかに効率的にフィードバックするかという設計が、PC操作の精度向上に直結することが示されている。",
+    "translations": {
+      "ja": {
+        "title": "ChatGPTがPCを自律操作する新機能「Visual Operator」を個人開発、デスクトップ画面を認識しGUIを自動制御",
+        "summary": "個人開発者の「ろし」氏が、ChatGPTをWindows PCに接続し、画面情報を解析してマウスやキーボードを自律操作させる「Visual Operator」を開発した。 これはPCのUIを視覚的に理解させ、ユーザーの指示に基づいて複雑なタスクを自動実行させる試みである。 自律エージェントの構築においては、LLMへの画面フィードバックをいかに効率的にフィードバックするかという設計が、PC操作の精度向上に直結することが示されている。"
+      },
+      "en": {
+        "title": "Developer builds 'Visual Operator' to enable ChatGPT to autonomously control Windows PC via screen analysis",
+        "summary": "Independent developer Roshi has created 'Visual Operator,' a custom tool that connects ChatGPT to a Windows environment, allowing the AI to interpret screen data and autonomously operate the mouse and keyboard. This project pushes beyond text-based interaction, forcing the LLM to visually understand desktop UI elements to execute complex user instructions in real-time. The development highlights a critical challenge for building autonomous agents: effectively feeding screen state back into the model to maintain precision. For developers experimenting with agentic workflows, this demonstrates that reliable UI-driven control requires optimizing how visual inputs are summarized before being sent to the model, as high-latency feedback loops remain the primary hurdle for seamless computer interaction."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-22T19:17:02.055Z"
+  },
+  {
+    "id": "art-1795375011138-6x9dc",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/devniz/znp-re",
+    "published_at": "2026-11-22T18:56:01.000Z",
+    "og_image_url": null,
+    "title_ja": "物理AIキーホルダーを自作できるプロジェクト「ZNP-RE」公開、Meta Museの体験を個人デバイスで再現する実装と回路図",
+    "summary_ja": "Metaが試作したAIペンダント「Meta Muse」に類似した体験を、個人開発のハードウェアで再現できるオープンソースプロジェクト「ZNP-RE」が公開された。 ESP32-S3マイクロコントローラを活用し、AIチャットのやり取りを物理デバイス上で完結させるための回路図とファームウェアの実装がまとめられている。",
+    "translations": {
+      "ja": {
+        "title": "物理AIキーホルダーを自作できるプロジェクト「ZNP-RE」公開、Meta Museの体験を個人デバイスで再現する実装と回路図",
+        "summary": "Metaが試作したAIペンダント「Meta Muse」に類似した体験を、個人開発のハードウェアで再現できるオープンソースプロジェクト「ZNP-RE」が公開された。 ESP32-S3マイクロコントローラを活用し、AIチャットのやり取りを物理デバイス上で完結させるための回路図とファームウェアの実装がまとめられている。"
+      },
+      "en": {
+        "title": "Open-source ZNP-RE project lets you build your own Meta Muse-style AI charm keychain with ESP32-S3 hardware",
+        "summary": "The ZNP-RE project has been released as an open-source solution for builders who want to replicate the Meta Muse AI pendant experience on their own custom hardware. By leveraging an ESP32-S3 microcontroller, the project provides the necessary schematics and firmware to create a standalone wearable capable of handling AI interactions without relying on commercial devices. This is a significant resource for developers looking to prototype physical AI products, as it demonstrates how to integrate microphone input, LLM processing pipelines, and local feedback mechanisms into a compact form factor. For anyone interested in the burgeoning niche of AI-native hardware, ZNP-RE offers a practical blueprint for building a fully functional, custom-made AI companion from scratch."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-22T19:16:51.138Z"
+  },
+  {
     "id": "art-1795374124567-gmnqm",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5214,32 +5318,6 @@
     "created_at": "2026-11-22T05:46:49.022Z"
   },
   {
-    "id": "art-1795326402469-gr0ze",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/wa_rp_studio/n/n26ca87b670cd",
-    "published_at": "2026-11-22T05:45:44.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/19703eacd4414ac92fd517b7cf45fa62dc763b00.png",
-    "title_ja": "Android向けAI英会話アプリ「TalkFlow」公開、英語が詰まっても日本語で会話継続が可能な独自のシームレス対話機能を実装",
-    "summary_ja": "Wa-rp Studioは11月17日、AI音声英会話練習アプリ「TalkFlow」のAndroid版をGoogle Playにてリリースした。 本作の最大の特徴は、英語学習中に言葉に詰まった場合でも、即座に日本語で話せばAIが文脈を維持して会話を繋げてくれる点にある。 初心者が挫折しやすい心理的ハードルを技術で解消し、継続率を高めるUX設計は、語学学習系個人開発において大きな参考となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "Android向けAI英会話アプリ「TalkFlow」公開、英語が詰まっても日本語で会話継続が可能な独自のシームレス対話機能を実装",
-        "summary": "Wa-rp Studioは11月17日、AI音声英会話練習アプリ「TalkFlow」のAndroid版をGoogle Playにてリリースした。 本作の最大の特徴は、英語学習中に言葉に詰まった場合でも、即座に日本語で話せばAIが文脈を維持して会話を繋げてくれる点にある。 初心者が挫折しやすい心理的ハードルを技術で解消し、継続率を高めるUX設計は、語学学習系個人開発において大きな参考となるだろう。"
-      },
-      "en": {
-        "title": "Wa-rp Studio Launches TalkFlow on Android, an AI-Powered English Conversation App Featuring Seamless Japanese Fallback Support to Keep Chats Flowing",
-        "summary": "Wa-rp Studio officially released TalkFlow on the Google Play Store this week, a new Android-based application designed to facilitate English conversation practice through AI. The app addresses a common friction point in language learning: instead of stopping when a user struggles with English vocabulary, TalkFlow allows learners to switch seamlessly to Japanese. The AI maintains the context of the conversation, effectively lowering the barrier to entry for beginners and reducing the frustration that often leads to churn. For independent developers building conversational AI products, this approach demonstrates how implementing smart fallback mechanics can significantly improve user retention and create a more forgiving, productive learning environment for non-native speakers."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-22T05:46:42.469Z"
-  },
-  {
     "id": "art-1795325526334-kdq3f",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -6788,33 +6866,6 @@
     "created_at": "2026-11-21T22:46:43.185Z"
   },
   {
-    "id": "art-1795300326001-hdpil",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://casrai.org/news/house-committees-cursor-chinese-open-weight-ai-models-report-2026",
-    "published_at": "2026-11-21T22:14:48.000Z",
-    "og_image_url": "https://objectstorage.us-ashburn-1.oraclecloud.com/n/ido7qwlr5kaw/b/casrai-news-images/o/house-committees-cursor-chinese-open-weight-ai-models-report-2026-7b08.jpg",
-    "title_ja": "AIエディタ「Cursor」が中国製オープンウェイトモデルの採用停止を検討か—米下院委員会による技術流出リスクへの懸念が背景に",
-    "summary_ja": "AIコーディングツール「Cursor」が、中国発のオープンウェイトAIモデルの採用を停止する可能性が浮上した。 これは、米下院委員会が中国のAI技術開発およびオープンウェイトモデルがもたらす国家安全保障上の懸念について報告書をまとめたことを受けた動きだ。 開発者や企業は、サプライチェーンリスクや地政学的懸念がAIツールの基盤モデル選定に直結する現状を認識する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AIエディタ「Cursor」が中国製オープンウェイトモデルの採用停止を検討か—米下院委員会による技術流出リスクへの懸念が背景に",
-        "summary": "AIコーディングツール「Cursor」が、中国発のオープンウェイトAIモデルの採用を停止する可能性が浮上した。 これは、米下院委員会が中国のAI技術開発およびオープンウェイトモデルがもたらす国家安全保障上の懸念について報告書をまとめたことを受けた動きだ。 開発者や企業は、サプライチェーンリスクや地政学的懸念がAIツールの基盤モデル選定に直結する現状を認識する必要がある。"
-      },
-      "en": {
-        "title": "AI editor Cursor reportedly considering dropping Chinese open-weights models following US House Committee national security concerns",
-        "summary": "Cursor is reportedly evaluating the removal of Chinese-developed open-weights AI models from its platform following a recent US House Committee report. The committee highlighted significant national security concerns regarding the proliferation of Chinese AI technology and the potential data leakage risks inherent in open-weights models developed under that jurisdiction. This situation marks a critical inflection point for builders and engineering leaders: the provenance of your AI stack is now a primary compliance consideration rather than just a performance metric. For those relying on AI-assisted development tools, this trend underscores the necessity of vetting underlying models for geopolitical risk, especially when working with proprietary codebases. Supply chain security in AI is becoming an unavoidable operational reality for professional software teams."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-21T22:32:06.001Z"
-  },
-  {
     "id": "art-1795300319664-hiwvg",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -6865,32 +6916,6 @@
       "研究"
     ],
     "created_at": "2026-11-21T22:31:51.087Z"
-  },
-  {
-    "id": "art-1795299440018-ehpd1",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://tirania.org/blog/archive/2026/Nov-20.html",
-    "published_at": "2026-11-21T22:07:49.000Z",
-    "og_image_url": null,
-    "title_ja": "OSS開発者が警鐘、SwiftTermメンテナが語るAI生成コードのプルリクエストがもたらす「負の遺産」とメンテ現場の現実",
-    "summary_ja": "SwiftTermメンテナのミゲル・デ・イカサ氏が、AI生成コードによるプルリクエストがOSS運営に与える影響について苦言を呈している。 AIは一見正しそうなコードを大量に生成するが、文脈の欠如や論理的誤りが多く、レビューコストは爆発的に増大している。 OSSメンテナはAI時代の今、コードの量ではなく「なぜその変更が必要か」という設計思想への深い理解をコントリビューターに求める必要がある。",
-    "translations": {
-      "ja": {
-        "title": "OSS開発者が警鐘、SwiftTermメンテナが語るAI生成コードのプルリクエストがもたらす「負の遺産」とメンテ現場の現実",
-        "summary": "SwiftTermメンテナのミゲル・デ・イカサ氏が、AI生成コードによるプルリクエストがOSS運営に与える影響について苦言を呈している。 AIは一見正しそうなコードを大量に生成するが、文脈の欠如や論理的誤りが多く、レビューコストは爆発的に増大している。 OSSメンテナはAI時代の今、コードの量ではなく「なぜその変更が必要か」という設計思想への深い理解をコントリビューターに求める必要がある。"
-      },
-      "en": {
-        "title": "SwiftTerm maintainer warns that AI-generated PRs are creating a hidden maintenance crisis for open source projects",
-        "summary": "SwiftTerm maintainer Miguel de Icaza shares a cautionary perspective on the rise of AI-generated pull requests, arguing they introduce a hidden crisis for open-source sustainability. While AI tools enable contributors to churn out code quickly, these submissions often lack deep context, containing plausible-looking logic that is fundamentally broken. This forces maintainers to invest significantly more time in verification than writing the code themselves. The core takeaway for builders is that we are shifting from a constraint of writing code to a constraint of verifying it. Maintaining project health now requires enforcing stricter quality standards and demanding that contributors truly understand the design rationale behind their patches, rather than simply letting an LLM generate surface-level fixes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-21T22:17:20.018Z"
   },
   {
     "id": "art-1795299431500-mbsgr",
@@ -9165,32 +9190,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-21T05:02:29.683Z"
-  },
-  {
-    "id": "art-1795236414036-n0z7z",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/boku_yaji/articles/ad087efbe61ec7",
-    "published_at": "2026-11-20T14:37:30.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jycyT6t0--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:FDE%25E3%2581%25A3%25E3%2581%25A6%25E7%25B5%2590%25E5%25B1%2580%25E3%2580%2581%25E4%25BD%2595%25E3%2582%2592%25E3%2581%2599%25E3%2582%258B%25E4%25BA%25BA%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:boku-yaji%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FkYjdmZTVjOWIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「FDE（Forward Deployed Engineer）」の真価とは？Palantirモデルから紐解く顧客現場で成果を出すエンジニアの生存戦略",
-    "summary_ja": "Forward Deployed Engineer（FDE）とは、単なる開発者ではなく、顧客の現場に深く入り込み課題定義から実装・導入までを完遂する役割である。 Palantir流のこの職種は、技術力以上に泥臭い対話と密な前提のすり合わせが成功を左右する。 FDEとして価値を出すには、プロダクトを作って終わりにするのではなく、顧客との対話を通じて「真の課題」を特定し、解決まで並走する伴走者としてのスキルが不可欠だ。",
-    "translations": {
-      "ja": {
-        "title": "「FDE（Forward Deployed Engineer）」の真価とは？Palantirモデルから紐解く顧客現場で成果を出すエンジニアの生存戦略",
-        "summary": "Forward Deployed Engineer（FDE）とは、単なる開発者ではなく、顧客の現場に深く入り込み課題定義から実装・導入までを完遂する役割である。 Palantir流のこの職種は、技術力以上に泥臭い対話と密な前提のすり合わせが成功を左右する。 FDEとして価値を出すには、プロダクトを作って終わりにするのではなく、顧客との対話を通じて「真の課題」を特定し、解決まで並走する伴走者としてのスキルが不可欠だ。"
-      },
-      "en": {
-        "title": "Decoding the Forward Deployed Engineer: How Palantir-style technical partnerships bridge the gap between abstract coding and real-world impact",
-        "summary": "The Forward Deployed Engineer (FDE) is far more than a typical developer; they operate directly within client environments to handle everything from problem definition and system design to final implementation. Inspired by the Palantir model, this role hinges less on pure coding proficiency and more on the grueling, essential work of constant dialogue and aligning operational assumptions with the client. Success as an FDE requires shifting mindset away from simply delivering code and toward acting as a true technical partner who identifies root causes through persistent communication. For engineers aiming to drive real-world outcomes, the core lesson is that technical excellence is secondary to one's ability to facilitate deep collaboration and solve the client's actual pain points rather than just shipping features."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-21T04:46:54.036Z"
   },
   {
     "id": "art-1795236407440-r0mtc",
