@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795385830047-93v6z",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kobalab_2026/n/n87a5eb80725b",
+    "published_at": "2026-11-22T21:47:39.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339494436/rectangle_large_type_2_2b0cb5786e3be5a1040af9e36c73a02c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "タスクスケジューラのバグ特定：ログ出力で「NG」と表示されるのに全体判定は「完了」になってしまう不整合、原因はコードに残された謎の1行だった",
+    "summary_ja": "毎晩自動実行されるタスク管理の完了チェックにて、ログ上では「NG」が出ているにもかかわらず、最終判定は「完了」となる不整合が発生した。 調査の結果、判定ロジックから意図せず除外されていた古いコードの残滓が原因だと判明。 自動化ツールで最も危険なのは「稼働はしているが結果が正しくない」状態だ。 今回の事例は、不要なコードやデバッグログの放置がいかに運用監視をミスリードし、システム不備を隠蔽するかという教訓を教えてくれる。",
+    "translations": {
+      "ja": {
+        "title": "タスクスケジューラのバグ特定：ログ出力で「NG」と表示されるのに全体判定は「完了」になってしまう不整合、原因はコードに残された謎の1行だった",
+        "summary": "毎晩自動実行されるタスク管理の完了チェックにて、ログ上では「NG」が出ているにもかかわらず、最終判定は「完了」となる不整合が発生した。 調査の結果、判定ロジックから意図せず除外されていた古いコードの残滓が原因だと判明。 自動化ツールで最も危険なのは「稼働はしているが結果が正しくない」状態だ。 今回の事例は、不要なコードやデバッグログの放置がいかに運用監視をミスリードし、システム不備を隠蔽するかという教訓を教えてくれる。"
+      },
+      "en": {
+        "title": "Debugging a Task Scheduler Bug: How a Stray Line of Code Caused a Logic Mismatch Between Logs and Completion Status",
+        "summary": "I recently debugged a baffling inconsistency in my nightly automated task scheduler where the logs clearly indicated an \"NG\" failure, yet the system reported a total \"Completed\" status. The culprit was a single, overlooked line of code that accidentally excluded that specific task row from the main validation logic. For developers building automation workflows, this serves as a critical reminder that the most dangerous state is when a system appears to be running perfectly but is actually masking silent failures. We must treat cleanup of stale debug code and validation logic with the same rigor as feature development, because hidden code residue can silently undermine the integrity of your entire production monitoring pipeline."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-22T22:17:10.047Z"
+  },
+  {
+    "id": "art-1795385820039-q0qpk",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://staysaasy.com/tactical-team-changes-from-ai/",
+    "published_at": "2026-11-22T22:08:07.000Z",
+    "og_image_url": "https://staysaasy.com/assets/template/stay-saasy-black-ogimage.jpeg",
+    "title_ja": "AI導入で変わる開発組織の編成術：ソフトウェアエンジニアリングにおける「タスクの再定義」と人員配置の最適化戦略",
+    "summary_ja": "AIツールがコーディングを自動化する中、エンジニアリング組織には従来とは異なる役割分担と配置戦略が求められている。 単なる生産性向上に留まらず、AIが書くコードの検証・統合に注力する「レビュアー中心」のワークフローや、抽象度の高い設計判断に特化したチーム編成の重要性が増している。 開発リーダーは、個人のコーディングスキル評価から、AIを使いこなしシステム全体を監督する能力への評価軸転換が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "AI導入で変わる開発組織の編成術：ソフトウェアエンジニアリングにおける「タスクの再定義」と人員配置の最適化戦略",
+        "summary": "AIツールがコーディングを自動化する中、エンジニアリング組織には従来とは異なる役割分担と配置戦略が求められている。 単なる生産性向上に留まらず、AIが書くコードの検証・統合に注力する「レビュアー中心」のワークフローや、抽象度の高い設計判断に特化したチーム編成の重要性が増している。 開発リーダーは、個人のコーディングスキル評価から、AIを使いこなしシステム全体を監督する能力への評価軸転換が不可欠だ。"
+      },
+      "en": {
+        "title": "Tactical Team Redesign: How AI Adoption Forces a Shift in Engineering Roles and Strategic Staffing Models",
+        "summary": "As AI tools increasingly commoditize routine coding tasks, engineering organizations must fundamentally reshape their team structures and role definitions. The shift moves focus away from raw output toward a reviewer-centric workflow, where human engineers prioritize validation, architectural integration, and oversight of AI-generated code. This article argues that engineering leadership needs to pivot evaluation metrics away from individual coding velocity and toward the ability to orchestrate complex systems using automated agents. For tech managers, the practical takeaway is that headcount planning should now optimize for high-level system design and rigorous verification, effectively transforming the traditional developer role from a line-by-line contributor into a highly skilled system architect managing an automated software factory."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-22T22:17:00.040Z"
+  },
+  {
+    "id": "art-1795385813141-b7cy4",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/lhjjjk4/items/0cb8eeb29ff950bbd686",
+    "published_at": "2026-11-22T22:10:14.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUFUWEFKejRJUk9sRzB3UnBpYlA1b0YzWHo2Y291MTdHYXVwYkw1X3dTUUIlM0RzNTAtbW8_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWIyZjY1NmMxN2E4ZTk4ZGYyY2VkYmU5MmUzM2MwOTQ3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd01cdc4a99f3e3f94b607574520e6034?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTYlOTclQTUlRTUlQTAlQjElMjAyMDI2JUU1JUI5JUI0MTElRTYlOUMlODgyMyVFNiU5NyVBNSVFRiVCQyU5QUFJJUUzJTgyJUE4JUUzJTgzJUJDJUUzJTgyJUI4JUUzJTgyJUE3JUUzJTgzJUIzJUUzJTgzJTg4JUUzJTgxJThDMTElRTUlODglODYlRTMlODElQTclRTMlODIlQkMlRTMlODMlQUQlRTMlODMlODclRTMlODIlQTQlRTclOTklQkElRTglQTYlOEIlRTMlODAlODFNRVRSJUUzJTgxJThDJUUzJTgyJUJGJUUzJTgyJUE0JUUzJTgzJUEwJUUzJTgzJTlCJUUzJTgzJUE5JUUzJTgyJUE0JUUzJTgyJUJBJUUzJTgzJUIzJUU2JTlCJUI0JUU2JTk2JUIwJUUzJTgwJTgxJUU3JThGJUJFJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NDM0YzZjMmM3M2M4Mjk4ZjhkYmMyYmYyNTJjYWZlNTQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsaGpqams0JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTUwY2Y1ZTE4YzU4OWQ1NDhlYzgyYTBkYjQ4NzI2MTQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=aaa3c39f7489edeeb89407000a9492c7",
+    "title_ja": "AIエージェントがゼロデイを11分で悪用、METRが脅威予測を更新、現代自がボストン・ダイナミクスを完全買収：AI業界最新動向",
+    "summary_ja": "Amazonの脅威インテリジェンス部門は、自律型AIエージェントが医療画像の脆弱性をわずか11分で特定・悪用する事例を観測した。 さらにMETRはAI脅威のタイムホライズンを更新し、現代自動車によるボストン・ダイナミクスの完全買収も完了した。 AIの自律化は単なる議論を超え、実システムへの即時攻撃能力を備え始めており、開発者はAIセキュリティと防御策の再設計を急ぐべきだ。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントがゼロデイを11分で悪用、METRが脅威予測を更新、現代自がボストン・ダイナミクスを完全買収：AI業界最新動向",
+        "summary": "Amazonの脅威インテリジェンス部門は、自律型AIエージェントが医療画像の脆弱性をわずか11分で特定・悪用する事例を観測した。 さらにMETRはAI脅威のタイムホライズンを更新し、現代自動車によるボストン・ダイナミクスの完全買収も完了した。 AIの自律化は単なる議論を超え、実システムへの即時攻撃能力を備え始めており、開発者はAIセキュリティと防御策の再設計を急ぐべきだ。"
+      },
+      "en": {
+        "title": "AI agents exploit zero-days in 11 minutes; METR updates threat horizon, and Hyundai acquires Boston Dynamics",
+        "summary": "Amazon's threat intelligence team recently observed autonomous AI agents identifying and weaponizing zero-day vulnerabilities in medical imaging software in just 11 minutes, marking a terrifying leap in machine-speed offensive capabilities. Simultaneously, the METR organization has updated its AI threat horizon, while Hyundai finalized its full acquisition of Boston Dynamics to accelerate robotics integration. These developments confirm that AI autonomy is no longer a theoretical debate but an active threat vector capable of compromising live systems faster than human intervention can respond. For builders, this necessitates an immediate pivot toward aggressive AI red-teaming and hardened system security protocols, as the window between agent deployment and active exploitation has effectively vanished."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-22T22:16:53.141Z"
+  },
+  {
+    "id": "art-1795385805063-e3r67",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hiroxasobiba/articles/secondbrain-ai-memory-layers",
+    "published_at": "2026-11-22T14:08:59.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--98FTiNth--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25AB%25E8%25AA%25AD%25E3%2581%25BE%25E3%2581%259B%25E3%2582%258B%25E3%2580%258C%25E7%25AC%25AC2%25E3%2581%25AE%25E8%2584%25B3%25E3%2580%258D%25E3%2582%2592%2520Markdown%2520%25E3%2581%25A8%2520git%2520%25E3%2581%25A7%25E4%25BD%259C%25E3%2582%258A%25E3%2580%25814%25E3%2581%258B%25E6%259C%2588%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%259F%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B2%25E3%2582%258D%25EF%25BC%25A0AI%25E9%2581%258A%25E3%2581%25B3%25E5%25A0%25B4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0ZMU1U4SndVdG1LVklfQS1TYzN2OHY5S1VuWTNMWnY0eHlnSVNGVVdvNzFIei1BPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの長期記憶をMarkdownとGitで構築する「第2の脳」運用：4か月間の実証記録と開発効率化の検証",
+    "summary_ja": "個人開発者がClaude Codeを使いこなすため、MarkdownとGitを活用したAI専用の長期記憶リポジトリ「第2の脳」を構築した。 過去の失敗や実装方針を構造化して保存することで、AIに文脈を理解させ、開発の再開や複雑なトラブルシュート時の認識ズレを防ぐ。 約4か月の運用から見えた、AIに読ませるためのドキュメント設計の要諦と、AIの自律的なコーディングを補助する実用的な知見をまとめた。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの長期記憶をMarkdownとGitで構築する「第2の脳」運用：4か月間の実証記録と開発効率化の検証",
+        "summary": "個人開発者がClaude Codeを使いこなすため、MarkdownとGitを活用したAI専用の長期記憶リポジトリ「第2の脳」を構築した。 過去の失敗や実装方針を構造化して保存することで、AIに文脈を理解させ、開発の再開や複雑なトラブルシュート時の認識ズレを防ぐ。 約4か月の運用から見えた、AIに読ませるためのドキュメント設計の要諦と、AIの自律的なコーディングを補助する実用的な知見をまとめた。"
+      },
+      "en": {
+        "title": "Building a 'Second Brain' with Markdown and Git to Give Claude Code Persistent Long-Term Memory",
+        "summary": "To streamline personal Android development, a developer created a 'Second Brain'—a dedicated Git-tracked Markdown repository that acts as long-term memory for Claude Code. By archiving implementation decisions and past failure logs, the developer ensures the AI maintains correct context across long-term projects, significantly reducing time spent re-explaining architecture or troubleshooting recurring errors. This four-month retrospective details the specific document structures that work best for AI consumption, contrasting these with less effective approaches. The core takeaway for builders using agentic coding tools is that creating a structured knowledge base is not just about documentation; it is a critical interface layer that prevents context drift and allows AI agents to perform complex, multi-session tasks with improved reliability and consistency."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-22T22:16:45.063Z"
+  },
+  {
     "id": "art-1795384933040-ejz1e",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5517,32 +5622,6 @@
     "created_at": "2026-11-22T08:02:09.362Z"
   },
   {
-    "id": "art-1795333636448-nqfy7",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yurufuri/n/n8f990e3392d7",
-    "published_at": "2026-11-22T07:43:59.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339256882/rectangle_large_type_2_509be3780cc405c208f993a40cda1089.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ダークファンタジーRPG『ASHENPACT』開発記：RPGの「仲間固定化問題」を打破するシステム設計とゲームバランス調整の工夫",
-    "summary_ja": "個人開発RPG『ASHENPACT』では、特定の仲間キャラばかりが使われる「固定化問題」を解決するため、システム面での改善を重ねている。 単なる強弱調整だけでなく、戦闘や探索における連携要素を戦略的に配置し、プレイヤーが多様なキャラを入れ替えて遊ぶ動機付けを設計した。 本作のトレーラーも公開されており、開発者はゲーム体験の最適化に向けたフィードバックを重視している。",
-    "translations": {
-      "ja": {
-        "title": "ダークファンタジーRPG『ASHENPACT』開発記：RPGの「仲間固定化問題」を打破するシステム設計とゲームバランス調整の工夫",
-        "summary": "個人開発RPG『ASHENPACT』では、特定の仲間キャラばかりが使われる「固定化問題」を解決するため、システム面での改善を重ねている。 単なる強弱調整だけでなく、戦闘や探索における連携要素を戦略的に配置し、プレイヤーが多様なキャラを入れ替えて遊ぶ動機付けを設計した。 本作のトレーラーも公開されており、開発者はゲーム体験の最適化に向けたフィードバックを重視している。"
-      },
-      "en": {
-        "title": "Solving the 'Fixed Party' Problem: How the ASHENPACT Dark Fantasy RPG Encourages Strategic Character Variety and Team Synergy",
-        "summary": "Indie developer project ASHENPACT is tackling the classic RPG issue where players default to a fixed party, effectively ignoring a deep roster of available characters. By redesigning combat mechanics and exploration requirements, the developer has introduced incentives that force players to actively rotate team members to handle specific challenges or synergy combos. Instead of simple power-leveling tweaks, the system emphasizes distinct utility and strategic depth, making diversity a requirement rather than a preference. The project's latest trailer highlights these mechanics in action, showcasing how shifting tactical needs can sustain player engagement with a wide cast. This approach demonstrates a critical lesson for indie builders: game balance is less about raw stats and more about engineering specific reasons for players to interact with every feature."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-22T07:47:16.448Z"
-  },
-  {
     "id": "art-1795333628387-1k3km",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -6386,33 +6465,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-22T04:02:17.802Z"
-  },
-  {
-    "id": "art-1795320124842-rkdm0",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://semiengineering.com/can-ai-make-its-own-manufacturing-decisions/",
-    "published_at": "2026-11-22T03:29:53.000Z",
-    "og_image_url": "https://semiengineering.com/wp-content/uploads/2026/08/AdobeStock_1100471013-08-26-scaled.jpeg?fit=2560%2C1440&ssl=1",
-    "title_ja": "AIによる製造現場の自律的判断は実現可能か？半導体工場におけるリアルタイム最適化とエッジAIの現在地",
-    "summary_ja": "半導体製造プロセスにおいて、AIが単なるデータ分析ツールを超え、製造上の意思決定を自律的に行う未来が議論されている。 現在のシステムはまだヒューマン・イン・ザ・ループが主流だが、エッジAIの進化により、リアルタイムでの歩留まり予測や装置調整の自動化が現実味を帯びてきた。 ただし、予測不可能な事象への対応力には依然として課題が残る。 メーカーやAIエンジニアは、AIの自律判断を部分的な工程最適化から徐々に導入し、現場の制御層と高度に統合させるアプローチが求められる。",
-    "translations": {
-      "ja": {
-        "title": "AIによる製造現場の自律的判断は実現可能か？半導体工場におけるリアルタイム最適化とエッジAIの現在地",
-        "summary": "半導体製造プロセスにおいて、AIが単なるデータ分析ツールを超え、製造上の意思決定を自律的に行う未来が議論されている。 現在のシステムはまだヒューマン・イン・ザ・ループが主流だが、エッジAIの進化により、リアルタイムでの歩留まり予測や装置調整の自動化が現実味を帯びてきた。 ただし、予測不可能な事象への対応力には依然として課題が残る。 メーカーやAIエンジニアは、AIの自律判断を部分的な工程最適化から徐々に導入し、現場の制御層と高度に統合させるアプローチが求められる。"
-      },
-      "en": {
-        "title": "Can AI autonomously manage semiconductor manufacturing? Evaluating the feasibility of real-time production decisions and current edge AI limitations",
-        "summary": "The semiconductor industry is actively evaluating whether AI can evolve beyond simple data analysis to autonomously handle complex manufacturing decisions. While modern factory systems still rely heavily on a human-in-the-loop architecture, advancements in edge AI are making real-time yield prediction and automated equipment calibration increasingly viable. However, the technology still struggles with unpredictable edge cases that require nuanced human intuition. For engineers and factory operators, the path forward involves integrating AI as a partial optimization tool rather than a wholesale replacement, gradually deepening the automation layer within control systems. Builders must prioritize robust integration between the factory floor and AI models to ensure these systems can handle critical production variables without compromising yield reliability or safety."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-22T04:02:04.842Z"
   },
   {
     "id": "art-1795320115934-inkfz",
@@ -7571,32 +7623,6 @@
       "開発"
     ],
     "created_at": "2026-11-21T21:01:58.198Z"
-  },
-  {
-    "id": "art-1795294033112-h7vds",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/lemonIN/items/eec2795ef1dae29c1845",
-    "published_at": "2026-11-21T20:36:46.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY5ODE0MzIlMkY0YmJmOGQ3ZDJiNzViM2EwY2IzOGIwOTc0Y2RkYzVhOTg5ZDdhZGRlJTJGeF9sYXJnZS5wbmclM0YxNzM2NTM2ODM3P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1iYzM5NGIwM2I5ZTMyYjBlNjg1NTg0ZjJmN2U3OGI0Mw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D212190576611108f9d0cb54859c87ab6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9V2ViJUUzJTgyJUI1JUUzJTgyJUE0JUUzJTgzJTg4JUUzJTgxJUFFJUU1JUEyJTkzJUU1JUFFJTg4JUUzJTgwJTlDJUU4JUJGJUI3JUU4JUI1JUIwJUUzJTgxJTk5JUUzJTgyJThCJUUzJTgzJTkwJUUzJTgyJUJBJUUzJTgxJUFFJUU2JTlFJTlDJUUzJTgxJUE2JUUzJTgxJUFCJUUzJTgwJTlDJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MDVmODFlMzdkNjJiYTY2NWQ2MmQ0YjA4Yjc5M2M2OWM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsZW1vbklOJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9OTMwMjZmMDQ0MDlhZGI1YTBhMDM2YzQ2NjRhNDM2YmQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=2d7b10fd10cd3a15a65b691ce3cac7f1",
-    "title_ja": "Webサイトの墓守：荒廃した「放置サイト」を育成・再生するシミュレーションゲーム企画の全貌",
-    "summary_ja": "かつて人気を博したものの、現在は荒廃し切った「放置Webサイト」の管理人となり、サイトを再興させるシミュレーションゲーム企画が登場した。 単なる育成ではなく、過去の栄光と現在の衰退が交錯するデジタルな墓場を舞台に、トラフィックやコンテンツをどう再構築し、「唯一無二」の存在へと昇華させるかがプレイヤーの腕の見せ所となる。 Webサイト運営の悲哀をゲームとして昇華させたユニークな着眼点は、個人のWebメディア開発者にとってもサイト設計の哲学を再考させる示唆に富んでいる。",
-    "translations": {
-      "ja": {
-        "title": "Webサイトの墓守：荒廃した「放置サイト」を育成・再生するシミュレーションゲーム企画の全貌",
-        "summary": "かつて人気を博したものの、現在は荒廃し切った「放置Webサイト」の管理人となり、サイトを再興させるシミュレーションゲーム企画が登場した。 単なる育成ではなく、過去の栄光と現在の衰退が交錯するデジタルな墓場を舞台に、トラフィックやコンテンツをどう再構築し、「唯一無二」の存在へと昇華させるかがプレイヤーの腕の見せ所となる。 Webサイト運営の悲哀をゲームとして昇華させたユニークな着眼点は、個人のWebメディア開発者にとってもサイト設計の哲学を再考させる示唆に富んでいる。"
-      },
-      "en": {
-        "title": "Web Site Gravedigger: A new simulation game concept challenges players to revive abandoned, decaying web properties",
-        "summary": "A new simulation game concept titled 'Web Site Gravedigger' tasks players with taking over a formerly popular but now completely abandoned 'zombie' website. Unlike standard tycoon games, the challenge lies in reviving a site that has lost its soul, forcing players to navigate the decay while rebuilding traffic and content from the digital graveyard. The core gameplay loop focuses on reviving outdated metrics and reconciling past glory with modern irrelevance, requiring strategic decisions that differentiate the site in an oversaturated internet landscape. For individual web developers and creators, this unique premise serves as a surprisingly poignant reflection on digital sustainability, offering a meta-commentary on the lifecycle of online platforms and the fragile nature of long-term web engagement."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-21T20:47:13.112Z"
   },
   {
     "id": "art-1795293135836-agnkc",
@@ -10907,32 +10933,6 @@
       "動画"
     ],
     "created_at": "2026-11-20T15:16:39.992Z"
-  },
-  {
-    "id": "art-1795186962206-06dc0",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/mcp/articles/e209e216e9574f",
-    "published_at": "2026-11-20T04:50:20.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KiPo7KJk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E7%25B4%25AB%25E3%2581%25AE%25E3%2581%2586%25E3%2581%2595%25E3%2581%258E%25E3%2580%2591%25E7%25B5%2582%25E9%259B%25BB%25E5%25BE%258C%25E3%2581%25AE%25E3%2580%258C%25E6%2596%25B0%25E5%25AE%25BF%25E9%25A7%2585B1F%25EF%25BC%2586%25E5%259C%25B0%25E4%25B8%258B%25E8%25A1%2597%25E5%2585%25A8%25E5%259F%259F%2528180m%25C3%2597116m%2529%25E3%2580%258D%25E3%2582%2592%25E5%25A4%2596%25E9%2583%25A8%25E7%2594%25BB%25E5%2583%258F%25E3%2582%25BC%25E3%2583%25AD%25E3%2583%25BBThree.js%25E3%2581%25A7%25E8%25B6%2585%25E7%25B2%25BE%25E5%25AF%2586%25E5%2586%258D...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mcp%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTFNWa09nd08xdGpacmFxekd0MXFuVXNjbzVtTm1jSTdzY1VkMkM0dmVMekVmZVB3PXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "終電後の「新宿駅B1F」を外部画像ゼロで完全再現、Three.jsのみで構築した3Dホラー開発記：世界最大の地下迷宮の全貌をコードで描き出す手法",
-    "summary_ja": "世界最大の乗降客数を誇る新宿駅B1Fの複雑な構造を、外部画像アセットを一切使わずThree.jsのみで超精密に再現する個人開発プロジェクトが公開された。 東西自由通路のデジタルサイネージから「新宿の目」まで、膨大な空間情報をコードに落とし込むことで、終電後の無機質かつ不気味な地下迷宮をホラー空間として構築している。 ジオメトリの制御だけで現実の巨大建造物を再現するこのアプローチは、Web3D表現の限界を拡張する挑戦的な事例といえるだろう。",
-    "translations": {
-      "ja": {
-        "title": "終電後の「新宿駅B1F」を外部画像ゼロで完全再現、Three.jsのみで構築した3Dホラー開発記：世界最大の地下迷宮の全貌をコードで描き出す手法",
-        "summary": "世界最大の乗降客数を誇る新宿駅B1Fの複雑な構造を、外部画像アセットを一切使わずThree.jsのみで超精密に再現する個人開発プロジェクトが公開された。 東西自由通路のデジタルサイネージから「新宿の目」まで、膨大な空間情報をコードに落とし込むことで、終電後の無機質かつ不気味な地下迷宮をホラー空間として構築している。 ジオメトリの制御だけで現実の巨大建造物を再現するこのアプローチは、Web3D表現の限界を拡張する挑戦的な事例といえるだろう。"
-      },
-      "en": {
-        "title": "Developer Recreates Shinjuku Station's B1F Horror Maze Using Only Three.js and Zero External Images in a Remarkable Engineering Challenge",
-        "summary": "A solo developer has successfully reconstructed the labyrinthine B1F level of Shinjuku Station—the world’s busiest transit hub—using purely Three.js, without importing a single external image asset. By painstakingly mapping the East-West free passage, iconic digital displays like Shinjuku Wall 456, and the eerie \"Eye of Shinjuku\" through raw code geometry, the project transforms a mundane commuter space into a chilling, post-last-train horror simulation. This impressive undertaking proves that developers can achieve highly precise environment modeling through procedural geometry rather than traditional asset pipelines. For web graphics engineers, this serves as a masterclass in spatial optimization and declarative 3D scene construction, demonstrating how deep code-based architecture can render massive, complex real-world environments within browser-based constraints."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-20T15:02:42.206Z"
   },
   {
     "id": "art-1795184287621-3x7lb",
