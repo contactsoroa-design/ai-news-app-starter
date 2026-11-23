@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795403847424-0d6w9",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/stagea_tech/articles/20261123-pj8-devlog",
+    "published_at": "2026-11-22T23:59:14.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--DepFW1Tj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E6%2597%25A5%25E6%259C%25AC%25E6%25A0%25AA%25E5%2588%2586%25E6%259E%2590%25E3%2583%2597%25E3%2583%25A9%25E3%2583%2583%25E3%2583%2588%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%25A0%25E3%2580%2591%25E6%25B1%25BA%25E7%25AE%2597%25E6%259C%259F%25E3%2582%2592%25E5%25A4%2589%25E3%2581%2588%25E3%2581%259F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2581%25AE%25E5%259B%259B%25E5%258D%258A%25E6%259C%259F%25E3%2581%258C%25E3%2580%2581%25E3%2580%258C%25E4%25BD%2595%25E5%25B9%25B4%25E3%2581%25AEQ%25E4%25BD%2595%25E3%2580%258D%25E3%2581%25A8%25E6%2595%25B0%25E3%2581%2588%25E9%2581%2595%25E3%2581%2588%25E3%2582%2589%25E3%2582%258C%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E8%25A9%25B1%25282026-11-23%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:StageA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvcy5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "日本株分析サイトで発覚した「決算期変更に伴う四半期ズレ」の罠：EDINET開示データ処理における日付認識の落とし穴",
+    "summary_ja": "日本株の財務指標を算出する個人開発サービスにおいて、決算期を変更した企業の四半期データが「何年の第何四半期か」という判定で誤表示されるバグが判明した。 EDINETから自動取得する開示データは、企業ごとに異なる決算月の定義や変更履歴を考慮する必要があり、単純なカレンダー上の年月指定では誤判定を招くリスクがある。 エンジニアにとって、財務系データの突合においては、公開日だけでなく企業の会計ルールやカレンダー定義の変更をどうモデルに組み込むかがデータ品質維持の分かれ道となる。",
+    "translations": {
+      "ja": {
+        "title": "日本株分析サイトで発覚した「決算期変更に伴う四半期ズレ」の罠：EDINET開示データ処理における日付認識の落とし穴",
+        "summary": "日本株の財務指標を算出する個人開発サービスにおいて、決算期を変更した企業の四半期データが「何年の第何四半期か」という判定で誤表示されるバグが判明した。 EDINETから自動取得する開示データは、企業ごとに異なる決算月の定義や変更履歴を考慮する必要があり、単純なカレンダー上の年月指定では誤判定を招くリスクがある。 エンジニアにとって、財務系データの突合においては、公開日だけでなく企業の会計ルールやカレンダー定義の変更をどうモデルに組み込むかがデータ品質維持の分かれ道となる。"
+      },
+      "en": {
+        "title": "Bug analysis: Handling fiscal quarter mismatches when companies change accounting periods in stock market data pipelines",
+        "summary": "A developer building a Japanese stock analysis platform discovered a critical data integrity bug where companies that shifted their fiscal year end triggered incorrect quarterly labeling in the system. Because EDINET disclosure data does not normalize for shifting fiscal calendars, simple date-based parsing inevitably leads to misclassified financial quarters for these specific entities. The fix required building a custom mapping logic to account for individual corporate accounting rule changes rather than relying on standard date ranges. For builders handling financial time-series data, this serves as a stark reminder that source documents from regulators often ignore corporate policy shifts. Robust financial apps must implement explicit fiscal calendar overrides to prevent incorrect investment scoring logic when company reporting schedules fluctuate."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-23T03:17:27.424Z"
+  },
+  {
+    "id": "art-1795403840109-1geuo",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/hidenoba/n/n34c7bcbccf00",
+    "published_at": "2026-11-23T03:12:44.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339603178/rectangle_large_type_2_4056f790ef49d8fec95e2a2c56ed6fb2.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI活用で競馬予想アプリを個人開発：プログラミングをAIに委ね、JRA-VANデータを統合して独自ロジックを実装するまでの全工程",
+    "summary_ja": "プログラミング知識をAIに頼ることで、複雑な競馬予想アプリを個人開発した事例。 JRA-VANの過去成績データを活用し、AIと対話しながらデータ構造の設計から実装までを行い、独自の予想ロジックを構築した。 技術的ハードルが高い領域でも、AIをコーディングパートナーとして活用すれば、API連携やデータ処理を含む複雑なアプリケーションも個人の手で完遂できることを示している。",
+    "translations": {
+      "ja": {
+        "title": "AI活用で競馬予想アプリを個人開発：プログラミングをAIに委ね、JRA-VANデータを統合して独自ロジックを実装するまでの全工程",
+        "summary": "プログラミング知識をAIに頼ることで、複雑な競馬予想アプリを個人開発した事例。 JRA-VANの過去成績データを活用し、AIと対話しながらデータ構造の設計から実装までを行い、独自の予想ロジックを構築した。 技術的ハードルが高い領域でも、AIをコーディングパートナーとして活用すれば、API連携やデータ処理を含む複雑なアプリケーションも個人の手で完遂できることを示している。"
+      },
+      "en": {
+        "title": "Building a custom horse racing prediction app using AI-assisted coding and integrated JRA-VAN racing data",
+        "summary": "This case study details how a solo developer built a complex horse racing prediction application by offloading the actual coding to AI. By leveraging JRA-VAN's historical race data and using AI as a persistent coding partner, the developer successfully managed everything from initial database schema design to implementing proprietary prediction logic. The process demonstrates that even domains requiring deep domain expertise and complex API integration are now accessible to individuals. By treating AI as a capable engineer rather than a simple code generator, developers can bridge the gap between complex data processing tasks and functional, shippable software, effectively lowering the barrier to entry for highly specialized data-driven applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-23T03:17:20.109Z"
+  },
+  {
+    "id": "art-1795403832363-xvt5i",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/somasun_aws/items/bd68618c5e1ec23600fa",
+    "published_at": "2026-11-23T03:16:19.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnBicy50d2ltZy5jb20lMkZwcm9maWxlX2ltYWdlcyUyRjE5MTAyMDQwNTQ5MTMxMDU5MjAlMkZ1NzNISGdJdF9iaWdnZXIuanBnP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1lMjE3NmM5YWNlNTdjNzQzN2ZiM2RmYWZmZGI3YjBmMg%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZhOGRmMmU3OGIyOTdmMWZlZTdjMDg4ZDg2MDA0OTMxOTA1ZTQ0Yjc0JTJGb3JpZ2luYWwuanBnJTNGMTcyNTM0MjIyNT9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz01ZDNmZTYzMGIwMDExZjliZGMyMGRjNGVjMzU1YzBkNg%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dd4601eafa2bc15610fbaccfc4ee74b4c?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QVdTJTIwUXVpY2slRTMlODElQUUlRTMlODMlOTUlRTMlODIlQTElRTMlODIlQTQlRTMlODMlQUIlRTMlODAlODElRTMlODElQTklRTMlODElOTMlRTMlODElQUIlRTclQkQlQUUlRTMlODElOEYlRUYlQkMlOUYlMjAlRTMlODMlQUQlRTMlODMlQkMlRTMlODIlQUIlRTMlODMlQUIlRTMlODMlOTUlRTMlODIlQTklRTMlODMlQUIlRTMlODMlODAlRTMlODMlQkJCb3glRTMlODMlQkJTcGFjZXMlRTMlODElQUUlRTQlQkQlQkYlRTMlODElODQlRTUlODglODYlRTMlODElOTElRTMlODIlOTIlRTYlOTUlQjQlRTclOTAlODYlRTMlODElOTklRTMlODIlOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz04OWY0MTNlOGE0NWI1MzMzODUzNGIzOGQ3ZGU4Yzg0MQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzb21hc3VuX2F3cyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTg3OTY2ZmNhMjA2YTFkMWRhOGUwNGI4YzAxZWI3M2I4&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=SmFwYW4gQVdTIEpyLiBDaGFtcGlvbnM&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=2374c1aa510221e487fdd8574662e90c",
+    "title_ja": "Amazon Q活用のファイル管理術：ローカル・Box・S3の特性を活かしたストレージ選択とQuick連携のベストプラクティス",
+    "summary_ja": "Amazon Qの実装で直面しがちな「ファイル参照先の選定」という課題を解消する。 ローカルPC、Box、そしてAmazon S3（Spaces）のそれぞれの特性を踏まえ、開発ワークフローや権限管理の観点から最適なストレージ戦略を解説する。 単なる置き場所の議論を超え、AIエージェントの処理速度やセキュリティ要件に応じた最適な配置ルールを策定することが、開発効率を最大化する鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "Amazon Q活用のファイル管理術：ローカル・Box・S3の特性を活かしたストレージ選択とQuick連携のベストプラクティス",
+        "summary": "Amazon Qの実装で直面しがちな「ファイル参照先の選定」という課題を解消する。 ローカルPC、Box、そしてAmazon S3（Spaces）のそれぞれの特性を踏まえ、開発ワークフローや権限管理の観点から最適なストレージ戦略を解説する。 単なる置き場所の議論を超え、AIエージェントの処理速度やセキュリティ要件に応じた最適な配置ルールを策定することが、開発効率を最大化する鍵となる。"
+      },
+      "en": {
+        "title": "Amazon Q Storage Strategy: Choosing Between Local Folders, Box, and S3 for Optimal AI Integration",
+        "summary": "Developers adopting Amazon Q often struggle with the foundational question of where to store source files for optimal performance. This guide dissects the tradeoffs between using local directories, cloud storage like Box, and Amazon S3, focusing on how each choice affects AI agent access latency and organizational security. The analysis emphasizes that storage selection is not just about convenience; it is about aligning file hierarchy with the RAG (Retrieval-Augmented Generation) ingestion process to avoid bottlenecks. Builders should prioritize S3 or centralized cloud services for scalable AI access, while reserving local folders only for prototyping. Implementing a structured data governance strategy early prevents the common pitfall of messy, inaccessible knowledge bases as AI workloads grow in complexity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-23T03:17:12.363Z"
+  },
+  {
+    "id": "art-1795403824021-poeux",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/andytanlinks/articles/b631f156f08358",
+    "published_at": "2026-11-22T15:34:58.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--INAxTACs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Keep%2520the%2520Title%2520Lockup%252C%2520Change%2520the%2520Genre%2520Art%253A%2520Book%2520Cover%2520S...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Andy%2520Tan%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS1BpS21ZSVRMRFI4aWdqbTNDRHhNZ2MwdE1XSjREMmtRN2xlekxOZ19EdUtORjZ3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "書籍デザインの効率化手法：タイポグラフィを固定しジャンルごとにアートワークを差し替える「タイトル・ロックアップ」戦略",
+    "summary_ja": "小規模出版において、全イラストの完成を待たずにシリーズを展開する手法として「タイトル・ロックアップ」が有効である。 タイトル、著者名、インプリントのレイアウトやフォントを固定し、ジャンルごとに背景アートワークを差し替えることで、制作工数を大幅に削減しつつ、シリーズとしての統一感を維持できる。 クリエイティブの量産が求められる制作現場において、デザインの構成要素をモジュール化することは、品質とスピードを両立させる重要な戦術だ。",
+    "translations": {
+      "ja": {
+        "title": "書籍デザインの効率化手法：タイポグラフィを固定しジャンルごとにアートワークを差し替える「タイトル・ロックアップ」戦略",
+        "summary": "小規模出版において、全イラストの完成を待たずにシリーズを展開する手法として「タイトル・ロックアップ」が有効である。 タイトル、著者名、インプリントのレイアウトやフォントを固定し、ジャンルごとに背景アートワークを差し替えることで、制作工数を大幅に削減しつつ、シリーズとしての統一感を維持できる。 クリエイティブの量産が求められる制作現場において、デザインの構成要素をモジュール化することは、品質とスピードを両立させる重要な戦術だ。"
+      },
+      "en": {
+        "title": "Strategies for efficient book design: Using the title lockup method to scale series art while keeping typography consistent",
+        "summary": "In small-scale publishing, managing book series production without waiting for every illustration to be finalized is a common bottleneck. The \"title lockup\" strategy solves this by locking in the typography, author names, and imprint placements while treating the genre-specific artwork as a swappable module. This approach ensures visual consistency across the entire series while drastically reducing design production time. For creative teams balancing high-volume output with strict aesthetic standards, modularizing design assets is the most effective way to maintain quality control without sacrificing speed. By standardizing the framework first, designers can focus purely on thematic adaptation rather than rebuilding layouts for every individual volume in a catalog."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-23T03:17:04.021Z"
+  },
+  {
     "id": "art-1795402942706-btn3t",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -5085,32 +5189,6 @@
     "created_at": "2026-11-22T14:01:52.019Z"
   },
   {
-    "id": "art-1795356105307-f7jil",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/tenui_dd/n/n443e983fbe46",
-    "published_at": "2026-11-22T14:00:54.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339402524/rectangle_large_type_2_23c814a232c3f6d5c7615a0496326da9.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIを「ただのツール」から「チームメイト」へ進化させる：新人の承認プロセスを応用した信頼構築とタスク委譲の心得",
-    "summary_ja": "AIへの指示出しにおいて、どこまで詳細な承認プロセスを挟むべきか。 開発者はGrok Botの活用事例を通じ、AIをツールではなく新人のチームメイトとして捉えることで、過剰な確認作業を減らし信頼を育てるマネジメントの重要性に気づいた。 本稿では、チャットボットから自律的な協力者へと進化するAIに対し、人間同様の報告・承認フローを適用する実践的なアプローチを解説する。",
-    "translations": {
-      "ja": {
-        "title": "AIを「ただのツール」から「チームメイト」へ進化させる：新人の承認プロセスを応用した信頼構築とタスク委譲の心得",
-        "summary": "AIへの指示出しにおいて、どこまで詳細な承認プロセスを挟むべきか。 開発者はGrok Botの活用事例を通じ、AIをツールではなく新人のチームメイトとして捉えることで、過剰な確認作業を減らし信頼を育てるマネジメントの重要性に気づいた。 本稿では、チャットボットから自律的な協力者へと進化するAIに対し、人間同様の報告・承認フローを適用する実践的なアプローチを解説する。"
-      },
-      "en": {
-        "title": "Transforming AI from tool to teammate: Managing delegation and trust by treating agents like new human hires",
-        "summary": "Managing AI agents requires a shift in mindset: stop treating them as passive tools and start treating them like junior human colleagues. By applying classic delegation frameworks—specifically optimizing the balance between approval steps and autonomy—developers can move beyond micromanagement and build genuine operational trust. The article explores how Grok Bot exemplifies the transition from simple chatbot to proactive teammate, highlighting why developers should define clear reporting structures just as they would with a new hire. For solo builders, this approach isn't just about efficiency; it's about reducing friction in your workflow. The practical takeaway is to start delegating tasks with the same trust-based oversight you would afford a team member, rather than getting stuck in endless confirmation loops."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-22T14:01:45.307Z"
-  },
-  {
     "id": "art-1795355250359-2x0bu",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -7487,32 +7565,6 @@
     "created_at": "2026-11-22T02:47:23.474Z"
   },
   {
-    "id": "art-1795315618323-w1ggf",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ryosuke_ohori/items/5b4638fab7f9aefbd81a",
-    "published_at": "2026-11-22T02:46:05.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjgwMjEzMyUzRnYlM0Q0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz05OTRiODhiOGM0NmUxNDZlNGNkZjRhNGMxMzUwNmVjNA%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkY3Mzg0ODQ0ZDlhZDE0ZGE1YmUyMmJmNWI0NzYzZmFlZWY2ZTA4NDdhJTJGb3JpZ2luYWwuanBnJTNGMTcyMjI0ODgwOT9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1lYzgwNzRmNDMwZjJkMmUzM2FhMjVmMjkwZmYyOTgxMg%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3D2f8fb656872f6c711df9000fff55416e?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9TExNJUUzJTgyJTkyJUU1JTkxJUJDJUUzJTgxJUI2JUUzJTgwJTgxJUUzJTgxJTlEJUUzJTgxJUFFJUU1JTg1JTg4JUUzJTgxJUI4JUUzJTgwJTgyMTIlRTMlODElQUVHaXRIdWIlRTYlOTUlOTklRTYlOUQlOTAlRTMlODElQTclRTUlQUQlQTYlRTMlODElQjZBSSVFMyU4MiVBOCVFMyU4MyVCMyVFMyU4MiVCOCVFMyU4MyU4QiVFMyU4MiVBMiVFMyU4MyVBQSVFMyU4MyVCMyVFMyU4MiVCMCVFMyU4MSVBRSVFMyU4MyVBRCVFMyU4MyVCQyVFMyU4MyU4OSVFMyU4MyU5RSVFMyU4MyU4MyVFMyU4MyU5NyZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTk3NTVjYjM1ZGRiMTQ1NGViOWRkYjY4MmQ2Y2VkNjRi&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDByeW9zdWtlX29ob3JpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YmUyNjY3MDNiZWY5ZDdmMGU3ZDk5YzU0Y2Q5MTQ0NmQ&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=dWx1c2FnZS5JbmM&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=97fbbef6259245733335587099772ed7",
-    "title_ja": "LLM APIを叩くだけでは終わらない、AIエンジニアとしてステップアップするための「GitHub公開教材12選」ロードマップ",
-    "summary_ja": "株式会社ulusageが公開した、単なるLLM呼び出しを超えてAIエンジニアリングを習得するための学習ロードマップ。 チャットUI作成に留まらず、RAGやエージェント開発、評価基盤構築までを網羅した12個のGitHubリポジトリを選定している。 API接続後の「アプリらしさ」から本番環境での信頼性を担保する実装への転換が、AIプロダクト開発には不可欠だ。 理論だけでなくコードベースで実装スキルを磨きたい個人開発者にとって、体系的な学習指針となる。",
-    "translations": {
-      "ja": {
-        "title": "LLM APIを叩くだけでは終わらない、AIエンジニアとしてステップアップするための「GitHub公開教材12選」ロードマップ",
-        "summary": "株式会社ulusageが公開した、単なるLLM呼び出しを超えてAIエンジニアリングを習得するための学習ロードマップ。 チャットUI作成に留まらず、RAGやエージェント開発、評価基盤構築までを網羅した12個のGitHubリポジトリを選定している。 API接続後の「アプリらしさ」から本番環境での信頼性を担保する実装への転換が、AIプロダクト開発には不可欠だ。 理論だけでなくコードベースで実装スキルを磨きたい個人開発者にとって、体系的な学習指針となる。"
-      },
-      "en": {
-        "title": "Beyond simple API wrappers: A 12-repo GitHub roadmap to master production-grade AI engineering",
-        "summary": "A new technical guide from ulsage outlines a 12-repository GitHub roadmap designed to move developers beyond simple LLM API wrappers into professional AI engineering. The curriculum shifts focus from basic chat interfaces to complex systems, covering critical topics like RAG pipelines, autonomous agent development, and robust evaluation frameworks for production environments. The core argument is that while generating a prototype feels fast, ensuring reliability and meaningful performance at scale requires mastering architectural patterns rather than just hooking up OpenAI endpoints. For indie hackers and builders, this curated list serves as a practical blueprint to bridge the gap between building a hobbyist AI demo and architecting a stable, scalable production application."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-22T02:46:58.323Z"
-  },
-  {
     "id": "art-1795312919689-31hae",
     "source_id": "source-aws-ml",
     "source_name": "AWS Machine Learning Blog",
@@ -8823,32 +8875,6 @@
     "created_at": "2026-11-21T13:47:12.264Z"
   },
   {
-    "id": "art-1795267941006-jzx61",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/nexupira/articles/527d0ef2e21cf2",
-    "published_at": "2026-11-21T09:16:13.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--6gIqg_78--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25AB%25E8%25A8%2598%25E6%2586%25B6%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E4%25BF%259D%25E5%25AD%2598%25E3%2581%2595%25E3%2581%259B%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E6%259C%2580%25E5%2588%259D%25E3%2581%25AE%25202%2520%25E6%2597%25A5%25E9%2596%2593%25E3%2581%25A7%25E4%25BD%2595%25E3%2582%2592%25E8%25A6%259A%25E3%2581%2588%25E9%2596%2593%25E9%2581%2595%25E3%2581%2588%25E3%2581%259F%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:NEXUPIRA%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzk5OGI5YjQzNzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「確認待ちの記憶」で失敗。中小企業向けAIの記憶を完全自動保存へ切り替えた設計思想とUX改善",
-    "summary_ja": "小規模店舗向けAIにおいて、「確認待ちメモリー」を承認するステップを挟んだ結果、オーナーがページを確認せずAIの記憶が機能不全に陥った。 これに対し、特定の重要情報を自動的に記憶させ、回答直後にその内容を提示して「取り消し」ボタンを添えるUXへ刷新。 読取対象をオーナーの会話に限定し、情報を分類する設計へ変更したことで、ユーザーの負担を減らしつつAIの精度を向上させている。",
-    "translations": {
-      "ja": {
-        "title": "「確認待ちの記憶」で失敗。中小企業向けAIの記憶を完全自動保存へ切り替えた設計思想とUX改善",
-        "summary": "小規模店舗向けAIにおいて、「確認待ちメモリー」を承認するステップを挟んだ結果、オーナーがページを確認せずAIの記憶が機能不全に陥った。 これに対し、特定の重要情報を自動的に記憶させ、回答直後にその内容を提示して「取り消し」ボタンを添えるUXへ刷新。 読取対象をオーナーの会話に限定し、情報を分類する設計へ変更したことで、ユーザーの負担を減らしつつAIの精度を向上させている。"
-      },
-      "en": {
-        "title": "Why asking AI users to 'confirm memories' failed and how automatic background saving improved UX",
-        "summary": "A small business AI assistant initially required human approval for new memories via a confirmation page, but owners rarely checked it, leaving the AI unable to retain critical pricing or operational details. The developer pivoted to an automatic memory model where the AI stores specific data silently, then displays a \"Saved: [Info]\" confirmation block with an instant undo button directly beneath its responses. By restricting the memory ingestion scope to the owner’s input and categorizing data types, the system now learns autonomously without adding friction. This shift illustrates a key principle in AI product design: forcing active confirmation flows causes abandonment. Instead, prioritize seamless automated background ingestion coupled with easily reversible corrections to maintain long-term user engagement."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-21T13:32:21.006Z"
-  },
-  {
     "id": "art-1795267021827-ol0q4",
     "source_id": "source-benchlm",
     "source_name": "BenchLM（モデル動向）",
@@ -9633,33 +9659,6 @@
       "開発"
     ],
     "created_at": "2026-11-21T04:46:47.440Z"
-  },
-  {
-    "id": "art-1795231932890-1oyhg",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/mikartmis/articles/uzume-vector-avatar-making",
-    "published_at": "2026-11-20T15:10:00.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1yoNfA3o--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:1%25E6%259E%259A%25E7%25B5%25B5%25E3%2581%258B%25E3%2582%2589%25E5%258B%2595%25E3%2581%258F%25E3%2582%25A2%25E3%2583%2590%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E6%2589%258B%25E9%25A0%2586%25E6%259B%25B8%2520%25E2%2580%2595%2520vector-avator%25E3%2581%25A7%25E3%2582%25AA%25E3%2583%25AA%25E3%2582%25B8%25E3%2583%258A%25E3%2583%25AB%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25A9%25E3%2582%2592%25E3%2583%2599%25E3%2582%25AF%25E3%2582%25BF%25E3%2583%25BC%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F%25E4%25BD%259C%25E6%2588%2590%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Mika%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzBhMDRhNTVjMWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "1枚の静止画から動く3D骨格ベクターアバターを生成する手順書 ― 「vector-avator」を活用したAIエージェント向け実装ガイド",
-    "summary_ja": "本記事は、1枚のキャラクター立ち絵から3Dモデルなしで動きのあるベクターアバターを生成する技術解説です。 TypeScriptとCanvas 2Dを駆使し、ブラウザ上で動作可能かつMP4出力にも対応した実装フローをまとめています。 特筆すべきは、記事全体がClaude CodeやCodexなどのAIエージェントにそのまま読み込ませることを前提に設計されている点です。",
-    "translations": {
-      "ja": {
-        "title": "1枚の静止画から動く3D骨格ベクターアバターを生成する手順書 ― 「vector-avator」を活用したAIエージェント向け実装ガイド",
-        "summary": "本記事は、1枚のキャラクター立ち絵から3Dモデルなしで動きのあるベクターアバターを生成する技術解説です。 TypeScriptとCanvas 2Dを駆使し、ブラウザ上で動作可能かつMP4出力にも対応した実装フローをまとめています。 特筆すべきは、記事全体がClaude CodeやCodexなどのAIエージェントにそのまま読み込ませることを前提に設計されている点です。"
-      },
-      "en": {
-        "title": "Guide to generating articulated vector avatars from single images using vector-avator, optimized for direct AI agent implementation",
-        "summary": "This guide details how to create animated, vector-based avatars from a single static character illustration without requiring complex 3D modeling. The implementation leverages TypeScript and Canvas 2D to enable real-time browser-based movement and MP4 export capabilities. Uniquely, the article is structured as an 'AI-ready' manual, meaning the entire workflow—including prerequisites, dependencies, configuration values, and troubleshooting tips—is optimized for direct ingestion by agents like Claude Code or Codex. Developers can either follow the steps manually or simply feed the content to an agent to automate the entire asset pipeline. This approach significantly streamlines individual creator workflows, allowing for rapid deployment of interactive 2D character assets with skeletal animation frameworks directly in the browser environment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "動画"
-    ],
-    "created_at": "2026-11-21T03:32:12.890Z"
   },
   {
     "id": "art-1795229207653-tz45e",
