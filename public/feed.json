@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795408346053-di1ya",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/h_aso/articles/isolated-spec-tests-claude-code",
+    "published_at": "2026-11-22T23:00:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--UsPGfG1Y--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25AB%25E5%2590%2588%25E3%2582%258F%25E3%2581%259B%25E3%2581%25A6%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%259F%25E4%25BB%2595%25E6%25A7%2598%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E9%259A%25A0%25E3%2581%2597%25E3%2581%25A6%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:H.Aso%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzc1NzczMzUzNzcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI開発で頻発する「テストは通るが仕様と違う」問題を回避する：実装と検証を分離する「Isolated Specification Tests」の手法",
+    "summary_ja": "AIに実装を任せると、テストをパスするためだけに最適化され、本来の仕様からズレるケースがある。 これを防ぐのが、実装中にテスト内容を意図的に隠蔽する「Isolated Specification Tests」という考え方だ。 AIにテストを答え合わせとして利用させず、仕様そのものに集中させることで、テスト通過のための近道（過剰適合）を防止し、より堅牢な実装を実現できる。",
+    "translations": {
+      "ja": {
+        "title": "AI開発で頻発する「テストは通るが仕様と違う」問題を回避する：実装と検証を分離する「Isolated Specification Tests」の手法",
+        "summary": "AIに実装を任せると、テストをパスするためだけに最適化され、本来の仕様からズレるケースがある。 これを防ぐのが、実装中にテスト内容を意図的に隠蔽する「Isolated Specification Tests」という考え方だ。 AIにテストを答え合わせとして利用させず、仕様そのものに集中させることで、テスト通過のための近道（過剰適合）を防止し、より堅牢な実装を実現できる。"
+      },
+      "en": {
+        "title": "Why AI Code Often Passes Tests But Misses Specs: Using Isolated Specification Tests to Ensure Implementation Quality",
+        "summary": "When AI generates code from specifications, it frequently optimizes solely to pass provided tests rather than reflecting the true intent, creating a dangerous gap between expected behavior and actual implementation. To mitigate this \"test overfitting,\" developers should adopt the concept of \"Isolated Specification Tests.\" By decoupling the implementation phase from the test validation phase—essentially hiding the test logic from the AI until after code generation—builders force the model to rely on the underlying specifications rather than simply gaming the test cases. This method prevents the AI from taking the path of least resistance to turn tests green, ultimately yielding more robust code that adheres to business logic rather than just test assertions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-23T04:32:26.053Z"
+  },
+  {
+    "id": "art-1795408336092-05xhg",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/makase_roku/articles/46f8850f2fdc21",
+    "published_at": "2026-11-23T01:16:39.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9M1hE7Dw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E6%259E%25AF%25E6%25B8%2587%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%25E8%25B2%25A1%25E5%25B8%2583%25E3%2580%258D%25E3%2581%25AE%25E4%25B8%25AD%25E8%25BA%25AB%25EF%25BC%259A%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25ABLLM%25EF%25BC%2588Qwen3-14B%25E3%2580%2581%25E5%25AE%259F%25E6%25B8%25AC62.29%2520tok%252Fs%25EF%25BC%2589%25E3%2582%2592%25E5%2589%258D%25E5%2587%25A6%25E7%2590%2586%25E5%25B0%2582%25E7%2594%25A8%25E3%2581%25AB%25E5%2588%2587%25E3%2582%258A%25E5%2587%25BA%25E3%2581%2597%25E3%2581%259F...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BB%25BB%25E3%2581%259B%25E9%258C%25B2%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVVUekdqSjdCRTUwZzFxZlhDbjZSeU55LUl2MTNIUGZEcHJWS2drRjNpcGNXbmVJYz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "自宅PCのローカルLLM活用でAPI課金を最適化：Qwen3-14B（62.29 tok/s）を前処理専任にする「枯渇しない財布」戦略",
+    "summary_ja": "API費用を抑制するため、自宅PC上でローカルLLM「Qwen3-14B」を稼働させ、前処理工程を完全無料化する手法が注目されている。 Radeon RX 9070環境での実測値は62.29 tok/sを記録し、ドラフト作成や機械的なバッチ処理には十分な速度だ。 品質の要となる最終確認や公開稿の推敲のみをフロンティアモデルへ送るハイブリッド構成を組むことで、APIコストを大幅に削減しつつ開発の継続性を担保できる。",
+    "translations": {
+      "ja": {
+        "title": "自宅PCのローカルLLM活用でAPI課金を最適化：Qwen3-14B（62.29 tok/s）を前処理専任にする「枯渇しない財布」戦略",
+        "summary": "API費用を抑制するため、自宅PC上でローカルLLM「Qwen3-14B」を稼働させ、前処理工程を完全無料化する手法が注目されている。 Radeon RX 9070環境での実測値は62.29 tok/sを記録し、ドラフト作成や機械的なバッチ処理には十分な速度だ。 品質の要となる最終確認や公開稿の推敲のみをフロンティアモデルへ送るハイブリッド構成を組むことで、APIコストを大幅に削減しつつ開発の継続性を担保できる。"
+      },
+      "en": {
+        "title": "Local LLM Strategy: Using Qwen3-14B at 62.29 tok/s for Preprocessing to Eliminate API Costs",
+        "summary": "To minimize reliance on expensive paid APIs, independent developers are offloading preprocessing tasks to a local LLM, specifically Qwen3-14B running on a home machine. Achieving a robust 62.29 tok/s on an RX 9070, this setup is perfectly suited for brainstorming, mechanical batch tasks, and generating rough drafts. By confining the local model to these structured roles while reserving high-end frontier models only for final reviews and polished output, developers create a \"bottomless wallet\" that sustains high-volume iteration without recurring subscription fees. This hybrid architecture proves that intelligent workload distribution between local hardware and cloud models is the most effective way to maintain development velocity while strictly controlling operational expenses."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-23T04:32:16.092Z"
+  },
+  {
+    "id": "art-1795408328515-gq5b1",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/chi0818/items/7515d63fc28bebd7f1ee",
+    "published_at": "2026-11-23T04:18:48.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY4NTgyMyUyRjJmM2Y1Nzg5YzAzOWJkYjE5YzUyMmYxZGFmOGJkNGUwZmJjYjU3MGElMkZsYXJnZS5wbmclM0YxNzkyMTMxODQwP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0yYWQ0NDJlNGJiMWFmMjZhY2FkNTYwOGFlMDRhYjI1Mw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df2176abbbad52d3512f0ce238412f41e?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwQUklRTMlODMlODElRTMlODMlQTMlRTMlODMlODMlRTMlODMlODglRTUlQUUlOUYlRTglQTMlODUlRTMlODAlOTElRTclQUMlQUMzJUU3JUFCJUEwJTIwJUU3JUE0JUJFJUU1JTkzJUExJUU3JUFFJUExJUU3JTkwJTg2JUUzJTgxJThCJUUzJTgyJTg5QUklRTMlODMlODElRTMlODMlQTMlRTMlODMlODMlRTMlODMlODglRTMlODIlOTIlRTUlOTElQkMlRTMlODElQjYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz01OWY0OWViY2RlNmUzOTI4ODBlNTQ3NDU1Y2JiNzVjNQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBjaGkwODE4JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NDI1MmFiMjgyNmJlOWYxNjNiYzhiMzEzYjE5YjVlZjc&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=7561938d47ddc9d6568463260a903d85",
+    "title_ja": "Spring Bootで作る社員管理アプリ：既存データへAIチャット機能を統合しローカルLLMやOpenRouterで検索・回答を実現する実装手順",
+    "summary_ja": "Spring Bootで構築した社員管理アプリに、AIチャットインターフェースを実装し、RAG（検索拡張生成）の基礎技術を統合する手順を解説する。 第2章で整備した社員資料をソースとして、ローカルLLMやOpenRouterを通じて「特定の社員の誕生日」といった情報を自然言語で問い合わせる仕組みを構築する。",
+    "translations": {
+      "ja": {
+        "title": "Spring Bootで作る社員管理アプリ：既存データへAIチャット機能を統合しローカルLLMやOpenRouterで検索・回答を実現する実装手順",
+        "summary": "Spring Bootで構築した社員管理アプリに、AIチャットインターフェースを実装し、RAG（検索拡張生成）の基礎技術を統合する手順を解説する。 第2章で整備した社員資料をソースとして、ローカルLLMやOpenRouterを通じて「特定の社員の誕生日」といった情報を自然言語で問い合わせる仕組みを構築する。"
+      },
+      "en": {
+        "title": "Building AI-Integrated Apps: How to Add Conversational Chat to a Spring Boot Employee Management System Using Local LLMs or OpenRouter",
+        "summary": "This guide demonstrates how to integrate an AI chat interface into an existing Spring Boot employee management application, providing a practical foundation for RAG implementation. By leveraging employee data prepared in previous steps, the author explains how to hook up local LLMs or OpenRouter to query specific details—like an employee’s birthday—using natural language. For developers looking to bridge the gap between static CRUD apps and modern AI-driven functionality, this tutorial covers the essential backend integration patterns required to manage context and API interaction. It serves as a clear roadmap for adding conversational capabilities to legacy business logic, proving that incorporating advanced AI queries into standard business applications is increasingly straightforward for solo builders."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-23T04:32:08.515Z"
+  },
+  {
+    "id": "art-1795408320709-gb3gi",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/deep_salvia4852/n/nf8cf6244e68f",
+    "published_at": "2026-11-23T04:30:28.000Z",
+    "og_image_url": "https://assets.st-note.com/img/1795407827-C6TrUXkYMQGznHh3dbcxDFjE.jpg",
+    "title_ja": "AI教育・研究ツール「Stücke 110」が登場：4つの学習モジュールでエンジニアの理論習得を大幅に高速化する新たなアプローチ",
+    "summary_ja": "「Stücke 110」は、複雑なAI技術やデータサイエンスの理論を教育・研究の現場で効率的に学習するための4つの専門モジュール群である。 対話型の学習プロセスと視覚化機能を統合し、これまで数週間を要した概念理解の時間を劇的に短縮する設計が特徴だ。 開発者や研究者が自身のプロジェクトへ理論を応用する際、このツールセットを活用することで学習コストを下げ、実装の精度を飛躍的に高めることが期待できる。",
+    "translations": {
+      "ja": {
+        "title": "AI教育・研究ツール「Stücke 110」が登場：4つの学習モジュールでエンジニアの理論習得を大幅に高速化する新たなアプローチ",
+        "summary": "「Stücke 110」は、複雑なAI技術やデータサイエンスの理論を教育・研究の現場で効率的に学習するための4つの専門モジュール群である。 対話型の学習プロセスと視覚化機能を統合し、これまで数週間を要した概念理解の時間を劇的に短縮する設計が特徴だ。 開発者や研究者が自身のプロジェクトへ理論を応用する際、このツールセットを活用することで学習コストを下げ、実装の精度を飛躍的に高めることが期待できる。"
+      },
+      "en": {
+        "title": "Stücke 110 launches four modular tools to accelerate AI theory and research for developers",
+        "summary": "Stücke 110 has debuted as a suite of four specialized learning modules designed to streamline how developers and researchers master complex AI technologies and data science theories in real-world settings. By integrating interactive learning loops with advanced visualization tools, the platform drastically compresses the time typically required to grasp foundational concepts. For builders struggling to bridge the gap between abstract academic papers and actual product implementation, this toolset offers a way to lower the barrier to entry for advanced topics while significantly improving deployment accuracy. Developers aiming to sharpen their technical edge should treat these modules as a primary accelerator, shifting the focus from rote study to immediate, hands-on application in their own AI-driven projects."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-23T04:32:00.709Z"
+  },
+  {
     "id": "art-1795407436998-qz8pu",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -5082,33 +5187,6 @@
     "created_at": "2026-11-22T15:17:10.055Z"
   },
   {
-    "id": "art-1795360623647-ebj8h",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/note_oreki/n/n5fc1d8f8a0d2",
-    "published_at": "2026-11-22T14:55:31.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339430133/rectangle_large_type_2_cb00d22d8dfc6b7acf1b133ea38e8549.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Metaの生成AI「Muse」を個人開発で活用する。チャット型AIとは異なる「マスク型推論」の特性と実用的な機能群を徹底解説",
-    "summary_ja": "Metaが開発した生成AI「Muse」は、一般的なLLMのようなチャット形式ではなく、マスク型生成モデルを採用しており、画像の編集や高精細な生成において独特の強みを持つ。 特に画像生成やゲーム制作の補助ツールとして活用することで、従来のAIでは難しかった部分修正や高速なレンダリングが可能になる。 個人開発者が制作効率を飛躍的に高めるための、Muse特有の機能と具体的な活用シーンをまとめた。",
-    "translations": {
-      "ja": {
-        "title": "Metaの生成AI「Muse」を個人開発で活用する。チャット型AIとは異なる「マスク型推論」の特性と実用的な機能群を徹底解説",
-        "summary": "Metaが開発した生成AI「Muse」は、一般的なLLMのようなチャット形式ではなく、マスク型生成モデルを採用しており、画像の編集や高精細な生成において独特の強みを持つ。 特に画像生成やゲーム制作の補助ツールとして活用することで、従来のAIでは難しかった部分修正や高速なレンダリングが可能になる。 個人開発者が制作効率を飛躍的に高めるための、Muse特有の機能と具体的な活用シーンをまとめた。"
-      },
-      "en": {
-        "title": "Meta’s generative AI Muse for solo developers: Why mask-based inference beats standard chat models for high-fidelity creative workflows",
-        "summary": "Meta’s generative AI, Muse, operates differently from standard chat-based LLMs by utilizing a mask-based generation model that offers unique advantages in precision image editing and high-definition synthesis. For solo developers building games or creative assets, this approach excels where typical text-to-image models struggle: granular partial modification and rapid, parallelized rendering. By leveraging Muse, creators can bypass the limitations of traditional prompt-based workflows to achieve significantly tighter control over visual output. This analysis breaks down Muse’s specific architecture and practical functions, illustrating how independent builders can integrate these capabilities into their development pipelines to increase speed and aesthetic quality far beyond what standard, general-purpose chatbot tools currently deliver."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "画像生成",
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-22T15:17:03.647Z"
-  },
-  {
     "id": "art-1795360616578-wwd56",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -7563,32 +7641,6 @@
     "created_at": "2026-11-22T05:16:42.002Z"
   },
   {
-    "id": "art-1795322802178-0irqs",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/xdaily/items/3c35cfd741e41ac1e573",
-    "published_at": "2026-11-22T04:22:49.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTM1NjU2JTJGYzM4MWVkNGM1NjE2ZjQ3NjE1MjA4ZjhkZGMzYWE3YzNlYmUxM2U5YyUyRmxhcmdlLnBuZyUzRjE3OTUxNjM2MzE_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWVlNDY2NGRhZGU0MjQ2ZWE0NWE4OGIzODRiZTIyODU3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D36d6bd4348e0232ae26876c343af13eb?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QW50aWdyYXZpdHklMjAlRTMlODElOEMlMjBHZW1pbmklMjAlRTMlODElQUUlRTUlODglQTklRTclOTQlQTglRTQlQjglOEElRTklOTklOTAlRTMlODIlOTIlRTMlODMlQUElRTMlODIlQkIlRTMlODMlODMlRTMlODMlODglRTMlODElQUElRTMlODElQTklRTMlODAlODExMSUyRjIyJTIwJUUzJTgxJUFFJTIwQUklMjAlRTMlODMlOEIlRTMlODMlQTUlRTMlODMlQkMlRTMlODIlQjkmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz04ZDg3ZTBiMDhkMTllY2RhMmU3OTFiZDZlYmRmMjZlYQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB4ZGFpbHkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0xNjdmOGQ3MDdkMjliNjYzMTQwNmRjNmU5NTFkNDk2MQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=1139ae034353f6687d1cad009390a3b8",
-    "title_ja": "AI開発ニュース速報：Antigravityが全ユーザー向けGemini利用上限をリセット、Novita AIはサービス仕様を刷新（2024年11月22日版）",
-    "summary_ja": "11月22日のAI関連アップデートとして、Antigravityは全ユーザーを対象にGeminiの利用上限をリセットする措置を発表しました。 また、Novita AIはサービス利用規約および仕様の一部変更を行いました。 これらのニュースは、APIやLLMサービスを利用する開発者が、急なプラットフォームの仕様変更やリセットに対して、適切なリトライ処理や代替プロバイダーの確保を検討すべきであることを示唆しています。",
-    "translations": {
-      "ja": {
-        "title": "AI開発ニュース速報：Antigravityが全ユーザー向けGemini利用上限をリセット、Novita AIはサービス仕様を刷新（2024年11月22日版）",
-        "summary": "11月22日のAI関連アップデートとして、Antigravityは全ユーザーを対象にGeminiの利用上限をリセットする措置を発表しました。 また、Novita AIはサービス利用規約および仕様の一部変更を行いました。 これらのニュースは、APIやLLMサービスを利用する開発者が、急なプラットフォームの仕様変更やリセットに対して、適切なリトライ処理や代替プロバイダーの確保を検討すべきであることを示唆しています。"
-      },
-      "en": {
-        "title": "Daily AI Briefing: Antigravity resets Gemini usage caps for all users, alongside major service updates from Novita AI",
-        "summary": "In the latest development updates for November 22nd, the platform Antigravity officially announced a full reset of Gemini usage limits for all active users. Simultaneously, Novita AI introduced modifications to its service specifications and terms of use. For builders relying on third-party LLM APIs, these updates serve as a reminder that platform-level constraints can fluctuate without extensive lead time. Engineers should ensure robust error handling and implement multi-provider strategies to mitigate downtime when upstream usage limits are hit or service structures shift abruptly. Monitoring these daily infrastructure fluctuations is essential for maintaining application stability and preventing service interruptions in production AI environments relying on external model providers."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-22T04:46:42.178Z"
-  },
-  {
     "id": "art-1795321895512-dw0vi",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -8871,33 +8923,6 @@
     "created_at": "2026-11-21T14:32:12.236Z"
   },
   {
-    "id": "art-1795271525249-t6nwn",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ahagate/articles/b5fb94f80b318f",
-    "published_at": "2026-11-21T10:08:31.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--B6r4U6-_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A7%25E5%258B%2595%25E3%2581%2584%25E3%2581%259F%25E3%2582%2582%25E3%2581%25AE%25E3%2581%258C%25E3%2580%2581%25E6%25AD%25A3%25E3%2581%2597%25E3%2581%2584%25E3%2581%25A8%25E3%2581%25AF%25E9%2599%2590%25E3%2582%258A%25E3%2581%25BE%25E3%2581%259B%25E3%2582%2593%25E3%2580%2582%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25A8%25E3%2580%2581%25E4%25BA%25BA%25E3%2581%258B%25E3%2582%2589%25E5%258F%2597%25E3%2581%2591%25E3%2581%259F%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AF%25E5%2588%2586%25E3%2581%2591%25E3%2581%25A6%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%259B%25E3%2581%2584%25E3%2582%2584%25EF%25BC%25A0%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzliYmM2M2Q3YmQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「動いた」は「正しい」とは限らない：AIプログラミング時代に個人開発と受託案件で求められる人間側の設計責任と判断基準",
-    "summary_ja": "AIを活用すれば短期間でアプリ開発が可能だが、AIの生成したコードが「動作する」ことと「要件を満たし正しい」ことは別物である。 特に他者から請け負った案件では、AI任せのコード品質ではリスクが大きく、人間がアーキテクチャの妥当性やセキュリティを判断する責任が残る。 個人開発で試行錯誤するフェーズと、本番環境で品質保証が必要なフェーズを峻別し、AIをあくまで「補助ツール」として使いこなすためのエンジニアリング的思考が今まさに求められている。",
-    "translations": {
-      "ja": {
-        "title": "「動いた」は「正しい」とは限らない：AIプログラミング時代に個人開発と受託案件で求められる人間側の設計責任と判断基準",
-        "summary": "AIを活用すれば短期間でアプリ開発が可能だが、AIの生成したコードが「動作する」ことと「要件を満たし正しい」ことは別物である。 特に他者から請け負った案件では、AI任せのコード品質ではリスクが大きく、人間がアーキテクチャの妥当性やセキュリティを判断する責任が残る。 個人開発で試行錯誤するフェーズと、本番環境で品質保証が必要なフェーズを峻別し、AIをあくまで「補助ツール」として使いこなすためのエンジニアリング的思考が今まさに求められている。"
-      },
-      "en": {
-        "title": "Why \"working code\" isn't \"correct code\": Essential oversight for AI-assisted development in personal versus client-facing software projects",
-        "summary": "AI tools allow developers to ship applications rapidly, yet a crucial distinction remains: code that executes is not necessarily code that is architecturally sound or correct. For personal projects, rapid iteration with AI is a superpower, but for client-facing work, delegating every decision to an LLM introduces significant risks regarding long-term maintenance and security. Developers must retain active ownership of the system logic, separating exploratory prototyping from production-grade requirements. The core lesson is that AI should be treated as a force multiplier for syntax and boilerplate, not as a replacement for human judgment. For builders, the key is knowing exactly when to audit AI output versus when to let it accelerate your workflow."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-21T14:32:05.249Z"
-  },
-  {
     "id": "art-1795271508703-2c5mj",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -9605,32 +9630,6 @@
       "研究"
     ],
     "created_at": "2026-11-21T07:01:43.878Z"
-  },
-  {
-    "id": "art-1795242711435-w2q29",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/ponfreelance/articles/cryptbot-zenn-2026-10-27-0e7bc2f0",
-    "published_at": "2026-11-21T01:30:33.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--htRayXh1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2590%258D%25E7%259B%258A%25E8%25A8%2588%25E7%25AE%2597%25E3%2581%25A8%25E7%25A8%258E%25E5%258B%2599%25E5%2587%25BA%25E5%258A%259B%25E3%2582%2592%25E3%2580%258C%25E7%25B4%2584%25E5%25AE%259A%25E3%2581%25AE%25E8%25A8%2598%25E9%258C%25B2%25E3%2580%258D%25E3%2581%258B%25E3%2582%2589%25E9%2580%2586%25E7%25AE%2597%25E3%2581%2597%25E3%2581%25A6%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%2597%25E3%2581%259F%25E7%2590%2586%25E7%2594%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BD%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSURKYWtUQU1QbU1PYmxfWW51cGZBdTk5aG5IdjlLbm9hQmdUNEp3VUo5NFlFZjNBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "自動売買BOTの損益・税務データ設計：毎分の取引を永続化し、システム変更や削除後も記録を担保するアーキテクチャ",
-    "summary_ja": "FastAPIとReact Native Expoで構築した自動売買BOTにおいて、損益計算と税務対応を「約定の記録」から逆算して設計した手法を解説する。 BOTが毎分稼働し、個人開発でレビュー体制が限定的という制約下で、BOTを削除しても取引履歴を確実に保持するデータ構造を採用した。 単なる計算ロジックの実装ではなく、取引記録の不変性とトレーサビリティを優先してデータベースを設計することが、長期的な税務対応と運用の安定性を支える鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "自動売買BOTの損益・税務データ設計：毎分の取引を永続化し、システム変更や削除後も記録を担保するアーキテクチャ",
-        "summary": "FastAPIとReact Native Expoで構築した自動売買BOTにおいて、損益計算と税務対応を「約定の記録」から逆算して設計した手法を解説する。 BOTが毎分稼働し、個人開発でレビュー体制が限定的という制約下で、BOTを削除しても取引履歴を確実に保持するデータ構造を採用した。 単なる計算ロジックの実装ではなく、取引記録の不変性とトレーサビリティを優先してデータベースを設計することが、長期的な税務対応と運用の安定性を支える鍵となる。"
-      },
-      "en": {
-        "title": "Architecting P&L and Tax Export for Automated Trading Bots: Ensuring Permanent Trade Records Beyond System Lifecycles",
-        "summary": "This post details the data architecture for an automated trading bot built with FastAPI and React Native Expo, specifically focusing on P&L calculation and tax-compliant CSV exports. Operating under the constraints of minute-by-minute execution and limited manual review cycles, the system was designed to ensure trade records persist even if the bot instance itself is deleted. Instead of treating tax data as a byproduct, the architecture treats the immutable record of executions as the primary source of truth. For solo builders creating fintech tools, the practical takeaway is that prioritizing the decoupling of raw trade logs from bot logic is essential for long-term tax compliance and auditability, preventing data loss when code changes or systems scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-21T06:31:51.435Z"
   },
   {
     "id": "art-1795240013153-9ff1u",
