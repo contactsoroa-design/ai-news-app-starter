@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1795400260599-vn7ey",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/recdnd/articles/dungeons-enemy-ladder-provisional-values",
+    "published_at": "2026-11-23T00:00:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pHkGfXE0--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2595%25B5%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25A9%25E3%2581%25AE%25E5%25BC%25B7%25E3%2581%2595%25E3%2582%2592%252024%2520%25E6%25AE%25B5%25E3%2581%25AE%25E3%2580%258C%25E3%2581%25AF%25E3%2581%2597%25E3%2581%2594%25E3%2580%258D%25E3%2581%25A7%25E7%25AE%25A1%25E7%2590%2586%25E3%2581%2597%25E3%2580%2581%25E4%25BB%25AE%25E3%2581%25AE%25E5%2580%25A4%25E3%2581%25AF%25E4%25BB%25AE%25E3%2581%25AE%25E8%25A6%258B%25E3%2581%259F%25E7%259B%25AE%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:recdnd%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSnF4RWtxZjFuNHp2Q0tPS0hnc2ZtWHMzUVFqblRwOHk5NUhUdVR4cGRPdEtrNm50SlA9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "ブラウザゲーム開発：敵の強さを24段階の「はしご」で一元管理し、仮値と仮グラフィックでバランス調整を効率化する方法",
+    "summary_ja": "ブラウザで動くローグライク風ゲームの開発において、散在していた敵キャラの定義を「1行1体」の登録表へ集約した。 強さを「24段のはしご」という独自スケールに当てはめることで直感的な比較を可能にし、未確定の数値や画像には「仮の見た目」を設定する運用を導入。 バラバラなパラメータを一覧化し可視化することで、ゲームバランスの調整や開発の継続性が大幅に向上する。",
+    "translations": {
+      "ja": {
+        "title": "ブラウザゲーム開発：敵の強さを24段階の「はしご」で一元管理し、仮値と仮グラフィックでバランス調整を効率化する方法",
+        "summary": "ブラウザで動くローグライク風ゲームの開発において、散在していた敵キャラの定義を「1行1体」の登録表へ集約した。 強さを「24段のはしご」という独自スケールに当てはめることで直感的な比較を可能にし、未確定の数値や画像には「仮の見た目」を設定する運用を導入。 バラバラなパラメータを一覧化し可視化することで、ゲームバランスの調整や開発の継続性が大幅に向上する。"
+      },
+      "en": {
+        "title": "How to Standardize Enemy Balance in Indie Games Using a 24-Tier Strength Ladder and Provisional Placeholder Visuals",
+        "summary": "For a web-based roguelike project, disparate enemy definitions created a balancing nightmare until the developer aggregated them into a centralized \"Enemy Registration Table.\" By mapping every entity onto a standardized 24-tier strength ladder, the developer can now visually compare game units at a glance. They also implemented a system where placeholder stats are visually represented with provisional graphics, preventing development stalls during prototyping. This approach of creating a strict, centralized data structure for game objects transforms erratic balancing into a predictable, manageable workflow. It offers a crucial lesson for indie game builders: centralizing design data and using abstract scales makes rapid iteration and sustained development significantly easier than relying on scattered configurations."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-23T02:17:40.599Z"
+  },
+  {
+    "id": "art-1795400242126-md5uw",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.gilesthomas.com/2026/03/llm-from-scratch-32f-interventions-weight-decay",
+    "published_at": "2026-11-23T01:41:30.000Z",
+    "og_image_url": "https://www.gilesthomas.com/images/favicons/web-app-manifest-512x512.png",
+    "title_ja": "LLMをスクラッチで実装する連載「パート32f」：重み減衰（Weight Decay）を用いたモデル学習への介入手法を徹底解説",
+    "summary_ja": "LLMのゼロベース構築を追う連載第32f回では、学習中の「重み減衰（Weight Decay）」に焦点を当て、その数学的なメカニズムとモデルの汎化性能に対する影響を詳細に検証する。 過学習を防ぐための正則化手法として機能する重み減衰をどう最適化し、LLMのパラメータ更新に組み込むべきか。 AI構築の基礎を固めたいエンジニアにとって、学習の安定性と精度を左右する重要な実装知見が得られる。",
+    "translations": {
+      "ja": {
+        "title": "LLMをスクラッチで実装する連載「パート32f」：重み減衰（Weight Decay）を用いたモデル学習への介入手法を徹底解説",
+        "summary": "LLMのゼロベース構築を追う連載第32f回では、学習中の「重み減衰（Weight Decay）」に焦点を当て、その数学的なメカニズムとモデルの汎化性能に対する影響を詳細に検証する。 過学習を防ぐための正則化手法として機能する重み減衰をどう最適化し、LLMのパラメータ更新に組み込むべきか。 AI構築の基礎を固めたいエンジニアにとって、学習の安定性と精度を左右する重要な実装知見が得られる。"
+      },
+      "en": {
+        "title": "Writing an LLM from scratch part 32f: A deep technical guide to understanding interventions via weight decay in model training",
+        "summary": "In the 32nd installment of this series on building a large language model from scratch, the author dives into the technical mechanics of weight decay as a primary intervention method during training. This article provides a clear breakdown of how weight decay functions as a regularization technique to penalize large weights, effectively preventing overfitting and ensuring better generalization in the resulting model. For developers building LLMs, understanding how to balance these updates is crucial for maintaining numerical stability and avoiding gradient degradation during the training process. This deep dive offers the necessary implementation details for anyone looking to move beyond simple architectures and fine-tune their own custom model training pipelines with greater precision."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-23T02:17:22.126Z"
+  },
+  {
+    "id": "art-1795400233545-qiy1l",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/humble_ixora7327/n/n3380c6da6104",
+    "published_at": "2026-11-23T02:05:48.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/7bfac7269b63287bc4e6cca21e1a47e98a03d4ba.png",
+    "title_ja": "登録不要・完全無料の筋トレ記録アプリ「トレログ」をリリース、UI/UXを極限までシンプルに追求した個人開発の裏側",
+    "summary_ja": "個人開発者がリリースした「トレログ」は、アカウント登録不要で即座に利用可能な筋トレ記録アプリだ。 ユーザーの摩擦を最小限に抑える設計方針を採用し、トレーニング中の入力負荷を極限まで軽減した。 アプリの成功には、ターゲット層が求める主要機能を厳選し、複雑な機能をあえて削ぎ落とす「引き算のデザイン」が欠かせない。 シンプルなツールほど継続利用されやすく、ニッチな課題に対する解像度の高さが、開発者の強みとなる。",
+    "translations": {
+      "ja": {
+        "title": "登録不要・完全無料の筋トレ記録アプリ「トレログ」をリリース、UI/UXを極限までシンプルに追求した個人開発の裏側",
+        "summary": "個人開発者がリリースした「トレログ」は、アカウント登録不要で即座に利用可能な筋トレ記録アプリだ。 ユーザーの摩擦を最小限に抑える設計方針を採用し、トレーニング中の入力負荷を極限まで軽減した。 アプリの成功には、ターゲット層が求める主要機能を厳選し、複雑な機能をあえて削ぎ落とす「引き算のデザイン」が欠かせない。 シンプルなツールほど継続利用されやすく、ニッチな課題に対する解像度の高さが、開発者の強みとなる。"
+      },
+      "en": {
+        "title": "Developer releases 'ToreLog,' a registration-free workout tracker focusing on minimalist UX to drive user retention",
+        "summary": "A solo developer has launched 'ToreLog,' a workout tracking application that eliminates account registration to allow for instant data entry. By prioritizing a frictionless user interface designed specifically for high-intensity training environments, the app reduces the cognitive load of logging sets and reps during a session. This release highlights a critical lesson for indie builders: the 'subtraction design' philosophy—ruthlessly cutting secondary features to isolate and perfect the core utility—is often the primary driver of product stickiness. For those building niche tools, the key takeaway is that obsessing over the immediate user experience, rather than adding complex, bloat-heavy functionality, is the most effective strategy to ensure consistent adoption and long-term user retention in a crowded marketplace."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-23T02:17:13.545Z"
+  },
+  {
+    "id": "art-1795400216985-xc4c2",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/delta_net/items/16eacf2061648c2fee3f",
+    "published_at": "2026-11-23T02:11:45.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTI4MTAwJTJGMzJmMmUwYjc0ZmZkZTdjM2RlNzgwMzc1NDJjNGFhMTA2YjM5NmMzYSUyRmxhcmdlLnBuZyUzRjE3OTM4OTEwMjM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTNlNjI4NzU2NTRjZmMyYjJjYTgxYzA2YjZjOGVjYTJk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df54700d5a8c86684f8dc7ed8afcb5831?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQUIlRTMlODElQUYlRTMlODAlODElRTUlODglODYlRTMlODElOEIlRTMlODElQTMlRTMlODElOUYlRTMlODElQjUlRTMlODIlOEElRTMlODIlOTIlRTMlODElOTclRTMlODElQUElRTMlODElOEYlRTMlODElQTYlRTMlODElODQlRTMlODElODQlMjAlRTIlODAlOTUlMjAlRTQlQkQlOTUlRTUlQkElQTYlRTglODElOUUlRTMlODElOEQlRTclOUIlQjQlRTMlODElOTclRTMlODElQTYlRTMlODIlODIlRTUlQUIlOEMlRTMlODElQUElRTklQTElOTQlRTMlODIlOTIlRTMlODElOTUlRTMlODIlOEMlRTMlODElQUElRTMlODElODQlRTclOUIlQjglRTYlODklOEIlRTMlODElQTglRTMlODElQUUlRTQlQkIlOTglRTMlODElOEQlRTUlOTAlODglRTMlODElODQlRTYlOTYlQjkmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz00NjM3NjNjY2MzMTdhNmVjZDY3YTU3NGZhN2FiNTZkNQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBkZWx0YV9uZXQmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1kOWNhYmRiODI2MjBkY2E2NWE3N2VkMDYwMGI2MmE1MQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=9e8981e0d4a0f5dc23194086fee99cc7",
+    "title_ja": "AIには「分かったふり」は不要―何度でも聞き直せる最強のメンターとして活用する、思考を深めるプロンプトの対話術",
+    "summary_ja": "AIとの対話で、答えが理解できないまま「分かったふり」をして会話を終わらせるのは、学習の機会損失である。 人間相手には聞き返すのをためらうような些細な疑問や、理解不足の点であっても、AIは何度でも文句を言わずに解説してくれる。 このAI特有の性質を逆手に取り、納得するまで深掘りする「対話的な思考プロセス」を習慣化することで、AIは単なる自動生成ツールから、個人の知見を拡張する無制限のメンターへと進化する。",
+    "translations": {
+      "ja": {
+        "title": "AIには「分かったふり」は不要―何度でも聞き直せる最強のメンターとして活用する、思考を深めるプロンプトの対話術",
+        "summary": "AIとの対話で、答えが理解できないまま「分かったふり」をして会話を終わらせるのは、学習の機会損失である。 人間相手には聞き返すのをためらうような些細な疑問や、理解不足の点であっても、AIは何度でも文句を言わずに解説してくれる。 このAI特有の性質を逆手に取り、納得するまで深掘りする「対話的な思考プロセス」を習慣化することで、AIは単なる自動生成ツールから、個人の知見を拡張する無制限のメンターへと進化する。"
+      },
+      "en": {
+        "title": "Stop Pretending You Understand AI Responses: How to Turn LLMs Into Infinite Mentors by Asking Without Hesitation",
+        "summary": "Pretending to understand an AI's response just to keep the conversation moving is a massive loss of learning potential. Unlike human colleagues, who might grow frustrated with repetitive questioning, an AI can be queried an infinite number of times without judgment, fatigue, or social friction. By intentionally leaning into this unique property, developers can transform AI from a simple code generator into a tireless, on-demand mentor. The key is to treat every vague response as a prompt to dig deeper, iterating until the underlying logic is crystal clear. This conversational debugging habit converts LLMs into powerful intellectual sparring partners, allowing you to bridge knowledge gaps immediately and refine your technical grasp far more efficiently than self-study alone."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-23T02:16:56.985Z"
+  },
+  {
     "id": "art-1795399350076-uqjy6",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -5060,33 +5163,6 @@
     "created_at": "2026-11-22T13:02:08.016Z"
   },
   {
-    "id": "art-1795352521529-io4fy",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kasane_app/n/nf29ff3c4d4ff",
-    "published_at": "2026-11-22T12:59:23.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339385410/rectangle_large_type_2_727ff64f2e363db28c8c262e559cc89b.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "iPhone向け配当管理アプリ「Kasane」、有料版の1週間無料トライアル機能を追加―開発者自身が欲した機能を拡充",
-    "summary_ja": "iPhoneアプリ「Kasane」は、配当記録や口座別ポートフォリオ管理といった独自の分析機能を提供する有料プランに対し、新たに1週間の無料トライアル期間を導入した。 開発者自身が「こんな機能が欲しい」と実装した資産管理機能群は、長期的な投資判断をサポートする。 個人開発者がマネタイズ施策としてフリートライアルを導入することで、ユーザーの離脱を抑えつつ、プレミアム機能へのコンバージョンを促す好例だ。",
-    "translations": {
-      "ja": {
-        "title": "iPhone向け配当管理アプリ「Kasane」、有料版の1週間無料トライアル機能を追加―開発者自身が欲した機能を拡充",
-        "summary": "iPhoneアプリ「Kasane」は、配当記録や口座別ポートフォリオ管理といった独自の分析機能を提供する有料プランに対し、新たに1週間の無料トライアル期間を導入した。 開発者自身が「こんな機能が欲しい」と実装した資産管理機能群は、長期的な投資判断をサポートする。 個人開発者がマネタイズ施策としてフリートライアルを導入することで、ユーザーの離脱を抑えつつ、プレミアム機能へのコンバージョンを促す好例だ。"
-      },
-      "en": {
-        "title": "Dividend tracking app Kasane adds a 1-week free trial for premium features on iOS",
-        "summary": "The iPhone app Kasane has officially introduced a one-week free trial for its premium tier, which unlocks advanced features like dividend tracking and account-specific portfolio visualization. Built to solve the developer's own pain points in managing investment assets, these tools are designed to facilitate better long-term financial decision-making for individual investors. By implementing a free trial period, the developer is testing a classic monetization strategy: removing friction for users to experience value upfront, which is a proven method for improving conversion rates from free users to paid subscribers in indie apps. For solo developers looking to scale revenue, this highlights how well-timed gating and trial access can turn curiosity into sustainable recurring income."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-22T13:02:01.529Z"
-  },
-  {
     "id": "art-1795352513467-o44eo",
     "source_id": "source-benchlm",
     "source_name": "BenchLM（モデル動向）",
@@ -6328,32 +6404,6 @@
     "created_at": "2026-11-22T08:46:45.339Z"
   },
   {
-    "id": "art-1795336322776-sv09v",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/",
-    "published_at": "2026-11-22T08:22:17.000Z",
-    "og_image_url": "https://static.scientificamerican.com/dam/asset/64e45f50-d1c5-4a9f-ad48-60b52541abcc/riemann-proven.jpg?m=1795211310.647&w=1200",
-    "title_ja": "数学界の難問「リーマン予想」に対しAIが示した証明案が正しい可能性が極めて高いと専門家が結論付け",
-    "summary_ja": "数学史上最大の難問の一つであるリーマン予想に対し、AIが提案した証明プロセスについて、独立した数学者らが精査の結果「ほぼ確実に正しい」との見解を示した。 従来の数学的アプローチをAIが補完あるいは代替し得る可能性を示唆しており、複雑なロジック検証におけるAIの信頼性が大きく前進した事例となる。 開発者にとっては、形式手法や推論タスクにおいてAIが単なる生成ツールを超え、学術的な厳密さが求められる領域で実用的な貢献を果たし始めている事実に注目すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "数学界の難問「リーマン予想」に対しAIが示した証明案が正しい可能性が極めて高いと専門家が結論付け",
-        "summary": "数学史上最大の難問の一つであるリーマン予想に対し、AIが提案した証明プロセスについて、独立した数学者らが精査の結果「ほぼ確実に正しい」との見解を示した。 従来の数学的アプローチをAIが補完あるいは代替し得る可能性を示唆しており、複雑なロジック検証におけるAIの信頼性が大きく前進した事例となる。 開発者にとっては、形式手法や推論タスクにおいてAIが単なる生成ツールを超え、学術的な厳密さが求められる領域で実用的な貢献を果たし始めている事実に注目すべきだ。"
-      },
-      "en": {
-        "title": "Independent mathematicians confirm AI-generated proof for the Riemann Hypothesis is almost certainly correct",
-        "summary": "Independent mathematicians have evaluated an AI-generated proof for the Riemann Hypothesis, one of mathematics' greatest open problems, concluding that the logical structure is almost certainly correct. This milestone demonstrates that artificial intelligence is moving beyond simple code generation into verifying high-stakes, logically rigorous proofs that previously required decades of human effort. For builders and AI engineers, this represents a significant shift in capability: LLMs and reasoning agents are now viable partners for solving complex, non-deterministic logical problems that require absolute precision. The takeaway is that we are entering an era where AI doesn't just assist in code synthesis but can serve as a legitimate, reliable engine for formal verification in research and advanced backend logic systems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-22T08:32:02.776Z"
-  },
-  {
     "id": "art-1795336306057-55ftu",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -7436,31 +7486,6 @@
       "研究"
     ],
     "created_at": "2026-11-22T02:01:52.681Z"
-  },
-  {
-    "id": "art-1795311129182-rk7re",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ennagara128/items/70ce7e25f1122e7d56ce",
-    "published_at": "2026-11-22T01:19:15.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MTU2NTc4JTJGYTgyYjkyMzUzMWRkYzIxYmZhMWY4MDhhY2QyMjM5Yzk2NjlkZjg4NSUyRnhfbGFyZ2UucG5nJTNGMTc3NjY1NTA1MT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NGYxNjY0YWY5ZmI5NmJiZTZjYjRjMTFlMWFjNjVhNWQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D8d44234ba9198549fbf0016c0117ba44?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9MjAyNiVFNSVCOSVCNDExJUU2JTlDJTg4MjIlRTYlOTclQTUlMjAlRTQlQkIlOEElRTYlOTclQTUlRTMlODElQUVRaWl0YSVFMyU4MyU4OCVFMyU4MyVBQyVFMyU4MyVCMyVFMyU4MyU4OSVFOCVBOCU5OCVFNCVCQSU4QiVFMyU4MiU5MiVFMyU4MyU5RCVFMyU4MyU4MyVFMyU4MyU4OSVFMyU4MiVBRCVFMyU4MyVBMyVFMyU4MiVCOSVFMyU4MyU4OCVFMyU4MSVBNyVFOCU4MSVCNCVFMyU4MSU5MyVFMyU4MSU4NiVFRiVCQyU4MSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTY5ZmYxNTE2MmJmNTc4MGU1YWI2YTZjMjNhNDRjYTQy&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBlbm5hZ2FyYTEyOCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWUxNDBiMDk1ZGMwYjI5MGJlY2ZhNjZlMTM0NDk4NzVk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=1b0e243d6ade27925ef59314c5fc83f3",
-    "title_ja": "Qiitaトレンド記事を毎朝AIがポッドキャスト化、通勤時間に技術情報を効率的にキャッチアップする新習慣",
-    "summary_ja": "Qiitaで前日夜に話題となったトレンド記事をAIが要約し、毎朝7時に自動配信するポッドキャストサービスが公開された。 最新技術情報を忙しい通勤時間や作業の合間に「ながら聴き」できるのが最大の特徴だ。 エンジニアは、テキストを読む時間が確保できない日でも、効率的に技術トレンドを把握し、インプットの質を向上させるための手段として活用できる。",
-    "translations": {
-      "ja": {
-        "title": "Qiitaトレンド記事を毎朝AIがポッドキャスト化、通勤時間に技術情報を効率的にキャッチアップする新習慣",
-        "summary": "Qiitaで前日夜に話題となったトレンド記事をAIが要約し、毎朝7時に自動配信するポッドキャストサービスが公開された。 最新技術情報を忙しい通勤時間や作業の合間に「ながら聴き」できるのが最大の特徴だ。 エンジニアは、テキストを読む時間が確保できない日でも、効率的に技術トレンドを把握し、インプットの質を向上させるための手段として活用できる。"
-      },
-      "en": {
-        "title": "AI-Generated Daily Podcast Turns Evening Qiita Tech Trends into Morning Audio Briefings for Busy Engineers",
-        "summary": "A new AI-powered service automatically transforms the previous night's trending Qiita articles into a concise podcast, published daily at 7:00 AM. Designed specifically for developers with packed schedules, this tool enables high-bandwidth technical learning during commutes or daily routines through passive audio consumption. By leveraging automated summarization, engineers can stay aligned with the latest industry shifts and emerging coding practices even on days when sitting down to read long-form technical content is impossible. This initiative demonstrates how AI synthesis can bridge the gap between content overload and actionable learning, offering builders a way to maintain consistent knowledge growth without disrupting their primary workflow or sacrificing their limited downtime."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-22T01:32:09.182Z"
   },
   {
     "id": "art-1795311121090-80ngf",
@@ -9966,32 +9991,6 @@
       "開発"
     ],
     "created_at": "2026-11-20T23:16:49.862Z"
-  },
-  {
-    "id": "art-1795216603361-wpp2s",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/makase_roku/articles/fd3c3f8bcb1186",
-    "published_at": "2026-11-20T22:57:50.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--rYrLyeQ_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E5%2588%25A9%25E7%2594%25A8%25E6%259E%25A0%25E3%2582%25925%25E3%2581%25A4%25E3%2581%25AE%25E8%25B2%25A1%25E5%25B8%2583%25E3%2581%25AB%25E5%2588%2586%25E3%2581%2591%25E3%2581%259F%25E9%2585%258D%25E5%2588%2586%25E8%25A8%25AD%25E8%25A8%2588%25EF%25BC%259A%25E6%259E%25A0%25E5%2588%2587%25E3%2582%258C%25E3%2581%25AE%25E5%25AE%259F%25E9%258C%25B2%25E3%2580%25813%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E5%25AE%259F%25E6%25B8%25AC%25E3%2581%25A7%25E5%25B4%25A9%25E3%2582%258C%25E3%2581%259F%25E5%2589%258D%25E6%258F%2590%25E3%2580%2581%25E6%25AE%258B%25E9%2587%258F%25E3%2582%25AC%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25B8%25E3%2581%25AE%25E8%25BB%25A2%25E6%258F%259B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BB%25BB%25E3%2581%259B%25E9%258C%25B2%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVVUekdqSjdCRTUwZzFxZlhDbjZSeU55LUl2MTNIUGZEcHJWS2drRjNpcGNXbmVJYz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI API利用枠を5つの「財布」で分離管理する設計術：実測で判明したAPI消費の罠と残量ガードへの運用転換",
-    "summary_ja": "AIエージェントのAPI利用枠を、リセット単位と残量を個別に監視できる「5つの財布」に分割管理する手法を解説。 当初はモデル毎の専用枠と想定していたが、実測により複数モデルが同一プールから消費される仕様が判明したため、残量枯渇を防ぐ監視・制限アーキテクチャへと運用を刷新した。 複雑化するマルチモデル運用でコスト管理を自動化し、サービス停止を回避するための教訓である。",
-    "translations": {
-      "ja": {
-        "title": "AI API利用枠を5つの「財布」で分離管理する設計術：実測で判明したAPI消費の罠と残量ガードへの運用転換",
-        "summary": "AIエージェントのAPI利用枠を、リセット単位と残量を個別に監視できる「5つの財布」に分割管理する手法を解説。 当初はモデル毎の専用枠と想定していたが、実測により複数モデルが同一プールから消費される仕様が判明したため、残量枯渇を防ぐ監視・制限アーキテクチャへと運用を刷新した。 複雑化するマルチモデル運用でコスト管理を自動化し、サービス停止を回避するための教訓である。"
-      },
-      "en": {
-        "title": "Managing AI API quotas with a '5-Wallet' strategy: Lessons from unexpected consumption patterns and production downtime",
-        "summary": "To manage AI agent API quotas effectively, this developer implemented a 'five-wallet' system, isolating buckets based on reset cycles and remaining capacity. Initially assuming each model maintained an independent quota, empirical testing revealed that multiple models were draining from the same shared pool, leading to a sudden, service-halting depletion. The author pivoted to a robust monitoring architecture that treats these wallets as strict budget guards. This approach avoids the trap of blindly trusting provider documentation on rate limits. For builders scaling multi-model AI applications, the key takeaway is to build explicit, real-time consumption tracking rather than relying on assumed per-model limits, ensuring critical agent workflows do not crash during traffic spikes."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-20T23:16:43.361Z"
   },
   {
     "id": "art-1795215694207-2zihj",
