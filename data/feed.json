@@ -1,5 +1,33 @@
 [
   {
+    "id": "art-1795464115494-gdcj5",
+    "source_id": "source-notion",
+    "source_name": "Notion API Changelog (Agent / MCP)",
+    "url": "https://developers.notion.com/page/changelog#november-18-2026",
+    "published_at": "2026-11-23T17:12:18.000Z",
+    "og_image_url": "https://notion-demo.mintlify.site/images/og-image.png",
+    "title_ja": "Notion APIがMCP対応へ：AIエージェントがNotionデータを直接読み書きする新設計を発表",
+    "summary_ja": "Notion APIが「Model Context Protocol（MCP）」のサポートを開始し、ClaudeなどのAIエージェントがNotionのデータベースやページにセキュアかつ直接アクセスできるようになった。 これまでのような複雑なAPIラッパーや認証管理を介さず、標準化されたプロトコルでAIエージェントに社内ナレッジを接続できるため、ワークフロー自動化の構築コストが劇的に下がる。 開発者にとって、社内AIツールの統合はよりシンプルで直感的なものとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Notion APIがMCP対応へ：AIエージェントがNotionデータを直接読み書きする新設計を発表",
+        "summary": "Notion APIが「Model Context Protocol（MCP）」のサポートを開始し、ClaudeなどのAIエージェントがNotionのデータベースやページにセキュアかつ直接アクセスできるようになった。 これまでのような複雑なAPIラッパーや認証管理を介さず、標準化されたプロトコルでAIエージェントに社内ナレッジを接続できるため、ワークフロー自動化の構築コストが劇的に下がる。 開発者にとって、社内AIツールの統合はよりシンプルで直感的なものとなるだろう。"
+      },
+      "en": {
+        "title": "Notion API adopts Model Context Protocol, enabling direct AI agent access to workspace data",
+        "summary": "Notion has officially integrated the Model Context Protocol (MCP), allowing AI agents like Claude to interact directly with Notion databases and pages without relying on brittle, custom API wrappers. By adopting this open standard, Notion removes the heavy lifting required for authentication and data translation, enabling agents to query, read, and write information directly from the workspace context. This shift significantly lowers the friction for developers building internal AI workflows, as data connectivity is now standardized and plug-and-play. For builders, this means you can finally stop maintaining bespoke synchronization scripts and instead plug your existing AI agent stacks directly into Notion, treating your workspace like a first-class knowledge source for intelligent, automated enterprise operations."
+      }
+    },
+    "tool_tags": [
+      "Notion"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-23T20:01:55.494Z"
+  },
+  {
     "id": "art-1795462499272-de7nt",
     "source_id": "source-hf",
     "source_name": "Hugging Face Blog / Papers",
@@ -29975,32 +30003,6 @@
       "開発"
     ],
     "created_at": "2026-11-13T09:38:44.270Z"
-  },
-  {
-    "id": "art-1794562367912-gkwwf",
-    "source_id": "source-arxiv",
-    "source_name": "arXiv (cs.AI / cs.CL)",
-    "url": "https://arxiv.org/abs/2611.14781",
-    "published_at": "2026-11-13T05:00:00.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "VLMの推論結果を活用する「θ-confidence Map」提案、AIエージェントの確率的な状態推定で安全性と実行効率を両立",
-    "summary_ja": "大規模視覚言語モデル（VLM）を用いたAIエージェントにおいて、従来の「単一の推論結果」に依存する状態推定は、誤予測時に安全性を損なう問題がある。 本研究は、VLMの出力層のトークン分布を活用し、確率を考慮した「θ-confidence Map」を構築する手法を提案した。 完全な確率分布の維持という計算コストの高いアプローチを避けつつ、単一予測の脆さを克服する。 不確実性を管理可能な形で扱うことで、実環境でのエージェントの判断精度と信頼性を高める実践的な中間解となっている。",
-    "translations": {
-      "ja": {
-        "title": "VLMの推論結果を活用する「θ-confidence Map」提案、AIエージェントの確率的な状態推定で安全性と実行効率を両立",
-        "summary": "大規模視覚言語モデル（VLM）を用いたAIエージェントにおいて、従来の「単一の推論結果」に依存する状態推定は、誤予測時に安全性を損なう問題がある。 本研究は、VLMの出力層のトークン分布を活用し、確率を考慮した「θ-confidence Map」を構築する手法を提案した。 完全な確率分布の維持という計算コストの高いアプローチを避けつつ、単一予測の脆さを克服する。 不確実性を管理可能な形で扱うことで、実環境でのエージェントの判断精度と信頼性を高める実践的な中間解となっている。"
-      },
-      "en": {
-        "title": "New θ-confidence Map approach uses VLM output distributions to improve safety and reliability in AI agent state estimation",
-        "summary": "Most AI agents using pre-trained Vision-Language Models (VLMs) suffer from brittleness by forcing uncertain predictions into a single deterministic state, which often leads to unsafe decisions when the model is wrong. This research proposes an elegant middle ground: the θ-confidence Map. Instead of maintaining an intractable full probability distribution or relying on fragile best-guesses, it leverages the inherent token distributions from the VLM's output layer to quantify uncertainty. By integrating this probabilistic framework, agents can make decisions that remain grounded in reality while avoiding the overhead of complex Bayesian inference. This provides a practical architectural pattern for developers building autonomous agents that need to balance robustness with operational efficiency in unpredictable, real-world environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-13T09:32:47.912Z"
   },
   {
     "id": "art-1794562361228-er6lb",
