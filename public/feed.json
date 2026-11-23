@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795425423112-jkjso",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://hxu129.github.io/scholarcraft-tools/promptshield/index.html",
+    "published_at": "2026-11-23T08:23:27.000Z",
+    "og_image_url": null,
+    "title_ja": "LLMプロンプト内の機密情報・PIIをローカルで可逆的に隠蔽する「PromptShield」が登場、API送信前のデータ保護を強化",
+    "summary_ja": "PromptShieldは、LLMへ送信するプロンプト内の機密情報（PII）をAPI通信前にローカル環境で自動検出し、ハッシュ化して匿名化するオープンソースツールだ。 最大の特徴は、レスポンス受領後にハッシュ値を元のテキストへ正確に復元できる可逆性にある。 外部APIにデータを送る際、セキュリティとプライバシーを担保しつつ、プロンプトのコンテキストを維持したいエンジニアにとって、実装コストを抑えた有効な保護レイヤーとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "LLMプロンプト内の機密情報・PIIをローカルで可逆的に隠蔽する「PromptShield」が登場、API送信前のデータ保護を強化",
+        "summary": "PromptShieldは、LLMへ送信するプロンプト内の機密情報（PII）をAPI通信前にローカル環境で自動検出し、ハッシュ化して匿名化するオープンソースツールだ。 最大の特徴は、レスポンス受領後にハッシュ値を元のテキストへ正確に復元できる可逆性にある。 外部APIにデータを送る際、セキュリティとプライバシーを担保しつつ、プロンプトのコンテキストを維持したいエンジニアにとって、実装コストを抑えた有効な保護レイヤーとなるだろう。"
+      },
+      "en": {
+        "title": "PromptShield launches as a local, reversible PII redaction tool to secure LLM prompts before third-party API transmission",
+        "summary": "PromptShield is a new open-source utility designed to automatically detect and redact sensitive personally identifiable information (PII) from prompts before they are sent to an LLM. Unlike basic scrubbing tools that permanently destroy sensitive data, PromptShield uses a reversible hashing technique that allows developers to perfectly restore the original content once the LLM response is received. This approach ensures that privacy and security compliance requirements are met without sacrificing the context or quality of the LLM output. For builders integrating external AI APIs into applications handling user data, this provides a lightweight middleware layer to maintain data sovereignty while keeping the development workflow clean, effective, and compliant with modern data protection standards."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-23T09:17:03.112Z"
+  },
+  {
+    "id": "art-1795425417179-6yzv0",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/yoxi957/items/f1880ca988bce35fdbb0",
+    "published_at": "2026-11-23T09:10:32.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSUdpYlBBMkNsQnJvM3RPQnFlTUI0ZTBoSk00dWNSRzIwVzlRMzhWWkdRTmd4VVRZayUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz04NzM0MDc4YzhkNDA5YzE3MDMwMjYxNGU5MWQ2OTA5ZQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D7e866a2250cd576a997aaa065928b932?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JTlEJTlFJUU1JTkwJThDJUU2JTlDJTlGJUUzJTgyJUE4JUUzJTgzJUJDJUUzJTgyJUI4JUUzJTgyJUE3JUUzJTgzJUIzJUUzJTgzJTg4JUU2JTk5JTgyJUU0JUJCJUEzJUUzJTgxJUFFJUUzJTgwJThDJUU3JUEyJUJBJUU4JUFBJThEJUU1JUJFJTg1JUUzJTgxJUExJUUzJTgwJThEJUU4JUE4JUFEJUU4JUE4JTg4JUUzJTgxJUE4JUUzJTgwJTgxR1BULTYuMiUyMFNvbCUyMCUyRiUyME9wdXMlMjA1LjUlRTMlODElQUUlRTMlODIlQjMlRTMlODIlQjklRTMlODMlODglRTUlQTIlODMlRTclOTUlOEMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1kN2RlMGQxYjU5NTkzM2UxODhmM2FlMWQ0M2JiNDEzYg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5b3hpOTU3JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTU2OGJmNzgxYWMwNjU3MzZkOWI3ZWNmNWY4YmRmNjU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=714f125774c29389fed3a20ce76f474f",
+    "title_ja": "非同期AIエージェントの運用ボトルネックを解消する「人間側の確認待ち」設計とモデルコストの最適境界線",
+    "summary_ja": "AIエージェントの並列実行が増える中で、真のボトルネックはモデルの推論速度から「人間による確認プロセス」へと移行している。 AntigravityやGemini等の最新ツールでは承認フローの効率化が鍵となっており、GPT-6.2 SolやOpus 5.5のような高コストモデルを多用する際は、確認待ちによる待機時間を加味したタスク分離設計が不可欠だ。 開発者はエージェントの自律度を段階的に高め、人間がレビューする回数を最小化するアーキテクチャへの転換が求められている。",
+    "translations": {
+      "ja": {
+        "title": "非同期AIエージェントの運用ボトルネックを解消する「人間側の確認待ち」設計とモデルコストの最適境界線",
+        "summary": "AIエージェントの並列実行が増える中で、真のボトルネックはモデルの推論速度から「人間による確認プロセス」へと移行している。 AntigravityやGemini等の最新ツールでは承認フローの効率化が鍵となっており、GPT-6.2 SolやOpus 5.5のような高コストモデルを多用する際は、確認待ちによる待機時間を加味したタスク分離設計が不可欠だ。 開発者はエージェントの自律度を段階的に高め、人間がレビューする回数を最小化するアーキテクチャへの転換が求められている。"
+      },
+      "en": {
+        "title": "Optimizing human-in-the-loop bottlenecks and cost boundaries for asynchronous AI agents in the modern workflow",
+        "summary": "As developers scale parallel AI agent operations, the primary bottleneck has shifted from raw model inference speed to human-in-the-loop review queues. Recent trends in tools like Antigravity and Gemini demonstrate that efficient approval flows are now critical for performance. When leveraging high-cost models like GPT-6.2 Sol or Opus 5.5, teams must architect task separation strategies that account for idle time waiting for human oversight. The core engineering takeaway is that builders should focus on increasing agent autonomy and minimizing human review frequency rather than simply optimizing model latency. Moving toward an asynchronous design that handles review interruptions gracefully is essential to scaling production AI workflows without incurring massive unnecessary costs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-23T09:16:57.179Z"
+  },
+  {
+    "id": "art-1795425410899-mg8de",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/sato_tech/n/n43e05aa6571f",
+    "published_at": "2026-11-23T09:16:11.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339736136/rectangle_large_type_2_3bb8f8cb6463b1fa5d2290865d8a62be.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "副業アプリ開発者の開業届と青色申告：提出で変わることと節税メリットを徹底比較、会社員が今すぐ知るべき確定申告の基礎知識",
+    "summary_ja": "副業でのアプリ開発が軌道に乗り始めた個人開発者に向けて、個人事業の開業届と青色申告制度の仕組みを整理。 開業届を出すことで得られる最大65万円の青色申告特別控除や赤字繰り越しといった税制上の優遇措置と、会社員が副業として取り組む際の事務手続きのハードルを解説する。 売上が安定し始めた段階で税制上のメリットを最大化するための判断基準として役立つガイド。",
+    "translations": {
+      "ja": {
+        "title": "副業アプリ開発者の開業届と青色申告：提出で変わることと節税メリットを徹底比較、会社員が今すぐ知るべき確定申告の基礎知識",
+        "summary": "副業でのアプリ開発が軌道に乗り始めた個人開発者に向けて、個人事業の開業届と青色申告制度の仕組みを整理。 開業届を出すことで得られる最大65万円の青色申告特別控除や赤字繰り越しといった税制上の優遇措置と、会社員が副業として取り組む際の事務手続きのハードルを解説する。 売上が安定し始めた段階で税制上のメリットを最大化するための判断基準として役立つガイド。"
+      },
+      "en": {
+        "title": "Side-Hustle App Developers: Evaluating the Tax Benefits of Official Business Registration and the Blue Tax Return System",
+        "summary": "This guide breaks down the financial implications for side-hustle app developers considering whether to file an official business registration (Kaigyo-todoke) and apply for the Blue Tax Return system. By formalizing their status, developers can access significant tax advantages, including a special deduction of up to 650,000 yen and the ability to carry forward business losses to offset future income. The article clarifies the administrative trade-offs for salaried employees and provides a clear decision-making framework for those whose app revenue is finally becoming consistent. For builders scaling their indie projects, understanding these tax structures is essential to maximizing net profit and establishing a sustainable foundation for long-term development work beyond just the code itself."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-23T09:16:50.899Z"
+  },
+  {
+    "id": "art-1795425403590-7239t",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/chat-with-work",
+    "published_at": "2026-11-21T09:06:12.000Z",
+    "og_image_url": null,
+    "title_ja": "欧州拠点のAIエージェント「Chat with Work」が登場、業務フローの自動化と自律的なタスク遂行能力を強化",
+    "summary_ja": "欧州で展開される「Chat with Work」は、煩雑なワークフローを自律的に処理し、組織内の生産性向上を支援する新たなAIエージェントプラットフォームだ。 単なるチャットボットを超え、実務におけるタスク実行と意思決定のサポートに特化している。 AIによる業務自動化の導入を検討している開発者やビジネスリーダーにとって、ツール連携と自律性のバランスが今後のAI活用における重要な判断基準となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "欧州拠点のAIエージェント「Chat with Work」が登場、業務フローの自動化と自律的なタスク遂行能力を強化",
+        "summary": "欧州で展開される「Chat with Work」は、煩雑なワークフローを自律的に処理し、組織内の生産性向上を支援する新たなAIエージェントプラットフォームだ。 単なるチャットボットを超え、実務におけるタスク実行と意思決定のサポートに特化している。 AIによる業務自動化の導入を検討している開発者やビジネスリーダーにとって、ツール連携と自律性のバランスが今後のAI活用における重要な判断基準となるだろう。"
+      },
+      "en": {
+        "title": "Europe-based AI platform Chat with Work launches to automate complex business workflows and autonomous task execution",
+        "summary": "The newly launched Chat with Work platform, based in Europe, focuses on bridging the gap between simple chatbots and true autonomous agents by automating complex business workflows. Unlike traditional automation tools that require heavy manual oversight, this solution is designed to handle intricate tasks and assist with operational decision-making directly within a team's existing environment. For developers and business leaders currently evaluating AI-driven process automation, the platform demonstrates that the future of enterprise software lies in agents that can reliably bridge the gap between intent and execution. Builders should pay close attention to how these platforms handle the trade-off between strict guardrails and the autonomy required to meaningfully improve organizational productivity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-23T09:16:43.590Z"
+  },
+  {
     "id": "art-1795424540555-1sm39",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -5552,32 +5656,6 @@
     "created_at": "2026-11-22T19:01:50.597Z"
   },
   {
-    "id": "art-1795373290138-k18iv",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/torimee/n/nb251f00ed8ba",
-    "published_at": "2026-11-22T18:17:01.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/337214502/rectangle_large_type_2_8046546d3465688bde72a5dd492eaec0.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "自撮りから高品質な写真を生成する「トリミー」、AI特有の不自然さを払拭するプロンプト調整と18回の試行錯誤の全記録",
-    "summary_ja": "自撮りから写真を生成するサービス「トリミー」の開発過程で、AI生成特有の「AIっぽさ」を抑えるために行った18回に及ぶ試行錯誤の記録。 特に、過度な加工や非現実的な質感を解消するためのパラメータ調整やモデル指定の失敗談を詳細に公開している。 AI画像生成において、生成結果の品質を追求する開発者にとって、失敗事例の分析こそがリアリティある出力を得るための最も貴重な学習データとなる。",
-    "translations": {
-      "ja": {
-        "title": "自撮りから高品質な写真を生成する「トリミー」、AI特有の不自然さを払拭するプロンプト調整と18回の試行錯誤の全記録",
-        "summary": "自撮りから写真を生成するサービス「トリミー」の開発過程で、AI生成特有の「AIっぽさ」を抑えるために行った18回に及ぶ試行錯誤の記録。 特に、過度な加工や非現実的な質感を解消するためのパラメータ調整やモデル指定の失敗談を詳細に公開している。 AI画像生成において、生成結果の品質を追求する開発者にとって、失敗事例の分析こそがリアリティある出力を得るための最も貴重な学習データとなる。"
-      },
-      "en": {
-        "title": "Torimee's 18-iteration journey to eliminate 'AI-look' in selfie-based generation and achieve realistic, natural photo outputs",
-        "summary": "The developers behind Torimee, a service that generates stylized photos from selfies, have published a detailed log of 18 separate iterations aimed at eliminating the telltale 'AI-generated' aesthetic. The documentation focuses heavily on analyzing failures, specifically detailing the parameter adjustments and model configuration changes required to strip away excessive processing and artificial textures. By rigorously documenting what did not work, the team provides a practical masterclass for builders struggling to bridge the gap between algorithmic output and realistic photography. For developers building image-generation products, this candid record proves that refining prompts and model settings is rarely a straight line; systematic, failure-focused documentation is the only path to achieving truly natural, production-ready AI results."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "画像生成",
-      "開発"
-    ],
-    "created_at": "2026-11-22T18:48:10.138Z"
-  },
-  {
     "id": "art-1795373230030-wymil",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -6921,33 +6999,6 @@
     "created_at": "2026-11-22T13:47:30.359Z"
   },
   {
-    "id": "art-1795355241382-keuzk",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
-    "published_at": "2026-11-22T11:37:55.000Z",
-    "og_image_url": "https://media.wired.com/photos/6b0080a25f35c47a5c116087/191:100/w_1280,c_limit/GettyImages-2285133719.jpg",
-    "title_ja": "銀行業界がAIエージェントのアクセス制限を強化、無差別なスクレイピングや自動化ツールによる負荷増大を深刻なリスクと判断",
-    "summary_ja": "銀行業界が、AIエージェントによる無秩序なデータスクレイピングやAPI利用に対して、アクセス遮断や制限を強めている。 自動化されたエージェントが生成する大量のリクエストは、セキュリティリスクを招くだけでなく、システム負荷を増大させ運営上の脅威となっているためだ。 開発者側には、自律型ツールを構築する際に「robots.txt」の遵守や、適切な認証を通じたAPI連携といった、従来のWeb作法をAI時代でも改めて徹底することが求められている。",
-    "translations": {
-      "ja": {
-        "title": "銀行業界がAIエージェントのアクセス制限を強化、無差別なスクレイピングや自動化ツールによる負荷増大を深刻なリスクと判断",
-        "summary": "銀行業界が、AIエージェントによる無秩序なデータスクレイピングやAPI利用に対して、アクセス遮断や制限を強めている。 自動化されたエージェントが生成する大量のリクエストは、セキュリティリスクを招くだけでなく、システム負荷を増大させ運営上の脅威となっているためだ。 開発者側には、自律型ツールを構築する際に「robots.txt」の遵守や、適切な認証を通じたAPI連携といった、従来のWeb作法をAI時代でも改めて徹底することが求められている。"
-      },
-      "en": {
-        "title": "Banks are actively blocking AI agents as reckless scraping and automated traffic spikes become an urgent operational security threat",
-        "summary": "Major financial institutions are increasingly implementing aggressive blocks on AI agents, citing excessive automated scraping and unmanaged API traffic as a primary operational risk. Because these autonomous agents often fail to respect traditional traffic boundaries, banks are treating them as a new vector for denial-of-service threats and data security breaches rather than legitimate user traffic. For builders developing AI agents, this serves as a harsh reminder that the era of unthrottled, autonomous scraping is effectively over. Success now requires strict adherence to legacy standards like robots.txt and official API integrations. Developers ignoring these rules will find their agents locked out, making proper authentication and respect for server load essential architectural prerequisites for any agentic product in the financial sector."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-22T13:47:21.382Z"
-  },
-  {
     "id": "art-1795355211166-si7wc",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -7344,32 +7395,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-22T12:01:57.598Z"
-  },
-  {
-    "id": "art-1795348034331-8o8t8",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/kikuziro/items/0c54614c1db8afa5abb1",
-    "published_at": "2026-11-22T11:34:22.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMjkzMzQ4OSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc5Mjk5MzU2Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ODk4NWM0OTA2NDA3NmU1MjY5YjFkZDc0Mzc0YzE4N2I%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dda5369d529aa115708e519ff3312efd0?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgxJTg2JUUzJTgyJThGJUUzJTgxJUEzJUUyJTgwJUE2JUU3JUE3JTgxJUUzJTgxJUFFJUU4JUE4JTk4JUU0JUJBJThCJUUzJTgwJTgxJUUzJTgyJUI5JUUzJTgzJUFEJUUzJTgzJTgzJUUzJTgzJTk3JUUzJTgxJTk5JUUzJTgxJThFJUUyJTgwJUE2JUVGJUJDJTlGJUVGJUJDJTg4JUU4JUE2JThCJUU1JTg3JUJBJUUzJTgxJTk3JUUzJTgxJUEwJUUzJTgxJTkxJUU2JTlDJUFDJUU2JUIwJTk3JUU1JTg3JUJBJUUzJTgxJTk5JUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgzJUIzJUUzJTgzJTk3JUUzJTgzJTg4NyVFOSU4MSVCOCVFRiVCQyU4OSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTU3MDI5OTNkOGMzY2ZjYzMwOGY3M2ZmMzI2M2JmZjkw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBraWt1emlybyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM3OGI3M2Q5YTRjOWFhNTIyZjZmYzE4YWMzN2YwOThh&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=645e4ee3ee439726eeefc82780750b88",
-    "title_ja": "AI記事特有の「スロップ感」を消す技術：見出しの質を劇的に高めるプロンプト設計術7選",
-    "summary_ja": "生成AIで作成した記事が「AIっぽい」と感じられる原因は、見出しの凡庸さと構成の単調さにある。 本稿では、読者の興味を惹きつけ、人間が書いたような深みを演出するためのプロンプトテクニックを7つ紹介する。 具体的には、読者のペルソナを深く定義し、あえて意外性のある逆説的な視点を盛り込むことで、AI特有の無機質さを排除できる。 記事作成の仕上げに一手間加えるだけで、AI生成コンテンツの信頼性とエンゲージメントを向上させることが可能だ。",
-    "translations": {
-      "ja": {
-        "title": "AI記事特有の「スロップ感」を消す技術：見出しの質を劇的に高めるプロンプト設計術7選",
-        "summary": "生成AIで作成した記事が「AIっぽい」と感じられる原因は、見出しの凡庸さと構成の単調さにある。 本稿では、読者の興味を惹きつけ、人間が書いたような深みを演出するためのプロンプトテクニックを7つ紹介する。 具体的には、読者のペルソナを深く定義し、あえて意外性のある逆説的な視点を盛り込むことで、AI特有の無機質さを排除できる。 記事作成の仕上げに一手間加えるだけで、AI生成コンテンツの信頼性とエンゲージメントを向上させることが可能だ。"
-      },
-      "en": {
-        "title": "Beyond AI Slop: 7 Advanced Prompting Techniques to Elevate Article Headlines and Kill Generic Output",
-        "summary": "Articles written by AI often suffer from an intangible 'slop'—a robotic, generic tone that immediately signals low-effort content to readers. This guide introduces seven precise prompting strategies designed to strip away that mechanical feel by sharpening headline quality and injecting genuine narrative depth. Instead of accepting bland, predictable outputs, builders can leverage these prompts to force the model into adopting specific, unexpected perspectives and highly targeted reader personas. By treating the headline as the critical anchor for tone and curiosity, you can bridge the gap between automated generation and compelling, human-sounding editorial work. These techniques prove that elevating AI content isn't about rewriting everything manually; it is about steering the model with better constraints and more nuanced stylistic instructions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-22T11:47:14.331Z"
   },
   {
     "id": "art-1795347136032-iiarc",
@@ -18446,32 +18471,6 @@
       "開発"
     ],
     "created_at": "2026-11-18T15:33:28.983Z"
-  },
-  {
-    "id": "art-1795015058353-hk0n2",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/linkbit",
-    "published_at": "2026-11-17T07:57:08.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェント特化の無料URL短縮サービス「LinkBit」登場：MCPとAPI連携で大規模言語モデルのデータ取り扱いを簡素化",
-    "summary_ja": "「LinkBit」は、AIエージェントによる利用を前提に設計された無料のURL短縮ツールである。 MCP（Model Context Protocol）および専用APIに対応しており、LLMが外部リソースへアクセスする際に発生しがちな長いURLのトークン消費やパースエラーを自動的に抑制できる。 AIエージェントの構築において、プロンプトのコンテキスト制限に悩む開発者にとって、リソース管理を効率化する実用的なインフラとなるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント特化の無料URL短縮サービス「LinkBit」登場：MCPとAPI連携で大規模言語モデルのデータ取り扱いを簡素化",
-        "summary": "「LinkBit」は、AIエージェントによる利用を前提に設計された無料のURL短縮ツールである。 MCP（Model Context Protocol）および専用APIに対応しており、LLMが外部リソースへアクセスする際に発生しがちな長いURLのトークン消費やパースエラーを自動的に抑制できる。 AIエージェントの構築において、プロンプトのコンテキスト制限に悩む開発者にとって、リソース管理を効率化する実用的なインフラとなるだろう。"
-      },
-      "en": {
-        "title": "LinkBit Launches Free AI-Agent Specialized URL Shortener with Native MCP Support and API Integrations for Streamlined LLM Context Handling",
-        "summary": "LinkBit has launched as a free URL shortener designed specifically for AI agents, featuring robust support for the Model Context Protocol (MCP) and a dedicated API. By shortening URLs, it helps developers reduce token consumption and eliminate common parsing errors that occur when Large Language Models attempt to process long, complex web links. For builders constructing autonomous agents, this tool effectively optimizes resource management, ensuring that prompt context limits remain clear and manageable during external data retrieval. By integrating LinkBit into your agent's workflow, you gain a purpose-built utility that turns messy URLs into clean, LLM-friendly endpoints, ultimately reducing operational friction and improving the reliability of data-heavy agentic interactions in production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-18T15:17:38.353Z"
   },
   {
     "id": "art-1795015042418-mh1ld",
