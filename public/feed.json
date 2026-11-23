@@ -1,5 +1,62 @@
 [
   {
+    "id": "art-1795459907919-d2n4l",
+    "source_id": "source-heygen-ugc",
+    "source_name": "HeyGen API Changelog",
+    "url": "https://developers.heygen.com/changelog#send-feedback-on-results",
+    "published_at": "2026-11-23T17:17:26.000Z",
+    "og_image_url": "https://heygen-1fa696a7.mintlify.site/_mintlify/api/og/v2?division=Documentation&title=Changelog&description=Track+every+HeyGen+API+change%2C+new+endpoint%2C+deprecation%2C+and+version+bump+in+the+API+changelog.+Subscribe+via+RSS+or+webhook+to+get+notified+on+the+next.&theme=806bfcae4fd50c26d3779ac8&signature=23dfe21e43cae89bcca8dc530d8a9e74ea69f4096f0921ac7351dc1e06634c1a",
+    "title_ja": "HeyGen APIが「フィードバック送信」機能を新設、API経由で生成結果の評価と詳細タグの送信が可能に（feedback:write権限が必要）",
+    "summary_ja": "HeyGenは生成結果に対する評価機能を追加し、APIの「POST /v3/feedback」を通じてビデオや翻訳などの生成物へ評価、コメント、最大10個の理由タグを送信できるようになった。 エンドユーザーからのフィードバックを直接HeyGenへ連携し、開発者が生成精度をモニタリングする新たな経路が開かれた。",
+    "translations": {
+      "ja": {
+        "title": "HeyGen APIが「フィードバック送信」機能を新設、API経由で生成結果の評価と詳細タグの送信が可能に（feedback:write権限が必要）",
+        "summary": "HeyGenは生成結果に対する評価機能を追加し、APIの「POST /v3/feedback」を通じてビデオや翻訳などの生成物へ評価、コメント、最大10個の理由タグを送信できるようになった。 エンドユーザーからのフィードバックを直接HeyGenへ連携し、開発者が生成精度をモニタリングする新たな経路が開かれた。"
+      },
+      "en": {
+        "title": "HeyGen API adds 'Send Feedback' endpoint to collect ratings and tags directly on generated video and translation results",
+        "summary": "HeyGen has introduced a new feedback mechanism via. For builders, the durable takeaway is to treat HeyGen as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
+      }
+    },
+    "tool_tags": [
+      "HeyGen"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-23T18:51:47.919Z"
+  },
+  {
+    "id": "art-1795459854070-yxrw1",
+    "source_id": "source-claude-platform",
+    "source_name": "Claude Platform Release Notes",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#enterprise-frontier-safeguards",
+    "published_at": "2026-11-23T00:00:00.000Z",
+    "og_image_url": "https://platform.claude.com/web-api/og/docs/en/release-notes/overview?design-rev=5",
+    "title_ja": "Anthropic、企業向けセキュリティ強化機能「EFS」をベータ公開。プロンプト・回答を自社クラウドへ隔離する「データ保持ゼロ」を実現",
+    "summary_ja": "Anthropicは、企業がClaudeの最上位モデルをセキュアに利用するための新機能「Enterprise Frontier Safeguards（EFS）」をベータ版として提供開始した。 本機能は「データ保持ゼロ（ZDR）」を実現し、入力プロンプトや回答をAnthropic側で一切保存せず、暗号化されたデータを顧客所有のクラウドバケットに直接送信・保管する。",
+    "translations": {
+      "ja": {
+        "title": "Anthropic、企業向けセキュリティ強化機能「EFS」をベータ公開。プロンプト・回答を自社クラウドへ隔離する「データ保持ゼロ」を実現",
+        "summary": "Anthropicは、企業がClaudeの最上位モデルをセキュアに利用するための新機能「Enterprise Frontier Safeguards（EFS）」をベータ版として提供開始した。 本機能は「データ保持ゼロ（ZDR）」を実現し、入力プロンプトや回答をAnthropic側で一切保存せず、暗号化されたデータを顧客所有のクラウドバケットに直接送信・保管する。"
+      },
+      "en": {
+        "title": "Anthropic launches Enterprise Frontier Safeguards (EFS) beta, enabling zero-data-retention AI workflows for enterprise compliance",
+        "summary": "Anthropic has rolled out the beta for Enterprise Frontier Safeguards (EFS) across its platform, AWS, and Google Cloud, specifically targeting strict compliance needs with a Zero Data Retention (ZDR) model. By leveraging EFS, eligible organizations can ensure Anthropic never retains their prompts or responses; instead, the system immediately routes encrypted inputs and outputs—dubbed Sealed Safety Data—to a storage bucket directly owned by the client. This architecture effectively separates sensitive data from Anthropic’s managed storage layer. For enterprise architects and developers handling high-stakes proprietary data, this release provides a critical path to deploying state-of-the-art LLMs while maintaining full control over data residency and encryption keys, ensuring that AI-driven infrastructure remains fully compliant with rigorous internal security standards."
+      }
+    },
+    "tool_tags": [
+      "Claude"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-23T18:50:54.070Z"
+  },
+  {
     "id": "art-1795457827752-ccz6q",
     "source_id": "source-braintrust",
     "source_name": "Braintrust Blog",
@@ -6170,32 +6227,6 @@
     "created_at": "2026-11-22T22:31:53.633Z"
   },
   {
-    "id": "art-1795385830047-93v6z",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kobalab_2026/n/n87a5eb80725b",
-    "published_at": "2026-11-22T21:47:39.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339494436/rectangle_large_type_2_2b0cb5786e3be5a1040af9e36c73a02c.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "タスクスケジューラのバグ特定：ログ出力で「NG」と表示されるのに全体判定は「完了」になってしまう不整合、原因はコードに残された謎の1行だった",
-    "summary_ja": "毎晩自動実行されるタスク管理の完了チェックにて、ログ上では「NG」が出ているにもかかわらず、最終判定は「完了」となる不整合が発生した。 調査の結果、判定ロジックから意図せず除外されていた古いコードの残滓が原因だと判明。 自動化ツールで最も危険なのは「稼働はしているが結果が正しくない」状態だ。 今回の事例は、不要なコードやデバッグログの放置がいかに運用監視をミスリードし、システム不備を隠蔽するかという教訓を教えてくれる。",
-    "translations": {
-      "ja": {
-        "title": "タスクスケジューラのバグ特定：ログ出力で「NG」と表示されるのに全体判定は「完了」になってしまう不整合、原因はコードに残された謎の1行だった",
-        "summary": "毎晩自動実行されるタスク管理の完了チェックにて、ログ上では「NG」が出ているにもかかわらず、最終判定は「完了」となる不整合が発生した。 調査の結果、判定ロジックから意図せず除外されていた古いコードの残滓が原因だと判明。 自動化ツールで最も危険なのは「稼働はしているが結果が正しくない」状態だ。 今回の事例は、不要なコードやデバッグログの放置がいかに運用監視をミスリードし、システム不備を隠蔽するかという教訓を教えてくれる。"
-      },
-      "en": {
-        "title": "Debugging a Task Scheduler Bug: How a Stray Line of Code Caused a Logic Mismatch Between Logs and Completion Status",
-        "summary": "I recently debugged a baffling inconsistency in my nightly automated task scheduler where the logs clearly indicated an \"NG\" failure, yet the system reported a total \"Completed\" status. The culprit was a single, overlooked line of code that accidentally excluded that specific task row from the main validation logic. For developers building automation workflows, this serves as a critical reminder that the most dangerous state is when a system appears to be running perfectly but is actually masking silent failures. We must treat cleanup of stale debug code and validation logic with the same rigor as feature development, because hidden code residue can silently undermine the integrity of your entire production monitoring pipeline."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-22T22:17:10.047Z"
-  },
-  {
     "id": "art-1795385820039-q0qpk",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10201,32 +10232,6 @@
       "開発"
     ],
     "created_at": "2026-11-21T14:31:48.703Z"
-  },
-  {
-    "id": "art-1795269766144-nnzfp",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/jinchouge_mj/articles/f5b6d14a5654dc",
-    "published_at": "2026-11-21T06:50:28.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--YmndTMJH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AE%25E9%25BA%25BB%25E9%259B%2580%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2580%2581%25E5%25BA%258F%25E7%25AB%25A0%25E3%2581%25A74%25E5%2589%25B2%25E9%259B%25A2%25E8%2584%25B1%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E3%2581%25AE%25E3%2582%2592%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25A7%25E7%259B%25B4%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E9%2583%25A8%25E5%25AE%25A4%25E7%25AA%2581%25E7%25A0%25B4%25E7%258E%2587%25E3%2581%258C60%2525%25E2%2586%259276%2525%25EF%25BC%2588%25E5%258D%2598%25E6%2597%25A5100%2525%25EF%25BC%2589%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B2%2588%25E4%25B8%2581%25E8%258A%25B1%25E3%2580%2590%25E5%2585%25AC%25E5%25BC%258F%25E3%2580%2591%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzBiMWQ3OTZlYjYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発の麻雀ゲーム、進行ログ分析で離脱地点を特定し改善へ。序章の部室突破率が60%から76%に向上したデータ駆動型リリースの知見",
-    "summary_ja": "個人開発のブラウザ麻雀ノベルにて、Cloudflare WorkersとD1を用いた進行ログ解析を実装し、ユーザーの離脱ポイントを可視化して改善した事例。 序章で4割が離脱していたUIや導線の課題を修正した結果、部室の突破率は最大100%（平均76%）、第一章クリア率は28%から38%まで大幅に改善した。 感覚的な修正ではなく、実際のデータに基づいて「どこで何が起きているか」を把握することが、個人開発において最もコスト対効果の高いグロース手法となる。",
-    "translations": {
-      "ja": {
-        "title": "個人開発の麻雀ゲーム、進行ログ分析で離脱地点を特定し改善へ。序章の部室突破率が60%から76%に向上したデータ駆動型リリースの知見",
-        "summary": "個人開発のブラウザ麻雀ノベルにて、Cloudflare WorkersとD1を用いた進行ログ解析を実装し、ユーザーの離脱ポイントを可視化して改善した事例。 序章で4割が離脱していたUIや導線の課題を修正した結果、部室の突破率は最大100%（平均76%）、第一章クリア率は28%から38%まで大幅に改善した。 感覚的な修正ではなく、実際のデータに基づいて「どこで何が起きているか」を把握することが、個人開発において最もコスト対効果の高いグロース手法となる。"
-      },
-      "en": {
-        "title": "Solo dev uses progression data to fix game drop-off points, boosting mahjong novel clearance rates from 60% to 76%",
-        "summary": "A solo developer creating a browser-based mahjong novel analyzed player progression logs using Cloudflare Workers and D1 to pinpoint exactly where users were quitting. By addressing three specific usability friction points identified in the data, the creator successfully increased the club room clearance rate from 60% to 76%, hitting a peak of 100% on specific days, while improving overall Chapter 1 completion from 28% to 38%. The project demonstrates that for solo builders, relying on concrete usage analytics rather than gut instinct to solve hidden UI bottlenecks provides the highest leverage for player retention. This transformation highlights that even minimal observability stacks can provide actionable insights that drastically turn around user engagement metrics in niche indie projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-21T14:02:46.144Z"
   },
   {
     "id": "art-1795267021827-ol0q4",
