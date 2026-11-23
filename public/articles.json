@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795417360306-i6uqd",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.26906",
+    "published_at": "2026-11-23T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "証明推論のコスト最適化手法「BudgetPV」登場：異種LLMを予算に応じて動的に割り当て、推論効率を最大化",
+    "summary_ja": "「BudgetPV」は、定理証明タスクにおいて、計算コストの異なる複数のLLMを動的に使い分けるエージェントシステムだ。 安価なモデルで解決可能な小問題には低コストなモデルを、難易度の高い問題には強力なモデルを予測・検証プロセスを通じて割り当てる。 証明の進捗に応じて再配分を行うことで、計算リソースを浪費せずに推論性能を維持する。",
+    "translations": {
+      "ja": {
+        "title": "証明推論のコスト最適化手法「BudgetPV」登場：異種LLMを予算に応じて動的に割り当て、推論効率を最大化",
+        "summary": "「BudgetPV」は、定理証明タスクにおいて、計算コストの異なる複数のLLMを動的に使い分けるエージェントシステムだ。 安価なモデルで解決可能な小問題には低コストなモデルを、難易度の高い問題には強力なモデルを予測・検証プロセスを通じて割り当てる。 証明の進捗に応じて再配分を行うことで、計算リソースを浪費せずに推論性能を維持する。"
+      },
+      "en": {
+        "title": "BudgetPV optimizes theorem proving by dynamically allocating heterogeneous LLMs based on inference costs",
+        "summary": "BudgetPV is a new agentic system designed to optimize theorem proving by dynamically selecting between heterogeneous LLM solvers based on their varying costs and capabilities. Instead of applying expensive models to every subgoal or risking failure with cheaper ones, the system employs a predict-and-verify architecture to allocate computational resources intelligently across subgoals. It continuously revises these solver assignments as verification feedback arrives during the proving process. For developers building AI agents that rely on high-cost API calls, the practical takeaway is clear: static model selection is inefficient. Implementing an adaptive allocation strategy that matches model complexity to specific task difficulty is essential for managing runaway costs while maintaining high reasoning performance at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金",
+      "研究"
+    ],
+    "created_at": "2026-11-23T07:02:40.306Z"
+  },
+  {
+    "id": "art-1795417342894-5kgxi",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://news.ycombinator.com/item?id=50608154",
+    "published_at": "2026-11-23T06:24:42.000Z",
+    "og_image_url": null,
+    "title_ja": "AIブームでSSDはどれだけ高騰したか？8TBストレージの過去価格を振り返り、AI特需がハードウェア調達コストに与えた影響を検証する。",
+    "summary_ja": "AI需要によるサーバー向けSSDの需要増が、ストレージ価格の市場相場に与えた影響が議論されている。 8TBクラスのNVMe SSDを例に、数年前の調達単価と比較することで、開発者が直面するインフラ構築コストの現状を浮き彫りにした。 LLM推論やデータセット運用を最適化する際、ストレージコストを無視できない現在、ハードウェア調達戦略の見直しが不可欠になっている。",
+    "translations": {
+      "ja": {
+        "title": "AIブームでSSDはどれだけ高騰したか？8TBストレージの過去価格を振り返り、AI特需がハードウェア調達コストに与えた影響を検証する。",
+        "summary": "AI需要によるサーバー向けSSDの需要増が、ストレージ価格の市場相場に与えた影響が議論されている。 8TBクラスのNVMe SSDを例に、数年前の調達単価と比較することで、開発者が直面するインフラ構築コストの現状を浮き彫りにした。 LLM推論やデータセット運用を最適化する際、ストレージコストを無視できない現在、ハードウェア調達戦略の見直しが不可欠になっている。"
+      },
+      "en": {
+        "title": "How much did 8TB SSDs cost before the AI boom? Analyzing hardware price inflation and infrastructure procurement shifts for modern developers.",
+        "summary": "The rapid acceleration of AI workloads has fundamentally shifted hardware economics, sparking fresh discussions about how storage prices have inflated compared to the pre-AI era. By revisiting the historical cost of 8TB SSD units, developers are analyzing how massive demand for LLM training and data-intensive inference has reshaped the supply chain for enterprise-grade hardware. For builders managing self-hosted infrastructure or deploying large-scale datasets, these price spikes are no longer negligible line items; they represent a significant barrier to entry. This conversation serves as a critical reminder that infrastructure procurement strategy is now deeply coupled with the AI hype cycle, requiring developers to factor in unpredictable hardware costs when architecting long-term scalable solutions for their AI applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-23T07:02:22.894Z"
+  },
+  {
+    "id": "art-1795417329056-evspm",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/linternet_weakly/n/n01845c3239de",
+    "published_at": "2026-11-23T06:56:09.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339681297/rectangle_large_type_2_8c452048a5bac14827530952addb189d.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "WordPress構築から2分45秒で乗っ取られる衝撃の実験結果──なぜ開設直後のサイトが狙われるのか、最初の10分で行うべきセキュリティ対策とは",
+    "summary_ja": "2026年11月、古いWordPressをサーバーに公開した直後、わずか2分45秒で攻撃を受け乗っ取られた実験報告が大きな注目を集めている。 公開から数分で世界中のボットネットが脆弱性をスキャンし、認証突破を試みるのが今のネット環境の現実だ。 攻撃者のスキャン網は想像以上に高速であり、インストール直後の適切な設定とセキュリティプラグイン導入、二要素認証の有効化は、もはや必須の防衛策であると認識を改める必要がある。",
+    "translations": {
+      "ja": {
+        "title": "WordPress構築から2分45秒で乗っ取られる衝撃の実験結果──なぜ開設直後のサイトが狙われるのか、最初の10分で行うべきセキュリティ対策とは",
+        "summary": "2026年11月、古いWordPressをサーバーに公開した直後、わずか2分45秒で攻撃を受け乗っ取られた実験報告が大きな注目を集めている。 公開から数分で世界中のボットネットが脆弱性をスキャンし、認証突破を試みるのが今のネット環境の現実だ。 攻撃者のスキャン網は想像以上に高速であり、インストール直後の適切な設定とセキュリティプラグイン導入、二要素認証の有効化は、もはや必須の防衛策であると認識を改める必要がある。"
+      },
+      "en": {
+        "title": "Viral experiment proves new WordPress sites get hacked in under 3 minutes; here is how to secure yours immediately",
+        "summary": "A viral social media report recently demonstrated that an unhardened, outdated WordPress site was compromised within just 2 minutes and 45 seconds of being deployed to the live internet. This startling experiment highlights the harsh reality of modern web infrastructure, where massive automated botnets constantly scan for known vulnerabilities the moment a site goes online. The sheer speed of these attacks proves that waiting even a few hours to configure security settings is a critical mistake. For developers and site owners, the immediate lesson is clear: essential security steps—including locking down login paths, enabling multi-factor authentication, and configuring robust firewall rules—must be executed within the first ten minutes of deployment, long before you even begin custom development or content population."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-23T07:02:09.056Z"
+  },
+  {
+    "id": "art-1795417320789-4qrbt",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/emi_ndk/items/df427ba9a7dd7aef06c4",
+    "published_at": "2026-11-23T06:58:20.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMjI0Mjk2NSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc5NTExMzQxMD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MjU4ZTY3MDI2N2I5MTdmMGUxNTQ3MGY2ZjNhZmI5ZjI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1e925bd297bba3e0031adf6fcf1e3bb2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU0JUJGJTlEJUU1JUFEJTk4JUU3JTg5JTg4JUUzJTgwJTkxJUUzJTgwJThDJUUzJTgzJTgxJUUzJTgzJUEzJUUzJTgzJTgzJUUzJTgzJTg4JUUzJTgxJUE3JUU1JTkxJUJDJUUzJTgxJUI2QUklRTMlODAlOEQlRTMlODElQUYlRTMlODIlODIlRTMlODElODYlRTclQjUlODIlRTMlODIlOEYlRTMlODIlOEElRTMlODAlODIyNCVFNiU5OSU4MiVFOSU5NiU5MyVFNyU5QyVBMCVFMyU4MiU4OSVFMyU4MSVBQSVFMyU4MSU4NCUyMiVFNSVCOCVCOCVFOSVBNyU5MCVFMyU4MiVBOCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCUyMiVFMyU4MSVBRSVFOCVBOCVBRCVFOCVBOCU4OCVFNSU5QiVCMyVFMyU4MiU5MiVFNSU4NSVBOCVFOSU4MyVBOCVFNSU4NSVBQyVFOSU5NiU4QiVFMyU4MSU5OSVFMyU4MiU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTE5OGE0OWIwNDg5ODFlM2UxMDhlMWU3OTRkNGEyNzA3&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBlbWlfbmRrJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODEyY2UxNTIxOTMzYWFkOTY1ZTJhOWFiMGQxZDljOTg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=ec97f274a7e9cf7b30292fe4d00e2d86",
+    "title_ja": "対話型AIの限界を超えろ：24時間自律稼働する「常駐エージェント」の設計思想と実装アーキテクチャの全貌",
+    "summary_ja": "多くのAI開発者が「対話型」の枠組みから抜け出せていない中、24時間眠らず自律的にタスクを処理する「常駐エージェント」への転換が急務となっている。 本稿では、トリガー駆動型のバックグラウンド処理、状態管理の永続化、そして人間からの指示を待たずにワークフローを完遂させるための疎結合な設計手法を詳解する。 AIを単なるチャットボットとしてではなく、常時接続されたプロセスとして設計することこそが、今後のプロダクト開発における競争力の源泉となる。",
+    "translations": {
+      "ja": {
+        "title": "対話型AIの限界を超えろ：24時間自律稼働する「常駐エージェント」の設計思想と実装アーキテクチャの全貌",
+        "summary": "多くのAI開発者が「対話型」の枠組みから抜け出せていない中、24時間眠らず自律的にタスクを処理する「常駐エージェント」への転換が急務となっている。 本稿では、トリガー駆動型のバックグラウンド処理、状態管理の永続化、そして人間からの指示を待たずにワークフローを完遂させるための疎結合な設計手法を詳解する。 AIを単なるチャットボットとしてではなく、常時接続されたプロセスとして設計することこそが、今後のプロダクト開発における競争力の源泉となる。"
+      },
+      "en": {
+        "title": "Beyond Chatbots: Architecture and Design Principles for Building 24/7 Autonomous 'Resident' AI Agents",
+        "summary": "Most developers still treat AI as a reactive chatbot that sleeps while the user is away, but the future of agentic workflows lies in building 'resident agents' that operate autonomously around the clock. This guide details the essential architecture required to move beyond request-response cycles, focusing on trigger-driven background processing, persistent state management, and loosely coupled design patterns that allow agents to complete tasks without human intervention. Transitioning from a chat-based interface to a persistent, background-running agent model is the critical shift for modern builders. By treating agents as continuous processes rather than transient request handlers, you ensure your AI remains productive even when the user is offline, ultimately transforming the agent from a helpful toy into a genuine business-critical utility."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-23T07:02:00.789Z"
+  },
+  {
     "id": "art-1795416460084-0r1mb",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -5345,33 +5450,6 @@
     "created_at": "2026-11-22T17:17:17.336Z"
   },
   {
-    "id": "art-1795366992881-92c9t",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ai_neta_mine/n/n4ba75621e83a",
-    "published_at": "2026-11-22T16:55:48.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/7c2ce21cf43f668e185c6dc1f82549cdb699350b.png",
-    "title_ja": "Excelの「ちょっとした不便」をAIで解決する：巨大SaaSではなく「小道具」で始める個人開発の収益化戦略",
-    "summary_ja": "大きなプロジェクト管理ツールを開発しようとせず、Excelの些細な不便を解消する「小道具」レベルのAIツールを設計する手法を解説。 現場の深刻な課題は案外小さく、ニッチな不便を解決する数行のプロンプトやスクリプトこそが、個人開発における収益化の近道となる。 大きなSaaSを作るよりも、既存の業務フローの隙間に特化した解決策を提供することが、個人のリソースで勝つための現実的なアプローチである。",
-    "translations": {
-      "ja": {
-        "title": "Excelの「ちょっとした不便」をAIで解決する：巨大SaaSではなく「小道具」で始める個人開発の収益化戦略",
-        "summary": "大きなプロジェクト管理ツールを開発しようとせず、Excelの些細な不便を解消する「小道具」レベルのAIツールを設計する手法を解説。 現場の深刻な課題は案外小さく、ニッチな不便を解決する数行のプロンプトやスクリプトこそが、個人開発における収益化の近道となる。 大きなSaaSを作るよりも、既存の業務フローの隙間に特化した解決策を提供することが、個人のリソースで勝つための現実的なアプローチである。"
-      },
-      "en": {
-        "title": "Monetizing micro-pain points: Why AI builders should focus on Excel-sized 'gadget' tools instead of massive SaaS platforms",
-        "summary": "Instead of aiming to build bloated project management platforms or complex accounting software, this piece argues that personal developers should target minor Excel-related frustrations to find profitable micro-SaaS opportunities. Often, the most solvable and urgent business problems are found in small, repetitive inefficiencies that larger enterprise tools overlook. By building targeted 'gadget' AI tools that automate specific workflow gaps, creators can bypass the heavy overhead of comprehensive software development. The core takeaway is that hyper-niche solutions, built with minimal code or smart prompting, represent the most viable path to monetization for solo builders. Prioritizing these small, high-utility tools allows for faster iteration, lower support costs, and a clearer value proposition compared to competing with established enterprise giants."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-22T17:03:12.881Z"
-  },
-  {
     "id": "art-1795366972875-idppw",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -6581,33 +6659,6 @@
     "created_at": "2026-11-22T12:32:09.978Z"
   },
   {
-    "id": "art-1795350715356-mgl2j",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the",
-    "published_at": "2026-11-22T12:19:46.000Z",
-    "og_image_url": "https://substackcdn.com/image/fetch/$s_!MW3Y!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,$fp_!0.3439:1!/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5d71c583-fbcc-4b20-91c7-e1bdabe47973_4978x3319.jpeg",
-    "title_ja": "AIの爆発的普及が招く環境危機：急増するデータセンターの電力・水資源消費と持続可能な開発のジレンマ",
-    "summary_ja": "AIモデルの学習と推論にかかる膨大なエネルギー消費が、地球環境へ与える負荷が深刻な問題となっている。 最新の分析では、データセンターにおける電力供給の逼迫だけでなく、サーバー冷却のための莫大な水資源の浪費が指摘されており、環境コストは無視できない水準に達している。 単に計算能力を追求する現在のAI開発サイクルに対し、今後はモデルの軽量化や推論効率の向上など、環境負荷を最小化する設計思想が、開発者にとって避けて通れない技術的要件となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIの爆発的普及が招く環境危機：急増するデータセンターの電力・水資源消費と持続可能な開発のジレンマ",
-        "summary": "AIモデルの学習と推論にかかる膨大なエネルギー消費が、地球環境へ与える負荷が深刻な問題となっている。 最新の分析では、データセンターにおける電力供給の逼迫だけでなく、サーバー冷却のための莫大な水資源の浪費が指摘されており、環境コストは無視できない水準に達している。 単に計算能力を追求する現在のAI開発サイクルに対し、今後はモデルの軽量化や推論効率の向上など、環境負荷を最小化する設計思想が、開発者にとって避けて通れない技術的要件となるだろう。"
-      },
-      "en": {
-        "title": "The environmental cost of AI: Why data center energy and water consumption is becoming an urgent sustainability crisis",
-        "summary": "The rapid expansion of AI model training and inference is creating an unforeseen environmental catastrophe, specifically regarding the astronomical energy and water demands of modern data centers. Beyond the obvious spike in electricity consumption, researchers are now highlighting the alarming rate at which massive cooling systems deplete local water supplies, pushing the ecological cost of compute to unsustainable levels. For the engineering community, this shift demands a critical pivot away from pure brute-force scaling toward sustainable AI development. Developers must now prioritize model quantization, efficient inference patterns, and energy-conscious architecture to reduce their carbon footprint. Ultimately, failing to optimize for resource efficiency is no longer just a technical oversight; it is an increasing liability for any long-term scalable AI project."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-22T12:31:55.356Z"
-  },
-  {
     "id": "art-1795350707757-xd2l4",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -7268,32 +7319,6 @@
       "開発"
     ],
     "created_at": "2026-11-22T09:31:52.173Z"
-  },
-  {
-    "id": "art-1795339030640-m0b0v",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/yoxi957/items/a1d6edbba495f9e8124e",
-    "published_at": "2026-11-22T09:15:47.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSUdpYlBBMkNsQnJvM3RPQnFlTUI0ZTBoSk00dWNSRzIwVzlRMzhWWkdRTmd4VVRZayUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz04NzM0MDc4YzhkNDA5YzE3MDMwMjYxNGU5MWQ2OTA5ZQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D7e866a2250cd576a997aaa065928b932?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU5JTlGJUIzJUU1JUEzJUIwQUklRTMlODElQUUxODZtcyVFNSU4NSVBOCVFNCVCQSU4QyVFOSU4NyU4RCVFMyU4MSVBOCVFMyU4MCU4QzElRTUlOUIlOUUlRTMlODElQTcxJTJDMDAwJUU0JUJCJUI2JUU1JTg4JUE0JUU1JUFFJTlBJUUzJTgwJThEJUUzJTgxJUFCJUU4JUE2JThCJUUzJTgyJThCJUUzJTgwJTgxJUU2JThFJUE4JUU4JUFCJTk2JUUzJTgzJTkxJUUzJTgyJUE0JUUzJTgzJTk3JUUzJTgzJUE5JUUzJTgyJUE0JUUzJTgzJUIzJUUzJTgxJUFFJUU1JThEJTk4JUU2JUE5JTlGJUU4JTgzJUJEJUU3JTg5JUI5JUU1JThDJTk2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZTZlM2IyNDgzMmJjNDE0Y2QwY2I1Zjg5MWJhMDc0MTc&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5b3hpOTU3JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTU2OGJmNzgxYWMwNjU3MzZkOWI3ZWNmNWY4YmRmNjU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=88648b2bd5cfb5eb3051e60368e9021f",
-    "title_ja": "音声AI「186ms全二重」と「1回1000件判定」が示す、汎用LLMから特化型パイプラインへのアーキテクチャ転換",
-    "summary_ja": "近年のAI開発では、単一の巨大汎用モデルに頼る設計から、用途別に最適化した軽量・低遅延モデルを組み合わせるパイプライン構成への転換が鮮明になっている。 音声AIの186ms全二重通信や、バッチ処理で1,000件を一度に判定する事例は、汎用モデルでは解決できないレイテンシやコストの限界を特化型モデルが補完する実例だ。",
-    "translations": {
-      "ja": {
-        "title": "音声AI「186ms全二重」と「1回1000件判定」が示す、汎用LLMから特化型パイプラインへのアーキテクチャ転換",
-        "summary": "近年のAI開発では、単一の巨大汎用モデルに頼る設計から、用途別に最適化した軽量・低遅延モデルを組み合わせるパイプライン構成への転換が鮮明になっている。 音声AIの186ms全二重通信や、バッチ処理で1,000件を一度に判定する事例は、汎用モデルでは解決できないレイテンシやコストの限界を特化型モデルが補完する実例だ。"
-      },
-      "en": {
-        "title": "Why 186ms voice AI and batch inference prove specialized pipelines are replacing general-purpose LLMs",
-        "summary": "Modern AI architecture is shifting away from monolithic reliance on large, general-purpose models in favor of specialized, lightweight inference pipelines. Recent industry breakthroughs, such as 186ms full-duplex voice latency and massive 1,000-item batch inference tasks, highlight why a one-size-fits-all model strategy frequently hits performance and cost walls. These specialized pipelines succeed by optimizing specific tasks that general models struggle to handle within strict real-time constraints. For builders, this signifies a crucial architectural evolution: treating LLMs as modular components rather than universal endpoints. By routing traffic through purpose-built models based on task requirements, developers can maintain superior user experiences and significantly lower infrastructure overhead compared to naive, single-model implementations. The move toward intelligent, task-specific routing is no longer optional for high-performance applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-22T09:17:10.640Z"
   },
   {
     "id": "art-1795339021971-jdonj",
@@ -29769,32 +29794,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-13T09:16:50.420Z"
-  },
-  {
-    "id": "art-1794560518885-ek7wy",
-    "source_id": "source-arxiv",
-    "source_name": "arXiv (cs.AI / cs.CL)",
-    "url": "https://arxiv.org/abs/2611.14766",
-    "published_at": "2026-11-13T05:00:00.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "AIと人間の社会的協調における「時間」の利用：ゲーム『ザ・マインド』を基にした動的な微細調整スキルの研究",
-    "summary_ja": "人間は会話なしでも「間」や沈黙といった時間的合図から相手の心理を推察し、社会的協調を図る。 本研究は協力型カードゲーム『ザ・マインド』を用い、150人の人間と2種類のAIモデルを比較することで、AIが人間のような連続的かつ微細な時間感覚に基づいた協調行動を再現できるかを検証した。 言語に頼らない状況下でのAIの社会性獲得は、マルチエージェントシステムの設計において新たな重要な知見となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "AIと人間の社会的協調における「時間」の利用：ゲーム『ザ・マインド』を基にした動的な微細調整スキルの研究",
-        "summary": "人間は会話なしでも「間」や沈黙といった時間的合図から相手の心理を推察し、社会的協調を図る。 本研究は協力型カードゲーム『ザ・マインド』を用い、150人の人間と2種類のAIモデルを比較することで、AIが人間のような連続的かつ微細な時間感覚に基づいた協調行動を再現できるかを検証した。 言語に頼らない状況下でのAIの社会性獲得は、マルチエージェントシステムの設計において新たな重要な知見となるだろう。"
-      },
-      "en": {
-        "title": "How AI and Humans Use Time for Social Coordination: Studying Implicit Temporal Cues via The Mind",
-        "summary": "Humans instinctively infer mental states using implicit temporal cues like pauses, but how do we manage fine-grained social coordination without explicit communication? This research investigates this mechanism using 'The Mind,' a cooperative card game that forbids talking and relies entirely on timing. By evaluating 150 human participants against two distinct classes of AI models, the study analyzes whether artificial systems can replicate human-like temporal coordination despite not 'experiencing' continuous real-time. The results reveal critical discrepancies in how AI handles non-verbal temporal signals. For builders developing multi-agent systems or social AI, the takeaway is that embedding latent temporal sensitivity is essential for achieving truly fluid, natural cooperation in scenarios where explicit messaging is either impossible or strictly limited."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-13T09:01:58.885Z"
   },
   {
     "id": "art-1794560512851-0980n",
