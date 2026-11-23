@@ -1,5 +1,34 @@
 [
   {
+    "id": "art-1795457827752-ccz6q",
+    "source_id": "source-braintrust",
+    "source_name": "Braintrust Blog",
+    "url": "https://www.braintrust.dev/blog/patterns",
+    "published_at": "2026-11-23T00:00:00.000Z",
+    "og_image_url": "https://www.braintrust.dev/og?title=Build+better+agents+with+Patterns&description=Patterns+is+now+generally+available.+It+investigates+your+agent+traces+and+application+logs+to+surface+silent+failures%2C+unnecessary+model+calls%2C+and+other+opportunities+to+improve.&template=blog&v=3",
+    "title_ja": "Braintrustが「Patterns」を正式リリース：AIエージェントのログとトレースを自動解析し、無駄なAPI呼び出しや潜在的な失敗を可視化",
+    "summary_ja": "Braintrustが提供するAIエージェント評価・監視プラットフォーム「Patterns」が正式リリースされた。 本ツールは、エージェントの実行トレースとアプリケーションログを自動的に解析し、開発者が気づきにくい「サイレント失敗」や、モデルの非効率な呼び出し箇所を特定する。 AIエージェントの構築において、デバッグや品質向上はブラックボックス化しやすいが、このソリューションは運用データに基づいた具体的な改善指標を提示することで、開発の高速化とコスト最適化を強力に支援する。",
+    "translations": {
+      "ja": {
+        "title": "Braintrustが「Patterns」を正式リリース：AIエージェントのログとトレースを自動解析し、無駄なAPI呼び出しや潜在的な失敗を可視化",
+        "summary": "Braintrustが提供するAIエージェント評価・監視プラットフォーム「Patterns」が正式リリースされた。 本ツールは、エージェントの実行トレースとアプリケーションログを自動的に解析し、開発者が気づきにくい「サイレント失敗」や、モデルの非効率な呼び出し箇所を特定する。 AIエージェントの構築において、デバッグや品質向上はブラックボックス化しやすいが、このソリューションは運用データに基づいた具体的な改善指標を提示することで、開発の高速化とコスト最適化を強力に支援する。"
+      },
+      "en": {
+        "title": "Braintrust launches Patterns: Automated analysis of agent traces and logs to identify silent failures and excessive LLM calls",
+        "summary": "Braintrust has officially launched Patterns, a dedicated observability platform designed to help developers build and optimize AI agents more effectively. By analyzing execution traces and application logs, Patterns automatically surfaces silent failures and redundant model calls that typically escape manual review. As agent-based workflows grow in complexity, debugging these black-box behaviors becomes a significant bottleneck for engineering teams. Patterns provides the actionable intelligence needed to refine agent performance and trim operational overhead by pinpointing specific inefficiencies in the interaction loop. For builders shipping autonomous systems, this tool transforms raw observability data into a clear roadmap for improving reliability, ensuring that agent cost and latency remain manageable as the product scales toward production readiness."
+      }
+    },
+    "tool_tags": [
+      "Braintrust"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-23T18:17:07.752Z"
+  },
+  {
     "id": "art-1795454318152-5ervk",
     "source_id": "source-deepmind",
     "source_name": "Google DeepMind / Gemini",
@@ -49276,33 +49305,6 @@
       "研究"
     ],
     "created_at": "2026-10-30T09:01:39.809Z"
-  },
-  {
-    "id": "art-1793349078348-wivt7",
-    "source_id": "source-digg-ai",
-    "source_name": "Digg AI",
-    "url": "https://digg.com/ai/8zhiz54n",
-    "published_at": "2026-10-30T08:23:06.000Z",
-    "og_image_url": null,
-    "title_ja": "AIモデルの「蒸留」による不正コピーを検知する新手法：ウォーターマークを用いた追跡可能性の確立とセキュリティ対策",
-    "summary_ja": "研究チームが、ウォーターマーク入りの出力を利用して構築された「蒸留モデル」を検知する新たな手法を開発しました。 このアプローチでは、盗用されたモデルが生成するコンテンツに隠された特定のパターンを識別することで、元のモデルがどこで不正利用されたかを追跡可能にします。 モデルの知的財産保護が急務となる中、開発者はAPI経由での過度なデータ収集を防ぐだけでなく、将来的なモデル窃盗に対する「透かし」戦略を早期に組み込むことが重要です。",
-    "translations": {
-      "ja": {
-        "title": "AIモデルの「蒸留」による不正コピーを検知する新手法：ウォーターマークを用いた追跡可能性の確立とセキュリティ対策",
-        "summary": "研究チームが、ウォーターマーク入りの出力を利用して構築された「蒸留モデル」を検知する新たな手法を開発しました。 このアプローチでは、盗用されたモデルが生成するコンテンツに隠された特定のパターンを識別することで、元のモデルがどこで不正利用されたかを追跡可能にします。 モデルの知的財産保護が急務となる中、開発者はAPI経由での過度なデータ収集を防ぐだけでなく、将来的なモデル窃盗に対する「透かし」戦略を早期に組み込むことが重要です。"
-      },
-      "en": {
-        "title": "New detection method identifies AI models distilled from watermarked outputs, enabling effective intellectual property protection",
-        "summary": "Researchers have introduced a novel technique to detect distilled AI models created using data scraped from watermarked outputs. This method works by identifying specific statistical artifacts or signatures retained in the distilled model, allowing creators to trace stolen intellectual property back to its source. As model theft becomes a significant threat to proprietary AI investments, builders must move beyond basic rate limiting. Integrating robust, invisible watermarks into inference outputs is no longer optional; it is a critical defensive layer. By embedding forensic signals today, developers can ensure that if their models are cloned or distilled in the future, they retain the verifiable proof needed for legal recourse or platform enforcement against unauthorized model derivatives."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "セキュリティ",
-      "開発"
-    ],
-    "created_at": "2026-10-30T08:31:18.348Z"
   },
   {
     "id": "art-1793343715808-4h1x4",
