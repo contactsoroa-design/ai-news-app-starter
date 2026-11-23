@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795433534483-14sbp",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/mochiai/articles/2848f2df8b205a",
+    "published_at": "2026-11-23T11:05:44.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--nH6-YEFT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Codex%2520%25E3%2581%25AE%25E3%2583%25AA%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%25E3%2582%2592%25E3%2581%25A9%25E3%2581%2586%25E8%25A6%258B%25E5%25BC%25B5%25E3%2581%25A3%25E3%2581%25A6%25E3%2580%2581%25E3%2581%25A9%25E3%2581%2586%25E3%2580%258C%25E6%259D%25A5%25E3%2581%259F%25E3%2580%258D%25E3%2581%25A8%25E5%2588%25A4%25E5%25AE%259A%25E3%2581%2597%25E3%2581%259F%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Mochi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg1NTY5ZDBlNjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "OpenAI「Codex」の複雑なレート制限リセットをどう検知するか：グローバル・バンク枠をリアルタイム監視するAIエージェント構築術",
+    "summary_ja": "OpenAIのCodexには、一斉リセットと個別バンク枠の2種類が存在するが、公式の通知がなく把握が困難だ。 X上の不確実な情報に頼る現状を打破するため、筆者はAIエージェントを構築し、リセットの発生を2時間おきに自動検知する仕組みを実装した。 APIのレート制限はAIアプリケーションのUXを直撃するため、公式仕様に依存せず、独自の手法でリセットタイミングを監視・予測するエンジニアリングアプローチは、AIプロダクト運用において非常に価値が高い。",
+    "translations": {
+      "ja": {
+        "title": "OpenAI「Codex」の複雑なレート制限リセットをどう検知するか：グローバル・バンク枠をリアルタイム監視するAIエージェント構築術",
+        "summary": "OpenAIのCodexには、一斉リセットと個別バンク枠の2種類が存在するが、公式の通知がなく把握が困難だ。 X上の不確実な情報に頼る現状を打破するため、筆者はAIエージェントを構築し、リセットの発生を2時間おきに自動検知する仕組みを実装した。 APIのレート制限はAIアプリケーションのUXを直撃するため、公式仕様に依存せず、独自の手法でリセットタイミングを監視・予測するエンジニアリングアプローチは、AIプロダクト運用において非常に価値が高い。"
+      },
+      "en": {
+        "title": "How to monitor OpenAI Codex quota resets: Building an AI agent to track global and banked limit refreshes in real-time",
+        "summary": "OpenAI’s Codex features two distinct quota mechanisms—global resets and banked full resets—yet lacks an official, reliable dashboard to track their status. With developers often relying on chaotic, unverified social media chatter or fragmented third-party trackers to manage workload pacing, the author developed an AI agent to programmatically verify and monitor these reset events every two hours. By automating the detection of these specific refresh cycles, builders can maintain consistent API throughput without service interruptions. This engineering approach emphasizes that when service availability depends on undocumented quota mechanics, proactive, custom-built monitoring layers are essential for stable AI-integrated application operations, preventing the operational blindness common in early-stage LLM-powered systems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-23T11:32:14.483Z"
+  },
+  {
+    "id": "art-1795433524408-t60aq",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.superlogical.com/updates/public-testing-beginning",
+    "published_at": "2026-11-23T11:07:46.000Z",
+    "og_image_url": "https://www.superlogical.com/updates/public-testing-beginning/og.webp",
+    "title_ja": "Hashimoto氏のAIエージェント向け新端末「Rex」が登場：ターミナルエミュレータとマルチプレクサを統合し、LLMの操作効率を最大化",
+    "summary_ja": "Hashimoto氏が開発した「Rex」は、AIコーディングエージェントの操作に最適化した次世代のターミナルエミュレータ兼マルチプレクサである。 従来の端末環境では困難だった、AIによる非対話的なコマンド操作やコンテキスト管理を前提に設計されており、エージェントが端末を制御する際の信頼性と速度を大幅に向上させる。 自動化された開発フローを構築するエンジニアにとって、従来のtmuxやiTerm2に代わる新たなAIネイティブな操作レイヤーとしての活用が期待される。",
+    "translations": {
+      "ja": {
+        "title": "Hashimoto氏のAIエージェント向け新端末「Rex」が登場：ターミナルエミュレータとマルチプレクサを統合し、LLMの操作効率を最大化",
+        "summary": "Hashimoto氏が開発した「Rex」は、AIコーディングエージェントの操作に最適化した次世代のターミナルエミュレータ兼マルチプレクサである。 従来の端末環境では困難だった、AIによる非対話的なコマンド操作やコンテキスト管理を前提に設計されており、エージェントが端末を制御する際の信頼性と速度を大幅に向上させる。 自動化された開発フローを構築するエンジニアにとって、従来のtmuxやiTerm2に代わる新たなAIネイティブな操作レイヤーとしての活用が期待される。"
+      },
+      "en": {
+        "title": "Hashimoto debuts Rex: A terminal emulator and multiplexer specifically re-engineered for AI coding agents and autonomous workflows",
+        "summary": "Hashimoto has launched Rex, a new terminal emulator and multiplexer architected specifically for AI coding agents rather than manual human interaction. Unlike legacy terminal tools, Rex is built from the ground up to handle the non-interactive, high-speed command streams and complex context management required by AI agents. By optimizing the interface layer for machine-to-machine communication, it provides superior reliability and control for automated shell sessions. For engineers building agentic workflows, Rex aims to replace traditional multiplexers like tmux or iTerm2, serving as an AI-native abstraction layer that lets agents interact with the OS more effectively. This shift represents a crucial evolution in infrastructure as coding agents require deeper, more programmatic access to local development environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-23T11:32:04.408Z"
+  },
+  {
+    "id": "art-1795433517583-q466i",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kzm_suzuki/n/n766775e15a30",
+    "published_at": "2026-11-23T11:30:11.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/338464177/rectangle_large_type_2_e8d8cddb1e7535313b7eb03eb18787a5.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「書き換え体験」からハッシュ関数を学ぶ：学生の投稿をリアルタイム改ざんする授業設計が極めて秀逸",
+    "summary_ja": "教室のスクリーンに映し出された学生たちの「特別授業への期待」が、教員によってその場で書き換えられるという大胆な体験型授業が行われた。 この仕掛けは、データの改ざんを身体的に理解させることで、ハッシュ関数がなぜデータの整合性検証に不可欠なのかを直感的に伝えている。 単なる理論の暗記ではなく、なぜその技術が必要なのかという「課題」を先に体感させるアプローチは、複雑な概念を教える際の教育手法として非常に参考になる。",
+    "translations": {
+      "ja": {
+        "title": "「書き換え体験」からハッシュ関数を学ぶ：学生の投稿をリアルタイム改ざんする授業設計が極めて秀逸",
+        "summary": "教室のスクリーンに映し出された学生たちの「特別授業への期待」が、教員によってその場で書き換えられるという大胆な体験型授業が行われた。 この仕掛けは、データの改ざんを身体的に理解させることで、ハッシュ関数がなぜデータの整合性検証に不可欠なのかを直感的に伝えている。 単なる理論の暗記ではなく、なぜその技術が必要なのかという「課題」を先に体感させるアプローチは、複雑な概念を教える際の教育手法として非常に参考になる。"
+      },
+      "en": {
+        "title": "Teaching hash functions through 'live tampering': Why hacking student posts makes cryptography concepts stick",
+        "summary": "A creative classroom exercise demonstrated the necessity of hash functions by having a teacher manipulate student text submissions in real-time on a shared screen. By forcing students to experience the shock of seeing their own words altered, the lesson made the abstract concept of data integrity visceral and immediate. Instead of starting with dense definitions of cryptographic theory, this approach centers on the problem that hashing actually solves: detecting unauthorized modification. This pedagogical strategy serves as a masterclass for technical education, proving that framing lessons around the vulnerability—rather than just the solution—creates a much deeper understanding of why protocols like hashing are foundational to secure digital communication."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-23T11:31:57.583Z"
+  },
+  {
+    "id": "art-1795433509607-ywktz",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/changelog/ai-gateway-now-runs-canary-zdr-audits",
+    "published_at": "2026-11-23T06:19:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/caf87daafd0ddb7f57c786db/eb9a47f637fe4180dd745c8b86b04cfc/canary-zdr-audits-og.jpg",
+    "title_ja": "VercelのAI Gatewayが「カナリアZDR監査」を開始、推論プロバイダーのデータ保持をリアルタイムで検知",
+    "summary_ja": "VercelのAI Gatewayが、推論プロバイダーによるデータ無保持（ZDR）契約の遵守を検証する「カナリアZDR監査」を導入した。 これは特定のモデルやプロバイダーに紐付く一意のURLを生成し、通常の推論経路上でプロンプトとして送信することで、外部からのクロールやデータアクセスを監視する仕組みだ。 契約上の約束と実際のインフラ運用は乖離しやすいため、開発者はこうした継続的な自動検出レイヤーを組み込むことで、LLM利用時の機密情報漏洩リスクを能動的に排除できる。",
+    "translations": {
+      "ja": {
+        "title": "VercelのAI Gatewayが「カナリアZDR監査」を開始、推論プロバイダーのデータ保持をリアルタイムで検知",
+        "summary": "VercelのAI Gatewayが、推論プロバイダーによるデータ無保持（ZDR）契約の遵守を検証する「カナリアZDR監査」を導入した。 これは特定のモデルやプロバイダーに紐付く一意のURLを生成し、通常の推論経路上でプロンプトとして送信することで、外部からのクロールやデータアクセスを監視する仕組みだ。 契約上の約束と実際のインフラ運用は乖離しやすいため、開発者はこうした継続的な自動検出レイヤーを組み込むことで、LLM利用時の機密情報漏洩リスクを能動的に排除できる。"
+      },
+      "en": {
+        "title": "Vercel AI Gateway introduces canary ZDR audits to detect unauthorized data retention by inference providers",
+        "summary": "Vercel has launched canary ZDR (Zero Data Retention) audits within its AI Gateway to verify that inference providers actually uphold their data retention agreements. The system mints unique, non-existent URLs mapped to specific providers and models, embedding them into prompts sent during standard inference traffic. By monitoring if these canary URLs are ever crawled or accessed, the platform detects when providers fail to respect non-retention policies. Since contractual promises often drift from actual infrastructure behavior, these automated audits provide a critical detection layer for security teams. For builders integrating third-party LLMs, this shift from trusting provider documentation to implementing active, continuous verification is essential for ensuring that sensitive prompts remain private and are never used to train external models."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-23T11:31:49.607Z"
+  },
+  {
     "id": "art-1795432719531-ucw70",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5604,32 +5710,6 @@
     "created_at": "2026-11-22T21:16:42.092Z"
   },
   {
-    "id": "art-1795381316611-q0dzf",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/sumidayoshihiro/n/nae7996604174",
-    "published_at": "2026-11-22T20:28:23.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/c7ff4cf7174685f6208326d98dc4901b0d60890c.png",
-    "title_ja": "AI開発プロジェクト「MISAKI」の進化録：1か月で実現した記憶システムの検索から利活用への転換",
-    "summary_ja": "AIプロジェクト「MISAKI」の進捗を振り返り、過去1か月で行った記憶管理システムの抜本的なアップデートを報告する。 単に情報を蓄積して検索可能にする段階から、AIが適切なタイミングで必要な記憶を自律的に引き出し、文脈に沿って利活用できる状態へと進化させた。 このプロセスは単なる技術実装を超え、AIエージェントの育成を通じて、プロジェクトに関わるチームや個人の能力開発にも多大な影響を与えている。",
-    "translations": {
-      "ja": {
-        "title": "AI開発プロジェクト「MISAKI」の進化録：1か月で実現した記憶システムの検索から利活用への転換",
-        "summary": "AIプロジェクト「MISAKI」の進捗を振り返り、過去1か月で行った記憶管理システムの抜本的なアップデートを報告する。 単に情報を蓄積して検索可能にする段階から、AIが適切なタイミングで必要な記憶を自律的に引き出し、文脈に沿って利活用できる状態へと進化させた。 このプロセスは単なる技術実装を超え、AIエージェントの育成を通じて、プロジェクトに関わるチームや個人の能力開発にも多大な影響を与えている。"
-      },
-      "en": {
-        "title": "Building AI agent MISAKI: Moving beyond search-based memory to proactive context utilization in one month",
-        "summary": "This update tracks the evolution of the AI project 'MISAKI' over the last month, focusing on the critical shift from simply storing searchable data to enabling active, context-aware memory retrieval. By evolving the system to autonomously draw upon relevant information at the right moment, the developer has transitioned from passive data management to intelligent memory utilization. Beyond the technical milestones, the author reflects on how cultivating an AI agent simultaneously fosters growth in the developers themselves, treating the project as both a code-based challenge and a mentorship exercise. The core lesson for builders is that refining an AI's cognitive architecture requires parallel investment in systematic development processes and personal growth, ultimately proving that long-term project success depends on nurturing the humans behind the machine."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-22T21:01:56.611Z"
-  },
-  {
     "id": "art-1795381309800-wt4sz",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -6965,32 +7045,6 @@
       "開発"
     ],
     "created_at": "2026-11-22T16:02:22.762Z"
-  },
-  {
-    "id": "art-1795363330242-aon1j",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/V0val0x/DroidPath/blob/main/docs/benchmarks.md",
-    "published_at": "2026-11-22T15:19:19.000Z",
-    "og_image_url": null,
-    "title_ja": "Android自動化の常識を覆す「DroidPath」、ADB回避でUIツリー取得を0.32ミリ秒まで高速化するRust/Kotlin実装",
-    "summary_ja": "DroidPathは、AndroidのADB（Android Debug Bridge）経由の通信が持つ遅延を排除し、UIツリー取得をわずか0.32ミリ秒で実現する次世代の自動化ライブラリです。 RustとKotlinを用いてネイティブ層で処理を完結させることで、AIエージェントによる画面解析やタップ操作のオーバーヘッドを劇的に削減します。 また、経路探索アルゴリズム「A*」を統合しており、アプリ内の複雑な操作フローを効率的に自動化可能です。",
-    "translations": {
-      "ja": {
-        "title": "Android自動化の常識を覆す「DroidPath」、ADB回避でUIツリー取得を0.32ミリ秒まで高速化するRust/Kotlin実装",
-        "summary": "DroidPathは、AndroidのADB（Android Debug Bridge）経由の通信が持つ遅延を排除し、UIツリー取得をわずか0.32ミリ秒で実現する次世代の自動化ライブラリです。 RustとKotlinを用いてネイティブ層で処理を完結させることで、AIエージェントによる画面解析やタップ操作のオーバーヘッドを劇的に削減します。 また、経路探索アルゴリズム「A*」を統合しており、アプリ内の複雑な操作フローを効率的に自動化可能です。"
-      },
-      "en": {
-        "title": "DroidPath bypasses ADB with 0.32ms UI tree retrieval using Rust and Kotlin for faster AI agents",
-        "summary": "DroidPath introduces a high-performance alternative to standard Android automation by bypassing the inherent latency of ADB-based communication, achieving sub-millisecond UI tree retrieval in just 0.32ms. By leveraging a specialized Rust and Kotlin implementation, the framework processes interactions at the native layer, drastically slashing the overhead typically associated with AI agent screen analysis and touch input. Furthermore, it integrates the A* pathfinding algorithm to optimize complex interaction flows within apps. For builders developing autonomous agents for Android, DroidPath removes the traditional bottleneck of heavy bridge communication. This shift toward native-level processing is essential for developers looking to push the boundaries of real-time responsiveness in mobile AI agents, effectively transforming how autonomous tools navigate intricate mobile UI structures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-22T16:02:10.242Z"
   },
   {
     "id": "art-1795362517085-qyu9f",
@@ -9343,32 +9397,6 @@
       "開発"
     ],
     "created_at": "2026-11-21T17:46:54.722Z"
-  },
-  {
-    "id": "art-1795282326567-4py1w",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/nanako1129/articles/799de43c4e556c",
-    "published_at": "2026-11-21T15:00:06.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--mbz9rchN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%25883%252C000%25E5%259B%259E%25E3%2581%25AE%25E7%2584%25A1%25E6%2596%2599%25E6%259E%25A0%25E3%2581%25A7%25E3%2580%2581%25E3%2580%258CAI%25E3%2581%25AB%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2581%2593%25E3%2581%25A8%25E3%2580%258D%25E3%2582%2592%25E5%2585%2588%25E3%2581%25AB%25E6%25B1%25BA%25E3%2582%2581%25E3%2581%259F%25E3%2580%2582%25E7%258C%25AB%25E8%2580%25B3%25E7%25A7%2598%25E6%259B%25B8%25E3%2581%25A8%25E5%25AE%2587%25E5%25AE%2599%25E3%2582%2592%25E6%2597%2585%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Nanako%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSk1FTDhPNnFtdzNXQjEybllXQXEtZ3IwYlN1QmFzajU2aVpRekFuTENsMDlNPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "月3,000回の制限内でゲーム体験を維持する設計：AI秘書実装時に学ぶ「AIに任せないこと」を定義する重要性",
-    "summary_ja": "個人開発のブラウザゲームに「さくらのAI Engine」を導入し、月間3,000回の無料枠を活用してAI秘書機能を実装した事例。 開発の肝はAPI連携ではなく、制限を超えた際やAPI停止時にゲーム体験が崩壊しないよう、AIに依存しないUIと会話ロジックを設計段階で明確に分けた点にある。 コスト制限のある個人開発において、AI機能を「必須のコアロジック」にするのではなく、体験を補完する「余白」として設計することが、持続可能なAIアプリ開発の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "月3,000回の制限内でゲーム体験を維持する設計：AI秘書実装時に学ぶ「AIに任せないこと」を定義する重要性",
-        "summary": "個人開発のブラウザゲームに「さくらのAI Engine」を導入し、月間3,000回の無料枠を活用してAI秘書機能を実装した事例。 開発の肝はAPI連携ではなく、制限を超えた際やAPI停止時にゲーム体験が崩壊しないよう、AIに依存しないUIと会話ロジックを設計段階で明確に分けた点にある。 コスト制限のある個人開発において、AI機能を「必須のコアロジック」にするのではなく、体験を補完する「余白」として設計することが、持続可能なAIアプリ開発の鍵となる。"
-      },
-      "en": {
-        "title": "Building AI features on a budget: Why defining what your AI should NOT do is key to sustainable game dev",
-        "summary": "A solo developer integrating 'Sakura AI Engine' into a browser game shares a crucial lesson about working within a 3,000-request monthly free tier. The success of this project wasn't about the API integration, but rather deciding early on what the AI should not handle. By designing a fallback architecture where core game progression remains functional even if the AI hits its limit, the developer ensured the experience doesn't break when usage spikes or tokens run out. For solo builders, the practical takeaway is clear: treat AI as an enhancement layer rather than a critical dependency, ensuring your app's core utility remains robust and stable even when the LLM goes offline or hits a paywall."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-21T17:32:06.567Z"
   },
   {
     "id": "art-1795282318255-eahc8",
@@ -39287,35 +39315,6 @@
       "開発"
     ],
     "created_at": "2026-11-06T17:16:29.297Z"
-  },
-  {
-    "id": "art-1793982722618-pxogd",
-    "source_id": "source-vercel",
-    "source_name": "Vercel / v0 Blog",
-    "url": "https://vercel.com/changelog/vercel-token-scanning-expands-to-more-public-sources",
-    "published_at": "2026-11-04T13:00:00.000Z",
-    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4Czfbb2sJlw59NPcdMH9rd/0f654bd8fe1f74a5c57e283b8668dc37/Vercel_token_scanning_expands_to_more_public_sources_og.png",
-    "title_ja": "VercelがTruffle Securityと提携、GitHubやHugging Faceなど公開ソース上のAPIトークン検知・失効機能を大幅強化",
-    "summary_ja": "VercelはTruffle Securityとの提携により、GitHub、GitLab、Hugging Face等、広範な公開プラットフォームで漏洩したAPIトークンの自動検知・失効プロセスを拡充した。 さらに月次でCommon Crawlのウェブデータをスキャンし、不正利用による予期せぬコスト発生やプロジェクトへの攻撃を防ぐ。",
-    "translations": {
-      "ja": {
-        "title": "VercelがTruffle Securityと提携、GitHubやHugging Faceなど公開ソース上のAPIトークン検知・失効機能を大幅強化",
-        "summary": "VercelはTruffle Securityとの提携により、GitHub、GitLab、Hugging Face等、広範な公開プラットフォームで漏洩したAPIトークンの自動検知・失効プロセスを拡充した。 さらに月次でCommon Crawlのウェブデータをスキャンし、不正利用による予期せぬコスト発生やプロジェクトへの攻撃を防ぐ。"
-      },
-      "en": {
-        "title": "Vercel expands automated token revocation via Truffle Security partnership and new Common Crawl scanning for leaked credentials",
-        "summary": "Vercel has partnered with Truffle Security to bolster automated detection and revocation of exposed tokens across diverse public platforms, including GitHub, GitLab, Docker, npm, PyPI, and Hugging Face. Beyond this partnership, Vercel now continuously scans each monthly Common Crawl dataset for leaked credentials, automatically revoking those found to mitigate risks of unauthorized project access and unexpected billing spikes. Builders will receive automated email alerts if their tokens are invalidated, though this infrastructure update highlights a critical developer imperative: shift-left security strategies are now mandatory. The takeaway is that relying on reactive revocation is not enough; rigorous secret management and scanning for leaked keys before pushing to any public registry must be standard practice in modern deployment workflows."
-      }
-    },
-    "tool_tags": [
-      "Vercel"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-06T16:32:02.618Z"
   },
   {
     "id": "art-1793980917219-ecqfv",
