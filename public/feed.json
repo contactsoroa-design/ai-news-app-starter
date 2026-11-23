@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795411045085-4gpnl",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/matsushima_a/articles/day-054-haru4b-full-duplex-cpu-vs-gpu",
+    "published_at": "2026-11-22T14:37:57.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--E_-Lwd1B--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2585%25A8%25E4%25BA%258C%25E9%2587%258D%25E9%259F%25B3%25E5%25A3%25B0%25E5%25AF%25BE%25E8%25A9%25B1%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25ABHaru-4B%25E3%2582%2592CPU%25E3%2581%25A8GPU%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581GPU%25E3%2581%25A7%25E3%2581%25AF1%25E3%2583%2595%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%25A0133ms%25E3%2582%2592%25E5%2588%2587%25E3%2581%25A3%25E3%2581%259F%25E3%2581%258C%25E8%25BF%2594%25E4%25BA%258B%25E3%2581%25AF%25E6%25AF%258E%25E5%259B%259E%25E9%2581%2595%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:matsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkY2YwMTZjYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "全二重音声対話モデル「Haru-4B」をローカル検証。GPU駆動で1フレーム133msの低遅延応答を実現するも、出力の安定性に課題も",
+    "summary_ja": "higurashi-aiが公開した全二重音声対話モデル「Haru-4B」を検証。 従来のターンベースと異なり、ユーザーの音声を聞きながら並行して応答を生成できるため、1フレーム133msという低遅延を実現している。 実際にCPU/GPUで動作させたところGPUではこの速度を達成したが、対話ごとに返答内容が異なる不安定さも見られた。 リアルタイム対話の実装には速度と推論の一貫性を両立させる工夫が必要だ。",
+    "translations": {
+      "ja": {
+        "title": "全二重音声対話モデル「Haru-4B」をローカル検証。GPU駆動で1フレーム133msの低遅延応答を実現するも、出力の安定性に課題も",
+        "summary": "higurashi-aiが公開した全二重音声対話モデル「Haru-4B」を検証。 従来のターンベースと異なり、ユーザーの音声を聞きながら並行して応答を生成できるため、1フレーム133msという低遅延を実現している。 実際にCPU/GPUで動作させたところGPUではこの速度を達成したが、対話ごとに返答内容が異なる不安定さも見られた。 リアルタイム対話の実装には速度と推論の一貫性を両立させる工夫が必要だ。"
+      },
+      "en": {
+        "title": "Benchmarking the Haru-4B Full-Duplex Voice Model: 133ms Latency on GPU With Challenging Response Variability",
+        "summary": "I tested the open-source Haru-4B model to evaluate its full-duplex capabilities, which allow the system to listen to user input and stream audio output simultaneously—a significant shift from traditional turn-based voice assistants. By running the inference locally, I confirmed that the model achieves an impressive 133ms frame latency on GPU hardware, facilitating highly responsive interactions. However, the experience revealed notable inconsistency; while the speed is stellar, the generated responses fluctuate significantly between attempts, suggesting that output stability remains a bottleneck for production deployment. For developers experimenting with real-time conversational agents, Haru-4B proves that sub-150ms latency is achievable with current open-source architectures, though solving the deterministic output problem is the next hurdle to clear."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-23T05:17:25.085Z"
+  },
+  {
+    "id": "art-1795411033826-o5esq",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.bbc.com/news/articles/cqe9k09j9jv4o",
+    "published_at": "2026-11-23T05:06:12.000Z",
+    "og_image_url": "https://ichef.bbci.co.uk/news/1024/branded_news/4d7f/live/712502a0-e2cd-11f1-99ed-7de3e5932968.jpg",
+    "title_ja": "AIブームに沸くサンフランシスコ、熱狂の裏で高まるバブル崩壊への懸念とスタートアップ投資環境の変化",
+    "summary_ja": "サンフランシスコはAIスタートアップの集積地として再び活況を呈しているが、急激な資金調達と投資過熱を受けてバブル崩壊の懸念が浮上している。 テック業界の未来を左右する過度な期待と現実的な収益化のギャップに対し、投資家は慎重な姿勢を見せ始めた。 開発者や起業家にとって、単なるブームに踊らされず、持続可能なビジネスモデルを構築できるかどうかが生き残りの分かれ目となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "AIブームに沸くサンフランシスコ、熱狂の裏で高まるバブル崩壊への懸念とスタートアップ投資環境の変化",
+        "summary": "サンフランシスコはAIスタートアップの集積地として再び活況を呈しているが、急激な資金調達と投資過熱を受けてバブル崩壊の懸念が浮上している。 テック業界の未来を左右する過度な期待と現実的な収益化のギャップに対し、投資家は慎重な姿勢を見せ始めた。 開発者や起業家にとって、単なるブームに踊らされず、持続可能なビジネスモデルを構築できるかどうかが生き残りの分かれ目となるだろう。"
+      },
+      "en": {
+        "title": "San Francisco enjoys a sustained AI boom, but rising fears of a market correction are cooling the local tech ecosystem",
+        "summary": "San Francisco is currently riding a massive wave of AI-driven capital, re-establishing itself as the global epicenter for artificial intelligence startups. However, beneath the surface of record-breaking funding rounds and rapid hiring, voices of concern regarding a potential market crash are growing louder. The industry is grappling with the disconnect between speculative hype and sustainable, long-term revenue generation, leading cautious venture capitalists to re-evaluate their investment strategies. For builders and startup founders operating in this environment, the takeaway is clear: relying solely on easy venture capital is no longer a viable long-term strategy. True stability now depends on shipping products with immediate utility and clear, defensible business models that can survive an inevitable cooling of the current AI investment frenzy."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-23T05:17:13.826Z"
+  },
+  {
+    "id": "art-1795411026375-x6ynf",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/bokuwalily/n/n9bc9e73060e0",
+    "published_at": "2026-11-23T05:13:42.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339645087/rectangle_large_type_2_27d9e0d5e724b41c29183f83fe3941ab.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "副業で月5万円稼いだ翌日に3万円を投資——1年後に振り返る「本当に収益に直結した」自己投資と「無駄に終わった」出費の決定的な違い",
+    "summary_ja": "副業で初めて5万円の利益を出した翌日、勢いで3万円を投資した経験を1年後に分析する。 単なるツール購入やノウハウへの支出が収益を生むのか、それとも足踏みさせるのか、その境界線を実体験から解き明かす。 これから収益化を目指す個人開発者にとって、投資回収率（ROI）を意識した「利益を再投資する際の判断基準」を明確にするための必読の振り返りである。",
+    "translations": {
+      "ja": {
+        "title": "副業で月5万円稼いだ翌日に3万円を投資——1年後に振り返る「本当に収益に直結した」自己投資と「無駄に終わった」出費の決定的な違い",
+        "summary": "副業で初めて5万円の利益を出した翌日、勢いで3万円を投資した経験を1年後に分析する。 単なるツール購入やノウハウへの支出が収益を生むのか、それとも足踏みさせるのか、その境界線を実体験から解き明かす。 これから収益化を目指す個人開発者にとって、投資回収率（ROI）を意識した「利益を再投資する際の判断基準」を明確にするための必読の振り返りである。"
+      },
+      "en": {
+        "title": "I spent 30,000 yen the day after earning my first 50,000 yen side hustle profit—a year of reflection on what actually generated ROI",
+        "summary": "After hitting a 50,000 yen profit milestone from a side project, the author immediately reinvested 30,000 yen, only to look back a year later and audit which choices drove growth versus which were wasted capital. The piece dissects the common trap of overspending on productivity tools or unproven courses versus high-impact investments that directly scale revenue. For individual builders focused on monetization, this retrospective offers a clear framework for distinguishing between vanity expenses and capital allocation that actually pays off. It highlights the critical lesson that not all reinvestment is equal and provides actionable advice on how to scrutinize your spending to ensure every yen contributes to long-term sustainability rather than just draining your initial hard-earned profits."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-23T05:17:06.375Z"
+  },
+  {
+    "id": "art-1795411017839-6enen",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.26717",
+    "published_at": "2026-11-23T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "大規模言語モデルにおける「構築による一貫性」：因果シミュレーションで知識グラフとサイバー脅威インテリジェンスの整合性を担保する新手法",
+    "summary_ja": "LLMによる知識グラフ生成では個別オブジェクトは妥当でも関係性の整合性が失われがちだが、本論文は因果シミュレーションに基づく新しい生成手法を提案した。 言語モデルエージェントの意図と決定論的なレフェリー（審判）による相互作用でプロセスをシミュレートし、イベント発生時にのみ関係を記録することで、一貫性を構築の「前提」として担保する。 複雑な構造データの生成において、記述ではなくプロセスの再現を重視するこのアプローチは、AIエージェントの推論精度向上における新たな指針となる。",
+    "translations": {
+      "ja": {
+        "title": "大規模言語モデルにおける「構築による一貫性」：因果シミュレーションで知識グラフとサイバー脅威インテリジェンスの整合性を担保する新手法",
+        "summary": "LLMによる知識グラフ生成では個別オブジェクトは妥当でも関係性の整合性が失われがちだが、本論文は因果シミュレーションに基づく新しい生成手法を提案した。 言語モデルエージェントの意図と決定論的なレフェリー（審判）による相互作用でプロセスをシミュレートし、イベント発生時にのみ関係を記録することで、一貫性を構築の「前提」として担保する。 複雑な構造データの生成において、記述ではなくプロセスの再現を重視するこのアプローチは、AIエージェントの推論精度向上における新たな指針となる。"
+      },
+      "en": {
+        "title": "Coherence by Construction: A New Paradigm for Synthesizing Knowledge Graphs via Causal Simulation vs. Direct LLM Generation",
+        "summary": "Standard LLM-based knowledge graph synthesis often produces valid individual objects but fails to ensure grounded relationships. Researchers propose 'generation by simulation,' a new paradigm where agents simulate a process rather than describing an artifact. By employing a deterministic referee to resolve outcomes against an explicit world model, the system emits a relation only when the actual event occurs, effectively baking coherence into the construction process itself. Validated against Cyber Threat Intelligence (CTI) datasets, this approach demonstrates that moving from descriptive generation to process-based causal simulation is critical for maintaining structural integrity in complex AI-generated knowledge bases. For builders developing agentic workflows, prioritizing procedural reliability over raw descriptive output is the key to achieving robust, verifiable knowledge synthesis."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-23T05:16:57.839Z"
+  },
+  {
     "id": "art-1795410134357-32nc5",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -5105,32 +5211,6 @@
     "created_at": "2026-11-22T16:02:10.242Z"
   },
   {
-    "id": "art-1795363322893-l6ude",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/gorila_pochette/n/n88ae33d6c5fa",
-    "published_at": "2026-11-22T15:33:24.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/336485751/rectangle_large_type_2_b11de4d038a51bbbbb16b9be30e4e634.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI活用時代のボトルネックは生成から「検収」へ移行——開発・業務効率化でPMが直面する承認プロセスの新たな課題と対策",
-    "summary_ja": "AIによる生成速度が飛躍的に向上した結果、仕事のボトルネックは生成側から「人間による検収・承認側」へと完全に移行している。 AIのアウトプットを精査する検収プロセスを曖昧にすると、全体的な業務効率や品質担保が損なわれるリスクがある。 プロジェクトマネージャーや開発者は、AIにタスクを委任する前の権限設計と、受け取り後の検収フローをセットで構築することが、AI活用を真の生産性向上につなげるための鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AI活用時代のボトルネックは生成から「検収」へ移行——開発・業務効率化でPMが直面する承認プロセスの新たな課題と対策",
-        "summary": "AIによる生成速度が飛躍的に向上した結果、仕事のボトルネックは生成側から「人間による検収・承認側」へと完全に移行している。 AIのアウトプットを精査する検収プロセスを曖昧にすると、全体的な業務効率や品質担保が損なわれるリスクがある。 プロジェクトマネージャーや開発者は、AIにタスクを委任する前の権限設計と、受け取り後の検収フローをセットで構築することが、AI活用を真の生産性向上につなげるための鍵となる。"
-      },
-      "en": {
-        "title": "The bottleneck of AI-driven work has shifted from generation to acceptance: Why PMs must rethink approval workflows",
-        "summary": "As AI generation speeds skyrocket, the primary bottleneck in digital workflows has shifted from creation to the human acceptance phase. When AI produces deliverables faster than ever, the oversight process becomes the new operational ceiling; failing to structure the 'acceptance' layer risks drowning teams in unverified output or bottlenecking downstream delivery. For product managers and developers, the lesson is that delegating to AI is incomplete without designing specific approval workflows and validation criteria for the results. Simply speeding up generation is insufficient if human verification remains ad-hoc and slow. To truly scale efficiency, builders must treat the verification layer with the same rigor as the automated generation logic, ensuring that quality gates keep pace with the influx of AI-generated work."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-22T16:02:02.893Z"
-  },
-  {
     "id": "art-1795362517085-qyu9f",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -6634,32 +6714,6 @@
       "開発"
     ],
     "created_at": "2026-11-22T10:31:54.393Z"
-  },
-  {
-    "id": "art-1795342629677-s3cnf",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://maxmart.github.io/posts/three-way-translation-merge/",
-    "published_at": "2026-11-22T07:32:56.000Z",
-    "og_image_url": null,
-    "title_ja": "GitHubリポジトリの多言語ドキュメントをLLMで維持：3ウェイ・マージ技術を用いた翻訳同期の自動化手法を解説",
-    "summary_ja": "GitHub上の多言語ドキュメント管理において、元言語の更新を翻訳版へ効率的に反映させる「3ウェイ・マージ」のアプローチが注目されている。 これは翻訳テキストを単なる文字列としてではなく、Gitの差分管理と同様に、元言語、旧翻訳版、新元言語の3点をLLMで比較・マージする手法だ。 大規模なドキュメント修正でも再翻訳コストを抑えつつ一貫性を保てるため、グローバル展開する開発チームにとって、ドキュメントの鮮度維持を自動化する強力な武器となる。",
-    "translations": {
-      "ja": {
-        "title": "GitHubリポジトリの多言語ドキュメントをLLMで維持：3ウェイ・マージ技術を用いた翻訳同期の自動化手法を解説",
-        "summary": "GitHub上の多言語ドキュメント管理において、元言語の更新を翻訳版へ効率的に反映させる「3ウェイ・マージ」のアプローチが注目されている。 これは翻訳テキストを単なる文字列としてではなく、Gitの差分管理と同様に、元言語、旧翻訳版、新元言語の3点をLLMで比較・マージする手法だ。 大規模なドキュメント修正でも再翻訳コストを抑えつつ一貫性を保てるため、グローバル展開する開発チームにとって、ドキュメントの鮮度維持を自動化する強力な武器となる。"
-      },
-      "en": {
-        "title": "Automating multilingual docs: implementing three-way merge for LLM-powered translation synchronization in GitHub repositories",
-        "summary": "Managing multilingual documentation often leads to sync issues, but a new approach uses three-way merging to keep translated pages consistent with source updates. Instead of fully re-translating content, this system treats translations like code by leveraging LLMs to perform a three-way diff between the original source, the previous translation, and the new source text. By applying git-style merge logic to natural language, developers can isolate changes and integrate them into existing translations without overwriting manual tweaks or incurring full re-translation costs. This workflow significantly reduces maintenance overhead for global-facing documentation, providing a robust, scalable way for teams to ensure their non-English content stays accurate and up-to-date as the primary codebase evolves."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-22T10:17:09.677Z"
   },
   {
     "id": "art-1795342616461-tbvg5",
@@ -8841,32 +8895,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-21T15:32:45.272Z"
-  },
-  {
-    "id": "art-1795274258623-urwbb",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ikesita/articles/inside-llm-q4-q8-compare",
-    "published_at": "2026-11-21T06:14:46.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--R2VFQaA7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:inside-llm%25E5%2585%25A5%25E9%2596%2580%2520%25E2%2580%2595%2520Q4%25E3%2581%25A8Q8%25E3%2580%2581%25E5%2590%258C%25E3%2581%2598%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%25AE2%25E3%2581%25A4%25E3%2581%25AE%25E9%2587%258F%25E5%25AD%2590%25E5%258C%2596%25E3%2581%25AF%25E3%2581%25A9%25E3%2581%2593%25E3%2581%25A7%25E5%2588%2586%25E3%2581%258B%25E3%2582%258C%25E3%2582%258B%25E3%2581%258B%25E3%2580%2582%25E3%2583%2588%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%25B3%25E5%258D%2598%25E4%25BD%258D%25E3%2581%25A7%25E3%2580%258C%25E4%25B8%25AD%25E8%25BA%25AB%25E3%2580%258D%25E3%2582%2592%25E8%25A6%258B%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:moa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTHgzelYzTzA4V2MtZGxHS0o1allRemtXTmdDYkF5R2ZocUU2TmZkeGtEZU5XdjhRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ローカルLLM可視化ツール「inside-llm」徹底解説：Q4とQ8量子化で生成過程はどう変わるか？トークン単位で挙動を比較する",
-    "summary_ja": "オープンソースの「inside-llm」は、GGUF形式のローカルLLMにおける文章生成過程をブラウザ上でトークン単位で可視化できる検証ツールだ。 単に推論結果を見るだけでなく、同一モデルの異なる量子化版（Q4とQ8など）を同時に読み込み、どのタイミングでトークンの選択や確率分布が分岐するかを直感的に追跡できる。 量子化がモデルの判断に与える微妙な影響をエンジニアが手元で詳細に解析し、プロンプト設計やモデル選定の精度を高めるために不可欠な知見が得られる。",
-    "translations": {
-      "ja": {
-        "title": "ローカルLLM可視化ツール「inside-llm」徹底解説：Q4とQ8量子化で生成過程はどう変わるか？トークン単位で挙動を比較する",
-        "summary": "オープンソースの「inside-llm」は、GGUF形式のローカルLLMにおける文章生成過程をブラウザ上でトークン単位で可視化できる検証ツールだ。 単に推論結果を見るだけでなく、同一モデルの異なる量子化版（Q4とQ8など）を同時に読み込み、どのタイミングでトークンの選択や確率分布が分岐するかを直感的に追跡できる。 量子化がモデルの判断に与える微妙な影響をエンジニアが手元で詳細に解析し、プロンプト設計やモデル選定の精度を高めるために不可欠な知見が得られる。"
-      },
-      "en": {
-        "title": "Inside-llm: Inspecting Local LLM Token Generation Processes to Compare Quantization Differences Like Q4 Versus Q8",
-        "summary": "Inside-llm is an open-source tool that lets developers inspect and visualize GGUF model text generation processes at the token level directly within a browser. By loading two model variants simultaneously—such as different quantization levels like Q4 and Q8—engineers can pinpoint the exact moment where probability distributions diverge and token selection splits. This granular visibility allows for a deeper understanding of how quantization actually impacts model logic and creativity in real-time scenarios. For builders optimizing local model performance, using this tool provides essential, empirical insight into quantization trade-offs, helping you make informed decisions when balancing model size, memory footprint, and output accuracy for your specific application requirements."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-21T15:17:38.623Z"
   },
   {
     "id": "art-1795273424934-ba6s8",
@@ -33343,33 +33371,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-11T07:17:38.582Z"
-  },
-  {
-    "id": "art-1794380501346-vix2i",
-    "source_id": "source-arxiv",
-    "source_name": "arXiv (cs.AI / cs.CL)",
-    "url": "https://arxiv.org/abs/2611.12942",
-    "published_at": "2026-11-11T05:00:00.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "顧客離脱予測における「テーブルデータ特化型AIモデル」vs「最適化済み勾配ブースティング」の性能比較：利益・キャリブレーション重視の検証",
-    "summary_ja": "テーブルデータ特化型モデル（TFM）は勾配ブースティング（GBDT）を凌駕するとされてきたが、従来の比較は未調整のGBDTを対象としており、実際のビジネス利益を反映していなかった。 本研究では、Optunaで最適化されたGBDTと最新のTabPFNシリーズを5つの通信会社データセットで比較。 その結果、利益最大化の観点では適切に調整されたGBDTが依然として強力であり、モデル選定には精度だけでなく、実際の収益への貢献と確率予測の妥当性が不可欠であることが示された。",
-    "translations": {
-      "ja": {
-        "title": "顧客離脱予測における「テーブルデータ特化型AIモデル」vs「最適化済み勾配ブースティング」の性能比較：利益・キャリブレーション重視の検証",
-        "summary": "テーブルデータ特化型モデル（TFM）は勾配ブースティング（GBDT）を凌駕するとされてきたが、従来の比較は未調整のGBDTを対象としており、実際のビジネス利益を反映していなかった。 本研究では、Optunaで最適化されたGBDTと最新のTabPFNシリーズを5つの通信会社データセットで比較。 その結果、利益最大化の観点では適切に調整されたGBDTが依然として強力であり、モデル選定には精度だけでなく、実際の収益への貢献と確率予測の妥当性が不可欠であることが示された。"
-      },
-      "en": {
-        "title": "Are Tabular Foundation Models actually better than tuned GBDTs for churn? A profit-focused evaluation on 5 telecom datasets",
-        "summary": "Recent claims suggest Tabular Foundation Models (TFMs) outperform tree ensembles for customer churn, but prior benchmarks relied on unoptimized Gradient Boosted Decision Trees (GBDTs) and ignored actual business ROI. This study re-evaluates TabPFN-2.5, 3.5, and TabICL v2 against Optuna-tuned GBDTs across five public telecom churn datasets. The analysis breaks down performance into ranking capability, Expected Maximum Profit (EMP), and calibration quality. Findings reveal that properly tuned GBDTs remain highly competitive, outperforming TFMs in scenarios prioritizing concrete financial returns. For data scientists building churn models, this implies that jumping to foundation models without rigorous hyperparameter tuning of established ensembles can lead to suboptimal business outcomes, as profit-based evaluation metrics often diverge from standard classification accuracy."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-11T07:01:41.346Z"
   },
   {
     "id": "art-1794380494685-g2yo0",
