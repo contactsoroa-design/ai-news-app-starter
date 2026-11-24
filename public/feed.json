@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795487526141-jpjzn",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/hironakamura_ai/items/b2b85d65d7081b0e8b84",
+    "published_at": "2026-11-24T02:24:03.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDQ0NzcyJTJGNzA5NTAxOWUyOWVhMzY3ZWI2NzZiYmEyMzdlMjAyYjczZmM0Y2FiOCUyRnhfbGFyZ2UucG5nJTNGMTc4MDg3NzY4NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDRkN2ViYjlhY2U5MzE3MWUxYTdiNTA4ZmU4NDI1N2Y%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D7fd777bd4a540d788ced16e3c534f20f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Y3N2LkRpY3RSZWFkZXIlRTMlODElQTclRTYlQUQlQTIlRTMlODIlODElRTMlODIlOEIlRTMlODAlODFDU1YlRTMlODElQUUlRTklODclOEQlRTglQTQlODclRTUlODglOTclRTUlOTAlOEQmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0xMTE4YjhiMDAzMDZlYjA3YjNiZWExY2M0ZTllNWRjZg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBoaXJvbmFrYW11cmFfYWkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1lMmFlNTIxYjY4MGYyYzYzYzA1MmRmMDY3NjBkMjhkOQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=a5a2de1912ce582e408f670b2081e7ff",
+    "title_ja": "Pythonのcsv.DictReaderでCSVに重複列名がある場合の挙動と罠：strict=Trueでもエラーにならない仕様の落とし穴",
+    "summary_ja": "Pythonのcsv.DictReaderを使用する際、CSVファイル内に同名の列が複数存在しても、strict=Trueを指定してもエラーが発生しない挙動が報告されている。 重複した列名は上書きされ、後の列の値が優先的に取得される仕組みだ。 データセット作成時の予期せぬ欠損や誤判定を防ぐため、CSV読み込み前にpandas等で重複列のチェックを行うか、列名のユニーク化を前処理に組み込むことが開発時の必須防衛策となる。",
+    "translations": {
+      "ja": {
+        "title": "Pythonのcsv.DictReaderでCSVに重複列名がある場合の挙動と罠：strict=Trueでもエラーにならない仕様の落とし穴",
+        "summary": "Pythonのcsv.DictReaderを使用する際、CSVファイル内に同名の列が複数存在しても、strict=Trueを指定してもエラーが発生しない挙動が報告されている。 重複した列名は上書きされ、後の列の値が優先的に取得される仕組みだ。 データセット作成時の予期せぬ欠損や誤判定を防ぐため、CSV読み込み前にpandas等で重複列のチェックを行うか、列名のユニーク化を前処理に組み込むことが開発時の必須防衛策となる。"
+      },
+      "en": {
+        "title": "Python csv.DictReader caveats: Why strict=True fails to stop duplicate column names and how to fix data overwrites",
+        "summary": "When using Python's csv.DictReader, a silent failure occurs if your CSV contains duplicate column headers: even with strict=True enabled, the parser does not raise an error. Instead, DictReader automatically overwrites the first value with the subsequent one, causing data integrity issues that are difficult to trace. Because this behavior persists without warning, developers building data pipelines must implement manual checks or use libraries like pandas to rename duplicates before processing the file. Relying on built-in CSV parsing settings for validation is insufficient at this level, so integrating header uniqueness checks into your pre-processing ETL logic is critical to ensure accurate ingestion and avoid silent, downstream data corruption in your applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-24T02:32:06.141Z"
+  },
+  {
+    "id": "art-1795487519385-qqevf",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/hophopame/n/n8b550eeb430e",
+    "published_at": "2026-11-24T02:31:21.000Z",
+    "og_image_url": "https://assets.st-note.com/img/1795486630-FNjmc2UzQ7BD9RYW8PqtuVk6.png",
+    "title_ja": "未経験者がRoblox Studioで1日3本のゲームを開発、AIとのペアプロで実現した超高速制作の舞台裏",
+    "summary_ja": "元SEの個人開発者が、Roblox StudioとLuau言語を初めて触りながら、AIを壁打ち相手に活用することで1日3本のゲーム制作を達成した。 家事や育児の合間の隙間時間を活用し、専門知識ゼロから短期間でアウトプットを量産する手法は、AIによる開発プロセスの劇的な効率化を示している。 技術的な知識よりも、LLMと対話して構想を具体化し、コードの障壁を乗り越える「AI活用能力」が、現代の開発スピードを大きく変える鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "未経験者がRoblox Studioで1日3本のゲームを開発、AIとのペアプロで実現した超高速制作の舞台裏",
+        "summary": "元SEの個人開発者が、Roblox StudioとLuau言語を初めて触りながら、AIを壁打ち相手に活用することで1日3本のゲーム制作を達成した。 家事や育児の合間の隙間時間を活用し、専門知識ゼロから短期間でアウトプットを量産する手法は、AIによる開発プロセスの劇的な効率化を示している。 技術的な知識よりも、LLMと対話して構想を具体化し、コードの障壁を乗り越える「AI活用能力」が、現代の開発スピードを大きく変える鍵となる。"
+      },
+      "en": {
+        "title": "Former engineer uses AI pair programming to build 3 Roblox games in a single day as a complete beginner",
+        "summary": "A developer with zero prior experience in Roblox Studio or the Luau language successfully shipped three distinct game projects in one day. By using LLMs as a constant sparring partner, the creator bypassed the typically steep learning curve, treating the AI as an expert guide for coding and 3D modeling tasks during short breaks between parenting and work. This case study demonstrates how leveraging AI effectively can compress months of learning into mere hours, fundamentally changing how rapid prototyping works for solo builders. For those overwhelmed by new tech stacks, the takeaway is that AI-assisted iteration transforms daunting coding barriers into manageable dialogues, allowing builders to execute and launch projects far faster than traditional methodologies ever allowed."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-24T02:31:59.386Z"
+  },
+  {
+    "id": "art-1795487511803-eg2c8",
+    "source_id": "source-vercel",
+    "source_name": "Vercel / v0 Blog",
+    "url": "https://vercel.com/blog/kazunari-hanao-joins-vercel-as-country-manager-japan",
+    "published_at": "2026-11-23T05:00:00.000Z",
+    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/3PcLOJnLmubyWPQbOymaT4/6a9081a4c83e1c1c192a750c86e65507/slack-imgs.png",
+    "title_ja": "Vercel日本法人のカントリーマネージャーに花尾和成氏が就任。HashiCorpやPendoでの実績を活かし、国内市場での展開を加速へ",
+    "summary_ja": "Vercelは、日本市場への投資強化に向け、カントリーマネージャーとして花尾和成氏を任命した。 花尾氏はHashiCorpやPendo日本法人の代表を歴任しており、エンタープライズ領域での豊富な構築実績を持つ。 日本はNext.jsの早期導入国であり、三菱商事や富士通、U-NEXTなど大企業からスタートアップまで幅広い顧客を抱えている。 今回の就任を機に、国内チームの拡大とさらなる市場浸透を図る狙いだ。",
+    "translations": {
+      "ja": {
+        "title": "Vercel日本法人のカントリーマネージャーに花尾和成氏が就任。HashiCorpやPendoでの実績を活かし、国内市場での展開を加速へ",
+        "summary": "Vercelは、日本市場への投資強化に向け、カントリーマネージャーとして花尾和成氏を任命した。 花尾氏はHashiCorpやPendo日本法人の代表を歴任しており、エンタープライズ領域での豊富な構築実績を持つ。 日本はNext.jsの早期導入国であり、三菱商事や富士通、U-NEXTなど大企業からスタートアップまで幅広い顧客を抱えている。 今回の就任を機に、国内チームの拡大とさらなる市場浸透を図る狙いだ。"
+      },
+      "en": {
+        "title": "Vercel Appoints Former Pendo Japan President Kazunari Hanao as Country Manager to Accelerate Growth in the Japanese Enterprise Market",
+        "summary": "Vercel has appointed industry veteran Kazunari Hanao as the new Country Manager for Japan, signaling a significant investment push into the domestic market. Hanao joins from his previous role as President of Pendo Japan and brings extensive experience scaling software businesses, having previously established HashiCorp's Japanese operations and led sales at Pivotal. Given that Japanese developers were early adopters of Next.js, Vercel is already entrenched with major clients including Mitsubishi Corporation, Fujitsu, and U-NEXT. With this strategic leadership hire, the company plans to aggressively expand its local team and deepen its footprint among Japan's growing roster of startups and large-scale enterprise users, reinforcing its status as a critical platform for modern web development."
+      }
+    },
+    "tool_tags": [
+      "Vercel"
+    ],
+    "genre_tags": [
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-24T02:31:51.803Z"
+  },
+  {
+    "id": "art-1795487502535-ytejw",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/hidaka_sj/articles/fb56d548f3a53a",
+    "published_at": "2026-11-23T16:12:46.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--UyAPd3Nn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A8%25E5%258D%2594%25E5%2583%258D%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E8%25AA%25BF%25E5%2591%25B3%25E6%2596%2599%25E3%2581%25AE%25E9%2596%258B%25E5%25B0%2581%25E6%2597%25A5%25E7%25AE%25A1%25E7%2590%2586%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2583%25BB%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2597%25E3%2581%259F%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B2%25E3%2581%25AA%25E3%2582%2584%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXZYSEpnUTdSVDE3YkZtZzV1bnRZblBLYzM2STBDUTNYanpVdVBYZ2JaaEVnZ1JRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "調味料の開封日管理ツール「choimy」をAIと共同開発した記録――「AIへの指示」と「自身の判断」の境界線を探る",
+    "summary_ja": "調味料の使い切り目安を管理するブラウザツール「choimy」を、AIアシスタントを活用して個人開発し公開した。 サーバーレスかつlocalStorage完結型で実装された本作を通じ、AIを単なるコード生成機としてではなく、設計方針の壁打ち相手として活用する際の「AIに任せる領域」と「開発者が主導すべき領域」の使い分けを具体的に記録している。 個人開発においてAIと協働する際のプロジェクト進行の現実的な指針となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "調味料の開封日管理ツール「choimy」をAIと共同開発した記録――「AIへの指示」と「自身の判断」の境界線を探る",
+        "summary": "調味料の使い切り目安を管理するブラウザツール「choimy」を、AIアシスタントを活用して個人開発し公開した。 サーバーレスかつlocalStorage完結型で実装された本作を通じ、AIを単なるコード生成機としてではなく、設計方針の壁打ち相手として活用する際の「AIに任せる領域」と「開発者が主導すべき領域」の使い分けを具体的に記録している。 個人開発においてAIと協働する際のプロジェクト進行の現実的な指針となるだろう。"
+      },
+      "en": {
+        "title": "Building 'choimy': A developer’s journey in using AI assistance to ship a localized condiment-tracking web tool",
+        "summary": "A developer recounts the process of building and launching 'choimy,' a simple browser-based tool that helps users manage condiment expiration dates entirely via localStorage without server-side data processing. The article provides a nuanced look at the collaborative dynamic between the builder and their AI assistant, highlighting the critical division between delegating boilerplate implementation to AI versus retaining human oversight for architectural decisions. By documenting where they relied on the AI versus where they had to intervene, the author offers a pragmatic roadmap for solo developers. This is a transparent look at managing the boundary between AI-generated drafts and intentional product design, proving that effective AI collaboration is as much about strategic judgment as it is about technical execution."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-24T02:31:42.535Z"
+  },
+  {
     "id": "art-1795486643428-xb5z7",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -7907,33 +8012,6 @@
     "created_at": "2026-11-22T22:47:39.076Z"
   },
   {
-    "id": "art-1795387652110-skehc",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/bokuwalily/n/na01612011cb0",
-    "published_at": "2026-11-22T22:43:31.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339508093/rectangle_large_type_2_f90cab16060dab0f3d60e5c620a816c5.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "自動投稿の空振りを防ぐ「3つの門」：SNS運用を成功させる事前チェックフローと条件設定の極意",
-    "summary_ja": "SNS自動投稿で「投稿成功」と表示されるのに反応がない空振りを防ぐため、投稿直前に実行すべき3段階の条件チェック（門）を解説。 コードベースとノーコードツールの両方で活用可能なこのプロセスは、投稿内容の質とタイミングを厳格に管理する。 システムを過信せず、独自の検証ロジックを挟むことで、無意味な投稿を止め、運用効率を最大化する実用的な知見を提供する。",
-    "translations": {
-      "ja": {
-        "title": "自動投稿の空振りを防ぐ「3つの門」：SNS運用を成功させる事前チェックフローと条件設定の極意",
-        "summary": "SNS自動投稿で「投稿成功」と表示されるのに反応がない空振りを防ぐため、投稿直前に実行すべき3段階の条件チェック（門）を解説。 コードベースとノーコードツールの両方で活用可能なこのプロセスは、投稿内容の質とタイミングを厳格に管理する。 システムを過信せず、独自の検証ロジックを挟むことで、無意味な投稿を止め、運用効率を最大化する実用的な知見を提供する。"
-      },
-      "en": {
-        "title": "Preventing ghost posts: Three critical pre-publication check-gates for automated social media workflows",
-        "summary": "Automated social media workflows often report successful execution while failing to drive actual engagement, leading to dead-air posting cycles. This guide outlines three specific pre-publication conditions—or 'gates'—that developers and no-code builders should implement to filter out low-value content before it reaches the feed. By shifting from blind automation to a validated sequence of checks, you ensure that content quality and timing meet strict thresholds. This approach moves beyond simple success-tracking to meaningful performance optimization, preventing the automated flood of invisible posts. For builders managing daily content pipelines, implementing these logical guardrails is the most effective way to eliminate wasted bandwidth and improve audience interaction rates without manual intervention every single morning."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-22T22:47:32.110Z"
-  },
-  {
     "id": "art-1795386725568-tmwez",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -8664,32 +8742,6 @@
       "研究"
     ],
     "created_at": "2026-11-22T19:47:01.297Z"
-  },
-  {
-    "id": "art-1795376806127-6zgf5",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/yshurik/items/7be59ee70275e390bfc3",
-    "published_at": "2026-11-22T19:35:18.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjE5Mzc3NzQlM0Z2JTNEND9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZTkyY2JlYWE4NjE5ZWYwYzRlYjdkNDZlMjlmMzkyM2M%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D89579138b73fdc9129d8c0a95205307a?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UkFHJTIwJUUzJTgxJUFFJUUzJTgzJTk3JUUzJTgzJUE5JUUzJTgzJUIzJTIwQiVFRiVCQyU5QSVFMyU4MiVBRiVFMyU4MyVBOSVFMyU4MiVBNiVFMyU4MyU4OSVFNiVBNCU5QyVFNyVCNCVBMiVFMyU4MiVBNCVFMyU4MyVCMyVFMyU4MyU4NyVFMyU4MyU4MyVFMyU4MiVBRiVFMyU4MiVCOSVFMyU4MiU5MiUyMDElMjAlRTYlOTclQTUlRTMlODElQTclRTMlODMlQUQlRTMlODMlQkMlRTMlODIlQUIlRTMlODMlQUIlRTMlODElQUIlRTclQkQlQUUlRTMlODElOEQlRTYlOEYlOUIlRTMlODElODglRTMlODIlOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1iYjZhNDQyOTI4MTk4MzJkNjQ4OGI3MzBjYWM1NWQ3Yw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5c2h1cmlrJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NzdmNmJiYzQ4YmU0NTQ5YWRlNGVkOTFhMDRjYmI3OWQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=8be39a2f4d10b9406070da93a0bcd000",
-    "title_ja": "RAGのプランB：クラウド検索APIの突然の停止を機に、インデックス基盤をわずか1日でローカル環境へ置き換えた全記録",
-    "summary_ja": "クラウド検索サービスが停止し、稼働中のエージェントツールが軒並み機能不全に陥った実体験に基づき、RAGの冗長化の重要性を解説する。 この記事では、依存していた外部APIを削除し、わずか1日でローカル環境へ移行した具体的な技術選定と実装手順を公開。 外部ツールへの過度な依存は致命的な単一障害点となり得るため、個人開発や小規模なAIプロダクトでは、あらかじめローカルでの代替案（プランB）を設計しておくことが開発継続の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "RAGのプランB：クラウド検索APIの突然の停止を機に、インデックス基盤をわずか1日でローカル環境へ置き換えた全記録",
-        "summary": "クラウド検索サービスが停止し、稼働中のエージェントツールが軒並み機能不全に陥った実体験に基づき、RAGの冗長化の重要性を解説する。 この記事では、依存していた外部APIを削除し、わずか1日でローカル環境へ移行した具体的な技術選定と実装手順を公開。 外部ツールへの過度な依存は致命的な単一障害点となり得るため、個人開発や小規模なAIプロダクトでは、あらかじめローカルでの代替案（プランB）を設計しておくことが開発継続の鍵となる。"
-      },
-      "en": {
-        "title": "RAG Plan B: How I Replaced a Failing Cloud Search Index with Local Infrastructure in Just One Day",
-        "summary": "After a sudden cloud search service outage crippled multiple active agent tools, the author implemented a robust local fallback system in under 24 hours. The piece details the technical pivot from a dependent external API to a self-hosted vector database, demonstrating why relying solely on third-party RAG services creates single points of failure. By decoupling the agent's core search functionality from cloud vendors, builders can maintain uptime during provider downtime. For those shipping AI apps, the takeaway is clear: always architect a 'Plan B' for critical dependencies. Designing for local portability from the start ensures your agents remain resilient, effectively turning a major service interruption into a catalyst for strengthening your system's overall architecture and reliability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-22T19:46:46.127Z"
   },
   {
     "id": "art-1795375986024-t6722",
@@ -10916,32 +10968,6 @@
       "音声"
     ],
     "created_at": "2026-11-22T00:31:49.157Z"
-  },
-  {
-    "id": "art-1795306627258-ejicz",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/kazu1/articles/pass-at-k-reliability",
-    "published_at": "2026-11-21T22:54:22.000Z",
-    "og_image_url": null,
-    "title_ja": "AIエージェントの「成功率92%」という数字は罠？pass@kの定義が本番稼働の信頼性に直結する理由を徹底解説",
-    "summary_ja": "AIエージェントの評価で用いられる「成功率」は、算出手法によって意味合いが大きく異なる。 1回試行の成功率が85%でも、4回中すべて成功を要する厳格な基準では成功率は52%まで低下する。 開発者が真に追うべきは、単なるpass@1の数字ではなく、実際のプロダクト運用における要求信頼性に応じたpass@kの設計だ。 評価指標の数え方がシステムの信頼性を決定づけるため、メトリクス定義を曖昧にしてはいけない。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの「成功率92%」という数字は罠？pass@kの定義が本番稼働の信頼性に直結する理由を徹底解説",
-        "summary": "AIエージェントの評価で用いられる「成功率」は、算出手法によって意味合いが大きく異なる。 1回試行の成功率が85%でも、4回中すべて成功を要する厳格な基準では成功率は52%まで低下する。 開発者が真に追うべきは、単なるpass@1の数字ではなく、実際のプロダクト運用における要求信頼性に応じたpass@kの設計だ。 評価指標の数え方がシステムの信頼性を決定づけるため、メトリクス定義を曖昧にしてはいけない。"
-      },
-      "en": {
-        "title": "Why a 92% AI agent success rate is a trap: Parsing pass@k definitions and actual production reliability",
-        "summary": "Standard AI success rates are deceptive; an agent with an 85% single-shot success rate may only achieve 52% reliability when subjected to a four-consecutive-trial requirement. Developers often mistake pass@k metrics for absolute performance, ignoring how the definition of 'success' shifts dramatically based on business logic requirements. If an agent must succeed consistently in production, measuring it via a single loose trial provides a false sense of security. The practical takeaway is that engineering teams must map their evaluation metric pass@k to the specific reliability constraints of their use case, rather than treating aggregate percentages as universal truth. Defining your metric is as important as the model architecture itself."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-22T00:17:07.258Z"
   },
   {
     "id": "art-1795306602914-0s4h0",
@@ -37889,35 +37915,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-09T19:01:40.558Z"
-  },
-  {
-    "id": "art-1794250015230-wivkv",
-    "source_id": "source-vercel",
-    "source_name": "Vercel / v0 Blog",
-    "url": "https://vercel.com/changelog/muse-ember-now-available-on-ai-gateway",
-    "published_at": "2026-11-09T00:00:00.000Z",
-    "og_image_url": "https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/7A6sXjeRC0lrfnxInP7996/e908500d803496bcb3b0dc8e37de3259/image__65_.png",
-    "title_ja": "VercelのAI GatewayがMetaの軽量推論モデル「Muse Ember」に対応、コード生成やドキュメント解析の効率化へ",
-    "summary_ja": "VercelのAI GatewayにMetaの軽量推論モデル「Muse Ember」が統合された。 このモデルは、コード生成、ツール呼び出し、ドキュメント要約といったAIエージェントの繰り返しタスクに特化しており、100万トークンのコンテキストウィンドウでテキスト・画像・動画のマルチモーダル入力を処理できる。 推論負荷を柔軟に調整可能なため、AIアプリ開発者はコスト最適化と応答速度のバランスを制御しやすくなる。",
-    "translations": {
-      "ja": {
-        "title": "VercelのAI GatewayがMetaの軽量推論モデル「Muse Ember」に対応、コード生成やドキュメント解析の効率化へ",
-        "summary": "VercelのAI GatewayにMetaの軽量推論モデル「Muse Ember」が統合された。 このモデルは、コード生成、ツール呼び出し、ドキュメント要約といったAIエージェントの繰り返しタスクに特化しており、100万トークンのコンテキストウィンドウでテキスト・画像・動画のマルチモーダル入力を処理できる。 推論負荷を柔軟に調整可能なため、AIアプリ開発者はコスト最適化と応答速度のバランスを制御しやすくなる。"
-      },
-      "en": {
-        "title": "Meta's lightweight Muse Ember reasoning model joins Vercel AI Gateway for efficient agentic coding and document analysis",
-        "summary": "Vercel has integrated Meta’s lightweight reasoning model, Muse Ember, into its AI Gateway, specifically targeting the high-volume, repetitive tasks essential to AI agent workflows. Optimized for sub-tasks like coding helpers, tool orchestration, and document summarization, the model features a massive one-million-token context window that processes text, images, and video in a single pass. Developers can now programmatically tune reasoning effort to balance latency versus model depth, streamlining complex agent runs while keeping costs under control. By enabling tool-calling integration directly via standard SDKs and Chat Completions APIs, this update provides a robust, scalable backend for builders looking to execute frequent, bounded AI actions without relying on heavy, general-purpose models for every minor step."
-      }
-    },
-    "tool_tags": [
-      "Vercel"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-09T18:46:55.230Z"
   },
   {
     "id": "art-1794250002308-mazaj",
