@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1795499328688-7t6t0",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://postgres.ai/blog/20261123-pgaibench",
+    "published_at": "2026-11-24T05:26:59.000Z",
+    "og_image_url": "https://postgres.ai/assets/blog/20261120-pgaibench-card.png",
+    "title_ja": "Postgres.aiがAIによるデータベース変更の安全性を検証する「PGAIBench」を公開、AAAアプローチで本番環境の可用性を担保",
+    "summary_ja": "Postgres.aiは、AIが本番データベースへの変更を安全に行えるかを検証する「PGAIBench」を発表した。 単なるコード生成にとどまらず、AIによるSQL実行結果の検証やロールバックの可能性を評価する「AAA（AI-Assisted Administration）」アプローチを提唱している。 本番環境でのAI導入において、単なる自動化ではなく、データベースの整合性と可用性を維持するためのガードレールをどう構築すべきかを示す重要な指針だ。",
+    "translations": {
+      "ja": {
+        "title": "Postgres.aiがAIによるデータベース変更の安全性を検証する「PGAIBench」を公開、AAAアプローチで本番環境の可用性を担保",
+        "summary": "Postgres.aiは、AIが本番データベースへの変更を安全に行えるかを検証する「PGAIBench」を発表した。 単なるコード生成にとどまらず、AIによるSQL実行結果の検証やロールバックの可能性を評価する「AAA（AI-Assisted Administration）」アプローチを提唱している。 本番環境でのAI導入において、単なる自動化ではなく、データベースの整合性と可用性を維持するためのガードレールをどう構築すべきかを示す重要な指針だ。"
+      },
+      "en": {
+        "title": "Postgres.ai launches PGAIBench to benchmark AI-driven database changes with an 'AAA' approach for safer production automation",
+        "summary": "Postgres.ai has unveiled PGAIBench, a new benchmarking tool designed to evaluate the safety and reliability of AI agents attempting modifications on live production databases. The project introduces the 'AAA' (AI-Assisted Administration) framework, which moves beyond simple text-to-SQL generation by rigorously testing AI outputs for correctness, performance impacts, and potential rollback viability before execution. For engineering teams integrating AI into their database workflows, this serves as a critical blueprint for building guardrails. The practical takeaway is that automation cannot rely on AI accuracy alone; developers must implement structured validation loops and automated verification layers to ensure data integrity and system availability when empowering LLMs to manage critical stateful infrastructure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-24T05:48:48.688Z"
+  },
+  {
+    "id": "art-1795499307986-7m3f0",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/emi_ndk/items/09e7a8a0c34c0c7b5b1a",
+    "published_at": "2026-11-24T05:41:11.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMjI0Mjk2NSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc5NTExMzQxMD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MjU4ZTY3MDI2N2I5MTdmMGUxNTQ3MGY2ZjNhZmI5ZjI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D1e925bd297bba3e0031adf6fcf1e3bb2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU0JUJGJTlEJUU1JUFEJTk4JUU3JTg5JTg4JUUzJTgwJTkxJUUzJTgxJTgyJUUzJTgxJUFBJUUzJTgxJTlGJUUzJTgxJUFFQUklRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglRTMlODAlODElRTglOTAlQkQlRTMlODElQTElRTMlODElOUYlRTMlODIlODklRTYlOUMlODAlRTUlODglOUQlRTMlODElOEIlRTMlODIlODklRTMlODIlODQlRTMlODIlOEElRTclOUIlQjQlRTMlODElOTclRTMlODElQTYlRTMlODElODQlRTMlODElQkUlRTMlODElOUIlRTMlODIlOTMlRTMlODElOEIlRUYlQkMlOUZPcGVuQUklRTMlODIlODIlRTQlQkQlQkYlRTMlODElODYlRTMlODAlOEMlRTglOTAlQkQlRTMlODElQTElRTMlODElQUElRTMlODElODQlRTUlQjglQjglRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yODAzNTIxNWQ5Zjc1MjVkYjU4ZTdiN2Y0OGMyMzU0Yw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBlbWlfbmRrJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODEyY2UxNTIxOTMzYWFkOTY1ZTJhOWFiMGQxZDljOTg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=e3b61ac3aaf8a25442ea6b8961858011",
+    "title_ja": "AIエージェント開発の落とし穴：『while True』による常駐化から脱却し、状態管理とキューで堅牢なワークフローを構築する方法",
+    "summary_ja": "AIエージェントの常駐処理に『while True』や『nohup』を使うのは、レート制限や再起動で容易に状態が失われるため危険だ。 この記事では、OpenAIのような大規模サービスも採用する、イベント駆動アーキテクチャやメッセージキューを用いた永続的ステート管理の重要性を解説する。 開発者は、プロセス終了を前提とした非同期タスク設計へ移行し、エージェントの作業履歴とコンテキストをDBで分離することで、システム障害に強い堅牢な自律エージェントを構築すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント開発の落とし穴：『while True』による常駐化から脱却し、状態管理とキューで堅牢なワークフローを構築する方法",
+        "summary": "AIエージェントの常駐処理に『while True』や『nohup』を使うのは、レート制限や再起動で容易に状態が失われるため危険だ。 この記事では、OpenAIのような大規模サービスも採用する、イベント駆動アーキテクチャやメッセージキューを用いた永続的ステート管理の重要性を解説する。 開発者は、プロセス終了を前提とした非同期タスク設計へ移行し、エージェントの作業履歴とコンテキストをDBで分離することで、システム障害に強い堅牢な自律エージェントを構築すべきだ。"
+      },
+      "en": {
+        "title": "Stop Building AI Agents with 'while True': Why You Must Adopt Event-Driven Queues for Reliable, Resilient Persistent Workflows",
+        "summary": "Many developers rely on simple loops like 'while True' and 'nohup' for AI agents, but this fragile approach inevitably loses state and wasted compute tokens whenever a rate limit or server reboot occurs. The author argues that you must treat agent processes as ephemeral and instead adopt event-driven architectures utilizing persistent message queues for robust state management. By decoupling the agent's work history from its execution process using external databases, you ensure that tasks survive infrastructure hiccups. For builders, the key takeaway is to stop writing blocking scripts and start building truly asynchronous pipelines. Only by designing for failure—where every step is atomic and trackable—can you deploy production-grade AI agents that actually handle long-running, complex business tasks reliably."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-24T05:48:27.986Z"
+  },
+  {
+    "id": "art-1795499262481-ztfx7",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/crisp_wasp5557/n/n68cf439811d8",
+    "published_at": "2026-11-24T05:31:12.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/340082811/rectangle_large_type_2_79f50f52a76639acfaa5f74e2eeaeffa.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeでゲーム開発を高速化、GTA 6お題の大会で6回連続提出して12戦全勝を記録した個人開発者の試行錯誤",
+    "summary_ja": "個人開発者がAIエージェント「Claude Code」を駆使し、GTA 6をテーマにしたゲームコンテスト「make.fun」で6回連続の作品提出を敢行。 当初は112位からのスタートだったが、AIによる効率的なコーディングで順位を48位まで押し上げ、すべての提出作品で12勝0敗という高い勝率を維持した。 開発プロセスとリサーチの大部分をAIに委任することで、個人が短期間に何度も作品を磨き上げ、大会で競り合うための具体的な開発モデルを提示している。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeでゲーム開発を高速化、GTA 6お題の大会で6回連続提出して12戦全勝を記録した個人開発者の試行錯誤",
+        "summary": "個人開発者がAIエージェント「Claude Code」を駆使し、GTA 6をテーマにしたゲームコンテスト「make.fun」で6回連続の作品提出を敢行。 当初は112位からのスタートだったが、AIによる効率的なコーディングで順位を48位まで押し上げ、すべての提出作品で12勝0敗という高い勝率を維持した。 開発プロセスとリサーチの大部分をAIに委任することで、個人が短期間に何度も作品を磨き上げ、大会で競り合うための具体的な開発モデルを提示している。"
+      },
+      "en": {
+        "title": "Developer uses Claude Code to build 6 game entries for GTA 6 contest, maintaining a perfect 12-0 record",
+        "summary": "A solo developer leveraged the AI agent Claude Code to rapidly build and iterate on game projects for the GTA 6-themed competition on make.fun, resulting in six consecutive submissions. Starting from an initial ranking of 112th, the developer climbed to 48th place while maintaining a perfect 12-0 win streak across all entries. By delegating the bulk of coding and research tasks to Claude Code, the developer demonstrated how AI agents can dramatically accelerate build cycles and feedback loops in competition settings. This experience highlights a practical model for solo builders: using AI to handle the heavy lifting of game development and data aggregation, allowing creators to pivot, refine, and compete at scale in fast-paced software challenges."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-24T05:47:42.481Z"
+  },
+  {
+    "id": "art-1795499216525-2neav",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.823",
+    "published_at": "2026-11-23T20:54:09.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、API画像処理機能のアップデート「v2.11.823」を公開 — 大規模スクレイピングの精度と安定性が向上",
+    "summary_ja": "FirecrawlがAPIイメージの最新バージョン「v2.11.823」をリリースしました。 今回のアップデートではAPI経由の画像処理能力が強化され、大規模なWebスクレイピングやデータ抽出における処理の安定性と精度が大幅に改善されています。 LLM向けデータ取得のワークフローを構築する開発者にとって、このマイナーバージョンアップはパースの信頼性を高め、複雑なDOM構造からの情報抽出を効率化するための重要な修正となります。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、API画像処理機能のアップデート「v2.11.823」を公開 — 大規模スクレイピングの精度と安定性が向上",
+        "summary": "FirecrawlがAPIイメージの最新バージョン「v2.11.823」をリリースしました。 今回のアップデートではAPI経由の画像処理能力が強化され、大規模なWebスクレイピングやデータ抽出における処理の安定性と精度が大幅に改善されています。 LLM向けデータ取得のワークフローを構築する開発者にとって、このマイナーバージョンアップはパースの信頼性を高め、複雑なDOM構造からの情報抽出を効率化するための重要な修正となります。"
+      },
+      "en": {
+        "title": "Firecrawl API Image v2.11.823 Released: Critical Enhancements to Large-Scale Scraping Precision and Processing Stability",
+        "summary": "Firecrawl has officially launched its latest API image, version v2.11.823, targeting core improvements in image processing capabilities. This update significantly bolsters the stability and accuracy of data extraction tasks, particularly when handling large-scale web scraping operations. For developers currently building LLM-focused data retrieval pipelines, this minor version bump offers essential refinements that directly improve parsing reliability and streamline information extraction from complex, deeply nested DOM structures. By ensuring your scraping infrastructure is running the latest build, you can effectively minimize downstream errors and maintain a more robust ingestion pipeline. Prioritize testing these updates against your existing crawls to take advantage of the improved handling of dynamic web content and resource allocation."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-24T05:46:56.525Z"
+  },
+  {
     "id": "art-1795498372395-bo4ko",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8748,31 +8855,6 @@
     "created_at": "2026-11-22T23:03:48.537Z"
   },
   {
-    "id": "art-1795388544296-zq6h7",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/mrmrmr/items/07d1fc859a3898117c76",
-    "published_at": "2026-11-22T23:00:08.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzI3NDE5JTJGMTJmOWI5NDdmYWQxMDJmMzI1ZTdhM2MxY2I1YTNmOTc2OWRjYjY4ZCUyRmxhcmdlLnBuZyUzRjE3NzM1Nzk2NTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTg4ZjQ2OWIxYjE5MmE2NWQ5MWIxOTc1NDc4ZDcwYjhj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De95bedc85e3356abe6a208a41038b450?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU2JTk2JTg3JUU3JUIzJUJCJUUzJTgxJUE3JUUzJTgyJTgyMyVFNSU4OCU4NiVFMyU4MSVBNyVFNyU5MCU4NiVFOCVBNyVBMyVFMyU4MCU5MUclRTYlQTQlOUMlRTUlQUUlOUElRTMlODAlOEMlRTglODclQUElRTUlOEIlOTUlRTklODElOEIlRTglQkIlQTIlRTMlODMlQkIlRTMlODMlQUQlRTMlODMlOUMlRTMlODMlODYlRTMlODIlQTMlRTMlODIlQUYlRTMlODIlQjklRTMlODAlOEQlRTYlOTQlQkIlRTclOTUlQTUlRUYlQkQlOUMlRTglODclQUElRTUlOEIlOTUlRTklODElOEIlRTglQkIlQTIlRTMlODMlQUMlRTMlODMlOTklRTMlODMlQUIlRTMlODElQUYlMjIlRTklODElOEIlRTglQkIlQTIlRTMlODElQUUlRTQlQjglQkIlRTUlQkQlQjklRTQlQkElQTQlRTQlQkIlQTMlMjIlRTMlODElQTclRTglQTYlOUElRTMlODElODglRTMlODIlOEImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz05MDhhYzExNzM2OWI5ZjMxM2M5MGMzZTVjM2E0MGQwMA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtcm1ybXImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NWIwMjVjOTJjZjhmZjExZjU4NzhmZDc0M2JhOTQ4ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=89ecb7fef77f33087de02e5a9a327d33",
-    "title_ja": "G検定の難所「自動運転・ロボティクス」攻略：運転レベルの境界は“誰が主役か”で見極める学習法",
-    "summary_ja": "G検定合格者が教える、試験で頻出かつ混同しやすい「自動運転レベル」の効率的な暗記術を解説。 レベル3と4の境界やSim2Realなどの技術概念を、技術的な詳細よりも「運転の主役が誰にあるか」という視点で整理することで記憶への定着を図る。 文系出身者でも直感的に理解できるこの学習フレームワークは、複雑な定義を丸暗記する負担を減らし、試験本番での失点を防ぐための実践的なアプローチとして有効である。",
-    "translations": {
-      "ja": {
-        "title": "G検定の難所「自動運転・ロボティクス」攻略：運転レベルの境界は“誰が主役か”で見極める学習法",
-        "summary": "G検定合格者が教える、試験で頻出かつ混同しやすい「自動運転レベル」の効率的な暗記術を解説。 レベル3と4の境界やSim2Realなどの技術概念を、技術的な詳細よりも「運転の主役が誰にあるか」という視点で整理することで記憶への定着を図る。 文系出身者でも直感的に理解できるこの学習フレームワークは、複雑な定義を丸暗記する負担を減らし、試験本番での失点を防ぐための実践的なアプローチとして有効である。"
-      },
-      "en": {
-        "title": "Mastering Autonomous Driving & Robotics for G-Certification: A Intuitive Framework for Memorizing Driving Levels",
-        "summary": "To ace the G-Certification exam, which often trips up candidates on autonomous driving levels, one must look beyond technical definitions and focus on the shift in 'control agency.' By framing the difference between Level 3 and Level 4 systems based on who is primarily responsible for the driving task, learners can intuitively distinguish complex definitions without rote memorization. This guide provides a conceptual framework that clarifies technical concepts like Sim2Real by prioritizing the transition of driving roles from human to AI. For test-takers, adopting this perspective-based learning method drastically simplifies the review process, reduces cognitive load when handling tricky terminology, and prevents common mistakes on exam day regarding vehicle autonomy standards."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究"
-    ],
-    "created_at": "2026-11-22T23:02:24.296Z"
-  },
-  {
     "id": "art-1795388535957-whhwo",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -9168,32 +9250,6 @@
     "created_at": "2026-11-22T20:32:02.588Z"
   },
   {
-    "id": "art-1795378633280-08o5x",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://cacm.acm.org/blogcacm/what-happened-in-fall-2026-ai-and-p-vs-np",
-    "published_at": "2026-11-22T19:50:36.000Z",
-    "og_image_url": null,
-    "title_ja": "2026年秋の衝撃：AIの急速な進化は計算複雑性理論「P対NP問題」の解決に何を意味したのか",
-    "summary_ja": "ACMのブログで公開されたこの論考は、2026年秋という仮想的な転換点を舞台に、AIの飛躍的向上が計算複雑性理論の難問「P対NP問題」へ与えた影響を考察する。 従来は解決不可能と思われていた最適化問題が、高度なニューラルネットワークの推論能力によって事実上解かれる未来が示唆されている。 開発者にとっては、計算の限界に関する前提が覆る可能性を認識し、既存のアルゴリズムに頼らないAI時代の問題解決手法を模索すべきという警鐘を鳴らす内容である。",
-    "translations": {
-      "ja": {
-        "title": "2026年秋の衝撃：AIの急速な進化は計算複雑性理論「P対NP問題」の解決に何を意味したのか",
-        "summary": "ACMのブログで公開されたこの論考は、2026年秋という仮想的な転換点を舞台に、AIの飛躍的向上が計算複雑性理論の難問「P対NP問題」へ与えた影響を考察する。 従来は解決不可能と思われていた最適化問題が、高度なニューラルネットワークの推論能力によって事実上解かれる未来が示唆されている。 開発者にとっては、計算の限界に関する前提が覆る可能性を認識し、既存のアルゴリズムに頼らないAI時代の問題解決手法を模索すべきという警鐘を鳴らす内容である。"
-      },
-      "en": {
-        "title": "Reflecting on the Fall 2026 Milestone: Did AI Advancements Finally Resolve the P vs. NP Complexity Question?",
-        "summary": "This CACM article explores the intersection of rapid AI advancement and computational complexity theory, framing Fall 2026 as a hypothetical pivot point where AI capabilities began dismantling the intractable barriers of the P vs. NP problem. The author discusses how neural network inference patterns might effectively solve combinatorial optimization problems once considered impossible to compute in polynomial time. For builders and researchers, the piece serves as a critical warning that long-standing assumptions about algorithmic upper bounds may soon dissolve. As AI shifts from simple pattern matching to genuine computational problem-solving, engineers must reconsider their reliance on traditional complexity hierarchies and prepare for a landscape where previously 'unsolvable' optimization challenges become trivial through advanced model heuristics."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-22T20:17:13.280Z"
-  },
-  {
     "id": "art-1795378625547-0vwpi",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -9218,32 +9274,6 @@
       "開発"
     ],
     "created_at": "2026-11-22T20:17:05.547Z"
-  },
-  {
-    "id": "art-1795378617185-9lave",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://smarterarticles.co.uk/ai-rebounding-why-companies-are-rehiring-the-workers-they-cut",
-    "published_at": "2026-11-22T19:50:44.000Z",
-    "og_image_url": "https://i.snap.as/GZKQtXiT.png",
-    "title_ja": "AI導入で人員削減を行った企業が「人材再雇用」へ回帰、自動化の限界と業務複雑性の再評価が背景に",
-    "summary_ja": "生成AI導入によるコスト削減と人員削減を断行した企業の間で、かつて解雇した専門人材を再雇用する動きが加速している。 AIは単純作業を効率化できるものの、複雑な意思決定や現場のコンテキスト理解においては、依然として人間の判断が不可欠であることが判明したためだ。 開発者や経営層は、AIを「労働力の代替」としてではなく、既存の専門チームの生産性を拡張する「増幅器」として再定義し、技術導入戦略を根本から見直す時期に来ている。",
-    "translations": {
-      "ja": {
-        "title": "AI導入で人員削減を行った企業が「人材再雇用」へ回帰、自動化の限界と業務複雑性の再評価が背景に",
-        "summary": "生成AI導入によるコスト削減と人員削減を断行した企業の間で、かつて解雇した専門人材を再雇用する動きが加速している。 AIは単純作業を効率化できるものの、複雑な意思決定や現場のコンテキスト理解においては、依然として人間の判断が不可欠であることが判明したためだ。 開発者や経営層は、AIを「労働力の代替」としてではなく、既存の専門チームの生産性を拡張する「増幅器」として再定義し、技術導入戦略を根本から見直す時期に来ている。"
-      },
-      "en": {
-        "title": "Why companies that cut staff for AI automation are now rushing to rehire the very workers they laid off",
-        "summary": "A growing trend has emerged where companies that aggressively cut headcount to adopt generative AI are now frantically attempting to rehire the specialized talent they previously let go. While automation excels at streamlining repetitive, low-stakes tasks, businesses have discovered that AI consistently fails to handle the nuance, complex decision-making, and deep institutional context that experienced human professionals provide. This reality check proves that AI functions best as a productivity force multiplier rather than a direct labor replacement. For builders and engineering managers, the takeaway is critical: over-indexing on automation often creates technical debt and operational blind spots. Companies must pivot their strategy to focus on augmenting existing expert teams with AI tools instead of treating headcount reduction as the primary path to efficiency."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-22T20:16:57.185Z"
   },
   {
     "id": "art-1795377735471-2ymnt",
@@ -25647,34 +25677,6 @@
       "開発"
     ],
     "created_at": "2026-11-17T02:16:55.264Z"
-  },
-  {
-    "id": "art-1794880949655-egl0t",
-    "source_id": "source-firecrawl",
-    "source_name": "Firecrawl Releases / Blog",
-    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.754",
-    "published_at": "2026-11-16T21:02:29.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
-    "title_ja": "Firecrawl、APIイメージv2.11.754をリリース。Webスクレイピングのレンダリング安定性とLLM向けデータ抽出の精度を大幅向上",
-    "summary_ja": "Firecrawlが最新のAPIイメージv2.11.754をリリースした。 今回のアップデートでは、複雑な動的Webサイトのレンダリング処理が最適化され、LLMが読み取りやすいクリーンなマークダウン生成の安定性が強化されている。 複雑なWebサイトから構造化データを抽出する際、レンダリングエラーによるデータ欠損のリスクを下げたい開発者にとって、このマイナーアップデートは重要な修正となる。",
-    "translations": {
-      "ja": {
-        "title": "Firecrawl、APIイメージv2.11.754をリリース。Webスクレイピングのレンダリング安定性とLLM向けデータ抽出の精度を大幅向上",
-        "summary": "Firecrawlが最新のAPIイメージv2.11.754をリリースした。 今回のアップデートでは、複雑な動的Webサイトのレンダリング処理が最適化され、LLMが読み取りやすいクリーンなマークダウン生成の安定性が強化されている。 複雑なWebサイトから構造化データを抽出する際、レンダリングエラーによるデータ欠損のリスクを下げたい開発者にとって、このマイナーアップデートは重要な修正となる。"
-      },
-      "en": {
-        "title": "Firecrawl releases API image v2.11.754 to improve web scraping rendering stability and data extraction precision for LLMs",
-        "summary": "Firecrawl has officially released its latest API image, v2.11.754, targeting critical improvements in the rendering pipeline for complex dynamic websites. This update specifically enhances the stability of Markdown generation, ensuring that unstructured web data is transformed into cleaner, more consistent formats optimized for LLM consumption. For builders struggling with data loss or hallucinations caused by rendering failures during agentic web crawls, this release offers a much-needed reliability boost. The update ensures that extracted data remains structurally sound even when navigating sites with heavy JavaScript dependencies. Developers relying on Firecrawl for autonomous agent backends should prioritize testing this deployment immediately to reduce downstream parsing errors and maintain high-quality data ingestion pipelines for their AI applications."
-      }
-    },
-    "tool_tags": [
-      "Firecrawl"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-17T02:02:29.655Z"
   },
   {
     "id": "art-1794880016549-cf2wq",
