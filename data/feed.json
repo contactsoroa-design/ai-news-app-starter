@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795513695880-oo0d1",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/ponfreelance/articles/autotrader-type-a-20261031-064544",
+    "published_at": "2026-11-24T01:30:30.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--NvSzwzPJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2590%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%25A8%25E6%259C%25AC%25E7%2595%25AA%25E3%2581%25AE%25E6%2588%2590%25E7%25B8%25BE%25E3%2581%258C%25E3%2582%25BA%25E3%2583%25AC%25E3%2582%258B3%25E3%2581%25A4%25E3%2581%25AE%25E5%258E%259F%25E5%259B%25A0%25EF%25BC%2588%25E6%2589%258B%25E6%2595%25B0%25E6%2596%2599%25E3%2583%25BB%25E3%2582%25B9%25E3%2583%25AA%25E3%2583%2583%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%25BB%25E9%2583%25A8%25E5%2588%2586%25E7%25B4%2584%25E5%25AE%259A%25EF%25BC%2589%25E3%2581%25A8%25E5%25AF%25BE%25E5%2587%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BD%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSURKYWtUQU1QbU1PYmxfWW51cGZBdTk5aG5IdjlLbm9hQmdUNEp3VUo5NFlFZjNBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発の自動売買botで「バックテストと本番」の成績が乖離する3つの主要因：手数料、スリッページ、部分約定の技術的対策",
+    "summary_ja": "自動売買システムのバックテストと本番環境で収益が合わない場合、主な原因は手数料計算の誤差、スリッページによる約定価格のズレ、そして部分約定の未考慮の3点に集約される。 これらは取引所APIの仕様と実装に深く関わるため、単なるシグナルロジックの改善ではなく、実行レイヤーの解像度を高めることが精度向上への最短ルートとなる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発の自動売買botで「バックテストと本番」の成績が乖離する3つの主要因：手数料、スリッページ、部分約定の技術的対策",
+        "summary": "自動売買システムのバックテストと本番環境で収益が合わない場合、主な原因は手数料計算の誤差、スリッページによる約定価格のズレ、そして部分約定の未考慮の3点に集約される。 これらは取引所APIの仕様と実装に深く関わるため、単なるシグナルロジックの改善ではなく、実行レイヤーの解像度を高めることが精度向上への最短ルートとなる。"
+      },
+      "en": {
+        "title": "Why automated trading bots fail in production: The technical gap between backtests and live execution (fees, slippage, and partial fills)",
+        "summary": "When trading bot profits vanish upon going live, the discrepancy almost always stems from three technical realities: inaccurate fee modeling in simulations, slippage between signal trigger and actual order execution, and unhandled partial fills. These gaps are rooted in specific exchange API behaviors rather than faulty trading strategies. Builders need to move beyond backtesting logic and rigorously audit how the execution layer interacts with order book constraints. Focusing on granular API implementation and realistic latency simulation is the only way to reconcile theoretical models with live trading data. If your bot performs well in tests but fails in production, treat the execution engine as a distinct, high-priority debugging target rather than tweaking your underlying strategy parameters."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-24T09:48:15.880Z"
+  },
+  {
+    "id": "art-1795513685151-8lgd7",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/genkaigyantyu/articles/c72702cd4dbf29",
+    "published_at": "2026-11-24T07:28:27.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--qIju7kgv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A2%25E3%2582%25B7%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%25E3%2580%258C%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589%25E7%25A8%25BC%25E3%2581%2584%25E3%2581%25A7%25E6%259D%25A5%25E3%2581%2584%25E3%2580%258D%25E3%2581%25A8%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E5%25AE%259F%25E9%25A8%2593%25E8%25A8%2598%25E9%258C%25B2%2520%2523001%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Muse%2520Earnings%2520Lab%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNlZTY1MmRjYTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIアシスタントに0からの収益化を完全委任する実験：完全無料でブログ運営とアフィリエイトに挑む開発者の挑戦記録",
+    "summary_ja": "AIにブログ設計から記事執筆、収益化戦略までを完全に任せ、0円から利益を生み出せるかを検証する実験が開始された。 完全無料での運用を条件に、ドメイン費用や広告費を一切かけず、人間の役割は承認や本人確認のみに限定している。 AIによる自動化の可能性と限界を見極めるため、初日はアフィリエイト用プラットフォームの構築から着手し、日々の収益を正直に記録し続ける。 単なる自動化ではなく、収益モデルの構築までをAIが自律的に実行できるかを探る興味深い試みだ。",
+    "translations": {
+      "ja": {
+        "title": "AIアシスタントに0からの収益化を完全委任する実験：完全無料でブログ運営とアフィリエイトに挑む開発者の挑戦記録",
+        "summary": "AIにブログ設計から記事執筆、収益化戦略までを完全に任せ、0円から利益を生み出せるかを検証する実験が開始された。 完全無料での運用を条件に、ドメイン費用や広告費を一切かけず、人間の役割は承認や本人確認のみに限定している。 AIによる自動化の可能性と限界を見極めるため、初日はアフィリエイト用プラットフォームの構築から着手し、日々の収益を正直に記録し続ける。 単なる自動化ではなく、収益モデルの構築までをAIが自律的に実行できるかを探る興味深い試みだ。"
+      },
+      "en": {
+        "title": "Developer launches experiment to delegate zero-to-one monetization entirely to AI, aiming for free-to-play affiliate revenue",
+        "summary": "A developer has kicked off an experiment to see if an AI assistant can build a profitable operation from scratch without human intervention, excluding authorization tasks like password inputs. The rules are strict: zero budget for domains or ads, total honesty regarding revenue figures, and a commitment to long-term consistency. The process delegates blog architecture, content creation, and monetization strategy entirely to the AI, with the human strictly acting as an approver. On day one, the focus was establishing affiliate infrastructure to serve as the revenue engine. This experiment provides a raw, transparent look into whether current LLM agents possess the strategic autonomy to manage complex business tasks profitably or if they remain limited to simple execution."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-24T09:48:05.152Z"
+  },
+  {
+    "id": "art-1795513613381-l8v94",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/tday",
+    "published_at": "2026-11-23T21:22:27.000Z",
+    "og_image_url": null,
+    "title_ja": "AIコーディングエージェントが新機能を動画解説、「tday.com」が提供するコードベース連携型の自動デモ生成機能が開発者の意思決定を高速化",
+    "summary_ja": "「tday.com」は、GitHub上のコードベースと連携し、エージェントが特定の機能変更や新機能を理解した上で、その動作をナレーション付きの動画デモとして自動生成する開発ツールだ。 コードの差分を読み取ってインタラクティブに解説を作成することで、プルリクエストのレビュー効率やチーム間のコンテキスト共有を大幅に向上させる。 単にコードを共有するだけでなく、意図や挙動を動画で可視化することで、非エンジニアやPMとの合意形成コストを劇的に削減できる点が特徴的だ。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングエージェントが新機能を動画解説、「tday.com」が提供するコードベース連携型の自動デモ生成機能が開発者の意思決定を高速化",
+        "summary": "「tday.com」は、GitHub上のコードベースと連携し、エージェントが特定の機能変更や新機能を理解した上で、その動作をナレーション付きの動画デモとして自動生成する開発ツールだ。 コードの差分を読み取ってインタラクティブに解説を作成することで、プルリクエストのレビュー効率やチーム間のコンテキスト共有を大幅に向上させる。 単にコードを共有するだけでなく、意図や挙動を動画で可視化することで、非エンジニアやPMとの合意形成コストを劇的に削減できる点が特徴的だ。"
+      },
+      "en": {
+        "title": "tday.com uses AI coding agents to generate narrated video demos automatically for any feature change in your codebase",
+        "summary": "tday.com bridges the gap between pull requests and product understanding by using AI agents to create narrated video demonstrations directly from your codebase. By analyzing your code changes, the tool generates walkthroughs that explain functionality, allowing developers to visualize specific features without needing to run the local environment or manually record demos. This automated approach significantly streamlines peer reviews, stakeholder alignment, and onboarding processes, as it eliminates the friction of manually explaining complex logic to PMs or non-technical team members. For engineering teams managing high-velocity feature deployments, this represents a major leap in documentation efficiency, ensuring that the intent behind every code commit is immediately transparent and accessible to everyone on the project."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "動画",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-24T09:46:53.381Z"
+  },
+  {
+    "id": "art-1795513607181-r0p7l",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.28197",
+    "published_at": "2026-11-24T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "3D点群からCADモデルを自動生成するAIエージェントの評価ベンチマーク「S2Bench」が登場、建設・設計DXの新たな挑戦",
+    "summary_ja": "AIコードエージェントによる3D点群からのCADモデル自動生成（Scan-to-BIM）の性能を評価する新たなベンチマーク「S2Bench」が公開された。 128の実環境シーンと専門家が作成した参照モデルを用い、Pythonによる計測からCADカーネルでのコンポーネント配置・最適化までのプロセスを統合的に評価できる。 複雑な空間情報の意味的理解と建設制約の遵守が求められるBIM領域において、AIエージェントの実用性を検証する重要な指標となる。",
+    "translations": {
+      "ja": {
+        "title": "3D点群からCADモデルを自動生成するAIエージェントの評価ベンチマーク「S2Bench」が登場、建設・設計DXの新たな挑戦",
+        "summary": "AIコードエージェントによる3D点群からのCADモデル自動生成（Scan-to-BIM）の性能を評価する新たなベンチマーク「S2Bench」が公開された。 128の実環境シーンと専門家が作成した参照モデルを用い、Pythonによる計測からCADカーネルでのコンポーネント配置・最適化までのプロセスを統合的に評価できる。 複雑な空間情報の意味的理解と建設制約の遵守が求められるBIM領域において、AIエージェントの実用性を検証する重要な指標となる。"
+      },
+      "en": {
+        "title": "New S2Bench Benchmark Evaluates AI Coding Agents on Transforming 3D Point Clouds Into CAD/BIM Models for Engineering",
+        "summary": "Researchers have introduced S2Bench, a new benchmark designed to evaluate how AI coding agents transform raw 3D point cloud measurements into structured CAD/BIM models for the built environment. Unlike surface fitting, this task requires semantic interpretation and strict adherence to construction constraints, which the benchmark tests across 128 real-world scenes paired with expert-curated reference models. The framework allows agents to programmatically measure scans, instantiate class-labeled components within a live CAD kernel, and iteratively refine their geometric output. For developers working at the intersection of AI agents and industrial engineering, S2Bench provides a standardized, rigorous method to measure if their autonomous systems can truly handle the complexity of architectural reconstruction rather than just simple surface geometry generation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-24T09:46:47.181Z"
+  },
+  {
     "id": "art-1795512769039-4r22q",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -11800,32 +11905,6 @@
     "created_at": "2026-11-22T05:31:58.564Z"
   },
   {
-    "id": "art-1795324630827-1al2d",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/taichiendoh/articles/ai-usage-policy-zdr-log-model-checklist",
-    "published_at": "2026-11-21T22:10:10.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--kDCkf6vq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%2584%25E3%2580%258D%25E3%2581%25A8%25E8%25A8%2580%25E3%2582%258F%25E3%2582%258C%25E3%2581%259F%25E5%25BE%258C%25E3%2581%25AB%25E3%2580%2581%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%258C%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2599%25E3%2582%258B3%25E3%2581%25A4%25E3%2581%25AE%25E8%25A8%25AD%25E5%25AE%259A%2520%25E2%2580%2595%2520%25E5%258C%25BB%25E7%2599%2582%25E6%25A9%259F%25E9%2596%25A2%25E3%2581%25AEAI%25E5%2588%25A9%25E7%2594%25A8%25E6%2596%25B9%25E9%2587%259D%25E3%2582%2592%25E6%258A%2580%25E8%25A1%2593%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%25AB%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2597%25E8%25BE%25BC%25E3%2582%2580%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%2581%25A0%25E8%2597%25A4%25E5%25A4%25AA%25E4%25B8%2580%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA1ZjNmMTY4MjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "厚労省が医療機関へサイバー対策強化を通達、エンジニアが医療AI導入時に確認すべき「3つの設定」とセキュリティガバナンスの要点",
-    "summary_ja": "厚生労働省は重要インフラである医療機関に対し、フロンティアAIモデルの悪用リスクを想定したサイバーセキュリティ強化を指示しました。 これを受け、医療現場でAIシステムを実装するエンジニアは、権限分離、ログ監査、そして外部接続制限という3つの技術的設定を必須要件として見直す必要があります。 単なる「利用許可」で終わらせず、経営層のガバナンスに準拠したセキュアなパイプラインを構築することが、医療機関向けAI開発における新たな必須スキルとなります。",
-    "translations": {
-      "ja": {
-        "title": "厚労省が医療機関へサイバー対策強化を通達、エンジニアが医療AI導入時に確認すべき「3つの設定」とセキュリティガバナンスの要点",
-        "summary": "厚生労働省は重要インフラである医療機関に対し、フロンティアAIモデルの悪用リスクを想定したサイバーセキュリティ強化を指示しました。 これを受け、医療現場でAIシステムを実装するエンジニアは、権限分離、ログ監査、そして外部接続制限という3つの技術的設定を必須要件として見直す必要があります。 単なる「利用許可」で終わらせず、経営層のガバナンスに準拠したセキュアなパイプラインを構築することが、医療機関向けAI開発における新たな必須スキルとなります。"
-      },
-      "en": {
-        "title": "Japan's Ministry of Health mandates strict cybersecurity for medical AI, requiring engineers to enforce 3 critical technical configurations",
-        "summary": "Japan's Ministry of Health has issued urgent guidelines requiring medical institutions to bolster cybersecurity against risks posed by frontier AI models. For engineers building or integrating AI solutions in healthcare, this mandates a shift from simple deployment to hardened governance, specifically focusing on three technical pillars: granular access control, immutable audit logging, and strict outbound network restrictions. Aligning development pipelines with these security frameworks is no longer optional for those serving critical infrastructure sectors. Builders must move beyond simple API integration to demonstrate robust risk management, ensuring their systems withstand the scrutiny required for healthcare environments where operational continuity is mission-critical. Technical compliance is now as important as model performance in the medical AI domain."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-22T05:17:10.827Z"
-  },
-  {
     "id": "art-1795318338961-gz3jq",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -12198,31 +12277,6 @@
       "研究"
     ],
     "created_at": "2026-11-21T21:46:48.733Z"
-  },
-  {
-    "id": "art-1795297600055-j6el8",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/qqpann/articles/safari-contenteditable-focus-scroll-jump",
-    "published_at": "2026-11-21T17:35:33.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--gAxdrDzZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Safari%2520%25E3%2581%25A7%2520contentEditable%2520%25E3%2581%25AB%2520focus%2528%2529%2520%25E3%2581%2599%25E3%2582%258B%25E3%2581%25A8%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E5%2585%2588%25E9%25A0%25AD%25E3%2581%25B8%25E9%25A3%259B%25E3%2581%25B6%25E5%2595%258F%25E9%25A1%258C%25E3%2581%25AE%25E5%25AF%25BE%25E5%2587%25A6%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258D%25E3%2581%2586%25E3%2581%258D%25E3%2581%2586%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA5YjlmNGNjN2EuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "SafariのcontentEditableでfocus()時に画面が先頭へ飛ぶ挙動の修正法：preventScrollとscrollIntoViewの活用",
-    "summary_ja": "SafariでcontentEditableな要素にfocus()した際、ブラウザの自動スクロールによりページ先頭へ強制遷移する問題の対策を解説する。 focus({ preventScroll: true })で自動スクロールを無効化しつつ、必要に応じてscrollIntoView({ block: 'nearest' })でキャレット位置へ最小限に追従させるアプローチが有効だ。",
-    "translations": {
-      "ja": {
-        "title": "SafariのcontentEditableでfocus()時に画面が先頭へ飛ぶ挙動の修正法：preventScrollとscrollIntoViewの活用",
-        "summary": "SafariでcontentEditableな要素にfocus()した際、ブラウザの自動スクロールによりページ先頭へ強制遷移する問題の対策を解説する。 focus({ preventScroll: true })で自動スクロールを無効化しつつ、必要に応じてscrollIntoView({ block: 'nearest' })でキャレット位置へ最小限に追従させるアプローチが有効だ。"
-      },
-      "en": {
-        "title": "Fixing Safari’s focus() scroll bug in contentEditable elements with preventScroll and conditional viewport management",
-        "summary": "When programmatically focusing contentEditable elements in Safari, browsers often trigger an aggressive auto-scroll that jumps the page to the top. To resolve this, developers should invoke focus({ preventScroll: true }) to suppress the native scrolling behavior. If the caret needs to remain visible, use scrollIntoView({ block: 'nearest' }) to minimally align the element without jarring jumps. Crucially, this behavior differs on touch-enabled devices where suppressing scroll can break keyboard interactions; therefore, builders must apply these constraints conditionally based on pointer: coarse checks. This granular control ensures the editor maintains a stable viewport while satisfying both desktop navigation patterns and mobile keyboard input requirements for a robust web editing experience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-21T21:46:40.055Z"
   },
   {
     "id": "art-1795287724050-x5cur",
@@ -17899,32 +17953,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-19T08:46:58.112Z"
-  },
-  {
-    "id": "art-1795077145591-bvqkj",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/adside",
-    "published_at": "2026-11-19T00:52:42.000Z",
-    "og_image_url": null,
-    "title_ja": "Adside：広告運用を自動化するAIエージェントチーム、キャンペーン最適化から予算管理までを自律的に実行して広告ROIを最大化",
-    "summary_ja": "Adsideは、広告運用の全工程を自律的に実行するAIエージェントプラットフォームだ。 キャンペーンの作成、ターゲット設定、予算管理、そしてリアルタイムのパフォーマンス分析までを代行し、手動運用の手間を大幅に削減する。 広告運用の複雑さをAIで抽象化することで、個人開発者や小規模チームでも効率的にユーザー獲得と売上向上を実現できる実用的なツールである。",
-    "translations": {
-      "ja": {
-        "title": "Adside：広告運用を自動化するAIエージェントチーム、キャンペーン最適化から予算管理までを自律的に実行して広告ROIを最大化",
-        "summary": "Adsideは、広告運用の全工程を自律的に実行するAIエージェントプラットフォームだ。 キャンペーンの作成、ターゲット設定、予算管理、そしてリアルタイムのパフォーマンス分析までを代行し、手動運用の手間を大幅に削減する。 広告運用の複雑さをAIで抽象化することで、個人開発者や小規模チームでも効率的にユーザー獲得と売上向上を実現できる実用的なツールである。"
-      },
-      "en": {
-        "title": "Adside Launches AI Agent Teams to Automate Paid Ad Campaigns, Optimize Budgets, and Maximize ROI Without Manual Intervention",
-        "summary": "Adside introduces a suite of specialized AI agents designed to handle the end-to-end management of paid advertising campaigns. By automating tedious tasks like audience targeting, real-time performance tracking, and budget allocation, the platform allows businesses to focus on strategy rather than granular manual adjustments. These agents operate autonomously to identify high-performing ad sets and prune underperforming ones, effectively squeezing more ROI from tight marketing budgets. For solo founders and indie builders juggling development with customer acquisition, Adside offers a way to scale user growth without needing a dedicated growth marketing team. It effectively abstracts the complexity of ad platforms, turning complex performance marketing into a manageable, agent-driven workflow that runs in the background."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "マーケ・集客・ASO",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-19T08:32:25.591Z"
   },
   {
     "id": "art-1795077128809-c6kzf",
@@ -28462,32 +28490,6 @@
       "開発"
     ],
     "created_at": "2026-11-16T05:46:58.289Z"
-  },
-  {
-    "id": "art-1794807130303-a54ij",
-    "source_id": "source-arxiv",
-    "source_name": "arXiv (cs.AI / cs.CL)",
-    "url": "https://arxiv.org/abs/2611.17340",
-    "published_at": "2026-11-16T05:00:00.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "LoRAアダプターを動的に切り替える新手法「LoRAWeaver」が登場。再学習不要で増え続けるアダプタープールを効率的に活用可能に",
-    "summary_ja": "大規模言語モデルのLoRAアダプターが増え続けると、推論時の適切な選択が課題となる。 「LoRAWeaver」は、アダプター出力空間における表現アライメント問題としてこの課題を解決する。 トレーニング不要で、クエリ表現とタスクプロトタイプをコサイン類似度で照合するだけで最適なアダプターを自動選択可能だ。 新しいアダプターを追加するたびにルーターを再学習する必要がなくなり、動的なAIシステム構築において運用コストを劇的に抑えられる。",
-    "translations": {
-      "ja": {
-        "title": "LoRAアダプターを動的に切り替える新手法「LoRAWeaver」が登場。再学習不要で増え続けるアダプタープールを効率的に活用可能に",
-        "summary": "大規模言語モデルのLoRAアダプターが増え続けると、推論時の適切な選択が課題となる。 「LoRAWeaver」は、アダプター出力空間における表現アライメント問題としてこの課題を解決する。 トレーニング不要で、クエリ表現とタスクプロトタイプをコサイン類似度で照合するだけで最適なアダプターを自動選択可能だ。 新しいアダプターを追加するたびにルーターを再学習する必要がなくなり、動的なAIシステム構築において運用コストを劇的に抑えられる。"
-      },
-      "en": {
-        "title": "New 'LoRAWeaver' Method Enables Training-Free Adapter Routing to Manage Growing LoRA Pools for Large Language Models",
-        "summary": "As developers accumulate massive pools of task-specific LoRA adapters, selecting the right one during inference becomes a significant bottleneck. \"LoRAWeaver\" solves this by treating adapter routing as a representation alignment problem within the adapter-output space. Unlike existing methods that force system-wide retraining whenever a new adapter is added, LoRAWeaver is entirely training-free. It dynamically selects adapters by matching query representations against pre-defined task prototypes using cosine similarity. This capability allows engineers to manage dynamic, growing adapter inventories without the overhead of encoder updates. For builders shipping modular LLM applications, this approach provides a scalable way to maintain high task performance while keeping inference latency and operational costs low even as the adapter library expands."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-16T05:32:10.303Z"
   },
   {
     "id": "art-1794806222433-o0sz4",
