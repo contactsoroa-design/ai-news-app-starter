@@ -1,5 +1,115 @@
 [
   {
+    "id": "art-1795630843293-sqvgj",
+    "source_id": "source-notion",
+    "source_name": "Notion API Changelog (Agent / MCP)",
+    "url": "https://developers.notion.com/page/changelog#november-25-2026",
+    "published_at": "2026-11-25T15:41:16.000Z",
+    "og_image_url": "https://notion-demo.mintlify.site/images/og-image.png",
+    "title_ja": "Notion APIがMCP（Model Context Protocol）をサポート、AIエージェントがNotionデータを直接操作可能に",
+    "summary_ja": "Notion APIが新たにMCP（Model Context Protocol）への対応を開始した。 これにより、AIエージェントやClaude Desktop等のツールからNotionのワークスペースへ直接アクセスし、ページ情報の取得や編集をシームレスに行えるようになる。 構築者はAPIトークン管理の手間を減らしつつ、AIと業務知識をネイティブに統合できるため、複雑なRAGパイプラインを構築することなく、AIの操作精度と生産性を飛躍的に向上させることが可能だ。",
+    "translations": {
+      "ja": {
+        "title": "Notion APIがMCP（Model Context Protocol）をサポート、AIエージェントがNotionデータを直接操作可能に",
+        "summary": "Notion APIが新たにMCP（Model Context Protocol）への対応を開始した。 これにより、AIエージェントやClaude Desktop等のツールからNotionのワークスペースへ直接アクセスし、ページ情報の取得や編集をシームレスに行えるようになる。 構築者はAPIトークン管理の手間を減らしつつ、AIと業務知識をネイティブに統合できるため、複雑なRAGパイプラインを構築することなく、AIの操作精度と生産性を飛躍的に向上させることが可能だ。"
+      },
+      "en": {
+        "title": "Notion API Adds MCP Support, Enabling AI Agents to Access and Manipulate Workspace Data Directly",
+        "summary": "Notion has officially integrated the Model Context Protocol (MCP) into its API, allowing AI agents, Claude Desktop, and other MCP-compliant clients to interact directly with workspace data. By leveraging this open standard, developers can now grant AI models read and write access to pages without manually handling complex OAuth flows or custom RAG pipelines. This change fundamentally simplifies how AI agents contextualize enterprise data, making interactions more accurate and actionable. For builders, the practical takeaway is that integrating internal knowledge bases into AI workflows just got significantly easier; instead of maintaining bespoke connectors, you can now plug your Notion data directly into any MCP-enabled tool to unlock immediate, context-aware productivity."
+      }
+    },
+    "tool_tags": [
+      "Notion"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-25T18:20:43.293Z"
+  },
+  {
+    "id": "art-1795630793654-z56gn",
+    "source_id": "source-pytorch",
+    "source_name": "PyTorch Blog",
+    "url": "https://pytorch.org/blog/vllm-singapore-meetup-faster-prefill-agent-written-kernels-and-the-road-to-vera-rubin/",
+    "published_at": "2026-11-25T18:03:15.000Z",
+    "og_image_url": null,
+    "title_ja": "vLLMシンガポールMeetup詳報：推論高速化を実現するエージェント生成カーネルと「Vera Rubin」へ向けたパイプライン並列化の進化",
+    "summary_ja": "vLLMシンガポールMeetupにおいて、InferactやNVIDIA、Alibaba CloudのエンジニアがAI推論の高速化技術を公開した。 特に注目すべきは、プリフィル（初期生成）の最適化、エージェントが自動記述するカーネル実装、そして次期ロードマップ「Vera Rubin」を見据えたパイプライン並列化の改善だ。 単なるパラメータ増大ではなく、実機でのスループットを限界まで引き出すためのハードウェア適応型最適化が、今後のOSSモデル運用の標準になることを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "vLLMシンガポールMeetup詳報：推論高速化を実現するエージェント生成カーネルと「Vera Rubin」へ向けたパイプライン並列化の進化",
+        "summary": "vLLMシンガポールMeetupにおいて、InferactやNVIDIA、Alibaba CloudのエンジニアがAI推論の高速化技術を公開した。 特に注目すべきは、プリフィル（初期生成）の最適化、エージェントが自動記述するカーネル実装、そして次期ロードマップ「Vera Rubin」を見据えたパイプライン並列化の改善だ。 単なるパラメータ増大ではなく、実機でのスループットを限界まで引き出すためのハードウェア適応型最適化が、今後のOSSモデル運用の標準になることを示唆している。"
+      },
+      "en": {
+        "title": "vLLM Singapore Meetup reveals agent-written kernels, prefill optimizations, and the roadmap toward the Vera Rubin inference architecture",
+        "summary": "The recent vLLM Singapore Meetup highlighted significant breakthroughs in open-source AI inference, with engineers from Inferact, NVIDIA, and Alibaba Cloud detailing how to push throughput to new limits. The core updates focus on slashing latency through advanced prefill optimizations and the introduction of agent-written kernels that adaptively optimize hardware utilization. Beyond these immediate performance gains, the community outlined the roadmap for 'Vera Rubin,' which prioritizes smarter pipeline parallelism to handle massive model scales. For builders deploying large language models, the takeaway is clear: the future of efficient serving lies in low-level kernel customization and architectural agility rather than simply throwing more compute resources at the problem. This shift signals a maturing ecosystem focused on production-grade performance."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "研究"
+    ],
+    "created_at": "2026-11-25T18:19:53.654Z"
+  },
+  {
+    "id": "art-1795630744620-07fku",
+    "source_id": "source-posthog",
+    "source_name": "PostHog Blog (Product for Engineers)",
+    "url": "https://posthog.com/blog/how-we-built-email-onboarding",
+    "published_at": "2026-11-24T00:00:00.000Z",
+    "og_image_url": "https://d36j3rcgc2qfsv.cloudfront.net/bloghow-we-built-email-onboarding.jpeg",
+    "title_ja": "PostHogのオンボーディングメール改善術：データ主導で到達率と継続率を最適化する「バージョン7.0」の舞台裏",
+    "summary_ja": "PostHogはプロダクトのオンボーディングメール戦略を「バージョン7.0」まで継続的に刷新し、開封率や継続率を大きく引き上げた。 単なるメール送信ではなく、プロダクト内の行動データと同期させ、ユーザーの利用状況に応じたトリガー設計を行うことで、離脱を防ぎ定着率を最大化している。 プロダクト主導型の成長を目指す開発者にとって、メールフローは単なる通知ではなく、ユーザー体験の拡張としてデータに基づいて反復改善すべき最重要機能である。",
+    "translations": {
+      "ja": {
+        "title": "PostHogのオンボーディングメール改善術：データ主導で到達率と継続率を最適化する「バージョン7.0」の舞台裏",
+        "summary": "PostHogはプロダクトのオンボーディングメール戦略を「バージョン7.0」まで継続的に刷新し、開封率や継続率を大きく引き上げた。 単なるメール送信ではなく、プロダクト内の行動データと同期させ、ユーザーの利用状況に応じたトリガー設計を行うことで、離脱を防ぎ定着率を最大化している。 プロダクト主導型の成長を目指す開発者にとって、メールフローは単なる通知ではなく、ユーザー体験の拡張としてデータに基づいて反復改善すべき最重要機能である。"
+      },
+      "en": {
+        "title": "PostHog reveals the data-driven evolution of their onboarding email flow up to version 7.0",
+        "summary": "PostHog has iterated their onboarding email strategy through seven major versions, prioritizing concrete performance data to drive user retention and engagement. Instead of treating emails as generic notifications, the team synchronized the flow with in-product behavioral data, allowing them to trigger hyper-personalized messages based on specific user actions rather than arbitrary time intervals. This rigorous testing loop helped them significantly improve open rates and long-term user activation. For developers focused on product-led growth, the key takeaway is that onboarding emails are not marketing overhead; they are an extension of the product experience itself. Success requires treating the email layer as a dynamic feature that demands the same data-backed testing and iterative refinement as any core product component."
+      }
+    },
+    "tool_tags": [
+      "PostHog"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-25T18:19:04.620Z"
+  },
+  {
+    "id": "art-1795630693116-fjfaq",
+    "source_id": "source-marketingexamples",
+    "source_name": "Marketing Examples (Harry Dry)",
+    "url": "https://marketingexamples.com/content/tour-de-france",
+    "published_at": "2026-11-25T18:18:13.116Z",
+    "og_image_url": "https://s3.amazonaws.com/harrydry/gdmarketing/cards/tour.jpg",
+    "title_ja": "ツール・ド・フランスに学ぶ「ストーリーテリング」の極意：観客を巻き込み、複雑な競技を熱狂的なエンターテインメントに変えるブランド戦略の構造",
+    "summary_ja": "世界最高峰の自転車レース「ツール・ド・フランス」は、単なる競技ではなく、複雑な物語と視覚的な演出でファンを熱狂させている。 Harry Dryが分析するように、圧倒的なスケール感と個人のドラマを融合させることで、視聴者を「単なる観客」から「物語の当事者」へと変貌させている。 起業家も機能説明に終始せず、ユーザーが感情移入できる独自の「物語の型」を構築することが、ファンを増やす鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "ツール・ド・フランスに学ぶ「ストーリーテリング」の極意：観客を巻き込み、複雑な競技を熱狂的なエンターテインメントに変えるブランド戦略の構造",
+        "summary": "世界最高峰の自転車レース「ツール・ド・フランス」は、単なる競技ではなく、複雑な物語と視覚的な演出でファンを熱狂させている。 Harry Dryが分析するように、圧倒的なスケール感と個人のドラマを融合させることで、視聴者を「単なる観客」から「物語の当事者」へと変貌させている。 起業家も機能説明に終始せず、ユーザーが感情移入できる独自の「物語の型」を構築することが、ファンを増やす鍵となる。"
+      },
+      "en": {
+        "title": "Lessons from Tour de France: How to turn complex product features into compelling, high-stakes brand storytelling for your users",
+        "summary": "Marketing Examples examines the Tour de France not as a cycling race, but as a masterclass in turning complex, granular data into high-stakes narrative arcs. The event succeeds by layering individual hero stories over massive visual spectacles, transforming passive spectators into deeply engaged fans who feel part of the journey. For builders, the lesson is clear: don't just ship features—ship a narrative arc where your user is the protagonist. Instead of explaining how your tech works, focus on the conflict, the triumph, and the human element behind your product usage. By designing your customer experience to mirror these dramatic stakes, you elevate your product from a utility into a daily obsession for your core audience."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-25T18:18:13.116Z"
+  },
+  {
     "id": "art-1795628056429-q42qb",
     "source_id": "source-marketingexamples",
     "source_name": "Marketing Examples (Harry Dry)",
