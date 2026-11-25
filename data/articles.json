@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-1795636165676-1b9ai",
+    "source_id": "source-publickey",
+    "source_name": "Publickey",
+    "url": "https://www.publickey1.jp/blog/26/mcpskills_over_mcpmcp.html",
+    "published_at": "2026-11-25T15:29:05.000Z",
+    "og_image_url": "https://www.publickey1.jp/2026/skills-over-mcp-beta.png",
+    "title_ja": "MCPに新機能「Skills over MCP」が登場、AIエージェントへのツール接続だけでなく「使い方の知見」まで共有・実行が可能に",
+    "summary_ja": "AIエージェントの標準プロトコルMCPに、新機能「Skills over MCP」がβ版として追加された。 従来のMCPはツールの接続のみを定義していたが、今回の拡張により、ツールを具体的にどう操作すべきかという「使い方の知見（スキル）」をサーバー側からAIへ提供可能になる。 これによりエージェントは未知のツールに対しても、開発者が定義した最適な手順を即座に学習・実行できるため、エージェント開発者は汎用的な指示を出すだけで複雑な自動化プロセスを構築可能になる。",
+    "translations": {
+      "ja": {
+        "title": "MCPに新機能「Skills over MCP」が登場、AIエージェントへのツール接続だけでなく「使い方の知見」まで共有・実行が可能に",
+        "summary": "AIエージェントの標準プロトコルMCPに、新機能「Skills over MCP」がβ版として追加された。 従来のMCPはツールの接続のみを定義していたが、今回の拡張により、ツールを具体的にどう操作すべきかという「使い方の知見（スキル）」をサーバー側からAIへ提供可能になる。 これによりエージェントは未知のツールに対しても、開発者が定義した最適な手順を即座に学習・実行できるため、エージェント開発者は汎用的な指示を出すだけで複雑な自動化プロセスを構築可能になる。"
+      },
+      "en": {
+        "title": "MCP introduces 'Skills over MCP' beta, enabling AI agents to share and execute specific tool operation knowledge",
+        "summary": "The Model Context Protocol (MCP) has released 'Skills over MCP' in beta, a significant update that evolves the framework beyond simple tool connectivity. While original MCP implementations focused on defining tool endpoints, this extension allows developers to transmit specific operational knowledge—how to effectively chain or call functions—directly to the AI agent. By packaging these operational skills, servers can guide agents on the optimal sequence for complex tasks, effectively teaching them how to use tools without requiring constant re-prompting. For AI builders, this means defining a specific workflow becomes a reusable asset; agents can instantly adapt to new toolsets by downloading these 'skills,' allowing developers to build sophisticated, intent-driven automations with much higher reliability and lower maintenance overhead."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-25T19:49:25.676Z"
+  },
+  {
     "id": "art-1795634245410-5rxs3",
     "source_id": "source-clay",
     "source_name": "Clay Blog (GTM AI)",
@@ -24021,34 +24047,6 @@
       "開発"
     ],
     "created_at": "2026-11-18T15:33:28.983Z"
-  },
-  {
-    "id": "art-1795015042418-mh1ld",
-    "source_id": "source-firecrawl",
-    "source_name": "Firecrawl Releases / Blog",
-    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.786",
-    "published_at": "2026-11-18T15:13:22.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
-    "title_ja": "Firecrawlが最新APIイメージ「v2.11.786」を公開、Webスクレイピングの安定性とLLMデータ抽出の処理効率が向上",
-    "summary_ja": "FirecrawlがAPIコンテナイメージの最新版「v2.11.786」をリリースした。 本アップデートでは、LLM向けのWebスクレイピングパイプラインにおける安定性が強化されており、複雑なサイト構造からのデータ抽出精度の向上が見込まれる。 エージェント開発者は、クロール時のタイムアウトやパースエラーを最小限に抑えるため、コンテナ環境のアップデートによるインフラの刷新を推奨する。",
-    "translations": {
-      "ja": {
-        "title": "Firecrawlが最新APIイメージ「v2.11.786」を公開、Webスクレイピングの安定性とLLMデータ抽出の処理効率が向上",
-        "summary": "FirecrawlがAPIコンテナイメージの最新版「v2.11.786」をリリースした。 本アップデートでは、LLM向けのWebスクレイピングパイプラインにおける安定性が強化されており、複雑なサイト構造からのデータ抽出精度の向上が見込まれる。 エージェント開発者は、クロール時のタイムアウトやパースエラーを最小限に抑えるため、コンテナ環境のアップデートによるインフラの刷新を推奨する。"
-      },
-      "en": {
-        "title": "Firecrawl Releases API Image v2.11.786, Bolstering Web Scraping Reliability and Data Extraction Efficiency for LLM-Powered Pipelines",
-        "summary": "Firecrawl has pushed its latest API container image, version v2.11.786, marking a significant incremental update to its web scraping and data extraction infrastructure. This release focuses on bolstering stability within the LLM data pipeline, specifically targeting improved precision when extracting clean context from complex, dynamically rendered website structures. Developers integrating Firecrawl should prioritize upgrading their self-hosted or cloud-managed environments to mitigate common issues like parsing errors and crawling timeouts during heavy traffic. Keeping your infrastructure aligned with these latest performance patches is a critical step for builders, as refined data extraction directly translates into higher-quality context for agentic workflows and reduced hallucinations in your final LLM outputs."
-      }
-    },
-    "tool_tags": [
-      "Firecrawl"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-18T15:17:22.418Z"
   },
   {
     "id": "art-1795015024742-j2cd4",
