@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-1795586604315-zm5fe",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/mstmt/articles/a6596e8c0ca9fd",
+    "published_at": "2026-11-24T16:13:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--eOL1Y_X1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:NVIDIA%2520Snapshot%25E3%2581%25AFGPU%25E6%258E%25A8%25E8%25AB%2596%25E3%2581%25AE%25E7%25AB%258B%25E3%2581%25A1%25E4%25B8%258A%25E3%2581%2592%25E3%2582%2592%25E9%2580%259F%25E3%2582%2581%25E3%2582%258B%25E3%2581%258B%25E2%2580%2594%25E2%2580%2594%25E3%2583%2581%25E3%2582%25A7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%259D%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2588%25E6%2596%25B9%25E5%25BC%258F%25E3%2581%25AE%25E4%25BE%25A1%25E5%2580%25A4%25E3%2581%25A8%25E5%25B0%258E%25E5%2585%25A5%25E5%2588%25A4%25E6%2596%25AD%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:TAMOTSU%25EF%25BC%25A0DELL%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE2YjFiY2MwNTguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "NVIDIA Snapshotが生成AI推論の起動を加速——モデル重み読み込みと初期化を劇的に短縮するチェックポイント活用戦略の検証",
+    "summary_ja": "生成AIサービスにおいて、GPU確保後のモデル重みロードや初期化の遅延は、急激なトラフィック増加への追従を阻むボトルネックとなる。 NVIDIA Snapshotは、チェックポイントを永続ストレージから直接読み込むことで、レプリカ起動時間を数分単位から秒単位へ短縮する技術だ。 開発者は、単なる計算リソースの確保だけでなく、コールドスタート時の推論エンジン初期化コストを最小化する設計が、リアルタイム性が求められるAIサービスのUXを左右すると理解すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "NVIDIA Snapshotが生成AI推論の起動を加速——モデル重み読み込みと初期化を劇的に短縮するチェックポイント活用戦略の検証",
+        "summary": "生成AIサービスにおいて、GPU確保後のモデル重みロードや初期化の遅延は、急激なトラフィック増加への追従を阻むボトルネックとなる。 NVIDIA Snapshotは、チェックポイントを永続ストレージから直接読み込むことで、レプリカ起動時間を数分単位から秒単位へ短縮する技術だ。 開発者は、単なる計算リソースの確保だけでなく、コールドスタート時の推論エンジン初期化コストを最小化する設計が、リアルタイム性が求められるAIサービスのUXを左右すると理解すべきだ。"
+      },
+      "en": {
+        "title": "NVIDIA Snapshot accelerates generative AI cold starts by optimizing model weight loading and inference engine initialization times",
+        "summary": "For generative AI platforms, simply provisioning GPUs is insufficient; significant overhead from image pulling, model weight loading, and inference engine initialization often prevents rapid scaling during sudden traffic spikes. NVIDIA Snapshot solves this by allowing replicas to load checkpoints directly from persistent storage, slashing cold start times from several minutes down to seconds. This architecture fundamentally changes how builders should approach inference, as the delay between GPU allocation and request readiness is now a critical UX metric. By shifting from standard container spin-ups to snapshot-based loading, engineers can finally match infrastructure elasticity with unpredictable user demand. For teams building high-concurrency AI backends, minimizing these initialization costs is now essential for maintaining seamless performance during rapid auto-scaling events."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-25T06:03:24.315Z"
+  },
+  {
+    "id": "art-1795586543591-uhy4p",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.31345",
+    "published_at": "2026-11-25T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "MLLMのチャート生成能力を評価する新ベンチマーク「ChartInt」が登場、静的グラフから動的インタラクション生成へ進化を促す",
+    "summary_ja": "マルチモーダルAIの画像からコードを生成する能力は向上しているが、従来の評価手法は静的なグラフに偏っていた。 今回発表された「ChartInt」は、ユーザーの操作に応じて状態が変化するインタラクティブなチャート生成を評価する世界初のベンチマークである。 動的な振る舞いの整合性を検証することで、データ可視化ツールの開発やエージェント作成における信頼性を飛躍的に高めることが期待される。",
+    "translations": {
+      "ja": {
+        "title": "MLLMのチャート生成能力を評価する新ベンチマーク「ChartInt」が登場、静的グラフから動的インタラクション生成へ進化を促す",
+        "summary": "マルチモーダルAIの画像からコードを生成する能力は向上しているが、従来の評価手法は静的なグラフに偏っていた。 今回発表された「ChartInt」は、ユーザーの操作に応じて状態が変化するインタラクティブなチャート生成を評価する世界初のベンチマークである。 動的な振る舞いの整合性を検証することで、データ可視化ツールの開発やエージェント作成における信頼性を飛躍的に高めることが期待される。"
+      },
+      "en": {
+        "title": "ChartInt benchmark emerges to challenge MLLMs in generating code for interactive data visualizations rather than just static charts",
+        "summary": "Multimodal Large Language Models (MLLMs) have advanced significantly in translating images into code, yet existing benchmarks remain trapped in evaluating static chart generation. Researchers introduced ChartInt, the first benchmark dedicated to testing interactive chart-to-code generation, which requires models to maintain behavioral consistency as chart states evolve through user sequences. Moving beyond simple one-step visual matching, ChartInt forces models to understand state transitions and user-driven dynamics. For builders creating data analytics agents or visualization tools, this framework highlights a critical shift: successful AI-driven visualization now requires ensuring that interactive logic remains robust across complex user inputs, rather than merely rendering a static image. Adopting this benchmark will be essential for validating agent-based tools that aim to offer true data exploration."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-25T06:02:23.591Z"
+  },
+  {
     "id": "art-1795585624146-m37n9",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -13674,32 +13726,6 @@
     "created_at": "2026-11-22T16:48:00.426Z"
   },
   {
-    "id": "art-1795365149251-qakb2",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tottoko_hamu/articles/2026-11-21-202608",
-    "published_at": "2026-11-22T07:10:21.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ItjxySTK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AE%25E3%2582%25BF%25E3%2582%25B9%25E3%2582%25AF%25E7%25AE%25A1%25E7%2590%2586%25E3%2581%25AF3%25E3%2581%25A4%25E3%2581%25AE%25E5%259E%258B%25E3%2581%25AB%25E5%2588%2586%25E3%2581%258B%25E3%2582%258C%25E3%2582%258B%25E2%2580%2594%25E2%2580%2594GitHub%2520Issues%25E3%2582%2592GTD%25E3%2581%25AE%25E5%258F%25B0%25E5%25B8%25B3%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%25E3%2582%2584%25E3%2582%258A%25E6%2596%25B9%25E3%2581%25AF%25E4%25BD%2595...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:saitoko%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2UyOTg5NmFhMzguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeのタスク管理術を16件調査、GitHub IssuesをGTDの台帳として活用する独自手法とその優位性について解説",
-    "summary_ja": "Claude Codeのタスク管理手法を16件調査し、「Markdown管理」「外部サービス連携」「開発タスク分解」の3つの主要な型に分類した。 筆者はGitHub IssuesをGTDの台帳として活用し、AIと同じリポジトリで定期作業や判断記録を統合する手法を提唱している。 コードベースとタスク管理を同一環境に置くことで、AIによる自律的なワークフロー実行と文脈維持を強化できるのが最大の強みだ。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeのタスク管理術を16件調査、GitHub IssuesをGTDの台帳として活用する独自手法とその優位性について解説",
-        "summary": "Claude Codeのタスク管理手法を16件調査し、「Markdown管理」「外部サービス連携」「開発タスク分解」の3つの主要な型に分類した。 筆者はGitHub IssuesをGTDの台帳として活用し、AIと同じリポジトリで定期作業や判断記録を統合する手法を提唱している。 コードベースとタスク管理を同一環境に置くことで、AIによる自律的なワークフロー実行と文脈維持を強化できるのが最大の強みだ。"
-      },
-      "en": {
-        "title": "Analyzing 16 Claude Code task management patterns and the case for using GitHub Issues as your central GTD ledger",
-        "summary": "After analyzing 16 distinct approaches to managing Claude Code tasks, it becomes clear that most strategies fall into one of three buckets: static Markdown files, external service integrations, or pure development task decomposition. In contrast, this author proposes using GitHub Issues as a centralized GTD ledger, keeping task management in the same repository as the codebase. This approach offers three key advantages: AI agents can access tasks via familiar tools, recurring chores are managed alongside coding work, and decision logs are preserved with audit dates. By anchoring task management directly inside the codebase, builders can reduce context switching and improve the reliability of AI-driven workflows, ensuring that project tracking remains synchronized with the code execution environment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-22T16:32:29.251Z"
-  },
-  {
     "id": "art-1795365138859-pd4o9",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -26819,32 +26845,6 @@
       "開発"
     ],
     "created_at": "2026-11-17T09:01:54.134Z"
-  },
-  {
-    "id": "art-1794905219624-zmbax",
-    "source_id": "source-arxiv",
-    "source_name": "arXiv (cs.AI / cs.CL)",
-    "url": "https://arxiv.org/abs/2611.18714",
-    "published_at": "2026-11-17T05:00:00.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "AIは「道徳的エージェント」になれるのか？arXiv論文が提案する感情主義と合理主義に基づく記述的道徳性評価の研究フレームワーク",
-    "summary_ja": "本論文はAIが道徳的主体（エージェント）として行動できるかを問う新たな研究の枠組みを提案した。 既存の規範的アプローチの限界を踏まえ、人間が持つ感情や理性を道徳的判断能力として記述的に定義し、それをAIシステムで検証可能な指標へと変換する手法を探究している。 エンジニアや研究者は、AIの倫理設計において単なるルールの適用を超えた、人間的な道徳判断の構造的理解が必要であることを示唆している。",
-    "translations": {
-      "ja": {
-        "title": "AIは「道徳的エージェント」になれるのか？arXiv論文が提案する感情主義と合理主義に基づく記述的道徳性評価の研究フレームワーク",
-        "summary": "本論文はAIが道徳的主体（エージェント）として行動できるかを問う新たな研究の枠組みを提案した。 既存の規範的アプローチの限界を踏まえ、人間が持つ感情や理性を道徳的判断能力として記述的に定義し、それをAIシステムで検証可能な指標へと変換する手法を探究している。 エンジニアや研究者は、AIの倫理設計において単なるルールの適用を超えた、人間的な道徳判断の構造的理解が必要であることを示唆している。"
-      },
-      "en": {
-        "title": "Can AI be a moral agent? A new framework explores sentimentalism and rationalism for descriptive AI morality research",
-        "summary": "This research paper tackles the difficult question of whether AI systems can function as moral agents capable of taking actions that are ethically assessable. Moving away from rigid normative accounts that rarely fit AI, the authors propose a descriptive research program that breaks down human moral agency into testable capabilities derived from philosophy and psychology. By filtering these capabilities through the lenses of sentimentalism and rationalism, the framework seeks to refine them into metrics that engineers can actually implement and evaluate in silicon. For builders and researchers, this work emphasizes that creating ethical AI requires mapping human moral cognition into distinct, quantifiable behavioral structures, rather than relying on abstract, non-functional definitions of morality."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-17T08:46:59.624Z"
   },
   {
     "id": "art-1794905206636-gmwvh",
