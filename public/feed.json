@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1795566721602-gm0nv",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/kentaro_tak/articles/mcp-logger-append-only-corrections",
+    "published_at": "2026-11-24T14:04:27.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--qMFLdu2N--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:MCP%25E3%2581%25AE%25E8%25A8%2598%25E9%258C%25B2%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E8%25BF%25BD%25E8%25A8%2598%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E4%25BD%259C%25E3%2582%258B%25E3%2581%25A8%25E3%2580%2581%25E8%25A8%2582%25E6%25AD%25A3%25E3%2581%25AE%25E3%2581%259F%25E3%2581%25B3%25E3%2581%25AB%25E9%2587%258D%25E8%25A4%2587%25E3%2581%258C%25E6%25AE%258B%25E3%2582%258B%25E3%2580%2582AI%25E3%2581%25AF%25E3%2580%258C%25E6%25B6%2588%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D%25E3%2581%25A8%25E6%25AD%25A3%25E7%259B%25B4%25E3%2581%25AB%25E8%25A8%2580%25E3%2581%2586%25E3%2581%258C%25E3%2580%2581%25E9%259B%2586%25E8%25A8%2588%25E3%2581%25AF%25E9%2596%2593%25E9%2581%2595%25E3%2581%2588%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kentaro%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDZYajdUeUd2S3FCYkVpeS1kRUQ4MUVpZVVzOVZVcTFKZ2dueFZsdWJuOVdCc3ZBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeを用いた個人開発での落とし穴。「追記型」MCPツールによるデータ重複問題とAIの「消せない」制約にどう立ち向かうか",
+    "summary_ja": "Claude CodeでGoogleスプレッドシートを操作するMCPツールを個人開発した際、ほとんどのツールが「追記専用」であるため、訂正時にデータが重複して記録される課題に直面した。 AIは「過去の記録を消去できない」と正直に限界を告げるが、集計ロジック側で二重計上してしまうリスクもある。 開発者は単なる追記機能だけでなく、データ更新や削除を考慮した冪等性の高いAPI設計が、AIエージェントを活用するうえで不可欠であることを再認識する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを用いた個人開発での落とし穴。「追記型」MCPツールによるデータ重複問題とAIの「消せない」制約にどう立ち向かうか",
+        "summary": "Claude CodeでGoogleスプレッドシートを操作するMCPツールを個人開発した際、ほとんどのツールが「追記専用」であるため、訂正時にデータが重複して記録される課題に直面した。 AIは「過去の記録を消去できない」と正直に限界を告げるが、集計ロジック側で二重計上してしまうリスクもある。 開発者は単なる追記機能だけでなく、データ更新や削除を考慮した冪等性の高いAPI設計が、AIエージェントを活用するうえで不可欠であることを再認識する必要がある。"
+      },
+      "en": {
+        "title": "The Pitfalls of Append-Only MCP Tools: Why AI Agents Struggle with Data Correction and How to Solve for Duplicate Entries",
+        "summary": "Building custom MCP tools for Google Sheets using Claude Code revealed a significant architectural flaw: most tools default to append-only operations, causing data duplication whenever a correction is needed. When tasked with fixing these errors, the AI honestly admits it cannot simply delete past entries, which leaves the developer with messy logs and incorrect aggregate totals. This experience highlights that building AI-powered agents requires moving beyond simple append operations to design truly idempotent systems that handle updates and deletions gracefully. For developers leveraging LLMs for automated data entry, building robust state management is not optional—it is the only way to prevent the AI from generating corrupted datasets that become impossible to audit."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-25T00:32:01.602Z"
+  },
+  {
+    "id": "art-1795566714955-lxt17",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tameshirabe/n/n30f390d13653",
+    "published_at": "2026-11-25T00:30:05.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/340407116/rectangle_large_type_2_e4db21ad7ccb385d074843225b35fc06.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI構築サイトを別AIでSEO監査する開発手法：自動生成コンテンツに潜む致命的な改善ポイントの洗い出しと修正の実践録",
+    "summary_ja": "AIで作成したWebサイトを、別のSEO特化型AIで監査するワークフローが個人開発者に有用だ。 自動生成サイトは、見た目が整っていても構造やメタデータ、検索意図のズレといった盲点が生まれやすい。 異なるAIモデルを「作成」と「検証」の役割で使い分けることで、検索エンジン最適化の抜け漏れを自動で発見・修正し、SEO評価を高めるための具体的な開発サイクルを解説する。",
+    "translations": {
+      "ja": {
+        "title": "AI構築サイトを別AIでSEO監査する開発手法：自動生成コンテンツに潜む致命的な改善ポイントの洗い出しと修正の実践録",
+        "summary": "AIで作成したWebサイトを、別のSEO特化型AIで監査するワークフローが個人開発者に有用だ。 自動生成サイトは、見た目が整っていても構造やメタデータ、検索意図のズレといった盲点が生まれやすい。 異なるAIモデルを「作成」と「検証」の役割で使い分けることで、検索エンジン最適化の抜け漏れを自動で発見・修正し、SEO評価を高めるための具体的な開発サイクルを解説する。"
+      },
+      "en": {
+        "title": "Beyond Generation: Using Specialized AI for SEO Auditing to Fix Hidden Flaws in Automated Website Builds",
+        "summary": "Personal developers are increasingly adopting a dual-AI workflow: using one model to build a website and another dedicated AI agent to perform rigorous SEO audits. While AI-generated sites often look polished and mobile-responsive, they frequently harbor subtle, critical errors in meta-tag structure, keyword alignment, and search intent targeting that evade initial generation. By decoupling the creation phase from the validation phase, developers can treat AI outputs as drafts rather than final products. This methodology uncovers blind spots in site architecture and SEO performance, providing a clear checklist for iterative improvements. The practical takeaway is that integrating an automated critique layer—rather than relying on a single model for both construction and quality assurance—is essential for shipping production-ready, search-optimized web applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "マーケ・集客・ASO",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-25T00:31:54.955Z"
+  },
+  {
+    "id": "art-1795566707547-atlww",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/40dai_papa/items/07ece7fe474f926ba60b",
+    "published_at": "2026-11-25T00:31:25.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnBicy50d2ltZy5jb20lMkZwcm9maWxlX2ltYWdlcyUyRjE3NDQ1MDUyMjY1MDg1NjY1MjglMkZtd1ZIQXVJdF9iaWdnZXIuanBnP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz01ODMxODMxN2EzM2MwYjNkYWI2YjljNTZjMTIzMmFjYw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D15ceb1f58454920dbd0bff24fb518682?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QVBJJTIwJUUzJTgxJUFFJUUzJTgxJUFBJUUzJTgxJTg0JTIwQUklMjAlRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglMjBNdXNlJTIwJUUzJTgyJTkyJUUzJTgwJTgxQ2xhdWRlJUUzJTgzJUJCQW50aWdyYXZpdHklMjAlRTMlODElQTglRTUlOTAlOEMlRTMlODElOTglRTklOTYlOEIlRTclOTklQkElRTMlODMlODElRTMlODMlQkMlRTMlODMlQTAlRTMlODElQUIlRTUlODUlQTUlRTMlODIlOEMlRTMlODIlOEIlRTMlODElQkUlRTMlODElQTcmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1iZWFhOGZhMjBmMTllMTc4ZjY2ODhjNmU2MzQ3MGNjZA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDA0MGRhaV9wYXBhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9N2JmZGRkNGEwMDBlOTk1YzlmZGNiZTEyYzNhMzNhMjg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=71d7fd82c45f988668517878b5f8cd4b",
+    "title_ja": "ブラウザゲーム開発の自動化：MetaのAI「Muse」をClaudeやAntigravityと連携させ、個人開発のワークフローに組み込む実装手法",
+    "summary_ja": "個人開発者が運営する「まいにち10秒ゲーム」の制作において、MetaのAIエージェント「Muse」を導入し、ClaudeやAntigravityと並ぶ開発チームの一員として統合するプロセスを解説する。 APIを持たないMuseの操作をどのように自動化し、既存のAIスタックと組み合わせてコーディングや設計に活用したかという実践的な構成を紹介。 個人開発におけるAIエージェントの分業体制を構築する際、ツール間の連携をどう最適化するかが生産性向上の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "ブラウザゲーム開発の自動化：MetaのAI「Muse」をClaudeやAntigravityと連携させ、個人開発のワークフローに組み込む実装手法",
+        "summary": "個人開発者が運営する「まいにち10秒ゲーム」の制作において、MetaのAIエージェント「Muse」を導入し、ClaudeやAntigravityと並ぶ開発チームの一員として統合するプロセスを解説する。 APIを持たないMuseの操作をどのように自動化し、既存のAIスタックと組み合わせてコーディングや設計に活用したかという実践的な構成を紹介。 個人開発におけるAIエージェントの分業体制を構築する際、ツール間の連携をどう最適化するかが生産性向上の鍵となる。"
+      },
+      "en": {
+        "title": "Integrating Meta's AI agent 'Muse' into a browser game dev workflow alongside Claude and Antigravity for seamless automation",
+        "summary": "This breakdown explores how a solo developer successfully integrated Meta's Muse, an AI agent without a public API, into an existing production stack alongside Claude and Antigravity. By orchestrating these disparate AI models, the developer streamlined the creation process for the browser-based game platform 'Mainichi 10-byou Game,' effectively turning Muse into a core team member despite its lack of direct programmatic hooks. The guide details the creative workarounds used to bridge these agents, offering a roadmap for other solo builders trying to maximize AI-driven output. The practical takeaway is that even when robust APIs are absent, forcing collaboration between specialized AI agents can significantly accelerate development velocity for complex web projects, provided you implement the right middleware."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-25T00:31:47.547Z"
+  },
+  {
+    "id": "art-1795566699935-9qxqo",
+    "source_id": "source-claude-platform",
+    "source_name": "Claude Platform Release Notes",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview#analytics-api-web-search-counts",
+    "published_at": "2026-11-23T00:00:00.000Z",
+    "og_image_url": "https://platform.claude.com/web-api/og/docs/en/release-notes/overview?design-rev=5",
+    "title_ja": "Claude Enterprise API、ウェブ検索カウントの不具合を修正。2026年11月17日以降の分析データに遡及的な集計値の変動が発生",
+    "summary_ja": "Claude Enterprise Analytics APIにおいて、List User Activityエンドポイントのウェブ検索回数が過少集計されていた不具合が修正された。 特に「Chat」および「Cowork」統合機能経由の検索漏れが解消され、集計数値が増加する見込みである。 修正は2026年11月17日以降のデータに適用されるため、過去に取得した分析レポートの数値が変動する可能性がある点に注意が必要だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Enterprise API、ウェブ検索カウントの不具合を修正。2026年11月17日以降の分析データに遡及的な集計値の変動が発生",
+        "summary": "Claude Enterprise Analytics APIにおいて、List User Activityエンドポイントのウェブ検索回数が過少集計されていた不具合が修正された。 特に「Chat」および「Cowork」統合機能経由の検索漏れが解消され、集計数値が増加する見込みである。 修正は2026年11月17日以降のデータに適用されるため、過去に取得した分析レポートの数値が変動する可能性がある点に注意が必要だ。"
+      },
+      "en": {
+        "title": "Claude Enterprise Analytics API update fixes undercounting of web search tool usage for all active users",
+        "summary": "Anthropic has deployed a fix for the Claude Enterprise Analytics API, addressing an issue where the List User Activity endpoint undercounted web search tool usage. The top-level web_search_count metric now correctly captures searches originating from Chat and Cowork unified features, which previously resulted in artificially low search volume reporting. This update applies retroactively to data from November 17, 2026, meaning previously exported analytics logs for this period may show increased figures following the patch. Developers integrating Claude analytics into internal dashboards should re-sync their data to reflect the corrected volume. This correction ensures enterprise visibility into research-heavy agent workflows is finally accurate, preventing potential under-estimation of tool dependency and overall platform engagement metrics."
+      }
+    },
+    "tool_tags": [
+      "Claude"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-25T00:31:39.936Z"
+  },
+  {
     "id": "art-1795565818644-9932y",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -11204,32 +11311,6 @@
     "created_at": "2026-11-23T04:47:11.959Z"
   },
   {
-    "id": "art-1795409217389-l8oyh",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/newchallenge77/n/na4b6985e8dd4",
-    "published_at": "2026-11-23T04:28:24.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/339630830/rectangle_large_type_2_1434b5c00e2d58a7dfdcb18decb79964.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIによる小規模ゲーム開発での限界：複雑なプロンプトが生む「コードの巨大ファイル化」問題と、AIコーディング支援の真の最適解",
-    "summary_ja": "AIコーディング支援を使ってミニダンジョンゲームを開発する際、プロンプトの指示を複雑にした途端、AIが複数の役割を無視して52KBの単一巨大ファイルにコードを詰め込む現象が発生した。 これはAIが文脈維持に苦慮した結果だが、実は世界の最先端開発でもモデルのコンテキスト制限とコード分割は喫緊の課題となっている。 個人開発の泥臭い試行錯誤こそが、大規模AIモデルの限界と対峙する開発の最前線であると示唆する。",
-    "translations": {
-      "ja": {
-        "title": "AIによる小規模ゲーム開発での限界：複雑なプロンプトが生む「コードの巨大ファイル化」問題と、AIコーディング支援の真の最適解",
-        "summary": "AIコーディング支援を使ってミニダンジョンゲームを開発する際、プロンプトの指示を複雑にした途端、AIが複数の役割を無視して52KBの単一巨大ファイルにコードを詰め込む現象が発生した。 これはAIが文脈維持に苦慮した結果だが、実は世界の最先端開発でもモデルのコンテキスト制限とコード分割は喫緊の課題となっている。 個人開発の泥臭い試行錯誤こそが、大規模AIモデルの限界と対峙する開発の最前線であると示唆する。"
-      },
-      "en": {
-        "title": "Why complex prompts break AI coders: Addressing the 'bloated file' syndrome in LLM-assisted game development workflows",
-        "summary": "When building a dungeon game via AI coding assistants, increasing prompt complexity triggered a common failure mode: the model ignored modular architecture and stuffed logic into a single 52KB file. This reflects the inherent struggle LLMs face when maintaining context across large codebases. Interestingly, this gritty trial-and-error approach mirrors challenges at the cutting edge of software engineering, where prompt engineering and context window management often clash with developer intent. For solo builders, this experience underscores that 'smarter' models are not a silver bullet for architecture; developers must still enforce modular boundaries manually. The path to robust AI-assisted production lies in embracing these limitations early, viewing model constraints not as bugs, but as fundamental architectural boundaries."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-23T04:46:57.389Z"
-  },
-  {
     "id": "art-1795408346053-di1ya",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -11491,32 +11572,6 @@
       "開発"
     ],
     "created_at": "2026-11-23T03:47:21.774Z"
-  },
-  {
-    "id": "art-1795405625855-nvaqr",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/alibabacloud-sa/items/b60da80be2a39f5123e6",
-    "published_at": "2026-11-23T03:43:53.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzOTYyNDgwJTJGY2M1MTE0ODFkYjBkMTkwMzY1ZTVkM2U5NGIzODU1YWUwOGIzN2JmNCUyRnhfbGFyZ2UucG5nJTNGMTczNjEyOTA2Nj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MTQzYTk5NThlMWM1ZjdlM2Y5MzFiMWZmNzQ5MDgxNGQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D18345f34f4eadf7b9e54921d992b03e6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODclRTMlODIlQTMlRTMlODMlQjMlRTMlODIlQjAlRTMlODElQUIlRTMlODElOEElRTMlODElOTElRTMlODIlOEIlRTMlODIlQjMlRTMlODMlQjMlRTMlODMlODYlRTMlODIlQUQlRTMlODIlQjklRTMlODMlODglRTMlODIlQjMlRTMlODIlQjklRTMlODMlODglRTMlODElQUYlRTMlODElQkUlRTMlODElOTklRTMlODElQkUlRTMlODElOTklRTklQUIlOTglRTklQTglQjAlRTMlODElOTclRTMlODElQTYlRTMlODElODQlRTMlODIlOEIlRTIlODAlOTQlRTIlODAlOTRUYWlyJUUzJTgxJThDJUUzJTgxJTlEJUUzJTgxJUFFJUU4JUFBJUIyJUU5JUExJThDJUUzJTgyJTkyJUU4JUE3JUEzJUU2JUIxJUJBJUUzJTgxJTk5JUUzJTgyJThCJUU2JTk2JUIwJUU2JUE5JTlGJUU4JTgzJUJEJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MGVhMmQ3OGZkZWNmZTUxNGJhNDI5YmFhZTkzYzljZWE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhbGliYWJhY2xvdWQtc2EmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1hYmMyNTFjZWM3MzgwMjQ5MjY0NzI1MjRmNDJmZWQyYQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=491ca97eb2009ac33adf5577df9569b0",
-    "title_ja": "TairがAIコーディングのコスト高騰に対処、600人が導入したSemantic CacheによるLLM推論の効率化手法を公開",
-    "summary_ja": "AIコーディングの普及に伴い、コンテキストコストの増大が開発者の深刻な課題となっている。 Tairはこれに対処するため「Semantic Cache」機能をリリースし、すでに600人以上の開発者が導入済みだ。 この機能は、類似のクエリに対して過去のLLM推論結果を再利用することで、API推論コストを大幅に削減する。 API料金を抑えながらパフォーマンスを維持したい個人開発者にとって、こうしたインテリジェントなキャッシュ戦略は、今後のAIプロダクト最適化における必須要件となる。",
-    "translations": {
-      "ja": {
-        "title": "TairがAIコーディングのコスト高騰に対処、600人が導入したSemantic CacheによるLLM推論の効率化手法を公開",
-        "summary": "AIコーディングの普及に伴い、コンテキストコストの増大が開発者の深刻な課題となっている。 Tairはこれに対処するため「Semantic Cache」機能をリリースし、すでに600人以上の開発者が導入済みだ。 この機能は、類似のクエリに対して過去のLLM推論結果を再利用することで、API推論コストを大幅に削減する。 API料金を抑えながらパフォーマンスを維持したい個人開発者にとって、こうしたインテリジェントなキャッシュ戦略は、今後のAIプロダクト最適化における必須要件となる。"
-      },
-      "en": {
-        "title": "Tair Tackles Soaring AI Coding Costs with New Semantic Cache Used by 600+ Developers to Optimize LLM Inference",
-        "summary": "As AI coding assistants gain popularity, the escalating cost of context windows has become a major pain point for developers. To address this, Tair launched its Semantic Cache feature, which has already been adopted by over 600 developers to eliminate redundant LLM inference calls. By intelligently reusing past inference results for similar queries, the system significantly reduces API overhead while maintaining application performance. For indie builders working with LLM-integrated tools, implementing a robust caching strategy like this is no longer optional but a necessary architectural step to control costs at scale. This release serves as a blueprint for optimizing high-cost AI workflows without sacrificing the user experience or developer productivity in complex coding environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-23T03:47:05.855Z"
   },
   {
     "id": "art-1795404753634-dr6cs",
@@ -13570,58 +13625,6 @@
       "開発"
     ],
     "created_at": "2026-11-22T09:02:08.389Z"
-  },
-  {
-    "id": "art-1795338120631-q2sh3",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/goprice/articles/ba840e44782d45",
-    "published_at": "2026-11-22T05:09:31.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--b7KOtmcJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2580%2591%25E5%25AE%259F%25E9%259A%259B%25E3%2581%25AE%25E3%2583%25AC%25E3%2582%25B7%25E3%2583%25BC%25E3%2583%2588%25E3%2581%258B%25E3%2582%2589%25E4%25BE%25A1%25E6%25A0%25BC%25E3%2582%2592%25E6%25AF%2594%25E3%2581%25B9%25E3%2582%2589%25E3%2582%258C%25E3%2582%258BWeb%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2580%258CGoPrice%25E3%2580%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Goprice%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvZy5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発の価格比較Webサービス「GoPrice」公開、レシートデータ活用で地域店舗の実勢価格を可視化",
-    "summary_ja": "「GoPrice」は、ユーザーが投稿した実際のレシートから抽出した価格データをデータベース化し、店舗ごとの実勢価格を比較できる無料Webサービスだ。 商品名やバーコード検索に対応し、会員登録なしで周辺店舗の最安値や過去のセール履歴を確認できる。 個人開発者が構築したこのプラットフォームは、物価高騰が続く中で消費者の購買意思決定をデータで支援する実用的なツールであり、ニッチなデータセットを収集・整理する個人開発の可能性を示している。",
-    "translations": {
-      "ja": {
-        "title": "個人開発の価格比較Webサービス「GoPrice」公開、レシートデータ活用で地域店舗の実勢価格を可視化",
-        "summary": "「GoPrice」は、ユーザーが投稿した実際のレシートから抽出した価格データをデータベース化し、店舗ごとの実勢価格を比較できる無料Webサービスだ。 商品名やバーコード検索に対応し、会員登録なしで周辺店舗の最安値や過去のセール履歴を確認できる。 個人開発者が構築したこのプラットフォームは、物価高騰が続く中で消費者の購買意思決定をデータで支援する実用的なツールであり、ニッチなデータセットを収集・整理する個人開発の可能性を示している。"
-      },
-      "en": {
-        "title": "Developer launches GoPrice, a crowdsourced price comparison web service using real receipt data for local market transparency",
-        "summary": "GoPrice is a new, free web service designed to bring transparency to local retail pricing by crowdsourcing data directly from physical receipts uploaded by users. By indexing specific product names and barcodes, the platform allows shoppers to search for current and historical price points at nearby stores without requiring user registration. The service aims to solve the problem of verifying whether a sale price is genuine or tracking daily expenses, effectively acting as a consumer-led price index. For individual builders, the project serves as a compelling case study on how to create value by aggregating and structuring niche, real-world data points that are otherwise trapped in analog receipts, ultimately helping users make smarter purchasing decisions in an inflationary environment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-22T09:02:00.631Z"
-  },
-  {
-    "id": "art-1795337219861-pdpoq",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/ikokeba/articles/phone-only-ai-dev-setup",
-    "published_at": "2026-11-22T06:04:59.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--n1j1vh_R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2581%258B%25E3%2582%2589%25E9%2581%25B8%25E3%2581%25B6%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E3%2580%2581AI%2520%25E3%2581%25AB%25E9%2596%258B%25E7%2599%25BA%25E3%2583%25BB%25E5%2585%25AC%25E9%2596%258B%25E3%2583%25BB%25E8%25A8%2598%25E9%258C%25B2%25E3%2581%25BE%25E3%2581%25A7%25E4%25BB%25BB%25E3%2581%259B%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A4%25E3%2582%25B3%25E3%2582%25B1%25E3%2583%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3NHMm5nRlE0SEhKc242RmlVMjdkY3hZdTdtM2lVcDkyYktVOHY5SFNnajhIRFlTQT1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "週3時間でアプリ開発から公開・運用まで：スマホ一台とClaudeで完結する「司令塔＆製品」分離の超効率アーキテクチャ",
-    "summary_ja": "週3時間未満の稼働でアプリ開発と公開を継続する個人開発者が、スマホからClaudeのみで全工程を制御する独自ワークフローを公開した。 肝は、開発ログや宣伝までを統括する「司令塔リポジトリ」と、実際のコードを管理する「製品リポジトリ」を明確に分離した設計にある。 人間は意思決定と必須の手続きに専念し、実装・テスト・デプロイといった実務をAIに完全委託することで、PCを使わない開発環境を実現している。",
-    "translations": {
-      "ja": {
-        "title": "週3時間でアプリ開発から公開・運用まで：スマホ一台とClaudeで完結する「司令塔＆製品」分離の超効率アーキテクチャ",
-        "summary": "週3時間未満の稼働でアプリ開発と公開を継続する個人開発者が、スマホからClaudeのみで全工程を制御する独自ワークフローを公開した。 肝は、開発ログや宣伝までを統括する「司令塔リポジトリ」と、実際のコードを管理する「製品リポジトリ」を明確に分離した設計にある。 人間は意思決定と必須の手続きに専念し、実装・テスト・デプロイといった実務をAIに完全委託することで、PCを使わない開発環境を実現している。"
-      },
-      "en": {
-        "title": "How to ship apps in under 3 hours a week: A mobile-first, Claude-driven architecture using split repositories",
-        "summary": "A solo builder operating on less than three hours per week shares their unique workflow for shipping apps entirely from a smartphone using only Claude. The architecture relies on splitting project infrastructure into two distinct repositories: a 'Command Center' that handles development logs, product roadmaps, and marketing copy, and a separate 'Product' repository containing the actual codebase. By decoupling strategic oversight from implementation, the developer delegates all coding, testing, and deployment tasks to AI, reserving human effort solely for high-level decision-making and essential authentication steps. This setup proves that modern AI agents can replace traditional desktop development environments, allowing builders to maintain continuous product shipping cycles while managing everything from a mobile device during short gaps in their schedule."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-22T08:46:59.861Z"
   },
   {
     "id": "art-1795337205339-p15gh",
