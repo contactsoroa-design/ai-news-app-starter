@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795608248324-vyz7i",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/locallab/items/01bb1fc04abb3cde5a1e",
+    "published_at": "2026-11-25T12:00:45.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS2ZuWlN6eUZwRTRLWEppdXNpakx5dm5aczlKMVgxdXlJX0ZCZGFxaXdDbC1yMXVjUSUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0wNmU4ZDAzNjI5N2Q0NTRmOGMzMDk1MTQ3ZDQ4OTg1OQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6b9dd9d4b2cb70a5b4abb956c8bd7df5?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UnVzdCUyMCUyQiUyMGF4dW0lMjAlRTMlODElQTclMjAzMDglMjBQZXJtYW5lbnQlMjBSZWRpcmVjdCUyMCVFMyU4MiU5MiVFNiU5QyU4MCVFNyU5RiVBRCVFNSVBRSU5RiVFOCVBMyU4NSVFMyU4MSU5OSVFMyU4MiU4QiUyMDUlMjAlRTMlODElQTQlRTMlODElQUUlRTMlODMlOUQlRTMlODIlQTQlRTMlODMlQjMlRTMlODMlODgmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0wZTU3YjZkZmM1MmM3ZTdlNTcyNDMwYWMyY2MxMTllYQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsb2NhbGxhYiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM1NGIxN2U0ZjAxZTM1M2Q5ZDAwZDk5OWQ3NTZmMzQ1&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=cebbc89f968597f78318b5ecd18bf4a6",
+    "title_ja": "Rust・axum開発で308 Permanent Redirectを最短実装する5つの勘所：301との違いとクエリ保持の最適解",
+    "summary_ja": "RustのWebフレームワーク「axum」で恒久移転を実装する際、Redirect::permanentを使うと308レスポンスが返り、元のHTTPメソッドとボディが維持される。 301と異なり、クライアントはメソッドを変更せずにリクエストを再送できるため、パスやクエリパラメータの移行において安全性が高い。 実装時に見落としがちなパスパラメータの引き継ぎや、クエリ文字列の適切なマッピングなど、運用トラブルを防ぐための5つの重要ポイントを詳説する。",
+    "translations": {
+      "ja": {
+        "title": "Rust・axum開発で308 Permanent Redirectを最短実装する5つの勘所：301との違いとクエリ保持の最適解",
+        "summary": "RustのWebフレームワーク「axum」で恒久移転を実装する際、Redirect::permanentを使うと308レスポンスが返り、元のHTTPメソッドとボディが維持される。 301と異なり、クライアントはメソッドを変更せずにリクエストを再送できるため、パスやクエリパラメータの移行において安全性が高い。 実装時に見落としがちなパスパラメータの引き継ぎや、クエリ文字列の適切なマッピングなど、運用トラブルを防ぐための5つの重要ポイントを詳説する。"
+      },
+      "en": {
+        "title": "5 key strategies for implementing 308 Permanent Redirects in Rust with axum and avoiding 301 pitfalls",
+        "summary": "When handling permanent migrations in Rust applications using the axum framework, choosing Redirect::permanent correctly yields a 308 status rather than a 301. Unlike the 301 redirect—which often forces clients to change their HTTP method or drop the request body—the 308 standard preserves the original request method and payload intact. This distinction is critical for developers migrating API endpoints while maintaining compatibility for existing clients. The article details five essential implementation strategies, focusing on properly carrying over path parameters and query strings during redirects. For builders working on robust web backends, understanding these specific nuances in axum ensures that routing changes are invisible to the end client, effectively preventing broken requests and ensuring seamless service continuity during infrastructure refactors."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-25T12:04:08.324Z"
+  },
+  {
+    "id": "art-1795608202283-0knd2",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/sora_biz/articles/hermes-vps-21-home-claude-code",
+    "published_at": "2026-11-25T11:29:48.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--lEmhKCsO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E7%25AC%25AC21%25E5%259B%259E%25E3%2580%2591PC%25E3%2581%25AE%25E5%2589%258D%25E3%2581%25AB%25E8%25A1%258C%25E3%2581%258F%25E3%2581%25AA%25E3%2580%2582%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2581%258B%25E3%2582%2589Hermes%2520Agent%25E3%2581%25AB%25E9%25A0%25BC%25E3%2582%2581%25E3%2581%25B0%25E3%2580%2581%25E8%2587%25AA%25E5%25AE%2585%25E3%2581%25AEClaude%2520Code%25E3%2581%258C%25E7%25AD%2594%25E3%2581%2588%25E3%2582%258B%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%259D%25E3%2582%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXg3RXY3QVRpZzRVLVE2eDRfUDdVUW9EVU1vSVJVT1FZS2N4dkx1YnBVYjZYbi1sdmY9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "自宅PC不要のAI自動化：スマホからHermes Agent経由で自宅サーバー上のClaude Codeを操作する構築手法",
+    "summary_ja": "PCの前に座らずスマホからAI環境を操作したい開発者向けに、Hermes Agentを利用して自宅サーバー上のClaude Codeを遠隔実行する手法が公開された。 GitHub上の手順書URLをAIに渡すだけで、Claude Codeが環境設定やタスク実行を自律的にこなす。 外出先からでもサーバー上の開発環境を安全に制御できるため、開発フローのモバイル化を促進する強力な手段となる。 物理的な場所の制約から開発を解放する、現代的なAI活用術だ。",
+    "translations": {
+      "ja": {
+        "title": "自宅PC不要のAI自動化：スマホからHermes Agent経由で自宅サーバー上のClaude Codeを操作する構築手法",
+        "summary": "PCの前に座らずスマホからAI環境を操作したい開発者向けに、Hermes Agentを利用して自宅サーバー上のClaude Codeを遠隔実行する手法が公開された。 GitHub上の手順書URLをAIに渡すだけで、Claude Codeが環境設定やタスク実行を自律的にこなす。 外出先からでもサーバー上の開発環境を安全に制御できるため、開発フローのモバイル化を促進する強力な手段となる。 物理的な場所の制約から開発を解放する、現代的なAI活用術だ。"
+      },
+      "en": {
+        "title": "Go mobile: Control your home-hosted Claude Code via smartphone using Hermes Agent for remote dev workflow",
+        "summary": "Developers can now break free from their desks by leveraging Hermes Agent to trigger Claude Code remotely from a smartphone. By pointing an AI agent at a GitHub-hosted markdown file containing operational procedures, users can initiate autonomous environment configuration and task execution without physical access to the host machine. This setup enables developers to manage complex code tasks on their home servers while on the move, effectively treating the local Claude Code instance as a remote service endpoint. This workflow demonstrates a mature pattern for integrating mobile interfaces with local LLM-powered development agents, proving that physical proximity to a terminal is no longer a strict requirement for effective software engineering at home."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-25T12:03:22.283Z"
+  },
+  {
+    "id": "art-1795608174814-fhkjv",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/wasabichan_muse/n/nc582b5ea21d8",
+    "published_at": "2026-11-25T11:32:32.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/340648142/rectangle_large_type_2_165f3c424b74bcdc80b608645642aeef.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "雀魂の戦績をAIで分析・言語化する手法を公開、主観的な「3着が多い」という感覚を客観的なデータで修正する方法",
+    "summary_ja": "雀魂の戦績データをAIに読み込ませ、言語化・添削を行うことで、自分の打ち筋の癖を客観的に可視化する試み。 多くのプレイヤーが抱く「最近3着が多い」といった漠然とした違和感を、AIによる分析を通じて、放銃率や副露判断のミスなど具体的な課題へと昇華させる手順が解説されている。 単にデータを見るだけでなく、AIに思考プロセスを記述させることで効率的な実力向上を図るプロンプト活用術は、データ分析を武器にするゲーマーや開発者にとって有用な知見となるはずだ。",
+    "translations": {
+      "ja": {
+        "title": "雀魂の戦績をAIで分析・言語化する手法を公開、主観的な「3着が多い」という感覚を客観的なデータで修正する方法",
+        "summary": "雀魂の戦績データをAIに読み込ませ、言語化・添削を行うことで、自分の打ち筋の癖を客観的に可視化する試み。 多くのプレイヤーが抱く「最近3着が多い」といった漠然とした違和感を、AIによる分析を通じて、放銃率や副露判断のミスなど具体的な課題へと昇華させる手順が解説されている。 単にデータを見るだけでなく、AIに思考プロセスを記述させることで効率的な実力向上を図るプロンプト活用術は、データ分析を武器にするゲーマーや開発者にとって有用な知見となるはずだ。"
+      },
+      "en": {
+        "title": "Using AI to Quantify Mahjong Soul Performance: Turning Subjective \"3rd Place\" Feelings Into Objective Feedback and Strategic Improvements",
+        "summary": "This guide explores how to leverage LLMs to analyze and verbalize Mahjong Soul performance data, transforming vague player intuitions—like \"I've been finishing in 3rd place too often\"—into actionable strategic insights. By feeding game records into an AI, players can dissect specific habits, such as identifying unnecessary fouls or suboptimal tile calls that are otherwise invisible during play. The piece demonstrates how prompt engineering allows the AI to critique playstyle, effectively closing the gap between raw statistical data and meaningful self-improvement. For developers and analysts, this methodology serves as a compelling case study on applying LLM-based reasoning to structured gameplay data, proving that conversational AI can act as a high-level coach for complex, probability-based decision games."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-25T12:02:54.814Z"
+  },
+  {
+    "id": "art-1795608142174-7iunk",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/how-i-turned-a-landing-page-into-a-luggage-storage-startup",
+    "published_at": "2026-11-24T22:01:24+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/aq36ct2q2mmn5r5nf67u49lgx20u",
+    "title_ja": "ランディングページを荷物預かりサービスへと進化させた個人開発者が、年間数千万円規模の収益を達成した「MVPからグローバル展開」までの歩み",
+    "summary_ja": "ある個人開発者がシンプルなランディングページから開始した荷物預かりプラットフォームは、現在世界規模のサービスへと成長し、年間数千万円の収益を上げるまでに至った。 成功の核心は、複雑なバックエンドを構築する前に需要を検証し、決済と予約処理を既存のNo-Codeツールで効率化しながら、少しずつオペレーションを自動化したことにある。",
+    "translations": {
+      "ja": {
+        "title": "ランディングページを荷物預かりサービスへと進化させた個人開発者が、年間数千万円規模の収益を達成した「MVPからグローバル展開」までの歩み",
+        "summary": "ある個人開発者がシンプルなランディングページから開始した荷物預かりプラットフォームは、現在世界規模のサービスへと成長し、年間数千万円の収益を上げるまでに至った。 成功の核心は、複雑なバックエンドを構築する前に需要を検証し、決済と予約処理を既存のNo-Codeツールで効率化しながら、少しずつオペレーションを自動化したことにある。"
+      },
+      "en": {
+        "title": "From a simple landing page to a multi-million dollar luggage storage platform: A solo developer’s guide to scaling MVP",
+        "summary": "A solo developer transformed a basic landing page into a global luggage storage marketplace now generating significant annual revenue. The project’s success stems from validating real-world demand before investing in complex backend infrastructure, leveraging existing no-code tools to handle payments and bookings while automating operations incrementally. By prioritizing actual transactions via an MVP over premature engineering, the founder proved market viability before scaling the underlying technology. This case study illustrates a highly practical playbook for side-project builders: validate willingness to pay immediately, manage logistics with off-the-shelf software, and only invest in proprietary systems once the unit economics are solidified. It is a masterclass in shipping lean and iterating toward profitability without massive upfront capital."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-25T12:02:22.174Z"
+  },
+  {
     "id": "art-1795607273923-hqkbd",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -12108,32 +12212,6 @@
     "created_at": "2026-11-23T13:16:55.019Z"
   },
   {
-    "id": "art-1795438970068-o2a4u",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/magic10r/items/671a5a2aa74c4b698ca6",
-    "published_at": "2026-11-23T12:58:33.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMjY4MDIzMCUyRnByb2ZpbGUtaW1hZ2VzJTJGMTczMDcxMzU2NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YzIxNTNkM2E5ODJkNTZmMWM4NzEwYmI2M2ZhYjAwYzg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Df28c96cd0bab41a8a4ad42321bd7b955?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklMjAlRTMlODMlOEYlRTMlODMlQkMlRTMlODMlOEQlRTMlODIlQjklRTMlODIlQTglRTMlODMlQjMlRTMlODIlQjglRTMlODMlOEIlRTMlODIlQTIlRTMlODMlQUElRTMlODMlQjMlRTMlODIlQjAlRTMlODElQTglRTMlODElQUYlRUYlQkMlOUZBSSVFMyU4MiVBOCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MiU5MiVFMyU4MCU4QyVFOCVCMyVBMiVFMyU4MSU4RiVFNCVCRCVCRiVFMyU4MSU4NiVFMyU4MCU4RCVFMyU4MSU4QiVFMyU4MiU4OSVFMyU4MCU4QyVFNSVBRSU4OSVFNSVBRSU5QSVFMyU4MSU5NyVFMyU4MSVBNiVFNSU4MyU4RCVFMyU4MSU4QiVFMyU4MSU5QiVFMyU4MiU4QiVFMyU4MCU4RCVFMyU4MSVCOCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWU4NGY5YWY5MDhjNzYxMTZlODcxYmJmYjVhZDc0Njhm&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYWdpYzEwciZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTRkNGZiMjA0ZDFlMmVhMmU1MjVkODc5ZjVjNzg1MGE5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4db836d9c70fbb198fc126dae2a8bdf6",
-    "title_ja": "AIエージェント開発の新潮流「ハーネスエンジニアリング」とは？出力を制御し安定稼働させるための設計思想と実践的手法",
-    "summary_ja": "AIエージェント開発において、プロンプトに頼るだけでなく、AIの挙動を外側から堅牢に制御する「ハーネスエンジニアリング」が注目されている。 これはCI/CDやテストコードのようにAIの出力パイプラインを「拘束（ハーネス）」し、予期せぬ挙動を検知・修正することで、本番環境での安定稼働を実現する設計思想だ。 開発者はAIの知能を信じ切るのではなく、境界条件とガードレールを明示的に構築することで、プロダクションレベルの信頼性を確保することが求められる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント開発の新潮流「ハーネスエンジニアリング」とは？出力を制御し安定稼働させるための設計思想と実践的手法",
-        "summary": "AIエージェント開発において、プロンプトに頼るだけでなく、AIの挙動を外側から堅牢に制御する「ハーネスエンジニアリング」が注目されている。 これはCI/CDやテストコードのようにAIの出力パイプラインを「拘束（ハーネス）」し、予期せぬ挙動を検知・修正することで、本番環境での安定稼働を実現する設計思想だ。 開発者はAIの知能を信じ切るのではなく、境界条件とガードレールを明示的に構築することで、プロダクションレベルの信頼性を確保することが求められる。"
-      },
-      "en": {
-        "title": "Beyond Prompt Engineering: Understanding Harness Engineering as a Critical Discipline for Building Reliable AI Agent Pipelines in Production Environments",
-        "summary": "As AI development shifts from simple prompt engineering to autonomous agents, the industry is adopting 'Harness Engineering'—a design philosophy centered on stabilizing AI behavior. Much like rigid CI/CD pipelines, this approach treats AI outputs as untrusted inputs, wrapping them in deterministic boundary conditions, validation layers, and automated guardrails. Instead of simply tuning prompts to optimize intelligence, builders must design explicit constraints and feedback loops that detect and remediate hallucinations before they propagate. This discipline forces developers to move away from trusting LLM inference and toward building robust verification systems. For anyone deploying agentic workflows, the lesson is clear: treat the AI model as a volatile component that requires strict external harness controls to ensure consistent, production-grade reliability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-23T13:02:50.068Z"
-  },
-  {
     "id": "art-1795438944036-y07vo",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -12264,32 +12342,6 @@
       "開発"
     ],
     "created_at": "2026-11-23T12:46:53.804Z"
-  },
-  {
-    "id": "art-1795437175277-n1t72",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/hisashi-ito/items/f9aa046fc326886b1b87",
-    "published_at": "2026-11-23T12:27:29.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGODgzMTYlMkZwcm9maWxlLWltYWdlcyUyRjE3MDgwODAxMjM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTdlYWZmOGJmYjU1NzNlNDAzOGMxMjM3ZWUzMjQ4MWNl%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D21470933a45a0ec36724c827775f7517?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgyJUEyJUUzJTgzJTk3JUUzJTgzJUFBJUUzJTgxJUFGJUU1JUFFJUI2JUU1JUJBJUFEJUU2JTk2JTk5JUU3JTkwJTg2JUUzJTgxJUFCJUUzJTgxJUFBJUUzJTgxJUEzJUUzJTgxJTlGJUUzJTgwJTgwJUUzJTgyJUFGJUUzJTgzJUFEJUUzJTgzJUJDJUUzJTgzJUIzJUUzJTgyJUJEJUUzJTgzJTk1JUUzJTgzJTg4JUUzJTgxJUFFJUU2JTk5JTgyJUU0JUJCJUEzJUUzJTgxJUFFJUU1JTg4JUIwJUU2JTlEJUE1JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MDBmYWEwMjQxNmY4MWJjN2U2ZGI0OTA5Y2Y0NGQ3NDc&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBoaXNhc2hpLWl0byZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTU4ZmY0ZGQwMDRlY2ZjMDkxZGM3Y2ZkZWFhMWRlMTU5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b37e1e9b6f26f588952b1aa67e275027",
-    "title_ja": "AIコーディングエージェントによる開発の民主化：誰もがツールを作る「家庭料理」の時代とソフトウェアの新しい価値",
-    "summary_ja": "AIコーディングエージェントの普及により、エンジニアではない個人でも自らの仕事や生活に必要な道具を開発できるようになった。 この現象は「家庭料理」に例えられる。 既存のソフトウェアと機能が重複していても、自分の手で作り、環境に合わせて最適化することに価値が生まれるからだ。 今後は汎用的なSaaSだけでなく、個人が自身の課題を解決するために「自炊」した特化型ツールの重要性が高まり、ソフトウェア開発の定義が大きく変わろうとしている。",
-    "translations": {
-      "ja": {
-        "title": "AIコーディングエージェントによる開発の民主化：誰もがツールを作る「家庭料理」の時代とソフトウェアの新しい価値",
-        "summary": "AIコーディングエージェントの普及により、エンジニアではない個人でも自らの仕事や生活に必要な道具を開発できるようになった。 この現象は「家庭料理」に例えられる。 既存のソフトウェアと機能が重複していても、自分の手で作り、環境に合わせて最適化することに価値が生まれるからだ。 今後は汎用的なSaaSだけでなく、個人が自身の課題を解決するために「自炊」した特化型ツールの重要性が高まり、ソフトウェア開発の定義が大きく変わろうとしている。"
-      },
-      "en": {
-        "title": "How AI Coding Agents Democratize Development: The Rise of the \"Home Cooking\" Era for Software",
-        "summary": "The rapid adoption of AI coding agents has fundamentally democratized software creation, allowing non-engineers to build bespoke tools for their personal workflows. This trend is best compared to home cooking: just as people cook dinner even when restaurants exist, individuals are now building their own software versions of existing apps. While these \"clone\" projects might seem redundant, the true value lies in the customization, the immediate feedback loop, and the perfect fit for specific daily constraints. For builders, this signifies a paradigm shift where specialized, personalized utility often outweighs the polish of generic, commercially available SaaS. We are witnessing the dawn of an era where software becomes a creative, personal craft rather than just an industrial product."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-23T12:32:55.277Z"
   },
   {
     "id": "art-1795437135652-58pv5",
@@ -14609,32 +14661,6 @@
       "開発"
     ],
     "created_at": "2026-11-22T20:32:16.033Z"
-  },
-  {
-    "id": "art-1795378625547-0vwpi",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/da39nbv3/articles/43d36d338629a0",
-    "published_at": "2026-11-22T09:09:38.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--CPIz0NyW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%259C%25E3%2580%258C%25E7%25A2%25BA%25E7%258E%2587%25E3%2581%25AE%25E8%25A8%2588%25E7%25AE%2597%25E3%2580%258D%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E4%25BC%259A%25E8%25A9%25B1%25E3%2582%2584%25E5%2589%25B5%25E9%2580%25A0%25E3%2580%2581%25E6%25B7%25B1%25E3%2581%2584%25E6%258E%25A8%25E8%25AB%2596%25E3%2581%25BE%25E3%2581%25A7%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%25E2%2580%2594%25E5%259F%25BA%25E7%25A4%258E%25E3%2581%258B%25E3%2582%2589%25E7%25B4%2590%25E8%25A7%25A3%25E3%2581%258FLLM%25E3%2581%25AE%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2581%25A8%25E9%2580%25B2%25E5%258C%2596%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nori3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSnBLTlRlS3QwaU41Tl93d0UtV3ZFOEtfYnpnVmV5MzhLajZLUldmZDlyQmJ5aHNTST1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "確率予測だけでなぜLLMは推論や創造ができるのか？分散表現からトランスフォーマーまでの仕組みを紐解く",
-    "summary_ja": "生成AIは単なる「確率による次トークン予測」に過ぎないという説明に対し、なぜそれが高度な推論や独創的な文章生成に繋がるのかという根本的な疑問を深掘りする。 単語を多次元ベクトル空間に配置する「分散表現」や、文脈を捉える「注意機構（Attention）」がどのように確率計算の枠組みの中で論理的思考や創造性をシミュレートしているのかを解説する。",
-    "translations": {
-      "ja": {
-        "title": "確率予測だけでなぜLLMは推論や創造ができるのか？分散表現からトランスフォーマーまでの仕組みを紐解く",
-        "summary": "生成AIは単なる「確率による次トークン予測」に過ぎないという説明に対し、なぜそれが高度な推論や独創的な文章生成に繋がるのかという根本的な疑問を深掘りする。 単語を多次元ベクトル空間に配置する「分散表現」や、文脈を捉える「注意機構（Attention）」がどのように確率計算の枠組みの中で論理的思考や創造性をシミュレートしているのかを解説する。"
-      },
-      "en": {
-        "title": "How can LLMs achieve complex reasoning through simple probability? Decoding the architecture from embeddings to Transformers",
-        "summary": "While generation is fundamentally 'predicting the next token via probability,' this explanation often fails to clarify how LLMs handle creative reasoning or novel problem-solving. This analysis demystifies the paradox by exploring how word embeddings map semantics into high-dimensional vector spaces, and how the Attention mechanism allows models to weigh context dynamically. It connects the dots between simple probabilistic calculations and the emergent properties of logic and inference. Understanding these core mechanics—how mathematical probability operations transform into semantic awareness—is essential for any developer looking to move beyond black-box usage. For builders, this insight into the mathematical architecture explains why scale and data quality remain the primary levers for improving model reliability in practical applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-22T20:17:05.547Z"
   },
   {
     "id": "art-1795375940033-ap369",
@@ -29699,32 +29725,6 @@
       "開発"
     ],
     "created_at": "2026-11-16T09:32:12.499Z"
-  },
-  {
-    "id": "art-1794821517883-1rujl",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/this-app-made-over-100k-in-1-year",
-    "published_at": "2026-11-15T19:03:01+00:00",
-    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/dwteakql3ye6glc9vuw4qkiyy0kp",
-    "title_ja": "個人開発者が1年で収益10万ドルを突破した「SaaS自動化ツール」開発の舞台裏と、ニッチな課題解決に特化したMVP戦略とは（開発者向け解説）",
-    "summary_ja": "個人開発者が立ち上げたSaaS自動化ツールが、リリースからわずか1年で年間収益10万ドルを達成した。 成功の鍵は、市場の広いニーズを追うのではなく、特定のワークフローにおける面倒なAPI統合を簡素化するMVP（実用最小限の製品）を迅速に市場投入した点にある。 エンジニアにとっては、壮大なプロダクトを構想するよりも、既存サービスの非効率な手作業を自動化する小さなツールにこそ、収益化の機会が眠っていることを示している。",
-    "translations": {
-      "ja": {
-        "title": "個人開発者が1年で収益10万ドルを突破した「SaaS自動化ツール」開発の舞台裏と、ニッチな課題解決に特化したMVP戦略とは（開発者向け解説）",
-        "summary": "個人開発者が立ち上げたSaaS自動化ツールが、リリースからわずか1年で年間収益10万ドルを達成した。 成功の鍵は、市場の広いニーズを追うのではなく、特定のワークフローにおける面倒なAPI統合を簡素化するMVP（実用最小限の製品）を迅速に市場投入した点にある。 エンジニアにとっては、壮大なプロダクトを構想するよりも、既存サービスの非効率な手作業を自動化する小さなツールにこそ、収益化の機会が眠っていることを示している。"
-      },
-      "en": {
-        "title": "How a Solo Developer Scaled a SaaS Automation Tool to $100k in Annual Revenue Within Just Twelve Months",
-        "summary": "A solo developer successfully bootstrapped a niche SaaS automation tool to over $100,000 in annual recurring revenue within its first year of operation. The project’s trajectory underscores the power of targeting a very specific friction point in API integration rather than trying to compete in broad, saturated markets with complex features. By prioritizing a lean MVP that directly solved one annoying manual workflow, the founder achieved rapid product-market fit without significant marketing spend. For fellow builders, this serves as a clear reminder that the most viable micro-SaaS opportunities aren't found in building broad platforms, but in identifying and ruthlessly automating the specific, repetitive bottlenecks that power users face every single day."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-16T09:31:57.883Z"
   },
   {
     "id": "art-1794820633643-k1tyy",
