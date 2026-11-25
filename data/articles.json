@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795565818644-9932y",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://arxiv.org/abs/2611.23558",
+    "published_at": "2026-11-25T00:13:01.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "Agentic LLM Servingにおけるリソース公平分配技術、arXivで公開された推論の最適化手法を解説",
+    "summary_ja": "Agentic LLM Servingにおけるマルチテナント環境下でのリソース分配の公平性を高める手法がarXivで発表された。 エージェント特有の長文コンテキストや不均一な推論負荷を考慮し、動的なバッチ処理と優先度制御を組み合わせることで、リソースを過剰に占有することなく推論スループットを維持する仕組みだ。 スケーラブルなAIサービスを構築する際、特定ユーザーの重いタスクがシステム全体を停滞させるボトルネックを解消するための重要な設計指針となる。",
+    "translations": {
+      "ja": {
+        "title": "Agentic LLM Servingにおけるリソース公平分配技術、arXivで公開された推論の最適化手法を解説",
+        "summary": "Agentic LLM Servingにおけるマルチテナント環境下でのリソース分配の公平性を高める手法がarXivで発表された。 エージェント特有の長文コンテキストや不均一な推論負荷を考慮し、動的なバッチ処理と優先度制御を組み合わせることで、リソースを過剰に占有することなく推論スループットを維持する仕組みだ。 スケーラブルなAIサービスを構築する際、特定ユーザーの重いタスクがシステム全体を停滞させるボトルネックを解消するための重要な設計指針となる。"
+      },
+      "en": {
+        "title": "Researchers Propose New Fair Resource Sharing Strategies for Optimizing Agentic LLM Serving Performance",
+        "summary": "New research published on arXiv introduces a framework for fair resource allocation in agentic LLM serving environments, specifically addressing the challenges posed by multi-tenant, variable-length contexts. The proposed architecture optimizes throughput by implementing dynamic batching and priority-aware scheduling, preventing heavy agentic tasks from monopolizing GPU resources and stalling system latency for others. As AI developers transition from simple chat APIs to complex, recursive agentic workflows, this work provides critical design patterns for maintaining responsiveness at scale. For builders architecting production-grade agent systems, the key takeaway is that naive queue management fails under diverse workloads; instead, strict resource isolation and granular scheduling policies are essential to ensure consistent service delivery regardless of the specific agent complexity."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-25T00:16:58.644Z"
+  },
+  {
+    "id": "art-1795565812498-8ikh3",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/nishi0001/articles/bakademo-wakaru-mcp-usb-c-for-ai",
+    "published_at": "2026-11-24T14:22:23.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pz4mz5DT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2590%25E3%2582%25AB%25E3%2581%25A7%25E3%2582%2582%25E3%2582%258F%25E3%2581%258B%25E3%2582%258BMCP%25EF%25BD%259CAI%25E3%2581%25AE%25E3%2580%258CUSB-C%25E3%2580%258D%25E3%2581%25AE%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2583%25BBAPI%25E3%2581%25A8%25E3%2581%25AE%25E9%2581%2595%25E3%2581%2584%25E3%2583%25BB%25E5%25AE%2589%25E5%2585%25A8%25E3%2581%25AE%25E6%25B3%25A8%25E6%2584%258F%25E7%2582%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E8%25A5%25BF%25E5%258E%259F%25E4%25B8%2580%25E8%25BC%259D%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlFEVlNTc0dVbDBHZFhJaUFBTUdmVEx6VEhUUHBYcm92OVRzT3VQV3VIR3FUbF9WX3o9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "MCP（Model Context Protocol）とは何か？AIの「USB-C」として機能する仕組みとAPIとの決定的な違いをエンジニア向けに解説",
+    "summary_ja": "MCP（Model Context Protocol）は、AIモデルとデータソースを接続するための共通規格であり、USB-Cのように多様なツールを一つのプロトコルで統合できる。 従来のAPI実装とは異なり、サーバー・クライアント・ホストの3役で構成され、AIに対して「ツールの説明書」と「実行手段」を共通インターフェース経由で提供する点が特徴だ。",
+    "translations": {
+      "ja": {
+        "title": "MCP（Model Context Protocol）とは何か？AIの「USB-C」として機能する仕組みとAPIとの決定的な違いをエンジニア向けに解説",
+        "summary": "MCP（Model Context Protocol）は、AIモデルとデータソースを接続するための共通規格であり、USB-Cのように多様なツールを一つのプロトコルで統合できる。 従来のAPI実装とは異なり、サーバー・クライアント・ホストの3役で構成され、AIに対して「ツールの説明書」と「実行手段」を共通インターフェース経由で提供する点が特徴だ。"
+      },
+      "en": {
+        "title": "What is the Model Context Protocol? Understanding how MCP acts as the 'USB-C' for AI and how it differs from traditional APIs",
+        "summary": "The Model Context Protocol (MCP) functions as an open standard for connecting AI models to diverse data sources, effectively serving as a 'USB-C' for AI tools. Unlike traditional custom API integrations that require manual wiring for every new environment, MCP establishes a standardized architecture involving hosts, clients, and servers. This allows developers to bundle tool documentation and execution capabilities into a single, portable interface. By adopting this protocol, builders no longer need to write bespoke adapters for every single LLM or agent framework. Once an MCP server is defined, it becomes instantly compatible across multiple AI platforms, significantly reducing long-term maintenance overhead and enabling seamless interoperability for complex agent-based applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-25T00:16:52.498Z"
+  },
+  {
+    "id": "art-1795565806118-2kxjm",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/mii2026/items/14974faecb001ab16234",
+    "published_at": "2026-11-24T23:45:20.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTM2NzY0JTJGNTA5NzIwYTY0ODU3MThhMzU1NmJkMDBjZDlhNDU5MTI0YzA5MzhmOCUyRnhfbGFyZ2UucG5nJTNGMTc5NTQwMjIyMj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NGE3NjRmNTFhZGI1OTFkNTAyYzc1MmExY2VmZjdjZTY%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd921fe9f58e911c066e1616e55d686de?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9TXVzZSVFNCVCQSVBNCVFNiU4RiU5QiVFMyU4MyU4RSVFMyU4MyVCQyVFMyU4MyU4OCVFRiVCQyU5QUFJJUUzJTgxJUFCJUU2JTk1JUIwJUU1JUFEJTk3JUUzJTgyJTkyJUUzJTgxJTlEJUUzJTgxJUFFJUUzJTgxJUJFJUUzJTgxJUJFJUU0JUJCJUJCJUUzJTgxJTlCJUUzJTgyJThCJUUzJTgxJUFBJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NjBjMDZjODVjODMwNTYwY2QyOWQ0Y2FkNjA0NWFlZjc&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtaWkyMDI2JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MTUxNzk3MTg4MWNmMDFlZjNhMWY0YTRkNTE5MzQ4N2Y&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=06cce5964f02fbd7d6ff010dcaaebf36",
+    "title_ja": "AIエージェント「Muse」運用記：AIに計算・数値をそのまま任せず人間が検証すべき理由と構築環境",
+    "summary_ja": "AIエージェント「Muse」を開発パートナーとして活用する個人開発者が、AIへの計算や数値処理の指示において避けるべき落とし穴を解説。 AIは論理推論には強いが、厳密な数値計算ではハルシネーションを起こしやすいため、最終的な検証工程を人間が担保することが不可欠である。 AIにすべてを委ねるのではなく、論理構成をAIに任せ、検証プロセスを人間が握るハイブリッドな運用体制こそが、個人開発の生産性を最大化する鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント「Muse」運用記：AIに計算・数値をそのまま任せず人間が検証すべき理由と構築環境",
+        "summary": "AIエージェント「Muse」を開発パートナーとして活用する個人開発者が、AIへの計算や数値処理の指示において避けるべき落とし穴を解説。 AIは論理推論には強いが、厳密な数値計算ではハルシネーションを起こしやすいため、最終的な検証工程を人間が担保することが不可欠である。 AIにすべてを委ねるのではなく、論理構成をAIに任せ、検証プロセスを人間が握るハイブリッドな運用体制こそが、個人開発の生産性を最大化する鍵となる。"
+      },
+      "en": {
+        "title": "Why AI agents like Muse still fail at raw math: Lessons from building with a digital partner",
+        "summary": "A solo developer sharing their experience using the 'Muse' AI agent reveals a critical operational reality: while AI excels at logical reasoning and structural planning, it remains unreliable for raw numerical calculation and arithmetic. The piece argues that trusting AI models blindly with specific datasets leads to hidden hallucinations that derail app logic. Instead of delegating end-to-end tasks, builders must architect workflows where the AI handles complex logic while the human retains strict validation checkpoints for all outputted figures. This hybrid operational model, where the developer acts as the final quality assurance layer, is essential for maintaining production-grade accuracy in personal projects. Treat AI as a creative partner, not a self-contained calculator, to avoid avoidable bugs in your app architecture."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-25T00:16:46.118Z"
+  },
+  {
+    "id": "art-1795565799661-r918j",
+    "source_id": "source-context-dev",
+    "source_name": "Context.dev Blog",
+    "url": "https://www.context.dev/blog/replacing-brittle-puppeteer-and-playwright-infrastructure-with-managed-web-data-apis",
+    "published_at": "2026-11-24",
+    "og_image_url": "https://www.context.dev/api/og?variant=post&title=Replacing+Puppeteer+and+Playwright+Scrapers+with+a+Managed+Web+Scraping+API&highlight=with+a+Managed+Web+Scraping+API&collection=blog&minutes=18",
+    "title_ja": "Context.devが解説するWebデータ抽出の最適解：PuppeteerやPlaywrightの自前運用からマネージドAPIへの移行戦略",
+    "summary_ja": "WebスクレイピングにおいてPuppeteerやPlaywrightを自前で運用すると、頻繁なサイト構造の変化やIPブロックにより運用コストが急増する。 Context.devは、これらを維持するよりもFirecrawlなどのマネージドWebデータAPIへ移行すべきだと提言する。 ヘッドレスブラウザの保守に時間を割くより、構造化データ変換までを自動化する外部APIを利用することで、開発リソースを本来のプロダクト価値向上に集中させるべきだ。",
+    "translations": {
+      "ja": {
+        "title": "Context.devが解説するWebデータ抽出の最適解：PuppeteerやPlaywrightの自前運用からマネージドAPIへの移行戦略",
+        "summary": "WebスクレイピングにおいてPuppeteerやPlaywrightを自前で運用すると、頻繁なサイト構造の変化やIPブロックにより運用コストが急増する。 Context.devは、これらを維持するよりもFirecrawlなどのマネージドWebデータAPIへ移行すべきだと提言する。 ヘッドレスブラウザの保守に時間を割くより、構造化データ変換までを自動化する外部APIを利用することで、開発リソースを本来のプロダクト価値向上に集中させるべきだ。"
+      },
+      "en": {
+        "title": "Replacing Brittle Puppeteer and Playwright Scraping Stacks with Managed Web Data APIs for Better Reliability",
+        "summary": "Self-hosting browser automation frameworks like Puppeteer or Playwright often becomes a maintenance nightmare due to frequent site layout changes and aggressive anti-bot measures that trigger constant IP blocks. Context.dev argues that for most teams, maintaining this fragile infrastructure is a misuse of engineering time, suggesting a migration toward managed web data APIs. By offloading the burden of proxy rotation, headless browser upkeep, and parsing logic to specialized services, developers can focus on product logic rather than fighting bot detection. The takeaway is clear: stop treating scraping as a DevOps burden and shift toward managed, reliable data pipelines that provide clean, structured data directly, effectively lowering both infrastructure maintenance costs and debugging fatigue across the entire stack."
+      }
+    },
+    "tool_tags": [
+      "Context.dev"
+    ],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-25T00:16:39.661Z"
+  },
+  {
     "id": "art-1795564921412-1opbj",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -11466,32 +11572,6 @@
     "created_at": "2026-11-23T03:32:18.154Z"
   },
   {
-    "id": "art-1795404728282-vz1sq",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/IT-love-pug/items/159ff8efa05e123594dd",
-    "published_at": "2026-11-23T03:17:54.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDUxMjg1OSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc5NDg3ODAwOD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZmMxZGI2Y2JlNDZlM2FkODk5MGUwZmM4OThlM2M2NDU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D9c1ccd2b7673a394f9adbde4e899371a?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QVdTJTIwQUklRTMlODMlOTclRTMlODMlQTklRTMlODIlQUYlRTMlODMlODYlRTMlODIlQTMlRTMlODIlQjclRTMlODMlQTclRTMlODMlOEElRTMlODMlQkMlRTglQTklQTYlRTklQTglOTMlRTUlQUYlQkUlRTclQUQlOTYlRTIlOTElQTklRUYlQkMlOUElRTMlODMlOTclRTMlODMlQUQlRTMlODMlQjMlRTMlODMlOTclRTMlODMlODglRTMlODIlQTglRTMlODMlQjMlRTMlODIlQjglRTMlODMlOEIlRTMlODIlQTIlRTMlODMlQUElRTMlODMlQjMlRTMlODIlQjAlRTMlODElQUUlRTYlODklOEIlRTYlQjMlOTUmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0wNWY1YTU3ODgzY2Y4Njg5NDQ3ZDkwOTUwMDRjZWJjYg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBJVC1sb3ZlLXB1ZyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTMxYTI1N2NjNWIyYjJiOGMyZTFmYTI0NjE5NDgwY2Fk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=2811455cf3ef5d72ee55350eeae65c3c",
-    "title_ja": "AWS認定AIプラクティショナー試験対策：基盤モデルの性能を引き出すプロンプトエンジニアリングの基本原則と手法を徹底解説",
-    "summary_ja": "AWS認定AIプラクティショナー試験の第10回連載として、分野3「基盤モデルの応用」におけるプロンプトエンジニアリングを詳説する。 ゼロショット、フューショット、Chain-of-Thoughtといった主要手法の定義や、モデルの推論精度を最大化するためのベストプラクティスを網羅。 試験合格を目指すエンジニアにとって、プロンプトの設計思想を理解することは、将来的なAWS上の生成AI実装スキルを支える重要な基礎知識となる。",
-    "translations": {
-      "ja": {
-        "title": "AWS認定AIプラクティショナー試験対策：基盤モデルの性能を引き出すプロンプトエンジニアリングの基本原則と手法を徹底解説",
-        "summary": "AWS認定AIプラクティショナー試験の第10回連載として、分野3「基盤モデルの応用」におけるプロンプトエンジニアリングを詳説する。 ゼロショット、フューショット、Chain-of-Thoughtといった主要手法の定義や、モデルの推論精度を最大化するためのベストプラクティスを網羅。 試験合格を目指すエンジニアにとって、プロンプトの設計思想を理解することは、将来的なAWS上の生成AI実装スキルを支える重要な基礎知識となる。"
-      },
-      "en": {
-        "title": "AWS Certified AI Practitioner Exam Prep: Mastering Core Prompt Engineering Principles and Techniques for Foundation Models",
-        "summary": "This tenth installment in our AWS Certified AI Practitioner (AIF-C01) exam series focuses on Domain 3, specifically Task 3.2 regarding prompt engineering techniques. We break down critical concepts essential for the exam, including zero-shot, few-shot, and Chain-of-Thought prompting, explaining how each strategy impacts foundation model output and reasoning accuracy. For developers preparing for certification, mastering these prompt construction patterns is not just about passing an exam; it builds the necessary technical framework for deploying highly effective generative AI solutions on AWS infrastructure. Understanding when to apply specific prompting strategies is a key skill for optimizing model performance and reliability in real-world, cloud-native AI applications, making this a foundational pillar of modern LLM integration strategies."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-23T03:32:08.282Z"
-  },
-  {
     "id": "art-1795403847424-0d6w9",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -12220,32 +12300,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-22T23:47:00.718Z"
-  },
-  {
-    "id": "art-1795390348000-05jp9",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/xyTom/snippai",
-    "published_at": "2026-11-22T23:06:12.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/753417704/4813a575-9001-4dcc-8975-80e37f44c1dc",
-    "title_ja": "スクリーンショットから数式LaTeXやMarkdownを即座に生成・回答するオープンソースAIツール「Snippai」が公開",
-    "summary_ja": "「Snippai」は、キャプチャしたスクリーンショットから内容を読み取り、LaTeXコードやMarkdown形式、あるいは直接的な回答へ変換するオープンソースのAIツールです。 数式の多い技術ドキュメントや論文の読み取り、コードの書き出しを効率化したい開発者にとって、手作業の転記時間を劇的に削減できる実用的なユーティリティです。 GitHubで公開されており、ローカル環境で手軽に構築できる点も特徴です。",
-    "translations": {
-      "ja": {
-        "title": "スクリーンショットから数式LaTeXやMarkdownを即座に生成・回答するオープンソースAIツール「Snippai」が公開",
-        "summary": "「Snippai」は、キャプチャしたスクリーンショットから内容を読み取り、LaTeXコードやMarkdown形式、あるいは直接的な回答へ変換するオープンソースのAIツールです。 数式の多い技術ドキュメントや論文の読み取り、コードの書き出しを効率化したい開発者にとって、手作業の転記時間を劇的に削減できる実用的なユーティリティです。 GitHubで公開されており、ローカル環境で手軽に構築できる点も特徴です。"
-      },
-      "en": {
-        "title": "Snippai is an open-source AI snipping tool that converts screenshots directly into LaTeX, Markdown, and detailed technical answers",
-        "summary": "Snippai is a new open-source AI-powered snipping utility that streamlines productivity for developers and researchers by converting screen captures directly into structured formats like LaTeX, Markdown, or contextual answers. By automating the tedious extraction of complex mathematical formulas or code blocks from images, it significantly cuts down on manual transcription time during study or documentation work. The tool is available on GitHub, allowing builders to integrate local screen-capture workflows with LLMs for immediate processing. For anyone frequently referencing academic papers or technical documentation, this utility offers a lightweight bridge between visual data and editable text formats. It’s a prime example of building specialized, focused AI agents that solve a specific friction point in technical workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-22T23:32:28.000Z"
   },
   {
     "id": "art-1795390315347-efrqh",
@@ -13091,33 +13145,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-22T14:17:45.840Z"
-  },
-  {
-    "id": "art-1795356120824-u4skk",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/yoxi957/articles/e759a8b6d44f60",
-    "published_at": "2026-11-22T07:45:31.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--YdeHSxQ1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Happy%2520Wan%25E3%2581%25A8%25E3%2581%25AF%25EF%25BC%259F4%25E7%25A8%25AE%25E3%2581%25AE%25E5%258B%2595%25E7%2594%25BB%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%25B3%25E3%2581%25A8%25E5%2590%258C%25E6%2599%2582%25E9%259F%25B3%25E5%25A3%25B0%25E7%2594%259F%25E6%2588%2590%25E3%2581%25AE%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2582%2592%25E8%25A7%25A3%25E8%25AA%25AC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%2520Visual%2520Notes%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUdpYlBBMkNsQnJvM3RPQnFlTUI0ZTBoSk00dWNSRzIwVzlRMzhWWkdRTmd4VVRZaz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "アリババのAI映像制作「Happy Wan」とは？4種の動画エンジン統合と音声同時生成・空間軌道制御の技術的仕組みを徹底解説",
-    "summary_ja": "Happy Wanは、アリババの動画生成モデル「HappyHorse」と「Wan」を融合させ、動画エンジンを4種切り替え可能なAI映像制作ワークスペースだ。 テキストや画像から映像と環境音をワンパス生成でき、通義万相（Tongyi Wan）チームがFuture Life Labへ合流したことで技術が統合された。 初回登録で50クレジット、週間チェックインで最大100クレジットが付与される。",
-    "translations": {
-      "ja": {
-        "title": "アリババのAI映像制作「Happy Wan」とは？4種の動画エンジン統合と音声同時生成・空間軌道制御の技術的仕組みを徹底解説",
-        "summary": "Happy Wanは、アリババの動画生成モデル「HappyHorse」と「Wan」を融合させ、動画エンジンを4種切り替え可能なAI映像制作ワークスペースだ。 テキストや画像から映像と環境音をワンパス生成でき、通義万相（Tongyi Wan）チームがFuture Life Labへ合流したことで技術が統合された。 初回登録で50クレジット、週間チェックインで最大100クレジットが付与される。"
-      },
-      "en": {
-        "title": "Alibaba Launches Happy Wan: A Unified AI Video Workspace Integrating Four Generative Engines with Simultaneous Audio Generation",
-        "summary": "Alibaba has introduced Happy Wan, a comprehensive AI video production workspace that integrates the HappyHorse audiovisual engine with Wan’s precise spatial trajectory control, allowing users to toggle between four distinct video generation engines. Emerging from the Tongyi Wan research team's merger with the Future Life Lab, the platform generates high-quality visuals and ambient audio in a single pass from text or reference images. New users receive 50 initial credits, with up to 100 weekly credits for testing. For builders and creators, this multi-engine abstraction layer effectively removes model lock-in, providing a unified workflow that simplifies the complexities of orchestrating different AI generation backends for consistent, high-fidelity video production."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "動画",
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-22T14:02:00.824Z"
   },
   {
     "id": "art-1795355250359-2x0bu",
@@ -19123,32 +19150,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-19T15:31:52.956Z"
-  },
-  {
-    "id": "art-1795101406619-2vu8d",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/gemini-6",
-    "published_at": "2026-11-19T02:32:38.000Z",
-    "og_image_url": null,
-    "title_ja": "Googleの次世代AI「Gemini 4 Neon」が登場、推論速度を大幅に向上させ複雑なタスクを高速処理するフロンティアモデルへ",
-    "summary_ja": "Googleは次世代AIモデル「Gemini 4 Neon」を公開し、従来のフロンティアモデルと同等の高度な推論能力を維持しながら、タスク完了までの処理速度を大幅に改善した。 複雑な論理的推論やコード生成における遅延が解消され、開発者はリアルタイム性が求められるエージェント構築や大規模なデータ分析において、より効率的なワークフローを実現できるようになる。 特に、長文コンテキスト処理とレスポンスの即時性が両立されており、複雑なプロジェクトを扱うビルド環境での活用が期待される。",
-    "translations": {
-      "ja": {
-        "title": "Googleの次世代AI「Gemini 4 Neon」が登場、推論速度を大幅に向上させ複雑なタスクを高速処理するフロンティアモデルへ",
-        "summary": "Googleは次世代AIモデル「Gemini 4 Neon」を公開し、従来のフロンティアモデルと同等の高度な推論能力を維持しながら、タスク完了までの処理速度を大幅に改善した。 複雑な論理的推論やコード生成における遅延が解消され、開発者はリアルタイム性が求められるエージェント構築や大規模なデータ分析において、より効率的なワークフローを実現できるようになる。 特に、長文コンテキスト処理とレスポンスの即時性が両立されており、複雑なプロジェクトを扱うビルド環境での活用が期待される。"
-      },
-      "en": {
-        "title": "Google launches Gemini 4 Neon: A frontier reasoning model engineered for significantly faster task completion across complex workflows",
-        "summary": "Google has officially released Gemini 4 Neon, a new frontier AI model designed to deliver advanced reasoning capabilities while drastically reducing the time required to complete complex tasks. By optimizing the underlying inference engine, the model eliminates common latency bottlenecks in logical reasoning and code generation, enabling developers to build highly responsive AI agents that were previously too slow for production. This release bridges the gap between massive, compute-heavy reasoning and the near-instant performance necessary for real-time application integration. For builders working on complex agentic workflows or high-throughput data analysis, Gemini 4 Neon represents a shift toward more usable, high-performance intelligence that does not sacrifice depth for speed, allowing for more fluid and efficient development cycles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-19T15:16:46.619Z"
   },
   {
     "id": "art-1795100550346-ovqjg",
