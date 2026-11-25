@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1795649565476-b61dv",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://microsoft.ai/news/rl-infrastructure-at-microsoft-ai/",
+    "published_at": "2026-11-25T23:14:36.000Z",
+    "og_image_url": null,
+    "title_ja": "Microsoft AIが明かす強化学習基盤「RLインフラ」の全貌、数万のGPUクラスタにおける大規模分散学習の安定化手法を公開",
+    "summary_ja": "Microsoft AIは、数万基のGPUで構成される大規模クラスタ上での強化学習（RL）を安定化・高速化させるインフラ技術を公開した。 学習中のジョブ失敗を自動検知してチェックポイントから即座に再開する復旧システムや、モデルパフォーマンスをリアルタイムで追跡する並列モニタリング環境が核心だ。 単なる演算能力の増強ではなく、計算資源の稼働率を維持するオーケストレーションの設計こそが、次世代AIモデル開発の成否を分ける重要事項となっている。",
+    "translations": {
+      "ja": {
+        "title": "Microsoft AIが明かす強化学習基盤「RLインフラ」の全貌、数万のGPUクラスタにおける大規模分散学習の安定化手法を公開",
+        "summary": "Microsoft AIは、数万基のGPUで構成される大規模クラスタ上での強化学習（RL）を安定化・高速化させるインフラ技術を公開した。 学習中のジョブ失敗を自動検知してチェックポイントから即座に再開する復旧システムや、モデルパフォーマンスをリアルタイムで追跡する並列モニタリング環境が核心だ。 単なる演算能力の増強ではなく、計算資源の稼働率を維持するオーケストレーションの設計こそが、次世代AIモデル開発の成否を分ける重要事項となっている。"
+      },
+      "en": {
+        "title": "Microsoft AI reveals RL infrastructure designed to scale reinforcement learning across clusters of tens of thousands of GPUs",
+        "summary": "Microsoft AI has detailed the infrastructure behind its reinforcement learning (RL) operations, specifically engineered to manage stable, large-scale training across clusters spanning tens of thousands of GPUs. The core architecture centers on automated failure recovery systems that detect training crashes and trigger instantaneous restarts from checkpoints, combined with parallelized monitoring environments to track model performance metrics in real time. Beyond simply throwing more compute at the problem, the team emphasizes that high-utilization orchestration—ensuring that compute resources remain productive despite inevitable hardware faults—is the decisive factor for modern model training pipelines. For builders scaling their own AI infrastructure, this underscores that resilience in job scheduling and automated error handling is just as critical as raw GPU availability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-25T23:32:45.476Z"
+  },
+  {
+    "id": "art-1795649557015-ct02w",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/joinclass/items/11d078460dd453645437",
+    "published_at": "2026-11-25T23:30:06.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MjA2ODkxJTJGNzhmNWJiNzA1YjdlZjlkYWVjZWRhOGI2ODdlNTU5ZjA5YzI1YmYzZSUyRnhfbGFyZ2UucG5nJTNGMTc3NDUxODE0Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9M2ZhMWQ1NDMyODQzNzkzNTIyNzRiMzk2ZDdmYmJmMTk%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd9c2258cfe819f9c4489a1d86672b88f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Y2xhdWRlJTIwLXAlMjAlRTMlODElQUUlRTclQjUlODIlRTQlQkElODYlRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODklRTMlODElQTAlRTMlODElOTElRTMlODElQTclRTMlODElQUYlRTglQjYlQjMlRTMlODIlOEElRTMlODElQUElRTMlODElODQlMjAlRTIlODAlOTQlMjBsYXVuY2hkJUU3JTg0JUExJUU0JUJBJUJBJUUzJTgyJUI4JUUzJTgzJUE3JUUzJTgzJTk2JUUzJTgxJUE3JUUzJTgwJThDJUU1JUE0JUIxJUU2JTk1JTk3JUUzJTgzJUJCJUU2JUE4JUE5JUU5JTk5JTkwJUU2JThCJTkyJUU1JTkwJUE2JUUzJTgzJUJCJUU0JUI4JThBJUU5JTk5JTkwJUU1JTg4JUIwJUU5JTgxJTk0JUUzJTgwJThEJUUzJTgyJTkyJUU1JTg4JTg2JUUzJTgxJTkxJUUzJTgyJThCJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NzcwZjU4MGRhODczNTkxOTJhMzIzOWFmODU4ZTJjMjI&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBqb2luY2xhc3MmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz02MTk0ZGNhMTQxZGVmYmVkMzIyZTJlNjgwN2VlNDI0ZQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=17b9b17c723f254c6e60e1682865033a",
+    "title_ja": "macOSのlaunchdで動かすClaude API運用の罠：終了コードだけでは不十分な「失敗・権限・上限エラー」を確実に検知するシェル設計",
+    "summary_ja": "macOSのlaunchdでClaude APIのCLIツールを自動実行する際、単なる終了コード判定だけではAPIのレート制限や権限エラー、予期せぬ失敗を識別できない。 ジョインクラス社は、17本以上の自動化ジョブを運用する知見から、ログ解析とHTTPステータスを組み合わせたシェルスクリプトによる堅牢なエラーハンドリング手法を解説する。 APIをバックエンドに組み込む際は、成功終了と見せかけた論理的失敗を検知する層が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "macOSのlaunchdで動かすClaude API運用の罠：終了コードだけでは不十分な「失敗・権限・上限エラー」を確実に検知するシェル設計",
+        "summary": "macOSのlaunchdでClaude APIのCLIツールを自動実行する際、単なる終了コード判定だけではAPIのレート制限や権限エラー、予期せぬ失敗を識別できない。 ジョインクラス社は、17本以上の自動化ジョブを運用する知見から、ログ解析とHTTPステータスを組み合わせたシェルスクリプトによる堅牢なエラーハンドリング手法を解説する。 APIをバックエンドに組み込む際は、成功終了と見せかけた論理的失敗を検知する層が不可欠だ。"
+      },
+      "en": {
+        "title": "Beyond exit codes: Robust shell patterns for handling Claude API failures, rate limits, and permission errors in macOS launchd jobs",
+        "summary": "Relying solely on process exit codes when triggering Claude API calls via macOS launchd often leads to silent failures, as underlying rate limits or permission denials frequently return generic exit statuses. To maintain reliability for their suite of 17+ automated business jobs, JoinClass details a defensive shell scripting pattern that parses both specific HTTP error codes and logs to distinguish genuine success from partial failures. Simply checking if a process terminated is insufficient for production-grade API automation; developers must implement explicit verification logic to categorize API-level exceptions. The key takeaway for builders is that robust automation requires a custom monitoring layer that differentiates between system-level process completion and actual task execution results before triggering downstream workflows or retry logic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-25T23:32:37.015Z"
+  },
+  {
+    "id": "art-1795649549150-125t1",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/picopeeno/articles/tysing-notes-05",
+    "published_at": "2026-11-25T22:30:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cJt3H54a--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E3%2582%2584%25E3%2582%258B%25E3%2581%25AA%25E3%2580%258D%25E3%2582%2588%25E3%2582%258A%25E3%2580%258C%25E3%2581%2593%25E3%2581%2586%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BB%25E3%2581%2597%25E3%2581%2584%25E3%2580%258D%25E3%2580%2582%25E6%259B%25B2%25E3%2581%25AB%25E5%2590%2588%25E3%2581%2586%25E7%25B5%25B5%25E3%2581%25A8%25E5%258B%2595%25E7%2594%25BB%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E6%258C%2587%25E7%25A4%25BA%25E3%2581%25AE%25E6%259B%25B8%25E3%2581%258D%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2594%25E3%2582%25B3%25E3%2583%2594%25E3%2583%25BC%25E3%2583%258E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I3MDIyODJlNGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "楽曲の雰囲気とAI生成を一致させるプロンプト術：否定指示を避け、目指すイメージを具体化する「Tysing Notes」の制作事例",
+    "summary_ja": "AIを用いた楽曲アートや背景動画の生成において、「やるな（否定形）」の指示は避け、「こうなってほしい（肯定形）」という状態を具体的に記述するのが、意図した映像を得るための鉄則である。 Tysing Notesの制作を通じ、AI生成では抽象的な表現よりも、構図や質感といった「あるべき状態」を言葉に落とし込むことで、楽曲の世界観と映像の乖離を防げることが分かった。 個人開発者がAIでリッチなアセットを量産する際、指示の書き方を肯定的にシフトするだけで生成品質は劇的に向上する。",
+    "translations": {
+      "ja": {
+        "title": "楽曲の雰囲気とAI生成を一致させるプロンプト術：否定指示を避け、目指すイメージを具体化する「Tysing Notes」の制作事例",
+        "summary": "AIを用いた楽曲アートや背景動画の生成において、「やるな（否定形）」の指示は避け、「こうなってほしい（肯定形）」という状態を具体的に記述するのが、意図した映像を得るための鉄則である。 Tysing Notesの制作を通じ、AI生成では抽象的な表現よりも、構図や質感といった「あるべき状態」を言葉に落とし込むことで、楽曲の世界観と映像の乖離を防げることが分かった。 個人開発者がAIでリッチなアセットを量産する際、指示の書き方を肯定的にシフトするだけで生成品質は劇的に向上する。"
+      },
+      "en": {
+        "title": "Mastering AI Art Prompts: Why Shifting from Negative Instructions to Positive Visual Goals Dramatically Improves Musical Asset Generation",
+        "summary": "When generating album art and background visuals for music, avoiding negative prompts like \"do not include this\" is crucial; instead, developers should describe exactly what the desired output should look like. Through the development of Tysing Notes, the author discovered that framing prompts in the affirmative—focusing on specific composition, texture, and mood—leads to significantly more accurate alignment between audio tracks and visual assets. For individual builders creating high-quality content via AI, moving away from restrictive instructions toward concrete, positive descriptions is the key to maintaining consistent creative direction. Mastering this precise language strategy allows solo developers to generate professional-grade, thematic assets that actually complement their work rather than fighting against the AI's tendencies."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "画像生成"
+    ],
+    "created_at": "2026-11-25T23:32:29.150Z"
+  },
+  {
     "id": "art-1795648682002-tjfh3",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -11758,32 +11837,6 @@
     "created_at": "2026-11-24T04:04:09.090Z"
   },
   {
-    "id": "art-1795492974825-i0kxg",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/goyle/items/dbe97dd50e6544b40757",
-    "published_at": "2026-11-24T03:50:21.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSy1nWmRjOHFxVEY1Zk5RUjVadFhfLWNmOUM2c0ozbTU1Q0MwYWdPdUpqJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWQwMzk5ZmM3OGQ0MDFhNGIyODZlNDhjMDBhNmYxZjIy%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dffffa6d134c46b844a46603c7d3f2d94?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwMjAyNiVFNSVCOSVCNCVFNyU4OSU4OCVFMyU4MCU5MUNsYXVkZSUyMENvZGUlMjBDTEklRTMlODElQUIlRTMlODElOEElRTMlODElOTklRTMlODElOTklRTMlODIlODElRTMlODElQUVNQ1AlRTMlODMlOTclRTMlODMlQTklRTMlODIlQjAlRTMlODIlQTQlRTMlODMlQjMlRUYlQkQlOUMlRTMlODMlOEYlRTMlODMlQUIlRTMlODIlQjclRTMlODMlOEQlRTMlODMlQkMlRTMlODIlQjclRTMlODMlQTclRTMlODMlQjMlRTklOTglQjIlRTYlQUQlQTIlRUYlQkMlODYlRTQlQkQlOUMlRTYlQTUlQUQlRTUlOEElQjklRTclOEUlODclRTUlOEMlOTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1jZDk4ODAwYzQ5MGQyOGNjN2YzNGE5NmExMTljMjk5NA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBnb3lsZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWMxZTA4YzJjMWRhODU0YjQ4ZjVmMmQxODBhMDhhNmJh&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=fc92585b7abbca296575a7813872056c",
-    "title_ja": "【2026年版】Claude Code CLIの精度向上と開発効率を最大化する厳選MCPプラグイン活用術、ハルシネーション対策の最適解",
-    "summary_ja": "Claude Code CLI利用時に発生しやすい存在しないAPIの提案や、古いライブラリ参照によるハルシネーションを抑制するための「2026年版」推奨MCPプラグイン構成を解説する。 単なるコーディング支援に留まらず、適切なコンテキスト制御とドキュメント参照をMCP経由で自動化することで、開発速度とコード品質を飛躍的に高める手法を提示。 LLMエージェントを実務に組み込む際、ツール選定を最適化することが、開発者のストレス軽減とプロジェクト完遂の確度を上げる鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "【2026年版】Claude Code CLIの精度向上と開発効率を最大化する厳選MCPプラグイン活用術、ハルシネーション対策の最適解",
-        "summary": "Claude Code CLI利用時に発生しやすい存在しないAPIの提案や、古いライブラリ参照によるハルシネーションを抑制するための「2026年版」推奨MCPプラグイン構成を解説する。 単なるコーディング支援に留まらず、適切なコンテキスト制御とドキュメント参照をMCP経由で自動化することで、開発速度とコード品質を飛躍的に高める手法を提示。 LLMエージェントを実務に組み込む際、ツール選定を最適化することが、開発者のストレス軽減とプロジェクト完遂の確度を上げる鍵となる。"
-      },
-      "en": {
-        "title": "2026 Guide: Boosting Claude Code CLI Accuracy and Developer Workflow with Essential MCP Plugins to Prevent Hallucinations",
-        "summary": "This guide details a 2026-focused configuration of essential MCP (Model Context Protocol) plugins designed to minimize common Claude Code CLI pitfalls, specifically hallucinations involving non-existent APIs and outdated library documentation. By shifting from relying on pure model intelligence to structured context injection and real-time documentation retrieval via MCP, developers can dramatically improve output accuracy and overall development velocity. The piece emphasizes that the true power of AI agent workflows lies in thoughtful tool orchestration rather than just prompt engineering. For engineers integrating AI into complex codebases, strategically selecting and layering these plugins is the most effective way to eliminate hallucination-induced churn and maintain high code quality across long-running development projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-24T04:02:54.825Z"
-  },
-  {
     "id": "art-1795492957794-7w27j",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -14458,32 +14511,6 @@
     "created_at": "2026-11-23T12:01:53.720Z"
   },
   {
-    "id": "art-1795434425827-rx2md",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-    "published_at": "2026-11-23T11:39:45.000Z",
-    "og_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/j7yPmbNCP4I-HD.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
-    "title_ja": "「The Binding of Isaac」開発者、物議を醸したAI生成BGMを「Repentance Plus」から削除へ—コミュニティの反発を受け決定",
-    "summary_ja": "「The Binding of Isaac」のクリエイターであるエドモンド・マクミレン氏は、最新の拡張パック「Repentance Plus」に追加予定だったAI生成楽曲を削除すると発表した。 この決定は、同氏がSNS上でAI生成音楽の採用を公表した直後からファンコミュニティの間で急速に高まった強い批判を受けたものだ。 クリエイター経済において、ユーザーが制作物に対して持つ「人間による創作」という価値観を無視した実装は、強力なブランド毀損を招くリスクがあることを示唆している。",
-    "translations": {
-      "ja": {
-        "title": "「The Binding of Isaac」開発者、物議を醸したAI生成BGMを「Repentance Plus」から削除へ—コミュニティの反発を受け決定",
-        "summary": "「The Binding of Isaac」のクリエイターであるエドモンド・マクミレン氏は、最新の拡張パック「Repentance Plus」に追加予定だったAI生成楽曲を削除すると発表した。 この決定は、同氏がSNS上でAI生成音楽の採用を公表した直後からファンコミュニティの間で急速に高まった強い批判を受けたものだ。 クリエイター経済において、ユーザーが制作物に対して持つ「人間による創作」という価値観を無視した実装は、強力なブランド毀損を招くリスクがあることを示唆している。"
-      },
-      "en": {
-        "title": "The Binding of Isaac Developer Pulls AI-Generated Music from Repentance Plus Expansion Following Significant Community Backlash",
-        "summary": "Edmund McMillen, the creator of the cult-hit game The Binding of Isaac, has officially announced the removal of AI-generated music from the upcoming Repentance Plus expansion. This reversal comes immediately after the announcement triggered intense negative feedback from the franchise’s dedicated player base, who viewed the use of generative audio as a betrayal of the series' creative integrity. For indie developers and studios, this situation underscores a critical lesson: in highly passionate fan-driven markets, cutting costs or speeding up production workflows using AI can inadvertently trigger significant brand damage. The incident demonstrates that community trust remains fragile, and disregarding user expectations regarding human craftsmanship often carries a higher long-term cost than any efficiency gain AI might provide during the development cycle."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-23T11:47:05.827Z"
-  },
-  {
     "id": "art-1795434413872-akg45",
     "source_id": "source-vercel",
     "source_name": "Vercel / v0 Blog",
@@ -14537,31 +14564,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-23T11:32:14.483Z"
-  },
-  {
-    "id": "art-1795433524408-t60aq",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.superlogical.com/updates/public-testing-beginning",
-    "published_at": "2026-11-23T11:07:46.000Z",
-    "og_image_url": "https://www.superlogical.com/updates/public-testing-beginning/og.webp",
-    "title_ja": "Hashimoto氏のAIエージェント向け新端末「Rex」が登場：ターミナルエミュレータとマルチプレクサを統合し、LLMの操作効率を最大化",
-    "summary_ja": "Hashimoto氏が開発した「Rex」は、AIコーディングエージェントの操作に最適化した次世代のターミナルエミュレータ兼マルチプレクサである。 従来の端末環境では困難だった、AIによる非対話的なコマンド操作やコンテキスト管理を前提に設計されており、エージェントが端末を制御する際の信頼性と速度を大幅に向上させる。 自動化された開発フローを構築するエンジニアにとって、従来のtmuxやiTerm2に代わる新たなAIネイティブな操作レイヤーとしての活用が期待される。",
-    "translations": {
-      "ja": {
-        "title": "Hashimoto氏のAIエージェント向け新端末「Rex」が登場：ターミナルエミュレータとマルチプレクサを統合し、LLMの操作効率を最大化",
-        "summary": "Hashimoto氏が開発した「Rex」は、AIコーディングエージェントの操作に最適化した次世代のターミナルエミュレータ兼マルチプレクサである。 従来の端末環境では困難だった、AIによる非対話的なコマンド操作やコンテキスト管理を前提に設計されており、エージェントが端末を制御する際の信頼性と速度を大幅に向上させる。 自動化された開発フローを構築するエンジニアにとって、従来のtmuxやiTerm2に代わる新たなAIネイティブな操作レイヤーとしての活用が期待される。"
-      },
-      "en": {
-        "title": "Hashimoto debuts Rex: A terminal emulator and multiplexer specifically re-engineered for AI coding agents and autonomous workflows",
-        "summary": "Hashimoto has launched Rex, a new terminal emulator and multiplexer architected specifically for AI coding agents rather than manual human interaction. Unlike legacy terminal tools, Rex is built from the ground up to handle the non-interactive, high-speed command streams and complex context management required by AI agents. By optimizing the interface layer for machine-to-machine communication, it provides superior reliability and control for automated shell sessions. For engineers building agentic workflows, Rex aims to replace traditional multiplexers like tmux or iTerm2, serving as an AI-native abstraction layer that lets agents interact with the OS more effectively. This shift represents a crucial evolution in infrastructure as coding agents require deeper, more programmatic access to local development environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-23T11:32:04.408Z"
   },
   {
     "id": "art-1795433509607-ywktz",
