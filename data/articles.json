@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1795664830298-h12bo",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/taichiendoh/articles/ai-agent-memory-provenance-trust-gate",
+    "published_at": "2026-11-25T22:08:22.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---cs9Rg84--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E3%2581%25A9%25E3%2581%2593%25E3%2581%258B%25E3%2582%2589%25E6%259D%25A5%25E3%2581%259F%25E8%25A8%2598%25E6%2586%25B6%25E3%2581%258B%25E3%2580%258D%25E3%2582%2592%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2597%25E3%2581%25A6%25E3%2581%258B%25E3%2582%2589%25E4%25BD%25BF%25E3%2581%2586%2520%25E2%2580%2595%2520%25E8%25A4%2587%25E6%2595%25B0AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E8%25A8%2598%25E6%2586%25B6%25E3%2581%25AB%25E3%2580%2581%25E5%2587%25BA%25E8%2587%25AA%25E7%25AE%25A1%25E7%2590%2586%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E5%2585%25A5%25E5%258F%25A3%25E3%2582%2592%25E8%25B6%25B3%25E3%2581%2599%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%2581%25A0%25E8%2597%25A4%25E5%25A4%25AA%25E4%25B8%2580%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA1ZjNmMTY4MjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントの記憶汚染を防ぐ「出自管理（Provenance）」設計―信頼できるデータのみを推論に組み込むためのセキュリティ戦略",
+    "summary_ja": "OWASP GenAI Security Projectが警告する「記憶とコンテキストの汚染（ASI06）」に対し、AIエージェントの記憶における出自管理（プロバナンス）を強化する設計が重要になっている。 攻撃者が記憶層に不正データを注入すると、将来の推論すべてが永続的に汚染されるためだ。 単なる入力検証にとどまらず、どのデータがどのソースから来たかを追跡・検証する信頼ベースの取得プロセスを構築することが、自律型エージェント開発における必須の防御レイヤーとなる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの記憶汚染を防ぐ「出自管理（Provenance）」設計―信頼できるデータのみを推論に組み込むためのセキュリティ戦略",
+        "summary": "OWASP GenAI Security Projectが警告する「記憶とコンテキストの汚染（ASI06）」に対し、AIエージェントの記憶における出自管理（プロバナンス）を強化する設計が重要になっている。 攻撃者が記憶層に不正データを注入すると、将来の推論すべてが永続的に汚染されるためだ。 単なる入力検証にとどまらず、どのデータがどのソースから来たかを追跡・検証する信頼ベースの取得プロセスを構築することが、自律型エージェント開発における必須の防御レイヤーとなる。"
+      },
+      "en": {
+        "title": "Defending AI agents against memory poisoning: implementing provenance-based security for trustworthy inference",
+        "summary": "The OWASP GenAI Security Project identifies 'Memory and Context Poisoning' (ASI06) as a critical risk where injected data compromises long-term agent reasoning rather than just a single prompt. Because malicious content stored in 'trusted' areas like memory hooks corrupts all future inferences, developers must move beyond simple input validation. The necessary defense involves strict provenance tracking—verifying the origin of every data point before it is committed to memory. Builders need to architect trust-based retrieval systems that treat external knowledge as untrusted until proven otherwise. By implementing provenance metadata at the ingestion layer, developers can ensure that only verifiable information influences an agent's persistent state, ultimately preventing systemic poisoning of complex, multi-step AI reasoning chains."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "研究"
+    ],
+    "created_at": "2026-11-26T03:47:10.298Z"
+  },
+  {
+    "id": "art-1795664823304-qip67",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kurage_aiwork/n/n646a4dccd02a",
+    "published_at": "2026-11-26T03:13:58.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/340885889/rectangle_large_type_2_726579f4c786636b547a35a69ec55af5.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIコード生成で「触るな」と指示しても別の場所が壊れる理由——ChatGPTやCodex利用時の意図せぬ副作用を防ぐプロンプト戦略",
+    "summary_ja": "AIに「この部分は触るな」と明示的に指示しても、依存関係やコンテキストが予期せぬ形で改変される現象が多発している。 これはAIがコード全体を最適化・リファクタリングしようとする過程で、指示された範囲外の関連コードまで意図せず巻き込んでしまうことが主な要因だ。 コードに不慣れな個人開発者がAIを効率的に使うには、指示範囲の限定に加え、変更履歴を逐一確認するプロトコルや、特定の箇所のみを隔離して処理させる設計が欠かせない。",
+    "translations": {
+      "ja": {
+        "title": "AIコード生成で「触るな」と指示しても別の場所が壊れる理由——ChatGPTやCodex利用時の意図せぬ副作用を防ぐプロンプト戦略",
+        "summary": "AIに「この部分は触るな」と明示的に指示しても、依存関係やコンテキストが予期せぬ形で改変される現象が多発している。 これはAIがコード全体を最適化・リファクタリングしようとする過程で、指示された範囲外の関連コードまで意図せず巻き込んでしまうことが主な要因だ。 コードに不慣れな個人開発者がAIを効率的に使うには、指示範囲の限定に加え、変更履歴を逐一確認するプロトコルや、特定の箇所のみを隔離して処理させる設計が欠かせない。"
+      },
+      "en": {
+        "title": "Why telling AI 'don't touch this' triggers unintended side effects in your codebase, and how to fix it",
+        "summary": "When developers instruct AI models like ChatGPT to fix specific bugs while explicitly ordering them to leave other parts of the code untouched, they often find that previously functional components suddenly break. This occurs because AI agents frequently prioritize structural optimization or global refactoring, treating the entire project as mutable even when scoped constraints are applied. For non-technical builders relying on LLMs, the root cause is often the model's inability to respect hard boundaries during large context shifts. To prevent this, builders must shift from vague 'don't touch' commands to isolated, modular prompts that treat segments as black boxes, combined with mandatory diff-checking workflows that isolate changes before they are committed to the main codebase."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-26T03:47:03.304Z"
+  },
+  {
+    "id": "art-1795664814325-ge0za",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/business/articles/2611/26/news033.html",
+    "published_at": "2026-11-26T03:00:00.000Z",
+    "og_image_url": "https://image.itmedia.co.jp/business/articles/2611/26/cover_news033.jpg",
+    "title_ja": "生成AIが旅行予約を自動化する今、旅行会社が生き残る道とは？JATAシンポジウムで語られた「AI共創」と人間ならではの価値",
+    "summary_ja": "AIエージェントが旅行の計画から決済までを自律的にこなす時代、旅行会社の存在意義が再定義されている。 JATAのシンポジウムに登壇した専門家らは、AIには顧客の言葉の裏にある感情や、その土地の「感動」を真に理解することはできないと指摘した。 今後はAIで業務効率化を進め、捻出した時間を顧客との信頼関係構築や現場での深い体験提供に充てることが、生き残りの鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "生成AIが旅行予約を自動化する今、旅行会社が生き残る道とは？JATAシンポジウムで語られた「AI共創」と人間ならではの価値",
+        "summary": "AIエージェントが旅行の計画から決済までを自律的にこなす時代、旅行会社の存在意義が再定義されている。 JATAのシンポジウムに登壇した専門家らは、AIには顧客の言葉の裏にある感情や、その土地の「感動」を真に理解することはできないと指摘した。 今後はAIで業務効率化を進め、捻出した時間を顧客との信頼関係構築や現場での深い体験提供に充てることが、生き残りの鍵となる。"
+      },
+      "en": {
+        "title": "As Autonomous AI Agents Disrupt Travel Booking, What Role Remains for Human Travel Agencies to Survive?",
+        "summary": "As autonomous AI agents begin handling end-to-end travel tasks from search to final payment, the traditional travel industry faces an existential crisis regarding its core value proposition. During a recent JATA symposium, experts argued that while AI excels at logistics, it lacks the human capacity to interpret underlying client emotions or deliver authentic, tangible experiences on the ground. The consensus was that agencies must pivot their strategy: using AI to automate routine operational overhead while aggressively reallocating that regained time toward fostering deep customer trust and curating human-centric, high-touch services that AI cannot replicate. Ultimately, the industry's future lies in human-AI collaboration that prioritizes emotional connection over transactional booking efficiency."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-26T03:46:54.326Z"
+  },
+  {
     "id": "art-1795663932527-z9nlu",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -7995,32 +8074,6 @@
     "created_at": "2026-11-25T02:02:04.701Z"
   },
   {
-    "id": "art-1795571237719-ubu48",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kokuto_meru/n/n20c53bda0289",
-    "published_at": "2026-11-25T01:44:57.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340434429/rectangle_large_type_2_ff1a6d2890d2b4b05f9563779a3e0a36.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "「個人開発は稼げない」は本当か？検証済みのデータ分布から読み解く、個人開発者が直面する収益化の現実と成功確率のライン",
-    "summary_ja": "「個人開発では稼げない」という言説に対し、検証済みの収益分布データを基にその真実味を考察する。 多くの個人開発者が経験する「売上ゼロ」の壁はデータ上も支配的であり、夢を見ること以上に統計的な現実を把握することが重要だ。 個人の発信活動やフォロワー数と収益は必ずしも直結しないという前提に立ち、継続的な開発と現実的な市場の見極めが、生存率を高めるための唯一の道であることを提示する。",
-    "translations": {
-      "ja": {
-        "title": "「個人開発は稼げない」は本当か？検証済みのデータ分布から読み解く、個人開発者が直面する収益化の現実と成功確率のライン",
-        "summary": "「個人開発では稼げない」という言説に対し、検証済みの収益分布データを基にその真実味を考察する。 多くの個人開発者が経験する「売上ゼロ」の壁はデータ上も支配的であり、夢を見ること以上に統計的な現実を把握することが重要だ。 個人の発信活動やフォロワー数と収益は必ずしも直結しないという前提に立ち、継続的な開発と現実的な市場の見極めが、生存率を高めるための唯一の道であることを提示する。"
-      },
-      "en": {
-        "title": "Are Indie Hackers Just Making Noise? Analyzing Verified Revenue Distribution Data to Reveal the Realistic Odds of Making Real Money",
-        "summary": "The notion that 'indie hacking never pays' is a pervasive fear, but examining verified revenue distribution data provides a sobering, reality-based look at the landscape. The data confirms that earning zero revenue is the dominant experience for most solo developers, regardless of social media following or daily output frequency. This article dissects the harsh statistical reality, arguing that aspiring builders must decouple vanity metrics from actual product market fit. The takeaway for builders is clear: stop romanticizing the outlier 'overnight success' stories and instead treat indie development as a long-term game of managing realistic financial expectations. Understanding these brutal distribution curves is essential for deciding whether to pivot, iterate, or stay the course when monetization stalls."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-25T01:47:17.719Z"
-  },
-  {
     "id": "art-1795571226357-suzkl",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -15206,32 +15259,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-23T11:02:08.070Z"
-  },
-  {
-    "id": "art-1795429924544-er3ye",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/itoken_lab/articles/instruction-file-vs-skills-what-to-write",
-    "published_at": "2026-11-23T00:16:43.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MYlaC0_1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:CLAUDE.md%2520%25E3%2581%25AB%25E6%259B%25B8%25E3%2581%258D%25E8%25B6%25B3%25E3%2581%2597%25E3%2581%259F%25E8%25A1%258C%25E3%2581%258C%25E5%25AE%2588%25E3%2582%2589%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2582%25E6%258C%2587%25E7%25A4%25BA%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2581%25A8%2520Skill%2520%25E3%2581%25AE%25E6%259B%25B8%25E3%2581%258D%25E5%2588%2586%25E3%2581%2591%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2584%25E3%2581%25A8%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTGR1dnJoLWxxdHVhOUU2bzI2Vy1NeDQyY3ZYc2xpRnlEcWlmajIyOG5fVUdhVVZZST1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeで「CLAUDE.md」の指示が無視される問題：全体設定とプロジェクト個別ファイルにおける命令の書き分けと検証",
-    "summary_ja": "Claude Codeを利用する際、グローバルな指示ファイル（~/.claude/CLAUDE.md）に追記した内容が無視される現象が発生。 約6,000字の全体指示ファイルから特定の命令を分離し、プロジェクト単位のCLAUDE.mdへ配置したところ、エージェントが指示を正しく遵守するようになった。 LLMのコンテキスト管理において、全体の設定ファイルと個別タスクのスキル定義をどう書き分けるべきか、実用的な運用指針を解説する。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeで「CLAUDE.md」の指示が無視される問題：全体設定とプロジェクト個別ファイルにおける命令の書き分けと検証",
-        "summary": "Claude Codeを利用する際、グローバルな指示ファイル（~/.claude/CLAUDE.md）に追記した内容が無視される現象が発生。 約6,000字の全体指示ファイルから特定の命令を分離し、プロジェクト単位のCLAUDE.mdへ配置したところ、エージェントが指示を正しく遵守するようになった。 LLMのコンテキスト管理において、全体の設定ファイルと個別タスクのスキル定義をどう書き分けるべきか、実用的な運用指針を解説する。"
-      },
-      "en": {
-        "title": "Why Claude Code ignores instructions in CLAUDE.md: Strategies for separating global configuration and project-specific task skills",
-        "summary": "Many developers using Claude Code find that instructions added to global configuration files, such as ~/.claude/CLAUDE.md, are frequently ignored or dropped by the agent. Through iterative testing, it was discovered that a sprawling, 6,000-character global instruction file often suffers from attention degradation. Moving specific behavioral instructions into a focused, project-level CLAUDE.md file immediately resolved the compliance issues, ensuring the agent actually adhered to the directives. This breakdown examines the architectural trade-offs between centralized system prompts and local, task-specific skill files. For builders, the key takeaway is that LLM agents function best when instruction sets are modular and localized, rather than stuffing every operational guideline into a monolithic, global configuration file that confuses context prioritization."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-23T10:32:04.544Z"
   },
   {
     "id": "art-1795428106787-bpqc0",
@@ -23144,33 +23171,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-19T00:02:05.753Z"
-  },
-  {
-    "id": "art-1795046517540-55lrx",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/aiplus/article/2611/19/2000003306/",
-    "published_at": "2026-11-18T22:55:00.000Z",
-    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/19/2000003306/10012467/2048",
-    "title_ja": "ElevenLabsが音声AIスタートアップ「Kotoba Technologies」を買収、159億円規模の投資で独自の基盤モデル技術を獲得へ",
-    "summary_ja": "音声AI大手ElevenLabsが、159億円規模でKotoba Technologiesを買収した。 Kotobaはわずか15人のチームながら、音声生成モデルの推論効率を劇的に高める独自技術を有しており、今回の統合によりElevenLabsの次世代モデルの処理速度向上とコスト削減が加速する見込みだ。 大手による小規模で高度な技術を持つスタートアップの買収は、AI競争が基礎研究からモデルの推論最適化フェーズへ移行していることを示唆している。",
-    "translations": {
-      "ja": {
-        "title": "ElevenLabsが音声AIスタートアップ「Kotoba Technologies」を買収、159億円規模の投資で独自の基盤モデル技術を獲得へ",
-        "summary": "音声AI大手ElevenLabsが、159億円規模でKotoba Technologiesを買収した。 Kotobaはわずか15人のチームながら、音声生成モデルの推論効率を劇的に高める独自技術を有しており、今回の統合によりElevenLabsの次世代モデルの処理速度向上とコスト削減が加速する見込みだ。 大手による小規模で高度な技術を持つスタートアップの買収は、AI競争が基礎研究からモデルの推論最適化フェーズへ移行していることを示唆している。"
-      },
-      "en": {
-        "title": "ElevenLabs acquires Kotoba Technologies in $100M+ deal to boost speech AI inference efficiency and foundation model speed",
-        "summary": "Speech AI leader ElevenLabs has acquired Kotoba Technologies in a transaction valued at approximately 159 billion yen ($100 million). Despite having only 15 employees, Kotoba developed proprietary techniques that drastically improve the inference efficiency of speech generation models. This acquisition allows ElevenLabs to accelerate its next-generation model development, specifically targeting lower latency and reduced computational costs. For the broader AI industry, this move underscores a critical shift in the competitive landscape, moving away from simple scaling laws toward specialized research in inference optimization. Builders should take note that as high-quality model output becomes commoditized, the real value proposition is increasingly shifting to teams that can make those models run cheaper and faster at massive production scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "音声",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-19T00:01:57.540Z"
   },
   {
     "id": "art-1795044723007-5s7pg",
