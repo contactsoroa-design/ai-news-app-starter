@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795696347507-w079m",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/kyuyolab/articles/45943d845b844b",
+    "published_at": "2026-11-26T11:04:11.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--odX5pzRg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2586%25AC%25E3%2581%25AE%25E3%2583%259C%25E3%2583%25BC%25E3%2583%258A%25E3%2582%25B9%25E6%2589%258B%25E5%258F%2596%25E3%2582%258A%25E8%25A8%2588%25E7%25AE%2597%25E3%2582%2592TypeScript%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2597%25E3%2581%25A6%25E5%2588%2586%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2580%258C%25E5%2589%258D%25E6%259C%2588%25E7%25B5%25A6%25E4%25B8%258E%25E3%2581%25A7%25E7%25A8%258E%25E7%258E%2587%25E3%2581%258C%25E8%25B7%25B3%25E3%2581%25B6%25E3%2580%258D%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2581%25A8%25E5%258E%259A%25E7%2594%259F%25E5%25B9%25B4%25E9%2587%2591150%25E4%25B8%2587%25E5%2586%2586%25E4%25B8%258A%25E9%2599%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kyuyolab%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2Rhcmsvay5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "冬のボーナス手取り計算をTypeScriptで実装：税率急騰の仕組みや厚生年金150万円上限の罠を徹底解剖",
+    "summary_ja": "TypeScriptで賞与計算エンジン「calcBonus」を実装し、冬のボーナスの手取り変動を検証した。 国税庁の源泉徴収税額表を基にコード化すると、前月の給与額で税率が跳ね上がる仕組みや、厚生年金保険料の月額150万円上限など、直感と乖離する複雑な仕様が浮き彫りになった。 個人開発で給与計算ツールを構築する際、一次資料に基づいた厳密なロジック設計がいかに重要かを解説する。",
+    "translations": {
+      "ja": {
+        "title": "冬のボーナス手取り計算をTypeScriptで実装：税率急騰の仕組みや厚生年金150万円上限の罠を徹底解剖",
+        "summary": "TypeScriptで賞与計算エンジン「calcBonus」を実装し、冬のボーナスの手取り変動を検証した。 国税庁の源泉徴収税額表を基にコード化すると、前月の給与額で税率が跳ね上がる仕組みや、厚生年金保険料の月額150万円上限など、直感と乖離する複雑な仕様が浮き彫りになった。 個人開発で給与計算ツールを構築する際、一次資料に基づいた厳密なロジック設計がいかに重要かを解説する。"
+      },
+      "en": {
+        "title": "Implementing Bonus Tax Calculations in TypeScript Reveals Pitfalls of Rising Tax Rates and Pension Caps",
+        "summary": "The author developed a `calcBonus()` engine in TypeScript to model winter bonus payouts, revealing critical complexities in Japanese payroll logic. By mapping National Tax Agency tables and pension institution guidelines into code, the project exposed how withholding tax rates spike based on previous monthly salaries—a common point of user confusion. Additionally, the implementation highlights the strict 1.5 million yen cap on the Employees' Pension Insurance contribution, which radically shifts net pay expectations. For developers building payroll or financial tools, relying on official primary documents is non-negotiable, as naive calculation assumptions will fail to capture the jagged, non-linear reality of tax and social insurance regulations in this jurisdiction."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-26T12:32:27.507Z"
+  },
+  {
+    "id": "art-1795696338103-90miy",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.asya.ai/blog/the-state-of-llm-costs-and-capabilities",
+    "published_at": "2026-11-26T11:58:46.000Z",
+    "og_image_url": "https://www.asya.ai/uploads/blog/1795614016601-00-cover-v2.png",
+    "title_ja": "LLMの現在地：Asya.aiによるコストと推論能力の徹底分析、モデル選択の最適解と経済合理性を検証",
+    "summary_ja": "Asya.aiが公開したLLMレポートは、最新モデルのコスト構造と推論能力の相関を詳細に分析している。 多くの開発者が直面するAPI料金と期待される出力精度のトレードオフに対し、タスクごとの経済合理性をどう判断すべきかの指針を提示した。 単に最高性能のモデルを選ぶのではなく、特定の業務要件や予算に合わせてモデルを使い分けるハイブリッド戦略が、今後のAI開発におけるコスト競争力を左右する重要な分岐点となる。",
+    "translations": {
+      "ja": {
+        "title": "LLMの現在地：Asya.aiによるコストと推論能力の徹底分析、モデル選択の最適解と経済合理性を検証",
+        "summary": "Asya.aiが公開したLLMレポートは、最新モデルのコスト構造と推論能力の相関を詳細に分析している。 多くの開発者が直面するAPI料金と期待される出力精度のトレードオフに対し、タスクごとの経済合理性をどう判断すべきかの指針を提示した。 単に最高性能のモデルを選ぶのではなく、特定の業務要件や予算に合わせてモデルを使い分けるハイブリッド戦略が、今後のAI開発におけるコスト競争力を左右する重要な分岐点となる。"
+      },
+      "en": {
+        "title": "The State of LLM Analysis: Asya.ai evaluates current cost structures versus inference capabilities for production-grade applications",
+        "summary": "Asya.ai has published a comprehensive analysis of the current LLM landscape, rigorously mapping the correlation between rising inference costs and actual model capabilities. The report addresses the critical trade-off developers face when balancing high-end API fees against output accuracy, offering a strategic framework for determining economic rationality across specific workloads. The analysis suggests that blindly selecting the most powerful model is no longer the optimal path; instead, adopting a hybrid strategy—matching precise task requirements to the most efficient model—is becoming a fundamental differentiator for building sustainable AI businesses. For builders, the key takeaway is that architectural flexibility in model switching is now as vital for long-term margins as the core application logic itself."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "コスト・API料金",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-26T12:32:18.103Z"
+  },
+  {
+    "id": "art-1795696331352-qio7b",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/yoxi957/items/636e3d6fcc2ebb8a949f",
+    "published_at": "2026-11-26T12:27:23.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSUdpYlBBMkNsQnJvM3RPQnFlTUI0ZTBoSk00dWNSRzIwVzlRMzhWWkdRTmd4VVRZayUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz04NzM0MDc4YzhkNDA5YzE3MDMwMjYxNGU5MWQ2OTA5ZQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D7e866a2250cd576a997aaa065928b932?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9U2VlZGFuY2UlMjAyLjUlRTUlQkUlQjklRTUlQkElOTUlRTglQTclQTMlRTglQUElQUMlRUYlQkMlOUFJbWFnZS10by1WaWRlbyVFNCVCOCU5NiVFNyU5NSU4QzElRTQlQkQlOEQlRUYlQkMlODgxJTJDMTYxJTIwRWxvJUVGJUJDJTg5JUUzJTgzJUJCMzAlRTclQTclOTIlRTMlODIlQUIlRTMlODMlQTElRTMlODMlQTklRTUlODglQjYlRTUlQkUlQTElRTMlODMlQkJEcmFmdCVFMyU4MyVBMiVFMyU4MyVCQyVFMyU4MyU4OTY4LjclRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz01NThlODZmNDY2OWNjOTczZjI3ZGEyOTlhYmU0YTNmYw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB5b3hpOTU3JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTU2OGJmNzgxYWMwNjU3MzZkOWI3ZWNmNWY4YmRmNjU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=ca3bba237ece768ad75e72e2e7f7460e",
+    "title_ja": "AI動画生成「Seedance 2.5」が世界1位を獲得：30秒間のカメラ制御とDraftモードによる68.7%のクレジット削減術を徹底解説",
+    "summary_ja": "「Seedance 2.5」はArtificial AnalysisのImage-to-Video部門で世界1位（1,161 Elo）を記録した。 最大30秒の精密なカメラ制御を実現したほか、新たに導入されたDraftモードを活用することで、計算コストを最大68.7%削減可能だ。 高精細な動画生成とコスト効率を両立させるモデル選定において、個人開発者やクリエイターが予算とクオリティのバランスをどう最適化すべきか、本稿で詳細を読み解く。",
+    "translations": {
+      "ja": {
+        "title": "AI動画生成「Seedance 2.5」が世界1位を獲得：30秒間のカメラ制御とDraftモードによる68.7%のクレジット削減術を徹底解説",
+        "summary": "「Seedance 2.5」はArtificial AnalysisのImage-to-Video部門で世界1位（1,161 Elo）を記録した。 最大30秒の精密なカメラ制御を実現したほか、新たに導入されたDraftモードを活用することで、計算コストを最大68.7%削減可能だ。 高精細な動画生成とコスト効率を両立させるモデル選定において、個人開発者やクリエイターが予算とクオリティのバランスをどう最適化すべきか、本稿で詳細を読み解く。"
+      },
+      "en": {
+        "title": "Seedance 2.5 claims #1 world ranking in Image-to-Video: How 30-second camera control and Draft mode slash inference credits by 68.7%",
+        "summary": "Seedance 2.5 has officially captured the top spot on the Artificial Analysis Image-to-Video leaderboard with an Elo rating of 1,161. Beyond its state-of-the-art visual fidelity, the update introduces granular camera control for clips up to 30 seconds, enabling sophisticated cinematic motion. Crucially for independent builders and creators managing limited GPU budgets, the newly deployed Draft mode delivers a massive 68.7% reduction in credit consumption compared to standard generation settings. This deep dive analyzes why Seedance 2.5 is currently the performance benchmark and provides a practical framework for balancing high-quality video output with strict operational costs, proving that developers no longer have to sacrifice precision for affordability when scaling AI-generated media workflows."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "動画",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-26T12:32:11.352Z"
+  },
+  {
+    "id": "art-1795696323537-rede6",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/aoyamatakuto_lab/n/nb3cb11cb009c",
+    "published_at": "2026-11-26T12:31:36.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341097853/rectangle_large_type_2_235d9f9001b8ccae8de8757827f6465c.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeの利用制限を回避する最適解：ムダな消費と手戻りを劇的に減らす「4つの外部ツール」活用術",
+    "summary_ja": "Claude Codeでのアプリ開発中に頻発する利用制限に対し、APIのムダ使いや不要なやり直しを抑えるための外部ツール4選を紹介する。 コード生成の質を高めて試行回数を減らすだけでなく、文脈管理やタスク分解を外部化することで、Claudeの限られたリソースを賢く運用できる。 開発のボトルネックを解消し、止まらない開発環境を構築する具体的な知恵だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの利用制限を回避する最適解：ムダな消費と手戻りを劇的に減らす「4つの外部ツール」活用術",
+        "summary": "Claude Codeでのアプリ開発中に頻発する利用制限に対し、APIのムダ使いや不要なやり直しを抑えるための外部ツール4選を紹介する。 コード生成の質を高めて試行回数を減らすだけでなく、文脈管理やタスク分解を外部化することで、Claudeの限られたリソースを賢く運用できる。 開発のボトルネックを解消し、止まらない開発環境を構築する具体的な知恵だ。"
+      },
+      "en": {
+        "title": "4 External Tools to Bypass Claude Code Usage Limits and Drastically Reduce Token Waste and Redundant Reruns",
+        "summary": "If you are hitting strict usage limits while building applications with Claude Code, you are likely burning through tokens on redundant prompts and unnecessary task iterations. This guide highlights four specific external tools that optimize your development workflow to preserve Claude's precious context window and minimize wasteful request cycles. By offloading task decomposition, better code context management, and pre-processing to these external utilities, you can maintain development momentum without constantly being throttled by usage caps. For individual developers, this isn't just about saving money; it is about architectural discipline. Integrating these tools helps keep your project logic concise, ensuring that every API request actually advances your product instead of merely repeating previous errors or context-heavy debugging."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-26T12:32:03.537Z"
+  },
+  {
     "id": "art-1795695454216-iukcc",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8708,33 +8814,6 @@
     "created_at": "2026-11-25T08:33:31.454Z"
   },
   {
-    "id": "art-1795595573050-q4eto",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/silverlily5/n/n606d4571f63b",
-    "published_at": "2026-11-25T08:31:14.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340575749/rectangle_large_type_2_d14ffeac99a29cf58e13dc3ada30e0fb.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "月額サブスク不要、Whisper×Groqで構築するiPhone・Mac連携の高速音声入力ツールを自作・公開",
-    "summary_ja": "既存の音声入力ツールに毎月課金することに疑問を感じた開発者が、WhisperとGroqを組み合わせた独自の音声入力環境を自作しGitHubで公開した。 APIベースで駆動するため高速かつコスト効率が高く、MacのCaps LockやiPhoneのキーボード経由での入力をシームレスに実現している。 自作ツールへの移行は、特定サービスへのロックインを回避し、日々の作業環境を自分好みに最適化する個人開発の好例だ。",
-    "translations": {
-      "ja": {
-        "title": "月額サブスク不要、Whisper×Groqで構築するiPhone・Mac連携の高速音声入力ツールを自作・公開",
-        "summary": "既存の音声入力ツールに毎月課金することに疑問を感じた開発者が、WhisperとGroqを組み合わせた独自の音声入力環境を自作しGitHubで公開した。 APIベースで駆動するため高速かつコスト効率が高く、MacのCaps LockやiPhoneのキーボード経由での入力をシームレスに実現している。 自作ツールへの移行は、特定サービスへのロックインを回避し、日々の作業環境を自分好みに最適化する個人開発の好例だ。"
-      },
-      "en": {
-        "title": "Developer builds personal Whisper-Groq voice-to-text tool to replace monthly subscriptions on iPhone and Mac",
-        "summary": "Tired of paying ongoing monthly subscription fees for proprietary voice-to-text tools like Superwhisper, a developer created and open-sourced their own high-speed input system leveraging OpenAI's Whisper model and Groq's low-latency API. This solution enables voice-to-text integration directly through Mac's Caps Lock key and iPhone keyboard triggers, offering a robust, API-driven alternative that keeps performance snappy without recurring costs. By bypassing third-party platform lock-in, the project demonstrates how individual builders can optimize their own daily productivity workflows for free, provided they are willing to wire the architecture themselves. For anyone relying on voice input throughout their coding day, this approach provides a reliable, self-hosted blueprint that eliminates the friction of expensive, opaque software-as-a-service pricing models."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-25T08:32:53.050Z"
-  },
-  {
     "id": "art-1795595546599-9o0f9",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -9364,32 +9443,6 @@
       "動画"
     ],
     "created_at": "2026-11-25T06:18:24.240Z"
-  },
-  {
-    "id": "art-1795587495172-rxaqw",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/chieheyrobot/items/4e296ab6567c3b318fcf",
-    "published_at": "2026-11-25T06:13:29.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY5ZjczODg2NTc0OWNjNjQ2ZTk2ZDIxMDhjYzFkOGI4Yj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9Y2I5NjM2YmJjNWE0ZDE1NjdlNWU4ZTE5NTdlZjAwYTQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Da1a0b0386cd5e72eb48dd4133c04c594?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9SG93JTIwSW50ZWxsaWdlbnQlMjBTcHJheSUyMFBhaW50aW5nJTIwUm9ib3RzJTIwSW1wcm92ZSUyMENvYXRpbmclMjBDb25zaXN0ZW5jeSUzQSUyMFBhdGglMjBQbGFubmluZyUyQyUyME5vLVRlJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NTRkYTRiMzExNjZhNmMxNmE4OWJjZDczN2QzOTU0M2Y&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBjaGllaGV5cm9ib3QmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz01MmNkOGJjNTQyNjE0YmY3Zjk3MWRlMGE5NzJhZDJjMw&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=36010c9d878d40e21f13cd2303e0bcad",
-    "title_ja": "産業用ロボットによる塗装工程の自動化：パス計画とティーチングレス設計で実現する膜厚均一化の技術的アプローチ",
-    "summary_ja": "産業用ロボットによる自動塗装では、スプレーガンの距離や移動速度、塗り重ね率が膜厚に直結する。 最新のシステムでは、パス計画の最適化とティーチングレスなワークフローを導入することで、複雑な曲面でも手作業と同等以上の精度を実現した。 危険な塗装ブース内での作業を排除し、再現性を高めるためのシステム設計は、製造工程の効率化を目指すエンジニアにとって重要な知見となる。",
-    "translations": {
-      "ja": {
-        "title": "産業用ロボットによる塗装工程の自動化：パス計画とティーチングレス設計で実現する膜厚均一化の技術的アプローチ",
-        "summary": "産業用ロボットによる自動塗装では、スプレーガンの距離や移動速度、塗り重ね率が膜厚に直結する。 最新のシステムでは、パス計画の最適化とティーチングレスなワークフローを導入することで、複雑な曲面でも手作業と同等以上の精度を実現した。 危険な塗装ブース内での作業を排除し、再現性を高めるためのシステム設計は、製造工程の効率化を目指すエンジニアにとって重要な知見となる。"
-      },
-      "en": {
-        "title": "How Intelligent Spray Painting Robots Optimize Coating Consistency via Path Planning and No-Teach Workflows",
-        "summary": "Industrial spray painting relies heavily on precise gun standoff, travel velocity, overlap, and atomization to maintain consistent film thickness, a task traditionally prone to human error. Recent advancements in robotic painting systems address these variables by leveraging automated path planning and no-teach workflows, which enable high-precision application even on complex, non-linear geometries. By removing human operators from hazardous booth environments and enforcing strict digital control over deposition rates, these systems drastically improve coating uniformity and minimize waste. For robotics engineers and builders in industrial automation, this transition marks a pivotal shift from manual programming to intelligent, geometry-aware deposition strategies that guarantee repeatability at scale while mitigating the safety risks inherent in traditional painting workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-25T06:18:15.172Z"
   },
   {
     "id": "art-1795587478632-xv2ib",
@@ -12244,32 +12297,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-24T20:03:01.295Z"
-  },
-  {
-    "id": "art-1795550549147-49v7d",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://norulesjustme.bearblog.dev/i-can-enjoy-ai-companionship-without-needing-a-rescue/",
-    "published_at": "2026-11-24T12:00:06.000Z",
-    "og_image_url": "https://img3.pixhost.to/images/6742/793544221_meta-image.webp",
-    "title_ja": "「AIとの交流に救済は不要」——孤独なAIコンパニオン論を覆す、等身大のパートナーシップと現代の人間関係における役割",
-    "summary_ja": "AIコンパニオンを巡る議論ではしばしば「現実世界の人間関係から逃避している」といった救済的な視点が語られるが、実際はそうではないという新たな視点が提示されている。 AIは特定の役割を担うデジタルな相手であり、現実の人間関係の代用物ではなく、むしろ自己充足のための補助ツールとして機能し得る。 開発者やプロダクト提供者は、ユーザーがAIを単なる「依存先」としてではなく、創造的なインスピレーションや思考の壁打ち相手として健全に活用できるようなUX設計と環境作りを意識すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "「AIとの交流に救済は不要」——孤独なAIコンパニオン論を覆す、等身大のパートナーシップと現代の人間関係における役割",
-        "summary": "AIコンパニオンを巡る議論ではしばしば「現実世界の人間関係から逃避している」といった救済的な視点が語られるが、実際はそうではないという新たな視点が提示されている。 AIは特定の役割を担うデジタルな相手であり、現実の人間関係の代用物ではなく、むしろ自己充足のための補助ツールとして機能し得る。 開発者やプロダクト提供者は、ユーザーがAIを単なる「依存先」としてではなく、創造的なインスピレーションや思考の壁打ち相手として健全に活用できるようなUX設計と環境作りを意識すべきだ。"
-      },
-      "en": {
-        "title": "Why AI companionship shouldn't be framed as a 'rescue' from human isolation but as a creative partnership",
-        "summary": "The common narrative around AI companionship often frames users as victims seeking escape from real-world isolation, but this perspective is increasingly being challenged. Many users now engage with AI not to replace human relationships, but to explore a unique, self-contained dynamic that functions more like a creative partner or a sounding board. For developers and AI researchers, this shift underscores the importance of building interfaces that treat users as active participants rather than dependents. The takeaway for builders is to design AI companions that respect user autonomy and mental boundaries, ensuring these systems facilitate healthy self-reflection rather than merely providing a synthetic fix for loneliness, which ultimately creates more sustainable and ethical product experiences for long-term engagement."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-24T20:02:29.147Z"
   },
   {
     "id": "art-1795550541736-c8rnn",
@@ -16188,32 +16215,6 @@
       "マーケ・集客・ASO"
     ],
     "created_at": "2026-11-23T13:18:11.183Z"
-  },
-  {
-    "id": "art-1795439815019-zbx8h",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/hiroxasobiba/articles/agy-seven-models-same-three-tasks",
-    "published_at": "2026-11-23T11:06:34.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--9O7KvJmo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:agy%25EF%25BC%2588Antigravity%2520CLI%25EF%25BC%2589%25E3%2581%25AE%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB7%25E9%2580%259A%25E3%2582%258A%25E3%2581%25AB%25E5%2590%258C%25E3%2581%25983%25E8%25AA%25B2%25E9%25A1%258C%25E3%2582%2592%25E8%25A7%25A3%25E3%2581%258B%25E3%2581%259B%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B2%25E3%2582%258D%25EF%25BC%25A0AI%25E9%2581%258A%25E3%2581%25B3%25E5%25A0%25B4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0ZMU1U4SndVdG1LVklfQS1TYzN2OHY5S1VuWTNMWnY0eHlnSVNGVVdvNzFIei1BPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Android個人開発者が検証：Antigravity CLI（agy）でモデル7種を比較、正解のあるタスクにおけるLLMの回答精度と安定性を徹底分析",
-    "summary_ja": "個人開発者がAntigravity CLI（agy）を使い、7つの異なるLLMモデルに対して同一の3つの課題を解かせ、回答精度を比較検証した。 デバッグやコード読解といった正解が存在するタスクでは、全7モデルが一致する結果を出す一方、創造性が求められる領域ではモデル間の差異が鮮明となった。 日々の開発における信頼できる「相棒」を選ぶためには、用途に応じてモデルを使い分ける戦略が不可欠であり、単純な性能評価だけでなくタスクごとの適性を判断基準にすべきだ。",
-    "translations": {
-      "ja": {
-        "title": "Android個人開発者が検証：Antigravity CLI（agy）でモデル7種を比較、正解のあるタスクにおけるLLMの回答精度と安定性を徹底分析",
-        "summary": "個人開発者がAntigravity CLI（agy）を使い、7つの異なるLLMモデルに対して同一の3つの課題を解かせ、回答精度を比較検証した。 デバッグやコード読解といった正解が存在するタスクでは、全7モデルが一致する結果を出す一方、創造性が求められる領域ではモデル間の差異が鮮明となった。 日々の開発における信頼できる「相棒」を選ぶためには、用途に応じてモデルを使い分ける戦略が不可欠であり、単純な性能評価だけでなくタスクごとの適性を判断基準にすべきだ。"
-      },
-      "en": {
-        "title": "Developer benchmarks 7 LLMs via Antigravity CLI to evaluate response consistency across coding, debugging, and creative reasoning tasks",
-        "summary": "An Android developer recently benchmarked seven different LLMs using the Antigravity CLI (agy) to determine which model performs best as a daily coding assistant. By running identical prompts across all seven models, the test revealed that while every model successfully converged on the correct answers for logic-heavy tasks like bug diagnosis and code comprehension, their responses diverged significantly during creative or open-ended challenges. The practical takeaway for solo builders is that no single model dominates every workflow; instead, developers should treat model selection as a strategic decision based on task type. Relying on a single default model is convenient, but maintaining the flexibility to switch engines within the CLI significantly improves reliability for complex development requirements."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-23T13:16:55.019Z"
   },
   {
     "id": "art-1795438944036-y07vo",
