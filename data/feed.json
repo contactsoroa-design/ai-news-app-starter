@@ -1,5 +1,83 @@
 [
   {
+    "id": "art-1795729632016-59ihb",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/zendeck/articles/1aabffea90e246",
+    "published_at": "2026-11-26T12:49:08.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--VQMyMwb9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:2%25E4%25BA%25BA%25E5%25AF%25BE%25E6%2588%25A6%25E3%2581%25AE%25E8%258A%25B1%25E6%259C%25AD%25E3%2581%25A7%25E3%2580%258C%25E6%259C%25AD%25E3%2581%258C2%25E6%259E%259A%25E3%2581%25AB%25E8%25A6%258B%25E3%2581%2588%25E3%2582%258B%25E3%2580%258D%25E3%2582%2592%25E3%2581%25AA%25E3%2581%258F%25E3%2581%2599%25E3%2581%25BE%25E3%2581%25A7%25EF%25BC%259ASocket.IO%25E3%2581%25A8React%25E3%2581%25A7%25E3%2581%25AE%25E3%2582%25A2%25E3%2583%258B%25E3%2583%25A1%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E5%2590%258C%25E6%259C%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Mark%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSWdkdVNDRzh1aFE4TFdaVVVvam4zaE9RcFBmNUlTUVd1NkwzYTNXSVZXU2lmSmdHMD1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "月間6,000人が遊ぶオンライン花札「花札レジェンズ」開発記：ReactとSocket.IOで対戦中の札の動きと同期ズレを解消する実装術",
+    "summary_ja": "オンライン花札『花札レジェンズ』の個人開発者が、Node.jsとSocket.IOを用いた対戦型カードゲーム特有の難所「札の移動アニメーション同期」の解決策を公開した。 通信ラグによる札の二重表示やズレを防ぐため、時刻同期ではなく、サーバー側の「ターン順序状態」をフロントエンドのアニメーション完了条件に直結させる設計を採用している。",
+    "translations": {
+      "ja": {
+        "title": "月間6,000人が遊ぶオンライン花札「花札レジェンズ」開発記：ReactとSocket.IOで対戦中の札の動きと同期ズレを解消する実装術",
+        "summary": "オンライン花札『花札レジェンズ』の個人開発者が、Node.jsとSocket.IOを用いた対戦型カードゲーム特有の難所「札の移動アニメーション同期」の解決策を公開した。 通信ラグによる札の二重表示やズレを防ぐため、時刻同期ではなく、サーバー側の「ターン順序状態」をフロントエンドのアニメーション完了条件に直結させる設計を採用している。"
+      },
+      "en": {
+        "title": "How the dev behind Hanafuda Legends solved animation sync issues for 6,000 monthly players using React and Socket.IO",
+        "summary": "The solo developer behind Hanafuda Legends, a web-based card game with 6,000 monthly users, shares his technical approach to solving the notorious challenge of synchronizing card movement animations across clients using Socket.IO. To eliminate visual glitches where cards appear doubled or disjointed during real-time multiplayer turns, the implementation shifts away from timestamp synchronization. Instead, the game relies on locking the client-side animation state to the authoritative server-side turn progression. This ensures that UI actions only execute once the server validates the move, preventing the race conditions common in browser-based board games. For builders creating multiplayer tabletop titles, the key takeaway is that robust state management and strict animation queuing are far more critical for smooth gameplay than attempting to sync wall clocks between clients."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-26T21:47:12.016Z"
+  },
+  {
+    "id": "art-1795729609213-gxvno",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/aioneautopilot/articles/ai-zero-capital-founder-01",
+    "published_at": "2026-11-26T14:21:55.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--vDsv8w0S--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25B3%2587%25E9%2587%25910%25E5%2586%2586%25E3%2581%25A7AI%25E3%2581%25AB%25E8%2587%25AA%25E5%25BE%258B%25E8%25B5%25B7%25E6%25A5%25AD%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%25E5%25AE%259F%25E9%25A8%2593%25E3%2582%2592%25E5%25A7%258B%25E3%2582%2581%25E3%2581%259F%25E3%2580%2590%25E8%25A8%25AD%25E8%25A8%2588%25E7%25B7%25A8%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AIOneAutopilot%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTEh2OUpMeHhNR213VGdFek1wMmszNENXRDRqQWY5cnB3X01CT2I2a3lSYjZFZUhRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "資金0円からAIに自律起業を託す実験—Claude Codeを活用した事業検証プロセスと状態管理・撤退基準の設計",
+    "summary_ja": "AIエージェント「Claude Code」に資金0円からの自律起業を任せ、事業探求から検証までを自動化する実験を開始した。 単なる気合いに頼らず「諦めない」環境を作るため、状態ファイル・明確な撤退基準・人間による承認キューという3つの仕組みを設計。 生成された成果物を確認した上で公開するプロセスを採用し、AIが主導する事業開発のリアルな成功と失敗を毎週追っていく。",
+    "translations": {
+      "ja": {
+        "title": "資金0円からAIに自律起業を託す実験—Claude Codeを活用した事業検証プロセスと状態管理・撤退基準の設計",
+        "summary": "AIエージェント「Claude Code」に資金0円からの自律起業を任せ、事業探求から検証までを自動化する実験を開始した。 単なる気合いに頼らず「諦めない」環境を作るため、状態ファイル・明確な撤退基準・人間による承認キューという3つの仕組みを設計。 生成された成果物を確認した上で公開するプロセスを採用し、AIが主導する事業開発のリアルな成功と失敗を毎週追っていく。"
+      },
+      "en": {
+        "title": "Launching an autonomous startup experiment: Leveraging Claude Code for 0-yen business creation with structured state management and exit protocols",
+        "summary": "A new experiment tasks the Claude Code agent with bootstrapping a business from zero yen, pushing the boundaries of AI autonomy from ideation to validation. To ensure persistence beyond mere enthusiasm, the framework incorporates three critical guardrails: persistent state files, predefined exit criteria, and a mandatory human approval queue. This system validates the actual potential of AI-driven entrepreneurship by forcing the agent to navigate failure and pivot based on real-world constraints. Every weekly update shares the raw, honest metrics of these business experiments, with content drafted by the AI and verified by a human operator. This project offers a transparent look at whether an AI can truly drive a profitable venture without human intervention."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-26T21:46:49.213Z"
+  },
+  {
+    "id": "art-1795729602912-6ad2f",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/fair_violet7894/n/n70579b1cc7d8",
+    "published_at": "2026-11-26T19:58:20.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341192284/rectangle_large_type_2_8120a223b60341567a8e82d72a9a6073.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「100日3DSリメイク作成」第10弾：スマブラの「ダメージ％蓄積と場外ふっとばし」だけを抽出したWebミニゲームの作り方",
+    "summary_ja": "「100日3DSリメイク作成」企画のDay10は、『大乱闘スマッシュブラザーズ』の核心である「ダメージ％を蓄積させ、相手を場外へ吹き飛ばす」メカニズムの再構築に挑戦。 複雑な格闘ゲームの要素をすべて排除し、攻撃とノックバックの計算ロジックだけに絞ることで、Webブラウザ上で動作する軽量かつ中毒性の高い対戦ゲームを実現した。 名作ゲームの「たったひとつの仕掛け」を抽出し、ゼロから実装し直すアプローチは、個人開発者が短期間でMVPを量産するための有効な学習手法となる。",
+    "translations": {
+      "ja": {
+        "title": "「100日3DSリメイク作成」第10弾：スマブラの「ダメージ％蓄積と場外ふっとばし」だけを抽出したWebミニゲームの作り方",
+        "summary": "「100日3DSリメイク作成」企画のDay10は、『大乱闘スマッシュブラザーズ』の核心である「ダメージ％を蓄積させ、相手を場外へ吹き飛ばす」メカニズムの再構築に挑戦。 複雑な格闘ゲームの要素をすべて排除し、攻撃とノックバックの計算ロジックだけに絞ることで、Webブラウザ上で動作する軽量かつ中毒性の高い対戦ゲームを実現した。 名作ゲームの「たったひとつの仕掛け」を抽出し、ゼロから実装し直すアプローチは、個人開発者が短期間でMVPを量産するための有効な学習手法となる。"
+      },
+      "en": {
+        "title": "Building a mini-web game by isolating the 'damage percentage and knockback' mechanic from Super Smash Bros in 10 days",
+        "summary": "As part of a '100-day 3DS remake' project, this Day 10 experiment isolates the core competitive mechanic from Super Smash Bros: accumulating damage percentage to launch opponents off-screen. By stripping away all visual assets, music, and complex fighter physics to focus solely on hit-detection and vector-based knockback logic, the build demonstrates how to create a highly addictive browser game from scratch. This methodology of extracting a single core 'hook' from a legendary title to build a functional MVP is an excellent practice for solo developers aiming to improve their game mechanics design. It proves that limiting scope to a singular interaction loop is the most effective way to ship polished web-based projects rapidly."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-26T21:46:42.912Z"
+  },
+  {
     "id": "art-1795728735753-attwx",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -14717,32 +14795,6 @@
     "created_at": "2026-11-24T20:17:23.048Z"
   },
   {
-    "id": "art-1795551433360-8jg9u",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/paku0219/articles/b8457aeba45d84",
-    "published_at": "2026-11-24T14:45:38.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--gGGEQWBn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E5%2585%25A5%25E9%2596%2580%25E3%2580%2591MCP%25EF%25BC%2588Model%2520Context%2520Protocol%25EF%25BC%2589%25E3%2581%25A8%25E3%2581%25AF%25EF%25BC%259F%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2581%258B%25E3%2582%2589%25E8%2587%25AA%25E4%25BD%259C%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B4%25E3%2582%2584%25E3%2581%2586%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FmOWYyMjdmZTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Model Context Protocol（MCP）入門：ClaudeやAIエージェントと外部ツールを繋ぐ標準規格の仕組みと実装を解説",
-    "summary_ja": "Model Context Protocol（MCP）は、ClaudeなどのAIエージェントと外部データ・ツールを標準化されたプロトコルで接続するための共通規格です。 従来のFunction Callingと比較して、一度の開発で複数のLLM環境にツールを統合できる点が強みとなります。 本記事ではMCPの概念的背景を整理し、TypeScriptを用いたMCPサーバーの自作と、Claudeから呼び出すまでの具体的な実装手順を。",
-    "translations": {
-      "ja": {
-        "title": "Model Context Protocol（MCP）入門：ClaudeやAIエージェントと外部ツールを繋ぐ標準規格の仕組みと実装を解説",
-        "summary": "Model Context Protocol（MCP）は、ClaudeなどのAIエージェントと外部データ・ツールを標準化されたプロトコルで接続するための共通規格です。 従来のFunction Callingと比較して、一度の開発で複数のLLM環境にツールを統合できる点が強みとなります。 本記事ではMCPの概念的背景を整理し、TypeScriptを用いたMCPサーバーの自作と、Claudeから呼び出すまでの具体的な実装手順を。"
-      },
-      "en": {
-        "title": "Introduction to Model Context Protocol: How MCP Standardizes AI Agent Connectivity with External Tools and Data Sources",
-        "summary": "Model Context Protocol (MCP) is the emerging standard designed to unify how AI agents like Claude connect with diverse external data sources and tools. Unlike traditional Function Calling, which often requires custom integrations for every platform, MCP enables a universal interface that makes tools compatible across different LLM environments with a single implementation. This guide demystifies the protocol by exploring its core architecture and providing a hands-on tutorial for building a custom MCP server using TypeScript. By walking through the creation and connection process with Claude, the piece demonstrates why builders should adopt this protocol to avoid fragmented, vendor-specific integrations and future-proof their AI-powered backend infrastructure for easier scalability and modularity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-24T20:17:13.360Z"
-  },
-  {
     "id": "art-1795551422528-s5onw",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -16807,32 +16859,6 @@
       "開発"
     ],
     "created_at": "2026-11-24T03:16:43.228Z"
-  },
-  {
-    "id": "art-1795489320101-ok9mq",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/2088yyj/articles/818829c864999d",
-    "published_at": "2026-11-24T00:30:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--y4iFpKHf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:C%252B%252B20%252FRust%25E8%25A3%25BDWindows%25E7%2584%25A1%25E6%2596%2599OSS%25E3%2580%258CTools3000%25E3%2580%258D%25EF%25BC%2588%25E9%25AB%2598%25E9%2580%259F%25E6%25A4%259C%25E7%25B4%25A2%25E3%2583%25BB%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259EOCR%25E7%25BF%25BB%25E8%25A8%25B3%25E3%2583%25BBPicasa%25E9%25A2%25A8%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:2088Yyj%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjB2QlIwd1JLcVRNdndTNjJRTWl2cUV6UTEza3E2QUpaSDJCemdza2FDbmtrTGdPNFU9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "C++20とRustで構築したWindows向け高速統合ツール「Tools3000」公開：検索やOCR、フォトビューア機能を1つのネイティブアプリに集約",
-    "summary_ja": "Windowsの常駐アプリ過多を解消するため、C++20とRustで開発された高速Windowsツール「Tools3000」が公開された。 Electron不使用でDirect2D/D3D11を活用し、高速検索、日本語OCR、クリップボード履歴、Picasaライクなフォトビューア機能を1つのネイティブバイナリに凝縮している。 開発者は4か月かけて実務環境を構築しており、軽量かつ高機能なツールを求める開発者にとって、複数の独自ツールを統合する素晴らしい設計の参考例となる。",
-    "translations": {
-      "ja": {
-        "title": "C++20とRustで構築したWindows向け高速統合ツール「Tools3000」公開：検索やOCR、フォトビューア機能を1つのネイティブアプリに集約",
-        "summary": "Windowsの常駐アプリ過多を解消するため、C++20とRustで開発された高速Windowsツール「Tools3000」が公開された。 Electron不使用でDirect2D/D3D11を活用し、高速検索、日本語OCR、クリップボード履歴、Picasaライクなフォトビューア機能を1つのネイティブバイナリに凝縮している。 開発者は4か月かけて実務環境を構築しており、軽量かつ高機能なツールを求める開発者にとって、複数の独自ツールを統合する素晴らしい設計の参考例となる。"
-      },
-      "en": {
-        "title": "Developer Releases Tools3000, a High-Performance C++20/Rust Windows Utility Suite Replacing Bloated Background Apps with Native Speed",
-        "summary": "Tired of juggling dozens of resource-heavy Windows background utilities, a developer has released \"Tools3000,\" a high-performance open-source suite built using C++20 and Rust. Avoiding Electron, the application leverages Direct2D and D3D11 to deliver blazing-fast search, Japanese OCR, clipboard history, and a Picasa-style photo viewer within a single, streamlined native binary. After four months of rigorous real-world testing, the tool provides a cohesive experience that consolidates 90% of daily Windows power-user tasks. For developers frustrated by background process bloat, Tools3000 serves as a practical, high-performance architecture blueprint for creating modern Windows software that prioritizes resource efficiency and deep system integration over cross-platform convenience. This is an essential reference for building native desktop tools."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-24T03:02:00.101Z"
   },
   {
     "id": "art-1795488407993-40r5p",
@@ -54329,33 +54355,5 @@
       "動画"
     ],
     "created_at": "2026-10-28T12:51:03.868Z"
-  },
-  {
-    "id": "art-1793137621519-f49cy",
-    "source_id": "source-github-copilot",
-    "source_name": "GitHub Copilot Changelog",
-    "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
-    "published_at": "2026-10-27T21:36:55.000Z",
-    "og_image_url": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg",
-    "title_ja": "GitHub Copilotが組織内GitHub Apps向けのサーバー間認証（S2S）に対応、SDK開発の連携とセキュリティ管理が強化",
-    "summary_ja": "GitHub Copilotは、組織にインストールされたGitHub Apps向けのサーバー間認証（S2S）をパブリックプレビューで提供開始した。 GitHub Copilot SDKを使用するサービスやAIエージェントは、個別のユーザー認証を介さず組織のリソースへ直接リクエストが可能になる。 開発者にとっては、複雑な認証フローを省略しつつエンタープライズのセキュリティを維持した状態で、高度な自動化エージェントを安全に実装するための重要な布石となる。",
-    "translations": {
-      "ja": {
-        "title": "GitHub Copilotが組織内GitHub Apps向けのサーバー間認証（S2S）に対応、SDK開発の連携とセキュリティ管理が強化",
-        "summary": "GitHub Copilotは、組織にインストールされたGitHub Apps向けのサーバー間認証（S2S）をパブリックプレビューで提供開始した。 GitHub Copilot SDKを使用するサービスやAIエージェントは、個別のユーザー認証を介さず組織のリソースへ直接リクエストが可能になる。 開発者にとっては、複雑な認証フローを省略しつつエンタープライズのセキュリティを維持した状態で、高度な自動化エージェントを安全に実装するための重要な布石となる。"
-      },
-      "en": {
-        "title": "GitHub Copilot Gains Server-to-Server Authentication Support for Organization-Level GitHub Apps, Streamlining Enterprise Agent Development and Security",
-        "summary": "GitHub Copilot has officially introduced server-to-server (S2S) authentication for GitHub Apps installed within organizations, now available in public preview. This update is a significant shift for builders, as it enables services and autonomous agents constructed with the GitHub Copilot SDK to perform authenticated requests against organizational resources without needing to facilitate per-user authentication flows. By delegating authorization to the app level rather than the individual user level, teams can drastically reduce operational overhead while maintaining stringent enterprise security standards. For developers shipping AI coding agents, this capability simplifies complex credential handling and unlocks more reliable, secure integrations with internal codebases and project workflows, making it easier to deploy production-grade automated tooling across large organizations."
-      }
-    },
-    "tool_tags": [
-      "GitHub Copilot"
-    ],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-27T21:47:01.519Z"
   }
 ]
