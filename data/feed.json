@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1795692751108-h57kg",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/shiba_inu/articles/ff7b0bda3eadc2",
+    "published_at": "2026-11-26T03:05:20.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--PQSdv0Qe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25B1%25BA%25E7%25AE%2597%25E3%2581%25AE%25E6%2595%25B0%25E5%25AD%2597%25E3%2582%259280%25E8%25A9%25A6%25E8%25A1%258C%25E3%2581%25A7%25E6%25A4%259C%25E8%25A8%25BC%25EF%25BC%259A%25E3%2581%2595%25E3%2581%258F%25E3%2582%2589%25E3%2581%25AEAI%2520Engine%25E3%2581%25A7%25E8%25A6%258B%25E3%2581%2588%25E3%2581%259F%25E4%25B8%2580%25E8%2587%25B4%25E3%2581%25A8%25E9%2599%2590%25E7%2595%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2597%25E3%2581%25B0%25E3%2581%25AE%25E3%2581%258A%25E3%2582%2582%25E3%2581%25A1%25E3%2582%2583%25E7%25AE%25B1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzRlNjQzZTUyZGIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIの財務分析におけるハルシネーション：80回の試行で見えた「さくらのAI Engine」の事実抽出能力と推論の限界",
+    "summary_ja": "「さくらのAI Engine」を使い、Appleの決算資料から特定の財務数値（営業キャッシュフロー）を抽出する検証を80回実施した。 提供範囲外の数値は「値なし」と正しく回答する一方で、資料全体から横断的に回答すべき質問にはまだ課題が残る。 LLMを用いたRAG構築において、ソースの限定とクエリの粒度設定がいかに精度を左右するかを示す実証結果となった。",
+    "translations": {
+      "ja": {
+        "title": "AIの財務分析におけるハルシネーション：80回の試行で見えた「さくらのAI Engine」の事実抽出能力と推論の限界",
+        "summary": "「さくらのAI Engine」を使い、Appleの決算資料から特定の財務数値（営業キャッシュフロー）を抽出する検証を80回実施した。 提供範囲外の数値は「値なし」と正しく回答する一方で、資料全体から横断的に回答すべき質問にはまだ課題が残る。 LLMを用いたRAG構築において、ソースの限定とクエリの粒度設定がいかに精度を左右するかを示す実証結果となった。"
+      },
+      "en": {
+        "title": "Benchmarking AI financial analysis: 80 trials reveal hallucination risks and reasoning limits in the Sakura AI Engine",
+        "summary": "To stress-test the Sakura AI Engine's reasoning, the author ran 80 distinct trials querying Apple's financial statements for specific data points like operating cash flow. The model correctly identified missing data when the info was absent from the provided snippet, yet struggled with cross-referencing values embedded deeper in the broader 10-K report. This experiment underscores the persistent challenge of relying on RAG pipelines for high-stakes financial data where precision is non-negotiable. For builders crafting B2B financial analysis tools, the takeaway is clear: success hinges not just on the model, but on meticulous context management, query granularization, and guardrails that prevent the model from assuming knowledge outside the strictly provided document bounds."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-26T11:32:31.108Z"
+  },
+  {
+    "id": "art-1795692744650-hb3wf",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kazutaka_ai_dev/n/neada83b31ec7",
+    "published_at": "2026-11-26T11:29:52.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341023736/rectangle_large_type_2_fe59db2389c2b277b613371647aa06bb.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIエージェントへの指示で失敗しないための「境界条件」設定術—削除機能の実装を例に解説",
+    "summary_ja": "AIエージェントへの指示出しで「正常に動く」ことだけを定義するのは不十分だ。 開発者が直面する実装の詰まりは、多くの場合、権限やデータ整合性といった「境界条件」の欠如に起因する。 本稿では「データの削除機能」を例に、エージェントへ提示すべき3つの制約条件を解説する。 開発効率を上げるには、AIに機能を作るよう頼む際、あらかじめエッジケースや依存関係を明示することが成功の分かれ道となる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントへの指示で失敗しないための「境界条件」設定術—削除機能の実装を例に解説",
+        "summary": "AIエージェントへの指示出しで「正常に動く」ことだけを定義するのは不十分だ。 開発者が直面する実装の詰まりは、多くの場合、権限やデータ整合性といった「境界条件」の欠如に起因する。 本稿では「データの削除機能」を例に、エージェントへ提示すべき3つの制約条件を解説する。 開発効率を上げるには、AIに機能を作るよう頼む際、あらかじめエッジケースや依存関係を明示することが成功の分かれ道となる。"
+      },
+      "en": {
+        "title": "How to set boundary conditions for AI agents to avoid implementation failures: A guide using delete functions",
+        "summary": "Simply prompting an AI agent to build a feature that \"works normally\" is rarely sufficient for production-grade code. Most development bottlenecks stem from failing to define boundary conditions, such as data integrity checks and specific permission constraints. This article illustrates the necessity of three critical constraints using a common \"delete functionality\" example. To improve development efficiency and avoid iterative debugging, builders must explicitly outline edge cases and system dependencies before letting the agent generate code. The key takeaway is that an agent's output is only as robust as the requirements provided; failing to define the boundaries of operations like deletion leads to unhandled errors that break the user experience and create technical debt."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-26T11:32:24.650Z"
+  },
+  {
+    "id": "art-1795692738042-9ik40",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/carolluoyiyi/items/8fc95059554b7de87aa2",
+    "published_at": "2026-11-26T11:29:53.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSmxWYXRnZFpfOHhIZHlUcUZYMXJLUW5jZjNhOFBhNUdLbExsTFJZUFVENDRyMVRRJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTk3NzE4OGJkZDhiNmQ5ZWY1NDA3NjRlZDdiMWNmMzAx%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D5c6315e344d52e33b78a8568f2afd448?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU4JTgzJThDJUU2JTk5JUFGJUU1JTg5JThBJUU5JTk5JUE0JUU1JUJFJThDJUUzJTgxJUFFUE5HJUUzJTgyJTkyJUU2JUE0JTlDJUU4JUE4JUJDJUUzJTgxJTk5JUUzJTgyJThCJUU2JTg5JThCJUU5JUEwJTg2JUVGJUJDJTlBJUU5JTgwJThGJUU5JTgxJThFJUUzJTgzJUJCJUU3JTk5JUJEJUU4JTgzJThDJUU2JTk5JUFGJUUzJTgyJTkyJUU1JThGJTk2JUUzJTgyJThBJUU5JTgxJTk1JUUzJTgxJTg4JUUzJTgxJUFBJUUzJTgxJTg0JUUzJTgxJTlGJUUzJTgyJTgxJUUzJTgxJUFCJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MjNmZjZiZWNlNDVmZDRhN2Y3MzEyYzVkYzk2NWYwNjI&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBjYXJvbGx1b3lpeWkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz04ZTZkMTRhNzNiMjdmNTgzOGM0ZmM4NTI0ZDQ5ZjczMg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=8c978174b4924faa1eec1772861a5a87",
+    "title_ja": "AI背景削除後のPNG検証ワークフロー：透明背景と白塗りを取り違えないための実務的チェック手順と出力仕様の策定方法",
+    "summary_ja": "AIを使った画像処理フローを導入する際、背景削除後のPNGが「透過」か「白背景」かを仕様として固定しないと、後続のレイアウト工程で白い矩形が残る事故が多発する。 開発やデザインのパイプラインでは、処理実行前に出力状態を明確に定義し、自動テストや目視確認でアルファチャンネルを検証することが不可欠だ。 単に「背景を消す」という目的だけでなく、素材を受け取る下流の環境に最適化されたPNGを出力させることが、手戻りを防ぐための鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AI背景削除後のPNG検証ワークフロー：透明背景と白塗りを取り違えないための実務的チェック手順と出力仕様の策定方法",
+        "summary": "AIを使った画像処理フローを導入する際、背景削除後のPNGが「透過」か「白背景」かを仕様として固定しないと、後続のレイアウト工程で白い矩形が残る事故が多発する。 開発やデザインのパイプラインでは、処理実行前に出力状態を明確に定義し、自動テストや目視確認でアルファチャンネルを検証することが不可欠だ。 単に「背景を消す」という目的だけでなく、素材を受け取る下流の環境に最適化されたPNGを出力させることが、手戻りを防ぐための鍵となる。"
+      },
+      "en": {
+        "title": "Best practices for verifying post-AI background removal PNGs: Avoiding the transparency versus white background trap in design workflows",
+        "summary": "When integrating AI-based background removal into design pipelines, failing to define output requirements often results in white-filled squares instead of transparent PNGs, leading to significant layout rework. Builders must explicitly standardize the expected output state—specifically identifying whether an asset requires full transparency or a flat color fill—before automating the process. Integrating validation steps to inspect the alpha channel ensures that assets are actually ready for downstream integration rather than simply having the background \"removed\" in appearance. For developers building image processing workflows, the critical lesson is that the output specification is just as important as the model itself; defining these standards prevents downstream UI artifacts and engineering debt in complex asset pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-26T11:32:18.042Z"
+  },
+  {
+    "id": "art-1795692715654-52lof",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/my-affiliate-marketing-business-earns-500k-year-profit-no-employees",
+    "published_at": "2026-11-25T23:48:31+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/97ouho4kp9ls8o4xtvbnzdad5o9y",
+    "title_ja": "従業員ゼロで年利50万ドルを稼ぎ出すアフィリエイトビジネスの全貌：検索エンジン集客とコンバージョン最大化の運用戦略を公開",
+    "summary_ja": "従業員を雇用せず一人で運営するアフィリエイト事業が、年間50万ドルの利益を達成するまでの道のりと戦略が公開された。 SEOや検索エンジンのアルゴリズム変更に適応しながら、高単価な案件選びと読者の購買意欲を捉えるコンテンツ作成に注力することで、安定的な収益基盤を構築している。 自動化と外注の賢い組み合わせにより、個人のリソースを最大化しつつ売上を拡大する手法は、小規模な個人開発者にとって現実的かつ強力なスケーリングの指針となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "従業員ゼロで年利50万ドルを稼ぎ出すアフィリエイトビジネスの全貌：検索エンジン集客とコンバージョン最大化の運用戦略を公開",
+        "summary": "従業員を雇用せず一人で運営するアフィリエイト事業が、年間50万ドルの利益を達成するまでの道のりと戦略が公開された。 SEOや検索エンジンのアルゴリズム変更に適応しながら、高単価な案件選びと読者の購買意欲を捉えるコンテンツ作成に注力することで、安定的な収益基盤を構築している。 自動化と外注の賢い組み合わせにより、個人のリソースを最大化しつつ売上を拡大する手法は、小規模な個人開発者にとって現実的かつ強力なスケーリングの指針となるだろう。"
+      },
+      "en": {
+        "title": "Solo affiliate marketer reveals how to generate $500,000 in annual profit without hiring a single employee",
+        "summary": "A solo founder has successfully scaled an affiliate marketing business to generate $500,000 in annual profit while maintaining a lean, zero-employee operation. The strategy centers on navigating volatile search engine algorithms, strictly curating high-value affiliate programs, and producing conversion-focused content that aligns perfectly with reader intent. By skillfully blending automation with strategic outsourcing for repetitive tasks, the founder demonstrates how to maximize personal bandwidth and maintain profitability without the overhead of a large team. For individual builders, the key takeaway is that sustainable scale relies less on headcount and more on optimizing the content-to-conversion funnel while building resilience against the inevitable shifts in organic search traffic performance over time."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-26T11:31:55.654Z"
+  },
+  {
     "id": "art-1795691900167-14jr9",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -8656,32 +8759,6 @@
     "created_at": "2026-11-25T07:49:01.233Z"
   },
   {
-    "id": "art-1795592867293-4q74z",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ryuto_hikigatari/n/n555b143d0a94",
-    "published_at": "2026-11-25T07:43:34.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340556240/rectangle_large_type_2_04f7e80d48fc1d975e2b7cfd37705f36.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "読書メモの入力を「なぞるだけ」に簡略化、挫折を防ぐUI設計で継続率を高めた個人開発アプリの舞台裏",
-    "summary_ja": "「読書メモが面倒で続かない」という自身の課題を解決するため、本の文章をなぞるだけでメモ化できるiOSアプリを個人開発した。 入力の手間を極限まで省くために、OCR機能を活用した「なぞって保存」というUXを主軸に設計。 多くのユーザーが抱える「後でまとめて書こう」という先延ばしの心理的ハードルを取り除くことが、個人のプロダクトが習慣化アプリとして生き残るための有効な戦略である。",
-    "translations": {
-      "ja": {
-        "title": "読書メモの入力を「なぞるだけ」に簡略化、挫折を防ぐUI設計で継続率を高めた個人開発アプリの舞台裏",
-        "summary": "「読書メモが面倒で続かない」という自身の課題を解決するため、本の文章をなぞるだけでメモ化できるiOSアプリを個人開発した。 入力の手間を極限まで省くために、OCR機能を活用した「なぞって保存」というUXを主軸に設計。 多くのユーザーが抱える「後でまとめて書こう」という先延ばしの心理的ハードルを取り除くことが、個人のプロダクトが習慣化アプリとして生き残るための有効な戦略である。"
-      },
-      "en": {
-        "title": "Building a friction-free reading notes app: How 'tracing to capture' text boosts retention for casual readers",
-        "summary": "To solve the universal frustration of manual reading logs, this developer built an iOS app that converts physical book text into digital notes simply by tracing lines. By focusing on an OCR-driven 'trace-to-save' interaction, the app eliminates the tedious friction that causes most users to procrastinate until they eventually abandon their notes entirely. This case study demonstrates that for habit-forming consumer tools, user retention often hinges on removing the smallest barriers to entry rather than adding complex feature sets. For independent builders, the key lesson is identifying the specific point where motivation drops off—in this case, the typing process—and engineering a workflow that makes the desired behavior almost effortless to perform."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-25T07:47:47.293Z"
-  },
-  {
     "id": "art-1795592823824-z6wuz",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9416,33 +9493,6 @@
       "コスト・API料金"
     ],
     "created_at": "2026-11-25T05:02:22.978Z"
-  },
-  {
-    "id": "art-1795582913775-7qsuk",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/tanakanekosuke/items/8dd209a8794839a78c71",
-    "published_at": "2026-11-25T04:59:45.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS2ZJTlVWMXNGNFFjSFpoSkNrbTBOMGJENEo3Y2dMNHZMMjRvdjJIam01akRnNXlLeHUlM0RzOTYtYz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MzgxNWRhNGYxOWFjOWI2MWJhZDdmNTg3Yzg0YWYyMTE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Defe52ae56fd16a29a9c17ee5c8c8c9f3?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU2JUI1JUI3JUU1JUE0JTk2JUUzJTgzJTg2JUUzJTgzJTgzJUUzJTgyJUFGJUU1JThCJTk1JUU1JTkwJTkxJUUzJTgwJTkxTExNJUU4JTg0JTg2JUU1JUJDJUIxJUU2JTgwJUE3JUUzJTgwJTgxUnVzdCVFNSU4NiU4RCVFOCVBOCVBRCVFOCVBOCU4OCVFMyU4MCU4MTEuNThiaXQlRTMlODMlQTIlRTMlODMlODclRTMlODMlQUIlRUYlQkMlODElRTQlQkIlOEElRTclOUYlQTUlRTMlODIlOEIlRTMlODElQjklRTMlODElOEQzJUU5JTgxJUI4JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9N2NkYzYyOGQzOGE1ZTczZmE5ODA5NmJiNDk4NmI3ZTY&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB0YW5ha2FuZWtvc3VrZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWI5OWU2Y2JlOTQxN2RkMWZiNDk1MTIzM2MxOTljN2Uz&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4808132295510b237c850a7a16f1a0f1",
-    "title_ja": "海外テック動向：LLMの脆弱性対策、Rustによるシステム再設計、そして推論効率を極限まで高める1.58bitモデルの衝撃",
-    "summary_ja": "海外のテックコミュニティでは、LLMのインフラ層における深刻な脆弱性、Rustを用いた堅牢なシステム再設計、そして推論効率を劇的に改善する1.58bit量子化モデルが大きな注目を集めている。 特に1.58bitモデルはメモリ消費と演算負荷を大幅に削減し、従来モデルの限界を打破する可能性を示唆する。 エンジニアは、モデルの軽量化とメモリ安全性を両立するアーキテクチャの選定が、今後のAI開発競争における勝敗を分けることを認識すべきである。",
-    "translations": {
-      "ja": {
-        "title": "海外テック動向：LLMの脆弱性対策、Rustによるシステム再設計、そして推論効率を極限まで高める1.58bitモデルの衝撃",
-        "summary": "海外のテックコミュニティでは、LLMのインフラ層における深刻な脆弱性、Rustを用いた堅牢なシステム再設計、そして推論効率を劇的に改善する1.58bit量子化モデルが大きな注目を集めている。 特に1.58bitモデルはメモリ消費と演算負荷を大幅に削減し、従来モデルの限界を打破する可能性を示唆する。 エンジニアは、モデルの軽量化とメモリ安全性を両立するアーキテクチャの選定が、今後のAI開発競争における勝敗を分けることを認識すべきである。"
-      },
-      "en": {
-        "title": "Global Tech Trends: Addressing LLM Vulnerabilities, Rust System Redesigns, and the Impact of 1.58-bit Quantization Models on Inference Efficiency",
-        "summary": "Global engineering communities are prioritizing critical discussions around LLM infrastructure security, the shift toward Rust for robust system redesigns, and the emergence of 1.58-bit quantization models. These 1.58-bit models drastically lower memory consumption and computational overhead, effectively pushing past the performance bottlenecks of traditional dense models. For developers, these trends underscore a pivotal shift where combining lightweight model architectures with memory-safe languages like Rust has become the standard for high-performance AI systems. Builders must recognize that optimizing for hardware efficiency and security is no longer an optional optimization but a core requirement for scaling modern AI applications effectively in the current production environment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-25T05:01:53.775Z"
   },
   {
     "id": "art-1795582037493-wgaza",
@@ -14468,32 +14518,6 @@
       "開発"
     ],
     "created_at": "2026-11-24T02:31:51.803Z"
-  },
-  {
-    "id": "art-1795487502535-ytejw",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/hidaka_sj/articles/fb56d548f3a53a",
-    "published_at": "2026-11-23T16:12:46.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--UyAPd3Nn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A8%25E5%258D%2594%25E5%2583%258D%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581%25E8%25AA%25BF%25E5%2591%25B3%25E6%2596%2599%25E3%2581%25AE%25E9%2596%258B%25E5%25B0%2581%25E6%2597%25A5%25E7%25AE%25A1%25E7%2590%2586%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2583%25BB%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2597%25E3%2581%259F%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25B2%25E3%2581%25AA%25E3%2582%2584%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXZYSEpnUTdSVDE3YkZtZzV1bnRZblBLYzM2STBDUTNYanpVdVBYZ2JaaEVnZ1JRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "調味料の開封日管理ツール「choimy」をAIと共同開発した記録――「AIへの指示」と「自身の判断」の境界線を探る",
-    "summary_ja": "調味料の使い切り目安を管理するブラウザツール「choimy」を、AIアシスタントを活用して個人開発し公開した。 サーバーレスかつlocalStorage完結型で実装された本作を通じ、AIを単なるコード生成機としてではなく、設計方針の壁打ち相手として活用する際の「AIに任せる領域」と「開発者が主導すべき領域」の使い分けを具体的に記録している。 個人開発においてAIと協働する際のプロジェクト進行の現実的な指針となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "調味料の開封日管理ツール「choimy」をAIと共同開発した記録――「AIへの指示」と「自身の判断」の境界線を探る",
-        "summary": "調味料の使い切り目安を管理するブラウザツール「choimy」を、AIアシスタントを活用して個人開発し公開した。 サーバーレスかつlocalStorage完結型で実装された本作を通じ、AIを単なるコード生成機としてではなく、設計方針の壁打ち相手として活用する際の「AIに任せる領域」と「開発者が主導すべき領域」の使い分けを具体的に記録している。 個人開発においてAIと協働する際のプロジェクト進行の現実的な指針となるだろう。"
-      },
-      "en": {
-        "title": "Building 'choimy': A developer’s journey in using AI assistance to ship a localized condiment-tracking web tool",
-        "summary": "A developer recounts the process of building and launching 'choimy,' a simple browser-based tool that helps users manage condiment expiration dates entirely via localStorage without server-side data processing. The article provides a nuanced look at the collaborative dynamic between the builder and their AI assistant, highlighting the critical division between delegating boilerplate implementation to AI versus retaining human oversight for architectural decisions. By documenting where they relied on the AI versus where they had to intervene, the author offers a pragmatic roadmap for solo developers. This is a transparent look at managing the boundary between AI-generated drafts and intentional product design, proving that effective AI collaboration is as much about strategic judgment as it is about technical execution."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-24T02:31:42.535Z"
   },
   {
     "id": "art-1795486643428-xb5z7",
@@ -28627,33 +28651,6 @@
       "開発"
     ],
     "created_at": "2026-11-17T05:46:45.950Z"
-  },
-  {
-    "id": "art-1794891737837-1462x",
-    "source_id": "source-starterstory",
-    "source_name": "Starter Story (Solo Developer)",
-    "url": "https://www.starterstory.com/stories/distro",
-    "published_at": "2026-11-16T21:29:15+00:00",
-    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/srik3uazr0m86x7zcm9efn326hpb",
-    "title_ja": "コンテンツ配信自動化SaaS「Distro」の独り勝ち戦略：単独開発で月間経常収益（MRR）5,000ドルを達成したニッチ市場攻略術",
-    "summary_ja": "個人開発者が立ち上げたコンテンツ配信プラットフォーム「Distro」が、特定のインフルエンサー層にフォーカスした自動化機能でMRR5,000ドルを突破した。 競合が多い汎用ツールを避け、配信先特化型のワークフローを実装することで解約率を低く抑えることに成功している。 エンジニアが収益を上げるには、多機能な巨大サービスを構築するのではなく、特定のペルソナが抱える不便をピンポイントで解消する小さな自動化ツールを積み上げることが重要である。",
-    "translations": {
-      "ja": {
-        "title": "コンテンツ配信自動化SaaS「Distro」の独り勝ち戦略：単独開発で月間経常収益（MRR）5,000ドルを達成したニッチ市場攻略術",
-        "summary": "個人開発者が立ち上げたコンテンツ配信プラットフォーム「Distro」が、特定のインフルエンサー層にフォーカスした自動化機能でMRR5,000ドルを突破した。 競合が多い汎用ツールを避け、配信先特化型のワークフローを実装することで解約率を低く抑えることに成功している。 エンジニアが収益を上げるには、多機能な巨大サービスを構築するのではなく、特定のペルソナが抱える不便をピンポイントで解消する小さな自動化ツールを積み上げることが重要である。"
-      },
-      "en": {
-        "title": "How Distro scaled to $5,000 MRR as a solo-built platform by solving niche content distribution bottlenecks",
-        "summary": "The solo-developed platform Distro has hit $5,000 in monthly recurring revenue by focusing exclusively on automating content workflows for a specific tier of niche influencers. By resisting the temptation to build a broad, all-in-one distribution tool, the founder created a specialized integration layer that incumbents ignored, effectively keeping churn rates low and customer acquisition costs manageable. This case study demonstrates that for independent builders, the most effective path to revenue is not competing with enterprise giants on feature parity, but rather engineering a pinpoint solution for a specific user persona's pain point. The key takeaway for developers is to validate small, high-leverage automations before expanding scope, rather than prematurely optimizing for a massive, general-purpose audience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-17T05:02:17.837Z"
   },
   {
     "id": "art-1794888104448-xxdr3",
