@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1795731446152-4k5xe",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/laiken/articles/20261127-tech-watch",
+    "published_at": "2026-11-26T21:09:29.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--0vx8B17G--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Tech%2520Watch%25202026-11-27%253A%2520%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2582%2592%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%2599%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2589%25E3%2581%2584%25E3%2581%2591%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzI3YmM4M2VhNTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AnthropicがMessages APIをRustへ移行、AIエージェントを活用した旧環境との並行検証と自動差分修正の全技術仕様",
+    "summary_ja": "AnthropicはMessages APIのインフラをPythonからRustへ刷新し、移行に伴う挙動の不整合を排除するためにAIエージェントを用いた検証基盤を構築した。 旧環境と新環境の実装を本番トラフィックで照合し、生じた差異をエージェントに自動通知して修正させることで、人手を介さないシームレスな移行を実現している。 開発範囲が広がるエージェント時代において、生成だけでなく検証の設計を自動化することが、大規模システム刷新の成否を分ける重要指標となる。",
+    "translations": {
+      "ja": {
+        "title": "AnthropicがMessages APIをRustへ移行、AIエージェントを活用した旧環境との並行検証と自動差分修正の全技術仕様",
+        "summary": "AnthropicはMessages APIのインフラをPythonからRustへ刷新し、移行に伴う挙動の不整合を排除するためにAIエージェントを用いた検証基盤を構築した。 旧環境と新環境の実装を本番トラフィックで照合し、生じた差異をエージェントに自動通知して修正させることで、人手を介さないシームレスな移行を実現している。 開発範囲が広がるエージェント時代において、生成だけでなく検証の設計を自動化することが、大規模システム刷新の成否を分ける重要指標となる。"
+      },
+      "en": {
+        "title": "Anthropic migrates Messages API from Python to Rust using AI agents for automated regression testing and parity verification",
+        "summary": "Anthropic has overhauled the infrastructure of its Messages API by migrating from Python to Rust, employing a sophisticated agentic system to ensure behavioral parity between the old and new implementations. By mirroring production traffic across both environments, the team captures output discrepancies and automatically feeds the delta to an AI agent for real-time remediation. This strategy removes the need for manual inspection during critical infrastructure shifts. As builders expand the scope of autonomous agents, the challenge is shifting from mere content generation to robust, automated validation logic. The practical takeaway for engineering teams is that verifying state parity at scale requires building closed-loop feedback systems where agents don't just write code, but also rigorously test the migration gaps."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-26T22:17:26.152Z"
+  },
+  {
+    "id": "art-1795731439947-pup6u",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://benedictide.com/posts/ai/",
+    "published_at": "2026-11-26T22:02:28.000Z",
+    "og_image_url": "https://benedictide.com/assets/img/protest1.png",
+    "title_ja": "AIに対する怒りの矛先を誤るな—開発者が直面する技術的ボトルネックと「AIの責任」を切り分けるべき理由",
+    "summary_ja": "AIに対して過剰な期待や誤った批判を向けるのではなく、根本的な技術的負債やエンジニアリングの課題を直視すべきだと論じる。 多くの場合、AIの性能限界ではなく、開発プロセスやアーキテクチャの未熟さが問題の所在である。 エンジニアはAIを魔法の杖ではなく、既存のワークフローを補強するツールと見なし、システム設計の不備を自ら解決する責任がある。 技術の成熟度を正しく理解し、批判ではなく構築に注力することが、現状のAI開発における唯一の正解である。",
+    "translations": {
+      "ja": {
+        "title": "AIに対する怒りの矛先を誤るな—開発者が直面する技術的ボトルネックと「AIの責任」を切り分けるべき理由",
+        "summary": "AIに対して過剰な期待や誤った批判を向けるのではなく、根本的な技術的負債やエンジニアリングの課題を直視すべきだと論じる。 多くの場合、AIの性能限界ではなく、開発プロセスやアーキテクチャの未熟さが問題の所在である。 エンジニアはAIを魔法の杖ではなく、既存のワークフローを補強するツールと見なし、システム設計の不備を自ら解決する責任がある。 技術の成熟度を正しく理解し、批判ではなく構築に注力することが、現状のAI開発における唯一の正解である。"
+      },
+      "en": {
+        "title": "Why developers are angry at AI for the wrong reasons: addressing the misdiagnosis of systemic engineering bottlenecks",
+        "summary": "This critique argues that developer frustration with artificial intelligence is frequently misdirected, often conflating systemic organizational debt or poor engineering practices with actual AI limitations. Instead of blaming AI for hallucinated outputs or integration difficulties, builders should recognize that these bottlenecks are typically symptoms of poorly defined requirements or fragile legacy architectures. The article contends that treating AI as a \"magic fix\" for structural flaws is a fundamental error. For builders, the path forward requires acknowledging AI’s role as an enhancement tool rather than an autonomous substitute for rigorous software engineering. By shifting focus from criticizing model capabilities to tightening system architecture and human-in-the-loop workflows, developers can actually leverage current models effectively rather than merely complaining about their inherent, well-known boundaries."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-26T22:17:19.947Z"
+  },
+  {
+    "id": "art-1795731431981-px439",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/lhjjjk4/items/217445abc2df9571b434",
+    "published_at": "2026-11-26T22:14:38.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUFUWEFKejRJUk9sRzB3UnBpYlA1b0YzWHo2Y291MTdHYXVwYkw1X3dTUUIlM0RzNTAtbW8_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWIyZjY1NmMxN2E4ZTk4ZGYyY2VkYmU5MmUzM2MwOTQ3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd01cdc4a99f3e3f94b607574520e6034?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklMjBEYWlseSUyMERpZ2VzdCUyMDIwMjYlRTUlQjklQjQxMSVFNiU5QyU4ODI3JUU2JTk3JUE1JUVGJUJDJTlBR1BULTUuNiVFMyU4MSVBQiVFNSVCQyU5NSVFOSU4MCU4MCVFNiU5NyVBNSVFMyU4MSU4QyVFNiVCMSVCQSVFNSVBRSU5QSVFMyU4MCU4MUFudGhyb3BpYyVFMyU4MSU4Q01lc3NhZ2VzJTIwQVBJJUUzJTgyJTkyUnVzdCVFMyU4MSVBNyVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTRlMzJjYzMxOTMyMDBkNDYzZGE4NTVhMGMwZmYxNWZi&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsaGpqams0JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTUwY2Y1ZTE4YzU4OWQ1NDhlYzgyYTBkYjQ4NzI2MTQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=1d4389dc0ad40c1b82157483d57ab348",
+    "title_ja": "AI日報：GPT-5.6の引退日確定とAnthropicによるMessages APIのRust移行—Rust採用でレイテンシ改善と並列処理の最適化を狙う",
+    "summary_ja": "GPT-5.6の引退日が決定し、旧モデルの撤退が加速する一方、AnthropicはMessages APIをRustで再構築する大胆な基盤刷新を敢行した。 これは、チーム内にRust経験者が皆無の状況から、パフォーマンス向上と安全性を求めて実行された技術的負債解消の試みである。 技術スタックの刷新は短期的な開発コストを増大させるが、AIサービスの並列処理やメモリ効率を極限まで高めるためには不可避な判断といえる。",
+    "translations": {
+      "ja": {
+        "title": "AI日報：GPT-5.6の引退日確定とAnthropicによるMessages APIのRust移行—Rust採用でレイテンシ改善と並列処理の最適化を狙う",
+        "summary": "GPT-5.6の引退日が決定し、旧モデルの撤退が加速する一方、AnthropicはMessages APIをRustで再構築する大胆な基盤刷新を敢行した。 これは、チーム内にRust経験者が皆無の状況から、パフォーマンス向上と安全性を求めて実行された技術的負債解消の試みである。 技術スタックの刷新は短期的な開発コストを増大させるが、AIサービスの並列処理やメモリ効率を極限まで高めるためには不可避な判断といえる。"
+      },
+      "en": {
+        "title": "AI Daily Digest: GPT-5.6 retirement scheduled and Anthropic migrates Messages API to Rust for performance",
+        "summary": "With the retirement date for GPT-5.6 now firmly set, the AI industry is accelerating its transition away from legacy models. Simultaneously, Anthropic has undertaken a major architectural shift by rewriting its core Messages API in Rust—a bold move considering the team lacked prior Rust expertise. This engineering overhaul prioritizes raw performance, memory safety, and concurrent processing over the comfort of existing stacks. While switching languages demands heavy upfront investment, it is proving essential for handling the extreme throughput requirements of modern agentic workflows. For AI builders, this signals that prioritizing execution speed and resource efficiency at the infrastructure level is becoming just as critical as model intelligence when scaling robust AI services for mass adoption."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-26T22:17:11.981Z"
+  },
+  {
+    "id": "art-1795731425412-1ht94",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/nota12345/n/n84e209f88c76",
+    "published_at": "2026-11-26T22:15:04.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341215996/rectangle_large_type_2_6c5cc3d64d8206ebb1c4691b00e6965c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「数字は合っているのに違和感が消えない」―UI/UX開発で陥る数値評価の罠と、制作者が守るべき『目視確認』の原則",
+    "summary_ja": "ゲーム開発の現場で直面する「修正した数値は仕様通りなのに、なぜか見た目が直っていない」という現象について。 修正報告のデータが完璧でも、実際の画面上では光の強さや挙動に違和感が残ることは珍しくありません。 数値確認はあくまで条件の担保であり、視覚的な体験は別物です。 実装完了のサインはデータの合格ではなく、作り手が直接画面を見て「心地よい」と感じた瞬間にあるべきです。",
+    "translations": {
+      "ja": {
+        "title": "「数字は合っているのに違和感が消えない」―UI/UX開発で陥る数値評価の罠と、制作者が守るべき『目視確認』の原則",
+        "summary": "ゲーム開発の現場で直面する「修正した数値は仕様通りなのに、なぜか見た目が直っていない」という現象について。 修正報告のデータが完璧でも、実際の画面上では光の強さや挙動に違和感が残ることは珍しくありません。 数値確認はあくまで条件の担保であり、視覚的な体験は別物です。 実装完了のサインはデータの合格ではなく、作り手が直接画面を見て「心地よい」と感じた瞬間にあるべきです。"
+      },
+      "en": {
+        "title": "Why perfectly tuned numbers often fail to deliver a good UX: Bridging the gap between data validation and visual perception",
+        "summary": "We often encounter a frustrating disconnect in game and UI development: a feature is technically 'fixed' because the metrics match the spec sheet, yet the actual user experience feels completely off. Relying solely on frame-by-frame data validation confirms that your code executes as requested, but it fails to account for the nuance of human perception. An object might technically have the correct luminosity, shake duration, or easing curve, but still look jarring or nauseating on screen. Developers need to recognize that quantitative checks are merely a prerequisite, not the final word. The true measure of a successful implementation isn't a clean report card of numbers, but the visceral reaction of seeing the final result with your own eyes."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-26T22:17:05.412Z"
+  },
+  {
     "id": "art-1795730581049-ic6ve",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -10541,33 +10644,6 @@
     "created_at": "2026-11-25T13:32:41.097Z"
   },
   {
-    "id": "art-1795613547319-t9o6u",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dawncode/n/ne1f0a6e12950",
-    "published_at": "2026-11-25T13:30:53.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340681423/rectangle_large_type_2_dfd5acd2240af1b1ecf3548fb1e63cf8.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発アプリ名「ガマンバンク」が先行者ありで商標リスクに直面、ネーミング選定時に行うべき「最低限の事前調査」とは",
-    "summary_ja": "個人開発でリリース予定のアプリ名を「ガマンバンク」と決定した矢先、先行する同名アプリの存在が判明し、商標権や重複のリスクに直面した。 SNSでの共感や響きだけで安易に名前を決めると、ストア検索での埋没だけでなく、将来的な法的なトラブルやブランド毀損を招く恐れがある。 リリース前にアプリストアや商標データベースを網羅的に検索し、ドメインの空き状況と合わせて確認するプロセスは、個人開発者が手戻りを防ぐために欠かせない防衛策だ。",
-    "translations": {
-      "ja": {
-        "title": "個人開発アプリ名「ガマンバンク」が先行者ありで商標リスクに直面、ネーミング選定時に行うべき「最低限の事前調査」とは",
-        "summary": "個人開発でリリース予定のアプリ名を「ガマンバンク」と決定した矢先、先行する同名アプリの存在が判明し、商標権や重複のリスクに直面した。 SNSでの共感や響きだけで安易に名前を決めると、ストア検索での埋没だけでなく、将来的な法的なトラブルやブランド毀損を招く恐れがある。 リリース前にアプリストアや商標データベースを網羅的に検索し、ドメインの空き状況と合わせて確認するプロセスは、個人開発者が手戻りを防ぐために欠かせない防衛策だ。"
-      },
-      "en": {
-        "title": "Choosing a Pre-Taken App Name Like \"Gaman Bank\" Risks Brand Conflict: Essential Due Diligence for Indie Developers",
-        "summary": "Naming an indie app based on a catchy concept like \"Gaman Bank\" can quickly turn into a liability if you discover the name is already claimed by an existing product. Failing to verify availability early leads to significant back-tracking, potential trademark disputes, and the risk of being buried in store search results. Before finalizing any branding, developers must treat due diligence as a mandatory development step: perform exhaustive searches across major app stores and trademark databases, and check domain availability immediately. Skipping these basic checks is a costly oversight that creates unnecessary friction. For indie builders, validating a name isn't just about creativity—it is a critical defensive measure to secure your product's long-term identity and avoid legal headaches."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-25T13:32:27.319Z"
-  },
-  {
     "id": "art-1795612795673-idoc0",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -10966,31 +11042,6 @@
       "課金・ペイウォール"
     ],
     "created_at": "2026-11-25T12:16:47.466Z"
-  },
-  {
-    "id": "art-1795608248324-vyz7i",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/locallab/items/01bb1fc04abb3cde5a1e",
-    "published_at": "2026-11-25T12:00:45.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS2ZuWlN6eUZwRTRLWEppdXNpakx5dm5aczlKMVgxdXlJX0ZCZGFxaXdDbC1yMXVjUSUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0wNmU4ZDAzNjI5N2Q0NTRmOGMzMDk1MTQ3ZDQ4OTg1OQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6b9dd9d4b2cb70a5b4abb956c8bd7df5?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UnVzdCUyMCUyQiUyMGF4dW0lMjAlRTMlODElQTclMjAzMDglMjBQZXJtYW5lbnQlMjBSZWRpcmVjdCUyMCVFMyU4MiU5MiVFNiU5QyU4MCVFNyU5RiVBRCVFNSVBRSU5RiVFOCVBMyU4NSVFMyU4MSU5OSVFMyU4MiU4QiUyMDUlMjAlRTMlODElQTQlRTMlODElQUUlRTMlODMlOUQlRTMlODIlQTQlRTMlODMlQjMlRTMlODMlODgmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0wZTU3YjZkZmM1MmM3ZTdlNTcyNDMwYWMyY2MxMTllYQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsb2NhbGxhYiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM1NGIxN2U0ZjAxZTM1M2Q5ZDAwZDk5OWQ3NTZmMzQ1&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=cebbc89f968597f78318b5ecd18bf4a6",
-    "title_ja": "Rust・axum開発で308 Permanent Redirectを最短実装する5つの勘所：301との違いとクエリ保持の最適解",
-    "summary_ja": "RustのWebフレームワーク「axum」で恒久移転を実装する際、Redirect::permanentを使うと308レスポンスが返り、元のHTTPメソッドとボディが維持される。 301と異なり、クライアントはメソッドを変更せずにリクエストを再送できるため、パスやクエリパラメータの移行において安全性が高い。 実装時に見落としがちなパスパラメータの引き継ぎや、クエリ文字列の適切なマッピングなど、運用トラブルを防ぐための5つの重要ポイントを詳説する。",
-    "translations": {
-      "ja": {
-        "title": "Rust・axum開発で308 Permanent Redirectを最短実装する5つの勘所：301との違いとクエリ保持の最適解",
-        "summary": "RustのWebフレームワーク「axum」で恒久移転を実装する際、Redirect::permanentを使うと308レスポンスが返り、元のHTTPメソッドとボディが維持される。 301と異なり、クライアントはメソッドを変更せずにリクエストを再送できるため、パスやクエリパラメータの移行において安全性が高い。 実装時に見落としがちなパスパラメータの引き継ぎや、クエリ文字列の適切なマッピングなど、運用トラブルを防ぐための5つの重要ポイントを詳説する。"
-      },
-      "en": {
-        "title": "5 key strategies for implementing 308 Permanent Redirects in Rust with axum and avoiding 301 pitfalls",
-        "summary": "When handling permanent migrations in Rust applications using the axum framework, choosing Redirect::permanent correctly yields a 308 status rather than a 301. Unlike the 301 redirect—which often forces clients to change their HTTP method or drop the request body—the 308 standard preserves the original request method and payload intact. This distinction is critical for developers migrating API endpoints while maintaining compatibility for existing clients. The article details five essential implementation strategies, focusing on properly carrying over path parameters and query strings during redirects. For builders working on robust web backends, understanding these specific nuances in axum ensures that routing changes are invisible to the end client, effectively preventing broken requests and ensuring seamless service continuity during infrastructure refactors."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-25T12:04:08.324Z"
   },
   {
     "id": "art-1795608202283-0knd2",
@@ -12793,32 +12844,6 @@
     "created_at": "2026-11-25T04:31:47.626Z"
   },
   {
-    "id": "art-1795580253126-mank3",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
-    "published_at": "2026-11-25T03:47:42.000Z",
-    "og_image_url": null,
-    "title_ja": "独立系検索エンジン「Marginalia Search」の技術的挑戦と収益化、Rust移行によるシステム効率化の全容を解説",
-    "summary_ja": "独立系検索エンジンMarginalia Searchが、個人プロジェクトから持続可能なエコシステムへ進化する過程で直面した課題を公開した。 AIによる検索体験の変容に対し、小規模チームがいかにC++からRustへの移行やインフラ最適化を通じて検索コストを削減しつつ、経済的な自立を目指しているかを詳述。 特に検索の質を維持しながら収益を確保するための実験的アプローチは、AI時代に独自の価値を構築する個人開発者にとって重要な示唆を与える。",
-    "translations": {
-      "ja": {
-        "title": "独立系検索エンジン「Marginalia Search」の技術的挑戦と収益化、Rust移行によるシステム効率化の全容を解説",
-        "summary": "独立系検索エンジンMarginalia Searchが、個人プロジェクトから持続可能なエコシステムへ進化する過程で直面した課題を公開した。 AIによる検索体験の変容に対し、小規模チームがいかにC++からRustへの移行やインフラ最適化を通じて検索コストを削減しつつ、経済的な自立を目指しているかを詳述。 特に検索の質を維持しながら収益を確保するための実験的アプローチは、AI時代に独自の価値を構築する個人開発者にとって重要な示唆を与える。"
-      },
-      "en": {
-        "title": "Independent search engine Marginalia Search updates on technical architecture, Rust migration, and the path to long-term sustainability",
-        "summary": "The independent search engine Marginalia Search has shared an in-depth retrospective on evolving from a hobby project into a sustainable entity amidst an AI-dominated landscape. The update outlines the shift from C++ to Rust as a core strategy for infrastructure optimization, aimed at drastically lowering operating costs while maintaining high-quality search results. Beyond technical migrations, the piece explores the difficult economics of remaining independent in an era dominated by large language models. For independent developers, the takeaway is clear: success requires balancing aggressive low-level performance tuning with novel approaches to value creation, as relying on standard traffic models is no longer sufficient to compete against major search incumbents."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-25T04:17:33.126Z"
-  },
-  {
     "id": "art-1795580228501-uh9j3",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -13949,32 +13974,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-24T23:01:52.866Z"
-  },
-  {
-    "id": "art-1795560437877-pcnrj",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tosh1000950/articles/7f81cb4380529c",
-    "published_at": "2026-11-24T16:52:46.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--7jnkKX4u--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2589%25E3%2583%2583%25E3%2583%2588%25E7%25B5%25B5%25E3%2581%25AE%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25A9%25E3%2582%2592%25E5%259B%259E%25E3%2581%2597%25E3%2581%259F%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E2%2591%25A0%2520%25E3%2583%259C%25E3%2582%25AF%25E3%2582%25BB%25E3%2583%25AB%25E3%2581%25AF%25E3%2580%258C%25E4%25BA%25BA%25E3%2581%25A8%25E3%2581%25AF%25E8%25A8%2580%25E3%2581%2588%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D%25E2%2580%2594%25E2%2580%2594%25E5%25A4%25B1%25E6%2595%25973%25E9%2580%25A3%25E7%2599%25BA%25E3%2581%25A8%25E3%2580%2581%25E5%2590%2588%25E6%25A0%25BC%25E3%2581%2597%25E3%2581%259F%25E7%2589%25A9%25E5%25B7%25AE%25E3%2581%2597%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Tosh1000950%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUhOSnkwcjAxaWdic0JKVGtkcTN1VktHek04Z3N2UGFZMk9LZHN2S2lGcGFOSXFBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ドット絵キャラを疑似3Dで回転させる「スプライトスタッキング」への挑戦：ボクセル手法の限界とAIを活用した試行錯誤の全記録",
-    "summary_ja": "自作ドット絵キャラ「Kisaragi」をスプライトスタッキング技術で立体回転させるべく、筆者がAI（Gemini・Muse）と連携して挑んだ技術開発の全記録。 第一回となる本作では、ボクセルベースの手法を採用した際の「人らしさ」の欠如という失敗を分析し、最終的に画質と表現の合格ラインを定めるまでの試行錯誤を詳述する。 単なる実装にとどまらず、AIを企画・判定・実装の役割に分担させたマルチエージェント的開発フローが参考になる。",
-    "translations": {
-      "ja": {
-        "title": "ドット絵キャラを疑似3Dで回転させる「スプライトスタッキング」への挑戦：ボクセル手法の限界とAIを活用した試行錯誤の全記録",
-        "summary": "自作ドット絵キャラ「Kisaragi」をスプライトスタッキング技術で立体回転させるべく、筆者がAI（Gemini・Muse）と連携して挑んだ技術開発の全記録。 第一回となる本作では、ボクセルベースの手法を採用した際の「人らしさ」の欠如という失敗を分析し、最終的に画質と表現の合格ラインを定めるまでの試行錯誤を詳述する。 単なる実装にとどまらず、AIを企画・判定・実装の役割に分担させたマルチエージェント的開発フローが参考になる。"
-      },
-      "en": {
-        "title": "Turning 2D pixel art into 3D: Lessons from the sprite-stacking challenge and why voxels failed the realism test",
-        "summary": "To make a custom pixel art character, \"Kisaragi,\" rotate like a true 3D model, the author utilized a \"sprite-stacking\" technique in a multi-part experiment. This first entry details the failed attempts to use voxel-based generation, which ultimately lacked the necessary human-like aesthetic, and explains the criteria the author established for acceptable visual fidelity. By leveraging Gemini for implementation and Muse for specification planning while maintaining final human judgment, the author created a unique, agent-driven development workflow. For builders trying to bridge 2D pixel aesthetics with 3D depth, the takeaway is that strict visual validation protocols are essential when delegating technical execution to LLMs, as initial automated attempts often miss nuanced artistic constraints like character shape or proportion."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-24T22:47:17.877Z"
   },
   {
     "id": "art-1795560428208-laa1w",
