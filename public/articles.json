@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795717938227-dabl7",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/maya-bot/items/9d09760e2ce2013f4da1",
+    "published_at": "2026-11-26T17:46:56.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjMzNjM4MjcwMSUzRnYlM0Q0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0yY2Y4YzhhODI5MzA1NmYxYTAyMDFjMDQzZDE1NjQ5OQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D2afe22e69d55a0ee5e36b85314c72e34?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQUUlRTUlQUUlOUElRTYlOUMlOUYlRTMlODIlQkYlRTMlODIlQjklRTMlODIlQUYlRTMlODIlOTIlRTYlQUQlQTIlRTMlODIlODElRTMlODElOUElRTMlODElQUIlRTUlOUIlOUUlRTMlODElOTklRUYlQkMlOUElRTQlQkQlQkYlRTclOTQlQTglRTklODclOEYlRTMlODElQUUlRTQlQjglOEElRTklOTklOTAlRTMlODMlQkIlRTMlODMlQTIlRTMlODMlODclRTMlODMlQUIlRTMlODElQUUlRTQlQkQlQkYlRTMlODElODQlRTUlODglODYlRTMlODElOTElRTMlODMlQkIlRTYlOTklODIlRTklOTYlOTMlRTMlODElQUUlRTUlODglODYlRTYlOTUlQTMlRTMlODMlQkIlRTglQTYlOEIlRTUlQkMlQjUlRTMlODIlOEElRTUlQkQlQjkmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz05ZTJlNGE1YjBmYzEzOTIzZWM4Njc3OTFiY2JjODYxYg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYXlhLWJvdCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTVkNzlmNDczM2I0MjI2NDIzNjU4ODA4ZDU2MGNhOTVk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c6dd44d77c129922027ba7b5a33f8d29",
+    "title_ja": "AIエージェントの定期タスク運用：API上限回避・エラー検知・処理分散による「自動停止」を防ぐ堅牢な実装戦略",
+    "summary_ja": "AIエージェントによるニュース要約やレポート生成などの定期実行タスクは、処理数が増えるとAPI制限やエラーによる停止リスクが高まる。 これを防ぐには、モデルのコスト別使い分けによる上限管理、時間帯を分散させるキューイング、そして処理失敗を即座に通知する「見張り役（監視）」の設置が不可欠だ。 開発者はタスク実行を「一度きり」のスクリプトと捉えず、失敗を前提とした非同期監視アーキテクチャを構築することで、安定した自動化を実現できる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの定期タスク運用：API上限回避・エラー検知・処理分散による「自動停止」を防ぐ堅牢な実装戦略",
+        "summary": "AIエージェントによるニュース要約やレポート生成などの定期実行タスクは、処理数が増えるとAPI制限やエラーによる停止リスクが高まる。 これを防ぐには、モデルのコスト別使い分けによる上限管理、時間帯を分散させるキューイング、そして処理失敗を即座に通知する「見張り役（監視）」の設置が不可欠だ。 開発者はタスク実行を「一度きり」のスクリプトと捉えず、失敗を前提とした非同期監視アーキテクチャを構築することで、安定した自動化を実現できる。"
+      },
+      "en": {
+        "title": "Building Resilient Scheduled AI Agents: Strategies for Avoiding API Limits, Failures, and Downtime in Automated Workflows",
+        "summary": "Managing scheduled AI agent tasks like automated newsletters or report generation becomes complex as the workload scales, often leading to hidden failures and API rate limit exhaustion. The solution requires a multi-layered approach: switching between economical and high-performance models to manage token costs, staggering execution times to avoid concurrency spikes, and implementing a dedicated monitoring watchdog to alert developers when jobs hang. Instead of treating agent execution as a simple fire-and-forget script, builders should treat these pipelines as mission-critical infrastructure. Implementing non-blocking queues and robust error notification layers ensures that automated workflows stay running even when specific API calls fail, allowing for stable, reliable production systems that don't silently die overnight."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-26T18:32:18.227Z"
+  },
+  {
+    "id": "art-1795717931609-ty1j9",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/chiidu1023/n/nd2670601debc",
+    "published_at": "2026-11-26T18:13:43.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341184400/rectangle_large_type_2_f1be7340a8b958c6bac5b9dd63c553d5.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "高専生がClaudeを活用し2週間でブラウザゲーム8本を量産した軌跡―独学AIコーディングのプロセスと学びを振り返る",
+    "summary_ja": "高専の電気工学科に在籍しロボコンで全国大会を経験した学生のchiidu氏は、Claudeの無料版を活用して約2週間で8本のブラウザゲームを開発・公開した。 ロボコンで培った基礎プログラミング能力を活かしつつ、AIと対話しながら実装を進める開発プロセスは、個人のクリエイティビティを最大化する強力な武器となる。 AIによるコーディング支援の進化は、技術者ではない学生やプログラミング経験の浅い初心者にとっても、短期間で作品を世に出すための強力なレバレッジを生む。",
+    "translations": {
+      "ja": {
+        "title": "高専生がClaudeを活用し2週間でブラウザゲーム8本を量産した軌跡―独学AIコーディングのプロセスと学びを振り返る",
+        "summary": "高専の電気工学科に在籍しロボコンで全国大会を経験した学生のchiidu氏は、Claudeの無料版を活用して約2週間で8本のブラウザゲームを開発・公開した。 ロボコンで培った基礎プログラミング能力を活かしつつ、AIと対話しながら実装を進める開発プロセスは、個人のクリエイティビティを最大化する強力な武器となる。 AIによるコーディング支援の進化は、技術者ではない学生やプログラミング経験の浅い初心者にとっても、短期間で作品を世に出すための強力なレバレッジを生む。"
+      },
+      "en": {
+        "title": "How a vocational college student used Claude to ship eight browser games in just two weeks",
+        "summary": "Chiidu, a vocational college student specializing in electrical engineering and a robotics competition veteran, shares the journey of launching eight browser games in just two weeks using the free tier of Claude. By combining foundational coding logic from robotics contests with AI-assisted development, they transformed the workflow into a rapid iteration engine. This experience highlights how modern AI agents have lowered the barrier to entry for individual creators, enabling those with modest coding backgrounds to build, iterate, and deploy functional applications in record time. For builders, the key takeaway is that leveraging LLMs to handle boilerplate and implementation specifics allows developers to focus on core mechanics, turning creative ideas into finished shipping products much faster."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-26T18:32:11.609Z"
+  },
+  {
+    "id": "art-1795717924992-o375x",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/RustingStudio/RustingStrata",
+    "published_at": "2026-11-26T18:21:05.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/1413067901/e635a23c-627a-4a4a-b78c-dbe8c413affd",
+    "title_ja": "Rust製のLLM推論エンジン「RustingStrata」が登場、GGUF形式モデルをCUDA/Vulkan環境でVRAM容量を超えて実行可能に",
+    "summary_ja": "RustingStrataは、Rust言語でフルスクラッチ開発されたGGUF形式専用の軽量LLM推論エンジンである。 最大の特徴は、CUDAおよびVulkanをサポートし、GPUのVRAM容量を超えるサイズのモデルをシステムメモリにオフロードして実行できる点にある。 大規模なモデルを限られたハードウェア環境で効率的に運用したい開発者にとって、Rustのメモリ安全性と推論性能を活かした新たな選択肢となりそうだ。",
+    "translations": {
+      "ja": {
+        "title": "Rust製のLLM推論エンジン「RustingStrata」が登場、GGUF形式モデルをCUDA/Vulkan環境でVRAM容量を超えて実行可能に",
+        "summary": "RustingStrataは、Rust言語でフルスクラッチ開発されたGGUF形式専用の軽量LLM推論エンジンである。 最大の特徴は、CUDAおよびVulkanをサポートし、GPUのVRAM容量を超えるサイズのモデルをシステムメモリにオフロードして実行できる点にある。 大規模なモデルを限られたハードウェア環境で効率的に運用したい開発者にとって、Rustのメモリ安全性と推論性能を活かした新たな選択肢となりそうだ。"
+      },
+      "en": {
+        "title": "RustingStrata: A pure Rust LLM engine for running GGUF models that exceed GPU VRAM on CUDA and Vulkan",
+        "summary": "RustingStrata is a high-performance LLM inference engine written entirely in Rust, specifically optimized to run GGUF-formatted models. The standout feature is its native support for both CUDA and Vulkan backends, enabling users to execute large language models that significantly exceed available VRAM by intelligently offloading layers to system memory. For developers constrained by hardware limits, this project provides a memory-safe and efficient way to deploy heavy AI models on consumer-grade setups. It represents a practical alternative to Python-based stacks, allowing builders to leverage Rust’s strict safety guarantees while maintaining high inference speeds across diverse GPU environments, making local LLM hosting more accessible without the need for enterprise-grade hardware."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-26T18:32:04.992Z"
+  },
+  {
+    "id": "art-1795717918451-76048",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/intprime/articles/intro-dev-standard",
+    "published_at": "2026-11-26T14:52:23.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--6DN2WiW9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AF%25E3%2581%2598%25E3%2582%2581%25E3%2581%25BE%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2582Claude%2520Code%25E3%2581%25A8%25E4%25B8%2580%25E7%25B7%2592%25E3%2581%25AB%25E3%2580%258C%25E9%25A0%25BC%25E3%2582%258C%25E3%2582%258B%25E9%2596%258B%25E7%2599%25BA%25E6%25A8%2599%25E6%25BA%2596%25E3%2580%258D%25E3%2582%2592%25E8%2582%25B2%25E3%2581%25A6%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25BE%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:dkano%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzczM2JlNDJiMGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeを活用して「頼れる開発標準」を構築する手法：全7回シリーズで学ぶプロジェクト運用と自動化の最適解",
+    "summary_ja": "本連載は、Claude Codeを駆使してリポジトリごとにバラバラになりがちな開発標準を統一する試みだ。 CLAUDE.mdやCI、権限設定をプロジェクトごとに再構築する非効率な状態から脱却し、AIをエージェントとして活用することで、開発の判断負荷を劇的に軽減する。 個人の開発効率を最大化し、複数リポジトリ管理を自動化するための「頼れる標準」の作り方と、その過程で得られた失敗談を含む実践的な知見を全7回で紐解く。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを活用して「頼れる開発標準」を構築する手法：全7回シリーズで学ぶプロジェクト運用と自動化の最適解",
+        "summary": "本連載は、Claude Codeを駆使してリポジトリごとにバラバラになりがちな開発標準を統一する試みだ。 CLAUDE.mdやCI、権限設定をプロジェクトごとに再構築する非効率な状態から脱却し、AIをエージェントとして活用することで、開発の判断負荷を劇的に軽減する。 個人の開発効率を最大化し、複数リポジトリ管理を自動化するための「頼れる標準」の作り方と、その過程で得られた失敗談を含む実践的な知見を全7回で紐解く。"
+      },
+      "en": {
+        "title": "Standardizing developer workflows using Claude Code: A 7-part series on building sustainable coding and automation foundations",
+        "summary": "This seven-part series explores how to move past the inefficiency of reconfiguring CI pipelines, permissions, and documentation like CLAUDE.md for every new repository. By integrating Claude Code as a core development agent, the author establishes a consistent, reliable standard that automates routine decision-making and reduces the cognitive load of managing multiple projects simultaneously. The articles share both the wins and the failures encountered while crafting this system, offering a blueprint for developers who struggle to keep their project standards aligned. For builders managing several codebases, the key takeaway is to treat your development standards as code, using AI agents to enforce consistency, minimize setup drift, and ultimately regain focus on feature velocity rather than boilerplate maintenance."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-26T18:31:58.451Z"
+  },
+  {
     "id": "art-1795717029105-yiodu",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
