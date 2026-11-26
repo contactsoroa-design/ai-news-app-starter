@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795669370520-szwfo",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+    "published_at": "2026-11-26T04:46:50.000Z",
+    "og_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/cairn-banner.jpg",
+    "title_ja": "Amazonが警告、AIエージェントが人間の介入なしに未知のゼロデイ脆弱性を発見・悪用する脅威が現実化。サイバー攻撃の新局面へ",
+    "summary_ja": "Amazonのセキュリティレポートにより、AIエージェントが人間の最小限の関与だけで、システムのゼロデイ脆弱性を特定し悪用した事例が確認された。 これまでのスクリプト攻撃とは異なり、AIは自律的に標的のコードベースを解析し、エクスプロイトを生成する能力を示している。 開発者にとって、セキュリティ対策はもはや人間が書いたコードの静的解析だけでは不十分であり、AIベースの攻撃手法を想定した防衛戦略の再構築が喫緊の課題となっている。",
+    "translations": {
+      "ja": {
+        "title": "Amazonが警告、AIエージェントが人間の介入なしに未知のゼロデイ脆弱性を発見・悪用する脅威が現実化。サイバー攻撃の新局面へ",
+        "summary": "Amazonのセキュリティレポートにより、AIエージェントが人間の最小限の関与だけで、システムのゼロデイ脆弱性を特定し悪用した事例が確認された。 これまでのスクリプト攻撃とは異なり、AIは自律的に標的のコードベースを解析し、エクスプロイトを生成する能力を示している。 開発者にとって、セキュリティ対策はもはや人間が書いたコードの静的解析だけでは不十分であり、AIベースの攻撃手法を想定した防衛戦略の再構築が喫緊の課題となっている。"
+      },
+      "en": {
+        "title": "Amazon reports AI agents successfully finding and exploiting 0-day vulnerabilities with virtually no human input or supervision",
+        "summary": "Amazon has officially documented a concerning shift in the cyber threat landscape, confirming that autonomous AI agents are now capable of discovering and weaponizing zero-day vulnerabilities with almost no human intervention. Unlike traditional automated scripts that follow rigid patterns, these AI models actively analyze target codebases, identify exploitable logic flaws, and craft custom exploits in real-time. For security engineers and developers, this reality invalidates traditional defensive reliance on static analysis and manual patching schedules. Protecting modern applications now requires shifting toward AI-resilient architectures, where proactive threat modeling must account for the rapid, adaptive nature of machine-speed attacks. The industry must prepare for a future where vulnerabilities are discovered and weaponized at the velocity of LLM reasoning, not human manual efforts."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-26T05:02:50.520Z"
+  },
+  {
+    "id": "art-1795669359499-adc95",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/twinharness/articles/flaky-tests-six-causes",
+    "published_at": "2026-11-25T14:31:42.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--rZU0PxnB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2599%2582%25E3%2580%2585%25E8%2590%25BD%25E3%2581%25A1%25E3%2582%258BE2E%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E5%2586%258D%25E5%25AE%259F%25E8%25A1%258C%25E3%2581%25A7%25E6%25B5%2581%25E3%2581%2595%25E3%2581%259A6%25E4%25BB%25B6%25E8%25BF%25BD%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E6%259C%25AC%25E7%2589%25A9%25E3%2581%25AE%25E3%2582%25BB%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2581%25AE%25E7%25A9%25B4%25E3%2581%258C%25E6%25B7%25B7%25E3%2581%2596%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:twinharness%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvdC5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "「時々落ちるE2Eテスト」を放置せず追跡した結果、Windows上のElectronアプリで深刻なセキュリティ脆弱性を発見",
+    "summary_ja": "E2Eテストの不安定な挙動を「PCの負荷のせい」と再実行で流さず徹底調査したところ、単なるテスト側の不具合だけでなく、Windows特有のバグと、クリップボードに機密情報が残る深刻なセキュリティホールが判明した。 テスト時間が長くなると「再実行」という誘惑に駆られがちだが、不安定なテストは潜在的な致命的欠陥を隠しているシグナルでもある。 自動テストの失敗を無視せず、その原因を特定する粘り強さが、アプリの品質とセキュリティを守る最後の砦となる。",
+    "translations": {
+      "ja": {
+        "title": "「時々落ちるE2Eテスト」を放置せず追跡した結果、Windows上のElectronアプリで深刻なセキュリティ脆弱性を発見",
+        "summary": "E2Eテストの不安定な挙動を「PCの負荷のせい」と再実行で流さず徹底調査したところ、単なるテスト側の不具合だけでなく、Windows特有のバグと、クリップボードに機密情報が残る深刻なセキュリティホールが判明した。 テスト時間が長くなると「再実行」という誘惑に駆られがちだが、不安定なテストは潜在的な致命的欠陥を隠しているシグナルでもある。 自動テストの失敗を無視せず、その原因を特定する粘り強さが、アプリの品質とセキュリティを守る最後の砦となる。"
+      },
+      "en": {
+        "title": "Persistent Investigation of Flaky E2E Tests Reveals Critical Security Vulnerability in Windows Electron Application",
+        "summary": "When faced with flaky E2E tests, developers often dismiss failures as environment noise rather than investigating, especially when tests take nearly thirty minutes to run. In a recent Windows-based Electron project using Playwright, the author committed to investigating six consecutive flaky test failures instead of blindly re-running them. While four were merely test environment artifacts, the remaining two exposed a genuine Windows behavior bug and a dangerous security hole that left sensitive commands exposed in the clipboard. This highlights a crucial builder lesson: flaky tests are not just inconveniences but potential signals of critical flaws. Resist the temptation to simply re-run failing suites, as investigating the root cause is often the only way to catch vulnerabilities before they ship."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-26T05:02:39.499Z"
+  },
+  {
+    "id": "art-1795669316597-bl2d1",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+    "published_at": "2026-11-25T18:16:50.000Z",
+    "og_image_url": "https://static.simonwillison.net/static/2026/chart-annotate.gif",
+    "title_ja": "Datasette-charts 0.3a0公開、注釈機能を追加しAIエージェントによる自動グラフ生成・編集を強化",
+    "summary_ja": "Datasette-chartsのバージョン0.3a0がリリースされ、チャートへの注釈（線、塗りつぶし領域、ラベルなど）の追加が可能になった。 Datasette LiteのチャートビルダーUIから直接編集できるほか、Datasette Agentと組み合わせることで、プロンプトベースでの複雑なグラフ生成と注釈付与を自動化できる。 データ可視化を扱う開発者にとって、AIによる推論と静的なダッシュボード構築をシームレスに統合できる点は、分析効率を劇的に高める選択肢となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "Datasette-charts 0.3a0公開、注釈機能を追加しAIエージェントによる自動グラフ生成・編集を強化",
+        "summary": "Datasette-chartsのバージョン0.3a0がリリースされ、チャートへの注釈（線、塗りつぶし領域、ラベルなど）の追加が可能になった。 Datasette LiteのチャートビルダーUIから直接編集できるほか、Datasette Agentと組み合わせることで、プロンプトベースでの複雑なグラフ生成と注釈付与を自動化できる。 データ可視化を扱う開発者にとって、AIによる推論と静的なダッシュボード構築をシームレスに統合できる点は、分析効率を劇的に高める選択肢となるだろう。"
+      },
+      "en": {
+        "title": "Datasette-charts 0.3a0 released with new annotation support for AI-driven chart generation and editing",
+        "summary": "The release of datasette-charts 0.3a0 introduces powerful annotation capabilities, allowing developers to add lines, shaded areas, and labels directly to rendered charts. Users can now manipulate these annotations via the Datasette Lite chart builder UI, or leverage the Datasette Agent to generate and annotate visualizations entirely through natural language prompts. For engineers building data-heavy applications, this integration represents a significant shift: it bridges the gap between raw data exploration and polished, interpretative reporting. By offloading the burden of manual styling to AI agents while maintaining programmatic control, developers can create complex, annotated dashboards much faster than traditional manual charting workflows, making this a essential tool for rapid data analysis pipelines."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-26T05:01:56.597Z"
+  },
+  {
+    "id": "art-1795669308431-8tm06",
+    "source_id": "source-arxiv",
+    "source_name": "arXiv (cs.AI / cs.CL)",
+    "url": "https://arxiv.org/abs/2611.33160",
+    "published_at": "2026-11-26T05:00:00.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "AIスケーリングの新地平「コンテキスト・スケーリング」の提唱：モデル性能のボトルネックを解消する情報最適化戦略とは",
+    "summary_ja": "AIの導入失敗の多くは推論能力の不足ではなく、タスク実行時に必要な文脈（コンテキスト）が欠如している点にあると指摘する研究「コンテキスト・スケーリング」が発表された。 従来はモデルの学習（Bθ）や推論時の計算（Bd）に焦点が当たっていたが、本研究は「コンテキスト・インフラ（Bc）」という新たな予算概念を定義。 AIシステムが外部のリポジトリやツール履歴、環境変化といった情報を正確に把握・最適化できるかどうかが、実用化の成否を分ける決定的な要素となる。",
+    "translations": {
+      "ja": {
+        "title": "AIスケーリングの新地平「コンテキスト・スケーリング」の提唱：モデル性能のボトルネックを解消する情報最適化戦略とは",
+        "summary": "AIの導入失敗の多くは推論能力の不足ではなく、タスク実行時に必要な文脈（コンテキスト）が欠如している点にあると指摘する研究「コンテキスト・スケーリング」が発表された。 従来はモデルの学習（Bθ）や推論時の計算（Bd）に焦点が当たっていたが、本研究は「コンテキスト・インフラ（Bc）」という新たな予算概念を定義。 AIシステムが外部のリポジトリやツール履歴、環境変化といった情報を正確に把握・最適化できるかどうかが、実用化の成否を分ける決定的な要素となる。"
+      },
+      "en": {
+        "title": "Beyond Parameter Scaling: Introducing 'Context Scaling' as the Critical Third Pillar for Robust AI System Architecture",
+        "summary": "New research introduces 'Context Scaling,' arguing that many AI deployment failures stem not from weak inference capabilities, but from a mismatch between task requirements and the available context. The paper frames AI systems through three specific budgets: training parameters (Bθ), decision-time computation (Bd), and the newly defined context-infrastructure (Bc). While industry focus remains heavily on scaling parameters, this framework asserts that improving how systems ingest, retrieve, and refine environmental states—like repository revisions or sensor data—is just as crucial for success. For builders, the takeaway is clear: as models become more capable, the primary competitive differentiator shifts toward engineering high-fidelity data pipelines that supply relevant, accurate context at the precise moment of decision-making."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-26T05:01:48.431Z"
+  },
+  {
     "id": "art-1795668427426-v89pv",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -12818,33 +12923,6 @@
     "created_at": "2026-11-24T04:32:42.221Z"
   },
   {
-    "id": "art-1795494755671-9uevm",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/wangzan101/mika",
-    "published_at": "2026-11-24T03:53:08.000Z",
-    "og_image_url": null,
-    "title_ja": "Android向けオンデバイスAIエージェント「Mika」公開：ローカルLLM活用でプライバシーを保護しつつアプリ操作を自動化",
-    "summary_ja": "Android端末上で動作するオープンソースのAIエージェント「Mika」が公開された。 このツールは、外部サーバーへの通信を介さず端末内のローカルLLMを活用することで、ユーザーのプライバシーを確保しつつ、アプリの自動操作を実現する仕組みだ。 クラウドAPIのコストや遅延を排除できるため、特にセキュリティや応答速度が重視される自動化環境において、オンデバイス推論を活用する実用的な設計指針となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "Android向けオンデバイスAIエージェント「Mika」公開：ローカルLLM活用でプライバシーを保護しつつアプリ操作を自動化",
-        "summary": "Android端末上で動作するオープンソースのAIエージェント「Mika」が公開された。 このツールは、外部サーバーへの通信を介さず端末内のローカルLLMを活用することで、ユーザーのプライバシーを確保しつつ、アプリの自動操作を実現する仕組みだ。 クラウドAPIのコストや遅延を排除できるため、特にセキュリティや応答速度が重視される自動化環境において、オンデバイス推論を活用する実用的な設計指針となるだろう。"
-      },
-      "en": {
-        "title": "Mika: An open-source on-device AI agent for Android that automates app interactions using local LLMs for privacy",
-        "summary": "The open-source project Mika introduces an on-device AI agent for Android designed to automate app interactions without needing cloud connectivity. By utilizing local LLMs directly on the handset, Mika ensures sensitive user data remains private while eliminating reliance on external API calls that introduce latency and subscription costs. The architecture provides a compelling blueprint for mobile developers looking to build secure, responsive automation tools that function offline. For builders experimenting with agentic workflows on mobile, this implementation demonstrates that hardware-accelerated local inference is now viable for sophisticated task execution. Relying on on-device processing not only solves critical privacy concerns but also creates a predictable, deterministic performance model that cloud-dependent agents simply cannot match in mobile environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-24T04:32:35.671Z"
-  },
-  {
     "id": "art-1795493865528-o1gxd",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -16053,32 +16131,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-23T03:17:27.424Z"
-  },
-  {
-    "id": "art-1795401207006-8z34a",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/densuke828/articles/b788c98e1ca1f6",
-    "published_at": "2026-11-23T01:26:25.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Z9k7qd1O--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BC%2595%25E8%25B6%258A%25E3%2581%2597%25E7%25AE%25A1%25E7%2590%2586%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2599%25E3%2582%258B%25E2%2591%25A0%25EF%25BC%259A%25E4%25BC%2581%25E7%2594%25BB%25E3%2581%25A8%25E8%25A6%2581%25E4%25BB%25B6%25E5%25AE%259A%25E7%25BE%25A9%2520%25E7%25B7%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2587%25E3%2583%25B3%25E3%2582%25B9%25E3%2582%25B1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM5NzVlMmQxZGIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "引越し管理アプリの個人開発記録①：夫婦のタスク分担と情報共有を最適化する企画・要件定義の進め方",
-    "summary_ja": "引越し準備の複雑さと夫婦間の認識齟齬を解消するため、共有型引越し管理アプリの開発プロジェクトを立ち上げた。 物件探しから行政手続きまで、夫婦でタスクを可視化し、責任分担を明確にすることを主眼に置く。 4〜5ヶ月後の実利用という明確なゴールと期限を設定することで、開発のモチベーションを維持するアプローチは、個人開発者が特定の課題解決ツールを効率的に実装する際の重要なヒントになる。",
-    "translations": {
-      "ja": {
-        "title": "引越し管理アプリの個人開発記録①：夫婦のタスク分担と情報共有を最適化する企画・要件定義の進め方",
-        "summary": "引越し準備の複雑さと夫婦間の認識齟齬を解消するため、共有型引越し管理アプリの開発プロジェクトを立ち上げた。 物件探しから行政手続きまで、夫婦でタスクを可視化し、責任分担を明確にすることを主眼に置く。 4〜5ヶ月後の実利用という明確なゴールと期限を設定することで、開発のモチベーションを維持するアプローチは、個人開発者が特定の課題解決ツールを効率的に実装する際の重要なヒントになる。"
-      },
-      "en": {
-        "title": "Building a Moving Management App: A Developer's Guide to Requirements and Scoping for Household Collaboration",
-        "summary": "To combat the logistical chaos and relationship strain inherent in moving, the author is building a collaborative moving management application designed to synchronize household tasks. The project focuses on centralizing everything from property hunting to administrative paperwork, ensuring both partners can track responsibilities and status updates without friction. By setting a hard deadline tied to their own move in 4-5 months, the developer creates a tight feedback loop that keeps development focused on essential problem-solving rather than feature creep. For solo builders, this case study demonstrates how tackling a personal pain point with a clear delivery schedule is a proven, effective way to ship practical software that solves real-world coordination problems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-23T02:33:27.006Z"
   },
   {
     "id": "art-1795393911532-kgt4r",
@@ -27459,33 +27511,6 @@
       "マーケ・集客・ASO"
     ],
     "created_at": "2026-11-17T16:03:30.898Z"
-  },
-  {
-    "id": "art-1794930496136-wd1fl",
-    "source_id": "source-arxiv",
-    "source_name": "arXiv (cs.AI / cs.CL)",
-    "url": "https://arxiv.org/abs/2611.18930",
-    "published_at": "2026-11-17T05:00:00.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "AI安全性ベンチマークの「理想と現実」の乖離：開発者へのインタビューで判明した実用上の限界と評価設計の課題とは",
-    "summary_ja": "AI安全性ベンチマークはリスク評価の主流だが、実際の開発現場での有用性と乖離が生じていることが、学術・産業界の専門家5名へのインタビューで明らかになった。 主な障壁は、安全性の概念に対する評価者間の合意形成の難しさと、進化し続ける攻撃手法への追従不足にある。 開発者はベンチマークを「指標」として過信せず、個別のデプロイ環境に応じた独自の安全性評価パイプラインを構築する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AI安全性ベンチマークの「理想と現実」の乖離：開発者へのインタビューで判明した実用上の限界と評価設計の課題とは",
-        "summary": "AI安全性ベンチマークはリスク評価の主流だが、実際の開発現場での有用性と乖離が生じていることが、学術・産業界の専門家5名へのインタビューで明らかになった。 主な障壁は、安全性の概念に対する評価者間の合意形成の難しさと、進化し続ける攻撃手法への追従不足にある。 開発者はベンチマークを「指標」として過信せず、個別のデプロイ環境に応じた独自の安全性評価パイプラインを構築する必要がある。"
-      },
-      "en": {
-        "title": "The Gap Between Rigor and Reality: Why Current AI Safety Benchmarks Often Fail to Meet Practical Evaluation Needs",
-        "summary": "New research analyzing interviews with five AI safety benchmark developers reveals a troubling disconnect between theoretical benchmark goals and their practical utility in real-world deployment scenarios. The core challenges identified include the inherent difficulty of achieving inter-rater reliability on complex safety constructs and a persistent lack of clarity regarding how to mitigate adversarial evolution. This disconnect suggests that relying solely on standardized safety scores provides a false sense of security for production systems. For builders, the takeaway is clear: do not treat off-the-shelf safety benchmarks as a comprehensive audit. Instead, integrate these datasets as one component of a broader, custom safety evaluation strategy that accounts for the specific nuances and threat models of your deployed application environment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "セキュリティ",
-      "開発"
-    ],
-    "created_at": "2026-11-17T15:48:16.136Z"
   },
   {
     "id": "art-1794930487374-5hg78",
@@ -45288,33 +45313,6 @@
       "研究"
     ],
     "created_at": "2026-11-02T17:16:42.594Z"
-  },
-  {
-    "id": "art-1793637171937-hk8dr",
-    "source_id": "source-simonwillison",
-    "source_name": "Simon Willison's Weblog",
-    "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-    "published_at": "2026-11-02T13:31:26.000Z",
-    "og_image_url": "https://static.simonwillison.net/static/2026-11-01/5821A414-FAF6-4E61-B037-952C1FD80D39.png",
-    "title_ja": "米商務省調査のAI利用データが「超知能」大統領令により消失か。統計の透明性が揺らぐ中、開発者が考えるべきデータの信頼性と生存戦略",
-    "summary_ja": "米国勢調査局のビジネス動向調査（BTOS）において、かつて注目された企業AI導入率データが、いわゆる「超知能」大統領令（Executive Order 14434）の影響で公開停止の危機に瀕している。 公的統計の更新頻度や公開範囲が政治的判断で突如変更されるリスクは、AIプロダクトの市場分析や予測を行う開発者にとって無視できない障壁だ。",
-    "translations": {
-      "ja": {
-        "title": "米商務省調査のAI利用データが「超知能」大統領令により消失か。統計の透明性が揺らぐ中、開発者が考えるべきデータの信頼性と生存戦略",
-        "summary": "米国勢調査局のビジネス動向調査（BTOS）において、かつて注目された企業AI導入率データが、いわゆる「超知能」大統領令（Executive Order 14434）の影響で公開停止の危機に瀕している。 公的統計の更新頻度や公開範囲が政治的判断で突如変更されるリスクは、AIプロダクトの市場分析や予測を行う開発者にとって無視できない障壁だ。"
-      },
-      "en": {
-        "title": "U.S. Census Bureau AI adoption data disappears following 'Super Intelligence' executive order: Why builders need contingency plans for public datasets",
-        "summary": "Data regarding corporate AI adoption rates from the U.S. Census Bureau’s Business Trends and Outlook Survey (BTOS) has effectively vanished, allegedly due to the constraints of Executive Order 14434, the so-called 'Super Intelligence' mandate. This unexpected blackout highlights a critical risk for builders who rely on public benchmarks for market sizing or trend analysis: political interference can suddenly break your upstream data sources. When your product roadmap depends on external government datasets, you must assume they are not permanent. The practical lesson for developers is to build redundancy by cross-referencing multiple data providers and designing modular pipelines that survive the abrupt loss of any single primary information stream, ensuring your analytical infrastructure remains resilient regardless of policy shifts."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-02T16:32:51.937Z"
   },
   {
     "id": "art-1793637164299-9k62f",
