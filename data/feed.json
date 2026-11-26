@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1795684653203-gbdd2",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/ai_dokuritsu/n/n77895a284855",
+    "published_at": "2026-11-26T09:15:51.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/319218545/rectangle_large_type_2_25e12e38236f17d6e8176da710d99057.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "予約システム開発の落とし穴—サーバーが制御していたはずの画面遷移がブラウザ側で乗っ取られていた設計ミスと、ステート管理の再考",
+    "summary_ja": "予約システム開発において、画面遷移の制御がサーバーではなくブラウザから送られるパラメータに依存していたことで、重大な設計脆弱性が露呈した。 セッション管理を排したアーキテクチャを選択した結果、意図しない遷移を許すセキュリティ上の隙間が生まれていた。 開発中の検証プロセスで発覚したこの事例は、ステート管理をクライアント側に委ねる際のリスクを浮き彫りにしている。 個人開発者は、信頼できるソースをどこに置くかという基本原則を再確認する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "予約システム開発の落とし穴—サーバーが制御していたはずの画面遷移がブラウザ側で乗っ取られていた設計ミスと、ステート管理の再考",
+        "summary": "予約システム開発において、画面遷移の制御がサーバーではなくブラウザから送られるパラメータに依存していたことで、重大な設計脆弱性が露呈した。 セッション管理を排したアーキテクチャを選択した結果、意図しない遷移を許すセキュリティ上の隙間が生まれていた。 開発中の検証プロセスで発覚したこの事例は、ステート管理をクライアント側に委ねる際のリスクを浮き彫りにしている。 個人開発者は、信頼できるソースをどこに置くかという基本原則を再確認する必要がある。"
+      },
+      "en": {
+        "title": "Critical flaw in reservation system architecture: Why trusting client-side state for screen navigation exposes serious security vulnerabilities for developers",
+        "summary": "A developer building a reservation system discovered a severe design flaw where the server failed to control screen transitions, instead relying on strings passed directly from the browser. By choosing an architecture that excluded session storage, the developer unintentionally gave the client full control over the navigation logic, creating a significant security gap. This post-mortem, documented during development before public release, highlights the dangers of outsourcing state authority to the frontend. For builders creating transactional applications, this case serves as a crucial reminder that state management and access control must be strictly enforced on the server. Relying on client-provided parameters without robust server-side validation is a shortcut that inevitably leads to exploitable vulnerabilities in any interactive application."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-26T09:17:33.203Z"
+  },
+  {
+    "id": "art-1795684645662-os23o",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/news/article/2611/26/2000003460/",
+    "published_at": "2026-11-26T03:00:00.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/news/article/ogp/2611/26/2000003460/10012959/2048",
+    "title_ja": "GitHubに潜む「人には見えない隠し文字」を1億4500万件調査、小型AIへのプロンプトインジェクション攻撃の実態を解明",
+    "summary_ja": "イスラエルのRadwareとテクニオン工科大学の研究チームが、GitHub上の1億4500万件のファイルを対象に、AIモデルの操作を目的とした隠しテキストの埋め込み実態を調査した。 これらの隠し文字は、コード補完AIや自律型エージェントを悪意ある動作へ誘導したり、プロンプトインジェクションを仕掛けたりする目的で利用されている。",
+    "translations": {
+      "ja": {
+        "title": "GitHubに潜む「人には見えない隠し文字」を1億4500万件調査、小型AIへのプロンプトインジェクション攻撃の実態を解明",
+        "summary": "イスラエルのRadwareとテクニオン工科大学の研究チームが、GitHub上の1億4500万件のファイルを対象に、AIモデルの操作を目的とした隠しテキストの埋め込み実態を調査した。 これらの隠し文字は、コード補完AIや自律型エージェントを悪意ある動作へ誘導したり、プロンプトインジェクションを仕掛けたりする目的で利用されている。"
+      },
+      "en": {
+        "title": "GitHub hidden text analysis reveals 145M samples of malicious prompts targeting AI coding agents",
+        "summary": "Researchers from Radware and Technion Israel Institute of Technology analyzed 145 million files on GitHub, uncovering widespread usage of hidden text specifically designed to manipulate AI coding agents. The study shows that these invisible prompts often aim to hijack model behavior, force insecure code generation, or execute prompt injection attacks against downstream developers. As automated agents increasingly rely on public repository data for context, these hidden instructions pose a significant, largely invisible supply-chain security threat. For builders integrating LLMs into IDEs or coding agents, the takeaway is clear: public code can no longer be blindly trusted as clean input. You must now implement stricter validation layers that detect or strip out hidden AI-directed instructions before sending repository data into your model's context window."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-26T09:17:25.662Z"
+  },
+  {
+    "id": "art-1795684639241-qnja9",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/claude-mem",
+    "published_at": "2026-11-26T07:58:18.000Z",
+    "og_image_url": null,
+    "title_ja": "「Claude-Mem Cloud Sync」が登場、デバイスを跨いでAIエージェントの記憶と対話の文脈を同期するクラウドソリューション",
+    "summary_ja": "「Claude-Mem Cloud Sync」は、異なるデバイス間でもAIエージェントの記憶と対話の文脈をシームレスに同期できるクラウドストレージソリューションだ。 デバイスを切り替えるたびにエージェントの過去の学習内容や設定がリセットされる不便さを解消し、ユーザーはどの端末からでも一貫したAI体験を享受できる。 個人開発の生産性向上やクロスデバイスでの継続的なAI利用環境を構築する上で、文脈の持続性はUXを左右する不可欠な要素となっている。",
+    "translations": {
+      "ja": {
+        "title": "「Claude-Mem Cloud Sync」が登場、デバイスを跨いでAIエージェントの記憶と対話の文脈を同期するクラウドソリューション",
+        "summary": "「Claude-Mem Cloud Sync」は、異なるデバイス間でもAIエージェントの記憶と対話の文脈をシームレスに同期できるクラウドストレージソリューションだ。 デバイスを切り替えるたびにエージェントの過去の学習内容や設定がリセットされる不便さを解消し、ユーザーはどの端末からでも一貫したAI体験を享受できる。 個人開発の生産性向上やクロスデバイスでの継続的なAI利用環境を構築する上で、文脈の持続性はUXを左右する不可欠な要素となっている。"
+      },
+      "en": {
+        "title": "Claude-Mem Cloud Sync Launches to Enable Seamless AI Agent Memory Synchronization Across All Your Desktop and Mobile Devices",
+        "summary": "Claude-Mem Cloud Sync has launched as a dedicated cloud synchronization solution designed to persist AI agent memory and interaction context seamlessly across multiple devices. By solving the fragmentation issue where agents lose past instructions or learned preferences when a user switches hardware, this tool ensures consistent behavior regardless of where the user logs in. This persistence layer addresses a critical friction point for developers and power users, effectively transforming isolated chatbot sessions into a unified, cross-platform experience. For those building or relying on AI agents for deep, long-running tasks, implementing robust cloud-based synchronization is no longer just an optional convenience; it is a fundamental requirement for maintaining functional continuity and maximizing the utility of personalized AI assistants."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-26T09:17:19.241Z"
+  },
+  {
+    "id": "art-1795684631776-o3v7s",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/walt_owen/articles/c442483d41bf54",
+    "published_at": "2026-11-26T09:16:36.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KXsx1HKp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Equalizer%2520APO%2520%25E3%2582%2592%25E3%2580%258C%25E3%2581%25A4%25E3%2581%25BE%25E3%2581%25BF%25E3%2580%258D%25E3%2581%25A7%25E6%2593%258D%25E4%25BD%259C%25E3%2581%2599%25E3%2582%258B%2520Windows%2520%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25EF%25BC%2588%25E8%25A3%259C%25E6%25AD%25A3%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%2596%25E3%2581%25AE%25E8%25A8%2588%25E7%25AE%2597%25E3%2581%25A8%25E3%2580%258C%25E5%258A%25B9%25E3%2581%258B%25E3%2581%25AA%25E3%2581%2584%25E3%2580%258D...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Walt-Owen%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FjYmYxMWVkMjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Equalizer APOのGUI問題を解決するWindowsアプリ「KnobEQ」開発記 ― C#単一ファイル構成で補正カーブ計算とEQ適用エラー検出を実現",
+    "summary_ja": "Windowsの定番イコライザー「Equalizer APO」は設定が難解なため、つまみを回すだけで直感的に操作できるWindowsアプリ「KnobEQ」を開発した。 csc.exeのみでビルド可能な単一ファイルのWinFormsアプリとして実装し、複雑な補正カーブのリアルタイム計算や、EQ設定が反映されないトラブルの自動検出機能も統合した。",
+    "translations": {
+      "ja": {
+        "title": "Equalizer APOのGUI問題を解決するWindowsアプリ「KnobEQ」開発記 ― C#単一ファイル構成で補正カーブ計算とEQ適用エラー検出を実現",
+        "summary": "Windowsの定番イコライザー「Equalizer APO」は設定が難解なため、つまみを回すだけで直感的に操作できるWindowsアプリ「KnobEQ」を開発した。 csc.exeのみでビルド可能な単一ファイルのWinFormsアプリとして実装し、複雑な補正カーブのリアルタイム計算や、EQ設定が反映されないトラブルの自動検出機能も統合した。"
+      },
+      "en": {
+        "title": "Building KnobEQ: A Windows utility to control Equalizer APO via physical-style dials, featuring custom correction curve math and failure detection",
+        "summary": "The popular system-wide equalizer Equalizer APO is powerful but lacks an approachable UI, forcing users to edit text files or navigate complex interfaces. To bridge this gap, I built KnobEQ, a WinForms application that allows users to adjust EQ settings via intuitive dials. Developed as a single-file executable using only csc.exe, the tool handles complex correction curve math and proactively detects when EQ settings fail to apply, solving a common user frustration. For builders, this project demonstrates that creating a \"thin\" intuitive frontend for a complex backend tool is a highly effective strategy to improve UX, making powerful but daunting developer tools accessible to a wider audience."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-26T09:17:11.776Z"
+  },
+  {
     "id": "art-1795683835291-nodna",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -8795,32 +8898,6 @@
     "created_at": "2026-11-25T04:47:36.624Z"
   },
   {
-    "id": "art-1795582045549-y2dbv",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ts_atelier/n/n3bc40f0ffaf1",
-    "published_at": "2026-11-25T04:45:08.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340469681/rectangle_large_type_2_cfd2cf647a9cb0116c7750749fc0ea3b.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Codeが文脈を忘れる理由と「CLAUDE.md」および「自動メモリ」による知識永続化の仕組みを徹底解説",
-    "summary_ja": "Claude Codeはセッションごとにコンテキストをリセットするため、過去の指示を忘れる仕様となっている。 開発者が継続的な学習効果を得るには、指示書として機能する「CLAUDE.md」の活用と、AI自身が状況を書き込む「自動メモリ（auto memory）」の2つの機能を併用することが不可欠だ。 プロジェクト固有の要件やコーディング規約を明確に記述・保存し、セッションをまたぐコンテキストの橋渡しを設計することが、AI開発効率を最大化する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeが文脈を忘れる理由と「CLAUDE.md」および「自動メモリ」による知識永続化の仕組みを徹底解説",
-        "summary": "Claude Codeはセッションごとにコンテキストをリセットするため、過去の指示を忘れる仕様となっている。 開発者が継続的な学習効果を得るには、指示書として機能する「CLAUDE.md」の活用と、AI自身が状況を書き込む「自動メモリ（auto memory）」の2つの機能を併用することが不可欠だ。 プロジェクト固有の要件やコーディング規約を明確に記述・保存し、セッションをまたぐコンテキストの橋渡しを設計することが、AI開発効率を最大化する鍵となる。"
-      },
-      "en": {
-        "title": "Why Claude Code forgets context: Mastering CLAUDE.md and auto-memory features for persistent project knowledge",
-        "summary": "Claude Code resets its context window with every session, causing it to lose track of prior instructions or progress. To retain knowledge, developers must leverage two specific mechanisms: the 'CLAUDE.md' file, which serves as a static instruction set for the model, and 'auto memory,' where Claude writes its own notes to persist details across sessions. Effectively bridging these sessions requires explicitly documenting project requirements and coding standards within these persistent files. For developers, the practical takeaway is that relying on the model’s internal short-term memory is insufficient for long-term coding tasks; you must architect your project's 'external brain' using these specific configuration files to maintain consistency and maximize development velocity across distinct sessions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-25T04:47:25.549Z"
-  },
-  {
     "id": "art-1795582037493-wgaza",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -16187,32 +16264,6 @@
     "created_at": "2026-11-23T11:31:49.607Z"
   },
   {
-    "id": "art-1795432684570-gnbe0",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/autocamp/articles/tech-php-preg-replace-dollar",
-    "published_at": "2026-11-23T03:05:13.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---Es2e-1G--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:preg_replace%2520%25E3%2581%25AE%25E7%25BD%25AE%25E6%258F%259B%25E3%2581%25AB%25E3%2580%258C%2524100%25E3%2580%258D%25E3%2582%2592%25E6%25B8%25A1%25E3%2581%2599%25E3%2581%25A8%25E3%2580%258C0%25E3%2580%258D%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258B%25E3%2580%2582%25E5%25A4%2589%25E6%2595%25B0%25E3%2582%2592%25E6%25B8%25A1%25E3%2581%2599%25E8%25A1%258C%25E3%2581%25AE%25E8%25A6%258B%25E3%2581%25A4%25E3%2581%2591%25E6%2596%25B9%25E3%2581%25A8%25E7%259B%25B4%25E3%2581%2597%25E6%2596%25B93%25E3%2581%25A4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2588%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZlMmM0YTcyYjIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "PHPのpreg_replaceで「$100」が「0」に化ける罠。置換処理における後方参照の仕様と、安全な文字列置換を実現する3つの回避策",
-    "summary_ja": "PHPのpreg_replace関数で置換文字列に「$100」などを渡すと、期待値とは異なる「0」へ変換される不具合が発生する。 これは第2引数の「$」と数字が正規表現の後方参照として解釈されることが原因であり、警告も出ないためデバッグが困難だ。 本記事では、文字列のエスケープやpreg_replace_callbackへの移行など、この仕様に起因する予期せぬバグを回避するための具体的な修正案を3つ解説する。 数値や通貨を扱う置換処理では特に注意が必要だ。",
-    "translations": {
-      "ja": {
-        "title": "PHPのpreg_replaceで「$100」が「0」に化ける罠。置換処理における後方参照の仕様と、安全な文字列置換を実現する3つの回避策",
-        "summary": "PHPのpreg_replace関数で置換文字列に「$100」などを渡すと、期待値とは異なる「0」へ変換される不具合が発生する。 これは第2引数の「$」と数字が正規表現の後方参照として解釈されることが原因であり、警告も出ないためデバッグが困難だ。 本記事では、文字列のエスケープやpreg_replace_callbackへの移行など、この仕様に起因する予期せぬバグを回避するための具体的な修正案を3つ解説する。 数値や通貨を扱う置換処理では特に注意が必要だ。"
-      },
-      "en": {
-        "title": "PHP’s preg_replace Trap: Why Passing \"$100\" Returns \"0\" and How to Safely Handle Back-Reference Conflicts in Replacement Strings",
-        "summary": "In PHP, using preg_replace with a replacement string like \"$100\" often silently results in \"0\" because the engine interprets the dollar sign and digits as a back-reference rather than literal text. This behavior triggers no errors or warnings, making it a frustrating silent failure for developers handling currency or dynamic numeric templates. This guide details exactly how these conflicts occur and provides three robust solutions, including escaping dollar signs properly or refactoring the logic to use preg_replace_callback. For builders processing financial data, the takeaway is to avoid direct string substitution for prices and instead adopt safer, explicit callback functions to ensure that literal currency values are never accidentally treated as regex capture groups."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-23T11:18:04.570Z"
-  },
-  {
     "id": "art-1795426318526-rvmhc",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -19477,32 +19528,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-20T16:33:38.241Z"
-  },
-  {
-    "id": "art-1795189631737-xze44",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/greatai-review",
-    "published_at": "2026-11-20T04:56:45.000Z",
-    "og_image_url": null,
-    "title_ja": "オープンソースと非営利プロジェクト向け、AIと専門家による無料コードレビュー基盤「greatai」が登場",
-    "summary_ja": "「greatai」は、オープンソース開発や非営利団体を対象に、AI解析と専門家のダブルチェックを組み合わせた無料コードレビューを提供する新プラットフォームだ。 自動化されたAI解析でベースラインを整えた上で、最終的に人間が精度を担保するハイブリッド体制により、脆弱性の修正や品質向上の障壁を解消する。 予算が限られるプロジェクトにおいて、セキュリティの底上げと開発効率の両立を実現する実用的なリソースとなる。",
-    "translations": {
-      "ja": {
-        "title": "オープンソースと非営利プロジェクト向け、AIと専門家による無料コードレビュー基盤「greatai」が登場",
-        "summary": "「greatai」は、オープンソース開発や非営利団体を対象に、AI解析と専門家のダブルチェックを組み合わせた無料コードレビューを提供する新プラットフォームだ。 自動化されたAI解析でベースラインを整えた上で、最終的に人間が精度を担保するハイブリッド体制により、脆弱性の修正や品質向上の障壁を解消する。 予算が限られるプロジェクトにおいて、セキュリティの底上げと開発効率の両立を実現する実用的なリソースとなる。"
-      },
-      "en": {
-        "title": "greatai launches free AI-powered and human-verified code reviews for open source and nonprofit projects",
-        "summary": "greatai is a new platform designed to assist open source developers and nonprofit organizations by providing code reviews that combine automated AI analysis with expert human oversight. By running an AI layer to catch common issues first, the service allows developers to get rapid feedback before passing complex logic to human reviewers for a final stamp of approval. This hybrid approach effectively lowers the barrier to maintaining high security standards and code quality in resource-constrained environments. For project maintainers, it offers a sustainable way to handle technical debt without relying solely on limited volunteer bandwidth, proving that combining machine speed with human insight is the most viable path to securing public good software projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-20T15:47:11.737Z"
   },
   {
     "id": "art-1795182403541-tmfmp",
@@ -22945,32 +22970,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-19T06:32:02.300Z"
-  },
-  {
-    "id": "art-1795069910346-io9t5",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://monoist.itmedia.co.jp/mn/articles/2611/19/news044.html",
-    "published_at": "2026-11-18T23:30:00.000Z",
-    "og_image_url": "https://image.itmedia.co.jp/mn/articles/2611/19/cover_news044.jpg",
-    "title_ja": "PFU、ファンレスエッジAIデバイスと自然言語でAI解析を構築する「SIエージェント」を発表、EdgeTech+ 2026で参考出展",
-    "summary_ja": "PFUがEdgeTech+ 2026で、ファンレス構造のエッジAIデバイスと、自然言語入力によってAI解析機能を容易に構築できる「SIエージェント」を組み合わせた新ソリューションを参考出展した。 専門的なプログラミング知識がなくてもエッジ環境でのAI導入が可能となり、現場でのデータ処理や解析の自動化を加速させる。 開発者やSIerにとっては、エッジコンピューティングの構築工数を大幅に削減する実用的なツールとなるだろう。",
-    "translations": {
-      "ja": {
-        "title": "PFU、ファンレスエッジAIデバイスと自然言語でAI解析を構築する「SIエージェント」を発表、EdgeTech+ 2026で参考出展",
-        "summary": "PFUがEdgeTech+ 2026で、ファンレス構造のエッジAIデバイスと、自然言語入力によってAI解析機能を容易に構築できる「SIエージェント」を組み合わせた新ソリューションを参考出展した。 専門的なプログラミング知識がなくてもエッジ環境でのAI導入が可能となり、現場でのデータ処理や解析の自動化を加速させる。 開発者やSIerにとっては、エッジコンピューティングの構築工数を大幅に削減する実用的なツールとなるだろう。"
-      },
-      "en": {
-        "title": "PFU debuts fanless edge AI device alongside 'SI agent' for building AI analysis workflows via natural language input",
-        "summary": "PFU recently showcased a new 'Edge AI Device x SI Agent' solution at EdgeTech+ 2026, featuring robust, fanless hardware paired with an intelligent agent that constructs complex analysis workflows purely through natural language prompts. This setup effectively removes the barrier to entry for deploying AI at the edge, allowing teams to implement automated data processing without deep programming expertise. By simplifying the orchestration of edge computing tasks, this platform drastically reduces engineering overhead for industrial integration. For developers and systems integrators, this represents a significant shift toward democratizing edge AI deployment, making it easier to prototype and scale automated analytical systems without traditional coding bottlenecks in resource-constrained manufacturing or retail environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-19T06:31:50.346Z"
   },
   {
     "id": "art-1795069000558-38hqt",
