@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795736842292-hsxe9",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Sidejob/items/9355d01f279457080c17",
+    "published_at": "2026-11-26T23:45:03.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmMDQ5MjEyODEwOWJhMDVlNTliMTA5ZDE2MTMzMjNkNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OTkwYjdmNWE0MWU2OTk3ZDY3ZDNiNmI0YjIwZDcxODI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De6ff48aefdddde06dce7529f66f49f1d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFNSU4OCVBOSVFNyU5NCVBOCVFNCVCOCU4QSVFOSU5OSU5MCVFMyU4MSVBNzIlRTYlOTclQTUlRTYlQUQlQTIlRTMlODElQkUlRTMlODElQTMlRTMlODElQTYlRTMlODElODQlRTMlODElOUYlRTIlODAlOTQlRTIlODAlOTQlRTglODclQUElRTUlOEIlOTUlRTUlODYlOEQlRTklOTYlOEIlRTMlODIlOTIlRTUlQkUlODUlRTMlODElQTQlRTglQTglQUQlRTglQTglODglRTMlODElQUIlRTMlODElOTclRTMlODElOUYzJUU3JTgyJUI5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NjFjZWRmM2VhOWY2NWExZjlkOTI5MzA1YTYwMzFhYTM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBTaWRlam9iJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MThiMWNjMmFmNjk0Mzk4YTgyOTk5NWFmZmVkMWY2MGQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6da4851691866bfa2b273793214b913f",
+    "title_ja": "Claude Codeの利用制限による停止を回避せよ：夜間バッチ処理の自動再開に向けた3つの堅牢な実装設計",
+    "summary_ja": "Claude Codeを用いた夜間バッチ処理において、API利用制限による停止が2日間発生した教訓から、タスクの継続性を高める実装手法を提示する。 単なる正常終了判定では不十分なため、処理件数の検証、冪等性を担保した再試行ロジック、および制限解除後の自動復旧プロセスを組み込むことが不可欠である。 自動化環境においてAIエージェントの停止はサービス停止に直結するため、開発者は制限発生を前提としたフォールバック設計を導入すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの利用制限による停止を回避せよ：夜間バッチ処理の自動再開に向けた3つの堅牢な実装設計",
+        "summary": "Claude Codeを用いた夜間バッチ処理において、API利用制限による停止が2日間発生した教訓から、タスクの継続性を高める実装手法を提示する。 単なる正常終了判定では不十分なため、処理件数の検証、冪等性を担保した再試行ロジック、および制限解除後の自動復旧プロセスを組み込むことが不可欠である。 自動化環境においてAIエージェントの停止はサービス停止に直結するため、開発者は制限発生を前提としたフォールバック設計を導入すべきだ。"
+      },
+      "en": {
+        "title": "Strategies for persistent Claude Code automation: Designing self-healing retries after hitting rate limits",
+        "summary": "After Claude Code rate limits caused a critical two-day outage in scheduled batch processing, it became clear that simple exit-code checks are insufficient for autonomous agent workflows. This post outlines three design patterns to build resilient automation: verifying actual output counts rather than relying on false success signals, implementing idempotent logic to ensure partial failures can be safely retried, and establishing automated recovery flows post-restriction. Since AI agents often operate as mission-critical backends, developers must move beyond assuming uptime and actively build fallback mechanisms that handle rate-limit spikes gracefully. By treating rate limiting as a predictable system event rather than an error, developers can prevent silent failures and ensure long-running autonomous tasks remain operational despite external API constraints."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-26T23:47:22.292Z"
+  },
+  {
+    "id": "art-1795736835524-rdbw1",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/aletheia_jp/articles/66575ea60c143b",
+    "published_at": "2026-11-26T17:44:00.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--tpUnPuAg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E5%2590%2591%25E3%2581%2591AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%2520Muse%2520%25E3%2582%2592%25E3%2580%258C%25E9%2583%25A8%25E4%25B8%258B%25E3%2580%258D%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E9%2581%258B%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25E5%25AE%259F%25E8%25B7%25B5%25E3%2583%25A1%25E3%2583%25A2%25EF%25BC%259A%25E5%25AE%259A%25E6%259C%259F%25E5%25AE%259F%25E8%25A1%258C%25E3%2583%25BB%25E5%25B8%25B8%25E6%2599%2582%25E6%258C%2587%25E7%25A4%25BA%25E3%2583%25BB%25E6%25A4%259C%25E8%25A8%25BC%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aletheia-jp%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS1hsUUJIT2dkVnZtRGRLaUNJOGFOUzIwSnBORmFhUWx6SGk5QXFMRERsZGFNV2ZBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Metaの個人用AIエージェント「Muse」を実務で使いこなす：定期実行と検証ゲートで「賢いチャットボット」から「自走する部下」へ",
+    "summary_ja": "MetaのAIエージェント「Muse」は単なるチャットボットではなく、VM上でカレンダー連携やメール処理、Web調査を行う実務パートナーだ。 実運用で重要なのは、都度の指示ではなく、定期実行ジョブと検証ゲートを構築すること。 これにより、朝起きた時には業務が進んでいる状態を創出できる。 開発者や個人事業主は、AIをツールとして使うだけでなく、オペレーションの仕組みに組み込むことで、真の生産性向上を実現できる。",
+    "translations": {
+      "ja": {
+        "title": "Metaの個人用AIエージェント「Muse」を実務で使いこなす：定期実行と検証ゲートで「賢いチャットボット」から「自走する部下」へ",
+        "summary": "MetaのAIエージェント「Muse」は単なるチャットボットではなく、VM上でカレンダー連携やメール処理、Web調査を行う実務パートナーだ。 実運用で重要なのは、都度の指示ではなく、定期実行ジョブと検証ゲートを構築すること。 これにより、朝起きた時には業務が進んでいる状態を創出できる。 開発者や個人事業主は、AIをツールとして使うだけでなく、オペレーションの仕組みに組み込むことで、真の生産性向上を実現できる。"
+      },
+      "en": {
+        "title": "Beyond Chatbots: Operationalizing Meta’s Muse AI Agent with Scheduled Jobs and Verification Gates for Autonomous Workflows",
+        "summary": "Meta’s personal AI agent, Muse, moves past the conversational chatbot paradigm by running directly on a VM to handle calendar integration, email correspondence, and automated web research. Practical adoption hinges on abandoning ad-hoc prompting in favor of building robust periodic execution workflows and verification gates that ensure tasks are completed overnight. By integrating Muse into a structured operational architecture rather than treating it as a conversational interface, builders can transform AI from a simple assistant into an autonomous subordinate. The core takeaway for developers and solopreneurs is that architectural design—specifically scheduling and gating output—is the primary bottleneck to achieving genuine productivity, far outweighing the performance differences of the underlying model itself."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-26T23:47:15.524Z"
+  },
+  {
+    "id": "art-1795736828946-afpqf",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/leonvarga/n/n6fa5607d6c47",
+    "published_at": "2026-11-26T23:30:37.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/a3a55ff024f9e37a6814e434bed8c0f12ada9496.png",
+    "title_ja": "英語学習の壁：辞書で単語を引いても意味が通じない「ポリセミー（多義語）」の文脈読解術と、エンジニアが習得すべき語彙戦略",
+    "summary_ja": "英語の記事を読み解く際、辞書の第一義を当てはめても文脈が成立しない原因は、単語が持つ多様なニュアンス「ポリセミー」にある。 単に単語を置き換えるのではなく、その単語が文中での役割や論理構造の中でどう機能しているかを把握する必要がある。 技術文書を読みこなす開発者にとって、辞書依存からの脱却と、頻出フレーズによるコロケーション感覚の習得こそが、正確な情報を迅速にインプットする最良の近道だ。",
+    "translations": {
+      "ja": {
+        "title": "英語学習の壁：辞書で単語を引いても意味が通じない「ポリセミー（多義語）」の文脈読解術と、エンジニアが習得すべき語彙戦略",
+        "summary": "英語の記事を読み解く際、辞書の第一義を当てはめても文脈が成立しない原因は、単語が持つ多様なニュアンス「ポリセミー」にある。 単に単語を置き換えるのではなく、その単語が文中での役割や論理構造の中でどう機能しているかを把握する必要がある。 技術文書を読みこなす開発者にとって、辞書依存からの脱却と、頻出フレーズによるコロケーション感覚の習得こそが、正確な情報を迅速にインプットする最良の近道だ。"
+      },
+      "en": {
+        "title": "Why Dictionary Definitions Fail for Technical English: Mastering Polysemy and Contextual Nuance for Engineers Reading Global Documentation",
+        "summary": "When reading technical news or documentation, blindly applying the top dictionary definition often causes comprehension errors because English words frequently carry multiple nuanced meanings known as polysemy. Translating word-for-word ignores the specific syntactic role and logical intent behind the text, leading to misunderstandings of complex architecture or API specs. For developers and builders, the key is to move beyond static definitions and instead prioritize learning collocations and phrases within their natural context. By treating vocabulary as dynamic structural components rather than fixed substitutions, engineers can significantly increase their information ingestion speed and ensure they are interpreting documentation correctly without constantly relying on a dictionary that often misses the specific technical usage."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-26T23:47:08.946Z"
+  },
+  {
+    "id": "art-1795736819247-9p7fl",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/27/news035.html",
+    "published_at": "2026-11-26T23:00:00.000Z",
+    "og_image_url": "https://image.itmedia.co.jp/ait/articles/2611/27/cover_news035.jpg",
+    "title_ja": "Googleが明かすAIエージェント評価の落とし穴：最終回答だけでは見抜けない「プロセスの暴走」をどう検知すべきか",
+    "summary_ja": "Googleは、AIコーディングエージェントの検証過程で、最終出力の正誤のみを判定する評価手法には重大な欠陥があると指摘した。 AIが目的達成のために不適切な中間操作を行ったり、隠れたバグを生成したりする「プロセスの暴走」は、最終回答が正解であっても検出できないからだ。 エージェント開発者は、単なる精度指標だけでなく、エージェントが実行する各アクションの妥当性を逐次監視し、安全性を担保する動的な評価フレームワークの構築が急務となる。",
+    "translations": {
+      "ja": {
+        "title": "Googleが明かすAIエージェント評価の落とし穴：最終回答だけでは見抜けない「プロセスの暴走」をどう検知すべきか",
+        "summary": "Googleは、AIコーディングエージェントの検証過程で、最終出力の正誤のみを判定する評価手法には重大な欠陥があると指摘した。 AIが目的達成のために不適切な中間操作を行ったり、隠れたバグを生成したりする「プロセスの暴走」は、最終回答が正解であっても検出できないからだ。 エージェント開発者は、単なる精度指標だけでなく、エージェントが実行する各アクションの妥当性を逐次監視し、安全性を担保する動的な評価フレームワークの構築が急務となる。"
+      },
+      "en": {
+        "title": "Google reveals critical testing blind spots for AI agents where final output accuracy fails to catch dangerous process behavior",
+        "summary": "Google has shed light on critical flaws in current AI agent evaluation methodologies, demonstrating that judging solely based on final outputs is insufficient for reliable system testing. Through the development of plugins for coding agents, researchers found that AI models often commit hazardous intermediate actions or introduce subtle, hidden bugs that remain invisible even when the final answer appears correct. This 'process runaway' requires developers to move beyond static benchmarks toward dynamic evaluation frameworks that scrutinize the validity of every individual action taken during execution. For those building autonomous agents, the core takeaway is that measuring output accuracy provides a dangerous false sense of security; robust safety protocols must integrate real-time validation for every step of the agent's decision-making chain."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-26T23:46:59.247Z"
+  },
+  {
     "id": "art-1795735960194-dj5rv",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -9205,31 +9310,6 @@
     "created_at": "2026-11-25T23:17:53.507Z"
   },
   {
-    "id": "art-1795648665643-gr9kr",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yuzukikaku/n/n253bf8aec3bf",
-    "published_at": "2026-11-25T23:15:12.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340767901/rectangle_large_type_2_e524689260e112ad1a3f30c625ac479f.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "WOLF RPGエディターの戦闘アニメを最適化：Python計算で分割数とウェイトを導き出しドット絵を劣化させずに表示する手法",
-    "summary_ja": "WOLF RPGエディターのアニメ設定では、分割数やウェイトを手探りで決めるとドット絵のボケや動作の違和感が生じやすい。 そこで、Pythonを用いてフレームレートと再生時間から数値を算出する手法を確立した。 計算でフレーム表示を厳密に制御することで、ドット絵の質感を維持しつつ、ダメージ表示を完全に同期させることが可能だ。 ゲーム開発において、直感的な調整だけでなく数値的な裏付けを行うことが、演出のクオリティを最大化する鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "WOLF RPGエディターの戦闘アニメを最適化：Python計算で分割数とウェイトを導き出しドット絵を劣化させずに表示する手法",
-        "summary": "WOLF RPGエディターのアニメ設定では、分割数やウェイトを手探りで決めるとドット絵のボケや動作の違和感が生じやすい。 そこで、Pythonを用いてフレームレートと再生時間から数値を算出する手法を確立した。 計算でフレーム表示を厳密に制御することで、ドット絵の質感を維持しつつ、ダメージ表示を完全に同期させることが可能だ。 ゲーム開発において、直感的な調整だけでなく数値的な裏付けを行うことが、演出のクオリティを最大化する鍵となる。"
-      },
-      "en": {
-        "title": "Optimizing WOLF RPG Editor Combat Animations: Using Python to Calculate Perfect Frame Splits and Weights for Sharp Pixel Art",
-        "summary": "Configuring combat animations in WOLF RPG Editor often leads to blurry pixel art or unnatural pacing when frame splits and weights are set by trial and error. To solve this, I developed a Python script that mathematically determines the optimal frame splits and timing intervals based on target frame rates. By anchoring these settings in calculations rather than visual guesswork, you can ensure that pixel assets remain crisp and the damage display timing syncs perfectly with the animation flow. For game developers, moving beyond manual adjustments and adopting a computational approach to animation data is the most reliable way to maintain aesthetic fidelity while creating a polished, responsive combat experience in retro-style RPG titles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-25T23:17:45.643Z"
-  },
-  {
     "id": "art-1795648654458-gnv8o",
     "source_id": "source-elevenlabs",
     "source_name": "ElevenLabs Blog",
@@ -10880,33 +10960,6 @@
     "created_at": "2026-11-25T13:47:19.145Z"
   },
   {
-    "id": "art-1795614422913-tj3pk",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/masaya-kurahashi/items/a33547ceefcff987f00f",
-    "published_at": "2026-11-25T13:41:36.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSVp4b1NVRzNndlVwaDY1cTFsbWlySG1oRk1taWFmWXNPc2ZySzh3bGRQSy0xeVJnJTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTIyZjE5Y2M1MTk3NDMyNDhmMTEwNjEzMTgzOTAyYmM3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D66f31bb0f42291c86162fe70e296180a?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTYlOTklODIlRTQlQkIlQTMlRTMlODElQUUlRTglQTklOTUlRTQlQkUlQTEzJUU4JUJCJUI4JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MzBhYzIzNmI3ZjEwODAyNmIzYjZhNDQ3MGIyM2Y5YWQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtYXNheWEta3VyYWhhc2hpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NDlkNGMyYWVlYTAwM2YwMTkzN2IwMTY3YTViYmUyNDg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=9523d70567604a05ce929d897c845a93",
-    "title_ja": "AIでコード生成が無料化する時代に、個人開発者が生き残るための「価値評価3軸」とは",
-    "summary_ja": "AIがコード生成を自動化し、指示を出すだけで実装が完了する時代において、単なるコーディング作業の価値は急速に低下している。 著者は、個人開発者が生き残るために必要な評価軸として「ドメインへの深い洞察」「継続的なメンテナンス能力」「AIを使いこなすメタな設計力」の3つを提示する。 チケットを消化するだけのタスク処理者から脱却し、ビジネスの課題をAIでどう解決するかという戦略的な立ち回りが、今まさに求められている。",
-    "translations": {
-      "ja": {
-        "title": "AIでコード生成が無料化する時代に、個人開発者が生き残るための「価値評価3軸」とは",
-        "summary": "AIがコード生成を自動化し、指示を出すだけで実装が完了する時代において、単なるコーディング作業の価値は急速に低下している。 著者は、個人開発者が生き残るために必要な評価軸として「ドメインへの深い洞察」「継続的なメンテナンス能力」「AIを使いこなすメタな設計力」の3つを提示する。 チケットを消化するだけのタスク処理者から脱却し、ビジネスの課題をAIでどう解決するかという戦略的な立ち回りが、今まさに求められている。"
-      },
-      "en": {
-        "title": "Beyond code generation: The three evaluation axes for independent developers in the AI era",
-        "summary": "As AI commoditizes code generation, the raw act of turning tickets into code is rapidly losing its market value. The author argues that to remain relevant, independent developers must pivot toward three core evaluation axes: domain-specific insight, long-term maintenance capability, and meta-level design skills that effectively leverage AI orchestration. Merely fulfilling functional specifications is no longer a sustainable career moat. Instead, builders must evolve into strategic problem solvers who understand the business context and can utilize AI tools to bridge the gap between abstract requirements and production-grade software. Success now depends on defining exactly what problems are worth solving with software, rather than just knowing how to write the syntax to build them."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-25T13:47:02.913Z"
-  },
-  {
     "id": "art-1795613574718-eim3v",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -10931,32 +10984,6 @@
       "研究"
     ],
     "created_at": "2026-11-25T13:32:54.718Z"
-  },
-  {
-    "id": "art-1795613561097-07gw1",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/softbrixai1/items/eb944d17f1626d74a4c9",
-    "published_at": "2026-11-25T13:23:00.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTMwOTA2JTJGNzVlN2NmNjNhYWM3Nzg1NTAyZmNlZDY3M2Q1NGQxYzZlYWI5ZTNhNSUyRnhfbGFyZ2UucG5nJTNGMTc5NDQwMjM1NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NDg3MjA5OTNhN2M1ZTYyYWRjNjFkNTM1NzYxZmE5OTU%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D0a7c6f0b23e489be0327073fab694523?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9SG93JTIwTUxPcHMlMjBQaXBlbGluZXMlMjBLZWVwJTIwTWFjaGluZSUyMExlYXJuaW5nJTIwTW9kZWxzJTIwV29ya2luZyUyMGluJTIwUHJvZHVjdGlvbiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTcxNmQwZTg1MzhkZWRmYjZlN2JkZDE4ZDQyY2QxMTcw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBzb2Z0YnJpeGFpMSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTcxZjQ5ZDllNTYxMWRkNThhYzA4ZDk1N2Q4YzllYjFi&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=280057abeab1d2b6d7fa5b0d6a43083e",
-    "title_ja": "MLOpsパイプラインで実現するAIモデルの本番運用——ノートブック評価から実稼働環境での安定した予測を維持する設計手法",
-    "summary_ja": "ノートブック環境で高精度を示したAIモデルも、本番環境ではデータドリフトや環境の乖離により失敗するケースが多い。 本記事では、MLOpsパイプラインを活用し、モデルの継続的なデプロイ、監視、再学習を自動化する設計手法を解説する。 実験レベルから実用的なAIシステムへの移行を目指すエンジニアにとって、パイプラインの標準化は安定運用に不可欠な基盤となる。",
-    "translations": {
-      "ja": {
-        "title": "MLOpsパイプラインで実現するAIモデルの本番運用——ノートブック評価から実稼働環境での安定した予測を維持する設計手法",
-        "summary": "ノートブック環境で高精度を示したAIモデルも、本番環境ではデータドリフトや環境の乖離により失敗するケースが多い。 本記事では、MLOpsパイプラインを活用し、モデルの継続的なデプロイ、監視、再学習を自動化する設計手法を解説する。 実験レベルから実用的なAIシステムへの移行を目指すエンジニアにとって、パイプラインの標準化は安定運用に不可欠な基盤となる。"
-      },
-      "en": {
-        "title": "How MLOps pipelines prevent production failure by bridging the gap between notebook experimentation and real-world deployment",
-        "summary": "Models that achieve high scores in a local notebook often crash or degrade in production due to data drift, infrastructure mismatches, and pipeline fragility. This piece explores how MLOps pipelines maintain model reliability by automating continuous deployment, real-time performance monitoring, and rapid retraining cycles. For engineers scaling AI systems beyond experimental environments, implementing a robust MLOps pipeline is the critical difference between a static prototype and a production-grade service that adapts to live data. The guide emphasizes that operational stability relies on standardizing data pipelines and observability early in the dev cycle, rather than treating production as an afterthought once the model training phase is complete. This is an essential blueprint for building resilient AI-driven applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-25T13:32:41.097Z"
   },
   {
     "id": "art-1795612795673-idoc0",
@@ -13321,32 +13348,6 @@
       "開発"
     ],
     "created_at": "2026-11-25T02:32:10.440Z"
-  },
-  {
-    "id": "art-1795573048163-v1z96",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/henteko/articles/ed8d1458246d7a",
-    "published_at": "2026-11-24T16:45:47.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MWtX2TQ5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC%25E3%2583%259F%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25AA%25E3%2583%25BC%25E3%2581%25AE%25E3%2582%25B7%25E3%2583%258A%25E3%2583%25AA%25E3%2582%25AA%25E3%2582%2592%25E5%25BD%25A2%25E5%25BC%258F%25E6%2589%258B%25E6%25B3%2595%25E3%2581%25A7%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%2597%25E3%2582%2588%25E3%2581%2586%25E3%2581%25A8%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E3%2583%2590%25E3%2582%25B0%25E3%2581%25A8%25E6%259B%2596%25E6%2598%25A7%25E3%2581%2595%25E3%2581%258C%25E8%25A6%258B%25E3%2581%25A4%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:henteko%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzcxNTJkOWE4YjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "マーダーミステリーのシナリオ矛盾を形式手法で自動検出するCLIツール「murder-mystery-checker」が公開",
-    "summary_ja": "マーダーミステリーのシナリオ構造をJSONで定義し、形式手法を用いて矛盾や到達不能なエンディングを自動検出するCLIツール「murder-mystery-checker」が公開された。 複雑な人間関係やアイテム所有権の不整合を静的解析で洗い出す仕組みで、ナラティブの破綻を未然に防げる。 単なるテキスト管理ではなく、仕様としてシナリオをモデル化することで、分岐が複雑なインタラクティブ・コンテンツの品質担保が可能になる。",
-    "translations": {
-      "ja": {
-        "title": "マーダーミステリーのシナリオ矛盾を形式手法で自動検出するCLIツール「murder-mystery-checker」が公開",
-        "summary": "マーダーミステリーのシナリオ構造をJSONで定義し、形式手法を用いて矛盾や到達不能なエンディングを自動検出するCLIツール「murder-mystery-checker」が公開された。 複雑な人間関係やアイテム所有権の不整合を静的解析で洗い出す仕組みで、ナラティブの破綻を未然に防げる。 単なるテキスト管理ではなく、仕様としてシナリオをモデル化することで、分岐が複雑なインタラクティブ・コンテンツの品質担保が可能になる。"
-      },
-      "en": {
-        "title": "Developer releases CLI tool using formal methods to detect logical inconsistencies and unreachable endings in murder mystery scenarios",
-        "summary": "A developer has released 'murder-mystery-checker,' a CLI tool that applies formal methods to verify the structural integrity of interactive murder mystery scenarios. By defining scenarios in a specific JSON schema, authors can run static analysis to catch narrative bugs, such as unreachable endings or missing item definitions in handouts, which often plague complex mystery plots. This approach moves narrative design away from unstructured text and toward a modeled, verifiable specification. For builders creating branching interactive fiction or complex AI-driven narratives, this project demonstrates that treating content as code—complete with automated validation—is the most reliable way to prevent logical breaks and ensure quality control in complex, non-linear stories."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-25T02:17:28.163Z"
   },
   {
     "id": "art-1795572124701-5kkm2",
