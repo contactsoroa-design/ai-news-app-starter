@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795734158847-jhbld",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/hiouchiy/articles/5b3ffde8e819e6",
+    "published_at": "2026-11-26T10:43:18.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ega_F80S--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%25BB%25E5%2583%258F%25E7%2594%259F%25E6%2588%2590%2520Nemotron-Labs-Image-30B-A3B%25E3%2582%2592Databricks%2520AI%2520Runtime%2520%25E3%2581%25AE%2520...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hiroshi%2520Ouchiyama%2520...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM4YjIxMDI2YzcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "NVIDIAの画像生成LLM「Nemotron-Labs-Image-30B-A3B」をDatabricksのvLLM環境で実装、推論高速化を実証",
+    "summary_ja": "NVIDIAが公開した「Nemotron-Labs-Image-30B-A3B」は、拡散モデルではなくLLMとして画像をトークン単位で生成する特異なモデルだ。 この特性に着目し、DatabricksのAI Runtime v6環境において、カスタムイメージ不要でvLLMを用いた推論を実行した。 結果として、LLM推論基盤をそのまま画像生成に転用できることを確認した。 本検証は、LLM推論エンジンの効率を画像生成タスクに適用する新たな最適化手法を示唆している。",
+    "translations": {
+      "ja": {
+        "title": "NVIDIAの画像生成LLM「Nemotron-Labs-Image-30B-A3B」をDatabricksのvLLM環境で実装、推論高速化を実証",
+        "summary": "NVIDIAが公開した「Nemotron-Labs-Image-30B-A3B」は、拡散モデルではなくLLMとして画像をトークン単位で生成する特異なモデルだ。 この特性に着目し、DatabricksのAI Runtime v6環境において、カスタムイメージ不要でvLLMを用いた推論を実行した。 結果として、LLM推論基盤をそのまま画像生成に転用できることを確認した。 本検証は、LLM推論エンジンの効率を画像生成タスクに適用する新たな最適化手法を示唆している。"
+      },
+      "en": {
+        "title": "Running NVIDIA's image-generating LLM 'Nemotron-Labs-Image-30B-A3B' on Databricks with vLLM for faster inference",
+        "summary": "NVIDIA recently released Nemotron-Labs-Image-30B-A3B, a unique model that treats image generation as a token-based LLM task rather than using traditional diffusion methods. Because the architecture mirrors standard LLMs, it can theoretically leverage existing high-performance inference engines like vLLM. This experiment successfully deployed the model within Databricks' AI Runtime v6 environment without requiring custom container images. The implementation confirms that standard LLM inference stacks are fully capable of serving this autoregressive image generation approach out of the box. This result demonstrates a significant architectural shift, suggesting that builders can repurpose efficient LLM serving infrastructure to handle image generation tasks directly, drastically simplifying the deployment pipeline for advanced autoregressive visual models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "画像生成"
+    ],
+    "created_at": "2026-11-26T23:02:38.847Z"
+  },
+  {
+    "id": "art-1795734152647-lwmfi",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/soloaiplaybook/n/n20dbc9a1a8e9",
+    "published_at": "2026-11-26T22:30:15.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341230597/rectangle_large_type_2_1fee7d24bc6bbd5b99ee9320f1742b6d.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Amazon年収7,750万円を捨てたエンジニア、個人コミュニティ「Small Bets」を約5.6億円で売却——成功の再現性を検証",
+    "summary_ja": "Amazonのエンジニアとして年収約7,750万円を得ていたダニエル・ヴァッサロ氏は、自身の経験をプロダクト化する道を選び、個人コミュニティ「Small Bets」を立ち上げた。 同サービスは2年間で約1.28億円を売り上げ、最終的に約5.6億円でGumroadに売却された。 AIが自動でコードを書く現代において、なぜ「個人の経験の共有」が数億円規模の価値を生んだのか。",
+    "translations": {
+      "ja": {
+        "title": "Amazon年収7,750万円を捨てたエンジニア、個人コミュニティ「Small Bets」を約5.6億円で売却——成功の再現性を検証",
+        "summary": "Amazonのエンジニアとして年収約7,750万円を得ていたダニエル・ヴァッサロ氏は、自身の経験をプロダクト化する道を選び、個人コミュニティ「Small Bets」を立ち上げた。 同サービスは2年間で約1.28億円を売り上げ、最終的に約5.6億円でGumroadに売却された。 AIが自動でコードを書く現代において、なぜ「個人の経験の共有」が数億円規模の価値を生んだのか。"
+      },
+      "en": {
+        "title": "Former Amazon engineer ditches $500k salary to build and sell his personal community Small Bets for $3.6M",
+        "summary": "Daniel Vassallo, once an Amazon engineer earning over $500,000 annually, pivoted to selling his own expertise instead of his labor. He launched \"Small Bets,\" a community that generated roughly $850,000 in revenue with high profit margins over two years before being acquired by Gumroad for approximately $3.6 million. In an era where AI can handle commoditized coding tasks, Vassallo’s exit proves that curated, human-centric experience remains a high-value asset. This analysis dissects his specific productization strategy—transforming niche technical knowledge into scalable digital assets—and maps out a repeatable framework for solo founders. The takeaway is that your most valuable intellectual property isn't just your ability to code, but the unique methodology you apply to solve specific problems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-26T23:02:32.647Z"
+  },
+  {
+    "id": "art-1795734146143-1a6q9",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://kendell.dev/blog/venicewrapper/",
+    "published_at": "2026-11-26T22:47:04.000Z",
+    "og_image_url": null,
+    "title_ja": "Venice AIの「Potemkin Inference」とは？OpenRouter経由でLLMの応答を改ざんする手法と対策",
+    "summary_ja": "Venice AIが利用する「Potemkin Inference」の手法が公開された。 これはOpenRouterのAPIレスポンスをインターセプトし、モデルの名前や内容を偽装してユーザーに別の回答を表示させる手法である。 開発者は、APIエンドポイントの信頼性を検証せず外部プロキシやラッパーを安易に利用することが、重大なセキュリティ上の脆弱性を招く恐れがあることを認識する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Venice AIの「Potemkin Inference」とは？OpenRouter経由でLLMの応答を改ざんする手法と対策",
+        "summary": "Venice AIが利用する「Potemkin Inference」の手法が公開された。 これはOpenRouterのAPIレスポンスをインターセプトし、モデルの名前や内容を偽装してユーザーに別の回答を表示させる手法である。 開発者は、APIエンドポイントの信頼性を検証せず外部プロキシやラッパーを安易に利用することが、重大なセキュリティ上の脆弱性を招く恐れがあることを認識する必要がある。"
+      },
+      "en": {
+        "title": "What is Potemkin Inference? How Venice AI intercepts and mimics LLM responses via OpenRouter",
+        "summary": "A new deep dive into 'Potemkin Inference' reveals how Venice AI allegedly uses a wrapper around OpenRouter to intercept and mask LLM API responses, essentially spoofing model identities to end users. This technique allows a service to claim it is running a specific proprietary model while actually serving content from a potentially cheaper or different backend source. The technical breakdown highlights a massive trust issue for developers: when you proxy your API calls through third-party wrappers, you lose the guarantee of provenance for the data you receive. For builders integrating AI agents, this serves as a critical warning to audit your API middleware providers carefully; if you cannot verify the model's signature or origin directly, you are blindly trusting the man-in-the-middle."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-26T23:02:26.143Z"
+  },
+  {
+    "id": "art-1795734109765-cphua",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/mrmrmr/items/8cb45bfb883391e7795d",
+    "published_at": "2026-11-26T23:00:05.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzI3NDE5JTJGMTJmOWI5NDdmYWQxMDJmMzI1ZTdhM2MxY2I1YTNmOTc2OWRjYjY4ZCUyRmxhcmdlLnBuZyUzRjE3NzM1Nzk2NTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTg4ZjQ2OWIxYjE5MmE2NWQ5MWIxOTc1NDc4ZDcwYjhj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De95bedc85e3356abe6a208a41038b450?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU2JTk2JTg3JUU3JUIzJUJCJUUzJTgxJUE3JUUzJTgyJTgyMyVFNSU4OCU4NiVFMyU4MSVBNyVFNyU5MCU4NiVFOCVBNyVBMyVFMyU4MCU5MUclRTYlQTQlOUMlRTUlQUUlOUElRTMlODAlOENBSSVFNSU4MCVBQiVFNyU5MCU4NiVFMyU4MyVCQiVFNSU4NSVBQyVFNSVCOSVCMyVFNiU4MCVBNyVFMyU4MyVCQiVFMyU4MyU5MCVFMyU4MiVBNCVFMyU4MiVBMiVFMyU4MiVCOSVFMyU4MCU4RCVFNiU5NCVCQiVFNyU5NSVBNSVFRiVCRCU5Q0FJJUUzJTgxJUFGJTIyJUU1JTgxJThGJUUzJTgxJUEzJUUzJTgxJTlGJUU2JTk1JTk5JUU3JUE3JTkxJUU2JTlCJUI4JUUzJTgxJUE3JUU1JUFEJUE2JUUzJTgxJUI2JUU3JTk0JTlGJUU1JUJFJTkyJTIyJUUzJTgxJUE3JUU4JUE2JTlBJUUzJTgxJTg4JUUzJTgyJThCJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZWU4MmYyMTM2YTczZmIzNjBiZGZkMzk3Y2NlMTcwMjA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtcm1ybXImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NWIwMjVjOTJjZjhmZjExZjU4NzhmZDc0M2JhOTQ4ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=59a43c9a344c3d806b85769320801dc2",
+    "title_ja": "G検定の難所「AI倫理・公平性・バイアス」を文系視点で攻略する学習法｜AIを「偏った教科書で学ぶ生徒」と見なす思考法",
+    "summary_ja": "G検定において多くの受験者が躓く「AI倫理・公平性・バイアス」分野を、文系出身エンジニアの視点で効率的に攻略する方法を解説する。 複雑な用語を暗記するのではなく、AIを「偏ったデータ（教科書）で学習する未熟な生徒」と定義することで、バイアスの発生メカニズムと対策の要点を直感的に理解するアプローチだ。 法律論に偏りがちな学習に「AIモデルの特性」という本質的な視点を加えることで、試験対策だけでなく現場でのAI活用にも活きる深い理解が得られる。",
+    "translations": {
+      "ja": {
+        "title": "G検定の難所「AI倫理・公平性・バイアス」を文系視点で攻略する学習法｜AIを「偏った教科書で学ぶ生徒」と見なす思考法",
+        "summary": "G検定において多くの受験者が躓く「AI倫理・公平性・バイアス」分野を、文系出身エンジニアの視点で効率的に攻略する方法を解説する。 複雑な用語を暗記するのではなく、AIを「偏ったデータ（教科書）で学習する未熟な生徒」と定義することで、バイアスの発生メカニズムと対策の要点を直感的に理解するアプローチだ。 法律論に偏りがちな学習に「AIモデルの特性」という本質的な視点を加えることで、試験対策だけでなく現場でのAI活用にも活きる深い理解が得られる。"
+      },
+      "en": {
+        "title": "Mastering the 'AI Ethics and Bias' Section of the G-Test: A Non-Technical Approach to Understanding Model Fairness",
+        "summary": "The 'AI Ethics, Fairness, and Bias' section of the G-Test often confuses candidates who focus solely on rote memorization of regulations. A more effective strategy for non-technical developers is to reframe AI models as 'students learning from biased textbooks.' This conceptual pivot helps you intuitively grasp why data imbalance leads to model prejudice and how mitigation strategies actually function, rather than just reciting legal statutes. By shifting the focus from abstract legal theory to the practical reality of machine learning model development, you build a mental framework that survives the test and informs real-world AI implementation. This guide breaks down the complex intersection of data science and ethics into actionable, easy-to-remember logic for any professional."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-26T23:01:49.765Z"
+  },
+  {
     "id": "art-1795733311136-rr2xw",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -9661,33 +9766,6 @@
     "created_at": "2026-11-25T21:46:56.728Z"
   },
   {
-    "id": "art-1795642480262-e9q0f",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/soloaiplaybook/n/na62dd82afa84",
-    "published_at": "2026-11-25T21:26:27.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340780331/rectangle_large_type_2_38535a473bb67ff069b6a1f90faaf627.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "半年で約124億円のバイアウト——個人開発AIアプリ作成ツール「Base44」がWixに全株売却、ARR1.5億円超えの軌跡と再現性",
-    "summary_ja": "イスラエルの個人開発者マオル・シュロモ氏は、AIでアプリを生成する「Base44」を創業し、半年間でユーザー25万人、ARR約1.5億円の規模へ急成長させた。 外部資本を入れず株式を100%保有したまま、2025年6月にWixへ約124億円で売却。 AIコーディングツールを活用して、市場需要を即座に収益化する個人開発の「超速エグジット」モデルは、現代のAIエンジニアにとって新たな再現可能な成功事例となった。",
-    "translations": {
-      "ja": {
-        "title": "半年で約124億円のバイアウト——個人開発AIアプリ作成ツール「Base44」がWixに全株売却、ARR1.5億円超えの軌跡と再現性",
-        "summary": "イスラエルの個人開発者マオル・シュロモ氏は、AIでアプリを生成する「Base44」を創業し、半年間でユーザー25万人、ARR約1.5億円の規模へ急成長させた。 外部資本を入れず株式を100%保有したまま、2025年6月にWixへ約124億円で売却。 AIコーディングツールを活用して、市場需要を即座に収益化する個人開発の「超速エグジット」モデルは、現代のAIエンジニアにとって新たな再現可能な成功事例となった。"
-      },
-      "en": {
-        "title": "Solo dev sells AI app builder Base44 to Wix for $80M: How a six-month side project hit $1M+ ARR with zero funding",
-        "summary": "Israeli developer Maor Shlomo achieved a remarkable exit by selling his AI-powered app generation platform, Base44, to Wix for $80 million in cash just six months after launch. With no external funding and Shlomo retaining 100% equity, the platform exploded to 250,000 users and an ARR surpassing $1 million within half a year. By leveraging AI coding tools to rapidly translate user prompts into functional software, Shlomo proved that solo founders can bypass traditional venture capital cycles to capture immediate market demand. This story outlines a new, repeatable playbook for modern AI-native builders: shipping a highly focused tool that solves an urgent workflow problem, scaling it without overhead, and securing an acquisition before competitors catch up."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-25T21:34:40.262Z"
-  },
-  {
     "id": "art-1795642396234-ks7td",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -11039,32 +11117,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-25T12:33:22.436Z"
-  },
-  {
-    "id": "art-1795609960964-oc8z1",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/plavookac/items/158924dcc0eed62524c9",
-    "published_at": "2026-11-25T11:48:52.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS0hKcnZmZkZiTFlFSlZDRUtlUVBRcU9lVjNiZVMtSmZUN2VsQk9NZzlfcFVOQmN0TVM4QSUzRHM5Ni1jP2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1hODUxZGVjOTU5YzFmZDM4MWVlNzAzZjE4ZWUwNGRmMw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D6af794b07290828267324c0202813f5d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklMjAlRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglRTMlODElQUIlMjBXb3JkUHJlc3MlMjAlRTMlODIlOTIlRTYlOTMlOEQlRTQlQkQlOUMlRTMlODElOTUlRTMlODElOUIlRTMlODIlOEI0JUUzJTgxJUE0JUUzJTgxJUFFJUU3JUI1JThDJUU4JUI3JUFGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NzFlNzlkMTgxMWVjYzYyOWE4ODIxMjQxZjQ4OTg5NDA&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBwbGF2b29rYWMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yZjBlODcxYTgwZjc2NTA5NWQ2YmVkNmViMjQyMTYzNQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3bba60fe06772fa077b9828e2a93c3e8",
-    "title_ja": "WordPress 7.0で進むAI統合：エージェントにサイト操作を委ねるための「Abilities API」など4つの実装経路を徹底解説",
-    "summary_ja": "WordPressは6.9で導入されたAbilities APIや、7.0で実装されたAI Client、Connectors APIにより、AIエージェントによる自動操作が現実的な選択肢となった。 本記事では、AIエージェントがWordPressを操作する主要な4つの実装手法を技術的に整理し、それぞれの設計意図を詳述する。 プラグイン開発やサイト運営において、AI連携を「外部連携」から「コア機能の活用」へシフトさせることが、今後の開発効率を高める重要な分岐点となる。",
-    "translations": {
-      "ja": {
-        "title": "WordPress 7.0で進むAI統合：エージェントにサイト操作を委ねるための「Abilities API」など4つの実装経路を徹底解説",
-        "summary": "WordPressは6.9で導入されたAbilities APIや、7.0で実装されたAI Client、Connectors APIにより、AIエージェントによる自動操作が現実的な選択肢となった。 本記事では、AIエージェントがWordPressを操作する主要な4つの実装手法を技術的に整理し、それぞれの設計意図を詳述する。 プラグイン開発やサイト運営において、AI連携を「外部連携」から「コア機能の活用」へシフトさせることが、今後の開発効率を高める重要な分岐点となる。"
-      },
-      "en": {
-        "title": "WordPress 7.0 deep dive: Four technical pathways for integrating AI agents with core site operations and APIs",
-        "summary": "With the release of the Abilities API in WordPress 6.9 and the subsequent launch of the AI Client and Connectors API in version 7.0, AI-driven automation has moved from experimental plugins to core platform capability. This analysis details the four primary technical pathways available for developers to grant AI agents programmatic control over WordPress environments, outlining the architecture behind each implementation. By shifting AI integration strategies from external service hacks to leveraging native core APIs, developers can achieve deeper automation and higher reliability. The practical takeaway for builders is clear: stop relying on brittle screen scraping or third-party hacks, and start architecting your WordPress-based AI agents around these new, officially supported connective layers for superior long-term site interoperability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-25T12:32:40.964Z"
   },
   {
     "id": "art-1795609032326-mgis1",
@@ -12760,33 +12812,6 @@
     "created_at": "2026-11-25T05:32:10.951Z"
   },
   {
-    "id": "art-1795583888642-fgav0",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.decube.io/ai-analytics",
-    "published_at": "2026-11-25T02:37:52.000Z",
-    "og_image_url": "https://cdn.prod.website-files.com/63ccf2efea97bef692d278ea/69cb690cf12ae1d9c497f032_Open-graph-image-updated_2026-OPT.jpg",
-    "title_ja": "AI活用分析プラットフォーム「Decube」が登場—チームでのAI利用状況可視化とエージェント連携を最適化",
-    "summary_ja": "Decubeは、AI活用状況をチーム単位で可視化し、分析・運用を最適化するプラットフォームだ。 単なるチャットログの集計にとどまらず、エージェントが生成するデータやAIワークフローのパフォーマンスをモニタリングし、運用コストや推論の正確性を管理できる。 開発者は、バラバラになりがちな社内のAI活用状況を一元管理することで、無駄なAPI利用の削減や、チーム全体でのAI導入効果の測定が容易になる。",
-    "translations": {
-      "ja": {
-        "title": "AI活用分析プラットフォーム「Decube」が登場—チームでのAI利用状況可視化とエージェント連携を最適化",
-        "summary": "Decubeは、AI活用状況をチーム単位で可視化し、分析・運用を最適化するプラットフォームだ。 単なるチャットログの集計にとどまらず、エージェントが生成するデータやAIワークフローのパフォーマンスをモニタリングし、運用コストや推論の正確性を管理できる。 開発者は、バラバラになりがちな社内のAI活用状況を一元管理することで、無駄なAPI利用の削減や、チーム全体でのAI導入効果の測定が容易になる。"
-      },
-      "en": {
-        "title": "Decube launches AI analytics platform for teams to monitor usage, optimize workflows, and prepare for autonomous agents",
-        "summary": "Decube has launched a new analytics platform designed to help teams monitor their collective AI usage, visualize performance metrics, and prepare existing workflows for autonomous agents. Unlike standard chat logging tools, this platform tracks the data generated by AI agents and monitors the efficiency of specific LLM pipelines, allowing teams to manage inference costs and response accuracy more effectively. By unifying scattered data across different AI services, developers can easily identify redundant API spending and measure the actual ROI of AI implementation. For engineering teams, the platform provides the necessary visibility to transition from simple prompt experiments into reliable, production-ready AI operations, ensuring that the entire organization's AI usage remains optimized, transparent, and scalable as agent complexity grows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-25T05:18:08.642Z"
-  },
-  {
     "id": "art-1795583832308-epxpd",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -13727,33 +13752,6 @@
       "開発"
     ],
     "created_at": "2026-11-25T00:01:38.395Z"
-  },
-  {
-    "id": "art-1795563206801-wk14c",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/kentaro36/articles/sakana-ai-six-papers-2026",
-    "published_at": "2026-11-24T23:12:20.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--qw04N6BY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Sakana%2520AI%25E3%2581%25AE2026%25E5%25B9%25B4%25E8%25AB%2596%25E6%2596%25876%25E6%259C%25AC%25E3%2581%25A7%25E8%25AA%25AD%25E3%2582%2580%25E3%2580%258C%25E7%25A4%25BE%25E4%25BC%259A%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%25AB%25E5%2590%2591%25E3%2581%258B%25E3%2581%2586AI%25E3%2580%258D%25EF%25BC%259A%25E9%259F%25B3%25E5%25A3%25B0%25E5%25AF%25BE%25E8%25A9%25B1%25E3%2581%258B%25E3%2582%2589%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E7%25B7%25A8%25E6%2588%2590%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:SeaOtter%2520%2520%2528Kentaro...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUzNjRkZTA1NTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Sakana AIが提唱する「社会実装のためのAI」：音声対話から推論コスト削減、モデル編成まで6本の最新研究を紐解く",
-    "summary_ja": "Sakana AIが2026年に発表した6本の論文を軸に、同社が目指すAIの社会実装と産業応用へのアプローチを解説する。 研究内容は、自然な音声対話の実現、金融試験を通じた知能評価、企業経営の自動化と監査、偽情報検知、推論コストの劇的な低減、そして複数のモデルを最適に束ねる編成手法まで多岐にわたる。 理論的なモデル構築から一歩進み、現実世界の複雑な課題を解決するためにAIをどう統合・活用すべきか、実践的な開発視点を示唆する内容となっている。",
-    "translations": {
-      "ja": {
-        "title": "Sakana AIが提唱する「社会実装のためのAI」：音声対話から推論コスト削減、モデル編成まで6本の最新研究を紐解く",
-        "summary": "Sakana AIが2026年に発表した6本の論文を軸に、同社が目指すAIの社会実装と産業応用へのアプローチを解説する。 研究内容は、自然な音声対話の実現、金融試験を通じた知能評価、企業経営の自動化と監査、偽情報検知、推論コストの劇的な低減、そして複数のモデルを最適に束ねる編成手法まで多岐にわたる。 理論的なモデル構築から一歩進み、現実世界の複雑な課題を解決するためにAIをどう統合・活用すべきか、実践的な開発視点を示唆する内容となっている。"
-      },
-      "en": {
-        "title": "Sakana AI pivots to social implementation: 6 key research papers covering voice interaction, inference cost, and model composition",
-        "summary": "This breakdown of six recent papers from Sakana AI explores the company’s strategic shift toward AI for real-world social and industrial implementation. The research covers a diverse operational spectrum, including fluid voice interaction, AI evaluation via financial certification exams, automated corporate management with audit capabilities, misinformation detection, and techniques to lower inference costs by orchestrating multiple model compositions. Moving beyond pure model generation, these papers address the practical friction points of integrating AI into complex societal tasks. For builders, the core takeaway is the growing necessity of modular model architectures and cost-effective inference strategies to bridge the gap between academic research and viable, industry-grade applications that can actually handle high-stakes, multi-step professional workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-24T23:33:26.801Z"
   },
   {
     "id": "art-1795563003371-zotvx",
