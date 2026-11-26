@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795724233913-plulv",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kaguraai/articles/grow-memory-update-forget",
+    "published_at": "2026-11-26T14:37:52.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--SNuoAJ_L--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%25E6%259B%25BF%25E3%2581%2588%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581AI%25E3%2581%258C%25E5%258F%25A4%25E3%2581%2584%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kagura%2520AI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzAxYzU5YWRkYjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントの「古いライブラリ参照」問題を解決する記憶管理術：update_memoryと履歴の適切な制御手法",
+    "summary_ja": "ライブラリ移行後もAIが旧版コードを提案してしまう現象は、記憶管理の最適化で解決できる。 新旧の知識が混在する際、記憶を上書きするだけでは不十分な場合が多い。 既存の記憶をupdate_memoryで編集し、古い版の参照を明示的に制御することで、AIが誤った情報に基づいてコードを生成することを防げる。 開発者は、新しいコードを学ばせるだけでなく、AIが過去の決定をいかに扱うかを考慮し、必要に応じて履歴から古い参照を除外または保持する運用が求められる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの「古いライブラリ参照」問題を解決する記憶管理術：update_memoryと履歴の適切な制御手法",
+        "summary": "ライブラリ移行後もAIが旧版コードを提案してしまう現象は、記憶管理の最適化で解決できる。 新旧の知識が混在する際、記憶を上書きするだけでは不十分な場合が多い。 既存の記憶をupdate_memoryで編集し、古い版の参照を明示的に制御することで、AIが誤った情報に基づいてコードを生成することを防げる。 開発者は、新しいコードを学ばせるだけでなく、AIが過去の決定をいかに扱うかを考慮し、必要に応じて履歴から古い参照を除外または保持する運用が求められる。"
+      },
+      "en": {
+        "title": "Solving the AI hallucination of legacy code: Managing memory states and library migration history for agents",
+        "summary": "When migrating between libraries, AI agents often revert to generating code based on stale, high-confidence memory records rather than current standards. Simply overwriting information is often insufficient because the agent may still recall obsolete decision-making patterns. To resolve this, developers must explicitly edit memory records using update_memory and carefully control historical context to prevent the agent from retrieving legacy configurations. By utilizing flags like include_superseded=true during recall, you can force the agent to reconcile past decisions against current updates. The critical takeaway for builders is that memory management isn't just about feeding an agent new information; it is about actively pruning or overriding outdated precedents to ensure the agent’s generated code reflects the current state of your codebase."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-26T20:17:13.913Z"
+  },
+  {
+    "id": "art-1795724218854-mlacl",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/cushionA/items/6797204e41141b2fac59",
+    "published_at": "2026-11-26T19:03:31.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjQyODEzMjc0JTNGdiUzRDQ_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWFmM2ZkMjQyZTcxMTA2Y2Q3MjE4OTljN2MxNDZjMTAw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D3519cc45f1453f22ef4c3b27479fa8ae?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU2JTk2JUIwJUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgyJUIwJUUzJTgzJUE5JUUzJTgzJTlGJUUzJTgzJUIzJUUzJTgyJUIwJUU4JUE4JTgwJUU4JUFBJTlFJUUzJTgwJThFJUU2JTk3JUE1JUU2JTlDJUFDJUU4JUFBJTlFJUUzJTgwJThGJUUzJTgxJUFFJUUzJTgzJTk5JUUzJTgyJUI5JUUzJTgzJTg4JUUzJTgzJTk3JUUzJTgzJUE5JUUzJTgyJUFGJUUzJTgzJTg2JUUzJTgyJUEzJUUzJTgyJUI5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MTI2NjNiMDIxNjViODY4MjgyY2QzZTUzZTY4MzdhMzQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBjdXNoaW9uQSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWJiMTA5YWZiMTJmM2MyZDdlYjAzNjUxOTlmOThjMzYz&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=7f38de05f5cbffbae327a1ff734739f6",
+    "title_ja": "AI時代の新常識「プログラミング言語『日本語』」：Claude Codeを活用した自然言語コーディングのベストプラクティス",
+    "summary_ja": "Claude CodeなどのAIエージェントの台頭により、自然言語によるコーディングが現実的な選択肢となりつつある。 従来のコンパイラ不足という欠点は、AIのコード生成能力が補完することで解消された。 曖昧な指示を避け、実装の要件を厳密に定義することで、日本語を実用的な開発言語として運用し、開発生産性を最大化する手法を解説する。",
+    "translations": {
+      "ja": {
+        "title": "AI時代の新常識「プログラミング言語『日本語』」：Claude Codeを活用した自然言語コーディングのベストプラクティス",
+        "summary": "Claude CodeなどのAIエージェントの台頭により、自然言語によるコーディングが現実的な選択肢となりつつある。 従来のコンパイラ不足という欠点は、AIのコード生成能力が補完することで解消された。 曖昧な指示を避け、実装の要件を厳密に定義することで、日本語を実用的な開発言語として運用し、開発生産性を最大化する手法を解説する。"
+      },
+      "en": {
+        "title": "Why 'Natural Language' is becoming a viable programming language for AI-driven development workflows",
+        "summary": "With the rise of sophisticated AI agents like Claude Code, writing software in natural language is shifting from a gimmick to a pragmatic workflow. While the historical limitation of 'Japanese' as a programming language was its lack of a robust compiler, modern LLMs now effectively bridge that gap by interpreting intent and generating precise implementation logic. This guide outlines best practices for turning natural language prompts into high-performance codebases, emphasizing the need for strict requirements and structured definitions to avoid ambiguity. For developers integrating AI agents, the key takeaway is that treating natural language as a formal specification language, rather than just an interface, is the next evolution in shipping software faster and reducing development overhead."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-26T20:16:58.854Z"
+  },
+  {
+    "id": "art-1795724210663-zdc16",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://saras3d.ai/wonderlabs",
+    "published_at": "2026-11-26T19:38:35.000Z",
+    "og_image_url": null,
+    "title_ja": "子供の知的好奇心を刺激する「WonderLabs」：AI活用トイとハンズオン学習を組み合わせたクリスマスギフト推奨リストを公開",
+    "summary_ja": "Saras 3Dが公開した「WonderLabs」は、最新のAI搭載トイと体験型のSTEM教育ツールを組み合わせ、子供の創造性を引き出す学習環境を提案するキュレーションサイトだ。 単なる玩具の紹介にとどまらず、プログラミング的思考や物理的な工作を融合させた学習効果の高いギフトを厳選している。 親や開発者が子供のデジタルリテラシー向上を考える際、AIとリアルな体験をどう橋渡しすべきかの実践的なガイドとして非常に有用なリソースとなっている。",
+    "translations": {
+      "ja": {
+        "title": "子供の知的好奇心を刺激する「WonderLabs」：AI活用トイとハンズオン学習を組み合わせたクリスマスギフト推奨リストを公開",
+        "summary": "Saras 3Dが公開した「WonderLabs」は、最新のAI搭載トイと体験型のSTEM教育ツールを組み合わせ、子供の創造性を引き出す学習環境を提案するキュレーションサイトだ。 単なる玩具の紹介にとどまらず、プログラミング的思考や物理的な工作を融合させた学習効果の高いギフトを厳選している。 親や開発者が子供のデジタルリテラシー向上を考える際、AIとリアルな体験をどう橋渡しすべきかの実践的なガイドとして非常に有用なリソースとなっている。"
+      },
+      "en": {
+        "title": "WonderLabs unveils curated list of Christmas gifts blending AI-powered interactive toys with hands-on STEM learning experiences for children",
+        "summary": "WonderLabs, launched by Saras 3D, presents a highly curated guide of Christmas gift ideas designed to bridge the gap between AI-driven interactive toys and tactile, hands-on STEM education. The project moves beyond basic product lists by emphasizing tools that actively foster programming logic and physical craftsmanship alongside digital engagement. For developers and parents alike, this resource offers a roadmap for selecting technology that promotes meaningful cognitive development rather than passive consumption. By focusing on the intersection of physical play and modern AI, WonderLabs serves as a blueprint for how we can meaningfully integrate emerging technology into early childhood development, ensuring kids learn to create and understand systems, not just interact with them."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-26T20:16:50.663Z"
+  },
+  {
+    "id": "art-1795724203616-odc44",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/crisp_wasp5557/n/n9820d26e2513",
+    "published_at": "2026-11-26T20:16:34.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341195030/rectangle_large_type_2_60f9ab59159e659d8dae5dac26df56c8.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI開発コンテスト「Make GTA 6」で11,798件中34位に入賞：トップ作品から学ぶゲーム開発の勝算とAI活用のポイント",
+    "summary_ja": "「make.fun」が開催した「Make GTA 6」大会において、AIを活用して制作したブラウザゲームで11,798作品中34位（賞金6ドル）を記録した。 上位作品を分析すると、単なるAI生成の羅列ではなく、操作性の良さや独自のゲーム体験を組み込むことが評価の分かれ目であることがわかった。 AI主導の開発では、コード生成の効率だけでなく、プレイヤーが直感的に楽しめる「手触り感」を人間がどうチューニングするかが、ランキング上位に入るための鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AI開発コンテスト「Make GTA 6」で11,798件中34位に入賞：トップ作品から学ぶゲーム開発の勝算とAI活用のポイント",
+        "summary": "「make.fun」が開催した「Make GTA 6」大会において、AIを活用して制作したブラウザゲームで11,798作品中34位（賞金6ドル）を記録した。 上位作品を分析すると、単なるAI生成の羅列ではなく、操作性の良さや独自のゲーム体験を組み込むことが評価の分かれ目であることがわかった。 AI主導の開発では、コード生成の効率だけでなく、プレイヤーが直感的に楽しめる「手触り感」を人間がどうチューニングするかが、ランキング上位に入るための鍵となる。"
+      },
+      "en": {
+        "title": "Developer places 34th out of 11,798 entries in the 'Make GTA 6' AI contest: Key takeaways on building winning browser games",
+        "summary": "The author secured 34th place out of 11,798 entries in the 'Make GTA 6' browser game contest hosted on make.fun, winning $6 in USDC. After analyzing the top-tier submissions, it became clear that winning projects prioritized polished user interaction and unique gameplay mechanics over sheer volume of AI-generated content. Relying purely on AI to spit out a codebase isn't enough; the competitive edge lies in the human developer's ability to fine-tune the game's responsiveness and core loop. For builders, the lesson is that AI tools are excellent force multipliers, but success in creative contests ultimately requires distinct design choices and tactile adjustments that make a project stand out from thousands of generic AI-assisted outputs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-26T20:16:43.616Z"
+  },
+  {
     "id": "art-1795723453951-iy7u9",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -10655,32 +10759,6 @@
     "created_at": "2026-11-25T11:17:19.057Z"
   },
   {
-    "id": "art-1795605422085-g65nh",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/word_legends_/n/n0c81db529c47",
-    "published_at": "2026-11-25T11:00:13.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/4a3b701cedf8bb49e035c797c0e94cbdd95fa048.png",
-    "title_ja": "英単語学習アプリ「Word Legends」がApp Store有料ランキング全国1位を獲得。強豪Ankiを抜き去り、個人開発でトップに上り詰めた戦略を解説",
-    "summary_ja": "個人開発者の英単語・熟語学習アプリ「Word Legends」が、App Storeの「すべてのアプリ」有料ランキングで日本国内1位に輝いた。 長年市場を独占していたAnkiを追い抜くという偉業を成し遂げた背景には、洗練されたUI設計や、既存の学習ツールに対するユーザーの潜在的な不満を解消するニッチな機能改善があった。 個人開発で巨大な既存製品に挑み、ストア上位を独占するための具体的な製品ポジショニングとグロース戦略は、多くの個人開発者にとって大きな希望となるはずだ。",
-    "translations": {
-      "ja": {
-        "title": "英単語学習アプリ「Word Legends」がApp Store有料ランキング全国1位を獲得。強豪Ankiを抜き去り、個人開発でトップに上り詰めた戦略を解説",
-        "summary": "個人開発者の英単語・熟語学習アプリ「Word Legends」が、App Storeの「すべてのアプリ」有料ランキングで日本国内1位に輝いた。 長年市場を独占していたAnkiを追い抜くという偉業を成し遂げた背景には、洗練されたUI設計や、既存の学習ツールに対するユーザーの潜在的な不満を解消するニッチな機能改善があった。 個人開発で巨大な既存製品に挑み、ストア上位を独占するための具体的な製品ポジショニングとグロース戦略は、多くの個人開発者にとって大きな希望となるはずだ。"
-      },
-      "en": {
-        "title": "How the indie app 'Word Legends' surged past Anki to reach #1 on the Japan App Store charts",
-        "summary": "An indie developer’s English vocabulary app, Word Legends, recently climbed to the number one spot on the Japanese App Store’s paid rankings, effectively surpassing the long-standing industry leader, Anki. This achievement demonstrates that even in saturated categories, specific, user-focused design improvements can displace deeply entrenched competitors. The developer’s success highlights how identifying gaps in existing learning tools—rather than just building a generic clone—can drive significant market traction. For independent builders, the key takeaway is that strategic positioning and solving specific friction points for users are far more critical for scaling than simply having a massive feature set. This narrative serves as a powerful reminder that dedicated indie projects can still dominate top charts through smart, user-centric product iteration."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-25T11:17:02.085Z"
-  },
-  {
     "id": "art-1795605415359-q26vi",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -11475,32 +11553,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-25T08:47:11.974Z"
-  },
-  {
-    "id": "art-1795595611454-g80ss",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/b9game11/items/86c3c6ae3df0eb76e7fc",
-    "published_at": "2026-11-25T08:08:01.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDI3NzQ5NiUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc5MzM0NTA3NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NjJkN2NmNzg2ODFmYWNkNjYxZTk3NjViZDJlMjRjZjM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D4e7cca78b024131b3ea0cb2f3cae51b9?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwQUklRTglQTklQTYlRTclOTQlQTglRTQlQkQlOTMlRTklQTglOTMlRTMlODAlOTElRTklOTYlOEIlRTclOTklQkElRTclOEYlQkUlRTUlQTAlQjQlRTMlODElQTclRTMlODElQUVMTE0lRTYlQjQlQkIlRTclOTQlQTglRTMlODMlQTElRTMlODMlQUElRTMlODMlODMlRTMlODMlODglRTMlODElQTglRTUlQUUlOUYlRTklODElOEIlRTclOTQlQTglRTMlODElQTclRTglQTYlOEIlRTMlODElODglRTMlODElOUYlRTglQUElQjIlRTklQTElOEMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1mNWRmYjExYThiOTJhNDExZDcxMDY0YzZhMmU3MDg4OQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBiOWdhbWUxMSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWExZTY5YWEwZjVjNWJiMjU0MDAwMzVhYzQ3NWQwOTNl&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=e2a5371e4e8ced5dd1f331446cc575ed",
-    "title_ja": "開発現場における最新LLMの導入検証：生産性向上とプロトタイピング高速化の裏側で見えた実運用上の課題とは",
-    "summary_ja": "開発現場におけるLLM活用により、コード生成の自動化やプロトタイピングの速度は劇的に向上するが、導入には特有の障壁も存在する。 最新のLLMを実務環境へ組み込んだ結果、日常的な生産性は確かに高まるものの、期待値調整やハルシネーションへの対策といった運用上の課題が浮き彫りになった。 開発者にとってAIは強力な補助ツールである一方、出力の信頼性を担保するためのエンジニア側での精査プロセスが不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "開発現場における最新LLMの導入検証：生産性向上とプロトタイピング高速化の裏側で見えた実運用上の課題とは",
-        "summary": "開発現場におけるLLM活用により、コード生成の自動化やプロトタイピングの速度は劇的に向上するが、導入には特有の障壁も存在する。 最新のLLMを実務環境へ組み込んだ結果、日常的な生産性は確かに高まるものの、期待値調整やハルシネーションへの対策といった運用上の課題が浮き彫りになった。 開発者にとってAIは強力な補助ツールである一方、出力の信頼性を担保するためのエンジニア側での精査プロセスが不可欠である。"
-      },
-      "en": {
-        "title": "Developer real-world trial: Balancing LLM-driven productivity gains with the hidden operational hurdles of AI integration",
-        "summary": "Integrating the latest Large Language Models into daily development workflows promises rapid prototyping and automated code generation, but practical implementation reveals distinct bottlenecks. This trial highlights how LLM adoption shifts a developer's role from raw coding to continuous oversight and verification. While daily productivity metrics improved significantly during the testing phase, the reality is that teams must manage expectations around accuracy and invest time in validating AI outputs to mitigate risks like hallucinations. For individual developers and engineering teams, the takeaway is clear: LLMs are high-leverage tools that demand robust quality control protocols rather than blind trust. Success depends on building a hybrid workflow where AI handles the heavy lifting while the human expert remains firmly in control of architectural integrity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-25T08:33:31.454Z"
   },
   {
     "id": "art-1795595546599-9o0f9",
@@ -13041,33 +13093,6 @@
       "開発"
     ],
     "created_at": "2026-11-25T01:32:25.639Z"
-  },
-  {
-    "id": "art-1795570337014-ulqh8",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DBQGCgTjvdo",
-    "published_at": "2026-11-25T00:04:02.000Z",
-    "og_image_url": null,
-    "title_ja": "AIによるヌード生成を防ぐ防御策の有効性を検証するベンチマーク「Bodybench」が登場：有害インペインティングへの対抗とセキュリティ強化",
-    "summary_ja": "AIのインペインティング機能を悪用した「ヌード生成」を防ぐため、防御手法の頑健性を評価する新しいベンチマーク「Bodybench」が公開された。 このツールは多様な敵対的攻撃シナリオを用いて既存の防御アルゴリズムの限界を特定し、AIモデルの安全性向上を支援する。 生成AIのセキュリティを担う開発者は、単なるフィルタリングではなく、このような堅牢な評価基盤を導入することで、サービスの悪用を防ぐ多層的な防御体制を構築すべきである。",
-    "translations": {
-      "ja": {
-        "title": "AIによるヌード生成を防ぐ防御策の有効性を検証するベンチマーク「Bodybench」が登場：有害インペインティングへの対抗とセキュリティ強化",
-        "summary": "AIのインペインティング機能を悪用した「ヌード生成」を防ぐため、防御手法の頑健性を評価する新しいベンチマーク「Bodybench」が公開された。 このツールは多様な敵対的攻撃シナリオを用いて既存の防御アルゴリズムの限界を特定し、AIモデルの安全性向上を支援する。 生成AIのセキュリティを担う開発者は、単なるフィルタリングではなく、このような堅牢な評価基盤を導入することで、サービスの悪用を防ぐ多層的な防御体制を構築すべきである。"
-      },
-      "en": {
-        "title": "Bodybench benchmark debuts to rigorously test adversarial defenses against AI-powered nudification and malicious image inpainting",
-        "summary": "Researchers have released Bodybench, a standardized evaluation framework designed to rigorously stress-test the effectiveness of adversarial defenses against AI-powered nudification and malicious inpainting. By simulating a wide array of adversarial attack scenarios, the benchmark allows developers to identify critical vulnerabilities in existing image-filtering algorithms and safety alignment layers. As generative AI becomes increasingly sophisticated, relying on simple keyword or basic heuristic blocks is no longer sufficient to ensure user safety. For builders working on image-generation or editing platforms, integrating Bodybench into the CI/CD pipeline serves as a vital safeguard, offering a concrete way to measure resistance against deepfake-style manipulations and ensuring that safety mechanisms are genuinely robust against evolving, adversarial, and unauthorized content generation tactics."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "セキュリティ",
-      "開発"
-    ],
-    "created_at": "2026-11-25T01:32:17.014Z"
   },
   {
     "id": "art-1795570319241-j6hxk",
@@ -15590,32 +15615,6 @@
       "開発"
     ],
     "created_at": "2026-11-24T10:32:30.048Z"
-  },
-  {
-    "id": "art-1795515495599-osyrq",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/df_blogger/articles/playwright-dynamic-dom-workaround",
-    "published_at": "2026-11-23T22:37:13.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wLJ8jEIl--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Playwright%25E3%2581%25AEclick%2528%2529%25E3%2581%258C%25E5%258A%25B9%25E3%2581%258B%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%2581%25E5%258B%2595%25E7%259A%2584%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25AE%25E7%25BD%25A0%25E3%2581%25AB3%25E6%2599%2582%25E9%2596%2593%25E6%25BA%25B6%25E3%2581%258B%25E3%2581%2597%25E3%2581%25A6DOM%25E7%259B%25B4%25E6%2593%258D%25E4%25BD%259C%25EF%25BC%2588evaluate%25EF%25BC%2589%25E3%2581%25A7...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:D.F.Blogger%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FjODZiNjhjZmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Playwrightのclick()が効かない！動的フォームの読み込み待機に3時間溶かした後、evaluateでのDOM直操作で突破した技術的経緯",
-    "summary_ja": "PlaywrightによるWeb自動化で、動的に描画されるフォームのクリックイベントがタイムアウトし、3時間以上のデバッグ時間を要するトラブルが発生した。 標準のclick()メソッドが要素を捕捉できない原因は、DOM構築の非同期性とイベントリスナーの競合にあることが多い。 最終的にブラウザのコンソール上で直接操作を行うevaluateメソッドを用いて解決した。 ブラウザ自動化におけるセレクタの安定性とレンダリング同期の重要性を再認識させられる教訓的な事例である。",
-    "translations": {
-      "ja": {
-        "title": "Playwrightのclick()が効かない！動的フォームの読み込み待機に3時間溶かした後、evaluateでのDOM直操作で突破した技術的経緯",
-        "summary": "PlaywrightによるWeb自動化で、動的に描画されるフォームのクリックイベントがタイムアウトし、3時間以上のデバッグ時間を要するトラブルが発生した。 標準のclick()メソッドが要素を捕捉できない原因は、DOM構築の非同期性とイベントリスナーの競合にあることが多い。 最終的にブラウザのコンソール上で直接操作を行うevaluateメソッドを用いて解決した。 ブラウザ自動化におけるセレクタの安定性とレンダリング同期の重要性を再認識させられる教訓的な事例である。"
-      },
-      "en": {
-        "title": "Debugging Playwright click() timeouts: Why dynamic DOM elements break automation and how to bypass them with evaluate()",
-        "summary": "A deep dive into debugging Playwright automation scripts where the standard click() method consistently times out on dynamic web forms. After wasting three hours fighting race conditions and visibility issues with standard selectors, the breakthrough involved shifting to evaluate() to execute JavaScript directly within the browser context. This approach bypasses the complexities of Playwright’s actionability checks, which often fail when heavy JS frameworks delay DOM updates or obscure elements behind listeners. For builders working on scraping or interaction agents, this serves as a critical reminder that while high-level abstractions like click() work for static pages, raw DOM manipulation remains the ultimate fail-safe when dealing with modern, asynchronous frontend architectures that standard automation frameworks struggle to navigate in real-time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-24T10:18:15.599Z"
   },
   {
     "id": "art-1795515422272-yeu90",
