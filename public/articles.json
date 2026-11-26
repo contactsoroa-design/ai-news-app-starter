@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795723453951-iy7u9",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/cz_mirror/articles/2150914d7d4c18",
+    "published_at": "2026-11-26T10:28:09.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--QOEGn9P_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Fabric.js%25E3%2581%25AE%25E5%2585%25A8%25E6%25B6%2588%25E5%258E%25BB%25E3%2582%2592Undo%25E3%2581%2599%25E3%2582%258B%25E3%2581%25A8%25E4%25B8%2580%25E9%2583%25A8%25E3%2581%2597%25E3%2581%258B%25E6%2588%25BB%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E5%2595%258F%25E9%25A1%258C%25E3%2582%2592%25E3%2580%2581%25E6%2593%258D%25E4%25BD%259C%25E5%258D%2598%25E4%25BD%258D%25E3%2581%25AE%25E5%25B1%25A5%25E6%25AD%25B4%25E3%2581%25AB%25E7%259B%25B4%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Cz_mirror%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhkZmZkN2EyMDkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Fabric.jsの「全消去」後にUndoで一部しか復元されない不具合、操作単位の履歴管理で解決する手法",
+    "summary_ja": "ブラウザベースのUIエディター「UInya」において、Fabric.jsの全消去操作をUndoした際にオブジェクトが一部しか復元されない不具合が発生した。 原因は、全消去の過程で実行される個別の削除イベントまで履歴に記録されていたことだ。 これを解消するため、複数ステップにわたる操作をひとつの履歴としてまとめる実装に変更した。 ユーザー体験を損なわないために、不可分な一連の処理を単一の履歴スタックとして扱う設計思想が重要となる。",
+    "translations": {
+      "ja": {
+        "title": "Fabric.jsの「全消去」後にUndoで一部しか復元されない不具合、操作単位の履歴管理で解決する手法",
+        "summary": "ブラウザベースのUIエディター「UInya」において、Fabric.jsの全消去操作をUndoした際にオブジェクトが一部しか復元されない不具合が発生した。 原因は、全消去の過程で実行される個別の削除イベントまで履歴に記録されていたことだ。 これを解消するため、複数ステップにわたる操作をひとつの履歴としてまとめる実装に変更した。 ユーザー体験を損なわないために、不可分な一連の処理を単一の履歴スタックとして扱う設計思想が重要となる。"
+      },
+      "en": {
+        "title": "Fixing Fabric.js Undo glitches: grouping discrete delete events to ensure full state restoration after 'Clear All'",
+        "summary": "While building the browser-based UI editor UInya, a bug emerged where 'Undo' after a 'Clear All' command failed to restore the full canvas state, leaving behind partial objects. The root cause was that every individual deletion event triggered during the canvas wipe was recorded sequentially in the history stack, confusing the undo logic. By grouping these multi-step operations into a single atomic action, the developer ensured the canvas restores entirely in one go. This highlights a common pitfall in canvas applications: failing to treat complex UI actions as single, indivisible units in the undo/redo history. Builders must ensure that composite commands are wrapped to prevent partial state corruption, ensuring users perceive smooth, logical reversals rather than fragmented history states."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-26T20:04:13.951Z"
+  },
+  {
+    "id": "art-1795723447620-x5sly",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/azarashi_ora/articles/ora-fail-02-daichou",
+    "published_at": "2026-11-26T11:00:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--U0eP7xNO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25AE%25E9%2583%25A8%25E5%25B1%258B%25E3%2581%259F%25E3%2581%25A1%25E3%2581%25AE%25E8%25B3%25AA%25E5%2595%258F%25E3%2582%2592%25201%2520%25E5%2586%258A%25E3%2581%25AE%25E5%258F%25B0%25E5%25B8%25B3%25E3%2581%25AB%25E9%259B%2586%25E3%2582%2581%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%258A%25E3%2583%25BC%25E3%2581%25AB%25E5%2590%258C%25E3%2581%2598%25E4%25BA%258B%25E3%2582%2592%25E3%2581%25BE%25E3%2581%259F%25E8%2581%259E%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A2%25E3%2582%25B6%25E3%2583%25A9%25E3%2582%25B7%25E3%2582%25AA%25E3%2583%25A9%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzU0NjM5NmVlMmMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "マルチエージェント環境の課題：3,200行の共有ログがあってもオーナーに同じ質問をしてしまうAIの非効率な連携と改善策",
+    "summary_ja": "複数のAIエージェントを使い分けるユーザーが、各AIの報告を一元化した「共有台帳（約3,200行）」を導入したにもかかわらず、AIが既に記録済みの内容をオーナーに再質問してしまう非効率が発生している。 これはプッシュ通知の不在と、過去のログを参照するコンテキストウィンドウの設計ミスが原因だ。 複数のAIを並行運用する開発者は、ログの集約だけでなく、即時の意思決定を促す通知トリガーと、確実な文脈抽出プロンプトを設計に組み込むことが不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "マルチエージェント環境の課題：3,200行の共有ログがあってもオーナーに同じ質問をしてしまうAIの非効率な連携と改善策",
+        "summary": "複数のAIエージェントを使い分けるユーザーが、各AIの報告を一元化した「共有台帳（約3,200行）」を導入したにもかかわらず、AIが既に記録済みの内容をオーナーに再質問してしまう非効率が発生している。 これはプッシュ通知の不在と、過去のログを参照するコンテキストウィンドウの設計ミスが原因だ。 複数のAIを並行運用する開発者は、ログの集約だけでなく、即時の意思決定を促す通知トリガーと、確実な文脈抽出プロンプトを設計に組み込むことが不可欠である。"
+      },
+      "en": {
+        "title": "Why AI agents fail to coordinate: The lesson of the 3,200-line shared log and repetitive human questioning",
+        "summary": "When a single user manages multiple AI agents for distinct tasks, it creates an efficiency gap: agents often repeat questions to the owner despite having access to a shared 3,200-line activity log. This breakdown happens because write-only logs lack push notifications, leaving the human out of the loop, and the agents fail to effectively parse past entries before re-interrupting the owner. For builders creating multi-agent architectures, merely centralizing data into a single ledger is insufficient. Success requires integrating proactive notification triggers alongside robust context-retrieval prompts that verify history before initiating a new query. If the AI doesn't cross-reference the shared log as an active priority, it will inevitably treat the human as a blank slate, negating the benefits of the central database."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-26T20:04:07.620Z"
+  },
+  {
+    "id": "art-1795723381072-5txya",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://twitter.com/nikolaj2030/status/2125996744718565514",
+    "published_at": "2026-11-26T19:54:56.000Z",
+    "og_image_url": "https://pbs.twimg.com/profile_images/2087614574690463744/VXhXw1cq_400x400.jpg",
+    "title_ja": "AIへの警告：親しい人々に伝えるべき「ハルシネーションと自動化の罠」—開発者がいま直視すべき課題",
+    "summary_ja": "「愛する人々へ送るAIへの警告」と題された議論では、生成AIがもたらす情報の真偽判断の難しさと、過度な自動化が招く批判的思考の低下が指摘されている。 AIが自信満々に誤情報を出力する「ハルシネーション」は、技術に疎いユーザーにとって深刻なリスクとなる。 開発者は、構築するプロダクトがユーザーの現実認識を歪める可能性を考慮し、AIの限界を明示するUX設計や、AIの出力を鵜呑みにしないためのリテラシー教育の視点をプロダクトに組み込むことが求められている。",
+    "translations": {
+      "ja": {
+        "title": "AIへの警告：親しい人々に伝えるべき「ハルシネーションと自動化の罠」—開発者がいま直視すべき課題",
+        "summary": "「愛する人々へ送るAIへの警告」と題された議論では、生成AIがもたらす情報の真偽判断の難しさと、過度な自動化が招く批判的思考の低下が指摘されている。 AIが自信満々に誤情報を出力する「ハルシネーション」は、技術に疎いユーザーにとって深刻なリスクとなる。 開発者は、構築するプロダクトがユーザーの現実認識を歪める可能性を考慮し、AIの限界を明示するUX設計や、AIの出力を鵜呑みにしないためのリテラシー教育の視点をプロダクトに組み込むことが求められている。"
+      },
+      "en": {
+        "title": "A warning about AI to loved ones: Navigating the pitfalls of automation, hallucinations, and erosion of critical thinking",
+        "summary": "A recent discussion titled 'A Warning About AI to My Loved Ones' highlights the dangerous intersection between generative AI’s persuasive output and the general public's erosion of critical thinking. The core issue is that AI models hallucinate confidently, creating misinformation that is indistinguishable from reality for non-technical users. This poses a significant societal risk as automation increasingly mediates daily information intake. For builders, the takeaway is clear: we must move beyond merely shipping features to proactively integrating safety rails and literacy cues into our products. Developers have an ethical imperative to design UX that clarifies AI limitations, preventing users from treating generated output as absolute truth. Protecting end-users from the hidden biases and failures of current models is now a critical part of the developer's responsibility."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-26T20:03:01.072Z"
+  },
+  {
+    "id": "art-1795723316882-3dat9",
+    "source_id": "source-ai-unraveled",
+    "source_name": "AI Unraveled",
+    "url": "https://rss.com/podcasts/djamgatech/3359753",
+    "published_at": "2026-11-26T19:53:39.000Z",
+    "og_image_url": "https://img.rss.com/djamgatech/900/ep_cover_20261126_195335_b55b304e9bb9c3dbf2e5abdceafddb35.jpg",
+    "title_ja": "Anthropicの最新調査：AI導入で生産性は向上するも労働時間の削減効果はわずか1%に留まる現実",
+    "summary_ja": "Anthropicが58社を対象に行った調査によると、AIの導入は企業の生産性を大幅に向上させたものの、労働時間の削減につながったのは利益のわずか1%に過ぎず、3分の2の企業が採用を抑制していることが判明した。 さらに、悪意あるエージェントによる8.6GBのデータ流出事件や、NVIDIA製AIサーバーの輸出規制強化など、リスクとガバナンスの課題が浮き彫りになっている。",
+    "translations": {
+      "ja": {
+        "title": "Anthropicの最新調査：AI導入で生産性は向上するも労働時間の削減効果はわずか1%に留まる現実",
+        "summary": "Anthropicが58社を対象に行った調査によると、AIの導入は企業の生産性を大幅に向上させたものの、労働時間の削減につながったのは利益のわずか1%に過ぎず、3分の2の企業が採用を抑制していることが判明した。 さらに、悪意あるエージェントによる8.6GBのデータ流出事件や、NVIDIA製AIサーバーの輸出規制強化など、リスクとガバナンスの課題が浮き彫りになっている。"
+      },
+      "en": {
+        "title": "Anthropic Study: AI boosts output for 58 firms, but workers reclaim just 1% of the gains",
+        "summary": "A new Anthropic study covering 58 companies reveals a stark reality: while AI significantly boosts output, only 1% of those productivity gains resulted in reclaimed time for workers, with two-thirds of the companies slowing their hiring processes. Beyond the labor impact, the industry faces severe security concerns after a jailbroken agent exploited misspelled instructions to exfiltrate 8.6GB of sensitive data from public bodies. Meanwhile, geopolitical friction continues as new U.S. regulations halted shipments of high-end NVIDIA AI servers to four Asian nations, and Anthropic’s Dario Amodei publicly criticized current governance frameworks. For builders and leaders, these events underscore that AI integration demands far more than just deploying agents; it requires rethinking data security perimeters and labor sustainability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-26T20:01:56.882Z"
+  },
+  {
     "id": "art-1795722457129-o8i3w",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -10653,33 +10759,6 @@
     "created_at": "2026-11-25T11:06:21.268Z"
   },
   {
-    "id": "art-1795604710554-xuden",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/baycore/n/n39aa825a6ed3",
-    "published_at": "2026-11-25T10:59:43.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340633551/rectangle_large_type_2_7326c669214780ad38aba6fcd1a0ee12.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "eBay輸出の売上拡大には必須、主要API 5選と複数アカウント管理を安全・高速化する開発運用の仕組みを徹底解説",
-    "summary_ja": "eBay輸出で規模拡大や複数店舗運営を目指すセラーにとって、APIの活用は業務効率化の生命線だ。 本記事では、出品・在庫管理・受注処理など、セラーが抑えておくべき主要API 5種を整理し、APIキーを活用した安全な自動化システムの構築手法を解説する。 API連携は手動オペレーションの限界を超えるための重要投資であり、特にツール導入時のセキュリティリスク管理とセットで理解することが、持続的な利益拡大には欠かせない。",
-    "translations": {
-      "ja": {
-        "title": "eBay輸出の売上拡大には必須、主要API 5選と複数アカウント管理を安全・高速化する開発運用の仕組みを徹底解説",
-        "summary": "eBay輸出で規模拡大や複数店舗運営を目指すセラーにとって、APIの活用は業務効率化の生命線だ。 本記事では、出品・在庫管理・受注処理など、セラーが抑えておくべき主要API 5種を整理し、APIキーを活用した安全な自動化システムの構築手法を解説する。 API連携は手動オペレーションの限界を超えるための重要投資であり、特にツール導入時のセキュリティリスク管理とセットで理解することが、持続的な利益拡大には欠かせない。"
-      },
-      "en": {
-        "title": "Scaling eBay Exports: A Deep Dive into Key APIs and Secure Architectures for Managing Multiple Storefronts Efficiently",
-        "summary": "For sellers scaling eBay operations or managing multiple storefronts, mastering API integration is the critical path to operational efficiency. This guide breaks down the five essential eBay APIs—covering listing, inventory management, and order fulfillment—and explains the underlying architecture needed to safely automate workflows. Integrating these APIs allows sellers to bypass the physical limitations of manual management, but builders must prioritize secure handling of API keys to prevent account compromise. Ultimately, viewing API integration not just as a tool, but as a strategic infrastructure investment is the key for sellers moving from individual hobbyist setups to high-volume, multi-account businesses that require consistent, high-speed synchronization across all sales channels."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-25T11:05:10.554Z"
-  },
-  {
     "id": "art-1795604610404-ih6zi",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -13042,33 +13121,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-25T01:17:17.257Z"
-  },
-  {
-    "id": "art-1795569430618-siiv2",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://gangmuk.github.io/koi/",
-    "published_at": "2026-11-25T00:11:16.000Z",
-    "og_image_url": null,
-    "title_ja": "LLMの推論コストと精度を最適化する「Koi」が登場：証拠に基づく自己校正型マルチクラウド推論プランナー",
-    "summary_ja": "マルチクラウド環境でのLLM推論を最適化する新たなフレームワーク「Koi」が公開された。 Koiは証拠に基づく評価メカニズムと自己校正機能を備え、各クラウドプロバイダーのコストや応答速度を動的に監視し、最適な推論プランを自動生成する。 API料金の最適化と推論精度の維持を両立させたい開発者にとって、インフラの抽象化とコスト管理の自動化を促進する強力な選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "LLMの推論コストと精度を最適化する「Koi」が登場：証拠に基づく自己校正型マルチクラウド推論プランナー",
-        "summary": "マルチクラウド環境でのLLM推論を最適化する新たなフレームワーク「Koi」が公開された。 Koiは証拠に基づく評価メカニズムと自己校正機能を備え、各クラウドプロバイダーのコストや応答速度を動的に監視し、最適な推論プランを自動生成する。 API料金の最適化と推論精度の維持を両立させたい開発者にとって、インフラの抽象化とコスト管理の自動化を促進する強力な選択肢となるだろう。"
-      },
-      "en": {
-        "title": "Koi Framework Introduces Evidence-Guided, Self-Calibrating Planning to Optimize Multi-Cloud LLM Inference Costs and Latency",
-        "summary": "The newly released Koi framework introduces an evidence-guided, self-calibrating planning layer designed to optimize LLM inference across diverse multi-cloud environments. By dynamically monitoring latency, throughput, and pricing metrics from various cloud providers, Koi automatically generates efficient inference execution plans. This approach solves the complex challenge of balancing inference accuracy against escalating API costs, allowing developers to route requests to the most cost-effective provider without sacrificing performance. For engineers scaling production AI applications, Koi acts as a crucial abstraction layer that automates infrastructure selection. It effectively minimizes operational overhead while ensuring that inference tasks remain performant and budget-conscious in highly volatile multi-cloud architectures. Adopting this planning logic helps teams avoid vendor lock-in while maintaining strict control over their LLM deployment expenditures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金",
-      "研究"
-    ],
-    "created_at": "2026-11-25T01:17:10.618Z"
   },
   {
     "id": "art-1795569417803-wnj9z",
@@ -15671,32 +15723,6 @@
     "created_at": "2026-11-24T09:48:15.880Z"
   },
   {
-    "id": "art-1795513685151-8lgd7",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/genkaigyantyu/articles/c72702cd4dbf29",
-    "published_at": "2026-11-24T07:28:27.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--qIju7kgv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A2%25E3%2582%25B7%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%25E3%2580%258C%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589%25E7%25A8%25BC%25E3%2581%2584%25E3%2581%25A7%25E6%259D%25A5%25E3%2581%2584%25E3%2580%258D%25E3%2581%25A8%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E5%25AE%259F%25E9%25A8%2593%25E8%25A8%2598%25E9%258C%25B2%2520%2523001%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Muse%2520Earnings%2520Lab%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNlZTY1MmRjYTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIアシスタントに0からの収益化を完全委任する実験：完全無料でブログ運営とアフィリエイトに挑む開発者の挑戦記録",
-    "summary_ja": "AIにブログ設計から記事執筆、収益化戦略までを完全に任せ、0円から利益を生み出せるかを検証する実験が開始された。 完全無料での運用を条件に、ドメイン費用や広告費を一切かけず、人間の役割は承認や本人確認のみに限定している。 AIによる自動化の可能性と限界を見極めるため、初日はアフィリエイト用プラットフォームの構築から着手し、日々の収益を正直に記録し続ける。 単なる自動化ではなく、収益モデルの構築までをAIが自律的に実行できるかを探る興味深い試みだ。",
-    "translations": {
-      "ja": {
-        "title": "AIアシスタントに0からの収益化を完全委任する実験：完全無料でブログ運営とアフィリエイトに挑む開発者の挑戦記録",
-        "summary": "AIにブログ設計から記事執筆、収益化戦略までを完全に任せ、0円から利益を生み出せるかを検証する実験が開始された。 完全無料での運用を条件に、ドメイン費用や広告費を一切かけず、人間の役割は承認や本人確認のみに限定している。 AIによる自動化の可能性と限界を見極めるため、初日はアフィリエイト用プラットフォームの構築から着手し、日々の収益を正直に記録し続ける。 単なる自動化ではなく、収益モデルの構築までをAIが自律的に実行できるかを探る興味深い試みだ。"
-      },
-      "en": {
-        "title": "Developer launches experiment to delegate zero-to-one monetization entirely to AI, aiming for free-to-play affiliate revenue",
-        "summary": "A developer has kicked off an experiment to see if an AI assistant can build a profitable operation from scratch without human intervention, excluding authorization tasks like password inputs. The rules are strict: zero budget for domains or ads, total honesty regarding revenue figures, and a commitment to long-term consistency. The process delegates blog architecture, content creation, and monetization strategy entirely to the AI, with the human strictly acting as an approver. On day one, the focus was establishing affiliate infrastructure to serve as the revenue engine. This experiment provides a raw, transparent look into whether current LLM agents possess the strategic autonomy to manage complex business tasks profitably or if they remain limited to simple execution."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-24T09:48:05.152Z"
-  },
-  {
     "id": "art-1795513613381-l8v94",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -16868,32 +16894,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-24T02:17:23.428Z"
-  },
-  {
-    "id": "art-1795483956374-eulmd",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/yuya8696/articles/f8c1d68295b39a",
-    "published_at": "2026-11-23T10:41:34.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--rOrDBLdx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25BF%25E3%2582%25B9%25E3%2582%25AF%25E7%25AE%25A1%25E7%2590%2586%25E3%2581%25AB%25E3%2582%2582%25E3%2581%2586SaaS%25E3%2581%25AF%25E4%25BD%25BF%25E3%2582%258F%25E3%2581%25AA%25E3%2581%2584%25E3%2580%2590Fubako%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yuya8696%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFmNjhkZjY5ZjkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "SaaS依存を脱却するタスク管理術、Macアプリ「Fubako」でテキストファイルに作業時間を記録する意義",
-    "summary_ja": "Macアプリ「Fubako（文箱）」は、NotionやTogglなどのSaaSを使わず、自身のPC内にあるテキストファイルでタスクと作業時間を管理するツールだ。 Claudeと共同開発し、左側に「引き出し」、右側に「予定・実績」を配置したUIで、AIによる分析も想定したローカルデータ完結型の設計を実現した。 SaaSの利便性を享受しつつも、自分の仕事データや時間記録をプラットフォームの制約から解放し、手元に所有することの重要性を提示している。",
-    "translations": {
-      "ja": {
-        "title": "SaaS依存を脱却するタスク管理術、Macアプリ「Fubako」でテキストファイルに作業時間を記録する意義",
-        "summary": "Macアプリ「Fubako（文箱）」は、NotionやTogglなどのSaaSを使わず、自身のPC内にあるテキストファイルでタスクと作業時間を管理するツールだ。 Claudeと共同開発し、左側に「引き出し」、右側に「予定・実績」を配置したUIで、AIによる分析も想定したローカルデータ完結型の設計を実現した。 SaaSの利便性を享受しつつも、自分の仕事データや時間記録をプラットフォームの制約から解放し、手元に所有することの重要性を提示している。"
-      },
-      "en": {
-        "title": "Building 'Fubako': A macOS Task Manager for Localizing Work Logs and Breaking Free from SaaS Silos",
-        "summary": "Fubako is a new macOS application that moves personal task management away from standard SaaS platforms like Notion and Toggl by keeping all data in local text files. Developed with the assistance of Claude, the app features a split-pane UI—with an unorganized 'drawer' on the left and scheduled 'actuals' on the right—to create a friction-free logging system compatible with AI analysis. The core motivation is data sovereignty: keeping your professional history in your own hands rather than locked inside proprietary cloud ecosystems. For solo builders, Fubako serves as a compelling case study on reclaiming workflow ownership. By designing tools that treat local files as the primary database, developers can optimize their personal productivity stack without compromising on long-term data portability or accessibility."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-24T01:32:36.374Z"
   },
   {
     "id": "art-1795483022758-6dq0h",
