@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795666649761-1m0cl",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.hexbites.dev/stories/2026-11-25-pi-from-simulated-annealing.html",
+    "published_at": "2026-11-26T04:03:03.000Z",
+    "og_image_url": null,
+    "title_ja": "LLMの「Temperature」設定を巡回セールスマン問題に応用、数学的アプローチでπを導出する技術的実験",
+    "summary_ja": "LLMの出力多様性を制御する「Temperature」パラメータの数学的性質を逆手に取り、巡回セールスマン問題を通じて円周率πを推定するというユニークな試み。 本記事は、シミュレーテッド・アニーリング（焼きなまし法）の確率論的アプローチをLLMのサンプリングプロセスに重ね合わせ、確率分布がどのように幾何学的定数と結びつくかを解説する。",
+    "translations": {
+      "ja": {
+        "title": "LLMの「Temperature」設定を巡回セールスマン問題に応用、数学的アプローチでπを導出する技術的実験",
+        "summary": "LLMの出力多様性を制御する「Temperature」パラメータの数学的性質を逆手に取り、巡回セールスマン問題を通じて円周率πを推定するというユニークな試み。 本記事は、シミュレーテッド・アニーリング（焼きなまし法）の確率論的アプローチをLLMのサンプリングプロセスに重ね合わせ、確率分布がどのように幾何学的定数と結びつくかを解説する。"
+      },
+      "en": {
+        "title": "Extracting π via simulated annealing: Leveraging LLM temperature parameters for probabilistic problem solving",
+        "summary": "This technical deep dive explores a fascinating intersection between machine learning and classical mathematics, where the author uses LLM 'temperature' settings to solve a version of the traveling salesman problem. By mapping the stochastic nature of simulated annealing—a method for finding global optima—onto the sampling process of LLMs, the experiment effectively extracts the value of π through probabilistic simulation. The write-up deconstructs how temperature control in AI models shares underlying mechanisms with thermodynamic cooling schedules in optimization algorithms. For developers, this provides a rigorous look at how parameter tuning is not just about output variety, but fundamentally about navigating probability distributions. It is a compelling masterclass in applying statistical mechanics to demystify LLM behavior for complex optimization tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-26T04:17:29.761Z"
+  },
+  {
+    "id": "art-1795666642406-3nte7",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/t_azk/articles/postgres-privileges-count-not-configure",
+    "published_at": "2026-11-25T15:18:00.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--JO7Bz4nA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:PostgreSQL%2520%25E3%2581%25AE%25E6%25A8%25A9%25E9%2599%2590%25E3%2581%25AF%25E3%2580%258C%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%2597%25E3%2581%259F%25E3%2580%258D%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%258F%25E3%2580%258C%25E6%2595%25B0%25E3%2581%2588%25E3%2581%259F%25E3%2580%258D%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%2520%25E2%2580%2595%2520%25E8%25AA%25B0%25E3%2582%2582%2520GRANT%2520%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25AA%25E3%2581%2584%25E9%2596%25A2%25E6%2595%25B0%25E3%2582%2592%25E3%2580%2581%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%25A4...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:t-azk%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUhrbnNoeVloSTBRTTk2WEZUOWxNR1ctN0lBbkowYjZtSnBrNzNDYzF5OTNibEVodz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "PostgreSQLのセキュリティ盲点：GRANT不要の権限付与とデフォルト設定が招く意図せぬロール実行リスク",
+    "summary_ja": "PostgreSQLでは関数作成時にデフォルトで全ロールにEXECUTE権限が付与され、さらにALTER DEFAULT PRIVILEGES設定下では新規テーブルにCRUD権限が自動付与される。 筆者はマイグレーション定義のみを信頼した結果、ログイン前のロールが未許可の関数を実行し、RLSも無効なテーブルが存在する事態を確認した。 設定コードの記述量だけでなく、DB内部のメタデータを「数えて」権限状態を正確に監査することが、セキュアなアプリケーション開発には不可欠である。",
+    "translations": {
+      "ja": {
+        "title": "PostgreSQLのセキュリティ盲点：GRANT不要の権限付与とデフォルト設定が招く意図せぬロール実行リスク",
+        "summary": "PostgreSQLでは関数作成時にデフォルトで全ロールにEXECUTE権限が付与され、さらにALTER DEFAULT PRIVILEGES設定下では新規テーブルにCRUD権限が自動付与される。 筆者はマイグレーション定義のみを信頼した結果、ログイン前のロールが未許可の関数を実行し、RLSも無効なテーブルが存在する事態を確認した。 設定コードの記述量だけでなく、DB内部のメタデータを「数えて」権限状態を正確に監査することが、セキュアなアプリケーション開発には不可欠である。"
+      },
+      "en": {
+        "title": "PostgreSQL Security Audit Reveals Dangerous Default Privileges and Unintended Public Execution Access on Sensitive Database Functions",
+        "summary": "A deep dive into PostgreSQL permissions reveals critical security blind spots: functions default to PUBLIC execute access, and ALTER DEFAULT PRIVILEGES can automatically assign CRUD rights to new tables without explicit GRANT statements. The author discovered that roles without authentication were executing restricted functions, and most tables lacked row-level security (RLS) despite assumptions in the migration code. This incident highlights why relying solely on migration scripts is insufficient for security. Developers must audit the actual database metadata—counting permissions instead of assuming them—to verify that access controls are correctly enforced. For production environments, auditing the effective state of the database is the only way to prevent silent privilege escalation and keep user data secure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-26T04:17:22.406Z"
+  },
+  {
+    "id": "art-1795666634181-45nmp",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/soloaiplaybook/n/n77ac4e28f5fa",
+    "published_at": "2026-11-26T04:12:56.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/340904203/rectangle_large_type_2_134fc70732dac170ff79cbb4fb48478f.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「すごい」で終わらせない。AI副業の成功事例を個人の収益化行動へ直結させる「日本版転換ワークシート」の活用術",
+    "summary_ja": "海外のAI副業成功事例を眺めるだけでは行動は変わりません。 AI副業事例を一次情報で収集・検証する「フク」氏が、事例を読んだ後の熱量を具体的な収益化行動へと変換するための専用ワークシートを公開しました。 海外モデルをそのまま模倣するのではなく、日本の市場環境に合わせてサービスを再構築する手順を体系化しており、インプットを収益に直結させる実践的なメソッドとして活用できます。",
+    "translations": {
+      "ja": {
+        "title": "「すごい」で終わらせない。AI副業の成功事例を個人の収益化行動へ直結させる「日本版転換ワークシート」の活用術",
+        "summary": "海外のAI副業成功事例を眺めるだけでは行動は変わりません。 AI副業事例を一次情報で収集・検証する「フク」氏が、事例を読んだ後の熱量を具体的な収益化行動へと変換するための専用ワークシートを公開しました。 海外モデルをそのまま模倣するのではなく、日本の市場環境に合わせてサービスを再構築する手順を体系化しており、インプットを収益に直結させる実践的なメソッドとして活用できます。"
+      },
+      "en": {
+        "title": "Beyond passive consumption: How to turn global AI side hustle case studies into actionable Japanese revenue strategies",
+        "summary": "Reading about successful AI side hustles often ends in passive admiration rather than actual execution. To bridge this gap, AI researcher Fuku, who audits primary sources on individual monetization cases, has published a specialized worksheet designed to convert inspiration into concrete, localized business plans. The framework guides creators away from blindly copying overseas models, instead teaching them how to reconstruct and adapt those service concepts for the specific constraints and cultural nuances of the Japanese market. By forcing a structured analysis of the business mechanics behind each case, the worksheet transforms passive consumption into a repeatable process for validating and launching new AI-driven ventures. It is an essential toolkit for builders struggling to apply foreign success stories to their own local context."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-26T04:17:14.181Z"
+  },
+  {
+    "id": "art-1795666627588-mzny3",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/mrmrmr/items/14e924d7df83ae277ccb",
+    "published_at": "2026-11-26T04:16:32.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzI3NDE5JTJGMTJmOWI5NDdmYWQxMDJmMzI1ZTdhM2MxY2I1YTNmOTc2OWRjYjY4ZCUyRmxhcmdlLnBuZyUzRjE3NzM1Nzk2NTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTg4ZjQ2OWIxYjE5MmE2NWQ5MWIxOTc1NDc4ZDcwYjhj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De95bedc85e3356abe6a208a41038b450?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU1JUIwJThGJUU1JUFEJUE2NSVFNSVCOSVCNCVFNyU5NCU5RiVFMyU4MSVBNyVFMyU4MiU4MiVFMyU4MiU4RiVFMyU4MSU4QiVFMyU4MiU4QiVFMyU4MCU5MSVFMyU4MyU4NyVFMyU4MyVCQyVFMyU4MiVCRiVFMyU4MyU5MCVFMyU4MiVBNCVFMyU4MiVBMiVFMyU4MiVCOSVFMyU4MSVBMyVFMyU4MSVBNiVFMyU4MSVBQSVFMyU4MSVBQiVFRiVCQyU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTRhOWY1NDhlM2RjMGY5YjcwOTg0ZTNjZDczOTJiN2Uy&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtcm1ybXImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NWIwMjVjOTJjZjhmZjExZjU4NzhmZDc0M2JhOTQ4ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=f30636ab63157130beb9ae4279e8a485",
+    "title_ja": "AI開発の必須知識「データバイアス」とは何か？学習データの偏りがもたらす判断ミスと公平なモデル運用のための基本原則",
+    "summary_ja": "AIの判断精度を左右する「データバイアス」の基本概念を解説。 AIは学習データのパターンを模倣するため、過去の採用実績や属性に偏りがあるデータセットを用いると、結果にも同様の歪みが生じる。 エンジニアはモデル構築の際、入力データの多様性確保と検証フェーズでのバイアス検知が不可欠だと理解する必要がある。 AIの品質はアルゴリズムの性能以上に、その根幹を支えるデータの健全性に依存しているという事実を再認識しよう。",
+    "translations": {
+      "ja": {
+        "title": "AI開発の必須知識「データバイアス」とは何か？学習データの偏りがもたらす判断ミスと公平なモデル運用のための基本原則",
+        "summary": "AIの判断精度を左右する「データバイアス」の基本概念を解説。 AIは学習データのパターンを模倣するため、過去の採用実績や属性に偏りがあるデータセットを用いると、結果にも同様の歪みが生じる。 エンジニアはモデル構築の際、入力データの多様性確保と検証フェーズでのバイアス検知が不可欠だと理解する必要がある。 AIの品質はアルゴリズムの性能以上に、その根幹を支えるデータの健全性に依存しているという事実を再認識しよう。"
+      },
+      "en": {
+        "title": "What is Data Bias in AI? Understanding How Skewed Datasets Compromise Model Fairness and Accuracy for Developers",
+        "summary": "Data bias remains a critical pitfall in AI development, as models inevitably mirror the patterns found within their training datasets. If historical data—such as hiring records or user demographics—contains systemic skew, the resulting AI will propagate those same prejudices into its automated decision-making. For developers, this underscores that model quality depends less on algorithmic complexity and more on the integrity of the underlying data inputs. Ensuring dataset diversity and implementing rigorous bias detection during the validation phase are not optional optimizations, but fundamental engineering requirements. By addressing these structural flaws early, builders can move beyond brittle proofs-of-concept to create AI systems that consistently deliver fair, reliable, and production-ready outputs across diverse real-world scenarios."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-26T04:17:07.588Z"
+  },
+  {
     "id": "art-1795665828055-tfsv9",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -8046,32 +8152,6 @@
     "created_at": "2026-11-25T02:17:14.730Z"
   },
   {
-    "id": "art-1795573020085-dhrm1",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ai_dev_se/n/n4e63587bbae4",
-    "published_at": "2026-11-25T02:08:47.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340434843/rectangle_large_type_2_72e453b9104c1ce28303e1b233e9877d.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "BOOTHで373点出品して売れたのはわずか2件。個人開発者が悟った「量より質」の出品戦略への転換と教訓",
-    "summary_ja": "個人開発者がBOOTHに373点ものデジタル素材を大量出品した結果、売れたのはわずか2件という厳しい現実を経験した。 この経験から、ただ出品数を増やすだけの戦略が埋没を生むことを痛感し、現在は厳選した「1点」に注力するモデルへ方針を転換している。 検索アルゴリズムやユーザーの購買心理を考慮すると、中途半端な在庫を増やすより、一つの看板商品を磨き上げる方が個人のブランド価値を高め、結果としてコンバージョンにつながるという結論だ。",
-    "translations": {
-      "ja": {
-        "title": "BOOTHで373点出品して売れたのはわずか2件。個人開発者が悟った「量より質」の出品戦略への転換と教訓",
-        "summary": "個人開発者がBOOTHに373点ものデジタル素材を大量出品した結果、売れたのはわずか2件という厳しい現実を経験した。 この経験から、ただ出品数を増やすだけの戦略が埋没を生むことを痛感し、現在は厳選した「1点」に注力するモデルへ方針を転換している。 検索アルゴリズムやユーザーの購買心理を考慮すると、中途半端な在庫を増やすより、一つの看板商品を磨き上げる方が個人のブランド価値を高め、結果としてコンバージョンにつながるという結論だ。"
-      },
-      "en": {
-        "title": "I listed 373 items on BOOTH and sold only two: Why I shifted to a single-product strategy",
-        "summary": "After listing 373 digital assets on the BOOTH marketplace, a developer faced the harsh reality of selling only two items, revealing the failure of a high-volume, low-effort strategy. This experience demonstrated that flooding a platform with inventory often leads to obscurity rather than sales, as the abundance of noise buries potential hits. The developer has since pivoted to a singular, high-quality focus, arguing that in a saturated market, brand recognition is built by honing one flagship product rather than diluting effort across mediocre inventory. For indie creators, the lesson is clear: refining a single valuable asset is far more effective for conversion and long-term sustainable growth than betting on the sheer volume of listings."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-25T02:17:00.085Z"
-  },
-  {
     "id": "art-1795572147692-kqr44",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -12793,32 +12873,6 @@
     "created_at": "2026-11-24T03:46:39.132Z"
   },
   {
-    "id": "art-1795491150577-m0z63",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://variety.com/2026/digital/news/trump-ai-meme-jensen-huang-bra-nvidia-reinstates-ceo-1236956004/",
-    "published_at": "2026-11-24T02:26:07.000Z",
-    "og_image_url": null,
-    "title_ja": "トランプ氏、NVIDIAのジェンスン・フアンCEOがブラジャーを持つAI生成画像を投稿し物議に",
-    "summary_ja": "ドナルド・トランプ氏が、NVIDIAのジェンスン・フアンCEOが女性用下着を持つAI生成画像を自身のプラットフォームに投稿し、大きな波紋を広げている。 生成AI技術の悪用によって特定の人物を模した攻撃的な偽画像が容易に作成・拡散される現状は、政治的・社会的なリスクを浮き彫りにした。 クリエイターや開発者にとっては、こうしたディープフェイク技術の倫理的境界線と、ブランドや人物の名誉を毀損するリスクに対する技術的・法的対策の重要性が改めて問われる出来事となった。",
-    "translations": {
-      "ja": {
-        "title": "トランプ氏、NVIDIAのジェンスン・フアンCEOがブラジャーを持つAI生成画像を投稿し物議に",
-        "summary": "ドナルド・トランプ氏が、NVIDIAのジェンスン・フアンCEOが女性用下着を持つAI生成画像を自身のプラットフォームに投稿し、大きな波紋を広げている。 生成AI技術の悪用によって特定の人物を模した攻撃的な偽画像が容易に作成・拡散される現状は、政治的・社会的なリスクを浮き彫りにした。 クリエイターや開発者にとっては、こうしたディープフェイク技術の倫理的境界線と、ブランドや人物の名誉を毀損するリスクに対する技術的・法的対策の重要性が改めて問われる出来事となった。"
-      },
-      "en": {
-        "title": "Trump posts AI-generated image of Nvidia CEO Jensen Huang holding a bra, sparking controversy",
-        "summary": "Donald Trump shared an AI-generated image of Nvidia CEO Jensen Huang holding a bra on his social media platform, igniting a heated debate regarding the misuse of synthetic media. This incident highlights the growing risks associated with generative AI tools, which allow for the effortless creation and viral distribution of disparaging deepfakes against high-profile individuals. For developers and creators, this event serves as a stark reminder of the ethical boundaries governing synthetic content and the urgent need for technical and legal safeguards to prevent reputational damage. As deepfake technology becomes increasingly accessible, the responsibility to authenticate digital content and address the societal impact of manipulated media falls squarely on both the platform architects and the users behind these powerful generative systems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-24T03:32:30.577Z"
-  },
-  {
     "id": "art-1795491121874-ahkny",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -12843,32 +12897,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-24T03:32:01.874Z"
-  },
-  {
-    "id": "art-1795490225966-bbwso",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.reddit.com/r/RedditEng/comments/1y3wbkw/we_let_ai_approve_prs_at_reddit_heres_what/",
-    "published_at": "2026-11-24T02:56:06.000Z",
-    "og_image_url": null,
-    "title_ja": "Reddit、AIによるプルリクエスト自動承認の実証実験を開始―開発者の負担軽減とコード品質維持のバランスをどう取るか",
-    "summary_ja": "Redditエンジニアリングチームが、AIにプルリクエスト（PR）の承認権限を付与する自動化実験の詳細を公開した。 AIを活用して単純な修正のレビュー負荷を下げつつ、重要な変更には依然として人間が介入することで開発速度と安全性を両立させるアプローチをとっている。 単なるAI導入ではなく、コード品質の低下を防ぐガードレール設計と人間との役割分担こそが、大規模開発組織でAIを活用する際の成功の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Reddit、AIによるプルリクエスト自動承認の実証実験を開始―開発者の負担軽減とコード品質維持のバランスをどう取るか",
-        "summary": "Redditエンジニアリングチームが、AIにプルリクエスト（PR）の承認権限を付与する自動化実験の詳細を公開した。 AIを活用して単純な修正のレビュー負荷を下げつつ、重要な変更には依然として人間が介入することで開発速度と安全性を両立させるアプローチをとっている。 単なるAI導入ではなく、コード品質の低下を防ぐガードレール設計と人間との役割分担こそが、大規模開発組織でAIを活用する際の成功の鍵となる。"
-      },
-      "en": {
-        "title": "Reddit engineering details experiment allowing AI to approve PRs while balancing developer velocity and code safety",
-        "summary": "The Reddit engineering team has published findings from their experiment granting AI agents permission to approve pull requests. By offloading routine code reviews to AI, they aim to reduce developer fatigue while maintaining strict human oversight on high-impact architectural changes. The approach emphasizes that effective AI adoption requires robust guardrails, ensuring that automated reviewers cannot bypass critical quality checks while still accelerating the development lifecycle. For engineering managers, the primary takeaway is that AI is not a replacement for human judgment but a filter; success relies on clearly defining where automated agents stop and where rigorous manual review begins to prevent technical debt from accumulating within large-scale codebases."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-24T03:17:05.966Z"
   },
   {
     "id": "art-1795490203228-9ym0u",
@@ -15180,32 +15208,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-23T11:46:53.872Z"
-  },
-  {
-    "id": "art-1795433534483-14sbp",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/mochiai/articles/2848f2df8b205a",
-    "published_at": "2026-11-23T11:05:44.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--nH6-YEFT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Codex%2520%25E3%2581%25AE%25E3%2583%25AA%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%25E3%2582%2592%25E3%2581%25A9%25E3%2581%2586%25E8%25A6%258B%25E5%25BC%25B5%25E3%2581%25A3%25E3%2581%25A6%25E3%2580%2581%25E3%2581%25A9%25E3%2581%2586%25E3%2580%258C%25E6%259D%25A5%25E3%2581%259F%25E3%2580%258D%25E3%2581%25A8%25E5%2588%25A4%25E5%25AE%259A%25E3%2581%2597%25E3%2581%259F%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Mochi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg1NTY5ZDBlNjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "OpenAI「Codex」の複雑なレート制限リセットをどう検知するか：グローバル・バンク枠をリアルタイム監視するAIエージェント構築術",
-    "summary_ja": "OpenAIのCodexには、一斉リセットと個別バンク枠の2種類が存在するが、公式の通知がなく把握が困難だ。 X上の不確実な情報に頼る現状を打破するため、筆者はAIエージェントを構築し、リセットの発生を2時間おきに自動検知する仕組みを実装した。 APIのレート制限はAIアプリケーションのUXを直撃するため、公式仕様に依存せず、独自の手法でリセットタイミングを監視・予測するエンジニアリングアプローチは、AIプロダクト運用において非常に価値が高い。",
-    "translations": {
-      "ja": {
-        "title": "OpenAI「Codex」の複雑なレート制限リセットをどう検知するか：グローバル・バンク枠をリアルタイム監視するAIエージェント構築術",
-        "summary": "OpenAIのCodexには、一斉リセットと個別バンク枠の2種類が存在するが、公式の通知がなく把握が困難だ。 X上の不確実な情報に頼る現状を打破するため、筆者はAIエージェントを構築し、リセットの発生を2時間おきに自動検知する仕組みを実装した。 APIのレート制限はAIアプリケーションのUXを直撃するため、公式仕様に依存せず、独自の手法でリセットタイミングを監視・予測するエンジニアリングアプローチは、AIプロダクト運用において非常に価値が高い。"
-      },
-      "en": {
-        "title": "How to monitor OpenAI Codex quota resets: Building an AI agent to track global and banked limit refreshes in real-time",
-        "summary": "OpenAI’s Codex features two distinct quota mechanisms—global resets and banked full resets—yet lacks an official, reliable dashboard to track their status. With developers often relying on chaotic, unverified social media chatter or fragmented third-party trackers to manage workload pacing, the author developed an AI agent to programmatically verify and monitor these reset events every two hours. By automating the detection of these specific refresh cycles, builders can maintain consistent API throughput without service interruptions. This engineering approach emphasizes that when service availability depends on undocumented quota mechanics, proactive, custom-built monitoring layers are essential for stable AI-integrated application operations, preventing the operational blindness common in early-stage LLM-powered systems."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-23T11:32:14.483Z"
   },
   {
     "id": "art-1795433509607-ywktz",
