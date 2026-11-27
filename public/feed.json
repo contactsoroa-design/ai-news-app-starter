@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795781845151-xcte5",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://media.ccc.de/v/qubesos26-110899-local-ai-inference-on-q",
+    "published_at": "2026-11-27T12:14:35.000Z",
+    "og_image_url": "https://static.media.ccc.de/media/events/qubesos/qubesos26/110899-af901768-e727-444e-8730-e0c113ad3f51_preview.jpg",
+    "title_ja": "Qubes OS上でBlackwell GPUとiGPUのSR-IOVを活用したローカルAI推論環境の構築と技術的課題",
+    "summary_ja": "Qubes OS環境において、最新のBlackwell GPUのロック解除およびiGPUのSR-IOV（単一ルートI/O仮想化）を組み合わせ、セキュアにローカルAI推論を実行する構成手法が解説された。 仮想化レイヤーを介したGPUパススルーには独自の制約が存在するが、ハードウェアアクセラレーションを分離されたドメインで活用することで、セキュリティとパフォーマンスを両立させる。",
+    "translations": {
+      "ja": {
+        "title": "Qubes OS上でBlackwell GPUとiGPUのSR-IOVを活用したローカルAI推論環境の構築と技術的課題",
+        "summary": "Qubes OS環境において、最新のBlackwell GPUのロック解除およびiGPUのSR-IOV（単一ルートI/O仮想化）を組み合わせ、セキュアにローカルAI推論を実行する構成手法が解説された。 仮想化レイヤーを介したGPUパススルーには独自の制約が存在するが、ハードウェアアクセラレーションを分離されたドメインで活用することで、セキュリティとパフォーマンスを両立させる。"
+      },
+      "en": {
+        "title": "Running local AI inference on Qubes OS using unlocked Blackwell GPUs and iGPU SR-IOV techniques",
+        "summary": "This technical deep-dive covers the practical implementation of running local AI inference within Qubes OS, specifically leveraging unlocked Blackwell GPUs alongside iGPU SR-IOV (Single Root I/O Virtualization). The presentation details how to expose hardware acceleration across isolated security domains without sacrificing the OS’s core isolation principles, navigating the unique architectural constraints of passing high-performance silicon through a virtualization layer. For developers building systems that handle sensitive data, this approach demonstrates how to maintain rigorous compartmentalization while retaining the compute power necessary for modern large language models. It proves that one can balance strict security posture with aggressive local AI performance if the hardware virtualization and passthrough layers are configured with enough precision to handle specialized accelerator traffic."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "研究"
+    ],
+    "created_at": "2026-11-27T12:17:25.151Z"
+  },
+  {
+    "id": "art-1795781837437-nypbc",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/aotan083/items/829b886447efc5168914",
+    "published_at": "2026-11-27T11:54:50.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY3OTNhMzg1OTY4M2UwMGM0NTNiNmIwNzc5YmNmMzI4YT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MTk5MzkwNDhjNDRkNDRkMGMzZTJlYWEzY2RkM2RlN2Q%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd63b4a87194db1592db727477109cdf0?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9TGF6YXJ1cyVFRiVCQyU4OENYQ29tcG9uZW50cyVFRiVCQyU4OSVFMyU4MSVBNyVFMyU4MyU4NiVFMyU4MiVBRCVFMyU4MiVCOSVFMyU4MyU4OCVFMyU4MiVBOCVFMyU4MyU4NyVFMyU4MiVBMyVFMyU4MiVCRiVFRiVCQyU4Nk1hcmtkb3duJTJGJUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTg5JUUzJTgzJTk3JUUzJTgzJUFDJUUzJTgzJTkzJUUzJTgzJUE1JUUzJTgzJUJDJUUzJTgyJTkyJUU1JUFFJTlGJUU4JUEzJTg1JUUzJTgxJTk5JUUzJTgyJThCJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NTk1MjYyYzYxOGYyY2ZiNDU5Y2M5ZGE0Zjc0MWMyMWM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhb3RhbjA4MyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTRiYzNmMjYxOTIwNzgyZmM1OTA3M2NkM2FjNTZiNjIx&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=07060803ef9ba3e9a10a1a7260ca8600",
+    "title_ja": "Lazarus用CXComponents活用ガイド：TCSynEditやTCMonacoEditorでコードエディタとMarkdownプレビューを実装する手法",
+    "summary_ja": "Lazarus向けの拡張コンポーネント集「CXComponents」を活用し、高機能なテキストエディタとMarkdown/コードプレビュー環境を構築する実装ガイド。 TCsEditorやTCMonacoEditorといったコンポーネントの特性を活かし、IDE外での柔軟な編集・表示機能をアプリに組み込むための技術的要点を網羅している。 軽量なテキスト処理とシンタックスハイライト対応のプレビュー機能を統合したい開発者にとって、デスクトップアプリのUI強化に直結する知見が得られる。",
+    "translations": {
+      "ja": {
+        "title": "Lazarus用CXComponents活用ガイド：TCSynEditやTCMonacoEditorでコードエディタとMarkdownプレビューを実装する手法",
+        "summary": "Lazarus向けの拡張コンポーネント集「CXComponents」を活用し、高機能なテキストエディタとMarkdown/コードプレビュー環境を構築する実装ガイド。 TCsEditorやTCMonacoEditorといったコンポーネントの特性を活かし、IDE外での柔軟な編集・表示機能をアプリに組み込むための技術的要点を網羅している。 軽量なテキスト処理とシンタックスハイライト対応のプレビュー機能を統合したい開発者にとって、デスクトップアプリのUI強化に直結する知見が得られる。"
+      },
+      "en": {
+        "title": "Implementing Text Editors and Markdown Previews in Lazarus Using CXComponents: A Guide to TCSynEdit and TCMonacoEditor",
+        "summary": "This technical guide explores how to leverage CXComponents for Lazarus to integrate robust text editing, Markdown, and code preview functionality into desktop applications. By utilizing components like TCSynEdit and TCMonacoEditor, developers can embed flexible, syntax-aware editing environments directly into their software projects rather than relying on external tools. The guide details how to configure these components to handle code highlighting and real-time previews efficiently, ensuring a seamless user experience. For developers building tools that require embedded code editing or documentation previews, this write-up provides the specific implementation patterns needed to modernize Lazarus app interfaces while maintaining high performance. It is an essential reference for effectively augmenting your IDE's native capabilities with modern editor features."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-27T12:17:17.437Z"
+  },
+  {
+    "id": "art-1795781826942-5abw8",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kuromamelab/n/n9092fe6584c9",
+    "published_at": "2026-11-27T11:55:58.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341511026/rectangle_large_type_2_38218b2c5c53bd539784d1da0d384a5c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "NAS内の写真閲覧を高速化、サクサク流し見ができる自作画像ビューア「QuackPane」を公開",
+    "summary_ja": "NASに保存された大量の写真を手軽に閲覧するため、開発者が画像ビューア「QuackPane」を自作した。 NAS越しに写真を開く際の遅延や、連続閲覧時の読み込み停止問題に対し、効率的な先読み処理とレンダリング最適化を実装することで、ストレスのない高速なブラウジングを実現している。 巨大なファイル資産をネットワーク越しに扱う場合、OS標準のファイラーに頼るのではなく、用途に特化した軽量なビューアを構築することが、体験改善の最短ルートであるという教訓を示している。",
+    "translations": {
+      "ja": {
+        "title": "NAS内の写真閲覧を高速化、サクサク流し見ができる自作画像ビューア「QuackPane」を公開",
+        "summary": "NASに保存された大量の写真を手軽に閲覧するため、開発者が画像ビューア「QuackPane」を自作した。 NAS越しに写真を開く際の遅延や、連続閲覧時の読み込み停止問題に対し、効率的な先読み処理とレンダリング最適化を実装することで、ストレスのない高速なブラウジングを実現している。 巨大なファイル資産をネットワーク越しに扱う場合、OS標準のファイラーに頼るのではなく、用途に特化した軽量なビューアを構築することが、体験改善の最短ルートであるという教訓を示している。"
+      },
+      "en": {
+        "title": "QuackPane: A custom-built image viewer that turns slow NAS photo browsing into a smooth experience",
+        "summary": "To solve the frustration of viewing large photo libraries stored on a NAS, the developer built QuackPane, a dedicated image viewer designed for rapid, lag-free browsing. Native OS file explorers often struggle with network latency, resulting in mosaic-like artifacts or frozen scrolls when flipping through images. By implementing aggressive pre-fetching and optimized rendering pipelines, QuackPane effectively eliminates the stalling issues common with traditional network access. For developers managing local data silos or home media servers, this project highlights a practical truth: when general-purpose tools fail to provide low-latency performance for your specific workflow, engineering a lightweight, specialized solution is often the most effective way to eliminate friction in your daily digital asset management."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-27T12:17:06.942Z"
+  },
+  {
+    "id": "art-1795781819189-0b91o",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/walnut1681974/articles/9ce37b910c3229",
+    "published_at": "2026-11-27T10:19:28.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--lKPYKTFF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2595%2586%25E5%2593%2581%25E3%2581%25AF51%25E7%2582%25B9%25E3%2580%2581%25E3%2582%25B9%25E3%2582%25AD%25E3%2581%25AF270%25E3%2580%2581%25E3%2581%259D%25E3%2582%258C%25E3%2581%25A7%25E3%2582%2582%25E5%25A3%25B2%25E4%25B8%258A%25E3%2581%25AF0%25E5%2586%2586%25E3%2581%25A7%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:walnut%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QyMDQ0ZTFiYjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AI活用による個人開発の実録：51製品を投入し「スキ」は270獲得するも、売上0円の厳しい現実",
+    "summary_ja": "AIを活用して会社運営を試みる個人開発者が、開始19日目で51製品をリリースし「スキ」を270件獲得した実録レポート。 PV数は前回の記事で28PV、今回追加した記事で8PVと依然として伸び悩み、多作にもかかわらず収益は0円のままである。 コンテンツ制作の自動化は成功しても、それが集客や購入転換に直結しないという「プロダクト数」と「販売実績」の乖離を赤裸々に公開しており、開発者が直面する集客の難易度を浮き彫りにしている。",
+    "translations": {
+      "ja": {
+        "title": "AI活用による個人開発の実録：51製品を投入し「スキ」は270獲得するも、売上0円の厳しい現実",
+        "summary": "AIを活用して会社運営を試みる個人開発者が、開始19日目で51製品をリリースし「スキ」を270件獲得した実録レポート。 PV数は前回の記事で28PV、今回追加した記事で8PVと依然として伸び悩み、多作にもかかわらず収益は0円のままである。 コンテンツ制作の自動化は成功しても、それが集客や購入転換に直結しないという「プロダクト数」と「販売実績」の乖離を赤裸々に公開しており、開発者が直面する集客の難易度を浮き彫りにしている。"
+      },
+      "en": {
+        "title": "The harsh reality of solo AI development: 51 products launched and 270 likes earned, but still zero revenue",
+        "summary": "A candid operational log from a solo developer reveals the tough reality of using AI to power a business, showing that even with 51 products launched and 270 user likes collected by day 19, revenue remains at zero. Despite scaling production through automation, traffic remains minimal—with just 28 and 8 page views on previous posts—proving that high output volume does not automatically convert into visibility or sales. This transparent breakdown illustrates the stark gap between product quantity and actual market traction, offering a sobering look at why AI-assisted development is only half the battle. For builders, the takeaway is clear: creating content is easy with AI, but solving customer acquisition remains the ultimate hurdle."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-27T12:16:59.189Z"
+  },
+  {
     "id": "art-1795780959263-9kkhy",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8514,32 +8619,6 @@
     "created_at": "2026-11-26T13:17:27.632Z"
   },
   {
-    "id": "art-1795699039427-winu6",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/onoyu1o12/items/b85cb9ddd9745b493f1e",
-    "published_at": "2026-11-26T13:16:28.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzNzU2MTcyJTJGMjVjNzdjNTRkZWI2YjI4YjhkOWJlZjUzZjdkMjMxMTFiNTM2ZDY4ZiUyRnhfbGFyZ2UucG5nJTNGMTc4MTQ5NzE0OT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MTAzODM4NjgxY2MyYTNiZmFlNGQxZDhhZDhkNGUwMDg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D420667bdace52ae1c80f91ec4df5594b?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9SUJNJTIwQm9iJUVGJUJDJThGUFA0aSVFMyU4MSVBNyVFNiU5QyVBQyVFNyU5NSVBQSVFNyU5MiVCMCVFNSVBMiU4MyVFMyU4MSVCOCVFMyU4MSVBRSVFOCVBQSVBNCVFNiU5QiVCNCVFNiU5NiVCMCVFMyU4MiU5MiVFOSU5OCVCMiVFMyU4MSU5MCVFMyU4MCU5MCVFNyU5MiVCMCVFNSVBMiU4MyVFNiVBNyU4QiVFNyVBRiU4OSVFNyVCNyVBOCVFMyU4MCU5MSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTI2N2RhOWZjNjQ0MGNlNGE5MzUwMDIwMjFlNzcyM2Ni&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBvbm95dTFvMTImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1jYWMzNmZjYTE3MjlkZjA0MzcwYjg5YmNlN2QyODk5ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6a9d363fd05ad4e7a0483960ab5e527c",
-    "title_ja": "IBM iのAI開発を安全に：Bob/PP4iを活用した本番環境への誤更新防止に向けた環境分離と構築手法を解説",
-    "summary_ja": "IBM i環境において、AIエージェントによるソースコード編集やSQL実行を安全に行うための「IBM Bob/PP4i」を活用した環境構築手法を解説する。 AIによる自律開発が普及する中で、テスト操作のつもりが本番環境を誤って更新するリスクは無視できない。 本記事では、PP4iを活用して開発環境と本番環境を論理的に分離し、誤操作を確実に防ぐためのセーフガードの設計手順を提示する。 AI開発の恩恵を享受しつつ、システムの整合性を守るための必須知識である。",
-    "translations": {
-      "ja": {
-        "title": "IBM iのAI開発を安全に：Bob/PP4iを活用した本番環境への誤更新防止に向けた環境分離と構築手法を解説",
-        "summary": "IBM i環境において、AIエージェントによるソースコード編集やSQL実行を安全に行うための「IBM Bob/PP4i」を活用した環境構築手法を解説する。 AIによる自律開発が普及する中で、テスト操作のつもりが本番環境を誤って更新するリスクは無視できない。 本記事では、PP4iを活用して開発環境と本番環境を論理的に分離し、誤操作を確実に防ぐためのセーフガードの設計手順を提示する。 AI開発の恩恵を享受しつつ、システムの整合性を守るための必須知識である。"
-      },
-      "en": {
-        "title": "Securing AI Development on IBM i: Using Bob and PP4i to Prevent Accidental Production Environment Updates",
-        "summary": "As AI agents increasingly handle source code editing and SQL execution on IBM i systems, the risk of mistakenly altering production environments while targeting test zones is becoming a critical security concern. This guide examines how to utilize IBM Bob and the Premium Package for i (PP4i) to enforce strict environmental separation. By architecting a robust setup that isolates development workflows, developers can leverage autonomous AI agents without risking catastrophic, unintended production updates. The walkthrough details the specific configuration steps necessary to build these safeguards, providing a blueprint for teams that need to integrate AI development speed while maintaining the stability and data integrity of their legacy enterprise environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-26T13:17:19.427Z"
-  },
-  {
     "id": "art-1795699027847-h4d9k",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -10589,32 +10668,6 @@
     "created_at": "2026-11-26T04:31:54.209Z"
   },
   {
-    "id": "art-1795666649761-1m0cl",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.hexbites.dev/stories/2026-11-25-pi-from-simulated-annealing.html",
-    "published_at": "2026-11-26T04:03:03.000Z",
-    "og_image_url": null,
-    "title_ja": "LLMの「Temperature」設定を巡回セールスマン問題に応用、数学的アプローチでπを導出する技術的実験",
-    "summary_ja": "LLMの出力多様性を制御する「Temperature」パラメータの数学的性質を逆手に取り、巡回セールスマン問題を通じて円周率πを推定するというユニークな試み。 本記事は、シミュレーテッド・アニーリング（焼きなまし法）の確率論的アプローチをLLMのサンプリングプロセスに重ね合わせ、確率分布がどのように幾何学的定数と結びつくかを解説する。",
-    "translations": {
-      "ja": {
-        "title": "LLMの「Temperature」設定を巡回セールスマン問題に応用、数学的アプローチでπを導出する技術的実験",
-        "summary": "LLMの出力多様性を制御する「Temperature」パラメータの数学的性質を逆手に取り、巡回セールスマン問題を通じて円周率πを推定するというユニークな試み。 本記事は、シミュレーテッド・アニーリング（焼きなまし法）の確率論的アプローチをLLMのサンプリングプロセスに重ね合わせ、確率分布がどのように幾何学的定数と結びつくかを解説する。"
-      },
-      "en": {
-        "title": "Extracting π via simulated annealing: Leveraging LLM temperature parameters for probabilistic problem solving",
-        "summary": "This technical deep dive explores a fascinating intersection between machine learning and classical mathematics, where the author uses LLM 'temperature' settings to solve a version of the traveling salesman problem. By mapping the stochastic nature of simulated annealing—a method for finding global optima—onto the sampling process of LLMs, the experiment effectively extracts the value of π through probabilistic simulation. The write-up deconstructs how temperature control in AI models shares underlying mechanisms with thermodynamic cooling schedules in optimization algorithms. For developers, this provides a rigorous look at how parameter tuning is not just about output variety, but fundamentally about navigating probability distributions. It is a compelling masterclass in applying statistical mechanics to demystify LLM behavior for complex optimization tasks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-26T04:17:29.761Z"
-  },
-  {
     "id": "art-1795666642406-3nte7",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -10771,31 +10824,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T03:32:12.527Z"
-  },
-  {
-    "id": "art-1795663919386-i4sh9",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://wordspies.com/daily",
-    "published_at": "2026-11-26T01:42:07.000Z",
-    "og_image_url": "https://wordspies.com/og-board.png",
-    "title_ja": "AIが毎日出題する5x5の単語パズル「Daily Word Puzzle」、ClaudeとGPTの回答比較機能付きで公開",
-    "summary_ja": "AIが5x5の盤面にヒントを出し、プレイヤーが正解を推測する毎日更新型の単語パズルゲームが公開された。 本作はサインアップ不要で遊べるほか、回答後にClaude HaikuやGPT Lunaが同じ盤面をどう解いたかを比較できる機能も実装している。 AIの推論能力の違いを視覚的に楽しむ仕組みは、AIを用いたゲーム開発やインタラクティブなUI実装において、ユーザー体験を深める有効なアプローチと言える。",
-    "translations": {
-      "ja": {
-        "title": "AIが毎日出題する5x5の単語パズル「Daily Word Puzzle」、ClaudeとGPTの回答比較機能付きで公開",
-        "summary": "AIが5x5の盤面にヒントを出し、プレイヤーが正解を推測する毎日更新型の単語パズルゲームが公開された。 本作はサインアップ不要で遊べるほか、回答後にClaude HaikuやGPT Lunaが同じ盤面をどう解いたかを比較できる機能も実装している。 AIの推論能力の違いを視覚的に楽しむ仕組みは、AIを用いたゲーム開発やインタラクティブなUI実装において、ユーザー体験を深める有効なアプローチと言える。"
-      },
-      "en": {
-        "title": "AI-powered daily 5x5 word puzzle game launches, featuring head-to-head performance comparisons against Claude Haiku and GPT Luna",
-        "summary": "A new browser-based word puzzle game has launched where an AI model generates unique clues for a 5x5 grid, challenging players to identify the intended words. The game requires no sign-ups and includes a feature that reveals how models like Claude Haiku and GPT Luna solved the exact same board, offering a direct comparison of their reasoning capabilities. This implementation creates a compelling meta-layer for casual gaming by transforming standard AI inference into a comparative feedback loop. For builders, this project demonstrates how integrating model comparison directly into the user experience can turn simple utility interactions into engaging, shareable content that highlights the subtle differences in current LLM reasoning performance."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-26T03:31:59.386Z"
   },
   {
     "id": "art-1795663025002-hum5u",
@@ -14132,32 +14160,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-25T03:46:37.951Z"
-  },
-  {
-    "id": "art-1795577543382-98j4n",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/userisdev/articles/log-aggregation-viewer",
-    "published_at": "2026-11-25T01:17:25.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--lJYUeokt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25B8%25B8%25E9%25A7%2590%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%25A0%25E3%2581%25AE%25E3%2583%25AD%25E3%2582%25B0%25E9%259B%2586%25E7%25B4%2584%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%25A2%25E3%2582%2592%2520Muse%2520%25E3%2581%25A8%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:userisdev%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNlMDE2MWI3ODMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "自宅サーバーの常駐ログ管理を効率化！AIエージェント「Muse」と構築したWebベースのログ集約ビューア開発の全貌",
-    "summary_ja": "DiscordボットやローカルLLMなど、Windows上で動作する複数の常駐プログラムの管理とログ確認を効率化するため、AIエージェント「Muse」を活用してWebベースのログ集約ビューアを開発した。 バッチファイルのループ実行による管理から脱却し、ブラウザ経由で一元的にログを監視する仕組みを構築。",
-    "translations": {
-      "ja": {
-        "title": "自宅サーバーの常駐ログ管理を効率化！AIエージェント「Muse」と構築したWebベースのログ集約ビューア開発の全貌",
-        "summary": "DiscordボットやローカルLLMなど、Windows上で動作する複数の常駐プログラムの管理とログ確認を効率化するため、AIエージェント「Muse」を活用してWebベースのログ集約ビューアを開発した。 バッチファイルのループ実行による管理から脱却し、ブラウザ経由で一元的にログを監視する仕組みを構築。"
-      },
-      "en": {
-        "title": "Building a Web-Based Log Aggregator for Home Server Background Processes with AI Agent 'Muse'",
-        "summary": "To streamline the management of multiple resident programs like Discord bots and local LLMs on a Windows machine, the developer built a web-based log viewer using the AI agent Muse. Previously, managing these processes via batch file loops and checking individual windows became tedious; the new dashboard centralizes logging in a browser for easier monitoring. By leveraging Muse as a coding partner, the author automated the design, implementation, and documentation workflow, drastically reducing development time. The project demonstrates that even simple automation tools can significantly benefit from AI-assisted pair programming, turning routine maintenance scripts into robust, observable systems. For individual developers, this highlights the effectiveness of offloading boilerplate development to agents to maintain home-server sanity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-25T03:32:23.382Z"
   },
   {
     "id": "art-1795575721342-wsbvq",
