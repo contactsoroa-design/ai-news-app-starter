@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795773736819-fw4q8",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/ryoitabashi/articles/2026-11-27-dev-ja",
+    "published_at": "2026-11-27T07:52:04.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--fKqs_tUa--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Shelly%25E3%2581%25AEMCP%25E3%2581%25A7%25E6%2589%25BF%25E8%25AA%258D%25E5%25BE%2585%25E3%2581%25A1%25E3%2581%258C%25E8%25AA%25AD%25E3%2581%25BF%25E5%258F%2596%25E3%2582%258A%25E3%2581%25BE%25E3%2581%25A7%25E6%25AD%25A2%25E3%2582%2581%25E3%2581%259F%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A8%25E4%25BF%25AE%25E6%25AD%25A3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:RYO%2520ITABASHI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY4MDViNWQxYTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントのMCP実装「Shelly」、承認待ちが全要求をブロックする競合問題を解消——非同期並列処理へ刷新",
+    "summary_ja": "Shellyは、外部AIクライアントからのコマンド実行やファイル書き込みにおいて、承認待ちのプロセスが後続の読み取り要求まで完全に停止させてしまう不具合を修正した。 従来の直列的な要求処理を見直し、2026年9月17日のアップデートで各呼び出しの完了を待たずにループ内で処理を開始する並列実行モデルへ刷新された。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントのMCP実装「Shelly」、承認待ちが全要求をブロックする競合問題を解消——非同期並列処理へ刷新",
+        "summary": "Shellyは、外部AIクライアントからのコマンド実行やファイル書き込みにおいて、承認待ちのプロセスが後続の読み取り要求まで完全に停止させてしまう不具合を修正した。 従来の直列的な要求処理を見直し、2026年9月17日のアップデートで各呼び出しの完了を待たずにループ内で処理を開始する並列実行モデルへ刷新された。"
+      },
+      "en": {
+        "title": "Shelly MCP implementation patches critical bottleneck where pending approvals blocked all subsequent read requests",
+        "summary": "Shelly, an AI agent tool, recently resolved a critical concurrency bug where a single pending approval for command execution or file writing would halt all subsequent read requests. The team identified that the system was processing requests sequentially, forcing every operation to wait for the previous one to conclude. The fix, deployed on September 17, 2026, refactored the logic to initiate processing within the loop without waiting for each call to complete, shifting to a parallel execution model. For builders implementing external tool access via MCP, this serves as a reminder that separating authorization flows from core I/O is vital; blocking architectures will inevitably degrade performance as agent complexity and user interaction volume scale up."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-27T10:02:16.819Z"
+  },
+  {
+    "id": "art-1795773726685-bq83r",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.theguardian.com/commentisfree/2026/nov/22/why-i-wont-leave-mathematics-despite-ai-solving-centuries-old-problems",
+    "published_at": "2026-11-27T09:52:14.000Z",
+    "og_image_url": null,
+    "title_ja": "数学者はAI時代にどう生きるか：数世紀の難問を解くAIの進歩にもかかわらず、人間が数理を探求し続けるべき本質的な理由",
+    "summary_ja": "数学界でAIが数世紀にわたる未解決問題を次々と解き明かす中、数学者としての存在意義が問われている。 しかし、AIは単なる「解」を導き出す計算エンジンに過ぎず、数学の本質である「なぜその構造が成り立つのか」という深い洞察や創造的問いの生成には依然として人間の直感が不可欠だ。 技術者はAIを強力なツールとして活用しつつ、真のイノベーションは問題解決そのものではなく、未知の概念を定義し、新たな数学的風景を切り拓く人間の探究心から生まれることを忘れてはならない。",
+    "translations": {
+      "ja": {
+        "title": "数学者はAI時代にどう生きるか：数世紀の難問を解くAIの進歩にもかかわらず、人間が数理を探求し続けるべき本質的な理由",
+        "summary": "数学界でAIが数世紀にわたる未解決問題を次々と解き明かす中、数学者としての存在意義が問われている。 しかし、AIは単なる「解」を導き出す計算エンジンに過ぎず、数学の本質である「なぜその構造が成り立つのか」という深い洞察や創造的問いの生成には依然として人間の直感が不可欠だ。 技術者はAIを強力なツールとして活用しつつ、真のイノベーションは問題解決そのものではなく、未知の概念を定義し、新たな数学的風景を切り拓く人間の探究心から生まれることを忘れてはならない。"
+      },
+      "en": {
+        "title": "Why Mathematicians Are Not Obsolete: Balancing AI’s Ability to Solve Ancient Proofs with Human Mathematical Insight and Creativity",
+        "summary": "As artificial intelligence begins solving centuries-old mathematical mysteries that once baffled human experts, many are questioning the future of pure mathematics. While AI functions as a hyper-efficient engine for generating proofs and identifying patterns, it fundamentally lacks the creative impulse to frame new, meaningful questions or grasp the intuitive beauty that drives discovery. For engineers and researchers, the lesson is clear: AI acts as an accelerator, yet the core innovation—the ability to define new concepts and map out uncharted mathematical landscapes—remains a deeply human endeavor. True advancement lies in leveraging machine computation to handle the heavy lifting while focusing human energy on the conceptual innovation that defines the next frontier of science and technology."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "開発"
+    ],
+    "created_at": "2026-11-27T10:02:06.685Z"
+  },
+  {
+    "id": "art-1795773720048-l3jzi",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/koki-ishida/items/cb77d042684fa337c4b5",
+    "published_at": "2026-11-27T09:53:59.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NTM5MzgyJTJGZmE1N2EzNWI5YzJiZWQ3NmZhMmU4NDA2YWZlNGM5NjJkNmI3NzU0YyUyRmxhcmdlLnBuZyUzRjE3OTU3NzE1OTE_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTVlZDMyYjYzYWY1ZWI2Yzk5ZTY1ZjVjMWU5MmZiZTcx%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkY4MmEyYTc0ZjQzZmU1Y2RlM2UzZDc1MzQ1YmJlODkyNmFlY2NjMjliJTJGb3JpZ2luYWwuanBnJTNGMTU2OTg5ODM4Nj9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz1lNDFiMzlhMzhiMjYxYjNhYTExNjg2YjZlZGM0NzMxNw%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Ddde52ab338263b6b0effef4cc4abaa5f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElQUUlRTMlODAlOEMlRTYlQTglQUElRTMlODElQTclRTglQTYlOEIlRTUlQkMlQjUlRTMlODIlOEIlRTMlODAlOEQlRTMlODElQUUlRTMlODIlOTIlRTMlODIlODQlRTMlODIlODElRTMlODElQTYlRTMlODAlODElRTUlQUUlOUYlRTglQTMlODUlRTMlODIlOTIlRTUlQTQlOUMlRTQlQjglQUQlRTMlODElQUIlRTclODklODclRTQlQkIlOTglRTMlODElOTElRTMlODIlOEIlRTQlQkIlOTUlRTclQjUlODQlRTMlODElQkYlRTMlODIlOTIlRTQlQkQlOUMlRTMlODElQTMlRTMlODElOUYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0zYzlhNjM3ZTM4ZjNhMzZjMGEzNTUxMWE1NWI0NjQxNw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrb2tpLWlzaGlkYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTVjNDNkYjJjNDc4NmQwNzQ2NWE2ZGY3ZWI1MTg5NDM3&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=44OH44Kj44OD44OX5qCq5byP5Lya56S-&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=60d0cf06740948efc6b4a6b5b946a733",
+    "title_ja": "26卒エンジニアが実践、AIコーディングを「横で見張る」のを卒業し夜中に自動実装を完遂させるワークフロー構築術",
+    "summary_ja": "ディップ株式会社の若手エンジニアが、AIによる実装支援を人間が監視し続けるスタイルから脱却し、夜間に自動で処理を完遂させる仕組みを構築した。 実装の指示出しと検証をパイプライン化することで、AIの待機時間を削減し、翌朝にはコードレビューのみを行える体制を実現している。 開発者はプロンプト設計と最終確認に集中でき、AI活用による生産性のボトルネックを解消する好例である。",
+    "translations": {
+      "ja": {
+        "title": "26卒エンジニアが実践、AIコーディングを「横で見張る」のを卒業し夜中に自動実装を完遂させるワークフロー構築術",
+        "summary": "ディップ株式会社の若手エンジニアが、AIによる実装支援を人間が監視し続けるスタイルから脱却し、夜間に自動で処理を完遂させる仕組みを構築した。 実装の指示出しと検証をパイプライン化することで、AIの待機時間を削減し、翌朝にはコードレビューのみを行える体制を実現している。 開発者はプロンプト設計と最終確認に集中でき、AI活用による生産性のボトルネックを解消する好例である。"
+      },
+      "en": {
+        "title": "Beyond pair programming with AI: How a new engineer automated overnight coding pipelines to boost productivity",
+        "summary": "A new graduate engineer at DIP Corporation transformed their development workflow by moving away from active, real-time AI supervision toward a robust overnight automation system. By pipelining implementation instructions and validation steps, they effectively eliminated downtime spent waiting for AI responses, allowing the engineer to simply review completed code each morning. This architectural shift prioritizes precise prompt engineering and asynchronous review cycles over manual monitoring, successfully overcoming the common productivity bottlenecks found in AI-assisted coding. The practical takeaway for builders is clear: treat AI implementation not as a collaborative pair-programming session that requires constant human attention, but as a background task that can be automated, queued, and verified asynchronously to maximize developer throughput."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-27T10:02:00.048Z"
+  },
+  {
+    "id": "art-1795773713383-4mt3g",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/ren_webstep/n/n1cb21bfe695c",
+    "published_at": "2026-11-27T10:00:00.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341183104/rectangle_large_type_2_dc5632b2eba9b22b9d1d9d4582ec914d.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "App Store審査なしでiPhoneアプリを自作する方法：AI×Scriptableで「自分専用」ツールを爆速構築する実用ガイド",
+    "summary_ja": "Scriptableアプリを活用すれば、App Storeへのリリース審査を経ることなく、自分専用のiPhone便利ツールを構築できる。 AIにコード生成を依頼することで、プログラミング知識が浅くてもタスク管理やメモ帳といったカスタマイズアプリが実装可能だ。 複雑な開発環境の構築が不要なため、日々の小さな課題を即座にコードで解決したい個人開発者にとって、最も低コストで効率的な自動化アプローチと言える。",
+    "translations": {
+      "ja": {
+        "title": "App Store審査なしでiPhoneアプリを自作する方法：AI×Scriptableで「自分専用」ツールを爆速構築する実用ガイド",
+        "summary": "Scriptableアプリを活用すれば、App Storeへのリリース審査を経ることなく、自分専用のiPhone便利ツールを構築できる。 AIにコード生成を依頼することで、プログラミング知識が浅くてもタスク管理やメモ帳といったカスタマイズアプリが実装可能だ。 複雑な開発環境の構築が不要なため、日々の小さな課題を即座にコードで解決したい個人開発者にとって、最も低コストで効率的な自動化アプローチと言える。"
+      },
+      "en": {
+        "title": "How to build custom iPhone tools without App Store reviews: Using AI and Scriptable for rapid personal app development",
+        "summary": "By leveraging the Scriptable app on iOS, developers can create highly customized, personal iPhone tools without navigating the friction of App Store submission or approval processes. Users can generate functional code for specific needs like custom task managers or minimalist memo pads by utilizing LLMs to write the underlying logic. Since this approach eliminates the overhead of complex build environments and distribution pipelines, it serves as an incredibly efficient, low-cost method for individuals to automate their daily workflows. For builders looking to solve specific personal problems, integrating AI-assisted script generation with local iOS execution provides the fastest path from ideation to a usable, private utility that lives directly on the home screen."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-27T10:01:53.383Z"
+  },
+  {
     "id": "art-1795772828544-bz4a4",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -6825,33 +6929,6 @@
     "created_at": "2026-11-26T16:31:51.178Z"
   },
   {
-    "id": "art-1795709927442-aa3p8",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/fx_trader/n/n89eec56799d8",
-    "published_at": "2026-11-26T16:15:26.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/ff45b1efdcfc674ab524fd1a096adfe257bcfe92.png",
-    "title_ja": "AIエージェント活用の盲点：単発プロンプトを卒業する「司令塔システム（Muse）」の構築運用術と実例",
-    "summary_ja": "AIエージェントへ仕事を頼む際、多くの解説は単発のプロンプト作成に終始するが、継続的な成果には運用ルールと構造的な司令塔設計が不可欠だ。 本記事では、投資システム運用を例に、エージェントを自律的に動かし続けるための具体的な指示構造と、日々の運用プロセスを体系化した「Muse」の構築手順を公開する。 プロンプトエンジニアリングの先にある、自動化の安定性を高めるための実践的な運用フレームワークを学ぶことが、エージェントの実運用における最大の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント活用の盲点：単発プロンプトを卒業する「司令塔システム（Muse）」の構築運用術と実例",
-        "summary": "AIエージェントへ仕事を頼む際、多くの解説は単発のプロンプト作成に終始するが、継続的な成果には運用ルールと構造的な司令塔設計が不可欠だ。 本記事では、投資システム運用を例に、エージェントを自律的に動かし続けるための具体的な指示構造と、日々の運用プロセスを体系化した「Muse」の構築手順を公開する。 プロンプトエンジニアリングの先にある、自動化の安定性を高めるための実践的な運用フレームワークを学ぶことが、エージェントの実運用における最大の鍵となる。"
-      },
-      "en": {
-        "title": "Beyond Prompt Engineering: Building a Command System for Reliable AI Agent Automation and Consistent Results",
-        "summary": "Most AI agent guides focus exclusively on prompt engineering, yet successful long-term automation requires structured command systems, not just clever queries. This article introduces 'Muse,' an operational framework designed to manage AI agents by transforming them into stable, autonomous systems, illustrated through the author's real-world investment analysis workflows. The guide shifts the focus from writing better single-shot instructions to establishing standardized operating rules, iterative feedback loops, and clear documentation. For builders looking to move beyond prototype agents, this approach provides the necessary structural foundation to keep agents running consistently without constant manual intervention. Understanding the transition from prompt-based interaction to system-level governance is critical for anyone aiming to deploy robust, multi-stage AI agents in production environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-26T16:18:47.442Z"
-  },
-  {
     "id": "art-1795709919442-xpumc",
     "source_id": "source-capcut",
     "source_name": "CapCut 公式（AI動画編集）",
@@ -8754,32 +8831,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T10:17:28.951Z"
-  },
-  {
-    "id": "art-1795688226230-ckh1b",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ohisama@github/items/ba2000e5525ea1ef1690",
-    "published_at": "2026-11-26T10:04:27.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYxODEwNCUyRmZiMGEzYjAxNmI3NWM3NWZhYjQyMGUxMGIyYTc1YWZjNGQzMTIxMWMlMkZ4X2xhcmdlLnBuZyUzRjE3NTc5ODAzMTA_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTljZjJjZTNhMTliMTU4ZThhNjg3N2RmOTFlMzg1YTFj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D39440b0a00fa8b4d3536abdab6ec71e6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU4JTg3JUFBJUU0JUJEJTlDTUNQJUUzJTgyJUI1JUUzJTgzJUJDJUUzJTgzJTkwJUUzJTgzJUJDJTIwJUUzJTgxJTlEJUUzJTgxJUFFMzImdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1lMWE0NjVmMWMwOTVmMGE5MTAwODZhZjY5YjA5MDU2MQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBvaGlzYW1hJTQwZ2l0aHViJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MGY0ZWFmYWQ5NjRjYTllOWJiNWUyYTg4Mjg3NWYwZWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=dc0fe632aad5b456790e244c0ddfb570",
-    "title_ja": "Claude Desktopでの自作MCPサーバー実装と7つの教訓：AIアシスタントの機能を拡張する実践的アプローチ",
-    "summary_ja": "Claude Desktopアプリ環境において、MCP（Model Context Protocol）サーバーを構築しAIの機能を拡張する手法を解説。 CLI版の知見をGUI環境へ適応させ、サブエージェント構成や運用における7つの重要な教訓を整理した。 MCPはAIと外部ツールを繋ぐ標準規格として不可欠であり、既存のツールを統合してAIのワークフローを自動化したい開発者にとって、このプロトコルへの理解と自作サーバーの実装は避けて通れないスキルとなる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Desktopでの自作MCPサーバー実装と7つの教訓：AIアシスタントの機能を拡張する実践的アプローチ",
-        "summary": "Claude Desktopアプリ環境において、MCP（Model Context Protocol）サーバーを構築しAIの機能を拡張する手法を解説。 CLI版の知見をGUI環境へ適応させ、サブエージェント構成や運用における7つの重要な教訓を整理した。 MCPはAIと外部ツールを繋ぐ標準規格として不可欠であり、既存のツールを統合してAIのワークフローを自動化したい開発者にとって、このプロトコルへの理解と自作サーバーの実装は避けて通れないスキルとなる。"
-      },
-      "en": {
-        "title": "Building custom MCP servers for Claude Desktop: Practical lessons on extending AI assistant capabilities",
-        "summary": "This technical deep dive explores implementing Model Context Protocol (MCP) servers within the Claude Desktop GUI environment, bridging the gap between command-line prototypes and practical assistant workflows. The author synthesizes seven key lessons for adaptation, specifically addressing sub-agent configurations and environment management tailored for the desktop client. As the AI ecosystem increasingly standardizes on MCP for interoperability, building custom servers becomes a foundational skill for developers looking to integrate proprietary APIs or local tools directly into their AI workflows. By mastering these architectural patterns, builders can transcend simple chat interactions, enabling agents to execute complex, multi-step tasks across their entire local toolchain with full context awareness."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-26T10:17:06.230Z"
   },
   {
     "id": "art-1795688217730-ocrar",
@@ -10913,32 +10964,6 @@
     "created_at": "2026-11-26T01:04:26.409Z"
   },
   {
-    "id": "art-1795655011087-8ksa7",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.london.edu/think/ai-bubble-about-to-burst",
-    "published_at": "2026-11-26T00:38:30.000Z",
-    "og_image_url": "https://images.london.edu/hxo16fanegqh/R9pfpICgrfbB9YhwtPo5O/b8a725b7568403dd08ea0e4c57af0e0a/New_research_suggests_AI_bubble_bursting_and_to_expect_major_market_collapse_thumb.jpg?w=1200&h=600",
-    "title_ja": "ロンドン・ビジネス・スクールの最新研究が警告、AIブームはバブル崩壊の入り口か、市場急落への備えが必要",
-    "summary_ja": "ロンドン・ビジネス・スクールの研究によると、現在のAI熱狂は過去の技術バブルと同様の兆候を示しており、市場の大幅な調整が避けられない可能性があるという。 過剰な投資対効果の期待と実需の乖離がリスクを高めている。 開発者や起業家にとって、AI技術単体での収益化モデルは脆弱であり、バブル崩壊を見越した持続可能なビジネス基盤の構築と、AI以外の付加価値を組み込んだプロダクト設計が今まさに求められている。",
-    "translations": {
-      "ja": {
-        "title": "ロンドン・ビジネス・スクールの最新研究が警告、AIブームはバブル崩壊の入り口か、市場急落への備えが必要",
-        "summary": "ロンドン・ビジネス・スクールの研究によると、現在のAI熱狂は過去の技術バブルと同様の兆候を示しており、市場の大幅な調整が避けられない可能性があるという。 過剰な投資対効果の期待と実需の乖離がリスクを高めている。 開発者や起業家にとって、AI技術単体での収益化モデルは脆弱であり、バブル崩壊を見越した持続可能なビジネス基盤の構築と、AI以外の付加価値を組み込んだプロダクト設計が今まさに求められている。"
-      },
-      "en": {
-        "title": "New London Business School Research Warns AI Bubble is Ready to Burst and Predicts Significant Market Correction Ahead",
-        "summary": "New research emerging from the London Business School indicates that the current frenzy surrounding generative AI is echoing patterns from historical technology bubbles, warning stakeholders to anticipate a sharp market correction. The analysis highlights a widening disconnect between massive capital expenditures and actual, scalable revenue realization, a disparity that often precedes a market downturn. For builders and founders, this serves as a critical signal to reassess their reliance on pure AI hype. The takeaway is to move away from fragile, model-dependent monetization strategies. Instead, developers should prioritize building sustainable business moats and delivering genuine value propositions that function independently of the underlying AI wave, ensuring resilience if the current bubble collapses sooner rather than later."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-26T01:03:31.087Z"
-  },
-  {
     "id": "art-1795654020536-4u5c9",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -12588,32 +12613,6 @@
       "研究"
     ],
     "created_at": "2026-11-25T13:32:54.718Z"
-  },
-  {
-    "id": "art-1795612795673-idoc0",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/daphne/articles/ai-tidy-context",
-    "published_at": "2026-11-25T07:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--zXUCd5rP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E3%2582%2586%25E3%2582%258B%25E3%2581%25A3%25E3%2581%25A8AI%25E5%259F%25BA%25E7%25A4%258E%2520%25236%25E3%2580%2591AI%25E3%2581%25AB%25E3%2580%258C%25E3%2581%2595%25E3%2581%25A3%25E3%2581%258D%25E8%25A8%2580%25E3%2581%25A3%25E3%2581%259F%25E3%2581%2598%25E3%2582%2583%25E3%2582%2593%25E3%2580%258D%25E3%2581%258C%25E9%2580%259A%25E3%2581%2598%25E3%2581%25AA%25E3%2581%2584%25E3%2581%25AE%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%259C%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Daphne%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZmOGJhN2UwMDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "LLMが直近の文脈を忘れる理由──「コンテキストウィンドウ」制限と外部記憶の実装で解決すべき開発課題",
-    "summary_ja": "AIが過去のやり取りを「さっき言った」と指摘しても理解できないのは、LLM自体に永続的な記憶機能がないためだ。 アプリ側が会話履歴を毎回再送信し、入り切らない分は要約や切り捨てを行う必要がある。 結局のところ、コンテキスト上限に収めるだけでなく、データベース等の外部記憶装置を介したRAGやメモ機能の実装こそが、AIアプリに実用的な「記憶」を持たせるための王道である。",
-    "translations": {
-      "ja": {
-        "title": "LLMが直近の文脈を忘れる理由──「コンテキストウィンドウ」制限と外部記憶の実装で解決すべき開発課題",
-        "summary": "AIが過去のやり取りを「さっき言った」と指摘しても理解できないのは、LLM自体に永続的な記憶機能がないためだ。 アプリ側が会話履歴を毎回再送信し、入り切らない分は要約や切り捨てを行う必要がある。 結局のところ、コンテキスト上限に収めるだけでなく、データベース等の外部記憶装置を介したRAGやメモ機能の実装こそが、AIアプリに実用的な「記憶」を持たせるための王道である。"
-      },
-      "en": {
-        "title": "Why LLMs fail to recall previous context: Addressing context window limits and external state management in AI development",
-        "summary": "AI models cannot recall what you just said because LLMs lack native, persistent memory; they are stateless engines by design. Developers must build scaffolding that re-feeds history with every API request, or aggressively summarize and truncate data to fit within the rigid context window. Simply stuffing prompts with history hits a ceiling, proving that pushing data into the model isn't enough. The real solution involves architecting external state management—using vector databases or dedicated RAG pipelines—to act as the long-term memory for the application. For builders, the takeaway is clear: stop relying on the LLM to 'remember' things and start building robust external infrastructure to manage state properly."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-25T13:19:55.673Z"
   },
   {
     "id": "art-1795612725680-ny16q",
