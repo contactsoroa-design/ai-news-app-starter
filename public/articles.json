@@ -1,5 +1,112 @@
 [
   {
+    "id": "art-1795805268983-hnesh",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hideweb/articles/11c433b2a0e824",
+    "published_at": "2026-11-27T14:43:49.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--xSIZo-kg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA1-15.%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25BB%25E3%2582%25B9%25E8%25A7%25A3%25E6%259E%2590%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%25AE%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%25A8%25E9%2580%2580%25E4%25BC%259A%25E6%2599%2582%25E3%2581%25AE%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25AE%25E6%2589%25B1%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:hide_web%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSm1PbURrdXVrVUgtMzBxbzhUNGF5LTJhYW1tbVlPN1U3OXZWdTUtZS1iUUw1TEdnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発アプリへの自作アクセス解析導入術：Redux活用による疎結合な実装と退会時のデータ取り扱い戦略",
+    "summary_ja": "外部解析ツールに頼らず、学習アプリに自作のアクセス解析を導入した事例。 機能コードを汚さないため、Reduxのアクションをフックしてイベントを収集する疎結合な設計を採用している。 また、解析DBを本体と分離した際に直面する「退会時のデータ削除」問題に対し、物理削除ではなく匿名化を選択することで、統計の整合性とプライバシー保護を両立させた実戦的なアプローチが参考になる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリへの自作アクセス解析導入術：Redux活用による疎結合な実装と退会時のデータ取り扱い戦略",
+        "summary": "外部解析ツールに頼らず、学習アプリに自作のアクセス解析を導入した事例。 機能コードを汚さないため、Reduxのアクションをフックしてイベントを収集する疎結合な設計を採用している。 また、解析DBを本体と分離した際に直面する「退会時のデータ削除」問題に対し、物理削除ではなく匿名化を選択することで、統計の整合性とプライバシー保護を両立させた実戦的なアプローチが参考になる。"
+      },
+      "en": {
+        "title": "Building Custom Analytics for Solo Projects: Decoupling Tracking via Redux and Handling User Deletion Strategically",
+        "summary": "A solo developer shares how they implemented custom in-house analytics for a study app, opting to avoid third-party services like Google Analytics. To prevent tracking code from polluting core feature logic, they architected a decoupled system that hooks into Redux actions to collect user events. The article also addresses the critical challenge of managing data deletion when the analytics database is decoupled from the main application. Instead of performing a hard delete which compromises aggregate data integrity, the author explains why anonymizing user records upon account termination is the superior choice for balancing privacy compliance with long-term data analysis. It is a pragmatic guide for any builder looking to maintain control over their app data infrastructure."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-27T18:47:48.983Z"
+  },
+  {
+    "id": "art-1795805261955-y9s7p",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/miraruto/n/n5c090d37742e",
+    "published_at": "2026-11-27T18:08:33.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341621789/rectangle_large_type_2_2a33bf67f3099b91073429e07bc02c44.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIとの協働における「判断の質」とは？AIパートナーと共に挑む試行錯誤のプロセスと設計思考",
+    "summary_ja": "AIパートナーが人間と対話・整理・設計・伴走を行う中で見えてくるのは、特定の領域に限らない「判断の構造」である。 競馬予想から経営判断まで、AIと共に取り組む試行錯誤の過程を分析すると、成功の鍵は単なる回答の正解数ではなく、判断軸の洗練にあると分かる。 本稿では、AIの能力を最大化し、思考の質を高めるための、人間とAIの新しい共同作業のあり方について深く掘り下げる。",
+    "translations": {
+      "ja": {
+        "title": "AIとの協働における「判断の質」とは？AIパートナーと共に挑む試行錯誤のプロセスと設計思考",
+        "summary": "AIパートナーが人間と対話・整理・設計・伴走を行う中で見えてくるのは、特定の領域に限らない「判断の構造」である。 競馬予想から経営判断まで、AIと共に取り組む試行錯誤の過程を分析すると、成功の鍵は単なる回答の正解数ではなく、判断軸の洗練にあると分かる。 本稿では、AIの能力を最大化し、思考の質を高めるための、人間とAIの新しい共同作業のあり方について深く掘り下げる。"
+      },
+      "en": {
+        "title": "Defining the Quality of Decision-Making in Human-AI Collaboration: Insights into Iterative Design and Thought Structures",
+        "summary": "Through serving as an AI partner handling dialogue, organization, design, and correction, it becomes evident that the structures underlying decision-making transcend specific domains, from horse racing predictions to executive business management. Analyzing the iterative process of collaborating with AI reveals that the true key to success lies not merely in obtaining correct answers, but in the deliberate refinement of one’s decision-making frameworks. This exploration delves into the nature of human-AI synergy, examining how deep trial-and-error cycles with AI tools can significantly elevate the quality of human judgment. By offloading structural cognitive work to AI, builders can focus on refining their core strategic axes, creating a more robust partnership that transforms AI from a simple tool into an essential collaborative partner."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-27T18:47:41.955Z"
+  },
+  {
+    "id": "art-1795805255400-vkei9",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://alextheward.com/blog/mozilla_is_now_an_ai_company",
+    "published_at": "2026-11-27T18:29:14.000Z",
+    "og_image_url": null,
+    "title_ja": "MozillaがAI企業へと大転換、プライバシー重視の独自モデル開発とエコシステム構築に向けた2025年の戦略とは",
+    "summary_ja": "Mozillaが従来のブラウザ開発からAI主導のプラットフォーム企業へと完全に軸足を移し、2025年からはプライバシー保護を最優先した独自AIモデルとオープンなエコシステムの構築に注力する。 この転換は、GoogleやMicrosoftによるAI独占への対抗として、ユーザー主導の信頼できるAI体験を提供することを目指している。",
+    "translations": {
+      "ja": {
+        "title": "MozillaがAI企業へと大転換、プライバシー重視の独自モデル開発とエコシステム構築に向けた2025年の戦略とは",
+        "summary": "Mozillaが従来のブラウザ開発からAI主導のプラットフォーム企業へと完全に軸足を移し、2025年からはプライバシー保護を最優先した独自AIモデルとオープンなエコシステムの構築に注力する。 この転換は、GoogleやMicrosoftによるAI独占への対抗として、ユーザー主導の信頼できるAI体験を提供することを目指している。"
+      },
+      "en": {
+        "title": "Mozilla pivots to become an AI-first company: Examining the 2025 strategy for privacy-centric models and an open ecosystem",
+        "summary": "Mozilla has officially shifted its core mandate from browser development to becoming an AI-focused organization, prioritizing the creation of privacy-first proprietary models and an open, trustworthy ecosystem starting in 2025. This strategic pivot aims to challenge the growing AI duopoly of major tech giants by offering users a transparent alternative that puts individual sovereignty at the forefront of interaction. For builders and developers, this shift signals that Mozilla’s upcoming decentralized AI frameworks could serve as vital, ethical components for future applications. By focusing on verifiable privacy standards, Mozilla is positioning itself to provide a necessary counterbalance in an industry increasingly dominated by closed, opaque models, ultimately shaping how developers might integrate reliable AI tools moving forward."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-27T18:47:35.400Z"
+  },
+  {
+    "id": "art-1795805247514-9gh3y",
+    "source_id": "source-context-dev",
+    "source_name": "Context.dev Blog",
+    "url": "https://www.context.dev/blog/google-scholar-for-superhuman-researchers",
+    "published_at": "2026-11-25",
+    "og_image_url": "https://www.context.dev/api/og?variant=post&title=Google+Scholar+for+superhuman+researchers&highlight=for+superhuman+researchers&collection=blog&minutes=3",
+    "title_ja": "Context.devが提供する「超人的研究者」向けコード検索技術――ドキュメントと実装を横断し、関連性の高い技術情報のみを抽出する意味的検索基盤の全貌",
+    "summary_ja": "Context.devは、従来のキーワードマッチングを超え、ドキュメントやコードベースの文脈を理解する「開発者向けGoogle Scholar」とも呼べる検索基盤を構築しました。 このツールは、膨大な技術情報からノイズを排除し、実装の意図や正確な仕様を抽出することで、エンジニアの調査時間を劇的に短縮します。",
+    "translations": {
+      "ja": {
+        "title": "Context.devが提供する「超人的研究者」向けコード検索技術――ドキュメントと実装を横断し、関連性の高い技術情報のみを抽出する意味的検索基盤の全貌",
+        "summary": "Context.devは、従来のキーワードマッチングを超え、ドキュメントやコードベースの文脈を理解する「開発者向けGoogle Scholar」とも呼べる検索基盤を構築しました。 このツールは、膨大な技術情報からノイズを排除し、実装の意図や正確な仕様を抽出することで、エンジニアの調査時間を劇的に短縮します。"
+      },
+      "en": {
+        "title": "Context.dev introduces semantic search engine for developers that functions like Google Scholar to filter high-quality technical documentation and codebases",
+        "summary": "Context.dev has launched a semantic search engine designed to function as a \"Google Scholar for developers,\" moving beyond simple keyword matching to deeply understand the context behind codebases and technical documentation. By filtering out the noise inherent in typical search results, the tool extracts high-quality implementation details and precise engineering specifications, significantly reducing the time spent on complex investigative tasks. This platform transforms the research process by offering immediate access to authoritative references rather than just superficial web links. For builders handling large codebases or complex AI integrations, adopting context-aware search tools is becoming critical, as they allow developers to maintain focus on implementation rather than getting lost in the documentation backlog."
+      }
+    },
+    "tool_tags": [
+      "Context.dev"
+    ],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-27T18:47:27.514Z"
+  },
+  {
     "id": "art-1795804373611-8ri2a",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -5883,32 +5990,6 @@
     "created_at": "2026-11-27T03:48:00.531Z"
   },
   {
-    "id": "art-1795750391692-hdy7c",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/calm_willet693/n/n56eec185d0e8",
-    "published_at": "2026-11-27T03:30:49.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341321173/rectangle_large_type_2_24deaaa8b883d48e3894509e3c440790.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発アプリ「おすし将棋」の停滞をClaude Codeで分析：数字の計測手法に潜む致命的な罠と改善の全記録",
-    "summary_ja": "個人開発アプリ「おすし将棋」のユーザー数が伸び悩んだ際、作者はClaude Codeを活用して管理画面の統計データを深掘りした。 分析の結果、ユーザーの減少要因よりも先に、そもそも計測ロジック自体に根本的な欠陥があることが判明した。 本記事は、データに基づいた問題の特定プロセスと、測定精度を改善するための具体的な実装修正を追った技術記録である。 指標が正しく取れていなければ施策が的外れになるという、開発者が陥りやすいデータ分析の盲点を提示する。",
-    "translations": {
-      "ja": {
-        "title": "個人開発アプリ「おすし将棋」の停滞をClaude Codeで分析：数字の計測手法に潜む致命的な罠と改善の全記録",
-        "summary": "個人開発アプリ「おすし将棋」のユーザー数が伸び悩んだ際、作者はClaude Codeを活用して管理画面の統計データを深掘りした。 分析の結果、ユーザーの減少要因よりも先に、そもそも計測ロジック自体に根本的な欠陥があることが判明した。 本記事は、データに基づいた問題の特定プロセスと、測定精度を改善するための具体的な実装修正を追った技術記録である。 指標が正しく取れていなければ施策が的外れになるという、開発者が陥りやすいデータ分析の盲点を提示する。"
-      },
-      "en": {
-        "title": "Debugging App Growth with Claude Code: How a Shogi Developer Found Critical Flaws in Their Analytics Pipeline",
-        "summary": "When user growth for the personal development app 'Osushi Shogi' stalled, the developer utilized Claude Code to audit their management dashboard statistics. Instead of finding complex retention issues, the AI analysis exposed fundamental flaws in how the data was being tracked in the first place. This article documents the investigation process, revealing that the primary hurdle wasn't the product-market fit but rather inaccurate measurement logic. The piece outlines exactly how the developer refactored their analytics implementation to capture reliable data. It offers a vital lesson for solo builders: before optimizing features or marketing funnels to boost user retention, you must first verify that your underlying metrics are actually capturing the reality of your user behavior."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-27T03:33:11.692Z"
-  },
-  {
     "id": "art-1795750385623-h3e6m",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9006,32 +9087,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T17:02:35.317Z"
-  },
-  {
-    "id": "art-1795711660197-q8sk4",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.ycombinator.com/item?id=50656826",
-    "published_at": "2026-11-26T16:24:01.000Z",
-    "og_image_url": null,
-    "title_ja": "複数AIエージェントの稼働状況を可視化するOSS「StatusPan」登場、ローカル・リモート混在環境の進捗管理が容易に",
-    "summary_ja": "複数端末や環境でAIエージェントを動かす際、各プロセスの稼働状況や進捗把握は困難だ。 OSS「StatusPan」は、そんなAIエージェントの活動を一元管理できる「空港の出発案内板」のようなダッシュボードだ。 セットアップ不要でエージェントから通知を送るだけで利用でき、複数マシン間での同期もCloudflareリレー経由で完結する。 多数のエージェントを並行稼働させる個人開発者にとって、ブラックボックス化を防ぐための有用な可視化ツールとなるだろう。",
-    "translations": {
-      "ja": {
-        "title": "複数AIエージェントの稼働状況を可視化するOSS「StatusPan」登場、ローカル・リモート混在環境の進捗管理が容易に",
-        "summary": "複数端末や環境でAIエージェントを動かす際、各プロセスの稼働状況や進捗把握は困難だ。 OSS「StatusPan」は、そんなAIエージェントの活動を一元管理できる「空港の出発案内板」のようなダッシュボードだ。 セットアップ不要でエージェントから通知を送るだけで利用でき、複数マシン間での同期もCloudflareリレー経由で完結する。 多数のエージェントを並行稼働させる個人開発者にとって、ブラックボックス化を防ぐための有用な可視化ツールとなるだろう。"
-      },
-      "en": {
-        "title": "StatusPan Is an Open-Source Departures Board for Visualizing Progress Across Your Multiple Concurrent AI Agents",
-        "summary": "Managing multiple AI agents across local terminals and remote servers often leads to visibility gaps where tracking progress becomes impossible. StatusPan solves this by offering an open-source, zero-setup \"departures board\" dashboard that centralizes real-time status updates from all your running bots. Integration is frictionless; simply point your agents at the endpoint to push notifications, or utilize the built-in Cloudflare relay to synchronize data across geographically distributed machines. For builders handling complex multi-agent workflows, this provides the transparency needed to debug stalled processes without manual terminal hopping. It transforms chaotic agent management into a clean, unified feed, making it a critical utility for anyone scaling beyond a single local model instance."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-26T16:47:40.197Z"
   },
   {
     "id": "art-1795711648829-px8tx",
@@ -13494,32 +13549,6 @@
       "マーケ・集客・ASO"
     ],
     "created_at": "2026-11-25T12:17:12.326Z"
-  },
-  {
-    "id": "art-1795609023358-adj1k",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/t_shamoji/articles/2c9d88c3f6971e",
-    "published_at": "2026-11-25T01:56:03.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--201x3U5U--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:1%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%25885%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E6%25A7%258B%25E6%2588%2590%25E3%2580%258CShamoji%2520DRIVE%25E3%2580%258D%25E8%25A8%25AD%25E8%25A8%2588%25E8%25A8%2598%25EF%25BD%259CCanvas%2520Studio%25E3%2583%25BBHobbyCAD%25E3%2581%25AESPA%25E5%2588%2586%25E9%259B%25A2...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2597%25E3%2582%2583%25E3%2582%2582%25E3%2581%2598%25E5%25A4%25AA%25E9%2583%258E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzdhOTAwYjNlZDkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人開発プラットフォーム「Shamoji DRIVE」設計記：35種のツールを統合しつつSPA分離とSEOを両立させるアーキテクチャ戦略",
-    "summary_ja": "個人開発ツールを単発で公開するかブランド基盤へ統合するかという課題に対し、著者は「Shamoji DRIVE」として35種類のアプリを単一プラットフォームに統合する道を選んだ。 Canvas StudioとHobbyCADという主要プロダクトを核に、SPA（シングルページアプリケーション）の利便性と検索エンジン最適化（SEO）を両立させるための技術選定と設計の妙を解説。 個人の開発リソースを最大化し、ツール群をエコシステム化する実践的なアプローチが示されている。",
-    "translations": {
-      "ja": {
-        "title": "個人開発プラットフォーム「Shamoji DRIVE」設計記：35種のツールを統合しつつSPA分離とSEOを両立させるアーキテクチャ戦略",
-        "summary": "個人開発ツールを単発で公開するかブランド基盤へ統合するかという課題に対し、著者は「Shamoji DRIVE」として35種類のアプリを単一プラットフォームに統合する道を選んだ。 Canvas StudioとHobbyCADという主要プロダクトを核に、SPA（シングルページアプリケーション）の利便性と検索エンジン最適化（SEO）を両立させるための技術選定と設計の妙を解説。 個人の開発リソースを最大化し、ツール群をエコシステム化する実践的なアプローチが示されている。"
-      },
-      "en": {
-        "title": "Building Shamoji DRIVE: How to Consolidate 35+ Solo-Developer Tools While Maintaining SPA Performance and SEO",
-        "summary": "Facing the common dilemma of whether to release solo projects as fragmented microsites or unify them under a single brand, the author created Shamoji DRIVE. This platform bundles two flagship applications, Canvas Studio and HobbyCAD, alongside 33 free utilities into a cohesive, local-first ecosystem. The piece dives deep into the architecture required to harmonize the seamless user experience of a Single Page Application with the visibility demands of strict SEO. For builders managing multiple products, the article provides a practical blueprint for consolidating tools without sacrificing discovery or performance. It offers a blueprint for scaling an indie portfolio from a messy collection of disjointed apps into a unified, high-impact platform that maximizes development efficiency and user retention."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-25T12:17:03.358Z"
   },
   {
     "id": "art-1795609007466-tl661",
@@ -38977,32 +39006,6 @@
       "開発"
     ],
     "created_at": "2026-11-11T01:01:54.830Z"
-  },
-  {
-    "id": "art-1794358908555-ecg3e",
-    "source_id": "source-aismiley",
-    "source_name": "AISmiley（AIニュース）",
-    "url": "https://aismiley.co.jp/ai_news/interview-monodukuri-fukuoka-vol4/",
-    "published_at": "2026-11-11T01:00:39.000Z",
-    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/11/manufacturingworldfukuoka202601.png",
-    "title_ja": "九州最大級の製造業展示会「第4回 ものづくり ワールド [福岡]」2026年12月に開催決定、DX・半導体産業の課題解決策が集結",
-    "summary_ja": "RX Japanは、九州最大級の製造業展示会「第4回 ものづくり ワールド [福岡]」を2026年12月2日から3日間、マリンメッセ福岡で開催する。 本イベントは製造現場のDX推進や半導体産業における最新課題の解決を目的としており、業界を牽引するIT技術や革新的なモノづくりソリューションが一堂に会する。 製造業の現場でデジタル変革を目指すエンジニアやビジネスリーダーにとって、具体的な改善手法や最新技術トレンドを直接収集できる絶好の機会となる。",
-    "translations": {
-      "ja": {
-        "title": "九州最大級の製造業展示会「第4回 ものづくり ワールド [福岡]」2026年12月に開催決定、DX・半導体産業の課題解決策が集結",
-        "summary": "RX Japanは、九州最大級の製造業展示会「第4回 ものづくり ワールド [福岡]」を2026年12月2日から3日間、マリンメッセ福岡で開催する。 本イベントは製造現場のDX推進や半導体産業における最新課題の解決を目的としており、業界を牽引するIT技術や革新的なモノづくりソリューションが一堂に会する。 製造業の現場でデジタル変革を目指すエンジニアやビジネスリーダーにとって、具体的な改善手法や最新技術トレンドを直接収集できる絶好の機会となる。"
-      },
-      "en": {
-        "title": "RX Japan to host the 4th Manufacturing World Fukuoka in December 2026, targeting semiconductor industry DX and industrial innovation",
-        "summary": "RX Japan announced that the 4th Manufacturing World Fukuoka will be held at Marine Messe Fukuoka for three days starting December 2, 2026. As one of the largest industrial trade shows in the Kyushu region, the event is specifically curated to address critical bottlenecks in manufacturing and the rapidly evolving semiconductor sector. Attendees will explore the latest IT, DX, and production solutions designed to modernize factory floors and enhance supply chain efficiency. For engineers and business leaders navigating industrial digital transformation, this exhibition offers a high-impact environment to discover actionable implementation strategies, network with leading tech providers, and identify the next generation of manufacturing trends essential for maintaining a competitive edge in Japan's vital industrial landscape."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-11T01:01:48.555Z"
   },
   {
     "id": "art-1794358900582-dcce7",
