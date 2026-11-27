@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1795769224499-knvvy",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/chooser/articles/akari-001-research",
+    "published_at": "2026-11-27T02:11:28.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--eR36uyb---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2590%258C%25E3%2581%2598%25E3%2580%258C%25E6%25AD%25A3%25E3%2581%25AE%25E6%2595%25B4%25E6%2595%25B0%25E3%2580%258D%25E3%2581%25AE%25E6%25A4%259C%25E6%259F%25BB%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581Pydantic%2520%25E3%2581%25A8%2520Zod%2520%25E3%2581%25A7%25E7%25B2%25BE%25E5%25BA%25A6%25E3%2581%258C%25E9%2581%2595%25E3%2581%25A3%25E3%2581%259F%2520%25E2%2594%2580%25E2%2594%2580%2520%25E5%25B7%25AE%25E3%2581%25AF%25E6%25A4%259C%25E6%259F%25BB%25E3%2581%25AE%25E5%2589%258D%25E3%2580%2581JSON%2520%25E3%2582%2592%25E8%25AA%25AD%25E3%2582%2580%25E6%2589%2580...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:chooser%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0ZW50bzlLbnMwUG1sVmVrYjRWM2wyOWtROUl6MlJDY0J0cndoQ2otc0RySzlnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "PydanticとZodで「正の整数」の検査精度が異なる理由──JSON読み取り時の型解釈とバリデーション仕様の深い溝",
+    "summary_ja": "PydanticとZodは、同じ「正の整数」という制約を課しても、JSON読み取り時点の処理で異なる結果を生むことがある。 この違いは、各ライブラリがJSONの数値をどう解釈し、バリデーション前のパース段階で型をどう変換するかという根本的な仕様の差に起因する。 バックエンドとフロントエンドでスキーマを共有する際、この「微妙なズレ」を考慮しないと、予期せぬデータ不整合が生まれる。",
+    "translations": {
+      "ja": {
+        "title": "PydanticとZodで「正の整数」の検査精度が異なる理由──JSON読み取り時の型解釈とバリデーション仕様の深い溝",
+        "summary": "PydanticとZodは、同じ「正の整数」という制約を課しても、JSON読み取り時点の処理で異なる結果を生むことがある。 この違いは、各ライブラリがJSONの数値をどう解釈し、バリデーション前のパース段階で型をどう変換するかという根本的な仕様の差に起因する。 バックエンドとフロントエンドでスキーマを共有する際、この「微妙なズレ」を考慮しないと、予期せぬデータ不整合が生まれる。"
+      },
+      "en": {
+        "title": "Why Pydantic and Zod treat 'positive integers' differently during JSON parsing and validation across backend and frontend stacks",
+        "summary": "Pydantic and Zod can yield surprisingly different validation results for the same 'positive integer' constraint, despite similar schemas. This discrepancy stems not just from validation logic, but from fundamental differences in how each library parses numeric types from JSON before validation even occurs. When sharing schemas between backend and frontend environments, failing to account for this subtle behavior leads to silent data mismatches and runtime errors. Builders must realize that parsing and validation are distinct phases; simply defining a constraint is not enough. You need to inspect how your chosen runtime validator handles input transformation at the entry point to ensure consistent data integrity, rather than assuming identical logic produces identical outputs across different language ecosystems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-27T08:47:04.499Z"
+  },
+  {
+    "id": "art-1795769218043-mz00z",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/depost-ai",
+    "published_at": "2026-11-27T03:17:55.000Z",
+    "og_image_url": null,
+    "title_ja": "LinkedIn特化型AIエージェント「Depost AI」が登場、ブランド独自のトーンを学習し投稿パフォーマンスを最適化",
+    "summary_ja": "Depost AIは、LinkedInでの発信を自動化・最適化するAIエージェントだ。 ユーザーの過去の投稿やブランドのトーンを学習し、エンゲージメントの高いコンテンツを自動生成する。 単なる自動投稿ツールではなく、どのトーンが自身のネットワークに響くかを分析してフィードバックを得る仕組みが特徴だ。 B2Bマーケティングにおいて、継続的な発信と質の高いインサイトを両立させたい個人開発者や創業者にとって、強力なレバレッジツールとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "LinkedIn特化型AIエージェント「Depost AI」が登場、ブランド独自のトーンを学習し投稿パフォーマンスを最適化",
+        "summary": "Depost AIは、LinkedInでの発信を自動化・最適化するAIエージェントだ。 ユーザーの過去の投稿やブランドのトーンを学習し、エンゲージメントの高いコンテンツを自動生成する。 単なる自動投稿ツールではなく、どのトーンが自身のネットワークに響くかを分析してフィードバックを得る仕組みが特徴だ。 B2Bマーケティングにおいて、継続的な発信と質の高いインサイトを両立させたい個人開発者や創業者にとって、強力なレバレッジツールとなるだろう。"
+      },
+      "en": {
+        "title": "Depost AI Launches as a Specialized LinkedIn Agent to Learn Your Brand Tone and Optimize Post Performance",
+        "summary": "Depost AI is a specialized LinkedIn agent designed to automate and elevate your professional presence by learning your specific brand voice and audience preferences. Unlike generic auto-posters, the tool analyzes your historical performance to craft content that consistently resonates with your unique network. It essentially acts as a personal growth strategist, identifying exactly which messaging styles drive meaningful engagement rather than just broadcasting noise. For founders and solo builders tasked with B2B marketing, this agent offers a way to maintain high-quality, consistent activity on LinkedIn without the massive time sink of manual drafting. It is an essential utility for anyone looking to convert thought leadership into reliable inbound growth while minimizing day-to-day operational overhead."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "マーケ・集客・ASO",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-27T08:46:58.043Z"
+  },
+  {
+    "id": "art-1795769212175-4pv4h",
+    "source_id": "source-aismiley",
+    "source_name": "AISmiley（AIニュース）",
+    "url": "https://aismiley.co.jp/ai_news/gpt-6-2-sol/",
+    "published_at": "2026-11-27T08:17:55.000Z",
+    "og_image_url": "https://aismiley.co.jp/wp-content/uploads/2026/11/gpt62sol01.webp",
+    "title_ja": "OpenAIの新モデル「GPT-6.2 Sol」発表：料金据え置きで性能を大幅強化、日常業務の効率化を目指す実用特化型AI",
+    "summary_ja": "OpenAIは2026年11月17日、日常業務の生産性向上に特化した新モデル「GPT-6.2 Sol」をリリースした。 最大の特徴は、従来の料金体系を維持しつつ、推論性能と処理効率を大幅に向上させた点にある。 多機能な「Astra」モデルとは異なり、実務タスクの実行に最適化されているため、開発者やビジネス層にとって、既存のワークフローを低コストで高速化できる現実的な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "OpenAIの新モデル「GPT-6.2 Sol」発表：料金据え置きで性能を大幅強化、日常業務の効率化を目指す実用特化型AI",
+        "summary": "OpenAIは2026年11月17日、日常業務の生産性向上に特化した新モデル「GPT-6.2 Sol」をリリースした。 最大の特徴は、従来の料金体系を維持しつつ、推論性能と処理効率を大幅に向上させた点にある。 多機能な「Astra」モデルとは異なり、実務タスクの実行に最適化されているため、開発者やビジネス層にとって、既存のワークフローを低コストで高速化できる現実的な選択肢となる。"
+      },
+      "en": {
+        "title": "OpenAI Unveils GPT-6.2 Sol: A Performance-Optimized Model That Maintains Current Pricing for Efficient Daily Enterprise Workflows",
+        "summary": "OpenAI has released GPT-6.2 Sol, a new AI model designed specifically to enhance productivity in everyday business operations. The key selling point is that it significantly boosts reasoning performance and processing efficiency while keeping pricing consistent with previous generations. Unlike the broader, more feature-heavy Astra models, Sol is hyper-optimized for task execution, making it a highly practical choice for developers and enterprise teams looking to accelerate existing workflows without increasing operational costs. This move suggests OpenAI is prioritizing cost-performance stability for high-volume users. For builders, adopting this model offers a clear pathway to better throughput for production systems while ensuring budget predictability remains intact compared to experimental, high-cost flagship releases."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-27T08:46:52.175Z"
+  },
+  {
     "id": "art-1795768333019-s1x5j",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -12408,32 +12487,6 @@
     "created_at": "2026-11-25T12:48:08.966Z"
   },
   {
-    "id": "art-1795610002436-si7vn",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/ncdc/articles/7199d618ad4c87",
-    "published_at": "2026-11-25T10:10:26.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--sGPvXs-I--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:worktree%25E3%2581%25A7%25E4%25B8%25A6%25E8%25A1%258C%25E4%25BD%259C%25E6%25A5%25AD%25E4%25B8%25AD%25E3%2581%25AE%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2582%2592%25E6%25AD%25A2%25E3%2582%2581%25E3%2581%259A%25E3%2581%25AB%25E3%2580%2581%25E8%25A6%25AA%25E3%2583%25AA%25E3%2583%259D%25E3%2582%25B8%25E3%2583%2588%25E3%2583%25AA%25E3%2581%25A7%25E5%258B%2595%25E4%25BD%259C%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:jo%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNhODZhNDA5ZDMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:NCDC%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSXIzR0xiVVBWMmZUeGd6VTNtZzZNUUJpbHlfOWE5UHYzNVlfRU90blN4SmpPajNRdz1zMjUwLWM=%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Git worktreeを活用してClaude Codeの並行作業を止めずに親リポジトリで動作確認する運用テクニック",
-    "summary_ja": "Git worktreeを利用し、Claude Codeなどで別ブランチの作業を継続したまま、メインリポジトリで即座に動作確認を行う効率的な開発フローを解説。 エージェントを停止させずに並行開発を行うには、worktreeで作業ディレクトリを分離し、環境をクリーンに保つ構成が不可欠だ。 開発者はこの手法を導入することで、AIの生成タスクを中断することなく、ローカル環境でのテストと検証を高速に回せるようになる。",
-    "translations": {
-      "ja": {
-        "title": "Git worktreeを活用してClaude Codeの並行作業を止めずに親リポジトリで動作確認する運用テクニック",
-        "summary": "Git worktreeを利用し、Claude Codeなどで別ブランチの作業を継続したまま、メインリポジトリで即座に動作確認を行う効率的な開発フローを解説。 エージェントを停止させずに並行開発を行うには、worktreeで作業ディレクトリを分離し、環境をクリーンに保つ構成が不可欠だ。 開発者はこの手法を導入することで、AIの生成タスクを中断することなく、ローカル環境でのテストと検証を高速に回せるようになる。"
-      },
-      "en": {
-        "title": "How to Use Git Worktree to Verify Claude Code Progress in Parallel Without Stopping Your Agent",
-        "summary": "This guide details an efficient development workflow using Git worktree to verify code changes in a primary repository while simultaneously keeping an AI agent, like Claude Code, active on a separate branch. By leveraging worktree to isolate your workspace, you avoid the common headache of halting long-running agent tasks just to run a quick local check. The strategy ensures your environment stays clean and performant, allowing for seamless context switching during AI-assisted coding sessions. For developers working with autonomous agents, adopting this pattern is essential for maintaining momentum; it effectively separates your verification testing from the agent's active generation process, preventing unnecessary downtime while keeping your production branch testing reliable and interruption-free."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-25T12:33:22.436Z"
-  },
-  {
     "id": "art-1795609032326-mgis1",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -19901,33 +19954,6 @@
     "created_at": "2026-11-22T08:16:50.119Z"
   },
   {
-    "id": "art-1795334538447-lpria",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/rankhog",
-    "published_at": "2026-11-19T12:43:48.000Z",
-    "og_image_url": null,
-    "title_ja": "Redditでの顧客獲得を自動化するAI「Rankhog」登場、見込み客がいるスレッドを検知し文脈に沿った提案を生成",
-    "summary_ja": "RankhogはReddit上のディスカッションを監視し、自社サービスやプロダクトに関連する投稿を自動検知して、文脈に応じた返信を生成・提案するマーケティング自動化AIツール。 手動でのReddit監視やコメント作業を省力化し、潜在顧客との接点を「自動操縦」で作り出す。 効率的にコミュニティへリーチしたい個人開発者やグロース担当者にとって、Redditの複雑なモデレーションとコミュニティ文化をハックしながら、スケーラブルな集客経路を確保するための実用的な選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "Redditでの顧客獲得を自動化するAI「Rankhog」登場、見込み客がいるスレッドを検知し文脈に沿った提案を生成",
-        "summary": "RankhogはReddit上のディスカッションを監視し、自社サービスやプロダクトに関連する投稿を自動検知して、文脈に応じた返信を生成・提案するマーケティング自動化AIツール。 手動でのReddit監視やコメント作業を省力化し、潜在顧客との接点を「自動操縦」で作り出す。 効率的にコミュニティへリーチしたい個人開発者やグロース担当者にとって、Redditの複雑なモデレーションとコミュニティ文化をハックしながら、スケーラブルな集客経路を確保するための実用的な選択肢となるだろう。"
-      },
-      "en": {
-        "title": "Rankhog Launches AI-Powered Automation to Detect Relevant Reddit Threads and Generate Contextual Replies for Lead Acquisition",
-        "summary": "Rankhog enters the market as an AI-driven automation tool designed to monitor Reddit discussions and pinpoint threads relevant to specific product keywords, automatically generating contextual replies to drive lead acquisition. For indie developers and growth engineers struggling to manually keep up with niche subreddits, the tool streamlines the notoriously tedious process of community engagement while navigating complex platform dynamics. By delegating the initial discovery and draft phase to AI, builders can maintain a consistent presence in high-intent communities without sacrificing hours of daily workflow. The platform provides a scalable way to tap into Reddit’s powerful search traffic, turning cold engagement into a programmatic growth engine for early-stage SaaS products and digital projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "マーケ・集客・ASO",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-22T08:02:18.447Z"
-  },
-  {
     "id": "art-1795334529362-mef0b",
     "source_id": "source-benchlm",
     "source_name": "BenchLM（モデル動向）",
@@ -23527,32 +23553,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-19T22:47:15.403Z"
-  },
-  {
-    "id": "art-1795128408557-xb7d6",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://monoist.itmedia.co.jp/mn/articles/2611/20/news014.html",
-    "published_at": "2026-11-19T22:00:00.000Z",
-    "og_image_url": "https://image.itmedia.co.jp/mn/articles/2611/20/cover_news014.jpg",
-    "title_ja": "なぜ中国はヒューマノイドを量産するのか？「焦り」が牽引する開発ラッシュの裏側と、日本企業が生き残るための戦略的提言",
-    "summary_ja": "中国におけるヒューマノイドロボットの量産体制は急速に拡大しているが、出荷数と実用化レベルには乖離がある。 SUGENAのセミナーでは、政府主導の「焦り」にも似た開発背景や技術的課題が詳らかにされた。 単なるハードウェアの製造数競争では中国に分があるが、日本企業が勝ち残るには、特定のニッチ領域における実運用データや、現場のワークフローに深く統合された「実用性」の深掘りが不可欠だ。",
-    "translations": {
-      "ja": {
-        "title": "なぜ中国はヒューマノイドを量産するのか？「焦り」が牽引する開発ラッシュの裏側と、日本企業が生き残るための戦略的提言",
-        "summary": "中国におけるヒューマノイドロボットの量産体制は急速に拡大しているが、出荷数と実用化レベルには乖離がある。 SUGENAのセミナーでは、政府主導の「焦り」にも似た開発背景や技術的課題が詳らかにされた。 単なるハードウェアの製造数競争では中国に分があるが、日本企業が勝ち残るには、特定のニッチ領域における実運用データや、現場のワークフローに深く統合された「実用性」の深掘りが不可欠だ。"
-      },
-      "en": {
-        "title": "Why China is mass-producing humanoids: Examining the 'impatience' behind the surge and the strategic path forward for Japan",
-        "summary": "China is rapidly scaling the mass production of humanoid robots, yet a significant gap persists between high shipment volumes and true functional utility. A recent SUGENA seminar unpacked the underlying drivers, specifically the government-backed 'impatience' fueling this intense development rush, while highlighting critical hurdles still facing practical deployment. While China currently holds the upper hand in raw manufacturing scale, Japan’s survival hinges on a different strategy. The takeaway for industry players is to pivot away from competing on pure volume. Instead, long-term success will likely depend on mastering niche operational domains and embedding robots into workflows where verifiable, real-world data and proven utility create a defensible moat against purely hardware-focused competitors."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "研究"
-    ],
-    "created_at": "2026-11-19T22:46:48.557Z"
   },
   {
     "id": "art-1795127512377-2lqa2",
