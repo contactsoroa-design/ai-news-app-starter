@@ -1,5 +1,113 @@
 [
   {
+    "id": "art-1795817846142-q2xpe",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/daigo916/n/n6a09711b823f",
+    "published_at": "2026-11-27T22:00:14.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341489173/rectangle_large_type_2_a5709a01d4b257a3eee0819bae3d6390.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "クイズアプリ開発記：部屋番号入力システムでホストが「ゲスト扱い」になるバグの調査と解消プロセス",
+    "summary_ja": "友人同士で簡単に遊べるクイズアプリにおいて、ホストが部屋を作成した直後に「ゲスト」として判定され、対戦を開始できないという設計上のバグが発生した。 原因は部屋ID生成とユーザーセッションの紐付けロジックにおけるフラグ管理の不備にあり、ホスト権限の動的割り当てを修正することで解決に至った。 個人開発において「自分が作った部屋なのに自分が一番の客になっている」という直感的な違和感をデバッグの起点にすることは、UXを根本から改善する重要なプロセスである。",
+    "translations": {
+      "ja": {
+        "title": "クイズアプリ開発記：部屋番号入力システムでホストが「ゲスト扱い」になるバグの調査と解消プロセス",
+        "summary": "友人同士で簡単に遊べるクイズアプリにおいて、ホストが部屋を作成した直後に「ゲスト」として判定され、対戦を開始できないという設計上のバグが発生した。 原因は部屋ID生成とユーザーセッションの紐付けロジックにおけるフラグ管理の不備にあり、ホスト権限の動的割り当てを修正することで解決に至った。 個人開発において「自分が作った部屋なのに自分が一番の客になっている」という直感的な違和感をデバッグの起点にすることは、UXを根本から改善する重要なプロセスである。"
+      },
+      "en": {
+        "title": "Debugging a quiz app room system where the creator mistakenly joins as a guest",
+        "summary": "Building a simple quiz game with room-based matchmaking revealed a frustrating bug where the host was treated as a guest immediately after room creation, preventing them from starting matches. The root cause lay in a flawed logic flow that handled room ID generation and session token assignment, failing to correctly elevate the room creator's permissions. By refining the backend logic to verify ownership during the initial state synchronization, the developer restored host privileges. This highlights a crucial lesson for solo builders: treating 'obvious' UX friction—like being locked out of your own game—as a high-priority bug is vital, as it often exposes deep flaws in your auth architecture and session management strategies that automated tests might miss."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-27T22:17:26.142Z"
+  },
+  {
+    "id": "art-1795817837842-jqkgo",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.youtube.com/watch?v=2zufRUcZeuc",
+    "published_at": "2026-11-27T22:03:30.000Z",
+    "og_image_url": null,
+    "title_ja": "F#で記述したLLMを8ビット機「Commodore 64」で動作させる驚愕の技術実証、1982年製ハードウェアの限界に挑む",
+    "summary_ja": "かつて世界で最も売れたPCであるCommodore 64（C64）上で、F#を用いて実装したLLMを動作させる驚異的なプロジェクトが公開された。 メモリわずか64KBという極限の環境下で、クロスコンパイル技術や最適化された推論アルゴリズムを駆使してモデルを実行する手法を実証している。 単なるジョークではなく、リソース制約の厳しい環境におけるコード効率化とレガシーハードウェアの可能性を探究する、エンジニアリングの極致を示す事例といえるだろう。",
+    "translations": {
+      "ja": {
+        "title": "F#で記述したLLMを8ビット機「Commodore 64」で動作させる驚愕の技術実証、1982年製ハードウェアの限界に挑む",
+        "summary": "かつて世界で最も売れたPCであるCommodore 64（C64）上で、F#を用いて実装したLLMを動作させる驚異的なプロジェクトが公開された。 メモリわずか64KBという極限の環境下で、クロスコンパイル技術や最適化された推論アルゴリズムを駆使してモデルを実行する手法を実証している。 単なるジョークではなく、リソース制約の厳しい環境におけるコード効率化とレガシーハードウェアの可能性を探究する、エンジニアリングの極致を示す事例といえるだろう。"
+      },
+      "en": {
+        "title": "Developer runs an F#-implemented LLM on a Commodore 64, pushing 8-bit hardware to its absolute limit",
+        "summary": "A hacker has successfully executed a functional Large Language Model written in F# on a Commodore 64, the legendary 1982 home computer. With a mere 64KB of RAM available, the project demonstrates extreme optimization techniques, utilizing custom cross-compilation and specialized inference algorithms to fit the model within severe resource constraints. This is not merely a gimmick; it provides a rigorous masterclass in code efficiency and how to squeeze complex computational tasks into hardware architecture that pre-dates modern machine learning by decades. For developers, it serves as a stark reminder that algorithmic efficiency and clever memory management often trump raw compute power, offering a fascinating look at the absolute bottom floor of computational possibility."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-27T22:17:17.842Z"
+  },
+  {
+    "id": "art-1795817825660-o2oj7",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/lhjjjk4/items/acdd6099c229d8d47bea",
+    "published_at": "2026-11-27T22:14:01.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUFUWEFKejRJUk9sRzB3UnBpYlA1b0YzWHo2Y291MTdHYXVwYkw1X3dTUUIlM0RzNTAtbW8_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPWIyZjY1NmMxN2E4ZTk4ZGYyY2VkYmU5MmUzM2MwOTQ3%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd01cdc4a99f3e3f94b607574520e6034?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklMjBEYWlseSUyMERpZ2VzdCUyMDIwMjYlRTUlQjklQjQxMSVFNiU5QyU4ODI4JUU2JTk3JUE1JUVGJUJDJTlBQ2xhdWRlJUUzJTgxJUFFJUU5JTgwJThGJUUzJTgxJThCJUUzJTgxJTk3JUUzJTgxJUE3JUU4JUE3JUEzJUU3JUI0JTg0JUUzJTgxJThDJUU3JTlCJUI4JUU2JUFDJUExJUUzJTgxJThFJUUzJTgwJTgxT1MtT21uaSVFMyU4MSU4QyVFMyU4MiVBOCVFMyU4MyVCQyVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MiU5MiVFNiU4RSVBMSVFNyU4MiVCOSVFMyU4MSU5OSVFMyU4MiU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTY3NjcyZGFkZDU1ZTZiNzRlY2FlMzk3ZGMyZDk2Nzhm&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsaGpqams0JnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9NTUwY2Y1ZTE4YzU4OWQ1NDhlYzgyYTBkYjQ4NzI2MTQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=5d3641c3a1659f7720ed4e67f0e35ca1",
+    "title_ja": "Claudeの「透かし」でユーザー解約が急増、OS-OmniベンチマークはAIエージェントの6つのOS横断評価が可能に",
+    "summary_ja": "Claudeが生成テキストに埋め込む電子透かし機能により、ユーザー間で議論が巻き起こり、利用停止や解約が相次ぐ事態となった。 また、AIエージェントの性能を6つのOS上で横断的に評価する新ベンチマーク「OS-Omni」が登場し、自律型AIの実務能力測定が進む。 AIツール開発者は、機能実装がUXや信頼性にどう影響するかを慎重に見極める必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Claudeの「透かし」でユーザー解約が急増、OS-OmniベンチマークはAIエージェントの6つのOS横断評価が可能に",
+        "summary": "Claudeが生成テキストに埋め込む電子透かし機能により、ユーザー間で議論が巻き起こり、利用停止や解約が相次ぐ事態となった。 また、AIエージェントの性能を6つのOS上で横断的に評価する新ベンチマーク「OS-Omni」が登場し、自律型AIの実務能力測定が進む。 AIツール開発者は、機能実装がUXや信頼性にどう影響するかを慎重に見極める必要がある。"
+      },
+      "en": {
+        "title": "Claude faces user churn over watermark controversy as OS-Omni arrives to benchmark AI agents across six different operating systems",
+        "summary": "Claude has encountered a significant wave of user dissatisfaction and churn following the introduction of invisible watermarks in generated text, sparking a fierce debate over user control and privacy. Simultaneously, researchers have released OS-Omni, a new benchmarking framework that enables comprehensive performance evaluation of AI agents across six major operating systems. For builders and AI developers, these developments serve as a critical reminder: aggressive feature rollouts that compromise user trust can trigger immediate backlash, while standardized cross-platform benchmarks are becoming essential for verifying agent reliability in real-world environments. Moving forward, balancing technical capability with user transparency is no longer optional for maintaining product retention in the competitive landscape of generative AI applications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-27T22:17:05.660Z"
+  },
+  {
+    "id": "art-1795817818585-1v0jm",
+    "source_id": "source-heygen-ugc",
+    "source_name": "HeyGen API Changelog",
+    "url": "https://developers.heygen.com/docs/changelog#new-endpoints-and-features",
+    "published_at": "2026-11-27T22:07:56.000Z",
+    "og_image_url": "https://heygen-1fa696a7.mintlify.site/_mintlify/api/og/v2?division=Documentation&title=Changelog&description=Track+every+HeyGen+API+change%2C+new+endpoint%2C+deprecation%2C+and+version+bump+in+the+API+changelog.+Subscribe+via+RSS+or+webhook+to+get+notified+on+the+next.&theme=806bfcae4fd50c26d3779ac8&signature=23dfe21e43cae89bcca8dc530d8a9e74ea69f4096f0921ac7351dc1e06634c1a",
+    "title_ja": "HeyGen APIがアップデート：HyperFramesの音声取得やWebhookフィルタリング機能を追加し、動画生成エンジンの選択肢を拡充",
+    "summary_ja": "HeyGenはAPIを刷新し、HyperFramesからの音声出力取得エンドポイントや、時間指定によるWebhookイベントのフィルタリング機能を追加した。 さらに「heygen-avatar-6」および「heygen-avatar-6-turbo」エンジンを動画生成やバッチ処理で利用可能にした。 開発者は生成エンジンの柔軟な指定とWebhookの効率的な監視により、AI動画生成ワークフローの構築と運用をより細かく制御できるようになった。",
+    "translations": {
+      "ja": {
+        "title": "HeyGen APIがアップデート：HyperFramesの音声取得やWebhookフィルタリング機能を追加し、動画生成エンジンの選択肢を拡充",
+        "summary": "HeyGenはAPIを刷新し、HyperFramesからの音声出力取得エンドポイントや、時間指定によるWebhookイベントのフィルタリング機能を追加した。 さらに「heygen-avatar-6」および「heygen-avatar-6-turbo」エンジンを動画生成やバッチ処理で利用可能にした。 開発者は生成エンジンの柔軟な指定とWebhookの効率的な監視により、AI動画生成ワークフローの構築と運用をより細かく制御できるようになった。"
+      },
+      "en": {
+        "title": "HeyGen API update adds HyperFrames speech retrieval, webhook time-filtering, and new support for version 6 avatar engines",
+        "summary": "HeyGen has updated its API to improve granular control over AI video workflows, introducing a dedicated endpoint for retrieving speech output from HyperFrames. A major addition includes time-range filtering for webhook events via new `start_ts` and `end_ts` parameters, which helps developers audit event history more effectively. Furthermore, the platform now supports the `heygen-avatar-6` and `heygen-avatar-6-turbo` engines directly within video generation and batch processing endpoints. These changes enable builders to better manage engine versioning and reduce the noise in event monitoring pipelines. By offloading specific metadata and allowing precise control over video configuration schemas, these updates ensure that automated video production systems remain performant and easy to debug at scale."
+      }
+    },
+    "tool_tags": [
+      "HeyGen"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "動画"
+    ],
+    "created_at": "2026-11-27T22:16:58.585Z"
+  },
+  {
     "id": "art-1795816972549-so9x2",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -6427,32 +6535,6 @@
     "created_at": "2026-11-27T05:47:03.201Z"
   },
   {
-    "id": "art-1795758416428-kjn88",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/fpnews_jp/n/n75d93dbcdbfd",
-    "published_at": "2026-11-27T05:37:05.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341352465/rectangle_large_type_2_4170eeff86ca08189276a78df7b06dcb.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIは間違える前提。FP開発者がアプリ「FPニュース」に実装した信頼性担保のための「7つの開発ルール」を公開",
-    "summary_ja": "プログラミング未経験のファイナンシャルプランナーが、AIを駆使してFP向けアプリ「FPニュース」を構築。 AIが誤情報を生成するリスクを前提に、信頼性を担保するための「7つの開発ルール」を設計した。 生成AIに依存する開発現場において、非エンジニアであってもドメイン知識とリスク管理をルール化することで、実用レベルのプロダクトに引き上げる重要性を提言する。",
-    "translations": {
-      "ja": {
-        "title": "AIは間違える前提。FP開発者がアプリ「FPニュース」に実装した信頼性担保のための「7つの開発ルール」を公開",
-        "summary": "プログラミング未経験のファイナンシャルプランナーが、AIを駆使してFP向けアプリ「FPニュース」を構築。 AIが誤情報を生成するリスクを前提に、信頼性を担保するための「7つの開発ルール」を設計した。 生成AIに依存する開発現場において、非エンジニアであってもドメイン知識とリスク管理をルール化することで、実用レベルのプロダクトに引き上げる重要性を提言する。"
-      },
-      "en": {
-        "title": "AI Hallucinates: How a Non-Coding Financial Planner Built the \"FP News\" App with 7 Strict Reliability Rules",
-        "summary": "Developing applications as a non-coder using AI is accessible, but relying on generated output without guardrails is dangerous given AI's inherent hallucination risks. As a financial planner building the \"FP News\" app, the author shares seven critical operational rules implemented to verify accuracy and maintain trust in domain-specific content. These protocols bridge the gap between \"prototype\" and \"usable product\" by systematically mitigating AI errors before they reach end users. For solo founders and developers building niche applications, this approach demonstrates that technical skill is secondary to defining clear validation processes. The takeaway is that success in AI-assisted development requires treating the AI as an untrustworthy intern, necessitating explicit oversight frameworks to ensure quality and business viability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-27T05:46:56.428Z"
-  },
-  {
     "id": "art-1795757525264-wrqcm",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -8770,32 +8852,6 @@
     "created_at": "2026-11-26T21:17:15.453Z"
   },
   {
-    "id": "art-1795727827264-0ya59",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/e99h2121/items/4fd83ce73f32b2826bd6",
-    "published_at": "2026-11-26T21:12:38.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY5MzgyNCUyRjMyM2EzZWUxYmI2ZjRhOWZjMDMyMzJhMTViM2MxMjAzYTIzYzE4NjMlMkZsYXJnZS5wbmclM0YxNjEyNjQ5MDM1P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz0zNWE3ZTE2ZGVmNDA2NjViNTc0MzI4MjAyNzdiMjk5ZA%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D106fe463d41716bd31ded6d51f9c2c4e?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgxJTgyJUUzJTgxJTg4JUUzJTgxJUE2JTIwQUklMjAlRTMlODElQUElRTMlODElOTclRTMlODElQTclMjAzMCUyMCVFNSU4OCU4NiVFOCU4MCU4MyVFMyU4MSU4OCVFMyU4MiU4QiVFMyU4MSU5MyVFMyU4MSVBOCVFMyU4MSVBQiVFNiU4NCU4RiVFNSU5MSVCMyVFMyU4MSVBRiVFMyU4MSU4MiVFMyU4MiU4QiVFRiVCQyU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTM0YTQ1MTgyNmY0YzQ3M2EzNGJiMWI5NWM4YzVhMzQz&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBlOTloMjEyMSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTBlMWY5MjFkM2UxODYxZGJlYzFiYmNjMWM1NTY4Mjcz&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=b71308d99dba3358cc1461fe0c378894",
-    "title_ja": "AI依存の時代にあえて「30分間AIなしで考える」意義とは？思考力と語彙力を取り戻すための知的鍛錬の重要性",
-    "summary_ja": "AIツールが思考を代替する現代において、あえてAIを使わずに30分間深く思考することは、個人の語彙力や論理的思考力を回復させるために不可欠なプロセスである。 AIは作業効率を爆発的に高めるが、同時に思考のプロセスを省略させてしまうリスクがある。 開発者やクリエイターがAIに依存しすぎず、自身の脳をフル活用して「ゼロから生み出す」時間を意図的に確保することは、長期的なクリエイティビティを維持するための重要な知的鍛錬だ。",
-    "translations": {
-      "ja": {
-        "title": "AI依存の時代にあえて「30分間AIなしで考える」意義とは？思考力と語彙力を取り戻すための知的鍛錬の重要性",
-        "summary": "AIツールが思考を代替する現代において、あえてAIを使わずに30分間深く思考することは、個人の語彙力や論理的思考力を回復させるために不可欠なプロセスである。 AIは作業効率を爆発的に高めるが、同時に思考のプロセスを省略させてしまうリスクがある。 開発者やクリエイターがAIに依存しすぎず、自身の脳をフル活用して「ゼロから生み出す」時間を意図的に確保することは、長期的なクリエイティビティを維持するための重要な知的鍛錬だ。"
-      },
-      "en": {
-        "title": "Is '30 minutes without AI' still meaningful? Why deep thinking is essential for regaining cognitive and linguistic independence",
-        "summary": "In an era where AI tools frequently act as cognitive crutches, intentionally setting aside 30 minutes for deep, unassisted thinking is a vital exercise for restoring personal vocabulary and critical reasoning. While AI undeniably accelerates development and production, it carries the significant risk of atrophy in our ability to structure thoughts independently. For builders and creators, the act of stepping back to brainstorm from first principles is not just about nostalgia; it is a necessary form of intellectual training to prevent AI dependency from eroding original thought. Consciously carving out time to disconnect from predictive engines remains the most reliable method for maintaining long-term creativity and ensuring your ideas remain distinctly your own."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-26T21:17:07.264Z"
-  },
-  {
     "id": "art-1795726969437-xfcw2",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -8820,32 +8876,6 @@
       "研究"
     ],
     "created_at": "2026-11-26T21:02:49.437Z"
-  },
-  {
-    "id": "art-1795726942617-c5rov",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.semafor.com/article/11/26/2026/banks-look-to-dump-ai-debt",
-    "published_at": "2026-11-26T20:49:01.000Z",
-    "og_image_url": "https://img.semafor.com/68eff3a6cb50901f7cd6a76f4fc658fad2938296-6500x4333.jpg?rect=0,461,6500,3413&w=1200&h=630&q=75&auto=format",
-    "title_ja": "金融機関が「AI負債」の削減へ舵を切る、生成AI投資の収益化難航とインフラ維持コストの増大が背景に",
-    "summary_ja": "JPモルガンやゴールドマン・サックスといった大手銀行が、かつて積極的に投じた生成AIプロジェクトの「AI負債」を整理し始めている。 期待したほどの生産性向上や収益化に至らず、保守運用コストだけが膨れ上がる「実験のデッドロック」が原因だ。 技術者は、AI導入を単なる実験で終わらせず、既存のレガシーシステムと統合してROIを明確化するシビアな判断が求められるフェーズに突入していることを認識すべきだろう。",
-    "translations": {
-      "ja": {
-        "title": "金融機関が「AI負債」の削減へ舵を切る、生成AI投資の収益化難航とインフラ維持コストの増大が背景に",
-        "summary": "JPモルガンやゴールドマン・サックスといった大手銀行が、かつて積極的に投じた生成AIプロジェクトの「AI負債」を整理し始めている。 期待したほどの生産性向上や収益化に至らず、保守運用コストだけが膨れ上がる「実験のデッドロック」が原因だ。 技術者は、AI導入を単なる実験で終わらせず、既存のレガシーシステムと統合してROIを明確化するシビアな判断が求められるフェーズに突入していることを認識すべきだろう。"
-      },
-      "en": {
-        "title": "Major financial institutions pivot to address mounting 'AI debt' as high maintenance costs and limited revenue gains begin to bite",
-        "summary": "Major banking giants, including JPMorgan and Goldman Sachs, are initiating a strategic cleanup of 'AI debt' accumulated from aggressive, experimental investments in generative AI tools. These institutions are finding that early prototypes failed to deliver promised productivity gains or tangible revenue, leaving them with ballooning maintenance costs and complex infrastructure without clear ROI. This trend marks a critical shift for developers and builders: the era of speculative AI experimentation is ending, replaced by a rigorous focus on integration with legacy banking systems and demonstrable business impact. For technical teams, the lesson is that shipping AI features is no longer enough; survival now depends on justifying long-term infrastructure overhead against strict, real-world profitability metrics."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-26T21:02:22.617Z"
   },
   {
     "id": "art-1795726026697-gf3x6",
@@ -24192,32 +24222,6 @@
       "開発"
     ],
     "created_at": "2026-11-19T23:16:44.130Z"
-  },
-  {
-    "id": "art-1795129316906-ysu9b",
-    "source_id": "source-itmedia-ai",
-    "source_name": "ITmedia AI＋",
-    "url": "https://www.itmedia.co.jp/business/articles/2611/20/news042.html",
-    "published_at": "2026-11-19T22:00:00.000Z",
-    "og_image_url": "https://image.itmedia.co.jp/business/articles/2611/20/cover_news042.jpg",
-    "title_ja": "伊藤忠商事、AI活用で月1.3万時間の業務削減を実現──数千件の「二重業務」を解消した経営層を動かす「定量の匂い」戦略",
-    "summary_ja": "伊藤忠商事の繊維部門がAI導入を加速し、月間1.3万時間の業務削減と数千件の重複作業解消を達成した。 現場主導の熱意を経営陣に伝える際、成功の「匂い」を感じさせる定量的根拠を提示し、投資対効果を可視化することで稟議を突破した点が鍵だ。 単なる技術導入にとどまらず、現場の業務プロセスそのものをAI前提で再設計するアプローチは、レガシー企業におけるDX推進の強力なモデルとなる。",
-    "translations": {
-      "ja": {
-        "title": "伊藤忠商事、AI活用で月1.3万時間の業務削減を実現──数千件の「二重業務」を解消した経営層を動かす「定量の匂い」戦略",
-        "summary": "伊藤忠商事の繊維部門がAI導入を加速し、月間1.3万時間の業務削減と数千件の重複作業解消を達成した。 現場主導の熱意を経営陣に伝える際、成功の「匂い」を感じさせる定量的根拠を提示し、投資対効果を可視化することで稟議を突破した点が鍵だ。 単なる技術導入にとどまらず、現場の業務プロセスそのものをAI前提で再設計するアプローチは、レガシー企業におけるDX推進の強力なモデルとなる。"
-      },
-      "en": {
-        "title": "Itochu cuts 13,000 work hours monthly using AI to eliminate thousands of duplicate tasks via a 'quantitative scent' strategy",
-        "summary": "Itochu Corporation’s textile division has successfully implemented an AI-driven strategy that cut 13,000 work hours per month while eliminating thousands of redundant, duplicate tasks. The project's success hinged on presenting a 'quantitative scent'—a tangible preview of financial impact—to executive management, which helped bridge the gap between operational enthusiasm and corporate budget approval. Rather than treating AI as a simple software add-on, the team focused on fundamental process re-engineering to fit an AI-first workflow. For enterprise builders and internal innovators, this serves as a critical case study: achieving high-level executive buy-in for AI adoption requires framing technical efficiency gains as immediate, measurable bottom-line improvements rather than abstract productivity metrics."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-19T23:01:56.906Z"
   },
   {
     "id": "art-1795128435403-qsi38",
