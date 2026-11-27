@@ -1,5 +1,113 @@
 [
   {
+    "id": "art-1795807976223-vajcv",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/Stak-Technologies/machine-load",
+    "published_at": "2026-11-27T19:24:30.000Z",
+    "og_image_url": null,
+    "title_ja": "MacのAIコーディング負荷を可視化するツール「Machine-load」公開、AIエージェントによるCPU・メモリ消費の犯人を特定",
+    "summary_ja": "AIエージェントやIDE拡張の乱用でMacの動作が重くなる問題に対し、GitHubで公開された「Machine-load」は、どのAIコーディングプロセスが過度なリソースを消費しているかをリアルタイムで特定する。 複雑化した開発環境において、どのAIセッションがボトルネックかを即座に可視化できるため、開発者は無駄なバックグラウンド負荷を排除し、快適なパフォーマンスを維持できるようになる。",
+    "translations": {
+      "ja": {
+        "title": "MacのAIコーディング負荷を可視化するツール「Machine-load」公開、AIエージェントによるCPU・メモリ消費の犯人を特定",
+        "summary": "AIエージェントやIDE拡張の乱用でMacの動作が重くなる問題に対し、GitHubで公開された「Machine-load」は、どのAIコーディングプロセスが過度なリソースを消費しているかをリアルタイムで特定する。 複雑化した開発環境において、どのAIセッションがボトルネックかを即座に可視化できるため、開発者は無駄なバックグラウンド負荷を排除し、快適なパフォーマンスを維持できるようになる。"
+      },
+      "en": {
+        "title": "Machine-load tool surfaces AI coding processes slowing down your Mac to help identify performance-draining agents",
+        "summary": "As AI coding agents and IDE extensions increasingly compete for local resources, Mac performance often suffers silently. The newly released open-source tool 'Machine-load' addresses this by providing developers with a real-time view into which specific AI-driven processes or background coding sessions are monopolizing CPU and memory. Instead of blindly killing random processes, users can now isolate the exact agent causing bottlenecks. For developers juggling multiple LLM-powered coding assistants, this utility is essential for maintaining a responsive development environment and optimizing local hardware efficiency. It serves as a vital diagnostic bridge, helping engineers distinguish between necessary background indexing and runaway AI tasks that degrade productivity during deep coding sessions."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-27T19:32:56.223Z"
+  },
+  {
+    "id": "art-1795807969946-9wcd9",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/meas_nobu/articles/25f405ea939057",
+    "published_at": "2026-11-27T10:13:59.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--HkwI-tcd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:PC%2520%25E3%2581%25AA%25E3%2581%2597%25E3%2580%2581%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%2520AI%2520DJ%2520%25E2%2594%2580%25E2%2594%2580%2520Claude%2520%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A8%25E5%2588%2586%25E5%2589%25B2%25E7%2594%25BB%25E9%259D%25A2%25E3%2581%25A7%25E4%25B8%25A6%25E3%2581%25B9%25E3%2580%2581%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%2583%25E3%2583%2597%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25A7%25E6%259B%25B2%25E3%2582%2592%25E5%258F%2597%25E3%2581%2591%25E6%25B8%25A1%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BB%2595%25E4%25BA%258B%25E3%2581%25AF%25E3%2583%2590%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2589%25E4%25B8%25AD%25E5%25BF%2583%25E3%2581%25AA%25E3%2582%25B7%25E3%2583%258B%25E3%2582%25A2%25E2%2580%2595%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA4ZDFhOGViOTQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "スマホ完結型の「AI DJ」構築手法：ClaudeアプリとPanNyxを分割画面で併用し、クリップボード経由で楽曲生成から再生を自動化する仕組み",
+    "summary_ja": "PCやローカルLLMを一切使わず、スマートフォン一台で「AI DJ」を実現する構築手法が公開された。 Claudeアプリと作曲アプリ「PanNyx」を分割画面で並べ、Claudeで生成した楽曲データをクリップボード経由でPanNyxに受け渡すことで、シームレスな連続再生環境を構築する。 この運用は特別なインフラを構築するよりも、スマホOSのマルチタスク機能を活用する方が、クリエイティブな制作フローとして現場レベルでは遥かに実用性が高いことを示している。",
+    "translations": {
+      "ja": {
+        "title": "スマホ完結型の「AI DJ」構築手法：ClaudeアプリとPanNyxを分割画面で併用し、クリップボード経由で楽曲生成から再生を自動化する仕組み",
+        "summary": "PCやローカルLLMを一切使わず、スマートフォン一台で「AI DJ」を実現する構築手法が公開された。 Claudeアプリと作曲アプリ「PanNyx」を分割画面で並べ、Claudeで生成した楽曲データをクリップボード経由でPanNyxに受け渡すことで、シームレスな連続再生環境を構築する。 この運用は特別なインフラを構築するよりも、スマホOSのマルチタスク機能を活用する方が、クリエイティブな制作フローとして現場レベルでは遥かに実用性が高いことを示している。"
+      },
+      "en": {
+        "title": "Building a Smartphone-Only AI DJ System: Automating Music Generation and Playback via Claude App Split-Screen and Clipboard Data Transfer",
+        "summary": "A new workflow demonstrates how to build a fully automated 'AI DJ' rig using only a smartphone, eliminating the need for complex PC-based local LLM setups. By running the Claude app and the music creation tool PanNyx in split-screen mode, users can generate tracks and seamlessly transfer data via the clipboard for continuous playback. This approach proves that leveraging native mobile OS multitasking features is often more practical for creative loops than architecting custom bridge infrastructure. For builders, it highlights how simple data handoffs between mature mobile apps can create powerful, real-time interactive systems without needing dedicated server-side LLM orchestration, proving that highly effective AI-augmented workflows can be executed directly within the limitations of mobile UI constraints."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-27T19:32:49.946Z"
+  },
+  {
+    "id": "art-1795807959797-eo9rk",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/aki_note_333/n/n375ea393afa2",
+    "published_at": "2026-11-27T19:14:48.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341304531/rectangle_large_type_2_abcb9e7249e716ff8a80e10c2e8eac74.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「副業で月5万円」の落とし穴：労働集約型ビジネスの罠と時給換算で見る個人開発のリアルな損益分岐点",
+    "summary_ja": "SNSでよく見かける「副業月5万円」の甘い言葉。 しかし、その内訳を時給に換算すると、実は最低賃金を下回る労働集約型の作業であるケースが大半です。 個人開発者が真に目指すべきは、労働時間を売るモデルから脱却し、レバレッジの効く資産を構築することです。 本記事では、低単価な受託や単純作業に忙殺される現実を指摘し、持続可能な収益化のための「時間対効果」という視点でのシビアな開発戦略を提言しています。",
+    "translations": {
+      "ja": {
+        "title": "「副業で月5万円」の落とし穴：労働集約型ビジネスの罠と時給換算で見る個人開発のリアルな損益分岐点",
+        "summary": "SNSでよく見かける「副業月5万円」の甘い言葉。 しかし、その内訳を時給に換算すると、実は最低賃金を下回る労働集約型の作業であるケースが大半です。 個人開発者が真に目指すべきは、労働時間を売るモデルから脱却し、レバレッジの効く資産を構築することです。 本記事では、低単価な受託や単純作業に忙殺される現実を指摘し、持続可能な収益化のための「時間対効果」という視点でのシビアな開発戦略を提言しています。"
+      },
+      "en": {
+        "title": "The 50,000 yen per month side hustle myth: Why labor-intensive development strategies often fail the hourly wage test",
+        "summary": "The promise of earning 50,000 yen a month from a side hustle often conceals a harsh reality: once you break down the hours invested, the hourly rate frequently falls well below minimum wage. Many developers inadvertently trade their limited time for low-margin, labor-intensive tasks that don't scale. This article warns creators to look past surface-level revenue claims and critically evaluate their return on time. The takeaway for builders is clear: stop treating side projects like hourly wage jobs. To achieve sustainable profitability, you must pivot away from transactional labor and focus entirely on building leveraged, automated assets that decouple your income from your daily hours worked. Don't build a low-wage job for yourself; build systems that grow independently."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-27T19:32:39.797Z"
+  },
+  {
+    "id": "art-1795807918726-tl5gc",
+    "source_id": "source-firecrawl",
+    "source_name": "Firecrawl Releases / Blog",
+    "url": "https://github.com/firecrawl/firecrawl/releases/tag/v2.11.876",
+    "published_at": "2026-11-27T19:14:30.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/787076358/f9616c09-3701-41ef-b5a6-fdf912ffb15b",
+    "title_ja": "Firecrawl、APIイメージv2.11.876をリリース——大規模LLM向けデータ変換機能の安定性とスケーラビリティを大幅強化",
+    "summary_ja": "ウェブスクレイピングプラットフォーム「Firecrawl」が、最新のAPIイメージv2.11.876を公開した。 本アップデートでは、LLMの学習やデータ取得における変換処理の安定性が向上し、大規模な並行リクエストに対するスケーラビリティが最適化されている。 開発者は既存のデータパイプラインにおいて、より信頼性の高いドキュメント変換と抽出精度を享受できる。",
+    "translations": {
+      "ja": {
+        "title": "Firecrawl、APIイメージv2.11.876をリリース——大規模LLM向けデータ変換機能の安定性とスケーラビリティを大幅強化",
+        "summary": "ウェブスクレイピングプラットフォーム「Firecrawl」が、最新のAPIイメージv2.11.876を公開した。 本アップデートでは、LLMの学習やデータ取得における変換処理の安定性が向上し、大規模な並行リクエストに対するスケーラビリティが最適化されている。 開発者は既存のデータパイプラインにおいて、より信頼性の高いドキュメント変換と抽出精度を享受できる。"
+      },
+      "en": {
+        "title": "Firecrawl releases API image v2.11.876 with enhanced stability and scalability for LLM-focused data extraction pipelines",
+        "summary": "Firecrawl has rolled out API image v2.11.876, marking a focused effort to bolster stability and scalability for developers feeding web data into LLMs. This release improves the reliability of document transformation processes, ensuring that large-scale concurrent requests are handled more efficiently without compromising on data integrity. For builders, this update signifies more consistent output from scraping pipelines, which is critical when maintaining high-fidelity context windows for AI agents. By refining the backend orchestration of data extraction, Firecrawl continues to reduce the latency and error rates typically encountered during complex crawling tasks. Engineers should integrate this version to optimize their ingestion layers, ensuring that downstream model inference remains performant even when dealing with unpredictable or massive web-based datasets."
+      }
+    },
+    "tool_tags": [
+      "Firecrawl"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-27T19:31:58.726Z"
+  },
+  {
     "id": "art-1795807041666-o5jt1",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -6019,32 +6127,6 @@
     "created_at": "2026-11-27T04:02:04.951Z"
   },
   {
-    "id": "art-1795752118347-st517",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/dorayakiwalk/n/n7848309f1d8a",
-    "published_at": "2026-11-27T03:27:18.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340807735/rectangle_large_type_2_0ccd424e55df232bcef09df8268ebd86.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "個人開発ゲーム『大空海』開発日誌：台風からクジラが出現する気象エフェクトとゲーム演出の裏側を解説",
-    "summary_ja": "個人開発ゲーム『大空海』において、台風の中心から巨大なクジラが飛び出すというユニークな気象イベントの実装プロセスが公開された。 単なる天気予報の視覚化にとどまらず、動的なエフェクトとゲーム世界の探索要素を融合させる設計が、プレイヤーの没入感をいかに高めるかが鍵となる。 開発者は、静的な背景にストーリー性のある「動的な驚き」を組み込むことで、個人開発でも世界観の深みを作り出せることを実証している。",
-    "translations": {
-      "ja": {
-        "title": "個人開発ゲーム『大空海』開発日誌：台風からクジラが出現する気象エフェクトとゲーム演出の裏側を解説",
-        "summary": "個人開発ゲーム『大空海』において、台風の中心から巨大なクジラが飛び出すというユニークな気象イベントの実装プロセスが公開された。 単なる天気予報の視覚化にとどまらず、動的なエフェクトとゲーム世界の探索要素を融合させる設計が、プレイヤーの没入感をいかに高めるかが鍵となる。 開発者は、静的な背景にストーリー性のある「動的な驚き」を組み込むことで、個人開発でも世界観の深みを作り出せることを実証している。"
-      },
-      "en": {
-        "title": "Building dynamic weather events: How the indie game 'Daikukai' implements whale encounters during typhoons",
-        "summary": "The developer of the indie game 'Daikukai' shares the creative process behind its unique weather events, specifically detailing how they implemented a mechanic where a massive whale emerges from the eye of a typhoon. Rather than treating environmental effects as mere cosmetic background elements, this design integrates dynamic environmental triggers with exploration mechanics to significantly heighten player immersion. The developer demonstrates that by injecting 'dynamic surprises' with strong narrative undertones into static environments, indie creators can effectively add profound depth to their game worlds. For builders working on atmospheric games, the practical lesson is that environmental systems serve as powerful storytelling tools when they actively disrupt the player's routine, turning simple weather cycles into memorable gameplay beats."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-27T04:01:58.347Z"
-  },
-  {
     "id": "art-1795752108028-td31p",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -8647,32 +8729,6 @@
     "created_at": "2026-11-26T18:47:02.449Z"
   },
   {
-    "id": "art-1795717924992-o375x",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/RustingStudio/RustingStrata",
-    "published_at": "2026-11-26T18:21:05.000Z",
-    "og_image_url": "https://repository-images.githubusercontent.com/1413067901/e635a23c-627a-4a4a-b78c-dbe8c413affd",
-    "title_ja": "Rust製のLLM推論エンジン「RustingStrata」が登場、GGUF形式モデルをCUDA/Vulkan環境でVRAM容量を超えて実行可能に",
-    "summary_ja": "RustingStrataは、Rust言語でフルスクラッチ開発されたGGUF形式専用の軽量LLM推論エンジンである。 最大の特徴は、CUDAおよびVulkanをサポートし、GPUのVRAM容量を超えるサイズのモデルをシステムメモリにオフロードして実行できる点にある。 大規模なモデルを限られたハードウェア環境で効率的に運用したい開発者にとって、Rustのメモリ安全性と推論性能を活かした新たな選択肢となりそうだ。",
-    "translations": {
-      "ja": {
-        "title": "Rust製のLLM推論エンジン「RustingStrata」が登場、GGUF形式モデルをCUDA/Vulkan環境でVRAM容量を超えて実行可能に",
-        "summary": "RustingStrataは、Rust言語でフルスクラッチ開発されたGGUF形式専用の軽量LLM推論エンジンである。 最大の特徴は、CUDAおよびVulkanをサポートし、GPUのVRAM容量を超えるサイズのモデルをシステムメモリにオフロードして実行できる点にある。 大規模なモデルを限られたハードウェア環境で効率的に運用したい開発者にとって、Rustのメモリ安全性と推論性能を活かした新たな選択肢となりそうだ。"
-      },
-      "en": {
-        "title": "RustingStrata: A pure Rust LLM engine for running GGUF models that exceed GPU VRAM on CUDA and Vulkan",
-        "summary": "RustingStrata is a high-performance LLM inference engine written entirely in Rust, specifically optimized to run GGUF-formatted models. The standout feature is its native support for both CUDA and Vulkan backends, enabling users to execute large language models that significantly exceed available VRAM by intelligently offloading layers to system memory. For developers constrained by hardware limits, this project provides a memory-safe and efficient way to deploy heavy AI models on consumer-grade setups. It represents a practical alternative to Python-based stacks, allowing builders to leverage Rust’s strict safety guarantees while maintaining high inference speeds across diverse GPU environments, making local LLM hosting more accessible without the need for enterprise-grade hardware."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-26T18:32:04.992Z"
-  },
-  {
     "id": "art-1795717918451-76048",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -8780,33 +8836,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T18:16:53.413Z"
-  },
-  {
-    "id": "art-1795716163627-n4fqd",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://arxiv.org/abs/2611.27210",
-    "published_at": "2026-11-26T17:55:26.000Z",
-    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-    "title_ja": "ツール呼び出し型AIエージェントの導入が企業の採用成長を鈍化させる可能性：arXiv論文で示された労働市場への影響",
-    "summary_ja": "最新のarXiv論文が、単純なチャットボットではなく「ツール呼び出し型AIエージェント」の活用が、企業の新規採用成長率を押し下げる因果関係があることを指摘した。 自動化プロセスが熟練労働者のタスクを代替することで、採用需要そのものが減少する可能性があるという。 開発者や経営者は、AIによる業務効率化が単なるコスト削減を超えて、長期的には組織の雇用構造そのものを再定義するリスクを考慮する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "ツール呼び出し型AIエージェントの導入が企業の採用成長を鈍化させる可能性：arXiv論文で示された労働市場への影響",
-        "summary": "最新のarXiv論文が、単純なチャットボットではなく「ツール呼び出し型AIエージェント」の活用が、企業の新規採用成長率を押し下げる因果関係があることを指摘した。 自動化プロセスが熟練労働者のタスクを代替することで、採用需要そのものが減少する可能性があるという。 開発者や経営者は、AIによる業務効率化が単なるコスト削減を超えて、長期的には組織の雇用構造そのものを再定義するリスクを考慮する必要がある。"
-      },
-      "en": {
-        "title": "Tool-calling AI agents, not just chatbots, are empirically linked to slower corporate hiring growth rates",
-        "summary": "A recent arXiv study reveals a critical correlation: the deployment of tool-calling AI agents, distinct from passive chatbots, is causally linked to a measurable slowdown in new corporate hiring growth. By successfully automating complex, task-based workflows previously handled by skilled employees, these autonomous agents reduce the immediate demand for human headcount. For technical founders and engineering managers, this finding serves as a stark reminder that AI-driven process optimization is not merely about trimming operational costs; it is actively reshaping internal labor requirements. Builders should anticipate that as agents become more capable, the traditional model of scaling headcount alongside product adoption will likely decouple, necessitating a fundamental shift in how teams plan for long-term organizational capacity and future professional growth."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-26T18:02:43.627Z"
   },
   {
     "id": "art-1795716155354-42yp3",
@@ -11363,33 +11392,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T06:46:59.831Z"
-  },
-  {
-    "id": "art-1795674788022-se8mr",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tessarhodes/articles/39b93c99d641f5",
-    "published_at": "2026-11-24T15:14:38.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--3jG0lDI9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Skip%2520the%2520prompt%253A%2520one-photo%2520viral%2520video%2520templates%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Tessa%2520Rhodes%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzFydHZGUGIwOGpyU1VvclcxSDdpUUMyTDhqUFVxTmwyTTZOek8wMU5GRENqOV9BPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "生成AI動画の「プロンプト地獄」を脱却する：1枚の顔写真から既存のバズ動画を完コピ生成するテンプレート駆動の最適化手法",
-    "summary_ja": "生成AIでバズ動画を再現しようとすると、プロンプト試行錯誤でオリジナルの雰囲気や音源を失い、単なる「似た動画」に陥りがちだ。 そこで提案されるのが、複雑なプロンプトを排除したテンプレート駆動型のアプローチである。 ユーザーは1枚の顔写真をアップロードするだけで、固定されたバズ動画の構成に自分の顔をマッピングできる。 開発者は生成AIの柔軟性に頼るだけでなく、特定の成果物に対しテンプレート化した再現基盤を提供することで、コンテンツ作成のコンバージョン率を劇的に向上できる。",
-    "translations": {
-      "ja": {
-        "title": "生成AI動画の「プロンプト地獄」を脱却する：1枚の顔写真から既存のバズ動画を完コピ生成するテンプレート駆動の最適化手法",
-        "summary": "生成AIでバズ動画を再現しようとすると、プロンプト試行錯誤でオリジナルの雰囲気や音源を失い、単なる「似た動画」に陥りがちだ。 そこで提案されるのが、複雑なプロンプトを排除したテンプレート駆動型のアプローチである。 ユーザーは1枚の顔写真をアップロードするだけで、固定されたバズ動画の構成に自分の顔をマッピングできる。 開発者は生成AIの柔軟性に頼るだけでなく、特定の成果物に対しテンプレート化した再現基盤を提供することで、コンテンツ作成のコンバージョン率を劇的に向上できる。"
-      },
-      "en": {
-        "title": "Move Beyond Prompt Engineering: Why Builders Should Adopt Photo-to-Video Template Systems for Viral Content Creation",
-        "summary": "Recreating viral AI clips through traditional prompting often fails, as fine-tuned control over pacing, sound, and visual fidelity is lost, resulting in cheap knock-offs rather than true copies. A more effective solution is moving away from prompt-heavy interfaces toward dedicated template pages. By shifting to a system where a user uploads a single headshot to map onto a pre-validated, high-performing video structure, builders can remove the friction of creative guesswork. This shift signals a transition for AI developers: stop trying to make models do everything with generic prompts, and start building rigid, outcome-oriented template engines. This deterministic approach significantly boosts content output quality and reliability for end-users, ensuring that the final video actually achieves the intended viral effect."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "動画",
-      "マーケ・集客・ASO"
-    ],
-    "created_at": "2026-11-26T06:33:08.022Z"
   },
   {
     "id": "art-1795674722710-wopgb",
