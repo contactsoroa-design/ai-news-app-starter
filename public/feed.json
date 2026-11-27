@@ -1,5 +1,86 @@
 [
   {
+    "id": "art-1795765635971-tjtgv",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tablesnap_studio/n/n192b2f098a45",
+    "published_at": "2026-11-27T07:37:46.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/0663474b8a1e6cb0124e6a4f506ab36aa57343e4.png",
+    "title_ja": "NotionのデータベースをExcelへ移行する際につまずく2つの落とし穴（2026年版：特殊DOM構造とWindows環境での文字化け）",
+    "summary_ja": "NotionのデータベースをExcelへ移行しようとする際、DOM構造の特殊性と文字化けという二つの壁に直面しがちだ。 Notionの表は標準的なHTMLテーブルやARIAグリッドを使用していないため、単純なスクレイピングでは抽出が困難である。 また、CSV出力を行ってもWindows環境のExcelでは文字化けが発生するケースが多いため、エンコーディング処理やAPI経由のデータ取得など、実装段階で回避策を講じる必要がある。",
+    "translations": {
+      "ja": {
+        "title": "NotionのデータベースをExcelへ移行する際につまずく2つの落とし穴（2026年版：特殊DOM構造とWindows環境での文字化け）",
+        "summary": "NotionのデータベースをExcelへ移行しようとする際、DOM構造の特殊性と文字化けという二つの壁に直面しがちだ。 Notionの表は標準的なHTMLテーブルやARIAグリッドを使用していないため、単純なスクレイピングでは抽出が困難である。 また、CSV出力を行ってもWindows環境のExcelでは文字化けが発生するケースが多いため、エンコーディング処理やAPI経由のデータ取得など、実装段階で回避策を講じる必要がある。"
+      },
+      "en": {
+        "title": "Two major pitfalls when migrating Notion databases to Excel in 2026: DOM complexity and Windows encoding issues",
+        "summary": "Migrating Notion databases to Excel frequently hits two stubborn roadblocks: non-standard DOM structure and inevitable character encoding failures. Because Notion ignores standard HTML table tags and ARIA grids for its interface, simple web scrapers often fail to parse the data structure correctly. Simultaneously, CSV exports frequently default to formats that cause Japanese character garbling when opened in Windows-based Excel. Builders attempting to automate these transfers must look beyond standard copy-paste or basic CSV downloads. Instead, the move requires robust encoding handling during the export process or shifting to direct API-based data extraction to bypass the front-end rendering hurdles entirely. Planning for these infrastructure-level constraints early prevents fragile, broken data workflows in production environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-27T07:47:15.971Z"
+  },
+  {
+    "id": "art-1795765629966-aftmr",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/whitemarshall/items/f655153373eaf18add16",
+    "published_at": "2026-11-27T07:41:40.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmODljNjFkOTY3OWRiYTNhN2Y3NTk2OWJkMzUxNzU0NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGI4NjUzMzBkODk4Y2IwZGU0MTgwNWY1OWRjYzNlMjQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd74df1f0f9e99258a2c04d787d798489?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9VGhyZWUuanMlRTMlODElQThDbGF1ZGUlMjBPcHVzJTIwNS41JUUzJTgxJUFCJUUzJTgyJTg4JUUzJTgyJThCM0QlRTMlODMlOTYlRTMlODMlQTklRTMlODIlQTYlRTMlODIlQjYlRTMlODIlQjIlRTMlODMlQkMlRTMlODMlQTAlRTUlQUUlOUYlRTglQTMlODUlRTYlQTQlOUMlRTglQTglQkMlRUYlQkMlOUElRTUlODYlODUlRTglOTQlQjVHUFUlRTMlODElQUUlRTUlQUUlOUYlRTYlQjglQUNGUFMlRTMlODElQTgxMSVFNCVCQSU4QiVFNCVCRSU4QiVFMyU4MSVBRSVFNiU4QSU4MCVFOCVBMSU5MyVFNiVBNyU4QiVFNiU4OCU5MCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTcxZDI5OGU3NzVkNTQ3MDVkYTdiY2E5Yjk3MDFjNWVi&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3aGl0ZW1hcnNoYWxsJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODZkYjFiOTRkNWI1NzM4Yjk3MjA1ODE2ODQyNzc4MWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=20c5ad23c538e613283f7cdfb662ebb3",
+    "title_ja": "Three.jsとClaude Opus 5.5で挑む3Dブラウザゲーム開発：プロシージャル生成の限界と内蔵GPUでのFPS実測検証",
+    "summary_ja": "WebGLを用いた3Dブラウザゲーム開発において、外部モデルを一切読み込まない「プロシージャル生成」のみで構成した場合のパフォーマンス検証結果。 Claude Opus 5.5によるコード生成とThree.jsを組み合わせ、ノートPCの内蔵GPUで動作する11の技術構成を実測した。 BlenderやUnityを利用する従来のアセットベース手法と比較し、描画負荷やメモリ使用率の観点からブラウザゲーム最適化の現実解を提示する。",
+    "translations": {
+      "ja": {
+        "title": "Three.jsとClaude Opus 5.5で挑む3Dブラウザゲーム開発：プロシージャル生成の限界と内蔵GPUでのFPS実測検証",
+        "summary": "WebGLを用いた3Dブラウザゲーム開発において、外部モデルを一切読み込まない「プロシージャル生成」のみで構成した場合のパフォーマンス検証結果。 Claude Opus 5.5によるコード生成とThree.jsを組み合わせ、ノートPCの内蔵GPUで動作する11の技術構成を実測した。 BlenderやUnityを利用する従来のアセットベース手法と比較し、描画負荷やメモリ使用率の観点からブラウザゲーム最適化の現実解を提示する。"
+      },
+      "en": {
+        "title": "Benchmarking Procedural 3D Browser Games Using Three.js and Claude Opus 5.5 on Integrated GPU Hardware",
+        "summary": "This technical analysis investigates the viability of purely procedural 3D browser games built via Three.js and Claude Opus 5.5, specifically focusing on performance limitations when avoiding external model assets. By testing eleven distinct technical configurations on standard laptop integrated GPUs, the author evaluates frame rates and rendering bottlenecks compared to traditional Unity or Blender-exported workflows. The results provide a clear baseline for browser-based optimization, highlighting the specific trade-offs developers face when generating geometry dynamically versus importing pre-baked assets. For builders targeting accessible, web-first gaming experiences, this study offers critical performance data to decide between lightweight procedural generation and heavy asset pipelines for different hardware targets."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-27T07:47:09.966Z"
+  },
+  {
+    "id": "art-1795765618426-v39j8",
+    "source_id": "source-heygen-ugc",
+    "source_name": "HeyGen API Changelog",
+    "url": "https://developers.heygen.com/docs/changelog#hyper-frames-4-5-aspect-ratio",
+    "published_at": "2026-11-27T06:55:28.000Z",
+    "og_image_url": "https://heygen-1fa696a7.mintlify.site/_mintlify/api/og/v2?division=Documentation&title=Changelog&description=Track+every+HeyGen+API+change%2C+new+endpoint%2C+deprecation%2C+and+version+bump+in+the+API+changelog.+Subscribe+via+RSS+or+webhook+to+get+notified+on+the+next.&theme=806bfcae4fd50c26d3779ac8&signature=23dfe21e43cae89bcca8dc530d8a9e74ea69f4096f0921ac7351dc1e06634c1a",
+    "title_ja": "HeyGen APIの「HyperFrames」が4:5の縦型動画生成に対応――SNS投稿向けの最適解を提供（1080p限定）",
+    "summary_ja": "HeyGenは動画生成API「HyperFrames」において、新たにアスペクト比「4:5」のサポートを開始した。 これまでの16:9、9:16、1:1に加え、InstagramやLinkedInのフィード投稿に最適なレイアウトが利用可能になる（1080p限定）。 開発者は既存のエンドポイントで設定値を変更するだけで、SNSのインプレッションを最大化するアセットを自動生成できる。 既存ツールに組み込むことで、ユーザーの投稿体験を損なわずに最適な縦型コンテンツを提供可能だ。",
+    "translations": {
+      "ja": {
+        "title": "HeyGen APIの「HyperFrames」が4:5の縦型動画生成に対応――SNS投稿向けの最適解を提供（1080p限定）",
+        "summary": "HeyGenは動画生成API「HyperFrames」において、新たにアスペクト比「4:5」のサポートを開始した。 これまでの16:9、9:16、1:1に加え、InstagramやLinkedInのフィード投稿に最適なレイアウトが利用可能になる（1080p限定）。 開発者は既存のエンドポイントで設定値を変更するだけで、SNSのインプレッションを最大化するアセットを自動生成できる。 既存ツールに組み込むことで、ユーザーの投稿体験を損なわずに最適な縦型コンテンツを提供可能だ。"
+      },
+      "en": {
+        "title": "HeyGen Expands HyperFrames API to Support 4:5 Aspect Ratios for Optimized Social Media Feed Content (1080p Only)",
+        "summary": "HeyGen has updated its HyperFrames API to include a 4:5 aspect ratio, providing a new option specifically optimized for Instagram and LinkedIn feed placements alongside the existing 16:9, 9:16, and 1:1 formats. Builders can now integrate this portrait-style framing by updating the aspect_ratio parameter in. For builders, the durable takeaway is to treat HeyGen as leverage for faster iteration and controlled cost—not a one-off demo—so the same architectural choice keeps paying off as traffic and feature scope grow. Ship the boring reliability pieces (caching, tenancy, budgets, verification) alongside the model call, or the demo quality will not survive real usage. In practice that means measuring latency and unit economics on day one, writing a clear failure mode for when the model is wrong, and keeping a human review path for high-impact actions so the product stays trustworthy as volume scales."
+      }
+    },
+    "tool_tags": [
+      "HeyGen"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "マーケ・集客・ASO",
+      "動画"
+    ],
+    "created_at": "2026-11-27T07:46:58.427Z"
+  },
+  {
     "id": "art-1795764753118-p71du",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -6610,32 +6691,6 @@
     "created_at": "2026-11-26T14:46:56.487Z"
   },
   {
-    "id": "art-1795703531532-mc8lb",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/neguseatama/n/n82c0c5cb31cd",
-    "published_at": "2026-11-26T14:29:46.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341143280/rectangle_large_type_2_84b50ecbeae62ea24bec25040417a313.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ローカルツール「Sieve Tray」v2.6.0リリース：非破壊点検コマンドと複数フォーマット出力対応でデータ検証を効率化",
-    "summary_ja": "データ検証エンジン「Sieve」を統合するローカルフロントエンドツール「Sieve Tray」がv2.6.0にアップデートされた。 今回の目玉は、元のデータを改変せずに状態を確認できる「非破壊の点検コマンド」の実装と、出力フォーマットの柔軟な選択機能だ。 さらに、同一値を特定の記号でマスキングする機能やコアエンジンの刷新も行われ、複雑なデータセットの処理能力が向上している。",
-    "translations": {
-      "ja": {
-        "title": "ローカルツール「Sieve Tray」v2.6.0リリース：非破壊点検コマンドと複数フォーマット出力対応でデータ検証を効率化",
-        "summary": "データ検証エンジン「Sieve」を統合するローカルフロントエンドツール「Sieve Tray」がv2.6.0にアップデートされた。 今回の目玉は、元のデータを改変せずに状態を確認できる「非破壊の点検コマンド」の実装と、出力フォーマットの柔軟な選択機能だ。 さらに、同一値を特定の記号でマスキングする機能やコアエンジンの刷新も行われ、複雑なデータセットの処理能力が向上している。"
-      },
-      "en": {
-        "title": "Local Data Validation Tool Sieve Tray v2.6.0 Launches with Non-Destructive Inspection and Multi-Format Export Support",
-        "summary": "Sieve Tray, the local frontend for the Sieve data validation engine, has launched version 2.6.0, bringing significant operational upgrades to data processing. The standout addition is the non-destructive inspection command, which allows developers to analyze data states without altering the underlying source files, significantly reducing the risk of accidental data corruption. Alongside this, the release introduces flexible multi-format export options, a new masking feature for identical values to ensure data privacy, and a refreshed core engine for better performance. For engineers and data professionals who need to maintain strict data integrity while validating complex pipelines, these additions provide a much safer and more efficient workflow, allowing for rigorous spot checks without compromising the original dataset architecture."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-26T14:32:11.532Z"
-  },
-  {
     "id": "art-1795703525059-f8gjv",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -6929,33 +6984,6 @@
       "課金・ペイウォール"
     ],
     "created_at": "2026-11-26T14:02:05.974Z"
-  },
-  {
-    "id": "art-1795700833881-jjh2t",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ullstudio/n/na5864e2dcef4",
-    "published_at": "2026-11-26T13:43:28.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341126540/rectangle_large_type_2_2d33dd56aa0591d0c5b27a20884aa6d5.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "LINEスタンプ審査が2カ月超の遅延へ、毎日1セット申請の戦略を一時停止し「地域限定公開」の影響を検証",
-    "summary_ja": "LINEクリエイターズマーケットの審査が大幅に遅延しており、一部で2カ月以上の待機期間が発生していることが判明した。 毎日1セットを申請し続けていた開発者は、この状況を受けて投稿ペースを一時的に落とし、販売地域を日本のみに限定した場合の審査期間への影響を検証する方針だ。 AIやツールを活用したスタンプ量産施策において、プラットフォームの審査状況に応じた柔軟な戦略変更が重要となる。",
-    "translations": {
-      "ja": {
-        "title": "LINEスタンプ審査が2カ月超の遅延へ、毎日1セット申請の戦略を一時停止し「地域限定公開」の影響を検証",
-        "summary": "LINEクリエイターズマーケットの審査が大幅に遅延しており、一部で2カ月以上の待機期間が発生していることが判明した。 毎日1セットを申請し続けていた開発者は、この状況を受けて投稿ペースを一時的に落とし、販売地域を日本のみに限定した場合の審査期間への影響を検証する方針だ。 AIやツールを活用したスタンプ量産施策において、プラットフォームの審査状況に応じた柔軟な戦略変更が重要となる。"
-      },
-      "en": {
-        "title": "LINE Creators Market reviews now exceeding 2 months: Developer pauses daily stamp releases to test region-limiting strategy",
-        "summary": "The LINE Creators Market is experiencing significant review delays, with some stamp submissions now taking over two months to process. In response to this bottleneck, a developer who was previously submitting at least one set per day has decided to slow down their publishing cadence. During this pause, they will run a controlled experiment to determine whether restricting sales regions exclusively to Japan can accelerate the review cycle. For independent developers scaling their creative output, this serves as a critical reminder that platform-side friction necessitates real-time adjustments to your distribution strategy. Rather than continuing to flood the queue, auditing your release pipeline to optimize for regional approval times is a necessary pivot to maintain workflow sustainability."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-26T13:47:13.881Z"
   },
   {
     "id": "art-1795700826201-6ui13",
@@ -8846,32 +8874,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T07:52:41.900Z"
-  },
-  {
-    "id": "art-1795679555671-2ul2a",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/figueiredoluiz/items/be77af87766215ef1055",
-    "published_at": "2026-11-26T06:47:52.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGODg1MzUlMkZwcm9maWxlLWltYWdlcyUyRjE3ODM2MTk5MTM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTQ0MDIwMTQ5YTAzMjlhNDY0OGMwNGNhMzU1N2I5MGI0%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D2c55f0444429aaea4adfa585115e16ee?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODclRTMlODIlQTMlRTMlODMlQjMlRTMlODIlQjAlRTMlODElQTclRTUlODYlOEQlRTMlODElQjMlRTUlODclQkElRTQlQkMlOUElRTMlODElODZUREQlRTMlODMlQkJCREQlRTMlODMlQkIlRTQlQkIlOTUlRTYlQTclOTglRTklQTclODYlRTUlOEIlOTUlRTklOTYlOEIlRTclOTklQkEmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0xZTI5NmM1OGM2MTI0NTk0MzI2OWIyNjgyZmQwYmY3Yw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmaWd1ZWlyZWRvbHVpeiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTAzZjQwYzdhM2UzNDg1MWY1NmQzNDQ0NGUwY2YzYjZi&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=1f9348109f786b1b2e1c7febdd8a8ac5",
-    "title_ja": "AIコーディング時代に再評価されるTDDと仕様駆動開発：エージェント活用の本質は「振る舞いの明文化」にある",
-    "summary_ja": "AIコーディングエージェントの普及に伴い、テスト駆動開発（TDD）や振る舞い駆動開発（BDD）、仕様駆動開発といった古典的な手法が再び注目を集めている。 OpenSpecやSpec Kitのようなツールが示す通り、エージェントに正確なコードを書かせる鍵は、変更を最小単位に分割し、期待する振る舞いを明確に定義することにある。 AI開発の成否を分けるのは、ツール任せのコーディングではなく、人間側が仕様をどれだけ厳密に言語化できるかという設計能力への回帰だ。",
-    "translations": {
-      "ja": {
-        "title": "AIコーディング時代に再評価されるTDDと仕様駆動開発：エージェント活用の本質は「振る舞いの明文化」にある",
-        "summary": "AIコーディングエージェントの普及に伴い、テスト駆動開発（TDD）や振る舞い駆動開発（BDD）、仕様駆動開発といった古典的な手法が再び注目を集めている。 OpenSpecやSpec Kitのようなツールが示す通り、エージェントに正確なコードを書かせる鍵は、変更を最小単位に分割し、期待する振る舞いを明確に定義することにある。 AI開発の成否を分けるのは、ツール任せのコーディングではなく、人間側が仕様をどれだけ厳密に言語化できるかという設計能力への回帰だ。"
-      },
-      "en": {
-        "title": "Why TDD and Spec-Driven Development Are Making a Comeback in the Era of AI-Powered Coding Agents",
-        "summary": "As AI coding agents proliferate, classic engineering paradigms like Test-Driven Development (TDD), Behavior-Driven Development (BDD), and spec-driven methodologies are resurfacing as essential frameworks. Tools like OpenSpec and Spec Kit demonstrate that the secret to high-fidelity agent output lies not in prompt complexity, but in the traditional discipline of breaking changes into atomic units and strictly defining expected behaviors. For builders, the success of AI-assisted development depends less on the model's inherent intelligence and more on the developer's ability to formalize specifications into machine-readable requirements. Ultimately, effectively leveraging these agents requires a return to rigorous design fundamentals, treating clear documentation as the primary interface for instructing AI systems to produce reliable, maintainable software at scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-26T07:52:35.671Z"
   },
   {
     "id": "art-1795679327381-rbvkh",
