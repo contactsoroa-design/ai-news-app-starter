@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795738629262-z8i9g",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/joinclass/articles/claude-code-2-1-332-mcp-skills-tasks",
+    "published_at": "2026-11-26T23:10:16.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wny-YH5L--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25202.1.332%2520%25E6%2596%25B0%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%253A%2520MCP%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2581%258B%25E3%2582%2589%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25AB%25E3%2582%2592%25E9%2585%258D%25E3%2582%258A%25E3%2580%2581MCP%2520Tasks%25E3%2581%25A7%25E9%2595%25B7%25E3%2581%2584%25E5%2587%25A6...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JOINCLASS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NhOWUwY2FiYmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Code 2.1.332新機能：MCPサーバー経由のスキル配信とMCP Tasksによる非同期処理の実行",
+    "summary_ja": "Claude Code 2.1.332では、MCPサーバーがスキルを直接配信可能となり、/メニューから「server:skill」形式で呼び出せるようになりました。 さらにPreSkillShellCommandフックの追加によりスキル読み込み時のシェル実行制御が可能に。 並行して利用可能な「MCP Tasks」を活用すれば、時間のかかるツール処理をサーバー側で非同期実行し、Claudeは待機せずに次のタスクへ移行できます。",
+    "translations": {
+      "ja": {
+        "title": "Claude Code 2.1.332新機能：MCPサーバー経由のスキル配信とMCP Tasksによる非同期処理の実行",
+        "summary": "Claude Code 2.1.332では、MCPサーバーがスキルを直接配信可能となり、/メニューから「server:skill」形式で呼び出せるようになりました。 さらにPreSkillShellCommandフックの追加によりスキル読み込み時のシェル実行制御が可能に。 並行して利用可能な「MCP Tasks」を活用すれば、時間のかかるツール処理をサーバー側で非同期実行し、Claudeは待機せずに次のタスクへ移行できます。"
+      },
+      "en": {
+        "title": "Claude Code 2.1.332 Launches MCP-Based Skill Distribution and MCP Tasks for Async Execution",
+        "summary": "Claude Code 2.1.332 introduces a major update where MCP servers can now distribute skills directly, accessible via the slash menu as \"server:skill.\" The release also adds a PreSkillShellCommand hook, giving developers precise control over shell execution during skill loading. Alongside these features, users can leverage MCP Tasks, which offload time-intensive tool processing to the server side. This allows Claude to continue working on subsequent logic without blocking on long-running operations. By integrating these asynchronous task patterns and modular skill distributions, engineers can build more responsive, fluid development workflows. This update marks a significant shift in how agents manage complex tool chains and background processes, effectively streamlining multi-step operations for complex coding environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-27T00:17:09.262Z"
+  },
+  {
+    "id": "art-1795738622407-9ds9k",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/fabryluka142/items/990e4dd6f77c05ae33e2",
+    "published_at": "2026-11-26T23:49:27.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jS1RYZ0FraWdXbVRkU1cyZVd3QkxiOEpwZE1HdzVEbnhRVUt4Z3Rzc2Y2cHpscFN3JTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTNhYjQ0ODcxMGYyMDRhYWQ3OWM5ZWFkMmE2ZDM1YzM4%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D2c62ae3915a84e824d0e71c4f475f19b?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QSUyMFByZWZsaWdodCUyMENoZWNrbGlzdCUyMGZvciUyMFJlZmVyZW5jZS1Db250cm9sbGVkJTIwVmlkZW8lMjBEcmFmdHMmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1lZmNlZjJlMmU3NjgwZDJkYWRiZmM0NzExNzlhMmNkYw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmYWJyeWx1a2ExNDImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1lZjYyMTY1MmQ5M2JjZjQwYTk0YzVmODc0NDk3ZjViNQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=af002187dade24dc8f40e3addad6adea",
+    "title_ja": "AI動画生成における一貫性確保の難所：リファレンス管理のための「プリフライトチェックリスト」手法を解説",
+    "summary_ja": "AI動画生成において、テキストプロンプトのみで品質を担保するのは困難であり、特に一貫性が必要な場面ではリファレンスの制御が不可欠だ。 本記事では、生成プロセスを開始する前に実施すべき「プリフライトチェックリスト」の手法を提案し、参照データの整合性を検証することで再生成の回数を劇的に減らすフローを紹介する。 プロンプトエンジニアリングだけでなく、事前のデータ準備こそが高品質な動画出力を安定させるための最も効率的な投資となる。",
+    "translations": {
+      "ja": {
+        "title": "AI動画生成における一貫性確保の難所：リファレンス管理のための「プリフライトチェックリスト」手法を解説",
+        "summary": "AI動画生成において、テキストプロンプトのみで品質を担保するのは困難であり、特に一貫性が必要な場面ではリファレンスの制御が不可欠だ。 本記事では、生成プロセスを開始する前に実施すべき「プリフライトチェックリスト」の手法を提案し、参照データの整合性を検証することで再生成の回数を劇的に減らすフローを紹介する。 プロンプトエンジニアリングだけでなく、事前のデータ準備こそが高品質な動画出力を安定させるための最も効率的な投資となる。"
+      },
+      "en": {
+        "title": "Mastering Consistency in AI Video Generation: A Practical Preflight Checklist for Managing Reference-Controlled Drafts",
+        "summary": "Generating high-quality, consistent short videos from simple written briefs remains notoriously difficult, often resulting in wasteful re-runs and incoherent visual outputs. This article introduces a preflight checklist designed to enforce strict reference control before the rendering process begins, significantly reducing iterative trial-and-error cycles. By systematically validating reference assets and alignment constraints upfront, developers can stabilize output fidelity without relying purely on prompt luck. For builders and content creators, the core takeaway is that the bottleneck for AI video isn't just the model itself, but the rigor of the data preparation phase; treating reference assets as first-class configuration inputs is the most effective strategy for achieving professional, reliable, and predictable video results at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "動画",
+      "開発"
+    ],
+    "created_at": "2026-11-27T00:17:02.407Z"
+  },
+  {
+    "id": "art-1795738616169-knxul",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/shikumi_lab_jp/n/nc94d99109df6",
+    "published_at": "2026-11-27T00:00:36.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341249417/rectangle_large_type_2_6cb1aeb75c0f794b8588e12cb171863c.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "待ち合わせアプリ「あつまりマップ」がUIを刷新、ポップな世界観と案内キャラクターを実装してユーザー体験を強化",
+    "summary_ja": "待ち合わせアプリ「あつまりマップ」は、UIデザインを大幅に刷新し、ポップで親しみやすい世界観へと進化させた。 さらに、ユーザーの行動をサポートする「案内キャラクター」を新機能として実装し、初めてのユーザーでも直感的にアプリを使える導線作りを行っている。 個人開発のサービスにおいて、こうした「キャラクターによる導入」と「統一されたビジュアル言語」の構築は、ユーザーの心理的なハードルを下げ、定着率を高めるための重要な戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "待ち合わせアプリ「あつまりマップ」がUIを刷新、ポップな世界観と案内キャラクターを実装してユーザー体験を強化",
+        "summary": "待ち合わせアプリ「あつまりマップ」は、UIデザインを大幅に刷新し、ポップで親しみやすい世界観へと進化させた。 さらに、ユーザーの行動をサポートする「案内キャラクター」を新機能として実装し、初めてのユーザーでも直感的にアプリを使える導線作りを行っている。 個人開発のサービスにおいて、こうした「キャラクターによる導入」と「統一されたビジュアル言語」の構築は、ユーザーの心理的なハードルを下げ、定着率を高めるための重要な戦略となる。"
+      },
+      "en": {
+        "title": "Meeting app Atsumari Map revamps UI with a new pop-style aesthetic and interactive guide character for onboarding",
+        "summary": "The meeting app Atsumari Map has completed a major UI overhaul, moving toward a vibrant, pop-inspired aesthetic to improve engagement. A key addition is the new guide character, designed to assist users and streamline navigation within the application, effectively reducing the friction for newcomers during their initial sessions. For indie developers, implementing character-led onboarding alongside a cohesive visual identity acts as a powerful lever to decrease user churn and improve retention. The shift demonstrates that investing in personality and clear visual guidance is not just aesthetic, but a functional necessity for building intuitive, sticky experiences in crowded utility app markets where user attention spans are increasingly limited and demanding."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-27T00:16:56.169Z"
+  },
+  {
+    "id": "art-1795738608636-uumiq",
+    "source_id": "source-itmedia-ai",
+    "source_name": "ITmedia AI＋",
+    "url": "https://www.itmedia.co.jp/aiplus/article/2611/27/2000003505/",
+    "published_at": "2026-11-26T23:00:00.000Z",
+    "og_image_url": "https://www.itmedia.co.jp/aiplus/article/ogp/2611/27/2000003505/10013096/2048",
+    "title_ja": "生成AIで2026年までに人員はどう変化する？デロイト調査が示唆する「増員・減員部門」の明暗と組織再編の勘所",
+    "summary_ja": "デロイトの調査により、2026年までに生成AI導入でITやR&D部門では人員増が見込まれる一方、事務やカスタマーサポートの一部業務で削減が進む見通しが明らかになった。 単なる人員整理ではなく、AIを活用して「業務の質」を向上させ、人間にしかできない創造的なタスクへリソースを再配分する組織再編が進行中だ。 開発者や起業家は、自動化で効率化する領域を明確に見極め、AIとの共存を前提としたチーム構成へ早期に移行することが今後の競争力を左右する。",
+    "translations": {
+      "ja": {
+        "title": "生成AIで2026年までに人員はどう変化する？デロイト調査が示唆する「増員・減員部門」の明暗と組織再編の勘所",
+        "summary": "デロイトの調査により、2026年までに生成AI導入でITやR&D部門では人員増が見込まれる一方、事務やカスタマーサポートの一部業務で削減が進む見通しが明らかになった。 単なる人員整理ではなく、AIを活用して「業務の質」を向上させ、人間にしかできない創造的なタスクへリソースを再配分する組織再編が進行中だ。 開発者や起業家は、自動化で効率化する領域を明確に見極め、AIとの共存を前提としたチーム構成へ早期に移行することが今後の競争力を左右する。"
+      },
+      "en": {
+        "title": "Deloitte survey predicts 2026 workforce shifts: Which departments gain headcount and which lose ground to Generative AI",
+        "summary": "A new Deloitte report outlines workforce projections for 2026, revealing that while Generative AI adoption will drive hiring in IT and R&D, it simultaneously threatens roles in administrative support and routine customer service. The data suggests this isn't simply about reducing headcount, but rather a strategic reallocation toward high-value creative tasks that remain uniquely human. For builders and technical founders, this signals that the most resilient teams are those actively identifying which workflows can be fully automated versus those that require human oversight. To maintain competitive advantage, organizations must pivot their hiring strategies now to build collaborative human-AI workforces, rather than waiting for productivity gaps to dictate restructuring decisions in the coming years."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "ビジネス",
+      "研究"
+    ],
+    "created_at": "2026-11-27T00:16:48.637Z"
+  },
+  {
     "id": "art-1795737724545-d0qsx",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9126,32 +9230,6 @@
     "created_at": "2026-11-26T00:17:14.653Z"
   },
   {
-    "id": "art-1795652215308-hbdnv",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kmagpie/n/n7d99710a6369",
-    "published_at": "2026-11-25T23:57:04.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340820697/rectangle_large_type_2_529cb4f1d61c70c44cd334a0177764ae.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "猫×四柱推命の癒やし系アプリ「猫とクッキーで今日の運勢」、K-magpieが開発した個人開発プロジェクトの全貌と特徴",
-    "summary_ja": "K-magpie氏がリリースした「猫とクッキーで今日の運勢」は、四柱推命に基づいた占い結果を、猫のイラストと共に楽しめる無料アプリ。 ユーザーはクッキーを開いて運勢をチェックできるほか、気になる相手との相性診断も可能で、単なる占い機能に留まらないコレクション要素も盛り込まれている。 個人開発において、特定のニッチな体験と愛らしいビジュアルを組み合わせることは、ユーザーの継続率を高める重要なUIデザインの戦略と言えるだろう。",
-    "translations": {
-      "ja": {
-        "title": "猫×四柱推命の癒やし系アプリ「猫とクッキーで今日の運勢」、K-magpieが開発した個人開発プロジェクトの全貌と特徴",
-        "summary": "K-magpie氏がリリースした「猫とクッキーで今日の運勢」は、四柱推命に基づいた占い結果を、猫のイラストと共に楽しめる無料アプリ。 ユーザーはクッキーを開いて運勢をチェックできるほか、気になる相手との相性診断も可能で、単なる占い機能に留まらないコレクション要素も盛り込まれている。 個人開発において、特定のニッチな体験と愛らしいビジュアルを組み合わせることは、ユーザーの継続率を高める重要なUIデザインの戦略と言えるだろう。"
-      },
-      "en": {
-        "title": "K-magpie releases 'Fortune Cats & Cookies,' a personality-driven astrology app blending Chinese fortune telling with cat-themed collection mechanics",
-        "summary": "K-magpie has launched 'Fortune Cats & Cookies,' a free mobile application that delivers astrology readings based on the Four Pillars of Destiny, wrapped in an engaging cat-themed aesthetic. Beyond simple daily fortunes, the app allows users to check compatibility with others and collect cat-themed illustrations, effectively gamifying the divination experience. For solo developers, this project serves as a compelling case study on how combining niche functionality like traditional astrology with relatable, high-retention UI elements—like pet collection—can drive user engagement. It proves that even utility-focused apps can significantly boost daily active usage and user retention by embedding emotional, character-driven loops into the core product architecture, rather than simply presenting data in a standard, dry interface."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-26T00:16:55.308Z"
-  },
-  {
     "id": "art-1795651337132-z7mhu",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -9627,32 +9705,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-25T22:47:24.522Z"
-  },
-  {
-    "id": "art-1795645942792-d0o1n",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Git_Dayori/items/605ab24da850ff5d955e",
-    "published_at": "2026-11-25T22:31:07.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDE0MTQwJTJGZWNhZmNiZjMyMzkwOGQ3ODlmNzkyZDUxNTZmZDZlNTVkY2EzNjM0MSUyRnhfbGFyZ2UucG5nJTNGMTc3NjkyMzE3Mj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YTk0ZjU5ZmZjNDczOGQ2ZDUzNDI4Yjc3ZTc2YWFhMGQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D454c3a9a5e0968be2f7a10c3c9f8eb49?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwR2l0SHViJUU2JTk3JUE1JUU1JUEwJUIxJUUzJTgwJTkxQnVnSHVudGVyJUUzJTgxJThDJTJCMSUyQzY0NCVFMyU4MSVBNyVFMyU4MyU4OCVFMyU4MyU4MyVFMyU4MyU5NyVFMyU4MCU4MSVFNSVCOCVCOCVFOSU4MCVBMzE1JUU0JUJCJUI2JUUzJTgxJUFGJUUzJTgxJTk5JUUzJTgxJUI5JUUzJTgxJUE2JUU1JTg5JThEJUU1JThGJUI3JUUzJTgxJThCJUUzJTgyJTg5JUU3JUI2JTlBJUU2JThBJTk1JTIwJUUyJTgwJTk0JTIwMjAyNi0xMS0yNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWFiNjBkYjgyMjI5MzRiMTFhZjhhMGNhOGQ4NjgxNjNi&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBHaXRfRGF5b3JpJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZjI4YjlmMWRhMWM3MjMyODkxYjlmNGVjZDU1N2Q0ZWM&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=e3fedea062af79325acefec08f833a42",
-    "title_ja": "GitHub日報：BugHunterが1,644スター獲得で首位、常連15選も全枠キープの安定圏内を維持（2026年11月26日版）",
-    "summary_ja": "GitHubトレンド日報の2026年11月26日版によると、デバッグ支援ツール「BugHunter」が1,644スターを新たに獲得しランキングトップを独走した。 常連とされる15のリポジトリは、前号から顔ぶれが変わることなくランクインし続けており、開発トレンドの停滞と既存ツールへの需要の高まりを示唆している。 注目される技術やOSSの動向を追いかけるエンジニアにとっては、新規参入がない現状を理解し、既存プロジェクトの成熟度を再評価する機会と言えるだろう。",
-    "translations": {
-      "ja": {
-        "title": "GitHub日報：BugHunterが1,644スター獲得で首位、常連15選も全枠キープの安定圏内を維持（2026年11月26日版）",
-        "summary": "GitHubトレンド日報の2026年11月26日版によると、デバッグ支援ツール「BugHunter」が1,644スターを新たに獲得しランキングトップを独走した。 常連とされる15のリポジトリは、前号から顔ぶれが変わることなくランクインし続けており、開発トレンドの停滞と既存ツールへの需要の高まりを示唆している。 注目される技術やOSSの動向を追いかけるエンジニアにとっては、新規参入がない現状を理解し、既存プロジェクトの成熟度を再評価する機会と言えるだろう。"
-      },
-      "en": {
-        "title": "GitHub Daily: BugHunter leads with 1,644 new stars as the top 15 repeat performers hold their ground (Nov 26, 2026)",
-        "summary": "The GitHub daily trend report for November 26, 2026, highlights the debugging tool BugHunter, which surged to the top of the leaderboard by accumulating 1,644 new stars. Remarkably, all 15 of the featured repeat repositories maintained their positions from the previous edition, suggesting a period of stability where established projects continue to capture developer interest over new arrivals. For builders monitoring the open-source ecosystem, this lack of fresh entries underscores the significant momentum behind proven tools. The current trend signals that developers are doubling down on existing infrastructure rather than pivoting to new alternatives, making this a pivotal time to re-evaluate the utility and lifecycle of current community-driven standards."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-25T22:32:22.792Z"
   },
   {
     "id": "art-1795645934995-g4tfr",
@@ -13160,31 +13212,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-25T03:16:57.899Z"
-  },
-  {
-    "id": "art-1795575735341-0dzva",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tattu/articles/thanks-to-cosense",
-    "published_at": "2026-11-25T03:00:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--XTHJy2b---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_66:Cosense%25E3%2581%25B8%25E3%2581%25AE%25E6%2584%259F%25E8%25AC%259D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:wasabi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2FmZmRhNTA5ZmUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "知識共有ツール「Cosense」で2年間に2,220ページを執筆した個人開発者が語る、メモアプリの分散を防ぐ「ネットワーク的思考」の価値",
-    "summary_ja": "かつてのScrapboxから現在まで、Cosenseを2年間使い続けたユーザーが、2,220ページにわたる個人の知識ベースを構築した経験を共有している。 NotionやObsidianといったアプリ間で散らばっていた情報が一箇所に集約されたことで、リンク機能を活用した「ネットワーク的思考」が個人の思考整理を劇的に加速させた。 ツール選びで迷走している開発者にとって、機能の多寡よりも「情報の関連付け」を自然に行える設計が、長期的な知的生産性を向上させる鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "知識共有ツール「Cosense」で2年間に2,220ページを執筆した個人開発者が語る、メモアプリの分散を防ぐ「ネットワーク的思考」の価値",
-        "summary": "かつてのScrapboxから現在まで、Cosenseを2年間使い続けたユーザーが、2,220ページにわたる個人の知識ベースを構築した経験を共有している。 NotionやObsidianといったアプリ間で散らばっていた情報が一箇所に集約されたことで、リンク機能を活用した「ネットワーク的思考」が個人の思考整理を劇的に加速させた。 ツール選びで迷走している開発者にとって、機能の多寡よりも「情報の関連付け」を自然に行える設計が、長期的な知的生産性を向上させる鍵となる。"
-      },
-      "en": {
-        "title": "How one developer centralized their knowledge base into Cosense, writing 2,220 pages over two years to master networked thought",
-        "summary": "After two years of consistent use, a developer reflects on building a massive knowledge base within Cosense, accumulating 2,220 pages that have replaced a previously fragmented workflow. Previously, this user scattered information across Notion, Obsidian, and Zenn scraps, struggling to maintain a cohesive thought process. By migrating to Cosense, they leveraged its unique link-first architecture to unify disparate ideas, proving that networked thought is more effective than standard file hierarchies for long-term personal productivity. For builders tired of tool-hopping, this deep dive illustrates why prioritising an app’s ability to interlink concepts naturally is more critical for intellectual output than chasing the feature-rich complexity found in traditional document-centric platforms."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-25T03:02:15.341Z"
   },
   {
     "id": "art-1795575728177-sn01k",
@@ -16833,32 +16860,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-24T03:46:39.132Z"
-  },
-  {
-    "id": "art-1795491121874-ahkny",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/fd2025/articles/8cc74c1b1a488d",
-    "published_at": "2026-11-24T02:24:24.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--DMDise4k--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E7%258F%25BE%25E5%25A0%25B4%25E3%2581%25AE%25E5%2581%25A5%25E5%2585%25A8%25E6%2580%25A7%25E3%2582%259220%25E5%2595%258F%25E3%2581%25A7%25E8%2587%25AA%25E5%25B7%25B1%25E8%25A8%25BA%25E6%2596%25AD%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258BWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fd2025%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2EzMzVlNTI5MmQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "開発現場の健全性を3分で自己診断、エンジニアのメンタルと組織環境を可視化するWebツール「現場チェック」を公開",
-    "summary_ja": "エンジニアが直近3ヶ月の業務環境をわずか3分・20問で客観的に評価できるWebアプリ「現場チェック」が登場した。 回答データは全てブラウザ内で完結し外部送信されないため、心理的安全性を確保しつつ個人の心身ケアや組織改善のヒントを得られる。 フリーランスや業務委託など、複数現場を渡り歩く開発者が自身の環境を見極めるための羅針盤となるツールだ。",
-    "translations": {
-      "ja": {
-        "title": "開発現場の健全性を3分で自己診断、エンジニアのメンタルと組織環境を可視化するWebツール「現場チェック」を公開",
-        "summary": "エンジニアが直近3ヶ月の業務環境をわずか3分・20問で客観的に評価できるWebアプリ「現場チェック」が登場した。 回答データは全てブラウザ内で完結し外部送信されないため、心理的安全性を確保しつつ個人の心身ケアや組織改善のヒントを得られる。 フリーランスや業務委託など、複数現場を渡り歩く開発者が自身の環境を見極めるための羅針盤となるツールだ。"
-      },
-      "en": {
-        "title": "Developer releases a web tool for assessing team health and engineering environment in just 20 questions",
-        "summary": "A new self-diagnostic web tool, 'Genba Check,' allows engineers to assess the health of their current development environment using just 20 questions in under three minutes. To ensure user privacy and psychological safety, all survey responses are processed strictly within the browser and never transmitted to external servers, nor is any company data saved. The tool provides engineers with a structured way to evaluate their work-life balance and team dynamics over the last three months. It serves as an essential compass for freelancers and contractors navigating multiple projects, helping them identify potential red flags or areas for improvement in their development workflow, all without the risk of sensitive data exposure."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-24T03:32:01.874Z"
   },
   {
     "id": "art-1795488407993-40r5p",
