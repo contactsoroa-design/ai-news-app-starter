@@ -1,5 +1,86 @@
 [
   {
+    "id": "art-1795798914454-y9w9r",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/matsushima_a/articles/day-059-heretic-kl-think-prefix",
+    "published_at": "2026-11-27T14:50:37.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FqK48kDI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%25A4%259C%25E9%2596%25B2%25E8%25A7%25A3%25E9%2599%25A4%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25ABheretic%25E3%2581%25AE%25E3%2580%258CKL%25200.0000%25E3%2580%258D%25E3%2581%25AF%25E5%258A%25A3%25E5%258C%2596%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%253A%2520Qwen3%25E3%2581%25AE%253Cthink%253E%25E3%2581%258C%25E6%258C%2587%25E6%25A8%2599%25E3%2582%2592%25E7%25B4%25A0...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:matsu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkY2YwMTZjYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "LLM検閲解除ツール「heretic」の盲点：Qwen3で「KLダイバージェンス0」が指標を素通りしていた事実と教訓",
+    "summary_ja": "Python製CLIツール「heretic」は、方向性アブレーションを用いてLLMの拒否応答を抑制するが、Qwen3環境下での「KLダイバージェンス0（モデル劣化なし）」という表示は指標が機能していない誤検知だった。 Optunaによるパラメータ最適化を行っても、指標自体がモデル特性と噛み合わなければ、内部的には重大な劣化が進行する可能性がある。",
+    "translations": {
+      "ja": {
+        "title": "LLM検閲解除ツール「heretic」の盲点：Qwen3で「KLダイバージェンス0」が指標を素通りしていた事実と教訓",
+        "summary": "Python製CLIツール「heretic」は、方向性アブレーションを用いてLLMの拒否応答を抑制するが、Qwen3環境下での「KLダイバージェンス0（モデル劣化なし）」という表示は指標が機能していない誤検知だった。 Optunaによるパラメータ最適化を行っても、指標自体がモデル特性と噛み合わなければ、内部的には重大な劣化が進行する可能性がある。"
+      },
+      "en": {
+        "title": "The Trap of \"Zero KL\" in LLM Jailbreak Tool 'heretic': Why Qwen3 Metrics Misled Developers on Model Integrity",
+        "summary": "The Python CLI tool \"heretic\" aims to remove LLM censorship via directional abliteration, but recent tests on Qwen3 reveal that a \"0.0000 KL divergence\" reading—which implies zero model degradation—is often a misleading false positive. Because the metric failed to register meaningful changes during Optuna parameter optimization, the tool created an illusion of safety while underlying model logic actually decayed. This incident underscores a critical warning for AI builders: relying solely on automated divergence metrics can mask serious model rot. Developers must supplement automated parameter searching with qualitative validation of generation quality, as mathematical scores like KL divergence are only as reliable as the implementation tracking them."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-27T17:01:54.454Z"
+  },
+  {
+    "id": "art-1795798905120-vmvyk",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/hygeoworks/articles/8cc3f6e2b1599b",
+    "published_at": "2026-11-27T16:48:44.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--1f2RAW5R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25A8%25E3%2582%25AF%25E3%2582%25BB%25E3%2583%25AB%25E4%25B8%258D%25E8%25A6%2581%25E3%2583%25BB%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25A6%25E3%2582%25B6%25E5%25AE%258C%25E7%25B5%2590%25E3%2581%25A7%25E8%25A9%25A6%25E7%25AE%2597%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E6%25B6%25B2%25E7%258A%25B6%25E5%258C%2596%25E5%2588%25A4%25E5%25AE%259A%25EF%25BC%2588%25E9%2581%2593%25E7%25A4%25BAV%25EF%25BC%2589%25E3%2583%25BB%25E9%2580%258F%25E9%2581%258E%25E5%259E%258B%25E7%25A0%2582%25E9%2598%25B2%25E5%25A0%25B0%25E5%25A0%25A4%25EF%25BC%2588%25E5%259B%25BD%25E7%25B7%258F%25E7%25A0%2594905%25E5%258F%25B7%25EF%25BC%2589%25E3%2581%25A8%25E7%259B%259B%25E5%259C%259F%25E8%25A6%258F%25E5%2588%25B6%25E6%25B3%2595%25E3%2581%25AE%25E6%259C%2580%25E6%2596%25B0%25E5%25AF%25BE%25E5%25BF%259C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:HyGeoWorks%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzNkYzIyYjIwOTEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "建設エンジニア向け：脱ExcelのWeb計算ツール「HyGeoWorks」、Rust/Wasmで液状化判定や盛土規制法対応をブラウザ完結で実現",
+    "summary_ja": "建設コンサル業界では古いExcelファイルやVBAマクロの互換性・セキュリティ問題が常態化している。 これに対し、RustとWebAssemblyを活用した「HyGeoWorks」は、液状化判定（道示V）や透過型砂防堰堤（国総研905号）などの計算をブラウザ上で完結させる。 入力データがサーバーに送信されないためセキュリティ要件も満たせる。 レガシーなスプレッドシート依存から脱却し、現代的なWeb開発スタックで土木計算の信頼性とポータビリティを両立するモデルケースとなる。",
+    "translations": {
+      "ja": {
+        "title": "建設エンジニア向け：脱ExcelのWeb計算ツール「HyGeoWorks」、Rust/Wasmで液状化判定や盛土規制法対応をブラウザ完結で実現",
+        "summary": "建設コンサル業界では古いExcelファイルやVBAマクロの互換性・セキュリティ問題が常態化している。 これに対し、RustとWebAssemblyを活用した「HyGeoWorks」は、液状化判定（道示V）や透過型砂防堰堤（国総研905号）などの計算をブラウザ上で完結させる。 入力データがサーバーに送信されないためセキュリティ要件も満たせる。 レガシーなスプレッドシート依存から脱却し、現代的なWeb開発スタックで土木計算の信頼性とポータビリティを両立するモデルケースとなる。"
+      },
+      "en": {
+        "title": "HyGeoWorks replaces fragile legacy Excel tools with Rust-based browser-side civil engineering calculations for geotechnical compliance and safety",
+        "summary": "Construction consulting firms are increasingly crippled by outdated Excel sheets and incompatible VBA macros that trigger security blocks in modern Microsoft 365 environments. HyGeoWorks addresses this by porting essential civil engineering workflows—such as soil liquefaction assessment (Road Bridge Specs V) and permeable sabo dam design (NILIM 905)—directly into the browser using Rust and WebAssembly. Crucially, the system ensures zero data transmission to external servers, satisfying strict client privacy and security compliance while guaranteeing consistent output across Mac and Windows platforms. This shift from spreadsheet-dependent workflows to localized browser-based computation shows how developers can modernize technical legacy stacks, delivering robust, platform-agnostic tools that maintain the speed and trust required for critical geotechnical and safety regulatory design tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-27T17:01:45.121Z"
+  },
+  {
+    "id": "art-1795798896283-q6bj2",
+    "source_id": "source-n8n",
+    "source_name": "n8n Blog (AI Automation)",
+    "url": "https://blog.n8n.io/deterministic-ai/",
+    "published_at": "2026-11-27T16:33:26.000Z",
+    "og_image_url": "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/size/w1200/2026/11/TL-5_deterministic-AI_11zon.jpg",
+    "title_ja": "n8nが解説、AIパイプラインを決定論的に制御するアーキテクチャ設計術——信頼性と監査可能性を担保するエンジニアリング",
+    "summary_ja": "n8nは、AIの非決定的な挙動を制御し、プロダクション環境で信頼性と監査可能性を確保するためのアーキテクチャパターンを公開した。 LLMの確率的な出力をそのまま使うのではなく、パイプラインの途中で状態管理や検証ステップを強制することで、予測可能かつ追跡可能なシステムを構築できる。 AIアプリケーションを実験段階から商用レベルへ引き上げるには、ブラックボックス化を避け、入出力の過程を確実に制御する設計アプローチが不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "n8nが解説、AIパイプラインを決定論的に制御するアーキテクチャ設計術——信頼性と監査可能性を担保するエンジニアリング",
+        "summary": "n8nは、AIの非決定的な挙動を制御し、プロダクション環境で信頼性と監査可能性を確保するためのアーキテクチャパターンを公開した。 LLMの確率的な出力をそのまま使うのではなく、パイプラインの途中で状態管理や検証ステップを強制することで、予測可能かつ追跡可能なシステムを構築できる。 AIアプリケーションを実験段階から商用レベルへ引き上げるには、ブラックボックス化を避け、入出力の過程を確実に制御する設計アプローチが不可欠となる。"
+      },
+      "en": {
+        "title": "Designing Deterministic AI Pipelines: n8n’s Architectural Patterns for Reliable and Fully Auditable Automated Workflows",
+        "summary": "n8n has released a deep dive into architectural patterns designed to tame non-deterministic AI behavior, ensuring that automated pipelines remain reliable and fully auditable in production. The core argument is that engineers shouldn't treat LLM outputs as opaque black boxes; instead, teams should implement structured state management and validation checkpoints that force predictable outcomes even within stochastic processes. By wrapping AI logic in deterministic control flows, developers gain the ability to trace decisions and debug failures effectively. For builders scaling AI agents, the practical lesson is to move away from open-ended prompting and toward architectural patterns that enforce rigorous input-output verification, ultimately making AI applications robust enough for critical business environments."
+      }
+    },
+    "tool_tags": [
+      "n8n"
+    ],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-27T17:01:36.283Z"
+  },
+  {
     "id": "art-1795798078916-rt5z2",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -9833,33 +9914,6 @@
     "created_at": "2026-11-26T12:32:27.507Z"
   },
   {
-    "id": "art-1795696338103-90miy",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.asya.ai/blog/the-state-of-llm-costs-and-capabilities",
-    "published_at": "2026-11-26T11:58:46.000Z",
-    "og_image_url": "https://www.asya.ai/uploads/blog/1795614016601-00-cover-v2.png",
-    "title_ja": "LLMの現在地：Asya.aiによるコストと推論能力の徹底分析、モデル選択の最適解と経済合理性を検証",
-    "summary_ja": "Asya.aiが公開したLLMレポートは、最新モデルのコスト構造と推論能力の相関を詳細に分析している。 多くの開発者が直面するAPI料金と期待される出力精度のトレードオフに対し、タスクごとの経済合理性をどう判断すべきかの指針を提示した。 単に最高性能のモデルを選ぶのではなく、特定の業務要件や予算に合わせてモデルを使い分けるハイブリッド戦略が、今後のAI開発におけるコスト競争力を左右する重要な分岐点となる。",
-    "translations": {
-      "ja": {
-        "title": "LLMの現在地：Asya.aiによるコストと推論能力の徹底分析、モデル選択の最適解と経済合理性を検証",
-        "summary": "Asya.aiが公開したLLMレポートは、最新モデルのコスト構造と推論能力の相関を詳細に分析している。 多くの開発者が直面するAPI料金と期待される出力精度のトレードオフに対し、タスクごとの経済合理性をどう判断すべきかの指針を提示した。 単に最高性能のモデルを選ぶのではなく、特定の業務要件や予算に合わせてモデルを使い分けるハイブリッド戦略が、今後のAI開発におけるコスト競争力を左右する重要な分岐点となる。"
-      },
-      "en": {
-        "title": "The State of LLM Analysis: Asya.ai evaluates current cost structures versus inference capabilities for production-grade applications",
-        "summary": "Asya.ai has published a comprehensive analysis of the current LLM landscape, rigorously mapping the correlation between rising inference costs and actual model capabilities. The report addresses the critical trade-off developers face when balancing high-end API fees against output accuracy, offering a strategic framework for determining economic rationality across specific workloads. The analysis suggests that blindly selecting the most powerful model is no longer the optimal path; instead, adopting a hybrid strategy—matching precise task requirements to the most efficient model—is becoming a fundamental differentiator for building sustainable AI businesses. For builders, the key takeaway is that architectural flexibility in model switching is now as vital for long-term margins as the core application logic itself."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "コスト・API料金",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-26T12:32:18.103Z"
-  },
-  {
     "id": "art-1795695432261-uxe5t",
     "source_id": "source-starterstory",
     "source_name": "Starter Story (Solo Developer)",
@@ -11537,33 +11591,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T04:02:01.759Z"
-  },
-  {
-    "id": "art-1795664830298-h12bo",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/taichiendoh/articles/ai-agent-memory-provenance-trust-gate",
-    "published_at": "2026-11-25T22:08:22.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s---cs9Rg84--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E3%2581%25A9%25E3%2581%2593%25E3%2581%258B%25E3%2582%2589%25E6%259D%25A5%25E3%2581%259F%25E8%25A8%2598%25E6%2586%25B6%25E3%2581%258B%25E3%2580%258D%25E3%2582%2592%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2597%25E3%2581%25A6%25E3%2581%258B%25E3%2582%2589%25E4%25BD%25BF%25E3%2581%2586%2520%25E2%2580%2595%2520%25E8%25A4%2587%25E6%2595%25B0AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E8%25A8%2598%25E6%2586%25B6%25E3%2581%25AB%25E3%2580%2581%25E5%2587%25BA%25E8%2587%25AA%25E7%25AE%25A1%25E7%2590%2586%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E5%2585%25A5%25E5%258F%25A3%25E3%2582%2592%25E8%25B6%25B3%25E3%2581%2599%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%2581%25A0%25E8%2597%25A4%25E5%25A4%25AA%25E4%25B8%2580%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzA1ZjNmMTY4MjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェントの記憶汚染を防ぐ「出自管理（Provenance）」設計―信頼できるデータのみを推論に組み込むためのセキュリティ戦略",
-    "summary_ja": "OWASP GenAI Security Projectが警告する「記憶とコンテキストの汚染（ASI06）」に対し、AIエージェントの記憶における出自管理（プロバナンス）を強化する設計が重要になっている。 攻撃者が記憶層に不正データを注入すると、将来の推論すべてが永続的に汚染されるためだ。 単なる入力検証にとどまらず、どのデータがどのソースから来たかを追跡・検証する信頼ベースの取得プロセスを構築することが、自律型エージェント開発における必須の防御レイヤーとなる。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントの記憶汚染を防ぐ「出自管理（Provenance）」設計―信頼できるデータのみを推論に組み込むためのセキュリティ戦略",
-        "summary": "OWASP GenAI Security Projectが警告する「記憶とコンテキストの汚染（ASI06）」に対し、AIエージェントの記憶における出自管理（プロバナンス）を強化する設計が重要になっている。 攻撃者が記憶層に不正データを注入すると、将来の推論すべてが永続的に汚染されるためだ。 単なる入力検証にとどまらず、どのデータがどのソースから来たかを追跡・検証する信頼ベースの取得プロセスを構築することが、自律型エージェント開発における必須の防御レイヤーとなる。"
-      },
-      "en": {
-        "title": "Defending AI agents against memory poisoning: implementing provenance-based security for trustworthy inference",
-        "summary": "The OWASP GenAI Security Project identifies 'Memory and Context Poisoning' (ASI06) as a critical risk where injected data compromises long-term agent reasoning rather than just a single prompt. Because malicious content stored in 'trusted' areas like memory hooks corrupts all future inferences, developers must move beyond simple input validation. The necessary defense involves strict provenance tracking—verifying the origin of every data point before it is committed to memory. Builders need to architect trust-based retrieval systems that treat external knowledge as untrusted until proven otherwise. By implementing provenance metadata at the ingestion layer, developers can ensure that only verifiable information influences an agent's persistent state, ultimately preventing systemic poisoning of complex, multi-step AI reasoning chains."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "研究"
-    ],
-    "created_at": "2026-11-26T03:47:10.298Z"
   },
   {
     "id": "art-1795664814325-ge0za",
@@ -13544,32 +13571,6 @@
       "開発"
     ],
     "created_at": "2026-11-25T11:07:17.067Z"
-  },
-  {
-    "id": "art-1795604610404-ih6zi",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/surdo/articles/ce67988931cf65",
-    "published_at": "2026-11-25T04:54:52.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--KUKTbvXv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Astro%2520%252B%2520%25E3%2583%2590%25E3%2583%258B%25E3%2583%25A9TS%25E3%2581%25A772%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%25BB30%25E8%25B6%2585%25E3%2581%25AE%25E8%25A8%2588%25E7%25AE%2597%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25EF%25BD%259C%25E3%2583%2588%25E3%2583%2583%25E3%2583%2597%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25AELighthouse%25204%25E9%25A0%2585%25E7%259B%25AE1...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:surdo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS3FnNTN4WTZyS3IxS1pfMENETGtfckNyVUF5bXNueDdNZ0MweG5zaWV0VV9HSjl3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AstroとTypeScriptで72ページ・30超の計算ツールを個人開発した戦略、Lighthouse全項目100点を達成する軽量構成の極意",
-    "summary_ja": "横浜向け地域情報サイトをAstroとTypeScriptで個人開発。 引越し費用試算や損益分岐など30以上の計算・診断ツールを実装し、計72ページで構成している。 Cloudflare Pages上でブラウザ標準のJSを組み合わせ、余計なライブラリを排除したことで、Lighthouseの4項目すべてで100点を記録した。 個人開発において、特化型ツールと高速なパフォーマンスを両立させることが、SEOとUXの双方で圧倒的な優位性を生む好例である。",
-    "translations": {
-      "ja": {
-        "title": "AstroとTypeScriptで72ページ・30超の計算ツールを個人開発した戦略、Lighthouse全項目100点を達成する軽量構成の極意",
-        "summary": "横浜向け地域情報サイトをAstroとTypeScriptで個人開発。 引越し費用試算や損益分岐など30以上の計算・診断ツールを実装し、計72ページで構成している。 Cloudflare Pages上でブラウザ標準のJSを組み合わせ、余計なライブラリを排除したことで、Lighthouseの4項目すべてで100点を記録した。 個人開発において、特化型ツールと高速なパフォーマンスを両立させることが、SEOとUXの双方で圧倒的な優位性を生む好例である。"
-      },
-      "en": {
-        "title": "Building a 72-page, 30-tool local guide with Astro and Vanilla TS that achieves perfect Lighthouse scores across all metrics",
-        "summary": "A solo developer built a comprehensive regional information site for Yokohama using Astro and TypeScript, featuring over 30 interactive calculation and diagnostic tools. The project manages 72 distinct pages without relying on heavy frameworks, opting instead for browser-native JavaScript deployed via Cloudflare Pages. This lightweight architectural approach allowed the site to hit a perfect 100 on all four Lighthouse metrics. The project demonstrates that for solo founders, combining highly specialized utility tools with extreme performance optimization provides a powerful competitive advantage in both search visibility and user experience. For developers, the lesson is clear: stripping away unnecessary dependencies remains the most reliable strategy to ensure both search engine rankings and rapid, accessible performance at scale."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-25T11:03:30.404Z"
   },
   {
     "id": "art-1795603633069-8ptag",
