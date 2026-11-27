@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795777332000-vmqmv",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/japancalc/articles/39cc00e51635f7",
+    "published_at": "2026-11-27T09:56:30.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FAbR5npy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2597%25A5%25E6%259C%25AC%25E3%2581%25AE%25E7%25A5%259D%25E6%2597%25A5%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E5%2586%2585%25E9%2596%25A3%25E5%25BA%259CCSV%25E3%2581%25A8%25E6%25AF%258E%25E5%259B%259E%25E7%2585%25A7%25E5%2590%2588%25E3%2581%2597%25E3%2581%25A6%25E3%2581%258B%25E3%2582%2589%25E5%2585%25AC%25E9%2596%258B%25E3%2581%2599%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25EF%25BC%2588%25E9%2583%25B5%25E4%25BE%25BF%25E6%2596%2599%25E9%2587%2591%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2582%25E3%2581%2582%25E3%2582%258A%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JapanCalc%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2M5NzVjNWZhNmIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発サイトのデータ陳腐化を防ぐ：内閣府祝日CSVと郵便料金を自動照合し最新データを公開するCIパイプラインの構築術",
+    "summary_ja": "計算ツールサイト「JapanCalc」を運営する開発者が、祝日データや郵便料金などの「時間経過で陳腐化するデータ」の誤りを防ぐ自動照合基盤を構築した。 内閣府の公式CSVや日本郵便の改定データと自サイトの数値を定期的にスクリプトで比較し、差異があればアラートを出しつつJSONを自動更新する仕組みだ。 手動更新のミスや確認漏れは信頼性に直結するため、外部データ依存のツール開発においては、こうしたデータソースとの機械的な整合性チェックが不可欠な防衛策となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発サイトのデータ陳腐化を防ぐ：内閣府祝日CSVと郵便料金を自動照合し最新データを公開するCIパイプラインの構築術",
+        "summary": "計算ツールサイト「JapanCalc」を運営する開発者が、祝日データや郵便料金などの「時間経過で陳腐化するデータ」の誤りを防ぐ自動照合基盤を構築した。 内閣府の公式CSVや日本郵便の改定データと自サイトの数値を定期的にスクリプトで比較し、差異があればアラートを出しつつJSONを自動更新する仕組みだ。 手動更新のミスや確認漏れは信頼性に直結するため、外部データ依存のツール開発においては、こうしたデータソースとの機械的な整合性チェックが不可欠な防衛策となる。"
+      },
+      "en": {
+        "title": "Building an automated data pipeline to sync JapanCalc with official government holiday and postal rate APIs",
+        "summary": "The maintainer of JapanCalc implemented an automated verification pipeline to solve data staleness in tools relying on external inputs like holiday calendars and postal fees. By cross-referencing site data against official Cabinet Office CSVs and Japan Post rate revisions via script, the system ensures accuracy and flags discrepancies before pushing fresh JSON updates. This architectural shift addresses common pitfalls where users lose trust due to outdated tax calculations or missing holiday definitions. For solo developers managing utility sites, this illustrates why mechanical validation of external data sources is critical; treating raw data as immutable once hardcoded is a recipe for silent, long-term failure that only rigorous automated syncs can prevent."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-27T11:02:12.000Z"
+  },
+  {
+    "id": "art-1795777325302-0ianf",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kurokawa_claude/n/ne2eaa684221c",
+    "published_at": "2026-11-27T10:45:12.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341476700/rectangle_large_type_2_3a08028943c3cf044f273ce7be4b8d35.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Claude Codeを活用した自動テスト：12件のケースを一括実行して結果をTSVで追跡する独自テスター構築法",
+    "summary_ja": "Claude Codeで修正した関数に対し、12件のテストケースを順次投入して実行結果（成功・失敗・未実行・データ不備）を記録する検証手法を解説する。 全ての実行履歴と判定理由はresults.tsvに集約され、修正前のコードや元のテストケースへ即座に遡れるため、開発サイクルのトレーサビリティが大幅に向上する。 単発の修正で満足せず、境界値テストを自動化してリグレッションを防ぐフローを構築することが、品質を担保する開発者の定石だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeを活用した自動テスト：12件のケースを一括実行して結果をTSVで追跡する独自テスター構築法",
+        "summary": "Claude Codeで修正した関数に対し、12件のテストケースを順次投入して実行結果（成功・失敗・未実行・データ不備）を記録する検証手法を解説する。 全ての実行履歴と判定理由はresults.tsvに集約され、修正前のコードや元のテストケースへ即座に遡れるため、開発サイクルのトレーサビリティが大幅に向上する。 単発の修正で満足せず、境界値テストを自動化してリグレッションを防ぐフローを構築することが、品質を担保する開発者の定石だ。"
+      },
+      "en": {
+        "title": "Building a custom Claude Code test runner to execute 12+ scenarios and track results in TSV format",
+        "summary": "This guide demonstrates a workflow using Claude Code to automate validation by passing twelve unique inputs to a single function, categorizing each result as success, failure, pending, or malformed data. By aggregating every execution status and the AI's reasoning into a structured results.tsv file, you establish full traceability back to both the original code and the source test case. This approach effectively prevents regression during iterative development by moving beyond one-off fixes. For builders, the takeaway is clear: automating boundary testing through repeatable, logged test runners is the most efficient way to maintain software reliability while moving fast. If you are refining code via LLM agents, you need a deterministic verification layer to prove your fixes actually work across diverse scenarios."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-27T11:02:05.302Z"
+  },
+  {
+    "id": "art-1795777317413-6i62i",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/KingHAL0/items/7d3d9929fd5e63b78c87",
+    "published_at": "2026-11-27T10:53:43.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0Mjg1MDc3JTJGN2ZiZDBjMTgzNjljMjcwZDNjZmExNGUzNTJkMDQwMDQxNjYxNjk1YSUyRnhfbGFyZ2UucG5nJTNGMTc2NDczMjkzMD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NGJmMTdjNDAxYzMzYTE3MjNiOThlZjk1NjFiM2EyYzQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D482d33548c76404715c29e45fef7e1a1?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU3JUI1JThDJUU4JUIyJUJCJUU3JThFJTg3JUUzJTgxJUFCJUU4JUJDJTg5JUUzJTgyJTg5JUUzJTgxJUFBJUUzJTgxJTg0JUUzJTgzJUFDJUUzJTgzJTkwJUUzJTgzJUFDJUUzJTgzJTgzJUUzJTgyJUI4RVRGJUUzJTgxJUFFJUUzJTgyJUIzJUUzJTgyJUI5JUUzJTgzJTg4JUVGJUJDJTlBU1NPJUUzJTgxJUFFMTIlRTUlQjklQjQlRTUlODglODYlRTMlODElQUUlRTMlODMlODclRTMlODMlQkMlRTMlODIlQkYlRTMlODElQTclRTMlODElQUYlRTMlODAlODElRTklODclOTElRTUlODglQTklRTMlODElOEMlRTklQUIlOTglRTMlODElODQlRTYlOTklODIlRTYlOUMlOUYlRTMlODElQUIlRTklODElODUlRTMlODIlOEMlRTMlODElOEMlRTUlQjklQjQ2LjUlMjUlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1mZTY4ZGEwOGIzZjZjY2Q4ZDExNmM4NmZmMzJiM2IxNg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBLaW5nSEFMMCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTkxMjU1MmZkNjZkYmUxNjdlM2Q5OGI2Yjc5MTEwOTQ5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4b689c043f867b272dd69e71d74c2440",
+    "title_ja": "レバレッジETF「SSO」の隠れたコスト：金利上昇局面で年6.5%の乖離が発生するメカニズムを12年分のデータで検証",
+    "summary_ja": "レバレッジETFの運用コストは経費率だけではない。 過去12年間のSSOのデータを分析した結果、金利が高い時期には、本来のパフォーマンスと実際の価格の間に年率最大6.5%もの「負の乖離」が生じていることが判明した。 これはボラティリティ・ドラッグだけでなく、調達金利が運用コストを押し上げているためだ。 長期のレバレッジ投資を検討する個人投資家や開発者は、目論見書の数字を鵜呑みにせず、金利環境の変化が「見えないコスト」として利益を大きく削ぐリスクをモデルに組み込む必要がある。",
+    "translations": {
+      "ja": {
+        "title": "レバレッジETF「SSO」の隠れたコスト：金利上昇局面で年6.5%の乖離が発生するメカニズムを12年分のデータで検証",
+        "summary": "レバレッジETFの運用コストは経費率だけではない。 過去12年間のSSOのデータを分析した結果、金利が高い時期には、本来のパフォーマンスと実際の価格の間に年率最大6.5%もの「負の乖離」が生じていることが判明した。 これはボラティリティ・ドラッグだけでなく、調達金利が運用コストを押し上げているためだ。 長期のレバレッジ投資を検討する個人投資家や開発者は、目論見書の数字を鵜呑みにせず、金利環境の変化が「見えないコスト」として利益を大きく削ぐリスクをモデルに組み込む必要がある。"
+      },
+      "en": {
+        "title": "The Hidden Costs of Leverage: Analyzing 12 Years of SSO Data Reveals a 6.5% Annual Performance Gap During High-Rate Environments",
+        "summary": "Beyond the advertised expense ratio, leveraged ETFs carry significant hidden costs that intensify in high-interest rate environments. An analysis of 12 years of SSO data reveals that during periods of elevated interest rates, the gap between the underlying benchmark and actual fund performance can widen to a staggering 6.5% annually. This drag is driven not just by volatility decay, but by the substantial interest expenses incurred to maintain leverage. For individual investors and quantitative builders modeling long-term strategies, this serves as a critical warning: do not rely solely on the stated expense ratio. You must mathematically account for shifting rate environments, as they create a persistent drag that erodes compound returns far more aggressively than typical fees suggest."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "コスト・API料金",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-27T11:01:57.413Z"
+  },
+  {
+    "id": "art-1795777310524-bx8i2",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://standardkernel.com/blog/intel-gaudi2-outperforms-h100/",
+    "published_at": "2026-11-27T10:58:56.000Z",
+    "og_image_url": null,
+    "title_ja": "Intel GaudiがNvidia H100を凌駕、AI最適化技術によるチップ性能最大化の裏側とベンチマーク結果",
+    "summary_ja": "Standard Kernelの研究者が、AI最適化技術を用いてIntel Gaudiチップの性能を極限まで引き出し、Nvidia H100を凌駕するパフォーマンスを達成した事例を公開した。 単なるハードウェアスペックの比較ではなく、コンパイラや最適化アルゴリズムによるソフトウェア側の改善が、既存のAIアクセラレータの限界を突破する鍵となることを証明した。",
+    "translations": {
+      "ja": {
+        "title": "Intel GaudiがNvidia H100を凌駕、AI最適化技術によるチップ性能最大化の裏側とベンチマーク結果",
+        "summary": "Standard Kernelの研究者が、AI最適化技術を用いてIntel Gaudiチップの性能を極限まで引き出し、Nvidia H100を凌駕するパフォーマンスを達成した事例を公開した。 単なるハードウェアスペックの比較ではなく、コンパイラや最適化アルゴリズムによるソフトウェア側の改善が、既存のAIアクセラレータの限界を突破する鍵となることを証明した。"
+      },
+      "en": {
+        "title": "Standard Kernel benchmarks prove AI-driven optimizations allow Intel Gaudi chips to outperform Nvidia H100 hardware",
+        "summary": "Researchers at Standard Kernel have demonstrated how sophisticated AI-driven optimization techniques can push Intel Gaudi chips to outperform Nvidia H100 accelerators in specific workload scenarios. By focusing on compiler-level improvements and algorithmic tuning rather than raw hardware specifications, the team successfully broke through existing performance barriers that traditionally favor Nvidia's ecosystem. This result challenges the narrative that hardware dominance is solely defined by silicon, highlighting instead that software-defined efficiency is the true lever for scaling modern AI inference. For developers and infrastructure engineers building on AI backends, the technical lesson here is that heavy investment in optimization layers and model-specific tuning can extract massive compute gains, effectively neutralizing the hardware advantage of competitors."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-27T11:01:50.524Z"
+  },
+  {
     "id": "art-1795776463846-p2zd7",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -6270,32 +6375,6 @@
     "created_at": "2026-11-26T18:47:29.343Z"
   },
   {
-    "id": "art-1795718838362-sgwb3",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/akarukulab/n/n52a4d1bfb58d",
-    "published_at": "2026-11-26T18:45:59.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341187046/rectangle_large_type_2_d343b75be810c16886c125dacea8cedd.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "「手取り額を瞬時に計算したい」— 源泉徴収税額計算アプリの個人開発と、ユーザーの課題解決のプロセス",
-    "summary_ja": "「源泉徴収の税額をすぐに知りたい」という個人的なニーズから開発された、手取り額計算ツールの開発事例。 複雑な税率計算ロジックをシンプルに実装し、ユーザーの「いくらになるのか」という不安を即座に解消するUXを追求した。 開発のきっかけとなった身近な課題をプロダクトへ昇華させるプロセスは、個人開発者がニッチな市場で信頼を獲得するための有効な戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "「手取り額を瞬時に計算したい」— 源泉徴収税額計算アプリの個人開発と、ユーザーの課題解決のプロセス",
-        "summary": "「源泉徴収の税額をすぐに知りたい」という個人的なニーズから開発された、手取り額計算ツールの開発事例。 複雑な税率計算ロジックをシンプルに実装し、ユーザーの「いくらになるのか」という不安を即座に解消するUXを追求した。 開発のきっかけとなった身近な課題をプロダクトへ昇華させるプロセスは、個人開発者がニッチな市場で信頼を獲得するための有効な戦略となる。"
-      },
-      "en": {
-        "title": "Building a simple tax calculator: How solving a personal pain point around withholding tax became a useful utility",
-        "summary": "Driven by the frustration of not knowing accurate take-home pay, this builder developed a specialized tool to instantly calculate withholding tax amounts. The project focuses on streamlining complex tax logic into a dead-simple interface that solves the specific anxiety of users asking, \"How much will this actually be? \" The process highlights how translating a personal problem into a clean, functional product serves as a powerful strategy for solo developers to build trust in niche markets. For builders, this serves as a reminder that the best products don't always need massive features, but rather a clear, immediate solution to a daily friction point that larger, bloated financial platforms often ignore."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-26T18:47:18.362Z"
-  },
-  {
     "id": "art-1795718822449-52gjq",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -8829,32 +8908,6 @@
     "created_at": "2026-11-26T11:02:44.840Z"
   },
   {
-    "id": "art-1795690913059-mmxh6",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Nao52/items/d058c43b52d3a115a240",
-    "published_at": "2026-11-26T11:00:02.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMjMyMTU5MiUyRnByb2ZpbGUtaW1hZ2VzJTJGMTYzODUxODA1MD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NmI3NjA3NDhlY2NkNjdmMGQ5YjQ5MWE0NDk4ZDMzZTI%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZhZmM0ZGJhZjAzNThlOGQwYjM0NmM4ZDc1ZWIwMzdiMjVmNjc4MDY5JTJGb3JpZ2luYWwuanBnJTNGMTYwNzc1NjU4OD9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz03NjRmYjE2ODMxYjQ2ZDU0NTgwMmI1MGMzYWMxODM2MQ%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dc954960b299982a7e8003c488dcbf5b2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTk3JUUzJTgzJUFDJUUzJTgyJUE0JUUzJTgzJUIzJUUzJTgyJUIwJUUzJTgzJTlFJUUzJTgzJThEJUUzJTgzJUJDJUUzJTgyJUI4JUUzJTgzJUEzJUUzJTgzJUJDJUUzJTgxJThCJUUzJTgyJTg5JUU2JThBJTlDJUUzJTgxJTkxJUU1JTg3JUJBJUUzJTgxJTlCJUUzJTgxJUFBJUUzJTgxJTg0JUU0JUJBJUJBJUUzJTgxJThDJUU4JUE2JThCJUU4JTkwJUJEJUUzJTgxJUE4JUUzJTgxJTk3JUUzJTgxJUE2JUUzJTgxJTg0JUUzJTgyJThCMyVFMyU4MSVBNCVFMyU4MSVBRSVFOCVBNiU5NiVFNyU4MiVCOSUyMCVFMiU4MCU5NSUyMCVFNiVBOCVBOSVFNSU4QSU5QiVFMyU4MiU5MiVFMyU4MCU4QyVFNSVBNCVBNyVFMyU4MSU4RCVFMyU4MSU4RiVFMyU4MCU4RCVFMyU4MSU5NyVFMyU4MCU4MSVFOCU4NSU5MCVFMyU4MiU4OSVFMyU4MSU5QiVFMyU4MSVBQSVFMiU4MCVBNiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTc5ZjBjM2ZjNDNhZmRiYmViMGRlY2I0MDRkODRkZTkx&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBOYW81MiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTc4NzU5Y2I3MTg3YTFlM2VhYWM5YjliYTkwMWUzZjFh&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-44K344Oz44K344Ki&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=9476d967f87d5137a20f55be4158437f",
-    "title_ja": "プレイングマネージャーから脱却し組織を動かす「権力」を手に入れるために不可欠な3つの戦略的転換",
-    "summary_ja": "プレイングマネージャーの立場から抜け出せない人が陥っている思考の罠を解消するため、部長以上の視座で組織を動かすための3つの転換点を提示する。 単なる実務処理能力から脱却し、意思決定の権限を移譲し、情報の非対称性を活用して「腐らない権力」を築く方法を解説。 個人の作業効率を追求するのではなく、他者を動かしレバレッジを効かせる仕組みを作ることが、真のマネジメント層へ昇格する絶対条件となる。",
-    "translations": {
-      "ja": {
-        "title": "プレイングマネージャーから脱却し組織を動かす「権力」を手に入れるために不可欠な3つの戦略的転換",
-        "summary": "プレイングマネージャーの立場から抜け出せない人が陥っている思考の罠を解消するため、部長以上の視座で組織を動かすための3つの転換点を提示する。 単なる実務処理能力から脱却し、意思決定の権限を移譲し、情報の非対称性を活用して「腐らない権力」を築く方法を解説。 個人の作業効率を追求するのではなく、他者を動かしレバレッジを効かせる仕組みを作ることが、真のマネジメント層へ昇格する絶対条件となる。"
-      },
-      "en": {
-        "title": "Three Strategic Shifts Every Playing Manager Must Master to Transcend Individual Tasks and Build Institutional Power",
-        "summary": "To break free from the perpetual playing manager trap and ascend to higher leadership, professionals must fundamentally shift their perspective on what constitutes power within an organization. This analysis breaks down three critical pivots: moving beyond individual task execution, mastering the art of delegating decision-making authority, and strategically leveraging information asymmetry to build sustainable, uncorrupted influence. Instead of optimizing for personal output efficiency, the goal is to design systems where your impact is amplified through others, effectively creating leverage. For ambitious builders and leads aiming for director-level roles, the takeaway is clear: you must stop being the primary producer and start becoming the architect of organizational motion, or you will remain permanently locked in a cycle of operational micromanagement."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-26T11:01:53.059Z"
-  },
-  {
     "id": "art-1795690905559-8rfd9",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -10770,32 +10823,6 @@
       "研究"
     ],
     "created_at": "2026-11-26T02:46:55.830Z"
-  },
-  {
-    "id": "art-1795660395072-cg3c4",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.rickmanelius.com/p/exhibit-a-with-ai-dont-skip-or-write",
-    "published_at": "2026-11-26T02:25:23.000Z",
-    "og_image_url": "https://substackcdn.com/image/fetch/$s_!vQk9!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffac05237-037e-41e0-99aa-16c89af2cdda_1456x1470.png",
-    "title_ja": "AIへのプロンプトで「スキップ」や「なし」を避けるべき理由と、明確な指示が回答精度を劇的に改善する仕組みを解説",
-    "summary_ja": "AIに対するプロンプトで「回答不要」や「なし」といった曖昧な入力を避けるべき理由を考察する。 プロンプトエンジニアリングにおいては、AIに明示的な制約や具体的な期待値を提示することで、ハルシネーションを抑制しつつ、出力の文脈や一貫性を大幅に向上させることが可能だ。 単なる指示の省略はモデル側の推論能力を低下させるリスクがあるため、常に明確なタスク定義を心掛けることが実用的なAI実装における鉄則となる。",
-    "translations": {
-      "ja": {
-        "title": "AIへのプロンプトで「スキップ」や「なし」を避けるべき理由と、明確な指示が回答精度を劇的に改善する仕組みを解説",
-        "summary": "AIに対するプロンプトで「回答不要」や「なし」といった曖昧な入力を避けるべき理由を考察する。 プロンプトエンジニアリングにおいては、AIに明示的な制約や具体的な期待値を提示することで、ハルシネーションを抑制しつつ、出力の文脈や一貫性を大幅に向上させることが可能だ。 単なる指示の省略はモデル側の推論能力を低下させるリスクがあるため、常に明確なタスク定義を心掛けることが実用的なAI実装における鉄則となる。"
-      },
-      "en": {
-        "title": "Why You Should Never Skip Prompts or Write 'None' when Working with LLMs for Better Precision",
-        "summary": "When interfacing with LLMs, inputting 'skip' or 'none' in response fields acts as a catalyst for degraded model performance and output unpredictability. This deep dive into prompt mechanics explains that explicit constraints and clearly defined task parameters are necessary to keep the model grounded, effectively minimizing hallucinations while sharpening contextual relevance. Simply omitting instructions forces the model into ambiguity, which often leads to generic or structurally weak responses. For builders and developers, the core takeaway is that prompt clarity is not just good documentation; it is a functional requirement for stability. Always provide concrete instructions for every potential variable in your prompt chain to maintain consistent output quality across complex application workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-26T02:33:15.072Z"
   },
   {
     "id": "art-1795660379228-yzlg3",
@@ -14185,32 +14212,6 @@
       "開発"
     ],
     "created_at": "2026-11-25T02:47:23.531Z"
-  },
-  {
-    "id": "art-1795574836856-grvjy",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/sunwood_ai_labs/articles/20261114-nekoneko-11-history-review-and-agents",
-    "published_at": "2026-11-24T15:11:32.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wJ5-sM01--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25A2%2597%25E3%2581%2588%25E3%2581%2599%25E3%2581%258E%25E3%2581%259F20%25E3%2582%25B9%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2589%25E3%2582%2592%25E6%25A3%259A%25E5%258D%25B8%25E3%2581%2597%25EF%25BC%2581%25E5%25A4%25B1%25E6%2595%2597%25E3%2582%2592%25E3%2580%258C%25E9%2581%258E%25E5%258E%25BB%25E3%2583%2588%25E3%2583%25A9%25E3%2580%258D%25E3%2581%25A8%25E3%2580%258CAGENTS.md%25E3%2580%258D%25E3%2581%25AB%25E5%2588%25BB%25E3%2582%2593%25E3%2581%25A7%25E6%25AC%25A1%25E3%2581%25AB%25E6%25B4%25BB%25E3%2581%258B%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Maki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDdpSmVyNldLVlpKLUd4N054QWVuSFVtYXQ3MUhhd1NXaU5hRG5FTnZiMXZZdHBIaGs9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI開発の「スレッド迷子」を脱却。過去の失敗を「過去トラ」と「AGENTS.md」へ集約し、再発防止を仕組み化する手法",
-    "summary_ja": "AIと3Dモデリングを繰り返すうちに増えすぎたチャットスレッドを整理し、過去の失敗事例を「過去トラ」としてドキュメント化する手法を紹介。 さらに、教訓をAIの行動規範ファイルである「AGENTS.md」に再発防止ルールとして明文化・統合することで、同じ過ちを繰り返さない仕組みを構築した。 開発を一時停止して過去の経緯を棚卸しすることは、AIエージェントの品質と開発効率を長期的に維持するために不可欠なプロセスである。",
-    "translations": {
-      "ja": {
-        "title": "AI開発の「スレッド迷子」を脱却。過去の失敗を「過去トラ」と「AGENTS.md」へ集約し、再発防止を仕組み化する手法",
-        "summary": "AIと3Dモデリングを繰り返すうちに増えすぎたチャットスレッドを整理し、過去の失敗事例を「過去トラ」としてドキュメント化する手法を紹介。 さらに、教訓をAIの行動規範ファイルである「AGENTS.md」に再発防止ルールとして明文化・統合することで、同じ過ちを繰り返さない仕組みを構築した。 開発を一時停止して過去の経緯を棚卸しすることは、AIエージェントの品質と開発効率を長期的に維持するために不可欠なプロセスである。"
-      },
-      "en": {
-        "title": "Escaping 'Thread Hell' in AI Development: How to Aggregate Past Failures into 'AGENTS.md' to Systematize Error Prevention",
-        "summary": "As AI-assisted 3D modeling generates an overwhelming number of chat threads, developers often struggle to recall prior troubleshooting steps. This article details a workflow for auditing these histories by documenting failure cases into a 'Past Troubleshooting' (Kako-tora) record, and subsequently integrating these lessons into an 'AGENTS.md' file. By codifying these insights directly into the AI's operational guidelines, the author creates a sustainable mechanism for preventing recurring errors. Taking the time to pause active development and reconcile past chat data is a critical maintenance step for anyone building with AI agents. It ensures that the knowledge gained from mistakes translates into permanent behavioral improvements for the agent, rather than being lost in a siloed conversation history."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-25T02:47:16.856Z"
   },
   {
     "id": "art-1795574829966-6i4vy",
