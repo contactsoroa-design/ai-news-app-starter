@@ -1,5 +1,116 @@
 [
   {
+    "id": "art-1795762943326-e3e8o",
+    "source_id": "source-heygen-ugc",
+    "source_name": "HeyGen API Changelog",
+    "url": "https://developers.heygen.com/docs/changelog#brand-glossary-ipa-on-all-accounts",
+    "published_at": "2026-11-27T06:55:28.000Z",
+    "og_image_url": "https://heygen-1fa696a7.mintlify.site/_mintlify/api/og/v2?division=Documentation&title=Changelog&description=Track+every+HeyGen+API+change%2C+new+endpoint%2C+deprecation%2C+and+version+bump+in+the+API+changelog.+Subscribe+via+RSS+or+webhook+to+get+notified+on+the+next.&theme=806bfcae4fd50c26d3779ac8&signature=23dfe21e43cae89bcca8dc530d8a9e74ea69f4096f0921ac7351dc1e06634c1a",
+    "title_ja": "HeyGen APIがアップデート、ブランド用語集のIPA発音指定が全アカウントで標準利用可能に",
+    "summary_ja": "HeyGenはAPIアップデートにより、ブランド用語集におけるIPA（国際音声記号）ベースの発音指定機能を全アカウントで利用可能とした。 これまでは個別設定が必要だったが、POST/PATCHのエンドポイントでIPAパラメータを直接指定できるようになり、専門用語やブランド名の読み上げ精度をコードベースで一括管理できるようになった。 正確な発音が求められる音声合成アプリケーションを開発する際、設定の手間を省きつつ、ブランド一貫性を担保する設計が容易になる。",
+    "translations": {
+      "ja": {
+        "title": "HeyGen APIがアップデート、ブランド用語集のIPA発音指定が全アカウントで標準利用可能に",
+        "summary": "HeyGenはAPIアップデートにより、ブランド用語集におけるIPA（国際音声記号）ベースの発音指定機能を全アカウントで利用可能とした。 これまでは個別設定が必要だったが、POST/PATCHのエンドポイントでIPAパラメータを直接指定できるようになり、専門用語やブランド名の読み上げ精度をコードベースで一括管理できるようになった。 正確な発音が求められる音声合成アプリケーションを開発する際、設定の手間を省きつつ、ブランド一貫性を担保する設計が容易になる。"
+      },
+      "en": {
+        "title": "HeyGen enables IPA pronunciation across all brand glossary API endpoints, removing manual configuration requirements",
+        "summary": "HeyGen has updated its API to enable IPA (International Phonetic Alphabet) pronunciation support for brand glossaries across all user accounts by default. Previously requiring manual per-account enablement, the /v3/brand-glossaries POST and PATCH endpoints now natively accept IPA inputs, while the GET endpoint returns them seamlessly. This change allows developers to programmatically control pronunciation accuracy for complex brand names and specialized terminology without wrestling with configuration toggles. For builders integrating HeyGen’s text-to-speech engine, this simplifies the pipeline for maintaining consistent brand voice across diverse global locales, ensuring that nuanced pronunciation rules are strictly enforced through code rather than dashboard settings, ultimately resulting in higher-quality, more reliable synthetic speech generation for production applications."
+      }
+    },
+    "tool_tags": [
+      "HeyGen"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "音声"
+    ],
+    "created_at": "2026-11-27T07:02:23.326Z"
+  },
+  {
+    "id": "art-1795762936433-z8f6c",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/marcushayden/items/e0671a68d0af80ae87c3",
+    "published_at": "2026-11-27T07:01:32.000Z",
+    "og_image_url": null,
+    "title_ja": "AI動画生成のクオリティを左右する真の要因――プロンプトよりも「入力の型」と「尺」の最適化が重要である理由",
+    "summary_ja": "AI動画生成において、プロンプトの細かな調整よりも「テキスト・画像・始終点」といった入力の型と、生成する動画の尺（長さ）の制御が出力品質に決定的な影響を与える。 特に動画の質感や一貫性を保つには、適切な入力形式の選択が不可欠だ。 開発者は単なる言葉選びに時間を費やすより、これら生成のパラメーター設計とフローの理解に注力することで、実用的な動画アセットを効率よく生成できる。",
+    "translations": {
+      "ja": {
+        "title": "AI動画生成のクオリティを左右する真の要因――プロンプトよりも「入力の型」と「尺」の最適化が重要である理由",
+        "summary": "AI動画生成において、プロンプトの細かな調整よりも「テキスト・画像・始終点」といった入力の型と、生成する動画の尺（長さ）の制御が出力品質に決定的な影響を与える。 特に動画の質感や一貫性を保つには、適切な入力形式の選択が不可欠だ。 開発者は単なる言葉選びに時間を費やすより、これら生成のパラメーター設計とフローの理解に注力することで、実用的な動画アセットを効率よく生成できる。"
+      },
+      "en": {
+        "title": "Why input modality and clip duration matter more than prompting for high-quality AI video generation results",
+        "summary": "When crafting AI-generated video, iterating on input modalities and clip duration often yields more predictable results than fine-tuning complex text prompts. Mastering the nuances between text-to-video, image-to-video, and start-to-end frame composition is crucial for maintaining consistent aesthetics, lighting, and aspect ratios. Developers and creators should prioritize mastering these structural constraints over exhaustive prompt engineering, as the architecture of the input dictates the underlying video logic more effectively. By focusing on parameter design and understanding how different formats influence model behavior, builders can generate production-ready assets with significantly less trial and error, ultimately creating more reliable workflows for AI-integrated creative projects that require precise visual control."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "動画"
+    ],
+    "created_at": "2026-11-27T07:02:16.433Z"
+  },
+  {
+    "id": "art-1795762929919-drxp3",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/clean_honest5714/n/n9dc069f80d89",
+    "published_at": "2026-11-27T07:01:44.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341391186/rectangle_large_type_2_033b59fe8b8867c49c6477f8ec5dbfee.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発者Halo氏が「ShokaNode.」を始動、AI・Webアプリのオーダーメイド受託開発事業を正式に開始",
+    "summary_ja": "個人開発やAI技術の発信で知られるHalo氏が、新たに受託開発サービス「ShokaNode.」を立ち上げ、AI活用やWebアプリケーションのオーダーメイド開発の受注を開始した。 自ら個人開発プロダクトを運用してきた知見を活かし、構想段階からの技術選定やプロトタイプ開発を支援する。 個人の開発リソース不足を補い、迅速なサービス実装を目指す創業者や小規模チームにとって、技術とプロダクトの両面で相談できる強力なパートナーとなるだろう。",
+    "translations": {
+      "ja": {
+        "title": "個人開発者Halo氏が「ShokaNode.」を始動、AI・Webアプリのオーダーメイド受託開発事業を正式に開始",
+        "summary": "個人開発やAI技術の発信で知られるHalo氏が、新たに受託開発サービス「ShokaNode.」を立ち上げ、AI活用やWebアプリケーションのオーダーメイド開発の受注を開始した。 自ら個人開発プロダクトを運用してきた知見を活かし、構想段階からの技術選定やプロトタイプ開発を支援する。 個人の開発リソース不足を補い、迅速なサービス実装を目指す創業者や小規模チームにとって、技術とプロダクトの両面で相談できる強力なパートナーとなるだろう。"
+      },
+      "en": {
+        "title": "Indie developer Halo launches ShokaNode, a new custom development studio for AI and Web applications",
+        "summary": "Indie developer and creator Halo has officially launched ShokaNode, a new service focused on bespoke development for AI-powered projects and custom web applications. Drawing on his own deep experience in shipping and operating indie products, the studio provides hands-on technical guidance, ranging from early architectural decisions to rapid prototyping and full-stack implementation. By leveraging his background as a builder, Halo aims to help founders and small teams bridge their development resource gaps and accelerate their time-to-market. For creators struggling to turn concepts into shippable software, this consultancy offers a strategic partnership that combines technical proficiency with a clear, product-first mindset for building scalable AI solutions from the ground up."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-27T07:02:09.919Z"
+  },
+  {
+    "id": "art-1795762918225-v1g7b",
+    "source_id": "source-heygen-ugc",
+    "source_name": "HeyGen API Changelog",
+    "url": "https://developers.heygen.com/docs/changelog#public-voice-list-locale-tags-and-languages",
+    "published_at": "2026-11-27T06:55:28.000Z",
+    "og_image_url": "https://heygen-1fa696a7.mintlify.site/_mintlify/api/og/v2?division=Documentation&title=Changelog&description=Track+every+HeyGen+API+change%2C+new+endpoint%2C+deprecation%2C+and+version+bump+in+the+API+changelog.+Subscribe+via+RSS+or+webhook+to+get+notified+on+the+next.&theme=806bfcae4fd50c26d3779ac8&signature=23dfe21e43cae89bcca8dc530d8a9e74ea69f4096f0921ac7351dc1e06634c1a",
+    "title_ja": "HeyGen APIがアップデート：音声モデル検索機能が強化、ロケール・タグ・言語指定による柔軟なフィルタリングを実現",
+    "summary_ja": "HeyGen APIの更新により、公開音声モデルの取得時にロケール、タグ、言語コードを指定した高度なフィルタリングが可能になった。 「GET /v3/models/audio/voices」エンドポイントでパラメータを組み合わせることで、特定の雰囲気や属性を持つ音声を精密に絞り込める。 また、対応する言語リストを取得する新エンドポイントも追加された。 開発者は、これらを用いることでユーザーの地域や好みに最適化した音声選択UIをAPI経由で動的に実装できるようになる。",
+    "translations": {
+      "ja": {
+        "title": "HeyGen APIがアップデート：音声モデル検索機能が強化、ロケール・タグ・言語指定による柔軟なフィルタリングを実現",
+        "summary": "HeyGen APIの更新により、公開音声モデルの取得時にロケール、タグ、言語コードを指定した高度なフィルタリングが可能になった。 「GET /v3/models/audio/voices」エンドポイントでパラメータを組み合わせることで、特定の雰囲気や属性を持つ音声を精密に絞り込める。 また、対応する言語リストを取得する新エンドポイントも追加された。 開発者は、これらを用いることでユーザーの地域や好みに最適化した音声選択UIをAPI経由で動的に実装できるようになる。"
+      },
+      "en": {
+        "title": "HeyGen API updates public voice retrieval with granular filtering for locale, tags, and language parameters",
+        "summary": "HeyGen has updated its public voice API, allowing developers to query available audio models using specific locale, language, and tag filters through the GET /v3/models/audio/voices endpoint. By appending parameters like locale (e.g., es-MX) and comma-separated tags (e.g., 'Calm,Deep'), applications can now precision-target specific voice characteristics for their users. A new dedicated endpoint, GET /v3/models/audio/voices/languages, provides a reference for all supported filters, ensuring developers stay synced with the available library. For builders integrating AI video or audio, this update simplifies the task of dynamic voice selection, making it significantly easier to create localized, high-quality user experiences without hardcoding available model IDs into the frontend. It is a critical improvement for managing voice assets at scale."
+      }
+    },
+    "tool_tags": [
+      "HeyGen"
+    ],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "音声"
+    ],
+    "created_at": "2026-11-27T07:01:58.225Z"
+  },
+  {
     "id": "art-1795762081347-2xfse",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -7134,58 +7245,6 @@
     "created_at": "2026-11-26T12:32:11.352Z"
   },
   {
-    "id": "art-1795696323537-rede6",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/aoyamatakuto_lab/n/nb3cb11cb009c",
-    "published_at": "2026-11-26T12:31:36.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341097853/rectangle_large_type_2_235d9f9001b8ccae8de8757827f6465c.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "Claude Codeの利用制限を回避する最適解：ムダな消費と手戻りを劇的に減らす「4つの外部ツール」活用術",
-    "summary_ja": "Claude Codeでのアプリ開発中に頻発する利用制限に対し、APIのムダ使いや不要なやり直しを抑えるための外部ツール4選を紹介する。 コード生成の質を高めて試行回数を減らすだけでなく、文脈管理やタスク分解を外部化することで、Claudeの限られたリソースを賢く運用できる。 開発のボトルネックを解消し、止まらない開発環境を構築する具体的な知恵だ。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの利用制限を回避する最適解：ムダな消費と手戻りを劇的に減らす「4つの外部ツール」活用術",
-        "summary": "Claude Codeでのアプリ開発中に頻発する利用制限に対し、APIのムダ使いや不要なやり直しを抑えるための外部ツール4選を紹介する。 コード生成の質を高めて試行回数を減らすだけでなく、文脈管理やタスク分解を外部化することで、Claudeの限られたリソースを賢く運用できる。 開発のボトルネックを解消し、止まらない開発環境を構築する具体的な知恵だ。"
-      },
-      "en": {
-        "title": "4 External Tools to Bypass Claude Code Usage Limits and Drastically Reduce Token Waste and Redundant Reruns",
-        "summary": "If you are hitting strict usage limits while building applications with Claude Code, you are likely burning through tokens on redundant prompts and unnecessary task iterations. This guide highlights four specific external tools that optimize your development workflow to preserve Claude's precious context window and minimize wasteful request cycles. By offloading task decomposition, better code context management, and pre-processing to these external utilities, you can maintain development momentum without constantly being throttled by usage caps. For individual developers, this isn't just about saving money; it is about architectural discipline. Integrating these tools helps keep your project logic concise, ensuring that every API request actually advances your product instead of merely repeating previous errors or context-heavy debugging."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-26T12:32:03.537Z"
-  },
-  {
-    "id": "art-1795695454216-iukcc",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/hueliang_/n/n6b338b9da5e3",
-    "published_at": "2026-11-26T12:16:23.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341092178/rectangle_large_type_2_1d5baf7f5cbf41d33ad34ed9fcf49fa1.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "ChatGPTでのソフトウェア開発を効率化する「カスタム指示」活用術：粒度を調整して実装の即時性を高めるテクニック",
-    "summary_ja": "ChatGPTを活用した開発プロセスで、生成される工程が細かすぎたり実装に時間がかかったりする課題に対する解決策は、カスタム指示によるスタイルの定義だ。 AIの「開発スタイル」を具体的に定義することで、冗長なステップを省き、即時性の高いコード出力を得ることが可能になる。 漫然と依頼するのではなく、自身のコーディング流儀をAIに事前学習させることで、AIを「単なるコード生成機」から「文脈を理解した相棒」へと進化させられる。",
-    "translations": {
-      "ja": {
-        "title": "ChatGPTでのソフトウェア開発を効率化する「カスタム指示」活用術：粒度を調整して実装の即時性を高めるテクニック",
-        "summary": "ChatGPTを活用した開発プロセスで、生成される工程が細かすぎたり実装に時間がかかったりする課題に対する解決策は、カスタム指示によるスタイルの定義だ。 AIの「開発スタイル」を具体的に定義することで、冗長なステップを省き、即時性の高いコード出力を得ることが可能になる。 漫然と依頼するのではなく、自身のコーディング流儀をAIに事前学習させることで、AIを「単なるコード生成機」から「文脈を理解した相棒」へと進化させられる。"
-      },
-      "en": {
-        "title": "Optimizing AI-Powered Development: How Custom Instructions Transform ChatGPT into a Streamlined Coding Partner with Your Personal Workflow",
-        "summary": "When using ChatGPT as a development partner, you may encounter friction if the AI breaks down tasks into overly granular, time-consuming steps. The solution is to aggressively leverage Custom Instructions to pre-define your preferred development style, effectively training the model to match your specific coding rhythm. By encoding your architectural preferences and required output structure directly into the instruction set, you can bypass redundant explanations and force the model to provide immediate, implementation-ready code. Instead of treating the LLM as a generic assistant, customizing your prompt context converts the AI from a verbose explainer into a highly efficient, contextual coding companion, ultimately reducing the overhead between task conceptualization and functional software deployment."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-26T12:17:34.216Z"
-  },
-  {
     "id": "art-1795695443584-86dij",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -8862,32 +8921,6 @@
     "created_at": "2026-11-26T06:33:08.022Z"
   },
   {
-    "id": "art-1795674733284-wd39l",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/bf16ai/items/179d8bbad7ff1b2ca410",
-    "published_at": "2026-11-26T06:31:15.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY3OGFjZWU4YTdmN2Q4MDQyNWUwZTgxOTU2ZjkyMjg2ZT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YmI3NzQwYWRiZTRhMWI3YTM0Yjg5ZmQ4MTljMmE1MDE%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D8bd92b45b019d7a8463ae86adeecc3e8?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9RGVlcFNlZWslMjBWNC4xJTIwRmxhc2glMjBVbmNlbnNvcmVkJUVGJUJDJTg4MTAxNyVFNyU4OSU4OCVFRiVCQyU4OSVFRiVCQyU5QTFNJUUzJTgyJUIzJUUzJTgzJUIzJUUzJTgzJTg2JUUzJTgyJUFEJUUzJTgyJUI5JUUzJTgzJTg4JUVGJUJDJTg2JUUzJTgyJUFEJUUzJTgzJUEzJUUzJTgzJTgzJUUzJTgyJUI3JUUzJTgzJUE1JUU1JUFGJUJFJUU1JUJGJTlDQVBJJUUzJTgxJUE3JUUzJTgyJUIzJUUzJTgzJUJDJUUzJTgzJTg3JUUzJTgyJUEzJUUzJTgzJUIzJUUzJTgyJUIwJUUyJTgwJUE2JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9MTNiNDdkODhjMjRlNmI1MTBjNTFkM2ZiNTQ3ZWI2Yjc&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBiZjE2YWkmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NGFlNDE0NDkyYzU2NmFmNDU2YzBhOWEyZDY1YTBmYg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=4f36133837f392e6ba8075c02498caaa",
-    "title_ja": "DeepSeek V4.1 Flash Uncensored (1017版)公開：1Mコンテキストとキャッシュ最適化APIでコーディングAgent開発を加速",
-    "summary_ja": "bf16.aiがリリースした「DeepSeek V4.1 Flash Uncensored (1017版)」は、100万トークンのコンテキストウィンドウとキャッシュ対応APIを備え、コーディングAgentの構築に最適化されたモデルだ。 用途別に最適化された2レーン構成を採用し、対話型IDEやCLIツールでの低遅延レスポンスを実現する。",
-    "translations": {
-      "ja": {
-        "title": "DeepSeek V4.1 Flash Uncensored (1017版)公開：1Mコンテキストとキャッシュ最適化APIでコーディングAgent開発を加速",
-        "summary": "bf16.aiがリリースした「DeepSeek V4.1 Flash Uncensored (1017版)」は、100万トークンのコンテキストウィンドウとキャッシュ対応APIを備え、コーディングAgentの構築に最適化されたモデルだ。 用途別に最適化された2レーン構成を採用し、対話型IDEやCLIツールでの低遅延レスポンスを実現する。"
-      },
-      "en": {
-        "title": "DeepSeek V4.1 Flash Uncensored 1017 Update: 1M Context and Cache-Compatible API for Coding Agent Development",
-        "summary": "The newly released DeepSeek V4.1 Flash Uncensored (1017 version) by bf16.ai introduces a 1M token context window and cache-compatible APIs specifically engineered for high-performance coding agents. By utilizing a two-lane architecture optimized for different workloads, it enables low-latency responses for IDE integrations and CLI tools. Developers can seamlessly integrate this model using the official CLI, gaining the ability to process massive codebases while effectively managing inference costs through the updated caching mechanism. This release is a strategic move for builders aiming to balance the performance demands of long-context reasoning with the practical realities of managing large-scale, automated development workflows in production environments without hitting rate or cost bottlenecks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-26T06:32:13.284Z"
-  },
-  {
     "id": "art-1795674722710-wopgb",
     "source_id": "source-arxiv",
     "source_name": "arXiv (cs.AI / cs.CL)",
@@ -8990,33 +9023,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-26T06:17:26.250Z"
-  },
-  {
-    "id": "art-1795672924712-ce4st",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/zengdafa666/items/fbd2ef5b455f8c6f8f52",
-    "published_at": "2026-11-25T13:13:56.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmxoMy5nb29nbGV1c2VyY29udGVudC5jb20lMkZhJTJGQUNnOG9jSXkyYlpSOUVyQkF6X0drRmlFQUxRZkVfWUJuODJiUW1xMlg5Y2lJYWxoOHV4SHl3JTNEczk2LWM_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTYxNjRiMTY5NGFhMWZmYzRlNjc1ZmEzN2UxNDM5Y2Uz%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D2db898db0e5b0d05e12fc48d0d656c3b?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JTg2JTk5JUU3JTlDJTlGMSVFMyU4MCU5QzIlRTYlOUUlOUElRTMlODElOEIlRTMlODIlODkzRCVFMyU4MyU5NyVFMyU4MyVBQSVFMyU4MyVCMyVFMyU4MyU4OCVFNSVBRiVCRSVFNSVCRiU5Q1NUTCVFMyU4MyVCQkdMQiVFMyU4MSVBODJLJUUzJTgyJUEyJUUzJTgzJUJDJUUzJTgzJTg4JUUzJTgyJTkyJUU3JTk0JTlGJUU2JTg4JTkwJUUzJTgxJTk5JUUzJTgyJThCJUUzJTgzJTkxJUUzJTgyJUE0JUUzJTgzJTk3JUUzJTgzJUE5JUUzJTgyJUE0JUUzJTgzJUIzJUU4JUE4JUFEJUU4JUE4JTg4JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NDIxZGUwZDY1ZmU5M2Q2Mjc4ZDI3NmE0ZWFlMmVkYjE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB6ZW5nZGFmYTY2NiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTRlMDU0NDg0MWVkMTY4MGM3ODZmMzk2ZTJmNzc0Y2E5&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=d75be33e92e3237cd477c9a523f940b0",
-    "title_ja": "写真1〜2枚から3Dモデルと2Kアートを自動生成する技術パイプライン―権利リスク回避と高精度顔認識の両立",
-    "summary_ja": "わずか1〜2枚の写真から3Dプリント対応のSTL/GLB形式と2Kアートを生成する独自のパイプライン設計が公開された。 従来のチャット型AIではポートレート入力時に約38%の確率で権利ブロックが発生し、顔の再現性も55%を下回る課題があったが、本手法は権利クリアランスを考慮した生成プロセスを構築し、Blender等の環境へ直接インポート可能な出力を実現している。",
-    "translations": {
-      "ja": {
-        "title": "写真1〜2枚から3Dモデルと2Kアートを自動生成する技術パイプライン―権利リスク回避と高精度顔認識の両立",
-        "summary": "わずか1〜2枚の写真から3Dプリント対応のSTL/GLB形式と2Kアートを生成する独自のパイプライン設計が公開された。 従来のチャット型AIではポートレート入力時に約38%の確率で権利ブロックが発生し、顔の再現性も55%を下回る課題があったが、本手法は権利クリアランスを考慮した生成プロセスを構築し、Blender等の環境へ直接インポート可能な出力を実現している。"
-      },
-      "en": {
-        "title": "Building a Pipeline to Generate 3D-Printable STL/GLB Models and 2K Art from Just Two Photos",
-        "summary": "A new technical pipeline has emerged that converts one or two source photographs into 3D-printable STL/GLB models and 2K artwork, bypassing the significant limitations of standard chat-based AI. Historically, using generative models for portraits resulted in a 38% failure rate due to copyright filters and less than 55% facial fidelity, while remaining strictly confined to 2D output. By restructuring the generation workflow to handle face feature retention and copyright compliance externally, this method enables seamless imports into professional tools like Blender. For individual developers and builders, this framework provides a viable pathway to transform flat AI assets into physical, production-ready prototypes, effectively solving the bridge between image generation and 3D modeling workflows without triggering restrictive content moderation blocks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "画像生成"
-    ],
-    "created_at": "2026-11-26T06:02:04.712Z"
   },
   {
     "id": "art-1795672906116-2nxdl",
