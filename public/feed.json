@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795739571203-wdedi",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/leonvarga/articles/de6633d7c3ffbf",
+    "published_at": "2026-11-26T23:44:30.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--u-1QzUpq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25BF%25E3%2583%2583%25E3%2583%2597%25E3%2581%2597%25E3%2581%259F%25E5%258D%2598%25E8%25AA%259E%25E3%2582%2592%25E3%2580%258C%25E3%2581%259D%25E3%2581%25AE%25E6%2596%2587%25E3%2581%25AE%25E4%25B8%25AD%25E3%2581%25A7%25E3%2581%25AE%25E6%2584%258F%25E5%2591%25B3%25E3%2580%258D%25E3%2581%25A7%25E8%25AA%25AC%25E6%2598%258E%25E3%2581%2599%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2582%2592%2520Flutter%2520%252B%2520Go%2520%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Leon%2520Varga%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUFwbW9KbEFaMHZUUFoxLTR2UlozNVQ1a3JkREhCWWZKR0V5Y0NEOFlNaEpzUFd3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "FlutterとGoで実装する語学読書アプリ、タップした単語を文脈依存で解説するAI辞書機能の設計と実装プロセス",
+    "summary_ja": "個人開発の語学アプリにて、単語タップ時に辞書的な定義ではなく文脈上の意味を生成・表示する機能を実装した。 クライアント（Flutter）で文と単語を分割し、Go（Fiber）で言語モデルを呼び出す構成を採用。 特定のモデルに依存せず文脈抽出を行うことで、汎用的な語彙学習体験を提供できる。 言語モデルを活用した機能実装において、クライアント側でテキスト処理を完結させ、サーバーへ送るデータを最適化する設計指針が重要となる。",
+    "translations": {
+      "ja": {
+        "title": "FlutterとGoで実装する語学読書アプリ、タップした単語を文脈依存で解説するAI辞書機能の設計と実装プロセス",
+        "summary": "個人開発の語学アプリにて、単語タップ時に辞書的な定義ではなく文脈上の意味を生成・表示する機能を実装した。 クライアント（Flutter）で文と単語を分割し、Go（Fiber）で言語モデルを呼び出す構成を採用。 特定のモデルに依存せず文脈抽出を行うことで、汎用的な語彙学習体験を提供できる。 言語モデルを活用した機能実装において、クライアント側でテキスト処理を完結させ、サーバーへ送るデータを最適化する設計指針が重要となる。"
+      },
+      "en": {
+        "title": "Building a context-aware AI dictionary feature in Flutter and Go for language learning apps",
+        "summary": "A solo developer built a language learning feature that explains a tapped word's meaning based on its specific sentence context, rather than providing static dictionary definitions. The implementation uses a Flutter client to segment text by sentence and word, while the Go (Fiber) backend handles LLM generation. This approach avoids vendor lock-in and ensures explanations are tailored to the user's specific reading context. By offloading text segmentation to the client side, the developer ensures the server receives only the necessary data for context inference. The architecture demonstrates how to integrate LLMs into niche productivity tools efficiently, proving that pre-processing inputs on the client can significantly simplify backend logic while delivering a superior, personalized learning experience for app users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-27T00:32:51.203Z"
+  },
+  {
+    "id": "art-1795739565123-oikw2",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://mit-han-lab.github.io/qda-blog/",
+    "published_at": "2026-11-27T00:09:05.000Z",
+    "og_image_url": "https://mit-han-lab.github.io/qda-blog/assets/qda-demo-poster.jpg",
+    "title_ja": "MIT Han Lab、LLMの量子化最適化を自動化するエージェント手法「QDA」発表。手動チューニング不要で高精度を維持",
+    "summary_ja": "MIT Han Labが発表した「QDA（Quantization Design with Agents）」は、エージェントがループを回してLLMの量子化プロセスを自動設計する手法である。 従来の量子化手法は専門家の手動調整に依存していたが、QDAは検索・評価・修正の反復プロセスを自律実行し、モデルの性能劣化を最小限に抑えつつ高圧縮を実現する。",
+    "translations": {
+      "ja": {
+        "title": "MIT Han Lab、LLMの量子化最適化を自動化するエージェント手法「QDA」発表。手動チューニング不要で高精度を維持",
+        "summary": "MIT Han Labが発表した「QDA（Quantization Design with Agents）」は、エージェントがループを回してLLMの量子化プロセスを自動設計する手法である。 従来の量子化手法は専門家の手動調整に依存していたが、QDAは検索・評価・修正の反復プロセスを自律実行し、モデルの性能劣化を最小限に抑えつつ高圧縮を実現する。"
+      },
+      "en": {
+        "title": "MIT Han Lab introduces QDA, an agent-based framework that automates LLM quantization design without expert manual tuning",
+        "summary": "MIT Han Lab has unveiled QDA (Quantization Design with Agents), a novel framework that uses autonomous agents to iteratively optimize LLM quantization, effectively replacing the labor-intensive trial-and-error approach previously required. By treating the quantization process as a closed-loop search problem, QDA autonomously selects optimal bit-widths and grouping strategies while evaluating performance impacts in real-time, successfully minimizing model accuracy degradation during compression. As developers scramble to slash high inference costs and fit large models onto restricted hardware, this agent-driven paradigm shifts quantization from a bespoke, expert-heavy engineering task to a scalable, automated pipeline. For teams deploying large models, QDA represents a vital shift toward production-ready optimization that keeps performance high without sacrificing precious compute cycles."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-27T00:32:45.123Z"
+  },
+  {
+    "id": "art-1795739558936-criuj",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/boraemon2000/items/cb81ee5ba469de2ffcd8",
+    "published_at": "2026-11-27T00:27:17.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzMTMxMDc5JTJGOGMwZTVhODE4NGQ2YjA3NWIzMmQzZjliODI1ZmMzMTFhMDdlMjIwMiUyRnhfbGFyZ2UucG5nJTNGMTc4ODU5NjQ5Mz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MmIyNTkyZGUwNGY4MzE5ZGYwODFjZWUwZTU0N2FiZTc%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D0a7a4f6750c0e3b6c8537dde0beb3fef?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU3JTk0JUJCJUU1JTgzJThGJUUzJTgxJUFGNCVFNiU5RSU5QSVFMyU4MSVBQSVFMyU4MSVBRSVFMyU4MSVBQjUlRTQlQkIlQjYlRTglQTYlOEIlRTMlODElQTQlRTMlODElOEIlRTMlODElQTMlRTMlODElOUYlRTMlODAlODIlRTUlODUlQUMlRTklOTYlOEIlRTUlODklOEQlRTMlODMlODElRTMlODIlQTclRTMlODMlODMlRTMlODIlQUYlRTMlODElOENNYXJrZG93biVFMyU4MSVBRSVFNiU5QiVCOCVFMyU4MSU4RCVFNiU5NiVCOSVFMyU4MSVBRSVFNCVCRSU4QiVFMyU4MiU5MiVFNiU4QiVCRSVFMyU4MSVBMyVFMyU4MSU5RiVFOCVBOSVCMSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWQ5OWIxNGU2MzdmOWU5MDgxN2RjMDJlNGY1NDJmNWEy&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBib3JhZW1vbjIwMDAmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz01ZDMzMzJkZTE5MTkwZDJiNjJhMThhZGZmOGE5Yjc4OQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=845c52af80754d13ed6b1afb66447b7d",
+    "title_ja": "Qiita投稿前の画像チェックツールで謎の5件ヒット。原因はMarkdown構文の解説例を誤検知していたことだった",
+    "summary_ja": "Qiita記事の公開前チェックで、実際の画像枚数は4枚であるにもかかわらず5件のURLが検出される事象が発生した。 調査の結果、ツールがMarkdown記法の解説として記述していた「画像挿入の書き方例」まで検知していたことが判明した。 記事内のコードブロックやドキュメント領域を除外しない自動チェックツールには、このような誤検知リスクが潜んでいることを示唆している。",
+    "translations": {
+      "ja": {
+        "title": "Qiita投稿前の画像チェックツールで謎の5件ヒット。原因はMarkdown構文の解説例を誤検知していたことだった",
+        "summary": "Qiita記事の公開前チェックで、実際の画像枚数は4枚であるにもかかわらず5件のURLが検出される事象が発生した。 調査の結果、ツールがMarkdown記法の解説として記述していた「画像挿入の書き方例」まで検知していたことが判明した。 記事内のコードブロックやドキュメント領域を除外しない自動チェックツールには、このような誤検知リスクが潜んでいることを示唆している。"
+      },
+      "en": {
+        "title": "Developer discovers false positive in Qiita pre-publish image check tool caused by Markdown syntax documentation",
+        "summary": "A developer working on a Qiita article encountered a confusing bug where their pre-publish check tool identified five image URLs despite only four images being present in the draft. Investigation revealed the tool had incorrectly parsed and flagged a Markdown syntax example block as an actual image reference. This highlights a critical limitation in automated validation scripts that scan documents for assets: they often fail to distinguish between active content and technical documentation or code snippets. For builders creating similar content-quality automation, the lesson is that simple regex-based scanners are insufficient. You must implement context-aware parsers that understand where code blocks end and prose begins to prevent annoying false positives during the deployment pipeline."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-27T00:32:38.936Z"
+  },
+  {
+    "id": "art-1795739547885-4ga5s",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/abiraunken/n/ne1c10c02860c",
+    "published_at": "2026-11-27T00:31:00.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341256332/rectangle_large_type_2_9f82276ccd2ca327385eedc77ca683b7.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "ToB SaaS専門UXデザイナーが語るAI時代のキャリア戦略 ― 「残りの1割」に入り続けるための実践的思考法とAI活用術",
+    "summary_ja": "複雑な業務ドメインのプロダクトを12年以上手がけるToB SaaS専門のUX/UIデザイナーが、AI時代に淘汰されず「残りの1割」の価値ある人材として生き残るための戦略を説く。 AIを単なるツールとしてではなく、自身の専門性と掛け合わせることで、アウトプットの質と速度を最大化する具体的な思考プロセスを公開。 AIツールを使い倒すことは、デザイナーの市場価値を高める必須条件である。",
+    "translations": {
+      "ja": {
+        "title": "ToB SaaS専門UXデザイナーが語るAI時代のキャリア戦略 ― 「残りの1割」に入り続けるための実践的思考法とAI活用術",
+        "summary": "複雑な業務ドメインのプロダクトを12年以上手がけるToB SaaS専門のUX/UIデザイナーが、AI時代に淘汰されず「残りの1割」の価値ある人材として生き残るための戦略を説く。 AIを単なるツールとしてではなく、自身の専門性と掛け合わせることで、アウトプットの質と速度を最大化する具体的な思考プロセスを公開。 AIツールを使い倒すことは、デザイナーの市場価値を高める必須条件である。"
+      },
+      "en": {
+        "title": "A ToB SaaS Designer’s Strategy for AI Mastery: How to Stay Within the Top 10 Percent of Elite Talent",
+        "summary": "With over twelve years of experience designing complex B2B SaaS products, this veteran UX/UI designer outlines a critical framework for staying relevant in an AI-dominated landscape. The author argues that joining the top ten percent of performers requires moving beyond superficial AI use; instead, you must deeply integrate LLMs into your specialized domain expertise to amplify both output quality and iteration velocity. This strategy centers on treating AI not as a generic helper, but as a force multiplier for your professional craft. For developers and designers alike, the core takeaway is that your unique domain context remains your strongest asset, while AI serves as the lever that keeps you ahead of automation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-27T00:32:27.885Z"
+  },
+  {
     "id": "art-1795738629262-z8i9g",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -9073,33 +9177,6 @@
     "created_at": "2026-11-26T00:32:01.600Z"
   },
   {
-    "id": "art-1795653115127-24q12",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/07egta/n/nd65a5658de74",
-    "published_at": "2026-11-25T23:55:38.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340819529/rectangle_large_type_2_95724724e44c42a6803b5915e2919292.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Higgsfieldの最新AI「MAGI-2」が証明する動画生成の転換点：30秒動画の制作コストが2.4ドルに低下、実用レベルへの急接近",
-    "summary_ja": "Higgsfieldが発表した動画生成AI「MAGI-2」は、Blenderの動きを反映しつつ30秒の映像をわずか2.4ドルで生成可能にした。 低コストで高品質なアニメーション制作が可能になったことは、個人開発アプリの機能拡充にも大きな示唆を与える。 単にAIに丸投げするのではなく、下絵やカメラワークを制御しながらAIの出力を組み合わせる手法こそが、今のAI動画制作における開発者の勝ち筋と言えるだろう。",
-    "translations": {
-      "ja": {
-        "title": "Higgsfieldの最新AI「MAGI-2」が証明する動画生成の転換点：30秒動画の制作コストが2.4ドルに低下、実用レベルへの急接近",
-        "summary": "Higgsfieldが発表した動画生成AI「MAGI-2」は、Blenderの動きを反映しつつ30秒の映像をわずか2.4ドルで生成可能にした。 低コストで高品質なアニメーション制作が可能になったことは、個人開発アプリの機能拡充にも大きな示唆を与える。 単にAIに丸投げするのではなく、下絵やカメラワークを制御しながらAIの出力を組み合わせる手法こそが、今のAI動画制作における開発者の勝ち筋と言えるだろう。"
-      },
-      "en": {
-        "title": "Higgsfield’s new AI model MAGI-2 hits a milestone, generating 30-second videos for just $2.40",
-        "summary": "Higgsfield’s latest video generation model, MAGI-2, has hit a significant performance milestone by allowing users to generate high-quality 30-second animations for a cost of just $2.40. By integrating Blender-based motion control, the tool allows creators to dictate precise camera paths and movement patterns rather than relying on black-box prompting. This shift toward cost-effective, controllable video production is a major signal for independent developers building animation features. Rather than blindly hoping for generative perfection, the winning strategy for builders is clearly moving toward hybrid workflows: combining low-level structural control like camera path sketching with generative AI to bridge the gaps. For modern app builders, this cost-efficient efficiency makes AI-powered animation a commercially viable feature."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "動画",
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-26T00:31:55.127Z"
-  },
-  {
     "id": "art-1795653108754-c6dnf",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9599,32 +9676,6 @@
       "開発"
     ],
     "created_at": "2026-11-25T23:02:13.770Z"
-  },
-  {
-    "id": "art-1795647717679-f5mpk",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/NovaSolver/items/4a8007a462227a0c2cb2",
-    "published_at": "2026-11-25T23:00:04.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0NDExMTcxJTJGZWVlODAwY2QzNTkyNmJhNjcyNDUyZjllZTQ4ZjU0Y2UwMzNhMjg5NyUyRnhfbGFyZ2UucG5nJTNGMTc4Njg1NTg1Nj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MjY4YzZlMjNjMmUyYTk2NGZhYmUwNmIxMWNjOTlkMzY%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db701bb44efa9d3a805cdce09eaa60afe?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJUExJUUzJTgzJTgzJUUzJTgyJUI3JUUzJTgzJUE1JUU1JThGJThFJUU2JTlEJTlGJUUzJTgyJTgyJUU1JThGJTgyJUU3JTg1JUE3JUU3JTg1JUE3JUU1JTkwJTg4JUUzJTgyJTgyJUU1JTkwJTg4JUU2JUEwJUJDJUUzJTgwJTgxJUUzJTgxJUFBJUUzJTgxJUFFJUUzJTgxJUFCJUU3JUE5JUI0JUU1JUJFJTg0JUUzJTgxJThDJUU5JTgxJTk1JUUzJTgxJUEzJUUzJTgxJTlGJUVGJUJDJTlBQUklRTMlODElQUUlRTglQTclQTMlRTYlOUUlOTAlRTMlODElQTclRTglQjUlQjclRTMlODElOEQlRTMlODElOUYlRTUlQTQlQjElRTYlOTUlOTcyNCVFNCVCQiVCNiVFMyU4MSVBOCVFOCVBNiU4QiVFMyU4MSVBNCVFMyU4MSU5MSVFNiU5NiVCOSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWVkY2M3OGI3ZDUwYmQ4MDZmYjgwMDg4MzM2ZDg1YjZk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBOb3ZhU29sdmVyJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9YzBjZWNhNmI2MTZhMDIwZGYzMTZjYWViOWYxNTQxMjU&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=3ba9a0d0ee5647469b03cb8a8ab2f1d1",
-    "title_ja": "AI解析の罠：Claude Codeで構造・熱解析を自動化するも、穴径の誤設定を見逃して失敗した24件の教訓",
-    "summary_ja": "解析ソフトは誤った設定でも「それらしい」コンター図を出力するため、視覚的な確認だけでは致命的なミスを見落とす。 筆者はClaude CodeとPythonのMCPクライアントで解析を自動化したが、構造・熱・流れのシミュレーションにおいて、穴径の不整合など24件の失敗を経験した。 AIによる自動化を進める際は、解析結果の数値や境界条件を人間が検証するプロセスの構築が不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "AI解析の罠：Claude Codeで構造・熱解析を自動化するも、穴径の誤設定を見逃して失敗した24件の教訓",
-        "summary": "解析ソフトは誤った設定でも「それらしい」コンター図を出力するため、視覚的な確認だけでは致命的なミスを見落とす。 筆者はClaude CodeとPythonのMCPクライアントで解析を自動化したが、構造・熱・流れのシミュレーションにおいて、穴径の不整合など24件の失敗を経験した。 AIによる自動化を進める際は、解析結果の数値や境界条件を人間が検証するプロセスの構築が不可欠である。"
-      },
-      "en": {
-        "title": "The pitfalls of AI-assisted engineering: 24 failure cases where Claude Code automated structural analysis while missing critical setup errors",
-        "summary": "Engineering software often renders visually plausible contour plots even when input parameters are fundamentally flawed, making error detection impossible through visualization alone. The author utilized Claude Code and a Python-based MCP client to automate structural, thermal, and fluid simulations in NovaSolver Studio, encountering 24 distinct failures including critical discrepancies in hole diameters that the AI-driven workflow failed to flag. These failures demonstrate that while AI dramatically accelerates iteration, it creates a dangerous blind spot where incorrect setup yields confident but catastrophic output. For engineers building automated analysis pipelines, this serves as a stern reminder: AI cannot replace rigorous verification of boundary conditions and numerical inputs, and you must design explicit human-in-the-loop checkpoints before trusting autonomous simulation results."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-25T23:01:57.679Z"
   },
   {
     "id": "art-1795646857159-64eoh",
@@ -12759,33 +12810,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-25T06:31:38.641Z"
-  },
-  {
-    "id": "art-1795587504240-we4tf",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://huggingface.co/spaces/GameAnything/GameAnything",
-    "published_at": "2026-11-25T05:59:18.000Z",
-    "og_image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/GameAnything/GameAnything.png",
-    "title_ja": "AIでハリー・ポッター動画をMinecraftへ変換する「GameAnything」公開、動画の空間構造をリアルタイムで3Dゲームデータ化",
-    "summary_ja": "Hugging Face上で公開された「GameAnything」は、AIを用いて既存の動画クリップからMinecraftのワールドデータを自動生成するプロジェクト。 動画からシーンの空間構造を解析し、ブロックベースの環境へ変換することで、実写映像や既存のアニメーションを即座にプレイ可能なゲームへと変貌させる。 開発者は単に動画を見るだけでなく、生成された環境内で直接インタラクションできるようになるため、AIによるコンテンツ制作の新たなパラダイムとして注目される。",
-    "translations": {
-      "ja": {
-        "title": "AIでハリー・ポッター動画をMinecraftへ変換する「GameAnything」公開、動画の空間構造をリアルタイムで3Dゲームデータ化",
-        "summary": "Hugging Face上で公開された「GameAnything」は、AIを用いて既存の動画クリップからMinecraftのワールドデータを自動生成するプロジェクト。 動画からシーンの空間構造を解析し、ブロックベースの環境へ変換することで、実写映像や既存のアニメーションを即座にプレイ可能なゲームへと変貌させる。 開発者は単に動画を見るだけでなく、生成された環境内で直接インタラクションできるようになるため、AIによるコンテンツ制作の新たなパラダイムとして注目される。"
-      },
-      "en": {
-        "title": "GameAnything project launches: AI transforms Harry Potter film clips into fully playable 3D Minecraft worlds",
-        "summary": "The GameAnything project, hosted on Hugging Face, demonstrates an AI pipeline that automatically converts arbitrary video clips into functional Minecraft world data. By parsing the spatial structure of a scene from raw video and remapping it into block-based environments, the tool allows users to transform film footage—like Harry Potter scenes—into interactive 3D spaces in near real-time. This capability bridges the gap between passive consumption and active gameplay, suggesting a future where static media becomes dynamically explorable by default. For builders interested in generative game design, this represents a significant leap in converting visual semantic data into geometric environments, effectively turning flat pixels into navigable voxels without the need for manual 3D modeling or level design."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "動画"
-    ],
-    "created_at": "2026-11-25T06:18:24.240Z"
   },
   {
     "id": "art-1795587478632-xv2ib",
@@ -16834,32 +16858,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-24T04:02:37.794Z"
-  },
-  {
-    "id": "art-1795491999132-kqy45",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/nariyuki_pdm/articles/9604db4966e6e5",
-    "published_at": "2026-11-23T23:58:34.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--6iXtpQh5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2586%2585%25E9%2583%25A8%25E3%2581%25AEAI%25E3%2581%25A8%25E5%25A4%2596%25E9%2583%25A8%25E3%2581%25AEAI%2520%25E2%2580%2595%2520Muse%25E3%2582%2592%25E4%25B8%25AD%25E5%25BF%2583%25E3%2581%25AB%25E3%2580%2581Codex%25E3%2583%25BBClaude%2520Code%25E3%2583%25BBSuno%25E3%2583%25BBColab%25E3%2581%25BE%25E3%2581%25A7%25E3%2582%2592%25E6%259D%259F%25E3%2581%25AD%25E3%2582%258B...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%258A%25E3%2583%25AA%25E3%2583%25A6%25E3%2582%25ADPdM%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg3MGIxZjRiOTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AI開発環境の構築：Muse・Claude Code・Sunoらを統合する「ハイブリッド配置アーキテクチャ」の実践",
-    "summary_ja": "個人開発者がAIを効率的に活用するための「配置アーキテクチャ」を深掘りする。 開発エージェントの「Muse」を基盤に、ローカル作業やコーディング支援のClaude Code、作曲用のSuno、計算資源を要するColabといった多種多様なAIをどう使い分け、統合すべきか。 単一のAIに頼らず、タスクの性質に応じて内外のモデルを組み合わせることで、開発効率とクリエイティビティを最大化する戦略を解説する。",
-    "translations": {
-      "ja": {
-        "title": "AI開発環境の構築：Muse・Claude Code・Sunoらを統合する「ハイブリッド配置アーキテクチャ」の実践",
-        "summary": "個人開発者がAIを効率的に活用するための「配置アーキテクチャ」を深掘りする。 開発エージェントの「Muse」を基盤に、ローカル作業やコーディング支援のClaude Code、作曲用のSuno、計算資源を要するColabといった多種多様なAIをどう使い分け、統合すべきか。 単一のAIに頼らず、タスクの性質に応じて内外のモデルを組み合わせることで、開発効率とクリエイティビティを最大化する戦略を解説する。"
-      },
-      "en": {
-        "title": "Beyond Single Agents: Building a Hybrid AI Architecture with Muse, Claude Code, and External Services",
-        "summary": "This guide details an advanced architectural pattern for individual developers to scale output by strategically distributing tasks across multiple AI agents and external services. Centered on the Muse agent framework, the workflow demonstrates how to organize local coding assistants like Claude Code alongside specialized external APIs for music generation in Suno or heavy GPU computation in Google Colab. Instead of treating AI as a monolithic tool, the author argues for a layered approach where agents are positioned based on their specific strengths and environment requirements. For builders, the key takeaway is that managing a cohesive 'AI ecosystem'—integrating internal agents with external, cloud-based capabilities—is essential to sustaining productivity when tackling complex, multi-domain projects."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-24T03:46:39.132Z"
   },
   {
     "id": "art-1795488407993-40r5p",
