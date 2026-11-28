@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795825940456-2extx",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/veripsa/articles/api-contract-repair-review",
+    "published_at": "2026-11-27T22:00:05.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--4-93bNoH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E3%2580%258C%25E7%259B%25B4%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25E3%2580%258D%25E3%2581%25A8%25E8%25A8%2580%25E3%2581%25A3%25E3%2581%259F%25E3%2580%2582%25E3%2581%259D%25E3%2581%25AE%25E4%25BF%25AE%25E6%25AD%25A3%25E3%2580%2581%25E6%258E%25A1%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%2584%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:RollNuts%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE3NzhiM2VlNmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIが生成したコード修正を即採用するのは危険？「テスト通過＝正解」ではない理由と、レビューを完遂するための確認基準",
+    "summary_ja": "AIが提示する修正コードを鵜呑みにせず、自らの責任で採否を判断するための評価手法を解説。 テストが通るだけでなく、ビジネス要件や命名規則などの制約条件をすべて満たしているかを確認する「評価基準」を明確に設定する必要がある。 単なる動作確認で終わらせず、コードの挙動を完全に把握する重要性を説き、Pythonの関数例を用いてその検証手順を具体的に示している。",
+    "translations": {
+      "ja": {
+        "title": "AIが生成したコード修正を即採用するのは危険？「テスト通過＝正解」ではない理由と、レビューを完遂するための確認基準",
+        "summary": "AIが提示する修正コードを鵜呑みにせず、自らの責任で採否を判断するための評価手法を解説。 テストが通るだけでなく、ビジネス要件や命名規則などの制約条件をすべて満たしているかを確認する「評価基準」を明確に設定する必要がある。 単なる動作確認で終わらせず、コードの挙動を完全に把握する重要性を説き、Pythonの関数例を用いてその検証手順を具体的に示している。"
+      },
+      "en": {
+        "title": "Why You Should Never Trust AI-Generated Code Patches Just Because Tests Pass: A Practical Guide to Rigorous Verification",
+        "summary": "It is dangerous to accept AI-generated code patches simply because they pass basic automated tests. This article argues that true code review requires evaluating the logic against both functional and implicit constraints, such as specific naming conventions and business logic rules, rather than relying solely on the AI's claim of a fix. Using a practical Python function, the author demonstrates how two different implementations might return the same correct result but fail different architectural requirements. For builders, the key lesson is to establish a rigorous validation criteria before accepting AI suggestions. Never merge until you can fully explain why the generated change is correct, ensuring that 'passing tests' is only one part of your verification process."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T00:32:20.456Z"
+  },
+  {
+    "id": "art-1795825934321-e70h4",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kentaro36/articles/ai-agent-foundation-papers",
+    "published_at": "2026-11-27T23:07:24.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pGDdqAP2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E5%258E%259F%25E5%259E%258B%25E3%2581%25AF3%25E6%259C%25AC%25E3%2581%25AE%25E8%25AB%2596%25E6%2596%2587%25E3%2581%25AB%25E3%2581%2582%25E3%2581%25A3%25E3%2581%259F%25EF%25BC%259AReAct%25E3%2580%2581SWE-bench%25E3%2580%2581SWE-agent%25E3%2582%2592%25E8%25AA%25AD%25E3%2581%25BF%25E8%25A7%25A3%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:SeaOtter%2520%2520%2528Kentaro...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzUzNjRkZTA1NTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントの現在地を形作った3本の論文：ReAct、SWE-bench、SWE-agentの進化と歴史的意義を紐解く",
+    "summary_ja": "Claude Codeなどの現代的なコーディングAIは、2022年から2024年にかけて発表された3本の論文の技術的蓄積によって形作られている。 ReActは思考と行動を交互に繰り返すループ構造を確立し、SWE-benchは実務的な開発課題をベンチマークとして定義、SWE-agentはそれらを統合して自律的な解決を可能にした。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの現在地を形作った3本の論文：ReAct、SWE-bench、SWE-agentの進化と歴史的意義を紐解く",
+        "summary": "Claude Codeなどの現代的なコーディングAIは、2022年から2024年にかけて発表された3本の論文の技術的蓄積によって形作られている。 ReActは思考と行動を交互に繰り返すループ構造を確立し、SWE-benchは実務的な開発課題をベンチマークとして定義、SWE-agentはそれらを統合して自律的な解決を可能にした。"
+      },
+      "en": {
+        "title": "The Three Seminal Papers That Defined Modern AI Coding Agents: ReAct, SWE-bench, and SWE-agent Explained",
+        "summary": "Modern coding agents like Claude Code are not arbitrary inventions; they are the direct evolution of three critical research papers published between 2022 and 2024. ReAct first established the paradigm of interleaving reasoning and action loops, transforming AI from a simple text generator into a decision-making entity. SWE-bench redefined the standard by introducing real-world coding tasks as rigorous benchmarks, while SWE-agent successfully operationalized those requirements into autonomous problem-solving flows. Understanding these papers is vital for builders as they offer the structural blueprint behind how these systems navigate, test, and fix code. Mastering this historical progression helps developers better anticipate how agentic workflows will continue to shift from simple assistance toward robust, self-correcting engineering autonomy."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T00:32:14.321Z"
+  },
+  {
+    "id": "art-1795825927796-8036o",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://twitter.com/alexmichael/status/2125976282303471643",
+    "published_at": "2026-11-27T23:59:13.000Z",
+    "og_image_url": "https://pbs.twimg.com/amplify_video_thumb/2125975418205265920/img/YjDrAtAndgzf8QCk?format=webp&name=large",
+    "title_ja": "Google DeepMindのAI安全性研究者が語る「悲観論」：モデルの制御不能リスクと安全対策の限界",
+    "summary_ja": "Google DeepMindでAIの安全性研究に従事する専門家が、現在のAI開発スピードに対して「悲観的である」と警鐘を鳴らした。 特に、ブラックボックス化した大規模モデルの動作を完全に制御・予測することは極めて困難であり、現在の安全対策は技術的進化の速度に追いついていないと指摘している。 開発者は、モデルの性能向上だけでなく、予期せぬ挙動を封じ込めるためのガードレールとモニタリング体制を、開発プロセスの初期段階から組み込む重要性を再認識する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "Google DeepMindのAI安全性研究者が語る「悲観論」：モデルの制御不能リスクと安全対策の限界",
+        "summary": "Google DeepMindでAIの安全性研究に従事する専門家が、現在のAI開発スピードに対して「悲観的である」と警鐘を鳴らした。 特に、ブラックボックス化した大規模モデルの動作を完全に制御・予測することは極めて困難であり、現在の安全対策は技術的進化の速度に追いついていないと指摘している。 開発者は、モデルの性能向上だけでなく、予期せぬ挙動を封じ込めるためのガードレールとモニタリング体制を、開発プロセスの初期段階から組み込む重要性を再認識する必要がある。"
+      },
+      "en": {
+        "title": "Google DeepMind AI safety researcher warns: 'I am not optimistic' about current safety trajectories",
+        "summary": "A researcher at Google DeepMind recently expressed deep skepticism regarding the current trajectory of AI safety, explicitly stating they are not optimistic about the industry's ability to contain potential risks. The critique focuses on the inherent difficulty of predicting or controlling the opaque, emergent behaviors of large-scale models, suggesting that existing safety protocols are fundamentally failing to keep pace with rapid deployment cycles. For developers and engineering teams, the takeaway is stark: scaling performance while neglecting guardrails is becoming an untenable strategy. Building for production now requires moving beyond superficial safety testing and integrating robust, scalable monitoring and fallback systems directly into the core architectural stack to mitigate unpredictable failure modes before they occur at scale."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-28T00:32:07.796Z"
+  },
+  {
+    "id": "art-1795825918885-m722n",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp/",
+    "published_at": "2026-11-27T00:26:17.000Z",
+    "og_image_url": null,
+    "title_ja": "Datasette向けMCPサーバー「datasette-mcp」がバージョン0.4へアップデート、Datasette 1.0a44との完全な互換性を確保",
+    "summary_ja": "DatasetteのデータをModel Context Protocol (MCP) を通じてAIエージェントに提供する「datasette-mcp」が0.4にアップデートされた。 今回の変更により、開発版であるDatasette 1.0a44との互換性が確保され、最新のAPI変更に対応している。 ローカルLLMやClaude Desktop等のMCP対応クライアントでDatasette上のデータセットを検索・利用する開発者は、このバージョンへの追従が推奨される。",
+    "translations": {
+      "ja": {
+        "title": "Datasette向けMCPサーバー「datasette-mcp」がバージョン0.4へアップデート、Datasette 1.0a44との完全な互換性を確保",
+        "summary": "DatasetteのデータをModel Context Protocol (MCP) を通じてAIエージェントに提供する「datasette-mcp」が0.4にアップデートされた。 今回の変更により、開発版であるDatasette 1.0a44との互換性が確保され、最新のAPI変更に対応している。 ローカルLLMやClaude Desktop等のMCP対応クライアントでDatasette上のデータセットを検索・利用する開発者は、このバージョンへの追従が推奨される。"
+      },
+      "en": {
+        "title": "Datasette-mcp 0.4 release adds full compatibility for Datasette 1.0a44 to stream local data into AI agents",
+        "summary": "The team behind datasette-mcp has rolled out version 0.4, introducing critical fixes to ensure full compatibility with the evolving Datasette 1.0a44 release. This update is essential for developers relying on the Model Context Protocol (MCP) to bridge local SQLite datasets with AI agents like Claude Desktop. By enabling AI models to query structured data directly via the MCP standard, this tool streamlines the process of building intelligent, context-aware workflows that leverage your own data. For engineers integrating local LLM environments, this release signifies a necessary maintenance step to keep data access stable amidst ongoing Datasette API shifts. Implementing robust connectors between local database layers and AI clients is a key architectural step for production-grade agentic development."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-28T00:31:58.885Z"
+  },
+  {
     "id": "art-1795825142300-lrg1a",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -6984,32 +7089,6 @@
     "created_at": "2026-11-27T06:32:08.600Z"
   },
   {
-    "id": "art-1795761117604-kwaox",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/nijiunit/n/n1fc501ec5c00",
-    "published_at": "2026-11-27T06:31:39.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341357645/rectangle_large_type_2_a4e64b350aeecdd02059d15e855f04be.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIエージェントが「悪意なし」でシステムを破壊する6つの事故パターンと、Claude Codeで実装すべき必須のセキュリティ対策",
-    "summary_ja": "自律的なAIエージェントは、ファイル操作やコマンド実行を行う性質上、悪意がなくても誤った判断で開発環境や本番サーバーを破壊するリスクがある。 本稿では、意図しないファイル上書きや依存関係の無限ループなど6つの代表的な事故パターンを検証。 その上で、Claude Codeのような強力なエージェントを安全に運用するために必要な、権限分離やサンドボックス環境の活用など6つの防御策を提示する。 チャットAIとは異なる、実行型エージェント特有のガードレール構築が今求められている。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェントが「悪意なし」でシステムを破壊する6つの事故パターンと、Claude Codeで実装すべき必須のセキュリティ対策",
-        "summary": "自律的なAIエージェントは、ファイル操作やコマンド実行を行う性質上、悪意がなくても誤った判断で開発環境や本番サーバーを破壊するリスクがある。 本稿では、意図しないファイル上書きや依存関係の無限ループなど6つの代表的な事故パターンを検証。 その上で、Claude Codeのような強力なエージェントを安全に運用するために必要な、権限分離やサンドボックス環境の活用など6つの防御策を提示する。 チャットAIとは異なる、実行型エージェント特有のガードレール構築が今求められている。"
-      },
-      "en": {
-        "title": "Why autonomous AI agents destroy systems without malicious intent: 6 failure modes and essential security guardrails for tools like Claude Code",
-        "summary": "Autonomous AI agents pose a significant risk to development environments and production servers, even without malicious actors, simply due to their capacity for unmonitored file manipulation and command execution. This breakdown examines six common failure modes, including accidental file overwrites and infinite dependency loops, which occur when agents misinterpret system logic. To operate powerful tools like Claude Code safely, developers must implement specific guardrails, such as strict permission isolation, execution sandboxing, and manual approval workflows. The takeaway for builders is that agent security requires a fundamentally different mindset than standard chat-based AI; you must treat the agent as a privileged user and constrain its destructive potential through proactive environmental controls before shipping automation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-27T06:31:57.604Z"
-  },
-  {
     "id": "art-1795760223698-y9zge",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -8985,32 +9064,6 @@
     "created_at": "2026-11-26T22:48:24.040Z"
   },
   {
-    "id": "art-1795733294024-7nmdc",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.youtube.com/watch?v=aZwQ8NW596Q",
-    "published_at": "2026-11-26T21:17:22.000Z",
-    "og_image_url": null,
-    "title_ja": "「AIスロップ」というウェブ汚染：生成AIの無差別投下がユーザーに課す「検索コスト」と情報の劣化について",
-    "summary_ja": "生成AIの普及により、低品質な自動生成コンテンツ（AIスロップ）がウェブ上にあふれ、ユーザーが本当に有益な情報を見つけ出すための認知コストが急増している。 この現象は、無意識のうちに他人の時間を奪う「税金」を課しているに等しい。 開発者やコンテンツ制作者は、AIを量産ツールとしてだけでなく、情報の質と信頼性を高めるための手段として再定義し、ノイズを生成するのではなく価値ある対話を生む設計が求められている。",
-    "translations": {
-      "ja": {
-        "title": "「AIスロップ」というウェブ汚染：生成AIの無差別投下がユーザーに課す「検索コスト」と情報の劣化について",
-        "summary": "生成AIの普及により、低品質な自動生成コンテンツ（AIスロップ）がウェブ上にあふれ、ユーザーが本当に有益な情報を見つけ出すための認知コストが急増している。 この現象は、無意識のうちに他人の時間を奪う「税金」を課しているに等しい。 開発者やコンテンツ制作者は、AIを量産ツールとしてだけでなく、情報の質と信頼性を高めるための手段として再定義し、ノイズを生成するのではなく価値ある対話を生む設計が求められている。"
-      },
-      "en": {
-        "title": "“AI Slop” Is a Hidden Tax on Human Attention, Eroding Information Quality and Increasing Search Friction Across the Web",
-        "summary": "The rapid proliferation of low-effort, AI-generated content—often derisively termed “slop”—is fundamentally polluting the digital information ecosystem. By flooding platforms with mass-produced text and media, creators are essentially imposing a cognitive tax on audiences, who must now expend significantly more effort to filter out noise and locate genuine insights. This shift reduces the overall utility of search and social platforms, turning meaningful interactions into a hunt for signal within a growing pile of algorithmic waste. For developers and builders, the takeaway is clear: automating volume is a losing strategy that degrades user trust. Future-proof products must prioritize human intent, editorial curation, and verifiable authenticity over the convenience of unbridled synthetic generation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-26T22:48:14.024Z"
-  },
-  {
     "id": "art-1795731446152-4k5xe",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -10539,32 +10592,6 @@
       "研究"
     ],
     "created_at": "2026-11-26T15:02:07.821Z"
-  },
-  {
-    "id": "art-1795704432054-csogx",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/tosh1000950/articles/a5e53ba46a81af",
-    "published_at": "2026-11-26T02:59:17.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--SWgS3bcA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2589%25E3%2583%2583%25E3%2583%2588%25E7%25B5%25B5%25E3%2581%25AE%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25A9%25E3%2582%2592%25E5%259B%259E%25E3%2581%2597%25E3%2581%259F%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E2%2591%25A1%2520AI%25E3%2581%25AE%25E3%2580%258C%25E5%2590%2588%25E6%25A0%25BC%25E3%2580%258D%25E3%2581%258C%25E5%25B4%25A9%25E3%2582%258C%25E3%2581%259F%25E6%2597%25A5%25E2%2580%2594%25E2%2580%2594%25E3%2581%259D%25E3%2581%2597%25E3%2581%25A6%25E5%2589%258D%25E6%258F%2590%25E3%2581%259D%25E3%2581%25AE%25E3%2582%2582%25E3%2581%25AE%25E3%2581%258C%25E9%2596%2593%25E9%2581%2595%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Tosh1000950%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUhOSnkwcjAxaWdic0JKVGtkcTN1VktHek04Z3N2UGFZMk9LZHN2S2lGcGFOSXFBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "GeminiとMuseでドット絵を回転させるAI実装プロジェクト、AI自身が「合格」を覆した開発の混迷と前提崩壊の全記録",
-    "summary_ja": "AIによるドット絵回転プロジェクトにおいて、実装担当のGeminiと検証担当のMuseを駆使する中で発生した、AIによる自己判定の訂正と致命的な実装事故の記録。 開発を進めるほどに「合格」の基準が揺らぎ、AIとの分業体制における前提条件そのものが覆される顛末を詳解する。 AIを単なるツールではなくプロジェクトのパートナーとして扱う際、出力評価の不確実性とどう向き合うべきかという知見を提示する。",
-    "translations": {
-      "ja": {
-        "title": "GeminiとMuseでドット絵を回転させるAI実装プロジェクト、AI自身が「合格」を覆した開発の混迷と前提崩壊の全記録",
-        "summary": "AIによるドット絵回転プロジェクトにおいて、実装担当のGeminiと検証担当のMuseを駆使する中で発生した、AIによる自己判定の訂正と致命的な実装事故の記録。 開発を進めるほどに「合格」の基準が揺らぎ、AIとの分業体制における前提条件そのものが覆される顛末を詳解する。 AIを単なるツールではなくプロジェクトのパートナーとして扱う際、出力評価の不確実性とどう向き合うべきかという知見を提示する。"
-      },
-      "en": {
-        "title": "AI-driven pixel art rotation project with Gemini and Muse hits a wall when the model rejects its own previous output",
-        "summary": "A deep dive into an experimental pixel art rotation project where the author delegated implementation to Gemini and validation to Muse, only to encounter a series of catastrophic implementation failures. The narrative details the moment the AI model corrected its own previous \"pass\" verdict, forcing the developer to realize their fundamental project assumptions were flawed. As development progressed, the standard for success became increasingly volatile, revealing the dangers of trusting AI validation logic implicitly. This case study illustrates the necessity of human oversight in AI-led development pipelines, highlighting how managing output uncertainty is far more critical than merely choosing the right model when attempting complex, multi-stage creative automation tasks. Builders should treat AI code generation as iterative, not finalized."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-26T14:47:12.054Z"
   },
   {
     "id": "art-1795704416487-zbkns",
@@ -12630,33 +12657,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T01:31:57.259Z"
-  },
-  {
-    "id": "art-1795655830700-k0fzt",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/sakidori/articles/20261109-anthropic-usage-report-api-buckets",
-    "published_at": "2026-11-25T21:10:53.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wIzaER44--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Anthropic%2520usage%2520report%2520API%2520%25E3%2581%25AE%25E4%25BD%25BF%25E3%2581%2584%25E6%2596%25B9%25E3%2581%25A8%25E3%2580%25811%25E6%2599%2582%25E9%2596%2593%25E5%2588%25BB%25E3%2581%25BF168%25E3%2583%2590%25E3%2582%25B1%25E3%2583%2583%25E3%2583%2588%25E3%2581%25AE%25E4%25B8%258A%25E9%2599%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:sakidori%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkwNTgxN2IyYTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Anthropic API使用量モニタリング術：Usage Report APIと1時間刻み168バケット制限を突破してコスト爆増を即座に検知する",
-    "summary_ja": "AnthropicのUsage Report APIを活用し、請求確定を待たずにAPI使用量を自前ツールで取得・監視する手法を解説。 同APIは1時間単位のデータバケットを最大168個（過去1週間分）まで提供する仕様のため、Cloudflare Workers等の定期ジョブと組み合わせれば、予算超過リスクを即時検知できる。 コスト管理は翌日のレポートを待つのではなく、API連携による自動通知で先手を打つことが個人開発における継続の鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "Anthropic API使用量モニタリング術：Usage Report APIと1時間刻み168バケット制限を突破してコスト爆増を即座に検知する",
-        "summary": "AnthropicのUsage Report APIを活用し、請求確定を待たずにAPI使用量を自前ツールで取得・監視する手法を解説。 同APIは1時間単位のデータバケットを最大168個（過去1週間分）まで提供する仕様のため、Cloudflare Workers等の定期ジョブと組み合わせれば、予算超過リスクを即時検知できる。 コスト管理は翌日のレポートを待つのではなく、API連携による自動通知で先手を打つことが個人開発における継続の鍵となる。"
-      },
-      "en": {
-        "title": "Monitoring Anthropic API usage: How to track 168 hourly data buckets and catch cost spikes before they explode",
-        "summary": "This guide demonstrates how to programmatically monitor Anthropic API usage using their Usage Report API, bypassing the need to check the web console manually. Since the API exposes hourly data buckets capped at 168 entries—representing the last seven days—it is perfectly suited for scheduled background tasks like Cloudflare Workers to trigger early alerts on spending. Rather than waiting for final billing statements, developers should integrate these real-time usage stats into their own stacks to detect spikes within hours. For indie developers, automating these cost alerts is a critical defensive practice to prevent runaway expenses, ensuring that you stay informed and in control of your infrastructure budget rather than reacting after the damage is already done."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-11-26T01:17:10.700Z"
   },
   {
     "id": "art-1795655819233-lfql9",
