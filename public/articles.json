@@ -1,5 +1,108 @@
 [
   {
+    "id": "art-1795871855965-z10nx",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/fukukei23/items/db2ab1a0d83124fa75f5",
+    "published_at": "2026-11-28T13:07:34.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkY1ZjQ2OWNhMDE5NjIyOTU4MTY0NzA3ODg2MjU3ODg1ZD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MDBlNTBjZjg2NzA0YWYzOTU4YzUyZWE0NDAyYjVkZDg%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db0fb7b518cbe6fd4515b7a3f5b82a516?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9TWl4aW4lRTMlODElQTc0JTJDMDAwJUU4JUExJThDUHl0aG9uJUUzJTgyJUFGJUUzJTgzJUE5JUUzJTgyJUI5JUUzJTgyJTkyJUU2JTk1JUI0JUU3JTkwJTg2JUUzJTgxJTk3JUUzJTgxJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZjgyMTM3Yjk2MDRlNDAxMGEwZTA5ZTIxNjQ4MGE5MjE&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBmdWt1a2VpMjMmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1mZjI4OTNiOTM5OTRjYzYzYjBhYWQzNmU1ZGJhOGVlNQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=8cc5d028e1091dd63e14a41774f9e01c",
+    "title_ja": "4,000行の巨大Pythonクラスを整理する技術：依存関係を壊さず「Mixin」で責務を分割・リファクタリングする方法",
+    "summary_ja": "4,000行に及ぶ巨大なPythonクラスの責務を整理し、分割する実戦的アプローチを解説する。 当初のファイル分割では既存のimportやテストが全滅するリスクがあったが、Mixinを活用することで、依存関係を破壊せずに機能を疎結合化することに成功した。 リファクタリング中に発生する「import崩壊」を避け、安全にコードベースをモジュール化する具体的な設計戦略は、レガシーコードを抱える開発者にとって有用な教訓となる。",
+    "translations": {
+      "ja": {
+        "title": "4,000行の巨大Pythonクラスを整理する技術：依存関係を壊さず「Mixin」で責務を分割・リファクタリングする方法",
+        "summary": "4,000行に及ぶ巨大なPythonクラスの責務を整理し、分割する実戦的アプローチを解説する。 当初のファイル分割では既存のimportやテストが全滅するリスクがあったが、Mixinを活用することで、依存関係を破壊せずに機能を疎結合化することに成功した。 リファクタリング中に発生する「import崩壊」を避け、安全にコードベースをモジュール化する具体的な設計戦略は、レガシーコードを抱える開発者にとって有用な教訓となる。"
+      },
+      "en": {
+        "title": "Refactoring a 4,000-line Python class: How to decouple responsibilities using Mixins without breaking imports or tests",
+        "summary": "This piece outlines a practical strategy for decomposing a monolithic 4,000-line Python class that manages five distinct responsibilities. Attempting a naive file split initially broke every import and test suite, creating significant regression risks. By pivoting to a Mixin-based pattern, the developer successfully decoupled business logic without disrupting existing architecture or forcing widespread refactors of dependent code. The article demonstrates that when faced with tightly coupled legacy code, using Mixins allows for safer, incremental modularization compared to aggressive file separation. For builders working on complex Python backends, the key takeaway is that strategic code composition often beats broad file reorganization when maintaining system stability is the top priority during refactoring."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-28T13:17:35.965Z"
+  },
+  {
+    "id": "art-1795871848510-2gfu9",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/kurobat/n/nd8c4c34c640c",
+    "published_at": "2026-11-28T13:14:01.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/342000437/rectangle_large_type_2_5961fec192682151bab32e6c6b764e61.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "Slay the Spire 2向けコーチMOD：配布MODの逆コンパイルによる互換性修正と戦闘同期の実装アプローチ",
+    "summary_ja": "『Slay the Spire 2』で勝率や最適解を提示するコーチMODの自作を試みた開発者が、戦闘同期の壁に直面し、既存の「アセンション10専用MOD」の逆コンパイルを選択した。 バイナリレベルの解析によりわずか2つの命令を修正することで、上位難易度専用の機能をアセンション0環境でも動作させることに成功した。 ゼロから作るのではなく、既存コードの制約を解除して自分の環境に適合させるハック手法は、複雑なゲームMOD開発における現実的な打開策となる。",
+    "translations": {
+      "ja": {
+        "title": "Slay the Spire 2向けコーチMOD：配布MODの逆コンパイルによる互換性修正と戦闘同期の実装アプローチ",
+        "summary": "『Slay the Spire 2』で勝率や最適解を提示するコーチMODの自作を試みた開発者が、戦闘同期の壁に直面し、既存の「アセンション10専用MOD」の逆コンパイルを選択した。 バイナリレベルの解析によりわずか2つの命令を修正することで、上位難易度専用の機能をアセンション0環境でも動作させることに成功した。 ゼロから作るのではなく、既存コードの制約を解除して自分の環境に適合させるハック手法は、複雑なゲームMOD開発における現実的な打開策となる。"
+      },
+      "en": {
+        "title": "Modding Slay the Spire 2: Reverse-engineering an Ascension 10 coach mod to work on Ascension 0",
+        "summary": "After attempting to build a custom 'coach mod' for Slay the Spire 2 that suggests optimal plays, a developer hit a wall with complex combat synchronization logic. Instead of abandoning the project, they turned to reverse-engineering an existing Ascension 10-only mod. By carefully disassembling the binary and patching just two specific instructions, they successfully adapted the high-difficulty logic to function within an Ascension 0 environment. This experience highlights a critical takeaway for indie builders: when you encounter intractable technical hurdles in game modification, dissecting existing binaries to unlock their constraints is often faster than rewriting complex game engines from scratch. Modifying existing codebases can be far more pragmatic than building complex tools in a vacuum."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T13:17:28.510Z"
+  },
+  {
+    "id": "art-1795871841711-oua79",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://github.com/code-forge-temple/agentic-signal",
+    "published_at": "2026-11-28T12:24:19.000Z",
+    "og_image_url": "https://repository-images.githubusercontent.com/1038546086/7af7df91-6a61-4545-9034-92f6f1c3c79d",
+    "title_ja": "ノードベースでAIエージェントを構築・ローカル実行可能なOSSツール「Agentic Signal」が登場、複雑な自動化フローを視覚的に定義",
+    "summary_ja": "「Agentic Signal」は、GUI上のノードをつなぎ合わせるだけで複雑なAIエージェントの処理フローを設計し、ローカル環境でLLMを実行できるオープンソースツールだ。 APIへの依存を減らしつつ、個別のタスク処理を視覚的に自動化できるため、開発者はコストを抑えながら自前の環境でセキュアなエージェント運用が可能になる。 複雑なワークフローをコードレスに近い形で構築したいエンジニアにとって、プロトタイピングの工数を大幅に短縮する有力な選択肢となる。",
+    "translations": {
+      "ja": {
+        "title": "ノードベースでAIエージェントを構築・ローカル実行可能なOSSツール「Agentic Signal」が登場、複雑な自動化フローを視覚的に定義",
+        "summary": "「Agentic Signal」は、GUI上のノードをつなぎ合わせるだけで複雑なAIエージェントの処理フローを設計し、ローカル環境でLLMを実行できるオープンソースツールだ。 APIへの依存を減らしつつ、個別のタスク処理を視覚的に自動化できるため、開発者はコストを抑えながら自前の環境でセキュアなエージェント運用が可能になる。 複雑なワークフローをコードレスに近い形で構築したいエンジニアにとって、プロトタイピングの工数を大幅に短縮する有力な選択肢となる。"
+      },
+      "en": {
+        "title": "Agentic Signal debuts as a node-based, open-source framework for building and running AI agents locally",
+        "summary": "Agentic Signal has launched as an open-source tool designed to build complex AI agent workflows via a visual node-based editor, allowing developers to execute these agents entirely on local infrastructure. By shifting away from opaque, cloud-dependent black boxes, the framework lets builders define intricate automation logic visually while keeping data private and minimizing API costs. For engineers seeking to prototype autonomous tasks, this offers a streamlined, code-optional way to orchestrate multi-step reasoning chains without the latency or billing overhead of external cloud providers. It is a practical utility for anyone looking to maintain full control over their agent stack while rapidly iterating on agentic behavior in a local development environment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-28T13:17:21.711Z"
+  },
+  {
+    "id": "art-1795871832673-d4hjm",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/how-we-started-a-1-2m-year-coworking-business-from-india",
+    "published_at": "2026-11-27T19:07:20+00:00",
+    "og_image_url": "https://d1coqmn8qm80r4.cloudfront.net/627w6fb0i1sumwtxs9eh79dez7sp",
+    "title_ja": "インド発のコワーキングスペース事業で年商120万ドルを達成した創業者が語る：実業で収益を最大化するためのオペレーション自動化手法",
+    "summary_ja": "インドを拠点にコワーキングスペース事業を立ち上げた創業者が、年商120万ドル規模へ成長させた過程を詳細に公開。 単なる場所貸しに留まらず、コミュニティ形成とオペレーションの自動化を徹底することで、物理資産を抱えるビジネスでも高い収益性を維持することに成功した。 実業でスケールを目指す起業家にとって、物件選定の効率化と収益源の多角化がいかに重要であるかを学ぶための貴重なケーススタディとなっている。",
+    "translations": {
+      "ja": {
+        "title": "インド発のコワーキングスペース事業で年商120万ドルを達成した創業者が語る：実業で収益を最大化するためのオペレーション自動化手法",
+        "summary": "インドを拠点にコワーキングスペース事業を立ち上げた創業者が、年商120万ドル規模へ成長させた過程を詳細に公開。 単なる場所貸しに留まらず、コミュニティ形成とオペレーションの自動化を徹底することで、物理資産を抱えるビジネスでも高い収益性を維持することに成功した。 実業でスケールを目指す起業家にとって、物件選定の効率化と収益源の多角化がいかに重要であるかを学ぶための貴重なケーススタディとなっている。"
+      },
+      "en": {
+        "title": "How an Indian Founder Built a $1.2M/Year Coworking Business: Scaling Physical Spaces Through Operational Automation and Digital Efficiency",
+        "summary": "An Indian founder details their journey building a coworking business from scratch to $1.2 million in annual revenue. The strategy moves beyond simple desk rentals by emphasizing community building and operational automation, proving that physical asset businesses can achieve software-like efficiency through smart scaling. By integrating strategic site selection with diversified revenue streams—rather than relying solely on rental income—the founder maintains profitability despite high overhead. This case study serves as a masterclass for bootstrapped builders who want to apply tech-focused optimization principles to tangible, real-world businesses, demonstrating that the principles of product-market fit and operational leverage are universal, even when you are managing physical infrastructure rather than pure code."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-28T13:17:12.673Z"
+  },
+  {
     "id": "art-1795870962688-lulor",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -5678,32 +5781,6 @@
     "created_at": "2026-11-27T22:42:08.871Z"
   },
   {
-    "id": "art-1795818743373-uxdgc",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/miupa_/n/n214b7c2571ab",
-    "published_at": "2026-11-27T22:29:01.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341656726/rectangle_large_type_2_607521db38cdad029896cafe1e779cf1.jpg?fit=bounds&quality=85&width=1280",
-    "title_ja": "英語学習アプリのUX改善：長押し時のみ訳が表示される「隠し表示機能」実装で、反射的な日本語読解を防ぐUI設計",
-    "summary_ja": "英語学習教材「英語のハノン」の例文ビューア開発において、日本語訳が最初から表示されると英文構築の思考が阻害される課題に対し、訳をデフォルトで隠し、長押し中のみ表示するUI改修を実施した。 単なる情報提示ではなく、学習者の脳が先に日本語へ逃げるのを防ぐためのUX最適化であり、能動的な英文想起を促すための実用的なアプローチだ。 学習ツールの設計においては、情報の可視化タイミングを制御することが、ユーザーの学習効率に直結する重要な要素となる。",
-    "translations": {
-      "ja": {
-        "title": "英語学習アプリのUX改善：長押し時のみ訳が表示される「隠し表示機能」実装で、反射的な日本語読解を防ぐUI設計",
-        "summary": "英語学習教材「英語のハノン」の例文ビューア開発において、日本語訳が最初から表示されると英文構築の思考が阻害される課題に対し、訳をデフォルトで隠し、長押し中のみ表示するUI改修を実施した。 単なる情報提示ではなく、学習者の脳が先に日本語へ逃げるのを防ぐためのUX最適化であり、能動的な英文想起を促すための実用的なアプローチだ。 学習ツールの設計においては、情報の可視化タイミングを制御することが、ユーザーの学習効率に直結する重要な要素となる。"
-      },
-      "en": {
-        "title": "Refining English learning app UX: Implementing long-press to reveal translations to prevent reflexive reading of Japanese first",
-        "summary": "The developer of an English learning viewer for the 'English Hannon' method identified a critical UX friction point: seeing Japanese translations immediately prevented users from actively constructing English sentences. To solve this, the app was updated to hide translations by default, revealing them only during a long-press interaction. This subtle design change shifts the cognitive load, ensuring the user engages with English construction before validating their comprehension through the translation. For developers building learning or educational tools, this highlights how strictly controlling data visibility and timing is essential for maximizing user retention and cognitive engagement. Thoughtful UI constraints that force active recall over passive reading significantly improve the effectiveness of language practice platforms for daily drill routines."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-27T22:32:23.373Z"
-  },
-  {
     "id": "art-1795818735261-wufjy",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -5756,32 +5833,6 @@
       "開発"
     ],
     "created_at": "2026-11-27T22:31:56.710Z"
-  },
-  {
-    "id": "art-1795817846142-q2xpe",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/daigo916/n/n6a09711b823f",
-    "published_at": "2026-11-27T22:00:14.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341489173/rectangle_large_type_2_a5709a01d4b257a3eee0819bae3d6390.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "クイズアプリ開発記：部屋番号入力システムでホストが「ゲスト扱い」になるバグの調査と解消プロセス",
-    "summary_ja": "友人同士で簡単に遊べるクイズアプリにおいて、ホストが部屋を作成した直後に「ゲスト」として判定され、対戦を開始できないという設計上のバグが発生した。 原因は部屋ID生成とユーザーセッションの紐付けロジックにおけるフラグ管理の不備にあり、ホスト権限の動的割り当てを修正することで解決に至った。 個人開発において「自分が作った部屋なのに自分が一番の客になっている」という直感的な違和感をデバッグの起点にすることは、UXを根本から改善する重要なプロセスである。",
-    "translations": {
-      "ja": {
-        "title": "クイズアプリ開発記：部屋番号入力システムでホストが「ゲスト扱い」になるバグの調査と解消プロセス",
-        "summary": "友人同士で簡単に遊べるクイズアプリにおいて、ホストが部屋を作成した直後に「ゲスト」として判定され、対戦を開始できないという設計上のバグが発生した。 原因は部屋ID生成とユーザーセッションの紐付けロジックにおけるフラグ管理の不備にあり、ホスト権限の動的割り当てを修正することで解決に至った。 個人開発において「自分が作った部屋なのに自分が一番の客になっている」という直感的な違和感をデバッグの起点にすることは、UXを根本から改善する重要なプロセスである。"
-      },
-      "en": {
-        "title": "Debugging a quiz app room system where the creator mistakenly joins as a guest",
-        "summary": "Building a simple quiz game with room-based matchmaking revealed a frustrating bug where the host was treated as a guest immediately after room creation, preventing them from starting matches. The root cause lay in a flawed logic flow that handled room ID generation and session token assignment, failing to correctly elevate the room creator's permissions. By refining the backend logic to verify ownership during the initial state synchronization, the developer restored host privileges. This highlights a crucial lesson for solo builders: treating 'obvious' UX friction—like being locked out of your own game—as a high-priority bug is vital, as it often exposes deep flaws in your auth architecture and session management strategies that automated tests might miss."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-27T22:17:26.142Z"
   },
   {
     "id": "art-1795817837842-jqkgo",
@@ -9230,31 +9281,6 @@
     "created_at": "2026-11-27T09:16:58.704Z"
   },
   {
-    "id": "art-1795770152443-f50c8",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/kazutoyamaura/items/f8c86aa58d177fa00d3a",
-    "published_at": "2026-11-27T08:56:30.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzYzNjA5OSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTczMjE2MzI4Nz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZmU2YTM0YThmMWE3N2U0MWI4MjUyZWQwMWU5ZTZmNzY%26blend-x%3D120%26blend-y%3D462%26blend-w%3D90%26blend-h%3D90%26blend-mode%3Dnormal%26mark64%3DaHR0cHM6Ly9xaWl0YS1vcmdhbml6YXRpb24taW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1vcmdhbml6YXRpb24taW1hZ2UlMkZkNWRiNzdjMWE4Zjc3NzA1ZjNhMmIwNmQwZWFlNTc5MGY0MWRjYmE3JTJGb3JpZ2luYWwuanBnJTNGMTYzNDIxMTM4Nz9peGxpYj1yYi00LjEuMSZ3PTQ0Jmg9NDQmZml0PWNyb3AmbWFzaz1jb3JuZXJzJmNvcm5lci1yYWRpdXM9OCZiZz1GRkZGRkYmYm9yZGVyPTIlMkNGRkZGRkYmZm09cG5nMzImcz02YWEzMDA0MjU5MmZhMTE0ZjBkNDYwYzY5MTUyYmFhNw%26mark-x%3D186%26mark-y%3D515%26mark-w%3D40%26mark-h%3D40%26s%3Dbe7b2c869381009132424ea2348f3345?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElOEMlRTYlOUIlQjglRTMlODElODQlRTMlODElOUYlRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODklRTMlODAlODElRTMlODElQTklRTMlODElOTMlRTMlODElOEIlRTMlODIlODklRTglQUElQUQlRTMlODIlODAlRUYlQkMlOUYlMjAlRTclOTQlQkIlRTklOUQlQTIlRTMlODElQUUlRTYlOTMlOEQlRTQlQkQlOUMlRTMlODElOEIlRTMlODIlODklRTUlODclQTYlRTclOTAlODYlRTMlODIlOTIlRTglQkYlQkQlRTMlODElODYlRTclOTAlODYlRTclOTQlQjEmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1iOTkxOTRkMDQwZDcxNzVjNmFlODQ4ZWM1MTUzYWFkNg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrYXp1dG95YW1hdXJhJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ZWEwNzljMzM5NTE2MDhkOGI4Nzk5NGM2NmJmZjgxOWE&blend-x=242&blend-y=454&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&txt64=5qCq5byP5Lya56S-44Kq44OV44Kw44Oq44OD44OJ&txt-x=242&txt-y=539&txt-width=838&txt-clip=end%2Cellipsis&txt-color=%231E2121&txt-font=Hiragino%20Sans%20W6&txt-size=28&s=2b114331baae34233a1874afd93a7430",
-    "title_ja": "AI駆動開発のコードリーディング術：画面操作から処理を追跡する「起点特定」という勘所",
-    "summary_ja": "AIが複数ファイルを一気に書き換えた際、全体を把握するのは困難だ。 筆者が推奨するのは、まずアプリの画面操作を起点に処理範囲を絞り込む手法である。 例えばチャットアプリなら「送信ボタン押下から返答表示まで」といった特定のフローに注目することで、AIの生成意図を正確に読み解けるようになる。 コードの全容を追うのではなく、ユーザー体験と結びついた機能単位で分解することが、AIコードの保守性を高める唯一の解だ。",
-    "translations": {
-      "ja": {
-        "title": "AI駆動開発のコードリーディング術：画面操作から処理を追跡する「起点特定」という勘所",
-        "summary": "AIが複数ファイルを一気に書き換えた際、全体を把握するのは困難だ。 筆者が推奨するのは、まずアプリの画面操作を起点に処理範囲を絞り込む手法である。 例えばチャットアプリなら「送信ボタン押下から返答表示まで」といった特定のフローに注目することで、AIの生成意図を正確に読み解けるようになる。 コードの全容を追うのではなく、ユーザー体験と結びついた機能単位で分解することが、AIコードの保守性を高める唯一の解だ。"
-      },
-      "en": {
-        "title": "How to Decode AI-Generated Code Effectively: A Practical Guide to Tracing Logic via Screen-Based User Interactions",
-        "summary": "When AI models update multiple files simultaneously, attempting to analyze the codebase linearly becomes overwhelming and counterproductive. The recommended strategy is to scope the analysis starting from specific UI interactions; for instance, in a chat application, focus exclusively on the path from hitting 'send' to receiving the response. By narrowing your investigation to these isolated user journeys, you can decipher the AI's structural decisions and logic flows much faster than by reading every file. Instead of trying to parse the entire codebase at once, breaking down AI-generated changes into discrete, user-facing functional units is the most reliable way to maintain quality and ensure that the generated code behaves predictably as intended."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発"
-    ],
-    "created_at": "2026-11-27T09:02:32.443Z"
-  },
-  {
     "id": "art-1795770135524-6htud",
     "source_id": "source-producthunt-ai",
     "source_name": "Product Hunt (AI Category)",
@@ -9603,32 +9629,6 @@
       "開発"
     ],
     "created_at": "2026-11-27T08:02:03.925Z"
-  },
-  {
-    "id": "art-1795765629966-aftmr",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/whitemarshall/items/f655153373eaf18add16",
-    "published_at": "2026-11-27T07:41:40.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmODljNjFkOTY3OWRiYTNhN2Y3NTk2OWJkMzUxNzU0NT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGI4NjUzMzBkODk4Y2IwZGU0MTgwNWY1OWRjYzNlMjQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dd74df1f0f9e99258a2c04d787d798489?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9VGhyZWUuanMlRTMlODElQThDbGF1ZGUlMjBPcHVzJTIwNS41JUUzJTgxJUFCJUUzJTgyJTg4JUUzJTgyJThCM0QlRTMlODMlOTYlRTMlODMlQTklRTMlODIlQTYlRTMlODIlQjYlRTMlODIlQjIlRTMlODMlQkMlRTMlODMlQTAlRTUlQUUlOUYlRTglQTMlODUlRTYlQTQlOUMlRTglQTglQkMlRUYlQkMlOUElRTUlODYlODUlRTglOTQlQjVHUFUlRTMlODElQUUlRTUlQUUlOUYlRTYlQjglQUNGUFMlRTMlODElQTgxMSVFNCVCQSU4QiVFNCVCRSU4QiVFMyU4MSVBRSVFNiU4QSU4MCVFOCVBMSU5MyVFNiVBNyU4QiVFNiU4OCU5MCZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTcxZDI5OGU3NzVkNTQ3MDVkYTdiY2E5Yjk3MDFjNWVi&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDB3aGl0ZW1hcnNoYWxsJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9ODZkYjFiOTRkNWI1NzM4Yjk3MjA1ODE2ODQyNzc4MWI&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=20c5ad23c538e613283f7cdfb662ebb3",
-    "title_ja": "Three.jsとClaude Opus 5.5で挑む3Dブラウザゲーム開発：プロシージャル生成の限界と内蔵GPUでのFPS実測検証",
-    "summary_ja": "WebGLを用いた3Dブラウザゲーム開発において、外部モデルを一切読み込まない「プロシージャル生成」のみで構成した場合のパフォーマンス検証結果。 Claude Opus 5.5によるコード生成とThree.jsを組み合わせ、ノートPCの内蔵GPUで動作する11の技術構成を実測した。 BlenderやUnityを利用する従来のアセットベース手法と比較し、描画負荷やメモリ使用率の観点からブラウザゲーム最適化の現実解を提示する。",
-    "translations": {
-      "ja": {
-        "title": "Three.jsとClaude Opus 5.5で挑む3Dブラウザゲーム開発：プロシージャル生成の限界と内蔵GPUでのFPS実測検証",
-        "summary": "WebGLを用いた3Dブラウザゲーム開発において、外部モデルを一切読み込まない「プロシージャル生成」のみで構成した場合のパフォーマンス検証結果。 Claude Opus 5.5によるコード生成とThree.jsを組み合わせ、ノートPCの内蔵GPUで動作する11の技術構成を実測した。 BlenderやUnityを利用する従来のアセットベース手法と比較し、描画負荷やメモリ使用率の観点からブラウザゲーム最適化の現実解を提示する。"
-      },
-      "en": {
-        "title": "Benchmarking Procedural 3D Browser Games Using Three.js and Claude Opus 5.5 on Integrated GPU Hardware",
-        "summary": "This technical analysis investigates the viability of purely procedural 3D browser games built via Three.js and Claude Opus 5.5, specifically focusing on performance limitations when avoiding external model assets. By testing eleven distinct technical configurations on standard laptop integrated GPUs, the author evaluates frame rates and rendering bottlenecks compared to traditional Unity or Blender-exported workflows. The results provide a clear baseline for browser-based optimization, highlighting the specific trade-offs developers face when generating geometry dynamically versus importing pre-baked assets. For builders targeting accessible, web-first gaming experiences, this study offers critical performance data to decide between lightweight procedural generation and heavy asset pipelines for different hardware targets."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-27T07:47:09.966Z"
   },
   {
     "id": "art-1795765618426-v39j8",
