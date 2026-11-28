@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795888096777-t2jvb",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://fsdatalab.github.io/quail/docs",
+    "published_at": "2026-11-28T17:28:30.000Z",
+    "og_image_url": "https://fsdatalab.github.io/quail/og/docs/image.png",
+    "title_ja": "SQLで直接AI推論を実行する高速エンジン「Quail」が登場、データベースレイヤーでのベクトル演算とモデル呼び出しを統合",
+    "summary_ja": "「Quail」は、SQLクエリから直接AI関数を呼び出せる高速な推論エンジンで、RDBMS内でベクトル計算やLLM推論をシームレスに統合できる設計となっている。 外部APIへのリクエストによるオーバーヘッドを排除し、データベース内で直接データ処理を完結させることで、AIアプリケーション開発におけるデータ連携の複雑さを大幅に低減する。 SQLエコシステムを活かしつつAI機能を統合したい開発者にとって、バックエンドの設計をシンプルに保つ新たな選択肢となるだろう。",
+    "translations": {
+      "ja": {
+        "title": "SQLで直接AI推論を実行する高速エンジン「Quail」が登場、データベースレイヤーでのベクトル演算とモデル呼び出しを統合",
+        "summary": "「Quail」は、SQLクエリから直接AI関数を呼び出せる高速な推論エンジンで、RDBMS内でベクトル計算やLLM推論をシームレスに統合できる設計となっている。 外部APIへのリクエストによるオーバーヘッドを排除し、データベース内で直接データ処理を完結させることで、AIアプリケーション開発におけるデータ連携の複雑さを大幅に低減する。 SQLエコシステムを活かしつつAI機能を統合したい開発者にとって、バックエンドの設計をシンプルに保つ新たな選択肢となるだろう。"
+      },
+      "en": {
+        "title": "Quail: A high-performance SQL-native engine that executes AI functions directly within database queries to accelerate development",
+        "summary": "Quail has launched as a high-performance engine designed to execute AI functions directly via SQL queries, effectively bringing LLM inference and vector operations into the RDBMS layer. By eliminating the latency overhead typically associated with external API calls, this architecture allows developers to handle complex data processing within the database environment itself. It solves the fragmentation problem common in RAG pipelines by unifying storage and compute logic. For builders struggling with the complexity of stitching together distributed AI services, Quail offers a pragmatic approach to keeping backends lightweight and performant. It effectively treats AI capabilities as first-class citizens within the SQL ecosystem, streamlining the path from raw data retrieval to intelligent application response."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-28T17:48:16.777Z"
+  },
+  {
+    "id": "art-1795888052169-02cd2",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/takotaro/articles/3ef388b95e16b4",
+    "published_at": "2026-11-28T17:36:31.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--gPnOC0uA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AE%25E5%25AD%25A6%25E7%25BF%2592%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E3%2580%2581%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AEAI%25E3%2581%258B%25E3%2582%2589%25E8%25AA%25AD%25E3%2582%2581%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%2520%25E2%2580%2594%2520%25E6%2589%258B%25E5%2585%2583AI%25E6%258E%25A5%25E7%25B6%259A%25EF%25BC%2588MCP%25EF%25BC%2589%25E3%2581%25AE%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25A8%25E5%25AE%259F%25E8%25A3%2585%25E8%25A8%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25BF%25E3%2582%25B3%25E5%25A4%25AA%25E9%2583%258E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2RmYjc5YTMxZDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発アプリにMCPサーバーを実装し、ClaudeなどのパーソナルAIから学習状況を直接参照可能にする仕組みを構築",
+    "summary_ja": "個人開発の学習アプリにおいて、MCP（Model Context Protocol）を導入し、Claude等のパーソナルAIから学習データを読み込める機能を実装した。 アプリの設計思想を「人間が操作するUI」から「AIがデータを読み取るAPI」へと拡張し、苦手分野や復習候補をAIが自律的に把握できるようにした。 AIとの日常的な対話の中でサービスが機能する体験は、今後個人開発者がユーザーの生活に深く入り込むための新しいインターフェースのあり方を示している。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリにMCPサーバーを実装し、ClaudeなどのパーソナルAIから学習状況を直接参照可能にする仕組みを構築",
+        "summary": "個人開発の学習アプリにおいて、MCP（Model Context Protocol）を導入し、Claude等のパーソナルAIから学習データを読み込める機能を実装した。 アプリの設計思想を「人間が操作するUI」から「AIがデータを読み取るAPI」へと拡張し、苦手分野や復習候補をAIが自律的に把握できるようにした。 AIとの日常的な対話の中でサービスが機能する体験は、今後個人開発者がユーザーの生活に深く入り込むための新しいインターフェースのあり方を示している。"
+      },
+      "en": {
+        "title": "Building an MCP server into a personal study app to enable direct data access by LLMs like Claude",
+        "summary": "A solo developer has implemented the Model Context Protocol (MCP) in their study application, enabling personal AI assistants like Claude to read user study data directly. By extending the app architecture beyond human-centered UI to serve as an API for local AI agents, the developer now allows the AI to autonomously identify weak subjects and suggest review topics based on current study progress. This shift fundamentally changes the service's primary audience from a human user to their personal AI assistant. For indie builders, this represents a major pivot in design philosophy, demonstrating how to make services deeply integrated into an AI-augmented lifestyle, effectively turning local apps into intelligent data sources for reasoning models."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T17:47:32.169Z"
+  },
+  {
+    "id": "art-1795888045808-0zmaq",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/light_garlic4334/n/n8276200b7009",
+    "published_at": "2026-11-28T17:46:52.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/342070858/rectangle_large_type_2_c794f96cf776945b095f299388947d3e.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "Uberの月100万回AI実行から学ぶエージェント強化術：単なる「スキル追加」では不十分な理由と解決策",
+    "summary_ja": "UberのAIプラットフォームでは月間100万回以上のAI実行が行われているが、単に外部スキルをGitHubから追加するだけではエージェントのパフォーマンスは頭打ちになる。 同社が学んだのは、スキル数よりも「推論能力の強化」や「タスク分解の精度」が重要という教訓だ。 開発者は単機能のツールを詰め込むのではなく、エージェントが複雑な文脈を理解し、自己修正できるようなフレームワーク設計に注力すべきである。",
+    "translations": {
+      "ja": {
+        "title": "Uberの月100万回AI実行から学ぶエージェント強化術：単なる「スキル追加」では不十分な理由と解決策",
+        "summary": "UberのAIプラットフォームでは月間100万回以上のAI実行が行われているが、単に外部スキルをGitHubから追加するだけではエージェントのパフォーマンスは頭打ちになる。 同社が学んだのは、スキル数よりも「推論能力の強化」や「タスク分解の精度」が重要という教訓だ。 開発者は単機能のツールを詰め込むのではなく、エージェントが複雑な文脈を理解し、自己修正できるようなフレームワーク設計に注力すべきである。"
+      },
+      "en": {
+        "title": "Uber’s Lessons From 1 Million Monthly AI Executions: Why Adding Skills Is Not Enough for Robust Agents",
+        "summary": "Uber manages over one million AI executions monthly, offering a rare look at what actually drives agent performance at scale. They discovered that simply dumping GitHub-sourced \"Skills\" into an agent leads to diminishing returns rather than smarter output. The core insight is that agent intelligence relies less on the sheer volume of tools available and more on improving reasoning loops, task decomposition accuracy, and context awareness. Builders should stop treating agent development as a scavenger hunt for new skills and start focusing on structural frameworks that allow agents to reason through complex tasks and perform robust self-correction. For anyone shipping production-grade agents, prioritize reasoning depth and error handling over tool bloat to ensure reliability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T17:47:25.808Z"
+  },
+  {
+    "id": "art-1795888037130-7m6v7",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/mrmrmr/items/51dff3b0650c0005ed87",
+    "published_at": "2026-11-28T17:44:36.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzI3NDE5JTJGMTJmOWI5NDdmYWQxMDJmMzI1ZTdhM2MxY2I1YTNmOTc2OWRjYjY4ZCUyRmxhcmdlLnBuZyUzRjE3NzM1Nzk2NTY_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTg4ZjQ2OWIxYjE5MmE2NWQ5MWIxOTc1NDc4ZDcwYjhj%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De95bedc85e3356abe6a208a41038b450?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgwJTkwJUU1JUIwJThGJUU1JUFEJUE2NSVFNSVCOSVCNCVFNyU5NCU5RiVFMyU4MSVBNyVFMyU4MiU4MiVFMyU4MiU4RiVFMyU4MSU4QiVFMyU4MiU4QiVFMyU4MCU5MSVFNSVBRiVCRSVFOCVBOSVCMSVFMyU4MiVCNyVFMyU4MiVCOSVFMyU4MyU4NiVFMyU4MyVBMCVFMyU4MSVBMyVFMyU4MSVBNiVFMyU4MSVBQSVFMyU4MSVBQiVFRiVCQyU5RiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTgyMTc5MTZlYTY4OTQ5YTIyNWI4ZGQ0YzMzZTQ1MzU1&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBtcm1ybXImdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz05NWIwMjVjOTJjZjhmZjExZjU4NzhmZDc0M2JhOTQ4ZA&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c8558514a29bef3e03e3114d5a6b56ae",
+    "title_ja": "対話システムの基本と仕組み：コンテキスト理解で人間との自然な対話を実現する技術の核心",
+    "summary_ja": "対話システムは、チャットボットのように人間との会話を自動化する仕組みだが、単なる定型文の返信とは異なり、会話の流れや文脈（コンテキスト）を把握して応答するのが特徴だ。 例えば天気の問い合わせに対して、前後のやり取りを考慮して最適に回答する。 技術者としては、辞書ベースの応答から現在のLLM活用型へ至る歴史を理解することで、ユーザーの意図を汲み取るAIプロダクト設計の基礎を再確認できる。",
+    "translations": {
+      "ja": {
+        "title": "対話システムの基本と仕組み：コンテキスト理解で人間との自然な対話を実現する技術の核心",
+        "summary": "対話システムは、チャットボットのように人間との会話を自動化する仕組みだが、単なる定型文の返信とは異なり、会話の流れや文脈（コンテキスト）を把握して応答するのが特徴だ。 例えば天気の問い合わせに対して、前後のやり取りを考慮して最適に回答する。 技術者としては、辞書ベースの応答から現在のLLM活用型へ至る歴史を理解することで、ユーザーの意図を汲み取るAIプロダクト設計の基礎を再確認できる。"
+      },
+      "en": {
+        "title": "Dialogue Systems 101: Understanding the Core Architecture That Powers Context-Aware Human-AI Conversations",
+        "summary": "Dialogue systems are software architectures that automate human-like interaction, differentiating themselves from simple, hard-coded chatbots by parsing conversational flow and context rather than just emitting static responses. A true dialogue agent retains state across turns, enabling it to answer follow-up queries based on previous inputs—like tailoring weather reports to the user's specific location history. For developers, grasping this transition from basic template matching to contemporary LLM-driven architectures is essential. By understanding how these systems maintain history and intent, builders can better design AI products that provide fluid, human-centric interactions rather than disjointed, transactional replies. This foundational knowledge is key to moving beyond simple command interfaces toward truly sophisticated, conversational AI applications that actually 'listen' to the user's deeper intent."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T17:47:17.130Z"
+  },
+  {
     "id": "art-1795887193154-evu24",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -5718,32 +5822,6 @@
     "created_at": "2026-11-28T03:02:10.303Z"
   },
   {
-    "id": "art-1795834923576-udtnf",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/butterflyhead/n/ncea1675eb5d9",
-    "published_at": "2026-11-28T03:01:06.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341670710/rectangle_large_type_2_27035a3c4aa15c28160368031c483e58.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "RPAツール「Muse」の自動化再検証：Chromiumで失敗したログイン操作がFirefoxなら成功する意外な事実",
-    "summary_ja": "ブラウザ自動化ツール「Muse」を用いたRPA検証で、当初は「外部サイトに接続不能」と結論づけていたが、それは誤りであることが判明した。 Chromiumエンジンでは動作しなかった操作が、Firefox経由ではログイン処理まで問題なく実行できたためだ。 この結果は、特定のブラウザ環境のみに依存した自動化設計がいかに脆いかを物語っている。 Web自動化やスクレイピングに取り組む個人開発者は、エンジン依存の制約を疑い、代替ブラウザや環境構成を検証の選択肢に含めるべきだ。",
-    "translations": {
-      "ja": {
-        "title": "RPAツール「Muse」の自動化再検証：Chromiumで失敗したログイン操作がFirefoxなら成功する意外な事実",
-        "summary": "ブラウザ自動化ツール「Muse」を用いたRPA検証で、当初は「外部サイトに接続不能」と結論づけていたが、それは誤りであることが判明した。 Chromiumエンジンでは動作しなかった操作が、Firefox経由ではログイン処理まで問題なく実行できたためだ。 この結果は、特定のブラウザ環境のみに依存した自動化設計がいかに脆いかを物語っている。 Web自動化やスクレイピングに取り組む個人開発者は、エンジン依存の制約を疑い、代替ブラウザや環境構成を検証の選択肢に含めるべきだ。"
-      },
-      "en": {
-        "title": "Revisiting Muse RPA automation: Why Chromium failed but Firefox successfully completed complex login tasks in tests",
-        "summary": "Initial automation experiments with the Muse RPA tool suggested the environment was unable to reach external sites, but further testing revealed this conclusion was incomplete. The failure was isolated specifically to the Chromium engine; switching the underlying browser to Firefox allowed the automation to successfully navigate and execute login procedures on target demo sites. This discrepancy highlights how browser-specific limitations can create false negatives during infrastructure debugging. For builders developing scraping tools or agentic workflows, this serves as a critical reminder: if an automation task fails, do not assume the platform is blocked immediately. Validating logic across multiple rendering engines is essential before dismissing a tool's capability, as browser-level incompatibilities often masquerade as systemic connection failures."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-28T03:02:03.576Z"
-  },
-  {
     "id": "art-1795834037140-oy50a",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -7603,32 +7681,6 @@
     "created_at": "2026-11-27T20:47:02.849Z"
   },
   {
-    "id": "art-1795811544805-niy5g",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://www.euronews.com/2026/11/27/german-sofware-giant-sap-weighs-at-least-10000-job-cuts-amid-ai-shift-reports-say",
-    "published_at": "2026-11-27T20:26:15.000Z",
-    "og_image_url": "https://images.euronews.com/articles/stories/10/01/09/29/1200x675_cmsv2_2a22320c-afd4-542e-b80b-c8a58e7fbe0d-10010929.jpg",
-    "title_ja": "独ソフトウェア大手SAP、AI特化型への組織再編に伴い1万人以上の人員削減を検討：レガシー事業からクラウドとAIへ経営資源を集中",
-    "summary_ja": "ドイツのソフトウェア大手SAPが、AI主導の次世代プラットフォームへの移行を加速させるため、1万人以上の人員削減を検討していることが明らかになった。 同社は長年の中核製品であるレガシーなエンタープライズ・リソース・プランニング（ERP）事業から、クラウドおよびAI統合製品へとリソースを大幅にシフトさせる計画だ。",
-    "translations": {
-      "ja": {
-        "title": "独ソフトウェア大手SAP、AI特化型への組織再編に伴い1万人以上の人員削減を検討：レガシー事業からクラウドとAIへ経営資源を集中",
-        "summary": "ドイツのソフトウェア大手SAPが、AI主導の次世代プラットフォームへの移行を加速させるため、1万人以上の人員削減を検討していることが明らかになった。 同社は長年の中核製品であるレガシーなエンタープライズ・リソース・プランニング（ERP）事業から、クラウドおよびAI統合製品へとリソースを大幅にシフトさせる計画だ。"
-      },
-      "en": {
-        "title": "SAP weighs cutting over 10,000 jobs as German software giant pivots resources toward AI-driven cloud infrastructure",
-        "summary": "German enterprise software titan SAP is reportedly planning to cut at least 10,000 jobs as part of a radical restructuring effort to pivot toward AI-centric operations. The organization is aggressively reallocating capital away from its traditional legacy enterprise resource planning business to focus entirely on cloud-based ecosystems and integrated AI product lines. This massive consolidation highlights the intense pressure incumbent giants face as they migrate long-standing customer bases toward automated, AI-augmented workflows. For the broader tech industry, this move underscores a painful but unavoidable reality: sustaining profitability in the AI era requires deep structural cost-cutting and a complete abandonment of legacy software maintenance models in favor of scalable, high-margin, automated AI solutions that address modern enterprise needs."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "アップデート"
-    ],
-    "created_at": "2026-11-27T20:32:24.805Z"
-  },
-  {
     "id": "art-1795811536868-xgit7",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -7682,32 +7734,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-27T20:32:07.258Z"
-  },
-  {
-    "id": "art-1795810700825-5e9ls",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://substack.com/@pancooke/note/c-395539528",
-    "published_at": "2026-11-27T20:01:33.000Z",
-    "og_image_url": null,
-    "title_ja": "漫画家Pan Cookeが警鐘：生成AIの普及で私たちが失う「創作の過程」と人間的な価値のゆくえ",
-    "summary_ja": "漫画家Pan Cookeが自身の執筆した漫画を通じて、AI生成アートの台頭により社会が失いつつある「プロセスそのものの価値」について鋭く考察している。 効率や利便性を優先するあまり、試行錯誤や苦悩といった人間的な創作の営みが矮小化される現状に対し、真に守るべき創造性とは何かを問いかける。 開発者やクリエイターにとっても、ツールが人間の能力を補助するのか、あるいは経験を奪うのかという根本的な問いを突きつける内容だ。",
-    "translations": {
-      "ja": {
-        "title": "漫画家Pan Cookeが警鐘：生成AIの普及で私たちが失う「創作の過程」と人間的な価値のゆくえ",
-        "summary": "漫画家Pan Cookeが自身の執筆した漫画を通じて、AI生成アートの台頭により社会が失いつつある「プロセスそのものの価値」について鋭く考察している。 効率や利便性を優先するあまり、試行錯誤や苦悩といった人間的な創作の営みが矮小化される現状に対し、真に守るべき創造性とは何かを問いかける。 開発者やクリエイターにとっても、ツールが人間の能力を補助するのか、あるいは経験を奪うのかという根本的な問いを突きつける内容だ。"
-      },
-      "en": {
-        "title": "Cartoonist Pan Cooke explores the artistic process we risk losing as AI generative tools normalize shortcuts",
-        "summary": "In a reflective comic, artist Pan Cooke examines the intangible value of the creative process that society risks losing as generative AI tools become ubiquitous. By prioritizing speed and output efficiency, the current cultural shift threatens to devalue the messy, iterative struggles that define true human artistic growth. The piece confronts the industry with a necessary philosophical question: are these tools augmenting our innate human capability, or are they inadvertently hollowing out the experiential journey of mastery? For builders and creators alike, the critique serves as a sobering reminder that technical optimization should not come at the expense of the human essence that makes creative output meaningful in the first place."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-27T20:18:20.825Z"
   },
   {
     "id": "art-1795810686859-mm509",
@@ -11224,33 +11250,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T19:02:03.128Z"
-  },
-  {
-    "id": "art-1795717029105-yiodu",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/mappy55/articles/magi-games-ops-06",
-    "published_at": "2026-11-26T10:36:21.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--USD6SGHp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520%25E3%2581%258C%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2581%25AE%25E6%258A%259C%25E3%2581%2591%25E9%2581%2593%25E3%2582%2592%25E3%2580%2581%25E5%2588%25A5%25E3%2581%25AE%2520Claude%252020%25E4%25BD%2593%25E3%2581%25AB%25E6%258E%25A2%25E3%2581%2595%25E3%2581%259B%25E3%2581%259F%25E3%2580%2582%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2582%2592%25E4%25B8%258A%25E3%2581%2592%25E3%2581%25A6%25E3%2582%2582%25E3%2580%2581%25E5%25BD%2593%25E3%2581%25A6%25E3%2582%258B%25E6%2595%25B0%25E3%2581%25AF%25E5%25A4%2589%25E3%2582%258F%25E3%2582%2589%25E3%2581%25AA...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mappy%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzc1ZWI1MzQxNDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claudeで構築したゲームの攻略法を別モデル20体に検証させた結果、モデル性能を上げても「抜け道の発見数」は変わらなかった（AI開発実験記録）",
-    "summary_ja": "毎日Claudeでミニゲームを開発・公開する実験において、AIが生成したゲームの攻略法や抜け道を、異なる20体のモデルを用いて検証した。 司令塔となるClaudeが事前にシミュレーションした「最適解」を、遊ぶ側のAIが上回れるかを試したが、モデルの性能を上げても見つかる抜け道の数は劇的に変化しなかった。 AI同士の対決や検証において、モデルの頭の良さよりもプロンプトやゲーム設計のルール設定が結果を左右する可能性を示唆している。",
-    "translations": {
-      "ja": {
-        "title": "Claudeで構築したゲームの攻略法を別モデル20体に検証させた結果、モデル性能を上げても「抜け道の発見数」は変わらなかった（AI開発実験記録）",
-        "summary": "毎日Claudeでミニゲームを開発・公開する実験において、AIが生成したゲームの攻略法や抜け道を、異なる20体のモデルを用いて検証した。 司令塔となるClaudeが事前にシミュレーションした「最適解」を、遊ぶ側のAIが上回れるかを試したが、モデルの性能を上げても見つかる抜け道の数は劇的に変化しなかった。 AI同士の対決や検証において、モデルの頭の良さよりもプロンプトやゲーム設計のルール設定が結果を左右する可能性を示唆している。"
-      },
-      "en": {
-        "title": "Testing Claude-generated game exploits with 20 distinct AI models reveals that higher model performance does not increase discovery rates",
-        "summary": "In an experiment testing daily mini-games built by Claude, the author tasked 20 distinct AI instances with finding loopholes and exploits in the game logic. The goal was to see if more advanced models could consistently outperform the 'optimal strategy' initially simulated by the primary Claude instance. Surprisingly, upgrading the model tier yielded no significant improvement in the number of exploits discovered. This result suggests that when running AI-versus-AI verification or debugging, simply scaling model intelligence does not guarantee deeper insight into game logic flaws. For developers building AI-driven agent systems, the lesson is that game rules and robust prompt architecture are far more critical to system integrity than the underlying model's raw reasoning capacity."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化",
-      "研究"
-    ],
-    "created_at": "2026-11-26T18:17:09.105Z"
   },
   {
     "id": "art-1795717022288-czggq",
