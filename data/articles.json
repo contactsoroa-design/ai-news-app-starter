@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795854827928-o5rui",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/aoiro24/n/n75e99f20e574",
+    "published_at": "2026-11-28T08:30:36.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341878646/rectangle_large_type_2_f5a7e5231ff880eaf00e0a295419d0c3.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発アプリの決済・納品フローテストで遭遇する「ウイルスバスター」の意外なブロック挙動と対策",
+    "summary_ja": "個人開発アプリ「あおいろサーチ」のリリース準備中、決済から商品納品までのフローを検証していたところ、ウイルスバスター（トレンドマイクロ製品）によって通信やスクリプトが予期せずブロックされる事態が発生した。 こうしたセキュリティソフトは開発環境や検証用通信を誤検知しやすく、本番直前の動作確認で開発者がつまづく典型的かつ厄介な伏兵だ。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリの決済・納品フローテストで遭遇する「ウイルスバスター」の意外なブロック挙動と対策",
+        "summary": "個人開発アプリ「あおいろサーチ」のリリース準備中、決済から商品納品までのフローを検証していたところ、ウイルスバスター（トレンドマイクロ製品）によって通信やスクリプトが予期せずブロックされる事態が発生した。 こうしたセキュリティソフトは開発環境や検証用通信を誤検知しやすく、本番直前の動作確認で開発者がつまづく典型的かつ厄介な伏兵だ。"
+      },
+      "en": {
+        "title": "Unexpected hurdles: How antivirus software like Virus Buster blocks payment and delivery flows in indie app development",
+        "summary": "While finalizing the release flow for the personal app 'Aoiro Search,' testing payment and digital product delivery processes revealed that Trend Micro's Virus Buster was actively blocking internal test communications and scripts. This is a common but frequently overlooked pitfall where aggressive security software flags legitimate verification traffic as malicious, causing last-minute friction before a launch. For indie builders, relying solely on standard browser testing is risky; it is essential to proactively include validation steps under strict antivirus configurations. Builders should treat security software as a critical integration test target, ensuring that proper white-listing or exception handling is configured early to prevent these silent, environment-specific failures from breaking the user purchase experience during production rollout."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T08:33:47.928Z"
+  },
+  {
+    "id": "art-1795854821482-ny91u",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kohaku912/articles/e64aafabbd01cc",
+    "published_at": "2026-11-28T06:31:39.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--NpAVCXN9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2580%258C%25E6%25B6%2588%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%2584%25EF%25BC%259F%25E3%2580%258D%25E3%2581%25A8%25E8%2581%259E%25E3%2581%258B%25E3%2582%258C%25E3%2581%259F%25E3%2582%2589%2520%25E2%2580%2594%2520%25E5%2589%25AF%25E4%25BD%259C%25E7%2594%25A8%25E3%2582%2592%25E4%25BA%2588%25E7%25AE%2597%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B6%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E8%25A8%25AD%25E8%25A8%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kohaku%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTDFQRjI1ejlRemlLTkwtZXRmN1pLSjZwTl9rZTlXbHBETWs3RmhLZHZRVjJFTThXRU49czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントの暴走を防ぐ「AEGIS」設計：副作用を予算化する6つのプロセスで安全なシステムを構築する",
+    "summary_ja": "AIエージェントによる本番環境の破壊やAPI過剰消費を防ぐため、副作用を最小化する6つのプロセス設計「AEGIS」を紹介する。 LLMの精度向上に頼るのではなく、テスト環境の分離、操作のサンドボックス化、そして明確な権限委譲の境界を定義することで、自律処理の失敗リスクをシステムとして制御可能にする。 開発者はAIが実行するあらゆるアクションにコストとリスクの予算枠を設けるべきだ。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの暴走を防ぐ「AEGIS」設計：副作用を予算化する6つのプロセスで安全なシステムを構築する",
+        "summary": "AIエージェントによる本番環境の破壊やAPI過剰消費を防ぐため、副作用を最小化する6つのプロセス設計「AEGIS」を紹介する。 LLMの精度向上に頼るのではなく、テスト環境の分離、操作のサンドボックス化、そして明確な権限委譲の境界を定義することで、自律処理の失敗リスクをシステムとして制御可能にする。 開発者はAIが実行するあらゆるアクションにコストとリスクの予算枠を設けるべきだ。"
+      },
+      "en": {
+        "title": "Preventing Agent Mayhem: The 'AEGIS' Design Pattern for Budgeting Side Effects in Autonomous Systems",
+        "summary": "Autonomous agents often inadvertently corrupt production databases or exhaust API limits, leading developers to blame the LLM itself rather than the architectural design. The 'AEGIS' framework shifts this perspective by treating AI side effects as a quantifiable budget rather than an unpredictable occurrence. Through six specific design processes—including strict sandbox isolation for command execution, granular permission delegation, and formal risk-budgeting for automated actions—developers can contain potential damage before it impacts production systems. By architecting guardrails rather than hoping for perfect model outputs, builders can safely scale agent workflows without the fear of cascading failures. This approach provides a concrete blueprint for embedding safety into agentic workflows, ensuring that autonomous tools remain productive rather than destructive assets."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T08:33:41.482Z"
+  },
+  {
+    "id": "art-1795854792414-ottu8",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.youtube.com/watch?v=mwNzLRrlWnw",
+    "published_at": "2026-11-28T08:20:04.000Z",
+    "og_image_url": null,
+    "title_ja": "WooCommerce多言語化：定番プラグイン「WPML」とAI翻訳ツールを徹底比較、ECサイト運用における費用対効果と実務上の落とし穴",
+    "summary_ja": "WordPressのECサイト構築で定番の多言語化プラグイン「WPML」と、最新のAI自動翻訳ソリューションをWooCommerce環境で直接対決させた検証動画が公開された。 コスト面ではAIツールが圧倒的に有利に見える一方、WPML特有のデータベース管理やSEO対策の網羅性、将来的な拡張性といった「運用品質」を考慮すると、どちらを選ぶべきかは一概には言えない。",
+    "translations": {
+      "ja": {
+        "title": "WooCommerce多言語化：定番プラグイン「WPML」とAI翻訳ツールを徹底比較、ECサイト運用における費用対効果と実務上の落とし穴",
+        "summary": "WordPressのECサイト構築で定番の多言語化プラグイン「WPML」と、最新のAI自動翻訳ソリューションをWooCommerce環境で直接対決させた検証動画が公開された。 コスト面ではAIツールが圧倒的に有利に見える一方、WPML特有のデータベース管理やSEO対策の網羅性、将来的な拡張性といった「運用品質」を考慮すると、どちらを選ぶべきかは一概には言えない。"
+      },
+      "en": {
+        "title": "WPML vs. AI Translation Plugins: Benchmarking WooCommerce Localization Costs, SEO Integrity, and Long-Term Maintenance Headaches",
+        "summary": "This performance benchmark pits the industry-standard WordPress localization plugin WPML against modern AI-driven translation tools within a live WooCommerce environment. While AI-based translation solutions consistently offer significantly lower operational costs and faster deployment speeds, the comparison highlights critical trade-offs regarding database integrity, SEO metadata handling, and long-term site stability that manual or plugin-managed solutions like WPML provide. For developers and e-commerce operators, the choice is not merely a cost calculation but a strategic decision between 'set-and-forget' AI convenience versus the deep integration and structural reliability required to scale an international store. The video serves as a practical guide for builders evaluating whether to absorb the higher overhead of established plugins or risk the potential pitfalls of emerging AI automation."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-28T08:33:12.414Z"
+  },
+  {
+    "id": "art-1795854730230-9urw7",
+    "source_id": "source-producthunt-ai",
+    "source_name": "Product Hunt (AI Category)",
+    "url": "https://www.producthunt.com/products/cognition-swe-2-1",
+    "published_at": "2026-11-24T19:15:49.000Z",
+    "og_image_url": null,
+    "title_ja": "Cognitionが「SWE-2.1」を発表。10倍高速なUltrafastモード搭載で複雑な長期的コーディングタスクを大幅に効率化",
+    "summary_ja": "AIソフトウェアエンジニアのCognition社が最新モデル「SWE-2.1」をリリースした。 本モデルは複雑な長期的コーディングタスクの遂行能力を強化しつつ、新たに導入された「Ultrafastモード」により、推論と実行速度を従来の10倍にまで引き上げることに成功している。 単なるコード生成を超え、リポジトリ全体を把握して修正案を提示する実用的な自動化ツールとして、開発者のワークフローを劇的に加速させる。",
+    "translations": {
+      "ja": {
+        "title": "Cognitionが「SWE-2.1」を発表。10倍高速なUltrafastモード搭載で複雑な長期的コーディングタスクを大幅に効率化",
+        "summary": "AIソフトウェアエンジニアのCognition社が最新モデル「SWE-2.1」をリリースした。 本モデルは複雑な長期的コーディングタスクの遂行能力を強化しつつ、新たに導入された「Ultrafastモード」により、推論と実行速度を従来の10倍にまで引き上げることに成功している。 単なるコード生成を超え、リポジトリ全体を把握して修正案を提示する実用的な自動化ツールとして、開発者のワークフローを劇的に加速させる。"
+      },
+      "en": {
+        "title": "Cognition launches SWE-2.1, a coding model featuring an Ultrafast mode that accelerates long-horizon engineering tasks by 10×",
+        "summary": "Cognition has unveiled SWE-2.1, its latest AI software engineering model engineered to handle complex, long-horizon coding tasks with significantly higher reliability. The standout feature is the newly introduced Ultrafast mode, which boosts inference and execution speeds by 10× compared to previous benchmarks without sacrificing contextual accuracy. By enabling deeper, repository-wide reasoning, the model moves beyond simple snippet generation to executing multi-step engineering workflows autonomously. For developers, this represents a major step toward reliable automated coding partners that can actually manage complex project states. The update highlights a clear trend in agentic AI: moving away from slow, iterative loops toward optimized, high-throughput inference that fits naturally within a busy professional development cycle."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-28T08:32:10.230Z"
+  },
+  {
     "id": "art-1795853970496-ayz11",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -6052,32 +6158,6 @@
     "created_at": "2026-11-27T16:47:52.382Z"
   },
   {
-    "id": "art-1795798066286-31o3m",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/gey_chevis6981/n/n842f778bf939",
-    "published_at": "2026-11-27T16:41:43.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341610159/rectangle_large_type_2_435b22bd28de753d148e56a13e1630a2.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "なぜこの記事だけ読まれ続けるのか？たいち株式会社、AI社員4名を活用して長期検索流入のメカニズムを徹底分析",
-    "summary_ja": "たいち株式会社が、noteで公開した記事のうち特定の1本だけが驚異的な長期トラフィックを維持している現象を解明するため、4名のAI社員を招集して検証を実施した。 検索意図の深掘りや構成の再評価など、生成AIを分析チームとして活用することで、読まれる記事とそうでない記事の決定的な差を特定する。 検索エンジンの評価を長期間獲得し続けるためのコンテンツ戦略として、AIによる客観的なデータ分析がいかに有効かを実践的に示す好事例である。",
-    "translations": {
-      "ja": {
-        "title": "なぜこの記事だけ読まれ続けるのか？たいち株式会社、AI社員4名を活用して長期検索流入のメカニズムを徹底分析",
-        "summary": "たいち株式会社が、noteで公開した記事のうち特定の1本だけが驚異的な長期トラフィックを維持している現象を解明するため、4名のAI社員を招集して検証を実施した。 検索意図の深掘りや構成の再評価など、生成AIを分析チームとして活用することで、読まれる記事とそうでない記事の決定的な差を特定する。 検索エンジンの評価を長期間獲得し続けるためのコンテンツ戦略として、AIによる客観的なデータ分析がいかに有効かを実践的に示す好事例である。"
-      },
-      "en": {
-        "title": "Why do some articles never stop getting traffic? Taichi Inc. deploys a 4-person AI team to reverse-engineer long-tail success",
-        "summary": "Taichi Inc. recently faced a peculiar phenomenon on their note blog: one specific article continued to generate massive, sustained traffic while others plateaued. To solve this mystery, they assembled a team of four AI agents to rigorously analyze the content and search intent patterns. By using generative AI to audit the structure, keyword relevance, and reader experience against current search trends, they identified exactly what made this piece click with algorithms and humans alike. This case study demonstrates how builders can leverage AI not just for content creation, but as a systematic analytical partner to reverse-engineer the factors behind long-term SEO success and sustained organic reach for their own digital publications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "マーケ・集客・ASO",
-      "開発"
-    ],
-    "created_at": "2026-11-27T16:47:46.286Z"
-  },
-  {
     "id": "art-1795798058331-0ayj5",
     "source_id": "source-n8n",
     "source_name": "n8n Blog (AI Automation)",
@@ -6156,32 +6236,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-27T16:32:45.620Z"
-  },
-  {
-    "id": "art-1795797158955-vt2is",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/humble_sheep7333/n/n30c9e5dc7e16",
-    "published_at": "2026-11-27T16:14:37.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341601400/rectangle_large_type_2_5681e54fb4c2534609e4aa4f1cfe9e87.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "GTDの「次にとる行動」が溜まる問題を解決へ。個人開発アプリ「Dropcal」でリマインダーをカレンダーへ即座に割り振る実践術",
-    "summary_ja": "GTDで「次にとる行動」リストが長くなる一方、実行日が決まらないという課題を抱える人は多い。 本記事では、Apple純正リマインダーに溜まったタスクを週次レビューでカレンダーへ効率的に落とし込む手順を解説する。 筆者が個人開発した「Dropcal」を活用し、リストをタスクの墓場にせず、実際に時間を確保して実行に移すための具体的な運用メソッドを共有する。",
-    "translations": {
-      "ja": {
-        "title": "GTDの「次にとる行動」が溜まる問題を解決へ。個人開発アプリ「Dropcal」でリマインダーをカレンダーへ即座に割り振る実践術",
-        "summary": "GTDで「次にとる行動」リストが長くなる一方、実行日が決まらないという課題を抱える人は多い。 本記事では、Apple純正リマインダーに溜まったタスクを週次レビューでカレンダーへ効率的に落とし込む手順を解説する。 筆者が個人開発した「Dropcal」を活用し、リストをタスクの墓場にせず、実際に時間を確保して実行に移すための具体的な運用メソッドを共有する。"
-      },
-      "en": {
-        "title": "Solving the GTD ‘Next Action’ Bottleneck: How to Schedule Reminders onto Your Calendar with the Dropcal App",
-        "summary": "Many GTD practitioners struggle with the \"next action\" list graveyard: tasks accumulate, but never actually get scheduled. This post explores a workflow for bridging the gap between Apple Reminders and your calendar during weekly reviews. Using a personal project called \"Dropcal,\" the author demonstrates how to efficiently drag and drop pending tasks into specific calendar slots to ensure they get done. By forcing a commitment to \"when\" at the weekly review stage, you turn a passive list into a concrete execution plan. For developers and productivity geeks alike, this shows how a targeted utility app can solve a specific friction point that native OS tools often overlook."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-27T16:32:38.955Z"
   },
   {
     "id": "art-1795797139217-4m9c1",
@@ -20379,32 +20433,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-23T08:47:26.618Z"
-  },
-  {
-    "id": "art-1795422726007-xv4i8",
-    "source_id": "source-producthunt-ai",
-    "source_name": "Product Hunt (AI Category)",
-    "url": "https://www.producthunt.com/products/replit",
-    "published_at": "2026-11-22T17:13:25.000Z",
-    "og_image_url": null,
-    "title_ja": "ReplitがAIエージェントのチームを指揮・管理できる新機能「Missions」を公開、予算設定とタスク自動遂行を実現",
-    "summary_ja": "Replitが発表した「Missions」は、複数のAIエージェントをチームとして組織し、プロジェクトの目標達成に向けた自律的な開発タスクを遂行させるための新環境。 ユーザーはプロジェクトに予算上限を設定することで、エージェントによる過剰なトークン消費を防ぎつつ、計画的なコーディングやデバッグが可能になる。",
-    "translations": {
-      "ja": {
-        "title": "ReplitがAIエージェントのチームを指揮・管理できる新機能「Missions」を公開、予算設定とタスク自動遂行を実現",
-        "summary": "Replitが発表した「Missions」は、複数のAIエージェントをチームとして組織し、プロジェクトの目標達成に向けた自律的な開発タスクを遂行させるための新環境。 ユーザーはプロジェクトに予算上限を設定することで、エージェントによる過剰なトークン消費を防ぎつつ、計画的なコーディングやデバッグが可能になる。"
-      },
-      "en": {
-        "title": "Replit Launches Missions to Coordinate AI Agent Teams with Defined Budgets for Autonomous Software Development",
-        "summary": "Replit has introduced \"Missions,\" a new orchestration framework that enables developers to manage and coordinate multiple AI agents as a cohesive team to execute complex software tasks. By allowing developers to set strict budget constraints, the platform ensures that autonomous coding sessions and debugging cycles remain financially predictable, effectively preventing runaway token costs during iterative work. This moves the paradigm beyond simple conversational coding assistants toward a model where AI agents function as managed, purpose-driven workers with defined guardrails. For builders, the shift signals that effective AI engineering is no longer just about prompting, but about mastering the operational oversight, resource management, and workflow automation required to scale autonomous development teams safely."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-23T08:32:06.007Z"
   },
   {
     "id": "art-1795422715216-397q8",
@@ -54348,33 +54376,5 @@
       "開発"
     ],
     "created_at": "2026-10-29T08:46:46.475Z"
-  },
-  {
-    "id": "art-1793262761233-yaxcu",
-    "source_id": "source-supabase",
-    "source_name": "Supabase Blog",
-    "url": "https://supabase.com/blog/orioledb-public-beta",
-    "published_at": "2026-10-28T07:00:00.000Z",
-    "og_image_url": "https://supabase.com/images/blog/2026-10-28-orioledb-public-beta/og.png",
-    "title_ja": "Supabase、更新頻度が高いDB向けPostgres拡張「OrioleDB」のパブリックベータを開始。全プランで利用可能に",
-    "summary_ja": "Supabaseは、更新が頻発するテーブル向けに設計されたオープンソースのPostgreSQLストレージエンジン「OrioleDB」のパブリックベータを全プランで提供開始した。 従来のヒープストレージの制限である「バキューム（VACUUM）」処理による性能劣化を、行レベルでの更新管理とコピーオンライト技術で解消する。 高頻度な更新を伴うアプリケーションのアーキテクトにとって、本番環境のオーバーヘッドを大幅に削減できる有力な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "Supabase、更新頻度が高いDB向けPostgres拡張「OrioleDB」のパブリックベータを開始。全プランで利用可能に",
-        "summary": "Supabaseは、更新が頻発するテーブル向けに設計されたオープンソースのPostgreSQLストレージエンジン「OrioleDB」のパブリックベータを全プランで提供開始した。 従来のヒープストレージの制限である「バキューム（VACUUM）」処理による性能劣化を、行レベルでの更新管理とコピーオンライト技術で解消する。 高頻度な更新を伴うアプリケーションのアーキテクトにとって、本番環境のオーバーヘッドを大幅に削減できる有力な選択肢となる。"
-      },
-      "en": {
-        "title": "Supabase launches public beta for OrioleDB, a high-performance PostgreSQL storage engine optimized for update-heavy workloads",
-        "summary": "Supabase has introduced a public beta for OrioleDB, an open-source storage engine designed to replace standard PostgreSQL heap storage for update-intensive workloads. Unlike traditional Postgres engines, OrioleDB eliminates the performance degradation caused by VACUUM processes by implementing row-level versioning and copy-on-write mechanisms, ensuring consistent throughput even during heavy write cycles. For architects building high-frequency applications, this engine represents a fundamental shift in database maintenance, allowing developers to manage frequent updates without incurring the typical performance overhead associated with classic table maintenance. The integration across all Supabase plans provides a practical way for teams to scale complex transaction systems without the complexity of constant auto-vacuum tuning, making it a critical consideration for write-heavy services."
-      }
-    },
-    "tool_tags": [
-      "Supabase"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-10-29T08:32:41.233Z"
   }
 ]
