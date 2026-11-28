@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1795824145895-li94z",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/umunet/articles/06bc3a1ec9301f",
+    "published_at": "2026-11-27T23:00:06.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jJxpK312--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Google%2520Maps%2520%25E3%2581%25AE%25E8%25A6%258F%25E7%25B4%2584%25E3%2581%25A7%25E5%25BA%2597%25E5%2590%258D%25E3%2582%2592%25E4%25BF%259D%25E5%25AD%2598%25E3%2581%25A7%25E3%2581%258D%25E3%2581%25AA%25E3%2581%2584%25E3%2581%25AE%25E3%2581%25A7%25E3%2580%2581%25E8%25A1%25A8%25E7%25A4%25BA%25E3%2581%25AE%25E3%2581%259F%25E3%2581%25B3%25E3%2581%25AB%25E5%258F%2596%25E3%2582%258B%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kentaro%2520Onishi%2520%257C%2520%25E5%25A4%25A7...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkxnWkUxMENIU0gweEVjZEJYMklMYm9KUWVsRDhJWUppRThJLUphRVl1NVUyby13PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Google Maps Platform規約遵守の落とし穴：店名・住所のDB保存不可と「動的取得」へのアーキテクチャ刷新",
+    "summary_ja": "個人開発アプリでGoogle Places APIを活用する際、取得した店名や住所をDBに永続保存することは規約違反となる。 この記事では、規約遵守のため保存型設計を廃し、表示のたびにAPIで再取得する「動的取得アーキテクチャ」への移行プロセスを解説。 単なる規約違反の回避だけでなく、キャッシュやAPI制限を考慮した効率的なデータ再取得の実装設計は、個人開発者がAPIを扱う際の必須知識となる。",
+    "translations": {
+      "ja": {
+        "title": "Google Maps Platform規約遵守の落とし穴：店名・住所のDB保存不可と「動的取得」へのアーキテクチャ刷新",
+        "summary": "個人開発アプリでGoogle Places APIを活用する際、取得した店名や住所をDBに永続保存することは規約違反となる。 この記事では、規約遵守のため保存型設計を廃し、表示のたびにAPIで再取得する「動的取得アーキテクチャ」への移行プロセスを解説。 単なる規約違反の回避だけでなく、キャッシュやAPI制限を考慮した効率的なデータ再取得の実装設計は、個人開発者がAPIを扱う際の必須知識となる。"
+      },
+      "en": {
+        "title": "Why storing Google Places data is a Terms of Service violation: Designing for dynamic fetching",
+        "summary": "Many solo developers don't realize that Google Maps Platform terms strictly prohibit persisting business names or addresses from the Places API into their own database. The author discovered this legal hurdle in their personal memo app and initiated a major refactor to remove cached location data in favor of a dynamic, on-demand fetching architecture. This write-up details the technical challenges of moving away from a local-first storage model while navigating API rate limits and UX performance. It serves as a vital case study for any developer using Google's location services, emphasizing that compliance with data-caching policies must be baked into the system architecture early to avoid costly rewrites down the line."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T00:02:25.895Z"
+  },
+  {
+    "id": "art-1795824139283-idp23",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.bloomberg.com/news/features/2026-10-30/how-ai-detectors-like-pangram-are-changing-human-writing",
+    "published_at": "2026-11-27T23:35:20.000Z",
+    "og_image_url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iEBD8dhQAkGQ/v0/1200x800.jpg",
+    "title_ja": "AI文章検知ツール「Pangram」の普及が変える人間本来のライティングと「AIっぽさ」への過剰な検閲社会",
+    "summary_ja": "Bloombergは、AI文章検知ツール「Pangram」が引き起こす社会的な副作用を詳報した。 AIの生成物を判別する試みは、逆に人間による自然な文章をも「AI生成」と誤判定させ、クリエイティブな表現や個性を制限する結果を生んでいる。 AIが生成したような流暢すぎる文章を避けるために人間が不自然に粗い文章を書くという逆転現象が起きており、デジタル上の信頼性を担保する技術がいかに個人の表現の自由を萎縮させているかを考察する。",
+    "translations": {
+      "ja": {
+        "title": "AI文章検知ツール「Pangram」の普及が変える人間本来のライティングと「AIっぽさ」への過剰な検閲社会",
+        "summary": "Bloombergは、AI文章検知ツール「Pangram」が引き起こす社会的な副作用を詳報した。 AIの生成物を判別する試みは、逆に人間による自然な文章をも「AI生成」と誤判定させ、クリエイティブな表現や個性を制限する結果を生んでいる。 AIが生成したような流暢すぎる文章を避けるために人間が不自然に粗い文章を書くという逆転現象が起きており、デジタル上の信頼性を担保する技術がいかに個人の表現の自由を萎縮させているかを考察する。"
+      },
+      "en": {
+        "title": "How AI detection tools like Pangram are fundamentally altering human writing styles and triggering false censorship",
+        "summary": "A deep dive from Bloomberg explores the unintended consequences of AI detection tools like Pangram, arguing that the drive to flag machine-generated content is now censoring human creativity. Because these detectors often misclassify authentic writing as AI-generated if it adheres to certain stylistic patterns, writers are now forced to intentionally simplify or intentionally degrade their work to avoid being flagged. This creates a perverse feedback loop where human expression is constrained by the need to bypass algorithms, effectively policing thought based on statistical probability rather than intent. For builders and developers, the broader takeaway is that technical solutions attempting to solve the \"AI authorship\" problem often introduce more societal friction and false positives than they resolve, ultimately undermining trust in digital content."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-28T00:02:19.283Z"
+  },
+  {
+    "id": "art-1795824120334-7jyun",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/kamimura0000/items/30448bf205ab063b41ac",
+    "published_at": "2026-11-27T23:54:09.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0ODkzODElMkZiNGNlZjM5M2M3OWMxNmJkNjIwMzYzNjA5OGYwZDY3ZTRmZTYxNTgzJTJGbGFyZ2UucG5nJTNGMTc5NTgyMjY4OD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OWVmZDhjN2U4NmExMjVjZDNhYTc2NjJhMjNjZGQwZTI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D57ab2d22c16feee8b6df5965b77a792f?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9VkFQJUU2JThBJTgwJUU4JUExJTkzJUUzJTgzJUFBJUUzJTgzJTk1JUUzJTgyJUExJUUzJTgzJUFDJUUzJTgzJUIzJUUzJTgyJUI5JUVGJUJDJTlBQUklRTclOUIlQTMlRTYlOUYlQkIlRTglQTglQkMlRTglQjclQTElRTMlODElQUUlRTQlQkIlOTUlRTYlQTclOTglRTMlODMlQkIlRTUlODUlQUMlRTklOTYlOEIlRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODklRTMlODMlQkIlRTYlQTQlOUMlRTglQTglQkMlRTMlODElQUUlRTUlODUlQTUlRTUlOEYlQTMlRUYlQkMlODh2MS4yJTIwRHJhZnQlMjAzJUVGJUJDJTg5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9ZmNmZTg1YzhhMDg3ZTI0OWRiZWU5YmRlYjAwNzZiMTU&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBrYW1pbXVyYTAwMDAmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0zMTM5N2UzNDNhYzgwYzhjMzAyYmRkNDdjZmM3NmJjYg&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=888ad824a26f89baafe7fdf879b4b4df",
+    "title_ja": "AIの操作ログを証明する「VAP技術」v1.2公開：改ざん検知と証跡の完全性を保証する監査フレームワークの仕様と検証コード",
+    "summary_ja": "VAP（Verifiable AI Provenance）は、AIが実行した操作ログの改ざんを検知し、その証跡が完全であることを数学的に証明するための監査フレームワークだ。 従来の「単なるログ記録」とは異なり、ログの書き換え防止、範囲の整合性、操作主体と紐づくID管理を分離して設計している。 AIエージェントの自律化が進む中、ブラックボックス化するAIの挙動を追跡・監査したい開発者にとって、信頼性を担保する重要な技術基盤となる。",
+    "translations": {
+      "ja": {
+        "title": "AIの操作ログを証明する「VAP技術」v1.2公開：改ざん検知と証跡の完全性を保証する監査フレームワークの仕様と検証コード",
+        "summary": "VAP（Verifiable AI Provenance）は、AIが実行した操作ログの改ざんを検知し、その証跡が完全であることを数学的に証明するための監査フレームワークだ。 従来の「単なるログ記録」とは異なり、ログの書き換え防止、範囲の整合性、操作主体と紐づくID管理を分離して設計している。 AIエージェントの自律化が進む中、ブラックボックス化するAIの挙動を追跡・監査したい開発者にとって、信頼性を担保する重要な技術基盤となる。"
+      },
+      "en": {
+        "title": "Verifiable AI Provenance (VAP) v1.2 debuts: New framework for tamper-proof AI audit trails and cryptographic log integrity",
+        "summary": "Verifiable AI Provenance (VAP) is an emerging audit framework designed to verify the integrity of AI-generated operation logs and mathematically detect tampering. Unlike standard logging solutions, VAP enforces strict separation between log rewriting protection, sequential range verification, and agent-specific identity linkage. As AI agents move toward increasing autonomy, developers need tools that move beyond simple event logging to provide provable, transparent audit trails. This v1.2 Draft 3 release introduces the core specifications and open-source verification code necessary to audit black-box AI behavior effectively. For builders working on agentic systems, VAP offers a robust pattern to satisfy enterprise compliance requirements by ensuring that every automated step is both traceable and cryptographically verifiable from end to end."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ",
+      "研究"
+    ],
+    "created_at": "2026-11-28T00:02:00.334Z"
+  },
+  {
     "id": "art-1795823238899-ncx7l",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -8697,32 +8777,6 @@
     "created_at": "2026-11-26T23:32:18.814Z"
   },
   {
-    "id": "art-1795735024737-s85jt",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/lemonIN/items/08d2bb00ebb6df532b5a",
-    "published_at": "2026-11-26T23:08:24.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY5ODE0MzIlMkY0YmJmOGQ3ZDJiNzViM2EwY2IzOGIwOTc0Y2RkYzVhOTg5ZDdhZGRlJTJGeF9sYXJnZS5wbmclM0YxNzM2NTM2ODM3P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz1iYzM5NGIwM2I5ZTMyYjBlNjg1NTg0ZjJmN2U3OGI0Mw%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D212190576611108f9d0cb54859c87ab6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUU1JTg1JTg1JUU5JTlCJUJCJUUzJTgyJUIxJUUzJTgzJUJDJUUzJTgzJTk2JUUzJTgzJUFCJUUzJTgxJUFFJUU1JThGJTk3JUU5JTlCJUEzJTIwJUVGJUJEJTlFJUU3JUI1JUExJUUzJTgxJUJFJUUzJTgyJThCJUU0JUI4JTk2JUU3JTk1JThDJUUzJTgxJThCJUUzJTgyJTg5JUUzJTgxJUFFJUU4JTg0JUIxJUU1JTg3JUJBJUVGJUJEJTlFJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YTQwYTkzZmVlYmQ4OTA4ODYzMWZkODY4YmUxYTQ1Njk&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBsZW1vbklOJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9OTMwMjZmMDQ0MDlhZGI1YTBhMDM2YzQ2NjRhNDM2YmQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=f01e8d7e314b027d840fae9d1ac8d8a5",
-    "title_ja": "「充電ケーブルが絡まる」日常のイライラをゲーム化：自我を持ったケーブルがコンセントを目指す2Dアクションゲーム『充電ケーブルの受難』開発秘話",
-    "summary_ja": "充電ケーブルが絡まるという現代人の共通の悩みを逆手に取り、自我を持つケーブルを操作してコンセントを目指す2Dアクションゲーム「充電ケーブルの受難」が開発された。 プレイヤーは、絡まりやすいという物理的な制約を逆手に取り、障害物を回避しながらゴールであるコンセントへの到達を目指す。 個人開発において、日常の些細な不満をユニークなゲームメカニズムへと昇華させる着眼点は、ユーザーの共感を呼ぶコンセプト設計の好例である。",
-    "translations": {
-      "ja": {
-        "title": "「充電ケーブルが絡まる」日常のイライラをゲーム化：自我を持ったケーブルがコンセントを目指す2Dアクションゲーム『充電ケーブルの受難』開発秘話",
-        "summary": "充電ケーブルが絡まるという現代人の共通の悩みを逆手に取り、自我を持つケーブルを操作してコンセントを目指す2Dアクションゲーム「充電ケーブルの受難」が開発された。 プレイヤーは、絡まりやすいという物理的な制約を逆手に取り、障害物を回避しながらゴールであるコンセントへの到達を目指す。 個人開発において、日常の些細な不満をユニークなゲームメカニズムへと昇華させる着眼点は、ユーザーの共感を呼ぶコンセプト設計の好例である。"
-      },
-      "en": {
-        "title": "Turning Daily Frustration into a Game: Indie Developer Creates 2D Action Platformer Where You Play as a Tangled Charging Cable",
-        "summary": "A new indie 2D action game titled 'Charging Cable's Tribulation' gamifies the universal modern frustration of tangled charging cables by putting players in control of a self-aware cable desperate to reach a wall outlet. Instead of trying to smooth out the mess, players must navigate intricate obstacles by embracing the physical limitations of being a tangled wire, turning the chaotic movement into a core platforming mechanic. This project serves as a compelling masterclass in game design for builders, proving that identifying relatable, everyday inconveniences can lead to high-engagement concepts. It demonstrates how simple, grounded human experiences—even mundane annoyances—can be transformed into unique, viral, and playable game mechanics that resonate immediately with a mass audience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-26T23:17:04.737Z"
-  },
-  {
     "id": "art-1795735009146-q7e2t",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -8930,32 +8984,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T22:17:26.152Z"
-  },
-  {
-    "id": "art-1795731439947-pup6u",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://benedictide.com/posts/ai/",
-    "published_at": "2026-11-26T22:02:28.000Z",
-    "og_image_url": "https://benedictide.com/assets/img/protest1.png",
-    "title_ja": "AIに対する怒りの矛先を誤るな—開発者が直面する技術的ボトルネックと「AIの責任」を切り分けるべき理由",
-    "summary_ja": "AIに対して過剰な期待や誤った批判を向けるのではなく、根本的な技術的負債やエンジニアリングの課題を直視すべきだと論じる。 多くの場合、AIの性能限界ではなく、開発プロセスやアーキテクチャの未熟さが問題の所在である。 エンジニアはAIを魔法の杖ではなく、既存のワークフローを補強するツールと見なし、システム設計の不備を自ら解決する責任がある。 技術の成熟度を正しく理解し、批判ではなく構築に注力することが、現状のAI開発における唯一の正解である。",
-    "translations": {
-      "ja": {
-        "title": "AIに対する怒りの矛先を誤るな—開発者が直面する技術的ボトルネックと「AIの責任」を切り分けるべき理由",
-        "summary": "AIに対して過剰な期待や誤った批判を向けるのではなく、根本的な技術的負債やエンジニアリングの課題を直視すべきだと論じる。 多くの場合、AIの性能限界ではなく、開発プロセスやアーキテクチャの未熟さが問題の所在である。 エンジニアはAIを魔法の杖ではなく、既存のワークフローを補強するツールと見なし、システム設計の不備を自ら解決する責任がある。 技術の成熟度を正しく理解し、批判ではなく構築に注力することが、現状のAI開発における唯一の正解である。"
-      },
-      "en": {
-        "title": "Why developers are angry at AI for the wrong reasons: addressing the misdiagnosis of systemic engineering bottlenecks",
-        "summary": "This critique argues that developer frustration with artificial intelligence is frequently misdirected, often conflating systemic organizational debt or poor engineering practices with actual AI limitations. Instead of blaming AI for hallucinated outputs or integration difficulties, builders should recognize that these bottlenecks are typically symptoms of poorly defined requirements or fragile legacy architectures. The article contends that treating AI as a \"magic fix\" for structural flaws is a fundamental error. For builders, the path forward requires acknowledging AI’s role as an enhancement tool rather than an autonomous substitute for rigorous software engineering. By shifting focus from criticizing model capabilities to tightening system architecture and human-in-the-loop workflows, developers can actually leverage current models effectively rather than merely complaining about their inherent, well-known boundaries."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-26T22:17:19.947Z"
   },
   {
     "id": "art-1795730567172-w58qv",
@@ -12764,33 +12792,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T00:01:59.431Z"
-  },
-  {
-    "id": "art-1795649549150-125t1",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/picopeeno/articles/tysing-notes-05",
-    "published_at": "2026-11-25T22:30:05.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cJt3H54a--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E3%2582%2584%25E3%2582%258B%25E3%2581%25AA%25E3%2580%258D%25E3%2582%2588%25E3%2582%258A%25E3%2580%258C%25E3%2581%2593%25E3%2581%2586%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BB%25E3%2581%2597%25E3%2581%2584%25E3%2580%258D%25E3%2580%2582%25E6%259B%25B2%25E3%2581%25AB%25E5%2590%2588%25E3%2581%2586%25E7%25B5%25B5%25E3%2581%25A8%25E5%258B%2595%25E7%2594%25BB%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E6%258C%2587%25E7%25A4%25BA%25E3%2581%25AE%25E6%259B%25B8%25E3%2581%258D%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2594%25E3%2582%25B3%25E3%2583%2594%25E3%2583%25BC%25E3%2583%258E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I3MDIyODJlNGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "楽曲の雰囲気とAI生成を一致させるプロンプト術：否定指示を避け、目指すイメージを具体化する「Tysing Notes」の制作事例",
-    "summary_ja": "AIを用いた楽曲アートや背景動画の生成において、「やるな（否定形）」の指示は避け、「こうなってほしい（肯定形）」という状態を具体的に記述するのが、意図した映像を得るための鉄則である。 Tysing Notesの制作を通じ、AI生成では抽象的な表現よりも、構図や質感といった「あるべき状態」を言葉に落とし込むことで、楽曲の世界観と映像の乖離を防げることが分かった。 個人開発者がAIでリッチなアセットを量産する際、指示の書き方を肯定的にシフトするだけで生成品質は劇的に向上する。",
-    "translations": {
-      "ja": {
-        "title": "楽曲の雰囲気とAI生成を一致させるプロンプト術：否定指示を避け、目指すイメージを具体化する「Tysing Notes」の制作事例",
-        "summary": "AIを用いた楽曲アートや背景動画の生成において、「やるな（否定形）」の指示は避け、「こうなってほしい（肯定形）」という状態を具体的に記述するのが、意図した映像を得るための鉄則である。 Tysing Notesの制作を通じ、AI生成では抽象的な表現よりも、構図や質感といった「あるべき状態」を言葉に落とし込むことで、楽曲の世界観と映像の乖離を防げることが分かった。 個人開発者がAIでリッチなアセットを量産する際、指示の書き方を肯定的にシフトするだけで生成品質は劇的に向上する。"
-      },
-      "en": {
-        "title": "Mastering AI Art Prompts: Why Shifting from Negative Instructions to Positive Visual Goals Dramatically Improves Musical Asset Generation",
-        "summary": "When generating album art and background visuals for music, avoiding negative prompts like \"do not include this\" is crucial; instead, developers should describe exactly what the desired output should look like. Through the development of Tysing Notes, the author discovered that framing prompts in the affirmative—focusing on specific composition, texture, and mood—leads to significantly more accurate alignment between audio tracks and visual assets. For individual builders creating high-quality content via AI, moving away from restrictive instructions toward concrete, positive descriptions is the key to maintaining consistent creative direction. Mastering this precise language strategy allows solo developers to generate professional-grade, thematic assets that actually complement their work rather than fighting against the AI's tendencies."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "画像生成"
-    ],
-    "created_at": "2026-11-25T23:32:29.150Z"
   },
   {
     "id": "art-1795648654458-gnv8o",
