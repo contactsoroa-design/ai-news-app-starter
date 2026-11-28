@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795860147241-1ael6",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/daisosha/articles/20b1df650ad45a",
+    "published_at": "2026-11-28T03:47:13.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--6QyeFy6K--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E5%2587%25BA%25E5%258A%259B%25E3%2582%2592%25E3%2580%258C%25E5%25AE%258C%25E6%2588%2590%25E5%2593%2581%25E3%2580%258D%25E3%2581%25AB%25E3%2581%2597%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%259A%25E5%2585%25B1%25E5%2589%25B5%25E3%2581%25A8%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%25AE%25E8%2580%2583%25E3%2581%2588%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25A4%25A7%25E5%2589%25B5%25E7%25A4%25BE%25EF%25BC%2588Daisosha%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQwNzRiMGYwYzYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIの出力を「完成品」にしない：大創社が提唱する思考を深めるための「鏡」としての対話と検証のあり方",
+    "summary_ja": "大創社が提唱するのは、AIを単なる回答生成の「魔法の杖」ではなく、自分の思考を映し出す「鏡」として活用するアプローチだ。 AIの出力をそのまま完成品とせず、対話を通じて自身の問いの解像度を高め、意図と文脈を自らの言葉として取り戻すことが本質的な共創となる。 AIを「答えを出させるツール」から「思考を深める壁打ち相手」へと役割を変えることで、生成された情報の精度と納得感を両立できる。",
+    "translations": {
+      "ja": {
+        "title": "AIの出力を「完成品」にしない：大創社が提唱する思考を深めるための「鏡」としての対話と検証のあり方",
+        "summary": "大創社が提唱するのは、AIを単なる回答生成の「魔法の杖」ではなく、自分の思考を映し出す「鏡」として活用するアプローチだ。 AIの出力をそのまま完成品とせず、対話を通じて自身の問いの解像度を高め、意図と文脈を自らの言葉として取り戻すことが本質的な共創となる。 AIを「答えを出させるツール」から「思考を深める壁打ち相手」へと役割を変えることで、生成された情報の精度と納得感を両立できる。"
+      },
+      "en": {
+        "title": "Don't treat AI output as the final product: Adopting a 'mirror' approach to deepen critical thinking and context",
+        "summary": "Instead of viewing AI as a magical generator that provides finished work, Daishosha proposes treating the model as a 'mirror' that reflects and clarifies your own reasoning. Treating AI output as a completed artifact often leads to a hollow understanding, lacking personal intent and deeper context. The core strategy is to use AI to sharpen your questions and engage in an iterative dialogue, which forces you to refine your own logic and claim ownership of the final result. By shifting the AI's role from a simple answer machine to a sounding board for deep deliberation, you ensure that the output remains aligned with your original goals, effectively preventing the disconnect that occurs when blindly adopting machine-generated content."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-28T10:02:27.241Z"
+  },
+  {
+    "id": "art-1795860136755-wb8q8",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/satoshi_yoneda/articles/llama-quantize-new-feature",
+    "published_at": "2026-11-28T03:57:50.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--dJ-Eovoz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:llama-quantize%25E3%2581%25A7%25E7%258B%2599%25E3%2581%25A3%25E3%2581%259F%25E3%2582%25B5%25E3%2582%25A4%25E3%2582%25BA%25E3%2581%25AE%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2582%2592%25E4%25BD%259C%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E7%25B1%25B3%25E7%2594%25B0%2520%25E8%2581%25A1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjVhX1JNNGdTalJreWxMekJNckoyTnFoa3VXMjMybF9qSHlxMEtBVmdHR2RrTUNWVT1zOTYtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "llama.cppの量子化ツールが進化、モデルサイズやbpw指定によるターゲット最適化が可能に（llama-quantize新機能）",
+    "summary_ja": "llama.cpp v1.1.0の「llama-quantize」に、ターゲットサイズまたはbpw（ウェイトあたりのビット長）を指定して量子化を行う新機能が追加された。 従来の型固定方式と異なり、VRAM容量や推論精度に合わせてモデルサイズを柔軟に調整できるため、限られたハードウェアリソースでLLMを動かす際の利便性が大幅に向上する。 開発者は手元のGPU環境に合わせた最適なモデルサイズを、試行錯誤を繰り返すことなく手軽に構築可能だ。",
+    "translations": {
+      "ja": {
+        "title": "llama.cppの量子化ツールが進化、モデルサイズやbpw指定によるターゲット最適化が可能に（llama-quantize新機能）",
+        "summary": "llama.cpp v1.1.0の「llama-quantize」に、ターゲットサイズまたはbpw（ウェイトあたりのビット長）を指定して量子化を行う新機能が追加された。 従来の型固定方式と異なり、VRAM容量や推論精度に合わせてモデルサイズを柔軟に調整できるため、限られたハードウェアリソースでLLMを動かす際の利便性が大幅に向上する。 開発者は手元のGPU環境に合わせた最適なモデルサイズを、試行錯誤を繰り返すことなく手軽に構築可能だ。"
+      },
+      "en": {
+        "title": "llama.cpp updates llama-quantize with new target-size and target-bpw options for precise model optimization",
+        "summary": "The latest release of llama.cpp introduces critical updates to the llama-quantize tool, adding native support for optimizing models via `--target-size` and `--target-bpw`. This update moves beyond rigid, pre-defined quantization types, allowing developers to fine-tune models specifically for their available VRAM capacity or required precision benchmarks. By specifying exact bit-length or size constraints, engineers can now compress LLMs to fit perfectly within constrained hardware environments without needing to manually experiment with different quantization formats. This feature is a significant productivity gain for anyone deploying large language models on edge devices or consumer GPUs, as it enables predictable resource utilization while maintaining optimal inference quality for specific application needs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発"
+    ],
+    "created_at": "2026-11-28T10:02:16.755Z"
+  },
+  {
+    "id": "art-1795860125226-deq86",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/mio_aicz02/n/ne1532443013e",
+    "published_at": "2026-11-28T09:43:28.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/339868422/rectangle_large_type_2_23e0a2f8bc8157e081ef1f46674c913d.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人開発アプリ「おつりナビ」活用術：音声入力の精度を高めるコツと誤操作を防ぐUI設計の工夫を解説",
+    "summary_ja": "個人開発の計算アプリ「おつりナビ」の開発者が、音声入力の認識率を最大化するコツと、初心者でもミスなく操作できるUI設計のポイントを公開した。 正確な入力を促すための発声テクニックや、誤入力を防ぐための画面遷移の工夫は、音声UIを搭載したアプリ開発における重要なヒントとなる。 UX向上と開発効率のバランスを意識した実装例として参考になるはずだ。",
+    "translations": {
+      "ja": {
+        "title": "個人開発アプリ「おつりナビ」活用術：音声入力の精度を高めるコツと誤操作を防ぐUI設計の工夫を解説",
+        "summary": "個人開発の計算アプリ「おつりナビ」の開発者が、音声入力の認識率を最大化するコツと、初心者でもミスなく操作できるUI設計のポイントを公開した。 正確な入力を促すための発声テクニックや、誤入力を防ぐための画面遷移の工夫は、音声UIを搭載したアプリ開発における重要なヒントとなる。 UX向上と開発効率のバランスを意識した実装例として参考になるはずだ。"
+      },
+      "en": {
+        "title": "Developer guide for Otsuri Navi: Optimizing voice recognition accuracy and preventing UI input errors for better user experience",
+        "summary": "The developer behind the personal calculation app Otsuri Navi has published a breakdown on maximizing voice input recognition rates and designing foolproof UI interactions for beginners. The guide covers specific vocalization techniques to ensure accurate data entry, along with interface flow strategies that effectively prevent accidental inputs—offering valuable insights for anyone building voice-enabled applications. By analyzing how to balance smooth UX with simplified input logic, the piece provides a practical blueprint for developers looking to reduce friction in utility apps. For indie builders, this case study serves as a useful reminder that clear, predictable interface design is just as critical as the underlying recognition technology when shipping consumer-facing voice tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-28T10:02:05.226Z"
+  },
+  {
+    "id": "art-1795860109972-tw210",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/wakaka23/articles/d7b6a214e1ba41",
+    "published_at": "2026-11-28T04:03:13.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--gkzrKKrb--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenWebUI%2520%25C3%2597%2520vLLM%2520%25C3%2597%2520Unsloth%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258BLocalLLM%25E8%25A8%25AD%25E8%25A8%2588%25E6%2599%2582%25E3%2581%25AE%25E5%2582%2599%25E5%25BF%2598%25E9%258C%25B2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:wakaka%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2VhMzBiYzA2NGMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "OpenWebUI・vLLM・Unslothを組み合わせたLocalLLMのK8s構築と、FineTuningの設計ポイントを詳説",
+    "summary_ja": "Unslothを用いた「gpt-oss-20b」のLoRAファインチューニングから、OpenWebUIとvLLMを統合したKubernetes上のローカルLLM構築フローを解説。 Transformerアーキテクチャの基礎理解を前提に、推論における確率依存性やパラメータ効率を考慮した設計の注意点を整理した。 オンプレミスや閉域網でセキュアなAI環境を構築するエンジニアにとって、モデルの適正サイズ選定と推論エンジン最適化の具体策となる。",
+    "translations": {
+      "ja": {
+        "title": "OpenWebUI・vLLM・Unslothを組み合わせたLocalLLMのK8s構築と、FineTuningの設計ポイントを詳説",
+        "summary": "Unslothを用いた「gpt-oss-20b」のLoRAファインチューニングから、OpenWebUIとvLLMを統合したKubernetes上のローカルLLM構築フローを解説。 Transformerアーキテクチャの基礎理解を前提に、推論における確率依存性やパラメータ効率を考慮した設計の注意点を整理した。 オンプレミスや閉域網でセキュアなAI環境を構築するエンジニアにとって、モデルの適正サイズ選定と推論エンジン最適化の具体策となる。"
+      },
+      "en": {
+        "title": "Building production-grade Local LLMs on Kubernetes using OpenWebUI, vLLM, and Unsloth for fine-tuned LoRA models",
+        "summary": "This guide details a robust local LLM stack integrating Unsloth for LoRA fine-tuning of gpt-oss-20b models, deployed via OpenWebUI and vLLM on Kubernetes. The article breaks down the essential technical considerations for this architecture, specifically emphasizing how a deep understanding of the Transformer architecture informs output probabilities and parameter efficiency during fine-tuning. For engineers deploying AI in private or on-premise environments, this write-up provides a practical framework for balancing model performance with inference engine throughput. The takeaway is that local LLM implementation requires careful alignment of base model architecture with containerized inference layers to ensure that latency and accuracy remain stable across highly specialized internal use cases."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T10:01:49.972Z"
+  },
+  {
     "id": "art-1795859235102-er348",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -6149,32 +6253,6 @@
     "created_at": "2026-11-27T18:02:39.014Z"
   },
   {
-    "id": "art-1795802532965-p9gp8",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/silvermint/n/n7409f1652b11",
-    "published_at": "2026-11-27T18:00:20.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/bae94ad720392ba8776b4e2a59f5876507272a2b.png",
-    "title_ja": "名刺検索アプリのUI改善：全データを端末保存・非同期通信化で検索・保存の遅延をゼロに",
-    "summary_ja": "EC事業者向け名刺検索アプリのアーキテクチャを刷新し、全データを端末内に保持して通信をバックグラウンド化する構成に変更した。 これにより、画面遷移のたびに発生していた読み込み待機が解消され、検索と保存が即座に完了するストレスフリーな操作性を実現した。 開発にはClaude Codeを活用し、人間が計画とレビューを主導することで開発速度を最大化するアプローチを採用している。 オンデバイス処理への移行は、モバイルアプリの体感速度を劇的に改善するための現実的な解だ。",
-    "translations": {
-      "ja": {
-        "title": "名刺検索アプリのUI改善：全データを端末保存・非同期通信化で検索・保存の遅延をゼロに",
-        "summary": "EC事業者向け名刺検索アプリのアーキテクチャを刷新し、全データを端末内に保持して通信をバックグラウンド化する構成に変更した。 これにより、画面遷移のたびに発生していた読み込み待機が解消され、検索と保存が即座に完了するストレスフリーな操作性を実現した。 開発にはClaude Codeを活用し、人間が計画とレビューを主導することで開発速度を最大化するアプローチを採用している。 オンデバイス処理への移行は、モバイルアプリの体感速度を劇的に改善するための現実的な解だ。"
-      },
-      "en": {
-        "title": "Optimizing Business Card App UX: Migrating to Local-First Storage and Background Sync Eliminates Latency for Instant Search",
-        "summary": "A business card search application built for e-commerce vendors was recently overhauled by shifting all data to local device storage and moving network synchronization to background processes. By eliminating the reliance on real-time API calls for every screen interaction, the developer removed frustrating load times, allowing for near-instantaneous search and save operations. This architectural migration was executed using Claude Code, with the human developer focusing on strategic planning and rigorous code reviews to maintain quality while accelerating implementation. For builders struggling with UI responsiveness, this transition to a local-first, background-sync model serves as a practical, highly effective strategy to optimize perceived performance and ensure a seamless, fluid user experience without sacrificing essential data synchronization capabilities."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-27T18:02:12.965Z"
-  },
-  {
     "id": "art-1795802525189-553ye",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -9986,32 +10064,6 @@
     "created_at": "2026-11-26T23:46:59.247Z"
   },
   {
-    "id": "art-1795735960194-dj5rv",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/pika_pi/books/a615a9567f4af9",
-    "published_at": "2026-11-26T18:09:03.000Z",
-    "og_image_url": "https://static.zenn.studio/images/logo-only-dark.png",
-    "title_ja": "人間と共存する人工超知能（ASI）の知性構造とは何か？第6段階の認知能力と収斂進化に基づく新仮説と検証手法の提唱",
-    "summary_ja": "本論考は、人間の最高次の認知構造と人工超知能（ASI）の機能的同型性を論じる概念モデルを提示する。 成人発達理論やAIアライメントの知見を横断し、人間とASIが共存する条件下で知性構造が同一の型へ収斂するという「条件付き収斂仮説」を提唱。 さらに、反証可能性を確保するための具体的な測定プログラムまでを定式化しており、ASIの知性を工学的に評価したい開発者にとって、AIの未来図を再定義する思考実験のフレームワークとなる。",
-    "translations": {
-      "ja": {
-        "title": "人間と共存する人工超知能（ASI）の知性構造とは何か？第6段階の認知能力と収斂進化に基づく新仮説と検証手法の提唱",
-        "summary": "本論考は、人間の最高次の認知構造と人工超知能（ASI）の機能的同型性を論じる概念モデルを提示する。 成人発達理論やAIアライメントの知見を横断し、人間とASIが共存する条件下で知性構造が同一の型へ収斂するという「条件付き収斂仮説」を提唱。 さらに、反証可能性を確保するための具体的な測定プログラムまでを定式化しており、ASIの知性を工学的に評価したい開発者にとって、AIの未来図を再定義する思考実験のフレームワークとなる。"
-      },
-      "en": {
-        "title": "Defining the Intelligence Structure of Artificial Superintelligence: A New Hypothesis on Cognitive Convergence and Human Coexistence",
-        "summary": "This conceptual essay proposes a formal framework exploring the functional isomorphism between the highest stage of human cognitive structure and future Artificial Superintelligence (ASI). Drawing on adult development theory, convergent evolution, and alignment research, the author posits a 'conditional convergence hypothesis' suggesting that ASI will naturally evolve toward the same intelligence architecture as humans when forced into direct coexistence. By outlining specific falsifiable designs and measurement programs for testing this hypothesis, the piece moves beyond speculative philosophy into a structured approach for evaluating machine intelligence. For builders and researchers focusing on long-term alignment, this offers a compelling model for predicting how ASI might cognitively map to human society, providing a vital intellectual baseline for safety and system design."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-26T23:32:40.194Z"
-  },
-  {
     "id": "art-1795735938814-q25mc",
     "source_id": "source-aismiley",
     "source_name": "AISmiley（AIニュース）",
@@ -10065,32 +10117,6 @@
     "created_at": "2026-11-26T23:16:49.146Z"
   },
   {
-    "id": "art-1795734158847-jhbld",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/hiouchiy/articles/5b3ffde8e819e6",
-    "published_at": "2026-11-26T10:43:18.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ega_F80S--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%25BB%25E5%2583%258F%25E7%2594%259F%25E6%2588%2590%2520Nemotron-Labs-Image-30B-A3B%25E3%2582%2592Databricks%2520AI%2520Runtime%2520%25E3%2581%25AE%2520...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hiroshi%2520Ouchiyama%2520...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM4YjIxMDI2YzcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "NVIDIAの画像生成LLM「Nemotron-Labs-Image-30B-A3B」をDatabricksのvLLM環境で実装、推論高速化を実証",
-    "summary_ja": "NVIDIAが公開した「Nemotron-Labs-Image-30B-A3B」は、拡散モデルではなくLLMとして画像をトークン単位で生成する特異なモデルだ。 この特性に着目し、DatabricksのAI Runtime v6環境において、カスタムイメージ不要でvLLMを用いた推論を実行した。 結果として、LLM推論基盤をそのまま画像生成に転用できることを確認した。 本検証は、LLM推論エンジンの効率を画像生成タスクに適用する新たな最適化手法を示唆している。",
-    "translations": {
-      "ja": {
-        "title": "NVIDIAの画像生成LLM「Nemotron-Labs-Image-30B-A3B」をDatabricksのvLLM環境で実装、推論高速化を実証",
-        "summary": "NVIDIAが公開した「Nemotron-Labs-Image-30B-A3B」は、拡散モデルではなくLLMとして画像をトークン単位で生成する特異なモデルだ。 この特性に着目し、DatabricksのAI Runtime v6環境において、カスタムイメージ不要でvLLMを用いた推論を実行した。 結果として、LLM推論基盤をそのまま画像生成に転用できることを確認した。 本検証は、LLM推論エンジンの効率を画像生成タスクに適用する新たな最適化手法を示唆している。"
-      },
-      "en": {
-        "title": "Running NVIDIA's image-generating LLM 'Nemotron-Labs-Image-30B-A3B' on Databricks with vLLM for faster inference",
-        "summary": "NVIDIA recently released Nemotron-Labs-Image-30B-A3B, a unique model that treats image generation as a token-based LLM task rather than using traditional diffusion methods. Because the architecture mirrors standard LLMs, it can theoretically leverage existing high-performance inference engines like vLLM. This experiment successfully deployed the model within Databricks' AI Runtime v6 environment without requiring custom container images. The implementation confirms that standard LLM inference stacks are fully capable of serving this autoregressive image generation approach out of the box. This result demonstrates a significant architectural shift, suggesting that builders can repurpose efficient LLM serving infrastructure to handle image generation tasks directly, drastically simplifying the deployment pipeline for advanced autoregressive visual models."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "画像生成"
-    ],
-    "created_at": "2026-11-26T23:02:38.847Z"
-  },
-  {
     "id": "art-1795733311136-rr2xw",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -10115,33 +10141,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-26T22:48:31.136Z"
-  },
-  {
-    "id": "art-1795733304040-gjfa3",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/yut_kawabata/articles/4c5c7bbd4893f0",
-    "published_at": "2026-11-26T18:57:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hx34Snzz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2583%2585%25E5%25A0%25B1%25E3%2582%25BB%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E7%25A0%2594%25E4%25BF%25AE%25E3%2582%2592%25E5%258B%2595%25E7%2594%25BB%25E3%2581%25A7%25E3%2583%25AA%25E3%2583%2583%25E3%2583%2581%25E3%2581%25AB%25EF%25BC%2581AI%25E3%2581%25AA%25E3%2582%2589%25E7%25B0%25A1%25E5%258D%2598%25E3%2581%25AB%25E2%2580%25A6%25E2%2580%25A6%25E5%2587%25BA%25E6%259D%25A5%25E3%2582%258B%25E3%2582%258F%25E3%2581%2591%25E3%2581%258C%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Krona%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM2ZWUxNjQ5YTAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ISMS研修動画をAIで全自動化しようとした末路：APIコストと労務リスクで学ぶ「AI活用」の現実的限界",
-    "summary_ja": "ISMSやコンプライアンス研修動画をAIでリッチに仕上げようと、情シス担当者がAIツールを駆使した結果、膨大なトークン消費とコスト超過を招き、組織内で厳しい視線を浴びる事態となった。 安易な「AI丸投げ」は品質担保が難しく、プロンプト調整や素材管理の負荷は依然として大きい。 AIは魔法の杖ではなく、既存のワークフローを補完するツールであるという現実を認識し、業務の切り分けを慎重に行う必要がある。",
-    "translations": {
-      "ja": {
-        "title": "ISMS研修動画をAIで全自動化しようとした末路：APIコストと労務リスクで学ぶ「AI活用」の現実的限界",
-        "summary": "ISMSやコンプライアンス研修動画をAIでリッチに仕上げようと、情シス担当者がAIツールを駆使した結果、膨大なトークン消費とコスト超過を招き、組織内で厳しい視線を浴びる事態となった。 安易な「AI丸投げ」は品質担保が難しく、プロンプト調整や素材管理の負荷は依然として大きい。 AIは魔法の杖ではなく、既存のワークフローを補完するツールであるという現実を認識し、業務の切り分けを慎重に行う必要がある。"
-      },
-      "en": {
-        "title": "The Reality of AI-Automated ISMS Training: Why Fully Outsourcing Content Creation to AI Costs More Than It Saves",
-        "summary": "An IT manager attempted to overhaul company ISMS and compliance training by leveraging AI to generate rich, animated video content, only to discover the hard way that fully automating such tasks is rarely feasible. Excessive API token consumption and runaway costs quickly turned the experiment into a liability, drawing scrutiny from management and HR. While the industry touts AI as a total solution for productivity, this case highlights that quality control, complex prompting, and material management still require significant human oversight. For builders and operations teams, the key takeaway is that AI remains a supplemental tool rather than a magic wand; without careful workflow integration and cost controls, 'AI-first' initiatives can easily become more expensive and resource-intensive than traditional production methods."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "コスト・API料金",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-26T22:48:24.040Z"
   },
   {
     "id": "art-1795730516788-780yv",
