@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795868254364-uz256",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/miyakona/articles/mutation-survivors-compare-merge-base",
+    "published_at": "2026-11-28T08:30:43.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--rdWZyp6R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25B7%2591%25E3%2581%25A7%25E6%25AE%258B%25E3%2581%25A3%25E3%2581%259F%25E5%25A4%2589%25E7%2595%25B0%25E3%2582%2592%25E3%2580%2581merge-base%25E3%2581%25A7%25E5%25BD%2593%25E3%2581%25A6%25E7%259B%25B4%25E3%2581%2597%25E3%2581%25A6%25E4%25BB%2595%25E5%2588%2586%25E3%2581%2591%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:miyakona%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzc0MzEzNDFiODYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントの変異テスト戦略：テストをすり抜ける「緑の変異」をgit merge-baseで再検証し正しく仕分ける手法",
+    "summary_ja": "AIエージェントが生成する変異テストにおいて、テストを通過してしまう「緑の変異」が大量発生する課題に対し、git merge-baseを活用した再検証と仕分け手法が有効だ。 上限値テストなどのロジック漏れを見逃さないためには、単にテストが通ったことだけを喜ぶのではなく、どの変異が実効性を持つかを厳密に特定する必要がある。 AIがPRを出す前にこのプロセスを組み込むことで、テストスイートの信頼性を高め、エージェントによるコード修正の品質を保証できる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントの変異テスト戦略：テストをすり抜ける「緑の変異」をgit merge-baseで再検証し正しく仕分ける手法",
+        "summary": "AIエージェントが生成する変異テストにおいて、テストを通過してしまう「緑の変異」が大量発生する課題に対し、git merge-baseを活用した再検証と仕分け手法が有効だ。 上限値テストなどのロジック漏れを見逃さないためには、単にテストが通ったことだけを喜ぶのではなく、どの変異が実効性を持つかを厳密に特定する必要がある。 AIがPRを出す前にこのプロセスを組み込むことで、テストスイートの信頼性を高め、エージェントによるコード修正の品質を保証できる。"
+      },
+      "en": {
+        "title": "Mutation testing for AI agents: A strategy to filter surviving 'green mutants' using git merge-base for better verification",
+        "summary": "When using AI agents for mutation testing, a common challenge is the accumulation of 'green mutants'—code changes that pass existing tests but shouldn't, such as failing to enforce strict limits. Relying solely on passing test suites creates a false sense of security, as seen when logic errors remain hidden despite passing tests. To solve this, developers should use git merge-base to systematically re-verify and isolate these mutants before an AI agent submits a pull request. By forcing the AI to evaluate why specific mutations survived, you sharpen the test suite’s effectiveness. Implementing this rigorous verification loop ensures that code modifications are not just syntactically correct, but logically robust enough to survive actual edge case scrutiny."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T12:17:34.364Z"
+  },
+  {
+    "id": "art-1795868248033-481f3",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://deadneurons.substack.com/p/is-ai-about-to-break-encryption",
+    "published_at": "2026-11-28T11:51:20.000Z",
+    "og_image_url": null,
+    "title_ja": "AIは暗号を破りうるか？暗号資産や通信のセキュリティを脅かす可能性と、ポスト量子暗号の耐性に関する技術的議論を深掘り",
+    "summary_ja": "LLMやAIアルゴリズムが、既存の暗号アルゴリズム（RSAや楕円曲線暗号など）にどのような論理的脅威をもたらしうるか、その実現可能性を論じた考察記事。 特にAIが持つパターン認識能力やコード生成能力が、暗号解読の新たな手法として機能する可能性と、ポスト量子暗号が現代のセキュリティインフラをどの程度守れるかを分析している。 セキュリティエンジニアは、AI時代の「暗号の脆弱性」を前提としたレジリエントなシステム設計を今すぐ再考する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "AIは暗号を破りうるか？暗号資産や通信のセキュリティを脅かす可能性と、ポスト量子暗号の耐性に関する技術的議論を深掘り",
+        "summary": "LLMやAIアルゴリズムが、既存の暗号アルゴリズム（RSAや楕円曲線暗号など）にどのような論理的脅威をもたらしうるか、その実現可能性を論じた考察記事。 特にAIが持つパターン認識能力やコード生成能力が、暗号解読の新たな手法として機能する可能性と、ポスト量子暗号が現代のセキュリティインフラをどの程度守れるかを分析している。 セキュリティエンジニアは、AI時代の「暗号の脆弱性」を前提としたレジリエントなシステム設計を今すぐ再考する必要がある。"
+      },
+      "en": {
+        "title": "Will AI Actually Break Modern Encryption? Examining Potential Threats to RSA, ECC, and the Future of Cryptographic Resilience",
+        "summary": "This article explores whether evolving AI and LLM capabilities pose a genuine, existential threat to established cryptographic standards like RSA and elliptic curve cryptography. By analyzing the intersection of generative pattern recognition and cryptanalysis, the author scrutinizes whether AI can accelerate the breaking of encryption keys or if post-quantum cryptography provides the necessary, durable defense against future machine-learning-driven exploits. For builders and security engineers, the practical takeaway is that relying on legacy encryption protocols is increasingly risky; systems must now be architected with quantum-resistant standards in mind. The piece concludes that moving beyond theoretical fear, developers need to prioritize \"crypto-agility\" as a fundamental requirement to survive in an era where AI-automated attacks could render current protection mechanisms obsolete."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "セキュリティ",
+      "研究"
+    ],
+    "created_at": "2026-11-28T12:17:28.033Z"
+  },
+  {
+    "id": "art-1795868239576-kjw86",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/vast_jacana915/n/n42d83469a660",
+    "published_at": "2026-11-28T11:57:28.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341964224/rectangle_large_type_2_c02a8bf3a2d504529f0c25f267f3b7d3.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "個人サイト公開から1か月：Google検索流入ゼロから「インデックス完了」に至るまでのリアルなPVと検証記録",
+    "summary_ja": "レトロゲーム相場サイトを公開した開発者が、Google検索からの流入が始まるまでの1か月間の実体験を公開した。 開設直後はトップページのみがインデックスされ、検索流入は皆無という状態から、適切なコンテンツ投入とクロール促進を経て検索エンジンに認識されるまでの過程を、具体的なPV推移とともに解説する。 個人開発でSEOの「0→1」に苦戦しているビルダーにとって、検索エンジンの挙動を理解し、粘り強くコンテンツを積み上げることの重要性が学べる好事例である。",
+    "translations": {
+      "ja": {
+        "title": "個人サイト公開から1か月：Google検索流入ゼロから「インデックス完了」に至るまでのリアルなPVと検証記録",
+        "summary": "レトロゲーム相場サイトを公開した開発者が、Google検索からの流入が始まるまでの1か月間の実体験を公開した。 開設直後はトップページのみがインデックスされ、検索流入は皆無という状態から、適切なコンテンツ投入とクロール促進を経て検索エンジンに認識されるまでの過程を、具体的なPV推移とともに解説する。 個人開発でSEOの「0→1」に苦戦しているビルダーにとって、検索エンジンの挙動を理解し、粘り強くコンテンツを積み上げることの重要性が学べる好事例である。"
+      },
+      "en": {
+        "title": "One month of personal site growth: A developer’s real-world report on moving from zero Google search traffic to indexation",
+        "summary": "A developer behind a retro gaming market price site shared their candid experience documenting the first month of growth after launching. Initially, the project suffered from zero search traffic because only the landing page was indexed by Google, creating a familiar bottleneck for new sites. The piece breaks down the exact PV numbers and the steps taken to convince search engines to crawl and rank the actual content. This provides a realistic look at the patience required for organic SEO, proving that steady, deliberate content updates are the key to breaking the 'zero-traffic' barrier. For solo developers building niche aggregators, it is a vital reminder that technical indexing is a prerequisite before content quality even begins to matter."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "マーケ・集客・ASO",
+      "開発"
+    ],
+    "created_at": "2026-11-28T12:17:19.576Z"
+  },
+  {
+    "id": "art-1795868220282-sfk4m",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/ai_nichijou0/articles/01310137b85700",
+    "published_at": "2026-11-28T10:18:02.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--B5x3yS4E--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Muse%25E3%2581%25AB%25E9%25A0%25BC%25E3%2582%2593%25E3%2581%25A0%25E3%2581%2593%25E3%2581%25A8%25E3%2581%258C%25E7%25BF%258C%25E6%259C%259D%25E3%2581%25AB%25E3%2581%25AF%25E6%25B6%2588%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25AF%25E3%2580%2581%25E8%25A8%2598%25E9%258C%25B2%25E3%2581%258C%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E3%2581%258B%25E3%2582%2589%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%258F%25E3%2583%2581%25E3%2581%25AE%25E4%25BB%25BB%25E3%2581%259B%25E6%2596%25B9%25E3%2583%25A9%25E3%2583%259C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvYS5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントとの協働で「翌朝に記憶が消える」を防ぐには？対話履歴の記録と継続性を確保する3つの運用メソッド",
+    "summary_ja": "AIエージェントに業務を依頼しても、翌朝には設定や文脈がリセットされてしまう問題は、明示的な記録不足が原因だ。 会話を再開する際、前日の決定事項や条件を強制的に想起させるプロンプト設計と、タスクの「終了時」の書き方をルーチン化することで、AIの文脈維持能力は劇的に向上する。 開発者は、単なる指示出しではなく、AIが参照できる「永続的なログ」をどのように残すかを設計の初期段階から組み込むべきである。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントとの協働で「翌朝に記憶が消える」を防ぐには？対話履歴の記録と継続性を確保する3つの運用メソッド",
+        "summary": "AIエージェントに業務を依頼しても、翌朝には設定や文脈がリセットされてしまう問題は、明示的な記録不足が原因だ。 会話を再開する際、前日の決定事項や条件を強制的に想起させるプロンプト設計と、タスクの「終了時」の書き方をルーチン化することで、AIの文脈維持能力は劇的に向上する。 開発者は、単なる指示出しではなく、AIが参照できる「永続的なログ」をどのように残すかを設計の初期段階から組み込むべきである。"
+      },
+      "en": {
+        "title": "Preventing AI memory loss in agentic workflows: Three essential habits for maintaining context between daily sessions",
+        "summary": "When delegating tasks to AI agents, the common frustration of waking up to a reset context—where established rules and corrections have mysteriously vanished—is usually a failure to capture session history explicitly. By institutionalizing a structured method for documenting decisions at the end of each session and forcing the model to re-ingest these constraints upon reboot, builders can effectively mitigate memory drift. The practical takeaway for anyone running AI-assisted workflows is that task continuity relies less on model intelligence and more on disciplined logging protocols. You must design your interaction loops so that the AI is never guessing, but always referencing a clearly maintained state log from the previous day's accomplishments, ensuring persistence across asynchronous work periods."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T12:17:00.282Z"
+  },
+  {
     "id": "art-1795867389839-ru8zn",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -7285,32 +7390,6 @@
     "created_at": "2026-11-27T16:16:56.541Z"
   },
   {
-    "id": "art-1795795321665-6wq5i",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://news.bloomberglaw.com/daily-labor-report/retail-self-checkouts-targeted-in-fight-to-shield-jobs-from-ai",
-    "published_at": "2026-11-27T14:48:52.000Z",
-    "og_image_url": "https://news-api.bloomberglaw.com/v1/resize-image?url=https%3A%2F%2Fbloomberg-bna-brightspot.s3.us-east-1.amazonaws.com%2F34%2F8e%2Fe4a2e81143278bb9c5639c8354e3%2Fgettyimages-625154764.jpg&width=1200&height=630&fit=cover&removeAnimation=true&crop=1021x392%2B0%2B172",
-    "title_ja": "小売現場のAI導入に労働組合が反発、雇用保護に向けセルフレジ撤去を要求する動きが米国で拡大中",
-    "summary_ja": "米国の小売業界において、AIやセルフレジ導入による雇用削減に対する労働組合の反発が強まっている。 労働者側は、自動化技術が単なるコスト削減手段として使われ、人間が必要不可欠な雇用を奪っていると主張し、レジ業務の有人化を求める交渉や法的アプローチを強化している。 単なる効率化を超えた社会的な影響が無視できなくなっており、自動化を推進するテック企業や小売業者は、従業員との共存モデルや新たな雇用機会の創出を戦略に組み込む必要性に迫られている。",
-    "translations": {
-      "ja": {
-        "title": "小売現場のAI導入に労働組合が反発、雇用保護に向けセルフレジ撤去を要求する動きが米国で拡大中",
-        "summary": "米国の小売業界において、AIやセルフレジ導入による雇用削減に対する労働組合の反発が強まっている。 労働者側は、自動化技術が単なるコスト削減手段として使われ、人間が必要不可欠な雇用を奪っていると主張し、レジ業務の有人化を求める交渉や法的アプローチを強化している。 単なる効率化を超えた社会的な影響が無視できなくなっており、自動化を推進するテック企業や小売業者は、従業員との共存モデルや新たな雇用機会の創出を戦略に組み込む必要性に迫られている。"
-      },
-      "en": {
-        "title": "US Labor Unions Increasingly Target Retail Self-Checkouts and AI Automation to Protect Service Worker Jobs",
-        "summary": "In the United States, labor unions are intensifying their pushback against retail automation, specifically targeting self-checkouts and AI-driven systems that they argue threaten essential service jobs. Workers contend that these technologies prioritize corporate cost-cutting over labor security, leading to the erosion of essential human roles in storefront operations. Consequently, unions are demanding that retail management reintroduce staffed registers, framing the debate as a critical fight for job preservation in the era of rapid digital transformation. For developers building automation tools, this signals that implementation strategy must now move beyond simple efficiency metrics. Future deployment of retail AI must explicitly account for employee coexistence, workforce retraining, or tangible value-add features that actually assist human staff rather than merely replacing their entire function."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-27T16:02:01.665Z"
-  },
-  {
     "id": "art-1795795313392-tfhby",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9773,33 +9852,6 @@
     "created_at": "2026-11-27T05:17:13.797Z"
   },
   {
-    "id": "art-1795755718281-xtvlt",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/oaoage/articles/ai-company-first-month-costs",
-    "published_at": "2026-11-27T00:25:03.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--aVadNZpF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25AB%25E4%25BC%259A%25E7%25A4%25BE%25E3%2581%25AE%25E5%25AE%259F%25E5%258B%2599%25E3%2582%2592%25E4%25BB%25BB%25E3%2581%259B%25E3%2581%259F%25E6%259C%2580%25E5%2588%259D%25E3%2581%25AE1%25E3%2581%258B%25E6%259C%2588%25E3%2581%25AE%25E8%25B2%25BB%25E7%2594%25A8%25E3%2580%2582Claude%2520Pro%2520%25E3%2581%258B%25E3%2582%2589%2520Max%2520%25E3%2581%25AB%25E6%259B%25BF%25E3%2581%2588%25E3%2581%259F%25E7%2590%2586%25E7%2594%25B1%25E3%2581%25A8%25E5%25AE%259F%25E9%25A1%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258A%25E3%2581%2582%25E3%2581%2592%25EF%25BC%2588%25E7%258A%25AC%25EF%25BC%2589%25E3%2581%25AE%25E4%25BC%259A%25E7%25A4%25BE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzQ4N2ZiY2I0NjguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "個人事業のAI活用コスト公開：Claude ProからMaxへのアップグレード判断と実際の運用費用（2026年11月実績）",
-    "summary_ja": "個人事業者が業務の大半をAIに委託した際、1ヶ月にいくらの運用コストがかかるのか。 本記事は、Claude Codeを活用した文書・サイト・ツール制作の現場において、Claude ProからMaxプランへ切り替えた理由と、実際の領収書に基づく支出実績を公開する。 売上ゼロのフェーズからAI投資をどう捉えるか、またAPIやツール利用料の現実的な収支を検討している開発者にとって、コスト見積もりの貴重なベンチマークとなる記録である。",
-    "translations": {
-      "ja": {
-        "title": "個人事業のAI活用コスト公開：Claude ProからMaxへのアップグレード判断と実際の運用費用（2026年11月実績）",
-        "summary": "個人事業者が業務の大半をAIに委託した際、1ヶ月にいくらの運用コストがかかるのか。 本記事は、Claude Codeを活用した文書・サイト・ツール制作の現場において、Claude ProからMaxプランへ切り替えた理由と、実際の領収書に基づく支出実績を公開する。 売上ゼロのフェーズからAI投資をどう捉えるか、またAPIやツール利用料の現実的な収支を検討している開発者にとって、コスト見積もりの貴重なベンチマークとなる記録である。"
-      },
-      "en": {
-        "title": "Public breakdown of AI operational costs for a solo business: Migrating from Claude Pro to Max",
-        "summary": "How much does it actually cost to run a solo operation when delegating core development and content tasks to AI? This transparent breakdown covers the real-world expenses for November 2026, documenting exactly why the operator shifted from a standard Claude Pro subscription to the higher-tier Claude Max plan to support workflow requirements. By detailing invoices from Anthropic and Cloudflare for work involving Claude Code, the article provides a rare look at the financial realities of AI-first micro-ventures before reaching profitability. For builders weighing the ROI of premium AI toolsets, this raw data serves as a practical, ground-level benchmark for budgeting API and subscription costs in the early stages of business development."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "コスト・API料金",
-      "開発"
-    ],
-    "created_at": "2026-11-27T05:01:58.281Z"
-  },
-  {
     "id": "art-1795754840987-3r23t",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -11998,32 +12050,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-26T11:31:55.654Z"
-  },
-  {
-    "id": "art-1795691893325-g3cw3",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/vbaman/articles/455770696726af",
-    "published_at": "2026-11-26T09:29:35.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--MDfyjt7L--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%258B%25E3%2582%2589%25E3%2580%2581%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E4%25BB%2595%25E7%25B5%2584%25E3%2581%25BF%25E3%2582%2592%25E8%2582%25B2%25E3%2581%25A6%25E3%2582%258B%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25B8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AE%25E3%2581%259B%25E3%2582%258B%25E3%2581%25BE%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSW9yUnZvczZpM2xBMFppdHhWNkdqMUtoUmVmcElRM1BwM0lMbEwxeTV5dlpQSjd3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Excel VBAからGodot Engineへの移行で考える、個別のアプリ開発から「アプリ生成基盤」の構築へシフトする重要性",
-    "summary_ja": "Excel VBAによる自作ツール開発の経験を持つ開発者が、現在はGodot Engineを活用し、再利用可能なエンジンの開発に注力している。 単なるアプリケーションの作成にとどまらず、個々の成果物を生み出すための「仕組み」そのものに価値を見出すアプローチだ。 今後は、個別のコードを書くこと以上に、汎用的なアプリケーション生成の基盤を育てる発想こそが、個人の開発効率と拡張性を最大化する鍵となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "Excel VBAからGodot Engineへの移行で考える、個別のアプリ開発から「アプリ生成基盤」の構築へシフトする重要性",
-        "summary": "Excel VBAによる自作ツール開発の経験を持つ開発者が、現在はGodot Engineを活用し、再利用可能なエンジンの開発に注力している。 単なるアプリケーションの作成にとどまらず、個々の成果物を生み出すための「仕組み」そのものに価値を見出すアプローチだ。 今後は、個別のコードを書くこと以上に、汎用的なアプリケーション生成の基盤を育てる発想こそが、個人の開発効率と拡張性を最大化する鍵となるだろう。"
-      },
-      "en": {
-        "title": "Transitioning from Excel VBA to Godot Engine: Why Builders Must Shift from Individual App Projects to Generative Systems",
-        "summary": "A developer with a background in building tools via Excel VBA explains their current pivot to using Godot Engine for creating reusable, modular engines. This transition reflects a growing realization that real long-term value lies not in just shipping individual software applications, but in constructing the foundational systems and frameworks that spawn those applications. As development complexity increases, the ability to build, maintain, and evolve these generative mechanisms becomes more critical than writing siloed scripts. For solo builders, focusing on infrastructure and reusable architectural patterns is the essential strategy for maximizing development velocity, scalability, and personal output efficiency when managing diverse product requirements in an increasingly automated software landscape."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-26T11:18:13.325Z"
   },
   {
     "id": "art-1795689159414-8vao8",
@@ -54337,32 +54363,5 @@
       "ビジネス"
     ],
     "created_at": "2026-10-29T12:46:26.904Z"
-  },
-  {
-    "id": "art-1793276189869-3kw61",
-    "source_id": "source-hf",
-    "source_name": "Hugging Face Blog / Papers",
-    "url": "https://huggingface.co/blog/anydecisionmodel",
-    "published_at": "2026-10-29T00:00:00.000Z",
-    "og_image_url": "https://huggingface.co/blog/assets/anydecisionmodel/banner.png",
-    "title_ja": "Hugging FaceがApple環境向け新モデル「AnySpeechRecognizer」と「AnyDecisionModel」を公開、ローカル処理を高速化",
-    "summary_ja": "Hugging Faceは、AppleデバイスでのAI処理を最適化するオープンモデル「AnySpeechRecognizer」と「AnyDecisionModel」をリリースした。 これらはAppleのCore MLと完全に統合されており、クラウドに頼らずデバイス上で音声認識と意思決定ロジックを完結できる。 プライバシーを重視するモバイルアプリ開発者にとって、推論コストをゼロにしつつ、低遅延なAI機能をアプリへ統合するための強力な選択肢となる。",
-    "translations": {
-      "ja": {
-        "title": "Hugging FaceがApple環境向け新モデル「AnySpeechRecognizer」と「AnyDecisionModel」を公開、ローカル処理を高速化",
-        "summary": "Hugging Faceは、AppleデバイスでのAI処理を最適化するオープンモデル「AnySpeechRecognizer」と「AnyDecisionModel」をリリースした。 これらはAppleのCore MLと完全に統合されており、クラウドに頼らずデバイス上で音声認識と意思決定ロジックを完結できる。 プライバシーを重視するモバイルアプリ開発者にとって、推論コストをゼロにしつつ、低遅延なAI機能をアプリへ統合するための強力な選択肢となる。"
-      },
-      "en": {
-        "title": "Hugging Face launches AnySpeechRecognizer and AnyDecisionModel for edge-first AI workflows on Apple silicon",
-        "summary": "Hugging Face has released AnySpeechRecognizer and AnyDecisionModel, two new open models engineered for high-performance AI tasks directly on Apple platforms. By leveraging deep integration with Apple’s Core ML framework, these models allow developers to execute complex speech recognition and decision-making logic locally on-device, bypassing the latency and connectivity requirements of cloud-based APIs. This architecture serves as a privacy-centric alternative for mobile builders aiming to eliminate per-inference costs while maintaining snappy user experiences. The release proves that powerful, task-specific intelligence no longer requires a round-trip to a data center, offering a robust path for developers to ship sophisticated, autonomous features that remain fully functional and secure within the user’s device ecosystem, even offline."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-10-29T12:16:29.869Z"
   }
 ]
