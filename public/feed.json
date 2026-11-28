@@ -1,5 +1,85 @@
 [
   {
+    "id": "art-1795885336632-r9ioc",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://arxiv.org/abs/2606.17421",
+    "published_at": "2026-11-28T16:32:06.000Z",
+    "og_image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title_ja": "LLMのプライバシー保護推論技術「Bifrost」登場。TEEと完全準同型暗号（FHE）をハイブリッド活用した計算効率とセキュリティの両立手法",
+    "summary_ja": "Bifrostは、信頼された実行環境（TEE）と完全準同型暗号（FHE）を組み合わせ、LLM推論時のプライバシーと計算効率を両立させるハイブリッド型システムだ。 従来、FHEは計算コストが高く、TEEはハードウェアの脆弱性に依存するという課題があったが、本手法は両者の強みを活用し、機密情報を保護しつつ推論を実行する。 AI開発において、ユーザーデータを暗号化したまま処理する技術は、特に金融や医療などの高度なプライバシー要件が求められるSaaS製品の差別化要因となりうる。",
+    "translations": {
+      "ja": {
+        "title": "LLMのプライバシー保護推論技術「Bifrost」登場。TEEと完全準同型暗号（FHE）をハイブリッド活用した計算効率とセキュリティの両立手法",
+        "summary": "Bifrostは、信頼された実行環境（TEE）と完全準同型暗号（FHE）を組み合わせ、LLM推論時のプライバシーと計算効率を両立させるハイブリッド型システムだ。 従来、FHEは計算コストが高く、TEEはハードウェアの脆弱性に依存するという課題があったが、本手法は両者の強みを活用し、機密情報を保護しつつ推論を実行する。 AI開発において、ユーザーデータを暗号化したまま処理する技術は、特に金融や医療などの高度なプライバシー要件が求められるSaaS製品の差別化要因となりうる。"
+      },
+      "en": {
+        "title": "Bifrost Introduces Hybrid TEE and FHE Approach to Secure Transformer Inference Without Sacrificing Computational Efficiency or Privacy",
+        "summary": "The researchers behind Bifrost have unveiled a novel hybrid inference system designed to secure Large Language Model deployments by combining Trusted Execution Environments (TEE) with Fully Homomorphic Encryption (FHE). While FHE traditionally suffers from prohibitive computational overhead and TEEs often face hardware-level side-channel vulnerabilities, this hybrid model offloads specific compute-heavy operations to TEEs while securing sensitive token inputs via FHE. For AI builders operating in regulated sectors like healthcare or fintech, this research offers a roadmap to handle user queries without ever exposing plain-text data to the inference host. Mastering such privacy-preserving architectures will likely become a critical competitive advantage for SaaS products that must guarantee data sovereignty in an era of growing security scrutiny."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "セキュリティ",
+      "開発"
+    ],
+    "created_at": "2026-11-28T17:02:16.632Z"
+  },
+  {
+    "id": "art-1795885328084-24z8h",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/shuang/articles/f542a0216c586a",
+    "published_at": "2026-11-28T07:15:28.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--szICLffB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%25902026%25E5%25B9%25B4%25E3%2580%2591%25E5%2586%2599%25E7%259C%259F1%25E6%259E%259A%25E3%2581%25A7%25E9%259F%25B3%25E5%25A3%25B0%25E4%25BB%2598%25E3%2581%258D%25E3%2583%2590%25E3%2582%25A4%25E3%2583%25A9%25E3%2583%25ABAI%25E5%258B%2595%25E7%2594%25BB%25EF%25BC%2586%25E5%2585%25AC%25E9%2596%258BMCP%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A8%25AD%25E8%25A8%2588%25E3%2583%25A1%25E3%2583%25A2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Memeo%2520AI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzRlZ0tib3ZUejM2bGJneTJUdGlQNHA0MTVYdkt0clZsaTdaUGE3dk9RRnE5cUJnPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "写真1枚から動画生成する「Memeo AI」公開：プロンプト不要の自動同期とMCPサーバー連携でショート動画制作を効率化",
+    "summary_ja": "Memeo AIは、写真1枚をアップロードするだけで音声付きバイラル動画を自動生成するサービスだ。 プロンプトエンジニアリングやリップシンクのズレといった課題に対し、テンプレート抽象化と音声同期パイプラインを実装して解消した。 さらにMCPサーバーも公開し、外部エージェントからのテンプレート検索や動画生成フローへの接続を可能にした。",
+    "translations": {
+      "ja": {
+        "title": "写真1枚から動画生成する「Memeo AI」公開：プロンプト不要の自動同期とMCPサーバー連携でショート動画制作を効率化",
+        "summary": "Memeo AIは、写真1枚をアップロードするだけで音声付きバイラル動画を自動生成するサービスだ。 プロンプトエンジニアリングやリップシンクのズレといった課題に対し、テンプレート抽象化と音声同期パイプラインを実装して解消した。 さらにMCPサーバーも公開し、外部エージェントからのテンプレート検索や動画生成フローへの接続を可能にした。"
+      },
+      "en": {
+        "title": "Memeo AI Launches: Automated Viral Video Generation from Single Photos via Template Abstraction and MCP Server Integration",
+        "summary": "Memeo AI is a new service designed to streamline short-form video creation by generating audio-synced viral clips from a single uploaded photo, effectively eliminating the need for complex prompt engineering or manual lip-sync adjustments. The system utilizes a specialized template abstraction layer and a robust audio-sync pipeline to automate the production flow. Beyond the web interface, the developers released an MCP server, enabling external AI agents to query templates and trigger video generation workflows directly. For developers building AI-first services, this architecture demonstrates that decoupling core generation logic into accessible MCP endpoints—rather than keeping functionality siloed—is the most effective way to maximize extensibility while maintaining a frictionless user experience for non-technical creators."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "動画",
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-28T17:02:08.084Z"
+  },
+  {
+    "id": "art-1795885321773-wuje7",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/zezezenzen/n/nb58cd3bd4ec1",
+    "published_at": "2026-11-28T16:37:55.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/342063861/rectangle_large_type_2_aa75813e01506dd32697cd7ebf213ab4.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIエージェント間の連携手段を徹底検証。Meta MuseとGoogle AIを活用した「三者構成」体制でメール活用に回帰した運用実録",
+    "summary_ja": "Meta社の仮想PC内蔵エージェント「Muse」とローカルPC上で稼働する「Antigravity」を連携させ、筆者を含めた三者体制での業務自動化を試みた。 多様な通信手段を試行錯誤した結果、エージェント間の確実な指示伝達とログ管理には、現代の標準技術であるメール経由の連絡手段が最も信頼性が高いという結論に至った。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェント間の連携手段を徹底検証。Meta MuseとGoogle AIを活用した「三者構成」体制でメール活用に回帰した運用実録",
+        "summary": "Meta社の仮想PC内蔵エージェント「Muse」とローカルPC上で稼働する「Antigravity」を連携させ、筆者を含めた三者体制での業務自動化を試みた。 多様な通信手段を試行錯誤した結果、エージェント間の確実な指示伝達とログ管理には、現代の標準技術であるメール経由の連絡手段が最も信頼性が高いという結論に至った。"
+      },
+      "en": {
+        "title": "Why email remains the best protocol for orchestrating AI agent workflows: A practical trial of three-way agent collaboration",
+        "summary": "The author attempted to build a reliable autonomous workflow by connecting Meta’s Muse—a cloud-based virtual machine agent—with a local execution agent, Antigravity. After rigorously testing various communication channels to manage this three-way collaboration, the author concluded that standard email remains the most robust protocol for inter-agent messaging and audit logging. While developers often seek modern, complex APIs for agent orchestration, this experiment demonstrates that falling back on email significantly improves stability and simplifies error handling across distributed agent systems. For those building agentic architectures, the key takeaway is that leveraging proven, reliable transport protocols often outweighs the benefits of proprietary inter-process communication, especially when balancing cost, ease of deployment, and long-term system maintainability."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T17:02:01.773Z"
+  },
+  {
     "id": "art-1795884449918-sahp2",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -7659,32 +7739,6 @@
     "created_at": "2026-11-27T19:47:11.991Z"
   },
   {
-    "id": "art-1795808825741-9lz7q",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://docs.google.com/document/d/1NlgkmxuXkmBfgBuUdx85rM8FgA6hxcXbRaSWATI95T8/edit?usp=sharing",
-    "published_at": "2026-11-27T19:43:16.000Z",
-    "og_image_url": "https://lh7-us.googleusercontent.com/docs/AHkbwyKD6wtETAvf-Nb0bQvWE5R4UO-oEOIDQBF8S8nOD_kAjYx8V9r6XmYByhUzeN3AF6Ud7B0j3oxzHUkoiGTJIJQ4GvHKMiYkBKwY4JeCBz_RoUU5BpQS=w1200-h630-p",
-    "title_ja": "9世紀のシリア語典礼注解をLLMで翻訳――古典文献学の専門的課題にAIをどう適用したか、その検証プロセスと成果",
-    "summary_ja": "9世紀に記された難解なシリア語の典礼注解を、LLMを活用して現代英語へ翻訳するプロジェクトが公開された。 古典文献学における専門用語の特定や古文特有の文法解釈に対し、AIがどの程度正確に追従し、翻訳支援ツールとしてどこまで機能したかという検証プロセスが詳細に示されている。 専門的な学術分野へのLLM導入を検討する開発者にとって、AIの言語モデルが古典知識を補完し、文献解析の効率を大幅に向上させるための実践的なワークフローとしての参考になるはずだ。",
-    "translations": {
-      "ja": {
-        "title": "9世紀のシリア語典礼注解をLLMで翻訳――古典文献学の専門的課題にAIをどう適用したか、その検証プロセスと成果",
-        "summary": "9世紀に記された難解なシリア語の典礼注解を、LLMを活用して現代英語へ翻訳するプロジェクトが公開された。 古典文献学における専門用語の特定や古文特有の文法解釈に対し、AIがどの程度正確に追従し、翻訳支援ツールとしてどこまで機能したかという検証プロセスが詳細に示されている。 専門的な学術分野へのLLM導入を検討する開発者にとって、AIの言語モデルが古典知識を補完し、文献解析の効率を大幅に向上させるための実践的なワークフローとしての参考になるはずだ。"
-      },
-      "en": {
-        "title": "LLM-assisted translation of a 9th-century Syriac liturgical commentary reveals new workflows for specialized classical philology",
-        "summary": "A new project demonstrates using LLMs to translate complex 9th-century Syriac liturgical commentaries into modern English, showcasing how AI can tackle the specialized rigors of classical philology. The documentation details the verification process, highlighting how specific linguistic models managed ancient grammatical nuances and rare theological terminology that often defeat standard translation tools. For developers exploring AI in niche research domains, this case study proves how iterative prompting and context-aware refinement can transform LLMs from simple chatbots into high-fidelity research assistants. It provides a blueprint for leveraging AI to bridge gaps in ancient language studies, ultimately increasing the speed of historical data processing while maintaining necessary academic standards for accuracy in translation workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "研究",
-      "開発"
-    ],
-    "created_at": "2026-11-27T19:47:05.741Z"
-  },
-  {
     "id": "art-1795808818055-bn8ug",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -7711,32 +7765,6 @@
       "開発"
     ],
     "created_at": "2026-11-27T19:46:58.055Z"
-  },
-  {
-    "id": "art-1795807976223-vajcv",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/Stak-Technologies/machine-load",
-    "published_at": "2026-11-27T19:24:30.000Z",
-    "og_image_url": null,
-    "title_ja": "MacのAIコーディング負荷を可視化するツール「Machine-load」公開、AIエージェントによるCPU・メモリ消費の犯人を特定",
-    "summary_ja": "AIエージェントやIDE拡張の乱用でMacの動作が重くなる問題に対し、GitHubで公開された「Machine-load」は、どのAIコーディングプロセスが過度なリソースを消費しているかをリアルタイムで特定する。 複雑化した開発環境において、どのAIセッションがボトルネックかを即座に可視化できるため、開発者は無駄なバックグラウンド負荷を排除し、快適なパフォーマンスを維持できるようになる。",
-    "translations": {
-      "ja": {
-        "title": "MacのAIコーディング負荷を可視化するツール「Machine-load」公開、AIエージェントによるCPU・メモリ消費の犯人を特定",
-        "summary": "AIエージェントやIDE拡張の乱用でMacの動作が重くなる問題に対し、GitHubで公開された「Machine-load」は、どのAIコーディングプロセスが過度なリソースを消費しているかをリアルタイムで特定する。 複雑化した開発環境において、どのAIセッションがボトルネックかを即座に可視化できるため、開発者は無駄なバックグラウンド負荷を排除し、快適なパフォーマンスを維持できるようになる。"
-      },
-      "en": {
-        "title": "Machine-load tool surfaces AI coding processes slowing down your Mac to help identify performance-draining agents",
-        "summary": "As AI coding agents and IDE extensions increasingly compete for local resources, Mac performance often suffers silently. The newly released open-source tool 'Machine-load' addresses this by providing developers with a real-time view into which specific AI-driven processes or background coding sessions are monopolizing CPU and memory. Instead of blindly killing random processes, users can now isolate the exact agent causing bottlenecks. For developers juggling multiple LLM-powered coding assistants, this utility is essential for maintaining a responsive development environment and optimizing local hardware efficiency. It serves as a vital diagnostic bridge, helping engineers distinguish between necessary background indexing and runaway AI tasks that degrade productivity during deep coding sessions."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-27T19:32:56.223Z"
   },
   {
     "id": "art-1795807969946-9wcd9",
@@ -54324,34 +54352,5 @@
       "研究"
     ],
     "created_at": "2026-10-29T17:03:31.912Z"
-  },
-  {
-    "id": "art-1793292876326-t044z",
-    "source_id": "source-supabase",
-    "source_name": "Supabase Blog",
-    "url": "https://supabase.com/blog/multigres-private-alpha",
-    "published_at": "2026-10-29T07:00:00.000Z",
-    "og_image_url": "https://supabase.com/images/blog/2026-10-29-multigres-private-alpha/og.png",
-    "title_ja": "SupabaseがPostgresの自動フェイルオーバーを実現する「Multigres」のプライベートアルファ版を公開。有料プラン組織向けに可用性が向上",
-    "summary_ja": "SupabaseはPostgresデータベースの自動フェイルオーバーを実現する新機能「Multigres」のプライベートアルファ版を発表した。 本機能は現在、有料プランを利用する組織向けに提供されており、プライマリデータベースの障害発生時にセカンダリへの自動切り替えを行うことで、サービスのダウンタイムを最小限に抑える。 可用性を重視するプロダクト構築において、インフラレベルの冗長化をマネージドサービスで担保できる点は開発者にとって大きな恩恵となる。",
-    "translations": {
-      "ja": {
-        "title": "SupabaseがPostgresの自動フェイルオーバーを実現する「Multigres」のプライベートアルファ版を公開。有料プラン組織向けに可用性が向上",
-        "summary": "SupabaseはPostgresデータベースの自動フェイルオーバーを実現する新機能「Multigres」のプライベートアルファ版を発表した。 本機能は現在、有料プランを利用する組織向けに提供されており、プライマリデータベースの障害発生時にセカンダリへの自動切り替えを行うことで、サービスのダウンタイムを最小限に抑える。 可用性を重視するプロダクト構築において、インフラレベルの冗長化をマネージドサービスで担保できる点は開発者にとって大きな恩恵となる。"
-      },
-      "en": {
-        "title": "Supabase Launches Multigres Private Alpha to Introduce Automatic Failover Capabilities for Production-Grade Managed Postgres Databases",
-        "summary": "Supabase has officially launched the private alpha of Multigres, a significant infrastructure upgrade that brings automatic failover capabilities to its managed Postgres instances. Currently available to organizations on paid plans, this feature actively monitors database health and seamlessly promotes a standby instance if the primary node encounters a critical failure. For teams managing mission-critical applications, this eliminates the manual overhead and potential downtime associated with unexpected database outages, effectively raising the service level reliability of the platform. By offloading complex failover orchestration to the managed layer, developers can focus on application logic rather than high-availability configurations, making Supabase a more robust choice for production-grade backends requiring continuous uptime."
-      }
-    },
-    "tool_tags": [
-      "Supabase"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-29T16:54:36.326Z"
   }
 ]
