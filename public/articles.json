@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795827747516-e8ekk",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/sakidori/articles/20261110-daily-pick-without-db-hash",
+    "published_at": "2026-11-27T21:17:02.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--j33vyRoz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2597%25A5%25E6%259B%25BF%25E3%2582%258F%25E3%2582%258A%25E3%2581%25AE%25E5%2587%25BA%25E9%25A1%258C%25E3%2582%2592DB%25E3%2581%25AA%25E3%2581%2597%25E3%2581%25A7%25E6%25B1%25BA%25E3%2582%2581%25E3%2582%258B4%25E3%2581%25A4%25E3%2581%25AE%25E6%2596%25B9%25E5%25BC%258F%25E3%2581%25A8%25E3%2580%2581365%25E6%2597%25A5%25E3%2581%25B6%25E3%2582%2593%25E3%2581%25AE%25E5%2581%258F%25E3%2582%258A%25E3%2581%25AE%25E8%25A8%2588%25E6%25B8%25AC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:sakidori%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkwNTgxN2IyYTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "データベース不要で日替わりコンテンツを配信する4つのアルゴリズムと、365日分の運用偏りを計測する設計手法",
+    "summary_ja": "データベースを持たないCloudflare Workers等のサーバーレス環境で、全ユーザーに一貫した日替わりコンテンツを配信する4つの方式を解説。 各方式における候補追加時の順序維持や全問一巡の制御を比較し、さらに365日運用した際の偏りを定量的に計測する方法を提示する。 安価にステートレスな実装を目指す個人開発者にとって、履歴保存なしで予測可能なスケジュールを組むための強力な指針となる。",
+    "translations": {
+      "ja": {
+        "title": "データベース不要で日替わりコンテンツを配信する4つのアルゴリズムと、365日分の運用偏りを計測する設計手法",
+        "summary": "データベースを持たないCloudflare Workers等のサーバーレス環境で、全ユーザーに一貫した日替わりコンテンツを配信する4つの方式を解説。 各方式における候補追加時の順序維持や全問一巡の制御を比較し、さらに365日運用した際の偏りを定量的に計測する方法を提示する。 安価にステートレスな実装を目指す個人開発者にとって、履歴保存なしで予測可能なスケジュールを組むための強力な指針となる。"
+      },
+      "en": {
+        "title": "Four stateless algorithms to serve daily changing content without a database, including 365-day distribution bias metrics",
+        "summary": "This guide details four stateless algorithms for serving consistent, daily-rotating content to all users without relying on a backend database, making it ideal for Cloudflare Workers or serverless edge deployments. It compares the trade-offs between maintaining order stability when adding new items versus ensuring a complete cycle of all questions over time. The author further explores how to quantitatively measure the long-term distribution bias across a 365-day period to ensure content variety. For solo developers building lightweight, cost-effective tools, this analysis provides a concrete framework to implement predictable daily scheduling while strictly avoiding persistent storage and the associated complexity of managing per-user state."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T01:02:27.516Z"
+  },
+  {
+    "id": "art-1795827741029-bsp57",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.wsj.com/tech/a-game-changing-move-just-gave-america-the-edge-over-china-in-ai-53492e2c",
+    "published_at": "2026-11-28T00:38:56.000Z",
+    "og_image_url": null,
+    "title_ja": "米政府の対中AI半導体規制とNVIDIAの輸出戦略：次世代GPU制限がもたらす米国の技術的優位性と長期的リスク",
+    "summary_ja": "米国政府による高性能AI半導体への対中輸出規制は、NVIDIAの中国向け特注GPUの制限を通じて、中国のAI開発競争力を大きく減速させる効果を生んだ。 この措置は米国の計算資源の優位性を一時的に確固たるものにしたが、同時に中国国内での代替チップ開発や半導体自給自足の動きを加速させる諸刃の剣でもある。 開発者は地政学リスクが供給網に与える影響と、それに伴う開発環境の劇的な変化を注視し、特定のハードウェア依存を避ける柔軟なアーキテクチャ設計が不可欠となる。",
+    "translations": {
+      "ja": {
+        "title": "米政府の対中AI半導体規制とNVIDIAの輸出戦略：次世代GPU制限がもたらす米国の技術的優位性と長期的リスク",
+        "summary": "米国政府による高性能AI半導体への対中輸出規制は、NVIDIAの中国向け特注GPUの制限を通じて、中国のAI開発競争力を大きく減速させる効果を生んだ。 この措置は米国の計算資源の優位性を一時的に確固たるものにしたが、同時に中国国内での代替チップ開発や半導体自給自足の動きを加速させる諸刃の剣でもある。 開発者は地政学リスクが供給網に与える影響と、それに伴う開発環境の劇的な変化を注視し、特定のハードウェア依存を避ける柔軟なアーキテクチャ設計が不可欠となる。"
+      },
+      "en": {
+        "title": "WSJ analysis reveals how new US restrictions on AI chip exports to China are reshaping the global AI computing landscape",
+        "summary": "A pivotal Wall Street Journal analysis highlights how US government restrictions on high-performance AI chip exports to China have significantly hampered China's ability to train state-of-the-art models. By restricting NVIDIA’s ability to sell customized GPUs, the US has effectively widened the technological lead in raw compute power. While these geopolitical maneuvers aim to throttle an adversary’s AI progress, they simultaneously force China to accelerate indigenous chip development, potentially leading to long-term fragmentation of the global semiconductor supply chain. For AI builders and engineers, the strategic lesson here is clear: reliance on specific high-end, export-restricted hardware is a fragile foundation, and software-level portability across varying hardware backends is becoming a critical insurance policy against shifting geopolitical realities."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "研究",
+      "ビジネス",
+      "開発"
+    ],
+    "created_at": "2026-11-28T01:02:21.029Z"
+  },
+  {
+    "id": "art-1795827733292-wmmx8",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tsurutoro/n/n3313b674f192",
+    "published_at": "2026-11-28T00:42:50.000Z",
+    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/d898dcf58dd2c23539a8c07c4821ddafd236a867.png",
+    "title_ja": "【個人開発日記#4】ゾンビ整理システムの実装と銃器獲得ギミックを追加、収集要素を可視化する「未入手アイテム図鑑」でゲームの目標を明確化",
+    "summary_ja": "個人開発のゲーム制作日誌第4弾。 今回はゾンビを整理・管理するシステムと、新たに銃器を獲得できるゲームギミックを実装した。 さらに、プレイヤーが「何が揃っていないか」を一目で把握できる図鑑機能を搭載し、収集目標を明確にすることでプレイのモチベーションを維持させる工夫を施している。 ゲームの完成度を高めるため、コアとなる体験の改善に注力した。",
+    "translations": {
+      "ja": {
+        "title": "【個人開発日記#4】ゾンビ整理システムの実装と銃器獲得ギミックを追加、収集要素を可視化する「未入手アイテム図鑑」でゲームの目標を明確化",
+        "summary": "個人開発のゲーム制作日誌第4弾。 今回はゾンビを整理・管理するシステムと、新たに銃器を獲得できるゲームギミックを実装した。 さらに、プレイヤーが「何が揃っていないか」を一目で把握できる図鑑機能を搭載し、収集目標を明確にすることでプレイのモチベーションを維持させる工夫を施している。 ゲームの完成度を高めるため、コアとなる体験の改善に注力した。"
+      },
+      "en": {
+        "title": "Indie Dev Log #4: Adding Zombie Management Systems, Gun Acquisition Mechanics, and a Visual Collection Guide to Clarify Progress for Players",
+        "summary": "In this fourth development log, I detail the implementation of a new zombie management system alongside a mechanic for acquiring firearms, essential for enhancing the core gameplay loop. To improve user retention and provide clear objectives, I also integrated a visual collection guide that immediately shows players what items or units they are currently missing. This \"what's missing\" encyclopedia is designed to reduce confusion and gamify the exploration experience. By focusing on these granular QoL improvements and structured feedback loops, the goal is to make the progression feel more rewarding. For fellow solo developers, this update highlights how even simple UI-driven collections can significantly clarify long-term goals without requiring complex systems engineering."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T01:02:13.292Z"
+  },
+  {
+    "id": "art-1795827712310-lta7v",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/Nagi_5417/items/9257e46991aa60ad1768",
+    "published_at": "2026-11-28T00:54:47.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGMzk0MjkxOCUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc1Njg1NjQ1OD9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YjMxMjkwMmU5ZmY4MDZiMmE3MDg3OWVlZjk2YjMwYTM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Db17b35c30de5a040461aa256e8845797?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QXp1cmUlRTclODQlQTElRTYlOTYlOTklRTMlODIlQTIlRTMlODIlQUIlRTMlODIlQTYlRTMlODMlQjMlRTMlODMlODglRTclQjUlOEMlRTclOTQlQjElRTMlODElQTclRTclQTQlQkUlRTUlODYlODVGQVElRTMlODMlOUMlRTMlODMlODMlRTMlODMlODglRTMlODIlOTIwJUU1JTg2JTg2JUUzJTgxJUE3JUU0JUJEJTlDJUUzJTgyJThCJUU2JTk2JUI5JUU2JUIzJTk1JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9M2I2ZGMzYjNlZjgyYzExZTJlN2YwM2Q1ZjBlYTg4NmQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBOYWdpXzU0MTcmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz0yMDYzZDBiMDM1NzVkODY5MjUwYjlmZTI5MWE0ZjY4NQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=331106b200ba7ef4eddb9ec1ff3c1997",
+    "title_ja": "Azure無料アカウントとCopilot Studioを組み合わせて社内FAQボットを0円で構築する方法",
+    "summary_ja": "個人開発者が個人のMicrosoftアカウントからAzure無料枠を活用し、Copilot Studioを用いて社内FAQボットを実質0円で構築する手法を解説。 通常は職場や学校のアカウントが必須となるCopilot Studioに対し、Azure側の環境設定を工夫することで個人のGmail環境でもAIエージェントの作成が可能になる。 開発・運用のコストを最小限に抑えたい個人やスタートアップが、セキュアなAIボットをPoCとして素早く立ち上げるための実用的なアプローチだ。",
+    "translations": {
+      "ja": {
+        "title": "Azure無料アカウントとCopilot Studioを組み合わせて社内FAQボットを0円で構築する方法",
+        "summary": "個人開発者が個人のMicrosoftアカウントからAzure無料枠を活用し、Copilot Studioを用いて社内FAQボットを実質0円で構築する手法を解説。 通常は職場や学校のアカウントが必須となるCopilot Studioに対し、Azure側の環境設定を工夫することで個人のGmail環境でもAIエージェントの作成が可能になる。 開発・運用のコストを最小限に抑えたい個人やスタートアップが、セキュアなAIボットをPoCとして素早く立ち上げるための実用的なアプローチだ。"
+      },
+      "en": {
+        "title": "Building a zero-cost internal FAQ bot using a personal Azure free account and Microsoft Copilot Studio",
+        "summary": "This guide outlines how indie developers can leverage the Microsoft Azure free tier to build internal FAQ bots using Copilot Studio without needing an enterprise or academic account. While Microsoft traditionally restricts Copilot Studio to professional or educational environments, this technical workaround shows how to configure Azure environments to enable agent creation via a personal Gmail-based setup. This approach allows individuals and startups to build functional AI agent prototypes while keeping cloud costs strictly at zero. It provides a practical, low-barrier pathway for builders to prototype secure internal tooling and conversational agents before committing to enterprise-level licensing, effectively lowering the cost-of-entry for experimenting with Microsoft’s enterprise-grade AI agent ecosystem."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-28T01:01:52.311Z"
+  },
+  {
     "id": "art-1795826854043-jpncy",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -7088,32 +7194,6 @@
     "created_at": "2026-11-27T06:47:05.600Z"
   },
   {
-    "id": "art-1795761149357-5293f",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kura_ai_dev/n/n5c3dc4c40952",
-    "published_at": "2026-11-27T06:29:27.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341380262/rectangle_large_type_2_e90f1d84a0ae5388003beb9164c8c917.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "AI要約でニュースを追うのになぜ疲れるのか？毎朝1分で本質だけを抜き出す「自分専用フィルタリング」の設計と運用術",
-    "summary_ja": "AIによるニュース要約を導入しても情報過多や「記憶に残らない」現象が起きるのは、情報に選別軸がないからだ。 本記事では、ただ情報を要約させるのではなく、個人の仕事や興味関心に合わせて「何を抽出し、何を捨てるか」という独自の抽出ルールを定義する手法を解説する。 情報を処理するだけでなく、自分にとってのシグナルを明確に定義し、毎日1分で重要な変化のみを把握する効率的なフィルタリングパイプラインを構築することが、知的生産性を高める最適解となる。",
-    "translations": {
-      "ja": {
-        "title": "AI要約でニュースを追うのになぜ疲れるのか？毎朝1分で本質だけを抜き出す「自分専用フィルタリング」の設計と運用術",
-        "summary": "AIによるニュース要約を導入しても情報過多や「記憶に残らない」現象が起きるのは、情報に選別軸がないからだ。 本記事では、ただ情報を要約させるのではなく、個人の仕事や興味関心に合わせて「何を抽出し、何を捨てるか」という独自の抽出ルールを定義する手法を解説する。 情報を処理するだけでなく、自分にとってのシグナルを明確に定義し、毎日1分で重要な変化のみを把握する効率的なフィルタリングパイプラインを構築することが、知的生産性を高める最適解となる。"
-      },
-      "en": {
-        "title": "Why generic AI news summaries fail and how to build a 1-minute personal filtration system to capture actual insights",
-        "summary": "Passive reliance on AI news summaries often leads to information overload because these tools prioritize length over relevance, leaving users with empty recall. The solution requires shifting from generic prompts to building a personalized extraction pipeline that explicitly defines your own signal-to-noise ratio based on specific professional goals. Instead of asking AI to summarize everything, engineers should treat information like a data stream, applying strict filters that isolate high-value updates from the daily noise. Designing this custom logic allows you to digest critical shifts in under one minute each morning, transforming passive consumption into an active, high-leverage process that actually supports your daily productivity instead of just killing time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-27T06:32:29.357Z"
-  },
-  {
     "id": "art-1795761128600-6hgzp",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -8668,33 +8748,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-27T00:32:51.203Z"
-  },
-  {
-    "id": "art-1795739565123-oikw2",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://mit-han-lab.github.io/qda-blog/",
-    "published_at": "2026-11-27T00:09:05.000Z",
-    "og_image_url": "https://mit-han-lab.github.io/qda-blog/assets/qda-demo-poster.jpg",
-    "title_ja": "MIT Han Lab、LLMの量子化最適化を自動化するエージェント手法「QDA」発表。手動チューニング不要で高精度を維持",
-    "summary_ja": "MIT Han Labが発表した「QDA（Quantization Design with Agents）」は、エージェントがループを回してLLMの量子化プロセスを自動設計する手法である。 従来の量子化手法は専門家の手動調整に依存していたが、QDAは検索・評価・修正の反復プロセスを自律実行し、モデルの性能劣化を最小限に抑えつつ高圧縮を実現する。",
-    "translations": {
-      "ja": {
-        "title": "MIT Han Lab、LLMの量子化最適化を自動化するエージェント手法「QDA」発表。手動チューニング不要で高精度を維持",
-        "summary": "MIT Han Labが発表した「QDA（Quantization Design with Agents）」は、エージェントがループを回してLLMの量子化プロセスを自動設計する手法である。 従来の量子化手法は専門家の手動調整に依存していたが、QDAは検索・評価・修正の反復プロセスを自律実行し、モデルの性能劣化を最小限に抑えつつ高圧縮を実現する。"
-      },
-      "en": {
-        "title": "MIT Han Lab introduces QDA, an agent-based framework that automates LLM quantization design without expert manual tuning",
-        "summary": "MIT Han Lab has unveiled QDA (Quantization Design with Agents), a novel framework that uses autonomous agents to iteratively optimize LLM quantization, effectively replacing the labor-intensive trial-and-error approach previously required. By treating the quantization process as a closed-loop search problem, QDA autonomously selects optimal bit-widths and grouping strategies while evaluating performance impacts in real-time, successfully minimizing model accuracy degradation during compression. As developers scramble to slash high inference costs and fit large models onto restricted hardware, this agent-driven paradigm shifts quantization from a bespoke, expert-heavy engineering task to a scalable, automated pipeline. For teams deploying large models, QDA represents a vital shift toward production-ready optimization that keeps performance high without sacrificing precious compute cycles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-27T00:32:45.123Z"
   },
   {
     "id": "art-1795739558936-criuj",
@@ -12360,32 +12413,6 @@
       "研究"
     ],
     "created_at": "2026-11-26T05:16:35.348Z"
-  },
-  {
-    "id": "art-1795669359499-adc95",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/twinharness/articles/flaky-tests-six-causes",
-    "published_at": "2026-11-25T14:31:42.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--rZU0PxnB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2599%2582%25E3%2580%2585%25E8%2590%25BD%25E3%2581%25A1%25E3%2582%258BE2E%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E5%2586%258D%25E5%25AE%259F%25E8%25A1%258C%25E3%2581%25A7%25E6%25B5%2581%25E3%2581%2595%25E3%2581%259A6%25E4%25BB%25B6%25E8%25BF%25BD%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E6%259C%25AC%25E7%2589%25A9%25E3%2581%25AE%25E3%2582%25BB%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2581%25AE%25E7%25A9%25B4%25E3%2581%258C%25E6%25B7%25B7%25E3%2581%2596%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:twinharness%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvdC5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「時々落ちるE2Eテスト」を放置せず追跡した結果、Windows上のElectronアプリで深刻なセキュリティ脆弱性を発見",
-    "summary_ja": "E2Eテストの不安定な挙動を「PCの負荷のせい」と再実行で流さず徹底調査したところ、単なるテスト側の不具合だけでなく、Windows特有のバグと、クリップボードに機密情報が残る深刻なセキュリティホールが判明した。 テスト時間が長くなると「再実行」という誘惑に駆られがちだが、不安定なテストは潜在的な致命的欠陥を隠しているシグナルでもある。 自動テストの失敗を無視せず、その原因を特定する粘り強さが、アプリの品質とセキュリティを守る最後の砦となる。",
-    "translations": {
-      "ja": {
-        "title": "「時々落ちるE2Eテスト」を放置せず追跡した結果、Windows上のElectronアプリで深刻なセキュリティ脆弱性を発見",
-        "summary": "E2Eテストの不安定な挙動を「PCの負荷のせい」と再実行で流さず徹底調査したところ、単なるテスト側の不具合だけでなく、Windows特有のバグと、クリップボードに機密情報が残る深刻なセキュリティホールが判明した。 テスト時間が長くなると「再実行」という誘惑に駆られがちだが、不安定なテストは潜在的な致命的欠陥を隠しているシグナルでもある。 自動テストの失敗を無視せず、その原因を特定する粘り強さが、アプリの品質とセキュリティを守る最後の砦となる。"
-      },
-      "en": {
-        "title": "Persistent Investigation of Flaky E2E Tests Reveals Critical Security Vulnerability in Windows Electron Application",
-        "summary": "When faced with flaky E2E tests, developers often dismiss failures as environment noise rather than investigating, especially when tests take nearly thirty minutes to run. In a recent Windows-based Electron project using Playwright, the author committed to investigating six consecutive flaky test failures instead of blindly re-running them. While four were merely test environment artifacts, the remaining two exposed a genuine Windows behavior bug and a dangerous security hole that left sensitive commands exposed in the clipboard. This highlights a crucial builder lesson: flaky tests are not just inconveniences but potential signals of critical flaws. Resist the temptation to simply re-run failing suites, as investigating the root cause is often the only way to catch vulnerabilities before they ship."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-26T05:02:39.499Z"
   },
   {
     "id": "art-1795669316597-bl2d1",
@@ -54359,33 +54386,5 @@
       "開発"
     ],
     "created_at": "2026-10-29T01:02:43.067Z"
-  },
-  {
-    "id": "art-1793235727588-32fx1",
-    "source_id": "source-openrouter",
-    "source_name": "OpenRouter Announcements",
-    "url": "https://openrouter.ai/blog/tutorials/prevent-prompt-injection/",
-    "published_at": "2026-10-29T00:00:00.000Z",
-    "og_image_url": "https://openrouter.ai/blog/images/prevent-prompt-injection.png",
-    "title_ja": "OpenRouterがプロンプトインジェクション対策を検証：13種類の攻撃パターンと防御策、Armorによるツール呼び出し制限が全攻撃を阻止",
-    "summary_ja": "OpenRouterは最新モデル4種に対し25種類のプロンプトインジェクション攻撃を試行し、防御性能を詳細に検証した。 結論として、ラベルによるフィルタリングは一定の効果があるものの、Armorを用いてツール呼び出しの各ステップを厳密にチェックする手法だけが、すべての攻撃を完全に無効化できると実証された。 LLMアプリ開発者は、単なる入力フィルタリングに頼らず、モデルの外部ツール実行権限を制御する多層防御アーキテクチャを実装することが必須である。",
-    "translations": {
-      "ja": {
-        "title": "OpenRouterがプロンプトインジェクション対策を検証：13種類の攻撃パターンと防御策、Armorによるツール呼び出し制限が全攻撃を阻止",
-        "summary": "OpenRouterは最新モデル4種に対し25種類のプロンプトインジェクション攻撃を試行し、防御性能を詳細に検証した。 結論として、ラベルによるフィルタリングは一定の効果があるものの、Armorを用いてツール呼び出しの各ステップを厳密にチェックする手法だけが、すべての攻撃を完全に無効化できると実証された。 LLMアプリ開発者は、単なる入力フィルタリングに頼らず、モデルの外部ツール実行権限を制御する多層防御アーキテクチャを実装することが必須である。"
-      },
-      "en": {
-        "title": "OpenRouter tests 13 prompt injection attacks against 4 LLMs, proving tool-call security via Armor is the only foolproof defense",
-        "summary": "OpenRouter performed a rigorous security analysis by running 25 different prompt injection attacks against four leading LLMs to evaluate current defense mechanisms. The findings indicate that while standard labeling strategies effectively reduce email-based attacks, they are insufficient as a primary security measure. Only the implementation of Armor to scrutinize and intercept every individual tool call successfully mitigated the entire test suite of injections. For developers building AI applications that interact with documents, emails, or live web content, this data underscores a critical reality: input filtering is merely a soft barrier. Robust production systems must instead prioritize a strict, multi-layered defense architecture that restricts the model's tool-calling permissions by default, preventing execution of unauthorized instructions."
-      }
-    },
-    "tool_tags": [
-      "OpenRouter"
-    ],
-    "genre_tags": [
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-10-29T01:02:07.588Z"
   }
 ]
