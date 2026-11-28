@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795843053272-4nixh",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/a1221/articles/docker-compose-visualizer-reuse-diagram",
+    "published_at": "2026-11-28T04:26:21.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--6JMLLeiV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:docker-compose.yml%2520%25E3%2582%2592%25E5%259B%25B3%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E3%2580%2581%25E6%2597%25A2%25E5%25AD%2598%25E3%2581%25AE%25E6%25A7%258B%25E6%2588%2590%25E5%259B%25B3%25E3%2581%25AE%25E6%258F%258F%25E7%2594%25BB%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2584%25E5%259B%259E%25E3%2581%2597%25E3%2581%25A6%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devtoolkits.app%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZkY2RlMmQ0ZDEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "docker-compose.ymlを可視化するWebツールを既存のインフラ構成図描画ライブラリを再利用して爆速開発する手法",
+    "summary_ja": "ブラウザで動作し、docker-compose.ymlを貼るだけで依存関係やボリューム、ネットワークを可視化・点検するツールを開発した。 この開発の核心は、ゼロから図を描くのではなく、既存のインフラ構成図ビルダーのSVGレンダリング機能を再利用し、YAMLをその入力形式に変換するアダプターのみを実装した点にある。 既存アセットを活用することで、機能開発を最小工数に抑えつつ有用なツールを素早く世に出すための実践的なアーキテクチャ設計を紹介する。",
+    "translations": {
+      "ja": {
+        "title": "docker-compose.ymlを可視化するWebツールを既存のインフラ構成図描画ライブラリを再利用して爆速開発する手法",
+        "summary": "ブラウザで動作し、docker-compose.ymlを貼るだけで依存関係やボリューム、ネットワークを可視化・点検するツールを開発した。 この開発の核心は、ゼロから図を描くのではなく、既存のインフラ構成図ビルダーのSVGレンダリング機能を再利用し、YAMLをその入力形式に変換するアダプターのみを実装した点にある。 既存アセットを活用することで、機能開発を最小工数に抑えつつ有用なツールを素早く世に出すための実践的なアーキテクチャ設計を紹介する。"
+      },
+      "en": {
+        "title": "How to Rapidly Build a Docker Compose Visualizer by Repurposing Existing Infrastructure Diagramming Components",
+        "summary": "The developer built a browser-based visualization tool that parses docker-compose.yml files to map out complex dependencies, volumes, and networks while automatically flagging circular dependencies and port conflicts. Rather than writing a rendering engine from scratch, the author repurposed an existing infrastructure diagram builder’s SVG logic, writing only the necessary transformation functions to map YAML structures into the required input format. This approach proves that combining existing visualization assets with custom adapters drastically reduces development overhead for specialized tools. For builders looking to launch utilities quickly, this case study demonstrates the power of extracting reusable layout logic from mature diagramming libraries rather than reinventing the wheel for every new visualization project."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発"
+    ],
+    "created_at": "2026-11-28T05:17:33.272Z"
+  },
+  {
+    "id": "art-1795843041518-hub2e",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/alibabacloud-sa/items/96174923d156e7beca88",
+    "published_at": "2026-11-28T04:51:49.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYzOTYyNDgwJTJGY2M1MTE0ODFkYjBkMTkwMzY1ZTVkM2U5NGIzODU1YWUwOGIzN2JmNCUyRnhfbGFyZ2UucG5nJTNGMTczNjEyOTA2Nj9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9MTQzYTk5NThlMWM1ZjdlM2Y5MzFiMWZmNzQ5MDgxNGQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D18345f34f4eadf7b9e54921d992b03e6?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9UXdlbldvcmslMjAlQzMlOTclMjBBZ2VudEJyaWRnZSVFRiVCQyU5QSVFNCVCQyU4MSVFNiVBNSVBRCVFMyU4MyU4NyVFMyU4MyVCQyVFMyU4MiVCRiVFMyU4MiU5MiVFMyU4MSVBNCVFMyU4MSVBQSVFMyU4MSU4RSVFMyU4MCU4MSVFMyU4MiVBNCVFMyU4MyVCMyVFMyU4MyU4NiVFMyU4MyVBQSVFMyU4MiVCOCVFMyU4MiVBNyVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MSVBQSVFNSU4OCU4NiVFNiU5RSU5MCVFMyU4MiU5MiVFNiU5NyVBNSVFNSVCOCVCOCVFNiVBNSVBRCVFNSU4QiU5OSVFMyU4MSVBQiVFNSVCMSU4QSVFMyU4MSU5MSVFMyU4MiU4QiZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPTg3MGEyZjUxMzM1ZGFjNzdjYmRlYjY4NDVjZjc4Njll&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBhbGliYWJhY2xvdWQtc2EmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT0zNiZ0eHQtcGFkPTAmcz1hYmMyNTFjZWM3MzgwMjQ5MjY0NzI1MjRmNDJmZWQyYQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=c637435b09333fe5c9595e8981a4c752",
+    "title_ja": "QwenWorkとAgentBridgeが統合、企業データを自然言語で即時分析する「データ分析エキスパートスイート」をリリース",
+    "summary_ja": "2026年Apsara Conferenceで発表されたQwenWorkとAgentBridgeの統合により、企業内データを自然言語で即時分析できる「データ分析エキスパートスイート」が登場しました。 ユーザーは複雑なクエリを書くことなく、対話を通じて社内情報を統合し、意思決定に必要な洞察を得ることが可能です。",
+    "translations": {
+      "ja": {
+        "title": "QwenWorkとAgentBridgeが統合、企業データを自然言語で即時分析する「データ分析エキスパートスイート」をリリース",
+        "summary": "2026年Apsara Conferenceで発表されたQwenWorkとAgentBridgeの統合により、企業内データを自然言語で即時分析できる「データ分析エキスパートスイート」が登場しました。 ユーザーは複雑なクエリを書くことなく、対話を通じて社内情報を統合し、意思決定に必要な洞察を得ることが可能です。"
+      },
+      "en": {
+        "title": "QwenWork and AgentBridge launch Data Analysis Expert Suite to enable conversational, real-time enterprise data insights",
+        "summary": "At the 2026 Apsara Conference, QwenWork and AgentBridge officially unveiled their integrated 'Data Analysis Expert Suite,' designed to bridge enterprise data silos with natural language processing. Instead of writing complex SQL queries or building custom pipelines, business users can now simply ask questions in plain language to generate real-time analytical insights. The system acts as an autonomous agent that navigates internal company data to support instant decision-making processes. For organizations struggling with data democratization, this suite removes technical barriers, effectively allowing non-technical employees to harness raw data for operational clarity. It represents a significant shift towards agent-first analytics, proving that the future of business intelligence lies in conversational interfaces rather than legacy dashboarding tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-28T05:17:21.518Z"
+  },
+  {
+    "id": "art-1795843033804-n3op1",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/nasse_notes01/n/n67a095798de5",
+    "published_at": "2026-11-28T05:14:39.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341802707/rectangle_large_type_2_e3bc4cb953dbede8987dc54c0d9b0f69.jpeg?fit=bounds&quality=85&width=1280",
+    "title_ja": "海外との会議調整コストを解消。AI活用で「国際会議プランナー」を30分で開発し公開するまでのエンジニアリング体験談",
+    "summary_ja": "海外メンバーとの時差調整やスケジュール調整の煩雑さに課題を感じ、生成AIをフル活用して「国際会議プランナー」をわずか30分で構築・公開した事例。 要件定義から実装までAIをペアプログラミングの相棒として使うことで、個人開発のスピードを劇的に加速させている。 完成度よりも「まずは動くもの」を素早く形にし、即座にプロダクトとしてリリースするこのプロセスは、個人開発者が小規模ツールを量産して収益機会を増やす上で極めて有効な戦略となる。",
+    "translations": {
+      "ja": {
+        "title": "海外との会議調整コストを解消。AI活用で「国際会議プランナー」を30分で開発し公開するまでのエンジニアリング体験談",
+        "summary": "海外メンバーとの時差調整やスケジュール調整の煩雑さに課題を感じ、生成AIをフル活用して「国際会議プランナー」をわずか30分で構築・公開した事例。 要件定義から実装までAIをペアプログラミングの相棒として使うことで、個人開発のスピードを劇的に加速させている。 完成度よりも「まずは動くもの」を素早く形にし、即座にプロダクトとしてリリースするこのプロセスは、個人開発者が小規模ツールを量産して収益機会を増やす上で極めて有効な戦略となる。"
+      },
+      "en": {
+        "title": "How to Build and Launch an International Meeting Planner in 30 Minutes Using AI to Solve Scheduling Friction",
+        "summary": "Frustrated by the friction of scheduling meetings with international team members across time zones, the author built and deployed an 'International Meeting Planner' using AI in just 30 minutes. By treating generative AI as a pair-programming partner from requirements to implementation, the developer was able to bypass traditional bottlenecks and ship a functional solution rapidly. This approach prioritizes releasing a 'working MVP' over perfection, demonstrating a high-velocity development strategy that solo builders can leverage to quickly validate tools and scale their output. For indie hackers, the core lesson is that AI integration dramatically lowers the barrier to entry for solving niche productivity problems, allowing for frequent deployments and continuous iteration in real-world environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T05:17:13.804Z"
+  },
+  {
+    "id": "art-1795843025593-c90bi",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/niedraaa/articles/5a070b53decbf1",
+    "published_at": "2026-11-28T00:01:58.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--L0CAAWwG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AE5%25E6%2599%2582%25E9%2596%2593%25E5%2588%25B6%25E9%2599%2590%25E3%2581%25A8%25E9%2580%25B1%25E9%2596%2593%25E5%2588%25B6%25E9%2599%2590%25EF%25BC%259A%25E4%25BD%2595%25E3%2581%258C%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%25E3%2581%2595%25E3%2582%258C%25E3%2580%2581%25E3%2581%2584%25E3%2581%25A4%25E3%2583%25AA%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%25E3%2581%2595%25E3%2582%258C%25E3%2580%2581%25E6%25AE%258B%25E3%2582%258A%25E3%2582%2592%25E3%2581%25A9%25E3%2581%2586%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2599%25E3%2582%258B%25E3%2581%258B%25EF%25BC%25882026%25E5%25B9%25B4...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Adrien%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUxjUER5cEs0S3plRU1TS1BXQ215MHB3bkt3cDZpWC1EWmd6djFJd3dQeWR4WmhlR3A9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの利用制限を徹底解説：5時間ごとのセッション制限と週間制限の仕組み、残量確認方法（2026年11月最新版）",
+    "summary_ja": "Claude Codeの利用枠は、5時間ごとのセッション制限と、アカウントごとに固定されたリセット日時の週間制限の二重構造となっている。 claude.aiやモバイル、IDEといった全環境の利用分が合算される仕組みだ。 残量はCLIの「/usage」コマンドや設定画面からリアルタイム確認が可能で、ステータスラインへの表示も推奨される。 Pro等のプラン加入者はモデルごとの週次制限も考慮する必要があり、API効率を意識した開発が不可欠だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの利用制限を徹底解説：5時間ごとのセッション制限と週間制限の仕組み、残量確認方法（2026年11月最新版）",
+        "summary": "Claude Codeの利用枠は、5時間ごとのセッション制限と、アカウントごとに固定されたリセット日時の週間制限の二重構造となっている。 claude.aiやモバイル、IDEといった全環境の利用分が合算される仕組みだ。 残量はCLIの「/usage」コマンドや設定画面からリアルタイム確認が可能で、ステータスラインへの表示も推奨される。 Pro等のプラン加入者はモデルごとの週次制限も考慮する必要があり、API効率を意識した開発が不可欠だ。"
+      },
+      "en": {
+        "title": "Deep dive into Claude Code usage limits: Mastering session windows, weekly resets, and tracking your remaining allowance (Nov 2026 update)",
+        "summary": "Claude Code enforces usage quotas through a dual-layer system comprising rolling five-hour session windows and fixed weekly reset cycles per account. Critically, usage across all platforms—including the claude.ai web interface, mobile apps, and integrated development environments—is aggregated against a single shared bucket. Developers can monitor their remaining capacity in real-time via the \"/usage\" CLI command or the account settings panel, with an option to toggle status line visibility for proactive tracking. For subscribers on Pro or higher tiers, navigating model-specific weekly constraints is essential to avoid service interruptions. Treating these quotas as a finite resource rather than an infinite utility is the practical mindset for maintaining consistent coding velocity while building with AI-native tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-28T05:17:05.593Z"
+  },
+  {
     "id": "art-1795842127764-p4sxt",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -6423,32 +6528,6 @@
     "created_at": "2026-11-27T12:32:14.177Z"
   },
   {
-    "id": "art-1795782727643-eervo",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/pict_garage/n/nbc1d5fa4c32f",
-    "published_at": "2026-11-27T12:28:31.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341520795/rectangle_large_type_2_c37e79698290b6e41bba476e0d5d844c.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "Androidアプリ個人開発、『シンプル・ナンプレ』クローズドテスト突破に向けたBuild 18アップデートを公開",
-    "summary_ja": "Android個人開発者のPict Garageが、Google Playストア公開要件である「テスター20人による14日間連続運用」のクリアを目指し、パズルアプリ『シンプル・ナンプレ』の第2回アップデート（Build 18）を配信した。 今回はプレイ中の操作感を向上させるため、メモ機能のUX改善に注力している。 リリース前のテスターによる検証プロセスは、個人開発アプリのクオリティ担保とストア審査通過において、避けて通れない重要なマイルストーンとなる。",
-    "translations": {
-      "ja": {
-        "title": "Androidアプリ個人開発、『シンプル・ナンプレ』クローズドテスト突破に向けたBuild 18アップデートを公開",
-        "summary": "Android個人開発者のPict Garageが、Google Playストア公開要件である「テスター20人による14日間連続運用」のクリアを目指し、パズルアプリ『シンプル・ナンプレ』の第2回アップデート（Build 18）を配信した。 今回はプレイ中の操作感を向上させるため、メモ機能のUX改善に注力している。 リリース前のテスターによる検証プロセスは、個人開発アプリのクオリティ担保とストア審査通過において、避けて通れない重要なマイルストーンとなる。"
-      },
-      "en": {
-        "title": "Solo Android developer pushes Build 18 for 'Simple Sudoku' to satisfy Google Play's closed testing requirements",
-        "summary": "Solo Android developer Pict Garage has deployed the second major update, Build 18, for their puzzle app 'Simple Sudoku' as they navigate Google Play’s strict requirement of maintaining 20 testers for 14 consecutive days. This latest release specifically optimizes the UX of the note-taking feature to solve persistent confusion during gameplay. Navigating the rigorous closed testing phase is a critical hurdle for solo builders, serving as both a final polish pass for user experience and a necessary bridge to full production release. For solo developers aiming for the Play Store, adhering to these testing timelines while iterating on feedback is the essential playbook for turning prototypes into successful, compliant applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-27T12:32:07.643Z"
-  },
-  {
     "id": "art-1795782718449-4ihr1",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -9044,32 +9123,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-27T02:17:33.433Z"
-  },
-  {
-    "id": "art-1795745823116-rnutl",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ennagara128/items/73c0baf04b343ce7b9b6",
-    "published_at": "2026-11-27T01:33:26.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MTU2NTc4JTJGYTgyYjkyMzUzMWRkYzIxYmZhMWY4MDhhY2QyMjM5Yzk2NjlkZjg4NSUyRnhfbGFyZ2UucG5nJTNGMTc3NjY1NTA1MT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NGYxNjY0YWY5ZmI5NmJiZTZjYjRjMTFlMWFjNjVhNWQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D8d44234ba9198549fbf0016c0117ba44?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9MjAyNiVFNSVCOSVCNDExJUU2JTlDJTg4MjclRTYlOTclQTUlMjAlRTQlQkIlOEElRTYlOTclQTUlRTMlODElQUVRaWl0YSVFMyU4MyU4OCVFMyU4MyVBQyVFMyU4MyVCMyVFMyU4MyU4OSVFOCVBOCU5OCVFNCVCQSU4QiVFMyU4MiU5MiVFMyU4MyU5RCVFMyU4MyU4MyVFMyU4MyU4OSVFMyU4MiVBRCVFMyU4MyVBMyVFMyU4MiVCOSVFMyU4MyU4OCVFMyU4MSVBNyVFOCU4MSVCNCVFMyU4MSU5MyVFMyU4MSU4NiVFRiVCQyU4MSZ0eHQtYWxpZ249bGVmdCUyQ3RvcCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTU2JnR4dC1wYWQ9MCZzPWFjZmU3MmRhODJmZTQ5ZWRjZjZkNWY2ZTUxMGI1Y2Yy&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBlbm5hZ2FyYTEyOCZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWUxNDBiMDk1ZGMwYjI5MGJlY2ZhNjZlMTM0NDk4NzVk&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=646c6982c4c815698992a961a842dd85",
-    "title_ja": "Qiitaトレンド記事を毎日ポッドキャスト化、さらに情報量4倍のQRコード生成技術を公開",
-    "summary_ja": "前日夜のQiitaトレンド記事をAIが要約し、毎朝7時にポッドキャストとして配信するサービスが公開された。 通勤などの隙間時間を活用した効率的な技術インプットを可能にする。 また、あわせて公開された高密度QRコード生成技術は、従来の4倍の情報量を格納できる仕組みとなっており、URLだけでなく複雑なデータの埋め込みに活用できる。 最新のAI要約技術とQRコードの応用例は、メディア運用やデータ共有を最適化したい開発者にとって有用なリファレンスだ。",
-    "translations": {
-      "ja": {
-        "title": "Qiitaトレンド記事を毎日ポッドキャスト化、さらに情報量4倍のQRコード生成技術を公開",
-        "summary": "前日夜のQiitaトレンド記事をAIが要約し、毎朝7時にポッドキャストとして配信するサービスが公開された。 通勤などの隙間時間を活用した効率的な技術インプットを可能にする。 また、あわせて公開された高密度QRコード生成技術は、従来の4倍の情報量を格納できる仕組みとなっており、URLだけでなく複雑なデータの埋め込みに活用できる。 最新のAI要約技術とQRコードの応用例は、メディア運用やデータ共有を最適化したい開発者にとって有用なリファレンスだ。"
-      },
-      "en": {
-        "title": "Qiita trends are now daily podcasts, alongside a new technique for generating QR codes with 4× data density",
-        "summary": "A new service now summarizes previous-night Qiita trends via AI, delivering them as a podcast every morning at 7:00 AM, allowing developers to consume tech insights during their daily commute. Additionally, the release introduces a technical implementation for high-density QR codes capable of storing four times the data of standard versions. This enables embedding more than just simple URLs, opening up use cases for complex data offline-to-online transitions. By combining automated AI summarization for content curation with advanced QR data encoding, developers can optimize their information dissemination and distribution strategies. For those building engagement tools or data transfer utilities, these approaches provide a practical blueprint for enhancing information density and audience accessibility in everyday tech workflows."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-27T02:17:03.116Z"
   },
   {
     "id": "art-1795744970338-rh7qw",
@@ -12159,32 +12212,6 @@
     "created_at": "2026-11-26T07:48:47.381Z"
   },
   {
-    "id": "art-1795678359454-ypj9d",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/tickoo/articles/1fe290b63c56bc",
-    "published_at": "2026-11-26T05:09:23.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--TWUOvqoI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%25A9%25B1%25E3%2581%2599%25E3%2581%25A8ToDo%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258A%25E3%2580%2581%25E5%25A4%259C%25E3%2581%25AB%25E7%25B5%25B5%25E6%2597%25A5%25E8%25A8%2598%25E3%2581%258C1%25E6%259E%259A%25E6%25AE%258B%25E3%2582%258BiOS%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Tickoo%25EF%25BC%2588%25E3%2583%2586%25E3%2582%25A3%25E3%2583%2583%25E3%2582%25AF%25E3%2583%25BC%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzVkZDViMDM1MjAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "音声ToDo自動整理とAI絵日記生成を実現したiOSアプリ「Tickoo」個人開発の裏側：LLM活用によるタスク管理と情緒的UXの融合手法",
-    "summary_ja": "個人開発のToDoアプリ「Tickoo」は、音声やテキスト入力からAIがタスクを自動抽出・整理し、夜には一日の振り返りをキャラクターが絵日記として生成するiOS/Mac向けツールだ。 タスク管理という無機質な作業に「絵日記」という情緒的価値を付加することで、ユーザーの継続率を高める仕組みを実装した。 LLMを用いた入力の構造化と、個人の体験を記録に残すUXの設計は、機能過多になりがちな生産性ツールにおける差別化の重要な戦略といえる。",
-    "translations": {
-      "ja": {
-        "title": "音声ToDo自動整理とAI絵日記生成を実現したiOSアプリ「Tickoo」個人開発の裏側：LLM活用によるタスク管理と情緒的UXの融合手法",
-        "summary": "個人開発のToDoアプリ「Tickoo」は、音声やテキスト入力からAIがタスクを自動抽出・整理し、夜には一日の振り返りをキャラクターが絵日記として生成するiOS/Mac向けツールだ。 タスク管理という無機質な作業に「絵日記」という情緒的価値を付加することで、ユーザーの継続率を高める仕組みを実装した。 LLMを用いた入力の構造化と、個人の体験を記録に残すUXの設計は、機能過多になりがちな生産性ツールにおける差別化の重要な戦略といえる。"
-      },
-      "en": {
-        "title": "Building 'Tickoo': How an AI-powered iOS ToDo app uses LLMs for voice-to-task parsing and daily emotional diary illustration generation",
-        "summary": "The solo-developed iOS and Mac application 'Tickoo' leverages LLMs to transform chaotic voice or text inputs into structured ToDo lists, while simultaneously generating a daily 'scribble' diary illustration via AI at night. By combining the rigid utility of task management with the emotional reward of a visual diary, the app aims to boost user retention significantly. The development process highlights the technical challenge of structuring natural language for productivity, but emphasizes that adding emotional context to daily tasks is a potent differentiator in a crowded market. For indie builders, the takeaway is clear: adding a creative, personalized feedback loop to mundane utility tasks can transform a standard productivity tool into a daily habit."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-26T07:32:39.454Z"
-  },
-  {
     "id": "art-1795675639796-1lx2m",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -12210,32 +12237,6 @@
       "セキュリティ"
     ],
     "created_at": "2026-11-26T06:47:19.796Z"
-  },
-  {
-    "id": "art-1795675626334-93p11",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/itaraiguma/articles/lcp-background-tab-mean-27s",
-    "published_at": "2026-11-25T23:43:09.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ZmKxzz4h--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:p75%25E3%2581%25AF%25E3%2580%258C%25E8%2589%25AF%25E5%25A5%25BD%25E3%2580%258D%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%25AB%25E3%2580%2581%25E5%25B9%25B3%25E5%259D%2587LCP%25E3%2581%258C27%25E7%25A7%2592%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2520%25E2%2594%2580%2520%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%25BF%25E3%2582%258F%25E3%2581%259A%25E3%2581%25AB%25E6%25B8%25AC%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25A8%25E3%2581%258D%25E3%2580%2581%25E6%258D%25A8%25E3%2581%25A6%25E3%2582%258B%25E5%2587%25A6%25E7%2590%2586%25E3%2581%25BE%25E3%2581%25A7%25E5%2586%2599%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25AA%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:IT%25E3%2582%25A2%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B0%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzFlZmMxMmY2MTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "WordPressブログの平均LCPが27秒に？p75指標では見抜けなかったバックグラウンドタブ計測の落とし穴と修正アプローチ",
-    "summary_ja": "WordPressブログのパフォーマンス計測で、p75指標が良好だったにもかかわらず、デスクトップの平均LCPが27秒という異常値を示した。 原因は、PerformanceObserverを用いた自作計測スクリプトが、バックグラウンドタブで開かれたページの処理を適切に終了していなかったことにある。 平均値の罠を回避し、正確なユーザー体験を把握するためには、セッション終了処理を適切に組み込む必要があった。",
-    "translations": {
-      "ja": {
-        "title": "WordPressブログの平均LCPが27秒に？p75指標では見抜けなかったバックグラウンドタブ計測の落とし穴と修正アプローチ",
-        "summary": "WordPressブログのパフォーマンス計測で、p75指標が良好だったにもかかわらず、デスクトップの平均LCPが27秒という異常値を示した。 原因は、PerformanceObserverを用いた自作計測スクリプトが、バックグラウンドタブで開かれたページの処理を適切に終了していなかったことにある。 平均値の罠を回避し、正確なユーザー体験を把握するためには、セッション終了処理を適切に組み込む必要があった。"
-      },
-      "en": {
-        "title": "Why My Average LCP Hit 27 Seconds While P75 Looked Fine: Lessons on Tracking Background Tab Performance",
-        "summary": "While tracking WordPress performance via a custom PerformanceObserver script, I noticed a discrepancy: my P75 metrics were healthy, yet the desktop average LCP spiked to a staggering 27 seconds. The root cause was that the tracking script failed to account for pages opened in background tabs, which continued to inflate the metrics indefinitely. This incident highlights the danger of relying solely on percentiles like P75, which can easily mask severe outliers caused by specific user behaviors like background loading. For builders implementing custom analytics, the key takeaway is that simple scripts must rigorously handle page lifecycle events and session teardowns. Without explicit garbage collection for tracking timers, average metrics will misrepresent the true user experience."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-26T06:47:06.334Z"
   },
   {
     "id": "art-1795675619831-m971t",
