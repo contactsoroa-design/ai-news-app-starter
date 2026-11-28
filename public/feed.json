@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-1795862008185-b4i07",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/circularuins/articles/reproducible-ai-env-lead-operation",
+    "published_at": "2026-11-28T03:18:55.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--CChW4GeH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2586%258D%25E7%258F%25BE%25E6%2580%25A7%25E3%2581%25AE%25E3%2581%2582%25E3%2582%258BAI%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E6%25A7%258B%25E7%25AF%2589%2520%25233%2520%25E2%2580%2595%25E2%2580%2595%2520%25E6%25AE%25B5%25E5%258F%2596%25E3%2582%258A%25E5%25BD%25B9%25E3%2581%25AE%2520Claude%2520Code%2520%25E3%2581%25AB%25E3%2580%2581%25E8%2581%259E%25E3%2581%258F%25E3%2583%25BB%25E9%2580%25B2%25E3%2582%2581%25E3%2582%258B%25E3%2583%25BB%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2582%258B%25E3%2581%25AE%25E7%25B7%259A%25E3%2582%2592%25E5%25BC%2595%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:circularuins%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkyZTFiNGVjOWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "再現性のあるAI開発環境構築術：Claude Codeを「段取り役」と「作業役」に分断・整理し、LLMエージェントの自律運用効率を最大化する設計論",
+    "summary_ja": "AI開発環境構築の第3弾として、Claude Codeを用いた開発フローの最適化手法を解説する。 1つのセッションを人間と対話する「段取り役（Lead）」、もう1つを実作業を行う「作業役（Worker）」として分離し、責任範囲を明確に定義する運用設計を提唱。 この「分離戦略」を導入することで、LLMのトークン効率を高めつつ、人間がAIに指示を出す判断基準が明確になり、複雑な開発プロジェクトの再現性が劇的に向上する。",
+    "translations": {
+      "ja": {
+        "title": "再現性のあるAI開発環境構築術：Claude Codeを「段取り役」と「作業役」に分断・整理し、LLMエージェントの自律運用効率を最大化する設計論",
+        "summary": "AI開発環境構築の第3弾として、Claude Codeを用いた開発フローの最適化手法を解説する。 1つのセッションを人間と対話する「段取り役（Lead）」、もう1つを実作業を行う「作業役（Worker）」として分離し、責任範囲を明確に定義する運用設計を提唱。 この「分離戦略」を導入することで、LLMのトークン効率を高めつつ、人間がAIに指示を出す判断基準が明確になり、複雑な開発プロジェクトの再現性が劇的に向上する。"
+      },
+      "en": {
+        "title": "Architecting Reproducible AI Workflows: Separating Claude Code into 'Lead' and 'Worker' Sessions for Optimized Autonomous Development",
+        "summary": "This guide details an advanced architectural pattern for reproducible AI development using Claude Code. By assigning one dedicated session to act as the 'Lead'—the interface for human instructions—and spawning separate 'Worker' sessions only when necessary for specific tasks, developers can dramatically improve operational control. The strategy involves rigorous segmentation where the Lead handles the strategic reasoning while delegating execution, preventing context bloat. Analysis of 59 development sessions confirms that this separation keeps the workflow organized, significantly reducing the noise in LLM interactions. For builders, this approach proves that structuring the command hierarchy between human and agent is more effective than allowing a single agent session to handle everything, ultimately maximizing productivity and consistency in AI-driven coding."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-28T10:33:28.185Z"
+  },
+  {
+    "id": "art-1795862001035-qcvbg",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/atolls_note/n/n66a3298f4862",
+    "published_at": "2026-11-28T10:09:53.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/340910052/rectangle_large_type_2_02784346afd382954a3a40e62dfeda81.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "複数AIエージェントの競合を防ぐGit worktree活用術：コード変更を分離し安全に並列作業する手順と12回の実験結果",
+    "summary_ja": "複数のAIエージェントへ同時にコード編集を依頼すると、gitの競合や意図しない上書きが発生しがちだ。 本記事では、Git worktreeを活用して作業場所（フォルダー）を論理的に分離し、各AIに専用の作業スペースを割り当てるフローを解説する。 実際に同時並行と逐次実行を12回比較検証した結果に基づき、安全にマージするプロセスまで網羅した。 開発者は並列実行時に発生するコンテキスト破壊を防ぐため、Gitレベルでのディレクトリ分離をワークフローに組み込むべきだ。",
+    "translations": {
+      "ja": {
+        "title": "複数AIエージェントの競合を防ぐGit worktree活用術：コード変更を分離し安全に並列作業する手順と12回の実験結果",
+        "summary": "複数のAIエージェントへ同時にコード編集を依頼すると、gitの競合や意図しない上書きが発生しがちだ。 本記事では、Git worktreeを活用して作業場所（フォルダー）を論理的に分離し、各AIに専用の作業スペースを割り当てるフローを解説する。 実際に同時並行と逐次実行を12回比較検証した結果に基づき、安全にマージするプロセスまで網羅した。 開発者は並列実行時に発生するコンテキスト破壊を防ぐため、Gitレベルでのディレクトリ分離をワークフローに組み込むべきだ。"
+      },
+      "en": {
+        "title": "Using Git worktrees to isolate AI agents and prevent code conflicts: A parallel workflow guide with 12 experimental tests",
+        "summary": "Running multiple AI agents against a single repository simultaneously often leads to destructive Git conflicts and unexpected file overwrites. This guide details how to leverage Git worktrees to create isolated, directory-level workspaces for different AI tasks, ensuring that agents operate on separate copies of the codebase before final integration. By comparing 12 distinct test cases between parallel and sequential execution, the author demonstrates that granular isolation is the only way to maintain codebase integrity. The key takeaway for developers building with AI agents is that you must enforce directory separation at the version control level—rather than just hoping for non-conflicting output—to safely scale up your automated coding workflows without corrupting the main branch."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-28T10:33:21.035Z"
+  },
+  {
     "id": "art-1795861949257-585is",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -9963,32 +10015,6 @@
     "created_at": "2026-11-27T01:16:43.268Z"
   },
   {
-    "id": "art-1795741333903-mzzul",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/fubenya/books/slcp-ai-tailoring",
-    "published_at": "2026-11-26T14:03:19.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--jIsmODsF--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci9kNjRhNjRlMjIxLnBuZw==%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
-    "title_ja": "共通フレーム2013（SLCP）をAI協働開発に最適化するテーラリング手法を公開：生成AI時代のソフトウェアライフサイクル設計の実践的アプローチ",
-    "summary_ja": "共通フレーム2013（SLCP）を基準に、生成AIと協働する現代的なソフトウェア開発プロセスの設計手法を確立した。 単なるフレームワークの適用ではなく、AIが得意とする生成・自動化タスクと人間が担うべき検証・意思決定を明確に切り分ける「テーラリング」の実践モデルを提示する。 開発者はこの手法を用いることで、AI活用時の設計品質のバラつきを抑え、レガシーな標準プロセスを現代のAI開発フローに最適化できる。",
-    "translations": {
-      "ja": {
-        "title": "共通フレーム2013（SLCP）をAI協働開発に最適化するテーラリング手法を公開：生成AI時代のソフトウェアライフサイクル設計の実践的アプローチ",
-        "summary": "共通フレーム2013（SLCP）を基準に、生成AIと協働する現代的なソフトウェア開発プロセスの設計手法を確立した。 単なるフレームワークの適用ではなく、AIが得意とする生成・自動化タスクと人間が担うべき検証・意思決定を明確に切り分ける「テーラリング」の実践モデルを提示する。 開発者はこの手法を用いることで、AI活用時の設計品質のバラつきを抑え、レガシーな標準プロセスを現代のAI開発フローに最適化できる。"
-      },
-      "en": {
-        "title": "Optimizing SLCP-2013 for AI-Collaborative Development: A Practical Framework Tailoring Guide for Modern Software Engineering Lifecycles",
-        "summary": "This methodology reinterprets the classic SLCP-2013 (System Lifecycle Common Framework) by tailoring it specifically for development workflows that integrate generative AI. Rather than treating frameworks as rigid requirements, the approach creates a practical model that strictly delineates where AI should handle generation and automation, versus where human oversight remains critical for validation and decision-making. By applying this tailored framework, engineering teams can reduce inconsistent design quality often found in AI-assisted workflows and effectively map legacy standard processes onto modern, LLM-powered development cycles. For builders, this establishes a repeatable architecture for governing AI integration, ensuring that compliance and high-quality software engineering standards persist even as AI tools fundamentally alter the day-to-day coding and design lifecycle."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-27T01:02:13.903Z"
-  },
-  {
     "id": "art-1795739571203-wdedi",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -10013,32 +10039,6 @@
       "個人開発・収益化"
     ],
     "created_at": "2026-11-27T00:32:51.203Z"
-  },
-  {
-    "id": "art-1795738629262-z8i9g",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/joinclass/articles/claude-code-2-1-332-mcp-skills-tasks",
-    "published_at": "2026-11-26T23:10:16.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--wny-YH5L--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25202.1.332%2520%25E6%2596%25B0%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%253A%2520MCP%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2581%258B%25E3%2582%2589%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25AB%25E3%2582%2592%25E9%2585%258D%25E3%2582%258A%25E3%2580%2581MCP%2520Tasks%25E3%2581%25A7%25E9%2595%25B7%25E3%2581%2584%25E5%2587%25A6...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JOINCLASS%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NhOWUwY2FiYmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Code 2.1.332新機能：MCPサーバー経由のスキル配信とMCP Tasksによる非同期処理の実行",
-    "summary_ja": "Claude Code 2.1.332では、MCPサーバーがスキルを直接配信可能となり、/メニューから「server:skill」形式で呼び出せるようになりました。 さらにPreSkillShellCommandフックの追加によりスキル読み込み時のシェル実行制御が可能に。 並行して利用可能な「MCP Tasks」を活用すれば、時間のかかるツール処理をサーバー側で非同期実行し、Claudeは待機せずに次のタスクへ移行できます。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code 2.1.332新機能：MCPサーバー経由のスキル配信とMCP Tasksによる非同期処理の実行",
-        "summary": "Claude Code 2.1.332では、MCPサーバーがスキルを直接配信可能となり、/メニューから「server:skill」形式で呼び出せるようになりました。 さらにPreSkillShellCommandフックの追加によりスキル読み込み時のシェル実行制御が可能に。 並行して利用可能な「MCP Tasks」を活用すれば、時間のかかるツール処理をサーバー側で非同期実行し、Claudeは待機せずに次のタスクへ移行できます。"
-      },
-      "en": {
-        "title": "Claude Code 2.1.332 Launches MCP-Based Skill Distribution and MCP Tasks for Async Execution",
-        "summary": "Claude Code 2.1.332 introduces a major update where MCP servers can now distribute skills directly, accessible via the slash menu as \"server:skill.\" The release also adds a PreSkillShellCommand hook, giving developers precise control over shell execution during skill loading. Alongside these features, users can leverage MCP Tasks, which offload time-intensive tool processing to the server side. This allows Claude to continue working on subsequent logic without blocking on long-running operations. By integrating these asynchronous task patterns and modular skill distributions, engineers can build more responsive, fluid development workflows. This update marks a significant shift in how agents manage complex tool chains and background processes, effectively streamlining multi-step operations for complex coding environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-27T00:17:09.262Z"
   },
   {
     "id": "art-1795738608636-uumiq",
