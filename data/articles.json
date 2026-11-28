@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795884449918-sahp2",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/usagit/articles/40e16633e9f62f",
+    "published_at": "2026-11-28T13:27:45.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--SSTeKP6h--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:SIGINT%2520%25E3%2581%25A7%25E6%25AD%25A2%25E3%2582%2581%25E3%2581%259F%2520claude%2520-p%2520%25E3%2581%258C%25E3%2580%258C%25E6%2588%2590%25E5%258A%259F%25E3%2580%258D%25E3%2582%2592%25E8%25BF%2594%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25EF%25BC%259A%25E7%25B5%2582%25E4%25BA%2586%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25200%2520%25E3%2581%25AE%25E8%2590%25BD%25E3%2581%25A8%25E3%2581%2597%25E7%25A9%25B4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A6%25E3%2582%25B5%25E3%2582%25AE%25E3%2583%2583%25E3%2583%2588%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2I4OTE3MjZmODcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude CLI（2.1.319）のSIGINT終了コード問題：中断処理が成功と誤判定される仕様とその対策",
+    "summary_ja": "Claude CLI（claude -p）を自動化環境で子プロセスとして実行する際、SIGINTで中断しても終了コードが「0（成功）」を返すため、プログラムが実行完了と誤判定する危険がある。 バージョン2.1.319の実測ではSIGTERMなら143を返すが、SIGINTでは正常終了に見えるため注意が必要だ。",
+    "translations": {
+      "ja": {
+        "title": "Claude CLI（2.1.319）のSIGINT終了コード問題：中断処理が成功と誤判定される仕様とその対策",
+        "summary": "Claude CLI（claude -p）を自動化環境で子プロセスとして実行する際、SIGINTで中断しても終了コードが「0（成功）」を返すため、プログラムが実行完了と誤判定する危険がある。 バージョン2.1.319の実測ではSIGTERMなら143を返すが、SIGINTでは正常終了に見えるため注意が必要だ。"
+      },
+      "en": {
+        "title": "Claude CLI 2.1.319 sends exit code 0 on SIGINT: Why your automation likely misinterprets interrupted runs as successes",
+        "summary": "Running 'claude -p' as a child process in automation creates a silent failure risk because it returns exit code 0 when interrupted by SIGINT, falsely signaling a successful completion to parent processes. While SIGTERM correctly returns 143 in version 2.1.319, SIGINT mimics a clean exit, which can wreak havoc on CI/CD pipelines or automated workflows that rely purely on process return codes. Builders should avoid trusting exit status alone when managing headless Claude CLI instances. Instead, implement robust validation by checking for specific stdout patterns or using sidecar monitoring flags to confirm actual task completion. Relying on basic shell exit codes in this context is a common trap that masks partial or failed LLM runs."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T16:47:29.918Z"
+  },
+  {
+    "id": "art-1795884443196-abfs4",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/sfz_lab/n/nb52cce77dd4d",
+    "published_at": "2026-11-28T16:41:27.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/342065151/rectangle_large_type_2_47519db614c251e405ac6549cecd77b6.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "塾の受講料と学習時間を可視化する個人開発アプリ、受験までのカリキュラム完走可否を判定する機能を実装し公開準備中",
+    "summary_ja": "塾の講座受講料とカリキュラムの進度を管理し、受験までに完走できるかを可視化する個人開発アプリが公開準備中だ。 単なるコスト計算だけでなく、全講座を消化するための学習時間をシミュレーションすることで、無理な受講を防ぐ仕組みを実装した。 ユーザーが予算と時間の両面から受講計画を最適化できる点は、教育関連の個人開発における重要なペインポイントを突いている。",
+    "translations": {
+      "ja": {
+        "title": "塾の受講料と学習時間を可視化する個人開発アプリ、受験までのカリキュラム完走可否を判定する機能を実装し公開準備中",
+        "summary": "塾の講座受講料とカリキュラムの進度を管理し、受験までに完走できるかを可視化する個人開発アプリが公開準備中だ。 単なるコスト計算だけでなく、全講座を消化するための学習時間をシミュレーションすることで、無理な受講を防ぐ仕組みを実装した。 ユーザーが予算と時間の両面から受講計画を最適化できる点は、教育関連の個人開発における重要なペインポイントを突いている。"
+      },
+      "en": {
+        "title": "Indie developer builds app to visualize cram school costs and course completion timelines before exam deadlines",
+        "summary": "An indie developer is preparing to launch a new app designed to help students and parents visualize cram school tuition costs and curriculum progress against upcoming exam deadlines. Beyond simple budgeting, the tool calculates total study hours required to complete selected courses, effectively highlighting whether a schedule is feasible before the test date. This approach solves a significant pain point for families balancing limited academic time with aggressive course enrollments. For indie developers, this highlights the value of focusing on specific, data-heavy niches like educational planning where existing solutions often ignore the time-management constraints inherent in curriculum planning and budget optimization."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-28T16:47:23.196Z"
+  },
+  {
+    "id": "art-1795884433367-39yph",
+    "source_id": "source-starterstory",
+    "source_name": "Starter Story (Solo Developer)",
+    "url": "https://www.starterstory.com/stories/pushup-quest",
+    "published_at": "2026-11-27T19:03:09+00:00",
+    "og_image_url": null,
+    "title_ja": "筋トレ習慣化アプリ「Pushup Quest」開発者が語る、機能削減とゲーミフィケーションで継続率を高める個人開発の鉄則",
+    "summary_ja": "筋トレアプリ「Pushup Quest」の開発者は、複雑な機能を削ぎ落とし、RPG的な成長要素を組み込むことでユーザーの継続率を劇的に改善した。 収益化を急がず、まずは毎日使いたくなるシンプルなゲーム体験を磨き上げたことが、口コミとストアランキング向上に繋がっている。 個人開発者は機能の豊富さではなく、ユーザーが毎日行う特定の習慣にどれだけ深く入り込めるかを指標にすべきだ。 今回の事例は、ニッチなフィットネス市場で生存し、緩やかに売上を伸ばすための戦略的な教科書となっている。",
+    "translations": {
+      "ja": {
+        "title": "筋トレ習慣化アプリ「Pushup Quest」開発者が語る、機能削減とゲーミフィケーションで継続率を高める個人開発の鉄則",
+        "summary": "筋トレアプリ「Pushup Quest」の開発者は、複雑な機能を削ぎ落とし、RPG的な成長要素を組み込むことでユーザーの継続率を劇的に改善した。 収益化を急がず、まずは毎日使いたくなるシンプルなゲーム体験を磨き上げたことが、口コミとストアランキング向上に繋がっている。 個人開発者は機能の豊富さではなく、ユーザーが毎日行う特定の習慣にどれだけ深く入り込めるかを指標にすべきだ。 今回の事例は、ニッチなフィットネス市場で生存し、緩やかに売上を伸ばすための戦略的な教科書となっている。"
+      },
+      "en": {
+        "title": "Solo developer of fitness app Pushup Quest reveals why stripping features and adding gamification drives sustainable user retention",
+        "summary": "The solo developer behind Pushup Quest shares how removing complex features and integrating RPG-style progression mechanics dramatically improved daily user retention. Instead of rushing for monetization, the strategy focused on refining a simple, engaging gaming experience that turns daily exercise into a reward-based habit, which directly fueled word-of-mouth growth and higher app store visibility. The core takeaway for solo builders is to stop prioritizing feature bloat and instead measure success by how deeply the product integrates into a user's existing daily routine. By identifying a specific, manageable fitness niche, developers can craft highly sticky tools that generate steady revenue without relying on massive marketing budgets or complicated, high-churn feature sets that often distract from the app's fundamental value proposition."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-28T16:47:13.367Z"
+  },
+  {
+    "id": "art-1795884425915-oattt",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.theguardian.com/business/2026/nov/28/ai-bots-wreak-havoc-uk-restaurant-bookings-meta-muse",
+    "published_at": "2026-11-28T16:34:36.000Z",
+    "og_image_url": null,
+    "title_ja": "英レストラン予約システムにAIボットが蔓延し、予約枠の買い占めや無断キャンセルが急増、店舗側は対策に追われる事態に",
+    "summary_ja": "英国の飲食店で、AIボットを用いた不正な予約の買い占めや大量キャンセルが横行し、深刻な営業妨害となっている。 本来の顧客が予約できなくなるだけでなく、店舗側は売上の損失や運用負荷の増大に直面している。 自動化ツールが実社会のインフラに悪影響を及ぼす事例であり、開発者はAPI利用時のレート制限やCAPTCHA導入など、人間とボットを正確に判別するための堅牢な防衛策を構築段階から組み込む必要がある。",
+    "translations": {
+      "ja": {
+        "title": "英レストラン予約システムにAIボットが蔓延し、予約枠の買い占めや無断キャンセルが急増、店舗側は対策に追われる事態に",
+        "summary": "英国の飲食店で、AIボットを用いた不正な予約の買い占めや大量キャンセルが横行し、深刻な営業妨害となっている。 本来の顧客が予約できなくなるだけでなく、店舗側は売上の損失や運用負荷の増大に直面している。 自動化ツールが実社会のインフラに悪影響を及ぼす事例であり、開発者はAPI利用時のレート制限やCAPTCHA導入など、人間とボットを正確に判別するための堅牢な防衛策を構築段階から組み込む必要がある。"
+      },
+      "en": {
+        "title": "AI bots are weaponized to hijack UK restaurant booking slots, causing major financial losses and operational nightmares for local hospitality businesses",
+        "summary": "Malicious AI bots are systematically hijacking restaurant reservation slots across the UK, engaging in bulk booking and frequent cancellations that effectively paralyze local dining operations. These automated scripts not only block legitimate patrons but also inflict significant financial damage through lost covers and wasted overhead. As this trend highlights how easily automation can destabilize physical world services, builders must treat bot traffic as a Tier-1 threat. Implementing robust defenses—such as rate limiting, behavioral analysis, and challenge-response authentication (CAPTCHA)—is no longer optional but a critical requirement for any consumer-facing booking system. For developers, the lesson is clear: building public-facing APIs without aggressive abuse protection is a recipe for platform failure in today's high-stakes bot landscape."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "ビジネス",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T16:47:05.915Z"
+  },
+  {
     "id": "art-1795883517267-8thgp",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5508,33 +5613,6 @@
     "created_at": "2026-11-28T02:32:02.145Z"
   },
   {
-    "id": "art-1795833114767-qwob2",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/murabo/n/nb39b0097fd2c",
-    "published_at": "2026-11-28T02:13:50.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/340086827/rectangle_large_type_2_f17ad3eaa3c484054fe846590fe706b9.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "「AIだけで稼ぐ90日」という実験の失敗記録。なぜAIフル活用のビジネスは個人開発で通用しなかったのか",
-    "summary_ja": "「AIを主体にして90日間で収益化できるか」という個人の検証プロジェクトが失敗に終わった。 企画立案、開発、記事執筆、営業メールの送信まで全てをAIに任せたが、結果的に顧客の獲得や継続的な売上には至らなかった。 AIによる作業効率化は強力だが、ビジネスの本質である「課題解決への共感」や「人間的な信頼醸成」を欠いた自動化アプローチが通用しない現実を浮き彫りにしている。 AIをツールとして賢く使いつつ、泥臭い人間関係の構築とのバランスをどう取るかが今後の課題だ。",
-    "translations": {
-      "ja": {
-        "title": "「AIだけで稼ぐ90日」という実験の失敗記録。なぜAIフル活用のビジネスは個人開発で通用しなかったのか",
-        "summary": "「AIを主体にして90日間で収益化できるか」という個人の検証プロジェクトが失敗に終わった。 企画立案、開発、記事執筆、営業メールの送信まで全てをAIに任せたが、結果的に顧客の獲得や継続的な売上には至らなかった。 AIによる作業効率化は強力だが、ビジネスの本質である「課題解決への共感」や「人間的な信頼醸成」を欠いた自動化アプローチが通用しない現実を浮き彫りにしている。 AIをツールとして賢く使いつつ、泥臭い人間関係の構築とのバランスをどう取るかが今後の課題だ。"
-      },
-      "en": {
-        "title": "Failed 90-day experiment: Why an AI-only approach to business and monetization ultimately fell short",
-        "summary": "A 90-day experiment attempting to build a profitable business solely through AI automation has officially failed. The project offloaded every phase—ideation, product development, content creation, and even cold outreach via automated emails—to various AI models, yet failed to secure sustained revenue or meaningful client acquisition. This experiment highlights the painful reality that while AI provides incredible leverage for output efficiency, it cannot replace the human-centric essentials of business, such as authentic empathy for user pain points and the cultivation of interpersonal trust. For builders, the takeaway is clear: while AI is an indispensable tool for shipping faster, automating the soul of the sales process without a genuine human connection remains a recipe for market rejection."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス",
-      "開発"
-    ],
-    "created_at": "2026-11-28T02:31:54.767Z"
-  },
-  {
     "id": "art-1795833107917-p27r2",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -5665,32 +5743,6 @@
       "研究"
     ],
     "created_at": "2026-11-28T02:17:00.142Z"
-  },
-  {
-    "id": "art-1795832213771-fovtf",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/kumabear6/n/n38c73c6f1b91",
-    "published_at": "2026-11-28T02:14:43.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/4eb5a76b7d9437acebc9c113fd6bf42668ed2e58.png",
-    "title_ja": "ゲームと学習を遊びに変える：個人開発マガジン「くまろく」の執筆者、活動方針と今後のビジョンについて",
-    "summary_ja": "「勉強もゲームも楽しく取り組む」を信条に掲げる、大学生クリエイター「くまろく」氏による自己紹介記事。 今後は自身の開発経験やノウハウを共有するマガジンとして活動を開始する。 個人開発の現場から得られる知見や、学習プロセスそのものをエンターテインメントに昇華させる試みに関心がある層にとって、今後の投稿が注目される。",
-    "translations": {
-      "ja": {
-        "title": "ゲームと学習を遊びに変える：個人開発マガジン「くまろく」の執筆者、活動方針と今後のビジョンについて",
-        "summary": "「勉強もゲームも楽しく取り組む」を信条に掲げる、大学生クリエイター「くまろく」氏による自己紹介記事。 今後は自身の開発経験やノウハウを共有するマガジンとして活動を開始する。 個人開発の現場から得られる知見や、学習プロセスそのものをエンターテインメントに昇華させる試みに関心がある層にとって、今後の投稿が注目される。"
-      },
-      "en": {
-        "title": "Building at the intersection of gaming and learning: Meet Kumaroku, a developer-creator sharing insights on personal growth",
-        "summary": "This introductory post marks the official launch of the personal development magazine by Kumaroku, a student creator who operates on the core philosophy of turning both academic study and gaming into genuinely enjoyable pursuits. By documenting his own development journey, Kumaroku intends to transform the often-tedious process of learning and building software into an engaging narrative for his audience. Readers looking for authentic, student-level insights into independent development, as well as creative methodologies for balancing rigorous study with playful exploration, will find his future updates insightful. This debut sets the stage for a series that promises to humanize the coding experience while tackling technical challenges with a uniquely fresh, fun, and experimental perspective."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-28T02:16:53.771Z"
   },
   {
     "id": "art-1795831321780-h5o83",
@@ -9412,32 +9464,6 @@
     "created_at": "2026-11-27T11:46:52.199Z"
   },
   {
-    "id": "art-1795779998090-5ecxy",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/bizreach_aps/articles/f6d74b09abe15a",
-    "published_at": "2026-11-27T01:54:30.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--uXGpzywt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520%25E3%2581%25A8%25E4%25BD%259C%25E3%2582%258B%2520BI%2520%25E3%2581%25AE%25E5%25A2%2583%25E7%2595%258C%25E3%2582%2592%25E3%2580%2581%25E6%2596%2587%25E7%25AB%25A0%25E3%2581%25A7%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%258F%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25A7%25E6%258C%2581%25E3%2581%25A4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ebasuke%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2ZiOWJiMTRmMmUuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:BizReach%2520AI%2520Product%2520S...%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2QzNmFkNjI3MDEuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "ビズリーチAI Product Studioが構築する「AI前提のBI戦略」、LLMOpsとアナリティクス層によるデータ基盤の最適化手法",
-    "summary_ja": "株式会社ビズリーチのAI Product Studioは、AIによるプロダクト創出を常態化させるため、LLMOpsとデータ基盤の統合に取り組んでいる。 今回は、エージェント向けの「コンテキスト層」に続き、データ集計を行い人間が意思決定を行うための「アナリティクス層」の設計思想を解説。 非エンジニアもAIを通じてデータ分析へ容易にアクセスできるよう、AIとBIの境界を文章ではなくデータ構造で定義し、分析プロセスを自動化する仕組みについて深掘りする。",
-    "translations": {
-      "ja": {
-        "title": "ビズリーチAI Product Studioが構築する「AI前提のBI戦略」、LLMOpsとアナリティクス層によるデータ基盤の最適化手法",
-        "summary": "株式会社ビズリーチのAI Product Studioは、AIによるプロダクト創出を常態化させるため、LLMOpsとデータ基盤の統合に取り組んでいる。 今回は、エージェント向けの「コンテキスト層」に続き、データ集計を行い人間が意思決定を行うための「アナリティクス層」の設計思想を解説。 非エンジニアもAIを通じてデータ分析へ容易にアクセスできるよう、AIとBIの境界を文章ではなくデータ構造で定義し、分析プロセスを自動化する仕組みについて深掘りする。"
-      },
-      "en": {
-        "title": "BizReach’s AI Product Studio details BI strategies using analytics layers to optimize data infrastructure for AI-driven development",
-        "summary": "BizReach’s AI Product Studio is refining its internal data infrastructure to normalize AI-driven product creation by integrating LLMOps with modern analytical layers. Following their work on context layers for AI agents, this guide explores the architecture of an analytics layer designed to facilitate human decision-making based on aggregated data. By defining the intersection of AI and BI through structured data schemas rather than natural language, they enable non-engineers to perform complex analysis seamlessly. The core lesson for builders is moving beyond simple text-based AI interfaces; prioritizing robust, queryable data foundations allows teams to automate analytical workflows effectively, ensuring that AI agents and human stakeholders alike can leverage deep insights without constant manual translation."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-27T11:46:38.090Z"
-  },
-  {
     "id": "art-1795779168923-1eelw",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -9646,32 +9672,6 @@
       "ビジネス"
     ],
     "created_at": "2026-11-27T10:33:12.587Z"
-  },
-  {
-    "id": "art-1795775569506-8lwyh",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/py_pipeline_lab/books/06786163d4ae1f",
-    "published_at": "2026-11-27T07:51:06.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--e259TUqP--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYm9va19jb3Zlci82MTRhMjVjMzVkLmpwZWc=%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg?_a=BACMTiAE",
-    "title_ja": "ComfyUI×Pythonによる自動生成パイプライン：品質ゲート構築からメタデータ除去、異常画像隔離までの実戦ハンドブック",
-    "summary_ja": "ローカルGPU環境のComfyUIをPythonとPillowのみで自動化する構築手法が公開された。 CSVファイルからの連続バッチ生成に加え、途中再開機能、生成画像の品質チェックによる異常検知、PNGメタデータの完全削除、最終的な一覧シート出力までの全工程を自動化できる。 単なる自動化にとどまらず、品質ゲートを設けて不良品を排除し、管理コストを最小限に抑える設計は、生成AIを用いた受託開発やコンテンツ量産において必須の知見となる。",
-    "translations": {
-      "ja": {
-        "title": "ComfyUI×Pythonによる自動生成パイプライン：品質ゲート構築からメタデータ除去、異常画像隔離までの実戦ハンドブック",
-        "summary": "ローカルGPU環境のComfyUIをPythonとPillowのみで自動化する構築手法が公開された。 CSVファイルからの連続バッチ生成に加え、途中再開機能、生成画像の品質チェックによる異常検知、PNGメタデータの完全削除、最終的な一覧シート出力までの全工程を自動化できる。 単なる自動化にとどまらず、品質ゲートを設けて不良品を排除し、管理コストを最小限に抑える設計は、生成AIを用いた受託開発やコンテンツ量産において必須の知見となる。"
-      },
-      "en": {
-        "title": "Building a production-grade automated generation pipeline: ComfyUI batch processing with Python for quality gate control",
-        "summary": "This practical guide details how to automate local GPU-based ComfyUI environments using only Python standard libraries and Pillow. The architecture enables continuous batch generation from simple CSV files, incorporating robust features like mid-process resumption, automated quality gating to isolate anomalous images, full removal of sensitive PNG metadata, and automated generation of inspection sheets. By moving beyond basic script execution to implementing strict quality filters, builders can eliminate manual overhead and ensure output consistency at scale. This end-to-end approach is essential for teams managing large-scale AI media production or client projects, effectively turning ComfyUI from a creative tool into a reliable, automated backend that minimizes post-generation manual review cycles."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "画像生成"
-    ],
-    "created_at": "2026-11-27T10:32:49.506Z"
   },
   {
     "id": "art-1795774625298-g25ev",
