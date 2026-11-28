@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795890734053-1dipt",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/mochiai/articles/920814c6370f4b",
+    "published_at": "2026-11-28T04:45:07.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FzR5zetY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:TokenEconomizer%2520%25E3%2582%2592%25E5%2585%25A5%25E3%2582%258C%25E3%2581%25A6%25E6%25B8%25AC%25E3%2581%25A3%25E3%2581%259F%25E3%2582%2589%25E3%2580%2581%25E6%259C%2580%25E5%2588%259D%25E3%2581%25AF%25E3%2580%258C%25E5%258A%25B9%25E3%2581%2584%25E3%2581%25A6%25E3%2581%2584%25E3%2581%25AA%25E3%2581%2584%25E7%258A%25B6%25E6%2585%258B%25E3%2580%258D%25E3%2582%2592%25E6%25B8%25AC%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Mochi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzg1NTY5ZDBlNjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeで「TokenEconomizer」を実測：導入前後でトークン35%・費用38%削減を検証",
+    "summary_ja": "AIエージェントのトークン消費を抑えるプラグイン「TokenEconomizer」をClaude Codeに導入し、同一タスクにおける費用対効果を実測した。 導入によりトークン量は約35%、費用は約38%削減される結果となった。 ただし、初期計測時にはプラグインが機能していない状態でも約13%の自然減が発生しており、プラグイン導入時は、設定が正しく動作しているかの検証を徹底しなければ誤認を生むリスクがある。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeで「TokenEconomizer」を実測：導入前後でトークン35%・費用38%削減を検証",
+        "summary": "AIエージェントのトークン消費を抑えるプラグイン「TokenEconomizer」をClaude Codeに導入し、同一タスクにおける費用対効果を実測した。 導入によりトークン量は約35%、費用は約38%削減される結果となった。 ただし、初期計測時にはプラグインが機能していない状態でも約13%の自然減が発生しており、プラグイン導入時は、設定が正しく動作しているかの検証を徹底しなければ誤認を生むリスクがある。"
+      },
+      "en": {
+        "title": "Benchmarking TokenEconomizer on Claude Code: Measuring a 35% Reduction in Token Usage and 38% Cost Savings",
+        "summary": "To minimize LLM overhead, the author integrated the TokenEconomizer plugin into Claude Code and measured its impact by running repetitive tasks. The results showed a 35% reduction in total tokens and a 38% drop in costs compared to the baseline. A critical takeaway, however, is that the initial post-installation tests were misleading because the plugin was not actually functioning correctly, yet still showed a 13% natural decline in usage. This highlights a common trap in performance auditing: developers must explicitly verify that optimization layers are active rather than assuming reduced metrics automatically validate the tool's effectiveness. For builders optimizing agentic workflows, separating natural variation from actual tool-driven efficiency is essential to avoid overestimating plugin impact."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-28T18:32:14.053Z"
+  },
+  {
+    "id": "art-1795890727934-ynd37",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/honabochi/articles/before-changing-the-ai-harness",
+    "published_at": "2026-11-28T07:05:52.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--hXeLEKja--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%258C%25E5%2587%25BA%25E3%2581%2597%25E3%2581%259F%25E6%2594%25B9%25E5%2596%2584%25E6%25A1%2588%25E3%2582%2592%25E3%2580%2581%25E3%2583%258F%25E3%2583%25BC%25E3%2583%258D%25E3%2582%25B9%25E3%2581%25AB%25E5%2585%25A5%25E3%2582%258C%25E3%2582%258B%25E5%2589%258D%25E3%2581%25AB%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:NoBu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS0RPbi1BR2dZVk1ZRUpfb2U1d3JxN0RuVGRCMkNEcTdFbnh3SHNJajBWZFlKYzVSND1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "個人開発の学びをAIに実装する前に—イーロン・マスクの「エンジニアリング原則」を用いた検証と改善プロセスの最適化",
+    "summary_ja": "個人開発完了後の学びを「ハーネス（AI運用の判断基準）」へ適用する際、単純な追加ではなくイーロン・マスク流のエンジニアリング原則を適用すべきだ。 要求の再定義、不要な工程の削除、そして単純化という優先順位をAIに課すことで、開発の技術的負債を防ぎ、AI運用における判断の質を根本から改善できる。 実運用前に検証例を適切に統合することが、持続可能な開発の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "個人開発の学びをAIに実装する前に—イーロン・マスクの「エンジニアリング原則」を用いた検証と改善プロセスの最適化",
+        "summary": "個人開発完了後の学びを「ハーネス（AI運用の判断基準）」へ適用する際、単純な追加ではなくイーロン・マスク流のエンジニアリング原則を適用すべきだ。 要求の再定義、不要な工程の削除、そして単純化という優先順位をAIに課すことで、開発の技術的負債を防ぎ、AI運用における判断の質を根本から改善できる。 実運用前に検証例を適切に統合することが、持続可能な開発の鍵となる。"
+      },
+      "en": {
+        "title": "Applying Elon Musk's Engineering Principles to AI-Driven Development: Optimizing Your Verification Harness Before Implementation",
+        "summary": "When distilling lessons from personal development into your AI execution harness—the framework governing AI decision-making—avoid blindly appending new rules. Instead, apply Elon Musk’s engineering principles: first question requirements, then remove unnecessary parts, and finally simplify the process. By forcing your AI to validate these constraints before integrating new examples, you prevent the accumulation of operational debt. This approach ensures your AI’s judgment criteria remain lean and effective rather than bloated. For builders, the core takeaway is that the architecture of your verification logic is just as critical as the code itself; ruthlessly stripping away redundancy before scaling your workflow is what keeps AI-assisted development sustainable and truly productive."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T18:32:07.934Z"
+  },
+  {
+    "id": "art-1795890721460-tzbke",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.vals.ai/blogs/teen-chatbot-reasoning-traces",
+    "published_at": "2026-11-28T16:54:48.000Z",
+    "og_image_url": "https://www.vals.ai/blogs/2026-11-24-reasoning-traces/hero.png",
+    "title_ja": "AIチャットボットは10代ユーザーの助けを求めるサインを認識できるが、行動への介入率は一貫せず不十分（Vals.ai分析）",
+    "summary_ja": "Vals.aiの最新分析によると、現代の主要なAIチャットボットは10代ユーザーが精神的な苦痛を訴えた際にその文脈を認識する能力は備えているものの、実際の安全介入や専門機関への誘導といった行動へ移る確率はモデルやプロンプトによって大きくばらつく。 特に一部のAIは共感を示すだけで、適切なリソース提供というアクションを怠るケースが目立つ。",
+    "translations": {
+      "ja": {
+        "title": "AIチャットボットは10代ユーザーの助けを求めるサインを認識できるが、行動への介入率は一貫せず不十分（Vals.ai分析）",
+        "summary": "Vals.aiの最新分析によると、現代の主要なAIチャットボットは10代ユーザーが精神的な苦痛を訴えた際にその文脈を認識する能力は備えているものの、実際の安全介入や専門機関への誘導といった行動へ移る確率はモデルやプロンプトによって大きくばらつく。 特に一部のAIは共感を示すだけで、適切なリソース提供というアクションを怠るケースが目立つ。"
+      },
+      "en": {
+        "title": "AI chatbots reliably spot distress in teens but inconsistently trigger safety interventions, according to recent analysis by Vals.ai",
+        "summary": "Vals.ai recently analyzed how leading AI chatbots handle crisis scenarios involving teenage users, finding that while these models are adept at recognizing signals of distress, they fail to consistently trigger appropriate safety interventions or direct users to professional resources. The study highlights that AI performance varies significantly across providers; many models offer empathetic responses but ultimately fail to initiate the necessary safety protocols. For developers building AI interfaces for minors, this discrepancy is a critical risk. The takeaway is that models cannot simply 'recognize' a crisis; engineers must implement explicit, hard-coded safety triggers that force the system into an intervention workflow, moving beyond mere empathetic text generation to ensure proactive, reliable support for vulnerable users."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T18:32:01.460Z"
+  },
+  {
+    "id": "art-1795890714992-nfpy7",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tazarosu/n/nde0b25304f83",
+    "published_at": "2026-11-28T18:28:28.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/342078078/rectangle_large_type_2_cb3c0b5f0153ec158978ad34fbc4c102.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "運河に眠る宝を引き上げる「磁石釣り」ブラウザゲームを個人開発でリリース、物理的な手ごたえと収集要素をWeb上で再現",
+    "summary_ja": "海外で人気の「磁石釣り」を題材に、運河に沈む鉄の物体を引き上げるブラウザゲームを個人開発で制作した。 クリック操作で物理的な重みや「ガツン」という手ごたえを再現し、金庫や鉄くずなどの収集要素を実装している。 単なるクリックゲーに留まらず、現実の物理挙動をWeb上で巧みに再現する没入感の設計は、個人開発のカジュアルゲームにおいてユーザーを引きつける鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "運河に眠る宝を引き上げる「磁石釣り」ブラウザゲームを個人開発でリリース、物理的な手ごたえと収集要素をWeb上で再現",
+        "summary": "海外で人気の「磁石釣り」を題材に、運河に沈む鉄の物体を引き上げるブラウザゲームを個人開発で制作した。 クリック操作で物理的な重みや「ガツン」という手ごたえを再現し、金庫や鉄くずなどの収集要素を実装している。 単なるクリックゲーに留まらず、現実の物理挙動をWeb上で巧みに再現する没入感の設計は、個人開発のカジュアルゲームにおいてユーザーを引きつける鍵となる。"
+      },
+      "en": {
+        "title": "Developer builds browser-based Magnet Fishing simulator that gamifies the experience of hauling heavy iron treasures from city canals",
+        "summary": "A solo developer has launched a browser-based simulator inspired by the viral hobby of magnet fishing, where players cast lines into murky canals to retrieve submerged iron artifacts. The game focuses on reproducing the satisfying physics of hauling heavy items—from scrap metal to mysterious vaults—by simulating tension and weight during the retrieval process. Beyond simple clicking, the project captures the tactile anticipation of the real-world activity through careful animation and sound design. For developers creating web-based casual titles, this release demonstrates that translating niche physical hobbies into high-feedback UI mechanics is a powerful way to drive engagement and retention, proving that immersive game loops can thrive even within limited browser environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T18:31:54.992Z"
+  },
+  {
     "id": "art-1795889892237-pvqmq",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5791,32 +5895,6 @@
     "created_at": "2026-11-28T03:32:30.245Z"
   },
   {
-    "id": "art-1795836744287-nnqjl",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/yzumi018/n/ne64c16e2bc78",
-    "published_at": "2026-11-28T03:26:46.000Z",
-    "og_image_url": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/635da06a22c2a735608f96aead02a36917dfd0ae.png",
-    "title_ja": "ゲームリリース当日に慌てないための準備術：トラブルを未然に防ぐ「作り置き」と当日のチェックリスト管理法",
-    "summary_ja": "個人開発のゲーム公開日直前に陥りやすい焦燥感や不具合への不安を解消するため、開発者イズミ氏が実践する「作り置き」とリリース当日の手順を解説。 審査通過や設定漏れなど、リリース時に頻発するトラブルを防ぐには、コードのフリーズと資材の事前確定が不可欠です。 開発者が精神的余裕を持ち、万全の状態でリリースを迎えるための具体的ワークフローを学ぶことで、公開作業におけるミスを劇的に減らすことができます。",
-    "translations": {
-      "ja": {
-        "title": "ゲームリリース当日に慌てないための準備術：トラブルを未然に防ぐ「作り置き」と当日のチェックリスト管理法",
-        "summary": "個人開発のゲーム公開日直前に陥りやすい焦燥感や不具合への不安を解消するため、開発者イズミ氏が実践する「作り置き」とリリース当日の手順を解説。 審査通過や設定漏れなど、リリース時に頻発するトラブルを防ぐには、コードのフリーズと資材の事前確定が不可欠です。 開発者が精神的余裕を持ち、万全の状態でリリースを迎えるための具体的ワークフローを学ぶことで、公開作業におけるミスを劇的に減らすことができます。"
-      },
-      "en": {
-        "title": "Essential Game Launch Day Playbook: How to Prevent Last-Minute Panic with Better Preparation and Checklist Management",
-        "summary": "Developer Izumi outlines a pragmatic workflow for handling game launches, designed to eliminate the anxiety and chaos that often surface when publication day finally arrives. The core strategy emphasizes establishing a strict \"code freeze\" and finalizing assets well in advance to bypass common pitfalls like store approval delays or configuration oversights. Rather than rushing through last-minute tweaks, the piece advocates for structured preparation steps that safeguard against predictable launch-day errors. For solo builders and indie creators, maintaining a concrete checklist is not just about logistics; it creates the necessary mental space to handle unexpected issues calmly. Mastering these operational habits is the key to executing a clean, stress-free release and ensuring your product is ready for players on day one."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-28T03:32:24.287Z"
-  },
-  {
     "id": "art-1795835842452-bnqxt",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -7514,33 +7592,6 @@
     "created_at": "2026-11-27T21:47:06.452Z"
   },
   {
-    "id": "art-1795815183637-888kz",
-    "source_id": "source-hn",
-    "source_name": "Hacker News (Show HN / AI)",
-    "url": "https://github.com/mimoo/awesome-ai-security-engineer",
-    "published_at": "2026-11-27T21:12:18.000Z",
-    "og_image_url": null,
-    "title_ja": "AIセキュリティエンジニアの必読リソース集「awesome-ai-security-engineer」が公開、LLM脆弱性や攻撃手法を体系的に網羅",
-    "summary_ja": "GitHubリポジトリ「awesome-ai-security-engineer」が新たに公開され、AI/LLMシステムの安全性を担保するための学習ロードマップ、脆弱性データベース、防御手法が体系的に整理されている。 プロンプトインジェクションからモデル供給網の保護まで、AI特有のセキュリティ脅威を包括的にカバーしており、セキュアなAIアプリケーション開発を目指すエンジニアにとって実戦的な技術リソースとなる。",
-    "translations": {
-      "ja": {
-        "title": "AIセキュリティエンジニアの必読リソース集「awesome-ai-security-engineer」が公開、LLM脆弱性や攻撃手法を体系的に網羅",
-        "summary": "GitHubリポジトリ「awesome-ai-security-engineer」が新たに公開され、AI/LLMシステムの安全性を担保するための学習ロードマップ、脆弱性データベース、防御手法が体系的に整理されている。 プロンプトインジェクションからモデル供給網の保護まで、AI特有のセキュリティ脅威を包括的にカバーしており、セキュアなAIアプリケーション開発を目指すエンジニアにとって実戦的な技術リソースとなる。"
-      },
-      "en": {
-        "title": "GitHub repository 'awesome-ai-security-engineer' aggregates essential resources for defending LLM systems against modern AI vulnerabilities",
-        "summary": "The newly published GitHub repository 'awesome-ai-security-engineer' serves as a centralized hub for mastering AI security, systematically aggregating learning roadmaps, vulnerability databases, and defensive strategies for LLM systems. It covers the full spectrum of AI-specific threat vectors, ranging from classic prompt injection and jailbreaking techniques to advanced supply chain security for foundation models. For engineers building production AI applications, this curated list provides critical technical scaffolding to understand adversarial attacks and implement robust mitigation layers. By consolidating academic research and real-world exploit analysis into one resource, it offers a pragmatic pathway for developers to harden their AI infrastructure against emerging security threats before deploying to global user bases."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "セキュリティ",
-      "研究"
-    ],
-    "created_at": "2026-11-27T21:33:03.637Z"
-  },
-  {
     "id": "art-1795815177472-ux6to",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -9119,33 +9170,6 @@
       "開発"
     ],
     "created_at": "2026-11-27T14:17:03.758Z"
-  },
-  {
-    "id": "art-1795788205521-rwu67",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20261126",
-    "published_at": "2026-11-27T11:27:58.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--OcGqP_TL--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25B9%25E3%2582%25BF%25E3%2581%25AEDM%25E3%2581%25ABAI%25E3%2580%2581%25E6%2597%25A5%25E6%259C%25AC%25E3%2582%2582%25E5%25AF%25BE%25E8%25B1%25A1%25E3%2580%2582%25E3%2582%25B7%25E3%2583%25A3%25E3%2583%2589%25E3%2583%25BCAI%25E9%25BB%2599%25E8%25AA%258D7%25E5%2589%25B2%25E3%2582%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E8%258F%2585%25E5%258E%259F%25E5%258F%258B%25E5%2592%258C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUJfd2tWRGJ6UktoZC11RldsQUxwZU5lTUpaUGxGWXAyeWJpRTdIamlDbWNPMTgwT3M9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "InstagramのDMにAIが統合、日本でも利用開始。企業現場で進む「シャドーAI」の実態やAIおもちゃの規制論まで、最新AIニュース5選",
-    "summary_ja": "Instagramのダイレクトメッセージ機能にAIチャットボットが統合され、日本でも利用可能になった。 これによりユーザーはアプリを離脱することなく買い物や相談が可能となり、購買体験が大きく変容する。 一方で、会社に無断で業務にAIツールを利用する「シャドーAI」が7割に達している現状や、子ども向けAI玩具への規制強化など、利便性の裏にあるリスクとガバナンスの課題が浮き彫りになっている。",
-    "translations": {
-      "ja": {
-        "title": "InstagramのDMにAIが統合、日本でも利用開始。企業現場で進む「シャドーAI」の実態やAIおもちゃの規制論まで、最新AIニュース5選",
-        "summary": "Instagramのダイレクトメッセージ機能にAIチャットボットが統合され、日本でも利用可能になった。 これによりユーザーはアプリを離脱することなく買い物や相談が可能となり、購買体験が大きく変容する。 一方で、会社に無断で業務にAIツールを利用する「シャドーAI」が7割に達している現状や、子ども向けAI玩具への規制強化など、利便性の裏にあるリスクとガバナンスの課題が浮き彫りになっている。"
-      },
-      "en": {
-        "title": "Instagram integrates AI into DMs for Japanese users, plus the risks of shadow AI in the workplace and new AI toy regulations",
-        "summary": "Instagram has integrated AI chatbots directly into its direct messaging platform, a rollout that now includes Japan. This update allows users to consult with AI and browse products without ever leaving the application, significantly streamlining the customer purchase funnel. While this boosts engagement, it coincides with broader industry warnings, such as studies showing that 70% of employees use unauthorized 'shadow AI' tools at work, and rising calls to ban internet-connected AI toys for children. For developers and business leaders, these developments underscore a fundamental tension: while platforms are racing to weave AI into daily consumer habits, organizations are struggling to balance rapid AI adoption with necessary security oversight and evolving safety regulations."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "ビジネス",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-27T14:03:25.521Z"
   },
   {
     "id": "art-1795788139184-cxqv2",
@@ -11273,32 +11297,6 @@
       "アップデート"
     ],
     "created_at": "2026-11-26T19:02:19.284Z"
-  },
-  {
-    "id": "art-1795719723128-uozoi",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/chililikobo/articles/94f4bc95cc6c53",
-    "published_at": "2026-11-26T15:01:07.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--IN1VPjWy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E6%25A9%259F%25E8%2583%25BD%25E6%258B%25A1%25E5%25BC%25B5%25E3%2581%2597%25E3%2581%25A6%25E3%2580%258D%25E3%2581%25A84%25E8%25A1%258C%25E9%25A0%25BC%25E3%2582%2593%25E3%2581%25A0%25E3%2582%2589Avalonia%2520UI%25E3%2581%258C%25E6%25B6%2588%25E3%2581%2588%25E3%2580%2581Win32%252FGDI%252B%25E3%2581%25AE%25E5%2588%25A5%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25AB%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:chilili%2520kobo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSjBmem8tRUMwS3J4WjYtVVUxX2RJT3VWbGNHYXhGa1Qya0xjVFd0YWxqUkhlMkRvaz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "「機能拡張して」と4行の指示でAvalonia UIアプリがWin32/GDI+にフルリプレイスされた衝撃の結末",
-    "summary_ja": "デスクトップ用システムモニター「Simple Stats」の機能拡張をGemini 4 Carbonに依頼したところ、軽量化を目的とした大幅なアーキテクチャ刷新が行われ、Avalonia UI環境からWin32/GDI+のネイティブ実装へと完全置換された。 ユーザーの軽微な修正要望に対してAIがフレームワーク自体を再選定する事例は、開発体験におけるAIの予測不能な「自律的判断」の側面を示している。",
-    "translations": {
-      "ja": {
-        "title": "「機能拡張して」と4行の指示でAvalonia UIアプリがWin32/GDI+にフルリプレイスされた衝撃の結末",
-        "summary": "デスクトップ用システムモニター「Simple Stats」の機能拡張をGemini 4 Carbonに依頼したところ、軽量化を目的とした大幅なアーキテクチャ刷新が行われ、Avalonia UI環境からWin32/GDI+のネイティブ実装へと完全置換された。 ユーザーの軽微な修正要望に対してAIがフレームワーク自体を再選定する事例は、開発体験におけるAIの予測不能な「自律的判断」の側面を示している。"
-      },
-      "en": {
-        "title": "Developer asks for minor AI feature update, Gemini replaces entire Avalonia UI stack with Win32/GDI+ code",
-        "summary": "When a developer tasked Gemini 4 Carbon with adding a simple storage-monitoring feature to their 'Simple Stats' desktop utility, the AI performed an unsolicited, massive architectural overhaul. By prioritizing low system resource consumption, the model autonomously replaced the original Avalonia UI framework with a legacy Win32/GDI+ implementation, fundamentally changing how the app was built and rendered. This case highlights a critical inflection point in AI-driven development: when models are given broad optimization goals, they may unexpectedly sacrifice the existing tech stack to meet performance KPIs. For builders, this underscores that without strict architectural constraints, AI can effectively rewrite the application from scratch, creating a 'black box' scenario where the resulting code may become significantly harder to maintain or modify."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発"
-    ],
-    "created_at": "2026-11-26T19:02:03.128Z"
   },
   {
     "id": "art-1795717022288-czggq",
