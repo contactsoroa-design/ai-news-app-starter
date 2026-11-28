@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795886242787-kc7ez",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/kurojack_jp/articles/ebf4c013072f1d",
+    "published_at": "2026-11-28T05:14:02.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--cItqkV65--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2580%258C%25E8%25B3%25BC%25E5%2585%25A5%25E3%2583%259C%25E3%2582%25BF%25E3%2583%25B3%25E3%2580%258D%25E3%2582%2592%25E6%258A%25BC%25E3%2581%2595%25E3%2581%259B%25E3%2582%258B%25E3%2581%25A8%25E3%2581%258D%25E3%2580%2581%25E6%2589%25BF%25E8%25AA%258D%25E3%2581%25AF%25E3%2581%25A9%25E3%2581%2593%25E3%2581%25AB%25E7%25BD%25AE%25E3%2581%258F%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kurojack_jp%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSk1kbjluaEdCUVJBeHBZVHVsV3RMQ2tQNXd1dk9senA5ZGppVVVzZ3gtNmhaTy1KUEx6dz1zMjUwLWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントに「購入ボタン」を押させる際の安全設計：MCPサーバーを用いたWindows操作と承認ステップの重要性",
+    "summary_ja": "AIエージェントがデスクトップ操作を行う際、購入ボタンといった「取り返しのつかない操作」には人間の承認プロセスが不可欠だ。 KDE環境向けMCPサーバー「Deskhand」の事例を参考に、筆者は開発中のWindows向け「Sora Commander」において、ChatGPT経由で操作を行う際に独自の承認レイヤーを実装した。 エージェントの自律性が高まる今、誤操作防止のためのインターフェース設計は、開発者が最も優先すべき安全性の根幹となる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントに「購入ボタン」を押させる際の安全設計：MCPサーバーを用いたWindows操作と承認ステップの重要性",
+        "summary": "AIエージェントがデスクトップ操作を行う際、購入ボタンといった「取り返しのつかない操作」には人間の承認プロセスが不可欠だ。 KDE環境向けMCPサーバー「Deskhand」の事例を参考に、筆者は開発中のWindows向け「Sora Commander」において、ChatGPT経由で操作を行う際に独自の承認レイヤーを実装した。 エージェントの自律性が高まる今、誤操作防止のためのインターフェース設計は、開発者が最も優先すべき安全性の根幹となる。"
+      },
+      "en": {
+        "title": "Designing Human-in-the-Loop Safeguards for AI Agents: Implementing Approval Flows for Irreversible Actions in Desktop Automation",
+        "summary": "As AI agents gain the ability to control desktop environments, preventing accidental triggers of irreversible actions like purchasing buttons becomes a critical engineering challenge. Inspired by Deskhand—an MCP server for controlling KDE desktops—the author developed Sora Commander for Windows, incorporating a mandatory human approval layer before the AI executes sensitive commands via ChatGPT. This implementation highlights a growing industry need for explicit confirmation hooks within agent-desktop interfaces. For developers building autonomous agents, the core takeaway is that safety cannot be treated as an afterthought; integrating robust, explicit permission boundaries directly into your MCP architecture or tool-use pipeline is essential to preventing costly errors and maintaining user trust as agentic capabilities continue to expand."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T17:17:22.787Z"
+  },
+  {
+    "id": "art-1795886230718-j96et",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/yangworks/articles/89d866d593c36a",
+    "published_at": "2026-11-28T13:45:45.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--J4Qbv2eQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:1GB%25E8%25B6%2585%25E3%2581%25AE%25E6%259A%2597%25E5%258F%25B7%25E5%258C%2596%25E5%258B%2595%25E7%2594%25BB%25E3%2582%2592%25E4%25B8%2580%25E6%2599%2582%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E7%2584%25A1%25E3%2581%2597%25E3%2581%25A7%25E3%2582%25B7%25E3%2583%25BC%25E3%2582%25AF%25E5%2586%258D%25E7%2594%259F%25E3%2581%2599%25E3%2582%258B%25EF%25BC%2588Swift%25E3%2583%25BBCryptoKit%25E3%2583%25BBAVAssetResour...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yangworks%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2NiODk0MGY5NGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "iOSで1GB超の暗号化動画を一時ファイルなしでシーク再生するSwift実装：AVAssetResourceLoaderとCryptoKitの活用法",
+    "summary_ja": "iOSで動画保管庫アプリを開発する際、1GBを超える暗号化ファイルを一時保存せずに再生するのは至難の業だ。 復号後のファイルをディスクに書き出す手法は、UXやセキュリティ、ストレージ容量の面で破綻する。 解決策はAVAssetResourceLoaderを活用し、動画の必要なチャンク（部分）のみをオンデマンドで復号してAVPlayerにストリーミング供給するアーキテクチャだ。",
+    "translations": {
+      "ja": {
+        "title": "iOSで1GB超の暗号化動画を一時ファイルなしでシーク再生するSwift実装：AVAssetResourceLoaderとCryptoKitの活用法",
+        "summary": "iOSで動画保管庫アプリを開発する際、1GBを超える暗号化ファイルを一時保存せずに再生するのは至難の業だ。 復号後のファイルをディスクに書き出す手法は、UXやセキュリティ、ストレージ容量の面で破綻する。 解決策はAVAssetResourceLoaderを活用し、動画の必要なチャンク（部分）のみをオンデマンドで復号してAVPlayerにストリーミング供給するアーキテクチャだ。"
+      },
+      "en": {
+        "title": "Building iOS encrypted video players that handle 1GB+ files without temporary storage using Swift and AVAssetResourceLoader",
+        "summary": "Developing iOS secure vaults often hits a wall when handling large encrypted videos: simply decrypting a 1GB+ file to disk before playback ruins UX with long wait times, risks user storage space, and compromises security. The architectural fix involves bypassing intermediate files entirely by implementing AVAssetResourceLoader. By acting as a proxy that fetches and decrypts specific byte ranges on demand, developers can feed the encrypted stream directly into AVPlayer. This approach allows for near-instant seeking and playback without ever exposing unencrypted data in the temporary directory. The article details how to integrate CryptoKit with AVAssetResourceLoaderDelegate to construct a high-performance streaming pipeline, ensuring that builders can handle massive assets while maintaining strict application privacy and zero-latency playback."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T17:17:10.718Z"
+  },
+  {
+    "id": "art-1795886223657-ks199",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/clever_gnu6939/n/n7e8617790fa9",
+    "published_at": "2026-11-28T17:09:28.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/342069495/rectangle_large_type_2_b1b54c66698a26c9a871367e3228a4a9.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AIと構築する「想定外の出費」管理術：固定費を死守し、返済計画を自動化する2つの重要ルール",
+    "summary_ja": "前回AIに設計させた「想定外の出費」管理ルールを運用した結果、固定費や借入返済には一切触れず「使ってよい余剰枠」のみを優先利用し、不足時は給料日までの分割払いにするという方針の有効性が確認できた。 突発的な支出に備え、心理的負担を減らすためには、事前に資金の優先順位をアルゴリズム化しておくことが個人財務管理の要となる。 さらに今回見直した「補填の自動化」という新たな視点を加えることで、AIによる資金管理はより強固なものになる。",
+    "translations": {
+      "ja": {
+        "title": "AIと構築する「想定外の出費」管理術：固定費を死守し、返済計画を自動化する2つの重要ルール",
+        "summary": "前回AIに設計させた「想定外の出費」管理ルールを運用した結果、固定費や借入返済には一切触れず「使ってよい余剰枠」のみを優先利用し、不足時は給料日までの分割払いにするという方針の有効性が確認できた。 突発的な支出に備え、心理的負担を減らすためには、事前に資金の優先順位をアルゴリズム化しておくことが個人財務管理の要となる。 さらに今回見直した「補填の自動化」という新たな視点を加えることで、AIによる資金管理はより強固なものになる。"
+      },
+      "en": {
+        "title": "Managing unexpected expenses with AI: How to prioritize liquidity while protecting fixed costs and repayment buffers",
+        "summary": "Building on a prior AI-assisted framework for handling financial shocks, this approach enforces strict prioritization: unexpected costs must only draw from discretionary 'allowance' pools, leaving fixed costs and debt repayments untouched. When funds are insufficient, the system enforces a structured repayment schedule tied to the next paycheck. For individual developers managing fluctuating cash flows, the takeaway is that automating these triage rules transforms ad-hoc spending from a source of stress into a predictable operational algorithm. By treating personal finance like a service architecture—isolating critical dependencies like fixed costs from volatile bursts—you prevent operational downtime during unexpected expenses. The addition of automated replenishment logic ensures that financial recovery remains systematic rather than reactive, providing a sustainable safety net for independent builders."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-28T17:17:03.657Z"
+  },
+  {
+    "id": "art-1795886214116-r9rhd",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://chromewebstore.google.com/detail/ai-chat-exporter/ommhdalgmeblbobfapgeomipinhieifo",
+    "published_at": "2026-11-28T17:05:57.000Z",
+    "og_image_url": null,
+    "title_ja": "ChatGPTやClaude、Geminiの対話履歴をPDFやMarkdownで一括保存できるChrome拡張機能「AI Chat Exporter」が登場",
+    "summary_ja": "ChatGPT、Claude、Geminiのチャット履歴をPDF、Word、Markdown形式で簡単にエクスポートできるChrome拡張機能「AI Chat Exporter」が公開された。 ブラウザ上で対話を整理・保存するだけで、AIとのやり取りをドキュメント化し、オフライン環境での参照や共有がスムーズになる。 プロンプトエンジニアリングやAIを活用したナレッジ管理を効率化したい開発者やリサーチャーにとって、有用なユーティリティツールといえる。",
+    "translations": {
+      "ja": {
+        "title": "ChatGPTやClaude、Geminiの対話履歴をPDFやMarkdownで一括保存できるChrome拡張機能「AI Chat Exporter」が登場",
+        "summary": "ChatGPT、Claude、Geminiのチャット履歴をPDF、Word、Markdown形式で簡単にエクスポートできるChrome拡張機能「AI Chat Exporter」が公開された。 ブラウザ上で対話を整理・保存するだけで、AIとのやり取りをドキュメント化し、オフライン環境での参照や共有がスムーズになる。 プロンプトエンジニアリングやAIを活用したナレッジ管理を効率化したい開発者やリサーチャーにとって、有用なユーティリティツールといえる。"
+      },
+      "en": {
+        "title": "New Chrome Extension 'AI Chat Exporter' Allows Users to Save ChatGPT, Claude, and Gemini Conversations as PDF, Word, or Markdown Files",
+        "summary": "The AI Chat Exporter Chrome extension has been released, enabling users to export complex conversation threads from ChatGPT, Claude, and Gemini directly into PDF, Microsoft Word, and Markdown formats. This tool simplifies the process of archiving AI interactions, allowing developers and researchers to maintain offline records, documentation, or study notes without manually copying and pasting text. For builders who rely on LLMs for brainstorming or coding assistance, having a reliable way to turn ephemeral chats into structured, shareable documentation is a significant workflow upgrade. It addresses the common friction point of losing valuable context when browsing history becomes unmanageable or when specific prompts need to be preserved for future iteration and knowledge management."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T17:16:54.116Z"
+  },
+  {
     "id": "art-1795885336632-r9ioc",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -5640,33 +5744,6 @@
     "created_at": "2026-11-28T02:47:10.811Z"
   },
   {
-    "id": "art-1795834021156-1nr3x",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/unxnx/n/n9cadfd016d66",
-    "published_at": "2026-11-28T02:39:53.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341749479/rectangle_large_type_2_7139a645b53a293c5a2d55070185d9b3.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "その「無料で使えるAPI」、実は規約違反？LLMフリーローディングの実態と個人開発者が守るべき自衛策",
-    "summary_ja": "LLMのAPIやWebサイトを非公式にスクレイピングして提供する「フリーローディング」サービスが横行している。 これらは運営元の利用規約に違反しており、突然のAPI遮断や法的措置により、依存している開発者のアプリも共倒れするリスクが高い。 安定した個人開発を継続するには、公式APIへの切り替えや、サードパーティの「安易な無料提供」を避けるアーキテクチャ設計が不可欠である。",
-    "translations": {
-      "ja": {
-        "title": "その「無料で使えるAPI」、実は規約違反？LLMフリーローディングの実態と個人開発者が守るべき自衛策",
-        "summary": "LLMのAPIやWebサイトを非公式にスクレイピングして提供する「フリーローディング」サービスが横行している。 これらは運営元の利用規約に違反しており、突然のAPI遮断や法的措置により、依存している開発者のアプリも共倒れするリスクが高い。 安定した個人開発を継続するには、公式APIへの切り替えや、サードパーティの「安易な無料提供」を避けるアーキテクチャ設計が不可欠である。"
-      },
-      "en": {
-        "title": "Is your free LLM API actually against TOS? Navigating the risks of freeloading services and protecting your app",
-        "summary": "A growing trend of 'freeloading' services relies on scraping LLM APIs or proprietary websites to offer cheap or free access, frequently violating strict terms of service in the process. Relying on these unauthorized scrapers poses a significant operational risk; if the upstream provider blocks the service or takes legal action, your dependent application will likely fail alongside it. To ensure long-term stability in your own projects, you must shift toward using official, documented APIs rather than shortcuts. For serious builders, the takeaway is simple: architectural reliance on unverified, unofficial scraping is a liability. Prioritize official integration and build robust error handling, as relying on 'too good to be true' free access is effectively building your business on borrowed, unstable time."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発",
-      "セキュリティ"
-    ],
-    "created_at": "2026-11-28T02:47:01.156Z"
-  },
-  {
     "id": "art-1795833122145-yduy0",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -9257,32 +9334,6 @@
     "created_at": "2026-11-27T12:48:19.691Z"
   },
   {
-    "id": "art-1795783618186-ciujl",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/intage_tech/articles/art030-magy-skill-harness",
-    "published_at": "2026-11-27T09:25:34.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--_S43Xyha--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:K%25E3%2581%258F%25E3%2582%2593%25E3%2581%25A8%25E5%25AD%25A6%25E3%2581%25B6AI%25E3%2581%25AE%25E3%2580%258CSkill%25E3%2580%258D%25E3%2581%25A8%25E3%2580%258C%25E3%2583%258F%25E3%2583%25BC%25E3%2583%258D%25E3%2582%25B9%25E3%2580%258D%25E3%2580%259C%25E6%2585%25A3%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25E7%25A4%25BE%25E4%25BC%259A%25E4%25BA%25BA%25E7%2594%259F%25E6%25B4%25BB%25E3%2582%2592%25E5%25BF%259C%25E6%258F%25B4%25E3%2581%2599%25E3%2582%258BAI%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258D%25E3%2581%2586%25EF%25BC%2581%25E3%2580%259C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Magy%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzZmOTUyMDVlZmYuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:INTAGE%2520TECH%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzE5YzcxMTY0OGIuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "AIエージェント開発の重要概念：AIにノウハウを授ける「Skill」と実行環境「ハーネス」の決定的な違いと使い分け",
-    "summary_ja": "AIエージェント開発で混同されがちな「Skill」と「ハーネス」の役割を、新社会人向けのAIパーソナルコーチ開発を例に解説。 SkillはAIに与える具体的なノウハウや指示内容を指し、ハーネスはそれらを実際に動かし運用するための仕組みや開発環境を指す。 両者は依存関係にあるものの役割が明確に異なるため、開発者は「何をさせるか（Skill）」と「どう動かすか（Harness）」を切り分けて設計する必要がある。",
-    "translations": {
-      "ja": {
-        "title": "AIエージェント開発の重要概念：AIにノウハウを授ける「Skill」と実行環境「ハーネス」の決定的な違いと使い分け",
-        "summary": "AIエージェント開発で混同されがちな「Skill」と「ハーネス」の役割を、新社会人向けのAIパーソナルコーチ開発を例に解説。 SkillはAIに与える具体的なノウハウや指示内容を指し、ハーネスはそれらを実際に動かし運用するための仕組みや開発環境を指す。 両者は依存関係にあるものの役割が明確に異なるため、開発者は「何をさせるか（Skill）」と「どう動かすか（Harness）」を切り分けて設計する必要がある。"
-      },
-      "en": {
-        "title": "Defining AI agent architecture: The critical distinction between 'Skills' (know-how) and 'Harnesses' (execution environments)",
-        "summary": "As AI agent development matures, the terms 'Skill' and 'Harness' are frequently conflated, yet they serve fundamentally different functions in system design. This guide clarifies the concepts using the hypothetical build of an AI personal coach for new employees: a Skill represents the specific domain knowledge or instructional prompt fed to the model, whereas the Harness acts as the operational infrastructure and runtime environment that actually executes those tasks. Understanding this divide is essential for builders; you must architect your Skill definitions separately from your Harness execution layers to maintain clean boundaries. Distinguishing these two components early allows for more modular codebases and significantly easier testing, ensuring that your agent's capabilities remain decoupled from the delivery mechanism."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-27T12:46:58.186Z"
-  },
-  {
     "id": "art-1795782734177-fd1ht",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -11478,32 +11529,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T17:32:08.509Z"
-  },
-  {
-    "id": "art-1795713475501-2a702",
-    "source_id": "source-zenn-indie",
-    "source_name": "Zenn (個人開発 × AI)",
-    "url": "https://zenn.dev/onininon/articles/2e3c40fb854d7a",
-    "published_at": "2026-11-26T17:14:43.000Z",
-    "og_image_url": null,
-    "title_ja": "ライブラリなしの素のJavaScriptで『パチンコレジェンズ』を開発――4機種実装とCanvas 2Dでの描画、Cloudflareでの配信最適化手法",
-    "summary_ja": "ブラウザで遊べるパチンコゲーム『パチンコレジェンズ』は、Viteと素のJavaScript、Canvas 2Dのみで実装されており、フレームワークや物理エンジンに頼らず独自の演出を実現している。 パフォーマンス向上のため、機種ごとにコードをチャンク分割してオンデマンド読み込みを行い、Cloudflare Workersでの配信とPWA化によって高速なプレイ体験を提供している。 ブラウザ上で高レスポンスなゲームを構築する際、軽量な設計とアセットの最適化が重要な鍵となる。",
-    "translations": {
-      "ja": {
-        "title": "ライブラリなしの素のJavaScriptで『パチンコレジェンズ』を開発――4機種実装とCanvas 2Dでの描画、Cloudflareでの配信最適化手法",
-        "summary": "ブラウザで遊べるパチンコゲーム『パチンコレジェンズ』は、Viteと素のJavaScript、Canvas 2Dのみで実装されており、フレームワークや物理エンジンに頼らず独自の演出を実現している。 パフォーマンス向上のため、機種ごとにコードをチャンク分割してオンデマンド読み込みを行い、Cloudflare Workersでの配信とPWA化によって高速なプレイ体験を提供している。 ブラウザ上で高レスポンスなゲームを構築する際、軽量な設計とアセットの最適化が重要な鍵となる。"
-      },
-      "en": {
-        "title": "Building 'Pachinko Legends': Implementing 4 browser-based pachinko games with raw JavaScript, Canvas 2D, and optimized Cloudflare asset delivery",
-        "summary": "The browser-native game 'Pachinko Legends' showcases how to build complex interactive experiences using only Vite, raw JavaScript, and Canvas 2D—eschewing heavy physics engines or frameworks entirely. To maintain high performance, the developer implemented per-machine code chunking, ensuring specific game logic loads only upon selection rather than bloating the initial bundle. By leveraging Cloudflare Workers for static asset hosting and implementing PWA features, the project achieves near-instant loading and smooth gameplay. This case study demonstrates that for custom web-based games, the path to high responsiveness lies in minimizing dependencies and granular asset management. For builders, this highlights that raw browser APIs are often sufficient for niche game development when architectural discipline is prioritized over framework overhead."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-26T17:17:55.501Z"
   },
   {
     "id": "art-1795713461169-q5km5",
@@ -54326,31 +54351,5 @@
       "音声"
     ],
     "created_at": "2026-10-29T18:03:17.569Z"
-  },
-  {
-    "id": "art-1793293411912-52nwk",
-    "source_id": "source-langchain",
-    "source_name": "LangChain / LangGraph Blog",
-    "url": "https://www.langchain.com/blog/managed-deep-agents-browser-use-and-asynchronous-subagents",
-    "published_at": "2026-10-29T17:01:44.000Z",
-    "og_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae37bc699a519b4b3d501e9_mda-v0.10-blog-cover-4k.png",
-    "title_ja": "LangGraph「Managed Deep Agents v0.10」公開：APIなしサイト操作を可能にするブラウザ制御機能と非同期サブエージェントを追加",
-    "summary_ja": "LangGraphのManaged Deep Agents v0.10がリリースされ、ブラウザ操作機能が統合された。 API非公開のWebサイトでもエージェントが直接操作可能となり、ログインが必要な場面ではユーザーにウィンドウを渡す仕組みを備える。 さらに非同期サブエージェントにより重いタスクのバックグラウンド処理が可能になり、複雑なワークフローを構築する際の柔軟性が大幅に向上した。 実用的な自律型エージェント開発において、UI操作と並列処理の最適化が次のステップとなる。",
-    "translations": {
-      "ja": {
-        "title": "LangGraph「Managed Deep Agents v0.10」公開：APIなしサイト操作を可能にするブラウザ制御機能と非同期サブエージェントを追加",
-        "summary": "LangGraphのManaged Deep Agents v0.10がリリースされ、ブラウザ操作機能が統合された。 API非公開のWebサイトでもエージェントが直接操作可能となり、ログインが必要な場面ではユーザーにウィンドウを渡す仕組みを備える。 さらに非同期サブエージェントにより重いタスクのバックグラウンド処理が可能になり、複雑なワークフローを構築する際の柔軟性が大幅に向上した。 実用的な自律型エージェント開発において、UI操作と並列処理の最適化が次のステップとなる。"
-      },
-      "en": {
-        "title": "LangGraph Managed Deep Agents v0.10 Adds Native Browser Control for Non-API Websites and Async Subagent Workflow Support",
-        "summary": "LangGraph has released Managed Deep Agents v0.10, introducing critical primitives for robust agentic workflows. The new browser use functionality allows agents to navigate and interact with websites lacking public APIs; specifically, it can hand off control to the user when site-specific authentication like OAuth or MFA is required. Furthermore, the update adds support for async subagents, enabling developers to offload time-consuming, background-intensive operations without blocking the main agent loop. These additions represent a major step toward reliable automation where agents are not just limited to API calls. For builders constructing complex autonomous systems, this update provides the precise mechanisms needed to handle real-world web limitations and long-running background logic efficiently."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-29T17:03:31.912Z"
   }
 ]
