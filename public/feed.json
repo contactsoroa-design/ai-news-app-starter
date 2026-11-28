@@ -1,5 +1,84 @@
 [
   {
+    "id": "art-1795866443651-py6fs",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/aizangyobu/articles/claude-code-doctor-audit",
+    "published_at": "2026-11-28T11:37:34.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--qMnYQegg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:claude%2520doctor%25E3%2582%2592%25E5%25AE%259F%25E6%25B8%25AC%25E3%2581%2599%25E3%2582%258B%25EF%25BC%259ACLI%25E3%2581%25AE%25E6%258E%25A5%25E7%25B6%259A%25E8%25A8%25BA%25E6%2596%25AD%25E3%2581%25A8%25E3%2580%2581%25E3%2582%25BB%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E5%2586%2585%25E3%2581%25A7%25E3%2582%2584%25E3%2582%258Bprompt-audit%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AI%25E6%25AE%258B%25E6%25A5%25AD%25E9%2583%25A8%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzM5ODc3YTYyMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの「claude doctor」実測レポート：CLI単体とセッション内「/doctor」で診断範囲が異なる仕様を解明",
+    "summary_ja": "Claude CodeのCLIコマンド「claude doctor」の実測結果として、その挙動を解説する。 CLI単体での実行はインストール状況や接続診断のみを行い、プロンプト監査などは実行されない仕様だ。 CLAUDE.mdの監査を含む詳細な診断を行うには、Claude Codeの対話セッション内から「/doctor」コマンドを呼び出す必要がある。 開発者は、ツールがどのコンテキストで何を診断しているかを把握し、トラブルシューティングの手順を適切に選択することが求められる。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの「claude doctor」実測レポート：CLI単体とセッション内「/doctor」で診断範囲が異なる仕様を解明",
+        "summary": "Claude CodeのCLIコマンド「claude doctor」の実測結果として、その挙動を解説する。 CLI単体での実行はインストール状況や接続診断のみを行い、プロンプト監査などは実行されない仕様だ。 CLAUDE.mdの監査を含む詳細な診断を行うには、Claude Codeの対話セッション内から「/doctor」コマンドを呼び出す必要がある。 開発者は、ツールがどのコンテキストで何を診断しているかを把握し、トラブルシューティングの手順を適切に選択することが求められる。"
+      },
+      "en": {
+        "title": "Benchmarking Claude Code’s `claude doctor`: CLI-only checks vs. in-session diagnostics for complete troubleshooting and audit",
+        "summary": "A real-world test of the Claude Code CLI confirms significant functional differences between executing `claude doctor` from the terminal versus running the `/doctor` command inside an active session. While the standalone CLI command effectively diagnoses installation status and API connectivity, it does not trigger broader diagnostic routines like prompt auditing for `CLAUDE.md`. To perform a complete checkup that includes complex audits, developers must run `/doctor` directly within the interactive session interface. For engineers troubleshooting environment issues, identifying the correct entry point is crucial; relying solely on the standard CLI output may omit critical checks, leading to false negatives during setup or when debugging persistent connectivity or agent configuration errors."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-28T11:47:23.651Z"
+  },
+  {
+    "id": "art-1795866436380-cot9s",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/tiger_oshima/n/n99e1475b75a3",
+    "published_at": "2026-11-28T11:44:48.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341948547/rectangle_large_type_2_f44478f83ddcafcc73fc087bf0bb11dc.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "AI駆動開発の実践：OSSツール「gasboost」を活用し、Issue入力から業務アプリケーション機能を自律実装する工程と課題",
+    "summary_ja": "個人開発者がAI駆動開発（AIDD）の手法を取り入れ、OSSツール「gasboost」を用いて業務フローアプリを構築するプロセスを解説する。 GitHubのIssueをAIに直接投げることでコード生成を行うが、未知のバグに遭遇するなどの開発上の難所も発生した。 単にAIに指示を出すだけでなく、AIが生成したコードのデバッグやエラー対応を含めた「AIとの共同作業」の設計が、開発スピード向上の鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "AI駆動開発の実践：OSSツール「gasboost」を活用し、Issue入力から業務アプリケーション機能を自律実装する工程と課題",
+        "summary": "個人開発者がAI駆動開発（AIDD）の手法を取り入れ、OSSツール「gasboost」を用いて業務フローアプリを構築するプロセスを解説する。 GitHubのIssueをAIに直接投げることでコード生成を行うが、未知のバグに遭遇するなどの開発上の難所も発生した。 単にAIに指示を出すだけでなく、AIが生成したコードのデバッグやエラー対応を含めた「AIとの共同作業」の設計が、開発スピード向上の鍵となる。"
+      },
+      "en": {
+        "title": "Practicing AI-Driven Development: Building Business Features via OSS Tool 'gasboost' and Solving Unexpected Implementation Bugs",
+        "summary": "This case study details a solo developer's journey into AI-driven development (AIDD) by using the open-source tool 'gasboost' to automate the creation of a business workflow application. By feeding GitHub Issues directly to an AI agent, the developer attempts to generate production-ready code, though the process reveals unexpected bugs and complex edge cases. The write-up emphasizes that successfully leveraging AI for development requires more than just prompting; it demands an active feedback loop where the developer manages debugging and resolves integration errors alongside the model. For builders, this underscores that the real speed gains in AI coding come from managing the AI as a junior partner rather than expecting autonomous, flawless code output."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化"
+    ],
+    "created_at": "2026-11-28T11:47:16.380Z"
+  },
+  {
+    "id": "art-1795866429225-pwdqv",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/AutoToolLab/items/2f064d114f1c7cbf8dee",
+    "published_at": "2026-11-28T11:46:25.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRmF2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGdSUyRjIwNTQ5NjI5MiUzRnYlM0Q0P2l4bGliPXJiLTQuMS4xJmFyPTElM0ExJmZpdD1jcm9wJm1hc2s9ZWxsaXBzZSZiZz1GRkZGRkYmZm09cG5nMzImcz05NzA2ZGU3MWFkZTZkZDllNWE1OGNhYmE5YWFhMGM2OQ%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D24ef97cf37ed17d970bdd38520ceae46?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODclRTMlODIlQTMlRTMlODMlQjMlRTMlODIlQjAlRTMlODIlQTglRTMlODMlQkMlRTMlODIlQjglRTMlODIlQTclRTMlODMlQjMlRTMlODMlODglRTMlODIlOTIlRTUlQUUlODklRTMlODElOEYlRTUlQUUlODklRTUlODUlQTglRTMlODElQUIlRTUlOUIlOUUlRTMlODElOTklRTglQTglQUQlRTglQTglODglRTMlODMlQTElRTMlODMlQTIlRUYlQkMlOUElRTMlODIlQUQlRTMlODMlQTMlRTMlODMlODMlRTMlODIlQjclRTMlODMlQTUlRTUlQTQlQjElRTUlOEElQjklRTglQUElQjIlRTklODclOTElRTMlODElQThEb2NrZXIlRTklOUElOTQlRTklOUIlQTIlRTMlODElQUUlRTglOTAlQkQlRTMlODElQTglRTMlODElOTclRTclQTklQjQlRTMlODAlODElRTglQkIlQkQlRTIlODAlQTYmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz0yMmU3OTRhNzZjMDc4NDc0MDkzMzI1ZjM3MDFjY2RlNg&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBBdXRvVG9vbExhYiZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTdlMGI1NzJlNmQ4ZTk0MzVmMDVkMGE5OTJiOTFhN2E4&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=de518e01fc47a0c029181ca5f02605c2",
+    "title_ja": "AIコーディングエージェントの運用コスト削減と安全性を両立する設計：Docker隔離とキャッシュ制御のベストプラクティス",
+    "summary_ja": "AIコーディングエージェントを自律的に実行させる際、コスト増大とセキュリティリスクを防ぐための設計指針が公開された。 特に重要となるのは、APIのキャッシュ戦略による料金抑制と、Dockerコンテナを用いた厳格な実行環境の隔離だ。 テスト実行を安価な軽量VPSにオフロードし、リポジトリへの直接アクセスを制限する構成をとることで、誤操作や予期せぬAPI課金を回避できる。 個人開発者は、自律型ツールを導入する前にコンテナのネットワーク制限と実行許可の範囲を再設計する必要がある。",
+    "translations": {
+      "ja": {
+        "title": "AIコーディングエージェントの運用コスト削減と安全性を両立する設計：Docker隔離とキャッシュ制御のベストプラクティス",
+        "summary": "AIコーディングエージェントを自律的に実行させる際、コスト増大とセキュリティリスクを防ぐための設計指針が公開された。 特に重要となるのは、APIのキャッシュ戦略による料金抑制と、Dockerコンテナを用いた厳格な実行環境の隔離だ。 テスト実行を安価な軽量VPSにオフロードし、リポジトリへの直接アクセスを制限する構成をとることで、誤操作や予期せぬAPI課金を回避できる。 個人開発者は、自律型ツールを導入する前にコンテナのネットワーク制限と実行許可の範囲を再設計する必要がある。"
+      },
+      "en": {
+        "title": "Best practices for running AI coding agents safely and affordably via Docker isolation and cache control",
+        "summary": "Running autonomous AI coding agents directly on local hardware often introduces significant cost spikes and security risks. To manage these, developers should shift autonomous tasks to lightweight VPS environments, employing strict Docker isolation to prevent accidental damage or unauthorized file access. Crucially, engineering a robust caching layer is essential to avoid repetitive, expensive API calls when agents re-query existing repositories. By isolating the execution environment from the local host and implementing granular control over API request frequencies, developers can safely scale agentic workflows without fear of run-away billing. For builders and solopreneurs, the core lesson is to treat agent execution as a sandboxed infrastructure problem rather than a standard script, ensuring safety and fiscal predictability before deployment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-28T11:47:09.225Z"
+  },
+  {
     "id": "art-1795865593408-z1anl",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -5687,32 +5766,6 @@
     "created_at": "2026-11-27T21:17:13.929Z"
   },
   {
-    "id": "art-1795813328729-9h4h5",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/ruriiro_toolbox/n/n9cfbcbb844c6",
-    "published_at": "2026-11-27T20:58:44.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341226726/rectangle_large_type_2_78e7ac504fe67ae22a3d80cde494e169.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "AIとの共創に潜む「記憶喪失」のリアル：コンテキスト窓の限界と付き合いながら製品開発を続けるエンジニアの思考法",
-    "summary_ja": "AIを活用した開発プロセスでは、会話履歴や指示を突然忘れる「記憶喪失」現象にしばしば直面する。 これはLLMのコンテキストウィンドウの物理的制約やステート管理の難しさに起因するが、完全に信頼せず適宜補完しながら並走することで、依然として強力な開発パートナーとなり得る。 完璧を求めるよりも、AIの特性を理解し、人間側が柔軟にガードレールを引くことで、不完全なAIとも建設的に共創を続ける術を学ぶことが重要だ。",
-    "translations": {
-      "ja": {
-        "title": "AIとの共創に潜む「記憶喪失」のリアル：コンテキスト窓の限界と付き合いながら製品開発を続けるエンジニアの思考法",
-        "summary": "AIを活用した開発プロセスでは、会話履歴や指示を突然忘れる「記憶喪失」現象にしばしば直面する。 これはLLMのコンテキストウィンドウの物理的制約やステート管理の難しさに起因するが、完全に信頼せず適宜補完しながら並走することで、依然として強力な開発パートナーとなり得る。 完璧を求めるよりも、AIの特性を理解し、人間側が柔軟にガードレールを引くことで、不完全なAIとも建設的に共創を続ける術を学ぶことが重要だ。"
-      },
-      "en": {
-        "title": "Navigating LLM Amnesia: How Developers Can Build Consistent Products While Managing the Inherent Context Window Limitations of Modern AI Models",
-        "summary": "Developing with AI agents frequently brings the frustration of \"amnesia,\" where models suddenly lose context or previous instructions during long-running sessions. This behavior stems from inherent architectural constraints in LLM context windows and state management, rather than simple errors. Instead of expecting perfect memory, successful builders treat these lapses as fundamental features, implementing external state management or manual summarization strategies to maintain continuity. By reframing the developer-AI relationship to accommodate these occasional gaps, you avoid the trap of constant prompt engineering and instead build robust workflows that leverage AI strength while actively mitigating its forgetting cycle. This pragmatic approach is the only way to keep shipping complex features alongside an unreliable creative partner."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-11-27T21:02:08.729Z"
-  },
-  {
     "id": "art-1795813318838-qs0zg",
     "source_id": "source-qiita",
     "source_name": "Qiita (AI・個人開発)",
@@ -9825,32 +9878,6 @@
     "created_at": "2026-11-27T03:31:56.129Z"
   },
   {
-    "id": "art-1795749469949-67sbo",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/airtanker/articles/agent-browser-decisions-three-tier-plans",
-    "published_at": "2026-11-26T17:04:01.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--pHJMxvN7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%25E3%2581%25AE%25E5%25AE%259A%25E5%259E%258B%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25A6%25E3%2582%25B6%25E6%2593%258D%25E4%25BD%259C%25E3%2582%25922%25E5%259B%259E%25E7%259B%25AE%25E3%2581%258B%25E3%2582%2589LLM%25E3%2581%25AA%25E3%2581%25971.5%25E7%25A7%2592%25E3%2581%25AB%25E3%2580%2582%25E8%25BF%25B7%25E3%2581%2586%25E6%2589%258B%25E3%2581%25A0%25E3%2581%2591Decision%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%25AB%25E8%2581%259E%25E3%2581%258FC...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:airtanker%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2doVlZzQ2pCbENSb2pzU2lJb3NkSE1nemFXaGowTTVlYlNmZHNoYkE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Codeの定型作業を高速化：2回目以降のブラウザ操作をLLMなしの1.5秒で自動化する「SKILL」手法",
-    "summary_ja": "Claude Codeでフォーム入力や管理画面操作を行うと、毎回LLMの推論が必要となり、1操作あたり約20秒・0.13ドルというコストと遅延が発生する。 これを解決するため、初回はLLMに操作を学習させ、2回目以降はLLMを介さず直接実行する「SKILL」アーキテクチャを導入した。 これにより、繰り返しのタスクはわずか1.5秒で完結する。 LLMエージェントの運用において、決定論的な処理とLLMによる推論を分離するこの設計は、UXを劇的に改善するための必須戦略となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの定型作業を高速化：2回目以降のブラウザ操作をLLMなしの1.5秒で自動化する「SKILL」手法",
-        "summary": "Claude Codeでフォーム入力や管理画面操作を行うと、毎回LLMの推論が必要となり、1操作あたり約20秒・0.13ドルというコストと遅延が発生する。 これを解決するため、初回はLLMに操作を学習させ、2回目以降はLLMを介さず直接実行する「SKILL」アーキテクチャを導入した。 これにより、繰り返しのタスクはわずか1.5秒で完結する。 LLMエージェントの運用において、決定論的な処理とLLMによる推論を分離するこの設計は、UXを劇的に改善するための必須戦略となる。"
-      },
-      "en": {
-        "title": "Boosting Claude Code: Cutting repetitive browser tasks from 20 seconds to 1.5 seconds by automating execution without LLM calls",
-        "summary": "Claude Code currently demands LLM reasoning for every browser interaction, leading to repetitive 20-second delays and significant API costs for routine tasks like form filling. To fix this, a new 'SKILL' architecture allows the agent to learn the workflow during the initial execution, enabling subsequent repetitions to run directly without calling the LLM at all. This optimization slashes execution time to just 1.5 seconds per task. For developers building AI agents, this separation of deterministic execution from stochastic LLM reasoning is essential to maintaining high performance. By treating complex operations as reusable, static assets rather than treating every user request as a fresh reasoning problem, builders can deliver the snappy, production-ready UX that users actually expect."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-27T03:17:49.949Z"
-  },
-  {
     "id": "art-1795749434786-6ze1k",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -9956,33 +9983,6 @@
       "研究"
     ],
     "created_at": "2026-11-27T02:31:55.160Z"
-  },
-  {
-    "id": "art-1795745853433-6wci6",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/student_blog/articles/kioxia-nvidia-ssd-gpu-memory-1pb",
-    "published_at": "2026-11-26T23:03:19.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--qpka4uIk--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25AD%25E3%2582%25AA%25E3%2582%25AF%25E3%2582%25B7%25E3%2582%25A2%25E3%2581%25A8NVIDIA%25E3%2581%25AFSSD%25E3%2581%25A7GPU%25E3%2583%25A1%25E3%2583%25A2%25E3%2583%25AA%25E3%2582%2592%25E3%2581%25A9%25E3%2581%2586%25E5%25BA%2583%25E3%2581%2592%25E3%2582%258B%25EF%25BC%259F%25201.1%2520PB%25E3%2581%25AE%25E5%2586%2585%25E8%25A8%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BE%25E3%2582%258B%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2EwODAwNDc2NjcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "キオクシアとNVIDIA、SSD 1.1PBをGPUメモリ拡張に活用する実証を発表。HBMの容量不足を解決する大規模AIモデル向け新アーキテクチャ",
-    "summary_ja": "キオクシアはNVIDIAと共同で、18台のサーバーに接続した144台のSSD（合計1.1PB）をGPUメモリとして活用する技術実証を発表した。 GPU直近のHBMに収まりきらない大規模データをSSD層から動的に読み出す仕組みで、大規模AI学習におけるボトルネックを解消する。 HBM単体でのスケールアップに限界を感じる開発者にとって、ストレージ層をメモリ拡張として活用するこのアーキテクチャは、将来的な大規模モデル運用における新たな選択肢となるだろう。",
-    "translations": {
-      "ja": {
-        "title": "キオクシアとNVIDIA、SSD 1.1PBをGPUメモリ拡張に活用する実証を発表。HBMの容量不足を解決する大規模AIモデル向け新アーキテクチャ",
-        "summary": "キオクシアはNVIDIAと共同で、18台のサーバーに接続した144台のSSD（合計1.1PB）をGPUメモリとして活用する技術実証を発表した。 GPU直近のHBMに収まりきらない大規模データをSSD層から動的に読み出す仕組みで、大規模AI学習におけるボトルネックを解消する。 HBM単体でのスケールアップに限界を感じる開発者にとって、ストレージ層をメモリ拡張として活用するこのアーキテクチャは、将来的な大規模モデル運用における新たな選択肢となるだろう。"
-      },
-      "en": {
-        "title": "Kioxia and NVIDIA demo 1.1PB SSD-based GPU memory expansion to overcome HBM capacity constraints for massive AI models",
-        "summary": "Kioxia and NVIDIA have unveiled a proof-of-concept utilizing 1.1PB of storage across 144 SSDs, connected to 18 servers, to effectively expand GPU memory. By dynamically offloading data that exceeds the capacity of local High Bandwidth Memory (HBM) to an SSD-based tier, the architecture prevents performance bottlenecks during massive AI model training. This approach bridges the gap between fast but capacity-limited HBM and high-capacity storage, allowing for massive datasets to remain accessible to the GPU without constant I/O latency. For engineers scaling large AI workloads, this represents a crucial shift in infrastructure design, proving that offloading storage as an auxiliary memory tier is the next logical step in supporting ever-growing model sizes beyond local hardware limits."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究",
-      "アップデート"
-    ],
-    "created_at": "2026-11-27T02:17:33.433Z"
   },
   {
     "id": "art-1795743148618-q2ye0",
