@@ -1,5 +1,110 @@
 [
   {
+    "id": "art-1795830421845-6y40g",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/temanashi_kobo/articles/e4f6b19f140746",
+    "published_at": "2026-11-27T15:05:04.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--azSyAn6q--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AE%25E3%2580%258C%25E6%25AD%25A2%25E3%2581%25BE%25E3%2582%258A%25E6%2596%25B9%25E3%2580%258D%25E3%2582%2592%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%2599%25E3%2582%258B%2520%25E2%2580%2594%2520%25E5%2581%259C%25E6%25AD%25A2%25E6%259D%25A1%25E4%25BB%25B6%25E3%2581%25A8%25E4%25B8%258A%25E9%2599%2590%25E3%2581%25AE%25E6%25B1%25BA%25E3%2582%2581%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A6%25E3%2581%25BE%25E3%2581%25AA%25E3%2581%2597%25E5%25B7%25A5%25E6%2588%25BF%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVNQM2dTSkFqRld6NjBBZmhKQk5ISEVyZWQxSEpYRFJZMkdpZGg4aTJlZkEyZnhBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIエージェントが暴走しないための「停止条件」設計手法：無限ループや無限実行を防ぐ具体的な回数・時間制限の組み込み方",
+    "summary_ja": "AIエージェントの自律タスクにおける事故は、エラーや想定外の状態でも動作を継続する「止まれない」仕様が原因の大半を占める。 開発者は「おかしくなったら止まる」という曖昧な指示ではなく、最大試行回数や処理件数、開始からの経過時間といった機械的に判定可能な停止条件を事前に設計する必要がある。 エージェントが忠実に動くからこそ、意図した範囲で確実にタスクを打ち切るための境界条件を明示することが、システム開発における最重要フェーズとなる。",
+    "translations": {
+      "ja": {
+        "title": "AIエージェントが暴走しないための「停止条件」設計手法：無限ループや無限実行を防ぐ具体的な回数・時間制限の組み込み方",
+        "summary": "AIエージェントの自律タスクにおける事故は、エラーや想定外の状態でも動作を継続する「止まれない」仕様が原因の大半を占める。 開発者は「おかしくなったら止まる」という曖昧な指示ではなく、最大試行回数や処理件数、開始からの経過時間といった機械的に判定可能な停止条件を事前に設計する必要がある。 エージェントが忠実に動くからこそ、意図した範囲で確実にタスクを打ち切るための境界条件を明示することが、システム開発における最重要フェーズとなる。"
+      },
+      "en": {
+        "title": "Designing Stop Conditions for AI Agents: A Practical Guide to Preventing Infinite Loops and Uncontrolled Autonomous Execution in LLM Workflows",
+        "summary": "Most failures in autonomous AI agents stem from their inability to halt execution, often caused by agents continuing to loop despite errors or non-optimal states. Builders cannot rely on vague directives like \"stop if things go wrong\" because models require precise, machine-readable constraints. Instead, developers must hard-code concrete stopping conditions—such as maximum attempt counts, total record processing limits, and strictly defined timeouts—into the agent's system prompt or workflow logic. Because agents will faithfully follow instructions until exhaustion, explicitly designing these boundary conditions is the most critical step in preventing runaway costs and system instability. Treating termination logic as a first-class feature rather than an afterthought is essential for shipping reliable agentic systems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T01:47:01.845Z"
+  },
+  {
+    "id": "art-1795830413333-3s78a",
+    "source_id": "source-qiita",
+    "source_name": "Qiita (AI・個人開発)",
+    "url": "https://qiita.com/NekoByte/items/acdc3b334d44d855c3c5",
+    "published_at": "2026-11-28T01:39:17.000Z",
+    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkY0MzczMDExJTJGOTdkNmNmMzEyNjQwYzA4OWIyMTMyNWRlMTY0MmJjYmMyZWY5NzdiMSUyRnhfbGFyZ2UucG5nJTNGMTc3MjY2ODQzNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9YjNjNjgyMzUzMjBmMzE1YmEzZWM4OTIxNDQ1MmQ0ZDM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D3bb7e973b57428a25ecfdfccab81cc24?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9QUklRTMlODElOEMlRTYlOUIlQjglRTMlODElODQlRTMlODElOUYlRTMlODIlQjMlRTMlODMlQkMlRTMlODMlODklRTMlODIlOTIlRTMlODMlQUMlRTMlODMlOTMlRTMlODMlQTUlRTMlODMlQkMlRTMlODElOTklRTMlODIlOEIlRTMlODElQTglRTMlODElOEQlRTMlODElQUIlRTYlQjAlOTclRTMlODIlOTIlRTMlODElQTQlRTMlODElOTElRTMlODElQTYlRTMlODElODQlRTMlODIlOEIlRTMlODElOTMlRTMlODElQTgmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1lNzhhMGZmNDNmNmEyY2RiYjI1OWNmYzQyYTE3YWUzZQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBOZWtvQnl0ZSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTA1MjQ5NzRmYWZmNGMyMzMyZDQ2MDgxYWY2M2ZjYzAz&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=2af77689a04e001eaeec315d0f080e83",
+    "title_ja": "AI生成コードのレビュー戦略：ChatGPTやGitHub Copilot導入後の「見落とし」を防ぐためのチェックポイントと最適解",
+    "summary_ja": "ChatGPTやGitHub Copilotを活用した開発が標準化する中、AI生成コードを無批判にマージして後続のバグに苦しむケースが増加している。 本稿では、コードの「もっともらしさ」に惑わされず、脆弱性や非効率なロジックを見抜くための具体的なレビュー基準を解説する。 単なる動くコードの確認を超え、AI生成特有の定型的な誤りや隠れた負債を早期に排除するワークフローを確立することが、長期的な開発保守性を維持する唯一の道となる。",
+    "translations": {
+      "ja": {
+        "title": "AI生成コードのレビュー戦略：ChatGPTやGitHub Copilot導入後の「見落とし」を防ぐためのチェックポイントと最適解",
+        "summary": "ChatGPTやGitHub Copilotを活用した開発が標準化する中、AI生成コードを無批判にマージして後続のバグに苦しむケースが増加している。 本稿では、コードの「もっともらしさ」に惑わされず、脆弱性や非効率なロジックを見抜くための具体的なレビュー基準を解説する。 単なる動くコードの確認を超え、AI生成特有の定型的な誤りや隠れた負債を早期に排除するワークフローを確立することが、長期的な開発保守性を維持する唯一の道となる。"
+      },
+      "en": {
+        "title": "Essential Code Review Strategies for AI-Generated Output: Mitigating Hidden Vulnerabilities and Logic Debt from ChatGPT or Copilot",
+        "summary": "As development workflows increasingly integrate ChatGPT and GitHub Copilot, blindly merging AI-generated code has become a common source of downstream bugs and technical debt. This guide outlines actionable review criteria designed to look past the superficial correctness of AI output, specifically targeting common blind spots like security vulnerabilities, inefficient patterns, and hallucinated logic. The analysis argues that moving beyond simple functional verification is critical; developers must now apply rigorous scrutiny to AI's repetitive structural errors to prevent long-term maintenance nightmares. By standardizing these verification steps, engineering teams can safely harness AI acceleration while maintaining high codebase health and architectural integrity. For modern builders, the takeaway is that automated code is not a substitute for expert architectural oversight."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T01:46:53.333Z"
+  },
+  {
+    "id": "art-1795830406763-dsgyo",
+    "source_id": "source-zenn-indie",
+    "source_name": "Zenn (個人開発 × AI)",
+    "url": "https://zenn.dev/kurodaschool/articles/185081fcd8e9db",
+    "published_at": "2026-11-27T14:00:20.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--Ju6QPiSE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%259F%25E5%25BE%2592%25E3%2581%25AE%25E6%258C%2587%25E5%25B0%258E%25E3%2582%2582%25E3%2580%2581251%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25AE%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E9%2581%258B%25E5%2596%25B6%25E3%2582%2582%25E4%25B8%2580%25E4%25BA%25BA%25E3%2580%2582%25E3%2582%25AA%25E3%2583%25B3%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E5%25A1%25BE%25E3%2582%2592%25E9%259D%2599%25E7%259A%2584HTML%25E3%2581%25A8Python%25E6%25A8%2599%25E6%25BA%2596%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2581%25A0%25E3%2581%2591%25E3%2581%25A7%25E5%259B%259E%25E3%2581%2597%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%25BB%2592%25E7%2594%25B0%25E6%25B8%2585%25E5%258F%258B%25EF%25BC%2588%25E9%25BB%2592%25E7%2594%25B0%25E5%25A1%25BE%25E4%25BB%25A3%25E8%25A1%25A8%25EF%25BC%2589%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSWU4d2FVU0QxQjhFenVTRGtjZkxkMm4wVkphT1Y0MzhwQzB0cW9DZjhiU01Taml3PXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "生徒50人超を個人で指導・運営するオンライン塾の「技術選定」：CMSやフレームワークを捨てて静的HTMLとPython標準ライブラリを選んだ理由",
+    "summary_ja": "黒田塾は251ページのサイトと生徒指導をたった一人で回すオンライン塾だ。 技術スタックはWordPressや重厚なフレームワークを避け、手書きの静的HTMLとPython標準ライブラリのみで構成されている。 過剰なツール依存を捨て、AI支援を活用しながら必要十分な仕組みを自作するアプローチこそが、専門職が少人数で事業を継続・スケールさせるための現実的な最適解となる。",
+    "translations": {
+      "ja": {
+        "title": "生徒50人超を個人で指導・運営するオンライン塾の「技術選定」：CMSやフレームワークを捨てて静的HTMLとPython標準ライブラリを選んだ理由",
+        "summary": "黒田塾は251ページのサイトと生徒指導をたった一人で回すオンライン塾だ。 技術スタックはWordPressや重厚なフレームワークを避け、手書きの静的HTMLとPython標準ライブラリのみで構成されている。 過剰なツール依存を捨て、AI支援を活用しながら必要十分な仕組みを自作するアプローチこそが、専門職が少人数で事業を継続・スケールさせるための現実的な最適解となる。"
+      },
+      "en": {
+        "title": "How a solo founder manages a 251-page online tutoring site using pure static HTML and zero heavy frameworks",
+        "summary": "Kuroda School, a solo-run online tutoring business, manages its 251-page website and educational operations without WordPress or modern web frameworks. Instead, the founder relies exclusively on hand-written static HTML combined with simple build scripts written in Python’s standard library. By stripping away unnecessary dependencies and using AI merely to assist with content updates rather than complex stack management, the founder keeps operational overhead minimal. This case study demonstrates that for solopreneurs in specialized fields, building your own minimal tooling is often more maintainable and reliable than managing bloated third-party platforms. It is a powerful reminder that technical simplicity is the ultimate competitive advantage when time and cognitive resources are your scarcest assets."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発",
+      "ビジネス"
+    ],
+    "created_at": "2026-11-28T01:46:46.763Z"
+  },
+  {
+    "id": "art-1795830400580-i4dfn",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/hermitstudio/n/n54e79b830647",
+    "published_at": "2026-11-28T01:45:34.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341728156/rectangle_large_type_2_3fda2fb19e427349d11033dd9659cd21.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "完全オフラインAI「HermitNode v2」で執筆した1.7万文字の長編ミステリーが完結：Gemma 4駆動のローカル環境による自動執筆の全貌",
+    "summary_ja": "自作のオフラインAI執筆スタジオ『HermitNode v2』とローカルモデル「Gemma 4」を駆使し、全14章・約17,000文字の法廷ヒューマンミステリーを完全自動執筆したプロジェクトが完結。 クラウドAPIを介さずローカルGPU環境のみで、プロンプトエンジニアリングと長文コンテキスト管理を駆使して一貫したストーリー構成を実現した。",
+    "translations": {
+      "ja": {
+        "title": "完全オフラインAI「HermitNode v2」で執筆した1.7万文字の長編ミステリーが完結：Gemma 4駆動のローカル環境による自動執筆の全貌",
+        "summary": "自作のオフラインAI執筆スタジオ『HermitNode v2』とローカルモデル「Gemma 4」を駆使し、全14章・約17,000文字の法廷ヒューマンミステリーを完全自動執筆したプロジェクトが完結。 クラウドAPIを介さずローカルGPU環境のみで、プロンプトエンジニアリングと長文コンテキスト管理を駆使して一貫したストーリー構成を実現した。"
+      },
+      "en": {
+        "title": "HermitNode v2: Engineering a 17,000-word offline AI mystery novel using Gemma 4 with full local automation",
+        "summary": "A complex 17,000-character courtroom mystery novel, spanning 14 chapters, has reached completion using HermitNode v2, a custom-built, fully offline AI writing studio powered by the local Gemma 4 model. By eschewing external cloud APIs and relying entirely on a local GPU environment, the project demonstrates how sophisticated prompt engineering and long-context state management can maintain narrative coherence without cloud dependencies. This successful deployment serves as a robust blueprint for developers looking to build private, high-fidelity AI content pipelines that aren't subject to API costs, latency, or censorship. It underscores the surprising viability of local LLM stacks for high-volume creative production, proving that specialized local tooling can now rival hosted services for long-form creative writing tasks."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T01:46:40.580Z"
+  },
+  {
     "id": "art-1795829527930-anxzu",
     "source_id": "source-note-ai",
     "source_name": "note (AI・個人開発マガジン)",
@@ -8960,32 +9065,6 @@
     "created_at": "2026-11-27T00:16:48.637Z"
   },
   {
-    "id": "art-1795737724545-d0qsx",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/ishisaka/items/ef829cbd080b517ce015",
-    "published_at": "2026-11-26T23:50:54.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYyNzAzNyUyRmNkOWZlNDhkNjhjOTg0NGQ5MmNlOTE5NzI0MTcxNGFmNWM0ZjRiMDklMkZ4X2xhcmdlLnBuZyUzRjE3NjQ2MzI1MTg_aXhsaWI9cmItNC4xLjEmYXI9MSUzQTEmZml0PWNyb3AmbWFzaz1lbGxpcHNlJmJnPUZGRkZGRiZmbT1wbmczMiZzPTBkODAwMTIyNWFmOGEyZmI5NTIwZTMzZTQyYTMxNDE0%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De1362e63bcf5b681cb9efc63565c4766?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9JUUzJTgzJTk3JUUzJTgzJUFEJUUzJTgyJUIwJUUzJTgzJUE5JUUzJTgzJTlGJUUzJTgzJUIzJUUzJTgyJUIwJUU5JTlCJTkxJUU4JUE4JTk4JTIwMjAyNiVFNSVCOSVCNDExJUU2JTlDJTg4MjclRTYlOTclQTUmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz1mODIxMGM5ZDFmNGE2ZDA3ZDA2Y2NiNDEzMjM1M2U0OQ&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBpc2hpc2FrYSZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPTc3OTYzODM5MTE1ODMzOTZhYWY5ZGRmNTMyNDkxMWI2&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=25eaf67efc7e70625aef80a5e02a88e2",
-    "title_ja": "1Password従業員のGitHubアカウントが侵害、顧客データ流出の全容とセキュリティ対策の教訓",
-    "summary_ja": "1Passwordの従業員GitHubアカウントが侵害され、一部の顧客氏名とメールアドレスが流出した。 攻撃者はサードパーティ環境への不正アクセス経路を突き、権限昇格を試みた。 開発者は、GitHubなどのコードホスティングプラットフォームを単なる共有場所と捉えず、MFA設定の強制や権限の最小化を徹底しなければ、サプライチェーン全体が危険に晒される可能性がある。",
-    "translations": {
-      "ja": {
-        "title": "1Password従業員のGitHubアカウントが侵害、顧客データ流出の全容とセキュリティ対策の教訓",
-        "summary": "1Passwordの従業員GitHubアカウントが侵害され、一部の顧客氏名とメールアドレスが流出した。 攻撃者はサードパーティ環境への不正アクセス経路を突き、権限昇格を試みた。 開発者は、GitHubなどのコードホスティングプラットフォームを単なる共有場所と捉えず、MFA設定の強制や権限の最小化を徹底しなければ、サプライチェーン全体が危険に晒される可能性がある。"
-      },
-      "en": {
-        "title": "1Password employee GitHub account compromised, leading to unauthorized access to customer names and email data",
-        "summary": "1Password recently disclosed that an employee's GitHub account was compromised, resulting in the unauthorized exposure of some customer names and email addresses. The attackers successfully leveraged the access to penetrate a third-party environment and attempted privilege escalation within the system. This incident serves as a stark reminder for engineers and platform architects: treating code hosting services as trusted perimeters is a critical mistake. Developers must enforce multi-factor authentication, strictly follow the principle of least privilege for repository access, and rigorously audit third-party service connections. Failing to treat developer tooling access with the same scrutiny as production database access can leave the entire supply chain exposed to attackers who prioritize credential harvesting over brute-force attacks."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "セキュリティ",
-      "開発"
-    ],
-    "created_at": "2026-11-27T00:02:04.545Z"
-  },
-  {
     "id": "art-1795737708974-c2p73",
     "source_id": "source-itmedia-ai",
     "source_name": "ITmedia AI＋",
@@ -9010,32 +9089,6 @@
       "研究"
     ],
     "created_at": "2026-11-27T00:01:48.974Z"
-  },
-  {
-    "id": "art-1795736842292-hsxe9",
-    "source_id": "source-qiita",
-    "source_name": "Qiita (AI・個人開発)",
-    "url": "https://qiita.com/Sidejob/items/9355d01f279457080c17",
-    "published_at": "2026-11-26T23:45:03.000Z",
-    "og_image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnNlY3VyZS5ncmF2YXRhci5jb20lMkZhdmF0YXIlMkZmMDQ5MjEyODEwOWJhMDVlNTliMTA5ZDE2MTMzMjNkNT9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9OTkwYjdmNWE0MWU2OTk3ZDY3ZDNiNmI0YjIwZDcxODI%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3De6ff48aefdddde06dce7529f66f49f1d?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9Q2xhdWRlJTIwQ29kZSUyMCVFNSU4OCVBOSVFNyU5NCVBOCVFNCVCOCU4QSVFOSU5OSU5MCVFMyU4MSVBNzIlRTYlOTclQTUlRTYlQUQlQTIlRTMlODElQkUlRTMlODElQTMlRTMlODElQTYlRTMlODElODQlRTMlODElOUYlRTIlODAlOTQlRTIlODAlOTQlRTglODclQUElRTUlOEIlOTUlRTUlODYlOEQlRTklOTYlOEIlRTMlODIlOTIlRTUlQkUlODUlRTMlODElQTQlRTglQTglQUQlRTglQTglODglRTMlODElQUIlRTMlODElOTclRTMlODElOUYzJUU3JTgyJUI5JnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9NjFjZWRmM2VhOWY2NWExZjlkOTI5MzA1YTYwMzFhYTM&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBTaWRlam9iJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9MzYmdHh0LXBhZD0wJnM9MThiMWNjMmFmNjk0Mzk4YTgyOTk5NWFmZmVkMWY2MGQ&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=6da4851691866bfa2b273793214b913f",
-    "title_ja": "Claude Codeの利用制限による停止を回避せよ：夜間バッチ処理の自動再開に向けた3つの堅牢な実装設計",
-    "summary_ja": "Claude Codeを用いた夜間バッチ処理において、API利用制限による停止が2日間発生した教訓から、タスクの継続性を高める実装手法を提示する。 単なる正常終了判定では不十分なため、処理件数の検証、冪等性を担保した再試行ロジック、および制限解除後の自動復旧プロセスを組み込むことが不可欠である。 自動化環境においてAIエージェントの停止はサービス停止に直結するため、開発者は制限発生を前提としたフォールバック設計を導入すべきだ。",
-    "translations": {
-      "ja": {
-        "title": "Claude Codeの利用制限による停止を回避せよ：夜間バッチ処理の自動再開に向けた3つの堅牢な実装設計",
-        "summary": "Claude Codeを用いた夜間バッチ処理において、API利用制限による停止が2日間発生した教訓から、タスクの継続性を高める実装手法を提示する。 単なる正常終了判定では不十分なため、処理件数の検証、冪等性を担保した再試行ロジック、および制限解除後の自動復旧プロセスを組み込むことが不可欠である。 自動化環境においてAIエージェントの停止はサービス停止に直結するため、開発者は制限発生を前提としたフォールバック設計を導入すべきだ。"
-      },
-      "en": {
-        "title": "Strategies for persistent Claude Code automation: Designing self-healing retries after hitting rate limits",
-        "summary": "After Claude Code rate limits caused a critical two-day outage in scheduled batch processing, it became clear that simple exit-code checks are insufficient for autonomous agent workflows. This post outlines three design patterns to build resilient automation: verifying actual output counts rather than relying on false success signals, implementing idempotent logic to ensure partial failures can be safely retried, and establishing automated recovery flows post-restriction. Since AI agents often operate as mission-critical backends, developers must move beyond assuming uptime and actively build fallback mechanisms that handle rate-limit spikes gracefully. By treating rate limiting as a predictable system event rather than an error, developers can prevent silent failures and ensure long-running autonomous tasks remain operational despite external API constraints."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "コスト・API料金"
-    ],
-    "created_at": "2026-11-26T23:47:22.292Z"
   },
   {
     "id": "art-1795736835524-rdbw1",
@@ -10134,33 +10187,6 @@
     "created_at": "2026-11-26T17:32:08.509Z"
   },
   {
-    "id": "art-1795713485961-0xw62",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/neon_aiart/articles/27787e29a4e635",
-    "published_at": "2026-11-26T16:33:22.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--FmFInqqt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Forge%2520Neo%2520%25C3%2597%2520Anima%25EF%25BC%2588DiT%25EF%25BC%2589%25E3%2581%25A7%2520Regional%2520Prompter%2520%25E3%2581%25A8%2520NegPiP%25EF%25BC%2588%25E6%259C%25AC%25E5%25AE%25B6%25E3%2583%25BB%25E6%25B4%25BE%25E7%2594%259F%25EF%25BC%2589...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25AD%25E3%2581%258A%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyL2EwYmNkNWQ5YzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Forge Neo × Animaで「Regional Prompter」と「NegPiP」を併用可能にするコード修正と実装の仕組みを公開",
-    "summary_ja": "Forge Neo × Anima（DiT）環境において、従来併用不可能とされていた「Regional Prompter」と「NegPiP」を同時利用可能にする修正コードを公開した。 この実現には、それぞれのプロジェクト（#76・#77および#424・#425）への修正パッチの統合が必須となる。 本稿では、コード解析から導き出されたAnima × NegPiPの重要仕様と、画像生成の表現幅を広げるための具体的な実装手法を解説する。",
-    "translations": {
-      "ja": {
-        "title": "Forge Neo × Animaで「Regional Prompter」と「NegPiP」を併用可能にするコード修正と実装の仕組みを公開",
-        "summary": "Forge Neo × Anima（DiT）環境において、従来併用不可能とされていた「Regional Prompter」と「NegPiP」を同時利用可能にする修正コードを公開した。 この実現には、それぞれのプロジェクト（#76・#77および#424・#425）への修正パッチの統合が必須となる。 本稿では、コード解析から導き出されたAnima × NegPiPの重要仕様と、画像生成の表現幅を広げるための具体的な実装手法を解説する。"
-      },
-      "en": {
-        "title": "Enabling Concurrent Use of Regional Prompter and NegPiP in Forge Neo × Anima for Advanced Image Synthesis",
-        "summary": "This article details a technical workaround to enable the simultaneous use of Regional Prompter and NegPiP (including variants) within the Forge Neo × Anima (DiT) framework, which were previously considered incompatible. Success relies on merging specific patches into their respective repositories—specifically PRs #76/#77 for NegPiP and #424/#425 for Regional Prompter. The author breaks down the critical internal specifications of Anima × NegPiP discovered during code analysis, offering both high-level summaries for general users and deep-dive technical explanations for engineers. For developers working on image generation pipelines, this serves as a valuable case study in resolving plugin conflicts and extending model capabilities, demonstrating how precise code modification unlocks new levels of control in complex AI composition environments."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "画像生成",
-      "研究"
-    ],
-    "created_at": "2026-11-26T17:18:05.961Z"
-  },
-  {
     "id": "art-1795713475501-2a702",
     "source_id": "source-zenn-indie",
     "source_name": "Zenn (個人開発 × AI)",
@@ -10377,32 +10403,6 @@
       "開発"
     ],
     "created_at": "2026-11-26T16:47:21.928Z"
-  },
-  {
-    "id": "art-1795710728822-igiw9",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/intprime/articles/devstd-01-one-standard-many-repos",
-    "published_at": "2026-11-26T14:52:58.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--iKIiPcJV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AB%25E3%2580%2581%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%258C%25E5%25B0%2591%25E3%2581%2597%25E3%2581%259A%25E3%2581%25A4%25E9%2581%2595%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2581%258F%25E3%2580%25821%25E3%2581%25A4%25E3%2581%25AE%25E6%25A8%2599%25E6%25BA%2596%25E3%2582%2592%25E5%258D%2581%25E6%2595%25B0%25E3%2581%25AE%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E3%2581%25AB%25E9%2585%258D%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A7%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:dkano%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzczM2JlNDJiMGYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Claude Code運用の分散化を防ぐ：12のプロジェクト設定を「標準リポジトリ」へ集約・配布し、管理コストを劇的に下げた話",
-    "summary_ja": "複数プロジェクトでCLAUDE.mdや設定ファイルが分断・乖離していた課題に対し、共通設定を「標準リポジトリ」に集約して各プロジェクトへ配布する仕組みを構築。 2か月で120コミットと86本のプルリクエストを実行し、Claude Codeからのフィードバックを基に標準を継続的に改善する運用フローを確立した。 バラバラな設定の修正を自動化し、開発ルールを全プロジェクトで統一したい開発者にとって、この「標準配布モデル」は極めて有効な解決策となる。",
-    "translations": {
-      "ja": {
-        "title": "Claude Code運用の分散化を防ぐ：12のプロジェクト設定を「標準リポジトリ」へ集約・配布し、管理コストを劇的に下げた話",
-        "summary": "複数プロジェクトでCLAUDE.mdや設定ファイルが分断・乖離していた課題に対し、共通設定を「標準リポジトリ」に集約して各プロジェクトへ配布する仕組みを構築。 2か月で120コミットと86本のプルリクエストを実行し、Claude Codeからのフィードバックを基に標準を継続的に改善する運用フローを確立した。 バラバラな設定の修正を自動化し、開発ルールを全プロジェクトで統一したい開発者にとって、この「標準配布モデル」は極めて有効な解決策となる。"
-      },
-      "en": {
-        "title": "Standardizing Claude Code across 12+ projects: Why we centralized our CLAUDE.md and config into a single source of truth",
-        "summary": "Managing distinct CLAUDE.md and project settings across a dozen repositories inevitably leads to configuration drift and maintenance nightmares. To combat this, we centralized our standards into a single ‘standard repository’ and built an automated distribution mechanism, resulting in 120 commits and 86 pull requests over two months. Much of the refinement was driven by direct suggestions from Claude Code itself, which acted as a catalyst for improvements. For developers juggling multiple repositories, treating your project configuration as code—managed centrally and distributed outward—is the only way to scale. This approach eliminates the inconsistencies of manual copying and ensures that best practices evolve everywhere simultaneously, rather than fragmenting into specialized, unmaintainable silos across your entire codebase."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-26T16:32:08.822Z"
   },
   {
     "id": "art-1795710721374-q0pl0",
