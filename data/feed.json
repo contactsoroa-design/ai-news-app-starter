@@ -1,5 +1,109 @@
 [
   {
+    "id": "art-1795889061038-8cd33",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/fumitakaojima/articles/ai-frontier-no-edition-analysis",
+    "published_at": "2026-11-28T10:37:51.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--TLdqTTUz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GitHub%2520Actions%25E3%2581%25AF%25E6%2588%2590%25E5%258A%259F%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%25ABAI%25E6%2596%25B0%25E8%2581%259E%25E3%2581%258C%25E7%2599%25BA%25E8%25A1%258C%25E3%2581%2595%25E3%2582%258C%25E3%2581%25AA%25E3%2581%2584%25EF%25BC%259A6%25E5%259B%259E%25E3%2581%25AE%25E5%25AE%259F%25E8%25A1%258C%25E3%2583%25AD%25E3%2582%25B0%25E3%2581%258B%25E3%2582%2589%25E5%25AD%25A6%25E3%2582%2593%25E3%2581%25A0%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25B0%25BE%25E5%25B3%25B6%25E5%258F%25B2%25E9%259A%2586%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvZi5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "GitHub Actionsが成功してもAI記事が発行されない？自動生成システムの「処理の成功」と「成果の未達成」を切り分ける運用の教訓",
+    "summary_ja": "個人開発のAIニュース配信でGitHub Actionsの実行成功ログだけを監視していた筆者は、新着記事がない場合にワークフローが正常終了する仕様により、発行の失敗を見逃す事態に直面した。 自動生成パイプラインでは「システムが正常に完了したか」と「実際に期待したアウトプット（新号）が出たか」という、2つの異なるメトリクスを分けて観測することが不可欠だ。 単なる稼働監視ではなく、最終成果物までを追跡する通知設計が、運用の死角をなくす鍵となる。",
+    "translations": {
+      "ja": {
+        "title": "GitHub Actionsが成功してもAI記事が発行されない？自動生成システムの「処理の成功」と「成果の未達成」を切り分ける運用の教訓",
+        "summary": "個人開発のAIニュース配信でGitHub Actionsの実行成功ログだけを監視していた筆者は、新着記事がない場合にワークフローが正常終了する仕様により、発行の失敗を見逃す事態に直面した。 自動生成パイプラインでは「システムが正常に完了したか」と「実際に期待したアウトプット（新号）が出たか」という、2つの異なるメトリクスを分けて観測することが不可欠だ。 単なる稼働監視ではなく、最終成果物までを追跡する通知設計が、運用の死角をなくす鍵となる。"
+      },
+      "en": {
+        "title": "GitHub Actions reported success but my AI newsletter failed to publish: A lesson on monitoring pipelines versus actual output",
+        "summary": "While building an automated AI news service, I mistakenly relied on GitHub Actions status checks to monitor my daily publishing pipeline. I soon discovered that the workflow returned a green status even when no new articles were generated, because the system was designed to exit gracefully when no content met the quality threshold. This experience highlights a critical oversight for builders: monitoring infrastructure uptime is fundamentally different from verifying the actual product output. To avoid this blind spot, one must track business-level metrics—such as whether a new issue was actually deployed—separately from the raw process logs. Implementing specific alerts for outcome verification is essential to ensure that automated services are truly delivering the intended value rather than just successfully idling."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "個人開発・収益化",
+      "開発"
+    ],
+    "created_at": "2026-11-28T18:04:21.038Z"
+  },
+  {
+    "id": "art-1795889054592-kusqn",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/zeuslab/n/nb5bb4170c41d",
+    "published_at": "2026-11-28T17:40:51.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/342073394/rectangle_large_type_2_a648e7c8b45bb150a361e211019feb6d.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "「購入ボタンが押せない」不具合の原因はたった1行のCSS？機能追加ではなく不要なコード削除で解決した開発の落とし穴",
+    "summary_ja": "Webアプリ開発で「購入ボタンが灰色になり押せない」という致命的な不具合が発生。 調査の結果、原因はUIライブラリの設定に紛れ込んだたった1行のコードだった。 機能を追加して解決しようとする心理バイアスに陥りがちだが、実際には不要なコードを「外す」ことで問題が解消した事例である。 複雑化するUI開発において、デバッグ時に足し算ではなく引き算で考える重要性を示している。",
+    "translations": {
+      "ja": {
+        "title": "「購入ボタンが押せない」不具合の原因はたった1行のCSS？機能追加ではなく不要なコード削除で解決した開発の落とし穴",
+        "summary": "Webアプリ開発で「購入ボタンが灰色になり押せない」という致命的な不具合が発生。 調査の結果、原因はUIライブラリの設定に紛れ込んだたった1行のコードだった。 機能を追加して解決しようとする心理バイアスに陥りがちだが、実際には不要なコードを「外す」ことで問題が解消した事例である。 複雑化するUI開発において、デバッグ時に足し算ではなく引き算で考える重要性を示している。"
+      },
+      "en": {
+        "title": "Why a grayed-out purchase button came down to one line of code: The power of subtraction in debugging",
+        "summary": "An unexpected bug rendered a critical purchase button gray and unclickable, leading to a frustrating troubleshooting session. While it is natural for developers to instinctively add logic, flags, or state checks to fix UI issues, the root cause turned out to be a single, unnecessary line of code lurking in the interface configuration. Removing that line instantly resolved the issue, proving that the fix was subtractive rather than additive. This scenario serves as a vital reminder for modern web builders: when facing complex UI glitches, don't immediately reach for more code. Often, the most robust engineering solution isn't about building new features to patch gaps, but ruthlessly pruning the existing codebase to eliminate conflicting specifications."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "アップデート"
+    ],
+    "created_at": "2026-11-28T18:04:14.592Z"
+  },
+  {
+    "id": "art-1795889045361-vzv2v",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://cs.stanford.edu/~knuth/moratorium.html",
+    "published_at": "2026-11-28T17:53:02.000Z",
+    "og_image_url": null,
+    "title_ja": "計算機科学の権威ドナルド・クヌース氏、AI生成による無意味な誤植報告の急増を受け、伝統的な「誤植報奨金」プログラムを無期限停止へ",
+    "summary_ja": "計算機科学の巨匠ドナルド・クヌース氏は、著作の誤植を発見した読者に小切手を送るという長年の習慣を終了した。 近年、AIを利用して生成された無意味なエラー報告が急増し、手作業での検証が困難になったためだ。 AIによる自動生成スパムは、開発コミュニティにおける最もアナログで価値ある信頼関係さえも破壊しつつある。 開発者は、生成AIがもたらすノイズが、重要な人的貢献の評価プロセスを麻痺させ、専門家による対話の場を損なうリスクを深く認識すべきだ。",
+    "translations": {
+      "ja": {
+        "title": "計算機科学の権威ドナルド・クヌース氏、AI生成による無意味な誤植報告の急増を受け、伝統的な「誤植報奨金」プログラムを無期限停止へ",
+        "summary": "計算機科学の巨匠ドナルド・クヌース氏は、著作の誤植を発見した読者に小切手を送るという長年の習慣を終了した。 近年、AIを利用して生成された無意味なエラー報告が急増し、手作業での検証が困難になったためだ。 AIによる自動生成スパムは、開発コミュニティにおける最もアナログで価値ある信頼関係さえも破壊しつつある。 開発者は、生成AIがもたらすノイズが、重要な人的貢献の評価プロセスを麻痺させ、専門家による対話の場を損なうリスクを深く認識すべきだ。"
+      },
+      "en": {
+        "title": "Computer science legend Donald Knuth suspends his famous error bounty program due to an influx of AI-generated spam reports",
+        "summary": "Donald Knuth, the legendary computer scientist behind \"The Art of Computer Programming,\" has officially suspended his long-standing practice of mailing reward checks to readers who find errors in his work. The decision follows a massive influx of low-quality, AI-generated reports that overwhelmed his ability to manually verify valid corrections. This development highlights a sobering reality: AI-driven spam is now degrading even the most venerable, high-trust academic ecosystems. For builders, the lesson is stark—when automated tools make generating noise frictionless, even the most analog, human-centric traditions are no longer immune to disruption. We must account for the erosion of legitimate signal when designing feedback loops, as LLM-generated noise can effectively paralyze expert systems."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T18:04:05.361Z"
+  },
+  {
+    "id": "art-1795888975747-i6m4u",
+    "source_id": "source-simonwillison",
+    "source_name": "Simon Willison's Weblog",
+    "url": "https://simonwillison.net/2026/Nov/28/code-driven-ai-illustrations/",
+    "published_at": "2026-11-28T17:45:40.000Z",
+    "og_image_url": "https://static.simonwillison.net/static/2026/kakapo-design-card.webp",
+    "title_ja": "Gemini 4 Neonが証明する「コード駆動型AIイラスト」の優位性：生成後の編集が容易で実用的なデザイン生成手法",
+    "summary_ja": "近年のLLMは高度な視覚的推論能力を備えており、画像生成専用モデルよりもコードベースで2Dデザインを生成するアプローチの方が圧倒的に実用的だ。 コードによって定義された画像であれば、ユーザーは生成後に微調整が可能であり、ピクセルベースの出力に伴う複雑な修正プロセスを回避できる。 開発者は生成AIの活用において、完成品をそのまま出力させるのではなく、編集可能なコードを生成させることで、より柔軟なクリエイティブワークフローを実現できる。",
+    "translations": {
+      "ja": {
+        "title": "Gemini 4 Neonが証明する「コード駆動型AIイラスト」の優位性：生成後の編集が容易で実用的なデザイン生成手法",
+        "summary": "近年のLLMは高度な視覚的推論能力を備えており、画像生成専用モデルよりもコードベースで2Dデザインを生成するアプローチの方が圧倒的に実用的だ。 コードによって定義された画像であれば、ユーザーは生成後に微調整が可能であり、ピクセルベースの出力に伴う複雑な修正プロセスを回避できる。 開発者は生成AIの活用において、完成品をそのまま出力させるのではなく、編集可能なコードを生成させることで、より柔軟なクリエイティブワークフローを実現できる。"
+      },
+      "en": {
+        "title": "Why code-driven AI illustrations from models like Gemini 4 Neon beat traditional image generation",
+        "summary": "Recent frontier LLMs like Gemini 4 Neon demonstrate that generating visual designs via code is significantly more practical than using dedicated image-to-text models. Because these models output functional code rather than static pixels, the resulting illustrations remain fully editable and iterative, avoiding the unpredictable artifacts typically found when trying to refine generated images through successive text prompts. For developers and builders, this paradigm shift implies that leveraging AI for visual tasks is most effective when the output is a programmatically defined vector or design structure. The practical takeaway is to treat AI as a code generator for creative assets, ensuring that you maintain complete control over the final output rather than relying on the black-box results of pixel-based generation tools."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "画像生成"
+    ],
+    "created_at": "2026-11-28T18:02:55.747Z"
+  },
+  {
     "id": "art-1795888096777-t2jvb",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -5662,32 +5766,6 @@
     "created_at": "2026-11-28T03:17:39.901Z"
   },
   {
-    "id": "art-1795835850161-eu1l1",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/038mob/n/n76dd1732ca77",
-    "published_at": "2026-11-28T03:15:43.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341324639/rectangle_large_type_2_700b9e4e2904c6551798ac365c59ace9.png?fit=bounds&quality=85&width=1280",
-    "title_ja": "複数AI連携でファイルが散乱する「ブラックボックス化」問題——30行の自動状況メモ生成でAIワークフローを可視化する手法",
-    "summary_ja": "複数のAIツールを共有フォルダで並行運用すると、数週間でログや成果物が溜まり「今何が進行中で、何が停滞しているか」が不明瞭になる問題が発生する。 これを解決するため、各タスクの末尾に30行程度の要約ログを自動生成するシンプルな設計を導入した。 AIにファイル生成と同時に状況メモの更新を義務付けることで、フォルダ内を整理する手間をゼロに抑えつつ、プロジェクトの進捗を瞬時に把握する運用体制を構築できる。",
-    "translations": {
-      "ja": {
-        "title": "複数AI連携でファイルが散乱する「ブラックボックス化」問題——30行の自動状況メモ生成でAIワークフローを可視化する手法",
-        "summary": "複数のAIツールを共有フォルダで並行運用すると、数週間でログや成果物が溜まり「今何が進行中で、何が停滞しているか」が不明瞭になる問題が発生する。 これを解決するため、各タスクの末尾に30行程度の要約ログを自動生成するシンプルな設計を導入した。 AIにファイル生成と同時に状況メモの更新を義務付けることで、フォルダ内を整理する手間をゼロに抑えつつ、プロジェクトの進捗を瞬時に把握する運用体制を構築できる。"
-      },
-      "en": {
-        "title": "Solving the 'Black Box' file clutter in multi-AI workflows with a 30-line automated status summary script",
-        "summary": "When multiple AI agents collaborate using shared folders, digital clutter inevitably accumulates, leaving developers unable to track ongoing tasks or identify bottlenecks. To solve this, I designed a lightweight system that forces AI agents to generate a 30-line status summary file alongside their outputs. By enforcing this automated logging standard, I transformed chaotic folder structures into transparent project timelines without needing manual cleanup or additional project management overhead. This approach effectively maintains visibility over multi-AI agent workflows. For builders struggling with agent sprawl, this method proves that complex dashboarding tools are often unnecessary; a simple, protocol-driven text summary is enough to keep your AI infrastructure organized, readable, and actionable without manual intervention."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "個人開発・収益化"
-    ],
-    "created_at": "2026-11-28T03:17:30.161Z"
-  },
-  {
     "id": "art-1795835842452-bnqxt",
     "source_id": "source-hn",
     "source_name": "Hacker News (Show HN / AI)",
@@ -9095,33 +9173,6 @@
       "開発"
     ],
     "created_at": "2026-11-27T13:47:28.629Z"
-  },
-  {
-    "id": "art-1795787223822-c8ayw",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/twinklemodel/articles/e1381ae129890c",
-    "published_at": "2026-11-27T07:27:33.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--l-hqkuvJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2580%259F%25E5%25A0%25B1%25EF%25BD%259CAnt%25E3%2581%258C6B%25E3%2581%25AE%25E3%2583%2587%25E3%2582%25B6%25E3%2582%25A4%25E3%2583%25B3%25E7%2594%25BB%25E5%2583%258F%25E7%2594%259F%25E6%2588%2590Ming-Image-0.2%25E3%2582%2592%25E5%2585%25AC%25E9%2596%258B%25EF%25BC%259A%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E7%2594%259F%25E6%2588%2590%25E3%2581%25A8API%25E3%2581%25A7%25E3%2583%2597%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2597%25E3%2583%2588%25E5%25BC%25B7%25E5%258C%2596%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Twinkle%2520Model%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLWRldi5naXRodWIuaW8vZGVmYXVsdC1hdmF0YXJzL2RhcmsvdC5wbmc=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Ant、6Bパラメータの画像生成AI「Ming-Image-0.2-Design」公開：複雑な構成と文字描画を強化しオープンモデル総合1位に",
-    "summary_ja": "AntのinclusionAIが公開した「Ming-Image-0.2-Design」は、6B規模のパラメータを持つオープンウェイトモデルで、複雑な構図やライティング、さらに画像内の文字レンダリング精度を飛躍的に高めた。 AAのランキングで総合1位を獲得したこのモデルは、単なる画像生成にとどまらず、透明レイヤーの扱い、デザインからコードへの変換、API経由でのプロンプト最適化といったワークフローとの統合に大きな可能性を秘めている。",
-    "translations": {
-      "ja": {
-        "title": "Ant、6Bパラメータの画像生成AI「Ming-Image-0.2-Design」公開：複雑な構成と文字描画を強化しオープンモデル総合1位に",
-        "summary": "AntのinclusionAIが公開した「Ming-Image-0.2-Design」は、6B規模のパラメータを持つオープンウェイトモデルで、複雑な構図やライティング、さらに画像内の文字レンダリング精度を飛躍的に高めた。 AAのランキングで総合1位を獲得したこのモデルは、単なる画像生成にとどまらず、透明レイヤーの扱い、デザインからコードへの変換、API経由でのプロンプト最適化といったワークフローとの統合に大きな可能性を秘めている。"
-      },
-      "en": {
-        "title": "Ant Releases 6B 'Ming-Image-0.2-Design' Model, Topping Open-Weight Rankings with Superior Composition and Text Rendering",
-        "summary": "Ant’s inclusionAI has launched Ming-Image-0.2-Design, a 6B parameter open-weight model that significantly advances complex composition, lighting controls, and precise text rendering within generated visuals. Currently ranked first among open-weight models in AA’s comprehensive text-to-image benchmarks, this release demonstrates that high-performance visual generation is increasingly accessible via smaller models. Beyond the raw output quality, the real builder opportunity lies in integrating this model’s capabilities—such as transparent layer management and automated design-to-code pipelines—with external API services for prompt enhancement. This model signals a shift where open-weight solutions are no longer just competing on aesthetics, but are becoming robust engines for downstream developer workflows requiring precise control over spatial and textual elements."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "画像生成",
-      "開発",
-      "アップデート"
-    ],
-    "created_at": "2026-11-27T13:47:03.822Z"
   },
   {
     "id": "art-1795787200867-uxt8t",
@@ -54295,61 +54346,5 @@
       "開発"
     ],
     "created_at": "2026-10-30T02:01:24.767Z"
-  },
-  {
-    "id": "art-1793297005276-zy4bl",
-    "source_id": "source-hf",
-    "source_name": "Hugging Face Blog / Papers",
-    "url": "https://huggingface.co/blog/mistral-large4",
-    "published_at": "2026-10-29T00:00:00.000Z",
-    "og_image_url": "https://huggingface.co/blog/assets/ml4/thumbnail.png",
-    "title_ja": "Mistral AIが最新モデル「Mistral Large 4（コードネーム：Le Chonk）」を公開。推論能力と効率性を極限まで高めた次世代LLMの全貌",
-    "summary_ja": "Mistral AIは最新のフラッグシップモデル「Mistral Large 4（愛称：Le Chonk）」をHugging Face上で公開した。 従来モデルから推論能力を飛躍的に向上させつつ、コンテキストウィンドウの最適化により長大な入力処理における応答性と効率性を両立させている。 API開発者や大規模AI実装者は、このモデルを採用することで、複雑な推論タスクにおけるコストパフォーマンスを維持しながら、より高度な知的作業を自動化できる。",
-    "translations": {
-      "ja": {
-        "title": "Mistral AIが最新モデル「Mistral Large 4（コードネーム：Le Chonk）」を公開。推論能力と効率性を極限まで高めた次世代LLMの全貌",
-        "summary": "Mistral AIは最新のフラッグシップモデル「Mistral Large 4（愛称：Le Chonk）」をHugging Face上で公開した。 従来モデルから推論能力を飛躍的に向上させつつ、コンテキストウィンドウの最適化により長大な入力処理における応答性と効率性を両立させている。 API開発者や大規模AI実装者は、このモデルを採用することで、複雑な推論タスクにおけるコストパフォーマンスを維持しながら、より高度な知的作業を自動化できる。"
-      },
-      "en": {
-        "title": "Mistral AI launches Mistral Large 4, codenamed 'Le Chonk,' with massive leaps in reasoning and architectural efficiency on Hugging Face",
-        "summary": "Mistral AI has officially released its new flagship LLM, 'Mistral Large 4,' affectionately codenamed 'Le Chonk,' now available directly on Hugging Face. The model delivers a significant jump in raw reasoning capabilities while refining the architecture for deeper context windows, allowing for faster processing speeds during complex multi-step tasks. By prioritizing structural efficiency alongside raw parameter growth, this release enables developers to deploy more sophisticated autonomous agents without seeing a linear spike in latency or operational costs. For builders currently selecting foundations for high-reasoning workloads, Le Chonk represents a critical pivot point where model architecture, rather than just raw size, becomes the primary metric for ensuring both performance and economic viability in production-grade AI applications."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-29T18:03:25.276Z"
-  },
-  {
-    "id": "art-1793296997569-vsbk6",
-    "source_id": "source-elevenlabs",
-    "source_name": "ElevenLabs Blog",
-    "url": "https://elevenlabs.io/blog/sound-effects-v3",
-    "published_at": "2026-10-29T12:00:00.000Z",
-    "og_image_url": null,
-    "title_ja": "ElevenLabs、音響効果生成モデル「SFX v3」を公開：マルチサウンド指示の精度向上と音楽・ボーカルの品質を大幅強化",
-    "summary_ja": "ElevenLabsは、音響効果生成モデルの最新版「SFX v3」をElevenCreativeおよびElevenAPIで提供開始した。 今回のアップデートでは、複数の音声を組み合わせるマルチサウンドプロンプトの信頼性が飛躍的に向上し、音楽やボーカル生成においてより自然でノイズの少ないクリアな出力を実現している。 複雑なオーディオ演出を求めるクリエイターや、アプリにAI音声機能を組み込む開発者にとって、より細やかな制御と高品質なサウンド生成が可能になる重要なアップデートだ。",
-    "translations": {
-      "ja": {
-        "title": "ElevenLabs、音響効果生成モデル「SFX v3」を公開：マルチサウンド指示の精度向上と音楽・ボーカルの品質を大幅強化",
-        "summary": "ElevenLabsは、音響効果生成モデルの最新版「SFX v3」をElevenCreativeおよびElevenAPIで提供開始した。 今回のアップデートでは、複数の音声を組み合わせるマルチサウンドプロンプトの信頼性が飛躍的に向上し、音楽やボーカル生成においてより自然でノイズの少ないクリアな出力を実現している。 複雑なオーディオ演出を求めるクリエイターや、アプリにAI音声機能を組み込む開発者にとって、より細やかな制御と高品質なサウンド生成が可能になる重要なアップデートだ。"
-      },
-      "en": {
-        "title": "ElevenLabs launches SFX v3, upgrading sound generation with better multi-sound prompts and clearer musical output",
-        "summary": "ElevenLabs has officially released SFX v3, the latest iteration of its audio effect generation model, now available via both ElevenCreative and ElevenAPI. This update introduces significantly more reliable handling for multi-sound prompts, allowing users to layer complex audio cues with higher precision. Furthermore, the model now produces more convincing musical elements and vocals, delivering a cleaner, higher-fidelity output than previous versions. For developers and content creators integrating AI audio into their workflows, these refinements offer much tighter control over complex soundscapes. The update shifts the capability from simple sound effects toward nuanced, high-quality audio synthesis, making it a critical tool for builders looking to generate immersive sound environments programmatically without sacrificing sonic clarity."
-      }
-    },
-    "tool_tags": [
-      "ElevenLabs"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "音声"
-    ],
-    "created_at": "2026-10-29T18:03:17.569Z"
   }
 ]
