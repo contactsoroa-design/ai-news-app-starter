@@ -1,5 +1,111 @@
 [
   {
+    "id": "art-1795861100852-j17e2",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/circularuins/articles/reproducible-ai-env-safety-hooks",
+    "published_at": "2026-11-28T03:18:57.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--ZfwZRsfZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2586%258D%25E7%258F%25BE%25E6%2580%25A7%25E3%2581%25AE%25E3%2581%2582%25E3%2582%258BAI%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E6%25A7%258B%25E7%25AF%2589%2520%25232%2520%25E2%2580%2595%25E2%2580%2595%2520Claude%2520Code%2520%25E3%2581%25AB%25E6%259C%25AA%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E5%25AE%259F%25E8%25A1%258C%25E3%2581%2595%25E3%2581%259B%25E3%2581%25AA%25E3%2581%2584%2520hook%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:circularuins%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzkyZTFiNGVjOWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "Claude Codeの自律実行を安全に制御する「検証フック」構築術――10週間で24回の誤操作を防いだ実践手法",
+    "summary_ja": "Claude Codeを長時間の自律的な開発作業に活用する際、未検証コードの実行や設定ファイルの意図せぬ書き換えを防止する「フック」の実装が不可欠です。 本稿では、指定した制約に違反した場合に即座に処理を中断し人間に確認を求める防衛メカニズムを解説します。 運用開始からの10週間で、実際に24回の停止を記録。 攻撃的な動作を未然に防ぎつつ、誤検知時も即座にエラーを返して作業プロセスを停止させない堅牢なアーキテクチャの設計手法を。",
+    "translations": {
+      "ja": {
+        "title": "Claude Codeの自律実行を安全に制御する「検証フック」構築術――10週間で24回の誤操作を防いだ実践手法",
+        "summary": "Claude Codeを長時間の自律的な開発作業に活用する際、未検証コードの実行や設定ファイルの意図せぬ書き換えを防止する「フック」の実装が不可欠です。 本稿では、指定した制約に違反した場合に即座に処理を中断し人間に確認を求める防衛メカニズムを解説します。 運用開始からの10週間で、実際に24回の停止を記録。 攻撃的な動作を未然に防ぎつつ、誤検知時も即座にエラーを返して作業プロセスを停止させない堅牢なアーキテクチャの設計手法を。"
+      },
+      "en": {
+        "title": "Building verification hooks for Claude Code: A practical guide to preventing unauthorized autonomous execution and config changes",
+        "summary": "When using Claude Code for long-running autonomous development, implementing hooks to prevent unverified code execution and accidental config changes is critical for safety. This guide details how to construct custom defensive hooks that immediately halt execution and alert a human developer if specified constraints are violated. Over a ten-week testing period, this implementation successfully triggered 24 interruptions. While many were false positives, the design ensures the agent errors out safely rather than hanging, maintaining workflow continuity even when intervention is required. By treating these hooks as a programmable firewall, developers can confidently let agents tackle large tasks without the fear of unauthorized modifications or unintended execution loops. The approach balances safety and productivity for automated AI engineering environments."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "セキュリティ"
+    ],
+    "created_at": "2026-11-28T10:18:20.852Z"
+  },
+  {
+    "id": "art-1795861092409-d5i6w",
+    "source_id": "source-note-ai",
+    "source_name": "note (AI・個人開発マガジン)",
+    "url": "https://note.com/genneki_engineer/n/n955969064ee5",
+    "published_at": "2026-11-28T10:11:50.000Z",
+    "og_image_url": "https://assets.st-note.com/production/uploads/images/341914181/rectangle_large_type_2_cf0fdcf68839ee5f2099f86461ad1307.png?fit=bounds&quality=85&width=1280",
+    "title_ja": "本業エンジニアが個人開発の全工程を「Claude Code」に丸投げしてみた実践記録：開発効率と品質向上のための検証レポート",
+    "summary_ja": "本業エンジニアである筆者が、自身の個人開発プロジェクトのタスクを「Claude Code」に任せ、その運用プロセスと成果を詳細に記録した検証レポート。 理論上の手順紹介にとどまらず、実際に手を動かした結果得られたコードの品質や開発効率の変化、躓きポイントを赤裸々に公開している。 AIを活用した開発スタイルを模索するエンジニアにとって、実装の自動化がもたらすリアルな生産性の向上幅を理解するための良質なベンチマークとなるはずだ。",
+    "translations": {
+      "ja": {
+        "title": "本業エンジニアが個人開発の全工程を「Claude Code」に丸投げしてみた実践記録：開発効率と品質向上のための検証レポート",
+        "summary": "本業エンジニアである筆者が、自身の個人開発プロジェクトのタスクを「Claude Code」に任せ、その運用プロセスと成果を詳細に記録した検証レポート。 理論上の手順紹介にとどまらず、実際に手を動かした結果得られたコードの品質や開発効率の変化、躓きポイントを赤裸々に公開している。 AIを活用した開発スタイルを模索するエンジニアにとって、実装の自動化がもたらすリアルな生産性の向上幅を理解するための良質なベンチマークとなるはずだ。"
+      },
+      "en": {
+        "title": "How a full-time engineer offloaded individual coding tasks to Claude Code: A practical, experiment-driven performance report",
+        "summary": "A professional engineer shares a detailed documentation of his experiences offloading personal coding tasks to Claude Code, focusing exclusively on field-tested workflows rather than theoretical capabilities. By documenting exactly what happened when AI was handed the reins, the report provides a transparent look at code quality, workflow efficiency, and the inevitable friction points encountered during real-world implementation. For builders experimenting with agentic workflows, this serves as an essential benchmark for understanding how much actual productivity gain AI-assisted coding provides versus the overhead of managing the model. It offers a grounded perspective on the trade-offs involved in delegating development work to AI, helping engineers decide how to integrate automated coding assistants into their own dev cycle."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "個人開発・収益化",
+      "アップデート"
+    ],
+    "created_at": "2026-11-28T10:18:12.409Z"
+  },
+  {
+    "id": "art-1795861067561-j1j1c",
+    "source_id": "source-zenn",
+    "source_name": "Zenn (AI・LLMトピック)",
+    "url": "https://zenn.dev/felix8686/articles/ada1b286691b2c",
+    "published_at": "2026-11-28T03:36:32.000Z",
+    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--bCIpI3dp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Muse%25E3%2581%25AE%25E6%258B%259B%25E5%25BE%2585%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2580%258CVO9I5Q%25E3%2580%258D%25E2%2580%2594%252010%25E5%2584%2584%25E3%2583%2588%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%25B3%25E3%2581%25AE%25E5%258F%2597%25E3%2581%2591%25E5%258F%2596%25E3%2582%258A%25E6%2596%25B9%25E3%2581%25A8%25E3%2580%2581%25E7%25A7%2581%25E3%2581%25AE%25E5%25AE%259F%25E9%259A%259B%25E3%2581%25AE%25E4%25BD%25BF%25E3%2581%2584%25E6%2596%25B9%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Felix8686%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlJMQ1hNU0RRWDhpTElGd1RVUDR6c0I4dmVTWVRXd3dkVERMYzJfdmFwYTZGc0tRPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title_ja": "AIツール「Muse」の10億トークン付与招待コード「VO9I5Q」の使い方と、開発者における具体的な活用事例の紹介",
+    "summary_ja": "AIプラットフォーム「Muse」で10億トークンを獲得できる招待コード「VO9I5Q」を公開する。 登録後48時間以内に設定メニューからコードを入力することで、紹介者と新規ユーザー双方に報酬が付与される仕組みだ。 単なるトークン取得の案内にとどまらず、実際の開発ワークフローへのMuseの組み込み方や、AI支援を用いたコンテンツ制作の効率化手法についても考察する。",
+    "translations": {
+      "ja": {
+        "title": "AIツール「Muse」の10億トークン付与招待コード「VO9I5Q」の使い方と、開発者における具体的な活用事例の紹介",
+        "summary": "AIプラットフォーム「Muse」で10億トークンを獲得できる招待コード「VO9I5Q」を公開する。 登録後48時間以内に設定メニューからコードを入力することで、紹介者と新規ユーザー双方に報酬が付与される仕組みだ。 単なるトークン取得の案内にとどまらず、実際の開発ワークフローへのMuseの組み込み方や、AI支援を用いたコンテンツ制作の効率化手法についても考察する。"
+      },
+      "en": {
+        "title": "How to claim 1 billion Muse tokens with invite code 'VO9I5Q' and integrate AI into your dev workflow",
+        "summary": "This guide covers how to redeem the referral code 'VO9I5Q' within the Muse AI platform to secure a bonus of 1 billion tokens for both the referrer and the new user. To claim the offer, simply enter the code in the settings menu within 48 hours of account creation. Beyond the token acquisition, this article explores practical applications of Muse in development workflows, detailing how builders can leverage AI assistance to streamline coding and content production. For developers managing high-volume LLM workloads, securing these extra tokens is a strategic move to lower operational costs while prototyping complex features. Activating the code quickly is essential to ensure eligibility within the strict 48-hour signup window provided by the platform."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "アップデート",
+      "開発",
+      "コスト・API料金"
+    ],
+    "created_at": "2026-11-28T10:17:47.561Z"
+  },
+  {
+    "id": "art-1795861015878-8wdbm",
+    "source_id": "source-hn",
+    "source_name": "Hacker News (Show HN / AI)",
+    "url": "https://www.bbc.co.uk/news/articles/c64gn8pe5eeqo",
+    "published_at": "2026-11-28T09:59:57.000Z",
+    "og_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/98a4/live/a2c48d10-e97d-11f1-99a1-253766e7ad8b.jpg",
+    "title_ja": "『GTA 6』の未発売映像をAI学習：PC版を先取り模倣する「クローン生成」レースの倫理と技術的課題",
+    "summary_ja": "『GTA 6』の公式トレーラー映像をAIに学習させ、ゲーム環境や挙動をシミュレートするAIモデル開発が過熱している。 これは、膨大な高精細映像データからオープンワールドの物理挙動やグラフィックを再現しようとする試みだが、著作権侵害や海賊版の温床になるリスクを孕んでいる。 開発者やAI研究者にとって、生成AIがゲーム開発のワークフローを代替する可能性と、学習データの権利処理をめぐる法的な境界線が、今後の最大の論点となる。",
+    "translations": {
+      "ja": {
+        "title": "『GTA 6』の未発売映像をAI学習：PC版を先取り模倣する「クローン生成」レースの倫理と技術的課題",
+        "summary": "『GTA 6』の公式トレーラー映像をAIに学習させ、ゲーム環境や挙動をシミュレートするAIモデル開発が過熱している。 これは、膨大な高精細映像データからオープンワールドの物理挙動やグラフィックを再現しようとする試みだが、著作権侵害や海賊版の温床になるリスクを孕んでいる。 開発者やAI研究者にとって、生成AIがゲーム開発のワークフローを代替する可能性と、学習データの権利処理をめぐる法的な境界線が、今後の最大の論点となる。"
+      },
+      "en": {
+        "title": "The AI race to clone GTA 6: How developers are using trailers to simulate unreleased open-world environments",
+        "summary": "The release of official GTA 6 trailers has triggered an aggressive race among AI developers to clone the game's environment and physics using deep learning. By feeding high-fidelity trailer footage into generative models, these creators aim to simulate the game’s open-world mechanics and aesthetics long before the official PC launch. While this highlights the incredible potential of generative AI to rapidly prototype complex game assets, it also exposes significant legal friction regarding intellectual property, copyright infringement, and the creation of unauthorized clones. For the broader gaming and AI communities, this phenomenon serves as a warning: the line between AI-assisted creative tools and mass-scale data piracy is blurring, forcing a critical debate on data licensing for interactive entertainment."
+      }
+    },
+    "tool_tags": [],
+    "genre_tags": [
+      "開発",
+      "研究"
+    ],
+    "created_at": "2026-11-28T10:16:55.878Z"
+  },
+  {
     "id": "art-1795860147241-1ael6",
     "source_id": "source-zenn",
     "source_name": "Zenn (AI・LLMトピック)",
@@ -6145,32 +6251,6 @@
     "created_at": "2026-11-27T18:31:50.682Z"
   },
   {
-    "id": "art-1795803556726-b537r",
-    "source_id": "source-note-ai",
-    "source_name": "note (AI・個人開発マガジン)",
-    "url": "https://note.com/hearty_crane114/n/n106473eec553",
-    "published_at": "2026-11-27T18:14:48.000Z",
-    "og_image_url": "https://assets.st-note.com/production/uploads/images/341622904/rectangle_large_type_2_0ad1a3c76b2b1cabae1378a1756f6767.jpeg?fit=bounds&quality=85&width=1280",
-    "title_ja": "【航海日誌】売上ゼロ、受託案件も枯渇。個人開発の「八方ふさがり」から抜け出すための現在地と泥臭い生存戦略",
-    "summary_ja": "個人開発ラボの運営において、自社プロダクトの売上と受託案件の両方が途絶えるという最も厳しい局面に直面している現状を綴った航海日誌。 華やかな成功事例の裏には、こうした泥臭い葛藤と試行錯誤のプロセスが隠れている。 現在の閉塞感を打破するために、従来の開発スタンスを見直し、どう生存戦略を再構築していくのか。 これは、安定した収益化を模索するすべての個人開発者にとって、失敗と再起を共有する貴重な記録である。",
-    "translations": {
-      "ja": {
-        "title": "【航海日誌】売上ゼロ、受託案件も枯渇。個人開発の「八方ふさがり」から抜け出すための現在地と泥臭い生存戦略",
-        "summary": "個人開発ラボの運営において、自社プロダクトの売上と受託案件の両方が途絶えるという最も厳しい局面に直面している現状を綴った航海日誌。 華やかな成功事例の裏には、こうした泥臭い葛藤と試行錯誤のプロセスが隠れている。 現在の閉塞感を打破するために、従来の開発スタンスを見直し、どう生存戦略を再構築していくのか。 これは、安定した収益化を模索するすべての個人開発者にとって、失敗と再起を共有する貴重な記録である。"
-      },
-      "en": {
-        "title": "Survival Log: Facing zero revenue and dried-up consulting work—a candid look at the grind of indie development",
-        "summary": "This candid logbook entry documents the harsh reality of running an indie dev lab when both product sales and freelance consulting contracts hit absolute zero. Beyond the polished success stories often seen online, this piece exposes the raw struggle and iterative failures inherent in building a sustainable business. By documenting this specific moment of stagnation, the author forces a critical re-evaluation of their current development strategy and business model. For fellow indie builders facing similar plateaus, this narrative serves as a sobering reminder that survival is rarely a linear path. The article ultimately offers a perspective on how to pivot from a state of total deadlock, sharing the gritty, unspoken process of searching for a viable path forward."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "ビジネス"
-    ],
-    "created_at": "2026-11-27T18:19:16.726Z"
-  },
-  {
     "id": "art-1795803487382-pxse4",
     "source_id": "source-firecrawl",
     "source_name": "Firecrawl Releases / Blog",
@@ -10009,32 +10089,6 @@
       "研究"
     ],
     "created_at": "2026-11-27T00:01:48.974Z"
-  },
-  {
-    "id": "art-1795736835524-rdbw1",
-    "source_id": "source-zenn",
-    "source_name": "Zenn (AI・LLMトピック)",
-    "url": "https://zenn.dev/aletheia_jp/articles/66575ea60c143b",
-    "published_at": "2026-11-26T17:44:00.000Z",
-    "og_image_url": "https://res.cloudinary.com/zenn/image/upload/s--tpUnPuAg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E5%2590%2591%25E3%2581%2591AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%2520Muse%2520%25E3%2582%2592%25E3%2580%258C%25E9%2583%25A8%25E4%25B8%258B%25E3%2580%258D%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E9%2581%258B%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25E5%25AE%259F%25E8%25B7%25B5%25E3%2583%25A1%25E3%2583%25A2%25EF%25BC%259A%25E5%25AE%259A%25E6%259C%259F%25E5%25AE%259F%25E8%25A1%258C%25E3%2583%25BB%25E5%25B8%25B8%25E6%2599%2582%25E6%258C%2587%25E7%25A4%25BA%25E3%2583%25BB%25E6%25A4%259C%25E8%25A8%25BC%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aletheia-jp%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS1hsUUJIT2dkVnZtRGRLaUNJOGFOUzIwSnBORmFhUWx6SGk5QXFMRERsZGFNV2ZBPXMyNTAtYw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
-    "title_ja": "Metaの個人用AIエージェント「Muse」を実務で使いこなす：定期実行と検証ゲートで「賢いチャットボット」から「自走する部下」へ",
-    "summary_ja": "MetaのAIエージェント「Muse」は単なるチャットボットではなく、VM上でカレンダー連携やメール処理、Web調査を行う実務パートナーだ。 実運用で重要なのは、都度の指示ではなく、定期実行ジョブと検証ゲートを構築すること。 これにより、朝起きた時には業務が進んでいる状態を創出できる。 開発者や個人事業主は、AIをツールとして使うだけでなく、オペレーションの仕組みに組み込むことで、真の生産性向上を実現できる。",
-    "translations": {
-      "ja": {
-        "title": "Metaの個人用AIエージェント「Muse」を実務で使いこなす：定期実行と検証ゲートで「賢いチャットボット」から「自走する部下」へ",
-        "summary": "MetaのAIエージェント「Muse」は単なるチャットボットではなく、VM上でカレンダー連携やメール処理、Web調査を行う実務パートナーだ。 実運用で重要なのは、都度の指示ではなく、定期実行ジョブと検証ゲートを構築すること。 これにより、朝起きた時には業務が進んでいる状態を創出できる。 開発者や個人事業主は、AIをツールとして使うだけでなく、オペレーションの仕組みに組み込むことで、真の生産性向上を実現できる。"
-      },
-      "en": {
-        "title": "Beyond Chatbots: Operationalizing Meta’s Muse AI Agent with Scheduled Jobs and Verification Gates for Autonomous Workflows",
-        "summary": "Meta’s personal AI agent, Muse, moves past the conversational chatbot paradigm by running directly on a VM to handle calendar integration, email correspondence, and automated web research. Practical adoption hinges on abandoning ad-hoc prompting in favor of building robust periodic execution workflows and verification gates that ensure tasks are completed overnight. By integrating Muse into a structured operational architecture rather than treating it as a conversational interface, builders can transform AI from a simple assistant into an autonomous subordinate. The core takeaway for developers and solopreneurs is that architectural design—specifically scheduling and gating output—is the primary bottleneck to achieving genuine productivity, far outweighing the performance differences of the underlying model itself."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "個人開発・収益化",
-      "開発"
-    ],
-    "created_at": "2026-11-26T23:47:15.524Z"
   },
   {
     "id": "art-1795736819247-9p7fl",
@@ -54310,60 +54364,5 @@
       "コスト・API料金"
     ],
     "created_at": "2026-10-29T12:16:29.869Z"
-  },
-  {
-    "id": "art-1793269003170-4ou07",
-    "source_id": "source-github-copilot",
-    "source_name": "GitHub Copilot Changelog",
-    "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
-    "published_at": "2026-10-28T15:50:00.000Z",
-    "og_image_url": "https://github.blog/wp-content/uploads/2026/10/Changelog_NewRelease_Unfurl_Centered_GitHubEnterpriseCopilot.jpg",
-    "title_ja": "GitHub EnterpriseにCopilotが標準統合、ライセンス管理の一本化により大規模組織のAI開発導入を大幅に効率化",
-    "summary_ja": "GitHubは「GitHub Enterprise」のプラン内にAIペアプログラミングツール「GitHub Copilot」を標準で組み込んだと発表しました。 従来は個別にライセンス契約・管理が必要でしたが、今後はMicrosoftまたはGitHubのアカウントチーム経由で一括契約が可能になり、大規模組織における開発者のオンボーディングとコスト管理の負荷が軽減されます。",
-    "translations": {
-      "ja": {
-        "title": "GitHub EnterpriseにCopilotが標準統合、ライセンス管理の一本化により大規模組織のAI開発導入を大幅に効率化",
-        "summary": "GitHubは「GitHub Enterprise」のプラン内にAIペアプログラミングツール「GitHub Copilot」を標準で組み込んだと発表しました。 従来は個別にライセンス契約・管理が必要でしたが、今後はMicrosoftまたはGitHubのアカウントチーム経由で一括契約が可能になり、大規模組織における開発者のオンボーディングとコスト管理の負荷が軽減されます。"
-      },
-      "en": {
-        "title": "GitHub Enterprise now bundles Copilot access to streamline large-scale AI coding tool deployment and licensing",
-        "summary": "GitHub announced that GitHub Copilot is now natively included within GitHub Enterprise, eliminating the previous friction of managing separate add-on licenses for large development teams. Enterprises working with dedicated GitHub or Microsoft account teams can now unify their subscription management, significantly reducing administrative overhead for organization-wide AI adoption. By folding Copilot access into the core Enterprise plan, GitHub is simplifying the procurement process for CTOs and IT leads who need to scale AI assistance rapidly without handling fragmented billing. For large-scale organizations, this update clears a major hurdle to institutionalizing AI pair programming, allowing teams to enforce security policies and license provisioning through a single unified contract while accelerating developer velocity."
-      }
-    },
-    "tool_tags": [
-      "GitHub Copilot"
-    ],
-    "genre_tags": [
-      "アップデート",
-      "開発",
-      "ビジネス"
-    ],
-    "created_at": "2026-10-29T10:16:43.170Z"
-  },
-  {
-    "id": "art-1793268904566-34xkt",
-    "source_id": "source-langchain",
-    "source_name": "LangChain / LangGraph Blog",
-    "url": "https://www.langchain.com/blog/the-art-of-loop-engineering",
-    "published_at": "2026-10-28T21:01:46.000Z",
-    "og_image_url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a317b118693f5be4a8e220f_97.png",
-    "title_ja": "LangChainが解説する「ループエンジニアリング」：エージェントの信頼性を高める再帰構造とLangGraph活用の設計術",
-    "summary_ja": "LangChainは、自律型エージェントの信頼性を決定づける「ループエンジニアリング」の重要性を説いている。 単なるモデルの性能向上だけでなく、タスクに応じたループ構造の設計とLangGraphによる可視化・監視の実装が不可欠だ。 複雑なワークフローを小さな反復単位に分解し、各レイヤーで適切に計測・制御を組み込むことで、LLMエージェントを本番運用に耐えうる堅牢なシステムへと進化させることができる。",
-    "translations": {
-      "ja": {
-        "title": "LangChainが解説する「ループエンジニアリング」：エージェントの信頼性を高める再帰構造とLangGraph活用の設計術",
-        "summary": "LangChainは、自律型エージェントの信頼性を決定づける「ループエンジニアリング」の重要性を説いている。 単なるモデルの性能向上だけでなく、タスクに応じたループ構造の設計とLangGraphによる可視化・監視の実装が不可欠だ。 複雑なワークフローを小さな反復単位に分解し、各レイヤーで適切に計測・制御を組み込むことで、LLMエージェントを本番運用に耐えうる堅牢なシステムへと進化させることができる。"
-      },
-      "en": {
-        "title": "LangChain engineers outline loop engineering strategies for building highly reliable AI agent systems using LangGraph's architecture",
-        "summary": "LangChain has released a deep dive into loop engineering, arguing that achieving production-grade agent reliability requires moving beyond simple model prompting toward rigorous architectural design. The core of this approach involves stacking and extending specific loop structures to manage task decomposition, while instrumenting each layer with LangGraph primitives for observability. By breaking down complex agent workflows into granular, iterative cycles, developers gain precise control over decision-making paths and failure modes. This framework shifts the builder mindset from merely chaining API calls to constructing structured, recursive harness environments. The takeaway for developers is that predictable, long-running agent performance is built by explicitly designing the loops, monitoring state transitions, and embedding guardrails throughout the entire lifecycle of the agent."
-      }
-    },
-    "tool_tags": [],
-    "genre_tags": [
-      "開発",
-      "研究"
-    ],
-    "created_at": "2026-10-29T10:15:04.566Z"
   }
 ]
